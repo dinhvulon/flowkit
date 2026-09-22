@@ -52,10 +52,35 @@ Xác minh thực tế để kịch bản không bị AI "ảo giác" hoặc sán
    - Kỹ thuật **vừa đi vừa quay (Walking POV)**: camera nảy nhẹ theo bước chân, tạo hiệu ứng trôi cảnh 3D parallax sống động.
 3. **Tạo kịch bản vào FlowKit**:
    - Gọi **[`/fk-vlog-japan`](file:///c:/flowkit/skills/fk-vlog-japan.md)** để sinh trọn gói kịch bản 10–12 phân cảnh với thoại tiếng Nhật đàm thoại chuẩn `dialog-japan`.
-   - Hoặc chạy nhanh script mẫu Heian 1000 có sẵn:
+   - Hoặc chạy nhanh script kịch bản có sẵn:
      ```bash
-     python scripts/create_kyoto_heian_1000.py
+     python scripts/create_kamakura_1274.py   # Kịch bản Vịnh Hakata 1274
+     # hoặc
+     python scripts/create_kyoto_heian_1000.py # Kịch bản Kyoto Heian 1000
      ```
+
+---
+
+### BƯỚC 1.5: Xác Định & Đặt Dự Án Hoạt Động (Set Active Project)
+
+Khi bạn vừa chạy xong script tạo dự án, FlowKit có cơ chế nhận diện tự động:
+1. **Tự Động Kích Hoạt (Auto-Active / Fallback)**:
+   - Hệ thống tự động ưu tiên dự án mới tạo gần đây nhất (`fallback_most_recent`). Bạn có thể chạy ngay các lệnh ở Bước 2 & 3 mà không cần gõ kèm `project_id`.
+2. **Kiểm Tra Dự Án Đang Hoạt Động**:
+   ```bash
+   curl -s http://127.0.0.1:8100/api/active-project
+   # Hoặc xem bảng trạng thái: /fk-status
+   ```
+3. **Chuyển Đổi / Đặt Đích Danh Dự Án (`/fk-switch-project`)**:
+   Nếu trong FlowKit đang có nhiều dự án và bạn muốn chỉ định rõ ràng dự án cần thao tác:
+   ```bash
+   /fk-switch-project <PROJECT_ID>
+   ```
+   *Mẹo*: Bạn cũng có thể truyền trực tiếp `<PROJECT_ID>` vào các lệnh pipeline:
+   ```bash
+   /fk-pipeline <PROJECT_ID> --r2v --tts --concat
+   /fk-upload-ref "C:/photos/my_face.jpg" --project <PROJECT_ID> --entity "Vlogger"
+   ```
 
 ---
 

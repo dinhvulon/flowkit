@@ -35,6 +35,22 @@ def post_json(endpoint: str, data: dict) -> dict:
         sys.exit(1)
 
 
+def put_json(endpoint: str, data: dict) -> dict:
+    url = f"{BASE_URL}{endpoint}"
+    req = urllib.request.Request(
+        url,
+        data=json.dumps(data, ensure_ascii=False).encode("utf-8"),
+        headers={"Content-Type": "application/json; charset=utf-8"},
+        method="PUT"
+    )
+    try:
+        with urllib.request.urlopen(req) as res:
+            return json.loads(res.read().decode("utf-8"))
+    except Exception as e:
+        print(f"[-] Cảnh báo: không thể set active project: {e}", file=sys.stderr)
+        return {}
+
+
 def check_health():
     url = f"{BASE_URL}/health"
     try:
@@ -140,6 +156,8 @@ def main():
     res_proj = post_json("/api/projects", project_payload)
     project_id = res_proj["id"]
     print(f"[+] Project tạo thành công! ID: {project_id}")
+    put_json("/api/active-project", {"project_id": project_id})
+    print(f"[+] Đã tự động kích hoạt Project ID {project_id} làm Active Project!")
 
     print("\n--- BƯỚC 2: TẠO VIDEO CONTAINER ---")
     video_payload = {
