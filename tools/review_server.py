@@ -45,7 +45,7 @@ def _resolve_video_dir():
         if not out_path:
             return None
         proj_dir = (PROJECT_ROOT / out_path).resolve()
-        for sub in ("review_full", "raw"):
+        for sub in ("review_full", "scenes", "raw", "norm"):
             d = proj_dir / sub
             if d.exists() and any(d.glob("scene_*.mp4")):
                 return d
