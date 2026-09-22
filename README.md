@@ -323,7 +323,10 @@ FlowKit lưu trữ toàn bộ 36 kịch bản và quy trình làm việc (workfl
 
 > **Đồng bộ tất cả chỉ với 2 lệnh:**
 > ```powershell
+> # Đồng bộ cho Claude Code & Codex CLI (AGENTS.md)
 > python setup.py --tool all
+> 
+> # Đồng bộ cho Antigravity IDE (.agents/skills/)
 > python scripts/sync_antigravity.py
 > ```
 > *(Khi dùng `setup.ps1` hoặc `setup.sh`, bước này đã được chạy tự động)*.
