@@ -472,8 +472,21 @@ class OperationService:
         )
 
         if _is_error(submit_result):
-            logger.error("[DEBUG] Video gen submit_result IS_ERROR: %s", str(submit_result)[:2000])
-            return submit_result
+            err_str = str(submit_result)
+            if "MODEL_ACCESS_DENIED" in err_str:
+                logger.warning("Veo MODEL_ACCESS_DENIED on scene %s. Falling back to Omni Flash (abra_i2v_8s)...", scene.get("id", "")[:8])
+                from agent.services.omni_flash import generate_omni_flash_first_frame_video
+                submit_result = await generate_omni_flash_first_frame_video(
+                    start_image_media_id=image_media_id,
+                    prompt=prompt,
+                    project_id=pid,
+                    scene_id=scene.get("id", ""),
+                    duration_s=8,
+                    aspect_ratio=aspect,
+                )
+            if _is_error(submit_result):
+                logger.error("[DEBUG] Video gen submit_result IS_ERROR: %s", str(submit_result)[:2000])
+                return submit_result
 
         operations = _extract_operations(submit_result)
         if not operations:

@@ -104,6 +104,10 @@ VIDEO_MODELS = {
     "veo_3_1_i2v_lite_low_priority",
     "veo_3_1_i2v_lite",
     "veo_3_1_i2v_s_fast_ultra",
+    "abra_i2v_4s",
+    "abra_i2v_6s",
+    "abra_i2v_8s",
+    "abra_i2v_10s",
 }
 
 #: Video aspect, and note it does NOT share the image encoding: here 1 is
@@ -226,6 +230,8 @@ def resolve_video_model(key: Optional[str]) -> str:
     if isinstance(key, str):
         if key in VIDEO_MODELS:
             return key
+        if "abra" in key or "omni" in key:
+            return "abra_i2v_8s"
         if "ultra" in key:
             return "veo_3_1_i2v_s_fast_ultra"
         if "lite_low_priority" in key:

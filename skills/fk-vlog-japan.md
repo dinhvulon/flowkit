@@ -24,10 +24,15 @@ Kết quả đầu ra tương thích 100% với pipeline của FlowKit:
 - **CẤM** dùng từ chung chung như "Nhật Bản cổ đại" hay "thời phong kiến" — AI sẽ trộn lẫn thời Heian + Edo + Kimono du lịch hiện đại + anime.
 - **BẮT BUỘC** chỉ định rõ: `Heian-kyō, Kyoto, Japan, 1000 AD` / `Kamakura, Japan, 1274 AD` / `Edo, Japan, 1657 AD`.
 
-### 2. Chuẩn Quang Học Smartphone Pan-Focus (f/8–f/11)
-- Vlogger cầm điện thoại tự quay bằng camera trước 28mm wide-angle ở cự ly cánh tay (tight waist-up selfie framing, minimal headroom).
+### 2. Chuẩn Quang Học Smartphone Pan-Focus (f/8–f/11) & Kỹ Thuật "Vừa Đi Vừa Quay" (Walking POV)
+- Vlogger cầm điện thoại tự quay bằng camera trước 24-28mm wide-angle ở cự ly cánh tay (chest-up hoặc waist-up selfie framing, minimal headroom).
 - **Infinite Depth of Field (Nét sâu từ trước ra sau)**: Mặt nhân vật phía trước và toàn bộ bối cảnh người dân, sạp chợ, nhà cửa phía sau đều **100% TACK-SHARP**.
 - **STRICTLY ZERO BACKGROUND BLUR / ZERO BOKEH**: Tuyệt đối cấm xóa phông, cấm hiệu ứng chân dung (portrait mode). Xóa phông làm mất đi giá trị tư liệu của bối cảnh lịch sử.
+- **Kỹ thuật "Vừa Đi Vừa Quay" (Walking Talking Selfie)**:
+  - Nhân vật vừa đi bộ tiến tới vừa nói chuyện vào lens (`vlogger walking forward along the dirt lane while holding selfie camera`).
+  - **Nhịp nhấp nhô bước chân (Walking Gait Oscillation)**: Camera có độ nảy nhẹ tự nhiên theo từng bước chân (`subtle rhythmic vertical bobbing and gentle handheld sway matching walking pace`).
+  - **Hiệu ứng thị giác Parallax lùi cảnh**: Khi nhân vật tiến lên, hậu cảnh (sạp hàng, người đi bộ, xe ngựa/xe bò, kiến trúc) trôi lùi về sau, tạo chiều sâu 3D chân thực vượt trội so với đứng yên.
+  - **Tương tác né tránh hữu cơ (Organic Evasive Action)**: Thỉnh thoảng nhân vật khẽ nghiêng người hoặc né sang một bên để nhường đường cho xe kéo, người gánh hàng, vừa né vừa bật cười hoặc nói đùa vào camera.
 - **Vị trí bàn tay ở Frame 0**: Bàn tay rảnh rỗi (không cầm máy) phải được neo chính xác ngay từ ảnh tĩnh frame 0 (đang chỉ trỏ, đang chạm tay vào sạp hàng, đang cầm lược hay đang khép nép).
 
 ### 3. Khóa Sắc Tộc & Khóa Thời Kỳ Nghiêm Ngặt
@@ -37,19 +42,20 @@ Kết quả đầu ra tương thích 100% với pipeline của FlowKit:
   - *Kamakura (1274)*: Trang phục chiến tranh, lính canh samurai, nhà gỗ mộc, vải chàm dệt tay thô, dép rơm waraji.
   - *Edo (thời Mạc phủ)*: Nhà machiya, bảng hiệu chữ Hán cổ, đường lát đá sỏi, trang phục kimono có obi rõ ràng.
 
-### 4. Ba Kiểu Clip & Cấu Trúc Nhịp 8 Giây
+### 4. Bốn Kiểu Clip & Cấu Trúc Nhịp 8 Giây
 Mỗi clip dài đúng **8 giây** (phù hợp hoàn hảo với mô hình Veo 3 / Omni Flash của Google Flow):
 
 | Kiểu clip | Vai trò & Tần suất | Cách quay & Start Frame | Thoại tiếng Nhật |
 | :--- | :--- | :--- | :--- |
-| **Clip Nói** | Chiếm đa số (~6 clip): Biểu cảm khuôn mặt, phản ứng trực tiếp với camera. | Camera trước selfie ngang ngực, mắt nhìn thẳng vào ống kính. | Có thoại đàm thoại trực tiếp vào lens. |
-| **Đi Bộ + Chạm Tay** | 1–2 clip: Khám phá xúc giác (sờ vải, chạm cột gỗ, nếm đồ ăn). | Camera trước hơi nghiêng, thấy tay nhân vật tương tác với vật thể thật. | Có thoại ngắn kết hợp hành động. |
-| **Flycam Toàn Cảnh** | Đúng **2 slot cố định**: Clip 2 (ngay sau Hook mở đầu) và Clip cuối (Coda kết thúc). | Góc nhìn flycam từ mái nhà lướt bay lên cao toàn cảnh, **không có vlogger**. | **Hoàn toàn KHÔNG thoại (`""`)**, chỉ có âm thanh môi trường + nhạc cụ koto/sáo truyền thống. |
+| **Vừa Đi Vừa Nói (Walking POV)** | Chiếm đa số (~5 clip): Tạo cảm giác di chuyển thực địa, hậu cảnh trôi lùi sống động. | Camera trước 24-28mm góc thấp ngang ngực hơi chếch lên, người đang bước đi. | Thoại đàm thoại trực tiếp vào lens kết hợp nhịp bước đi. |
+| **Clip Đứng Nói (Stationary React)** | 1–2 clip: Phản ứng mạnh trước một sự việc bất ngờ (gặp lính, ngửi mùi lạ). | Đứng yên tại chỗ, biểu cảm ngỡ ngàng hoặc thì thầm bí mật. | Thoại ngắn, dồn dập hoặc biểu cảm ngạc nhiên. |
+| **Đi Bộ + Chạm Tay (Tactile)** | 1–2 clip: Khám phá xúc giác (sờ vải, chạm cột gỗ, nếm đồ ăn). | Camera trước hơi nghiêng, thấy tay nhân vật tương tác với vật thể thật. | Có thoại ngắn kết hợp hành động chạm/cầm vật thể. |
+| **Flycam Toàn Cảnh (Aerial)** | Đúng **2 slot cố định**: Clip 2 (ngay sau Hook mở đầu) và Clip cuối (Coda kết thúc). | Góc nhìn flycam từ mái nhà lướt bay lên cao toàn cảnh, **không có vlogger**. | **Hoàn toàn KHÔNG thoại (`""`)**, chỉ có âm thanh môi trường + nhạc cụ koto/sáo truyền thống. |
 
 ### 5. Cầu Nối Đổi Trang Phục (Costume Bridge)
 - **Clip 1**: Vlogger mặc trang phục **hiện đại** (áo thun, hoodie, sneaker) vừa rơi xuống quá khứ, ngơ ngác sốc văn hóa.
 - **Clip 2 (Flycam)**: Đóng vai trò "dấu ba chấm thời gian" lướt toàn cảnh kinh thành.
-- **Clip 3**: Vlogger đã mặc trang phục thời kỳ (vải gai thô thường dân), mở đầu bằng câu tự giễu tự nhiên: `「はい、着替えました。」` (*Rồi, thay đồ xong rồi nè*). Không cần quay cảnh thay đồ phức tạp.
+- **Clip 3**: Vlogger đã mặc trang phục thời kỳ (vải gai thô thường dân), vừa bước đi vừa mở đầu bằng câu tự giễu tự nhiên: `「はい、着替えました。」` (*Rồi, thay đồ xong rồi nè*). Không cần quay cảnh thay đồ phức tạp.
 
 ---
 
@@ -74,6 +80,36 @@ Mỗi clip dài đúng **8 giây** (phù hợp hoàn hảo với mô hình Veo 3
      - Dùng `〜と思う` (*mình nghĩ là...*).
 5. **Chỉ dẫn cảm xúc đặt ngay trước ngoặc thoại**:
    - Ví dụ: `戸惑いながらも明るい声で、少し早口: 「えっ、ちょっと待って。においが…においがすごい。」`
+
+---
+
+## 🚀 CHIẾN LƯỢC TIÊU ĐỀ & SEO YOUTUBE (CHUẨN CASE STUDY 180K+ VIEWS)
+
+Học hỏi từ case study thành công của kênh **The Unseen Past** (video *"I Time Traveled to Ancient China in 211 BC! (Vlog)"* đạt 187k+ views):
+
+### 1. Công Thức Đặt Tiêu Đề Hook Kẹp 3 Thành Tố
+`[First-Person Time Travel Hook] + [Specific Historical Setting & Exact Year]! + [(Format Keyword)]`
+
+**Mẫu tiêu đề tối ưu cho POV Vlog Nhật Bản:**
+- `I Time Traveled to Ancient Kyoto in 1000 AD! (Heian POV Vlog)`
+- `I Accidentally Traveled to Samurai Japan in 1274 AD! (Vlog)`
+- `Surviving 24 Hours in Edo Period Tokyo (1657 AD Time Travel Vlog)`
+- `What If You Traveled to Kyoto 1,000 Years Ago? (POV Vlog)`
+
+### 2. Cấu Trúc Mô Tả (Description Framework - 4 Phần)
+1. **Hook Mở Đầu (Question + Persona Experience)**:
+   > *"What was life really like in Ancient Kyoto 1,000 years ago? In this immersive time-travel vlog, [Name] drops into Heian-kyō in 1000 AD and experiences the world of commoners and aristocrats firsthand."*
+2. **Chi Tiết Bối Cảnh & Đạo Cụ (Sensory & Entity Keywords)**:
+   > *"From the muddy earthen lanes of Higashi-no-ichi east market and barter trading with hemp cloth, to the massive 80-meter-wide Suzaku avenue, passing lacquered ox carriages, and touching the aged red-ochre pillars of the Daidairi Palace enclosure..."*
+3. **Bối Cảnh Lịch Sử & Tính Chân Thực (The Stakes & AI Disclaimer)**:
+   > *"The middle Heian period was a golden age of culture, but daily life for commoners was raw, dusty, and grounded in survival. The visuals are AI-assisted historical reconstructions with natural conversational dialogue created for educational storytelling."*
+4. **Kêu Gọi Tương Tác (Engagement CTA) & Hashtags**:
+   > *"Where—and when—should we travel next? Tell us in the comments!\nSubscribe for more immersive journeys into history.\n\n#AncientJapan #HeianKyoto #TimeTravelVlog"*
+
+### 3. Bộ Thẻ Tags 3 Tầng (Three-Tier Tag Strategy)
+- **Tầng 1 (Broad History)**: `ancient japan`, `japanese history`, `heian period`, `kyoto history`, `life in ancient japan`, `1000 AD`.
+- **Tầng 2 (Specific Entity & Location)**: `heian kyo`, `daidairi`, `suzaku avenue`, `higashinoichi`, `kamo river`, `fujiwara clan`.
+- **Tầng 3 (Format & Technology)**: `time travel vlog`, `time travel history`, `AI historical reconstruction`, `cinematic history`, `POV vlog`, `history brought to life`.
 
 ---
 
