@@ -262,24 +262,55 @@ curl -X POST http://127.0.0.1:8100/api/requests \
 
 Batch 5. Poll 15s. Each video takes 2-5 min.
 
+**Auto-Retry Rule (Max 5 Attempts):**
+- Any video generation that fails (timeout after 420s or API error) MUST be automatically retried up to **5 times** (`MAX_RETRIES = 5`).
+- If an operation fails repeatedly due to content moderation or safety filters (e.g. `as29s failed: [5]`):
+  1. Automatically sanitize `video_prompt` and scene `prompt` to remove sensitive/violent trigger words (weapons, poison, smoke, war cries).
+  2. Call `REGENERATE_IMAGE` first to create a fresh, clean start frame (`media_id`).
+  3. Call `GENERATE_VIDEO` again with the clean start frame.
+
+**Immediate Rolling Download:**
+- As soon as each scene video reaches `COMPLETED`, immediately download it to `${OUTDIR}/scenes/scene_{IDX3}_{SCENE_ID}.mp4`.
+- Never wait for the entire pipeline to finish before downloading; completed clips are stored locally on disk right away.
+
 ---
 
-### Stage 2.5 — Review Videos
+### Stage 2.5 — Mandatory Review Videos & Review Board
 
-Only run after all videos COMPLETED. Uses `/fk-review-video` to catch AI generation errors before upscaling.
+Runs automatically after the video batch completes (or after all retries settle). Uses `/fk-review-video` to catch AI generation errors and review each node before concatenation:
 
 ```bash
-# Run light review on all completed videos
-curl -X POST "http://127.0.0.1:8100/api/videos/<VID>/review?project_id=<PID>&mode=light&orientation=<ORIENTATION>"
-# Poll until complete
+# 1. Run light review on all completed videos via API
+curl -s -X POST "http://127.0.0.1:8100/api/videos/<VID>/review?project_id=<PID>&mode=light&orientation=<ORIENTATION>"
 ```
 
-**Interpret results:**
-- Scenes scoring **7.5+** (good/excellent) → pass, move to upscale
-- Scenes scoring **4.0–7.4** (acceptable/poor) → update `video_prompt` based on `fix_guide` + `errors`, then regen video
-- Scenes scoring **0–3.9** (unusable) → update `video_prompt` based on errors, regen image first (`REGENERATE_IMAGE`), then regen video
+**Auto-Report & Node Status Table:**
+Always print the per-node review summary directly to the terminal:
+```
+===========================================================================
+🎬 AI VISION REVIEW REPORT (Overall Score: X.X/10)
+===========================================================================
+Scene      | Score  | Verdict    | Face Cons.   | Motion     | Main Issue / Action
+---------------------------------------------------------------------------
+Scene 0    | 7.97   | GOOD       | 8.5          | 7.5        | Keep as-is
+Scene 1    | 7.48   | ACCEPTABLE | 7.5          | 8.5        | Keep as-is
+Scene 2    | 6.90   | ACCEPTABLE | 7.5          | 7.5        | Optional regen (text overlay)
+Scene 6    | FAILED | NEED REGEN | -            | -          | Auto-sanitized, regenerating
+===========================================================================
+```
 
-**Fix-and-regen loop (max 2 cycles per scene):**
+**Launch Scene Review Board (Interactive Web UI):**
+Automatically ensure the review server is active so the user can inspect videos in browser:
+```bash
+python tools/review_server.py 8200
+```
+Print the review link:
+👉 **`http://localhost:8200?video_id=<VID>`**
+
+**Interpret results & Fix Loop (max 2 review cycles):**
+- Scenes scoring **7.5+** (good/excellent) → pass, proceed to concat
+- Scenes scoring **4.0–7.4** (acceptable/poor) → update `video_prompt` based on `fix_guide` + `errors`, then regen video
+- Scenes scoring **0–3.9** (unusable) or **FAILED** → sanitize prompt, regen image first (`REGENERATE_IMAGE`), then regen video
 
 ```python
 for cycle in range(2):
@@ -289,25 +320,19 @@ for cycle in range(2):
         break  # all pass
 
     for scene in bad_scenes:
-        # Update video_prompt based on review errors + fix_guide
-        # e.g. add "static camera" for camera drift, "no brand logos" for logo errors
         new_prompt = improve_prompt(scene['video_prompt'], scene['errors'], scene['fix_guide'])
         curl_patch(f"/api/scenes/{scene['scene_id']}", {"video_prompt": new_prompt})
 
         if scene['total_score'] < 4.0:
-            # Unusable — regen image first (cascades video)
             submit_request("REGENERATE_IMAGE", scene['scene_id'])
         else:
-            # Poor/acceptable — regen video only
             submit_request("GENERATE_VIDEO", scene['scene_id'])
-
-    # Poll until all regens complete, then re-review
 ```
 
-**After review passes (or max cycles exhausted):**
-- Log scenes that still fail with their scores and errors
-- Proceed to upscale with all scenes that scored 7.5+
-- Report skipped scenes at end
+After review passes (or review cycles complete):
+- Download any newly completed scenes
+- Proceed to Concat with all approved scenes
+
 
 ---
 

@@ -49,22 +49,57 @@ curl -s "http://127.0.0.1:8100/api/requests/batch-status?video_id=<VID>&type=GEN
 # If "all_succeeded": false → some failed, check individual failures
 ```
 
-## Step 4: Verify
+## Step 4: Auto-Retry Failed Videos (Max 5 Attempts)
 
+Do NOT stop if a scene fails or times out. Automatically retry up to **5 times**:
+1. Check failure reason:
+   - If timed out or transient API error: resubmit `GENERATE_VIDEO` up to 5 times.
+   - If content filter / safety rejection (e.g. `as29s failed: [5]`):
+     a. Automatically sanitize `video_prompt` and scene `prompt` to remove sensitive/violent trigger words (poison, weapons, smoke, gore, screaming).
+     b. Call `REGENERATE_IMAGE` first to create a fresh, compliant start frame (`media_id`).
+     c. Call `GENERATE_VIDEO` with the new start frame.
+2. Only mark permanently failed after 5 failed attempts.
+
+## Step 5: Immediate Rolling Download
+
+As each scene reaches `COMPLETED`, immediately download it locally to preserve files and allow instant preview:
 ```bash
-curl -s "http://127.0.0.1:8100/api/scenes?video_id=<VID>"
+# Save to:
+${OUTDIR}/scenes/scene_{IDX3}_{SCENE_ID}.mp4
 ```
 
-## Step 5: Output
+## Step 6: Mandatory AI Vision Review & Review Board
 
-Print results table:
-| Scene | Order | video_status | video_media_id | video_url |
-|-------|-------|-------------|---------------|-----------|
+Automatically trigger `/fk-review-video` immediately without waiting for user instruction:
+```bash
+curl -s -X POST "http://127.0.0.1:8100/api/videos/<VID>/review?project_id=<PID>&mode=light&orientation=${ORI}"
+```
 
-Print: "All videos ready. Run /fk-concat <VID> to download and merge."
+**Print per-node status scorecard table:**
+| Scene | Score | Verdict | Face Consistency | Action |
+|-------|-------|---------|------------------|--------|
+| Scene 0 | 8.2 | EXCELLENT | 8.5 | Ready for concat |
+| Scene 1 | 7.6 | GOOD | 8.0 | Ready for concat |
+| Scene X | 6.2 | ACCEPTABLE | 7.0 | Auto-regen / prompt tweak |
+
+If any scene scores < 7.5, automatically propose/patch prompt and trigger regeneration (max 2 review cycles).
+
+**Launch Scene Review Board (Interactive Web UI):**
+```bash
+python tools/review_server.py 8200
+```
+Provide the link: **`http://localhost:8200?video_id=<VID>`**
+
+## Step 7: Output & Next Steps
+
+Print summary table and notify user:
+"All videos generated, downloaded to `scenes/`, reviewed by AI Vision, and ready in Review Board at http://localhost:8200?video_id=<VID>. Run `/fk-concat` or `/fk-pipeline` to finish."
 
 ## Important rules
 
+- **Auto-retry rule (CRITICAL):** Videos must be automatically retried up to 5 times before giving up.
+- **Immediate download (CRITICAL):** Download scene videos to `${OUTDIR}/scenes/` as soon as they complete.
+- **Auto-review (CRITICAL):** ALWAYS run vision review (`/fk-review-video`) automatically after generation.
 - **GENERATE vs REGENERATE:** `GENERATE_VIDEO` skips scenes already `COMPLETED`. To force-regenerate, reset `${ori}_video_status` to `PENDING` first, then submit.
 - **Cascade on regen:** Regenerating a video auto-clears the upscale status for that scene.
 - **Chain video prompt rule (CRITICAL):** Chain scenes with children use `transition_prompt` for video generation, NOT `video_prompt`. This is because the video transitions from the current scene's image to the child scene's image. When fixing chain scene videos, always update `transition_prompt`. `video_prompt` is only used for ROOT scenes or leaf scenes (no children).
@@ -75,3 +110,4 @@ Print: "All videos ready. Run /fk-concat <VID> to download and merge."
   - After all images complete + end_scene_media_ids updated, regen the **parent video too** (so its end frame matches child's new start image)
   - Then batch regen videos for all children (parent + children can be parallel)
   - **Always proactively propose this cascade to the user** — don't wait for them to notice the mismatch
+

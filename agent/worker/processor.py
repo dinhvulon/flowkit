@@ -492,7 +492,7 @@ async def _handle_failure(rid: str, req: dict, result: dict, retry_after: dict =
                 await crud.update_request(rid, status="PENDING", error_message=str(error_msg))
                 return
             retry_after[rid] = now + min(2 ** retry * 10, 300)
-        await crud.update_request(rid, status="PENDING", retry_count=retry, error_message=str(error_msg))
+        await crud.update_request(rid, status="PENDING", retry_count=retry, request_id=None, error_message=str(error_msg))
         logger.warning("Request %s failed (retry %d/%d): %s", rid[:8], retry, MAX_RETRIES, error_msg)
     else:
         await crud.update_request(rid, status="FAILED", error_message=str(error_msg))

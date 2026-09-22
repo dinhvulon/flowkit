@@ -459,7 +459,10 @@ class OperationService:
         if existing_op:
             logger.info("Video gen already submitted (op=%s), re-polling", existing_op[:30])
             operations = [{"operation": {"name": existing_op}, "status": "MEDIA_GENERATION_STATUS_PENDING"}]
-            return await _poll_operations(self._client, operations)
+            poll_res = await _poll_operations(self._client, operations)
+            if _is_error(poll_res) and request_id:
+                await crud.update_request(request_id, request_id=None)
+            return poll_res
 
         submit_result = await self._client.generate_video(
             start_image_media_id=image_media_id,

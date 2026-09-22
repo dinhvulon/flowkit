@@ -113,6 +113,10 @@ _CRITICAL_RULES = """\
 14. **Fact-check before scripting** — ALWAYS research events via web search before writing project stories, scene prompts, or narrator text. Facts (events, dates, names, operations, outcomes) MUST match real sources. Editorial opinion and analysis are allowed but must be framed as such. Never invent events, operation names, or statistics.
 15. **Real-people bypass** — when characters are based on real famous people (politicians, celebrities, military leaders), NEVER use their real name as entity `name` or anywhere in `description`, `image_prompt`, `prompt`, or `video_prompt`. AI image generators reject known public figures. Instead: (a) use a **role-based alias** as entity name (e.g. "Tổng Tư Lệnh" not "Trump", "Thủ Tướng Sắt" not "Netanyahu"), (b) describe **physical appearance only** — distinctive hair, face shape, build, clothing style — without naming who it is, (c) `narrator_text` may use real titles/roles for storytelling but real names never flow into image/video generation. Keep a `real_reference` mapping in the project plan file (`.omc/research/`) for internal tracking.
 16. **Review before upscale** — ALWAYS run `/fk-review-video` (light mode) after video generation, before upscaling. Scenes scoring < 7.5 get `video_prompt` updated from review errors, then regen video. Max 2 review-regen cycles.
+17. **Auto-retry failed videos (up to 5x)** — When generating videos, any failure or timeout MUST be automatically retried up to 5 times. If failed due to content filters (e.g. `as29s failed: [5]`), auto-sanitize prompt keywords and call `REGENERATE_IMAGE` to get a fresh start frame before regenerating the video.
+18. **Immediate rolling download to `scenes/`** — As each scene video completes, immediately download it to `${OUTDIR}/scenes/scene_{idx}_{sid}.mp4` so clips are stored locally on disk right away.
+19. **Mandatory review & Review Board** — Pipeline skills (`/fk-pipeline`, `/fk-gen-videos`) MUST automatically execute `/fk-review-video` immediately after video generation, display the per-scene scorecard table showing which nodes passed and which need regeneration, and ensure the Review Board web app (`python tools/review_server.py 8200`) is running.
+20. **Language matching for SEO & Thumbnails** — YouTube metadata (`/fk-youtube-seo`) and thumbnails (`/fk-thumbnail`) MUST match the dialogue/script language (e.g. 100% Japanese for Japanese POV vlogs, Vietnamese for Vietnamese, English for English). Never generate English/Vietnamese SEO for Japanese dialogue vlogs.
 """
 
 _PIPELINE_OVERVIEW = """\
@@ -129,12 +133,15 @@ _PIPELINE_OVERVIEW = """\
 6. Gen scene images  POST /api/requests/batch → poll /batch-status?video_id=<VID>
                      Wait for done=true, verify image_media_id = UUID
 7. Gen videos        POST /api/requests/batch → poll /batch-status?video_id=<VID>
-                     Wait for done=true (videos take 2-5 min each)
+                     Auto-retry failed videos up to 5x; auto-download completed clips to scenes/
 7.5 Review videos    POST /api/videos/{vid}/review?mode=light (AI vision quality check)
+                     Auto-triggered immediately! Displays per-node scorecard table.
                      Pass: score >= 7.5 | Fail: update video_prompt → regen → re-review (max 2 cycles)
+                     Launch Review Board: python tools/review_server.py 8200
 8. (Optional) 4K     POST /api/requests/batch (TIER_TWO only)
 9. (Optional) TTS    Create voice template → POST /api/videos/{vid}/narrate
 10. Concat           ffmpeg normalize + concat
+11. SEO & Thumbnails Auto-match script language (e.g. 100% native Japanese for Japanese POV vlog)
 ```
 """
 
