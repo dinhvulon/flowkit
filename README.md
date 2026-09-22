@@ -216,7 +216,12 @@ python -m venv venv
 #   macOS / Linux:      source venv/bin/activate
 
 pip install -r requirements.txt
-python setup.py sync
+
+# Đồng bộ cho Claude Code & Codex CLI (AGENTS.md)
+python setup.py --tool all
+
+# Đồng bộ cho Antigravity IDE (.agents/skills/)
+python scripts/sync_antigravity.py
 ```
 
 ### Run (Hướng dẫn khởi chạy 5 bước)
@@ -306,7 +311,26 @@ curl http://127.0.0.1:8100/health
 
 > Khi thấy `"extension_connected": true`, nghĩa là Server Python và Chrome Extension trên tab Google Flow đã kết nối thành công với nhau. Bạn đã sẵn sàng sinh ảnh và video!
 
+### Đồng bộ AI Skills (Claude Code, OpenAI Codex, Google Antigravity IDE)
+
+FlowKit lưu trữ toàn bộ 36 kịch bản và quy trình làm việc (workflows) trong thư mục nguồn `skills/fk-*.md`. Hệ thống hỗ trợ đồng bộ tự động cho cả 3 trợ lý AI:
+
+| Công cụ AI | Cơ chế hoạt động trong FlowKit | Nơi lưu cấu hình | Lệnh đồng bộ |
+|---|---|---|---|
+| **Google Antigravity (AGY)** | Tự động đọc Rules từ `AGENTS.md`, đồng thời nhận diện Native Slash Commands trong popup `/` qua chuẩn `.agents/skills` | `AGENTS.md` + `.agents/skills/fk-*/SKILL.md` | `python scripts/sync_antigravity.py` |
+| **Claude Code** | Tự động sinh file lệnh slash command | `.claude/commands/fk-*.md` | `python setup.py --tool claude` |
+| **OpenAI Codex CLI** | Đọc chỉ thị và pipeline qua file tập trung | `AGENTS.md` | `python setup.py --tool codex` |
+
+> **Đồng bộ tất cả chỉ với 2 lệnh:**
+> ```powershell
+> python setup.py --tool all
+> python scripts/sync_antigravity.py
+> ```
+> *(Khi dùng `setup.ps1` hoặc `setup.sh`, bước này đã được chạy tự động)*.
+> Sau khi đồng bộ, trong khung chat của **Antigravity IDE**, bạn chỉ cần gõ ký tự `/fk-` là sẽ hiển thị toàn bộ gợi ý lệnh (như `/fk-pipeline`, `/fk-vlog-japan`, `/fk-create-project`...).
+
 ### Configuration
+
 
 | Env var                | Default            | What it does                                                               |
 | ---------------------- | ------------------ | -------------------------------------------------------------------------- |

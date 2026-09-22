@@ -145,6 +145,11 @@ python -c "from agent.main import app; print('  OK: agent.main imports successfu
     exit 1
 }
 
+# ─── Sync AI tool skills (Claude, Codex, Antigravity) ──────
+echo "Syncing AI tool skills..."
+python setup.py --tool all 2>/dev/null || true
+python scripts/sync_antigravity.py 2>/dev/null || true
+
 # ─── jq (for statusline) ───────────────────────────────────
 echo "Checking jq..."
 if command -v jq &>/dev/null; then

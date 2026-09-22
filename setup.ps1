@@ -47,6 +47,7 @@ Write-Host "Verifying agent can import..."
 # 6. Sync skills
 Write-Host "Syncing FlowKit skills..."
 & ".\venv\Scripts\python.exe" setup.py --tool all
+& ".\venv\Scripts\python.exe" scripts/sync_antigravity.py
 
 Write-Host ""
 Write-Host "=========================================" -ForegroundColor Cyan
