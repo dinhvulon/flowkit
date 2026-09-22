@@ -358,30 +358,53 @@ Có 2 cơ chế đồng bộ giọng nói cho Vlogger:
 
 ## 🛠️ CÁCH TRIỂN KHAI TRONG FLOWKIT
 
-### Bước 0: Nghiên cứu Dữ Kiện & Khóa Mỹ Thuật
+### Bước 0: Kiểm Tra Kết Nối & Pre-Flight (Bắt Buộc)
+Trước khi bắt đầu, đảm bảo server Python và Chrome Extension trên tab `flow.google.com` đã kết nối:
+```bash
+curl -s http://127.0.0.1:8100/health
+# Bắt buộc trả về: {"extension_connected": true}
+```
+
+---
+
+### Bước 1: Nghiên cứu Dữ Kiện & Khóa Mỹ Thuật
 1. **Fact-check lịch sử qua `/fk-research`**:
    ```bash
    /fk-research "Heian-kyo daily life 1000 AD commoners food market dress"
+   # hoặc: /fk-research "Kamakura period 1274 AD samurai defense mongol invasion"
    ```
    Xác minh chính xác niên đại, địa danh, trang phục, ẩm thực tránh để AI sáng tác sai lệch.
 2. **Khóa chất liệu mỹ thuật qua [`/fk-add-material`](file:///c:/flowkit/skills/fk-add-material.md)**:
-   - Dự án BẮT BUỘC có trường `"material": "realistic"` (được cấu hình sẵn trong `create_kyoto_heian_1000.py` hoặc khi gọi API).
+   - Dự án BẮT BUỘC có trường `"material": "realistic"` (được cấu hình sẵn trong script hoặc khi gọi API).
    - Hệ thống Image Material sẽ tự động áp bộ quy chuẩn: *Photorealistic RAW photograph, Canon EOS R5, 35mm lens, natural available light* cho ảnh thực thể và tự chèn tiền tố vào prompt phân cảnh, đồng thời thêm negative prompt chống trôi thành anime hay 3D render.
-   - Nếu muốn tạo preset màu phim cổ chuyên biệt, dùng lệnh `/fk-add-material` để tạo profile mới trước khi khởi tạo dự án.
 3. **Quy chuẩn góc máy Veo 3 qua [`/fk-camera-guide`](file:///c:/flowkit/skills/fk-camera-guide.md)**:
    - Áp dụng Pan-Focus f/8–f/11, zero bokeh, camera selfie trước 28mm, nhịp walking gait nhấp nhô và flycam lướt toàn cảnh.
 
 ---
 
-### Bước 1: Nạp Kịch Bản Vào FlowKit
-Chạy script tự động có sẵn để nạp toàn bộ kịch bản và thực thể vào FlowKit API:
+### Bước 2: Nạp Kịch Bản Vào FlowKit
+Chạy script tự động để nạp toàn bộ kịch bản và thực thể vào FlowKit API:
 ```bash
-python scripts/create_kyoto_heian_1000.py
+python scripts/create_kamakura_1274.py    # Kịch bản Vịnh Hakata 1274
+# hoặc:
+python scripts/create_kyoto_heian_1000.py # Kịch bản Kyoto Heian 1000
 ```
 
 ---
 
-### Bước 2: Tải Ảnh Chân Dung Thật (Tùy Chọn)
+### Bước 2.5: Xác Định & Đặt Dự Án Hoạt Động (Set Active Project)
+Script tạo dự án sẽ tự động kích hoạt dự án vừa tạo làm Active Project. Để kiểm tra hoặc chuyển đổi dự án:
+```bash
+# Kiểm tra dự án đang active:
+curl -s http://127.0.0.1:8100/api/active-project
+
+# Chuyển đổi dự án nếu cần:
+/fk-switch-project <PROJECT_ID>
+```
+
+---
+
+### Bước 3: Tải Ảnh Chân Dung Thật (Tùy Chọn)
 Nếu muốn sử dụng khuôn mặt thật của bạn làm Vlogger thay vì mặt AI:
 ```bash
 /fk-upload-ref "C:/photos/my_face.jpg" --entity "Vlogger"
@@ -389,7 +412,7 @@ Nếu muốn sử dụng khuôn mặt thật của bạn làm Vlogger thay vì m
 
 ---
 
-### Bước 3: Chạy Toàn Bộ Pipeline Tự Động (`/fk-pipeline`)
+### Bước 4: Chạy Toàn Bộ Pipeline Tự Động (`/fk-pipeline`)
 Chạy trọn gói chỉ với một câu lệnh:
 ```bash
 /fk-pipeline --r2v --tts --concat
@@ -398,14 +421,14 @@ Hệ thống sẽ tự động thực hiện tuần tự:
 1. **Refs**: Lấy ảnh mặt thật đã nạp (bỏ qua sinh AI) và sinh bối cảnh/đạo cụ còn thiếu.
 2. **Videos (R2V)**: Dùng model `abra_r2v_8s` sinh thẳng 10 clip video 8s kèm khẩu hình Veo 3 từ câu thoại tiếng Nhật.
 3. **TTS**: Tạo giọng đọc tiếng Nhật tự nhiên theo nhịp mora.
-4. **Concat**: Ghép toàn bộ clip + âm thanh thành video hoàn chỉnh `output/heian_kyoto_1000/heian_1000_final.mp4`.
+4. **Concat**: Ghép toàn bộ clip + âm thanh thành video hoàn chỉnh `output/<slug>/<slug>_final.mp4`.
 5. **Auto SEO (`/fk-youtube-seo`)**: Tự động sinh tiêu đề hook, mô tả 4 phần, bộ tag 3 tầng và timestamps chapters.
 6. **Auto Thumbnails (`/fk-thumbnail`)**: Tự động sinh 4 biến thể thumbnail chuẩn tỷ lệ 9:16 (Shorts) hoặc 16:9 (Long-form).
 
 ---
 
-### Bước 4: Đăng Tải Lên YouTube
+### Bước 5: Đăng Tải Lên YouTube
 Sau khi xem lại gói xuất bản (video, SEO metadata, 4 ảnh thumbnail) trong thư mục output:
 ```bash
-/fk-youtube-upload
+/fk-youtube-upload --privacy unlisted --thumbnail 1
 ```

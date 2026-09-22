@@ -6,23 +6,89 @@ Cẩm nang điều phối trọn gói quy trình sản xuất Video Vlog Du Hàn
 
 ## 🧭 BẢNG ĐIỀU PHỐI QUY TRÌNH (PRODUCTION HUB)
 
-Khi bạn muốn sản xuất một tập vlog mới, hãy thực hiện tuần tự qua 5 bước sau:
+Khi bạn muốn sản xuất một tập vlog mới, hãy thực hiện tuần tự qua các giai đoạn sau:
 
 ```text
 ┌─────────────────────────────────────────────────────────────────────────────┐
-│ 1. NGHIÊN CỨU DỮ KIỆN (Fact-Check)      ➔ /fk-research                      │
-│ 2. TẠO KỊCH BẢN & KHÓA MỸ THUẬT         ➔ /fk-vlog-japan                    │
-│ 3. NẠP ẢNH MẶT THẬT (Tùy chọn)          ➔ /fk-upload-ref                    │
-│ 4. CHẠY PIPELINE TỰ ĐỘNG (All-in-One)   ➔ /fk-pipeline --r2v --tts --concat │
-│ 5. XEM LẠI & ĐĂNG TẢI YOUTUBE           ➔ /fk-youtube-upload                │
+│ 0. THIẾT LẬP MÔI TRƯỜNG & KẾT NỐI (Pre-Flight)  ➔ /health: true             │
+│ 1. NGHIÊN CỨU DỮ KIỆN (Fact-Check)              ➔ /fk-research              │
+│ 2. TẠO KỊCH BẢN & SET ACTIVE PROJECT            ➔ /fk-vlog-japan            │
+│ 3. NẠP ẢNH MẶT THẬT (Tùy chọn)                  ➔ /fk-upload-ref            │
+│ 4. CHẠY PIPELINE TỰ ĐỘNG (All-in-One)           ➔ /fk-pipeline              │
+│ 5. XEM LẠI & ĐĂNG TẢI YOUTUBE                   ➔ /fk-youtube-upload        │
 └─────────────────────────────────────────────────────────────────────────────┘
 ```
 
 ---
 
-## 📌 CHI TIẾT TỪNG BƯỚC & CÁC LỰA CHỌN (OPTIONS)
+## 🛠️ GIAI ĐOẠN 0: THIẾT LẬP TỪ ĐẦU ĐẾN CHẠY DỰ ÁN (SETUP & PRE-FLIGHT)
 
-### BƯỚC 0: Nghiên Cứu Dữ Kiện Lịch Sử (`/fk-research`)
+Hệ thống FlowKit hoạt động theo cơ chế cầu nối 3 lớp:
+```text
+┌──────────────────┐     WebSocket      ┌──────────────────────┐     RPC Web     ┌──────────────────┐
+│  Python Agent    │◄──────────────────►│  Chrome Extension     │───────────────►│  flow.google.com │
+│  (FastAPI :8100) │    localhost:9222  │  (MV3 Extension)     │                 │  (Tab đang mở)   │
+└──────────────────┘                    └──────────────────────┘                 └──────────────────┘
+```
+> **Tại sao cần trình duyệt thật?** Google Flow ký mỗi lệnh sinh ảnh/video bằng token phiên `at`, cookie Google và mã giải reCAPTCHA chỉ sinh được trên tab web thật. Script Python không thể chạy ngầm headless mà cần gửi lệnh qua Chrome Extension trên tab đang mở.
+
+### 5 Bước Chuẩn Bị & Khởi Chạy (Pre-Flight Checklist)
+
+#### Bước 0.1: Cài Chrome Extension vào trình duyệt
+1. Mở Google Chrome, gõ địa chỉ: `chrome://extensions`
+2. Bật công tắc **Chế độ dành cho nhà phát triển (Developer mode)** ở góc trên bên phải.
+3. Bấm **Tải tiện ích đã giải nén (Load unpacked)**.
+4. Chọn thư mục `extension/` của dự án (`c:\flowkit\extension`). Icon **Flow Kit** sẽ xuất hiện trên thanh công cụ.
+
+#### Bước 0.2: Đăng nhập Google Flow & Luôn giữ tab mở
+1. Mở tab mới trên Chrome và truy cập: **https://flow.google.com/**
+2. Đăng nhập tài khoản Google của bạn.
+3. **Quy tắc vàng:** Luôn **giữ tab `flow.google.com` này mở** trong suốt quá trình tạo video.
+
+#### Bước 0.3: Lấy mã `FLOW_PROJECT_ID`
+1. Trên giao diện `flow.google.com`, bấm mở một Project có sẵn (hoặc tạo mới).
+2. Nhìn lên URL trình duyệt: `https://flow.google.com/project/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx`
+3. Copy chuỗi mã UUID ở cuối URL và gán vào terminal:
+   - **Windows PowerShell:**
+     ```powershell
+     $env:FLOW_PROJECT_ID="chuỗi-uuid-vừa-copy"
+     ```
+   - **macOS / Linux / Git Bash:**
+     ```bash
+     export FLOW_PROJECT_ID="chuỗi-uuid-vừa-copy"
+     ```
+
+#### Bước 0.4: Khởi động Server Python (FastAPI cổng 8100)
+Tại thư mục gốc dự án (`c:\flowkit`):
+- **Windows PowerShell:**
+  ```powershell
+  .\venv\Scripts\Activate.ps1
+  python -m agent.main
+  ```
+- **macOS / Linux / Git Bash:**
+  ```bash
+  source venv/bin/activate
+  python -m agent.main
+  ```
+> [!NOTE]
+> **Xử lý sự cố cổng 8100:** Nếu terminal báo lỗi `address already in use` hoặc tự tắt ngay, nghĩa là Server FlowKit **đang chạy ngầm sẵn từ trước** rồi! Bạn không cần bật lại mà chỉ cần mở tab terminal khác để thao tác.
+
+#### Bước 0.5: Kiểm tra kết nối Health Check (Bắt Buộc)
+Mở một cửa sổ terminal mới và chạy:
+```bash
+curl -s http://127.0.0.1:8100/health
+```
+**Kết quả bắt buộc phải có:**
+```json
+{"status": "ok", "extension_connected": true}
+```
+Khi thấy `"extension_connected": true`, toàn bộ hệ thống cầu nối đã thông suốt và sẵn sàng chạy các bước kịch bản bên dưới!
+
+---
+
+## 📌 CHI TIẾT TỪNG BƯỚC SẢN XUẤT VLOG (WORKFLOW)
+
+### BƯỚC 1: Nghiên Cứu Dữ Kiện Lịch Sử (`/fk-research`)
 
 Xác minh thực tế để kịch bản không bị AI "ảo giác" hoặc sáng tác sai niên đại:
 
@@ -38,7 +104,7 @@ Xác minh thực tế để kịch bản không bị AI "ảo giác" hoặc sán
 
 ---
 
-### BƯỚC 1: Khóa Mỹ Thuật & Tạo Kịch Bản (`/fk-vlog-japan`)
+### BƯỚC 2: Khóa Mỹ Thuật & Tạo Kịch Bản (`/fk-vlog-japan`)
 
 1. **Khóa chất liệu mỹ thuật qua [`/fk-add-material`](file:///c:/flowkit/skills/fk-add-material.md)**:
    - Luôn nạp `material: "realistic"` vào dự án. Hệ thống sẽ tự động chèn tiền tố _Photorealistic RAW photograph, natural available light_ vào toàn bộ ảnh nhân vật và phân cảnh, đồng thời áp negative prompt chống trôi thành anime/3D.
@@ -61,11 +127,11 @@ Xác minh thực tế để kịch bản không bị AI "ảo giác" hoặc sán
 
 ---
 
-### BƯỚC 1.5: Xác Định & Đặt Dự Án Hoạt Động (Set Active Project)
+### BƯỚC 2.5: Xác Định & Đặt Dự Án Hoạt Động (Set Active Project)
 
 Khi bạn vừa chạy xong script tạo dự án, FlowKit có cơ chế nhận diện tự động:
 1. **Tự Động Kích Hoạt (Auto-Active / Fallback)**:
-   - Hệ thống tự động ưu tiên dự án mới tạo gần đây nhất (`fallback_most_recent`). Bạn có thể chạy ngay các lệnh ở Bước 2 & 3 mà không cần gõ kèm `project_id`.
+   - Hệ thống tự động ưu tiên dự án mới tạo gần đây nhất (`fallback_most_recent`). Bạn có thể chạy ngay các lệnh ở Bước 3 & 4 mà không cần gõ kèm `project_id`.
 2. **Kiểm Tra Dự Án Đang Hoạt Động**:
    ```bash
    curl -s http://127.0.0.1:8100/api/active-project
@@ -84,7 +150,7 @@ Khi bạn vừa chạy xong script tạo dự án, FlowKit có cơ chế nhận 
 
 ---
 
-### BƯỚC 2: Nạp Ảnh Mặt Thật Của Bạn (`/fk-upload-ref`)
+### BƯỚC 3: Nạp Ảnh Mặt Thật Của Bạn (`/fk-upload-ref`)
 
 Nếu bạn muốn đóng vai Vlogger chính trong chuyến du hành thay vì để AI tự tạo mặt:
 
@@ -97,7 +163,7 @@ Nếu bạn muốn đóng vai Vlogger chính trong chuyến du hành thay vì đ
 
 ---
 
-### BƯỚC 3: Chạy Trọn Gói Pipeline (`/fk-pipeline`)
+### BƯỚC 4: Chạy Trọn Gói Pipeline (`/fk-pipeline`)
 
 Chỉ với một câu lệnh duy nhất, hệ thống tự động làm hết mọi khâu nặng nhọc:
 
@@ -116,7 +182,7 @@ Chỉ với một câu lệnh duy nhất, hệ thống tự động làm hết m
 
 ---
 
-### BƯỚC 4: Bảng Lựa Chọn Xuất Bản YouTube (`/fk-youtube-upload`)
+### BƯỚC 5: Bảng Lựa Chọn Xuất Bản YouTube (`/fk-youtube-upload`)
 
 Sau khi pipeline hoàn tất, bạn kiểm tra thư mục `output/<slug>/` và tiến hành xuất bản theo các tùy chọn dưới đây:
 
@@ -135,10 +201,23 @@ Sau khi pipeline hoàn tất, bạn kiểm tra thư mục `output/<slug>/` và t
 ## 🎯 DANH SÁCH CÂU LỆNH TẮT ĐỂ COPY NHANH
 
 ```bash
-# Toàn bộ quy trình rút gọn:
-/fk-research "Heian-kyo daily life 1000 AD"
-python scripts/create_kyoto_heian_1000.py
+# Toàn bộ quy trình rút gọn từ A-Z:
+
+# 0. Kiểm tra kết nối Chrome Extension & Server:
+curl -s http://127.0.0.1:8100/health
+
+# 1. Nghiên cứu tư liệu lịch sử:
+/fk-research "Kamakura period 1274 AD samurai defense mongol invasion"
+
+# 2. Khởi tạo dự án & 10 phân cảnh:
+python scripts/create_kamakura_1274.py
+
+# 3. Nạp ảnh mặt thật (tùy chọn):
 /fk-upload-ref "C:/photos/my_face.jpg" --entity "Vlogger"
+
+# 4. Chạy toàn bộ pipeline tự động (R2V + TTS + Concat + SEO + Thumbnails):
 /fk-pipeline --r2v --tts --concat
+
+# 5. Xuất bản YouTube:
 /fk-youtube-upload --privacy unlisted --thumbnail 1
 ```
