@@ -75,9 +75,15 @@ Tại thư mục gốc dự án (`c:\flowkit`):
 
 #### Bước 0.5: Kiểm tra kết nối Health Check (Bắt Buộc)
 Mở một cửa sổ terminal mới và chạy:
-```bash
-curl -s http://127.0.0.1:8100/health
-```
+- **Windows PowerShell:**
+  ```powershell
+  curl.exe -s http://127.0.0.1:8100/health
+  # (Lưu ý: Bắt buộc thêm đuôi .exe vì trong PowerShell từ "curl" là bí danh của Invoke-WebRequest)
+  ```
+- **macOS / Linux / Git Bash:**
+  ```bash
+  curl -s http://127.0.0.1:8100/health
+  ```
 **Kết quả bắt buộc phải có:**
 ```json
 {"status": "ok", "extension_connected": true}
@@ -204,7 +210,7 @@ Sau khi pipeline hoàn tất, bạn kiểm tra thư mục `output/<slug>/` và t
 # Toàn bộ quy trình rút gọn từ A-Z:
 
 # 0. Kiểm tra kết nối Chrome Extension & Server:
-curl -s http://127.0.0.1:8100/health
+curl.exe -s http://127.0.0.1:8100/health
 
 # 1. Nghiên cứu tư liệu lịch sử:
 /fk-research "Kamakura period 1274 AD samurai defense mongol invasion"
