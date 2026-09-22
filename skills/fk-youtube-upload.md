@@ -1,8 +1,21 @@
 # fk-youtube-upload — Upload Video to YouTube (Shorts + Long-form)
 
-Upload videos to YouTube with channel rule enforcement, auto-scheduling, and batch support.
+Upload videos to YouTube with channel rule enforcement, auto-scheduling, batch support, and thumbnail selection.
 
-Usage: `/fk-youtube-upload <channel_name> <video_path_or_dir> [--schedule "time"] [--batch] [--dry-run]`
+Usage:
+```bash
+/fk-youtube-upload [channel_name] [video_path] [options]
+```
+
+Options:
+- `--privacy unlisted|public|private` — privacy status (default: `unlisted` for safe review on YouTube Studio)
+- `--thumbnail <1-4|path>` — select one of the 4 generated thumbnails or custom image file
+- `--schedule "time"` — schedule release at a specific ISO timestamp
+- `--dry-run` — simulate upload, validate metadata/thumbnails, print upload payload without sending to YouTube API
+- `--batch` — upload all subclips in a directory
+
+> [!TIP]
+> **Auto-Detection (Zero-Arg Mode):** If run without arguments (`/fk-youtube-upload`), the skill automatically looks up the most recent project in FlowKit (`output/<slug>/`), detects the finalized video `*_final.mp4`, loads `youtube_metadata.json`, lists available thumbnails from `thumbnails/variant_*.png`, and presents an interactive options menu before uploading.
 
 ## Step 1: Parse input and detect video type
 

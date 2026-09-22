@@ -5,16 +5,21 @@ Auto-detect project state and run the correct stages (continuation or full run).
 Usage: `/fk-pipeline [project_id] [orientation] [options]`
 
 Options:
+- `--r2v` — direct Reference-to-Video mode (`abra_r2v_8s`). Skips Stage 1 (Scene Images) and generates videos directly from reference entity images (uploaded via `/fk-upload-ref` or Stage 0) using RPC `MZZa6b`.
 - `--upscale` — include 4K upscale stage. **Unavailable since Flow moved** — no upsampler rpc has been captured on `flow.google.com`, so every upscale fails `UNSUPPORTED_ON_BATCH_API` (terminal, not retried). Warn the user and run without it; the 1080p render is the deliverable. See `docs/CAPTURE.md`.
 - `--tts` — include TTS narration stage (parallel with upscale)
 - `--download` — auto-download 4K files as upscales complete
-- `--concat` — run concat after all stages done
+- `--concat` — run concat after all stages done (default: enabled when videos/TTS are done)
+- `--no-seo` — skip automatic YouTube SEO metadata generation after concat (SEO runs by default)
+- `--no-thumbnail` — skip automatic 4-variant thumbnail generation after concat (Thumbnails run by default)
+- `--upload` — automatically upload to YouTube after SEO & thumbnail prep (requires configured YouTube OAuth)
 - `--notify` — send Telegram notifications at milestones
 - `--interval N` — poll interval in seconds (default: 15)
 - `--orientation H|V` — HORIZONTAL or VERTICAL (auto-detected from video.orientation if omitted)
 
 Examples:
 - `/fk-pipeline` — detect state and continue most recent project
+- `/fk-pipeline --r2v --tts --concat` — direct R2V run: skips start frame images, renders video, TTS, concats, and auto-generates SEO + thumbnails
 - `/fk-pipeline --upscale --tts --download --notify` — full run with all options
 - `/fk-pipeline <project_id> HORIZONTAL --upscale --download` — explicit project + orientation
 
@@ -178,6 +183,9 @@ if concat_flag:
 
 Only run if any entity is missing `media_id`.
 
+> [!TIP]
+> **Custom Face Reference:** If you uploaded custom character or asset photos via `/fk-upload-ref`, those entities already have a valid `media_id` UUID. Stage 0 will automatically preserve them (skipping AI generation) and pass them as `imageInputs` references in Stage 1 (Scene Images) and Stage 2 (Scene Videos).
+
 ```bash
 # For each entity missing media_id, submit GENERATE_CHARACTER_IMAGE
 # Batch 5 at a time
@@ -193,12 +201,15 @@ for CID in <missing_ids>:
 
 ---
 
-### Stage 1 — Scene Images
+### Stage 1 — Scene Images (Skip if using `--r2v`)
 
 Only run after all refs have `media_id`.
 
+> [!NOTE]
+> **R2V Mode:** If `--r2v` is set, **SKIP Stage 1 entirely**. FlowKit will use the reference entity images (`character_names`) directly to generate videos via `abra_r2v_8s` without generating start scene images first.
+
 ```bash
-# For each scene with image_status != COMPLETED:
+# For each scene with image_status != COMPLETED (I2V mode only):
 curl -X POST http://127.0.0.1:8100/api/requests \
   -H "Content-Type: application/json" \
   -d '{"type":"GENERATE_IMAGE","scene_id":"<SID>","project_id":"<PID>","video_id":"<VID>","orientation":"<ORIENTATION>"}'
@@ -212,13 +223,26 @@ Batch 5 at a time. Poll every 15s. Submit next batch when current batch complete
 
 ### Stage 2 — Scene Videos
 
+**A. Standard Mode (I2V with `abra_i2v_8s`):**
 Only run after all scene images COMPLETED.
-
 ```bash
 curl -X POST http://127.0.0.1:8100/api/requests \
   -H "Content-Type: application/json" \
   -d '{"type":"GENERATE_VIDEO","scene_id":"<SID>","project_id":"<PID>","video_id":"<VID>","orientation":"<ORIENTATION>"}'
 ```
+
+**B. R2V Mode (Ingredients with `abra_r2v_8s` via RPC `MZZa6b`):**
+Runs directly when Stage 0 (Ref Images) is complete:
+```bash
+curl -X POST http://127.0.0.1:8100/api/requests \
+  -H "Content-Type: application/json" \
+  -d '{"type":"GENERATE_VIDEO_REFS","scene_id":"<SID>","project_id":"<PID>","video_id":"<VID>","orientation":"<ORIENTATION>"}'
+```
+
+> [!TIP]
+> **Dual-Track Voice Handling:**
+> 1. **In-Video Lip-Sync (Veo 3):** Structure the `video_prompt` with quoted dialogue in sub-clips (e.g. `0-3s: Luna walks and says "Konnichiwa"`). Veo 3 / Omni Flash automatically animates the character's lips and generates natural speaking audio inside the video.
+> 2. **Studio TTS Narration:** Run Stage 3 with `--tts` (OmniVoice / EdgeTTS) to generate crisp narration audio that aligns cleanly with the storyline during concatenation.
 
 Batch 5. Poll 15s. Each video takes 2-5 min.
 
@@ -341,6 +365,28 @@ ffprobe -v quiet -show_entries format=duration -of csv=p=0 "<file>"
 Run after UPSCALE + DOWNLOAD + TTS all complete. Delegates to `/fk-concat`.
 
 Invoke: `/fk-concat --4k --with-tts` (or appropriate flags based on what was run).
+
+---
+
+### Stage 7 — Auto SEO & Thumbnails (Publishing Prep)
+
+Runs automatically after Concat completes (unless `--no-seo` or `--no-thumbnail` is specified). Prepares the entire publishing kit ready for upload:
+
+1. **Auto YouTube SEO (`/fk-youtube-seo`)**:
+   - Auto-detects format: **9:16 Shorts** (Shorts hook, #Shorts, condensed description) or **16:9 Long-form** (full 4-part description, 3-tier tags, timestamps chapters).
+   - Auto-detects language: matches project language (VI, EN, JA).
+   - Generates and writes files:
+     - `output/<slug>/youtube_metadata.json` (machine-readable for upload API)
+     - `output/<slug>/youtube_metadata.md` (clean human-readable copy/paste document)
+
+2. **Auto Thumbnails (`/fk-thumbnail`)**:
+   - Generates 4 hook-worthy thumbnail variants matching video orientation (9:16 or 16:9).
+   - Follows `/fk-thumbnail-guide` (2-line bold hook text, character reference consistency, high contrast).
+   - Saves into `output/<slug>/thumbnails/variant_1..4.png`.
+
+3. **Publishing Gate**:
+   - Prints the full package summary to the console: Title, Description preview, and Thumbnail file paths.
+   - If `--upload` was passed, automatically invokes `/fk-youtube-upload`. Otherwise, halts safely so you can review before uploading manually.
 
 ---
 

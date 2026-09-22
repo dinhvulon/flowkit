@@ -129,6 +129,61 @@ Học hỏi từ case study thành công của kênh **The Unseen Past** (video 
   6. `Kamo Riverbank` (`location`): Bãi sỏi sông Kamo hoang sơ, cỏ lau khô susuki, dòng nước trong nông nhiều nhánh, vài tấm bia mộ gỗ cắm nghiêng bên mép nước.
   7. `Boxwood Comb` (`visual_asset`): Chiếc lược gỗ hoàng dương nhỏ chạm khắc mộc mạc thời Heian.
 
+### 👤 Tùy Chọn Nạp Ảnh Thật Của Bạn (Custom Face Reference)
+Nếu bạn muốn dùng **chính khuôn mặt thật của bạn** (hoặc một ảnh chân dung cụ thể có sẵn) làm nhân vật Vlogger xuyên suốt toàn bộ video thay vì để AI tự vẽ:
+
+1. **Bước 1 — Upload ảnh chân dung lên Google Flow:**
+   ```bash
+   curl -s -X POST http://127.0.0.1:8100/api/flow/upload-image \
+     -H "Content-Type: application/json" \
+     -d '{
+       "file_path": "C:/path/to/anh_chan_dung_cua_ban.jpg",
+       "project_id": "<PID>"
+     }'
+   # Kết quả trả về chứa: {"media_id": "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"}
+   ```
+2. **Bước 2 — Gán `media_id` vào nhân vật Vlogger:**
+   ```bash
+   curl -s -X PATCH http://127.0.0.1:8100/api/characters/<VLOGGER_ID> \
+     -H "Content-Type: application/json" \
+     -d '{"media_id": "<UUID_VỪA_UPLOAD>"}'
+   ```
+3. **Bước 3 — Chạy tạo reference:**
+   Khi gọi `/fk-gen-refs`, hệ thống thấy `Vlogger` đã có `media_id` sẵn nên sẽ **tự động bỏ qua việc vẽ nhân vật bằng AI** (giữ nguyên 100% ảnh thật của bạn), chỉ sinh các ảnh bối cảnh và đạo cụ còn lại!
+   Đến bước sinh ảnh phân cảnh (`GENERATE_IMAGE`), hệ thống tự động đưa ảnh của bạn vào `imageInputs` reference để mọi góc quay đều giữ đúng khuôn mặt bạn.
+
+---
+
+### 🎙️ Cấu Hình Đồng Bộ Giọng Nói (Voice ID Sync)
+Có 2 cơ chế đồng bộ giọng nói cho Vlogger:
+
+#### Cách 1: Khẩu hình & Giọng nói tự nhiên trong video (Google Flow Native)
+- Khai báo trường `voice_description` cho nhân vật `Vlogger` (tối đa ~30 từ) mô tả chất giọng:
+  ```bash
+  curl -s -X PATCH http://127.0.0.1:8100/api/characters/<VLOGGER_ID> \
+    -H "Content-Type: application/json" \
+    -d '{"voice_description": "Japanese young female voice, 22 years old, bright natural conversational tone, friendly and energetic"}'
+  ```
+- Bật `allow_voice: true` cho project:
+  ```bash
+  curl -s -X PATCH http://127.0.0.1:8100/api/projects/<PID> \
+    -H "Content-Type: application/json" \
+    -d '{"allow_voice": true}'
+  ```
+  *(Khi sinh video, Veo 3 / Omni Flash sẽ tự động đồng bộ cử động môi và phát ra giọng nói theo đúng mô tả này).*
+
+#### Cách 2: Lồng tiếng chuẩn TTS (OmniVoice / Voice Template)
+- Nếu muốn đồng bộ chính xác giọng đọc của bạn:
+  1. Dùng skill `/fk-import-voice` để nạp 1 file ghi âm giọng nói của bạn (WAV/MP3).
+  2. Hoặc dùng `/fk-gen-tts-template` để tạo template giọng tiếng Nhật (ví dụ: `jp_vlogger_female`).
+  3. Lồng tiếng tự động vào các scene bằng lệnh:
+     ```bash
+     curl -s -X POST http://127.0.0.1:8100/api/videos/<VID>/narrate \
+       -H "Content-Type: application/json" \
+       -d '{"template": "jp_vlogger_female"}'
+     ```
+  4. Chạy `/fk-concat --with-tts` để tự động trộn âm thanh giọng đọc TTS hòa quyện với âm thanh môi trường của video.
+
 ---
 
 ### Danh Sách 10 Phân Cảnh (Scene Breakdown)
@@ -303,30 +358,52 @@ Học hỏi từ case study thành công của kênh **The Unseen Past** (video 
 
 ## 🛠️ CÁCH TRIỂN KHAI TRONG FLOWKIT
 
-### Bước 1: Tạo dự án Heian 1000 qua script tự động
-Chạy script tự động có sẵn để nạp toàn bộ kịch bản này vào FlowKit API:
+### Bước 0: Nghiên cứu Dữ Kiện & Khóa Mỹ Thuật
+1. **Fact-check lịch sử qua `/fk-research`**:
+   ```bash
+   /fk-research "Heian-kyo daily life 1000 AD commoners food market dress"
+   ```
+   Xác minh chính xác niên đại, địa danh, trang phục, ẩm thực tránh để AI sáng tác sai lệch.
+2. **Khóa chất liệu mỹ thuật qua `/fk-add-material`**:
+   Đảm bảo dự án dùng `material: "realistic"` để hình ảnh giữ phong cách tư liệu đời thực, không bị trôi thành anime hay hoạt hình.
+3. **Quy chuẩn góc máy Veo 3 qua `/fk-camera-guide`**:
+   Áp dụng Pan-Focus f/8–f/11, zero bokeh, camera selfie trước 28mm, nhịp walking gait nhấp nhô và flycam lướt toàn cảnh.
+
+---
+
+### Bước 1: Nạp Kịch Bản Vào FlowKit
+Chạy script tự động có sẵn để nạp toàn bộ kịch bản và thực thể vào FlowKit API:
 ```bash
 python scripts/create_kyoto_heian_1000.py
 ```
 
-### Bước 2: Sinh tài nguyên theo pipeline của FlowKit
-Sau khi project được tạo:
+---
+
+### Bước 2: Tải Ảnh Chân Dung Thật (Tùy Chọn)
+Nếu muốn sử dụng khuôn mặt thật của bạn làm Vlogger thay vì mặt AI:
 ```bash
-# 1. Sinh ảnh mẫu cho các thực thể nhân vật, bối cảnh, đạo cụ
-/fk-gen-refs <project_id>
+/fk-upload-ref "C:/photos/my_face.jpg" --entity "Vlogger"
+```
 
-# 2. Sinh ảnh Frame 0 cho toàn bộ 10 phân cảnh
-/fk-gen-images <project_id> <video_id>
+---
 
-# 3. Sinh 10 đoạn video ngắn 8s
-/fk-gen-videos <project_id> <video_id>
+### Bước 3: Chạy Toàn Bộ Pipeline Tự Động (`/fk-pipeline`)
+Chạy trọn gói chỉ với một câu lệnh:
+```bash
+/fk-pipeline --r2v --tts --concat
+```
+Hệ thống sẽ tự động thực hiện tuần tự:
+1. **Refs**: Lấy ảnh mặt thật đã nạp (bỏ qua sinh AI) và sinh bối cảnh/đạo cụ còn thiếu.
+2. **Videos (R2V)**: Dùng model `abra_r2v_8s` sinh thẳng 10 clip video 8s kèm khẩu hình Veo 3 từ câu thoại tiếng Nhật.
+3. **TTS**: Tạo giọng đọc tiếng Nhật tự nhiên theo nhịp mora.
+4. **Concat**: Ghép toàn bộ clip + âm thanh thành video hoàn chỉnh `output/heian_kyoto_1000/heian_1000_final.mp4`.
+5. **Auto SEO (`/fk-youtube-seo`)**: Tự động sinh tiêu đề hook, mô tả 4 phần, bộ tag 3 tầng và timestamps chapters.
+6. **Auto Thumbnails (`/fk-thumbnail`)**: Tự động sinh 4 biến thể thumbnail chuẩn tỷ lệ 9:16 (Shorts) hoặc 16:9 (Long-form).
 
-# 4. Review chất lượng video bằng AI Vision
-/fk-review-video <video_id>
+---
 
-# 5. Sinh giọng đọc tiếng Nhật tự nhiên
-/fk-gen-narrator <video_id>
-
-# 6. Ghép hoàn chỉnh và đồng bộ độ dài video theo giọng đọc
-/fk-concat-fit-narrator <video_id>
+### Bước 4: Đăng Tải Lên YouTube
+Sau khi xem lại gói xuất bản (video, SEO metadata, 4 ảnh thumbnail) trong thư mục output:
+```bash
+/fk-youtube-upload
 ```

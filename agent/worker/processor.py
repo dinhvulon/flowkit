@@ -182,9 +182,20 @@ async def _prerequisites_met(req: dict, orientation: str) -> bool:
         scene = await crud.get_scene(req.get("scene_id"))
         if not scene:
             return True  # let _dispatch handle "scene not found"
-        if req_type in ("GENERATE_VIDEO", "REGENERATE_VIDEO", "GENERATE_VIDEO_REFS"):
+        if req_type in ("GENERATE_VIDEO", "REGENERATE_VIDEO"):
             if not scene.get(f"{prefix}_image_media_id"):
                 logger.info("VIDEO prereq deferred: scene=%s no %s_image_media_id", req.get("scene_id","")[:12], prefix)
+                return False
+        elif req_type == "GENERATE_VIDEO_REFS":
+            # R2V does not require a start scene image; needs reference entity media or end frame
+            has_ref = bool(scene.get(f"{prefix}_end_scene_media_id"))
+            if not has_ref:
+                pid = scene.get("project_id") or req.get("project_id")
+                if pid:
+                    chars = await crud.get_project_characters(pid)
+                    has_ref = any(c.get("media_id") for c in chars)
+            if not has_ref:
+                logger.info("VIDEO_REFS prereq deferred: scene=%s no reference media_id available yet", req.get("scene_id","")[:12])
                 return False
         elif req_type == "UPSCALE_VIDEO":
             if not scene.get(f"{prefix}_video_media_id"):

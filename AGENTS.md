@@ -111,6 +111,8 @@ This project has reusable skills in `skills/`. When the user says `/fk-<name>`, 
 | `/fk-thumbnail-guide` | YouTube Thumbnail Guide — Hook-Worthy Design Rules |
 | `/fk-thumbnail` | Generate 4 YouTube-optimized thumbnail variants for a project video. |
 | `/fk-upload-image` | Upload a local image file to Google Flow and get a media_id (UUID). |
+| `/fk-upload-ref` | fk-upload-ref — Upload Custom Reference Image for Character/Entity |
+| `/fk-vlog-guide` | fk-vlog-guide — Master Guide & Interactive Hub for Historical POV Vlogs |
 | `/fk-vlog-japan` | fk-vlog-japan — Japanese Historical & Time-Travel POV Vlog Orchestrator (Kyoto Heian, Kamakura, Edo) |
 | `/fk-youtube-seo` | fk-youtube-seo — Generate YouTube Metadata (SEO-Optimized) |
 | `/fk-youtube-upload` | fk-youtube-upload — Upload Video to YouTube (Shorts + Long-form) |
