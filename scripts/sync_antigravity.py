@@ -56,7 +56,11 @@ def sync_antigravity(skills):
     AGENTS_SKILLS_DIR.mkdir(parents=True, exist_ok=True)
     count = 0
 
+    GLOBAL_SKILLS_DIR = Path.home() / ".gemini" / "config" / "skills"
+    has_global = GLOBAL_SKILLS_DIR.exists()
+
     for skill in skills:
+        # 1. Sync to workspace .agents/skills
         skill_dir = AGENTS_SKILLS_DIR / skill["id"]
         skill_dir.mkdir(parents=True, exist_ok=True)
         skill_file = skill_dir / "SKILL.md"
@@ -68,10 +72,21 @@ def sync_antigravity(skills):
             f"---\n\n"
             f"<!-- AUTO-GENERATED from {skill['path'].name} — do not edit directly. -->\n\n"
         )
-        skill_file.write_text(frontmatter + skill["content"], encoding="utf-8")
+        full_content = frontmatter + skill["content"]
+        skill_file.write_text(full_content, encoding="utf-8")
+
+        # 2. Sync to global Antigravity config skills if present
+        if has_global:
+            global_skill_dir = GLOBAL_SKILLS_DIR / skill["id"]
+            global_skill_dir.mkdir(parents=True, exist_ok=True)
+            (global_skill_dir / "SKILL.md").write_text(full_content, encoding="utf-8")
+
         count += 1
 
-    print(f"Successfully synced {count} skills to .agents/skills/ for Antigravity IDE.")
+    msg = f"Successfully synced {count} skills to .agents/skills/"
+    if has_global:
+        msg += f" and {GLOBAL_SKILLS_DIR}"
+    print(msg + " for Antigravity IDE.")
     return count
 
 

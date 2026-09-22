@@ -401,9 +401,19 @@ System generates ref image per entity → then composes scenes using those refs
 
 ### Using Skills (recommended)
 
-Skills handle all the API calls, polling, and verification automatically. Use with Claude Code (`/fk-command`) or follow the recipe in `skills/*.md` for any AI agent.
+Skills handle all the API calls, polling, and verification automatically. Use with Claude Code (`/fk-command`), Antigravity IDE, or follow the recipe in `skills/*.md` for any AI agent.
+
+```bash
+# Đồng bộ cho Claude Code & Codex CLI (AGENTS.md)
+python setup.py --tool all
+
+# Đồng bộ cho Antigravity IDE (.agents/skills/ và ~/.gemini/config/skills/)
+python scripts/sync_antigravity.py
+```
 
 ```
+/fk-vlog-guide                 ← master hub: interactive 5-step guide for POV vlogs
+/fk-pipeline --r2v --tts       ← all-in-one pipeline: renders R2V, TTS, concats, SEO + thumbnails
 /fk-create-project             ← interactive: asks story, creates entities + scenes
 /fk-gen-refs <project_id>      ← generates all reference images, verifies UUIDs
 /fk-gen-images <pid> <vid>     ← generates scene images with all refs applied
