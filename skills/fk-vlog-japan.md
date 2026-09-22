@@ -364,10 +364,12 @@ Có 2 cơ chế đồng bộ giọng nói cho Vlogger:
    /fk-research "Heian-kyo daily life 1000 AD commoners food market dress"
    ```
    Xác minh chính xác niên đại, địa danh, trang phục, ẩm thực tránh để AI sáng tác sai lệch.
-2. **Khóa chất liệu mỹ thuật qua `/fk-add-material`**:
-   Đảm bảo dự án dùng `material: "realistic"` để hình ảnh giữ phong cách tư liệu đời thực, không bị trôi thành anime hay hoạt hình.
-3. **Quy chuẩn góc máy Veo 3 qua `/fk-camera-guide`**:
-   Áp dụng Pan-Focus f/8–f/11, zero bokeh, camera selfie trước 28mm, nhịp walking gait nhấp nhô và flycam lướt toàn cảnh.
+2. **Khóa chất liệu mỹ thuật qua [`/fk-add-material`](file:///c:/flowkit/skills/fk-add-material.md)**:
+   - Dự án BẮT BUỘC có trường `"material": "realistic"` (được cấu hình sẵn trong `create_kyoto_heian_1000.py` hoặc khi gọi API).
+   - Hệ thống Image Material sẽ tự động áp bộ quy chuẩn: *Photorealistic RAW photograph, Canon EOS R5, 35mm lens, natural available light* cho ảnh thực thể và tự chèn tiền tố vào prompt phân cảnh, đồng thời thêm negative prompt chống trôi thành anime hay 3D render.
+   - Nếu muốn tạo preset màu phim cổ chuyên biệt, dùng lệnh `/fk-add-material` để tạo profile mới trước khi khởi tạo dự án.
+3. **Quy chuẩn góc máy Veo 3 qua [`/fk-camera-guide`](file:///c:/flowkit/skills/fk-camera-guide.md)**:
+   - Áp dụng Pan-Focus f/8–f/11, zero bokeh, camera selfie trước 28mm, nhịp walking gait nhấp nhô và flycam lướt toàn cảnh.
 
 ---
 

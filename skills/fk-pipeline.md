@@ -35,6 +35,22 @@ Examples:
 
 ---
 
+## Pre-pipeline: How Projects & Scenes Are Created
+
+`/fk-pipeline` orchestrates rendering, TTS, concat, and publication. To create the project and scenes first, choose one of:
+
+1. **Japanese Historical POV Vlogs (Kyoto Heian, Kamakura, Edo)**:
+   - Use **[`/fk-vlog-japan`](file:///c:/flowkit/skills/fk-vlog-japan.md)** (or run `python scripts/create_kyoto_heian_1000.py`).
+   - Automatically builds 10-12 scenes with Pan-Focus f/8–f/11 optics, walking-talking selfie prompts, strict period/ethnicity locks, and conversational Japanese dialogue (`dialog-japan`).
+2. **General / Custom Story Projects**:
+   - Use **[`/fk-create-project`](file:///c:/flowkit/skills/fk-create-project.md)** to generate scenes from any story concept.
+3. **Real Face Reference (Optional)**:
+   - Use **[`/fk-upload-ref "<image_path>" --entity "Vlogger"`](file:///c:/flowkit/skills/fk-upload-ref.md)** to lock your real face before running `/fk-pipeline`.
+
+After project & scenes exist ➔ run `/fk-pipeline --r2v --tts --concat` to automate everything end-to-end!
+
+---
+
 ## Step 1: Resolve Project and State
 
 ### 1a. Fetch project
