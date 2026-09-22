@@ -14,6 +14,13 @@ import sys
 import urllib.request
 import urllib.error
 
+if sys.platform == "win32":
+    try:
+        sys.stdout.reconfigure(encoding="utf-8")
+        sys.stderr.reconfigure(encoding="utf-8")
+    except AttributeError:
+        pass
+
 BASE_URL = os.environ.get("FLOWKIT_API_URL", "http://127.0.0.1:8100")
 
 
@@ -51,6 +58,16 @@ def put_json(endpoint: str, data: dict) -> dict:
         return {}
 
 
+def get_json(endpoint: str) -> list | dict:
+    url = f"{BASE_URL}{endpoint}"
+    req = urllib.request.Request(url, method="GET")
+    try:
+        with urllib.request.urlopen(req) as res:
+            return json.loads(res.read().decode("utf-8"))
+    except Exception:
+        return []
+
+
 def check_health():
     url = f"{BASE_URL}/health"
     try:
@@ -58,7 +75,7 @@ def check_health():
             data = json.loads(res.read().decode("utf-8"))
             print(f"[+] FlowKit Server đang chạy: {data}")
     except Exception as e:
-        print(f"[-] Không thể kết nối tới FlowKit Server tại {BASE_URL}. Vui lòng chạy: python -m agent.main", file=sys.stderr)
+        print(f"[-] Không thể kết nối tới FlowKit Server tại {BASE_URL}: {e}. Vui lòng chạy: python -m agent.main", file=sys.stderr)
         sys.exit(1)
 
 
@@ -153,21 +170,35 @@ def main():
         ]
     }
 
-    res_proj = post_json("/api/projects", project_payload)
-    project_id = res_proj["id"]
-    print(f"[+] Project tạo thành công! ID: {project_id}")
+    existing_projects = get_json("/api/projects")
+    existing_proj = next((p for p in existing_projects if p.get("id") == os.environ.get("FLOW_PROJECT_ID") or p.get("name") == project_payload["name"]), None)
+
+    if existing_proj:
+        project_id = existing_proj["id"]
+        print(f"[+] Tìm thấy Project đã tồn tại: {existing_proj['name']} (ID: {project_id})")
+    else:
+        res_proj = post_json("/api/projects", project_payload)
+        project_id = res_proj["id"]
+        print(f"[+] Project tạo thành công! ID: {project_id}")
+
     put_json("/api/active-project", {"project_id": project_id})
     print(f"[+] Đã tự động kích hoạt Project ID {project_id} làm Active Project!")
 
     print("\n--- BƯỚC 2: TẠO VIDEO CONTAINER ---")
-    video_payload = {
-        "project_id": project_id,
-        "name": "Kamakura 1274 Hakata Bay Vlog - Bun'ei Campaign",
-        "description": "POV Smartphone Vlog du hành thời gian về Vịnh Hakata năm 1274 (Kháng chiến chống Mông Cổ)"
-    }
-    res_vid = post_json("/api/videos", video_payload)
-    video_id = res_vid["id"]
-    print(f"[+] Video tạo thành công! ID: {video_id}")
+    existing_videos = get_json(f"/api/videos?project_id={project_id}")
+    existing_vid = next((v for v in existing_videos if v.get("project_id") == project_id), None)
+    if existing_vid:
+        video_id = existing_vid["id"]
+        print(f"[+] Tìm thấy Video container đã có: {existing_vid.get('title')} (ID: {video_id})")
+    else:
+        video_payload = {
+            "project_id": project_id,
+            "title": "Kamakura 1274 Hakata Bay Vlog - Bun'ei Campaign",
+            "description": "POV Smartphone Vlog du hành thời gian về Vịnh Hakata năm 1274 (Kháng chiến chống Mông Cổ)"
+        }
+        res_vid = post_json("/api/videos", video_payload)
+        video_id = res_vid["id"]
+        print(f"[+] Video tạo thành công! ID: {video_id}")
 
     print("\n--- BƯỚC 3: TẠO 10 PHÂN CẢNH (SCENES) ---")
     scenes = [

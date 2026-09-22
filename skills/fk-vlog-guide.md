@@ -10,11 +10,12 @@ Khi bạn muốn sản xuất một tập vlog mới, hãy thực hiện tuần 
 
 ```text
 ┌─────────────────────────────────────────────────────────────────────────────┐
-│ 0. THIẾT LẬP MÔI TRƯỜNG & KẾT NỐI (Pre-Flight)  ➔ /health: true             │
+│ 0. THIẾT LẬP MÔI TRƯỜNG & UI WEB (Pre-Flight)   ➔ /health: true & :5173     │
 │ 1. NGHIÊN CỨU DỮ KIỆN (Fact-Check)              ➔ /fk-research              │
 │ 2. TẠO KỊCH BẢN & SET ACTIVE PROJECT            ➔ /fk-vlog-japan            │
 │ 3. NẠP ẢNH MẶT THẬT (Tùy chọn)                  ➔ /fk-upload-ref            │
 │ 4. CHẠY PIPELINE TỰ ĐỘNG (All-in-One)           ➔ /fk-pipeline              │
+│ 4.5. KIỂM DUYỆT VIDEO (Review Board)            ➔ /fk-review-board (:8200)  │
 │ 5. XEM LẠI & ĐĂNG TẢI YOUTUBE                   ➔ /fk-youtube-upload        │
 └─────────────────────────────────────────────────────────────────────────────┘
 ```
@@ -32,7 +33,7 @@ Hệ thống FlowKit hoạt động theo cơ chế cầu nối 3 lớp:
 ```
 > **Tại sao cần trình duyệt thật?** Google Flow ký mỗi lệnh sinh ảnh/video bằng token phiên `at`, cookie Google và mã giải reCAPTCHA chỉ sinh được trên tab web thật. Script Python không thể chạy ngầm headless mà cần gửi lệnh qua Chrome Extension trên tab đang mở.
 
-### 5 Bước Chuẩn Bị & Khởi Chạy (Pre-Flight Checklist)
+### 6 Bước Chuẩn Bị & Khởi Chạy (Pre-Flight Checklist)
 
 #### Bước 0.1: Cài Chrome Extension vào trình duyệt
 1. Mở Google Chrome, gõ địa chỉ: `chrome://extensions`
@@ -89,6 +90,18 @@ Mở một cửa sổ terminal mới và chạy:
 {"status": "ok", "extension_connected": true}
 ```
 Khi thấy `"extension_connected": true`, toàn bộ hệ thống cầu nối đã thông suốt và sẵn sàng chạy các bước kịch bản bên dưới!
+
+#### Bước 0.6: Mở Web Dashboard Trực Quan (Khuyên Dùng)
+Để theo dõi trực quan danh sách dự án, tiến độ sinh video, thư viện Gallery ảnh/video và logs hệ thống theo thời gian thực thay vì chỉ nhìn terminal:
+1. Mở một terminal mới:
+   ```bash
+   cd c:\flowkit\dashboard
+   npm install        # Chỉ cần chạy lần đầu tiên
+   npm run dev
+   ```
+2. Mở trình duyệt truy cập:
+   👉 **http://localhost:5173**
+*(Dashboard tự động kết nối và đồng bộ hai chiều với Server Python cổng 8100).*
 
 ---
 
@@ -188,6 +201,32 @@ Chỉ với một câu lệnh duy nhất, hệ thống tự động làm hết m
 
 ---
 
+### BƯỚC 4.5: Kiểm Duyệt Video Trực Quan Với Scene Review Board (`/fk-review-board`)
+
+Trước khi xuất bản hoặc khi muốn kiểm tra kỹ chất lượng video từng cảnh (xem cử động, nét mặt nhân vật, chuyển cảnh), bạn sử dụng **Scene Review Board**:
+
+- **Cách 1: Dùng lệnh nhanh**
+  ```bash
+  /fk-review-board
+  ```
+- **Cách 2: Chạy trực tiếp qua Python** *(Lưu ý: Chạy từ thư mục gốc `c:\flowkit`, không đứng ở thư mục `dashboard/`)*
+  ```bash
+  python tools/review_server.py
+  ```
+  Sau đó mở trình duyệt:
+  👉 **http://localhost:8200?video_id=<ID_VIDEO>**
+
+**Các tính năng nổi bật trên Review Board:**
+1. **Xem video inline theo chuỗi cảnh (Scene Chains)**: Bấm phát từng video clip trực tiếp trên giao diện storyboard trực quan.
+2. **Gắn nhãn phân loại (Tagging)**:
+   - **`OK`**: Cảnh hoàn hảo, giữ nguyên để nối video cuối.
+   - **`Regen Video`**: Cử động nhân vật bị méo hoặc lỗi chuyển động $\rightarrow$ Yêu cầu sinh lại video.
+   - **`Regen Image`**: Ảnh tĩnh ban đầu bị sai chi tiết $\rightarrow$ Yêu cầu vẽ lại ảnh.
+   - **`Edit`**: Cần chỉnh sửa câu lệnh prompt.
+3. **Ghi chú & Tự động sửa lỗi**: Gõ phản hồi trực tiếp cho từng cảnh và bấm **Export Feedback** (`tools/review_feedback.json`) để Agent tự động tạo lại các cảnh lỗi mà không cần gõ lệnh thủ công.
+
+---
+
 ### BƯỚC 5: Bảng Lựa Chọn Xuất Bản YouTube (`/fk-youtube-upload`)
 
 Sau khi pipeline hoàn tất, bạn kiểm tra thư mục `output/<slug>/` và tiến hành xuất bản theo các tùy chọn dưới đây:
@@ -209,8 +248,9 @@ Sau khi pipeline hoàn tất, bạn kiểm tra thư mục `output/<slug>/` và t
 ```bash
 # Toàn bộ quy trình rút gọn từ A-Z:
 
-# 0. Kiểm tra kết nối Chrome Extension & Server:
+# 0. Kiểm tra kết nối & Khởi động Web Dashboard:
 curl.exe -s http://127.0.0.1:8100/health
+cd dashboard && npm run dev           # Mở http://localhost:5173
 
 # 1. Nghiên cứu tư liệu lịch sử:
 /fk-research "Kamakura period 1274 AD samurai defense mongol invasion"
@@ -223,6 +263,9 @@ python scripts/create_kamakura_1274.py
 
 # 4. Chạy toàn bộ pipeline tự động (R2V + TTS + Concat + SEO + Thumbnails):
 /fk-pipeline --r2v --tts --concat
+
+# 4.5. Mở bảng kiểm duyệt storyboard / video:
+/fk-review-board                      # Hoặc: python tools/review_server.py -> Mở http://localhost:8200
 
 # 5. Xuất bản YouTube:
 /fk-youtube-upload --privacy unlisted --thumbnail 1

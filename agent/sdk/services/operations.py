@@ -574,6 +574,17 @@ class OperationService:
                         ref_ids.append(mid)
                         seen.add(mid)
 
+            # Fallback: if no visual_asset or character found, allow location so pure landscape/flycam scenes can work
+            if not ref_ids:
+                for c in project_entities:
+                    if not _char_matches(c, char_names_set):
+                        continue
+                    mid = c.get("media_id")
+                    if mid and mid not in seen:
+                        ref_ids.append(mid)
+                        seen.add(mid)
+                        break
+
         if not ref_ids:
             return {"error": "No valid reference media_ids for r2v"}
 
