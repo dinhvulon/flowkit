@@ -39,9 +39,9 @@ Examples:
 
 `/fk-pipeline` orchestrates rendering, TTS, concat, and publication. To create the project and scenes first, choose one of:
 
-1. **Japanese Historical POV Vlogs (Kyoto Heian, Kamakura, Edo)**:
-   - Use **[`/fk-vlog-japan`](file:///c:/flowkit/skills/fk-vlog-japan.md)** (or run `python scripts/create_kyoto_heian_1000.py`).
-   - Automatically builds 10-12 scenes with Pan-Focus f/8–f/11 optics, walking-talking selfie prompts, strict period/ethnicity locks, and conversational Japanese dialogue (`dialog-japan`).
+1. **Time Travel / Historical POV Vlogs (mọi thời kỳ, mọi địa điểm)**:
+   - Use **[`/fk-time-travel-vlog`](file:///c:/flowkit/skills/fk-time-travel-vlog.md)** — Paris 1888, Rome 79 AD, Qin dynasty, Viking Age, Victorian London, v.v.
+   - Tự động dựng kịch bản 7 hồi, Character Bible, fact-check lịch sử, storyboard 12+ scene VERTICAL/HORIZONTAL.
 2. **General / Custom Story Projects**:
    - Use **[`/fk-create-project`](file:///c:/flowkit/skills/fk-create-project.md)** to generate scenes from any story concept.
 3. **Real Face Reference (Optional)**:
