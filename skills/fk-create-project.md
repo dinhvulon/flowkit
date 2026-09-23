@@ -104,7 +104,15 @@ Camera stays behind. Viewers see the leader's power through body language, not f
 | Military rank + origin | The Field Marshal, The Admiral | Military figures |
 | Generic role | The Royal Advisor, The Strategist | Secondary characters |
 
-## Step 0: Make sure there is a Flow project to attach to
+## Step 0: Pre-cleanup & Flow project setup
+
+### 0a. Flush stale queue from previous projects
+Always clear pending requests so the worker doesn't auto-retry old failed requests:
+```bash
+python -c "import sqlite3; conn = sqlite3.connect('flow_agent.db'); conn.execute('UPDATE request SET status=\'FAILED\' WHERE status=\'PENDING\''); conn.commit()"
+```
+
+### 0b. Make sure there is a Flow project to attach to
 
 Since Flow moved to `flow.google.com`, Flow Kit cannot create Flow projects —
 the endpoint that did it went with the migration. Every generation is scoped to
