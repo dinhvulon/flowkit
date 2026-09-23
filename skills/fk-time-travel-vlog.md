@@ -18,7 +18,7 @@ Skill này **gọi các skill FlowKit khác** để tự động fact-check và 
 - `/fk-add-material` — khóa chất liệu ảnh (`material: "realistic"`).
 - `/fk-camera-guide` — chuẩn góc máy selfie/POV cho Veo 3 / Omni Flash.
 - `/fk-gen-music` — nhạc nền/ambient trải liên tục (xem mục 8).
-- `/fk-create-project`, `/fk-switch-project`, `/fk-upload-ref`, `/fk-pipeline`, `/fk-youtube-seo`, `/fk-thumbnail` — triển khai và chạy pipeline (xem phần 🛠️ bên dưới).
+- `/fk-create-project`, `/fk-switch-project`, `/fk-upload-ref`, `/fk-gen-images`, `/fk-review-board`, `/fk-pipeline`, `/fk-youtube-seo`, `/fk-thumbnail` — triển khai và chạy pipeline (xem phần 🛠️ bên dưới).
 
 Khung kịch bản, tỉ lệ shot và nhịp beat dưới đây được rút ra từ phân tích khung-hình thật của một video cùng format đã thành công — chi tiết đầy đủ ở `.agents/skills/time-travel-vlog/references/reference-analysis.md` (tóm tắt lại ở mục "📊 Bằng chứng thực nghiệm" bên dưới). **Đọc file gốc trước khi lệch khỏi khung mặc định.**
 
@@ -206,15 +206,43 @@ Nếu muốn sử dụng khuôn mặt thật của bạn làm Vlogger thay vì m
 
 ---
 
-### Bước 4: Chạy Toàn Bộ Pipeline Tự Động (`/fk-pipeline`)
-Chạy trọn gói chỉ với một câu lệnh:
+### Bước 4: Sinh Ảnh Scene → Review → Sinh Video
+
+Pipeline được chia làm **2 phase** với một cửa review bắt buộc ở giữa. Không bao giờ sinh video trực tiếp từ prompt chưa được kiểm tra ảnh — ảnh xấu thì video chắc chắn xấu theo.
+
+#### Phase A — Sinh Refs + Ảnh Scene
+```bash
+/fk-gen-refs    # Sinh ảnh nhân vật/bối cảnh/đạo cụ còn thiếu media_id
+/fk-gen-images  # Sinh ảnh frame-0 cho toàn bộ scene (VERTICAL hoặc HORIZONTAL)
+```
+Khi tất cả scene có `vertical_image_status = COMPLETED`, dừng lại và **bắt buộc review trước khi sang Phase B**.
+
+#### Bước 4.5: Review Ảnh Scene (Bắt Buộc Trước Khi Sinh Video)
+```bash
+/fk-review-board   # Mở bảng review trực quan tất cả ảnh scene trong browser
+```
+Kiểm tra từng scene theo các tiêu chí sau — **sửa trước, sinh video sau**:
+
+| Tiêu chí | Pass | Fail → Hành động |
+|---|---|---|
+| Khuôn mặt nhân vật rõ, đúng góc (front/side, không bị cắt) | ✅ | REGENERATE_IMAGE với prompt rõ hơn về góc máy |
+| Trang phục đúng thời kỳ (không đồ hiện đại lẫn vào) | ✅ | Thêm negative prompt: `"no modern clothing, no jeans, no t-shirt"` |
+| Bối cảnh lịch sử khớp thời kỳ (không công trình/vật thể sai niên đại) | ✅ | REGENERATE_IMAGE, siết thêm năm vào `prompt` |
+| Ánh sáng nhất quán với giờ trong ngày của beat | ✅ | REGENERATE_IMAGE với chú thích ánh sáng |
+| Không chữ/logo/watermark trên ảnh | ✅ | Thêm `"no text, no watermark, no subtitles"` vào prompt |
+| Scene CONTINUATION: bối cảnh liên tục với parent (không nhảy địa điểm đột ngột) | ✅ | REGENERATE_IMAGE; nếu vẫn fail → đổi `chain_type: ROOT` |
+| Selfie scenes: The Selfie Stick visible, arm extended (không mất đạo cụ chính) | ✅ | Patch `prompt` nhấn mạnh `"The Selfie Stick visible at arm's length"` |
+
+Chỉ khi **tất cả scene pass** (hoặc đã sửa xong ảnh fail), mới chạy Phase B.
+
+#### Phase B — Sinh Video + TTS + Concat
+Vì ảnh đã COMPLETED, pipeline tự detect và bỏ qua Stage 1 (images), nhảy thẳng vào Stage 2 (videos):
 ```bash
 /fk-pipeline --tts --concat
 ```
 Hệ thống sẽ tự động thực hiện tuần tự:
-1. **Refs**: Lấy ảnh mặt thật đã nạp (nếu có, bỏ qua sinh AI) và sinh bối cảnh/đạo cụ còn thiếu.
-2. **Videos**: Sinh từng clip video 8s theo `prompt`/`video_prompt`/`transition_prompt` đã dựng ở Bước 2.
-3. **TTS**: Tạo giọng đọc tự nhiên nếu dùng lồng tiếng thay vì khẩu hình native trong video.
-4. **Concat**: Ghép toàn bộ clip + âm thanh thành video hoàn chỉnh `output/<slug>/<slug>_final.mp4`.
-5. **Auto SEO (`/fk-youtube-seo`)**: Tự động sinh tiêu đề hook kiểu `"I Time Traveled to ___ in ___! (Vlog)"`, mô tả 4 phần, bộ tag 3 tầng và timestamps chapters.
-6. **Auto Thumbnails (`/fk-thumbnail`)**: Tự động sinh 4 biến thể thumbnail (mặt nhân vật sốc + công trình/sự kiện nổi tiếng nhất của thời kỳ) chuẩn tỷ lệ 9:16 (Shorts) hoặc 16:9 (Long-form).
+1. **Videos**: Sinh từng clip video 8s theo `video_prompt`/`transition_prompt` đã dựng ở Bước 2.
+2. **TTS**: Tạo giọng đọc tự nhiên nếu dùng lồng tiếng thay vì khẩu hình native trong video.
+3. **Concat**: Ghép toàn bộ clip + âm thanh thành video hoàn chỉnh `output/<slug>/<slug>_final.mp4`.
+4. **Auto SEO (`/fk-youtube-seo`)**: Tự động sinh tiêu đề hook kiểu `"I Time Traveled to ___ in ___! (Vlog)"`, mô tả 4 phần, bộ tag 3 tầng và timestamps chapters.
+5. **Auto Thumbnails (`/fk-thumbnail`)**: Tự động sinh 4 biến thể thumbnail (mặt nhân vật sốc + công trình/sự kiện nổi tiếng nhất của thời kỳ) chuẩn tỷ lệ 9:16 (Shorts) hoặc 16:9 (Long-form).
