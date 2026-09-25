@@ -49,30 +49,37 @@ Hệ thống FlowKit hoạt động theo cơ chế cầu nối 3 lớp:
 #### Bước 0.3: Lấy mã `FLOW_PROJECT_ID`
 1. Trên giao diện `flow.google.com`, bấm mở một Project có sẵn (hoặc tạo mới).
 2. Nhìn lên URL trình duyệt: `https://flow.google.com/project/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx`
-3. Copy chuỗi mã UUID ở cuối URL và gán vào terminal:
-   - **Windows PowerShell:**
-     ```powershell
-     $env:FLOW_PROJECT_ID="chuỗi-uuid-vừa-copy"
-     ```
-   - **macOS / Linux / Git Bash:**
-     ```bash
-     export FLOW_PROJECT_ID="chuỗi-uuid-vừa-copy"
-     ```
+3. Copy chuỗi mã UUID ở cuối URL. Chuỗi này dùng ở Bước 0.4.
 
-#### Bước 0.4: Khởi động Server Python (FastAPI cổng 8100)
-Tại thư mục gốc dự án (`c:\flowkit`):
+#### Bước 0.4: Set biến môi trường rồi khởi động Server Python (FastAPI cổng 8100)
+Server chỉ đọc `FLOW_PROJECT_ID` và `FLOW_ALLOW_DEGRADED` **một lần lúc khởi động**. Vì vậy phải set **trước** khi chạy server, và **trong cùng một cửa sổ terminal** (`$env:` / `export` chỉ có hiệu lực trong terminal đó). Chạy đúng thứ tự sau tại thư mục gốc dự án (`c:\flowkit`):
 - **Windows PowerShell:**
   ```powershell
+  $env:FLOW_PROJECT_ID="uuid-copy-từ-URL-flow"
+  $env:FLOW_ALLOW_DEGRADED="true"
   .\venv\Scripts\Activate.ps1
   python -m agent.main
   ```
 - **macOS / Linux / Git Bash:**
   ```bash
+  export FLOW_PROJECT_ID="uuid-copy-từ-URL-flow"
+  export FLOW_ALLOW_DEGRADED="true"
   source venv/bin/activate
   python -m agent.main
   ```
+- `FLOW_PROJECT_ID`: uuid project Flow lấy ở Bước 0.3. Nó là giá trị mặc định cho mọi project FlowKit tạo mà không truyền `flow_project_id`.
+- `FLOW_ALLOW_DEGRADED="true"`: cho phép chain Veo (start+end frame) hạ xuống i2v thường thay vì báo `UNSUPPORTED_ON_BATCH_API`. Không ảnh hưởng r2v, vì r2v luôn chạy Omni `abra_r2v_<N>s`.
+
+Kiểm tra server đã nhận đúng project:
+```powershell
+curl.exe -s http://127.0.0.1:8100/api/flow/status
+# Phải có "flow_project_id": "<uuid của bạn>" — nếu là null nghĩa là chưa set biến trước khi chạy server
+```
+
 > [!NOTE]
-> **Xử lý sự cố cổng 8100:** Nếu terminal báo lỗi `address already in use` hoặc tự tắt ngay, nghĩa là Server FlowKit **đang chạy ngầm sẵn từ trước** rồi! Bạn không cần bật lại mà chỉ cần mở tab terminal khác để thao tác.
+> **Đổi project / đổi biến môi trường:** set lại `$env:` khi server đang chạy **không có tác dụng**. Phải tắt server (`Ctrl+C`), set lại biến, rồi chạy lại `python -m agent.main`.
+>
+> **Lỗi cổng 8100:** Nếu terminal báo `address already in use` hoặc tự tắt ngay, nghĩa là đã có một server FlowKit chạy ngầm từ trước. Kiểm tra `curl.exe -s http://127.0.0.1:8100/api/flow/status`. Nếu `flow_project_id` đã đúng thì dùng tiếp server đó. Nếu sai hoặc `null`, tắt server cũ rồi làm lại bước này.
 
 #### Bước 0.5: Kiểm tra kết nối Health Check (Bắt Buộc)
 Mở một cửa sổ terminal mới và chạy:
