@@ -39,34 +39,32 @@ curl -s http://127.0.0.1:8100/health
 24. **Achernar Voice Profile** — For female travel vloggers / narrators, configure `voice_description` using the **Achernar** profile (Google Gemini-TTS: soft, higher-pitched, natural expressive conversational female voice, casual vlog tone, breathy when amazed, hushed whisper when nervous). Structure video prompt dialogue accordingly (`Mia says "..."`) so Veo 3 / Pinhole synthesizes matching native vocal audio. In Omni Flash / Pinhole Reference-to-Video (`MZZa6b`), Slot 7 is natively pinned to `[["achernar"]]` by default.
 25. **Strict Step-by-Step Review Gates (Images then Videos)** — Pipeline execution MUST proceed strictly step-by-step with explicit human review gates:
     - **Step 6.5 (Image Review Gate)**: As soon as scene images are generated, STOP immediately. Clean image watermarks, download all images to `${OUTDIR}/images/scene_{idx}.jpg`, present the image gallery/review board to the user, and PAUSE. Do NOT generate videos until the user explicitly reviews and approves the start frames.
-    - **Step 7.5 (Individual Video Review Gate)**: As soon as scene videos are generated, STOP immediately. Rolling download each clip to `${OUTDIR}/scenes/scene_{idx}_{sid}.mp4`, run `remove_watermark_video` to remove logo/SynthID, launch Review Board (`http://localhost:8200`), and present every individual unconcatenated clean scene video to the user for review. Do NOT proceed to concatenation (`/fk-concat`) until the user has reviewed and approved each individual scene video clip.
-26. **Character Anchor in Start Frame (No Mid-Clip Pop-in)** — If a video scene requires a character to act, move, or speak on camera, that character MUST be physically present in the start frame image (`start_image_media_id`). AI video models (Veo 3 / Image-to-Video) CANNOT reliably synthesize a new person mid-clip without severe visual artifacts (pop-in flicker, distorted faces, duplicate bodies, melting limbs). NEVER prompt for an empty environment start frame and then instruct "Mia steps into frame" or "Mia walks into view" in the video prompt. The start frame must already anchor the character in position (front-facing, profile, over-the-shoulder, or seated); the video prompt then only directs their subsequent motion and speech.
+27. **Omni Flash Ingredients Only (Reference-to-Video / `abra_r2v`)** — Khi tạo video cho các dự án vlog/nhân vật, **TUYỆT ĐỐI KHÔNG tạo ảnh Start Frame (`GENERATE_IMAGE`) rồi chạy Image-to-Video (`i2v`)**. Phương pháp start-frame làm chuyển động bị cứng, dễ méo người và biến dạng khuôn mặt khi chuyển động. **BẮT BUỘC chỉ sử dụng Omni Flash Ingredients (`GENERATE_VIDEO_REFS` / `omni_flash_models.reference_to_video` / `abra_r2v_<duration>s` qua RPC `MZZa6b`)**:
+    - Đính kèm trực tiếp các thành phần tham chiếu (Ingredients): Nhân vật (`Mia`), Trang phục (`Mia Outfit`), và Bối cảnh/Địa điểm (`reference_media_ids`).
+    - Model `abra_r2v` tổng hợp trực tiếp chuyển động video mượt mà từ các thành phần tham chiếu và prompt, tích hợp khẩu hình native với voice profile **Achernar** (Slot 7).
+    - Không chạy quy trình `GENERATE_IMAGE` cho từng cảnh; sau khi các entity có `media_id`, gửi thẳng yêu cầu `GENERATE_VIDEO_REFS`.
 
-## Pipeline Order
+## Pipeline Order (Omni Flash R2V Ingredients Workflow)
 
 ```
 0. Research          /fk-research "topic" (fact-check via web search, save to .omc/research/)
 1. Health check      GET  /health → extension_connected: true
 2. Create project    POST /api/projects (with entities + material, story from research)
-3. Create video      POST /api/videos
-4. Create scenes     POST /api/scenes (with character_names, chain_type)
-5. Gen ref images    POST /api/requests/batch → poll /batch-status?project_id=<PID>
-                     Wait for done=true, verify all entities have media_id
-6. Gen scene images  POST /api/requests/batch → poll /batch-status?video_id=<VID>
-                     Wait for done=true, verify image_media_id = UUID
-6.5 Review images    MANDATORY GATE! Download to images/ & open review_images.html.
-                     STOP & PAUSE: Present images to user for manual review.
-                     Do NOT start video generation until user approves start frames!
-7. Gen videos        POST /api/requests/batch (ONLY after user approves scene images)
+3. Create video      POST /api/videos (HORIZONTAL or VERTICAL)
+4. Create scenes     POST /api/scenes (with character_names, duration: 4/6/8/10s, video_prompt)
+5. Gen ref images    POST /api/requests/batch (GENERATE_CHARACTER_IMAGE / upload locked refs)
+                     Verify all key entities (Character, Outfit, Location) have UUID media_id
+6. Gen videos (R2V)  POST /api/requests/batch (type: "GENERATE_VIDEO_REFS")
+                     Omni Flash abra_r2v synthesizes clips directly from Ingredients (Character, Outfit)
                      Auto-retry failed videos up to 5x; rolling download clips to scenes/
+7. De-watermark      Immediately run remove_watermark_video on each clip -> scene_XX_clean.mp4
 7.5 Review videos    MANDATORY GATE! Present EACH individual unconcatenated scene video to user.
                      Display per-scene scorecard table + Review Board (http://localhost:8200).
                      STOP & PAUSE: User reviews each scene clip individually.
                      Do NOT proceed to concat until user approves all individual scene videos!
 8. (Optional) 4K     POST /api/requests/batch (TIER_TWO only)
-9. (Optional) TTS    Create voice template → POST /api/videos/{vid}/narrate
-10. Concat           ffmpeg normalize + concat (ONLY after all scene videos are approved)
-11. SEO & Thumbnails Auto-match script language (e.g. 100% native Japanese for Japanese POV vlog)
+9. Concat           ffmpeg normalize + concat (ONLY after all scene videos are approved)
+10. SEO & Thumbnails Auto-match script language (e.g. 100% native Japanese for Japanese POV vlog)
 ```
 
 ## Batch API

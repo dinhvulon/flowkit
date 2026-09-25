@@ -73,17 +73,15 @@ Một khối `CHARACTER_LOCK` cố định, **dán nguyên văn vào entity `des
 
 Gồm: mặt (tuổi, dáng mặt, mắt, tàn nhang/nốt ruồi), tóc (màu, kiểu búi, trâm/phụ kiện), trang phục thời kỳ (kiểu áo, màu, cổ áo, thắt lưng — **KHÔNG nhuộm màu/vải công nghiệp hiện đại**), thiết bị (gậy selfie ngắn + điện thoại góc siêu rộng 0.5x, cánh tay lọt mép khung), giọng (`voice_description`: tông, tốc độ, thì thầm khi sợ).
 
-#### Quy tắc Cốt Lõi Về Voice, Start Frame & Review Ảnh (BẮT BUỘC):
-1. **Voice Achernar**: Với nhân vật vlogger nữ, khai báo `voice_description` theo chuẩn **Achernar** (Google Gemini-TTS: *"Achernar — soft, higher-pitched, natural expressive conversational female voice, casual vlog tone, breathy when amazed, hushed whisper when nervous"*). Đính thoại dạng `Mia says: "..."` trong sub-clips `0-3s / 3-6s / 6-8s` để Veo 3 / Pinhole tự sinh khẩu hình và giọng nói bản địa tự nhiên.
-2. **Start Frame chỉ là tham chiếu đầu vào (Input Reference)**: Khung ảnh đầu (`start_image_media_id` / start frame) chỉ là mốc bắt đầu chuyển động. Khi tạo video, **luôn đính kèm ảnh tham chiếu nhân vật (character reference: `imageInputs` / `reference_media_ids`)** để khóa chặt nhận diện gương mặt và trang phục xuyên suốt video.
-3. **Bắt buộc Review Khung Ảnh Đầu trước khi sinh Video**: Tuyệt đối không nhảy thẳng sang sinh video. Sau khi xong toàn bộ Scene Images:
-   - Tải toàn bộ ảnh về `${OUTDIR}/images/scene_{idx:02d}.jpg`.
-   - Khởi chạy Review Board (`review_images.html`).
-   - Dừng lại để người dùng duyệt. Những ảnh chưa ưng ý phải được gọi `REGENERATE_IMAGE` để tạo lại cho đến khi đạt.
-4. **Nhân vật BẮT BUỘC có mặt trong Start Frame (Tránh Lỗi Pop-in/Morphing)**:
-   - Nếu kịch bản hoặc `video_prompt` có nhân vật xuất hiện, cử động hoặc nói chuyện trên hình, nhân vật **PHẢI ĐƯỢC ĐẶT SẴN trong ảnh Start Frame** (`prompt` tạo ảnh phải mô tả rõ nhân vật đứng, ngồi, nép hoặc cầm camera trong bố cục).
-   - **TUYỆT ĐỐI CẤM** tạo ảnh Start Frame chỉ có cảnh vật trống rồi viết trong `video_prompt`: `"Mia steps into frame"` hoặc `"Mia walks into view"` hoặc `"Mia turns into frame"`.
-   - Mô hình Video AI (Veo 3 / I2V) không thể tự vẽ một nhân vật từ hư không giữa chừng mà giữ được diện mạo ổn định — điều này sẽ gây lỗi pop-in giật hình, méo mặt, mọc thừa tay chân hoặc biến dạng cơ thể. Start Frame phải là neo hình học (anchor) cho nhân vật; video prompt chỉ điều khiển chuyển động tiếp theo.
+#### Quy tắc Cốt Lõi Về Voice, Omni Flash Ingredients R2V (BẮT BUỘC):
+1. **CHỈ DÙNG OMNI FLASH INGREDIENTS (`reference_to_video` / `abra_r2v`) — KHÔNG DÙNG START FRAME I2V**:
+   - Khi tạo video nhân vật/vlog, **TUYỆT ĐỐI KHÔNG sinh ảnh Start Frame (`GENERATE_IMAGE`) để chạy Image-to-Video (`i2v`)**. Cách làm cũ bằng Start Frame làm chuyển động bị cứng, dễ giật, méo người và biến dạng khuôn mặt khi di chuyển.
+   - **BẮT BUỘC chỉ sử dụng Omni Flash Ingredients (`GENERATE_VIDEO_REFS` / `omni_flash_models.reference_to_video` / `abra_r2v_<duration>s` qua RPC `MZZa6b`)**:
+     - Đính kèm trực tiếp các thành phần tham chiếu (Ingredients): Nhân vật (`Mia`), Trang phục (`Mia Outfit`), và Bối cảnh/Địa điểm (`reference_media_ids` / `imageInputs`).
+     - Model `abra_r2v` tự động tổng hợp chuyển động video mượt mà trực tiếp từ các thành phần tham chiếu và `video_prompt`, tích hợp khẩu hình native với voice profile **Achernar** (Slot 7).
+     - Không chạy quy trình `GENERATE_IMAGE` cho từng cảnh; sau khi các entity có `media_id`, gửi thẳng yêu cầu `GENERATE_VIDEO_REFS`.
+2. **Voice Achernar**: Với nhân vật vlogger nữ, khai báo `voice_description` theo chuẩn **Achernar** (Google Gemini-TTS: *"Achernar — soft, higher-pitched, natural expressive conversational female voice, casual vlog tone, breathy when amazed, hushed whisper when nervous"*). Đính thoại dạng `Mia says: "..."` trong sub-clips `0-3s / 3-6s / 6-10s` để `abra_r2v` tự sinh khẩu hình và giọng nói bản địa tự nhiên.
+3. **Mọi video sau khi sinh phải De-watermark ngay**: Tải từng clip về `${OUTDIR}/scenes/scene_{idx}_{sid}.mp4`, chạy ngay `remove_watermark_video` để làm sạch logo Google và SynthID, hiển thị trên Review Board (`http://localhost:8200`) để người dùng review từng clip.
 
 Mẫu (từ `prompt-templates.md` — thay giá trị, tên nhân vật do bạn đặt, rồi đóng băng):
 ```
