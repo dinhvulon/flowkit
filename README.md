@@ -224,92 +224,121 @@ python setup.py --tool all
 python scripts/sync_antigravity.py
 ```
 
-### Run (Hướng dẫn khởi chạy 5 bước)
+### Run (Hướng dẫn khởi chạy 6 bước)
 
-Hệ thống hoạt động theo cơ chế cầu nối: **Server Python** gửi lệnh sang **Chrome Extension**, extension này sẽ thực thi lệnh ngay trên tab **Google Flow** mà bạn đang mở. Do đó, bạn cần chuẩn bị trình duyệt trước khi bật server.
-
----
-
-#### Bước 1: Cài Chrome Extension vào trình duyệt
-
-1. Mở trình duyệt Google Chrome, gõ vào thanh địa chỉ: `chrome://extensions`
-2. Bật công tắc **Chế độ dành cho nhà phát triển (Developer mode)** ở góc trên bên phải.
-3. Bấm nút **Tải tiện ích đã giải nén (Load unpacked)** ở góc trên bên trái.
-4. Chọn thư mục `extension/` nằm trong dự án (`c:\flowkit\extension`).
-5. Icon tiện ích **Flow Kit** sẽ xuất hiện trên thanh công cụ của Chrome.
+Hệ thống hoạt động theo cơ chế cầu nối: **Server Python** gửi lệnh sang **Chrome Extension**, extension thực thi lệnh ngay trên tab **Google Flow** đang mở (chỉ tab thật mới ký được request và lấy được mã reCAPTCHA). Vì vậy phải chuẩn bị trình duyệt trước, rồi mới bật server.
 
 ---
 
-#### Bước 2: Đăng nhập Google Flow & Giữ tab mở
+#### Bước 1: Cài / cập nhật thư viện Python
 
-1. Mở tab mới trên Chrome và truy cập: **https://flow.google.com/**
-2. Đăng nhập tài khoản Google của bạn.
-3. **Lưu ý:** Luôn **giữ tab này mở** trong suốt quá trình tạo video (không đóng tab).
+Chạy mỗi lần mới cài **và mỗi lần pull code mới** (code mới có thể thêm thư viện, ví dụ `python-multipart` cho upload file):
 
----
+```powershell
+.\venv\Scripts\python.exe -m pip install -r requirements.txt   # Windows
+```
+```bash
+venv/bin/python -m pip install -r requirements.txt               # macOS / Linux
+```
 
-#### Bước 3: Lấy `FLOW_PROJECT_ID` từ thanh địa chỉ
-
-Google Flow yêu cầu mọi video/ảnh tạo ra phải thuộc về một Project cụ thể:
-
-1. Trên giao diện web `flow.google.com`, bấm tạo một Project mới (hoặc mở một Project có sẵn).
-2. Nhìn lên thanh địa chỉ (URL) của trình duyệt, bạn sẽ thấy đường link có dạng:
-   `https://flow.google.com/project/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx`
-3. Hãy copy chuỗi mã UUID ở cuối link (ví dụ: `a1b2c3d4-e5f6-7890-abcd-ef1234567890`).
-
-Sau đó, gán mã này vào cửa sổ terminal:
-
-- **Windows (PowerShell):**
-  ```powershell
-  $env:FLOW_PROJECT_ID="chuỗi-uuid-vừa-copy"
-  ```
-- **macOS / Linux / Git Bash:**
-  ```bash
-  export FLOW_PROJECT_ID="chuỗi-uuid-vừa-copy"
-  ```
+_(`setup.ps1` / `setup.sh` đã chạy lệnh này — chạy lại setup cũng được.)_
 
 ---
 
-#### Bước 4: Khởi động Server Python (Cửa sổ Terminal 1)
+#### Bước 2: Cài Chrome Extension (bản ≥ 0.3.4)
 
-Chạy lệnh khởi động server tại thư mục `c:\flowkit`:
+1. Mở `chrome://extensions`, bật **Developer mode** ở góc trên bên phải.
+2. Lần đầu: bấm **Load unpacked** → chọn thư mục `extension/` của dự án (`c:\flowkit\extension`).
+3. **Đã cài rồi mà vừa pull code mới:** bấm nút **↻ Reload** trên thẻ Flow Kit. Chrome **không tự nạp lại** extension khi file thay đổi.
+4. Kiểm tra thẻ Flow Kit ghi **phiên bản 0.3.4 trở lên**.
 
-- **Windows (PowerShell):**
-  ```powershell
-  .\venv\Scripts\Activate.ps1
-  python -m agent.main
-  ```
-- **macOS / Linux / Git Bash:**
-  ```bash
-  source venv/bin/activate
-  python -m agent.main
-  ```
+> [!IMPORTANT]
+> Extension **dưới 0.3.4** lấy mã reCAPTCHA theo cách cũ mà Flow (bản build từ 22/09/2026) từ chối — **mọi** lệnh tạo ảnh/video đều trả `PUBLIC_ERROR_UNUSUAL_ACTIVITY` dù tài khoản không bị chặn. Gặp lỗi này, kiểm tra phiên bản extension trước tiên.
 
-Khi thấy terminal xuất hiện dòng sau là server đã chạy thành công:
+---
+
+#### Bước 3: Mở Google Flow & giữ tab mở
+
+1. Mở **https://flow.google.com/** và đăng nhập tài khoản Google.
+2. Nếu vừa reload extension ở Bước 2, **F5 tab Flow** để extension được nạp vào trang.
+3. **Giữ tab này mở** suốt quá trình tạo (chỉ cần 1 tab Flow).
+
+---
+
+#### Bước 4: (Tuỳ chọn) chọn biến môi trường — cùng terminal sẽ chạy server
+
+Server chỉ đọc biến môi trường **một lần lúc khởi động**, và `$env:` / `export` chỉ có hiệu lực trong cửa sổ terminal đó. Nên set trong **đúng terminal** sẽ chạy Bước 5, **trước** khi chạy server. Không set gì vẫn chạy được:
+
+| Biến | Khi nào cần |
+| --- | --- |
+| `FLOW_PROJECT_ID` | **Không bắt buộc nữa.** `POST /api/projects` tự tạo project Flow mới; các lệnh `/api/flow/*` không truyền `project_id` dùng một *session project* tự tạo (đổi sau 2 giờ không hoạt động). Chỉ set khi muốn các lệnh nội bộ cũ dùng một project cố định — lấy uuid ở cuối URL `https://flow.google.com/project/<uuid>`. Muốn một project FlowKit gắn vào project Flow có sẵn thì truyền `flow_project_id` khi tạo project. |
+| `FLOW_ALLOW_DEGRADED` | Đặt `1` (chỉ nhận đúng `1`) nếu muốn Veo chaining / Veo r2v **hạ xuống i2v thường** thay vì báo `UNSUPPORTED_ON_BATCH_API`. r2v thật dùng Omni: `model_family=omni_flash`. |
+
+```powershell
+# Windows PowerShell (ví dụ — bỏ dòng nào không cần)
+$env:FLOW_PROJECT_ID="uuid-copy-từ-URL-flow"
+$env:FLOW_ALLOW_DEGRADED="1"
+```
+```bash
+# macOS / Linux / Git Bash
+export FLOW_PROJECT_ID="uuid-copy-từ-URL-flow"
+export FLOW_ALLOW_DEGRADED="1"
+```
+
+---
+
+#### Bước 5: Khởi động Server (Terminal 1)
+
+Tại thư mục gốc dự án (`c:\flowkit`), trong cùng terminal của Bước 4:
+
+```powershell
+.\venv\Scripts\Activate.ps1      # macOS / Linux / Git Bash: source venv/bin/activate
+python -m agent.main
+```
+
+Thấy dòng này là server đã chạy:
 
 ```
 INFO:     Uvicorn running on http://127.0.0.1:8100 (Press CTRL+C to quit)
 ```
 
-_(Giữ nguyên cửa sổ terminal này, không tắt)._
+Giữ nguyên cửa sổ này. **Đổi biến môi trường hoặc pull code mới → `Ctrl+C` rồi chạy lại** (server đang chạy không tự nạp code/biến mới). Báo `address already in use` nghĩa là đã có server chạy ngầm — dùng Bước 6 kiểm tra, nếu sai cấu hình thì tắt server cũ rồi chạy lại.
 
 ---
 
-#### Bước 5: Kiểm tra kết nối (Mở Cửa sổ Terminal 2)
+#### Bước 6: Kiểm tra (Terminal 2)
 
-Vì Terminal 1 đang bận chạy server, bạn hãy **mở một tab hoặc cửa sổ terminal mới** và gõ:
+Mở terminal mới (trong PowerShell dùng `curl.exe`, vì `curl` là bí danh của `Invoke-WebRequest`):
 
 ```bash
-curl http://127.0.0.1:8100/health
+curl.exe -s http://127.0.0.1:8100/health
+curl.exe -s http://127.0.0.1:8100/api/flow/status
 ```
 
-**Kết quả trả về chuẩn:**
+Cần thấy:
 
-```json
-{ "status": "ok", "extension_connected": true }
+| Trường | Giá trị đúng |
+| --- | --- |
+| `/health` → `extension_connected` | `true` (nếu `false`: tab Flow chưa mở / chưa F5 sau khi reload extension) |
+| `/health` → `ws.extension_versions` | `["0.3.4"]` trở lên |
+| `/api/flow/status` → `transport` | `"batch"` |
+| `/api/flow/status` → `flow_project_id` | uuid bạn set ở Bước 4, hoặc `null` nếu không set (bình thường) |
+| `/api/flow/status` → `allow_degraded` | khớp với Bước 4 |
+| `/api/flow/status` → `generation_throttle.cooldown_active` | `false` |
+
+`flow_key_present: false` là bình thường. Sau đó thử **một** lệnh tạo ảnh nhỏ (hoặc `/fk-gen-refs`) trước khi chạy cả pipeline.
+
+> [!NOTE]
+> Mọi lệnh tạo ảnh/video đi qua một bộ giới hạn chung: mỗi lệnh cách nhau ≥ 3s, 1 lệnh cùng lúc. Nếu Google trả `PUBLIC_ERROR_UNUSUAL_ACTIVITY`, FlowKit tự **dừng gửi 120s** (trả 429 trong lúc đó) và worker **không tự thử lại** request đó — đừng viết vòng lặp gửi lại; kiểm tra extension ≥ 0.3.4 rồi gửi lại thủ công.
+
+#### Cập nhật code từ repo gốc
+
+```bash
+git fetch upstream                  # remote upstream = https://github.com/crisng95/flowkit.git
+git merge upstream/main
 ```
 
-> Khi thấy `"extension_connected": true`, nghĩa là Server Python và Chrome Extension trên tab Google Flow đã kết nối thành công với nhau. Bạn đã sẵn sàng sinh ảnh và video!
+Sau khi merge: **Bước 1** (cài thư viện) → **Bước 2.3** (reload extension) → F5 tab Flow → `Ctrl+C` và chạy lại server (**Bước 5**) → **Bước 6**.
 
 ### Đồng bộ AI Skills (Claude Code, OpenAI Codex, Google Antigravity IDE)
 
@@ -336,11 +365,15 @@ FlowKit lưu trữ toàn bộ 36 kịch bản và quy trình làm việc (workfl
 
 ### Configuration
 
-| Env var                | Default            | What it does                                                               |
-| ---------------------- | ------------------ | -------------------------------------------------------------------------- |
-| `FLOW_PROJECT_ID`      | —                  | The Flow project every RPC is scoped to. Required.                         |
-| `FLOW_ALLOW_DEGRADED`  | `0`                | `1` lets scene chaining and r2v fall back to plain i2v instead of failing. |
-| `DEFAULT_PAYGATE_TIER` | `PAYGATE_TIER_TWO` | Carried for the DB and dashboard; no longer selects a model.               |
+| Env var | Default | What it does |
+| --- | --- | --- |
+| `FLOW_PROJECT_ID` | — | Optional. Fallback Flow project for older internal callers. `POST /api/projects` creates a fresh Flow project when `flow_project_id` is omitted; direct `/api/flow/*` calls without `project_id` use the session project. |
+| `FLOW_ALLOW_DEGRADED` | `0` | Exactly `1` lets Veo chaining and Veo r2v fall back to plain i2v instead of failing. |
+| `FLOW_GENERATION_MIN_INTERVAL_S` | `3` | Minimum gap between two image/video submits, process-wide (worker and direct API alike). |
+| `FLOW_GENERATION_MAX_CONCURRENT` | `1` | Image/video submits in flight at once. |
+| `FLOW_UNUSUAL_ACTIVITY_COOLDOWN_S` | `120` | After `PUBLIC_ERROR_UNUSUAL_ACTIVITY`, submits are refused locally (429) for this long. |
+| `FLOW_SESSION_PROJECT_IDLE_S` | `7200` | The session project rotates after this much inactivity (minimum 300). State lives in `flow_session_project.json`. |
+| `DEFAULT_PAYGATE_TIER` | `PAYGATE_TIER_TWO` | Tier reported by `/api/flow/credits` (the batch path cannot fetch the real one). Only picks the Veo i2v model via `models.json`; images, Omni and upscale ignore it. |
 
 ### Image API
 
