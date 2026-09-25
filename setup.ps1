@@ -1,4 +1,4 @@
-# Flow Kit — Windows PowerShell Setup Script
+﻿# Flow Kit — Windows PowerShell Setup Script
 $ErrorActionPreference = "Stop"
 
 Write-Host "=========================================" -ForegroundColor Cyan
