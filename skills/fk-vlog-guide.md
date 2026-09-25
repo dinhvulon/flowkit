@@ -35,51 +35,63 @@ Hệ thống FlowKit hoạt động theo cơ chế cầu nối 3 lớp:
 
 ### 6 Bước Chuẩn Bị & Khởi Chạy (Pre-Flight Checklist)
 
-#### Bước 0.1: Cài Chrome Extension vào trình duyệt
+#### Bước 0.1: Cài / cập nhật Chrome Extension (bản ≥ 0.3.4)
 1. Mở Google Chrome, gõ địa chỉ: `chrome://extensions`
 2. Bật công tắc **Chế độ dành cho nhà phát triển (Developer mode)** ở góc trên bên phải.
-3. Bấm **Tải tiện ích đã giải nén (Load unpacked)**.
-4. Chọn thư mục `extension/` của dự án (`c:\flowkit\extension`). Icon **Flow Kit** sẽ xuất hiện trên thanh công cụ.
+3. Lần đầu: bấm **Tải tiện ích đã giải nén (Load unpacked)** → chọn thư mục `extension/` của dự án (`c:\flowkit\extension`). Icon **Flow Kit** sẽ xuất hiện trên thanh công cụ.
+4. **Đã cài rồi mà vừa pull code mới:** bấm **↻ Reload** trên thẻ Flow Kit (Chrome không tự nạp lại), rồi kiểm tra thẻ ghi **phiên bản 0.3.4 trở lên**.
+
+> [!IMPORTANT]
+> Extension dưới 0.3.4 lấy mã reCAPTCHA theo cách cũ mà Flow đã từ chối — mọi lệnh tạo ảnh/video đều trả `PUBLIC_ERROR_UNUSUAL_ACTIVITY`. Gặp lỗi này, kiểm tra phiên bản extension trước tiên.
 
 #### Bước 0.2: Đăng nhập Google Flow & Luôn giữ tab mở
 1. Mở tab mới trên Chrome và truy cập: **https://flow.google.com/**
-2. Đăng nhập tài khoản Google của bạn.
+2. Đăng nhập tài khoản Google của bạn. Nếu vừa reload extension ở Bước 0.1, **F5 tab này**.
 3. **Quy tắc vàng:** Luôn **giữ tab `flow.google.com` này mở** trong suốt quá trình tạo video.
 
-#### Bước 0.3: Lấy mã `FLOW_PROJECT_ID`
-1. Trên giao diện `flow.google.com`, bấm mở một Project có sẵn (hoặc tạo mới).
+#### Bước 0.3: (Tuỳ chọn) Lấy mã `FLOW_PROJECT_ID`
+**Không bắt buộc nữa** — bỏ qua bước này là bình thường. `/fk-create-project` (`POST /api/projects`) tự tạo một project Flow mới, và các lệnh `/api/flow/*` không truyền `project_id` dùng một *session project* tự tạo.
+
+Chỉ làm bước này khi muốn dùng lại một project Flow có sẵn:
+1. Trên giao diện `flow.google.com`, bấm mở Project đó.
 2. Nhìn lên URL trình duyệt: `https://flow.google.com/project/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx`
 3. Copy chuỗi mã UUID ở cuối URL. Chuỗi này dùng ở Bước 0.4.
 
 #### Bước 0.4: Set biến môi trường rồi khởi động Server Python (FastAPI cổng 8100)
-Server chỉ đọc `FLOW_PROJECT_ID` và `FLOW_ALLOW_DEGRADED` **một lần lúc khởi động**. Vì vậy phải set **trước** khi chạy server, và **trong cùng một cửa sổ terminal** (`$env:` / `export` chỉ có hiệu lực trong terminal đó). Chạy đúng thứ tự sau tại thư mục gốc dự án (`c:\flowkit`):
+Server chỉ đọc biến môi trường **một lần lúc khởi động**. Vì vậy phải set **trước** khi chạy server, và **trong cùng một cửa sổ terminal** (`$env:` / `export` chỉ có hiệu lực trong terminal đó). Chạy đúng thứ tự sau tại thư mục gốc dự án (`c:\flowkit`):
 - **Windows PowerShell:**
   ```powershell
-  $env:FLOW_PROJECT_ID="uuid-copy-từ-URL-flow"
-  $env:FLOW_ALLOW_DEGRADED="true"
+  .\venv\Scripts\python.exe -m pip install -r requirements.txt   # mỗi lần pull code mới
+  $env:FLOW_PROJECT_ID="uuid-copy-từ-URL-flow"                    # tuỳ chọn — bỏ dòng này nếu không làm Bước 0.3
+  $env:FLOW_ALLOW_DEGRADED="1"
   .\venv\Scripts\Activate.ps1
   python -m agent.main
   ```
 - **macOS / Linux / Git Bash:**
   ```bash
-  export FLOW_PROJECT_ID="uuid-copy-từ-URL-flow"
-  export FLOW_ALLOW_DEGRADED="true"
+  venv/bin/python -m pip install -r requirements.txt   # mỗi lần pull code mới
+  export FLOW_PROJECT_ID="uuid-copy-từ-URL-flow"      # tuỳ chọn — bỏ dòng này nếu không làm Bước 0.3
+  export FLOW_ALLOW_DEGRADED="1"
   source venv/bin/activate
   python -m agent.main
   ```
-- `FLOW_PROJECT_ID`: uuid project Flow lấy ở Bước 0.3. Nó là giá trị mặc định cho mọi project FlowKit tạo mà không truyền `flow_project_id`.
-- `FLOW_ALLOW_DEGRADED="true"`: cho phép chain Veo (start+end frame) hạ xuống i2v thường thay vì báo `UNSUPPORTED_ON_BATCH_API`. Không ảnh hưởng r2v, vì r2v luôn chạy Omni `abra_r2v_<N>s`.
+- `FLOW_PROJECT_ID` (tuỳ chọn): uuid project Flow lấy ở Bước 0.3, dùng làm project mặc định cho các lệnh nội bộ cũ. Muốn một project FlowKit gắn vào project Flow có sẵn thì truyền `flow_project_id` khi tạo project.
+- `FLOW_ALLOW_DEGRADED="1"`: **chỉ nhận đúng `1`** — `"true"` bị coi là tắt. Cho phép Veo chaining (start+end frame) và Veo r2v hạ xuống i2v thường (từ ảnh ref đầu tiên) thay vì báo `UNSUPPORTED_ON_BATCH_API`. r2v thật (nhiều ref) chạy qua Omni Flash `abra_r2v_<N>s`: `/api/flow/generate-video-omni` hoặc `model_family=omni_flash`. *(Lưu ý: bước r2v trong `/fk-pipeline` — request `GENERATE_VIDEO_REFS` — chưa được nối lại vào Omni sau lần merge upstream, nên hiện chưa chạy được.)*
 
-Kiểm tra server đã nhận đúng project:
+Kiểm tra server đã nhận đúng cấu hình:
 ```powershell
 curl.exe -s http://127.0.0.1:8100/api/flow/status
-# Phải có "flow_project_id": "<uuid của bạn>" — nếu là null nghĩa là chưa set biến trước khi chạy server
+# "allow_degraded": true              — nếu false là chưa set FLOW_ALLOW_DEGRADED="1" trước khi chạy server
+# "flow_project_id": "<uuid>" hoặc null — null là bình thường nếu bỏ qua Bước 0.3
+# "generation_throttle": {"cooldown_active": false, ...}
 ```
 
 > [!NOTE]
-> **Đổi project / đổi biến môi trường:** set lại `$env:` khi server đang chạy **không có tác dụng**. Phải tắt server (`Ctrl+C`), set lại biến, rồi chạy lại `python -m agent.main`.
+> **Đổi project / đổi biến môi trường / pull code mới:** set lại `$env:` khi server đang chạy **không có tác dụng**. Phải tắt server (`Ctrl+C`), set lại biến, rồi chạy lại `python -m agent.main`.
 >
-> **Lỗi cổng 8100:** Nếu terminal báo `address already in use` hoặc tự tắt ngay, nghĩa là đã có một server FlowKit chạy ngầm từ trước. Kiểm tra `curl.exe -s http://127.0.0.1:8100/api/flow/status`. Nếu `flow_project_id` đã đúng thì dùng tiếp server đó. Nếu sai hoặc `null`, tắt server cũ rồi làm lại bước này.
+> **Lỗi cổng 8100:** Nếu terminal báo `address already in use` hoặc tự tắt ngay, nghĩa là đã có một server FlowKit chạy ngầm từ trước. Kiểm tra `curl.exe -s http://127.0.0.1:8100/api/flow/status`. Nếu `allow_degraded` / `flow_project_id` đã đúng thì dùng tiếp server đó. Nếu sai, tắt server cũ rồi làm lại bước này.
+>
+> **UNUSUAL_ACTIVITY:** FlowKit tự dừng gửi 120s (trả 429) và không tự thử lại request đó. Đừng gửi dồn lại — kiểm tra extension ≥ 0.3.4 rồi gửi lại thủ công.
 
 #### Bước 0.5: Kiểm tra kết nối Health Check (Bắt Buộc)
 Mở một cửa sổ terminal mới và chạy:
@@ -94,9 +106,9 @@ Mở một cửa sổ terminal mới và chạy:
   ```
 **Kết quả bắt buộc phải có:**
 ```json
-{"status": "ok", "extension_connected": true}
+{"status": "ok", "extension_connected": true, "ws": {"extension_versions": ["0.3.4"], ...}}
 ```
-Khi thấy `"extension_connected": true`, toàn bộ hệ thống cầu nối đã thông suốt và sẵn sàng chạy các bước kịch bản bên dưới!
+Khi thấy `"extension_connected": true` và `extension_versions` từ `0.3.4` trở lên, toàn bộ hệ thống cầu nối đã thông suốt và sẵn sàng chạy các bước kịch bản bên dưới!
 
 #### Bước 0.6: Mở Web Dashboard Trực Quan (Khuyên Dùng)
 Để theo dõi trực quan danh sách dự án, tiến độ sinh video, thư viện Gallery ảnh/video và logs hệ thống theo thời gian thực thay vì chỉ nhìn terminal:
