@@ -219,11 +219,10 @@ class TestGenerateSceneVideoRetry:
 
 class TestGenerateSceneVideoRefs:
     @pytest.mark.asyncio
-    async def test_submits_through_omni_flash_not_veo_r2v(self, service, base_scene, mock_client):
-        mock_client.generate_video_from_references = AsyncMock()
-        omni_submit = AsyncMock(return_value={
+    async def test_submits_references_through_the_client(self, service, base_scene, mock_client):
+        mock_client.generate_video_from_references = AsyncMock(return_value={
             "status": 200,
-            "data": {"operations": [{"operation": {"name": "op-omni"},
+            "data": {"operations": [{"operation": {"name": "op-r2v"},
                                      "status": "MEDIA_GENERATION_STATUS_PENDING"}]},
         })
         polled = {"data": {"operations": [{"status": "MEDIA_GENERATION_STATUS_SUCCESSFUL"}]}}
@@ -232,27 +231,44 @@ class TestGenerateSceneVideoRefs:
             {"name": "Castle", "entity_type": "location", "media_id": SAMPLE_UUID_2},
         ]
 
-        with patch("agent.sdk.services.operations.crud") as mock_crud, \
-             patch("agent.sdk.services.operations._build_video_prompt",
-                   new=AsyncMock(return_value="p")), \
-             patch("agent.sdk.services.operations._poll_operations",
-                   new=AsyncMock(return_value=polled)) as mock_poll, \
-             patch("agent.services.omni_flash.generate_omni_flash_video", new=omni_submit):
+        with patch("agent.sdk.services.operations.crud") as mock_crud,              patch("agent.sdk.services.operations._build_video_prompt",
+                   new=AsyncMock(return_value="p")),              patch("agent.sdk.services.operations._poll_operations",
+                   new=AsyncMock(return_value=polled)) as mock_poll:
             mock_crud.get_project = AsyncMock(return_value={"user_paygate_tier": "PAYGATE_TIER_ONE"})
             mock_crud.get_project_characters = AsyncMock(return_value=project_chars)
             mock_crud.get_request = AsyncMock(return_value=None)
             mock_crud.update_request = AsyncMock()
 
-            result = await service.generate_scene_video_refs(base_scene, "VERTICAL", request_id="req-1")
+            result = await service.generate_scene_video_refs(
+                {**base_scene, "duration": 10.0}, "VERTICAL", request_id="req-1")
 
-        mock_client.generate_video_from_references.assert_not_called()
-        kwargs = omni_submit.await_args.kwargs
+        kwargs = mock_client.generate_video_from_references.await_args.kwargs
         assert kwargs["reference_media_ids"] == [SAMPLE_UUID]  # location excluded
-        assert kwargs["duration_s"] == 8
+        assert kwargs["duration_s"] == 10
         assert kwargs["aspect_ratio"] == "VIDEO_ASPECT_RATIO_PORTRAIT"
-        mock_crud.update_request.assert_awaited_with("req-1", request_id="op-omni")
-        assert mock_poll.await_args.args[1][0]["operation"]["name"] == "op-omni"
+        mock_crud.update_request.assert_awaited_with("req-1", request_id="op-r2v")
+        assert mock_poll.await_args.args[1][0]["operation"]["name"] == "op-r2v"
         assert result is polled
+
+
+    @pytest.mark.asyncio
+    @pytest.mark.parametrize("duration", [None, 7, 8.5, "abc"])
+    async def test_a_scene_without_an_omni_duration_is_not_submitted(
+            self, service, base_scene, mock_client, duration):
+        mock_client.generate_video_from_references = AsyncMock()
+        project_chars = [{"name": "Hero", "entity_type": "character", "media_id": SAMPLE_UUID}]
+
+        with patch("agent.sdk.services.operations.crud") as mock_crud,              patch("agent.sdk.services.operations._build_video_prompt",
+                   new=AsyncMock(return_value="p")):
+            mock_crud.get_project = AsyncMock(return_value={"user_paygate_tier": "PAYGATE_TIER_ONE"})
+            mock_crud.get_project_characters = AsyncMock(return_value=project_chars)
+            mock_crud.get_request = AsyncMock(return_value=None)
+
+            result = await service.generate_scene_video_refs(
+                {**base_scene, "duration": duration}, "VERTICAL", request_id="req-1")
+
+        assert "duration" in result["error"]
+        mock_client.generate_video_from_references.assert_not_called()
 
 
 # ---------------------------------------------------------------------------

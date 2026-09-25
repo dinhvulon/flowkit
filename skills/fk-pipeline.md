@@ -247,8 +247,15 @@ curl -X POST http://127.0.0.1:8100/api/requests \
   -d '{"type":"GENERATE_VIDEO","scene_id":"<SID>","project_id":"<PID>","video_id":"<VID>","orientation":"<ORIENTATION>"}'
 ```
 
-**B. R2V Mode (Ingredients with `abra_r2v_8s` via RPC `MZZa6b`):**
-Runs directly when Stage 0 (Ref Images) is complete:
+**B. R2V Mode (Ingredients with `abra_r2v_<N>s` via RPC `MZZa6b`):**
+Runs directly when Stage 0 (Ref Images) is complete. **Every scene must carry its
+clip length first** — there is no default; `duration` picks the model
+(`8` → `abra_r2v_8s`, `10` → `abra_r2v_10s`; `4` and `6` also exist). A scene
+without one fails with `has no r2v duration` and nothing is submitted:
+```bash
+curl -X PATCH http://127.0.0.1:8100/api/scenes/<SID>   -H "Content-Type: application/json" -d '{"duration": 8}'
+```
+Then queue the request:
 ```bash
 curl -X POST http://127.0.0.1:8100/api/requests \
   -H "Content-Type: application/json" \

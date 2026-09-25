@@ -113,6 +113,7 @@ class Scene(DomainModel):
             "parent_scene_id": self.parent_scene_id,
             "chain_type": self.chain_type,
             "source": self.source,
+            "duration": self.duration,
             "_project_id": project_id,
         }
         # Flatten OrientationSlot fields

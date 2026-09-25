@@ -148,7 +148,7 @@ This uses batch RPC `nprQif` with the dedicated `omni_flash_i2v_<duration>s_firs
 
 ## References to video
 
-Use 1-7 media IDs. Reference images act as components/identity/style guidance; they are not treated as fixed first and last frames.
+Use 1-7 media IDs. `duration_s` is **required** on both reference routes (4, 6, 8 or 10 — it picks `abra_r2v_<N>s`); omitting it is a `422`. Reference images act as components/identity/style guidance; they are not treated as fixed first and last frames.
 
 ```bash
 curl -fsS -X POST "$FLOWKIT_BASE_URL/api/flow/generate-video-omni" \

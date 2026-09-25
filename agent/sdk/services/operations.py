@@ -31,6 +31,17 @@ def _build_continuation_prompt(base_prompt: str) -> str:
     )
 
 
+def _r2v_duration(value) -> Optional[int]:
+    """A scene's ``duration`` as an Omni clip length, or None if it is not one."""
+    try:
+        seconds = float(value)
+    except (TypeError, ValueError):
+        return None
+    if not seconds.is_integer() or int(seconds) not in fb.OMNI_DURATIONS:
+        return None
+    return int(seconds)
+
+
 def _char_matches(c: dict, name_set: set) -> bool:
     """Check if a character matches any name in the set by slug OR display name."""
     slug = c.get("slug") or ""
@@ -40,6 +51,7 @@ def _char_matches(c: dict, name_set: set) -> bool:
 import aiohttp
 
 from agent.db import crud
+from agent.services import flow_batch as fb
 from agent.config import VIDEO_POLL_INTERVAL, VIDEO_POLL_TIMEOUT
 from agent.utils.paths import scene_4k_path
 from agent.utils.slugify import slugify
@@ -591,6 +603,15 @@ class OperationService:
         if not ref_ids:
             return {"error": "No valid reference media_ids for r2v"}
 
+        # The clip length picks the model (abra_r2v_<N>s), so it is never
+        # guessed: the scene has to carry it.
+        duration_s = _r2v_duration(scene.get("duration"))
+        if duration_s is None:
+            return {"error": (
+                f"Scene {scene.get('id', '')[:12]} has no r2v duration "
+                f"(got {scene.get('duration')!r}); PATCH /api/scenes/<id> "
+                f"with \"duration\" set to one of {list(fb.OMNI_DURATIONS)}")}
+
         # Check if already submitted (op_name saved from previous attempt)
         existing_op = None
         if request_id:
@@ -602,18 +623,14 @@ class OperationService:
             operations = [{"operation": {"name": existing_op}, "status": "MEDIA_GENERATION_STATUS_PENDING"}]
             return await _poll_operations(self._client, operations)
 
-        # Veo r2v was never captured on the batch transport, so Omni Flash
-        # Ingredients (abra_r2v_8s) is the only r2v that renders. Its submit
-        # returns the same operations shape, so polling below is unchanged.
-        from agent.services.omni_flash import generate_omni_flash_video
-        submit_result = await generate_omni_flash_video(
+        submit_result = await self._client.generate_video_from_references(
             reference_media_ids=ref_ids,
             prompt=prompt,
             project_id=pid,
             scene_id=scene.get("id", ""),
-            duration_s=8,
             aspect_ratio=aspect,
             user_paygate_tier=tier,
+            duration_s=duration_s,
         )
 
         if _is_error(submit_result):
