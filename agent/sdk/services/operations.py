@@ -32,13 +32,13 @@ def _build_continuation_prompt(base_prompt: str) -> str:
 
 
 def _r2v_duration(value) -> Optional[int]:
-    """A scene's ``duration`` as an Omni clip length, or None if it is not one."""
+    """A scene's ``duration`` as an Omni clip length, or 10s default."""
     try:
         seconds = float(value)
     except (TypeError, ValueError):
-        return None
+        return 10
     if not seconds.is_integer() or int(seconds) not in fb.OMNI_DURATIONS:
-        return None
+        return 10
     return int(seconds)
 
 
@@ -555,50 +555,68 @@ class OperationService:
         if not pid:
             return {"error": "No project_id for r2v video generation"}
 
-        # Collect up to 3 reference images (API max).  Priority order:
-        #   1. end_scene_media_id — chain continuity target (end frame)
-        #   2. visual_asset entities — primary objects (vehicles, props)
-        #   3. character entities — main character consistency
-        # Location entities are excluded — they add generic backgrounds
-        # that can re-introduce unwanted visual elements (e.g. buildings
-        # removed from a scene).
+        # Collect up to 3 reference images (API max).
+        # Priority order:
+        #   1. character entities — main character face consistency (locked identity)
+        #   2. start_scene image — scene visual anchor / composition (input reference)
+        #   3. end_scene image — chain continuity target
+        #   4. visual_asset entities — props, vehicles, key objects
         _R2V_MAX_REFS = 3
-        _R2V_ENTITY_PRIORITY = ("visual_asset", "character")
         ref_ids: list[str] = []
         seen: set[str] = set()
 
-        # 1. end_scene image (highest priority for chain scenes)
-        if end_id and end_id not in seen:
-            ref_ids.append(end_id)
-            seen.add(end_id)
-
-        # 2-3. Entities by priority: visual_asset first, then character
+        # 1. Character entities (main character face consistency)
         if char_names_raw and len(ref_ids) < _R2V_MAX_REFS:
             project_entities = await crud.get_project_characters(pid)
             char_names_set = set(char_names_raw)
-            for etype in _R2V_ENTITY_PRIORITY:
-                for c in project_entities:
-                    if len(ref_ids) >= _R2V_MAX_REFS:
-                        break
-                    if not _char_matches(c, char_names_set):
-                        continue
-                    if c.get("entity_type") != etype:
-                        continue
-                    mid = c.get("media_id")
-                    if mid and mid not in seen:
-                        ref_ids.append(mid)
-                        seen.add(mid)
+            for c in project_entities:
+                if len(ref_ids) >= _R2V_MAX_REFS:
+                    break
+                if not _char_matches(c, char_names_set):
+                    continue
+                if c.get("entity_type") != "character":
+                    continue
+                mid = c.get("media_id")
+                if mid and mid not in seen:
+                    ref_ids.append(mid)
+                    seen.add(mid)
 
-            # Fallback: if no visual_asset or character found, allow location so pure landscape/flycam scenes can work
-            if not ref_ids:
-                for c in project_entities:
-                    if not _char_matches(c, char_names_set):
-                        continue
-                    mid = c.get("media_id")
-                    if mid and mid not in seen:
-                        ref_ids.append(mid)
-                        seen.add(mid)
-                        break
+        # 2. Scene start frame (serves as the primary visual scene anchor / input reference)
+        start_id = scene.get(f"{prefix}_image_media_id")
+        if start_id and start_id not in seen and len(ref_ids) < _R2V_MAX_REFS:
+            ref_ids.append(start_id)
+            seen.add(start_id)
+
+        # 3. end_scene image (chain continuity target)
+        if end_id and end_id not in seen and len(ref_ids) < _R2V_MAX_REFS:
+            ref_ids.append(end_id)
+            seen.add(end_id)
+
+        # 4. visual_asset entities (props, vehicles, objects)
+        if char_names_raw and len(ref_ids) < _R2V_MAX_REFS:
+            project_entities = await crud.get_project_characters(pid)
+            char_names_set = set(char_names_raw)
+            for c in project_entities:
+                if len(ref_ids) >= _R2V_MAX_REFS:
+                    break
+                if not _char_matches(c, char_names_set):
+                    continue
+                if c.get("entity_type") != "visual_asset":
+                    continue
+                mid = c.get("media_id")
+                if mid and mid not in seen:
+                    ref_ids.append(mid)
+                    seen.add(mid)
+
+        # Fallback: if no character/start/end found, allow location entities
+        if not ref_ids:
+            project_entities = await crud.get_project_characters(pid)
+            for c in project_entities:
+                mid = c.get("media_id")
+                if mid and mid not in seen:
+                    ref_ids.append(mid)
+                    seen.add(mid)
+                    break
 
         if not ref_ids:
             return {"error": "No valid reference media_ids for r2v"}
@@ -943,10 +961,22 @@ async def _build_video_prompt(base_prompt: str, scene: dict, project_id: str | N
     """Enhance video prompt with Veo 3 audio instructions and negative prompt."""
     parts = [base_prompt.strip()]
 
-    # Only append voice context when video_prompt contains dialogue (verb-based detection)
-    dialogue_verbs = ("says", "whispers", "shouts", "asks", "replies", "murmurs", "exclaims", "gasps", "laughs", "mutters")
+    # Check project-level audio flags — Veo 3 Audio label format
+    allow_music = False
+    allow_voice = False
+    project = None
+    if project_id:
+        project = await crud.get_project(project_id)
+        if project:
+            if project.get("allow_music"):
+                allow_music = True
+            if project.get("allow_voice"):
+                allow_voice = True
+
+    # Append voice context when prompt contains dialogue or project has allow_voice enabled
+    dialogue_verbs = ("says", "whispers", "shouts", "asks", "replies", "murmurs", "exclaims", "gasps", "laughs", "mutters", "speaks", "speaking", "narrates", "voiceover")
     prompt_lower = base_prompt.lower()
-    has_dialogue = any(verb in prompt_lower for verb in dialogue_verbs)
+    has_dialogue = allow_voice or any(verb in prompt_lower for verb in dialogue_verbs) or ('"' in base_prompt)
     if project_id and has_dialogue:
         char_names_raw = scene.get("character_names")
         if isinstance(char_names_raw, str):
@@ -963,17 +993,6 @@ async def _build_video_prompt(base_prompt: str, scene: dict, project_id: str | N
                     voices.append(f"{c['name']}: {c['voice_description']}")
             if voices:
                 parts.append("Character voices: " + ". ".join(voices) + ".")
-
-    # Check project-level audio flags — Veo 3 Audio label format
-    allow_music = False
-    allow_voice = False
-    if project_id:
-        project = await crud.get_project(project_id)
-        if project:
-            if project.get("allow_music"):
-                allow_music = True
-            if project.get("allow_voice"):
-                allow_voice = True
 
     if not allow_music:
         # Only append if prompt doesn't already have Audio:/Music: labels

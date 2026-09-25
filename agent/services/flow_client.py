@@ -845,25 +845,26 @@ class FlowClient:
     async def generate_video_from_references(self, reference_media_ids: list[str],
                                               prompt: str, project_id: str, scene_id: str,
                                               aspect_ratio: str = "VIDEO_ASPECT_RATIO_PORTRAIT",
-                                              user_paygate_tier: str = "PAYGATE_TIER_TWO") -> dict:
-        """Generate video from multiple reference images (r2v)."""
-
-        if not FLOW_ALLOW_DEGRADED:
-            return {"error": _unsupported(
-                "reference-to-video (r2v)",
-                "its payload was never captured off the new UI",
-            )}
+                                              user_paygate_tier: str = "PAYGATE_TIER_TWO",
+                                              duration_s: int = 10) -> dict:
+        """Generate video from multiple reference images (r2v) using Omni Flash / Pinhole Ingredients (MZZa6b)."""
         if not reference_media_ids:
             return {"error": "No reference media_ids for r2v"}
-        logger.warning(
-            "Scene %s: r2v is not on the batch path — running i2v off the first "
-            "reference %s because FLOW_ALLOW_DEGRADED=1",
-            str(scene_id)[:12], reference_media_ids[0][:12])
-        return await self.generate_video(
-            start_image_media_id=reference_media_ids[0], prompt=prompt,
-            project_id=project_id, scene_id=scene_id, aspect_ratio=aspect_ratio,
-            user_paygate_tier=user_paygate_tier,
-        )
+        try:
+            from agent.services.omni_flash import generate_omni_flash_video
+            return await generate_omni_flash_video(
+                reference_media_ids=reference_media_ids,
+                prompt=prompt,
+                project_id=project_id,
+                scene_id=scene_id,
+                duration_s=duration_s,
+                aspect_ratio=aspect_ratio,
+                user_paygate_tier=user_paygate_tier,
+            )
+        except Exception as exc:
+            logger.error("Failed to generate omni r2v video: %s", exc)
+            return {"error": f"Failed to generate omni r2v video: {exc}"}
+
 
     async def upscale_video(self, media_id: str, scene_id: str,
                              aspect_ratio: str = "VIDEO_ASPECT_RATIO_PORTRAIT",

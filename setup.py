@@ -118,6 +118,9 @@ _CRITICAL_RULES = """\
 19. **Mandatory review & Review Board** — Pipeline skills (`/fk-pipeline`, `/fk-gen-videos`) MUST automatically execute `/fk-review-video` immediately after video generation, display the per-scene scorecard table showing which nodes passed and which need regeneration, and ensure the Review Board web app (`python tools/review_server.py 8200`) is running.
 20. **Language matching for SEO & Thumbnails** — YouTube metadata (`/fk-youtube-seo`) and thumbnails (`/fk-thumbnail`) MUST match the dialogue/script language (e.g. 100% Japanese for Japanese POV vlogs, Vietnamese for Vietnamese, English for English). Never generate English/Vietnamese SEO for Japanese dialogue vlogs.
 21. **Flush stale queue on new project** — whenever starting or creating a new project (e.g. `/fk-create-project`, `/fk-vlog-japan`, `/fk-time-travel-vlog`), ALWAYS execute `python -c "import sqlite3; conn = sqlite3.connect('flow_agent.db'); conn.execute('UPDATE request SET status=\\'FAILED\\' WHERE status=\\'PENDING\\''); conn.commit()"` first to flush all stale PENDING requests and prevent worker auto-retry loops causing `PUBLIC_ERROR_UNUSUAL_ACTIVITY`.
+22. **Mandatory Scene Image Review before Video Generation** — After generating scene images (Step 6), ALWAYS download images locally to `${OUTDIR}/images/scene_{idx}.jpg`, launch the Image Review Board (`review_images.html`), and pause for user review. Never jump directly into video generation without user approval of the scene start frames. Any unsatisfactory images MUST be resubmitted with `REGENERATE_IMAGE`.
+23. **Start Frame is Input Reference Only** — The generated scene image (`start_image_media_id` / start frame) serves strictly as the motion starting anchor. Character identity consistency still requires character reference images (`character_names` + `reference_media_ids` / `imageInputs`) to preserve the locked visual identity across the video.
+24. **Achernar Voice Profile** — For female travel vloggers / narrators, configure `voice_description` using the **Achernar** profile (Google Gemini-TTS: soft, higher-pitched, natural expressive conversational female voice, casual vlog tone, breathy when amazed, hushed whisper when nervous). Structure video prompt dialogue accordingly (`Mia says "..."`) so Veo 3 / Pinhole synthesizes matching native vocal audio.
 """
 
 _PIPELINE_OVERVIEW = """\
@@ -133,7 +136,9 @@ _PIPELINE_OVERVIEW = """\
                      Wait for done=true, verify all entities have media_id
 6. Gen scene images  POST /api/requests/batch → poll /batch-status?video_id=<VID>
                      Wait for done=true, verify image_media_id = UUID
-7. Gen videos        POST /api/requests/batch → poll /batch-status?video_id=<VID>
+6.5 Review images    MANDATORY! Download to images/ & open review_images.html.
+                     User reviews start frames → REGENERATE_IMAGE for any needed scenes.
+7. Gen videos        POST /api/requests/batch (only after scene images are approved)
                      Auto-retry failed videos up to 5x; auto-download completed clips to scenes/
 7.5 Review videos    POST /api/videos/{vid}/review?mode=light (AI vision quality check)
                      Auto-triggered immediately! Displays per-node scorecard table.

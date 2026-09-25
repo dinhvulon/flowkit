@@ -33,6 +33,15 @@ Một khối mô tả cố định, **dán nguyên văn vào mọi prompt**, kè
 
 Gồm: mặt (tuổi, dáng mặt, mắt, tàn nhang/nốt ruồi), tóc (màu, kiểu búi, trâm), trang phục thời kỳ (kiểu áo, màu, cổ áo, thắt lưng), thiết bị (gậy selfie ngắn + điện thoại góc 0.5x), giọng (tông, tốc độ, thì thầm khi sợ). Mẫu ở `.agents/skills/time-travel-vlog/references/prompt-templates.md`.
 
+### Quy tắc Cốt Lõi Về Voice, Start Frame & Review Ảnh (BẮT BUỘC):
+1. **Voice Achernar**: Với nhân vật vlogger nữ, khai báo `voice_description` theo chuẩn **Achernar** (Google Gemini-TTS: *"Achernar — soft, higher-pitched, natural expressive conversational female voice, casual vlog tone, breathy when amazed, hushed whisper when nervous"*). Đính thoại dạng `Mia says: "..."` trong sub-clips `0-3s / 3-6s / 6-8s` để Veo 3 / Pinhole tự sinh khẩu hình và giọng nói bản địa tự nhiên.
+2. **Start Frame chỉ là tham chiếu đầu vào (Input Reference)**: Khung ảnh đầu (`start_image_media_id` / start frame) chỉ là mốc bắt đầu chuyển động. Khi tạo video, **luôn đính kèm ảnh tham chiếu nhân vật (character reference: `imageInputs` / `reference_media_ids`)** để khóa chặt nhận diện gương mặt và trang phục xuyên suốt video.
+3. **Bắt buộc Review Khung Ảnh Đầu trước khi sinh Video**: Tuyệt đối không nhảy thẳng sang sinh video. Sau khi xong toàn bộ Scene Images:
+   - Tải toàn bộ ảnh về `${OUTDIR}/images/scene_{idx:02d}.jpg`.
+   - Khởi chạy Review Board (`review_images.html`).
+   - Dừng lại để người dùng duyệt. Những ảnh chưa ưng ý phải được gọi `REGENERATE_IMAGE` để tạo lại cho đến khi đạt.
+
+
 ## Bước 2 — Research pack
 
 Điền checklist `.agents/skills/time-travel-vlog/references/era-research.md`, chọn 10–15 beat thật. Ưu tiên:

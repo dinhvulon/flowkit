@@ -73,6 +73,14 @@ Một khối `CHARACTER_LOCK` cố định, **dán nguyên văn vào entity `des
 
 Gồm: mặt (tuổi, dáng mặt, mắt, tàn nhang/nốt ruồi), tóc (màu, kiểu búi, trâm/phụ kiện), trang phục thời kỳ (kiểu áo, màu, cổ áo, thắt lưng — **KHÔNG nhuộm màu/vải công nghiệp hiện đại**), thiết bị (gậy selfie ngắn + điện thoại góc siêu rộng 0.5x, cánh tay lọt mép khung), giọng (`voice_description`: tông, tốc độ, thì thầm khi sợ).
 
+#### Quy tắc Cốt Lõi Về Voice, Start Frame & Review Ảnh (BẮT BUỘC):
+1. **Voice Achernar**: Với nhân vật vlogger nữ, khai báo `voice_description` theo chuẩn **Achernar** (Google Gemini-TTS: *"Achernar — soft, higher-pitched, natural expressive conversational female voice, casual vlog tone, breathy when amazed, hushed whisper when nervous"*). Đính thoại dạng `Mia says: "..."` trong sub-clips `0-3s / 3-6s / 6-8s` để Veo 3 / Pinhole tự sinh khẩu hình và giọng nói bản địa tự nhiên.
+2. **Start Frame chỉ là tham chiếu đầu vào (Input Reference)**: Khung ảnh đầu (`start_image_media_id` / start frame) chỉ là mốc bắt đầu chuyển động. Khi tạo video, **luôn đính kèm ảnh tham chiếu nhân vật (character reference: `imageInputs` / `reference_media_ids`)** để khóa chặt nhận diện gương mặt và trang phục xuyên suốt video.
+3. **Bắt buộc Review Khung Ảnh Đầu trước khi sinh Video**: Tuyệt đối không nhảy thẳng sang sinh video. Sau khi xong toàn bộ Scene Images:
+   - Tải toàn bộ ảnh về `${OUTDIR}/images/scene_{idx:02d}.jpg`.
+   - Khởi chạy Review Board (`review_images.html`).
+   - Dừng lại để người dùng duyệt. Những ảnh chưa ưng ý phải được gọi `REGENERATE_IMAGE` để tạo lại cho đến khi đạt.
+
 Mẫu (từ `prompt-templates.md` — thay giá trị, tên nhân vật do bạn đặt, rồi đóng băng):
 ```
 CHARACTER_LOCK:
@@ -80,7 +88,7 @@ Nora, a 26-year-old Western woman with a heart-shaped face, hazel-green eyes, de
 bright copper-red hair in a high bun held by a dark wooden hairpin, a few loose strands at the temples,
 wearing an era-appropriate [dark indigo cross-collar hemp robe with a white inner collar and a plain dark sash],
 holding a short black selfie stick with a smartphone on ultra-wide 0.5x lens, her arm visible at the frame edge.
-Voice: warm, curious American English, breathy when amazed, whispers when scared.
+Voice: Achernar — soft, higher-pitched, natural expressive conversational female voice, casual vlog tone, breathy when amazed, hushed whisper when nervous.
 ```
 Tên trong `CHARACTER_LOCK`, tên entity và tên người nói trong `video_prompt` phải **trùng nhau tuyệt đối** (mẫu gốc có chỗ lệch Nora/Mia — đừng lặp lại lỗi đó).
 

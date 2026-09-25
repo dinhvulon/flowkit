@@ -237,10 +237,21 @@ Batch 5 at a time. Poll every 15s. Submit next batch when current batch complete
 
 ---
 
+### Stage 1.5 — Mandatory Scene Image Review (CRITICAL)
+
+> [!IMPORTANT]
+> **DO NOT proceed to Stage 2 (Scene Videos) automatically.**
+> 1. Download all completed scene images locally to `${OUTDIR}/images/scene_{idx:02d}.jpg`.
+> 2. Generate and open the interactive Review Board: `python scripts/generate_review_html.py` (opens `review_images.html` in browser).
+> 3. Pause for user review. If the user marks any scene as "Cần Gen Lại", resubmit with `REGENERATE_IMAGE` until approved.
+> 4. **Start Frame Rule:** The scene image (`start_image_media_id` / start frame) serves strictly as the input reference anchor. Character identity consistency still requires character reference images (`character_names` + `reference_media_ids` / `imageInputs`) attached to lock character features.
+
+---
+
 ### Stage 2 — Scene Videos
 
 **A. Standard Mode (I2V with `abra_i2v_8s`):**
-Only run after all scene images COMPLETED.
+Only run after all scene images COMPLETED and **approved** in Stage 1.5.
 ```bash
 curl -X POST http://127.0.0.1:8100/api/requests \
   -H "Content-Type: application/json" \
@@ -263,9 +274,9 @@ curl -X POST http://127.0.0.1:8100/api/requests \
 ```
 
 > [!TIP]
-> **Dual-Track Voice Handling:**
-> 1. **In-Video Lip-Sync (Veo 3):** Structure the `video_prompt` with quoted dialogue in sub-clips (e.g. `0-3s: Luna walks and says "Konnichiwa"`). Veo 3 / Omni Flash automatically animates the character's lips and generates natural speaking audio inside the video.
-> 2. **Studio TTS Narration:** Run Stage 3 with `--tts` (OmniVoice / EdgeTTS) to generate crisp narration audio that aligns cleanly with the storyline during concatenation.
+> **Dual-Track Voice Handling & Achernar Profile:**
+> 1. **In-Video Lip-Sync (Veo 3):** Structure the `video_prompt` with quoted dialogue in sub-clips (e.g. `0-3s: Mia walks and says "Look at that gate!"`). Set character `voice_description` to the **Achernar** profile (Google Gemini-TTS: soft, higher-pitched, natural expressive conversational female voice, casual vlog tone, breathy when amazed, hushed whisper when nervous). Veo 3 / Pinhole automatically animates character lips and generates matching voice audio inside the video.
+> 2. **Studio TTS Narration:** Run Stage 3 with `--tts` (OmniVoice / EdgeTTS / Gemini-TTS Achernar) to generate crisp narration audio that aligns cleanly with the storyline during concatenation.
 
 Batch 5. Poll 15s. Each video takes 2-5 min.
 

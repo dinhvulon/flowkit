@@ -49,6 +49,9 @@ RPC_UPSCALE_IMAGE = "SPrCad"
 CAPTCHA_IMAGE = "IMAGE_GENERATION"
 CAPTCHA_VIDEO = "VIDEO_GENERATION"
 
+#: Supported Omni Flash durations (seconds)
+OMNI_DURATIONS = (4, 6, 8, 10)
+
 #: The extension substitutes a freshly minted reCAPTCHA token for this marker.
 #: It has to be a placeholder rather than a real token because the mint has to
 #: happen in the page, moments before the request leaves.
