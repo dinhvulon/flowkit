@@ -127,6 +127,13 @@ _CRITICAL_RULES = """\
     - Đính kèm trực tiếp các thành phần tham chiếu (Ingredients): Nhân vật (`Mia`), Trang phục (`Mia Outfit`), và Bối cảnh/Địa điểm (`reference_media_ids`).
     - Model `abra_r2v` tổng hợp trực tiếp chuyển động video mượt mà từ các thành phần tham chiếu và prompt, tích hợp khẩu hình native với voice profile **Achernar** (Slot 7).
     - Không chạy quy trình `GENERATE_IMAGE` cho từng cảnh; sau khi các entity có `media_id`, gửi thẳng yêu cầu `GENERATE_VIDEO_REFS`.
+28. **Clean-Before-Video-Gen (Bắt buộc tẩy logo ảnh trước khi đưa vào sinh video)** — Đối với BẤT KỲ phân cảnh nào cần tạo ảnh Start Frame hoặc ảnh Reference từ Google Flow/AI (như cảnh vũ trụ, drone, phong cảnh thiên nhiên, hoặc start frame chuyển cảnh):
+    - **TUYỆT ĐỐI KHÔNG dùng trực tiếp `media_id` do Google Flow tự sinh** để đưa thẳng vào sinh video. Ảnh AI của Google luôn tự chèn watermark logo ở góc dưới; nếu đưa thẳng vào i2v/r2v thì model video sẽ làm logo đó nhấp nháy, méo mó và dính chết vào video.
+    - **Quy trình bắt buộc 4 bước đối với mọi ảnh do AI sinh**:
+      1. Tải ảnh gốc về máy: `${OUTDIR}/images/scene_{idx}_{sid}.jpg`.
+      2. Chạy ngay `python tools/remove_watermark_from_image.py "${OUTDIR}/images/scene_{idx}_{sid}.jpg"` để xóa sạch logo và SynthID ➔ sinh ra file `scene_{idx}_{sid}_clean.jpg`.
+      3. Upload file sạch `scene_{idx}_{sid}_clean.jpg` ngược lên Google Flow qua `POST /api/flow/upload-image` để nhận một `media_id` UUID hoàn toàn sạch logo.
+      4. Cập nhật `media_id` sạch này vào Scene (`horizontal_image_media_id` / `vertical_image_media_id`), đưa lên Review Board cho user duyệt. CHỈ SAU ĐÓ mới dùng `media_id` sạch này để sinh video!
 """
 
 _PIPELINE_OVERVIEW = """\

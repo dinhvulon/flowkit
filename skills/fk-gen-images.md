@@ -106,19 +106,24 @@ curl -X PATCH http://127.0.0.1:8100/api/scenes/<SID> \
   -d '{"${ori}_image_media_id": "<extracted_uuid>"}'
 ```
 
-## Step 5: Output & Mandatory User Review Gate (CRITICAL)
+## Step 5: Output, Watermark Cleaning & Mandatory User Review Gate (CRITICAL)
 
 1. **Download all images** locally:
    - Ensure every scene image is downloaded to `${OUTDIR}/images/scene_{idx:02d}.jpg`.
-2. **Launch Image Review Board**:
-   - Run `python scripts/generate_review_html.py` (or open `http://localhost:8200/review_images.html`).
-3. **Print results table**:
-| Scene | Order | chain_type | request_type | image_status | media_id (UUID) | Preview / Action |
-|-------|-------|-----------|-------------|-------------|-----------------|------------------|
+2. **BẮT BUỘC XÓA SẠCH WATERMARK TRƯỚC KHI TẠO VIDEO (Clean-Before-Video-Gen)**:
+   - Ảnh AI do Google Flow sinh ra luôn tự động chèn logo ở góc dưới. Nếu dùng trực tiếp `media_id` gốc để sinh video, logo sẽ bị dính, méo mó và nhấp nháy xuyên suốt video.
+   - Chạy ngay: `python tools/remove_watermark_from_image.py --dir "${OUTDIR}/images"` ➔ tạo ra các file `scene_{idx:02d}_clean.jpg`.
+   - Upload từng file sạch ngược lên Google Flow: `POST /api/flow/upload-image` ➔ nhận `media_id` UUID hoàn toàn sạch logo.
+   - Cập nhật `media_id` sạch này vào Scene (`horizontal_image_media_id` / `vertical_image_media_id`).
+3. **Launch Image Review Board**:
+   - Run `python scripts/generate_review_html.py` (hoặc mở `http://localhost:8200/review_images.html`).
+4. **Print results table**:
+| Scene | Order | chain_type | request_type | image_status | media_id sạch (UUID) | Preview / Action |
+|-------|-------|-----------|-------------|-------------|----------------------|------------------|
 
-4. **STOP AND PAUSE HERE:**
+5. **STOP AND PAUSE HERE:**
    - **DO NOT** trigger video generation automatically.
-   - Present the gallery and links to the user: "All scene start frames generated and downloaded. Please review at `http://localhost:8200/review_images.html`. Tell me which scenes (if any) need prompt tweaking and regeneration, or confirm approval to proceed to video generation."
+   - Present the gallery and links to the user: "All scene start frames generated, watermarks removed, and clean media_ids updated. Please review at `http://localhost:8200/review_images.html`. Tell me which scenes (if any) need prompt tweaking and regeneration, or confirm approval to proceed to video generation."
    - Wait for explicit user confirmation before running `/fk-gen-videos`.
 
 ## Important rules

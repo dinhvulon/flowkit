@@ -237,14 +237,19 @@ Batch 5 at a time. Poll every 15s. Submit next batch when current batch complete
 
 ---
 
-### Stage 1.5 — Mandatory Scene Image Review (CRITICAL)
+### Stage 1.5 — Mandatory Scene Image Review & Watermark Cleaning (CRITICAL)
 
 > [!IMPORTANT]
 > **DO NOT proceed to Stage 2 (Scene Videos) automatically.**
 > 1. Download all completed scene images locally to `${OUTDIR}/images/scene_{idx:02d}.jpg`.
-> 2. Generate and open the interactive Review Board: `python scripts/generate_review_html.py` (opens `review_images.html` in browser).
-> 3. Pause for user review. If the user marks any scene as "Cần Gen Lại", resubmit with `REGENERATE_IMAGE` until approved.
-> 4. **Start Frame Rule:** The scene image (`start_image_media_id` / start frame) serves strictly as the input reference anchor. Character identity consistency still requires character reference images (`character_names` + `reference_media_ids` / `imageInputs`) attached to lock character features.
+> 2. **BẮT BUỘC TẨY LOGO WATERMARK TRƯỚC KHI TẠO VIDEO (Clean-Before-Video-Gen)**:
+>    - Tuyệt đối không dùng `media_id` gốc do Google Flow tự sinh để đưa vào tạo video (ảnh AI của Google luôn gắn logo ở góc dưới, nếu đưa thẳng vào i2v/r2v thì logo sẽ bị méo mó, nhấp nháy và dính vĩnh viễn vào video).
+>    - Chạy ngay: `python tools/remove_watermark_from_image.py "${OUTDIR}/images/scene_{idx:02d}.jpg"` ➔ tạo file `scene_{idx:02d}_clean.jpg`.
+>    - Upload file sạch ngược lên Google Flow qua `POST /api/flow/upload-image` ➔ nhận `media_id` UUID hoàn toàn sạch logo.
+>    - Cập nhật `media_id` sạch này vào Scene (`horizontal_image_media_id` / `vertical_image_media_id`).
+> 3. Generate and open the interactive Review Board: `python scripts/generate_review_html.py` (opens `review_images.html` in browser).
+> 4. Pause for user review. If the user marks any scene as "Cần Gen Lại", resubmit with `REGENERATE_IMAGE` until approved.
+> 5. **Start Frame Rule:** The scene image (`start_image_media_id` / start frame) serves strictly as the input reference anchor. Character identity consistency still requires character reference images (`character_names` + `reference_media_ids` / `imageInputs`) attached to lock character features.
 
 ---
 
