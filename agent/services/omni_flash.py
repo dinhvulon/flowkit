@@ -337,6 +337,7 @@ async def generate_omni_flash_video(
     aspect_ratio: str = "VIDEO_ASPECT_RATIO_PORTRAIT",
     user_paygate_tier: str = "PAYGATE_TIER_ONE",
     seed: int | None = None,
+    voice_id: str | None = None,
 ) -> dict:
     """Submit Omni Flash Ingredients/reference-to-video generation.
 
@@ -352,6 +353,7 @@ async def generate_omni_flash_video(
         freq = fb.omni_reference_video_request(
             prompt, pid, refs, duration_s=duration_s,
             resolution=resolution, aspect=aspect_ratio,
+            voice_id=voice_id,
         )
         payload = await client._batch_payload(
             fb.RPC_GEN_VIDEO_REFERENCES, freq, fb.CAPTCHA_VIDEO, timeout=120,

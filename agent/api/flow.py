@@ -62,6 +62,7 @@ class GenerateVideoRefsRequest(BaseModel):
     model_family: Literal["veo", "omni_flash"] = "veo"
     duration_s: int = 8
     resolution: Literal["360p", "720p"] = "720p"
+    voice_id: Optional[str] = None
 
 
 class GenerateOmniFlashVideoRequest(BaseModel):
@@ -73,6 +74,7 @@ class GenerateOmniFlashVideoRequest(BaseModel):
     resolution: Literal["360p", "720p"] = "720p"
     aspect_ratio: str = "VIDEO_ASPECT_RATIO_PORTRAIT"
     user_paygate_tier: str = "PAYGATE_TIER_ONE"
+    voice_id: Optional[str] = None
 
 
 class GenerateOmniFlashTextVideoRequest(BaseModel):
@@ -297,6 +299,7 @@ async def generate_video_refs(body: GenerateVideoRefsRequest):
                 resolution=body.resolution,
                 aspect_ratio=body.aspect_ratio,
                 user_paygate_tier=body.user_paygate_tier,
+                voice_id=body.voice_id,
             )
         except ValueError as exc:
             raise HTTPException(400, str(exc)) from exc

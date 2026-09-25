@@ -636,10 +636,20 @@ class OperationService:
             req_row = await crud.get_request(request_id)
             existing_op = req_row.get("request_id") if req_row else None
 
-        if existing_op:
-            logger.info("R2V already submitted (op=%s), re-polling", existing_op[:30])
-            operations = [{"operation": {"name": existing_op}, "status": "MEDIA_GENERATION_STATUS_PENDING"}]
-            return await _poll_operations(self._client, operations)
+        # Resolve voice_id (e.g. "achernar" for slot 7 in MZZa6b)
+        voice_id = None
+        if char_names_raw:
+            project_chars = await crud.get_project_characters(pid)
+            char_names_set = set(char_names_raw)
+            for c in project_chars:
+                if _char_matches(c, char_names_set) and c.get("voice_description"):
+                    raw_vd = c["voice_description"].strip()
+                    tok = raw_vd.split()[0].rstrip("—:,-").lower()
+                    if tok:
+                        voice_id = tok
+                        break
+        if not voice_id and project and project.get("narrator_voice"):
+            voice_id = str(project["narrator_voice"]).strip().lower()
 
         submit_result = await self._client.generate_video_from_references(
             reference_media_ids=ref_ids,
@@ -649,6 +659,7 @@ class OperationService:
             aspect_ratio=aspect,
             user_paygate_tier=tier,
             duration_s=duration_s,
+            voice_id=voice_id,
         )
 
         if _is_error(submit_result):

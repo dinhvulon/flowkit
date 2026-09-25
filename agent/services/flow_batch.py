@@ -490,7 +490,8 @@ def omni_first_last_request(prompt: str, project_id: str,
 def omni_reference_video_request(prompt: str, project_id: str,
                                  reference_media_ids: list[str],
                                  *, duration_s: int = 8, resolution: str = "720p",
-                                 aspect: Any = VIDEO_ASPECT_LANDSCAPE) -> str:
+                                 aspect: Any = VIDEO_ASPECT_LANDSCAPE,
+                                 voice_id: str | None = None) -> str:
     """Build Omni Ingredients/reference-to-video submit (RPC ``MZZa6b``)."""
     refs = [str(mid) for mid in reference_media_ids if str(mid)]
     if not refs:
@@ -509,7 +510,12 @@ def omni_reference_video_request(prompt: str, project_id: str,
         None,
         [None, None, None, None, _client_uuid(), _client_uuid()],
     ]
-    if res == "360p":
+    if voice_id:
+        v_id = str(voice_id).strip().lower()
+        request.extend([None, [[v_id]]])
+        if res == "360p":
+            request.extend([None, None, None, [4]])
+    elif res == "360p":
         request.extend([None, None, None, None, None, [4]])
     return build_envelope(RPC_GEN_VIDEO_REFERENCES, [
         [request],
