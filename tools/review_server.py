@@ -51,22 +51,59 @@ def _resolve_video_dir():
                 return d
     except Exception:
         return None
-    return None
+def _resolve_proj_dir():
+    try:
+        with urllib.request.urlopen(f"{API_BASE}/api/active-project", timeout=5) as r:
+            active = json.loads(r.read())
+        pid = active.get("project_id")
+        if not pid:
+            return None
+        with urllib.request.urlopen(f"{API_BASE}/api/projects/{pid}/output-dir", timeout=5) as r:
+            out = json.loads(r.read())
+        out_path = out.get("path")
+        if not out_path:
+            return None
+        return (PROJECT_ROOT / out_path).resolve()
+    except Exception:
+        return None
 
 
 class ReviewHandler(SimpleHTTPRequestHandler):
+    def do_HEAD(self):
+        self.do_GET()
+
     def do_GET(self):
         parsed = urlparse(self.path)
         path = parsed.path
 
-        # Serve the HTML board
+        # Serve the HTML boards
         if path in ("/", "/index.html", "/review_board.html"):
             self._serve_file(TOOLS_DIR / "review_board.html", "text/html")
             return
 
+        if path in ("/review_images", "/review_images.html", "/images-review"):
+            pdir = _resolve_proj_dir()
+            if pdir and (pdir / "review_images.html").exists():
+                self._serve_file(pdir / "review_images.html", "text/html")
+                return
+
+        # Serve local images
+        if path.startswith("/images/"):
+            fname = path[len("/images/"):]
+            pdir = _resolve_proj_dir()
+            if pdir:
+                fpath = pdir / "images" / fname
+                if fpath.exists():
+                    ctype = "image/png" if fname.endswith(".png") else "image/jpeg"
+                    self._serve_file(fpath, ctype)
+                    return
+            self.send_error(404, f"Image not found: {fname}")
+            return
+
         # Serve local videos
-        if path.startswith("/videos/"):
-            fname = path[len("/videos/"):]
+        if path.startswith("/videos/") or path.startswith("/scenes/"):
+            prefix = "/videos/" if path.startswith("/videos/") else "/scenes/"
+            fname = path[len(prefix):]
             vdir = _resolve_video_dir()
             if vdir:
                 fpath = vdir / fname

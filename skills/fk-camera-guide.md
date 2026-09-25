@@ -357,12 +357,13 @@ Before submitting any video prompt, verify:
 - [ ] Character description consistent across multi-prompt sequences
 - [ ] Negative prompt included (at minimum: `subtitles, watermark`)
 - [ ] No abstract words — everything is visual/audible and specific
-- [ ] Reference characters appear consistently across shots (action only, not appearance)
+- [ ] Character physically present in start frame if acting or speaking in video (no mid-clip pop-in)
 
 ## Common Mistakes
 
 | Wrong | Right |
 |-------|-------|
+| Empty start frame + character "steps into view" / "walks into frame" | Anchor character in start frame first; video prompt only animates existing motion |
 | Prompt < 50 words, too generic | 100–150 words, specific per component |
 | Camera movement embedded in action sentence | Camera movement = separate sentence |
 | Dialogue too long for 8s | Keep dialogue short, fits in clip duration |

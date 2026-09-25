@@ -106,16 +106,24 @@ curl -X PATCH http://127.0.0.1:8100/api/scenes/<SID> \
   -d '{"${ori}_image_media_id": "<extracted_uuid>"}'
 ```
 
-## Step 5: Output
+## Step 5: Output & Mandatory User Review Gate (CRITICAL)
 
-Print results table:
-| Scene | Order | chain_type | request_type | image_status | media_id (UUID) |
-|-------|-------|-----------|-------------|-------------|----------------|
+1. **Download all images** locally:
+   - Ensure every scene image is downloaded to `${OUTDIR}/images/scene_{idx:02d}.jpg`.
+2. **Launch Image Review Board**:
+   - Run `python scripts/generate_review_html.py` (or open `http://localhost:8200/review_images.html`).
+3. **Print results table**:
+| Scene | Order | chain_type | request_type | image_status | media_id (UUID) | Preview / Action |
+|-------|-------|-----------|-------------|-------------|-----------------|------------------|
 
-Print: "All scene images ready. Run /fk-gen-videos <PID> <VID> to generate videos."
+4. **STOP AND PAUSE HERE:**
+   - **DO NOT** trigger video generation automatically.
+   - Present the gallery and links to the user: "All scene start frames generated and downloaded. Please review at `http://localhost:8200/review_images.html`. Tell me which scenes (if any) need prompt tweaking and regeneration, or confirm approval to proceed to video generation."
+   - Wait for explicit user confirmation before running `/fk-gen-videos`.
 
 ## Important rules
 
+- **Mandatory Review Gate (CRITICAL):** Ra ảnh là User review luôn! Never proceed directly to video generation without human approval of start frames.
 - **GENERATE vs REGENERATE:** `GENERATE_IMAGE` skips scenes already `COMPLETED`. Use `REGENERATE_IMAGE` to force a fresh generation.
 - **Cascade on regen:** `REGENERATE_IMAGE` auto-clears downstream video + upscale status for that scene. For CONTINUATION scenes, regenerating a parent also invalidates all children — re-run this skill to re-edit downstream scenes.
 - **EDIT_IMAGE for CONTINUATION:** The worker auto-resolves `source_media_id` from `parent_scene_id` and `character_names` → sends as `imageInputs` after the base image `[base_image, char_A, char_B, ...]` for character consistency. Same for `EDIT_CHARACTER_IMAGE`.

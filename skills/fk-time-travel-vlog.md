@@ -80,6 +80,10 @@ Gồm: mặt (tuổi, dáng mặt, mắt, tàn nhang/nốt ruồi), tóc (màu, 
    - Tải toàn bộ ảnh về `${OUTDIR}/images/scene_{idx:02d}.jpg`.
    - Khởi chạy Review Board (`review_images.html`).
    - Dừng lại để người dùng duyệt. Những ảnh chưa ưng ý phải được gọi `REGENERATE_IMAGE` để tạo lại cho đến khi đạt.
+4. **Nhân vật BẮT BUỘC có mặt trong Start Frame (Tránh Lỗi Pop-in/Morphing)**:
+   - Nếu kịch bản hoặc `video_prompt` có nhân vật xuất hiện, cử động hoặc nói chuyện trên hình, nhân vật **PHẢI ĐƯỢC ĐẶT SẴN trong ảnh Start Frame** (`prompt` tạo ảnh phải mô tả rõ nhân vật đứng, ngồi, nép hoặc cầm camera trong bố cục).
+   - **TUYỆT ĐỐI CẤM** tạo ảnh Start Frame chỉ có cảnh vật trống rồi viết trong `video_prompt`: `"Mia steps into frame"` hoặc `"Mia walks into view"` hoặc `"Mia turns into frame"`.
+   - Mô hình Video AI (Veo 3 / I2V) không thể tự vẽ một nhân vật từ hư không giữa chừng mà giữ được diện mạo ổn định — điều này sẽ gây lỗi pop-in giật hình, méo mặt, mọc thừa tay chân hoặc biến dạng cơ thể. Start Frame phải là neo hình học (anchor) cho nhân vật; video prompt chỉ điều khiển chuyển động tiếp theo.
 
 Mẫu (từ `prompt-templates.md` — thay giá trị, tên nhân vật do bạn đặt, rồi đóng băng):
 ```

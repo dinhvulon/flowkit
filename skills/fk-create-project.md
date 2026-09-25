@@ -365,6 +365,7 @@ Write video prompts as **natural prose** — like briefing a film director. Veo 
 **5-component structure:** `[Camera/Shot] + [Subject] + [Action] + [Setting] + [Style & Audio]`
 
 **Critical rules:**
+- **Character Anchor in Start Frame:** If the character acts or speaks in the video prompt, they MUST be physically present in the start frame image prompt. Never prompt an empty environment start frame and then have the character "walk into frame" or "step into view" (causes severe pop-in, morphing, and face distortion errors).
 - **100–150 words** (3–6 sentences)
 - **Camera movement as separate sentence** — never embed in action description
 - **Audio/SFX/Music labels** at end of prompt, separated

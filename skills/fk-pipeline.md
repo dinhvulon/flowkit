@@ -293,14 +293,17 @@ Batch 5. Poll 15s. Each video takes 2-5 min.
 
 ---
 
-### Stage 2.5 — Mandatory Review Videos & Review Board
+### Stage 2.5 — Mandatory Review of Individual Scene Videos (CRITICAL HUMAN GATE)
 
-Runs automatically after the video batch completes (or after all retries settle). Uses `/fk-review-video` to catch AI generation errors and review each node before concatenation:
-
-```bash
-# 1. Run light review on all completed videos via API
-curl -s -X POST "http://127.0.0.1:8100/api/videos/<VID>/review?project_id=<PID>&mode=light&orientation=<ORIENTATION>"
-```
+> [!IMPORTANT]
+> **STOP AND PAUSE HERE! DO NOT PROCEED TO CONCAT AUTOMATICALLY.**
+> Pipeline execution MUST stop after all scene videos are downloaded. Present EACH individual unconcatenated scene video to the user for direct review:
+> 1. Ensure all clips are in `${OUTDIR}/scenes/scene_{idx:02d}_{sid}.mp4`.
+> 2. Ensure Review Board is running (`python tools/review_server.py 8200`) and provide direct links.
+> 3. Print the comprehensive scene video review table in the chat (Scene index, title/description, local file path, preview link, status).
+> 4. **Wait for user explicit approval of each video clip.**
+> 5. If the user requests changes for any scene video (e.g. camera angle, motion, character action, handheld vlog perspective), update the prompt and run `REGENERATE_VIDEO` until the user is satisfied.
+> 6. ONLY proceed to Stage 4 (Concat) when the user explicitly commands to concatenate the approved videos.
 
 **Auto-Report & Node Status Table:**
 Always print the per-node review summary directly to the terminal:
@@ -318,38 +321,17 @@ Scene 6    | FAILED | NEED REGEN | -            | -          | Auto-sanitized, r
 ```
 
 **Launch Scene Review Board (Interactive Web UI):**
-Automatically ensure the review server is active so the user can inspect videos in browser:
+Automatically ensure the review server is active so the user can inspect individual videos in browser:
 ```bash
 python tools/review_server.py 8200
 ```
 Print the review link:
-👉 **`http://localhost:8200?video_id=<VID>`**
+👉 **`http://localhost:8200?video_id=<VID>`** or **`http://localhost:8200/review_images.html`**
 
-**Interpret results & Fix Loop (max 2 review cycles):**
-- Scenes scoring **7.5+** (good/excellent) → pass, proceed to concat
-- Scenes scoring **4.0–7.4** (acceptable/poor) → update `video_prompt` based on `fix_guide` + `errors`, then regen video
-- Scenes scoring **0–3.9** (unusable) or **FAILED** → sanitize prompt, regen image first (`REGENERATE_IMAGE`), then regen video
-
-```python
-for cycle in range(2):
-    review = run_review(VID, mode='light')
-    bad_scenes = [s for s in review if s['total_score'] < 7.5]
-    if not bad_scenes:
-        break  # all pass
-
-    for scene in bad_scenes:
-        new_prompt = improve_prompt(scene['video_prompt'], scene['errors'], scene['fix_guide'])
-        curl_patch(f"/api/scenes/{scene['scene_id']}", {"video_prompt": new_prompt})
-
-        if scene['total_score'] < 4.0:
-            submit_request("REGENERATE_IMAGE", scene['scene_id'])
-        else:
-            submit_request("GENERATE_VIDEO", scene['scene_id'])
-```
-
-After review passes (or review cycles complete):
-- Download any newly completed scenes
-- Proceed to Concat with all approved scenes
+**Fix Loop for Flagged Scenes:**
+- If user or AI flags a scene: update `video_prompt` (or `prompt` + image if composition is flawed), submit `REGENERATE_VIDEO`.
+- Re-download newly regenerated video to `scenes/` and present back to the user for re-review.
+- Do NOT proceed to Concat until user explicitly approves all scene videos.
 
 
 ---

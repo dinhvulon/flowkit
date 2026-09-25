@@ -114,13 +114,17 @@ _CRITICAL_RULES = """\
 15. **Real-people bypass** — when characters are based on real famous people (politicians, celebrities, military leaders), NEVER use their real name as entity `name` or anywhere in `description`, `image_prompt`, `prompt`, or `video_prompt`. AI image generators reject known public figures. Instead: (a) use a **role-based alias** as entity name (e.g. "Tổng Tư Lệnh" not "Trump", "Thủ Tướng Sắt" not "Netanyahu"), (b) describe **physical appearance only** — distinctive hair, face shape, build, clothing style — without naming who it is, (c) `narrator_text` may use real titles/roles for storytelling but real names never flow into image/video generation. Keep a `real_reference` mapping in the project plan file (`.omc/research/`) for internal tracking.
 16. **Review before upscale** — ALWAYS run `/fk-review-video` (light mode) after video generation, before upscaling. Scenes scoring < 7.5 get `video_prompt` updated from review errors, then regen video. Max 2 review-regen cycles.
 17. **Auto-retry failed videos (up to 5x)** — When generating videos, any failure or timeout MUST be automatically retried up to 5 times. If failed due to content filters (e.g. `as29s failed: [5]`), auto-sanitize prompt keywords and call `REGENERATE_IMAGE` to get a fresh start frame before regenerating the video.
-18. **Immediate rolling download to `scenes/`** — As each scene video completes, immediately download it to `${OUTDIR}/scenes/scene_{idx}_{sid}.mp4` so clips are stored locally on disk right away.
+18. **Immediate rolling download & Watermark Removal** — As each scene video completes, immediately download it to `${OUTDIR}/scenes/scene_{idx}_{sid}.mp4`, and immediately run `remove_watermark_video` (via `python tools/remove_watermark_from_link.py`) to produce a clean version without Google logo or SynthID. All review and concat steps MUST use clean, watermark-free videos.
 19. **Mandatory review & Review Board** — Pipeline skills (`/fk-pipeline`, `/fk-gen-videos`) MUST automatically execute `/fk-review-video` immediately after video generation, display the per-scene scorecard table showing which nodes passed and which need regeneration, and ensure the Review Board web app (`python tools/review_server.py 8200`) is running.
 20. **Language matching for SEO & Thumbnails** — YouTube metadata (`/fk-youtube-seo`) and thumbnails (`/fk-thumbnail`) MUST match the dialogue/script language (e.g. 100% Japanese for Japanese POV vlogs, Vietnamese for Vietnamese, English for English). Never generate English/Vietnamese SEO for Japanese dialogue vlogs.
 21. **Flush stale queue on new project** — whenever starting or creating a new project (e.g. `/fk-create-project`, `/fk-vlog-japan`, `/fk-time-travel-vlog`), ALWAYS execute `python -c "import sqlite3; conn = sqlite3.connect('flow_agent.db'); conn.execute('UPDATE request SET status=\\'FAILED\\' WHERE status=\\'PENDING\\''); conn.commit()"` first to flush all stale PENDING requests and prevent worker auto-retry loops causing `PUBLIC_ERROR_UNUSUAL_ACTIVITY`.
 22. **Mandatory Scene Image Review before Video Generation** — After generating scene images (Step 6), ALWAYS download images locally to `${OUTDIR}/images/scene_{idx}.jpg`, launch the Image Review Board (`review_images.html`), and pause for user review. Never jump directly into video generation without user approval of the scene start frames. Any unsatisfactory images MUST be resubmitted with `REGENERATE_IMAGE`.
 23. **Start Frame is Input Reference Only** — The generated scene image (`start_image_media_id` / start frame) serves strictly as the motion starting anchor. Character identity consistency still requires character reference images (`character_names` + `reference_media_ids` / `imageInputs`) to preserve the locked visual identity across the video.
 24. **Achernar Voice Profile** — For female travel vloggers / narrators, configure `voice_description` using the **Achernar** profile (Google Gemini-TTS: soft, higher-pitched, natural expressive conversational female voice, casual vlog tone, breathy when amazed, hushed whisper when nervous). Structure video prompt dialogue accordingly (`Mia says "..."`) so Veo 3 / Pinhole synthesizes matching native vocal audio. In Omni Flash / Pinhole Reference-to-Video (`MZZa6b`), Slot 7 is natively pinned to `[["achernar"]]` by default.
+25. **Strict Step-by-Step Review Gates (Images then Videos)** — Pipeline execution MUST proceed strictly step-by-step with explicit human review gates:
+    - **Step 6.5 (Image Review Gate)**: As soon as scene images are generated, STOP immediately. Clean image watermarks, download all images to `${OUTDIR}/images/scene_{idx}.jpg`, present the image gallery/review board to the user, and PAUSE. Do NOT generate videos until the user explicitly reviews and approves the start frames.
+    - **Step 7.5 (Individual Video Review Gate)**: As soon as scene videos are generated, STOP immediately. Rolling download each clip to `${OUTDIR}/scenes/scene_{idx}_{sid}.mp4`, run `remove_watermark_video` to remove logo/SynthID, launch Review Board (`http://localhost:8200`), and present every individual unconcatenated clean scene video to the user for review. Do NOT proceed to concatenation (`/fk-concat`) until the user has reviewed and approved each individual scene video clip.
+26. **Character Anchor in Start Frame (No Mid-Clip Pop-in)** — If a video scene requires a character to act, move, or speak on camera, that character MUST be physically present in the start frame image (`start_image_media_id`). AI video models (Veo 3 / Image-to-Video) CANNOT reliably synthesize a new person mid-clip without severe visual artifacts (pop-in flicker, distorted faces, duplicate bodies, melting limbs). NEVER prompt for an empty environment start frame and then instruct "Mia steps into frame" or "Mia walks into view" in the video prompt. The start frame must already anchor the character in position (front-facing, profile, over-the-shoulder, or seated); the video prompt then only directs their subsequent motion and speech.
 """
 
 _PIPELINE_OVERVIEW = """\
@@ -136,17 +140,18 @@ _PIPELINE_OVERVIEW = """\
                      Wait for done=true, verify all entities have media_id
 6. Gen scene images  POST /api/requests/batch → poll /batch-status?video_id=<VID>
                      Wait for done=true, verify image_media_id = UUID
-6.5 Review images    MANDATORY! Download to images/ & open review_images.html.
-                     User reviews start frames → REGENERATE_IMAGE for any needed scenes.
-7. Gen videos        POST /api/requests/batch (only after scene images are approved)
-                     Auto-retry failed videos up to 5x; auto-download completed clips to scenes/
-7.5 Review videos    POST /api/videos/{vid}/review?mode=light (AI vision quality check)
-                     Auto-triggered immediately! Displays per-node scorecard table.
-                     Pass: score >= 7.5 | Fail: update video_prompt → regen → re-review (max 2 cycles)
-                     Launch Review Board: python tools/review_server.py 8200
+6.5 Review images    MANDATORY GATE! Download to images/ & open review_images.html.
+                     STOP & PAUSE: Present images to user for manual review.
+                     Do NOT start video generation until user approves start frames!
+7. Gen videos        POST /api/requests/batch (ONLY after user approves scene images)
+                     Auto-retry failed videos up to 5x; rolling download clips to scenes/
+7.5 Review videos    MANDATORY GATE! Present EACH individual unconcatenated scene video to user.
+                     Display per-scene scorecard table + Review Board (http://localhost:8200).
+                     STOP & PAUSE: User reviews each scene clip individually.
+                     Do NOT proceed to concat until user approves all individual scene videos!
 8. (Optional) 4K     POST /api/requests/batch (TIER_TWO only)
 9. (Optional) TTS    Create voice template → POST /api/videos/{vid}/narrate
-10. Concat           ffmpeg normalize + concat
+10. Concat           ffmpeg normalize + concat (ONLY after all scene videos are approved)
 11. SEO & Thumbnails Auto-match script language (e.g. 100% native Japanese for Japanese POV vlog)
 ```
 """
