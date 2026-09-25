@@ -602,11 +602,16 @@ class OperationService:
             operations = [{"operation": {"name": existing_op}, "status": "MEDIA_GENERATION_STATUS_PENDING"}]
             return await _poll_operations(self._client, operations)
 
-        submit_result = await self._client.generate_video_from_references(
+        # Veo r2v was never captured on the batch transport, so Omni Flash
+        # Ingredients (abra_r2v_8s) is the only r2v that renders. Its submit
+        # returns the same operations shape, so polling below is unchanged.
+        from agent.services.omni_flash import generate_omni_flash_video
+        submit_result = await generate_omni_flash_video(
             reference_media_ids=ref_ids,
             prompt=prompt,
             project_id=pid,
             scene_id=scene.get("id", ""),
+            duration_s=8,
             aspect_ratio=aspect,
             user_paygate_tier=tier,
         )
