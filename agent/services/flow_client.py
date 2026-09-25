@@ -847,7 +847,7 @@ class FlowClient:
                                               aspect_ratio: str = "VIDEO_ASPECT_RATIO_PORTRAIT",
                                               user_paygate_tier: str = "PAYGATE_TIER_TWO",
                                               duration_s: int = 10,
-                                              voice_id: str | None = None) -> dict:
+                                              voice_id: str | None = "achernar") -> dict:
         """Generate video from multiple reference images (r2v) using Omni Flash / Pinhole Ingredients (MZZa6b)."""
         if not reference_media_ids:
             return {"error": "No reference media_ids for r2v"}
@@ -861,7 +861,7 @@ class FlowClient:
                 duration_s=duration_s,
                 aspect_ratio=aspect_ratio,
                 user_paygate_tier=user_paygate_tier,
-                voice_id=voice_id,
+                voice_id=voice_id or "achernar",
             )
         except Exception as exc:
             logger.error("Failed to generate omni r2v video: %s", exc)

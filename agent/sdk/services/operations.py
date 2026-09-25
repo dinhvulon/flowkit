@@ -650,6 +650,8 @@ class OperationService:
                         break
         if not voice_id and project and project.get("narrator_voice"):
             voice_id = str(project["narrator_voice"]).strip().lower()
+        if not voice_id:
+            voice_id = "achernar"
 
         submit_result = await self._client.generate_video_from_references(
             reference_media_ids=ref_ids,

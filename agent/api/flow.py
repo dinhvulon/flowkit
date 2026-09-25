@@ -62,7 +62,7 @@ class GenerateVideoRefsRequest(BaseModel):
     model_family: Literal["veo", "omni_flash"] = "veo"
     duration_s: int = 8
     resolution: Literal["360p", "720p"] = "720p"
-    voice_id: Optional[str] = None
+    voice_id: Optional[str] = "achernar"
 
 
 class GenerateOmniFlashVideoRequest(BaseModel):
@@ -74,7 +74,7 @@ class GenerateOmniFlashVideoRequest(BaseModel):
     resolution: Literal["360p", "720p"] = "720p"
     aspect_ratio: str = "VIDEO_ASPECT_RATIO_PORTRAIT"
     user_paygate_tier: str = "PAYGATE_TIER_ONE"
-    voice_id: Optional[str] = None
+    voice_id: Optional[str] = "achernar"
 
 
 class GenerateOmniFlashTextVideoRequest(BaseModel):
