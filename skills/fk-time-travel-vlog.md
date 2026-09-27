@@ -94,7 +94,10 @@ Voice: Achernar — soft, higher-pitched, natural expressive conversational fema
 ```
 Tên trong `CHARACTER_LOCK`, tên entity và tên người nói trong `video_prompt` phải **trùng nhau tuyệt đối** (mẫu gốc có chỗ lệch Nora/Mia — đừng lặp lại lỗi đó).
 
-**Trang phục theo ảnh ref (góp ý của user, đã kiểm chứng):** với R2V, quần áo của vlogger **lấy từ ảnh ref**, không lấy từ chữ trong `CHARACTER_LOCK`. Vlogger **mặc đồ hiện đại theo ảnh ref là chấp nhận được**, không bắt buộc đồ thời kỳ. Yếu tố "người lạ" nằm ở ngoại hình + gậy selfie + trang phục khác dân bản địa. Chỉ khi user yêu cầu đồ thời kỳ thì mới sinh thêm ảnh ref nhân vật mặc đồ thời kỳ (giống node `img-char-period` trong template import, Bước 4.9), và không thêm câu tả trang phục vào prompt để "ép" khi ảnh ref đang mặc đồ khác.
+**Trang phục theo ảnh ref & Bắt buộc tạo Entity Trang phục riêng (`<Vlogger> Outfit`) (góp ý của user, bài học S31):** với R2V, quần áo của vlogger **lấy từ ảnh ref**, không lấy từ chữ trong `CHARACTER_LOCK`. Để tránh việc AI tự động đổi trang phục, sai kiểu dáng hoặc biến dạng quần áo giữa các cảnh (đặc biệt các cảnh toàn hoặc cảnh thảm họa):
+- **BẮT BUỘC tạo entity riêng cho Trang phục** (`name: "<Vlogger> Outfit"`, `entity_type: visual_asset`), ví dụ: `Mia Outfit`.
+- Sinh hoặc upload một ảnh reference chuẩn thời kỳ (chụp váy chiton/tunic trên giá treo hoặc chụp thẳng toàn thân sạch nền).
+- Đính kèm `<Vlogger> Outfit` vào danh sách Ingredients (`character_names`) của mọi scene vlogger xuất hiện để khóa cứng 100% trang phục xuyên suốt cả video.
 
 ### 3. Strict Ethnicity Lock & Period Lock
 - Mọi người xuất hiện trong khung (người đi đường, người bán hàng, lính canh, quý tộc) phải **đúng chủng tộc bản địa của thời kỳ/địa điểm đó** — nghiên cứu qua `/fk-research` trước khi viết `description`.
@@ -344,6 +347,27 @@ Rút ra từ dự án `output/atlantis-9600bc/` (2026-09-27). Khi mâu thuẫn v
 20. **Ghi rõ hướng và tốc độ của mọi thứ đang di chuyển** (thuyền, xe, ngựa, người chạy): đi về đâu, nhanh cỡ nào, và hệ quả trong khung hình (ví dụ `the boat moves only at slow rowing speed and away from the city, so the city stays the same size or slowly shrinks and never gets closer`). Tả cả chuyển động vật lý thật (thuyền nhấp nhô và lắc theo sóng, không lướt đi; người chèo ngồi quay mặt về phía đuôi thuyền). Bỏ trống thì model chọn kiểu kịch tính và sai vật lý (lỗi S31 Atlantis: thuyền chèo lao về phía thành phố như thuyền máy).
 
 21. **Bảng vật lý phải được user duyệt trước khi viết Clip JSON** (mục Định dạng output, bước 5b): mỗi clip ghi máy đặt ở đâu và nhìn về đâu, có gì trong khung ở giây 0, mọi vật di chuyển (hướng, tốc độ, hệ quả trong khung), chuyển động vật lý thật, và ai hoặc cái gì rời khung bằng cách nào. Nội dung bảng được viết thành câu trong `video_prompt` (quy tắc 19, 20). Đây là chỗ bắt lỗi vật lý rẻ nhất: sửa trên giấy, không tốn credit.
+
+22. **Bắt buộc thêm ảnh Trang phục làm Ref riêng (`<Vlogger> Outfit`) (bài học S31 Atlantis):**
+    - Khi dùng Omni Flash R2V, model rất dễ tự ý đổi trang phục của nhân vật giữa các cảnh (đặc biệt khi chuyển sang cảnh toàn, cảnh hành động thảm họa, hoặc khi vlogger ở xa).
+    - **Giải pháp bắt buộc:** Luôn tạo 1 entity riêng tên `<Vlogger> Outfit` (ví dụ `Mia Outfit`, `entity_type: visual_asset`), sinh hoặc upload 1 ảnh mẫu chụp trang phục hoàn chỉnh (váy chiton/tunic trên giá ma-nơ-canh hoặc chụp thẳng toàn thân tách biệt), và đính kèm vào Ingredients (`character_names`) của mọi scene nhân vật xuất hiện.
+
+23. **Tuyệt đối CẤM từ khóa `selfie-stick` và mô tả cầm điện thoại (bài học S11, S17, S20 Atlantis):**
+    - Từ khóa `selfie-stick` hay `smartphone selfie` làm AI vẽ thêm 1 chiếc gậy selfie trong tay, hoặc vẽ 1 chiếc điện thoại/màn hình điện thoại bay lơ lửng trước ống kính (hiện tượng quay màn hình điện thoại).
+    - **Chuẩn thay thế:** Dùng `Handheld front-camera vlog footage, ultra-wide 0.5x lens, slight wide-angle barrel distortion`. Tả cánh tay: `Mia holds the camera at arm's length with her right arm extended toward the bottom-right corner of the frame.`
+    - **Khóa câu khẳng định bắt buộc:** `The camera is the phone itself recording from Mia's hand, so the viewer looks directly at Mia; absolutely no phone, no phone body, no phone screen, no UI or app overlay, no case, and no selfie stick appear anywhere in the shot.`
+
+24. **100% First-Person POV không vẽ thiết bị hay thao tác sai vật lý (bài học S12, S16, S34 Atlantis):**
+    - Khi quay POV (nhúng tay thử nước, bước qua cầu, nhìn xuống mặt nước): Người xem nhìn thẳng qua mắt vlogger. Vlogger đứng hoàn toàn sau camera, hai tay giữ máy ở tầm ngực.
+    - Chỉ có **1 bàn tay không** (trống trơn, không cầm gì) vươn vào mép dưới khung hình để tương tác (chạm nước, nhặt đá, chỉ tay).
+    - CẤM mô tả "cầm gậy rồi thả ra rồi cầm điện thoại" hoặc vẽ bàn tay cầm điện thoại khác; cấm để điện thoại nổi lơ lửng trên mặt nước. Khóa câu: `First-person point-of-view shot. Mia is completely behind the camera holding it firmly; only her bare empty hand enters the lower frame. Absolutely no phone, no device, and no selfie stick appear anywhere in the frame.`
+
+25. **Vật lý cầm máy khi chạy tháo chạy và nhảy — Running & Action Leap Physics (bài học S27, S30 Atlantis):**
+    - **Khi chạy trốn (S27):** Vlogger vlogging cuộc tháo chạy của mình thì **PHẢI LUÔN NẮM CHẶT CAMERA QUAY MẶT MÌNH**. Cấm để AI cho nhân vật buông tay, vứt điện thoại hay chạy xa khỏi camera. Tả: `Mia clutches the camera firmly in her right hand at arm's length pointed continuously at her face; she NEVER drops, releases, or lets go of the camera. The camera shakes violently with her sprint.`
+    - **Khi nhảy (S30):** Vlogger một tay nắm chặt máy nhảy xuống thuyền; camera trải qua một cú giật nảy giật dọc cực kỳ thực tế khi tiếp đất trên sàn thuyền gỗ. Cấm buông máy/gậy trước khi nhảy.
+
+26. **Khóa cố định nền đất cho cảnh trên cạn (bài học S11 Atlantis):**
+    - Với các cảnh đứng trên bờ đá, suối khoáng, thềm gạch: Bắt buộc ghi rõ `Mia stands firmly on a solid stone terrace/ground; zero vehicle or boat motion; background structures remain completely static`. Tránh mô tả chung chung về nước chảy khiến AI làm nền trôi bồng bềnh như đang trên thuyền hay cầu di chuyển theo thuyền.
 
 **Nội dung**
 17. Vlogger mặc đồ hiện đại theo ảnh ref là chấp nhận được (mục 2).
