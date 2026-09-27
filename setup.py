@@ -134,6 +134,11 @@ _CRITICAL_RULES = """\
       2. Chạy ngay `python tools/remove_watermark_from_image.py "${OUTDIR}/images/scene_{idx}_{sid}.jpg"` để xóa sạch logo và SynthID ➔ sinh ra file `scene_{idx}_{sid}_clean.jpg`.
       3. Upload file sạch `scene_{idx}_{sid}_clean.jpg` ngược lên Google Flow qua `POST /api/flow/upload-image` để nhận một `media_id` UUID hoàn toàn sạch logo.
       4. Cập nhật `media_id` sạch này vào Scene (`horizontal_image_media_id` / `vertical_image_media_id`), đưa lên Review Board cho user duyệt. CHỈ SAU ĐÓ mới dùng `media_id` sạch này để sinh video!
+29. **Confirm before every generation step (overrides the automatic parts of rules 16, 17, 19)** — Generation spends Flow credits, so:
+    - **Before** any call that makes Flow generate media (`/fk-gen-refs`, `/fk-gen-images`, `/fk-gen-videos`, `GENERATE_*` / `REGENERATE_*` batches, test clips, retries, review-driven regens), state what will be generated and how many items, then **wait for the user's explicit yes**.
+    - **After** each generation step finishes, STOP: show the results for review and wait for approval before starting the next stage (refs → videos → regens → concat).
+    - Failures and low review scores are **reported, not auto-retried**: propose the fix (sanitized prompt, regen list) and ask before resubmitting.
+    - Non-generating work (creating projects/scenes, uploading existing images, PATCHing fields, downloading, watermark removal) can proceed when the user asks for it.
 """
 
 _PIPELINE_OVERVIEW = """\

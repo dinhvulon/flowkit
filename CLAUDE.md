@@ -23,6 +23,7 @@ page can sign a Flow request, so nothing works headless.
 - **On any pipeline error** (request `FAILED`, stuck `PROCESSING`, `extension_connected: false`, HTTP 4xx/5xx from `:8100`, YouTube `HttpError`, error strings like `UNSAFE_GENERATION` / `not found` / `CAPTCHA` / `NO_AT_TOKEN` / `NO_FLOW_PROJECT` / `UNSUPPORTED_ON_BATCH_API`): invoke `/fk-doctor` before guessing a fix
 - **Flush stale queue on new project**: whenever starting a new project, always flush stale PENDING requests first: `python -c "import sqlite3; conn = sqlite3.connect('flow_agent.db'); conn.execute('UPDATE request SET status=\'FAILED\' WHERE status=\'PENDING\''); conn.commit()"`
 - `flow_key_present: false` is **normal** — the current transport has no bearer token
+- **Confirm before every generation step.** Before any call that makes Flow generate media (refs, scene images, videos, test clips, retries, regens), say what and how many, then wait for the user's yes. After each generation step, stop for review and approval before the next stage. Report failures instead of auto-retrying. This overrides any skill text that says to auto-retry, auto-regen or run stages back-to-back.
 
 ## Since Flow moved (September 2026)
 
@@ -38,7 +39,7 @@ that change how you work:
   `UNSUPPORTED_ON_BATCH_API` rather than silently producing the wrong thing.
   r2v (`GENERATE_VIDEO_REFS`) always runs as Omni Flash Ingredients
   (`MZZa6b` + `abra_r2v_<N>s`); `N` comes from the scene's `duration`
-  (4/6/8/10) and has no default. Omni also covers frame and first+last — use
+  (4/6/8/10); a missing or invalid `duration` silently becomes 10s — always PATCH it. Omni also covers frame and first+last — use
   `model_family=omni_flash`. `FLOW_ALLOW_DEGRADED=1` (exactly `1`; `true` counts as off) drops Veo
   chaining to plain i2v; video upscale has no fallback. See `docs/CAPTURE.md`.
 - **A poll saying "Media not found." is not a failure.** Finished jobs report it.

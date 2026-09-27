@@ -76,7 +76,7 @@ Server chỉ đọc biến môi trường **một lần lúc khởi động**. V
   python -m agent.main
   ```
 - `FLOW_PROJECT_ID` (tuỳ chọn): uuid project Flow lấy ở Bước 0.3, dùng làm project mặc định cho các lệnh nội bộ cũ. Muốn một project FlowKit gắn vào project Flow có sẵn thì truyền `flow_project_id` khi tạo project.
-- `FLOW_ALLOW_DEGRADED="1"`: **chỉ nhận đúng `1`** — `"true"` bị coi là tắt. Cho phép Veo chaining (start+end frame) và Veo r2v hạ xuống i2v thường (từ ảnh ref đầu tiên) thay vì báo `UNSUPPORTED_ON_BATCH_API`. r2v thật (nhiều ref) chạy qua Omni Flash `abra_r2v_<N>s`: `/api/flow/generate-video-omni` hoặc `model_family=omni_flash`. Bước r2v trong `/fk-pipeline` (request `GENERATE_VIDEO_REFS`) cũng chạy qua Omni Flash. `N` lấy từ trường `duration` của scene (4/6/8/10), **không có mặc định**: scene thiếu `duration` sẽ báo lỗi.
+- `FLOW_ALLOW_DEGRADED="1"`: **chỉ nhận đúng `1`** — `"true"` bị coi là tắt. Cho phép Veo chaining (start+end frame) và Veo r2v hạ xuống i2v thường (từ ảnh ref đầu tiên) thay vì báo `UNSUPPORTED_ON_BATCH_API`. r2v thật (nhiều ref) chạy qua Omni Flash `abra_r2v_<N>s`: `/api/flow/generate-video-omni` hoặc `model_family=omni_flash`. Bước r2v trong `/fk-pipeline` (request `GENERATE_VIDEO_REFS`) cũng chạy qua Omni Flash. `N` lấy từ trường `duration` của scene (4/6/8/10), scene thiếu `duration` (tạo scene qua `POST /api/scenes` không nhận trường này) sẽ **âm thầm sinh clip 10s**, nên phải `PATCH /api/scenes/<id>` với `{"duration": 8}`.
 
 Kiểm tra server đã nhận đúng cấu hình:
 ```powershell
@@ -203,8 +203,8 @@ Nếu bạn muốn đóng vai Vlogger chính trong chuyến du hành thay vì đ
 |---|---|
 | Mỗi scene dùng **tối đa 3 ref**: entity `character` trước, sau đó đến `visual_asset` | `character_names` của scene chỉ nên có 1–3 tên, nhân vật chính đứng đầu |
 | Entity `location` **bị bỏ qua** (chỉ dùng khi scene không có ref nào khác) | Công trình hoặc bối cảnh cần giữ nhất quán thì khai báo là `visual_asset` |
-| Scene bắt buộc có `duration` (4/6/8/10) | Thêm `"duration": 8` khi tạo scene |
-| Voice lấy theo **từ đầu tiên** của `voice_description` | Viết `voice_description` bắt đầu bằng tên voice, ví dụ `Achernar — soft, …` |
+| Scene thiếu `duration` sẽ **mặc định 10s** (không báo lỗi); `POST /api/scenes` không nhận trường này | Tạo scene xong thì `PATCH` thêm `{"duration": 8}` |
+| Mỗi clip chỉ có **1 giọng**, lấy từ **từ đầu tiên** của `voice_description` của entity **đầu tiên (theo thứ tự trong DB, không phải thứ tự trong `character_names`)** có khai báo voice | Viết `voice_description` bắt đầu bằng tên voice, ví dụ `Achernar — soft, …`. **Chỉ nhân vật chính có `voice_description`**, nếu không giọng nhân vật phụ sẽ đè lên thoại của nhân vật chính |
 
 ---
 

@@ -415,6 +415,10 @@ Nếu muốn dùng khuôn mặt thật làm Vlogger thay vì mặt AI:
 
 ### Bước 4: Sinh Ảnh Scene → Review → Sinh Video
 
+> [!IMPORTANT]
+> **Xác nhận trước mỗi bước sinh.** Trước bất kỳ bước nào khiến Flow sinh media (ảnh ref, video, clip chạy thử, thử lại, sinh lại), nói rõ sẽ sinh gì, bao nhiêu cái, rồi chờ user đồng ý. Xong mỗi bước sinh thì DỪNG, đưa kết quả cho user duyệt, chỉ sang bước sau khi được đồng ý. Clip lỗi hoặc điểm review thấp thì báo cáo kèm đề xuất sửa, không tự sinh lại. Quy tắc này ưu tiên hơn mọi chỗ ghi "tự động chạy tiếp" trong skill (xem CLAUDE.md, AGENTS.md rule 29).
+
+
 Pipeline chia **2 phase** với cửa review bắt buộc ở giữa. Không bao giờ sinh video trực tiếp từ prompt chưa được kiểm tra ảnh — ảnh xấu thì video chắc chắn xấu theo.
 
 #### Phase A — Sinh Refs + Ảnh Scene

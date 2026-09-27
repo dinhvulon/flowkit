@@ -4,6 +4,9 @@ Auto-detect project state and run the correct stages (continuation or full run).
 
 Usage: `/fk-pipeline [project_id] [orientation] [options]`
 
+> [!IMPORTANT]
+> **Confirm before every generation step.** Before any stage that makes Flow generate media (refs, scene images, videos, test clips, retries, review-driven regens), state what and how many items, then wait for the user's explicit yes. After each generation stage, STOP and show the results for review; start the next stage only after approval. Failures and low review scores are reported with a proposed fix, not auto-retried. This overrides the auto-retry / auto-regen / back-to-back behavior described below (see CLAUDE.md, AGENTS.md rule 29).
+
 Options:
 - `--r2v` — direct Reference-to-Video mode (`abra_r2v_8s`). Skips Stage 1 (Scene Images) and generates videos directly from reference entity images (uploaded via `/fk-upload-ref` or Stage 0) using RPC `MZZa6b`.
 - `--upscale` — include 4K upscale stage. **Unavailable since Flow moved** — no upsampler rpc has been captured on `flow.google.com`, so every upscale fails `UNSUPPORTED_ON_BATCH_API` (terminal, not retried). Warn the user and run without it; the 1080p render is the deliverable. See `docs/CAPTURE.md`.
