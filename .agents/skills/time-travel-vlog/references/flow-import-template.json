@@ -1,0 +1,255 @@
+{
+  "version": 1,
+  "name": "<Tên tập - Địa điểm Năm>",
+  "meta": {
+    "concept": "<một câu: ai, du hành về đâu, năm nào>",
+    "author": "skill:kich-ban-vlog",
+    "target_market": "TikTok Vietnam, history / edutainment",
+    "style": "photorealistic smartphone-shot (modern smartphone) POV selfie vlog, handheld, 28mm wide-angle, deep focus front-to-back, cool neutral documentary grade",
+    "time_capsule": "<địa điểm>, <năm> — <vibe>",
+    "total_duration_target": "64s (8 clip x 8s: 4 clip nói + 4 clip B-roll xen kẽ)"
+  },
+  "characters": [
+    {
+      "id": "char-main",
+      "name": "<tên nhân vật>",
+      "role": "vlogger",
+      "voiceId": "leda",
+      "voiceDesc": "A vibrant, emotionally dynamic young Vietnamese female Gen Z vlogger (21-23 years old) with a natural Southern Vietnamese (Saigon / Can Tho) accent. Highly expressive vocal delivery with dramatic pitch variations, natural breath intakes, and reactive emotional cadence. Her voice transitions vividly between bewildered panic with sudden sharp pitch jumps, hushed conspiratorial whispering with audible tension, and bouncy celebratory excitement with cheerful giggles. Colloquial Gen Z inflection, punchy rhythm, articulate enunciation, and strictly ZERO monotone flatness or broadcaster stiffness. Deeply engaging, authentic, reactive, and bursting with personality.",
+      "voicePerformance": "Giọng nữ Gen Z miền Nam tầm 21-23 tuổi, cực kỳ sống động, giàu cảm xúc kịch tính, ngữ điệu biến hóa linh hoạt theo từng tình huống. Diễn xuất giọng nói đa tầng bậc: khi bàng hoàng giật mình thì giọng lên bổng xuống trầm, hơi thở dồn dập, ngơ ngác chân thật; khi hoảng sợ thì hạ thấp giọng thì thầm nghẹn lại căng thẳng; khi vui mừng thì reo vui nảy nở đầy phấn khích, cười tươi qua từng âm sắc. Nhả chữ tự nhiên, sắc sảo, dứt khoát chuẩn vlogger trẻ tràn đầy năng lượng, có nhịp nhấn nhá, ngắt nghỉ, lấy hơi sống động như người thật đang trải qua biến cố thực tế. Tuyệt đối không đọc đều đều, không nhang nhang một màu, không đọc ru ngủ hay thủ thỉ chậm rãi.",
+      "voiceSampleLines": [
+        "<câu thực tế clip 1>",
+        "<câu thực tế clip 3>",
+        "<câu thực tế clip 7>"
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "id": "img-char-base",
+      "kind": "upload",
+      "position": { "x": 40, "y": 40 },
+      "assetType": "character",
+      "title": "👤 Ref Photo — <tên> (ảnh mặt thật, upload)",
+      "file": "kich-ban-vlog/<slug>/base-ref/<ten>-face.jpg"
+    },
+    {
+      "id": "img-outfit-modern",
+      "kind": "upload",
+      "position": { "x": 40, "y": 500 },
+      "assetType": "outfit",
+      "title": "👗 Outfit Ref — Đồ hiện đại (ảnh thật, upload)",
+      "file": "kich-ban-vlog/<slug>/base-ref/outfit-modern.jpg"
+    },
+    {
+      "id": "img-outfit-period",
+      "kind": "image",
+      "position": { "x": 40, "y": 960 },
+      "assetType": "outfit",
+      "displayName": "Outfit — Trang phục thời kỳ",
+      "title": "👘 Outfit — Trang phục thời kỳ (ma-nơ-canh không đầu)",
+      "promptParts": [
+        {
+          "kind": "text",
+          "text": "Product photograph of a complete <thời kỳ> costume displayed on a plain headless mannequin, NO FACE, NO HEAD, no person, front view, centred on a plain light grey seamless background, soft even studio light, cool neutral white balance.\n- Robe: <tên gọi + chất liệu + màu + cách buộc>\n- Over-layer: <...>\n- Footwear: <...>\nMuted period-accurate fabric colours, visible weave and real fabric texture, honest wear. One outfit only, one single frame, no text, no labels, no watermark, crisp 4K, NOT a 3D render, NOT CGI."
+        }
+      ],
+      "refImageIds": [],
+      "aspectRatio": "9:16",
+      "imageCount": 1,
+      "images": [],
+      "selectedImageIndex": 0,
+      "imageModelName": "NARWHAL"
+    },
+    {
+      "id": "img-char-modern",
+      "kind": "image",
+      "position": { "x": 580, "y": 40 },
+      "assetType": "character",
+      "displayName": "Nhân vật — Đồ hiện đại",
+      "title": "👤 Nhân vật — Đồ hiện đại (ảnh ngang lưng, rõ mặt)",
+      "promptParts": [
+        {
+          "kind": "text",
+          "text": "Authentic photorealistic smartphone photograph of ONE single woman, shot on an modern smartphone camera at eye level, 28mm natural wide-angle. TIGHT WAIST-UP FRAMING (chest-to-waist up) - she stands upright and relaxed facing the camera, front view, looking straight into the lens, her head and upper torso filling most of the 9:16 vertical frame, minimal headroom with the top of her head near the top of the frame, zero wasted empty space above her head. Her face is large and clearly readable in frame. NOT a full-body shot, NOT a distant shot, do NOT show her legs or feet. Plain light grey seamless studio background, soft even diffused daylight from the front, cool neutral white balance, no harsh shadow on the face. DEEP DEPTH OF FIELD - her face and the background are both sharp, no bokeh, no portrait-mode blur.\n\n[FACE IDENTITY] "
+        },
+        {
+          "kind": "image_ref",
+          "nodeId": "img-char-base",
+          "handle": "FACE REFERENCE"
+        },
+        {
+          "kind": "text",
+          "text": " - FACE REFERENCE: use it as the style reference for her face, hair, skin tone and build - the same early-to-mid-20s woman. Take only her from it, not its room or indoor lighting, and not the clothes she wears in it.\n\n[OUTFIT] "
+        },
+        {
+          "kind": "image_ref",
+          "nodeId": "img-outfit-modern",
+          "handle": "OUTFIT REFERENCE"
+        },
+        {
+          "kind": "text",
+          "text": " - OUTFIT REFERENCE: she wears the garments from this image - read them from the image itself, they are not described in words here. Take ONLY the clothes from it, nothing else: not its face, not its hair, not its body, not its layout, and not its smooth 3D-rendered look if it has one. Whatever belongs below her waist stays out of frame.\n\nONE woman only, one single frame - no panel, no split screen, no grid, no text, no watermark. Natural skin texture with visible pores and subtle asymmetry, crisp 4K, NOT a 3D render, NOT CGI, no beauty-filter smoothing."
+        }
+      ],
+      "refImageIds": ["img-char-base", "img-outfit-modern"],
+      "aspectRatio": "9:16",
+      "imageCount": 1,
+      "images": [],
+      "selectedImageIndex": 0,
+      "imageModelName": "NARWHAL"
+    },
+    {
+      "id": "img-char-period",
+      "kind": "image",
+      "position": { "x": 580, "y": 500 },
+      "assetType": "character",
+      "displayName": "Nhân vật — Trang phục thời kỳ",
+      "title": "👘 Nhân vật — Trang phục thời kỳ (ảnh ngang lưng, rõ mặt)",
+      "promptParts": [
+        {
+          "kind": "text",
+          "text": "<CHÉP Y HỆT part đầu của img-char-modern>\n\n[FACE IDENTITY] "
+        },
+        {
+          "kind": "image_ref",
+          "nodeId": "img-char-modern",
+          "handle": "FACE REFERENCE"
+        },
+        {
+          "kind": "text",
+          "text": " - FACE REFERENCE: use it as the style reference for her face, hair, skin tone and build - the same early-to-mid-20s woman in the same studio setup. Take only her from it, not the clothes she is wearing in it.\n\n[OUTFIT] "
+        },
+        {
+          "kind": "image_ref",
+          "nodeId": "img-outfit-period",
+          "handle": "OUTFIT REFERENCE"
+        },
+        {
+          "kind": "text",
+          "text": " - OUTFIT REFERENCE: she wears the garments from this image - read them from the image itself, they are not described in words here. Take ONLY the clothes from it, nothing else: not its face, not its hair, not its body, not its layout, and not its smooth 3D-rendered look if it has one. Whatever belongs below her waist stays out of frame. She keeps the hair and the soft everyday makeup she already has in the FACE REFERENCE - worn down and natural, no period hairstyle, no hair ornament, no period makeup.\n\nONE woman only, one single frame - no panel, no split screen, no grid, no text, no watermark. Natural skin texture with visible pores and subtle asymmetry, crisp 4K, NOT a 3D render, NOT CGI, no beauty-filter smoothing."
+        }
+      ],
+      "refImageIds": ["img-char-modern", "img-outfit-period"],
+      "aspectRatio": "9:16",
+      "imageCount": 1,
+      "images": [],
+      "selectedImageIndex": 0,
+      "imageModelName": "NARWHAL"
+    },
+    {
+      "id": "img-start-market",
+      "kind": "image",
+      "position": { "x": 1120, "y": 40 },
+      "assetType": "start_frame",
+      "displayName": "Start frame — Chợ (đồ hiện đại)",
+      "title": "🎬 Start frame — nhân vật đứng giữa chợ (đồ hiện đại)",
+      "promptParts": [
+        {
+          "kind": "text",
+          "text": "<prompt start frame: selfie waist-up + bảng màu/ánh sáng thống nhất + [CHARACTER] >"
+        },
+        {
+          "kind": "image_ref",
+          "nodeId": "img-char-modern",
+          "handle": "CHARACTER REFERENCE"
+        },
+        {
+          "kind": "text",
+          "text": " - CHARACTER REFERENCE: <giữ mặt/tóc/đồ/makeup> ... [HISTORICAL SETTING & ENVIRONMENT] <địa điểm, năm cụ thể> ..."
+        }
+      ],
+      "refImageIds": ["img-char-modern"],
+      "aspectRatio": "9:16",
+      "imageCount": 1,
+      "images": [],
+      "selectedImageIndex": 0,
+      "imageModelName": "NARWHAL"
+    },
+    {
+      "id": "img-start-broll-002",
+      "kind": "image",
+      "position": { "x": 1120, "y": 500 },
+      "assetType": "start_frame",
+      "displayName": "Start frame B-roll — Toàn cảnh chợ",
+      "title": "🎬 Start frame B-roll — khung mở đầu clip 2 (KHÔNG có nhân vật)",
+      "promptParts": [
+        {
+          "kind": "text",
+          "text": "<prompt start frame B-roll, KHÔNG có vlogger>"
+        }
+      ],
+      "refImageIds": [],
+      "aspectRatio": "9:16",
+      "imageCount": 1,
+      "images": [],
+      "selectedImageIndex": 0,
+      "imageModelName": "NARWHAL"
+    },
+    {
+      "id": "vid-001",
+      "kind": "video",
+      "position": { "x": 1660, "y": 40 },
+      "title": "🎬 Clip 1 — Hook: vừa tỉnh dậy giữa quá khứ (8s, nói)",
+      "promptParts": [
+        {
+          "kind": "text",
+          "text": "Camera: Handheld smartphone selfie vlog POV, natural subtle motion. Overcast daylight, documentary realism.\n\n[START FRAME] "
+        },
+        {
+          "kind": "image_ref",
+          "nodeId": "img-start-market",
+          "handle": "Start frame - cho co"
+        },
+        {
+          "kind": "text",
+          "text": " — Frame 0 reference.\n\n[ACTION]\n[00:00-00:08] <hành động> ... she speaks in Vietnamese: <câu hook 1 câu> (no subtitles, no captions, no on-screen text)\n\nAuthentic human motion, real skin texture. No on-screen text, no subtitles, not CGI."
+        }
+      ],
+      "refImageIds": ["img-start-market"],
+      "sources": [{ "imageNodeId": "img-start-market", "imageIndex": 0 }],
+      "voiceId": "leda",
+      "voiceCharId": "char-main",
+      "dialog": "<câu thoại tiếng Việt y hệt trong prompt>",
+      "voicePerformance": "<mô tả diễn xuất giọng cho clip này>",
+      "aspectRatio": "9:16",
+      "videoLength": 8,
+      "model": "abra_r2v_8s"
+    },
+    {
+      "id": "vid-002",
+      "kind": "video",
+      "position": { "x": 1660, "y": 500 },
+      "title": "🎬 Clip 2 — B-roll: toàn cảnh chợ (8s, flycam + voiceover)",
+      "promptParts": [
+        {
+          "kind": "text",
+          "text": "Camera: <...> NO person in frame.\n\n[START FRAME] "
+        },
+        {
+          "kind": "image_ref",
+          "nodeId": "img-start-broll-002",
+          "handle": "Start frame B-roll - flycam cho co"
+        },
+        {
+          "kind": "text",
+          "text": " — Frame 0 reference.\n\n[ACTION]\n[00:00-00:08] <...> An off-screen female voiceover narrates in Vietnamese: <lời dẫn 1 câu> (no subtitles, no captions, no on-screen text)"
+        }
+      ],
+      "refImageIds": ["img-start-broll-002"],
+      "sources": [{ "imageNodeId": "img-start-broll-002", "imageIndex": 0 }],
+      "aspectRatio": "9:16",
+      "videoLength": 8,
+      "model": "abra_r2v_8s"
+    }
+  ],
+  "edges": [
+    { "from": "img-char-base", "to": "img-char-modern", "type": "ref" },
+    { "from": "img-outfit-modern", "to": "img-char-modern", "type": "ref" },
+    { "from": "img-char-modern", "to": "img-char-period", "type": "ref" },
+    { "from": "img-outfit-period", "to": "img-char-period", "type": "ref" },
+    { "from": "img-char-modern", "to": "img-start-market", "type": "ref" },
+    { "from": "img-start-market", "to": "vid-001", "type": "ref" },
+    { "from": "img-start-broll-002", "to": "vid-002", "type": "ref" }
+  ]
+}
