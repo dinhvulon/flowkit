@@ -220,9 +220,9 @@ Viết `transition_in`/`transition_out` thành **câu prompt cụ thể**, khôn
 
 | Kỹ thuật | Cuối clip A (`transition_out`) | Đầu clip B (`transition_in`) |
 |---|---|---|
-| **A. Foreground wipe** ⭐ dùng nhiều nhất | POV: `in the last 1.5 seconds two laborers carry a large wooden log right across the lens from left to right, almost filling the frame` · **Selfie (có vlogger trong khung):** `two porters walk past right behind her; the log swings through the narrow gap between the lens and her face; her face stays visible behind it until the log covers the whole frame in the final half second. She stays in frame the whole clip and never disappears; they pass behind her, never through her` | `opens with a wooden log sliding out of frame to the right very close to the lens, revealing [new place]` |
+| **A. Foreground wipe** ⭐ dùng nhiều nhất — **chỉ cho shot POV** (máy nhìn ra phía trước, không có mặt vlogger) | `in the last 1.5 seconds two laborers carry a large wooden log right across the lens from left to right, almost filling the frame` | `opens with a wooden log sliding out of frame to the right very close to the lens, revealing [new place]` |
 | **B. Look-away / back-of-head** (video mẫu dùng để reveal đại quân) | `she turns her head away from the camera to look behind her, the back of her hair bun fills the frame` | `opens on the back of her head, she turns around to face the camera revealing [new place] behind her` |
-| **C. Swing — lia theo chuyển động** | `a horse gallops past very close, the camera whips right following it, heavy motion blur fills the frame` | `begins mid whip pan with heavy motion blur moving right, settling on [new place]` |
+| **C. Swing — lia theo chuyển động** ⭐ **mặc định cho shot selfie** | `a horse gallops past very close, the camera whips right following it, heavy motion blur fills the frame` | `begins mid whip pan with heavy motion blur moving right, settling on [new place]` |
 | **D. Selfie → POV** (beat xúc giác) | `she leans toward the camera, whispers 'look at this', and points past the lens` | `first-person POV from her eye level, her own hands visible in the lower frame reaching for [object]` |
 | **E. Jump cut khi đi bộ** | cùng nhân vật, cùng góc selfie, cùng hướng đi | bối cảnh đã tiến lên — cắt thẳng, không xử lý gì thêm |
 
@@ -324,7 +324,7 @@ Rút ra từ dự án `output/atlantis-9600bc/` (2026-09-27). Khi mâu thuẫn v
 **Viết `video_prompt`**
 8. **Ràng buộc là câu khẳng định**, không dùng dòng `Negative:` (xem mục 9).
 9. **Điện thoại là máy quay:** luôn có câu `The phone is the camera, so no phone appears anywhere in the frame.` Không viết `she holds the phone up` hay `the phone peeks out` (model sẽ vẽ luôn cái điện thoại). Với POV, cho tay nhân vật bận việc khác (bám mép thuyền, cầm đồ vật).
-10. **Chuyển cảnh selfie bằng vật lướt qua ống kính:** vật đi **giữa ống kính và mặt** nhân vật; nhân vật **không bao giờ biến mất**; vật chỉ che kín khung trong **nửa giây cuối** (mẫu ở mục 7c).
+10. **Shot selfie không dùng vật lướt qua ống kính** (xà gỗ, ngựa…): ở góc selfie, vật phải chen vào khoảng khoảng 60 cm giữa gậy selfie và mặt nên trông như "bay" đến, và model hay xóa luôn nhân vật (user duyệt: không thực tế). Selfie chuyển cảnh bằng **swing/whip pan** (nhân vật xoay gậy lia máy nhanh sang cảnh mới, nhòe chuyển động nửa giây cuối; clip sau mở giữa cú lia rồi dừng lại trên nhân vật ở chỗ mới) hoặc **jump cut**. Foreground wipe chỉ dùng cho shot POV.
 11. **Chống hình kiểu 3D ở cảnh thần thoại hoặc thảm họa** (model chỉ biết những cảnh này qua phim và game):
     - mở prompt bằng khối "footage thật": `raw unedited amateur video, looks like real footage posted online, not a movie`, rung tay, auto-exposure, nhiễu nén, giọt nước trên ống kính, ánh sáng bệt;
     - tả bằng vật liệu có thật (ví dụ "tường ốp tấm đồng đỏ cũ, xỉn màu" thay vì "orichalcum phát sáng"); tên thần thoại chỉ để trong lời thoại;
@@ -337,6 +337,8 @@ Rút ra từ dự án `output/atlantis-9600bc/` (2026-09-27). Khi mâu thuẫn v
 14. Sinh lại một scene R2V đã COMPLETED: PATCH `horizontal_video_status: PENDING` rồi gửi `GENERATE_VIDEO_REFS` (không có `REGENERATE_VIDEO_REFS`).
 15. Ảnh do Flow sinh luôn có logo ✦ ở góc dưới phải (tâm khoảng `(W-98, H-97)`). Xóa bằng `tools/remove_watermark_from_image.py` (đã sửa ngưỡng ngày 2026-09-27), rồi **mở ảnh ra kiểm tra**. Ảnh không phải do Flow sinh (ví dụ bảng ảnh ghép của user) thì tool có thể đoán sai vị trí.
 16. Google chặn sinh tự động (`UNUSUAL_ACTIVITY`) → làm theo Bước 4.9. Đổi tài khoản Google thì phải tạo project mới (project và media thuộc tài khoản đã tạo ra chúng).
+
+19. **Không có gì tự hiện ra giữa clip:** thứ được "reveal" (thành phố, tường thành, tượng…) phải **có mặt từ khung hình đầu**, chỉ lộ ra nhờ nhân vật dịch sang bên hoặc máy xoay tới, và đứng yên một chỗ. Viết rõ vị trí của nó ở giây 0 (ví dụ `to the right of her head, far across the water, the city is already visible on the horizon`) và thêm câu `nothing pops into view`. Nếu tả nó ở mốc thời gian sau, model sẽ cho nó xuất hiện ở mốc đó (lỗi S31 Atlantis).
 
 **Nội dung**
 17. Vlogger mặc đồ hiện đại theo ảnh ref là chấp nhận được (mục 2).
