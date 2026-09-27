@@ -289,6 +289,7 @@ Sau bảng storyboard, viết **Clip JSON cho từng clip 8s** theo mẫu `promp
   "transition_in": "opens with a cart wheel sliding out of frame very close to the lens",
   "transition_out": "foreground wipe: log fills the frame in the final second",
   "join": "CUT — cắt tại khung súc gỗ che kín nhất; CH2-06 mở bằng súc gỗ rời khung sang phải",
+  "physics": "camera: selfie at arm's length facing her, walking forward at walking pace; frame 0: Nora mid-market, stalls both sides; moving: laborers walk left to right at walking pace behind the lens line; Nora never leaves frame except by camera movement",
   "constraints": "The phone is the camera, so no phone appears anywhere in the frame. Nora stays in frame for the whole clip and never disappears. Only Nora speaks. No subtitles or text appear on screen. This looks like real footage, not a movie or a 3D render."
 }
 ```
@@ -340,6 +341,10 @@ Rút ra từ dự án `output/atlantis-9600bc/` (2026-09-27). Khi mâu thuẫn v
 
 19. **Không có gì tự hiện ra giữa clip:** thứ được "reveal" (thành phố, tường thành, tượng…) phải **có mặt từ khung hình đầu**, chỉ lộ ra nhờ nhân vật dịch sang bên hoặc máy xoay tới, và đứng yên một chỗ. Viết rõ vị trí của nó ở giây 0 (ví dụ `to the right of her head, far across the water, the city is already visible on the horizon`) và thêm câu `nothing pops into view`. Nếu tả nó ở mốc thời gian sau, model sẽ cho nó xuất hiện ở mốc đó (lỗi S31 Atlantis).
 
+20. **Ghi rõ hướng và tốc độ của mọi thứ đang di chuyển** (thuyền, xe, ngựa, người chạy): đi về đâu, nhanh cỡ nào, và hệ quả trong khung hình (ví dụ `the boat moves only at slow rowing speed and away from the city, so the city stays the same size or slowly shrinks and never gets closer`). Tả cả chuyển động vật lý thật (thuyền nhấp nhô và lắc theo sóng, không lướt đi; người chèo ngồi quay mặt về phía đuôi thuyền). Bỏ trống thì model chọn kiểu kịch tính và sai vật lý (lỗi S31 Atlantis: thuyền chèo lao về phía thành phố như thuyền máy).
+
+21. **Bảng vật lý phải được user duyệt trước khi viết Clip JSON** (mục Định dạng output, bước 5b): mỗi clip ghi máy đặt ở đâu và nhìn về đâu, có gì trong khung ở giây 0, mọi vật di chuyển (hướng, tốc độ, hệ quả trong khung), chuyển động vật lý thật, và ai hoặc cái gì rời khung bằng cách nào. Nội dung bảng được viết thành câu trong `video_prompt` (quy tắc 19, 20). Đây là chỗ bắt lỗi vật lý rẻ nhất: sửa trên giấy, không tốn credit.
+
 **Nội dung**
 17. Vlogger mặc đồ hiện đại theo ảnh ref là chấp nhận được (mục 2).
 18. User có thể yêu cầu **cảnh mở đầu FPV điện ảnh** (từ không gian lao xuống toàn cảnh thành phố, không có vlogger), là ngoại lệ của luật "mọi shot quay bằng điện thoại". Clip đó dùng ảnh ref toàn cảnh, giữ yên 2–3 giây cuối, và clip sau mở bằng vật lướt qua ống kính để che cú cắt.
@@ -381,6 +386,12 @@ Chỉ học tỉ lệ/nhịp; không sao chép tên, ngoại hình hay lời tho
 3. **Research pack** — bảng beat (mục 4), kèm độ chắc ✅/⚠️.
 4. **Outline theo 7 hồi** + thời lượng từng hồi.
 5. **Bảng storyboard toàn bộ beat** (mục 6).
+5b. **Bảng vật lý từng clip — BẮT BUỘC HỎI USER DUYỆT** (góp ý của user, mục 11 quy tắc 21) trước khi viết Clip JSON. Dùng `AskUserQuestion` hoặc hỏi thẳng trong chat, và chỉ viết Clip JSON / sinh video sau khi user đồng ý hoặc sửa bảng:
+
+   | # | Máy đặt ở đâu, nhìn về đâu | Có gì trong khung ở giây 0 | Vật di chuyển: hướng + tốc độ + hệ quả trong khung | Chuyển động vật lý thật | Ai hoặc cái gì rời khung, bằng cách nào |
+   |---|---|---|---|---|---|
+   | S31 | Trên thuyền chèo, nhìn về sau qua đuôi thuyền | Sau gáy Mia bên trái, thành phố ở chân trời bên phải | Thuyền chèo tay đi chậm, rời xa thành phố → thành phố giữ nguyên hoặc nhỏ dần | Thuyền nhấp nhô và lắc theo sóng; người chèo quay mặt về đuôi thuyền | Mia dịch sang bên; sóng tạt kín ống kính ở giây cuối |
+
 6. **Clip JSON từng clip** (mục 10) — long-form xuất **theo từng hồi, hỏi user xác nhận trước khi sang hồi tiếp**; Shorts xuất hết một lần.
 7. **Ghi chú hậu kỳ + gói YouTube** (Bước 5–6 bên dưới).
 
