@@ -35,14 +35,20 @@ Hệ thống FlowKit hoạt động theo cơ chế cầu nối 3 lớp:
 
 ### 6 Bước Chuẩn Bị & Khởi Chạy (Pre-Flight Checklist)
 
-#### Bước 0.1: Cài / cập nhật Chrome Extension (bản ≥ 0.3.4)
+#### Bước 0.1: Cài / cập nhật Chrome Extension (bản ≥ 0.5.2)
 1. Mở Google Chrome, gõ địa chỉ: `chrome://extensions`
 2. Bật công tắc **Chế độ dành cho nhà phát triển (Developer mode)** ở góc trên bên phải.
 3. Lần đầu: bấm **Tải tiện ích đã giải nén (Load unpacked)** → chọn thư mục `extension/` của dự án (`c:\flowkit\extension`). Icon **Flow Kit** sẽ xuất hiện trên thanh công cụ.
-4. **Đã cài rồi mà vừa pull code mới:** bấm **↻ Reload** trên thẻ Flow Kit (Chrome không tự nạp lại), rồi kiểm tra thẻ ghi **phiên bản 0.3.4 trở lên**.
+4. **Đã cài rồi mà vừa pull code mới:** bấm **↻ Reload** trên thẻ Flow Kit (Chrome không tự nạp lại), rồi kiểm tra thẻ ghi **phiên bản 0.5.2 trở lên**.
 
 > [!IMPORTANT]
-> Extension dưới 0.3.4 lấy mã reCAPTCHA theo cách cũ mà Flow đã từ chối — mọi lệnh tạo ảnh/video đều trả `PUBLIC_ERROR_UNUSUAL_ACTIVITY`. Gặp lỗi này, kiểm tra phiên bản extension trước tiên.
+> Extension dưới 0.5.2 lấy mã reCAPTCHA theo cách cũ mà Flow đã từ chối — mọi lệnh tạo ảnh/video đều trả `PUBLIC_ERROR_UNUSUAL_ACTIVITY`. Gặp lỗi này, kiểm tra phiên bản extension trước tiên.
+>
+> **Vì sao cần 0.5.2 (bản upstream, commit `083fed7`, 2026-09-25):**
+> - Từ khoảng cuối tháng 9/2026, trang Flow nhận ra extension can thiệp vào reCAPTCHA và đánh dấu token là `extension_hijack_detected`. Với extension cũ, mọi request vì thế đều bị từ chối. Bản 0.5.2 xử lý được việc này và nạp script theo cách tương thích với chính sách bảo mật (Trusted Types CSP) mới của trang.
+> - **Hai loại lỗi phía agent:** lỗi có tiền tố `[HIJACK]` là do cơ chế nhận diện extension; agent tạm dừng **30s** và không tính vào số lần thử lại. Lỗi `UNUSUAL_ACTIVITY` **không có** `[HIJACK]` nghĩa là Google chặn phiên, tài khoản hoặc mạng; agent tạm dừng **120s** (xử lý như ở Bước 0.4).
+> - Endpoint `POST /api/flow/clear-hijack` xóa thời gian chờ 30s của lỗi `[HIJACK]` bằng tay. **Chỉ dùng sau khi đã sửa nguyên nhân** (reload extension, F5 tab Flow); không dùng để gửi lại dồn dập.
+> - **Rủi ro:** cách này đi ngược cơ chế Google dùng để phát hiện tự động hóa trên Flow. Tài khoản có thể bị gắn cờ hoặc hạn chế nếu bị phát hiện, và Flow có thể đổi cơ chế bất cứ lúc nào khiến bản 0.5.2 hỏng. Sau mỗi lần pull upstream, kiểm tra lại số phiên bản.
 
 #### Bước 0.2: Đăng nhập Google Flow & Luôn giữ tab mở
 1. Mở tab mới trên Chrome và truy cập: **https://flow.google.com/**
@@ -91,7 +97,8 @@ curl.exe -s http://127.0.0.1:8100/api/flow/status
 >
 > **Lỗi cổng 8100:** Nếu terminal báo `address already in use` hoặc tự tắt ngay, nghĩa là đã có một server FlowKit chạy ngầm từ trước. Kiểm tra `curl.exe -s http://127.0.0.1:8100/api/flow/status`. Nếu `allow_degraded` / `flow_project_id` đã đúng thì dùng tiếp server đó. Nếu sai, tắt server cũ rồi làm lại bước này.
 >
-> **UNUSUAL_ACTIVITY:** FlowKit tự dừng gửi 120s (trả 429) và không tự thử lại request đó. Đừng gửi dồn lại — kiểm tra extension ≥ 0.3.4 rồi gửi lại thủ công.
+> **UNUSUAL_ACTIVITY:** FlowKit tự dừng gửi 120s (trả 429) và không tự thử lại request đó. Đừng gửi dồn lại — kiểm tra extension ≥ 0.5.2 rồi gửi lại thủ công.
+> **Extension đã đúng bản mà vẫn bị** (lỗi xảy ra ngay request đầu tiên, không phải do gửi dồn) thì phiên, tài khoản hoặc mạng đang bị Google gắn cờ. Thử sinh 1 ảnh trực tiếp trên giao diện `flow.google.com`. Nếu giao diện cũng bị chặn, đổi mạng (tắt VPN) hoặc đợi 1–6 giờ. Nếu giao diện sinh được, xóa cookie `google.com` + `labs.google`, đăng nhập lại, rồi chạy thử 1 request trước khi gửi cả batch.
 
 #### Bước 0.5: Kiểm tra kết nối Health Check (Bắt Buộc)
 Mở một cửa sổ terminal mới và chạy:
@@ -106,9 +113,9 @@ Mở một cửa sổ terminal mới và chạy:
   ```
 **Kết quả bắt buộc phải có:**
 ```json
-{"status": "ok", "extension_connected": true, "ws": {"extension_versions": ["0.3.4"], ...}}
+{"status": "ok", "extension_connected": true, "ws": {"extension_versions": ["0.5.2"], ...}}
 ```
-Khi thấy `"extension_connected": true` và `extension_versions` từ `0.3.4` trở lên, toàn bộ hệ thống cầu nối đã thông suốt và sẵn sàng chạy các bước kịch bản bên dưới!
+Khi thấy `"extension_connected": true` và `extension_versions` từ `0.5.2` trở lên, toàn bộ hệ thống cầu nối đã thông suốt và sẵn sàng chạy các bước kịch bản bên dưới!
 
 #### Bước 0.6: Mở Web Dashboard Trực Quan (Khuyên Dùng)
 Để theo dõi trực quan danh sách dự án, tiến độ sinh video, thư viện Gallery ảnh/video và logs hệ thống theo thời gian thực thay vì chỉ nhìn terminal:
