@@ -20,6 +20,9 @@ log = logging.getLogger("flowkit.watermark")
 
 # ── Constants ──────────────────────────────────────────────
 ALPHA_THRESHOLD = 0.002
+# Ảnh inpaint mọi pixel vượt ngưỡng: 0.002 phủ ~90% ô 48px (nền bg_48 không bằng 0)
+# → vá cả ô thành mảng vuông đặc. 0.15 chỉ giữ hình ngôi sao.
+IMAGE_INPAINT_ALPHA_THRESHOLD = 0.15
 MAX_ALPHA = 0.99
 LOGO_VALUE = 255
 VIDEO_ALPHA_SCALE = 0.58
@@ -281,7 +284,7 @@ def remove_watermark_image(input_path: str, output_path: str = None) -> str:
     y = max(0, min(y, h - size))
 
     alpha_map = get_alpha_map(size)
-    base_mask = (alpha_map >= ALPHA_THRESHOLD).astype(np.uint8) * 255
+    base_mask = (alpha_map >= IMAGE_INPAINT_ALPHA_THRESHOLD).astype(np.uint8) * 255
     inpaint_mask = cv2.dilate(base_mask, np.ones((3, 3), np.uint8))
 
     roi = img[y:y + size, x:x + size].copy()
