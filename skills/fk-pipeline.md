@@ -295,24 +295,24 @@ Batch 5. Poll 15s. Each video takes 2-5 min.
   2. Call `REGENERATE_IMAGE` first to create a fresh, clean start frame (`media_id`).
   3. Call `GENERATE_VIDEO` again with the clean start frame.
 
-**Immediate Rolling Download:**
+**Immediate Rolling Download (720p thô, chưa xóa logo):**
 - As soon as each scene video reaches `COMPLETED`, immediately download it to `${OUTDIR}/scenes/scene_{IDX3}_{SCENE_ID}.mp4`.
-- Never wait for the entire pipeline to finish before downloading; completed clips are stored locally on disk right away.
+- **CHƯA CẦN XÓA LOGO Ở BƯỚC NÀY**: Để tối ưu tài nguyên và tốc độ, giữ nguyên video 720p thô để AI trích xuất frame chấm điểm và đưa lên Review Board cho user duyệt. Nếu cảnh chưa đạt cần regen, ta không bị lãng phí CPU/GPU chạy xóa watermark vô ích.
 
 ---
 
 ### Stage 2.5 — Mandatory Review of Individual Scene Videos (AI-First Review Gate & Human Approval)
 
 > [!IMPORTANT]
-> **STOP AND PAUSE HERE! DO NOT PROCEED TO CONCAT AUTOMATICALLY.**
-> Pipeline execution MUST stop after all scene videos are downloaded and de-watermarked (`scene_XX_clean.mp4`).
+> **STOP AND PAUSE HERE! DO NOT PROCEED TO UPSCALE OR CONCAT AUTOMATICALLY.**
+> Pipeline execution MUST stop after all 720p scene videos are downloaded.
 > **QUY TẮC BẮT BUỘC TRƯỚC KHI TRÌNH USER DUYỆT:**
-> 1. **Tự động chạy `/fk-review-video` trước**: Agent BẮT BUỘC phải trích xuất frames, phân tích chất lượng video sạch theo 6 tiêu chuẩn cốt lõi (Character Consistency 25%, Prompt Adherence 20%, Motion Quality 20%, Visual Fidelity 15%, Temporal Coherence 10%, Composition 10%) và rà soát lỗi AI (Critical/High/Minor).
+> 1. **Tự động chạy `/fk-review-video` trước trên video 720p thô**: Agent BẮT BUỘC phải trích xuất frames, phân tích chất lượng video theo 6 tiêu chuẩn cốt lõi (Character Consistency 25%, Prompt Adherence 20%, Motion Quality 20%, Visual Fidelity 15%, Temporal Coherence 10%, Composition 10%) và rà soát lỗi AI (Critical/High/Minor).
 > 2. **Trình bày Scorecard chi tiết cho User**: Báo cáo bảng điểm Scorecard, nhận định Verdict (*Excellent / Good / Acceptable / Poor*), và hình ảnh minh họa frames trích xuất trực tiếp trong chat để User nắm rõ chất lượng trước.
-> 3. Ensure Review Board is running (`python tools/review_server.py 8200`) and provide direct links.
+> 3. Ensure Review Board is running (`python tools/review_server.py 8200`) and provide direct links (`http://localhost:8200?video_id=<VID>`).
 > 4. **Chờ User duyệt**: Chỉ sau khi User xem bảng phân tích và ra quyết định duyệt (hoặc yêu cầu tinh chỉnh prompt/regen), pipeline mới đi tiếp.
-> 5. If the user requests changes for any scene video (e.g. camera angle, motion, character action, handheld vlog perspective), update the prompt and run `REGENERATE_VIDEO` until the user is satisfied.
-> 6. ONLY proceed to Stage 4 (Concat) when the user explicitly commands to concatenate the approved videos.
+> 5. If the user requests changes for any scene video (e.g. camera angle, motion, character action, handheld vlog perspective), update the prompt and run `REGENERATE_VIDEO` (ở mức 720p) cho đến khi ưng ý.
+> 6. **CHỈ KHI USER DUYỆT THÔNG QUA CÁC CẢNH**: Mới tiến hành Stage 3 (Upscale 1080p) và Stage 3.5 (De-watermark 1080p).
 
 **Auto-Report & Node Status Table:**
 Always print the per-node review summary directly to the terminal:
@@ -322,10 +322,10 @@ Always print the per-node review summary directly to the terminal:
 ===========================================================================
 Scene      | Score  | Verdict    | Face Cons.   | Motion     | Main Issue / Action
 ---------------------------------------------------------------------------
-Scene 0    | 7.97   | GOOD       | 8.5          | 7.5        | Keep as-is
-Scene 1    | 7.48   | ACCEPTABLE | 7.5          | 8.5        | Keep as-is
+Scene 0    | 7.97   | GOOD       | 8.5          | 7.5        | Sẵn sàng xin duyệt để Upscale 1080p
+Scene 1    | 7.48   | ACCEPTABLE | 7.5          | 8.5        | Sẵn sàng xin duyệt để Upscale 1080p
 Scene 2    | 6.90   | ACCEPTABLE | 7.5          | 7.5        | Optional regen (text overlay)
-Scene 6    | FAILED | NEED REGEN | -            | -          | Auto-sanitized, regenerating
+Scene 6    | FAILED | NEED REGEN | -            | -          | Auto-sanitized, regenerating 720p
 ===========================================================================
 ```
 
@@ -338,24 +338,42 @@ Print the review link:
 👉 **`http://localhost:8200?video_id=<VID>`** or **`http://localhost:8200/review_images.html`**
 
 **Fix Loop for Flagged Scenes:**
-- If user or AI flags a scene: update `video_prompt` (or `prompt` + image if composition is flawed), submit `REGENERATE_VIDEO`.
+- If user or AI flags a scene: update `video_prompt` (or `prompt` + image if composition is flawed), submit `REGENERATE_VIDEO` (ở mức 720p).
 - Re-download newly regenerated video to `scenes/` and present back to the user for re-review.
-- Do NOT proceed to Concat until user explicitly approves all scene videos.
-
+- Do NOT proceed to Upscale or Concat until user explicitly approves all scene videos.
 
 ---
 
-### Stage 3 — Upscale (4K)
+### Stage 3 — Upscale 1080p (Chỉ chạy cho các cảnh User đã duyệt)
 
-Only run after review passes (or max review cycles exhausted). TIER_TWO only.
+Sau khi cảnh được User duyệt thông qua, gửi lệnh AI Upscale lên 1080p Full HD bằng Google Flow Veo 3.1 Upsampler (RPC `p0UkFb`):
 
 ```bash
-curl -X POST http://127.0.0.1:8100/api/requests \
+curl -X POST http://127.0.0.1:8100/api/requests/batch \
   -H "Content-Type: application/json" \
-  -d '{"type":"UPSCALE_VIDEO","scene_id":"<SID>","project_id":"<PID>","video_id":"<VID>","orientation":"<ORIENTATION>"}'
+  -d '{
+    "requests": [
+      {"type":"UPSCALE_VIDEO","scene_id":"<SID_APPROVED>","project_id":"<PID>","video_id":"<VID>","orientation":"<ORIENTATION>"}
+    ]
+  }'
 ```
 
-Batch 5. **Resubmit failed upscales** once automatically.
+Batch 5. Tải video 1080p về folder riêng `1080/` ngay khi hoàn tất:
+`${OUTDIR}/1080/scene_{idx:02d}_{sid}_1080p.mp4`
+
+---
+
+### Stage 3.5 — De-watermark Video 1080p (Xóa logo trực tiếp trên bản 1080p)
+
+Ngay khi video 1080p được tải về máy, chạy công cụ khử watermark & phá sóng SynthID trực tiếp trên file 1080p:
+
+```bash
+python tools/remove_watermark_from_link.py "${OUTDIR}/1080/scene_{idx:02d}_{sid}_1080p.mp4"
+```
+➔ Sinh ra file video thành phẩm sạch logo với độ nét tối đa:
+`${OUTDIR}/1080/scene_{idx:02d}_{sid}_1080p_clean.mp4`
+
+File này sẽ được đưa vào Stage 6 (Concat) để xuất bản thành phẩm.
 
 ---
 

@@ -114,7 +114,7 @@ _CRITICAL_RULES = """\
 15. **Real-people bypass** — when characters are based on real famous people (politicians, celebrities, military leaders), NEVER use their real name as entity `name` or anywhere in `description`, `image_prompt`, `prompt`, or `video_prompt`. AI image generators reject known public figures. Instead: (a) use a **role-based alias** as entity name (e.g. "Tổng Tư Lệnh" not "Trump", "Thủ Tướng Sắt" not "Netanyahu"), (b) describe **physical appearance only** — distinctive hair, face shape, build, clothing style — without naming who it is, (c) `narrator_text` may use real titles/roles for storytelling but real names never flow into image/video generation. Keep a `real_reference` mapping in the project plan file (`.omc/research/`) for internal tracking.
 16. **Review before upscale** — ALWAYS run `/fk-review-video` (light mode) after video generation, before upscaling. Scenes scoring < 7.5 get `video_prompt` updated from review errors, then regen video. Max 2 review-regen cycles.
 17. **Auto-retry failed videos (up to 5x)** — When generating videos, any failure or timeout MUST be automatically retried up to 5 times. If failed due to content filters (e.g. `as29s failed: [5]`), auto-sanitize prompt keywords and call `REGENERATE_IMAGE` to get a fresh start frame before regenerating the video.
-18. **Immediate rolling download & Watermark Removal** — As each scene video completes, immediately download it to `${OUTDIR}/scenes/scene_{idx}_{sid}.mp4`, and immediately run `remove_watermark_video` (via `python tools/remove_watermark_from_link.py`) to produce a clean version without Google logo or SynthID. All review and concat steps MUST use clean, watermark-free videos.
+18. **Rolling download & Review Before Upscale/Clean (Chưa xóa logo khi mới sinh 720p)** — Khi video 720p sinh xong, lập tức tải về `${OUTDIR}/scenes/scene_{idx}_{sid}.mp4`. **TUYỆT ĐỐI CHƯA CẦN XÓA LOGO Ở BƯỚC NÀY** để tránh lãng phí tài nguyên CPU/GPU và thời gian nếu video cần sửa prompt hoặc regen. Trích xuất frame trực tiếp từ video 720p để chạy AI Review Scorecard và đưa lên Review Board cho User duyệt trước. **CHỈ SAU KHI USER DUYỆT CẢNH**: Gửi lệnh Upscale 1080p (`veo_3_1_upsampler_1080p` qua RPC `p0UkFb`), tải video 1080p về thư mục riêng `${OUTDIR}/1080/scene_{idx}_{sid}_1080p.mp4`, rồi mới chạy `remove_watermark_video` trực tiếp trên bản 1080p (`${OUTDIR}/1080/scene_{idx}_{sid}_1080p_clean.mp4`) để đưa vào Concat cuối cùng.
 19. **Mandatory review & Review Board** — Pipeline skills (`/fk-pipeline`, `/fk-gen-videos`) MUST automatically execute `/fk-review-video` immediately after video generation, display the per-scene scorecard table showing which nodes passed and which need regeneration, and ensure the Review Board web app (`python tools/review_server.py 8200`) is running.
 20. **Language matching for SEO & Thumbnails** — YouTube metadata (`/fk-youtube-seo`) and thumbnails (`/fk-thumbnail`) MUST match the dialogue/script language (e.g. 100% Japanese for Japanese POV vlogs, Vietnamese for Vietnamese, English for English). Never generate English/Vietnamese SEO for Japanese dialogue vlogs.
 21. **Flush stale queue on new project** — whenever starting or creating a new project (e.g. `/fk-create-project`, `/fk-time-travel-vlog`), ALWAYS execute `python -c "import sqlite3; conn = sqlite3.connect('flow_agent.db'); conn.execute('UPDATE request SET status=\\'FAILED\\' WHERE status=\\'PENDING\\''); conn.commit()"` first to flush all stale PENDING requests and prevent worker auto-retry loops causing `PUBLIC_ERROR_UNUSUAL_ACTIVITY`.
@@ -141,7 +141,7 @@ _CRITICAL_RULES = """\
     - Non-generating work (creating projects/scenes, uploading existing images, PATCHing fields, downloading, watermark removal) can proceed when the user asks for it.
 30. **Vlog production lessons live in `/fk-time-travel-vlog` section 11** (user feedback: constraints as sentences not `Negative:`, phone is the camera, wipes never make the vlogger vanish, scene refs for cities, landscape refs for 16:9, hardest clip first). Follow them for every POV/vlog project.
 31. **On any pipeline error** (request `FAILED`, stuck `PROCESSING`, `extension_connected: false`, HTTP 4xx/5xx from `:8100`, YouTube `HttpError`, error strings like `UNSAFE_GENERATION` / `not found` / `CAPTCHA` / `NO_AT_TOKEN` / `NO_FLOW_PROJECT` / `UNSUPPORTED_ON_BATCH_API`): invoke `/fk-doctor` before guessing a fix.
-32. **AI-First Video Review before User Approval (Tự động review & đưa Scorecard trước khi xin User duyệt)** — Sau khi video hoàn tất và được khử sạch watermark (`scene_XX_clean.mp4`), Agent TUYỆT ĐỐI KHÔNG chỉ gửi video thô rồi hỏi duyệt chung chung. Agent BẮT BUỘC phải tự động chạy phân tích `/fk-review-video` trước: trích xuất frames, chấm điểm theo 6 tiêu chuẩn cốt lõi (Character Consistency 25%, Prompt Adherence 20%, Motion Quality 20%, Visual Fidelity 15%, Temporal Coherence 10%, Composition 10%), rà soát lỗi AI (Critical/High/Minor), và trình bày bảng Scorecard chi tiết kèm ảnh preview frames cho User xem trước. CHỈ SAU ĐÓ mới xin ý kiến phê duyệt của User.
+32. **AI-First Video Review before User Approval & Conditional Upscale (Tự động review trên video 720p thô ➔ Duyệt ➔ Upscale 1080p & Xóa Logo)** — Sau khi video 720p hoàn tất và tải về máy, Agent trích xuất frames trực tiếp từ video 720p thô (chưa cần xóa logo), tự động chạy phân tích `/fk-review-video` trước: chấm điểm theo 6 tiêu chuẩn cốt lõi (Character Consistency 25%, Prompt Adherence 20%, Motion Quality 20%, Visual Fidelity 15%, Temporal Coherence 10%, Composition 10%), rà soát lỗi AI (Critical/High/Minor), và trình bày bảng Scorecard chi tiết kèm ảnh preview frames cho User xem trước. **Chỉ khi User duyệt thông qua cảnh**: Mới tiến hành gửi batch Upscale 1080p và xóa logo trên video 1080p.
 """
 
 _PIPELINE_OVERVIEW = """\
@@ -157,14 +157,15 @@ _PIPELINE_OVERVIEW = """\
                      Verify all key entities (Character, Outfit, Location) have UUID media_id
 6. Gen videos (R2V)  POST /api/requests/batch (type: "GENERATE_VIDEO_REFS")
                      Omni Flash abra_r2v synthesizes clips directly from Ingredients (Character, Outfit)
-                     Auto-retry failed videos up to 5x; rolling download clips to scenes/
-7. De-watermark      Immediately run remove_watermark_video on each clip -> scene_XX_clean.mp4
-7.5 Review videos    MANDATORY GATE! Present EACH individual unconcatenated scene video to user.
+                     Auto-retry failed videos up to 5x; rolling download 720p clips to scenes/
+6.5 Review videos   MANDATORY GATE! Trích xuất frames từ video 720p thô (CHƯA CẦN XÓA LOGO).
                      Display per-scene scorecard table + Review Board (http://localhost:8200).
                      STOP & PAUSE: User reviews each scene clip individually.
-                     Do NOT proceed to concat until user approves all individual scene videos!
-8. (Optional) 4K     POST /api/requests/batch (TIER_TWO only)
-9. Concat           ffmpeg normalize + concat (ONLY after all scene videos are approved)
+                     Nếu chưa đạt: sửa prompt -> REGENERATE_VIDEO (ở mức 720p, không tốn công xóa logo).
+7. Upscale 1080p     CHỈ KHI USER DUYỆT CẢNH: POST /api/requests/batch (type: "UPSCALE_VIDEO", RPC p0UkFb)
+                     Tải video 1080p về folder 1080/ -> ${OUTDIR}/1080/scene_XX_1080p.mp4
+8. De-watermark      Chạy remove_watermark_video TRỰC TIẾP trên bản 1080p -> ${OUTDIR}/1080/scene_XX_1080p_clean.mp4
+9. Concat           ffmpeg normalize + concat (dùng toàn bộ video 1080p clean đã duyệt)
 10. SEO & Thumbnails Auto-match script language (e.g. 100% native Japanese for Japanese POV vlog)
 ```
 """

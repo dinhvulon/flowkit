@@ -60,15 +60,17 @@ Do NOT stop if a scene fails or times out. Automatically retry up to **5 times**
      c. Call `GENERATE_VIDEO` with the new start frame.
 2. Only mark permanently failed after 5 failed attempts.
 
-## Step 5: Immediate Rolling Download
+## Step 5: Immediate Rolling Download (720p thô, chưa xóa logo)
 
 As each scene reaches `COMPLETED`, immediately download it locally to preserve files and allow instant preview:
 ```bash
 # Save to:
 ${OUTDIR}/scenes/scene_{IDX3}_{SCENE_ID}.mp4
 ```
+> [!NOTE]
+> **CHƯA CẦN XÓA LOGO Ở BƯỚC NÀY**: Để tối ưu tốc độ và không lãng phí tài nguyên encode CPU/GPU, giữ nguyên video 720p thô để trích xuất frame review. Nếu video cần tinh chỉnh prompt hoặc regen, ta không bị tốn công tẩy logo vô ích.
 
-## Step 6: Mandatory AI Vision Review & Review Board
+## Step 6: Mandatory AI Vision Review & Review Board (Trên video 720p thô)
 
 Automatically trigger `/fk-review-video` immediately without waiting for user instruction:
 ```bash
@@ -78,11 +80,11 @@ curl -s -X POST "http://127.0.0.1:8100/api/videos/<VID>/review?project_id=<PID>&
 **Print per-node status scorecard table:**
 | Scene | Score | Verdict | Face Consistency | Action |
 |-------|-------|---------|------------------|--------|
-| Scene 0 | 8.2 | EXCELLENT | 8.5 | Ready for concat |
-| Scene 1 | 7.6 | GOOD | 8.0 | Ready for concat |
-| Scene X | 6.2 | ACCEPTABLE | 7.0 | Auto-regen / prompt tweak |
+| Scene 0 | 8.2 | EXCELLENT | 8.5 | Sẵn sàng xin duyệt để Upscale 1080p |
+| Scene 1 | 7.6 | GOOD | 8.0 | Sẵn sàng xin duyệt để Upscale 1080p |
+| Scene X | 6.2 | ACCEPTABLE | 7.0 | Sửa prompt / Regen 720p (tiết kiệm credits) |
 
-If any scene scores < 7.5, automatically propose/patch prompt and trigger regeneration (max 2 review cycles).
+If any scene scores < 7.5, propose/patch prompt and trigger regeneration at 720p (max 2 review cycles).
 
 **Launch Scene Review Board (Interactive Web UI):**
 ```bash
@@ -92,21 +94,46 @@ Provide the link: **`http://localhost:8200?video_id=<VID>`**
 
 ## Step 7: Output & Mandatory Individual Video Review Gate (AI-First Review then Human Approval)
 
-1. **Verify all videos downloaded locally & watermarks cleaned**:
-   - Ensure every scene video is downloaded to `${OUTDIR}/scenes/scene_{idx:02d}_{sid}.mp4` and de-watermarked to `_clean.mp4`.
+1. **Verify all 720p raw videos downloaded locally**:
+   - Ensure every scene video is downloaded to `${OUTDIR}/scenes/scene_{idx:02d}_{sid}.mp4`.
 2. **Present Scorecard & Analysis BEFORE Asking for Approval**:
-   - Agent BẮT BUỘC chạy phân tích `/fk-review-video` (Step 6) trước.
-   - Xuất bảng Scorecard chi tiết (6 tiêu chí: Character Consistency 25%, Prompt Adherence 20%, Motion Quality 20%, Visual Fidelity 15%, Temporal Coherence 10%, Composition 10%) kèm ảnh frames minh họa trực tiếp trong chat.
+   - Agent BẮT BUỘC chạy phân tích `/fk-review-video` (Step 6) trước trên video 720p thô.
+   - Xuất bảng Scorecard chi tiết (6 tiêu chí: Character Consistency 25%, Prompt Adherence 20%, Motion Quality 20%, Visual Fidelity 15%, Temporal Coherence 10%, Composition 10%) kèm ảnh frames preview minh họa trực tiếp trong chat.
    - Launch Review Board: `python tools/review_server.py 8200` (link: **`http://localhost:8200?video_id=<VID>`**).
 3. **STOP AND PAUSE HERE:**
-   - **DO NOT** call `/fk-concat` or concatenate the video automatically!
-   - Ra video là phân tích trước bằng AI rồi User duyệt từng clip một!
-   - Ask user for feedback on each clip. If any clip needs adjustments (e.g. action, camera angle, phone selfie vlog perspective, lip sync), update the scene's `video_prompt` and submit `REGENERATE_VIDEO`.
-   - Wait for explicit user instruction ("ghép video", "concat đi", or `/fk-concat`) before concatenating.
+   - **DO NOT** upscale 1080p or remove watermarks yet!
+   - Ra video 720p là AI review trước rồi User duyệt từng clip một!
+   - Ask user for feedback on each clip. If any clip needs adjustments (e.g. action, camera angle, phone selfie vlog perspective, lip sync), update the scene's `video_prompt` and submit `REGENERATE_VIDEO` (ở mức 720p).
+   - Only when user approves the scene video, proceed to Step 8.
+
+## Step 8: Conditional Upscale 1080p & De-watermark (Chỉ sau khi User duyệt)
+
+**CHỈ KHI USER DUYỆT THÔNG QUA CÁC CẢNH**, tiến hành quy trình hoàn thiện chất lượng cao:
+1. **Gửi lệnh Upscale 1080p qua Google Flow (RPC `p0UkFb` - `veo_3_1_upsampler_1080p`)**:
+   ```bash
+   curl -X POST http://127.0.0.1:8100/api/requests/batch \
+     -H "Content-Type: application/json" \
+     -d '{
+       "requests": [
+         {"type": "UPSCALE_VIDEO", "scene_id": "<SID_APPROVED>", "project_id": "<PID>", "video_id": "<VID>", "orientation": "${ORI}"}
+       ]
+     }'
+   ```
+2. **Tải video 1080p về folder `1080/` riêng biệt**:
+   - Tạo thư mục nếu chưa có: `mkdir -p ${OUTDIR}/1080`
+   - Tải về: `${OUTDIR}/1080/scene_{idx:02d}_{sid}_1080p.mp4`.
+   - Kiểm tra `ffprobe` độ phân giải: `1920x1080` (hoặc `1080x1920` cho video dọc).
+3. **Xóa Logo & Watermark TRỰC TIẾP trên bản 1080p**:
+   ```bash
+   python tools/remove_watermark_from_link.py "${OUTDIR}/1080/scene_{idx:02d}_{sid}_1080p.mp4"
+   ```
+   ➔ Tạo ra file thành phẩm chuẩn nét: `${OUTDIR}/1080/scene_{idx:02d}_{sid}_1080p_clean.mp4`.
+4. Toàn bộ các file `${OUTDIR}/1080/*_clean.mp4` này sẽ được dùng để Concat thành phẩm cuối cùng qua `/fk-concat`.
 
 ## Important rules
 
-- **AI-First Video Review before User Approval (CRITICAL):** Tự động review bằng AI và đưa Scorecard trước khi xin User duyệt! Sau khi có video sạch, Agent phải chạy `/fk-review-video`, chấm điểm và đưa kết quả trước cho User.
+- **Review Before Upscale/Clean (CRITICAL):** Video 720p sinh xong tải về máy review trước, CHƯA CẦN XÓA LOGO. Chỉ khi User duyệt mới gửi Upscale 1080p và xóa logo trên bản 1080p. Tránh lãng phí thời gian encode trên các clip phải regen.
+- **AI-First Video Review before User Approval (CRITICAL):** Tự động review bằng AI và đưa Scorecard trước khi xin User duyệt! Sau khi tải video 720p, Agent phải chạy `/fk-review-video`, chấm điểm và đưa kết quả trước cho User.
 - **Mandatory Individual Video Review Gate (CRITICAL):** Ra video là User review luôn từng clip riêng lẻ! Never auto-concatenate into a final video until the user has reviewed and approved all individual clips.
 - **Auto-retry rule (CRITICAL):** Videos must be automatically retried up to 5 times before giving up.
 - **Immediate download (CRITICAL):** Download scene videos to `${OUTDIR}/scenes/` as soon as they complete.

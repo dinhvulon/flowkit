@@ -232,10 +232,11 @@ Chỉ với một câu lệnh duy nhất, hệ thống tự động làm hết m
 1. **Model R2V (`abra_r2v_<duration>s`)**: dùng thẳng ảnh ref (nhân vật + visual asset, tối đa 3) để sinh video, không cần ảnh tĩnh Start Frame.
 2. **Khẩu hình native**: Omni Flash tự sinh giọng và khẩu hình từ dòng `Mia says: …` trong `video_prompt`, với voice lấy từ `voice_description` (ví dụ Achernar).
 3. **Lồng tiếng TTS** *(chỉ khi có `--tts`)*: sinh narration riêng.
-4. **Xóa watermark từng clip**: tải về `scenes/`, chạy `remove_watermark_video`, rồi **mở ra kiểm tra** trước khi dùng.
-5. **Ghép nối video (Concat)**: cắt thẳng tại khung che, xuất `output/<slug>/<slug>_final.mp4`.
-6. **Tự động sinh YouTube SEO (`/fk-youtube-seo`)**: tiêu đề hook, mô tả, bộ tag, timestamps chapters vào `youtube_metadata.json` và `.md`.
-7. **Tự động tạo 4 Thumbnail (`/fk-thumbnail`)**: ảnh đúng tỷ lệ (9:16 Shorts hoặc 16:9 long-form) lưu vào `output/<slug>/thumbnails/`.
+4. **Review 720p thô trước**: Tải về `scenes/`, trích xuất frames chạy AI Vision Review và mở Review Board (`http://localhost:8200`) để User duyệt từng clip (chưa cần xóa logo để tiết kiệm thời gian).
+5. **Duyệt ➔ Upscale 1080p & Xóa logo**: Sau khi User duyệt thông qua, gửi lệnh AI Upscale 1080p (RPC `p0UkFb`), tải video 1080p về và chạy `remove_watermark_video` trực tiếp trên bản 1080p (`*_1080p_clean.mp4`).
+6. **Ghép nối video (Concat)**: Ghép toàn bộ clip 1080p clean đã duyệt thành `output/<slug>/<slug>_final.mp4`.
+7. **Tự động sinh YouTube SEO (`/fk-youtube-seo`)**: tiêu đề hook, mô tả, bộ tag, timestamps chapters vào `youtube_metadata.json` và `.md`.
+8. **Tự động tạo 4 Thumbnail (`/fk-thumbnail`)**: ảnh đúng tỷ lệ (9:16 Shorts hoặc 16:9 long-form) lưu vào `output/<slug>/thumbnails/`.
 
 > [!TIP]
 > **Chạy thử trước 1–2 scene rủi ro** (thảm họa, chiến tranh, nghi lễ, hình phạt) trước khi gửi cả loạt. Đây là những scene dễ bị `UNSAFE_GENERATION` nhất. Chỉ ám chỉ bạo lực, và thêm `blood, gore, injured people, dead bodies` vào negative.

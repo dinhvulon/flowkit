@@ -19,9 +19,13 @@ Sort scenes by `display_order`.
 ## Step 2: Determine video source for each scene
 
 Priority order for each scene:
-1. **Local 4K file:** `${OUTDIR}/4k/{scene_id}.mp4` (saved from rawBytes — best quality)
-2. **Upscale URL:** `horizontal_upscale_url` or `vertical_upscale_url` (4K signed URL — may be expired)
-3. **Video URL:** `horizontal_video_url` or `vertical_video_url` (standard quality)
+1. **Local 1080p Clean file:** `${OUTDIR}/1080/scene_{idx:02d}_{scene_id}_1080p_clean.mp4` (Best quality, 1080p Full HD, no watermark)
+2. **Local 1080p file:** `${OUTDIR}/1080/scene_{idx:02d}_{scene_id}_1080p.mp4`
+3. **Local 4K file:** `${OUTDIR}/4k/{scene_id}.mp4` (saved from rawBytes)
+4. **Local 720p Clean file:** `${OUTDIR}/scenes/scene_{idx:02d}_{scene_id}_clean.mp4`
+5. **Local 720p raw file:** `${OUTDIR}/scenes/scene_{idx:02d}_{scene_id}.mp4`
+6. **Upscale URL:** `horizontal_upscale_url` or `vertical_upscale_url` (signed URL — may be expired)
+7. **Video URL:** `horizontal_video_url` or `vertical_video_url` (standard 720p quality)
 
 Check orientation from project or first scene. Use matching prefix (`horizontal_` or `vertical_`).
 
@@ -34,7 +38,7 @@ Check orientation from project or first scene. Use matching prefix (`horizontal_
 PROJ_OUT=$(curl -s http://127.0.0.1:8100/api/projects/<PID>/output-dir)
 OUTDIR=$(echo "$PROJ_OUT" | python3 -c "import sys,json; print(json.load(sys.stdin)['path'])")
 SLUG=$(echo "$PROJ_OUT" | python3 -c "import sys,json; print(json.load(sys.stdin)['slug'])")
-mkdir -p "${OUTDIR}/4k" "${OUTDIR}/narrated" "${OUTDIR}/norm"
+mkdir -p "${OUTDIR}/1080" "${OUTDIR}/4k" "${OUTDIR}/narrated" "${OUTDIR}/norm"
 ```
 
 ## Step 4: Download videos (skip if local file exists)
