@@ -892,12 +892,33 @@ class FlowClient:
 
     async def upscale_video(self, media_id: str, scene_id: str,
                              aspect_ratio: str = "VIDEO_ASPECT_RATIO_PORTRAIT",
-                             resolution: str = "VIDEO_RESOLUTION_4K") -> dict:
-        """Upscale a video."""
-        return {"error": _unsupported(
-            "video upscale",
-            "no upsampler rpc appears in the new frontend's captures",
-        )}
+                             resolution: str = "1080p",
+                             project_id: str | None = None,
+                             operation_id: str | None = None) -> dict:
+        """Upscale a video to 1080p using Google Flow Veo 3.1 Upsampler (RPC p0UkFb)."""
+        try:
+            pid = self._batch_project_id(project_id)
+            freq, upsampled_op_id = fb.video_upscale_request(
+                media_id=media_id,
+                project_id=pid,
+                aspect=aspect_ratio,
+                operation_id=operation_id,
+            )
+            payload = await self._batch_payload(
+                fb.RPC_UPSCALE_VIDEO, freq, fb.CAPTCHA_VIDEO, timeout=120)
+
+            self._remember_operation(upsampled_op_id, pid)
+            self._operation_media[upsampled_op_id] = upsampled_op_id
+            return {
+                "status": 200,
+                "data": {
+                    "operations": [_as_pending_operation(upsampled_op_id)],
+                    "media_id": upsampled_op_id,
+                },
+            }
+        except Exception as e:
+            logger.error("Failed to submit video upscale for %s: %s", media_id, e)
+            return _batch_error(e)
 
     async def check_video_status(self, operations: list[dict]) -> dict:
         """One poll round for each submitted operation.
@@ -968,6 +989,22 @@ class FlowClient:
         expensive call, so it is only consulted when the poll says something
         happened, when the poll is unreadable, or every third round regardless.
         """
+        if operation_id.endswith("_upsampled"):
+            # Video upscale operation: media_id is directly the upsampled operation id.
+            complaint = None
+            try:
+                operation = fb.read_operation(
+                    await self._batch_payload(
+                        fb.RPC_OPERATION, fb.operation_request(operation_id), timeout=60)
+                )
+                complaint = operation.error
+                if operation.done:
+                    return operation_id, complaint
+                return None, complaint
+            except Exception as e:
+                logger.debug("Upscale operation %s poll unreadable (%s)", operation_id[:20], e)
+                return None, str(e)
+
         rounds = self._operation_polls.get(operation_id, 0) + 1
         self._operation_polls[operation_id] = rounds
 

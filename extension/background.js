@@ -558,6 +558,7 @@ async function handleBatchRpc(msg) {
     ogiZ0b: 'Gen Image', eb1hJf: 'Gen Video', YhhmEf: 'Gen Video (text)',
     nprQif: 'Gen Video (chain)', MZZa6b: 'Gen Video (refs)',
     maseQ: 'Upload Image', SPrCad: 'Upscale Image',
+    p0UkFb: 'Upscale Video',
     jHPbke: 'Create Project', jwpduf: 'Poll Operation',
     Zzl0ze: 'Project Media', as29s: 'Get Media',
   };

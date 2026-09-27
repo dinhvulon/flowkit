@@ -1,0 +1,8 @@
+Step 544: 905:         Three signals have to agree before a clip can be downloaded, and they
+Step 574: Raw video downloaded. Size: 2752047 bytes
+Step 580: 8. curl --url 'https://flow.google.com/_/AiSandboxAngularFrontend/data/batchexecute?rpcids=p0UkFb&source-path=%2Fproject%2Faae54cfc-ea42-4c63-8f9d-440b0b9ddd86&bl=boq_labs-ai-sandbox-frontend_20260925.00_p0&f.sid=-2838052464181381065&hl=vi&_reqid=3551147&rt=c' \
+Step 580: 9. call curl --url 'https://flow.google.com/_/AiSandboxAngularFrontend/data/batchexecute?rpcids=jwpduf&source-path=%2Fproject%2Faae54cfc-ea42-4c63-8f9d-440b0b9ddd86&bl=boq_labs-ai-sandbox-frontend_20260925.00_p0&f.sid=-2838052464181381065&hl=vi&_reqid=4451147&rt=c' \
+Step 580: - **Review Server:** Daemon đang chạy ngầm trên port 8200 (`http://localhost:8200?video_id=19cbad31-3cd4-49f8-80de-874c1093a8b4`).
+Step 580:   - User vừa cung cấp curl request captured trên `flow.google.com`:
+Step 580:     + Đã test tải và probe qua `ffprobe` trên `test_upscaled.mp4`: `width=1920, height=1080` (1080p 24fps) thành công 100%!
+Step 580: - **Tài khoản Google Flow:** Đang kết nối tốt qua Chrome Extension 0.5.2 (`http://127.0.0.1:8100/health`).

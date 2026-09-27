@@ -20,8 +20,10 @@ request bodies to disk, so it goes in for one session and comes straight back ou
 | operation → media id | `Zzl0ze` | `projects/<id>`; the listing is ~17 MB |
 | media id → urls | `as29s` | signed `/video/` + poster `/image/` |
 | upload an image | `maseQ` | base64 in the payload, captcha like a generate |
+| upscale image | `SPrCad` | 2K/4K synchronous |
+| upscale video (1080p) | `p0UkFb` | `veo_3_1_upsampler_1080p`, polls `jwpduf` as `<op>_upsampled` |
 
-Missing, and each blocked behind a capture: **video upscale**, **r2v**,
+Missing, and each blocked behind a capture: **r2v (legacy)**,
 **start+end-frame chaining**, and the **base-image** variant of the image edit.
 
 ## Recording one

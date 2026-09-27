@@ -89,9 +89,11 @@ class GenerateOmniFlashTextVideoRequest(BaseModel):
 
 class UpscaleVideoRequest(BaseModel):
     media_id: str
-    scene_id: str
-    aspect_ratio: str = "VIDEO_ASPECT_RATIO_PORTRAIT"
-    resolution: str = "VIDEO_RESOLUTION_4K"
+    scene_id: str = ""
+    aspect_ratio: str = "VIDEO_ASPECT_RATIO_LANDSCAPE"
+    resolution: str = "1080p"
+    project_id: str = ""
+    operation_id: str = ""
 
 
 class UploadImageRequest(BaseModel):
@@ -682,3 +684,4 @@ async def upload_image_file(
         mime_type=resolved_mime,
         file_name=resolved_name,
     )
+

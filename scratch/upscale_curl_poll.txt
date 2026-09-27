@@ -1,0 +1,76 @@
+<USER_REQUEST>
+call curl --url 'https://flow.google.com/_/AiSandboxAngularFrontend/data/batchexecute?rpcids=jwpduf&source-path=%2Fproject%2Faae54cfc-ea42-4c63-8f9d-440b0b9ddd86&bl=boq_labs-ai-sandbox-frontend_20260925.00_p0&f.sid=-2838052464181381065&hl=vi&_reqid=4451147&rt=c' \
+  -H 'accept: */*' \
+  -H 'accept-language: vi-VN,vi;q=0.9,fr-FR;q=0.8,fr;q=0.7,en-US;q=0.6,en;q=0.5' \
+  -H 'content-type: application/x-www-form-urlencoded;charset=UTF-8' \
+  -b '__Secure-BUCKET=CPYG; SEARCH_SAMESITE=CgQIl6EB; GCL_AW_P=GCL.1784459596.Cj0KCQjw6_HSBhCpARIsANvVltZfiSX6UxUat2Sbvxwyuz1LBXx9b7D2gZmp9aFkZraFs1nRH_rK8tUaAh_AEALw_wcB; SID=g.a000DAn5PZ6Q7Ze-AKQWRls_QEK4Zc9rpV24n6WtZihLkV9VhZyfYrql50OPI_scXU0-IbsN9gACgYKAegSARUSFQHGX2MiX9FhxH5vclkNVD88kdlhDxoVAUF8yKoZCNJmt1Lz0JC8fJskSzD60076; __Secure-1PSID=g.a000DAn5PZ6Q7Ze-AKQWRls_QEK4Zc9rpV24n6WtZihLkV9VhZyfBpMeBWG53GTmrjTFae60BQACgYKAToSARUSFQHGX2MiY18QoSmXf8Kmr2pSVvX9rBoVAUF8yKpY9Y_sqLf3sWi5qMx5_Ry70076; __Secure-3PSID=g.a000DAn5PZ6Q7Ze-AKQWRls_QEK4Zc9rpV24n6WtZihLkV9VhZyftQzhwHKGpjtDbeZTlIUhwgACgYKAeISARUSFQHGX2MikxmO-rlChIzIdJmD33CDlxoVAUF8yKpTQ7p7r98q4-RUZJ0dSyNi0076; HSID=AgOQSle_aIRjmL677; SSID=Ar0DIyT1o9VbH3UHW; APISID=2JAls4KHyqLs3K43/AlcmBqFHq73jLvvNl; SAPISID=btAPKZyqtpAG2VgN/A74h7c_KMnJdyylOi; __Secure-1PAPISID=btAPKZyqtpAG2VgN/A74h7c_KMnJdyylOi; __Secure-3PAPISID=btAPKZyqtpAG2VgN/A74h7c_KMnJdyylOi; _ga=GA1.1.856688066.1790485119; OSID=g.a000DAn5PWBNYvMm5gyGl5uo1dT1YfFkwWIo77ds3Xktv-2W1XzBEG0RAq-8CvXZPWK2bG6yrQACgYKAZgSARUSFQHGX2MijIGygL4j6CeNhsXaanhlJRoVAUF8yKpC2YX-jfL22J_Qn9MtZTOk0076; __Secure-OSID=g.a000DAn5PWBNYvMm5gyGl5uo1dT1YfFkwWIo77ds3Xktv-2W1XzBHWGtMmNG0dzKy0m3c0sC2gACgYKAbcSARUSFQHGX2MiNiUmSLsqOUuB6Jgom-YuPxoVAUF8yKrElnGana2KYQoaQAKQQKzk0076; AEC=Aaa9EJpbWSmvZUbfii7pfvqaJReg0xecAawW3iUgOcTQ-P7xS4YXLhziEw; NID=Cp4DCAES0AIBOxGDSGHD88sZMCD1V4b4XbYxIYYwjIszOHKDYS8uP3ZZx2hD9qyGjDhf9kIeZ2-yMf7kgg7NPhjEe0YNu6g7ye5JHdxuFxo97_qDl4aA6hKY6y_R3iGXb7etm7u63LtsKiUe4YGlbl86DM66k2pGRGJdMiJjIHy_WCTXH7-mv-axKckqwcU7YeY3wMkPcLT3e_GeA4ya9cvhkWiw_HOqWusMW1PVZlj4WtHrFMHwD4M3hLGMu7QlHF2Vu8JzJaUU6lz03BVFO707s994DF31PZyBjV95ZLAiaxkeT7ae7HJTuo5FYMmIPBVuD3Q-6DacIjta3Ezqk-JJEIIUiASORr6KxbWOF7OpSzB55Li9g-vI2d2YkwMmqb6a7wu8Xl32VJ7_OtLg6ofP-OE7qm0pSe0Gdsdyf3mSRacojSMc_S_hL-nNcs9rB3yWy_75Ov8oATJFAdKsB8-Ow3D1HtjLbl_YYCWhzmGKp_E0kMth4SLgSIr2g5IlSaU8_2C-W4-eiSnXymE5S9fMGLME_1IwGqApUf9pyCYA; __Secure-1PSIDTS=sidts-CjcBkldj_0Q52ACAEVu9fc-0mu9NmgRIXONn9N-9IqVX-zNyc0_oCAAnORys3TX6rBeJFVMW_TQhEAA; __Secure-1PSIDRTS=sidts-CjcBkldj_0Q52ACAEVu9fc-0mu9NmgRIXONn9N-9IqVX-zNyc0_oCAAnORys3TX6rBeJFVMW_TQhEAA; __Secure-3PSIDTS=sidts-CjcBkldj_0Q52ACAEVu9fc-0mu9NmgRIXONn9N-9IqVX-zNyc0_oCAAnORys3TX6rBeJFVMW_TQhEAA; __Secure-3PSIDRTS=sidts-CjcBkldj_0Q52ACAEVu9fc-0mu9NmgRIXONn9N-9IqVX-zNyc0_oCAAnORys3TX6rBeJFVMW_TQhEAA; _ga_X2GNH8R5NS=GS2.1.s1790495836$o3$g0$t1790495836$j60$l0$h1953730014; SIDCC=AKEyXzVsJzp_qHcBqBrKLv9JzROYSwXat1dzZnEl65wGH6znVIbVLMc1qZu1W-gzDHkKoU7sTw; __Secure-1PSIDCC=AKEyXzWi6DxJpNTYpKrOgLV0df1ZvMZukxFQ-tjhXqH5tk0QBbplg09YRQqY-TsPdags0KcZimc; __Secure-3PSIDCC=AKEyXzVuuJKwjCNalkhbJjYwO7UdsrmHO7hVYl5KPPjHuwmWr4o8VveCmB9vIAJ26heVrCGCQ2I' \
+  -H 'origin: https://flow.google.com' \
+  -H 'priority: u=1, i' \
+  -H 'referer: https://flow.google.com/' \
+  -H 'sec-ch-ua: "Google Chrome";v="153", "Not_A Brand";v="8", "Chromium";v="153"' \
+  -H 'sec-ch-ua-arch: "x86"' \
+  -H 'sec-ch-ua-bitness: "64"' \
+  -H 'sec-ch-ua-form-factors: "Desktop"' \
+  -H 'sec-ch-ua-full-version: "153.0.8010.48"' \
+  -H 'sec-ch-ua-full-version-list: "Google Chrome";v="153.0.8010.48", "Not_A Brand";v="8.0.0.0", "Chromium";v="153.0.8010.48"' \
+  -H 'sec-ch-ua-mobile: ?0' \
+  -H 'sec-ch-ua-model: ""' \
+  -H 'sec-ch-ua-platform: "Windows"' \
+  -H 'sec-ch-ua-platform-version: "19.0.0"' \
+  -H 'sec-ch-ua-wow64: ?0' \
+  -H 'sec-fetch-dest: empty' \
+  -H 'sec-fetch-mode: cors' \
+  -H 'sec-fetch-site: same-origin' \
+  -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36' \
+  -H 'x-browser-channel: stable' \
+  -H 'x-browser-copyright: Copyright 2026 Google LLC. All Rights Reserved.' \
+  -H 'x-browser-validation: gatHVmB+6BMZgeBsxyVmI0c15LA=' \
+  -H 'x-browser-year: 2026' \
+  -H 'x-client-data: CKmdygEIkqHLAQiFoM0BCMDhlDAImOeUMBio3pQwGK/glDA=' \
+  -H 'x-same-domain: 1' \
+  --data-raw 'f.req=%5B%5B%5B%22jwpduf%22%2C%22%5Bnull%2Cnull%2C%5B%5B%5C%22dd5c57a1-9a6a-4624-8f1d-cf0c3918e32a_upsampled%5C%22%5D%5D%5D%22%2Cnull%2C%22generic%22%5D%5D%5D&at=AIQ-s5i5IJXvU_ZmLfmrM-1QxdPk%3A1790493108594&' nhận  )
+]
+} '
+
+683
+[["wrb.fr","jwpduf","[null,786,[[\"dd5c57a1-9a6a-4624-8f1d-cf0c3918e32a_upsampled\",\"aae54cfc-ea42-4c63-8f9d-440b0b9ddd86\",\"26d8b4c7-449c-4e30-834b-f4e7f3fd4e72\",\"CAI\",null,[[1790495801,140969000],null,null,null,null,null,[null,[[\"veo_3_1_upsampler_1080p\",4,[6],null,2,2],null,[[\"dd5c57a1-9a6a-4624-8f1d-cf0c3918e32a\",null,null,\"dd5c57a1-9a6a-4624-8f1d-cf0c3918e32a\"]]],[[]],null,1],null,[3],1],null,[[null,0,null,null,null,null,null,null,null,null,null,null,\"veo_3_1_upsampler_1080p\",\"\",null,false,2,null,[1]],[null,null,[]],[\"dd5c57a1-9a6a-4624-8f1d-cf0c3918e32a_upsampled\"]]]]]",null,null,null,"generic"],["di",720],["af.httprm",720,"-4071967109450012006",73]]
+25
+[["e",4,null,null,719]]  sau đó call curl --url 'https://flow-content.google/video/dd5c57a1-9a6a-4624-8f1d-cf0c3918e32a_upsampled?Expires=1790517440&KeyName=labs-flow-prod-cdn-key&Signature=UqfdTC1k3d6nmfezybuuxECfsUQ' \
+  -H 'accept: */*' \
+  -H 'accept-language: vi-VN,vi;q=0.9,fr-FR;q=0.8,fr;q=0.7,en-US;q=0.6,en;q=0.5' \
+  -H 'origin: https://flow.google.com' \
+  -H 'priority: u=1, i' \
+  -H 'referer: https://flow.google.com/' \
+  -H 'sec-ch-ua: "Google Chrome";v="153", "Not_A Brand";v="8", "Chromium";v="153"' \
+  -H 'sec-ch-ua-arch: "x86"' \
+  -H 'sec-ch-ua-bitness: "64"' \
+  -H 'sec-ch-ua-form-factors: "Desktop"' \
+  -H 'sec-ch-ua-full-version: "153.0.8010.48"' \
+  -H 'sec-ch-ua-full-version-list: "Google Chrome";v="153.0.8010.48", "Not_A Brand";v="8.0.0.0", "Chromium";v="153.0.8010.48"' \
+  -H 'sec-ch-ua-mobile: ?0' \
+  -H 'sec-ch-ua-model: ""' \
+  -H 'sec-ch-ua-platform: "Windows"' \
+  -H 'sec-ch-ua-platform-version: "19.0.0"' \
+  -H 'sec-ch-ua-wow64: ?0' \
+  -H 'sec-fetch-dest: empty' \
+  -H 'sec-fetch-mode: cors' \
+  -H 'sec-fetch-site: cross-site' \
+  -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36' tải về
+
+</USER_REQUEST>
+<ADDITIONAL_METADATA>
+The current local time is: 2026-09-27T14:59:14+07:00.
+
+The user's current state is as follows:
+Active Document: c:\flowkit\scratch\track_and_process_s07.py (LANGUAGE_PYTHON)
+Cursor is on line: 1
+Other open documents:
+- c:\flowkit\scratch\track_and_process_s06_v2.py (LANGUAGE_PYTHON)
+- c:\flowkit\scratch\patch_and_submit_s07.py (LANGUAGE_PYTHON)
+- c:\flowkit\scratch\track_and_process_s07.py (LANGUAGE_PYTHON)
+- c:\flowkit\skills\fk-pipeline.md (LANGUAGE_MARKDOWN)
+- c:\flowkit\skills\fk-gen-videos.md (LANGUAGE_MARKDOWN)
+Running terminal commands:
+- python -m agent.main (in c:\flowkit, running for 3h19m38s)
+- npm run dev (in c:\flowkit\dashboard, running for 3h19m33s)
+</ADDITIONAL_METADATA>

@@ -45,6 +45,8 @@ RPC_PROJECT_MEDIA = "Zzl0ze"
 RPC_MEDIA = "as29s"
 RPC_UPLOAD_IMAGE = "maseQ"
 RPC_UPSCALE_IMAGE = "SPrCad"
+RPC_UPSCALE_VIDEO = "p0UkFb"
+UPSCALE_VIDEO_MODEL = "veo_3_1_upsampler_1080p"
 
 CAPTCHA_IMAGE = "IMAGE_GENERATION"
 CAPTCHA_VIDEO = "VIDEO_GENERATION"
@@ -406,6 +408,36 @@ def image_upscale_request(media_id: str, resolution: str = "2K") -> str:
     except KeyError:
         raise ValueError("image upscale resolution must be 2K or 4K") from None
     return build_envelope(RPC_UPSCALE_IMAGE, [media_id, code, _context(None)])
+
+
+def video_upscale_request(media_id: str, project_id: str,
+                          *, aspect: Any = VIDEO_ASPECT_LANDSCAPE,
+                          model: str = UPSCALE_VIDEO_MODEL,
+                          operation_id: str | None = None) -> tuple[str, str]:
+    """Build the 1080p video upscale submit (RPC ``p0UkFb``).
+
+    Captured live from flow.google.com on 2026-09-27.
+    Slot 0: [None, media_id] -> the video media ID to upscale.
+    Slot 4: [None, operation_id or media_id, None, None, _client_uuid()].
+    Returns (f.req envelope, upsampled_operation_id).
+    The caller polls ``f"{media_id}_upsampled"`` via RPC ``jwpduf`` (or ``as29s``).
+    """
+    aspect_val = 2 if aspect in (VIDEO_ASPECT_LANDSCAPE, "HORIZONTAL", "VIDEO_ASPECT_RATIO_LANDSCAPE", 2) else 1
+    item = [None] * 32
+    item[0] = [None, str(media_id)]
+    item[2] = aspect_val
+    op = str(operation_id) if operation_id else str(media_id)
+    item[4] = [None, op, None, None, _client_uuid()]
+    item[6] = 2
+    item[31] = str(model)
+
+    envelope = build_envelope(RPC_UPSCALE_VIDEO, [
+        [item],
+        _context(project_id),
+        [_client_uuid()],
+    ])
+    upsampled_id = f"{media_id}_upsampled"
+    return envelope, upsampled_id
 
 
 def video_request(prompt: str, project_id: str, source_media_id: str,

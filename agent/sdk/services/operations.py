@@ -711,10 +711,25 @@ class OperationService:
             operations = [{"operation": {"name": existing_op}, "status": "MEDIA_GENERATION_STATUS_PENDING"}]
             return await _poll_operations(self._client, operations, timeout=300)
 
+        pid = scene.get("_project_id") or scene.get("project_id", "")
+        if not pid and scene.get("video_id"):
+            vid_row = await crud.get_video(scene.get("video_id", ""))
+            pid = vid_row.get("project_id", "") if vid_row else ""
+
+        gen_op = None
+        if scene.get("id"):
+            gen_reqs = await crud.list_requests(scene_id=scene.get("id"))
+            for r in gen_reqs:
+                if r.get("request_id") and r.get("media_id") == video_media_id:
+                    gen_op = r.get("request_id")
+                    break
+
         submit_result = await self._client.upscale_video(
             media_id=video_media_id,
             scene_id=scene.get("id", ""),
             aspect_ratio=aspect,
+            project_id=pid,
+            operation_id=gen_op,
         )
 
         if _is_error(submit_result):
