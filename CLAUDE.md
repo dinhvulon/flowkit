@@ -4,6 +4,7 @@ Base URL: `http://127.0.0.1:8100`
 
 ## Pre-flight
 
+Before ANY workflow:
 ```bash
 curl -s http://127.0.0.1:8100/health
 # Must return: {"extension_connected": true}
@@ -15,16 +16,75 @@ curl -s http://127.0.0.1:8100/api/flow/status
 Also needed: **one signed-in `https://flow.google.com/` tab left open**. Only the
 page can sign a Flow request, so nothing works headless.
 
-## How to work
+## Critical Rules (MUST follow)
 
-- Always use `/fk-*` skills — all rules and workflows live inside each skill
-- Never write scripts to loop API calls — use `POST /api/requests/batch`
-- `media_id` is always UUID format (`xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx`), never `CAMS...` strings
-- **On any pipeline error** (request `FAILED`, stuck `PROCESSING`, `extension_connected: false`, HTTP 4xx/5xx from `:8100`, YouTube `HttpError`, error strings like `UNSAFE_GENERATION` / `not found` / `CAPTCHA` / `NO_AT_TOKEN` / `NO_FLOW_PROJECT` / `UNSUPPORTED_ON_BATCH_API`): invoke `/fk-doctor` before guessing a fix
-- **Flush stale queue on new project**: whenever starting a new project, always flush stale PENDING requests first: `python -c "import sqlite3; conn = sqlite3.connect('flow_agent.db'); conn.execute('UPDATE request SET status=\'FAILED\' WHERE status=\'PENDING\''); conn.commit()"`
-- `flow_key_present: false` is **normal** — the current transport has no bearer token
-- **Vlog production lessons live in `/fk-time-travel-vlog` section 11** (user feedback: constraints as sentences not `Negative:`, phone is the camera, wipes never make the vlogger vanish, scene refs for cities, landscape refs for 16:9, hardest clip first). Follow them for every POV/vlog project.
-- **Confirm before every generation step.** Before any call that makes Flow generate media (refs, scene images, videos, test clips, retries, regens), say what and how many, then wait for the user's yes. After each generation step, stop for review and approval before the next stage. Report failures instead of auto-retrying. This overrides any skill text that says to auto-retry, auto-regen or run stages back-to-back.
+1. **Media ID is always UUID** — format `xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx`. Never use `CAMS...` / base64 strings.
+2. **Scene prompts = ACTION only** — never describe character appearance. Reference images handle visual consistency via `imageInputs`.
+3. **All reference images must exist before scene images** — verify every entity has `media_id` before generating scene images.
+4. **No throwaway scripts** — NEVER write Python, shell, or any script file to loop over API requests. Use `POST /api/requests/batch` to submit all requests at once, then poll `GET /api/requests/batch-status`. The server throttles automatically.
+5. **Locations use landscape, characters use portrait** — reference image orientation depends on entity type.
+6. **UUID extraction** — if a response gives `CAMS...` instead of UUID, extract UUID from the `fifeUrl` in the response URL: `/image/{UUID}?...`.
+7. **Cascade on regen** — regenerating an image auto-clears downstream video + upscale.
+8. **REGENERATE vs GENERATE** — `GENERATE_*` skips if already COMPLETED. `REGENERATE_*` always runs (clears + regenerates).
+9. **Image Material required** — every project needs a `material` field (e.g. `realistic`, `3d_pixar`, `anime`). List available: `GET /api/materials`.
+10. **Server handles throttling** — worker enforces max 5 concurrent requests + 10s cooldown. Submit ALL requests via `/batch`; do NOT manually stagger or loop.
+11. **Video prompts use sub-clip timing** — structure 8s video as time segments: `0-3s: [action]. 3-6s: [action]. 6-8s: [action].`
+12. **Character dialogue in sub-clips** — embed speech in quotes: `Luna says "Goodnight."` Max 10-15 words per character per 2-3s segment.
+13. **Scenes are mutable** — use `PATCH /api/scenes/{sid}` to update `prompt`, `video_prompt`, `narrator_text`, `character_names` after creation. Don't delete and recreate — patch instead.
+14. **Fact-check before scripting** — ALWAYS research events via web search before writing project stories, scene prompts, or narrator text. Facts (events, dates, names, operations, outcomes) MUST match real sources. Editorial opinion and analysis are allowed but must be framed as such. Never invent events, operation names, or statistics.
+15. **Real-people bypass** — when characters are based on real famous people (politicians, celebrities, military leaders), NEVER use their real name as entity `name` or anywhere in `description`, `image_prompt`, `prompt`, or `video_prompt`. AI image generators reject known public figures. Instead: (a) use a **role-based alias** as entity name (e.g. "Tổng Tư Lệnh" not "Trump", "Thủ Tướng Sắt" not "Netanyahu"), (b) describe **physical appearance only** — distinctive hair, face shape, build, clothing style — without naming who it is, (c) `narrator_text` may use real titles/roles for storytelling but real names never flow into image/video generation. Keep a `real_reference` mapping in the project plan file (`.omc/research/`) for internal tracking.
+16. **Review before upscale** — ALWAYS run `/fk-review-video` (light mode) after video generation, before upscaling. Scenes scoring < 7.5 get `video_prompt` updated from review errors, then regen video. Max 2 review-regen cycles.
+17. **Auto-retry failed videos (up to 5x)** — When generating videos, any failure or timeout MUST be automatically retried up to 5 times. If failed due to content filters (e.g. `as29s failed: [5]`), auto-sanitize prompt keywords and call `REGENERATE_IMAGE` to get a fresh start frame before regenerating the video.
+18. **Immediate rolling download & Watermark Removal** — As each scene video completes, immediately download it to `${OUTDIR}/scenes/scene_{idx}_{sid}.mp4`, and immediately run `remove_watermark_video` (via `python tools/remove_watermark_from_link.py`) to produce a clean version without Google logo or SynthID. All review and concat steps MUST use clean, watermark-free videos.
+19. **Mandatory review & Review Board** — Pipeline skills (`/fk-pipeline`, `/fk-gen-videos`) MUST automatically execute `/fk-review-video` immediately after video generation, display the per-scene scorecard table showing which nodes passed and which need regeneration, and ensure the Review Board web app (`python tools/review_server.py 8200`) is running.
+20. **Language matching for SEO & Thumbnails** — YouTube metadata (`/fk-youtube-seo`) and thumbnails (`/fk-thumbnail`) MUST match the dialogue/script language (e.g. 100% Japanese for Japanese POV vlogs, Vietnamese for Vietnamese, English for English). Never generate English/Vietnamese SEO for Japanese dialogue vlogs.
+21. **Flush stale queue on new project** — whenever starting or creating a new project (e.g. `/fk-create-project`, `/fk-time-travel-vlog`), ALWAYS execute `python -c "import sqlite3; conn = sqlite3.connect('flow_agent.db'); conn.execute('UPDATE request SET status=\'FAILED\' WHERE status=\'PENDING\''); conn.commit()"` first to flush all stale PENDING requests and prevent worker auto-retry loops causing `PUBLIC_ERROR_UNUSUAL_ACTIVITY`.
+22. **Mandatory Scene Image Review before Video Generation** — After generating scene images (Step 6), ALWAYS download images locally to `${OUTDIR}/images/scene_{idx}.jpg`, launch the Image Review Board (`review_images.html`), and pause for user review. Never jump directly into video generation without user approval of the scene start frames. Any unsatisfactory images MUST be resubmitted with `REGENERATE_IMAGE`.
+23. **Start Frame is Input Reference Only** — The generated scene image (`start_image_media_id` / start frame) serves strictly as the motion starting anchor. Character identity consistency still requires character reference images (`character_names` + `reference_media_ids` / `imageInputs`) to preserve the locked visual identity across the video.
+24. **Achernar Voice Profile** — For female travel vloggers / narrators, configure `voice_description` using the **Achernar** profile (Google Gemini-TTS: soft, higher-pitched, natural expressive conversational female voice, casual vlog tone, breathy when amazed, hushed whisper when nervous). Structure video prompt dialogue accordingly (`Mia says "..."`) so Veo 3 / Pinhole synthesizes matching native vocal audio. In Omni Flash / Pinhole Reference-to-Video (`MZZa6b`), Slot 7 is natively pinned to `[["achernar"]]` by default.
+25. **Strict Step-by-Step Review Gates (Images then Videos)** — Pipeline execution MUST proceed strictly step-by-step with explicit human review gates:
+    - **Step 6.5 (Image Review Gate)**: As soon as scene images are generated, STOP immediately. Clean image watermarks, download all images to `${OUTDIR}/images/scene_{idx}.jpg`, present the image gallery/review board to the user, and PAUSE. Do NOT generate videos until the user explicitly reviews and approves the start frames.
+27. **Omni Flash Ingredients Only (Reference-to-Video / `abra_r2v`)** — Khi tạo video cho các dự án vlog/nhân vật, **TUYỆT ĐỐI KHÔNG tạo ảnh Start Frame (`GENERATE_IMAGE`) rồi chạy Image-to-Video (`i2v`)**. Phương pháp start-frame làm chuyển động bị cứng, dễ méo người và biến dạng khuôn mặt khi chuyển động. **BẮT BUỘC chỉ sử dụng Omni Flash Ingredients (`GENERATE_VIDEO_REFS` / `omni_flash_models.reference_to_video` / `abra_r2v_<duration>s` qua RPC `MZZa6b`)**:
+    - Đính kèm trực tiếp các thành phần tham chiếu (Ingredients): Nhân vật (`Mia`), Trang phục (`Mia Outfit`), và Bối cảnh/Địa điểm (`reference_media_ids`).
+    - Model `abra_r2v` tổng hợp trực tiếp chuyển động video mượt mà từ các thành phần tham chiếu và prompt, tích hợp khẩu hình native với voice profile **Achernar** (Slot 7).
+    - Không chạy quy trình `GENERATE_IMAGE` cho từng cảnh; sau khi các entity có `media_id`, gửi thẳng yêu cầu `GENERATE_VIDEO_REFS`.
+28. **Clean-Before-Video-Gen (Bắt buộc tẩy logo ảnh trước khi đưa vào sinh video)** — Đối với BẤT KỲ phân cảnh nào cần tạo ảnh Start Frame hoặc ảnh Reference từ Google Flow/AI (như cảnh vũ trụ, drone, phong cảnh thiên nhiên, hoặc start frame chuyển cảnh):
+    - **TUYỆT ĐỐI KHÔNG dùng trực tiếp `media_id` do Google Flow tự sinh** để đưa thẳng vào sinh video. Ảnh AI của Google luôn tự chèn watermark logo ở góc dưới; nếu đưa thẳng vào i2v/r2v thì model video sẽ làm logo đó nhấp nháy, méo mó và dính chết vào video.
+    - **Quy trình bắt buộc 4 bước đối với mọi ảnh do AI sinh**:
+      1. Tải ảnh gốc về máy: `${OUTDIR}/images/scene_{idx}_{sid}.jpg`.
+      2. Chạy ngay `python tools/remove_watermark_from_image.py "${OUTDIR}/images/scene_{idx}_{sid}.jpg"` để xóa sạch logo và SynthID ➔ sinh ra file `scene_{idx}_{sid}_clean.jpg`.
+      3. Upload file sạch `scene_{idx}_{sid}_clean.jpg` ngược lên Google Flow qua `POST /api/flow/upload-image` để nhận một `media_id` UUID hoàn toàn sạch logo.
+      4. Cập nhật `media_id` sạch này vào Scene (`horizontal_image_media_id` / `vertical_image_media_id`), đưa lên Review Board cho user duyệt. CHỈ SAU ĐÓ mới dùng `media_id` sạch này để sinh video!
+29. **Confirm before every generation step (overrides the automatic parts of rules 16, 17, 19)** — Generation spends Flow credits, so:
+    - **Before** any call that makes Flow generate media (`/fk-gen-refs`, `/fk-gen-images`, `/fk-gen-videos`, `GENERATE_*` / `REGENERATE_*` batches, test clips, retries, review-driven regens), state what will be generated and how many items, then **wait for the user's explicit yes**.
+    - **After** each generation step finishes, STOP: show the results for review and wait for approval before starting the next stage (refs → videos → regens → concat).
+    - Failures and low review scores are **reported, not auto-retried**: propose the fix (sanitized prompt, regen list) and ask before resubmitting.
+    - Non-generating work (creating projects/scenes, uploading existing images, PATCHing fields, downloading, watermark removal) can proceed when the user asks for it.
+30. **Vlog production lessons live in `/fk-time-travel-vlog` section 11** (user feedback: constraints as sentences not `Negative:`, phone is the camera, wipes never make the vlogger vanish, scene refs for cities, landscape refs for 16:9, hardest clip first). Follow them for every POV/vlog project.
+31. **On any pipeline error** (request `FAILED`, stuck `PROCESSING`, `extension_connected: false`, HTTP 4xx/5xx from `:8100`, YouTube `HttpError`, error strings like `UNSAFE_GENERATION` / `not found` / `CAPTCHA` / `NO_AT_TOKEN` / `NO_FLOW_PROJECT` / `UNSUPPORTED_ON_BATCH_API`): invoke `/fk-doctor` before guessing a fix.
+
+## Pipeline Order (Omni Flash R2V Ingredients Workflow)
+
+```
+0. Research          /fk-research "topic" (fact-check via web search, save to .omc/research/)
+1. Health check      GET  /health → extension_connected: true
+2. Create project    POST /api/projects (with entities + material, story from research)
+3. Create video      POST /api/videos (HORIZONTAL or VERTICAL)
+4. Create scenes     POST /api/scenes (with character_names, duration: 4/6/8/10s, video_prompt)
+5. Gen ref images    POST /api/requests/batch (GENERATE_CHARACTER_IMAGE / upload locked refs)
+                     Verify all key entities (Character, Outfit, Location) have UUID media_id
+6. Gen videos (R2V)  POST /api/requests/batch (type: "GENERATE_VIDEO_REFS")
+                     Omni Flash abra_r2v synthesizes clips directly from Ingredients (Character, Outfit)
+                     Auto-retry failed videos up to 5x; rolling download clips to scenes/
+7. De-watermark      Immediately run remove_watermark_video on each clip -> scene_XX_clean.mp4
+7.5 Review videos    MANDATORY GATE! Present EACH individual unconcatenated scene video to user.
+                     Display per-scene scorecard table + Review Board (http://localhost:8200).
+                     STOP & PAUSE: User reviews each scene clip individually.
+                     Do NOT proceed to concat until user approves all individual scene videos!
+8. (Optional) 4K     POST /api/requests/batch (TIER_TWO only)
+9. Concat           ffmpeg normalize + concat (ONLY after all scene videos are approved)
+10. SEO & Thumbnails Auto-match script language (e.g. 100% native Japanese for Japanese POV vlog)
+```
 
 ## Since Flow moved (September 2026)
 
@@ -45,42 +105,67 @@ that change how you work:
   chaining to plain i2v; video upscale has no fallback. See `docs/CAPTURE.md`.
 - **A poll saying "Media not found." is not a failure.** Finished jobs report it.
 
+## Batch API
+
+Submit N requests at once (server throttles automatically — max 5 concurrent, 10s cooldown):
+
+```bash
+curl -X POST http://127.0.0.1:8100/api/requests/batch \
+  -H "Content-Type: application/json" \
+  -d '{"requests": [{"type": "...", "scene_id": "...", "project_id": "...", "video_id": "...", "orientation": "VERTICAL"}, ...]}'
+```
+
+Poll aggregate status:
+
+```bash
+curl -s "http://127.0.0.1:8100/api/requests/batch-status?video_id=<VID>&type=GENERATE_IMAGE"
+# Returns: {"total": 40, "pending": 30, "processing": 5, "completed": 5, "failed": 0, "done": false}
+# When "done": true → all requests have left the queue (completed or failed)
+# When "all_succeeded": true → every request completed successfully
+```
+
 ## Skills
 
-| Skill | When to use |
-|-------|-------------|
-| `/fk-create-project` | New project with entities + scenes |
-| `/fk-research` | Fact-check before scripting |
-| `/fk-gen-refs` | Generate reference images for entities |
-| `/fk-gen-images` | Generate scene images |
-| `/fk-gen-videos` | Generate scene videos |
-| `/fk-gen-chain-videos` | Videos with scene chaining transitions |
-| `/fk-review-video` | Review video quality before upscale |
-| `/fk-review-board` | Visual scene review board for feedback |
-| `/fk-concat` | Download + concat final video |
-| `/fk-concat-fit-narrator` | Concat trimmed to narrator duration |
-| `/fk-gen-narrator` | Generate narrator text + TTS |
-| `/fk-gen-text-overlays` | Generate text overlays from narrator text |
-| `/fk-gen-tts-template` | Create voice template for narration |
-| `/fk-gen-music` | Generate music via Suno |
-| `/fk-creative-mix` | Creative video mixing techniques |
-| `/fk-pipeline` | Full pipeline orchestration |
-| `/fk-monitor` | Monitor running pipeline |
-| `/fk-status` | Project status dashboard |
-| `/fk-switch-project` | Switch active project |
-| `/fk-fix-uuids` | Fix non-UUID media_ids |
-| `/fk-refresh-urls` | Refresh expired signed media URLs |
-| `/fk-doctor` | Diagnose errors + prescribe fixes (Flow/extension/worker/YT) |
-| `/fk-add-material` | Set image material style |
-| `/fk-change-model` | Change video/image model |
-| `/fk-change-provider` | View & switch the AI CLI, model and effort per role (claude/agy/codex) |
-| `/fk-insert-scene` | Insert scenes into chain |
-| `/fk-upload-image` | Upload local image to get media_id |
-| `/fk-thumbnail` | Generate YouTube thumbnails |
-| `/fk-brand-logo` | Apply channel logo watermark |
-| `/fk-youtube-seo` | Generate YouTube metadata |
-| `/fk-youtube-upload` | Upload to YouTube |
-| `/fk-camera-guide` | Cinematic camera reference |
-| `/fk-thumbnail-guide` | Thumbnail design reference |
-| `/fk-import-voice` | Import existing voice template |
-| `/fk-dashboard` | Live statusline setup |
+This project has reusable skills in `skills/`. When the user says `/fk-<name>`, read `skills/fk-<name>.md` and follow the instructions inside.
+
+| Skill | Purpose |
+|-------|---------|
+| `/fk-add-material` | fk-add-material — Image Material System |
+| `/fk-brand-logo` | fk-brand-logo — Apply Channel Branding (Intro + Outro + Logo + 4K Badge) |
+| `/fk-camera-guide` | Camera Guide — Cinematic Video Prompts (Veo 3) |
+| `/fk-change-model` | fk-change-model — View & Change Video/Image Model Keys |
+| `/fk-change-provider` | fk-change-provider — View & Switch the AI CLI for a Role |
+| `/fk-concat-fit-narrator` | Trim each scene video to fit its TTS narrator duration, burn text overlays, then concatenate into a final video. |
+| `/fk-concat` | Download and concatenate all scene videos into a single video with optional TTS narration. |
+| `/fk-create-project` | Create a new Google Flow video project. Ask the user for: |
+| `/fk-creative-mix` | Creative video mixing — combine techniques for cinematic results. |
+| `/fk-dashboard` | Show live GLA status in Claude Code statusline. |
+| `/fk-doctor` | Diagnose any FlowKit error and prescribe a fix. Knows the full error taxonomy across Google Flow, the Chrome extension, the FastAPI layer, the worker, and the YouTube upload pipeline. |
+| `/fk-fix-uuids` | Find and fix any non-UUID media_ids (CAMS... format) across all scenes and entities. |
+| `/fk-gen-chain-videos` | Generate videos with automatic scene chaining (start+end frame transitions). |
+| `/fk-gen-images` | Generate scene images for all scenes in a video. |
+| `/fk-gen-music` | fk-gen-music — Generate Music via Suno |
+| `/fk-gen-narrator` | fk-gen-narrator — Generate Narrator Text + TTS for All Scenes |
+| `/fk-gen-refs` | Generate reference images for all entities in a project. |
+| `/fk-gen-text-overlays` | fk-gen-text-overlays — Generate Text Overlays from Narrator Text |
+| `/fk-gen-tts-template` | fk-gen-tts-template — Generate Voice Template |
+| `/fk-gen-videos` | Generate videos for all scenes in a video. |
+| `/fk-import-voice` | fk-import-voice — Import Existing Voice as Template |
+| `/fk-insert-scene` | Insert new scene(s) into an existing video chain — for multi-angle shots, cutaways, or close-ups. |
+| `/fk-monitor` | fk-monitor — Full Pipeline Monitor |
+| `/fk-pipeline` | fk-pipeline — Smart Full-Pipeline Orchestrator |
+| `/fk-refresh-urls` | Re-sign expired media URLs for all scenes in a video (images, videos, upscale videos) and character reference images. |
+| `/fk-remove-watermark` | fk-remove-watermark — Remove Watermark & Disrupt SynthID from Images and Videos |
+| `/fk-research` | fk-research — Fact-Check & Research Before Scripting |
+| `/fk-review-board` | Start the Scene Review Board web app for visual feedback on scene chains. |
+| `/fk-review-video` | Review AI-generated scene videos for quality using Claude Vision. |
+| `/fk-status` | Show full status dashboard for a project. |
+| `/fk-switch-project` | fk-switch-project — Switch Active Project |
+| `/fk-thumbnail-guide` | YouTube Thumbnail Guide — Hook-Worthy Design Rules |
+| `/fk-thumbnail` | Generate 4 YouTube-optimized thumbnail variants for a project video. |
+| `/fk-time-travel-vlog` | fk-time-travel-vlog — Time Travel Vlog Orchestrator (Mọi Thời Kỳ, Mọi Địa Điểm) |
+| `/fk-upload-image` | Upload a local image file to Google Flow and get a media_id (UUID). |
+| `/fk-upload-ref` | fk-upload-ref — Upload Custom Reference Image for Character/Entity |
+| `/fk-vlog-guide` | fk-vlog-guide — Master Guide & Interactive Hub for Historical POV Vlogs |
+| `/fk-youtube-seo` | fk-youtube-seo — Generate YouTube Metadata (SEO-Optimized) |
+| `/fk-youtube-upload` | fk-youtube-upload — Upload Video to YouTube (Shorts + Long-form) |
