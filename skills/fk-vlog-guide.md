@@ -12,7 +12,7 @@ Khi bạn muốn sản xuất một tập vlog mới, hãy thực hiện tuần 
 ┌─────────────────────────────────────────────────────────────────────────────┐
 │ 0. THIẾT LẬP MÔI TRƯỜNG & UI WEB (Pre-Flight)   ➔ /health: true & :5173     │
 │ 1. NGHIÊN CỨU DỮ KIỆN (Fact-Check)              ➔ /fk-research              │
-│ 2. TẠO KỊCH BẢN & SET ACTIVE PROJECT            ➔ /fk-vlog-japan            │
+│ 2. TẠO KỊCH BẢN & SET ACTIVE PROJECT            ➔ /fk-time-travel-vlog      │
 │ 3. NẠP ẢNH MẶT THẬT (Tùy chọn)                  ➔ /fk-upload-ref            │
 │ 4. CHẠY PIPELINE TỰ ĐỘNG (All-in-One)           ➔ /fk-pipeline              │
 │ 4.5. KIỂM DUYỆT VIDEO (Review Board)            ➔ /fk-review-board (:8200)  │
@@ -142,7 +142,7 @@ Xác minh thực tế để kịch bản không bị AI "ảo giác" hoặc sán
 
 ---
 
-### BƯỚC 2: Khóa Mỹ Thuật & Tạo Kịch Bản (`/fk-vlog-japan`)
+### BƯỚC 2: Khóa Mỹ Thuật & Tạo Kịch Bản (`/fk-time-travel-vlog`)
 
 1. **Khóa chất liệu mỹ thuật qua [`/fk-add-material`](file:///c:/flowkit/skills/fk-add-material.md)**:
    - Luôn nạp `material: "realistic"` vào dự án. Hệ thống sẽ tự động chèn tiền tố _Photorealistic RAW photograph, natural available light_ vào toàn bộ ảnh nhân vật và phân cảnh, đồng thời áp negative prompt chống trôi thành anime/3D.
@@ -155,13 +155,8 @@ Xác minh thực tế để kịch bản không bị AI "ảo giác" hoặc sán
    - Khẩu độ Pan-Focus f/8–f/11 (nét sâu từ mặt vlogger đến cảnh chợ phía sau, zero bokeh).
    - Kỹ thuật **vừa đi vừa quay (Walking POV)**: camera nảy nhẹ theo bước chân, tạo hiệu ứng trôi cảnh 3D parallax sống động.
 3. **Tạo kịch bản vào FlowKit**:
-   - Gọi **[`/fk-vlog-japan`](file:///c:/flowkit/skills/fk-vlog-japan.md)** để sinh trọn gói kịch bản 10–12 phân cảnh với thoại tiếng Nhật đàm thoại chuẩn `dialog-japan`.
-   - Hoặc chạy nhanh script kịch bản có sẵn:
-     ```bash
-     python scripts/create_kamakura_1274.py   # Kịch bản Vịnh Hakata 1274
-     # hoặc
-     python scripts/create_kyoto_heian_1000.py # Kịch bản Kyoto Heian 1000
-     ```
+   - Gọi **[`/fk-time-travel-vlog`](file:///c:/flowkit/skills/fk-time-travel-vlog.md)** để sinh trọn gói kịch bản 10–12 phân cảnh với thoại tự nhiên phù hợp với bối cảnh lịch sử.
+   - Kịch bản sẽ tự động cấu trúc 7 hồi, khóa nhân vật và tạo các cảnh chuyển động mượt mà.
 
 ---
 

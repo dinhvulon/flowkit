@@ -1,6 +1,6 @@
 # Quy tắc khởi tạo Dự án mới (New Project Initialization)
 
-Mỗi khi người dùng yêu cầu tạo một dự án mới (hoặc gọi các skill tạo kịch bản/dự án như `/fk-create-project`, `/fk-vlog-japan`, `/fk-time-travel-vlog`, v.v.):
+Mỗi khi người dùng yêu cầu tạo một dự án mới (hoặc gọi các skill tạo kịch bản/dự án như `/fk-create-project`, `/fk-time-travel-vlog`, v.v.):
 
 1. **BẮT BUỘC DỌN SẠCH HÀNG ĐỢI CŨ**:
    Chạy lệnh sau trước khi bắt đầu tạo dự án hoặc kịch bản mới:

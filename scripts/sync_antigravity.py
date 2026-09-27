@@ -27,7 +27,7 @@ def discover_skills():
 
     skills = []
     for path in sorted(SKILLS_DIR.glob("fk-*.md")):
-        skill_id = path.stem  # e.g. "fk-vlog-japan"
+        skill_id = path.stem  # e.g. "fk-time-travel-vlog"
         raw_text = path.read_text(encoding="utf-8")
         lines = raw_text.splitlines()
 

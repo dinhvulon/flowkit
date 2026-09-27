@@ -1,6 +1,6 @@
 # fk-time-travel-vlog — Time Travel Vlog Orchestrator (Mọi Thời Kỳ, Mọi Địa Điểm)
 
-Tạo kịch bản và dự án video vlog **DU HÀNH THỜI GIAN / POV VLOG LỊCH SỬ** kiểu *"I Time Traveled to Ancient China in 211 BC"*, *"A Day in Ancient Rome"*, *"POV You Woke Up in 1890 London"* — vlogger hiện đại cầm điện thoại/gậy selfie, rơi vào một thời kỳ lịch sử cụ thể, vừa đi vừa nói chuyện với camera và dân bản địa. Khác với `/fk-vlog-japan` (khóa cứng vào Nhật Bản + thoại tiếng Nhật), skill này dùng cho **bất kỳ thời kỳ/địa điểm nào khác** (La Mã cổ đại, Trung Hoa Tần/Hán, London thời Victoria, Ai Cập cổ đại, Ba Tư, Viking...).
+Tạo kịch bản và dự án video vlog **DU HÀNH THỜI GIAN / POV VLOG LỊCH SỬ** kiểu *"I Time Traveled to Ancient China in 211 BC"*, *"A Day in Ancient Rome"*, *"POV You Woke Up in 1890 London"* — vlogger hiện đại cầm điện thoại/gậy selfie, rơi vào một thời kỳ lịch sử cụ thể, vừa đi vừa nói chuyện với camera và dân bản địa. Skill này dùng cho **mọi thời kỳ/địa điểm** (La Mã cổ đại, Trung Hoa Tần/Hán, London thời Victoria, Ai Cập cổ đại, Ba Tư, Viking, Nhật Bản Heian/Edo...).
 
 Dùng skill này cả khi user chỉ đưa một link YouTube kiểu này và nói "làm giống vậy", hoặc hỏi cách viết kịch bản / cách chuyển cảnh cho vlog lịch sử, "xuyên không vlog", "vlog cổ đại", "POV về quá khứ".
 
@@ -96,7 +96,7 @@ Tên trong `CHARACTER_LOCK`, tên entity và tên người nói trong `video_pro
 
 Điểm then chốt (kiểm chứng từ video mẫu): nhân vật **mặc đồ thời kỳ ngay từ khung hình đầu tiên**, KHÔNG có cảnh mặc đồ hiện đại rồi đổi đồ. Yếu tố gây tò mò/"người lạ" nằm hoàn toàn ở **ngoại hình** (tóc màu nổi, người ngoại quốc) + gậy selfie — dân bản địa nhìn tò mò nhưng nhân vật vẫn "hòa nhập" về trang phục. Cách này cho phép nhân vật đi khắp nơi mà không bị lộ ngay, để dành căng thẳng cho cao trào.
 
-Mặc đồ hiện đại + cảnh "vừa rơi xuống"/đổi đồ (kiểu `/fk-vlog-japan`) là **biến thể phong cách tùy chọn** — chỉ dùng khi user yêu cầu rõ hiệu ứng hài "lạc loài".
+Mặc đồ hiện đại + cảnh "vừa rơi xuống"/đổi đồ là **biến thể phong cách tùy chọn** — chỉ dùng khi user yêu cầu rõ hiệu ứng hài "lạc loài".
 
 ### 3. Strict Ethnicity Lock & Period Lock
 - Mọi người xuất hiện trong khung (người đi đường, người bán hàng, lính canh, quý tộc) phải **đúng chủng tộc bản địa của thời kỳ/địa điểm đó** — nghiên cứu qua `/fk-research` trước khi viết `description`.
