@@ -8,7 +8,7 @@ Reference for writing video prompts optimized for Google Veo 3. Veo 3 generates 
 - **Style:** Natural prose — write like briefing a film director
 - **Camera movement:** Always a **separate sentence** — never embed in action description
 - **Audio:** Always describe at end of prompt with `Audio:`, `SFX:`, `Music:` labels
-- **Negative prompt:** Always append `Negative: subtitles, watermark, text overlay`
+- **Constraints (this repo's rule, from user feedback):** do NOT append a `Negative:` keyword list — it proved ineffective (a phone kept appearing even when listed). Write each constraint as a plain sentence in the prompt body instead, e.g. `No subtitles or text appear on screen.` / `The phone is the camera, so no phone appears anywhere in the frame.` See `/fk-time-travel-vlog` section 11. The `Negative:` examples further down are kept only as the generic Veo reference.
 
 ### 5-Component Structure
 
@@ -254,6 +254,8 @@ However, for Veo 3 specifics:
 
 ## Negative Prompt
 
+> **Override in this repo:** use constraint sentences in the prompt body instead of a `Negative:` line (see the rule at the top).
+
 Veo 3 supports negative prompts — list keywords to exclude (no instructive language):
 
 - Wrong: `no walls, don't show cars`
@@ -355,7 +357,7 @@ Before submitting any video prompt, verify:
 - [ ] Dialogue short (fits in ~8s), uses `:` format or `(no subtitles)`
 - [ ] Multi-shot: max 2–3, with match-action cues at transitions
 - [ ] Character description consistent across multi-prompt sequences
-- [ ] Negative prompt included (at minimum: `subtitles, watermark`)
+- [ ] Constraints written as sentences in the body (at minimum: no subtitles/text on screen; for phone-vlog shots, no phone in frame) — no `Negative:` line
 - [ ] No abstract words — everything is visual/audible and specific
 - [ ] Character physically present in start frame if acting or speaking in video (no mid-clip pop-in)
 

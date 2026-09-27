@@ -23,6 +23,7 @@ page can sign a Flow request, so nothing works headless.
 - **On any pipeline error** (request `FAILED`, stuck `PROCESSING`, `extension_connected: false`, HTTP 4xx/5xx from `:8100`, YouTube `HttpError`, error strings like `UNSAFE_GENERATION` / `not found` / `CAPTCHA` / `NO_AT_TOKEN` / `NO_FLOW_PROJECT` / `UNSUPPORTED_ON_BATCH_API`): invoke `/fk-doctor` before guessing a fix
 - **Flush stale queue on new project**: whenever starting a new project, always flush stale PENDING requests first: `python -c "import sqlite3; conn = sqlite3.connect('flow_agent.db'); conn.execute('UPDATE request SET status=\'FAILED\' WHERE status=\'PENDING\''); conn.commit()"`
 - `flow_key_present: false` is **normal** — the current transport has no bearer token
+- **Vlog production lessons live in `/fk-time-travel-vlog` section 11** (user feedback: constraints as sentences not `Negative:`, phone is the camera, wipes never make the vlogger vanish, scene refs for cities, landscape refs for 16:9, hardest clip first). Follow them for every POV/vlog project.
 - **Confirm before every generation step.** Before any call that makes Flow generate media (refs, scene images, videos, test clips, retries, regens), say what and how many, then wait for the user's yes. After each generation step, stop for review and approval before the next stage. Report failures instead of auto-retrying. This overrides any skill text that says to auto-retry, auto-regen or run stages back-to-back.
 
 ## Since Flow moved (September 2026)

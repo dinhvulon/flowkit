@@ -30,7 +30,7 @@ Skill này kết hợp:
 2. **Character Bible khóa nhân vật** — khối `CHARACTER_LOCK` cố định dán vào mọi entity/scene để giữ mặt, tóc, trang phục nhân vật giống hệt suốt video (mục 2).
 3. **Research Pack** — checklist sự thật lịch sử theo thời kỳ, tránh bịa sự kiện/vật dụng sai niên đại (mục 4).
 4. **Storyboard + Clip JSON từng clip 8s** — mỗi clip có `transition_in`/`transition_out` viết thành câu prompt cụ thể và cách nối được ghi rõ (mục 6, 7, 10).
-5. **Chuẩn chân thực "máy của nhân vật"** — ngôn ngữ hình ảnh điện thoại, negative prompt, hậu kỳ đồng nhất (mục 9, Bước 5).
+5. **Chuẩn chân thực "máy của nhân vật"** — ngôn ngữ hình ảnh điện thoại, ràng buộc viết thành câu khẳng định, hậu kỳ đồng nhất (mục 9, 11, Bước 5).
 
 Skill này **gọi các skill FlowKit khác** để tự động fact-check và triển khai:
 - `/fk-research` — bắt buộc chạy trước khi viết bất kỳ prompt nào, để khóa chính xác niên đại, địa danh, trang phục, ẩm thực.
@@ -94,9 +94,7 @@ Voice: Achernar — soft, higher-pitched, natural expressive conversational fema
 ```
 Tên trong `CHARACTER_LOCK`, tên entity và tên người nói trong `video_prompt` phải **trùng nhau tuyệt đối** (mẫu gốc có chỗ lệch Nora/Mia — đừng lặp lại lỗi đó).
 
-Điểm then chốt (kiểm chứng từ video mẫu): nhân vật **mặc đồ thời kỳ ngay từ khung hình đầu tiên**, KHÔNG có cảnh mặc đồ hiện đại rồi đổi đồ. Yếu tố gây tò mò/"người lạ" nằm hoàn toàn ở **ngoại hình** (tóc màu nổi, người ngoại quốc) + gậy selfie — dân bản địa nhìn tò mò nhưng nhân vật vẫn "hòa nhập" về trang phục. Cách này cho phép nhân vật đi khắp nơi mà không bị lộ ngay, để dành căng thẳng cho cao trào.
-
-Mặc đồ hiện đại + cảnh "vừa rơi xuống"/đổi đồ là **biến thể phong cách tùy chọn** — chỉ dùng khi user yêu cầu rõ hiệu ứng hài "lạc loài".
+**Trang phục theo ảnh ref (góp ý của user, đã kiểm chứng):** với R2V, quần áo của vlogger **lấy từ ảnh ref**, không lấy từ chữ trong `CHARACTER_LOCK`. Vlogger **mặc đồ hiện đại theo ảnh ref là chấp nhận được**, không bắt buộc đồ thời kỳ. Yếu tố "người lạ" nằm ở ngoại hình + gậy selfie + trang phục khác dân bản địa. Chỉ khi user yêu cầu đồ thời kỳ thì mới sinh thêm ảnh ref nhân vật mặc đồ thời kỳ (giống node `img-char-period` trong template import, Bước 4.9), và không thêm câu tả trang phục vào prompt để "ép" khi ảnh ref đang mặc đồ khác.
 
 ### 3. Strict Ethnicity Lock & Period Lock
 - Mọi người xuất hiện trong khung (người đi đường, người bán hàng, lính canh, quý tộc) phải **đúng chủng tộc bản địa của thời kỳ/địa điểm đó** — nghiên cứu qua `/fk-research` trước khi viết `description`.
@@ -188,7 +186,7 @@ Cột "Khung cuối" mô tả chính xác khung hình cuối clip (vd: "súc g�
 | ~15% | POV mắt nhân vật, thấy tay cô tương tác với đồ vật/người — không thấy mặt, dùng cho beat xúc giác | `first-person POV from her eye level, her own hands visible in the lower frame [scooping millet / touching bronze armor]` |
 | ~10% | Sau gáy / qua vai — chủ yếu để làm chuyển cảnh | `camera behind her head, she turns away to look at [X], the back of her hair bun fills the frame` |
 | ~5% | Máy dựng cố định (ăn uống, kết) | `smartphone propped on the table facing her, static frame, she sits and eats, vendors moving behind` |
-| ~5% | Toàn cảnh hoành tráng nhưng **vẫn từ vị trí nhân vật đứng** | `phone held up from where she stands on a high earthen ridge, slow handheld pan over [thousands of soldiers / the pits]` |
+| ~5% | Toàn cảnh hoành tráng nhưng **vẫn từ vị trí nhân vật đứng** | `view from where she stands on a high earthen ridge, slow handheld pan over [thousands of soldiers / the pits]; the phone is the camera, so no phone appears anywhere in the frame` |
 
 **Không drone, không flycam, không b-roll điện ảnh tách rời** — video mẫu gần như không có shot nào không "quay bằng máy của cô". Chỉ dùng drone khi user yêu cầu rõ.
 
@@ -222,7 +220,7 @@ Viết `transition_in`/`transition_out` thành **câu prompt cụ thể**, khôn
 
 | Kỹ thuật | Cuối clip A (`transition_out`) | Đầu clip B (`transition_in`) |
 |---|---|---|
-| **A. Foreground wipe** ⭐ dùng nhiều nhất | `in the last 1.5 seconds two laborers carry a large wooden log right across the lens from left to right, almost filling the frame` | `opens with a wooden log sliding out of frame to the right very close to the lens, revealing [new place]` |
+| **A. Foreground wipe** ⭐ dùng nhiều nhất | POV: `in the last 1.5 seconds two laborers carry a large wooden log right across the lens from left to right, almost filling the frame` · **Selfie (có vlogger trong khung):** `two porters walk past right behind her; the log swings through the narrow gap between the lens and her face; her face stays visible behind it until the log covers the whole frame in the final half second. She stays in frame the whole clip and never disappears; they pass behind her, never through her` | `opens with a wooden log sliding out of frame to the right very close to the lens, revealing [new place]` |
 | **B. Look-away / back-of-head** (video mẫu dùng để reveal đại quân) | `she turns her head away from the camera to look behind her, the back of her hair bun fills the frame` | `opens on the back of her head, she turns around to face the camera revealing [new place] behind her` |
 | **C. Swing — lia theo chuyển động** | `a horse gallops past very close, the camera whips right following it, heavy motion blur fills the frame` | `begins mid whip pan with heavy motion blur moving right, settling on [new place]` |
 | **D. Selfie → POV** (beat xúc giác) | `she leans toward the camera, whispers 'look at this', and points past the lens` | `first-person POV from her eye level, her own hands visible in the lower frame reaching for [object]` |
@@ -257,8 +255,8 @@ Video mẫu **không có bất kỳ chữ nào trên màn hình** — không tit
 - **Dấu vết điện thoại**: méo ống kính góc siêu rộng, rung tay nhẹ theo nhịp bước, cánh tay/gậy lọt mép khung ở shot selfie, auto-exposure theo nguồn sáng tự nhiên. Không dolly/crane/gimbal mượt kiểu điện ảnh.
 - **Người nền phản ứng**: dân bản địa dừng lại nhìn chằm chằm, tò mò hoặc nghi ngờ — nhưng **không ai nói** trừ người nói duy nhất của clip.
 - **Audio môi trường đúng thời kỳ**: tiếng chợ bằng ngôn ngữ cổ/địa phương, bánh xe gỗ lạch cạch, chuông đồng xa — ghi ở dòng `Audio:` cuối prompt.
-- **Negative bắt buộc** (cuối mọi `video_prompt`):
-  `Negative: subtitles, on-screen text, watermark, modern buildings, cars, other modern people, second speaker, face change, extra fingers, drone shot, cinematic dolly.`
+- **Ràng buộc viết thành câu khẳng định trong thân prompt — KHÔNG dùng dòng `Negative:` liệt kê từ khóa** (góp ý của user: liệt kê từ khóa không có tác dụng, điện thoại vẫn hiện ra). Câu chuẩn, đặt trước dòng `Audio:`:
+  `The phone is the camera, so no phone appears anywhere in the frame. Mia stays in frame for the whole clip and never disappears. The locals wear [period clothing]; everything around is [era], with no modern buildings or vehicles. Only Mia speaks. No subtitles or text appear on screen. This looks like real footage, not a movie or a 3D render.`
 - **Material**: `realistic` mặc định áp *Canon EOS R5, 35mm* — kiểu ảnh máy ảnh, lệch với footage điện thoại. Khuyến nghị tạo material tùy chỉnh (giữ ảnh ref chân thực, chỉ đổi scene sang chất điện thoại):
   ```bash
   curl -X POST http://127.0.0.1:8100/api/materials -H "Content-Type: application/json" -d '{
@@ -291,7 +289,7 @@ Sau bảng storyboard, viết **Clip JSON cho từng clip 8s** theo mẫu `promp
   "transition_in": "opens with a cart wheel sliding out of frame very close to the lens",
   "transition_out": "foreground wipe: log fills the frame in the final second",
   "join": "CUT — cắt tại khung súc gỗ che kín nhất; CH2-06 mở bằng súc gỗ rời khung sang phải",
-  "negative": "no subtitles, no on-screen text, no modern buildings, no cars, no other modern people, no second speaker, no face change, no extra fingers"
+  "constraints": "The phone is the camera, so no phone appears anywhere in the frame. Nora stays in frame for the whole clip and never disappears. Only Nora speaks. No subtitles or text appear on screen. This looks like real footage, not a movie or a 3D render."
 }
 ```
 
@@ -302,9 +300,47 @@ Sau bảng storyboard, viết **Clip JSON cho từng clip 8s** theo mẫu `promp
 | `shot` + khung đầu của `transition_in` | `prompt` (ảnh Frame 0 — mô tả tư thế ở giây 0, kể cả vật che đang rời khung) |
 | `style` + `shot` + `action` + `dialogue` + `background_people` + `transition_out` | `video_prompt` dạng văn xuôi, chia `0-3s / 3-6s / 6-8s`; thoại theo format `Nora says: "..." (no subtitles)` |
 | `audio` | dòng `Audio:` / `SFX:` cuối `video_prompt` |
-| `negative` | dòng `Negative:` cuối `video_prompt` |
+| `constraints` | các câu khẳng định ngay trước dòng `Audio:` trong `video_prompt` (không dùng `Negative:`) |
 | `join` | `chain_type` + `parent_scene_id` (CONTINUATION nếu cùng bối cảnh) và ghi chú cho bước F2V/concat |
 | `transition_prompt` | để trống — chỉ dùng khi scene có `end_scene_media_id`, mà Veo start+end đang unsupported |
+
+---
+
+### 11. Bài Học Từ Sản Xuất Thực Tế — Góp Ý Của User (BẮT BUỘC, ưu tiên hơn mọi chỗ khác trong skill)
+
+Rút ra từ dự án `output/atlantis-9600bc/` (2026-09-27). Khi mâu thuẫn với phần khác của skill, **mục này thắng**.
+
+**Quy trình**
+1. **Xác nhận trước mỗi bước sinh** (ảnh ref, video, clip thử, sinh lại): nói rõ sinh gì, bao nhiêu, rồi chờ user đồng ý. Xong mỗi bước thì **dừng và đưa kết quả cho user xem** (kèm link file, bảng ghép ảnh hoặc khung hình). Không tự sinh lại khi lỗi.
+2. **Chạy thử clip khó nhất trước, 1 clip**, rồi **1 clip bình thường làm mốc**, trước khi gửi cả loạt. Lỗi thường có hệ thống; sửa ở vài clip đầu rẻ hơn nhiều so với sửa cả loạt.
+3. **Ảnh ref phải được user xem trước khi dùng.** Ghép bảng ảnh và đưa đường dẫn file để user tự xem.
+
+**Ảnh ref (R2V)**
+4. Mỗi clip **tối đa 3 ref**; worker chỉ lấy entity `character` và `visual_asset`. Công trình hay bối cảnh cần giữ nhất quán (thành phố, tường thành, đền) phải khai báo là `visual_asset`.
+5. **Clip nào có thành phố hay bối cảnh lớn thì phải kèm ảnh ref của chính bối cảnh đó** (ví dụ ảnh toàn cảnh thành phố). Chỉ tả bằng chữ thì model tự vẽ một thành phố khác.
+6. **Video 16:9 (long-form): ảnh ref cảnh rộng sinh ngang 16:9**, còn ảnh ref nhân vật và vật cao để dọc 9:16. FlowKit chỉ sinh ngang cho entity `location`, nên với `visual_asset` cảnh rộng: tạm PATCH `entity_type: location` → `REGENERATE_CHARACTER_IMAGE` → đổi lại `visual_asset`.
+7. Ảnh ref không được có người, tay, đồ vật hay trang phục hiện đại lọt vào (găng tay, ủng, người mặc áo thun), không có kiến trúc lệch thời kỳ (mái vòm, tháp nhọn, lâu đài trung cổ), và không có dải màu trơn quanh ảnh.
+
+**Viết `video_prompt`**
+8. **Ràng buộc là câu khẳng định**, không dùng dòng `Negative:` (xem mục 9).
+9. **Điện thoại là máy quay:** luôn có câu `The phone is the camera, so no phone appears anywhere in the frame.` Không viết `she holds the phone up` hay `the phone peeks out` (model sẽ vẽ luôn cái điện thoại). Với POV, cho tay nhân vật bận việc khác (bám mép thuyền, cầm đồ vật).
+10. **Chuyển cảnh selfie bằng vật lướt qua ống kính:** vật đi **giữa ống kính và mặt** nhân vật; nhân vật **không bao giờ biến mất**; vật chỉ che kín khung trong **nửa giây cuối** (mẫu ở mục 7c).
+11. **Chống hình kiểu 3D ở cảnh thần thoại hoặc thảm họa** (model chỉ biết những cảnh này qua phim và game):
+    - mở prompt bằng khối "footage thật": `raw unedited amateur video, looks like real footage posted online, not a movie`, rung tay, auto-exposure, nhiễu nén, giọt nước trên ống kính, ánh sáng bệt;
+    - tả bằng vật liệu có thật (ví dụ "tường ốp tấm đồng đỏ cũ, xỉn màu" thay vì "orichalcum phát sáng"); tên thần thoại chỉ để trong lời thoại;
+    - giảm độ hoành tráng: cảnh ở xa, bị mưa hoặc sương che, khung lệch;
+    - nhưng **vẫn phải kèm ảnh ref bối cảnh** (quy tắc 5), nếu không sẽ mất nhận diện (ví dụ Atlantis thành làng chài Anh).
+
+**Kỹ thuật FlowKit**
+12. `POST /api/scenes` không nhận `duration`; phải `PATCH {"duration": 8}` (thiếu thì âm thầm ra clip 10s).
+13. Mỗi clip chỉ có 1 giọng, lấy từ entity **đầu tiên theo thứ tự DB** có `voice_description`. **Chỉ nhân vật chính khai báo voice**; khai báo cho nhân vật phụ thì giọng họ sẽ đè lên thoại của nhân vật chính.
+14. Sinh lại một scene R2V đã COMPLETED: PATCH `horizontal_video_status: PENDING` rồi gửi `GENERATE_VIDEO_REFS` (không có `REGENERATE_VIDEO_REFS`).
+15. Ảnh do Flow sinh luôn có logo ✦ ở góc dưới phải (tâm khoảng `(W-98, H-97)`). Xóa bằng `tools/remove_watermark_from_image.py` (đã sửa ngưỡng ngày 2026-09-27), rồi **mở ảnh ra kiểm tra**. Ảnh không phải do Flow sinh (ví dụ bảng ảnh ghép của user) thì tool có thể đoán sai vị trí.
+16. Google chặn sinh tự động (`UNUSUAL_ACTIVITY`) → làm theo Bước 4.9. Đổi tài khoản Google thì phải tạo project mới (project và media thuộc tài khoản đã tạo ra chúng).
+
+**Nội dung**
+17. Vlogger mặc đồ hiện đại theo ảnh ref là chấp nhận được (mục 2).
+18. User có thể yêu cầu **cảnh mở đầu FPV điện ảnh** (từ không gian lao xuống toàn cảnh thành phố, không có vlogger), là ngoại lệ của luật "mọi shot quay bằng điện thoại". Clip đó dùng ảnh ref toàn cảnh, giữ yên 2–3 giây cuối, và clip sau mở bằng vật lướt qua ống kính để che cú cắt.
 
 ---
 
@@ -436,7 +472,7 @@ Khi tất cả scene có `${ori}_image_status = COMPLETED`, dừng lại và **b
 | Tiêu chí | Pass | Fail → Hành động |
 |---|---|---|
 | Khuôn mặt nhân vật giống ảnh ref, rõ, đúng góc | ✅ | REGENERATE_IMAGE với prompt rõ hơn về góc máy |
-| Trang phục đúng thời kỳ (không đồ hiện đại lẫn vào) | ✅ | Thêm negative: `"no modern clothing, no jeans, no t-shirt"` |
+| Trang phục của vlogger khớp ảnh ref (đồ hiện đại theo ảnh ref là chấp nhận được); dân bản địa mặc đồ đúng thời kỳ | ✅ | Thêm câu: `The locals wear [period clothing].` |
 | Bối cảnh + người nền đúng niên đại và đúng chủng tộc bản địa | ✅ | REGENERATE_IMAGE, siết thêm thành phố + năm vào `prompt` |
 | Trông như **khung hình điện thoại** (góc siêu rộng, méo nhẹ), không phải ảnh điện ảnh/studio | ✅ | Patch `prompt` thêm `"ultra-wide 0.5x smartphone frame, slight lens distortion"` |
 | Selfie: tay/gậy selfie lọt mép khung | ✅ | Patch `prompt` nhấn mạnh `"her extended arm and the Selfie Stick visible at the frame edge"` |

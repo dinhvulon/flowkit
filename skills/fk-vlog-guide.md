@@ -162,7 +162,7 @@ Xác minh thực tế để kịch bản không bị AI "ảo giác" hoặc sán
    - Camera trước **góc siêu rộng 0.5x** trên gậy selfie; cánh tay hoặc gậy lọt mép khung, ống kính méo nhẹ, rung tay theo nhịp bước.
    - Tỉ lệ shot: ~65% selfie · ~15% POV thấy tay nhân vật · ~10% sau gáy · ~5% máy dựng trên bàn · ~5% toàn cảnh quay từ chỗ nhân vật đứng.
    - **Cấm** dolly, crane, gimbal glide, drone, arc shot, slow motion và bokeh điện ảnh.
-   - `video_prompt` dài 100–150 từ, chia mốc `0-2s / 2-6s / 6-8s`; câu máy quay tách riêng; cuối prompt có `Audio:` / `SFX:` / `Negative:` (negative chỉ liệt kê từ khóa, không viết "no …").
+   - `video_prompt` dài 100–150 từ, chia mốc `0-2s / 2-6s / 6-8s`; câu máy quay tách riêng; cuối prompt có `Audio:` / `SFX:`. **Không dùng dòng `Negative:`**: viết ràng buộc thành câu khẳng định ngay trước `Audio:`, ví dụ `The phone is the camera, so no phone appears anywhere in the frame.` (xem `/fk-time-travel-vlog` mục 11: toàn bộ bài học sản xuất thực tế và góp ý của user).
    - Thoại viết dạng `Mia says: …` **không có ngoặc kép** để Veo không sinh phụ đề. Mỗi clip 8s chứa 12–18 từ và chỉ một người nói.
 3. **Tạo kịch bản**:
    - Gọi **[`/fk-time-travel-vlog`](file:///c:/flowkit/skills/fk-time-travel-vlog.md)** kèm file research. Độ dài mặc định: bản dài ~10 phút ≈ 38–42 beat (76–84 scene 8s); Shorts 4–6 beat. Có thể đặt độ dài khác (ví dụ dự án Atlantis có 35 scene).
