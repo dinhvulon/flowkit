@@ -139,6 +139,9 @@ _CRITICAL_RULES = """\
     - **After** each generation step finishes, STOP: show the results for review and wait for approval before starting the next stage (refs → videos → regens → concat).
     - Failures and low review scores are **reported, not auto-retried**: propose the fix (sanitized prompt, regen list) and ask before resubmitting.
     - Non-generating work (creating projects/scenes, uploading existing images, PATCHing fields, downloading, watermark removal) can proceed when the user asks for it.
+30. **Vlog production lessons live in `/fk-time-travel-vlog` section 11** (user feedback: constraints as sentences not `Negative:`, phone is the camera, wipes never make the vlogger vanish, scene refs for cities, landscape refs for 16:9, hardest clip first). Follow them for every POV/vlog project.
+31. **On any pipeline error** (request `FAILED`, stuck `PROCESSING`, `extension_connected: false`, HTTP 4xx/5xx from `:8100`, YouTube `HttpError`, error strings like `UNSAFE_GENERATION` / `not found` / `CAPTCHA` / `NO_AT_TOKEN` / `NO_FLOW_PROJECT` / `UNSUPPORTED_ON_BATCH_API`): invoke `/fk-doctor` before guessing a fix.
+32. **AI-First Video Review before User Approval (Tự động review & đưa Scorecard trước khi xin User duyệt)** — Sau khi video hoàn tất và được khử sạch watermark (`scene_XX_clean.mp4`), Agent TUYỆT ĐỐI KHÔNG chỉ gửi video thô rồi hỏi duyệt chung chung. Agent BẮT BUỘC phải tự động chạy phân tích `/fk-review-video` trước: trích xuất frames, chấm điểm theo 6 tiêu chuẩn cốt lõi (Character Consistency 25%, Prompt Adherence 20%, Motion Quality 20%, Visual Fidelity 15%, Temporal Coherence 10%, Composition 10%), rà soát lỗi AI (Critical/High/Minor), và trình bày bảng Scorecard chi tiết kèm ảnh preview frames cho User xem trước. CHỈ SAU ĐÓ mới xin ý kiến phê duyệt của User.
 """
 
 _PIPELINE_OVERVIEW = """\

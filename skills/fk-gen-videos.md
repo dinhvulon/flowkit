@@ -90,22 +90,23 @@ python tools/review_server.py 8200
 ```
 Provide the link: **`http://localhost:8200?video_id=<VID>`**
 
-## Step 7: Output & Mandatory Individual Video Review Gate (CRITICAL)
+## Step 7: Output & Mandatory Individual Video Review Gate (AI-First Review then Human Approval)
 
-1. **Verify all videos downloaded locally**:
-   - Ensure every scene video is downloaded to `${OUTDIR}/scenes/scene_{idx:02d}_{sid}.mp4`.
-2. **Present individual videos for review**:
-   - Launch Review Board: `python tools/review_server.py 8200`.
-   - Provide link: **`http://localhost:8200?video_id=<VID>`** or **`http://localhost:8200/review_images.html`**.
-   - Print comprehensive Markdown table in chat showing every single unconcatenated scene video (Scene index, title/action, duration, local video link/file, vision score, status).
+1. **Verify all videos downloaded locally & watermarks cleaned**:
+   - Ensure every scene video is downloaded to `${OUTDIR}/scenes/scene_{idx:02d}_{sid}.mp4` and de-watermarked to `_clean.mp4`.
+2. **Present Scorecard & Analysis BEFORE Asking for Approval**:
+   - Agent BẮT BUỘC chạy phân tích `/fk-review-video` (Step 6) trước.
+   - Xuất bảng Scorecard chi tiết (6 tiêu chí: Character Consistency 25%, Prompt Adherence 20%, Motion Quality 20%, Visual Fidelity 15%, Temporal Coherence 10%, Composition 10%) kèm ảnh frames minh họa trực tiếp trong chat.
+   - Launch Review Board: `python tools/review_server.py 8200` (link: **`http://localhost:8200?video_id=<VID>`**).
 3. **STOP AND PAUSE HERE:**
    - **DO NOT** call `/fk-concat` or concatenate the video automatically!
-   - Ra video là User review luôn từng clip một!
+   - Ra video là phân tích trước bằng AI rồi User duyệt từng clip một!
    - Ask user for feedback on each clip. If any clip needs adjustments (e.g. action, camera angle, phone selfie vlog perspective, lip sync), update the scene's `video_prompt` and submit `REGENERATE_VIDEO`.
    - Wait for explicit user instruction ("ghép video", "concat đi", or `/fk-concat`) before concatenating.
 
 ## Important rules
 
+- **AI-First Video Review before User Approval (CRITICAL):** Tự động review bằng AI và đưa Scorecard trước khi xin User duyệt! Sau khi có video sạch, Agent phải chạy `/fk-review-video`, chấm điểm và đưa kết quả trước cho User.
 - **Mandatory Individual Video Review Gate (CRITICAL):** Ra video là User review luôn từng clip riêng lẻ! Never auto-concatenate into a final video until the user has reviewed and approved all individual clips.
 - **Auto-retry rule (CRITICAL):** Videos must be automatically retried up to 5 times before giving up.
 - **Immediate download (CRITICAL):** Download scene videos to `${OUTDIR}/scenes/` as soon as they complete.

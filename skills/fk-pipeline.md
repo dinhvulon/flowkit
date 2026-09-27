@@ -301,15 +301,16 @@ Batch 5. Poll 15s. Each video takes 2-5 min.
 
 ---
 
-### Stage 2.5 — Mandatory Review of Individual Scene Videos (CRITICAL HUMAN GATE)
+### Stage 2.5 — Mandatory Review of Individual Scene Videos (AI-First Review Gate & Human Approval)
 
 > [!IMPORTANT]
 > **STOP AND PAUSE HERE! DO NOT PROCEED TO CONCAT AUTOMATICALLY.**
-> Pipeline execution MUST stop after all scene videos are downloaded. Present EACH individual unconcatenated scene video to the user for direct review:
-> 1. Ensure all clips are in `${OUTDIR}/scenes/scene_{idx:02d}_{sid}.mp4`.
-> 2. Ensure Review Board is running (`python tools/review_server.py 8200`) and provide direct links.
-> 3. Print the comprehensive scene video review table in the chat (Scene index, title/description, local file path, preview link, status).
-> 4. **Wait for user explicit approval of each video clip.**
+> Pipeline execution MUST stop after all scene videos are downloaded and de-watermarked (`scene_XX_clean.mp4`).
+> **QUY TẮC BẮT BUỘC TRƯỚC KHI TRÌNH USER DUYỆT:**
+> 1. **Tự động chạy `/fk-review-video` trước**: Agent BẮT BUỘC phải trích xuất frames, phân tích chất lượng video sạch theo 6 tiêu chuẩn cốt lõi (Character Consistency 25%, Prompt Adherence 20%, Motion Quality 20%, Visual Fidelity 15%, Temporal Coherence 10%, Composition 10%) và rà soát lỗi AI (Critical/High/Minor).
+> 2. **Trình bày Scorecard chi tiết cho User**: Báo cáo bảng điểm Scorecard, nhận định Verdict (*Excellent / Good / Acceptable / Poor*), và hình ảnh minh họa frames trích xuất trực tiếp trong chat để User nắm rõ chất lượng trước.
+> 3. Ensure Review Board is running (`python tools/review_server.py 8200`) and provide direct links.
+> 4. **Chờ User duyệt**: Chỉ sau khi User xem bảng phân tích và ra quyết định duyệt (hoặc yêu cầu tinh chỉnh prompt/regen), pipeline mới đi tiếp.
 > 5. If the user requests changes for any scene video (e.g. camera angle, motion, character action, handheld vlog perspective), update the prompt and run `REGENERATE_VIDEO` until the user is satisfied.
 > 6. ONLY proceed to Stage 4 (Concat) when the user explicitly commands to concatenate the approved videos.
 
