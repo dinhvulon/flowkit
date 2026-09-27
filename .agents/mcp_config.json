@@ -1,0 +1,10 @@
+{
+  "mcpServers": {
+    "flow-capcut-mcp": {
+      "command": "python",
+      "args": [
+        "C:/Users/Admin/extensiton-video/mcp-tool/mcp_server.py"
+      ]
+    }
+  }
+}

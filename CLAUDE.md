@@ -171,3 +171,5 @@ This project has reusable skills in `skills/`. When the user says `/fk-<name>`, 
 | `/fk-vlog-guide` | fk-vlog-guide — Master Guide & Interactive Hub for Historical POV Vlogs |
 | `/fk-youtube-seo` | fk-youtube-seo — Generate YouTube Metadata (SEO-Optimized) |
 | `/fk-youtube-upload` | fk-youtube-upload — Upload Video to YouTube (Shorts + Long-form) |
+| `/translate-capcut-srt` | Trích xuất Auto Captions từ CapCut Desktop project và dịch sang ngôn ngữ khác. |
+| `/extract-capcut-srt` | Liệt kê project CapCut và trích xuất phụ đề Auto Captions thành file .srt chuẩn. |
