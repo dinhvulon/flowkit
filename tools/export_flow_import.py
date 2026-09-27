@@ -46,17 +46,23 @@ def voice_parts(desc):
 
 
 def script_dialogue(script_path):
-    """clip order -> {speaker, line} from Clip JSON blocks in script.md."""
+    """All {speaker, line, delivery} entries from Clip JSON blocks in script.md."""
     if not script_path:
-        return {}
+        return []
     text = Path(script_path).read_text(encoding="utf-8")
-    out = {}
-    for block in re.findall(r"```json\n(\{.*?\})\n```", text, re.S):
-        clip = json.loads(block)
-        if "dialogue" in clip:
-            idx = int(re.sub(r"\D", "", clip["clip_id"])) - 1
-            out[idx] = clip["dialogue"]
-    return out
+    return [json.loads(b)["dialogue"] for b in re.findall(r"```json\n(\{.*?\})\n```", text, re.S)
+            if '"dialogue"' in b]
+
+
+def _norm(text):
+    return re.sub(r"[^a-z0-9]+", " ", text.lower()).strip()
+
+
+def match_dialogue(entries, video_prompt):
+    """The Clip JSON line quoted in this scene's prompt (matched by content,
+    not by position, so inserted scenes cannot shift it)."""
+    vp = _norm(video_prompt or "")
+    return next((d for d in entries if _norm(d["line"]) and _norm(d["line"]) in vp), None)
 
 
 def prompt_dialogue(video_prompt):
@@ -163,7 +169,7 @@ def main():
         parts.append({"kind": "text", "text": "\n\n" + vp})
         dur = int(float(s.get("duration") or 8))
         vid = f"vid-{i + 1:03d}"
-        dlg = exact.get(i) or prompt_dialogue(vp)
+        dlg = match_dialogue(exact, vp) or prompt_dialogue(vp)
         speaker = (dlg or {}).get("speaker", "").replace("(off-screen)", "").strip()
         node = {
             "id": vid, "kind": "video",
