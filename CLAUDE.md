@@ -29,8 +29,9 @@ page can sign a Flow request, so nothing works headless.
 Flow lives at `flow.google.com` and signs every call in the page. Consequences
 that change how you work:
 
-- **Projects are not created by Flow Kit any more.** Make one in the Flow UI and
-  pin its uuid as `FLOW_PROJECT_ID`, or pass `flow_project_id` to `POST /api/projects`.
+- **`POST /api/projects` creates a fresh Flow project** unless you pass
+  `flow_project_id`, which reuses an existing one. `FLOW_PROJECT_ID` is optional
+  (the default project for internal `/api/flow/*` calls).
 - **Two capabilities are unported**, both on the Veo path, because their
   payloads were never captured: **video** upscale (not image export, which
   works) and Veo start+end-frame chaining. They fail with
@@ -38,7 +39,7 @@ that change how you work:
   r2v (`GENERATE_VIDEO_REFS`) always runs as Omni Flash Ingredients
   (`MZZa6b` + `abra_r2v_<N>s`); `N` comes from the scene's `duration`
   (4/6/8/10) and has no default. Omni also covers frame and first+last — use
-  `model_family=omni_flash`. `FLOW_ALLOW_DEGRADED=1` (or `true`) drops Veo
+  `model_family=omni_flash`. `FLOW_ALLOW_DEGRADED=1` (exactly `1`; `true` counts as off) drops Veo
   chaining to plain i2v; video upscale has no fallback. See `docs/CAPTURE.md`.
 - **A poll saying "Media not found." is not a failure.** Finished jobs report it.
 

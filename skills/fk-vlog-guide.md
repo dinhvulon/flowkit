@@ -76,7 +76,7 @@ Server chỉ đọc biến môi trường **một lần lúc khởi động**. V
   python -m agent.main
   ```
 - `FLOW_PROJECT_ID` (tuỳ chọn): uuid project Flow lấy ở Bước 0.3, dùng làm project mặc định cho các lệnh nội bộ cũ. Muốn một project FlowKit gắn vào project Flow có sẵn thì truyền `flow_project_id` khi tạo project.
-- `FLOW_ALLOW_DEGRADED="1"`: **chỉ nhận đúng `1`** — `"true"` bị coi là tắt. Cho phép Veo chaining (start+end frame) và Veo r2v hạ xuống i2v thường (từ ảnh ref đầu tiên) thay vì báo `UNSUPPORTED_ON_BATCH_API`. r2v thật (nhiều ref) chạy qua Omni Flash `abra_r2v_<N>s`: `/api/flow/generate-video-omni` hoặc `model_family=omni_flash`. *(Lưu ý: bước r2v trong `/fk-pipeline` — request `GENERATE_VIDEO_REFS` — chưa được nối lại vào Omni sau lần merge upstream, nên hiện chưa chạy được.)*
+- `FLOW_ALLOW_DEGRADED="1"`: **chỉ nhận đúng `1`** — `"true"` bị coi là tắt. Cho phép Veo chaining (start+end frame) và Veo r2v hạ xuống i2v thường (từ ảnh ref đầu tiên) thay vì báo `UNSUPPORTED_ON_BATCH_API`. r2v thật (nhiều ref) chạy qua Omni Flash `abra_r2v_<N>s`: `/api/flow/generate-video-omni` hoặc `model_family=omni_flash`. Bước r2v trong `/fk-pipeline` (request `GENERATE_VIDEO_REFS`) cũng chạy qua Omni Flash. `N` lấy từ trường `duration` của scene (4/6/8/10), **không có mặc định**: scene thiếu `duration` sẽ báo lỗi.
 
 Kiểm tra server đã nhận đúng cấu hình:
 ```powershell
@@ -145,18 +145,21 @@ Xác minh thực tế để kịch bản không bị AI "ảo giác" hoặc sán
 ### BƯỚC 2: Khóa Mỹ Thuật & Tạo Kịch Bản (`/fk-time-travel-vlog`)
 
 1. **Khóa chất liệu mỹ thuật qua [`/fk-add-material`](file:///c:/flowkit/skills/fk-add-material.md)**:
-   - Luôn nạp `material: "realistic"` vào dự án. Hệ thống sẽ tự động chèn tiền tố _Photorealistic RAW photograph, natural available light_ vào toàn bộ ảnh nhân vật và phân cảnh, đồng thời áp negative prompt chống trôi thành anime/3D.
+   - **Khuyên dùng material tùy chỉnh `phone_vlog`** (JSON tạo material có ở mục 9 của `/fk-time-travel-vlog`). Material này giữ ảnh ref chân thực nhưng cho scene chất footage điện thoại.
+   - `realistic` chỉ là phương án dự phòng: nó áp phong cách máy ảnh *Canon EOS R5, 35mm*, lệch với cảm giác "quay bằng điện thoại của nhân vật".
    - Kiểm tra các material có sẵn:
      ```bash
      curl -s http://127.0.0.1:8100/api/materials
      ```
-2. **Quy chuẩn góc máy Veo 3 ([`/fk-camera-guide`](file:///c:/flowkit/skills/fk-camera-guide.md))**:
-   - Cầm camera selfie trước góc rộng 24–28mm.
-   - Khẩu độ Pan-Focus f/8–f/11 (nét sâu từ mặt vlogger đến cảnh chợ phía sau, zero bokeh).
-   - Kỹ thuật **vừa đi vừa quay (Walking POV)**: camera nảy nhẹ theo bước chân, tạo hiệu ứng trôi cảnh 3D parallax sống động.
-3. **Tạo kịch bản vào FlowKit**:
-   - Gọi **[`/fk-time-travel-vlog`](file:///c:/flowkit/skills/fk-time-travel-vlog.md)** để sinh trọn gói kịch bản 10–12 phân cảnh với thoại tự nhiên phù hợp với bối cảnh lịch sử.
-   - Kịch bản sẽ tự động cấu trúc 7 hồi, khóa nhân vật và tạo các cảnh chuyển động mượt mà.
+2. **Quy chuẩn góc máy ([`/fk-camera-guide`](file:///c:/flowkit/skills/fk-camera-guide.md)), đã lọc cho format vlog điện thoại**:
+   - Camera trước **góc siêu rộng 0.5x** trên gậy selfie; cánh tay hoặc gậy lọt mép khung, ống kính méo nhẹ, rung tay theo nhịp bước.
+   - Tỉ lệ shot: ~65% selfie · ~15% POV thấy tay nhân vật · ~10% sau gáy · ~5% máy dựng trên bàn · ~5% toàn cảnh quay từ chỗ nhân vật đứng.
+   - **Cấm** dolly, crane, gimbal glide, drone, arc shot, slow motion và bokeh điện ảnh.
+   - `video_prompt` dài 100–150 từ, chia mốc `0-2s / 2-6s / 6-8s`; câu máy quay tách riêng; cuối prompt có `Audio:` / `SFX:` / `Negative:` (negative chỉ liệt kê từ khóa, không viết "no …").
+   - Thoại viết dạng `Mia says: …` **không có ngoặc kép** để Veo không sinh phụ đề. Mỗi clip 8s chứa 12–18 từ và chỉ một người nói.
+3. **Tạo kịch bản**:
+   - Gọi **[`/fk-time-travel-vlog`](file:///c:/flowkit/skills/fk-time-travel-vlog.md)** kèm file research. Độ dài mặc định: bản dài ~10 phút ≈ 38–42 beat (76–84 scene 8s); Shorts 4–6 beat. Có thể đặt độ dài khác (ví dụ dự án Atlantis có 35 scene).
+   - Kịch bản ghi vào `output/<slug>/script.md`. Clip JSON được viết theo từng hồi và **duyệt từng hồi**; chỉ dựng project FlowKit (`/fk-create-project`) sau khi duyệt toàn bộ kịch bản.
 
 ---
 
@@ -177,7 +180,7 @@ Khi bạn vừa chạy xong script tạo dự án, FlowKit có cơ chế nhận 
    ```
    *Mẹo*: Bạn cũng có thể truyền trực tiếp `<PROJECT_ID>` vào các lệnh pipeline:
    ```bash
-   /fk-pipeline <PROJECT_ID> --r2v --tts --concat
+   /fk-pipeline <PROJECT_ID> --r2v --concat
    /fk-upload-ref "C:/photos/my_face.jpg" --project <PROJECT_ID> --entity "Vlogger"
    ```
 
@@ -192,7 +195,16 @@ Nếu bạn muốn đóng vai Vlogger chính trong chuyến du hành thay vì đ
 ```
 
 - **Tự động khóa nhận diện**: Ảnh thật được đẩy lên Google Flow và gán mã UUID `media_id` vào nhân vật.
-- **Bảo toàn 100%**: AI sẽ bỏ qua việc vẽ mặt ảo và dùng chính ảnh này làm khuôn mẫu cho tất cả các góc quay.
+- AI không vẽ mặt ảo mà dùng chính ảnh này làm khuôn mẫu cho mọi góc quay. Nên dùng **bảng nhiều góc** (chính diện, 3/4, nghiêng, sau gáy): góc sau gáy giúp các cảnh chuyển bằng quay gáy.
+- **Ảnh có logo ✦ (Gemini/Flow)?** Chạy `python tools/remove_watermark_from_image.py "<ảnh>"` rồi **mở ảnh `_clean` ra kiểm tra**. Với ảnh bảng nhiều góc, tool có thể không tìm được logo (log báo `Multi-variant match low … using formula position`), vá nhầm chỗ khác và bỏ sót logo.
+
+#### Quy tắc ref của R2V (kiểm chứng trong `agent/sdk/services/operations.py`)
+| Quy tắc | Hệ quả khi viết kịch bản |
+|---|---|
+| Mỗi scene dùng **tối đa 3 ref**: entity `character` trước, sau đó đến `visual_asset` | `character_names` của scene chỉ nên có 1–3 tên, nhân vật chính đứng đầu |
+| Entity `location` **bị bỏ qua** (chỉ dùng khi scene không có ref nào khác) | Công trình hoặc bối cảnh cần giữ nhất quán thì khai báo là `visual_asset` |
+| Scene bắt buộc có `duration` (4/6/8/10) | Thêm `"duration": 8` khi tạo scene |
+| Voice lấy theo **từ đầu tiên** của `voice_description` | Viết `voice_description` bắt đầu bằng tên voice, ví dụ `Achernar — soft, …` |
 
 ---
 
@@ -201,17 +213,25 @@ Nếu bạn muốn đóng vai Vlogger chính trong chuyến du hành thay vì đ
 Chỉ với một câu lệnh duy nhất, hệ thống tự động làm hết mọi khâu nặng nhọc:
 
 ```bash
-/fk-pipeline --r2v --tts --concat
+/fk-pipeline --r2v --concat          # mặc định: thoại native trong video
+/fk-pipeline --r2v --tts --concat    # chỉ khi muốn lồng tiếng narrator thay cho thoại native
 ```
+
+> [!IMPORTANT]
+> Format time-travel vlog dùng **thoại native**: vlogger nói với camera ngay trong video. Đừng thêm `--tts` mặc định, vì giọng narrator sẽ đè lên thoại có sẵn. Cũng không dùng text overlay hay crossfade khi concat.
 
 **Các giai đoạn tự động chạy ngầm:**
 
-1. **Model R2V (`abra_r2v_8s`)**: Nạp thẳng ảnh tham chiếu mặt thật vào Google Flow để sinh 10 clip video 8s mà không cần qua bước tạo ảnh tĩnh Start Frame.
-2. **Khẩu hình Veo 3 Lip-Sync**: Tự động render cử động môi nhân vật nói chuyện tiếng Nhật tự nhiên theo câu thoại đặt trong ngoặc kép.
-3. **Lồng tiếng TTS Studio**: Tạo giọng đọc tiếng Nhật đàm thoại chuẩn nhịp phách mora.
-4. **Ghép nối video (Concat)**: Ghép 10 clip và lồng âm thanh hoàn chỉnh ra file `output/<slug>/<slug>_final.mp4`.
-5. **Tự động sinh YouTube SEO (`/fk-youtube-seo`)**: Tạo tiêu đề hook, mô tả 4 phần chuẩn SEO, bộ tag 3 tầng và timestamps chapters vào file `youtube_metadata.json` & `.md`.
-6. **Tự động tạo 4 Thumbnail (`/fk-thumbnail`)**: Sinh 4 ảnh thumbnail ấn tượng chuẩn tỷ lệ (9:16 Shorts hoặc 16:9 Long-form) lưu vào `output/<slug>/thumbnails/`.
+1. **Model R2V (`abra_r2v_<duration>s`)**: dùng thẳng ảnh ref (nhân vật + visual asset, tối đa 3) để sinh video, không cần ảnh tĩnh Start Frame.
+2. **Khẩu hình native**: Omni Flash tự sinh giọng và khẩu hình từ dòng `Mia says: …` trong `video_prompt`, với voice lấy từ `voice_description` (ví dụ Achernar).
+3. **Lồng tiếng TTS** *(chỉ khi có `--tts`)*: sinh narration riêng.
+4. **Xóa watermark từng clip**: tải về `scenes/`, chạy `remove_watermark_video`, rồi **mở ra kiểm tra** trước khi dùng.
+5. **Ghép nối video (Concat)**: cắt thẳng tại khung che, xuất `output/<slug>/<slug>_final.mp4`.
+6. **Tự động sinh YouTube SEO (`/fk-youtube-seo`)**: tiêu đề hook, mô tả, bộ tag, timestamps chapters vào `youtube_metadata.json` và `.md`.
+7. **Tự động tạo 4 Thumbnail (`/fk-thumbnail`)**: ảnh đúng tỷ lệ (9:16 Shorts hoặc 16:9 long-form) lưu vào `output/<slug>/thumbnails/`.
+
+> [!TIP]
+> **Chạy thử trước 1–2 scene rủi ro** (thảm họa, chiến tranh, nghi lễ, hình phạt) trước khi gửi cả loạt. Đây là những scene dễ bị `UNSAFE_GENERATION` nhất. Chỉ ám chỉ bạo lực, và thêm `blood, gore, injured people, dead bodies` vào negative.
 
 ---
 
@@ -269,14 +289,16 @@ cd dashboard && npm run dev           # Mở http://localhost:5173
 # 1. Nghiên cứu tư liệu lịch sử:
 /fk-research "Kamakura period 1274 AD samurai defense mongol invasion"
 
-# 2. Khởi tạo dự án & 10 phân cảnh:
-python scripts/create_kamakura_1274.py
+# 2. Viết kịch bản (duyệt từng hồi) rồi dựng project + scene:
+/fk-time-travel-vlog .omc/research/<topic>.md     # → output/<slug>/script.md
+/fk-create-project                                # sau khi đã duyệt toàn bộ kịch bản
 
-# 3. Nạp ảnh mặt thật (tùy chọn):
-/fk-upload-ref "C:/photos/my_face.jpg" --entity "Vlogger"
+# 3. Nạp ảnh mặt thật (tùy chọn) — xóa logo trước và mở ảnh ra kiểm tra:
+python tools/remove_watermark_from_image.py "C:/photos/my_face.jpg"
+/fk-upload-ref "C:/photos/my_face_clean.jpg" --entity "Vlogger"
 
-# 4. Chạy toàn bộ pipeline tự động (R2V + TTS + Concat + SEO + Thumbnails):
-/fk-pipeline --r2v --tts --concat
+# 4. Chạy pipeline (R2V + Concat + SEO + Thumbnails; thêm --tts chỉ khi lồng tiếng):
+/fk-pipeline --r2v --concat
 
 # 4.5. Mở bảng kiểm duyệt storyboard / video:
 /fk-review-board                      # Hoặc: python tools/review_server.py -> Mở http://localhost:8200
