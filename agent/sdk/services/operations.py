@@ -608,7 +608,23 @@ class OperationService:
                     ref_ids.append(mid)
                     seen.add(mid)
 
-        # Fallback: if no character/start/end found, allow location entities
+        # 5. location entities (environment anchors if space remains)
+        if char_names_raw and len(ref_ids) < _R2V_MAX_REFS:
+            project_entities = await crud.get_project_characters(pid)
+            char_names_set = set(char_names_raw)
+            for c in project_entities:
+                if len(ref_ids) >= _R2V_MAX_REFS:
+                    break
+                if not _char_matches(c, char_names_set):
+                    continue
+                if c.get("entity_type") != "location":
+                    continue
+                mid = c.get("media_id")
+                if mid and mid not in seen:
+                    ref_ids.append(mid)
+                    seen.add(mid)
+
+        # Fallback: if no character/start/end/location found, allow any project entity
         if not ref_ids:
             project_entities = await crud.get_project_characters(pid)
             for c in project_entities:

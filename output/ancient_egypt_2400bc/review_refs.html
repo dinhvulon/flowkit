@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bảng Duyệt Ảnh Tham Chiếu (Reference Board) — Ancient Egypt 2400 BC</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #090b10;
+      --card-bg: rgba(22, 27, 34, 0.75);
+      --card-border: rgba(255, 255, 255, 0.08);
+      --card-hover: rgba(255, 255, 255, 0.16);
+      --accent: #d4a373;
+      --accent-glow: rgba(212, 163, 115, 0.25);
+      --gold: #f4a261;
+      --text-main: #f0f6fc;
+      --text-muted: #8b949e;
+      --success: #3fb950;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: var(--bg);
+      color: var(--text-main);
+      font-family: 'Plus Jakarta Sans', -apple-system, sans-serif;
+      padding: 32px 24px 64px;
+      min-height: 100vh;
+      background-image: radial-gradient(circle at 50% 0%, rgba(212, 163, 115, 0.12), transparent 45%);
+    }
+    header {
+      max-width: 1300px;
+      margin: 0 auto 36px;
+      text-align: center;
+    }
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 6px 14px;
+      background: rgba(212, 163, 115, 0.12);
+      border: 1px solid var(--accent);
+      border-radius: 999px;
+      color: var(--gold);
+      font-size: 0.85rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 14px;
+    }
+    h1 {
+      font-size: 2.2rem;
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      margin-bottom: 10px;
+      background: linear-gradient(135deg, #fff 40%, var(--accent) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    p.subtitle {
+      color: var(--text-muted);
+      font-size: 1.05rem;
+      max-width: 720px;
+      margin: 0 auto;
+      line-height: 1.6;
+    }
+    .gallery {
+      max-width: 1300px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+      gap: 28px;
+    }
+    .card {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 18px;
+      overflow: hidden;
+      backdrop-filter: blur(16px);
+      transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+      display: flex;
+      flex-direction: column;
+    }
+    .card:hover {
+      border-color: var(--card-hover);
+      transform: translateY(-4px);
+      box-shadow: 0 16px 36px rgba(0, 0, 0, 0.45), 0 0 24px var(--accent-glow);
+    }
+    .img-wrap {
+      position: relative;
+      width: 100%;
+      background: #000;
+      overflow: hidden;
+      aspect-ratio: 16 / 9;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .img-wrap.portrait {
+      aspect-ratio: 9 / 16;
+      max-height: 480px;
+    }
+    .img-wrap img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.4s ease;
+      cursor: zoom-in;
+    }
+    .card:hover .img-wrap img {
+      transform: scale(1.03);
+    }
+    .tag {
+      position: absolute;
+      top: 14px;
+      left: 14px;
+      padding: 4px 10px;
+      background: rgba(0, 0, 0, 0.65);
+      backdrop-filter: blur(8px);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      border-radius: 8px;
+      font-size: 0.75rem;
+      font-weight: 700;
+      color: #fff;
+      text-transform: uppercase;
+    }
+    .status-pill {
+      position: absolute;
+      top: 14px;
+      right: 14px;
+      padding: 4px 10px;
+      background: rgba(63, 185, 80, 0.2);
+      border: 1px solid var(--success);
+      border-radius: 8px;
+      font-size: 0.75rem;
+      font-weight: 700;
+      color: var(--success);
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+    .card-body {
+      padding: 20px;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+    .card-title {
+      font-size: 1.25rem;
+      font-weight: 700;
+      margin-bottom: 6px;
+      color: #fff;
+    }
+    .card-meta {
+      font-size: 0.8rem;
+      color: var(--accent);
+      font-family: monospace;
+      margin-bottom: 12px;
+      word-break: break-all;
+    }
+    .card-desc {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      line-height: 1.5;
+      margin-bottom: 14px;
+      flex: 1;
+    }
+    .highlight-box {
+      background: rgba(255, 255, 255, 0.03);
+      border-left: 3px solid var(--gold);
+      padding: 10px 12px;
+      border-radius: 0 8px 8px 0;
+      font-size: 0.82rem;
+      color: #e6edf3;
+      line-height: 1.45;
+    }
+    /* Modal */
+    .modal {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.9);
+      backdrop-filter: blur(12px);
+      z-index: 1000;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+      cursor: zoom-out;
+    }
+    .modal img {
+      max-width: 92vw;
+      max-height: 92vh;
+      object-fit: contain;
+      border-radius: 12px;
+      box-shadow: 0 24px 60px rgba(0, 0, 0, 0.8);
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="badge">🏛️ Google Flow — Omni Flash Ingredients Lock</div>
+    <h1>Bảng Duyệt Ảnh Tham Chiếu (Reference Board)</h1>
+    <p class="subtitle">Dự án: Ancient Egypt 2400 BC (Old Kingdom, 5th Dynasty) — Toàn bộ 7 ảnh Reference đã tẩy sạch watermark & SynthID theo Rule 28, sẵn sàng nạp thẳng vào model R2V (abra_r2v).</p>
+  </header>
+
+  <div class="gallery">
+
+    <!-- 1. Nora -->
+    <div class="card">
+      <div class="img-wrap portrait">
+        <span class="tag">Vlogger / Nhân Vật Chính</span>
+        <span class="status-pill">● Khóa Ảnh Gốc</span>
+        <img src="refs/nora_clean.jpg" alt="Nora" onclick="openModal(this.src)">
+      </div>
+      <div class="card-body">
+        <h2 class="card-title">Nora (Vlogger)</h2>
+        <div class="card-meta">Media ID: 65c43653-e668-4524-9740-3a96789df766</div>
+        <p class="card-desc">Khuôn mặt gốc được khóa 100% từ ảnh của bạn (F:\affilate\main.jpg): tóc vàng mật ong uốn sóng cao, mái bay curtain bangs, gương mặt mềm mại thanh tú.</p>
+        <div class="highlight-box"><strong>Voice Profile:</strong> Achernar — giọng nữ đàm thoại tự nhiên, hơi thở biểu cảm khi kinh ngạc, thì thầm hồi hộp.</div>
+      </div>
+    </div>
+
+    <!-- 2. Nora Outfit -->
+    <div class="card">
+      <div class="img-wrap portrait">
+        <span class="tag">Trang Phục / Visual Asset</span>
+        <span class="status-pill">● Đã Tẩy Logo</span>
+        <img src="refs/nora_outfit_clean.jpg" alt="Nora Outfit" onclick="openModal(this.src)">
+      </div>
+      <div class="card-body">
+        <h2 class="card-title">Nora Outfit (Váy Kalasiris)</h2>
+        <div class="card-meta">Media ID: 0c9680eb-622f-4317-ac50-b38a9486892c</div>
+        <p class="card-desc">Váy lanh dệt mộc kalasiris cổ đại Ai Cập thế kỷ 24 TCN với hai quai đeo vai, độ nhăn tự nhiên, viền cổ đính hạt ngọc lam (turquoise beads).</p>
+        <div class="highlight-box"><strong>Khóa Trang Phục:</strong> Đính kèm vào Ingredients của mọi cảnh Nora xuất hiện để ngăn AI tự đổi quần áo giữa các cảnh.</div>
+      </div>
+    </div>
+
+    <!-- 3. Ancient Egyptian Watchman -->
+    <div class="card">
+      <div class="img-wrap portrait">
+        <span class="tag">NPC / Quân Sự</span>
+        <span class="status-pill">● Đã Tẩy Logo</span>
+        <img src="refs/ancient_egyptian_watchman_clean.jpg" alt="Watchman" onclick="openModal(this.src)">
+      </div>
+      <div class="card-body">
+        <h2 class="card-title">Ancient Egyptian Watchman</h2>
+        <div class="card-meta">Media ID: da8fc1e4-91cd-4b23-be5a-6a5c898c5fcf</div>
+        <p class="card-desc">Lính gác tuần tra Memphis: da ngăm đồng, đầu cạo sát, váy xếp nếp tam giác (shendyt), tay cầm khiên gỗ bọc da bò và rìu đồng buộc dây da acacia.</p>
+        <div class="highlight-box"><strong>Vai Trò:</strong> Nhân vật rượt đuổi Nora trong Hồi 4 (Cao trào rượt đuổi tại ngõ chợ Memphis).</div>
+      </div>
+    </div>
+
+    <!-- 4. The Grand Vizier -->
+    <div class="card">
+      <div class="img-wrap portrait">
+        <span class="tag">Nhân Vật Lịch Sử / Triều Đình</span>
+        <span class="status-pill">● Đã Tẩy Logo</span>
+        <img src="refs/the_grand_vizier_clean.jpg" alt="The Grand Vizier" onclick="openModal(this.src)">
+      </div>
+      <div class="card-body">
+        <h2 class="card-title">The Grand Vizier (Tể Tướng Ptahhotep)</h2>
+        <div class="card-meta">Media ID: 4b427533-80eb-4121-bd86-ac72e2192164</div>
+        <p class="card-desc">Tể tướng 62 tuổi uy nghiêm với tóc giả học giả len đen, áo lanh dài xếp nếp, bùa hộ mệnh Ma'at ngọc serpentine xanh lục, tay cầm cuộn giấy papyrus và bút sậy.</p>
+        <div class="highlight-box"><strong>Rule 15 Bypass:</strong> Dùng tên ẩn "The Grand Vizier" để vượt bộ lọc AI nhưng phản ánh chính xác Ptahhotep.</div>
+      </div>
+    </div>
+
+    <!-- 5. Giza Pristine Pyramids -->
+    <div class="card">
+      <div class="img-wrap">
+        <span class="tag">Kỳ Quan / Khảo Cổ Mark Lehner</span>
+        <span class="status-pill">● Chuẩn Khảo Cổ 2400 BC</span>
+        <img src="refs/giza_pristine_pyramids_clean.jpg" alt="Giza Pristine Pyramids" onclick="openModal(this.src)">
+      </div>
+      <div class="card-body">
+        <h2 class="card-title">Giza Pristine Pyramids</h2>
+        <div class="card-meta">Media ID: 677bbdf8-d7d9-4200-98f2-ba617eb2aeca</div>
+        <p class="card-desc">Đại Kim Tự Tháp Khufu & Khafre trên cao nguyên đá vôi Giza cao 60m. Toàn bộ thân tháp ốp đá vôi Tura trắng mịn phẳng lì; chóp nhọn pyramidion electrum nhỏ xíu lóe sáng dưới nắng trưa; lăng mộ mastaba phẳng mái ở tiền cảnh; thung lũng sông Nile ở xa.</p>
+        <div class="highlight-box"><strong>Chuẩn Khảo Cổ:</strong> Đã khắc phục hoàn toàn lỗi nón vàng khổng lồ và lỗi sông Nile chảy sát chân tháp.</div>
+      </div>
+    </div>
+
+    <!-- 6. Abu Gorab Altar -->
+    <div class="card">
+      <div class="img-wrap">
+        <span class="tag">Bối Cảnh / Đền Thờ Mặt Trời</span>
+        <span class="status-pill">● Chuẩn Ludwig Borchardt</span>
+        <img src="refs/abu_gorab_altar_clean.jpg" alt="Abu Gorab Altar" onclick="openModal(this.src)">
+      </div>
+      <div class="card-body">
+        <h2 class="card-title">Abu Gorab Altar (Bàn Thờ Alabaster)</h2>
+        <div class="card-meta">Media ID: 988cbd11-2c78-4abe-8581-59eca6fd0ef6</div>
+        <p class="card-desc">Bàn thờ tế lễ tại Đền Mặt Trời Nyuserre: 5 phiến đá Alabaster Ai Cập nguyên khối màu vàng mật ong mờ sáng gồm đĩa tròn trung tâm (mặt trời Ra) và 4 phiến khắc phù điêu 'Hotep' phẳng, phía sau là bệ tháp obelisk đá cụt giữa sân trời.</p>
+        <div class="highlight-box"><strong>Đã Chỉnh Sửa:</strong> Xóa sạch lỗi cánh chim quái dị, mặt bàn thờ phẳng lì chuẩn xác theo tài liệu khai quật.</div>
+      </div>
+    </div>
+
+    <!-- 7. Memphis Quay -->
+    <div class="card">
+      <div class="img-wrap">
+        <span class="tag">Bối Cảnh / Đô Thị Sông Nile</span>
+        <span class="status-pill">● Đã Tẩy Logo</span>
+        <img src="refs/memphis_quay_clean.jpg" alt="Memphis Quay" onclick="openModal(this.src)">
+      </div>
+      <div class="card-body">
+        <h2 class="card-title">Memphis Quay (Bến Cảng Thủ Đô Memphis)</h2>
+        <div class="card-meta">Media ID: f89d4c7a-41c6-4ab7-9f65-9b9daa42d997</div>
+        <p class="card-desc">Bến cảng sông nước sầm uất tại thủ đô Memphis năm 2400 TCN: nhà kho gạch bùn quét vôi trắng, rặng cọ, thuyền skiff bằng sậy papyrus và thuyền buồm gỗ tuyết tùng cập bến chở đá và lương thực.</p>
+        <div class="highlight-box"><strong>Bối Cảnh Cốt Lõi:</strong> Nơi mở màn (S01-S02), xưởng ép papyrus (S13-S14) và điểm nhảy lên thuyền tẩu thoát (S33).</div>
+      </div>
+    </div>
+
+  </div>
+
+  <div id="imageModal" class="modal" onclick="closeModal()">
+    <img id="modalImg" src="" alt="Zoomed Reference">
+  </div>
+
+  <script>
+    function openModal(src) {
+      document.getElementById('modalImg').src = src;
+      document.getElementById('imageModal').style.display = 'flex';
+    }
+    function closeModal() {
+      document.getElementById('imageModal').style.display = 'none';
+    }
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') closeModal();
+    });
+  </script>
+
+</body>
+</html>
