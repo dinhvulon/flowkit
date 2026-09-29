@@ -159,7 +159,7 @@ Xác minh thực tế để kịch bản không bị AI "ảo giác" hoặc sán
      curl -s http://127.0.0.1:8100/api/materials
      ```
 2. **Quy chuẩn góc máy ([`/fk-camera-guide`](file:///c:/flowkit/skills/fk-camera-guide.md)), đã lọc cho format vlog điện thoại**:
-   - Camera trước **góc siêu rộng 0.5x** trên gậy selfie; cánh tay hoặc gậy lọt mép khung, ống kính méo nhẹ, rung tay theo nhịp bước.
+   - Camera trước **góc rộng tự nhiên** cầm tay; cánh tay vươn lọt mép khung, ống kính thẳng chuẩn xác (tuyệt đối KHÔNG méo viền, zero lens distortion), rung tay tự nhiên theo nhịp bước.
    - Tỉ lệ shot: ~65% selfie · ~15% POV thấy tay nhân vật · ~10% sau gáy · ~5% máy dựng trên bàn · ~5% toàn cảnh quay từ chỗ nhân vật đứng.
    - **Cấm** dolly, crane, gimbal glide, drone, arc shot, slow motion và bokeh điện ảnh.
    - `video_prompt` dài 100–150 từ, chia mốc `0-2s / 2-6s / 6-8s`; câu máy quay tách riêng; cuối prompt có `Audio:` / `SFX:`. **Không dùng dòng `Negative:`**: viết ràng buộc thành câu khẳng định ngay trước `Audio:`. **Khóa câu khẳng định cấm hiện điện thoại/màn hình**: `The camera is the phone itself recording from Mia's hand, so the viewer looks directly at Mia; absolutely no phone, no phone body, no phone screen, no UI or app overlay, no case, and no selfie stick appear anywhere in the shot.` (xem `/fk-time-travel-vlog` mục 11: toàn bộ bài học sản xuất thực tế và góp ý của user).

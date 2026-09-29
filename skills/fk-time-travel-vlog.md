@@ -254,8 +254,8 @@ Video mẫu **không có bất kỳ chữ nào trên màn hình** — không tit
 Độ chân thật của format đến từ việc **người xem tin đây là footage điện thoại thật**. Mọi clip phải giữ đủ các yếu tố sau:
 
 - **Style string cố định** (đầu mọi `video_prompt`, từ `prompt-templates.md`):
-  `handheld smartphone selfie-stick vlog footage, ultra-wide 0.5x front camera, natural daylight, slight lens distortion, subtle hand shake, photorealistic, documentary realism`
-- **Dấu vết điện thoại**: méo ống kính góc siêu rộng, rung tay nhẹ theo nhịp bước, cánh tay/gậy lọt mép khung ở shot selfie, auto-exposure theo nguồn sáng tự nhiên. Không dolly/crane/gimbal mượt kiểu điện ảnh.
+  `handheld front-camera vlog footage, arm extended holding camera, natural daylight, zero lens distortion, straight natural perspective, subtle hand shake, photorealistic, documentary realism`
+- **Dấu vết máy quay chân thực**: góc nhìn tự nhiên, không méo viền (zero lens distortion, straight lines), rung tay nhẹ theo nhịp bước, cánh tay lọt mép khung ở shot selfie, auto-exposure theo nguồn sáng tự nhiên. Không dolly/crane/gimbal mượt kiểu điện ảnh.
 - **Người nền phản ứng**: dân bản địa dừng lại nhìn chằm chằm, tò mò hoặc nghi ngờ — nhưng **không ai nói** trừ người nói duy nhất của clip.
 - **Audio môi trường đúng thời kỳ**: tiếng chợ bằng ngôn ngữ cổ/địa phương, bánh xe gỗ lạch cạch, chuông đồng xa — ghi ở dòng `Audio:` cuối prompt.
 - **Ràng buộc viết thành câu khẳng định trong thân prompt — KHÔNG dùng dòng `Negative:` liệt kê từ khóa** (góp ý của user: liệt kê từ khóa không có tác dụng, điện thoại vẫn hiện ra). Câu chuẩn, đặt trước dòng `Audio:`:
@@ -266,8 +266,8 @@ Video mẫu **không có bất kỳ chữ nào trên màn hình** — không tit
     "id": "phone_vlog",
     "name": "Smartphone Vlog (Photoreal)",
     "style_instruction": "Photorealistic RAW photograph, natural available light, real skin texture, documentary realism.",
-    "negative_prompt": "NOT 3D render, NOT anime, NOT illustration, NOT cinematic color grade, NOT studio lighting.",
-    "scene_prefix": "Handheld smartphone vlog frame, ultra-wide 0.5x front camera, slight lens distortion, natural daylight, documentary realism.",
+    "negative_prompt": "NOT 3D render, NOT anime, NOT illustration, NOT cinematic color grade, NOT studio lighting, NOT lens distortion.",
+    "scene_prefix": "Handheld vlog frame, natural daylight, zero lens distortion, straight natural perspective, documentary realism.",
     "lighting": "Natural available light"
   }'
   ```
