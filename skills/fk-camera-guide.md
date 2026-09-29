@@ -345,6 +345,33 @@ Negative: subtitles, watermark, text overlay, blurry faces.
 
 ---
 
+
+---
+
+## 5-Layer Physical Prompt Architecture & Smartphone Dynamic Optics
+
+Khi viết prompt cho thể loại POV Vlog hoặc phim tài liệu thực tế, tuyệt đối tránh dùng các từ ngữ "phim hoạt hình / video game" (như *impenetrable wall, skidding to a halt, brandishing weapons, violent instant boiling*). Hãy áp dụng **Mô hình Prompt 5 Tầng Vật Lý Thực Tế**:
+
+```text
+Layer 1: Primary Motion (Hành động chính của chủ thể)
+Layer 2: Force & Traction (Lực tiếp xúc, ma sát bề mặt, nén tuyết/đất)
+Layer 3: Secondary Motion & Inertia (Quán tính khối lượng p = m*v, độ trễ chuyển động của tóc/tai/vòi/lông)
+Layer 4: Environment & Material Deformation (Biến dạng vật liệu, nứt gãy lan tỏa, đối lưu nhiệt khói lửa)
+Layer 5: Camera Dynamic Response (Độ nảy dọc theo bước chân, độ trễ xoay góc, nhòe chuyển động tự nhiên)
+```
+
+### Quy tắc Quang học Smartphone & Động học Camera
+1. **Quang học Smartphone:** Không dùng câu lệnh cứng nhắc "zero lens distortion" làm mâu thuẫn góc máy; dùng:
+   `natural smartphone perspective, no exaggerated fisheye distortion, no artificial wide-angle warping`.
+2. **Camera khi vận động mạnh (chạy trốn, vượt địa hình):** Bắt buộc mô tả độ nảy và quán tính:
+   `handheld smartphone footage with natural vertical bounce synchronized to each footfall, slight rotational lag when turning, and realistic motion blur`.
+3. **Cơ học truyền lực & Điểm neo (Force Transmission):** Lực va chạm từ vật thể nặng/thú lớn phải truyền vào dầm gỗ, đá tảng hoặc mặt đất kiên cố (`force -> object -> timber barrier -> ground`), tuyệt đối không để cơ thể người làm điểm tựa chịu lực trực tiếp.
+4. **Nhiệt động học & Biến dạng chất liệu:**
+   - Nhiệt truyền tăng dần: đá nung gây sủi bọt cục bộ (`localized bubbling`) và bốc hơi tăng dần (`progressive steam`), không sôi bùng nổ tức thì.
+   - Cơ học nứt gãy: đập xương tạo các vết nứt lan tỏa từ điểm va chạm (`cracks radiate from impact point`) rồi mảng yếu mới vỡ toác.
+   - Biến dạng bề mặt: Da thú cong nhẹ dưới lực kim khâu (`hide flexes slightly around needle`), màng da trống rung nảy rõ rệt theo từng nhịp gõ (`drum membrane visibly flexes with each strike`).
+   - Khí động học: Hơi thở trong giá lạnh tan nhanh trong không khí (`dense short-lived breath vapor that dissipates rapidly`), khói bốc theo đối lưu nhiệt và bị gió lạnh làm xáo trộn, tàn lửa bay theo dòng khí nóng rồi nguội dần và tắt.
+
 ## Quality Checklist
 
 Before submitting any video prompt, verify:

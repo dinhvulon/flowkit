@@ -4,6 +4,14 @@ Cẩm nang điều phối trọn gói quy trình sản xuất Video Vlog Du Hàn
 
 ---
 
+
+### 📌 QUY TẮC ĐỘNG LỰC HỌC & QUANG HỌC SMARTPHONE (BẮT BUỘC)
+Theo bài học sản xuất thực tế từ `/fk-time-travel-vlog` mục 11 (Quy tắc 27–32):
+- **Cơ học truyền lực:** Lực va chạm phải neo vào kết cấu dầm gỗ / mặt đất (`force -> barrier -> ground`), cấm dùng cơ thể người chịu lực chống động vật hàng tấn.
+- **Quán tính Megafauna ($p = m \times v$):** Động vật lớn có quán tính nặng nề, chân nén đất/tuyết trước khi thân chuyển động, tai/vòi/lông dài có độ trễ chuyển động thứ cấp. Khi trượt trên băng/bùn phải mất bám, lảo đảo chao thân, trượt ngang và bẻ hướng chứ không phanh ABS đứng khựng.
+- **Biến dạng vật liệu & Nhiệt động học:** Đá nung sủi bọt cục bộ, đập xương nứt lan tỏa rồi mới vỡ, kim đâm làm da thú cong nhẹ, màng trống rung nảy, hơi thở tan nhanh trong không khí lạnh, khói/tàn lửa bốc theo đối lưu nhiệt.
+- **Quang học Smartphone:** Dùng `natural smartphone perspective, no exaggerated fisheye distortion, no artificial wide-angle warping`; camera chạy có `vertical bounce synchronized to each footfall, rotational lag, motion blur`.
+
 ## 🧭 BẢNG ĐIỀU PHỐI QUY TRÌNH (PRODUCTION HUB)
 
 Khi bạn muốn sản xuất một tập vlog mới, hãy thực hiện tuần tự qua các giai đoạn sau:
