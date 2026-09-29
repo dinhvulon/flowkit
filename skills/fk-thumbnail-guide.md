@@ -59,6 +59,13 @@
 - **Text:** Power words — "DESTROYED", "IMPOSSIBLE", "UNSTOPPABLE". Numbers for military stats
 - **Avoid:** Revealing the climax. Show the inciting moment
 
+## Genre: Historical & Time-Travel POV Vlog
+
+- **Character & Attire:** Vlogger face (30-40% of frame), expressive amazement/shock, holding camera at arm's length. Dressed strictly in period-accurate historical attire locked from entity references (`[Character]` + `[Character] Outfit`).
+- **Setting & Background:** Breathtaking epic panoramic view of ancient monuments in their pristine original glory (e.g. Ancient Egypt = pristine white polished limestone Great Pyramids with electrum gold capstones and intact Great Sphinx; Edo Japan = Edo Castle & Nihonbashi).
+- **Text (Mandatory English):** Must show Location & Era in English (e.g. `ANCIENT EGYPT • 2400 BC`), plus a curiosity hook (e.g. `BEFORE THE RUINS!`, `THE PYRAMIDS WERE BRAND NEW!`). Bold sans-serif font, upper half.
+- **Colors & Lighting:** Dramatic golden hour, warm desert amber and deep turquoise sky, radiant stone highlights.
+
 ## Technical Specs
 
 | Spec | Value |

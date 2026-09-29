@@ -74,6 +74,13 @@ The title is the #1 SEO factor. It must:
 3. **Number + stakes**: `2 Triệu Thùng Dầu vs 6 Tàu Tấn Công Iran | Eo Biển Tử Thần Hormuz`
 4. **Challenge/Impossible**: `Vượt Qua Eo Biển Tử Thần — Nhiệm Vụ Bất Khả Thi Của Hải Quân Mỹ`
 5. **Revelation**: `Bí Mật Chiến Dịch Hormuz Shield — Khi Iran Phong Tỏa Eo Biển Hormuz`
+6. **Time Travel / Historical POV Vlog Hook (BẮT BUỘC cho Time Travel Vlogs)**:
+   - **Cấu trúc chuẩn**: `I time travelled to [Location/Era] in [Year] — [Punchy Hook / Observation / Stakes]` (hoặc biến thể ngắn gọn: `I time travelled to [Location] in [Year]`).
+   - **Ví dụ**:
+     - `I time travelled to Edo Japan in 1657`
+     - `I time travelled to Ancient Egypt in 2400 BC (The Pyramids Were Brand New!)`
+     - `I time travelled to Ancient Rome in 80 AD — Opening Day of the Colosseum`
+   - **Lý do**: Đây là format title có CTR tự nhiên cao nhất trên YouTube cho dòng time-travel vlogs, kích thích tối đa trí tò mò của khán giả quốc tế.
 
 ### Generate 3 title variants, ranked by SEO strength.
 

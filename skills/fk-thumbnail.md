@@ -28,12 +28,21 @@ Every thumbnail needs **2 lines of text**:
 - Military: Line 1 = "IRAN TẤN CÔNG!" / Line 2 = "Hải Quân Mỹ Mắc Kẹt Eo Biển Tử Thần"
 - Romance: Line 1 = "CÔ ẤY ĐÃ CHẾT?" / Line 2 = "Bí Mật Kinh Hoàng Sau Đám Cưới"
 - Action: Line 1 = "KHÔNG AI SỐNG SÓT" / Line 2 = "Vụ Cướp Thế Kỷ Tại Ngân Hàng Trung Ương"
+- Time-Travel Vlog: Line 1 = "ANCIENT EGYPT • 2400 BC" / Line 2 = "THE PYRAMIDS WERE BRAND NEW!"
 
 ### Rules:
-- Both lines in project's language
-- Line 1: provocative, uses power words (ATTACK, DEATH, IMPOSSIBLE, SHOCK, SECRET)
+- Both lines in project's language (LƯU Ý: Đối với POV / Time-Travel Vlogs, **bắt buộc dùng TIẾNG ANH** cho Địa điểm & Thời gian)
+- Line 1: provocative, uses power words (ATTACK, DEATH, IMPOSSIBLE, SHOCK, SECRET) hoặc Địa điểm & Niên đại lịch sử
 - Line 2: gives context — what/who/why (not just repeating Line 1)
 - Line 2 makes Line 1 specific: "IRAN ATTACKS!" + "US Navy Trapped in Deadly Strait" → viewer knows WHAT
+
+### Mandatory Rules for Historical / Time-Travel POV Vlogs (BẮT BUỘC):
+1. **Character & Outfit References**: Bắt buộc đính kèm cả nhân vật (`[Character]`) và trang phục (`[Character] Outfit`) từ entity references vào `character_names` (ví dụ `["Nora", "Nora Outfit"]`) để đảm bảo khuôn mặt và bộ trang phục cổ đại thời kỳ đó đồng nhất 100% với video.
+2. **Epic Panoramic Background**: Phải có toàn cảnh góc rộng ngoạn mục (panoramic establishing shot) của các kỳ quan cổ đại biểu tượng (ví dụ: Ai Cập cổ đại = đại kim tự tháp đá vôi trắng nguyên bản lấp lánh chóp vàng electrum cùng Đại Nhân Sư Sphinx; Nhật Bản = Thành Edo; La Mã = Colosseum).
+3. **Text on Thumbnail in ENGLISH (Mandatory)**: Bắt buộc hiển thị **Địa điểm và Thời gian bằng TIẾNG ANH** rõ nét, nổi bật ở nửa trên thumbnail:
+   - **Line 1 (Location & Time)**: `[LOCATION] • [YEAR/ERA]` (ví dụ: `ANCIENT EGYPT • 2400 BC`, `EDO JAPAN • 1657`).
+   - **Line 2 (Hook/Stakes)**: 3-6 từ kích thích tò mò cực đại (ví dụ: `BEFORE THE RUINS!`, `THE PYRAMIDS WERE BRAND NEW!`, `I TIME-TRAVELED 4,400 YEARS!`).
+   - Font chữ sans-serif dày đậm (bold yellow hoặc white text with black outline/shadow), nằm ở phần trên (tránh góc dưới bên phải vì dính badge thời lượng YouTube).
 
 ## Step 3: Build 4 thumbnail prompts
 
