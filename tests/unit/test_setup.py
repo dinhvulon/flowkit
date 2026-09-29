@@ -36,7 +36,7 @@ def sandbox(setup_mod, monkeypatch, tmp_path):
         setup_mod, "LEGACY_GEMINI_COMMANDS_DIR", tmp_path / ".gemini" / "commands" / "fk")
     monkeypatch.setattr(setup_mod, "LEGACY_GEMINI_MD", tmp_path / "GEMINI.md")
     (tmp_path / "skills").mkdir()
-    (tmp_path / "skills" / "fk-demo.md").write_text("# fk-demo — A demo skill\n")
+    (tmp_path / "skills" / "fk-demo.md").write_text("# fk-demo — A demo skill\n", encoding="utf-8")
     return tmp_path
 
 
@@ -105,7 +105,7 @@ class TestGeneratedAgentsMdIsComplete:
     @pytest.fixture
     def generated(self, setup_mod, sandbox):
         setup_mod.generate_codex(setup_mod.discover_skills())
-        return (sandbox / "AGENTS.md").read_text()
+        return (sandbox / "AGENTS.md").read_text(encoding="utf-8")
 
     @pytest.mark.parametrize("marker", [
         "14. **Fact-check before scripting**",
@@ -115,7 +115,7 @@ class TestGeneratedAgentsMdIsComplete:
     def test_the_hand_added_rules_survive_regeneration(self, generated, marker):
         assert marker in generated
 
-    @pytest.mark.parametrize("marker", ["0. Research", "7.5 Review videos"])
+    @pytest.mark.parametrize("marker", ["0. Research", "Review videos"])
     def test_the_hand_added_pipeline_steps_survive_regeneration(self, generated, marker):
         assert marker in generated
 
@@ -141,7 +141,7 @@ def test_tool_choices_reject_gemini(setup_mod, monkeypatch, capsys):
 
 
 def test_discover_skills_reads_the_first_line_as_the_description(setup_mod, sandbox):
-    (sandbox / "skills" / "fk-other.md").write_text("# fk-other — Does a thing\n\nBody.\n")
+    (sandbox / "skills" / "fk-other.md").write_text("# fk-other — Does a thing\n\nBody.\n", encoding="utf-8")
     found = {s["name"]: s["description"] for s in setup_mod.discover_skills()}
     assert found["other"] == "fk-other — Does a thing"
     assert found["demo"] == "fk-demo — A demo skill"

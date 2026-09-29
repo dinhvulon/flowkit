@@ -178,13 +178,16 @@ class TestGenerateSceneVideoRetry:
         mock_client.generate_video = AsyncMock()
         polled = {"data": {"operations": [{"status": "MEDIA_GENERATION_STATUS_SUCCESSFUL"}]}}
 
-        with patch("agent.sdk.services.operations.crud") as mock_crud, \
+        # Retry logic now lives in FlowProvider — patch its crud/_poll_operations.
+        # generate_scene_video itself still reads the project tier via operations.crud.
+        with patch("agent.sdk.services.operations.crud") as ops_crud, \
+             patch("agent.sdk.services.flow_provider.crud") as flow_crud, \
              patch("agent.sdk.services.operations._build_video_prompt",
                    new=AsyncMock(return_value="p")), \
-             patch("agent.sdk.services.operations._poll_operations",
+             patch("agent.sdk.services.flow_provider._poll_operations",
                    new=AsyncMock(return_value=polled)) as mock_poll:
-            mock_crud.get_project = AsyncMock(return_value={"user_paygate_tier": "PAYGATE_TIER_ONE"})
-            mock_crud.get_request = AsyncMock(return_value={"request_id": SAMPLE_UUID_2})
+            ops_crud.get_project = AsyncMock(return_value={"user_paygate_tier": "PAYGATE_TIER_ONE"})
+            flow_crud.get_request = AsyncMock(return_value={"request_id": SAMPLE_UUID_2})
 
             result = await service.generate_scene_video(
                 base_scene, "VERTICAL", request_id="req-1")
@@ -199,14 +202,15 @@ class TestGenerateSceneVideoRetry:
         mock_client.generate_video = AsyncMock(
             return_value={"data": {"operations": [{"operation": {"name": "op-new"}}]}})
 
-        with patch("agent.sdk.services.operations.crud") as mock_crud, \
+        with patch("agent.sdk.services.operations.crud") as ops_crud, \
+             patch("agent.sdk.services.flow_provider.crud") as flow_crud, \
              patch("agent.sdk.services.operations._build_video_prompt",
                    new=AsyncMock(return_value="p")), \
-             patch("agent.sdk.services.operations._poll_operations",
+             patch("agent.sdk.services.flow_provider._poll_operations",
                    new=AsyncMock(return_value={"data": {}})):
-            mock_crud.get_project = AsyncMock(return_value={"user_paygate_tier": "PAYGATE_TIER_ONE"})
-            mock_crud.get_request = AsyncMock(return_value=None)
-            mock_crud.update_request = AsyncMock()
+            ops_crud.get_project = AsyncMock(return_value={"user_paygate_tier": "PAYGATE_TIER_ONE"})
+            flow_crud.get_request = AsyncMock(return_value=None)
+            flow_crud.update_request = AsyncMock()
 
             await service.generate_scene_video(base_scene, "VERTICAL", request_id="req-1")
 
@@ -231,13 +235,16 @@ class TestGenerateSceneVideoRefs:
             {"name": "Castle", "entity_type": "location", "media_id": SAMPLE_UUID_2},
         ]
 
-        with patch("agent.sdk.services.operations.crud") as mock_crud,              patch("agent.sdk.services.operations._build_video_prompt",
-                   new=AsyncMock(return_value="p")),              patch("agent.sdk.services.operations._poll_operations",
+        with patch("agent.sdk.services.operations.crud") as ops_crud, \
+             patch("agent.sdk.services.flow_provider.crud") as flow_crud, \
+             patch("agent.sdk.services.operations._build_video_prompt",
+                   new=AsyncMock(return_value="p")), \
+             patch("agent.sdk.services.flow_provider._poll_operations",
                    new=AsyncMock(return_value=polled)) as mock_poll:
-            mock_crud.get_project = AsyncMock(return_value={"user_paygate_tier": "PAYGATE_TIER_ONE"})
-            mock_crud.get_project_characters = AsyncMock(return_value=project_chars)
-            mock_crud.get_request = AsyncMock(return_value=None)
-            mock_crud.update_request = AsyncMock()
+            ops_crud.get_project = AsyncMock(return_value={"user_paygate_tier": "PAYGATE_TIER_ONE"})
+            ops_crud.get_project_characters = AsyncMock(return_value=project_chars)
+            flow_crud.get_request = AsyncMock(return_value=None)
+            flow_crud.update_request = AsyncMock()
 
             result = await service.generate_scene_video_refs(
                 {**base_scene, "duration": 10.0}, "VERTICAL", request_id="req-1")
@@ -246,7 +253,7 @@ class TestGenerateSceneVideoRefs:
         assert kwargs["reference_media_ids"] == [SAMPLE_UUID]  # location excluded
         assert kwargs["duration_s"] == 10
         assert kwargs["aspect_ratio"] == "VIDEO_ASPECT_RATIO_PORTRAIT"
-        mock_crud.update_request.assert_awaited_with("req-1", request_id="op-r2v")
+        flow_crud.update_request.assert_awaited_with("req-1", request_id="op-r2v")
         assert mock_poll.await_args.args[1][0]["operation"]["name"] == "op-r2v"
         assert result is polled
 
@@ -315,6 +322,7 @@ class TestEditSceneImage:
 
         with patch("agent.sdk.services.operations.crud") as mock_crud:
             mock_crud.get_project = AsyncMock(return_value=project)
+            mock_crud.get_project_characters = AsyncMock(return_value=[])
 
             result = await service.edit_scene_image(base_scene, "VERTICAL", source_media_id=None)
 
@@ -354,11 +362,20 @@ class TestGenerateReferenceImage:
 
     @pytest.mark.asyncio
     async def test_normal_path_generates_and_uploads(self, service, char_no_media, mock_client):
-        """Normal path: calls generate_images, extracts URL, uploads to get media_id."""
+        """Normal path: calls generate_images; non-UUID media id triggers upload to get one."""
         project = {"user_paygate_tier": "PAYGATE_TIER_TWO"}
+        # No UUID anywhere (media name is CAMS-format, URL has no UUID) →
+        # must upload to obtain a UUID media id.
+        fife_url = "https://lh3.googleusercontent.com/image/CAMS_non_uuid_media?sqp=params"
+        mock_client.generate_images = AsyncMock(return_value={
+            "data": {"media": [{
+                "name": "CAMS_non_uuid_media",
+                "image": {"generatedImage": {"mediaId": "CAMS_non_uuid_media", "fifeUrl": fife_url}},
+            }]}
+        })
 
         with patch("agent.sdk.services.operations.crud") as mock_crud, \
-             patch("agent.sdk.services.operations._upload_character_image",
+             patch("agent.sdk.services.flow_provider._upload_character_image",
                    new_callable=AsyncMock) as mock_upload:
             mock_crud.get_project = AsyncMock(return_value=project)
             mock_crud.update_character = AsyncMock()
@@ -370,12 +387,35 @@ class TestGenerateReferenceImage:
         call_kwargs = mock_client.generate_images.call_args.kwargs
         assert call_kwargs["aspect_ratio"] == "IMAGE_ASPECT_RATIO_PORTRAIT"
         assert call_kwargs["prompt"] == char_no_media["image_prompt"]
+        mock_upload.assert_awaited_once()
+        mock_crud.update_character.assert_called_once_with(
+            CHAR_ID, media_id=SAMPLE_UUID_2, reference_image_url=fife_url)
+        assert "data" in result
+
+    @pytest.mark.asyncio
+    async def test_normal_path_skips_upload_when_uuid_returned(self, service, char_no_media, mock_client):
+        """Normal path: Flow returns a UUID media id directly → no upload needed."""
+        project = {"user_paygate_tier": "PAYGATE_TIER_TWO"}
+
+        with patch("agent.sdk.services.operations.crud") as mock_crud, \
+             patch("agent.sdk.services.flow_provider._upload_character_image",
+                   new_callable=AsyncMock) as mock_upload:
+            mock_crud.get_project = AsyncMock(return_value=project)
+            mock_crud.update_character = AsyncMock()
+
+            result = await service.generate_reference_image(char_no_media, PROJECT_ID)
+
+        # mock_client.generate_images returns media name=SAMPLE_UUID (a UUID)
+        mock_client.generate_images.assert_called_once()
+        mock_upload.assert_not_awaited()
+        assert "data" in result
 
     @pytest.mark.asyncio
     async def test_fast_path_upload_only_when_url_exists(self, service, char_has_url_no_media, mock_client):
         """Fast path: skips generate_images when URL exists but media_id is missing."""
+        url = char_has_url_no_media["reference_image_url"]
         with patch("agent.sdk.services.operations.crud") as mock_crud, \
-             patch("agent.sdk.services.operations._upload_character_image",
+             patch("agent.sdk.services.flow_provider._upload_character_image",
                    new_callable=AsyncMock) as mock_upload:
             mock_crud.update_character = AsyncMock()
             mock_upload.return_value = SAMPLE_UUID_2
@@ -384,14 +424,16 @@ class TestGenerateReferenceImage:
 
         # generate_images must NOT be called on fast path
         mock_client.generate_images.assert_not_called()
-        mock_crud.update_character.assert_called_once_with(CHAR_ID, media_id=SAMPLE_UUID_2)
+        mock_crud.update_character.assert_called_once_with(
+            CHAR_ID, media_id=SAMPLE_UUID_2, reference_image_url=url)
         assert "data" in result
 
     @pytest.mark.asyncio
     async def test_fast_path_falls_back_to_uuid_from_url(self, service, char_has_url_no_media):
         """Fast path: when upload fails, extracts UUID directly from the image URL."""
+        url = char_has_url_no_media["reference_image_url"]
         with patch("agent.sdk.services.operations.crud") as mock_crud, \
-             patch("agent.sdk.services.operations._upload_character_image",
+             patch("agent.sdk.services.flow_provider._upload_character_image",
                    new_callable=AsyncMock) as mock_upload:
             mock_crud.update_character = AsyncMock()
             mock_upload.return_value = None  # upload fails
@@ -399,7 +441,8 @@ class TestGenerateReferenceImage:
             result = await service.generate_reference_image(char_has_url_no_media, PROJECT_ID)
 
         # Should extract UUID from URL: SAMPLE_UUID is embedded in the URL
-        mock_crud.update_character.assert_called_once_with(CHAR_ID, media_id=SAMPLE_UUID)
+        mock_crud.update_character.assert_called_once_with(
+            CHAR_ID, media_id=SAMPLE_UUID, reference_image_url=url)
         assert "data" in result
 
 
@@ -420,6 +463,7 @@ class TestQueueWrappers:
         mock_crud.create_request.assert_called_once_with(
             req_type="GENERATE_IMAGE", orientation="VERTICAL",
             scene_id=SCENE_ID, project_id=PROJECT_ID, video_id=VIDEO_ID,
+            provider=None,
         )
 
     @pytest.mark.asyncio
@@ -434,6 +478,7 @@ class TestQueueWrappers:
         mock_crud.create_request.assert_called_once_with(
             req_type="GENERATE_VIDEO", orientation="VERTICAL",
             scene_id=SCENE_ID, project_id=PROJECT_ID, video_id=VIDEO_ID,
+            provider=None,
         )
 
     @pytest.mark.asyncio
@@ -448,6 +493,7 @@ class TestQueueWrappers:
         mock_crud.create_request.assert_called_once_with(
             req_type="UPSCALE_VIDEO", orientation="VERTICAL",
             scene_id=SCENE_ID, project_id=PROJECT_ID, video_id=VIDEO_ID,
+            provider=None,
         )
 
     @pytest.mark.asyncio
@@ -462,6 +508,7 @@ class TestQueueWrappers:
         mock_crud.create_request.assert_called_once_with(
             req_type="GENERATE_CHARACTER_IMAGE",
             character_id=CHAR_ID, project_id=PROJECT_ID,
+            provider=None,
         )
 
 
