@@ -77,7 +77,15 @@ class ReviewHandler(SimpleHTTPRequestHandler):
         path = parsed.path
 
         # Serve the HTML boards
-        if path in ("/", "/index.html", "/review_board.html"):
+        if path in ("/", "/index.html"):
+            pdir = _resolve_proj_dir()
+            if pdir and (pdir / "review_videos.html").exists():
+                self._serve_file(pdir / "review_videos.html", "text/html")
+                return
+            self._serve_file(TOOLS_DIR / "review_board.html", "text/html")
+            return
+
+        if path == "/review_board.html":
             self._serve_file(TOOLS_DIR / "review_board.html", "text/html")
             return
 
@@ -86,6 +94,38 @@ class ReviewHandler(SimpleHTTPRequestHandler):
             if pdir and (pdir / "review_images.html").exists():
                 self._serve_file(pdir / "review_images.html", "text/html")
                 return
+
+        if path in ("/review_videos", "/review_videos.html", "/videos-review"):
+            pdir = _resolve_proj_dir()
+            if pdir and (pdir / "review_videos.html").exists():
+                self._serve_file(pdir / "review_videos.html", "text/html")
+                return
+
+        if path in ("/review_1080p", "/review_1080p.html", "/1080"):
+            pdir = _resolve_proj_dir()
+            if pdir and (pdir / "review_1080p.html").exists():
+                self._serve_file(pdir / "review_1080p.html", "text/html")
+                return
+
+        if path.startswith("/1080/"):
+            fname = path[len("/1080/"):]
+            pdir = _resolve_proj_dir()
+            if pdir:
+                fpath = pdir / "1080" / fname
+                if fpath.exists():
+                    self._serve_file(fpath, "video/mp4")
+                    return
+            self.send_error(404, f"1080p video not found: {fname}")
+            return
+
+        if path.endswith(".mp4"):
+            fname = path.lstrip("/")
+            pdir = _resolve_proj_dir()
+            if pdir:
+                fpath = pdir / fname
+                if fpath.exists():
+                    self._serve_file(fpath, "video/mp4")
+                    return
 
         # Serve local images
         if path.startswith("/images/"):
