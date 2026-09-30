@@ -11,6 +11,9 @@ Theo bài học sản xuất thực tế từ `/fk-time-travel-vlog` mục 11 (Q
 - **Quán tính Megafauna ($p = m \times v$):** Động vật lớn có quán tính nặng nề, chân nén đất/tuyết trước khi thân chuyển động, tai/vòi/lông dài có độ trễ chuyển động thứ cấp. Khi trượt trên băng/bùn phải mất bám, lảo đảo chao thân, trượt ngang và bẻ hướng chứ không phanh ABS đứng khựng.
 - **Biến dạng vật liệu & Nhiệt động học:** Đá nung sủi bọt cục bộ, đập xương nứt lan tỏa rồi mới vỡ, kim đâm làm da thú cong nhẹ, màng trống rung nảy, hơi thở tan nhanh trong không khí lạnh, khói/tàn lửa bốc theo đối lưu nhiệt.
 - **Quang học Smartphone:** Dùng `natural smartphone perspective, no exaggerated fisheye distortion, no artificial wide-angle warping`; camera chạy có `vertical bounce synchronized to each footfall, rotational lag, motion blur`.
+- **Character Sheet 16:9 chuẩn 4 góc (Bắt buộc cho nhân vật chính & phụ):** Tạo turnaround sheet tỉ lệ 16:9 gồm 4 góc nhìn chuẩn: (1) Toàn thân chính diện thấy rõ 100% trang phục may đo từ đầu đến chân, (2) Toàn thân 3/4, (3) Toàn thân nhìn nghiêng, (4) Cận cảnh chân dung khuôn mặt 16:9. Khóa nhận diện khuôn mặt người dùng nhưng mặc đúng trang phục lịch sử.
+- **Reference Công Trình / Đạo Cụ Sạch:** Tuyệt đối không dùng "with proper scale reference" (tránh AI vẽ người đo tỉ lệ/thước đo). Bắt buộc: `ONE single unified photograph only, strictly NO humans, NO scale figures, NO split screen`.
+- **Tính Xác Thực Lịch Sử Về Trang Phục:** Kỷ Băng Hà 20,000 TCN con người đã có trang phục may đo nhiều lớp tinh xảo (áo parka da tuần lộc, lót len mammoth wool, viền nón lông cáo tuyết chống đọng băng, kim khâu có lỗ, chỉ gân, thêu hạt ngà voi). Tuyệt đối không vẽ cởi trần hay quấn da thú thô sơ phi thực tế giữa bão tuyết -35°C.
 
 ## 🧭 BẢNG ĐIỀU PHỐI QUY TRÌNH (PRODUCTION HUB)
 
