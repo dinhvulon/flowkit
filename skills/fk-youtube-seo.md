@@ -74,13 +74,38 @@ The title is the #1 SEO factor. It must:
 3. **Number + stakes**: `2 Triệu Thùng Dầu vs 6 Tàu Tấn Công Iran | Eo Biển Tử Thần Hormuz`
 4. **Challenge/Impossible**: `Vượt Qua Eo Biển Tử Thần — Nhiệm Vụ Bất Khả Thi Của Hải Quân Mỹ`
 5. **Revelation**: `Bí Mật Chiến Dịch Hormuz Shield — Khi Iran Phong Tỏa Eo Biển Hormuz`
-6. **Time Travel / Historical POV Vlog Hook (BẮT BUỘC cho Time Travel Vlogs)**:
-   - **Cấu trúc chuẩn**: `I time travelled to [Location/Era] in [Year] — [Punchy Hook / Observation / Stakes]` (hoặc biến thể ngắn gọn: `I time travelled to [Location] in [Year]`).
-   - **Ví dụ**:
-     - `I time travelled to Edo Japan in 1657`
-     - `I time travelled to Ancient Egypt in 2400 BC (The Pyramids Were Brand New!)`
-     - `I time travelled to Ancient Rome in 80 AD — Opening Day of the Colosseum`
-   - **Lý do**: Đây là format title có CTR tự nhiên cao nhất trên YouTube cho dòng time-travel vlogs, kích thích tối đa trí tò mò của khán giả quốc tế.
+6. **Time Travel & Historical POV Vlog — Bộ 3 Công Thức High-Stakes / Sinh Tồn Nghẹt Thở (BẮT BUỘC)**:
+   > [!CRITICAL]
+   > **TUYỆT ĐỐI KHÔNG DÙNG TIÊU ĐỀ HIỀN / GIÁO KHOA**: Các tiêu đề như `I time travelled to the Ice Age in 20,000 BC: Surviving with Woolly Mammoths!` hay `A Day in Ancient Egypt` nghe giống phim tài liệu trường học, người xem lướt qua sẽ thấy nhàm chán và bỏ qua.
+   > Bắt buộc áp dụng **Bộ 3 Công Thức High-Stakes (Kịch tính cao độ - Nghẹt thở - Shock văn hóa)** để đẩy CTR lên mức tối đa:
+
+   - **Option 1 (Nguy hiểm cận kề / Immediate Peril & Near-Death Escape — Áp dụng cho Nhóm 1: Thảm Họa Lịch Sử Có Thật)**:
+     - **Cấu trúc**: `I Time Travelled to [Year/Era] — And [Imminent Danger / Almost Got Trampled / Barely Escaped]`
+     - **Tâm lý học**: Đẩy mối đe dọa sinh tử lên ngay lập tức. Khán giả tò mò tột độ liệu vlogger thoát chết bằng cách nào trong gang tấc khi livestream thảm họa (Titanic 1912, Pompeii 79 SCN, Chernobyl 1986).
+     - **Ví dụ**:
+       - `I Time Travelled to 20,000 BC — And Almost Got Trampled by a Mammoth`
+       - `I Time Travelled to 1912 — And Tried to Warn the Captain of the Titanic`
+       - `I Time Travelled to 79 AD — And Mount Vesuvius Started Erupting`
+       - `I Time Travelled to 1986 Chernobyl — And the Sirens Went Off`
+
+   - **Option 2 (Format 24 Giờ Sinh Tồn / Extreme 24-Hour Survival Challenge — Áp dụng cho Nhóm 3: Newsjacking & Thử Thách Khắc Nghiệt)**:
+     - **Cấu trúc**: `I Spent 24 Hours in [Location/Era] ([Extreme Condition]) with [Ancient Inhabitants]`
+     - **Tâm lý học**: Format thử thách MrBeast-style với con số thời gian và điều kiện môi trường cụ thể (-40°C, không thức ăn, giữa thú dữ, đấu trường Colosseum) kích thích tính tò mò về phương thức sinh tồn thực tế.
+     - **Ví dụ**:
+       - `I Spent 24 Hours in the Ice Age (-40°C) with Cavemen`
+       - `I Spent 24 Hours in the Roman Colosseum (Gladiator Arena 80 AD)`
+       - `I Spent 24 Hours Trapped in Medieval London (Black Plague 1348)`
+
+   - **Option 3 (Shock văn hóa & Nghịch lý thời gian — Áp dụng cho Nhóm 2: Va Chạm Văn Minh / Bị Coi Là Phù Thủy)**:
+     - **Cấu trúc**: `What Happens When You Show [Modern Object / Technology] to [Ancient People]?` hoặc `I Showed [Modern Item] to [Ancient People] — Their Reaction Was Terrifying`
+     - **Tâm lý học**: Va chạm văn minh cực độ, thí nghiệm văn hóa giữa hiện đại và tiền sử/cổ đại. Kích thích sự tò mò về phản ứng ngây thơ, sợ hãi, vây bắt hoặc tôn sùng của người cổ đại.
+     - **Ví dụ**:
+       - `What Happens When You Show Modern Fire to Ice Age Humans?`
+       - `I Showed an iPhone at the Salem Witch Trials (1692) — They Tried to Burn Me`
+       - `What Happens When You Show a Smartphone to Roman Soldiers?`
+       - `I Showed Modern Medicine to 14th Century Plague Doctors`
+
+   - **Bắt buộc khi chạy `/fk-youtube-seo` cho POV Vlog**: Luôn luôn xuất ra đầy đủ **cả 3 Option High-Stakes** này trong phần `📌 TITLE OPTIONS` để người dùng lựa chọn, kèm phân tích CTR và góc khai thác!
 
 ### Generate 3 title variants, ranked by SEO strength.
 
@@ -278,14 +303,20 @@ Print each section with clear separators so they can copy individual parts.
 
 📌 TITLE OPTIONS (pick one):
 
+  [Đối với Time Travel & Historical POV Vlog — BẮT BUỘC xuất cả 3 Option High-Stakes]:
+  1. Option 1 (Nguy hiểm cận kề - Khuyên dùng): {title_option_1} ({char_count} chars)
+     CTR Angle: Thoát chết trong gang tấc / Đối mặt hiểm hoạ sinh tử trực diện
+     
+  2. Option 2 (Format 24 Giờ Sinh Tồn): {title_option_2} ({char_count} chars)
+     CTR Angle: Thử thách sinh tồn khắc nghiệt (-40°C, sống cùng người tiền sử)
+     
+  3. Option 3 (Shock văn hóa & Nghịch lý): {title_option_3} ({char_count} chars)
+     CTR Angle: Va chạm văn minh / Phản ứng kinh ngạc trước công nghệ hiện đại
+
+  [Đối với Niche Quân sự / Tài liệu / Drama khác]:
   1. {title_v1} ({char_count} chars)
-     Keywords: {primary}, {secondary}
-     
   2. {title_v2} ({char_count} chars)
-     Keywords: {primary}, {secondary}
-     
   3. {title_v3} ({char_count} chars)
-     Keywords: {primary}, {secondary}
 
 📝 DESCRIPTION:
 ─────────────────

@@ -36,21 +36,28 @@ Every thumbnail needs **2 lines of text**:
 - Military: Line 1 = "IRAN TẤN CÔNG!" / Line 2 = "Hải Quân Mỹ Mắc Kẹt Eo Biển Tử Thần"
 - Romance: Line 1 = "CÔ ẤY ĐÃ CHẾT?" / Line 2 = "Bí Mật Kinh Hoàng Sau Đám Cưới"
 - Action: Line 1 = "KHÔNG AI SỐNG SÓT" / Line 2 = "Vụ Cướp Thế Kỷ Tại Ngân Hàng Trung Ương"
-- Time-Travel Vlog: Line 1 = "ANCIENT EGYPT • 2400 BC" / Line 2 = "THE PYRAMIDS WERE BRAND NEW!"
+- Time-Travel / Historical POV Vlog (High-Stakes):
+  - Option 1 (Nguy hiểm cận kề): Line 1 = "ALMOST TRAMPLED!" / Line 2 = "ICE AGE • 20,000 BC"
+  - Option 2 (24 Giờ Sinh Tồn): Line 1 = "-40°C SURVIVAL!" / Line 2 = "24 HOURS WITH CAVEMEN"
+  - Option 3 (Shock văn hóa): Line 1 = "THEY SAW FIRE!" / Line 2 = "20,000 BC CULTURE SHOCK"
 
 ### Rules:
-- Both lines in project's language (LƯU Ý: Đối với POV / Time-Travel Vlogs, **bắt buộc dùng TIẾNG ANH** cho Địa điểm & Thời gian)
-- Line 1: provocative, uses power words (ATTACK, DEATH, IMPOSSIBLE, SHOCK, SECRET) hoặc Địa điểm & Niên đại lịch sử
-- Line 2: gives context — what/who/why (not just repeating Line 1)
-- Line 2 makes Line 1 specific: "IRAN ATTACKS!" + "US Navy Trapped in Deadly Strait" → viewer knows WHAT
+- Both lines in project's language (LƯU Ý: Đối với POV / Time-Travel Vlogs, **bắt buộc dùng TIẾNG ANH** cho cả 2 dòng để tối ưu CTR quốc tế)
+- Line 1: Provocative, uses urgent power words (ALMOST TRAMPLED, -40°C SURVIVAL, THEY SAW FIRE, BARELY ESCAPED, DON'T LOOK BACK, ATTACK, DEATH)
+- Line 2: Gives context — Location & Era / Stakes (ICE AGE • 20,000 BC, 24H WITH CAVEMEN)
+- Line 2 makes Line 1 specific: "ALMOST TRAMPLED!" + "ICE AGE • 20,000 BC" → viewer immediately understands the deadly stakes
 
 ### Mandatory Rules for Historical / Time-Travel POV Vlogs (BẮT BUỘC):
+> [!CRITICAL]
+> **CẤM THUMBNAIL KIỂU DU LỊCH NGẮM CẢNH HIỀN LÀNH**: Tuyệt đối không để vlogger mỉm cười tạo dáng hiền từ hoặc dùng text yếu ớt kiểu postcard (`ANCIENT EGYPT • 2400 BC / THE PYRAMIDS WERE BRAND NEW!`). Thumbnail phải toát lên cảm giác **Sinh Tồn Nghẹt Thở & Hiểm Họa Cận Kề**!
+
 1. **Character & Outfit References**: Bắt buộc đính kèm cả nhân vật (`[Character]`) và trang phục (`[Character] Outfit`) từ entity references vào `character_names` (ví dụ `["Nora", "Nora Outfit"]`) để đảm bảo khuôn mặt và bộ trang phục cổ đại thời kỳ đó đồng nhất 100% với video.
-2. **Epic Panoramic Background**: Phải có toàn cảnh góc rộng ngoạn mục (panoramic establishing shot) của các kỳ quan cổ đại biểu tượng (ví dụ: Ai Cập cổ đại = đại kim tự tháp đá vôi trắng nguyên bản lấp lánh chóp vàng electrum cùng Đại Nhân Sư Sphinx; Nhật Bản = Thành Edo; La Mã = Colosseum).
-3. **Text on Thumbnail in ENGLISH (Mandatory)**: Bắt buộc hiển thị **Địa điểm và Thời gian bằng TIẾNG ANH** rõ nét, nổi bật ở nửa trên thumbnail:
-   - **Line 1 (Location & Time)**: `[LOCATION] • [YEAR/ERA]` (ví dụ: `ANCIENT EGYPT • 2400 BC`, `EDO JAPAN • 1657`).
-   - **Line 2 (Hook/Stakes)**: 3-6 từ kích thích tò mò cực đại (ví dụ: `BEFORE THE RUINS!`, `THE PYRAMIDS WERE BRAND NEW!`, `I TIME-TRAVELED 4,400 YEARS!`).
-   - Font chữ sans-serif dày đậm (bold yellow hoặc white text with black outline/shadow), nằm ở phần trên (tránh góc dưới bên phải vì dính badge thời lượng YouTube).
+2. **Extreme Facial Expression (Adrenaline / Terror / Shock)**: Mặt vlogger chiếm 35-45% khung hình, biểu cảm kinh hoàng tột độ hoặc adrenaline nghẹt thở (`extreme panic and adrenaline, wide eyes, panting breath, frost on eyelashes and eyebrows, flushed cheeks from -40°C blizzard`).
+3. **Imminent Threat & Overwhelming Danger**: Phải có mối đe dọa sinh tử áp sát trong khung hình (chân voi ma mút khổng lồ giẫm tuyết ngay góc máy, cặp ngà xoắn 4m quét sát lưng, thợ săn tiền sử bao vây chĩa giáo đá, bão tuyết gầm thét).
+4. **Text on Thumbnail in ENGLISH (Mandatory High-Stakes)**: Bắt buộc hiển thị chữ TIẾNG ANH nổi bật ở nửa trên thumbnail:
+   - **Line 1 (Urgent Hook / Shock / Danger)**: 2-3 từ in hoa cực gắt, font dày đậm (bold yellow hoặc fiery orange/red with black outline): `ALMOST TRAMPLED!`, `-40°C SURVIVAL!`, `THEY SAW FIRE!`, `DON'T LOOK BACK!`.
+   - **Line 2 (Location & Era Context)**: 3-5 từ màu trắng in hoa có bóng đổ đen dày: `ICE AGE • 20,000 BC`, `24 HOURS WITH CAVEMEN`, `20,000 BC CULTURE SHOCK`.
+   - Vị trí: Upper half (tránh góc dưới bên phải vì dính badge thời lượng YouTube).
 
 ## Step 3: Build 4 thumbnail prompts
 
@@ -88,23 +95,23 @@ smaller [COLOR2] text in [LANGUAGE] clearly "[LINE2_CONTEXT]" below in bold font
 1280x720, 16:9 YouTube thumbnail format
 ```
 
-### 4 variants — each uses different angle:
+### 4 variants for Time-Travel / Historical POV Vlog (High-Stakes):
 
-**V1 — Face + Text (hook via emotion):**
-Main character face HUGE (50% of frame), extreme emotion, 2-line text at top.
-Background: threat/explosion/danger barely visible.
+**V1 — Immediate Peril (Nguy hiểm cận kề - Mammoth Trample):**
+Low-angle handheld POV. Nora's face takes up 40% of frame, frozen in sheer adrenaline terror, wide eyes, panting breath with frost on eyelashes. Looming directly above/behind her is the colossal shaggy foot of a 6-ton woolly mammoth about to stomp down into spraying snow.
+Text: bold yellow "ALMOST TRAMPLED!" at top-left, white "ICE AGE • 20,000 BC" below.
 
-**V2 — Action + Text (hook via stakes):**
-Wide cinematic angle, overwhelming threat visible, 2-line text at upper-left.
-Shows scale of danger.
+**V2 — 24H Extreme Survival (Format 24 Giờ Sinh Tồn -40°C):**
+Nora shivering in a howling blizzard at dusk, face flushed and iced, wrapped in mammoth-wool parka with snow clinging to hood. In background, a massive Mezhirich mammoth-bone hut glows with faint orange embers, prehistoric hunters visible in doorway.
+Text: bold cyan/yellow "-40°C SURVIVAL!" at top, white "24 HOURS WITH CAVEMEN" below.
 
-**V3 — Confrontation + Text (hook via conflict):**
-Hero vs villain/threat facing each other, 2-line text at top.
-Clear visual tension between two sides.
+**V3 — Culture Shock & Standoff (Shock văn hóa - Ngọn lửa hiện đại):**
+Dramatic night contrast. Nora holds up a modern flame/torch glowing fiercely. The firelight illuminates the stunned, alarmed faces of Cromagnon hunters holding flint spears in defensive stance, eyes wide in disbelief at the sudden light.
+Text: bold fiery orange "THEY SAW FIRE!" at top-center, white "20,000 BC CULTURE SHOCK" below.
 
-**V4 — Mystery + Text (hook via curiosity):**
-Character reacting to something OFF-SCREEN, 2-line text at upper-right.
-Viewer can't see what character sees → must click.
+**V4 — Sprint for Life (Chạy tháo thân trên tuyết):**
+High-action running perspective. Nora sprints towards camera through knee-deep snow, looking back over shoulder in desperation. In background, an enraged bull mammoth charges with sweeping 4-meter tusks, snow kicking up in violent clouds.
+Text: bold red/yellow "DON'T LOOK BACK!" at top-right, white "BARELY ESCAPED • 20,000 BC" below.
 
 ## Step 4: Collect character refs
 

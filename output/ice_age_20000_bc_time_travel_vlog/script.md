@@ -1,6 +1,10 @@
 # Kịch Bản Sản Xuất Vlog Du Hành Thời Gian: Kỷ Băng Hà 20,000 TCN
 **Dự án:** `Ice Age 20,000 BC - Time Travel Vlog`
-**Tiêu đề YouTube (SEO Lock):** `I time travelled to the Ice Age in 20,000 BC: Surviving with Woolly Mammoths!`
+**Tiêu đề YouTube (SEO High-Stakes Lock):**
+- **Option 1 (Nguy hiểm cận kề - Khuyên dùng):** `I Time Travelled to 20,000 BC — And Almost Got Trampled by a Mammoth`
+- **Option 2 (Format 24 Giờ Sinh Tồn):** `I Spent 24 Hours in the Ice Age (-40°C) with Cavemen`
+- **Option 3 (Shock văn hóa):** `What Happens When You Show Modern Fire to Ice Age Humans?`
+*(Primary SEO Lock: `I Time Travelled to 20,000 BC — And Almost Got Trampled by a Mammoth`)*
 **Quy mô:** 45 cảnh × 10 giây = 450 giây (7.5 phút) | Khung hình: HORIZONTAL 16:9 | Material: `phone_vlog`
 
 ---

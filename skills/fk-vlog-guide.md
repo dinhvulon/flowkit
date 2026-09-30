@@ -22,12 +22,13 @@ Khi bạn muốn sản xuất một tập vlog mới, hãy thực hiện tuần 
 ```text
 ┌─────────────────────────────────────────────────────────────────────────────┐
 │ 0. THIẾT LẬP MÔI TRƯỜNG & UI WEB (Pre-Flight)   ➔ /health: true & :5173     │
-│ 1. NGHIÊN CỨU DỮ KIỆN (Fact-Check)              ➔ /fk-research              │
+│ 1. SĂN TREND & NGHIÊN CỨU DỮ KIỆN (Fact-Check)  ➔ Rising Trends & /fk-research │
 │ 2. TẠO KỊCH BẢN & SET ACTIVE PROJECT            ➔ /fk-time-travel-vlog      │
 │ 3. NẠP ẢNH MẶT THẬT (Tùy chọn)                  ➔ /fk-upload-ref            │
 │ 4. CHẠY PIPELINE TỰ ĐỘNG (All-in-One)           ➔ /fk-pipeline              │
 │ 4.5. KIỂM DUYỆT VIDEO (Review Board)            ➔ /fk-review-board (:8200)  │
 │ 5. XEM LẠI & ĐĂNG TẢI YOUTUBE                   ➔ /fk-youtube-upload        │
+│ 5.5. MỒI THUẬT TOÁN & BƠM TRAFFIC               ➔ Shorts + Related Video    │
 └─────────────────────────────────────────────────────────────────────────────┘
 ```
 
@@ -144,15 +145,39 @@ Khi thấy `"extension_connected": true` và `extension_versions` từ `0.5.2` t
 
 ## 📌 CHI TIẾT TỪNG BƯỚC SẢN XUẤT VLOG (WORKFLOW)
 
+### BƯỚC 0.5: Săn "Trend Đang Lên" (Rising Trends) Cho AI Time Travel Vlog
+
+Để kéo kênh mới từ vài trăm view lên hàng chục nghìn đến hàng triệu view, bạn phải chọn các chủ đề có sức hút tự nhiên cực mạnh (**High-Stakes & Tò mò tột độ**):
+
+#### 🌪️ Nhóm 1: Sự kiện thảm họa lịch sử có thật (CTR cao nhất)
+Khán giả thế giới bị ám ảnh bởi việc **"nhân vật cầm điện thoại livestream trực tiếp thảm họa"**:
+- **Đắm tàu Titanic (1912):** Thử cảnh báo thuyền trưởng về tảng băng trôi (video của Chloe đạt 4.3M view chính nhờ motif này).
+- **Núi lửa Vesuvius chôn vùi Pompeii (79 SCN):** Livestream khoảnh khắc bầu trời chuyển sang màu đen kịt và dòng tro bụi nóng 500°C đổ ập xuống thành phố.
+- **Thảm họa hạt nhân Chernobyl (1986):** Vlogger vô tình bước vào thị trấn Pripyat đúng lúc còi báo động khẩn cấp phát nổ.
+- **Đại dịch Cái Chết Đen (Black Death - Châu Âu 1348):** Bác sĩ mỏ chim rùng rợn và cảnh hoang tàn nghẹt thở của thành phố bị phong tỏa.
+
+#### ⚡ Nhóm 2: "Văn hóa hiện đại va chạm cổ đại" (Modern Shock / Bị coi là phù thủy)
+Tạo xung đột kịch tính cực độ giữa tư duy công nghệ hiện đại và sự mê tín / luật lệ tàn bạo thời xưa:
+- **Phiên tòa xử phù thủy Salem (Salem Witch Trials 1692):** Cầm iPhone chụp ảnh và bị cả làng vây bắt, cáo buộc dùng ma thuật đòi thiêu sống.
+- **Ghé thăm Đấu trường La Mã (Rome 80 SCN):** Ngày khánh thành Colosseum, bị bảo vệ bắt giữ và đẩy xuống sàn cát đấu với giác đấu sĩ.
+- **Thời đại Viking (Scandinavia 870 SCN):** Lạc vào đại sảnh của các chiến binh Viking cuồng nộ đang ăn mừng chiến thắng man rợ.
+
+#### 🎬 Nhóm 3: Newsjacking & Ăn theo Hollywood (Bơm traffic tự nhiên cho kênh mới)
+Theo dõi các dự án phim sắp chiếu hoặc sự kiện truyền thông: Khi phim tài liệu/bom tấn về La Mã, Ai Cập hay Chiến tranh ra rạp, từ khóa đó trên YouTube tăng vọt hàng trăm lần. Bạn ra video cùng chủ đề ngay trước ngày công chiếu để đón đầu dòng người tìm kiếm khổng lồ:
+- *Ví dụ:* Đón đầu phim *Gladiator 2* ➔ Ra video *Colosseum 80 AD*; Phim về Napoleon ➔ Ra video *Waterloo 1815*; Khám phá lăng mộ khảo cổ mới tại Ai Cập ➔ Ra video *Giza 2400 BC*.
+
+---
+
 ### BƯỚC 1: Nghiên Cứu Dữ Kiện Lịch Sử (`/fk-research`)
 
-Xác minh thực tế để kịch bản không bị AI "ảo giác" hoặc sáng tác sai niên đại:
+Sau khi chọn đề tài theo 3 nhóm trên, tiến hành xác minh thực tế để kịch bản không bị AI "ảo giác" hoặc sáng tác sai niên đại:
 
 ```bash
-# Ví dụ chọn đề tài:
-/fk-research "Heian-kyo daily life 1000 AD commoners food market dress"
-/fk-research "Kamakura period 1274 AD samurai defense mongol invasion"
-/fk-research "Edo period 1657 AD great fire of meireki machiya"
+# Ví dụ chọn đề tài theo 3 nhóm trend:
+/fk-research "Pompeii 79 AD Vesuvius eruption chronology street layout"
+/fk-research "Salem witch trials 1692 puritan clothing village accusations"
+/fk-research "Titanic 1912 iceberg collision timing lower deck third class"
+/fk-research "Ice Age 20000 BC Mezhirich mammoth bone hut Sungir clothing"
 ```
 
 > [!TIP]
@@ -300,6 +325,28 @@ Sau khi pipeline hoàn tất, bạn kiểm tra thư mục `output/<slug>/` và t
 | **3. Chọn ảnh Thumbnail**                | `/fk-youtube-upload --thumbnail 2`      | Chọn biến thể thumbnail yêu thích (từ 1 đến 4 trong thư mục `thumbnails/`) làm ảnh đại diện chính.                                          |
 | **4. Hẹn giờ đăng tải (Schedule)**       | `/fk-youtube-upload --schedule "19:00"` | Hẹn giờ đăng vào khung giờ vàng (12:00 trưa hoặc 19:00 tối).                                                                                |
 | **5. Xem trước không upload (Dry-run)**  | `/fk-youtube-upload --dry-run`          | In toàn bộ thông tin (Tiêu đề, mô tả, tags, đường dẫn video, thumbnail) ra màn hình để kiểm tra trước.                                      |
+
+---
+
+### BƯỚC 5.5: Chiến Lược "Mồi Thuật Toán" Để Kênh Thoát Mức Vài Trăm View
+
+Đừng chỉ đăng 1 video dài rồi ngồi đợi phép màu. Hãy áp dụng **Quy Trình 3 Bước "Mồi Thuật Toán"** để đưa kênh mới bứt phá:
+
+#### 1. Vũ khí YouTube Shorts (Kéo traffic mồi qua tính năng "Related Video")
+Cắt từ video dài ra **3 – 4 video Shorts (15–30s)** nhắm vào các cảnh giật gân, khêu gợi trí tò mò nhất:
+- **Short 1 (Food Viral — Đồ ăn luôn viral):** Cảnh thợ săn đập xương voi ma mút nếm tủy béo ngậy hoặc món ăn kỳ lạ của thời kỳ cổ đại.
+- **Short 2 (Adrenaline Chase — Cận tử):** Cảnh rượt đuổi nghẹt thở, voi ma mút/quái thú tấn công, chạy tháo thân trong bão tuyết hoặc chiến trận hỗn loạn.
+- **Short 3 (Survival Lifehack — Mẹo sinh tồn độc lạ):** Kỹ thuật tiền sử kỳ lạ (như đun sôi nước bằng đá nung đỏ trong túi da, kim xương khâu da thú chống rét -40°C).
+- **GẮN "RELATED VIDEO" 1 CHẠM TRONG YOUTUBE STUDIO:** Khi đăng Short, vào mục *Details* ➔ *Related video* ➔ chọn đúng video dài tương ứng. Người xem Short chỉ cần bấm 1 chạm trên màn hình là chuyển thẳng sang xem full video 7.5–10 phút. Shorts sẽ dễ dàng đạt vài nghìn đến vài chục nghìn view từ thuật toán Shorts Feed, từ đó **"bơm" lượng lớn khán giả thật có tương tác cao sang video dài**.
+
+#### 2. Kiểm tra 2 chỉ số sống còn sau 48h (KPIs cứu video)
+- **CTR (Click-Through Rate):** Phải $\ge 6\%$. Nếu sau 48h CTR $< 4\%$, đổi ngay sang Title Option khác (Option 1/2/3) và thay bộ Thumbnail dự phòng đã chuẩn bị sẵn.
+- **AVD (Average View Duration):** Tỷ lệ giữ chân người xem 30 giây đầu tiên phải $\ge 60\%$. Đảm bảo hook hồi 1 không có đoạn chết, vào thẳng câu chuyện từ giây 0.
+
+#### 3. Giữ nhịp 2 tuần/video (Duy trì nhịp sinh học kênh mới)
+- Với người mới, **tuyệt đối không để kênh "ngủ đông" 1 tháng** như các đối thủ truyền thống.
+- Hãy tối ưu quy trình FlowKit để ra đều đặn: **2 tuần = 1 video dài (7–10 phút) + 4 Shorts xen kẽ** (mỗi tuần 2 Shorts cắt từ video dài đó).
+- Nhịp đăng đều đặn giúp thuật toán YouTube ghi nhận kênh đang hoạt động tích cực, mở rộng luồng đề xuất (Browse Features & Suggested Videos).
 
 ---
 

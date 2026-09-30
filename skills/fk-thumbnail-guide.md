@@ -59,12 +59,15 @@
 - **Text:** Power words — "DESTROYED", "IMPOSSIBLE", "UNSTOPPABLE". Numbers for military stats
 - **Avoid:** Revealing the climax. Show the inciting moment
 
-## Genre: Historical & Time-Travel POV Vlog
+## Genre: Historical & Time-Travel POV Vlog (High-Stakes & Breathless Survival)
 
-- **Character & Attire:** Vlogger face (30-40% of frame), expressive amazement/shock, holding camera at arm's length. Dressed strictly in period-accurate historical attire locked from entity references (`[Character]` + `[Character] Outfit`).
-- **Setting & Background:** Breathtaking epic panoramic view of ancient monuments in their pristine original glory (e.g. Ancient Egypt = pristine white polished limestone Great Pyramids with electrum gold capstones and intact Great Sphinx; Edo Japan = Edo Castle & Nihonbashi).
-- **Text (Mandatory English):** Must show Location & Era in English (e.g. `ANCIENT EGYPT • 2400 BC`), plus a curiosity hook (e.g. `BEFORE THE RUINS!`, `THE PYRAMIDS WERE BRAND NEW!`). Bold sans-serif font, upper half.
-- **Colors & Lighting:** Dramatic golden hour, warm desert amber and deep turquoise sky, radiant stone highlights.
+- **Character & Emotion (Adrenaline & Peril):** Vlogger face (35-45% of frame), extreme emotion: terror, breathless survival, adrenaline rush, shock (frost on eyelashes, frozen breath, flushed red cheeks from -40°C blizzard, wide terrified eyes). NEVER neutral, calm, or smiling tourist. Dressed strictly in period-accurate historical attire locked from entity references (`[Character]` + `[Character] Outfit`).
+- **Immediate Threat & High Stakes:** Must show overwhelming danger, imminent peril, or extreme culture shock in frame: massive woolly mammoth foot or curved tusks looming inches away, angry prehistoric hunters with flint spears in defensive standoff, raging blizzard, or collapsing environment.
+- **Text (Mandatory English 2-Line Punch):**
+  - **Line 1 (Urgent Hook):** 2-3 words, bold uppercase sans-serif in vivid yellow or fiery orange/red with black outline (`ALMOST TRAMPLED!`, `-40°C SURVIVAL!`, `THEY SAW FIRE!`, `DON'T LOOK BACK!`).
+  - **Line 2 (Location & Era Context):** White with heavy drop shadow (`ICE AGE • 20,000 BC`, `24 HOURS WITH CAVEMEN`, `20,000 BC CULTURE SHOCK`).
+  - Position: Upper half only. Never bottom-right (dead zone for YouTube duration badge).
+- **Colors & Lighting:** High contrast — cold icy blue/teal blizzard vs vivid warm torchlight/mammoth brown, rim light highlighting fear, cold, and extreme tension.
 
 ## Technical Specs
 
