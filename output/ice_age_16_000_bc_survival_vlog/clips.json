@@ -20,27 +20,27 @@
    ]
   },
   "style": {
-   "selfie": "Handheld front-camera vlog footage, ultra-wide 0.5x lens, natural smartphone perspective, subtle hand shake, auto-exposure, photorealistic documentary realism. Nora holds the camera at arm's length with her right arm extended toward the bottom-right corner of the frame.",
-   "run": "Handheld front-camera vlog footage, ultra-wide 0.5x lens, natural smartphone perspective, auto-exposure, photorealistic documentary realism. Nora holds the camera at arm's length with her right arm extended toward the bottom-right corner of the frame. Handheld smartphone footage with natural vertical bounce synchronized to each footfall, slight rotational lag when turning, and realistic motion blur.",
-   "back_selfie": "Handheld smartphone vlog footage that starts from Nora's raised hand just behind her head and then turns around to face her at arm's length, natural smartphone perspective, subtle hand shake, auto-exposure, photorealistic documentary realism.",
-   "back": "Handheld smartphone vlog footage from Nora's raised right hand just behind her shoulder, looking where she looks, natural smartphone perspective, subtle hand shake, auto-exposure, photorealistic documentary realism.",
-   "pov": "First-person handheld smartphone footage at Nora's eye level, natural smartphone perspective, subtle hand shake, auto-exposure, photorealistic documentary realism.",
-   "pov_hand": "First-person handheld smartphone footage at Nora's eye level, natural smartphone perspective, subtle hand shake, auto-exposure, photorealistic documentary realism.",
-   "tripod": "Static smartphone footage from a phone propped on a ledge, locked-off frame, natural smartphone perspective, photorealistic documentary realism.",
-   "wide": "Handheld smartphone footage from where Nora stands, slow steady pan, natural smartphone perspective, subtle hand shake, auto-exposure, photorealistic documentary realism."
+   "selfie": "Handheld front-lens vlog footage, ultra-wide 0.5x lens, natural wide-angle handheld perspective, subtle hand shake, auto-exposure, photorealistic documentary realism. The lens sits at the end of Nora's outstretched right arm, about 60 cm in front of her face, looking back at her; her right shoulder and upper arm reach toward the bottom-right corner and leave the frame there, so her right hand is never in view.",
+   "run": "Handheld front-lens vlog footage, ultra-wide 0.5x lens, natural wide-angle handheld perspective, auto-exposure, photorealistic documentary realism. The lens sits at the end of Nora's outstretched right arm, about 60 cm in front of her face, looking back at her; her right shoulder and upper arm reach toward the bottom-right corner and leave the frame there, so her right hand is never in view. Her right arm stays extended toward the lens for the entire clip while she runs; only her left arm pumps. The view bounces vertically with each footfall, with slight rotational lag when turning and realistic motion blur.",
+   "back_selfie": "Handheld vlog footage that starts from Nora's raised hand just behind her head and then turns around to face her at arm's length, natural wide-angle handheld perspective, subtle hand shake, auto-exposure, photorealistic documentary realism.",
+   "back": "Handheld vlog footage from Nora's raised right hand just behind her shoulder, looking where she looks, natural wide-angle handheld perspective, subtle hand shake, auto-exposure, photorealistic documentary realism.",
+   "pov": "First-person handheld footage seen through Nora's own eyes at her eye level, natural wide-angle handheld perspective, subtle hand shake, auto-exposure, photorealistic documentary realism.",
+   "pov_hand": "First-person handheld footage seen through Nora's own eyes at her eye level, natural wide-angle handheld perspective, subtle hand shake, auto-exposure, photorealistic documentary realism.",
+   "tripod": "Static locked-off footage from a fixed viewpoint resting on a ledge at chest height, the frame never moves, natural wide-angle perspective, photorealistic documentary realism.",
+   "wide": "Handheld footage from where Nora stands, slow steady pan, natural wide-angle handheld perspective, subtle hand shake, auto-exposure, photorealistic documentary realism."
   },
   "lock": {
-   "selfie": "The camera is the phone itself recording from Nora's hand, so the viewer looks directly at Nora; no phone, no phone body, no phone screen, no UI or app overlay, no case, and no selfie stick appear anywhere in the shot.",
-   "run": "SELFIE SHOT (CRITICAL): The phone IS being held by Nora pointing at her OWN FACE at arm's length. This is Nora's personal phone filming herself -- a SELFIE VIDEO, not a movie camera shot from outside. Nora's face and upper body fill 40-50% of frame; everything else is visible BEHIND her as background. PHONE INVISIBILITY RULE (CRITICAL — the model must not violate this): The phone is the camera itself; what the viewer sees is exactly what the phone lens captures. No phone body, no phone screen, no device frame, no rectangular object being gripped, no hand clutching a gadget, no screen reflection, no device outline, no UI overlay, no case, and no selfie stick appear anywhere in the shot under any circumstances. The hand holding the phone is NOT visible — only Nora's face, body, and the scene behind her fill the frame. If any device, screen, or held object appears in the frame, that is a critical generation failure.",
-   "back_selfie": "The camera is the phone itself recording from Nora's hand; no phone, no phone body, no phone screen, no UI or app overlay, no case, and no selfie stick appear anywhere in the shot.",
-   "back": "The camera is the phone itself in Nora's raised hand; no phone, no phone screen, no UI and no selfie stick appear anywhere in the shot.",
-   "pov": "First-person point-of-view shot. Nora is completely behind the camera holding it firmly; her own hands stay out of the frame. No phone, no device, and no selfie stick appear anywhere in the frame.",
-   "pov_hand": "First-person point-of-view shot. Nora is completely behind the camera holding it firmly; only her bare empty hand enters the lower frame. No phone, no device, and no selfie stick appear anywhere in the frame.",
-   "tripod": "The phone is the camera, resting still on a ledge; the frame never moves, and no phone, tripod or selfie stick appears anywhere in the shot.",
-   "wide": "Nora is behind the camera and not visible. No phone, no device, and no selfie stick appear anywhere in the frame."
+   "selfie": "The viewer looks straight at Nora from the end of her extended arm; her hands are empty, and the frame contains only Nora and the scene behind her.",
+   "run": "The viewer looks straight at Nora from the end of her extended right arm, not from a separate camera operator: her face and upper body fill 40 to 50 percent of the frame and the landscape and anything chasing her are behind her. Her left hand is empty, and nothing is held up in front of her or near her face.",
+   "back_selfie": "The view comes from Nora's own raised hand; her hands are otherwise empty, and the frame contains only Nora and the scene around her.",
+   "back": "The view comes from Nora's own raised hand just behind her shoulder; the frame shows only what lies ahead of her.",
+   "pov": "The view is Nora's own eyes. Nora herself never appears in the frame: no face, no body, no arms and no hands; the view simply moves as she moves, and only the world in front of her is seen.",
+   "pov_hand": "The view is Nora's own eyes. Nora's face and body never appear; only her bare empty hand enters the lower frame, coming out of a cream suede sleeve with a thick white fox-fur cuff.",
+   "tripod": "The frame never moves; nothing that holds or supports the view is visible anywhere in the shot.",
+   "wide": "The view is Nora's own eyes; Nora herself never appears in the frame."
   },
   "identity": "Nora looks exactly like her three reference images: her face from the Nora face sheet (honey-blonde high ponytail with curtain bangs, grey-green eyes), her tall curvy hourglass build from the Nora Body sheet, and her clothing from the Nora Outfit sheet. OUTFIT LOCK (CRITICAL -- match the Nora Outfit reference image exactly): she wears a fitted WHITE/CREAM reindeer suede jacket-dress (mid-thigh length), deep plunging V neckline laced with thin leather ties and ivory beads along the edges, large white arctic-fox fur collar/hood framing the neckline, long sleeves with thick white fur cuffs, wide tan leather belt at waist sewn with rows of drilled ivory/bone teeth, the body of the dress is CREAM/OFF-WHITE suede with a slight sheen -- NOT dark, NOT brown, NOT a parka. Light beige-white hide leggings (NOT dark/black). Knee-high suede cream boots with white fur cuff trim at the top. Small white fur mittens on a braided cord hanging at her sides. Every scene featuring Nora must show this exact costume.",
-  "general": "Natural smartphone perspective, no exaggerated fisheye distortion. Only Nora speaks; the locals communicate only with gestures and never speak. No subtitles or text appear on screen. This looks like raw unedited amateur video posted online, not a movie or a 3D render.",
+  "general": "Natural wide-angle perspective, no exaggerated fisheye distortion. Only Nora speaks; the locals communicate only with gestures and never speak. No subtitles or text appear in the frame. This looks like raw unedited amateur video posted online, not a movie or a 3D render.",
   "outdoor": "The ground is solid and completely still. Breath vapor is short-lived and fades quickly in the cold air.",
   "settings": {
    "CAMP": "Mezhyrich, central Ukraine, about 16,000 BC: a winter camp of four low round dwellings built of mammoth bones, wall bases of mammoth lower jaws stacked in a tight zigzag, domes of tusks and long bones covered with frosted reindeer hides, on a snowy river terrace above a broad frozen river, treeless snowy steppe beyond",
@@ -74,10 +74,10 @@
    "light": "sunset",
    "note": "Cold open #1, giây 0–8 của video. Một khoảnh khắc giữa S29 và S30 (Giờ 12), quay góc khác để không lặp footage. Câu đầu nói rõ ở đâu, năm nào. Không chửi thề trong hook.",
    "shot": "Ultra-wide running selfie at arm's length, the charging mammoth behind Nora at medium distance",
-   "frame0": "Ultra-wide selfie at arm's length on the snowy steppe at golden-hour sunset, Nora's face filling 45% of the frame — eyes blown wide in raw terror, mouth open in a gasp, brow furrowed hard, no smile whatsoever, frost on eyelashes and cheeks flushed red from cold and exertion; her body is mid-full-sprint, arms and ponytail flying. About twenty-five metres directly behind her a female woolly mammoth charges straight toward the camera, trunk raised high, snow exploding around her massive feet.",
+   "frame0": "Ultra-wide selfie at arm's length on the snowy steppe at golden-hour sunset, Nora's face filling 45% of the frame — eyes blown wide in raw terror, mouth open in a gasp, brow furrowed hard, no smile whatsoever, frost on eyelashes and cheeks flushed red from cold and exertion; her body is mid-full-sprint, left arm and ponytail flying. About twenty-five metres directly behind her a female woolly mammoth charges straight toward the camera, trunk raised high, snow exploding around her massive feet.",
    "seg": [
     [
-     "Nora sprints at full speed through knee-deep snow, legs pumping frantically, arms swinging hard, body lurching forward with each desperate stride — she is running as fast as a human can through snow; her face shows wide-eyed terror, gasping, no smile; the mammoth charges at full heavy advance behind her, trunk raised high, snow bursting from her feet.",
+     "Nora sprints at full speed through knee-deep snow, legs pumping frantically, her left arm pumping hard while her right arm stays extended toward the lens, body lurching forward with each desperate stride — she is running as fast as a human can through snow; her face shows wide-eyed terror, gasping, no smile; the mammoth charges at full heavy advance behind her, trunk raised high, snow bursting from her feet.",
      "Central Ukraine, sixteen thousand BC—"
     ],
     [
@@ -91,7 +91,7 @@
    ],
    "delivery": "screaming between gasps, voice cracking with fear, not excitement",
    "bg": "No one else in the shot.",
-   "physics": "Nora is at her absolute maximum sprint speed: legs pump rapidly, arms swing violently, the camera bounces hard left-right and up-down with every stride — not a gentle jog, a full desperate run. Her boots punch deep into the snow but she keeps her feet moving fast. The mammoth moves in heavy, powerful elephant strides — each huge foot slams down compressing snow, body rocking with a lag, long hair bouncing — never galloping like a horse. The mammoth never catches up with or touches Nora during the clip.",
+   "physics": "Nora is at her absolute maximum sprint speed: legs pump rapidly, her left arm swings violently while her right arm stays extended toward the lens, the camera bounces hard left-right and up-down with every stride — not a gentle jog, a full desperate run. Her boots punch deep into the snow but she keeps her feet moving fast. The mammoth moves in heavy, powerful elephant strides — each huge foot slams down compressing snow, body rocking with a lag, long hair bouncing — never galloping like a horse. The mammoth stays about twenty metres behind Nora for the whole clip, growing only slightly larger; she never catches up, never draws level with Nora and never touches her.",
    "tin": "hard cut mid-run on the very first frame, no intro",
    "tout": "whip sideways, motion blur",
    "join": "CUT in the blur; H2 opens mid-run looking back",
@@ -103,9 +103,6 @@
    "dur": 6,
    "type": "pov",
    "refs": [
-    "Nora",
-    "Nora Body",
-    "Nora Outfit",
     "Woolly Mammoth",
     "Mammoth Steppe"
    ],
@@ -142,9 +139,6 @@
    "dur": 10,
    "type": "pov",
    "refs": [
-    "Nora",
-    "Nora Body",
-    "Nora Outfit",
     "Torak",
     "Mezhyrich Camp"
    ],
@@ -226,7 +220,7 @@
    "set": "CAMP",
    "light": "dawn",
    "shot": "From just behind Nora's head, then turning around to a selfie",
-   "frame0": "Smartphone frame from just behind Nora's head at dawn: her honey-blonde ponytail and pushed-back white fox-fur hood fill the left half; on the right, about six metres away in the snow, Torak already stands holding a flint-tipped spear angled forward at chest height in a guarded stance.",
+   "frame0": "",
    "seg": [
     [
      "Torak takes two slow steps toward Nora through the snow, spear angled forward at chest height, raises one hand flat, palm down, in a stop gesture, and stops about four metres away.",
@@ -293,9 +287,6 @@
    "dur": 10,
    "type": "pov_hand",
    "refs": [
-    "Nora",
-    "Nora Body",
-    "Nora Outfit",
     "Torak",
     "Mezhyrich Camp"
    ],
@@ -482,9 +473,6 @@
    "type": "pov_hand",
    "hand": "only her bare hand, holding nothing but a scoop of snow, enters the lower frame",
    "refs": [
-    "Nora",
-    "Nora Body",
-    "Nora Outfit",
     "Alva",
     "Bone Dwelling Interior"
    ],
@@ -567,7 +555,7 @@
    "set": "INT",
    "light": "day_in",
    "shot": "Locked-off frame from a bone ledge about half a metre high, looking level at Nora by the hearth",
-   "frame0": "Static frame from a phone propped on a bone ledge about half a metre high, looking level at Nora sitting by the hearth; Alva sits to her right.",
+   "frame0": "",
    "seg": [
     [
      "Alva hands Nora a lump of soft white fat together with a strip of meat.",
@@ -949,7 +937,7 @@
    "set": "STEP",
    "light": "afternoon",
    "shot": "From Nora's raised hand just behind her right shoulder, looking forward along the trail; Torak walks about three metres ahead",
-   "frame0": "Smartphone frame from just behind Nora's right shoulder on the snowy steppe in low afternoon sun; her shoulder and ponytail at the left edge; Torak walks about three metres ahead with his back to the camera, leaving deep footprints.",
+   "frame0": "",
    "seg": [
     [
      "Both walk slowly; Nora steps exactly into Torak's footprints.",
@@ -987,7 +975,7 @@
    "set": "STEP",
    "light": "afternoon",
    "shot": "From just behind Nora's head, the back of her head on the left, the valley on the right (Reveal #1)",
-   "frame0": "Smartphone frame from just behind Nora's head as she kneels on a snowy rise in low afternoon sun: the back of her head and ponytail fill the left half; on the right, far below in the broad frozen valley, a herd of woolly mammoths is already visible, small in the distance.",
+   "frame0": "",
    "seg": [
     [
      "Nora stays still; the herd far below walks slowly to the left, staying small and far away.",
@@ -1128,9 +1116,6 @@
    "dur": 10,
    "type": "pov_hand",
    "refs": [
-    "Nora",
-    "Nora Body",
-    "Nora Outfit",
     "Woolly Mammoth",
     "Mammoth Steppe"
    ],
@@ -1205,9 +1190,6 @@
    "dur": 6,
    "type": "pov",
    "refs": [
-    "Nora",
-    "Nora Body",
-    "Nora Outfit",
     "Torak",
     "Mammoth Steppe"
    ],
@@ -1319,9 +1301,6 @@
    "dur": 6,
    "type": "pov",
    "refs": [
-    "Nora",
-    "Nora Body",
-    "Nora Outfit",
     "Woolly Mammoth",
     "Mammoth Steppe"
    ],
@@ -1442,7 +1421,7 @@
    "set": "STEP",
    "light": "sunset",
    "shot": "From just behind Nora's head looking down at the bank and valley, then turning to a selfie",
-   "frame0": "Smartphone frame from just behind Nora's head at sunset: below the riverbank lip, long slide marks scraped into the glazed ice; far away the mammoth herd walking off into the orange sunset.",
+   "frame0": "",
    "seg": [
     [
      "The herd keeps walking away, small and getting smaller; the sun sinks low.",
@@ -1510,9 +1489,6 @@
    "type": "pov_hand",
    "hand": "only her bare hand, holding a flat bone spatula, enters the lower frame",
    "refs": [
-    "Nora",
-    "Nora Body",
-    "Nora Outfit",
     "Alva",
     "Bone Dwelling Interior"
    ],
@@ -1548,9 +1524,6 @@
    "dur": 10,
    "type": "pov_hand",
    "refs": [
-    "Nora",
-    "Nora Body",
-    "Nora Outfit",
     "Alva",
     "Bone Dwelling Interior"
    ],
@@ -1596,7 +1569,7 @@
    "set": "INT",
    "light": "night_in",
    "shot": "Locked-off frame from a bone ledge, Nora, Alva and the hearth",
-   "frame0": "Static frame from a phone propped on a bone ledge inside the dwelling at night: Nora and Alva by the hearth, a fur hide on the floor near the wall.",
+   "frame0": "",
    "seg": [
     [
      "Alva pats a fur hide on the floor at the spot close to the wall beside the fire.",
@@ -1664,9 +1637,6 @@
    "type": "pov_hand",
    "hand": "only her bare hand, holding the edge of the hide, enters the lower frame",
    "refs": [
-    "Nora",
-    "Nora Body",
-    "Nora Outfit",
     "Alva",
     "Bone Dwelling Interior"
    ],
@@ -1816,9 +1786,6 @@
    "dur": 10,
    "type": "pov_hand",
    "refs": [
-    "Nora",
-    "Nora Body",
-    "Nora Outfit",
     "Painted Mammoth Skull"
    ],
    "set": "CAMP",
@@ -1891,9 +1858,6 @@
    "dur": 10,
    "type": "wide",
    "refs": [
-    "Nora",
-    "Nora Body",
-    "Nora Outfit",
     "Mezhyrich Camp"
    ],
    "set": "CAMP",
@@ -1928,9 +1892,6 @@
    "dur": 10,
    "type": "wide",
    "refs": [
-    "Nora",
-    "Nora Body",
-    "Nora Outfit",
     "Mezhyrich Camp"
    ],
    "set": "CAMP",
@@ -2050,7 +2011,7 @@
    "set": "INT",
    "light": "night_in",
    "shot": "Locked-off frame from a bone ledge inside the dwelling",
-   "frame0": "Static frame from a phone propped on a bone ledge inside the dwelling at night: Nora sits wrapped in fur hides beside glowing embers; Alva sleeps in the background.",
+   "frame0": "",
    "seg": [
     [
      "Nora sits still, wrapped in furs; behind her Alva sleeps.",
@@ -2087,7 +2048,7 @@
    "set": "CAMP",
    "light": "dawn",
    "shot": "Locked-off frame from a dwelling entrance looking out at Nora and the steppe",
-   "frame0": "Static frame from a phone propped at a dwelling entrance, looking out at Nora sitting on a mammoth bone in the snow; the steppe horizon behind her beginning to glow with first light.",
+   "frame0": "",
    "seg": [
     [
      "Nora sits still on the bone, a fur hide around her shoulders; the light slowly grows.",

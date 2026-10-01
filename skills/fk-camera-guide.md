@@ -8,7 +8,7 @@ Reference for writing video prompts optimized for Google Veo 3. Veo 3 generates 
 - **Style:** Natural prose — write like briefing a film director
 - **Camera movement:** Always a **separate sentence** — never embed in action description
 - **Audio:** Always describe at end of prompt with `Audio:`, `SFX:`, `Music:` labels
-- **Constraints (this repo's rule, from user feedback):** do NOT append a `Negative:` keyword list — it proved ineffective (a phone kept appearing even when listed). Write each constraint as a plain sentence in the prompt body instead, e.g. `No subtitles or text appear on screen.` / `The phone is the camera, so no phone appears anywhere in the frame.` See `/fk-time-travel-vlog` section 11. The `Negative:` examples further down are kept only as the generic Veo reference.
+- **Constraints (this repo's rule, from user feedback):** do NOT append a `Negative:` keyword list — it proved ineffective (a phone kept appearing even when listed). Write each constraint as a plain sentence in the prompt body instead, e.g. `No subtitles or text appear in the frame.` / `Her free hand is empty, and the view comes from her own outstretched arm.` Never name the device (no `phone`, `smartphone`, `screen`, `selfie stick`), not even to forbid it — naming it makes the model draw it See `/fk-time-travel-vlog` section 11. The `Negative:` examples further down are kept only as the generic Veo reference.
 
 ### 5-Component Structure
 
@@ -362,7 +362,7 @@ Layer 5: Camera Dynamic Response (Độ nảy dọc theo bước chân, độ tr
 
 ### Quy tắc Quang học Smartphone & Động học Camera
 1. **Quang học Smartphone:** Không dùng câu lệnh cứng nhắc "zero lens distortion" làm mâu thuẫn góc máy; dùng:
-   `natural smartphone perspective, no exaggerated fisheye distortion, no artificial wide-angle warping`.
+   `natural wide-angle handheld perspective, no exaggerated fisheye distortion`.
 2. **Camera khi vận động mạnh (chạy trốn, vượt địa hình):** Bắt buộc mô tả độ nảy và quán tính:
    `handheld smartphone footage with natural vertical bounce synchronized to each footfall, slight rotational lag when turning, and realistic motion blur`.
 3. **Cơ học truyền lực & Điểm neo (Force Transmission):** Lực va chạm từ vật thể nặng/thú lớn phải truyền vào dầm gỗ, đá tảng hoặc mặt đất kiên cố (`force -> object -> timber barrier -> ground`), tuyệt đối không để cơ thể người làm điểm tựa chịu lực trực tiếp.
@@ -384,7 +384,7 @@ Before submitting any video prompt, verify:
 - [ ] Dialogue short (fits in ~8s), uses `:` format or `(no subtitles)`
 - [ ] Multi-shot: max 2–3, with match-action cues at transitions
 - [ ] Character description consistent across multi-prompt sequences
-- [ ] Constraints written as sentences in the body (at minimum: no subtitles/text on screen; for phone-vlog shots, no phone in frame) — no `Negative:` line
+- [ ] Constraints written as sentences in the body (at minimum: no subtitles/text on screen; for phone-vlog shots, describe the viewpoint and an empty free hand, never the device) — no `Negative:` line
 - [ ] No abstract words — everything is visual/audible and specific
 - [ ] Character physically present in start frame if acting or speaking in video (no mid-clip pop-in)
 
