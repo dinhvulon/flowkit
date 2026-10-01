@@ -39,7 +39,7 @@
    "tripod": "The phone is the camera, resting still on a ledge; the frame never moves, and no phone, tripod or selfie stick appears anywhere in the shot.",
    "wide": "Nora is behind the camera and not visible. No phone, no device, and no selfie stick appear anywhere in the frame."
   },
-  "identity": "Nora looks exactly like her reference sheet: same face, honey-blonde high ponytail with curtain bangs. OUTFIT LOCK (CRITICAL -- match the Nora Outfit reference image exactly): she wears a fitted WHITE/CREAM reindeer suede jacket-dress (mid-thigh length), deep plunging V neckline laced with thin leather ties and ivory beads along the edges, large white arctic-fox fur collar/hood framing the neckline, long sleeves with thick white fur cuffs, wide tan leather belt at waist sewn with rows of drilled ivory/bone teeth, the body of the dress is CREAM/OFF-WHITE suede with a slight sheen -- NOT dark, NOT brown, NOT a parka. Light beige-white hide leggings (NOT dark/black). Knee-high suede cream boots with white fur cuff trim at the top. Small white fur mittens on a braided cord hanging at her sides. Every scene featuring Nora must show this exact costume.",
+  "identity": "Nora looks exactly like her three reference images: her face from the Nora face sheet (honey-blonde high ponytail with curtain bangs, grey-green eyes), her tall curvy hourglass build from the Nora Body sheet, and her clothing from the Nora Outfit sheet. OUTFIT LOCK (CRITICAL -- match the Nora Outfit reference image exactly): she wears a fitted WHITE/CREAM reindeer suede jacket-dress (mid-thigh length), deep plunging V neckline laced with thin leather ties and ivory beads along the edges, large white arctic-fox fur collar/hood framing the neckline, long sleeves with thick white fur cuffs, wide tan leather belt at waist sewn with rows of drilled ivory/bone teeth, the body of the dress is CREAM/OFF-WHITE suede with a slight sheen -- NOT dark, NOT brown, NOT a parka. Light beige-white hide leggings (NOT dark/black). Knee-high suede cream boots with white fur cuff trim at the top. Small white fur mittens on a braided cord hanging at her sides. Every scene featuring Nora must show this exact costume.",
   "general": "Natural smartphone perspective, no exaggerated fisheye distortion. Only Nora speaks; the locals communicate only with gestures and never speak. No subtitles or text appear on screen. This looks like raw unedited amateur video posted online, not a movie or a 3D render.",
   "outdoor": "The ground is solid and completely still. Breath vapor is short-lived and fades quickly in the cold air.",
   "settings": {
@@ -65,6 +65,8 @@
    "type": "run",
    "refs": [
     "Nora",
+    "Nora Body",
+    "Nora Outfit",
     "Woolly Mammoth",
     "Mammoth Steppe"
    ],
@@ -102,6 +104,8 @@
    "type": "pov",
    "refs": [
     "Nora",
+    "Nora Body",
+    "Nora Outfit",
     "Woolly Mammoth",
     "Mammoth Steppe"
    ],
@@ -139,6 +143,8 @@
    "type": "pov",
    "refs": [
     "Nora",
+    "Nora Body",
+    "Nora Outfit",
     "Torak",
     "Mezhyrich Camp"
    ],
@@ -175,6 +181,8 @@
    "type": "selfie",
    "refs": [
     "Nora",
+    "Nora Body",
+    "Nora Outfit",
     "Mezhyrich Camp"
    ],
    "set": "CAMP",
@@ -210,6 +218,8 @@
    "type": "back_selfie",
    "refs": [
     "Nora",
+    "Nora Body",
+    "Nora Outfit",
     "Torak",
     "Mezhyrich Camp"
    ],
@@ -246,6 +256,8 @@
    "type": "selfie",
    "refs": [
     "Nora",
+    "Nora Body",
+    "Nora Outfit",
     "Torak",
     "Mezhyrich Camp"
    ],
@@ -282,6 +294,8 @@
    "type": "pov_hand",
    "refs": [
     "Nora",
+    "Nora Body",
+    "Nora Outfit",
     "Torak",
     "Mezhyrich Camp"
    ],
@@ -318,6 +332,8 @@
    "type": "selfie",
    "refs": [
     "Nora",
+    "Nora Body",
+    "Nora Outfit",
     "Alva",
     "Mezhyrich Camp"
    ],
@@ -354,6 +370,8 @@
    "type": "selfie",
    "refs": [
     "Nora",
+    "Nora Body",
+    "Nora Outfit",
     "Mezhyrich Camp"
    ],
    "set": "CAMP",
@@ -389,6 +407,8 @@
    "type": "selfie",
    "refs": [
     "Nora",
+    "Nora Body",
+    "Nora Outfit",
     "Mezhyrich Camp"
    ],
    "set": "CAMP",
@@ -424,6 +444,8 @@
    "type": "selfie",
    "refs": [
     "Nora",
+    "Nora Body",
+    "Nora Outfit",
     "Alva",
     "Bone Dwelling Interior"
    ],
@@ -461,6 +483,8 @@
    "hand": "only her bare hand, holding nothing but a scoop of snow, enters the lower frame",
    "refs": [
     "Nora",
+    "Nora Body",
+    "Nora Outfit",
     "Alva",
     "Bone Dwelling Interior"
    ],
@@ -497,6 +521,8 @@
    "type": "selfie",
    "refs": [
     "Nora",
+    "Nora Body",
+    "Nora Outfit",
     "Alva",
     "Bone Dwelling Interior"
    ],
@@ -533,6 +559,8 @@
    "type": "tripod",
    "refs": [
     "Nora",
+    "Nora Body",
+    "Nora Outfit",
     "Alva",
     "Bone Dwelling Interior"
    ],
@@ -569,6 +597,8 @@
    "type": "selfie",
    "refs": [
     "Nora",
+    "Nora Body",
+    "Nora Outfit",
     "Torak",
     "Mezhyrich Camp"
    ],
@@ -605,6 +635,8 @@
    "type": "selfie",
    "refs": [
     "Nora",
+    "Nora Body",
+    "Nora Outfit",
     "Torak",
     "Mezhyrich Camp"
    ],
@@ -641,6 +673,8 @@
    "type": "selfie",
    "refs": [
     "Nora",
+    "Nora Body",
+    "Nora Outfit",
     "Alva",
     "Mezhyrich Camp"
    ],
@@ -677,6 +711,8 @@
    "type": "selfie",
    "refs": [
     "Nora",
+    "Nora Body",
+    "Nora Outfit",
     "Torak",
     "Mammoth Steppe"
    ],
@@ -713,6 +749,8 @@
    "type": "selfie",
    "refs": [
     "Nora",
+    "Nora Body",
+    "Nora Outfit",
     "Torak",
     "Mammoth Steppe"
    ],
@@ -749,6 +787,8 @@
    "type": "selfie",
    "refs": [
     "Nora",
+    "Nora Body",
+    "Nora Outfit",
     "Torak",
     "Woolly Rhinoceros"
    ],
@@ -786,6 +826,8 @@
    "type": "selfie",
    "refs": [
     "Nora",
+    "Nora Body",
+    "Nora Outfit",
     "Torak",
     "Mammoth Steppe"
    ],
@@ -823,6 +865,8 @@
    "type": "selfie",
    "refs": [
     "Nora",
+    "Nora Body",
+    "Nora Outfit",
     "Alva",
     "Bone Dwelling Interior"
    ],
@@ -859,6 +903,8 @@
    "type": "selfie",
    "refs": [
     "Nora",
+    "Nora Body",
+    "Nora Outfit",
     "Torak",
     "Mezhyrich Camp"
    ],
@@ -895,6 +941,8 @@
    "type": "back",
    "refs": [
     "Nora",
+    "Nora Body",
+    "Nora Outfit",
     "Torak",
     "Mammoth Steppe"
    ],
@@ -931,6 +979,8 @@
    "type": "back",
    "refs": [
     "Nora",
+    "Nora Body",
+    "Nora Outfit",
     "Woolly Mammoth",
     "Mammoth Steppe"
    ],
@@ -1003,6 +1053,8 @@
    "type": "selfie",
    "refs": [
     "Nora",
+    "Nora Body",
+    "Nora Outfit",
     "Torak",
     "Woolly Mammoth"
    ],
@@ -1039,6 +1091,8 @@
    "type": "selfie",
    "refs": [
     "Nora",
+    "Nora Body",
+    "Nora Outfit",
     "Torak",
     "Woolly Mammoth"
    ],
@@ -1075,6 +1129,8 @@
    "type": "pov_hand",
    "refs": [
     "Nora",
+    "Nora Body",
+    "Nora Outfit",
     "Woolly Mammoth",
     "Mammoth Steppe"
    ],
@@ -1111,6 +1167,8 @@
    "type": "run",
    "refs": [
     "Nora",
+    "Nora Body",
+    "Nora Outfit",
     "Woolly Mammoth",
     "Mammoth Steppe"
    ],
@@ -1148,6 +1206,8 @@
    "type": "pov",
    "refs": [
     "Nora",
+    "Nora Body",
+    "Nora Outfit",
     "Torak",
     "Mammoth Steppe"
    ],
@@ -1184,6 +1244,8 @@
    "type": "selfie",
    "refs": [
     "Nora",
+    "Nora Body",
+    "Nora Outfit",
     "Woolly Mammoth",
     "Mammoth Steppe"
    ],
@@ -1220,6 +1282,8 @@
    "type": "selfie",
    "refs": [
     "Nora",
+    "Nora Body",
+    "Nora Outfit",
     "Woolly Mammoth",
     "Mammoth Steppe"
    ],
@@ -1256,6 +1320,8 @@
    "type": "pov",
    "refs": [
     "Nora",
+    "Nora Body",
+    "Nora Outfit",
     "Woolly Mammoth",
     "Mammoth Steppe"
    ],
@@ -1292,6 +1358,8 @@
    "type": "selfie",
    "refs": [
     "Nora",
+    "Nora Body",
+    "Nora Outfit",
     "Torak",
     "Mammoth Steppe"
    ],
@@ -1328,6 +1396,8 @@
    "type": "selfie",
    "refs": [
     "Nora",
+    "Nora Body",
+    "Nora Outfit",
     "Torak",
     "Mammoth Steppe"
    ],
@@ -1364,6 +1434,8 @@
    "type": "back_selfie",
    "refs": [
     "Nora",
+    "Nora Body",
+    "Nora Outfit",
     "Woolly Mammoth",
     "Mammoth Steppe"
    ],
@@ -1400,6 +1472,8 @@
    "type": "selfie",
    "refs": [
     "Nora",
+    "Nora Body",
+    "Nora Outfit",
     "Alva",
     "Bone Dwelling Interior"
    ],
@@ -1437,6 +1511,8 @@
    "hand": "only her bare hand, holding a flat bone spatula, enters the lower frame",
    "refs": [
     "Nora",
+    "Nora Body",
+    "Nora Outfit",
     "Alva",
     "Bone Dwelling Interior"
    ],
@@ -1473,6 +1549,8 @@
    "type": "pov_hand",
    "refs": [
     "Nora",
+    "Nora Body",
+    "Nora Outfit",
     "Alva",
     "Bone Dwelling Interior"
    ],
@@ -1510,6 +1588,8 @@
    "type": "tripod",
    "refs": [
     "Nora",
+    "Nora Body",
+    "Nora Outfit",
     "Alva",
     "Bone Dwelling Interior"
    ],
@@ -1546,6 +1626,8 @@
    "type": "selfie",
    "refs": [
     "Nora",
+    "Nora Body",
+    "Nora Outfit",
     "Alva",
     "Bone Dwelling Interior"
    ],
@@ -1583,6 +1665,8 @@
    "hand": "only her bare hand, holding the edge of the hide, enters the lower frame",
    "refs": [
     "Nora",
+    "Nora Body",
+    "Nora Outfit",
     "Alva",
     "Bone Dwelling Interior"
    ],
@@ -1619,6 +1703,8 @@
    "type": "selfie",
    "refs": [
     "Nora",
+    "Nora Body",
+    "Nora Outfit",
     "Alva",
     "Bone Dwelling Interior"
    ],
@@ -1655,6 +1741,8 @@
    "type": "selfie",
    "refs": [
     "Nora",
+    "Nora Body",
+    "Nora Outfit",
     "Painted Mammoth Skull",
     "Mezhyrich Camp"
    ],
@@ -1691,6 +1779,8 @@
    "type": "selfie",
    "refs": [
     "Nora",
+    "Nora Body",
+    "Nora Outfit",
     "Torak",
     "Painted Mammoth Skull"
    ],
@@ -1727,6 +1817,8 @@
    "type": "pov_hand",
    "refs": [
     "Nora",
+    "Nora Body",
+    "Nora Outfit",
     "Painted Mammoth Skull"
    ],
    "set": "CAMP",
@@ -1762,6 +1854,8 @@
    "type": "selfie",
    "refs": [
     "Nora",
+    "Nora Body",
+    "Nora Outfit",
     "Mezhyrich Camp"
    ],
    "set": "CAMP",
@@ -1798,6 +1892,8 @@
    "type": "wide",
    "refs": [
     "Nora",
+    "Nora Body",
+    "Nora Outfit",
     "Mezhyrich Camp"
    ],
    "set": "CAMP",
@@ -1833,6 +1929,8 @@
    "type": "wide",
    "refs": [
     "Nora",
+    "Nora Body",
+    "Nora Outfit",
     "Mezhyrich Camp"
    ],
    "set": "CAMP",
@@ -1868,6 +1966,8 @@
    "type": "selfie",
    "refs": [
     "Nora",
+    "Nora Body",
+    "Nora Outfit",
     "Cave Lion",
     "Mezhyrich Camp"
    ],
@@ -1905,6 +2005,8 @@
    "type": "selfie",
    "refs": [
     "Nora",
+    "Nora Body",
+    "Nora Outfit",
     "Mezhyrich Camp"
    ],
    "set": "CAMP",
@@ -1940,6 +2042,8 @@
    "type": "tripod",
    "refs": [
     "Nora",
+    "Nora Body",
+    "Nora Outfit",
     "Alva",
     "Bone Dwelling Interior"
    ],
@@ -1976,6 +2080,8 @@
    "type": "tripod",
    "refs": [
     "Nora",
+    "Nora Body",
+    "Nora Outfit",
     "Mezhyrich Camp"
    ],
    "set": "CAMP",

@@ -470,12 +470,24 @@ Rút ra từ dự án `output/atlantis-9600bc/` (2026-09-27). Khi mâu thuẫn v
     - **Tốc độ chạy trong tuyết sâu:** Bài học 30 mô tả "bước chân rút ngắn, nặng nhọc" là đúng về vật lý, nhưng để cảnh trông **KHẨN CẤP và NHANH** thì phải tả thêm: `legs pumping as fast as physically possible, arms swinging hard, the camera bouncing violently with each stride, face locked in wide-eyed terror — maximum effort sprint even if ground speed is limited by snow depth`. Tránh từ "short heavy strides" vì model sẽ gen animation đi bộ.
     - **Biểu cảm:** Với cảnh trốn chạy, phải khóa cứng `wide-eyed terror, mouth open in a gasp or scream, no smile whatsoever, brow furrowed hard` — nếu chỉ tả "terrified" mà không chi tiết, model hay gen mặt cười kiểu excited.
 
-34. **OUTFIT LOCK via Outfit Entity (bài học H2 Ice Age 16,000 BC — AI thay outfit khi không có entity riêng):**
-    - **Vấn đề root-cause:** Khi R2V chỉ nhận entity nhân vật (Nora) mà không có entity trang phục riêng, model thường tự suy diễn trang phục từ context scene (cảnh tuyết lạnh → tự mặc áo parka nâu thay vì outfit gốc). Kết quả: H2 gen Nora mặc parka nâu tối thay vì váy suede trắng kem.
-    - **Fix bắt buộc — 3 bước:**
-      1. **Tạo entity `<Vlogger> Outfit`** ngay khi tạo project, KHÔNG gen ảnh mới từ text prompt. Thay vào đó crop các panel 2+3 (3/4 và toàn thân) từ ảnh ref character chính (`nora_clean.jpg`) bằng `ffmpeg -vf "crop=iw*2/3:ih:iw/3:0"`. Ảnh crop NÀY chứa outfit chính xác.
-      2. **Upload crop và patch entity** `image_prompt` với mô tả: "Outfit reference extracted from character sheet -- use this as definitive outfit reference for all video generation."
-      3. **Thêm `<Vlogger> Outfit` vào `character_names`** của TẤT CẢ scene có vlogger xuất hiện, song song với entity `<Vlogger>` (character identity). R2V model nhận cả 2 ingredient: face ref + outfit ref.
+34. **BỘ 3 REF CỐ ĐỊNH CHO VLOGGER: Mặt + Body + Outfit (bài học H1/H2 Ice Age 16,000 BC — outfit trôi, dáng người trôi):**
+    - **Root-cause #1 (lỗi nặng nhất): `character_names` phải là TÊN entity, không phải UUID.** Server so khớp theo `name`/`slug` (`_char_matches` trong `agent/sdk/services/operations.py`). Nếu lưu UUID thì không khớp entity nào → server rơi vào nhánh dự phòng và chỉ gửi **1 ref duy nhất** (entity đầu tiên của project). Mọi lock outfit/body đều vô hiệu. Luôn PATCH `character_names: ["Nora", "Nora Body", "Nora Outfit", ...]` và đọc lại scene để kiểm tra.
+    - **Root-cause #2: giới hạn ref r2v.** `_R2V_MAX_REFS` đã nâng từ 3 lên 7 (giới hạn Omni Flash). Thứ tự ưu tiên: `visual_asset` trước, rồi `character`; entity `location` KHÔNG được gửi làm ref (chỉ mô tả bằng prompt). Một scene có tối đa 7 ref visual_asset + character.
+    - **Root-cause #3: không có entity outfit/body riêng** → model tự suy diễn quần áo theo bối cảnh (tuyết → áo parka nâu) và tự đổi dáng người.
+    - **Bộ 3 entity bắt buộc cho vlogger (tất cả `entity_type: character`, ảnh 16:9, đã xóa logo trước khi upload theo rule 28):**
+      | Entity | Nguồn ảnh | Chứa gì |
+      |---|---|---|
+      | `<Vlogger>` | Ảnh mặt user cung cấp (Ice Age: `uploads/nora_main.jpg`) — upload thẳng, KHÔNG gen lại | Chỉ khuôn mặt, tóc, khuyên tai |
+      | `<Vlogger> Body` | `EDIT_CHARACTER_IMAGE` với `source_media_id` = media_id ảnh mặt, prompt từ `uploads/nora_base_body_prompt.json` đã sửa: **bỏ panel face close-up, mọi panel cắt ngang VAI (cắt ngang cằm vẫn lộ môi) → không thấy mặt; quần áo phải ÔM SÁT (skin-tight) nếu không model vẽ áo buông thẳng và mất eo**, 3 panel trước / 3/4 / sau, áo tank xám + quần bike đen, chân trần | Chỉ dáng người, tỉ lệ, màu da |
+      | `<Vlogger> Outfit` | Crop panel 3/4 + toàn thân từ character sheet đang mặc outfit (`ffmpeg -vf "crop=iw*2/3:ih:iw/3:0"`) | Chỉ trang phục |
+    - **Vì sao body KHÔNG có mặt:** nếu ảnh body có mặt, model nhận 2 khuôn mặt khác nhau (ảnh mặt + ảnh body) và trộn lẫn → mặt trôi. Body sheet chỉ được mang thông tin dáng người.
+    - **Quy trình khi setup project:**
+      1. Xóa logo ảnh mặt → upload → PATCH `media_id` của `<Vlogger>`.
+      2. Tạo entity `<Vlogger> Body` với prompt body-không-mặt → link vào project → batch `EDIT_CHARACTER_IMAGE` (`character_id`, `source_media_id` = media_id mặt). Tải về, mở ra kiểm tra không lộ mặt, xóa logo, upload lại, PATCH `media_id`.
+      3. Crop outfit → xóa logo nếu có → upload → PATCH `media_id` của `<Vlogger> Outfit`.
+      4. Trong `clips.json`: mọi clip có `<Vlogger>` trong `refs` phải có đủ `["<Vlogger>", "<Vlogger> Body", "<Vlogger> Outfit", ...]`.
+      5. `common.identity` nêu rõ vai trò từng ảnh: *"her face from the Nora face sheet, her tall curvy hourglass build from the Nora Body sheet, and her clothing from the Nora Outfit sheet."*
+    - **Lưu ý shot POV (`pov`, `pov_hand`, `wide`):** vlogger đứng sau camera nên khối identity không được chèn. Nếu vẫn gắn ref mặt/body, model có thể vẽ vlogger vào khung hình → kiểm tra kỹ khi review.
     - **Outfit lock trong `common.identity`:** Cập nhật `common.identity` trong `clips.json` để mô tả chi tiết màu sắc, chất liệu, phụ kiện của trang phục. Phải nêu rõ "NOT dark, NOT brown, NOT a parka" để ngăn model suy diễn.
     - **Outfit lock trong `video_prompt`:** Thêm `OUTFIT LOCK (CRITICAL)` vào mỗi `video_prompt` của cảnh có vlogger, nêu rõ màu chủ đạo (ví dụ: "WHITE/CREAM reindeer suede dress, NOT dark/brown coat").
     - **Lưu ý mannequin:** Nếu gen ảnh outfit mới bằng AI (mannequin display), ảnh sẽ KHÔNG khớp chính xác với outfit trong character ref vì AI tự diễn giải từ text. Phải luôn dùng crop từ character ref sheet thay vì gen mới.
@@ -488,11 +500,16 @@ Rút ra từ dự án `output/atlantis-9600bc/` (2026-09-27). Khi mâu thuẫn v
       # Upload rồi dùng làm media_id của entity "Nora Outfit"
       ```
 
-    **[ICE AGE PROJECT] Nora Outfit — Locked specification (đã xác nhận từ nora_clean.jpg):**
-    - **Entity name:** `Nora Outfit`  |  **Entity type:** `character`  |  **Ref file:** `nora_outfit_crop.jpg` (crop từ nora_clean.jpg)
+    **[ICE AGE PROJECT] Nora — bộ 3 ref đã khóa:**
+    - `Nora` ← `uploads/nora_main.jpg` (sheet mặt 4 góc, đã xóa logo → `refs/nora_main_clean.jpg`). Đây là ảnh nhân vật chính thức; KHÔNG dùng `nora_clean.jpg` làm ảnh mặt nữa.
+    - `Nora Body` ← `refs/nora_body_v3_clean.jpg` (EDIT_CHARACTER_IMAGE từ nora_main + `uploads/nora_base_body_prompt.json` v3: khung cắt ngang vai, áo tank + quần bike ôm sát để thấy eo nhỏ, chân thon, ngực đầy; không có mặt).
+    - `Nora Outfit` ← `refs/nora_outfit_crop.jpg` (crop từ `nora_clean.jpg`).
+    - `refs` của mọi clip có Nora: `["Nora", "Nora Body", "Nora Outfit", ...]`.
     - **common.identity lock (dùng trong tất cả cảnh Nora xuất hiện):**
       ```
-      Nora looks exactly like her reference sheet: same face, honey-blonde high ponytail with curtain bangs.
+      Nora looks exactly like her three reference images: her face from the Nora face sheet
+      (honey-blonde high ponytail with curtain bangs, grey-green eyes), her tall curvy hourglass build
+      from the Nora Body sheet, and her clothing from the Nora Outfit sheet.
       OUTFIT LOCK (CRITICAL -- match the Nora Outfit reference image exactly):
       she wears a fitted WHITE/CREAM reindeer suede jacket-dress (mid-thigh length),
       deep plunging V neckline laced with thin leather ties and ivory beads along the edges,

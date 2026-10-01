@@ -3,7 +3,8 @@
   "entities": {
     "Nora": {
       "character_id": "0380d5d4-72f5-453b-85b5-993ccf30b44b",
-      "media_id": "48b06bae-ca46-409b-8792-84ee4fc13456"
+      "media_id": "a22ea88f-3024-4cb8-a720-6a8d3410f407",
+      "source": "uploads/nora_main.jpg (watermark removed)"
     },
     "Nora Outfit": {
       "character_id": "094f7330-8e55-470e-bd2a-2bdee356ff8c",
@@ -50,6 +51,11 @@
     "Cave Lion": {
       "character_id": "9bcace65-697f-4bf3-a2dd-29660f258f82",
       "media_id": "a9fd0685-fbba-4e36-a5ee-382e558a5277"
+    },
+    "Nora Body": {
+      "character_id": "8385f96a-c0eb-4e30-9353-e04b9bd651f1",
+      "media_id": "a7b7bcf4-c625-416e-92f4-7e3fc050eeee",
+      "source": "refs/nora_body_v3_clean.jpg (EDIT_CHARACTER_IMAGE from nora_main + uploads/nora_base_body_prompt.json v3)"
     }
   }
 }

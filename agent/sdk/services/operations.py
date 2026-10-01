@@ -379,7 +379,7 @@ class OperationService:
         # Location entities are excluded — they add generic backgrounds
         # that can re-introduce unwanted visual elements (e.g. buildings
         # removed from a scene).
-        _R2V_MAX_REFS = 3
+        _R2V_MAX_REFS = 7  # Omni Flash Ingredients limit (agent/services/omni_flash.py)
         _R2V_ENTITY_PRIORITY = ("visual_asset", "character")
         ref_ids: list[str] = []
         ref_urls: list[str] = []
