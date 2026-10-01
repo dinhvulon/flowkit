@@ -39,7 +39,7 @@
    "tripod": "The phone is the camera, resting still on a ledge; the frame never moves, and no phone, tripod or selfie stick appears anywhere in the shot.",
    "wide": "Nora is behind the camera and not visible. No phone, no device, and no selfie stick appear anywhere in the frame."
   },
-  "identity": "Nora looks exactly like her reference sheet: same face, honey-blonde high ponytail with curtain bangs, and the same fitted suede-like hide parka with the fox-tooth belt.",
+  "identity": "Nora looks exactly like her reference sheet: same face, honey-blonde high ponytail with curtain bangs, and the same fitted white suede-like hide dress with the deep V neckline and the fox-tooth belt.",
   "general": "Natural smartphone perspective, no exaggerated fisheye distortion. Only Nora speaks; the locals communicate only with gestures and never speak. No subtitles or text appear on screen. This looks like raw unedited amateur video posted online, not a movie or a 3D render.",
   "outdoor": "The ground is solid and completely still. Breath vapor is short-lived and fades quickly in the cold air.",
   "settings": {
@@ -690,7 +690,7 @@
      "Hour six. Hauling bone makes me sweat, and damp fur stops insulating."
     ],
     [
-     "Nora stops and, with her free hand, loosens the leather ties at the collar of her parka.",
+     "Nora stops and, with her free hand, loosens the leather ties at her neckline.",
      "So I open up before I'm hot, not after."
     ],
     [
@@ -700,7 +700,7 @@
    ],
    "delivery": "breathing hard, fast",
    "bg": "Torak does not speak.",
-   "physics": "The bone is heavy: both lean forward and move slowly; the snow is pushed aside into a groove. Her curtain bangs are damp and stuck to her forehead and her breath comes in heavy puffs; when she opens the collar a gust lifts the loose fur edge and she shivers once.",
+   "physics": "The bone is heavy: both lean forward and move slowly; the snow is pushed aside into a groove. Her curtain bangs are damp and stuck to her forehead and her breath comes in heavy puffs; when she loosens the ties a gust lifts the fur edge of her hood and she shivers once.",
    "tin": "jump cut",
    "tout": "jump cut",
    "join": "CUT",
@@ -1984,7 +1984,7 @@
    "frame0": "Static frame from a phone propped at a dwelling entrance, looking out at Nora sitting on a mammoth bone in the snow; the steppe horizon behind her beginning to glow with first light.",
    "seg": [
     [
-     "Nora sits still on the bone, wrapped in her parka; the light slowly grows.",
+     "Nora sits still on the bone, a fur hide around her shoulders; the light slowly grows.",
      "Hour twenty-four. First light."
     ],
     [

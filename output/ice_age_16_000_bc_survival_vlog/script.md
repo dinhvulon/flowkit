@@ -1,6 +1,6 @@
 # I Survived 24 Hours in an Ice Age Mammoth-Bone Camp — kịch bản
 
-Skill: `/fk-time-travel-vlog` (Survival Preset §5c, voice-bible, §11). Project FlowKit `5fda95b9-ba37-41bf-95ab-f33a50beabe8`.
+Skill: `/fk-time-travel-vlog` (Survival Preset §5c, voice-bible, §11). Project FlowKit `936c9ec4-5095-43a7-822c-85ede814370a` (tạo lại 01/10/2026).
 Trạng thái: **mục 1–6 xong, bản 52 clip (sửa 2026-10-01: chia lại thoại theo đoạn, rút S36 và S44 xuống 8s, thêm 4 clip S12, S17, S39, S49).** Project FlowKit ở trên không còn trên server; cần tạo lại project và scene trước khi sinh video. Chờ user duyệt trước khi sinh (quy tắc 29).
 
 ---
@@ -23,11 +23,12 @@ Nora, a 29-year-old Western woman with a soft rounded oval face and full cheeks,
 light pink flush and a soft light dusting of a few small freckles on both cheeks, clear bright skin under the eyes, grey-green eyes, defined light-brown brows, natural pink glossy lips, honey-blonde hair pulled
 into a high wavy ponytail with long curtain bangs framing her face, small gold hoop earrings.
 Full, curvy hourglass figure: large full heavy natural bust sitting low, narrow belted waist, wide rounded hips, healthy strong build.
-She wears a hip-length close-fitting parka of thin smooth suede-like reindeer hide (fur only on the hood),
-tailored to follow her curves, front closed with a row of short knotted leather ties, cinched at the waist
-by a wide leather belt sewn with rows of drilled arctic-fox canine teeth, a white arctic-fox fur hood usually
-pushed back onto her shoulders, short rows of tiny mammoth-ivory beads across the chest and cuffs, fur mittens
-hanging from a cord at both cuffs, snug dark soft-hide leggings and slim knee-high fur-lined hide boots.
+She wears a fitted mid-thigh-length dress of soft bleached white reindeer suede with long sleeves,
+a deep plunging V neckline laced loosely with thin leather ties, tailored to follow her curves, trimmed with
+white arctic-fox fur at the cuffs and hem, cinched at the waist by a wide leather belt sewn with rows of drilled
+arctic-fox canine teeth, a white arctic-fox fur hood attached at the back usually pushed down onto her shoulders,
+short rows of tiny mammoth-ivory beads along the neckline and cuffs, fur mittens hanging from a cord at both cuffs,
+snug dark soft-hide leggings and slim knee-high fur-lined hide boots.
 ```
 
 Khuôn mặt lấy từ `uploads/nora_main.jpg`. Ảnh ref là **một sheet 16:9**: mặt chính diện | góc 3/4 | toàn thân mặc trang phục, không có entity Outfit riêng (§2, §11 quy tắc 22).
