@@ -435,7 +435,7 @@ class OperationService:
                 f"(got {scene.get('duration')!r}); PATCH /api/scenes/<id> "
                 f"with \"duration\" set to one of (4, 6, 8, 10)")}
 
-        # Resolve voice_id (e.g. "achernar" for slot 7 in MZZa6b)
+        # Resolve voice_id (e.g. "laomedeia" for slot 7 in MZZa6b)
         voice_id = None
         if char_names_raw:
             project_chars = await crud.get_project_characters(pid)
@@ -450,7 +450,7 @@ class OperationService:
         if not voice_id and project and project.get("narrator_voice"):
             voice_id = str(project["narrator_voice"]).strip().lower()
         if not voice_id:
-            voice_id = "achernar"
+            voice_id = "laomedeia"
 
         job = ProviderJob(
             job_id=request_id or uuid.uuid4().hex[:12],

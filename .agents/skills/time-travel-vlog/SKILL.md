@@ -34,7 +34,7 @@ Một khối mô tả cố định, **dán nguyên văn vào mọi prompt**, kè
 Gồm: mặt (tuổi, dáng mặt, mắt, tàn nhang/nốt ruồi), tóc (màu, kiểu búi, trâm), trang phục thời kỳ (kiểu áo, màu, cổ áo, thắt lưng), thiết bị (gậy selfie ngắn + điện thoại góc 0.5x), giọng (tông, tốc độ, thì thầm khi sợ). Mẫu ở `.agents/skills/time-travel-vlog/references/prompt-templates.md`.
 
 ### Quy tắc Cốt Lõi Về Voice, Start Frame & Review Ảnh (BẮT BUỘC):
-1. **Voice Achernar**: Với nhân vật vlogger nữ, khai báo `voice_description` theo chuẩn **Achernar** (Google Gemini-TTS: *"Achernar — soft, higher-pitched, natural expressive conversational female voice, casual vlog tone, breathy when amazed, hushed whisper when nervous"*). Đính thoại dạng `Mia says: "..."` trong sub-clips `0-3s / 3-6s / 6-8s` để Veo 3 / Pinhole tự sinh khẩu hình và giọng nói bản địa tự nhiên.
+1. **Voice Laomedeia**: Với nhân vật vlogger nữ, khai báo `voice_description` theo chuẩn **Laomedeia** (Google Gemini-TTS: *"Laomedeia — upbeat, mid-high pitched, energetic expressive conversational female voice, fast confident vlog delivery with dry humor, rises into real cracking screams when in danger, drops to a fast whisper when hiding"*). Đính thoại dạng `Mia says: "..."` trong sub-clips `0-3s / 3-6s / 6-8s` để Veo 3 / Pinhole tự sinh khẩu hình và giọng nói bản địa tự nhiên.
 2. **Trang phục gộp vào ảnh sheet nhân vật (góp ý của user, 2026-10-01; thay bài học S31)**:
    - Ảnh ref vlogger là **một sheet 16:9**: mặt chính diện rõ | góc 3/4 | toàn thân mặc đủ trang phục thời kỳ ở bên phải. Một ảnh khóa cả mặt và trang phục, tiết kiệm 1 slot ref (tối đa 3/clip).
    - Chỉ khi trang phục vẫn bị trôi giữa các clip mới tách thêm entity `<Vlogger> Outfit` (`visual_asset`) cho các clip lỗi.

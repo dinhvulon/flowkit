@@ -451,7 +451,7 @@ class FlowProvider(MediaProvider):
             aspect_ratio=ex.get("aspect", "VIDEO_ASPECT_RATIO_PORTRAIT"),
             user_paygate_tier=ex.get("tier", "PAYGATE_TIER_TWO"),
             duration_s=ex.get("duration_s", 10),
-            voice_id=ex.get("voice_id", "achernar"),
+            voice_id=ex.get("voice_id", "laomedeia"),
         )
 
         if _is_error(submit_result):

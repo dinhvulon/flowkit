@@ -282,9 +282,9 @@ curl -X POST http://127.0.0.1:8100/api/requests \
 ```
 
 > [!TIP]
-> **Dual-Track Voice Handling & Achernar Profile:**
-> 1. **In-Video Lip-Sync (Veo 3):** Structure the `video_prompt` with quoted dialogue in sub-clips (e.g. `0-3s: Mia walks and says "Look at that gate!"`). Set character `voice_description` to the **Achernar** profile (Google Gemini-TTS: soft, higher-pitched, natural expressive conversational female voice, casual vlog tone, breathy when amazed, hushed whisper when nervous). Veo 3 / Pinhole automatically animates character lips and generates matching voice audio inside the video.
-> 2. **Studio TTS Narration:** Run Stage 3 with `--tts` (OmniVoice / EdgeTTS / Gemini-TTS Achernar) to generate crisp narration audio that aligns cleanly with the storyline during concatenation.
+> **Dual-Track Voice Handling & Laomedeia Profile:**
+> 1. **In-Video Lip-Sync (Veo 3):** Structure the `video_prompt` with quoted dialogue in sub-clips (e.g. `0-3s: Mia walks and says "Look at that gate!"`). Set character `voice_description` to the **Laomedeia** profile (Google Gemini-TTS: upbeat, mid-high pitched, energetic expressive conversational female voice, fast confident vlog delivery with dry humor, rises into real cracking screams when in danger, drops to a fast whisper when hiding). Veo 3 / Pinhole automatically animates character lips and generates matching voice audio inside the video.
+> 2. **Studio TTS Narration:** Run Stage 3 with `--tts` (OmniVoice / EdgeTTS / Gemini-TTS Laomedeia) to generate crisp narration audio that aligns cleanly with the storyline during concatenation.
 
 Batch 5. Poll 15s. Each video takes 2-5 min.
 

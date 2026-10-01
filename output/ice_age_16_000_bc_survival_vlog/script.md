@@ -36,7 +36,7 @@ Khuôn mặt lấy từ `uploads/nora_main.jpg`. Ảnh ref là **một sheet 16:
 ### voice_description (chỉ Nora có)
 
 ```
-Achernar — soft, higher-pitched, natural expressive conversational female voice, casual vlog tone, breathy when amazed, hushed whisper when nervous.
+Laomedeia — upbeat, mid-high pitched, energetic expressive conversational female voice, fast confident vlog delivery with dry humor, rises into real cracking screams when in danger, drops to a fast whisper when hiding.
 ```
 
 ### VOICE_LOCK (luật viết thoại, không đưa vào prompt)
@@ -72,7 +72,7 @@ local tricks from them and translates → after the climax she's part of the gro
 
 | Entity | Loại | Vai trò |
 |---|---|---|
-| Nora | character | Vlogger. Có voice Achernar. Sheet: mặt, góc 3/4, toàn thân mặc parka |
+| Nora | character | Vlogger. Có voice Laomedeia. Sheet: mặt, góc 3/4, toàn thân mặc parka |
 | Torak | character | Thợ săn dẫn đường. Sheet 3 góc |
 | Alva | character | Giữ lửa và may vá. Sheet 3 góc |
 | Mezhyrich Camp | visual_asset | 4 dwelling xương voi ma mút trên thềm sông phủ tuyết, có hố và lửa |

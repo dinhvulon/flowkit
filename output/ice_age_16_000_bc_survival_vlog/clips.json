@@ -21,7 +21,7 @@
   },
   "style": {
    "selfie": "Handheld front-lens vlog footage, ultra-wide 0.5x lens, natural wide-angle handheld perspective, subtle hand shake, auto-exposure, photorealistic documentary realism. The lens sits at the end of Nora's outstretched right arm, about 60 cm in front of her face, looking back at her; her right shoulder and upper arm reach toward the bottom-right corner and leave the frame there, so her right hand is never in view.",
-   "run": "Handheld front-lens vlog footage, ultra-wide 0.5x lens, natural wide-angle handheld perspective, auto-exposure, photorealistic documentary realism. The lens sits at the end of Nora's outstretched right arm, about 60 cm in front of her face, looking back at her; her right shoulder and upper arm reach toward the bottom-right corner and leave the frame there, so her right hand is never in view. Her right arm stays extended toward the lens for the entire clip while she runs; only her left arm pumps. The view bounces vertically with each footfall, with slight rotational lag when turning and realistic motion blur.",
+   "run": "Handheld front-lens vlog footage, ultra-wide 0.5x lens, natural wide-angle handheld perspective, auto-exposure, photorealistic documentary realism. The lens sits at the end of Nora's outstretched right arm, about 60 cm in front of her face, looking back at her; her right shoulder and upper arm reach toward the bottom-right corner and leave the frame there, so her right hand is never in view. Her right arm stays extended toward the lens for the entire clip while she runs; only her left arm pumps. Raw unstabilized handheld footage: with every footfall the whole frame jolts — Nora's face jumps up and down by about a tenth of the frame height, the horizon tilts a few degrees left and right, and each impact smears the image with a brief motion blur; the framing drifts off her face and snaps back.",
    "back_selfie": "Handheld vlog footage that starts from Nora's raised hand just behind her head and then turns around to face her at arm's length, natural wide-angle handheld perspective, subtle hand shake, auto-exposure, photorealistic documentary realism.",
    "back": "Handheld vlog footage from Nora's raised right hand just behind her shoulder, looking where she looks, natural wide-angle handheld perspective, subtle hand shake, auto-exposure, photorealistic documentary realism.",
    "pov": "First-person handheld footage seen through Nora's own eyes at her eye level, natural wide-angle handheld perspective, subtle hand shake, auto-exposure, photorealistic documentary realism.",
@@ -77,15 +77,15 @@
    "frame0": "Ultra-wide selfie at arm's length on the snowy steppe at golden-hour sunset, Nora's face filling 45% of the frame — eyes blown wide in raw terror, mouth open in a gasp, brow furrowed hard, no smile whatsoever, frost on eyelashes and cheeks flushed red from cold and exertion; her body is mid-full-sprint, left arm and ponytail flying. About twenty-five metres directly behind her a female woolly mammoth charges straight toward the camera, trunk raised high, snow exploding around her massive feet.",
    "seg": [
     [
-     "Nora sprints at full speed through knee-deep snow, legs pumping frantically, her left arm pumping hard while her right arm stays extended toward the lens, body lurching forward with each desperate stride — she is running as fast as a human can through snow; her face shows wide-eyed terror, gasping, no smile; the mammoth charges at full heavy advance behind her, trunk raised high, snow bursting from her feet.",
+     "Nora sprints at full speed through knee-deep snow, legs pumping frantically, her left arm pumping hard while her right arm stays extended toward the lens, body lurching forward with each desperate stride — she is running as fast as a human can through snow; her face shows wide-eyed terror, gasping, no smile; the mammoth charges at full heavy advance behind her, trunk raised high, snow bursting from her feet, the frame jolting hard on every stride.",
      "Central Ukraine, sixteen thousand BC—"
     ],
     [
-     "Nora keeps sprinting flat-out, legs churning, the camera bouncing hard with every stride; the mammoth grows larger behind her — closing distance slowly, trumpet call audible.",
+     "Nora keeps sprinting flat-out, legs churning, the camera bouncing hard with every stride; the mammoth grows larger behind her — closing distance slowly, trumpet call audible, the horizon swinging left and right with each footfall.",
      "and that's a mammoth, and she's chasing me!"
     ],
     [
-     "At 7.5s Nora glances back over her shoulder and the camera whips sideways in a blur.",
+     "At 7.5s Nora glances back over her shoulder and the camera whips sideways in a blur, the framing lurching and snapping back as she runs.",
      "Don't stop, don't stop!"
     ]
    ],
@@ -1164,15 +1164,15 @@
    "frame0": "Ultra-wide selfie at arm's length on the snowy steppe at sunset, Nora's face close and frightened; far behind her a female woolly mammoth charging, snow spraying.",
    "seg": [
     [
-     "Nora runs forward through knee-deep snow with shortened heavy strides, twisting her upper body to look back over her shoulder; far behind her the female mammoth charges, snow spraying from her feet.",
+     "Nora runs forward through knee-deep snow with shortened heavy strides, twisting her upper body to look back over her shoulder; far behind her the female mammoth charges, snow spraying from her feet, the frame jolting hard on every stride.",
      "She's charging— sh— I can't outrun her."
     ],
     [
-     "Nora keeps running; the mammoth grows slowly larger in the background but stays far behind and never catches up during the clip.",
+     "Nora keeps running; the mammoth grows slowly larger in the background but stays far behind and never catches up during the clip, the horizon swinging left and right with each footfall.",
      "Riverbank. Get something big between us."
     ],
     [
-     "At 7.5s the camera whips down toward the snow in a blur.",
+     "At 7.5s the camera whips down toward the snow in a blur, the framing lurching and snapping back as she runs.",
      "Go, go!"
     ]
    ],

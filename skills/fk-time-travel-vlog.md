@@ -102,11 +102,11 @@ Gồm: mặt (tuổi, dáng mặt, mắt, tàn nhang/nốt ruồi), tóc (màu, 
    - Khi tạo video nhân vật/vlog, **TUYỆT ĐỐI KHÔNG sinh ảnh Start Frame (`GENERATE_IMAGE`) để chạy Image-to-Video (`i2v`)**. Cách làm cũ bằng Start Frame làm chuyển động bị cứng, dễ giật, méo người và biến dạng khuôn mặt khi di chuyển.
    - **BẮT BUỘC chỉ sử dụng Omni Flash Ingredients (`GENERATE_VIDEO_REFS` / `omni_flash_models.reference_to_video` / `abra_r2v_<duration>s` qua RPC `MZZa6b`)**:
      - Đính kèm trực tiếp các thành phần tham chiếu (Ingredients): Nhân vật (`Mia`), Trang phục (`Mia Outfit`), và Bối cảnh/Địa điểm (`reference_media_ids` / `imageInputs`).
-     - Model `abra_r2v` tự động tổng hợp chuyển động video mượt mà trực tiếp từ các thành phần tham chiếu và `video_prompt`, tích hợp khẩu hình native với voice profile **Achernar** (Slot 7).
+     - Model `abra_r2v` tự động tổng hợp chuyển động video mượt mà trực tiếp từ các thành phần tham chiếu và `video_prompt`, tích hợp khẩu hình native với voice profile **Laomedeia** (Slot 7).
      - Không chạy quy trình `GENERATE_IMAGE` cho từng cảnh; sau khi các entity có `media_id`, gửi thẳng yêu cầu `GENERATE_VIDEO_REFS`.
-2. **Voice Achernar**: Với nhân vật vlogger nữ, khai báo `voice_description` theo chuẩn **Achernar** (Google Gemini-TTS: *"Achernar — soft, higher-pitched, natural expressive conversational female voice, casual vlog tone, breathy when amazed, hushed whisper when nervous"*). Đính thoại dạng `Mia says: "..."` trong sub-clips `0-3s / 3-6s / 6-10s` để `abra_r2v` tự sinh khẩu hình và giọng nói bản địa tự nhiên.
+2. **Voice Laomedeia**: Với nhân vật vlogger nữ, khai báo `voice_description` theo chuẩn **Laomedeia** (Google Gemini-TTS: *"Laomedeia — upbeat, mid-high pitched, energetic expressive conversational female voice, fast confident vlog delivery with dry humor, rises into real cracking screams when in danger, drops to a fast whisper when hiding"*). Đính thoại dạng `Mia says: "..."` trong sub-clips `0-3s / 3-6s / 6-10s` để `abra_r2v` tự sinh khẩu hình và giọng nói bản địa tự nhiên.
 2b. **Kỹ Thuật Vlog Phiên Dịch (Translator POV — Tương Tác Bản Địa Chuẩn)**:
-   - **Rào cản AI & Lịch sử:** Model AI chỉ nhận 1 giọng nói (Slot 7 Achernar). Nếu gán thoại tiếng Anh cho nhân vật phụ (thợ săn, nông dân, thương nhân), AI sẽ lấy giọng Achernar phát ra từ miệng họ gây méo tiếng và vỡ khẩu hình. Hơn nữa, việc người tiền sử/cổ đại nói tiếng Anh lưu loát là phản khoa học và mất chất tài liệu.
+   - **Rào cản AI & Lịch sử:** Model AI chỉ nhận 1 giọng nói (Slot 7 Laomedeia). Nếu gán thoại tiếng Anh cho nhân vật phụ (thợ săn, nông dân, thương nhân), AI sẽ lấy giọng Laomedeia phát ra từ miệng họ gây méo tiếng và vỡ khẩu hình. Hơn nữa, việc người tiền sử/cổ đại nói tiếng Anh lưu loát là phản khoa học và mất chất tài liệu.
    - **Quy tắc bắt buộc:**
      - Người bản địa giao tiếp bằng **cử chỉ tay, biểu cảm sống động, hiệu lệnh săn bắn hoặc cổ ngữ tự nhiên** trong prompt hành động. TUYỆT ĐỐI KHÔNG ghi thoại tiếng Anh cho nhân vật phụ.
      - Vlogger lập tức xoay máy về phía mình (Selfie 0.5x hoặc handheld whip pan) và thuật lại trực tiếp cho người xem bằng giọng Vlogger (`Nora says: "He just warned me that...", "She says this is..."`).
@@ -120,7 +120,7 @@ Nora, a 26-year-old Western woman with a heart-shaped face, hazel-green eyes, de
 bright copper-red hair in a high bun held by a dark wooden hairpin, a few loose strands at the temples,
 wearing an era-appropriate [dark indigo cross-collar hemp robe with a white inner collar and a plain dark sash],
 holding a short black selfie stick with a smartphone on ultra-wide 0.5x lens, her arm visible at the frame edge.
-Voice: Achernar — soft, higher-pitched, natural expressive conversational female voice, casual vlog tone, breathy when amazed, hushed whisper when nervous.
+Voice: Laomedeia — upbeat, mid-high pitched, energetic expressive conversational female voice, fast confident vlog delivery with dry humor, rises into real cracking screams when in danger, drops to a fast whisper when hiding.
 ```
 Tên trong `CHARACTER_LOCK`, tên entity và tên người nói trong `video_prompt` phải **trùng nhau tuyệt đối** (mẫu gốc có chỗ lệch Nora/Mia — đừng lặp lại lỗi đó).
 
@@ -530,6 +530,17 @@ Rút ra từ dự án `output/atlantis-9600bc/` (2026-09-27). Khi mâu thuẫn v
       small white fur mittens on braided cord.
       This outfit is WHITE/CREAM throughout -- NOT a dark coat, NOT a brown parka, NOT modern clothing.
       ```
+
+35. **CHẠY MÀ KHUNG HÌNH KHÔNG RUNG (bài học H1 Ice Age 16,000 BC bản v4 — người chạy hết sức nhưng mặt Nora và đường chân trời đứng yên như quay bằng gimbal):**
+    - **Root-cause:** prompt chỉ ghi chung chung "the view bounces vertically with each footfall" một lần ở phần style. Model video mặc định ổn định hình (stabilize), nên một câu trừu tượng như vậy bị lờ đi. Chỉ chân và tay chuyển động, còn khung hình thì không.
+    - **Fix: tả hiệu ứng rung NHÌN THẤY ĐƯỢC trên khung hình, có biên độ cụ thể, và nhắc lại trong TỪNG đoạn thời gian:**
+      - Style `run`: *"Raw unstabilized handheld footage: with every footfall the whole frame jolts — Nora's face jumps up and down by about a tenth of the frame height, the horizon tilts a few degrees left and right, and each impact smears the image with a brief motion blur; the framing drifts off her face and snaps back."*
+      - Mỗi segment `0-3s / 3-6s / 6-8s` của shot chạy phải có một cụm rung riêng, ví dụ *"the frame jolting hard on every stride"*, *"the horizon swinging as she stumbles"*.
+      - Không dùng các từ làm model ổn định hình: `smooth`, `steady`, `stable`, `cinematic tracking`.
+    - **Mức rung theo hành động** (rung phải khớp nhịp chân): đi bộ → nảy nhẹ, chân trời nghiêng ≤2°. Chạy bộ → mặt nhảy ~5% chiều cao khung. Chạy thục mạng hoặc vấp → mặt nhảy ~10%, chân trời nghiêng 3–5°, nhòe chuyển động mỗi bước, khung trôi lệch rồi giật về. Trượt, ngã → khung xoay mạnh và mất chủ thể trong tích tắc.
+    - **Review:** khi xem contact sheet, so vị trí mặt và đường chân trời giữa các khung liền nhau. Nếu gần như không đổi trong lúc nhân vật đang chạy thì trừ điểm Motion Quality và sửa prompt theo mẫu trên.
+
+    > **Quy ước:** mỗi lỗi gen lặp lại được ghi thành MỘT bài học đánh số riêng ở đây, gồm root-cause, câu prompt sửa cụ thể và bằng chứng (clip nào, bản nào), để lần sau rút kinh nghiệm thay vì sửa lại từ đầu.
 
 **Nội dung**
 17. Vlogger mặc đồ hiện đại theo ảnh ref là chấp nhận được (mục 2).

@@ -14,7 +14,7 @@ Theo bài học sản xuất thực tế từ `/fk-time-travel-vlog` mục 11 (Q
 - **Character Sheet 16:9 chuẩn 4 góc (Bắt buộc cho nhân vật chính & phụ):** Tạo turnaround sheet tỉ lệ 16:9 gồm 4 góc nhìn chuẩn: (1) Toàn thân chính diện thấy rõ 100% trang phục may đo từ đầu đến chân, (2) Toàn thân 3/4, (3) Toàn thân nhìn nghiêng, (4) Cận cảnh chân dung khuôn mặt 16:9. Khóa nhận diện khuôn mặt người dùng nhưng mặc đúng trang phục lịch sử.
 - **Reference Công Trình / Đạo Cụ Sạch:** Tuyệt đối không dùng "with proper scale reference" (tránh AI vẽ người đo tỉ lệ/thước đo). Bắt buộc: `ONE single unified photograph only, strictly NO humans, NO scale figures, NO split screen`.
 - **Tính Xác Thực Lịch Sử Về Trang Phục:** Kỷ Băng Hà 20,000 TCN con người đã có trang phục may đo nhiều lớp tinh xảo (áo parka da tuần lộc, lót len mammoth wool, viền nón lông cáo tuyết chống đọng băng, kim khâu có lỗ, chỉ gân, thêu hạt ngà voi). Tuyệt đối không vẽ cởi trần hay quấn da thú thô sơ phi thực tế giữa bão tuyết -35°C.
-- **Kỹ Thuật Vlog Phiên Dịch (Translator POV — Bắt buộc khi giao tiếp bản địa):** Model AI chỉ nhận 1 voice ID (`Achernar`) cho clip. Người bản địa giao tiếp bằng cử chỉ, biểu cảm và cổ ngữ tự nhiên; vlogger lập tức xoay camera thuật lại/phiên dịch cho khán giả (`Nora says: "He just warned me..."`). Tuyệt đối không gán thoại tiếng Anh cho nhân vật phụ tránh lỗi đè giọng và mất tính chân thực.
+- **Kỹ Thuật Vlog Phiên Dịch (Translator POV — Bắt buộc khi giao tiếp bản địa):** Model AI chỉ nhận 1 voice ID (`Laomedeia`) cho clip. Người bản địa giao tiếp bằng cử chỉ, biểu cảm và cổ ngữ tự nhiên; vlogger lập tức xoay camera thuật lại/phiên dịch cho khán giả (`Nora says: "He just warned me..."`). Tuyệt đối không gán thoại tiếng Anh cho nhân vật phụ tránh lỗi đè giọng và mất tính chân thực.
 
 ## 🧭 BẢNG ĐIỀU PHỐI QUY TRÌNH (PRODUCTION HUB)
 
@@ -255,13 +255,13 @@ Nếu bạn muốn đóng vai Vlogger chính trong chuyến du hành thay vì đ
 | Mỗi scene dùng **tối đa 3 ref**: entity `character` trước, sau đó đến `visual_asset` | `character_names` của scene chỉ nên có 1–3 tên, nhân vật chính đứng đầu |
 | Entity `location` **bị bỏ qua** (chỉ dùng khi scene không có ref nào khác) | Công trình hoặc bối cảnh cần giữ nhất quán thì khai báo là `visual_asset` |
 | Scene thiếu `duration` sẽ **mặc định 10s** (không báo lỗi); `POST /api/scenes` không nhận trường này | Tạo scene xong thì `PATCH` thêm `{"duration": 8}` |
-| Mỗi clip chỉ có **1 giọng**, lấy từ **từ đầu tiên** của `voice_description` của entity **đầu tiên (theo thứ tự trong DB, không phải thứ tự trong `character_names`)** có khai báo voice | Viết `voice_description` bắt đầu bằng tên voice, ví dụ `Achernar — soft, …`. **Chỉ nhân vật chính có `voice_description`**, nếu không giọng nhân vật phụ sẽ đè lên thoại của nhân vật chính |
+| Mỗi clip chỉ có **1 giọng**, lấy từ **từ đầu tiên** của `voice_description` của entity **đầu tiên (theo thứ tự trong DB, không phải thứ tự trong `character_names`)** có khai báo voice | Viết `voice_description` bắt đầu bằng tên voice, ví dụ `Laomedeia — soft, …`. **Chỉ nhân vật chính có `voice_description`**, nếu không giọng nhân vật phụ sẽ đè lên thoại của nhân vật chính |
 
 #### 🗣️ Kỹ Thuật Vlog Phiên Dịch (Translator POV — Giao Tiếp Tự Nhiên Với Người Bản Địa)
 
 > [!IMPORTANT]
 > **Giải quyết triệt để rào cản 1 giọng của AI và bảo tồn tính chân thực lịch sử:**
-> - **Rào cản:** Model video AI (Omni Flash `abra_r2v` / Veo 3) chỉ nhận 1 `voice_id` trong Slot 7 (`Achernar`). Nếu để nhân vật phụ (thợ săn, thương nhân, nông dân) nói thoại tiếng Anh, AI sẽ lấy chính giọng nữ Achernar phát ra từ miệng nhân vật phụ gây méo tiếng và vỡ khẩu hình. Hơn nữa, người tiền sử hay cổ đại nói tiếng Anh lưu loát sẽ phá nát tính tài liệu chân thực.
+> - **Rào cản:** Model video AI (Omni Flash `abra_r2v` / Veo 3) chỉ nhận 1 `voice_id` trong Slot 7 (`Laomedeia`). Nếu để nhân vật phụ (thợ săn, thương nhân, nông dân) nói thoại tiếng Anh, AI sẽ lấy chính giọng nữ Laomedeia phát ra từ miệng nhân vật phụ gây méo tiếng và vỡ khẩu hình. Hơn nữa, người tiền sử hay cổ đại nói tiếng Anh lưu loát sẽ phá nát tính tài liệu chân thực.
 > - **Quy tắc Translator POV (BẮT BUỘC):**
 >   1. **Người bản địa giao tiếp tự nhiên:** Nhân vật phụ dùng cử chỉ tay, biểu cảm sống động, hiệu lệnh săn bắn hoặc cổ ngữ tự nhiên (được AI xử lý như âm thanh môi trường). Trong prompt chỉ mô tả hành động và cảm xúc, **TUYỆT ĐỐI KHÔNG ghi thoại tiếng Anh cho nhân vật phụ**.
 >   2. **Vlogger làm cầu nối phiên dịch:** Vlogger xoay máy về phía mình (Selfie 0.5x hoặc cú lia máy handheld whip pan) và thuật lại trực tiếp cho người xem bằng giọng Vlogger (`Nora says: "He says...", "She just told me that..."`).
@@ -286,7 +286,7 @@ Chỉ với một câu lệnh duy nhất, hệ thống tự động làm hết m
 **Các giai đoạn tự động chạy ngầm:**
 
 1. **Model R2V (`abra_r2v_<duration>s`)**: dùng thẳng ảnh ref (nhân vật + visual asset, tối đa 3) để sinh video, không cần ảnh tĩnh Start Frame.
-2. **Khẩu hình native**: Omni Flash tự sinh giọng và khẩu hình từ dòng `Mia says: …` trong `video_prompt`, với voice lấy từ `voice_description` (ví dụ Achernar).
+2. **Khẩu hình native**: Omni Flash tự sinh giọng và khẩu hình từ dòng `Mia says: …` trong `video_prompt`, với voice lấy từ `voice_description` (ví dụ Laomedeia).
 3. **Lồng tiếng TTS** *(chỉ khi có `--tts`)*: sinh narration riêng.
 4. **Review 720p thô trước**: Tải về `scenes/`, trích xuất frames chạy AI Vision Review và mở Review Board (`http://localhost:8200`) để User duyệt từng clip (chưa cần xóa logo để tiết kiệm thời gian).
 5. **Duyệt ➔ Upscale 1080p & Xóa logo**: Sau khi User duyệt thông qua, gửi lệnh AI Upscale 1080p (RPC `p0UkFb`), tải video 1080p về và chạy `remove_watermark_video` trực tiếp trên bản 1080p (`*_1080p_clean.mp4`).

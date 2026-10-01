@@ -1,8 +1,35 @@
 # Voice Bible — Giọng nói & Tính cách Vlogger
 
-`CHARACTER_LOCK` khóa **ngoại hình**, `voice_description` (Achernar) khóa **chất giọng**. File này khóa **cách nói**: vlogger là ai, biết gì, nói nhanh hay chậm, đùa kiểu gì, sợ gì, và những câu cô không bao giờ nói. Thiếu lớp này thì thoại tự trượt về giọng AI trung bình: cảm thán, giảng bài, câu chốt khẩu hiệu.
+`CHARACTER_LOCK` khóa **ngoại hình**, `voice_description` (Laomedeia) khóa **chất giọng**. File này khóa **cách nói**: vlogger là ai, biết gì, nói nhanh hay chậm, đùa kiểu gì, sợ gì, và những câu cô không bao giờ nói. Thiếu lớp này thì thoại tự trượt về giọng AI trung bình: cảm thán, giảng bài, câu chốt khẩu hiệu.
 
 Đọc file này **trước khi viết bất kỳ dòng thoại nào**, và chạy checklist ở mục 6 trên từng dòng trước khi đưa vào `video_prompt`.
+
+---
+
+## 0. Chọn giọng (Slot 7 của Omni Flash `MZZa6b`) — mặc định: **Laomedeia**
+
+Server lấy **từ đầu tiên** của `voice_description` làm voice id (ví dụ `"Laomedeia — upbeat, …"` → `laomedeia`). Nếu clip không gắn entity có voice (như cảnh POV, vốn không gắn ref vlogger), server dùng `narrator_voice` của project, rồi tới mặc định `laomedeia`. **Luôn đặt cả `voice_description` của vlogger lẫn `narrator_voice` của project** để mọi clip cùng một giọng.
+
+**Vì sao đổi từ Achernar sang Laomedeia (user chốt 2026-10-01):** Achernar là giọng "soft, high pitch", chỉ hợp thì thầm. Persona vlogger là nói nhanh, tự tin, hài khô, và phải hét khi gặp nguy hiểm, nên giọng mềm bị yếu. Laomedeia là "upbeat, mid-high": nói nhanh tự nhiên, lúc hét vẫn nghe hoảng thật chứ không gắt.
+
+| Giới | Giọng (id) | Tính chất, cao độ | Dùng cho |
+|---|---|---|---|
+| Nữ | **laomedeia** | upbeat, mid-high | **Mặc định cho vlogger nữ** |
+| Nữ | autonoe | bright, mid | Dự phòng: chuyên gia nghe chín chắn hơn |
+| Nữ | zephyr | bright, mid-high | Gần Laomedeia nhưng ít "bốc" hơn |
+| Nữ | kore | firm, mid | Nhân vật nghiêm, uy quyền |
+| Nữ | leda | youthful, mid-high | Nhân vật trẻ (dưới ~22) |
+| Nữ | erinome | clear, mid | Người dẫn rõ ràng, trung tính |
+| Nữ | aoede / callirrhoe | breezy / easy-going, mid | Vlog thư giãn, du lịch nhẹ |
+| Nữ | gacrux | mature, mid | Nhân vật lớn tuổi |
+| Nữ | sulafat / vindemiatrix / despina | warm / gentle / smooth, mid | Thuyết minh êm, KHÔNG hợp cảnh hành động |
+| Nữ | achernar | soft, high | Thì thầm, ASMR; yếu khi nói nhanh hoặc hét |
+| Không rõ | pulcherrima | forward, mid-high | Tránh dùng cho nhân vật nữ, có thể nghe không ra giới |
+| Nam | puck / fenrir | upbeat, mid / excitable, younger | Vlogger nam năng lượng cao |
+| Nam | achird / zubenelgenubi / algieba | friendly / casual / easy-going | Vlogger nam thư giãn |
+| Nam | charon / rasalgethi / sadaltager | informative / knowledgeable | Thuyết minh tài liệu |
+| Nam | orus / alnilam / iapetus / schedar | firm / clear / even, mid-low | Nhân vật nghiêm |
+| Nam | algenib / enceladus / umbriel / sadachbia | gravelly / breathy / smooth / lively, low | Giọng trầm, nhân vật đặc biệt |
 
 ---
 
