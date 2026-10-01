@@ -139,7 +139,8 @@ Khi lập Storyboard dài (~10 phút ≈ 38–42 clip 8s), dùng bảng 23 beat 
 - [ ] Mỗi beat có một thứ mới (nơi mới, người mới, thông tin mới hoặc nguy hiểm mới).
 
 **Quy tắc thoại** (kinh nghiệm thực chiến tối ưu cho Veo / AI Video):
-- Beat 15s ≈ 25–35 từ tiếng Anh; chia theo clip 8s ≈ **12–18 từ**. Để 1–2s không thoại ở đầu/cuối mỗi clip cho chuyển cảnh.
+- Mật độ (user chốt 2026-10-01, nói nhanh để giữ nhịp): clip 10s ≈ **22–28 từ**, clip 8s ≈ **18–22 từ**. Chỉ chừa ~0.5s không thoại ở đầu/cuối mỗi clip cho chuyển cảnh.
+- Thoại viết theo `VOICE_LOCK` và qua checklist chống giọng AI ở `.agents/skills/time-travel-vlog/references/voice-bible.md` (tính cách: Nora là nhà khảo cổ có kỹ năng sinh tồn thượng thừa; chửi thề bị bíp; 3 khuôn beat truyền kiến thức sinh tồn + lịch sử).
 - Một người nói/clip. Dân bản địa nói → nhân vật im lặng phản ứng (mắt mở to, môi mím).
 - Giọng vlog thật: câu ngắn, cảm thán, thì thầm, gọi người xem ("you guys...", "okay don't freak out..."). Sự thật lịch sử nói qua quan sát, không giảng bài sách vở.
 

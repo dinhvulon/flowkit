@@ -10,7 +10,7 @@ Format này ăn view vì 3 thứ: **góc nhìn người thật** (mọi thứ "q
 
 ## 📚 TÀI LIỆU THAM CHIẾU — BẮT BUỘC ĐỌC TRƯỚC KHI VIẾT
 
-Mọi quy tắc trong skill này được rút ra từ 4 file ở `.agents/skills/time-travel-vlog/references/`. **Đọc cả 4 file trước khi viết bất kỳ dòng kịch bản/prompt nào** — chúng là nguồn chuẩn cho độ chân thực; skill này chỉ tóm tắt và ánh xạ sang FlowKit.
+Mọi quy tắc trong skill này được rút ra từ 5 file ở `.agents/skills/time-travel-vlog/references/`. **Đọc cả 5 file trước khi viết bất kỳ dòng kịch bản/prompt nào** — chúng là nguồn chuẩn cho độ chân thực; skill này chỉ tóm tắt và ánh xạ sang FlowKit.
 
 | File | Đọc ở bước | Dùng để |
 |---|---|---|
@@ -18,6 +18,7 @@ Mọi quy tắc trong skill này được rút ra từ 4 file ở `.agents/skill
 | `era-research.md` | Mục 4 — Research Pack | Checklist nghiên cứu thời kỳ + bảng beat output |
 | `prompt-templates.md` | Mục 2 + mục 10 | Mẫu `CHARACTER_LOCK`, Clip JSON, mẫu shot (dân bản địa nói, POV, máy dựng, toàn cảnh) |
 | `transitions.md` | Mục 7 | 3 cách nối clip, luật giấu mối nối, prompt A/B cho từng kỹ thuật, bảng chọn nhanh |
+| `voice-bible.md` | Mục 2 + mục 5 (trước khi viết bất kỳ dòng thoại nào) | `VOICE_LOCK` khóa tính cách (Nora: nhà khảo cổ, chuyên gia sinh tồn), mật độ thoại, chửi thề bị bíp, 3 khuôn beat truyền kiến thức, checklist chống giọng AI, mẹo sinh tồn sai cần tránh |
 
 **Khi các nguồn mâu thuẫn**, ưu tiên theo thứ tự: `reference-analysis.md` (quan sát từ video thật) → skill này → phần "Kỹ thuật bổ sung" của `transitions.md`. Ví dụ: `transitions.md` gợi ý title "3 HOURS LATER" cho time-skip, nhưng video mẫu không có chữ trên màn hình → **không dùng title** (mục 8).
 
@@ -123,6 +124,8 @@ Voice: Achernar — soft, higher-pitched, natural expressive conversational fema
 ```
 Tên trong `CHARACTER_LOCK`, tên entity và tên người nói trong `video_prompt` phải **trùng nhau tuyệt đối** (mẫu gốc có chỗ lệch Nora/Mia — đừng lặp lại lỗi đó).
 
+**`VOICE_LOCK` — khóa tính cách đi kèm `CHARACTER_LOCK` (góp ý của user, 2026-10-01):** `CHARACTER_LOCK` chỉ khóa ngoại hình và chất giọng; cách nói (vlogger là ai, nói nhanh hay chậm, đùa kiểu gì, sợ gì, không bao giờ nói gì) khóa bằng khối `VOICE_LOCK` theo `voice-bible.md` mục 1. Ghi `VOICE_LOCK` vào `script.md` ngay dưới `CHARACTER_LOCK` và không sửa giữa các clip. `VOICE_LOCK` **không** dán vào entity `description` hay `video_prompt`; nó là luật để viết thoại, còn thứ đi vào prompt là câu thoại và tag cách diễn đạt.
+
 **Trang phục theo ảnh ref & Bắt buộc tạo Entity Trang phục riêng (`<Vlogger> Outfit`) (góp ý của user, bài học S31):** với R2V, quần áo của vlogger **lấy từ ảnh ref**, không lấy từ chữ trong `CHARACTER_LOCK`. Để tránh việc AI tự động đổi trang phục, sai kiểu dáng hoặc biến dạng quần áo giữa các cảnh (đặc biệt các cảnh toàn hoặc cảnh thảm họa):
 - **BẮT BUỘC tạo entity riêng cho Trang phục** (`name: "<Vlogger> Outfit"`, `entity_type: visual_asset`), ví dụ: `Mia Outfit`.
 - Sinh hoặc upload một ảnh reference chuẩn thời kỳ (chụp váy chiton/tunic trên giá treo hoặc chụp thẳng toàn thân sạch nền).
@@ -194,12 +197,33 @@ Beat ⚠️ → cho nhân vật nói dạng suy đoán: "I think...", "historian
 
 Shorts: hook (1) → 2–3 beat đời thường/wow (2–4) → nguy hiểm hoặc reveal (5) → câu kết cliffhanger (6).
 
-**Quy tắc thoại**
-- **Mật độ từ**: beat 15s ≈ 25–35 từ tiếng Anh; mỗi clip 8s ≈ **12–18 từ**. Vượt ngưỡng → Veo nói nhanh bất thường hoặc cắt câu, mất chân thực.
-- Để **1–2s không thoại ở đầu và cuối mỗi clip** cho chuyển cảnh — không bao giờ cắt ngang câu.
+**Quy tắc thoại** (chi tiết và ví dụ ở `voice-bible.md`)
+- **Mật độ từ (user chốt 2026-10-01: nói nhanh để giữ nhịp, không gây buồn ngủ)**: clip 10s = **22–28 từ**; 8s = 18–22; 6s = 13–16; 4s = 8–10.
+- Chỉ chừa **~0.5s không thoại ở đầu và cuối mỗi clip** cho chuyển cảnh — không bao giờ cắt ngang câu.
 - **Một người nói/clip.** Dân bản địa nói → vlogger im lặng phản ứng (mắt mở to, môi mím).
-- Giọng vlog thật: câu ngắn, cảm thán, thì thầm, gọi người xem ("you guys", "okay, don't freak out"). Sự thật lịch sử nói qua quan sát, không giảng bài.
+- Thoại viết theo `VOICE_LOCK`, kèm tag cách diễn đạt: `Nora says (fast, teeth chattering, half-laughing): "..."`. Sự thật lịch sử nói qua trải nghiệm của vlogger, không giảng bài.
+- **Chạy checklist chống giọng AI (`voice-bible.md` mục 6) trên từng dòng thoại** trước khi đưa vào `video_prompt`. Cấm câu chốt khẩu hiệu, mô tả lại thứ đang hiện trên hình, giọng giảng ("Survival rule number one"), số liệu vlogger không thể biết.
+- Chửi thề nhẹ chỉ viết dạng cắt dở (`"sh—"`, `"what the f—"`) và bíp ở hậu kỳ; tối đa 1 lần / 3 clip, không chửi trong hook hay beat kết (`voice-bible.md` mục 3).
 - Mỗi beat có một thứ mới: nơi mới, người mới, thông tin mới hoặc nguy hiểm mới.
+
+#### 5c. Survival Preset — "I Survived 24 Hours in…" (thời tiền sử, thiên tai, tương lai khắc nghiệt)
+
+Dùng khi bối cảnh tự nó có thể giết người (Kỷ Băng Hà, khủng long, hậu tận thế, Sao Hỏa). **Giữ nguyên 7 hồi và 3 cú reveal của mục 5a**, chỉ đổi xương sống sang **đồng hồ 24 giờ + cơ thể vlogger xuống dốc dần**:
+
+| Hồi (mục 5a) | Giờ trong 24h | Áp lực cơ thể | Beat sinh tồn |
+|---|---|---|---|
+| 1 Hook | Giờ 0–1 | Sốc lạnh / sốc môi trường | Câu đầu nói rõ ở đâu, năm nào, thử thách 24h |
+| 2 Đời thường | Giờ 1–8 | Tê tay → run → đói | Chỗ trú, lửa và nước, ăn, quần áo — **mỗi beat là một phương pháp sinh tồn có giải thích + bằng chứng khảo cổ** (khuôn A/B/C ở `voice-bible.md` mục 4) |
+| 3 Quyền lực | Giờ 8–12 | Mệt, mất cảm giác ngón chân | Reveal #1: đàn thú / bộ lạc chuẩn bị đi săn |
+| 4 Cao trào | Giờ 12–15 | Adrenaline, thở dốc | Cuộc săn / thú lớn tấn công / bão — đúng **một** cao trào |
+| 5 Hạ nhịp | Giờ 15–17 | Run sau cơn sợ, cười được | Chia thịt, được bộ lạc coi là người trong nhóm |
+| 6 Di sản | Giờ 17–22 | Kiệt sức, lạnh về đêm | Nghệ thuật, nghi lễ, bầu trời đêm — áp lực lạnh vẫn còn |
+| 7 Kết | Giờ 23–24 | Tĩnh, kiệt | Máy dựng cố định, nói thật lòng, không có câu đạo lý |
+
+- **Mốc giờ nói bằng lời**, không bằng chữ trên màn hình (mục 8): `"Hour six."` mở đầu khoảng mỗi 3 beat, không phải mỗi clip.
+- **Vlogger là chuyên gia (user chốt 2026-10-01): nhà khảo cổ có kỹ năng sinh tồn thượng thừa.** Người xem ở lại vì học được phương pháp dùng được + lý do + lịch sử thật đằng sau. Mỗi beat kiến thức theo 1 trong 3 khuôn ở `voice-bible.md` mục 4: **Làm → Vì sao → Bằng chứng**, **Lý thuyết vs Thực tế** (hiện vật cô từng đào được giờ thấy được dùng), **Người bản địa dạy mẹo địa phương → Nora giải thích** (Translator POV). Mẹo nói dạng mệnh lệnh của người thật ("Don't eat snow. Ever."), không dùng nhãn khuôn mẫu ("Survival rule number one:", "Here's the trick:").
+- **Mọi mẹo sinh tồn phải có nguồn trong bảng beat (mục 4)**, đánh dấu ✅/⚠️. Danh sách câu nghe hay nhưng sai (phổi đóng băng, hoại tử 10 phút, "8,000 calo") ở `voice-bible.md` mục 7.
+- Tiêu đề: dùng động từ **"Survived"** thay cho "Spent" (`I Survived 24 Hours in/with …`); chi tiết SEO ở `/fk-youtube-seo`.
 
 ### 6. Storyboard & tỉ lệ loại shot
 
@@ -336,6 +360,7 @@ Sau bảng storyboard, viết **Clip JSON cho từng clip 8s** theo mẫu `promp
 | `constraints` | các câu khẳng định ngay trước dòng `Audio:` trong `video_prompt` (không dùng `Negative:`) |
 | `join` | `chain_type` + `parent_scene_id` (CONTINUATION nếu cùng bối cảnh) và ghi chú cho bước F2V/concat |
 | `transition_prompt` | để trống — chỉ dùng khi scene có `end_scene_media_id`, mà Veo start+end đang unsupported |
+| `bleep_at` (tùy chọn) | không vào FlowKit — ghi chú hậu kỳ: mốc giây cần phủ tiếng bíp lên từ chửi cắt dở (`voice-bible.md` mục 3) |
 
 ---
 
@@ -470,7 +495,7 @@ Chỉ học tỉ lệ/nhịp; không sao chép tên, ngoại hình hay lời tho
 ## 📤 ĐỊNH DẠNG OUTPUT (theo đúng thứ tự)
 
 1. **Giả định** (3–5 dòng) — thời kỳ/năm, độ dài, số beat/scene, tỉ lệ khung, material.
-2. **Character Bible** — khối `CHARACTER_LOCK` + `voice_description`.
+2. **Character Bible** — khối `CHARACTER_LOCK` + `voice_description` + `VOICE_LOCK` (`voice-bible.md` mục 1). Bối cảnh sinh tồn → ghi rõ đang dùng Survival Preset (mục 5c).
 3. **Research pack** — bảng beat (mục 4), kèm độ chắc ✅/⚠️.
 4. **Outline theo 7 hồi** + thời lượng từng hồi.
 5. **Bảng storyboard toàn bộ beat** (mục 6).
@@ -625,6 +650,7 @@ python tools/export_flow_import.py <PROJECT_ID> --main <Vlogger>   --upload "<Vl
   ```
   Thử trên một đoạn ngắn trước — grain quá tay làm mất cảm giác điện thoại.
 - Phụ đề tùy chọn, chỉ dạng `.srt` rời.
+- **Bíp chửi thề**: phủ tiếng bíp ~0.3s tại mỗi mốc `bleep_at` trong Clip JSON (xem lại clip trước khi bíp vì model có thể lệch mốc vài trăm mili-giây).
 
 ---
 
