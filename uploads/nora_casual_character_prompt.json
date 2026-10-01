@@ -1,0 +1,12 @@
+{
+  "name": "Nora",
+  "entity_type": "character",
+  "file": "uploads/nora_casual_character.jpg",
+  "source_media_id": "896d3353-e6e0-435e-a3a9-06cff6c9b42e",
+  "reference_chain": [
+    "nora_v9_clean (face only)",
+    "nora_sheet_slim_v4"
+  ],
+  "resolution": "2752x1536 (2K export, watermark removed)",
+  "prompt": "Recreate the reference character sheet exactly: same three panels, same layout, framing, poses, plain light-grey studio background and lighting, same woman with the same face, honey-blonde ponytail with curtain bangs and gold hoop earrings, same slim body with the same tiny waist, flat stomach, thin arms and the same long slim legs and slim thighs. The only change is her bust and hips: she now has a much larger, very full, round, heavy bust, clearly bigger than in the reference, and larger round curvy hips and buttocks, giving a dramatic hourglass silhouette on her slim frame. Her thin, tight white cotton t-shirt has a deeper, wider scoop neckline that shows her full cleavage and stretches over her large bust; tight high-waisted short blue denim shorts and white sneakers stay the same. In the side view her large bust and round buttocks stand out clearly in profile. Photorealistic, real skin texture, sharp focus, high detail. No text, no labels, no logo, no watermark."
+}
