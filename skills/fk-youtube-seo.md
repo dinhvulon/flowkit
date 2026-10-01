@@ -88,13 +88,17 @@ The title is the #1 SEO factor. It must:
        - `I Time Travelled to 79 AD — And Mount Vesuvius Started Erupting`
        - `I Time Travelled to 1986 Chernobyl — And the Sirens Went Off`
 
-   - **Option 2 (Format 24 Giờ Sinh Tồn / Extreme 24-Hour Survival Challenge — Áp dụng cho Nhóm 3: Newsjacking & Thử Thách Khắc Nghiệt)**:
-     - **Cấu trúc**: `I Spent 24 Hours in [Location/Era] ([Extreme Condition]) with [Ancient Inhabitants]`
-     - **Tâm lý học**: Format thử thách MrBeast-style với con số thời gian và điều kiện môi trường cụ thể (-40°C, không thức ăn, giữa thú dữ, đấu trường Colosseum) kích thích tính tò mò về phương thức sinh tồn thực tế.
+   - **Option 2 (Format 24 Giờ Sinh Tồn / Extreme 24-Hour Survival Challenge — Áp dụng cho Nhóm 3: Newsjacking & Thử Thách Khắc Nghiệt, và mọi vlog dùng Survival Preset của `/fk-time-travel-vlog` mục 5c)**:
+     - **Cấu trúc**: `I Survived 24 Hours [in/with] [Era/People] ([Year or Stake])`. Dùng **"Survived"** (thì quá khứ, hứa hẹn có kết quả), không dùng "Spent" (nhạt) hay "Can I Survive…?" (trùng kênh đối thủ).
+     - **Ngoặc cuối** chứa **năm** (`16,000 BC`) hoặc **mối nguy có thật trong video** (`Mammoth Charge`, `No Tools`). Nội dung trong ngoặc phải lấy từ kịch bản hoặc bảng nguồn: **không bịa con số nhiệt độ, calo, số người chết** (vd. "-40°C") nếu bảng nguồn không có.
+     - **Tâm lý học**: Format thử thách MrBeast-style ("I Survived 24 Hours Straight In Ice"): con số thời gian + bối cảnh cụ thể + một mối nguy rõ ràng kích thích tò mò về cách sống sót thật.
      - **Ví dụ**:
-       - `I Spent 24 Hours in the Ice Age (-40°C) with Cavemen`
-       - `I Spent 24 Hours in the Roman Colosseum (Gladiator Arena 80 AD)`
-       - `I Spent 24 Hours Trapped in Medieval London (Black Plague 1348)`
+       - `I Survived 24 Hours in the Ice Age (16,000 BC)`
+       - `I Survived 24 Hours with Mammoth Hunters (Mammoth Charge)`
+       - `I Survived 24 Hours in the Roman Colosseum (80 AD)`
+       - `I Survived 24 Hours in Medieval London (Black Death, 1348)`
+     - **Series**: khi kênh làm nhiều tập cùng format, giữ nguyên tiền tố `I Survived 24 Hours` ở mọi tập để người xem nhận ra series; chỉ đổi phần [Era/People] và ngoặc.
+     - **Kiểm tra trùng lặp**: trước khi chốt, web search cụm `"24 Hours in [Era]"`. Nếu đã có video cùng chủ đề (vd. "Can I Survive 24 Hours in the Ice Age? (30,000BC)"), phân biệt bằng địa điểm/năm cụ thể hơn hoặc mối nguy riêng của video mình.
 
    - **Option 3 (Shock văn hóa & Nghịch lý thời gian — Áp dụng cho Nhóm 2: Va Chạm Văn Minh / Bị Coi Là Phù Thủy)**:
      - **Cấu trúc**: `What Happens When You Show [Modern Object / Technology] to [Ancient People]?` hoặc `I Showed [Modern Item] to [Ancient People] — Their Reaction Was Terrifying`
@@ -308,7 +312,7 @@ Print each section with clear separators so they can copy individual parts.
      CTR Angle: Thoát chết trong gang tấc / Đối mặt hiểm hoạ sinh tử trực diện
      
   2. Option 2 (Format 24 Giờ Sinh Tồn): {title_option_2} ({char_count} chars)
-     CTR Angle: Thử thách sinh tồn khắc nghiệt (-40°C, sống cùng người tiền sử)
+     CTR Angle: Thử thách sinh tồn 24 giờ (mối nguy có thật trong video, sống cùng người tiền sử)
      
   3. Option 3 (Shock văn hóa & Nghịch lý): {title_option_3} ({char_count} chars)
      CTR Angle: Va chạm văn minh / Phản ứng kinh ngạc trước công nghệ hiện đại
