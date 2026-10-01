@@ -374,3 +374,17 @@ Nguồn sự thật vẫn là [clips.json](clips.json). Các dòng ở mục 5/5
 | S49A | Sư tử hang ở Ukraine có hóa thạch tới ~18–17 nghìn năm trước; tuyệt chủng toàn Á-Âu ~14–14,5 nghìn năm trước | ✅ | "The Quaternary lions of Ukraine" (Marciszak et al.); Stuart & Lister "Extinction chronology of the cave lion" |
 | S49A | Tranh hang động hầu như không vẽ bờm; chưa rõ con đực không có bờm hay chỉ vẽ con cái | ⚠️ | NBC News 2021 (cave lion cubs) |
 | — | Không dùng hươu khổng lồ: vắng mặt ở châu Âu thời Cực đại Băng hà | ✅ | Scientific Reports 2015 (srep10853) |
+
+## 9. Bản 54 cảnh (01/10/2026): góp ý vòng 2
+
+Tổng 54 cảnh, 8:26. Nguồn sự thật vẫn là [clips.json](clips.json).
+
+| Nhóm | Thay đổi |
+|---|---|
+| Cắt | S12 (uống nước), S17 (dao nạo). Rút S25 → 8s, S33 → 6s, S36 → 6s |
+| Mốc năm | H1 nói "sixteen thousand BC" cho khớp tiêu đề. "Eighteen thousand years" ở S46 giữ nguyên vì 16.000 BC ≈ 18.000 năm trước |
+| Vật lý | H1/H2/S29: voi lao tới bằng bước voi nặng, không phi như ngựa, không lướt. S32: chuỗi mất bám → thân trôi tới → trượt ngang → hết đà → lui xuống, không quay ngoắt. S11: đá nung đen, không phát sáng. S18: tóc mái ẩm, rùng mình khi mở cổ áo. H2: "I'm going over!" thay "Jump!" |
+| Bớt khẳng định | S04 "Frostnip, maybe". S05 bỏ "Field medics still teach exactly this". S19A "Fossil horns show that wear too". S33 "That was a warning charge. I think." S49 "The pole's off toward Deneb" |
+| Nhiên liệu | S09 "Wood's scarce out here". Bối cảnh INT: bếp đốt xương kèm vài cành nhỏ, không có khúc gỗ (trên Đồng bằng Nga xương được đốt cùng gỗ) |
+| Cốt truyện | S01 "Twelve hours before the chase". S26 Torak chỉ về phía bờ sông băng → S36 trả: "Torak knew. He picked it." S08 Nora vén tấm da thấy người đang ngủ |
+| Làm trước, kiến thức sau | S06, S25, S42, S45 viết lại thoại theo kiểu đang làm rồi mới nhận ra. S47 bỏ câu "early dogs" |

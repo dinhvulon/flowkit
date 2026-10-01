@@ -44,7 +44,7 @@
   "outdoor": "The ground is solid and completely still. Breath vapor is short-lived and fades quickly in the cold air.",
   "settings": {
    "CAMP": "Mezhyrich, central Ukraine, about 16,000 BC: a winter camp of four low round dwellings built of mammoth bones, wall bases of mammoth lower jaws stacked in a tight zigzag, domes of tusks and long bones covered with frosted reindeer hides, on a snowy river terrace above a broad frozen river, treeless snowy steppe beyond",
-   "INT": "inside a mammoth-bone dwelling at Mezhyrich, central Ukraine, about 16,000 BC: a low dome of tusks and long bones between hanging reindeer hides, a shallow stone-ringed central hearth burning greasy bone ends (no wood anywhere), fur hides on the floor, a hide water bag hanging from a bone tripod, a low bone ledge along the wall",
+   "INT": "inside a mammoth-bone dwelling at Mezhyrich, central Ukraine, about 16,000 BC: a low dome of tusks and long bones between hanging reindeer hides, a shallow stone-ringed central hearth burning greasy bone ends with a few thin twigs, no logs, fur hides on the floor, a hide water bag hanging from a bone tripod, a low bone ledge along the wall",
    "STEP": "the Ice Age mammoth steppe near Mezhyrich, central Ukraine, about 16,000 BC: wind-scoured snow with dry golden grass tufts, a rolling treeless plain, a broad frozen river valley below with a steep three-metre snowy riverbank whose top lip is glazed with shiny ice"
   },
   "light": {
@@ -75,8 +75,8 @@
    "frame0": "Ultra-wide selfie at arm's length on the snowy steppe at sunset, Nora's terrified face close to the lens mid-stride; about twenty-five metres behind her a female woolly mammoth charges straight toward the camera, trunk raised, snow spraying.",
    "seg": [
     [
-     "Nora runs forward through knee-deep snow with short heavy strides, her eyes darting from the lens to the mammoth behind her; the mammoth charges at full speed, trunk raised high, snow bursting from her feet.",
-     "Central Ukraine, eighteen thousand years ago—"
+     "Nora runs forward through knee-deep snow with short heavy strides, her eyes darting from the lens to the mammoth behind her; the mammoth comes on in a rapid, heavy advance, trunk raised high, snow bursting from her feet.",
+     "Central Ukraine, sixteen thousand BC—"
     ],
     [
      "The mammoth lifts her trunk and trumpets; she grows slowly larger behind Nora but stays about twenty metres back.",
@@ -89,7 +89,7 @@
    ],
    "delivery": "screaming between gasps, voice cracking",
    "bg": "No one else in the shot.",
-   "physics": "Her boots sink deep and leave raised rims of displaced snow. The mammoth is heavy: feet compress the snow, the body sways with a lag, the long hair bounces. The mammoth never catches up with or touches Nora during the clip.",
+   "physics": "Her boots sink deep and leave raised rims of displaced snow. The mammoth is heavy: feet compress the snow, the body sways with a lag, the long hair bounces. The mammoth never catches up with or touches Nora during the clip. She moves in heavy, powerful elephant strides, never galloping like a horse and never gliding; each huge foot slams down and compresses the snow before the next lifts, and her bulk rocks with every step.",
    "tin": "hard cut mid-run on the very first frame, no intro",
    "tout": "whip sideways, motion blur",
    "join": "CUT in the blur; H2 opens mid-run looking back",
@@ -112,7 +112,7 @@
    "frame0": "First-person view at chest height looking back over the shoulder while running at sunset: a female woolly mammoth charging toward the camera about twenty metres away, trunk raised, snow flying, the frame tilted and blurred with motion.",
    "seg": [
     [
-     "The camera looks back while running; the mammoth charges toward it, trunk raised, snow spraying, the frame bouncing hard with each stride.",
+     "The camera looks back while running; the mammoth comes on in heavy, powerful strides, trunk raised, snow spraying, the frame bouncing hard with each of Nora's steps.",
      "She's still coming—"
     ],
     [
@@ -121,12 +121,12 @@
     ],
     [
      "At 4.5s the camera pitches down sharply as Nora slides over the lip; the frame fills with tumbling snow and turns white.",
-     "Jump!"
+     "I'm going over!"
     ]
    ],
    "delivery": "gasping, panicked",
    "bg": "No one else in the shot.",
-   "physics": "The mammoth stays about twenty metres behind and never reaches the camera; her feet compress the snow and her long hair bounces with a lag. The camera moves only as fast as a person running through deep snow, with a hard vertical bounce on every step.",
+   "physics": "The mammoth stays about twenty metres behind and never reaches the camera; her feet compress the snow and her long hair bounces with a lag. The camera moves only as fast as a person running through deep snow, with a hard vertical bounce on every step. She moves in heavy, powerful elephant strides, never galloping like a horse and never gliding; each huge foot slams down and compresses the snow before the next lifts, and her bulk rocks with every step.",
    "tin": "mid-run, looking back",
    "tout": "camera pitches over the bank lip into white snow",
    "join": "CUT on white, 0.5s black + rewind SFX; S01 opens on the tusk wipe",
@@ -149,7 +149,7 @@
    "seg": [
     [
      "Torak and a second hunter in hooded hide parkas carry one long curved mammoth tusk on their shoulders right across the lens from left to right at walking pace, bent forward under the weight, taking short steps, the tusk bobbing with each step.",
-     "Hour one. Twelve hours before that."
+     "Hour one. Twelve hours before the chase."
     ],
     [
      "The tusk slides out of frame to the right and reveals the camp that was already there: four low round dwellings of stacked mammoth jaws and tusks under frosted hides, thin smoke rising, on the snowy terrace above a frozen river.",
@@ -256,11 +256,11 @@
    "seg": [
     [
      "Nora glances back at Torak, then points at her own cheek with her free left hand.",
-     "No, wait— see that white patch on his cheek? Frostnip."
+     "No, wait— that white patch on his cheek."
     ],
     [
      "She points back over her shoulder toward Torak's cheek; Torak frowns and stays still.",
-     "Skin's starting to freeze and he can't feel it."
+     "Frostnip, maybe. Skin starting to freeze."
     ],
     [
      "At 9s she leans toward the camera and her free hand sweeps across the lens.",
@@ -292,11 +292,11 @@
    "seg": [
     [
      "Nora's bare empty hand rises from the bottom of the frame and presses gently and flat on the white patch on Torak's cheek; her fur mitten dangles from a cord at her wrist.",
-     "Don't rub it. Rubbing frozen skin just tears it."
+     "Don't rub it. Rubbing frozen skin damages it."
     ],
     [
      "The hand holds still with steady pressure; the skin of his cheek dents slightly under her palm; Torak looks down at the hand, then slowly nods once.",
-     "Warm hand, steady pressure, wait. Field medics still teach exactly this."
+     "Just a warm hand, steady, and wait."
     ],
     [
      "The hand withdraws; at 9s Torak steps sideways right across the lens from left to right, his parka filling the frame.",
@@ -328,11 +328,11 @@
    "seg": [
     [
      "Alva takes the hide cord at Nora's left wrist and tugs it twice; Nora's wrist jerks slightly with each tug.",
-     "Hour two. Alva just checked my mitten cord, twice. Fair."
+     "Hour two. Alva keeps checking this cord. Twice now."
     ],
     [
      "Alva nods once, satisfied; Nora half-smiles into the camera, the mitten swinging on its cord.",
-     "Mittens beat gloves, fingers share heat."
+     "Mittens. All four fingers share the heat."
     ],
     [
      "Nora lifts the mitten to show it; at 9.5s she swings the camera fast to the left in a motion blur.",
@@ -405,13 +405,13 @@
      "Homes, food stores, maybe monuments. Newer dating says people weren't here long."
     ],
     [
-     "At 8.5s she turns her head toward the doorway and ducks through the hide flap, so the back of her head fills the frame and the image goes dark.",
-     "Someone's clearly sleeping in this one."
+     "At 7s she lifts the edge of the hide flap behind her shoulder with her free hand: inside, in dim firelight, a person lies asleep under furs; at 9s she ducks through the flap, the back of her head fills the frame and the image goes dark.",
+     "This one? Someone's asleep in it."
     ]
    ],
    "delivery": "low-voiced",
    "bg": "No locals in the shot.",
-   "physics": "The tusk arch and the dwelling stay completely still.",
+   "physics": "The tusk arch and the dwelling stay completely still. The sleeper is inside the dwelling from the first second and only breathes slowly; nobody appears suddenly.",
    "tin": "jump cut",
    "tout": "walk-through: she ducks through the hide flap and the frame goes dark",
    "join": "CUT on dark; S09 opens from dark inside",
@@ -434,10 +434,10 @@
    "seg": [
     [
      "The image brightens from dark into warm firelight; Nora rubs her cold free hand on her sleeve.",
-     "Hardly any trees out here, so Alva burns bone."
+     "Wood's scarce out here, so Alva burns bone."
     ],
     [
-     "Behind her, Alva places a greasy mammoth bone end onto the hearth; the flames lick up slowly around it.",
+     "Behind her, Alva places a greasy mammoth bone end onto the hearth beside a few thin burning twigs; the flames lick up slowly around it.",
      "The greasy ends, mostly. We find barely any charcoal in these hearths."
     ],
     [
@@ -447,7 +447,7 @@
    ],
    "delivery": "fast, rubbing her hands warm",
    "bg": "Alva does not speak.",
-   "physics": "The flames catch gradually, with no burst; there is no wood or log anywhere, only bone.",
+   "physics": "The flames catch gradually, with no burst; there are no logs, the fire is mostly bone with a few thin twigs.",
    "tin": "from dark into firelight",
    "tout": "her hand reaches toward the lens",
    "join": "CUT; S10 POV with her hand",
@@ -474,8 +474,8 @@
      "Yeah, I know, I know."
     ],
     [
-     "Alva's hand comes in from the left and grips Nora's wrist, stopping it; Alva shakes her head; snow crumbles from the palm.",
-     "Don't eat snow, ever. Your body burns its own heat just melting it."
+     "Alva's hand comes in from the left and gently stops Nora's wrist; Alva shakes her head; snow crumbles from the palm.",
+     "Don't eat snow, ever. Your body spends its own heat melting it."
     ],
     [
      "Nora lowers her hand and lets the snow fall; at 9s steam from a hide water bag drifts across the lens and fogs the frame.",
@@ -503,7 +503,7 @@
    "set": "INT",
    "light": "day_in",
    "shot": "Ultra-wide selfie inside, the hide water bag behind Nora's left shoulder",
-   "frame0": "Ultra-wide selfie inside the dwelling, steam clearing; a hide water bag hanging from a bone tripod behind Nora's left shoulder; Alva beside it gripping a glowing hot stone between two bone sticks.",
+   "frame0": "Ultra-wide selfie inside the dwelling, steam clearing; a hide water bag hanging from a bone tripod behind Nora's left shoulder; Alva beside it gripping a fire-blackened hot stone between two bone sticks.",
    "seg": [
     [
      "Alva lowers the hot stone with the bone sticks into the hide bag.",
@@ -520,47 +520,11 @@
    ],
    "delivery": "fast, hands busy",
    "bg": "Alva does not speak.",
-   "physics": "Only localized bubbling around the stone, no instant violent boil; steam rises by convection.",
+   "physics": "The stone is dark grey and fire-blackened, hot but not glowing; a thin wisp of steam curls off it before it touches the water. Only localized bubbling around the stone, no instant violent boil; steam rises by convection.",
    "tin": "steam clearing",
    "tout": "jump cut",
    "join": "CUT",
    "audio": "hiss and bubbling water, fire crackle"
-  },
-  {
-   "id": "S12",
-   "act": 2,
-   "dur": 10,
-   "type": "selfie",
-   "refs": [
-    "Nora",
-    "Alva",
-    "Bone Dwelling Interior"
-   ],
-   "set": "INT",
-   "light": "day_in",
-   "shot": "Ultra-wide selfie inside the dwelling by the hearth, Alva at Nora's left holding the hide water bag",
-   "frame0": "Ultra-wide selfie inside the dwelling by the hearth; Alva stands at Nora's left holding the hide water bag, a thin wisp of steam rising from its open mouth.",
-   "seg": [
-    [
-     "Alva lifts the hide water bag off the bone tripod and holds its open mouth toward Nora; Nora takes it with her free left hand.",
-     "Drinking before I'm thirsty. Cold makes you pee more"
-    ],
-    [
-     "Nora tips the bag and takes two small sips of warm water, then wipes her lips with the back of her hand.",
-     "and quietly switches thirst off. Dehydration probably makes frostbite likelier."
-    ],
-    [
-     "She hands the bag back to Alva, who hangs it on the tripod again; Nora nods at the camera.",
-     "So: warm water, small sips, all day."
-    ]
-   ],
-   "delivery": "fast, between sips",
-   "bg": "Alva does not speak.",
-   "physics": "The full hide bag is soft and heavy and sags in her hand; the water sloshes slightly inside; only a thin wisp of steam rises.",
-   "tin": "jump cut",
-   "tout": "jump cut",
-   "join": "CUT; S13 opens on a static frame",
-   "audio": "fire crackle, water sloshing in the hide bag, small swallows"
   },
   {
    "id": "S13",
@@ -707,42 +671,6 @@
    "audio": "wind, soft clicking of teeth"
   },
   {
-   "id": "S17",
-   "act": 2,
-   "dur": 10,
-   "type": "selfie",
-   "refs": [
-    "Nora",
-    "Alva",
-    "Mezhyrich Camp"
-   ],
-   "set": "CAMP",
-   "light": "day",
-   "shot": "Low ultra-wide selfie, Nora crouching; behind her right shoulder Alva kneels over a reindeer hide pegged flat on the snow",
-   "frame0": "Low ultra-wide selfie, Nora crouching in the camp; behind her right shoulder Alva kneels over a fresh reindeer hide pegged flat on the snow, flesh side up, a small flint scraper in her hand.",
-   "seg": [
-    [
-     "Alva pushes the flint scraper across the flesh side of the hide in short firm strokes away from her body; thin curls of white fat and membrane peel up ahead of the edge.",
-     "Flint end-scraper. Every scrap of fat comes off,"
-    ],
-    [
-     "She flicks the curls off onto the snow and keeps stroking; the scraped area turns pale and smooth.",
-     "or the hide rots. Dwelling one here had these stored inside,"
-    ],
-    [
-     "Alva holds the scraper up for a second so its rounded working edge is visible, then goes back to work; Nora nods.",
-     "right next to the flint cores. Same tool."
-    ]
-   ],
-   "delivery": "fast, low, watching closely",
-   "bg": "Alva does not speak.",
-   "physics": "The hide is pegged flat and does not slide; only the scraper and Alva's hands move; the fat comes off in thin curls, not chunks.",
-   "tin": "jump cut",
-   "tout": "jump cut",
-   "join": "CUT",
-   "audio": "wind, rasping scrape of flint on hide"
-  },
-  {
    "id": "S18",
    "act": 2,
    "dur": 10,
@@ -772,7 +700,7 @@
    ],
    "delivery": "breathing hard, fast",
    "bg": "Torak does not speak.",
-   "physics": "The bone is heavy: both lean forward and move slowly; the snow is pushed aside into a groove.",
+   "physics": "The bone is heavy: both lean forward and move slowly; the snow is pushed aside into a groove. Her curtain bangs are damp and stuck to her forehead and her breath comes in heavy puffs; when she opens the collar a gust lifts the loose fur edge and she shivers once.",
    "tin": "jump cut",
    "tout": "jump cut",
    "join": "CUT",
@@ -840,7 +768,7 @@
     ],
     [
      "The rhino lifts its head and stares in their general direction, ears turning, and stays where it is; Nora sinks lower behind the drift.",
-     "Fossil horns have exactly that wear. Okay, it's looking. We're leaving."
+     "Fossil horns show that wear too. It's looking. We're leaving."
     ]
    ],
    "delivery": "in a tense, fast whisper",
@@ -1035,7 +963,7 @@
   {
    "id": "S25",
    "act": 3,
-   "dur": 10,
+   "dur": 8,
    "type": "wide",
    "refs": [
     "Woolly Mammoth",
@@ -1048,16 +976,16 @@
    "frame0": "Handheld view from a snowy ridge across the valley at medium distance: woolly mammoths grazing with heads low, pushing through shallow snow for grass; at the right edge of the frame a few steppe bison graze beside them.",
    "seg": [
     [
-     "The camera settles from a swing and pans slowly left to right across the herd.",
-     "Small ears, see? Big ears dump heat, they'd freeze."
+     "The camera settles from a swing and pans slowly left to right across the herd, past a female with very small furry ears half hidden in her hair.",
+     "Look at the ears. Tiny. No wonder."
     ],
     [
      "The mammoths walk very slowly, tusks occasionally pushing through shallow snow; long coarse guard hairs sway in the wind over a dense woolly undercoat.",
-     "Shaggy outer hair, dense wool underneath."
+     "Shaggy hair outside, thick wool under."
     ],
     [
-     "The pan passes a female with very small furry ears half hidden in her hair, then reaches a small herd of steppe bison grazing next to the mammoths, with long, wide horns curving forward.",
-     "Steppe bison right beside them. Both gone now."
+     "The pan reaches a small herd of steppe bison grazing next to the mammoths, with long, wide horns curving forward.",
+     "Steppe bison too. Both gone now."
     ]
    ],
    "delivery": "in a fast whisper",
@@ -1081,11 +1009,11 @@
    "set": "STEP",
    "light": "afternoon",
    "shot": "Low ultra-wide selfie just above the snow, Nora lying behind a snow ridge, Torak on her right, the herd far behind",
-   "frame0": "Low ultra-wide selfie just above the snow: Nora lies on her stomach behind a low snow ridge; Torak lies to her right; far behind them across the valley the mammoth herd, the largest female in front.",
+   "frame0": "Low ultra-wide selfie just above the snow: Nora lies on her stomach behind a low snow ridge; Torak lies to her right; far behind them across the valley the mammoth herd, the largest female in front; off to the left, a steep riverbank with an icy lip.",
    "seg": [
     [
-     "Torak presses his flat hand downward twice, signalling stay low; Nora nods.",
-     "Torak's hand says stay low, and I'm staying low."
+     "Torak presses his flat hand downward twice, signalling stay low, then points firmly toward the steep icy riverbank off to the left and holds Nora's eye; Nora nods.",
+     "Stay low, he says. And he's pointing at that bank."
     ],
     [
      "Far behind them, the largest female slowly raises her trunk high, curling the tip, sniffing the air; she stands still.",
@@ -1207,7 +1135,7 @@
    ],
    "delivery": "running, voice cracking",
    "bg": "No one else in the shot.",
-   "physics": "Her boots sink deep and leave raised rims of displaced snow. The mammoth is heavy: feet compress the snow, the body sways with a lag, the long hair bounces.",
+   "physics": "Her boots sink deep and leave raised rims of displaced snow. The mammoth is heavy: feet compress the snow, the body sways with a lag, the long hair bounces. The mammoth moves in heavy, powerful elephant strides, never galloping like a horse and never gliding; each huge foot slams down and compresses the snow before the next lifts, and her bulk rocks with every step.",
    "tin": "hard cut mid-run",
    "tout": "whip down toward the snow",
    "join": "CUT in the blur; S30 opens mid-wade",
@@ -1301,21 +1229,21 @@
    "frame0": "Low ultra-wide selfie pointing upward past Nora's face toward the top lip of the riverbank about three metres above, glazed with shiny ice; the female mammoth arriving at the top edge.",
    "seg": [
     [
-     "The mammoth's front feet step onto the glazed ice lip and lose traction, sliding.",
+     "The mammoth's front feet land on the glazed ice lip and the footing fails; her front feet slide forward while her heavy body keeps coming.",
      "Oh no no no— she's slipping, she's slipping—"
     ],
     [
-     "The mammoth's heavy body lurches sideways to the right to regain balance; she tosses her head defensively, tusks sweeping through the snow.",
+     "Her shoulders and head swing to the right, her hind legs dig into the snow to brace, and her whole body skids sideways along the lip, losing momentum.",
      "she's turning."
     ],
     [
-     "The mammoth swings her body around and turns away to the right, out of view beyond the top edge; snow and ice fragments tumble down past Nora's face.",
+     "Slowed down, she steps back off the ice hind legs first, turns away to the right and disappears beyond the top edge; snow and ice fragments tumble down past Nora's face.",
      "She's turning away!"
     ]
    ],
    "delivery": "in a panicked whisper",
    "bg": "No one else in the shot.",
-   "physics": "This is a deflection, not a stop: the feet slide first and the body lags behind; she never skids to a halt like a car and never comes down the bank. Nora stays pressed against the wall.",
+   "physics": "This is a deflection, not a stop: the footing fails first, the body mass carries on and lags behind, then the momentum bleeds off over several heavy steps. There is no instant reversal and no spin; she never skids to a halt like a car and never comes down the bank. Nora stays pressed against the wall.",
    "tin": "hard cut",
    "tout": "hard cut",
    "join": "CUT",
@@ -1324,7 +1252,7 @@
   {
    "id": "S33",
    "act": 4,
-   "dur": 8,
+   "dur": 6,
    "type": "pov",
    "refs": [
     "Nora",
@@ -1337,16 +1265,16 @@
    "frame0": "First-person view from just below the riverbank lip looking up and out over the snow: the female mammoth running away toward the distant herd at sunset.",
    "seg": [
     [
-     "The mammoth trots heavily away toward the herd, getting smaller, snow kicking up behind her feet.",
-     "Going back to her calf. Warning charge, probably, not a kill."
+     "The mammoth trots heavily away toward the herd and her calf, getting smaller, snow kicking up behind her feet.",
+     "Back to her calf."
     ],
     [
-     "The mammoth's long hair bounces with each stride as she shrinks into the distance.",
-     "Elephants do that."
+     "Her long hair bounces with each stride as she shrinks into the distance.",
+     "That was a warning charge."
     ],
     [
-     "At 7s Torak's mittened hand reaches down from above across the lens.",
-     "Didn't feel like a warning."
+     "At 5s Torak's mittened hand reaches down from above across the lens.",
+     "I think."
     ]
    ],
    "delivery": "exhaling shakily",
@@ -1432,7 +1360,7 @@
   {
    "id": "S36",
    "act": 4,
-   "dur": 8,
+   "dur": 6,
    "type": "back_selfie",
    "refs": [
     "Nora",
@@ -1446,15 +1374,15 @@
    "seg": [
     [
      "The herd keeps walking away, small and getting smaller; the sun sinks low.",
-     "Front feet slid, she twisted, she bailed."
+     "Torak knew."
     ],
     [
      "Nora brings the camera around to face herself, calm now; the light shifts from orange toward blue.",
-     "Ice turned her, not me. No accident."
+     "He knew that bank wouldn't hold her."
     ],
     [
-     "She glances to the side toward Torak and nods.",
-     "Torak picked this bank on purpose."
+     "She glances to the side toward Torak and nods slowly.",
+     "He picked it."
     ]
    ],
    "delivery": "low-voiced, calm now",
@@ -1665,11 +1593,11 @@
    "seg": [
     [
      "Alva pushes the bone needle through the hide; the hide flexes slightly around the needle point.",
-     "Hide flexes, sinew pulls tight."
+     "She's using the eye. Sinew goes right through."
     ],
     [
      "She pulls the sinew thread tight, then it lies flat in the seam.",
-     "Awls only punch holes. The eye means finer seams, fitted sleeves, no gaps for wind."
+     "Not just punching holes. Real seams, tight enough to stop the wind."
     ],
     [
      "At 9s Alva lifts the pelt up so it covers the lens completely.",
@@ -1773,11 +1701,11 @@
    "seg": [
     [
      "Torak strikes the top of the skull with the end of the long bone, a deep hollow knock.",
-     "Calling this a drum is controversial."
+     "Listen to that."
     ],
     [
      "He strikes three more slow beats; the bone rebounds slightly after each strike while the skull stays completely still.",
-     "The top has worn dents, and the long bones near it are damaged to match."
+     "Worn dents on top, damaged bones beside it. A drum? We still argue."
     ],
     [
      "Nora grins wide; at 9s she leans toward the skull.",
@@ -1848,7 +1776,7 @@
     ],
     [
      "The pairs of glowing eyes stay still, blinking now and then; one pair slowly backs away.",
-     "Wolves, after scraps. Up north we argue whether skulls like theirs were early dogs."
+     "Wolves. After the scraps, I hope."
     ],
     [
      "At 9s the camera swings away from her toward the camp in a blur.",
@@ -1918,7 +1846,7 @@
     ],
     [
      "The camera holds on the sky with a slight handheld drift; the stars are sharp and steady, a faint band of the Milky Way across the frame.",
-     "And no Polaris up there. The pole sits near Deneb"
+     "And no Polaris up there. The pole's off toward Deneb"
     ],
     [
      "At 9.5s the camera whips back down toward Nora in a blur.",
