@@ -126,10 +126,8 @@ Tên trong `CHARACTER_LOCK`, tên entity và tên người nói trong `video_pro
 
 **`VOICE_LOCK` — khóa tính cách đi kèm `CHARACTER_LOCK` (góp ý của user, 2026-10-01):** `CHARACTER_LOCK` chỉ khóa ngoại hình và chất giọng; cách nói (vlogger là ai, nói nhanh hay chậm, đùa kiểu gì, sợ gì, không bao giờ nói gì) khóa bằng khối `VOICE_LOCK` theo `voice-bible.md` mục 1. Ghi `VOICE_LOCK` vào `script.md` ngay dưới `CHARACTER_LOCK` và không sửa giữa các clip. `VOICE_LOCK` **không** dán vào entity `description` hay `video_prompt`; nó là luật để viết thoại, còn thứ đi vào prompt là câu thoại và tag cách diễn đạt.
 
-**Trang phục theo ảnh ref & Bắt buộc tạo Entity Trang phục riêng (`<Vlogger> Outfit`) (góp ý của user, bài học S31):** với R2V, quần áo của vlogger **lấy từ ảnh ref**, không lấy từ chữ trong `CHARACTER_LOCK`. Để tránh việc AI tự động đổi trang phục, sai kiểu dáng hoặc biến dạng quần áo giữa các cảnh (đặc biệt các cảnh toàn hoặc cảnh thảm họa):
-- **BẮT BUỘC tạo entity riêng cho Trang phục** (`name: "<Vlogger> Outfit"`, `entity_type: visual_asset`), ví dụ: `Mia Outfit`.
-- Sinh hoặc upload một ảnh reference chuẩn thời kỳ (chụp váy chiton/tunic trên giá treo hoặc chụp thẳng toàn thân sạch nền).
-- Đính kèm `<Vlogger> Outfit` vào danh sách Ingredients (`character_names`) của mọi scene vlogger xuất hiện để khóa cứng 100% trang phục xuyên suốt cả video.
+**Trang phục theo ảnh ref — mặc định gộp vào ảnh nhân vật (góp ý của user, 2026-10-01; thay bài học S31):** với R2V, quần áo của vlogger **lấy từ ảnh ref**, không lấy từ chữ trong `CHARACTER_LOCK`. Mặc định dùng **một ảnh sheet 16:9 duy nhất** cho vlogger: mặt chính diện rõ nét | góc 3/4 | bên phải là toàn thân đang mặc đủ trang phục của thời kỳ. Một ảnh vừa khóa mặt vừa khóa trang phục, và tiết kiệm 1 slot ref (mỗi clip tối đa 3).
+- Chỉ khi trang phục vẫn bị trôi giữa các clip mới tách thêm entity `<Vlogger> Outfit` (`visual_asset`, ảnh toàn thân trang phục sạch nền) và đính vào `character_names` của các clip bị lỗi.
 
 ### 3. Strict Ethnicity Lock & Period Lock
 - Mọi người xuất hiện trong khung (người đi đường, người bán hàng, lính canh, quý tộc) phải **đúng chủng tộc bản địa của thời kỳ/địa điểm đó** — nghiên cứu qua `/fk-research` trước khi viết `description`.
@@ -376,7 +374,7 @@ Rút ra từ dự án `output/atlantis-9600bc/` (2026-09-27). Khi mâu thuẫn v
 **Ảnh ref (R2V)**
 4. Mỗi clip **tối đa 3 ref**; worker chỉ lấy entity `character` và `visual_asset`. Công trình hay bối cảnh cần giữ nhất quán (thành phố, tường thành, đền) phải khai báo là `visual_asset`.
 5. **Clip nào có thành phố hay bối cảnh lớn thì phải kèm ảnh ref của chính bối cảnh đó** (ví dụ ảnh toàn cảnh thành phố). Chỉ tả bằng chữ thì model tự vẽ một thành phố khác.
-6. **Video 16:9 (long-form): ảnh ref cảnh rộng sinh ngang 16:9**, còn ảnh ref nhân vật và vật cao để dọc 9:16. FlowKit chỉ sinh ngang cho entity `location`, nên với `visual_asset` cảnh rộng: tạm PATCH `entity_type: location` → `REGENERATE_CHARACTER_IMAGE` → đổi lại `visual_asset`.
+6. **Mọi ảnh ref đều sinh ngang 16:9** (góp ý của user, 2026-10-01), kể cả nhân vật (sheet các góc đặt cạnh nhau). FlowKit đã sinh 16:9 cho mọi loại entity. Entity `location` **không** được worker đưa vào R2V, nên mọi bối cảnh cần giữ nhất quán phải khai báo `visual_asset`. Worker lấy `visual_asset` trước `character`, nên tổng `character_names` của mỗi clip phải ≤3 và luôn có vlogger, nếu không vlogger bị loại khỏi ref.
 7. Ảnh ref không được có người, tay, đồ vật hay trang phục hiện đại lọt vào (găng tay, ủng, người mặc áo thun), không có kiến trúc lệch thời kỳ (mái vòm, tháp nhọn, lâu đài trung cổ), và không có dải màu trơn quanh ảnh.
 
 **Viết `video_prompt`**
@@ -402,9 +400,7 @@ Rút ra từ dự án `output/atlantis-9600bc/` (2026-09-27). Khi mâu thuẫn v
 
 21. **Bảng vật lý phải được user duyệt trước khi viết Clip JSON** (mục Định dạng output, bước 5b): mỗi clip ghi máy đặt ở đâu và nhìn về đâu, có gì trong khung ở giây 0, mọi vật di chuyển (hướng, tốc độ, hệ quả trong khung), chuyển động vật lý thật, và ai hoặc cái gì rời khung bằng cách nào. Nội dung bảng được viết thành câu trong `video_prompt` (quy tắc 19, 20). Đây là chỗ bắt lỗi vật lý rẻ nhất: sửa trên giấy, không tốn credit.
 
-22. **Bắt buộc thêm ảnh Trang phục làm Ref riêng (`<Vlogger> Outfit`) (bài học S31 Atlantis):**
-    - Khi dùng Omni Flash R2V, model rất dễ tự ý đổi trang phục của nhân vật giữa các cảnh (đặc biệt khi chuyển sang cảnh toàn, cảnh hành động thảm họa, hoặc khi vlogger ở xa).
-    - **Giải pháp bắt buộc:** Luôn tạo 1 entity riêng tên `<Vlogger> Outfit` (ví dụ `Mia Outfit`, `entity_type: visual_asset`), sinh hoặc upload 1 ảnh mẫu chụp trang phục hoàn chỉnh (váy chiton/tunic trên giá ma-nơ-canh hoặc chụp thẳng toàn thân tách biệt), và đính kèm vào Ingredients (`character_names`) của mọi scene nhân vật xuất hiện.
+22. **Trang phục khóa bằng panel toàn thân trong ảnh sheet nhân vật** (góp ý của user, 2026-10-01; thay bài học S31 Atlantis): ảnh ref vlogger là một sheet 16:9 có mặt rõ, góc 3/4 và toàn thân mặc trang phục (xem mục 2). Chỉ tách entity `<Vlogger> Outfit` riêng khi trang phục vẫn bị đổi giữa các clip.
 
 23. **Tuyệt đối CẤM từ khóa `selfie-stick` và mô tả cầm điện thoại (bài học S11, S17, S20 Atlantis):**
     - Từ khóa `selfie-stick` hay `smartphone selfie` làm AI vẽ thêm 1 chiếc gậy selfie trong tay, hoặc vẽ 1 chiếc điện thoại/màn hình điện thoại bay lơ lửng trước ống kính (hiện tượng quay màn hình điện thoại).

@@ -35,9 +35,10 @@ Gồm: mặt (tuổi, dáng mặt, mắt, tàn nhang/nốt ruồi), tóc (màu, 
 
 ### Quy tắc Cốt Lõi Về Voice, Start Frame & Review Ảnh (BẮT BUỘC):
 1. **Voice Achernar**: Với nhân vật vlogger nữ, khai báo `voice_description` theo chuẩn **Achernar** (Google Gemini-TTS: *"Achernar — soft, higher-pitched, natural expressive conversational female voice, casual vlog tone, breathy when amazed, hushed whisper when nervous"*). Đính thoại dạng `Mia says: "..."` trong sub-clips `0-3s / 3-6s / 6-8s` để Veo 3 / Pinhole tự sinh khẩu hình và giọng nói bản địa tự nhiên.
-2. **Bắt buộc tạo Entity Trang phục riêng (`<Vlogger> Outfit`) làm Reference (bài học S31)**:
-   - Với Omni Flash R2V, model dễ tự đổi trang phục giữa các cảnh (đặc biệt khi chuyển sang cảnh toàn, thảm họa hoặc góc xa).
-   - **BẮT BUỘC** tạo 1 entity riêng tên `<Vlogger> Outfit` (`entity_type: visual_asset`), sinh hoặc upload 1 ảnh mẫu chụp trang phục hoàn chỉnh (váy chiton/tunic trên giá ma-nơ-canh hoặc chụp thẳng), và đính kèm vào Ingredients (`character_names`) của mọi scene nhân vật xuất hiện để khóa cứng 100% trang phục.
+2. **Trang phục gộp vào ảnh sheet nhân vật (góp ý của user, 2026-10-01; thay bài học S31)**:
+   - Ảnh ref vlogger là **một sheet 16:9**: mặt chính diện rõ | góc 3/4 | toàn thân mặc đủ trang phục thời kỳ ở bên phải. Một ảnh khóa cả mặt và trang phục, tiết kiệm 1 slot ref (tối đa 3/clip).
+   - Chỉ khi trang phục vẫn bị trôi giữa các clip mới tách thêm entity `<Vlogger> Outfit` (`visual_asset`) cho các clip lỗi.
+   - Mọi ảnh ref sinh 16:9. Bối cảnh khai báo `visual_asset` (worker bỏ qua `location` khi chạy R2V).
 3. **Vật lý Vlog & Chống hiện điện thoại / màn hình (bài học S11, S12, S16, S17, S20, S27, S30, S34)**:
    - **Cấm từ khóa `selfie-stick`**: thay bằng `Handheld front-camera vlog footage, arm extended toward bottom-right corner`. Khóa câu: `The camera is the phone itself recording from Mia's hand, so the viewer looks directly at Mia; absolutely no phone, no phone body, no phone screen, no UI or app overlay, no case, and no selfie stick appear anywhere in the shot.`
    - **POV 100% không vẽ thiết bị**: Mia đứng sau camera, chỉ 1 bàn tay không vươn vào tương tác; không có chuyện cầm gậy rồi buông rồi cầm điện thoại sai vật lý.
