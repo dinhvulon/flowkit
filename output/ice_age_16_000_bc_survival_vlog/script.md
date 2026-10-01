@@ -67,7 +67,7 @@ local tricks from them and translates → after the climax she's part of the gro
 - **Alva**, khoảng 35 tuổi, giữ lửa và may vá: hai bím tóc sẫm quấn dây da, mắt sẫm, da nâu ô-liu. Áo da may khít, đeo chuỗi hạt hổ phách và vỏ ốc hóa thạch, có kim xương giắt ở cổ áo.
 - **Sắc tộc:** dân săn bắt hái lượm thời Epigravettian. Dữ liệu aDNA cho thấy màu da sẫm hơn người châu Âu ngày nay (⚠️), nên tả da nâu ô-liu, tóc và mắt sẫm, không viết mắt xanh.
 
-### Entity (8 ref, tất cả 16:9)
+### Entity (11 ref, tất cả 16:9)
 
 | Entity | Loại | Vai trò |
 |---|---|---|
@@ -79,6 +79,9 @@ local tricks from them and translates → after the climax she's part of the gro
 | Mammoth Steppe | visual_asset | Thảo nguyên, thung lũng sông đóng băng, bờ sông dốc có viền băng, khe xương cũ |
 | Woolly Mammoth | visual_asset | Voi ma mút cái, chụp ngang toàn thân, tai nhỏ |
 | Painted Mammoth Skull | visual_asset | Sọ voi ma mút ở cửa, vẽ chấm và vạch bằng ochre đỏ |
+| Woolly Rhinoceros | visual_asset | Tê giác lông mịn, chụp ngang toàn thân trên tuyết: lông xù nâu đỏ, đầu cúi thấp, sừng trước dài dẹt ngang cong về trước, sừng sau ngắn (S19A) |
+| Steppe Bison | visual_asset | Bò rừng thảo nguyên, chụp ngang toàn thân: bướu vai cao, lông bờm sẫm dày, cặp sừng dài rộng cong về trước (S25) |
+| Cave Lion | visual_asset | Sư tử hang, chụp ngang toàn thân trên tuyết: mèo lớn lông dày màu xám be nhạt, không bờm, tai tròn nhỏ (S49A) |
 
 ## 3. Research pack — bảng beat
 
@@ -341,3 +344,33 @@ Handheld front-camera vlog footage, ultra-wide 0.5x lens, natural smartphone per
 - **Chữ:** không có chữ trên màn hình; phụ đề chỉ xuất `.srt` rời.
 - **Thứ tự sản xuất:** clip khó nhất làm trước: S32 (voi trượt băng), sau đó S29 và S24.
 - Gói YouTube nằm trong `youtube_seo.md`.
+
+## 8. Bản 56 cảnh (01/10/2026): cold open + động vật tuyệt chủng
+
+Nguồn sự thật vẫn là [clips.json](clips.json). Các dòng ở mục 5/5b của những cảnh dưới đây là bản cũ, đọc clips.json hoặc [kich_ban_prompts.md](kich_ban_prompts.md) để lấy bản mới. Tổng: 56 cảnh, 8:52.
+
+| Cảnh | Thay đổi |
+|---|---|
+| **H1, H2** (mới) | Cold open 14s: đang bị voi ma mút đuổi (Giờ 12, giữa S29 và S30, góc máy khác) → lao qua mép bờ sông → trắng → đen 0.5s + SFX tua ngược → S01. H2 dừng trước khi lộ việc voi trượt băng (S32) |
+| S01 | Câu mở thành "Hour one. Twelve hours before that." (H1 đã nói nơi và năm) |
+| S02 | 10s → 6s: "Twenty-four hours, no modern gear, only what these people use, in houses of mammoth bone." |
+| S03 | Torak chĩa giáo về trước ngang ngực, khớp với "I'd spear me too" |
+| **S19A** (mới) | Tê giác lông mịn trên thảo nguyên, Torak ra hiệu đi vòng rộng |
+| S25 | Pan sang đàn bò rừng thảo nguyên ăn cỏ cạnh ma mút. Ref = Woolly Mammoth, Steppe Bison, Mammoth Steppe (shot wide, Nora sau máy nên nhường slot) |
+| S29 | "I can't outrun her." thay cho "don't run straight" |
+| S35 | "Probably adrenaline, not just the cold." |
+| S43 | "Way before farming. Way before roads." (bỏ suy diễn "trading") |
+| **S49A** (mới) | Sư tử hang đi trên mặt sông băng phía dưới trại |
+| S50 | Mở bằng jump cut; "Toes are numb, and that roar settled it." |
+| S10, S25, S48 | Sửa giọng bị lặp "from behind the camera" trong video_prompt |
+
+**Fact-check bổ sung**
+
+| Cảnh | Nội dung | Trạng thái | Nguồn |
+|---|---|---|---|
+| S19A | Tê giác lông mịn còn sống ở Đông Âu thời Cực đại Băng hà, vùng phân bố trùng ma mút; có hộp sọ tìm thấy ở sông Dnieper (Kamianske) | ✅ | New World Encyclopedia "Woolly rhinoceros"; Nardelli (Národní muzeum) |
+| S19A | Sừng trước dẹt, có vết mài do gạt tuyết khi ăn cỏ | ✅ | Scientific American (Tetrapod Zoology); NBC News 2011 |
+| S25 | Bò rừng thảo nguyên (*Bison priscus*) thuộc quần thể thú thảo nguyên voi ma mút; người Epigravettian ở Ukraine săn bò rừng | ✅ | Wikipedia "Steppe bison"; Encyclopedia of Ukraine "Epigravettian culture" |
+| S49A | Sư tử hang ở Ukraine có hóa thạch tới ~18–17 nghìn năm trước; tuyệt chủng toàn Á-Âu ~14–14,5 nghìn năm trước | ✅ | "The Quaternary lions of Ukraine" (Marciszak et al.); Stuart & Lister "Extinction chronology of the cave lion" |
+| S49A | Tranh hang động hầu như không vẽ bờm; chưa rõ con đực không có bờm hay chỉ vẽ con cái | ⚠️ | NBC News 2021 (cave lion cubs) |
+| — | Không dùng hươu khổng lồ: vắng mặt ở châu Âu thời Cực đại Băng hà | ✅ | Scientific Reports 2015 (srep10853) |

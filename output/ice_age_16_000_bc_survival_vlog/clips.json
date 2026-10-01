@@ -1,5 +1,5 @@
 {
- "_about": "Clip JSON (script.md section 6) for the Ice Age vlog. Source of truth for each scene: 'prompt' = frame 0 image, 'video_prompt' = rendered from style + setting + shot + timed segments + physics + locks + audio. Edit clip fields here, then re-render and PATCH the scene.",
+ "_about": "Clip JSON (script.md section 6) for the Ice Age vlog. Source of truth for each scene: 'prompt' = frame 0 image, 'video_prompt' = rendered from style + setting + shot + timed segments + physics + locks + audio. Edit clip fields here, then re-render and PATCH the scene. Optional 'note' = production note shown in kich_ban_prompts.md.",
  "common": {
   "character_lock": "see script.md section 2 (entity Nora description)",
   "segments": {
@@ -59,6 +59,80 @@
  },
  "clips": [
   {
+   "id": "H1",
+   "act": 1,
+   "dur": 8,
+   "type": "run",
+   "refs": [
+    "Nora",
+    "Woolly Mammoth",
+    "Mammoth Steppe"
+   ],
+   "set": "STEP",
+   "light": "sunset",
+   "note": "Cold open #1, giây 0–8 của video. Một khoảnh khắc giữa S29 và S30 (Giờ 12), quay góc khác để không lặp footage. Câu đầu nói rõ ở đâu, năm nào. Không chửi thề trong hook.",
+   "shot": "Ultra-wide running selfie at arm's length, the charging mammoth behind Nora at medium distance",
+   "frame0": "Ultra-wide selfie at arm's length on the snowy steppe at sunset, Nora's terrified face close to the lens mid-stride; about twenty-five metres behind her a female woolly mammoth charges straight toward the camera, trunk raised, snow spraying.",
+   "seg": [
+    [
+     "Nora runs forward through knee-deep snow with short heavy strides, her eyes darting from the lens to the mammoth behind her; the mammoth charges at full speed, trunk raised high, snow bursting from her feet.",
+     "Central Ukraine, eighteen thousand years ago—"
+    ],
+    [
+     "The mammoth lifts her trunk and trumpets; she grows slowly larger behind Nora but stays about twenty metres back.",
+     "and that's a mammoth, and she's chasing me!"
+    ],
+    [
+     "At 7.5s Nora glances back over her shoulder and the camera whips sideways in a blur.",
+     "Don't stop, don't stop!"
+    ]
+   ],
+   "delivery": "screaming between gasps, voice cracking",
+   "bg": "No one else in the shot.",
+   "physics": "Her boots sink deep and leave raised rims of displaced snow. The mammoth is heavy: feet compress the snow, the body sways with a lag, the long hair bounces. The mammoth never catches up with or touches Nora during the clip.",
+   "tin": "hard cut mid-run on the very first frame, no intro",
+   "tout": "whip sideways, motion blur",
+   "join": "CUT in the blur; H2 opens mid-run looking back",
+   "audio": "pounding heavy footfalls, a loud trumpet, Nora's ragged breathing"
+  },
+  {
+   "id": "H2",
+   "act": 1,
+   "dur": 6,
+   "type": "pov",
+   "refs": [
+    "Nora",
+    "Woolly Mammoth",
+    "Mammoth Steppe"
+   ],
+   "set": "STEP",
+   "light": "sunset",
+   "note": "Cold open #2, giây 8–14. Cắt ngay lúc Nora lao qua mép bờ sông (khớp với cuối S30), màn hình trắng → 0.5s đen + SFX tua ngược → S01 'Hour one'. Không tiết lộ kết quả (con voi trượt băng ở S32).",
+   "shot": "First-person view at chest height while running, first looking back over the shoulder, then forward to the riverbank edge",
+   "frame0": "First-person view at chest height looking back over the shoulder while running at sunset: a female woolly mammoth charging toward the camera about twenty metres away, trunk raised, snow flying, the frame tilted and blurred with motion.",
+   "seg": [
+    [
+     "The camera looks back while running; the mammoth charges toward it, trunk raised, snow spraying, the frame bouncing hard with each stride.",
+     "She's still coming—"
+    ],
+    [
+     "The camera swings forward: about four metres ahead the snow ends at the lip of a steep riverbank glazed with ice.",
+     "The bank, the bank!"
+    ],
+    [
+     "At 4.5s the camera pitches down sharply as Nora slides over the lip; the frame fills with tumbling snow and turns white.",
+     "Jump!"
+    ]
+   ],
+   "delivery": "gasping, panicked",
+   "bg": "No one else in the shot.",
+   "physics": "The mammoth stays about twenty metres behind and never reaches the camera; her feet compress the snow and her long hair bounces with a lag. The camera moves only as fast as a person running through deep snow, with a hard vertical bounce on every step.",
+   "tin": "mid-run, looking back",
+   "tout": "camera pitches over the bank lip into white snow",
+   "join": "CUT on white, 0.5s black + rewind SFX; S01 opens on the tusk wipe",
+   "audio": "pounding footfalls close behind, a trumpet, Nora's gasping, crunching snow"
+  },
+  {
    "id": "S01",
    "act": 1,
    "dur": 10,
@@ -75,11 +149,11 @@
    "seg": [
     [
      "Torak and a second hunter in hooded hide parkas carry one long curved mammoth tusk on their shoulders right across the lens from left to right at walking pace, bent forward under the weight, taking short steps, the tusk bobbing with each step.",
-     "Hour one. Central Ukraine, roughly eighteen thousand years ago,"
+     "Hour one. Twelve hours before that."
     ],
     [
      "The tusk slides out of frame to the right and reveals the camp that was already there: four low round dwellings of stacked mammoth jaws and tusks under frosted hides, thin smoke rising, on the snowy terrace above a frozen river.",
-     "coldest stretch of the Ice Age. I've dug at this site."
+     "Coldest stretch of the Ice Age. I've dug at this site."
     ],
     [
      "The camera holds on the camp, then at 8s whips fast to the right in a motion blur.",
@@ -97,7 +171,7 @@
   {
    "id": "S02",
    "act": 1,
-   "dur": 10,
+   "dur": 6,
    "type": "selfie",
    "refs": [
     "Nora",
@@ -110,15 +184,15 @@
    "seg": [
     [
      "The frame opens mid-swing in motion blur and settles on Nora standing at the edge of the terrace; wind blows powder snow across the frame from right to left.",
-     "Twenty-four hours, no tent, no gear, only what they use."
+     "Twenty-four hours, no modern gear,"
     ],
     [
-     "She talks fast, her breath vapor puffing and vanishing quickly, her ponytail and the fur of her pushed-back hood trailing in the wind; half a smile.",
-     "These people got through the harshest phase of the Ice Age"
+     "She talks fast, her breath vapor puffing and vanishing quickly, the fur of her pushed-back hood trailing in the wind; half a smile.",
+     "only what these people use,"
     ],
     [
-     "At 9s she turns her head to look back at the camp, so the back of her head and ponytail fill half the frame.",
-     "living around domes of mammoth bone."
+     "At 5s she turns her head to look back at the camp, so the back of her head and ponytail fill half the frame.",
+     "in houses of mammoth bone."
     ]
    ],
    "delivery": "fast and breathless, half-smiling",
@@ -142,10 +216,10 @@
    "set": "CAMP",
    "light": "dawn",
    "shot": "From just behind Nora's head, then turning around to a selfie",
-   "frame0": "Smartphone frame from just behind Nora's head at dawn: her honey-blonde ponytail and pushed-back white fox-fur hood fill the left half; on the right, about six metres away in the snow, Torak already stands holding a flint-tipped spear pointed down.",
+   "frame0": "Smartphone frame from just behind Nora's head at dawn: her honey-blonde ponytail and pushed-back white fox-fur hood fill the left half; on the right, about six metres away in the snow, Torak already stands holding a flint-tipped spear angled forward at chest height in a guarded stance.",
    "seg": [
     [
-     "Torak takes two slow steps toward Nora through the snow, spear tip down, raises one hand flat, palm down, in a stop gesture, and stops about four metres away.",
+     "Torak takes two slow steps toward Nora through the snow, spear angled forward at chest height, raises one hand flat, palm down, in a stop gesture, and stops about four metres away.",
      "Okay, that's Torak. My name for him."
     ],
     [
@@ -408,7 +482,7 @@
      "I was testing her. Mostly."
     ]
    ],
-   "delivery": "with a dry laugh, from behind the camera",
+   "delivery": "with a dry laugh",
    "bg": "Alva does not speak.",
    "physics": "Snow falls loosely from her palm.",
    "tin": "her hand already in the lower frame",
@@ -741,6 +815,43 @@
    "audio": "wind, cracking frozen snow, Torak grunting"
   },
   {
+   "id": "S19A",
+   "act": 2,
+   "dur": 10,
+   "type": "selfie",
+   "refs": [
+    "Nora",
+    "Torak",
+    "Woolly Rhinoceros"
+   ],
+   "set": "STEP",
+   "light": "day",
+   "note": "Tê giác lông mịn (Coelodonta antiquitatis). Còn sống ở Đông Âu thời Cực đại Băng hà, vùng phân bố trùng với ma mút. Sừng trước dẹt ngang, có vết mài do gạt tuyết khi ăn cỏ.",
+   "shot": "Low ultra-wide selfie behind a snow drift, Torak at Nora's right, the rhino about forty metres behind them",
+   "frame0": "Low ultra-wide selfie, Nora crouched behind a low snow drift on the open steppe; Torak crouches at her right; about forty metres behind them a lone woolly rhinoceros grazes with its head low, its long flattened front horn brushing the snow.",
+   "seg": [
+    [
+     "Torak presses a flat hand down, then traces a wide curve in the air around the rhino; Nora nods without a sound.",
+     "Woolly rhino. Torak wants a very wide circle around it."
+    ],
+    [
+     "Behind them the rhino swings its low head slowly from side to side, its broad flat front horn brushing snow off the dry grass, then tears up a mouthful.",
+     "See the front horn? Flat, worn sideways. It sweeps the snow off the grass."
+    ],
+    [
+     "The rhino lifts its head and stares in their general direction, ears turning, and stays where it is; Nora sinks lower behind the drift.",
+     "Fossil horns have exactly that wear. Okay, it's looking. We're leaving."
+    ]
+   ],
+   "delivery": "in a tense, fast whisper",
+   "bg": "Torak does not speak.",
+   "physics": "The rhino is heavy and slow: its feet compress the snow and its long shaggy reddish-brown coat sways a moment after each head movement. It stays about forty metres away the whole time and never charges or comes closer. The front horn is long, flattened sideways and curves forward; a shorter second horn sits behind it.",
+   "tin": "jump cut",
+   "tout": "jump cut",
+   "join": "CUT",
+   "audio": "wind, the rhino's snorting breath, crunch of snow and tearing grass"
+  },
+  {
    "id": "S20",
    "act": 2,
    "dur": 10,
@@ -927,14 +1038,14 @@
    "dur": 10,
    "type": "wide",
    "refs": [
-    "Nora",
     "Woolly Mammoth",
+    "Steppe Bison",
     "Mammoth Steppe"
    ],
    "set": "STEP",
    "light": "afternoon",
-   "shot": "Handheld view from the ridge across the valley at medium distance, slow pan left to right",
-   "frame0": "Handheld view from a snowy ridge across the valley at medium distance: woolly mammoths grazing with heads low, pushing through shallow snow for grass.",
+   "shot": "Handheld view from the ridge across the valley at medium distance, slow pan left to right, from the mammoths to the steppe bison grazing beside them",
+   "frame0": "Handheld view from a snowy ridge across the valley at medium distance: woolly mammoths grazing with heads low, pushing through shallow snow for grass; at the right edge of the frame a few steppe bison graze beside them.",
    "seg": [
     [
      "The camera settles from a swing and pans slowly left to right across the herd.",
@@ -945,17 +1056,17 @@
      "Shaggy outer hair, dense wool underneath."
     ],
     [
-     "The pan passes a female with very small furry ears half hidden in her hair.",
-     "We have frozen carcasses from Siberia with ears this size."
+     "The pan passes a female with very small furry ears half hidden in her hair, then reaches a small herd of steppe bison grazing next to the mammoths, with long, wide horns curving forward.",
+     "Steppe bison right beside them. Both gone now."
     ]
    ],
-   "delivery": "in a fast whisper from behind the camera",
+   "delivery": "in a fast whisper",
    "bg": "No people in the shot.",
-   "physics": "Their feet compress the snow before the heavy bodies shift. The ears are very small, about thirty centimetres, tucked close to the head. The herd stays at the same distance.",
+   "physics": "Their feet compress the snow before the heavy bodies shift. The ears are very small, about thirty centimetres, tucked close to the head. The herd stays at the same distance. The bison graze calmly at the same distance and stay a separate group from the mammoths.",
    "tin": "mid-swing",
    "tout": "jump cut",
    "join": "CUT",
-   "audio": "wind, low rumbles, crunch of snow under huge feet"
+   "audio": "wind, low rumbles, crunch of snow under huge feet, a bison's grunt"
   },
   {
    "id": "S26",
@@ -1083,7 +1194,7 @@
    "seg": [
     [
      "Nora runs forward through knee-deep snow with shortened heavy strides, twisting her upper body to look back over her shoulder; far behind her the female mammoth charges, snow spraying from her feet.",
-     "She's charging— sh— don't run straight, she's way faster than me."
+     "She's charging— sh— I can't outrun her."
     ],
     [
      "Nora keeps running; the mammoth grows slowly larger in the background but stays far behind and never catches up during the clip.",
@@ -1299,7 +1410,7 @@
    "seg": [
     [
      "The frame trembles slightly with her shaking hand.",
-     "Hour thirteen. Hands won't stop shaking. That's adrenaline dumping, not cold."
+     "Hour thirteen. Hands won't stop shaking. Probably adrenaline, not just the cold."
     ],
     [
      "Torak holds out a lump of white fat; she takes it with her free hand.",
@@ -1598,7 +1709,7 @@
     ],
     [
      "Nora turns and ducks toward the doorway flap; the frame darkens.",
-     "So: neighbours, trading, long before farming."
+     "Way before farming. Way before roads."
     ]
    ],
    "delivery": "excited, fast",
@@ -1779,7 +1890,7 @@
      "This is what the string lines meant."
     ]
    ],
-   "delivery": "softly, from behind the camera",
+   "delivery": "softly",
    "bg": "No people in the shot.",
    "physics": "All four dwellings are there from the first second and stay still; moonlight is only a faint blue tint and the fires are the main light.",
    "tin": "mid-swing",
@@ -1819,8 +1930,45 @@
    "physics": "The stars are fixed points that do not move or swirl; the sky does not rotate; only the camera tilts.",
    "tin": "mid-tilt up from the camp",
    "tout": "whip pan down to Nora, motion blur",
-   "join": "CUT in the blur; S50 opens mid-swing on Nora",
+   "join": "CUT in the blur; S49A opens mid-swing on Nora",
    "audio": "quiet night wind, distant crackle of fires"
+  },
+  {
+   "id": "S49A",
+   "act": 6,
+   "dur": 10,
+   "type": "selfie",
+   "refs": [
+    "Nora",
+    "Cave Lion",
+    "Mezhyrich Camp"
+   ],
+   "set": "CAMP",
+   "light": "night",
+   "note": "Sư tử hang (Panthera spelaea). Hóa thạch ở Ukraine có niên đại tới ~18–17 nghìn năm trước; tuyệt chủng ~14–14,5 nghìn năm trước. Tranh hang động hầu như không vẽ bờm (còn tranh cãi: con đực không có bờm hay chỉ vẽ con cái).",
+   "shot": "Ultra-wide selfie at the terrace edge at night, the frozen river far below behind Nora",
+   "frame0": "Ultra-wide selfie at the terrace edge at night, motion blur settling on Nora's face lit by firelight from a doorway; far below behind her on the faintly moonlit frozen river a lone pale cave lion stands on the ice, small in the frame, about eighty metres away.",
+   "seg": [
+    [
+     "The frame settles on Nora; a deep rumbling roar rolls up from the valley and she freezes, eyes wide.",
+     "Hold on. That roar came from the river."
+    ],
+    [
+     "She slowly turns her head toward the river; far below, the lone cave lion walks slowly along the ice, a big pale maneless cat with a thick winter coat.",
+     "Cave lion. Down on the ice. Cave paintings almost never show a mane."
+    ],
+    [
+     "The lion stops and lifts its head toward the camp; Nora turns back to the camera, breathing fast.",
+     "Gone in a few thousand years. Tonight, it's right there."
+    ]
+   ],
+   "delivery": "in a frozen, hushed whisper",
+   "bg": "No locals in the shot.",
+   "physics": "The lion is in the frame from the first second and stays far below on the river ice the whole time; it walks slowly with a heavy rolling shoulder gait and never runs, climbs or comes closer. Its paw prints mark the thin snow on the ice behind it.",
+   "tin": "mid-swing blur settling on Nora",
+   "tout": "jump cut",
+   "join": "CUT; S50 jump cut",
+   "audio": "a deep distant roar, night wind, fire crackle from a doorway"
   },
   {
    "id": "S50",
@@ -1834,11 +1982,11 @@
    "set": "CAMP",
    "light": "night",
    "shot": "Ultra-wide selfie at the terrace edge at night, the firelit camp behind Nora",
-   "frame0": "Ultra-wide selfie at the terrace edge at night, motion blur settling on Nora; the firelit camp behind her; her lips pale, eyes heavy.",
+   "frame0": "Ultra-wide selfie at the terrace edge at night, Nora close to the lens; the firelit camp behind her; her lips pale, eyes heavy.",
    "seg": [
     [
-     "The frame settles on Nora, exhausted, breath vapor fading fast.",
-     "Hour twenty-two. Toes are numb again, so I'm going in."
+     "Nora stands at the terrace edge, exhausted, breath vapor fading fast.",
+     "Hour twenty-two. Toes are numb, and that roar settled it."
     ],
     [
      "She glances back at the camp.",
@@ -1852,7 +2000,7 @@
    "delivery": "tired, slower",
    "bg": "No locals in the shot.",
    "physics": "The camp stays still behind her.",
-   "tin": "mid-swing blur",
+   "tin": "jump cut",
    "tout": "walk-through into the doorway",
    "join": "CUT on dark; S51 static inside",
    "audio": "night wind, fading to crackle inside"
