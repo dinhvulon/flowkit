@@ -1,7 +1,7 @@
 # DANH SÁCH 45 PROMPTS VIDEO (10S/CẢNH) — KỶ BĂNG HÀ 20,000 TCN
 **Dự án:** `Ice Age 20,000 BC - Time Travel Vlog`
-**Tiêu đề YouTube (SEO High-Stakes Lock):** `I Time Travelled to 20,000 BC — And Almost Got Trampled by a Mammoth`
-*(Option 2: `I Spent 24 Hours in the Ice Age (-40°C) with Cavemen` | Option 3: `What Happens When You Show Modern Fire to Ice Age Humans?`)*
+**Tiêu đề YouTube (SEO High-Stakes Lock):** `I Spent 24 Hours in the Ice Age (-40°C) with Cavemen`
+*(Format 24 Giờ Sinh Tồn Cực Hạn — Phong cách MrBeast/Survival | Dự phòng Option 1: `I Time Travelled to 20,000 BC — And Almost Got Trampled by a Mammoth`)*
 **Tổng thời lượng:** 45 cảnh × 10s = 450 giây (7.5 phút) | Khung hình: 16:9 | Material: `phone_vlog`
 
 ---

@@ -4,19 +4,23 @@
   YOUTUBE SEO METADATA & THUMBNAIL SUITE — ICE AGE 20,000 BC
 ═══════════════════════════════════════════════════════════════════════════════════
 
-## 📌 BỘ 3 TIÊU ĐỀ HIGH-STAKES (CHỌN 1 TRONG 3 ĐỂ ĐẶT TIÊU ĐỀ VIDEO)
+## 📌 TIÊU ĐỀ VIDEO ĐÃ KHÓA (PRIMARY SEO LOCK)
 
-### 🥇 Option 1 (Khuyên dùng — Nguy hiểm cận kề & Thoát chết trong gang tấc):
-> **`I Time Travelled to 20,000 BC — And Almost Got Trampled by a Mammoth`**
-- **Độ dài:** 68 ký tự (chuẩn hiển thị mobile & desktop < 70 chars)
-- **Tâm lý học & CTR:** Đẩy mức độ đe dọa sinh tử lên cao trào ngay lập tức. Khán giả bấm vào vì muốn chứng kiến khoảnh khắc thoát chết trong gang tấc trước sinh vật khổng lồ 6 tấn.
-
-### 🥈 Option 2 (Format 24 Giờ Sinh Tồn Cực Hạn — Phong cách MrBeast/Survival):
+### 🥇 Option 2 (ĐÃ KHÓA / PRIMARY CHOICE — Format 24 Giờ Sinh Tồn -40°C):
 > **`I Spent 24 Hours in the Ice Age (-40°C) with Cavemen`**
-- **Độ dài:** 51 ký tự
+- **Độ dài:** 51 ký tự (chuẩn tối ưu hiển thị mobile & desktop)
 - **Tâm lý học & CTR:** Format thử thách sống sót với con số thời gian (24 Hours) và điều kiện khắc nghiệt (-40°C) tạo độ tin cậy và tò mò cao về kỹ thuật sinh tồn thực tế (lều xương voi, luộc đá, áo da tuyết).
 
-### 🥉 Option 3 (Shock văn hóa & Nghịch lý thời gian):
+---
+
+### 🔄 CÁC PHƯƠNG ÁN DỰ PHÒNG A/B TEST SAU 48H (NẾU CTR < 4%):
+
+#### 🥈 Option 1 (Dự phòng A/B Test — Nguy hiểm cận kề & Thoát chết trong gang tấc):
+> **`I Time Travelled to 20,000 BC — And Almost Got Trampled by a Mammoth`**
+- **Độ dài:** 68 ký tự
+- **Tâm lý học & CTR:** Đẩy mức độ đe dọa sinh tử lên cao trào ngay lập tức. Khán giả bấm vào vì muốn chứng kiến khoảnh khắc thoát chết trong gang tấc trước sinh vật khổng lồ 6 tấn.
+
+#### 🥉 Option 3 (Dự phòng A/B Test — Shock văn hóa & Nghịch lý thời gian):
 > **`What Happens When You Show Modern Fire to Ice Age Humans?`**
 - **Độ dài:** 57 ký tự
 - **Tâm lý học & CTR:** Va chạm trực diện giữa văn minh hiện đại và người tiền sử. Khán giả tò mò tột độ trước phản ứng kinh ngạc, cảnh giác hoặc sợ hãi của người Cromagnon.
@@ -26,7 +30,7 @@
 ## 📝 DESCRIPTION (COPY TOÀN BỘ VÀO Ô MÔ TẢ YOUTUBE)
 
 ```text
-I time travelled 20,000 years back to the peak of the Last Ice Age in 20,000 BC—and almost got trampled by a 6-ton woolly mammoth on the frozen Eurasian steppe!
+I spent 24 hours surviving at -40°C in the peak of the Last Ice Age in 20,000 BC with Upper Paleolithic cavemen—taking shelter in mammoth-bone lodges, cracking hot bone marrow, and escaping an enraged 6-ton woolly mammoth!
 
 Subscribe for more historical time-travel adventures: https://youtube.com/@YourChannel?sub_confirmation=1
 🔔 Turn on notifications so you never miss an era!
@@ -86,20 +90,20 @@ time travel vlog, ice age, woolly mammoth, ice age survival, 20000 bc, cavemen, 
 
 ## 🖼️ 4 BỘ THUMBNAIL PROMPTS HIGH-STAKES (DÙNG CHO GOOGLE FLOW / FLUX / MIDJOURNEY)
 
-### Thumbnail Variant 1: Immediate Peril (Nguy hiểm cận kề — Khuyên dùng số 1)
-- **Concept:** Chân voi ma mút khổng lồ giẫm xuống ngay sát đầu vlogger, tuyết bắn mù mịt, mặt hoảng loạn tột độ.
-- **Text:** `ALMOST TRAMPLED!` (vàng rực viền đen) & `ICE AGE • 20,000 BC` (trắng bóng đổ)
-- **Prompt:**
-```text
-phone_vlog YouTube thumbnail, bold yellow text in English clearly "ALMOST TRAMPLED!" at top-left in thick sans-serif font with heavy black outline, smaller white text in English clearly "ICE AGE • 20,000 BC" below in bold font with dark drop shadow, handheld low-angle front-camera perspective, Nora 26-year-old blonde female vlogger in arctic reindeer hide fur parka with hood, face taking up 40% of frame showing intense sheer terror and adrenaline panic, wide eyes, panting breath with frost frozen on eyelashes and red windburned cheeks, leaning away as a colossal shaggy brown woolly mammoth foot stomps down into spraying snow directly overhead, sweeping 4-meter ivory tusks slicing through falling snow behind her, frozen arctic tundra landscape at twilight, cold cyan and deep navy blizzard with dramatic warm rim lighting, 4K, 8K, cinematic photorealistic documentary realism, 1280x720 16:9 YouTube thumbnail format
-```
-
-### Thumbnail Variant 2: 24-Hour Survival Challenge (Format 24 Giờ Sinh Tồn -40°C)
+### Thumbnail Variant 2: 24-Hour Survival Challenge (Format 24 Giờ Sinh Tồn -40°C — ĐÃ KHÓA PHỐI HỢP CÙNG OPTION 2)
 - **Concept:** Vlogger co ro run rẩy giữa bão tuyết gầm thét, mặt bám băng, phía sau là lều xương voi ma mút phát sáng ánh lửa ấm áp.
 - **Text:** `-40°C SURVIVAL!` (xanh băng/vàng rực) & `24 HOURS WITH CAVEMEN` (trắng bóng đổ)
 - **Prompt:**
 ```text
 phone_vlog YouTube thumbnail, bold vivid yellow text in English clearly "-40°C SURVIVAL!" at top-center in thick block font with black outline, smaller white text in English clearly "24 HOURS WITH CAVEMEN" below in bold font with shadow, front-facing handheld vlog angle, Nora shivering violently wrapped in thick mammoth wool parka with arctic fox fur hood, face caked in frost and windblown snow, shivering lips and dense breath vapor in freezing air, looking directly at lens with determined survival intensity, in background a colossal Paleolithic hut constructed entirely from mammoth skulls and tusks glows with warm orange firelight from within, silhouetted prehistoric hunters standing at entrance holding spears, howling whiteout blizzard, 4K, HDR, high contrast, 1280x720 16:9 format
+```
+
+### Thumbnail Variant 1: Immediate Peril (Dự phòng cho Option 1)
+- **Concept:** Chân voi ma mút khổng lồ giẫm xuống ngay sát đầu vlogger, tuyết bắn mù mịt, mặt hoảng loạn tột độ.
+- **Text:** `ALMOST TRAMPLED!` (vàng rực viền đen) & `ICE AGE • 20,000 BC` (trắng bóng đổ)
+- **Prompt:**
+```text
+phone_vlog YouTube thumbnail, bold yellow text in English clearly "ALMOST TRAMPLED!" at top-left in thick sans-serif font with heavy black outline, smaller white text in English clearly "ICE AGE • 20,000 BC" below in bold font with dark drop shadow, handheld low-angle front-camera perspective, Nora 26-year-old blonde female vlogger in arctic reindeer hide fur parka with hood, face taking up 40% of frame showing intense sheer terror and adrenaline panic, wide eyes, panting breath with frost frozen on eyelashes and red windburned cheeks, leaning away as a colossal shaggy brown woolly mammoth foot stomps down into spraying snow directly overhead, sweeping 4-meter ivory tusks slicing through falling snow behind her, frozen arctic tundra landscape at twilight, cold cyan and deep navy blizzard with dramatic warm rim lighting, 4K, 8K, cinematic photorealistic documentary realism, 1280x720 16:9 YouTube thumbnail format
 ```
 
 ### Thumbnail Variant 3: Culture Shock & Standoff (Shock văn hóa — Ngọn lửa hiện đại)
@@ -136,7 +140,7 @@ phone_vlog YouTube thumbnail, bold red text in English clearly "DON'T LOOK BACK!
   Watch full 7.5-minute Ice Age survival vlog in the related link below! ⬇️
   #shorts #iceage #woollymammoth #foodie #timetravel #prehistoric #survival
   ```
-- **Tính năng "Related Video" trong YouTube Studio:** Trỏ thẳng về full video `I Time Travelled to 20,000 BC — And Almost Got Trampled by a Mammoth`.
+- **Tính năng "Related Video" trong YouTube Studio:** Trỏ thẳng về full video `I Spent 24 Hours in the Ice Age (-40°C) with Cavemen`.
 
 ---
 
