@@ -454,6 +454,69 @@ Rút ra từ dự án `output/atlantis-9600bc/` (2026-09-27). Khi mâu thuẫn v
 32. **Tính liên tục của Đạo cụ & Vật lý giữa các cảnh (Physical & Prop Continuity):**
     - Khi các cảnh nối tiếp nhau (ví dụ: gắp đá nung S10 → đun nước S11 → uống nước ấm S12), kích thước viên đá, màu sắc than hồng, túi nước và nhiệt độ phải đồng nhất xuyên suốt chuỗi cảnh.
 
+33. **PHONE INVISIBILITY RULE cho shot `run` / chase (bài học H1 Ice Age 16,000 BC — AI bỏ qua lock thông thường và vẽ điện thoại rõ ràng trong tay):**
+    - **Vấn đề root-cause:** Với shot `run` (vlogger chạy về phía camera ở tầm tay), model AI hiểu nhầm "selfie at arm's length" = người đang GIỮ điện thoại → vẽ luôn smartphone đen hiện vật lý trong tay. Lock thông thường `"no phone, no phone body..."` bị bỏ qua vì model ưu tiên diễn giải hành động.
+    - **Fix bắt buộc — thêm tiêu đề `PHONE INVISIBILITY RULE (CRITICAL)` vào đầu lock `run`:**
+      ```
+      PHONE INVISIBILITY RULE (CRITICAL — the model must not violate this):
+      The phone is the camera itself; what the viewer sees is exactly what the phone lens captures.
+      No phone body, no phone screen, no device frame, no rectangular object being gripped,
+      no hand clutching a gadget, no screen reflection, no device outline, no UI overlay,
+      no case, and no selfie stick appear anywhere in the shot under any circumstances.
+      The hand holding the phone is NOT visible — only Nora's face, body, and the scene behind her fill the frame.
+      If any device, screen, or held object appears in the frame, that is a critical generation failure.
+      ```
+    - **Thêm vào `physics` của clip:** `No phone, no device, no screen visible at any point in the clip — the camera is invisible to itself.`
+    - **Tốc độ chạy trong tuyết sâu:** Bài học 30 mô tả "bước chân rút ngắn, nặng nhọc" là đúng về vật lý, nhưng để cảnh trông **KHẨN CẤP và NHANH** thì phải tả thêm: `legs pumping as fast as physically possible, arms swinging hard, the camera bouncing violently with each stride, face locked in wide-eyed terror — maximum effort sprint even if ground speed is limited by snow depth`. Tránh từ "short heavy strides" vì model sẽ gen animation đi bộ.
+    - **Biểu cảm:** Với cảnh trốn chạy, phải khóa cứng `wide-eyed terror, mouth open in a gasp or scream, no smile whatsoever, brow furrowed hard` — nếu chỉ tả "terrified" mà không chi tiết, model hay gen mặt cười kiểu excited.
+
+34. **OUTFIT LOCK via Outfit Entity (bài học H2 Ice Age 16,000 BC — AI thay outfit khi không có entity riêng):**
+    - **Vấn đề root-cause:** Khi R2V chỉ nhận entity nhân vật (Nora) mà không có entity trang phục riêng, model thường tự suy diễn trang phục từ context scene (cảnh tuyết lạnh → tự mặc áo parka nâu thay vì outfit gốc). Kết quả: H2 gen Nora mặc parka nâu tối thay vì váy suede trắng kem.
+    - **Fix bắt buộc — 3 bước:**
+      1. **Tạo entity `<Vlogger> Outfit`** ngay khi tạo project, KHÔNG gen ảnh mới từ text prompt. Thay vào đó crop các panel 2+3 (3/4 và toàn thân) từ ảnh ref character chính (`nora_clean.jpg`) bằng `ffmpeg -vf "crop=iw*2/3:ih:iw/3:0"`. Ảnh crop NÀY chứa outfit chính xác.
+      2. **Upload crop và patch entity** `image_prompt` với mô tả: "Outfit reference extracted from character sheet -- use this as definitive outfit reference for all video generation."
+      3. **Thêm `<Vlogger> Outfit` vào `character_names`** của TẤT CẢ scene có vlogger xuất hiện, song song với entity `<Vlogger>` (character identity). R2V model nhận cả 2 ingredient: face ref + outfit ref.
+    - **Outfit lock trong `common.identity`:** Cập nhật `common.identity` trong `clips.json` để mô tả chi tiết màu sắc, chất liệu, phụ kiện của trang phục. Phải nêu rõ "NOT dark, NOT brown, NOT a parka" để ngăn model suy diễn.
+    - **Outfit lock trong `video_prompt`:** Thêm `OUTFIT LOCK (CRITICAL)` vào mỗi `video_prompt` của cảnh có vlogger, nêu rõ màu chủ đạo (ví dụ: "WHITE/CREAM reindeer suede dress, NOT dark/brown coat").
+    - **Lưu ý mannequin:** Nếu gen ảnh outfit mới bằng AI (mannequin display), ảnh sẽ KHÔNG khớp chính xác với outfit trong character ref vì AI tự diễn giải từ text. Phải luôn dùng crop từ character ref sheet thay vì gen mới.
+    - **Lệnh crop chuẩn cho Nora Outfit ref** (chạy 1 lần khi setup project):
+      ```bash
+      ffmpeg -y -i "output/<slug>/refs/nora_clean.jpg" \
+        -vf "crop=iw*2/3:ih:iw/3:0" \
+        "output/<slug>/refs/nora_outfit_crop.jpg"
+      # Kết quả: panel 3/4 + full-body từ nora_clean.jpg, không có face close-up
+      # Upload rồi dùng làm media_id của entity "Nora Outfit"
+      ```
+
+    **[ICE AGE PROJECT] Nora Outfit — Locked specification (đã xác nhận từ nora_clean.jpg):**
+    - **Entity name:** `Nora Outfit`  |  **Entity type:** `character`  |  **Ref file:** `nora_outfit_crop.jpg` (crop từ nora_clean.jpg)
+    - **common.identity lock (dùng trong tất cả cảnh Nora xuất hiện):**
+      ```
+      Nora looks exactly like her reference sheet: same face, honey-blonde high ponytail with curtain bangs.
+      OUTFIT LOCK (CRITICAL -- match the Nora Outfit reference image exactly):
+      she wears a fitted WHITE/CREAM reindeer suede jacket-dress (mid-thigh length),
+      deep plunging V neckline laced with thin leather ties and ivory beads along the edges,
+      large white arctic-fox fur collar/hood framing the neckline,
+      long sleeves with thick white fur cuffs,
+      wide tan leather belt at waist sewn with rows of drilled ivory/bone teeth,
+      the body of the dress is CREAM/OFF-WHITE suede -- NOT dark, NOT brown, NOT a parka.
+      Light beige-white hide leggings (NOT dark/black).
+      Knee-high suede cream boots with white fur cuff trim at the top.
+      Small white fur mittens on a braided cord hanging at her sides.
+      Every scene featuring Nora must show this exact costume.
+      ```
+    - **Inline OUTFIT LOCK cho video_prompt (thêm sau "No one else in the shot."):**
+      ```
+      OUTFIT LOCK (CRITICAL -- match Nora Outfit reference exactly):
+      Nora wears a fitted WHITE/CREAM reindeer suede jacket-dress (mid-thigh length),
+      deep V neckline laced with leather ties and ivory beads, large white arctic-fox fur collar,
+      long sleeves with thick white fur cuffs, wide tan leather belt with bone teeth at waist,
+      light beige-white hide leggings (NOT dark/black leggings),
+      knee-high cream suede boots with white fur cuff trim,
+      small white fur mittens on braided cord.
+      This outfit is WHITE/CREAM throughout -- NOT a dark coat, NOT a brown parka, NOT modern clothing.
+      ```
+
 **Nội dung**
 17. Vlogger mặc đồ hiện đại theo ảnh ref là chấp nhận được (mục 2).
 18. User có thể yêu cầu **cảnh mở đầu FPV điện ảnh** (từ không gian lao xuống toàn cảnh thành phố, không có vlogger), là ngoại lệ của luật "mọi shot quay bằng điện thoại". Clip đó dùng ảnh ref toàn cảnh, giữ yên 2–3 giây cuối, và clip sau mở bằng vật lướt qua ống kính để che cú cắt.

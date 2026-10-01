@@ -31,7 +31,7 @@
   },
   "lock": {
    "selfie": "The camera is the phone itself recording from Nora's hand, so the viewer looks directly at Nora; no phone, no phone body, no phone screen, no UI or app overlay, no case, and no selfie stick appear anywhere in the shot.",
-   "run": "The camera is the phone itself recording from Nora's hand, so the viewer looks directly at Nora; no phone, no phone body, no phone screen, no UI or app overlay, no case, and no selfie stick appear anywhere in the shot. Nora clutches the camera firmly in her right hand at arm's length pointed continuously at her face; she never drops, releases, or lets go of it.",
+   "run": "SELFIE SHOT (CRITICAL): The phone IS being held by Nora pointing at her OWN FACE at arm's length. This is Nora's personal phone filming herself -- a SELFIE VIDEO, not a movie camera shot from outside. Nora's face and upper body fill 40-50% of frame; everything else is visible BEHIND her as background. PHONE INVISIBILITY RULE (CRITICAL — the model must not violate this): The phone is the camera itself; what the viewer sees is exactly what the phone lens captures. No phone body, no phone screen, no device frame, no rectangular object being gripped, no hand clutching a gadget, no screen reflection, no device outline, no UI overlay, no case, and no selfie stick appear anywhere in the shot under any circumstances. The hand holding the phone is NOT visible — only Nora's face, body, and the scene behind her fill the frame. If any device, screen, or held object appears in the frame, that is a critical generation failure.",
    "back_selfie": "The camera is the phone itself recording from Nora's hand; no phone, no phone body, no phone screen, no UI or app overlay, no case, and no selfie stick appear anywhere in the shot.",
    "back": "The camera is the phone itself in Nora's raised hand; no phone, no phone screen, no UI and no selfie stick appear anywhere in the shot.",
    "pov": "First-person point-of-view shot. Nora is completely behind the camera holding it firmly; her own hands stay out of the frame. No phone, no device, and no selfie stick appear anywhere in the frame.",
@@ -39,7 +39,7 @@
    "tripod": "The phone is the camera, resting still on a ledge; the frame never moves, and no phone, tripod or selfie stick appears anywhere in the shot.",
    "wide": "Nora is behind the camera and not visible. No phone, no device, and no selfie stick appear anywhere in the frame."
   },
-  "identity": "Nora looks exactly like her reference sheet: same face, honey-blonde high ponytail with curtain bangs, and the same fitted white suede-like hide dress with the deep V neckline and the fox-tooth belt.",
+  "identity": "Nora looks exactly like her reference sheet: same face, honey-blonde high ponytail with curtain bangs. OUTFIT LOCK (CRITICAL -- match the Nora Outfit reference image exactly): she wears a fitted WHITE/CREAM reindeer suede jacket-dress (mid-thigh length), deep plunging V neckline laced with thin leather ties and ivory beads along the edges, large white arctic-fox fur collar/hood framing the neckline, long sleeves with thick white fur cuffs, wide tan leather belt at waist sewn with rows of drilled ivory/bone teeth, the body of the dress is CREAM/OFF-WHITE suede with a slight sheen -- NOT dark, NOT brown, NOT a parka. Light beige-white hide leggings (NOT dark/black). Knee-high suede cream boots with white fur cuff trim at the top. Small white fur mittens on a braided cord hanging at her sides. Every scene featuring Nora must show this exact costume.",
   "general": "Natural smartphone perspective, no exaggerated fisheye distortion. Only Nora speaks; the locals communicate only with gestures and never speak. No subtitles or text appear on screen. This looks like raw unedited amateur video posted online, not a movie or a 3D render.",
   "outdoor": "The ground is solid and completely still. Breath vapor is short-lived and fades quickly in the cold air.",
   "settings": {
@@ -72,14 +72,14 @@
    "light": "sunset",
    "note": "Cold open #1, giây 0–8 của video. Một khoảnh khắc giữa S29 và S30 (Giờ 12), quay góc khác để không lặp footage. Câu đầu nói rõ ở đâu, năm nào. Không chửi thề trong hook.",
    "shot": "Ultra-wide running selfie at arm's length, the charging mammoth behind Nora at medium distance",
-   "frame0": "Ultra-wide selfie at arm's length on the snowy steppe at sunset, Nora's terrified face close to the lens mid-stride; about twenty-five metres behind her a female woolly mammoth charges straight toward the camera, trunk raised, snow spraying.",
+   "frame0": "Ultra-wide selfie at arm's length on the snowy steppe at golden-hour sunset, Nora's face filling 45% of the frame — eyes blown wide in raw terror, mouth open in a gasp, brow furrowed hard, no smile whatsoever, frost on eyelashes and cheeks flushed red from cold and exertion; her body is mid-full-sprint, arms and ponytail flying. About twenty-five metres directly behind her a female woolly mammoth charges straight toward the camera, trunk raised high, snow exploding around her massive feet.",
    "seg": [
     [
-     "Nora runs forward through knee-deep snow with short heavy strides, her eyes darting from the lens to the mammoth behind her; the mammoth comes on in a rapid, heavy advance, trunk raised high, snow bursting from her feet.",
+     "Nora sprints at full speed through knee-deep snow, legs pumping frantically, arms swinging hard, body lurching forward with each desperate stride — she is running as fast as a human can through snow; her face shows wide-eyed terror, gasping, no smile; the mammoth charges at full heavy advance behind her, trunk raised high, snow bursting from her feet.",
      "Central Ukraine, sixteen thousand BC—"
     ],
     [
-     "The mammoth lifts her trunk and trumpets; she grows slowly larger behind Nora but stays about twenty metres back.",
+     "Nora keeps sprinting flat-out, legs churning, the camera bouncing hard with every stride; the mammoth grows larger behind her — closing distance slowly, trumpet call audible.",
      "and that's a mammoth, and she's chasing me!"
     ],
     [
@@ -87,9 +87,9 @@
      "Don't stop, don't stop!"
     ]
    ],
-   "delivery": "screaming between gasps, voice cracking",
+   "delivery": "screaming between gasps, voice cracking with fear, not excitement",
    "bg": "No one else in the shot.",
-   "physics": "Her boots sink deep and leave raised rims of displaced snow. The mammoth is heavy: feet compress the snow, the body sways with a lag, the long hair bounces. The mammoth never catches up with or touches Nora during the clip. She moves in heavy, powerful elephant strides, never galloping like a horse and never gliding; each huge foot slams down and compresses the snow before the next lifts, and her bulk rocks with every step.",
+   "physics": "Nora is at her absolute maximum sprint speed: legs pump rapidly, arms swing violently, the camera bounces hard left-right and up-down with every stride — not a gentle jog, a full desperate run. Her boots punch deep into the snow but she keeps her feet moving fast. The mammoth moves in heavy, powerful elephant strides — each huge foot slams down compressing snow, body rocking with a lag, long hair bouncing — never galloping like a horse. The mammoth never catches up with or touches Nora during the clip.",
    "tin": "hard cut mid-run on the very first frame, no intro",
    "tout": "whip sideways, motion blur",
    "join": "CUT in the blur; H2 opens mid-run looking back",

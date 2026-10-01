@@ -1,0 +1,55 @@
+{
+  "project_id": "b6b7c1c1-e4b0-420a-8864-7d41d14d2c0e",
+  "entities": {
+    "Nora": {
+      "character_id": "0380d5d4-72f5-453b-85b5-993ccf30b44b",
+      "media_id": "48b06bae-ca46-409b-8792-84ee4fc13456"
+    },
+    "Nora Outfit": {
+      "character_id": "094f7330-8e55-470e-bd2a-2bdee356ff8c",
+      "media_id": "5d7151fc-a41e-49ab-b540-e75b0f752869",
+      "outfit_image_clean": "output/ice_age_16_000_bc_survival_vlog/refs/nora_outfit_raw_clean.jpg",
+      "source": "cropped from nora_clean.jpg panels 2+3"
+    },
+    "Torak": {
+      "character_id": "1697d83d-87c0-4592-85bb-11c525cbcc22",
+      "media_id": "77e72892-9d52-49dd-8b97-d0a308c56664"
+    },
+    "Alva": {
+      "character_id": "0a6518f5-6928-4945-ac4c-df6f32d12db4",
+      "media_id": "0dfa952d-bc88-44a4-a9b2-2750a9706e44"
+    },
+    "Mezhyrich Camp": {
+      "character_id": "9d893b4c-032b-4a47-889c-2302ce5855a7",
+      "media_id": "2b0281f9-1f2d-43fa-800f-c3bb7156b069"
+    },
+    "Bone Dwelling Interior": {
+      "character_id": "0504e396-3af0-4a8b-bd80-0ce89c50109d",
+      "media_id": "f9f8e1fc-f223-46f8-a5e6-c71bcddd8479"
+    },
+    "Mammoth Steppe": {
+      "character_id": "d10c9d7e-6495-433b-a19b-2a5d70c73b6b",
+      "media_id": "9c7d7923-8f36-4efd-a8cd-0c45f319cff3"
+    },
+    "Woolly Mammoth": {
+      "character_id": "803d918d-e0e7-4657-ac14-9e34449cddb9",
+      "media_id": "baa780c3-2909-4976-9982-fe00bfb8108a"
+    },
+    "Painted Mammoth Skull": {
+      "character_id": "dc236f56-551b-43b4-9ae0-e72c8d952a01",
+      "media_id": "00278c7f-ead3-441c-8bc2-d478f1e7df88"
+    },
+    "Woolly Rhinoceros": {
+      "character_id": "b6613764-c0b1-492d-88ac-537b6e60dac1",
+      "media_id": "d81b1823-42a4-4a92-95fe-3e51113aa128"
+    },
+    "Steppe Bison": {
+      "character_id": "a82a6227-48f8-403b-aaac-c30244f0090e",
+      "media_id": "ff9062b5-8b5f-453b-8bbb-d264f8dbabcd"
+    },
+    "Cave Lion": {
+      "character_id": "9bcace65-697f-4bf3-a2dd-29660f258f82",
+      "media_id": "a9fd0685-fbba-4e36-a5ee-382e558a5277"
+    }
+  }
+}
