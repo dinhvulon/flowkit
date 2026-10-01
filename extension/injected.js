@@ -155,19 +155,21 @@ async function executeWithRetry(sitekey, action, attempts = 2) {
   const hijack = window.__fk_hijack;
   const hasPristine = typeof hijack?.pristine === 'function';
   const knownTrapped = !!hijack?.trapped;
+  // Site key until a widget has been rendered, then that widget's id.
+  let execTarget = sitekey;
 
   for (let i = 0; i < attempts; i++) {
     try {
       // Path 1: pristine execute captured by hijack_bypass.js
       if (hasPristine) {
-        const token = await executeWithPristine(sitekey, action);
+        const token = await executeWithPristine(execTarget, action);
         if (token) return token;
         lastErr = new Error('pristine_empty_token');
         // Fall through to retry
       }
       // Path 2: Object.assign neuter (we know the trap is active)
       else if (knownTrapped) {
-        const token = await executeWithAssignNeuter(sitekey, action);
+        const token = await executeWithAssignNeuter(execTarget, action);
         if (token) return token;
         lastErr = new Error('assign_neuter_empty_token');
       }
@@ -186,10 +188,10 @@ async function executeWithRetry(sitekey, action, attempts = 2) {
     } catch (e) {
       lastErr = e;
       // The page has grecaptcha but never rendered a client for this key
-      // (Flow loads it lazily). Register one with an invisible widget, then
-      // the next attempt's execute(sitekey) finds it.
+      // (our loader is render=explicit). Register one with an invisible
+      // widget; execute only resolves an explicit client by its widget id.
       if (/not loaded in api\.js|Invalid site key/.test(e?.message || '')) {
-        try { await ensureWidget(sitekey); } catch (we) { lastErr = we; }
+        try { execTarget = await ensureWidget(sitekey); } catch (we) { lastErr = we; }
       }
     }
     await new Promise((r) => setTimeout(r, 600));
