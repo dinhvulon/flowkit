@@ -385,7 +385,7 @@ class TestGenerateReferenceImage:
 
         mock_client.generate_images.assert_called_once()
         call_kwargs = mock_client.generate_images.call_args.kwargs
-        assert call_kwargs["aspect_ratio"] == "IMAGE_ASPECT_RATIO_PORTRAIT"
+        assert call_kwargs["aspect_ratio"] == "IMAGE_ASPECT_RATIO_LANDSCAPE"
         assert call_kwargs["prompt"] == char_no_media["image_prompt"]
         mock_upload.assert_awaited_once()
         mock_crud.update_character.assert_called_once_with(

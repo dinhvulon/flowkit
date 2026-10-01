@@ -77,9 +77,6 @@ if TYPE_CHECKING:
 logger = logging.getLogger(__name__)
 
 # Entity types that need landscape (wide) reference images
-_LANDSCAPE_ENTITY_TYPES = {"location"}
-
-
 def _char_matches(c: dict, name_set: set) -> bool:
     """Check if a character matches any name in the set by slug OR display name."""
     slug = c.get("slug") or ""
@@ -88,10 +85,8 @@ def _char_matches(c: dict, name_set: set) -> bool:
 
 
 def _reference_aspect_ratio(entity_type: str) -> str:
-    """Pick aspect ratio based on entity type."""
-    if entity_type in _LANDSCAPE_ENTITY_TYPES:
-        return "IMAGE_ASPECT_RATIO_LANDSCAPE"
-    return "IMAGE_ASPECT_RATIO_PORTRAIT"
+    """Reference images are always 16:9 — characters included (multi-view sheets)."""
+    return "IMAGE_ASPECT_RATIO_LANDSCAPE"
 
 
 class OperationService:
@@ -568,9 +563,9 @@ class OperationService:
                 "aspect": aspect,
                 "entity_name": char["name"],
                 "entity_type": entity_type,
-                "composition": "portrait full-body, head-to-toe, front-facing, centered"
-                if orientation == "VERTICAL"
-                else "landscape establishing shot, level horizon, atmospheric",
+                "composition": "landscape establishing shot, level horizon, atmospheric"
+                if entity_type == "location"
+                else "16:9 reference sheet, views side by side, neutral background",
             },
         )
         result = await self._run_provider_job(job, provider)
@@ -622,7 +617,7 @@ class OperationService:
         """
         src = source_media_id or char.get("media_id")
         edit_prompt = char.get("image_prompt") or char.get("description", "")
-        aspect = "IMAGE_ASPECT_RATIO_LANDSCAPE" if char.get("entity_type") in ("location",) else "IMAGE_ASPECT_RATIO_PORTRAIT"
+        aspect = _reference_aspect_ratio(char.get("entity_type", "character"))
         orientation = "VERTICAL" if "PORTRAIT" in aspect else "HORIZONTAL"
         project = await crud.get_project(project_id) if project_id != "0" else None
         tier = project.get("user_paygate_tier", "PAYGATE_TIER_ONE") if project else "PAYGATE_TIER_ONE"

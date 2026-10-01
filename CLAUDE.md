@@ -22,7 +22,7 @@ page can sign a Flow request, so nothing works headless.
 2. **Scene prompts = ACTION only** — never describe character appearance. Reference images handle visual consistency via `imageInputs`.
 3. **All reference images must exist before scene images** — verify every entity has `media_id` before generating scene images.
 4. **No throwaway scripts** — NEVER write Python, shell, or any script file to loop over API requests. Use `POST /api/requests/batch` to submit all requests at once, then poll `GET /api/requests/batch-status`. The server throttles automatically.
-5. **Locations use landscape, characters use portrait** — reference image orientation depends on entity type.
+5. **Reference images are always 16:9 (landscape)** — characters included. A character ref is one 16:9 multi-view sheet (e.g. face close-up | 3/4 | full body in outfit); locations are a single landscape shot.
 6. **UUID extraction** — if a response gives `CAMS...` instead of UUID, extract UUID from the `fifeUrl` in the response URL: `/image/{UUID}?...`.
 7. **Cascade on regen** — regenerating an image auto-clears downstream video + upscale.
 8. **REGENERATE vs GENERATE** — `GENERATE_*` skips if already COMPLETED. `REGENERATE_*` always runs (clears + regenerates).

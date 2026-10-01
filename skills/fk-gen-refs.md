@@ -28,7 +28,7 @@ curl -s http://127.0.0.1:8100/api/projects/<PID>/characters
 
 Filter to entities that do NOT yet have `media_id` (UUID format `xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx`). Never use `CAMS...` strings — those are `mediaGenerationId`, not `media_id`. Skip entities already done.
 
-**Orientation by entity type:** characters, creatures, visual_assets, generic_troops, factions → **portrait**. Locations → **landscape**. The worker handles this automatically based on `entity_type`.
+**Orientation:** every reference image is **16:9 landscape**, characters included (write the character `image_prompt` as a side-by-side multi-view sheet: face close-up, 3/4, full body in outfit). The worker sets this automatically.
 
 **GENERATE vs REGENERATE:** `GENERATE_CHARACTER_IMAGE` skips if `media_id` already exists. Use `REGENERATE_CHARACTER_IMAGE` to force a fresh generation (clears existing image first).
 

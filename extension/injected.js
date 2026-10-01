@@ -185,6 +185,12 @@ async function executeWithRetry(sitekey, action, attempts = 2) {
       }
     } catch (e) {
       lastErr = e;
+      // The page has grecaptcha but never rendered a client for this key
+      // (Flow loads it lazily). Register one with an invisible widget, then
+      // the next attempt's execute(sitekey) finds it.
+      if (/not loaded in api\.js|Invalid site key/.test(e?.message || '')) {
+        try { await ensureWidget(sitekey); } catch (we) { lastErr = we; }
+      }
     }
     await new Promise((r) => setTimeout(r, 600));
   }
