@@ -605,7 +605,7 @@ class OperationService:
 
         return result
 
-    async def edit_character_image(self, char: dict, project_id: str,
+    async def edit_reference_image(self, char: dict, project_id: str,
                                    source_media_id: str | None = None,
                                    job_id: str = "",
                                    provider: str | None = None) -> dict:

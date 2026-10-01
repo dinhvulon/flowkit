@@ -446,6 +446,26 @@ class TestGenerateReferenceImage:
         assert "data" in result
 
 
+class TestEditReferenceImage:
+    @pytest.mark.asyncio
+    async def test_worker_call_signature_publishes_edit_job(self, service):
+        """The worker passes job_id/provider; the queue alias edit_character_image must not shadow this."""
+        char = {"id": CHAR_ID, "name": "Hero", "entity_type": "character",
+                "image_prompt": "Re-compose as a sheet", "media_id": None}
+        with patch("agent.sdk.services.operations.crud") as mock_crud, \
+             patch.object(service, "_run_provider_job", new_callable=AsyncMock) as mock_run:
+            mock_crud.get_project = AsyncMock(return_value={"user_paygate_tier": "PAYGATE_TIER_TWO"})
+            mock_crud.update_character = AsyncMock()
+            mock_run.return_value = {"error": "stop"}
+            await service.edit_reference_image(char, PROJECT_ID, source_media_id=SAMPLE_UUID,
+                                               job_id="req-1", provider=None)
+        job = mock_run.call_args.args[0]
+        assert job.job_id == "req-1"
+        assert job.prompt == "Re-compose as a sheet"
+        assert job.extra["source_media_id"] == SAMPLE_UUID
+        assert job.extra["aspect"] == "IMAGE_ASPECT_RATIO_LANDSCAPE"
+
+
 # ---------------------------------------------------------------------------
 # Test: Queue wrappers
 # ---------------------------------------------------------------------------

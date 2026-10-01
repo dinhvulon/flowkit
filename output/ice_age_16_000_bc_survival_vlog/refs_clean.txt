@@ -1,0 +1,9 @@
+painted_mammoth_skull f1e226cd-486f-404b-9645-1be8948553a3 200
+torak da15ac50-6d38-4194-bcb4-0ae1a9b5287b 200  # v2 fully clothed; v1 was 27417211-c015-4454-b39d-ae3962b43890
+mezhyrich_camp 0c91dde2-f718-457c-888f-1105087c7432 200
+woolly_mammoth 8c1a4603-5af1-45a5-884f-0a1249e933d7 200  # v2 small ears; v1 was 7ee382fc-92be-4e25-a077-e8546af149e9
+bone_dwelling_interior bd7cf962-335d-48e8-a431-bb70fa5fd3f0 200  # v2 bone-fuelled hearth; v1 was f3caa111-d495-4287-ad11-f694ebaabb76
+nora 3d3d7608-8f19-45db-a515-7c0e76ed1b8a 200  # v9 parka dressed from base body; v8 was c38ec041-4619-4d57-bb22-a3d8a0265cb1
+alva 968f3982-d0e8-4a89-a52a-99afa06f6f7f 200
+mammoth_steppe c5d84800-e0dc-4dc7-afe9-05d1a696a193 200
+nora_base_body 187983c8-e529-489e-9019-27edb1344773

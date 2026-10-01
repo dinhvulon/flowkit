@@ -1,7 +1,7 @@
 # I Survived 24 Hours in an Ice Age Mammoth-Bone Camp — kịch bản
 
 Skill: `/fk-time-travel-vlog` (Survival Preset §5c, voice-bible, §11). Project FlowKit `5fda95b9-ba37-41bf-95ab-f33a50beabe8`.
-Trạng thái: **mục 1–5b xong, chờ user duyệt bảng vật lý (5b)** trước khi viết Clip JSON (mục 6).
+Trạng thái: **mục 1–6 xong; 48 scene đã tạo trên FlowKit (chưa sinh video).** Chờ user duyệt trước khi sinh video (quy tắc 29).
 
 ---
 
@@ -20,13 +20,14 @@ Trạng thái: **mục 1–5b xong, chờ user duyệt bảng vật lý (5b)** t
 ```
 CHARACTER_LOCK:
 Nora, a 29-year-old Western woman with a soft rounded oval face and full cheeks, fair skin with a natural
-pink flush, grey-green eyes, defined light-brown brows, natural pink glossy lips, honey-blonde hair pulled
+light pink flush and a soft light dusting of a few small freckles on both cheeks, clear bright skin under the eyes, grey-green eyes, defined light-brown brows, natural pink glossy lips, honey-blonde hair pulled
 into a high wavy ponytail with long curtain bangs framing her face, small gold hoop earrings.
-Full, curvy hourglass figure: full bust, narrow defined waist, wide rounded hips, healthy strong build.
-She wears a knee-length fitted reindeer-hide parka cut close to the body, cinched at the waist by a wide
-leather belt sewn with rows of drilled arctic-fox canine teeth, a white arctic-fox fur hood usually pushed
-back onto her shoulders, short rows of tiny mammoth-ivory beads across the chest and cuffs, fur mittens
-hanging from a cord at both cuffs, fitted dark hide trousers and fur-lined hide boots.
+Full, curvy hourglass figure: large full heavy natural bust sitting low, narrow belted waist, wide rounded hips, healthy strong build.
+She wears a hip-length close-fitting parka of thin smooth suede-like reindeer hide (fur only on the hood),
+tailored to follow her curves, front closed with a row of short knotted leather ties, cinched at the waist
+by a wide leather belt sewn with rows of drilled arctic-fox canine teeth, a white arctic-fox fur hood usually
+pushed back onto her shoulders, short rows of tiny mammoth-ivory beads across the chest and cuffs, fur mittens
+hanging from a cord at both cuffs, snug dark soft-hide leggings and slim knee-high fur-lined hide boots.
 ```
 
 Khuôn mặt lấy từ `uploads/nora_main.jpg`. Ảnh ref là **một sheet 16:9**: mặt chính diện | góc 3/4 | toàn thân mặc trang phục, không có entity Outfit riêng (§2, §11 quy tắc 22).
@@ -171,7 +172,7 @@ Ref là danh sách `character_names`, tối đa 3 và luôn có Nora. Viết t�
 | # | Dur | Shot | Ref | Hành động | Thoại (Nora) | Từ | Khuôn | Vào → Ra |
 |---|---|---|---|---|---|---|---|---|
 | S20 | 10 | Selfie | N,T,CAMP | Torak đi từ mép thềm về phía Nora, vung một cánh tay thấp như cái vòi, chỉ về thung lũng, rồi ra hiệu cho cô đi theo | (thì thầm nhanh) "Hour nine. Torak's back from the ridge, arm swinging low like a trunk. Herd. And he wants me along. Not sure if that's trust or bait." | 26 | C | Jump cut → jump cut |
-| S21 | 10 | Selfie | N,T,STEP | Nora bước vào đúng vết chân Torak trên tuyết; anh đi trước cách ~3 m, quay lưng | (thở gấp, thấp giọng) "Walk in his tracks. Saves energy, and he knows where the crust holds. We stay downwind too. Mammoths probably smell like elephants do: way better than they see." | 28 | C | Jump cut → look-away: cô quay đầu nhìn qua đỉnh gò |
+| S21 | 10 | Back (qua vai) | N,T,STEP | Nora bước vào đúng vết chân Torak trên tuyết; anh đi trước cách ~3 m, quay lưng | (thở gấp, thấp giọng) "Walk in his tracks. Saves energy, and he knows where the crust holds. We stay downwind too. Mammoths probably smell like elephants do: way better than they see." | 28 | C | Jump cut → look-away: cô quay đầu nhìn qua đỉnh gò |
 | S22 | 10 | Sau gáy (Reveal #1) | N,MAM,STEP | Mở trên sau gáy Nora ở bên trái khung. Bên phải, đàn voi ma mút **đã có sẵn từ giây 0** dưới thung lũng xa. Cô hạ thấp người và nhích sang trái, để lộ cả đàn | (thì thầm, nín thở) "Oh. Oh, there they are. Eight, nine... calves in the middle. That's textbook elephant behaviour. I did not expect textbook to be this big." | 24 | B | Sau gáy → selfie flip sang POV |
 | S23 | 10 | Toàn cảnh từ chỗ đứng | N,MAM,STEP | Máy cầm tay lia chậm qua đàn voi ở khoảng cách vừa; voi cúi ủi tuyết tìm cỏ | (giọng sau máy, thì thầm nhanh) "Small ears, see? Big ears dump heat, they'd freeze. Shaggy outer hair, dense wool underneath. We have frozen carcasses from Siberia with ears this size." | 25 | B | Mở giữa cú xoay máy → jump cut |
 | S24 | 10 | Selfie | N,T,MAM | Nora nằm sấp sau một gờ tuyết, Torak ở sau ra hiệu "nằm thấp". Xa phía sau, con voi cái lớn nhất giơ vòi lên đánh hơi | (thì thầm rất nhanh) "Torak's hand says stay low, and I'm staying low. No, wait— lead female, probably, trunk up, sniffing. She's testing the wind. Is our wind still good?" | 26 | C | Jump cut → jump cut |
@@ -220,7 +221,7 @@ Ref là danh sách `character_names`, tối đa 3 và luôn có Nora. Viết t�
 | S47 | 10 | Máy dựng | N,A,INT | Máy dựng trên gờ xương. Nora ngồi quấn da lông bên than hồng; Alva ngủ ở phía sau | (thì thầm) "Hour twenty-three. Everyone's asleep. I've spent ten years measuring this floor in centimetres. Never thought about how warm it was. It is. Barely." | 23 | Tĩnh → time-skip sang bình minh |
 | S48 | 10 | Máy dựng | N,CAMP | Máy dựng ở cửa dwelling. Nora ngồi trên một xương voi ma mút; thảo nguyên lúc trời vừa sáng ở phía sau | (khẽ, mệt, cười nhẹ) "Hour twenty-four. First light. My hands work, my toes probably work. They do this every single winter. I did one day. One." | 22 | Tĩnh → hết |
 
-## 5b. Bảng vật lý từng clip — CHỜ USER DUYỆT
+## 5b. Bảng vật lý từng clip — đã duyệt
 
 Quy ước áp dụng cho mọi clip:
 
@@ -252,7 +253,7 @@ Quy ước áp dụng cho mọi clip:
 | S18 | Selfie trên thảo nguyên, gió từ phải | Tuyết thổi rạp sát mặt đất ngang khung; Torak ở xa sau lưng, quay lưng | Torak đi xa dần về phía trại, nhỏ dần. Gió tăng dần | Nora nheo mắt, nghiêng người tì vào gió | Giây 9 một luồng tuyết phủ kín ống kính |
 | S19 | Selfie trong dwelling | Khung trắng vì tuyết, tan ra để lộ Nora | Nora phủi tuyết khỏi mũ trùm, kẹp tay vào nách | Tuyết rơi khỏi lông mũ | Cắt thẳng |
 | S20 | Selfie trên thềm, mép thềm ở sau | Torak đã ở trên mép thềm phía sau, đang đi tới | Torak đi tới với tốc độ đi bộ, to dần; vung tay thấp, chỉ về thung lũng | Bước chân lún tuyết | Cắt thẳng (jump cut) |
-| S21 | Selfie, Nora đi tới, máy nhìn ngược lại về phía cô | Torak đi trước cô ~3 m, quay lưng | Cả hai đi chậm; ủng Nora đặt đúng vào vết lún của Torak | Lớp vỏ tuyết nứt dưới ủng | Giây 9 cô quay đầu nhìn về phía đỉnh gò |
+| S21 | Back: máy trong tay Nora giơ sau vai phải, nhìn về phía trước (selfie không được vì Torak đi trước sẽ nằm sau máy) | Torak đi trước cô ~3 m, quay lưng | Cả hai đi chậm; ủng Nora đặt đúng vào vết lún của Torak | Lớp vỏ tuyết nứt dưới ủng | Giây 9 cô quay đầu nhìn về phía đỉnh gò |
 | S22 | Sau gáy Nora ở bên trái khung, máy nhìn xuống thung lũng | Đàn voi có sẵn ở xa bên phải; sau gáy che nửa trái | Nora hạ người và nhích sang trái; đàn voi đi chậm sang trái rất xa, không lại gần | Thung lũng đứng yên | Giây 9 máy bắt đầu xoay (selfie flip) |
 | S23 | Từ chỗ cô đứng trên gờ, máy cầm tay lia chậm từ trái sang phải | Đàn voi ở cự ly vừa, đang cúi kiếm ăn | Voi đi rất chậm, ngà thỉnh thoảng ủi lớp tuyết nông | Lông dài lay chậm theo gió; chân nén tuyết trước khi thân chuyển | Cắt thẳng (jump cut) |
 | S24 | Selfie sát mặt tuyết, Nora nằm sau gờ tuyết | Torak nằm bên phải; đàn voi ở xa phía sau | Con cái lớn nhất giơ vòi lên đánh hơi, đứng yên | Vòi cong lên chậm | Cắt thẳng (jump cut) |
@@ -293,9 +294,33 @@ Quy ước áp dụng cho mọi clip:
 
 ---
 
-## 6. Clip JSON — chưa viết
+## 6. Clip JSON
 
-Viết theo từng hồi sau khi user duyệt bảng 5b (§11 quy tắc 21).
+Nguồn: [clips.json](clips.json). Mỗi clip có các trường của §10: `id, act, dur, type, refs, set, light, shot, frame0, seg[3] = [hành động, lời thoại], delivery, bg, physics, tin/tout/join, audio, bleep_at`. Phần dùng chung (`common`) giữ style theo loại shot, các câu khóa (lock), bối cảnh và ánh sáng theo hồi.
+
+**Cách map vào scene FlowKit**
+
+- `prompt` (khung 0) = `frame0` + `Setting: <bối cảnh>; <ánh sáng>.` Server tự chèn scene_prefix của material `phone_vlog` vào đầu.
+- `video_prompt` = style → Setting → Shot → 3 đoạn thời gian (10s: 0-3/3-7/7-10; 8s: 0-3/3-6/6-8; 6s: 0-2/2-4/4-6), mỗi đoạn `hành động + Nora says, <giọng>: "..."` → người nền → vật lý → câu ngoài trời (đất đứng yên, hơi thở tan nhanh) → khóa nhận diện Nora (khi cô hiện trong khung) → câu khóa theo loại shot → ràng buộc chung → `Audio: ..., Nora's voice.` Ràng buộc viết thành câu, không dùng `Negative:`.
+- POV/wide: `Nora says from behind the camera`. POV có tay (S05, S10, S26, S36, S39, S43) dùng câu khóa "only her bare ... hand enters the lower frame".
+- `character_names` = `refs` (tối đa 3, luôn có Nora). Mọi scene là ROOT, không chain. `duration` PATCH riêng sau khi tạo.
+- Muốn sửa một clip: sửa clips.json, render lại, `PATCH /api/scenes/{sid}` (không xóa scene).
+
+**Thay đổi so với bảng 5b:** S21 đổi từ selfie sang shot "back" qua vai, vì khi selfie thì Torak đi trước sẽ nằm sau lưng máy.
+
+**Ví dụ đầy đủ — S30 (6s, clip khó nhất, nên test trước)**
+
+`prompt`:
+
+```
+Low ultra-wide selfie pointing upward past Nora's face toward the top lip of the riverbank about three metres above, glazed with shiny ice; the female mammoth arriving at the top edge. Setting: the Ice Age mammoth steppe near Mezhyrich, central Ukraine, about 16,000 BC: wind-scoured snow with dry golden grass tufts, a rolling treeless plain, a broad frozen river valley below with a steep three-metre snowy riverbank whose top lip is glazed with shiny ice; low orange sunset light, long blue shadows on the snow.
+```
+
+`video_prompt`:
+
+```
+Handheld front-camera vlog footage, ultra-wide 0.5x lens, natural smartphone perspective, subtle hand shake, auto-exposure, photorealistic documentary realism. Nora holds the camera at arm's length with her right arm extended toward the bottom-right corner of the frame. Setting: the Ice Age mammoth steppe near Mezhyrich, central Ukraine, about 16,000 BC: wind-scoured snow with dry golden grass tufts, a rolling treeless plain, a broad frozen river valley below with a steep three-metre snowy riverbank whose top lip is glazed with shiny ice; low orange sunset light, long blue shadows on the snow. Shot: Low-angle ultra-wide selfie pointing up past Nora's face toward the bank's icy top lip about three metres above. 0-2s: The mammoth's front feet step onto the glazed ice lip and lose traction, sliding. Nora says, in a panicked whisper: "Oh no no no— she's slipping, she's slipping—" 2-4s: The mammoth's heavy body lurches sideways to the right to regain balance; she tosses her head defensively, tusks sweeping through the snow. Nora says, in a panicked whisper: "she's turning." 4-6s: The mammoth swings her body around and turns away to the right, out of view beyond the top edge; snow and ice fragments tumble down past Nora's face. Nora says, in a panicked whisper: "She's turning away!" No one else in the shot. This is a deflection, not a stop: the feet slide first and the body lags behind; she never skids to a halt like a car and never comes down the bank. Nora stays pressed against the wall. The ground is solid and completely still. Breath vapor is short-lived and fades quickly in the cold air. Nora looks exactly like her reference sheet: same face, honey-blonde high ponytail with curtain bangs, and the same fitted suede-like hide parka with the fox-tooth belt. The camera is the phone itself recording from Nora's hand, so the viewer looks directly at Nora; no phone, no phone body, no phone screen, no UI or app overlay, no case, and no selfie stick appear anywhere in the shot. Natural smartphone perspective, no exaggerated fisheye distortion. Only Nora speaks; the locals communicate only with gestures and never speak. No subtitles or text appear on screen. This looks like raw unedited amateur video posted online, not a movie or a 3D render. Audio: scraping ice, heavy thud, trumpet, falling ice, Nora's voice.
+```
 
 ## 7. Hậu kỳ (tóm tắt)
 

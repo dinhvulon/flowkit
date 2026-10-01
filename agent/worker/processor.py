@@ -395,7 +395,7 @@ async def _dispatch(req: dict, orientation: str) -> dict:
             char["reference_image_url"] = None
             return await ops.generate_reference_image(char, pid, job_id=rid, provider=provider)
         if req_type == "EDIT_CHARACTER_IMAGE":
-            return await ops.edit_character_image(
+            return await ops.edit_reference_image(
                 char, pid, source_media_id=req.get("source_media_id"), job_id=rid, provider=provider)
         return await ops.generate_reference_image(char, pid, job_id=rid, provider=provider)
 
