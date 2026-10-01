@@ -458,7 +458,7 @@ Rút ra từ dự án `output/atlantis-9600bc/` (2026-09-27). Khi mâu thuẫn v
     - **Root-cause:** model video **không hiểu phủ định**. Câu "no phone, no phone screen, no device…" thực chất là gọi tên đồ vật nhiều lần, nên model càng vẽ ra nó. Bản lock `PHONE INVISIBILITY RULE (CRITICAL)` từng ghi ở đây là **SAI**: prompt H1 khi đó chứa `phone` 8 lần, `screen` 4, `device` 3, `smartphone` 3, và kết quả vẫn có điện thoại. Ngoài ra, mọi `style.*` cũ đều mở đầu bằng "Handheld smartphone footage… natural smartphone perspective".
     - **Luật bắt buộc:** trong `style`, `lock`, `general`, `physics`, `bg`, `shot`, `frame0` TUYỆT ĐỐI KHÔNG có các từ `phone`, `smartphone`, `device`, `screen` (theo nghĩa thiết bị), `gadget`, `selfie stick`, `tripod` (đồ vật). Chỉ tả **góc nhìn** và **tay đang trống**:
       - `selfie`/`run`: *"The lens sits at the end of Nora's outstretched right arm, about 60 cm in front of her face, looking back at her; her right shoulder and upper arm reach toward the bottom-right corner and leave the frame there, so her right hand is never in view."* + *"Her left hand is empty, and nothing is held up in front of her or near her face."*
-      - `pov`: *"The view is Nora's own eyes. Nora herself never appears in the frame: no face, no body, no arms and no hands."*
+      - `pov`: *"The view is Nora's own eyes, and only the world in front of her fills the frame; the view simply moves as she moves."* (câu khẳng định; không viết "no face, no body, no person" vì phủ định vẫn gọi tên đối tượng, xem bài 37)
       - `tripod`: *"Static locked-off footage from a fixed viewpoint resting on a ledge… nothing that holds or supports the view is visible."*
       - thay "natural smartphone perspective" bằng **"natural wide-angle handheld perspective"**.
     - **Kiểm tra trước khi gen:** sau khi render, grep prompt; phải ra 0 kết quả cho `\b(phone|smartphone|device|gadget|selfie stick)\b`.
@@ -534,11 +534,32 @@ Rút ra từ dự án `output/atlantis-9600bc/` (2026-09-27). Khi mâu thuẫn v
 35. **CHẠY MÀ KHUNG HÌNH KHÔNG RUNG (bài học H1 Ice Age 16,000 BC bản v4 — người chạy hết sức nhưng mặt Nora và đường chân trời đứng yên như quay bằng gimbal):**
     - **Root-cause:** prompt chỉ ghi chung chung "the view bounces vertically with each footfall" một lần ở phần style. Model video mặc định ổn định hình (stabilize), nên một câu trừu tượng như vậy bị lờ đi. Chỉ chân và tay chuyển động, còn khung hình thì không.
     - **Fix: tả hiệu ứng rung NHÌN THẤY ĐƯỢC trên khung hình, có biên độ cụ thể, và nhắc lại trong TỪNG đoạn thời gian:**
-      - Style `run`: *"Raw unstabilized handheld footage: with every footfall the whole frame jolts — Nora's face jumps up and down by about a tenth of the frame height, the horizon tilts a few degrees left and right, and each impact smears the image with a brief motion blur; the framing drifts off her face and snaps back."*
-      - Mỗi segment `0-3s / 3-6s / 6-8s` của shot chạy phải có một cụm rung riêng, ví dụ *"the frame jolting hard on every stride"*, *"the horizon swinging as she stumbles"*.
+      - Style `run` (bản đã sửa theo bài 36): *"Raw unstabilized footage: because the lens is in Nora's own outstretched right hand, every stride she takes jolts the whole frame — her face jumps up and down by about a tenth of the frame height and the horizon behind her tilts a few degrees left and right, with a brief motion blur on each footfall, while her face always stays in the frame."*
+      - Mỗi segment `0-3s / 3-6s / 6-8s` của shot chạy phải có một cụm rung riêng, **gắn vào tay vlogger**, ví dụ *"her outstretched arm jolting the frame hard on every stride"*, *"the horizon swinging left and right with each footfall"*.
       - Không dùng các từ làm model ổn định hình: `smooth`, `steady`, `stable`, `cinematic tracking`.
-    - **Mức rung theo hành động** (rung phải khớp nhịp chân): đi bộ → nảy nhẹ, chân trời nghiêng ≤2°. Chạy bộ → mặt nhảy ~5% chiều cao khung. Chạy thục mạng hoặc vấp → mặt nhảy ~10%, chân trời nghiêng 3–5°, nhòe chuyển động mỗi bước, khung trôi lệch rồi giật về. Trượt, ngã → khung xoay mạnh và mất chủ thể trong tích tắc.
+    - **Mức rung theo hành động** (rung phải khớp nhịp chân): đi bộ → nảy nhẹ, chân trời nghiêng ≤2°. Chạy bộ → mặt nhảy ~5% chiều cao khung. Chạy thục mạng hoặc vấp → mặt nhảy ~10%, chân trời nghiêng 3–5°, nhòe chuyển động mỗi bước. Trượt, ngã → khung xoay mạnh. Với shot selfie, mặt vlogger luôn nằm trong khung; không tả "khung trôi khỏi mặt rồi giật về" (xem bài 36).
     - **Review:** khi xem contact sheet, so vị trí mặt và đường chân trời giữa các khung liền nhau. Nếu gần như không đổi trong lúc nhân vật đang chạy thì trừ điểm Motion Quality và sửa prompt theo mẫu trên.
+
+36. **TẢ RUNG NHƯ MỘT CAMERA ĐỘC LẬP LÀM MẤT GÓC SELFIE (bài học H1 Ice Age v5 — v4 giữ selfie đủ 8 giây, v5 thành người ngoài chạy giật lùi quay theo, cả hai tay Nora đều đánh):**
+    - **Root-cause:** thay đổi duy nhất giữa v4 và v5 là câu rung *"the framing drifts off her face and snaps back"* cùng cụm *"the framing lurching and snapping back"* trong từng segment. Câu này mô tả khung hình có chuyển động riêng, tách khỏi cơ thể Nora, nên model hiểu là có một người quay riêng và dựng thành tracking shot. (Mới có một mẫu so sánh, nhưng đây là thay đổi duy nhất.)
+    - **Fix:** mọi mô tả rung trong shot selfie/run phải nêu **nguyên nhân là tay của chính vlogger**: *"because the lens is in Nora's own outstretched right hand, every stride she takes jolts the whole frame … while her face always stays in the frame"*. Segment dùng *"her outstretched arm jolting the frame"*, không dùng "the framing lurches / drifts / snaps back".
+    - **Kiểm tra trước khi gen:** grep prompt shot `run`/`selfie`; không được có `framing (drifts|lurch|snaps)`.
+
+37. **SHOT POV TẢ HÀNH ĐỘNG CỦA NGƯỜI QUAY → MODEL VẼ NGƯỜI ĐÓ TỪ BÊN NGOÀI (bài học H2 Ice Age v5 — cuối clip thấy một người mặc đồ sẫm lăn xuống dốc ở góc người thứ ba):**
+    - **Root-cause:** segment ghi *"the camera pitches down sharply as Nora slides over the lip"*. "Nora slides" là hành động cơ thể có chủ ngữ là người, nên model dựng hình người đó trượt. Prompt POV không gắn ref Nora, nên model tự bịa ra một người mặc đồ sẫm.
+    - **Fix:** trong shot `pov`/`wide`, chủ ngữ chỉ được là **góc nhìn hoặc khung hình** ("the view tips forward and drops over the lip, sliding fast down the snowy slope, snow spraying across the frame"), không bao giờ là "Nora …". Riêng `pov_hand` được tả bàn tay ("Nora's bare hand lifts…") vì tay có trong khung.
+    - **Không dùng phủ định để chặn người** ("no person is seen", "no face, no body"): phủ định vẫn gọi tên đối tượng (cùng cơ chế với bài 33). Viết câu khẳng định: *"only snow, sky and the slope fill the frame"*, *"only the world in front of her fills the frame"*.
+    - Đã sửa cùng lỗi ở S30 (cũng "Nora slides over the lip") và S49 ("whips back down toward Nora" trong shot wide → "toward the firelit camp").
+    - **Kiểm tra trước khi gen:** với clip `pov`/`wide`, grep segment; không được có `\bNora\b` ngoài "Nora says".
+
+38. **SHOT POV BỊ NGƯỜI LẠ CHIẾM KHUNG — "OVER THE SHOULDER" VÀ "FROM BEHIND THE CAMERA" (bài học H2 Ice Age v6 — 2.5 giây đầu quay qua vai một phụ nữ lạ tóc nâu tết, áo parka sẫm, không phải Nora):**
+    - **Root-cause:** trường `shot` ghi *"first looking back over the shoulder"*. Với model video, "over the shoulder" là thuật ngữ góc máy chuẩn: quay qua vai một người đang đứng trong khung. Model dựng đúng nghĩa đen. Vì cảnh POV không gắn ref vlogger, model bịa ra một người lạ. Thêm nữa, lời thoại gắn dạng *"Nora says from behind the camera"* ngầm báo có một người quay đứng sau máy, càng kéo model vẽ người. Đoạn cuối *"sliding fast down the slope"* là hành động của cơ thể, nên vẫn ra một người lăn.
+    - **Fix:**
+      - Không dùng thuật ngữ góc máy có người trong đó (`over the shoulder`, `OTS`, `two-shot`, `behind her`) cho shot POV. Viết theo chuyển động của góc nhìn: *"the view swings round to face backward toward the mammoth, then swings forward to the riverbank edge"*.
+      - Lời thoại POV/wide gắn dạng **`Nora's off-screen voice says, …:`**, không dùng "from behind the camera".
+      - Rơi hoặc trượt trong POV thì tả mặt đất lao về phía ống kính: *"the view tips forward over the lip and the snowy slope rushes up toward the lens, snow spraying across the frame until it turns white"*. Không dùng "sliding", "tumbling", "falling" (động từ của cơ thể).
+    - **Kiểm tra trước khi gen:** clip `pov`/`wide` không được có `over the shoulder|from behind the camera|\b(sliding|tumbling|falling)\b` trong `shot` và segment.
+    - **Trạng thái:** fix đã áp vào `clips.json` nhưng chưa gen kiểm chứng (hết credit ngày 2026-10-02). Gen xong phải ghi kết quả vào đây.
 
     > **Quy ước:** mỗi lỗi gen lặp lại được ghi thành MỘT bài học đánh số riêng ở đây, gồm root-cause, câu prompt sửa cụ thể và bằng chứng (clip nào, bản nào), để lần sau rút kinh nghiệm thay vì sửa lại từ đầu.
 

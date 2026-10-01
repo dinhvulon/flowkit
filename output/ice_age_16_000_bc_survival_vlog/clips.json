@@ -21,7 +21,7 @@
   },
   "style": {
    "selfie": "Handheld front-lens vlog footage, ultra-wide 0.5x lens, natural wide-angle handheld perspective, subtle hand shake, auto-exposure, photorealistic documentary realism. The lens sits at the end of Nora's outstretched right arm, about 60 cm in front of her face, looking back at her; her right shoulder and upper arm reach toward the bottom-right corner and leave the frame there, so her right hand is never in view.",
-   "run": "Handheld front-lens vlog footage, ultra-wide 0.5x lens, natural wide-angle handheld perspective, auto-exposure, photorealistic documentary realism. The lens sits at the end of Nora's outstretched right arm, about 60 cm in front of her face, looking back at her; her right shoulder and upper arm reach toward the bottom-right corner and leave the frame there, so her right hand is never in view. Her right arm stays extended toward the lens for the entire clip while she runs; only her left arm pumps. Raw unstabilized handheld footage: with every footfall the whole frame jolts — Nora's face jumps up and down by about a tenth of the frame height, the horizon tilts a few degrees left and right, and each impact smears the image with a brief motion blur; the framing drifts off her face and snaps back.",
+   "run": "Handheld front-lens vlog footage, ultra-wide 0.5x lens, natural wide-angle handheld perspective, auto-exposure, photorealistic documentary realism. The lens sits at the end of Nora's outstretched right arm, about 60 cm in front of her face, looking back at her; her right shoulder and upper arm reach toward the bottom-right corner and leave the frame there, so her right hand is never in view. Her right arm stays extended toward the lens for the entire clip while she runs; only her left arm pumps. Raw unstabilized footage: because the lens is in Nora's own outstretched right hand, every stride she takes jolts the whole frame — her face jumps up and down by about a tenth of the frame height and the horizon behind her tilts a few degrees left and right, with a brief motion blur on each footfall, while her face always stays in the frame.",
    "back_selfie": "Handheld vlog footage that starts from Nora's raised hand just behind her head and then turns around to face her at arm's length, natural wide-angle handheld perspective, subtle hand shake, auto-exposure, photorealistic documentary realism.",
    "back": "Handheld vlog footage from Nora's raised right hand just behind her shoulder, looking where she looks, natural wide-angle handheld perspective, subtle hand shake, auto-exposure, photorealistic documentary realism.",
    "pov": "First-person handheld footage seen through Nora's own eyes at her eye level, natural wide-angle handheld perspective, subtle hand shake, auto-exposure, photorealistic documentary realism.",
@@ -34,10 +34,10 @@
    "run": "The viewer looks straight at Nora from the end of her extended right arm, not from a separate camera operator: her face and upper body fill 40 to 50 percent of the frame and the landscape and anything chasing her are behind her. Her left hand is empty, and nothing is held up in front of her or near her face.",
    "back_selfie": "The view comes from Nora's own raised hand; her hands are otherwise empty, and the frame contains only Nora and the scene around her.",
    "back": "The view comes from Nora's own raised hand just behind her shoulder; the frame shows only what lies ahead of her.",
-   "pov": "The view is Nora's own eyes. Nora herself never appears in the frame: no face, no body, no arms and no hands; the view simply moves as she moves, and only the world in front of her is seen.",
+   "pov": "The view is Nora's own eyes, and only the world in front of her fills the frame; the view simply moves as she moves.",
    "pov_hand": "The view is Nora's own eyes. Nora's face and body never appear; only her bare empty hand enters the lower frame, coming out of a cream suede sleeve with a thick white fox-fur cuff.",
    "tripod": "The frame never moves; nothing that holds or supports the view is visible anywhere in the shot.",
-   "wide": "The view is Nora's own eyes; Nora herself never appears in the frame."
+   "wide": "The view is Nora's own eyes, and only the landscape in front of her fills the frame."
   },
   "identity": "Nora looks exactly like her three reference images: her face from the Nora face sheet (honey-blonde high ponytail with curtain bangs, grey-green eyes), her tall curvy hourglass build from the Nora Body sheet, and her clothing from the Nora Outfit sheet. OUTFIT LOCK (CRITICAL -- match the Nora Outfit reference image exactly): she wears a fitted WHITE/CREAM reindeer suede jacket-dress (mid-thigh length), deep plunging V neckline laced with thin leather ties and ivory beads along the edges, large white arctic-fox fur collar/hood framing the neckline, long sleeves with thick white fur cuffs, wide tan leather belt at waist sewn with rows of drilled ivory/bone teeth, the body of the dress is CREAM/OFF-WHITE suede with a slight sheen -- NOT dark, NOT brown, NOT a parka. Light beige-white hide leggings (NOT dark/black). Knee-high suede cream boots with white fur cuff trim at the top. Small white fur mittens on a braided cord hanging at her sides. Every scene featuring Nora must show this exact costume.",
   "general": "Natural wide-angle perspective, no exaggerated fisheye distortion. Only Nora speaks; the locals communicate only with gestures and never speak. No subtitles or text appear in the frame. This looks like raw unedited amateur video posted online, not a movie or a 3D render.",
@@ -77,7 +77,7 @@
    "frame0": "Ultra-wide selfie at arm's length on the snowy steppe at golden-hour sunset, Nora's face filling 45% of the frame — eyes blown wide in raw terror, mouth open in a gasp, brow furrowed hard, no smile whatsoever, frost on eyelashes and cheeks flushed red from cold and exertion; her body is mid-full-sprint, left arm and ponytail flying. About twenty-five metres directly behind her a female woolly mammoth charges straight toward the camera, trunk raised high, snow exploding around her massive feet.",
    "seg": [
     [
-     "Nora sprints at full speed through knee-deep snow, legs pumping frantically, her left arm pumping hard while her right arm stays extended toward the lens, body lurching forward with each desperate stride — she is running as fast as a human can through snow; her face shows wide-eyed terror, gasping, no smile; the mammoth charges at full heavy advance behind her, trunk raised high, snow bursting from her feet, the frame jolting hard on every stride.",
+     "Nora sprints at full speed through knee-deep snow, legs pumping frantically, her left arm pumping hard while her right arm stays extended toward the lens, body lurching forward with each desperate stride — she is running as fast as a human can through snow; her face shows wide-eyed terror, gasping, no smile; the mammoth charges at full heavy advance behind her, trunk raised high, snow bursting from her feet, her outstretched arm jolting the frame hard on every stride.",
      "Central Ukraine, sixteen thousand BC—"
     ],
     [
@@ -85,7 +85,7 @@
      "and that's a mammoth, and she's chasing me!"
     ],
     [
-     "At 7.5s Nora glances back over her shoulder and the camera whips sideways in a blur, the framing lurching and snapping back as she runs.",
+     "At 7.5s Nora glances back over her shoulder and the camera whips sideways in a blur, her outstretched arm jolting the frame with every stride.",
      "Don't stop, don't stop!"
     ]
    ],
@@ -109,11 +109,11 @@
    "set": "STEP",
    "light": "sunset",
    "note": "Cold open #2, giây 8–14. Cắt ngay lúc Nora lao qua mép bờ sông (khớp với cuối S30), màn hình trắng → 0.5s đen + SFX tua ngược → S01 'Hour one'. Không tiết lộ kết quả (con voi trượt băng ở S32).",
-   "shot": "First-person view at chest height while running, first looking back over the shoulder, then forward to the riverbank edge",
+   "shot": "First-person view at chest height while running; the view first swings round to face backward toward the mammoth, then swings forward to the riverbank edge",
    "frame0": "First-person view at chest height looking back over the shoulder while running at sunset: a female woolly mammoth charging toward the camera about twenty metres away, trunk raised, snow flying, the frame tilted and blurred with motion.",
    "seg": [
     [
-     "The camera looks back while running; the mammoth comes on in heavy, powerful strides, trunk raised, snow spraying, the frame bouncing hard with each of Nora's steps.",
+     "The view swings round to face backward while running; the mammoth comes on in heavy, powerful strides, trunk raised, snow spraying, the frame bouncing hard with each running step.",
      "She's still coming—"
     ],
     [
@@ -121,13 +121,13 @@
      "The bank, the bank!"
     ],
     [
-     "At 4.5s the camera pitches down sharply as Nora slides over the lip; the frame fills with tumbling snow and turns white.",
+     "At 4.5s the view tips forward over the lip and the snowy slope rushes up toward the lens, snow spraying across the frame until it turns white; only snow, sky and the slope fill the frame.",
      "I'm going over!"
     ]
    ],
    "delivery": "gasping, panicked",
    "bg": "No one else in the shot.",
-   "physics": "The mammoth stays about twenty metres behind and never reaches the camera; her feet compress the snow and her long hair bounces with a lag. The camera moves only as fast as a person running through deep snow, with a hard vertical bounce on every step. She moves in heavy, powerful elephant strides, never galloping like a horse and never gliding; each huge foot slams down and compresses the snow before the next lifts, and her bulk rocks with every step.",
+   "physics": "The mammoth is only ever seen behind Nora in the first three seconds, about twenty metres away, and never passes close to the view. After 3s the mammoth is never seen again: once the view goes over the lip, only spraying snow and the riverbank wall are seen, and nothing follows Nora down the bank. The mammoth stays about twenty metres behind and never reaches the camera; her feet compress the snow and her long hair bounces with a lag. The camera moves only as fast as a person running through deep snow, with a hard vertical bounce on every step. She moves in heavy, powerful elephant strides, never galloping like a horse and never gliding; each huge foot slams down and compresses the snow before the next lifts, and her bulk rocks with every step.",
    "tin": "mid-run, looking back",
    "tout": "camera pitches over the bank lip into white snow",
    "join": "CUT on white, 0.5s black + rewind SFX; S01 opens on the tusk wipe",
@@ -1164,7 +1164,7 @@
    "frame0": "Ultra-wide selfie at arm's length on the snowy steppe at sunset, Nora's face close and frightened; far behind her a female woolly mammoth charging, snow spraying.",
    "seg": [
     [
-     "Nora runs forward through knee-deep snow with shortened heavy strides, twisting her upper body to look back over her shoulder; far behind her the female mammoth charges, snow spraying from her feet, the frame jolting hard on every stride.",
+     "Nora runs forward through knee-deep snow with shortened heavy strides, twisting her upper body to look back over her shoulder; far behind her the female mammoth charges, snow spraying from her feet, her outstretched arm jolting the frame hard on every stride.",
      "She's charging— sh— I can't outrun her."
     ],
     [
@@ -1172,7 +1172,7 @@
      "Riverbank. Get something big between us."
     ],
     [
-     "At 7.5s the camera whips down toward the snow in a blur, the framing lurching and snapping back as she runs.",
+     "At 7.5s the camera whips down toward the snow in a blur, her outstretched arm jolting the frame with every stride.",
      "Go, go!"
     ]
    ],
@@ -1207,7 +1207,7 @@
      "The bank's right there, Torak's waving."
     ],
     [
-     "At the edge the camera pitches down sharply as Nora slides over the lip.",
+     "At the edge the view tips forward and drops over the lip, sliding down the snowy slope, snow spraying across the frame; only snow, sky and the slope fill the frame.",
      "Go."
     ]
    ],
@@ -1908,7 +1908,7 @@
      "And no Polaris up there. The pole's off toward Deneb"
     ],
     [
-     "At 9.5s the camera whips back down toward Nora in a blur.",
+     "At 9.5s the camera whips back down toward the firelit camp in a blur.",
      "right now. Same stars, different centre."
     ]
    ],

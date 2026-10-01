@@ -318,7 +318,7 @@ Nguồn: [clips.json](clips.json). Mỗi clip có các trường của §10: `id
 
 - `prompt` (khung 0) = `frame0` + `Setting: <bối cảnh>; <ánh sáng>.` Server tự chèn scene_prefix của material `phone_vlog` vào đầu.
 - `video_prompt` = style → Setting → Shot → 3 đoạn thời gian (10s: 0-3/3-7/7-10; 8s: 0-3/3-6/6-8; 6s: 0-2/2-4/4-6), mỗi đoạn `hành động + Nora says, <giọng>: "..."` → người nền → vật lý → câu ngoài trời (đất đứng yên, hơi thở tan nhanh) → khóa nhận diện Nora (khi cô hiện trong khung) → câu khóa theo loại shot → ràng buộc chung → `Audio: ..., Nora's voice.` Ràng buộc viết thành câu, không dùng `Negative:`.
-- POV/wide: `Nora says from behind the camera`. POV có tay (S05, S10, S28, S38, S42, S46) dùng câu khóa "only her bare ... hand enters the lower frame".
+- POV/wide: `Nora's off-screen voice says` (không dùng "from behind the camera", xem skill bài 38). POV có tay (S05, S10, S28, S38, S42, S46) dùng câu khóa "only her bare ... hand enters the lower frame".
 - `character_names` = `refs` (tối đa 3, luôn có Nora). Mọi scene là ROOT, không chain. `duration` PATCH riêng sau khi tạo.
 - Muốn sửa một clip: sửa clips.json, render lại, `PATCH /api/scenes/{sid}` (không xóa scene).
 
