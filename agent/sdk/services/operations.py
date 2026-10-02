@@ -395,14 +395,13 @@ class OperationService:
         if char_names_raw and len(ref_ids) < _R2V_MAX_REFS:
             project_entities = await crud.get_project_characters(pid)
             char_names_set = set(char_names_raw)
+            char_order = {name.strip().lower(): i for i, name in enumerate(char_names_raw)}
             for etype in _R2V_ENTITY_PRIORITY:
-                for c in project_entities:
+                matched = [c for c in project_entities if _char_matches(c, char_names_set) and c.get("entity_type") == etype]
+                matched.sort(key=lambda c: char_order.get((c.get("name") or "").strip().lower(), 999))
+                for c in matched:
                     if len(ref_ids) >= _R2V_MAX_REFS:
                         break
-                    if not _char_matches(c, char_names_set):
-                        continue
-                    if c.get("entity_type") != etype:
-                        continue
                     mid = c.get("media_id")
                     if mid and mid not in seen:
                         ref_ids.append(mid)

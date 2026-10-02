@@ -352,7 +352,7 @@ Nguồn sự thật vẫn là [clips.json](clips.json). Các dòng ở mục 5/5
 
 | Cảnh | Thay đổi |
 |---|---|
-| **H1, H2** (mới) | Cold open 14s: đang bị voi ma mút đuổi (Giờ 12, giữa S29 và S30, góc máy khác) → lao qua mép bờ sông → trắng → đen 0.5s + SFX tua ngược → S01. H2 dừng trước khi lộ việc voi trượt băng (S32) |
+| **H1, H2** (mới) | Cold open 14s: Nora vừa chạy thục mạng vừa cầm điện thoại quay chính mình (selfie running `run`), camera rung lắc dữ dội, mặt tái mét hoảng loạn, hét kêu cứu thất thanh ("HELP! SOMEBODY HELP ME!") khi voi ma mút 6 tấn rượt sát nút → H2 tiếp tục selfie chạy lao người trượt qua gờ bờ sông đóng băng ("I HAVE TO JUMP! HOLD ON!") → màn hình trắng xóa bão tuyết → đen 0.5s + SFX tua ngược → S01. H2 dừng trước khi lộ việc voi trượt băng (S32) |
 | S01 | Câu mở thành "Hour one. Twelve hours before that." (H1 đã nói nơi và năm) |
 | S02 | 10s → 6s: "Twenty-four hours, no modern gear, only what these people use, in houses of mammoth bone." |
 | S03 | Torak chĩa giáo về trước ngang ngực, khớp với "I'd spear me too" |

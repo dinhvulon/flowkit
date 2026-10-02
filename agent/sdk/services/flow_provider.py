@@ -494,6 +494,7 @@ class FlowProvider(MediaProvider):
             media_id=ex.get("video_media_id", ""),
             scene_id=ex.get("scene_id", ""),
             aspect_ratio=ex.get("aspect", "VIDEO_ASPECT_RATIO_PORTRAIT"),
+            project_id=ex.get("project_id"),
         )
 
         if _is_error(submit_result):

@@ -561,6 +561,96 @@ Rút ra từ dự án `output/atlantis-9600bc/` (2026-09-27). Khi mâu thuẫn v
     - **Kiểm tra trước khi gen:** clip `pov`/`wide` không được có `over the shoulder|from behind the camera|\b(sliding|tumbling|falling)\b` trong `shot` và segment.
     - **Trạng thái:** fix đã áp vào `clips.json` nhưng chưa gen kiểm chứng (hết credit ngày 2026-10-02). Gen xong phải ghi kết quả vào đây.
 
+39. **NHẢY HOẶC TIẾP ĐẤT TRONG SHOT SELFIE DỄ BỊ BUÔNG MÁY → CHUYỂN GÓC THỨ BA (bài học H2 Ice Age 16,000 BC bản v7):**
+    - **Root-cause:** Khi mô tả nhân vật nhảy hoặc trượt qua gờ dốc ("Nora reaches the edge and leaps, sliding feet-first..."), model video AI (Omni Flash / Veo) ưu tiên mô tả hành động cơ thể tiếp đất tự nhiên (người nhảy phải vung hai tay giữ thăng bằng), dẫn đến việc model "buông điện thoại", lùi camera ra ngoài thành góc người thứ 3 (third-person spectator wide shot) hoặc vẽ Nora chạy ra xa máy.
+    - **Fix:**
+      - **Khóa cứng cánh tay và máy quay (Permanent Arm & Camera Lock):** Trong shot selfie có động tác nhảy/rơi/trượt, bắt buộc tả rõ cánh tay vlogger luôn duỗi thẳng và nắm chặt máy hướng về mặt mình: *"Nora plunges downward over the icy lip, her right arm remaining permanently extended gripping the camera tightly aimed directly back at her screaming face; she NEVER drops, releases, or lets go of the camera, and the view NEVER switches to third-person or spectator angle."*
+      - **Tả chuyển động khung hình và tuyết thay vì tả chuyển động toàn thân:** Khung hình rung giật dọc theo quán tính cú rơi (`view jerks violently downward with the sudden drop`), tuyết bắn mù mịt xung quanh bờ vực, nhưng khuôn mặt vlogger luôn neo chặt ở trung tâm khung hình selfie.
+    - **Kiểm tra trước khi gen:** Trong shot selfie có hành động nhảy/rơi/trượt (`leap`, `slide`, `jump`, `fall`): Bắt buộc phải có mệnh đề khẳng định: `her [right/left] arm remains extended pointing the camera at her face, NEVER drops or lets go of the camera, view never switches to third-person`.
+    - **Bằng chứng thực nghiệm:** H2 bản v8 (media `665ccebc-ec01-406a-88cd-55aaefc9643b`) giữ góc selfie 100% từ 0s đến 6s, Nora vừa trượt dốc tuyết vừa la hét trực tiếp vào ống kính, cánh tay vươn dài giữ chắc máy, hoàn toàn không chuyển góc thứ 3.
+
+40. **BODY DRIFT KHI DÙNG VÁY MANNEQUIN VÀ THỨ TỰ TRUYỀN REF TRONG R2V INGREDIENTS (bài học H1/H2 Ice Age 16,000 BC bản v7):**
+    - **Root-cause:**
+      1. Ảnh Outfit tạo trên manocanh (mannequin display) có phom người thon gọn, thẳng đuột tiêu chuẩn. Khi đưa vào R2V ingredients cùng với ảnh Body đồng hồ cát, model video AI có xu hướng bị phom dáng mảnh khảnh của manocanh làm lấn át (body drift), khiến nhân vật trong video bị phẳng ngực và mất đường cong eo-hông dù prompt có ghi "hourglass build".
+      2. Thứ tự ref gửi lên server: Nếu entity Outfit được gửi trước entity Body, model sẽ dựng phom áo trước khi gán tỉ lệ cơ thể.
+    - **Fix:**
+      - **Bảo toàn thứ tự truyền Ref theo chuỗi nhận diện:** Server (`agent/sdk/services/operations.py`) bắt buộc bảo toàn thứ tự entities khai báo trong `character_names`: `[Face] -> [Body] -> [Outfit]` (ví dụ: `["Nora", "Nora Body", "Nora Outfit"]`). Nhờ đó, model cố định tỉ lệ giải phẫu cơ thể trước, sau đó mới khoác lớp trang phục lên.
+      - **Manocanh không đầu (Headless Mannequin):** Ảnh trang phục manocanh BẮT BUỘC là manocanh không đầu trên nền studio trung tính, chụp 3 góc (chính diện, 3/4, sau lưng); tuyệt đối không có tóc giả hay mặt người giả để tránh xung đột nhận diện khuôn mặt.
+      - **Khóa tương phản giải phẫu cơ thể (Negative Contrast Constraints) trong Prompt:** Trong `common.identity` và `video_prompt`, phải có cụm từ tương phản đối kháng mạnh mẽ ép model tuân thủ ảnh Body: *"BODY LOCK (CRITICAL): Nora has a voluptuous hourglass figure with a large full heavy natural bust, tiny narrow waist, and wide curvaceous hips matching Nora Body reference; she is NOT skinny, NOT slender, NOT petite, NOT flat-chested, and her deep neckline proudly showcases her cleavage."*
+    - **Bằng chứng thực nghiệm:** H1 (media `81b3bf5f`) và H2 (media `665ccebc`) bản v8 thể hiện chuẩn xác vóc dáng đồng hồ cát nóng bỏng với vòng 1 đầy đặn và váy slip dress lụa trắng xẻ ngực sâu trùng khớp hoàn toàn với ảnh `thumbnail_v2_2k_clean.jpg` và `nora_body_v3_clean.jpg`.
+
+41. **LOCK BODY, TÔN DÁNG VÒNG 1 (PUSH-UP CLEAVAGE), CHÂN DÀI SIÊU MẪU & QUY TẮC VIẾT PROMPT (bài học H1/H2 Ice Age 16,000 BC bản v9):**
+    - **Hiện tượng & Root-causes khiến vòng 1 trông nhỏ và chân bị ngắn trong video:**
+      1. *Ảnh Body Ref bị nén thể thao:* Người mẫu trong ảnh Body thường mặc áo tank top thể thao bó sát (compression tank), khiến mô ngực bị nén phẳng chặt vào lồng ngực (cỡ C-cup thể thao tự nhiên) và tỉ lệ thân/chân 1:1, không có gọng đẩy ngực (push-up) hay khe ngực sâu như trong ảnh thumbnail.
+      2. *Động tác chạy mở rộng lồng ngực:* Khi vlogger chạy thục mạng một tay vươn cầm máy và một tay vung ra sau, lồng ngực mở rộng kéo dạt hai bầu ngực sang hai bên nách, không thể chụm lại tạo khe ngực sâu như lúc đứng yên khoanh tay (trong ảnh thumbnail).
+      3. *Hiệu ứng co ngắn phối cảnh góc rộng (Foreshortening) của ống kính 0.5x:* Khi cầm máy ngang mặt chúc xuống, phần đầu/mặt ở gần ống kính nhất sẽ bị phóng to (magnified), trong khi phần hông/đùi/chân ở xa trục camera sẽ bị hút nhỏ và co ngắn lại (foreshortening). Người chạy chúi thân trên về phía trước càng làm chân bị lùi sâu vào hậu cảnh.
+      4. *Vị trí khối BODY LOCK bị chôn vùi cuối prompt (Attention Decay):* Trong prompt dài 5.000–6.000 ký tự, nếu để khối BODY LOCK ở vị trí thứ 8 sau 3.500 ký tự (sau style, setting, timed segments, physics...), model AI bị phân tán sự chú ý và ưu tiên mô phỏng chuyển động trước khi áp hình thể nhân vật.
+    - **Bộ giải pháp chuẩn khi viết Prompt (BẮT BUỘC ÁP DỤNG MỌI CẢNH):**
+      - **1. Kiến trúc Prompt đưa Body Lock lên SỚM (Early Conditioning):**
+        Đưa khối `Identity & Body Lock` lên vị trí **ngay sau `Shot:`**, TRƯỚC các phân đoạn hành động `0-3s`, `3-6s`. Cấu trúc chuẩn: `[Style] -> [Setting & Light] -> [Shot] -> [Identity & Body Lock (Face + Body + Outfit)] -> [Timed Segments] -> [Background] -> [Physics] -> [Lock] -> [General] -> [Audio]`. Model AI sẽ định hình lưới giải phẫu và trang phục trước khi render động tác.
+      - **2. Cụm từ khóa đấm lực vòng 1 (Push-up Cleavage Punch):**
+        TUYỆT ĐỐI CẤM các từ gây xệ hoặc phẳng ngực (`low-hanging bust`, `natural bust compression`). BẮT BUỘC dùng cụm khẳng định đối kháng cực mạnh:
+        *"BODY LOCK (CRITICAL): [Character] has an exceptionally large, full, voluminous heavy bust pushed up with prominent deep cleavage valley spilling out of the plunging V-neckline (dramatic push-up cleavage effect, huge voluptuous cleavage), a dramatically tiny narrow cinched waist, and wide curvaceous hips; she is distinctly voluptuous, curvy, and busty -- NOT flat-chested, NOT small-busted, NOT skinny, NOT slender."*
+      - **3. Cụm từ khóa chân dài & chiều cao siêu mẫu (Statuesque Legs Punch):**
+        CẤM dùng "thick thighs" đơn độc làm chân trông ngắn và mập. Bổ sung thông số chuẩn:
+        *"STATURE & LEGS: [Character] is a tall, statuesque woman (178 cm / 5'10" tall) with exceptionally long, slender model legs and high hip placement, an elongated tall athletic silhouette -- NOT short, NOT stubby, NOT stocky."*
+      - **4. Quang học góc máy tôn dáng (Optical Angle — Low-Angle Chest Level):**
+        Trong `style.run` và `style.selfie`, điều chỉnh vị trí đặt máy:
+        *"The lens sits at the end of [Character]'s outstretched right arm, held at chest/mid-torso level angled slightly upward looking back at [Character]; this dynamic angle captures her face, her plunging low-cut cleavage, tiny waist, and long slender legs, emphasizing her tall statuesque height."*
+        Góc máy từ ngực/bụng hất nhẹ lên loại bỏ hiện tượng to đầu - ngắn chân, khoe trọn khe ngực và kéo dài đôi chân.
+      - **5. Nhúng đặc điểm thể hình trực tiếp vào chuyển động (Action-Segment Reinforcement):**
+        Trong từng phân đoạn `0-3s`, `3-6s`, lặp lại trực tiếp:
+        *"...her tall statuesque frame and long slender legs pumping powerfully through the snow; her exceptionally large, voluptuous full bust bounces with dramatic push-up cleavage prominently spilling out of the deep plunging neckline of her snug white silk slip dress; her tiny cinched waist and wide curvy hips accentuated..."*
+    - **Bằng chứng thực nghiệm:** H1 (`2f001786`) và H2 (`287f5bf5`) bản v9: góc máy hất nhẹ lên khoe trọn đôi chân dài miên man đang sải bước trong tuyết, khe ngực sâu push-up căng đầy bốc lửa trong chiếc váy lụa trắng xẻ sâu, điểm số AI Review Scorecard đạt 95.5 và 97.0 / 100.
+
+42. **BỘ TỨ NGUYÊN LÝ VẬT LÝ SINH TỒN & ĐIỂM MÙ QUANG HỌC POV VLOG (bài học H2 Ice Age 16,000 BC bản v10):**
+    
+    #### 1. Nguyên lý Động lượng & Quán tính cơ học ($p = m \cdot v$)
+    - **Lỗi AI thường gặp ("Nhìn giả như AI"):**
+      - Khi prompt mô tả: *"Nora lao mình nhảy xuống bờ sông trong khi tay vẫn giơ máy quay"*, AI sẽ hiểu theo kiểu phim hoạt hình hoặc video game: nhân vật bay lơ lửng giữa không trung (anti-gravity), cơ thể đơ cứng, không có trọng lực.
+    - **Vật lý con người thực tế:**
+      - Nora có khối lượng $m \approx 55\text{ kg}$, đang chạy nước rút với vận tốc $v \approx 6\text{ m/s}$ ➔ Động lượng $p = m \cdot v$ cực lớn.
+      - Khi gót giày vấp phải rãnh băng (hệ số ma sát $\mu \to 0$): Chân dừng/trượt đột ngột, nhưng phần thân trên mang toàn bộ quán tính lao về phía trước.
+      - Trọng tâm cơ thể (Center of Mass) vượt khỏi chân đế. Con người không thể bay, mà bắt buộc phải trải qua chuỗi phản xạ sinh học:
+        1. *Loạng choạng quán tính:* Chân bước vội 1–2 bước ngắn trong tuyệt vọng để cứu thăng bằng.
+        2. *Mất mômen xoắn:* Cánh tay tự do quơ loạn xạ trong không khí để tìm thăng bằng.
+        3. *Sụp đổ trọng lực:* Lực hấp dẫn $F_g = mg$ kéo sụp cơ thể, ngã đập mạnh hông và đầu gối xuống mặt băng tuyết với xung lực nén lún rõ rệt.
+
+    #### 2. Nguyên lý Tương phản Trọng tải trên Sườn dốc ($m_{\text{voi}} \gg m_{\text{người}}$)
+    - **Tại sao ngã trên mặt đất bằng phẳng là sai logic vật lý & sinh tồn?**
+      - Nếu ngã trên thảo nguyên bằng phẳng ngay trước mũi voi ma mút: Con voi 6 tấn với đà chạy khủng khiếp sẽ giẫm bẹp vlogger trong 0.5 giây! Cảnh quay trở nên hoàn toàn vô lý.
+    - **Vật lý địa hình sườn dốc bờ sông băng ($\theta \approx 45^\circ - 60^\circ$):**
+      - Bờ dốc sông băng là một mặt phẳng nghiêng có tuyết dày. Thành phần trọng lực dọc theo sườn dốc $F = mg\sin\theta$ thắng lực ma sát trượt của tuyết $F_{\text{friction}} = \mu mg\cos\theta$, biến cú ngã thành cú trượt cày dốc tuyết (Kinetic Slope Slide).
+    - **Sự tương phản trọng lượng quyết định sinh tử:**
+      - *Nora (55 kg):* Nhẹ, trượt cày trên lớp tuyết xốp dày xuống đáy thung lũng sông băng an toàn giống như vận động viên trượt tuyết (lớp tuyết đóng vai trò đệm giảm chấn hấp thụ động năng).
+      - *Voi ma mút (6.000 kg — gấp hơn 100 lần):* Khối lượng quá khủng khiếp khiến nó không thể lao xuống sườn dốc băng tuyết trơn trượt vì sẽ gây sạt lở tuyết, gãy chân hoặc lăn đè bẹp chính nó!
+      - ➔ **Chính định luật vật lý về trọng tải đã giải thích tại sao Nora sống sót và tại sao con voi ma mút bắt buộc phải phanh khựng lại trên đỉnh mép dốc!**
+
+    #### 3. Nguyên lý Động học Camera & Điểm mù Quang học (Optical Viewpoint)
+    - **Hiện tượng "Điện thoại ma" (Ghost Phone) dưới góc nhìn vật lý AI:**
+      - Khi trong prompt xuất hiện từ `phone`, `smartphone`, `screen`, `device`, `selfie stick` (ngay cả trong câu cấm *"she never drops the phone"*), model AI hiểu rằng có một vật thể vật lý 3D mang tên "chiếc điện thoại" cần xuất hiện trong khung hình. Thế là nó vẽ chiếc iPhone trên tay Nora và tự động đặt một camera thứ ba lùi ra xa để quay cảnh đó!
+    - **Vật lý quang học chân thực của POV Vlog:**
+      - Bản thân người xem đang nhìn **XUYÊN QUA ỐNG KÍNH MÁY QUAY**.
+      - Cánh tay phải giơ ra giữ ống kính, nghĩa là **thân máy và bàn tay cầm máy nằm ở PHÍA SAU MẶT PHẲNG TIÊU CỰ (Behind the focal plane / Off-screen)**, quang học tự nhiên không thể nào chụp được chính cái máy đang quay nó!
+      - **Đặc tả đúng kỹ thuật:**
+        `Handheld front-lens vlog footage, ultra-wide 0.5x lens, natural wide-angle handheld perspective. The lens sits at the end of [Character]'s outstretched right arm, held at chest level angled slightly upward; the camera lens itself and her right gripping hand are completely outside the visible frame and never seen; her free left hand is completely empty and flails naturally for balance.`
+      - **TUYỆT ĐỐI CẤM 100% các từ:** `phone`, `smartphone`, `screen`, `device`, `selfie stick` trong toàn bộ prompt.
+    - **Động học chấn động (Kinematic Shockwave):**
+      - Khi thân người đập xuống tuyết và trượt dốc, cánh tay có khớp vai và cơ bắp chịu chấn động gián tiếp: khung hình phải rung giật cực mạnh chúc xuống mặt tuyết (`rotational jolt & downward shockwave`), tuyết bột bắn tung tóe dính vào mặt kính thấu kính (`powder snow coats the lens glass`) làm mờ nhòe tự nhiên (whiteout transition).
+
+    #### 4. Nguyên lý Biến dạng Vật liệu & Triệt tiêu Động năng (Energy Dissipation)
+    - **Tuyết Kỷ Băng Hà không phải là mặt sàn bê tông cứng:**
+      - *Nứt nén bề mặt (Crust Fracture):* Khi gót chân vấp và thân người đập xuống, lớp váng băng mỏng trên bề mặt nứt vỡ rạn chân chim.
+      - *Bụi tuyết khí dung (Aerosolized Powder Snow):* Lực va chạm nén không khí, hất tung lớp tuyết bột xốp bên dưới thành đám mây bụi trắng xóa quanh người.
+      - *Rãnh ma sát (Frictional Furrow):* Cơ thể cày một vệt lõm sâu trên sườn dốc, ma sát tuyết triệt tiêu dần toàn bộ động năng $\frac{1}{2}mv^2 \to Q$ cho đến khi người dừng hẳn lại ở bãi tuyết chân dốc.
+
+    #### 5. Quy trình BẮT BUỘC: Prompt Self-Linter (Tự kiểm tra prompt sau khi viết xong)
+    - Sau khi soạn thảo bất kỳ prompt nào (trước khi lưu DB, `clips.json` hoặc gửi API gen media), Agent BẮT BUỘC phải chạy công cụ kiểm tra tự động (`python tools/lint_prompt.py`):
+      1. Quét regex cấm `\b(phone|smartphone|screen|device|selfie[- ]?stick)\b`. Nếu có, lập tức loại bỏ.
+      2. Kiểm tra câu điểm mù quang học (`off-screen`, `outside the visible frame`).
+      3. Kiểm tra vị trí `BODY LOCK` (phải đặt SỚM ngay sau `Shot:` trước `0-3s`).
+    - **Bằng chứng thực nghiệm:** H2 Ice Age 16,000 BC bản v10 loại bỏ 100% từ "phone", camera giữ góc POV selfie hoàn hảo, tuyết phủ mặt kính chuyển cảnh mượt mà, không còn bất kỳ chiếc điện thoại ma nào xuất hiện trong khung hình.
+
     > **Quy ước:** mỗi lỗi gen lặp lại được ghi thành MỘT bài học đánh số riêng ở đây, gồm root-cause, câu prompt sửa cụ thể và bằng chứng (clip nào, bản nào), để lần sau rút kinh nghiệm thay vì sửa lại từ đầu.
 
 **Nội dung**
