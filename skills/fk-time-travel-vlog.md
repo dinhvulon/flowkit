@@ -109,8 +109,8 @@ Gồm: mặt (tuổi, dáng mặt, mắt, tàn nhang/nốt ruồi), tóc (màu, 
    - **Rào cản AI & Lịch sử:** Model AI chỉ nhận 1 giọng nói (Slot 7 Laomedeia). Nếu gán thoại tiếng Anh cho nhân vật phụ (thợ săn, nông dân, thương nhân), AI sẽ lấy giọng Laomedeia phát ra từ miệng họ gây méo tiếng và vỡ khẩu hình. Hơn nữa, việc người tiền sử/cổ đại nói tiếng Anh lưu loát là phản khoa học và mất chất tài liệu.
    - **Quy tắc bắt buộc:**
      - Người bản địa giao tiếp bằng **cử chỉ tay, biểu cảm sống động, hiệu lệnh săn bắn hoặc cổ ngữ tự nhiên** trong prompt hành động. TUYỆT ĐỐI KHÔNG ghi thoại tiếng Anh cho nhân vật phụ.
-     - Vlogger lập tức xoay máy về phía mình (Selfie 0.5x hoặc handheld whip pan) và thuật lại trực tiếp cho người xem bằng giọng Vlogger (`Nora says: "He just warned me that...", "She says this is..."`).
-     - Triển khai bằng **Cặp Shot Kép** (Shot A: bản địa ra hiệu/cảnh báo ➔ Shot B: Vlogger quay máy phiên dịch) hoặc **Cú Lia Máy Nội Cảnh** (0-4s bản địa tương tác ➔ 4-6s lia máy 180° ➔ 6-10s Vlogger nếm/trải nghiệm và nói với khán giả).
+     - Vlogger thuật lại trực tiếp cho người xem bằng giọng Vlogger (`Nora says: "He just warned me that...", "She says this is..."`).
+     - Triển khai chuẩn (Single-Perspective Vlog Purity): Hoặc **100% Selfie Qua Vai (Over-the-Shoulder)** (Vlogger chiếm 1/3 tiền cảnh, bản địa ở 2/3 hậu cảnh, tương tác qua ánh mắt và quay đầu, KHÔNG xoay máy; xem Bài học 44 & Rule 42). Hoặc **Cặp Shot Kép** (Shot A: 100% POV Cam sau ➔ Cut sang Shot B: 100% Selfie Cam trước). TUYỆT ĐỐI CẤM cú lia máy 180° giữa cam trước và cam sau trong 1 shot liên tục.
 3. **Review 720p trước ➔ User duyệt ➔ Upscale 1080p & Xóa Logo sau**: Tải từng clip 720p về `${OUTDIR}/scenes/scene_{idx}_{sid}.mp4`. **Chưa cần xóa logo ở bước này** để tránh lãng phí thời gian encode. Trích xuất frames từ video 720p, chạy AI Review Scorecard và đưa lên Review Board (`http://localhost:8200`) cho người dùng review từng clip. **CHỈ KHI NGƯỜI DÙNG DUYỆT THÔNG QUA**: Gửi lệnh Upscale 1080p (`p0UkFb` / `veo_3_1_upsampler_1080p`), tải bản 1080p về folder riêng `${OUTDIR}/1080/scene_{idx}_{sid}_1080p.mp4`, rồi mới chạy `remove_watermark_video` trực tiếp trên bản 1080p (`${OUTDIR}/1080/scene_{idx}_{sid}_1080p_clean.mp4`) để đưa vào Concat cuối cùng.
 
 Mẫu (từ `prompt-templates.md` — thay giá trị, tên nhân vật do bạn đặt, rồi đóng băng):
@@ -670,17 +670,49 @@ Rút ra từ dự án `output/atlantis-9600bc/` (2026-09-27). Khi mâu thuẫn v
     #### 3. Quy tắc & Giải pháp Khắc phục Triệt để
     - **1. TUYỆT ĐỐI CẤM các shot quay từ sau đầu / sau lưng vlogger rồi xoay ra trước mặt:**
       - CẤM: `from just behind her head`, `from behind her back`, `over her shoulder from behind then turning`.
-    - **2. Kỹ thuật chuyển góc 2 pha chuẩn POV (Two-Phase POV Transition):**
-      - Nếu muốn quay cảnh vật / nhân vật phụ trước, rồi quay lại vlogger:
-        - *Pha 1 (0-3s) — First-Person POV 100%:* Nhìn xuyên qua mắt vlogger (`Seen directly through [Character]'s eyes at eye level looking forward at [Subject]`). Vlogger 100% ngoài khung hình, không thấy lưng, không thấy đầu, không thấy tay cầm máy.
-        - *Pha 2 (3-4s) — Cú lia máy Whip Pan 180°:* Xoay máy cực nhanh kèm motion blur mờ tự nhiên (`A rapid 180-degree handheld whip pan with heavy motion blur transitions the viewpoint`).
-        - *Pha 3 (4-10s) — Selfie POV thuần túy:* Dừng lại ở cận mặt vlogger (`Settles firmly on [Character]'s face in eye-level handheld selfie`). Cánh tay cầm máy nằm ngoài rìa/điểm mù tiêu cự, bàn tay tự do hoàn toàn trống không (`empty hand`).
+    - **2. Kỹ thuật Đơn góc nhìn thuần khiết (Single-Perspective Vlog Purity — THAY THẾ Whip Pan 180°):**
+      - *Lưu ý quan trọng (Đã lỗi thời):* Cú lia máy Whip Pan 180° trong 1 clip trước đây từng được thử nghiệm để loại bỏ đạo cụ máy ảnh ma, nhưng đã bị bãi bỏ vì gây cảm giác phi lý (quay cam trước lật cam sau thì mù màn hình, camera bay như có người thứ ba; xem chi tiết Bài học 44).
+      - **Giải pháp chuẩn:** Khi vlogger muốn tương tác với đối tượng phía sau hoặc cảnh vật:
+        - **Bản đề xuất 100% Selfie Tự Nhiên (Over-the-Shoulder Selfie Interaction):** Toàn bộ shot 8s–10s giữ 100% cam trước Selfie 0.5x. Vlogger ở 1/3 tiền cảnh, đối tượng ở 2/3 hậu cảnh. Tương tác qua ánh mắt và quay đầu, camera luôn cố định vào vlogger, loại bỏ hoàn toàn cảm giác xoay lật giả tạo.
+        - **Hoặc Cặp Shot Kép (Two Separate Shots):** Shot 1 (100% POV Cam sau) nhìn qua mắt vlogger ➔ Cắt cảnh (Cut) sang Shot 2 (100% Selfie Cam trước) vlogger nói chuyện. Không xoay 180° trong cùng 1 clip.
     - **3. Không bao giờ mô tả nhân vật "cầm/xoay the camera" như một vật thể:**
       - Thay câu *"she brings the camera around"* bằng *"she pivots her extended arm back toward herself"*.
       - Điểm nhìn người xem chính là thấu kính (`The viewer looks directly through the camera lens`).
     - **4. Tự động kiểm tra qua Prompt Self-Linter:**
       - Linter BẮT BUỘC quét và chặn các cụm từ: `behind (her|his|their) head`, `behind (her|his|their) back`, và cảnh báo hành động cầm nắm `camera` làm đạo cụ.
 
+44. **LỖI LẬT XOAY CAMERA 180° GIỮA CAM TRƯỚC & CAM SAU TRONG CÙNG MỘT SHOT (The 180° Camera Flip Fallacy & Single-Perspective Vlog Purity — Bài học Scene 04 Ice Age 16,000 BC bản v2):**
+    
+    #### 1. Hiện tượng lỗi thực tế
+    - Dù đã loại bỏ được chiếc máy ảnh/ống kính ma bằng kỹ thuật Whip Pan 180° (Two-Phase POV), nhưng khi xem video thực tế, người xem lập tức cảm thấy **vô lý, giả tạo và phi logic** khi camera đang quay góc nhìn thứ nhất (cam sau nhìn Torak ở 0-3s) rồi đột ngột xoay lật 180° chuyển sang góc selfie (cam trước ở 4-10s) trong cùng một shot 10 giây.
+    
+    #### 2. Root Cause (Nguyên nhân gốc rễ)
+    - **Nghịch lý công thái học điện thoại (Smartphone Ergonomics Fallacy):**
+      - Trong thực tế, khi cầm điện thoại quay vlog:
+        - Nếu bạn đang quay cam sau (quay người khác/cảnh vật), rồi lật ngược điện thoại 180° lại để tự quay mình, thì màn hình điện thoại sẽ quay ra phía trước! Người quay bị hoàn toàn mù màn hình, không thể nhìn thấy khung hình, biểu cảm hay kiểm tra người đứng sau lưng.
+        - Nếu dùng tính năng chuyển cam trên màn hình (flip camera button), ứng dụng luôn tạo ra một cú **CẮT CẢNH (Cut shot)**, chứ không bao giờ lia xoay vật lý 180° trong không gian.
+    - **Nghịch lý động học không gian (Spatial Kinematics & Fake Cameraman Feel):**
+      - Ở 3 giây đầu, điểm nhìn camera nằm ở ngang tầm mắt người quay (cam sau). Đến giây thứ 5, camera bỗng nhiên nằm ở trước mặt vlogger cách 60cm nhìn ngược lại.
+      - Cú xoay này đòi hỏi camera phải tự bay một vòng quỹ đạo bán kính lớn trong không khí, tạo cảm giác như **có một người quay phim thứ ba (cameraman cầm gimbal/flycam)** chạy vòng quanh vlogger, phá hủy hoàn toàn cảm giác "vlogger đơn độc tự cầm máy sinh tồn".
+    - **Gãy mạch thị giác (Visual Continuity Breakdown):**
+      - Scene 03 là góc Selfie cam trước. Scene 05 là góc Selfie cam trước. Việc Scene 04 bị chèn một đoạn cam sau rồi xoay lật làm vỡ nhịp điệu thị giác và tính nhất quán của chuỗi vlog.
+    
+    #### 3. Quy tắc Vàng: Đơn góc nhìn thuần khiết & Selfie qua vai (Single-Perspective Vlog Purity & Over-the-Shoulder Vlog Composition)
+    - **Quy tắc tuyệt đối: 1 SHOT = 1 GÓC NHÌN DUY NHẤT (Single Perspective per Shot):**
+      - Mỗi shot 8s–10s chỉ được chọn MỘT trong hai góc nhìn:
+        - Hoặc là **100% Selfie (Cam trước 0.5x)** từ đầu đến cuối clip.
+        - Hoặc là **100% First-Person POV (Cam sau)** từ đầu đến cuối clip.
+      - **TUYỆT ĐỐI CẤM** xoay lật 180° giữa cam trước và cam sau trong cùng một shot (`whip pan 180-degree ... turning to face`, `pivoting the viewpoint back`).
+    - **Kỹ thuật Vlog Selfie qua vai (Over-the-Shoulder Selfie Interaction):**
+      - Khi vlogger muốn giao tiếp hoặc phản ứng với một nhân vật phụ / sinh vật xuất hiện:
+        1. **Bố cục 1/3 tiền cảnh (Vlogger in Foreground 1/3):** Vlogger cầm máy ở góc selfie 0.5x (bên trái hoặc bên phải), chiếm 1/3 khung hình. Tay cầm máy nằm ngoài điểm mù (`outside the visible frame`).
+        2. **Nhân vật phụ ở 2/3 hậu cảnh (Subject in Background 2/3):** Nhân vật phụ (như Torak, thổ dân, quái thú) xuất hiện ở 2/3 khung hình còn lại, nhìn thấy rõ hành động bước tới, cử chỉ hoặc hiệu lệnh săn bắn ngay phía sau vai vlogger.
+        3. **Tương tác đa chiều bằng ánh mắt & quay đầu (Gaze & Head Turns, NOT Camera Flips):**
+           - Vlogger nói trực tiếp với khán giả qua ống kính: *"Okay, that's Torak. My name for him."*
+           - Vlogger khẽ quay đầu hoặc liếc mắt ra sau kiểm tra đối tượng khi đối tượng hành động (giơ tay dừng, giơ giáo): *"Hand flat, palm down, probably means stay. I stay."*
+           - Vlogger quay lại nhìn thẳng vào camera thể hiện cảm xúc chân thật (lo lắng, cười gượng, thì thầm): *"A stranger walking into a winter camp? I'd spear me too."*
+        ➔ Camera luôn neo cố định vào vlogger, chuyển động chỉ là rung lắc bước chân tự nhiên (`subtle hand shake / footfall bounce`), tạo cảm giác chân thực 100% như vlog YouTube/TikTok đời thực!
+    
     > **Quy ước:** mỗi lỗi gen lặp lại được ghi thành MỘT bài học đánh số riêng ở đây, gồm root-cause, câu prompt sửa cụ thể và bằng chứng (clip nào, bản nào), để lần sau rút kinh nghiệm thay vì sửa lại từ đầu.
 
 **Nội dung**

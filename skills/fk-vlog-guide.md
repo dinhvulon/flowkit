@@ -264,10 +264,10 @@ Nếu bạn muốn đóng vai Vlogger chính trong chuyến du hành thay vì đ
 > - **Rào cản:** Model video AI (Omni Flash `abra_r2v` / Veo 3) chỉ nhận 1 `voice_id` trong Slot 7 (`Laomedeia`). Nếu để nhân vật phụ (thợ săn, thương nhân, nông dân) nói thoại tiếng Anh, AI sẽ lấy chính giọng nữ Laomedeia phát ra từ miệng nhân vật phụ gây méo tiếng và vỡ khẩu hình. Hơn nữa, người tiền sử hay cổ đại nói tiếng Anh lưu loát sẽ phá nát tính tài liệu chân thực.
 > - **Quy tắc Translator POV (BẮT BUỘC):**
 >   1. **Người bản địa giao tiếp tự nhiên:** Nhân vật phụ dùng cử chỉ tay, biểu cảm sống động, hiệu lệnh săn bắn hoặc cổ ngữ tự nhiên (được AI xử lý như âm thanh môi trường). Trong prompt chỉ mô tả hành động và cảm xúc, **TUYỆT ĐỐI KHÔNG ghi thoại tiếng Anh cho nhân vật phụ**.
->   2. **Vlogger làm cầu nối phiên dịch:** Vlogger xoay máy về phía mình (Selfie 0.5x hoặc cú lia máy handheld whip pan) và thuật lại trực tiếp cho người xem bằng giọng Vlogger (`Nora says: "He says...", "She just told me that..."`).
->   3. **Hai cấu trúc triển khai:**
->      - **Cặp Shot Kép (Two-Shot Sequence):** Shot A (POV/Look-away) quay người bản địa ra hiệu/cảnh báo/chỉ cách làm ➔ Shot B (Selfie 0.5x) Vlogger quay máy lại thì thầm/giải thích cho khán giả.
->      - **Cú Lia Máy Nội Cảnh (Handheld Whip Pan trong 1 clip 8–10s):** `0–4s` quay người bản địa tương tác ➔ `4–6s` cú lia máy cầm tay 180° về phía Vlogger ➔ `6–10s` Vlogger nếm/trải nghiệm và phiên dịch cho khán giả.
+>   2. **Vlogger làm cầu nối phiên dịch:** Vlogger thuật lại trực tiếp cho người xem bằng giọng Vlogger (`Nora says: "He says...", "She just told me that..."`).
+>   3. **Hai cấu trúc triển khai chuẩn (Single-Perspective Vlog Purity):**
+>      - **100% Selfie Qua Vai (Over-the-Shoulder Selfie Interaction trong 1 clip 8–10s):** Vlogger cầm máy selfie góc rộng 0.5x ở 1/3 tiền cảnh, đối tượng ở 2/3 hậu cảnh phía sau vai. Tương tác tự nhiên qua việc Vlogger nói chuyện với camera, khẽ quay đầu/liếc mắt ra sau kiểm tra đối tượng, rồi quay lại máy thì thầm phản ứng. **TUYỆT ĐỐI KHÔNG xoay lật 180° camera trong cùng 1 clip**.
+>      - **Cặp Shot Kép (Two Separate Cuts):** Shot A (100% POV Cam sau) quay người bản địa ra hiệu/cảnh báo ➔ Cut sang Shot B (100% Selfie Cam trước) Vlogger thì thầm/phiên dịch cho khán giả. Không dùng cú lia máy 180° giả tạo trong 1 shot.
 
 ---
 

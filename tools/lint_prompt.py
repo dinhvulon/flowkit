@@ -14,9 +14,10 @@ FORBIDDEN_GHOST_DEVICE_PATTERNS = [
     (r"\b(device)\b", "FORBIDDEN: Mentioning 'device' causes AI to render gadgets or screens."),
     (r"(?<!off-)\bscreen\b", "FORBIDDEN: Mentioning 'screen' (except 'off-screen') may cause AI to render a phone or monitor screen. Use 'in the frame' instead."),
     (r"\bnegative:\b", "FORBIDDEN: 'Negative:' lines are banned by repo rules. Use plain constraint sentences in prompt body."),
-    (r"\b(?:starts?\s+(?:from\s+)?(?:just\s+)?behind|from\s+just\s+behind)\s+(?:her|his|their)\s+(?:head|back)\b", "FORBIDDEN (Rule 41): Starting behind character's head/back and turning around switches to 3rd-person and causes AI to render a physical camera/lens in hand (Camera Materialization Glitch). Use pure 1st-person POV -> 180° whip pan -> Selfie."),
+    (r"\b(?:starts?\s+(?:from\s+)?(?:just\s+)?behind|from\s+just\s+behind)\s+(?:her|his|their)\s+(?:head|back)\b", "FORBIDDEN (Rule 41): Starting behind character's head/back and turning around switches to 3rd-person and causes AI to render a physical camera/lens in hand (Camera Materialization Glitch)."),
     (r"\b(?:brings?|turns?)\s+the\s+camera\s+around\s+(?:her|his|their)\s+side\b", "FORBIDDEN (Rule 41): 'brings the camera around' causes AI to treat camera as a physical handheld prop/lens. Use 'pivots extended arm back toward herself'."),
     (r"\bholds?\s+the\s+camera\s+in\s+(?:her|his|their)\s+hand\b", "FORBIDDEN (Rule 41): Camera must NOT be described as an object held in hand. The viewer looks directly through the lens; gripping hand is off-screen."),
+    (r"\b(?:180-degree|180\s*deg|whip\s+pan|pivoting\s+the\s+viewpoint)\b.*\b(?:turning\s+to\s+face|turning\s+around\s+to\s+face|settles?\s+.*selfie|back\s+toward\s+(?:nora|her|him|herself|himself))\b", "FORBIDDEN (Rule 42): 180° camera flip between 1st-person POV and selfie in a single shot breaks single-perspective vlog purity. Use 100% Selfie (over-the-shoulder) or 100% POV."),
 ]
 
 def lint_prompt(prompt: str) -> list[dict]:

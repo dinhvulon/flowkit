@@ -9,7 +9,7 @@ Reference for writing video prompts optimized for Google Veo 3. Veo 3 generates 
 - **Camera movement:** Always a **separate sentence** — never embed in action description
 - **Audio:** Always describe at end of prompt with `Audio:`, `SFX:`, `Music:` labels
 - **Constraints (this repo's rule, from user feedback):** do NOT append a `Negative:` keyword list — it proved ineffective (a phone kept appearing even when listed). Write each constraint as a plain sentence in the prompt body instead, e.g. `No subtitles or text appear in the frame.` / `Her free hand is empty, and the view comes from her own outstretched arm.` Never name the device (no `phone`, `smartphone`, `screen`, `selfie stick`), not even to forbid it — naming it makes the model draw it. See `/fk-time-travel-vlog` section 11. The `Negative:` examples further down are kept only as the generic Veo reference.
-- **POV Purity & No Behind-Head Shots (CRITICAL):** NEVER shoot from behind the vlogger's head/back looking forward and then turn around to face them (`starts behind head then turns`). This forces AI into third-person view where the character's hand is depicted holding a physical camera or detached lens (Camera Materialization Glitch). Use pure First-Person POV (`Seen directly through character's eyes, character completely off-screen`) -> 180° whip pan -> Selfie POV (`view comes directly through camera lens at arm's length, gripping hand off-screen and free hand empty`).
+- **POV Purity & Single-Perspective (CRITICAL):** NEVER shoot from behind the vlogger's head/back looking forward and then turn around to face them (`starts behind head then turns`), and NEVER execute a 180° whip-pan between front and back camera within a single shot (breaks realism, feels like a flying drone). Maintain **1 Shot = 1 Perspective**: either **100% Selfie Over-the-Shoulder** (vlogger in foreground 1/3, background subject in 2/3, interacting via gaze/head turns, gripping hand off-screen and free hand empty) OR **100% First-Person POV** (`Seen directly through character's eyes, character completely off-screen`). If both are needed, use two separate cut shots.
 
 ### 5-Component Structure
 
@@ -372,6 +372,10 @@ Layer 5: Camera Dynamic Response (Độ nảy dọc theo bước chân, độ tr
    - Cơ học nứt gãy: đập xương tạo các vết nứt lan tỏa từ điểm va chạm (`cracks radiate from impact point`) rồi mảng yếu mới vỡ toác.
    - Biến dạng bề mặt: Da thú cong nhẹ dưới lực kim khâu (`hide flexes slightly around needle`), màng da trống rung nảy rõ rệt theo từng nhịp gõ (`drum membrane visibly flexes with each strike`).
    - Khí động học: Hơi thở trong giá lạnh tan nhanh trong không khí (`dense short-lived breath vapor that dissipates rapidly`), khói bốc theo đối lưu nhiệt và bị gió lạnh làm xáo trộn, tàn lửa bay theo dòng khí nóng rồi nguội dần và tắt.
+5. **Đơn góc nhìn thuần khiết & Vlog Selfie qua vai (Single-Perspective Vlog Purity — Rule 42):**
+   - Trong vlog thực tế, không bao giờ lật xoay 180° camera giữa cam trước (selfie) và cam sau (POV) trong cùng một shot đang quay. Cú xoay lật 180° khiến camera tự bay vòng quanh nhân vật như có người quay phim thứ 3 cầm gimbal, phá vỡ hoàn toàn chất chân thực đơn độc.
+   - **Quy tắc:** 1 Shot = 1 Góc nhìn duy nhất (hoặc 100% Selfie 0.5x, hoặc 100% First-Person POV).
+   - **Tương tác với nhân vật phụ / bối cảnh:** Dùng bố cục Selfie qua vai (`Over-the-Shoulder Selfie`): Vlogger ở 1/3 tiền cảnh một bên, đối tượng xuất hiện ở 2/3 hậu cảnh phía sau vai. Tương tác bằng ánh mắt và cử động khẽ liếc/quay đầu kiểm tra (`turns her head slightly to look back over her shoulder at [Subject]`), rồi quay lại nói thẳng vào thấu kính.
 
 ## Quality Checklist
 
