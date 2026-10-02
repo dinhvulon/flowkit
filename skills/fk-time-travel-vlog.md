@@ -713,6 +713,23 @@ Rút ra từ dự án `output/atlantis-9600bc/` (2026-09-27). Khi mâu thuẫn v
            - Vlogger quay lại nhìn thẳng vào camera thể hiện cảm xúc chân thật (lo lắng, cười gượng, thì thầm): *"A stranger walking into a winter camp? I'd spear me too."*
         ➔ Camera luôn neo cố định vào vlogger, chuyển động chỉ là rung lắc bước chân tự nhiên (`subtle hand shake / footfall bounce`), tạo cảm giác chân thực 100% như vlog YouTube/TikTok đời thực!
     
+45. **LỖI GÃY MẠCH TƯ THẾ ĐẦU KHI CẮT NỐI HAI SHOT & KỸ THUẬT KHỚP ĐỘNG TÁC (The Inter-Scene Posture Snap & Head-Turn Match Continuity — Bài học Scene 03 -> Scene 04 Ice Age 16,000 BC):**
+    
+    #### 1. Hiện tượng lỗi thực tế
+    - Scene 03 kết thúc ở 5-6s: Nora quay ngoắt đầu sang phải nhìn lều xương voi Mezhyrich (`At 5s she turns her head to look back at the camp, so the back of her head and ponytail fill half the frame`).
+    - Nhưng Scene 04 mở đầu ở 0-3s: Prompt lại mô tả ngay Nora cầm máy nhìn thẳng vào ống kính camera thì thầm (`Nora holds the camera firmly in front-facing selfie at arm's length; she glances directly into the lens whispering nervously`).
+    - **Hậu quả**: Khi nối Scene 03 và Scene 04, đầu của Nora bị giật 90 độ ngay lập tức từ quay gáy sang nhìn chính diện (Spatial Snap / Disorienting Jump Cut). Khán giả cảm thấy video bị sượng, đứt gãy mạch chuyển động và mất tính liên tục.
+    
+    #### 2. Root Cause (Nguyên nhân gốc rễ)
+    - Do mỗi clip AI diffusion sinh độc lập, AI không có bộ nhớ tư thế khung hình cuối của clip trước. Nếu prompt của clip B không neo rõ tư thế mở đầu khớp với tư thế kết thúc của clip A, AI sẽ tự động sinh nhân vật ở tư thế cơ bản (đứng thẳng nhìn vào camera).
+    - Cắt giữa 2 shot cùng cự ly (Medium Close-Up Selfie) mà tư thế đầu bị nhảy đột ngột là vi phạm quy tắc 30 độ trong dựng phim.
+    
+    #### 3. Quy tắc Vàng: Khớp Động Tác Liền Mạch (Match on Action / Head-Turn Continuity)
+    - **Quy tắc bắt buộc khi nối 2 shot liền kề:**
+      1. **Neo tư thế mở đầu ở 0-1s / 0-2s**: Clip B BẮT BUỘC phải mở đầu ở đúng tư thế kết thúc của Clip A (`0-2s: Matching the previous scene's ending, the clip opens with [Character]'s head turned looking back over her shoulder toward [Object]...`).
+      2. **Thực hiện động tác chuyển đổi in-camera**: Trong chính 1-2 giây đầu của Clip B, mô tả nhân vật phát hiện đối tượng hoặc nghe thấy tiếng động, sau đó mới xoay mặt lại nhìn vào ống kính camera (`Seeing him emerge, her eyes widen and she smoothly turns her head back around to face directly into the camera lens`).
+      3. **Tác dụng kỳ diệu**: Mối nối giữa Clip A và Clip B trở thành một cú cắt **Match on Action**. Khán giả nhìn thấy động tác quay đầu diễn ra mượt mà và tự nhiên, hoàn toàn triệt tiêu cảm giác giật hình (jump cut) của AI!
+    
     > **Quy ước:** mỗi lỗi gen lặp lại được ghi thành MỘT bài học đánh số riêng ở đây, gồm root-cause, câu prompt sửa cụ thể và bằng chứng (clip nào, bản nào), để lần sau rút kinh nghiệm thay vì sửa lại từ đầu.
 
 **Nội dung**
