@@ -651,6 +651,36 @@ Rút ra từ dự án `output/atlantis-9600bc/` (2026-09-27). Khi mâu thuẫn v
       3. Kiểm tra vị trí `BODY LOCK` (phải đặt SỚM ngay sau `Shot:` trước `0-3s`).
     - **Bằng chứng thực nghiệm:** H2 Ice Age 16,000 BC bản v10 loại bỏ 100% từ "phone", camera giữ góc POV selfie hoàn hảo, tuyết phủ mặt kính chuyển cảnh mượt mà, không còn bất kỳ chiếc điện thoại ma nào xuất hiện trong khung hình.
 
+43. **LỖI "VẬT THỂ HÓA MÁY ẢNH" & XUNG ĐỘT GÓC NHÌN NGƯỜI THỨ BA (Camera Prop Glitch & Third-Person POV Conflict — Bài học Scene 04 Ice Age 16,000 BC):**
+    
+    #### 1. Hiện tượng lỗi thực tế
+    - Trong Scene 04 của Ice Age 16,000 BC, ở giây thứ 1, AI vẽ Nora đứng quay lưng lại, trên tay cầm một chiếc **máy ảnh compact kỹ thuật số có màn hình LCD** chĩa vào thợ săn Torak. Đến giây thứ 5 khi cô xoay tay lại để selfie, chiếc máy ảnh biến dạng thành một **ống kính máy ảnh rời (DSLR Lens)** to đùng trên tay Nora giơ ra trước mặt khán giả.
+    
+    #### 2. Root Cause (Nguyên nhân gốc rễ)
+    - **Xung đột góc nhìn chết người (Third-Person vs POV):**
+      - Prompt mô tả: *"Handheld vlog footage that starts from Nora's raised hand just behind her head and then turns around to face her... Shot: From just behind Nora's head, then turning around to a selfie."*
+      - Khi camera đặt ở phía sau đầu / sau lưng vlogger nhìn tới (`from just behind Nora's head`), đây là **GÓC NHÌN NGƯỜI THỨ BA (Third-person spectator)**. Khán giả đứng ngoài nhìn thấy toàn bộ lưng và cánh tay của Nora.
+      - AI model lập luận logic: *"Người xem đang đứng sau lưng quay cảnh Nora và Torak, vậy vật thể mà tay Nora đang giơ lên là cái gì?"* ➔ AI bắt buộc phải vật thể hóa thành một **chiếc máy ảnh kỹ thuật số (Compact Camera / LCD screen)** trong tay nhân vật!
+    - **Lỗi ngữ nghĩa từ "Camera" như một Đạo cụ (Prop):**
+      - Mặc dù đã cấm `phone/smartphone`, prompt lại dùng từ `camera` tới 5 lần như tân ngữ của hành động: *"starts from Nora's raised hand... Nora slowly brings the camera around... she never lets go of the camera..."*.
+      - Trong góc nhìn người thứ ba, AI hiểu "the camera" là một **đạo cụ vật lý (prop)** cầm tay chứ không phải ống kính của chính người xem. Khi Nora xoay tay lại, AI tiếp tục giữ góc nhìn người xem ở ngoài và vẽ một **ống kính máy ảnh rời (DSLR Lens)** trong tay Nora!
+    - **AI Video không thể tự "chui vào mắt" vlogger:**
+      - AI diffusion model không thể chuyển đổi mượt mà giữa camera thứ 3 (sau lưng) và camera thứ 1 (POV cầm tay) trong cùng một chuỗi khung hình liên tục mà không sinh ra thiết bị quay thứ hai.
+
+    #### 3. Quy tắc & Giải pháp Khắc phục Triệt để
+    - **1. TUYỆT ĐỐI CẤM các shot quay từ sau đầu / sau lưng vlogger rồi xoay ra trước mặt:**
+      - CẤM: `from just behind her head`, `from behind her back`, `over her shoulder from behind then turning`.
+    - **2. Kỹ thuật chuyển góc 2 pha chuẩn POV (Two-Phase POV Transition):**
+      - Nếu muốn quay cảnh vật / nhân vật phụ trước, rồi quay lại vlogger:
+        - *Pha 1 (0-3s) — First-Person POV 100%:* Nhìn xuyên qua mắt vlogger (`Seen directly through [Character]'s eyes at eye level looking forward at [Subject]`). Vlogger 100% ngoài khung hình, không thấy lưng, không thấy đầu, không thấy tay cầm máy.
+        - *Pha 2 (3-4s) — Cú lia máy Whip Pan 180°:* Xoay máy cực nhanh kèm motion blur mờ tự nhiên (`A rapid 180-degree handheld whip pan with heavy motion blur transitions the viewpoint`).
+        - *Pha 3 (4-10s) — Selfie POV thuần túy:* Dừng lại ở cận mặt vlogger (`Settles firmly on [Character]'s face in eye-level handheld selfie`). Cánh tay cầm máy nằm ngoài rìa/điểm mù tiêu cự, bàn tay tự do hoàn toàn trống không (`empty hand`).
+    - **3. Không bao giờ mô tả nhân vật "cầm/xoay the camera" như một vật thể:**
+      - Thay câu *"she brings the camera around"* bằng *"she pivots her extended arm back toward herself"*.
+      - Điểm nhìn người xem chính là thấu kính (`The viewer looks directly through the camera lens`).
+    - **4. Tự động kiểm tra qua Prompt Self-Linter:**
+      - Linter BẮT BUỘC quét và chặn các cụm từ: `behind (her|his|their) head`, `behind (her|his|their) back`, và cảnh báo hành động cầm nắm `camera` làm đạo cụ.
+
     > **Quy ước:** mỗi lỗi gen lặp lại được ghi thành MỘT bài học đánh số riêng ở đây, gồm root-cause, câu prompt sửa cụ thể và bằng chứng (clip nào, bản nào), để lần sau rút kinh nghiệm thay vì sửa lại từ đầu.
 
 **Nội dung**
