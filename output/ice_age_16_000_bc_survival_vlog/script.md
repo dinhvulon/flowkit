@@ -1,7 +1,7 @@
 # I Survived 24 Hours in an Ice Age Mammoth-Bone Camp — kịch bản
 
 Skill: `/fk-time-travel-vlog` (Survival Preset §5c, voice-bible, §11). Project FlowKit `936c9ec4-5095-43a7-822c-85ede814370a` (tạo lại 01/10/2026).
-Trạng thái: **mục 1–6 xong, bản 52 clip (sửa 2026-10-01: chia lại thoại theo đoạn, rút S36 và S44 xuống 8s, thêm 4 clip S12, S17, S39, S49).** Project FlowKit ở trên không còn trên server; cần tạo lại project và scene trước khi sinh video. Chờ user duyệt trước khi sinh (quy tắc 29).
+Trạng thái: **mục 1–6 xong, bản 65 clip chuẩn 7 hồi (cập nhật 2026-10-03: chuẩn hóa 65 cảnh 8s, sửa toàn diện 🔴/🟠/🟡, giải quyết triệt để spoiler H2, vật lý seated glissade, open loop, và mitten payoff).** Project FlowKit ở trên không còn trên server; cần tạo lại project và scene trước khi sinh video. Chờ user duyệt trước khi sinh (quy tắc 29).
 
 ---
 
@@ -9,7 +9,7 @@ Trạng thái: **mục 1–6 xong, bản 52 clip (sửa 2026-10-01: chia lại t
 
 - **Nơi, năm:** Mezhyrich (Межиріч), tỉnh Cherkasy, Ukraine, trên thềm sông chỗ sông Rosava gặp sông Ros, lưu vực trung Dnieper. Khoảng **16.000 BC (~18.000 năm trước)**. Dwelling lớn nhất (MBS 4) có niên đại 18.248–17.764 cal BP, thuộc pha khắc nghiệt nhất của Kỷ Băng Hà cuối.
 - **Mùa và ánh sáng:** cuối đông (khoảng tháng 3), ngày dài ~12 giờ. Giờ 0 là lúc trời vừa sáng, cao trào rơi vào hoàng hôn, hồi Di sản diễn ra ban đêm, Giờ 24 là bình minh hôm sau.
-- **Độ dài:** 52 clip, tổng khoảng 8:22. 45 clip dài 10s; 5 clip 8s (3 ở cao trào, cộng S36 và S44 đã rút gọn) và 2 clip 6s để tăng nhịp.
+- **Độ dài:** 65 clip, tổng 8:40 (520 giây). 65 clip chuẩn 8s đồng đều cho Veo 3 / Omni Flash R2V để tăng nhịp.
 - **Khung và chất liệu:** HORIZONTAL 16:9, material `phone_vlog`. R2V qua Omni Flash Ingredients (`GENERATE_VIDEO_REFS`), mỗi clip tối đa 3 ref và luôn có Nora.
 - **Preset:** Survival Preset (§5c), đồng hồ 24 giờ. Nora là nhà khảo cổ có kỹ năng sinh tồn. Người bản địa không nói tiếng Anh (Translator POV), chỉ Nora có giọng.
 
@@ -124,6 +124,8 @@ local tricks from them and translates → after the climax she's part of the gro
 | S47 | Eliseevichi-1 (~17.000 BP, phía bắc): Sablin & Khlopachev gọi các sọ là "chó Kỷ Băng Hà", nghiên cứu hình thái 3D cho là sói | ⚠️ | Sablin & Khlopachev 2002; Drake et al. 2015 |
 | S49 | Trời quang làm đêm lạnh hơn vì nhiệt bức xạ đi. Do tuế sai, khoảng 18.000 năm trước cực Bắc thiên cầu nằm gần sao Deneb, không phải Polaris | ✅ | Wikipedia "Pole star"; Wikipedia "Vega"; Space.com (precession) |
 | S52 | Nhiệt độ trung bình năm ở Ukraine thời LGM khoảng −6°C, đất đóng băng vĩnh cửu liên tục. Không có số tháng 1 nên thoại **không nói con số nhiệt độ** | ✅ | Tái dựng cổ khí hậu LGM Đông Âu |
+| S58A (mới) | Run rẩy là phản xạ tự động: cơ xương đốt nhiên liệu để sinh nhiệt. Khi thân nhiệt tiếp tục giảm, cơn run có thể ngừng, là dấu hiệu hạ thân nhiệt nặng hơn | ✅ | Mayo Clinic "Hypothermia: Symptoms & causes"; PMC3980658 (shivering thermogenesis) |
+| S08A, S12A, S13A, S15A, S20A, S25A, S49A, S50A, S51A (mới) | Dùng lại các dòng đã có nguồn: niên đại Leiden 2025 (S01–02, S08); lạnh làm tăng tiểu tiện (S12); end-scraper (S17); kích thước nhà và hố (S02); frostnip (S04–05); chân lạnh (S39); kim có lỗ (S44–42); hàng hạt Sungir (S16); trao đổi vỏ ốc (S43) | ✅ / ⚠️ | Xem các dòng tương ứng ở trên |
 
 **Không dùng:** số calo, nhiệt độ chính xác, "phổi đóng băng", hoại tử trong vài phút, "8.000 calo", tai voi ma mút xòe, giáo chặn voi bằng sức người.
 
