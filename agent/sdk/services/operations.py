@@ -391,24 +391,26 @@ class OperationService:
             ref_ids.append(end_id)
             seen.add(end_id)
 
-        # 2-3. Entities by priority: visual_asset first, then character
+        # 2-3. Entities strictly ordered by scene character_names (Rule 38: [Face] -> [Body] -> [Outfit])
         if char_names_raw and len(ref_ids) < _R2V_MAX_REFS:
             project_entities = await crud.get_project_characters(pid)
             char_names_set = set(char_names_raw)
             char_order = {name.strip().lower(): i for i, name in enumerate(char_names_raw)}
-            for etype in _R2V_ENTITY_PRIORITY:
-                matched = [c for c in project_entities if _char_matches(c, char_names_set) and c.get("entity_type") == etype]
-                matched.sort(key=lambda c: char_order.get((c.get("name") or "").strip().lower(), 999))
-                for c in matched:
-                    if len(ref_ids) >= _R2V_MAX_REFS:
-                        break
-                    mid = c.get("media_id")
-                    if mid and mid not in seen:
-                        ref_ids.append(mid)
-                        seen.add(mid)
-                        ref_names_r2v.append(c.get("name", ""))
-                        if c.get("reference_image_url"):
-                            ref_urls.append(c["reference_image_url"])
+            matched = [c for c in project_entities if _char_matches(c, char_names_set)]
+            matched.sort(key=lambda c: char_order.get(
+                (c.get("name") or "").strip().lower(),
+                char_order.get((c.get("slug") or "").strip().lower(), 999)
+            ))
+            for c in matched:
+                if len(ref_ids) >= _R2V_MAX_REFS:
+                    break
+                mid = c.get("media_id")
+                if mid and mid not in seen:
+                    ref_ids.append(mid)
+                    seen.add(mid)
+                    ref_names_r2v.append(c.get("name", ""))
+                    if c.get("reference_image_url"):
+                        ref_urls.append(c["reference_image_url"])
 
         # Fallback: if no character/asset found, allow any project character/asset
         if not ref_ids:

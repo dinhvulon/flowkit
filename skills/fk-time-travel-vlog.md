@@ -755,6 +755,44 @@ Rút ra từ dự án `output/atlantis-9600bc/` (2026-09-27). Khi mâu thuẫn v
         - **Cố định phụ kiện:** Sau khi đã xỏ găng/mặc đồ xong, mới mô tả thao tác khóa dây: *"Alva fastens and snugs the soft hide wrist-cord tied around Nora's left wrist so the mitten cannot slip off."*
         - **Phản ứng tương tác tự nhiên:** Vlogger giơ bàn tay đã mặc đồ lên ngang ngực (giữ khoảng cách an toàn với camera) để khoe với người xem: *"Nora lifts her left hand—now wearing the thick fur mitten—up to chest level to display the warm mitten clearly to the camera, flexing her mittened fingers."*
 
+47. **OUTFIT DRIFT, SAI KIỂU TÓC & CÔNG THỨC KHÓA NHẬN DIỆN VỚI ẢNH MANNEQUIN TRONG R2V (Omni Flash / Veo 3 — Bài học Scene 00 H1 Ice Age 16,000 BC bản Test 1-4):**
+    
+    #### 1. Hiện tượng lỗi thực tế qua các vòng Test
+    - **Test 1**: Mô tả sơ sài/thiếu chuẩn xác khiến vlogger biến thành mặc váy ngắn hiện đại (mini dress) lộ đùi trần giữa bão tuyết, kèm theo chiếc máy ảnh DSLR trên gimbal xuất hiện góc phải khung hình.
+    - **Test 2**: Dù đã loại sạch từ khoá camera để hết máy ảnh ma, nhưng do **xoá trắng mô tả trang phục và tóc trong prompt** (chỉ để câu logic trơ trọi `"wearing the exact outfit from reference image"`), kết hợp việc gửi kèm ref `Nora Body` (ảnh mặc đồ gym: áo tank top sát nách và quần đùi đen lộ da thịt trần). Kết quả: Vlogger biến thành người tiền sử cởi trần mặc áo da thú thô màu nâu rách rưới, tóc nâu bù xù xoã tự do, mất sạch kiểu tóc đuôi ngựa vàng và mất đầm trắng may đo!
+    - **Test 3**: Đổi sang dùng ảnh crop nhân vật `nora_outfit_crop_clean.jpg`. Đã khóa được màu trắng và tóc đuôi ngựa, nhưng thiếu mất cổ áo mũ trùm lông cáo tuyết dày bản lớn và đai răng xương đặc trưng của trang phục ma-nơ-canh `nora_outfit_clean.jpg`.
+    - **Test 4 (Chuẩn xác 100%)**: Dùng đúng ảnh ma-nơ-canh 3 góc `nora_outfit_clean.jpg`, loại bỏ hoàn toàn `Nora Body`, và viết khối `IDENTITY & OUTFIT LOCK` neo chính xác từng chi tiết (mũ trùm lông cổ vai to bản, dây đan ngực chéo, thắt lưng nẹp răng xương, bo viền lông cổ tay, tóc đuôi ngựa vàng cột cao có mái bay). ➔ Kết quả: Đạt chuẩn 100% cả tóc lẫn outfit.
+
+    #### 2. Root Cause (Nguyên nhân gốc rễ)
+    1. **Nhiễm da thịt trần từ ảnh Body gym (`Body Latent Contamination`):**
+       - Khi đưa entity `<Vlogger> Body` (vốn mặc đồ tập gym ngắn áo tank top + quần đùi lộ da tay chân) vào cùng danh sách `character_names` với `<Vlogger> Outfit` trong bối cảnh mùa đông/tiền sử, model R2V bị nhiễm latent tay chân trần từ ảnh body. Khi kết hợp với bối cảnh "Ice Age 16,000 BC", AI tự động biến thành áo da thú cộc tay cởi trần kiểu người tiền sử generic!
+    2. **Cái bẫy "Xoá sạch mô tả outfit" (`The Empty Prompt Trap`):**
+       - Diffusion model hoạt động bằng cơ chế liên kết chéo (Cross-Attention) giữa text embeddings và image latents. Nó KHÔNG hiểu câu lệnh trỏ logic thuần tuý: `"wearing the exact outfit from reference image"`.
+       - Nếu trong prompt không có các từ neo thị giác (`honey-blonde hair tied in a high wavy ponytail with curtain bangs`, `cream-white reindeer suede dress`, `fluffy white fur hood and collar`, `criss-cross leather ties`), thì các từ khoá bối cảnh thời kỳ (`Ice Age 16,000 BC mammoth steppe`) sẽ chiếm 100% trọng số attention, ép nhân vật ra kiểu tóc bù xù xoã ngang vai và áo da thú cởi trần nguyên thủy.
+    3. **Hiện tượng loãng trọng số Ma-nơ-canh (`Mannequin Attention Dilution`):**
+       - Ảnh ma-nơ-canh không đầu trên nền trung tính rất tốt để AI học cấu trúc 3D của trang phục, NHƯNG nếu có quá nhiều ref (ví dụ 5 ref gồm cả Body, Location, Creature) hoặc thiếu text anchor, model sẽ bỏ qua ma-nơ-canh vì nó không phải là con người.
+       - Khi tinh gọn ref còn đúng 3 ref cốt lõi `[<Vlogger>, <Vlogger> Outfit, Creature]` và có text anchor mạnh mẽ, model ánh xạ chính xác 100% bộ đầm từ ma-nơ-canh lên thân hình vlogger!
+
+    #### 3. Quy tắc Vàng: Công thức Khóa Nhận diện Tóc & Outfit chuẩn 100%
+    1. **Bộ Reference tối ưu (Tối đa 3 Ref cho cảnh Vlogger):**
+       - Khóa chuẩn: `[<Vlogger>, <Vlogger> Outfit, <Creature/Asset>]`.
+       - **BẮT BUỘC LOẠI BỎ `<Vlogger> Body`** đối với mọi cảnh nhân vật mặc trang phục mùa đông/may đo dài tay kín đáo. Chỉ dùng ảnh Body khi nhân vật mặc đồ bơi, đồ lót hoặc trang phục mùa hè lộ đường cong cơ thể.
+       - **Entity `<Vlogger> Outfit`** liên kết chuẩn với file ma-nơ-canh 3 góc đã làm sạch watermark (như `nora_outfit_clean.jpg`).
+    2. **Khối cấu trúc Prompt `IDENTITY & OUTFIT LOCK` bắt buộc (Đưa lên vị trí SỚM ngay sau `Shot:` trước `0-3s`):**
+       ```text
+       IDENTITY & OUTFIT LOCK (CRITICAL -- match reference images exactly):
+       [Character] has [hair color] hair tied in a [exact hairstyle, e.g. high wavy ponytail with curtain bangs framing her face], [eye color] eyes, and fair skin with natural pink flush. Her high blonde ponytail bounces energetically with each running stride.
+       [Character] wears the exact outfit from the [Character] Outfit reference ([outfit_ref_name]): a tailored cream-white reindeer suede dress with a large fluffy white arctic-fox fur hood and collar framing a plunging laced V-neckline, long sleeves with thick white fur cuffs, a wide tan belt sewn with vertical bone teeth at her waist, thick white fur trim at the mid-thigh hem, cream hide leggings, and knee-high boots with white fur cuff trim.
+       This outfit is WHITE/CREAM throughout -- NOT dark, NOT brown, NOT a caveman fur pelt, NOT sleeveless, NOT bare legs, NOT loose unkempt hair, NOT modern clothing.
+       ```
+    3. **Gia cố chi tiết trong từng phân đoạn hành động (Action Sub-clips):**
+       - Phân đoạn `0-3s`: Nhắc lại chuyển động tóc và tay áo (`her blonde high ponytail bouncing with her desperate survival momentum; her cream suede sleeves with thick white fur cuffs pump powerfully in rhythm; her wide tooth-studded belt and fur collar flutter in the freezing wind`).
+       - Phân đoạn `3-6s`: Nhắc lại tà váy và bo lông (`her white fur-trimmed dress and fur cuffs flutter in the freezing wind`).
+    4. **Duy trì không vết tích thiết bị quay (No Ghost Devices):**
+       - Tuân thủ Bài học 40, 42: hoàn toàn không xuất hiện từ `phone`, `smartphone`, `screen`, `device`, `gimbal`, `selfie stick`. Dùng góc nhìn `Handheld front-facing running vlog POV footage, ultra-wide 0.5x view, natural wide-angle perspective`.
+    5. **Bằng chứng thực nghiệm:**
+       - Scene 00 H1 Ice Age 16,000 BC bản Test 4 (`bfb7ba56-a131-45ae-8612-d2c5fa4528c1`) thể hiện chuẩn xác 100% bộ đầm may đo da tuần lộc trắng kem với cổ áo mũ trùm lông cáo tuyết dày to bản, đan dây ngực chéo, đai răng xương, bo lông gấu áo, kiểu tóc đuôi ngựa vàng cột cao có mái bay, động tác chạy nổ tuyết chân thực, không có thiết bị ma.
+
     > **Quy ước:** mỗi lỗi gen lặp lại được ghi thành MỘT bài học đánh số riêng ở đây, gồm root-cause, câu prompt sửa cụ thể và bằng chứng (clip nào, bản nào), để lần sau rút kinh nghiệm thay vì sửa lại từ đầu.
 
 **Nội dung**
