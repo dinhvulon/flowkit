@@ -43,6 +43,10 @@ Gồm: mặt (tuổi, dáng mặt, mắt, tàn nhang/nốt ruồi), tóc (màu, 
    - **Cấm từ khóa `selfie-stick`**: thay bằng `Handheld front-camera vlog footage, arm extended toward bottom-right corner`. Khóa câu: `The camera is the phone itself recording from Mia's hand, so the viewer looks directly at Mia; absolutely no phone, no phone body, no phone screen, no UI or app overlay, no case, and no selfie stick appear anywhere in the shot.`
    - **POV 100% không vẽ thiết bị**: Mia đứng sau camera, chỉ 1 bàn tay không vươn vào tương tác; không có chuyện cầm gậy rồi buông rồi cầm điện thoại sai vật lý.
    - **Vật lý chạy/nhảy (Running & Action Leap)**: khi chạy tháo chạy hoặc nhảy xuống thuyền, nhân vật luôn nắm chặt máy quay hướng vào mình, camera giật nảy theo bước chân/cú đáp; không bao giờ vứt hoặc buông máy khi hành động.
+4. **Chống Chạm Ống Kính & Tương Tác Đạo Cụ Chức Năng (Camera-Touch Prevention & Functional Prop Dressing Physics — Bài học Scene 07 Ice Age 16,000 BC)**:
+   - **Khóa cấm vươn tay chạm ống kính**: Trong shot vlog selfie, AI hay nhầm giơ tay khoe đồ với vươn tay chọt màn hình/chạm ống kính làm che mắt camera. BẮT BUỘC khóa: `"her free hand NEVER reaches toward, touches, covers, taps, or points at the camera lens; she holds her free hand up at chest level showing the item at a safe distance"`.
+   - **Tả trực tiếp hành vi mặc/đeo đạo cụ chức năng**: Khi nhân vật phụ trao hoặc mặc đồ cho vlogger (găng tay, áo choàng, mũ nón, ủng tuyết): AI có xu hướng chỉ cầm sợi dây buộc lủng lẳng mà không hề mặc vào người vlogger. BẮT BUỘC dùng động từ hành động trực tiếp: `"[Character A] attentively holds the [prop] and actively slips and slides it directly onto [Character B]'s [bare hand/body], fitting it completely on before fastening any cords; [Character B] physically wears the [prop]"`. CẤM chỉ viết chung chung "giật dây/buộc dây".
+   - **Đồng bộ 3 mốc thời gian**: 0–3s mặc/xỏ đạo cụ vào người; 3–6s đạo cụ mặc xong giơ lên ngang ngực khoe camera; 6–8s tương tác cảm xúc, kiểm tra độ ấm/vừa vặn.
 
 
 ## Bước 2 — Research pack

@@ -729,7 +729,28 @@ Rút ra từ dự án `output/atlantis-9600bc/` (2026-09-27). Khi mâu thuẫn v
       1. **Neo tư thế mở đầu ở 0-1s / 0-2s**: Clip B BẮT BUỘC phải mở đầu ở đúng tư thế kết thúc của Clip A (`0-2s: Matching the previous scene's ending, the clip opens with [Character]'s head turned looking back over her shoulder toward [Object]...`).
       2. **Thực hiện động tác chuyển đổi in-camera**: Trong chính 1-2 giây đầu của Clip B, mô tả nhân vật phát hiện đối tượng hoặc nghe thấy tiếng động, sau đó mới xoay mặt lại nhìn vào ống kính camera (`Seeing him emerge, her eyes widen and she smoothly turns her head back around to face directly into the camera lens`).
       3. **Tác dụng kỳ diệu**: Mối nối giữa Clip A và Clip B trở thành một cú cắt **Match on Action**. Khán giả nhìn thấy động tác quay đầu diễn ra mượt mà và tự nhiên, hoàn toàn triệt tiêu cảm giác giật hình (jump cut) của AI!
+
+46. **LỖI VƯƠN TAY CHẠM ỐNG KÍNH VLOG & TƯƠNG TÁC ĐẠO CỤ TRANG PHỤC (Hand Reaching Camera Lens & Functional Prop Dressing Continuity — Bài học Scene 07 Ice Age 16,000 BC):**
     
+    #### 1. Hiện tượng lỗi thực tế
+    - Trong Scene 07, vlogger Nora trong lúc quay vlog selfie lại đưa cánh tay vươn thẳng tới sát ống kính camera/màn hình làm chắn khung hình và tạo tư thế cầm máy bất thường (đang quay lại đưa tay lên camera/màn hình).
+    - Đồng thời, nhân vật phụ Alva chỉ cầm sợi dây buộc lòng thòng kéo kéo quanh cổ tay Nora mà không thực sự xỏ/đeo chiếc găng tay lông thú (fur mitten) vào bàn tay đang lạnh cóng của Nora, tạo cảm giác vô nghĩa và sai lệch chức năng sinh tồn (cột dây như dắt thú thay vì mang găng giữ ấm).
+
+    #### 2. Root Cause (Nguyên nhân gốc rễ)
+    - **Lỗi thiếu ràng buộc điểm mù cho bàn tay tự do:** Prompt chỉ cấm chung chung về camera nhưng thiếu câu lệnh khẳng định cấm vlogger vươn tay chạm/che thấu kính (`she never reaches toward, touches, covers, or points at the camera lens`). Khi nhân vật chuyển động, AI model hay cho tay vươn về phía trước theo quán tính tự nhiên, vô tình chạm vào mặt phẳng thấu kính.
+    - **Lỗi mô tả đạo cụ gián tiếp (Indirect Prop Description Fallacy):** Prompt mô tả *"Alva takes the hide cord at Nora's left wrist and tugs it twice; the mitten swinging on its cord..."*. AI hiểu đúng nghĩa đen là Alva chỉ giật sợi dây thừng và chiếc găng tay đung đưa tự do ngoài không khí, chứ không nhận thức được mục đích thực tế: Alva đang mặc đồ ấm cho Nora!
+
+    #### 3. Quy tắc Vàng: Khóa Cứng Ống Kính & Tả Hành Động Chức Năng Đạo Cụ
+    - **1. Khóa cấm chạm thấu kính (Camera Touch Prohibition):**
+      - Trong mọi shot vlog selfie, bắt buộc bổ sung mệnh đề khẳng định:
+        `"The lens sits at the end of [Character]'s outstretched arm... completely outside the visible frame and never seen; she NEVER reaches toward, touches, covers, taps, or points at the camera lens."`
+      - Bàn tay tự do chỉ hoạt động ở khu vực cơ thể (ngang ngực, bụng, hông) hoặc tương tác trực tiếp với đạo cụ/nhân vật khác, tuyệt đối không vươn về phía mặt phẳng thấu kính.
+    - **2. Tả hành động chức năng trước, đạo cụ phụ sau (Functional Dressing Action First):**
+      - Khi một nhân vật phụ mặc đồ, đeo găng, khoác áo choàng hay trao trang phục cho vlogger:
+        - **Hành động chức năng chính:** Phải mô tả trực tiếp hành động đưa đồ vào cơ thể: *"Alva attentively holds the thick fur mitten and gently slips and slides it directly onto Nora's cold bare left hand, pulling the warm fur mitten fully over all her fingers."*
+        - **Cố định phụ kiện:** Sau khi đã xỏ găng/mặc đồ xong, mới mô tả thao tác khóa dây: *"Alva fastens and snugs the soft hide wrist-cord tied around Nora's left wrist so the mitten cannot slip off."*
+        - **Phản ứng tương tác tự nhiên:** Vlogger giơ bàn tay đã mặc đồ lên ngang ngực (giữ khoảng cách an toàn với camera) để khoe với người xem: *"Nora lifts her left hand—now wearing the thick fur mitten—up to chest level to display the warm mitten clearly to the camera, flexing her mittened fingers."*
+
     > **Quy ước:** mỗi lỗi gen lặp lại được ghi thành MỘT bài học đánh số riêng ở đây, gồm root-cause, câu prompt sửa cụ thể và bằng chứng (clip nào, bản nào), để lần sau rút kinh nghiệm thay vì sửa lại từ đầu.
 
 **Nội dung**

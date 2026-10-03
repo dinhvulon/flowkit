@@ -65,6 +65,35 @@ def lint_prompt(prompt: str) -> list[dict]:
                 "message": "BODY LOCK is placed AFTER timed action segments (0-2s/0-3s). Rule 39 requires BODY LOCK placed EARLY right after Shot: before timed segments to prevent attention decay."
             })
 
+    # 4. Check Camera Touch / Lens Blocking (Lesson 46)
+    if "selfie" in p_lower or "front-lens" in p_lower:
+        m_reach = re.search(r"\b(?:reaches?|extends?|brings?)\s+(?:her|his|their)?\s*(?:free\s*)?(?:hand|arm)\s+toward\s+(?:the\s+)?(?:camera|lens|screen)\b", p_lower)
+        if m_reach:
+            issues.append({
+                "severity": "CRITICAL",
+                "type": "CAMERA_TOUCH_GLITCH",
+                "token": m_reach.group(0),
+                "position": m_reach.start(),
+                "message": "FORBIDDEN (Lesson 46): Reaching hand toward camera/lens blocks the frame and causes camera materialization. Character must never reach toward or touch the camera lens."
+            })
+        if not ("never reaches toward" in p_lower or "never touches" in p_lower or "never covers" in p_lower):
+            issues.append({
+                "severity": "MEDIUM",
+                "type": "CAMERA_TOUCH_CONSTRAINT",
+                "message": "Selfie shot should specify explicit camera touch prohibition: 'she never reaches toward, touches, covers, or points at the camera lens'."
+            })
+
+    # 5. Check Functional Prop Dressing (Lesson 46 / Rule 45)
+    # If props like mitten, glove, cloak, parka, strap, cord are being handed or tied
+    if any(k in p_lower for k in ["mitten", "glove", "parka", "cloak", "boot", "cord"]) and any(k in p_lower for k in ["ties", "gives", "hands", "fastens", "slips", "wears"]):
+        has_dressing_verb = any(v in p_lower for v in ["slips", "slides", "pulls over", "fits over", "wears", "wearing"])
+        if not has_dressing_verb:
+            issues.append({
+                "severity": "HIGH",
+                "type": "INDIRECT_PROP_DESCRIPTION",
+                "message": "Prop/clothing interaction detected, but missing direct functional dressing verbs ('slips and slides directly onto', 'fits securely over', 'wearing'). Simply tying cords or handing props causes AI to omit actual dressing."
+            })
+
     return issues
 
 
