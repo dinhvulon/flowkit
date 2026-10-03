@@ -1,0 +1,71 @@
+{
+  "project_id": "44be51d1-c040-4a9b-be83-bf85e4f16fbf",
+  "video_id": "0d73e63c-94e3-4d9b-b02f-ca9a7be5755b",
+  "entities": {
+    "Nora": {
+      "character_id": "be2bed26-a74a-400c-a04c-e68366375d9d",
+      "media_id": "5149c15a-79e2-4e98-b9e3-32ddf774d44c",
+      "file_path": "C:\\flowkit\\output\\ice_age_16_000_bc_survival_vlog\\refs\\nora_main_clean.jpg"
+    },
+    "Nora Body": {
+      "character_id": "61df3cb7-2b93-4da0-9f91-3ef81c94c5ae",
+      "media_id": "f20840f9-6426-4656-8470-c1dc09f40942",
+      "file_path": "C:\\flowkit\\output\\ice_age_16_000_bc_survival_vlog\\refs\\nora_body_v3_clean.jpg"
+    },
+    "Nora Outfit": {
+      "character_id": "934ef614-4e29-4359-8023-8905a845499c",
+      "media_id": "3f692557-eed2-4a78-bbfb-d3a2871490da",
+      "file_path": "C:\\flowkit\\output\\ice_age_16_000_bc_survival_vlog\\refs\\nora_outfit_clean.jpg"
+    },
+    "Torak": {
+      "character_id": "25ed822b-2e81-47a9-b3c2-9834eebb4103",
+      "media_id": "2b95414d-5645-4280-a6f0-d0eceee04d78",
+      "file_path": "C:\\flowkit\\output\\ice_age_16_000_bc_survival_vlog\\refs\\torak_clean.jpg"
+    },
+    "Alva": {
+      "character_id": "3436d337-0a89-44a2-97a4-ce2a88ecde85",
+      "media_id": "4a9a42db-8bf6-4a3c-a37f-9a699cae47e5",
+      "file_path": "C:\\flowkit\\output\\ice_age_16_000_bc_survival_vlog\\refs\\alva_clean.jpg"
+    },
+    "Mezhyrich Camp": {
+      "character_id": "a1896a63-80c7-4c2e-bdd8-1acb65571875",
+      "media_id": "8dfecf74-86af-4b1e-a813-b37593314425",
+      "file_path": "C:\\flowkit\\output\\ice_age_16_000_bc_survival_vlog\\refs\\mezhyrich_camp_clean.jpg"
+    },
+    "Bone Dwelling Interior": {
+      "character_id": "da99d1d9-9a75-4d47-9d41-fdc6a920f90f",
+      "media_id": "19522acb-9624-4ae6-9935-64edf2aaea28",
+      "file_path": "C:\\flowkit\\output\\ice_age_16_000_bc_survival_vlog\\refs\\bone_dwelling_interior_clean.jpg"
+    },
+    "Mammoth Steppe": {
+      "character_id": "005510a9-c6bb-4239-9d6d-3ee2aa14741e",
+      "media_id": "b69da6c1-22c6-49eb-a3e0-12825227fb4d",
+      "file_path": "C:\\flowkit\\output\\ice_age_16_000_bc_survival_vlog\\refs\\mammoth_steppe_clean.jpg"
+    },
+    "Woolly Mammoth": {
+      "character_id": "071b4c06-ee2f-4fb1-bd69-a13183c0df36",
+      "media_id": "dd2b35db-4fe3-4320-bf58-9da6477bb897",
+      "file_path": "C:\\flowkit\\output\\ice_age_16_000_bc_survival_vlog\\refs\\woolly_mammoth_clean.jpg"
+    },
+    "Painted Mammoth Skull": {
+      "character_id": "65f1fddf-6659-46d6-959d-d648dcf759ff",
+      "media_id": "98fb7f43-7e26-4dad-9c79-e806e911c324",
+      "file_path": "C:\\flowkit\\output\\ice_age_16_000_bc_survival_vlog\\refs\\painted_mammoth_skull_clean.jpg"
+    },
+    "Woolly Rhinoceros": {
+      "character_id": "5746b324-bf65-49ba-ae9c-cf2df88815af",
+      "media_id": "f7eeb23f-dbd7-4118-b17a-2c9de8eb9146",
+      "file_path": "C:\\flowkit\\output\\ice_age_16_000_bc_survival_vlog\\refs\\woolly_rhinoceros_clean.jpg"
+    },
+    "Steppe Bison": {
+      "character_id": "2773da52-e681-4f61-b2d5-26769b0965c4",
+      "media_id": "c789656c-8728-4f69-a363-42c600ad056b",
+      "file_path": "C:\\flowkit\\output\\ice_age_16_000_bc_survival_vlog\\refs\\steppe_bison_clean.jpg"
+    },
+    "Cave Lion": {
+      "character_id": "4a78790d-8e87-47c6-83a4-f41ec9bf95b5",
+      "media_id": "d1c83ef2-2f52-439b-832d-5707f51241c4",
+      "file_path": "C:\\flowkit\\output\\ice_age_16_000_bc_survival_vlog\\refs\\cave_lion_clean.jpg"
+    }
+  }
+}
