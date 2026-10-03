@@ -1,7 +1,7 @@
 # I Survived 24 Hours in an Ice Age Mammoth-Bone Camp — kịch bản
 
 Skill: `/fk-time-travel-vlog` (Survival Preset §5c, voice-bible, §11). Project FlowKit `936c9ec4-5095-43a7-822c-85ede814370a` (tạo lại 01/10/2026).
-Trạng thái: **mục 1–6 xong, bản 65 clip chuẩn 7 hồi (cập nhật 2026-10-03: chuẩn hóa 65 cảnh 8s, sửa toàn diện 🔴/🟠/🟡, giải quyết triệt để spoiler H2, vật lý seated glissade, open loop, và mitten payoff).** Project FlowKit ở trên không còn trên server; cần tạo lại project và scene trước khi sinh video. Chờ user duyệt trước khi sinh (quy tắc 29).
+Trạng thái: **mục 1–6 xong, bản 75 clip hoàn chỉnh (cập nhật 2026-10-03: đúng 10:00 tròn, chuẩn 7 hồi, nhịp thoại Laomedeia hoàn hảo, 0 lỗi lint).** Project FlowKit ở trên không còn trên server; cần tạo lại project và scene trước khi sinh video. Chờ user duyệt trước khi sinh (quy tắc 29).
 
 ---
 
@@ -9,7 +9,7 @@ Trạng thái: **mục 1–6 xong, bản 65 clip chuẩn 7 hồi (cập nhật 2
 
 - **Nơi, năm:** Mezhyrich (Межиріч), tỉnh Cherkasy, Ukraine, trên thềm sông chỗ sông Rosava gặp sông Ros, lưu vực trung Dnieper. Khoảng **16.000 BC (~18.000 năm trước)**. Dwelling lớn nhất (MBS 4) có niên đại 18.248–17.764 cal BP, thuộc pha khắc nghiệt nhất của Kỷ Băng Hà cuối.
 - **Mùa và ánh sáng:** cuối đông (khoảng tháng 3), ngày dài ~12 giờ. Giờ 0 là lúc trời vừa sáng, cao trào rơi vào hoàng hôn, hồi Di sản diễn ra ban đêm, Giờ 24 là bình minh hôm sau.
-- **Độ dài:** 65 clip, tổng 8:40 (520 giây). 65 clip chuẩn 8s đồng đều cho Veo 3 / Omni Flash R2V để tăng nhịp.
+- **Độ dài:** 75 clip, tổng 10:00 tròn (600 giây). 75 clip chuẩn 8s đồng đều (đúng mốc 10 phút tối ưu YouTube) cho Veo 3 / Omni Flash R2V để tăng nhịp.
 - **Khung và chất liệu:** HORIZONTAL 16:9, material `phone_vlog`. R2V qua Omni Flash Ingredients (`GENERATE_VIDEO_REFS`), mỗi clip tối đa 3 ref và luôn có Nora.
 - **Preset:** Survival Preset (§5c), đồng hồ 24 giờ. Nora là nhà khảo cổ có kỹ năng sinh tồn. Người bản địa không nói tiếng Anh (Translator POV), chỉ Nora có giọng.
 
