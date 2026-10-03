@@ -1,7 +1,7 @@
 # I Survived 24 Hours in an Ice Age Mammoth-Bone Camp — kịch bản
 
-Skill: `/fk-time-travel-vlog` (Survival Preset §5c, voice-bible, §11). Project FlowKit `936c9ec4-5095-43a7-822c-85ede814370a` (tạo lại 01/10/2026).
-Trạng thái: **mục 1–6 xong, bản 75 clip hoàn chỉnh (cập nhật 2026-10-03: đúng 10:00 tròn, chuẩn 7 hồi, nhịp thoại Laomedeia hoàn hảo, 0 lỗi lint).** Project FlowKit ở trên không còn trên server; cần tạo lại project và scene trước khi sinh video. Chờ user duyệt trước khi sinh (quy tắc 29).
+Skill: `/fk-time-travel-vlog` (Survival Preset §5c, voice-bible, §11 Bài học 47). Project FlowKit Active: `44be51d1-c040-4a9b-be83-bf85e4f16fbf`, Video ID: `0d73e63c-94e3-4d9b-b02f-ca9a7be5755b`.
+Trạng thái: **Scene 00 (H1) ĐÃ DUYỆT CHÍNH THỨC (720p: `bfb7ba56`, 1080p Upscale Clean: `scene_00_1080p_clean.mp4`)**. Khóa nhận diện chuẩn Bài học 47: Ref `Nora Outfit` trỏ `nora_outfit_clean.jpg` (ma-nơ-canh 3 góc), loại bỏ `Nora Body`, prompt neo chặt tóc đuôi ngựa vàng cột cao có mái bay + đầm da tuần lộc trắng kem may đo viền lông cổ to bản. 75 clip chuẩn 8s (10:00 tròn), 0 lỗi lint.
 
 ---
 
