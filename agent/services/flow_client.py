@@ -20,6 +20,7 @@ shape and never learns where it came from.
 import asyncio
 import json
 import logging
+import random
 import time
 import uuid
 from typing import Optional
@@ -28,8 +29,8 @@ from agent.config import (
     VIDEO_MODELS,
     FLOW_PROJECT_ID, FLOW_ALLOW_DEGRADED,
     DEFAULT_PAYGATE_TIER,
-    FLOW_GENERATION_MIN_INTERVAL_S, FLOW_GENERATION_MAX_CONCURRENT,
-    FLOW_UNUSUAL_ACTIVITY_COOLDOWN_S,
+    FLOW_GENERATION_MIN_INTERVAL_S, FLOW_GENERATION_MAX_INTERVAL_S,
+    FLOW_GENERATION_MAX_CONCURRENT, FLOW_UNUSUAL_ACTIVITY_COOLDOWN_S,
 )
 from agent import config as _config
 from agent.services import flow_batch as fb
@@ -508,9 +509,10 @@ class FlowClient:
                         timeout: float = 300) -> dict:
         """Run one batchexecute RPC in the Flow page. Returns the raw body.
 
-        CAPTCHA-bearing image/video submits pass through one process-wide guard
-        so direct API callers cannot accidentally bypass the worker limiter.
-        Non-generation RPCs (polling/media/project metadata) remain unthrottled.
+        Create-type calls (CAPTCHA-bearing image/video/upscale submits, image
+        uploads, project creation) pass through one process-wide guard so
+        direct API callers cannot accidentally bypass the worker limiter.
+        Read-only RPCs (polling/media/project metadata) remain unthrottled.
         """
         params: dict = {"rpcid": rpcid, "freq": freq}
         if captcha_action:
@@ -518,7 +520,8 @@ class FlowClient:
         if match:
             params["match"] = match
 
-        is_generation = captcha_action in {fb.CAPTCHA_IMAGE, fb.CAPTCHA_VIDEO}
+        is_generation = (captcha_action in {fb.CAPTCHA_IMAGE, fb.CAPTCHA_VIDEO}
+                         or rpcid in {fb.RPC_UPLOAD_IMAGE, fb.RPC_CREATE_PROJECT})
         if not is_generation:
             return await self._send("batch_rpc", params, timeout=timeout)
 
@@ -546,9 +549,9 @@ class FlowClient:
                             f"retry in about {remaining}s"
                         ),
                     }
-                delay = FLOW_GENERATION_MIN_INTERVAL_S - (
-                    now - self._generation_last_submit_at
-                )
+                gap = random.uniform(FLOW_GENERATION_MIN_INTERVAL_S,
+                                     FLOW_GENERATION_MAX_INTERVAL_S)
+                delay = gap - (now - self._generation_last_submit_at)
                 if delay > 0:
                     await asyncio.sleep(delay)
                 self._generation_last_submit_at = time.monotonic()

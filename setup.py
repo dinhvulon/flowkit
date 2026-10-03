@@ -106,7 +106,7 @@ _CRITICAL_RULES = """\
 7. **Cascade on regen** — regenerating an image auto-clears downstream video + upscale.
 8. **REGENERATE vs GENERATE** — `GENERATE_*` skips if already COMPLETED. `REGENERATE_*` always runs (clears + regenerates).
 9. **Image Material required** — every project needs a `material` field (e.g. `realistic`, `3d_pixar`, `anime`). List available: `GET /api/materials`.
-10. **Server handles throttling (per provider)** — each media provider declares its own limits (Flow: max 5 concurrent + 10s cooldown; assistant: max 2 concurrent, no cooldown). Submit ALL requests via `/batch`; do NOT manually stagger or loop. Check effective limits: `GET /api/providers/status`.
+10. **Server handles throttling — create calls spaced 30–45s** — every create-type Flow call (image/video/upscale submit, image upload, project creation) waits a random 30–45s after the previous one (`FLOW_GENERATION_MIN_INTERVAL_S=30` / `FLOW_GENERATION_MAX_INTERVAL_S=45` in `agent/config.py`, user-set 2026-10-03: bursts trip `PUBLIC_ERROR_UNUSUAL_ACTIVITY`). Submit ALL requests via `/batch` and let the server pace them; do NOT loop faster. If a script paces its own submits, use `random.uniform(30, 45)` between requests and stop on `UNUSUAL_ACTIVITY` / `QUOTA`.
 11. **Video prompts use sub-clip timing** — structure 8s video as time segments: `0-3s: [action]. 3-6s: [action]. 6-8s: [action].`
 12. **Character dialogue in sub-clips** — embed speech in quotes: `Luna says "Goodnight."` Max 10-15 words per character per 2-3s segment.
 13. **Scenes are mutable** — use `PATCH /api/scenes/{sid}` to update `prompt`, `video_prompt`, `narrator_text`, `character_names` after creation. Don't delete and recreate — patch instead.

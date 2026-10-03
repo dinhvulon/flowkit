@@ -10,6 +10,7 @@ from agent.services import flow_client as fc
 async def test_generation_rpc_is_globally_serialized(monkeypatch):
     monkeypatch.setattr(fc, "FLOW_GENERATION_MAX_CONCURRENT", 1)
     monkeypatch.setattr(fc, "FLOW_GENERATION_MIN_INTERVAL_S", 0.0)
+    monkeypatch.setattr(fc, "FLOW_GENERATION_MAX_INTERVAL_S", 0.0)
     client = fc.FlowClient()
     active = 0
     max_active = 0
@@ -35,6 +36,7 @@ async def test_generation_rpc_is_globally_serialized(monkeypatch):
 async def test_unusual_activity_opens_local_circuit_breaker(monkeypatch):
     monkeypatch.setattr(fc, "FLOW_GENERATION_MAX_CONCURRENT", 1)
     monkeypatch.setattr(fc, "FLOW_GENERATION_MIN_INTERVAL_S", 0.0)
+    monkeypatch.setattr(fc, "FLOW_GENERATION_MAX_INTERVAL_S", 0.0)
     monkeypatch.setattr(fc, "FLOW_UNUSUAL_ACTIVITY_COOLDOWN_S", 120.0)
     client = fc.FlowClient()
     calls = 0
@@ -74,3 +76,51 @@ async def test_non_generation_rpc_bypasses_generation_guard(monkeypatch):
     result = await client.batch_rpc("meta", "x")
     assert result["status"] == 200
     assert calls == 1
+
+
+@pytest.mark.asyncio
+async def test_uploads_and_project_creation_share_the_create_gate(monkeypatch):
+    monkeypatch.setattr(fc, "FLOW_GENERATION_MAX_CONCURRENT", 1)
+    monkeypatch.setattr(fc, "FLOW_GENERATION_MIN_INTERVAL_S", 0.0)
+    monkeypatch.setattr(fc, "FLOW_GENERATION_MAX_INTERVAL_S", 0.0)
+    client = fc.FlowClient()
+    active = 0
+    max_active = 0
+
+    async def fake_send(method, params, timeout=300):
+        nonlocal active, max_active
+        active += 1
+        max_active = max(max_active, active)
+        await asyncio.sleep(0.01)
+        active -= 1
+        return {"status": 200, "data": "ok"}
+
+    monkeypatch.setattr(client, "_send", fake_send)
+    await asyncio.gather(
+        client.batch_rpc(fb.RPC_UPLOAD_IMAGE, "x"),
+        client.batch_rpc(fb.RPC_CREATE_PROJECT, "y"),
+        client.batch_rpc("a", "z", captcha_action=fb.CAPTCHA_VIDEO),
+    )
+    assert max_active == 1
+
+
+@pytest.mark.asyncio
+async def test_create_gate_waits_a_random_gap_between_min_and_max(monkeypatch):
+    monkeypatch.setattr(fc, "FLOW_GENERATION_MAX_CONCURRENT", 1)
+    monkeypatch.setattr(fc, "FLOW_GENERATION_MIN_INTERVAL_S", 30.0)
+    monkeypatch.setattr(fc, "FLOW_GENERATION_MAX_INTERVAL_S", 45.0)
+    client = fc.FlowClient()
+    slept = []
+
+    async def fake_sleep(seconds):
+        slept.append(seconds)
+
+    async def fake_send(method, params, timeout=300):
+        return {"status": 200, "data": "ok"}
+
+    monkeypatch.setattr(client, "_send", fake_send)
+    monkeypatch.setattr(fc.asyncio, "sleep", fake_sleep)
+    monkeypatch.setattr(fc.time, "monotonic", lambda: 1000.0)
+    client._generation_last_submit_at = 1000.0
+    await client.batch_rpc(fb.RPC_UPLOAD_IMAGE, "x")
+    assert len(slept) == 1 and 30.0 <= slept[0] <= 45.0

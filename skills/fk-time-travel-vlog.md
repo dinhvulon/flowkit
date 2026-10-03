@@ -364,6 +364,50 @@ Sau bảng storyboard, viết **Clip JSON cho từng clip 8s** theo mẫu `promp
 | `transition_prompt` | để trống — chỉ dùng khi scene có `end_scene_media_id`, mà Veo start+end đang unsupported |
 | `bleep_at` (tùy chọn) | không vào FlowKit — ghi chú hậu kỳ: mốc giây cần phủ tiếng bíp lên từ chửi cắt dở (`voice-bible.md` mục 3) |
 
+### 10b. 🔒 PROMPT LOCK — Khung `video_prompt` bắt buộc + Checklist trước khi lưu (user chốt 03/10/2026)
+
+> User yêu cầu: các bài học ở mục 11 phải được **khóa vào lúc viết prompt**, không chỉ nằm trong danh sách bài học. Mọi `video_prompt` (POST hoặc PATCH) phải dựng theo khung dưới đây và **qua đủ checklist** trước khi lưu. Clip nào không qua checklist thì sửa prompt trước, không gửi sinh.
+
+**A. Thứ tự khối trong `video_prompt` (không đảo, không bỏ khối):**
+
+1. **Style + góc máy** — chọn đúng 1 trong 3 loại, không trộn trong cùng clip (Rule 42):
+   - *Selfie:* `"The lens sits at the end of <V>'s outstretched right arm, completely outside the visible frame and never seen; her right arm stays extended toward the lens for the entire clip, and she never reaches toward, touches, covers, taps, or points at the lens. Only her left hand is free."`
+   - *POV:* `"The view is <V>'s own eyes; all recording gear is completely outside the visible frame, and her hands stay out of frame for the whole clip."` (chỉ viết "her hands enter the frame" khi sub-clip **thật sự** có thao tác tay — Bài học 50).
+   - *Máy dựng cố định:* `"Static footage from a fixed viewpoint resting on <vật cụ thể>; the frame does not move; nobody touches the viewpoint. Both of <V>'s hands are free."` — dùng khi hành động cần **hai tay** (Bài học 50).
+2. **`Setting:`** — địa điểm + năm + **mặt đất/thời tiết** (tuyết, băng) + **giờ & ánh sáng khớp clip trước và sau** + vật liệu thời kỳ. Nội thất luôn có câu khóa bếp: `"an open fire in a shallow sunken hearth ringed with stones in the earth floor; no fireplace, no chimney, no brick or built wall, no grate, no metal objects."` (Bài học 53, Scene 15/27/28/53).
+3. **`Everything is already in place from the very first frame:`** — liệt kê **mọi người, sinh vật, đạo cụ** sẽ xuất hiện trong clip, vị trí và khoảng cách của từng thứ ở giây 0, kèm `"stays in that same spot; never appears suddenly, never vanishes"`. Ghi **số lượng** (`"exactly one spear / one cup"`) và **tay nào cầm**. (Bài học 48)
+4. **`Shot:`** — bố cục khung (ai ở 1/3 nào, thấy tới đâu trên người).
+5. **`IDENTITY & OUTFIT LOCK`** nguyên văn (Bài học 47) + câu khóa mũ (Bài học 52 mục 2b) + câu `"From the very first frame to the last, <V> is fully dressed in the complete outfit: ... No part of the outfit appears, disappears or changes."`
+6. **Khóa miệng nhân vật phụ** khi họ hiện mặt: `"<Local>'s lips stay closed for the entire clip; ... The only moving mouth in the frame is <V>'s."` (Bài học 49)
+7. **`0-3s / 3-6s / 6-8s`** — mỗi đoạn: hành động có **nguyên nhân vật lý** + nhắc lại 1 chi tiết outfit (cổ lông / cổ V đan dây / thắt lưng) + thoại.
+8. **Câu kết:** `"Pure front-facing selfie view; the shot never switches to a third-person view. Only <V> speaks. No subtitles or text appear in the frame. Real amateur footage, not a 3D render."` + với POV/cảnh rộng: `"The image is clean footage only: no on-screen interface, no recording indicator, no battery icon, no zoom label, no names, no text or symbols."`
+9. **`Audio:`** cuối cùng.
+
+**B. Checklist — đọc lại từng `video_prompt` trước khi lưu (mỗi dòng phải trả lời "có"):**
+
+| # | Kiểm tra | Bài học |
+|---|---|---|
+| 1 | Chỉ 1 loại góc máy; selfie thì cánh tay phải giữ máy suốt clip, mọi thao tác chỉ bằng **tay trái** | 41, 42, 50 |
+| 2 | Hành động cần **2 tay** (trượt, chống tay, kẹp tay vào nách, ôm vật nặng) → đã chuyển sang POV hoặc máy dựng cố định | 50, Scene 27/45 |
+| 3 | Mọi người/vật/sinh vật trong sub-clip đều đã có mặt trong khối "already in place" với vị trí + khoảng cách ở giây 0 | 48, Scene 2/14/39/73 |
+| 4 | Không giao hành động cho người không có trong khung; chuyển đồ vật tả từng bước tay (đưa → đỡ bằng tay nào → tay kia buông) | 48, Scene 14/15 |
+| 5 | Không nhắc tên món đồ trên người (mũ, găng, khăn) trong sub-clip nếu không muốn nhân vật thao tác với nó; mũ đã khóa "luôn để xuống" | 52, Scene 21/62 |
+| 6 | Đạo cụ chức năng (găng, áo) tả **động tác mặc/xỏ trước**, buộc dây sau, khoe ngang ngực | 45, 46 |
+| 7 | Người bản địa hiện mặt + có thoại → selfie qua vai, khóa miệng họ; POV thoại ngoài khung chỉ khi không thấy mặt người | 49, Scene 13/53 |
+| 8 | Ngã/trượt/va chạm có **nguyên nhân vật lý** và **máy chịu hậu quả** (rung, chúi, văng); không ngã khi không gấp | 51, Scene 1/45 |
+| 9 | Vật nặng (tấm da cửa, đá) chỉ chuyển động khi có tay tác động, không giao cho "gió" | 50, Scene 9 |
+| 10 | Hai sinh vật cùng lông/màu không chạm nhau (vòi–voi con…); câu `"each animal is a separate body; they never overlap or merge"` | Scene 36 |
+| 11 | Sinh vật tuyệt chủng tả đặc điểm loài + loại trừ loài giống (`"not an African elephant"`, `"never horses or bison"`) | 53, Scene 38/48 |
+| 12 | `Setting:` có năm, địa điểm, tuyết/băng, ánh sáng khớp clip liền trước/sau; nội thất có câu khóa bếp trũng | 53, Scene 15/27/28/48 |
+| 13 | Clip nối hành động mở bằng đúng trạng thái cuối clip trước (vị trí, tư thế, ánh sáng, mối nguy) và **không đi trước** clip sau về thời gian | 44, 51, Scene 43/70 |
+| 14 | Muốn nhân vật nhìn thấy thứ ở phía sau → thứ đó đã nằm trong khung từ giây 0 (không đổi phông khi quay đầu) | 42, Scene 70 |
+| 15 | Tối đa 3 ref cho cảnh có vlogger; không dùng `<V> Body` với đồ mùa đông; ref sinh vật đang đe dọa phải có trong cảnh đó | 47, 51 |
+| 16 | Không có từ `phone`, `smartphone`, `camera` (đạo cụ), `selfie stick`, `device`, `screen`, `gimbal`; không dùng dòng `Negative:` | 40, memory |
+| 17 | Không còn câu mẫu thừa bị lặp (`only her bare empty hand enters...`, `Wearing the exact outfit from reference image`) ở clip không dùng tay | 50, Scene 67 |
+| 18 | **Nhịp gửi request:** mọi lệnh tạo (sinh ảnh/video, upscale, upload ảnh ref, tạo project) cách nhau **ngẫu nhiên 30–45s** — server đã khóa sẵn (`FLOW_GENERATION_MIN/MAX_INTERVAL_S`); script tự gửi thì dùng `random.uniform(30, 45)`, dừng ngay khi gặp `UNUSUAL_ACTIVITY` hoặc `QUOTA` | 54 |
+
+**C. Sau khi sinh — rà lỗi theo cùng checklist** khi review (`/fk-review-video` + user): trích ~16 frame/clip, đối chiếu từng dòng B; lỗi mới chưa có trong bảng → ghi bài học mới ở mục 11 **và** thêm 1 dòng vào bảng B.
+
 ---
 
 ### 11. Bài Học Từ Sản Xuất Thực Tế — Góp Ý Của User (BẮT BUỘC, ưu tiên hơn mọi chỗ khác trong skill)
@@ -792,6 +836,69 @@ Rút ra từ dự án `output/atlantis-9600bc/` (2026-09-27). Khi mâu thuẫn v
        - Tuân thủ Bài học 40, 42: hoàn toàn không xuất hiện từ `phone`, `smartphone`, `screen`, `device`, `gimbal`, `selfie stick`. Dùng góc nhìn `Handheld front-facing running vlog POV footage, ultra-wide 0.5x view, natural wide-angle perspective`.
     5. **Bằng chứng thực nghiệm:**
        - Scene 00 H1 Ice Age 16,000 BC bản Test 4 (`bfb7ba56-a131-45ae-8612-d2c5fa4528c1`) thể hiện chuẩn xác 100% bộ đầm may đo da tuần lộc trắng kem với cổ áo mũ trùm lông cáo tuyết dày to bản, đan dây ngực chéo, đai răng xương, bo lông gấu áo, kiểu tóc đuôi ngựa vàng cột cao có mái bay, động tác chạy nổ tuyết chân thực, không có thiết bị ma.
+
+48. **ĐỒ VẬT / NGƯỜI TỰ HIỆN RA GIỮA CLIP (Object & Person Pop-in — Bài học Scene 02, 14, 15 Ice Age 16,000 BC Part 2, user review 03/10/2026):**
+    - **Hiện tượng:** Scene 02 Torak đột ngột "biến ra" ở cửa lều lúc ~4.5s. Scene 14 hòn đá + kẹp gạc lơ lửng ở frame đầu rồi tay mới xuất hiện chụp lấy; tấm da đựng nước trống rồi nước tự có. Scene 15 Nora tự nhiên cầm một cái cốc thứ hai trong khi Alva vẫn cầm cốc của mình (cuối clip Nora cầm 2 cốc).
+    - **Root cause:** Prompt chỉ nhắc người/vật ở sub-clip mà nó **được dùng tới** (Torak chỉ có ở `6-8s`; viên đá chỉ có ở hành động "lowers it"), không nói nó **ở đâu từ frame đầu**. Model phải chèn nó vào giữa chừng. Prompt còn giao hành động cho người không có trong khung (Scene 14: "Alva grips the stone" trong shot POV không có Alva) hoặc tả hành động không dựng nổi ("sips from the cup in Alva's hand") → model tự đẻ thêm đạo cụ.
+    - **Quy tắc:**
+      1. Mọi người và đạo cụ xuất hiện trong clip phải được **đặt chỗ ngay trong đoạn Setting/Props, trước `0-3s`**: `"Everything is already in place from the very first frame: the hide basin is already full of water, the cobble already sits in the embers, Nora's own hands already hold the tongs."` / `"Torak is already part of the scene from the very first frame ... He stays in that same spot; he never appears suddenly and never vanishes."`
+      2. Đếm số lượng đạo cụ: `"There is only ever one cup in the scene."`
+      3. Chuyển giao đồ vật phải tả từng bước tay: người A đưa → người B đỡ bằng tay nào → tay A buông ra và để trống. Không tả "uống từ tay người khác".
+      4. Câu chốt: `"Every object moves only when a hand moves it; nothing appears, vanishes or floats on its own."`
+      5. Hành động trong shot POV chỉ giao cho **tay của chính vlogger** hoặc người đang hiện rõ trong khung.
+
+49. **NHÂN VẬT PHỤ MẤP MÁY MIỆNG TRONG SHOT POV THOẠI NGOÀI KHUNG (Off-screen Voice Lip Transfer — Bài học Scene 13 Ice Age 16,000 BC Part 2, user review 03/10/2026):**
+    - **Hiện tượng:** Scene 13 là POV của Nora, thoại viết `Nora's off-screen voice says`, gương mặt duy nhất trong khung là Alva → Alva mở miệng "nói" suốt clip bằng giọng Laomedeia. Vi phạm luật "chỉ vlogger nói".
+    - **Root cause:** Omni Flash chỉ có 1 giọng (Slot 7) và luôn cố gắn khẩu hình vào **một cái miệng nhìn thấy được**. Khi miệng vlogger không có trong khung, nó gắn vào người bản địa duy nhất đang hiện mặt. Câu `Only Nora speaks` không đủ để khóa miệng người kia.
+    - **Quy tắc:**
+      1. Beat có thoại + người bản địa hiện mặt → **dùng Selfie Qua Vai** (Rule 42, mục 2b): vlogger 1/3 tiền cảnh nói bằng chính miệng mình, người bản địa 2/3 hậu cảnh; thêm `Nora`, `Nora Outfit` vào `character_names` (giữ tối đa 3 ref theo Bài học 47).
+      2. Luôn thêm câu khóa: `"<Local>'s lips stay closed for the entire clip; she never speaks or mouths words, and communicates only by frowning, shaking her head and hand gestures. The only moving mouth in the frame is Nora's."`
+      3. POV thoại ngoài khung chỉ an toàn khi trong khung **không có mặt người** (tay, đồ vật, phong cảnh) hoặc người bản địa quay lưng / ở rất xa.
+    - **Rà soát:** sau khi gen, lọc mọi scene có `off-screen voice` + người bản địa trong `character_names` rồi kiểm tra miệng (Part 2: 13 lỗi rõ; 53, 31 nghi ngờ).
+
+50. **HÀNH ĐỘNG HAI TAY KHI ĐANG CẦM MÁY & ĐƯỜNG ĐI CỦA GÓC NHÌN QUA CỬA (Two-Hand Action While Filming — Bài học Scene 09, 11 Ice Age 16,000 BC Part 2, user review 03/10/2026):**
+    - **Hiện tượng:** Scene 11 Nora vén tấm da cửa bằng **cả hai tay** trong khi góc nhìn đã nằm sẵn bên trong lều nhìn ra — không thể vừa tự quay vừa có máy ở trong trước. Cuối clip `swings her outstretched arm` sinh ra bàn tay vung về phía ống kính. Scene 09 tấm da cửa tự vén lên cứng đờ "do gió" trong khi tóc và cỏ đứng yên.
+    - **Root cause:** Prompt không phân vai hai tay (tay nào giữ góc quay, tay nào làm việc) và không mô tả góc nhìn đi qua cửa thế nào. Vật nặng (tấm da cửa) được giao cho "gió" thay vì cho một bàn tay.
+    - **Quy tắc:**
+      1. Mọi shot selfie ghi rõ: `"her right arm stays extended toward the lens for the entire clip ... Only her left hand is free."` Mọi thao tác (vén cửa, cầm cốc, kéo mũ) tả là `"using only her free left hand"`.
+      2. Đi qua cửa trong selfie: cánh tay giữ máy dẫn trước → `"the viewpoint passes through the doorway first, facing back at Nora, and she follows it inside"`.
+      3. Vật nặng chỉ chuyển động khi có lực: `"It is thick and weighted; it stays completely still unless a hand moves it."` Không dùng "sways in the wind / lifts slightly" cho tấm da cửa.
+      4. Chuyển cảnh swing dùng **cả góc nhìn lia** (`"the whole view whips quickly to the left in a heavy motion blur; no hand comes into the frame"`), không dùng "swings her arm".
+
+51. **NGÃ KHÔNG CÓ NHÂN QUẢ & GÓC QUAY ĐỨNG YÊN KHI NGÃ (Fall Without Cause — Bài học Scene 01 Ice Age 16,000 BC Part 2, user review 03/10/2026):**
+    - **Hiện tượng:** Clip nối ngay sau cảnh voi rượt nhưng Nora chỉ ngồi phịch xuống tuyết như chơi, không voi, không gấp gáp, khung hình ổn định, mặt luôn ở giữa; ánh sáng đổi từ hoàng hôn vàng sang trời xám; cuối clip cười tươi.
+    - **Root cause:** Prompt chọn động tác an toàn "seated glissade" + khóa `viewpoint remains locked on her face` → cú ngã không có lực và không ảnh hưởng gì tới máy. Bỏ ref sinh vật đang rượt (`Woolly Mammoth`) và dùng ref bối cảnh trời xám → mất truy đuổi và lệch ánh sáng so với clip trước.
+    - **Quy tắc:**
+      1. Clip nối hành động phải mở bằng **đúng trạng thái cuối clip trước** (Rule 44): vẫn chạy, vẫn thấy mối nguy, cùng ánh sáng — giữ ref của mối nguy.
+      2. Ngã phải có **nguyên nhân vật lý** (ủng sụt qua lớp băng ở mép dốc, vấp gờ tuyết) và **máy phải chịu hậu quả**: khung rung loạn, chúi xuống, hoặc văng khỏi tay lộn vòng rồi cắm tuyết.
+      3. Theo yêu cầu user, cú **văng máy → lộn vòng → nằm trên tuyết → tuyết phủ kín thành màn trắng** là ngoại lệ hợp lệ của luật "máy khóa trong tay" — chỉ tả `"the view is flung out of her grip, spinning"`, không gọi tên thiết bị; vlogger vẫn lướt qua khung (không biến mất); màn trắng cuối clip nối thẳng vào clip sau.
+
+52. **NHẮC TỚI MỘT MÓN TRÊN NGƯỜI LÀ MODEL SẼ THAO TÁC VỚI NÓ (Mentioned Garment Gets Used — Bài học Scene 21 Ice Age 16,000 BC Part 2, user review 03/10/2026):**
+    - **Hiện tượng:** Prompt chỉ viết *"Alva glances over at Nora's fox-fur hood"* → Nora tự vòng tay ra sau kéo mũ trùm lên đầu, động tác thừa và vô lý. Cùng clip: giá phơi da có móc treo áo bằng gỗ kiểu hiện đại, hàng trăm tấm da như kho hàng.
+    - **Root cause:** Bất kỳ món đồ nào được gọi tên trong sub-clip hành động (mũ, găng, khăn) đều bị model hiểu là đạo cụ cần dùng tới. "Drying racks of pelts" không có ràng buộc vật liệu nên model lấy hình ảnh cửa hàng da hiện đại.
+    - **Quy tắc:**
+      1. Chỉ gọi tên món đồ trên người trong sub-clip khi **thật sự** muốn nhân vật thao tác với nó. Muốn nó đứng yên thì khóa bằng câu khẳng định: `"Nora's fur hood stays down, resting on her shoulders, for the entire clip; she never touches it or pulls it up."`
+      2. Phản ứng của nhân vật phụ gắn với **câu thoại / hành động**, không gắn với trang phục.
+      2b. **Mũ trùm mặc định KHÔNG đội, từ đầu đến cuối video** (user chốt 03/10/2026, Scene 62 mũ tự trùm lên rồi tự tụt xuống dù prompt không nhắc tới mũ — ảnh ref outfit có mũ lông to nên model tự quyết). Mọi `video_prompt` có vlogger phải có câu khóa ngay trước `0-3s:` — `"Nora's fur hood stays down, resting on her shoulders behind her neck, for the entire clip; it is never up over her head, and she never touches it or pulls it up."` Không viết động tác kéo/gạt/cởi mũ trong bất kỳ sub-clip nào.
+      3. Giá phơi, kệ, khung: ghi rõ số lượng và vật liệu thời kỳ (`"six or seven pelts stretched on frames of lashed bones and branches tied with sinew; no hangers, no hooks, no metal, no rails"`).
+
+53. **GIAO DIỆN CAMERA HIỆN TRÊN HÌNH & PROMPT THIẾU SETTING (Camera HUD Overlay & Missing Setting — Bài học Scene 48 Ice Age 16,000 BC Part 2, user review 03/10/2026):**
+    - **Hiện tượng:** Clip có chữ `REC`, biểu tượng pin, nhãn `0.5x | NORA` đè lên hình; bối cảnh thành đồng cỏ khô kiểu savan, không có tuyết; voi ma mút thành voi châu Phi tai to lông thưa.
+    - **Root cause:** Dòng `Setting:` quá sơ sài (`"Lower river terrace looking up at the bluff rim, golden sunset"`) — không có năm/địa điểm, không nhắc **tuyết** → model tự chọn bối cảnh theo ảnh ref `Mammoth Steppe` (cỏ khô) và ánh "golden" thành savan. Cụm `0.5x view` + tên vlogger khiến model vẽ cả giao diện app camera.
+    - **Quy tắc:**
+      1. Mọi prompt (kể cả POV ngắn) bắt buộc có `Setting:` ghi địa điểm + năm + **mặt đất (tuyết phủ dày)** + giờ/ánh sáng khớp clip trước và sau.
+      2. Thêm câu: `"The image is clean footage only: there is no on-screen interface, no recording indicator, no battery icon, no zoom label, no names, and no text or symbols of any kind over the picture."`
+      3. Sinh vật tuyệt chủng phải tả đặc điểm loài + loại trừ loài gần giống: `"a woolly mammoth: long shaggy dark-brown hair, high domed head, small rounded ears hidden in the fur, long curved tusks; not an African elephant, no large flapping ears."`
+      4. Với clip nối tiếp, ghi rõ vị trí người quay so với clip trước (Nora đã trượt xuống → `"the view stays at the bottom of the slope looking up"`).
+
+54. **NHỊP GỬI REQUEST & BỊ GOOGLE CHẶN (Request Pacing — Ice Age 16,000 BC Part 2/3, user chốt 03/10/2026):**
+    - **Hiện tượng:** Upscale nhịp 30s bị `PUBLIC_ERROR_UNUSUAL_ACTIVITY` sau 3 request; 25–35s sau 13; 40–60s sau ~20. Tài khoản mới tạo project + upload 13 ảnh ref liền trong ~1 phút → request sinh video **đầu tiên** bị chặn ngay. Mỗi phiên cookie chạy được khoảng 15–20 request liên tục.
+    - **Root cause:** Server chỉ giãn 3s giữa các lệnh sinh và **không giãn upload ảnh / tạo project**, nên các lệnh tạo dồn thành burst.
+    - **Quy tắc (đã khóa trong code `agent/config.py` + `agent/services/flow_client.py`):**
+      1. Mọi lệnh tạo — sinh ảnh/video, upscale, **upload ảnh**, **tạo project** — cách nhau **ngẫu nhiên 30–45s**.
+      2. Gặp `UNUSUAL_ACTIVITY` → dừng gửi, báo user xóa cookie `google.com` + đăng nhập lại `flow.google.com`, rồi gửi thử **1 request** trước khi chạy tiếp.
+      3. Gặp `PUBLIC_ERROR_USER_QUOTA_REACHED` → dừng hẳn; chờ quota reset hoặc đổi tài khoản (tạo project mới, upload lại ref, clone scene — prompt giữ nguyên).
+      4. Sau khoảng 15 request liên tục, chủ động đề xuất user xóa cookie trước khi bị chặn.
 
     > **Quy ước:** mỗi lỗi gen lặp lại được ghi thành MỘT bài học đánh số riêng ở đây, gồm root-cause, câu prompt sửa cụ thể và bằng chứng (clip nào, bản nào), để lần sau rút kinh nghiệm thay vì sửa lại từ đầu.
 

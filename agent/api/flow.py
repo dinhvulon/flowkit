@@ -8,7 +8,7 @@ from typing import Literal, Optional
 
 from agent.config import (
     FLOW_PROJECT_ID, FLOW_ALLOW_DEGRADED,
-    FLOW_GENERATION_MIN_INTERVAL_S, FLOW_GENERATION_MAX_CONCURRENT,
+    FLOW_GENERATION_MIN_INTERVAL_S, FLOW_GENERATION_MAX_INTERVAL_S, FLOW_GENERATION_MAX_CONCURRENT,
     FLOW_UNUSUAL_ACTIVITY_COOLDOWN_S,
 )
 from agent.services.flow_client import get_flow_client
@@ -189,6 +189,7 @@ async def extension_status():
         "flow_key_present": client._flow_key is not None,
         "generation_throttle": {
             "min_interval_s": FLOW_GENERATION_MIN_INTERVAL_S,
+            "max_interval_s": FLOW_GENERATION_MAX_INTERVAL_S,
             "max_concurrent": FLOW_GENERATION_MAX_CONCURRENT,
             "unusual_activity_cooldown_s": FLOW_UNUSUAL_ACTIVITY_COOLDOWN_S,
             **client.generation_guard_status,

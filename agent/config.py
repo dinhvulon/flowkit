@@ -33,10 +33,17 @@ FLOW_PROJECT_ID = os.environ.get("FLOW_PROJECT_ID", "")
 # both drop to plain i2v off the start frame. Upscale has no fallback.
 FLOW_ALLOW_DEGRADED = os.environ.get("FLOW_ALLOW_DEGRADED", "0") == "1"
 
-# Process-wide guard for every CAPTCHA-bearing generation submit, including
-# direct API calls that bypass the background worker's limiter.
+# Process-wide guard for every create-type Flow call (image/video/upscale
+# submits, image uploads, project creation), including direct API calls that
+# bypass the background worker's limiter. Each call waits a random gap in
+# [MIN, MAX] seconds after the previous one: bursts of creates trip Google's
+# PUBLIC_ERROR_UNUSUAL_ACTIVITY (user-set 30-45s, 2026-10-03).
 FLOW_GENERATION_MIN_INTERVAL_S = max(
-    0.0, float(os.environ.get("FLOW_GENERATION_MIN_INTERVAL_S", "3"))
+    0.0, float(os.environ.get("FLOW_GENERATION_MIN_INTERVAL_S", "30"))
+)
+FLOW_GENERATION_MAX_INTERVAL_S = max(
+    FLOW_GENERATION_MIN_INTERVAL_S,
+    float(os.environ.get("FLOW_GENERATION_MAX_INTERVAL_S", "45")),
 )
 FLOW_GENERATION_MAX_CONCURRENT = max(
     1, int(os.environ.get("FLOW_GENERATION_MAX_CONCURRENT", "1"))
