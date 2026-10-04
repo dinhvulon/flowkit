@@ -503,16 +503,30 @@ class FlowClient:
     # None of that can be replayed from here, so the agent builds the envelope
     # and the extension runs it inside a signed-in flow.google.com tab.
 
+    async def _wait_request_gap(self) -> None:
+        """Sleep until a random MIN..MAX gap has passed since the last Flow RPC.
+
+        Caller must hold ``_generation_rate_gate`` so gaps are measured between
+        consecutive calls of any kind.
+        """
+        gap = random.uniform(FLOW_GENERATION_MIN_INTERVAL_S,
+                             FLOW_GENERATION_MAX_INTERVAL_S)
+        delay = gap - (time.monotonic() - self._generation_last_submit_at)
+        if delay > 0:
+            await asyncio.sleep(delay)
+        self._generation_last_submit_at = time.monotonic()
+
     async def batch_rpc(self, rpcid: str, freq: str,
                         captcha_action: str | None = None,
                         match: str | None = None,
                         timeout: float = 300) -> dict:
         """Run one batchexecute RPC in the Flow page. Returns the raw body.
 
+        Every RPC to Flow — creates, polls and metadata reads alike — waits a
+        random FLOW_GENERATION_MIN/MAX_INTERVAL_S gap after the previous one.
         Create-type calls (CAPTCHA-bearing image/video/upscale submits, image
-        uploads, project creation) pass through one process-wide guard so
-        direct API callers cannot accidentally bypass the worker limiter.
-        Read-only RPCs (polling/media/project metadata) remain unthrottled.
+        uploads, project creation) additionally hold the generation slot and
+        honour the UNUSUAL_ACTIVITY cooldown.
         """
         params: dict = {"rpcid": rpcid, "freq": freq}
         if captcha_action:
@@ -523,6 +537,8 @@ class FlowClient:
         is_generation = (captcha_action in {fb.CAPTCHA_IMAGE, fb.CAPTCHA_VIDEO}
                          or rpcid in {fb.RPC_UPLOAD_IMAGE, fb.RPC_CREATE_PROJECT})
         if not is_generation:
+            async with self._generation_rate_gate:
+                await self._wait_request_gap()
             return await self._send("batch_rpc", params, timeout=timeout)
 
         now = time.monotonic()
@@ -549,12 +565,7 @@ class FlowClient:
                             f"retry in about {remaining}s"
                         ),
                     }
-                gap = random.uniform(FLOW_GENERATION_MIN_INTERVAL_S,
-                                     FLOW_GENERATION_MAX_INTERVAL_S)
-                delay = gap - (now - self._generation_last_submit_at)
-                if delay > 0:
-                    await asyncio.sleep(delay)
-                self._generation_last_submit_at = time.monotonic()
+                await self._wait_request_gap()
 
             result = await self._send("batch_rpc", params, timeout=timeout)
             blob = f"{result.get('error', '')} {result.get('data', '')}"

@@ -404,7 +404,7 @@ Sau bảng storyboard, viết **Clip JSON cho từng clip 8s** theo mẫu `promp
 | 15 | Tối đa 3 ref cho cảnh có vlogger; không dùng `<V> Body` với đồ mùa đông; ref sinh vật đang đe dọa phải có trong cảnh đó | 47, 51 |
 | 16 | Không có từ `phone`, `smartphone`, `camera` (đạo cụ), `selfie stick`, `device`, `screen`, `gimbal`; không dùng dòng `Negative:` | 40, memory |
 | 17 | Không còn câu mẫu thừa bị lặp (`only her bare empty hand enters...`, `Wearing the exact outfit from reference image`) ở clip không dùng tay | 50, Scene 67 |
-| 18 | **Nhịp gửi request:** mọi lệnh tạo (sinh ảnh/video, upscale, upload ảnh ref, tạo project) cách nhau **ngẫu nhiên 30–45s** — server đã khóa sẵn (`FLOW_GENERATION_MIN/MAX_INTERVAL_S`); script tự gửi thì dùng `random.uniform(30, 45)`, dừng ngay khi gặp `UNUSUAL_ACTIVITY` hoặc `QUOTA` | 54 |
+| 18 | **Nhịp gửi request:** **mọi request tới Flow** (sinh ảnh/video, upscale, upload ảnh ref, tạo project, poll trạng thái, đọc media) cách nhau **ngẫu nhiên 45–60s** — server đã khóa sẵn (`FLOW_GENERATION_MIN/MAX_INTERVAL_S`); script tự gửi thì dùng `random.uniform(45, 60)`, dừng ngay khi gặp `UNUSUAL_ACTIVITY` hoặc `QUOTA` | 54 |
 
 **C. Sau khi sinh — rà lỗi theo cùng checklist** khi review (`/fk-review-video` + user): trích ~16 frame/clip, đối chiếu từng dòng B; lỗi mới chưa có trong bảng → ghi bài học mới ở mục 11 **và** thêm 1 dòng vào bảng B.
 
@@ -893,9 +893,9 @@ Rút ra từ dự án `output/atlantis-9600bc/` (2026-09-27). Khi mâu thuẫn v
 
 54. **NHỊP GỬI REQUEST & BỊ GOOGLE CHẶN (Request Pacing — Ice Age 16,000 BC Part 2/3, user chốt 03/10/2026):**
     - **Hiện tượng:** Upscale nhịp 30s bị `PUBLIC_ERROR_UNUSUAL_ACTIVITY` sau 3 request; 25–35s sau 13; 40–60s sau ~20. Tài khoản mới tạo project + upload 13 ảnh ref liền trong ~1 phút → request sinh video **đầu tiên** bị chặn ngay. Mỗi phiên cookie chạy được khoảng 15–20 request liên tục.
-    - **Root cause:** Server chỉ giãn 3s giữa các lệnh sinh và **không giãn upload ảnh / tạo project**, nên các lệnh tạo dồn thành burst.
+    - **Root cause:** Server chỉ giãn 3s giữa các lệnh sinh và **không giãn upload ảnh / tạo project / poll**, nên request dồn thành burst. Tài khoản mới bị chặn ngay request sinh đầu tiên 2 lần liên tiếp (04/10) dù lệnh tạo đã giãn 30–45s → user chốt giãn **mọi** request.
     - **Quy tắc (đã khóa trong code `agent/config.py` + `agent/services/flow_client.py`):**
-      1. Mọi lệnh tạo — sinh ảnh/video, upscale, **upload ảnh**, **tạo project** — cách nhau **ngẫu nhiên 30–45s**.
+      1. **Mọi request tới Flow** — sinh ảnh/video, upscale, **upload ảnh**, **tạo project**, **poll trạng thái**, đọc media — cách nhau **ngẫu nhiên 45–60s** (user chốt 04/10/2026, thay cho mức 30–45s chỉ áp cho lệnh tạo). `VIDEO_POLL_TIMEOUT` nâng lên 900s cho vừa nhịp poll chậm.
       2. Gặp `UNUSUAL_ACTIVITY` → dừng gửi, báo user xóa cookie `google.com` + đăng nhập lại `flow.google.com`, rồi gửi thử **1 request** trước khi chạy tiếp.
       3. Gặp `PUBLIC_ERROR_USER_QUOTA_REACHED` → dừng hẳn; chờ quota reset hoặc đổi tài khoản (tạo project mới, upload lại ref, clone scene — prompt giữ nguyên).
       4. Sau khoảng 15 request liên tục, chủ động đề xuất user xóa cookie trước khi bị chặn.

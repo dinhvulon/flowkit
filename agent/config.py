@@ -33,17 +33,17 @@ FLOW_PROJECT_ID = os.environ.get("FLOW_PROJECT_ID", "")
 # both drop to plain i2v off the start frame. Upscale has no fallback.
 FLOW_ALLOW_DEGRADED = os.environ.get("FLOW_ALLOW_DEGRADED", "0") == "1"
 
-# Process-wide guard for every create-type Flow call (image/video/upscale
-# submits, image uploads, project creation), including direct API calls that
-# bypass the background worker's limiter. Each call waits a random gap in
-# [MIN, MAX] seconds after the previous one: bursts of creates trip Google's
-# PUBLIC_ERROR_UNUSUAL_ACTIVITY (user-set 30-45s, 2026-10-03).
+# Process-wide guard for EVERY Flow RPC (creates, uploads, project creation,
+# status polls, metadata reads), including direct API calls that bypass the
+# background worker's limiter. Each call waits a random gap in [MIN, MAX]
+# seconds after the previous one: bursts trip Google's
+# PUBLIC_ERROR_UNUSUAL_ACTIVITY (user-set 45-60s for all requests, 2026-10-04).
 FLOW_GENERATION_MIN_INTERVAL_S = max(
-    0.0, float(os.environ.get("FLOW_GENERATION_MIN_INTERVAL_S", "30"))
+    0.0, float(os.environ.get("FLOW_GENERATION_MIN_INTERVAL_S", "45"))
 )
 FLOW_GENERATION_MAX_INTERVAL_S = max(
     FLOW_GENERATION_MIN_INTERVAL_S,
-    float(os.environ.get("FLOW_GENERATION_MAX_INTERVAL_S", "45")),
+    float(os.environ.get("FLOW_GENERATION_MAX_INTERVAL_S", "60")),
 )
 FLOW_GENERATION_MAX_CONCURRENT = max(
     1, int(os.environ.get("FLOW_GENERATION_MAX_CONCURRENT", "1"))
@@ -82,7 +82,7 @@ ASSISTANT_COOLDOWN_S = float(os.environ.get("ASSISTANT_COOLDOWN_S", "0"))
 POLL_INTERVAL = int(os.environ.get("POLL_INTERVAL", "5"))
 VIDEO_POLL_INTERVAL = int(os.environ.get("VIDEO_POLL_INTERVAL", "10"))  # polling interval for video/upscale status
 MAX_RETRIES = int(os.environ.get("MAX_RETRIES", "5"))
-VIDEO_POLL_TIMEOUT = int(os.environ.get("VIDEO_POLL_TIMEOUT", "420"))
+VIDEO_POLL_TIMEOUT = int(os.environ.get("VIDEO_POLL_TIMEOUT", "900"))  # long enough for 45-60s-spaced polls
 API_COOLDOWN = int(os.environ.get("API_COOLDOWN", "10"))  # DEPRECATED: per-provider cooldown_s in provider capabilities is authoritative
 MAX_CONCURRENT_REQUESTS = int(os.environ.get("MAX_CONCURRENT_REQUESTS", "5"))  # DEPRECATED: per-provider max_concurrent in provider capabilities is authoritative
 STALE_PROCESSING_TIMEOUT = int(os.environ.get("STALE_PROCESSING_TIMEOUT", "600"))  # 10 min
