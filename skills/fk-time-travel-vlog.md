@@ -405,6 +405,9 @@ Sau bảng storyboard, viết **Clip JSON cho từng clip 8s** theo mẫu `promp
 | 16 | Không có từ `phone`, `smartphone`, `camera` (đạo cụ), `selfie stick`, `device`, `screen`, `gimbal`; không dùng dòng `Negative:` | 40, memory |
 | 17 | Không còn câu mẫu thừa bị lặp (`only her bare empty hand enters...`, `Wearing the exact outfit from reference image`) ở clip không dùng tay | 50, Scene 67 |
 | 18 | **Nhịp gửi request:** **mọi request tới Flow** (sinh ảnh/video, upscale, upload ảnh ref, tạo project, poll trạng thái, đọc media) cách nhau **ngẫu nhiên 45–60s** — server đã khóa sẵn (`FLOW_GENERATION_MIN/MAX_INTERVAL_S`); script tự gửi thì dùng `random.uniform(45, 60)`, dừng ngay khi gặp `UNUSUAL_ACTIVITY` hoặc `QUOTA` | 54 |
+| 19 | **Khóa tóc cụ thể theo ảnh ref:** vị trí cột tóc (`tied at the crown of her head, not low at the nape`), mái (`wispy curtain bangs parted in the middle that cover the edges of her forehead and frame both cheeks`), `never slicked back`; có gió thì ghi `wind only makes the ponytail swing, the bangs stay over her forehead` — không viết tóc bị gió `whip` | 55 |
+| 20 | **Cảnh POV có tay vlogger** (cầm, chạm, xỏ, đỡ đồ) → `character_names` phải có `<V>` + `<V> Outfit` để bàn tay, cổ tay áo đúng của nhân vật chính (user chốt 04/10/2026) | Scene 45/53 |
+| 21 | **Đạo cụ cầm tay của nhân vật phụ** (giáo, gậy, cốc) → tạo ref riêng `<Tên> <Đạo cụ>` (vd `Torak Spear`) bằng **EDIT từ ảnh ref gốc** của nhân vật (giữ mặt + trang phục), sheet 16:9 3 góc, đạo cụ cầm sẵn trong tay; xóa logo → upload lại → dùng thay ref nhân vật trong cảnh đó | Scene 29 |
 
 **C. Sau khi sinh — rà lỗi theo cùng checklist** khi review (`/fk-review-video` + user): trích ~16 frame/clip, đối chiếu từng dòng B; lỗi mới chưa có trong bảng → ghi bài học mới ở mục 11 **và** thêm 1 dòng vào bảng B.
 
@@ -899,6 +902,12 @@ Rút ra từ dự án `output/atlantis-9600bc/` (2026-09-27). Khi mâu thuẫn v
       2. Gặp `UNUSUAL_ACTIVITY` → dừng gửi, báo user xóa cookie `google.com` + đăng nhập lại `flow.google.com`, rồi gửi thử **1 request** trước khi chạy tiếp.
       3. Gặp `PUBLIC_ERROR_USER_QUOTA_REACHED` → dừng hẳn; chờ quota reset hoặc đổi tài khoản (tạo project mới, upload lại ref, clone scene — prompt giữ nguyên).
       4. Sau khoảng 15 request liên tục, chủ động đề xuất user xóa cookie trước khi bị chặn.
+      5. **`PUBLIC_ERROR_UNUSUAL_ACTIVITY_TOO_MUCH_TRAFFIC`** (mã `8` = `RESOURCE_EXHAUSTED`, cùng mã với hết quota) = **giới hạn lưu lượng của tài khoản**, không phải do nhiều job song song: Part 5 (04/10/2026) gặp lỗi này cả khi 3 clip đang render lẫn khi **không có job nào đang chạy** và đã nghỉ 5 phút. Xử lý: dừng, chờ 30–60 phút rồi thử **1 cảnh khác** (cả 2 lần đều rơi vào cùng 1 cảnh — loại trừ khả năng do prompt); vẫn lỗi → chờ lâu hơn/ngày mai hoặc đổi tài khoản. Vẫn nên chạy video tuần tự 1 job cho an toàn.
+
+55. **SAI KIỂU TÓC KHI CÓ GIÓ — MẤT MÁI, ĐUÔI NGỰA TỤT THẤP (Hair Drift in Wind — Bài học Scene 25 Ice Age 16,000 BC Part 5, user review 04/10/2026):**
+    - **Hiện tượng:** Ref là đuôi ngựa cột cao trên đỉnh đầu + mái thưa rẽ giữa ôm trán/má; clip ra đuôi ngựa thấp sau gáy, tóc vuốt ngược, **mất mái**, nhiều lọn xõa.
+    - **Root cause:** Khối khóa chỉ có cụm ngắn `high wavy ponytail with curtain bangs`; sub-clip lại viết `her ponytail ... whip sideways in the gale` → gió mạnh được hiểu là hất tung mái và kéo tóc ra sau.
+    - **Quy tắc:** Trong `IDENTITY & OUTFIT LOCK` tả tóc theo **vị trí cụ thể**: `"hair pulled up into a high wavy ponytail tied at the crown of her head (not low at the nape), with wispy curtain bangs parted in the middle that cover the edges of her forehead and frame both cheeks, plus a few loose face-framing strands at the temples; her hair is never slicked back."` + câu trước `0-3s:`: `"Her curtain bangs stay over her forehead and her ponytail stays tied high at the crown for the entire clip; wind only makes the ponytail swing, it never pulls the hair back or loose."` Cảnh có gió chỉ viết đuôi ngựa `swings`, không viết `whips`.
 
     > **Quy ước:** mỗi lỗi gen lặp lại được ghi thành MỘT bài học đánh số riêng ở đây, gồm root-cause, câu prompt sửa cụ thể và bằng chứng (clip nào, bản nào), để lần sau rút kinh nghiệm thay vì sửa lại từ đầu.
 
