@@ -31,7 +31,9 @@ Clip đầu là trọn 8s của khoảnh khắc cao trào, cắt trước khi bi
 
 - Người xem phải cảm thấy "**nếu cô thất bại thì chuyện kinh khủng gì xảy ra?**", không chỉ "cô phải làm X".
 - Thoại 3–8 từ. Cấm: giải thích lịch sử, giới thiệu vlogger, giới thiệu người bản địa, logo, kêu subscribe.
-- **Payoff** ở cuối cao trào (Act 4): dựng lại 2–3s cuối của cold open, rồi nối clip mới **cùng góc máy** cho thấy kết quả. Clip đứng ngay trước payoff kết bằng tư thế hoặc hướng nhìn khớp với đoạn phát lại (Rule 44).
+- **Payoff** ở cuối cao trào (Act 4): dựng lại 2–3s cuối của cold open, rồi cho thấy kết quả **cùng góc máy**. Clip đứng ngay trước payoff kết bằng tư thế hoặc hướng nhìn khớp với đoạn phát lại (Rule 44).
+- **Cold open và payoff cắt từ CÙNG MỘT master take** (user chốt 2026-10-05). Sinh một clip 10s FIXED CAM chứa trọn khoảnh khắc (mối nguy → hỏng → hỏng → thành công một phần → kết quả). Cold open dùng đoạn đầu đến trước kết quả → CUT ĐEN; payoff dùng 4–5s cuối. Hai clip sinh riêng thì nhân vật, ánh sáng, vị trí mối nguy sẽ lệch nhau, và người xem nhận ra ngay. Ghi rõ trong script master take chia giây thế nào và mỗi đoạn dùng giây nào.
+- **Thứ tự ưu tiên hình trong cold open phải đơn giản:** mối nguy → vlogger → tay → kết quả → đen. Nền tối, ít chi tiết, không để thứ gì tranh sự chú ý.
 - **Vlogger không phải siêu anh hùng.** Cô làm được phần của mình (giữ lửa, đưa đuốc), còn cả nhóm mới là bên thắng mối nguy. Câu kiểu *"Not me. Eight people."* làm truyện đáng tin hơn.
 - Payoff phải **đắt hơn setup**: trả đủ mọi thứ cold open đã hứa (vlogger đã học được kỹ năng → tự làm → hỏng thêm lần nữa → mối nguy thật sự tới → nhóm thật sự cần cô → cô làm được → nhóm dùng kết quả đó để thắng). **Không thêm twist khác** làm loãng payoff.
 
@@ -44,6 +46,7 @@ Trả lời "tại sao cô ở đây?" trong vài clip, **không giải thích d
 Mission là mục tiêu chính của Act 1.
 
 - **Bài test phải đọc được bằng hình.** Nếu nhóm đang quyết định số phận vlogger, cho thấy cụ thể: một người chỉ vào cô rồi hất cằm về phía rừng (đuổi đi), thủ lĩnh nhìn vấn đề rồi nhìn cô. Bài test được giao bằng cử chỉ (đồ vật → vấn đề → cô → lối ra), và mission card hiện ngay cuối clip đó.
+- **Bài test có làm mẫu trước.** Người giao bài làm thử một lần cho cô thấy (thủ lĩnh đánh một nhát ra tia lửa), rồi mới giao. Như vậy bài test là "cô có **học** được không", không phải "cô có tự biết không"; nếu không làm mẫu, người xem sẽ hỏi làm sao cô đoán được cách dùng đồ.
 - **Stakes của thất bại đầu tiên cũng bằng hình:** nhóm quay lưng, không ai chờ, vlogger nhìn mặt trời. Không cần thoại.
 - **Trả lời "tại sao họ quan tâm cô?" bằng một cử chỉ.** Ở lần tiếp xúc đầu, người bản địa phải chạm hoặc soi một thứ lạ trên người vlogger (tập Neanderthal: thủ lĩnh kéo nhẹ vải tổng hợp → Nora nhìn → ông nhìn lại). Thoại tối đa một câu ngắn. Người xem phải hiểu "họ chưa từng thấy thứ này".
 - **Sự giúp đỡ không miễn phí.** Người bản địa trao cho vlogger một *cơ hội* (dụng cụ, một lần làm mẫu), không trao lời giải. Cô vẫn phải tự chứng minh. Đặt cơ hội đó ngay sau khoảnh khắc nhóm quay lưng để người xem tự hiểu "đây là cơ hội cuối".
@@ -67,6 +70,9 @@ Người xem phải *cảm* được mình đang ở thế giới khác: địa 
 
 Soát trước khi đưa user review:
 - **Giờ trong ngày khớp với countdown.** Tính ngược từ cảnh cuối: muốn kết bằng bình minh ở HOUR 24 thì vlogger phải đến lúc bình minh. Hạn chót kiểu "trước khi trời tối" phải khớp với số giờ còn sáng. Không để countdown nhảy một khoảng lớn giữa lúc truyện đang chạy; chỉ nhảy khi cả nhóm ngủ.
+- **Soát từng cặp mốc countdown liền nhau.** Giữa hai mốc (ví dụ HOUR 8 → HOUR 10) phải có ít nhất một clip cho thấy thời gian trôi trên hình (trời tối hẳn, cả nhóm ăn, ai đó canh gác) hoặc là giấc ngủ. Đừng viết "không còn khoảng trống" trong header khi chưa soát từng cặp; v3 tập Neanderthal đã viết vậy trong khi còn khoảng H8 → H10, và user bắt được.
+- **Đạo cụ đã gieo không được mâu thuẫn với cao trào.** Nếu Act 2 trao cho vlogger một bọc than thì Act 4 phải có lý do rõ trên hình vì sao cô vẫn phải tạo lửa lại (cô ngã đè lên bọc than, than tắt). Mục tiêu của nhiệm vụ cũng phải khớp kết quả: đi lấy thịt thì cảnh thắng là giữ được thịt, không phải "để linh cẩu lấy xương". Với mỗi đạo cụ, hỏi: "người xem có hỏi *sao không dùng cái đó?* không".
+- **Số người khóa bằng câu trong prompt.** Cảnh đông người (đêm, chiến đấu) ghi nguyên câu `Exactly seven <people> and <Vlogger> are present; there are no other people anywhere in the frame.` Người phụ không tên xuất hiện nhiều lần thì gán mỗi người một **dấu nhận diện** (sẹo, tóc dài buộc, mũi bè, tóc cắt ngắn, tấm da khoác vai) và ghi lại mỗi khi họ có mặt.
 - **Số người khớp ở mọi clip.** Ghi tổng số người của nhóm và ai đi, ai ở lại trong bảng nhân vật. Câu thoại có con số ("Eight of us") phải khớp.
 - **Hướng của mối nguy khớp** giữa các clip (tiếng từ phía đông thì bóng cũng tới từ phía đông).
 
@@ -101,10 +107,14 @@ Câu hỏi mẫu (tập Neanderthal):
 Ghi câu hỏi của từng Act ngay đầu Act trong `script.md`.
 
 - **Mỗi câu hỏi phải kèm hậu quả nếu thất bại, và hậu quả đó hiện được bằng hình** (bị đuổi vào rừng, mất thịt, mất lửa qua đêm). Tên Act phải khớp với thứ đang bị đe dọa trong Act đó; ví dụ Act tên "Trust" thì phải cho thấy mất lòng tin dẫn tới điều gì.
+- **Act giữa (Act 3) cần một mini-goal cụ thể có hạn chót**, không phải chuỗi montage "học việc". Ví dụ: xẻ xong một đùi hươu trước khi nhóm rời đi; nếu không xong, phần đó bị bỏ lại, cô bị bỏ lại. Giao mục tiêu bằng cử chỉ ở đầu Act, nhắc lại một lần khi bị dồn ép ("Half a leg left. They're packing."), rồi cho hoàn thành bằng một hành động của người khác (người mạnh nhất buộc gói thịt và bắt cô tự vác).
 - **False victory cuối Act 3:** cho nhân vật về nơi an toàn, mọi việc có vẻ xong ("OK, cô ấy sống rồi"), rồi mới mở Act 4. Cú lật này tạo nấc leo thang mạnh hơn nhiều so với việc đi thẳng từ Act 3 vào nguy hiểm.
-- **Arc nhân vật: từ người ngoài thành thành viên có trách nhiệm.** Act 4 phải giao cho vlogger một nhiệm vụ cụ thể mà nhóm cần, và đó là kỹ năng cô đã học ở Act 2–3 (tập Neanderthal: thủ lĩnh nhìn hộp than → *"That's my job."*).
+- **Arc nhân vật: từ người ngoài thành thành viên có trách nhiệm.** Act 4 phải giao cho vlogger một nhiệm vụ cụ thể mà nhóm cần, và đó là kỹ năng cô đã học ở Act 2–3 (tập Neanderthal: thủ lĩnh trao bọc than thay vì giáo → than tắt vì cô ngã → *"My fault. My job."*).
 
 Act 4 (cao trào) là **benchmark về độ căng** cho toàn video. Khi viết các Act khác, cố đạt mức căng tương tự.
+
+- **Suy luận của vlogger phải có hình làm chứng.** Khi cô kết luận một điều (đếm số linh cẩu, đoán hướng), cho người bản địa phản ứng trước với từng dấu hiệu (tiếng kêu 1 → thủ lĩnh khựng; tiếng 2 → người mạnh nhất quay đầu; tiếng 3 → cả nhóm khép đội hình), rồi cô mới nói. Nếu không có phản ứng đó, câu suy luận nghe như tác giả mớm thông tin.
+- **Đối đầu tập thể phải kiềm chế, không kiểu Hollywood.** Tiến chậm từng bước, đội hình sát, vũ khí sẵn, gằn giọng thấp; không la hét, không xông lên, không ném. Sự kiềm chế đó mới tạo cảm giác những người này đã làm việc này cả đời.
 
 ## 4. Luật 4 việc cho từng shot
 
@@ -150,7 +160,9 @@ Cách làm hậu quả thấy được: cho vlogger một **nguồn có hạn** 
 
 Vlogger phải thất bại thật và phải **học từ người bản địa**. Cô giỏi, nhưng thế giới này giỏi hơn cô.
 
-**Bí quyết của người bản địa phải diễn từng thao tác.** Khi họ đưa vào một mẹo hay nguyên liệu lạ (tập Neanderthal: bột mangan đen), cho thấy trọn chuỗi: nhìn mồi → lấy bột → rắc một ít → chỉ đúng chỗ cần đánh → đưa lại dụng cụ → vlogger làm theo → khói → lửa. Thiếu thao tác thì người xem thấy như "tự nhiên có bột thần". Không giải thích khoa học dài; vlogger gói lại bằng vài từ.
+**Quy trình vật lý phải khóa từng bước.** Tạo lửa, mang than, mài, đan, nấu… đều phải có các bước trung gian thật trong prompt (tạo lửa: đánh → vài tia nhỏ → mồi âm ỉ một chấm đỏ → khói mảnh → cúi thổi nhẹ → vài giây sau mới có ngọn lửa nhỏ). Model mặc định cho "mưa tia lửa" và "lửa bùng ngay"; người xem nào từng làm thật đều thấy giả. Viết câu khóa một lần trong script (mục *Khóa vật lý*) rồi dán nguyên vào mọi clip có quy trình đó.
+
+**Bí quyết của người bản địa phải diễn từng thao tác.** Khi họ đưa vào một mẹo hay nguyên liệu lạ (tập Neanderthal: bột khoáng sẫm màu), cho thấy trọn chuỗi: nhìn mồi → lấy bột → rắc một ít → chỉ đúng chỗ cần đánh → đưa lại dụng cụ → vlogger làm theo → khói → lửa. Thiếu thao tác thì người xem thấy như "tự nhiên có bột thần". Không giải thích khoa học dài; vlogger gói lại bằng vài từ.
 
 ## 8. Áp lực xã hội (Act 3)
 
@@ -165,14 +177,16 @@ Ngoài sinh tồn, thêm lớp xung đột "**họ có chấp nhận cô không?
 
 Đồng hồ đếm ngược, không đếm lên:
 
-`HOUR 0 — 24 HOURS REMAINING` → `HOUR 3 — 21 HOURS REMAINING` → `HOUR 8 — 16 HOURS REMAINING` → `HOUR 18 — 6 HOURS REMAINING` → `HOUR 23 — 1 HOUR REMAINING`
+`HOUR 0 — 24 HOURS REMAINING` → `HOUR 4 — 20 HOURS REMAINING` → `HOUR 8 — 16 HOURS REMAINING` → `HOUR 10 — 14 HOURS REMAINING` → `HOUR 12 …` → `HOUR 20 …` → `HOUR 24 — 0 HOURS REMAINING`
 
 - Phải tạo cảm giác **TIME IS RUNNING OUT**. Đặt mốc đếm ngược ở các clip ngay trước hoặc sau nấc leo thang, không rải đều theo giờ.
+- **Khoảng 7 mốc cho video ~9–10 phút** (user chốt 2026-10-05): mốc đầu, ranh giới các Act, và nấc leo thang lớn. v3 có 11 mốc nên bị chê là dày; nhiều chữ quá thì countdown thành giấy dán tường, mất tác dụng.
 - Chữ trên màn hình được phép đúng 3 loại: **năm** (`51,000 YEARS AGO`), **mission card**, **countdown**. Chèn ở hậu kỳ, không bao giờ viết vào `video_prompt`. Mọi chữ khác vẫn cấm (mục 8 của skill).
 
 ## 10. Sau payoff: ngắn, không xung đột mới
 
-- Phần cảm xúc sau payoff tối đa **60–75 giây** (~8–9 clip 8s).
+- Phần cảm xúc sau payoff nhắm **45–60 giây** (~6–7 clip; user chốt 2026-10-05, thay mức 60–75s cũ; v3 ~76s vẫn bị chê dài).
+- **Cắt câu chủ đề / câu tác giả.** Câu kiểu *"They're not surviving. They're living."* là tác giả nói thay hình; nếu hình đã cho thấy thì cắt, hoặc để im lặng.
 - Không mở thêm xung đột mới.
 - Nhịp: im lặng → bữa ăn → kết nối con người → bình minh → món quà cuối.
 - **Không triết lý, không giảng.** Tối đa một câu suy ngẫm ngắn cho cả đoạn (*"Fifty thousand years."* rồi *"And the fire held."*). Cắt mọi đoạn giải thích khoa học/lịch sử (DNA, niên đại, "the papers say…"): sau khi xung đột đã giải quyết, exposition là thứ làm người xem cảm thấy "video đã hết mà chưa hết".
@@ -213,6 +227,8 @@ Clip 10s: cộng thêm tối đa ~25%.
 
 Ghi `[im lặng Xs]` trong kịch bản và `No one speaks for the first X seconds; only wind and grass are heard.` trong `video_prompt`.
 
+**Không dùng từ gây hiểu nhầm hoặc hiện đại hóa** trong thoại và mô tả: *black powder* (nghe như thuốc súng) → *dark powder*; *thirty pounds* (đơn vị hiện đại, mà vlogger không cân được) → *"Heavy. Uphill."*; *coal box* (vật không tồn tại thời đó) → *bọc vỏ cây giữ than*. Vlogger nói đúng thứ cô thấy, không gọi tên khoa học. Ánh sáng tả bằng cảm giác (*long shadows, low winter sunlight, daylight fading fast*), không tả vị trí mặt trời chính xác, vì model sẽ vẽ đúng vị trí đó và dễ lệch giữa các clip.
+
 **Cấm meta language** (phá immersion):
 - "You saw the cold open." / "As you saw earlier…"
 - "In this video…"
@@ -238,6 +254,13 @@ Thay quy tắc cũ "người bản địa không thoại, môi khép" (Translato
 - **Giới hạn kỹ thuật (kiểm chứng trong code 2026-10-05):** Slot 7 của `MZZa6b` (`agent/services/flow_batch.py` `omni_reference_video_request`) hiện chỉ gửi **một** voice id `[[voice]]`. Server lấy voice từ entity đầu tiên có `voice_description`, nên **chỉ vlogger có `voice_description`**; giọng nhân vật phụ chỉ mô tả bằng lời trong prompt. Đã test 2026-10-05: gửi 2 giọng làm clip thất bại, 1 giọng thì thành công. User chốt **1 giọng/clip**, giọng nhân vật phụ mô tả bằng chữ là đủ.
 - **Test trước khi gen hàng loạt:** sinh 1 clip có nhân vật phụ nói để kiểm tra model có phát giọng nữ của vlogger từ miệng người kia không. Có lỗi thì quay về cách cũ cho clip đó (môi khép, chỉ cử chỉ).
 
+## 13b. Nhịp dựng (hậu kỳ)
+
+Không để 70 clip 8s nối nhau đều đều. Trong script ghi một bảng **Nhịp dựng**:
+- **Chậm** (giữ đủ, có thể kéo ambient): khoảnh khắc im lặng, quan hệ, món quà cuối.
+- **Nhanh** (cắt sớm, bỏ đầu/đuôi thừa 1–3s): chuỗi thất bại lặp, hành động.
+- Cao trào dựng theo **dài → ngắn → ngắn → ngắn → payoff → dài**: đoạn căng giữ dài, chuỗi thử–hỏng cắt ngắn dần, payoff, rồi một shot dài để thở.
+
 ## 14. Checklist trước khi chốt kịch bản
 
 **Tự review như user trước khi đưa kịch bản.** Đi qua kịch bản theo từng nhóm clip (C01, C02–C03, C04–C06, …) và với mỗi nhóm ghi ba dòng: *người xem hiểu được gì*, *người xem có thể chưa hiểu gì* (ở đâu? tại sao họ quan tâm cô? nếu hỏng thì sao? bột này là gì?), *điểm retention ước lượng /10*. Mỗi dòng "chưa hiểu" phải được sửa bằng hình hoặc cử chỉ, không bằng thoại giải thích. Đây là cách user review, nên agent làm trước để user không phải chỉ ra lại.
@@ -249,17 +272,27 @@ Thay quy tắc cũ "người bản địa không thoại, môi khép" (Translato
 **Thế giới & nhất quán**
 - [ ] Có đủ 3 establishing shot 4s (sau cold open, lần di chuyển xa đầu tiên, trước Act 4), không thoại (mục 2b)?
 - [ ] Giờ trong ngày, countdown, số người, hướng mối nguy khớp ở mọi clip (mục 2c)?
+- [ ] Từng cặp mốc countdown liền nhau có clip chuyển trên hình hoặc là giấc ngủ?
+- [ ] Đạo cụ đã gieo không làm người xem hỏi "sao không dùng cái đó?" ở cao trào; mục tiêu nhiệm vụ khớp kết quả?
+- [ ] Cảnh đông người có câu khóa số người; người phụ không tên có dấu nhận diện?
+- [ ] Cold open và payoff cắt từ cùng một master take?
+- [ ] Quy trình vật lý (tạo lửa, mang than…) có câu khóa từng bước?
+- [ ] Không còn từ gây hiểu nhầm / hiện đại hóa; ánh sáng tả bằng cảm giác, không vị trí mặt trời?
 
 **Retention**
 - [ ] Có đoạn nào 20–30 giây không có thay đổi không? (phải là "không")
 - [ ] Mỗi 30–60 giây có một nấc leo thang không?
-- [ ] Mỗi Act có đúng 1 câu hỏi / mục tiêu rõ không?
+- [ ] Mỗi Act có đúng 1 câu hỏi / mục tiêu rõ không? Act giữa có mini-goal với hạn chót?
+- [ ] Countdown khoảng 7 mốc, không dày hơn?
+- [ ] Có bảng Nhịp dựng (chậm / nhanh) (mục 13b)?
 - [ ] Mục tiêu hoàn thành có lập tức tạo mục tiêu mới không?
 - [ ] Mỗi clip làm được ít nhất 1 trong 4 việc (mục 4) không?
 
 **Nhân vật**
 - [ ] Vlogger có thất bại không?
-- [ ] Vlogger có phải học từ người bản địa không?
+- [ ] Vlogger có phải học từ người bản địa không? Bài test có làm mẫu trước không?
+- [ ] Mọi suy luận của vlogger có phản ứng của người bản địa làm chứng trước?
+- [ ] Đối đầu tập thể kiềm chế (tiến chậm, đội hình sát), không kiểu Hollywood?
 - [ ] Quan hệ vlogger ↔ nhóm có tiến triển qua từng Act không?
 - [ ] Lần tiếp xúc đầu có cử chỉ cho thấy họ quan tâm điều gì lạ ở cô không?
 - [ ] Sự giúp đỡ là một cơ hội, không phải lời giải?
@@ -279,10 +312,18 @@ Thay quy tắc cũ "người bản địa không thoại, môi khép" (Translato
 
 **Kết**
 - [ ] Payoff trả đúng và trả đủ lời hứa của cold open không? Không có twist chen vào?
-- [ ] Phần sau payoff ≤ 75 giây và không có xung đột mới?
-- [ ] Phần sau payoff tối đa 1 câu suy ngẫm, không exposition khoa học/lịch sử, chia tay không kịch tính?
+- [ ] Phần sau payoff 45–60 giây và không có xung đột mới?
+- [ ] Phần sau payoff tối đa 1 câu suy ngẫm, không câu chủ đề, không exposition khoa học/lịch sử, chia tay không kịch tính?
 - [ ] Cảnh cuối là một hình ảnh đáng nhớ, không thoại, cắt đen?
 
 ## 15. Bản mẫu
 
-`output/neanderthal-51ka/script.md` (v3) là bản áp dụng đầy đủ file này: cold open C01 → EST-01 → payoff C56, 3 establishing shot (EST-01/02/03), timeline bình minh → bình minh, rêu hao dần ở Act 2, payoff quan hệ không thoại ở C61, Act 5 ~76s, 5 Act mỗi Act 1 câu hỏi, goal chain ở C27, chuỗi thất bại leo thang ở Act 2 và Act 4, áp lực xã hội ở Act 3, countdown `HOUR X — Y HRS REMAINING`, câu thoại C04 lặp lại ở C65, cảnh cuối pyrite C73–75.
+`output/neanderthal-51ka/script.md` (v4) là bản áp dụng đầy đủ file này:
+- cold open C01 và payoff C56 cắt từ một master take 10s (`MASTER-FIRE`);
+- 3 establishing shot (EST-01/02/03), timeline bình minh → bình minh, mọi cặp mốc countdown có clip chuyển (C45A);
+- bài test có làm mẫu (C10); rêu hao dần ở Act 2;
+- mini-goal Act 3 (một đùi hươu); false victory C45;
+- bọc than gieo ở C26, ngã đè ở C48, tắt ở C52;
+- Act 4 khóa 7 Neanderthal + Nora, có dấu nhận diện; nhóm phản ứng trước khi Nora đếm (C49–C50); đối đầu kiềm chế C57;
+- payoff quan hệ không thoại ở C61; câu thoại C04 lặp lại ở C65;
+- Act 5 ~52s, 7 mốc countdown, mục *Khóa vật lý* và *Nhịp dựng*, cảnh cuối pyrite C73–75.

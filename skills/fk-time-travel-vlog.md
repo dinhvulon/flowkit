@@ -28,7 +28,7 @@ Format này ăn view vì 3 thứ: **góc nhìn người thật** (mọi thứ "q
 9. **Countdown trên màn hình:** `HOUR X — Y HOURS REMAINING`. Chữ trên màn hình chỉ có năm, mission card, countdown; chèn ở hậu kỳ, không viết vào prompt.
 10. **Thoại ngắn:** bình thường 8–15 từ, căng thẳng 3–8, cảm xúc 5–12, giải thích tối đa 12–18 (clip 8s). Show > Tell. Mỗi Act ít nhất 1 nhịp im lặng. Cấm meta language ("as you saw earlier", "in this video", "this is where things get interesting", "I didn't know this yet").
 11. **Nhân vật phụ được nói, bằng ngôn ngữ không hiểu được** (không tiếng Anh, không phụ đề); prompt ghi rõ giọng từng người ở sub-clip nào, không nói chồng. Vlogger phản ứng với giọng điệu, không dịch nội dung.
-12. **Sau payoff ≤ 60–75s, không xung đột mới. Cảnh cuối là một hình ảnh đáng nhớ, không thoại, CUT BLACK** (món quà nhỏ đặt vào tay vlogger → cô nhìn lại nơi vừa sống). Không "see you next time".
+12. **Sau payoff 45–60s, không xung đột mới, không câu chủ đề. Cảnh cuối là một hình ảnh đáng nhớ, không thoại, CUT BLACK** (món quà nhỏ đặt vào tay vlogger → cô nhìn lại nơi vừa sống). Không "see you next time".
 
 ---
 
@@ -939,6 +939,25 @@ Rút ra từ dự án `output/atlantis-9600bc/` (2026-09-27). Khi mâu thuẫn v
     - **Hiện tượng:** Ref là đuôi ngựa cột cao trên đỉnh đầu + mái thưa rẽ giữa ôm trán/má; clip ra đuôi ngựa thấp sau gáy, tóc vuốt ngược, **mất mái**, nhiều lọn xõa.
     - **Root cause:** Khối khóa chỉ có cụm ngắn `high wavy ponytail with curtain bangs`; sub-clip lại viết `her ponytail ... whip sideways in the gale` → gió mạnh được hiểu là hất tung mái và kéo tóc ra sau.
     - **Quy tắc:** Trong `IDENTITY & OUTFIT LOCK` tả tóc theo **vị trí cụ thể**: `"hair pulled up into a high wavy ponytail tied at the crown of her head (not low at the nape), with wispy curtain bangs parted in the middle that cover the edges of her forehead and frame both cheeks, plus a few loose face-framing strands at the temples; her hair is never slicked back."` + câu trước `0-3s:`: `"Her curtain bangs stay over her forehead and her ponytail stays tied high at the crown for the entire clip; wind only makes the ponytail swing, it never pulls the hair back or loose."` Cảnh có gió chỉ viết đuôi ngựa `swings`, không viết `whips`.
+
+56. **COLD OPEN VÀ PAYOFF CẮT TỪ MỘT MASTER TAKE (One Master for Hook + Payoff — Neanderthal 51ka script v3 → v4, user review 05/10/2026):**
+    - **Hiện tượng (dự báo khi review script):** Cold open C01 và payoff C56 sinh thành 2 clip riêng → nhân vật, ánh sáng, vị trí linh cẩu, nhúm mồi sẽ lệch nhau; người xem thấy "đoạn phát lại" không phải cùng một khoảnh khắc.
+    - **Quy tắc:** Sinh **một** clip 10s FIXED CAM (`duration: 10`) chứa trọn khoảnh khắc: 0–2s mối nguy trong khung → hỏng → hỏng → thành công một phần → kết quả. Cold open dùng đoạn đầu tới trước kết quả → CUT ĐEN; payoff dùng 4–5s cuối. Ghi bảng giây của master trong script. Đây là clip khó nhất → sinh **đầu tiên** (Bài học 2). Clip đứng trước payoff kết bằng hướng nhìn khớp đầu đoạn phát lại (Rule 44).
+
+57. **KHÓA VẬT LÝ QUY TRÌNH THỦ CÔNG (Process Physics Lock — Neanderthal 51ka, user review 05/10/2026):**
+    - **Root cause dự báo:** Model mặc định cho "mưa tia lửa" và lửa bùng ngay khi đánh đá; vật chứa than tự cháy; người xem từng làm thật thấy giả ngay.
+    - **Quy tắc:** Viết một câu khóa cho mỗi quy trình trong mục *Khóa vật lý* của script, dán nguyên vào mọi clip có quy trình đó:
+      - Tạo lửa: `She strikes the pyrite down against the sharp edge of the flint biface at a steep angle. Only a few tiny, short-lived orange sparks jump from the point of contact and fall onto the dry moss. The moss first shows one small red glowing spot and a thin wisp of smoke; she lowers her face close and blows gently; only after several seconds does a small flame appear. There is no shower of sparks and no instant flame.`
+      - Mang than: `A small loosely rolled bundle of bark holds one glowing ember buried in dry moss, with an opening at one end for air. The bark does not burn; only faint warmth and a thin thread of smoke rise from it.`
+    - Đạo cụ cổ phải tả đúng vật thật (pyrite là cục khoáng màu đồng thau, không phải que mồi thép; biface là đá ghè hai mặt không cán). Không dùng từ gây hiểu nhầm (`black powder` → `dark mineral powder`).
+
+58. **KHÓA SỐ NGƯỜI & DẤU NHẬN DIỆN CHO NGƯỜI PHỤ KHÔNG TÊN (Head-Count Lock & Identity Anchors — Neanderthal 51ka, user review 05/10/2026):**
+    - **Root cause dự báo:** Cảnh đêm đông người, model thêm/bớt người giữa các clip; thoại "Eight of us" mâu thuẫn với hình. Người phụ không có ref thì mặt đổi qua từng clip.
+    - **Quy tắc:** (1) Cảnh nhóm ghi nguyên câu `Exactly seven Neanderthals and Nora are present; there are no other people anywhere in the frame.` (2) Mỗi người phụ không tên xuất hiện nhiều lần được gán **một dấu nhận diện dễ thấy** (sẹo trên lông mày trái, tóc dài buộc dây da, râu rậm mũi bè, tóc cắt sát, tấm da sói khoác một vai), ghi bảng trong script và dán vào prompt mỗi khi họ có mặt. Không cần ref riêng, không thoại riêng.
+
+59. **TẢ ÁNH SÁNG BẰNG CẢM GIÁC, KHÔNG VỊ TRÍ MẶT TRỜI (Qualitative Light — Neanderthal 51ka, user review 05/10/2026):**
+    - **Root cause dự báo:** Prompt kiểu "sun one hand above the ridge" làm model vẽ mặt trời đúng chỗ đó, dễ lệch hướng/độ cao giữa các clip liền nhau và mâu thuẫn với countdown.
+    - **Quy tắc:** Dùng `long shadows, low winter sunlight, daylight fading fast` / `dusk` / `moonlight`. Chỉ đưa mặt trời vào khung khi đó là chủ thể của shot (bình minh cuối tập).
 
     > **Quy ước:** mỗi lỗi gen lặp lại được ghi thành MỘT bài học đánh số riêng ở đây, gồm root-cause, câu prompt sửa cụ thể và bằng chứng (clip nào, bản nào), để lần sau rút kinh nghiệm thay vì sửa lại từ đầu.
 
