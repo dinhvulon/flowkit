@@ -4,21 +4,30 @@ Tạo kịch bản và dự án video vlog **DU HÀNH THỜI GIAN / POV VLOG L�
 
 Dùng skill này cả khi user chỉ đưa một link YouTube kiểu này và nói "làm giống vậy", hoặc hỏi cách viết kịch bản / cách chuyển cảnh cho vlog lịch sử, "xuyên không vlog", "vlog cổ đại", "POV về quá khứ".
 
-Format này ăn view vì 3 thứ: **góc nhìn người thật** (mọi thứ "quay bằng điện thoại của nhân vật" → người xem thấy mình đang ở đó), **thế giới xa lạ nhưng có thật** (sự thật lịch sử bật ra qua quan sát, không giảng bài), và **đường cong cảm xúc** đi từ đời thường → quyền lực/nguy hiểm → di sản mà người xem hiện đại đã biết tên. Cảnh nào không phục vụ 3 thứ đó thì cắt.
+Format này ăn view vì 3 thứ: **góc nhìn người thật** (mọi thứ "quay bằng điện thoại của nhân vật" → người xem thấy mình đang ở đó), **thế giới xa lạ mà tin được** (trông đúng thời kỳ; chi tiết được bịa thoải mái để phục vụ câu chuyện, không giảng bài), và **đường cong cảm xúc** đi từ đời thường → quyền lực/nguy hiểm → di sản mà người xem hiện đại đã biết tên. Cảnh nào không phục vụ 3 thứ đó thì cắt.
+
+### ⚖️ Hư cấu được phép (user chốt 2026-10-05 — áp dụng cho mọi tập, ghi đè các chỗ "fact-check / nguồn / ✅⚠️" cũ bên dưới)
+- **Đây là phim giải trí, không phải tài liệu.** Không cần đúng lịch sử 100%. Sự kiện, phong tục, nhân vật, hành vi động vật, công cụ, nghi lễ… **cái gì bịa được để câu chuyện hay hơn thì bịa**.
+- **Nora không dạy lịch sử.** Ngoài câu hook nói đang ở đâu, thời nào, cô không giảng niên đại, di chỉ, "scientists argue", "we find this at sites", "archaeologists think", không trích nghiên cứu. Thế giới hiện ra qua việc cô làm, cô thấy và cô phản ứng.
+- **`/fk-research` là tùy chọn**, chỉ để gom ý tưởng và chi tiết hình ảnh cho bối cảnh trông thật. Không bắt buộc trước khi viết, không cần cột độ chắc ✅/⚠️, không cần nguồn.
+- **Vẫn giữ 2 thứ** (không phải vì lịch sử):
+  1. Hình ảnh trông đúng thời kỳ — đồ vật lệch thời đại lộ liễu (nhựa, kim loại sáng bóng ở thời đồ đá, đồng hồ) phá cảm giác "đang ở đó".
+  2. Không biếm họa / làm nhục dân tộc, tôn giáo (mục 3).
+- **Mẹo sinh tồn cũng được bịa** (user chốt 2026-10-05): tiêu chí duy nhất là kịch bản hay, thu hút người xem — không cần mẹo đúng ngoài đời.
 
 ---
 
 ## 📚 TÀI LIỆU THAM CHIẾU — BẮT BUỘC ĐỌC TRƯỚC KHI VIẾT
 
-Mọi quy tắc trong skill này được rút ra từ 5 file ở `.agents/skills/time-travel-vlog/references/`. **Đọc cả 5 file trước khi viết bất kỳ dòng kịch bản/prompt nào** — chúng là nguồn chuẩn cho độ chân thực; skill này chỉ tóm tắt và ánh xạ sang FlowKit.
+Mọi quy tắc trong skill này được rút ra từ 5 file ở `.agents/skills/time-travel-vlog/references/`. **Đọc cả 5 file trước khi viết bất kỳ dòng kịch bản/prompt nào** — chúng là nguồn chuẩn cho nhịp, góc máy, chuyển cảnh và giọng; skill này chỉ tóm tắt và ánh xạ sang FlowKit.
 
 | File | Đọc ở bước | Dùng để |
 |---|---|---|
 | `reference-analysis.md` | Trước tiên, trước mọi bước | Chuẩn nhịp (~15s/beat), tỉ lệ góc máy, dòng thời gian beat, cách giấu mối nối quan sát được từ video mẫu thật |
-| `era-research.md` | Mục 4 — Research Pack | Checklist nghiên cứu thời kỳ + bảng beat output |
+| `era-research.md` | Mục 4 — Research Pack | Checklist ý tưởng thời kỳ + bảng beat output (tùy chọn, bịa được) |
 | `prompt-templates.md` | Mục 2 + mục 10 | Mẫu `CHARACTER_LOCK`, Clip JSON, mẫu shot (dân bản địa nói, POV, máy dựng, toàn cảnh) |
 | `transitions.md` | Mục 7 | 3 cách nối clip, luật giấu mối nối, prompt A/B cho từng kỹ thuật, bảng chọn nhanh |
-| `voice-bible.md` | Mục 2 + mục 5 (trước khi viết bất kỳ dòng thoại nào) | `VOICE_LOCK` khóa tính cách (Nora: nhà khảo cổ, chuyên gia sinh tồn), mật độ thoại, chửi thề bị bíp, 3 khuôn beat truyền kiến thức, checklist chống giọng AI, mẹo sinh tồn sai cần tránh |
+| `voice-bible.md` | Mục 2 + mục 5 (trước khi viết bất kỳ dòng thoại nào) | `VOICE_LOCK` khóa tính cách (Nora: chuyên gia sinh tồn liều lĩnh, không giảng lịch sử), mật độ thoại, chửi thề bị bíp, 3 khuôn beat sinh tồn, checklist chống giọng AI, mẹo sinh tồn nguy hiểm cần tránh |
 
 **Khi các nguồn mâu thuẫn**, ưu tiên theo thứ tự: `reference-analysis.md` (quan sát từ video thật) → skill này → phần "Kỹ thuật bổ sung" của `transitions.md`. Ví dụ: `transitions.md` gợi ý title "3 HOURS LATER" cho time-skip, nhưng video mẫu không có chữ trên màn hình → **không dùng title** (mục 8).
 
@@ -29,12 +38,12 @@ Mọi quy tắc trong skill này được rút ra từ 5 file ở `.agents/skill
 Skill này kết hợp:
 1. **Khung kịch bản 7 hồi du hành thời gian** — hook giữa chợ/đường lớn → đời thường → quyền lực → cao trào nguy hiểm → hạ nhịp → di sản → kết, với tỉ lệ % thời lượng cố định (mục 5).
 2. **Character Bible khóa nhân vật** — khối `CHARACTER_LOCK` cố định dán vào mọi entity/scene để giữ mặt, tóc, trang phục nhân vật giống hệt suốt video (mục 2).
-3. **Research Pack** — checklist sự thật lịch sử theo thời kỳ, tránh bịa sự kiện/vật dụng sai niên đại (mục 4).
+3. **Research Pack (tùy chọn)** — gom chi tiết và ý tưởng cho thời kỳ, thật hay bịa đều được; chỉ tránh đồ vật lệch thời đại lộ liễu (mục 4).
 4. **Storyboard + Clip JSON từng clip 8s** — mỗi clip có `transition_in`/`transition_out` viết thành câu prompt cụ thể và cách nối được ghi rõ (mục 6, 7, 10).
 5. **Chuẩn chân thực "máy của nhân vật"** — ngôn ngữ hình ảnh điện thoại, ràng buộc viết thành câu khẳng định, hậu kỳ đồng nhất (mục 9, 11, Bước 5).
 
-Skill này **gọi các skill FlowKit khác** để tự động fact-check và triển khai:
-- `/fk-research` — bắt buộc chạy trước khi viết bất kỳ prompt nào, để khóa chính xác niên đại, địa danh, trang phục, ẩm thực.
+Skill này **gọi các skill FlowKit khác** để triển khai:
+- `/fk-research` — tùy chọn, để lấy ý tưởng và chi tiết hình ảnh (địa hình, trang phục, đồ ăn). Không bắt buộc đúng sự thật.
 - `/fk-add-material` — khóa chất liệu ảnh (`realistic` hoặc material điện thoại tùy chỉnh, mục 9).
 - `/fk-camera-guide` — chuẩn góc máy selfie/POV cho Veo 3 / Omni Flash.
 - `/fk-gen-music` — nhạc nền/ambient trải liên tục (mục 8).
@@ -67,7 +76,7 @@ Chỉ học format; không sao chép tên, ngoại hình hay lời thoại nhân
 ### 1. Khung "Time Capsule" — Phải chính xác tới năm
 - **CẤM** dùng từ chung chung ("thời phong kiến", "cổ đại") — AI sẽ trộn lẫn nhiều thời kỳ/trang phục du lịch hiện đại.
 - **BẮT BUỘC** chỉ định rõ thành phố + năm trong mọi `description`/`prompt`: `Rome, 79 AD` / `Xianyang, Qin dynasty China, 211 BC` / `London, 1890`.
-- Chi tiết lịch sử phải qua `/fk-research` trước — vật dụng/món ăn xuất hiện sai niên đại (vd: ớt, ngô, khoai tây ở châu Á/châu Âu trước thế kỷ 16) là lỗi thường gặp nhất.
+- Tránh đồ vật lệch thời đại **lộ liễu** vì nó phá cảm giác thật; còn lại chi tiết được bịa (xem "Hư cấu được phép").
 
 ### 1b. Chiến Lược Săn "Trend Đang Lên" (Rising Trends) Cho Kênh Mới
 Để kéo kênh mới từ vài trăm view lên hàng chục nghìn đến hàng triệu view, bắt buộc phải chọn các chủ đề có sức hút tự nhiên cực mạnh (**High-Stakes & Tò mò tột độ**):
@@ -134,24 +143,24 @@ Tên trong `CHARACTER_LOCK`, tên entity và tên người nói trong `video_pro
 - **Khóa mô tả Outfit trong Prompt (`OUTFIT LOCK`):** Khối mô tả trang phục trong mọi prompt cảnh video (`video_prompt`) BẮT BUỘC phải đối chiếu và mô tả đồng nhất chuẩn xác theo ảnh Outfit đã duyệt, tuyệt đối không để xảy ra lệch trang phục (như kịch bản tả đồ da thú tiền sử mà prompt lại viết váy lụa satin).
 
 ### 3. Strict Ethnicity Lock & Period Lock
-- Mọi người xuất hiện trong khung (người đi đường, người bán hàng, lính canh, quý tộc) phải **đúng chủng tộc bản địa của thời kỳ/địa điểm đó** — nghiên cứu qua `/fk-research` trước khi viết `description`.
+- Mọi người xuất hiện trong khung (người đi đường, người bán hàng, lính canh, quý tộc) phải **trông như người bản địa của thời kỳ/địa điểm đó** để người xem tin, không cần nghiên cứu chính xác.
 - **PERIOD LOCK**: cấm rập khuôn điện ảnh sai (vd: mũ sừng Viking), cấm vật liệu/kiến trúc/trang phục lệch niên đại. Ánh sáng dùng mặt trời/đuốc/đèn dầu, tránh nguồn sáng không đúng thời đại.
-- Không làm nhục/biếm họa dân tộc, tôn giáo. Hình phạt/chiến tranh chỉ ám chỉ, không mô tả máu me — vừa đúng lịch sử vừa tránh bị Veo từ chối (`UNSAFE_GENERATION`) và YouTube hạn chế quảng cáo. Xem bảng từ ngữ an toàn trong `fk-create-project.md`.
+- Không làm nhục/biếm họa dân tộc, tôn giáo. Hình phạt/chiến tranh chỉ ám chỉ, không mô tả máu me — để tránh bị Veo từ chối (`UNSAFE_GENERATION`) và YouTube hạn chế quảng cáo. Xem bảng từ ngữ an toàn trong `fk-create-project.md`.
 
-### 4. Research Pack — điền đủ checklist `era-research.md` trước khi viết scene
-Chạy `/fk-research`, rồi điền **toàn bộ** checklist ở `era-research.md` (bối cảnh, thị giác, đời sống, cấm kỵ), đánh dấu độ chắc chắn ✅ chắc chắn · ⚠️ tranh cãi/phỏng đoán. Chọn ra **10–15 beat sự thật thật**. Ưu tiên:
-- Chi tiết thị giác **trái với hình dung phổ biến** (vd: tượng binh mã từng được sơn màu rực rỡ) — khoảnh khắc "wow" người xem đem đi bình luận/chia sẻ.
+### 4. Research Pack — gom chi tiết hay (tùy chọn, bịa được)
+Có thể chạy `/fk-research` để lấy cảm hứng, hoặc tự bịa. Chọn ra **10–15 beat** làm câu chuyện hay — thật hay bịa đều được, miễn là trông hợp với thế giới đó. Ưu tiên:
+- Chi tiết thị giác **trái với hình dung phổ biến** — khoảnh khắc "wow" người xem đem đi bình luận/chia sẻ.
 - Chi tiết cho POV xúc giác: cầm, nếm, sờ, đong (hạt kê, thẻ tre, giáp, kiếm, tiền xu).
-- **Dramatic irony**: sự kiện lớn đang/sắp xảy ra mà vlogger biết còn dân chưa biết — gia vị cho lời thoại thì thầm với người xem.
-- Chợ & tiền tệ, đo lường, đồ ăn thường ngày, luật lệ & hình phạt (beat căng nhất), giấy tờ đi đường/giờ giới nghiêm, nghề nghiệp/lao dịch, tín ngưỡng, vệ sinh/nước uống (beat hài hiệu quả), phép tắc với người trên, vị trí phụ nữ trong xã hội (tạo xung đột nếu vlogger là nữ).
-- Sự kiện/công trình người xem đã biết tên để làm điểm đến cuối (Colosseum, Vạn Lý Trường Thành, Big Ben...).
+- **Dramatic irony**: chuyện lớn sắp xảy ra mà vlogger biết còn dân chưa biết — gia vị cho lời thoại thì thầm với người xem.
+- Chợ & tiền tệ, đồ ăn thường ngày, luật lệ & hình phạt (beat căng nhất), nghề nghiệp, tín ngưỡng, vệ sinh/nước uống (beat hài hiệu quả), phép tắc với người trên, vị trí phụ nữ (tạo xung đột nếu vlogger là nữ).
+- Một thứ người xem đã biết tên để làm điểm đến cuối (Colosseum, Vạn Lý Trường Thành, Big Ben...).
 
-Output bắt buộc là bảng beat:
+Output là bảng beat:
 
-| # | Beat | Sự thật | Độ chắc | Cơ hội hình ảnh | Cơ hội xung đột/hài |
-|---|---|---|---|---|---|
+| # | Beat | Chi tiết (thật hoặc bịa) | Cơ hội hình ảnh | Cơ hội xung đột/hài |
+|---|---|---|---|---|
 
-Beat ⚠️ → cho nhân vật nói dạng suy đoán: "I think...", "historians say...", "apparently...".
+Nora nói mọi chi tiết như điều cô đang thấy tận mắt, không rào đón kiểu "historians say".
 
 ### 5. Cấu trúc kịch bản 7 hồi theo % thời lượng & 23 Beat Ánh Xạ
 
@@ -192,7 +201,7 @@ Beat ⚠️ → cho nhân vật nói dạng suy đoán: "I think...", "historian
 | **17** | 7:25 | **Hạ nhịp (Decompression)** | **Đi nhờ xe bò** với nông dân thân thiện, nhịp thở chậm lại | Đi nhờ xe rơm/thuyền tam bản, trò chuyện với dân quê |
 | **18** | 7:50 | **Reveal #2: Di sản từ xa** | Từ trên xe nhìn ra xa: thấy bóng dáng công trình kỳ quan | Thấy kỳ quan/di sản nổi tiếng từ đằng xa |
 | **19** | 7:55 | **Quy trình chế tác** | Đến xưởng chế tác/lò gốm/nơi đẽo đá tạo nên kỳ quan | Hậu trường xây dựng kỳ quan (xưởng đá, lò nung) |
-| **20** | 8:50 | **Chi tiết "Wow" trái ngược** | Điểm nhấn lịch sử ít ai biết (vd: tượng từng sơn màu rực rỡ) | Chi tiết thật gây sửng sốt trái với phim ảnh |
+| **20** | 8:50 | **Chi tiết "Wow" trái ngược** | Điểm nhấn ít ai ngờ (vd: tượng từng sơn màu rực rỡ) | Chi tiết gây sửng sốt trái với phim ảnh (thật hoặc bịa) |
 | **21** | 9:05 | **POV xúc giác: Di sản** | Tay nhân vật chạm vào hiện vật (giáp đồng, thanh kiếm, mặt đá) | Tay chạm trực tiếp vào hiện vật bảo vật thời đó |
 | **22** | 9:25 | **Reveal #3: Đỉnh toàn cảnh** | Đứng trên gờ cao nhìn xuống toàn bộ kỳ quan khổng lồ | Toàn cảnh kỳ quan tráng lệ (vẫn từ góc nhìn cô đứng) |
 | **23** | 10:22 | **Kết trầm** | **Máy dựng cố định** lúc hoàng hôn, ngồi tĩnh suy ngẫm, mồi tập sau | Ngồi tĩnh dưới bóng hoàng hôn suy ngẫm, hẹn tập sau |
@@ -203,7 +212,7 @@ Shorts: hook (1) → 2–3 beat đời thường/wow (2–4) → nguy hiểm ho�
 - **Mật độ từ (user chốt 2026-10-01: nói nhanh để giữ nhịp, không gây buồn ngủ)**: clip 10s = **22–28 từ**; 8s = 18–22; 6s = 13–16; 4s = 8–10.
 - Chỉ chừa **~0.5s không thoại ở đầu và cuối mỗi clip** cho chuyển cảnh — không bao giờ cắt ngang câu.
 - **Một người nói/clip.** Dân bản địa nói → vlogger im lặng phản ứng (mắt mở to, môi mím).
-- Thoại viết theo `VOICE_LOCK`, kèm tag cách diễn đạt: `Nora says (fast, teeth chattering, half-laughing): "..."`. Sự thật lịch sử nói qua trải nghiệm của vlogger, không giảng bài.
+- Thoại viết theo `VOICE_LOCK`, kèm tag cách diễn đạt: `Nora says (fast, teeth chattering, half-laughing): "..."`. Nora không giảng lịch sử: thế giới hiện ra qua việc cô làm và phản ứng.
 - **Chạy checklist chống giọng AI (`voice-bible.md` mục 6) trên từng dòng thoại** trước khi đưa vào `video_prompt`. Cấm câu chốt khẩu hiệu, mô tả lại thứ đang hiện trên hình, giọng giảng ("Survival rule number one"), số liệu vlogger không thể biết.
 - Chửi thề nhẹ chỉ viết dạng cắt dở (`"sh—"`, `"what the f—"`) và bíp ở hậu kỳ; tối đa 1 lần / 3 clip, không chửi trong hook hay beat kết (`voice-bible.md` mục 3).
 - Mỗi beat có một thứ mới: nơi mới, người mới, thông tin mới hoặc nguy hiểm mới.
@@ -215,7 +224,7 @@ Dùng khi bối cảnh tự nó có thể giết người (Kỷ Băng Hà, khủ
 | Hồi (mục 5a) | Giờ trong 24h | Áp lực cơ thể | Beat sinh tồn |
 |---|---|---|---|
 | 1 Hook | Giờ 0–1 | Sốc lạnh / sốc môi trường | Câu đầu nói rõ ở đâu, năm nào, thử thách 24h |
-| 2 Đời thường | Giờ 1–8 | Tê tay → run → đói | Chỗ trú, lửa và nước, ăn, quần áo — **mỗi beat là một phương pháp sinh tồn có giải thích + bằng chứng khảo cổ** (khuôn A/B/C ở `voice-bible.md` mục 4) |
+| 2 Đời thường | Giờ 1–8 | Tê tay → run → đói | Chỗ trú, lửa và nước, ăn, quần áo — **mỗi beat là một việc sinh tồn có giải thích ngắn vì sao**, không bằng chứng khảo cổ (khuôn A/B/C ở `voice-bible.md` mục 4) |
 | 3 Quyền lực | Giờ 8–12 | Mệt, mất cảm giác ngón chân | Reveal #1: đàn thú / bộ lạc chuẩn bị đi săn |
 | 4 Cao trào | Giờ 12–15 | Adrenaline, thở dốc | Cuộc săn / thú lớn tấn công / bão — đúng **một** cao trào |
 | 5 Hạ nhịp | Giờ 15–17 | Run sau cơn sợ, cười được | Chia thịt, được bộ lạc coi là người trong nhóm |
@@ -223,8 +232,8 @@ Dùng khi bối cảnh tự nó có thể giết người (Kỷ Băng Hà, khủ
 | 7 Kết | Giờ 23–24 | Tĩnh, kiệt | Máy dựng cố định, nói thật lòng, không có câu đạo lý |
 
 - **Mốc giờ nói bằng lời**, không bằng chữ trên màn hình (mục 8): `"Hour six."` mở đầu khoảng mỗi 3 beat, không phải mỗi clip.
-- **Vlogger là chuyên gia (user chốt 2026-10-01): nhà khảo cổ có kỹ năng sinh tồn thượng thừa.** Người xem ở lại vì học được phương pháp dùng được + lý do + lịch sử thật đằng sau. Mỗi beat kiến thức theo 1 trong 3 khuôn ở `voice-bible.md` mục 4: **Làm → Vì sao → Bằng chứng**, **Lý thuyết vs Thực tế** (hiện vật cô từng đào được giờ thấy được dùng), **Người bản địa dạy mẹo địa phương → Nora giải thích** (Translator POV). Mẹo nói dạng mệnh lệnh của người thật ("Don't eat snow. Ever."), không dùng nhãn khuôn mẫu ("Survival rule number one:", "Here's the trick:").
-- **Mọi mẹo sinh tồn phải có nguồn trong bảng beat (mục 4)**, đánh dấu ✅/⚠️. Danh sách câu nghe hay nhưng sai (phổi đóng băng, hoại tử 10 phút, "8,000 calo") ở `voice-bible.md` mục 7.
+- **Vlogger là chuyên gia sinh tồn (user chốt 2026-10-01, sửa 2026-10-05): giỏi, liều, nói nhanh — nhưng KHÔNG dạy lịch sử.** Người xem ở lại vì cô làm được việc thật, giải thích vì sao bằng một câu đời thường, và vì nguy hiểm leo thang. Mỗi beat theo 1 trong 3 khuôn ở `voice-bible.md` mục 4: **Làm → Vì sao**, **Cách của mình vs cách của họ** (cô thử cách hiện đại, thất bại, cách bản địa thắng), **Người bản địa dạy → Nora làm theo** (Translator POV). Mẹo nói dạng mệnh lệnh của người thật ("Don't eat snow. Ever."), không dùng nhãn khuôn mẫu ("Survival rule number one:", "Here's the trick:").
+- **Không cần nguồn cho mẹo hay chi tiết thế giới** — bịa được, kể cả mẹo sinh tồn. Tiêu chí duy nhất: hay và giữ chân người xem.
 - Tiêu đề: dùng động từ **"Survived"** thay cho "Spent" (`I Survived 24 Hours in/with …`); chi tiết SEO ở `/fk-youtube-seo`.
 
 ### 6. Storyboard & tỉ lệ loại shot
@@ -949,7 +958,7 @@ Chỉ học tỉ lệ/nhịp; không sao chép tên, ngoại hình hay lời tho
 
 1. **Giả định** (3–5 dòng) — thời kỳ/năm, độ dài, số beat/scene, tỉ lệ khung, material.
 2. **Character Bible** — khối `CHARACTER_LOCK` + `voice_description` + `VOICE_LOCK` (`voice-bible.md` mục 1). Bối cảnh sinh tồn → ghi rõ đang dùng Survival Preset (mục 5c).
-3. **Research pack** — bảng beat (mục 4), kèm độ chắc ✅/⚠️.
+3. **Research pack** — bảng beat (mục 4), thật hoặc bịa.
 4. **Outline theo 7 hồi** + thời lượng từng hồi.
 5. **Bảng storyboard toàn bộ beat** (mục 6).
 5b. **Bảng vật lý từng clip — BẮT BUỘC HỎI USER DUYỆT** (góp ý của user, mục 11 quy tắc 21) trước khi viết Clip JSON. Dùng `AskUserQuestion` hoặc hỏi thẳng trong chat, và chỉ viết Clip JSON / sinh video sau khi user đồng ý hoặc sửa bảng:
@@ -980,7 +989,7 @@ Project mới → flush request PENDING cũ trước (theo `CLAUDE.md`). Gặp l
 
 ### Bước 1: Nghiên cứu Dữ Kiện & Khóa Mỹ Thuật
 1. **Đọc 4 file references** (phần 📚) nếu chưa đọc.
-2. **Fact-check lịch sử qua `/fk-research`** (bắt buộc, trước khi viết bất kỳ prompt nào), rồi điền checklist `era-research.md`:
+2. **(Tùy chọn) Lấy ý tưởng qua `/fk-research`**, rồi điền checklist `era-research.md` — bịa thêm thoải mái:
    ```bash
    /fk-research "Ancient Rome 79 AD daily life market food dress Pompeii"
    # hoặc: /fk-research "Qin dynasty China 211 BC Xianyang market commoners soldiers"

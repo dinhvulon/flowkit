@@ -24,7 +24,7 @@ Khi bạn muốn sản xuất một tập vlog mới, hãy thực hiện tuần 
 ```text
 ┌─────────────────────────────────────────────────────────────────────────────┐
 │ 0. THIẾT LẬP MÔI TRƯỜNG & UI WEB (Pre-Flight)   ➔ /health: true & :5173     │
-│ 1. SĂN TREND & NGHIÊN CỨU DỮ KIỆN (Fact-Check)  ➔ Rising Trends & /fk-research │
+│ 1. SĂN TREND & Ý TƯỞNG (research tùy chọn)      ➔ Rising Trends & /fk-research │
 │ 2. TẠO KỊCH BẢN & SET ACTIVE PROJECT            ➔ /fk-time-travel-vlog      │
 │ 3. NẠP ẢNH MẶT THẬT (Tùy chọn)                  ➔ /fk-upload-ref            │
 │ 4. CHẠY PIPELINE TỰ ĐỘNG (All-in-One)           ➔ /fk-pipeline              │
@@ -170,9 +170,11 @@ Theo dõi các dự án phim sắp chiếu hoặc sự kiện truyền thông: K
 
 ---
 
-### BƯỚC 1: Nghiên Cứu Dữ Kiện Lịch Sử (`/fk-research`)
+### BƯỚC 1 (tùy chọn): Lấy ý tưởng thế giới (`/fk-research`)
 
-Sau khi chọn đề tài theo 3 nhóm trên, tiến hành xác minh thực tế để kịch bản không bị AI "ảo giác" hoặc sáng tác sai niên đại:
+> Hư cấu được phép (user chốt 2026-10-05): vlog du hành thời gian là phim giải trí — cái gì bịa được thì bịa, không cần đúng lịch sử 100%, Nora không dạy lịch sử. Research chỉ để lấy chất liệu hình ảnh cho thế giới trông đúng thời kỳ. Mẹo sinh tồn cũng được bịa; tiêu chí duy nhất là kịch bản hay, thu hút.
+
+Nếu muốn lấy chất liệu sau khi chọn đề tài theo 3 nhóm trên:
 
 ```bash
 # Ví dụ chọn đề tài theo 3 nhóm trend:
@@ -183,7 +185,7 @@ Sau khi chọn đề tài theo 3 nhóm trên, tiến hành xác minh thực tế
 ```
 
 > [!TIP]
-> Kết quả nghiên cứu sẽ được lưu vào `.omc/research/<topic>.md`. Các chi tiết về trang phục, giá cả hàng hóa, món ăn sẽ được nhúng thẳng vào câu thoại của Vlogger.
+> Kết quả nghiên cứu sẽ được lưu vào `.omc/research/<topic>.md`. Dùng làm chất liệu hình ảnh (trang phục, đồ vật, món ăn) — trộn tự do với chi tiết bịa; không biến thành bài giảng trong thoại.
 
 ---
 
@@ -261,7 +263,7 @@ Nếu bạn muốn đóng vai Vlogger chính trong chuyến du hành thay vì đ
 #### 🗣️ Kỹ Thuật Vlog Phiên Dịch (Translator POV — Giao Tiếp Tự Nhiên Với Người Bản Địa)
 
 > [!IMPORTANT]
-> **Giải quyết triệt để rào cản 1 giọng của AI và bảo tồn tính chân thực lịch sử:**
+> **Giải quyết triệt để rào cản 1 giọng của AI và giữ cảm giác thế giới tin được:**
 > - **Rào cản:** Model video AI (Omni Flash `abra_r2v` / Veo 3) chỉ nhận 1 `voice_id` trong Slot 7 (`Laomedeia`). Nếu để nhân vật phụ (thợ săn, thương nhân, nông dân) nói thoại tiếng Anh, AI sẽ lấy chính giọng nữ Laomedeia phát ra từ miệng nhân vật phụ gây méo tiếng và vỡ khẩu hình. Hơn nữa, người tiền sử hay cổ đại nói tiếng Anh lưu loát sẽ phá nát tính tài liệu chân thực.
 > - **Quy tắc Translator POV (BẮT BUỘC):**
 >   1. **Người bản địa giao tiếp tự nhiên:** Nhân vật phụ dùng cử chỉ tay, biểu cảm sống động, hiệu lệnh săn bắn hoặc cổ ngữ tự nhiên (được AI xử lý như âm thanh môi trường). Trong prompt chỉ mô tả hành động và cảm xúc, **TUYỆT ĐỐI KHÔNG ghi thoại tiếng Anh cho nhân vật phụ**.

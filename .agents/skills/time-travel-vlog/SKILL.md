@@ -1,12 +1,12 @@
 ---
 name: time-travel-vlog
 description: >-
-  Viết kịch bản + storyboard từng clip 8 giây + kế hoạch chuyển cảnh cho video "Time Travel Vlog" bằng AI (kiểu "I Time Traveled to Ancient China in 211 BC", "A Day in Ancient Rome", "POV you woke up in 1890 London") — vlogger hiện đại cầm điện thoại selfie, du hành về một thời kỳ lịch sử, nói chuyện với camera và dân bản địa. Tạo character bible khóa nhân vật, gói nghiên cứu lịch sử, cấu trúc kịch bản giữ chân người xem, prompt JSON cho Veo 3.1 / Google Flow (ảnh khung đầu cho Grok/Imagen nếu cần), thiết kế chuyển cảnh in-camera (whip pan, che ống kính, xuyên cửa, lật camera, match cut, time-skip) và hướng dẫn ráp CapCut + đóng gói YouTube. LUÔN dùng skill này khi user muốn làm video du hành thời gian, vlog lịch sử, POV về quá khứ, "time travel vlog", "vlog cổ đại", "xuyên không vlog", clone video kiểu trên YouTube/TikTok, hoặc hỏi cách viết kịch bản / cách chuyển cảnh cho video vlog lịch sử bằng AI — kể cả khi user chỉ đưa một link YouTube kiểu này và nói "làm giống vậy".
+  Viết kịch bản + storyboard từng clip 8 giây + kế hoạch chuyển cảnh cho video "Time Travel Vlog" bằng AI (kiểu "I Time Traveled to Ancient China in 211 BC", "A Day in Ancient Rome", "POV you woke up in 1890 London") — vlogger hiện đại cầm điện thoại selfie, du hành về một thời kỳ lịch sử, nói chuyện với camera và dân bản địa. Tạo character bible khóa nhân vật, gói nghiên cứu (tùy chọn — thế giới được phép hư cấu), cấu trúc kịch bản giữ chân người xem, prompt JSON cho Veo 3.1 / Google Flow (ảnh khung đầu cho Grok/Imagen nếu cần), thiết kế chuyển cảnh in-camera (whip pan, che ống kính, xuyên cửa, lật camera, match cut, time-skip) và hướng dẫn ráp CapCut + đóng gói YouTube. LUÔN dùng skill này khi user muốn làm video du hành thời gian, vlog lịch sử, POV về quá khứ, "time travel vlog", "vlog cổ đại", "xuyên không vlog", clone video kiểu trên YouTube/TikTok, hoặc hỏi cách viết kịch bản / cách chuyển cảnh cho video vlog lịch sử bằng AI — kể cả khi user chỉ đưa một link YouTube kiểu này và nói "làm giống vậy".
 ---
 
 # Time Travel Vlog — Kịch bản & Chuyển cảnh
 
-Format này ăn view vì 3 thứ: **góc nhìn người thật** (mọi thứ "quay bằng điện thoại của nhân vật" → người xem thấy mình đang ở đó), **thế giới xa lạ nhưng có thật** (sự thật lịch sử bật ra qua quan sát), và **đường cong cảm xúc** đi từ đời thường → quyền lực/nguy hiểm → di sản mà người xem hiện đại đã biết tên. Cảnh nào không phục vụ 3 thứ đó thì cắt.
+Format này ăn view vì 3 thứ: **góc nhìn người thật** (mọi thứ "quay bằng điện thoại của nhân vật" → người xem thấy mình đang ở đó), **thế giới xa lạ mà tin được** (trông đúng thời kỳ; chi tiết được bịa thoải mái, bật ra qua việc đang làm, không giảng), và **đường cong cảm xúc** đi từ đời thường → quyền lực/nguy hiểm → di sản mà người xem hiện đại đã biết tên. Cảnh nào không phục vụ 3 thứ đó thì cắt.
 
 Video mẫu gốc đã được phân tích khung-hình ở `.agents/skills/time-travel-vlog/references/reference-analysis.md` — **đọc file này trước khi viết**, nó là chuẩn tham chiếu về nhịp, góc máy và chuyển cảnh.
 
@@ -49,9 +49,11 @@ Gồm: mặt (tuổi, dáng mặt, mắt, tàn nhang/nốt ruồi), tóc (màu, 
    - **Đồng bộ 3 mốc thời gian**: 0–3s mặc/xỏ đạo cụ vào người; 3–6s đạo cụ mặc xong giơ lên ngang ngực khoe camera; 6–8s tương tác cảm xúc, kiểm tra độ ấm/vừa vặn.
 
 
-## Bước 2 — Research pack
+## Bước 2 — Research pack (tùy chọn)
 
-Điền checklist `.agents/skills/time-travel-vlog/references/era-research.md`, chọn 10–15 beat thật. Ưu tiên:
+> Hư cấu được phép (user chốt 2026-10-05): đây là phim giải trí, cái gì bịa được thì bịa; Nora không dạy lịch sử. Xem mục "Hư cấu được phép" ở đầu `skills/fk-time-travel-vlog.md`. Mẹo sinh tồn cũng được bịa; tiêu chí duy nhất là kịch bản hay, thu hút.
+
+Nếu muốn, điền checklist `.agents/skills/time-travel-vlog/references/era-research.md` để lấy ý tưởng, chọn 10–15 beat (thật hoặc bịa). Ưu tiên:
 - Chi tiết thị giác **trái với hình dung phổ biến** (vd: tượng binh mã từng được sơn màu rực rỡ) — đây là khoảnh khắc "wow" người xem đem đi bình luận/chia sẻ.
 - Chi tiết cho POV xúc giác: cầm, nếm, sờ, đong (hạt kê, thẻ tre, giáp, kiếm).
 - Sự kiện/công trình người xem đã biết tên để làm điểm đến cuối.
@@ -103,7 +105,7 @@ Khi lập Storyboard dài (~10 phút ≈ 38–42 clip 8s), dùng bảng 23 beat 
 | **17** | 7:25 | **Hạ nhịp (Decompression)** | **Đi nhờ xe bò** với nông dân thân thiện, nhịp thở chậm lại | Đi nhờ xe rơm/thuyền tam bản, trò chuyện với dân quê |
 | **18** | 7:50 | **Reveal #2: Di sản từ xa** | Từ trên xe nhìn ra xa: thấy bóng dáng công trình kỳ quan | Thấy kỳ quan/di sản nổi tiếng từ đằng xa |
 | **19** | 7:55 | **Quy trình chế tác** | Đến xưởng chế tác/lò gốm/nơi đẽo đá tạo nên kỳ quan | Hậu trường xây dựng kỳ quan (xưởng đá, lò nung) |
-| **20** | 8:50 | **Chi tiết "Wow" trái ngược** | Điểm nhấn lịch sử ít ai biết (vd: tượng từng sơn màu rực rỡ) | Chi tiết thật gây sửng sốt trái với phim ảnh |
+| **20** | 8:50 | **Chi tiết "Wow" trái ngược** | Chi tiết thế giới gây sửng sốt (thật hoặc bịa), hiện ra trên hình, không giảng | Chi tiết lạ trái với hình dung của người xem |
 | **21** | 9:05 | **POV xúc giác: Di sản** | Tay nhân vật chạm vào hiện vật (giáp đồng, thanh kiếm, mặt đá) | Tay chạm trực tiếp vào hiện vật bảo vật thời đó |
 | **22** | 9:25 | **Reveal #3: Đỉnh toàn cảnh** | Đứng trên gờ cao nhìn xuống toàn bộ kỳ quan khổng lồ | Toàn cảnh kỳ quan tráng lệ (vẫn từ góc nhìn cô đứng) |
 | **23** | 10:22 | **Kết trầm** | **Máy dựng cố định** lúc hoàng hôn, ngồi tĩnh suy ngẫm, mồi tập sau | Ngồi tĩnh dưới bóng hoàng hôn suy ngẫm, hẹn tập sau |
@@ -145,9 +147,9 @@ Khi lập Storyboard dài (~10 phút ≈ 38–42 clip 8s), dùng bảng 23 beat 
 
 **Quy tắc thoại** (kinh nghiệm thực chiến tối ưu cho Veo / AI Video):
 - Mật độ (user chốt 2026-10-01, nói nhanh để giữ nhịp): clip 10s ≈ **22–28 từ**, clip 8s ≈ **18–22 từ**. Chỉ chừa ~0.5s không thoại ở đầu/cuối mỗi clip cho chuyển cảnh.
-- Thoại viết theo `VOICE_LOCK` và qua checklist chống giọng AI ở `.agents/skills/time-travel-vlog/references/voice-bible.md` (tính cách: Nora là nhà khảo cổ có kỹ năng sinh tồn thượng thừa; chửi thề bị bíp; 3 khuôn beat truyền kiến thức sinh tồn + lịch sử).
+- Thoại viết theo `VOICE_LOCK` và qua checklist chống giọng AI ở `.agents/skills/time-travel-vlog/references/voice-bible.md` (tính cách: Nora là chuyên gia sinh tồn liều lĩnh, KHÔNG dạy lịch sử; chửi thề bị bíp; 3 khuôn beat: Làm → Vì sao, Cách của mình vs cách của họ, Người bản địa dạy → Nora làm theo).
 - Một người nói/clip. Dân bản địa nói → nhân vật im lặng phản ứng (mắt mở to, môi mím).
-- Giọng vlog thật: câu ngắn, cảm thán, thì thầm, gọi người xem ("you guys...", "okay don't freak out..."). Sự thật lịch sử nói qua quan sát, không giảng bài sách vở.
+- Giọng vlog thật: câu ngắn, cảm thán, thì thầm, gọi người xem ("you guys...", "okay don't freak out..."). Chi tiết thế giới (thật hay bịa) hiện ra qua việc đang làm; không giảng lịch sử, không niên đại, không "scientists say".
 
 ## Bước 4 — Storyboard
 
