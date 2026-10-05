@@ -300,3 +300,49 @@
   - Ở cao trào (~6:00): clip dẫn vào kết thúc đúng tư thế mở đầu của clip cold open (Match on Action, rule 44) → phát lại **2–3 giây cuối** (cú đập lần ba) bằng ffmpeg lúc ghép, không sinh lại → clip kế tiếp trả lời: lửa bắt.
   - Không phát lại trọn 8s ở cao trào để tránh cảm giác lặp; người xem vẫn nhận ra khoảnh khắc đã thấy ở đầu video.
 - **Kết đột ngột (MrBeast):** giữ Hồi 7 gọn ~3–4 clip, câu cuối là cầu nối tập sau, không "that's it guys".
+
+---
+
+## 13. Bổ sung cho script v5 (2026-10-05, 8 lượt tìm web)
+
+### 13a. Hướng đánh pyrite — SỬA khóa lửa
+- Vết đập (C-shaped percussion marks) và vệt xước trên biface Neanderthal nằm ở **mặt phẳng/lồi của biface**, chạy **song song trục dài**. Pyrite được quẹt xiên, dọc theo mặt đá, không đập vào cạnh sắc.
+  - Sorensen, Claud & Soressi 2018, *Scientific Reports* — https://pmc.ncbi.nlm.nih.gov/articles/PMC6053370/
+  - https://www.sci.news/archaeology/neanderthals-made-fire-06208.html · https://www.archaeology.org/news/6812-180719-neanderthals-fire-starting
+- → Khóa mới: `She strikes the pyrite in a fast glancing stroke down along the flat face of the flint biface, lengthwise.` (đã sửa ở Bài học 57).
+
+### 13b. Tia pyrite yếu → cần mồi đặc biệt
+- Tia pyrite ngắn và nguội nhanh, không đủ để bắt cỏ khô thường; cần mồi bắt cực nhanh (nấm mồi/amadou, mồi đã xử lý). https://rockngem.com/ · https://en.wikipedia.org/wiki/Amadou
+- Kết hợp §MnO₂ (hạ nhiệt độ bắt cháy xuống ~250°C): Nora hỏng với rêu trần là **đúng vật lý**; bột sẫm của Người Già là lý do thật nó thành công.
+- **Gieo trong demo (Act 2 #1):** Người Già nhón một nhúm từ túi da nhỏ rắc lên rêu của bà, rất nhanh, không nhìn Nora. Người xem tinh ý mới thấy; Act 2 #6 mới gặt.
+
+### 13c. Mang lửa thay vì tạo lửa
+- 37/40 nhóm săn hái gần đây **mang lửa theo** (que cháy âm ỉ, dây mồi, than hồng) thay vì nhóm mới mỗi lần. McCauley et al. 2020 (bản PDF trên squarespace của tác giả).
+- Nấm móng ngựa (*Fomes fomentarius*) giữ than âm ỉ 8–12 giờ; bọc vỏ cây lót **lá tươi** bên trong để vỏ không bén lửa; Ötzi mang hộp vỏ bạch dương lót lá phong + nấm mồi.
+- → Giải thích vì sao nhóm canh giữ bọc than; "the fire held" ở H20 hợp lý nếu bọc = vỏ bạch dương + lá tươi + một miếng nấm. **Hư cấu** (không có bằng chứng trực tiếp Neanderthal dùng nấm mồi).
+
+### 13d. Hạ thân nhiệt
+- Giai đoạn nhẹ: "the umbles" — stumbles, mumbles, fumbles, grumbles: mất khả năng cử động tinh của ngón tay; môi tím; run dữ dội.
+- Quần áo ướt mất nhiệt nhanh hơn khô khoảng **25 lần** (trong nước).
+  - https://www.farmersalmanac.com/ · https://www.sierrarescue.org/ (hypothermia) · NOLS
+- → Câu survivalist cho Act 2 #4: *"Fumbling. That's stage one."*
+
+### 13e. Báo động của hươu đỏ
+- Hươu cái thấy mối nguy: ngẩng đầu, **dậm chân**, phát một tiếng **sủa ngắn, gắt**; cả đàn nhìn chằm chằm về hướng đó rồi bỏ chạy.
+  - https://www.bds.org.uk/ (red deer) · https://www.wildlifeonline.me.uk/ (red deer behaviour)
+- → Act 3 #4: sỏi lăn → một con cái ngẩng đầu, dậm chân, sủa → đàn chạy.
+
+### 13f. Săn tầm gần
+- Neumark-Nord (~120 ka): vết thương do **giáo đâm tầm gần, đâm từ dưới lên**, săn phối hợp nhóm. Gaudzinski-Windheuser et al. 2018, *Nat. Ecol. Evol.* — https://www.nature.com/articles/s41559-018-0596-1 · https://www.sciencedaily.com/releases/2018/07/180702111122.htm
+- → Act 3 #5: đổi "phóng giáo" thành: con hươu lao qua chỗ nấp của Người Mạnh Nhất quá sớm, anh nhào ra đâm từ dưới lên vào sườn, nó giằng ra và chạy.
+
+### 13g. Giác quan & hành vi linh cẩu
+- Ngửi xác từ ~4 km xuôi gió, nghe tiếng giành mồi tới ~10 km. https://en.wikipedia.org/wiki/Feeding_behavior_of_spotted_hyenas
+- → Thêm **gió** làm nguyên nhân: Thủ Lĩnh ngửi gió (gió thổi từ kho thịt về phía rừng). Mùi + vệt máu dẫn chúng tới.
+- Dọa: dựng lông lưng và gáy; "cười" = kích động căng thẳng hoặc phục tùng; gọi đồng bọn khi bị đối đầu. https://ielc.libguides.com/ (spotted hyena) · San Diego Zoo.
+
+### 13h. Không được nói / không được tả
+- ❌ "Linh cẩu giấu thịt dưới đá" — linh cẩu đốm hiện đại giấu phần xác **dưới nước**. Đống đá là của **người** (hư cấu hợp lý), linh cẩu chỉ bới.
+- ❌ "Neanderthal dùng nấm mồi" như sự thật — chưa có bằng chứng; chỉ dùng trong hư cấu, không để Nora khẳng định.
+- ❌ "Phóng giáo xa" là cách săn chính — bằng chứng mạnh nhất là đâm tầm gần.
+- ❌ Đánh pyrite vào "cạnh sắc".

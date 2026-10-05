@@ -1,5 +1,5 @@
 # Outline v5 — I Survived 24 Hours with Neanderthals (51,000 Years Ago)
-**Khung mới, chưa viết clip. ≈ 7:56 | 56 clip × 8s + 4 × 4s + 1 master 10s = 61 lần sinh | Horizontal 16:9**
+**Khung mới, chưa viết clip. ≈ 7:58 | 56 clip × 8s + 3 × 4s + 1 × 6s (EST-01) + 1 master 10s = 61 lần sinh | Horizontal 16:9**
 
 Mục tiêu v5: **mạch sinh tồn của chính Nora không đứt giây nào.** Mỗi Act sinh ra từ hậu quả của Act trước ("vì vậy" / "nhưng"), không bao giờ "và rồi". `script.md` (v4) giữ nguyên làm tham chiếu tới khi outline này được duyệt.
 
@@ -25,10 +25,21 @@ Mục tiêu v5: **mạch sinh tồn của chính Nora không đứt giây nào.*
 
 ---
 
-## COLD OPEN | 0:00–0:11
-Giữ nguyên **MASTER-FIRE** (10s FIXED CAM) của v4: cold open dùng 0–7.2s → CUT ĐEN → **EST-01** (4s, `51,000 YEARS AGO`).
+## COLD OPEN | 0:00–0:14 | C01 8s + EST-01 6s
 
-## ACT 1 — "COLD" | H0–H1 | 0:11–1:31 | 10 clip
+**MASTER-FIRE** là clip FIXED CAM sinh một lần, dài **10s** (mức tối đa của model). Cold open dùng **trọn 8s đầu**; payoff ở Act 4 dùng **4s cuối (6–10s)**.
+
+| Giây | Hành động | Thoại | Dùng cho |
+|---|---|---|---|
+| 0–2s | Ba linh cẩu trong bóng tối sau lưng Nora, một con nhích lên. Cô đặt pyrite lên mép biface, tay run | *"Three. Getting closer."* | C01 |
+| 2–4s | Nhát 1: trượt, không có tia | — | C01 |
+| 4–6s | Nhát 2: vài tia nhỏ, tắt ngay | *"Come on—"* | C01 |
+| 6–8s | Nhát 3: tia lửa rơi đúng vào rêu → một chấm đỏ, sợi khói mảnh → **CUT ĐEN ở 8.0s** | — | C01 + payoff |
+| 8–10s | Cô cúi sát, thổi nhẹ → ngọn lửa nhỏ bắt lên | *(thở ra)* | payoff |
+
+Sau đó là **EST-01** (drone, **6s**, `51,000 YEARS AGO`): bình minh, sương trong thung lũng, Nora là một chấm nhỏ. Shot dài thêm 2s để chữ năm hiện đủ lâu và người xem kịp thở sau cú cắt đen.
+
+## ACT 1 — "COLD" | H0–H1 | 0:14–1:34 | 10 clip
 **Câu hỏi:** *Can Nora get a place by their fire before the cold takes her?*
 **Hậu quả nếu hỏng (thấy bằng hình):** đêm ngoài hang, ướt, giữa nơi linh cẩu săn.
 
@@ -43,7 +54,7 @@ Giữ nguyên **MASTER-FIRE** (10s FIXED CAM) của v4: cold open dùng 0–7.2s
 9. FIXED CAM: cô đánh kiểu que mồi thép, tia rơi vào đất lạnh. Nhóm quay vào trong, bỏ cô ở ngoài.
 10. Người Già đi ra, đặt 4 nhúm rêu khô trước mặt cô, quay vào. *"Okay."* (silence)
 
-## ACT 2 — "FIRE" | H1–H3 | 1:31–2:59 | 11 clip
+## ACT 2 — "FIRE" | H1–H3 | 1:34–3:02 | 11 clip
 **Câu hỏi:** *Can she learn their fire before her body gives out?*
 **Hậu quả:** tay càng tê thì càng đánh hỏng, hết rêu, rét qua đêm. **Cái rét chính là thứ làm cô thất bại** (vòng xoáy).
 
@@ -59,7 +70,7 @@ Giữ nguyên **MASTER-FIRE** (10s FIXED CAM) của v4: cold open dùng 0–7.2s
 10. Trong hang: giá treo thịt trống, Đứa Bé gặm một khúc xương đã sạch. *"No meat. I haven't eaten since I got here."* (**nhu cầu mới**)
 11. Người Già cuộn than hồng vào bọc vỏ cây, đưa cho Thủ Lĩnh, ấn tay ông: cầm lỏng. Nora nhìn. *"Fire travels with them. Don't crush it."* (**gieo bọc than**)
 
-## ACT 3 — "THE HUNT" | H3–H8 | 2:59–5:03 | EST-02 + 15 clip
+## ACT 3 — "THE HUNT" | H3–H8 | 3:02–5:06 | EST-02 + 15 clip
 **Câu hỏi:** *Can she pull her weight on the hunt, or cost them the kill?*
 **Hậu quả:** không có thịt = cả nhóm đói. Cô thực sự làm hỏng, và cái giá còn lớn hơn ở Act 4.
 
@@ -79,7 +90,7 @@ Giữ nguyên **MASTER-FIRE** (10s FIXED CAM) của v4: cold open dùng 0–7.2s
 14. Nhìn lại: vệt máu đỏ chạy dài từ suối tới đống đá. *"The blood. It goes right to the meat."* (**micro-hook**: cô hiểu mình đã làm gì)
 15. **HOUR 8.** Chạng vạng, về tới hang. Thịt nướng, lửa ấm, Nora thở. *"Fire. Food. Inside. We made it."* (**FALSE VICTORY**)
 
-## ACT 4 — "HYENAS" | H8–H11 | 5:03–7:04 | 14 clip + EST-03 + master
+## ACT 4 — "HYENAS" | H8–H11 | 5:06–7:06 | 14 clip + EST-03 + master
 **Câu hỏi:** *Can Nora fix what she broke before the hyenas take everything?*
 **Hậu quả:** mất kho thịt = đói nhiều ngày, và có người bị cắn như người thợ săn ở Act 1.
 **Khóa:** đúng 7 Neanderthal + Nora (Người Già, Đứa Bé và người bị thương ở lại).
@@ -96,12 +107,12 @@ Giữ nguyên **MASTER-FIRE** (10s FIXED CAM) của v4: cold open dùng 0–7.2s
 10. Quỳ xuống, đánh, hỏng 1: tay run, giống Act 2. *"Not now. Not now."*
 11. Linh cẩu thấy họ, một con tiến lại. Hỏng 2: gió.
 12. Người Mạnh Nhất chĩa giáo, chờ cô, không tiến. *"They're waiting for me."* (nhìn xuống tay, nối sang master)
-13. **MASTER-FIRE 5–10s:** **PAYOFF**, lửa cháy.
+13. **MASTER-FIRE 6–10s (4s):** **PAYOFF**: lặp lại nhát 3 trong cold open rồi cho thấy lửa cháy.
 14. Đuốc giơ cao, đội hình sát, tiến chậm, gằn giọng thấp. Linh cẩu kêu khúc khích, lùi về phía đống xương ruột.
 15. Nhóm giữ kho, linh cẩu lấy phần thừa. Người Mạnh Nhất lăn đá, nhấc thịt, rồi **trao đuốc lại cho Nora** để cô dẫn đường về. *"Not me. Eight people."*
 16. Đi về: Thủ Lĩnh lùi lại, đi ngang hàng cô, không thoại. (payoff quan hệ, giữ C61)
 
-## ACT 5 — "AFTER" | H12–H24 | 7:04–7:56 | 6 clip + 1 × 4s
+## ACT 5 — "AFTER" | H12–H24 | 7:06–7:58 | 6 clip + 1 × 4s
 1. **HOUR 12.** Người Mạnh Nhất xé miếng thịt nướng đầu tiên, đưa cho Nora. Cô ăn. *"First food in twelve hours."* (**payoff cơn đói**)
 2. Thủ Lĩnh nói một câu qua đống lửa. *"No idea what he said. But that wasn't a question."* (mirror)
 3. **HOUR 20.** Sao qua cửa hang, rồi bọc than trong tay cô. *"Fifty thousand years."* … *"And the fire held."*

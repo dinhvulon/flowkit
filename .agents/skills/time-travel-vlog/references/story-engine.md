@@ -78,7 +78,8 @@ Người xem phải *cảm* được mình đang ở thế giới khác: địa 
 | EST-02 | Lần đầu cả nhóm di chuyển xa (đi săn, xuống thung lũng, ra chợ) | What does this world look like? | Từ trên cao: nơi ở, vùng đất bên dưới, đoàn người nhỏ xíu đang đi |
 | EST-03 | Ngay trước Act 4 (đêm) | How isolated are they? | Nơi ở là đốm sáng duy nhất giữa bóng tối mênh mông |
 
-- Mỗi shot **4s** (`duration: 4`), drone wide, **không thoại, không thuyết minh**. Năm hiện ở EST-01 dưới dạng chữ hậu kỳ.
+- EST-01 dài **6s** (`duration: 6`; user chốt 2026-10-05) để chữ năm hiện đủ lâu sau cú cắt đen. EST-02 và EST-03 dài 4s. Cả ba đều drone wide, **không thoại, không thuyết minh**. Năm hiện ở EST-01 dưới dạng chữ hậu kỳ.
+- Cold open lấy **trọn 8s đầu** của master take 10s, cắt đen ở 8.0s; payoff dùng 4s cuối (6–10s). 10s là độ dài tối đa của một clip.
 - **Không bao giờ đặt trước cold open**, không chuỗi landscape → landscape → vlogger. Làm vậy là mất hook.
 - Cấm mở kiểu documentary: *"51,000 years ago, the world was different…"*. Hình tự kể.
 - Chi tiết trong shot không được mâu thuẫn với truyện (ví dụ bếp đang tắt thì cửa hang không có khói).
