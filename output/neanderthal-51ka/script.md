@@ -170,14 +170,18 @@
 
 ## Nhân vật Neanderthal (ẩn danh)
 
-| Tên gọi trong script | Ngoại hình cho CHARACTER_LOCK |
-|---------------------|-------------------------------|
-| Người Thủ Lĩnh | Đàn ông ~35, vai rộng, thân hình trụ, gờ lông mày dày, hàm nhô, mũi rộng, da nâu sẫm, tóc đen xù đến vai, áo da hươu nâu tối |
-| Người Già | Phụ nữ nhỏ, lưng hơi còng, tóc xám dài, mắt sáng, nếp nhăn sâu, da dày |
-| Người Mạnh Nhất | Đàn ông trẻ hơn, vai rộng nhất, ít biểu cảm, cầm giáo gỗ dài |
-| Đứa Bé | ~7–8 tuổi, mắt to, tóc đen xù, di chuyển nhanh, hay quan sát |
+| Tên gọi trong script | Ngoại hình cho CHARACTER_LOCK | Voice (voice-bible mục 0b) |
+|---------------------|-------------------------------|---------------------------|
+| Người Thủ Lĩnh | Đàn ông ~35, vai rộng, thân hình trụ, gờ lông mày dày, hàm nhô, mũi rộng, da nâu sẫm, tóc đen xù đến vai, áo da hươu nâu tối | `algenib` — Male, gravelly, low |
+| Người Già | Phụ nữ nhỏ, lưng hơi còng, tóc xám dài, mắt sáng, nếp nhăn sâu, da dày | `gacrux` — Female, mature, mid |
+| Người Mạnh Nhất | Đàn ông trẻ hơn, vai rộng nhất, ít biểu cảm, cầm giáo gỗ dài | `alnilam` — Male, firm, mid-low |
+| Đứa Bé | ~7–8 tuổi, mắt to, tóc đen xù, di chuyển nhanh, hay quan sát | `leda` — Female, youthful, mid-high (nếu là bé trai → `fenrir`) |
 
-**Giọng trong R2V prompt:** `[speaks in low guttural sounds, consonant-heavy proto-language, NOT English]` — Laomedeia chỉ phát tiếng của Nora.
+**Giọng trong R2V prompt** (dùng nguyên câu, mọi clip; chỉ Nora có `voice_description`, Laomedeia):
+- Người Thủ Lĩnh: `The Leader speaks in a gravelly, low-pitched male voice — short guttural sounds, consonant-heavy, no recognizable words.`
+- Người Mạnh Nhất: `The Strongest One speaks in a firm, mid-low-pitched male voice — clipped guttural sounds, no recognizable words.`
+- Người Già: `The Old Woman speaks in a mature, mid-pitched female voice — slow guttural murmurs, no recognizable words.`
+- Đứa Bé: `The Child speaks in a youthful, high, small voice — quick breathy guttural sounds, no recognizable words.`
 
 ---
 

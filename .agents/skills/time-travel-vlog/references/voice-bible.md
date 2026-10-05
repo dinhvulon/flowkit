@@ -18,24 +18,71 @@ Server lấy **từ đầu tiên** của `voice_description` làm voice id (ví 
 
 **Vì sao đổi từ Achernar sang Laomedeia (user chốt 2026-10-01):** Achernar là giọng "soft, high pitch", chỉ hợp thì thầm. Persona vlogger là nói nhanh, tự tin, hài khô, và phải hét khi gặp nguy hiểm, nên giọng mềm bị yếu. Laomedeia là "upbeat, mid-high": nói nhanh tự nhiên, lúc hét vẫn nghe hoảng thật chứ không gắt.
 
-| Giới | Giọng (id) | Tính chất, cao độ | Dùng cho |
-|---|---|---|---|
-| Nữ | **laomedeia** | upbeat, mid-high | **Mặc định cho vlogger nữ** |
-| Nữ | autonoe | bright, mid | Dự phòng: chuyên gia nghe chín chắn hơn |
-| Nữ | zephyr | bright, mid-high | Gần Laomedeia nhưng ít "bốc" hơn |
-| Nữ | kore | firm, mid | Nhân vật nghiêm, uy quyền |
-| Nữ | leda | youthful, mid-high | Nhân vật trẻ (dưới ~22) |
-| Nữ | erinome | clear, mid | Người dẫn rõ ràng, trung tính |
-| Nữ | aoede / callirrhoe | breezy / easy-going, mid | Vlog thư giãn, du lịch nhẹ |
-| Nữ | gacrux | mature, mid | Nhân vật lớn tuổi |
-| Nữ | sulafat / vindemiatrix / despina | warm / gentle / smooth, mid | Thuyết minh êm, KHÔNG hợp cảnh hành động |
-| Nữ | achernar | soft, high | Thì thầm, ASMR; yếu khi nói nhanh hoặc hét |
-| Không rõ | pulcherrima | forward, mid-high | Tránh dùng cho nhân vật nữ, có thể nghe không ra giới |
-| Nam | puck / fenrir | upbeat, mid / excitable, younger | Vlogger nam năng lượng cao |
-| Nam | achird / zubenelgenubi / algieba | friendly / casual / easy-going | Vlogger nam thư giãn |
-| Nam | charon / rasalgethi / sadaltager | informative / knowledgeable | Thuyết minh tài liệu |
-| Nam | orus / alnilam / iapetus / schedar | firm / clear / even, mid-low | Nhân vật nghiêm |
-| Nam | algenib / enceladus / umbriel / sadachbia | gravelly / breathy / smooth / lively, low | Giọng trầm, nhân vật đặc biệt |
+### Danh sách đầy đủ 30 giọng Pinhole / Gemini-TTS (user cung cấp 2026-10-05, `PINHOLE_VOICES`)
+
+`id` viết thường là giá trị gửi vào Slot 7. Cao độ xếp từ thấp tới cao: **low / lower → mid-low → mid → mid-high / younger → high**.
+
+| id | Giới | Tính chất | Cao độ | Gợi ý vai |
+|---|---|---|---|---|
+| achernar | Nữ | soft | high | Thì thầm, hồn ma, ASMR; yếu khi nói nhanh hoặc hét |
+| achird | Nam | friendly | mid | Người lạ thân thiện, người dẫn đường |
+| algenib | Nam | gravelly | low | Thủ lĩnh, già làng uy quyền, kẻ đe dọa |
+| algieba | Nam | easy-going | mid-low | Người làng hiền, vlogger nam thư giãn |
+| alnilam | Nam | firm | mid-low | Chiến binh, thợ săn cộc cằn, lính gác |
+| aoede | Nữ | breezy | mid | Người phụ nữ vui tính, cô gái trong chợ |
+| autonoe | Nữ | bright | mid | Phụ nữ lanh lợi, người hiểu biết; dự phòng cho vlogger nữ chín chắn |
+| callirrhoe | Nữ | easy-going | mid | Người phụ nữ hiền, hàng xóm |
+| charon | Nam | informative | lower | Người kể chuyện, học giả, thuyết minh tài liệu |
+| despina | Nữ | smooth | mid | Người mẹ, người chăm sóc; không hợp cảnh hành động |
+| enceladus | Nam | breathy | lower | Pháp sư, ông già, thầy thuốc |
+| erinome | Nữ | clear | mid | Phụ nữ điềm tĩnh, người truyền tin |
+| fenrir | Nam | excitable | younger | Thiếu niên, bé trai, thợ săn trẻ hăng hái |
+| gacrux | Nữ | mature | mid | Bà già, nữ trưởng lão |
+| iapetus | Nam | clear | mid-low | Người đàn ông điềm tĩnh, người đưa tin |
+| kore | Nữ | firm | mid | Nữ thủ lĩnh, nữ chiến binh, người nghiêm khắc |
+| **laomedeia** | Nữ | upbeat | mid-high | **Mặc định cho vlogger nữ — không giao cho nhân vật phụ** |
+| leda | Nữ | youthful | mid-high | Bé gái, thiếu nữ (dưới ~22) |
+| orus | Nam | firm | mid-low | Thủ lĩnh thứ hai, người nghiêm |
+| puck | Nam | upbeat | mid | Chàng trai vui vẻ, vlogger nam năng lượng cao |
+| pulcherrima | Không rõ giới | forward | mid-high | Sinh vật, nhân vật phi giới; tránh cho người thường |
+| rasalgethi | Nam | informative | mid | Thương nhân hiểu biết, thầy giáo |
+| sadachbia | Nam | lively | low | Gã to lớn vui tính, người lắm lời |
+| sadaltager | Nam | knowledgeable | mid | Người già hiểu biết, thầy thuốc |
+| schedar | Nam | even | mid-low | Kẻ lạnh lùng, phản diện bình tĩnh |
+| sulafat | Nữ | warm | mid | Người mẹ, người phụ nữ ấm áp |
+| umbriel | Nam | smooth | lower | Người đàn ông trầm tĩnh, pháp sư |
+| vindemiatrix | Nữ | gentle | mid | Bà cụ hiền, người chữa bệnh |
+| zephyr | Nữ | bright | mid-high | Gần Laomedeia nhưng ít "bốc" hơn |
+| zubenelgenubi | Nam | casual | mid-low | Người làng xuề xòa, thương nhân |
+
+### 0b. Tự chọn giọng cho nhân vật phụ (bắt buộc khi viết kịch bản, user chốt 2026-10-05)
+
+Mỗi nhân vật phụ **có thoại** (kể cả ngôn ngữ không hiểu được, tiếng cười, một âm tiết) được giao **một voice id riêng** ngay ở bước viết kịch bản. Agent tự chọn, không hỏi user, theo các bước:
+
+1. **Lọc theo giới + tuổi + vai** bằng bảng vai dưới đây; trong cột đó chọn giọng có tính chất khớp tính cách nhất.
+2. **Tương phản:**
+   - Không hai nhân vật nào trong cùng project dùng chung một id. Nhân vật quay lại ở tập sau giữ id cũ.
+   - Hai nhân vật có thể nói trong cùng một clip phải cách nhau ít nhất 1 bậc cao độ.
+   - Không bao giờ giao `laomedeia` (hay giọng của vlogger hiện tại) cho nhân vật phụ. Nhân vật nữ người lớn nói cùng clip với vlogger nữ: chọn cao độ mid, không chọn mid-high (zephyr, leda) để người xem không nhầm với vlogger.
+   - Không dùng `achernar` và `pulcherrima` cho người thường, trừ khi cố ý (hồn ma, sinh vật).
+3. **Khóa vào kịch bản:** thêm cột `Voice` vào bảng nhân vật trong `script.md` (`id — mô tả`). **Không** đặt `voice_description` trên entity nhân vật phụ: server lấy voice từ entity đầu tiên có `voice_description` (`agent/sdk/services/operations.py`), nên nhân vật phụ có trường này sẽ cướp giọng của vlogger trong cả clip.
+4. **Viết vào `video_prompt`:** model video không biết tên giọng, nên đổi id thành mô tả theo bảng: `<Tên> speaks in a <tính chất>, <cao độ>-pitched <male/female> voice — <chất ngôn ngữ>, no recognizable words; <Vlogger> stays silent.` Ví dụ `algenib` → `The Leader speaks in a gravelly, low-pitched male voice — short guttural non-English sounds, consonant-heavy, no recognizable words; Nora stays silent.` Dùng **đúng một câu mô tả đó** cho nhân vật này ở mọi clip, để giọng nghe nhất quán.
+5. Khi payload nhiều giọng được capture và nối vào code, id ở cột `Voice` là thứ sẽ được gửi; vì vậy luôn ghi id đúng chính tả theo bảng trên.
+
+| Vai | Nam | Nữ |
+|---|---|---|
+| Thủ lĩnh, già làng uy quyền | algenib, orus | kore |
+| Chiến binh, thợ săn, lính gác cộc cằn | alnilam, schedar | kore |
+| Thanh niên hăng hái, thiếu niên | fenrir, puck | leda |
+| Trẻ em | fenrir (bé trai) | leda (bé gái) |
+| Người già, pháp sư, thầy thuốc | enceladus, umbriel, sadaltager | gacrux, vindemiatrix |
+| Người mẹ, người chăm sóc | — | sulafat, despina |
+| Người lắm lời, vui tính, thương nhân | sadachbia, zubenelgenubi, achird, rasalgethi | aoede, callirrhoe |
+| Người hiền, dân làng bình thường | algieba, iapetus | callirrhoe, erinome |
+| Phản diện, kẻ đe dọa | schedar, algenib | kore |
+| Người lanh lợi, hiểu biết | charon, rasalgethi | autonoe, erinome |
+
+**Chất ngôn ngữ không hiểu được** (ghép sau mô tả giọng): tiền sử / Neanderthal → `short guttural sounds, consonant-heavy`; cổ đại → `a flowing ancient-sounding language with rolling r's`; trung cổ / thời khác → `a fast, unfamiliar old dialect`. Luôn kết bằng `no recognizable words`.
 
 ---
 

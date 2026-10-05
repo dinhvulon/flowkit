@@ -134,6 +134,7 @@ Gồm: mặt (tuổi, dáng mặt, mắt, tàn nhang/nốt ruồi), tóc (màu, 
    - **Rào cản kỹ thuật:** Slot 7 hiện chỉ gửi 1 voice id (Laomedeia, lấy từ entity đầu tiên có `voice_description`). Nếu gán thoại **tiếng Anh** cho nhân vật phụ, model dễ lấy giọng nữ của vlogger phát ra từ miệng họ. Muốn gửi 2 giọng qua payload thì phải capture từ Flow UI trước (`docs/CAPTURE.md`).
    - **Quy tắc bắt buộc:**
      - Nhân vật phụ **được nói**, bằng tiếng cổ / tiếng bịa người xem không hiểu. Không bao giờ nói tiếng Anh, không phụ đề. Chỉ vlogger có `voice_description`.
+     - **Agent tự chọn giọng cho mỗi nhân vật phụ có thoại** từ danh sách 30 giọng ở `voice-bible.md` mục 0b (theo giới, tuổi, vai; không trùng id; cách vlogger ít nhất 1 bậc cao độ), ghi vào cột `Voice` của bảng nhân vật trong `script.md`.
      - `video_prompt` ghi rõ **từng người nói bằng giọng gì, ở sub-clip nào**, không nói chồng: `3-5s: The Leader speaks in a deep, gravelly male voice — short guttural non-English sounds, no recognizable words; Nora stays silent.` → `5-8s: Nora says (hushed): "..."`.
      - Vlogger phản ứng với giọng điệu, **không dịch nội dung** (`"No idea what he said. But that wasn't a question."`). Có thể lặp lại một câu của nhân vật phụ về sau với nghĩa khác (callback).
      - Test 1 clip có nhân vật phụ nói trước khi gen hàng loạt; nếu giọng vlogger phát ra từ miệng họ thì clip đó quay về cách cũ (môi khép, chỉ cử chỉ, Bài học 49).

@@ -190,6 +190,7 @@ Thay quy tắc cũ "người bản địa không thoại, môi khép" (Translato
   3-5s: The Leader speaks in a deep, gravelly male voice — short guttural non-English sounds, consonant-heavy, no recognizable words; Nora stays silent and watches his mouth.
   5-8s: Nora says (hushed, dry): "No idea what that meant."
   ```
+- **Chọn giọng cho từng nhân vật phụ:** agent tự giao mỗi nhân vật có thoại một voice id riêng theo `voice-bible.md` mục 0b (danh sách 30 giọng + bảng vai + luật tương phản), ghi vào cột `Voice` của bảng nhân vật trong `script.md`, rồi đổi id thành câu mô tả giọng cố định trong `video_prompt`.
 - **Giới hạn kỹ thuật (kiểm chứng trong code 2026-10-05):** Slot 7 của `MZZa6b` (`agent/services/flow_batch.py` `omni_reference_video_request`) hiện chỉ gửi **một** voice id `[[voice]]`. Server lấy voice từ entity đầu tiên có `voice_description`, nên **chỉ vlogger có `voice_description`**; giọng nhân vật phụ chỉ mô tả bằng lời trong prompt. Nếu Flow UI cho chọn 2 giọng: capture payload theo `docs/CAPTURE.md` rồi mới nối vào code. Đừng đoán shape.
 - **Test trước khi gen hàng loạt:** sinh 1 clip có nhân vật phụ nói để kiểm tra model có phát giọng nữ của vlogger từ miệng người kia không. Có lỗi thì quay về cách cũ cho clip đó (môi khép, chỉ cử chỉ).
 
