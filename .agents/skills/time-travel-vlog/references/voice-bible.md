@@ -13,7 +13,7 @@ Server lấy **từ đầu tiên** của `voice_description` làm voice id (ví 
 **Hai giọng trong một clip (user chốt 2026-10-05):** nhân vật phụ được nói bằng ngôn ngữ không hiểu được. Hiện server chỉ gửi **1 voice id** vào Slot 7 (`request.extend([None, [[v_id]]])` trong `agent/services/flow_batch.py`), nên:
 - **Chỉ vlogger có `voice_description`.** Không đặt cho nhân vật phụ, nếu không entity nào đứng trước trong DB sẽ cướp giọng của cả clip.
 - Giọng nhân vật phụ **mô tả bằng chữ trong `video_prompt`**, gắn đúng sub-clip: `3-5s: The Leader speaks in a deep, gravelly male voice — short guttural non-English sounds, no recognizable words; Nora stays silent.` Không bao giờ để hai người nói chồng.
-- Flow hỗ trợ nhiều giọng trong một clip (user xác nhận 2026-10-05); giới hạn nằm ở FlowKit, chưa biết Flow gắn từng giọng vào nhân vật nào trong Slot 7. Cần 1 lần capture request `MZZa6b` có 2 giọng từ Flow UI (DevTools hoặc `docs/CAPTURE.md`) rồi mới nối vào code: slot sai vẫn trả 200 và bị bỏ qua âm thầm, tốn credit.
+- **Chốt 1 giọng/clip (user 2026-10-05):** gửi 2 id vào Slot 7 (`[["laomedeia"],["algenib"]]`) làm clip thất bại ("Media not found."), cùng clip đó với 1 giọng thì thành công. User quyết định: **chỉ gửi 1 giọng (vlogger), giọng nhân vật phụ mô tả bằng chữ là đủ**. `voice_description` chỉ được chứa **một** id ở từ đầu tiên. Không thử lại multi-voice trừ khi user yêu cầu.
 - Test 1 clip trước khi gen hàng loạt. Nếu giọng nữ của vlogger phát ra từ miệng nhân vật phụ → clip đó quay về môi khép + cử chỉ (Bài học 49).
 
 **Vì sao đổi từ Achernar sang Laomedeia (user chốt 2026-10-01):** Achernar là giọng "soft, high pitch", chỉ hợp thì thầm. Persona vlogger là nói nhanh, tự tin, hài khô, và phải hét khi gặp nguy hiểm, nên giọng mềm bị yếu. Laomedeia là "upbeat, mid-high": nói nhanh tự nhiên, lúc hét vẫn nghe hoảng thật chứ không gắt.
@@ -67,7 +67,7 @@ Mỗi nhân vật phụ **có thoại** (kể cả ngôn ngữ không hiểu đ�
    - Không dùng `achernar` và `pulcherrima` cho người thường, trừ khi cố ý (hồn ma, sinh vật).
 3. **Khóa vào kịch bản:** thêm cột `Voice` vào bảng nhân vật trong `script.md` (`id — mô tả`). **Không** đặt `voice_description` trên entity nhân vật phụ: server lấy voice từ entity đầu tiên có `voice_description` (`agent/sdk/services/operations.py`), nên nhân vật phụ có trường này sẽ cướp giọng của vlogger trong cả clip.
 4. **Viết vào `video_prompt`:** model video không biết tên giọng, nên đổi id thành mô tả theo bảng: `<Tên> speaks in a <tính chất>, <cao độ>-pitched <male/female> voice — <chất ngôn ngữ>, no recognizable words; <Vlogger> stays silent.` Ví dụ `algenib` → `The Leader speaks in a gravelly, low-pitched male voice — short guttural non-English sounds, consonant-heavy, no recognizable words; Nora stays silent.` Dùng **đúng một câu mô tả đó** cho nhân vật này ở mọi clip, để giọng nghe nhất quán.
-5. Khi payload nhiều giọng được capture và nối vào code, id ở cột `Voice` là thứ sẽ được gửi; vì vậy luôn ghi id đúng chính tả theo bảng trên.
+5. Id ở cột `Voice` **không gửi lên Flow** (Slot 7 chỉ mang giọng vlogger). Nó chỉ dùng để chọn câu mô tả giọng và giữ tương phản giữa các nhân vật.
 
 | Vai | Nam | Nữ |
 |---|---|---|

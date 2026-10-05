@@ -192,12 +192,6 @@ class TestVideoRequest:
         assert request[-1] == [4]
         assert request[7] == [["laomedeia"]]
 
-    def test_omni_reference_sends_one_slot_entry_per_voice(self):
-        request = inner(fb.omni_reference_video_request(
-            "two speakers", self.PID, ["a", "b"], voice_id="Laomedeia, algenib",
-        ))[0][0]
-        assert request[7] == [["laomedeia"], ["algenib"]]
-
     def test_text_video_matches_the_captured_yhhmef_shape(self):
         payload = inner(fb.text_video_request(
             "a boat", self.PID,
