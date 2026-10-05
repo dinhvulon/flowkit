@@ -1,111 +1,83 @@
-# HANDOFF — Neanderthal 51ka (Tập 2 "I Survived 24 Hours")
+# HANDOFF — Neanderthal 51ka (Tập 2: "I Survived 24 Hours with Neanderthals")
 
-Người nhận: agent Antigravity làm tiếp dự án. Viết ngày 2026-10-05.
-Đọc trước: `CLAUDE.md` (đặc biệt Rule 10, 27, 28, 29, 31, 46), `skills/fk-time-travel-vlog.md` (bài học 34, 47, 55–60), `output/neanderthal-51ka/script-v5.md`.
+**Người nhận:** Agent tiếp nhận dự án (Antigravity IDE / Claude Code).  
+**Ngày cập nhật:** 2026-10-05.  
+**Tài liệu nền tảng bắt buộc đọc:**
+- [CLAUDE.md](file:///c:/flowkit/CLAUDE.md) (Rule 10, 27, 28, 29, 31, 46, 47)
+- [skills/fk-time-travel-vlog.md](file:///c:/flowkit/skills/fk-time-travel-vlog.md) (Bài học 34, 40, 47, 55–60)
+- [output/neanderthal-51ka/script-v5.md](file:///c:/flowkit/output/neanderthal-51ka/script-v5.md) (Kịch bản chuẩn đã duyệt cấu trúc và danh sách ref `["Nora", "Nora Body", ...]`)
+- [uploads/nora_base_body_prompt.json](file:///c:/flowkit/uploads/nora_base_body_prompt.json) & [uploads/nora_body_outfit_prompt.json](file:///c:/flowkit/uploads/nora_body_outfit_prompt.json) (Công thức prompt chuẩn giữ nguyên giải phẫu cơ thể)
 
 ---
 
-## 1. Luật bắt buộc khi làm tiếp
+## 1. Các Quy Tắc Cốt Lõi Bắt Buộc (CRITICAL RULES)
 
-- **Rule 29:** KHÔNG gửi bất kỳ lệnh sinh nào (`GENERATE_*`, `REGENERATE_*`, `EDIT_CHARACTER_IMAGE`, video) khi user chưa nói "yes". Trước mỗi lần sinh, nói rõ sinh cái gì và bao nhiêu lượt. Sinh xong thì DỪNG và cho user xem. Lỗi thì báo cáo, không tự retry.
-- **Rule 31:** gặp lỗi pipeline thì chạy `/fk-doctor` trước.
-- **Rule 46 (user lock 2026-10-05):** Body đã mặc trang phục đóng vai trò là `Nora Body` luôn (xóa bỏ entity `Nora Outfit` riêng). Video chỉ nhận `["Nora", "Nora Body", ...]`.
-- Không dùng "Copy as cURL" khi capture, vì nó chứa cookie đăng nhập. Chỉ copy `f.req`.
+1. **Rule 46 & 47 (User Lock 2026-10-05):**
+   - **`Nora Body` chính là ảnh Body đã mặc hoàn chỉnh trang phục**. TUYỆT ĐỐI KHÔNG tạo entity `Nora Outfit` riêng lẻ (entity này đã được xóa khỏi database).
+   - Video downstream Omni Flash R2V chỉ nhận: `["Nora", "Nora Body", <NPC/Bối cảnh/Đạo cụ>]`.
+   - **TUYỆT ĐỐI KHÔNG gửi ảnh body trần/gym** vào video để tránh nhiễm da thịt trần làm model AI vẽ trang phục generic mất áo.
+2. **Rule 29 (Xác nhận trước khi sinh media):**
+   - Không được gửi bất kỳ lệnh tạo ảnh/video tốn credit nào (`GENERATE_*`, `REGENERATE_*`) nếu user chưa nói "đồng ý" / "yes".
+3. **Rule 28 (Tẩy sạch watermark SynthID trước khi đưa vào sinh video):**
+   - Mọi ảnh AI do Google Flow sinh đều phải tải về, chạy `python tools/remove_watermark_from_image.py <path>`, upload lại qua `POST /api/flow/upload-image` để lấy UUID sạch 100%, rồi mới gán vào entity hoặc scene.
+4. **Rule 10 (Pacing an toàn tránh Unusual Activity):**
+   - Server tự động điều phối giãn cách 45–60s giữa các request gửi đến Flow. Luôn submit batch qua `/api/requests/batch`, không được tự ý spam API loop.
+5. **Rule 4 & 43 (Scratch Directory Only):**
+   - Mọi script tạm thời, test, debug bắt buộc lưu trong `<appDataDir>/brain/<conversation-id>/scratch/` hoặc chạy inline one-liner `python -c "..."`. Tuyệt đối không tạo file rác trong repo.
 
-## 2. Trạng thái server
+---
 
-| Mục | Giá trị |
-|---|---|
-| Project | `4cc4b500-6e3b-4379-96c3-dd18b7412c1a` (material `prehistoric_vlog`, `allow_voice: true`) |
-| Video | `15076345-ca4a-48cb-8afa-4a79c2a52028` (HORIZONTAL) |
-| Scenes | **chưa tạo** |
+## 2. Thông Tin Dự Án & Database State (Hiện Tại)
 
-| Entity | ID | media_id hiện tại |
+| Thành phần | ID / Giá trị | Ghi chú |
 |---|---|---|
-| Nora (mặt) | `f1e93b66-f83f-40d8-bf6e-d22ec444f57e` | `1454fb46-8510-4f14-99fe-8464720632b6` (sạch, từ `nora_main_clean.jpg`) ✅ |
-| Nora Body | `c58ac1d3-14a9-4169-94a3-681790557d8e` | `76efe0b4-6c92-428c-8cce-4bbfd8c9a7e1` (sạch, từ `nora_outfit_v4_clean.jpg` — Body đã mặc outfit da hươu ôm sát) ✅ |
-| Leader | `288d06c2-2b2a-4016-9eab-c5d670df67e7` | chưa có |
-| Old Woman | `e8a607ed-e207-4be3-806d-f4df489f5a11` | chưa có |
-| Strongest | `4ae88e7c-997f-4e79-97ee-96a14b3b5d8c` | chưa có |
-| Strongest Spear | `ee521059-d0c6-49c2-970b-59353fa87211` | chưa có |
-| Cave Hyena | `680d64bf-c0c3-4cda-9074-d99cef97c12c` | chưa có |
-| Ember Bundle | `5eed7279-5d4b-4144-904a-10c0a7805cbf` | chưa có |
-| Pech Valley | `e02aec5c-df73-46a0-bc73-beaccb8c806f` | chưa có |
-| Cave Mouth | `87dfde04-a15d-44a8-9172-78b4a3d55661` | chưa có |
-| Child | `72cef9e2-1ebb-41ac-8950-27c823dbf8cc` | **đã xóa khỏi DB** ✅ |
-| Nora Outfit | `14753a8e-7c58-4513-8ea6-8079e4096fd4` | **đã xóa khỏi DB** (Body đã mặc outfit trực tiếp, video chỉ nhận `["Nora", "Nora Body"]`) ✅ |
+| **Project ID** | `4cc4b500-6e3b-4379-96c3-dd18b7412c1a` | Material: `prehistoric_vlog`, `allow_voice: true` |
+| **Video ID** | `15076345-ca4a-48cb-8afa-4a79c2a52028` | Orientation: `HORIZONTAL` (16:9) |
+| **Scenes** | **Chưa tạo** | Sẽ tạo theo [script-v5.md](file:///c:/flowkit/output/neanderthal-51ka/script-v5.md) |
+| **Entity thừa đã xóa** | `Child`, `Nora Outfit` | Đã xóa sạch khỏi DB, không còn xuất hiện trong project |
 
-## 3. VIỆC ĐÃ XONG: Outfit v4 hợp nhất Nora Body + Outfit đã hoàn tất
-- Đã dùng đúng ảnh body của user: `uploads/nora_body_v3_clean.jpg` (`108813da-76b2-4d7b-8ecb-207db760c45e`).
-- Đã chạy 1 lệnh `EDIT_CHARACTER_IMAGE` tạo `refs/nora_outfit_v4.jpg`.
-- Đã xóa sạch watermark SynthID bằng `python tools/remove_watermark_from_image.py` -> `refs/nora_outfit_v4_clean.jpg`.
-- Đã PATCH `media_id` sạch vào entity `Nora Body` (`c58ac1d3-14a9-4169-94a3-681790557d8e`), đồng thời xóa bỏ entity thừa `Nora Outfit` khỏi database.
-- Đã cập nhật `[ID-LOCK]` trong `script-v5.md` phản ánh đúng `Nora Body` là Body đã mặc outfit (khóa ngực đầy nhô cao, eo thon, hông nở, chân dài, áo tunic ôm sát).
+### Bảng Entity Chuẩn 100% Đã Có UUID Sạch Watermark trong Database:
 
-**Đã xem ảnh và so sánh:**
-- `refs/nora_outfit_v3.jpg` (EDIT từ `Nora Body` = `uploads/nora_body_v3_clean.jpg`):
-  - ngực bị ép phẳng, mất eo;
-  - áo dáng chữ A xòe che mất hông;
-  - legging rộng, chân trông gầy.
-- **Có thể đã dùng nhầm body:** body chuẩn dùng lại của user là `uploads/nora_base_body_clean.jpg` (memory `project_nora_base_ref`: "reusable base for ALL future projects"). Ảnh này đầy đặn hơn hẳn: ngực đầy, eo, hông và đùi tròn. Còn `nora_body_v3_clean.jpg` (của Ice Age) là một dáng khác, mảnh hơn, chân dài thon. Project này đang gắn nhầm ảnh thứ hai làm `Nora Body`.
+| Entity Name | Entity ID | Clean Media ID (UUID trong DB) | Nguồn file local | Trạng thái |
+|---|---|---|---|---|
+| **Nora** (Mặt & tóc) | `f1e93b66-f83f-40d8-bf6e-d22ec444f57e` | `1454fb46-8510-4f14-99fe-8464720632b6` | `uploads/nora_main_clean.jpg` | ĐÃ DUYỆT ✅ |
+| **Nora Body** (Body đã mặc outfit v6) | `c58ac1d3-14a9-4169-94a3-681790557d8e` | `ab34e369-d6ed-4c54-9e44-035e2439b704` | `refs/nora_body_v6_clean.jpg` | **USER ĐÃ DUYỆT** ✅ |
+| **Leader** (Thủ lĩnh Neanderthal) | `288d06c2-2b2a-4016-9eab-c5d670df67e7` | `f4395dd6-9227-4b8d-8425-8bd71d8027ed` | `refs/leader_clean.jpg` | ĐÃ HOÀN TẤT ✅ |
+| **Old Woman** (Bà lão giữ lửa) | `e8a607ed-e207-4be3-806d-f4df489f5a11` | `5a2b982a-5ae8-4124-ada7-dc98df9a59a8` | `refs/old_woman_clean.jpg` | ĐÃ HOÀN TẤT ✅ |
+| **Strongest** (Thợ săn to lớn) | `4ae88e7c-997f-4e79-97ee-96a14b3b5d8c` | `10ab07ce-7600-4f73-8697-6cc1a3e09aca` | `refs/strongest_clean.jpg` | ĐÃ HOÀN TẤT ✅ |
+| **Strongest Spear** (Ngọn giáo đá lửa) | `ee521059-d0c6-49c2-970b-59353fa87211` | `b508a82a-f410-421a-b6fd-38a1812d1abf` | `refs/strongest_spear_clean.jpg` | ĐÃ HOÀN TẤT ✅ |
+| **Cave Hyena** (Linh cẩu hang động) | `680d64bf-c0c3-4cda-9074-d99cef97c12c` | `7559d40f-801e-4821-a685-2c7dded0b1f3` | `refs/cave_hyena_clean.jpg` | ĐÃ HOÀN TẤT ✅ |
+| **Ember Bundle** (Bọc than hồng giữ lửa) | `5eed7279-5d4b-4144-904a-10c0a7805cbf` | `a91cc713-e831-4cc2-9f24-c32180a69653` | `refs/ember_bundle_clean.jpg` | ĐÃ HOÀN TẤT ✅ |
+| **Pech Valley** (Thung lũng đá vôi) | `e02aec5c-df73-46a0-bc73-beaccb8c806f` | `6cd2b3d4-fb48-4015-8481-58b833808862` | `refs/pech_valley_clean.jpg` | ĐÃ HOÀN TẤT ✅ |
+| **Cave Mouth** (Vòm cửa hang Pech de l'Azé) | `87dfde04-a15d-44a8-9172-78b4a3d55661` | `27348804-f91c-4a45-b395-50799417fd32` | `refs/cave_mouth_clean.jpg` | ĐÃ HOÀN TẤT ✅ |
 
-**Nguyên nhân trong prompt v3** (file `outfit_prompt_v3.json` nằm trong scratchpad của phiên Claude cũ; nội dung gồm prompt EDIT "keep the exact same three panels… Only change the clothing…"):
-1. Phần bố cục đặt trước phần mô tả body. Memory `project_nora_base_ref` đã cảnh báo: "Put the BODY description before layout in the prompt or the bust gets toned down."
-2. Dùng chữ "parka" và "flaring over the wide hips", nên model vẽ áo khoác dày, xòe chữ A, che mất đường cong.
-3. Không có câu BODY LOCK đối kháng (NOT slimmer, NOT flat-chested…).
+---
 
-**Đã chuẩn bị (không tốn lượt sinh):** `output/neanderthal-51ka/refs/nora_base_body_noface.jpg`.
-- Cách làm: crop từ `uploads/nora_base_body_clean.jpg`, bỏ panel mặt, cắt ngang vai, pad 16:9.
-- Lệnh: `crop=918:620:458:148,pad=1102:620:92:0:color=0xE6E6E8`.
-- Kết quả: 2 panel (3/4 và chính diện), không lộ mặt, giữ đúng form của user. Màu nền pad hơi lệch nền gốc, có thể chỉnh lại.
-- **Chưa upload, chưa cho user xem.**
+## 3. Công Thức & Quy Trình Tạo Body Mặc Trang Phục (Tái Sử Dụng Cho Mọi Dự Án Tương Lai)
 
-**Đề xuất cho bước tiếp theo** (phải hỏi user, nhất là câu 1):
-1. Hỏi user đúng body của họ là `uploads/nora_base_body_clean.jpg` phải không. Cho user xem cả hai ảnh body và ảnh v3.
-2. Nếu đúng:
-   - upload `nora_base_body_noface.jpg` (`POST /api/flow/upload-image` `{file_path, project_id}`);
-   - PATCH `media_id` của `Nora Body` (`c58ac1d3-…`).
+Để tạo ảnh `<Vlogger> Body` đã mặc trang phục mà không bị méo người hay mất form:
+1. **Ảnh nguồn:** Bắt buộc dùng ảnh body chuẩn không mặt của user: [uploads/nora_body_v3_clean.jpg](file:///c:/flowkit/uploads/nora_body_v3_clean.jpg) (UUID: `3ea9f8fb-6119-49c8-8466-0bb0ddb2669b`).
+2. **Cấu trúc Prompt:** Tham khảo trực tiếp [uploads/nora_base_body_prompt.json](file:///c:/flowkit/uploads/nora_base_body_prompt.json) và [uploads/nora_body_outfit_prompt.json](file:///c:/flowkit/uploads/nora_body_outfit_prompt.json).
+   - Đưa mô tả giải phẫu cơ thể lên đầu: Chiều cao `178 cm`, vóc dáng đồng hồ cát rõ nét, ngực lớn đầy đặn nhô cao ở góc nghiêng (`large full heavy natural bust projecting well forward in profile`), eo con kiến nhỏ sắc nét (`very small, narrow, sharply defined waist`), bụng phẳng, hông nở, đùi thon săn chắc và có khoảng hở giữa 2 đùi (`clear gap between the thighs`).
+   - Giữ nguyên 3 panel cắt ngang vai ở gốc cổ không lộ mặt: Chính diện, 3/4 và Sau lưng.
+   - Thay thế trang phục: mô tả trang phục ôm sát (`form-fitting skin-tight tailored tunic`), thắt eo làm bật đường cong, quần legging bó sát đùi, cấm áo khoác xòe chữ A hay áo parka rộng giấu eo.
+3. **Thực thi:** Gọi `EDIT_CHARACTER_IMAGE` với `source_media_id` là UUID của ảnh body nguồn. Tải về, xóa logo SynthID, upload lại lấy UUID sạch và gán trực tiếp làm `media_id` cho entity `<Vlogger> Body`.
 
-   Bước này không tốn lượt sinh.
-3. Viết prompt EDIT v4 và PATCH vào `image_prompt` của Nora Outfit. Prompt phải:
-   - mở đầu bằng mô tả BODY: giữ đúng dáng, ngực, eo, hông, đùi như ảnh nguồn;
-   - sau đó mới tới bố cục: "keep the same two panels, same poses, same framing at the shoulders, same background";
-   - outfit **ôm sát**: "fitted tunic-dress" thay cho "parka"; may theo đường cong, thắt eo; vạt thẳng dài tới giữa đùi, không xòe; legging da ôm sát như quần bike;
-   - thêm câu đối kháng: "the body is exactly as full and curvy as in the source image: NOT slimmer, NOT flat-chested, NOT a loose A-line or boxy coat".
+---
 
-   Giữ nguyên các chi tiết outfit đã duyệt: da hươu vàng nâu xông khói, đường chỉ gân, mũ viền lông sói xám bẻ ra sau, cổ chữ V buộc dây da, cổ tay lông sói, đai da nâu sẫm, bốt moccasin cao gối quấn dây.
-4. **Hỏi yes**, rồi chạy 1 lượt `EDIT_CHARACTER_IMAGE`:
-   - `character_id` = `14753a8e-…`;
-   - `source_media_id` = media_id Body mới;
-   - EDIT một lần từ Body gốc, không EDIT tiếp từ v3.
-5. Tải ảnh về `refs/nora_outfit_v4.jpg`, đặt cạnh ảnh body cho user so form. Chỉ khi user duyệt mới xóa logo, upload lại, PATCH `media_id`.
-6. Cập nhật script-v5:
-   - §1, dòng "Ref đã upload": Body mới;
-   - §2: tiêu đề Outfit và CHARACTER_LOCK;
-   - §7, khối `[ID-LOCK]`: đổi "knee-length parka" cho khớp ảnh đã duyệt, thêm BODY LOCK.
-7. Cập nhật skill bài học 60, phần bằng chứng: v3 hỏng form vì đặt bố cục trước body và vì áo parka xòe; ghi lại công thức v4 nếu đạt.
+## 4. Công Việc Tiếp Theo Cần Làm (Next Steps)
 
-## 4. Sau khi Outfit được duyệt
-
-- **Bước 3:** sinh 8 ref còn lại: Leader, Old Woman, Strongest, Strongest Spear, Cave Hyena, Ember Bundle, Pech Valley, Cave Mouth. Tổng 8 lượt, cần user nói yes. Đều là 16:9 (Rule 5); xóa logo từng ảnh.
-- **Tạo scenes:** tạo theo storyboard §5 và prompt §7 (hiện đã có prompt từ MASTER-FIRE đến A2-11).
-  - Placeholder (`[ID-LOCK]`, `[WET]`, `[HAIR]`, `[SETTING-*]`, `[END-*]`) phải thay bằng văn bản đầy đủ.
-  - PATCH `duration`: MASTER-FIRE 10, EST-01 6, EST-02/03 4, còn lại 8.
-  - `character_names` dùng TÊN entity, không dùng UUID; tối đa 7 ref.
-- **Prompt Act 3–5:** chưa viết; viết sau khi user duyệt Act 2.
-- **Clip đầu tiên:** MASTER-FIRE (clip khó nhất). Kèm 1 clip POV để thử khóa mặt.
-
-## 5. Những gì đã xong trong phiên này
-
-- Bỏ Child khỏi kịch bản:
-  - A2-10: C (râu rậm) gặm xương;
-  - A3-08: Người Mạnh Nhất chỉ giọt máu;
-  - A5-06: Người Già trao pyrite của chính bà;
-  - số người: ngoài hang 5, đi săn 7 + Nora, trong hang 9 + Nora.
-- Lock Rule 46 vào:
-  - `CLAUDE.md`, `AGENTS.md`, `setup.py` (`_CRITICAL_RULES`);
-  - `skills/fk-time-travel-vlog.md` (bài học 60; sửa bài học 34, 40, 47 và mục outfit ở đầu file);
-  - `.agents/skills/fk-time-travel-vlog/SKILL.md`, tạo lại từ skills/;
-  - memory `feedback_outfit_on_body.md`.
-- script-v5 đã đổi refs `N3` → `N2` (Nora + Nora Outfit) và bỏ `Nora Body` khỏi mọi danh sách ref.
-- Chưa commit.
+1. **Tạo Scenes cho Video (`15076345-ca4a-48cb-8afa-4a79c2a52028`):**
+   - Đọc danh sách scene từ [output/neanderthal-51ka/script-v5.md](file:///c:/flowkit/output/neanderthal-51ka/script-v5.md) (từ `MASTER-FIRE` đến `A2-11`).
+   - Gửi request tạo scenes qua `POST /api/scenes`:
+     - Điền đầy đủ các placeholder: `[ID-LOCK]`, `[HAIR]`, `[SETTING-*]`, `[END-*]`.
+     - `character_names` bắt buộc dùng tên entity: `["Nora", "Nora Body", ...]` (tối đa 7 entity/scene).
+     - `duration`: `MASTER-FIRE` là 10s, `EST-01` là 6s, `EST-02/03` là 4s, các cảnh còn lại là 8s.
+2. **Sinh Video R2V Omni Flash (`GENERATE_VIDEO_REFS`):**
+   - Tuân thủ Rule 29: Trình bày danh sách scene và số lượt gen cho user duyệt ("đồng ý") trước khi gửi lệnh.
+   - Bắt đầu với scene quan trọng nhất: `MASTER-FIRE` (clip gánh cả hook và payoff).
+   - Tải về video 720p thô vào `output/neanderthal-51ka/scenes/scene_XX.mp4`.
+3. **Review & Upscale (Rule 18 & 32):**
+   - Trích xuất frame và review trên video 720p thô trước.
+   - Đưa lên Review Board (`http://localhost:8200`) cho User duyệt.
+   - Chỉ khi User duyệt mới gửi lệnh Upscale 1080p (`UPSCALE_VIDEO`) và xóa watermark trên video 1080p.

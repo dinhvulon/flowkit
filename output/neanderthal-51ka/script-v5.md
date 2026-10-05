@@ -16,23 +16,23 @@ Nguồn: `outline-v5.md` (khung đã duyệt) + research §1–13 (`.omc/researc
 | Model | `GENERATE_VIDEO_REFS` (Omni Flash `abra_r2v_<N>s`). `duration` PATCH đúng 4/6/8/10 cho từng scene, vì giá trị thiếu sẽ thành 10s |
 | Voice Slot 7 | Laomedeia, chỉ cho Nora. Giọng người bản địa tả bằng chữ trong prompt |
 | Material | `prehistoric_vlog` (đã tạo, mục 9) |
-| Outfit Nora tập 2 | Đề xuất ở mục 2, chờ duyệt. Chưa sinh ref |
+| Outfit Nora tập 2 | ĐÃ DUYỆT (v6 clean: `ab34e369-d6ed-4c54-9e44-035e2439b704`) |
 | Sinh đầu tiên | MASTER-FIRE: clip khó nhất, gánh cả hook lẫn payoff |
 | Project | `4cc4b500-6e3b-4379-96c3-dd18b7412c1a` (tạo 2026-10-05, `allow_voice: true`) · video HORIZONTAL `15076345-ca4a-48cb-8afa-4a79c2a52028` |
-| Ref đã upload | Nora ← `ice_age.../refs/nora_main_clean.jpg` (`1454fb46-8510-4f14-99fe-8464720632b6`) · Nora Body ← `uploads/nora_body_v3_clean.jpg`, không mặt (`108813da-76b2-4d7b-8ecb-207db760c45e`) |
+| Ref đã upload | Nora ← `ice_age.../refs/nora_main_clean.jpg` (`1454fb46-8510-4f14-99fe-8464720632b6`) · Nora Body ← `refs/nora_body_v6_clean.jpg`, không mặt (`ab34e369-d6ed-4c54-9e44-035e2439b704`) |
 
 ---
 
 ## 2. Character Bible
 
 ### Nora (giữ từ tập 1)
-- **CHARACTER_LOCK:** honey-blonde hair, grey-green eyes, fair skin with a natural pink flush. Build and clothing from the `Nora Body` sheet (EDIT từ `Nora Body`, Rule 46); `Nora Body` không gửi vào video.
+- **CHARACTER_LOCK:** honey-blonde hair, grey-green eyes, fair skin with a natural pink flush. Build and clothing from the `Nora Body` sheet (Rule 46); video nhận `["Nora", "Nora Body", ...]`.
 - **Câu khóa tóc (Bài học 55):** `hair pulled up into a high wavy ponytail tied at the crown of her head (not low at the nape), with wispy curtain bangs parted in the middle that cover the edges of her forehead and frame both cheeks, plus a few loose face-framing strands at the temples; her hair is never slicked back.`
 - **Câu trước `0-3s`:** `Her curtain bangs stay over her forehead and her ponytail stays tied high at the crown for the entire clip; wind only makes the ponytail swing, it never pulls the hair back or loose.`
 - **Voice:** Laomedeia, Slot 7. `voice_description`: upbeat, mid-high pitched, energetic, expressive conversational female voice; fast confident vlog delivery with dry humor; rises into real cracking screams in danger; drops to a fast whisper when hiding.
 - **VOICE_LOCK:** dùng nguyên khối trong `voice-bible.md` §1. Nora là chuyên gia sinh tồn, không giảng lịch sử, câu ngắn, chửi thề bị cắt và bíp ở hậu kỳ.
 
-### Nora Body tập 2: ĐÃ DUYỆT (2026-10-05). Ref v4 sạch logo = `refs/nora_outfit_v4_clean.jpg` (`76efe0b4-6c92-428c-8cce-4bbfd8c9a7e1`), tạo bằng `EDIT_CHARACTER_IMAGE` từ `Nora Body` (`uploads/nora_body_v3_clean.jpg`). Đóng vai trò là bản **Nora Body + Outfit** hợp nhất: khóa chuẩn 100% vóc dáng hourglass (ngực đầy nhô cao, eo thon, hông cong, chân dài) lẫn trang phục ôm sát.
+### Nora Body tập 2: ĐÃ DUYỆT (2026-10-05). Ref v6 sạch logo = `refs/nora_body_v6_clean.jpg` (`ab34e369-d6ed-4c54-9e44-035e2439b704`), tạo bằng `EDIT_CHARACTER_IMAGE` từ `Nora Body` (`uploads/nora_body_v3_clean.jpg`, `3ea9f8fb-6119-49c8-8466-0bb0ddb2669b`). Đóng vai trò là bản **Nora Body + Outfit** hợp nhất: khóa chuẩn 100% vóc dáng hourglass (ngực đầy nhô cao, eo thon con kiến, hông cong, chân dài có thigh gap) lẫn trang phục ôm sát.
 
 **Ý tưởng:** đồ da **may khâu, vừa người**, kiểu người hiện đại thời kỳ băng hà. Nhóm Neanderthal chỉ khoác da sống buộc dây, không có đường may (research §5: không kim, không may). Vì vậy ở A1-05 Thủ Lĩnh véo **đường chỉ gân** trên vai áo cô: chi tiết lạ là **cách may**, không phải "vải hiện đại". Vẫn đúng luật "vlogger mặc đồ đúng thời kỳ từ clip đầu", và da ướt sũng vẫn không giữ được ấm.
 
