@@ -155,12 +155,12 @@ Tên trong `CHARACTER_LOCK`, tên entity và tên người nói trong `video_pro
 
 **`VOICE_LOCK` — khóa tính cách đi kèm `CHARACTER_LOCK` (góp ý của user, 2026-10-01):** `CHARACTER_LOCK` chỉ khóa ngoại hình và chất giọng; cách nói (vlogger là ai, nói nhanh hay chậm, đùa kiểu gì, sợ gì, không bao giờ nói gì) khóa bằng khối `VOICE_LOCK` theo `voice-bible.md` mục 1. Ghi `VOICE_LOCK` vào `script.md` ngay dưới `CHARACTER_LOCK` và không sửa giữa các clip. `VOICE_LOCK` **không** dán vào entity `description` hay `video_prompt`; nó là luật để viết thoại, còn thứ đi vào prompt là câu thoại và tag cách diễn đạt.
 
-**Bắt buộc tạo Entity Outfit riêng trên Manocanh & Cổng Duyệt Outfit trước khi sinh Video (Lock cứng theo góp ý user 03/10/2026):**
-- Mọi dự án làm video nhân vật/vlog BẮT BUỘC phải tạo riêng một entity/reference `<Tên Nhân Vật> Outfit` (ví dụ: `Nora Outfit`) bên cạnh ảnh Face và Body.
-- Ảnh tham chiếu của outfit BẮT BUỘC phải thể hiện trên **manocanh không đầu 3 góc (chính diện, 3/4, sau lưng) trên nền trung tính**, không tóc/mặt giả, đồng bộ chuẩn xác 100% với trang phục trong Character Bible và bối cảnh lịch sử.
-- **Quy tắc phụ kiện rời (Bao tay / Mũ / Khăn / Trang sức):** Đối với các phụ kiện như bao tay/găng tay (mittens) mà các cảnh sau có hành vi người khác đeo vào hoặc vlogger tháo ra/xỏ vào, ảnh outfit trên manocanh **TUYỆT ĐỐI KHÔNG đính kèm bao tay lủng lẳng**, để tay trần (tay manocanh sạch) giúp model không bị lỗi dính chết bao tay vào tay nhân vật trong các cảnh cần tay trần. Bao tay sẽ được đưa vào các cảnh cụ thể qua prompt hành động (`Functional Prop Dressing Physics`).
-- **CỔNG DUYỆT OUTFIT BẮT BUỘC (MANDATORY GATE):** Trước khi gửi bất kỳ lệnh sinh video nào (`GENERATE_VIDEO_REFS` / `GENERATE_VIDEO`), Agent BẮT BUỘC phải xuất ảnh Outfit sạch watermark, hiển thị cho User xem và **CHỜ USER DUYỆT THÔNG QUA OUTFIT**. Tuyệt đối KHÔNG được tự ý gửi lệnh sinh video khi User chưa xác nhận và duyệt outfit.
-- **Khóa mô tả Outfit trong Prompt (`OUTFIT LOCK`):** Khối mô tả trang phục trong mọi prompt cảnh video (`video_prompt`) BẮT BUỘC phải đối chiếu và mô tả đồng nhất chuẩn xác theo ảnh Outfit đã duyệt, tuyệt đối không để xảy ra lệch trang phục (như kịch bản tả đồ da thú tiền sử mà prompt lại viết váy lụa satin).
+**Bắt buộc dùng ảnh Body ĐÃ MẶC TRANG PHỤC làm `<Vlogger> Body` & Cổng Duyệt trước khi sinh Video (Lock cứng theo góp ý user 05/10/2026, Rule 46):**
+- Trong mọi dự án video nhân vật/vlog, nhân vật chỉ có đúng **2 ref chính**: `<Vlogger>` (Khuôn mặt & tóc) và `<Vlogger> Body` (Body đã mặc trang phục hoàn chỉnh). **TUYỆT ĐỐI KHÔNG tạo entity `<Vlogger> Outfit` riêng lẻ** gây thừa thãi và phân mảnh.
+- Ảnh tham chiếu của `<Vlogger> Body` BẮT BUỘC là **Body sheet của vlogger đã mặc hoàn chỉnh outfit** (`EDIT_CHARACTER_IMAGE` với `source_media_id` = media_id của Body trần nguồn, giữ nguyên 3 góc chính diện / 3/4 / sau lưng, khung cắt vai không lộ mặt, đúng dáng người; chỉ thay quần áo), đồng bộ chuẩn xác 100% với trang phục trong Character Bible và bối cảnh lịch sử. **Không dùng manocanh**. Video chỉ nhận `["<Vlogger>", "<Vlogger> Body", ...]`, **không cần nhận outfit riêng nữa**.
+- **Quy tắc phụ kiện rời (Bao tay / Mũ / Khăn / Trang sức):** Đối với các phụ kiện như bao tay/găng tay (mittens) mà các cảnh sau có hành vi người khác đeo vào hoặc vlogger tháo ra/xỏ vào, ảnh outfit **TUYỆT ĐỐI KHÔNG đính kèm bao tay lủng lẳng**, để tay trần (tay sạch) giúp model không bị lỗi dính chết bao tay vào tay nhân vật trong các cảnh cần tay trần. Bao tay sẽ được đưa vào các cảnh cụ thể qua prompt hành động (`Functional Prop Dressing Physics`).
+- **CỔNG DUYỆT BODY ĐÃ MẶC TRANG PHỤC BẮT BUỘC (MANDATORY GATE):** Trước khi gửi bất kỳ lệnh sinh video nào (`GENERATE_VIDEO_REFS` / `GENERATE_VIDEO`), Agent BẮT BUỘC phải xuất ảnh Body đã mặc trang phục sạch watermark, hiển thị cho User xem và **CHỜ USER DUYỆT THÔNG QUA FORM DÁNG & TRANG PHỤC**. Tuyệt đối KHÔNG được tự ý gửi lệnh sinh video khi User chưa xác nhận và duyệt.
+- **Khóa mô tả Body & Outfit trong Prompt (`[ID-LOCK]`):** Khối mô tả trang phục trong mọi prompt cảnh video (`video_prompt`) BẮT BUỘC phải đối chiếu và mô tả đồng nhất chuẩn xác: khuôn mặt từ `<Vlogger>`, vóc dáng và trang phục lấy trực tiếp từ `<Vlogger> Body` đã duyệt.
 
 ### 3. Strict Ethnicity Lock & Period Lock
 - Mọi người xuất hiện trong khung (người đi đường, người bán hàng, lính canh, quý tộc) phải **trông như người bản địa của thời kỳ/địa điểm đó** để người xem tin, không cần nghiên cứu chính xác.
@@ -550,28 +550,27 @@ Rút ra từ dự án `output/atlantis-9600bc/` (2026-09-27). Khi mâu thuẫn v
     - **Kẻ đuổi không được bắt kịp:** ghi rõ khoảng cách cố định, ví dụ *"The mammoth stays about twenty metres behind Nora for the whole clip; she never draws level with Nora."* Nếu chỉ ghi "never catches up" thì khung cuối mammoth vẫn chạy ngang hàng.
     - **Biểu cảm:** Với cảnh trốn chạy, phải khóa cứng `wide-eyed terror, mouth open in a gasp or scream, no smile whatsoever, brow furrowed hard` — nếu chỉ tả "terrified" mà không chi tiết, model hay gen mặt cười kiểu excited.
 
-34. **BỘ 3 REF CỐ ĐỊNH CHO VLOGGER: Mặt + Body + Outfit (bài học H1/H2 Ice Age 16,000 BC — outfit trôi, dáng người trôi):**
-    - **Root-cause #1 (lỗi nặng nhất): `character_names` phải là TÊN entity, không phải UUID.** Server so khớp theo `name`/`slug` (`_char_matches` trong `agent/sdk/services/operations.py`). Nếu lưu UUID thì không khớp entity nào → server rơi vào nhánh dự phòng và chỉ gửi **1 ref duy nhất** (entity đầu tiên của project). Mọi lock outfit/body đều vô hiệu. Luôn PATCH `character_names: ["Nora", "Nora Body", "Nora Outfit", ...]` và đọc lại scene để kiểm tra.
+34. **[LEGACY & BÀI HỌC GỐC] BỘ REF CHO VLOGGER: Mặt + Body (bài học H1/H2 Ice Age 16,000 BC; từ 05/10/2026 cập nhật theo Rule 46 & Bài học 60):**
+    - **Root-cause #1 (lỗi nặng nhất): `character_names` phải là TÊN entity, không phải UUID.** Server so khớp theo `name`/`slug` (`_char_matches` trong `agent/sdk/services/operations.py`). Nếu lưu UUID thì không khớp entity nào → server rơi vào nhánh dự phòng và chỉ gửi **1 ref duy nhất** (entity đầu tiên của project). Mọi lock outfit/body đều vô hiệu. Luôn PATCH `character_names: ["Nora", "Nora Body", ...]` (bài học 60) và đọc lại scene để kiểm tra.
     - **Root-cause #2: giới hạn ref r2v.** `_R2V_MAX_REFS` đã nâng từ 3 lên 7 (giới hạn Omni Flash). Thứ tự ưu tiên: `visual_asset` trước, rồi `character`; entity `location` KHÔNG được gửi làm ref (chỉ mô tả bằng prompt). Một scene có tối đa 7 ref visual_asset + character.
-    - **Root-cause #3: không có entity outfit/body riêng** → model tự suy diễn quần áo theo bối cảnh (tuyết → áo parka nâu) và tự đổi dáng người.
-    - **Bộ 3 entity bắt buộc cho vlogger (tất cả `entity_type: character`, ảnh 16:9, đã xóa logo trước khi upload theo rule 28):**
+    - **Root-cause #3: không có entity body/outfit riêng** → model tự suy diễn quần áo theo bối cảnh (tuyết → áo parka nâu) và tự đổi dáng người.
+    - **Bộ 2 entity chuẩn cho vlogger (Rule 46 & Bài học 60 — TUYỆT ĐỐI KHÔNG TẠO ENTITY OUTFIT RIÊNG):**
       | Entity | Nguồn ảnh | Chứa gì |
       |---|---|---|
       | `<Vlogger>` | Ảnh mặt user cung cấp (Ice Age: `uploads/nora_main.jpg`) — upload thẳng, KHÔNG gen lại | Chỉ khuôn mặt, tóc, khuyên tai |
-      | `<Vlogger> Body` | `EDIT_CHARACTER_IMAGE` với `source_media_id` = media_id ảnh mặt, prompt từ `uploads/nora_base_body_prompt.json` đã sửa: **bỏ panel face close-up, mọi panel cắt ngang VAI (cắt ngang cằm vẫn lộ môi) → không thấy mặt; quần áo phải ÔM SÁT (skin-tight) nếu không model vẽ áo buông thẳng và mất eo**, 3 panel trước / 3/4 / sau, áo tank xám + quần bike đen, chân trần | Chỉ dáng người, tỉ lệ, màu da |
-      | `<Vlogger> Outfit` | Crop panel 3/4 + toàn thân từ character sheet đang mặc outfit (`ffmpeg -vf "crop=iw*2/3:ih:iw/3:0"`) | Chỉ trang phục |
-    - **Vì sao body KHÔNG có mặt:** nếu ảnh body có mặt, model nhận 2 khuôn mặt khác nhau (ảnh mặt + ảnh body) và trộn lẫn → mặt trôi. Body sheet chỉ được mang thông tin dáng người.
-    - **Quy trình khi setup project:**
+      | `<Vlogger> Body` | **`EDIT_CHARACTER_IMAGE` từ ảnh body trần nguồn (`source_media_id` = media_id của Body trần chuẩn)** để "mặc trang phục" lên body: giữ nguyên 3 panel (chính diện, 3/4, sau lưng), tư thế, tỉ lệ giải phẫu (ngực đầy, eo thon, hông nở, chân dài), khung cắt vai/dưới cằm không lộ mặt, và nền studio. **Đây chính là Body đã mặc hoàn chỉnh trang phục, đóng vai trò là `<Vlogger> Body` duy nhất.** | Body đã mặc outfit: dáng người + trang phục |
+    - **Vì sao body KHÔNG có mặt:** nếu ảnh body có mặt, model nhận 2 khuôn mặt khác nhau (ảnh mặt + ảnh body) và trộn lẫn → mặt trôi. Body sheet chỉ được mang thông tin dáng người và trang phục.
+    - **Quy trình khi setup project (Rule 46 & Bài học 60):**
       1. Xóa logo ảnh mặt → upload → PATCH `media_id` của `<Vlogger>`.
-      2. Tạo entity `<Vlogger> Body` với prompt body-không-mặt → link vào project → batch `EDIT_CHARACTER_IMAGE` (`character_id`, `source_media_id` = media_id mặt). Tải về, mở ra kiểm tra không lộ mặt, xóa logo, upload lại, PATCH `media_id`.
-      3. Crop outfit → xóa logo nếu có → upload → PATCH `media_id` của `<Vlogger> Outfit`.
-      4. Trong `clips.json`: mọi clip có `<Vlogger>` trong `refs` phải có đủ `["<Vlogger>", "<Vlogger> Body", "<Vlogger> Outfit", ...]`.
-      5. `common.identity` nêu rõ vai trò từng ảnh: *"her face from the Nora face sheet, her tall curvy hourglass build from the Nora Body sheet, and her clothing from the Nora Outfit sheet."*
-    - **LUẬT CỨNG cho shot POV (`pov`, `pov_hand`, `wide`): KHÔNG gắn `<Vlogger>`, `<Vlogger> Body`, `<Vlogger> Outfit` vào `refs`/`character_names`.** Bằng chứng: H2 hỏng 3 lần liên tiếp theo cùng một kiểu. Prompt nói Nora ở sau camera, nhưng ảnh ref chứa mặt Nora. Model ưu tiên ảnh hơn chữ nên vẽ Nora vào khung. Vì prompt POV không có khối identity/outfit, model tự chọn áo parka sẫm, rồi diễn giải "holding it firmly" thành cầm điện thoại thấy rõ màn hình. Ảnh outfit cũng có mặt Nora (crop từ sheet nhân vật) nên vẫn kéo Nora vào khung. POV chỉ gắn ref của thứ cần thấy trong khung (động vật, đồ vật, người địa phương). Với `pov_hand`, tả tay áo bằng chữ trong lock (*"her bare empty hand… coming out of a cream suede sleeve with a thick white fox-fur cuff"*).
+      2. Lấy ảnh Body trần của user (ví dụ `uploads/nora_body_v3_clean.jpg`) làm nguồn (`source_media_id`), chạy `EDIT_CHARACTER_IMAGE` với prompt mô tả trang phục vừa vặn form-fitting để "mặc đồ" lên body. Tải về, kiểm tra không lộ mặt, giữ đúng dáng ngực/eo/hông/chân, xóa logo SynthID, upload lại lấy UUID sạch và gán trực tiếp làm `media_id` cho entity `<Vlogger> Body`.
+      3. **Duyệt Body đã mặc đồ**: Xuất ảnh `<Vlogger> Body` sạch logo cho user duyệt trước khi gen video.
+      4. Trong `clips.json` / scene: mọi clip có `<Vlogger>` chỉ gắn **2 ref nhân vật** `["<Vlogger>", "<Vlogger> Body", ...]`. **TUYỆT ĐỐI KHÔNG tạo entity Outfit riêng và KHÔNG gửi ảnh Body trần/gym vào video** (Rule 46 & 47).
+      5. `common.identity` nêu rõ vai trò từng ảnh: *"her face and hair from the Nora face sheet, and her build and clothing from the Nora Body sheet."*
+    - **LUẬT CỨNG cho shot POV (`pov`, `pov_hand`, `wide`): KHÔNG gắn `<Vlogger>`, `<Vlogger> Body` vào `refs`/`character_names`.** Bằng chứng: H2 hỏng 3 lần liên tiếp theo cùng một kiểu. Prompt nói Nora ở sau camera, nhưng ảnh ref chứa mặt Nora. Model ưu tiên ảnh hơn chữ nên vẽ Nora vào khung. Vì prompt POV không có khối identity/outfit, model tự chọn áo parka sẫm, rồi diễn giải "holding it firmly" thành cầm điện thoại thấy rõ màn hình. POV chỉ gắn ref của thứ cần thấy trong khung (động vật, đồ vật, người địa phương). Với `pov_hand`, tả tay áo bằng chữ trong lock (*"her bare empty hand… coming out of a cream suede sleeve with a thick white fox-fur cuff"*).
     - **Outfit lock trong `common.identity`:** Cập nhật `common.identity` trong `clips.json` để mô tả chi tiết màu sắc, chất liệu, phụ kiện của trang phục. Phải nêu rõ "NOT dark, NOT brown, NOT a parka" để ngăn model suy diễn.
     - **Outfit lock trong `video_prompt`:** Thêm `OUTFIT LOCK (CRITICAL)` vào mỗi `video_prompt` của cảnh có vlogger, nêu rõ màu chủ đạo (ví dụ: "WHITE/CREAM reindeer suede dress, NOT dark/brown coat").
-    - **Lưu ý mannequin:** Nếu gen ảnh outfit mới bằng AI (mannequin display), ảnh sẽ KHÔNG khớp chính xác với outfit trong character ref vì AI tự diễn giải từ text. Phải luôn dùng crop từ character ref sheet thay vì gen mới.
-    - **Lệnh crop chuẩn cho Nora Outfit ref** (chạy 1 lần khi setup project):
+    - **Lưu ý mannequin:** KHÔNG gen outfit trên mannequin (phom người thon thẳng, không có tay chân thật → các góc mâu thuẫn, mất tay áo/legging; Neanderthal ep 2 v1/v2 hỏng). Trang phục luôn EDIT trực tiếp lên Body sheet của user (Rule 46 & Bài học 60).
+    - **[LEGACY — chỉ project Ice Age cũ] Lệnh crop Nora Outfit ref** (project mới dùng bài học 60):
       ```bash
       ffmpeg -y -i "output/<slug>/refs/nora_clean.jpg" \
         -vf "crop=iw*2/3:ih:iw/3:0" \
@@ -580,7 +579,7 @@ Rút ra từ dự án `output/atlantis-9600bc/` (2026-09-27). Khi mâu thuẫn v
       # Upload rồi dùng làm media_id của entity "Nora Outfit"
       ```
 
-    **[ICE AGE PROJECT] Nora — bộ 3 ref đã khóa:**
+    **[ICE AGE PROJECT — LEGACY, project mới theo bài học 60] Nora — bộ 3 ref đã khóa:**
     - `Nora` ← `uploads/nora_main.jpg` (sheet mặt 4 góc, đã xóa logo → `refs/nora_main_clean.jpg`). Đây là ảnh nhân vật chính thức; KHÔNG dùng `nora_clean.jpg` làm ảnh mặt nữa.
     - `Nora Body` ← `refs/nora_body_v3_clean.jpg` (EDIT_CHARACTER_IMAGE từ nora_main + `uploads/nora_base_body_prompt.json` v3: khung cắt ngang vai, áo tank + quần bike ôm sát để thấy eo nhỏ, chân thon, ngực đầy; không có mặt).
     - `Nora Outfit` ← `refs/nora_outfit_crop.jpg` (crop từ `nora_clean.jpg`).
@@ -656,8 +655,8 @@ Rút ra từ dự án `output/atlantis-9600bc/` (2026-09-27). Khi mâu thuẫn v
     - **Root-cause:**
       1. Ảnh Outfit tạo trên manocanh (mannequin display) có phom người thon gọn, thẳng đuột tiêu chuẩn. Khi đưa vào R2V ingredients cùng với ảnh Body đồng hồ cát, model video AI có xu hướng bị phom dáng mảnh khảnh của manocanh làm lấn át (body drift), khiến nhân vật trong video bị phẳng ngực và mất đường cong eo-hông dù prompt có ghi "hourglass build".
       2. Thứ tự ref gửi lên server: Nếu entity Outfit được gửi trước entity Body, model sẽ dựng phom áo trước khi gán tỉ lệ cơ thể.
-    - **Fix:**
-      - **Bảo toàn thứ tự truyền Ref theo chuỗi nhận diện:** Server (`agent/sdk/services/operations.py`) bắt buộc bảo toàn thứ tự entities khai báo trong `character_names`: `[Face] -> [Body] -> [Outfit]` (ví dụ: `["Nora", "Nora Body", "Nora Outfit"]`). Nhờ đó, model cố định tỉ lệ giải phẫu cơ thể trước, sau đó mới khoác lớp trang phục lên.
+    - **Fix (từ 05/10/2026 thay bằng Rule 46 & bài học 60: outfit EDIT trực tiếp lên Body, <Vlogger> Body chính là Body đã mặc trang phục, video chỉ nhận `["<Vlogger>", "<Vlogger> Body"]` → không còn mannequin và không có entity Outfit riêng lẻ; các ý dưới chỉ là tài liệu tham khảo cho project cũ):**
+      - **Bảo toàn thứ tự truyền Ref theo chuỗi nhận diện:** Server (`agent/sdk/services/operations.py`) bảo toàn thứ tự entities trong `character_names`: `[Face] -> [Body]` (ví dụ: `["Nora", "Nora Body"]`). Model cố định nhận diện khuôn mặt trước, sau đó áp vóc dáng và trang phục từ Body sheet.
       - **Manocanh không đầu (Headless Mannequin):** Ảnh trang phục manocanh BẮT BUỘC là manocanh không đầu trên nền studio trung tính, chụp 3 góc (chính diện, 3/4, sau lưng); tuyệt đối không có tóc giả hay mặt người giả để tránh xung đột nhận diện khuôn mặt.
       - **Khóa tương phản giải phẫu cơ thể (Negative Contrast Constraints) trong Prompt:** Trong `common.identity` và `video_prompt`, phải có cụm từ tương phản đối kháng mạnh mẽ ép model tuân thủ ảnh Body: *"BODY LOCK (CRITICAL): Nora has a voluptuous hourglass figure with a large full heavy natural bust, tiny narrow waist, and wide curvaceous hips matching Nora Body reference; she is NOT skinny, NOT slender, NOT petite, NOT flat-chested, and her deep neckline proudly showcases her cleavage."*
     - **Bằng chứng thực nghiệm:** H1 (media `81b3bf5f`) và H2 (media `665ccebc`) bản v8 thể hiện chuẩn xác vóc dáng đồng hồ cát nóng bỏng với vòng 1 đầy đặn và váy slip dress lụa trắng xẻ ngực sâu trùng khớp hoàn toàn với ảnh `thumbnail_v2_2k_clean.jpg` và `nora_body_v3_clean.jpg`.
@@ -855,8 +854,8 @@ Rút ra từ dự án `output/atlantis-9600bc/` (2026-09-27). Khi mâu thuẫn v
     #### 3. Quy tắc Vàng: Công thức Khóa Nhận diện Tóc & Outfit chuẩn 100%
     1. **Bộ Reference tối ưu (Tối đa 3 Ref cho cảnh Vlogger):**
        - Khóa chuẩn: `[<Vlogger>, <Vlogger> Outfit, <Creature/Asset>]`.
-       - **BẮT BUỘC LOẠI BỎ `<Vlogger> Body`** đối với mọi cảnh nhân vật mặc trang phục mùa đông/may đo dài tay kín đáo. Chỉ dùng ảnh Body khi nhân vật mặc đồ bơi, đồ lót hoặc trang phục mùa hè lộ đường cong cơ thể.
-       - **Entity `<Vlogger> Outfit`** liên kết chuẩn với file ma-nơ-canh 3 góc đã làm sạch watermark (như `nora_outfit_clean.jpg`).
+       - **BẮT BUỘC LOẠI BỎ `<Vlogger> Body`** đối với mọi cảnh nhân vật mặc trang phục mùa đông/may đo dài tay kín đáo. Từ 05/10/2026 (bài học 60) Body không bao giờ gửi vào video; trang phục nào cũng được mặc lên Body bằng EDIT và gửi qua `<Vlogger> Outfit`.
+       - **Entity `<Vlogger> Outfit`** liên kết với ảnh 3 góc đã làm sạch watermark. Project mới: ảnh này là Body sheet đã mặc outfit (EDIT từ Body, bài học 60), không phải ma-nơ-canh.
     2. **Khối cấu trúc Prompt `IDENTITY & OUTFIT LOCK` bắt buộc (Đưa lên vị trí SỚM ngay sau `Shot:` trước `0-3s`):**
        ```text
        IDENTITY & OUTFIT LOCK (CRITICAL -- match reference images exactly):
@@ -886,7 +885,7 @@ Rút ra từ dự án `output/atlantis-9600bc/` (2026-09-27). Khi mâu thuẫn v
     - **Hiện tượng:** Scene 13 là POV của Nora, thoại viết `Nora's off-screen voice says`, gương mặt duy nhất trong khung là Alva → Alva mở miệng "nói" suốt clip bằng giọng Laomedeia. Vi phạm luật "chỉ vlogger nói".
     - **Root cause:** Omni Flash chỉ có 1 giọng (Slot 7) và luôn cố gắn khẩu hình vào **một cái miệng nhìn thấy được**. Khi miệng vlogger không có trong khung, nó gắn vào người bản địa duy nhất đang hiện mặt. Câu `Only Nora speaks` không đủ để khóa miệng người kia.
     - **Quy tắc:**
-      1. Beat có thoại + người bản địa hiện mặt → **dùng Selfie Qua Vai** (Rule 42, mục 2b): vlogger 1/3 tiền cảnh nói bằng chính miệng mình, người bản địa 2/3 hậu cảnh; thêm `Nora`, `Nora Outfit` vào `character_names` (giữ tối đa 3 ref theo Bài học 47).
+      1. Beat có thoại + người bản địa hiện mặt → **dùng Selfie Qua Vai** (Rule 42, mục 2b): vlogger 1/3 tiền cảnh nói bằng chính miệng mình, người bản địa 2/3 hậu cảnh; thêm `Nora`, `Nora Body` vào `character_names` (giữ tối đa 3 ref theo Bài học 47 & Rule 46).
       2. Clip người bản địa **không có thoại**: thêm câu khóa `"<Local>'s lips stay closed for the entire clip; she never speaks or mouths words, and communicates only by frowning, shaking her head and hand gestures. The only moving mouth in the frame is Nora's."` (Cập nhật 2026-10-05: người bản địa **được** nói ngôn ngữ không hiểu được ở sub-clip riêng, mục 2b; khi đó không dùng câu khóa này mà ghi rõ ai nói, lúc nào, giọng gì.)
       3. POV thoại ngoài khung chỉ an toàn khi trong khung **không có mặt người** (tay, đồ vật, phong cảnh) hoặc người bản địa quay lưng / ở rất xa.
     - **Rà soát:** sau khi gen, lọc mọi scene có `off-screen voice` + người bản địa trong `character_names` rồi kiểm tra miệng (Part 2: 13 lỗi rõ; 53, 31 nghi ngờ).
@@ -960,6 +959,14 @@ Rút ra từ dự án `output/atlantis-9600bc/` (2026-09-27). Khi mâu thuẫn v
 59. **TẢ ÁNH SÁNG BẰNG CẢM GIÁC, KHÔNG VỊ TRÍ MẶT TRỜI (Qualitative Light — Neanderthal 51ka, user review 05/10/2026):**
     - **Root cause dự báo:** Prompt kiểu "sun one hand above the ridge" làm model vẽ mặt trời đúng chỗ đó, dễ lệch hướng/độ cao giữa các clip liền nhau và mâu thuẫn với countdown.
     - **Quy tắc:** Dùng `long shadows, low winter sunlight, daylight fading fast` / `dusk` / `moonlight`. Chỉ đưa mặt trời vào khung khi đó là chủ thể của shot (bình minh cuối tập).
+
+60. **BODY ĐÃ MẶC TRANG PHỤC LÀM <VLOGGER> BODY; VIDEO NHẬN MẶT + BODY, KHÔNG CẦN NHẬN OUTFIT RIÊNG (Dressed-Body as Vlogger Body — Neanderthal 51ka, user lock 05/10/2026; thay thế hoàn toàn entity Outfit riêng theo Rule 46 & 47):**
+    - **Chỉ đạo cốt lõi của User (05/10/2026):** Khi tạo ảnh trang phục mặc lên body, nó KHÔNG PHẢI là outfit riêng lẻ nữa. Nó chính là **Body đã mặc trang phục** và đóng vai trò trực tiếp là **`<Vlogger> Body`** duy nhất. Không tạo entity `<Vlogger> Outfit` riêng gây phân mảnh và thừa thãi. Downstream video R2V chỉ nhận: `["<Vlogger>", "<Vlogger> Body", ...]`.
+    - **Bằng chứng:** Outfit gen trên mannequin hỏng (v1/v2: giày hiện đại, cụt tay, mất legging, làm phẳng ngực). Khi dùng `EDIT_CHARACTER_IMAGE` từ ảnh Body trần của user (`uploads/nora_body_v3_clean.jpg`) với prompt tôn dáng (ôm sát, nâng ngực nhô cao, eo thon, chân dài) → sinh ra ảnh 3 góc khớp nhau tuyệt đối, chuẩn trang phục cổ đại và giữ nguyên vóc dáng đồng hồ cát.
+    - **Quy tắc 1 — tạo ref `<Vlogger> Body`:** Dùng ảnh Body trần nguồn của user làm `source_media_id`, chạy `EDIT_CHARACTER_IMAGE` để "mặc trang phục" lên body: giữ nguyên 3 panel (chính diện, 3/4, sau lưng), tư thế, tỉ lệ giải phẫu (ngực đầy, eo thon, hông nở, chân dài), khung cắt vai không lộ mặt, và nền studio. Sau khi sinh xong: tải về, xóa sạch watermark SynthID bằng `python tools/remove_watermark_from_image.py`, upload lại lấy UUID sạch và gán trực tiếp làm `media_id` cho entity `<Vlogger> Body`.
+    - **Quy tắc 2 — ref cho video downstream:** Mọi clip có vlogger gắn `character_names`/`refs` = `["<Vlogger>", "<Vlogger> Body", ...]`. **TUYỆT ĐỐI KHÔNG tạo entity Outfit riêng và KHÔNG gửi ảnh Body trần/gym vào video** (tránh nhiễm da thịt trần, Rule 47).
+    - **Câu identity:** *"Nora looks exactly like her two reference images: her face and hair from the Nora face sheet, and her build and clothing from the Nora Body sheet."* Vẫn giữ `OUTFIT LOCK` + `BODY LOCK` bằng chữ trong prompt (Rule 47).
+    - **Cổng duyệt bắt buộc (Rule 46):** Bắt buộc trình ảnh `<Vlogger> Body` sạch logo cho user xem và duyệt phom dáng & trang phục trước khi gửi bất kỳ lệnh sinh video nào.
 
     > **Quy ước:** mỗi lỗi gen lặp lại được ghi thành MỘT bài học đánh số riêng ở đây, gồm root-cause, câu prompt sửa cụ thể và bằng chứng (clip nào, bản nào), để lần sau rút kinh nghiệm thay vì sửa lại từ đầu.
 

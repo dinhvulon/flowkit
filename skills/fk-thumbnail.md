@@ -51,7 +51,7 @@ Every thumbnail needs **2 lines of text**:
 > [!CRITICAL]
 > **CẤM THUMBNAIL KIỂU DU LỊCH NGẮM CẢNH HIỀN LÀNH**: Tuyệt đối không để vlogger mỉm cười tạo dáng hiền từ hoặc dùng text yếu ớt kiểu postcard (`ANCIENT EGYPT • 2400 BC / THE PYRAMIDS WERE BRAND NEW!`). Thumbnail phải toát lên cảm giác **Sinh Tồn Nghẹt Thở & Hiểm Họa Cận Kề**!
 
-1. **Character & Outfit References**: Bắt buộc đính kèm cả nhân vật (`[Character]`) và trang phục (`[Character] Outfit`) từ entity references vào `character_names` (ví dụ `["Nora", "Nora Outfit"]`) để đảm bảo khuôn mặt và bộ trang phục cổ đại thời kỳ đó đồng nhất 100% với video.
+1. **Character & Body References**: Bắt buộc đính kèm cả nhân vật (`[Character]`) và Body đã mặc trang phục (`[Character] Body` theo Rule 46) từ entity references vào `character_names` (ví dụ `["Nora", "Nora Body"]`) để đảm bảo khuôn mặt, vóc dáng và bộ trang phục cổ đại thời kỳ đó đồng nhất 100% với video.
 2. **Extreme Facial Expression (Adrenaline / Terror / Shock)**: Mặt vlogger chiếm 35-45% khung hình, biểu cảm kinh hoàng tột độ hoặc adrenaline nghẹt thở (`extreme panic and adrenaline, wide eyes, panting breath, frost on eyelashes and eyebrows, flushed cheeks from -40°C blizzard`).
 3. **Imminent Threat & Overwhelming Danger**: Phải có mối đe dọa sinh tử áp sát trong khung hình (chân voi ma mút khổng lồ giẫm tuyết ngay góc máy, cặp ngà xoắn 4m quét sát lưng, thợ săn tiền sử bao vây chĩa giáo đá, bão tuyết gầm thét).
 4. **Text on Thumbnail in ENGLISH (Mandatory High-Stakes)**: Bắt buộc hiển thị chữ TIẾNG ANH nổi bật ở nửa trên thumbnail:
