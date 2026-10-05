@@ -255,8 +255,17 @@ def remove_watermark_video(input_path: str, output_path: str = None) -> str:
     
     if os.path.exists(temp_out):
         if os.path.exists(output_path):
-            os.remove(output_path)
-        os.rename(temp_out, output_path)
+            try:
+                os.remove(output_path)
+            except Exception:
+                pass
+        for _ in range(10):
+            try:
+                os.replace(temp_out, output_path)
+                break
+            except PermissionError:
+                import time
+                time.sleep(0.5)
     log.info(f"[+] DONE: {output_path}")
     return output_path
 

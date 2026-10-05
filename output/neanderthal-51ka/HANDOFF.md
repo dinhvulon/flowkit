@@ -41,7 +41,7 @@
 | Entity Name | Entity ID | Clean Media ID (UUID trong DB) | Nguồn file local | Trạng thái |
 |---|---|---|---|---|
 | **Nora** (Mặt & tóc) | `f1e93b66-f83f-40d8-bf6e-d22ec444f57e` | `1454fb46-8510-4f14-99fe-8464720632b6` | `uploads/nora_main_clean.jpg` | ĐÃ DUYỆT ✅ |
-| **Nora Body** (Body đã mặc outfit v6) | `c58ac1d3-14a9-4169-94a3-681790557d8e` | `ab34e369-d6ed-4c54-9e44-035e2439b704` | `refs/nora_body_v6_clean.jpg` | **USER ĐÃ DUYỆT** ✅ |
+| **Nora Body** (Body đã mặc outfit v7 — đảo ngược từ video MASTER-FIRE) | `c58ac1d3-14a9-4169-94a3-681790557d8e` | `4cba3314-40ad-4ed1-a90a-a7d63870308c` | `refs/nora_body_v7_clean.jpg` | **USER ĐÃ DUYỆT** ✅ |
 | **Leader** (Thủ lĩnh Neanderthal) | `288d06c2-2b2a-4016-9eab-c5d670df67e7` | `f4395dd6-9227-4b8d-8425-8bd71d8027ed` | `refs/leader_clean.jpg` | ĐÃ HOÀN TẤT ✅ |
 | **Old Woman** (Bà lão giữ lửa) | `e8a607ed-e207-4be3-806d-f4df489f5a11` | `5a2b982a-5ae8-4124-ada7-dc98df9a59a8` | `refs/old_woman_clean.jpg` | ĐÃ HOÀN TẤT ✅ |
 | **Strongest** (Thợ săn to lớn) | `4ae88e7c-997f-4e79-97ee-96a14b3b5d8c` | `10ab07ce-7600-4f73-8697-6cc1a3e09aca` | `refs/strongest_clean.jpg` | ĐÃ HOÀN TẤT ✅ |
@@ -67,17 +67,74 @@
 
 ## 4. Công Việc Tiếp Theo Cần Làm (Next Steps)
 
-1. **Tạo Scenes cho Video (`15076345-ca4a-48cb-8afa-4a79c2a52028`):**
-   - Đọc danh sách scene từ [output/neanderthal-51ka/script-v5.md](file:///c:/flowkit/output/neanderthal-51ka/script-v5.md) (từ `MASTER-FIRE` đến `A2-11`).
-   - Gửi request tạo scenes qua `POST /api/scenes`:
-     - Điền đầy đủ các placeholder: `[ID-LOCK]`, `[HAIR]`, `[SETTING-*]`, `[END-*]`.
-     - `character_names` bắt buộc dùng tên entity: `["Nora", "Nora Body", ...]` (tối đa 7 entity/scene).
-     - `duration`: `MASTER-FIRE` là 10s, `EST-01` là 6s, `EST-02/03` là 4s, các cảnh còn lại là 8s.
+1. **Tạo Scenes cho Video (`15076345-ca4a-48cb-8afa-4a79c2a52028`):** ✅ **ĐÃ HOÀN TẤT 23 SCENES**
+   - Đã tạo toàn bộ 23 scenes từ Cold Open đến Act 2 (`MASTER-FIRE` đến `A2-11`) trong database.
+   - Đã bung đầy đủ tất cả placeholders (`[ID-LOCK]`, `[HAIR]`, `[WET]`, `[NEANDERTHAL]`, `[HYENA]`, `[SETTING-*]`, `[END-*]`).
+   - Đã gán đúng duration (Scene 1 `MASTER-FIRE`: 10s, Scene 2 `EST-01`: 6s, các scene còn lại: 8s).
+   - Đã khóa danh sách entity refs `["Nora", "Nora Body", ...]` theo đúng chuẩn Rule 46 & 38.
+
 2. **Sinh Video R2V Omni Flash (`GENERATE_VIDEO_REFS`):**
-   - Tuân thủ Rule 29: Trình bày danh sách scene và số lượt gen cho user duyệt ("đồng ý") trước khi gửi lệnh.
-   - Bắt đầu với scene quan trọng nhất: `MASTER-FIRE` (clip gánh cả hook và payoff).
-   - Tải về video 720p thô vào `output/neanderthal-51ka/scenes/scene_XX.mp4`.
-3. **Review & Upscale (Rule 18 & 32):**
-   - Trích xuất frame và review trên video 720p thô trước.
-   - Đưa lên Review Board (`http://localhost:8200`) cho User duyệt.
-   - Chỉ khi User duyệt mới gửi lệnh Upscale 1080p (`UPSCALE_VIDEO`) và xóa watermark trên video 1080p.
+   - **Clip 01 (`FOREST-SPRINT v6`, 10s) — Chạy Thục Mạng & Linh Cẩu Bám Đuổi Giữ Cự Ly**: ✅ **ĐÃ HOÀN TẤT 1080P CLEAN**
+     - Request Video 720p: `7db2b639-fe83-44e8-96dd-0eb022e256eb`
+     - Request Upscale 1080p: `7feb2c2e-f7a0-43fa-9ae8-ce234e888e1e`
+     - Flow Media ID: `c05f7420-8252-48ab-ba7d-d7579dc6ab06`
+     - File video 720p thô: `output/neanderthal-51ka/scenes/scene_01_8ae57638.mp4` (8.29 MB)
+     - File video 1080p thô: `output/neanderthal-51ka/1080/scene_01_8ae57638_1080p.mp4` (12.77 MB)
+     - **File video 1080p SẠCH HOÀN TOÀN LOGO (READY FOR EDIT)**: `output/neanderthal-51ka/1080/scene_01_8ae57638_1080p_clean.mp4` (14.60 MB, 1920x1080, 10.0s, 240 frames)
+     - Preview frames: `output/neanderthal-51ka/review/scene_01_v6_frames/` (10 frames)
+     - **Kết quả kiểm duyệt theo chỉ đạo User:**
+       - ✅ **Hành vi linh cẩu:** 2 linh cẩu phi nước đại đuổi theo sau lưng giữ cự ly 4–6m trong bóng cây, tuyệt đối không nhảy đến cắn.
+       - ✅ **Nhịp độ & Chuyển động:** Nora chạy thục mạng liên tục 10s (*non-stop full sprint*), camera selfie 0.5x rung lắc dữ dội theo bước chân, hơi thở phả khói lạnh.
+       - ✅ **Khóa Trang phục (Outfit chuẩn v8):** Áo da lộn vàng mật ong có dây đan chéo chữ X ở ngực, cổ tay áo sạch lông trơn tru, không có dây chuyền kim loại.
+       - ✅ **Bối cảnh:** Rừng thông đêm Dordogne 51k năm trước, cành khô lá mục phủ đất, không có tuyết.
+   - **Clip 02 (`EST-01 v2`, 6s) — Cú Lướt FPV Tốc Độ Cao Lao Vào Hang Neanderthal**: ✅ **ĐÃ HOÀN TẤT 1080P CLEAN**
+     - Request Video 720p: `260e150d-ff3d-4450-8f37-ad24c25ead6c`
+     - Request Upscale 1080p: `569370ed-7167-4964-a939-db94e44d36d4`
+     - Flow Media ID: `54682aa7-91cf-47a2-9de0-52c3acf3876c`
+     - File video 720p thô: `output/neanderthal-51ka/scenes/scene_02_3fc899f4.mp4` (5.00 MB)
+     - File video 1080p thô: `output/neanderthal-51ka/1080/scene_02_3fc899f4_1080p.mp4` (8.78 MB)
+     - **File video 1080p SẠCH HOÀN TOÀN LOGO (READY FOR EDIT)**: `output/neanderthal-51ka/1080/scene_02_3fc899f4_1080p_clean.mp4` (9.33 MB, 1920x1080, 6.0s, 144 frames)
+     - Preview frames: `output/neanderthal-51ka/review/scene_02_v2_frames/` (6 frames)
+     - Đánh giá chất lượng: Đúng 100% yêu cầu user — camera lao nhanh với gia tốc lớn như đường chim bay từ thung lũng Pech Valley, lướt qua dòng suối và vách đá vôi rồi lao thẳng qua cửa hang vào tận trong lòng hang đá nơi có đống lửa sưởi và da thú.
+   - **Review Server**: Đang chạy tại `http://localhost:8200`.
+
+   - **Clip 03 (`A1-01`, 8s) — Nora Selfie Dọc Suối & Trượt Chân Ngã Nước**: ✅ **ĐÃ HOÀN TẤT 1080P CLEAN**
+     - Request Video 720p: `8c466cf6-97bf-4f60-9533-3381fdf74a6c`
+     - Request Upscale 1080p: `52dbb39f-7bde-4bee-aaf8-077bab0231f9`
+     - Flow Media ID: `29178e1e-fba4-4732-81e6-e69cdbded862`
+     - File video 720p thô: `output/neanderthal-51ka/scenes/scene_03_e7a2e9c3.mp4` (7.98 MB)
+     - File video 1080p thô: `output/neanderthal-51ka/1080/scene_03_e7a2e9c3_1080p.mp4` (14.65 MB)
+     - **File video 1080p SẠCH HOÀN TOÀN LOGO (READY FOR EDIT)**: `output/neanderthal-51ka/1080/scene_03_e7a2e9c3_1080p_clean.mp4` (14.50 MB, 1920x1080, 8.0s, 192 frames)
+     - Preview frames: `output/neanderthal-51ka/review/scene_03_frames/` (8 frames)
+     - Đánh giá chất lượng: Nhận diện khuôn mặt và outfit v8 chuẩn 100% (dây đan chéo chữ X, sạch lông cổ tay, không trang sức), cú trượt chân xuống suối băng tự nhiên, tay phải giữ camera giơ cao không rơi nước, tay trái bám rễ cây trèo lên, vết ướt nước trên áo da lộn rất thực tế.
+   - **Review Server**: Đang chạy tại `http://localhost:8200`.
+
+   - **Clip 04 (`A1-02 v2`, 8s) — Nora Quỳ Trên Đá Gạt Nước & Ôm Ngực Run Rẩy**: ✅ **ĐÃ HOÀN TẤT 1080P CLEAN**
+     - Request Video 720p: `f11129d1-ac28-43b0-bce7-1b46cbdc7a68`
+     - Request Upscale 1080p: `95484488-3cfe-4dd0-88f9-d3639633512a`
+     - Flow Media ID: `7f579df4-0fca-4046-99c7-bdcccbd878d3`
+     - File video 720p thô: `output/neanderthal-51ka/scenes/scene_04_1428bcf0.mp4` (3.77 MB)
+     - File video 1080p thô: `output/neanderthal-51ka/1080/scene_04_1428bcf0_1080p.mp4` (9.90 MB)
+     - **File video 1080p SẠCH HOÀN TOÀN LOGO (READY FOR EDIT)**: `output/neanderthal-51ka/1080/scene_04_1428bcf0_1080p_clean.mp4` (8.62 MB, 1920x1080, 8.0s, 192 frames)
+     - Preview frames: `output/neanderthal-51ka/review/scene_04_v2_frames/` (8 frames)
+     - Đánh giá chất lượng: Đã khắc phục 100% lỗi tua rua tay áo; tay áo da lộn trơn ôm sát chuẩn v8; động tác vuốt gạt nước tự nhiên; khoanh tay ôm ngực run rẩy vì sốc nhiệt; giơ bàn tay đỏ ửng tê dại lên nhìn rất điện ảnh.
+   - **Clip 05 (`A1-03 v2`, 8s) — Cuộc Chạm Trán Đầu Tiên Với 5 Người Neanderthal**: ✅ **ĐÃ HOÀN TẤT 720P THÔ**
+     - Request Video 720p: `221dc3a1-065b-4ba5-831a-2e2e89a080f3`
+     - Flow Media ID: `ae013783-16cf-4ad9-bfd4-8b78019e1d10`
+     - File video 720p thô: `output/neanderthal-51ka/scenes/scene_05_23a31226.mp4` (7.05 MB)
+     - Preview frames: `output/neanderthal-51ka/review/scene_05_v2_frames/` (8 frames)
+     - Đánh giá chất lượng: Khắc phục 100% lỗi người phụ cầm giáo bị biến mất và lỗi bước đều như rô bốt — chuyển sang bố cục bất đối xứng tự nhiên: thợ săn sừng sững găm giáo đá xuống đất xuyên suốt clip, bà lão quỳ nấp gốc bạch dương, người phụ nấp sau thân thông, Nora ngoái đầu sợ hãi rồi quay lại thì thào: *"Don't run."*
+   - **Review Server**: Đang chạy tại `http://localhost:8200`.
+
+3. **Công việc tiếp theo (Rule 29 - Chờ User duyệt để sinh):**
+   - **Upscale Scene 05** hoặc tiếp tục sang:
+   - **Scene 06 (`A1-04`, 8s)**: Thủ Lĩnh Neanderthal bước lên thăm dò, ra hiệu lệnh tay hoặc kiểm tra ngọn giáo. Refs: `["Nora", "Nora Body", "Leader", "Strongest", "Strongest Spear"]`. Model: `abra_r2v_8s`.
+
+
+
+
+
+
+
+
+

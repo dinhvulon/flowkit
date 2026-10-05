@@ -16,10 +16,10 @@ Nguồn: `outline-v5.md` (khung đã duyệt) + research §1–13 (`.omc/researc
 | Model | `GENERATE_VIDEO_REFS` (Omni Flash `abra_r2v_<N>s`). `duration` PATCH đúng 4/6/8/10 cho từng scene, vì giá trị thiếu sẽ thành 10s |
 | Voice Slot 7 | Laomedeia, chỉ cho Nora. Giọng người bản địa tả bằng chữ trong prompt |
 | Material | `prehistoric_vlog` (đã tạo, mục 9) |
-| Outfit Nora tập 2 | ĐÃ DUYỆT (v6 clean: `ab34e369-d6ed-4c54-9e44-035e2439b704`) |
+| Outfit Nora tập 2 | ĐÃ DUYỆT (v7 clean: `4cba3314-40ad-4ed1-a90a-a7d63870308c` — đảo ngược chuẩn từ video MASTER-FIRE) |
 | Sinh đầu tiên | MASTER-FIRE: clip khó nhất, gánh cả hook lẫn payoff |
 | Project | `4cc4b500-6e3b-4379-96c3-dd18b7412c1a` (tạo 2026-10-05, `allow_voice: true`) · video HORIZONTAL `15076345-ca4a-48cb-8afa-4a79c2a52028` |
-| Ref đã upload | Nora ← `ice_age.../refs/nora_main_clean.jpg` (`1454fb46-8510-4f14-99fe-8464720632b6`) · Nora Body ← `refs/nora_body_v6_clean.jpg`, không mặt (`ab34e369-d6ed-4c54-9e44-035e2439b704`) |
+| Ref đã upload | Nora ← `ice_age.../refs/nora_main_clean.jpg` (`1454fb46-8510-4f14-99fe-8464720632b6`) · Nora Body ← `refs/nora_body_v7_clean.jpg`, không mặt (`4cba3314-40ad-4ed1-a90a-a7d63870308c`) |
 
 ---
 
@@ -32,24 +32,25 @@ Nguồn: `outline-v5.md` (khung đã duyệt) + research §1–13 (`.omc/researc
 - **Voice:** Laomedeia, Slot 7. `voice_description`: upbeat, mid-high pitched, energetic, expressive conversational female voice; fast confident vlog delivery with dry humor; rises into real cracking screams in danger; drops to a fast whisper when hiding.
 - **VOICE_LOCK:** dùng nguyên khối trong `voice-bible.md` §1. Nora là chuyên gia sinh tồn, không giảng lịch sử, câu ngắn, chửi thề bị cắt và bíp ở hậu kỳ.
 
-### Nora Body tập 2: ĐÃ DUYỆT (2026-10-05). Ref v6 sạch logo = `refs/nora_body_v6_clean.jpg` (`ab34e369-d6ed-4c54-9e44-035e2439b704`), tạo bằng `EDIT_CHARACTER_IMAGE` từ `Nora Body` (`uploads/nora_body_v3_clean.jpg`, `3ea9f8fb-6119-49c8-8466-0bb0ddb2669b`). Đóng vai trò là bản **Nora Body + Outfit** hợp nhất: khóa chuẩn 100% vóc dáng hourglass (ngực đầy nhô cao, eo thon con kiến, hông cong, chân dài có thigh gap) lẫn trang phục ôm sát.
+### Nora Body tập 2: ĐÃ DUYỆT (2026-10-05). Ref v7 sạch logo = `refs/nora_body_v7_clean.jpg` (`4cba3314-40ad-4ed1-a90a-a7d63870308c`), tạo bằng `EDIT_CHARACTER_IMAGE` từ `Nora Body` (`uploads/nora_body_v3_clean.jpg`, `49a24c0f-bf32-4a2f-bbeb-6fed89ee98bb`). Đóng vai trò là bản **Nora Body + Outfit** hợp nhất: khóa chuẩn 100% vóc dáng hourglass (ngực đầy nhô cao, eo thon con kiến, hông cong, chân dài có thigh gap) lẫn trang phục ôm sát. Đảo ngược chính xác từ video `MASTER-FIRE`: loại bỏ mũ trùm/viền lông ở cổ và vai, giữ cổ V khoét sâu đan dây da mảnh, viền lông sói xám dày ở cổ tay áo, thắt lưng da nâu ôm sát eo nối liền quần legging da hươu bó sát.
 
 **Ý tưởng:** đồ da **may khâu, vừa người**, kiểu người hiện đại thời kỳ băng hà. Nhóm Neanderthal chỉ khoác da sống buộc dây, không có đường may (research §5: không kim, không may). Vì vậy ở A1-05 Thủ Lĩnh véo **đường chỉ gân** trên vai áo cô: chi tiết lạ là **cách may**, không phải "vải hiện đại". Vẫn đúng luật "vlogger mặc đồ đúng thời kỳ từ clip đầu", và da ướt sũng vẫn không giữ được ấm.
 
 ```
 OUTFIT (golden-tan): a form-fitting tailored tunic of smoked golden-tan deer suede,
 visibly sewn with neat rows of fine sinew stitches along the shoulder, side and sleeve seams;
-a hood edged with thick grey wolf fur lying back on her shoulders; a laced V-neckline closed
-with leather thongs; long fitted sleeves ending in grey wolf-fur cuffs; a wide dark-brown
-leather belt at her waist; skin-tight golden-tan hide leggings; knee-high hide boots wrapped with
-leather thongs.
+clean unadorned shoulders and completely open neck with NO fur collar or hood; a deep plunging
+laced V-neckline closed with thin criss-crossing leather thongs; long sleek fitted suede sleeves ending
+cleanly and neatly at the wrists with smooth stitched cuffs (strictly NO fur cuffs, NO fur at wrists,
+NO fur trim anywhere on sleeves); a wide dark-brown leather belt at her waist; skin-tight golden-tan
+hide leggings; knee-high hide boots wrapped with leather thongs.
 COLOR LOCK: This outfit is GOLDEN-TAN throughout -- NOT dark brown, NOT a draped caveman pelt,
 NOT white or cream, NOT sleeveless, NOT bare legs, NOT loose unkempt hair, NOT modern clothing.
 ```
 
 - **Màu vàng nâu** để tách khỏi da nâu sẫm của nhóm (đọc được ở drone shot, Nora là "chấm vàng") và khác bộ trắng kem của tập 1.
-- **Mũ trùm luôn để ngả sau vai**, để khóa tóc và mái luôn thấy được.
-- **Trạng thái ướt** (A1-01 tới A2-07): `The suede is soaked from the chest down and darker where wet, with water dripping from the sleeves, the fur cuffs and the hem; the colour stays golden-tan and the shape never changes.` Từ A2-08 trở đi bỏ câu này (đã hơ khô bên lửa).
+- **Cổ, bờ vai và tay áo trơn thoáng gọn gàng**, loại bỏ hoàn toàn viền lông ở cổ tay giúp chuyển động thanh thoát, khoe trọn vóc dáng đồng hồ cát.
+- **Trạng thái ướt** (A1-01 tới A2-07): `The suede is soaked from the chest down and darker where wet, with water dripping from the sleek sleeves, the belt and the hem; the colour stays golden-tan and the shape never changes.` Từ A2-08 trở đi bỏ câu này (đã hơ khô bên lửa).
 - **Quy trình:** user duyệt mô tả → sinh mannequin 3-view (cần "yes") → user duyệt ảnh → mới viết tiếp.
 
 ### Nhóm Neanderthal (9 người; Đứa Bé đã bỏ khỏi kịch bản, user 2026-10-05)
@@ -293,7 +294,7 @@ Mọi prompt theo thứ tự khối của PROMPT LOCK §10b. Camera guide khuyê
 **Khối dùng chung** (dán nguyên văn vào chỗ `[ID-LOCK]`):
 
 ```
-IDENTITY & OUTFIT LOCK (CRITICAL -- match reference images exactly): her face and hair from the Nora face sheet, and her build and clothing from the Nora Body sheet (which serves as her dressed Body reference). BODY LOCK: Nora has a curvaceous, statuesque hourglass build with a large, prominent high natural bust, tiny narrow waist, shapely curvy hips, and long athletic legs matching the Nora Body sheet exactly; she is NOT flat-chested, NOT slender, NOT wearing a loose or boxy coat. Nora has honey-blonde hair pulled up into a high wavy ponytail tied at the crown of her head (not low at the nape), with wispy curtain bangs parted in the middle that cover the edges of her forehead and frame both cheeks, plus a few loose face-framing strands at the temples; her hair is never slicked back. She has grey-green eyes and fair skin with a natural pink flush. Nora wears the exact outfit from the Nora Body reference: a form-fitting tailored tunic of smoked golden-tan deer suede, precision-sewn with neat rows of fine sinew stitches along the shoulder, side and sleeve seams, hugging her full bust with a laced V-neckline tied with leather thongs, tightly cinched at her tiny waist, falling straight over her hips down to mid-thigh (straight fitted hem, NOT loose, NOT flaring, NOT an A-line coat); a folded hood edged with thick grey wolf fur lying back on her shoulders; long fitted sleeves ending in grey wolf-fur cuffs; a wide dark-brown leather belt at her waist; skin-tight golden-tan suede leggings hugging her athletic legs; knee-high hide boots wrapped with leather thongs. This outfit is GOLDEN-TAN throughout -- NOT dark brown, NOT a draped caveman pelt, NOT white or cream, NOT sleeveless, NOT bare legs, NOT loose unkempt hair, NOT modern clothing. From the very first frame to the last, Nora is fully dressed in the complete outfit: wolf-fur hood lying back, long sleeves with fur cuffs, belt, leggings and boots. No part of the outfit appears, disappears or changes.
+IDENTITY & OUTFIT LOCK (CRITICAL -- match reference images exactly): her face and hair from the Nora face sheet, and her build and clothing from the Nora Body sheet (which serves as her dressed Body reference). BODY LOCK: Nora has a curvaceous, statuesque hourglass build with a large, prominent high natural bust, tiny narrow waist, shapely curvy hips, and long athletic legs matching the Nora Body sheet exactly; she is NOT flat-chested, NOT slender, NOT wearing a loose or boxy coat. Nora has honey-blonde hair pulled up into a high wavy ponytail tied at the crown of her head (not low at the nape), with wispy curtain bangs parted in the middle that cover the edges of her forehead and frame both cheeks, plus a few loose face-framing strands at the temples; her hair is never slicked back. She has grey-green eyes and fair skin with a natural pink flush. Nora wears the exact outfit from the Nora Body reference: a form-fitting tailored tunic of smoked golden-tan deer suede, precision-sewn with neat rows of fine sinew stitches along the shoulder, side and sleeve seams, with clean unadorned shoulders and completely open neck (strictly NO fur collar, NO fur on neck or shoulders, NO hood), hugging her full bust with a deep plunging laced V-neckline tied with thin criss-crossing leather thongs, tightly cinched at her tiny waist with a wide dark-brown leather belt that transitions seamlessly without any peplum flare into skin-tight golden-tan suede leggings hugging her athletic long legs; long fitted sleeves ending in thick plush fluffy grey wolf-fur cuffs at the wrists only; knee-high hide boots wrapped with leather thongs. This outfit is GOLDEN-TAN throughout -- NOT dark brown, NOT a draped caveman pelt, NOT white or cream, NOT sleeveless, NOT bare legs, NOT loose unkempt hair, NOT modern clothing. From the very first frame to the last, Nora is fully dressed in the complete outfit: clean suede shoulders, long sleeves with fur cuffs at the wrists, belt, leggings and boots. No part of the outfit appears, disappears or changes.
 ```
 
 `[WET]` = `The suede is soaked from the chest down and darker where wet, with water dripping from the sleeves, the fur cuffs and the hem; the colour stays golden-tan and the shape never changes.`

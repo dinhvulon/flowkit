@@ -73,6 +73,7 @@ Reference for writing video prompts optimized for Google Veo 3. Veo 3 generates 
 | **Dutch angle** | `tilted Dutch angle` | Tension, unease |
 | **Over-the-shoulder** | `over-the-shoulder shot` | Dialogue connection |
 | **Worm's eye** | `extreme low angle from ground` | Dramatic, towering |
+| **Voyeuristic spy cam / Peeping POV** | `secret voyeuristic POV shot, peeping through branches from cover, organic foreground foliage framing` | Tension, stealth reconnaissance, zero morphing |
 
 ## Lens & Focal Length
 
@@ -376,6 +377,12 @@ Layer 5: Camera Dynamic Response (Độ nảy dọc theo bước chân, độ tr
    - Trong vlog thực tế, không bao giờ lật xoay 180° camera giữa cam trước (selfie) và cam sau (POV) trong cùng một shot đang quay. Cú xoay lật 180° khiến camera tự bay vòng quanh nhân vật như có người quay phim thứ 3 cầm gimbal, phá vỡ hoàn toàn chất chân thực đơn độc.
    - **Quy tắc:** 1 Shot = 1 Góc nhìn duy nhất (hoặc 100% Selfie 0.5x, hoặc 100% First-Person POV).
    - **Tương tác với nhân vật phụ / bối cảnh:** Dùng bố cục Selfie qua vai (`Over-the-Shoulder Selfie`): Vlogger ở 1/3 tiền cảnh một bên, đối tượng xuất hiện ở 2/3 hậu cảnh phía sau vai. Tương tác bằng ánh mắt và cử động khẽ liếc/quay đầu kiểm tra (`turns her head slightly to look back over her shoulder at [Subject]`), rồi quay lại nói thẳng vào thấu kính.
+6. **Kỹ thuật Camera "Quay Lén" từ Chỗ Nấp (Voyeuristic Spy Cam / Peeping POV Through Cover — User Chốt 2026-10-05):**
+   - **Bản chất kỹ thuật:** Đối với các cảnh thám thính, rình mò, phát hiện kẻ địch, thổ dân, dã thú hoặc hiện tượng bí ẩn: TUYỆT ĐỐI TRÁNH dùng góc selfie quay mặt vlogger rồi xoay đầu nhìn ra sau (gây lỗi cắt cảnh ngược, nhảy góc và làm biến hình nhân vật nghiêm trọng do quá tải reference slots). BẮT BUỘC dùng góc nhìn người thứ nhất (100% First-Person POV) nấp sau cành cây, bụi rậm, khe đá, gờ tường.
+   - **Khung viền hữu cơ tiền cảnh (Organic Foreground Framing / Peephole):** Tiền cảnh (cạnh phải, viền trên hoặc góc dưới) bị che khuất tự nhiên bởi cành thông, lá cây, nhánh khô hoặc cạnh đá phủ sương/bóng tối mờ nhẹ (soft organic bokeh/silhouette), tạo thành lỗ nhìn (peephole) như đang lén lút đặt máy quay qua kẽ lá.
+   - **Triệt tiêu biến hình (Anti-Morphing Superpower):** Vlogger hoàn toàn ở phía sau ống kính (off-screen operator), không có mặt hay thân hình vlogger trong khung hình $\to$ Giảm tải tối đa slot tham chiếu cho model video (chỉ truyền entity của đối tượng được quan sát như `The Strongest`, `Strongest Spear`). AI tập trung 100% tài nguyên render cho chủ thể ở khoảng cách 8-12m $\to$ Giữ chuẩn nhận diện, dáng vóc, vũ khí và triệt tiêu 100% lỗi biến hình/méo mó.
+   - **Động học camera (Camera Dynamics):** Cú máy liên tục duy nhất (Single continuous take). Camera cầm tay rung khẽ tự nhiên theo nhịp thở hồi hộp và run sợ (`subtle handheld breathing movement, slight organic tremor`), có thể zoom nhẹ/tiến chậm xuyên qua kẽ lá (`slow creeping optical push-in through foliage`), TUYỆT ĐỐI KHÔNG cắt cảnh hay đổi góc giữa chừng.
+   - **Âm thanh & Thoại ngoài khung hình (Off-screen Whisper):** Vlogger thì thầm run rẩy, gấp gáp ngay sát micro máy quay (`Nora's urgent terrified whisper off-screen right beside the camera microphone: "Don't breathe... don't move."`), tiếng thở dốc nín thở, tiếng gió qua kẽ lá, tiếng động của chủ thể phía xa.
 
 ## Quality Checklist
 
