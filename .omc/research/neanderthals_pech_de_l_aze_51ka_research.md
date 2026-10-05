@@ -273,7 +273,7 @@
 | Clip | Thời điểm | Vai trò | Thoại Nora (nháp) |
 |---|---|---|---|
 | 1 | 0–8s | **Cold open = trọn 1 clip cao trào 8s** (user chốt 2026-10-05), cảnh trùng thumbnail. 0–2s: tia lửa lần đập thứ hai bắn sát ống kính rồi tắt, mắt linh cẩu sáng phía sau. 2–6s: Nora thì thầm. 6–8s: đập lần ba, tia lửa bắn vào bùi nhùi — **cắt trước khi biết lửa có bắt không** | (thì thầm, thở dốc) `"Third strike. If this doesn't catch before they get closer, the hyenas take the meat. Come on, come on—"` (19 từ) |
-| 2 | 8–16s | Hook giờ 0: nơi, năm, câu hỏi | `"Hour zero. Fifty thousand years ago, France. Scientists still argue whether these people could even make fire. I study their tools."` (21 từ) |
+| 2 | 8–16s | Hook giờ 0: nơi, năm, câu hỏi | ~~`"Hour zero. Fifty thousand years ago, France. Scientists still argue…"`~~ (bỏ: giảng lịch sử, trái persona 2026-10-05 — xem `script.md` v2) |
 | 3 | 16–24s | Stakes + lời hứa | `"She won't let me near her fire. By sunset I need her trust, a fire I can make myself, and meat."` (21 từ) |
 | 4 | 24–32s | Open loop mạch 2 | `"Hear that? That's a hyena calling its friends. Modern ones do it, anyway. Remember that sound. It matters later."` (19 từ) |
 

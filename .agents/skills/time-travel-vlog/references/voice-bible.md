@@ -2,13 +2,19 @@
 
 `CHARACTER_LOCK` khóa **ngoại hình**, `voice_description` (Laomedeia) khóa **chất giọng**. File này khóa **cách nói**: vlogger là ai, biết gì, nói nhanh hay chậm, đùa kiểu gì, sợ gì, và những câu cô không bao giờ nói. Thiếu lớp này thì thoại tự trượt về giọng AI trung bình: cảm thán, giảng bài, câu chốt khẩu hiệu.
 
-Đọc file này **trước khi viết bất kỳ dòng thoại nào**, và chạy checklist ở mục 6 trên từng dòng trước khi đưa vào `video_prompt`.
+Đọc file này **trước khi viết bất kỳ dòng thoại nào**, và chạy checklist ở mục 6 trên từng dòng trước khi đưa vào `video_prompt`. Cấu trúc truyện, mật độ thoại theo loại clip và cách nhân vật phụ nói nằm ở `story-engine.md` (user chốt 2026-10-05); file đó thắng nếu hai file lệch nhau.
 
 ---
 
 ## 0. Chọn giọng (Slot 7 của Omni Flash `MZZa6b`) — mặc định: **Laomedeia**
 
 Server lấy **từ đầu tiên** của `voice_description` làm voice id (ví dụ `"Laomedeia — upbeat, …"` → `laomedeia`). Nếu clip không gắn entity có voice (như cảnh POV, vốn không gắn ref vlogger), server dùng `narrator_voice` của project, rồi tới mặc định `laomedeia`. **Luôn đặt cả `voice_description` của vlogger lẫn `narrator_voice` của project** để mọi clip cùng một giọng.
+
+**Hai giọng trong một clip (user chốt 2026-10-05):** nhân vật phụ được nói bằng ngôn ngữ không hiểu được. Hiện server chỉ gửi **1 voice id** vào Slot 7 (`request.extend([None, [[v_id]]])` trong `agent/services/flow_batch.py`), nên:
+- **Chỉ vlogger có `voice_description`.** Không đặt cho nhân vật phụ, nếu không entity nào đứng trước trong DB sẽ cướp giọng của cả clip.
+- Giọng nhân vật phụ **mô tả bằng chữ trong `video_prompt`**, gắn đúng sub-clip: `3-5s: The Leader speaks in a deep, gravelly male voice — short guttural non-English sounds, no recognizable words; Nora stays silent.` Không bao giờ để hai người nói chồng.
+- Muốn gửi giọng thứ hai qua payload thật thì phải capture request của Flow UI trước (`docs/CAPTURE.md`); chưa capture thì không sửa code theo phỏng đoán.
+- Test 1 clip trước khi gen hàng loạt. Nếu giọng nữ của vlogger phát ra từ miệng nhân vật phụ → clip đó quay về môi khép + cử chỉ (Bài học 49).
 
 **Vì sao đổi từ Achernar sang Laomedeia (user chốt 2026-10-01):** Achernar là giọng "soft, high pitch", chỉ hợp thì thầm. Persona vlogger là nói nhanh, tự tin, hài khô, và phải hét khi gặp nguy hiểm, nên giọng mềm bị yếu. Laomedeia là "upbeat, mid-high": nói nhanh tự nhiên, lúc hét vẫn nghe hoảng thật chứ không gắt.
 
@@ -48,6 +54,9 @@ not textbook words. NO history lessons: no dates, no dig sites, no "scientists a
 no "we find this at sites", no studies.
 Signature hook: she's good, but this world keeps out-skilling her — the locals do in seconds
 what she fumbles for minutes, and she admits it with dry humor.
+Line length: short. Lets the picture do the work; talks less when it gets dangerous.
+Never uses meta language: "as you saw earlier", "in this video", "this is where things get
+interesting", "I didn't know this yet".
 Humor: dry, a bit cocky, self-aware ("okay, that was embarrassing").
 Tics (max one per clip, rotate): "okay, okay", "no, wait—", "real talk".
 Flaw: reckless. Gets too close for the shot. Admits fear only after it's over.
@@ -56,27 +65,34 @@ Never says: slogans, moral wrap-ups, "humanity", "our ancestors", "fascinating",
 "incredible ingenuity", "survival rule number one", "here's the trick", "you won't believe",
 "historians say", "archaeologists think".
 Relationship with the locals: she knows the principles; they know THIS land, THIS herd,
-THIS weather. Hour 1 they're wary → she earns respect with a real skill → she learns
-local tricks from them and translates → after the climax she's part of the group.
+THIS weather. They speak a language she can't understand; she never translates their words,
+she reads tone and gestures ("No idea what he said. But that was a no.").
+Hour 1 they're wary → she fails in front of them → she earns respect with a real skill →
+she learns local tricks by watching and copying → after the climax she's part of the group.
 ```
 
 Persona khác (series sau) → viết `VOICE_LOCK` mới theo đúng các trường: **ai + chuyên môn / tốc độ / phong cách giải thích / móc câu riêng / kiểu hài / tật nói / điểm yếu / chửi thề / không bao giờ nói / quan hệ với người bản địa**. Tên trong `VOICE_LOCK` phải trùng tên trong `CHARACTER_LOCK` và tên người nói trong `video_prompt`.
 
 ---
 
-## 2. Mật độ thoại (user chốt: nói nhanh để giữ nhịp, không gây buồn ngủ)
+## 2. Mật độ thoại theo loại clip (user chốt 2026-10-05, thay bảng 18–22 / 22–28 từ cũ)
 
-| `duration` clip | Số từ tiếng Anh | Khoảng nói |
-|---|---|---|
-| 10s | **22–28 từ** | ~0.5s → ~9.5s |
-| 8s | 18–22 từ | ~0.5s → ~7.5s |
-| 6s | 13–16 từ | ~0.5s → ~5.5s |
-| 4s | 8–10 từ | ~0.3s → ~3.7s |
+Thoại dày làm phim thành podcast có hình. Hình làm được thì để hình làm.
 
-- Chỉ chừa **~0.5s đầu và cuối clip** không thoại để cắt chuyển cảnh; không bao giờ cắt ngang câu.
-- **Một người nói/clip** (giới hạn 1 giọng của R2V). Clip người bản địa diễn → Nora im lặng phản ứng, thoại dồn sang clip sau.
-- Luôn ghi cách diễn đạt trong ngoặc ngay sau tên: `Nora says (fast, hands busy, breath fogging): "..."`. Model video phản ứng với tag này mạnh hơn với tính từ rải trong prompt.
-- Đếm từ trước khi chốt. Dưới 22 từ ở clip 10s → thêm lý do, cảm giác cơ thể hoặc một câu đùa khô; không thêm cảm thán, không thêm bài giảng.
+| Loại clip (8s) | Số từ tiếng Anh của vlogger |
+|---|---|
+| Bình thường | **8–15** |
+| Căng thẳng / nguy hiểm | **3–8** |
+| Cảm xúc | 5–12 |
+| Giải thích (hiếm) | tối đa 12–18 |
+| Nhịp im lặng, cảnh cuối | 0 |
+
+- Clip 10s cộng tối đa ~25%; clip 4–6s giảm theo tỉ lệ. Đây là **trần**, không phải chỉ tiêu: không bao giờ độn cho đủ từ.
+- **Show > Tell:** `"Fire."` khi người xem đã thấy tia lửa, không phải `"Now I'm making fire using the flint I found earlier."`
+- **Nhịp im lặng:** mỗi Act ít nhất 1 lần không ai nói từ 1s trở lên trước một tiết lộ. Kịch bản ghi `[im lặng 2s]`, prompt ghi `No one speaks for the first 2 seconds; only wind and breathing.`
+- **Không nói chồng.** Nhân vật phụ nói (ngôn ngữ không hiểu được) ở sub-clip riêng, Nora im lặng phản ứng trong lúc đó, rồi mới nói.
+- Luôn ghi cách diễn đạt trong ngoặc ngay sau tên: `Nora says (hushed, hands busy, breath fogging): "..."`. Model video phản ứng với tag này mạnh hơn với tính từ rải trong prompt.
+- Đếm từ trước khi chốt. Vượt trần → cắt phần mô tả thứ người xem đang thấy trước, rồi tới lý do.
 
 ---
 
@@ -100,8 +116,8 @@ Nora vừa làm vừa nói: *làm gì* (mệnh lệnh ngắn) → *vì sao* (1 c
 **B. Cách của mình vs cách của họ** (móc câu riêng của persona)
 Cô thử theo cách cô biết (hiện đại, sách vở, kinh nghiệm cũ) → thất bại hoặc chậm → người bản địa làm được trong vài giây → cô thừa nhận bằng một câu đùa khô. Cảm xúc là tự ái nghề nghiệp bị đánh bại, không phải "wow".
 
-**C. Người bản địa dạy → Nora làm theo** (Translator POV)
-Clip A: người bản địa làm mẫu / ra hiệu (không thoại tiếng Anh). Clip B: Nora làm theo, nói cô vừa hiểu ra điều gì và vì sao nó hiệu quả — bằng cảm nhận thực tế, không bằng kiến thức lịch sử. Dùng khuôn này để Nora không thành kẻ biết tuốt và để bộ lạc có vai trò.
+**C. Người bản địa dạy → Nora làm theo**
+Người bản địa làm mẫu, ra hiệu, có thể nói vài tiếng bằng ngôn ngữ không hiểu được (không tiếng Anh, giọng ghi rõ trong prompt). Nora không dịch: cô làm theo, và nói vài từ về điều cô vừa cảm thấy ("Oh. Lighter. Way lighter."). Dùng khuôn này để Nora không thành kẻ biết tuốt và để bộ lạc có vai trò.
 
 Phân bổ gợi ý trong một video: A ~50%, B ~25%, C ~25%.
 
@@ -109,16 +125,17 @@ Phân bổ gợi ý trong một video: A ~50%, B ~25%, C ~25%.
 
 ---
 
-## 5. Trước / sau (cùng nội dung, persona chuyên gia, đã đếm từ)
+## 5. Trước / sau (cùng nội dung, persona chuyên gia, đã đếm từ theo mật độ 2026-10-05)
 
 | Giọng AI (tránh) | Giọng Nora | Khuôn |
 |---|---|---|
-| "I just time travelled 20,000 years into the past... to the Ice Age!" | `Nora says (out of breath, fast): "Hour one. Minus forty-ish, no tent, no jacket of my own, and a man with a spear deciding if I live. Great start."` (23 từ) | Hook |
-| "Never eat snow when you're freezing—it plummets your body temperature! Here's the trick: drop glowing basalt rocks into rawhide bags." | `Nora says (fast, hands busy, breath fogging): "Don't eat snow, ever. Your body burns heat just melting it. Hot rocks into a hide bag instead. Slower, but my hands stopped shaking."` (24 từ) | A |
-| "Survival rule number one in minus forty: you need pure animal fat. This mammoth marrow packs eight thousand calories!" | `Nora says (chewing, talking fast): "Marrow. Basically pure fat, and fat is everything here. Eat only lean meat in this cold and you get sick. Tastes like warm candle. Still eating."` (26 từ) | A |
-| "An eyed bone needle! This single invention allowed humans to survive the freeze." | `Nora says (hushed, dry): "I tried threading this for ten minutes. She does it without looking, mid-conversation, in the dark. Okay, I'm officially the worst seamstress here."` (23 từ) | B |
-| "The storm cleared. Torak says the mammoth herds are moving." | `Nora says (whispering fast, crouched): "Trunk up, sniffing. That's the lead female checking the wind. Torak's kept us downwind for an hour. Smart. If she catches our scent, we're done."` (25 từ) | C |
-| "The bull mammoth spotted us! Move, move, move!" | `Nora says (sprinting, voice cracking): "She's charging— sh— don't run in the open, she's way faster than us. Get behind the bone pile, something big, make her go around. Go!"` (25 từ, `bleep_at` tại "sh—") | A dưới áp lực |
+| "I just time travelled 20,000 years into the past... to the Ice Age!" | `Nora says (out of breath): "Minus forty-ish. No tent. And a man with a spear deciding if I live."` (14 từ) | Hook (bình thường) |
+| "Never eat snow when you're freezing—it plummets your body temperature! Here's the trick: drop glowing basalt rocks into rawhide bags." | `Nora says (hands busy, breath fogging): "Don't eat snow. It steals your heat. Hot rocks in the bag."` (12 từ) | A |
+| "Survival rule number one in minus forty: you need pure animal fat. This mammoth marrow packs eight thousand calories!" | `Nora says (chewing): "Marrow. Pure fat, and out here fat is heat. Tastes like candle. Still eating."` (14 từ) | A |
+| "An eyed bone needle! This single invention allowed humans to survive the freeze." | `Nora says (hushed, dry): "Ten minutes trying to thread this. She does it in the dark."` (12 từ) | B |
+| "The storm cleared. Torak says the mammoth herds are moving." | `3-5s: Torak speaks low and gravelly — two short guttural non-English words, no recognizable words; Nora stays silent.` → `5-8s: Nora whispers: "No idea what he said. We're not moving."` (8 từ) | C |
+| "The bull mammoth spotted us! Move, move, move!" | `Nora says (sprinting, voice cracking): "She's charging— sh— behind the bones. Go!"` (7 từ, `bleep_at` tại "sh—") | A dưới áp lực (căng thẳng) |
+| "Finally, after everything, I made it through the night. What an incredible journey." | `No one speaks. Nora looks at the small bone bead in her palm, then up at the cave mouth.` (0 từ) | Cảnh cuối |
 
 Ghi chú: các câu mẫu không có chi tiết lịch sử nào — đúng persona. Chi tiết thế giới và mẹo sinh tồn đều có thể bịa — miễn câu hay và tự nhiên.
 
@@ -138,6 +155,9 @@ Ghi chú: các câu mẫu không có chi tiết lịch sử nào — đúng pers
 - [ ] Số liệu kiểu sách giáo khoa (calo, %, nhiệt độ chính xác). Số chỉ nói làm tròn kiểu người thường ("minus forty-ish").
 - [ ] Gạch ngang giải thích kiểu "X—it's what keeps Y". Gạch ngang chỉ dùng cho tự ngắt / tự sửa.
 - [ ] Câu cuối clip là câu tổng kết.
+- [ ] Meta language: "as you saw earlier", "you saw the cold open", "in this video", "this is where things get interesting", "I didn't know this yet".
+- [ ] Nhân vật phụ nói tiếng Anh, hoặc Nora dịch nguyên văn lời họ.
+- [ ] Hai người nói chồng trong cùng một sub-clip.
 
 **Bắt buộc:**
 - [ ] Mỗi beat kiến thức theo đúng 1 khuôn ở mục 4, gắn với hành động đang có trên hình.
@@ -145,7 +165,8 @@ Ghi chú: các câu mẫu không có chi tiết lịch sử nào — đúng pers
 - [ ] Mỗi 3–4 clip có ít nhất 1 chi tiết lạ của thế giới này (thật hay bịa) hiện ra qua việc đang làm trên hình — không giảng.
 - [ ] Cứ 2 clip có ít nhất 1 chỗ tự ngắt, tự sửa, hoặc 1 câu đùa khô.
 - [ ] Người bản địa có vai trò thật (khuôn C), Nora không đúng mọi lúc về chuyện địa phương.
-- [ ] Đúng mật độ từ ở mục 2 (10s: 22–28, 8s: 18–22).
+- [ ] Không vượt trần mật độ ở mục 2 theo loại clip (8s: bình thường 8–15, căng thẳng 3–8, cảm xúc 5–12, giải thích ≤ 12–18).
+- [ ] Mỗi Act có ít nhất 1 nhịp im lặng.
 
 ---
 

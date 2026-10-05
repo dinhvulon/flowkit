@@ -15,21 +15,37 @@ Format này ăn view vì 3 thứ: **góc nhìn người thật** (mọi thứ "q
   2. Không biếm họa / làm nhục dân tộc, tôn giáo (mục 3).
 - **Mẹo sinh tồn cũng được bịa** (user chốt 2026-10-05): tiêu chí duy nhất là kịch bản hay, thu hút người xem — không cần mẹo đúng ngoài đời.
 
+### 🎬 Story Engine — giữ chân người xem (user chốt 2026-10-05 — áp dụng cho mọi tập, ghi đè bảng 7 hồi / 23 beat, mật độ thoại và luật "không chữ trên màn hình" cũ bên dưới)
+Đọc `.agents/skills/time-travel-vlog/references/story-engine.md` **trước khi viết outline** và chạy checklist mục 14 của file đó trước khi đưa kịch bản cho user. Tóm tắt:
+1. **Nguyên tắc gốc:** "vlogger muốn X → Y cản → thử Z → thất bại → tệ hơn → phải làm việc khó hơn". Không viết kiểu "thấy X, giải thích Y, nhóm làm Z". Title "I Survived…" thì người xem phải thấy cô đang sống sót, không phải đang tham quan.
+2. **Cold open 8s:** 0–2s mối nguy đã trong khung, 2–4s cô nhận ra, 4–7s hành động quyết định, 7–8s gần thành công → CUT ĐEN. Không giới thiệu, không lịch sử, không logo, không subscribe. Payoff ở cao trào phát lại cuối cold open rồi cho thấy kết quả, và phải đắt hơn setup; không twist khác.
+3. **Sau cold open:** năm trên màn hình → người bản địa → không hiểu ngôn ngữ → vấn đề → hạn chót → `MISSION: … BEFORE …`.
+4. **5 Act, mỗi Act đúng 1 câu hỏi lớn** (công thức ở mục 3 của file). Act cao trào là benchmark độ căng cho mọi Act khác.
+5. **Mỗi clip làm ít nhất 1 trong 4 việc:** tăng nguy hiểm, tạo câu hỏi, đổi quan hệ với người bản địa, tiến gần mục tiêu. Không làm được → cắt.
+6. **Không quá 15–20s không có thay đổi** (thông tin / vấn đề / thất bại / nguy hiểm / nhịp cảm xúc mới); mỗi 30–60s một nấc leo thang.
+7. **Goal chaining:** mục tiêu A xong → mục tiêu B xuất hiện ngay ("Good. Now we need meat.").
+8. **Thất bại có hậu quả, leo thang:** mỗi lần hỏng làm tình hình tệ hơn. Vlogger phải thất bại thật và học từ người bản địa. Act giữa có **áp lực xã hội** ("họ có chấp nhận cô không?").
+9. **Countdown trên màn hình:** `HOUR X — Y HOURS REMAINING`. Chữ trên màn hình chỉ có năm, mission card, countdown; chèn ở hậu kỳ, không viết vào prompt.
+10. **Thoại ngắn:** bình thường 8–15 từ, căng thẳng 3–8, cảm xúc 5–12, giải thích tối đa 12–18 (clip 8s). Show > Tell. Mỗi Act ít nhất 1 nhịp im lặng. Cấm meta language ("as you saw earlier", "in this video", "this is where things get interesting", "I didn't know this yet").
+11. **Nhân vật phụ được nói, bằng ngôn ngữ không hiểu được** (không tiếng Anh, không phụ đề); prompt ghi rõ giọng từng người ở sub-clip nào, không nói chồng. Vlogger phản ứng với giọng điệu, không dịch nội dung.
+12. **Sau payoff ≤ 60–75s, không xung đột mới. Cảnh cuối là một hình ảnh đáng nhớ, không thoại, CUT BLACK** (món quà nhỏ đặt vào tay vlogger → cô nhìn lại nơi vừa sống). Không "see you next time".
+
 ---
 
 ## 📚 TÀI LIỆU THAM CHIẾU — BẮT BUỘC ĐỌC TRƯỚC KHI VIẾT
 
-Mọi quy tắc trong skill này được rút ra từ 5 file ở `.agents/skills/time-travel-vlog/references/`. **Đọc cả 5 file trước khi viết bất kỳ dòng kịch bản/prompt nào** — chúng là nguồn chuẩn cho nhịp, góc máy, chuyển cảnh và giọng; skill này chỉ tóm tắt và ánh xạ sang FlowKit.
+Mọi quy tắc trong skill này được rút ra từ 6 file ở `.agents/skills/time-travel-vlog/references/`. **Đọc cả 6 file trước khi viết bất kỳ dòng kịch bản/prompt nào** — chúng là nguồn chuẩn cho nhịp, góc máy, chuyển cảnh và giọng; skill này chỉ tóm tắt và ánh xạ sang FlowKit.
 
 | File | Đọc ở bước | Dùng để |
 |---|---|---|
+| `story-engine.md` | Trước khi viết outline (user chốt 2026-10-05) | Luật giữ chân người xem: cold open, 5 Act 1 câu hỏi, goal chaining, thất bại leo thang, countdown, thoại ngắn, nhân vật phụ nói ngôn ngữ không hiểu, cảnh cuối không thoại, checklist trước khi chốt |
 | `reference-analysis.md` | Trước tiên, trước mọi bước | Chuẩn nhịp (~15s/beat), tỉ lệ góc máy, dòng thời gian beat, cách giấu mối nối quan sát được từ video mẫu thật |
 | `era-research.md` | Mục 4 — Research Pack | Checklist ý tưởng thời kỳ + bảng beat output (tùy chọn, bịa được) |
 | `prompt-templates.md` | Mục 2 + mục 10 | Mẫu `CHARACTER_LOCK`, Clip JSON, mẫu shot (dân bản địa nói, POV, máy dựng, toàn cảnh) |
 | `transitions.md` | Mục 7 | 3 cách nối clip, luật giấu mối nối, prompt A/B cho từng kỹ thuật, bảng chọn nhanh |
 | `voice-bible.md` | Mục 2 + mục 5 (trước khi viết bất kỳ dòng thoại nào) | `VOICE_LOCK` khóa tính cách (Nora: chuyên gia sinh tồn liều lĩnh, không giảng lịch sử), mật độ thoại, chửi thề bị bíp, 3 khuôn beat sinh tồn, checklist chống giọng AI, mẹo sinh tồn nguy hiểm cần tránh |
 
-**Khi các nguồn mâu thuẫn**, ưu tiên theo thứ tự: `reference-analysis.md` (quan sát từ video thật) → skill này → phần "Kỹ thuật bổ sung" của `transitions.md`. Ví dụ: `transitions.md` gợi ý title "3 HOURS LATER" cho time-skip, nhưng video mẫu không có chữ trên màn hình → **không dùng title** (mục 8).
+**Khi các nguồn mâu thuẫn**, ưu tiên theo thứ tự: `reference-analysis.md` (quan sát từ video thật) → skill này → phần "Kỹ thuật bổ sung" của `transitions.md`. Riêng cấu trúc truyện và thoại, `story-engine.md` thắng tất cả. Ví dụ: `transitions.md` gợi ý title "3 HOURS LATER" cho time-skip → **không dùng** (mục 8); chữ trên màn hình chỉ có năm, mission card và countdown theo `story-engine.md` mục 9.
 
 ---
 
@@ -114,11 +130,13 @@ Gồm: mặt (tuổi, dáng mặt, mắt, tàn nhang/nốt ruồi), tóc (màu, 
      - Model `abra_r2v` tự động tổng hợp chuyển động video mượt mà trực tiếp từ các thành phần tham chiếu và `video_prompt`, tích hợp khẩu hình native với voice profile **Laomedeia** (Slot 7).
      - Không chạy quy trình `GENERATE_IMAGE` cho từng cảnh; sau khi các entity có `media_id`, gửi thẳng yêu cầu `GENERATE_VIDEO_REFS`.
 2. **Voice Laomedeia**: Với nhân vật vlogger nữ, khai báo `voice_description` theo chuẩn **Laomedeia** (Google Gemini-TTS: *"Laomedeia — upbeat, mid-high pitched, energetic expressive conversational female voice, fast confident vlog delivery with dry humor, rises into real cracking screams when in danger, drops to a fast whisper when hiding"*). Đính thoại dạng `Mia says: "..."` trong sub-clips `0-3s / 3-6s / 6-10s` để `abra_r2v` tự sinh khẩu hình và giọng nói bản địa tự nhiên.
-2b. **Kỹ Thuật Vlog Phiên Dịch (Translator POV — Tương Tác Bản Địa Chuẩn)**:
-   - **Rào cản AI & Lịch sử:** Model AI chỉ nhận 1 giọng nói (Slot 7 Laomedeia). Nếu gán thoại tiếng Anh cho nhân vật phụ (thợ săn, nông dân, thương nhân), AI sẽ lấy giọng Laomedeia phát ra từ miệng họ gây méo tiếng và vỡ khẩu hình. Hơn nữa, việc người tiền sử/cổ đại nói tiếng Anh lưu loát là phản khoa học và mất chất tài liệu.
+2b. **Nhân vật phụ nói ngôn ngữ không hiểu được (user chốt 2026-10-05, thay Translator POV kiểu "người bản địa câm")** — chi tiết ở `story-engine.md` mục 13:
+   - **Rào cản kỹ thuật:** Slot 7 hiện chỉ gửi 1 voice id (Laomedeia, lấy từ entity đầu tiên có `voice_description`). Nếu gán thoại **tiếng Anh** cho nhân vật phụ, model dễ lấy giọng nữ của vlogger phát ra từ miệng họ. Muốn gửi 2 giọng qua payload thì phải capture từ Flow UI trước (`docs/CAPTURE.md`).
    - **Quy tắc bắt buộc:**
-     - Người bản địa giao tiếp bằng **cử chỉ tay, biểu cảm sống động, hiệu lệnh săn bắn hoặc cổ ngữ tự nhiên** trong prompt hành động. TUYỆT ĐỐI KHÔNG ghi thoại tiếng Anh cho nhân vật phụ.
-     - Vlogger thuật lại trực tiếp cho người xem bằng giọng Vlogger (`Nora says: "He just warned me that...", "She says this is..."`).
+     - Nhân vật phụ **được nói**, bằng tiếng cổ / tiếng bịa người xem không hiểu. Không bao giờ nói tiếng Anh, không phụ đề. Chỉ vlogger có `voice_description`.
+     - `video_prompt` ghi rõ **từng người nói bằng giọng gì, ở sub-clip nào**, không nói chồng: `3-5s: The Leader speaks in a deep, gravelly male voice — short guttural non-English sounds, no recognizable words; Nora stays silent.` → `5-8s: Nora says (hushed): "..."`.
+     - Vlogger phản ứng với giọng điệu, **không dịch nội dung** (`"No idea what he said. But that wasn't a question."`). Có thể lặp lại một câu của nhân vật phụ về sau với nghĩa khác (callback).
+     - Test 1 clip có nhân vật phụ nói trước khi gen hàng loạt; nếu giọng vlogger phát ra từ miệng họ thì clip đó quay về cách cũ (môi khép, chỉ cử chỉ, Bài học 49).
      - Triển khai chuẩn (Single-Perspective Vlog Purity): Hoặc **100% Selfie Qua Vai (Over-the-Shoulder)** (Vlogger chiếm 1/3 tiền cảnh, bản địa ở 2/3 hậu cảnh, tương tác qua ánh mắt và quay đầu, KHÔNG xoay máy; xem Bài học 44 & Rule 42). Hoặc **Cặp Shot Kép** (Shot A: 100% POV Cam sau ➔ Cut sang Shot B: 100% Selfie Cam trước). TUYỆT ĐỐI CẤM cú lia máy 180° giữa cam trước và cam sau trong 1 shot liên tục.
 3. **Review 720p trước ➔ User duyệt ➔ Upscale 1080p & Xóa Logo sau**: Tải từng clip 720p về `${OUTDIR}/scenes/scene_{idx}_{sid}.mp4`. **Chưa cần xóa logo ở bước này** để tránh lãng phí thời gian encode. Trích xuất frames từ video 720p, chạy AI Review Scorecard và đưa lên Review Board (`http://localhost:8200`) cho người dùng review từng clip. **CHỈ KHI NGƯỜI DÙNG DUYỆT THÔNG QUA**: Gửi lệnh Upscale 1080p (`p0UkFb` / `veo_3_1_upsampler_1080p`), tải bản 1080p về folder riêng `${OUTDIR}/1080/scene_{idx}_{sid}_1080p.mp4`, rồi mới chạy `remove_watermark_video` trực tiếp trên bản 1080p (`${OUTDIR}/1080/scene_{idx}_{sid}_1080p_clean.mp4`) để đưa vào Concat cuối cùng.
 
@@ -163,6 +181,8 @@ Output là bảng beat:
 Nora nói mọi chi tiết như điều cô đang thấy tận mắt, không rào đón kiểu "historians say".
 
 ### 5. Cấu trúc kịch bản 7 hồi theo % thời lượng & 23 Beat Ánh Xạ
+
+> **Survival / "I Survived 24 Hours": dùng công thức cold open + 5 Act ở `story-engine.md` mục 3 (user chốt 2026-10-05).** Bảng 7 hồi và 23 beat dưới đây chỉ còn là kho ý tưởng cảnh và kỹ thuật máy; không bắt buộc theo thứ tự hay % thời lượng của nó.
 
 **Không mở bằng cảnh du hành.** Vào thẳng thế giới từ giây 0 — khung đầu là chuyển động mạnh sát ống kính (bánh xe, ngựa, súc gỗ) rồi mở ra nhân vật giữa đám đông.
 
@@ -209,9 +229,10 @@ Nora nói mọi chi tiết như điều cô đang thấy tận mắt, không rà
 Shorts: hook (1) → 2–3 beat đời thường/wow (2–4) → nguy hiểm hoặc reveal (5) → câu kết cliffhanger (6).
 
 **Quy tắc thoại** (chi tiết và ví dụ ở `voice-bible.md`)
-- **Mật độ từ (user chốt 2026-10-01: nói nhanh để giữ nhịp, không gây buồn ngủ)**: clip 10s = **22–28 từ**; 8s = 18–22; 6s = 13–16; 4s = 8–10.
-- Chỉ chừa **~0.5s không thoại ở đầu và cuối mỗi clip** cho chuyển cảnh — không bao giờ cắt ngang câu.
-- **Một người nói/clip.** Dân bản địa nói → vlogger im lặng phản ứng (mắt mở to, môi mím).
+- **Mật độ từ theo loại clip (user chốt 2026-10-05, thay luật 18–22 / 22–28 từ cũ)**: clip 8s bình thường **8–15 từ**, căng thẳng 3–8, cảm xúc 5–12, giải thích tối đa 12–18; nhịp im lặng và cảnh cuối 0 từ. Clip 10s cộng tối đa ~25%. Không độn cho đủ từ (`story-engine.md` mục 12).
+- **Show > Tell**: hình làm được thì để hình làm, thoại chỉ gói lại bằng vài từ. Mỗi Act có ít nhất 1 nhịp im lặng 1s trở lên trước một tiết lộ. Không bao giờ cắt ngang câu.
+- **Không nói chồng.** Nhân vật phụ có thể nói bằng ngôn ngữ không hiểu được ở sub-clip riêng (mục 2b); vlogger im lặng phản ứng trong lúc đó.
+- **Cấm meta language**: "as you saw earlier", "you saw the cold open", "in this video", "this is where things get interesting", "I didn't know this yet, but…".
 - Thoại viết theo `VOICE_LOCK`, kèm tag cách diễn đạt: `Nora says (fast, teeth chattering, half-laughing): "..."`. Nora không giảng lịch sử: thế giới hiện ra qua việc cô làm và phản ứng.
 - **Chạy checklist chống giọng AI (`voice-bible.md` mục 6) trên từng dòng thoại** trước khi đưa vào `video_prompt`. Cấm câu chốt khẩu hiệu, mô tả lại thứ đang hiện trên hình, giọng giảng ("Survival rule number one"), số liệu vlogger không thể biết.
 - Chửi thề nhẹ chỉ viết dạng cắt dở (`"sh—"`, `"what the f—"`) và bíp ở hậu kỳ; tối đa 1 lần / 3 clip, không chửi trong hook hay beat kết (`voice-bible.md` mục 3).
@@ -219,7 +240,7 @@ Shorts: hook (1) → 2–3 beat đời thường/wow (2–4) → nguy hiểm ho�
 
 #### 5c. Survival Preset — "I Survived 24 Hours in…" (thời tiền sử, thiên tai, tương lai khắc nghiệt)
 
-Dùng khi bối cảnh tự nó có thể giết người (Kỷ Băng Hà, khủng long, hậu tận thế, Sao Hỏa). **Giữ nguyên 7 hồi và 3 cú reveal của mục 5a**, chỉ đổi xương sống sang **đồng hồ 24 giờ + cơ thể vlogger xuống dốc dần**:
+Dùng khi bối cảnh tự nó có thể giết người (Kỷ Băng Hà, khủng long, hậu tận thế, Sao Hỏa). **Cấu trúc truyện theo `story-engine.md`** (cold open + 5 Act, mỗi Act 1 câu hỏi, goal chaining, countdown). Bảng dưới chỉ còn là gợi ý áp lực cơ thể theo giờ:
 
 | Hồi (mục 5a) | Giờ trong 24h | Áp lực cơ thể | Beat sinh tồn |
 |---|---|---|---|
@@ -231,8 +252,8 @@ Dùng khi bối cảnh tự nó có thể giết người (Kỷ Băng Hà, khủ
 | 6 Di sản | Giờ 17–22 | Kiệt sức, lạnh về đêm | Nghệ thuật, nghi lễ, bầu trời đêm — áp lực lạnh vẫn còn |
 | 7 Kết | Giờ 23–24 | Tĩnh, kiệt | Máy dựng cố định, nói thật lòng, không có câu đạo lý |
 
-- **Mốc giờ nói bằng lời**, không bằng chữ trên màn hình (mục 8): `"Hour six."` mở đầu khoảng mỗi 3 beat, không phải mỗi clip.
-- **Vlogger là chuyên gia sinh tồn (user chốt 2026-10-01, sửa 2026-10-05): giỏi, liều, nói nhanh — nhưng KHÔNG dạy lịch sử.** Người xem ở lại vì cô làm được việc thật, giải thích vì sao bằng một câu đời thường, và vì nguy hiểm leo thang. Mỗi beat theo 1 trong 3 khuôn ở `voice-bible.md` mục 4: **Làm → Vì sao**, **Cách của mình vs cách của họ** (cô thử cách hiện đại, thất bại, cách bản địa thắng), **Người bản địa dạy → Nora làm theo** (Translator POV). Mẹo nói dạng mệnh lệnh của người thật ("Don't eat snow. Ever."), không dùng nhãn khuôn mẫu ("Survival rule number one:", "Here's the trick:").
+- **Mốc giờ là countdown trên màn hình** (user chốt 2026-10-05): `HOUR X — Y HOURS REMAINING`, đặt ngay trước/sau các nấc leo thang, chèn ở hậu kỳ (`story-engine.md` mục 9). Không cần nói giờ bằng lời.
+- **Vlogger là chuyên gia sinh tồn (user chốt 2026-10-01, sửa 2026-10-05): giỏi, liều, nói nhanh — nhưng KHÔNG dạy lịch sử.** Người xem ở lại vì cô làm được việc thật, giải thích vì sao bằng một câu đời thường, và vì nguy hiểm leo thang. Mỗi beat theo 1 trong 3 khuôn ở `voice-bible.md` mục 4: **Làm → Vì sao**, **Cách của mình vs cách của họ** (cô thử cách hiện đại, thất bại, cách bản địa thắng), **Người bản địa dạy → Nora làm theo** (họ có thể nói ngôn ngữ không hiểu được, Nora không dịch, mục 2b). Mẹo nói dạng mệnh lệnh của người thật ("Don't eat snow. Ever."), không dùng nhãn khuôn mẫu ("Survival rule number one:", "Here's the trick:").
 - **Không cần nguồn cho mẹo hay chi tiết thế giới** — bịa được, kể cả mẹo sinh tồn. Tiêu chí duy nhất: hay và giữ chân người xem.
 - Tiêu đề: dùng động từ **"Survived"** thay cho "Spent" (`I Survived 24 Hours in/with …`); chi tiết SEO ở `/fk-youtube-seo`.
 
@@ -309,10 +330,10 @@ Vật che có thể là: súc gỗ phu khuân, tấm ván, bánh xe bò, thân n
 
 **Bảng chọn nhanh:** đi sang chỗ gần → foreground wipe / hand-over-lens / walk-through · reveal hoành tráng → look-away hoặc selfie flip · đoạn năng lượng cao → swing / whip pan · nhảy giờ → time-skip · trong một đoạn nói chuyện → jump cut.
 
-### 8. Không chữ trên màn hình, nhạc/ambient trải liên tục
-Video mẫu **không có bất kỳ chữ nào trên màn hình** — không title card chương, không "3 HOURS LATER", không phụ đề cứng. Mọi thông tin (địa điểm, thời gian, chuyển cảnh) truyền qua lời thoại + hình ảnh. Phụ đề chỉ là tùy chọn dạng file `.srt` rời, không burn vào hình. Vì vậy **không dùng `/fk-gen-text-overlays`**, và không dùng `/fk-concat-fit-narrator` với text overlay/crossfade.
+### 8. Gần như không chữ trên màn hình, nhạc/ambient trải liên tục
+**Ngoại lệ (user chốt 2026-10-05):** được chèn đúng 3 loại chữ ở hậu kỳ: năm (`51,000 YEARS AGO`), mission card (`MISSION: MAKE FIRE BEFORE SUNSET`) và countdown (`HOUR 3 — 21 HOURS REMAINING`). Không bao giờ viết chúng vào `video_prompt`. Ngoài 3 loại đó: video mẫu **không có bất kỳ chữ nào trên màn hình** — không title card chương, không "3 HOURS LATER", không phụ đề cứng. Mọi thông tin (địa điểm, thời gian, chuyển cảnh) truyền qua lời thoại + hình ảnh. Phụ đề chỉ là tùy chọn dạng file `.srt` rời, không burn vào hình. Vì vậy **không dùng `/fk-gen-text-overlays`**, và không dùng `/fk-concat-fit-narrator` với text overlay/crossfade.
 
-Âm thanh (nhạc nền + ambient) **trải liên tục suốt video, gần như không có khoảng lặng** — hạ nhạc nhỏ dưới thoại thay vì tắt hẳn giữa các scene; hạ thêm ở cảnh nguy hiểm và cảnh kết (Bước 5).
+Âm thanh (nhạc nền + ambient) **trải liên tục suốt video** (nhịp im lặng của `story-engine.md` là im **thoại**, ambient vẫn chạy) — hạ nhạc nhỏ dưới thoại thay vì tắt hẳn giữa các scene; hạ thêm ở cảnh nguy hiểm và cảnh kết (Bước 5).
 
 ### 9. Chuẩn chân thực — "mọi thứ quay bằng điện thoại của cô"
 Độ chân thật của format đến từ việc **người xem tin đây là footage điện thoại thật**. Mọi clip phải giữ đủ các yếu tố sau:
@@ -320,10 +341,10 @@ Video mẫu **không có bất kỳ chữ nào trên màn hình** — không tit
 - **Style string cố định** (đầu mọi `video_prompt`, từ `prompt-templates.md`):
   `handheld front-camera vlog footage, arm extended holding camera, natural daylight, zero lens distortion, straight natural perspective, subtle hand shake, photorealistic, documentary realism`
 - **Dấu vết máy quay chân thực**: góc nhìn tự nhiên, không méo viền (zero lens distortion, straight lines), rung tay nhẹ theo nhịp bước, cánh tay lọt mép khung ở shot selfie, auto-exposure theo nguồn sáng tự nhiên. Không dolly/crane/gimbal mượt kiểu điện ảnh.
-- **Người nền phản ứng**: dân bản địa dừng lại nhìn chằm chằm, tò mò hoặc nghi ngờ — nhưng **không ai nói** trừ người nói duy nhất của clip.
+- **Người nền phản ứng**: dân bản địa dừng lại nhìn chằm chằm, tò mò hoặc nghi ngờ. Người nền không nói; chỉ người được giao thoại trong sub-clip mới nói (nhân vật phụ nói ngôn ngữ không hiểu được, mục 2b).
 - **Audio môi trường đúng thời kỳ**: tiếng chợ bằng ngôn ngữ cổ/địa phương, bánh xe gỗ lạch cạch, chuông đồng xa — ghi ở dòng `Audio:` cuối prompt.
 - **Ràng buộc viết thành câu khẳng định trong thân prompt — KHÔNG dùng dòng `Negative:` liệt kê từ khóa** (góp ý của user: liệt kê từ khóa không có tác dụng, điện thoại vẫn hiện ra). Câu chuẩn, đặt trước dòng `Audio:`:
-  `The view comes from her own outstretched arm or her own eyes, and her free hand is empty. Mia stays in frame for the whole clip and never disappears. The locals wear [period clothing]; everything around is [era], with no modern buildings or vehicles. Only Mia speaks. No subtitles or text appear on screen. This looks like real footage, not a movie or a 3D render.`
+  `The view comes from her own outstretched arm or her own eyes, and her free hand is empty. Mia stays in frame for the whole clip and never disappears. The locals wear [period clothing]; everything around is [era], with no modern buildings or vehicles. Only Mia speaks English; nobody speaks over anyone else. No subtitles or text appear on screen. This looks like real footage, not a movie or a 3D render.`
 - **Material**: `realistic` mặc định áp *Canon EOS R5, 35mm* — kiểu ảnh máy ảnh, lệch với footage điện thoại. Khuyến nghị tạo material tùy chỉnh (giữ ảnh ref chân thực, chỉ đổi scene sang chất điện thoại):
   ```bash
   curl -X POST http://127.0.0.1:8100/api/materials -H "Content-Type: application/json" -d '{
@@ -357,7 +378,7 @@ Sau bảng storyboard, viết **Clip JSON cho từng clip 8s** theo mẫu `promp
   "transition_out": "foreground wipe: log fills the frame in the final second",
   "join": "CUT — cắt tại khung súc gỗ che kín nhất; CH2-06 mở bằng súc gỗ rời khung sang phải",
   "physics": "camera: selfie at arm's length facing her, walking forward at walking pace; frame 0: Nora mid-market, stalls both sides; moving: laborers walk left to right at walking pace behind the lens line; Nora never leaves frame except by camera movement",
-  "constraints": "The view comes from her own outstretched arm or her own eyes, and her free hand is empty. Nora stays in frame for the whole clip and never disappears. Only Nora speaks. No subtitles or text appear on screen. This looks like real footage, not a movie or a 3D render."
+  "constraints": "The view comes from her own outstretched arm or her own eyes, and her free hand is empty. Nora stays in frame for the whole clip and never disappears. Only Nora speaks English; nobody speaks over anyone else. No subtitles or text appear on screen. This looks like real footage, not a movie or a 3D render."
 }
 ```
 
@@ -387,9 +408,9 @@ Sau bảng storyboard, viết **Clip JSON cho từng clip 8s** theo mẫu `promp
 3. **`Everything is already in place from the very first frame:`** — liệt kê **mọi người, sinh vật, đạo cụ** sẽ xuất hiện trong clip, vị trí và khoảng cách của từng thứ ở giây 0, kèm `"stays in that same spot; never appears suddenly, never vanishes"`. Ghi **số lượng** (`"exactly one spear / one cup"`) và **tay nào cầm**. (Bài học 48)
 4. **`Shot:`** — bố cục khung (ai ở 1/3 nào, thấy tới đâu trên người).
 5. **`IDENTITY & OUTFIT LOCK`** nguyên văn (Bài học 47) + câu khóa mũ (Bài học 52 mục 2b) + câu `"From the very first frame to the last, <V> is fully dressed in the complete outfit: ... No part of the outfit appears, disappears or changes."`
-6. **Khóa miệng nhân vật phụ** khi họ hiện mặt: `"<Local>'s lips stay closed for the entire clip; ... The only moving mouth in the frame is <V>'s."` (Bài học 49)
+6. **Miệng nhân vật phụ** khi họ hiện mặt: không có thoại → khóa miệng `"<Local>'s lips stay closed for the entire clip; ... The only moving mouth in the frame is <V>'s."` (Bài học 49). Có thoại ngôn ngữ không hiểu được → ghi rõ sub-clip họ nói, giọng (`deep, gravelly male voice — guttural non-English sounds, no recognizable words`) và `<V> stays silent while he speaks` (mục 2b).
 7. **`0-3s / 3-6s / 6-8s`** — mỗi đoạn: hành động có **nguyên nhân vật lý** + nhắc lại 1 chi tiết outfit (cổ lông / cổ V đan dây / thắt lưng) + thoại.
-8. **Câu kết:** `"Pure front-facing selfie view; the shot never switches to a third-person view. Only <V> speaks. No subtitles or text appear in the frame. Real amateur footage, not a 3D render."` + với POV/cảnh rộng: `"The image is clean footage only: no on-screen interface, no recording indicator, no battery icon, no zoom label, no names, no text or symbols."`
+8. **Câu kết:** `"Pure front-facing selfie view; the shot never switches to a third-person view. Only <V> speaks English; nobody speaks over anyone else. No subtitles or text appear in the frame. Real amateur footage, not a 3D render."` + với POV/cảnh rộng: `"The image is clean footage only: no on-screen interface, no recording indicator, no battery icon, no zoom label, no names, no text or symbols."`
 9. **`Audio:`** cuối cùng.
 
 **B. Checklist — đọc lại từng `video_prompt` trước khi lưu (mỗi dòng phải trả lời "có"):**
@@ -402,7 +423,7 @@ Sau bảng storyboard, viết **Clip JSON cho từng clip 8s** theo mẫu `promp
 | 4 | Không giao hành động cho người không có trong khung; chuyển đồ vật tả từng bước tay (đưa → đỡ bằng tay nào → tay kia buông) | 48, Scene 14/15 |
 | 5 | Không nhắc tên món đồ trên người (mũ, găng, khăn) trong sub-clip nếu không muốn nhân vật thao tác với nó; mũ đã khóa "luôn để xuống" | 52, Scene 21/62 |
 | 6 | Đạo cụ chức năng (găng, áo) tả **động tác mặc/xỏ trước**, buộc dây sau, khoe ngang ngực | 45, 46 |
-| 7 | Người bản địa hiện mặt + có thoại → selfie qua vai, khóa miệng họ; POV thoại ngoài khung chỉ khi không thấy mặt người | 49, Scene 13/53 |
+| 7 | Người bản địa hiện mặt + vlogger có thoại → selfie qua vai; người bản địa không thoại thì khóa miệng, có thoại thì ở sub-clip riêng, ngôn ngữ không hiểu được, giọng ghi rõ; POV thoại ngoài khung chỉ khi không thấy mặt người | 49, 2b, Scene 13/53 |
 | 8 | Ngã/trượt/va chạm có **nguyên nhân vật lý** và **máy chịu hậu quả** (rung, chúi, văng); không ngã khi không gấp | 51, Scene 1/45 |
 | 9 | Vật nặng (tấm da cửa, đá) chỉ chuyển động khi có tay tác động, không giao cho "gió" | 50, Scene 9 |
 | 10 | Hai sinh vật cùng lông/màu không chạm nhau (vòi–voi con…); câu `"each animal is a separate body; they never overlap or merge"` | Scene 36 |
@@ -864,7 +885,7 @@ Rút ra từ dự án `output/atlantis-9600bc/` (2026-09-27). Khi mâu thuẫn v
     - **Root cause:** Omni Flash chỉ có 1 giọng (Slot 7) và luôn cố gắn khẩu hình vào **một cái miệng nhìn thấy được**. Khi miệng vlogger không có trong khung, nó gắn vào người bản địa duy nhất đang hiện mặt. Câu `Only Nora speaks` không đủ để khóa miệng người kia.
     - **Quy tắc:**
       1. Beat có thoại + người bản địa hiện mặt → **dùng Selfie Qua Vai** (Rule 42, mục 2b): vlogger 1/3 tiền cảnh nói bằng chính miệng mình, người bản địa 2/3 hậu cảnh; thêm `Nora`, `Nora Outfit` vào `character_names` (giữ tối đa 3 ref theo Bài học 47).
-      2. Luôn thêm câu khóa: `"<Local>'s lips stay closed for the entire clip; she never speaks or mouths words, and communicates only by frowning, shaking her head and hand gestures. The only moving mouth in the frame is Nora's."`
+      2. Clip người bản địa **không có thoại**: thêm câu khóa `"<Local>'s lips stay closed for the entire clip; she never speaks or mouths words, and communicates only by frowning, shaking her head and hand gestures. The only moving mouth in the frame is Nora's."` (Cập nhật 2026-10-05: người bản địa **được** nói ngôn ngữ không hiểu được ở sub-clip riêng, mục 2b; khi đó không dùng câu khóa này mà ghi rõ ai nói, lúc nào, giọng gì.)
       3. POV thoại ngoài khung chỉ an toàn khi trong khung **không có mặt người** (tay, đồ vật, phong cảnh) hoặc người bản địa quay lưng / ở rất xa.
     - **Rà soát:** sau khi gen, lọc mọi scene có `off-screen voice` + người bản địa trong `character_names` rồi kiểm tra miệng (Part 2: 13 lỗi rõ; 53, 31 nghi ngờ).
 

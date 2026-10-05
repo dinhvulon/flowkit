@@ -58,11 +58,11 @@ Nếu muốn, điền checklist `.agents/skills/time-travel-vlog/references/era-
 - Chi tiết cho POV xúc giác: cầm, nếm, sờ, đong (hạt kê, thẻ tre, giáp, kiếm).
 - Sự kiện/công trình người xem đã biết tên để làm điểm đến cuối.
 
-Không chắc → cho nhân vật nói "I think…", "historians say…".
-
 ## Bước 3 — Cấu trúc kịch bản (theo video mẫu)
 
 Mở `.agents/skills/time-travel-vlog/references/reference-analysis.md` (mục "Dòng thời gian" + "Cấu trúc rút ra") **trước khi viết outline**. Video mẫu có đúng **23 beat chuẩn** chia vào **7 hồi** theo đường cong cảm xúc tăng tiến. Khi viết cho thời kỳ mới, đặt kịch bản cạnh từng beat của video mẫu dưới đây và thay bằng sự thật của thời kỳ mình — **giữ vai trò, vị trí và kỹ thuật camera, chỉ đổi nội dung sự kiện**.
+
+> **Đọc `.agents/skills/time-travel-vlog/references/story-engine.md` trước khi viết outline (user chốt 2026-10-05, thắng mọi chỗ khác về cấu trúc truyện và thoại).** Survival / "I Survived 24 Hours": cold open 8s cắt trước kết quả → 5 Act mỗi Act 1 câu hỏi → goal chaining → thất bại leo thang → countdown `HOUR X — Y HOURS REMAINING` → payoff đắt hơn setup → sau payoff ≤ 75s → cảnh cuối không thoại, CUT BLACK. Bảng 7 hồi / 23 beat dưới đây chỉ còn là kho ý tưởng cảnh.
 
 Không mở bằng cảnh du hành. **Vào thẳng thế giới từ giây 0**, khung đầu tiên là chuyển động mạnh sát ống kính (bánh xe bò, thân ngựa, súc gỗ) rồi mở ra nhân vật giữa đám đông.
 
@@ -146,10 +146,10 @@ Khi lập Storyboard dài (~10 phút ≈ 38–42 clip 8s), dùng bảng 23 beat 
 - [ ] Mỗi beat có một thứ mới (nơi mới, người mới, thông tin mới hoặc nguy hiểm mới).
 
 **Quy tắc thoại** (kinh nghiệm thực chiến tối ưu cho Veo / AI Video):
-- Mật độ (user chốt 2026-10-01, nói nhanh để giữ nhịp): clip 10s ≈ **22–28 từ**, clip 8s ≈ **18–22 từ**. Chỉ chừa ~0.5s không thoại ở đầu/cuối mỗi clip cho chuyển cảnh.
+- Mật độ theo loại clip (user chốt 2026-10-05): clip 8s bình thường **8–15 từ**, căng thẳng 3–8, cảm xúc 5–12, giải thích tối đa 12–18; có nhịp im lặng; cảnh cuối không thoại. Show > Tell, cấm meta language (`story-engine.md` mục 12).
 - Thoại viết theo `VOICE_LOCK` và qua checklist chống giọng AI ở `.agents/skills/time-travel-vlog/references/voice-bible.md` (tính cách: Nora là chuyên gia sinh tồn liều lĩnh, KHÔNG dạy lịch sử; chửi thề bị bíp; 3 khuôn beat: Làm → Vì sao, Cách của mình vs cách của họ, Người bản địa dạy → Nora làm theo).
-- Một người nói/clip. Dân bản địa nói → nhân vật im lặng phản ứng (mắt mở to, môi mím).
-- Giọng vlog thật: câu ngắn, cảm thán, thì thầm, gọi người xem ("you guys...", "okay don't freak out..."). Chi tiết thế giới (thật hay bịa) hiện ra qua việc đang làm; không giảng lịch sử, không niên đại, không "scientists say".
+- Không nói chồng. Dân bản địa được nói bằng ngôn ngữ không hiểu được (không tiếng Anh) ở sub-clip riêng, giọng ghi rõ trong prompt; vlogger im lặng phản ứng rồi bình luận về giọng điệu, không dịch (`story-engine.md` mục 13).
+- Giọng vlog thật: câu ngắn, thì thầm khi sợ, tự ngắt ("no, wait—"). Chi tiết thế giới (thật hay bịa) hiện ra qua việc đang làm; không giảng lịch sử, không niên đại, không "scientists say".
 
 ## Bước 4 — Storyboard
 
@@ -171,7 +171,7 @@ Sau đó xuất prompt JSON từng clip (template `.agents/skills/time-travel-vl
 ## Bước 6 — Ráp CapCut & đóng gói
 - Cắt thẳng theo khung che; nhạc nền + ambient trải liên tục suốt video (video mẫu gần như không có khoảng lặng), hạ nhạc ở cảnh nguy hiểm và cảnh kết.
 - SFX nhẹ khi vật thể lướt qua ống kính; J-cut ambient cảnh sau vào sớm ~0.5s.
-- Phụ đề tùy chọn (video mẫu không có chữ trên màn hình).
+- Phụ đề tùy chọn (video mẫu không có chữ trên màn hình). Ngoại lệ (user chốt 2026-10-05): chèn năm, mission card và countdown `HOUR X — Y HOURS REMAINING` theo `references/story-engine.md` mục 2 và 9.
 - Grade ấm, hoàng hôn ở cuối; thêm grain nhẹ để đồng nhất các clip.
 - YouTube: 3 tiêu đề dạng "I Time Traveled to ___ in ___! (Vlog)", thumbnail (mặt nhân vật sốc + công trình/sự kiện nổi tiếng nhất của thời kỳ), mô tả có timestamp theo beat, bật nhãn "Altered or synthetic content".
 
