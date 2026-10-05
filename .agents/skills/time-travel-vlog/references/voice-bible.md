@@ -13,7 +13,7 @@ Server lấy **từ đầu tiên** của `voice_description` làm voice id (ví 
 **Hai giọng trong một clip (user chốt 2026-10-05):** nhân vật phụ được nói bằng ngôn ngữ không hiểu được. Hiện server chỉ gửi **1 voice id** vào Slot 7 (`request.extend([None, [[v_id]]])` trong `agent/services/flow_batch.py`), nên:
 - **Chỉ vlogger có `voice_description`.** Không đặt cho nhân vật phụ, nếu không entity nào đứng trước trong DB sẽ cướp giọng của cả clip.
 - Giọng nhân vật phụ **mô tả bằng chữ trong `video_prompt`**, gắn đúng sub-clip: `3-5s: The Leader speaks in a deep, gravelly male voice — short guttural non-English sounds, no recognizable words; Nora stays silent.` Không bao giờ để hai người nói chồng.
-- Muốn gửi giọng thứ hai qua payload thật thì phải capture request của Flow UI trước (`docs/CAPTURE.md`); chưa capture thì không sửa code theo phỏng đoán.
+- Flow hỗ trợ nhiều giọng trong một clip (user xác nhận 2026-10-05); giới hạn nằm ở FlowKit, chưa biết Flow gắn từng giọng vào nhân vật nào trong Slot 7. Cần 1 lần capture request `MZZa6b` có 2 giọng từ Flow UI (DevTools hoặc `docs/CAPTURE.md`) rồi mới nối vào code: slot sai vẫn trả 200 và bị bỏ qua âm thầm, tốn credit.
 - Test 1 clip trước khi gen hàng loạt. Nếu giọng nữ của vlogger phát ra từ miệng nhân vật phụ → clip đó quay về môi khép + cử chỉ (Bài học 49).
 
 **Vì sao đổi từ Achernar sang Laomedeia (user chốt 2026-10-01):** Achernar là giọng "soft, high pitch", chỉ hợp thì thầm. Persona vlogger là nói nhanh, tự tin, hài khô, và phải hét khi gặp nguy hiểm, nên giọng mềm bị yếu. Laomedeia là "upbeat, mid-high": nói nhanh tự nhiên, lúc hét vẫn nghe hoảng thật chứ không gắt.
