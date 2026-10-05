@@ -16,6 +16,23 @@ Viết theo chuỗi muốn → cản → thử → hỏng → tệ hơn:
 
 Đó là khác biệt giữa video kể về trải nghiệm sinh tồn và video sinh tồn có retention cao. Title hứa "I Survived…" thì người xem phải luôn cảm thấy cô **đang phải sống sót**, không phải đang tham quan.
 
+## 0b. Chuỗi nhân quả sinh tồn: mạch không được đứt (user chốt 2026-10-05)
+
+v4 tập Neanderthal mạnh ở hai đầu nhưng đứt ở giữa. Lửa xong ở phút thứ 3; sau đó nhóm "cần thịt" (Nora không đói); Act 3 chỉ là xẻ thịt và chờ được chấm điểm; chuyến đi đêm là một lựa chọn chứ không phải nhu cầu. Người xem cảm thấy retention thấp dù từng clip đều ổn. Luật:
+
+1. **Viết bảng chuỗi nhân quả trước khi viết clip.** Mỗi dòng gồm: giờ → *Nora cần gì để sống* → *vì sao* → *nối sang bước sau*. Mỗi mối nối phải là **"vì vậy"** hoặc **"nhưng"**, không bao giờ là **"và rồi"**. Có mối nối "và rồi" là có chỗ mạch đứt.
+2. **Nhu cầu phải là của chính vlogger, và là nhu cầu cơ thể.** Rét, đói, khát, bị thương, kiệt sức, mất chỗ trú. Đừng để mục tiêu của nhóm ("nhóm cần thịt") thay cho nhu cầu của cô. Gieo nhu cầu bằng hình (ướt sũng, môi tím, giá thịt trống, *"I haven't eaten since I got here"*) và trả ở cuối (bữa ăn đầu tiên).
+3. **Đồ hiện đại không được xóa mối nguy.** Áo khoác giữ nhiệt thì cái rét không đáng tin; cho áo ướt, rách, hoặc không có.
+4. **Hỏi "sao họ không tự làm?".** Người bản địa làm được việc đó dễ dàng (Người Già đánh lửa ba nhát) thì vấn đề không thể là "bếp của nhóm tắt". Stakes phải đặt vào vlogger: nhóm có lửa, còn cô phải tự kiếm được chỗ bên lửa.
+5. **Mối nguy của cao trào phải lơ lửng từ Act 1.** Gieo bằng hình (người bị cắn, dấu chân, xác bị gặm) để toàn bộ Act 2–3 diễn ra dưới cái bóng đó, và người xem biết trước điều cô sợ. Đừng để mối nguy của cold open biến mất 5–6 phút.
+6. **Cao trào do chính lỗi của vlogger gây ra.** Lỗi ở Act 3 (làm hỏng cuộc săn → vệt máu) dẫn mối nguy tới; Act 4 là cô tự nguyện sửa lỗi (*"My trail. My job."*). Có agency thì người xem đứng về phía cô.
+7. **Nhiệm vụ chính không được xong quá sớm.** Mission card xong trước phút thứ 3 thì phải có ngay một nhu cầu sống còn mới, nối bằng "nhưng". Không lấp khoảng trống bằng chuỗi "học việc, được gật đầu".
+8. **Cho xem hành động chính, đừng nhảy qua nó.** Người xem đến để xem Neanderthal săn, đừng cho vlogger tới nơi khi *"they already did the hard part"*.
+9. **Mỗi Act một khuôn khác nhau.** Ví dụ: Act 2 học, Act 3 hành động và sai lầm, Act 4 trả giá và chuộc lỗi. Ba Act cùng khuôn "hỏng → được chỉ → khá hơn → gật đầu" thì từ Act thứ hai người xem đoán trước được.
+10. **Độ dài theo độ phức tạp.** Một chuỗi nhân quả 5 mắt xích vừa với khoảng 7:30–8:00. Kéo lên hơn 9 phút thì bắt buộc phải độn.
+
+Bản mẫu: `output/neanderthal-51ka/outline-v5.md` (bảng "Chuỗi nhân quả" và "Gieo → gặt").
+
 ---
 
 ## 1. Cold open 8s (mục tiêu 9.5/10)
@@ -264,6 +281,14 @@ Không để 70 clip 8s nối nhau đều đều. Trong script ghi một bảng 
 ## 14. Checklist trước khi chốt kịch bản
 
 **Tự review như user trước khi đưa kịch bản.** Đi qua kịch bản theo từng nhóm clip (C01, C02–C03, C04–C06, …) và với mỗi nhóm ghi ba dòng: *người xem hiểu được gì*, *người xem có thể chưa hiểu gì* (ở đâu? tại sao họ quan tâm cô? nếu hỏng thì sao? bột này là gì?), *điểm retention ước lượng /10*. Mỗi dòng "chưa hiểu" phải được sửa bằng hình hoặc cử chỉ, không bằng thoại giải thích. Đây là cách user review, nên agent làm trước để user không phải chỉ ra lại.
+
+**Mạch sinh tồn (mục 0b)**
+- [ ] Có bảng chuỗi nhân quả, mọi mối nối là "vì vậy" / "nhưng"?
+- [ ] Ở mọi đoạn, vlogger đang cần một thứ để sống (nhu cầu của cô, không phải của nhóm)?
+- [ ] Đồ hiện đại không xóa mối nguy? Người bản địa không tự giải được vấn đề đó dễ dàng?
+- [ ] Mối nguy cao trào được gieo từ Act 1? Cao trào do lỗi của vlogger gây ra?
+- [ ] Hành động chính (săn, đánh nhau…) được cho xem, không bị nhảy qua?
+- [ ] Mỗi Act một khuôn khác nhau? Có bảng gieo → gặt?
 
 **Hook**
 - [ ] 8 giây đầu có nguy hiểm ngay không?

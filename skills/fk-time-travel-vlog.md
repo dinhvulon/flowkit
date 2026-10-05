@@ -18,6 +18,7 @@ Format này ăn view vì 3 thứ: **góc nhìn người thật** (mọi thứ "q
 ### 🎬 Story Engine — giữ chân người xem (user chốt 2026-10-05 — áp dụng cho mọi tập, ghi đè bảng 7 hồi / 23 beat, mật độ thoại và luật "không chữ trên màn hình" cũ bên dưới)
 Đọc `.agents/skills/time-travel-vlog/references/story-engine.md` **trước khi viết outline** và chạy checklist mục 14 của file đó trước khi đưa kịch bản cho user. Tóm tắt:
 1. **Nguyên tắc gốc:** "vlogger muốn X → Y cản → thử Z → thất bại → tệ hơn → phải làm việc khó hơn". Không viết kiểu "thấy X, giải thích Y, nhóm làm Z". Title "I Survived…" thì người xem phải thấy cô đang sống sót, không phải đang tham quan.
+   - **Chuỗi nhân quả sinh tồn (mục 0b của file):** viết bảng "giờ → Nora cần gì để sống → vì sao → nối tiếp" trước khi viết clip. Mọi mối nối là "vì vậy" / "nhưng", không "và rồi". Nhu cầu là của chính vlogger (rét, đói, bị thương). Mối nguy cao trào gieo từ Act 1. Cao trào do lỗi của cô gây ra.
 2. **Cold open 8s:** 0–2s mối nguy đã trong khung, 2–4s cô nhận ra, 4–7s hành động quyết định, 7–8s gần thành công → CUT ĐEN. Không giới thiệu, không lịch sử, không logo, không subscribe. Payoff ở cao trào phát lại cuối cold open rồi cho thấy kết quả, và phải đắt hơn setup; không twist khác.
 3. **Sau cold open:** năm trên màn hình → người bản địa → không hiểu ngôn ngữ → vấn đề → hạn chót → `MISSION: … BEFORE …`.
 4. **5 Act, mỗi Act đúng 1 câu hỏi lớn** (công thức ở mục 3 của file). Act cao trào là benchmark độ căng cho mọi Act khác.
