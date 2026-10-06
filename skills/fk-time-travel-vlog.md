@@ -116,7 +116,7 @@ Chỉ học format; không sao chép tên, ngoại hình hay lời thoại nhân
 3. **Nhóm 3: Newsjacking & Ăn theo Hollywood (Bơm traffic tự nhiên cho kênh mới)**:
    - Đón đầu các dự án phim sắp chiếu hoặc sự kiện truyền thông: Khi phim tài liệu/bom tấn về La Mã, Ai Cập hay Chiến tranh ra rạp, lượng tìm kiếm tăng vọt hàng trăm lần. Bạn ra video cùng chủ đề ngay trước ngày công chiếu để đón đầu dòng người tìm kiếm.
    - *Ví dụ:* Phim *Gladiator 2* ➔ Video *Rome 80 AD (Colosseum)*; Phim về Napoleon ➔ Video *Waterloo 1815*; Khám phá mộ cổ Ai Cập ➔ Video *Giza 2400 BC*.
-   *(Khớp với Title Option 2: Format 24 Giờ Sinh Tồn)*
+   *(Khớp với Title Option 2: Câu hỏi sinh tồn)*
 
 ### 2. Character Bible — khóa nhân vật xuyên suốt
 Một khối `CHARACTER_LOCK` cố định, **dán nguyên văn vào entity `description` và KHÔNG sửa giữa các clip**, kèm ảnh tham chiếu mặt (`/fk-upload-ref` nếu dùng mặt thật, hoặc `/fk-gen-refs` sinh ref AI rồi khóa lại). Video mẫu giữ mặt nhân vật giống hệt suốt 10 phút — đây là điều kiện sống còn của độ chân thực.
@@ -240,7 +240,7 @@ Shorts: hook (1) → 2–3 beat đời thường/wow (2–4) → nguy hiểm ho�
 - Chửi thề nhẹ chỉ viết dạng cắt dở (`"sh—"`, `"what the f—"`) và bíp ở hậu kỳ; tối đa 1 lần / 3 clip, không chửi trong hook hay beat kết (`voice-bible.md` mục 3).
 - Mỗi beat có một thứ mới: nơi mới, người mới, thông tin mới hoặc nguy hiểm mới.
 
-#### 5c. Survival Preset — "I Survived 24 Hours in…" (thời tiền sử, thiên tai, tương lai khắc nghiệt)
+#### 5c. Survival Preset — khung truyện 24 giờ (thời tiền sử, thiên tai, tương lai khắc nghiệt)
 
 Dùng khi bối cảnh tự nó có thể giết người (Kỷ Băng Hà, khủng long, hậu tận thế, Sao Hỏa). **Cấu trúc truyện theo `story-engine.md`** (cold open + 5 Act, mỗi Act 1 câu hỏi, goal chaining, countdown). Bảng dưới chỉ còn là gợi ý áp lực cơ thể theo giờ:
 
@@ -257,7 +257,7 @@ Dùng khi bối cảnh tự nó có thể giết người (Kỷ Băng Hà, khủ
 - **Mốc giờ là countdown trên màn hình** (user chốt 2026-10-05): `HOUR X — Y HOURS REMAINING`, đặt ngay trước/sau các nấc leo thang, chèn ở hậu kỳ (`story-engine.md` mục 9). Không cần nói giờ bằng lời.
 - **Vlogger là chuyên gia sinh tồn (user chốt 2026-10-01, sửa 2026-10-05): giỏi, liều, nói nhanh — nhưng KHÔNG dạy lịch sử.** Người xem ở lại vì cô làm được việc thật, giải thích vì sao bằng một câu đời thường, và vì nguy hiểm leo thang. Mỗi beat theo 1 trong 3 khuôn ở `voice-bible.md` mục 4: **Làm → Vì sao**, **Cách của mình vs cách của họ** (cô thử cách hiện đại, thất bại, cách bản địa thắng), **Người bản địa dạy → Nora làm theo** (họ có thể nói ngôn ngữ không hiểu được, Nora không dịch, mục 2b). Mẹo nói dạng mệnh lệnh của người thật ("Don't eat snow. Ever."), không dùng nhãn khuôn mẫu ("Survival rule number one:", "Here's the trick:").
 - **Không cần nguồn cho mẹo hay chi tiết thế giới** — bịa được, kể cả mẹo sinh tồn. Tiêu chí duy nhất: hay và giữ chân người xem.
-- Tiêu đề: dùng động từ **"Survived"** thay cho "Spent" (`I Survived 24 Hours in/with …`); chi tiết SEO ở `/fk-youtube-seo`.
+- Tiêu đề: **không dùng `I Survived 24 Hours`** (user bỏ 2026-10-06). Mốc 24 giờ chỉ dùng trong truyện (countdown), không đưa lên tiêu đề. Dùng `I Time Travelled to …` hoặc câu hỏi, và phải có tên tộc người hoặc niên đại. Chi tiết ở `/fk-youtube-seo`.
 
 ### 6. Storyboard & tỉ lệ loại shot
 
@@ -1169,8 +1169,9 @@ python tools/export_flow_import.py <PROJECT_ID> --main <Vlogger>   --upload "<Vl
 ### Bước 6: Đóng Gói YouTube
 - `/fk-youtube-seo` — **3 tiêu đề chuẩn High-Stakes / Sinh tồn nghẹt thở**:
   - *Option 1 (Nguy hiểm cận kề / Khuyên dùng)*: `I Time Travelled to [Year] — And Almost Got Trampled by a [Threat]`
-  - *Option 2 (Format 24 Giờ Sinh Tồn)*: `I Spent 24 Hours in [Location/Era] ([Extreme Condition]) with [Ancient People]`
-  - *Option 3 (Shock văn hóa & Nghịch lý)*: `What Happens When You Show Modern Fire to [Ancient People]?`
+  - *Option 2 (Câu hỏi sinh tồn)*: `Would [People] Let You Into Their [Cave/Camp]? ([Year])`
+  - *Option 3 (Shock văn hóa & Nghịch lý)*: `What Happens When You Show a Lighter to [People]?`
+  - Tiêu đề nào cũng phải có tên tộc người cụ thể (`Neanderthals`, không phải `Ancient People`) hoặc niên đại.
   - Mô tả có **timestamp theo beat/hồi**, bộ tag chuẩn SEO, tuyệt đối không dùng tiêu đề hiền/giáo khoa.
 - `/fk-thumbnail` — Thumbnail High-Stakes: Mặt nhân vật hoảng loạn/adrenaline cực độ né mối nguy cận kề (chân voi ma mút giẫm, giáo chĩa, bão tuyết -40°C) + Text 2 dòng kích thích tò mò (Line 1: `ALMOST TRAMPLED!` / `-40°C SURVIVAL!` / `THEY SAW FIRE!`; Line 2: Địa điểm & Niên đại bằng tiếng Anh); 16:9 (long-form) hoặc 9:16 (Shorts).
 - **Bật nhãn "Altered or synthetic content"** trong YouTube Studio khi upload — `/fk-youtube-upload` hiện không tự đặt nhãn này, phải bật tay.

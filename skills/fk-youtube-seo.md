@@ -79,6 +79,12 @@ The title is the #1 SEO factor. It must:
    > **TUYỆT ĐỐI KHÔNG DÙNG TIÊU ĐỀ HIỀN / GIÁO KHOA**: Các tiêu đề như `I time travelled to the Ice Age in 20,000 BC: Surviving with Woolly Mammoths!` hay `A Day in Ancient Egypt` nghe giống phim tài liệu trường học, người xem lướt qua sẽ thấy nhàm chán và bỏ qua.
    > Bắt buộc áp dụng **Bộ 3 Công Thức High-Stakes (Kịch tính cao độ - Nghẹt thở - Shock văn hóa)** để đẩy CTR lên mức tối đa:
 
+   > [!IMPORTANT]
+   > **Mọi tiêu đề POV vlog phải có tên tộc người HOẶC niên đại (user chốt 2026-10-06), có cả hai thì càng tốt nếu vẫn ≤ `title_max_chars`.**
+   > - **Tên tộc người**: tên cụ thể như `Neanderthals`, `Vikings`, `Romans`, `Aztecs`, `Mammoth Hunters`. Không dùng từ chung chung `Cavemen`, `Ancient People`, `Ice Age Humans`.
+   > - **Niên đại**: năm hoặc mốc cụ thể như `51,000 Years Ago`, `20,000 BC`, `79 AD`, `1912`. Chỉ ghi "Ice Age" thì không đủ.
+   > - Niên đại phải đúng với research. Ví dụ "51,000 năm trước" là khoảng 49,000 BC, không phải 51,000 BC. Nếu không chắc, ghi dạng `51,000 Years Ago`.
+
    - **Option 1 (Nguy hiểm cận kề / Immediate Peril & Near-Death Escape — Áp dụng cho Nhóm 1: Thảm Họa Lịch Sử Có Thật)**:
      - **Cấu trúc**: `I Time Travelled to [Year/Era] — And [Imminent Danger / Almost Got Trampled / Barely Escaped]`
      - **Tâm lý học**: Đẩy mối đe dọa sinh tử lên ngay lập tức. Khán giả tò mò tột độ liệu vlogger thoát chết bằng cách nào trong gang tấc khi livestream thảm họa (Titanic 1912, Pompeii 79 SCN, Chernobyl 1986).
@@ -88,23 +94,24 @@ The title is the #1 SEO factor. It must:
        - `I Time Travelled to 79 AD — And Mount Vesuvius Started Erupting`
        - `I Time Travelled to 1986 Chernobyl — And the Sirens Went Off`
 
-   - **Option 2 (Format 24 Giờ Sinh Tồn / Extreme 24-Hour Survival Challenge — Áp dụng cho Nhóm 3: Newsjacking & Thử Thách Khắc Nghiệt, và mọi vlog dùng Survival Preset của `/fk-time-travel-vlog` mục 5c)**:
-     - **Cấu trúc**: `I Survived 24 Hours [in/with] [Era/People] ([Year or Stake])`. Dùng **"Survived"** (thì quá khứ, hứa hẹn có kết quả), không dùng "Spent" (nhạt) hay "Can I Survive…?" (trùng kênh đối thủ).
-     - **Ngoặc cuối** chứa **năm** (`16,000 BC`) hoặc **mối nguy có thật trong video** (`Mammoth Charge`, `No Tools`). Nội dung trong ngoặc phải lấy từ kịch bản hoặc bảng nguồn: **không bịa con số nhiệt độ, calo, số người chết** (vd. "-40°C") nếu bảng nguồn không có.
-     - **Tâm lý học**: Format thử thách MrBeast-style ("I Survived 24 Hours Straight In Ice"): con số thời gian + bối cảnh cụ thể + một mối nguy rõ ràng kích thích tò mò về cách sống sót thật.
+   - **Option 2 (Câu hỏi sinh tồn / Survival Question Hook — Áp dụng cho Nhóm 3: Newsjacking & Thử Thách Khắc Nghiệt, và mọi vlog dùng Survival Preset của `/fk-time-travel-vlog` mục 5c)**:
+     - **Cấu trúc**: `Would [People] Let You [Into Their Cave / Join Their Hunt]? ([Year])` hoặc `What Happens When [Situation có trong video] [with People]? ([Year])`.
+     - **Câu hỏi phải được video trả lời rõ.** YouTube xếp tiêu đề hứa điều video không có vào "Malicious clickbait" (Spam Policy). Ví dụ: hỏi "Would Neanderthals Let You In?" thì video phải có cảnh họ chặn cửa rồi cho vào.
+     - **Không dùng "Can I Survive…?"** vì trùng kênh đối thủ. **Không dùng "I Survived 24 Hours"** (user bỏ 2026-10-06): tiêu đề này hứa trọn 24 giờ, và cả series dễ bị coi là cùng một khuôn.
+     - **Không bịa con số** nhiệt độ, calo, số người chết (vd. "-40°C") nếu bảng nguồn không có.
+     - **Tâm lý học**: câu hỏi có/không về việc được chấp nhận hay sống sót giữa một tộc người cụ thể. Người xem bấm vào để biết câu trả lời.
      - **Ví dụ**:
-       - `I Survived 24 Hours in the Ice Age (16,000 BC)`
-       - `I Survived 24 Hours with Mammoth Hunters (Mammoth Charge)`
-       - `I Survived 24 Hours in the Roman Colosseum (80 AD)`
-       - `I Survived 24 Hours in Medieval London (Black Death, 1348)`
-     - **Series**: khi kênh làm nhiều tập cùng format, giữ nguyên tiền tố `I Survived 24 Hours` ở mọi tập để người xem nhận ra series; chỉ đổi phần [Era/People] và ngoặc.
-     - **Kiểm tra trùng lặp**: trước khi chốt, web search cụm `"24 Hours in [Era]"`. Nếu đã có video cùng chủ đề (vd. "Can I Survive 24 Hours in the Ice Age? (30,000BC)"), phân biệt bằng địa điểm/năm cụ thể hơn hoặc mối nguy riêng của video mình.
+       - `Would Neanderthals Let You Into Their Cave? (51,000 Years Ago)`
+       - `What Happens When Hyenas Raid a Neanderthal Camp at Night?`
+       - `Would the Romans Let You Watch the Colosseum Open? (80 AD)`
+       - `What Happens When You Get Sick in Medieval London? (1348)`
+     - **Kiểm tra trùng lặp**: trước khi chốt, web search tiêu đề dự kiến. Nếu đã có video cùng chủ đề, phân biệt bằng địa điểm/năm cụ thể hơn hoặc mối nguy riêng của video mình.
 
    - **Option 3 (Shock văn hóa & Nghịch lý thời gian — Áp dụng cho Nhóm 2: Va Chạm Văn Minh / Bị Coi Là Phù Thủy)**:
      - **Cấu trúc**: `What Happens When You Show [Modern Object / Technology] to [Ancient People]?` hoặc `I Showed [Modern Item] to [Ancient People] — Their Reaction Was Terrifying`
      - **Tâm lý học**: Va chạm văn minh cực độ, thí nghiệm văn hóa giữa hiện đại và tiền sử/cổ đại. Kích thích sự tò mò về phản ứng ngây thơ, sợ hãi, vây bắt hoặc tôn sùng của người cổ đại.
      - **Ví dụ**:
-       - `What Happens When You Show Modern Fire to Ice Age Humans?`
+       - `What Happens When You Show a Lighter to Neanderthals?`
        - `I Showed an iPhone at the Salem Witch Trials (1692) — They Tried to Burn Me`
        - `What Happens When You Show a Smartphone to Roman Soldiers?`
        - `I Showed Modern Medicine to 14th Century Plague Doctors`
@@ -160,7 +167,8 @@ Rules:
 [TAGS/KEYWORDS — natural sentence form]
 [CREDITS]
 [SOCIAL LINKS — placeholder]
-[COPYRIGHT/DISCLAIMER]
+[FICTIONAL CONTENT DISCLAIMER — BẮT BUỘC cho mọi video hư cấu/tái hiện lịch sử]
+[COPYRIGHT]
 ```
 
 ### Full description template:
@@ -182,13 +190,99 @@ Turn on notifications 🔔 to never miss a video.
 {real_world_context_2_3_sentences}
 
 [Zone 3 — Footer & Socials]
+—————————————————————————
+{fictional_disclaimer_block — chọn template ngôn ngữ từ Rule A}
+
 © {year} {channel_name} — All rights reserved.
 ```
 
-> **CRITICAL RULES (No AI Disclosures & No Tool Branding):**
-> 1. **NO AI DISCLOSURE:** NEVER include "AI Transparency", "AI Disclosure", "Visuals are AI generated", or any AI notices in the YouTube title, description, or tags.
-> 2. **NO TOOL BRANDING:** NEVER include "Generated with Flow Kit", "Produced with Flow Kit", "Realistic Cinematic Engine", or any internal tool/software names anywhere in public metadata.
-> 3. Keep all YouTube metadata 100% natural, clean, authentic, and focused strictly on the story and channel.
+> **CRITICAL RULES (Fiction Disclaimer vs Tool Branding — Tách bạch 2 khái niệm):**
+>
+> **Rule A — BẮT BUỘC: Fictional Content Disclaimer (Khai báo nội dung hư cấu)**
+> Mọi video hư cấu / tái hiện lịch sử / time-travel vlog PHẢI có đoạn disclaimer cuối Zone 3.
+> Đây là quy định của kênh, YouTube không bắt buộc. YouTube chỉ bắt buộc bật khai báo AI trong Studio (Rule D), và disclaimer trong description KHÔNG thay thế được bước đó. Disclaimer có ích vì nó nói rõ với người xem phần nào là thật, phần nào là hư cấu, điều mà nhãn AI tự động của YouTube không làm.
+> Chọn template theo ngôn ngữ script:
+>
+> Disclaimer phải có **3 lớp cụ thể** — không viết chung chung "hư cấu, giải trí":
+> - **Lớp 1 — Thể loại**: nêu đây là tái hiện sáng tạo dựa trên bằng chứng lịch sử/khảo cổ
+> - **Lớp 2 — Ranh giới thật/giả**: cái gì là thật (thời đại, loài người, địa điểm), cái gì là hư cấu (nhân vật, đối thoại, sự kiện cụ thể)
+> - **Lớp 3 — Hướng mở**: gợi mở tò mò tìm hiểu thêm — không chỉ "đây là fake"
+>
+> **Tiếng Việt — template đầy đủ 3 lớp:**
+> ```
+> ⚠️ VỀ VIDEO NÀY:
+> Đây là tác phẩm tái hiện lịch sử sáng tạo, được dựng bằng AI dựa trên bằng chứng khảo cổ
+> và nghiên cứu lịch sử — mục đích kích thích trí tưởng tượng và khám phá quá khứ.
+>
+> ✅ CÓ THẬT: Bối cảnh thời đại, loài người, địa điểm địa lý, công cụ/lối sống được
+> tái hiện dựa trên dữ liệu nghiên cứu.
+> 🎭 HƯ CẤU: Nhân vật vlogger, tên nhân vật, đoạn đối thoại, chuỗi sự kiện cụ thể
+> đều được biên kịch hoặc kịch tính hóa phục vụ câu chuyện.
+>
+> Muốn tìm hiểu thêm về thời kỳ này? Xem phần nguồn tham khảo trong description.
+> ```
+>
+> **English — 3-layer template:**
+> ```
+> ⚠️ ABOUT THIS VIDEO:
+> This is a creative historical recreation produced with AI, inspired by archaeological
+> evidence and historical research — designed to spark imagination about the past.
+>
+> ✅ BASED ON FACT: The time period, species, geography, tools, and way of life depicted
+> are grounded in current research and archaeological findings.
+> 🎭 DRAMATIZED: The vlogger character, individual characters, specific dialogue, and
+> narrative events are scripted and fictionalized for storytelling purposes.
+>
+> Curious to learn more? Check the sources linked in the description.
+> ```
+>
+> **Japanese — 3層テンプレート:**
+> ```
+> ⚠️ この動画について:
+> 本作は考古学的証拠と歴史研究にもとづき、AIで制作した歴史的再現フィクションです。
+> 過去への想像力を広げることを目的としています。
+>
+> ✅ 史実にもとづく部分: 時代設定・登場する人類・地理・道具・生活様式は
+> 現在の研究・発掘成果を参考にしています。
+> 🎭 フィクション部分: Vloggerキャラクター・登場人物の名前・セリフ・
+> 具体的な出来事はストーリーのために脚色・創作されています。
+>
+> この時代についてもっと知りたい方は、概要欄のリンクをご覧ください。
+> ```
+>
+> **Dòng ✅ CÓ THẬT chỉ được liệt kê điều đã kiểm chứng.** Vlog time-travel được phép hư cấu (CLAUDE.md Rule 14), nên nhiều chi tiết trong video có thể là bịa. Đối chiếu với `.omc/research/` hoặc bảng nguồn của dự án: chi tiết nào không có nguồn thì chuyển sang dòng 🎭 HƯ CẤU. Nếu dự án không research gì, bỏ cụm "dựa trên bằng chứng khảo cổ" và chỉ giữ thời đại/địa điểm làm bối cảnh. Ghi "dựa trên nghiên cứu" cho nội dung bịa còn gây hiểu lầm hơn cả không có disclaimer. Câu "Xem nguồn tham khảo" chỉ giữ khi đã thêm link nguồn thật.
+>
+> **Cách điền `{era}` và `{species}` vào template:**
+> - Thay "thời đại" bằng tên cụ thể: "51.000 năm trước — thời kỳ người Neanderthal"
+> - Thay "loài người" bằng: "người Neanderthal (*Homo neanderthalensis*)"
+> - Thêm 1–2 nguồn tham khảo thật (Wikipedia, Nature, Smithsonian) vào cuối Zone 3
+>   ví dụ: `📚 Nguồn: Smithsonian Human Origins — https://humanorigins.si.edu`
+>   (link thật, không bịa — chỉ thêm nếu research đã xác nhận)
+>
+> **Rule B — CẤM: Tool Branding (Không quảng cáo tool nội bộ)**
+> NEVER include "Generated with Flow Kit", "Produced with Flow Kit", "Realistic Cinematic Engine",
+> or any internal tool/software names anywhere in public metadata.
+>
+> **Rule C — CẤM: Specific AI Tool Names in Description**
+> NEVER name specific AI tools (Google Flow, Veo, Imagen, etc.) in the description or tags.
+> The disclaimer says "AI" generically. YouTube's disclosure is a Studio setting, so naming tools adds nothing.
+>
+> **Rule D — BẮT BUỘC: Khai báo AI trong YouTube Studio (chính sách YouTube, kiểm tra 2026-10-06)**
+> Nguồn: [Disclosing use of GenAI content](https://support.google.com/youtube/answer/14328491).
+> - **Khi nào phải bật**: YouTube yêu cầu khai báo khi dùng AI để "meaningfully alter or generate photorealistic content", gồm cả nội dung "Generates a realistic scene that didn't actually occur". Vlog time-travel dựng bằng Omni Flash/Veo là cảnh photorealistic chưa từng xảy ra → **luôn bật**. Ngoại lệ "not realistic" (cưỡi kỳ lân, hoạt hình) không áp dụng cho kênh này.
+> - **Cách bật**: trong Studio, phần Attributes → "AI use" → **Yes** (trước đây tên là "Altered or synthetic content"). Đây là cài đặt trong Studio, KHÔNG phải dòng chữ trong description.
+> - **Nhãn**: với video photorealistic, YouTube có thể hiện nhãn ngay trên trình phát. YouTube cũng tự gắn nhãn nếu hệ thống của họ phát hiện nội dung AI.
+> - **Không ảnh hưởng doanh thu**: theo help page, việc khai báo "won't limit a video's audience or impact its eligibility to earn money".
+> - **Nếu không khai báo**: kênh "consistently choose not to disclose" có thể bị gắn nhãn thủ công (và không gỡ được), bị xóa video, hoặc bị đình chỉ khỏi YouTube Partner Program.
+>
+> **Rule E — Chính sách "inauthentic content" (đổi tên từ "repetitious content" ngày 2025-07-15)**
+> Nguồn: [YouTube channel monetization policies](https://support.google.com/youtube/answer/1311392).
+> - YouTube cho phép "a series following a set of characters across episodes" khi mỗi tập có "a distinct storyline, focus, or concept", và cho phép "using AI to visualize a unique character and narrative you invented".
+> - YouTube cấm kiếm tiền với "Videos where characters are put in the same situation over and over again with the same outcome" và "AI-generated content made with generic or unoriginal templates giving the impression of mass production".
+> - Áp dụng cho series vlog time-travel: mỗi tập phải có mối nguy, mạch truyện và cái kết khác nhau. Nếu tập mới chỉ đổi bối cảnh còn giữ nguyên cấu trúc (bị đe dọa → chạy trốn → thoát được) thì báo cho user biết.
+> - Video về thảm họa có thật (Pompeii, Titanic, Chernobyl): không viết title/description như thể sự việc vừa xảy ra. YouTube cấm "realistic visuals tricking viewers into believing a fake celebrity death or natural disaster has occurred". Luôn ghi năm trong title và để disclaimer nói rõ đây là tái hiện.
+>
+> Keep all YouTube metadata 100% natural, clean, authentic, and focused on the story and channel.
 
 
 
@@ -311,8 +405,10 @@ Print each section with clear separators so they can copy individual parts.
   1. Option 1 (Nguy hiểm cận kề - Khuyên dùng): {title_option_1} ({char_count} chars)
      CTR Angle: Thoát chết trong gang tấc / Đối mặt hiểm hoạ sinh tử trực diện
      
-  2. Option 2 (Format 24 Giờ Sinh Tồn): {title_option_2} ({char_count} chars)
-     CTR Angle: Thử thách sinh tồn 24 giờ (mối nguy có thật trong video, sống cùng người tiền sử)
+  2. Option 2 (Câu hỏi sinh tồn): {title_option_2} ({char_count} chars)
+     CTR Angle: Câu hỏi có/không về việc được chấp nhận / sống sót giữa tộc người cụ thể (video phải trả lời)
+
+  Mỗi tiêu đề: ghi rõ tên tộc người / niên đại nằm ở đâu, và cảnh nào trong video thực hiện lời hứa của tiêu đề.
      
   3. Option 3 (Shock văn hóa & Nghịch lý): {title_option_3} ({char_count} chars)
      CTR Angle: Va chạm văn minh / Phản ứng kinh ngạc trước công nghệ hiện đại
@@ -346,6 +442,15 @@ Print each section with clear separators so they can copy individual parts.
   Tag character usage: {N}/500
   Timestamp chapters: {N}
   Estimated niche: {niche_name}
+
+🛡️ YOUTUBE STUDIO — BẮT BUỘC TRƯỚC KHI ĐĂNG:
+─────────────────
+  □ Studio → Attributes → "AI use" → Yes (trước đây là "Altered or synthetic
+    content"). Bắt buộc với cảnh AI photorealistic. Khai báo không làm giảm
+    lượt hiển thị hay doanh thu; không khai báo nhiều lần có thể bị xóa video
+    hoặc đình chỉ khỏi YPP. (Rule D)
+  □ Disclaimer hư cấu đã có ở cuối description (Rule A). Nó không thay thế bước trên.
+  □ Series: tập này có mạch truyện và kết khác các tập trước (Rule E).
 ```
 
 ## Step 9: Save backup (optional)

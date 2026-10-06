@@ -38,13 +38,13 @@ Every thumbnail needs **2 lines of text**:
 - Action: Line 1 = "KHÔNG AI SỐNG SÓT" / Line 2 = "Vụ Cướp Thế Kỷ Tại Ngân Hàng Trung Ương"
 - Time-Travel / Historical POV Vlog (High-Stakes):
   - Option 1 (Nguy hiểm cận kề): Line 1 = "ALMOST TRAMPLED!" / Line 2 = "ICE AGE • 20,000 BC"
-  - Option 2 (24 Giờ Sinh Tồn): Line 1 = "-40°C SURVIVAL!" / Line 2 = "24 HOURS WITH CAVEMEN"
+  - Option 2 (Sinh tồn): Line 1 = "LET ME IN?" / Line 2 = "24 HOURS WITH CAVEMEN" hoặc "NEANDERTHALS • 51,000 YEARS AGO"
   - Option 3 (Shock văn hóa): Line 1 = "THEY SAW FIRE!" / Line 2 = "20,000 BC CULTURE SHOCK"
 
 ### Rules:
 - Both lines in project's language (LƯU Ý: Đối với POV / Time-Travel Vlogs, **bắt buộc dùng TIẾNG ANH** cho cả 2 dòng để tối ưu CTR quốc tế)
 - Line 1: Provocative, uses urgent power words (ALMOST TRAMPLED, -40°C SURVIVAL, THEY SAW FIRE, BARELY ESCAPED, DON'T LOOK BACK, ATTACK, DEATH)
-- Line 2: Gives context — Location & Era / Stakes (ICE AGE • 20,000 BC, 24H WITH CAVEMEN)
+- Line 2: Gives context — People/Era/Stakes (ICE AGE • 20,000 BC, NEANDERTHALS • 51,000 YEARS AGO, 24 HOURS WITH CAVEMEN). "24 HOURS WITH CAVEMEN" được dùng trên thumbnail (user chốt 2026-10-06) khi video có countdown đủ 24 giờ; tiêu đề thì không dùng "I Survived 24 Hours" (xem `/fk-youtube-seo`)
 - Line 2 makes Line 1 specific: "ALMOST TRAMPLED!" + "ICE AGE • 20,000 BC" → viewer immediately understands the deadly stakes
 
 ### Mandatory Rules for Historical / Time-Travel POV Vlogs (BẮT BUỘC):
@@ -56,7 +56,7 @@ Every thumbnail needs **2 lines of text**:
 3. **Imminent Threat & Overwhelming Danger**: Phải có mối đe dọa sinh tử áp sát trong khung hình (chân voi ma mút khổng lồ giẫm tuyết ngay góc máy, cặp ngà xoắn 4m quét sát lưng, thợ săn tiền sử bao vây chĩa giáo đá, bão tuyết gầm thét).
 4. **Text on Thumbnail in ENGLISH (Mandatory High-Stakes)**: Bắt buộc hiển thị chữ TIẾNG ANH nổi bật ở nửa trên thumbnail:
    - **Line 1 (Urgent Hook / Shock / Danger)**: 2-3 từ in hoa cực gắt, font dày đậm (bold yellow hoặc fiery orange/red with black outline): `ALMOST TRAMPLED!`, `-40°C SURVIVAL!`, `THEY SAW FIRE!`, `DON'T LOOK BACK!`.
-   - **Line 2 (Location & Era Context)**: 3-5 từ màu trắng in hoa có bóng đổ đen dày: `ICE AGE • 20,000 BC`, `24 HOURS WITH CAVEMEN`, `20,000 BC CULTURE SHOCK`.
+   - **Line 2 (Location & Era Context)**: 3-5 từ màu trắng in hoa có bóng đổ đen dày: `ICE AGE • 20,000 BC`, `24 HOURS WITH CAVEMEN`, `NEANDERTHALS • 51,000 YEARS AGO`, `20,000 BC CULTURE SHOCK`.
    - Vị trí: Upper half (tránh góc dưới bên phải vì dính badge thời lượng YouTube).
 
 ## Step 3: Build 4 thumbnail prompts
@@ -101,9 +101,10 @@ smaller [COLOR2] text in [LANGUAGE] clearly "[LINE2_CONTEXT]" below in bold font
 Low-angle handheld POV. Nora's face takes up 40% of frame, frozen in sheer adrenaline terror, wide eyes, panting breath with frost on eyelashes. Looming directly above/behind her is the colossal shaggy foot of a 6-ton woolly mammoth about to stomp down into spraying snow.
 Text: bold yellow "ALMOST TRAMPLED!" at top-left, white "ICE AGE • 20,000 BC" below.
 
-**V2 — 24H Extreme Survival (Format 24 Giờ Sinh Tồn -40°C):**
-Nora shivering in a howling blizzard at dusk, face flushed and iced, wrapped in mammoth-wool parka with snow clinging to hood. In background, a massive Mezhirich mammoth-bone hut glows with faint orange embers, prehistoric hunters visible in doorway.
-Text: bold cyan/yellow "-40°C SURVIVAL!" at top, white "24 HOURS WITH CAVEMEN" below.
+**V2 — Survival Question (Câu hỏi sinh tồn — bị chặn ở cửa hang):**
+Nora shivering at dusk outside a glowing cave mouth, face flushed and iced, looking up in desperate hope. A towering Neanderthal hunter blocks the entrance, arm across the opening, firelight behind him.
+Text: bold cyan/yellow "LET ME IN?" at top, white "24 HOURS WITH CAVEMEN" (hoặc "NEANDERTHALS • 51,000 YEARS AGO") below.
+Cảnh trên thumbnail phải có trong video (Spam Policy — Malicious clickbait).
 
 **V3 — Culture Shock & Standoff (Shock văn hóa - Ngọn lửa hiện đại):**
 Dramatic night contrast. Nora holds up a modern flame/torch glowing fiercely. The firelight illuminates the stunned, alarmed faces of Cromagnon hunters holding flint spears in defensive stance, eyes wide in disbelief at the sudden light.

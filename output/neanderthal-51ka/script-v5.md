@@ -139,12 +139,12 @@ Mỗi clip tối đa 7 ref. Nora + Nora Body chiếm 2 chỗ trong **mọi** cli
 |---|---|---|---|---|---|
 | A1-01 | 8 | SEL | **HOUR 0.** Bờ đất đóng băng sụp, Nora trượt xuống suối, nước tới ngực. Tay trái túm rễ cây, leo lên, quỳ run | 6–8 *"Ten seconds in. Soaked."* | N2 |
 | A1-02 | 8 | FIX | Hai tay cố vắt ống tay áo, ngón tay cứng, trượt. Nhét tay vào nách. Chạm cành bạch dương đổ: đóng băng, ướt | 3–6 *"Wet clothes kill faster than cold."* | N2 |
-| A1-03 | 8 | OTS | Cành gãy. Nora ngoái lại. Năm Neanderthal (đã đứng sẵn trong bóng cây) bước ra, dừng cách ~6 m | 6–8 (thì thầm) *"Don't run."* + 1s im lặng | N2, Leader, Old Woman, Strongest, Strongest Spear |
-| A1-04 | 8 | OTS | Thủ Lĩnh tới cách 1,5 m, ngửi không khí hai lần, nói vài âm tiết cụt | 5–8 *"No idea what he said. But that wasn't a question."* | N2, Leader, Strongest, Old Woman, Strongest Spear |
-| A1-05 | 8 | SEL | Tay Thủ Lĩnh véo vai áo trái ướt của cô, miết **đường chỉ gân** giữa ngón cái và ngón trỏ, nhìn tấm da khoác của chính ông, nhìn lại đường may; nước nhỏ lên tay ông; ông nhìn hàm cô run | 6–8 *"Yeah. Stitches. Still freezing."* | N2, Leader |
-| A1-06 | 8 | SEL | Đi sau nhóm lên dốc tới cửa hang có ánh lửa. Người Mạnh Nhất (đứng sẵn cạnh cửa) bước ngang chắn, giáo ngang người, hất cằm về phía rừng | 6–8 *"Okay. Outside. Got it."* | N2, Strongest, Strongest Spear, Leader, Cave Mouth |
-| A1-07 | 8 | POV | Nhìn xuống: hàng dấu chân linh cẩu trên sương giá ở cửa hang → ngẩng lên: Người Bị Thương nằm cạnh lửa, chân trái quấn da thấm sẫm; Người Già đắp rêu lên vết thương | 6–8 (giọng thấp) *"Something bit him. Something that comes at night."* | N2, Old Woman, Cave Mouth |
-| A1-08 | 8 | OTS | Thủ Lĩnh đánh **một nhát** pyrite: vài tia nhỏ. Thả hai viên đá xuống chân cô. Chỉ lần lượt: đá → lửa trong hang → Nora → rừng tối. Hậu kỳ: `MISSION: MAKE FIRE BEFORE NIGHTFALL` | 6–8 *"My own fire. Or I sleep out there."* | N2, Leader, Strongest, Cave Mouth |
+| A1-03 | 8 | POV | Cành gãy. Nora ngồi thụp nấp sau lùm thông. Thợ Săn cầm giáo và Thủ Lĩnh từ bìa rừng sải bước tiến thẳng về phía camera, dừng cách ~3 m khóa ánh nhìn vào lùm cây | *(không thoại, nín thở căng thẳng)* | N2, Leader, Strongest, Strongest Spear |
+| A1-04 | 8 | POV | Cành thông bị gạt phăng. Thủ Lĩnh bước sập tới, bóng khổng lồ che khuất ánh sáng; Nora giật lùi tự vệ đập lưng vào đá; Thủ Lĩnh cúi sát ngửi mạnh, gằn giọng kiểm tra | *(không thoại, nín thở hoảng sợ)* | N2, Leader, Strongest, Strongest Spear |
+| A1-05 | 8 | POV | Tay Thủ Lĩnh thò vào khung véo vai áo ướt của Nora, miết **đường chỉ gân**; nước nhỏ lên tay ông; so sánh với da thô của mình, thấy cô run rẩy vô hại nên buông tay quay đi | 6–8 (thì thầm run) *"They're not killing me... but I'm freezing."* | N2, Leader |
+| A1-06 | 8 | OTS | Quay từ sau lưng: Nora ôm người run rẩy vì lạnh buốt, liêu xiêu bám theo nhóm leo dốc đá về phía hang lửa; vừa tới ngưỡng cửa, Người Mạnh Nhất bước sập ngang chắn cán giáo dài đẩy cô lùi lại, hất cằm đuổi về phía rừng | *(không thoại, tiếng thở run rẩy vì rét)* | N2, Strongest, Strongest Spear, Leader, Cave Mouth |
+| A1-07 | 8 | POV/OTS | Người Mạnh Nhất chặn giáo ngang cửa hang. Nora nhìn qua cán giáo thấy người thợ săn nằm cạnh lửa, chân quấn băng sẫm màu vì thú cắn, Người Già đắp rêu; nhận ra bộ tộc đang phòng thủ cao độ | 6–8 (thì thầm run) *"They're locked down... Someone in there was attacked."* | N2, Strongest, Strongest Spear, Old Woman, Cave Mouth |
+| A1-08 | 8 | OTS | Thủ Lĩnh đánh **một nhát** pyrite: vài tia nhỏ. Thả hai viên đá xuống chân cô. Chỉ lần lượt: đá → lửa trong hang → Nora → rừng thông giá buốt dưới thung lũng. Hậu kỳ: `MISSION: MAKE FIRE BEFORE NIGHTFALL` | 6–8 *"My own fire. Or I sleep out there."* | N2, Leader, Strongest, Cave Mouth |
 | A1-09 | 8 | FIX | Cô **cạo chậm** mép đá xuống pyrite như cạo que thép: một tia mờ chết trên đất trần (chưa có mồi). Phía sau, bốn người quay vào hang | 0–3 *"Like a ferro rod. Right?"* | N2, Leader, Strongest, Cave Mouth |
 | A1-10 | 8 | OTS | Người Già đi ra, ngồi xổm, đặt **đúng 4 nhúm rêu khô** thành hàng trên miếng vỏ cây, đứng dậy đi vào, không nói | 6–8 *"Okay."* + im lặng | N2, Old Woman, Cave Mouth |
 
@@ -228,11 +228,11 @@ Mỗi clip tối đa 7 ref. Nora + Nora Body chiếm 2 chỗ trong **mọi** cli
 | EST-01 | Drone cao, lướt chậm tới trước và hơi xuống | Thung lũng, suối có băng, sương, cửa hang vách phải có sợi khói, Nora là chấm vàng bên trái suối | Sương trôi chậm dọc suối; khói nghiêng theo gió nhẹ | Lắc nhẹ theo gió, không xoay | Không ai |
 | A1-01 | Selfie, tay phải duỗi giơ cao trên mặt nước | Nora đứng mép bờ đóng băng; rễ cây lòi ra ở mép trái | Bờ sụp → cô trượt lùi xuống nước (nhanh), nước dâng tới ngực, bắn lên khung | Khung giật mạnh xuống và nghiêng theo cơ thể; nước chảy khỏi tay áo; ủng trượt trên bùn | Không ai; tay phải luôn giữ trên mặt nước |
 | A1-02 | Đặt trên tảng đá bờ suối, cách 1,5 m, ngang ngực | Nora quỳ trên cỏ phủ sương; cây bạch dương đổ đóng băng phía sau | Nước nhỏ vài giọt khi vắt; tay nhét vào nách rồi rút ra | Ngón cứng trượt khỏi da ướt; run toàn thân; hơi thở thành khói tan nhanh | Không ai |
-| A1-03 | Selfie OTS, Nora 1/3 trái tiền cảnh | 5 Neanderthal đứng sẵn trong bóng cây, cách ~15 m, nửa khuất sau thân cây | Cành gãy dưới chân một người; cả năm đi bộ chậm tới trước, dừng ở ~6 m | Nora quay đầu qua vai trái rồi quay lại; khung rung nhẹ theo nhịp thở | Không ai; không người nào mọc thêm hay biến mất |
-| A1-04 | Selfie OTS | Thủ Lĩnh cách ~3 m bên phải; 4 người còn lại cách ~6 m | Thủ Lĩnh bước tới 1,5 m, nghiêng người ngửi | Cánh mũi phập phồng; Nora đứng im, chỉ mắt di chuyển | Không ai |
-| A1-05 | Selfie cận, ngang vai | Thủ Lĩnh sát bên trái cô, tay phải ông đã ở cạnh vai áo cô | Ngón tay ông véo, miết đường chỉ; nước nhỏ xuống ngón ông | Da ướt lõm dưới ngón tay; ông rụt tay khi bị lạnh | Tay ông rời khung khi buông ra |
-| A1-06 | Selfie, đi bộ lên dốc | Nhóm đi trước 3–5 m; Người Mạnh Nhất đứng sẵn cạnh cửa hang; ánh lửa trong hang | Nhóm đi vào hang (đi bộ); Người Mạnh Nhất bước ngang một bước chắn cửa | Khung nảy nhẹ theo bước lên dốc; dừng đột ngột khi bị chắn | Các người khác đi vào bóng tối trong hang (đi bộ) |
-| A1-07 | POV đứng ngoài cửa hang, nhìn xuống rồi ngẩng lên | Dấu chân linh cẩu trên sương ở tiền cảnh; Người Bị Thương nằm cạnh bếp cách 4 m; Người Già quỳ cạnh anh | Ánh nhìn nghiêng xuống rồi lên chậm như mắt người | Người Bị Thương nhăn mặt, cựa người; lửa lay động | Không ai; tay Nora ngoài khung |
+| A1-03 | Handheld POV thấp sát đất, nấp sau cành thông | Thợ Săn cầm giáo và Thủ Lĩnh ở bìa rừng cách ~12 m, nửa khuất sau thân thông; cành thông tiền cảnh che viền | Cả nhóm sải bước đi thẳng tới trước về phía camera, thu hẹp cự ly từ xa lại gần, dừng ở ~3 m | Khung hình rung lắc nhẹ tự nhiên kiểu phone-vlog quay lén khi lẩn trốn, nhịp thở run rẩy | Không ai; không người nào mọc thêm hay biến mất |
+| A1-04 | Handheld POV thấp sát đất, co cụm tự vệ | Thủ Lĩnh và Người Mạnh Nhất cách 3 m ngoài lùm thông | Thủ Lĩnh bước sập tới 2 bước, gạt mạnh cành thông; Nora giật lùi sát đá; Thủ Lĩnh cúi sát ngửi | Khung chao đảo mạnh khi cành thông bật rào rạo, Nora giật nảy lùi lại nén tuyết; cánh mũi ông phập phồng | Không ai; bóng Thủ Lĩnh che rợp khung hình |
+| A1-05 | Handheld POV cận cảnh, tựa lưng tảng đá | Bàn tay gân guốc của Thủ Lĩnh thò vào khung véo vai áo trái Nora (thấy tay áo ướt của Nora ở mép khung); Thủ Lĩnh cúi thấp trước mặt | Ngón tay ông véo, miết đường chỉ gân; nước nhỏ tong tỏng xuống ngón ông; ông buông tay quay lưng bước đi | Da ướt lõm dưới ngón tay; hơi thở khói dài khi Nora thở hắt ra run rẩy; khung hơi nâng theo bóng lưng ông | Thủ Lĩnh quay người bước khỏi khung hình về phía lối mòn |
+| A1-06 | Handheld tracking từ sau lưng Nora, bám theo lên dốc | Nhóm đi trước 4–5 m trên dốc đá; Nora ở tiền cảnh 1/3 trái (thấy từ sau lưng/nghiêng 3/4), hai tay ôm ngực co ro run rẩy | Nhóm bước vào hang; Nora liêu xiêu bước tới ngưỡng cửa; Người Mạnh Nhất bước sập ngang chắn cán giáo | Khung nảy nhẹ theo bước chân leo dốc; Nora giật nảy lùi lại 2 bước khi bị chặn giáo; toàn thân run rẩy nảy bần bật | Nhóm thợ săn bước vào bóng tối trong hang; Người Mạnh Nhất đứng chắn ngang cửa hang |
+| A1-07 | Handheld POV/OTS ngoài cửa hang, nhìn qua cán giáo | Người Mạnh Nhất chắn giáo ngang cửa hang ở tiền cảnh; qua sườn anh thấy Người Bị Thương nằm cạnh bếp và Người Già quỳ đắp rêu | Người Mạnh Nhất gằn giọng, hất cằm đuổi; người bị thương nhăn mặt đau đớn; Thủ Lĩnh bước ra phía sau | Cán giáo đẩy nhẹ xua đuổi; Nora lùi một bước run rẩy; hơi thở khói dày | Không ai; Thủ Lĩnh bước ra cửa hang |
 | A1-08 | Selfie OTS | Thủ Lĩnh cách 1,5 m, tay trái biface, tay phải pyrite; Người Mạnh Nhất ở cửa hang phía sau | Vài tia rơi xuống đất; hai viên đá rơi xuống sương ngay chân cô | Đá rơi nảy nhẹ một lần, nằm im; tay ông chỉ theo thứ tự | Không ai |
 | A1-09 | Đặt trên tảng đá thấp dưới dốc, nhìn lên Nora, cửa hang phía sau | Nora quỳ, hai tay cầm hai viên đá; Thủ Lĩnh, Người Mạnh Nhất, A, B đứng ở cửa hang | Một tia mờ rơi xuống đất trần, tắt ngay | Cạo chậm, áp lực đều (sai kỹ thuật) | Bốn người lần lượt đi bộ vào trong hang |
 | A1-10 | Selfie OTS | Nora ngồi; Người Già đứng sẵn ngay trong cửa hang, tay chụm 4 nhúm rêu | Bà đi ra (đi chậm), ngồi xổm, đặt từng nhúm một, đứng dậy đi vào | Rêu đặt xuống không nảy; bà chống gối đứng dậy chậm | Bà đi bộ vào bóng tối trong hang |
@@ -294,10 +294,10 @@ Mọi prompt theo thứ tự khối của PROMPT LOCK §10b. Camera guide khuyê
 **Khối dùng chung** (dán nguyên văn vào chỗ `[ID-LOCK]`):
 
 ```
-IDENTITY & OUTFIT LOCK (CRITICAL -- match reference images exactly): her face and hair from the Nora face sheet, and her build and clothing from the Nora Body sheet (which serves as her dressed Body reference). BODY LOCK: Nora has a curvaceous, statuesque hourglass build with a large, prominent high natural bust, tiny narrow waist, shapely curvy hips, and long athletic legs matching the Nora Body sheet exactly; she is NOT flat-chested, NOT slender, NOT wearing a loose or boxy coat. Nora has honey-blonde hair pulled up into a high wavy ponytail tied at the crown of her head (not low at the nape), with wispy curtain bangs parted in the middle that cover the edges of her forehead and frame both cheeks, plus a few loose face-framing strands at the temples; her hair is never slicked back. She has grey-green eyes and fair skin with a natural pink flush. Nora wears the exact outfit from the Nora Body reference: a form-fitting tailored tunic of smoked golden-tan deer suede, precision-sewn with neat rows of fine sinew stitches along the shoulder, side and sleeve seams, with clean unadorned shoulders and completely open neck (strictly NO fur collar, NO fur on neck or shoulders, NO hood), hugging her full bust with a deep plunging laced V-neckline tied with thin criss-crossing leather thongs, tightly cinched at her tiny waist with a wide dark-brown leather belt that transitions seamlessly without any peplum flare into skin-tight golden-tan suede leggings hugging her athletic long legs; long fitted sleeves ending in thick plush fluffy grey wolf-fur cuffs at the wrists only; knee-high hide boots wrapped with leather thongs. This outfit is GOLDEN-TAN throughout -- NOT dark brown, NOT a draped caveman pelt, NOT white or cream, NOT sleeveless, NOT bare legs, NOT loose unkempt hair, NOT modern clothing. From the very first frame to the last, Nora is fully dressed in the complete outfit: clean suede shoulders, long sleeves with fur cuffs at the wrists, belt, leggings and boots. No part of the outfit appears, disappears or changes.
+IDENTITY & OUTFIT LOCK (CRITICAL -- match reference images exactly): her face and hair from the Nora face sheet, and her build and clothing from the Nora Body sheet (which serves as her dressed Body reference). BODY LOCK: Nora has a curvaceous, statuesque hourglass build with a large, prominent high natural bust, tiny narrow waist, shapely curvy hips, and long athletic legs matching the Nora Body sheet exactly; she is NOT flat-chested, NOT slender, NOT wearing a loose or boxy coat. Nora has honey-blonde hair pulled up into a high wavy ponytail tied at the crown of her head (not low at the nape), with wispy curtain bangs parted in the middle that cover the edges of her forehead and frame both cheeks, plus a few loose face-framing strands at the temples; her hair is never slicked back. She has grey-green eyes and fair skin with a natural pink flush. Nora wears the exact outfit from the Nora Body reference: a form-fitting tailored tunic of smoked golden-tan deer suede, precision-sewn with neat rows of fine sinew stitches along the shoulder, side and sleeve seams, with clean unadorned shoulders and completely open neck (strictly NO fur collar, NO fur on neck or shoulders, NO hood), hugging her full bust with a deep plunging laced V-neckline tied with thin criss-crossing leather thongs, tightly cinched at her tiny waist with a wide dark-brown leather belt that transitions seamlessly without any peplum flare into skin-tight golden-tan suede leggings hugging her athletic long legs; long fitted sleeves ending cleanly and neatly at the wrists with smooth stitched cuffs (strictly NO fur trim, NO fur cuffs); knee-high hide boots wrapped with leather thongs. This outfit is GOLDEN-TAN throughout -- NOT dark brown, NOT a draped caveman pelt, NOT white or cream, NOT sleeveless, NOT bare legs, NOT loose unkempt hair, NOT modern clothing. From the very first frame to the last, Nora is fully dressed in the complete outfit: clean suede shoulders, long sleeves with smooth cuffs, belt, leggings and boots. No part of the outfit appears, disappears or changes.
 ```
 
-`[WET]` = `The suede is soaked from the chest down and darker where wet, with water dripping from the sleeves, the fur cuffs and the hem; the colour stays golden-tan and the shape never changes.`
+`[WET] = The suede is soaked from the chest down and darker where wet, with water dripping from the sleek sleeves, the belt and the clean straight stitched hem; her outfit is 100% intact, smooth, and undamaged, strictly never torn, never shredded, and never ragged; the colour stays golden-tan and the shape never changes.
 `[HAIR]` = `Her curtain bangs stay over her forehead and her ponytail stays tied high at the crown for the entire clip; wind only makes the ponytail swing, it never pulls the hair back or loose.`
 `[NEANDERTHAL]` = câu đặc điểm chung ở mục 2.
 `[HYENA]` = câu khóa Cave Hyena ở mục 2.
@@ -321,7 +321,7 @@ Shot: medium close-up; Nora fills the left two-thirds of the frame from the wais
 [ID-LOCK]
 [HAIR]
 Fire process: She strikes the pyrite in a fast glancing stroke down along the flat face of the flint biface, lengthwise. Only a few tiny, short-lived orange sparks jump from the point of contact and fall onto the dry moss. The moss first shows one small red glowing spot and a thin wisp of smoke; she lowers her face close and blows gently; only after several seconds does a small flame appear. There is no shower of sparks and no instant flame.
-0-2s: The centre hyena takes one slow step forward, head low, the hair along its neck and back standing up. Nora's hands tremble as she sets the pyrite against the flat face of the biface; the grey wolf-fur cuff on her right sleeve shakes with her hand; her breath leaves dense short-lived vapor that dissipates rapidly. Nora says in a fast whisper: "Three. Getting closer." (no subtitles)
+0-2s: The centre hyena takes one slow step forward, head low, the hair along its neck and back standing up. Nora's hands tremble as she sets the pyrite against the flat face of the biface; her right sleeve shakes with her hand; her breath leaves dense short-lived vapor that dissipates rapidly. Nora says in a fast whisper: "Three. Getting closer." (no subtitles)
 2-4s: She strikes in a fast glancing stroke down along the flat face of the biface; the pyrite slips off the stone and no spark appears. Her shoulders jerk with the miss.
 4-6s: She strikes again the same way; only two or three tiny orange sparks jump from the contact point and die in the air before reaching the moss. Nora says through her teeth: "Come on—" (no subtitles)
 6-8s: Third strike, the same glancing stroke lengthwise along the flat face; a few tiny orange sparks fall straight onto the dusted moss; one small red glowing spot appears and a thin wisp of smoke rises straight up. She freezes, holding her breath.
@@ -352,7 +352,7 @@ Everything is already in place from the very first frame: Nora stands at the ver
 Shot: medium selfie; Nora's face and upper body in the centre third, the misty stream and the far bank behind her.
 [ID-LOCK]
 [HAIR]
-0-3s: Nora steps back onto the edge of the bank; the frozen mud cracks under her boot and the bank gives way; she slides backward down into the stream with a hard splash, the frame lurching down and sideways with her body; icy water surges up to her chest and sprays across the frame; her wolf-fur collar is splashed dark. Nora gasps sharply.
+0-3s: Nora steps back onto the edge of the bank; the frozen mud cracks under her boot and the bank gives way; she slides backward down into the stream with a hard splash, the frame lurching down and sideways with her body; icy water surges up to her chest and sprays across the frame; her golden-tan suede tunic is splashed dark. Nora gasps sharply.
 3-6s: Gasping from the cold shock, she grabs the exposed root with her free left hand and drags herself up the bank, her boots slipping on the mud; water streams off her golden-tan suede sleeves and her wide belt.
 6-8s: She kneels on the frosted bank, shaking hard. [WET] Her breath leaves dense short-lived vapor that dissipates rapidly. Nora says through chattering teeth: "Ten seconds in. Soaked." (no subtitles)
 [END-SELFIE]
@@ -370,120 +370,123 @@ Shot: medium shot; Nora from the knees up in the centre, the frozen birch behind
 [WET]
 [HAIR]
 0-3s: She grips the soaked end of her right sleeve with both hands and tries to wring it; her fingers are stiff and clumsy and slip off the wet suede; only a few drops fall onto the frost.
-3-6s: She shoves both hands into her armpits under the grey wolf-fur collar, shaking hard, her breath leaving dense short-lived vapor that dissipates rapidly. Nora says, fast and tense: "Wet clothes kill faster than cold." (no subtitles)
+3-6s: She shoves both hands into her armpits hugging her soaked suede tunic, shaking hard, her breath leaving dense short-lived vapor that dissipates rapidly. Nora says, fast and tense: "Wet clothes kill faster than cold." (no subtitles)
 6-8s: She pulls her left hand out and touches one frosted birch branch behind her: the frost is wet under her fingers; she pulls the hand back and stares at her stiff red fingers.
 [END-CLEAN]
 Audio: thin cold wind, the stream rushing, Nora's chattering teeth and fast breathing, a drop of water hitting the frost.
 ```
 
-### A1-03 · `duration: 8` · OTS · refs `["Nora","Nora Body","Leader","Old Woman","Strongest","Strongest Spear"]`
+### A1-03 · `duration: 8` · POV · refs `["Nora","Nora Body","Leader","Strongest","Strongest Spear"]`
 
 ```
-The lens sits at the end of Nora's outstretched right arm, completely outside the visible frame and never seen; her right arm stays extended toward the lens for the entire clip, and she never reaches toward, touches, covers, taps, or points at the lens. Only her left hand is free, and it stays empty. Handheld footage with natural wide-angle perspective, no exaggerated fisheye distortion, subtle hand shake.
-Setting: [SETTING-VALLEY] Behind her, the edge of a pine and birch wood on the valley side.
-Everything is already in place from the very first frame: Nora stands in the left third of the frame, close to the lens. About fifteen metres behind her, at the edge of the wood and half hidden behind tree trunks in shadow, stand exactly five Neanderthals: the Leader in the centre; the Strongest on the right holding exactly one long wooden spear upright in his right hand; the Old Woman on the left; one man with a white scar across his left eyebrow; one man with long black hair tied at the nape with leather. All five are visible from the first frame; nobody appears suddenly, nobody vanishes; there are no other people anywhere in the frame.
-Shot: over-the-shoulder selfie; Nora fills the left third, the five Neanderthals the right two-thirds.
+Handheld camera footage recorded from a low crouched hiding position at ground level, peeking through frosted pine boughs and limestone rocks; authentic handheld vlog camera with subtle nervous micro-jitters, organic hand tremors, and rapid shallow breathing shake; natural wide-angle perspective, no exaggerated fisheye distortion, no static tripod appearance.
+Setting: [SETTING-VALLEY] Frosted pine and birch woodland on the limestone valley floor. Frosted evergreen needles and rough twigs partially frame the foreground edges as the camera hides low to the ground.
+Everything is already in place from the very first frame: The Neanderthal hunters are already present at the tree line about ten to twelve metres away. On the right, the Strongest stands prominently holding exactly one long wooden fire-hardened spear upright in his hand; slightly behind him on the left, the Leader emerges among the tree trunks. Exactly the same figures remain in frame throughout; nobody pops in or disappears.
+Shot: low-angle stealth POV from concealment behind frosted pine branches, looking out at the tree line.
 [NEANDERTHAL]
-[ID-LOCK]
-[WET]
-Every Neanderthal's lips stay closed for the entire clip; the only moving mouth in the frame is Nora's.
-[HAIR]
-0-3s: A dry branch snaps loudly under the Strongest's foot; Nora jerks her head round over her left shoulder toward the sound, her ponytail swinging.
-3-6s: The five Neanderthals walk slowly out of the trees side by side toward her, the Strongest's spear held low, and stop about six metres behind her, staring; Nora turns her face back toward the lens, eyes wide, her wet golden-tan sleeve trembling.
-6-8s: Nora says in a fast whisper: "Don't run." (no subtitles) Then one second of silence; nobody moves.
-[END-SELFIE]
-Audio: the loud snap of a branch, footsteps crunching on frost, Nora's held breath, the stream far behind.
-```
-
-### A1-04 · `duration: 8` · OTS · refs `["Nora","Nora Body","Leader","Strongest","Old Woman","Strongest Spear"]`
-
-```
-The lens sits at the end of Nora's outstretched right arm, completely outside the visible frame and never seen; her right arm stays extended toward the lens for the entire clip, and she never reaches toward, touches, covers, taps, or points at the lens. Only her left hand is free, and it stays empty. Handheld footage with natural wide-angle perspective, no exaggerated fisheye distortion; the frame stays almost still because she is holding her breath.
-Setting: [SETTING-VALLEY]
-Everything is already in place from the very first frame: Nora stands in the left third, close to the lens. The Leader stands about three metres behind her on the right. Six metres behind him stand the Strongest holding exactly one long wooden spear in his right hand, the Old Woman, one man with a white scar across his left eyebrow, and one man with long black hair tied at the nape. Exactly five Neanderthals and Nora are present; there are no other people anywhere in the frame. Everyone stays in place except the Leader; nobody appears suddenly, nobody vanishes.
-Shot: over-the-shoulder selfie; Nora in the left third, the Leader in the right two-thirds, the group soft behind him.
-[NEANDERTHAL] The Leader is a broad man about thirty-five with a very heavy brow ridge, dark-brown skin and shaggy black shoulder-length hair, wearing a dark deer hide.
-[ID-LOCK]
-[WET]
-[HAIR]
-0-3s: The Leader walks forward to about one and a half metres from her shoulder and leans in, sniffing the air near her twice, his nostrils flaring; his lips stay closed. Nora stays completely still; only her eyes move toward him.
-3-5s: The Leader speaks a few short syllables in a gravelly, low-pitched male voice — short guttural sounds, consonant-heavy, no recognizable words. Nora stays silent while he speaks. All other Neanderthals keep their lips closed.
-5-8s: The Leader's lips close. Nora says quietly to the lens, deadpan: "No idea what he said. But that wasn't a question." (no subtitles) Her wet wolf-fur collar trembles with her shivering.
-[END-SELFIE]
-Audio: the Leader's sniffing, his gravelly guttural syllables, Nora's shaky breath, wind in the pines.
-```
-
-### A1-05 · `duration: 8` · SEL · refs `["Nora","Nora Body","Leader"]`
-
-```
-The lens sits at the end of Nora's outstretched right arm, completely outside the visible frame and never seen; her right arm stays extended toward the lens for the entire clip, and she never reaches toward, touches, covers, taps, or points at the lens. Only her left hand is free, and it hangs empty at her side. Handheld footage with natural wide-angle perspective, no exaggerated fisheye distortion, subtle hand shake from her shivering.
-Setting: [SETTING-VALLEY]
-Everything is already in place from the very first frame: Nora fills the centre of the frame from the chest up. The Leader stands close at her left side, his right hand already raised beside her left shoulder. No other person is in the frame. Everyone stays in place; nobody appears suddenly, nobody vanishes.
-Shot: close selfie; Nora's face and shoulders in the centre, her left shoulder seam and the Leader's hand in the left third, the Leader's face partly in the frame behind it.
-[NEANDERTHAL] The Leader is a broad man about thirty-five with a very heavy brow ridge, dark-brown skin and shaggy black shoulder-length hair, wearing a dark deer hide draped and tied with no seams.
-[ID-LOCK]
-[WET]
-The Leader's lips stay closed for the entire clip; the only moving mouth in the frame is Nora's.
-[HAIR]
-0-3s: The Leader pinches the wet suede at her left shoulder seam between his thumb and finger and slowly rubs the neat row of sinew stitches, frowning; cold water drips onto his fingers.
-3-6s: He looks down at the untied edge of his own draped hide, then back at her stitched seam; then his eyes move to her jaw, which is shaking.
-6-8s: He lets go and lowers his hand out of the frame with one closed-mouth grunt. Nora says, dry, through chattering teeth: "Yeah. Stitches. Still freezing." (no subtitles)
-[END-SELFIE]
-Audio: the soft squeak of wet suede under his fingers, water dripping, Nora's chattering teeth, one low grunt.
-```
-
-### A1-06 · `duration: 8` · SEL · refs `["Nora","Nora Body","Strongest","Strongest Spear","Leader","Cave Mouth"]`
-
-```
-The lens sits at the end of Nora's outstretched right arm, completely outside the visible frame and never seen; her right arm stays extended toward the lens for the entire clip, and she never reaches toward, touches, covers, taps, or points at the lens. Only her left hand is free, and it stays empty. Handheld footage with natural wide-angle perspective, no exaggerated fisheye distortion, with natural vertical bounce synchronized to each uphill step.
-Setting: [SETTING-CAVE] A narrow frosted path climbs the last few metres to the entrance.
-Everything is already in place from the very first frame: Nora walks uphill in the left third of the frame, the lens slightly ahead of her. Three to five metres ahead, the Leader, the Old Woman and two men walk up the path toward the cave. The Strongest already stands at the right side of the cave entrance holding exactly one long wooden spear in his right hand. Warm firelight glows inside the cave. Exactly five Neanderthals and Nora are present outside; nobody appears suddenly, nobody vanishes.
-Shot: walking selfie; Nora in the left third, the path and the cave entrance in the right two-thirds.
-[NEANDERTHAL]
-[ID-LOCK]
-[WET]
-Every Neanderthal's lips stay closed for the entire clip; the only moving mouth in the frame is Nora's.
-[HAIR]
-0-3s: The group walks into the cave one after another and disappears into the dark interior past the firelight; Nora keeps walking up after them, shivering, her wet belt and fur cuffs dripping.
-3-6s: As Nora reaches the entrance, the Strongest takes one step sideways across it in front of her, holding the spear across his body; she stops short and the frame stops with her.
-6-8s: He jerks his chin toward the dark wood down the slope, expressionless. Nora says, flat: "Okay. Outside. Got it." (no subtitles)
-[END-SELFIE]
-Audio: footsteps on frosted gravel, the crackle of the fire inside, Nora's shivering breath, wind.
-```
-
-### A1-07 · `duration: 8` · POV · refs `["Nora","Nora Body","Old Woman","Cave Mouth"]`
-
-```
-The view is Nora's own eyes; all recording gear is completely outside the visible frame, and her hands stay out of frame for the whole clip. Her face never appears. Natural wide-angle perspective, no exaggerated fisheye distortion; the view moves slowly like a person's eyes, with a slight sway from her shivering.
-Setting: [SETTING-CAVE]
-Everything is already in place from the very first frame: on the frost-whitened ground at the cave entrance, in the foreground, lies a line of large paw prints, each with four rounded toes and short blunt claw marks, bigger at the front feet than the back. About four metres inside, beside the fire, a Neanderthal man with a grey-streaked beard lies on hides, his left leg wrapped in hide stained dark; the Old Woman kneels beside him. Exactly two Neanderthals are in view; nobody appears suddenly, nobody vanishes.
-Shot: first the ground in the lower two-thirds, then the interior.
-[NEANDERTHAL] The Old Woman is small and slightly stooped with long grey hair and bright eyes.
-Both Neanderthals' lips stay closed for the entire clip.
-0-3s: The view looks down at the paw prints and slowly follows them toward the entrance.
-3-6s: The view rises to the injured man by the fire; he shifts on the hides and grimaces in silence, clutching his wrapped leg; the Old Woman presses a pad of moss against the dark stain.
-6-8s: The view drops back to one paw print near her feet. Nora's voice says, low and quiet: "Something bit him. Something that comes at night." (no subtitles)
+CRITICAL CONSTRAINTS (NO DIALOGUE & HIDING LOCK):
+STRICTLY NO DIALOGUE, NO WORDS, NO WHISPERING: Every character's lips stay firmly sealed and closed for the entire duration of the clip. Zero spoken words, no mouth movement. This is pure stealth and concealment. The camera remains hidden low behind the pine boughs, shaking slightly with terrified shallow breathing.
+0-3s: From the shadow of the frosted pine trees, the Neanderthals begin stepping forward; the Strongest, holding his wooden spear firmly, takes heavy, deliberate paces walking forward across the frozen moss directly toward the camera; the camera exhibits subtle nervous handheld micro-jitters as it films from low concealment behind the frosted branches.
+3-6s: The Neanderthals continue advancing steadily toward the camera, closing the distance step by step; the Strongest's broad muscular build and heavy brow ridge loom larger and clearer as he walks forward in a tense, cautious hunting gait, scanning the frosted undergrowth; the handheld framing subtly sways and trembles with terrified breathing.
+6-8s: The Strongest slows his forward stride to a cautious halt about three metres in front of the camera, standing tall and vigilant, eyes darting across the rocks and foliage; the Leader stops a pace behind him; everyone remains in place, alert; the camera stays trembling low in the brush; complete tense silence with lips tightly shut.
 [END-CLEAN]
-Audio: crackling fire, the injured man's strained breathing, wind at the entrance, Nora's low voice.
+Audio: crunch of frozen twigs and moss under heavy walking footsteps, low rustling of frosted pine needles, faint cold mountain wind, tense rapid breathing behind the lens. No speech, no dialogue.
+```
+
+### A1-04 · `duration: 8` · POV · refs `["Nora","Nora Body","Leader","Strongest","Strongest Spear"]`
+
+```
+Handheld camera footage recorded from a low, terrified defensive position on the ground, backed against a frozen limestone boulder; authentic handheld vlog camera with abrupt defensive jerks, nervous micro-jitters, and rapid shallow breathing shake; natural wide-angle perspective, no exaggerated fisheye distortion, no static tripod appearance. Nora's face never appears in the frame; only her trembling left forearm and sleeve are briefly visible as she braces against the ground.
+Setting: [SETTING-VALLEY] Frosted pine woodland on the limestone valley floor, frosted needles and frozen forest floor.
+Everything is already in place from the very first frame: The Leader stands three metres away behind the frosted pine branches, with the Strongest alert behind him holding exactly one long fire-hardened wooden spear. Exactly the same figures remain in frame throughout; nobody pops in or disappears.
+Shot: low-angle defensive POV looking up from the ground at the looming Neanderthal leader.
+[NEANDERTHAL] The Leader is a broad, heavily muscled man about thirty-five with a prominent heavy brow ridge, dark weathered skin, and shaggy shoulder-length dark hair, wearing an untailored draped deer hide.
+[ID-LOCK]
+[WET]
+CRITICAL CONSTRAINTS (SURVIVAL PANIC & NO NORA DIALOGUE):
+STRICTLY NO ENGLISH DIALOGUE, NO WORDS FROM NORA: Nora's mouth stays silent, breathing in sharp, panicked gasps behind the lens. Pure survival shock and cornered dread.
+0-3s: The Leader takes two heavy, aggressive strides forward and roughly shoves aside the frosted pine boughs with his bare left hand; needles snap and frost showers down; the camera jolts violently backward as Nora scrambles back against the frozen boulder in panic, her breath catching sharply.
+3-6s: The Leader's massive barrel-chested silhouette looms overhead, blocking the pale grey daylight; he crouches slightly, leaning down close to examine her with wide vigilant eyes under his heavy brow ridge, flaring his nostrils as he sniffs the air deeply twice, catching her strange scent and wet hide. The Strongest remains vigilant in the background with his wooden spear held ready.
+6-8s: The Leader's jaw tenses and he lets out a low, deep guttural warning rumble from his chest: a harsh consonant sound, lips closing firmly. The camera trembles violently in place as Nora holds her breath, paralyzed in fear against the cold rock. Zero English words spoken.
+[END-CLEAN]
+Audio: harsh crunch of snapping frozen pine branches, showering snow, sudden violent camera scuffle on frozen ground, heavy flared sniffing, deep guttural chest grunt from the Leader, Nora's fast panicked breathing behind the lens.
+```
+
+### A1-05 · `duration: 8` · POV · refs `["Nora","Nora Body","Leader"]`
+
+```
+Handheld camera footage recorded from a grounded defensive posture backed against the boulder; authentic handheld camera with organic tremors and shivering vibration; natural wide-angle perspective, no exaggerated fisheye distortion. Nora's face remains off-screen; her soaked left shoulder and upper arm in golden-tan suede are in the lower-left corner of the frame.
+Setting: [SETTING-VALLEY]
+Everything is already in place from the very first frame: Nora sits backed against the frozen rock; her soaked golden-tan suede left sleeve and shoulder seam frame the lower-left edge. The Leader crouches close in front of her, filling the right two-thirds of the frame, his rough weathered right hand already hovering beside her shoulder seam. No other person is in the frame.
+Shot: low-angle close-up POV focusing on the Leader's weathered hands examining Nora's sewn shoulder seam, with the Leader's intense weathered face framed close above.
+[NEANDERTHAL] The Leader is a broad man about thirty-five with a very heavy brow ridge, dark-brown skin, and shaggy black hair, wearing an untailored draped deer hide tied with raw thongs.
+[ID-LOCK]
+[WET]
+The Leader's lips stay closed throughout; only his low grunts and Nora's quiet chattering whisper are heard.
+0-3s: The Leader reaches out his thick, dirt-stained right hand and firmly pinches the wet golden-tan suede at her shoulder seam between his thumb and thick forefinger, tugging gently; he rubs his thumb back and forth across the neat, straight row of fine sinew stitches; icy stream water squeezes from the wet suede and drips visibly onto his weathered fingers.
+3-6s: He frowns deeply in curiosity, glancing down at his own rough, untailored hide with its untidy tied thongs, then looks back at her precision stitching; his gaze slowly lifts to look directly past the lens toward her shivering face, seeing her jaw chattering uncontrollably from the freezing cold.
+6-8s: Realizing she is an unarmed, soaked, shivering stranger posing no threat, he releases her sleeve with a dismissive chest grunt, turns his broad torso away, and strides heavily toward the valley path; the camera trembles as Nora releases a long shaky breath of dense vapor. Nora whispers through chattering teeth: "They're not killing me... but I'm freezing." (no subtitles)
+[END-CLEAN]
+Audio: the wet squeak of pinched soaked suede, distinct water droplets hitting frozen earth, a gruff dismissive Neanderthal grunt, heavy footsteps stepping away over frost, Nora's shaky exhaled breath and chattering whisper.
+```
+
+### A1-06 · `duration: 8` · OTS · refs `["Nora","Nora Body","Strongest","Strongest Spear","Leader","Cave Mouth"]`
+
+```
+Handheld tracking footage filmed from behind Nora, following closely behind her as she struggles uphill toward the limestone cave entrance; authentic handheld camera with organic vertical footstep bob and subtle shivering jitter; natural wide-angle perspective, no exaggerated fisheye distortion, no static tripod look.
+Setting: [SETTING-CAVE] A steep frosted stony path climbing up the limestone slope toward the mouth of a low, wide tunnel-like cave in pale yellow limestone high on the valley side, about 51,000 years ago, in a cold glacial winter; frost-whitened earth and loose scree; warm orange firelight and faint woodsmoke drift from within the dark cave mouth. Nothing modern exists anywhere.
+Everything is already in place from the very first frame: Nora is in the lower foreground seen from behind and three-quarters angle, struggling uphill. Four to five metres ahead of her up the path, the Leader and other Neanderthal hunters stride into the glowing cave entrance. The Strongest stands beside the cave threshold on the right, gripping exactly one long wooden fire-hardened spear upright. Exactly five Neanderthals and Nora are present; nobody appears suddenly, nobody vanishes.
+Shot: over-the-shoulder handheld tracking shot from behind Nora, looking past her hunched shivering back up the steep path toward the cave entrance.
+[NEANDERTHAL] The Strongest is a very broad, muscular Neanderthal man with a heavy brow ridge and bare muscular shoulders, clad in a rough tied deer pelt.
+[ID-LOCK]
+[WET]
+[HAIR]
+CRITICAL CONSTRAINTS (COLD SHIVERING & BEHIND TRACKING):
+Nora is seen from behind and three-quarters angle; both of her hands are clutching her shivering arms and chest tightly for warmth; both hands are completely empty. She is shivering violently from severe hypothermia and freezing shock, teeth chattering visibly.
+0-3s: Shivering violently with hunched, shivering shoulders, Nora stumbles desperately up the frosted stony incline toward the warm firelight glowing inside the cave; she clutches her wet arms tightly against her chest, her soaked golden-tan suede tunic dripping icy water, her breath puffing out in thick, rapid clouds of white vapor.
+3-6s: As Nora reaches the threshold of the cave mouth, the Strongest takes a sudden, heavy stride sideways across the entrance, thrusting his long fire-hardened wooden spear horizontally across her path to block her; Nora recoils backward in shock and fear, stumbling back two steps onto the frozen scree.
+6-8s: Towering across the entrance with his spear held horizontally, the Strongest frowns sternly down at her; Nora stands trapped outside in the bitter wind, clutching herself tightly with trembling hands and shivering violently from head to toe; looking desperately up past the spear toward the warm firelight, Nora stammers through trembling lips and chattering teeth: "Help me... please... It's too cold..." (clear spoken English with weak, exhausted shivering voice, native lip sync matching voice).
+[END-CLEAN]
+Audio: crunching boot footsteps on frosted gravel, howling icy valley wind, crackle of the campfire inside the cave, sudden scraping thud of the wooden spear blocking the entrance, Nora's chattering teeth and exhausted shivering whisper: "Help me... please... It's too cold..." 
+```
+
+### A1-07 · `duration: 8` · POV/OTS · refs `["Nora","Nora Body","Strongest","Strongest Spear","Old Woman","Cave Mouth"]`
+
+```
+Handheld camera footage recorded from Nora's trembling first-person perspective standing just outside the cave threshold on the steep frosted limestone slope; authentic handheld camera with subtle shivering vibration and terrified shallow breathing shake; natural wide-angle perspective, no exaggerated fisheye distortion, no static tripod look. Nora's face remains strictly off-screen behind the camera for the entire clip; only her soaked golden-tan suede left forearm and trembling fist clutching her chest are partially visible at the bottom-left edge.
+CRITICAL CAMERA DISTANCE & COMPOSITION LOCK:
+The camera maintains a strictly stationary standing distance of 1.8 metres outside the cave entrance throughout all 8 seconds; strictly NO camera rushing forward, NO gliding into the cave interior, NO zooming, NO sudden perspective changes. The Strongest remains in the frame throughout all 8 seconds, standing immovable in the cave entrance holding his spear horizontally across the threshold. Through the entrance opening, in the warm firelit cave background 4 metres inside, an injured Neanderthal hunter lies on rough hides beside the sunken stone hearth with his leg wrapped in hide bindings, and the Old Woman kneels beside him tending to his leg. Both the Strongest in the foreground and the cave interior in the background remain visible simultaneously in a single stable shot with deep focus.
+Setting: [SETTING-CAVE] A steep frosted stony path directly outside the threshold of a low, wide tunnel-like cave in pale yellow limestone high on the valley side, about 51,000 years ago, in a cold glacial winter; frost-whitened scree and frozen earth outside; warm flickering orange campfire and drifting woodsmoke illuminating the pale limestone walls inside. Nothing modern exists anywhere.
+Shot: low-angle confrontation POV looking past the horizontal wooden spear toward the Strongest's stern face, revealing the warm cave interior and injured hunter in the background.
+[NEANDERTHAL] The Strongest is a very broad, muscular Neanderthal man with a heavy brow ridge and bare muscular shoulders, clad in a rough tied deer pelt. The Old Woman is small and slightly stooped with long untidy grey hair, tending the fire and injured man.
+[ID-LOCK]
+[WET]
+CRITICAL CONSTRAINTS (TENSE STANDOFF & COLD SHIVERING):
+The Strongest's lips stay closed throughout; he only makes low guttural grunts. Nora speaks through chattering teeth in an exhausted, shivering whisper from off-screen behind the lens.
+0-3s: At a fixed distance of 1.8 metres outside the threshold, the trembling camera looks at the Strongest who stands broad and uncompromising across the cave entrance, his long fire-hardened wooden spear held rigidly across her chest level; his jaw hardens and he lets out a low, stern warning chest grunt ("Hrr-gakh") keeping Nora back; Nora's hand shivers violently at the bottom edge, her breath pluming in white clouds.
+3-6s: The camera stays at the exact same distance outside without moving; looking past the Strongest's shoulder, in the firelit background inside the cave, the injured hunter groans and shifts in pain on his pelts as the Old Woman presses moss onto his wrapped leg; the Strongest holds his ground firmly in the foreground, his stern gaze locked on Nora.
+6-8s: The Strongest thuds the wooden butt of his spear down onto the stone threshold, ordering her away with a stern downward jerk of his chin; the camera recoils slightly half a step backward with Nora's trembling retreat; Nora whispers through violently chattering teeth from off-screen behind the camera: "They're locked down... Someone in there was attacked." (exhausted shivering whisper delivery, breath clouds dissipating rapidly).
+[END-CLEAN]
+Audio: howling icy valley wind, heavy crunch of gravel under boots, dull thud of the spear butt striking stone, deep guttural Neanderthal chest grunt, crackle of the campfire inside, Nora's chattering teeth and trembling whisper: "They're locked down... Someone in there was attacked."
 ```
 
 ### A1-08 · `duration: 8` · OTS · refs `["Nora","Nora Body","Leader","Strongest","Cave Mouth"]`
 
 ```
-The lens sits at the end of Nora's outstretched right arm, completely outside the visible frame and never seen; her right arm stays extended toward the lens for the entire clip, and she never reaches toward, touches, covers, taps, or points at the lens. Only her left hand is free, and it stays empty. Handheld footage with natural wide-angle perspective, no exaggerated fisheye distortion, subtle hand shake.
-Setting: [SETTING-CAVE]
-Everything is already in place from the very first frame: Nora stands just outside the entrance in the left third of the frame. The Leader stands about one and a half metres in front of her on the right, holding exactly one grey flint biface, an oval stone flaked on both faces with no handle, in his left hand and exactly one brassy gold lump of pyrite in his right hand. The Strongest stands in the cave entrance behind him holding exactly one long wooden spear. There is no metal anywhere. Exactly two Neanderthals and Nora are present; nobody appears suddenly, nobody vanishes.
-Shot: over-the-shoulder selfie; Nora in the left third, the Leader in the right two-thirds, the firelit cave entrance behind him.
-[NEANDERTHAL] The Leader is a broad man about thirty-five with a very heavy brow ridge, dark-brown skin and shaggy black shoulder-length hair.
+The lens sits at the end of Nora's outstretched right arm, completely outside the visible frame and never seen; her right arm stays extended toward the lens for the entire clip, and she never reaches toward, touches, covers, taps, or points at the lens. Only her left hand is free, and it stays empty. Handheld footage with natural wide-angle perspective, no exaggerated fisheye distortion, subtle hand shake from shivering.
+Setting: [SETTING-CAVE] A steep frosted stony path directly outside the mouth of a low, wide limestone cave, about 51,000 years ago; flat overcast winter daylight outside, frost-whitened scree; warm flickering orange campfire and woodsmoke inside the cave. Nothing modern exists anywhere.
+Everything is already in place from the very first frame: Nora stands stranded just outside the cave entrance on the frosted slope in the left third of the frame, clutching herself in freezing cold daylight. The Leader stands about one and a half metres in front of her on the right, holding exactly one grey flint biface in his left hand and exactly one brassy gold lump of pyrite in his right hand. Right behind the Leader, the Strongest stands vigilantly guarding the cave threshold, holding his long fire-hardened wooden spear upright. Exactly two Neanderthals and Nora are present; nobody appears suddenly, nobody vanishes.
+Shot: over-the-shoulder selfie; Nora in the left third, the Leader in the right two-thirds, the firelit cave entrance and Strongest behind him.
+[NEANDERTHAL] The Leader is a broad man about thirty-five with a very heavy brow ridge, dark-brown skin and shaggy black shoulder-length hair, wearing an untailored draped deer pelt.
 [ID-LOCK]
 [WET]
-Both Neanderthals' lips stay closed for the entire clip; the only moving mouth in the frame is Nora's.
 [HAIR]
-0-3s: The Leader strikes the pyrite once in a fast glancing stroke down along the flat face of the biface, lengthwise; only a few tiny, short-lived orange sparks jump and die before they touch the ground; there is no shower of sparks.
-3-6s: He drops both stones onto the frost at her feet, where they bounce once and lie still. Then he points slowly with his right hand: at the stones, then into the cave at the fire, then at Nora, then down the slope at the dark wood.
-6-8s: Nora looks from the stones to the dark wood and back to the lens, her wet fur collar shaking. Nora says, low and fast: "My own fire. Or I sleep out there." (no subtitles)
+Both Neanderthals' lips stay closed for the entire clip; the only moving mouth in the frame is Nora's.
+0-3s: In the overcast winter daylight, the Leader strikes the pyrite once in a fast glancing stroke down along the flat face of the biface, lengthwise; only a few tiny, short-lived orange sparks jump and die before touching the ground; there is no shower of sparks.
+3-6s: He drops both stones onto the frost at her feet, where they bounce once and lie still. Then he points slowly and deliberately with his thick right hand: at the stones on the frost, then into the cave at the warm fire, then at Nora, then down the slope at the freezing bare woodland in the valley below.
+6-8s: Nora looks down at the stones, glances fearfully down at the vast freezing woods below, and turns back to the lens, her soaked golden-tan suede tunic and shoulders shivering violently from hypothermia shock. Nora says, low and fast through chattering teeth: "My own fire. Or I sleep out there." (no subtitles)
 [END-SELFIE]
-Audio: the sharp click of stone on stone, the soft thud of stones on frost, the crackle of the fire inside, wind.
+Audio: sharp click of stone on stone, soft thud of stones on frost, crackle of the campfire inside, icy mountain wind, Nora's chattering teeth and shivering voice.
 ```
 
 ### A1-09 · `duration: 8` · FIX · refs `["Nora","Nora Body","Leader","Strongest","Cave Mouth"]`
@@ -519,7 +522,7 @@ The Old Woman's lips stay closed for the entire clip; the only moving mouth in t
 [HAIR]
 0-3s: The Old Woman walks slowly out of the entrance to Nora and crouches beside the piece of bark.
 3-6s: She places exactly four small tufts of dry moss in a row on the bark, one by one, without looking at Nora; the count stays exactly four.
-6-8s: She pushes herself up with a hand on her knee and walks back into the cave without a sound. Nora looks at the four tufts, then at the lens; her wet fur cuff trembles. Nora says quietly: "Okay." (no subtitles) Then silence.
+6-8s: She pushes herself up with a hand on her knee and walks back into the cave without a sound. Nora looks at the four tufts, then at the lens; her soaked suede sleeve trembles. Nora says quietly: "Okay." (no subtitles) Then silence.
 [END-SELFIE]
 Audio: soft footsteps on frost, the fire crackling inside, wind, one long breath from Nora.
 ```
@@ -600,7 +603,7 @@ Shot: close selfie; Nora's face and her raised left hand fill the frame.
 [HAIR]
 0-3s: She shakes violently; her lips have turned faintly bluish and her jaw chatters; her breath leaves dense short-lived vapor that dissipates rapidly.
 3-6s: She looks down at her stiff, red left hand and tries to close it into a fist; the fingers bend only halfway and stop. Nora says, fast, through her teeth: "Can't feel my fingers. That's stage one." (no subtitles)
-6-8s: She tucks the hand into her armpit under the wet wolf-fur collar and looks back at the lens, eyes watering from the cold.
+6-8s: She tucks the hand into her armpit against her wet suede tunic and looks back at the lens, eyes watering from the cold.
 [END-SELFIE]
 Audio: chattering teeth, fast shallow breathing, wind across the slope.
 ```
@@ -669,7 +672,7 @@ Setting: [SETTING-CAVE]
 Everything is already in place from the very first frame: Nora kneels outside the entrance, close to the lens, from the chest up; just below the bottom of the frame burns her own small fire of twigs, its warm orange glow lighting her face and her raised left hand from below. No other person is in the frame; nothing appears suddenly, nothing vanishes.
 Shot: close selfie; Nora's face in the centre, her left hand held palm-down over the unseen fire in the lower left.
 [ID-LOCK]
-The suede is still damp and darker at the sleeves and the hem, and thin steam rises from her left sleeve and fur cuff in the heat; the colour stays golden-tan and the shape never changes.
+The suede is still damp and darker at the sleeves and the hem, and thin steam rises from her left sleeve and smooth suede cuff in the heat; the colour stays golden-tan and the shape never changes.
 [HAIR]
 0-3s: She holds her left hand over the fire, fingers spread; her shivering is still strong; thin steam drifts up from the wet sleeve.
 3-6s: Her shivering eases; she closes her eyes for a moment and her lips tremble as if she might cry, but she says nothing.
@@ -743,11 +746,11 @@ Phần lớn là **CUT cứng cùng bối cảnh**: tư thế cuối clip A kh�
 | EST-01 → A1-01 | Chấm vàng bên bờ trái | Nora đứng mép bờ | CUT. J-cut tiếng suối vào sớm 0.5s |
 | A1-01 → A1-02 | Quỳ run trên bờ | Quỳ run, máy đặt trên tảng đá | CUT, match on action (cùng tư thế quỳ). Cắt bỏ 1s đầu A1-02 |
 | A1-02 → A1-03 | Nhìn bàn tay đỏ | Đứng, quay lưng về rừng | CUT. Âm cành gãy của A1-03 vào sớm 0.3s, đè lên cuối A1-02 |
-| A1-03 → A1-04 | Im lặng, sáu người cách 6 m | Thủ Lĩnh cách 3 m | CUT (jump ngắn thời gian, cùng góc) |
-| A1-04 → A1-05 | Câu thoại, run | Tay Thủ Lĩnh đã ở vai áo | CUT, cận hơn |
-| A1-05 → A1-06 | Ông buông tay | Đi lên dốc theo nhóm | CUT |
-| A1-06 → A1-07 | Bị chặn ở cửa | POV nhìn xuống dấu chân | CUT, match on action: ánh mắt cô hạ xuống đất |
-| A1-07 → A1-08 | POV một dấu chân | Thủ Lĩnh trước mặt cầm hai viên đá | CUT |
+| A1-03 → A1-04 | Dừng cách 3m nhìn khóa lùm cây | Thủ Lĩnh bước sập tới gạt cành thông | CUT, match on action: cành thông bị gạt, Nora giật lùi tự vệ |
+| A1-04 → A1-05 | Tiếng gằn kiểm tra, nín thở tựa đá | Tay Thủ Lĩnh thò vào véo vai áo | CUT, cận cảnh tiếp xúc vật lý & đường may |
+| A1-05 → A1-06 | Thủ Lĩnh quay đi, Nora thì thầm | Nora lồm cồm đứng dậy bám theo lên dốc | CUT, nhảy thời gian ngắn (cô hiểu phải bám theo để tìm hơi ấm) |
+| A1-06 → A1-07 | Bị chặn ngang bằng giáo, van xin | Người Mạnh Nhất gác giáo dằn mặt, Nora nhìn qua cán giáo thấy người bị thương đẫm máu | CUT, match on action: Nora lùi lại, nhìn vào trong hang |
+| A1-07 → A1-08 | Nora thì thầm "They're locked down...", Thủ Lĩnh bước ra | Thủ Lĩnh trước mặt cầm hai viên đá, Người Mạnh Nhất gác sau | CUT, match on action: Thủ Lĩnh đối diện Nora |
 | A1-08 → A1-09 | Nhìn rừng tối | Quỳ với hai viên đá | CUT, nhảy thời gian ngắn |
 | A1-09 → A1-10 | Bốn người vào hang | Nora ngồi, Người Già trong cửa | CUT |
 | A1-10 → A2-01 | "Okay." + im lặng | Người Già ngồi cạnh làm mẫu | CUT |

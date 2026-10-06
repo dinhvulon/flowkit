@@ -45,12 +45,12 @@ Sau đó là **EST-01** (drone, **6s**, `51,000 YEARS AGO`): bình minh, sương
 
 1. **HOUR 0.** Nora xuất hiện bên dòng suối, trượt xuống bờ băng, nước ngập tới hông. Leo lên, run. *"Ten seconds in. Soaked."*
 2. Cố vắt áo, tay tê, hơi thở thành khói. Sương giá trên mọi thứ. Không có gì để nhóm lửa.
-3. Cành gãy. 6 Neanderthal bước ra, nhìn chằm chằm. *"Don't run."* (silence beat)
-4. Thủ Lĩnh ngửi không khí, nói vài âm tiết. *"No idea what he said. But that wasn't a question."* (mirror với Act 5)
-5. Thủ Lĩnh véo tay áo ướt của cô, miết vải, nhìn cô run. Lần tiếp xúc đầu: thấy lạ, nhưng tấm vải không giữ ấm.
-6. Theo nhóm tới hang: lửa cháy bên trong. Nora bước tới, **Người Mạnh Nhất chắn ngang cửa hang**, hất cằm về phía rừng.
-7. Ngay cửa hang: một thợ săn nằm cạnh lửa, chân băng da có vết cắn, dấu chân linh cẩu in trên sương giá. *"Something bit him. Something that comes at night."* (**gieo linh cẩu**)
-8. Thủ Lĩnh đánh mẫu một nhát pyrite ra tia lửa, thả hai viên đá xuống chân cô, chỉ: đá → lửa trong hang → cô → bóng rừng. **`MISSION: MAKE FIRE BEFORE NIGHTFALL`** *"My own fire. Or I sleep out there."*
+3. Cành gãy. Nora ngồi thụp nấp sau lùm thông. Thợ Săn cầm giáo và Thủ Lĩnh sải bước tới cách 3m nhìn khóa vào lùm cây. (POV thấp lẩn trốn)
+4. Thủ Lĩnh bước sập tới gạt mạnh cành thông. Nora giật lùi tự vệ đập lưng vào đá. Thủ Lĩnh cúi sát ngửi mạnh, gằn giọng kiểm tra. (POV góc thấp hoảng sợ)
+5. Thủ Lĩnh thò tay véo vai áo ướt của Nora, miết đường chỉ gân may, thấy cô run rẩy vô hại nên buông tay quay đi. Nora thì thầm: *"They're not killing me... but I'm freezing."*
+6. Nora lồm cồm đứng dậy bám theo nhóm lên dốc đá tìm hơi ấm hang lửa. Vừa tới ngưỡng cửa, **Người Mạnh Nhất bước sập ngang chắn giáo**, hất cằm đuổi về phía rừng. *"Okay. Outside. Got it."*
+7. Ngay cửa hang: Người Mạnh Nhất chắn giáo không cho vào. Nora nhìn qua cán giáo thấy người thợ săn nằm cạnh lửa, chân quấn băng sẫm màu vì thú cắn, Người Già đắp rêu. Nora nhận ra họ đang phòng thủ cao độ: *"They're locked down... Someone in there was attacked."* (**gieo thợ săn bị thương & thú dữ**); Thủ Lĩnh bước ra cửa hang.
+8. Thủ Lĩnh đánh mẫu một nhát pyrite ra tia lửa, thả hai viên đá xuống chân cô, chỉ: đá → lửa trong hang → cô → rừng thông giá buốt dưới thung lũng. **`MISSION: MAKE FIRE BEFORE NIGHTFALL`** *"My own fire. Or I sleep out there."*
 9. FIXED CAM: cô đánh kiểu que mồi thép, tia rơi vào đất lạnh. Nhóm quay vào trong, bỏ cô ở ngoài.
 10. Người Già đi ra, đặt 4 nhúm rêu khô trước mặt cô, quay vào. *"Okay."* (silence)
 
@@ -67,7 +67,7 @@ Sau đó là **EST-01** (drone, **6s**, `51,000 YEARS AGO`): bình minh, sương
 7. Khói → cô cúi thổi → **lửa nhỏ của riêng cô**, ngoài cửa hang.
 8. Nora hơ tay, run rẩy, gần khóc. *(không thoại)*
 9. Thủ Lĩnh nhìn ngọn lửa, bước sang một bên, hất đầu về phía trong: cô được vào hang.
-10. Trong hang: giá treo thịt trống, Đứa Bé gặm một khúc xương đã sạch. *"No meat. I haven't eaten since I got here."* (**nhu cầu mới**)
+10. Trong hang: giá treo thịt trống, Thợ Săn C gặm một khúc xương đã sạch. *"No meat. I haven't eaten since I got here."* (**nhu cầu mới**)
 11. Người Già cuộn than hồng vào bọc vỏ cây, đưa cho Thủ Lĩnh, ấn tay ông: cầm lỏng. Nora nhìn. *"Fire travels with them. Don't crush it."* (**gieo bọc than**)
 
 ## ACT 3 — "THE HUNT" | H3–H8 | 3:02–5:06 | EST-02 + 15 clip
@@ -81,7 +81,7 @@ Sau đó là **EST-01** (drone, **6s**, `51,000 YEARS AGO`): bình minh, sương
 5. Người Mạnh Nhất phóng giáo theo, trúng một con, nhưng nó vẫn chạy vào rừng. Anh quay lại nhìn Nora. *"That was me. That was all me."*
 6. Vệt máu đỏ trên sương trắng, kéo dài qua thung lũng. Cả nhóm lần theo, không ai nói với cô.
 7. Lần dấu: bóng cây dài dần, ánh nắng thấp (thời gian trôi trên hình). *"Every hour we track, we lose light."*
-8. Đứa Bé đi cạnh cô, chỉ một giọt máu cô bỏ sót. (quan hệ: đứa trẻ giỏi hơn cô)
+8. Người Mạnh Nhất đi cạnh cô, chỉ một giọt máu cô bỏ sót. (quan hệ đồng hành săn)
 9. **H7:** con hươu nằm chết trong bụi rậm. Ánh sáng tắt nhanh.
 10. Xẻ vội: Thủ Lĩnh đưa dao cho cô, chỉ một đùi, chỉ mặt trời đang xuống. **Mini-goal**: kịp trước khi tối. Người Mạnh Nhất chỉnh tay cô một lần. *"Better. Not good. But better."*
 11. Không mang hết được: hai người lăn đá đè lên phần lớn con hươu (**kho thịt**). Người Mạnh Nhất buộc gói thịt, ném cho cô vác.
@@ -93,7 +93,7 @@ Sau đó là **EST-01** (drone, **6s**, `51,000 YEARS AGO`): bình minh, sương
 ## ACT 4 — "HYENAS" | H8–H11 | 5:06–7:06 | 14 clip + EST-03 + master
 **Câu hỏi:** *Can Nora fix what she broke before the hyenas take everything?*
 **Hậu quả:** mất kho thịt = đói nhiều ngày, và có người bị cắn như người thợ săn ở Act 1.
-**Khóa:** đúng 7 Neanderthal + Nora (Người Già, Đứa Bé và người bị thương ở lại).
+**Khóa:** đúng 7 Neanderthal + Nora (Người Già và Người Bị Thương ở lại).
 
 1. Đêm. Thủ Lĩnh không ăn, đứng ở cửa hang. Tiếng whoop dưới thung lũng, từ phía kho thịt. (lấp H8 → H10)
 2. Nora nhìn đống thịt mang về, nhìn 9 người. *"That's two days of food. The rest is down there. I led them to it."*
@@ -118,7 +118,7 @@ Sau đó là **EST-01** (drone, **6s**, `51,000 YEARS AGO`): bình minh, sương
 3. **HOUR 20.** Sao qua cửa hang, rồi bọc than trong tay cô. *"Fifty thousand years."* … *"And the fire held."*
 4. **HOUR 24.** Bình minh, cả nhóm thức dậy. *"Everyone's alive. Time to go."*
 5. *(4s)* Tiếng chân nhỏ chạy theo.
-6. Đứa Bé đặt cục pyrite vào tay cô, chạy vào hang.
+6. Người Già đặt cục pyrite của chính bà vào tay cô, gập ngón tay cô lại rồi chậm rãi về hang.
 7. Nora nhìn pyrite, nhìn hang. **CUT ĐEN.**
 
 ---
@@ -153,9 +153,9 @@ H0 (A1 #1) · H3 (A3 #1) · H8 (A3 #15) · H10 (A4 #4) · H12 (A5 #1) · H20 (A5
 | **Mới** | Rơi xuống suối (rét), bị chặn ở cửa hang, người thợ săn bị cắn, rét làm tay hỏng, cảnh săn thật và lỗi của Nora, vệt máu, kho thịt nhiều ngày, Nora tự nhận đi, arc của Người Mạnh Nhất (chắn → trao đuốc → đưa thịt) |
 
 ## Nhân vật (thay đổi so với v4)
-10 Neanderthal: 6 người ở C03 (Thủ Lĩnh, Người Già, Người Mạnh Nhất, Đứa Bé, Người A, Người B), Người Bị Thương (đã ở hang), 3 thợ săn C/D/E (ở hang, cùng đi săn).
+9 Neanderthal: 5 người ở C03/A1-03 (Thủ Lĩnh, Người Già, Người Mạnh Nhất, Người A, Người B), Người Bị Thương (đã ở hang), 3 thợ săn C/D/E (ở hang, cùng đi săn).
 - Đêm Act 4 có 7 người đi: Thủ Lĩnh, Người Mạnh Nhất, A–E.
-- Người Già, Đứa Bé và Người Bị Thương ở lại.
+- Người Già và Người Bị Thương ở lại.
 - Người Bị Thương cần thêm dấu nhận diện: chân trái băng da, nằm cạnh lửa.
 
 Câu thoại "Eight people" vẫn khớp: 7 Neanderthal + Nora.
