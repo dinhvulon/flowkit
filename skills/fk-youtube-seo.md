@@ -368,6 +368,10 @@ strait of hormuz, iran navy, us navy, oil tanker escort, hormuz shield
 
 ## Step 7: Generate TIMESTAMPS
 
+> [!IMPORTANT]
+> **Time-travel / POV vlog: BỎ QUA bước này (user chốt 2026-10-06).** Không gắn timestamp hay chapter vào description, và bỏ dòng `⏱️ Timestamps` ở Zone 2 cùng mục `⏱️ TIMESTAMPS` ở Step 8. Lý do: truyện được dựng theo cold open, countdown và payoff (`story-engine.md`), nên nếu có chapter, người xem sẽ nhảy thẳng tới cao trào và giảm thời gian xem. Chapter là tùy chọn theo [Video chapters](https://support.google.com/youtube/answer/9884579), không phải yêu cầu chính sách. YouTube vẫn có thể **tự tạo chapter**, nên nhắc user bỏ tick "Allow automatic chapters" trong Studio (xem checklist Step 8).
+> Các niche khác (quân sự, tài liệu…) vẫn làm bước này. Quy định của chapter: mốc đầu là `00:00`, có ít nhất 3 mốc theo thứ tự tăng dần, mỗi chapter dài ít nhất 10 giây.
+
 Auto-generate from scene data:
 
 ```python
@@ -451,6 +455,16 @@ Print each section with clear separators so they can copy individual parts.
     hoặc đình chỉ khỏi YPP. (Rule D)
   □ Disclaimer hư cấu đã có ở cuối description (Rule A). Nó không thay thế bước trên.
   □ Series: tập này có mạch truyện và kết khác các tập trước (Rule E).
+  □ Audience → "No, it's not made for kids". Video có bạo lực/chủ đề người lớn
+    nên thuộc nhóm "general audience" (support.google.com/youtube/answer/9528076).
+  □ (POV vlog) Bỏ tick "Allow automatic chapters" (Show more → Advanced),
+    hoặc tắt luôn cho mọi video trong Settings → Upload defaults → Advanced settings.
+  □ Thumbnail: mặt + mối nguy là trọng tâm. Ngực/khe ngực KHÔNG được là trọng tâm,
+    không có vết thương/máu cận cảnh, và mối nguy trên thumbnail phải xuất hiện
+    trong video. Nếu vi phạm, thumbnail có thể bị gỡ hoặc video bị giới hạn độ
+    tuổi (support.google.com/youtube/answer/9229980).
+  □ Title/thumbnail không chứa chửi thề. Trong video, chửi thề đã bíp vẫn
+    được đủ quảng cáo; đưa lên title/thumbnail thì bị hạn chế quảng cáo.
 ```
 
 ## Step 9: Save backup (optional)

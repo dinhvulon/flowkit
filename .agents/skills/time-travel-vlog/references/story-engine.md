@@ -94,6 +94,16 @@ Soát trước khi đưa user review:
 - **Số người khớp ở mọi clip.** Ghi tổng số người của nhóm và ai đi, ai ở lại trong bảng nhân vật. Câu thoại có con số ("Eight of us") phải khớp.
 - **Hướng của mối nguy khớp** giữa các clip (tiếng từ phía đông thì bóng cũng tới từ phía đông).
 
+## 2d. Khóa bối cảnh sinh tồn & Chống mâu thuẫn hậu cảnh (user chốt 2026-10-06)
+
+Khi câu chuyện đặt nhân vật vào tình thế thiếu hụt (rét buốt, đói, khát, cô lập ngoài trời), **HẬU CẢNH TUYỆT ĐỐI KHÔNG ĐƯỢC CÓ THỨ CUNG CẤP NGUỒN LỰC ĐÓ**:
+- **Tránh "Đống lửa thần" phá hỏng stakes sinh tồn:** Khi Nora bị đuổi ra ngoài hang ngồi co ro chịu rét trên sườn dốc băng giá để học tạo lửa, mặt đất bên ngoài hang và hậu cảnh xung quanh **HOÀN TOÀN KHÔNG CÓ BẤT KỲ ĐỐNG LỬA NÀO** (`STRICTLY NO BACKGROUND FIRE OUTSIDE`). Nếu AI tự ý vẽ thêm một đống lửa trại rực rỡ ở cửa hang hay sau lưng nhân vật, stakes sống còn sẽ sụp đổ ngay lập tức: khán giả sẽ hỏi *"Tại sao cô ấy phải run rẩy đánh lửa đến tím tái trong khi ngay sau lưng có bếp lửa ấm áp?"*.
+- **Mặt đất và cửa hang chân thực:** Sân sỏi ngoài hang nơi vlogger ngồi phải là sỏi đá phủ sương giá lạnh lẽo (`freezing cold bare gravel`), bên trong vòm hang chỉ là bóng tối lạnh lẽo hoặc chỉ có làn khói mảnh từ xa bên trong hang sâu.
+- **Ràng buộc đối kháng mạnh mẽ trong prompt:** Trong mọi clip nhân vật chịu rét/cô lập, bắt buộc có khối:
+  ```
+  STRICTLY NO FIRE OUTSIDE (CRITICAL PLOT CONSTRAINT): There is strictly NO fire, NO flames, NO campfire, NO burning logs, NO glowing embers, and NO stone hearth on the ground outside. The ground outside the cave where Nora sits is freezing, frosted gravel with strictly ZERO open flames and ZERO campfires. Nora is freezing in the cold because she has NO fire.
+  ```
+
 ## 3. Công thức 5 Act, mỗi Act đúng 1 câu hỏi lớn
 
 Người xem luôn phải biết "**mình đang chờ câu trả lời cho cái gì?**". Không để nhiều mục tiêu chạy song song.
@@ -181,6 +191,29 @@ Vlogger phải thất bại thật và phải **học từ người bản địa
 **Quy trình vật lý phải khóa từng bước.** Tạo lửa, mang than, mài, đan, nấu… đều phải có các bước trung gian thật trong prompt (tạo lửa: đánh → vài tia nhỏ → mồi âm ỉ một chấm đỏ → khói mảnh → cúi thổi nhẹ → vài giây sau mới có ngọn lửa nhỏ). Model mặc định cho "mưa tia lửa" và "lửa bùng ngay"; người xem nào từng làm thật đều thấy giả. Viết câu khóa một lần trong script (mục *Khóa vật lý*) rồi dán nguyên vào mọi clip có quy trình đó.
 
 **Bí quyết của người bản địa phải diễn từng thao tác.** Khi họ đưa vào một mẹo hay nguyên liệu lạ (tập Neanderthal: bột khoáng sẫm màu), cho thấy trọn chuỗi: nhìn mồi → lấy bột → rắc một ít → chỉ đúng chỗ cần đánh → đưa lại dụng cụ → vlogger làm theo → khói → lửa. Thiếu thao tác thì người xem thấy như "tự nhiên có bột thần". Không giải thích khoa học dài; vlogger gói lại bằng vài từ.
+
+## 7b. Quy luật vật lý bùi nhùi & Lửa mồi tiền sử (user chốt 2026-10-06)
+
+Rút ra từ lỗi thực chiến ở Scene 13:
+1. **Khống chế kích thước ngọn lửa mồi (`TINY CANDLE-SIZED TINDER FLAME 2–3 cm`):**
+   - Nhúm rêu bùi nhùi (*tinder moss*) hoặc nấm bùi nhùi (*chaga/amadou*) tiền sử chỉ nhỏ bằng quả trứng cút. Khi bén tia lửa và thổi mồi, nó chỉ tạo ra **tâm than hồng âm ỉ (`glowing red ember core`)** và **ngọn lửa mồi li ti cực nhỏ chỉ cao 2–3 cm (`miniature delicate flicker flame`)** tương đương ngọn nến hoặc que diêm.
+   - Khi prompt dùng từ `flame` chung chung, AI Veo 3 / abra_r2v sẽ phóng đại thành ngọn lửa bùng cao 20–25 cm như đổ cồn/xăng hoặc bếp ga, phá hủy tính chân thực sinh tồn.
+   - Bắt buộc ghi rõ: `TINY CANDLE-SIZED EMBER FLAME (CRITICAL): The flame is tiny, delicate, only 2-3 cm high like a small candle flame; strictly NO large fire, NO bonfire, NO roaring flames.`
+2. **Quy luật tàn từ từ & khói bốc nghi ngút (`GRADUAL NATURAL DECAY & SMOKE EMISSION`):**
+   - **Cấm triệt để việc "tắt ngúm" đột ngột:** Không bao giờ để ngọn lửa biến mất trong 1 frame khi người làm mẫu buông tay hoặc phủ nhẹ đất. Rêu bùi nhùi khi không được tra thêm cành củi khô sẽ **tự lụi tàn dần từ từ qua 2–3 giây** (`smoothly diminishes and fades gradually over 2 to 3 seconds`).
+   - Ngọn lửa nhỏ teo tóp dần, chuyển thành **đốm than đỏ cam cháy âm ỉ bên dưới**, và **liên tục nhả các cuộn khói trắng xám dày đặc bốc nghi ngút uốn lượn bay lên** trong không khí lạnh. Đốm than đỏ vẫn le lói dưới làn khói cuộn chứ không bao giờ tắt cái rụp.
+3. **Đạo cụ cầm sẵn từ Frame 0 (`PROP CONTINUITY FROM FRAME ZERO`):**
+   - Mọi dụng cụ nhỏ (đá pyrite, đá flint, dao, que bùi nhùi) phải được **cầm sẵn trên tay từ giây 0.0s** (`already holds firmly in hand from second 0`).
+   - Tuyệt đối cấm các hành động thò tay vào túi rút đồ hư cấu khiến AI vẽ đồ vật tự spawn trong không khí, hoặc đồ vật tự biến mất giữa các sub-clip.
+
+## 7c. Khóa nhận diện trang phục đã mặc hoàn chỉnh (Rule 46 & Outfit Lock)
+
+Tránh trôi nhận diện trang phục (*outfit drift*) xuyên suốt 60–70 clip:
+- **Reference đã mặc hoàn chỉnh:** Luôn dùng reference `<Vlogger> Body` đã mặc trọn vẹn trang phục bối cảnh lịch sử, không gửi ảnh người mẫu cởi trần hay mặc đồ hiện đại (Rule 46).
+- **Chest Lacing Lock:** Áo da lộn/trang phục cổ V trễ phải đan dây da chữ X dày dặn siết chặt rãnh ngực (`prominent criss-crossing dark-brown leather thongs forming an X-pattern bridge`).
+- **Corset Belt Lock:** Đai da bò bản rộng 10–12 cm siết chặt eo, màu tương phản mạnh với áo (ví dụ nâu chocolate đậm trên nền da vàng mật ong), không có khóa kim loại hiện đại.
+- **Jewelry Lock (CRITICAL):** Cấm triệt để mọi loại dây chuyền, vòng cổ, mặt đá, chuỗi hạt, trang sức hiện đại (`Nora wears strictly NO necklace, NO chain, NO pendant, NO cord around her neck, NO modern jewelry; her throat and neck are completely bare skin`).
+- **Sleeve Cuff Lock:** Cổ tay áo kết thúc trơn sạch với đường may chìm, cấm tua rua, cấm lông thú rườm rà.
 
 ## 8. Áp lực xã hội (Act 3)
 
@@ -299,10 +332,14 @@ Không để 70 clip 8s nối nhau đều đều. Trong script ghi một bảng 
 - [ ] Có đủ 3 establishing shot 4s (sau cold open, lần di chuyển xa đầu tiên, trước Act 4), không thoại (mục 2b)?
 - [ ] Giờ trong ngày, countdown, số người, hướng mối nguy khớp ở mọi clip (mục 2c)?
 - [ ] Từng cặp mốc countdown liền nhau có clip chuyển trên hình hoặc là giấc ngủ?
+- [ ] Khóa bối cảnh sinh tồn: Tuyệt đối không có lửa ngoài hang khi vlogger chịu rét ngoài trời, hậu cảnh không mâu thuẫn nguồn lực sinh tồn (mục 2d)?
 - [ ] Đạo cụ đã gieo không làm người xem hỏi "sao không dùng cái đó?" ở cao trào; mục tiêu nhiệm vụ khớp kết quả?
 - [ ] Cảnh đông người có câu khóa số người; người phụ không tên có dấu nhận diện?
 - [ ] Cold open và payoff cắt từ cùng một master take?
 - [ ] Quy trình vật lý (tạo lửa, mang than…) có câu khóa từng bước?
+- [ ] Vật lý lửa mồi: ngọn lửa mồi li ti 2–3 cm (candle-sized), lụi tàn tự nhiên từ từ qua 2–3s, nhả khói trắng xám cuộn sóng liên tục, cấm tắt ngúm đột ngột (mục 7b)?
+- [ ] Đạo cụ nhỏ cầm sẵn trên tay từ frame 0, cấm tự spawn trong không khí hoặc tự biến mất (mục 7b)?
+- [ ] Khóa nhận diện trang phục đã mặc hoàn chỉnh: đai da tương phản sắc nét, đan dây ngực X dày dặn, cổ tay trơn sạch, cấm tuyệt đối đồ trang sức (mục 7c)?
 - [ ] Không còn từ gây hiểu nhầm / hiện đại hóa; ánh sáng tả bằng cảm giác, không vị trí mặt trời?
 
 **Retention**

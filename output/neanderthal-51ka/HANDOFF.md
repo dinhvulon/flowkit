@@ -61,7 +61,11 @@
    - Đưa mô tả giải phẫu cơ thể lên đầu: Chiều cao `178 cm`, vóc dáng đồng hồ cát rõ nét, ngực lớn đầy đặn nhô cao ở góc nghiêng (`large full heavy natural bust projecting well forward in profile`), eo con kiến nhỏ sắc nét (`very small, narrow, sharply defined waist`), bụng phẳng, hông nở, đùi thon săn chắc và có khoảng hở giữa 2 đùi (`clear gap between the thighs`).
    - Giữ nguyên 3 panel cắt ngang vai ở gốc cổ không lộ mặt: Chính diện, 3/4 và Sau lưng.
    - Thay thế trang phục: mô tả trang phục ôm sát (`form-fitting skin-tight tailored tunic`), thắt eo làm bật đường cong, quần legging bó sát đùi, cấm áo khoác xòe chữ A hay áo parka rộng giấu eo.
-3. **Thực thi:** Gọi `EDIT_CHARACTER_IMAGE` với `source_media_id` là UUID của ảnh body nguồn. Tải về, xóa logo SynthID, upload lại lấy UUID sạch và gán trực tiếp làm `media_id` cho entity `<Vlogger> Body`.
+3. **Quy tắc khóa trang phục v8 chuẩn (Bắt buộc đồng bộ 100% cho mọi prompt video downstream):**
+   - **Dây đan chéo chữ X ở ngực:** `CHEST LACING LOCK (CRITICAL): The deep plunging V-neckline MUST be visibly laced with distinct criss-crossing dark-brown leather thongs forming a prominent X-pattern bridge across her full cleavage (matching the Nora Body ref exactly); strictly NOT plain open skin, NOT unlaced, NOT gaping empty.`
+   - **Đai da bò nâu chocolate đậm (10–12 cm):** `CORSET BELT LOCK (CRITICAL): Tightly cinched at her tiny waist with a wide 10-12 cm dark-chocolate brown leather belt... strictly plain prehistoric dark-brown hide tied with a thong, strictly NO modern metal buckle, NO brass ring, creating sharp dark-against-golden contrast matching the Nora Body reference exactly.`
+   - **Cổ tay áo trơn sạch tuyệt đối cấm tua rua:** `SLEEVE CUFF LOCK (CRITICAL): Long fitted sleeves ending cleanly and neatly at the wrists with smooth stitched cuffs; strictly NO fringe, NO tassels, NO hanging leather strips, NO fur trim, NO fur cuffs.`
+4. **Thực thi:** Gọi `EDIT_CHARACTER_IMAGE` với `source_media_id` là UUID của ảnh body nguồn. Tải về, xóa logo SynthID, upload lại lấy UUID sạch và gán trực tiếp làm `media_id` cho entity `<Vlogger> Body`.
 
 ---
 
@@ -206,15 +210,53 @@
         - ✅ **Khóa nhận diện & Trang phục v8**: Nora tóc đuôi ngựa vàng, áo da lộn vàng đan dây chéo ngực, thắt đai da bò màu nâu chocolate đậm; khẩu hình native nói: *"My own fire. Or I sleep out there."*
       - **Review Server**: Đang chạy tại `http://localhost:8200`.
 
-3. **Công việc tiếp theo (Rule 29):**
-   - Scene 10 đã hoàn tất 1080p clean.
-   - Chuẩn bị & trình duyệt **Scene 11 (`A1-09`, 8s) — Nora Đánh Lửa Sai Cách**: Nora quỳ trên đất sương cạo đá kiểu ferro rod hiện đại, tia mòn tắt lịm, 4 thợ săn Neanderthal quay lưng đi vào hang bỏ mặc cô. Thoại: *"Like a ferro rod. Right?"*
+    - **Clip 11 (`A1-09 v2`, 8s) — Nora Đánh Lửa Sai Cách (Cạo Đá Kiểu Ferro Rod)**: ✅ **ĐÃ HOÀN TẤT 1080P CLEAN 100% (READY FOR EDIT)**
+      - Operation Video 720p: `6acaa9bf-eaf7-40f2-b496-f6bd8076542e`
+      - Operation Upscale 1080p: `bab49e9b-14c8-4c5a-9c1b-2dbb9efbfbd5_upsampled`
+      - Flow Media ID: `bab49e9b-14c8-4c5a-9c1b-2dbb9efbfbd5`
+      - File video 720p thô: `output/neanderthal-51ka/scenes/scene_11_v2_bab49e9b.mp4` (3.40 MB, 1280x720, 8.0s, 192 frames)
+      - File video 1080p thô: `output/neanderthal-51ka/1080/scene_11_bab49e9b_1080p.mp4` (8.17 MB)
+      - **File video 1080p SẠCH HOÀN TOÀN LOGO (READY FOR EDIT)**: `output/neanderthal-51ka/1080/scene_11_bab49e9b_1080p_clean.mp4` (6.96 MB, 1920x1080, 8.0s, 192 frames)
+      - Preview frames 720p: `output/neanderthal-51ka/review/scene_11_v2_frames/` (8 frames)
+      - Preview frames 1080p clean: `output/neanderthal-51ka/review/scene_11_1080p_clean_frames/` (8 frames)
+      - **Đánh giá chất lượng thực tế (Điểm Scorecard: 9.95/10 - User Đã Duyệt)**:
+        - ✅ **Khắc phục 100% lỗi dây đan ngực (`CHEST LACING LOCK`)**: Dây da màu nâu đen đan chéo chữ X rõ nét, dày dặn bắc ngang qua rãnh ngực sâu và đầy đặn, khớp 100% với ảnh reference `nora_body_v8_clean.jpg`. Tuyệt đối không còn khoảng hở ngực trần thiếu dây.
+        - ✅ **Khắc phục 100% màu đai & loại bỏ khóa kim loại (`CORSET BELT LOCK`)**: Bản đai da bò màu nâu chocolate đậm (10–12 cm) siết chặt vòng eo con kiến, buộc dây thừng da tiền sử mộc mạc, tuyệt đối không có mặt khóa kim loại (`metal buckle`), tạo độ tương phản cực kỳ sắc nét trên nền áo da lộn vàng.
+        - ✅ **Khắc phục 100% cổ tay áo trơn sạch (`SLEEVE CUFF LOCK`)**: Ống tay áo da lộn ôm sát dài chấm cổ tay, viền may chỉ sinew phẳng phiu, sạch bóng 100% không còn dải tua rua (`fringes / tassels`) hay viền lông nào.
+        - ✅ **Diễn xuất & Động tác cạo đá sinh tồn**: Nora quỳ gối trên sỏi đá, hai tay cầm flint biface và pyrite cạo dọc tạo tia lửa nhưng trượt; ngước mắt nhìn lên nói: *"Like a ferro rod. Right?"*; 4 thợ săn Neanderthal quay lưng đi vào hang bỏ mặc cô quỳ co ro trong gió buốt.
+      - **Clip 12 (`A1-10 v2`, 8s) — Người Già Đặt 4 Nhúm Rêu Lên Vỏ Cây (SẠCH HOÀN TOÀN LỬA NGOÀI HANG)**: ✅ **ĐÃ HOÀN TẤT 1080P CLEAN 100% (USER ĐÃ DUYỆT)**
+      - Operation Video 720p: `fc638e55-290e-4d59-98a3-87a98e7f30af`
+      - Operation Upscale 1080p: `9b25a81c-2674-4abd-ac27-902b514455d1_upsampled`
+      - Flow Media ID: `9b25a81c-2674-4abd-ac27-902b514455d1`
+      - File video 720p thô: `output/neanderthal-51ka/scenes/scene_12_v2_9b25a81c.mp4` (6.49 MB, 1280x720, 8.0s, 192 frames)
+      - File video 1080p thô: `output/neanderthal-51ka/1080/scene_12_9b25a81c_1080p.mp4` (10.19 MB)
+      - **File video 1080p SẠCH HOÀN TOÀN LOGO (READY FOR EDIT)**: `output/neanderthal-51ka/1080/scene_12_9b25a81c_1080p_clean.mp4` (9.86 MB, 1920x1080, 8.0s, 192 frames)
+      - Preview frames 720p: `output/neanderthal-51ka/review/scene_12_v2_frames/` (8 frames)
+      - **Đánh giá chất lượng thực tế (Điểm AI Scorecard: 10/10 - User Đã Duyệt)**:
+        - ✅ **Khắc phục 100% lỗi đống lửa ngoài hang (`STRICTLY NO FIRE OUTSIDE`)**: Khoảng đất sỏi giữa hai chân Bà Lão và khu vực ngoài hang hoàn toàn đóng băng lạnh ngắt, không còn bất kỳ đốm than, ngọn lửa hay vòng đá nào; miệng hang phía sau tối xám lạnh lẽo, thể hiện chính xác 100% logic Nora bị cô lập ngoài trời băng giá không có lửa.
+        - ✅ **Hành động & Đạo cụ chuẩn xác (4 Nhúm Rêu Khô)**: Người Già từ trong hang bước ra, ngồi xổm đặt đúng 4 nhúm rêu khô thành hàng thẳng tắp lên miếng vỏ cây trước mặt Nora trên nền sỏi trần, rồi đứng dậy quay bước vào hang.
+        - ✅ **Diễn xuất & Thoại Native của Nora**: Nora quan sát 4 nhúm rêu trên miếng vỏ cây, ngoái nhìn theo Người Già rồi xoay ánh mắt về phía camera, khẩu hình mở thì thào *"Okay."* với vẻ mặt cảm kích xen lẫn lạnh buốt; hơi thở phả khói tan nhanh.
+        - ✅ **Khóa trang phục chuẩn v8 (100% Locked)**: Dây da đan chéo chữ X dày dặn, sắc nét bắc ngang qua rãnh ngực sâu và đầy đặn; đai da bò màu nâu chocolate đậm siết chặt eo không mặt khóa kim loại; ống tay áo da lộn may trơn sạch, cấm tuyệt đối tua rua.
+      - **Review Server**: Đang chạy tại `http://localhost:8200`.
 
+    - **Clip 13 (`A2-01 v6`, 8s) — Người Già Đánh Lửa Mẫu (LỬA MỒI LI TI 2-3CM, TÀN TỰ NHIÊN & KHÓI BỐC NGHI NGÚT)**: ✅ **ĐÃ HOÀN TẤT 1080P CLEAN 100% (USER ĐÃ DUYỆT)**
+      - Operation Video 720p: `a0c650f1-a77a-4875-86e4-25c734535354`
+      - Operation Upscale 1080p: `a9e321d4-1dce-4f2d-8abd-ee4ec4c03b82_upsampled`
+      - Flow Media ID: `a9e321d4-1dce-4f2d-8abd-ee4ec4c03b82`
+      - File video 720p thô: `output/neanderthal-51ka/scenes/scene_13_v6_a9e321d4.mp4` (7.02 MB, 1280x720, 8.0s, 192 frames)
+      - File video 1080p thô: `output/neanderthal-51ka/1080/scene_13_a9e321d4_1080p.mp4` (11.01 MB)
+      - **File video 1080p SẠCH HOÀN TOÀN LOGO (READY FOR EDIT)**: `output/neanderthal-51ka/1080/scene_13_a9e321d4_1080p_clean.mp4` (10.22 MB, 1920x1080, 8.0s, 192 frames)
+      - Preview frames 720p: `output/neanderthal-51ka/review/scene_13_v6_frames/` (8 frames)
+      - **Đánh giá chất lượng thực tế (Điểm AI Scorecard: 10/10 - User Đã Duyệt)**:
+        - ✅ **Khắc phục 100% lỗi lửa quá to (`TINY CANDLE-SIZED FLAME 2–3 cm`)**: Rêu bùi nhùi mồi lửa chỉ bốc ngọn lửa mồi li ti cực nhỏ như ngọn nến le lói, tâm rêu ửng than đỏ hồng tự nhiên, phản chiếu ấm áp lên ngón tay bà lão (khắc phục triệt để lỗi lửa bùng to như bếp ga).
+        - ✅ **Khắc phục 100% lỗi lửa tắt ngúm phi lý (`GRADUAL NATURAL DECAY`)**: Không dùng đất hay đá đè dập lửa bạo lực làm tắt ngúm trong 1 frame; ngọn lửa mồi li ti tự nhiên lụi tàn dần từ từ qua 2–3 giây thành đốm than đỏ cam cháy âm ỉ bên dưới.
+        - ✅ **Khói bốc nghi ngút cực kỳ chân thực (`SMOKE EMISSION`)**: Làn khói trắng xám dày đặc cuộn sóng uốn lượn bốc lên liên tục từ đốm than đang âm ỉ bay vào không khí giá buốt.
+        - ✅ **Khóa bối cảnh & Đạo cụ từ frame 0**: Sạch 100% đống lửa hậu cảnh (cửa hang tối và lạnh buốt phía sau); hai viên đá cầm chắc trên tay từ giây 0.0s.
+        - ✅ **Khóa nhận diện trang phục v8 của Nora**: Đai da bò màu nâu chocolate đậm siết eo, đan dây ngực X dày dặn, cổ tay trơn sạch, sạch tuyệt đối dây chuyền trang sức; Nora kinh ngạc thì thào qua hàm răng run: *"Three strikes. She does it in three."*
+      - **Review Server**: Đang chạy tại `http://localhost:8200`.
 
-
-
-
-
-
-
-
+3. **Tổng kết tiến độ & Công việc tiếp theo (Rule 29):**
+   - **Tiến độ:** 13/13 clips đầu tiên (Clip 01 đến Clip 13) đều đã hoàn tất **1080p Clean 100%** (Sẵn sàng đưa vào Timeline dựng phim).
+   - **Bước tiếp theo:**
+     - Prompt của **Scene 14 (`A2-02`, 8s) — Nora Tự Đánh Lửa Nhát 1: Hỏng** đã được chuẩn hóa 100% theo các bài học Story Engine mới (STRICTLY NO FIRE OUTSIDE, cầm đá từ frame 0, outfit v8, 4 nhúm rêu -> 3 nhúm rêu).
+     - Xin xác nhận từ User theo Rule 29 để gửi lệnh tạo video 720p thô cho Scene 14.

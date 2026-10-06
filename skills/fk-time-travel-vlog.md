@@ -30,6 +30,9 @@ Format này ăn view vì 3 thứ: **góc nhìn người thật** (mọi thứ "q
 10. **Thoại ngắn:** bình thường 8–15 từ, căng thẳng 3–8, cảm xúc 5–12, giải thích tối đa 12–18 (clip 8s). Show > Tell. Mỗi Act ít nhất 1 nhịp im lặng. Cấm meta language ("as you saw earlier", "in this video", "this is where things get interesting", "I didn't know this yet").
 11. **Nhân vật phụ được nói, bằng ngôn ngữ không hiểu được** (không tiếng Anh, không phụ đề); prompt ghi rõ giọng từng người ở sub-clip nào, không nói chồng. Vlogger phản ứng với giọng điệu, không dịch nội dung.
 12. **Sau payoff 45–60s, không xung đột mới, không câu chủ đề. Cảnh cuối là một hình ảnh đáng nhớ, không thoại, CUT BLACK** (món quà nhỏ đặt vào tay vlogger → cô nhìn lại nơi vừa sống). Không "see you next time".
+13. **Khóa bối cảnh sinh tồn & chống mâu thuẫn hậu cảnh (mục 2d):** Khi vlogger đang chịu rét ngoài trời, hậu cảnh tuyệt đối KHÔNG có đống lửa trại hay bếp sưởi (tránh phá hủy stakes sinh tồn); mặt đất ngoài hang là sỏi tuyết buốt giá, hang chỉ là bóng tối lạnh lẽo.
+14. **Vật lý bùi nhùi & lửa mồi tiền sử (mục 7b):** Lửa mồi chỉ nhỏ 2–3 cm như ngọn nến (`candle-sized`), tâm rêu là đốm than đỏ hồng; không củi thì tự lụi tàn dần từ từ qua 2–3s, nhả khói trắng xám cuộn sóng bốc liên tục; cấm triệt để việc tắt ngúm đột ngột. Đạo cụ nhỏ cầm sẵn trên tay từ frame 0, không tự spawn trong không khí.
+15. **Khóa nhận diện trang phục đã mặc hoàn chỉnh (mục 7c & Rule 46):** Dùng reference Body đã mặc hoàn chỉnh trang phục, đai da tương phản siết eo, đan dây ngực X dày dặn, cổ tay trơn sạch, cấm tuyệt đối đồ trang sức.
 
 ---
 
