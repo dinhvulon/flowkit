@@ -738,7 +738,7 @@ Audio: the crackle of the hearth, the dry rustle of birch bark, a soft click of 
 
 ## 7c. Nối cảnh Cold open → Act 2 (`transition_in` / `transition_out` / `join`)
 
-Phần lớn là **CUT cứng cùng bối cảnh**: tư thế cuối clip A khớp tư thế đầu clip B (Rule 44). Không xoay 180°, không quay từ sau đầu (Rule 41/42).
+Phần lớn là **CUT cứng cùng bối cảnh**: tư thế cuối clip A khớp tư thế đầu clip B (Rule 44). Không xoay 180° trong cùng một shot (Rule 42).
 
 | Mối nối | Cuối clip A | Đầu clip B | Join |
 |---|---|---|---|
