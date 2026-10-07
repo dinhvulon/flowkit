@@ -1,8 +1,0 @@
-mammoth_steppe d6d62ca7-564f-4ff3-befa-8dae2d458015 https://flow-content.google/image/d6d62ca7-564f-4ff3-befa-8dae2d458015?Expires=1790864030&KeyName=labs-flow-prod-cdn-key&Signature=vgAKEb3oadNDfx1n9xfKYa1yma8
-alva 54c736a0-6189-4188-8e07-4138715ed4f4 https://flow-content.google/image/54c736a0-6189-4188-8e07-4138715ed4f4?Expires=1790863820&KeyName=labs-flow-prod-cdn-key&Signature=87b4QQJbApRA-Xo0xSSPCsJQXP8
-bone_dwelling_interior 8702a4a5-1f04-4227-8761-591d3a30bfc0 https://flow-content.google/image/8702a4a5-1f04-4227-8761-591d3a30bfc0?Expires=1790864006&KeyName=labs-flow-prod-cdn-key&Signature=73cXoT1fHvR4WbsiSyZG-az5hbA
-mezhyrich_camp 232043f1-cdc1-4318-8231-a30a7ccc8138 https://flow-content.google/image/232043f1-cdc1-4318-8231-a30a7ccc8138?Expires=1790863929&KeyName=labs-flow-prod-cdn-key&Signature=2Mbd5gZ-nr9LwkktxldXPkd4nfg
-nora 520156ca-83ac-4e50-bfe1-c5bb763d2ecf https://flow-content.google/image/520156ca-83ac-4e50-bfe1-c5bb763d2ecf?Expires=1790863901&KeyName=labs-flow-prod-cdn-key&Signature=HMv1qw5dFqPmj6CoZD-FJxbzRV0
-torak 3c9a006a-cae0-40ac-b001-de4c90eefaad https://flow-content.google/image/3c9a006a-cae0-40ac-b001-de4c90eefaad?Expires=1790863794&KeyName=labs-flow-prod-cdn-key&Signature=8e8HetFJA7TfwP2MoNE_ObcLezg
-painted_mammoth_skull 7cec5de6-3499-4959-945e-e4eb53a50ef7 https://flow-content.google/image/7cec5de6-3499-4959-945e-e4eb53a50ef7?Expires=1790864079&KeyName=labs-flow-prod-cdn-key&Signature=ypVvPPSxMjZQLjpZJ1O5IirutVk
-woolly_mammoth 503b5f5c-ca40-4bc3-9ee9-c740f6b04a48 https://flow-content.google/image/503b5f5c-ca40-4bc3-9ee9-c740f6b04a48?Expires=1790864055&KeyName=labs-flow-prod-cdn-key&Signature=Q5zkm1LEXxB16dEANgVcb9jkAhc
