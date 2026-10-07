@@ -1,33 +1,133 @@
 # HANDOFF — Neanderthal 51ka (Tập 2: "I Survived 24 Hours with Neanderthals")
 
-**Người nhận:** Agent tiếp nhận dự án (Antigravity IDE / Claude Code).  
-**Ngày cập nhật:** 2026-10-05.  
-**Tài liệu nền tảng bắt buộc đọc:**
-- [CLAUDE.md](file:///c:/flowkit/CLAUDE.md) (Rule 10, 27, 28, 29, 31, 46, 47)
-- [skills/fk-time-travel-vlog.md](file:///c:/flowkit/skills/fk-time-travel-vlog.md) (Bài học 34, 40, 47, 55–60)
-- [output/neanderthal-51ka/script-v5.md](file:///c:/flowkit/output/neanderthal-51ka/script-v5.md) (Kịch bản chuẩn đã duyệt cấu trúc và danh sách ref `["Nora", "Nora Body", ...]`)
-- [uploads/nora_base_body_prompt.json](file:///c:/flowkit/uploads/nora_base_body_prompt.json) & [uploads/nora_body_outfit_prompt.json](file:///c:/flowkit/uploads/nora_body_outfit_prompt.json) (Công thức prompt chuẩn giữ nguyên giải phẫu cơ thể)
+**Người nhận:** agent tiếp nhận dự án (Claude Code / Antigravity).
+**Cập nhật:** 2026-10-06 tối, sau khi đổi sang tài khoản Google mới.
+**Đọc trước:** [CLAUDE.md](../../CLAUDE.md) (Rule 10, 27, 28, 29, 31, 46), [skills/fk-time-travel-vlog.md](../../skills/fk-time-travel-vlog.md), [clips.json](clips.json) (nguồn prompt chuẩn), [prompts_review.md](prompts_review.md) (bản đọc của 60 prompt).
 
 ---
 
-## 1. Các Quy Tắc Cốt Lõi Bắt Buộc (CRITICAL RULES)
+## 0. Việc cần làm tiếp (theo thứ tự)
 
-1. **Rule 46 & 47 (User Lock 2026-10-05):**
-   - **`Nora Body` chính là ảnh Body đã mặc hoàn chỉnh trang phục**. TUYỆT ĐỐI KHÔNG tạo entity `Nora Outfit` riêng lẻ (entity này đã được xóa khỏi database).
-   - Video downstream Omni Flash R2V chỉ nhận: `["Nora", "Nora Body", <NPC/Bối cảnh/Đạo cụ>]`.
-   - **TUYỆT ĐỐI KHÔNG gửi ảnh body trần/gym** vào video để tránh nhiễm da thịt trần làm model AI vẽ trang phục generic mất áo.
-2. **Rule 29 (Xác nhận trước khi sinh media):**
-   - Không được gửi bất kỳ lệnh tạo ảnh/video tốn credit nào (`GENERATE_*`, `REGENERATE_*`) nếu user chưa nói "đồng ý" / "yes".
-3. **Rule 28 (Tẩy sạch watermark SynthID trước khi đưa vào sinh video):**
-   - Mọi ảnh AI do Google Flow sinh đều phải tải về, chạy `python tools/remove_watermark_from_image.py <path>`, upload lại qua `POST /api/flow/upload-image` để lấy UUID sạch 100%, rồi mới gán vào entity hoặc scene.
-4. **Rule 10 (Pacing an toàn tránh Unusual Activity):**
-   - Server tự động điều phối giãn cách 45–60s giữa các request gửi đến Flow. Luôn submit batch qua `/api/requests/batch`, không được tự ý spam API loop.
-5. **Rule 4 & 43 (Scratch Directory Only):**
-   - Mọi script tạm thời, test, debug bắt buộc lưu trong `<appDataDir>/brain/<conversation-id>/scratch/` hoặc chạy inline one-liner `python -c "..."`. Tuyệt đối không tạo file rác trong repo.
+1. **Chờ user chọn bảng xung đột X1–X13** (mục 4). Chỉ áp các mục user chọn, lấy nội dung từ [clips_review_fixes.json](clips_review_fixes.json), patch `clips.json` + DB project mới. **Không tự áp mục nào.**
+2. **Chờ user duyệt 37 prompt Act 3–5** (scene 24–60). Bản tiếng Việt đã gửi trong hội thoại 2026-10-06. Nếu user giữ X1/X3 như bản chiều (Neanderthal "may chỉ gân", không khóa trang sức) thì đổi khóa tương ứng trong 37 clip cho đồng bộ. Nếu user giữ MASTER bản chiều (Nora quỳ một mình, mục X13) thì sửa A4-11/A4-12 (scene 51–52) bỏ các thợ săn đứng chắn.
+3. **Trước khi gen:** user ghim và reload tab `flow.google.com` (tài khoản mới), reload extension, vì lần gửi MASTER đầu tiên dính `NO_INJECTION_RESULT`. Pre-flight `GET /health`.
+4. **Gen video scene 8 → 60 (53 clip)**, mỗi lần một clip, theo nhịp user chốt: gửi 1 `GENERATE_VIDEO_REFS`, chờ COMPLETED/FAILED, nghỉ `random(45,60)s + 120s`, rồi mới gửi clip tiếp. Dừng hẳn khi gặp `UNUSUAL_ACTIVITY` / `QUOTA` / `CAPTCHA`; lỗi khác chỉ ghi lại, không tự retry (Rule 29). Mỗi clip xong tải ngay bản 720p về `scenes/scene_{idx:02d}_{sid8}.mp4`. Tiến độ ghi ở `gen_state.json` (tạo khi chạy). Ước tính 6–7 giờ.
+   - Không gen scene 1–7 (user: đã có). Scene 1 (MASTER-FIRE) chỉ gen khi user muốn có payoff Act 4.
+   - Script runner của phiên 2026-10-06 nằm trong scratchpad (`gen_runner.py`), không nằm trong repo (Rule 43); viết lại theo mô tả trên nếu cần.
+5. **Sau khi gen:** chạy `/fk-review-video` (light) cho từng clip, đưa scorecard lên Review Board `:8200`. User duyệt từng clip thì mới upscale 1080p (`UPSCALE_VIDEO`), rồi xóa logo trên bản 1080p (Rule 18/32).
+6. **Dựng:** FOREST-SPRINT làm cold open và phát lại sau A4-05; payoff = MASTER giây 6–10; A5-02 đã cắt; countdown 7 mốc (H0, H3, H8, H10, H12, H20, H24) chèn ở hậu kỳ.
 
 ---
 
-## 2. Thông Tin Dự Án & Database State (Hiện Tại)
+## 1. Quy tắc bắt buộc (cập nhật 2026-10-06)
+
+1. **Prompt của user là chuẩn.** Bản `clips.json` user sửa chiều 2026-10-06 (commit `7a9c284`) là nguồn đúng cho scene 1–23. Review chỉ được đưa ra **bảng xung đột** để user chọn, không tự đổi góc máy, hành động hay khóa.
+2. **Rule 41 đã bỏ** (user 2026-10-06): shot bám theo từ sau lưng vlogger là hợp lệ (A1-06).
+3. **Rule 29:** không gửi lệnh tốn credit khi user chưa đồng ý; sau mỗi bước gen phải dừng cho user duyệt.
+4. **Rule 28:** ảnh AI phải tải về, chạy `python tools/remove_watermark_from_image.py`, upload lại lấy UUID sạch rồi mới gán.
+5. **Nhịp request:** mọi request Flow cách nhau 45–60s (server tự giãn); khi chạy gen dài thì nghỉ thêm 2 phút sau mỗi request (mục 0.4).
+6. **Rule 46:** video chỉ nhận `["Nora", "Nora Body", ...]`; không có entity outfit riêng.
+7. **Ảnh bối cảnh phải sinh mới trên Flow từ prompt**, không cắt frame từ video (user 2026-10-06).
+8. **Project id = Flow project id** ([flow_client.py:621](../../agent/services/flow_client.py#L621)): khi upload ảnh phải truyền `project_id` của project; để rỗng thì ảnh rơi vào session project khác.
+9. Entity `location` **có** được gửi vào R2V (lọc theo `character_names`, tối đa 7 ref, [operations.py:394](../../agent/sdk/services/operations.py#L394)).
+
+---
+
+## 2. Project hiện tại (tài khoản mới)
+
+| | ID |
+|---|---|
+| Project (= Flow project) | `52fe8660-3617-4e4b-8055-23cf987ac4a2` · material `prehistoric_vlog`, `allow_voice: true` |
+| Video HORIZONTAL | `b5e0894c-3341-4cd9-a209-9bc39f63a58b` |
+| Scenes | 60 (display_order 1–60); prompt, ref và duration khớp 100% `clips.json`. ID từng scene ở [new_project.json](new_project.json) |
+
+### Entity (đều đã có ảnh sạch, không logo)
+
+| Entity | Loại | Entity ID | Media ID | File / dùng ở |
+|---|---|---|---|---|
+| Nora | character | `bfecefea-7114-451c-a5eb-50f38ccbd537` | `7bf53e09-e902-49bb-8e1d-72b888bad0fd` | `output/ice_age_16_000_bc_survival_vlog/refs/nora_main_clean.jpg` · voice `Laomedeia — …` |
+| Nora Body (v8) | character | `a08a76ac-7806-4ecd-a026-20ef40ad751f` | `34e03061-a276-4ca3-9957-0c66f9230146` | `refs/nora_body_v8_clean.jpg` |
+| Leader | character | `20d2e841-248b-4d47-869e-f3c3e9e7ac38` | `6d99f576-e136-4d71-af73-5f80ec5aaaaa` | `refs/leader_clean.jpg` |
+| Old Woman | character | `5e9044f9-f378-4d78-bae6-af787cb00696` | `3bb8e824-d32a-4997-8d96-3821a609d4ab` | `refs/old_woman_clean.jpg` |
+| Strongest | character | `3bcc2f1f-6c7a-4e1a-864b-d5efbd824012` | `e70d0eaa-11bc-4f16-aef3-9982ad6c05ad` | `refs/strongest_clean.jpg` |
+| Strongest Spear | visual_asset | `3dbaf548-44c9-4f8f-992c-9dc5113a9279` | `6a9c5dfe-2371-413a-9031-3a91bc51e108` | `refs/strongest_spear_clean.jpg` |
+| Cave Hyena | creature | `e0a6ed6d-0e04-4953-b264-e1ef51d24382` | `602b4bf9-a555-407e-a5c2-e1234e07a78f` | `refs/cave_hyena_clean.jpg` |
+| Ember Bundle | visual_asset | `cdfb5607-e169-4ba9-ae02-b1f19cbdd942` | `7a9de394-b63e-4dcd-a0c8-8a723f7b69ae` | `refs/ember_bundle_clean.jpg` |
+| Pech Valley | location | `3602e1b6-e1fb-451d-b12c-af125f2fe88a` | `ea699e1e-9814-4201-bb13-dad8147e00da` | `refs/pech_valley_clean.jpg` · A1-01/02, Act 3 thung lũng, EST-02/03 |
+| Cave Mouth (cũ, nhìn từ trong ra) | location | `f8e4f524-6752-41fe-a404-4eeea4b0b766` | `3b629fb5-dd93-42d4-bff5-8e2c866deb0d` | `refs/cave_mouth_clean.jpg` · không còn clip nào dùng |
+| **Cave Exterior** | location | `3bcbc969-6184-47c5-9e0f-741d359d16ac` | `4064de72-abcb-4efb-b26b-dc86cfc9d83a` | `refs/cave_exterior_clean.jpg` · scene 8–21, A5-04/06/07 |
+| **Cave Interior** | location | `a4c4b28e-b6f1-4342-b080-85533d385f79` | `ad597b2b-f93d-40c6-9e7e-9f8bf16e44fd` | `refs/cave_interior_clean.jpg` · scene 22–23 và các cảnh trong hang Act 3–5 |
+| **Meat Cache** | location | `abb4e925-3bac-44ca-bdbf-23ffce5b8da9` | `1f296118-bccf-4938-afe4-5f0dc9378391` | `refs/meat_cache_clean.jpg` · MASTER, A3-09 → A4-15 |
+| **Valley Woodland** | location | `1d041530-52ee-42cb-9233-0d8bcea3825f` | `d092f5aa-ed98-472d-ab53-94b41c8e6d4b` | `refs/valley_woodland_clean.jpg` · A1-03/04/05, A3-07/08, A4-05/05b/16 |
+
+### Trạng thái 60 clip
+
+| Scene | Clip | Trạng thái |
+|---|---|---|
+| — | FOREST-SPRINT (cold open, 10s) | ✅ `1080/scene_01_8ae57638_1080p_clean.mp4`; prompt gốc ở [shipped_prompts_scene01_02.json](shipped_prompts_scene01_02.json) |
+| 1 | MASTER-FIRE (10s) | ⏳ chưa gen (lần gửi đầu user đã hủy); chỉ dùng 4s cuối làm payoff |
+| 2 | EST-01 (6s) | ✅ dùng bản bay FPV đã duyệt `1080/scene_02_3fc899f4_1080p_clean.mp4` |
+| 3–7 | A1-01 → A1-05 | ✅ 1080p clean trong `1080/` |
+| 8–13 | A1-06 → A2-01 | ⏳ cần gen lại (file cũ user đã xóa; bản cũ vẫn còn trong commit `7a9c284`) |
+| 14–23 | A2-02 → A2-11 | ⏳ chưa gen |
+| 24–60 | Act 3–5 (37 clip, gồm A4-05b mới; A5-02 đã cắt) | ⏳ prompt mới, **chờ user duyệt** |
+
+---
+
+## 3. File trong thư mục
+
+| File | Nội dung |
+|---|---|
+| `clips.json` | **Nguồn prompt chuẩn** cho 60 clip (scene 1–23 = bản chiều của user + ref bối cảnh; 24–60 = Act 3–5 mới) |
+| `clips_review_fixes.json` | Bản có các sửa sau review (X1–X13), lấy ra khi user chọn |
+| `prompts_review.md` | Toàn bộ 60 prompt tiếng Anh, dạng để đọc |
+| `new_project.json` | ID project, video, entity, scene của tài khoản mới |
+| `shipped_prompts_scene01_02.json` | Prompt thật của 2 clip đã duyệt (FOREST-SPRINT, EST-01 FPV) |
+| `script-v5.md`, `outline-v5.md` | Kịch bản và storyboard. Storyboard Act 3–5 chưa cập nhật theo review; `clips.json` mới là bản đúng |
+
+---
+
+## 4. Bảng xung đột chờ user chọn (scene 1–23)
+
+| # | Clip | Bản chiều (đang dùng) | Đề xuất sau review |
+|---|---|---|---|
+| X1 | 8–23 | Neanderthal "đồ may chỉ gân, nhiều lớp, cấm để trần ngực" | Da thô buộc dây, không đường may (A1-05 dựa trên chi tiết họ chưa từng thấy đường may; clip 3–7 cũng là da thô) |
+| X2 | 8–11, 14–21 | "Inside, an open fire…"; 12–14 "hang tối lạnh" | Một câu chung: ánh cam ở sâu khoảng 5 m trong hang, ngoài hang không có lửa |
+| X3 | 8–11, 15–23 | Thiếu khóa trang sức | Thêm khóa trang sức + dây đan không khoen kim loại (A1-10 cũ bị ra dây chuyền) |
+| X4 | 9 | Giáo đang nằm ngang mà dộng cán xuống đá | Dựng giáo thẳng lên rồi mới dộng |
+| X5 | 13 | Vừa đánh đá vừa thổi, tia lửa như mưa, than còn cháy ở cuối | Lửa 2–3 cm rồi tự cháy hết thành nhúm đen nguội; rêu rắc bột sẵn (gieo cho A2-06) |
+| X6 | 14 | Không có nhúm rêu cháy; còn chữ "camera" | Có nhúm rêu cháy đen; bỏ chữ camera |
+| X7 | 16 | Nhét tay trái vào nách khi tay phải đang cầm máy | Chụm tay hà hơi |
+| X8 | 17 | Gió thổi lên dốc nhưng rêu bay xuống dốc | Gió đổ xuống dốc |
+| X9 | 18 | Bà mở túi ngay | Gõ tay vào bột trên nhúm rêu cũ trước (cần X5) |
+| X10 | 19 | "small flame / small fire" | Lửa rêu 2–3 cm, lửa que cỡ lòng bàn tay |
+| X11 | 21 | 3 que vẫn cháy sau quãng nhảy thời gian | Bó que đã dùng một nửa |
+| X12 | 10, 11 | Thiếu ref giáo | Thêm `Strongest Spear` |
+| X13 | 1 | Nora quỳ một mình | 3 thợ săn quay lưng đứng chắn trước linh cẩu (khớp A4-11/12), thêm khóa loài, lửa 2–3 cm |
+
+---
+
+## 5. Công Thức & Quy Trình Tạo Body Mặc Trang Phục (Tái Sử Dụng Cho Mọi Dự Án Tương Lai)
+
+Để tạo ảnh `<Vlogger> Body` đã mặc trang phục mà không bị méo người hay mất form:
+1. **Ảnh nguồn:** Bắt buộc dùng ảnh body chuẩn không mặt của user: [uploads/nora_body_v3_clean.jpg](file:///c:/flowkit/uploads/nora_body_v3_clean.jpg) (UUID: `3ea9f8fb-6119-49c8-8466-0bb0ddb2669b`).
+2. **Cấu trúc Prompt:** Tham khảo trực tiếp [uploads/nora_base_body_prompt.json](file:///c:/flowkit/uploads/nora_base_body_prompt.json) và [uploads/nora_body_outfit_prompt.json](file:///c:/flowkit/uploads/nora_body_outfit_prompt.json).
+   - Đưa mô tả giải phẫu cơ thể lên đầu: Chiều cao `178 cm`, vóc dáng đồng hồ cát rõ nét, ngực lớn đầy đặn nhô cao ở góc nghiêng (`large full heavy natural bust projecting well forward in profile`), eo con kiến nhỏ sắc nét (`very small, narrow, sharply defined waist`), bụng phẳng, hông nở, đùi thon săn chắc và có khoảng hở giữa 2 đùi (`clear gap between the thighs`).
+   - Giữ nguyên 3 panel cắt ngang vai ở gốc cổ không lộ mặt: Chính diện, 3/4 và Sau lưng.
+   - Thay thế trang phục: mô tả trang phục ôm sát (`form-fitting skin-tight tailored tunic`), thắt eo làm bật đường cong, quần legging bó sát đùi, cấm áo khoác xòe chữ A hay áo parka rộng giấu eo.
+3. **Quy tắc khóa trang phục v8 chuẩn (Bắt buộc đồng bộ 100% cho mọi prompt video downstream):**
+   - **Dây đan chéo chữ X ở ngực:** `CHEST LACING LOCK (CRITICAL): The deep plunging V-neckline MUST be visibly laced with distinct criss-crossing dark-brown leather thongs forming a prominent X-pattern bridge across her full cleavage (matching the Nora Body ref exactly); strictly NOT plain open skin, NOT unlaced, NOT gaping empty.`
+   - **Đai da bò nâu chocolate đậm (10–12 cm):** `CORSET BELT LOCK (CRITICAL): Tightly cinched at her tiny waist with a wide 10-12 cm dark-chocolate brown leather belt... strictly plain prehistoric dark-brown hide tied with a thong, strictly NO modern metal buckle, NO brass ring, creating sharp dark-against-golden contrast matching the Nora Body reference exactly.`
+   - **Cổ tay áo trơn sạch tuyệt đối cấm tua rua:** `SLEEVE CUFF LOCK (CRITICAL): Long fitted sleeves ending cleanly and neatly at the wrists with smooth stitched cuffs; strictly NO fringe, NO tassels, NO hanging leather strips, NO fur trim, NO fur cuffs.`
+4. **Thực thi:** Gọi `EDIT_CHARACTER_IMAGE` với `source_media_id` là UUID của ảnh body nguồn. Tải về, xóa logo SynthID, upload lại lấy UUID sạch và gán trực tiếp làm `media_id` cho entity `<Vlogger> Body`.
+
+---
+
+## 6. Lưu trữ: trạng thái tài khoản cũ (project 4cc4b500-…, không còn gen được)
+
+Tài khoản cũ bị PUBLIC_ERROR_UNUSUAL_ACTIVITY cho mọi lệnh sinh từ 16:28 ngày 2026-10-05. DB project cũ đã patch prompt đồng bộ với clips.json để tham khảo, nhưng không dùng để gen nữa.
+
+### A. Project tài khoản cũ
 
 | Thành phần | ID / Giá trị | Ghi chú |
 |---|---|---|
@@ -51,25 +151,7 @@
 | **Pech Valley** (Thung lũng đá vôi) | `e02aec5c-df73-46a0-bc73-beaccb8c806f` | `6cd2b3d4-fb48-4015-8481-58b833808862` | `refs/pech_valley_clean.jpg` | ĐÃ HOÀN TẤT ✅ |
 | **Cave Mouth** (Vòm cửa hang Pech de l'Azé) | `87dfde04-a15d-44a8-9172-78b4a3d55661` | `67e0005d-a440-4a45-b623-1d272b7a0676` | `refs/cave_mouth_clean.jpg` | ĐÃ HOÀN TẤT ✅ |
 
----
-
-## 3. Công Thức & Quy Trình Tạo Body Mặc Trang Phục (Tái Sử Dụng Cho Mọi Dự Án Tương Lai)
-
-Để tạo ảnh `<Vlogger> Body` đã mặc trang phục mà không bị méo người hay mất form:
-1. **Ảnh nguồn:** Bắt buộc dùng ảnh body chuẩn không mặt của user: [uploads/nora_body_v3_clean.jpg](file:///c:/flowkit/uploads/nora_body_v3_clean.jpg) (UUID: `3ea9f8fb-6119-49c8-8466-0bb0ddb2669b`).
-2. **Cấu trúc Prompt:** Tham khảo trực tiếp [uploads/nora_base_body_prompt.json](file:///c:/flowkit/uploads/nora_base_body_prompt.json) và [uploads/nora_body_outfit_prompt.json](file:///c:/flowkit/uploads/nora_body_outfit_prompt.json).
-   - Đưa mô tả giải phẫu cơ thể lên đầu: Chiều cao `178 cm`, vóc dáng đồng hồ cát rõ nét, ngực lớn đầy đặn nhô cao ở góc nghiêng (`large full heavy natural bust projecting well forward in profile`), eo con kiến nhỏ sắc nét (`very small, narrow, sharply defined waist`), bụng phẳng, hông nở, đùi thon săn chắc và có khoảng hở giữa 2 đùi (`clear gap between the thighs`).
-   - Giữ nguyên 3 panel cắt ngang vai ở gốc cổ không lộ mặt: Chính diện, 3/4 và Sau lưng.
-   - Thay thế trang phục: mô tả trang phục ôm sát (`form-fitting skin-tight tailored tunic`), thắt eo làm bật đường cong, quần legging bó sát đùi, cấm áo khoác xòe chữ A hay áo parka rộng giấu eo.
-3. **Quy tắc khóa trang phục v8 chuẩn (Bắt buộc đồng bộ 100% cho mọi prompt video downstream):**
-   - **Dây đan chéo chữ X ở ngực:** `CHEST LACING LOCK (CRITICAL): The deep plunging V-neckline MUST be visibly laced with distinct criss-crossing dark-brown leather thongs forming a prominent X-pattern bridge across her full cleavage (matching the Nora Body ref exactly); strictly NOT plain open skin, NOT unlaced, NOT gaping empty.`
-   - **Đai da bò nâu chocolate đậm (10–12 cm):** `CORSET BELT LOCK (CRITICAL): Tightly cinched at her tiny waist with a wide 10-12 cm dark-chocolate brown leather belt... strictly plain prehistoric dark-brown hide tied with a thong, strictly NO modern metal buckle, NO brass ring, creating sharp dark-against-golden contrast matching the Nora Body reference exactly.`
-   - **Cổ tay áo trơn sạch tuyệt đối cấm tua rua:** `SLEEVE CUFF LOCK (CRITICAL): Long fitted sleeves ending cleanly and neatly at the wrists with smooth stitched cuffs; strictly NO fringe, NO tassels, NO hanging leather strips, NO fur trim, NO fur cuffs.`
-4. **Thực thi:** Gọi `EDIT_CHARACTER_IMAGE` với `source_media_id` là UUID của ảnh body nguồn. Tải về, xóa logo SynthID, upload lại lấy UUID sạch và gán trực tiếp làm `media_id` cho entity `<Vlogger> Body`.
-
----
-
-## 4. Công Việc Tiếp Theo Cần Làm (Next Steps)
+### B. Tiến độ clip trên tài khoản cũ
 
 1. **Tạo Scenes cho Video (`15076345-ca4a-48cb-8afa-4a79c2a52028`):** ✅ **ĐÃ HOÀN TẤT 23 SCENES**
    - Đã tạo toàn bộ 23 scenes từ Cold Open đến Act 2 (`MASTER-FIRE` đến `A2-11`) trong database.

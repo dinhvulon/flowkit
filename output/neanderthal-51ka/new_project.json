@@ -1,0 +1,194 @@
+{
+  "project_id": "52fe8660-3617-4e4b-8055-23cf987ac4a2",
+  "video_id": "b5e0894c-3341-4cd9-a209-9bc39f63a58b",
+  "entities": {
+    "Nora": {
+      "id": "bfecefea-7114-451c-a5eb-50f38ccbd537",
+      "entity_type": "character",
+      "media_id": "7bf53e09-e902-49bb-8e1d-72b888bad0fd",
+      "file": "C:/flowkit/output/ice_age_16_000_bc_survival_vlog/refs/nora_main_clean.jpg"
+    },
+    "Nora Body": {
+      "id": "a08a76ac-7806-4ecd-a026-20ef40ad751f",
+      "entity_type": "character",
+      "media_id": "34e03061-a276-4ca3-9957-0c66f9230146",
+      "file": "C:/flowkit/output/neanderthal-51ka/refs/nora_body_v8_clean.jpg"
+    },
+    "Leader": {
+      "id": "20d2e841-248b-4d47-869e-f3c3e9e7ac38",
+      "entity_type": "character",
+      "media_id": "6d99f576-e136-4d71-af73-5f80ec5aaaaa",
+      "file": "C:/flowkit/output/neanderthal-51ka/refs/leader_clean.jpg"
+    },
+    "Old Woman": {
+      "id": "5e9044f9-f378-4d78-bae6-af787cb00696",
+      "entity_type": "character",
+      "media_id": "3bb8e824-d32a-4997-8d96-3821a609d4ab",
+      "file": "C:/flowkit/output/neanderthal-51ka/refs/old_woman_clean.jpg"
+    },
+    "Strongest": {
+      "id": "3bcc2f1f-6c7a-4e1a-864b-d5efbd824012",
+      "entity_type": "character",
+      "media_id": "e70d0eaa-11bc-4f16-aef3-9982ad6c05ad",
+      "file": "C:/flowkit/output/neanderthal-51ka/refs/strongest_clean.jpg"
+    },
+    "Strongest Spear": {
+      "id": "3dbaf548-44c9-4f8f-992c-9dc5113a9279",
+      "entity_type": "visual_asset",
+      "media_id": "6a9c5dfe-2371-413a-9031-3a91bc51e108",
+      "file": "C:/flowkit/output/neanderthal-51ka/refs/strongest_spear_clean.jpg"
+    },
+    "Cave Hyena": {
+      "id": "e0a6ed6d-0e04-4953-b264-e1ef51d24382",
+      "entity_type": "creature",
+      "media_id": "602b4bf9-a555-407e-a5c2-e1234e07a78f",
+      "file": "C:/flowkit/output/neanderthal-51ka/refs/cave_hyena_clean.jpg"
+    },
+    "Ember Bundle": {
+      "id": "cdfb5607-e169-4ba9-ae02-b1f19cbdd942",
+      "entity_type": "visual_asset",
+      "media_id": "7a9de394-b63e-4dcd-a0c8-8a723f7b69ae",
+      "file": "C:/flowkit/output/neanderthal-51ka/refs/ember_bundle_clean.jpg"
+    },
+    "Pech Valley": {
+      "id": "3602e1b6-e1fb-451d-b12c-af125f2fe88a",
+      "entity_type": "location",
+      "media_id": "ea699e1e-9814-4201-bb13-dad8147e00da",
+      "file": "C:/flowkit/output/neanderthal-51ka/refs/pech_valley_clean.jpg"
+    },
+    "Cave Mouth": {
+      "id": "f8e4f524-6752-41fe-a404-4eeea4b0b766",
+      "entity_type": "location",
+      "media_id": "3b629fb5-dd93-42d4-bff5-8e2c866deb0d",
+      "file": "C:/flowkit/output/neanderthal-51ka/refs/cave_mouth_clean.jpg"
+    },
+    "Cave Exterior": {
+      "id": "3bcbc969-6184-47c5-9e0f-741d359d16ac",
+      "entity_type": "location",
+      "media_id": "4064de72-abcb-4efb-b26b-dc86cfc9d83a",
+      "file": "C:/flowkit/output/neanderthal-51ka/refs/cave_exterior_clean.jpg",
+      "clean_uploaded": true
+    },
+    "Cave Interior": {
+      "id": "a4c4b28e-b6f1-4342-b080-85533d385f79",
+      "entity_type": "location",
+      "media_id": "ad597b2b-f93d-40c6-9e7e-9f8bf16e44fd",
+      "file": "C:/flowkit/output/neanderthal-51ka/refs/cave_interior_clean.jpg",
+      "clean_uploaded": true
+    },
+    "Meat Cache": {
+      "id": "abb4e925-3bac-44ca-bdbf-23ffce5b8da9",
+      "entity_type": "location",
+      "media_id": "1f296118-bccf-4938-afe4-5f0dc9378391",
+      "file": "C:/flowkit/output/neanderthal-51ka/refs/meat_cache_clean.jpg",
+      "clean_uploaded": true
+    },
+    "Valley Woodland": {
+      "id": "1d041530-52ee-42cb-9233-0d8bcea3825f",
+      "entity_type": "location",
+      "request_id": "50a246cd-04ad-404e-a4f9-708a3f105da0",
+      "media_id": "d092f5aa-ed98-472d-ab53-94b41c8e6d4b",
+      "file": "C:/flowkit/output/neanderthal-51ka/refs/valley_woodland_clean.jpg",
+      "clean_uploaded": true
+    }
+  },
+  "scenes": {
+    "1": {
+      "id": "9c9a4832-88d9-41b4-9732-15bc947e3cb5",
+      "scene_name": "MASTER-FIRE"
+    },
+    "2": {
+      "id": "47ff4868-031d-4a11-bbbc-78ba14034948",
+      "scene_name": "EST-01"
+    },
+    "3": {
+      "id": "1a57a647-3346-4f21-af3c-488c06e264e9",
+      "scene_name": "A1-01"
+    },
+    "4": {
+      "id": "89684a44-2eaa-4ed5-b8d5-f75eda942972",
+      "scene_name": "A1-02"
+    },
+    "5": {
+      "id": "52140d36-9bfe-48f0-8cc6-2a3894287f00",
+      "scene_name": "A1-03"
+    },
+    "6": {
+      "id": "6a4471ce-c39f-4a90-b79c-966a68266b6b",
+      "scene_name": "A1-04"
+    },
+    "7": {
+      "id": "94fc8e1f-5110-4ac6-9a65-ed88a0906928",
+      "scene_name": "A1-05"
+    },
+    "8": {
+      "id": "93ddd06f-1d92-4310-a7aa-6855a1e2ea9c",
+      "scene_name": "A1-06"
+    },
+    "9": {
+      "id": "b4f700ef-ecd6-4731-8efb-ad05d101d917",
+      "scene_name": "A1-07"
+    },
+    "10": {
+      "id": "f917ce8e-2bb2-4e2f-9532-8d8d7f5f1a64",
+      "scene_name": "A1-08"
+    },
+    "11": {
+      "id": "bf52537e-6e1a-4ebd-88c5-93f974710f23",
+      "scene_name": "A1-09"
+    },
+    "12": {
+      "id": "b211cbb1-7f3c-45c9-87f7-7f9ce1d42c6b",
+      "scene_name": "A1-10"
+    },
+    "13": {
+      "id": "6505a319-f9d8-4e77-bbd3-1544e90402de",
+      "scene_name": "A2-01"
+    },
+    "14": {
+      "id": "a06743c0-da63-45e7-8d06-0674a5c00248",
+      "scene_name": "A2-02"
+    },
+    "15": {
+      "id": "50650ad8-bd98-4932-bc98-4668c360fbac",
+      "scene_name": "A2-03"
+    },
+    "16": {
+      "id": "45b463b4-60ad-40c6-b2a7-4ce4fe8afc1f",
+      "scene_name": "A2-04"
+    },
+    "17": {
+      "id": "84705f30-3d14-4986-a9e2-d353dc2cd0f5",
+      "scene_name": "A2-05"
+    },
+    "18": {
+      "id": "71dafb1d-884c-407b-905d-2ce85160fcdd",
+      "scene_name": "A2-06"
+    },
+    "19": {
+      "id": "998c57c0-a90a-4438-9b60-744cb6820ccd",
+      "scene_name": "A2-07"
+    },
+    "20": {
+      "id": "7748fa86-2e94-46fd-af23-b64d3594f86d",
+      "scene_name": "A2-08"
+    },
+    "21": {
+      "id": "0beba5fc-b1c8-4368-8e20-0ed914116956",
+      "scene_name": "A2-09"
+    },
+    "22": {
+      "id": "dfa0ecf7-5395-4c00-bded-cee7cadb6c6d",
+      "scene_name": "A2-10"
+    },
+    "23": {
+      "id": "fd9f9b2f-4ed2-4be5-b5cd-89bc13741214",
+      "scene_name": "A2-11"
+    }
+  },
+  "location_requests": {
+    "Cave Exterior": "f9a92d3f-aa4c-4c3a-994d-1066e899cf78",
+    "Cave Interior": "56478b3d-094c-4472-aa85-fab3303237fe",
+    "Meat Cache": "21adb016-74f0-45e2-99d0-7f241fb60abc"
+  }
+}

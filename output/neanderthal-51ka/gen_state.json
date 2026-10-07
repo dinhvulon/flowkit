@@ -1,0 +1,17 @@
+{
+  "project_id": "52fe8660-3617-4e4b-8055-23cf987ac4a2",
+  "video_id": "b5e0894c-3341-4cd9-a209-9bc39f63a58b",
+  "last_updated": "2026-10-06 22:28:13",
+  "scenes": {
+    "8": {
+      "id": "93ddd06f-1d92-4310-a7aa-6855a1e2ea9c",
+      "status": "COMPLETED",
+      "file": "output/neanderthal-51ka\\scenes\\scene_08_93ddd06f.mp4",
+      "media_id": "4f75e2e4-ce50-4478-9c2d-14d2b6dc5a40",
+      "upscale_status": "COMPLETED",
+      "raw_1080_file": "output/neanderthal-51ka\\1080\\scene_08_93ddd06f_1080p.mp4",
+      "clean_1080_file": "output/neanderthal-51ka\\1080\\scene_08_93ddd06f_1080p_clean.mp4",
+      "upscale_media_id": "4f75e2e4-ce50-4478-9c2d-14d2b6dc5a40"
+    }
+  }
+}
