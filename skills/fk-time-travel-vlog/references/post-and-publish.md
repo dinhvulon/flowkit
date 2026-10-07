@@ -11,8 +11,8 @@
   ffmpeg -i final.mp4 -vf "colorbalance=rs=0.03:bs=-0.03,noise=alls=5:allf=t" -c:a copy final_graded.mp4
   ```
   Thử trên một đoạn ngắn trước — grain quá tay làm mất cảm giác điện thoại.
-- **Chữ trên màn hình** chỉ 3 loại: năm, mission card, countdown `HOUR X — Y HOURS REMAINING` (`story-engine.md` mục 9). Có thể render card bằng công thức ffmpeg của `/fk-cinematic-transitions` mục 2, nhưng **bỏ** fade/dip-to-black và drone bumper — card đè lên hình, cắt thẳng.
-- **Mix & master âm thanh (`/fk-sound-design`):** thoại native của vlogger là lớp 1; ambient/nhạc duck −12 đến −15 dB khi có thoại; master cuối `loudnorm=I=-14:LRA=7:TP=-1.0` (−14 LUFS cho YouTube). `scripts/sfx_layering.py` tự thêm SFX theo từ khóa trong prompt — chỉ dùng khi clip thiếu tiếng va chạm, nghe lại trước khi giữ.
+- **Chữ trên màn hình** chỉ 3 loại: năm, mission card, countdown `HOUR X — Y HOURS REMAINING` (`story-engine.md` mục 9). Render card đè lên hình bằng lệnh `drawtext` ở `cinematic-toolkit.md` §7 (không bumper nền đen, không fade).
+- **Mix & master âm thanh:** duck nhạc theo track clip, master −14 LUFS, SFX bổ sung, J-cut — lệnh ffmpeg đã test ở `cinematic-toolkit.md` §6–7.
 - Phụ đề tùy chọn, chỉ dạng `.srt` rời — **không** burn hardsub (`scripts/generate_subtitles.py --burn-subtitles` của luồng cinematic không áp dụng cho vlog).
 - **Bíp chửi thề**: phủ tiếng bíp ~0.3s tại mỗi mốc `bleep_at` trong Clip JSON (xem lại clip trước khi bíp vì model có thể lệch mốc vài trăm mili-giây).
 

@@ -25,7 +25,7 @@ Format ăn view nhờ 3 thứ: **góc nhìn người thật** (mọi thứ như 
 |---|---|---|
 | Hư cấu | Phim giải trí, không phải tài liệu: sự kiện, phong tục, mẹo sinh tồn đều bịa được. Vlogger **không dạy lịch sử** (không niên đại, "scientists say"). Chỉ giữ: trông đúng thời kỳ + không biếm họa dân tộc/tôn giáo. `/fk-research` tùy chọn | `era-research.md` |
 | Sinh video | **Chỉ R2V Ingredients** (`GENERATE_VIDEO_REFS`, `abra_r2v_<N>s`, `MZZa6b`). Không sinh start frame rồi i2v cho clip có vlogger | `flowkit-pipeline.md` |
-| Bộ ref vlogger | `<V>` (mặt+tóc) + `<V> Body` (body 3 góc **đã mặc outfit**, EDIT từ Body trần). Không entity `<V> Outfit`. Tối đa 3 ref/clip. Body phải được user duyệt trước khi sinh video | `character-bible.md` §5 |
+| Bộ ref vlogger | `<V>` (mặt+tóc) + `<V> Body` (body 3 góc **đã mặc outfit**, EDIT từ Body trần gốc theo công thức outfit lock). Không entity `<V> Outfit`. Tối đa 3 ref/clip. Body phải được user duyệt trước khi sinh video | `character-bible.md` §5–6 |
 | Giọng | Chỉ vlogger có `voice_description` (Laomedeia). 1 giọng/clip | `character-bible.md` §3 |
 | Nhân vật phụ | Được nói, bằng ngôn ngữ không hiểu được, ở sub-clip riêng, giọng tả bằng chữ; vlogger phản ứng với giọng điệu, **không dịch** | `character-bible.md` §4 |
 | Thoại | **18–22 từ / clip 8s** (6–7 / 7–8 / 5–7 theo `0-3s / 3-6s / 6-8s`), Rule 49. Chỉ cảnh cuối và establishing shot 4s không người được 0 từ. Viết/sửa qua `/fk-gen-narrator` | `voice-bible.md` §2 |
@@ -44,15 +44,15 @@ Mỗi bước: đọc reference ghi kèm **trước khi** làm. Bước có ⛔ 
 |---|---|---|---|
 | 0 | **Đầu vào** — tối đa 1 lượt hỏi, còn lại dùng mặc định (bảng dưới) và ghi rõ giả định | — | 3–5 dòng giả định |
 | 1 | **Ý tưởng thế giới** (tùy chọn): `/fk-research` hoặc tự bịa, chọn 10–15 beat | `era-research.md` | bảng beat |
-| 2 | **Character Bible**: `CHARACTER_LOCK` + Laomedeia + `VOICE_LOCK` + kế hoạch bộ ref | `character-bible.md`, `voice-bible.md` §0–1, `prompt-templates.md` | khối lock trong `script.md` |
-| 3 | **Outline**: chuỗi nhân quả sinh tồn → cold open 8s → 5 Act mỗi Act 1 câu hỏi → payoff → cảnh cuối không thoại. Kho cảnh 7 hồi / 23 beat dùng để lấy ý | `story-engine.md` (bắt buộc), `structure-7-acts.md`, `reference-analysis.md` | outline + thời lượng |
+| 2 | **Character Bible**: `CHARACTER_LOCK` + Laomedeia + `VOICE_LOCK` + kế hoạch bộ ref | `character-bible.md`, `voice-bible.md` §0–1, `prompt-templates.md`, `cinematic-toolkit.md` §4 (trang phục đổi giữa tập) | khối lock trong `script.md` |
+| 3 | **Outline**: chuỗi nhân quả sinh tồn → cold open 8s → 5 Act mỗi Act 1 câu hỏi → payoff → cảnh cuối không thoại. Kho cảnh 7 hồi / 23 beat dùng để lấy ý | `story-engine.md` (bắt buộc), `structure-7-acts.md`, `reference-analysis.md`, `cinematic-toolkit.md` §3 (hồi hộp, đổi cỡ cảnh) | outline + thời lượng |
 | 4 | **Storyboard + bảng vật lý** từng clip (máy ở đâu, có gì ở giây 0, hướng + tốc độ vật di chuyển, ai rời khung bằng cách nào) ⛔ user duyệt bảng vật lý | `shots-and-realism.md`, `transitions.md` | bảng storyboard + bảng vật lý |
-| 5 | **Clip JSON + `video_prompt`** theo khung 9 khối, qua checklist B; thoại qua `/fk-gen-narrator`. Long-form xuất từng Act, ⛔ hỏi user trước khi sang Act sau | `prompt-lock.md`, `production-lessons.md`, `prompt-templates.md`, `voice-bible.md` §2–6 | `output/<slug>/script.md` |
-| 6 | **Dựng dự án FlowKit** (pre-flight, flush PENDING, project, video, scenes, PATCH `duration` + `narrator_text`) | `flowkit-pipeline.md` §2–3 | project/video/scene ids |
-| 7 | **Refs**: mặt, Body đã mặc outfit, bối cảnh — xóa logo, upload lại ⛔ hỏi trước khi sinh, ⛔ user duyệt ảnh | `flowkit-pipeline.md` §4 | entity có UUID media_id |
+| 5 | **Clip JSON + `video_prompt`** theo khung 9 khối, qua checklist B; thoại qua `/fk-gen-narrator`. Long-form xuất từng Act, ⛔ hỏi user trước khi sang Act sau | `prompt-lock.md`, `production-lessons.md`, `prompt-templates.md`, `voice-bible.md` §2–6, `cinematic-toolkit.md` §1–2 (hành động 3 pha, cảm xúc) | `output/<slug>/script.md` |
+| 6 | **Dựng dự án FlowKit** (pre-flight, flush PENDING, project, video, scenes, PATCH `duration` + `narrator_text`) | `flowkit-pipeline.md` §2–3; tập tiếp theo của series: `cinematic-toolkit.md` §5 | project/video/scene ids |
+| 7 | **Refs**: mặt, Body đã mặc outfit (công thức outfit lock), bối cảnh — xóa logo, upload lại ⛔ hỏi trước khi sinh, ⛔ user duyệt ảnh | `flowkit-pipeline.md` §4, `character-bible.md` §6 | entity có UUID media_id |
 | 8 | **Video R2V**: clip khó nhất trước, rồi clip mốc, rồi cả loạt ⛔ hỏi trước mỗi lượt | `flowkit-pipeline.md` §5 | clip 720p |
 | 9 | **Review 720p** (`/fk-review-video` + Review Board :8200) ⛔ user duyệt từng clip → upscale 1080p → xóa logo → concat | `flowkit-pipeline.md` §6 | bản 1080p clean |
-| 10 | **Hậu kỳ**: cắt tại khung che, nhạc/ambient liên tục, card chữ, bíp, master −14 LUFS | `post-and-publish.md` §1 | video final |
+| 10 | **Hậu kỳ**: cắt tại khung che + J-cut, nhạc duck dưới thoại, card chữ, bíp, master −14 LUFS | `post-and-publish.md` §1, `cinematic-toolkit.md` §6–7 | video final |
 | 11 | **Đóng gói YouTube** + chiến lược kênh | `post-and-publish.md` §2–4 | tiêu đề, mô tả, thumbnail |
 
 Long-form → ghi `output/<slug>/script.md` (cập nhật dần theo Act); Shorts → trả thẳng trong chat. Chỉ dựng dự án FlowKit (bước 6) sau khi user duyệt kịch bản.
@@ -87,11 +87,11 @@ Chỉ học format; không sao chép tên, ngoại hình hay lời thoại nhân
 | `/fk-gen-narrator` | **Bắt buộc** khi viết/sửa thoại (Time-Travel Vlog Mode, 18–22 từ) |
 | `/fk-research` | Tùy chọn, gom ý tưởng hình ảnh |
 | `/fk-camera-guide` | Mục "5-Layer Physical Prompt" và quang học smartphone. **Bỏ qua** bảng ống kính điện ảnh / color grade (Anamorphic, Cooke…) — trái cảm giác footage tự quay |
-| `/fk-action-choreography` | Cảnh săn, chạy trốn, vật lộn với thú: dùng **3-phase motion** (chuẩn bị → một vector đòn → thu thế) và bảng từ vựng an toàn chống méo người. **Bỏ** dòng `Negative:` trong các template của nó |
-| `/fk-character-bible` | Ý tưởng **Wardrobe State Matrix** khi trang phục đổi giữa chừng (bị thương, ướt, khoác da thú mới): mỗi trạng thái = một ảnh `<V> Body` riêng (vd `Nora Body Wounded`), vẫn không tách entity Outfit. Series manifest để tái dùng mặt vlogger qua nhiều tập |
-| `/fk-sound-design` | Duck nhạc/ambient dưới thoại, master −14 LUFS, `scripts/sfx_layering.py` |
-| `/fk-cinematic-transitions` | Chỉ lấy J-cut / L-cut / sound bridge và công thức render card chữ. **Không** dùng chapter bumper, dip-to-black, crossfade, focus-pull dissolve giữa các clip |
-| `/fk-scriptwriter` | **Không dùng cho vlog này** — đó là luồng phim điện ảnh có người dẫn truyện (TTS), thoại 10–12 từ/nhân vật; time-travel vlog dùng thoại native 18–22 từ và `story-engine.md` |
+| `/fk-action-choreography` | Đã chuyển thành `references/cinematic-toolkit.md` §1: hành động 3 pha khớp sub-clip thoại, góc máy của vlogger, từ vựng săn/né/thú lao tới chống méo người |
+| `/fk-scriptwriter` | Phần dùng được đã chuyển vào `cinematic-toolkit.md` §2–3: cảm xúc bằng triệu chứng cơ thể, vòng A→B mỗi clip, 6 kỹ thuật hồi hộp, đổi cỡ cảnh. **Không** dùng lời dẫn TTS và luật 10–12 từ của nó |
+| `/fk-character-bible` | `cinematic-toolkit.md` §4–5: mỗi trạng thái trang phục = một ảnh `<V> Body …` riêng; tập mới mang theo **mặt + Body trần gốc** (mặt qua `scripts/series_manifest.py bootstrap --only "<V>"`, Body trần qua `source_media_id`), rồi EDIT ra Body mặc outfit của tập theo công thức outfit lock (`character-bible.md` §6) |
+| `/fk-sound-design` | `cinematic-toolkit.md` §6: duck nhạc theo track clip + master −14 LUFS (lệnh đã test), `scripts/sfx_layering.py` khi thiếu tiếng va chạm |
+| `/fk-cinematic-transitions` | `cinematic-toolkit.md` §7: J-cut khi cắt thẳng và card chữ đè lên hình (lệnh đã test). **Không** bumper, dip-to-black, crossfade, hardsub |
 | `/fk-upload-ref`, `/fk-gen-refs`, `/fk-remove-watermark`, `/fk-upload-image` | Bộ ref (bước 7) |
 | `/fk-review-video`, `/fk-review-board`, `/fk-concat`, `/fk-gen-music` | Bước 9–10 |
 | `/fk-youtube-seo`, `/fk-thumbnail`, `/fk-youtube-upload` | Bước 11 (bật nhãn "Altered or synthetic content" bằng tay) |

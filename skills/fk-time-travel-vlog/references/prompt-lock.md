@@ -44,5 +44,7 @@
 | 19 | **Khóa tóc cụ thể theo ảnh ref:** vị trí cột tóc (`tied at the crown of her head, not low at the nape`), mái (`wispy curtain bangs parted in the middle that cover the edges of her forehead and frame both cheeks`), `never slicked back`; có gió thì ghi `wind only makes the ponytail swing, the bangs stay over her forehead` — không viết tóc bị gió `whip` | 55 |
 | 20 | **Cảnh POV có tay vlogger** (cầm, chạm, xỏ, đỡ đồ) → `character_names` phải có `<V>` + `<V> Body` (đã mặc outfit) để bàn tay, cổ tay áo đúng của nhân vật chính (user chốt 04/10/2026, cập nhật theo Rule 46) | Scene 45/53, 60 |
 | 21 | **Đạo cụ cầm tay của nhân vật phụ** (giáo, gậy, cốc) → tạo ref riêng `<Tên> <Đạo cụ>` (vd `Torak Spear`) bằng **EDIT từ ảnh ref gốc** của nhân vật (giữ mặt + trang phục), sheet 16:9 3 góc, đạo cụ cầm sẵn trong tay; xóa logo → upload lại → dùng thay ref nhân vật trong cảnh đó | Scene 29 |
+| 22 | Clip hành động chia đúng 3 pha (chuẩn bị → **một** đòn theo một hướng → thu thế) khớp `0-3s / 3-6s / 6-8s`; không xoay 360°, không thú lao thẳng vào ống kính, không tả xuyên thịt — chỉ tả quỹ đạo và hậu quả | `cinematic-toolkit.md` §1 |
+| 23 | Cảm xúc của vlogger viết bằng triệu chứng cơ thể (thở, mắt, hàm, vai), không bằng tính từ (`terrified`, `sad`); clip có vòng A → chất xúc tác → B | `cinematic-toolkit.md` §2 |
 
 **C. Sau khi sinh — rà lỗi theo cùng checklist** khi review (`/fk-review-video` + user): trích ~16 frame/clip, đối chiếu từng dòng B; lỗi mới chưa có trong bảng → ghi bài học mới vào `production-lessons.md` **và** thêm 1 dòng vào bảng B.

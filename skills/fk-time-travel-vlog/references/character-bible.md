@@ -51,3 +51,40 @@ Thay cả kiểu "người bản địa câm, môi khép" lẫn kiểu "Translat
 - **Phụ kiện rời** (bao tay, mũ, khăn) mà cảnh sau có thao tác đeo/tháo: ảnh Body **không** đính kèm chúng (để tay trần); đưa vào bằng prompt hành động (Bài học 46, Rule 45).
 - **Cổng duyệt bắt buộc:** trước bất kỳ lệnh sinh video nào, xuất ảnh Body đã mặc trang phục (đã xóa logo) cho user xem và **chờ user duyệt dáng & trang phục**.
 - Khối `[ID-LOCK]` trong mọi `video_prompt`: *"her face and hair from the <Vlogger> face sheet, and her build and clothing from the <Vlogger> Body sheet (which shows her full body dressed in this handmade outfit)"*, kèm `BODY LOCK` & `OUTFIT LOCK` (Bài học 60, `prompt-lock.md` khối 5).
+
+## 6. Công thức outfit lock — mặc trang phục lên Body trần gốc
+
+Đây là quy trình đã chạy ở Neanderthal 51ka (`uploads/nora_body_outfit_prompt.json`). Dùng lại y nguyên cho **mọi tập mới** và **mọi trạng thái trang phục** (`cinematic-toolkit.md` §4).
+
+**Tài sản cố định của vlogger** (giữ suốt series, không sinh lại):
+
+| File | Vai trò |
+|---|---|
+| `uploads/<v>_main.jpg` | Ảnh mặt → entity `<V>` |
+| `uploads/<v>_base_body_prompt.json` | Prompt đã tạo Body trần — nguồn của câu tả dáng `BODY` |
+| `uploads/<v>_body_v3_clean.jpg` | **Body trần gốc** đã xóa logo (áo ba lỗ xám + quần short đen, 3 panel, cắt ngang vai) |
+| `uploads/<v>_body_outfit_<tập>_prompt.json` | Prompt EDIT của từng tập / trạng thái + `source_media_id` đã dùng |
+
+**Các bước** (⛔ hỏi user trước bước 3, ⛔ user duyệt ở bước 5):
+1. **Lấy `source_media_id` của Body trần:** cùng Flow project với tập trước thì dùng lại `source_media_id` trong file prompt cũ; Flow project mới thì upload lại `uploads/<v>_body_v3_clean.jpg` (`/fk-upload-image`) để lấy UUID mới.
+2. **Điền mẫu EDIT** bên dưới (trang phục = đúng câu `OUTFIT LOCK` sẽ dùng trong `video_prompt` của tập), lưu thành `uploads/<v>_body_outfit_<tập>_prompt.json`, rồi PATCH vào entity:
+   ```bash
+   curl -X PATCH http://127.0.0.1:8100/api/characters/<BODY_CID> -H "Content-Type: application/json" \
+     -d '{"image_prompt": "<edit_prompt đã điền>"}'
+   ```
+   (`EDIT_CHARACTER_IMAGE` lấy `image_prompt` của entity làm prompt sửa ảnh.)
+3. **EDIT từ Body trần gốc** (không bao giờ từ ảnh đã mặc của tập trước — Rule 46, không chain):
+   ```bash
+   curl -X POST http://127.0.0.1:8100/api/requests/batch -H "Content-Type: application/json" -d '{"requests": [
+     {"type": "EDIT_CHARACTER_IMAGE", "character_id": "<BODY_CID>", "project_id": "<PID>", "source_media_id": "<BARE_BODY_MEDIA_ID>"}]}'
+   ```
+4. Tải ảnh → `python tools/remove_watermark_from_image.py <file>` → upload bản `_clean` → PATCH `media_id` của `<V> Body` bằng UUID sạch (Rule 28).
+5. ⛔ Đưa ảnh cho user duyệt dáng + trang phục. Hỏng (mất dáng, thêm lông/tua, áo rộng) → sửa câu trang phục, chạy lại bước 3.
+
+**Mẫu `edit_prompt`** (giữ nguyên phần khung, chỉ thay 2 chỗ `[…]`):
+```text
+Edit this image: keep the exact same three panels side by side, the same three poses (front, three-quarter turn, back), the same framing cropped horizontally across the shoulders with head and face completely outside the frame, the same plain light-grey studio background, and the exact same body from the source image: [BODY — chép câu tả dáng từ uploads/<v>_base_body_prompt.json]. Only change the clothing: replace the grey ribbed tank top and black bike shorts with [OUTFIT — đúng câu OUTFIT LOCK của tập/trạng thái: chất liệu, màu, cổ áo, thắt lưng, tay áo, quần, giày], tailored skin-tight so it tightly hugs and preserves this exact body without adding bulk. BODY LOCK (CRITICAL): Preserve the exact same body proportions from the source image. NOT loose, NOT baggy, NOT a thick parka, NOT changing the body shape. Photorealistic RAW photograph, high detail. No text, labels or logos.
+```
+- Câu `[OUTFIT]` ghi rõ cả thứ **không** có (không mũ trùm, không viền lông, không khóa kim loại…) — đây là prompt ảnh, không phải `video_prompt`, nên câu "NOT…" được phép.
+- Phụ kiện sẽ đeo/tháo trong cảnh (bao tay, mũ) **không** đưa vào `[OUTFIT]` (mục 5).
+- Cùng câu `[OUTFIT]` đó là `OUTFIT LOCK` trong `video_prompt` của tập — một nguồn duy nhất, không viết lại khác đi.

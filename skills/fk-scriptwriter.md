@@ -1,5 +1,7 @@
 # The Ultimate AI Screenplay Bible — Google Flow & Veo 3
 
+> **Time-travel / POV vlog (`/fk-time-travel-vlog`):** dùng bản đã chỉnh theo luật vlog ở `skills/fk-time-travel-vlog/references/cinematic-toolkit.md` §2–3 (cảm xúc bằng triệu chứng cơ thể, vòng A→B, bộ công cụ hồi hộp). Thoại vlog là native 18–22 từ (Rule 49), không dùng lời dẫn TTS hay luật 10–12 từ ở đây. Template trong file này có dòng `Negative:` và góc máy người thứ ba — không chép nguyên vào prompt vlog.
+
 Usage: `/fk-scriptwriter "<topic / series title>" [--episode N] [--scenes 8|12] [--lang vi|en] [--orientation HORIZONTAL|VERTICAL] [--fast]`
 
 - **Default:** Runs the **Interactive 5-Step Director Workflow** (Section A), pausing for approval at Steps 1, 3, and 5.

@@ -41,6 +41,7 @@ curl -X POST http://127.0.0.1:8100/api/projects -H "Content-Type: application/js
   "name": "Rome 79 AD - Time Travel Vlog",
   "story": "<tóm tắt cold open + 5 Act>",
   "material": "phone_vlog",
+  "allow_voice": true,
   "characters": [
     {"name": "Nora", "entity_type": "character", "description": "<CHARACTER_LOCK nguyên văn>", "voice_description": "<Laomedeia>"},
     {"name": "Nora Body", "entity_type": "character", "description": "<body sheet 3 góc đã mặc outfit thời kỳ>"},
@@ -48,6 +49,7 @@ curl -X POST http://127.0.0.1:8100/api/projects -H "Content-Type: application/js
   ]
 }'
 ```
+- `allow_voice: true`: server tự nối hậu tố vào mọi `video_prompt` (kể cả R2V, `_build_video_prompt`). Prompt thiếu dòng `Audio:` mà `allow_voice` tắt thì hậu tố là "no narration, no voiceover" — có thể nuốt giọng vlogger. Server cũng luôn nối `Negative: subtitles, captions, watermark, text on screen, logo, blurry faces, distorted hands.` nếu prompt chưa có chữ `negative:`; dòng này không nhắc thiết bị nên chấp nhận được, nhưng đừng tự thêm dòng `Negative:` khác.
 - Bối cảnh cần giữ nhất quán khai báo `visual_asset` (worker bỏ qua `location` khi chạy R2V — Bài học 6). Chỉ vlogger có `voice_description` (Bài học 13).
 - Material `phone_vlog`: tạo theo `shots-and-realism.md` mục chuẩn chân thực, hoặc dùng `realistic`.
 - Sau đó: `POST /api/videos` → `POST /api/scenes` theo thứ tự storyboard → PATCH `duration` + `narrator_text` từng scene → `/fk-switch-project <PID>`.
@@ -56,7 +58,7 @@ curl -X POST http://127.0.0.1:8100/api/projects -H "Content-Type: application/js
 ## 4. Refs → cổng duyệt
 
 1. **Mặt** `<V>`: `/fk-upload-ref` (mặt thật) hoặc `/fk-gen-refs` (16:9 sheet nhiều góc). Xóa logo → upload lại (Rule 28).
-2. **Body đã mặc outfit** `<V> Body`: `EDIT_CHARACTER_IMAGE` từ Body trần gốc (`character-bible.md` mục 5). Xóa logo → upload lại.
+2. **Body đã mặc outfit** `<V> Body`: công thức outfit lock — `EDIT_CHARACTER_IMAGE` từ Body trần gốc (`character-bible.md` §6). Xóa logo → upload lại.
 3. **Ref bối cảnh / sinh vật / đạo cụ nhân vật phụ** (Bài học 5, checklist #21).
 4. **DỪNG — cổng duyệt:** ghép bảng ảnh, đưa đường dẫn file cho user xem. Kiểm UUID media_id mọi entity (Rule 1, `/fk-fix-uuids` nếu thấy `CAMS...`).
 
@@ -76,15 +78,9 @@ curl -X POST http://127.0.0.1:8100/api/projects -H "Content-Type: application/js
 4. Chỉ clip đã duyệt: `UPSCALE_VIDEO` (1080p, `p0UkFb`) → `${OUTDIR}/1080/scene_{idx}_{sid}_1080p.mp4` → `remove_watermark_video` → `..._1080p_clean.mp4`.
 5. `/fk-concat` cắt thẳng tại khung che (không crossfade, không text overlay); trim `-ss 1` đầu mỗi clip. Chỉ thêm `--tts` nếu user chọn lồng tiếng thay thoại native.
 
-## 7. Dự án nhiều tập — series manifest (từ upstream)
+## 7. Dự án nhiều tập — series manifest
 
-`output/<slug>/series_manifest.json` tự sinh khi gọi `GET /api/projects/{pid}/output-dir` hoặc `GET /api/projects/{pid}/manifest`. Dùng để mở tập mới (thời kỳ mới) mà vẫn giữ mặt vlogger:
-```bash
-python scripts/series_manifest.py sync --project-id <PID_TẬP_TRƯỚC>
-python scripts/series_manifest.py show --project-dir output/<slug>
-python scripts/series_manifest.py bootstrap --project-dir output/<slug> --episode 2 --title "<tên tập>"
-```
-Chỉ tái dùng `<V>` (mặt). `<V> Body` và ref bối cảnh luôn làm mới theo trang phục và thời kỳ của tập mới.
+Tập mới mang theo **mặt `<V>` + Body trần gốc** của vlogger: mặt qua `scripts/series_manifest.py bootstrap --only "<V>" --flow-project-id …`, Body trần qua `source_media_id`; rồi EDIT ra `<V> Body` mặc outfit của tập theo công thức outfit lock. Chi tiết: `cinematic-toolkit.md` §5 và `character-bible.md` §6. Ref bối cảnh luôn làm mới.
 
 ## 8. Dự phòng khi Google chặn sinh tự động → xuất file import thủ công
 
