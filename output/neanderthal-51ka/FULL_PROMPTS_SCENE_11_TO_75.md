@@ -196,37 +196,38 @@ Gentle crackle of glowing pine embers, soft rustle of suede, quiet breath of rel
 
 ---
 
-### CẢNH 15 (8s) — Người Phụ Nữ Lớn Tuổi Quan Sát Nora
+### CẢNH 15 (8s) — Người Phụ Nữ Lớn Tuổi Quan Sát Kỹ Nghệ May Áo Của Nora (CÓ THOẠI VLOG)
 - **Mã kịch bản:** A2-04
-- **Góc máy:** Cận cảnh chân dung người phụ nữ lớn tuổi (Close-up portrait of the Old Woman).
-- **Nhân vật:** Người Phụ Nữ Lớn Tuổi (~45t), Nora ngồi bên cạnh.
+- **Góc máy:** Over-the-shoulder medium close-up ngang tầm bếp lửa (Over-the-shoulder handheld at hearth level).
+- **Nhân vật:** Nora, Người Phụ Nữ Lớn Tuổi (~45t), Cave Interior.
 - **Diễn biến:**
-  - `0-2s`: Người Phụ Nữ Lớn Tuổi chăm chú quan sát đường khâu bằng gân thú tỉ mỉ trên đường vai áo da hươu của Nora.
-  - `2-5s`: Bàn tay thô ráp nứt nẻ sương tuyết của bà khẽ vươn ra, đầu ngón tay chạm nhẹ vào đường may, cảm nhận độ tinh xảo của mũi chỉ.
-  - `5-8s`: Bà ngước nhìn vào mắt Nora, nét mặt nghiêm nghị dịu lại thành một cái gật đầu chậm rãi đầy trân trọng. Môi khép chặt.
+  - `0-3s`: Người Phụ Nữ Lớn Tuổi nghiêng đầu lại gần, tò mò ngắm nhìn những đường may gân thú thẳng tắp, tinh xảo dọc theo vai áo da hoẵng của Nora.
+  - `3-6s`: Bà vươn những đầu ngón tay thô ráp, chai sần chạm khẽ vào từng mũi khâu da thuộc, cảm nhận độ tinh xảo; bà ngước nhìn vào mắt Nora, khẽ gật đầu công nhận. Môi bà ngậm chặt, không nói lời nào.
+  - `6-8s`: Nora khẽ xoay góc máy về phía mình, gương mặt bừng sáng nụ cười xúc động, thì thầm trực tiếp vào camera (khẩu hình native khớp chuẩn câu thoại qua voice profile Laomedeia):
+    > **Nora says in a breathless, awed whisper:** *"She's inspecting my stitches... She recognizes the craftsmanship."*
 - **FULL PROMPT (OMNI FLASH R2V):**
 ```text
 Photorealistic prehistoric survival documentary footage.
 SHOT:
-Close-up anthropological portrait shot of the Neanderthal Old Woman sitting beside the hearth.
+Over-the-shoulder medium close-up shot at hearth level, angled across Nora's shoulder toward the Neanderthal Old Woman sitting opposite her, with warm flickering campfire illumination. Camera maintains steady organic micro-tremors; strictly NO 180-degree camera flips.
 SETTING:
-Hearthside inside Pech de l'Azé cave, 51,000 years ago. Soft blurred limestone background with warm golden firelight reflections.
+Inside the limestone cave of Pech de l'Azé beside the limestone hearth, Dordogne, 51,000 years ago during glacial winter. Softly blurred limestone cave wall in background illuminated with dancing amber firelight reflections. Strictly NO modern items, NO modern clothing.
 CHARACTERS:
-The Old Woman (~45), robust Neanderthal elder with heavy brow ridge, broad nose, weathered sun-cured skin, and dark hair streaked with grey tied with a raw leather thong. Nora sits beside her in golden-tan suede tunic. Both have lips firmly closed throughout.
-CONTINUITY & BODY LOCK:
-Nora's honey-blonde hair is tied in a high ponytail with an authentic raw leather thong; golden suede tunic with laced chest.
-0-2s: The Old Woman looks closely at the neat, precision sinew stitching along the shoulder seam of Nora's golden suede tunic.
-2-5s: Her thick, calloused fingers reach out gently and touch the stitched seam, feeling the tailored craftsmanship with thoughtful curiosity.
-5-8s: She looks up into Nora's eyes; her weathered expression softens into a slow, dignified nod of mutual respect and acceptance.
+Nora sits cross-legged beside the hearth in her golden-tan deer suede tunic. Opposite her sits the Old Woman (~45 years old, experienced Neanderthal elder woman with prominent brow ridges, wide nasal bridge, weathered skin, dark hair streaked with grey draped in deer pelt). Strictly NO children, NO wounded people. The Old Woman's lips remain firmly closed throughout; zero words from the Neanderthal.
+IDENTITY & OUTFIT LOCK (CRITICAL -- match reference images exactly):
+Nora's face and hair match the Nora face reference sheet, and her build and clothing match the Nora Body sheet. Nora has a voluptuous, curvaceous hourglass figure with a prominent high natural bust, tiny narrow waist, and shapely hips. Nora has honey-blonde hair pulled up into a high wavy ponytail tied with a raw leather thong (strictly NO rubber band), with wispy curtain bangs framing both cheeks. Nora wears a form-fitting tailored tunic of smoked golden-tan deer suede, precision-sewn with fine sinew stitches. CHEST LACING LOCK (CRITICAL): Deep plunging V-neckline laced with thick dark-brown leather thongs forming a prominent X-pattern bridge across her cleavage. CORSET BELT LOCK (CRITICAL): Tightly cinched at her tiny waist with a wide 10-12 cm dark-chocolate brown leather belt. SLEEVE CUFF LOCK (CRITICAL): Long fitted sleeves ending cleanly at the wrists; knee-high hide boots worn on her feet. Strictly NO modern jewelry, NO necklace, NO chain.
+CRITICAL VLOG SPEECH LOCK:
+Only Nora speaks English to the camera in her native Laomedeia voice profile; the Neanderthal Old Woman never speaks English and keeps her lips firmly closed.
+0-3s: The Old Woman leans in slightly, her weathered gaze captivated by the neat, microscopic sinew stitching along the shoulder and chest seam of Nora's golden suede tunic.
+3-6s: With slow, respectful curiosity, the Old Woman extends her thick, calloused fingertips to gently brush against the fine seam stitching, feeling the craftsmanship with quiet awe; she looks up into Nora's eyes with a gentle, dignified nod of mutual respect.
+6-8s: Nora turns her face toward the lens with an emotional, radiant smile and soft breath vapor; Nora says in a breathless, awed whisper: "She's inspecting my stitches... She recognizes the craftsmanship."
 PHYSICAL REALISM & BIOMECHANICS:
-Authentic Neanderthal finger ergonomics with broad tactile pads; subtle skin micro-creases in firelight; natural eye contact and respectful non-verbal communication.
+Tactile sensation of rough weathered fingertips touching supple smoked suede; authentic warm firelight rim lighting dancing on hair and skin; soft dissipation of breath vapor in cold cave air; subtle breathing rhythm.
 CAMERA:
-Handheld close-up with gentle breathing rhythm, holding steady intimate focus on the Old Woman's expressive features.
+Handheld over-the-shoulder medium close-up, gently shifting focus from the Old Woman's touching hand to Nora's speaking face.
 AUDIO:
-Soft steady crackle of the hearth fire, subtle rustle of suede and pelt, quiet steady breathing. Strictly NO spoken dialogue.
+Gentle crackle of glowing pine embers, soft rustle of suede and pelt, quiet breath, Nora's clear spoken whisper: "She's inspecting my stitches... She recognizes the craftsmanship."
 ```
-
----
 
 ### CẢNH 16 (8s) — Kỹ Thuật Đun Nước Bằng Đá Nung (Stone Boiling)
 - **Mã kịch bản:** A2-05

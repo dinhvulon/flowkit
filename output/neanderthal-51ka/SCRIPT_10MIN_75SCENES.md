@@ -107,11 +107,12 @@
 - **Góc máy:** Góc nhìn cận cảnh bên bếp lửa (Medium close-up at hearth level).
 - **Diễn biến:** Nora ngồi bệt trên tấm da thú khô cạnh bếp lửa, cởi đôi ủng ướt đặt cạnh phiến đá nóng. Hơi nước từ chiếc áo da hươu vàng bốc lên nghi ngút khi cô hơ hai bàn tay vào ngọn lửa đỏ.
 
-#### Cảnh 15 (8s) — Người Phụ Nữ Lớn Tuổi quan sát Nora
-- **Góc máy:** Cận cảnh chân dung Người Phụ Nữ Lớn Tuổi (Close-up portrait of Old Woman).
-- **Diễn biến:** Ánh lửa bập bùng soi rõ những nếp nhăn dãi dầu thời gian, vết sẹo mờ trên gò má và đôi mắt nâu sẫm trầm tĩnh của người phụ nữ Neanderthal lớn tuổi. Bà nhìn mái tóc vàng đuôi ngựa và trang phục của Nora với ánh mắt tò mò nhưng hiền từ.
+#### Cảnh 15 (8s) — Người Phụ Nữ Lớn Tuổi quan sát kỹ nghệ may áo của Nora (CÓ THOẠI VLOG)
+- **Góc máy:** Over-the-shoulder medium close-up ngang tầm ngực bên bếp lửa.
+- **Diễn biến:** Ánh lửa soi rõ những nếp nhăn và đôi mắt trầm tĩnh của người phụ nữ Neanderthal lớn tuổi. Bà đưa những ngón tay chai sạn chạm khẽ vào từng mũi khâu gân thú tinh xảo trên vai áo Nora với vẻ thán phục, rồi gật đầu điềm đạm. Nora xúc động mỉm cười thì thầm vào camera.
+- **Thoại Vlog:** *"She's inspecting my stitches... She recognizes the craftsmanship."* (Nora thì thầm run run đầy cảm xúc).
 
-#### Cảnh 16 (8s) — Chia sẻ đồ uống ấm bằng đá nung
+### Cảnh 16 (8s) — Chia sẻ đồ uống ấm bằng đá nung
 - **Góc máy:** POV cận cảnh trao đồ vật (POV exchange at hearth).
 - **Diễn biến:** Người Phụ Nữ Lớn Tuổi dùng kẹp gỗ gắp một hòn đá cuội nung đỏ thả vào chiếc bát đẽo bằng vỏ cây chứa nước thảo mộc. Nước sôi sủi bọt xèo xèo. Bà đẩy chiếc bát ấm về phía Nora.
 

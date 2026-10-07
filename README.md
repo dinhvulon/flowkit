@@ -52,12 +52,12 @@ FlowKit's 36 skills (`skills/fk-*.md`) are plain Markdown recipes any AI coding
 agent can read and follow. Review providers are swappable at runtime
 (`agent/providers.json`, or `/fk-change-provider`) — no restart needed.
 
-| Agent | Skills | Video review provider |
-|-------|--------|----------------------|
-| **Muse** | Native — reads `skills/fk-*.md` directly, vision on files and contact sheets (`muse.read`) | `muse` (= the agent itself) — official opt-in self-review: no CLI, no model, no API key; score sheets by hand via `review-sheets` → `review-submit` |
-| **Claude Code** | Auto-loaded via `CLAUDE.md`, native `/fk-*` slash commands | `claude` — default `video_review` role |
-| **Codex CLI** | Reads `skills/fk-<name>.md` via `AGENTS.md`; vision on contact sheets for self-review | `codex` — OpenAI Codex CLI, or `muse` (= the agent itself) for hand scoring |
-| **agy** (Google Antigravity) | Reads skill files manually; vision on contact sheets for self-review | `agy` — Antigravity CLI, or `muse` (= the agent itself) for hand scoring |
+| Agent                        | Skills                                                                                     | Video review provider                                                                                                                               |
+| ---------------------------- | ------------------------------------------------------------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Muse**                     | Native — reads `skills/fk-*.md` directly, vision on files and contact sheets (`muse.read`) | `muse` (= the agent itself) — official opt-in self-review: no CLI, no model, no API key; score sheets by hand via `review-sheets` → `review-submit` |
+| **Claude Code**              | Auto-loaded via `CLAUDE.md`, native `/fk-*` slash commands                                 | `claude` — default `video_review` role                                                                                                              |
+| **Codex CLI**                | Reads `skills/fk-<name>.md` via `AGENTS.md`; vision on contact sheets for self-review      | `codex` — OpenAI Codex CLI, or `muse` (= the agent itself) for hand scoring                                                                         |
+| **agy** (Google Antigravity) | Reads skill files manually; vision on contact sheets for self-review                       | `agy` — Antigravity CLI, or `muse` (= the agent itself) for hand scoring                                                                            |
 
 ## Showcase
 
@@ -274,6 +274,7 @@ Chạy mỗi lần mới cài **và mỗi lần pull code mới** (code mới c�
 ```powershell
 .\venv\Scripts\python.exe -m pip install -r requirements.txt   # Windows
 ```
+
 ```bash
 venv/bin/python -m pip install -r requirements.txt               # macOS / Linux
 ```
@@ -306,16 +307,17 @@ _(`setup.ps1` / `setup.sh` đã chạy lệnh này — chạy lại setup cũng 
 
 Server chỉ đọc biến môi trường **một lần lúc khởi động**, và `$env:` / `export` chỉ có hiệu lực trong cửa sổ terminal đó. Nên set trong **đúng terminal** sẽ chạy Bước 5, **trước** khi chạy server. Không set gì vẫn chạy được:
 
-| Biến | Khi nào cần |
-| --- | --- |
-| `FLOW_PROJECT_ID` | **Không bắt buộc nữa.** `POST /api/projects` tự tạo project Flow mới; các lệnh `/api/flow/*` không truyền `project_id` dùng một *session project* tự tạo (đổi sau 2 giờ không hoạt động). Chỉ set khi muốn các lệnh nội bộ cũ dùng một project cố định — lấy uuid ở cuối URL `https://flow.google.com/project/<uuid>`. Muốn một project FlowKit gắn vào project Flow có sẵn thì truyền `flow_project_id` khi tạo project. |
-| `FLOW_ALLOW_DEGRADED` | Đặt `1` (chỉ nhận đúng `1`) nếu muốn Veo chaining / Veo r2v **hạ xuống i2v thường** thay vì báo `UNSUPPORTED_ON_BATCH_API`. r2v thật dùng Omni: `model_family=omni_flash`. |
+| Biến                  | Khi nào cần                                                                                                                                                                                                                                                                                                                                                                                                               |
+| --------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `FLOW_PROJECT_ID`     | **Không bắt buộc nữa.** `POST /api/projects` tự tạo project Flow mới; các lệnh `/api/flow/*` không truyền `project_id` dùng một _session project_ tự tạo (đổi sau 2 giờ không hoạt động). Chỉ set khi muốn các lệnh nội bộ cũ dùng một project cố định — lấy uuid ở cuối URL `https://flow.google.com/project/<uuid>`. Muốn một project FlowKit gắn vào project Flow có sẵn thì truyền `flow_project_id` khi tạo project. |
+| `FLOW_ALLOW_DEGRADED` | Đặt `1` (chỉ nhận đúng `1`) nếu muốn Veo chaining / Veo r2v **hạ xuống i2v thường** thay vì báo `UNSUPPORTED_ON_BATCH_API`. r2v thật dùng Omni: `model_family=omni_flash`.                                                                                                                                                                                                                                                |
 
 ```powershell
 # Windows PowerShell (ví dụ — bỏ dòng nào không cần)
 $env:FLOW_PROJECT_ID="uuid-copy-từ-URL-flow"
 $env:FLOW_ALLOW_DEGRADED="1"
 ```
+
 ```bash
 # macOS / Linux / Git Bash
 export FLOW_PROJECT_ID="uuid-copy-từ-URL-flow"
@@ -354,14 +356,14 @@ curl.exe -s http://127.0.0.1:8100/api/flow/status
 
 Cần thấy:
 
-| Trường | Giá trị đúng |
-| --- | --- |
-| `/health` → `extension_connected` | `true` (nếu `false`: tab Flow chưa mở / chưa F5 sau khi reload extension) |
-| `/health` → `ws.extension_versions` | `["0.3.4"]` trở lên |
-| `/api/flow/status` → `transport` | `"batch"` |
-| `/api/flow/status` → `flow_project_id` | uuid bạn set ở Bước 4, hoặc `null` nếu không set (bình thường) |
-| `/api/flow/status` → `allow_degraded` | khớp với Bước 4 |
-| `/api/flow/status` → `generation_throttle.cooldown_active` | `false` |
+| Trường                                                     | Giá trị đúng                                                              |
+| ---------------------------------------------------------- | ------------------------------------------------------------------------- |
+| `/health` → `extension_connected`                          | `true` (nếu `false`: tab Flow chưa mở / chưa F5 sau khi reload extension) |
+| `/health` → `ws.extension_versions`                        | `["0.3.4"]` trở lên                                                       |
+| `/api/flow/status` → `transport`                           | `"batch"`                                                                 |
+| `/api/flow/status` → `flow_project_id`                     | uuid bạn set ở Bước 4, hoặc `null` nếu không set (bình thường)            |
+| `/api/flow/status` → `allow_degraded`                      | khớp với Bước 4                                                           |
+| `/api/flow/status` → `generation_throttle.cooldown_active` | `false`                                                                   |
 
 `flow_key_present: false` là bình thường. Sau đó thử **một** lệnh tạo ảnh nhỏ (hoặc `/fk-gen-refs`) trước khi chạy cả pipeline.
 
@@ -402,18 +404,18 @@ FlowKit lưu trữ toàn bộ 36 kịch bản và quy trình làm việc (workfl
 
 ### Configuration
 
-| Env var | Default | What it does |
-| --- | --- | --- |
-| `FLOW_PROJECT_ID` | — | Fallback Flow project for older internal callers. `POST /api/projects` creates a fresh Flow project when `flow_project_id` is omitted; direct `/api/flow/*` calls without `project_id` use the session project. |
-| `FLOW_ALLOW_DEGRADED` | `0` | Exactly `1` lets Veo chaining and Veo r2v fall back to plain i2v instead of failing. |
-| `FLOW_GENERATION_MIN_INTERVAL_S` | `3` | Minimum gap between two image/video submits, process-wide (worker and direct API alike). |
-| `FLOW_GENERATION_MAX_CONCURRENT` | `1` | Image/video submits in flight at once. |
-| `FLOW_UNUSUAL_ACTIVITY_COOLDOWN_S` | `120` | After `PUBLIC_ERROR_UNUSUAL_ACTIVITY`, submits are refused locally (429) for this long. |
-| `FLOW_SESSION_PROJECT_IDLE_S` | `7200` | The session project rotates after this much inactivity (minimum 300). State lives in `flow_session_project.json`. |
-| `DEFAULT_PAYGATE_TIER` | `PAYGATE_TIER_TWO` | Tier reported by `/api/flow/credits` (the batch path cannot fetch the real one). Only picks the Veo i2v model via `models.json`; images, Omni and upscale ignore it. |
-| `MEDIA_PROVIDER` | `flow` | `flow` (Google Flow via extension) or `assistant` (route all generation to the AI assistant). |
-| `ASSISTANT_PROVIDER_TIMEOUT_S` | `1800` | How long a request waits for a worker to complete its provider job before failing. |
-| `ASSISTANT_PROVIDER_POLL_S` | `15` | How often to poll the provider-job row while waiting for completion. |
+| Env var                            | Default            | What it does                                                                                                                                                                                                    |
+| ---------------------------------- | ------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `FLOW_PROJECT_ID`                  | —                  | Fallback Flow project for older internal callers. `POST /api/projects` creates a fresh Flow project when `flow_project_id` is omitted; direct `/api/flow/*` calls without `project_id` use the session project. |
+| `FLOW_ALLOW_DEGRADED`              | `0`                | Exactly `1` lets Veo chaining and Veo r2v fall back to plain i2v instead of failing.                                                                                                                            |
+| `FLOW_GENERATION_MIN_INTERVAL_S`   | `3`                | Minimum gap between two image/video submits, process-wide (worker and direct API alike).                                                                                                                        |
+| `FLOW_GENERATION_MAX_CONCURRENT`   | `1`                | Image/video submits in flight at once.                                                                                                                                                                          |
+| `FLOW_UNUSUAL_ACTIVITY_COOLDOWN_S` | `120`              | After `PUBLIC_ERROR_UNUSUAL_ACTIVITY`, submits are refused locally (429) for this long.                                                                                                                         |
+| `FLOW_SESSION_PROJECT_IDLE_S`      | `7200`             | The session project rotates after this much inactivity (minimum 300). State lives in `flow_session_project.json`.                                                                                               |
+| `DEFAULT_PAYGATE_TIER`             | `PAYGATE_TIER_TWO` | Tier reported by `/api/flow/credits` (the batch path cannot fetch the real one). Only picks the Veo i2v model via `models.json`; images, Omni and upscale ignore it.                                            |
+| `MEDIA_PROVIDER`                   | `flow`             | `flow` (Google Flow via extension) or `assistant` (route all generation to the AI assistant).                                                                                                                   |
+| `ASSISTANT_PROVIDER_TIMEOUT_S`     | `1800`             | How long a request waits for a worker to complete its provider job before failing.                                                                                                                              |
+| `ASSISTANT_PROVIDER_POLL_S`        | `15`               | How often to poll the provider-job row while waiting for completion.                                                                                                                                            |
 
 ### Assistant Media Provider (`MEDIA_PROVIDER=assistant`)
 
@@ -774,19 +776,19 @@ Ready-to-use workflow recipes in `skills/` (also available as `/slash-commands` 
 
 ### Review & Quality
 
-| Skill | Description |
-|-------|-------------|
-| `/fk-review-video` | AI vision scoring of generated scene videos (quality, consistency, usability) — see [AI Vision Providers](#ai-vision-providers-video-review) below |
-| `/fk-review-board` | Visual scene-by-scene review board for feedback before locking a cut |
-| `/fk-change-provider` | View/switch the reviewer (`muse` = the assistant itself, or an AI CLI), model and effort behind `/fk-review-video` |
+| Skill                 | Description                                                                                                                                        |
+| --------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `/fk-review-video`    | AI vision scoring of generated scene videos (quality, consistency, usability) — see [AI Vision Providers](#ai-vision-providers-video-review) below |
+| `/fk-review-board`    | Visual scene-by-scene review board for feedback before locking a cut                                                                               |
+| `/fk-change-provider` | View/switch the reviewer (`muse` = the assistant itself, or an AI CLI), model and effort behind `/fk-review-video`                                 |
 
 ### Reference
 
-| Skill | Description |
-|-------|-------------|
-| `/fk-camera-guide` | Camera angles, movements, lighting, DOF for cinematic video prompts |
-| `/fk-thumbnail-guide` | Hook-worthy thumbnail design rules |
-| `/fk-provider` | Media providers: choose the generation backend (`flow`/`assistant`), run the assistant worker, troubleshoot provider jobs |
+| Skill                 | Description                                                                                                               |
+| --------------------- | ------------------------------------------------------------------------------------------------------------------------- |
+| `/fk-camera-guide`    | Camera angles, movements, lighting, DOF for cinematic video prompts                                                       |
+| `/fk-thumbnail-guide` | Hook-worthy thumbnail design rules                                                                                        |
+| `/fk-provider`        | Media providers: choose the generation backend (`flow`/`assistant`), run the assistant worker, troubleshoot provider jobs |
 
 ### TTS & Narration
 
@@ -840,11 +842,11 @@ Muse is a first-class FlowKit agent, not just another skill reader:
 
 Skills are `.md` recipes any AI coding-assistant CLI can read and follow — this is about **which agent reads the skill files**, not which model does the work:
 
-| CLI | Instructions | How skills work |
-|-----|-------------|-----------------|
-| Muse | Skills auto-loaded | Native tool calls (`muse.read` for files/images) |
-| Claude Code | `CLAUDE.md` (auto-loaded) | Native `/fk-*` slash commands |
-| Codex CLI | `AGENTS.md` → reads `CLAUDE.md` | User says `/fk-<name>`, agent reads `skills/fk-<name>.md` |
+| CLI         | Instructions                    | How skills work                                           |
+| ----------- | ------------------------------- | --------------------------------------------------------- |
+| Muse        | Skills auto-loaded              | Native tool calls (`muse.read` for files/images)          |
+| Claude Code | `CLAUDE.md` (auto-loaded)       | Native `/fk-*` slash commands                             |
+| Codex CLI   | `AGENTS.md` → reads `CLAUDE.md` | User says `/fk-<name>`, agent reads `skills/fk-<name>.md` |
 
 The Gemini CLI target was dropped in v1.3.1 — the CLI is retired, and its
 replacement `agy` reads none of what that target generated (see the changelog).
@@ -855,12 +857,12 @@ that is configured in `agent/providers.json`, not by `setup.py`.
 
 Separate from the table above — this is about **which backend does the vision analysis** for `/fk-review-video`. Four reviewers are supported and swappable at runtime, no restart required:
 
-| Provider | Binary | Reasoning efforts | Model catalog | Setup |
-|----------|--------|-------------------|---------------|-------|
-| `muse` | — (the assistant itself) | — | — | Official — Muse reads the contact sheets with its own vision via `POST .../review-sheets` → `POST .../review-submit`; no CLI, no API key. Opt in per role (`/fk-change-provider set muse`) |
-| `claude` | Claude Code CLI | `low` `medium` `high` `xhigh` `max` | aliases (`sonnet`, `opus`, `haiku`, `fable`) or any full model name | Install the CLI, sign in once |
-| `agy` | Google Antigravity CLI | `low` `medium` `high` | closed — `agy models` is the whole list and agy rejects anything else | Install separately, sign in once |
-| `codex` | OpenAI Codex CLI | `low` `medium` `high` `xhigh` `max` (varies per model) | codex's own on-disk cache, plus slugs newer than it | `npm install -g @openai/codex`, then `codex login` once |
+| Provider | Binary                   | Reasoning efforts                                      | Model catalog                                                         | Setup                                                                                                                                                                                      |
+| -------- | ------------------------ | ------------------------------------------------------ | --------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| `muse`   | — (the assistant itself) | —                                                      | —                                                                     | Official — Muse reads the contact sheets with its own vision via `POST .../review-sheets` → `POST .../review-submit`; no CLI, no API key. Opt in per role (`/fk-change-provider set muse`) |
+| `claude` | Claude Code CLI          | `low` `medium` `high` `xhigh` `max`                    | aliases (`sonnet`, `opus`, `haiku`, `fable`) or any full model name   | Install the CLI, sign in once                                                                                                                                                              |
+| `agy`    | Google Antigravity CLI   | `low` `medium` `high`                                  | closed — `agy models` is the whole list and agy rejects anything else | Install separately, sign in once                                                                                                                                                           |
+| `codex`  | OpenAI Codex CLI         | `low` `medium` `high` `xhigh` `max` (varies per model) | codex's own on-disk cache, plus slugs newer than it                   | `npm install -g @openai/codex`, then `codex login` once                                                                                                                                    |
 
 Provider, model and effort are set **per role** — a role being a job an AI
 does for Flow Kit. There is one today, `video_review`; the config is a map so
@@ -1294,3 +1296,6 @@ MIT
 - Right way to build Mobile Application + System
 
 → **[facebook.com/groups/vibecodeera](https://www.facebook.com/groups/vibecodeera)**
+
+git pull # lấy code mới
+git checkout origin/main -- flow_agent.db # đè DB local bằng bản mới nhất trên git
