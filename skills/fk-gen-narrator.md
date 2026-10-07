@@ -122,8 +122,8 @@ Khi phát hiện dự án là Time Travel / POV Vlog: **TUYỆT ĐỐI TUÂN TH�
    - Tuyệt đối 0 từ cấm: `phone`, `smartphone`, `screen`, `device`, `selfie-stick` trong cả thoại lẫn prompt.
 
 8. **LIÊN KẾT KỸ NĂNG BẮT BUỘC (Skills Cross-Reference)**:
-   - Xem chi tiết nhịp kịch bản, 7 hồi, 23 beat giữ chân người xem tại: [`.agents/skills/time-travel-vlog/SKILL.md`](file:///c:/flowkit/.agents/skills/time-travel-vlog/SKILL.md)
-   - Xem quy trình tổng thể tại: [`skills/fk-time-travel-vlog.md`](file:///c:/flowkit/skills/fk-time-travel-vlog.md)
+   - Xem chi tiết nhịp kịch bản, 7 hồi, 23 beat giữ chân người xem tại: [`skills/fk-time-travel-vlog/references/story-engine.md`](file:///c:/flowkit/skills/fk-time-travel-vlog/references/story-engine.md) và [`structure-7-acts.md`](file:///c:/flowkit/skills/fk-time-travel-vlog/references/structure-7-acts.md)
+   - Xem quy trình tổng thể tại: [`skills/fk-time-travel-vlog/SKILL.md`](file:///c:/flowkit/skills/fk-time-travel-vlog/SKILL.md)
    - Xem cẩm nang kỹ thuật góc máy & vật lý tại: [`skills/fk-vlog-guide.md`](file:///c:/flowkit/skills/fk-vlog-guide.md)
    - Quy tắc hệ thống: **Rule 49 trong AGENTS.md / CLAUDE.md**.
 

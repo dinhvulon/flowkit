@@ -155,3 +155,55 @@ def test_discover_skills_reads_the_first_line_as_the_description(setup_mod, sand
     found = {s["name"]: s["description"] for s in setup_mod.discover_skills()}
     assert found["other"] == "fk-other — Does a thing"
     assert found["demo"] == "fk-demo — A demo skill"
+
+
+# ── folder skills (skills/fk-<name>/SKILL.md + references/) ──
+
+
+@pytest.fixture
+def folder_skill(sandbox):
+    """A skill laid out as a folder with frontmatter and a references dir."""
+    root = sandbox / "skills" / "fk-folder"
+    (root / "references").mkdir(parents=True)
+    (root / "SKILL.md").write_text(
+        "---\nname: fk-folder\ndescription: Use when testing folder skills\n---\n\n"
+        "# fk-folder — Folder skill\n\nRead `references/guide.md`.\n",
+        encoding="utf-8",
+    )
+    (root / "references" / "guide.md").write_text("# Guide\n", encoding="utf-8")
+    return root
+
+
+def test_discover_skills_finds_folder_skills_with_frontmatter_description(setup_mod, folder_skill):
+    found = {s["name"]: s for s in setup_mod.discover_skills()}
+    assert found["folder"]["description"] == "Use when testing folder skills"
+    assert found["folder"]["path"].endswith("SKILL.md")
+    assert "demo" in found  # flat skills are still found
+
+
+def test_claude_stub_points_at_the_folder_skill_file(setup_mod, sandbox, folder_skill):
+    setup_mod.generate_claude(setup_mod.discover_skills())
+    stub = (sandbox / ".claude" / "commands" / "fk-folder.md").read_text(encoding="utf-8")
+    assert "skills/fk-folder/SKILL.md" in stub
+
+
+def test_antigravity_copies_the_references_of_a_folder_skill(setup_mod, sandbox, folder_skill):
+    setup_mod.generate_antigravity(setup_mod.discover_skills())
+    dest = sandbox / ".agents" / "skills" / "fk-folder"
+    assert (dest / "references" / "guide.md").read_text(encoding="utf-8") == "# Guide\n"
+    skill_md = (dest / "SKILL.md").read_text(encoding="utf-8")
+    assert skill_md.startswith("---\nname: fk-folder\n")
+    assert skill_md.count("---\n") == 2  # source frontmatter not duplicated
+
+
+def test_antigravity_drops_references_removed_from_the_source(setup_mod, sandbox, folder_skill):
+    setup_mod.generate_antigravity(setup_mod.discover_skills())
+    (folder_skill / "references" / "guide.md").unlink()
+    setup_mod.generate_antigravity(setup_mod.discover_skills())
+    assert not (sandbox / ".agents" / "skills" / "fk-folder" / "references" / "guide.md").exists()
+
+
+def test_clean_removes_antigravity_skill_folders_with_subdirectories(setup_mod, sandbox, folder_skill):
+    setup_mod.generate_antigravity(setup_mod.discover_skills())
+    setup_mod.do_clean()
+    assert not (sandbox / ".agents" / "skills" / "fk-folder").exists()

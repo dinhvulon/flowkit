@@ -47,7 +47,7 @@ Clip đầu là trọn 8s của khoảnh khắc cao trào, cắt trước khi bi
 | 7–8s | Gần thành công → **CUT ĐEN** |
 
 - Người xem phải cảm thấy "**nếu cô thất bại thì chuyện kinh khủng gì xảy ra?**", không chỉ "cô phải làm X".
-- Thoại 3–8 từ. Cấm: giải thích lịch sử, giới thiệu vlogger, giới thiệu người bản địa, logo, kêu subscribe.
+- Thoại 18–22 từ (Rule 49) nhưng là câu ngắn đứt quãng, thở dốc, theo nhịp hành động. Cấm: giải thích lịch sử, giới thiệu vlogger, giới thiệu người bản địa, logo, kêu subscribe.
 - **Payoff** ở cuối cao trào (Act 4): dựng lại 2–3s cuối của cold open, rồi cho thấy kết quả **cùng góc máy**. Clip đứng ngay trước payoff kết bằng tư thế hoặc hướng nhìn khớp với đoạn phát lại (Rule 44).
 - **Cold open và payoff cắt từ CÙNG MỘT master take** (user chốt 2026-10-05). Sinh một clip 10s FIXED CAM chứa trọn khoảnh khắc (mối nguy → hỏng → hỏng → thành công một phần → kết quả). Cold open dùng đoạn đầu đến trước kết quả → CUT ĐEN; payoff dùng 4–5s cuối. Hai clip sinh riêng thì nhân vật, ánh sáng, vị trí mối nguy sẽ lệch nhau, và người xem nhận ra ngay. Ghi rõ trong script master take chia giây thế nào và mỗi đoạn dùng giây nào.
 - **Thứ tự ưu tiên hình trong cold open phải đơn giản:** mối nguy → vlogger → tay → kết quả → đen. Nền tối, ít chi tiết, không để thứ gì tranh sự chú ý.
@@ -278,17 +278,18 @@ Mạnh hơn mọi câu "See you next time". Vật trong món quà nên là đạ
 
 ## 12. Thoại
 
-**Mật độ theo loại clip** (thay luật cũ 18–22 / 22–28 từ mỗi clip; không clip nào bắt buộc phải đủ 20 từ):
+**Độ dài thoại — Rule 49 (user chốt 2026-10-07, thay bảng 8–15 từ của 2026-10-05):**
 
-| Loại clip | Số từ tiếng Anh (clip 8s) |
+| Loại clip | Số từ tiếng Anh của vlogger |
 |---|---|
-| Bình thường | 8–15 |
-| Căng thẳng / hành động | 3–8 |
-| Cảm xúc | 5–12 |
-| Giải thích | tối đa 12–18 |
-| Nhịp im lặng / cảnh cuối | 0 |
+| Mọi clip 8s có thoại | **18–22** — chia `0-3s` 6–7 từ / `3-6s` 7–8 từ / `6-8s` 5–7 từ |
+| Clip 10s | ~23–28 (cộng ~25%, chia thêm sub-clip `8-10s`) |
+| Cảnh cuối (hình ảnh đáng nhớ, CUT BLACK — mục 11) | 0 |
+| 3 establishing shot 4s không có vlogger trong khung (mục 2b) | 0 |
 
-Clip 10s: cộng thêm tối đa ~25%.
+Vì sao: clip 8s bị trim `-ss 1` còn 7s, trừ đệm 0.5s → ~6.5s audio ở ~3.2–3.5 từ/giây. Dưới 18 từ = **dead air** (vlogger đứng im 2–3s, tụt retention); trên 22 = **cut-off** (câu bị cắt sang clip sau). Viết/sửa thoại bằng `/fk-gen-narrator` (Time-Travel Vlog Mode) để đồng bộ `narrator_text` và `video_prompt`.
+
+Clip căng thẳng / hành động vẫn đủ 18–22 từ, nhưng là **câu ngắn đứt quãng** (`"Run— no, left. LEFT. Behind the bones, now— she's turning, she's turning, go go go."`), không phải câu dài. Nhịp im lặng (bên dưới) nằm **trong** một sub-clip, các sub-clip còn lại gánh đủ số từ.
 
 **Show > Tell.** Thay vì giải thích, cho người xem thấy rồi gói lại bằng vài từ.
 - Thay *"They waste nothing."* (kể) bằng: thịt → mỡ → xương → tủy → da hiện ra trên hình; Nora nhìn: *"Nothing gets wasted."*

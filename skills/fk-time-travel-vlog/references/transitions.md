@@ -1,5 +1,16 @@
 # Thư viện chuyển cảnh in-camera cho Time Travel Vlog
 
+Đọc ở **Bước 4** của `SKILL.md`.
+
+> **Áp dụng trong FlowKit (ghi đè phần tương ứng bên dưới):**
+> - **Cách nối:** clip có vlogger chạy R2V Ingredients, không có Extend, không dùng khung cuối A làm start frame của B (CLAUDE.md Rule 27). Mọi mối nối giữa 2 clip = **tạo riêng rồi cắt** tại khung che, cộng **match on action** khi cùng tư thế (Rule 44). Extend / Frames to Video chỉ còn cho shot không có nhân vật — xem `flowkit-pipeline.md` mục 1.
+> - **Foreground wipe (A) chỉ dùng cho shot POV.** Shot selfie chuyển cảnh bằng **swing / whip pan (C)** — vật lướt qua ống kính ở góc selfie trông như bay tới và model hay xóa luôn nhân vật (Bài học 10).
+> - **Time-skip:** không title card "3 HOURS LATER". Chữ trên màn hình chỉ có năm, mission card và countdown `HOUR X — Y HOURS REMAINING` (story-engine mục 9), chèn ở hậu kỳ.
+> - **Selfie flip / lật camera trong 1 shot bị cấm** (Rule 42). Muốn đổi selfie ↔ POV thì cắt giữa 2 shot riêng.
+> - **Phone glitch / cú du hành:** không dùng, trừ khi user yêu cầu rõ. Mặc định vào thẳng thế giới từ giây 0.
+> - **Không crossfade, không dip-to-black** giữa các clip (khác `/fk-cinematic-transitions`); dip/cut to black chỉ dùng ở cảnh kết.
+
+
 Nguyên tắc: mỗi chuyển cảnh = 2 clip được prompt khớp nhau. Clip A kết bằng một khung "che" (vật thể, gáy, nhòe), clip B mở từ đúng khung che đó. CapCut chỉ cắt thẳng tại khung che kín nhất.
 
 ## Cách nối 2 clip trong Google Flow (ghi rõ cách nào cho từng mối nối trong storyboard)
@@ -86,7 +97,7 @@ Mỗi kỹ thuật gồm: khi nào dùng · khung cuối clip A · khung đầu 
 ## 6. Time-skip (nhảy giờ)
 - Dùng: "3 hours later…", "the next morning".
 - Cùng góc/địa điểm, ánh sáng đổi (trưa → hoàng hôn → đuốc), nhân vật đổi trạng thái (mệt, lấm bụi).
-- CapCut: jump cut + title "3 HOURS LATER" kiểu vlog, SFX tick.
+- Hậu kỳ: jump cut + SFX tick; chữ duy nhất được phép là countdown `HOUR X — Y HOURS REMAINING` (không "3 HOURS LATER").
 
 ## 7. Dust / smoke / light wipe
 - Dùng: cảnh chiến trường, công trường, lò gốm; và **cú du hành thời gian**.

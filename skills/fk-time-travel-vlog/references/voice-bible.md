@@ -122,24 +122,28 @@ Persona khác (series sau) → viết `VOICE_LOCK` mới theo đúng các trư�
 
 ---
 
-## 2. Mật độ thoại theo loại clip (user chốt 2026-10-05, thay bảng 18–22 / 22–28 từ cũ)
+## 2. Độ dài thoại (Rule 49)
 
-Thoại dày làm phim thành podcast có hình. Hình làm được thì để hình làm.
+Thoại dày làm phim thành podcast có hình, thoại thưa làm clip có dead air. Chuẩn chốt:
 
-| Loại clip (8s) | Số từ tiếng Anh của vlogger |
+**Độ dài thoại — Rule 49 (user chốt 2026-10-07, thay bảng 8–15 từ của 2026-10-05):**
+
+| Loại clip | Số từ tiếng Anh của vlogger |
 |---|---|
-| Bình thường | **8–15** |
-| Căng thẳng / nguy hiểm | **3–8** |
-| Cảm xúc | 5–12 |
-| Giải thích (hiếm) | tối đa 12–18 |
-| Nhịp im lặng, cảnh cuối | 0 |
+| Mọi clip 8s có thoại | **18–22** — chia `0-3s` 6–7 từ / `3-6s` 7–8 từ / `6-8s` 5–7 từ |
+| Clip 10s | ~23–28 (cộng ~25%, chia thêm sub-clip `8-10s`) |
+| Cảnh cuối (hình ảnh đáng nhớ, CUT BLACK — `story-engine.md` mục 11) | 0 |
+| 3 establishing shot 4s không có vlogger trong khung (`story-engine.md` mục 2b) | 0 |
 
-- Clip 10s cộng tối đa ~25%; clip 4–6s giảm theo tỉ lệ. Đây là **trần**, không phải chỉ tiêu: không bao giờ độn cho đủ từ.
+Vì sao: clip 8s bị trim `-ss 1` còn 7s, trừ đệm 0.5s → ~6.5s audio ở ~3.2–3.5 từ/giây. Dưới 18 từ = **dead air** (vlogger đứng im 2–3s, tụt retention); trên 22 = **cut-off** (câu bị cắt sang clip sau). Viết/sửa thoại bằng `/fk-gen-narrator` (Time-Travel Vlog Mode) để đồng bộ `narrator_text` và `video_prompt`.
+
+Clip căng thẳng / hành động vẫn đủ 18–22 từ, nhưng là **câu ngắn đứt quãng** (`"Run— no, left. LEFT. Behind the bones, now— she's turning, she's turning, go go go."`), không phải câu dài. Nhịp im lặng (bên dưới) nằm **trong** một sub-clip, các sub-clip còn lại gánh đủ số từ.
+
 - **Show > Tell:** `"Fire."` khi người xem đã thấy tia lửa, không phải `"Now I'm making fire using the flint I found earlier."`
 - **Nhịp im lặng:** mỗi Act ít nhất 1 lần không ai nói từ 1s trở lên trước một tiết lộ. Kịch bản ghi `[im lặng 2s]`, prompt ghi `No one speaks for the first 2 seconds; only wind and breathing.`
 - **Không nói chồng.** Nhân vật phụ nói (ngôn ngữ không hiểu được) ở sub-clip riêng, Nora im lặng phản ứng trong lúc đó, rồi mới nói.
 - Luôn ghi cách diễn đạt trong ngoặc ngay sau tên: `Nora says (hushed, hands busy, breath fogging): "..."`. Model video phản ứng với tag này mạnh hơn với tính từ rải trong prompt.
-- Đếm từ trước khi chốt. Vượt trần → cắt phần mô tả thứ người xem đang thấy trước, rồi tới lý do.
+- Đếm từ trước khi chốt. Vượt 22 → cắt phần mô tả thứ người xem đang thấy trước, rồi tới lý do. Dưới 18 → thêm phản ứng cơ thể, câu hỏi hoặc micro-hook, không thêm câu giảng.
 
 ---
 
@@ -172,7 +176,7 @@ Phân bổ gợi ý trong một video: A ~50%, B ~25%, C ~25%.
 
 ---
 
-## 5. Trước / sau (cùng nội dung, persona chuyên gia, đã đếm từ theo mật độ 2026-10-05)
+## 5. Trước / sau (mẫu giọng & persona — số từ ghi theo luật cũ 2026-10-05; khi dùng thật phải nối thành 18–22 từ / clip theo mục 2)
 
 | Giọng AI (tránh) | Giọng Nora | Khuôn |
 |---|---|---|
@@ -212,7 +216,7 @@ Ghi chú: các câu mẫu không có chi tiết lịch sử nào — đúng pers
 - [ ] Mỗi 3–4 clip có ít nhất 1 chi tiết lạ của thế giới này (thật hay bịa) hiện ra qua việc đang làm trên hình — không giảng.
 - [ ] Cứ 2 clip có ít nhất 1 chỗ tự ngắt, tự sửa, hoặc 1 câu đùa khô.
 - [ ] Người bản địa có vai trò thật (khuôn C), Nora không đúng mọi lúc về chuyện địa phương.
-- [ ] Không vượt trần mật độ ở mục 2 theo loại clip (8s: bình thường 8–15, căng thẳng 3–8, cảm xúc 5–12, giải thích ≤ 12–18).
+- [ ] Mỗi clip 8s có thoại đúng 18–22 từ, chia 6–7 / 7–8 / 5–7 theo sub-clip (mục 2, Rule 49); chỉ cảnh cuối và 3 establishing shot 4s được 0 từ.
 - [ ] Mỗi Act có ít nhất 1 nhịp im lặng.
 
 ---

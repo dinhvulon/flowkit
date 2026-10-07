@@ -60,7 +60,7 @@ page can sign a Flow request, so nothing works headless.
     - **After** each generation step finishes, STOP: show the results for review and wait for approval before starting the next stage (refs → videos → regens → concat).
     - Failures and low review scores are **reported, not auto-retried**: propose the fix (sanitized prompt, regen list) and ask before resubmitting.
     - Non-generating work (creating projects/scenes, uploading existing images, PATCHing fields, downloading, watermark removal) can proceed when the user asks for it.
-30. **Vlog production lessons live in `/fk-time-travel-vlog` section 11** (user feedback: constraints as sentences not `Negative:`, phone is the camera, wipes never make the vlogger vanish, scene refs for cities, landscape refs for 16:9, hardest clip first, `<Vlogger> Body` ref đã mặc hoàn chỉnh outfit (made per Rule 46), no `selfie-stick`/phone keywords to avoid ghost devices/screens, pure POV with empty hand, camera locked in hand for run/jump action physics, single-arm vlog holding to prevent dual-arm glitch, crowd fleeing forward with vlogger away from disaster, anti-CGI documentary anchors for disaster scenes). Follow them for every POV/vlog project.
+30. **Vlog production lessons live in `/fk-time-travel-vlog` → `skills/fk-time-travel-vlog/references/production-lessons.md` (mục 11 cũ; prompt checklist ở `references/prompt-lock.md`)** (user feedback: constraints as sentences not `Negative:`, phone is the camera, wipes never make the vlogger vanish, scene refs for cities, landscape refs for 16:9, hardest clip first, `<Vlogger> Body` ref đã mặc hoàn chỉnh outfit (made per Rule 46), no `selfie-stick`/phone keywords to avoid ghost devices/screens, pure POV with empty hand, camera locked in hand for run/jump action physics, single-arm vlog holding to prevent dual-arm glitch, crowd fleeing forward with vlogger away from disaster, anti-CGI documentary anchors for disaster scenes). Follow them for every POV/vlog project.
 31. **On any pipeline error** (request `FAILED`, stuck `PROCESSING`, `extension_connected: false`, HTTP 4xx/5xx from `:8100`, YouTube `HttpError`, error strings like `UNSAFE_GENERATION` / `not found` / `CAPTCHA` / `NO_AT_TOKEN` / `NO_FLOW_PROJECT` / `UNSUPPORTED_ON_BATCH_API`): invoke `/fk-doctor` before guessing a fix.
 32. **AI-First Video Review before User Approval & Conditional Upscale (Tự động review trên video 720p thô ➔ Duyệt ➔ Upscale 1080p & Xóa Logo)** — Sau khi video 720p hoàn tất và tải về máy, Agent trích xuất frames trực tiếp từ video 720p thô (chưa cần xóa logo), tự động chạy phân tích `/fk-review-video` trước: chấm điểm theo 6 tiêu chuẩn cốt lõi (Character Consistency 25%, Prompt Adherence 20%, Motion Quality 20%, Visual Fidelity 15%, Temporal Coherence 10%, Composition 10%), rà soát lỗi AI (Critical/High/Minor), và trình bày bảng Scorecard chi tiết kèm ảnh preview frames cho User xem trước. **Chỉ khi User duyệt thông qua cảnh**: Mới tiến hành gửi batch Upscale 1080p và xóa logo trên video 1080p.
 42. **Single-Perspective Vlog Purity & No 180° Camera Flips in a Single Shot (Quy tắc đơn góc nhìn thuần khiết & Cấm xoay lật 180° cam trước/cam sau trong 1 shot)** — Mỗi shot 8s–10s giữ duy nhất 1 góc máy cố định: hoặc 100% Selfie (Cam trước 0.5x), hoặc 100% First-Person POV (Cam sau). Tuyệt đối cấm lia xoay 180° giữa hai camera trong cùng 1 shot liên tục. Dùng kỹ thuật Over-the-Shoulder Selfie Interaction (vlogger chiếm 1/3 tiền cảnh, đối tượng 2/3 hậu cảnh, tương tác qua ánh mắt và quay đầu).
@@ -137,15 +137,18 @@ curl -s "http://127.0.0.1:8100/api/requests/batch-status?video_id=<VID>&type=GEN
 
 ## Skills
 
-This project has reusable skills in `skills/`. When the user says `/fk-<name>`, read `skills/fk-<name>.md` and follow the instructions inside.
+This project has reusable skills in `skills/`. When the user says `/fk-<name>`, read `skills/fk-<name>.md` — or `skills/fk-<name>/SKILL.md` for a folder skill with `references/` (currently `/fk-time-travel-vlog`) — and follow the instructions inside.
 
 | Skill | Purpose |
 |-------|---------|
+| `/fk-action-choreography` | Action Choreography — physics-safe combat & motion prompts (3-phase 0-3/3-6/6-8s) |
 | `/fk-add-material` | fk-add-material — Image Material System |
 | `/fk-brand-logo` | fk-brand-logo — Apply Channel Branding (Intro + Outro + Logo + 4K Badge) |
 | `/fk-camera-guide` | Camera Guide — Cinematic Video Prompts (Veo 3) |
 | `/fk-change-model` | fk-change-model — View & Change Video/Image Model Keys |
+| `/fk-character-bible` | Character Bible & Visual Consistency — wardrobe state matrix, series manifest |
 | `/fk-change-provider` | fk-change-provider — View & Switch the AI CLI for a Role |
+| `/fk-cinematic-transitions` | Cinematic Transitions & Chapter Bumpers — in-camera transitions, J/L-cuts, bumpers |
 | `/fk-concat-fit-narrator` | Trim each scene video to fit its TTS narrator duration, burn text overlays, then concatenate into a final video. |
 | `/fk-concat` | Download and concatenate all scene videos into a single video with optional TTS narration. |
 | `/fk-create-project` | Create a new Google Flow video project. Ask the user for: |
@@ -170,11 +173,13 @@ This project has reusable skills in `skills/`. When the user says `/fk-<name>`, 
 | `/fk-research` | fk-research — Fact-Check & Research Before Scripting |
 | `/fk-review-board` | Start the Scene Review Board web app for visual feedback on scene chains. |
 | `/fk-review-video` | Review AI-generated scene videos for quality using Claude Vision. |
+| `/fk-scriptwriter` | AI Screenplay Bible — narrator-led cinematic series scripts (not for POV vlogs) |
+| `/fk-sound-design` | Sound Design & Audio Mastering — ducking, SFX layering, −14 LUFS |
 | `/fk-status` | Show full status dashboard for a project. |
 | `/fk-switch-project` | fk-switch-project — Switch Active Project |
 | `/fk-thumbnail-guide` | YouTube Thumbnail Guide — Hook-Worthy Design Rules |
 | `/fk-thumbnail` | Generate 4 YouTube-optimized thumbnail variants for a project video. |
-| `/fk-time-travel-vlog` | fk-time-travel-vlog — Time Travel Vlog Orchestrator (Mọi Thời Kỳ, Mọi Địa Điểm) |
+| `/fk-time-travel-vlog` | Time Travel / POV survival vlog orchestrator — `skills/fk-time-travel-vlog/SKILL.md` + `references/` |
 | `/fk-upload-image` | Upload a local image file to Google Flow and get a media_id (UUID). |
 | `/fk-upload-ref` | fk-upload-ref — Upload Custom Reference Image for Character/Entity |
 | `/fk-vlog-guide` | fk-vlog-guide — Master Guide & Interactive Hub for Historical POV Vlogs |

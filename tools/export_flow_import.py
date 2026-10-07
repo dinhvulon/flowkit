@@ -2,7 +2,7 @@
 
 Fallback for when Google blocks automated generation
 (PUBLIC_ERROR_UNUSUAL_ACTIVITY): the project is rebuilt by hand in the import
-tool from this file. Template: .agents/skills/time-travel-vlog/references/
+tool from this file. Template: skills/fk-time-travel-vlog/references/
 flow-import-template.json.
 
 R2V mapping: there are no start frames, so each video node references the

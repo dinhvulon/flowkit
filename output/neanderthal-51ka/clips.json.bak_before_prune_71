@@ -1730,6 +1730,34 @@
     ]
   },
   {
+    "order": 62,
+    "clip_number": 63,
+    "scene_name": "A5-05-CLAN-MORNING",
+    "label": "Cảnh 63: Bộ Tộc Chuẩn Bị Cho Ngày Mới Bình Yên",
+    "duration": 8.0,
+    "camera_type": "FIX",
+    "characters": [
+      "Leader",
+      "Strongest",
+      "Old Woman",
+      "Cave Mouth"
+    ],
+    "prompt": "Photorealistic prehistoric survival documentary camp life footage.\nSHOT:\nMedium-wide handheld establishing shot capturing the peaceful domestic morning rhythm of the Neanderthal clan outside the cave. Handheld camera has gentle observant cadence; strictly NO 180-degree flips.\nSETTING:\nSunny limestone ledge outside Pech de l'Azé cave, snow sparkling under morning light.\nCHARACTERS:\nThe Leader and Strongest inspect wooden spear shafts in the sun. The Old Woman spreads the cleaned Steppe Bison hide over a flat boulder to dry. Lips closed for all; zero words.\n0-3s: The Strongest and Leader stand on the cliff rim in golden sunlight, scraping frost off their wooden hunting spears with flint flakes.\n3-6s: The Old Woman carefully stretches the massive dark bison hide across a sunlit flat rock, weighting the corners with heavy river stones.\n6-8s: The clan moves with calm, practiced rhythm—survivors who conquered the Ice Age through family, courage, and ancient wisdom.\nPHYSICAL REALISM & BIOMECHANICS:\nDaily life anthropological authenticity; hide stretching mechanics using stone weights; sparkling specular reflection off frozen rock surfaces.\nCAMERA:\nObservant handheld medium-wide shot panning smoothly across the clan members working in the morning light.\nAUDIO:\nRhythmic scraping of flint on wood, heavy stone thuds onto leather, peaceful morning birdsong in distant pines. Strictly NO spoken dialogue.",
+    "video_prompt": "Photorealistic prehistoric survival documentary footage.\nSHOT:\nFront selfie vlog walking perspective (Cam trước 0.5x bước đi)\nSETTING:\nLimestone entrance threshold of Pech de l'Azé. Dramatic contrast between cave shadow and radiant outdoor sunlight.\nCHARACTERS:\nNora, Nora Body.\nIDENTITY & OUTFIT LOCK (CRITICAL):\nNora matches face and Body reference sheets. Voluptuous figure, honey-blonde ponytail, golden-tan suede tunic, eagle talon necklace, red ochre mark on cheek.\nCRITICAL VLOG SPEECH LOCK (Rule 49 Golden Standard: 18-22 words):\nNora speaks directly into the camera lens in her native Laomedeia voice profile: \"Stepping into the morning sun, crisp winter air fills my lungs while endless snow sparkles like diamonds all around.\"\n0-3s: Nora walks forward from the cave threshold, her face emerging from cool shadow into warm, intense golden morning sunlight.\n3-6s: She squints happily, taking a deep revitalizing breath as her ponytail glows brilliant amber and frosty breath blooms like white silk.\n6-8s: Holding the camera firm, Nora smiles warmly into the lens: 'Stepping into the morning sun, crisp winter air fills my lungs while endless snow sparkles like diamonds all around.'\nPHYSICAL REALISM & BIOMECHANICS:\nSolar radiant heating on fur; pupil contraction in intense high-albedo snow glare; condensation puff forming in cold air.\nCAMERA:\nHandheld 0.5x selfie tracking Nora walking smoothly from shade into full morning sunlight.\nAUDIO:\nCrisp crunch of fresh snow beneath boots, deep contented intake of breath, joyful vlog voice.",
+    "status": "CUT_V6",
+    "media_id": null,
+    "clean_file": null,
+    "raw_video_file": null,
+    "narrator_text": "Stepping into the morning sun, crisp winter air fills my lungs while endless snow sparkles like diamonds all around.",
+    "vn_summary": "Trên thềm đá ngoài hang, các thợ săn kiểm tra lại giáo gỗ chuẩn bị cho hành trình mới; Người Phụ Nữ Lớn Tuổi phơi tấm da thú mới săn được lên phiến đá ấm. Cuộc sống sinh tồn tiếp diễn tuần hoàn không ngừng.",
+    "title": "Cảnh 62: Nora Bước Ra Ngưỡng Cửa Hang Đón Nắng Mai",
+    "narrator_text_vi": "Bước ra đón nắng mai, không khí trong lành tràn lồng ngực khi thảo nguyên tuyết lấp lánh như kim cương trắng.",
+    "character_names": [
+      "Nora",
+      "Nora Body"
+    ]
+  },
+  {
     "order": 63,
     "clip_number": 64,
     "scene_name": "A5-06-APPROACH-NORA",
@@ -1897,6 +1925,60 @@
     ]
   },
   {
+    "order": 69,
+    "clip_number": 70,
+    "scene_name": "A5-12-SELFIE-REFLECTION-1",
+    "label": "Cảnh 70: Selfie Tổng Kết 24 Giờ Sinh Tồn (Nora's Master Reflection Part 1)",
+    "duration": 8.0,
+    "camera_type": "FIX",
+    "characters": [
+      "Nora",
+      "Nora Body",
+      "Pech Valley"
+    ],
+    "prompt": "Photorealistic prehistoric survival documentary vlog reflection footage.\nSHOT:\nHandheld chest-level wide-angle selfie vlog shot, tightly framing Nora's speaking face with the magnificent sunlit snow valley blurred softly in the background. Handheld camera has natural personal micro-tremors; strictly NO 180-degree flips.\nSETTING:\nSunlit pine grove on the floor of Dordogne valley, glistening snowdrifts.\nCHARACTERS:\nNora holds the camera lens steadily on herself, looking directly into the lens with deep emotional sincerity.\nIDENTITY & OUTFIT LOCK (CRITICAL -- match reference images exactly):\nNora matches face and Body sheets. Voluptuous figure, honey-blonde ponytail, golden suede tunic, deep plunging laced V-neckline, chocolate belt, eagle talon necklace, red ochre mark on cheek.\nCRITICAL VLOG SPEECH LOCK:\nNora delivers heartfelt, intimate conversational vlog delivery in her native Laomedeia voice profile: \"Twenty-four hours. I came here expecting primitive monsters...\"\n0-3s: Nora pauses in the pine clearing, lifting the camera lens slightly to frame her face against the sun-drenched valley, taking a deep centering breath.\n3-6s: Her eyes glisten with profound emotion as she smiles gently, the morning breeze fluttering a soft loose strand of hair across her cheek.\n6-8s: Nora speaks directly into the camera lens with raw honesty and passion: \"Twenty-four hours. I came here expecting primitive monsters...\"\nPHYSICAL REALISM & BIOMECHANICS:\nNatural documentary camera optical perspective (18mm wide angle, subtle corner distortion); realistic micro-vocal throat vibrations; authentic emotional vulnerability.\nCAMERA:\nHandheld chest-level selfie vlog perspective held at constant arm's distance, maintaining tight focus on Nora's face.\nAUDIO:\nCrisp morning wind, soft breath intake, Nora's clear heartfelt spoken voice: \"Twenty-four hours. I came here expecting primitive monsters...\"",
+    "video_prompt": "Photorealistic prehistoric survival documentary footage.\nSHOT:\nFirst-Person POV upward vista (Cam sau 1.0x nhìn lên vách đá)\nSETTING:\nLooking up from valley floor toward Pech de l'Azé cliff opening. Towering limestone face weathered by glacial millennia.\nCHARACTERS:\nNora, Nora Body.\nIDENTITY & OUTFIT LOCK (CRITICAL):\nNora matches face and Body reference sheets. Voluptuous figure, honey-blonde ponytail, golden-tan suede tunic, eagle talon necklace, red ochre mark on cheek.\nCRITICAL VLOG SPEECH LOCK (Rule 49 Golden Standard: 18-22 words):\nNora speaks directly into the camera lens in her native Laomedeia voice profile: \"Looking back one last time at the towering cliff sanctuary, thin wood smoke still curls softly into blue sky.\"\n0-3s: The POV camera tilts slowly upward from the snowy trail toward the monumental sheer limestone cliff face above.\n3-6s: High up on the rock wall, the dark cave opening appears like an eye of the mountain, with a faint wisp of white smoke rising peacefully.\n6-8s: Nora sighs with quiet reverence just behind the camera: 'Looking back one last time at the towering cliff sanctuary, thin wood smoke still curls softly into blue sky.'\nPHYSICAL REALISM & BIOMECHANICS:\nAtmospheric smoke plume dispersion in cold still air; massive scale contrast between individual human viewpoint and glacial cliff.\nCAMERA:\nFirst-person handheld slow tilt up, establishing the timeless monumental scale of the cave site.\nAUDIO:\nSoft breeze across cliff face, faint distant crackle of fire, reverent breath of vlogger.",
+    "status": "CUT_V6",
+    "media_id": null,
+    "clean_file": null,
+    "raw_video_file": null,
+    "narrator_text": "Looking back one last time at the towering cliff sanctuary, thin wood smoke still curls softly into blue sky.",
+    "vn_summary": "Nora nhìn thẳng vào camera trong shot selfie 0.5x góc rộng, gió sớm làm bay nhẹ lọn tóc mai. Gương mặt cô rạng ngời với vệt đất son đỏ mờ trên má và chiếc móng đại bàng trên ngực, chia sẻ cảm xúc chân thật.",
+    "title": "Cảnh 69: Hang Động Pech de l'Azé Sừng Sững Giữa Vách Núi",
+    "narrator_text_vi": "Ngoảnh đầu nhìn lại vách đá tổ ấm lần cuối, làn khói bếp mỏng manh vẫn uốn lượn bay lên trời xanh.",
+    "character_names": [
+      "Nora",
+      "Nora Body"
+    ]
+  },
+  {
+    "order": 70,
+    "clip_number": 71,
+    "scene_name": "A5-13-SELFIE-REFLECTION-2",
+    "label": "Cảnh 71: Selfie Tổng Kết (Part 2): Gia Đình, Đi Săn, Nghệ Thuật & Lòng Dũng Cảm",
+    "duration": 8.0,
+    "camera_type": "FIX",
+    "characters": [
+      "Nora",
+      "Nora Body",
+      "Pech Valley"
+    ],
+    "prompt": "Photorealistic prehistoric survival documentary vlog reflection footage.\nSHOT:\nHandheld chest-level wide-angle selfie vlog shot, continuing seamless physical continuity from Scene 70. Camera maintains intimate direct eye contact; strictly NO 180-degree flips.\nSETTING:\nSunlit pine grove in Dordogne valley, pristine snow sparkling in pale gold.\nCHARACTERS:\nNora continues speaking directly to her audience with powerful conviction and awe.\nIDENTITY & OUTFIT LOCK (CRITICAL -- match reference images exactly):\nNora matches face and Body sheets. Voluptuous figure, honey-blonde ponytail, golden suede tunic, laced V-neckline, chocolate belt, eagle talon on chest, red ochre on cheek.\nCRITICAL VLOG SPEECH LOCK:\nNora speaks with passionate, inspiring conviction in her native Laomedeia voice profile: \"...I found family, master hunters, art, and a courage that conquered an Ice Age.\"\n0-3s: Nora continues seamlessly from her previous thought, her voice swelling with immense respect and pride for the people who saved her.\n3-6s: She gestures subtly with her free left hand toward the towering limestone cliffs behind her, her expression radiant with enlightenment.\n6-8s: Looking straight down the barrel of the lens, Nora delivers her definitive verdict: \"...I found family, master hunters, art, and a courage that conquered an Ice Age.\"\nPHYSICAL REALISM & BIOMECHANICS:\nFlawless inter-scene postural continuity from Scene 70; subtle chest rise and fall matching vocal cadence; sunlight illuminating golden hair strands.\nCAMERA:\nHandheld chest-level selfie vlog shot maintained with perfect stability and natural human breathing rhythm.\nAUDIO:\nSoft morning wind through pines, Nora's passionate resonant spoken voice: \"...I found family, master hunters, art, and a courage that conquered an Ice Age.\"",
+    "video_prompt": "Photorealistic prehistoric survival documentary footage.\nSHOT:\nClose chest-level handheld selfie monologue (Cam trước 0.5x tự sự cận cảnh)\nSETTING:\nSnow-covered ridge overlooking Dordogne valley. Golden morning light backlighting Nora's hair.\nCHARACTERS:\nNora, Nora Body.\nIDENTITY & OUTFIT LOCK (CRITICAL):\nNora matches face and Body reference sheets. Voluptuous figure, honey-blonde ponytail, golden-tan suede tunic, eagle talon necklace, red ochre mark on cheek.\nCRITICAL VLOG SPEECH LOCK (Rule 49 Golden Standard: 18-22 words):\nNora speaks directly into the camera lens in her native Laomedeia voice profile: \"Twenty-four hours ago, modern history books told me I would find brutish, primitive beasts in these freezing ice caves...\"\n0-3s: Nora stops on a scenic snow ridge, holding the camera steady at chest level, looking directly into the lens with absolute sincerity.\n3-6s: Her expressive face carries the fatigue of battle and the profound wonder of discovery, the red ochre mark still proud on her cheek.\n6-8s: Speaking clearly with captivating emotion: 'Twenty-four hours ago, modern history books told me I would find brutish, primitive beasts in these freezing ice caves...'\nPHYSICAL REALISM & BIOMECHANICS:\nOptical rim lighting on blonde wisps; authentic micro-tremor of emotional vocal cords; snow crystals reflecting sunlight.\nCAMERA:\nHandheld 0.5x selfie portrait locked firmly on Nora's face with sun-drenched valley blurred in background.\nAUDIO:\nCrystal clear conversational vlog audio, gentle wind rustle in fur hood, emotional vocal resonance.",
+    "status": "CUT_V6",
+    "media_id": null,
+    "clean_file": null,
+    "raw_video_file": null,
+    "narrator_text": "Twenty-four hours ago, modern history books told me I would find brutish, primitive beasts in these freezing ice caves...",
+    "vn_summary": "Tiếp nối chia sẻ cảm xúc: Nora nghẹn ngào nhấn mạnh bài học lịch sử to lớn nhất: Người Neanderthal không phải những kẻ hung bạo dã man, họ là những bậc thầy sinh tồn, có gia đình, nghệ thuật và lòng dũng cảm phi thường.",
+    "title": "Cảnh 70: Selfie Tổng Kết 24 Giờ Sinh Tồn (Part 1)",
+    "narrator_text_vi": "Hai mươi tư giờ trước, sách vở hiện đại từng bảo mình sẽ chỉ gặp những sinh vật man rợ nơi đây...",
+    "character_names": [
+      "Nora",
+      "Nora Body"
+    ]
+  },
+  {
     "order": 71,
     "clip_number": 72,
     "scene_name": "A5-14-TALISMAN-MACRO",
@@ -1918,6 +2000,33 @@
     "vn_summary": "Nora xòe bàn tay mở rộng trước camera: viên đá Pyrite vàng kim lấp lánh và chiếc móng vuốt đại bàng đen bóng được nâng lên ngang ngực, nổi bật trên nền thung lũng tuyết mờ ảo phía sau.",
     "title": "Cảnh 71: Selfie Tổng Kết (Part 2): Gia Đình, Đi Săn, Nghệ Thuật & Lòng Dũng Cảm",
     "narrator_text_vi": "Nhưng mình đã tìm thấy gia đình, những thợ săn can trường, nghệ thuật và lòng dũng cảm vượt Kỷ Băng Hà.",
+    "character_names": [
+      "Nora",
+      "Nora Body"
+    ]
+  },
+  {
+    "order": 72,
+    "clip_number": 73,
+    "scene_name": "A5-15-THEY-LIVED",
+    "label": "Cảnh 73: Lời Kết Triết Lý Sâu Sắc: 'Họ Đã Sống Trọn Vẹn'",
+    "duration": 8.0,
+    "camera_type": "FIX",
+    "characters": [
+      "Nora",
+      "Nora Body",
+      "Pech Valley"
+    ],
+    "prompt": "Photorealistic prehistoric survival documentary outro emotional climax footage.\nSHOT:\nCinematic close-up handheld selfie vlog shot, tightly framing Nora's radiant, sunlit face as she delivers the final emotional punchline of the journey. Handheld camera maintains steady intimate focus; strictly NO 180-degree flips.\nSETTING:\nSunlit snowy valley of Dordogne, winter sun creating a soft golden halo around Nora's hair.\nCHARACTERS:\nNora gazes directly into the lens with profound peace, smiling with warm tears of wonder in her eyes.\nIDENTITY & OUTFIT LOCK (CRITICAL -- match reference images exactly):\nNora matches face and Body sheets. Voluptuous figure, honey-blonde ponytail glowing in morning light, golden suede tunic, eagle talon on chest, red ochre cheek mark.\nCRITICAL VLOG SPEECH LOCK:\nNora delivers her iconic final thesis in her native Laomedeia voice profile: \"They didn't just survive. They lived.\"\n0-3s: Nora pauses, looking directly into the viewer's eyes through the camera lens with absolute clarity and warmth.\n3-6s: A gentle, knowing smile spreads across her face, capturing the culmination of twenty-four hours of mortal danger, brotherhood, and wonder.\n6-8s: In a quiet, powerful, unforgettable whisper, Nora delivers the final words of the film: \"They didn't just survive. They lived.\"\nPHYSICAL REALISM & BIOMECHANICS:\nGolden hour halo lighting wrapping around blonde hair fibers; micro-emotional expression of profound philosophical completion; clear peaceful gaze.\nCAMERA:\nClose-up handheld shot holding a rock-solid, loving gaze on Nora's face before slowly drifting back.\nAUDIO:\nSoft whisper of wind, delicate resonant ambient tone, Nora's unforgettable final spoken whisper: \"They didn't just survive. They lived.\"",
+    "video_prompt": "Photorealistic prehistoric survival documentary footage.\nSHOT:\nFront selfie chest-level dual prop display (Cam trước 0.5x khoe 2 kỷ vật ngang ngực)\nSETTING:\nSnowy valley overlook. Intense morning sun catching metal and curved bone talismans.\nCHARACTERS:\nNora, Nora Body.\nIDENTITY & OUTFIT LOCK (CRITICAL):\nNora matches face and Body reference sheets. Voluptuous figure, honey-blonde ponytail, golden-tan suede tunic, eagle talon necklace, red ochre mark on cheek.\nCRITICAL VLOG SPEECH LOCK (Rule 49 Golden Standard: 18-22 words):\nNora speaks directly into the camera lens in her native Laomedeia voice profile: \"I carry two priceless prehistoric treasures forever: the golden spark of fire, and the sacred talon of the giant eagle.\"\n0-3s: Nora holds up the golden brass-colored iron pyrite stone in her left palm at chest level, while pointing softly at the eagle talon necklace on her chest.\n3-6s: Both artifacts catch the morning sunlight brilliantly -- the metallic brass facet shimmering alongside the polished fossilized curved talon.\n6-8s: Nora looks proudly between the relics and the camera: 'I carry two priceless prehistoric treasures forever: the golden spark of fire, and the sacred talon of the giant eagle.'\nPHYSICAL REALISM & BIOMECHANICS:\nSpecular reflection on pyrite crystals; anisotropic highlight along curved talon surface; props held steady at safe chest distance.\nCAMERA:\nHandheld 0.5x selfie maintaining sharp focus on both props held at chest level and Nora's beaming face.\nAUDIO:\nGentle mineral clink against talon, clear resonant voice, triumphant vlog music swell.",
+    "status": "CUT_V6",
+    "media_id": null,
+    "clean_file": null,
+    "raw_video_file": null,
+    "narrator_text": "I carry two priceless prehistoric treasures forever: the golden spark of fire, and the sacred talon of the giant eagle.",
+    "vn_summary": "Nora nhìn lại camera một lần cuối cùng, nở nụ cười rạng ngời và kiêu hãnh. Cô thốt lên câu kết luận xúc động nhất của cả hành trình 24 giờ: 'Họ không chỉ sinh tồn. Họ đã sống trọn vẹn.'",
+    "title": "Cảnh 72: Khoe Hai Kỷ Vật Trước Ống Kính: Quặng Pyrite & Móng Đại Bàng",
+    "narrator_text_vi": "Mình mang theo hai bảo vật vô giá: tia lửa thiêng ấm áp và chiếc móng đại bàng kiêu hãnh trên ngực.",
     "character_names": [
       "Nora",
       "Nora Body"
