@@ -25,7 +25,7 @@ import urllib.request
 from pathlib import Path
 
 
-def api_request(url, method="GET", payload=None):
+def api_request(url, method="GET", payload=None, timeout=15):
     """Perform JSON HTTP request against FlowKit API."""
     data = None
     headers = {"User-Agent": "FlowKit-SeriesManifest"}
@@ -35,7 +35,7 @@ def api_request(url, method="GET", payload=None):
 
     req = urllib.request.Request(url, data=data, headers=headers, method=method)
     try:
-        with urllib.request.urlopen(req, timeout=15) as resp:
+        with urllib.request.urlopen(req, timeout=timeout) as resp:
             content = resp.read().decode("utf-8")
             return json.loads(content) if content else {}
     except urllib.error.HTTPError as e:
@@ -130,8 +130,17 @@ def show_manifest(manifest_path):
     return True
 
 
-def bootstrap_episode(manifest_path, episode_num, episode_title, base_url="http://127.0.0.1:8100"):
-    """Create a new chapter project in FlowKit with all shared entities pre-linked."""
+def bootstrap_episode(manifest_path, episode_num, episode_title, base_url="http://127.0.0.1:8100",
+                      only=None, flow_project_id=None):
+    """Create a new chapter project in FlowKit with shared entities pre-linked.
+
+    `POST /api/projects` takes reference stubs under `characters` and has no
+    `media_id` field, so the entities are created first and each reused UUID
+    is attached afterwards with `PATCH /api/characters/{cid}`.
+
+    `only` limits the reuse to the named entities (e.g. a vlogger's face sheet
+    when every episode gets a new outfit and new locations).
+    """
     m_path = Path(manifest_path)
     if not m_path.exists():
         print(f"❌ Manifest not found: {manifest_path}", file=sys.stderr)
@@ -144,30 +153,39 @@ def bootstrap_episode(manifest_path, episode_num, episode_title, base_url="http:
     project_name = f"{series_title} — Ep {episode_num}: {episode_title}"
     story_summary = f"Episode {episode_num} of {series_title}. {data.get('story_bible', '')}"
 
+    wanted = set(only) if only else None
     all_entities = []
     shared = data.get("shared_entities", {})
     for cat in ["characters", "locations", "key_props"]:
         for item in shared.get(cat, []):
-            all_entities.append({
-                "name": item.get("name"),
-                "description": item.get("description"),
-                "entity_type": item.get("entity_type", "character"),
-                "image_prompt": item.get("image_prompt"),
-                "media_id": item.get("media_id")  # Reuses existing UUID!
-            })
+            if wanted is not None and item.get("name") not in wanted:
+                continue
+            all_entities.append(item)
+    if wanted is not None:
+        missing = wanted - {e.get("name") for e in all_entities}
+        if missing:
+            print(f"❌ Not in manifest: {', '.join(sorted(missing))}", file=sys.stderr)
+            return False
 
     payload = {
         "name": project_name,
         "story": story_summary,
         "material": material,
-        "entities": all_entities
+        "characters": [
+            {k: e.get(k) for k in ("name", "entity_type", "description", "voice_description")
+             if e.get(k) is not None}
+            for e in all_entities
+        ],
     }
+    if flow_project_id:
+        payload["flow_project_id"] = flow_project_id
 
     print(f"\n🚀 Bootstrapping new episode project via API:")
     print(f"  Name: {project_name}")
     print(f"  Reusing {len(all_entities)} shared entity references...")
 
-    res = api_request(f"{base_url}/api/projects", method="POST", payload=payload)
+    # Creating a fresh Flow project waits out the server's 45-60s request gap.
+    res = api_request(f"{base_url}/api/projects", method="POST", payload=payload, timeout=300)
     if not res or "id" not in res:
         print("Failed to create project in FlowKit API", file=sys.stderr)
         return False
@@ -175,16 +193,28 @@ def bootstrap_episode(manifest_path, episode_num, episode_title, base_url="http:
     new_pid = res["id"]
     print(f"✅ Episode project created successfully!")
     print(f"  Project ID: {new_pid}")
-    print(f"  Pre-linked entities: {len(res.get('characters', []))}")
-    
+
+    created = api_request(f"{base_url}/api/projects/{new_pid}/characters") or []
+    ids_by_name = {c.get("name"): c.get("id") for c in created}
+    linked = 0
+    for e in all_entities:
+        cid = ids_by_name.get(e.get("name"))
+        patch = {k: e.get(k) for k in ("media_id", "reference_image_url") if e.get(k)}
+        if not cid or not patch.get("media_id"):
+            print(f"  ⚠️ {e.get('name')}: no media_id reused — generate or upload its ref", file=sys.stderr)
+            continue
+        if api_request(f"{base_url}/api/characters/{cid}", method="PATCH", payload=patch) is not None:
+            linked += 1
+    print(f"  Pre-linked entities: {linked}/{len(all_entities)}")
+
     # Auto-initialize output directory and project manifest
     api_request(f"{base_url}/api/projects/{new_pid}/output-dir")
 
     print(f"\nNext Steps:")
     print(f"  1. Create video:  POST /api/videos (project_id={new_pid})")
     print(f"  2. Create scenes: POST /api/scenes (using character_names)")
-    print(f"  3. Skip ref generation! All shared entities already have media_ids.")
-    return True
+    print(f"  3. Generate refs only for entities that were not pre-linked.")
+    return linked == len(all_entities)
 
 
 def main():
@@ -210,6 +240,10 @@ def main():
     p_boot.add_argument("--episode", type=int, required=True, help="Episode number (e.g. 6)")
     p_boot.add_argument("--title", required=True, help="Episode title")
     p_boot.add_argument("--api-url", default="http://127.0.0.1:8100", help="FlowKit base URL")
+    p_boot.add_argument("--only", nargs="+", metavar="NAME",
+                        help="Reuse only these shared entities (e.g. the vlogger's face sheet)")
+    p_boot.add_argument("--flow-project-id",
+                        help="Reuse this Flow project instead of creating a fresh one")
 
     args = parser.parse_args()
 
@@ -222,7 +256,8 @@ def main():
         sys.exit(0 if ok else 1)
     elif args.command == "bootstrap":
         m_path = resolve_manifest_path(project_dir=args.project_dir, manifest=args.manifest, base_url=args.api_url)
-        ok = bootstrap_episode(m_path, args.episode, args.title, base_url=args.api_url)
+        ok = bootstrap_episode(m_path, args.episode, args.title, base_url=args.api_url,
+                               only=args.only, flow_project_id=args.flow_project_id)
         sys.exit(0 if ok else 1)
 
 
