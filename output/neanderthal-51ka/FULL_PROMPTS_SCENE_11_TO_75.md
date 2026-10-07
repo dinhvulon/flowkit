@@ -277,18 +277,22 @@ Medium close-up handheld shot framing the cultural exchange of the warm herbal d
 SETTING:
 Hearthside inside Pech de l'Azé cave, warm flickering firelight illuminating hands, faces, and rising steam.
 CHARACTERS:
-Old Woman on right pushes steaming birch bark vessel across flat stone toward Nora on left. Nora sits cross-legged, watching with grateful eyes. Lips firmly closed throughout.
-CONTINUITY & BODY LOCK:
-Nora in golden-tan deer suede tunic, criss-cross laced cleavage, wide dark belt, and high blonde ponytail.
+Old Woman on right pushes steaming birch bark vessel across flat stone toward Nora on left. Nora sits cross-legged, watching with grateful eyes. The Neanderthals keep their lips firmly closed throughout; zero words from Neanderthals. Only Nora speaks.
+IDENTITY & OUTFIT LOCK (CRITICAL -- match reference images exactly):
+Nora's face and hair match the Nora face reference sheet, and her build and clothing match the Nora Body sheet. Nora has a voluptuous, curvaceous hourglass figure with a prominent high natural bust, tiny narrow waist, and shapely hips. Nora has honey-blonde hair pulled up into a high wavy ponytail tied with a raw leather thong (strictly NO rubber band), with wispy curtain bangs framing both cheeks. Nora wears a form-fitting tailored tunic of smoked golden-tan deer suede, precision-sewn with fine sinew stitches. CHEST LACING LOCK (CRITICAL): Deep plunging V-neckline laced with thick dark-brown leather thongs forming a prominent X-pattern bridge across her cleavage. CORSET BELT LOCK (CRITICAL): Tightly cinched at her tiny waist with a wide 10-12 cm dark-chocolate brown leather belt. SLEEVE CUFF LOCK (CRITICAL): Long fitted sleeves ending cleanly at the wrists; knee-high hide boots worn on her feet. Strictly NO modern jewelry, NO necklace, NO chain.
+
+CRITICAL VLOG SPEECH LOCK:
+Only Nora speaks English to the camera in her native Laomedeia voice profile; all Neanderthals never speak English and keep their lips firmly closed throughout.
+
 0-2s: The Old Woman gently slides the steaming birch bark bowl across flat limestone hearth stone to Nora, nodding with calm dignity.
 2-5s: Nora cups both hands carefully around the warm bark vessel, lifting it toward her face; aromatic pine steam curls around cheeks as she closes eyes to feel soothing warmth.
-5-8s: Nora takes a careful, appreciative sip of the hot pine-needle tea, exhales softly with a warm smile, and inclines her head respectfully to Old Woman.
+5-8s: Nora takes a careful, appreciative sip of the hot pine-needle tea, exhales softly with a warm smile, and inclines her head respectfully to Old Woman.; Nora says in a warm, amazed whisper: "Stone-boiled pine water... Hot drink in fifty-one thousand BC."
 PHYSICAL REALISM & BIOMECHANICS:
 Realistic liquid surface motion inside bark vessel; natural condensation mist against warm cheeks; authentic physical handover of hot object.
 CAMERA:
 Handheld medium close-up, gently adjusting angle to capture the handover and Nora's face.
 AUDIO:
-Soft scrape of birch bark across flat limestone, gentle liquid sip, quiet breath of relief, crackle of nearby hearth fire. Strictly NO spoken dialogue.
+Soft scrape of birch bark across flat limestone, gentle liquid sip, quiet breath of relief, crackle of nearby hearth fire. Nora's clear spoken voice/whisper: "Stone-boiled pine water... Hot drink in fifty-one thousand BC.".
 ```
 
 ---
@@ -399,18 +403,22 @@ Close-up handheld comparative shot framing both women's hands and two stitched g
 SETTING:
 Hearthside inside Pech de l'Azé cave, golden amber light illuminating leather textures.
 CHARACTERS:
-Nora on left and Old Woman on right, hands meeting above flat work stone. Lips firmly closed throughout.
-CONTINUITY & BODY LOCK:
-Nora wears tailored golden-tan suede tunic with precision sinew stitching and dark chocolate belt.
+Nora on left and Old Woman on right, hands meeting above flat work stone. The Neanderthals keep their lips firmly closed throughout; zero words from Neanderthals. Only Nora speaks.
+IDENTITY & OUTFIT LOCK (CRITICAL -- match reference images exactly):
+Nora's face and hair match the Nora face reference sheet, and her build and clothing match the Nora Body sheet. Nora has a voluptuous, curvaceous hourglass figure with a prominent high natural bust, tiny narrow waist, and shapely hips. Nora has honey-blonde hair pulled up into a high wavy ponytail tied with a raw leather thong (strictly NO rubber band), with wispy curtain bangs framing both cheeks. Nora wears a form-fitting tailored tunic of smoked golden-tan deer suede, precision-sewn with fine sinew stitches. CHEST LACING LOCK (CRITICAL): Deep plunging V-neckline laced with thick dark-brown leather thongs forming a prominent X-pattern bridge across her cleavage. CORSET BELT LOCK (CRITICAL): Tightly cinched at her tiny waist with a wide 10-12 cm dark-chocolate brown leather belt. SLEEVE CUFF LOCK (CRITICAL): Long fitted sleeves ending cleanly at the wrists; knee-high hide boots worn on her feet. Strictly NO modern jewelry, NO necklace, NO chain.
+
+CRITICAL VLOG SPEECH LOCK:
+Only Nora speaks English to the camera in her native Laomedeia voice profile; all Neanderthals never speak English and keep their lips firmly closed throughout.
+
 0-2s: Nora gently brings hem seam of her tailored deer suede tunic forward, pointing to fine braided sinew stitches along seam.
 2-5s: Old Woman lays freshly stitched overlapping hide border directly beside Nora's garment, visually comparing robust Mousterian seam with Nora's tailored stitching.
-5-8s: Both women look up at each other; a subtle, knowing smile touches their eyes in mutual appreciation of skilled craftsmanship across millennia.
+5-8s: Both women look up at each other; a subtle, knowing smile touches their eyes in mutual appreciation of skilled craftsmanship across millennia.; Nora says in an impressed whisper: "Look at this seam... Their flint scrapers are sharper than surgical steel."
 PHYSICAL REALISM & BIOMECHANICS:
 Rich textural contrast between supple smoked suede and thick grease-treated pelt; natural, unforced hand gestures conveying shared technical understanding.
 CAMERA:
 Handheld close-up with gentle rack focus from leather stitches up to expressive eyes of both women.
 AUDIO:
-Soft rustle of supple leather, quiet mutual breath, gentle hearth crackle. Strictly NO spoken dialogue.
+Soft rustle of supple leather, quiet mutual breath, gentle hearth crackle. Nora's clear spoken voice/whisper: "Look at this seam... Their flint scrapers are sharper than surgical steel.".
 ```
 
 ---
@@ -496,6 +504,9 @@ CHARACTERS:
 Nora enters from left in golden-tan suede outfit, exploring domestic shelter area. Lips firmly closed throughout.
 OBJECTS IN PLACE:
 A thick bed of fresh pine boughs arranged on cave floor, covered by heavy brown bear and reindeer pelts. Several smooth river stones warmed by hearth are placed beside sleeping nests, radiating residual heat safely.
+
+IDENTITY & OUTFIT LOCK (CRITICAL -- match reference images exactly):
+Nora's face and hair match the Nora face reference sheet, and her build and clothing match the Nora Body sheet. Nora has a voluptuous, curvaceous hourglass figure with a prominent high natural bust, tiny narrow waist, and shapely hips. Nora has honey-blonde hair pulled up into a high wavy ponytail tied with a raw leather thong (strictly NO rubber band), with wispy curtain bangs framing both cheeks. Nora wears a form-fitting tailored tunic of smoked golden-tan deer suede, precision-sewn with fine sinew stitches. CHEST LACING LOCK (CRITICAL): Deep plunging V-neckline laced with thick dark-brown leather thongs forming a prominent X-pattern bridge across her cleavage. CORSET BELT LOCK (CRITICAL): Tightly cinched at her tiny waist with a wide 10-12 cm dark-chocolate brown leather belt. SLEEVE CUFF LOCK (CRITICAL): Long fitted sleeves ending cleanly at the wrists; knee-high hide boots worn on her feet. Strictly NO modern jewelry, NO necklace, NO chain.
 0-2s: Nora walks slowly toward sheltered sleeping alcove, taking in thoughtful domestic layout of the Neanderthal home.
 2-5s: Camera pans across sleeping nest: thick layer of green pine boughs provides thermal insulation from frozen stone, covered with dense thick-furred pelts, with warm hearth stones placed safely along perimeter radiating gentle heat.
 5-8s: Nora kneels and gently runs back of hand across dense brown fur, feeling dry, cozy insulation protecting clan from freezing nights.
@@ -525,18 +536,22 @@ Handheld over-the-shoulder wide-angle selfie vlog shot; Nora occupies left third
 SETTING:
 Inside Pech de l'Azé cave, five metres from hearth. Warm glowing firelight illuminates Nora's face and adult clan behind her.
 CHARACTERS:
-Nora in foreground. Behind her, Leader, Strongest, Old Woman, and Hunter Woman rest peacefully near fire. Lips firmly closed throughout. Perspective comes from her own outstretched arm; her free hand is empty at chest level.
-CONTINUITY & BODY LOCK:
-Nora wears form-fitting golden-tan deer suede tunic with criss-cross laced cleavage, wide chocolate belt, and high honey-blonde ponytail tied with raw leather thong.
+Nora in foreground. Behind her, Leader, Strongest, Old Woman, and Hunter Woman rest peacefully near fire. The Neanderthals keep their lips firmly closed throughout; zero words from Neanderthals. Only Nora speaks. Perspective comes from her own outstretched arm; her free hand is empty at chest level.
+IDENTITY & OUTFIT LOCK (CRITICAL -- match reference images exactly):
+Nora's face and hair match the Nora face reference sheet, and her build and clothing match the Nora Body sheet. Nora has a voluptuous, curvaceous hourglass figure with a prominent high natural bust, tiny narrow waist, and shapely hips. Nora has honey-blonde hair pulled up into a high wavy ponytail tied with a raw leather thong (strictly NO rubber band), with wispy curtain bangs framing both cheeks. Nora wears a form-fitting tailored tunic of smoked golden-tan deer suede, precision-sewn with fine sinew stitches. CHEST LACING LOCK (CRITICAL): Deep plunging V-neckline laced with thick dark-brown leather thongs forming a prominent X-pattern bridge across her cleavage. CORSET BELT LOCK (CRITICAL): Tightly cinched at her tiny waist with a wide 10-12 cm dark-chocolate brown leather belt. SLEEVE CUFF LOCK (CRITICAL): Long fitted sleeves ending cleanly at the wrists; knee-high hide boots worn on her feet. Strictly NO modern jewelry, NO necklace, NO chain.
+
+CRITICAL VLOG SPEECH LOCK:
+Only Nora speaks English to the camera in her native Laomedeia voice profile; all Neanderthals never speak English and keep their lips firmly closed throughout.
+
 0-2s: Opening in steady chest-level selfie perspective, Nora looks directly into the lens with quiet wonder, warm amber firelight dancing across her eyes.
 2-5s: Nora maintains calm, deeply emotional gaze into camera with lips firmly closed throughout, communicating intimate reflection intended for post-production narration.
-5-8s: She glances gently over shoulder at resting clan members around hearth, then returns gaze to lens with a soft respectful smile of belonging.
+5-8s: She glances gently over shoulder at resting clan members around hearth, then returns gaze to lens with a soft respectful smile of belonging.; Nora says in a soft, reflective whisper: "No shouts, no hostility. Just pure rhythm of survival. This cave kept them alive for millennia."
 PHYSICAL REALISM & BIOMECHANICS:
 Natural subtle handheld breathing micro-tremors; authentic 0.5x optical wide perspective without fisheye curvature; stable arm lock keeping framing consistent.
 CAMERA:
 Handheld selfie perspective fixed at constant arm distance, maintaining single-perspective purity with no camera flips.
 AUDIO:
-Crackling hearth fire in background, soft breathing, distant winter wind outside. Strictly NO spoken dialogue.
+Crackling hearth fire in background, soft breathing, distant winter wind outside. Nora's clear spoken voice/whisper: "No shouts, no hostility. Just pure rhythm of survival. This cave kept them alive for millennia.".
 ```
 
 ---
@@ -558,6 +573,9 @@ SETTING:
 Main chamber of Pech de l'Azé cave transitioning into narrow limestone gallery corridor leading deep underground.
 CHARACTERS:
 Leader rises in center, broad and imposing in deer pelt. Nora stands on left edge watching attentively. Both have lips firmly closed throughout.
+
+IDENTITY & OUTFIT LOCK (CRITICAL -- match reference images exactly):
+Nora's face and hair match the Nora face reference sheet, and her build and clothing match the Nora Body sheet. Nora has a voluptuous, curvaceous hourglass figure with a prominent high natural bust, tiny narrow waist, and shapely hips. Nora has honey-blonde hair pulled up into a high wavy ponytail tied with a raw leather thong (strictly NO rubber band), with wispy curtain bangs framing both cheeks. Nora wears a form-fitting tailored tunic of smoked golden-tan deer suede, precision-sewn with fine sinew stitches. CHEST LACING LOCK (CRITICAL): Deep plunging V-neckline laced with thick dark-brown leather thongs forming a prominent X-pattern bridge across her cleavage. CORSET BELT LOCK (CRITICAL): Tightly cinched at her tiny waist with a wide 10-12 cm dark-chocolate brown leather belt. SLEEVE CUFF LOCK (CRITICAL): Long fitted sleeves ending cleanly at the wrists; knee-high hide boots worn on her feet. Strictly NO modern jewelry, NO necklace, NO chain.
 0-2s: Leader rises from hearth, lifting thick resinous pine torch blazing with bright yellow flame, casting long shadows across limestone ceiling.
 2-5s: He turns toward Nora, nods his heavy brow with solemn gravity, and raises free hand in clear gesture beckoning her to follow into dark passage.
 5-8s: Leader strides purposefully into narrow limestone gallery, torchlight carving amber corridor through ancient subterranean darkness; Nora steps forward to follow.
@@ -593,8 +611,9 @@ SETTING:
 A narrow, natural limestone karst corridor deep within Pech de l'Azé cave, far beyond daylight reach. Moisture-glistening rock walls, ancient silence.
 CHARACTERS:
 The Neanderthal Leader strides ahead with his burning pine torch, casting a wide amber pool of light. Nora follows two steps behind in her golden suede tunic. Both have lips firmly closed throughout.
-CONTINUITY & BODY LOCK:
-Nora wears her tailored golden-tan suede tunic, dark chocolate belt, and honey-blonde ponytail. She wears NO necklace or pendant yet.
+IDENTITY & OUTFIT LOCK (CRITICAL -- match reference images exactly):
+Nora's face and hair match the Nora face reference sheet, and her build and clothing match the Nora Body sheet. Nora has a voluptuous, curvaceous hourglass figure with a prominent high natural bust, tiny narrow waist, and shapely hips. Nora has honey-blonde hair pulled up into a high wavy ponytail tied with a raw leather thong (strictly NO rubber band), with wispy curtain bangs framing both cheeks. Nora wears a form-fitting tailored tunic of smoked golden-tan deer suede, precision-sewn with fine sinew stitches. CHEST LACING LOCK (CRITICAL): Deep plunging V-neckline laced with thick dark-brown leather thongs forming a prominent X-pattern bridge across her cleavage. CORSET BELT LOCK (CRITICAL): Tightly cinched at her tiny waist with a wide 10-12 cm dark-chocolate brown leather belt. SLEEVE CUFF LOCK (CRITICAL): Long fitted sleeves ending cleanly at the wrists; knee-high hide boots worn on her feet. Strictly NO modern jewelry, NO necklace, NO chain.
+
 0-2s: The Leader's pine torch illuminates the undulating contours of pale limestone walls as the pair advances deeper into the subterranean silence; all outside wind ceases completely.
 2-5s: The corridor winds through a natural limestone bend; Nora steps cautiously across smooth bedrock, her eyes wide with reverence as the ceiling arches higher overhead.
 5-8s: The Leader halts at the threshold of an expansive hidden chamber, lifting his torch high; warm golden light cascades across mineral-crusted stalactitic flowstone.
@@ -625,8 +644,9 @@ SETTING:
 The secluded deep chamber of Pech de l'Azé cave. Smooth pale limestone flowstone walls, level bedrock floor; entirely sheltered and sacred atmosphere.
 CHARACTERS:
 The Leader enters and secures the torch in a natural wall cleft on the right. In the center kneels the Old Woman beside a flat altar-like limestone slab. Nora stands on the left in quiet awe. Lips firmly closed throughout. Strictly NO modern items.
-CONTINUITY & BODY LOCK:
-Nora in full golden-tan suede outfit, empty neckline with NO jewelry.
+IDENTITY & OUTFIT LOCK (CRITICAL -- match reference images exactly):
+Nora's face and hair match the Nora face reference sheet, and her build and clothing match the Nora Body sheet. Nora has a voluptuous, curvaceous hourglass figure with a prominent high natural bust, tiny narrow waist, and shapely hips. Nora has honey-blonde hair pulled up into a high wavy ponytail tied with a raw leather thong (strictly NO rubber band), with wispy curtain bangs framing both cheeks. Nora wears a form-fitting tailored tunic of smoked golden-tan deer suede, precision-sewn with fine sinew stitches. CHEST LACING LOCK (CRITICAL): Deep plunging V-neckline laced with thick dark-brown leather thongs forming a prominent X-pattern bridge across her cleavage. CORSET BELT LOCK (CRITICAL): Tightly cinched at her tiny waist with a wide 10-12 cm dark-chocolate brown leather belt. SLEEVE CUFF LOCK (CRITICAL): Long fitted sleeves ending cleanly at the wrists; knee-high hide boots worn on her feet. Strictly NO modern jewelry, NO necklace, NO chain.
+
 0-2s: The warm glow of the newly mounted pine torch fills the secluded chamber with steady amber illumination, revealing pristine pale limestone surfaces free of domestic debris.
 2-5s: The Old Woman looks up calmly from her kneeling position beside the central limestone slab, where prepared natural mineral pigments and stone tools are neatly arranged.
 5-8s: Nora takes two cautious steps into the chamber, her gaze absorbing the focused, ceremonial stillness of the subterranean space.
@@ -718,18 +738,22 @@ Macro tactile close-up capturing Nora touching the freshly mixed red ochre pigme
 SETTING:
 Subterranean ritual chamber, torchlight casting deep amber highlights across wet paint and stone.
 CHARACTERS:
-Nora on the left, Old Woman on the right observing quietly. Lips firmly closed throughout.
-CONTINUITY & BODY LOCK:
-Nora in golden-tan deer suede tunic, no jewelry around her neck.
+Nora on the left, Old Woman on the right observing quietly. The Neanderthals keep their lips firmly closed throughout; zero words from Neanderthals. Only Nora speaks.
+IDENTITY & OUTFIT LOCK (CRITICAL -- match reference images exactly):
+Nora's face and hair match the Nora face reference sheet, and her build and clothing match the Nora Body sheet. Nora has a voluptuous, curvaceous hourglass figure with a prominent high natural bust, tiny narrow waist, and shapely hips. Nora has honey-blonde hair pulled up into a high wavy ponytail tied with a raw leather thong (strictly NO rubber band), with wispy curtain bangs framing both cheeks. Nora wears a form-fitting tailored tunic of smoked golden-tan deer suede, precision-sewn with fine sinew stitches. CHEST LACING LOCK (CRITICAL): Deep plunging V-neckline laced with thick dark-brown leather thongs forming a prominent X-pattern bridge across her cleavage. CORSET BELT LOCK (CRITICAL): Tightly cinched at her tiny waist with a wide 10-12 cm dark-chocolate brown leather belt. SLEEVE CUFF LOCK (CRITICAL): Long fitted sleeves ending cleanly at the wrists; knee-high hide boots worn on her feet. Strictly NO modern jewelry, NO necklace, NO chain.
+
+CRITICAL VLOG SPEECH LOCK:
+Only Nora speaks English to the camera in her native Laomedeia voice profile; all Neanderthals never speak English and keep their lips firmly closed throughout.
+
 0-2s: Encouraged by a gentle nod from the Old Woman, Nora slowly extends her right hand toward the freshly mixed crimson paint on the flat limestone palette.
 2-5s: Her index fingertip presses gently into the rich red paste, feeling the smooth mineral texture and greasy animal fat binder.
-5-8s: Nora lifts her finger, examining the vibrant crimson pigment coating her skin; the ancient mineral shines richly in the warm torchlight, connecting her to prehistoric artistic expression.
+5-8s: Nora lifts her finger, examining the vibrant crimson pigment coating her skin; the ancient mineral shines richly in the warm torchlight, connecting her to prehistoric artistic expression.; Nora says in a hushed whisper: "Pure red ochre... Ground into fine crimson pigment."
 PHYSICAL REALISM & BIOMECHANICS:
 Realistic fluid adhesion and surface tension of viscous mineral-lipid paste on human skin; delicate, reverent finger deceleration.
 CAMERA:
 High-resolution macro shot holding razor-sharp focus on Nora's paint-coated fingertip.
 AUDIO:
-Subtle soft touch sound on wet paste, quiet breath of wonder, gentle background torch crackle. Strictly NO spoken dialogue.
+Subtle soft touch sound on wet paste, quiet breath of wonder, gentle background torch crackle. Nora's clear spoken voice/whisper: "Pure red ochre... Ground into fine crimson pigment.".
 ```
 
 ---
@@ -781,17 +805,21 @@ SETTING:
 Deep ritual chamber of Pech de l'Azé cave, warm flickering torchlight enveloping both figures.
 CHARACTERS:
 The Leader marked with crimson stripes on the right; Nora on the left in her golden-tan suede outfit. Both have lips firmly closed throughout.
-CONTINUITY & BODY LOCK:
-Nora in golden deer suede tunic, blonde ponytail tied with leather thong, bare unadorned neck.
+IDENTITY & OUTFIT LOCK (CRITICAL -- match reference images exactly):
+Nora's face and hair match the Nora face reference sheet, and her build and clothing match the Nora Body sheet. Nora has a voluptuous, curvaceous hourglass figure with a prominent high natural bust, tiny narrow waist, and shapely hips. Nora has honey-blonde hair pulled up into a high wavy ponytail tied with a raw leather thong (strictly NO rubber band), with wispy curtain bangs framing both cheeks. Nora wears a form-fitting tailored tunic of smoked golden-tan deer suede, precision-sewn with fine sinew stitches. CHEST LACING LOCK (CRITICAL): Deep plunging V-neckline laced with thick dark-brown leather thongs forming a prominent X-pattern bridge across her cleavage. CORSET BELT LOCK (CRITICAL): Tightly cinched at her tiny waist with a wide 10-12 cm dark-chocolate brown leather belt. SLEEVE CUFF LOCK (CRITICAL): Long fitted sleeves ending cleanly at the wrists; knee-high hide boots worn on her feet. Strictly NO modern jewelry, NO necklace, NO chain.
+
+CRITICAL VLOG SPEECH LOCK:
+Only Nora speaks English to the camera in her native Laomedeia voice profile; all Neanderthals never speak English and keep their lips firmly closed throughout.
+
 0-2s: The Leader turns toward Nora; Nora remains kneeling upright with calm, respectful composure, her honey-blonde bangs framing her focused gaze.
 2-5s: The Leader dips his broad, calloused right thumb into the crimson ochre paste and gently presses a single bold red circular mark onto Nora's left cheekbone.
-5-8s: He withdraws his hand and nods his heavy brow with deep solemn approval, symbolically welcoming her into the kinship circle; Nora receives the mark with quiet reverence.
+5-8s: He withdraws his hand and nods his heavy brow with deep solemn approval, symbolically welcoming her into the kinship circle; Nora receives the mark with quiet reverence.; Nora says in an awed, trembling whisper: "A mark of belonging... Red ochre on my skin."
 PHYSICAL REALISM & BIOMECHANICS:
 Delicate tactile pressure on cheek tissue without flinching; authentic fingerprint impression visible in the red ochre mark; solemn mutual gaze.
 CAMERA:
 Intimate handheld medium close-up, gently reframing to balance both faces in warm amber firelight.
 AUDIO:
-Soft, dry skin contact, Nora's quiet breath of emotion, steady hiss of the wall torch. Strictly NO spoken dialogue.
+Soft, dry skin contact, Nora's quiet breath of emotion, steady hiss of the wall torch. Nora's clear spoken voice/whisper: "A mark of belonging... Red ochre on my skin.".
 ```
 
 ---
@@ -905,6 +933,9 @@ SETTING:
 Inner chamber of Pech de l'Azé cave, warm torchlight illuminating the fresh red hand stencil.
 CHARACTERS:
 The Old Woman in three-quarter profile, stepping back from the wall. Nora watches from the edge of frame. Lips firmly closed throughout.
+
+IDENTITY & OUTFIT LOCK (CRITICAL -- match reference images exactly):
+Nora's face and hair match the Nora face reference sheet, and her build and clothing match the Nora Body sheet. Nora has a voluptuous, curvaceous hourglass figure with a prominent high natural bust, tiny narrow waist, and shapely hips. Nora has honey-blonde hair pulled up into a high wavy ponytail tied with a raw leather thong (strictly NO rubber band), with wispy curtain bangs framing both cheeks. Nora wears a form-fitting tailored tunic of smoked golden-tan deer suede, precision-sewn with fine sinew stitches. CHEST LACING LOCK (CRITICAL): Deep plunging V-neckline laced with thick dark-brown leather thongs forming a prominent X-pattern bridge across her cleavage. CORSET BELT LOCK (CRITICAL): Tightly cinched at her tiny waist with a wide 10-12 cm dark-chocolate brown leather belt. SLEEVE CUFF LOCK (CRITICAL): Long fitted sleeves ending cleanly at the wrists; knee-high hide boots worn on her feet. Strictly NO modern jewelry, NO necklace, NO chain.
 0-2s: The Old Woman slowly peels her left palm and splayed fingers away from the limestone rock face, lifting cleanly to avoid smearing the moist paint.
 2-5s: The negative hand stencil is revealed: a pale limestone hand silhouette sharply outlined by the surrounding crimson halo, clearly displaying broad Neanderthal palm proportions and robust fingertips.
 5-8s: She wipes her chin with the back of her forearm, turning her weathered face toward Nora with a quiet, profound look of shared accomplishment.
@@ -935,17 +966,21 @@ SETTING:
 The limestone hand stencil wall inside the deep chamber, warm motivated firelight illuminating skin and stone.
 CHARACTERS:
 Nora's slender, modern right hand hovering steadily beside the freshly created Neanderthal negative stencil on the limestone wall.
-CONTINUITY & BODY LOCK:
-Nora's hand has no modern jewelry; red ochre initiation mark visible on her cheek in the background.
+IDENTITY & OUTFIT LOCK (CRITICAL -- match reference images exactly):
+Nora's face and hair match the Nora face reference sheet, and her build and clothing match the Nora Body sheet. Nora has a voluptuous, curvaceous hourglass figure with a prominent high natural bust, tiny narrow waist, and shapely hips. Nora has honey-blonde hair pulled up into a high wavy ponytail tied with a raw leather thong (strictly NO rubber band), with wispy curtain bangs framing both cheeks. Nora wears a form-fitting tailored tunic of smoked golden-tan deer suede, precision-sewn with fine sinew stitches. CHEST LACING LOCK (CRITICAL): Deep plunging V-neckline laced with thick dark-brown leather thongs forming a prominent X-pattern bridge across her cleavage. CORSET BELT LOCK (CRITICAL): Tightly cinched at her tiny waist with a wide 10-12 cm dark-chocolate brown leather belt. SLEEVE CUFF LOCK (CRITICAL): Long fitted sleeves ending cleanly at the wrists; knee-high hide boots worn on her feet. Strictly NO modern jewelry, NO necklace, NO chain.
+
+CRITICAL VLOG SPEECH LOCK:
+Only Nora speaks English to the camera in her native Laomedeia voice profile; all Neanderthals never speak English and keep their lips firmly closed throughout.
+
 0-2s: Nora steps close to the limestone wall, gently raising her right hand with splayed fingers, hovering two inches above the adjacent rock surface without touching.
 2-5s: The frame captures the striking anatomical contrast: Nora's slender modern digits and narrower palm compared against the broad, robust distal phalanges and wide palm of the Neanderthal stencil.
-5-8s: Nora holds her hand steady in silent contemplation, the visual echo spanning fifty thousand years of human lineage under the timeless torchlight.
+5-8s: Nora holds her hand steady in silent contemplation, the visual echo spanning fifty thousand years of human lineage under the timeless torchlight.; Nora says in a breathless, emotional whisper: "Fifty-one thousand years apart... and our hands are identical."
 PHYSICAL REALISM & BIOMECHANICS:
 Accurate comparative functional morphology between Homo sapiens and Homo neanderthalensis hands; stable isometric arm hold without trembling.
 CAMERA:
 Sharp macro focus with deep depth of field capturing both Nora's flesh hand and the stone-painted stencil.
 AUDIO:
-Profound cavern stillness, quiet soft breathing, gentle ambient torch hiss. Strictly NO spoken dialogue.
+Profound cavern stillness, quiet soft breathing, gentle ambient torch hiss. Nora's clear spoken voice/whisper: "Fifty-one thousand years apart... and our hands are identical.".
 ```
 
 ---
@@ -1063,6 +1098,9 @@ CHARACTERS:
 The Old Woman on the right, Nora on the left with open hands. The Leader stands in background. All have lips firmly closed.
 CONTINUITY & BODY LOCK (CRITICAL):
 Nora receives her single eagle talon here for the very first time. Before this moment, she wore no necklace.
+
+IDENTITY & OUTFIT LOCK (CRITICAL -- match reference images exactly):
+Nora's face and hair match the Nora face reference sheet, and her build and clothing match the Nora Body sheet. Nora has a voluptuous, curvaceous hourglass figure with a prominent high natural bust, tiny narrow waist, and shapely hips. Nora has honey-blonde hair pulled up into a high wavy ponytail tied with a raw leather thong (strictly NO rubber band), with wispy curtain bangs framing both cheeks. Nora wears a form-fitting tailored tunic of smoked golden-tan deer suede, precision-sewn with fine sinew stitches. CHEST LACING LOCK (CRITICAL): Deep plunging V-neckline laced with thick dark-brown leather thongs forming a prominent X-pattern bridge across her cleavage. CORSET BELT LOCK (CRITICAL): Tightly cinched at her tiny waist with a wide 10-12 cm dark-chocolate brown leather belt. SLEEVE CUFF LOCK (CRITICAL): Long fitted sleeves ending cleanly at the wrists; knee-high hide boots worn on her feet. Strictly NO modern jewelry, NO necklace, NO chain.
 0-2s: The Leader selects one finely drilled eagle talon from the leather wrap, handing it solemnly to the Old Woman.
 2-5s: With both calloused hands, the Old Woman transfers the single curved black eagle talon into Nora's open, waiting palms.
 5-8s: Nora gently curls her fingers around the cool, smooth talon, looking up into the Old Woman's weathered eyes with deep heartfelt gratitude.
@@ -1092,18 +1130,24 @@ Medium close-up shot capturing Nora fastening the eagle talon necklace around he
 SETTING:
 Deep sacred chamber of Pech de l'Azé cave, amber firelight casting warm glow on Nora's face and suede tunic.
 CHARACTERS:
-Nora in center, standing poised and reverent. Lips firmly closed throughout.
+Nora in center, standing poised and reverent. The Neanderthals keep their lips firmly closed throughout; zero words from Neanderthals. Only Nora speaks.
 CONTINUITY & BODY LOCK (CRITICAL):
 From this moment forward (and for all subsequent scenes), Nora wears this single eagle talon pendant on a raw leather thong over her laced golden-tan tunic; red ochre mark on her left cheek.
+
+IDENTITY & OUTFIT LOCK (CRITICAL -- match reference images exactly):
+Nora's face and hair match the Nora face reference sheet, and her build and clothing match the Nora Body sheet. Nora has a voluptuous, curvaceous hourglass figure with a prominent high natural bust, tiny narrow waist, and shapely hips. Nora has honey-blonde hair pulled up into a high wavy ponytail tied with a raw leather thong (strictly NO rubber band), with wispy curtain bangs framing both cheeks. Nora wears a form-fitting tailored tunic of smoked golden-tan deer suede, precision-sewn with fine sinew stitches. CHEST LACING LOCK (CRITICAL): Deep plunging V-neckline laced with thick dark-brown leather thongs forming a prominent X-pattern bridge across her cleavage. CORSET BELT LOCK (CRITICAL): Tightly cinched at her tiny waist with a wide 10-12 cm dark-chocolate brown leather belt. SLEEVE CUFF LOCK (CRITICAL): Long fitted sleeves ending cleanly at the wrists; knee-high hide boots worn on her feet. Strictly NO modern jewelry, NO necklace, NO chain.
 0-2s: Nora carefully threads a thin, supple raw leather thong through the perforated base of the black eagle talon.
 2-5s: She raises her arms, loops the cord around the back of her neck, and ties a secure knot beneath her high blonde ponytail.
-5-8s: The single curved black eagle talon settles comfortably against the criss-cross laced cleavage of her golden-tan tunic; her hand rests over it in quiet wonder.
+5-8s: The single curved black eagle talon settles comfortably against the criss-cross laced cleavage of her golden-tan tunic; her hand rests over it in quiet wonder.; Nora says in a hushed, reverent whisper: "An eagle talon necklace... The oldest jewelry on Earth."
 PHYSICAL REALISM & BIOMECHANICS:
 Natural knot-tying kinematics behind neck; authentic pendulum swing of the curved keratin talon settling over suede fabric; natural posture.
 CAMERA:
 Handheld medium close-up following her hands from behind the neck to the pendant settling on her chest.
 AUDIO:
-Soft dry rustle of leather thong, faint click as talon settles against suede lacing, quiet steady breath. Strictly NO spoken dialogue.
+Soft dry rustle of leather thong, faint click as talon settles against suede lacing, quiet steady breath. Nora's clear spoken voice/whisper: "An eagle talon necklace... The oldest jewelry on Earth.".
+
+CRITICAL VLOG SPEECH LOCK:
+Only Nora speaks English to the camera in her native Laomedeia voice profile; all Neanderthals never speak English and keep their lips firmly closed throughout.
 ```
 
 ---
@@ -1125,8 +1169,9 @@ SETTING:
 Deep ritual chamber of Pech de l'Azé cave, pale limestone walls echoing flickering torchlight.
 CHARACTERS:
 The Neanderthal Leader on the right (wearing his 8-talon necklace, red stripes on forehead). Nora on the left (wearing her single eagle talon pendant, red ochre mark on cheek). Both have lips firmly closed throughout.
-CONTINUITY & BODY LOCK:
-Nora wears her tailored golden-tan tunic with her newly acquired single eagle talon necklace clearly visible; high blonde ponytail tied with leather thong.
+IDENTITY & OUTFIT LOCK (CRITICAL -- match reference images exactly):
+Nora's face and hair match the Nora face reference sheet, and her build and clothing match the Nora Body sheet. Nora has a voluptuous, curvaceous hourglass figure with a prominent high natural bust, tiny narrow waist, and shapely hips. Nora has honey-blonde hair pulled up into a high wavy ponytail tied with a raw leather thong (strictly NO rubber band), with wispy curtain bangs framing both cheeks. Nora wears a form-fitting tailored tunic of smoked golden-tan deer suede, precision-sewn with fine sinew stitches. CHEST LACING LOCK (CRITICAL): Deep plunging V-neckline laced with thick dark-brown leather thongs forming a prominent X-pattern bridge across her cleavage. CORSET BELT LOCK (CRITICAL): Tightly cinched at her tiny waist with a wide 10-12 cm dark-chocolate brown leather belt. SLEEVE CUFF LOCK (CRITICAL): Long fitted sleeves ending cleanly at the wrists; knee-high hide boots worn on her feet. Strictly NO modern jewelry, NO necklace, NO chain.
+
 0-2s: The camera frames both figures in mutual stillness: the robust Neanderthal patriarch and the modern female survivalist, both bearing sacred ochre marks and eagle talon ornaments.
 2-5s: The Leader looks at the talon on Nora's chest, then meets her eyes, nodding his heavy brow with deep, unspoken respect between two lineages of human history.
 5-8s: Nora returns the nod with dignified gratitude, standing tall and unified in the ancient subterranean sanctuary.
@@ -1156,18 +1201,22 @@ Handheld over-the-shoulder wide-angle selfie vlog shot; Nora occupies the left t
 SETTING:
 Deep ritual chamber of Pech de l'Azé cave. The red hand stencils and flickering torchlight form the atmospheric backdrop.
 CHARACTERS:
-Nora in the foreground. Lips firmly closed throughout. The perspective comes directly from her own outstretched arm; her free hand rests empty at chest level.
-CONTINUITY & BODY LOCK:
-Nora wears her golden-tan deer suede tunic with the single eagle talon pendant visible on her chest; red ochre mark on her left cheek; high blonde ponytail tied with a raw leather thong.
+Nora in the foreground. The Neanderthals keep their lips firmly closed throughout; zero words from Neanderthals. Only Nora speaks. The perspective comes directly from her own outstretched arm; her free hand rests empty at chest level.
+IDENTITY & OUTFIT LOCK (CRITICAL -- match reference images exactly):
+Nora's face and hair match the Nora face reference sheet, and her build and clothing match the Nora Body sheet. Nora has a voluptuous, curvaceous hourglass figure with a prominent high natural bust, tiny narrow waist, and shapely hips. Nora has honey-blonde hair pulled up into a high wavy ponytail tied with a raw leather thong (strictly NO rubber band), with wispy curtain bangs framing both cheeks. Nora wears a form-fitting tailored tunic of smoked golden-tan deer suede, precision-sewn with fine sinew stitches. CHEST LACING LOCK (CRITICAL): Deep plunging V-neckline laced with thick dark-brown leather thongs forming a prominent X-pattern bridge across her cleavage. CORSET BELT LOCK (CRITICAL): Tightly cinched at her tiny waist with a wide 10-12 cm dark-chocolate brown leather belt. SLEEVE CUFF LOCK (CRITICAL): Long fitted sleeves ending cleanly at the wrists; knee-high hide boots worn on her feet. Strictly NO modern jewelry, NO necklace, NO chain.
+
+CRITICAL VLOG SPEECH LOCK:
+Only Nora speaks English to the camera in her native Laomedeia voice profile; all Neanderthals never speak English and keep their lips firmly closed throughout.
+
 0-2s: The camera opens in a steady chest-level selfie perspective: Nora gazes directly into the lens, her eyes reflecting the warm subterranean torchlight with profound emotion.
 2-5s: Nora looks silently into the camera without moving her mouth, her closed lips and solemn expression carrying immense depth for post-production voiceover reflection.
-5-8s: Her free hand rises to lightly touch the eagle talon pendant resting against her chest, glancing briefly back at the painted stencils before meeting the lens again in quiet stillness.
+5-8s: Her free hand rises to lightly touch the eagle talon pendant resting against her chest, glancing briefly back at the painted stencils before meeting the lens again in quiet stillness.; Nora says in a steady, thoughtful delivery: "They didn't just fight the cold. They created symbols. They had an inner world."
 PHYSICAL REALISM & BIOMECHANICS:
 Natural handheld breathing micro-shake; free hand stays at chest level without reaching toward lens; optical 0.5x wide perspective without distortion.
 CAMERA:
 Handheld selfie perspective fixed at constant arm's distance, maintaining single-perspective purity with no camera flips.
 AUDIO:
-Profound cavern quiet, gentle steady breathing, subtle crackle of distant torch. Strictly NO spoken dialogue.
+Profound cavern quiet, gentle steady breathing, subtle crackle of distant torch. Nora's clear spoken voice/whisper: "They didn't just fight the cold. They created symbols. They had an inner world.".
 ```
 
 ---
@@ -1256,15 +1305,21 @@ SETTING:
 The threshold apron of Pech de l'Azé cave, blowing snow and deep twilight shadows.
 CHARACTERS:
 No visible characters in frame; focus is on the menacing exterior environment and auditory threat.
+
+IDENTITY & OUTFIT LOCK (CRITICAL -- match reference images exactly):
+Nora's face and hair match the Nora face reference sheet, and her build and clothing match the Nora Body sheet. Nora has a voluptuous, curvaceous hourglass figure with a prominent high natural bust, tiny narrow waist, and shapely hips. Nora has honey-blonde hair pulled up into a high wavy ponytail tied with a raw leather thong (strictly NO rubber band), with wispy curtain bangs framing both cheeks. Nora wears a form-fitting tailored tunic of smoked golden-tan deer suede, precision-sewn with fine sinew stitches. CHEST LACING LOCK (CRITICAL): Deep plunging V-neckline laced with thick dark-brown leather thongs forming a prominent X-pattern bridge across her cleavage. CORSET BELT LOCK (CRITICAL): Tightly cinched at her tiny waist with a wide 10-12 cm dark-chocolate brown leather belt. SLEEVE CUFF LOCK (CRITICAL): Long fitted sleeves ending cleanly at the wrists; knee-high hide boots worn on her feet. Strictly NO modern jewelry, NO necklace, NO chain.
 0-2s: Swirling clouds of dense powder snow vortex through the frame against the darkening Pleistocene cliff apron.
 2-5s: Above the shrieking blizzard wind, the raw, authentic vocalizations of Pleistocene cave hyenas echo from the lower scree: harsh guttural whoops, low threatening growls, and dry chattering calls.
-5-8s: The distant sound of heavy paws crunching on frozen gravel and claws clicking against limestone rocks draws noticeably closer through the storm.
+5-8s: The distant sound of heavy paws crunching on frozen gravel and claws clicking against limestone rocks draws noticeably closer through the storm.; Nora says in a tense, hushed panic: "Listen to that... Hyenas. Cave hyenas outside."
 PHYSICAL REALISM & BIOMECHANICS:
 Accurate bio-acoustic animal behavior: realistic cave hyena pack communication (Crocuta crocuta spelaea) seeking shelter and food; strictly NO anthropomorphic "psychotic laughter".
 CAMERA:
 Slow forward creep toward the threshold opening with subtle wind-induced hand tremor.
 AUDIO:
-Authentic Pleistocene cave hyena pack vocalizations (harsh whoops, low guttural growls, chattering vocalizations), howling blizzard wind, ice clicking on rock. Strictly NO spoken dialogue.
+Authentic Pleistocene cave hyena pack vocalizations (harsh whoops, low guttural growls, chattering vocalizations), howling blizzard wind, ice clicking on rock. Nora's clear spoken voice/whisper: "Listen to that... Hyenas. Cave hyenas outside.".
+
+CRITICAL VLOG SPEECH LOCK:
+Only Nora speaks English to the camera in her native Laomedeia voice profile; all Neanderthals never speak English and keep their lips firmly closed throughout.
 ```
 
 ---
@@ -1316,8 +1371,9 @@ SETTING:
 Main chamber transitioning to the entrance passage of Pech de l'Azé cave; dramatic shifting torchlight and fire shadows.
 CHARACTERS:
 The Leader and the Strongest reacting instantly with battle readiness; Nora stands alert against the wall. Lips firmly closed throughout.
-CONTINUITY & BODY LOCK:
-Nora in golden suede tunic with eagle talon pendant visible on chest; red ochre mark on cheek.
+IDENTITY & OUTFIT LOCK (CRITICAL -- match reference images exactly):
+Nora's face and hair match the Nora face reference sheet, and her build and clothing match the Nora Body sheet. Nora has a voluptuous, curvaceous hourglass figure with a prominent high natural bust, tiny narrow waist, and shapely hips. Nora has honey-blonde hair pulled up into a high wavy ponytail tied with a raw leather thong (strictly NO rubber band), with wispy curtain bangs framing both cheeks. Nora wears a form-fitting tailored tunic of smoked golden-tan deer suede, precision-sewn with fine sinew stitches. CHEST LACING LOCK (CRITICAL): Deep plunging V-neckline laced with thick dark-brown leather thongs forming a prominent X-pattern bridge across her cleavage. CORSET BELT LOCK (CRITICAL): Tightly cinched at her tiny waist with a wide 10-12 cm dark-chocolate brown leather belt. SLEEVE CUFF LOCK (CRITICAL): Long fitted sleeves ending cleanly at the wrists; knee-high hide boots worn on her feet. Strictly NO modern jewelry, NO necklace, NO chain.
+
 0-2s: Spotting the predator silhouettes, the Leader issues an urgent non-verbal warning gesture, his face hardening into fierce defensive resolve.
 2-5s: He seizes a blazing pine branch in his left hand and his heavy thrusting spear in his right; beside him, the Strongest bounds forward gripping his 2.2-metre fire-hardened ash spear in a two-handed combat grip.
 5-8s: Nora braces firmly against the sheltered limestone wall in supportive vigilance as both muscular Neanderthal hunters charge toward the entrance archway.
@@ -1469,18 +1525,22 @@ Medium handheld tracking shot following Nora as she retrieves fresh fire from th
 SETTING:
 Central hearth chamber of Pech de l'Azé cave, protected from exterior wind drafts.
 CHARACTERS:
-Nora moving with athletic agility. Lips firmly closed throughout.
-CONTINUITY & BODY LOCK:
-Nora wears her golden-tan deer suede tunic, eagle talon pendant visible on chest, running with athletic purpose.
+Nora moving with athletic agility. The Neanderthals keep their lips firmly closed throughout; zero words from Neanderthals. Only Nora speaks.
+IDENTITY & OUTFIT LOCK (CRITICAL -- match reference images exactly):
+Nora's face and hair match the Nora face reference sheet, and her build and clothing match the Nora Body sheet. Nora has a voluptuous, curvaceous hourglass figure with a prominent high natural bust, tiny narrow waist, and shapely hips. Nora has honey-blonde hair pulled up into a high wavy ponytail tied with a raw leather thong (strictly NO rubber band), with wispy curtain bangs framing both cheeks. Nora wears a form-fitting tailored tunic of smoked golden-tan deer suede, precision-sewn with fine sinew stitches. CHEST LACING LOCK (CRITICAL): Deep plunging V-neckline laced with thick dark-brown leather thongs forming a prominent X-pattern bridge across her cleavage. CORSET BELT LOCK (CRITICAL): Tightly cinched at her tiny waist with a wide 10-12 cm dark-chocolate brown leather belt. SLEEVE CUFF LOCK (CRITICAL): Long fitted sleeves ending cleanly at the wrists; knee-high hide boots worn on her feet. Strictly NO modern jewelry, NO necklace, NO chain.
+
+CRITICAL VLOG SPEECH LOCK:
+Only Nora speaks English to the camera in her native Laomedeia voice profile; all Neanderthals never speak English and keep their lips firmly closed throughout.
+
 0-2s: Seeing the entrance torch falter from the threshold draft, Nora turns decisively and sprints toward the protected central hearth pit.
 2-5s: She swiftly seizes a thick, highly resinous burning pine brand from the fire, immediately cupping her body and free hand around the base to shield the flame from indoor drafts.
-5-8s: Gripping the blazing branch securely, she accelerates back toward the dark entrance passage, the vibrant yellow flame illuminating her focused, courageous stride.
+5-8s: Gripping the blazing branch securely, she accelerates back toward the dark entrance passage, the vibrant yellow flame illuminating her focused, courageous stride.; Nora says in a fierce, breathless whisper: "Fire keeps the perimeter. We hold this cave together."
 PHYSICAL REALISM & BIOMECHANICS:
 Single structured action beat: run, retrieve sheltered fire, shield with body, sprint to defense; natural running kinematics on uneven cave earth; flame aerodynamics trailing behind runner.
 CAMERA:
 Dynamic handheld tracking shot pacing alongside Nora as she retrieves the fire and rushes forward.
 AUDIO:
-Rapid boot footsteps on hard packed earth, crackle and whoosh of burning resinous pine brand, distant blizzard roar. Strictly NO spoken dialogue.
+Rapid boot footsteps on hard packed earth, crackle and whoosh of burning resinous pine brand, distant blizzard roar. Nora's clear spoken voice/whisper: "Fire keeps the perimeter. We hold this cave together.".
 ```
 
 ---
@@ -1502,17 +1562,21 @@ SETTING:
 Pech de l'Azé cave entrance threshold, howling wind whipping snow across the perimeter.
 CHARACTERS:
 Nora approaching from the left; the Leader holding his smoldering torch on the right. Both have lips firmly closed.
-CONTINUITY & BODY LOCK:
-Nora in golden deer suede tunic with eagle talon necklace; red ochre mark on cheek.
+IDENTITY & OUTFIT LOCK (CRITICAL -- match reference images exactly):
+Nora's face and hair match the Nora face reference sheet, and her build and clothing match the Nora Body sheet. Nora has a voluptuous, curvaceous hourglass figure with a prominent high natural bust, tiny narrow waist, and shapely hips. Nora has honey-blonde hair pulled up into a high wavy ponytail tied with a raw leather thong (strictly NO rubber band), with wispy curtain bangs framing both cheeks. Nora wears a form-fitting tailored tunic of smoked golden-tan deer suede, precision-sewn with fine sinew stitches. CHEST LACING LOCK (CRITICAL): Deep plunging V-neckline laced with thick dark-brown leather thongs forming a prominent X-pattern bridge across her cleavage. CORSET BELT LOCK (CRITICAL): Tightly cinched at her tiny waist with a wide 10-12 cm dark-chocolate brown leather belt. SLEEVE CUFF LOCK (CRITICAL): Long fitted sleeves ending cleanly at the wrists; knee-high hide boots worn on her feet. Strictly NO modern jewelry, NO necklace, NO chain.
+
+CRITICAL VLOG SPEECH LOCK:
+Only Nora speaks English to the camera in her native Laomedeia voice profile; all Neanderthals never speak English and keep their lips firmly closed throughout.
+
 0-2s: Nora reaches the entrance line, deftly stepping behind the Leader's broad back to use his muscular frame as a physical windbreak against the blizzard.
 2-5s: She brings her shielded burning pine branch directly against the glowing resin embers of the Leader's extinguished torch, feeding fresh flame into the dry resin.
-5-8s: The Leader's torch instantly catches: a burst of vibrant golden-orange flames roars back to life, blazing vigorously and driving back the shadows at the threshold.
+5-8s: The Leader's torch instantly catches: a burst of vibrant golden-orange flames roars back to life, blazing vigorously and driving back the shadows at the threshold.; Nora says in a determined whisper: "Take the fire! Keep the line!"
 PHYSICAL REALISM & BIOMECHANICS:
 Physically credible fire ignition: resin-rich wood reignites readily when flame contacts hot ember core; effective human body windbreak mechanics.
 CAMERA:
 Handheld medium close-up focused tightly on the point of contact between both torches, pulling back slightly as flame ignites.
 AUDIO:
-Whoosh of resin catching fire, sizzling crackle of burning pine needles, gale wind howling around the entrance, deep grunt of gratitude from Leader. Strictly NO spoken dialogue.
+Whoosh of resin catching fire, sizzling crackle of burning pine needles, gale wind howling around the entrance, deep grunt of gratitude from Leader. Nora's clear spoken voice/whisper: "Take the fire! Keep the line!".
 ```
 
 ---
@@ -1536,6 +1600,9 @@ CHARACTERS:
 The Leader, the Strongest, and Nora standing united at the entrance threshold. Lips firmly closed throughout.
 OBJECTS IN PLACE:
 Three separate burning resinous pine branches held at distinct positions across the entrance; the Strongest's thrusting spear leveled forward.
+
+IDENTITY & OUTFIT LOCK (CRITICAL -- match reference images exactly):
+Nora's face and hair match the Nora face reference sheet, and her build and clothing match the Nora Body sheet. Nora has a voluptuous, curvaceous hourglass figure with a prominent high natural bust, tiny narrow waist, and shapely hips. Nora has honey-blonde hair pulled up into a high wavy ponytail tied with a raw leather thong (strictly NO rubber band), with wispy curtain bangs framing both cheeks. Nora wears a form-fitting tailored tunic of smoked golden-tan deer suede, precision-sewn with fine sinew stitches. CHEST LACING LOCK (CRITICAL): Deep plunging V-neckline laced with thick dark-brown leather thongs forming a prominent X-pattern bridge across her cleavage. CORSET BELT LOCK (CRITICAL): Tightly cinched at her tiny waist with a wide 10-12 cm dark-chocolate brown leather belt. SLEEVE CUFF LOCK (CRITICAL): Long fitted sleeves ending cleanly at the wrists; knee-high hide boots worn on her feet. Strictly NO modern jewelry, NO necklace, NO chain.
 0-2s: Three distinct burning branches held aloft illuminate the frosted entrance in overlapping amber light, pushing back the dark blizzard perimeter.
 2-5s: Strong exterior crosswinds bend each flame independently, casting dynamic, dancing illumination across the swirling flakes and frosted scree.
 5-8s: The Strongest braces his thrusting spear forward while the Leader and Nora raise their torches high, standing as an unyielding, unified barrier of fire and wood.
@@ -1596,8 +1663,9 @@ SETTING:
 Just inside Pech de l'Azé cave entrance, warm firelight reflections on damp rock, wind roaring outside.
 CHARACTERS:
 The Leader, Strongest, and Nora settling from high-adrenaline combat alertness into profound relief. Lips firmly closed throughout.
-CONTINUITY & BODY LOCK:
-Nora in golden deer suede tunic with eagle talon necklace; red ochre mark on cheek.
+IDENTITY & OUTFIT LOCK (CRITICAL -- match reference images exactly):
+Nora's face and hair match the Nora face reference sheet, and her build and clothing match the Nora Body sheet. Nora has a voluptuous, curvaceous hourglass figure with a prominent high natural bust, tiny narrow waist, and shapely hips. Nora has honey-blonde hair pulled up into a high wavy ponytail tied with a raw leather thong (strictly NO rubber band), with wispy curtain bangs framing both cheeks. Nora wears a form-fitting tailored tunic of smoked golden-tan deer suede, precision-sewn with fine sinew stitches. CHEST LACING LOCK (CRITICAL): Deep plunging V-neckline laced with thick dark-brown leather thongs forming a prominent X-pattern bridge across her cleavage. CORSET BELT LOCK (CRITICAL): Tightly cinched at her tiny waist with a wide 10-12 cm dark-chocolate brown leather belt. SLEEVE CUFF LOCK (CRITICAL): Long fitted sleeves ending cleanly at the wrists; knee-high hide boots worn on her feet. Strictly NO modern jewelry, NO necklace, NO chain.
+
 0-2s: Confirming the predators have retreated, the Strongest slowly lowers his heavy wooden spear, resting the butt against the limestone floor and exhaling deeply.
 2-5s: The Leader lowers his torch, exhaling a thick plume of white vapor from dilated nostrils as the battle tension releases from his weathered brow.
 5-8s: Nora secures her torch in a wall niche, resting her hands on her thighs as she breathes deeply, exchanging a shared look of triumph and survival with the hunters.
@@ -1628,17 +1696,21 @@ SETTING:
 Entrance passage inside Pech de l'Azé cave, warm amber firelight playing across both figures.
 CHARACTERS:
 The Leader steps forward to face Nora. Both have lips firmly closed throughout.
-CONTINUITY & BODY LOCK:
-Nora in golden-tan suede tunic with eagle talon necklace visible on chest; red ochre mark on cheek.
+IDENTITY & OUTFIT LOCK (CRITICAL -- match reference images exactly):
+Nora's face and hair match the Nora face reference sheet, and her build and clothing match the Nora Body sheet. Nora has a voluptuous, curvaceous hourglass figure with a prominent high natural bust, tiny narrow waist, and shapely hips. Nora has honey-blonde hair pulled up into a high wavy ponytail tied with a raw leather thong (strictly NO rubber band), with wispy curtain bangs framing both cheeks. Nora wears a form-fitting tailored tunic of smoked golden-tan deer suede, precision-sewn with fine sinew stitches. CHEST LACING LOCK (CRITICAL): Deep plunging V-neckline laced with thick dark-brown leather thongs forming a prominent X-pattern bridge across her cleavage. CORSET BELT LOCK (CRITICAL): Tightly cinched at her tiny waist with a wide 10-12 cm dark-chocolate brown leather belt. SLEEVE CUFF LOCK (CRITICAL): Long fitted sleeves ending cleanly at the wrists; knee-high hide boots worn on her feet. Strictly NO modern jewelry, NO necklace, NO chain.
+
+CRITICAL VLOG SPEECH LOCK:
+Only Nora speaks English to the camera in her native Laomedeia voice profile; all Neanderthals never speak English and keep their lips firmly closed throughout.
+
 0-2s: The Leader turns fully toward Nora, his weathered eyes softening with profound respect for her courage during the crisis.
 2-5s: He takes one deliberate step forward and places his heavy, calloused right hand firmly on Nora's shoulder, giving two firm, reassuring pats against her suede tunic.
-5-8s: The Leader nods his heavy brow with deep solemn pride; Nora stands tall, smiling softly as an unbreakable bond of mutual survival is forged.
+5-8s: The Leader nods his heavy brow with deep solemn pride; Nora stands tall, smiling softly as an unbreakable bond of mutual survival is forged.; Nora says in a relieved whisper: "We held them off... We survived the night."
 PHYSICAL REALISM & BIOMECHANICS:
 Authentic Neanderthal physical touch: heavy, firm palm placement conveying non-verbal social affirmation without hesitance; natural shoulder recoil under friendly impact.
 CAMERA:
 Intimate handheld medium close-up holding steady focus on the hand on shoulder and their expressive faces.
 AUDIO:
-Firm dull thud of heavy hand patting suede tunic, soft mutual exhalations, crackle of nearby torch. Strictly NO spoken dialogue.
+Firm dull thud of heavy hand patting suede tunic, soft mutual exhalations, crackle of nearby torch. Nora's clear spoken voice/whisper: "We held them off... We survived the night.".
 ```
 
 ---
@@ -1660,8 +1732,9 @@ SETTING:
 Main central hearth of Pech de l'Azé cave, radiating deep golden-amber warmth while the blizzard rages muffled far outside.
 CHARACTERS:
 All five adult clan members gathered close around the glowing limestone hearth. All have lips firmly closed.
-CONTINUITY & BODY LOCK:
-Nora seated comfortably in golden suede outfit, eagle talon pendant glowing in firelight.
+IDENTITY & OUTFIT LOCK (CRITICAL -- match reference images exactly):
+Nora's face and hair match the Nora face reference sheet, and her build and clothing match the Nora Body sheet. Nora has a voluptuous, curvaceous hourglass figure with a prominent high natural bust, tiny narrow waist, and shapely hips. Nora has honey-blonde hair pulled up into a high wavy ponytail tied with a raw leather thong (strictly NO rubber band), with wispy curtain bangs framing both cheeks. Nora wears a form-fitting tailored tunic of smoked golden-tan deer suede, precision-sewn with fine sinew stitches. CHEST LACING LOCK (CRITICAL): Deep plunging V-neckline laced with thick dark-brown leather thongs forming a prominent X-pattern bridge across her cleavage. CORSET BELT LOCK (CRITICAL): Tightly cinched at her tiny waist with a wide 10-12 cm dark-chocolate brown leather belt. SLEEVE CUFF LOCK (CRITICAL): Long fitted sleeves ending cleanly at the wrists; knee-high hide boots worn on her feet. Strictly NO modern jewelry, NO necklace, NO chain.
+
 0-2s: The clan gathers tightly around the central limestone hearth as fresh pine logs are placed onto glowing coals, sending up welcoming bursts of warm sparks.
 2-5s: The Old Woman tends the warm pine-needle infusion, the Strongest checks his spear, and the Leader sits cross-legged in calm patriarchal vigilance.
 5-8s: Nora sits among them on a soft deer pelt, taking in the profound sanctuary of the firelit hearth as the fierce blizzard howls harmlessly outside the cave walls.
@@ -1691,18 +1764,24 @@ Medium close-up shot looking down gently at Nora resting in the sleeping alcove.
 SETTING:
 The sheltered sleeping alcove of Pech de l'Azé cave, illuminated by faint, warm ember glow from the distant hearth.
 CHARACTERS:
-Nora resting peacefully on thick fur bedding. Lips firmly closed throughout.
+Nora resting peacefully on thick fur bedding. The Neanderthals keep their lips firmly closed throughout; zero words from Neanderthals. Only Nora speaks.
 CONTINUITY & BODY LOCK (CRITICAL):
 Nora wears her golden suede tunic; single eagle talon necklace on her chest; red ochre mark on left cheek; resting peacefully after a full night of survival (synchronizing with 24 Hours title).
+
+IDENTITY & OUTFIT LOCK (CRITICAL -- match reference images exactly):
+Nora's face and hair match the Nora face reference sheet, and her build and clothing match the Nora Body sheet. Nora has a voluptuous, curvaceous hourglass figure with a prominent high natural bust, tiny narrow waist, and shapely hips. Nora has honey-blonde hair pulled up into a high wavy ponytail tied with a raw leather thong (strictly NO rubber band), with wispy curtain bangs framing both cheeks. Nora wears a form-fitting tailored tunic of smoked golden-tan deer suede, precision-sewn with fine sinew stitches. CHEST LACING LOCK (CRITICAL): Deep plunging V-neckline laced with thick dark-brown leather thongs forming a prominent X-pattern bridge across her cleavage. CORSET BELT LOCK (CRITICAL): Tightly cinched at her tiny waist with a wide 10-12 cm dark-chocolate brown leather belt. SLEEVE CUFF LOCK (CRITICAL): Long fitted sleeves ending cleanly at the wrists; knee-high hide boots worn on her feet. Strictly NO modern jewelry, NO necklace, NO chain.
 0-2s: Nora rests comfortably curled on her side in the thick bear and reindeer pelts layered over springy pine boughs, feeling the gentle residual warmth of the nearby hearth stones.
 2-5s: Her fingers lightly curl around the eagle talon pendant resting against her suede chest; the faint red ochre mark glows softly on her cheek in the dim amber light.
-5-8s: Her eyelids slowly close as fatigue yields to complete safety, drifting into deep, restorative sleep after enduring a full night of Pleistocene survival.
+5-8s: Her eyelids slowly close as fatigue yields to complete safety, drifting into deep, restorative sleep after enduring a full night of Pleistocene survival.; Nora says in a drowsy, grateful whisper: "Warmest bed in the Pleistocene... Safe from the storm."
 PHYSICAL REALISM & BIOMECHANICS:
 Natural breathing rhythm of sleep; realistic compression of soft fur bedding under body weight; authentic relaxation of facial musculature.
 CAMERA:
 Gentle handheld shot floating softly above Nora, slowly settling into peaceful stillness.
 AUDIO:
-Soft slow rhythmic breathing, gentle settling crackle of distant dying hearth coals, muffled wind outside. Strictly NO spoken dialogue.
+Soft slow rhythmic breathing, gentle settling crackle of distant dying hearth coals, muffled wind outside. Nora's clear spoken voice/whisper: "Warmest bed in the Pleistocene... Safe from the storm.".
+
+CRITICAL VLOG SPEECH LOCK:
+Only Nora speaks English to the camera in her native Laomedeia voice profile; all Neanderthals never speak English and keep their lips firmly closed throughout.
 ```
 
 ---
@@ -1790,18 +1869,22 @@ Low-angle handheld tracking shot following Nora as she steps out through the lim
 SETTING:
 Threshold apron of Pech de l'Azé cave, covered in a pristine fresh blanket of powdery snow glistening under golden morning rays.
 CHARACTERS:
-Nora stepping into the light, athletic, radiant, and completely unharmed. Lips firmly closed throughout.
-CONTINUITY & BODY LOCK:
-Nora wears her golden-tan deer suede tunic, dark chocolate belt, knee-high boots, single eagle talon pendant resting against her laced cleavage, and crimson ochre mark on left cheek.
+Nora stepping into the light, athletic, radiant, and completely unharmed. The Neanderthals keep their lips firmly closed throughout; zero words from Neanderthals. Only Nora speaks.
+IDENTITY & OUTFIT LOCK (CRITICAL -- match reference images exactly):
+Nora's face and hair match the Nora face reference sheet, and her build and clothing match the Nora Body sheet. Nora has a voluptuous, curvaceous hourglass figure with a prominent high natural bust, tiny narrow waist, and shapely hips. Nora has honey-blonde hair pulled up into a high wavy ponytail tied with a raw leather thong (strictly NO rubber band), with wispy curtain bangs framing both cheeks. Nora wears a form-fitting tailored tunic of smoked golden-tan deer suede, precision-sewn with fine sinew stitches. CHEST LACING LOCK (CRITICAL): Deep plunging V-neckline laced with thick dark-brown leather thongs forming a prominent X-pattern bridge across her cleavage. CORSET BELT LOCK (CRITICAL): Tightly cinched at her tiny waist with a wide 10-12 cm dark-chocolate brown leather belt. SLEEVE CUFF LOCK (CRITICAL): Long fitted sleeves ending cleanly at the wrists; knee-high hide boots worn on her feet. Strictly NO modern jewelry, NO necklace, NO chain.
+
+CRITICAL VLOG SPEECH LOCK:
+Only Nora speaks English to the camera in her native Laomedeia voice profile; all Neanderthals never speak English and keep their lips firmly closed throughout.
+
 0-2s: Nora walks purposefully out from the shadowed cavern threshold into the bright, crisp morning air, her boots leaving fresh crisp footprints in the virgin snow.
 2-5s: Warm golden sunlight bathes her face and blonde ponytail; she takes a deep, invigorating inhalation of clean glacial air, her shoulders relaxed and strong.
-5-8s: She lifts one hand gently to shade her eyes, gazing out over the glittering golden valley with an expression of quiet pride and profound gratitude.
+5-8s: She lifts one hand gently to shade her eyes, gazing out over the glittering golden valley with an expression of quiet pride and profound gratitude.; Nora says in an exhilarated, bright voice: "Morning after the blizzard! Dordogne bathed in pure golden sunlight."
 PHYSICAL REALISM & BIOMECHANICS:
 Authentic boot compaction mechanics in fresh powder snow; natural squinting and pupil constriction adjusting from dark cavern to brilliant snow daylight.
 CAMERA:
 Handheld tracking shot moving smoothly beside Nora, pivoting to capture her face bathed in morning light.
 AUDIO:
-Crisp crunch of boots packing fresh dry snow, gentle morning wind, deep peaceful breath of fresh air. Strictly NO spoken dialogue.
+Crisp crunch of boots packing fresh dry snow, gentle morning wind, deep peaceful breath of fresh air. Nora's clear spoken voice/whisper: "Morning after the blizzard! Dordogne bathed in pure golden sunlight.".
 ```
 
 ---
@@ -1825,7 +1908,7 @@ CHARACTERS:
 The Neanderthal adults on the apron. The Strongest inspects his spear; the Hunter Woman gathers dry pine fuel; the Leader scans the distant valley horizon. Lips firmly closed. Strictly NO children, NO modern items.
 0-2s: Golden morning rays illuminate the bustling entrance apron as the Neanderthal clan members emerge into the serene post-blizzard daylight.
 2-5s: The Strongest runs his fingers along his spear shaft in the sun; the Hunter Woman arranges dried firewood bundles near the sheltered threshold.
-5-8s: The Leader stands tall at the cliff edge, his fur pelt catching the morning breeze as he reads the snow-covered valley below for mammoth and reindeer trails.
+5-8s: The Leader stands tall at the cliff edge, his fur pelt catching the morning breeze as he reads the snow-covered valley below for massive Steppe Bison (Bison priscus) migration tracks across the valley snow.
 PHYSICAL REALISM & BIOMECHANICS:
 Authentic morning wilderness routine; relaxed purposeful adult movements; natural interaction with tools and environment without staged posturing.
 CAMERA:
@@ -1853,8 +1936,9 @@ SETTING:
 Frosted limestone apron outside the cave, brilliant morning sunlight creating soft rim lighting along figures.
 CHARACTERS:
 The Neanderthal Old Woman approaching Nora from the right. Both have lips firmly closed throughout.
-CONTINUITY & BODY LOCK:
-Nora in golden-tan deer suede tunic with eagle talon necklace; red ochre mark on cheek.
+IDENTITY & OUTFIT LOCK (CRITICAL -- match reference images exactly):
+Nora's face and hair match the Nora face reference sheet, and her build and clothing match the Nora Body sheet. Nora has a voluptuous, curvaceous hourglass figure with a prominent high natural bust, tiny narrow waist, and shapely hips. Nora has honey-blonde hair pulled up into a high wavy ponytail tied with a raw leather thong (strictly NO rubber band), with wispy curtain bangs framing both cheeks. Nora wears a form-fitting tailored tunic of smoked golden-tan deer suede, precision-sewn with fine sinew stitches. CHEST LACING LOCK (CRITICAL): Deep plunging V-neckline laced with thick dark-brown leather thongs forming a prominent X-pattern bridge across her cleavage. CORSET BELT LOCK (CRITICAL): Tightly cinched at her tiny waist with a wide 10-12 cm dark-chocolate brown leather belt. SLEEVE CUFF LOCK (CRITICAL): Long fitted sleeves ending cleanly at the wrists; knee-high hide boots worn on her feet. Strictly NO modern jewelry, NO necklace, NO chain.
+
 0-2s: The Old Woman walks slowly across the frosted gravel toward Nora, her untailored deer pelt glowing richly in the golden morning rays.
 2-5s: Her deeply weathered, expressive face carries a gentle, solemn warmth; her two calloused hands are cupped together securely in front of her chest, concealing a heavy keepsake.
 5-8s: She halts directly before Nora, meeting her eyes with a steady, affectionate gaze that transcends linguistic barriers.
@@ -1887,6 +1971,9 @@ CHARACTERS:
 The Old Woman on the right; Nora on the left. Both have lips firmly closed throughout.
 CONTINUITY & BODY LOCK (CRITICAL):
 Nora receives the heavy golden iron pyrite lump and explicitly slips it into her dark leather belt pouch, establishing ironclad physical continuity for all subsequent scenes.
+
+IDENTITY & OUTFIT LOCK (CRITICAL -- match reference images exactly):
+Nora's face and hair match the Nora face reference sheet, and her build and clothing match the Nora Body sheet. Nora has a voluptuous, curvaceous hourglass figure with a prominent high natural bust, tiny narrow waist, and shapely hips. Nora has honey-blonde hair pulled up into a high wavy ponytail tied with a raw leather thong (strictly NO rubber band), with wispy curtain bangs framing both cheeks. Nora wears a form-fitting tailored tunic of smoked golden-tan deer suede, precision-sewn with fine sinew stitches. CHEST LACING LOCK (CRITICAL): Deep plunging V-neckline laced with thick dark-brown leather thongs forming a prominent X-pattern bridge across her cleavage. CORSET BELT LOCK (CRITICAL): Tightly cinched at her tiny waist with a wide 10-12 cm dark-chocolate brown leather belt. SLEEVE CUFF LOCK (CRITICAL): Long fitted sleeves ending cleanly at the wrists; knee-high hide boots worn on her feet. Strictly NO modern jewelry, NO necklace, NO chain.
 0-2s: The Old Woman gently parts her calloused hands, revealing a heavy, fist-sized nodule of lustrous golden-brassy iron pyrite nestled in her palms.
 2-5s: She transfers the golden mineral lump solemnly into Nora's waiting hands; the heavy pyrite glints brilliantly in the crisp morning sun.
 5-8s: Nora curls her fingers around the precious fire-making stone in heartfelt gratitude, then carefully slips the pyrite into the dark leather pouch at her belt, fastening the flap.
@@ -1916,18 +2003,22 @@ Medium close-up shot capturing the deeply emotional farewell embrace between Nor
 SETTING:
 Frosted limestone apron outside Pech de l'Azé cave, golden morning sunlight illuminating suede and deer pelts.
 CHARACTERS:
-Nora and the Old Woman facing each other in intimate proximity. Lips firmly closed throughout.
-CONTINUITY & BODY LOCK:
-Nora wears her golden suede tunic, eagle talon pendant visible on chest, pyrite secured in belt pouch.
+Nora and the Old Woman facing each other in intimate proximity. The Neanderthals keep their lips firmly closed throughout; zero words from Neanderthals. Only Nora speaks.
+IDENTITY & OUTFIT LOCK (CRITICAL -- match reference images exactly):
+Nora's face and hair match the Nora face reference sheet, and her build and clothing match the Nora Body sheet. Nora has a voluptuous, curvaceous hourglass figure with a prominent high natural bust, tiny narrow waist, and shapely hips. Nora has honey-blonde hair pulled up into a high wavy ponytail tied with a raw leather thong (strictly NO rubber band), with wispy curtain bangs framing both cheeks. Nora wears a form-fitting tailored tunic of smoked golden-tan deer suede, precision-sewn with fine sinew stitches. CHEST LACING LOCK (CRITICAL): Deep plunging V-neckline laced with thick dark-brown leather thongs forming a prominent X-pattern bridge across her cleavage. CORSET BELT LOCK (CRITICAL): Tightly cinched at her tiny waist with a wide 10-12 cm dark-chocolate brown leather belt. SLEEVE CUFF LOCK (CRITICAL): Long fitted sleeves ending cleanly at the wrists; knee-high hide boots worn on her feet. Strictly NO modern jewelry, NO necklace, NO chain.
+
+CRITICAL VLOG SPEECH LOCK:
+Only Nora speaks English to the camera in her native Laomedeia voice profile; all Neanderthals never speak English and keep their lips firmly closed throughout.
+
 0-2s: Nora reaches forward, firmly clasping both forearms of the Old Woman in a hunter's grip; the Old Woman reciprocates with powerful, affectionate grip strength.
 2-5s: The Old Woman draws Nora forward into a warm, heartfelt embrace; Nora rests her forehead gently against the elder woman's shoulder fur in profound mutual gratitude.
-5-8s: They step back smoothly, holding each other's gaze with tear-glistening eyes and peaceful smiles, sealing an emotional kinship between two branches of humanity.
+5-8s: They step back smoothly, holding each other's gaze with tear-glistening eyes and peaceful smiles, sealing an emotional kinship between two branches of humanity.; Nora says in a moving whisper: "A mother's blessing across fifty-one millennia... The spark of life."
 PHYSICAL REALISM & BIOMECHANICS:
 Authentic reciprocal human embrace: natural shoulder and upper-torso muscle compression against dense pelts; tender release kinematics without theatrical melodrama.
 CAMERA:
 Handheld medium close-up gently circling forty-five degrees to capture both emotional faces in golden rim light.
 AUDIO:
-Soft rustle of deer furs and suede tunic, quiet mutual exhalations, gentle morning breeze across snow. Strictly NO spoken dialogue.
+Soft rustle of deer furs and suede tunic, quiet mutual exhalations, gentle morning breeze across snow. Nora's clear spoken voice/whisper: "A mother's blessing across fifty-one millennia... The spark of life.".
 ```
 
 ---
@@ -1949,6 +2040,9 @@ SETTING:
 The limestone entrance archway of Pech de l'Azé cave, framed against pale limestone cliffs and fresh morning snow.
 CHARACTERS:
 The Leader (wearing 8-talon necklace, red face markings) and the Strongest (holding his fire-hardened spear) standing side by side. Lips firmly closed throughout.
+
+IDENTITY & OUTFIT LOCK (CRITICAL -- match reference images exactly):
+Nora's face and hair match the Nora face reference sheet, and her build and clothing match the Nora Body sheet. Nora has a voluptuous, curvaceous hourglass figure with a prominent high natural bust, tiny narrow waist, and shapely hips. Nora has honey-blonde hair pulled up into a high wavy ponytail tied with a raw leather thong (strictly NO rubber band), with wispy curtain bangs framing both cheeks. Nora wears a form-fitting tailored tunic of smoked golden-tan deer suede, precision-sewn with fine sinew stitches. CHEST LACING LOCK (CRITICAL): Deep plunging V-neckline laced with thick dark-brown leather thongs forming a prominent X-pattern bridge across her cleavage. CORSET BELT LOCK (CRITICAL): Tightly cinched at her tiny waist with a wide 10-12 cm dark-chocolate brown leather belt. SLEEVE CUFF LOCK (CRITICAL): Long fitted sleeves ending cleanly at the wrists; knee-high hide boots worn on her feet. Strictly NO modern jewelry, NO necklace, NO chain.
 0-2s: Standing at the entrance archway, the Leader and the Strongest look outward toward Nora with stoic, dignified pride.
 2-5s: The Leader raises his broad right hand to chest height in a deliberate, universal gesture of peaceful farewell; the Strongest rests his hand over his spear in silent salute.
 5-8s: The two Pleistocene hunters stand resolute beneath the ancient limestone portal, immortal guardians of their glacial world, watching Nora's departure.
@@ -1981,6 +2075,9 @@ CHARACTERS:
 Nora walking steadily toward camera, tall, athletic, and confident. Lips firmly closed throughout.
 CONTINUITY & BODY LOCK (CRITICAL):
 Nora wears her golden-tan deer suede tunic; single eagle talon necklace swings gently against her laced cleavage; her right hand rests securely over the heavy iron pyrite stowed inside her dark belt pouch.
+
+IDENTITY & OUTFIT LOCK (CRITICAL -- match reference images exactly):
+Nora's face and hair match the Nora face reference sheet, and her build and clothing match the Nora Body sheet. Nora has a voluptuous, curvaceous hourglass figure with a prominent high natural bust, tiny narrow waist, and shapely hips. Nora has honey-blonde hair pulled up into a high wavy ponytail tied with a raw leather thong (strictly NO rubber band), with wispy curtain bangs framing both cheeks. Nora wears a form-fitting tailored tunic of smoked golden-tan deer suede, precision-sewn with fine sinew stitches. CHEST LACING LOCK (CRITICAL): Deep plunging V-neckline laced with thick dark-brown leather thongs forming a prominent X-pattern bridge across her cleavage. CORSET BELT LOCK (CRITICAL): Tightly cinched at her tiny waist with a wide 10-12 cm dark-chocolate brown leather belt. SLEEVE CUFF LOCK (CRITICAL): Long fitted sleeves ending cleanly at the wrists; knee-high hide boots worn on her feet. Strictly NO modern jewelry, NO necklace, NO chain.
 0-2s: Nora walks with an energetic, athletic stride down the winding snowy path, her boots gripping the limestone scree with practiced ease.
 2-5s: Her right hand rests naturally over the heavy iron pyrite lump nestled safely in her chocolate belt pouch; the black eagle talon pendant swings gently with each rhythmic step.
 5-8s: The crisp valley breeze catches her high blonde ponytail and curtain bangs; she looks ahead toward the vast horizon with radiant inner peace and triumph.
@@ -2042,18 +2139,22 @@ Handheld wide-angle 0.5x selfie vlog shot held steady at chest level; Nora occup
 SETTING:
 Scenic overlook above the Dordogne valley in bright, crisp morning sunshine; brilliant snow reflections.
 CHARACTERS:
-Nora in foreground. Lips firmly closed throughout. The perspective comes directly from her own outstretched arm; her free hand rests empty at chest level.
-CONTINUITY & BODY LOCK:
-Nora wears her golden-tan deer suede tunic; single eagle talon necklace on chest; red ochre mark on left cheek; hair tied in high blonde ponytail with raw leather thong.
+Nora in foreground. The Neanderthals keep their lips firmly closed throughout; zero words from Neanderthals. Only Nora speaks. The perspective comes directly from her own outstretched arm; her free hand rests empty at chest level.
+IDENTITY & OUTFIT LOCK (CRITICAL -- match reference images exactly):
+Nora's face and hair match the Nora face reference sheet, and her build and clothing match the Nora Body sheet. Nora has a voluptuous, curvaceous hourglass figure with a prominent high natural bust, tiny narrow waist, and shapely hips. Nora has honey-blonde hair pulled up into a high wavy ponytail tied with a raw leather thong (strictly NO rubber band), with wispy curtain bangs framing both cheeks. Nora wears a form-fitting tailored tunic of smoked golden-tan deer suede, precision-sewn with fine sinew stitches. CHEST LACING LOCK (CRITICAL): Deep plunging V-neckline laced with thick dark-brown leather thongs forming a prominent X-pattern bridge across her cleavage. CORSET BELT LOCK (CRITICAL): Tightly cinched at her tiny waist with a wide 10-12 cm dark-chocolate brown leather belt. SLEEVE CUFF LOCK (CRITICAL): Long fitted sleeves ending cleanly at the wrists; knee-high hide boots worn on her feet. Strictly NO modern jewelry, NO necklace, NO chain.
+
+CRITICAL VLOG SPEECH LOCK:
+Only Nora speaks English to the camera in her native Laomedeia voice profile; all Neanderthals never speak English and keep their lips firmly closed throughout.
+
 0-2s: The camera opens in a steady chest-level selfie vlog framing: Nora gazes directly into the lens, her face illuminated by radiant morning sunlight with a calm, triumphant smile.
 2-5s: Her closed lips and deeply emotional expression convey the profound realization of having survived a full twenty-four hours among Neanderthals, leaving space for intimate post-production narration.
-5-8s: The mountain breeze ruffles her wispy curtain bangs; she glances once more at the distant cliff cave behind her, then looks back into the lens with quiet, reverent gratitude.
+5-8s: The mountain breeze ruffles her wispy curtain bangs; she glances once more at the distant cliff cave behind her, then looks back into the lens with quiet, reverent gratitude.; Nora says in an inspiring, confident voice: "Twenty-four hours with Neanderthals. Not brutal savages — deeply human survivors."
 PHYSICAL REALISM & BIOMECHANICS:
 Steady arm lock maintaining constant distance and angle; authentic 0.5x optical wide perspective without facial distortion; subtle organic footfall tremors.
 CAMERA:
 Handheld selfie perspective fixed at constant arm's distance, maintaining single-perspective purity with no camera flips.
 AUDIO:
-Crisp mountain breeze rustling ponytail and suede, distant raven call echoing across the valley, soft peaceful breathing. Strictly NO spoken dialogue.
+Crisp mountain breeze rustling ponytail and suede, distant raven call echoing across the valley, soft peaceful breathing. Nora's clear spoken voice/whisper: "Twenty-four hours with Neanderthals. Not brutal savages — deeply human survivors.".
 ```
 
 ---
@@ -2077,15 +2178,21 @@ CHARACTERS:
 Only Nora's open right palm is in frame, steady and sunlit.
 OBJECTS IN PLACE:
 Resting side by side in her palm: the heavy brassy-golden lump of iron pyrite, and the curved, polished white-tailed sea eagle talon with its drilled suspension hole.
+
+IDENTITY & OUTFIT LOCK (CRITICAL -- match reference images exactly):
+Nora's face and hair match the Nora face reference sheet, and her build and clothing match the Nora Body sheet. Nora has a voluptuous, curvaceous hourglass figure with a prominent high natural bust, tiny narrow waist, and shapely hips. Nora has honey-blonde hair pulled up into a high wavy ponytail tied with a raw leather thong (strictly NO rubber band), with wispy curtain bangs framing both cheeks. Nora wears a form-fitting tailored tunic of smoked golden-tan deer suede, precision-sewn with fine sinew stitches. CHEST LACING LOCK (CRITICAL): Deep plunging V-neckline laced with thick dark-brown leather thongs forming a prominent X-pattern bridge across her cleavage. CORSET BELT LOCK (CRITICAL): Tightly cinched at her tiny waist with a wide 10-12 cm dark-chocolate brown leather belt. SLEEVE CUFF LOCK (CRITICAL): Long fitted sleeves ending cleanly at the wrists; knee-high hide boots worn on her feet. Strictly NO modern jewelry, NO necklace, NO chain.
 0-2s: Nora's open palm enters the warm golden sun, holding the two authentic Neanderthal artifacts steadily before the lens.
 2-5s: The brilliant morning light highlights the contrasting textures: the metallic brassy sparkle of the iron pyrite nodule alongside the smooth, lustrous dark horn curve of the drilled eagle talon.
-5-8s: These two physical relics—fire technology and symbolic culture—reveal how sophisticated Neanderthal survival and cognitive expression truly were, resting safely in human hands.
+5-8s: These two physical relics—fire technology and symbolic culture—reveal how sophisticated Neanderthal survival and cognitive expression truly were, resting safely in human hands.; Nora says with an affectionate smile: "Two gifts to remember them by: the spark of fire, and the symbol of family."
 PHYSICAL REALISM & BIOMECHANICS:
 Physically authentic macro lighting: specular highlights on metallic pyrite crystals and soft sub-surface scattering on polished keratin talon; realistic palm crease micro-textures.
 CAMERA:
 Razor-sharp macro lens holding pristine focus on both objects in Nora's hand.
 AUDIO:
-Gentle mountain breeze, soft dry rustle of skin on rock, deep quiet awe. Strictly NO spoken dialogue.
+Gentle mountain breeze, soft dry rustle of skin on rock, deep quiet awe. Nora's clear spoken voice/whisper: "Two gifts to remember them by: the spark of fire, and the symbol of family.".
+
+CRITICAL VLOG SPEECH LOCK:
+Only Nora speaks English to the camera in her native Laomedeia voice profile; all Neanderthals never speak English and keep their lips firmly closed throughout.
 ```
 
 ---
@@ -2107,6 +2214,9 @@ SETTING:
 The colossal glacial valley of the Dordogne 51,000 years ago under a brilliant, cloudless morning sky. Massive limestone bluffs flank the snowbound river plain.
 CHARACTERS:
 The solitary small figure of Nora walking steadily along the lower valley trail, heading toward the distant horizon.
+
+IDENTITY & OUTFIT LOCK (CRITICAL -- match reference images exactly):
+Nora's face and hair match the Nora face reference sheet, and her build and clothing match the Nora Body sheet. Nora has a voluptuous, curvaceous hourglass figure with a prominent high natural bust, tiny narrow waist, and shapely hips. Nora has honey-blonde hair pulled up into a high wavy ponytail tied with a raw leather thong (strictly NO rubber band), with wispy curtain bangs framing both cheeks. Nora wears a form-fitting tailored tunic of smoked golden-tan deer suede, precision-sewn with fine sinew stitches. CHEST LACING LOCK (CRITICAL): Deep plunging V-neckline laced with thick dark-brown leather thongs forming a prominent X-pattern bridge across her cleavage. CORSET BELT LOCK (CRITICAL): Tightly cinched at her tiny waist with a wide 10-12 cm dark-chocolate brown leather belt. SLEEVE CUFF LOCK (CRITICAL): Long fitted sleeves ending cleanly at the wrists; knee-high hide boots worn on her feet. Strictly NO modern jewelry, NO necklace, NO chain.
 0-2s: The camera holds an immense wide perspective across the Pleistocene river valley, the towering limestone bluffs of Pech de l'Azé standing proud in the golden morning light.
 2-5s: Nora's solitary figure moves gracefully along the snow-covered trail, dwarfed by the timeless monumental wilderness of glacial Europe.
 5-8s: The majestic wilderness rests in eternal, sacred peace as the frame slowly, gracefully fades to black, bringing the 24-hour survival journey to a definitive close.

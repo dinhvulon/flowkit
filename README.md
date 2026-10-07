@@ -1297,5 +1297,22 @@ MIT
 
 → **[facebook.com/groups/vibecodeera](https://www.facebook.com/groups/vibecodeera)**
 
-git pull # lấy code mới
-git checkout origin/main -- flow_agent.db # đè DB local bằng bản mới nhất trên git
+## Đồng bộ `flow_agent.db` giữa nhiều máy
+
+`flow_agent.db` được track trong git (chứa project/scene/media_id). SQLite chạy WAL mode nên mọi thay đổi qua API (vd `PATCH /api/scenes/...`) nằm trong `flow_agent.db-wal` trước — file DB chính **chưa đổi** cho tới khi flush.
+
+**Máy A — trước khi commit** (server vẫn chạy được):
+
+```bash
+python tools/db_sync.py save   # flush WAL vào flow_agent.db + git add
+git commit -m "sync: ..." && git push
+```
+
+**Máy B — lấy DB mới nhất** (tắt agent server trước):
+
+```bash
+git pull
+python tools/db_sync.py load   # đè DB local bằng bản trên git, xoá -wal/-shm cũ
+```
+
+> DB là file binary nên git không merge được — bản đã push luôn thắng. Không chép đè DB khi server đang chạy và không để file `-wal` cũ nằm cạnh DB mới: SQLite sẽ áp WAL cũ lên DB mới và làm hỏng DB.

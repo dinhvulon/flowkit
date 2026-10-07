@@ -33,4 +33,5 @@ output/*/1080/*_1080p.mp4
 # SQLite WAL mode auxiliary files (runtime state, not for repo)
 flow_agent.db-shm
 flow_agent.db-wal
+flow_agent.db.bak*
 
