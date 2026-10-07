@@ -1,11 +1,22 @@
-# FULL PROMPTS: SCENE 10 TO 75
+# BẢNG TỔNG HỢP KỊCH BẢN & PROMPT REVIEW (CẢNH 14 ĐẾN 75)
 
-## SCENE 14: A2-01-CARE - Cảnh 14: Sự Đùm Bọc Tiền Sử (Tấm Da Gấu & Kéo Vào Bếp Lửa)
+**Dự án:** Neanderthal 51,000 BC (`neanderthal-51ka`)
+**Format:** 16:9 4K Omni Flash Reference-to-Video (Laomedeia Voice Native)
+**Nguyên tắc:** Rule 48 (High-Retention Hunting Pivot & Cave Defense) + Rule 40 (Physics & No-Phone)
 
-- **Duration:** 8.0s
-- **Characters:** ['Nora', 'Nora Body', 'Old Woman', 'Cave Interior']
-- **Narrator / Dialogue:** "They don't know who I am... but they won't let me freeze."
-- **Tóm tắt hành động (VN):** Nora ngồi quỳ bên bếp lửa run bần bật vì hạ thân nhiệt. Người Phụ Nữ Lớn Tuổi mang tấm da gấu dày trùm lên vai cô, kéo cô ngồi sát vào gờ đá ấm bên bếp lửa. Nora ngước nhìn ánh mắt ấm áp đầy tình người và thì thầm xúc động vào camera.
+---
+
+
+## HỒI 2: SINH HOẠT HANG ĐÁ & KHỦNG HOẢNG LƯƠNG THỰC (Cảnh 14 - 20)
+
+### [Cảnh 14] Cảnh 14: Sự Đùm Bọc Tiền Sử (Tấm Da Gấu & Kéo Vào Bếp Lửa)
+- **Mã cảnh:** `A2-01-CARE` | **Thời lượng:** 8.0s
+- **Nhân vật & Bối cảnh (Ref ingredients):** Nora, Nora Body, Old Woman, Cave Interior
+- **Mô tả hành động (Tiếng Việt):**
+  Nora ngồi quỳ bên bếp lửa run bần bật vì hạ thân nhiệt. Người Phụ Nữ Lớn Tuổi mang tấm da gấu dày trùm lên vai cô, kéo cô ngồi sát vào gờ đá ấm bên bếp lửa. Nora ngước nhìn ánh mắt ấm áp đầy tình người và thì thầm xúc động vào camera.
+- **Thoại Nora (English Native Laomedeia):** "They don't know who I am... but they won't let me freeze."
+
+<details><summary>Xem Prompt Veo 3 / Omni Flash R2V (English)</summary>
 
 ```
 Photorealistic prehistoric survival documentary footage.
@@ -30,14 +41,18 @@ AUDIO:
 Crackling pine embers, deep muffled rustle of heavy bear fur, soft breath sigh of thermal relief, Nora's clear spoken whisper: "They don't know who I am... but they won't let me freeze."
 ```
 
+</details>
+
 ---
 
-## SCENE 15: A2-02-SETUP-BOIL - Cảnh 15: Cứu Hạ Thân Nhiệt (Đặt Bát Nước Vỏ Cây & Gắp Đá Nung Đỏ)
+### [Cảnh 15] Cảnh 15: Cứu Hạ Thân Nhiệt (Đặt Bát Nước Vỏ Cây & Gắp Đá Nung Đỏ)
+- **Mã cảnh:** `A2-02-SETUP-BOIL` | **Thời lượng:** 8.0s
+- **Nhân vật & Bối cảnh (Ref ingredients):** Nora, Nora Body, Old Woman, Cave Interior
+- **Mô tả hành động (Tiếng Việt):**
+  Người Phụ Nữ Lớn Tuổi đặt một chiếc bát vỏ cây bạch dương chứa nước suối và lá thông lên phiến đá trước mặt Nora. Bà bới than gắp hòn đá cuội nung đỏ rực từ bếp than nhấc lên đưa về phía bát nước. Nora kinh ngạc trước kỹ thuật sinh tồn đỉnh cao.
+- **Thoại Nora (English Native Laomedeia):** "No pots, no metal. She's pulling glowing river stones from the fire... to boil water!"
 
-- **Duration:** 8.0s
-- **Characters:** ['Nora', 'Nora Body', 'Old Woman', 'Cave Interior']
-- **Narrator / Dialogue:** "No pots, no metal. She's pulling glowing river stones from the fire... to boil water!"
-- **Tóm tắt hành động (VN):** Người Phụ Nữ Lớn Tuổi đặt một chiếc bát vỏ cây bạch dương chứa nước suối và lá thông lên phiến đá trước mặt Nora. Bà bới than gắp hòn đá cuội nung đỏ rực từ bếp than nhấc lên đưa về phía bát nước. Nora kinh ngạc trước kỹ thuật sinh tồn đỉnh cao.
+<details><summary>Xem Prompt Veo 3 / Omni Flash R2V (English)</summary>
 
 ```
 Photorealistic prehistoric survival documentary footage.
@@ -62,14 +77,18 @@ AUDIO:
 Soft scrape of birch bark bowl on stone slab, dull clinking scrape of hot cobble lifted from coals, faint thermal hiss in cold air, crackle of fire, Nora's clear spoken whisper: "No pots, no metal. She's pulling glowing river stones from the fire... to boil water!"
 ```
 
+</details>
+
 ---
 
-## SCENE 16: A2-03-STONE-BOIL - Cảnh 16: Kỹ Thuật Đun Nước Bằng Đá Nung (Stone Boiling)
+### [Cảnh 16] Cảnh 16: Kỹ Thuật Đun Nước Bằng Đá Nung (Stone Boiling)
+- **Mã cảnh:** `A2-03-STONE-BOIL` | **Thời lượng:** 8.0s
+- **Nhân vật & Bối cảnh (Ref ingredients):** Old Woman, Cave Interior
+- **Mô tả hành động (Tiếng Việt):**
+  Cận cảnh macro hòn đá nung đỏ thả chìm vào tâm bát nước vỏ cây bạch dương. Nước bùng sôi sục xèo xèo dữ dội, bọt khí nổ lách tách, cột hơi nước thơm mùi thông bốc lên nghi ngút trong không gian hang đá.
+- **Thoại Nora (English Native Laomedeia):** ""
 
-- **Duration:** 8.0s
-- **Characters:** ['Old Woman', 'Cave Interior']
-- **Narrator / Dialogue:** ""
-- **Tóm tắt hành động (VN):** Cận cảnh macro hòn đá nung đỏ thả chìm vào tâm bát nước vỏ cây bạch dương. Nước bùng sôi sục xèo xèo dữ dội, bọt khí nổ lách tách, cột hơi nước thơm mùi thông bốc lên nghi ngút trong không gian hang đá.
+<details><summary>Xem Prompt Veo 3 / Omni Flash R2V (English)</summary>
 
 ```
 Photorealistic prehistoric survival documentary craft footage.
@@ -92,14 +111,18 @@ AUDIO:
 Sharp sizzling hiss as hot stone enters water, steady vigorous bubbling of boiling water, gentle puff of releasing steam, soft clink of stone on bark base. Strictly NO spoken dialogue.
 ```
 
+</details>
+
 ---
 
-## SCENE 17: A2-04-DRINK-TEA - Cảnh 17: Hớp Nước Thảo Mộc Ấm Hồi Sinh Lồng Ngực
+### [Cảnh 17] Cảnh 17: Hớp Nước Thảo Mộc Ấm Hồi Sinh Lồng Ngực
+- **Mã cảnh:** `A2-04-DRINK-TEA` | **Thời lượng:** 8.0s
+- **Nhân vật & Bối cảnh (Ref ingredients):** Nora, Nora Body, Old Woman, Cave Interior
+- **Mô tả hành động (Tiếng Việt):**
+  Người phụ nữ đẩy nhẹ bát nước nóng còn bốc khói qua cho Nora. Nora hai tay bưng bát, hớp một ngụm nước thông ấm nóng làm ấm toàn bộ cơ thể, mỉm cười gật đầu biết ơn người mẹ tiền sử.
+- **Thoại Nora (English Native Laomedeia):** "Stone-boiled pine water... Hot drink in fifty-one thousand BC."
 
-- **Duration:** 8.0s
-- **Characters:** ['Nora', 'Nora Body', 'Old Woman', 'Cave Interior']
-- **Narrator / Dialogue:** "Stone-boiled pine water... Hot drink in fifty-one thousand BC."
-- **Tóm tắt hành động (VN):** Người phụ nữ đẩy nhẹ bát nước nóng còn bốc khói qua cho Nora. Nora hai tay bưng bát, hớp một ngụm nước thông ấm nóng làm ấm toàn bộ cơ thể, mỉm cười gật đầu biết ơn người mẹ tiền sử.
+<details><summary>Xem Prompt Veo 3 / Omni Flash R2V (English)</summary>
 
 ```
 Photorealistic prehistoric survival documentary footage.
@@ -124,14 +147,18 @@ AUDIO:
 Soft scrape of birch bark across flat limestone, gentle liquid sip, quiet breath of relief, crackle of nearby hearth fire, Nora's clear spoken voice/whisper: "Stone-boiled pine water... Hot drink in fifty-one thousand BC."
 ```
 
+</details>
+
 ---
 
-## SCENE 18: A2-05-WEAPONS-HEARTH - Cảnh 18: Chuẩn Bị Vũ Khí (Tôi Lửa Giáo Gỗ & Bện Dây Bẫy Thú)
+### [Cảnh 18] Cảnh 18: Chuẩn Bị Vũ Khí (Tôi Lửa Giáo Gỗ & Bện Dây Bẫy Thú)
+- **Mã cảnh:** `A2-05-WEAPONS-HEARTH` | **Thời lượng:** 8.0s
+- **Nhân vật & Bối cảnh (Ref ingredients):** Leader, Strongest, Strongest Spear, Cave Interior
+- **Mô tả hành động (Tiếng Việt):**
+  Người Mạnh Nhất quỳ bên than hồng xoay tròn mũi ngọn giáo gỗ tần bì 2.2m để tôi cứng gỗ. Phía đối diện, Thủ Lĩnh ngồi bện những sợi dây gân thú và vỏ cây bạch dương chắc nịch chuẩn bị cho chuyến đi săn lớn.
+- **Thoại Nora (English Native Laomedeia):** ""
 
-- **Duration:** 8.0s
-- **Characters:** ['Leader', 'Strongest', 'Strongest Spear', 'Cave Interior']
-- **Narrator / Dialogue:** ""
-- **Tóm tắt hành động (VN):** Người Mạnh Nhất quỳ bên than hồng xoay tròn mũi ngọn giáo gỗ tần bì 2.2m để tôi cứng gỗ. Phía đối diện, Thủ Lĩnh ngồi bện những sợi dây gân thú và vỏ cây bạch dương chắc nịch chuẩn bị cho chuyến đi săn lớn.
+<details><summary>Xem Prompt Veo 3 / Omni Flash R2V (English)</summary>
 
 ```
 Photorealistic prehistoric survival documentary craft footage.
@@ -154,14 +181,18 @@ AUDIO:
 Dull hiss of wood moisture drying in coals, rhythmic rustle of twisted sinew fibers, crackling pine embers, deep steady breathing. Strictly NO spoken dialogue.
 ```
 
+</details>
+
 ---
 
-## SCENE 19: A2-06-MEAT-CRISIS - Cảnh 19: Báo Động Kho Thịt Cạn Kiệt & Gió Bão Kéo Đến
+### [Cảnh 19] Cảnh 19: Báo Động Kho Thịt Cạn Kiệt & Gió Bão Kéo Đến
+- **Mã cảnh:** `A2-06-MEAT-CRISIS` | **Thời lượng:** 8.0s
+- **Nhân vật & Bối cảnh (Ref ingredients):** Nora, Nora Body, Leader, Meat Cache, Cave Interior
+- **Mô tả hành động (Tiếng Việt):**
+  Thủ Lĩnh bước lại kiểm tra giàn treo thịt trong hốc đá: chỉ còn vài khúc xương xẩu khô khốc. Ông nhìn ra vòm cửa hang nơi gió rít từng cơn báo hiệu bão tuyết sắp tới. Nora hướng máy quay theo dõi, nhận ra nguy cơ chết đói cận kề.
+- **Thoại Nora (English Native Laomedeia):** "The meat cache is almost bare. In minus twenty... an empty stomach means death."
 
-- **Duration:** 8.0s
-- **Characters:** ['Nora', 'Nora Body', 'Leader', 'Meat Cache', 'Cave Interior']
-- **Narrator / Dialogue:** "The meat cache is almost bare. In minus twenty... an empty stomach means death."
-- **Tóm tắt hành động (VN):** Thủ Lĩnh bước lại kiểm tra giàn treo thịt trong hốc đá: chỉ còn vài khúc xương xẩu khô khốc. Ông nhìn ra vòm cửa hang nơi gió rít từng cơn báo hiệu bão tuyết sắp tới. Nora hướng máy quay theo dõi, nhận ra nguy cơ chết đói cận kề.
+<details><summary>Xem Prompt Veo 3 / Omni Flash R2V (English)</summary>
 
 ```
 Photorealistic prehistoric survival documentary footage.
@@ -186,14 +217,18 @@ AUDIO:
 Rising howl of freezing wind outside cave mouth, dry clatter of bone against wood, quiet tense breathing, Nora's clear spoken whisper: "The meat cache is almost bare. In minus twenty... an empty stomach means death."
 ```
 
+</details>
+
 ---
 
-## SCENE 20: A2-07-HUNT-CALL - Cảnh 20: Lệnh Xuất Kích Đi Săn & Nora Quyết Tâm Xin Theo
+### [Cảnh 20] Cảnh 20: Lệnh Xuất Kích Đi Săn & Nora Quyết Tâm Xin Theo
+- **Mã cảnh:** `A2-07-HUNT-CALL` | **Thời lượng:** 8.0s
+- **Nhân vật & Bối cảnh (Ref ingredients):** Nora, Nora Body, Leader, Strongest, Strongest Spear, Cave Interior
+- **Mô tả hành động (Tiếng Việt):**
+  Thủ Lĩnh nhấc ngọn giáo dài, dậm mạnh cán gỗ xuống nền đá hô hiệu lệnh săn bắn. Người Mạnh Nhất lập tức đứng dậy vào vị trí. Nora siết chặt dây đai bốt da, quyết tâm bước theo sau đoàn săn để chứng minh bản thân.
+- **Thoại Nora (English Native Laomedeia):** "They're hunting before the blizzard hits. And I'm not staying behind."
 
-- **Duration:** 8.0s
-- **Characters:** ['Nora', 'Nora Body', 'Leader', 'Strongest', 'Strongest Spear', 'Cave Interior']
-- **Narrator / Dialogue:** "They're hunting before the blizzard hits. And I'm not staying behind."
-- **Tóm tắt hành động (VN):** Thủ Lĩnh nhấc ngọn giáo dài, dậm mạnh cán gỗ xuống nền đá hô hiệu lệnh săn bắn. Người Mạnh Nhất lập tức đứng dậy vào vị trí. Nora siết chặt dây đai bốt da, quyết tâm bước theo sau đoàn săn để chứng minh bản thân.
+<details><summary>Xem Prompt Veo 3 / Omni Flash R2V (English)</summary>
 
 ```
 Photorealistic prehistoric survival documentary footage.
@@ -218,14 +253,21 @@ AUDIO:
 Resonant wood-on-stone thud, crunch of gravel under hide boots, rustle of heavy furs, Nora's fast confident spoken voice: "They're hunting before the blizzard hits. And I'm not staying behind."
 ```
 
+</details>
+
 ---
 
-## SCENE 21: A3-01-STEP-OUT - Cảnh 21: Bước Ra Thảo Nguyên Tuyết Dordogne Lộng Gió
 
-- **Duration:** 8.0s
-- **Characters:** ['Nora', 'Nora Body', 'Leader', 'Strongest', 'Pech Valley']
-- **Narrator / Dialogue:** "Minus fifteen. The valley is silent, but they're already tracking."
-- **Tóm tắt hành động (VN):** Cả nhóm rời khỏi cửa hang đá vôi, bước ra sườn dốc băng tuyết lộng gió của thung lũng Dordogne. Thủ Lĩnh và Người Mạnh Nhất đi trước dò đường, Nora theo sau giơ ống kính bao quát cảnh thảo nguyên băng giá hùng vĩ.
+## HỒI 3: CUỘC ĐI SĂN BÒ RỪNG KHỔNG LỒ STEPPE BISON (Cảnh 21 - 38)
+
+### [Cảnh 21] Cảnh 21: Bước Ra Thảo Nguyên Tuyết Dordogne Lộng Gió
+- **Mã cảnh:** `A3-01-STEP-OUT` | **Thời lượng:** 8.0s
+- **Nhân vật & Bối cảnh (Ref ingredients):** Nora, Nora Body, Leader, Strongest, Pech Valley
+- **Mô tả hành động (Tiếng Việt):**
+  Cả nhóm rời khỏi cửa hang đá vôi, bước ra sườn dốc băng tuyết lộng gió của thung lũng Dordogne. Thủ Lĩnh và Người Mạnh Nhất đi trước dò đường, Nora theo sau giơ ống kính bao quát cảnh thảo nguyên băng giá hùng vĩ.
+- **Thoại Nora (English Native Laomedeia):** "Minus fifteen. The valley is silent, but they're already tracking."
+
+<details><summary>Xem Prompt Veo 3 / Omni Flash R2V (English)</summary>
 
 ```
 Photorealistic prehistoric survival documentary footage.
@@ -250,14 +292,18 @@ AUDIO:
 Loud crunch of frozen snow under boots, continuous low moan of glacial wind, soft breath exhalations, Nora's clear spoken whisper: "Minus fifteen. The valley is silent, but they're already tracking."
 ```
 
+</details>
+
 ---
 
-## SCENE 22: A3-02-TRACKS - Cảnh 22: Lần Theo Vết Chân Móng Guốc & Hơi Ấm Trên Tuyết
+### [Cảnh 22] Cảnh 22: Lần Theo Vết Chân Móng Guốc & Hơi Ấm Trên Tuyết
+- **Mã cảnh:** `A3-02-TRACKS` | **Thời lượng:** 8.0s
+- **Nhân vật & Bối cảnh (Ref ingredients):** Nora, Nora Body, Leader, Pech Valley
+- **Mô tả hành động (Tiếng Việt):**
+  Thủ Lĩnh ngồi xổm xuống một hố tuyết sâu, dùng ngón tay to thô ráp miết vào vết móng guốc đôi khổng lồ của bò bison. Một làn hơi ấm mỏng mảnh bốc lên từ tuyết nén, báo hiệu đàn thú đang ở rất gần.
+- **Thoại Nora (English Native Laomedeia):** "Steppe bison tracks. Still fresh. Still warm."
 
-- **Duration:** 8.0s
-- **Characters:** ['Nora', 'Nora Body', 'Leader', 'Pech Valley']
-- **Narrator / Dialogue:** "Steppe bison tracks. Still fresh. Still warm."
-- **Tóm tắt hành động (VN):** Thủ Lĩnh ngồi xổm xuống một hố tuyết sâu, dùng ngón tay to thô ráp miết vào vết móng guốc đôi khổng lồ của bò bison. Một làn hơi ấm mỏng mảnh bốc lên từ tuyết nén, báo hiệu đàn thú đang ở rất gần.
+<details><summary>Xem Prompt Veo 3 / Omni Flash R2V (English)</summary>
 
 ```
 Photorealistic prehistoric survival documentary footage.
@@ -282,14 +328,18 @@ AUDIO:
 Crisp scrape of leather mittens on frozen snow, muffled wind through pine needles, Nora's hushed tense whisper: "Steppe bison tracks. Still fresh. Still warm."
 ```
 
+</details>
+
 ---
 
-## SCENE 23: A3-03-HERD-SIGHTING - Cảnh 23: Phát Hiện Đàn Bò Bison Thảo Nguyên Qua Rặng Thông
+### [Cảnh 23] Cảnh 23: Phát Hiện Đàn Bò Bison Thảo Nguyên Qua Rặng Thông
+- **Mã cảnh:** `A3-03-HERD-SIGHTING` | **Thời lượng:** 8.0s
+- **Nhân vật & Bối cảnh (Ref ingredients):** Nora, Nora Body, Steppe Bison, Pech Valley
+- **Mô tả hành động (Tiếng Việt):**
+  Góc nhìn POV nấp sau cành thông phủ tuyết: Bên dưới lòng thung lũng, một đàn bò bison thảo nguyên khổng lồ lông dày sẫm màu đang cào tuyết tìm cỏ khô. Con đực đầu đàn to lớn vượt trội với bờm dày và cặp sừng cong vút.
+- **Thoại Nora (English Native Laomedeia):** "Look at the size of them... Steppe bison. One ton of pure muscle."
 
-- **Duration:** 8.0s
-- **Characters:** ['Nora', 'Nora Body', 'Steppe Bison', 'Pech Valley']
-- **Narrator / Dialogue:** "Look at the size of them... Steppe bison. One ton of pure muscle."
-- **Tóm tắt hành động (VN):** Góc nhìn POV nấp sau cành thông phủ tuyết: Bên dưới lòng thung lũng, một đàn bò bison thảo nguyên khổng lồ lông dày sẫm màu đang cào tuyết tìm cỏ khô. Con đực đầu đàn to lớn vượt trội với bờm dày và cặp sừng cong vút.
+<details><summary>Xem Prompt Veo 3 / Omni Flash R2V (English)</summary>
 
 ```
 Photorealistic prehistoric survival documentary wildlife footage.
@@ -314,14 +364,18 @@ AUDIO:
 Distant dull thud of heavy hooves on snow, deep guttural snort of bison, soft whistle of wind through pine needles, Nora's breathless awed whisper: "Look at the size of them... Steppe bison. One ton of pure muscle."
 ```
 
+</details>
+
 ---
 
-## SCENE 24: A3-04-STALKING - Cảnh 24: Hạ Thấp Đội Hình Bò Rạp Ngược Chiều Gió
+### [Cảnh 24] Cảnh 24: Hạ Thấp Đội Hình Bò Rạp Ngược Chiều Gió
+- **Mã cảnh:** `A3-04-STALKING` | **Thời lượng:** 8.0s
+- **Nhân vật & Bối cảnh (Ref ingredients):** Nora, Nora Body, Leader, Strongest, Pech Valley
+- **Mô tả hành động (Tiếng Việt):**
+  Thủ Lĩnh và Người Mạnh Nhất hạ thấp trọng tâm, bò rạp mình trên nền tuyết lạnh buốt nép sau gờ đá vôi để ngược chiều gió. Nora bám sát phía sau, tuyết bột phủ mờ vạt áo và mặt đất.
+- **Thoại Nora (English Native Laomedeia):** "Downwind crawl. If they smell us, we lose everything."
 
-- **Duration:** 8.0s
-- **Characters:** ['Nora', 'Nora Body', 'Leader', 'Strongest', 'Pech Valley']
-- **Narrator / Dialogue:** "Downwind crawl. If they smell us, we lose everything."
-- **Tóm tắt hành động (VN):** Thủ Lĩnh và Người Mạnh Nhất hạ thấp trọng tâm, bò rạp mình trên nền tuyết lạnh buốt nép sau gờ đá vôi để ngược chiều gió. Nora bám sát phía sau, tuyết bột phủ mờ vạt áo và mặt đất.
+<details><summary>Xem Prompt Veo 3 / Omni Flash R2V (English)</summary>
 
 ```
 Photorealistic prehistoric survival documentary footage.
@@ -346,14 +400,18 @@ AUDIO:
 Soft muffled shluck of knees pressing into deep powder snow, steady rush of cold headwind, quiet tense breathing, Nora's urgent rapid whisper: "Downwind crawl. If they smell us, we lose everything."
 ```
 
+</details>
+
 ---
 
-## SCENE 25: A3-05-ALPHA-CLOSEUP - Cảnh 25: Cận Cảnh Con Bison Đầu Đàn Cảnh Giác Đầy Uy Lực
+### [Cảnh 25] Cảnh 25: Cận Cảnh Con Bison Đầu Đàn Cảnh Giác Đầy Uy Lực
+- **Mã cảnh:** `A3-05-ALPHA-CLOSEUP` | **Thời lượng:** 8.0s
+- **Nhân vật & Bối cảnh (Ref ingredients):** Steppe Bison, Pech Valley
+- **Mô tả hành động (Tiếng Việt):**
+  Cận cảnh con bò bison đầu đàn khổng lồ đột ngột dừng ăn, ngẩng đầu hít gió. Ánh mắt hổ phách hung tợn, cặp sừng sứt mẻ vì những trận giác đấu, cơ bắp cuồn cuộn dưới lớp lông rậm rạp sẵn sàng nghênh chiến.
+- **Thoại Nora (English Native Laomedeia):** ""
 
-- **Duration:** 8.0s
-- **Characters:** ['Steppe Bison', 'Pech Valley']
-- **Narrator / Dialogue:** ""
-- **Tóm tắt hành động (VN):** Cận cảnh con bò bison đầu đàn khổng lồ đột ngột dừng ăn, ngẩng đầu hít gió. Ánh mắt hổ phách hung tợn, cặp sừng sứt mẻ vì những trận giác đấu, cơ bắp cuồn cuộn dưới lớp lông rậm rạp sẵn sàng nghênh chiến.
+<details><summary>Xem Prompt Veo 3 / Omni Flash R2V (English)</summary>
 
 ```
 Photorealistic prehistoric survival documentary wildlife footage.
@@ -376,14 +434,18 @@ AUDIO:
 Explosive nasal snort, deep vibrating chest growl that shakes the ground, dull clink of ice droplets on horn, whistling wind. Strictly NO spoken dialogue.
 ```
 
+</details>
+
 ---
 
-## SCENE 26: A3-06-FLANKING - Cảnh 26: Chiến Thuật Neanderthal: Tách Cánh Dồn Vào Bẫy Rãnh Băng
+### [Cảnh 26] Cảnh 26: Chiến Thuật Neanderthal: Tách Cánh Dồn Vào Bẫy Rãnh Băng
+- **Mã cảnh:** `A3-06-FLANKING` | **Thời lượng:** 8.0s
+- **Nhân vật & Bối cảnh (Ref ingredients):** Nora, Nora Body, Leader, Strongest, Strongest Spear, Pech Valley
+- **Mô tả hành động (Tiếng Việt):**
+  Thủ Lĩnh ra hiệu tay dứt khoát: Người Mạnh Nhất lách nhanh sang cánh phải, Thủ Lĩnh vòng sang cánh trái, khéo léo dồn con thú về phía một khe rãnh băng trơn trượt nơi thú lớn sẽ mất ma sát không thể quay đầu.
+- **Thoại Nora (English Native Laomedeia):** "The pincer trap. They're herding it toward the iced crevasse."
 
-- **Duration:** 8.0s
-- **Characters:** ['Nora', 'Nora Body', 'Leader', 'Strongest', 'Strongest Spear', 'Pech Valley']
-- **Narrator / Dialogue:** "The pincer trap. They're herding it toward the iced crevasse."
-- **Tóm tắt hành động (VN):** Thủ Lĩnh ra hiệu tay dứt khoát: Người Mạnh Nhất lách nhanh sang cánh phải, Thủ Lĩnh vòng sang cánh trái, khéo léo dồn con thú về phía một khe rãnh băng trơn trượt nơi thú lớn sẽ mất ma sát không thể quay đầu.
+<details><summary>Xem Prompt Veo 3 / Omni Flash R2V (English)</summary>
 
 ```
 Photorealistic prehistoric survival documentary footage.
@@ -408,14 +470,18 @@ AUDIO:
 Muffled rhythmic snow sprints, sharp deliberate wooden tap of spear against shield, rising wind, Nora's urgent rapid whisper: "The pincer trap. They're herding it toward the iced crevasse."
 ```
 
+</details>
+
 ---
 
-## SCENE 27: A3-07-ALARM - Cảnh 27: Con Bò Bison Phát Hiện Mối Nguy & Dậm Móng Gầm Rống
+### [Cảnh 27] Cảnh 27: Con Bò Bison Phát Hiện Mối Nguy & Dậm Móng Gầm Rống
+- **Mã cảnh:** `A3-07-ALARM` | **Thời lượng:** 8.0s
+- **Nhân vật & Bối cảnh (Ref ingredients):** Steppe Bison, Pech Valley
+- **Mô tả hành động (Tiếng Việt):**
+  Bị dồn vào khe hẹp, con bò bison đầu đàn nhận ra cái bẫy. Nó cào mạnh móng guốc nứt toác lớp băng, gầm lên một tiếng rống man dại rung chuyển vách đá, đuôi dựng đứng chuẩn bị tung đòn húc hủy diệt.
+- **Thoại Nora (English Native Laomedeia):** ""
 
-- **Duration:** 8.0s
-- **Characters:** ['Steppe Bison', 'Pech Valley']
-- **Narrator / Dialogue:** ""
-- **Tóm tắt hành động (VN):** Bị dồn vào khe hẹp, con bò bison đầu đàn nhận ra cái bẫy. Nó cào mạnh móng guốc nứt toác lớp băng, gầm lên một tiếng rống man dại rung chuyển vách đá, đuôi dựng đứng chuẩn bị tung đòn húc hủy diệt.
+<details><summary>Xem Prompt Veo 3 / Omni Flash R2V (English)</summary>
 
 ```
 Photorealistic prehistoric survival documentary wildlife footage.
@@ -438,14 +504,18 @@ AUDIO:
 Deafening deep guttural roar echoing through valley, sharp crack of ice breaking under hooves, heavy expulsion of breath. Strictly NO spoken dialogue.
 ```
 
+</details>
+
 ---
 
-## SCENE 28: A3-08-THE-CHARGE - Cảnh 28: Cú Lao Thục Mạng Kinh Hoàng: Quán Tính 1 Tấn Băng Qua Tuyết
+### [Cảnh 28] Cảnh 28: Cú Lao Thục Mạng Kinh Hoàng: Quán Tính 1 Tấn Băng Qua Tuyết
+- **Mã cảnh:** `A3-08-THE-CHARGE` | **Thời lượng:** 8.0s
+- **Nhân vật & Bối cảnh (Ref ingredients):** Nora, Nora Body, Steppe Bison, Pech Valley
+- **Mô tả hành động (Tiếng Việt):**
+  Con quái thú 1 tấn lồng lộn lao thục mạng về phía gờ đá nơi Nora đang đứng. Quán tính khủng khiếp khiến mặt đất rung chuyển, tuyết bay mù mịt. Nora thét lên hoảng loạn lùi sát lưng vào vách đá.
+- **Thoại Nora (English Native Laomedeia):** "HE'S CHARGING! RIGHT AT US--!"
 
-- **Duration:** 8.0s
-- **Characters:** ['Nora', 'Nora Body', 'Steppe Bison', 'Pech Valley']
-- **Narrator / Dialogue:** "HE'S CHARGING! RIGHT AT US--!"
-- **Tóm tắt hành động (VN):** Con quái thú 1 tấn lồng lộn lao thục mạng về phía gờ đá nơi Nora đang đứng. Quán tính khủng khiếp khiến mặt đất rung chuyển, tuyết bay mù mịt. Nora thét lên hoảng loạn lùi sát lưng vào vách đá.
+<details><summary>Xem Prompt Veo 3 / Omni Flash R2V (English)</summary>
 
 ```
 Photorealistic prehistoric survival documentary action footage.
@@ -470,14 +540,18 @@ AUDIO:
 Thunderous seismic drumming of hooves on frozen ground, roaring wind, furious animal grunting, Nora's authentic cracking scream: "HE'S CHARGING! RIGHT AT US--!"
 ```
 
+</details>
+
 ---
 
-## SCENE 29: A3-09-FEINT-INTERCEPT - Cảnh 29: Đòn Nghi Binh Can Trường Của Thủ Lĩnh
+### [Cảnh 29] Cảnh 29: Đòn Nghi Binh Can Trường Của Thủ Lĩnh
+- **Mã cảnh:** `A3-09-FEINT-INTERCEPT` | **Thời lượng:** 8.0s
+- **Nhân vật & Bối cảnh (Ref ingredients):** Leader, Steppe Bison, Pech Valley
+- **Mô tả hành động (Tiếng Việt):**
+  Ngay trước khi con thú đâm vào gờ đá, Thủ Lĩnh từ bên cánh dậm mạnh chân lao ra hét lớn, vung ngọn giáo gỗ đâm sượt qua sống mũi con bò bison. Con thú giật thót, trượt chân bẻ ngoặt hướng lao.
+- **Thoại Nora (English Native Laomedeia):** ""
 
-- **Duration:** 8.0s
-- **Characters:** ['Leader', 'Steppe Bison', 'Pech Valley']
-- **Narrator / Dialogue:** ""
-- **Tóm tắt hành động (VN):** Ngay trước khi con thú đâm vào gờ đá, Thủ Lĩnh từ bên cánh dậm mạnh chân lao ra hét lớn, vung ngọn giáo gỗ đâm sượt qua sống mũi con bò bison. Con thú giật thót, trượt chân bẻ ngoặt hướng lao.
+<details><summary>Xem Prompt Veo 3 / Omni Flash R2V (English)</summary>
 
 ```
 Photorealistic prehistoric survival documentary action footage.
@@ -498,14 +572,18 @@ AUDIO:
 Deep guttural Neanderthal war bellow, furious bovine snort, screech of hooves grating across hidden ice slab, snow spraying. Strictly NO English dialogue.
 ```
 
+</details>
+
 ---
 
-## SCENE 30: A3-10-FATAL-THRUST - Cảnh 30: Cú Đâm Quyết Định Bằng Giáo Gỗ Của Người Mạnh Nhất
+### [Cảnh 30] Cảnh 30: Cú Đâm Quyết Định Bằng Giáo Gỗ Của Người Mạnh Nhất
+- **Mã cảnh:** `A3-10-FATAL-THRUST` | **Thời lượng:** 8.0s
+- **Nhân vật & Bối cảnh (Ref ingredients):** Strongest, Strongest Spear, Steppe Bison, Pech Valley
+- **Mô tả hành động (Tiếng Việt):**
+  Chớp lấy thời cơ khi con thú phơi bày mạng sườn, Người Mạnh Nhất lao tới với sức mạnh phi thường, dùng hai tay dồn toàn bộ trọng lượng cơ thể phóng mũi giáo gỗ tần bì 2.2m tôi lửa cắm sâu vào mạng sườn con bison.
+- **Thoại Nora (English Native Laomedeia):** ""
 
-- **Duration:** 8.0s
-- **Characters:** ['Strongest', 'Strongest Spear', 'Steppe Bison', 'Pech Valley']
-- **Narrator / Dialogue:** ""
-- **Tóm tắt hành động (VN):** Chớp lấy thời cơ khi con thú phơi bày mạng sườn, Người Mạnh Nhất lao tới với sức mạnh phi thường, dùng hai tay dồn toàn bộ trọng lượng cơ thể phóng mũi giáo gỗ tần bì 2.2m tôi lửa cắm sâu vào mạng sườn con bison.
+<details><summary>Xem Prompt Veo 3 / Omni Flash R2V (English)</summary>
 
 ```
 Photorealistic prehistoric survival documentary action climax footage.
@@ -528,14 +606,18 @@ AUDIO:
 Explosive grunt of intense human exertion, wet heavy thud of wooden spear penetrating thick hide, deep shuddering groan from the wounded beast. Strictly NO English dialogue.
 ```
 
+</details>
+
 ---
 
-## SCENE 31: A3-11-STRUGGLE - Cảnh 31: Vật Lộn Sinh Tử: Ghì Chặt Cán Giáo Gỗ Bằng Cơ Bắp
+### [Cảnh 31] Cảnh 31: Vật Lộn Sinh Tử: Ghì Chặt Cán Giáo Gỗ Bằng Cơ Bắp
+- **Mã cảnh:** `A3-11-STRUGGLE` | **Thời lượng:** 8.0s
+- **Nhân vật & Bối cảnh (Ref ingredients):** Strongest, Strongest Spear, Steppe Bison, Pech Valley
+- **Mô tả hành động (Tiếng Việt):**
+  Con quái thú quằn quại trong tuyệt vọng, lắc mạnh thân mình hòng hất ngọn giáo ra. Người Mạnh Nhất cắn chặt răng, bắp tay gân guốc gồng lên như đá tảng, ghì chặt cán giáo ép con thú xuống nền tuyết.
+- **Thoại Nora (English Native Laomedeia):** ""
 
-- **Duration:** 8.0s
-- **Characters:** ['Strongest', 'Strongest Spear', 'Steppe Bison', 'Pech Valley']
-- **Narrator / Dialogue:** ""
-- **Tóm tắt hành động (VN):** Con quái thú quằn quại trong tuyệt vọng, lắc mạnh thân mình hòng hất ngọn giáo ra. Người Mạnh Nhất cắn chặt răng, bắp tay gân guốc gồng lên như đá tảng, ghì chặt cán giáo ép con thú xuống nền tuyết.
+<details><summary>Xem Prompt Veo 3 / Omni Flash R2V (English)</summary>
 
 ```
 Photorealistic prehistoric survival documentary action footage.
@@ -556,14 +638,18 @@ AUDIO:
 Deep laboured wheezing of dying bison, heavy strained grunts of the hunter, wet crunch of snow under shifting boots. Strictly NO spoken dialogue.
 ```
 
+</details>
+
 ---
 
-## SCENE 32: A3-12-COLLAPSE - Cảnh 32: Quái Thú Gục Ngã Trên Nền Băng Tuyết
+### [Cảnh 32] Cảnh 32: Quái Thú Gục Ngã Trên Nền Băng Tuyết
+- **Mã cảnh:** `A3-12-COLLAPSE` | **Thời lượng:** 8.0s
+- **Nhân vật & Bối cảnh (Ref ingredients):** Nora, Nora Body, Leader, Strongest, Steppe Bison, Pech Valley
+- **Mô tả hành động (Tiếng Việt):**
+  Con bò bison thảo nguyên khổng lồ đổ rầm xuống nền tuyết, hất tung một làn bụi tuyết trắng xóa. Không gian trở nên tĩnh lặng chỉ còn tiếng thở dốc kiệt sức. Nora bước ra từ sau gờ đá, bàng hoàng trước kỳ tích.
+- **Thoại Nora (English Native Laomedeia):** "He's down. They did it... They actually brought down a giant."
 
-- **Duration:** 8.0s
-- **Characters:** ['Nora', 'Nora Body', 'Leader', 'Strongest', 'Steppe Bison', 'Pech Valley']
-- **Narrator / Dialogue:** "He's down. They did it... They actually brought down a giant."
-- **Tóm tắt hành động (VN):** Con bò bison thảo nguyên khổng lồ đổ rầm xuống nền tuyết, hất tung một làn bụi tuyết trắng xóa. Không gian trở nên tĩnh lặng chỉ còn tiếng thở dốc kiệt sức. Nora bước ra từ sau gờ đá, bàng hoàng trước kỳ tích.
+<details><summary>Xem Prompt Veo 3 / Omni Flash R2V (English)</summary>
 
 ```
 Photorealistic prehistoric survival documentary footage.
@@ -588,14 +674,18 @@ AUDIO:
 Final fading breath of bison, deep heavy panting of the hunters, soft sigh of cold wind, Nora's hushed awe-struck voice: "He's down. They did it... They actually brought down a giant."
 ```
 
+</details>
+
 ---
 
-## SCENE 33: A3-13-GRATITUDE - Cảnh 33: Nghi Thức Tạ Ơn Con Mồi Đầy Tôn Kính
+### [Cảnh 33] Cảnh 33: Nghi Thức Tạ Ơn Con Mồi Đầy Tôn Kính
+- **Mã cảnh:** `A3-13-GRATITUDE` | **Thời lượng:** 8.0s
+- **Nhân vật & Bối cảnh (Ref ingredients):** Nora, Nora Body, Leader, Steppe Bison, Pech Valley
+- **Mô tả hành động (Tiếng Việt):**
+  Thủ Lĩnh quỳ xuống bên đầu con bò bison, nhắm mắt và đặt bàn tay thô ráp lên vầng trán con thú, khẽ thì thầm một câu cổ ngữ ngắn ngủi tạ ơn sự hy sinh của tự nhiên. Nora chứng kiến chiều sâu tâm linh của người tiền sử.
+- **Thoại Nora (English Native Laomedeia):** "No cheering. No gloating. Just profound, silent gratitude."
 
-- **Duration:** 8.0s
-- **Characters:** ['Nora', 'Nora Body', 'Leader', 'Steppe Bison', 'Pech Valley']
-- **Narrator / Dialogue:** "No cheering. No gloating. Just profound, silent gratitude."
-- **Tóm tắt hành động (VN):** Thủ Lĩnh quỳ xuống bên đầu con bò bison, nhắm mắt và đặt bàn tay thô ráp lên vầng trán con thú, khẽ thì thầm một câu cổ ngữ ngắn ngủi tạ ơn sự hy sinh của tự nhiên. Nora chứng kiến chiều sâu tâm linh của người tiền sử.
+<details><summary>Xem Prompt Veo 3 / Omni Flash R2V (English)</summary>
 
 ```
 Photorealistic prehistoric survival documentary spiritual footage.
@@ -620,14 +710,18 @@ AUDIO:
 Faint whisper of wind, soft crunch of settling snow, Nora's gentle respectful whisper: "No cheering. No gloating. Just profound, silent gratitude."
 ```
 
+</details>
+
 ---
 
-## SCENE 34: A3-14-BUTCHERING - Cảnh 34: Kỹ Nghệ Xẻ Thịt Thần Tốc Bằng Dao Đá Mousterian
+### [Cảnh 34] Cảnh 34: Kỹ Nghệ Xẻ Thịt Thần Tốc Bằng Dao Đá Mousterian
+- **Mã cảnh:** `A3-14-BUTCHERING` | **Thời lượng:** 8.0s
+- **Nhân vật & Bối cảnh (Ref ingredients):** Leader, Strongest, Steppe Bison, Pech Valley
+- **Mô tả hành động (Tiếng Việt):**
+  Hai thợ săn lập tức lấy ra những lưỡi dao đá lửa Mousterian tam giác sắc như dao mổ, thoăn thoắt rạch những đường dứt khoát xẻ nhanh các tảng thịt đùi lớn còn bốc khói nhiệt giữa trời băng giá.
+- **Thoại Nora (English Native Laomedeia):** ""
 
-- **Duration:** 8.0s
-- **Characters:** ['Leader', 'Strongest', 'Steppe Bison', 'Pech Valley']
-- **Narrator / Dialogue:** ""
-- **Tóm tắt hành động (VN):** Hai thợ săn lập tức lấy ra những lưỡi dao đá lửa Mousterian tam giác sắc như dao mổ, thoăn thoắt rạch những đường dứt khoát xẻ nhanh các tảng thịt đùi lớn còn bốc khói nhiệt giữa trời băng giá.
+<details><summary>Xem Prompt Veo 3 / Omni Flash R2V (English)</summary>
 
 ```
 Photorealistic prehistoric survival documentary craft footage.
@@ -650,14 +744,18 @@ AUDIO:
 Sharp rhythmic slicing sounds through sinew and hide, dull wet thud of meat quarters onto leather, rapid breathing. Strictly NO spoken dialogue.
 ```
 
+</details>
+
 ---
 
-## SCENE 35: A3-15-PACKING - Cảnh 35: Buộc Chặt Các Bọc Thịt Vào Da Thú Để Vác
+### [Cảnh 35] Cảnh 35: Buộc Chặt Các Bọc Thịt Vào Da Thú Để Vác
+- **Mã cảnh:** `A3-15-PACKING` | **Thời lượng:** 8.0s
+- **Nhân vật & Bối cảnh (Ref ingredients):** Nora, Nora Body, Leader, Strongest, Meat Cache, Pech Valley
+- **Mô tả hành động (Tiếng Việt):**
+  Người Mạnh Nhất cuộn những tảng thịt lớn vào các tấm da hươu khô, dùng dây gân thú buộc chặt lại thành những kiện hàng vác vai. Nora phụ giúp giữ dây gân, toàn bộ bầy đàn đều hợp lực.
+- **Thoại Nora (English Native Laomedeia):** "Every scrap of fat and meat wrapped tight. Winter survival secured."
 
-- **Duration:** 8.0s
-- **Characters:** ['Nora', 'Nora Body', 'Leader', 'Strongest', 'Meat Cache', 'Pech Valley']
-- **Narrator / Dialogue:** "Every scrap of fat and meat wrapped tight. Winter survival secured."
-- **Tóm tắt hành động (VN):** Người Mạnh Nhất cuộn những tảng thịt lớn vào các tấm da hươu khô, dùng dây gân thú buộc chặt lại thành những kiện hàng vác vai. Nora phụ giúp giữ dây gân, toàn bộ bầy đàn đều hợp lực.
+<details><summary>Xem Prompt Veo 3 / Omni Flash R2V (English)</summary>
 
 ```
 Photorealistic prehistoric survival documentary footage.
@@ -682,14 +780,18 @@ AUDIO:
 Squeak of stretched leather thongs, wet slosh of tightly packed meat, satisfied grunt of hunter lifting pack, Nora's triumphant spoken voice: "Every scrap of fat and meat wrapped tight. Winter survival secured."
 ```
 
+</details>
+
 ---
 
-## SCENE 36: A3-16-BLOOD-SCENT - Cảnh 36: Mùi Máu Tươi & Tiếng Cười Linh Cẩu Vang Lên Từ Rừng Xa
+### [Cảnh 36] Cảnh 36: Mùi Máu Tươi & Tiếng Cười Linh Cẩu Vang Lên Từ Rừng Xa
+- **Mã cảnh:** `A3-16-BLOOD-SCENT` | **Thời lượng:** 8.0s
+- **Nhân vật & Bối cảnh (Ref ingredients):** Nora, Nora Body, Leader, Cave Hyena, Pech Valley
+- **Mô tả hành động (Tiếng Việt):**
+  Cơn gió lạnh thổi thốc qua mang theo mùi máu tanh nồng. Đột nhiên từ phía rặng thông xa xa, một tràng tiếng tru hú the thé và tiếng cười man rợ của bầy linh cẩu hang động xé toạc không gian. Thủ Lĩnh lập tức cảnh giác cao độ.
+- **Thoại Nora (English Native Laomedeia):** "Listen... Hyenas. The blood scent carried for miles."
 
-- **Duration:** 8.0s
-- **Characters:** ['Nora', 'Nora Body', 'Leader', 'Cave Hyena', 'Pech Valley']
-- **Narrator / Dialogue:** "Listen... Hyenas. The blood scent carried for miles."
-- **Tóm tắt hành động (VN):** Cơn gió lạnh thổi thốc qua mang theo mùi máu tanh nồng. Đột nhiên từ phía rặng thông xa xa, một tràng tiếng tru hú the thé và tiếng cười man rợ của bầy linh cẩu hang động xé toạc không gian. Thủ Lĩnh lập tức cảnh giác cao độ.
+<details><summary>Xem Prompt Veo 3 / Omni Flash R2V (English)</summary>
 
 ```
 Photorealistic prehistoric survival documentary suspense footage.
@@ -714,14 +816,18 @@ AUDIO:
 Ominous high-pitched howling whoops and psychotic cackles of Cave Hyenas in distance, sudden sharp wind gust, Nora's terrified breathless whisper: "Listen... Hyenas. The blood scent carried for miles."
 ```
 
+</details>
+
 ---
 
-## SCENE 37: A3-17-RETREAT-RUN - Cảnh 37: Cuộc Chạy Đua Hoàng Hôn Vác Thịt Về Hang
+### [Cảnh 37] Cảnh 37: Cuộc Chạy Đua Hoàng Hôn Vác Thịt Về Hang
+- **Mã cảnh:** `A3-17-RETREAT-RUN` | **Thời lượng:** 8.0s
+- **Nhân vật & Bối cảnh (Ref ingredients):** Nora, Nora Body, Leader, Strongest, Pech Valley
+- **Mô tả hành động (Tiếng Việt):**
+  Không một giây chần chừ, cả nhóm vác những bọc thịt nặng trịch trên lưng rảo bước thục mạng qua các gờ tuyết về hướng vách núi. Trời sập tối rất nhanh, tuyết bắt đầu rơi lả tả.
+- **Thoại Nora (English Native Laomedeia):** "We have to move! Before the sun drops and they swarm us!"
 
-- **Duration:** 8.0s
-- **Characters:** ['Nora', 'Nora Body', 'Leader', 'Strongest', 'Pech Valley']
-- **Narrator / Dialogue:** "We have to move! Before the sun drops and they swarm us!"
-- **Tóm tắt hành động (VN):** Không một giây chần chừ, cả nhóm vác những bọc thịt nặng trịch trên lưng rảo bước thục mạng qua các gờ tuyết về hướng vách núi. Trời sập tối rất nhanh, tuyết bắt đầu rơi lả tả.
+<details><summary>Xem Prompt Veo 3 / Omni Flash R2V (English)</summary>
 
 ```
 Photorealistic prehistoric survival documentary action footage.
@@ -746,14 +852,18 @@ AUDIO:
 Heavy rhythmic gasping breaths, violent crunch of deep snow beneath sprinting boots, whistling blizzard gusts, Nora's panting frantic voice: "We have to move! Before the sun drops and they swarm us!"
 ```
 
+</details>
+
 ---
 
-## SCENE 38: A3-18-REACH-CAVE - Cảnh 38: Về Tới Ngưỡng Cửa Hang Pech de l'Azé Ngay Lúc Trời Tối
+### [Cảnh 38] Cảnh 38: Về Tới Ngưỡng Cửa Hang Pech de l'Azé Ngay Lúc Trời Tối
+- **Mã cảnh:** `A3-18-REACH-CAVE` | **Thời lượng:** 8.0s
+- **Nhân vật & Bối cảnh (Ref ingredients):** Nora, Nora Body, Leader, Strongest, Cave Mouth
+- **Mô tả hành động (Tiếng Việt):**
+  Cả nhóm hổn hển lết lên thềm đá cửa hang Pech de l'Azé khi ánh nắng cuối cùng vừa tắt lịm. Ánh lửa cam từ trong hang hắt ra đón chào họ, nhưng phía sau lưng, những cái bóng đen lầm lũi đã bắt đầu xuất hiện dưới chân dốc.
+- **Thoại Nora (English Native Laomedeia):** "Cave entrance! We made it back. But they followed our trail."
 
-- **Duration:** 8.0s
-- **Characters:** ['Nora', 'Nora Body', 'Leader', 'Strongest', 'Cave Mouth']
-- **Narrator / Dialogue:** "Cave entrance! We made it back. But they followed our trail."
-- **Tóm tắt hành động (VN):** Cả nhóm hổn hển lết lên thềm đá cửa hang Pech de l'Azé khi ánh nắng cuối cùng vừa tắt lịm. Ánh lửa cam từ trong hang hắt ra đón chào họ, nhưng phía sau lưng, những cái bóng đen lầm lũi đã bắt đầu xuất hiện dưới chân dốc.
+<details><summary>Xem Prompt Veo 3 / Omni Flash R2V (English)</summary>
 
 ```
 Photorealistic prehistoric survival documentary transition footage.
@@ -778,14 +888,21 @@ AUDIO:
 Heavy thud of dropped meat packs, violent ragged panting of three exhausted runners, howl of blizzard wind outside, Nora's gasping dread-filled voice: "Cave entrance! We made it back. But they followed our trail."
 ```
 
+</details>
+
 ---
 
-## SCENE 39: A4-01-MEAT-SECURE - Cảnh 39: Chuyển Thịt Vào Sâu Trong Hang & Phủ Cành Thông Khử Mùi
 
-- **Duration:** 8.0s
-- **Characters:** ['Strongest', 'Old Woman', 'Meat Cache', 'Cave Interior']
-- **Narrator / Dialogue:** ""
-- **Tóm tắt hành động (VN):** Người Mạnh Nhất và Người Phụ Nữ Lớn Tuổi nhanh chóng khiêng các tảng thịt bò bison vào hốc đá kín sâu trong hang, phủ các cành thông tươi lên trên để hạn chế mùi máu tanh bay xa theo gió.
+## HỒI 4: BÃO TUYẾT & BẢO VỆ THỊT TRƯỚC BẦY LINH CẨU ĐÊM (Cảnh 39 - 58)
+
+### [Cảnh 39] Cảnh 39: Chuyển Thịt Vào Sâu Trong Hang & Phủ Cành Thông Khử Mùi
+- **Mã cảnh:** `A4-01-MEAT-SECURE` | **Thời lượng:** 8.0s
+- **Nhân vật & Bối cảnh (Ref ingredients):** Strongest, Old Woman, Meat Cache, Cave Interior
+- **Mô tả hành động (Tiếng Việt):**
+  Người Mạnh Nhất và Người Phụ Nữ Lớn Tuổi nhanh chóng khiêng các tảng thịt bò bison vào hốc đá kín sâu trong hang, phủ các cành thông tươi lên trên để hạn chế mùi máu tanh bay xa theo gió.
+- **Thoại Nora (English Native Laomedeia):** ""
+
+<details><summary>Xem Prompt Veo 3 / Omni Flash R2V (English)</summary>
 
 ```
 Photorealistic prehistoric survival documentary craft footage.
@@ -806,14 +923,18 @@ AUDIO:
 Heavy wet thud of meat on stone, crisp snapping of pine boughs, rapid breathing, crackle of distant hearth. Strictly NO spoken dialogue.
 ```
 
+</details>
+
 ---
 
-## SCENE 40: A4-02-BLIZZARD-HITS - Cảnh 40: Bão Tuyết Kỷ Băng Hà Ập Đến Thung Lũng Dordogne
+### [Cảnh 40] Cảnh 40: Bão Tuyết Kỷ Băng Hà Ập Đến Thung Lũng Dordogne
+- **Mã cảnh:** `A4-02-BLIZZARD-HITS` | **Thời lượng:** 8.0s
+- **Nhân vật & Bối cảnh (Ref ingredients):** Cave Mouth, Pech Valley
+- **Mô tả hành động (Tiếng Việt):**
+  Trời tối đen như mực, một trận bão tuyết Kỷ Băng Hà dữ dội bất ngờ đổ ập xuống. Gió rít gầm rú quăng quật những bông tuyết trắng xóa mù mịt qua vòm cửa hang, che khuất hoàn toàn thung lũng bên dưới.
+- **Thoại Nora (English Native Laomedeia):** ""
 
-- **Duration:** 8.0s
-- **Characters:** ['Cave Mouth', 'Pech Valley']
-- **Narrator / Dialogue:** ""
-- **Tóm tắt hành động (VN):** Trời tối đen như mực, một trận bão tuyết Kỷ Băng Hà dữ dội bất ngờ đổ ập xuống. Gió rít gầm rú quăng quật những bông tuyết trắng xóa mù mịt qua vòm cửa hang, che khuất hoàn toàn thung lũng bên dưới.
+<details><summary>Xem Prompt Veo 3 / Omni Flash R2V (English)</summary>
 
 ```
 Photorealistic prehistoric survival documentary atmospheric footage.
@@ -834,14 +955,18 @@ AUDIO:
 Deafening roaring gale of blizzard winds, violent whipping of snow against stone, deep low resonant cliff groaning. Strictly NO spoken dialogue.
 ```
 
+</details>
+
 ---
 
-## SCENE 41: A4-03-HYENA-CRIES - Cảnh 41: Tiếng Tru Hú Rợn Người Xé Toạc Màn Bão Tuyết
+### [Cảnh 41] Cảnh 41: Tiếng Tru Hú Rợn Người Xé Toạc Màn Bão Tuyết
+- **Mã cảnh:** `A4-03-HYENA-CRIES` | **Thời lượng:** 8.0s
+- **Nhân vật & Bối cảnh (Ref ingredients):** Nora, Nora Body, Cave Interior
+- **Mô tả hành động (Tiếng Việt):**
+  Giữa tiếng gió bão gầm rú, một chuỗi tiếng tru the thé và tiếng cười man rợ của bầy linh cẩu vang lên từ ngay bậc thềm đá ngoài cửa hang. Nora giật nảy mình, mắt mở to kinh hãi nép sát vào vách đá.
+- **Thoại Nora (English Native Laomedeia):** "They're right outside. The storm brought the whole pack."
 
-- **Duration:** 8.0s
-- **Characters:** ['Nora', 'Nora Body', 'Cave Interior']
-- **Narrator / Dialogue:** "They're right outside. The storm brought the whole pack."
-- **Tóm tắt hành động (VN):** Giữa tiếng gió bão gầm rú, một chuỗi tiếng tru the thé và tiếng cười man rợ của bầy linh cẩu vang lên từ ngay bậc thềm đá ngoài cửa hang. Nora giật nảy mình, mắt mở to kinh hãi nép sát vào vách đá.
+<details><summary>Xem Prompt Veo 3 / Omni Flash R2V (English)</summary>
 
 ```
 Photorealistic prehistoric survival documentary suspense footage.
@@ -866,14 +991,18 @@ AUDIO:
 Terrifying multi-layered Cave Hyena whoops and psychotic laughter piercing through the storm, howling wind, Nora's frantic cracking whisper: "They're right outside. The storm brought the whole pack."
 ```
 
+</details>
+
 ---
 
-## SCENE 42: A4-04-HYENAS-SHADOWS - Cảnh 42: Bốn Con Linh Cẩu Khổng Lồ Xuất Hiện Ngoài Thềm Đá
+### [Cảnh 42] Cảnh 42: Bốn Con Linh Cẩu Khổng Lồ Xuất Hiện Ngoài Thềm Đá
+- **Mã cảnh:** `A4-04-HYENAS-SHADOWS` | **Thời lượng:** 8.0s
+- **Nhân vật & Bối cảnh (Ref ingredients):** Cave Hyena, Cave Mouth
+- **Mô tả hành động (Tiếng Việt):**
+  Dưới ánh lửa bập bùng hắt ra từ hang, 4 con linh cẩu hang động to lớn như sư tử lầm lũi xuất hiện ngay trên thềm đá ngoài cửa hang. Mắt chúng ánh lên màu hổ phách đói khát, gầm gừ đòi xông vào cướp thịt.
+- **Thoại Nora (English Native Laomedeia):** ""
 
-- **Duration:** 8.0s
-- **Characters:** ['Cave Hyena', 'Cave Mouth']
-- **Narrator / Dialogue:** ""
-- **Tóm tắt hành động (VN):** Dưới ánh lửa bập bùng hắt ra từ hang, 4 con linh cẩu hang động to lớn như sư tử lầm lũi xuất hiện ngay trên thềm đá ngoài cửa hang. Mắt chúng ánh lên màu hổ phách đói khát, gầm gừ đòi xông vào cướp thịt.
+<details><summary>Xem Prompt Veo 3 / Omni Flash R2V (English)</summary>
 
 ```
 Photorealistic prehistoric survival documentary wildlife suspense footage.
@@ -894,14 +1023,18 @@ AUDIO:
 Deep menacing chest growls, wet snarls, sharp clicks of hyena claws on frozen stone, howling gale wind. Strictly NO spoken dialogue.
 ```
 
+</details>
+
 ---
 
-## SCENE 43: A4-05-LEADER-RALLY - Cảnh 43: Thủ Lĩnh Gầm Lệnh Báo Động & Dàn Trận Phòng Thủ
+### [Cảnh 43] Cảnh 43: Thủ Lĩnh Gầm Lệnh Báo Động & Dàn Trận Phòng Thủ
+- **Mã cảnh:** `A4-05-LEADER-RALLY` | **Thời lượng:** 8.0s
+- **Nhân vật & Bối cảnh (Ref ingredients):** Leader, Cave Interior
+- **Mô tả hành động (Tiếng Việt):**
+  Thủ Lĩnh chộp lấy ngọn giáo dài, rống lên một tiếng gầm đanh thép rung chuyển vách đá hang động. Gương mặt ông đằng đằng sát khí, không hề có chút nao núng hay sợ hãi trước bầy dã thú.
+- **Thoại Nora (English Native Laomedeia):** ""
 
-- **Duration:** 8.0s
-- **Characters:** ['Leader', 'Cave Interior']
-- **Narrator / Dialogue:** ""
-- **Tóm tắt hành động (VN):** Thủ Lĩnh chộp lấy ngọn giáo dài, rống lên một tiếng gầm đanh thép rung chuyển vách đá hang động. Gương mặt ông đằng đằng sát khí, không hề có chút nao núng hay sợ hãi trước bầy dã thú.
+<details><summary>Xem Prompt Veo 3 / Omni Flash R2V (English)</summary>
 
 ```
 Photorealistic prehistoric survival documentary action footage.
@@ -922,14 +1055,18 @@ AUDIO:
 Thunderous primal chest roar, resonant crackle of resinous pine torch, heavy boot stomp on bedrock, fierce wind outside. Strictly NO English dialogue.
 ```
 
+</details>
+
 ---
 
-## SCENE 44: A4-06-SPEAR-WALL - Cảnh 44: Đội Hình Giáo Gỗ Khóa Chặt Ngưỡng Cửa Hang
+### [Cảnh 44] Cảnh 44: Đội Hình Giáo Gỗ Khóa Chặt Ngưỡng Cửa Hang
+- **Mã cảnh:** `A4-06-SPEAR-WALL` | **Thời lượng:** 8.0s
+- **Nhân vật & Bối cảnh (Ref ingredients):** Leader, Strongest, Strongest Spear, Cave Mouth
+- **Mô tả hành động (Tiếng Việt):**
+  Thủ Lĩnh và Người Mạnh Nhất đứng song song trước ngưỡng cửa hang, hạ thấp trọng tâm, chĩa hai ngọn giáo gỗ tôi lửa thẳng về phía trước tạo thành bức tường cản phá kiên cố không kẽ hở.
+- **Thoại Nora (English Native Laomedeia):** ""
 
-- **Duration:** 8.0s
-- **Characters:** ['Leader', 'Strongest', 'Strongest Spear', 'Cave Mouth']
-- **Narrator / Dialogue:** ""
-- **Tóm tắt hành động (VN):** Thủ Lĩnh và Người Mạnh Nhất đứng song song trước ngưỡng cửa hang, hạ thấp trọng tâm, chĩa hai ngọn giáo gỗ tôi lửa thẳng về phía trước tạo thành bức tường cản phá kiên cố không kẽ hở.
+<details><summary>Xem Prompt Veo 3 / Omni Flash R2V (English)</summary>
 
 ```
 Photorealistic prehistoric survival documentary action footage.
@@ -952,14 +1089,18 @@ AUDIO:
 Muffled savage snarls from snow, hiss of wind, steady heavy breathing of disciplined warriors, crackle of nearby torch. Strictly NO spoken dialogue.
 ```
 
+</details>
+
 ---
 
-## SCENE 45: A4-07-ALPHA-HYENA-SNARL - Cảnh 45: Con Linh Cẩu Đầu Đàn Nhe Nanh Chực Lao Vào
+### [Cảnh 45] Cảnh 45: Con Linh Cẩu Đầu Đàn Nhe Nanh Chực Lao Vào
+- **Mã cảnh:** `A4-07-ALPHA-HYENA-SNARL` | **Thời lượng:** 8.0s
+- **Nhân vật & Bối cảnh (Ref ingredients):** Cave Hyena, Cave Mouth
+- **Mô tả hành động (Tiếng Việt):**
+  Con linh cẩu đầu đàn lông xám đốm bước từng bước trên nền tuyết đóng băng cách mũi giáo chỉ 2 mét, nhe hàm răng sắc nhọn có thể nghiền nát xương, gầm gừ đe dọa đòi xông vào hang.
+- **Thoại Nora (English Native Laomedeia):** ""
 
-- **Duration:** 8.0s
-- **Characters:** ['Cave Hyena', 'Cave Mouth']
-- **Narrator / Dialogue:** ""
-- **Tóm tắt hành động (VN):** Con linh cẩu đầu đàn lông xám đốm bước từng bước trên nền tuyết đóng băng cách mũi giáo chỉ 2 mét, nhe hàm răng sắc nhọn có thể nghiền nát xương, gầm gừ đe dọa đòi xông vào hang.
+<details><summary>Xem Prompt Veo 3 / Omni Flash R2V (English)</summary>
 
 ```
 Photorealistic prehistoric survival documentary wildlife footage.
@@ -980,14 +1121,18 @@ AUDIO:
 Savage bone-chilling roar-snarl, sharp clacking of teeth snapping shut, wet throat growl, howling blizzard wind. Strictly NO spoken dialogue.
 ```
 
+</details>
+
 ---
 
-## SCENE 46: A4-08-SPEAR-FEINT - Cảnh 46: Cú Đâm Dằn Mặt Chuẩn Xác Của Người Mạnh Nhất
+### [Cảnh 46] Cảnh 46: Cú Đâm Dằn Mặt Chuẩn Xác Của Người Mạnh Nhất
+- **Mã cảnh:** `A4-08-SPEAR-FEINT` | **Thời lượng:** 8.0s
+- **Nhân vật & Bối cảnh (Ref ingredients):** Strongest, Strongest Spear, Cave Hyena, Cave Mouth
+- **Mô tả hành động (Tiếng Việt):**
+  Khi con linh cẩu chồm lên định vượt qua ngưỡng cửa, Người Mạnh Nhất dậm mạnh chân, phóng mũi giáo gỗ đâm sượt ngay trước mũi nó cắm phập xuống kẽ đá. Con thú giật thót ré lên căm hận lùi lại.
+- **Thoại Nora (English Native Laomedeia):** ""
 
-- **Duration:** 8.0s
-- **Characters:** ['Strongest', 'Strongest Spear', 'Cave Hyena', 'Cave Mouth']
-- **Narrator / Dialogue:** ""
-- **Tóm tắt hành động (VN):** Khi con linh cẩu chồm lên định vượt qua ngưỡng cửa, Người Mạnh Nhất dậm mạnh chân, phóng mũi giáo gỗ đâm sượt ngay trước mũi nó cắm phập xuống kẽ đá. Con thú giật thót ré lên căm hận lùi lại.
+<details><summary>Xem Prompt Veo 3 / Omni Flash R2V (English)</summary>
 
 ```
 Photorealistic prehistoric survival documentary action footage.
@@ -1010,14 +1155,18 @@ AUDIO:
 Sharp explosive crack of hard wood impacting rock, startled high-pitched hyena yelp, frantic claw scrambling on stone, deep human grunt of exertion. Strictly NO spoken dialogue.
 ```
 
+</details>
+
 ---
 
-## SCENE 47: A4-09-TORCH-DYING - Cảnh 47: Gió Bão Tạt Làm Cây Đuốc Phòng Thủ Chập Chờn
+### [Cảnh 47] Cảnh 47: Gió Bão Tạt Làm Cây Đuốc Phòng Thủ Chập Chờn
+- **Mã cảnh:** `A4-09-TORCH-DYING` | **Thời lượng:** 8.0s
+- **Nhân vật & Bối cảnh (Ref ingredients):** Leader, Cave Mouth
+- **Mô tả hành động (Tiếng Việt):**
+  Một cơn gió tuyết giật cực mạnh thốc thẳng vào cửa hang làm cây đuốc thông của Thủ Lĩnh bùng khói đen và lụi tàn dần. Bóng tối và giá rét tràn tới đe dọa phòng tuyến, bầy linh cẩu lập tức rục rịch tiến lên.
+- **Thoại Nora (English Native Laomedeia):** ""
 
-- **Duration:** 8.0s
-- **Characters:** ['Leader', 'Cave Mouth']
-- **Narrator / Dialogue:** ""
-- **Tóm tắt hành động (VN):** Một cơn gió tuyết giật cực mạnh thốc thẳng vào cửa hang làm cây đuốc thông của Thủ Lĩnh bùng khói đen và lụi tàn dần. Bóng tối và giá rét tràn tới đe dọa phòng tuyến, bầy linh cẩu lập tức rục rịch tiến lên.
+<details><summary>Xem Prompt Veo 3 / Omni Flash R2V (English)</summary>
 
 ```
 Photorealistic prehistoric survival documentary crisis footage.
@@ -1038,14 +1187,18 @@ AUDIO:
 Roaring screech of violent wind gust, sharp sputtering hiss of smothered fire, aggressive hyena growls stepping closer. Strictly NO spoken dialogue.
 ```
 
+</details>
+
 ---
 
-## SCENE 48: A4-10-NORA-SNATCHES-FIRE - Cảnh 48: Nora Hành Động: Tiếp Lửa Từ Đống Than Hồng Bếp Lửa
+### [Cảnh 48] Cảnh 48: Nora Hành Động: Tiếp Lửa Từ Đống Than Hồng Bếp Lửa
+- **Mã cảnh:** `A4-10-NORA-SNATCHES-FIRE` | **Thời lượng:** 8.0s
+- **Nhân vật & Bối cảnh (Ref ingredients):** Nora, Nora Body, Cave Interior
+- **Mô tả hành động (Tiếng Việt):**
+  Nhận thấy nguy cơ phòng tuyến sụp đổ, Nora không hề trốn chạy. Cô lập tức quay ngoắt chạy tới bếp lửa trung tâm, chộp lấy một cành thông tẩm nhựa đang cháy rừng rực để đem ra chi viện.
+- **Thoại Nora (English Native Laomedeia):** "The wind killed the torch! I'm getting fire from the hearth!"
 
-- **Duration:** 8.0s
-- **Characters:** ['Nora', 'Nora Body', 'Cave Interior']
-- **Narrator / Dialogue:** "The wind killed the torch! I'm getting fire from the hearth!"
-- **Tóm tắt hành động (VN):** Nhận thấy nguy cơ phòng tuyến sụp đổ, Nora không hề trốn chạy. Cô lập tức quay ngoắt chạy tới bếp lửa trung tâm, chộp lấy một cành thông tẩm nhựa đang cháy rừng rực để đem ra chi viện.
+<details><summary>Xem Prompt Veo 3 / Omni Flash R2V (English)</summary>
 
 ```
 Photorealistic prehistoric survival documentary heroic action footage.
@@ -1070,14 +1223,18 @@ AUDIO:
 Rapid boot steps on stone, roaring crackle of resinous fire, Nora's determined urgent spoken voice: "The wind killed the torch! I'm getting fire from the hearth!"
 ```
 
+</details>
+
 ---
 
-## SCENE 49: A4-11-RELIGHTING-TORCH - Cảnh 49: Nora Lao Ra Cửa Hang Tiếp Đuốc Cho Thủ Lĩnh
+### [Cảnh 49] Cảnh 49: Nora Lao Ra Cửa Hang Tiếp Đuốc Cho Thủ Lĩnh
+- **Mã cảnh:** `A4-11-RELIGHTING-TORCH` | **Thời lượng:** 8.0s
+- **Nhân vật & Bối cảnh (Ref ingredients):** Nora, Nora Body, Leader, Cave Mouth
+- **Mô tả hành động (Tiếng Việt):**
+  Nora lao ra vách đá cửa hang, đưa thẳng cành thông đang cháy rừng rực vào cây đuốc của Thủ Lĩnh. Ngọn đuốc bùng cháy sáng rực trở lại trong tiếng nổ lách tách của nhựa thông.
+- **Thoại Nora (English Native Laomedeia):** "Take the fire! Hold the line!"
 
-- **Duration:** 8.0s
-- **Characters:** ['Nora', 'Nora Body', 'Leader', 'Cave Mouth']
-- **Narrator / Dialogue:** "Take the fire! Hold the line!"
-- **Tóm tắt hành động (VN):** Nora lao ra vách đá cửa hang, đưa thẳng cành thông đang cháy rừng rực vào cây đuốc của Thủ Lĩnh. Ngọn đuốc bùng cháy sáng rực trở lại trong tiếng nổ lách tách của nhựa thông.
+<details><summary>Xem Prompt Veo 3 / Omni Flash R2V (English)</summary>
 
 ```
 Photorealistic prehistoric survival documentary action footage.
@@ -1102,14 +1259,18 @@ AUDIO:
 Violent whoosh of reignited pine resins, loud crackling pops of sap, howling blizzard wind, Nora's fierce commanding shout: "Take the fire! Hold the line!"
 ```
 
+</details>
+
 ---
 
-## SCENE 50: A4-12-BLAZING-WALL - Cảnh 50: Bức Tường Lửa Bùng Sáng Xua Tan Bóng Tối
+### [Cảnh 50] Cảnh 50: Bức Tường Lửa Bùng Sáng Xua Tan Bóng Tối
+- **Mã cảnh:** `A4-12-BLAZING-WALL` | **Thời lượng:** 8.0s
+- **Nhân vật & Bối cảnh (Ref ingredients):** Nora, Nora Body, Leader, Strongest, Strongest Spear, Cave Mouth
+- **Mô tả hành động (Tiếng Việt):**
+  Cả ba người cùng giương cao đuốc lửa và ngọn giáo, ánh sáng cam rực rỡ và tàn lửa bay mù mịt trong gió tuyết, chiếu sáng bừng toàn bộ sườn dốc đá ngoài cửa hang, áp đảo bầy thú dữ.
+- **Thoại Nora (English Native Laomedeia):** ""
 
-- **Duration:** 8.0s
-- **Characters:** ['Nora', 'Nora Body', 'Leader', 'Strongest', 'Strongest Spear', 'Cave Mouth']
-- **Narrator / Dialogue:** ""
-- **Tóm tắt hành động (VN):** Cả ba người cùng giương cao đuốc lửa và ngọn giáo, ánh sáng cam rực rỡ và tàn lửa bay mù mịt trong gió tuyết, chiếu sáng bừng toàn bộ sườn dốc đá ngoài cửa hang, áp đảo bầy thú dữ.
+<details><summary>Xem Prompt Veo 3 / Omni Flash R2V (English)</summary>
 
 ```
 Photorealistic prehistoric survival documentary triumphant climax footage.
@@ -1130,14 +1291,18 @@ AUDIO:
 Roaring fury of crackling pine torches, whistling gale winds tearing through fire, deep triumphant human breaths. Strictly NO spoken dialogue.
 ```
 
+</details>
+
 ---
 
-## SCENE 51: A4-13-HYENAS-RETREAT - Cảnh 51: Bầy Linh Cẩu Hoảng Sợ Cụp Đuôi Tháo Lui
+### [Cảnh 51] Cảnh 51: Bầy Linh Cẩu Hoảng Sợ Cụp Đuôi Tháo Lui
+- **Mã cảnh:** `A4-13-HYENAS-RETREAT` | **Thời lượng:** 8.0s
+- **Nhân vật & Bối cảnh (Ref ingredients):** Cave Hyena, Cave Mouth, Pech Valley
+- **Mô tả hành động (Tiếng Việt):**
+  Bị chói mắt bởi ánh lửa đột ngột và sợ hãi trước sức nóng của nhựa thông nổ lách tách, bầy linh cẩu cụp đuôi, gầm rừ lùi dần rồi quay đầu biến mất vào màn bão tuyết trắng xóa.
+- **Thoại Nora (English Native Laomedeia):** ""
 
-- **Duration:** 8.0s
-- **Characters:** ['Cave Hyena', 'Cave Mouth', 'Pech Valley']
-- **Narrator / Dialogue:** ""
-- **Tóm tắt hành động (VN):** Bị chói mắt bởi ánh lửa đột ngột và sợ hãi trước sức nóng của nhựa thông nổ lách tách, bầy linh cẩu cụp đuôi, gầm rừ lùi dần rồi quay đầu biến mất vào màn bão tuyết trắng xóa.
+<details><summary>Xem Prompt Veo 3 / Omni Flash R2V (English)</summary>
 
 ```
 Photorealistic prehistoric survival documentary wildlife footage.
@@ -1158,14 +1323,18 @@ AUDIO:
 Startled high-pitched hyena whimpers, scrambling claw skids on ice, howling gale wind swallowing their cries. Strictly NO spoken dialogue.
 ```
 
+</details>
+
 ---
 
-## SCENE 52: A4-14-BREATHLESS-RELIEF - Cảnh 52: Cú Thở Phào Kiệt Sức Sau Trận Tử Thủ Sinh Tử
+### [Cảnh 52] Cảnh 52: Cú Thở Phào Kiệt Sức Sau Trận Tử Thủ Sinh Tử
+- **Mã cảnh:** `A4-14-BREATHLESS-RELIEF` | **Thời lượng:** 8.0s
+- **Nhân vật & Bối cảnh (Ref ingredients):** Nora, Nora Body, Leader, Strongest, Cave Mouth
+- **Mô tả hành động (Tiếng Việt):**
+  Cơn gió bão vẫn gầm thét nhưng nguy cơ đã qua đi. Nora dựa lưng vào vách đá thở hổn hển, hơi thở phả khói cuồn cuộn. Thủ Lĩnh hạ ngọn giáo xuống, nhìn cô đầy trân trọng.
+- **Thoại Nora (English Native Laomedeia):** "They're gone. We held the cave... We survived."
 
-- **Duration:** 8.0s
-- **Characters:** ['Nora', 'Nora Body', 'Leader', 'Strongest', 'Cave Mouth']
-- **Narrator / Dialogue:** "They're gone. We held the cave... We survived."
-- **Tóm tắt hành động (VN):** Cơn gió bão vẫn gầm thét nhưng nguy cơ đã qua đi. Nora dựa lưng vào vách đá thở hổn hển, hơi thở phả khói cuồn cuộn. Thủ Lĩnh hạ ngọn giáo xuống, nhìn cô đầy trân trọng.
+<details><summary>Xem Prompt Veo 3 / Omni Flash R2V (English)</summary>
 
 ```
 Photorealistic prehistoric survival documentary aftermath footage.
@@ -1190,14 +1359,18 @@ AUDIO:
 Ragged gasping breaths of human survivors, steady hiss of crackling pine torches, howling storm outside, Nora's trembling relieved whisper: "They're gone. We held the cave... We survived."
 ```
 
+</details>
+
 ---
 
-## SCENE 53: A4-15-SHOULDER-SLAP - Cảnh 53: Cái Đập Vai Công Nhận Của Thủ Lĩnh
+### [Cảnh 53] Cảnh 53: Cái Đập Vai Công Nhận Của Thủ Lĩnh
+- **Mã cảnh:** `A4-15-SHOULDER-SLAP` | **Thời lượng:** 8.0s
+- **Nhân vật & Bối cảnh (Ref ingredients):** Nora, Nora Body, Leader, Cave Mouth
+- **Mô tả hành động (Tiếng Việt):**
+  Thủ Lĩnh bước lại gần, dùng bàn tay to nặng đập mạnh lên vai Nora một cái dứt khoát — dấu hiệu công nhận tuyệt đối một chiến binh thực thụ đã cùng bảo vệ hang ổ và bầy đàn.
+- **Thoại Nora (English Native Laomedeia):** ""
 
-- **Duration:** 8.0s
-- **Characters:** ['Nora', 'Nora Body', 'Leader', 'Cave Mouth']
-- **Narrator / Dialogue:** ""
-- **Tóm tắt hành động (VN):** Thủ Lĩnh bước lại gần, dùng bàn tay to nặng đập mạnh lên vai Nora một cái dứt khoát — dấu hiệu công nhận tuyệt đối một chiến binh thực thụ đã cùng bảo vệ hang ổ và bầy đàn.
+<details><summary>Xem Prompt Veo 3 / Omni Flash R2V (English)</summary>
 
 ```
 Photorealistic prehistoric survival documentary emotional bond footage.
@@ -1220,14 +1393,18 @@ AUDIO:
 Solid heavy thud of palm slapping thick leather tunic, crackle of fire, deep quiet warrior exhale. Strictly NO spoken dialogue.
 ```
 
+</details>
+
 ---
 
-## SCENE 54: A4-16-FEAST-HEARTH - Cảnh 54: Bữa Ăn Chiến Thắng Bên Bếp Lửa: Thịt Nướng Than Hồng
+### [Cảnh 54] Cảnh 54: Bữa Ăn Chiến Thắng Bên Bếp Lửa: Thịt Nướng Than Hồng
+- **Mã cảnh:** `A4-16-FEAST-HEARTH` | **Thời lượng:** 8.0s
+- **Nhân vật & Bối cảnh (Ref ingredients):** Nora, Nora Body, Leader, Strongest, Old Woman, Cave Interior
+- **Mô tả hành động (Tiếng Việt):**
+  Bộ tộc quây quần bên bếp lửa trung tâm. Những xiên thịt bò bison tươi nướng xèo xèo trên than hồng thơm lừng. Nora nhận một miếng thịt nướng mỡ màng, cắn ngập miệng và tận hưởng hương vị cứu mạng.
+- **Thoại Nora (English Native Laomedeia):** "Fresh roasted bison fat. Twenty-four hours of starving... Nothing has ever tasted better."
 
-- **Duration:** 8.0s
-- **Characters:** ['Nora', 'Nora Body', 'Leader', 'Strongest', 'Old Woman', 'Cave Interior']
-- **Narrator / Dialogue:** "Fresh roasted bison fat. Twenty-four hours of starving... Nothing has ever tasted better."
-- **Tóm tắt hành động (VN):** Bộ tộc quây quần bên bếp lửa trung tâm. Những xiên thịt bò bison tươi nướng xèo xèo trên than hồng thơm lừng. Nora nhận một miếng thịt nướng mỡ màng, cắn ngập miệng và tận hưởng hương vị cứu mạng.
+<details><summary>Xem Prompt Veo 3 / Omni Flash R2V (English)</summary>
 
 ```
 Photorealistic prehistoric survival documentary feast footage.
@@ -1252,14 +1429,18 @@ AUDIO:
 Loud sizzling spit of rendering animal fat on coals, crackling embers, soft chew of satisfaction, Nora's ecstatic whispered voice: "Fresh roasted bison fat. Twenty-four hours of starving... Nothing has ever tasted better."
 ```
 
+</details>
+
 ---
 
-## SCENE 55: A4-17-DEEP-CAVE-CALL - Cảnh 55: Bước Vào Gian Phòng Nghi Lễ Hang Sâu
+### [Cảnh 55] Cảnh 55: Bước Vào Gian Phòng Nghi Lễ Hang Sâu
+- **Mã cảnh:** `A4-17-DEEP-CAVE-CALL` | **Thời lượng:** 8.0s
+- **Nhân vật & Bối cảnh (Ref ingredients):** Nora, Nora Body, Leader, Old Woman, Cave Interior
+- **Mô tả hành động (Tiếng Việt):**
+  Bữa ăn kết thúc, Thủ Lĩnh và Người Phụ Nữ Lớn Tuổi đứng dậy cầm ngọn đuốc ra hiệu cho Nora. Họ dẫn cô bước vào nhánh hang tối sâu thẳm tĩnh mịch — nơi lưu giữ nghệ thuật và tâm linh nguyên thủy.
+- **Thoại Nora (English Native Laomedeia):** "The meal is over. Now... they're taking me into the deep cave."
 
-- **Duration:** 8.0s
-- **Characters:** ['Nora', 'Nora Body', 'Leader', 'Old Woman', 'Cave Interior']
-- **Narrator / Dialogue:** "The meal is over. Now... they're taking me into the deep cave."
-- **Tóm tắt hành động (VN):** Bữa ăn kết thúc, Thủ Lĩnh và Người Phụ Nữ Lớn Tuổi đứng dậy cầm ngọn đuốc ra hiệu cho Nora. Họ dẫn cô bước vào nhánh hang tối sâu thẳm tĩnh mịch — nơi lưu giữ nghệ thuật và tâm linh nguyên thủy.
+<details><summary>Xem Prompt Veo 3 / Omni Flash R2V (English)</summary>
 
 ```
 Photorealistic prehistoric survival documentary transition footage.
@@ -1284,14 +1465,18 @@ AUDIO:
 Soft rhythmic footsteps on stone, soft rhythmic flutter of torch flame, muffled dripping of distant water droplet, Nora's reverent hushed whisper: "The meal is over. Now... they're taking me into the deep cave."
 ```
 
+</details>
+
 ---
 
-## SCENE 56: A4-18-RED-OCHRE-MARK - Cảnh 56: Nghi Thức Đất Son Đỏ (Red Ochre): Ấn Ký Hòa Nhập
+### [Cảnh 56] Cảnh 56: Nghi Thức Đất Son Đỏ (Red Ochre): Ấn Ký Hòa Nhập
+- **Mã cảnh:** `A4-18-RED-OCHRE-MARK` | **Thời lượng:** 8.0s
+- **Nhân vật & Bối cảnh (Ref ingredients):** Nora, Nora Body, Leader, Old Woman, Cave Interior
+- **Mô tả hành động (Tiếng Việt):**
+  Trong gian phòng nghi lễ, Người Phụ Nữ Lớn Tuổi nghiền thỏi đất son đỏ thành bột mịn trộn với mỡ hươu. Thủ Lĩnh nhúng ngón tay vào sơn đỏ, chậm rãi vạch một đường ấn ký ấm áp lên gò má phải của Nora.
+- **Thoại Nora (English Native Laomedeia):** "Red ochre on my skin. A mark of belonging. I'm one of them."
 
-- **Duration:** 8.0s
-- **Characters:** ['Nora', 'Nora Body', 'Leader', 'Old Woman', 'Cave Interior']
-- **Narrator / Dialogue:** "Red ochre on my skin. A mark of belonging. I'm one of them."
-- **Tóm tắt hành động (VN):** Trong gian phòng nghi lễ, Người Phụ Nữ Lớn Tuổi nghiền thỏi đất son đỏ thành bột mịn trộn với mỡ hươu. Thủ Lĩnh nhúng ngón tay vào sơn đỏ, chậm rãi vạch một đường ấn ký ấm áp lên gò má phải của Nora.
+<details><summary>Xem Prompt Veo 3 / Omni Flash R2V (English)</summary>
 
 ```
 Photorealistic prehistoric survival documentary spiritual ritual footage.
@@ -1316,14 +1501,18 @@ AUDIO:
 Soft wet scrape of pigment on stone palette, gentle breath exhalations, crackling torch flame, Nora's deeply emotional whisper: "Red ochre on my skin. A mark of belonging. I'm one of them."
 ```
 
+</details>
+
 ---
 
-## SCENE 57: A4-19-HAND-STENCILS - Cảnh 57: Vách Đá Dấu Bàn Tay: Thổi Bột Màu Âm Bản 51.000 Năm
+### [Cảnh 57] Cảnh 57: Vách Đá Dấu Bàn Tay: Thổi Bột Màu Âm Bản 51.000 Năm
+- **Mã cảnh:** `A4-19-HAND-STENCILS` | **Thời lượng:** 8.0s
+- **Nhân vật & Bối cảnh (Ref ingredients):** Nora, Nora Body, Old Woman, Cave Interior
+- **Mô tả hành động (Tiếng Việt):**
+  Người phụ nữ áp bàn tay lên vách đá vôi phẳng, ngậm bột đất son đỏ thổi mạnh tạo nên dấu bàn tay âm bản hoàn hảo. Nora giơ bàn tay thon dài của mình ướm cạnh dấu tay tiền sử, một khoảnh khắc vượt thời gian.
+- **Thoại Nora (English Native Laomedeia):** "Fifty-one thousand years apart... and our hands are on the same stone."
 
-- **Duration:** 8.0s
-- **Characters:** ['Nora', 'Nora Body', 'Old Woman', 'Cave Interior']
-- **Narrator / Dialogue:** "Fifty-one thousand years apart... and our hands are on the same stone."
-- **Tóm tắt hành động (VN):** Người phụ nữ áp bàn tay lên vách đá vôi phẳng, ngậm bột đất son đỏ thổi mạnh tạo nên dấu bàn tay âm bản hoàn hảo. Nora giơ bàn tay thon dài của mình ướm cạnh dấu tay tiền sử, một khoảnh khắc vượt thời gian.
+<details><summary>Xem Prompt Veo 3 / Omni Flash R2V (English)</summary>
 
 ```
 Photorealistic prehistoric survival documentary rock art footage.
@@ -1348,14 +1537,18 @@ AUDIO:
 Soft whisper of air settling, quiet breathing, faint torch crackle, Nora's hushed awe-filled spoken voice: "Fifty-one thousand years apart... and our hands are on the same stone."
 ```
 
+</details>
+
 ---
 
-## SCENE 58: A4-20-EAGLE-TALON - Cảnh 58: Kỷ Vật Thiêng Liêng: Vòng Móng Vuốt Đại Bàng Đục Lỗ
+### [Cảnh 58] Cảnh 58: Kỷ Vật Thiêng Liêng: Vòng Móng Vuốt Đại Bàng Đục Lỗ
+- **Mã cảnh:** `A4-20-EAGLE-TALON` | **Thời lượng:** 8.0s
+- **Nhân vật & Bối cảnh (Ref ingredients):** Nora, Nora Body, Old Woman, Cave Interior
+- **Mô tả hành động (Tiếng Việt):**
+  Người Phụ Nữ Lớn Tuổi mở một túi da nhỏ, lấy ra chiếc móng vuốt đại bàng đuôi trắng đen bóng được đục lỗ tinh xảo, nhẹ nhàng lồng sợi dây da qua đầu đeo vào cổ Nora. Biểu tượng trang sức lâu đời nhất lịch sử nhân loại.
+- **Thoại Nora (English Native Laomedeia):** "An eagle talon necklace... The oldest jewelry on Earth."
 
-- **Duration:** 8.0s
-- **Characters:** ['Nora', 'Nora Body', 'Old Woman', 'Cave Interior']
-- **Narrator / Dialogue:** "An eagle talon necklace... The oldest jewelry on Earth."
-- **Tóm tắt hành động (VN):** Người Phụ Nữ Lớn Tuổi mở một túi da nhỏ, lấy ra chiếc móng vuốt đại bàng đuôi trắng đen bóng được đục lỗ tinh xảo, nhẹ nhàng lồng sợi dây da qua đầu đeo vào cổ Nora. Biểu tượng trang sức lâu đời nhất lịch sử nhân loại.
+<details><summary>Xem Prompt Veo 3 / Omni Flash R2V (English)</summary>
 
 ```
 Photorealistic prehistoric survival documentary artifact footage.
@@ -1380,14 +1573,21 @@ AUDIO:
 Soft rustle of hair and leather cord, quiet breath of reverence, Nora's whispered amazed voice: "An eagle talon necklace... The oldest jewelry on Earth."
 ```
 
+</details>
+
 ---
 
-## SCENE 59: A5-01-COZY-NEST - Cảnh 59: Đêm Bình Yên Trong Ổ Da Gấu & Cành Thông
 
-- **Duration:** 8.0s
-- **Characters:** ['Nora', 'Nora Body', 'Cave Interior']
-- **Narrator / Dialogue:** "Hour twenty. Outside it's minus twenty. In here... it's the safest place on Earth."
-- **Tóm tắt hành động (VN):** Nora nằm nghỉ ngơi thoải mái trong ổ ngủ lót cành thông tươi và da gấu dày ấm áp. Ánh lửa bập bùng hắt lên trần hang, bão tuyết gầm thét ngoài xa, gương mặt cô hoàn toàn bình yên.
+## HỒI 5: TIỆC NƯỚNG THÂU ĐÊM, NGHI LỄ TỘC VÀ BÌNH MINH CHIA TAY (Cảnh 59 - 75)
+
+### [Cảnh 59] Cảnh 59: Đêm Bình Yên Trong Ổ Da Gấu & Cành Thông
+- **Mã cảnh:** `A5-01-COZY-NEST` | **Thời lượng:** 8.0s
+- **Nhân vật & Bối cảnh (Ref ingredients):** Nora, Nora Body, Cave Interior
+- **Mô tả hành động (Tiếng Việt):**
+  Nora nằm nghỉ ngơi thoải mái trong ổ ngủ lót cành thông tươi và da gấu dày ấm áp. Ánh lửa bập bùng hắt lên trần hang, bão tuyết gầm thét ngoài xa, gương mặt cô hoàn toàn bình yên.
+- **Thoại Nora (English Native Laomedeia):** "Hour twenty. Outside it's minus twenty. In here... it's the safest place on Earth."
+
+<details><summary>Xem Prompt Veo 3 / Omni Flash R2V (English)</summary>
 
 ```
 Photorealistic prehistoric survival documentary cozy night footage.
@@ -1412,14 +1612,18 @@ AUDIO:
 Soft muffled rustle of bear fur, distant howling of blizzard wind outside, gentle crackle of dying embers, Nora's soft comforting whisper: "Hour twenty. Outside it's minus twenty. In here... it's the safest place on Earth."
 ```
 
+</details>
+
 ---
 
-## SCENE 60: A5-02-NIGHT-WATCH - Cảnh 60: Ngọn Lửa Canh Gác Trong Đêm Sâu
+### [Cảnh 60] Cảnh 60: Ngọn Lửa Canh Gác Trong Đêm Sâu
+- **Mã cảnh:** `A5-02-NIGHT-WATCH` | **Thời lượng:** 8.0s
+- **Nhân vật & Bối cảnh (Ref ingredients):** Strongest, Strongest Spear, Cave Mouth
+- **Mô tả hành động (Tiếng Việt):**
+  Bếp lửa chuyển dần sang than hồng rực rỡ như sao đêm. Người Mạnh Nhất ngồi lặng lẽ canh gác bên cửa hang, ngọn giáo gỗ dựng đứng bên cạnh, vóc dáng uy nghi bảo vệ sự bình yên cho bộ tộc.
+- **Thoại Nora (English Native Laomedeia):** ""
 
-- **Duration:** 8.0s
-- **Characters:** ['Strongest', 'Strongest Spear', 'Cave Mouth']
-- **Narrator / Dialogue:** ""
-- **Tóm tắt hành động (VN):** Bếp lửa chuyển dần sang than hồng rực rỡ như sao đêm. Người Mạnh Nhất ngồi lặng lẽ canh gác bên cửa hang, ngọn giáo gỗ dựng đứng bên cạnh, vóc dáng uy nghi bảo vệ sự bình yên cho bộ tộc.
+<details><summary>Xem Prompt Veo 3 / Omni Flash R2V (English)</summary>
 
 ```
 Photorealistic prehistoric survival documentary night atmosphere footage.
@@ -1440,14 +1644,18 @@ AUDIO:
 Faint whistling sigh of dying wind, soft ticking clink of cooling embers, deep steady breath of the sentry. Strictly NO spoken dialogue.
 ```
 
+</details>
+
 ---
 
-## SCENE 61: A5-03-DAWN-DRONE - Cảnh 61: Bình Minh Rực Rỡ Sau Bão Trên Thung Lũng Dordogne
+### [Cảnh 61] Cảnh 61: Bình Minh Rực Rỡ Sau Bão Trên Thung Lũng Dordogne
+- **Mã cảnh:** `A5-03-DAWN-DRONE` | **Thời lượng:** 8.0s
+- **Nhân vật & Bối cảnh (Ref ingredients):** Pech Valley
+- **Mô tả hành động (Tiếng Việt):**
+  Bão tuyết đã tan hoàn toàn. Những tia nắng vàng đầu tiên của bình minh chiếu rọi qua rặng thông phủ tuyết trắng tinh khôi, dòng sông dưới thung lũng lấp lánh ánh bạc tạo nên khung cảnh nguyên sơ kỳ vĩ.
+- **Thoại Nora (English Native Laomedeia):** ""
 
-- **Duration:** 8.0s
-- **Characters:** ['Pech Valley']
-- **Narrator / Dialogue:** ""
-- **Tóm tắt hành động (VN):** Bão tuyết đã tan hoàn toàn. Những tia nắng vàng đầu tiên của bình minh chiếu rọi qua rặng thông phủ tuyết trắng tinh khôi, dòng sông dưới thung lũng lấp lánh ánh bạc tạo nên khung cảnh nguyên sơ kỳ vĩ.
+<details><summary>Xem Prompt Veo 3 / Omni Flash R2V (English)</summary>
 
 ```
 Photorealistic prehistoric survival documentary landscape footage.
@@ -1468,14 +1676,18 @@ AUDIO:
 Crisp pristine silence of a frozen morning, faint musical breath of morning wind, distant call of a Pleistocene eagle. Strictly NO spoken dialogue.
 ```
 
+</details>
+
 ---
 
-## SCENE 62: A5-04-STEPPING-INTO-SUN - Cảnh 62: Nora Bước Ra Ngưỡng Cửa Hang Đón Nắng Mai
+### [Cảnh 62] Cảnh 62: Nora Bước Ra Ngưỡng Cửa Hang Đón Nắng Mai
+- **Mã cảnh:** `A5-04-STEPPING-INTO-SUN` | **Thời lượng:** 8.0s
+- **Nhân vật & Bối cảnh (Ref ingredients):** Nora, Nora Body, Cave Mouth, Pech Valley
+- **Mô tả hành động (Tiếng Việt):**
+  Nora bước ra thềm đá ngoài cửa hang, đón những tia nắng ấm áp đầu tiên chiếu lên gương mặt. Không khí trong lành tinh khiết tuyệt đối của Trái Đất 51.000 năm trước làm rạng rỡ nụ cười của cô.
+- **Thoại Nora (English Native Laomedeia):** "Morning after the storm. Dordogne bathed in pure, untouched light."
 
-- **Duration:** 8.0s
-- **Characters:** ['Nora', 'Nora Body', 'Cave Mouth', 'Pech Valley']
-- **Narrator / Dialogue:** "Morning after the storm. Dordogne bathed in pure, untouched light."
-- **Tóm tắt hành động (VN):** Nora bước ra thềm đá ngoài cửa hang, đón những tia nắng ấm áp đầu tiên chiếu lên gương mặt. Không khí trong lành tinh khiết tuyệt đối của Trái Đất 51.000 năm trước làm rạng rỡ nụ cười của cô.
+<details><summary>Xem Prompt Veo 3 / Omni Flash R2V (English)</summary>
 
 ```
 Photorealistic prehistoric survival documentary footage.
@@ -1500,14 +1712,18 @@ AUDIO:
 Crunch of boots on crisp fresh powder snow, soft gentle morning breeze, Nora's bright joyful spoken voice: "Morning after the storm. Dordogne bathed in pure, untouched light."
 ```
 
+</details>
+
 ---
 
-## SCENE 63: A5-05-CLAN-MORNING - Cảnh 63: Bộ Tộc Chuẩn Bị Cho Ngày Mới Bình Yên
+### [Cảnh 63] Cảnh 63: Bộ Tộc Chuẩn Bị Cho Ngày Mới Bình Yên
+- **Mã cảnh:** `A5-05-CLAN-MORNING` | **Thời lượng:** 8.0s
+- **Nhân vật & Bối cảnh (Ref ingredients):** Leader, Strongest, Old Woman, Cave Mouth
+- **Mô tả hành động (Tiếng Việt):**
+  Trên thềm đá ngoài hang, các thợ săn kiểm tra lại giáo gỗ chuẩn bị cho hành trình mới; Người Phụ Nữ Lớn Tuổi phơi tấm da thú mới săn được lên phiến đá ấm. Cuộc sống sinh tồn tiếp diễn tuần hoàn không ngừng.
+- **Thoại Nora (English Native Laomedeia):** ""
 
-- **Duration:** 8.0s
-- **Characters:** ['Leader', 'Strongest', 'Old Woman', 'Cave Mouth']
-- **Narrator / Dialogue:** ""
-- **Tóm tắt hành động (VN):** Trên thềm đá ngoài hang, các thợ săn kiểm tra lại giáo gỗ chuẩn bị cho hành trình mới; Người Phụ Nữ Lớn Tuổi phơi tấm da thú mới săn được lên phiến đá ấm. Cuộc sống sinh tồn tiếp diễn tuần hoàn không ngừng.
+<details><summary>Xem Prompt Veo 3 / Omni Flash R2V (English)</summary>
 
 ```
 Photorealistic prehistoric survival documentary camp life footage.
@@ -1528,14 +1744,18 @@ AUDIO:
 Rhythmic scraping of flint on wood, heavy stone thuds onto leather, peaceful morning birdsong in distant pines. Strictly NO spoken dialogue.
 ```
 
+</details>
+
 ---
 
-## SCENE 64: A5-06-APPROACH-NORA - Cảnh 64: Người Phụ Nữ Lớn Tuổi Bước Lại Gần Nora
+### [Cảnh 64] Cảnh 64: Người Phụ Nữ Lớn Tuổi Bước Lại Gần Nora
+- **Mã cảnh:** `A5-06-APPROACH-NORA` | **Thời lượng:** 8.0s
+- **Nhân vật & Bối cảnh (Ref ingredients):** Nora, Nora Body, Old Woman, Cave Mouth
+- **Mô tả hành động (Tiếng Việt):**
+  Người Phụ Nữ Lớn Tuổi chậm rãi bước lại gần Nora bên vách đá. Bà cầm một vật nhỏ trong lòng bàn tay nắm chặt, đôi mắt nhìn Nora đầy ấm áp và trìu mến.
+- **Thoại Nora (English Native Laomedeia):** ""
 
-- **Duration:** 8.0s
-- **Characters:** ['Nora', 'Nora Body', 'Old Woman', 'Cave Mouth']
-- **Narrator / Dialogue:** ""
-- **Tóm tắt hành động (VN):** Người Phụ Nữ Lớn Tuổi chậm rãi bước lại gần Nora bên vách đá. Bà cầm một vật nhỏ trong lòng bàn tay nắm chặt, đôi mắt nhìn Nora đầy ấm áp và trìu mến.
+<details><summary>Xem Prompt Veo 3 / Omni Flash R2V (English)</summary>
 
 ```
 Photorealistic prehistoric survival documentary emotional footage.
@@ -1558,14 +1778,18 @@ AUDIO:
 Soft crunch of footsteps on gravel, gentle wind sigh, quiet breath. Strictly NO spoken dialogue.
 ```
 
+</details>
+
 ---
 
-## SCENE 65: A5-07-PYRITE-GIFT - Cảnh 65: Món Quà Chia Tay: Viên Đá Quặng Pyrite Đánh Lửa
+### [Cảnh 65] Cảnh 65: Món Quà Chia Tay: Viên Đá Quặng Pyrite Đánh Lửa
+- **Mã cảnh:** `A5-07-PYRITE-GIFT` | **Thời lượng:** 8.0s
+- **Nhân vật & Bối cảnh (Ref ingredients):** Nora, Nora Body, Old Woman, Cave Mouth
+- **Mô tả hành động (Tiếng Việt):**
+  Bà mở bàn tay ra: đó là viên quặng sắt Pyrite màu vàng ánh kim lấp lánh — viên đá đã giúp Nora tạo ra ngọn lửa đầu tiên. Bà đặt nó vào lòng bàn tay Nora rồi nắm chặt những ngón tay cô lại.
+- **Thoại Nora (English Native Laomedeia):** "The iron pyrite stone... The spark that let me into their world."
 
-- **Duration:** 8.0s
-- **Characters:** ['Nora', 'Nora Body', 'Old Woman', 'Cave Mouth']
-- **Narrator / Dialogue:** "The iron pyrite stone... The spark that let me into their world."
-- **Tóm tắt hành động (VN):** Bà mở bàn tay ra: đó là viên quặng sắt Pyrite màu vàng ánh kim lấp lánh — viên đá đã giúp Nora tạo ra ngọn lửa đầu tiên. Bà đặt nó vào lòng bàn tay Nora rồi nắm chặt những ngón tay cô lại.
+<details><summary>Xem Prompt Veo 3 / Omni Flash R2V (English)</summary>
 
 ```
 Photorealistic prehistoric survival documentary gift exchange footage.
@@ -1590,14 +1814,18 @@ AUDIO:
 Soft clink of mineral on skin, rustle of leather sleeves, Nora's deeply moved whispered voice: "The iron pyrite stone... The spark that let me into their world."
 ```
 
+</details>
+
 ---
 
-## SCENE 66: A5-08-THE-EMBRACE - Cảnh 66: Cái Ôm Tạm Biệt Ấm Áp Vượt 51.000 Năm Thời Gian
+### [Cảnh 66] Cảnh 66: Cái Ôm Tạm Biệt Ấm Áp Vượt 51.000 Năm Thời Gian
+- **Mã cảnh:** `A5-08-THE-EMBRACE` | **Thời lượng:** 8.0s
+- **Nhân vật & Bối cảnh (Ref ingredients):** Nora, Nora Body, Old Woman, Cave Mouth
+- **Mô tả hành động (Tiếng Việt):**
+  Xúc động trước tấm lòng của người mẹ tiền sử, Nora khẽ nghiêng người ôm lấy bờ vai dầy dặn của bà. Người phụ nữ ngạc nhiên trong giây lát rồi vỗ nhẹ lên lưng Nora, cái ôm xóa nhòa khoảng cách 51.000 năm.
+- **Thoại Nora (English Native Laomedeia):** ""
 
-- **Duration:** 8.0s
-- **Characters:** ['Nora', 'Nora Body', 'Old Woman', 'Cave Mouth']
-- **Narrator / Dialogue:** ""
-- **Tóm tắt hành động (VN):** Xúc động trước tấm lòng của người mẹ tiền sử, Nora khẽ nghiêng người ôm lấy bờ vai dầy dặn của bà. Người phụ nữ ngạc nhiên trong giây lát rồi vỗ nhẹ lên lưng Nora, cái ôm xóa nhòa khoảng cách 51.000 năm.
+<details><summary>Xem Prompt Veo 3 / Omni Flash R2V (English)</summary>
 
 ```
 Photorealistic prehistoric survival documentary emotional embrace footage.
@@ -1620,14 +1848,18 @@ AUDIO:
 Soft rustle of fur and leather, quiet breath sigh, gentle breeze. Strictly NO spoken dialogue.
 ```
 
+</details>
+
 ---
 
-## SCENE 67: A5-09-HUNTERS-FAREWELL - Cảnh 67: Lời Tạm Biệt Của Thủ Lĩnh Và Người Mạnh Nhất
+### [Cảnh 67] Cảnh 67: Lời Tạm Biệt Của Thủ Lĩnh Và Người Mạnh Nhất
+- **Mã cảnh:** `A5-09-HUNTERS-FAREWELL` | **Thời lượng:** 8.0s
+- **Nhân vật & Bối cảnh (Ref ingredients):** Leader, Strongest, Strongest Spear, Cave Mouth
+- **Mô tả hành động (Tiếng Việt):**
+  Thủ Lĩnh và Người Mạnh Nhất đứng trên mỏm đá cao đón gió sớm, cùng giương ngọn giáo gỗ lên trời như một nghi thức chào tạm biệt trọng thể dành cho người bạn phương xa đã cùng kề vai chiến đấu.
+- **Thoại Nora (English Native Laomedeia):** ""
 
-- **Duration:** 8.0s
-- **Characters:** ['Leader', 'Strongest', 'Strongest Spear', 'Cave Mouth']
-- **Narrator / Dialogue:** ""
-- **Tóm tắt hành động (VN):** Thủ Lĩnh và Người Mạnh Nhất đứng trên mỏm đá cao đón gió sớm, cùng giương ngọn giáo gỗ lên trời như một nghi thức chào tạm biệt trọng thể dành cho người bạn phương xa đã cùng kề vai chiến đấu.
+<details><summary>Xem Prompt Veo 3 / Omni Flash R2V (English)</summary>
 
 ```
 Photorealistic prehistoric survival documentary farewell salute footage.
@@ -1648,14 +1880,18 @@ AUDIO:
 Majestic gust of wind, dull clank of spear shafts raised together. Strictly NO spoken dialogue.
 ```
 
+</details>
+
 ---
 
-## SCENE 68: A5-10-WALKING-DOWN - Cảnh 68: Nora Bước Xuống Con Đường Mòn Thung Lũng
+### [Cảnh 68] Cảnh 68: Nora Bước Xuống Con Đường Mòn Thung Lũng
+- **Mã cảnh:** `A5-10-WALKING-DOWN` | **Thời lượng:** 8.0s
+- **Nhân vật & Bối cảnh (Ref ingredients):** Nora, Nora Body, Pech Valley
+- **Mô tả hành động (Tiếng Việt):**
+  Nora đeo chiếc móng đại bàng trước ngực, tay nắm chặt viên đá pyrite, bước từng bước vững chãi xuống con dốc phủ sương tuyết, thỉnh thoảng ngoái đầu nhìn lại tổ ấm hang đá trên cao.
+- **Thoại Nora (English Native Laomedeia):** "Leaving Pech de l'Azé. But I'm leaving as a changed person."
 
-- **Duration:** 8.0s
-- **Characters:** ['Nora', 'Nora Body', 'Pech Valley']
-- **Narrator / Dialogue:** "Leaving Pech de l'Azé. But I'm leaving as a changed person."
-- **Tóm tắt hành động (VN):** Nora đeo chiếc móng đại bàng trước ngực, tay nắm chặt viên đá pyrite, bước từng bước vững chãi xuống con dốc phủ sương tuyết, thỉnh thoảng ngoái đầu nhìn lại tổ ấm hang đá trên cao.
+<details><summary>Xem Prompt Veo 3 / Omni Flash R2V (English)</summary>
 
 ```
 Photorealistic prehistoric survival documentary tracking footage.
@@ -1680,14 +1916,18 @@ AUDIO:
 Crisp rhythmic crunch of snow under boots, gentle wind, Nora's calm reflective spoken voice: "Leaving Pech de l'Azé. But I'm leaving as a changed person."
 ```
 
+</details>
+
 ---
 
-## SCENE 69: A5-11-CAVE-CLIFF-VIEW - Cảnh 69: Hang Động Pech de l'Azé Sừng Sững Giữa Vách Núi
+### [Cảnh 69] Cảnh 69: Hang Động Pech de l'Azé Sừng Sững Giữa Vách Núi
+- **Mã cảnh:** `A5-11-CAVE-CLIFF-VIEW` | **Thời lượng:** 8.0s
+- **Nhân vật & Bối cảnh (Ref ingredients):** Cave Mouth, Pech Valley
+- **Mô tả hành động (Tiếng Việt):**
+  Từ dưới thung lũng nhìn lên, cửa hang đá vôi cổ xưa in bóng hiên ngang giữa vách đá dựng đứng, làn khói bếp thông mỏng manh bay lên trời cao, biểu tượng trường tồn của ý chí con người.
+- **Thoại Nora (English Native Laomedeia):** ""
 
-- **Duration:** 8.0s
-- **Characters:** ['Cave Mouth', 'Pech Valley']
-- **Narrator / Dialogue:** ""
-- **Tóm tắt hành động (VN):** Từ dưới thung lũng nhìn lên, cửa hang đá vôi cổ xưa in bóng hiên ngang giữa vách đá dựng đứng, làn khói bếp thông mỏng manh bay lên trời cao, biểu tượng trường tồn của ý chí con người.
+<details><summary>Xem Prompt Veo 3 / Omni Flash R2V (English)</summary>
 
 ```
 Photorealistic prehistoric survival documentary landscape footage.
@@ -1708,14 +1948,18 @@ AUDIO:
 Distant mountain breeze, peaceful chirping of small winter birds, absolute primeval silence. Strictly NO spoken dialogue.
 ```
 
+</details>
+
 ---
 
-## SCENE 70: A5-12-SELFIE-REFLECTION-1 - Cảnh 70: Selfie Tổng Kết 24 Giờ Sinh Tồn (Nora's Master Reflection Part 1)
+### [Cảnh 70] Cảnh 70: Selfie Tổng Kết 24 Giờ Sinh Tồn (Nora's Master Reflection Part 1)
+- **Mã cảnh:** `A5-12-SELFIE-REFLECTION-1` | **Thời lượng:** 8.0s
+- **Nhân vật & Bối cảnh (Ref ingredients):** Nora, Nora Body, Pech Valley
+- **Mô tả hành động (Tiếng Việt):**
+  Nora nhìn thẳng vào camera trong shot selfie 0.5x góc rộng, gió sớm làm bay nhẹ lọn tóc mai. Gương mặt cô rạng ngời với vệt đất son đỏ mờ trên má và chiếc móng đại bàng trên ngực, chia sẻ cảm xúc chân thật.
+- **Thoại Nora (English Native Laomedeia):** "Twenty-four hours. I came here expecting primitive monsters..."
 
-- **Duration:** 8.0s
-- **Characters:** ['Nora', 'Nora Body', 'Pech Valley']
-- **Narrator / Dialogue:** "Twenty-four hours. I came here expecting primitive monsters..."
-- **Tóm tắt hành động (VN):** Nora nhìn thẳng vào camera trong shot selfie 0.5x góc rộng, gió sớm làm bay nhẹ lọn tóc mai. Gương mặt cô rạng ngời với vệt đất son đỏ mờ trên má và chiếc móng đại bàng trên ngực, chia sẻ cảm xúc chân thật.
+<details><summary>Xem Prompt Veo 3 / Omni Flash R2V (English)</summary>
 
 ```
 Photorealistic prehistoric survival documentary vlog reflection footage.
@@ -1740,14 +1984,18 @@ AUDIO:
 Crisp morning wind, soft breath intake, Nora's clear heartfelt spoken voice: "Twenty-four hours. I came here expecting primitive monsters..."
 ```
 
+</details>
+
 ---
 
-## SCENE 71: A5-13-SELFIE-REFLECTION-2 - Cảnh 71: Selfie Tổng Kết (Part 2): Gia Đình, Đi Săn, Nghệ Thuật & Lòng Dũng Cảm
+### [Cảnh 71] Cảnh 71: Selfie Tổng Kết (Part 2): Gia Đình, Đi Săn, Nghệ Thuật & Lòng Dũng Cảm
+- **Mã cảnh:** `A5-13-SELFIE-REFLECTION-2` | **Thời lượng:** 8.0s
+- **Nhân vật & Bối cảnh (Ref ingredients):** Nora, Nora Body, Pech Valley
+- **Mô tả hành động (Tiếng Việt):**
+  Tiếp nối chia sẻ cảm xúc: Nora nghẹn ngào nhấn mạnh bài học lịch sử to lớn nhất: Người Neanderthal không phải những kẻ hung bạo dã man, họ là những bậc thầy sinh tồn, có gia đình, nghệ thuật và lòng dũng cảm phi thường.
+- **Thoại Nora (English Native Laomedeia):** "...I found family, master hunters, art, and a courage that conquered an Ice Age."
 
-- **Duration:** 8.0s
-- **Characters:** ['Nora', 'Nora Body', 'Pech Valley']
-- **Narrator / Dialogue:** "...I found family, master hunters, art, and a courage that conquered an Ice Age."
-- **Tóm tắt hành động (VN):** Tiếp nối chia sẻ cảm xúc: Nora nghẹn ngào nhấn mạnh bài học lịch sử to lớn nhất: Người Neanderthal không phải những kẻ hung bạo dã man, họ là những bậc thầy sinh tồn, có gia đình, nghệ thuật và lòng dũng cảm phi thường.
+<details><summary>Xem Prompt Veo 3 / Omni Flash R2V (English)</summary>
 
 ```
 Photorealistic prehistoric survival documentary vlog reflection footage.
@@ -1772,14 +2020,18 @@ AUDIO:
 Soft morning wind through pines, Nora's passionate resonant spoken voice: "...I found family, master hunters, art, and a courage that conquered an Ice Age."
 ```
 
+</details>
+
 ---
 
-## SCENE 72: A5-14-TALISMAN-MACRO - Cảnh 72: Khoe Hai Kỷ Vật Trước Ống Kính: Quặng Pyrite & Móng Đại Bàng
+### [Cảnh 72] Cảnh 72: Khoe Hai Kỷ Vật Trước Ống Kính: Quặng Pyrite & Móng Đại Bàng
+- **Mã cảnh:** `A5-14-TALISMAN-MACRO` | **Thời lượng:** 8.0s
+- **Nhân vật & Bối cảnh (Ref ingredients):** Nora, Nora Body, Pech Valley
+- **Mô tả hành động (Tiếng Việt):**
+  Nora xòe bàn tay mở rộng trước camera: viên đá Pyrite vàng kim lấp lánh và chiếc móng vuốt đại bàng đen bóng được nâng lên ngang ngực, nổi bật trên nền thung lũng tuyết mờ ảo phía sau.
+- **Thoại Nora (English Native Laomedeia):** "Two gifts to remember them by: the spark of fire, and the talon of the eagle."
 
-- **Duration:** 8.0s
-- **Characters:** ['Nora', 'Nora Body', 'Pech Valley']
-- **Narrator / Dialogue:** "Two gifts to remember them by: the spark of fire, and the talon of the eagle."
-- **Tóm tắt hành động (VN):** Nora xòe bàn tay mở rộng trước camera: viên đá Pyrite vàng kim lấp lánh và chiếc móng vuốt đại bàng đen bóng được nâng lên ngang ngực, nổi bật trên nền thung lũng tuyết mờ ảo phía sau.
+<details><summary>Xem Prompt Veo 3 / Omni Flash R2V (English)</summary>
 
 ```
 Photorealistic prehistoric survival documentary macro payoff footage.
@@ -1804,14 +2056,18 @@ AUDIO:
 Soft mineral clink of stone against talon, gentle breeze, Nora's awe-struck tender whisper: "Two gifts to remember them by: the spark of fire, and the talon of the eagle."
 ```
 
+</details>
+
 ---
 
-## SCENE 73: A5-15-THEY-LIVED - Cảnh 73: Lời Kết Triết Lý Sâu Sắc: 'Họ Đã Sống Trọn Vẹn'
+### [Cảnh 73] Cảnh 73: Lời Kết Triết Lý Sâu Sắc: 'Họ Đã Sống Trọn Vẹn'
+- **Mã cảnh:** `A5-15-THEY-LIVED` | **Thời lượng:** 8.0s
+- **Nhân vật & Bối cảnh (Ref ingredients):** Nora, Nora Body, Pech Valley
+- **Mô tả hành động (Tiếng Việt):**
+  Nora nhìn lại camera một lần cuối cùng, nở nụ cười rạng ngời và kiêu hãnh. Cô thốt lên câu kết luận xúc động nhất của cả hành trình 24 giờ: 'Họ không chỉ sinh tồn. Họ đã sống trọn vẹn.'
+- **Thoại Nora (English Native Laomedeia):** "They didn't just survive. They lived."
 
-- **Duration:** 8.0s
-- **Characters:** ['Nora', 'Nora Body', 'Pech Valley']
-- **Narrator / Dialogue:** "They didn't just survive. They lived."
-- **Tóm tắt hành động (VN):** Nora nhìn lại camera một lần cuối cùng, nở nụ cười rạng ngời và kiêu hãnh. Cô thốt lên câu kết luận xúc động nhất của cả hành trình 24 giờ: 'Họ không chỉ sinh tồn. Họ đã sống trọn vẹn.'
+<details><summary>Xem Prompt Veo 3 / Omni Flash R2V (English)</summary>
 
 ```
 Photorealistic prehistoric survival documentary outro emotional climax footage.
@@ -1836,14 +2092,18 @@ AUDIO:
 Soft whisper of wind, delicate resonant ambient tone, Nora's unforgettable final spoken whisper: "They didn't just survive. They lived."
 ```
 
+</details>
+
 ---
 
-## SCENE 74: A5-16-AERIAL-PULLBACK - Cảnh 74: Drone Bay Lùi Bao Quát Thung Lũng Dordogne Vĩnh Cửu
+### [Cảnh 74] Cảnh 74: Drone Bay Lùi Bao Quát Thung Lũng Dordogne Vĩnh Cửu
+- **Mã cảnh:** `A5-16-AERIAL-PULLBACK` | **Thời lượng:** 8.0s
+- **Nhân vật & Bối cảnh (Ref ingredients):** Nora, Nora Body, Pech Valley
+- **Mô tả hành động (Tiếng Việt):**
+  Máy quay bay lùi dần lên cao và ra xa, bóng dáng nhỏ bé của Nora bước đi dọc dòng sông băng giữa thung lũng Dordogne hùng vĩ, bao quanh bởi những rặng thông và vách đá tuyết ngút ngàn.
+- **Thoại Nora (English Native Laomedeia):** ""
 
-- **Duration:** 8.0s
-- **Characters:** ['Nora', 'Nora Body', 'Pech Valley']
-- **Narrator / Dialogue:** ""
-- **Tóm tắt hành động (VN):** Máy quay bay lùi dần lên cao và ra xa, bóng dáng nhỏ bé của Nora bước đi dọc dòng sông băng giữa thung lũng Dordogne hùng vĩ, bao quanh bởi những rặng thông và vách đá tuyết ngút ngàn.
+<details><summary>Xem Prompt Veo 3 / Omni Flash R2V (English)</summary>
 
 ```
 Photorealistic prehistoric survival documentary aerial pull-back footage.
@@ -1864,14 +2124,18 @@ AUDIO:
 Rising majestic wind sweep, profound primeval stillness, distant eagle cry. Strictly NO spoken dialogue.
 ```
 
+</details>
+
 ---
 
-## SCENE 75: A5-17-TITLE-FADE - Cảnh 75: Màn Hình Đen & Kết Thúc Hành Trình 24 Giờ Sinh Tồn
+### [Cảnh 75] Cảnh 75: Màn Hình Đen & Kết Thúc Hành Trình 24 Giờ Sinh Tồn
+- **Mã cảnh:** `A5-17-TITLE-FADE` | **Thời lượng:** 8.0s
+- **Nhân vật & Bối cảnh (Ref ingredients):** Pech Valley
+- **Mô tả hành động (Tiếng Việt):**
+  Cảnh thung lũng vĩnh cửu từ từ chìm vào màn hình đen tĩnh lặng. Dòng chữ kết thúc hành trình 24 giờ cùng người Neanderthal hiện lên trang trọng, khép lại một tập vlog sinh tồn huyền thoại.
+- **Thoại Nora (English Native Laomedeia):** ""
 
-- **Duration:** 8.0s
-- **Characters:** ['Pech Valley']
-- **Narrator / Dialogue:** ""
-- **Tóm tắt hành động (VN):** Cảnh thung lũng vĩnh cửu từ từ chìm vào màn hình đen tĩnh lặng. Dòng chữ kết thúc hành trình 24 giờ cùng người Neanderthal hiện lên trang trọng, khép lại một tập vlog sinh tồn huyền thoại.
+<details><summary>Xem Prompt Veo 3 / Omni Flash R2V (English)</summary>
 
 ```
 Photorealistic prehistoric survival documentary outro outro footage.
@@ -1891,6 +2155,8 @@ Static extreme wide shot holding steady as darkness envelops the frame.
 AUDIO:
 Fading mountain breeze, peaceful resonant silence dissolving into complete quiet. Strictly NO spoken dialogue.
 ```
+
+</details>
 
 ---
 

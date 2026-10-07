@@ -1,8 +1,7 @@
 {
-  "current_scene": 15,
+  "current_scene": 14,
   "total_scenes": 75,
-  "status": "SCENE_14_COMPLETED_CLEAN",
-  "scene_14_clean_file": "output\\neanderthal-51ka\\1080\\scene_14_90ddf0bb_1080p_clean.mp4",
+  "status": "READY_FOR_SCENE_14_REGEN",
   "bison_media_id": "ed33a00f-13ac-4e7e-ba25-b5d222c05cd1",
-  "note": "Scene 14 clean 1080p completed. Steppe Bison entity ready."
+  "note": "Updated all scenes 14-75 in DB and clips.json with high-retention Steppe Bison hunt & hyena defense. Ready for user review."
 }
