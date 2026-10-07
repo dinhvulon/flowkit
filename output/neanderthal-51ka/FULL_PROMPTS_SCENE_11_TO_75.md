@@ -1,243 +1,127 @@
-# TẬP HỢP KỊCH BẢN & FULL PROMPTS TỪ CẢNH 10 ĐẾN CẢNH 75
-## DỰ ÁN: NEANDERTHAL 51,000 NĂM TRƯỚC (PECH DE L'AZÉ, DORDOGNE)
-**Tập 2:** *"I Survived 24 Hours with Neanderthals (51,000 Years Ago)"*  
-**Quy tắc bất di bất dịch đã khóa theo chỉ đạo của User & Đã đồng bộ các Skill (fk-time-travel-vlog, fk-camera-guide, fk-add-material):**
-1. **TUYỆT ĐỐI CẤM TRẺ CON (Zero Children Rule):** 100% người lớn trưởng thành (Thủ Lĩnh ~35t, Người Mạnh Nhất ~22t, Người Phụ Nữ Lớn Tuổi ~45t, Nữ Thợ Săn ~28t).
-2. **CẮT BỎ ẨM THỰC LẶP LẠI:** Không có cảnh ăn uống, nếm tủy xương kéo dài vì đã có ở tập trước.
-3. **2 TRỤ CỘT VĂN HÓA CỐT LÕI:**
-   - **Đời sống gia đình bên bếp lửa (Adult Hearth Life):** Sưởi ấm, nước thảo mộc đá nung (stone boiling không nổ), kỹ nghệ thuộc da bằng dao nạo đá Mousterian, đục lỗ xỏ gân, tôi lửa mũi giáo gỗ, ổ ngủ lót cành thông và đá giữ nhiệt đặt cạnh ổ ngủ.
-   - **Nghệ thuật & Tâm linh (Symbolic Culture):** Gian phòng hang sâu, thỏi đất son đỏ (Red Ochre), nghiền đất son với mỡ động vật, vẽ ấn ký mặt, vách đá dấu bàn tay âm bản (Hand Stencil) bằng kỹ thuật phun miệng (aerosol tự nhiên viền mềm), báu vật móng vuốt đại bàng (Eagle Talons) đục lỗ, trao tặng kỷ vật móng đại bàng.
-4. **CẤM THOẠI TRÊN MÁY QUAY (Lips Firmly Closed):** Nhân vật Neanderthal ngậm chặt môi (`lips firmly closed`), tránh lỗi AI nhép miệng nữ vào mặt nam; thoại dẫn chuyện chỉ lồng tiếng ở hậu kỳ dựng; cấm các từ `whispering`/`muttering`.
-5. **KHÓA NHẬN DIỆN NORA (High Signal-to-Noise):** Tóc đuôi ngựa vàng buộc cao có mái curtain bangs cột bằng dây da thú (`raw leather thong` - tuyệt đối không dùng dây chun), áo da hươu vàng đan dây chéo ngực (criss-cross lacing), thắt lưng socola, quần legging da hươu vàng bó sát, bốt da cao cổ.
-6. **CHUẨN KIẾN TRÚC PROMPT 8 THÀNH PHẦN (Chuẩn User Critique & fk-camera-guide):**
-   - `STYLE:` Prehistoric survival documentary footage, raw photography, motivated natural lighting.
-   - `SHOT:` Góc máy và chuyển động máy viết thành câu riêng biệt, 1 shot = 1 perspective, cấm xoay lật 180° hay quay sau lưng vlogger rồi lộn ra trước mặt.
-   - `SETTING:` Dordogne, Pech de l'Azé, severe Pleistocene glacial winter, ánh sáng tự nhiên.
-   - `CHARACTERS:` Danh sách nhân vật xuất hiện, lips firmly closed, không trẻ con, không đạo cụ hiện đại.
-   - `CONTINUITY & BODY LOCK:` Tinh gọn, sớm, không spam từ khoá, quản lý trạng thái móng đại bàng (trước C42 không đeo, sau C42 đeo 1 móng) và quặng pyrite (C68 cất túi, C71 tay đặt lên túi, C74 trên lòng bàn tay).
-   - `ACTION (0-2s, 2-5s, 5-8s):` Một hành động vật lý mỗi beat, có cấu trúc nhân quả (cause -> reaction -> payoff).
-   - `PHYSICAL REALISM & BIOMECHANICS:` Vật lý chính xác: không nảy lửa từ giáo gỗ đập đá vôi, không nổ stone boiling, không magic smell seal, không drool freeze instantly, lực đẩy giáo ngang hai tay, chuyển lửa che chắn trước gió...
-   - `CAMERA:` Chuyển động handheld tự nhiên có độ rung bước chân, không drone trong bối cảnh tiền sử.
-   - `AUDIO:` Hierarchy rõ ràng: Action sound > Environment > Ambient, strictly NO spoken dialogue.
+# KỊCH BẢN CHI TIẾT CÓ LỜI THOẠI (DIALOGUE) — NEANDERTHAL 51,000 BC
+# Dự án: neanderthal-51ka | Format: 16:9 4K Omni Flash R2V
 
 ---
 
-# HỒI 1: BƯỚC QUA NGƯỠNG CỬA HANG (KẾT THÚC HỒI 1: CẢNH 10 — 11)
-
----
+## HỒI 1: BƯỚC QUA NGƯỠNG CỬA HANG (KẾT THÚC HỒI 1: CẢNH 10 — 13)
+*(Lưu ý: Các cảnh 01 đến 13 ĐÃ HOÀN TẤT video 1080p clean)*
 
 ### CẢNH 10 (8s) — Thử Thách Đánh Lửa: Quặng Pyrite & Đá Lửa Flint Biface
-- **Mã kịch bản:** A1-08
+- **Mã kịch bản:** A1-08 | **Thời lượng:** 8.0s
 - **Góc máy:** Cận cảnh tầm thấp sát mặt đất (Low-angle handheld ground macro shot).
-- **Nhân vật & Đạo cụ:** Nora (bàn tay run lạnh, quỳ gối), Lưỡi rìu đá Flint biface, Quặng Pyrite vàng đồng, Bùi nhùi rêu khô; Thủ Lĩnh & Người Mạnh Nhất đứng quan sát phía sau.
-- **Tiếp nối Cảnh 09 (Match-on-Action):** Hai viên đá (Flint biface xám sẫm và quặng Pyrite vàng đồng) vừa được Thủ Lĩnh thả xuống thềm sỏi ngay trước mũi bốt của Nora ở cuối Cảnh 9, ĐÃ NẰM SẴN trên lớp sỏi phủ sương từ khung hình đầu tiên.
-- **Diễn biến:**
-  - `0-3s`: Nora dùng tay trái cầm phiến đá Flint biface **tì/ghì chặt trực tiếp lên trên miệng tổ bùi nhùi rêu khô**; tay phải cầm quặng Pyrite đập chém xéo nhát đầu tiên sát sạt mép đá tì trên bùi nhùi — chỉ lóe tia lửa yếu không bén; cô lập tức đập liên tiếp thêm 2-3 nhát nhanh dứt khoát ngay sát mép rêu; chùm tia lửa cam cắm thẳng trực diện vào lõi bùi nhùi ngay dưới mép đá.
-  - `3-5s`: Thấy đốm than đỏ bắt đầu bén trong sợi rêu, Nora lập tức đặt hai viên đá đánh lửa (pyrite và flint) sang một bên thềm sỏi; hai tay chụm lại áp sát tổ bùi nhùi để che chắn gió bấc.
-  - `5-8s`: Nora ghé sát mặt nhẹ nhàng phà từng hơi thở dịu êm vào tổ rêu; đốm than đỏ từ từ bừng sáng nở rộng và một ngọn lửa nhỏ liu riu cỡ 2 cm (gentle miniature flame) nhen nhóm bén lên, tỏa ra làn khói trắng mỏng manh, nhẹ nhàng êm dịu cuộn lên giữa các ngón tay (gentle delicate wisp of white smoke, tuyệt đối không bùng khói lớn, không khói từ miệng). Nora ngắm nhìn với vẻ thở phào kinh ngạc.
-- **FULL PROMPT (OMNI FLASH R2V):**
-```text
-Photorealistic prehistoric survival documentary macro footage.
-SHOT:
-Low-angle handheld ground macro shot, focusing tightly on the firestones on the frosted gravel and Nora's trembling hands.
-SETTING:
-Frosted limestone gravel apron outside the dark cave entrance at Pech de l'Azé, Dordogne, about 51,000 years ago during a severe Pleistocene winter. Overcast daylight, cold glacial wind. Strictly NO burning campfire on the ground outside.
-CHARACTERS:
-Nora in golden-tan deer suede tunic and high blonde ponytail. At the cave entrance three metres behind her, the Neanderthal Leader and the Strongest stand watching quietly. Lips firmly closed throughout.
-OBJECTS IN PLACE:
-A dark-grey flint biface, brassy lump of iron pyrite, and dry tinder moss nest lie on the frosted limestone gravel between Nora's knees.
-TINDER-CONTACT STRIKE LOCK (CRITICAL):
-Nora holds the sharp dark flint biface pressed firmly directly on top of the tinder moss nest; she strikes the pyrite downward right against the flint edge millimeters directly above the tinder fibers. Sparks cascade directly into the moss beneath the stone.
-SMOKE & FLAME CONSTRAINTS (CRITICAL):
-Gentle miniature fire and delicate soft wisp of smoke only; strictly NO large billowing smoke clouds, NO explosive bursts. White smoke rises solely from the tinder nest on the gravel, NEVER from Nora's mouth or throat.
-0-3s: Nora holds the dark flint biface pressed flat directly on top of the dry tinder nest; with her right hand, she strikes the golden pyrite glancingly against the flint edge right against the tinder—the first strike yields only a faint spark that dies; she immediately strikes 2 to 3 more sharp blows in rapid succession inches above the fibers, showering bright sparks directly into the moss underneath.
-3-5s: Seeing a red ember catch deep in the moss fibers, Nora immediately sets both heavy stones aside onto the gravel; she cups both bare cold hands closely around the tinder nest to shield the ember from the freezing wind.
-5-8s: Leaning close, Nora blows gentle subtle puffs of air onto the ember; the ember pulses and a delicate, gentle small flame (two centimetres tall) licks to life in the moss fibers, with a peaceful, faint wisp of light white smoke curling upward between her cupped fingers. Nora watches with quiet awe with closed lips.
-PHYSICAL REALISM & BIOMECHANICS:
-Flint held in direct physical contact pressed on top of tinder nest; sparks travel minimum distance directly into moss fibers; setting stones aside onto gravel; gentle blowing air conditioning soft thermal ignition into tiny delicate flame.
-CAMERA:
-Handheld ground macro with subtle shivering micro-tremors, natural wide-angle perspective.
-AUDIO:
-Sharp initial click of stone, rapid rhythmic scraping clicks, soft crackle as sparks ignite tinder, quiet gentle blowing breaths, faint soft crackle of a tiny delicate flame, whistling glacial wind. Strictly NO spoken dialogue.
-```
+- **Nhân vật & Đạo cụ:** Nora (bàn tay run lạnh, quỳ gối), Lưỡi rìu đá Flint biface, Quặng Pyrite vàng đồng, Bùi nhùi rêu khô.
+- **Thoại Nora (Dialogue / Laomedeia):** *(Nora thì thầm dồn dập, nín thở hồi hộp)*: *"Come on... one spark... just catch!"*
+- **Tình trạng:** Đã hoàn thành 1080p (`output/neanderthal-51ka/1080/scene_10_7fdc42df_1080p_clean.mp4`)
 
 ---
 
 ### CẢNH 11 (8s) — Được Công Nhận & Bước Qua Ngưỡng Cửa Hang
-- **Mã kịch bản:** A1-09
+- **Mã kịch bản:** A1-09 | **Thời lượng:** 8.0s
 - **Góc máy:** Qua vai chếch bên hông tầm thấp (Low-angle three-quarter OTS tracking shot).
-- **Nhân vật:** Nora (hai tay nâng bùi nhùi bốc khói than đỏ), Thủ Lĩnh (gật đầu tán thưởng), Người Mạnh Nhất (thu ngọn giáo gỗ), Vòm cửa hang Pech de l'Azé.
-- **Diễn biến:**
-  - `0-2s`: Nora hai tay nâng bùi nhùi có than đỏ bốc khói trắng, cẩn thận đứng dậy từ thềm sỏi, bước 2 bước chậm rãi tiến về phía cửa hang chứng minh ngọn lửa.
-  - `2-5s`: Thủ Lĩnh nhìn đốm than đỏ và khói trắng trong tay cô; nét mặt nghiêm nghị giãn ra, ông khẽ gật đầu một cái dứt khoát công nhận. Người Mạnh Nhất từ từ hạ ngọn giáo gỗ xuống, né sang bên nhường đường.
-  - `5-8s`: Nora thở phào một hơi dài phả khói trắng, ôm bọc lửa sải bước tự tin bước qua ngưỡng đá vôi cửa hang vào bên trong không gian che chắn ấm áp của bộ tộc.
-- **FULL PROMPT (OMNI FLASH R2V):**
-```text
-Photorealistic prehistoric survival documentary footage.
-SHOT:
-Low-angle handheld three-quarter over-the-shoulder tracking shot, moving smoothly alongside Nora toward the cave mouth.
-SETTING:
-Limestone cave mouth at Pech de l'Azé, Dordogne, 51,000 years ago during glacial winter. Overcast daylight outside, dark sheltered cavern ahead.
-CHARACTERS:
-Nora in foreground holding smoking tinder. Neanderthal Leader in untailored hides stands on left threshold; Strongest stands on right holding ash spear. Lips firmly closed throughout.
-CONTINUITY & BODY LOCK:
-Nora wears tailored golden-tan deer suede tunic with laced chest, dark chocolate belt, knee-high boots, and honey-blonde ponytail tied with a raw leather thong.
-0-2s: Cupping smoking tinder carefully with white smoke trailing upward, Nora rises from frosted gravel, taking two cautious steps toward the cave entrance.
-2-5s: The Leader looks at the glowing ember; his weathered brow softens into a dignified nod of approval. The Strongest smoothly lowers his thrusting spear and steps aside.
-5-8s: Nora exhales a long relieved breath of white condensation, clutches the smoking ember securely, and steps across the stone threshold into the sheltered limestone cavern.
-PHYSICAL REALISM & BIOMECHANICS:
-Steady vertical smoke plume shifting in threshold draft; natural weight shift from kneeling to standing; authentic footsteps on loose limestone gravel.
-CAMERA:
-Handheld tracking shot maintaining stable single perspective from Nora's three-quarter profile, with subtle footfall bounce and no camera flips.
-AUDIO:
-Footsteps crunching on frosted gravel, whistling glacial wind outside, soft crackle of tinder, footsteps echoing on interior rock. Strictly NO spoken dialogue.
-```
-
----
-
-# HỒI 2: ĐỜI SỐNG GIA ĐÌNH BÊN BẾP LỬA (CẢNH 12 — 26)
-*(Thời lượng: 01:28 – 03:28 | Trọng tâm: Sự an toàn của tổ ấm, sưởi ấm, đồ uống đá nung, chế tác da thú và vũ khí của người lớn)*
+- **Nhân vật:** Nora (hai tay nâng bùi nhùi bốc khói than đỏ), Thủ Lĩnh, Người Mạnh Nhất.
+- **Thoại Nora (Dialogue / Laomedeia):** *"Like a ferro rod. Right? They're letting me in."*
+- **Tình trạng:** Đã hoàn thành 1080p (`output/neanderthal-51ka/1080/scene_11_4365f996_1080p_clean.mp4`)
 
 ---
 
 ### CẢNH 12 (8s) — Đặt Lửa Vào Bếp Đá Vôi Của Bộ Tộc
-- **Mã kịch bản:** A2-01
+- **Mã kịch bản:** A2-01 | **Thời lượng:** 8.0s
 - **Góc máy:** Cận cảnh mặt đất cạnh hố bếp tròn (Low-angle hearth close-up).
-- **Nhân vật:** Bàn tay Nora, Người Phụ Nữ Lớn Tuổi (~45t), Hố bếp tròn ghép bằng đá vôi, cành thông khô.
-- **Diễn biến:**
-  - `0-2s`: Nora quỳ bên hố bếp đá vôi tròn giữa lòng hang, nhẹ nhàng đặt nhúm bùi nhùi đang đỏ than vào giữa tổ dăm thông khô.
-  - `2-5s`: Người Phụ Nữ Lớn Tuổi quỳ đối diện, nhanh chóng gạt thêm dăm thông mỏng lên trên rồi ghé sát thổi một hơi dài đều đặn.
-  - `5-8s`: Lửa bén nhanh bùng lên ngọn lửa vàng cam ấm áp, khói thơm bốc lên, ánh sáng bừng sáng hai gương mặt đầy xúc động.
-- **FULL PROMPT (OMNI FLASH R2V):**
-```text
-Photorealistic prehistoric survival documentary footage.
-SHOT:
-Low-angle handheld ground close-up, focusing on the circular limestone hearth pit and both women's hands.
-SETTING:
-Five metres inside Pech de l'Azé cave, 51,000 years ago during glacial winter. Earthen floor, sheltered limestone walls, soft shadows.
-CHARACTERS:
-Nora kneels on left in golden-tan deer suede tunic and high blonde ponytail. Opposite her sits the Old Woman (~45, robust brow ridge, deer pelt tied with raw thongs). Lips firmly closed throughout.
-CONTINUITY & BODY LOCK:
-Nora wears tailored golden-tan suede tunic with laced chest, dark chocolate belt, and ponytail tied with raw leather thong.
-0-2s: Nora gently lowers the smoking tinder bundle with glowing red ember into dry pine shavings inside the limestone-lined hearth.
-2-5s: The Old Woman adds thin dry pine splinters on top with calloused fingers, leans forward, and blows a steady breath into kindling.
-5-8s: The kindling catches: bright warm orange flames rise smoothly, crackling softly and casting dancing amber light across both women's faces.
-PHYSICAL REALISM & BIOMECHANICS:
-Realistic combustion transition from smoldering ember to flame; gentle convective flicker responding to breath; authentic rising pine smoke.
-CAMERA:
-Handheld close-up at hearth level with gentle natural settling movement, maintaining steady eye-level view of hearth.
-AUDIO:
-Soft rustle of dry pine needles, Old Woman's steady breath blowing, rising crackle of fresh flame catching resinous wood. Strictly NO spoken dialogue.
-```
+- **Nhân vật:** Nora, Người Phụ Nữ Lớn Tuổi, Hố bếp tròn ghép bằng đá vôi.
+- **Thoại Nora (Dialogue / Laomedeia):** *"Okay. Step inside."*
+- **Tình trạng:** Đã hoàn thành 1080p (`output/neanderthal-51ka/1080/scene_12_cbf44f9b_1080p_clean.mp4`)
 
 ---
 
-### CẢNH 13 (8s) — Toàn Cảnh Hang Động Bừng Sáng Trong Ánh Lửa
-- **Mã kịch bản:** A2-02
-- **Góc máy:** Toàn cảnh ngang tầm mắt trong lòng hang (Medium-wide interior establishing shot).
-- **Nhân vật:** Nora, Thủ Lĩnh (~35t), Người Mạnh Nhất (~22t), Người Phụ Nữ Lớn Tuổi (~45t), Nữ Thợ Săn Trưởng Thành (~28t).
-- **Diễn biến:**
-  - `0-2s`: Bếp lửa trung tâm cháy bùng sáng rực rỡ, khói thơm mùi gỗ thông cuộn theo vòm trần đá vôi tự nhiên thoát ra ngoài.
-  - `2-5s`: Bốn thành viên trưởng thành của bộ tộc ngồi quanh bếp: Thủ Lĩnh gọt cán gỗ, Người Mạnh Nhất dựa lưng nghỉ ngơi, Nữ Thợ Săn sưởi tay, Người Phụ Nữ chỉnh lại đống củi.
-  - `5-8s`: Nora đứng nhìn bao quát không gian hang trú ẩn ấm cúng với ánh mắt an lòng và thán phục trước trật tự sinh tồn nguyên thủy.
-- **FULL PROMPT (OMNI FLASH R2V):**
-```text
-Photorealistic prehistoric survival documentary footage.
-SHOT:
-Medium-wide interior handheld establishing shot, surveying the main chamber of the limestone cave.
-SETTING:
-Main chamber of Pech de l'Azé cave, Dordogne, 51,000 years ago. High vaulted limestone ceiling with natural fissure vents. A roaring limestone hearth illuminates the chamber in golden amber light.
-CHARACTERS:
-Five adult figures around hearth. Nora stands on left in golden suede. Seated around fire: Leader carving wood with stone flake, Strongest resting against boulder, Old Woman tending kindling, Hunter Woman warming hands. Lips closed throughout.
-CONTINUITY & BODY LOCK:
-Nora in full golden-tan deer suede outfit, dark chocolate belt, and honey-blonde ponytail.
-0-2s: The roaring central campfire crackles warmly, sending thin aromatic pine smoke rising naturally toward high ceiling fissure.
-2-5s: The adult clan members relax in their domestic survival routine: Leader shaves bark off a branch, Strongest rests his limbs, and Hunter Woman warms palms over coals.
-5-8s: Nora slowly sweeps her gaze across the peaceful cave sanctuary, her face illuminated by firelight, exhaling softly in complete safety.
-PHYSICAL REALISM & BIOMECHANICS:
-Dynamic chiaroscuro illumination with realistic firelight falloff on natural limestone walls; authentic adult postures of exhaustion yielding to warmth.
-CAMERA:
-Smooth handheld tracking pan across cavern interior, steady wide-angle perspective without artificial distortion.
-AUDIO:
-Steady crackle and pop of burning pine logs, quiet rustle of furs, soft cavern reverberation, distant muffled winter wind outside. Strictly NO spoken dialogue.
-```
+### CẢNH 13 (8s) — Bà Lão Thổi Bùng Ngọn Lửa Tổ Ấm
+- **Mã kịch bản:** A2-02 | **Thời lượng:** 8.0s
+- **Góc máy:** Cận cảnh khuôn mặt Bà Lão và ngọn lửa bùng sáng.
+- **Nhân vật:** Người Phụ Nữ Lớn Tuổi, Nora.
+- **Thoại Nora (Dialogue / Laomedeia):** *"Three strikes. She does it in three."*
+- **Tình trạng:** Đã hoàn thành 1080p (`output/neanderthal-51ka/1080/scene_13_af96aacf_1080p_clean.mp4`)
 
 ---
 
-### CẢNH 14 (8s) — Nora Hong Khô Áo Quần Bên Bếp Lửa
-- **Mã kịch bản:** A2-03
-- **Góc máy:** Cận cảnh tầm thấp bên bếp lửa (Medium close-up at hearth level).
-- **Nhân vật:** Nora (ngồi bệt trên tấm da thú khô), ngọn lửa ấm áp, đôi ủng bọc da đang hong khô.
-- **Diễn biến:**
-  - `0-2s`: Nora ngồi bệt trên tấm da tuần lộc khô cạnh thềm đá nóng, cởi đôi ủng da dựng bên phiến đá ấm để hong khô.
-  - `2-5s`: Cô đưa hai bàn tay lạnh cóng lại sát ngọn lửa ấm, xoa hai lòng bàn tay vào nhau; hơi nước mỏng bốc lên từ vạt áo da hươu ướt.
-  - `5-8s`: Sắc hồng tự nhiên dần trở lại trên gò má và bờ môi của Nora, cô khẽ thở phào nhẹ nhõm, tận hưởng hơi ấm cứu mạng.
-- **FULL PROMPT (OMNI FLASH R2V):**
-```text
-Photorealistic prehistoric survival documentary footage.
-SHOT:
-Medium close-up handheld shot at hearth level, framing Nora warming herself beside the glowing fire.
-SETTING:
-Beside the warm limestone hearth inside Pech de l'Azé cave. Dry deer pelts on earthen floor; roaring amber coals flickering on frame edge.
-CHARACTERS:
-Nora sits cross-legged on dry pelt right beside hearth heat. Her removed wet boots sit drying near warm hearth stones. Lips firmly closed.
-CONTINUITY & BODY LOCK:
-Nora wears tailored golden-tan deer suede tunic with criss-cross laced cleavage, wide chocolate belt, and high blonde ponytail tied with raw leather thong.
-0-2s: Nora sits by radiant hearth warmth, arranging her removed leather boots neatly beside warm limestone border stones.
-2-5s: She extends both hands toward glowing coals, rubbing chilled palms together; faint wisps of white steam rise from damp suede sleeves as heat dries leather.
-5-8s: Natural healthy warmth returns to cheeks and lips as shivering ceases; she breathes a quiet sigh of relief, gazing gratefully into fire.
-PHYSICAL REALISM & BIOMECHANICS:
-Gentle evaporation steam dispersing smoothly in dry cave air; natural capillary blood flow returning pink color to cold skin; authentic fabric texture of smoked suede drying near heat.
-CAMERA:
-Handheld medium close-up with subtle organic micro-movement, maintaining focus on Nora's hands and face.
-AUDIO:
-Gentle crackle of glowing pine embers, soft rustle of suede, quiet breath of relief, faint sizzle of water droplets on warm stone. Strictly NO spoken dialogue.
-```
+
+
+# HỒI 2: ĐỜI SỐNG GIA ĐÌNH BÊN BẾP LỬA & KHỦNG HOẢNG LƯƠNG THỰC (CẢNH 14 — 20)
 
 ---
 
-### CẢNH 15 (8s) — Người Phụ Nữ Lớn Tuổi Quan Sát Kỹ Nghệ May Áo Của Nora (CÓ THOẠI VLOG)
-- **Mã kịch bản:** A2-04
-- **Góc máy:** Over-the-shoulder medium close-up ngang tầm bếp lửa (Over-the-shoulder handheld at hearth level).
-- **Nhân vật:** Nora, Người Phụ Nữ Lớn Tuổi (~45t), Cave Interior.
-- **Diễn biến:**
-  - `0-3s`: Người Phụ Nữ Lớn Tuổi nghiêng đầu lại gần, tò mò ngắm nhìn những đường may gân thú thẳng tắp, tinh xảo dọc theo vai áo da hoẵng của Nora.
-  - `3-6s`: Bà vươn những đầu ngón tay thô ráp, chai sần chạm khẽ vào từng mũi khâu da thuộc, cảm nhận độ tinh xảo; bà ngước nhìn vào mắt Nora, khẽ gật đầu công nhận. Môi bà ngậm chặt, không nói lời nào.
-  - `6-8s`: Nora khẽ xoay góc máy về phía mình, gương mặt bừng sáng nụ cười xúc động, thì thầm trực tiếp vào camera (khẩu hình native khớp chuẩn câu thoại qua voice profile Laomedeia):
-    > **Nora says in a breathless, awed whisper:** *"She's inspecting my stitches... She recognizes the craftsmanship."*
+### CẢNH 14 (8.0s) — Cảnh 14: Sự Đùm Bọc Tiền Sử (Tấm Da Gấu & Kéo Vào Bếp Lửa)
+- **Mã kịch bản:** A2-01-CARE
+- **Thời lượng:** 8.0s
+- **Nhân vật & Refs:** Nora, Nora Body, Old Woman, Cave Interior
+- **Thoại Nora (Dialogue / Laomedeia):** "They don't know who I am... but they won't let me freeze."
+- **Tóm tắt hành động (VN):** Nora ngồi quỳ bên bếp lửa run bần bật vì hạ thân nhiệt. Người Phụ Nữ Lớn Tuổi mang tấm da gấu dày trùm lên vai cô, kéo cô ngồi sát vào gờ đá ấm bên bếp lửa. Nora ngước nhìn ánh mắt ấm áp đầy tình người và thì thầm xúc động vào camera.
 - **FULL PROMPT (OMNI FLASH R2V):**
+
 ```text
 Photorealistic prehistoric survival documentary footage.
 SHOT:
-Over-the-shoulder medium close-up shot at hearth level, angled across Nora's shoulder toward the Neanderthal Old Woman sitting opposite her, with warm flickering campfire illumination. Camera maintains steady organic micro-tremors; strictly NO 180-degree camera flips.
+Medium two-shot handheld perspective at hearth level, capturing the raw human warmth and cultural acceptance inside the limestone cavern. Handheld camera maintains subtle organic breathing movement; strictly NO 180-degree camera flips.
 SETTING:
-Inside the limestone cave of Pech de l'Azé beside the limestone hearth, Dordogne, 51,000 years ago during glacial winter. Softly blurred limestone cave wall in background illuminated with dancing amber firelight reflections. Strictly NO modern items, NO modern clothing.
+Beside the central circular limestone hearth inside Pech de l'Azé cave, Dordogne, 51,000 years ago during severe Pleistocene glacial winter. Dancing amber firelight and glowing coals illuminate the damp limestone cave walls; aromatic pine smoke curls upward toward natural roof fissure. Strictly NO modern items, NO modern clothing.
 CHARACTERS:
-Nora sits cross-legged beside the hearth in her golden-tan deer suede tunic. Opposite her sits the Old Woman (~45 years old, experienced Neanderthal elder woman with prominent brow ridges, wide nasal bridge, weathered skin, dark hair streaked with grey draped in deer pelt). Strictly NO children, NO wounded people. The Old Woman's lips remain firmly closed throughout; zero words from the Neanderthal.
+Nora sits cross-legged beside the hearth shivering from hypothermia, her hands empty and resting on her knees. The Neanderthal Old Woman (~45 years old, experienced elder matriarch with heavy brow ridges, wide nasal bridge, weathered skin, dark hair streaked with grey draped in thick fur pelt) sits opposite her. The Old Woman's lips remain firmly closed throughout; zero words from Neanderthals.
 IDENTITY & OUTFIT LOCK (CRITICAL -- match reference images exactly):
 Nora's face and hair match the Nora face reference sheet, and her build and clothing match the Nora Body sheet. Nora has a voluptuous, curvaceous hourglass figure with a prominent high natural bust, tiny narrow waist, and shapely hips. Nora has honey-blonde hair pulled up into a high wavy ponytail tied with a raw leather thong (strictly NO rubber band), with wispy curtain bangs framing both cheeks. Nora wears a form-fitting tailored tunic of smoked golden-tan deer suede, precision-sewn with fine sinew stitches. CHEST LACING LOCK (CRITICAL): Deep plunging V-neckline laced with thick dark-brown leather thongs forming a prominent X-pattern bridge across her cleavage. CORSET BELT LOCK (CRITICAL): Tightly cinched at her tiny waist with a wide 10-12 cm dark-chocolate brown leather belt. SLEEVE CUFF LOCK (CRITICAL): Long fitted sleeves ending cleanly at the wrists; knee-high hide boots worn on her feet. Strictly NO modern jewelry, NO necklace, NO chain.
 CRITICAL VLOG SPEECH LOCK:
-Only Nora speaks English to the camera in her native Laomedeia voice profile; the Neanderthal Old Woman never speaks English and keeps her lips firmly closed.
-0-3s: The Old Woman leans in slightly, her weathered gaze captivated by the neat, microscopic sinew stitching along the shoulder and chest seam of Nora's golden suede tunic.
-3-6s: With slow, respectful curiosity, the Old Woman extends her thick, calloused fingertips to gently brush against the fine seam stitching, feeling the craftsmanship with quiet awe; she looks up into Nora's eyes with a gentle, dignified nod of mutual respect.
-6-8s: Nora turns her face toward the lens with an emotional, radiant smile and soft breath vapor; Nora says in a breathless, awed whisper: "She's inspecting my stitches... She recognizes the craftsmanship."
+Only Nora speaks English to the camera in her native Laomedeia voice profile; the Neanderthal Old Woman keeps her lips firmly closed.
+0-3s: Having just tended the hearth fire, Nora sits curled beside the warm stones, shivering visibly with cold breath mist as the freezing glacial moisture in her clothing chills her; her teeth chatter faintly.
+3-6s: The Neanderthal Old Woman steps forward across the hearth, holding a thick, heavyweight brown bear pelt; with quiet maternal dignity, she drapes the warm fur blanket securely around Nora's trembling shoulders, patting Nora's shoulder with her thick weathered hand and gently nudging her closer to the radiant heat.
+6-8s: Nora pulls the thick fur tightly around her chest, looking up into the Old Woman's weathered, solemn eyes with deep gratitude; turning her face toward the camera lens with misting breath, Nora whispers in an emotional, breathless voice: "They don't know who I am... but they won't let me freeze."
 PHYSICAL REALISM & BIOMECHANICS:
-Tactile sensation of rough weathered fingertips touching supple smoked suede; authentic warm firelight rim lighting dancing on hair and skin; soft dissipation of breath vapor in cold cave air; subtle breathing rhythm.
+Heavy gravitational drape of thick fur pelt compressing supple suede tunic; tactile friction of coarse bear fur against cold hands; rapid dissipation of breath vapor in dry freezing cave air; shivering amplitude naturally dampening under radiant hearth warmth.
 CAMERA:
-Handheld over-the-shoulder medium close-up, gently shifting focus from the Old Woman's touching hand to Nora's speaking face.
+Handheld medium two-shot with organic human micro-tremors, focusing cleanly on the compassionate physical interaction between the two women.
 AUDIO:
-Gentle crackle of glowing pine embers, soft rustle of suede and pelt, quiet breath, Nora's clear spoken whisper: "She's inspecting my stitches... She recognizes the craftsmanship."
+Crackling pine embers, deep muffled rustle of heavy bear fur, soft breath sigh of thermal relief, Nora's clear spoken whisper: "They don't know who I am... but they won't let me freeze."
 ```
 
-### CẢNH 16 (8s) — Kỹ Thuật Đun Nước Bằng Đá Nung (Stone Boiling)
-- **Mã kịch bản:** A2-05
-- **Góc máy:** Cận cảnh thao tác chế tác trên mặt đất (Macro ground craft shot).
-- **Nhân vật:** Bàn tay Người Phụ Nữ Lớn Tuổi, kẹp gỗ tươi gắp đá, chiếc bát vỏ cây bạch dương, viên đá cuội nung nóng.
-- **Diễn biến:**
-  - `0-2s`: Chiếc bát gấp bằng vỏ cây bạch dương đựng nước trong và lá thông đặt trên phiến đá. Người phụ nữ dùng hai thanh gỗ tươi kẹp chặt viên đá nung nóng đưa tới ngay trên miệng bát.
-  - `2-5s`: Bà hạ viên đá chìm thẳng vào giữa lòng nước; nước bắt đầu sôi sùng sục cục bộ quanh viên đá với bọt khí dày đặc, hoàn toàn không chạm vào mép vỏ cây khô.
-  - `5-8s`: Hơi nước thơm ngát mùi tinh dầu thông bốc lên cuồn cuộn; vỏ cây bạch dương ướt nước hoàn toàn nguyên vẹn không hề bén lửa.
+---
+
+### CẢNH 15 (8.0s) — Cảnh 15: Cứu Hạ Thân Nhiệt (Đặt Bát Nước Vỏ Cây & Gắp Đá Nung Đỏ)
+- **Mã kịch bản:** A2-02-SETUP-BOIL
+- **Thời lượng:** 8.0s
+- **Nhân vật & Refs:** Nora, Nora Body, Old Woman, Cave Interior
+- **Thoại Nora (Dialogue / Laomedeia):** "No pots, no metal. She's pulling glowing river stones from the fire... to boil water!"
+- **Tóm tắt hành động (VN):** Người Phụ Nữ Lớn Tuổi đặt một chiếc bát vỏ cây bạch dương chứa nước suối và lá thông lên phiến đá trước mặt Nora. Bà bới than gắp hòn đá cuội nung đỏ rực từ bếp than nhấc lên đưa về phía bát nước. Nora kinh ngạc trước kỹ thuật sinh tồn đỉnh cao.
 - **FULL PROMPT (OMNI FLASH R2V):**
+
+```text
+Photorealistic prehistoric survival documentary footage.
+SHOT:
+Over-the-shoulder medium close-up shot at hearth level, angled across Nora's fur-draped shoulder toward the Neanderthal Old Woman and the limestone hearth. Handheld camera maintains steady organic micro-movement; strictly NO 180-degree camera flips.
+SETTING:
+Hearthside inside Pech de l'Azé limestone cave, Dordogne, 51,000 years ago during severe Pleistocene glacial winter. Warm flickering orange flames and glowing charcoal bed illuminate flat hearthstones. Strictly NO modern items, NO modern pottery, NO metal.
+CHARACTERS:
+Nora sits wrapped in the dark-brown bear fur pelt, watching intently. The Neanderthal Old Woman sits cross-legged by the hearth, manipulating fire tools. The Old Woman's lips remain firmly closed throughout; zero words from Neanderthals.
+IDENTITY & OUTFIT LOCK (CRITICAL -- match reference images exactly):
+Nora's face and hair match the Nora face reference sheet, and her build and clothing match the Nora Body sheet. Nora has a voluptuous, curvaceous hourglass figure with a prominent high natural bust, tiny narrow waist, and shapely hips. Nora has honey-blonde hair pulled up into a high wavy ponytail tied with a raw leather thong (strictly NO rubber band), with wispy curtain bangs framing both cheeks. Nora wears a form-fitting tailored tunic of smoked golden-tan deer suede, precision-sewn with fine sinew stitches. CHEST LACING LOCK (CRITICAL): Deep plunging V-neckline laced with thick dark-brown leather thongs forming a prominent X-pattern bridge across her cleavage. CORSET BELT LOCK (CRITICAL): Tightly cinched at her tiny waist with a wide 10-12 cm dark-chocolate brown leather belt. SLEEVE CUFF LOCK (CRITICAL): Long fitted sleeves ending cleanly at the wrists; knee-high hide boots worn on her feet. Wrapped around her shoulders is the heavy brown bear fur pelt.
+CRITICAL VLOG SPEECH LOCK:
+Only Nora speaks English to the camera in her native Laomedeia voice profile; the Neanderthal Old Woman keeps her lips firmly closed.
+0-3s: The Old Woman places a rustic folded birch-bark vessel filled with clear melted snow water and fresh green pine needle sprigs firmly onto the flat limestone slab right in front of Nora.
+3-6s: Using a fresh green stick to brush aside glowing pine ash, the Old Woman reveals a fist-sized red-hot glowing river cobble buried in the coals; with two fresh wooden branch tongs, she grips the glowing orange stone securely and lifts it up out of the hearth; intense thermal convection visibly ripples the air around the glowing rock.
+6-8s: The Old Woman smoothly moves the glowing red river cobble through the air toward the birch bark bowl; Nora widens her eyes in amazed realization, tracking the glowing stone with the lens and whispering in an awed, energetic delivery: "No pots, no metal. She's pulling glowing river stones from the fire... to boil water!"
+PHYSICAL REALISM & BIOMECHANICS:
+Thermodynamic heat shimmer distorting background cave walls around the 800°C stone; natural isometric hand grip strength on resilient wooden tongs; glowing amber luminescence casting direct highlights onto hands and stone bowl rim; matching start position for Scene 16 stone boiling.
+CAMERA:
+Handheld over-the-shoulder medium close-up, panning smoothly to track the glowing stone as it moves from the hearth toward the water vessel.
+AUDIO:
+Soft scrape of birch bark bowl on stone slab, dull clinking scrape of hot cobble lifted from coals, faint thermal hiss in cold air, crackle of fire, Nora's clear spoken whisper: "No pots, no metal. She's pulling glowing river stones from the fire... to boil water!"
+```
+
+---
+
+### CẢNH 16 (8.0s) — Cảnh 16: Kỹ Thuật Đun Nước Bằng Đá Nung (Stone Boiling)
+- **Mã kịch bản:** A2-03-STONE-BOIL
+- **Thời lượng:** 8.0s
+- **Nhân vật & Refs:** Old Woman, Cave Interior
+- **Thoại Nora (Dialogue / Laomedeia):** ""
+- **Tóm tắt hành động (VN):** Cận cảnh macro hòn đá nung đỏ thả chìm vào tâm bát nước vỏ cây bạch dương. Nước bùng sôi sục xèo xèo dữ dội, bọt khí nổ lách tách, cột hơi nước thơm mùi thông bốc lên nghi ngút trong không gian hang đá.
+- **FULL PROMPT (OMNI FLASH R2V):**
+
 ```text
 Photorealistic prehistoric survival documentary craft footage.
 SHOT:
@@ -261,15 +145,14 @@ Sharp sizzling hiss as hot stone enters water, steady vigorous bubbling of boili
 
 ---
 
-### CẢNH 17 (8s) — Nora Đón Nhận Bát Nước Thảo Mộc Ấm Áp
-- **Mã kịch bản:** A2-06
-- **Góc máy:** Góc cận ngang ngực bắt trọn sự gắn kết (Medium close-up exchange shot).
-- **Nhân vật:** Nora, Người Phụ Nữ Lớn Tuổi đẩy chiếc bát vỏ cây bốc khói sang.
-- **Diễn biến:**
-  - `0-2s`: Người phụ nữ dùng hai bàn tay thô ráp cẩn thận đẩy chiếc bát vỏ cây bạch dương đang bốc khói nghi ngút về phía Nora.
-  - `2-5s`: Nora hai tay nâng lấy chiếc bát ấm nóng, ghé sát mũi hít hà hương thơm the mát của tinh dầu lá thông, cảm nhận hơi ấm lan tỏa qua lòng bàn tay.
-  - `5-8s`: Nora nhấp một ngụm nhỏ, hơi ấm lan tỏa khắp lồng ngực làm cô khẽ chớp mắt cảm kích, cúi đầu mỉm cười với người phụ nữ Neanderthal.
+### CẢNH 17 (8.0s) — Cảnh 17: Hớp Nước Thảo Mộc Ấm Hồi Sinh Lồng Ngực
+- **Mã kịch bản:** A2-04-DRINK-TEA
+- **Thời lượng:** 8.0s
+- **Nhân vật & Refs:** Nora, Nora Body, Old Woman, Cave Interior
+- **Thoại Nora (Dialogue / Laomedeia):** "Stone-boiled pine water... Hot drink in fifty-one thousand BC."
+- **Tóm tắt hành động (VN):** Người phụ nữ đẩy nhẹ bát nước nóng còn bốc khói qua cho Nora. Nora hai tay bưng bát, hớp một ngụm nước thông ấm nóng làm ấm toàn bộ cơ thể, mỉm cười gật đầu biết ơn người mẹ tiền sử.
 - **FULL PROMPT (OMNI FLASH R2V):**
+
 ```text
 Photorealistic prehistoric survival documentary footage.
 SHOT:
@@ -277,1955 +160,1862 @@ Medium close-up handheld shot framing the cultural exchange of the warm herbal d
 SETTING:
 Hearthside inside Pech de l'Azé cave, warm flickering firelight illuminating hands, faces, and rising steam.
 CHARACTERS:
-Old Woman on right pushes steaming birch bark vessel across flat stone toward Nora on left. Nora sits cross-legged, watching with grateful eyes. The Neanderthals keep their lips firmly closed throughout; zero words from Neanderthals. Only Nora speaks.
+Old Woman on right pushes steaming birch bark vessel across flat stone toward Nora on left. Nora sits cross-legged wrapped in bear fur, watching with grateful eyes. The Neanderthals keep their lips firmly closed throughout; zero words from Neanderthals. Only Nora speaks.
 IDENTITY & OUTFIT LOCK (CRITICAL -- match reference images exactly):
-Nora's face and hair match the Nora face reference sheet, and her build and clothing match the Nora Body sheet. Nora has a voluptuous, curvaceous hourglass figure with a prominent high natural bust, tiny narrow waist, and shapely hips. Nora has honey-blonde hair pulled up into a high wavy ponytail tied with a raw leather thong (strictly NO rubber band), with wispy curtain bangs framing both cheeks. Nora wears a form-fitting tailored tunic of smoked golden-tan deer suede, precision-sewn with fine sinew stitches. CHEST LACING LOCK (CRITICAL): Deep plunging V-neckline laced with thick dark-brown leather thongs forming a prominent X-pattern bridge across her cleavage. CORSET BELT LOCK (CRITICAL): Tightly cinched at her tiny waist with a wide 10-12 cm dark-chocolate brown leather belt. SLEEVE CUFF LOCK (CRITICAL): Long fitted sleeves ending cleanly at the wrists; knee-high hide boots worn on her feet. Strictly NO modern jewelry, NO necklace, NO chain.
-
+Nora's face and hair match the Nora face reference sheet, and her build and clothing match the Nora Body sheet. Nora has a voluptuous, curvaceous hourglass figure with a prominent high natural bust, tiny narrow waist, and shapely hips. Nora has honey-blonde hair pulled up into a high wavy ponytail tied with a raw leather thong (strictly NO rubber band), with wispy curtain bangs framing both cheeks. Nora wears a form-fitting tailored tunic of smoked golden-tan deer suede, precision-sewn with fine sinew stitches. CHEST LACING LOCK (CRITICAL): Deep plunging V-neckline laced with thick dark-brown leather thongs forming a prominent X-pattern bridge across her cleavage. CORSET BELT LOCK (CRITICAL): Tightly cinched at her tiny waist with a wide 10-12 cm dark-chocolate brown leather belt. Wrapped in dark bear fur.
 CRITICAL VLOG SPEECH LOCK:
 Only Nora speaks English to the camera in her native Laomedeia voice profile; all Neanderthals never speak English and keep their lips firmly closed throughout.
-
 0-2s: The Old Woman gently slides the steaming birch bark bowl across flat limestone hearth stone to Nora, nodding with calm dignity.
 2-5s: Nora cups both hands carefully around the warm bark vessel, lifting it toward her face; aromatic pine steam curls around cheeks as she closes eyes to feel soothing warmth.
-5-8s: Nora takes a careful, appreciative sip of the hot pine-needle tea, exhales softly with a warm smile, and inclines her head respectfully to Old Woman.; Nora says in a warm, amazed whisper: "Stone-boiled pine water... Hot drink in fifty-one thousand BC."
+5-8s: Nora takes a careful, appreciative sip of the hot pine-needle tea, exhales softly with a warm smile, and inclines her head respectfully to Old Woman; Nora says in a warm, amazed whisper: "Stone-boiled pine water... Hot drink in fifty-one thousand BC."
 PHYSICAL REALISM & BIOMECHANICS:
 Realistic liquid surface motion inside bark vessel; natural condensation mist against warm cheeks; authentic physical handover of hot object.
 CAMERA:
 Handheld medium close-up, gently adjusting angle to capture the handover and Nora's face.
 AUDIO:
-Soft scrape of birch bark across flat limestone, gentle liquid sip, quiet breath of relief, crackle of nearby hearth fire. Nora's clear spoken voice/whisper: "Stone-boiled pine water... Hot drink in fifty-one thousand BC.".
+Soft scrape of birch bark across flat limestone, gentle liquid sip, quiet breath of relief, crackle of nearby hearth fire, Nora's clear spoken voice/whisper: "Stone-boiled pine water... Hot drink in fifty-one thousand BC."
 ```
 
 ---
 
-### CẢNH 18 (8s) — Kỹ Nghệ Thuộc Da: Dao Nạo Đá Mousterian
-- **Mã kịch bản:** A2-07
-- **Góc máy:** Cận cảnh chi tiết thao tác chế tác (Macro craftsmanship demonstration).
-- **Nhân vật:** Bàn tay Người Phụ Nữ Lớn Tuổi, dao nạo đá lửa Mousterian, tấm da hươu căng trên thanh gỗ tròn.
-- **Diễn biến:**
-  - `0-2s`: Tấm da hươu tươi căng phẳng trên khúc gỗ tròn nhẵn. Tay người phụ nữ cầm dao nạo đá lửa có cạnh cong tu chỉnh tỉ mỉ (Mousterian racloir).
-  - `2-5s`: Bằng những cú đẩy dứt khoát và đều đặn, lưỡi đá cạo sạch từng dải mô mỡ thừa trên mặt trong của tấm da, để lộ lớp da trắng sạch mịn màng.
-  - `5-8s`: Đường nạo chuẩn xác không phạm vào thớ da chính; bà dùng ngón tay cái vuốt kiểm tra độ dày đồng đều của tấm da đã qua xử lý.
+### CẢNH 18 (8.0s) — Cảnh 18: Chuẩn Bị Vũ Khí (Tôi Lửa Giáo Gỗ & Bện Dây Bẫy Thú)
+- **Mã kịch bản:** A2-05-WEAPONS-HEARTH
+- **Thời lượng:** 8.0s
+- **Nhân vật & Refs:** Leader, Strongest, Strongest Spear, Cave Interior
+- **Thoại Nora (Dialogue / Laomedeia):** ""
+- **Tóm tắt hành động (VN):** Người Mạnh Nhất quỳ bên than hồng xoay tròn mũi ngọn giáo gỗ tần bì 2.2m để tôi cứng gỗ. Phía đối diện, Thủ Lĩnh ngồi bện những sợi dây gân thú và vỏ cây bạch dương chắc nịch chuẩn bị cho chuyến đi săn lớn.
 - **FULL PROMPT (OMNI FLASH R2V):**
+
 ```text
 Photorealistic prehistoric survival documentary craft footage.
 SHOT:
-Macro detail craftsmanship shot focusing on Neanderthal hide-scraping technique.
+Medium handheld establishing two-shot at the edge of the hearth, capturing the two Neanderthal hunters intensely preparing heavy hunting weapons. Handheld camera maintains steady documentary presence; strictly NO 180-degree flips.
 SETTING:
-Beside the hearth inside Pech de l'Azé cave. A smooth split-log beam supports a fresh raw red deer hide.
+Central hearth chamber of Pech de l'Azé limestone cave, 51,000 years ago Pleistocene winter. Flickering firelight and glowing coals illuminate flint tools and wooden shafts. Strictly NO modern items.
 CHARACTERS:
-The Old Woman's powerful, weathered hands firmly grip an authentic Mousterian flint convex scraper (racloir) knapped from dark honey-colored flint with delicate edge retouching.
-0-2s: The Old Woman positions the curved working edge of flint scraper at top of taut hide resting over wooden beam.
-2-5s: With rhythmic, muscular downward strokes, she scrapes flint edge firmly along inner flesh side of pelt, peeling away thin strips of tissue and membrane in clean ribbons.
-5-8s: The scraped surface reveals clean, supple, pale dermis leather beneath; her seasoned thumb rubs across cleaned hide, feeling uniform thickness with practiced mastery.
-PHYSICAL REALISM & BIOMECHANICS:
-Realistic frictional drag between sharp retouched flint and fibrous hide; authentic tissue peeling mechanics; visible muscular tension in hands without slipping.
-CAMERA:
-Locked handheld macro shot focused sharply on contact point between flint edge and hide.
-AUDIO:
-Rhythmic, crisp raspy scraping of sharp flint against taut hide, faint peeling sound of membrane, subtle creak of wooden beam. Strictly NO spoken dialogue.
-```
-
----
-
-### CẢNH 19 (8s) — Sức Mạnh Bàn Tay & Giải Phẫu Neanderthal
-- **Mã kịch bản:** A2-08
-- **Góc máy:** Cận cảnh giải phẫu cẳng tay và bàn tay (Anatomical macro close-up).
-- **Nhân vật:** Cẳng tay gân guốc và bàn tay dầy dặn của Người Phụ Nữ Lớn Tuổi khi thao tác dao cạo đá.
-- **Diễn biến:**
-  - `0-2s`: Ống kính quay cận cảnh cẳng tay người phụ nữ khi bà siết chặt dao cạo đá: các bó cơ cẳng tay nở nang gân guốc nổi rõ dưới ánh lửa ấm.
-  - `2-5s`: Khớp ngón tay to bè và ngón cái khỏe khoắn tạo lực kẹp kìm (power grip) cực lớn, tì miết lưỡi đá vào thớ da một cách nhịp nhàng.
-  - `5-8s`: Bà lật tấm da kiểm tra, những vết sẹo nhỏ trên da tay kể câu chuyện về một cuộc đời lao động sinh tồn bền bỉ.
-- **FULL PROMPT (OMNI FLASH R2V):**
-```text
-Photorealistic prehistoric survival documentary anatomical footage.
-SHOT:
-Macro close-up anatomical study of Neanderthal forearm musculature and grip mechanics.
-SETTING:
-Hearthside workshop area inside Pech de l'Azé cave, warm side-raking firelight accentuating muscle definition.
-CHARACTERS:
-The frame highlights Old Woman's forearm and hand gripping stone scraper. True Neanderthal anatomical characteristics: broad distal phalanges, spatulate fingertips, thick weathered skin, and heavily developed flexor muscle ridges on forearm.
-0-2s: As she bears down on hide, dense muscular cords of forearm flex prominently under warm amber firelight, displaying immense isometric grip power.
-2-5s: Her broad thumb and index finger maintain an immovable power grip on stone flake, guiding each cut with effortless mechanical efficiency.
-5-8s: She eases tension, rotating wrist smoothly to inspect leather; natural scars and calluses reflect decades of survival mastery.
-PHYSICAL REALISM & BIOMECHANICS:
-Physiologically accurate tendon tension and skin shift under heavy load; realistic power-grip force distribution across robust Neanderthal phalanges.
-CAMERA:
-Close-up with shallow depth of field, holding sharp focus on flexing flexor muscles and knuckled grip.
-AUDIO:
-Rhythmic raspy scrape of stone on leather, soft breath of exertion, warm hearth crackle. Strictly NO spoken dialogue.
-```
-
----
-
-### CẢNH 20 (8s) — Đục Lỗ Bằng Dùi Xương & Xỏ Dây Gân
-- **Mã kịch bản:** A2-09
-- **Góc máy:** Cận cảnh chi tiết công cụ xương và may da (Macro craft shot).
-- **Nhân vật:** Bàn tay Người Phụ Nữ Lớn Tuổi, dùi xương tuần lộc vót nhọn, sợi gân hươu khô, tấm da thuộc dày.
-- **Diễn biến:**
-  - `0-2s`: Người phụ nữ dùng một chiếc dùi xương tuần lộc vót nhọn ấn mạnh xoay tròn, đục một lỗ tròn nhỏ gọn gàng qua mép tấm da dày.
-  - `2-5s`: Bà rút dùi xương ra, luồn đầu sợi gân hươu khô đã chuốt cứng qua lỗ vừa đục, ngón tay kéo căng sợi chỉ gân.
-  - `5-8s`: Mũi xỏ gân chắc chắn tạo thành một mối ghép da hoàn hảo, minh chứng kỹ thuật chế tác áo quần nhiều lớp để chống chọi giá lạnh.
-- **FULL PROMPT (OMNI FLASH R2V):**
-```text
-Photorealistic prehistoric survival documentary craft footage.
-SHOT:
-Macro close-up shot focused on leather-piercing and sinew-threading technique.
-SETTING:
-Beside limestone hearth inside cave; smooth flat work stone under hide edge.
-CHARACTERS:
-Old Woman's weathered hands operating a polished bone awl carved from reindeer metapodial bone.
-0-2s: With firm downward pressure and deliberate quarter-twist, Old Woman punches sharp polished bone awl cleanly through thick tanned leather border.
-2-5s: She withdraws bone awl, leaving a neat perforation, and threads a stiffened strand of dried animal sinew directly through fresh hole.
-5-8s: Her calloused fingers pull sinew cord taut, locking two overlapping leather edges in a tight, durable seam engineered to resist sub-zero drafts.
-PHYSICAL REALISM & BIOMECHANICS:
-Elastic deformation and puncture resistance of tanned leather under bone awl pressure; realistic friction resistance as sinew passes through leather hole.
-CAMERA:
-Locked macro framing on leather seam, bone point, and sinew thread.
-AUDIO:
-Crisp puncture pop as bone pierces hide, soft dry squeak of sinew pulling through leather, background fire embers crackling. Strictly NO spoken dialogue.
-```
-
----
-
-### CẢNH 21 (8s) — Nora Đối Chiếu Mũi Khâu Hiện Đại & Tiền Sử
-- **Mã kịch bản:** A2-10
-- **Góc máy:** Cận cảnh hai bàn tay bên vạt áo (Close-up comparative craft shot).
-- **Nhân vật:** Bàn tay Nora chỉ vào vạt áo da của mình, bàn tay Người Phụ Nữ nâng tấm da vừa khâu.
-- **Diễn biến:**
-  - `0-2s`: Nora đưa vạt áo da hươu của mình lại gần, chỉ vào đường may tinh xảo khâu bằng chỉ gân dọc đường sườn áo.
-  - `2-5s`: Người phụ nữ Neanderthal đặt đường khâu da vừa hoàn thiện cạnh vạt áo của Nora, hai người cùng đối chiếu kỹ thuật may đo.
-  - `5-8s`: Một nụ cười nhẹ xuất hiện trên gương mặt của cả hai người phụ nữ; một khoảnh khắc kết nối văn hóa sâu sắc giữa hai thời kỳ.
-- **FULL PROMPT (OMNI FLASH R2V):**
-```text
-Photorealistic prehistoric survival documentary footage.
-SHOT:
-Close-up handheld comparative shot framing both women's hands and two stitched garments.
-SETTING:
-Hearthside inside Pech de l'Azé cave, golden amber light illuminating leather textures.
-CHARACTERS:
-Nora on left and Old Woman on right, hands meeting above flat work stone. The Neanderthals keep their lips firmly closed throughout; zero words from Neanderthals. Only Nora speaks.
-IDENTITY & OUTFIT LOCK (CRITICAL -- match reference images exactly):
-Nora's face and hair match the Nora face reference sheet, and her build and clothing match the Nora Body sheet. Nora has a voluptuous, curvaceous hourglass figure with a prominent high natural bust, tiny narrow waist, and shapely hips. Nora has honey-blonde hair pulled up into a high wavy ponytail tied with a raw leather thong (strictly NO rubber band), with wispy curtain bangs framing both cheeks. Nora wears a form-fitting tailored tunic of smoked golden-tan deer suede, precision-sewn with fine sinew stitches. CHEST LACING LOCK (CRITICAL): Deep plunging V-neckline laced with thick dark-brown leather thongs forming a prominent X-pattern bridge across her cleavage. CORSET BELT LOCK (CRITICAL): Tightly cinched at her tiny waist with a wide 10-12 cm dark-chocolate brown leather belt. SLEEVE CUFF LOCK (CRITICAL): Long fitted sleeves ending cleanly at the wrists; knee-high hide boots worn on her feet. Strictly NO modern jewelry, NO necklace, NO chain.
-
-CRITICAL VLOG SPEECH LOCK:
-Only Nora speaks English to the camera in her native Laomedeia voice profile; all Neanderthals never speak English and keep their lips firmly closed throughout.
-
-0-2s: Nora gently brings hem seam of her tailored deer suede tunic forward, pointing to fine braided sinew stitches along seam.
-2-5s: Old Woman lays freshly stitched overlapping hide border directly beside Nora's garment, visually comparing robust Mousterian seam with Nora's tailored stitching.
-5-8s: Both women look up at each other; a subtle, knowing smile touches their eyes in mutual appreciation of skilled craftsmanship across millennia.; Nora says in an impressed whisper: "Look at this seam... Their flint scrapers are sharper than surgical steel."
-PHYSICAL REALISM & BIOMECHANICS:
-Rich textural contrast between supple smoked suede and thick grease-treated pelt; natural, unforced hand gestures conveying shared technical understanding.
-CAMERA:
-Handheld close-up with gentle rack focus from leather stitches up to expressive eyes of both women.
-AUDIO:
-Soft rustle of supple leather, quiet mutual breath, gentle hearth crackle. Nora's clear spoken voice/whisper: "Look at this seam... Their flint scrapers are sharper than surgical steel.".
-```
-
----
-
-### CẢNH 22 (8s) — Người Mạnh Nhất Tôi Lửa Mũi Giáo Gỗ
-- **Mã kịch bản:** A2-11
-- **Góc máy:** Cận cảnh vừa bên mép bếp than hồng (Medium close-up at hearth edge).
-- **Nhân vật:** Người Mạnh Nhất (~22t, thợ săn cơ bắp), ngọn giáo gỗ tần bì dài 2.2m, đống than hồng.
-- **Diễn biến:**
-  - `0-2s`: Người Mạnh Nhất quỳ một gối bên mép than hồng, hai bàn tay chắc nịch xoay đều đầu nhọn của ngọn giáo gỗ tần bì ngay trên lớp than rực đỏ.
-  - `2-5s`: Dưới nhiệt độ cao, thớ gỗ đầu giáo sẫm màu lại, khô quắt và bốc làn khói mỏng; lớp gỗ ngoài trở nên cứng cáp và chịu ẩm vượt trội.
-  - `5-8s`: Thợ săn rút mũi giáo khỏi than, dùng ngón tay cái miết thử độ cứng bề mặt, ánh mắt tự tin kiểm tra vũ khí phòng thủ.
-- **FULL PROMPT (OMNI FLASH R2V):**
-```text
-Photorealistic prehistoric survival documentary craft footage.
-SHOT:
-Medium close-up handheld shot at hearth border, focusing on wooden spear tip being fire-hardened.
-SETTING:
-Beside roaring limestone hearth inside Pech de l'Azé cave. Glowing red charcoal bed casting intense orange underlighting.
-CHARACTERS:
-The Strongest (~22), robust young Neanderthal hunter with broad bare shoulders, heavy brow ridge, and dark shaggy hair tied back with rawhide thongs. Lips firmly closed.
+The Strongest (~22 years old, heavily muscled young Neanderthal hunter with immense shoulder width and thick forearms) kneels beside glowing coals holding his 2.2m ash-wood spear. The Leader (~35 years old, rugged mature chieftain) sits on a stone block opposite him braiding sinew cordage. Both men keep lips firmly closed; zero dialogue.
 OBJECTS IN PLACE:
-A long 2.2-metre ash-wood thrusting spear with tapered tip held steadily over coals.
-0-2s: Kneeling by glowing embers, Strongest steadily rotates tapered tip of heavy ash-wood spear inches above radiant red coals.
-2-5s: Under intense heat, outer wood darkens and dries, moisture evaporating into faint wisp of wood smoke as outer surface visibly densifies and hardens against moisture.
-5-8s: He lifts spear tip from coals, rubbing calloused thumb firmly along darkened wooden point to test its hardened surface with quiet satisfaction.
+Heavy 2.2-meter fire-hardened wooden spear with tapered pointed tip held hovering inches above glowing coals. Bundles of plant bast fiber and dry sinew strips.
+0-3s: Kneeling by radiant coals, the Strongest steadily rotates the tapered fire-hardened tip of his heavy ash-wood spear inches above the coals; intense radiant heat gently chars the outer wood fibers into hardened dark density without igniting flames.
+3-6s: In the background across the hearth, the Leader rapidly rolls two twisted cords of soaked sinew and plant fiber across his thigh, testing the high tensile strength with a sharp tug of his thick hands.
+6-8s: The Strongest lifts the spear upright, sighting along the perfectly straight wooden shaft with a sharp, determined hunter's gaze; the dark-charred spear tip gleams in the ember light.
 PHYSICAL REALISM & BIOMECHANICS:
-Authentic wood pyrolytic drying: surface darkens and moisture steams out, becoming denser and moisture-resistant; NO artificial metallic properties; authentic rotational hand coordination.
+Thermal charring of dense ash-wood under radiant heat; no open flame on spear; immense muscular definition in Neanderthal shoulders and forearms; organic wood grain and tool scraper marks.
 CAMERA:
-Low-angle handheld shot with radiant firelight reflections across hunter's muscular shoulders.
+Handheld medium shot panning slightly from spear tip rotation to Leader's cord braiding and back to spear shaft.
 AUDIO:
-Soft hiss of evaporating sap from heated wood, dry crackle of charcoal embers, hunter's deep steady breathing. Strictly NO spoken dialogue.
+Dull hiss of wood moisture drying in coals, rhythmic rustle of twisted sinew fibers, crackling pine embers, deep steady breathing. Strictly NO spoken dialogue.
 ```
 
 ---
 
-### CẢNH 23 (8s) — Thủ Lĩnh Bện Dây Bẫy Bằng Vỏ Cây & Gân Thú
-- **Mã kịch bản:** A2-12
-- **Góc máy:** Cận cảnh thao tác bện dây của Thủ Lĩnh (Close-up cordage craft shot).
-- **Nhân vật:** Thủ Lĩnh (~35t), bó sợi vỏ cây bồ đề, sợi gân hươu khô, cuộn dây bện chắc chắn.
-- **Diễn biến:**
-  - `0-2s`: Thủ Lĩnh ngồi trên phiến đá, hai bàn tay thô ráp xoay vặn hai dải sợi vỏ cây ngâm dẻo và gân hươu theo kỹ thuật xoắn ngược (reverse-twist).
-  - `2-5s`: Ông ngậm một đầu dây chắc nịch bằng hàm răng khỏe khoắn, tay kéo căng và bện chặt từng nút xoắn tạo nên sợi dây thừng dẻo dai.
-  - `5-8s`: Thủ Lĩnh dùng hai tay giật mạnh thử sức bền kéo (tensile strength) của sợi dây; sợi dây căng cứng không hề đứt, thể hiện kỹ nghệ bện dây bậc thầy.
+### CẢNH 19 (8.0s) — Cảnh 19: Báo Động Kho Thịt Cạn Kiệt & Gió Bão Kéo Đến
+- **Mã kịch bản:** A2-06-MEAT-CRISIS
+- **Thời lượng:** 8.0s
+- **Nhân vật & Refs:** Nora, Nora Body, Leader, Meat Cache, Cave Interior
+- **Thoại Nora (Dialogue / Laomedeia):** "The meat cache is almost bare. In minus twenty... an empty stomach means death."
+- **Tóm tắt hành động (VN):** Thủ Lĩnh bước lại kiểm tra giàn treo thịt trong hốc đá: chỉ còn vài khúc xương xẩu khô khốc. Ông nhìn ra vòm cửa hang nơi gió rít từng cơn báo hiệu bão tuyết sắp tới. Nora hướng máy quay theo dõi, nhận ra nguy cơ chết đói cận kề.
 - **FULL PROMPT (OMNI FLASH R2V):**
+
+```text
+Photorealistic prehistoric survival documentary footage.
+SHOT:
+Medium handheld tracking shot inside the cave recess, following the Leader inspecting the dwindling meat cache, then rack-focusing back to Nora's worried reaction.
+SETTING:
+Sheltered side alcove near Pech de l'Azé cave mouth. Wooden poles lashed together hold sparse strips of desiccated meat; most hanging thongs are empty. Gloomy overcast daylight filters from the cave mouth mixed with howling wind.
+CHARACTERS:
+The Leader stands inspecting the sparse cache. Nora stands three metres back wrapped in bear fur, holding the camera lens aimed toward him. The Leader keeps lips firmly closed; only Nora speaks.
+IDENTITY & OUTFIT LOCK (CRITICAL -- match reference images exactly):
+Nora matches the Nora face and Body sheets exactly. Voluptuous hourglass figure, honey-blonde high ponytail with leather thong and curtain bangs. Golden-tan deer suede tunic with plunging laced V-neckline and dark corset belt, wrapped in dark brown bear fur.
+CRITICAL VLOG SPEECH LOCK:
+Only Nora speaks English to the camera in her native Laomedeia voice profile; the Neanderthal Leader keeps his lips firmly closed.
+0-3s: The Leader reaches up with his thick calloused hand to touch a lonely dried deer bone hanging from the wooden drying rack; the rest of the meat hooks are completely bare and empty.
+3-6s: The Leader turns his rugged head toward the cave entrance, listening intently to the rising howl of freezing blizzard wind outside; his weathered brow furrows with grim survival urgency.
+6-8s: Nora turns the camera lens slightly back toward herself, cold breath mist curling in the draft; Nora whispers in an urgent, serious tone: "The meat cache is almost bare. In minus twenty... an empty stomach means death."
+PHYSICAL REALISM & BIOMECHANICS:
+Desiccated texture of stripped animal bones; natural sway of empty cordage in cave draft; cold exterior wind buffeting loose strands of hair; realistic worry in eyes.
+CAMERA:
+Handheld tracking from Leader's inspection to Nora's speaking face with subtle draft tremors.
+AUDIO:
+Rising howl of freezing wind outside cave mouth, dry clatter of bone against wood, quiet tense breathing, Nora's clear spoken whisper: "The meat cache is almost bare. In minus twenty... an empty stomach means death."
+```
+
+---
+
+### CẢNH 20 (8.0s) — Cảnh 20: Lệnh Xuất Kích Đi Săn & Nora Quyết Tâm Xin Theo
+- **Mã kịch bản:** A2-07-HUNT-CALL
+- **Thời lượng:** 8.0s
+- **Nhân vật & Refs:** Nora, Nora Body, Leader, Strongest, Strongest Spear, Cave Interior
+- **Thoại Nora (Dialogue / Laomedeia):** "They're hunting before the blizzard hits. And I'm not staying behind."
+- **Tóm tắt hành động (VN):** Thủ Lĩnh nhấc ngọn giáo dài, dậm mạnh cán gỗ xuống nền đá hô hiệu lệnh săn bắn. Người Mạnh Nhất lập tức đứng dậy vào vị trí. Nora siết chặt dây đai bốt da, quyết tâm bước theo sau đoàn săn để chứng minh bản thân.
+- **FULL PROMPT (OMNI FLASH R2V):**
+
+```text
+Photorealistic prehistoric survival documentary footage.
+SHOT:
+Low-angle handheld dynamic shot, capturing the decisive call to hunt inside the limestone cave. Handheld camera captures decisive forward movement with natural footfall bounce.
+SETTING:
+Main chamber near cave mouth of Pech de l'Azé, cold glacial daylight encroaching on warm firelight.
+CHARACTERS:
+The Leader stands tall, holding a heavy flint-tipped spear. Beside him, the Strongest grips his 2.2m fire-hardened ash spear. Nora stands determined in the foreground, cinching her belt and boots. Lips firmly closed for Neanderthals; only Nora speaks.
+IDENTITY & OUTFIT LOCK (CRITICAL -- match reference images exactly):
+Nora matches face and Body sheets. Voluptuous figure, honey-blonde ponytail, golden suede tunic, deep plunging laced V-neckline, chocolate belt, knee-high boots securely laced. Free hand holds nothing.
+CRITICAL VLOG SPEECH LOCK:
+Only Nora speaks English to camera in her native Laomedeia voice profile; Neanderthals communicate through guttural physical commands without English.
+0-3s: The Leader steps decisively toward the cave exit, slamming the butt of his heavy spear shaft onto the limestone floor with an authoritative thud and gesturing toward the frosted valley outside.
+3-6s: The Strongest instantly shoulders his 2.2m wooden spear and moves into marching formation; Nora bends down quickly to tighten the leather cord around her right knee-high hide boot, rising with resolute focus.
+6-8s: As both hunters stride toward the threshold, Nora falls into step behind them, turning her determined face toward the lens with a fast confident delivery: "They're hunting before the blizzard hits. And I'm not staying behind."
+PHYSICAL REALISM & BIOMECHANICS:
+Heavy acoustic thud of dense hardwood impacting limestone bedrock; kinetic energy of hunters rising into unified forward march; practical kinetic action of lacing boot cord tight against snow leakage.
+CAMERA:
+Low-angle handheld following Nora as she steps forward in stride behind the hunters toward the bright frosted cave mouth.
+AUDIO:
+Resonant wood-on-stone thud, crunch of gravel under hide boots, rustle of heavy furs, Nora's fast confident spoken voice: "They're hunting before the blizzard hits. And I'm not staying behind."
+```
+
+---
+
+
+# HỒI 3: CUỘC ĐI SĂN BÒ RỪNG THẢO NGUYÊN KHỔNG LỒ STEPPE BISON (CẢNH 21 — 38)
+
+---
+
+### CẢNH 21 (8.0s) — Cảnh 21: Bước Ra Thảo Nguyên Tuyết Dordogne Lộng Gió
+- **Mã kịch bản:** A3-01-STEP-OUT
+- **Thời lượng:** 8.0s
+- **Nhân vật & Refs:** Nora, Nora Body, Leader, Strongest, Pech Valley
+- **Thoại Nora (Dialogue / Laomedeia):** "Minus fifteen. The valley is silent, but they're already tracking."
+- **Tóm tắt hành động (VN):** Cả nhóm rời khỏi cửa hang đá vôi, bước ra sườn dốc băng tuyết lộng gió của thung lũng Dordogne. Thủ Lĩnh và Người Mạnh Nhất đi trước dò đường, Nora theo sau giơ ống kính bao quát cảnh thảo nguyên băng giá hùng vĩ.
+- **FULL PROMPT (OMNI FLASH R2V):**
+
+```text
+Photorealistic prehistoric survival documentary footage.
+SHOT:
+Handheld tracking shot moving alongside and slightly behind Nora as the hunting party descends the frosted limestone talus slope into the wide glacial valley. Camera has organic footfall bounce; strictly NO 180-degree flips.
+SETTING:
+Rugged limestone cliff base of Pech de l'Azé opening out onto the sweeping, windswept Dordogne valley, 51,000 years ago Pleistocene winter. Vast frozen tundra-steppe stretching to frosted pine ridges under heavy overcast pewter skies. Freezing wind swirls loose snow crystals across the ground.
+CHARACTERS:
+Ahead, the Leader and the Strongest stride with heavy rhythmic steps, spears held diagonally forward. Nora follows three paces behind in her tailored golden-tan deer suede tunic and dark leggings, breath billowing in white clouds. Neanderthals keep lips firmly closed; only Nora speaks.
+IDENTITY & OUTFIT LOCK (CRITICAL -- match reference images exactly):
+Nora matches face and Body sheets exactly. Voluptuous hourglass figure, honey-blonde high ponytail with leather thong and curtain bangs. Golden-tan deer suede tunic with plunging laced V-neckline and dark corset belt, knee-high boots crunching in crusty snow. Free hand empty.
+CRITICAL VLOG SPEECH LOCK:
+Only Nora speaks English to camera in her native Laomedeia voice profile; hunters communicate solely through silent hand signals.
+0-3s: The hunting party strides down the frosted gravel slope; the Leader holds his hand low, signaling absolute silence as they reach the valley floor.
+3-6s: Nora navigates the uneven frozen ground with surefooted strides, the freezing glacial headwind blowing her golden ponytail and tattered tunic fringes back; vast pine forests stretch into the distance.
+6-8s: Nora turns her chilled, rosy-cheeked face toward the lens with a fast, hushed vlog whisper: "Minus fifteen. The valley is silent, but they're already tracking."
+PHYSICAL REALISM & BIOMECHANICS:
+Deep crust fracturing under hide boots with realistic snow compression; wind aerodynamic drag fluttering suede fringes; atmospheric optical density of sub-zero ice fog.
+CAMERA:
+Handheld dynamic tracking shot capturing realistic forward momentum over uneven glacial terrain.
+AUDIO:
+Loud crunch of frozen snow under boots, continuous low moan of glacial wind, soft breath exhalations, Nora's clear spoken whisper: "Minus fifteen. The valley is silent, but they're already tracking."
+```
+
+---
+
+### CẢNH 22 (8.0s) — Cảnh 22: Lần Theo Vết Chân Móng Guốc & Hơi Ấm Trên Tuyết
+- **Mã kịch bản:** A3-02-TRACKS
+- **Thời lượng:** 8.0s
+- **Nhân vật & Refs:** Nora, Nora Body, Leader, Pech Valley
+- **Thoại Nora (Dialogue / Laomedeia):** "Steppe bison tracks. Still fresh. Still warm."
+- **Tóm tắt hành động (VN):** Thủ Lĩnh ngồi xổm xuống một hố tuyết sâu, dùng ngón tay to thô ráp miết vào vết móng guốc đôi khổng lồ của bò bison. Một làn hơi ấm mỏng mảnh bốc lên từ tuyết nén, báo hiệu đàn thú đang ở rất gần.
+- **FULL PROMPT (OMNI FLASH R2V):**
+
+```text
+Photorealistic prehistoric survival documentary footage.
+SHOT:
+Low-angle handheld ground close-up, framing the Leader examining animal tracks in the snow, with Nora leaning in from the side to capture the detail. Handheld camera maintains steady documentary focus; strictly NO 180-degree flips.
+SETTING:
+Wind-scoured snow clearing at the edge of dwarfed pine woodland in Dordogne valley. Deep snowpack showing fresh, sharply defined heavy animal hoof prints.
+CHARACTERS:
+The Leader kneels on one knee in thick furs, studying the trail. Nora crouches beside him in her golden suede tunic, holding her camera lens steady. Leader's lips firmly closed throughout; zero words from Neanderthals.
+IDENTITY & OUTFIT LOCK (CRITICAL -- match reference images exactly):
+Nora matches face and Body sheets. Voluptuous figure, honey-blonde ponytail, golden suede tunic, plunging laced V-neckline, chocolate belt, long sleeves to wrist. Empty free hand.
+CRITICAL VLOG SPEECH LOCK:
+Only Nora speaks English to camera in her native Laomedeia voice profile; the Leader points with calloused fingers.
+0-3s: The Leader crouches beside a massive, twenty-centimetre split-hoof depression deeply stamped into the hard snow crust, brushing away loose powder with gentle, methodical precision.
+3-6s: He touches the compressed inner mud rim of the footprint; a faint, delicate wisp of thermal vapor curls up from the fresh track in the sub-zero air, indicating body heat passed minutes ago; the Leader looks up, nodding curtly toward the downwind ridge.
+6-8s: Nora leans the camera lens close to the giant footprint, her breath misting across the frame; Nora whispers in an urgent, hushed delivery: "Steppe bison tracks. Still fresh. Still warm."
+PHYSICAL REALISM & BIOMECHANICS:
+Fine granular fracture of frozen snow crust around footprint edges; subtle wisp of thermal vapor dissipating in cold air; natural tactile reading of ground by veteran tracker.
+CAMERA:
+Low-angle handheld ground macro smoothly tilting up from the deep hoof depression to the Leader's eyes and Nora's face.
+AUDIO:
+Crisp scrape of leather mittens on frozen snow, muffled wind through pine needles, Nora's hushed tense whisper: "Steppe bison tracks. Still fresh. Still warm."
+```
+
+---
+
+### CẢNH 23 (8.0s) — Cảnh 23: Phát Hiện Đàn Bò Bison Thảo Nguyên Qua Rặng Thông
+- **Mã kịch bản:** A3-03-HERD-SIGHTING
+- **Thời lượng:** 8.0s
+- **Nhân vật & Refs:** Nora, Nora Body, Steppe Bison, Pech Valley
+- **Thoại Nora (Dialogue / Laomedeia):** "Look at the size of them... Steppe bison. One ton of pure muscle."
+- **Tóm tắt hành động (VN):** Góc nhìn POV nấp sau cành thông phủ tuyết: Bên dưới lòng thung lũng, một đàn bò bison thảo nguyên khổng lồ lông dày sẫm màu đang cào tuyết tìm cỏ khô. Con đực đầu đàn to lớn vượt trội với bờm dày và cặp sừng cong vút.
+- **FULL PROMPT (OMNI FLASH R2V):**
+
+```text
+Photorealistic prehistoric survival documentary wildlife footage.
+SHOT:
+Secret voyeuristic handheld POV shot, peeping through frosted pine branches from cover, capturing the wild herd in the valley below with natural foreground foliage framing. Handheld camera has subtle stealth micro-tremors; strictly NO 180-degree flips.
+SETTING:
+Ridge edge overlooking a wide sheltered snow basin in Dordogne valley, 51,000 years ago. Frosted pine boughs with snow clusters in the immediate foreground; golden pale winter sunlight glints off snowdrifts below.
+CHARACTERS:
+A wild herd of four massive Steppe Bison (Bison priscus) grazes sixty metres below in the snow hollow. Nora crouches in cover in the foreground corner; only her golden suede shoulder and whisper are present.
+IDENTITY & OUTFIT LOCK (CRITICAL -- match reference images exactly):
+Nora's shoulder and high honey-blonde ponytail visible in extreme lower frame corner. Free hand holds nothing.
+CREATURE ACCURACY (CRITICAL -- Steppe Bison):
+Magnificent Pleistocene Steppe Bison with massive humped shoulders, dense dark-brown shaggy winter coat, long dark throat mane, and enormous wide-sweeping curved horns spreading outward and up.
+0-3s: Looking through the pine needles, the massive lead Steppe Bison bull sweeps its enormous lowered head side to side, powerful hooves violently pawing away fifty centimetres of packed snow to reach dry tundra grasses.
+3-6s: The massive bull lifts its gigantic shaggy head, blowing dense, twin plumes of white steam from broad nostrils into the cold air; its muscular hump ripples under dense frost-tipped fur.
+6-8s: Nora peers through the needles, awe in her wide eyes; Nora whispers in a breathless, awe-struck tone: "Look at the size of them... Steppe bison. One ton of pure muscle."
+PHYSICAL REALISM & BIOMECHANICS:
+Megafauna biomechanics: immense kinetic mass shifting during snow pawing; twin high-velocity turbulent steam jets pulsing from nostrils; wind rustling heavy coarse guard hairs.
+CAMERA:
+Handheld telephoto perspective through organic pine bough framing, focusing sharply on the massive alpha bison in the snow hollow.
+AUDIO:
+Distant dull thud of heavy hooves on snow, deep guttural snort of bison, soft whistle of wind through pine needles, Nora's breathless awed whisper: "Look at the size of them... Steppe bison. One ton of pure muscle."
+```
+
+---
+
+### CẢNH 24 (8.0s) — Cảnh 24: Hạ Thấp Đội Hình Bò Rạp Ngược Chiều Gió
+- **Mã kịch bản:** A3-04-STALKING
+- **Thời lượng:** 8.0s
+- **Nhân vật & Refs:** Nora, Nora Body, Leader, Strongest, Pech Valley
+- **Thoại Nora (Dialogue / Laomedeia):** "Downwind crawl. If they smell us, we lose everything."
+- **Tóm tắt hành động (VN):** Thủ Lĩnh và Người Mạnh Nhất hạ thấp trọng tâm, bò rạp mình trên nền tuyết lạnh buốt nép sau gờ đá vôi để ngược chiều gió. Nora bám sát phía sau, tuyết bột phủ mờ vạt áo và mặt đất.
+- **FULL PROMPT (OMNI FLASH R2V):**
+
+```text
+Photorealistic prehistoric survival documentary footage.
+SHOT:
+Low-angle handheld ground-level tracking shot, moving forward alongside the hunters as they stalk on elbows and knees through deep powdery snow. Handheld camera has organic crawling vibration; strictly NO 180-degree flips.
+SETTING:
+Limestone ridgeline sloping down into the bison basin, Dordogne valley, Pleistocene winter. Jagged frost-rimed boulders provide low concealment against the open snow plain. Freezing headwind blows directly into the hunters' faces.
+CHARACTERS:
+The Leader leads the crawl, spear held flat in one hand against the snow. Beside him crawls the Strongest, shoulders tense with lethal discipline. Nora crawls right behind them in her golden-tan deer suede tunic and hide leggings. Neanderthals keep lips firmly closed; zero words.
+IDENTITY & OUTFIT LOCK (CRITICAL -- match reference images exactly):
+Nora matches face and Body sheets. Voluptuous figure, honey-blonde ponytail, golden suede tunic, plunging laced V-neckline, chocolate belt, long sleeves, knees compressing powder snow. Free hand empty.
+CRITICAL VLOG SPEECH LOCK:
+Only Nora speaks English to camera in her native Laomedeia voice profile; hunters communicate solely by dipping shoulders.
+0-3s: The Leader and Strongest crawl with smooth, predatory fluidity over the frozen limestone outcrop, keeping their bodies below the boulder crest, spear shafts sliding silently along the snow.
+3-6s: Freezing headwind gusts directly into their faces, blowing Nora's golden bangs across her forehead; she slides forward on her knees, keeping the lens shielded close to her chest.
+6-8s: Nora pauses behind a frosted rock, turning her tense face toward the lens, breathing softly; Nora whispers in a tense, rapid murmur: "Downwind crawl. If they smell us, we lose everything."
+PHYSICAL REALISM & BIOMECHANICS:
+Viscous drag of crawling through thirty centimetres of powder snow; headwind friction keeping human scent trail behind; tense isometric muscle contractions in legs and shoulders.
+CAMERA:
+Low-angle ground-level tracking shot sliding forward in snow ruts behind the crawling hunters.
+AUDIO:
+Soft muffled shluck of knees pressing into deep powder snow, steady rush of cold headwind, quiet tense breathing, Nora's urgent rapid whisper: "Downwind crawl. If they smell us, we lose everything."
+```
+
+---
+
+### CẢNH 25 (8.0s) — Cảnh 25: Cận Cảnh Con Bison Đầu Đàn Cảnh Giác Đầy Uy Lực
+- **Mã kịch bản:** A3-05-ALPHA-CLOSEUP
+- **Thời lượng:** 8.0s
+- **Nhân vật & Refs:** Steppe Bison, Pech Valley
+- **Thoại Nora (Dialogue / Laomedeia):** ""
+- **Tóm tắt hành động (VN):** Cận cảnh con bò bison đầu đàn khổng lồ đột ngột dừng ăn, ngẩng đầu hít gió. Ánh mắt hổ phách hung tợn, cặp sừng sứt mẻ vì những trận giác đấu, cơ bắp cuồn cuộn dưới lớp lông rậm rạp sẵn sàng nghênh chiến.
+- **FULL PROMPT (OMNI FLASH R2V):**
+
+```text
+Photorealistic prehistoric survival documentary wildlife footage.
+SHOT:
+Cinematic medium close-up handheld shot from low ground level, tightly framing the towering alpha Steppe Bison bull as it senses danger. Camera holds steady with subtle natural telephoto breathing; strictly NO 180-degree flips.
+SETTING:
+Open snow basin at base of limestone ridge, Dordogne, 51,000 years ago Pleistocene winter. Swirling snow flurries around the animal's massive bulk.
+CHARACTERS:
+One towering male Steppe Bison (Bison priscus), standing two metres tall at the shoulder hump. Strictly NO humans in this shot; animal dominance.
+CREATURE ANATOMY (CRITICAL):
+Enormous skull covered in matted dark-brown woolly curls, two sweeping sharp horns spanning 1.5 metres with battle-scarred tips, prominent shoulder hump packed with dense muscle, long dark beard hanging from lower jaw encrusted with ice droplets.
+0-2s: The massive bull suddenly freezes mid-chew, jerking its enormous horned head high into the icy wind, eyes wide and amber-rimmed.
+2-5s: The bull flares its broad black nostrils, violently expelling a double burst of turbulent white steam into the air; its muscular hump ripples as it shifts immense weight onto its front hooves.
+5-8s: Lowering its chin slightly, the bull emits a deep, sub-audible infrasonic chest rumble that vibrates the surrounding snow crystals, sweeping its lethal horn tips in a sharp defensive arc.
+PHYSICAL REALISM & BIOMECHANICS:
+Accurate megafauna momentum and anatomy; ice droplets clinging to beard hair; turbulent steam expulsion dispersing rapidly in dry sub-zero atmosphere; deep muscle twitch under heavy winter hide.
+CAMERA:
+Low-angle telephoto medium close-up emphasizing the terrifying scale and raw physical power of the bull.
+AUDIO:
+Explosive nasal snort, deep vibrating chest growl that shakes the ground, dull clink of ice droplets on horn, whistling wind. Strictly NO spoken dialogue.
+```
+
+---
+
+### CẢNH 26 (8.0s) — Cảnh 26: Chiến Thuật Neanderthal: Tách Cánh Dồn Vào Bẫy Rãnh Băng
+- **Mã kịch bản:** A3-06-FLANKING
+- **Thời lượng:** 8.0s
+- **Nhân vật & Refs:** Nora, Nora Body, Leader, Strongest, Strongest Spear, Pech Valley
+- **Thoại Nora (Dialogue / Laomedeia):** "The pincer trap. They're herding it toward the iced crevasse."
+- **Tóm tắt hành động (VN):** Thủ Lĩnh ra hiệu tay dứt khoát: Người Mạnh Nhất lách nhanh sang cánh phải, Thủ Lĩnh vòng sang cánh trái, khéo léo dồn con thú về phía một khe rãnh băng trơn trượt nơi thú lớn sẽ mất ma sát không thể quay đầu.
+- **FULL PROMPT (OMNI FLASH R2V):**
+
+```text
+Photorealistic prehistoric survival documentary footage.
+SHOT:
+Handheld dynamic wide-angle tracking shot, capturing the coordinated tactical pincer movement of the two Neanderthal hunters encircling the prey. Handheld camera maintains tactical tracking pace; strictly NO 180-degree flips.
+SETTING:
+Lower limestone terrain of Dordogne basin, where the snowfield narrows into a frozen ravine flanked by steep slippery ice banks.
+CHARACTERS:
+The Strongest breaks into a low, silent crouched sprint toward the right flank, heavy spear leveled. The Leader moves rapidly along the left ridge. Nora tracks their movement from elevated center cover. Hunters keep lips firmly closed; zero words.
+IDENTITY & OUTFIT LOCK (CRITICAL -- match reference images exactly):
+Nora matches face and Body sheets. Voluptuous figure, honey-blonde ponytail, golden suede tunic, plunging laced V-neckline, chocolate belt, long sleeves. Empty free hand.
+CRITICAL VLOG SPEECH LOCK:
+Only Nora speaks English to camera in her native Laomedeia voice profile; hunters operate like a pack of wolves.
+0-3s: The Leader gives a sharp, downward chop with his hand; instantly, the Strongest bounds forward across the right snowdrifts, keeping low and parallel to the ravine.
+3-6s: The Leader advances boldly along the left flank, tapping his spear shaft against his hide shield with rhythmic tactical clicks, deliberately channeling the bison toward the icy ravine dead-end.
+6-8s: Nora pans her lens between both flanking hunters, her heart pounding with adrenaline; Nora whispers in an urgent, rapid cadence: "The pincer trap. They're herding it toward the iced crevasse."
+PHYSICAL REALISM & BIOMECHANICS:
+Tactical flanking geometry; coordinated human pack hunting strategy; hunters utilizing topography to neutralize 1-ton weight disadvantage; snow churning under sprinting boots.
+CAMERA:
+Handheld tracking shot panning between left and right flanks, maintaining dynamic spatial relationship between hunters and ravine.
+AUDIO:
+Muffled rhythmic snow sprints, sharp deliberate wooden tap of spear against shield, rising wind, Nora's urgent rapid whisper: "The pincer trap. They're herding it toward the iced crevasse."
+```
+
+---
+
+### CẢNH 27 (8.0s) — Cảnh 27: Con Bò Bison Phát Hiện Mối Nguy & Dậm Móng Gầm Rống
+- **Mã kịch bản:** A3-07-ALARM
+- **Thời lượng:** 8.0s
+- **Nhân vật & Refs:** Steppe Bison, Pech Valley
+- **Thoại Nora (Dialogue / Laomedeia):** ""
+- **Tóm tắt hành động (VN):** Bị dồn vào khe hẹp, con bò bison đầu đàn nhận ra cái bẫy. Nó cào mạnh móng guốc nứt toác lớp băng, gầm lên một tiếng rống man dại rung chuyển vách đá, đuôi dựng đứng chuẩn bị tung đòn húc hủy diệt.
+- **FULL PROMPT (OMNI FLASH R2V):**
+
+```text
+Photorealistic prehistoric survival documentary wildlife footage.
+SHOT:
+Low-angle dynamic handheld shot, capturing the alpha Steppe Bison turning violently as it realizes it is trapped in the icy draw. Handheld camera catches realistic ground shake tremors; strictly NO 180-degree flips.
+SETTING:
+Icy limestone gully entrance in Dordogne valley, sheer frozen banks on both sides.
+CHARACTERS:
+The 1-ton alpha Steppe Bison bull stands centered, turning broadside then facing forward aggressively. Strictly NO humans in frame; pure creature fury.
+CREATURE ACTIONS (CRITICAL):
+Enormous bull lowers head, sharp horns gleaming, tail stiffened straight up in aggressive warning display.
+0-2s: Realizing its retreat path is blocked by steep ice walls, the bull pivots violently, its front hooves smashing deep gouges into the frozen crust and sending fractured ice shards flying.
+2-5s: The bull lowers its massive horned skull to knee-level, scraping both front hooves backward in rapid succession, throwing plumes of snow behind it, tail rigid in the air.
+5-8s: The bull unleashes a deafening, terrifying guttural roar that echoes off the limestone cliffs, vibrating the air as it locks its bloodshot eyes directly forward.
+PHYSICAL REALISM & BIOMECHANICS:
+Newtonian force transmission: massive hoof strikes pulverizing 5cm surface ice into aerosolized powder; tail erection as authentic bovine threat signal; heavy momentum swing during rapid pivot.
+CAMERA:
+Low-angle dynamic handheld with sharp rotational micro-jolts synced to each aggressive hoof stomp.
+AUDIO:
+Deafening deep guttural roar echoing through valley, sharp crack of ice breaking under hooves, heavy expulsion of breath. Strictly NO spoken dialogue.
+```
+
+---
+
+### CẢNH 28 (8.0s) — Cảnh 28: Cú Lao Thục Mạng Kinh Hoàng: Quán Tính 1 Tấn Băng Qua Tuyết
+- **Mã kịch bản:** A3-08-THE-CHARGE
+- **Thời lượng:** 8.0s
+- **Nhân vật & Refs:** Nora, Nora Body, Steppe Bison, Pech Valley
+- **Thoại Nora (Dialogue / Laomedeia):** "HE'S CHARGING! RIGHT AT US--!"
+- **Tóm tắt hành động (VN):** Con quái thú 1 tấn lồng lộn lao thục mạng về phía gờ đá nơi Nora đang đứng. Quán tính khủng khiếp khiến mặt đất rung chuyển, tuyết bay mù mịt. Nora thét lên hoảng loạn lùi sát lưng vào vách đá.
+- **FULL PROMPT (OMNI FLASH R2V):**
+
+```text
+Photorealistic prehistoric survival documentary action footage.
+SHOT:
+Terrifying handheld point-of-view perspective from behind a waist-high limestone boulder, capturing the massive 1-ton Steppe Bison charging directly toward the camera at full gallop. Handheld camera shakes violently with incoming ground shock; strictly NO 180-degree flips.
+SETTING:
+Narrowing snow draw in Dordogne valley, deep snow churning as the beast charges.
+CHARACTERS:
+The Steppe Bison charges in full gallop. Nora's free left hand braces desperately against the icy limestone boulder in the lower frame, golden suede sleeve visible. Nora's terrified face briefly enters frame corner screaming.
+IDENTITY & OUTFIT LOCK (CRITICAL -- match reference images exactly):
+Nora matches face and Body sheets. Voluptuous figure, honey-blonde ponytail flying in wind, golden suede tunic, deep plunging laced V-neckline. Free hand grips rock; selfie arm holds camera tight.
+CRITICAL VLOG SPEECH LOCK:
+Nora screams in raw cracking panic using her native Laomedeia voice profile: "HE'S CHARGING! RIGHT AT US--!"
+0-3s: The 1-ton Steppe Bison explodes forward into a terrifying full gallop, massive head held low with horns sweeping forward like battering rams, closing the distance at ferocious speed.
+3-6s: The ground beneath Nora's feet visibly trembles as the beast's thundering hooves obliterate the snowdrifts, throwing a blinding rooster-tail of powder snow ten feet high behind it.
+6-8s: Nora braces hard against the freezing boulder, camera view violently shuddering with the shockwaves; Nora screams at the top of her lungs in pure terror: "HE'S CHARGING! RIGHT AT US--!"
+PHYSICAL REALISM & BIOMECHANICS:
+Massive momentum p = m*v; 1,000 kg charging mass displacing huge snow volumes; secondary ear and mane lag behind skull motion; authentic ground vibrational shock.
+CAMERA:
+Handheld action shot shaking violently with heavy footfall ground resonance, locked on the charging horned skull closing in fast.
+AUDIO:
+Thunderous seismic drumming of hooves on frozen ground, roaring wind, furious animal grunting, Nora's authentic cracking scream: "HE'S CHARGING! RIGHT AT US--!"
+```
+
+---
+
+### CẢNH 29 (8.0s) — Cảnh 29: Đòn Nghi Binh Can Trường Của Thủ Lĩnh
+- **Mã kịch bản:** A3-09-FEINT-INTERCEPT
+- **Thời lượng:** 8.0s
+- **Nhân vật & Refs:** Leader, Steppe Bison, Pech Valley
+- **Thoại Nora (Dialogue / Laomedeia):** ""
+- **Tóm tắt hành động (VN):** Ngay trước khi con thú đâm vào gờ đá, Thủ Lĩnh từ bên cánh dậm mạnh chân lao ra hét lớn, vung ngọn giáo gỗ đâm sượt qua sống mũi con bò bison. Con thú giật thót, trượt chân bẻ ngoặt hướng lao.
+- **FULL PROMPT (OMNI FLASH R2V):**
+
+```text
+Photorealistic prehistoric survival documentary action footage.
+SHOT:
+Dynamic medium-wide action tracking shot, capturing the Leader's fearless tactical interception of the charging beast. Handheld camera captures fast lateral action; strictly NO 180-degree flips.
+SETTING:
+Snow-covered ravine corner in Dordogne valley, loose powder swirling in the air.
+CHARACTERS:
+The Leader leaps boldly into the path of the charging Steppe Bison, clad in rugged fur pelt, brandishing his spear. The 1-ton bison veers violently. Neanderthals keep lips firmly closed; raw guttural war yell only.
+0-2s: Inches before the charging bison reaches the boulder, the Leader bounds directly into its peripheral field, stomping the snow and brandishing his spear with immense courage.
+2-5s: The Leader thrusts his spear shaft sharply across the beast's snout without committing his body; startled by the sudden wooden barrier, the bison flinches, throwing its massive head sideways.
+5-8s: The 1-ton beast loses traction on the icy limestone underlayer, its hooves sliding sideways (friction mu approaching 0), violently deflecting its momentum away from the boulder and exposing its broad ribcage.
+PHYSICAL REALISM & BIOMECHANICS:
+Physics of momentum deflection: sudden lateral evasive torque; immense kinetic skid marks carved in snow; zero-traction sideways slide of heavy hooves on ice.
+CAMERA:
+Dynamic handheld tracking laterally following the bison's deflected slide, keeping Leader's fearless posture in sharp focus.
+AUDIO:
+Deep guttural Neanderthal war bellow, furious bovine snort, screech of hooves grating across hidden ice slab, snow spraying. Strictly NO English dialogue.
+```
+
+---
+
+### CẢNH 30 (8.0s) — Cảnh 30: Cú Đâm Quyết Định Bằng Giáo Gỗ Của Người Mạnh Nhất
+- **Mã kịch bản:** A3-10-FATAL-THRUST
+- **Thời lượng:** 8.0s
+- **Nhân vật & Refs:** Strongest, Strongest Spear, Steppe Bison, Pech Valley
+- **Thoại Nora (Dialogue / Laomedeia):** ""
+- **Tóm tắt hành động (VN):** Chớp lấy thời cơ khi con thú phơi bày mạng sườn, Người Mạnh Nhất lao tới với sức mạnh phi thường, dùng hai tay dồn toàn bộ trọng lượng cơ thể phóng mũi giáo gỗ tần bì 2.2m tôi lửa cắm sâu vào mạng sườn con bison.
+- **FULL PROMPT (OMNI FLASH R2V):**
+
+```text
+Photorealistic prehistoric survival documentary action climax footage.
+SHOT:
+Intense low-angle medium close-up action shot, capturing the decisive close-quarters spear thrust of the Neanderthal hunter. Handheld camera tracks the explosive forward thrust; strictly NO 180-degree flips.
+SETTING:
+Narrow icy draw of Dordogne valley, snow clouds swirling from the deflected slide.
+CHARACTERS:
+The Strongest, muscular arms flexed to maximum capacity, executing the historic Neanderthal close-quarter thrusting kill. Steppe Bison grimacing in shock. Lips firmly closed; deep exertion breath only.
+OBJECTS IN PLACE:
+2.2-meter fire-hardened ash-wood thrusting spear entering the bison's thoracic flank behind the shoulder.
+0-2s: As the bison's sideways slide slows, the Strongest surges forward in a two-handed power stance, planting his back boot deep into the frozen turf for maximum leverage.
+2-5s: With immense biomechanical force generated from hips and shoulders, he drives the fire-hardened tip of the heavy ash spear smoothly and deeply between the fifth and sixth ribs of the beast.
+5-8s: The heavy wooden spear shaft flexes under tremendous physical compression before driving deep; the giant bison lets out a heavy, shuddering exhale as its forward motion is completely halted.
+PHYSICAL REALISM & BIOMECHANICS:
+Accurate Neanderthal close-quarters thrusting biomechanics (not throwing; two-handed direct thrust); ash-wood structural elastic deflection under 200kg axial force; penetration through thick hide and muscle into vital organs.
+CAMERA:
+Low-angle handheld following the explosive forward drive of the hunter's arms and torso, capturing the devastating impact.
+AUDIO:
+Explosive grunt of intense human exertion, wet heavy thud of wooden spear penetrating thick hide, deep shuddering groan from the wounded beast. Strictly NO English dialogue.
+```
+
+---
+
+### CẢNH 31 (8.0s) — Cảnh 31: Vật Lộn Sinh Tử: Ghì Chặt Cán Giáo Gỗ Bằng Cơ Bắp
+- **Mã kịch bản:** A3-11-STRUGGLE
+- **Thời lượng:** 8.0s
+- **Nhân vật & Refs:** Strongest, Strongest Spear, Steppe Bison, Pech Valley
+- **Thoại Nora (Dialogue / Laomedeia):** ""
+- **Tóm tắt hành động (VN):** Con quái thú quằn quại trong tuyệt vọng, lắc mạnh thân mình hòng hất ngọn giáo ra. Người Mạnh Nhất cắn chặt răng, bắp tay gân guốc gồng lên như đá tảng, ghì chặt cán giáo ép con thú xuống nền tuyết.
+- **FULL PROMPT (OMNI FLASH R2V):**
+
+```text
+Photorealistic prehistoric survival documentary action footage.
+SHOT:
+Close-up handheld shot focusing on the brutal physical contest between the dying megafauna and the immensely powerful Neanderthal hunter. Handheld camera maintains visceral vibration; strictly NO 180-degree flips.
+SETTING:
+Snowdrifts in Dordogne ravine, blood droplets speckling the white snow.
+CHARACTERS:
+The Strongest holds the spear with iron grip, veins bulging across his massive forearms and neck. The dying Steppe Bison thrashes with diminishing power. Lips firmly closed.
+0-3s: The wounded bison violently thrashes its massive horned head, attempting to dislodge the spear; the Strongest leans his entire body weight over the ash shaft, absorbing the bucking forces.
+3-6s: Thick muscular cords of the hunter's forearms and deltoids strain against the violent spasms; his hide boots dig deep trenches into the snow to maintain bedrock traction.
+6-8s: The violent thrashing slows as the beast's front legs buckle under its weight; the Strongest maintains relentless downward pressure until the animal sinks to its knees.
+PHYSICAL REALISM & BIOMECHANICS:
+Immense isometric grip strength of Neanderthal hand anatomy; violent mechanical counter-balance damping megafauna spasms; dark oxygenated blood misting on pristine snow surface.
+CAMERA:
+Visceral close-up handheld shifting between hunter's strained, determined face and his white-knuckled grip on the bending wooden spear shaft.
+AUDIO:
+Deep laboured wheezing of dying bison, heavy strained grunts of the hunter, wet crunch of snow under shifting boots. Strictly NO spoken dialogue.
+```
+
+---
+
+### CẢNH 32 (8.0s) — Cảnh 32: Quái Thú Gục Ngã Trên Nền Băng Tuyết
+- **Mã kịch bản:** A3-12-COLLAPSE
+- **Thời lượng:** 8.0s
+- **Nhân vật & Refs:** Nora, Nora Body, Leader, Strongest, Steppe Bison, Pech Valley
+- **Thoại Nora (Dialogue / Laomedeia):** "He's down. They did it... They actually brought down a giant."
+- **Tóm tắt hành động (VN):** Con bò bison thảo nguyên khổng lồ đổ rầm xuống nền tuyết, hất tung một làn bụi tuyết trắng xóa. Không gian trở nên tĩnh lặng chỉ còn tiếng thở dốc kiệt sức. Nora bước ra từ sau gờ đá, bàng hoàng trước kỳ tích.
+- **FULL PROMPT (OMNI FLASH R2V):**
+
+```text
+Photorealistic prehistoric survival documentary footage.
+SHOT:
+Medium-wide handheld tracking shot slowly approaching the fallen giant, capturing the emotional gravity of the kill. Camera stabilizes smoothly as the violence ends; strictly NO 180-degree flips.
+SETTING:
+The floor of the snowy draw in Dordogne valley. The massive 1-ton Steppe Bison lies completely still on its side in a deep snow depression, steam rising softly from its body heat.
+CHARACTERS:
+The Strongest stands back breathing heavily, wiping sweat from his brow with forearm. The Leader approaches solemnly. Nora steps forward from behind the boulder, eyes wide with awe. Lips closed for Neanderthals.
+IDENTITY & OUTFIT LOCK (CRITICAL -- match reference images exactly):
+Nora matches face and Body sheets. Voluptuous figure, honey-blonde ponytail, golden suede tunic with laced plunging V-neckline, chocolate belt, long sleeves. Breath fogging in cold air.
+CRITICAL VLOG SPEECH LOCK:
+Only Nora speaks English to camera in her native Laomedeia voice profile; hunters stand in solemn respectful silence.
+0-3s: The massive Steppe Bison lets out its final deep breath; a soft puff of steam drifts away, and its colossal horned head settles peacefully into the powdery snow.
+3-6s: The Strongest slowly withdraws the spear, his chest heaving with exhaustion; the Leader walks up, placing a reverent hand on the dead beast's massive shoulder hump.
+6-8s: Nora approaches slowly, looking from the colossal beast to the two Neanderthal men in profound disbelief; Nora whispers to the lens: "He's down. They did it... They actually brought down a giant."
+PHYSICAL REALISM & BIOMECHANICS:
+Slow thermal dissipation of 1-ton body heat into freezing air; deep crater depression created in snow by heavy animal body; physical post-adrenaline tremolo in human breathing.
+CAMERA:
+Handheld tracking slowly moving forward with Nora as she approaches the fallen bison, capturing both hunters and the prey.
+AUDIO:
+Final fading breath of bison, deep heavy panting of the hunters, soft sigh of cold wind, Nora's hushed awe-struck voice: "He's down. They did it... They actually brought down a giant."
+```
+
+---
+
+### CẢNH 33 (8.0s) — Cảnh 33: Nghi Thức Tạ Ơn Con Mồi Đầy Tôn Kính
+- **Mã kịch bản:** A3-13-GRATITUDE
+- **Thời lượng:** 8.0s
+- **Nhân vật & Refs:** Nora, Nora Body, Leader, Steppe Bison, Pech Valley
+- **Thoại Nora (Dialogue / Laomedeia):** "No cheering. No gloating. Just profound, silent gratitude."
+- **Tóm tắt hành động (VN):** Thủ Lĩnh quỳ xuống bên đầu con bò bison, nhắm mắt và đặt bàn tay thô ráp lên vầng trán con thú, khẽ thì thầm một câu cổ ngữ ngắn ngủi tạ ơn sự hy sinh của tự nhiên. Nora chứng kiến chiều sâu tâm linh của người tiền sử.
+- **FULL PROMPT (OMNI FLASH R2V):**
+
+```text
+Photorealistic prehistoric survival documentary spiritual footage.
+SHOT:
+Medium close-up handheld shot at ground level, framing the Leader kneeling respectfully beside the head of the fallen Steppe Bison. Handheld camera holds steady reverent focus; strictly NO 180-degree flips.
+SETTING:
+Beside the fallen bison in the snow draw of Dordogne valley, quiet winter daylight.
+CHARACTERS:
+The Leader kneels reverently, eyes closed, hand resting gently between the giant horns. Nora kneels two paces back, observing with deep emotion. Neanderthal lips stay closed; zero English spoken by Neanderthal.
+IDENTITY & OUTFIT LOCK (CRITICAL -- match reference images exactly):
+Nora matches face and Body sheets. Voluptuous figure, honey-blonde ponytail, golden suede tunic, laced V-neckline, chocolate belt. Respectful demeanor.
+CRITICAL VLOG SPEECH LOCK:
+Only Nora speaks English to camera in her native Laomedeia voice profile; the Leader performs sacred hunter's silence.
+0-3s: The Leader rests his weathered, bare palm flat against the frosted woolly forehead of the giant bison, bowing his head in deep contemplative stillness.
+3-6s: A single brief guttural whisper escapes his chest—an ancient ritual of thanksgiving to the spirit of the animal that will sustain his clan through winter.
+6-8s: Nora watches the moment with moist eyes, turning slightly toward her lens with quiet admiration; Nora whispers softly: "No cheering. No gloating. Just profound, silent gratitude."
+PHYSICAL REALISM & BIOMECHANICS:
+Authentic hunter-gatherer spiritual relationship with prey; delicate snow flurries settling on still fur; contrast of rough human skin against coarse bison hair.
+CAMERA:
+Handheld medium close-up, gently shifting focus between Leader's respectful hand on the horns to Nora's moved expression.
+AUDIO:
+Faint whisper of wind, soft crunch of settling snow, Nora's gentle respectful whisper: "No cheering. No gloating. Just profound, silent gratitude."
+```
+
+---
+
+### CẢNH 34 (8.0s) — Cảnh 34: Kỹ Nghệ Xẻ Thịt Thần Tốc Bằng Dao Đá Mousterian
+- **Mã kịch bản:** A3-14-BUTCHERING
+- **Thời lượng:** 8.0s
+- **Nhân vật & Refs:** Leader, Strongest, Steppe Bison, Pech Valley
+- **Thoại Nora (Dialogue / Laomedeia):** ""
+- **Tóm tắt hành động (VN):** Hai thợ săn lập tức lấy ra những lưỡi dao đá lửa Mousterian tam giác sắc như dao mổ, thoăn thoắt rạch những đường dứt khoát xẻ nhanh các tảng thịt đùi lớn còn bốc khói nhiệt giữa trời băng giá.
+- **FULL PROMPT (OMNI FLASH R2V):**
+
 ```text
 Photorealistic prehistoric survival documentary craft footage.
 SHOT:
-Close-up handheld shot focusing on Leader's hands and mouth braiding cordage.
+Macro detail handheld shot focusing on the prehistoric butchery technique using sharp flint tools. Handheld camera captures precise slicing motions; strictly NO 180-degree flips.
 SETTING:
-Workshop area near cave hearth, warm side-raking firelight highlighting fibers and weathered facial features.
+Beside the fallen bison carcass on the clean snowfield of Dordogne valley.
 CHARACTERS:
-Neanderthal Leader (~35), broad barrel-chested man with prominent brow ridge, weathered tanned skin, dark beard stubble, draped in heavy deer pelt. Lips firmly closed except when holding cord with teeth.
-0-2s: Seated on flat limestone, Leader rapidly rolls two bundles of soaked plant bast fiber and dried sinew between palms in reverse-twist motion.
-2-5s: He grips one end of cord firmly with strong incisors to maintain tension, twisting two plies together into a tight, durable cord.
-5-8s: Releasing cord from teeth, he wraps both ends around fists and delivers a powerful, steady pull to test tensile strength; cord holds firm without snapping.
+The Leader and Strongest work with rapid, practiced efficiency, slicing thick quarters of rich dark-red meat. Lips firmly closed throughout.
+OBJECTS IN PLACE:
+Dark grey triangular flint biface blades (Mousterian scrapers and knives) with razor-sharp retouched edges.
+0-3s: The Leader slices a razor-sharp Mousterian flint blade through the thick hide along the rear leg; the sharp stone cuts through tough tendon and fat with effortless surgical precision.
+3-6s: The Strongest uses his heavy flint chopper to separate a massive twenty-kilo hindquarter; rich crimson meat steams faintly in the freezing winter air as it is laid onto a clean hide sheet.
+6-8s: Both hunters work against the clock, slicing thick steaks of vital fat and muscle; their hands are coated in clean animal fat that protects their skin from frostbite.
 PHYSICAL REALISM & BIOMECHANICS:
-Authentic Neanderthal paramasticatory behavior (using front teeth as third hand for processing); realistic fiber tension and high tensile strength of composite sinew-bast cordage.
+Flint blade cutting mechanics: micro-serrated silica edge slicing connective tissue cleaner than steel; thermal vapor venting from fresh 38°C muscle tissue into -15°C cold air; animal fat barrier physics on hands.
 CAMERA:
-Steady handheld close-up following rolling rhythm of hands and taut pull test.
+Steady handheld macro close-up focusing tightly on the blade entering meat and the steaming muscle fibers.
 AUDIO:
-Dry fibrous friction of rolling plant fibers, teeth clicking on cordage, firm grunted exhalation during pull test, background fire crackle. Strictly NO spoken dialogue.
+Sharp rhythmic slicing sounds through sinew and hide, dull wet thud of meat quarters onto leather, rapid breathing. Strictly NO spoken dialogue.
 ```
 
 ---
 
-### CẢNH 24 (8s) — Khám Phá Góc Ngủ Lót Da Gấu & Cành Thông
-- **Mã kịch bản:** A2-13
-- **Góc máy:** Toàn cảnh vừa góc ngủ gia đình (Medium shot of sleeping recess).
-- **Nhân vật:** Nora quan sát góc ngủ trong ngách hang; lớp cành thông tươi, da gấu dày, đá giữ nhiệt đặt cạnh ổ ngủ.
-- **Diễn biến:**
-  - `0-2s`: Nora bước lại gần một ngách hang khuất gió, nơi bộ tộc bố trí khu vực ngủ ấm áp tránh luồng gió lạnh từ cửa hang.
-  - `2-5s`: Một lớp cành thông tươi dày dặn được trải đều trên nền đá vôi, phủ bên trên là những tấm da gấu và da tuần lộc dày cộp; các hòn đá giữ nhiệt ấm áp đặt an toàn cạnh mép ổ ngủ tỏa nhiệt êm dịu.
-  - `5-8s`: Nora dùng mu bàn tay chạm vào lớp lông gấu mềm mại, cảm nhận hơi ấm và sự cách nhiệt tuyệt vời giữa mùa đông băng giá.
+### CẢNH 35 (8.0s) — Cảnh 35: Buộc Chặt Các Bọc Thịt Vào Da Thú Để Vác
+- **Mã kịch bản:** A3-15-PACKING
+- **Thời lượng:** 8.0s
+- **Nhân vật & Refs:** Nora, Nora Body, Leader, Strongest, Meat Cache, Pech Valley
+- **Thoại Nora (Dialogue / Laomedeia):** "Every scrap of fat and meat wrapped tight. Winter survival secured."
+- **Tóm tắt hành động (VN):** Người Mạnh Nhất cuộn những tảng thịt lớn vào các tấm da hươu khô, dùng dây gân thú buộc chặt lại thành những kiện hàng vác vai. Nora phụ giúp giữ dây gân, toàn bộ bầy đàn đều hợp lực.
 - **FULL PROMPT (OMNI FLASH R2V):**
+
 ```text
 Photorealistic prehistoric survival documentary footage.
 SHOT:
-Medium handheld tracking shot revealing sleeping alcove inside sheltered cave recess.
+Medium handheld two-shot capturing the rapid packing and securing of the meat bundles in the snow. Handheld camera maintains brisk working rhythm; strictly NO 180-degree flips.
 SETTING:
-Wind-sheltered alcove deep inside Pech de l'Azé cave, 51,000 years ago. Limestone alcove, warm residual glow from distant hearth.
+Snowfield beside the butchered bison in Dordogne valley, sky turning gloomy slate grey.
 CHARACTERS:
-Nora enters from left in golden-tan suede outfit, exploring domestic shelter area. Lips firmly closed throughout.
-OBJECTS IN PLACE:
-A thick bed of fresh pine boughs arranged on cave floor, covered by heavy brown bear and reindeer pelts. Several smooth river stones warmed by hearth are placed beside sleeping nests, radiating residual heat safely.
-
+The Strongest wraps heavy meat slabs into dried deer hide. Nora kneels holding the tension on a thick braided sinew cord. The Leader hoists the first pack. Lips closed for Neanderthals; only Nora speaks.
 IDENTITY & OUTFIT LOCK (CRITICAL -- match reference images exactly):
-Nora's face and hair match the Nora face reference sheet, and her build and clothing match the Nora Body sheet. Nora has a voluptuous, curvaceous hourglass figure with a prominent high natural bust, tiny narrow waist, and shapely hips. Nora has honey-blonde hair pulled up into a high wavy ponytail tied with a raw leather thong (strictly NO rubber band), with wispy curtain bangs framing both cheeks. Nora wears a form-fitting tailored tunic of smoked golden-tan deer suede, precision-sewn with fine sinew stitches. CHEST LACING LOCK (CRITICAL): Deep plunging V-neckline laced with thick dark-brown leather thongs forming a prominent X-pattern bridge across her cleavage. CORSET BELT LOCK (CRITICAL): Tightly cinched at her tiny waist with a wide 10-12 cm dark-chocolate brown leather belt. SLEEVE CUFF LOCK (CRITICAL): Long fitted sleeves ending cleanly at the wrists; knee-high hide boots worn on her feet. Strictly NO modern jewelry, NO necklace, NO chain.
-0-2s: Nora walks slowly toward sheltered sleeping alcove, taking in thoughtful domestic layout of the Neanderthal home.
-2-5s: Camera pans across sleeping nest: thick layer of green pine boughs provides thermal insulation from frozen stone, covered with dense thick-furred pelts, with warm hearth stones placed safely along perimeter radiating gentle heat.
-5-8s: Nora kneels and gently runs back of hand across dense brown fur, feeling dry, cozy insulation protecting clan from freezing nights.
-PHYSICAL REALISM & BIOMECHANICS:
-Authentic thermal insulation setup: pine boughs prevent cold conduction from rock; warm stones placed safely beside bedding prevent fire hazards; realistic compression of furs under touch.
-CAMERA:
-Handheld medium shot gliding smoothly downward as Nora kneels beside bedding.
-AUDIO:
-Soft rustle of dry pine boughs and fur pelts, quiet reverberation of footsteps on cave floor, distant muffled wind outside. Strictly NO spoken dialogue.
-```
-
----
-
-### CẢNH 25 (8s) — Nora Chia Sẻ Cảm Xúc Bên Tổ Ấm Tiền Sử
-- **Mã kịch bản:** A2-14
-- **Góc máy:** Selfie qua vai góc rộng 0.5x (Over-the-shoulder wide selfie vlog shot).
-- **Nhân vật:** Nora (tiền cảnh bên trái nhìn vào ống kính), không gian bếp lửa và các thành viên bộ tộc (hậu cảnh 2/3 bên phải).
-- **Diễn biến:**
-  - `0-2s`: Nora giữ máy quay ngang ngực quay selfie góc rộng, cô chiếm 1/3 khung hình bên trái, hậu cảnh là bếp lửa ấm áp và bộ tộc đang thư giãn.
-  - `2-5s`: Cô nhìn thẳng vào ống kính với ánh mắt xúc động và nụ cười ấm áp, môi khép chặt hoàn toàn trong khi giọng dẫn chuyện tự sự được lồng ở hậu kỳ.
-  - `5-8s`: Nora khẽ liếc mắt nhìn lại phía bếp lửa đầy trân trọng, rồi quay lại nhìn khán giả; một cảm giác bình yên kỳ diệu giữa Kỷ Băng Hà.
-- **FULL PROMPT (OMNI FLASH R2V):**
-```text
-Photorealistic prehistoric survival documentary selfie vlog footage.
-SHOT:
-Handheld over-the-shoulder wide-angle selfie vlog shot; Nora occupies left third held at chest level; warm hearth and resting clan occupy right two-thirds in soft focus.
-SETTING:
-Inside Pech de l'Azé cave, five metres from hearth. Warm glowing firelight illuminates Nora's face and adult clan behind her.
-CHARACTERS:
-Nora in foreground. Behind her, Leader, Strongest, Old Woman, and Hunter Woman rest peacefully near fire. The Neanderthals keep their lips firmly closed throughout; zero words from Neanderthals. Only Nora speaks. Perspective comes from her own outstretched arm; her free hand is empty at chest level.
-IDENTITY & OUTFIT LOCK (CRITICAL -- match reference images exactly):
-Nora's face and hair match the Nora face reference sheet, and her build and clothing match the Nora Body sheet. Nora has a voluptuous, curvaceous hourglass figure with a prominent high natural bust, tiny narrow waist, and shapely hips. Nora has honey-blonde hair pulled up into a high wavy ponytail tied with a raw leather thong (strictly NO rubber band), with wispy curtain bangs framing both cheeks. Nora wears a form-fitting tailored tunic of smoked golden-tan deer suede, precision-sewn with fine sinew stitches. CHEST LACING LOCK (CRITICAL): Deep plunging V-neckline laced with thick dark-brown leather thongs forming a prominent X-pattern bridge across her cleavage. CORSET BELT LOCK (CRITICAL): Tightly cinched at her tiny waist with a wide 10-12 cm dark-chocolate brown leather belt. SLEEVE CUFF LOCK (CRITICAL): Long fitted sleeves ending cleanly at the wrists; knee-high hide boots worn on her feet. Strictly NO modern jewelry, NO necklace, NO chain.
-
+Nora matches face and Body sheets. Voluptuous figure, honey-blonde ponytail, golden suede tunic, laced V-neckline, chocolate belt, long sleeves. Hands working on the cord.
 CRITICAL VLOG SPEECH LOCK:
-Only Nora speaks English to the camera in her native Laomedeia voice profile; all Neanderthals never speak English and keep their lips firmly closed throughout.
-
-0-2s: Opening in steady chest-level selfie perspective, Nora looks directly into the lens with quiet wonder, warm amber firelight dancing across her eyes.
-2-5s: Nora maintains calm, deeply emotional gaze into camera with lips firmly closed throughout, communicating intimate reflection intended for post-production narration.
-5-8s: She glances gently over shoulder at resting clan members around hearth, then returns gaze to lens with a soft respectful smile of belonging.; Nora says in a soft, reflective whisper: "No shouts, no hostility. Just pure rhythm of survival. This cave kept them alive for millennia."
+Only Nora speaks English to camera in her native Laomedeia voice profile; hunters nod in mutual cooperation.
+0-3s: Nora firmly pulls a thick twisted sinew cord taut while the Strongest binds a massive bundle of rich bison meat securely inside a folded deer hide pack.
+3-6s: The Strongest ties a rock-solid slip knot, testing the load with a powerful tug; the Leader hoists an identical forty-kilo meat bundle onto his broad shoulders.
+6-8s: Nora rises to her feet, brushing snow from her knees, breathless but exhilarated as she addresses the lens: "Every scrap of fat and meat wrapped tight. Winter survival secured."
 PHYSICAL REALISM & BIOMECHANICS:
-Natural subtle handheld breathing micro-tremors; authentic 0.5x optical wide perspective without fisheye curvature; stable arm lock keeping framing consistent.
+Tension mechanics of braided sinew cords stretching and locking under load; heavy gravitational mass of meat bundles shifting; cooperative human teamwork.
 CAMERA:
-Handheld selfie perspective fixed at constant arm distance, maintaining single-perspective purity with no camera flips.
+Handheld medium shot following the knot tying and hoisting of the heavy packs.
 AUDIO:
-Crackling hearth fire in background, soft breathing, distant winter wind outside. Nora's clear spoken voice/whisper: "No shouts, no hostility. Just pure rhythm of survival. This cave kept them alive for millennia.".
+Squeak of stretched leather thongs, wet slosh of tightly packed meat, satisfied grunt of hunter lifting pack, Nora's triumphant spoken voice: "Every scrap of fat and meat wrapped tight. Winter survival secured."
 ```
 
 ---
 
-### CẢNH 26 (8s) — Thủ Lĩnh Cầm Đuốc Ra Hiệu Dẫn Đường
-- **Mã kịch bản:** A2-15
-- **Góc máy:** Góc theo dõi ngang tầm mắt từ sau lưng (Medium tracking shot).
-- **Nhân vật:** Thủ Lĩnh (~35t, cầm cành thông rực lửa làm đuốc), Nora, hành lang hang động sâu thẳm.
-- **Diễn biến:**
-  - `0-2s`: Thủ Lĩnh đứng dậy khỏi bếp lửa, nâng cao một cành thông có nhựa đang cháy sáng rực làm ngọn đuốc, ánh lửa chiếu rọi bóng ông in dài lên vách đá.
-  - `2-5s`: Ông quay người nhìn Nora, khẽ gật đầu một cái dứt khoát rồi vung tay ra hiệu mời cô đi theo mình về phía ngách hang sâu thẳm.
-  - `5-8s`: Thủ Lĩnh sải bước tiến vào hành lang tối đen của hang động; Nora lập tức đứng dậy bám theo, mở ra bức màn bí ẩn của thế giới tâm linh.
+### CẢNH 36 (8.0s) — Cảnh 36: Mùi Máu Tươi & Tiếng Cười Linh Cẩu Vang Lên Từ Rừng Xa
+- **Mã kịch bản:** A3-16-BLOOD-SCENT
+- **Thời lượng:** 8.0s
+- **Nhân vật & Refs:** Nora, Nora Body, Leader, Cave Hyena, Pech Valley
+- **Thoại Nora (Dialogue / Laomedeia):** "Listen... Hyenas. The blood scent carried for miles."
+- **Tóm tắt hành động (VN):** Cơn gió lạnh thổi thốc qua mang theo mùi máu tanh nồng. Đột nhiên từ phía rặng thông xa xa, một tràng tiếng tru hú the thé và tiếng cười man rợ của bầy linh cẩu hang động xé toạc không gian. Thủ Lĩnh lập tức cảnh giác cao độ.
 - **FULL PROMPT (OMNI FLASH R2V):**
-```text
-Photorealistic prehistoric survival documentary footage.
-SHOT:
-Medium handheld tracking shot, capturing the dramatic transition from domestic hearth to deep cave entrance.
-SETTING:
-Main chamber of Pech de l'Azé cave transitioning into narrow limestone gallery corridor leading deep underground.
-CHARACTERS:
-Leader rises in center, broad and imposing in deer pelt. Nora stands on left edge watching attentively. Both have lips firmly closed throughout.
 
+```text
+Photorealistic prehistoric survival documentary suspense footage.
+SHOT:
+Medium handheld tracking shot freezing in place, capturing the sudden spike in tension as predator sounds pierce the winter air. Handheld camera catches nervous micro-tremors; strictly NO 180-degree flips.
+SETTING:
+Open Dordogne snowfield, late afternoon twilight casting long blue shadows across the snow. The wind shifts, howling stronger through distant pine trees.
+CHARACTERS:
+The Leader freezes mid-step, head snapping toward the western pine ridge. Nora freezes beside him, eyes widening in dread. Neanderthals keep lips firmly closed; zero words.
 IDENTITY & OUTFIT LOCK (CRITICAL -- match reference images exactly):
-Nora's face and hair match the Nora face reference sheet, and her build and clothing match the Nora Body sheet. Nora has a voluptuous, curvaceous hourglass figure with a prominent high natural bust, tiny narrow waist, and shapely hips. Nora has honey-blonde hair pulled up into a high wavy ponytail tied with a raw leather thong (strictly NO rubber band), with wispy curtain bangs framing both cheeks. Nora wears a form-fitting tailored tunic of smoked golden-tan deer suede, precision-sewn with fine sinew stitches. CHEST LACING LOCK (CRITICAL): Deep plunging V-neckline laced with thick dark-brown leather thongs forming a prominent X-pattern bridge across her cleavage. CORSET BELT LOCK (CRITICAL): Tightly cinched at her tiny waist with a wide 10-12 cm dark-chocolate brown leather belt. SLEEVE CUFF LOCK (CRITICAL): Long fitted sleeves ending cleanly at the wrists; knee-high hide boots worn on her feet. Strictly NO modern jewelry, NO necklace, NO chain.
-0-2s: Leader rises from hearth, lifting thick resinous pine torch blazing with bright yellow flame, casting long shadows across limestone ceiling.
-2-5s: He turns toward Nora, nods his heavy brow with solemn gravity, and raises free hand in clear gesture beckoning her to follow into dark passage.
-5-8s: Leader strides purposefully into narrow limestone gallery, torchlight carving amber corridor through ancient subterranean darkness; Nora steps forward to follow.
+Nora matches face and Body sheets. Voluptuous figure, honey-blonde ponytail flying in the wind, golden suede tunic, laced V-neckline, chocolate belt, holding her camera lens steady.
+CRITICAL VLOG SPEECH LOCK:
+Only Nora speaks English to camera in her native Laomedeia voice profile; the Leader's jaw hardens in grim defense.
+0-3s: The wind suddenly gusts hard, swirling crimson snow dust around their boots; the Leader abruptly halts, his knuckles turning white around his spear shaft.
+3-6s: Distant, chilling high-pitched whoops and maniacal cackling howls (Cave Hyena pack calls) echo across the valley from the darkened pine tree line half a mile away.
+6-8s: Nora turns her pale face toward the lens, her hand trembling slightly as the horrifying predator laughs rise in pitch; Nora whispers in raw terror: "Listen... Hyenas. The blood scent carried for miles."
 PHYSICAL REALISM & BIOMECHANICS:
-Dynamic moving light source: torch flame trails backward with walking momentum, casting shifting shadows along limestone crevices; authentic adult walking gait.
+Acoustic propagation of pack vocalizations across freezing air; acute human fear response: dilated pupils, stiffened trapezius muscles; sudden stillness in the wind.
 CAMERA:
-Handheld tracking shot moving smoothly behind Leader and Nora, transitioning into shadowed corridor.
+Handheld tracking shot freezing abruptly, slowly panning toward the ominous dark forest ridge and returning to Nora's frightened face.
 AUDIO:
-Crackling hiss of resinous torch flame, heavy footsteps echoing on solid limestone floor, subtle cavern draft. Strictly NO spoken dialogue.
+Ominous high-pitched howling whoops and psychotic cackles of Cave Hyenas in distance, sudden sharp wind gust, Nora's terrified breathless whisper: "Listen... Hyenas. The blood scent carried for miles."
 ```
 
 ---
 
-# HỒI 3: THẾ GIỚI TÂM LINH & BÁU VẬT HANG SÂU (CẢNH 27 — 45)
-*(Thời lượng: 03:28 – 06:00 | Trọng tâm: Bí mật gian phòng hang sâu, thỏi đất son đỏ, vách đá dấu bàn tay, chuỗi móng vuốt đại bàng & nghi thức công nhận)*
-
----
-
-### CẢNH 27 (8s) — Bước Vào Hành Lang Hang Sâu Thẳm
-- **Mã kịch bản:** A3-01
-- **Góc máy:** Góc theo dõi tầm thấp tiến về phía trước (Low-angle forward tracking shot).
-- **Nhân vật:** Thủ Lĩnh cầm đuốc đi trước, Nora theo sau; hành lang đá vôi hẹp sâu trong lòng núi.
-- **Diễn biến:**
-  - `0-2s`: Ngọn đuốc của Thủ Lĩnh soi sáng con đường hẹp giữa hai vách đá vôi tự nhiên; luồng gió lạnh từ ngoài cửa hang biến mất hoàn toàn.
-  - `2-5s`: Hai người bước chậm rãi qua khúc quanh uốn lượn; trần hang hạ thấp rồi mở rộng dần; không gian tĩnh mịch tuyệt đối như một thế giới khác.
-  - `5-8s`: Thủ Lĩnh dừng bước trước một vòm đá tự nhiên mở ra gian phòng lớn; ánh lửa bừng sáng phản chiếu lên lớp khoáng thạch lấp lánh.
+### CẢNH 37 (8.0s) — Cảnh 37: Cuộc Chạy Đua Hoàng Hôn Vác Thịt Về Hang
+- **Mã kịch bản:** A3-17-RETREAT-RUN
+- **Thời lượng:** 8.0s
+- **Nhân vật & Refs:** Nora, Nora Body, Leader, Strongest, Pech Valley
+- **Thoại Nora (Dialogue / Laomedeia):** "We have to move! Before the sun drops and they swarm us!"
+- **Tóm tắt hành động (VN):** Không một giây chần chừ, cả nhóm vác những bọc thịt nặng trịch trên lưng rảo bước thục mạng qua các gờ tuyết về hướng vách núi. Trời sập tối rất nhanh, tuyết bắt đầu rơi lả tả.
 - **FULL PROMPT (OMNI FLASH R2V):**
+
 ```text
-Photorealistic prehistoric survival documentary footage.
+Photorealistic prehistoric survival documentary action footage.
 SHOT:
-Low-angle handheld forward tracking shot, following closely behind the Leader's torchlight into the deep gallery.
+Handheld dynamic running tracking shot moving swiftly with Nora as the hunting party races across the frozen valley floor toward the looming limestone cliffs. Camera has intense footfall running bounce; strictly NO 180-degree flips.
 SETTING:
-A narrow, natural limestone karst corridor deep within Pech de l'Azé cave, far beyond daylight reach. Moisture-glistening rock walls, ancient silence.
+Dordogne valley floor rapidly descending into deep twilight, pale blue and violet shadows engulfing the snow plain. Heavy fat snowflakes begin to fall thickly.
 CHARACTERS:
-The Neanderthal Leader strides ahead with his burning pine torch, casting a wide amber pool of light. Nora follows two steps behind in her golden suede tunic. Both have lips firmly closed throughout.
+Ahead, the Leader and the Strongest power through knee-deep snowdrifts with forty-kilo meat packs on their backs. Nora sprints right behind them in full survival stride, breath pouring like steam engines. Neanderthals keep lips closed.
 IDENTITY & OUTFIT LOCK (CRITICAL -- match reference images exactly):
-Nora's face and hair match the Nora face reference sheet, and her build and clothing match the Nora Body sheet. Nora has a voluptuous, curvaceous hourglass figure with a prominent high natural bust, tiny narrow waist, and shapely hips. Nora has honey-blonde hair pulled up into a high wavy ponytail tied with a raw leather thong (strictly NO rubber band), with wispy curtain bangs framing both cheeks. Nora wears a form-fitting tailored tunic of smoked golden-tan deer suede, precision-sewn with fine sinew stitches. CHEST LACING LOCK (CRITICAL): Deep plunging V-neckline laced with thick dark-brown leather thongs forming a prominent X-pattern bridge across her cleavage. CORSET BELT LOCK (CRITICAL): Tightly cinched at her tiny waist with a wide 10-12 cm dark-chocolate brown leather belt. SLEEVE CUFF LOCK (CRITICAL): Long fitted sleeves ending cleanly at the wrists; knee-high hide boots worn on her feet. Strictly NO modern jewelry, NO necklace, NO chain.
-
-0-2s: The Leader's pine torch illuminates the undulating contours of pale limestone walls as the pair advances deeper into the subterranean silence; all outside wind ceases completely.
-2-5s: The corridor winds through a natural limestone bend; Nora steps cautiously across smooth bedrock, her eyes wide with reverence as the ceiling arches higher overhead.
-5-8s: The Leader halts at the threshold of an expansive hidden chamber, lifting his torch high; warm golden light cascades across mineral-crusted stalactitic flowstone.
+Nora matches face and Body sheets. Voluptuous figure, honey-blonde ponytail bobbing with athletic running strides, golden suede tunic, laced V-neckline bouncing, chocolate belt, long legs pumping through snowdrifts. Free hand empty.
+CRITICAL VLOG SPEECH LOCK:
+Nora delivers rapid, breathless sprint delivery in her native Laomedeia voice profile: "We have to move! Before the sun drops and they swarm us!"
+0-3s: The hunters sprint with astonishing endurance through deep snow, heavy hide packs bouncing on their muscular backs, spears gripped tightly at the ready.
+3-6s: Nora pumps her long slender legs powerfully, leaping over frozen fallen logs and driving through drifting snow, snowflakes splattering against her flushed cheeks.
+6-8s: Nora glances over her shoulder into the darkening pine woods behind them, then looks into the camera lens with gasping, adrenaline-fueled urgency: "We have to move! Before the sun drops and they swarm us!"
 PHYSICAL REALISM & BIOMECHANICS:
-Realistic underground light falloff: deep shadows beyond the torch radius; authentic torch flame reacting subtly to the walker's air displacement; steady footing on dry bedrock.
+Running mechanics in snow: vertical footfall bounce and rotational inertial lag; heavy pack momentum shifting on runners' spines; heavy pulmonary hyperventilation in cold air.
 CAMERA:
-Handheld tracking shot maintaining a low-angle perspective, moving steadily without jerky transitions.
+Handheld sprint tracking shot with organic running shake and vertical footfall oscillations, locked onto Nora's athletic stride.
 AUDIO:
-Soft rhythmic footfalls echoing on hard bedrock, quiet crackling hiss of the pine torch, gentle cavern air resonance. Strictly NO spoken dialogue.
+Heavy rhythmic gasping breaths, violent crunch of deep snow beneath sprinting boots, whistling blizzard gusts, Nora's panting frantic voice: "We have to move! Before the sun drops and they swarm us!"
 ```
 
 ---
 
-### CẢNH 28 (8s) — Gian Phòng Nghi Lễ Linh Thiêng Lộ Diện
-- **Mã kịch bản:** A3-02
-- **Góc máy:** Toàn cảnh vừa gian phòng hang sâu (Medium-wide interior chamber shot).
-- **Nhân vật:** Thủ Lĩnh, Người Phụ Nữ Lớn Tuổi (đã có mặt từ trước bên bệ đá), Nora; gian phòng đá vôi tĩnh mịch.
-- **Diễn biến:**
-  - `0-2s`: Ánh đuốc bừng sáng làm lộ diện gian phòng tự nhiên sâu trong hang với những mảng vách đá vôi bằng phẳng và nền đá sạch sẽ.
-  - `2-5s`: Người Phụ Nữ Lớn Tuổi đã quỳ sẵn bên một phiến đá phẳng đặt ở trung tâm gian phòng, trên phiến đá bày các khối khoáng vật màu đỏ thẫm.
-  - `5-8s`: Thủ Lĩnh cắm ngọn đuốc vào một khe đá tự nhiên trên vách, tạo nguồn sáng ổn định bao trùm không gian linh thiêng của bộ tộc.
+### CẢNH 38 (8.0s) — Cảnh 38: Về Tới Ngưỡng Cửa Hang Pech de l'Azé Ngay Lúc Trời Tối
+- **Mã kịch bản:** A3-18-REACH-CAVE
+- **Thời lượng:** 8.0s
+- **Nhân vật & Refs:** Nora, Nora Body, Leader, Strongest, Cave Mouth
+- **Thoại Nora (Dialogue / Laomedeia):** "Cave entrance! We made it back. But they followed our trail."
+- **Tóm tắt hành động (VN):** Cả nhóm hổn hển lết lên thềm đá cửa hang Pech de l'Azé khi ánh nắng cuối cùng vừa tắt lịm. Ánh lửa cam từ trong hang hắt ra đón chào họ, nhưng phía sau lưng, những cái bóng đen lầm lũi đã bắt đầu xuất hiện dưới chân dốc.
 - **FULL PROMPT (OMNI FLASH R2V):**
+
 ```text
-Photorealistic prehistoric survival documentary footage.
+Photorealistic prehistoric survival documentary transition footage.
 SHOT:
-Medium-wide interior handheld establishing shot, slowly panning across the secluded ritual chamber.
+Handheld tracking shot pushing up the steep limestone apron toward the dark arch of Pech de l'Azé cave, where warm amber firelight glows from within. Handheld camera has exhausted stumbling momentum; strictly NO 180-degree flips.
 SETTING:
-The secluded deep chamber of Pech de l'Azé cave. Smooth pale limestone flowstone walls, level bedrock floor; entirely sheltered and sacred atmosphere.
+Limestone entrance threshold of Pech de l'Azé cave. Outside, complete night has fallen, and a fierce blizzard is howling; inside the cave mouth, warm orange firelight beckons.
 CHARACTERS:
-The Leader enters and secures the torch in a natural wall cleft on the right. In the center kneels the Old Woman beside a flat altar-like limestone slab. Nora stands on the left in quiet awe. Lips firmly closed throughout. Strictly NO modern items.
+The Leader and Strongest stumble over the threshold, heaving their heavy meat packs onto the dry cave floor. Nora collapses onto one knee just inside the doorway, gasping for air. Lips closed for Neanderthals; only Nora speaks.
 IDENTITY & OUTFIT LOCK (CRITICAL -- match reference images exactly):
-Nora's face and hair match the Nora face reference sheet, and her build and clothing match the Nora Body sheet. Nora has a voluptuous, curvaceous hourglass figure with a prominent high natural bust, tiny narrow waist, and shapely hips. Nora has honey-blonde hair pulled up into a high wavy ponytail tied with a raw leather thong (strictly NO rubber band), with wispy curtain bangs framing both cheeks. Nora wears a form-fitting tailored tunic of smoked golden-tan deer suede, precision-sewn with fine sinew stitches. CHEST LACING LOCK (CRITICAL): Deep plunging V-neckline laced with thick dark-brown leather thongs forming a prominent X-pattern bridge across her cleavage. CORSET BELT LOCK (CRITICAL): Tightly cinched at her tiny waist with a wide 10-12 cm dark-chocolate brown leather belt. SLEEVE CUFF LOCK (CRITICAL): Long fitted sleeves ending cleanly at the wrists; knee-high hide boots worn on her feet. Strictly NO modern jewelry, NO necklace, NO chain.
-
-0-2s: The warm glow of the newly mounted pine torch fills the secluded chamber with steady amber illumination, revealing pristine pale limestone surfaces free of domestic debris.
-2-5s: The Old Woman looks up calmly from her kneeling position beside the central limestone slab, where prepared natural mineral pigments and stone tools are neatly arranged.
-5-8s: Nora takes two cautious steps into the chamber, her gaze absorbing the focused, ceremonial stillness of the subterranean space.
+Nora matches face and Body sheets. Voluptuous figure, honey-blonde ponytail disheveled from running, golden suede tunic dusted in white snow, laced V-neckline, chocolate belt, trembling with exhaustion.
+CRITICAL VLOG SPEECH LOCK:
+Only Nora speaks English to camera in her native Laomedeia voice profile; hunters immediately turn to guard the door.
+0-3s: The hunters cross the limestone threshold, dropping their heavy bison meat packs with heavy thuds onto the dry ground, instantly turning around to face outward.
+3-6s: Nora scrambles inside, collapsing against the limestone doorpost, snow melting rapidly on her hot skin as the cave's warm hearth air hits her face.
+6-8s: Nora looks back down the dark snow slope where faint glowing predator eyes reflect in the dark; Nora gasps into the lens with chilling dread: "Cave entrance! We made it back. But they followed our trail."
 PHYSICAL REALISM & BIOMECHANICS:
-Realistic ambient lighting transition from moving torch to stationary motivated light source; authentic non-verbal gravitas and respectful postures.
+Acute physical exhaustion after high-intensity sprint under heavy load; sudden thermal shock transitioning from -15°C blizzard to warm cave air; eyes adjusting from dark to firelight.
 CAMERA:
-Smooth handheld pan across the chamber, settling into a stable medium perspective framing the three adult figures.
+Handheld tracking moving through the threshold, settling low beside Nora as she turns to film the dark snowy slope outside.
 AUDIO:
-Torch flame hiss settling into steady crackle, soft footsteps on stone, profound acoustic silence of the deep cave. Strictly NO spoken dialogue.
+Heavy thud of dropped meat packs, violent ragged panting of three exhausted runners, howl of blizzard wind outside, Nora's gasping dread-filled voice: "Cave entrance! We made it back. But they followed our trail."
 ```
 
 ---
 
-### CẢNH 29 (8s) — Cận Cảnh Thỏi Đất Son Đỏ (Red Ochre Crayon)
-- **Mã kịch bản:** A3-03
-- **Góc máy:** Cận cảnh chi tiết thỏi khoáng vật (Macro archaeological detail shot).
-- **Nhân vật:** Phiến đá vôi phẳng, thỏi đất son đỏ (hematite crayon) có vết mài vát nhẵn, bột đất son đỏ thẫm.
-- **Diễn biến:**
-  - `0-2s`: Ống kính zoom sát vào phiến đá vôi phẳng: một thỏi khoáng vật hematite màu đỏ thẫm dài chừng 8cm hình thoi nằm nổi bật trên nền đá xám nhạt.
-  - `2-5s`: Đầu thỏi đất son được mài vát thành các mặt phẳng nhẵn bóng (faceted wear pattern), minh chứng rõ ràng cho việc con người cổ đại đã cọ xát tạo bột màu trong thời gian dài.
-  - `5-8s`: Bên cạnh thỏi đất son là một nhúm bột màu đỏ tươi mịn màng vừa được cạo ra, màu sắc rực rỡ dưới ánh đuốc.
-- **FULL PROMPT (OMNI FLASH R2V):**
-```text
-Photorealistic prehistoric survival documentary macro footage.
-SHOT:
-Macro close-up shot focused tightly on the red ochre mineral crayon lying on the limestone slab.
-SETTING:
-Top of the flat limestone workstation inside the deep cave chamber, warm motivated firelight illuminating stone textures.
-CHARACTERS:
-The Old Woman's weathered calloused hands manipulate the mineral crayon.
-OBJECTS IN PLACE:
-A distinctive 8-centimetre elongated lump of rich reddish-brown hematite (red ochre crayon) rests on the pale limestone. Its tip shows clear, smooth multifaceted grinding facets from extensive ancient use. Beside it lies a small pile of finely ground crimson powder.
-0-2s: The camera holds sharp focus on the deep crimson hematite crayon, highlighting the natural mineral sheen and micro-abrasion striations on its faceted working tip.
-2-5s: Warm flickering firelight catches the rich velvety texture of the freshly scraped red powder clustered neatly beside the crayon.
-5-8s: The Old Woman's weathered, calloused fingers enter frame gently, lifting the red ochre crayon by its midsection with practiced reverence.
-PHYSICAL REALISM & BIOMECHANICS:
-Archaeologically authentic facet microwear matching Middle Paleolithic ochre finds (such as Pech de l'Azé Neanderthal pigments); realistic mineral grain density and light reflection.
-CAMERA:
-Locked macro lens with shallow depth of field, keeping focus crisp on the wear facets of the ochre crayon.
-AUDIO:
-Quiet torch crackle, faint dry scrape of mineral on stone as fingers lift the crayon, cavern silence. Strictly NO spoken dialogue.
-```
+
+# HỒI 4: BÃO TUYẾT & BẢO VỆ KHO THỊT TRƯỚC BẦY LINH CẨU ĐÊM (CẢNH 39 — 58)
 
 ---
 
-### CẢNH 30 (8s) — Nghiền Bột Đất Son & Pha Trộn Sơn Tự Nhiên
-- **Mã kịch bản:** A3-04
-- **Góc máy:** Cận cảnh thao tác nghiền bột màu (Close-up grinding craft shot).
-- **Nhân vật:** Bàn tay Người Phụ Nữ Lớn Tuổi, hòn đá cuội nghiền (pestle), phiến đá mài, mỡ tủy xương động vật.
-- **Diễn biến:**
-  - `0-2s`: Người phụ nữ dùng một hòn đá cuội tròn nhẵn miết mạnh, nghiền vụn những mảnh đất son đỏ trên mặt phiến đá thành lớp bột mịn màng.
-  - `2-5s`: Bà dùng đầu que gỗ nhỏ lấy một chút mỡ tủy xương động vật ấm đã tan chảy, nhỏ vào giữa đống bột đỏ và dùng đá cuội khuấy đều theo vòng tròn.
-  - `5-8s`: Bột màu và mỡ động vật hòa quyện thành một lớp sơn sệt màu đỏ thẫm (crimson paint), bóng loáng và có độ bám dính hoàn hảo.
+### CẢNH 39 (8.0s) — Cảnh 39: Chuyển Thịt Vào Sâu Trong Hang & Phủ Cành Thông Khử Mùi
+- **Mã kịch bản:** A4-01-MEAT-SECURE
+- **Thời lượng:** 8.0s
+- **Nhân vật & Refs:** Strongest, Old Woman, Meat Cache, Cave Interior
+- **Thoại Nora (Dialogue / Laomedeia):** ""
+- **Tóm tắt hành động (VN):** Người Mạnh Nhất và Người Phụ Nữ Lớn Tuổi nhanh chóng khiêng các tảng thịt bò bison vào hốc đá kín sâu trong hang, phủ các cành thông tươi lên trên để hạn chế mùi máu tanh bay xa theo gió.
 - **FULL PROMPT (OMNI FLASH R2V):**
+
 ```text
 Photorealistic prehistoric survival documentary craft footage.
 SHOT:
-Close-up handheld shot focusing on the Old Woman preparing natural red pigment.
+Medium handheld tracking shot inside the deep cavern, following the Neanderthals rapidly securing the fresh bison meat. Camera maintains brisk documentary pacing; strictly NO 180-degree flips.
 SETTING:
-Deep cave chamber workstation; warm amber torchlight reflecting off smooth limestone.
+Sheltered natural rock alcove in the deep interior of Pech de l'Azé cave. Amber firelight casts deep shadows.
 CHARACTERS:
-The Old Woman's thick-fingered, capable hands manipulating the grinding stone and pigment.
-0-2s: With firm circular motions, the Old Woman grinds a rounded river pebble pestle against red ochre on the flat stone, reducing raw mineral into fine velvety red dust.
-2-5s: She introduces a small dollop of rendered animal marrow fat into the powder, using the pestle to blend the binder with the dry mineral.
-5-8s: The mixture transforms into a rich, viscous crimson paint with a smooth glossy sheen, perfectly formulated for skin application and rock art.
+The Strongest and the Old Woman work with urgent synchronization, stacking rich meat bundles onto a clean stone shelf and heaping fresh green pine boughs over them. Lips firmly closed throughout.
+0-3s: The Strongest hoists a heavy thirty-kilo bundle of fresh dark-red bison meat onto a high, natural limestone shelf deep inside the cave recess.
+3-6s: The Old Woman immediately covers the meat with thick, fragrant fresh pine boughs, pressing them firmly down to mask the rich blood scent from drafting out the cave mouth.
+6-8s: The Strongest checks the cache security, wipes his brow with a blood-stained forearm, and turns with grim urgency back toward the entrance threshold.
 PHYSICAL REALISM & BIOMECHANICS:
-Physically accurate rheology of lipid-mineral suspension: powder absorbs fat, thickening into uniform paste; authentic downward grinding force from Neanderthal hands.
+Heavy gravitational loading of dense meat packages; natural resinous needle compression releasing aromatic pine oils; practical food preservation hygiene.
 CAMERA:
-Handheld close-up angled at forty-five degrees to observe the blending process in the mortar depression.
+Handheld tracking following the meat hoist and pine needle covering, pivoting smoothly toward the front corridor.
 AUDIO:
-Rhythmic gritty scrape of pebble on limestone slab, soft wet squelch as fat blends with powder, steady torch crackle. Strictly NO spoken dialogue.
+Heavy wet thud of meat on stone, crisp snapping of pine boughs, rapid breathing, crackle of distant hearth. Strictly NO spoken dialogue.
 ```
 
 ---
 
-### CẢNH 31 (8s) — Nora Chạm Vào Sơn Đất Son Đỏ
-- **Mã kịch bản:** A3-05
-- **Góc máy:** Cận cảnh ngón tay chạm vào màu vẽ (Macro sensory tactile shot).
-- **Nhân vật:** Bàn tay Nora, phiến đá chứa sơn đất son đỏ tươi, Người Phụ Nữ Lớn Tuổi mỉm cười gật đầu.
-- **Diễn biến:**
-  - `0-2s`: Người phụ nữ khẽ đẩy nhẹ phiến đá màu về phía Nora; Nora nhìn bà xin phép rồi từ từ đưa ngón trỏ tay phải lại gần.
-  - `2-5s`: Đầu ngón tay Nora chạm nhẹ vào lớp sơn đỏ tươi sền sệt, cảm nhận độ mịn như nhung và cảm giác mát lạnh xen lẫn độ nhờn tự nhiên của mỡ thú.
-  - `5-8s`: Nora nhấc ngón tay lên: vệt sơn đỏ thắm rực rỡ dính chặt trên đầu ngón tay; cô nhìn vệt màu với ánh mắt xúc động trước khởi nguồn của nghệ thuật thị giác nhân loại.
+### CẢNH 40 (8.0s) — Cảnh 40: Bão Tuyết Kỷ Băng Hà Ập Đến Thung Lũng Dordogne
+- **Mã kịch bản:** A4-02-BLIZZARD-HITS
+- **Thời lượng:** 8.0s
+- **Nhân vật & Refs:** Cave Mouth, Pech Valley
+- **Thoại Nora (Dialogue / Laomedeia):** ""
+- **Tóm tắt hành động (VN):** Trời tối đen như mực, một trận bão tuyết Kỷ Băng Hà dữ dội bất ngờ đổ ập xuống. Gió rít gầm rú quăng quật những bông tuyết trắng xóa mù mịt qua vòm cửa hang, che khuất hoàn toàn thung lũng bên dưới.
 - **FULL PROMPT (OMNI FLASH R2V):**
-```text
-Photorealistic prehistoric survival documentary footage.
-SHOT:
-Macro tactile close-up capturing Nora touching the freshly mixed red ochre pigment.
-SETTING:
-Subterranean ritual chamber, torchlight casting deep amber highlights across wet paint and stone.
-CHARACTERS:
-Nora on the left, Old Woman on the right observing quietly. The Neanderthals keep their lips firmly closed throughout; zero words from Neanderthals. Only Nora speaks.
-IDENTITY & OUTFIT LOCK (CRITICAL -- match reference images exactly):
-Nora's face and hair match the Nora face reference sheet, and her build and clothing match the Nora Body sheet. Nora has a voluptuous, curvaceous hourglass figure with a prominent high natural bust, tiny narrow waist, and shapely hips. Nora has honey-blonde hair pulled up into a high wavy ponytail tied with a raw leather thong (strictly NO rubber band), with wispy curtain bangs framing both cheeks. Nora wears a form-fitting tailored tunic of smoked golden-tan deer suede, precision-sewn with fine sinew stitches. CHEST LACING LOCK (CRITICAL): Deep plunging V-neckline laced with thick dark-brown leather thongs forming a prominent X-pattern bridge across her cleavage. CORSET BELT LOCK (CRITICAL): Tightly cinched at her tiny waist with a wide 10-12 cm dark-chocolate brown leather belt. SLEEVE CUFF LOCK (CRITICAL): Long fitted sleeves ending cleanly at the wrists; knee-high hide boots worn on her feet. Strictly NO modern jewelry, NO necklace, NO chain.
 
-CRITICAL VLOG SPEECH LOCK:
-Only Nora speaks English to the camera in her native Laomedeia voice profile; all Neanderthals never speak English and keep their lips firmly closed throughout.
-
-0-2s: Encouraged by a gentle nod from the Old Woman, Nora slowly extends her right hand toward the freshly mixed crimson paint on the flat limestone palette.
-2-5s: Her index fingertip presses gently into the rich red paste, feeling the smooth mineral texture and greasy animal fat binder.
-5-8s: Nora lifts her finger, examining the vibrant crimson pigment coating her skin; the ancient mineral shines richly in the warm torchlight, connecting her to prehistoric artistic expression.; Nora says in a hushed whisper: "Pure red ochre... Ground into fine crimson pigment."
-PHYSICAL REALISM & BIOMECHANICS:
-Realistic fluid adhesion and surface tension of viscous mineral-lipid paste on human skin; delicate, reverent finger deceleration.
-CAMERA:
-High-resolution macro shot holding razor-sharp focus on Nora's paint-coated fingertip.
-AUDIO:
-Subtle soft touch sound on wet paste, quiet breath of wonder, gentle background torch crackle. Nora's clear spoken voice/whisper: "Pure red ochre... Ground into fine crimson pigment.".
-```
-
----
-
-### CẢNH 32 (8s) — Người Phụ Nữ Vẽ Ấn Ký Đất Son Cho Thủ Lĩnh
-- **Mã kịch bản:** A3-06
-- **Góc máy:** Cận cảnh nghi thức vẽ mặt (Close-up ceremonial portrait shot).
-- **Nhân vật:** Thủ Lĩnh (~35t), Người Phụ Nữ Lớn Tuổi dùng ngón tay chấm sơn vẽ lên mặt ông.
-- **Diễn biến:**
-  - `0-2s`: Thủ Lĩnh quỳ gối nghiêm trang trước phiến đá, mắt nhìn thẳng vào khoảng không tĩnh lặng của hang sâu.
-  - `2-5s`: Người phụ nữ nhúng hai ngón tay vào đĩa sơn đất son đỏ, nhẹ nhàng vẽ hai đường kẻ ngang song song dứt khoát trên gò má gồ ghề và cung mày nhô cao của Thủ Lĩnh.
-  - `5-8s`: Ánh lửa đuốc rọi sáng khuôn mặt Thủ Lĩnh với hai vạch đất son đỏ thẫm nổi bật, tôn lên vẻ dũng mãnh và trang nghiêm của một tộc trưởng Kỷ Băng Hà.
-- **FULL PROMPT (OMNI FLASH R2V):**
-```text
-Photorealistic prehistoric survival documentary ceremonial footage.
-SHOT:
-Close-up ceremonial portrait shot capturing the ritual application of ochre on the Leader's face.
-SETTING:
-Sacred inner chamber of Pech de l'Azé cave, dramatic chiaroscuro firelight from the wall torch.
-CHARACTERS:
-The Neanderthal Leader kneels solemnly in profile. The Old Woman stands slightly above him, applying pigment. Both have lips firmly closed.
-0-2s: The Leader kneels with motionless, dignified focus, his heavy brow ridge and weathered cheekbones catching warm torchlight.
-2-5s: The Old Woman dips her two index fingertips into the crimson ochre paste and paints two broad, deliberate horizontal red stripes across his right cheekbone and forehead ridge.
-5-8s: She steps back smoothly; the bold crimson pigment stands out in stark, vibrant contrast against his tanned, weathered skin, imparting solemn symbolic authority.
-PHYSICAL REALISM & BIOMECHANICS:
-Authentic pigment transfer from fingertip to weathered skin with micro-texture streaks; Leader's facial muscles remain composed and still throughout.
-CAMERA:
-Steadicam-style close-up tracking the Old Woman's hand motion, holding steady on the Leader's striking face.
-AUDIO:
-Soft skin-on-skin friction sound, deep calm breathing, gentle torch crackle in the subterranean stillness. Strictly NO spoken dialogue.
-```
-
----
-
-### CẢNH 33 (8s) — Thủ Lĩnh Vẽ Ấn Ký Hòa Nhập Lên Má Nora
-- **Mã kịch bản:** A3-07
-- **Góc máy:** Góc cận ngang ngực nghi thức hòa nhập (Medium close-up initiation shot).
-- **Nhân vật:** Thủ Lĩnh (~35t), Nora; Thủ Lĩnh chấm đất son đỏ vẽ lên má Nora.
-- **Diễn biến:**
-  - `0-2s`: Thủ Lĩnh quay sang đối diện với Nora; Nora quỳ thẳng người, ánh mắt kiên định và tôn kính nhìn vào vị thủ lĩnh.
-  - `2-5s`: Thủ Lĩnh đưa ngón tay cái to khỏe dính sơn đất son đỏ, nhẹ nhàng chấm một dấu ấn hình tròn vững chắc lên gò má trái của Nora.
-  - `5-8s`: Ông thu tay lại, khẽ gật đầu một cái chậm rãi công nhận cô là một phần của bộ tộc; Nora chớp mắt xúc động, cảm nhận sự che chở vượt thời gian.
-- **FULL PROMPT (OMNI FLASH R2V):**
-```text
-Photorealistic prehistoric survival documentary footage.
-SHOT:
-Medium close-up shot capturing the symbolic initiation marking of Nora by the Neanderthal Leader.
-SETTING:
-Deep ritual chamber of Pech de l'Azé cave, warm flickering torchlight enveloping both figures.
-CHARACTERS:
-The Leader marked with crimson stripes on the right; Nora on the left in her golden-tan suede outfit. Both have lips firmly closed throughout.
-IDENTITY & OUTFIT LOCK (CRITICAL -- match reference images exactly):
-Nora's face and hair match the Nora face reference sheet, and her build and clothing match the Nora Body sheet. Nora has a voluptuous, curvaceous hourglass figure with a prominent high natural bust, tiny narrow waist, and shapely hips. Nora has honey-blonde hair pulled up into a high wavy ponytail tied with a raw leather thong (strictly NO rubber band), with wispy curtain bangs framing both cheeks. Nora wears a form-fitting tailored tunic of smoked golden-tan deer suede, precision-sewn with fine sinew stitches. CHEST LACING LOCK (CRITICAL): Deep plunging V-neckline laced with thick dark-brown leather thongs forming a prominent X-pattern bridge across her cleavage. CORSET BELT LOCK (CRITICAL): Tightly cinched at her tiny waist with a wide 10-12 cm dark-chocolate brown leather belt. SLEEVE CUFF LOCK (CRITICAL): Long fitted sleeves ending cleanly at the wrists; knee-high hide boots worn on her feet. Strictly NO modern jewelry, NO necklace, NO chain.
-
-CRITICAL VLOG SPEECH LOCK:
-Only Nora speaks English to the camera in her native Laomedeia voice profile; all Neanderthals never speak English and keep their lips firmly closed throughout.
-
-0-2s: The Leader turns toward Nora; Nora remains kneeling upright with calm, respectful composure, her honey-blonde bangs framing her focused gaze.
-2-5s: The Leader dips his broad, calloused right thumb into the crimson ochre paste and gently presses a single bold red circular mark onto Nora's left cheekbone.
-5-8s: He withdraws his hand and nods his heavy brow with deep solemn approval, symbolically welcoming her into the kinship circle; Nora receives the mark with quiet reverence.; Nora says in an awed, trembling whisper: "A mark of belonging... Red ochre on my skin."
-PHYSICAL REALISM & BIOMECHANICS:
-Delicate tactile pressure on cheek tissue without flinching; authentic fingerprint impression visible in the red ochre mark; solemn mutual gaze.
-CAMERA:
-Intimate handheld medium close-up, gently reframing to balance both faces in warm amber firelight.
-AUDIO:
-Soft, dry skin contact, Nora's quiet breath of emotion, steady hiss of the wall torch. Nora's clear spoken voice/whisper: "A mark of belonging... Red ochre on my skin.".
-```
-
----
-
-### CẢNH 34 (8s) — Vách Đá Của Những Bàn Tay Tiền Sử (Hand Stencil Wall)
-- **Mã kịch bản:** A3-08
-- **Góc máy:** Góc lia chậm quét dọc vách đá vôi (Slow panning shot across limestone wall).
-- **Nhân vật:** Vách đá vôi tự nhiên phẳng phiu mang những dấu in bàn tay âm bản (hand stencils) màu đỏ đất son và đen.
-- **Diễn biến:**
-  - `0-2s`: Ngọn đuốc di chuyển soi rọi lên một mảng vách đá vôi tự nhiên phẳng phiu ở góc sâu của gian phòng.
-  - `2-5s`: Hàng loạt dấu in bàn tay âm bản màu đỏ đất son (negative red hand stencils) hiện rõ trên nền đá vôi trắng ngà, các ngón tay xòe rộng với mật độ và độ mờ tự nhiên khác nhau.
-  - `5-8s`: Một khoảng trống đá vôi sạch sẽ ở tầm với ngang ngực được để ngỏ, như đang chờ đợi một dấu ấn mới được ghi dấu.
-- **FULL PROMPT (OMNI FLASH R2V):**
-```text
-Photorealistic prehistoric survival documentary archaeological footage.
-SHOT:
-Slow, deliberate handheld panning shot sweeping across the pale limestone wall of the chamber.
-SETTING:
-Inner rock gallery of Pech de l'Azé cave. Pristine natural limestone surface showing subtle fossil traces and fine calcite veining.
-CHARACTERS:
-No figures visible in frame; focus remains on the sacred painted rock surface.
-OBJECTS IN PLACE:
-Several weathered negative hand stencils in rich red ochre pigment are scattered across the rock face, displaying natural variation in age, overspray density, and hand sizes. A clear section of blank limestone remains untouched at chest level.
-0-2s: Warm amber torchlight glides across the pale limestone rock face, illuminating the textured mineral surface.
-2-5s: The camera pans past several authentic negative hand stencils rendered in red ochre: splayed silhouettes with soft, naturally diffused aerosol edges and delicate overspray halos created by ancient mouths.
-5-8s: The light settles on an open, unadorned limestone panel at comfortable chest height, positioned prominently in the chamber.
-PHYSICAL REALISM & BIOMECHANICS:
-Archaeologically plausible cave art: natural pigment degradation, variable density, non-uniform aerosol edges responding to limestone roughness; NO modern sharp stencil edges.
-CAMERA:
-Slow, fluid horizontal pan with organic handheld stability, avoiding mechanical motion.
-AUDIO:
-Subtle acoustic reverberation of deep cavern, soft torch hiss, quiet footsteps on rock. Strictly NO spoken dialogue.
-```
-
----
-
-### CẢNH 35 (8s) — Người Phụ Nữ Chuẩn Bị Kỹ Thuật Phun Màu (Spit-Spray)
-- **Mã kịch bản:** A3-09
-- **Góc máy:** Cận cảnh nghiêng chuẩn bị kỹ thuật phun sơn (Close-up profile craft shot).
-- **Nhân vật:** Người Phụ Nữ Lớn Tuổi, bàn tay trái áp sát vách đá vôi, ngụm bột màu đất son trong miệng.
-- **Diễn biến:**
-  - `0-2s`: Người Phụ Nữ Lớn Tuổi bước tới khoảng vách đá trống, bàn tay trái xòe rộng áp phẳng hoàn toàn lên bề mặt đá vôi trắng ngà.
-  - `2-5s`: Bà ngậm một lượng nhỏ bột đất son đỏ mịn pha chút nước trong khoang miệng, mắt tập trung cao độ, chuẩn bị kỹ thuật phun khí dung (spit-spray).
-  - `5-8s`: Bà ghé sát mặt cách mu bàn tay chừng 15cm, hít một hơi sâu qua mũi, sẵn sàng tạo nên dấu ấn bàn tay nguyên thủy.
-- **FULL PROMPT (OMNI FLASH R2V):**
-```text
-Photorealistic prehistoric survival documentary craft footage.
-SHOT:
-Close-up profile shot framing the Old Woman preparing the ancient spit-spray pigment technique.
-SETTING:
-Before the pale limestone wall in the sacred chamber of Pech de l'Azé cave, motivated torchlight illuminating rock surface and profile.
-CHARACTERS:
-The Neanderthal Old Woman in side profile, displaying robust facial architecture, weathered cheek, and focused gaze. Lips closed as she prepares pigment in her mouth.
-0-2s: The Old Woman approaches the blank limestone rock face, firmly pressing her left hand with splayed, muscular fingers flat against the cool stone surface.
-2-5s: Her jaw shifts slightly as she holds a mixture of ground red ochre mineral and saliva in her mouth, preparing her lips for atomized projection.
-5-8s: She leans in until her face is six inches from the back of her splayed hand, taking a deep, controlled nasal inhalation.
-PHYSICAL REALISM & BIOMECHANICS:
-Authentic prehistoric rock art preparation documented across Paleolithic sites; deliberate, firm palm adhesion against stone; controlled respiratory biomechanics.
-CAMERA:
-Close-up profile shot with steady handheld stillness, holding sharp focus on her splayed hand and parted lips.
-AUDIO:
-Deep nasal breath intake, soft palm pat on limestone, distant quiet torch crackle. Strictly NO spoken dialogue.
-```
-
----
-
-### CẢNH 36 (8s) — Thổi Bột Màu Tạo Dấu Bàn Tay Âm Bản (Spit-Spray)
-- **Mã kịch bản:** A3-10
-- **Góc máy:** Cận cảnh động thao tác phun khí dung đất son (Dynamic macro action shot).
-- **Nhân vật:** Bàn tay Người Phụ Nữ áp trên vách đá, luồng sương bột màu đỏ phụt ra từ khóe môi bao quanh các ngón tay.
-- **Diễn biến:**
-  - `0-2s`: Người phụ nữ mím môi thổi mạnh một luồng sương khí dung mịn màu đỏ thẫm (fine red aerosol spray) phụt đều quanh bàn tay.
-  - `2-5s`: Hạt màu đỏ bám dày đặc vào vách đá xung quanh mép bàn tay và kẽ các ngón tay, tạo nên quầng sương đỏ tự nhiên với viền chuyển tiếp mềm mại.
-  - `5-8s`: Bà thổi thêm hai nhịp ngắn dứt khoát vào cổ tay và đầu các ngón tay để hoàn thiện lớp phủ, luồng bụi màu lắng dần trên mặt đá.
-- **FULL PROMPT (OMNI FLASH R2V):**
-```text
-Photorealistic prehistoric survival documentary craft footage.
-SHOT:
-Dynamic macro close-up capturing the authentic spit-spray creation of a negative hand stencil.
-SETTING:
-Against the pale limestone wall inside Pech de l'Azé cave, side-raking torchlight highlighting atomized spray particles.
-CHARACTERS:
-The Old Woman's mouth and her firmly planted left hand with splayed fingers on the rock.
-0-2s: The Old Woman forcefully exhales a fine, atomized aerosol mist of red ochre liquid from pursed lips, projecting it directly across the dorsal side of her splayed fingers.
-2-5s: The crimson mist deposits rapidly onto the surrounding pale limestone, forming an organic, slightly uneven aerosol silhouette with authentic overspray halos between her spread knuckles.
-5-8s: She delivers two quick, targeted puffs across her wrist and thumb base, ensuring a natural gradient of pigment density before pausing her breath.
-PHYSICAL REALISM & BIOMECHANICS:
-Physically accurate liquid atomization: uneven aerosol particle distribution with natural micro-droplets and soft overspray borders; NO crisp digital lines or stencil masking artifacts.
-CAMERA:
-High-speed macro framing the spray trajectory and immediate pigment deposition on limestone.
-AUDIO:
-Puffs of pressurized blowing breath, soft hiss of liquid aerosol striking stone, ambient subterranean silence. Strictly NO spoken dialogue.
-```
-
----
-
-### CẢNH 37 (8s) — Nhấc Tay Lộ Diện Dấu Bàn Tay Neanderthal Mới
-- **Mã kịch bản:** A3-11
-- **Góc máy:** Cận cảnh vừa thời khắc lộ diện tác phẩm (Medium close-up reveal shot).
-- **Nhân vật:** Người Phụ Nữ Lớn Tuổi nhấc bàn tay ra khỏi vách đá; dấu bàn tay âm bản (negative stencil) đỏ rực lộ diện.
-- **Diễn biến:**
-  - `0-2s`: Người phụ nữ từ từ nhấc bàn tay trái ra khỏi vách đá vôi, tránh làm nhòe lớp bột màu còn ẩm.
-  - `2-5s`: Dấu bàn tay âm bản hoàn chỉnh lộ diện trên vách đá: hình bóng bàn tay màu đá trắng sáng nổi bật giữa vầng sương đỏ thẫm, các ngón tay to bè và lòng bàn tay rộng đặc trưng Neanderthal.
-  - `5-8s`: Người phụ nữ lau nhẹ khóe môi, ngắm nhìn dấu ấn của mình với ánh mắt thanh thản, tự hào ghi dấu sự tồn tại vào vĩnh cửu.
-- **FULL PROMPT (OMNI FLASH R2V):**
-```text
-Photorealistic prehistoric survival documentary reveal footage.
-SHOT:
-Medium close-up reveal shot, framing the Old Woman's hand pulling away from the limestone wall.
-SETTING:
-Inner chamber of Pech de l'Azé cave, warm torchlight illuminating the fresh red hand stencil.
-CHARACTERS:
-The Old Woman in three-quarter profile, stepping back from the wall. Nora watches from the edge of frame. Lips firmly closed throughout.
-
-IDENTITY & OUTFIT LOCK (CRITICAL -- match reference images exactly):
-Nora's face and hair match the Nora face reference sheet, and her build and clothing match the Nora Body sheet. Nora has a voluptuous, curvaceous hourglass figure with a prominent high natural bust, tiny narrow waist, and shapely hips. Nora has honey-blonde hair pulled up into a high wavy ponytail tied with a raw leather thong (strictly NO rubber band), with wispy curtain bangs framing both cheeks. Nora wears a form-fitting tailored tunic of smoked golden-tan deer suede, precision-sewn with fine sinew stitches. CHEST LACING LOCK (CRITICAL): Deep plunging V-neckline laced with thick dark-brown leather thongs forming a prominent X-pattern bridge across her cleavage. CORSET BELT LOCK (CRITICAL): Tightly cinched at her tiny waist with a wide 10-12 cm dark-chocolate brown leather belt. SLEEVE CUFF LOCK (CRITICAL): Long fitted sleeves ending cleanly at the wrists; knee-high hide boots worn on her feet. Strictly NO modern jewelry, NO necklace, NO chain.
-0-2s: The Old Woman slowly peels her left palm and splayed fingers away from the limestone rock face, lifting cleanly to avoid smearing the moist paint.
-2-5s: The negative hand stencil is revealed: a pale limestone hand silhouette sharply outlined by the surrounding crimson halo, clearly displaying broad Neanderthal palm proportions and robust fingertips.
-5-8s: She wipes her chin with the back of her forearm, turning her weathered face toward Nora with a quiet, profound look of shared accomplishment.
-PHYSICAL REALISM & BIOMECHANICS:
-Moist mineral paint sheen gradually settling into dry limestone porosity; authentic anthropological proportions of Neanderthal hand anatomy preserved in the negative stencil.
-CAMERA:
-Handheld medium close-up following the hand withdrawal and panning slightly to include both women.
-AUDIO:
-Gentle release sound of palm lifting from limestone, soft exhalation of breath, steady torch flame hiss. Strictly NO spoken dialogue.
-```
-
----
-
-### CẢNH 38 (8s) — Nora Đặt Bàn Tay Ướm Cạnh Dấu Tay Tiền Sử
-- **Mã kịch bản:** A3-12
-- **Góc máy:** Cận cảnh đối chiếu hai bàn tay (Macro anthropological comparison shot).
-- **Nhân vật:** Bàn tay phải của Nora giơ lên ướm cách dấu bàn tay trên vách đá 5cm.
-- **Diễn biến:**
-  - `0-2s`: Nora bước lại gần vách đá, giơ bàn tay phải của mình lên ướm song song cách dấu tay âm bản chừng 5cm, hoàn toàn không chạm vào vách đá.
-  - `2-5s`: Sự tương phản giải phẫu hiện rõ: bàn tay Nora thon dài của người hiện đại đối lập với lòng bàn tay rộng bè và đốt ngón tay to khỏe của người Neanderthal.
-  - `5-8s`: Vết chấm đỏ trên má Nora ánh lên dưới ánh đuốc, hai bàn tay của hai thời kỳ cùng tồn tại trong một khung hình đầy xúc động.
-- **FULL PROMPT (OMNI FLASH R2V):**
-```text
-Photorealistic prehistoric survival documentary footage.
-SHOT:
-Macro anthropological comparative shot focusing on Nora's modern hand hovering beside the Neanderthal hand stencil.
-SETTING:
-The limestone hand stencil wall inside the deep chamber, warm motivated firelight illuminating skin and stone.
-CHARACTERS:
-Nora's slender, modern right hand hovering steadily beside the freshly created Neanderthal negative stencil on the limestone wall.
-IDENTITY & OUTFIT LOCK (CRITICAL -- match reference images exactly):
-Nora's face and hair match the Nora face reference sheet, and her build and clothing match the Nora Body sheet. Nora has a voluptuous, curvaceous hourglass figure with a prominent high natural bust, tiny narrow waist, and shapely hips. Nora has honey-blonde hair pulled up into a high wavy ponytail tied with a raw leather thong (strictly NO rubber band), with wispy curtain bangs framing both cheeks. Nora wears a form-fitting tailored tunic of smoked golden-tan deer suede, precision-sewn with fine sinew stitches. CHEST LACING LOCK (CRITICAL): Deep plunging V-neckline laced with thick dark-brown leather thongs forming a prominent X-pattern bridge across her cleavage. CORSET BELT LOCK (CRITICAL): Tightly cinched at her tiny waist with a wide 10-12 cm dark-chocolate brown leather belt. SLEEVE CUFF LOCK (CRITICAL): Long fitted sleeves ending cleanly at the wrists; knee-high hide boots worn on her feet. Strictly NO modern jewelry, NO necklace, NO chain.
-
-CRITICAL VLOG SPEECH LOCK:
-Only Nora speaks English to the camera in her native Laomedeia voice profile; all Neanderthals never speak English and keep their lips firmly closed throughout.
-
-0-2s: Nora steps close to the limestone wall, gently raising her right hand with splayed fingers, hovering two inches above the adjacent rock surface without touching.
-2-5s: The frame captures the striking anatomical contrast: Nora's slender modern digits and narrower palm compared against the broad, robust distal phalanges and wide palm of the Neanderthal stencil.
-5-8s: Nora holds her hand steady in silent contemplation, the visual echo spanning fifty thousand years of human lineage under the timeless torchlight.; Nora says in a breathless, emotional whisper: "Fifty-one thousand years apart... and our hands are identical."
-PHYSICAL REALISM & BIOMECHANICS:
-Accurate comparative functional morphology between Homo sapiens and Homo neanderthalensis hands; stable isometric arm hold without trembling.
-CAMERA:
-Sharp macro focus with deep depth of field capturing both Nora's flesh hand and the stone-painted stencil.
-AUDIO:
-Profound cavern stillness, quiet soft breathing, gentle ambient torch hiss. Nora's clear spoken voice/whisper: "Fifty-one thousand years apart... and our hands are identical.".
-```
-
----
-
-### CẢNH 39 (8s) — Báu Vật Bí Mật: Móng Vuốt Đại Bàng Đuôi Trắng
-- **Mã kịch bản:** A3-13
-- **Góc máy:** Cận cảnh mở bọc báu vật (Close-up prop reveal shot).
-- **Nhân vật:** Bàn tay Thủ Lĩnh, túi bọc bằng da hươu mềm, bộ móng vuốt đại bàng đuôi trắng (white-tailed sea eagle talons).
-- **Diễn biến:**
-  - `0-2s`: Thủ Lĩnh bước lại gần phiến đá trung tâm, lấy từ trong ngực áo ra một bọc da hươu mềm thắt dây gân.
-  - `2-5s`: Ông cẩn thận tháo nút thắt, mở từng lớp da mềm ra: bên trong xuất hiện những chiếc móng vuốt đại bàng đuôi trắng cong vút màu sừng đen tuyền bóng loáng.
-  - `5-8s`: Mỗi chiếc móng đại bàng dài hơn 6cm, đầu móng sắc nhọn uốn cong hoàn hảo, tỏa ra vẻ uy quyền và huyền bí của bầu trời Kỷ Băng Hà.
-- **FULL PROMPT (OMNI FLASH R2V):**
-```text
-Photorealistic prehistoric survival documentary prop reveal footage.
-SHOT:
-Close-up shot focusing on the Leader unwrapping the ceremonial eagle talon bundle on the limestone slab.
-SETTING:
-Central altar-like limestone slab inside the deep chamber, warm torchlight illuminating dark talons and soft leather.
-CHARACTERS:
-The Leader's powerful hands carefully unrolling the supple leather wrapping.
-0-2s: The Leader steps to the central limestone slab, holding a small pouch of smoked deer hide bound with a braided sinew cord.
-2-5s: With deliberate care, his thick fingers untie the sinew binding and peel back the supple hide layers to reveal several large, curved white-tailed sea eagle talons (Haliaeetus albicilla).
-5-8s: The massive keratin talons rest on the pale hide: six centimetres long, dark lustrous horn texture, gracefully recurved with razor-sharp tips reflecting warm firelight.
-PHYSICAL REALISM & BIOMECHANICS:
-Authentic archaeological representation matching Krapina Neanderthal raptor talon ornaments; realistic keratin sheen and weight distribution on soft hide.
-CAMERA:
-Close-up with gentle downward tilt as the hide unrolls, maintaining sharp focus on the talons.
-AUDIO:
-Soft dry rustle of deer hide unrolling, gentle clicking sound of talons shifting against each other, quiet torch crackle. Strictly NO spoken dialogue.
-```
-
----
-
-### CẢNH 40 (8s) — Cận Cảnh Vết Khía Cắt Khảo Cổ Học Trên Móng Vuốt
-- **Mã kịch bản:** A3-14
-- **Góc máy:** Cận cảnh siêu chi tiết vết khía khảo cổ (Extreme macro archaeological detail shot).
-- **Nhân vật:** Chiếc móng vuốt đại bàng, vết khía cắt bằng đá lửa (stone tool cut marks), lỗ đục xỏ dây.
-- **Diễn biến:**
-  - `0-2s`: Ống kính siêu cận cảnh soi rõ phần cuống khớp của chiếc móng đại bàng: những vết khía cắt ngang li ti do dao đá lửa tạo ra khi tách móng khỏi bàn chân chim.
-  - `2-5s`: Một lỗ tròn nhỏ được đục khoét tỉ mỉ ở phần gốc móng để xỏ dây đeo; mép lỗ có vết mài mòn bóng loáng (use-wear polish) do cọ xát với sợi dây gân qua nhiều năm.
-  - `5-8s`: Dấu vết đất son đỏ còn đọng lại trong các rãnh khía, chứng minh móng vuốt đại bàng là trang sức biểu tượng có chủ đích của người Neanderthal.
-- **FULL PROMPT (OMNI FLASH R2V):**
-```text
-Photorealistic prehistoric survival documentary extreme macro footage.
-SHOT:
-Extreme close-up macro shot focusing on the anthropogenic modification marks on the eagle talon.
-SETTING:
-Workstation in the deep cave chamber, intense directed torchlight highlighting microscopic surface textures.
-CHARACTERS:
-No figures visible in frame; extreme macro focus on the modified artifact.
-OBJECTS IN PLACE:
-A single large white-tailed eagle talon resting on the pale limestone surface.
-0-2s: The camera magnifies the proximal articulation joint of the eagle talon, revealing fine microscopic transverse cut marks made by a sharp Mousterian flint tool during careful butchery.
-2-5s: The focus shifts to a neatly worked perforation near the talon base: smooth, rounded edges showing characteristic string-wear polish from long-term suspension on a cord.
-5-8s: Traces of microscopic red ochre pigment residue are clearly visible settled deep inside the carved grooves, confirming intentional decorative and symbolic preparation.
-PHYSICAL REALISM & BIOMECHANICS:
-Meticulously accurate to published Paleolithic microwear analyses of Neanderthal raptor talons (Krapina, Combe-Grenal); physically authentic keratin surface degradation.
-CAMERA:
-Extreme macro lens with razor-thin depth of field, executing a slow rack focus along the carved perforation.
-AUDIO:
-Subtle acoustic silence of the subterranean vault, faint torch flame hiss. Strictly NO spoken dialogue.
-```
-
----
-
-### CẢNH 41 (8s) — Thủ Lĩnh Đeo Vòng Móng Đại Bàng Trước Ngực
-- **Mã kịch bản:** A3-15
-- **Góc máy:** Cận cảnh chân dung Thủ Lĩnh với vòng móng vuốt (Medium portrait shot).
-- **Nhân vật:** Thủ Lĩnh (~35t) đeo chuỗi vòng 8 chiếc móng đại bàng xỏ dây gân trước ngực.
-- **Diễn biến:**
-  - `0-2s`: Thủ Lĩnh nâng chuỗi vòng cổ làm từ 8 chiếc móng đại bàng cỡ lớn xỏ trên sợi dây gân bện, đeo qua đầu xuống ngực áo da hươu.
-  - `2-5s`: Tám chiếc móng vuốt đen tuyền cong vút xòe rộng ôm sát bờ ngực nở nang vạm vỡ, ánh lửa đuốc làm nổi bật hai vạch đất son đỏ trên mặt ông.
-  - `5-8s`: Thủ Lĩnh khoanh tay đứng thẳng, toát lên phong thái của một thủ lĩnh săn bắn dũng cảm và đầy tôn kính thiên nhiên.
-- **FULL PROMPT (OMNI FLASH R2V):**
-```text
-Photorealistic prehistoric survival documentary portrait footage.
-SHOT:
-Medium portrait shot framing the Neanderthal Leader wearing his ceremonial eagle talon necklace.
-SETTING:
-Sacred inner chamber of Pech de l'Azé cave, dramatic side-raking torchlight accentuating chest anatomy and ornament.
-CHARACTERS:
-The Leader standing tall, barrel-chested and muscular, with two crimson ochre stripes painted on his brow and cheek. Lips firmly closed.
-OBJECTS IN PLACE:
-A heavy necklace strung with eight large white-tailed sea eagle talons suspended on braided sinew resting proudly across his upper chest.
-0-2s: The Leader adjusts his ceremonial eagle talon necklace, settling the braided sinew cord comfortably across his broad, pelt-draped neck.
-2-5s: The eight large black talons hang in a dramatic crescent array across his upper chest, catching the warm amber firelight with deep lustrous sheen.
-5-8s: He folds his muscular arms across his chest and looks steadily forward, embodying the profound symbolic dignity of a Pleistocene lineage leader.
-PHYSICAL REALISM & BIOMECHANICS:
-Natural drape and weight displacement of heavy keratin talons against leather pelt; stable, upright Neanderthal posture with characteristically broad clavicles.
-CAMERA:
-Handheld medium shot with respectful low-angle tilt, holding crisp focus on the talons and Leader's face.
-AUDIO:
-Soft clicking rattle of keratin talons against hide, steady deep breathing, quiet torch hiss. Strictly NO spoken dialogue.
-```
-
----
-
-### CẢNH 42 (8s) — Người Phụ Nữ Trao Tặng Nora Một Chiếc Móng Đại Bàng
-- **Mã kịch bản:** A3-16
-- **Góc máy:** Cận cảnh thời khắc trao tặng kỷ vật (Close-up initiation gift exchange shot).
-- **Nhân vật:** Thủ Lĩnh chọn một chiếc móng đại bàng, Người Phụ Nữ Lớn Tuổi nâng niu trao vào lòng bàn tay Nora.
-- **Diễn biến:**
-  - `0-2s`: Thủ Lĩnh chọn một chiếc móng đại bàng đơn lẻ đã đục sẵn lỗ từ bọc da, đưa cho Người Phụ Nữ Lớn Tuổi.
-  - `2-5s`: Người phụ nữ dùng hai bàn tay đón lấy chiếc móng vuốt, từ từ đặt trân trọng vào lòng bàn tay mở rộng của Nora.
-  - `5-8s`: Nora khép nhẹ những ngón tay cảm nhận chiếc móng vuốt nặng trĩu mát rượi, ánh mắt hai người phụ nữ chạm nhau đầy ấm áp và công nhận.
-- **FULL PROMPT (OMNI FLASH R2V):**
-```text
-Photorealistic prehistoric survival documentary footage.
-SHOT:
-Close-up intimate exchange shot, focusing on the handover of the ceremonial eagle talon gift.
-SETTING:
-Deep ritual chamber of Pech de l'Azé cave, warm flickering torchlight illuminating hands and open palms.
-CHARACTERS:
-The Old Woman on the right, Nora on the left with open hands. The Leader stands in background. All have lips firmly closed.
-CONTINUITY & BODY LOCK (CRITICAL):
-Nora receives her single eagle talon here for the very first time. Before this moment, she wore no necklace.
-
-IDENTITY & OUTFIT LOCK (CRITICAL -- match reference images exactly):
-Nora's face and hair match the Nora face reference sheet, and her build and clothing match the Nora Body sheet. Nora has a voluptuous, curvaceous hourglass figure with a prominent high natural bust, tiny narrow waist, and shapely hips. Nora has honey-blonde hair pulled up into a high wavy ponytail tied with a raw leather thong (strictly NO rubber band), with wispy curtain bangs framing both cheeks. Nora wears a form-fitting tailored tunic of smoked golden-tan deer suede, precision-sewn with fine sinew stitches. CHEST LACING LOCK (CRITICAL): Deep plunging V-neckline laced with thick dark-brown leather thongs forming a prominent X-pattern bridge across her cleavage. CORSET BELT LOCK (CRITICAL): Tightly cinched at her tiny waist with a wide 10-12 cm dark-chocolate brown leather belt. SLEEVE CUFF LOCK (CRITICAL): Long fitted sleeves ending cleanly at the wrists; knee-high hide boots worn on her feet. Strictly NO modern jewelry, NO necklace, NO chain.
-0-2s: The Leader selects one finely drilled eagle talon from the leather wrap, handing it solemnly to the Old Woman.
-2-5s: With both calloused hands, the Old Woman transfers the single curved black eagle talon into Nora's open, waiting palms.
-5-8s: Nora gently curls her fingers around the cool, smooth talon, looking up into the Old Woman's weathered eyes with deep heartfelt gratitude.
-PHYSICAL REALISM & BIOMECHANICS:
-Realistic physical weight and texture transfer between palms; gentle deceleration of hands during sacred gift giving; tender, composed expressions.
-CAMERA:
-Handheld close-up focused tightly on the open palms, tilting smoothly up to Nora's face as she receives the gift.
-AUDIO:
-Soft dry click of the talon resting into Nora's palm, quiet breath of awe, steady torch crackle. Strictly NO spoken dialogue.
-```
-
----
-
-### CẢNH 43 (8s) — Nora Đeo Chiếc Móng Đại Bàng Vào Cổ
-- **Mã kịch bản:** A3-17
-- **Góc máy:** Cận cảnh vừa Nora đeo dây chuyền móng vuốt (Medium close-up fastening shot).
-- **Nhân vật:** Nora luồn sợi dây da hươu qua lỗ móng vuốt, buộc dây đeo lên cổ áo da hươu.
-- **Diễn biến:**
-  - `0-2s`: Nora luồn một sợi dây da hươu mỏng dẻo dai qua lỗ đục sẵn ở cuống chiếc móng đại bàng.
-  - `2-5s`: Cô đưa sợi dây vòng qua cổ, thắt nút chắc chắn phía sau gáy; chiếc móng đại bàng màu đen tuyền thả buông nhẹ nhàng ngay trên khe ngực áo da hươu vàng.
-  - `5-8s`: Nora đưa những ngón tay chạm nhẹ vào kỷ vật trên ngực, cảm nhận sức mạnh tinh thần và sự gắn kết trọn vẹn với bộ tộc.
-- **FULL PROMPT (OMNI FLASH R2V):**
-```text
-Photorealistic prehistoric survival documentary footage.
-SHOT:
-Medium close-up shot capturing Nora fastening the eagle talon necklace around her neck.
-SETTING:
-Deep sacred chamber of Pech de l'Azé cave, amber firelight casting warm glow on Nora's face and suede tunic.
-CHARACTERS:
-Nora in center, standing poised and reverent. The Neanderthals keep their lips firmly closed throughout; zero words from Neanderthals. Only Nora speaks.
-CONTINUITY & BODY LOCK (CRITICAL):
-From this moment forward (and for all subsequent scenes), Nora wears this single eagle talon pendant on a raw leather thong over her laced golden-tan tunic; red ochre mark on her left cheek.
-
-IDENTITY & OUTFIT LOCK (CRITICAL -- match reference images exactly):
-Nora's face and hair match the Nora face reference sheet, and her build and clothing match the Nora Body sheet. Nora has a voluptuous, curvaceous hourglass figure with a prominent high natural bust, tiny narrow waist, and shapely hips. Nora has honey-blonde hair pulled up into a high wavy ponytail tied with a raw leather thong (strictly NO rubber band), with wispy curtain bangs framing both cheeks. Nora wears a form-fitting tailored tunic of smoked golden-tan deer suede, precision-sewn with fine sinew stitches. CHEST LACING LOCK (CRITICAL): Deep plunging V-neckline laced with thick dark-brown leather thongs forming a prominent X-pattern bridge across her cleavage. CORSET BELT LOCK (CRITICAL): Tightly cinched at her tiny waist with a wide 10-12 cm dark-chocolate brown leather belt. SLEEVE CUFF LOCK (CRITICAL): Long fitted sleeves ending cleanly at the wrists; knee-high hide boots worn on her feet. Strictly NO modern jewelry, NO necklace, NO chain.
-0-2s: Nora carefully threads a thin, supple raw leather thong through the perforated base of the black eagle talon.
-2-5s: She raises her arms, loops the cord around the back of her neck, and ties a secure knot beneath her high blonde ponytail.
-5-8s: The single curved black eagle talon settles comfortably against the criss-cross laced cleavage of her golden-tan tunic; her hand rests over it in quiet wonder.; Nora says in a hushed, reverent whisper: "An eagle talon necklace... The oldest jewelry on Earth."
-PHYSICAL REALISM & BIOMECHANICS:
-Natural knot-tying kinematics behind neck; authentic pendulum swing of the curved keratin talon settling over suede fabric; natural posture.
-CAMERA:
-Handheld medium close-up following her hands from behind the neck to the pendant settling on her chest.
-AUDIO:
-Soft dry rustle of leather thong, faint click as talon settles against suede lacing, quiet steady breath. Nora's clear spoken voice/whisper: "An eagle talon necklace... The oldest jewelry on Earth.".
-
-CRITICAL VLOG SPEECH LOCK:
-Only Nora speaks English to the camera in her native Laomedeia voice profile; all Neanderthals never speak English and keep their lips firmly closed throughout.
-```
-
----
-
-### CẢNH 44 (8s) — Ánh Mắt Công Nhận Giữa Hai Dòng Dõi Con Người
-- **Mã kịch bản:** A3-18
-- **Góc máy:** Trung cảnh đối diện giữa hai nhân vật (Medium two-shot mutual recognition).
-- **Nhân vật:** Thủ Lĩnh (đeo vòng 8 móng đại bàng) và Nora (đeo 1 móng đại bàng), Người Phụ Nữ Lớn Tuổi đứng bên cạnh.
-- **Diễn biến:**
-  - `0-2s`: Khung hình trung cảnh thu trọn Thủ Lĩnh và Nora đứng đối diện nhau dưới ánh đuốc bập bùng: cả hai đều mang ấn ký đất son đỏ và trang sức móng vuốt đại bàng.
-  - `2-5s`: Thủ Lĩnh nhìn chiếc móng vuốt trên ngực Nora rồi nhìn thẳng vào mắt cô; ông khẽ gật đầu một cái chậm rãi, công nhận sự tương đồng tâm linh giữa hai dòng dõi con người.
-  - `5-8s`: Nora cúi đầu đáp lễ trong sự kính trọng sâu sắc; khoảng cách hàng vạn năm lịch sử hoàn toàn biến mất trong gian phòng đá vôi vĩnh cửu.
-- **FULL PROMPT (OMNI FLASH R2V):**
-```text
-Photorealistic prehistoric survival documentary footage.
-SHOT:
-Medium two-shot framing the Neanderthal Leader and Nora standing face to face in the firelit chamber.
-SETTING:
-Deep ritual chamber of Pech de l'Azé cave, pale limestone walls echoing flickering torchlight.
-CHARACTERS:
-The Neanderthal Leader on the right (wearing his 8-talon necklace, red stripes on forehead). Nora on the left (wearing her single eagle talon pendant, red ochre mark on cheek). Both have lips firmly closed throughout.
-IDENTITY & OUTFIT LOCK (CRITICAL -- match reference images exactly):
-Nora's face and hair match the Nora face reference sheet, and her build and clothing match the Nora Body sheet. Nora has a voluptuous, curvaceous hourglass figure with a prominent high natural bust, tiny narrow waist, and shapely hips. Nora has honey-blonde hair pulled up into a high wavy ponytail tied with a raw leather thong (strictly NO rubber band), with wispy curtain bangs framing both cheeks. Nora wears a form-fitting tailored tunic of smoked golden-tan deer suede, precision-sewn with fine sinew stitches. CHEST LACING LOCK (CRITICAL): Deep plunging V-neckline laced with thick dark-brown leather thongs forming a prominent X-pattern bridge across her cleavage. CORSET BELT LOCK (CRITICAL): Tightly cinched at her tiny waist with a wide 10-12 cm dark-chocolate brown leather belt. SLEEVE CUFF LOCK (CRITICAL): Long fitted sleeves ending cleanly at the wrists; knee-high hide boots worn on her feet. Strictly NO modern jewelry, NO necklace, NO chain.
-
-0-2s: The camera frames both figures in mutual stillness: the robust Neanderthal patriarch and the modern female survivalist, both bearing sacred ochre marks and eagle talon ornaments.
-2-5s: The Leader looks at the talon on Nora's chest, then meets her eyes, nodding his heavy brow with deep, unspoken respect between two lineages of human history.
-5-8s: Nora returns the nod with dignified gratitude, standing tall and unified in the ancient subterranean sanctuary.
-PHYSICAL REALISM & BIOMECHANICS:
-Realistic eye contact dynamics; subtle breathing movements synchronizing in the quiet air; absence of theatrical melodrama.
-CAMERA:
-Steadicam-style medium shot holding both figures in balanced, dignified composition.
-AUDIO:
-Profound cavern stillness, quiet rhythmic breathing, steady hiss of wall torch. Strictly NO spoken dialogue.
-```
-
----
-
-### CẢNH 45 (8s) — Nora Lặng Lẽ Cảm Nhận Kỷ Vật Trong Hang Sâu
-- **Mã kịch bản:** A3-19
-- **Góc máy:** Selfie qua vai góc rộng 0.5x trong hang sâu (Over-the-shoulder wide selfie vlog shot).
-- **Nhân vật:** Nora (tiền cảnh 1/3 bên trái), vách đá dấu bàn tay và gian phòng nghi lễ (hậu cảnh 2/3 bên phải).
-- **Diễn biến:**
-  - `0-2s`: Nora cầm máy quay selfie góc rộng ngang ngực, cô chiếm 1/3 khung hình bên trái với vệt đất son đỏ trên má và chiếc móng đại bàng trên ngực áo.
-  - `2-5s`: Cô nhìn thẳng vào ống kính máy quay với ánh mắt sâu thẳm, xúc động nghẹn ngào; bờ môi khép chặt hoàn toàn trong khi lời tự sự nội tâm được lồng ở hậu kỳ.
-  - `5-8s`: Nora khẽ đưa tay chạm vào chiếc móng đại bàng trên ngực, liếc nhìn vách đá dấu bàn tay phía sau rồi quay lại nhìn khán giả; một khoảnh khắc tĩnh lặng tột cùng trước khi cơn bão ập tới.
-- **FULL PROMPT (OMNI FLASH R2V):**
-```text
-Photorealistic prehistoric survival documentary selfie vlog footage.
-SHOT:
-Handheld over-the-shoulder wide-angle selfie vlog shot; Nora occupies the left third held steady at chest level; the sacred hand stencil wall and torchlight glow occupy the right two-thirds.
-SETTING:
-Deep ritual chamber of Pech de l'Azé cave. The red hand stencils and flickering torchlight form the atmospheric backdrop.
-CHARACTERS:
-Nora in the foreground. The Neanderthals keep their lips firmly closed throughout; zero words from Neanderthals. Only Nora speaks. The perspective comes directly from her own outstretched arm; her free hand rests empty at chest level.
-IDENTITY & OUTFIT LOCK (CRITICAL -- match reference images exactly):
-Nora's face and hair match the Nora face reference sheet, and her build and clothing match the Nora Body sheet. Nora has a voluptuous, curvaceous hourglass figure with a prominent high natural bust, tiny narrow waist, and shapely hips. Nora has honey-blonde hair pulled up into a high wavy ponytail tied with a raw leather thong (strictly NO rubber band), with wispy curtain bangs framing both cheeks. Nora wears a form-fitting tailored tunic of smoked golden-tan deer suede, precision-sewn with fine sinew stitches. CHEST LACING LOCK (CRITICAL): Deep plunging V-neckline laced with thick dark-brown leather thongs forming a prominent X-pattern bridge across her cleavage. CORSET BELT LOCK (CRITICAL): Tightly cinched at her tiny waist with a wide 10-12 cm dark-chocolate brown leather belt. SLEEVE CUFF LOCK (CRITICAL): Long fitted sleeves ending cleanly at the wrists; knee-high hide boots worn on her feet. Strictly NO modern jewelry, NO necklace, NO chain.
-
-CRITICAL VLOG SPEECH LOCK:
-Only Nora speaks English to the camera in her native Laomedeia voice profile; all Neanderthals never speak English and keep their lips firmly closed throughout.
-
-0-2s: The camera opens in a steady chest-level selfie perspective: Nora gazes directly into the lens, her eyes reflecting the warm subterranean torchlight with profound emotion.
-2-5s: Nora looks silently into the camera without moving her mouth, her closed lips and solemn expression carrying immense depth for post-production voiceover reflection.
-5-8s: Her free hand rises to lightly touch the eagle talon pendant resting against her chest, glancing briefly back at the painted stencils before meeting the lens again in quiet stillness.; Nora says in a steady, thoughtful delivery: "They didn't just fight the cold. They created symbols. They had an inner world."
-PHYSICAL REALISM & BIOMECHANICS:
-Natural handheld breathing micro-shake; free hand stays at chest level without reaching toward lens; optical 0.5x wide perspective without distortion.
-CAMERA:
-Handheld selfie perspective fixed at constant arm's distance, maintaining single-perspective purity with no camera flips.
-AUDIO:
-Profound cavern quiet, gentle steady breathing, subtle crackle of distant torch. Nora's clear spoken voice/whisper: "They didn't just fight the cold. They created symbols. They had an inner world.".
-```
-
----
-
-# HỒI 4: ĐÊM BÃO TUYẾT & PHÒNG THỦ CỬA HANG (CẢNH 46 — 63)
-*(Thời lượng: 06:00 – 08:24 | Trọng tâm: Bão tuyết Kỷ Băng Hà ập đến, linh cẩu vây hãm, phòng tuyến giáo gỗ & Nora tiếp lửa cứu nguy)*
-
----
-
-### CẢNH 46 (8s) — Bão Tuyết Kỷ Băng Hà Bất Ngờ Ập Đến
-- **Mã kịch bản:** A4-01
-- **Góc máy:** Toàn cảnh từ lòng hang nhìn ra cửa hang (Wide shot from cave interior looking out).
-- **Nhân vật:** Vòm cửa hang Pech de l'Azé, thung lũng Dordogne bên ngoài bão tuyết Kỷ Băng Hà gầm rú dữ dội.
-- **Diễn biến:**
-  - `0-2s`: Bầu trời ngoài cửa hang tối sầm lại nhanh chóng; từng đợt gió bão mùa đông Kỷ Băng Hà gầm rú dữ dội thốc thẳng vào vách đá.
-  - `2-5s`: Màn tuyết trắng xóa cuồn cuộn bay mù mịt với vận tốc khủng khiếp ngoài thung lũng; nhiệt độ tụt sâu xuống mức đóng băng khắc nghiệt.
-  - `5-8s`: Gió rít liên hồi tạo nên tiếng gầm u u qua vòm đá vôi; không gian bên ngoài hoàn toàn bị nuốt chửng trong màn sương băng giá lạnh.
-- **FULL PROMPT (OMNI FLASH R2V):**
-```text
-Photorealistic prehistoric survival documentary footage.
-SHOT:
-Wide handheld shot framed from ten metres inside the cave mouth, looking outward through the limestone archway into the valley.
-SETTING:
-The mouth of Pech de l'Azé cave, Dordogne, 51,000 years ago during a severe Pleistocene glacial winter blizzard. Darkness falling, blinding gale-force wind.
-CHARACTERS:
-Silhouette of the Strongest standing near the threshold, looking out with alert tension. Lips firmly closed.
-0-2s: The sky outside the limestone portal darkens rapidly to an ominous slate-grey as sudden severe glacial gale winds batter the cliff face.
-2-5s: Heavy horizontal sheets of driving powder snow whip across the valley in violent gusts; dangerously sub-zero temperatures send frost rapidly crystallizing along the outer rock lip.
-5-8s: The ferocious blizzard howling creates a vortex of swirling white spindrift across the entrance gravel, completely obscuring the valley below in a freezing whiteout.
-PHYSICAL REALISM & BIOMECHANICS:
-Physically accurate aerodynamic fluid dynamics of blizzard spindrift funneling through natural limestone arch; realistic rapid frost crystallization on cold stone.
-CAMERA:
-Handheld wide shot with subtle organic vibration induced by heavy exterior wind buffeting.
-AUDIO:
-Howling, shrieking Pleistocene glacial blizzard wind, deep subterranean acoustic resonance, rattling loose ice crystals on limestone. Strictly NO spoken dialogue.
-```
-
----
-
-### CẢNH 47 (8s) — Khẩn Trương Cất Giấu Kho Thịt Khô (Meat Cache Security)
-- **Mã kịch bản:** A4-02
-- **Góc máy:** Góc quay theo dõi hoạt động khẩn trương trong hang (Medium tracking action shot).
-- **Nhân vật:** Người Phụ Nữ Lớn Tuổi, Nữ Thợ Săn, Nora; các bọc thịt hươu xông khói, ngách đá sâu bảo vệ kho lương.
-- **Diễn biến:**
-  - `0-2s`: Nghe tiếng bão rít, Người Phụ Nữ Lớn Tuổi lập tức chỉ tay ra hiệu cho Nữ Thợ Săn và Nora chuyển kho thịt khô vào sâu trong hang.
-  - `2-5s`: Nora và Nữ Thợ Săn nhanh nhẹn ôm các bọc thịt hươu xông khói bọc kín bằng da khô, xếp sâu vào một hốc đá hẹp kín đáo khuất gió.
-  - `5-8s`: Người phụ nữ dùng những tảng đá vôi to chèn chặt miệng hốc đá và phủ cành cây bảo vệ, ngăn chặn vật lý triệt để không cho thú ăn xác ngửi và mò tới.
-- **FULL PROMPT (OMNI FLASH R2V):**
-```text
-Photorealistic prehistoric survival documentary footage.
-SHOT:
-Medium handheld tracking shot following the urgent securing of food stores in the cave interior.
-SETTING:
-A narrow, sheltered natural rock recess deep inside Pech de l'Azé cave, illuminated by warm flickering torchlight.
-CHARACTERS:
-The Old Woman, Adult Hunter Woman, and Nora moving with brisk, efficient teamwork. All have lips firmly closed throughout.
-CONTINUITY & BODY LOCK:
-Nora wears her golden suede tunic with the single eagle talon pendant visible on her chest, moving agilely.
-0-2s: Recognizing the arrival of the blizzard, the Old Woman gestures with urgent hand signals, directing the clan to secure the food supply.
-2-5s: Nora and the Hunter Woman briskly transport parcels of cured smoked venison wrapped in dry deer hides, stowing them deep into a natural bedrock recess sheltered from drafts.
-5-8s: The Old Woman stacks heavy limestone boulders firmly across the opening, creating an impenetrable physical barrier to prevent nocturnal scavengers from reaching the meat.
-PHYSICAL REALISM & BIOMECHANICS:
-Realistic physical cache protection: physical rock barrier prevents scavenger access; heavy stone lifting kinematics with legs bent and core braced.
-CAMERA:
-Dynamic handheld tracking following the transfer of meat parcels into the rock niche.
-AUDIO:
-Heavy thud and scrape of limestone boulders being stacked, rustle of dry cured hides, urgent muffled footsteps, exterior blizzard howling. Strictly NO spoken dialogue.
-```
-
----
-
-### CẢNH 48 (8s) — Tiếng Tru Hú Của Bầy Linh Cẩu Xé Toạc Màn Bão
-- **Mã kịch bản:** A4-03
-- **Góc máy:** Góc cận không khí căng thẳng cửa hang (Atmospheric tension shot at cave mouth).
-- **Nhân vật:** Bóng tối mịt mù ngoài cửa hang; tuyết bay mù mịt; tiếng gầm rú và tiếng tru của dã thú vọng lại từ xa.
-- **Diễn biến:**
-  - `0-2s`: Ống kính nhìn xuyên qua màn bão tuyết cuộn xoáy ngoài cửa hang; bóng tối bao trùm thung lũng Dordogne.
-  - `2-5s`: Vượt qua tiếng gió gầm, những tiếng tru hú khàn đục (harsh whoops) và tiếng gầm gừ cổ họng của bầy linh cẩu hang động (Crocuta crocuta spelaea) vang lên từ phía dốc sỏi.
-  - `5-8s`: Tiếng chân cào móng trên đá vụn đông cứng và âm thanh chattering đe dọa vọng lại ngày một gần, báo hiệu một bầy thú săn mồi nguy hiểm đang tiến sát.
-- **FULL PROMPT (OMNI FLASH R2V):**
 ```text
 Photorealistic prehistoric survival documentary atmospheric footage.
 SHOT:
-Atmospheric medium shot looking outward through the frosted threshold into the swirling white blizzard darkness.
+Wide-angle handheld shot from inside the dark cave entrance looking outward into the violent glacial tempest. Camera shudders subtly in violent wind drafts; strictly NO 180-degree flips.
 SETTING:
-The threshold apron of Pech de l'Azé cave, blowing snow and deep twilight shadows.
+The rugged stone arch of Pech de l'Azé cave mouth, 51,000 years ago Pleistocene winter. Outside is pitch-black night engulfed in a blinding white blizzard.
 CHARACTERS:
-No visible characters in frame; focus is on the menacing exterior environment and auditory threat.
-
-IDENTITY & OUTFIT LOCK (CRITICAL -- match reference images exactly):
-Nora's face and hair match the Nora face reference sheet, and her build and clothing match the Nora Body sheet. Nora has a voluptuous, curvaceous hourglass figure with a prominent high natural bust, tiny narrow waist, and shapely hips. Nora has honey-blonde hair pulled up into a high wavy ponytail tied with a raw leather thong (strictly NO rubber band), with wispy curtain bangs framing both cheeks. Nora wears a form-fitting tailored tunic of smoked golden-tan deer suede, precision-sewn with fine sinew stitches. CHEST LACING LOCK (CRITICAL): Deep plunging V-neckline laced with thick dark-brown leather thongs forming a prominent X-pattern bridge across her cleavage. CORSET BELT LOCK (CRITICAL): Tightly cinched at her tiny waist with a wide 10-12 cm dark-chocolate brown leather belt. SLEEVE CUFF LOCK (CRITICAL): Long fitted sleeves ending cleanly at the wrists; knee-high hide boots worn on her feet. Strictly NO modern jewelry, NO necklace, NO chain.
-0-2s: Swirling clouds of dense powder snow vortex through the frame against the darkening Pleistocene cliff apron.
-2-5s: Above the shrieking blizzard wind, the raw, authentic vocalizations of Pleistocene cave hyenas echo from the lower scree: harsh guttural whoops, low threatening growls, and dry chattering calls.
-5-8s: The distant sound of heavy paws crunching on frozen gravel and claws clicking against limestone rocks draws noticeably closer through the storm.; Nora says in a tense, hushed panic: "Listen to that... Hyenas. Cave hyenas outside."
+Strictly NO people in frame; pure elemental fury.
+0-3s: Howling sub-zero blizzard winds slam against the limestone cliff face, driving sheets of thick, swirling snow horizontally across the dark entrance arch.
+3-6s: Violent drafts rip into the threshold, swirling vortexes of snow crystals across the frozen stone floor, extinguishing faint daylight completely into howling winter darkness.
+6-8s: The sheer raw ferocity of Pleistocene weather dominates the frame, framing the warm cave interior as a fragile sanctuary surrounded by lethal ice.
 PHYSICAL REALISM & BIOMECHANICS:
-Accurate bio-acoustic animal behavior: realistic cave hyena pack communication (Crocuta crocuta spelaea) seeking shelter and food; strictly NO anthropomorphic "psychotic laughter".
+High-velocity fluid dynamics of howling blizzard gusts; aerodynamic turbulence of snowflakes swirling around rock corners; sub-zero optical opacity of dense blizzard whiteout.
 CAMERA:
-Slow forward creep toward the threshold opening with subtle wind-induced hand tremor.
+Static-grounded handheld perspective from dry threshold rock looking out into the blinding snow storm.
 AUDIO:
-Authentic Pleistocene cave hyena pack vocalizations (harsh whoops, low guttural growls, chattering vocalizations), howling blizzard wind, ice clicking on rock. Nora's clear spoken voice/whisper: "Listen to that... Hyenas. Cave hyenas outside.".
+Deafening roaring gale of blizzard winds, violent whipping of snow against stone, deep low resonant cliff groaning. Strictly NO spoken dialogue.
+```
 
+---
+
+### CẢNH 41 (8.0s) — Cảnh 41: Tiếng Tru Hú Rợn Người Xé Toạc Màn Bão Tuyết
+- **Mã kịch bản:** A4-03-HYENA-CRIES
+- **Thời lượng:** 8.0s
+- **Nhân vật & Refs:** Nora, Nora Body, Cave Interior
+- **Thoại Nora (Dialogue / Laomedeia):** "They're right outside. The storm brought the whole pack."
+- **Tóm tắt hành động (VN):** Giữa tiếng gió bão gầm rú, một chuỗi tiếng tru the thé và tiếng cười man rợ của bầy linh cẩu vang lên từ ngay bậc thềm đá ngoài cửa hang. Nora giật nảy mình, mắt mở to kinh hãi nép sát vào vách đá.
+- **FULL PROMPT (OMNI FLASH R2V):**
+
+```text
+Photorealistic prehistoric survival documentary suspense footage.
+SHOT:
+Close-up handheld shot on Nora's startled, terrified face illuminated by warm flickering firelight against cold dark cave stone. Handheld camera catches realistic fear tremors; strictly NO 180-degree flips.
+SETTING:
+Shadowy corridor three metres inside the cave mouth, cold air clashing with warm hearth drafts.
+CHARACTERS:
+Nora presses her back against the damp limestone wall in her golden deer suede tunic, breath catching in her throat. Neanderthals outside the visible frame.
+IDENTITY & OUTFIT LOCK (CRITICAL -- match reference images exactly):
+Nora matches face and Body sheets. Voluptuous figure, honey-blonde ponytail, golden suede tunic, deep plunging laced V-neckline, chocolate belt, skin pale with cold and tension.
 CRITICAL VLOG SPEECH LOCK:
-Only Nora speaks English to the camera in her native Laomedeia voice profile; all Neanderthals never speak English and keep their lips firmly closed throughout.
-```
-
----
-
-### CẢNH 49 (8s) — Bóng Dáng Bầy Linh Cẩu Hang Động Ngoài Màn Tuyết
-- **Mã kịch bản:** A4-04
-- **Góc máy:** Trung cận tầm xa qua màn bão tuyết (Medium-telephoto shot through blizzard).
-- **Nhân vật:** Ba con linh cẩu hang động Kỷ Băng Hà (Pleistocene cave hyenas) to lớn, lưng dốc, lông rậm dày đang tiến lại gần thềm hang.
-- **Diễn biến:**
-  - `0-2s`: Qua màn tuyết bay mù mịt ở thềm dốc sỏi bên ngoài, ba bóng đen to lớn lực lưỡng bắt đầu hiện rõ dần.
-  - `2-5s`: Ba con linh cẩu hang động to lớn (trọng lượng trên 90kg) với bờ vai vạm vỡ, lưng dốc về sau và bộ lông dày màu vàng xám lốm đốm xuất hiện, mũi khịt khịt tìm hơi ấm.
-  - `5-8s`: Con linh cẩu đầu đàn dừng lại cách cửa hang 8 mét, mắt ánh lên màu hổ phách hung dữ xuyên qua màn bão tuyết, nhe răng đe dọa.
-- **FULL PROMPT (OMNI FLASH R2V):**
-```text
-Photorealistic prehistoric survival documentary wildlife footage.
-SHOT:
-Medium-telephoto shot piercing through the driving snowstorm toward the outer scree slope.
-SETTING:
-Frozen limestone scree apron ten metres outside Pech de l'Azé cave entrance, twilight blizzard conditions.
-CHARACTERS:
-Three massive Pleistocene cave hyenas (Crocuta crocuta spelaea): heavily built apex predators, ninety kilograms, sloping backs, massive muscular necks, and dense shaggy yellowish-grey fur with dark spots.
-0-2s: Through the blinding squalls of wind-whipped snow, three bulky quadruped silhouettes emerge cautiously along the frozen limestone scree path.
-2-5s: The cave hyenas advance with low, predatory gaits; their thick frost-dusted pelts shield them from the cold as their powerful snouts test the cave entrance draft for scent.
-5-8s: The dominant pack leader halts eight metres from the cave mouth, its heavy forequarters braced wide on frozen limestone; amber eyes glare with predatory resolve through the driving spindrift.
+Only Nora speaks English to camera in her native Laomedeia voice profile: "They're right outside. The storm brought the whole pack."
+0-3s: Nora leans against the cold limestone wall catching her breath, when suddenly a chorus of shrieking, manic whoops and bone-chilling hyena laughs echoes directly outside the entrance.
+3-6s: Her eyes widen in acute dread; she jerks her head toward the dark threshold as the predatory cackling multiplies, indicating multiple large carnivores pacing the apron.
+6-8s: Nora turns her terrified face to the camera lens, whispering in a trembling, cracked delivery: "They're right outside. The storm brought the whole pack."
 PHYSICAL REALISM & BIOMECHANICS:
-Accurate Pleistocene megafauna anatomy: massive bone-cracking sagittal crest and heavy jaw apparatus; quadruped locomotion on uneven, slippery frosted limestone scree.
+Human startle reflex: instantaneous ocular pupil dilation, sharp gasp of air, tensed neck muscles; atmospheric contrast between warm firelit cave and pitch-black storm outside.
 CAMERA:
-Handheld telephoto lens with natural tracking instability, cutting through layers of drifting snow particles.
+Close-up handheld shot with organic fear micro-tremors, capturing Nora's raw vulnerability.
 AUDIO:
-Deep menacing guttural growls, claws scraping frosted rock, heavy animal panting, roaring blizzard wind. Strictly NO spoken dialogue.
+Terrifying multi-layered Cave Hyena whoops and psychotic laughter piercing through the storm, howling wind, Nora's frantic cracking whisper: "They're right outside. The storm brought the whole pack."
 ```
 
 ---
 
-### CẢNH 50 (8s) — Thủ Lĩnh Gầm Lệnh Báo Động & Chộp Lấy Giáo
-- **Mã kịch bản:** A4-05
-- **Góc máy:** Góc theo dõi hành động khẩn cấp bên trong hang (Dynamic action tracking shot).
-- **Nhân vật:** Thủ Lĩnh, Người Mạnh Nhất, Nora; ngọn giáo gỗ tần bì tôi lửa, đuốc thông rực sáng.
-- **Diễn biến:**
-  - `0-2s`: Nhận thấy bóng linh cẩu ngoài cửa hang, Thủ Lĩnh lập tức phát ra một tiếng gầm trầm dứt khoát trong lồng ngực báo động toàn bộ tộc.
-  - `2-5s`: Ông chộp lấy ngọn đuốc thông đang cháy rực bằng tay trái, tay phải giật lấy cây giáo gỗ nặng; Người Mạnh Nhất lập tức lao lên tiếp ứng với cây giáo dài 2.2m.
-  - `5-8s`: Nora đứng dậy áp lưng vào vách đá an toàn, ánh mắt tập trung cao độ; hai chiến binh Neanderthal sải bước lao ra tiền tuyến chốt chặn cửa hang.
+### CẢNH 42 (8.0s) — Cảnh 42: Bốn Con Linh Cẩu Khổng Lồ Xuất Hiện Ngoài Thềm Đá
+- **Mã kịch bản:** A4-04-HYENAS-SHADOWS
+- **Thời lượng:** 8.0s
+- **Nhân vật & Refs:** Cave Hyena, Cave Mouth
+- **Thoại Nora (Dialogue / Laomedeia):** ""
+- **Tóm tắt hành động (VN):** Dưới ánh lửa bập bùng hắt ra từ hang, 4 con linh cẩu hang động to lớn như sư tử lầm lũi xuất hiện ngay trên thềm đá ngoài cửa hang. Mắt chúng ánh lên màu hổ phách đói khát, gầm gừ đòi xông vào cướp thịt.
 - **FULL PROMPT (OMNI FLASH R2V):**
-```text
-Photorealistic prehistoric survival documentary footage.
-SHOT:
-Dynamic handheld tracking shot capturing the rapid defensive mobilization inside the cave.
-SETTING:
-Main chamber transitioning to the entrance passage of Pech de l'Azé cave; dramatic shifting torchlight and fire shadows.
-CHARACTERS:
-The Leader and the Strongest reacting instantly with battle readiness; Nora stands alert against the wall. Lips firmly closed throughout.
-IDENTITY & OUTFIT LOCK (CRITICAL -- match reference images exactly):
-Nora's face and hair match the Nora face reference sheet, and her build and clothing match the Nora Body sheet. Nora has a voluptuous, curvaceous hourglass figure with a prominent high natural bust, tiny narrow waist, and shapely hips. Nora has honey-blonde hair pulled up into a high wavy ponytail tied with a raw leather thong (strictly NO rubber band), with wispy curtain bangs framing both cheeks. Nora wears a form-fitting tailored tunic of smoked golden-tan deer suede, precision-sewn with fine sinew stitches. CHEST LACING LOCK (CRITICAL): Deep plunging V-neckline laced with thick dark-brown leather thongs forming a prominent X-pattern bridge across her cleavage. CORSET BELT LOCK (CRITICAL): Tightly cinched at her tiny waist with a wide 10-12 cm dark-chocolate brown leather belt. SLEEVE CUFF LOCK (CRITICAL): Long fitted sleeves ending cleanly at the wrists; knee-high hide boots worn on her feet. Strictly NO modern jewelry, NO necklace, NO chain.
 
-0-2s: Spotting the predator silhouettes, the Leader issues an urgent non-verbal warning gesture, his face hardening into fierce defensive resolve.
-2-5s: He seizes a blazing pine branch in his left hand and his heavy thrusting spear in his right; beside him, the Strongest bounds forward gripping his 2.2-metre fire-hardened ash spear in a two-handed combat grip.
-5-8s: Nora braces firmly against the sheltered limestone wall in supportive vigilance as both muscular Neanderthal hunters charge toward the entrance archway.
+```text
+Photorealistic prehistoric survival documentary wildlife suspense footage.
+SHOT:
+POV handheld shot looking from inside the dark cave entrance outward toward the frosted stone threshold. Handheld camera holds tense stealth position; strictly NO 180-degree flips.
+SETTING:
+The threshold apron of Pech de l'Azé cave, wind-whipped snow swirling in the darkness. Faint amber firelight from the cave interior spills onto the icy gravel outside.
+CHARACTERS:
+Four colossal Pleistocene Cave Hyenas (Crocuta crocuta spelaea), lion-sized carnivores with massive sloping shoulders and thick bone-crushing jaws, stalking the threshold. Strictly NO humans in frame.
+0-3s: Out of the swirling white blizzard darkness, four massive spotted Cave Hyenas emerge onto the stone ledge, their bulky lion-sized silhouettes stalking with heavy predatory intent.
+3-6s: Their amber eyes flash eerie yellow-green reflections in the firelight; the alpha female paces forward, thick grey-spotted fur bristling, sniffing the rich bison blood scent drafting from the cave.
+6-8s: The hyenas bunch together, baring massive bone-crushing teeth that can splinter mammoth femurs, growling with deep guttural hostility just three metres from the doorway.
 PHYSICAL REALISM & BIOMECHANICS:
-High-acceleration sprint on rough cave earth; authentic two-handed spear grasp; torch flame bending violently backward with running momentum.
+Accurate prehistoric megafauna predator anatomy: high powerful withers sloping downward to low hindquarters; retro-reflective tapetum lucidum eye shine in low firelight; aggressive tooth baring.
 CAMERA:
-Dynamic handheld tracking moving rapidly with the hunters toward the entrance threshold.
+Handheld POV perspective peering from shadow cover, focusing sharply on the pacing hyenas on the frosted threshold.
 AUDIO:
-Heavy boot impacts on rocky floor, crackle and whoosh of rushed torch flame, deep resonant chest grunts, exterior wind howling. Strictly NO spoken dialogue.
+Deep menacing chest growls, wet snarls, sharp clicks of hyena claws on frozen stone, howling gale wind. Strictly NO spoken dialogue.
 ```
 
 ---
 
-### CẢNH 51 (8s) — Đội Hình Giáo Gỗ Khóa Chặt Ngưỡng Cửa Hang
-- **Mã kịch bản:** A4-06
-- **Góc máy:** Toàn cảnh tầm thấp đội hình phòng thủ (Low-angle wide defensive line shot).
-- **Nhân vật:** Thủ Lĩnh (cầm đuốc và giáo), Người Mạnh Nhất (thế thủ giáo tần bì hai tay); cửa hang hẹp chắn bão.
-- **Diễn biến:**
-  - `0-2s`: Hai thợ săn dàn đội hình chiến thuật tại điểm hẹp nhất của ngưỡng cửa hang đá vôi: chân sau đạp trụ vững chắc, thân người hạ thấp trọng tâm.
-  - `2-5s`: Người Mạnh Nhất chĩa thẳng mũi giáo gỗ tần bì đã tôi lửa ra phía trước; Thủ Lĩnh giơ cao ngọn đuốc bập bùng xua tan màn bão tuyết.
-  - `5-8s`: Một bức tường phòng thủ kiên cố hình thành, chặn đứng hoàn toàn con đường tiến vào nơi trú ẩn của bộ tộc.
+### CẢNH 43 (8.0s) — Cảnh 43: Thủ Lĩnh Gầm Lệnh Báo Động & Dàn Trận Phòng Thủ
+- **Mã kịch bản:** A4-05-LEADER-RALLY
+- **Thời lượng:** 8.0s
+- **Nhân vật & Refs:** Leader, Cave Interior
+- **Thoại Nora (Dialogue / Laomedeia):** ""
+- **Tóm tắt hành động (VN):** Thủ Lĩnh chộp lấy ngọn giáo dài, rống lên một tiếng gầm đanh thép rung chuyển vách đá hang động. Gương mặt ông đằng đằng sát khí, không hề có chút nao núng hay sợ hãi trước bầy dã thú.
 - **FULL PROMPT (OMNI FLASH R2V):**
+
 ```text
-Photorealistic prehistoric survival documentary footage.
+Photorealistic prehistoric survival documentary action footage.
 SHOT:
-Low-angle handheld wide shot looking out toward the entrance threshold, framing the hunter defense line from behind and slightly beside.
+Low-angle handheld heroic shot, framing the Leader from below as he mobilizes the clan's defense. Handheld camera holds steady powerful authority; strictly NO 180-degree flips.
 SETTING:
-The narrowest choke point of Pech de l'Azé cave entrance, blowing snow drifting across frosted stone threshold.
+Just inside the mouth of Pech de l'Azé cave, amber firelight casting heroic long shadows up the vaulted rock ceiling.
 CHARACTERS:
-The Leader on the left holding a blazing torch high and spear ready; the Strongest on the right in a low, wide combat stance with spear leveled forward. Lips firmly closed throughout.
+The Leader stands centered like a bastion of primeval defiance, holding a heavy flint-tipped spear in his right hand and a blazing pine torch in his left. Lips firmly closed; deep guttural war shout.
+0-2s: Hearing the snarling pack, the Leader instantly lunges forward into the front corridor, firelight reflecting off the fierce determination in his dark eyes.
+2-5s: He slams his spear butt hard onto the bedrock and unleashes a thunderous, primal chest roar that reverberates through the entire cavern, rallying the clan to battle stations.
+5-8s: He raises the blazing torch high, embers raining down in golden sparks, eyes locked dead ahead on the predator pack with zero hesitation.
+PHYSICAL REALISM & BIOMECHANICS:
+Primeval human combat dominance; acoustic reverberation of deep resonant vocal chords off hard limestone; dynamic firelight rim lighting illuminating powerful facial bone structure.
+CAMERA:
+Low-angle handheld shot looking upward at the Leader's towering, resolute silhouette against the blazing firelight.
+AUDIO:
+Thunderous primal chest roar, resonant crackle of resinous pine torch, heavy boot stomp on bedrock, fierce wind outside. Strictly NO English dialogue.
+```
+
+---
+
+### CẢNH 44 (8.0s) — Cảnh 44: Đội Hình Giáo Gỗ Khóa Chặt Ngưỡng Cửa Hang
+- **Mã kịch bản:** A4-06-SPEAR-WALL
+- **Thời lượng:** 8.0s
+- **Nhân vật & Refs:** Leader, Strongest, Strongest Spear, Cave Mouth
+- **Thoại Nora (Dialogue / Laomedeia):** ""
+- **Tóm tắt hành động (VN):** Thủ Lĩnh và Người Mạnh Nhất đứng song song trước ngưỡng cửa hang, hạ thấp trọng tâm, chĩa hai ngọn giáo gỗ tôi lửa thẳng về phía trước tạo thành bức tường cản phá kiên cố không kẽ hở.
+- **FULL PROMPT (OMNI FLASH R2V):**
+
+```text
+Photorealistic prehistoric survival documentary action footage.
+SHOT:
+Over-the-shoulder handheld shot from behind the two hunters, framing the defensive spear wall locked across the narrow entrance against the dark blizzard outside. Handheld camera maintains tactical tension; strictly NO 180-degree flips.
+SETTING:
+Narrow limestone arch of Pech de l'Azé cave entrance, cold snow blasting inside against the warm firelit bedrock.
+CHARACTERS:
+The Leader and the Strongest stand shoulder-to-shoulder, forming an impenetrable defensive barrier with heavy thrusting spears leveled at chest height. Lips firmly closed throughout.
 OBJECTS IN PLACE:
-The 2.2-metre fire-hardened ash spear pointed horizontally outward toward the scree; the blazing pine torch illuminating falling snowflakes.
-0-2s: The two Neanderthal warriors form a tight defensive phalanx at the narrow entrance choke point, planting their rear feet firmly into the limestone threshold.
-2-5s: The Strongest lowers his center of gravity, leveling the dark point of his heavy ash spear directly outward; the Leader thrusts his blazing torch forward to illuminate the darkness.
-5-8s: Their broad, barrel-chested silhouettes create an unyielding human barrier, locking down the entrance against the blizzard and approaching predators.
+2.2m fire-hardened ash spear and heavy flint spear leveled side-by-side, pointed directly outward into the dark snowstorm.
+0-3s: The two Neanderthal warriors drop into a synchronized low combat crouch, locking their shoulders together across the narrowest constriction of the doorway.
+3-6s: They level their heavy spear tips side-by-side, wooden shafts locked rigidly under their muscular forearms, presenting two lethal wooden spikes to anything attempting entry.
+6-8s: Outside in the swirling snow flurries, the yellow-eyed hyenas hesitate, pacing back and forth along the rim, intimidated by the disciplined wooden spear wall.
 PHYSICAL REALISM & BIOMECHANICS:
-Low-center-of-mass defensive grappling stance; rear foot braced against stone ledge for maximum forward resistance; wind buffeting torch flame without extinguishing it.
+Disciplined collective combat biomechanics; low center of gravity resisting predatory lunge; mechanical triangulation of spear tips creating impassable chokepoint.
 CAMERA:
-Low-angle wide shot holding steady ground position against the rushing wind.
+Over-the-shoulder handheld framing the backs of both muscular warriors and the sharp spear tips leveled at the glowing predator eyes outside.
 AUDIO:
-Howling blizzard wind, crackle and roar of wind-whipped torch flame, leather hide rustling, firm foot-scrapes on frozen limestone. Strictly NO spoken dialogue.
+Muffled savage snarls from snow, hiss of wind, steady heavy breathing of disciplined warriors, crackle of nearby torch. Strictly NO spoken dialogue.
 ```
 
 ---
 
-### CẢNH 52 (8s) — Con Linh Cẩu Đầu Đàn Nhe Nanh Chực Lao Tới
-- **Mã kịch bản:** A4-07
-- **Góc máy:** Cận cảnh tầm thấp kẻ săn mồi (Low-angle close-up predator threat shot).
-- **Nhân vật:** Con linh cẩu đầu đàn khổng lồ (alpha cave hyena), đôi mắt hổ phách, hàm răng nanh to khỏe nhe ra đe dọa.
-- **Diễn biến:**
-  - `0-2s`: Con linh cẩu đầu đàn khổng lồ tiến sát đến thềm đá trước cửa hang, khoảng cách chỉ còn 4 mét; bộ lông dày dựng đứng chống chọi bão tuyết.
-  - `2-5s`: Nó hạ thấp vai, nhe hàm răng nanh to khỏe sắc nhọn gầm gừ; những sợi nước dãi mỏng lấp lánh tinh thể băng trong luồng gió lạnh buốt.
-  - `5-8s`: Hai chân trước cào mạnh xuống thềm đá đóng băng, nó lấy đà chực lao thẳng vào khe cửa hang để cướp mồi.
+### CẢNH 45 (8.0s) — Cảnh 45: Con Linh Cẩu Đầu Đàn Nhe Nanh Chực Lao Vào
+- **Mã kịch bản:** A4-07-ALPHA-HYENA-SNARL
+- **Thời lượng:** 8.0s
+- **Nhân vật & Refs:** Cave Hyena, Cave Mouth
+- **Thoại Nora (Dialogue / Laomedeia):** ""
+- **Tóm tắt hành động (VN):** Con linh cẩu đầu đàn lông xám đốm bước từng bước trên nền tuyết đóng băng cách mũi giáo chỉ 2 mét, nhe hàm răng sắc nhọn có thể nghiền nát xương, gầm gừ đe dọa đòi xông vào hang.
 - **FULL PROMPT (OMNI FLASH R2V):**
+
 ```text
 Photorealistic prehistoric survival documentary wildlife footage.
 SHOT:
-Low-angle close-up shot focusing on the massive alpha cave hyena at the cave threshold.
+Terrifying eye-level close-up handheld shot, framing the alpha Cave Hyena snarling viciously just outside the cave threshold. Handheld camera has intense adrenaline vibrations; strictly NO 180-degree flips.
 SETTING:
-Frosted limestone apron four metres outside Pech de l'Azé cave; gale wind blowing snow crystals horizontally across the beast.
+Snow-dusted limestone doorstep outside Pech de l'Azé cave mouth, illuminated by flickering orange torchlight from the hunters.
 CHARACTERS:
-The alpha cave hyena (Crocuta crocuta spelaea): massive ninety-kilogram predator with bone-crushing jaw structure, scarred muzzle, and amber eyes.
-0-2s: The massive alpha hyena advances another step onto the frosted threshold rocks, bristling its dark dorsal mane against the howling wind.
-2-5s: It wrinkles its scarred snout in a menacing snarl, baring massive bone-crushing conical premolars; thin strands of saliva glisten with ice crystals in the freezing sub-zero air.
-5-8s: Its heavily muscled forelegs grip the icy limestone as it bunches its hindquarters, preparing to test the defensive line with an aggressive lunge.
+The massive alpha female Cave Hyena, snarling violently, foam dripping from massive bone-crushing jaws. Strictly NO humans in frame.
+0-2s: The alpha hyena steps boldly onto the threshold stones, its massive neck bristling with spiky dark guard hairs, amber eyes locked onto the meat scent inside.
+2-5s: It wrinkles its black snout violently, pulling back thick lips to expose massive, blood-stained premolars and bone-cracking carnassials, emitting a deafening, rasping snarl.
+5-8s: Drops of saliva fly from its jaws as it snaps aggressively into the cold air just inches from where the spear tips hover, testing the perimeter.
 PHYSICAL REALISM & BIOMECHANICS:
-Physiologically accurate carnivore aggression: facial muscle contraction baring teeth without artificial monster distortion; thin saliva freezing realistically into micro-crystals in sub-zero wind (NO instant cartoon freezing).
+Ferocious predator biomechanics; accurate carnassial dental anatomy engineered for crushing megafauna bones; saliva droplet aerosolization freezing instantly in sub-zero wind.
 CAMERA:
-Ground-level close-up with intense, steady framing under extreme weather conditions.
+Eye-level close-up handheld holding rock-solid tension on the snarling jaws of the apex carnivore.
 AUDIO:
-Deep, vibrating guttural snarl, claws gouging frozen limestone scree, wind screaming across stone. Strictly NO spoken dialogue.
+Savage bone-chilling roar-snarl, sharp clacking of teeth snapping shut, wet throat growl, howling blizzard wind. Strictly NO spoken dialogue.
 ```
 
 ---
 
-### CẢNH 53 (8s) — Cú Đâm Dằn Mặt Chuẩn Xác Của Người Mạnh Nhất
-- **Mã kịch bản:** A4-08
-- **Góc máy:** Góc quay hành động cận cảnh ngang tầm ngực (Dynamic action shot at cave mouth).
-- **Nhân vật:** Người Mạnh Nhất, ngọn giáo tần bì 2.2m, con linh cẩu đầu đàn lao tới.
-- **Diễn biến:**
-  - `0-2s`: Con linh cẩu bất ngờ chồm lên lao tới cửa hang; Người Mạnh Nhất không hề nao núng, đạp trụ chân sau vững như bàn thạch.
-  - `2-5s`: Bằng hai bàn tay nắm chắc thân giáo, anh đâm một cú dứt khoát ngang ngực về phía trước; mũi giáo gỗ tần bì dừng lại chuẩn xác chỉ cách mõm linh cẩu vài centimet.
-  - `5-8s`: Bị chặn đứng bất ngờ, con linh cẩu phanh gấp, móng vuốt cào trượt trên đá vôi đóng băng; mũi giáo vẫn ghìm chắc trên tay thợ săn, ép dã thú phải lùi bước.
+### CẢNH 46 (8.0s) — Cảnh 46: Cú Đâm Dằn Mặt Chuẩn Xác Của Người Mạnh Nhất
+- **Mã kịch bản:** A4-08-SPEAR-FEINT
+- **Thời lượng:** 8.0s
+- **Nhân vật & Refs:** Strongest, Strongest Spear, Cave Hyena, Cave Mouth
+- **Thoại Nora (Dialogue / Laomedeia):** ""
+- **Tóm tắt hành động (VN):** Khi con linh cẩu chồm lên định vượt qua ngưỡng cửa, Người Mạnh Nhất dậm mạnh chân, phóng mũi giáo gỗ đâm sượt ngay trước mũi nó cắm phập xuống kẽ đá. Con thú giật thót ré lên căm hận lùi lại.
 - **FULL PROMPT (OMNI FLASH R2V):**
+
 ```text
 Photorealistic prehistoric survival documentary action footage.
 SHOT:
-Dynamic medium-wide shot at the cave entrance, camera positioned beside the Strongest.
+Dynamic low-angle action shot at threshold level, capturing the explosive defensive spear strike. Handheld camera catches rapid kinetic recoil; strictly NO 180-degree flips.
 SETTING:
-Pech de l'Azé cave mouth threshold during severe Pleistocene snowstorm; frozen limestone scree, gale-force crosswinds.
+Limestone doorway of Pech de l'Azé cave, snow swirling across the threshold.
 CHARACTERS:
-The Strongest, muscular adult male Neanderthal, wielding his fire-hardened ash thrusting spear. The alpha cave hyena leaping forward. Lips firmly closed throughout.
-0-2s: The alpha hyena lunges forward toward the cave threshold with aggressive momentum.
-2-5s: The Strongest plants his rear foot firmly into the rock, rotating his torso and thrusting the heavy ash spear forward with both hands; the fire-hardened wooden point stops inches short of the animal's snout.
-5-8s: The hyena brakes abruptly, its heavy paws skidding across frozen limestone scree, recoiling with a startled yelp; the hunter keeps both hands locked on the spear shaft, holding ground firmly.
-PHYSICAL REALISM & BIOMECHANICS:
-Controlled kinetic biomechanics: spear remains firmly gripped in both hands throughout (NO projectile throw); wooden point stops short without striking stone (NO sparks from wood on limestone); spear shaft flexes realistically under thrust force; authentic animal traction loss on ice.
-CAMERA:
-Handheld tracking shot with subtle recoil jolt synchronized precisely to the hunter's spear thrust.
-AUDIO:
-Heavy boot impact on stone, creak of flexed ash-wood spear shaft, claws skidding harshly on frozen limestone, startled hyena yelp and growl, wind howl. Strictly NO spoken dialogue.
-```
-
----
-
-### CẢNH 54 (8s) — Gió Bão Tạt Làm Cây Đuốc Phòng Thủ Chập Chờn
-- **Mã kịch bản:** A4-09
-- **Góc máy:** Cận cảnh ngọn đuốc trước luồng bão (Close-up wind crisis shot).
-- **Nhân vật:** Thủ Lĩnh giơ cao đuốc thông, luồng gió bão quất mạnh làm ngọn lửa lụi dần thành đốm than đỏ.
-- **Diễn biến:**
-  - `0-2s`: Một cơn lốc xoáy tuyết cực mạnh từ ngoài thung lũng quất thẳng vào vòm cửa hang, táp thẳng vào ngọn đuốc trên tay Thủ Lĩnh.
-  - `2-5s`: Ngọn lửa vàng bùng giật dữ dội, tạt ngang rồi lụi tắt chỉ còn lại đầu cành thông bốc khói đen và đốm than đỏ âm ỉ chập chờn.
-  - `5-8s`: Thủ Lĩnh vẫn kiên cường ghìm giáo gỗ bằng tay trái canh gác trong bóng tối nhá nhem; bầy linh cẩu phía ngoài nhận thấy ánh lửa tắt liền gầm gừ muốn nhào tới.
-- **FULL PROMPT (OMNI FLASH R2V):**
-```text
-Photorealistic prehistoric survival documentary footage.
-SHOT:
-Close-up handheld shot focusing on the Leader's torch at the cave entrance during a sudden violent gust.
-SETTING:
-Cave entrance threshold, harsh wind swirling snow directly through the frame.
-CHARACTERS:
-The Leader in three-quarter profile, gripping the spear in his left hand while struggling to maintain the torch in his right. Lips firmly closed.
-0-2s: A violent gale gust sweeps directly through the limestone archway, blasting dense snow into the Leader's face and torch.
-2-5s: The bright torch flame flattens horizontally, flickers violently, and gets extinguished by the torrential wind gust, leaving only glowing red embers and a thick trail of white smoke.
-5-8s: The entrance dims dangerously into shadowy twilight; the Leader holds his spear ready in a defensive grip while the hyenas growl eagerly in the dark.
-PHYSICAL REALISM & BIOMECHANICS:
-Physically accurate torch extinction: resin embers remain glowing while open flame is stripped away by high wind velocity; smoke plume whips horizontally.
-CAMERA:
-Close-up shot with organic wind buffeting, tracking the dying torch and the Leader's grim expression.
-AUDIO:
-Deafening roar of violent wind gust, sharp whoosh as open flame extinguishes, hiss of smoking pine resin, menacing hyena growls rising in the dark. Strictly NO spoken dialogue.
-```
-
----
-
-### CẢNH 55 (8s) — Nora Lấy Cành Lửa Từ Bếp Kín Gió
-- **Mã kịch bản:** A4-10
-- **Góc máy:** Góc theo dõi hành động khẩn trương trong hang (Medium action tracking shot).
-- **Nhân vật:** Nora chạy lại bếp lửa chính, rút một cành thông đượm nhựa đang cháy bùng, che chắn bằng thân người.
-- **Diễn biến:**
-  - `0-2s`: Thấy ngọn đuốc phòng thủ phía ngoài bị gió dập tắt, Nora lập tức quay người chạy nhanh về phía bếp lửa trung tâm được che chắn trong hang.
-  - `2-5s`: Cô chộp lấy một cành thông đượm nhựa đang cháy bùng rực rỡ từ hố bếp, dùng hai bàn tay và thân người khum lại che chắn ngọn lửa khỏi luồng gió hút.
-  - `5-8s`: Nora sải bước lao nhanh trở lại phía cửa hang để tiếp viện lửa, ngọn lửa vàng bốc cao soi sáng đường chạy của cô gái.
-- **FULL PROMPT (OMNI FLASH R2V):**
-```text
-Photorealistic prehistoric survival documentary action footage.
-SHOT:
-Medium handheld tracking shot following Nora as she retrieves fresh fire from the sheltered interior hearth.
-SETTING:
-Central hearth chamber of Pech de l'Azé cave, protected from exterior wind drafts.
-CHARACTERS:
-Nora moving with athletic agility. The Neanderthals keep their lips firmly closed throughout; zero words from Neanderthals. Only Nora speaks.
-IDENTITY & OUTFIT LOCK (CRITICAL -- match reference images exactly):
-Nora's face and hair match the Nora face reference sheet, and her build and clothing match the Nora Body sheet. Nora has a voluptuous, curvaceous hourglass figure with a prominent high natural bust, tiny narrow waist, and shapely hips. Nora has honey-blonde hair pulled up into a high wavy ponytail tied with a raw leather thong (strictly NO rubber band), with wispy curtain bangs framing both cheeks. Nora wears a form-fitting tailored tunic of smoked golden-tan deer suede, precision-sewn with fine sinew stitches. CHEST LACING LOCK (CRITICAL): Deep plunging V-neckline laced with thick dark-brown leather thongs forming a prominent X-pattern bridge across her cleavage. CORSET BELT LOCK (CRITICAL): Tightly cinched at her tiny waist with a wide 10-12 cm dark-chocolate brown leather belt. SLEEVE CUFF LOCK (CRITICAL): Long fitted sleeves ending cleanly at the wrists; knee-high hide boots worn on her feet. Strictly NO modern jewelry, NO necklace, NO chain.
-
-CRITICAL VLOG SPEECH LOCK:
-Only Nora speaks English to the camera in her native Laomedeia voice profile; all Neanderthals never speak English and keep their lips firmly closed throughout.
-
-0-2s: Seeing the entrance torch falter from the threshold draft, Nora turns decisively and sprints toward the protected central hearth pit.
-2-5s: She swiftly seizes a thick, highly resinous burning pine brand from the fire, immediately cupping her body and free hand around the base to shield the flame from indoor drafts.
-5-8s: Gripping the blazing branch securely, she accelerates back toward the dark entrance passage, the vibrant yellow flame illuminating her focused, courageous stride.; Nora says in a fierce, breathless whisper: "Fire keeps the perimeter. We hold this cave together."
-PHYSICAL REALISM & BIOMECHANICS:
-Single structured action beat: run, retrieve sheltered fire, shield with body, sprint to defense; natural running kinematics on uneven cave earth; flame aerodynamics trailing behind runner.
-CAMERA:
-Dynamic handheld tracking shot pacing alongside Nora as she retrieves the fire and rushes forward.
-AUDIO:
-Rapid boot footsteps on hard packed earth, crackle and whoosh of burning resinous pine brand, distant blizzard roar. Nora's clear spoken voice/whisper: "Fire keeps the perimeter. We hold this cave together.".
-```
-
----
-
-### CẢNH 56 (8s) — Nora Tiếp Lửa Cho Đuốc Của Thủ Lĩnh
-- **Mã kịch bản:** A4-11
-- **Góc máy:** Cận cảnh vừa thời khắc tiếp lửa phòng thủ (Medium close-up fire transfer shot).
-- **Nhân vật:** Nora, Thủ Lĩnh; cành lửa của Nora châm vào đống than đỏ trên đuốc của Thủ Lĩnh.
-- **Diễn biến:**
-  - `0-2s`: Nora lao tới vị trí chốt chặn, khom người nép sát phía sau lưng Thủ Lĩnh để mượn thân hình vạm vỡ của ông cản bớt luồng gió bão.
-  - `2-5s`: Cô nâng cành thông rực lửa áp thẳng vào đầu đuốc đang đỏ than của Thủ Lĩnh; nhựa thông bắt lửa tức thì, ngọn đuốc bùng cháy trở lại.
-  - `5-8s`: Ngọn lửa vàng cam bùng sáng rực rỡ xua tan bóng tối tại cửa hang, soi sáng toàn bộ phòng tuyến phòng thủ kiên cường.
-- **FULL PROMPT (OMNI FLASH R2V):**
-```text
-Photorealistic prehistoric survival documentary action footage.
-SHOT:
-Medium close-up shot capturing the critical rekindling of the defense torch at the entrance.
-SETTING:
-Pech de l'Azé cave entrance threshold, howling wind whipping snow across the perimeter.
-CHARACTERS:
-Nora approaching from the left; the Leader holding his smoldering torch on the right. Both have lips firmly closed.
-IDENTITY & OUTFIT LOCK (CRITICAL -- match reference images exactly):
-Nora's face and hair match the Nora face reference sheet, and her build and clothing match the Nora Body sheet. Nora has a voluptuous, curvaceous hourglass figure with a prominent high natural bust, tiny narrow waist, and shapely hips. Nora has honey-blonde hair pulled up into a high wavy ponytail tied with a raw leather thong (strictly NO rubber band), with wispy curtain bangs framing both cheeks. Nora wears a form-fitting tailored tunic of smoked golden-tan deer suede, precision-sewn with fine sinew stitches. CHEST LACING LOCK (CRITICAL): Deep plunging V-neckline laced with thick dark-brown leather thongs forming a prominent X-pattern bridge across her cleavage. CORSET BELT LOCK (CRITICAL): Tightly cinched at her tiny waist with a wide 10-12 cm dark-chocolate brown leather belt. SLEEVE CUFF LOCK (CRITICAL): Long fitted sleeves ending cleanly at the wrists; knee-high hide boots worn on her feet. Strictly NO modern jewelry, NO necklace, NO chain.
-
-CRITICAL VLOG SPEECH LOCK:
-Only Nora speaks English to the camera in her native Laomedeia voice profile; all Neanderthals never speak English and keep their lips firmly closed throughout.
-
-0-2s: Nora reaches the entrance line, deftly stepping behind the Leader's broad back to use his muscular frame as a physical windbreak against the blizzard.
-2-5s: She brings her shielded burning pine branch directly against the glowing resin embers of the Leader's extinguished torch, feeding fresh flame into the dry resin.
-5-8s: The Leader's torch instantly catches: a burst of vibrant golden-orange flames roars back to life, blazing vigorously and driving back the shadows at the threshold.; Nora says in a determined whisper: "Take the fire! Keep the line!"
-PHYSICAL REALISM & BIOMECHANICS:
-Physically credible fire ignition: resin-rich wood reignites readily when flame contacts hot ember core; effective human body windbreak mechanics.
-CAMERA:
-Handheld medium close-up focused tightly on the point of contact between both torches, pulling back slightly as flame ignites.
-AUDIO:
-Whoosh of resin catching fire, sizzling crackle of burning pine needles, gale wind howling around the entrance, deep grunt of gratitude from Leader. Nora's clear spoken voice/whisper: "Take the fire! Keep the line!".
-```
-
----
-
-### CẢNH 57 (8s) — Ngọn Lửa & Đội Hình Phòng Thủ Cửa Hang
-- **Mã kịch bản:** A4-12
-- **Góc máy:** Toàn cảnh vừa đội hình lửa trước cửa hang (Medium-wide entrance defense shot).
-- **Nhân vật:** Thủ Lĩnh, Người Mạnh Nhất, Nora; ba cành lửa độc lập soi rọi màn tuyết rơi.
-- **Diễn biến:**
-  - `0-2s`: Tại cửa hang, ba nguồn sáng rực rỡ từ ba cành thông có nhựa được giơ cao ở các vị trí chiến lược, xua tan bóng tối.
-  - `2-5s`: Gió bão tạt mạnh làm từng ngọn lửa uốn cong độc lập, soi rọi từng mảng tuyết rơi trắng xóa trên thềm đá vụn bên ngoài.
-  - `5-8s`: Hai thợ săn cầm chắc ngọn giáo gỗ tần bì, Nora đứng sát cánh nâng cao cành lửa; một thế trận phòng thủ vững như thành đồng trước dã thú.
-- **FULL PROMPT (OMNI FLASH R2V):**
-```text
-Photorealistic prehistoric survival documentary footage.
-SHOT:
-Medium-wide entrance shot capturing the reinforced fire defense line across the limestone portal.
-SETTING:
-Pech de l'Azé cave mouth opening out to the snowbound scree apron, driving blizzard conditions.
-CHARACTERS:
-The Leader, the Strongest, and Nora standing united at the entrance threshold. Lips firmly closed throughout.
+The Strongest lunges forward from the doorway; the alpha Cave Hyena recoils violently. Lips firmly closed.
 OBJECTS IN PLACE:
-Three separate burning resinous pine branches held at distinct positions across the entrance; the Strongest's thrusting spear leveled forward.
-
-IDENTITY & OUTFIT LOCK (CRITICAL -- match reference images exactly):
-Nora's face and hair match the Nora face reference sheet, and her build and clothing match the Nora Body sheet. Nora has a voluptuous, curvaceous hourglass figure with a prominent high natural bust, tiny narrow waist, and shapely hips. Nora has honey-blonde hair pulled up into a high wavy ponytail tied with a raw leather thong (strictly NO rubber band), with wispy curtain bangs framing both cheeks. Nora wears a form-fitting tailored tunic of smoked golden-tan deer suede, precision-sewn with fine sinew stitches. CHEST LACING LOCK (CRITICAL): Deep plunging V-neckline laced with thick dark-brown leather thongs forming a prominent X-pattern bridge across her cleavage. CORSET BELT LOCK (CRITICAL): Tightly cinched at her tiny waist with a wide 10-12 cm dark-chocolate brown leather belt. SLEEVE CUFF LOCK (CRITICAL): Long fitted sleeves ending cleanly at the wrists; knee-high hide boots worn on her feet. Strictly NO modern jewelry, NO necklace, NO chain.
-0-2s: Three distinct burning branches held aloft illuminate the frosted entrance in overlapping amber light, pushing back the dark blizzard perimeter.
-2-5s: Strong exterior crosswinds bend each flame independently, casting dynamic, dancing illumination across the swirling flakes and frosted scree.
-5-8s: The Strongest braces his thrusting spear forward while the Leader and Nora raise their torches high, standing as an unyielding, unified barrier of fire and wood.
+2.2m fire-hardened ash-wood spear striking limestone bedrock inches before the predator's paws.
+0-2s: As the alpha hyena lunges its front paws forward onto the threshold, the Strongest executes a lightning-fast forward lunge.
+2-5s: He drives the heavy spear tip down with surgical precision, stabbing the hardened wooden point deep into a rock fissure just two inches in front of the beast's nose.
+5-8s: The concussive strike sparks against stone; the startled hyena yelps, scrambles backward in terror, its claws scratching for traction as it retreats two metres into the snowdrifts.
 PHYSICAL REALISM & BIOMECHANICS:
-Realistic independent fire aerodynamics: three distinct torches reacting independently to local turbulent wind eddies (NO artificial uniform "flame barrier"); authentic group defensive spacing.
+High-precision non-lethal deterrent strike; kinetic shock wave travelling up ash spear shaft; predator fear recoil mechanics: tucked tail, scrambling paws losing friction.
 CAMERA:
-Medium-wide handheld shot holding steady ground framing, capturing the full width of the defended threshold.
+Low-angle handheld following the violent downward thrust of the spear and the hyena's sudden backward retreat.
 AUDIO:
-Roar of swirling blizzard wind, multiple crackling torches fluttering in the gale, clatter of sleet on stone. Strictly NO spoken dialogue.
+Sharp explosive crack of hard wood impacting rock, startled high-pitched hyena yelp, frantic claw scrambling on stone, deep human grunt of exertion. Strictly NO spoken dialogue.
 ```
 
 ---
 
-### CẢNH 58 (8s) — Bầy Linh Cẩu Cụp Đuôi Tháo Lui Vào Màn Bão
-- **Mã kịch bản:** A4-03
-- **Góc máy:** Góc quay từ cửa hang nhìn ra bầy dã thú tháo lui (Medium shot of retreating predators).
-- **Nhân vật:** Ba con linh cẩu hang động chùn bước trước ngọn lửa và mũi giáo kiên quyết, quay đầu tháo lui vào bão tuyết.
-- **Diễn biến:**
-  - `0-2s`: Trước sức nóng của ngọn lửa bùng lên và đầu giáo gỗ sắc nhọn chĩa thẳng, con linh cẩu đầu đàn khựng lại, ngập ngừng không dám tiến thêm.
-  - `2-5s`: Nó gầm gừ một tiếng khó chịu, cụp tai lùi lại ba bước; hai con linh cẩu phía sau cũng lùi dần trên thềm đá vụn đóng băng.
-  - `5-8s`: Cả bầy linh cẩu quay đầu, cụp đuôi lủi thủi biến mất vào màn bão tuyết mù mịt của thung lũng Kỷ Băng Hà.
+### CẢNH 47 (8.0s) — Cảnh 47: Gió Bão Tạt Làm Cây Đuốc Phòng Thủ Chập Chờn
+- **Mã kịch bản:** A4-09-TORCH-DYING
+- **Thời lượng:** 8.0s
+- **Nhân vật & Refs:** Leader, Cave Mouth
+- **Thoại Nora (Dialogue / Laomedeia):** ""
+- **Tóm tắt hành động (VN):** Một cơn gió tuyết giật cực mạnh thốc thẳng vào cửa hang làm cây đuốc thông của Thủ Lĩnh bùng khói đen và lụi tàn dần. Bóng tối và giá rét tràn tới đe dọa phòng tuyến, bầy linh cẩu lập tức rục rịch tiến lên.
 - **FULL PROMPT (OMNI FLASH R2V):**
+
+```text
+Photorealistic prehistoric survival documentary crisis footage.
+SHOT:
+Medium close-up handheld shot on the Leader holding the dying torch at the cave entrance. Handheld camera catches rising atmospheric crisis; strictly NO 180-degree flips.
+SETTING:
+Pech de l'Azé cave threshold, freezing blizzard wind screaming through the rock fissure.
+CHARACTERS:
+The Leader holds his pine torch, face bathed in failing orange light. Hyena eyes gleam greedily in the encroaching darkness outside. Lips firmly closed.
+0-3s: A sudden violent vortex of sub-zero wind blasts directly through the doorway, blowing freezing snow spray across the Leader's face.
+3-6s: The gale-force draft violently smothers the pine torch; the orange flame sputters, belches a thick wisp of black pine soot, and collapses into a weak dying ember core.
+6-8s: Deep darkness rushes in from the blizzard; outside on the snow ledge, the four hyenas sense the fading light and instantly take two aggressive steps forward.
+PHYSICAL REALISM & BIOMECHANICS:
+Aerodynamic blow-out of open combustion in high-velocity gale; rapid illumination decay shifting ambient spectrum from warm 2000K orange to cold 6500K blizzard blue; predator opportunistic behavior.
+CAMERA:
+Medium close-up handheld tracking the sputtering flame and the sudden encroachment of predatory shadows.
+AUDIO:
+Roaring screech of violent wind gust, sharp sputtering hiss of smothered fire, aggressive hyena growls stepping closer. Strictly NO spoken dialogue.
+```
+
+---
+
+### CẢNH 48 (8.0s) — Cảnh 48: Nora Hành Động: Tiếp Lửa Từ Đống Than Hồng Bếp Lửa
+- **Mã kịch bản:** A4-10-NORA-SNATCHES-FIRE
+- **Thời lượng:** 8.0s
+- **Nhân vật & Refs:** Nora, Nora Body, Cave Interior
+- **Thoại Nora (Dialogue / Laomedeia):** "The wind killed the torch! I'm getting fire from the hearth!"
+- **Tóm tắt hành động (VN):** Nhận thấy nguy cơ phòng tuyến sụp đổ, Nora không hề trốn chạy. Cô lập tức quay ngoắt chạy tới bếp lửa trung tâm, chộp lấy một cành thông tẩm nhựa đang cháy rừng rực để đem ra chi viện.
+- **FULL PROMPT (OMNI FLASH R2V):**
+
+```text
+Photorealistic prehistoric survival documentary heroic action footage.
+SHOT:
+Dynamic handheld tracking shot moving swiftly with Nora inside the firelit cavern. Camera captures urgent agile movement; strictly NO 180-degree flips.
+SETTING:
+Central limestone hearth of Pech de l'Azé cave, glowing with brilliant red-orange coals and leaping flames.
+CHARACTERS:
+Nora acts decisively without hesitation, dressed in her form-fitting golden-tan deer suede tunic and leggings.
+IDENTITY & OUTFIT LOCK (CRITICAL -- match reference images exactly):
+Nora matches face and Body sheets. Voluptuous figure, honey-blonde ponytail flying with rapid turns, golden suede tunic, deep plunging laced V-neckline, chocolate belt, long sleeves.
+CRITICAL VLOG SPEECH LOCK:
+Nora delivers rapid, determined action delivery in her native Laomedeia voice profile: "The wind killed the torch! I'm getting fire from the hearth!"
+0-3s: Seeing the front entrance plunge into shadow, Nora spins around from the corridor and sprints toward the blazing central limestone hearth.
+3-6s: She kneels smoothly on one knee, reaching with bare steady hands to grab a thick, resinous dry pine branch that is blazing fiercely with roaring orange fire.
+6-8s: She lifts the flaming torch branch high, shielding the roaring flame with her body as she turns to sprint back toward the front line: "The wind killed the torch! I'm getting fire from the hearth!"
+PHYSICAL REALISM & BIOMECHANICS:
+Decisive human agency under survival stress; resinous pine combustion producing fierce persistent flame resistant to wind; athletic pivot and acceleration over stone floor.
+CAMERA:
+Dynamic handheld sprint tracking shot dropping low beside the hearth then rising with Nora as she lifts the flaming branch.
+AUDIO:
+Rapid boot steps on stone, roaring crackle of resinous fire, Nora's determined urgent spoken voice: "The wind killed the torch! I'm getting fire from the hearth!"
+```
+
+---
+
+### CẢNH 49 (8.0s) — Cảnh 49: Nora Lao Ra Cửa Hang Tiếp Đuốc Cho Thủ Lĩnh
+- **Mã kịch bản:** A4-11-RELIGHTING-TORCH
+- **Thời lượng:** 8.0s
+- **Nhân vật & Refs:** Nora, Nora Body, Leader, Cave Mouth
+- **Thoại Nora (Dialogue / Laomedeia):** "Take the fire! Hold the line!"
+- **Tóm tắt hành động (VN):** Nora lao ra vách đá cửa hang, đưa thẳng cành thông đang cháy rừng rực vào cây đuốc của Thủ Lĩnh. Ngọn đuốc bùng cháy sáng rực trở lại trong tiếng nổ lách tách của nhựa thông.
+- **FULL PROMPT (OMNI FLASH R2V):**
+
+```text
+Photorealistic prehistoric survival documentary action footage.
+SHOT:
+Dynamic medium two-shot handheld at threshold level, capturing Nora transferring fire to the Neanderthal Leader. Handheld camera has visceral adrenaline energy; strictly NO 180-degree flips.
+SETTING:
+Threshold arch of Pech de l'Azé cave, blizzard howling just outside in the gloom.
+CHARACTERS:
+The Leader braces against the wind with dying torch; Nora charges into frame holding the blazing pine branch. Both warriors act in perfect synchrony. Leader lips closed; only Nora speaks.
+IDENTITY & OUTFIT LOCK (CRITICAL -- match reference images exactly):
+Nora matches face and Body sheets. Voluptuous figure, honey-blonde ponytail, golden suede tunic, plunging laced V-neckline, chocolate belt, face flushed with firelight.
+CRITICAL VLOG SPEECH LOCK:
+Nora shouts in an authoritative, commanding delivery: "Take the fire! Hold the line!"
+0-3s: Nora charges right up to the Leader's shoulder, sliding into position beside him with the blazing pine branch held forward against the biting blizzard wind.
+3-6s: She thrusts the roaring orange flames directly into the pitch-soaked head of the Leader's dying torch; volatile pine resins ignite instantly with a crackling roar of golden light.
+6-8s: The Leader's torch erupts back into full blazing fury; the Leader locks eyes with Nora for a split second with fierce, fiery respect as Nora screams: "Take the fire! Hold the line!"
+PHYSICAL REALISM & BIOMECHANICS:
+Flash thermal ignition of pine pitch under direct flame contact; dramatic explosive return of illumination pushing shadows back ten metres; cooperative tactical bonding.
+CAMERA:
+Dynamic handheld medium two-shot framed tightly on the two flaming branches joining and exploding into light.
+AUDIO:
+Violent whoosh of reignited pine resins, loud crackling pops of sap, howling blizzard wind, Nora's fierce commanding shout: "Take the fire! Hold the line!"
+```
+
+---
+
+### CẢNH 50 (8.0s) — Cảnh 50: Bức Tường Lửa Bùng Sáng Xua Tan Bóng Tối
+- **Mã kịch bản:** A4-12-BLAZING-WALL
+- **Thời lượng:** 8.0s
+- **Nhân vật & Refs:** Nora, Nora Body, Leader, Strongest, Strongest Spear, Cave Mouth
+- **Thoại Nora (Dialogue / Laomedeia):** ""
+- **Tóm tắt hành động (VN):** Cả ba người cùng giương cao đuốc lửa và ngọn giáo, ánh sáng cam rực rỡ và tàn lửa bay mù mịt trong gió tuyết, chiếu sáng bừng toàn bộ sườn dốc đá ngoài cửa hang, áp đảo bầy thú dữ.
+- **FULL PROMPT (OMNI FLASH R2V):**
+
+```text
+Photorealistic prehistoric survival documentary triumphant climax footage.
+SHOT:
+Wide-angle heroic handheld shot from outside looking in at the cave mouth, framing the three defenders bathed in blazing firelight against the blizzard darkness. Handheld camera maintains awe-inspiring power; strictly NO 180-degree flips.
+SETTING:
+The limestone threshold arch of Pech de l'Azé cave, surrounded by dark howling blizzard drifts.
+CHARACTERS:
+The Leader, Strongest, and Nora stand side-by-side across the entire width of the entrance, brandishing roaring torches and leveling spears. Lips closed for all; united primeval force.
+0-3s: Three massive roaring torches blaze together in full fury, casting brilliant amber luminescence fifty feet out into the swirling white storm.
+3-6s: Cascades of glowing golden embers fly off the resinous pine branches, whipped by the freezing wind into a magnificent fiery curtain across the doorway.
+6-8s: The three defenders stand completely fearless, impenetrable and invincible against the darkness of the Pleistocene night.
+PHYSICAL REALISM & BIOMECHANICS:
+Collective defense triumph; optical brilliance of high-temperature combustion illuminating turbulent blizzard flurries; psychological deterrence of fire over apex predators.
+CAMERA:
+Heroic wide-angle handheld capturing the grand physical scale of the fiery barrier against the frozen wilderness.
+AUDIO:
+Roaring fury of crackling pine torches, whistling gale winds tearing through fire, deep triumphant human breaths. Strictly NO spoken dialogue.
+```
+
+---
+
+### CẢNH 51 (8.0s) — Cảnh 51: Bầy Linh Cẩu Hoảng Sợ Cụp Đuôi Tháo Lui
+- **Mã kịch bản:** A4-13-HYENAS-RETREAT
+- **Thời lượng:** 8.0s
+- **Nhân vật & Refs:** Cave Hyena, Cave Mouth, Pech Valley
+- **Thoại Nora (Dialogue / Laomedeia):** ""
+- **Tóm tắt hành động (VN):** Bị chói mắt bởi ánh lửa đột ngột và sợ hãi trước sức nóng của nhựa thông nổ lách tách, bầy linh cẩu cụp đuôi, gầm rừ lùi dần rồi quay đầu biến mất vào màn bão tuyết trắng xóa.
+- **FULL PROMPT (OMNI FLASH R2V):**
+
 ```text
 Photorealistic prehistoric survival documentary wildlife footage.
 SHOT:
-Medium shot from just inside the cave entrance, looking out across the illuminated scree apron as the hyena pack retreats.
+Handheld POV perspective from the cave threshold, tracking the retreating predator pack through the swirling snowstorm. Handheld camera captures decisive predator defeat; strictly NO 180-degree flips.
 SETTING:
-Frosted limestone apron outside Pech de l'Azé cave, illuminated by the torches' amber glow against dark blizzard skies.
+Frosted limestone apron outside Pech de l'Azé cave, illuminated by sweeping orange torchlight.
 CHARACTERS:
-The three Pleistocene cave hyenas backing away across the snow.
-0-2s: Confronted by the sudden revival of brilliant torches and unwavering spear points, the alpha hyena hesitates, stopping its advance on the icy scree.
-2-5s: The predator snaps its massive jaws in frustration, vocalizing a low disgruntled grunt, and slowly backs away several paces with lowered tail and flattened ears.
-5-8s: The pack turns away from the cave threshold, trotting down into the swirling white blizzard until their bulky silhouettes dissolve completely into the storm.
+The four Cave Hyenas retreating in chaotic fear. Strictly NO humans in frame; predator defeat.
+0-3s: Blinded by the sudden brilliant explosion of fire and terrified by flying burning sparks, the alpha hyena recoils, whimpering with tucked ears.
+3-6s: The entire pack turns tail simultaneously, scrambling over the frozen boulders, tails clamped tight between hind legs.
+6-8s: The four massive hyenas sprint down the snow slope, their dark silhouettes vanishing completely into the howling whiteout of the blizzard.
 PHYSICAL REALISM & BIOMECHANICS:
-Realistic predator risk-benefit decision: natural wariness of concentrated fire and armed human aggression; authentic retreat gait on slippery frozen scree.
+Animal fear response to fire and pyrotechnic sparks; rapid locomotion shift from territorial pacing to full flight; snow spray thrown back by fleeing paws.
 CAMERA:
-Handheld tracking shot panning smoothly with the retreating hyenas into the whiteout blizzard.
+Handheld tracking shot panning outward into the storm as the last hyena disappears into the snow.
 AUDIO:
-Retreating hyena growls and whining vocalizations, paws crunching on frozen gravel, howling blizzard wind, torches crackling behind camera. Strictly NO spoken dialogue.
+Startled high-pitched hyena whimpers, scrambling claw skids on ice, howling gale wind swallowing their cries. Strictly NO spoken dialogue.
 ```
 
 ---
 
-### CẢNH 59 (8s) — Cú Thở Phào Sau Trận Chiến Sinh Tử
-- **Mã kịch bản:** A4-14
-- **Góc máy:** Góc quay cận cảnh vừa bên trong cửa hang (Medium close-up relief shot).
-- **Nhân vật:** Thủ Lĩnh, Người Mạnh Nhất, Nora; hạ giáo, thở phào hơi khói trắng sau khi xua đuổi dã thú.
-- **Diễn biến:**
-  - `0-2s`: Thấy bầy linh cẩu đã rút lui hoàn toàn, Người Mạnh Nhất từ từ hạ ngọn giáo gỗ xuống, tựa cán giáo vào thềm đá thở dốc.
-  - `2-5s`: Thủ Lĩnh thở ra một luồng hơi trắng dài đặc quánh vì giá lạnh và căng thẳng, nét mặt dũng mãnh giãn ra trong sự nhẹ nhõm.
-  - `5-8s`: Nora đặt cành lửa vào giá đá, chống hai tay lên đầu gối thở phào, mỉm cười nhìn hai thợ săn; họ đã cùng nhau bảo vệ tổ ấm thành công.
+### CẢNH 52 (8.0s) — Cảnh 52: Cú Thở Phào Kiệt Sức Sau Trận Tử Thủ Sinh Tử
+- **Mã kịch bản:** A4-14-BREATHLESS-RELIEF
+- **Thời lượng:** 8.0s
+- **Nhân vật & Refs:** Nora, Nora Body, Leader, Strongest, Cave Mouth
+- **Thoại Nora (Dialogue / Laomedeia):** "They're gone. We held the cave... We survived."
+- **Tóm tắt hành động (VN):** Cơn gió bão vẫn gầm thét nhưng nguy cơ đã qua đi. Nora dựa lưng vào vách đá thở hổn hển, hơi thở phả khói cuồn cuộn. Thủ Lĩnh hạ ngọn giáo xuống, nhìn cô đầy trân trọng.
 - **FULL PROMPT (OMNI FLASH R2V):**
+
 ```text
-Photorealistic prehistoric survival documentary footage.
+Photorealistic prehistoric survival documentary aftermath footage.
 SHOT:
-Medium close-up handheld shot framing the collective release of tension just inside the cave entrance.
+Medium two-shot handheld shot beside the entrance arch, capturing the raw physical decompression after survival combat. Handheld camera catches natural exhaustion tremors; strictly NO 180-degree flips.
 SETTING:
-Just inside Pech de l'Azé cave entrance, warm firelight reflections on damp rock, wind roaring outside.
+Inside the shelter of Pech de l'Azé cave mouth, warm torchlight calming into steady glow. Outside the blizzard rages harmlessly.
 CHARACTERS:
-The Leader, Strongest, and Nora settling from high-adrenaline combat alertness into profound relief. Lips firmly closed throughout.
+Nora slides down against the rock wall, heaving deep gasping breaths. The Leader lowers his spear, leaning against the doorway with profound warrior fatigue. Lips closed for Neanderthal.
 IDENTITY & OUTFIT LOCK (CRITICAL -- match reference images exactly):
-Nora's face and hair match the Nora face reference sheet, and her build and clothing match the Nora Body sheet. Nora has a voluptuous, curvaceous hourglass figure with a prominent high natural bust, tiny narrow waist, and shapely hips. Nora has honey-blonde hair pulled up into a high wavy ponytail tied with a raw leather thong (strictly NO rubber band), with wispy curtain bangs framing both cheeks. Nora wears a form-fitting tailored tunic of smoked golden-tan deer suede, precision-sewn with fine sinew stitches. CHEST LACING LOCK (CRITICAL): Deep plunging V-neckline laced with thick dark-brown leather thongs forming a prominent X-pattern bridge across her cleavage. CORSET BELT LOCK (CRITICAL): Tightly cinched at her tiny waist with a wide 10-12 cm dark-chocolate brown leather belt. SLEEVE CUFF LOCK (CRITICAL): Long fitted sleeves ending cleanly at the wrists; knee-high hide boots worn on her feet. Strictly NO modern jewelry, NO necklace, NO chain.
-
-0-2s: Confirming the predators have retreated, the Strongest slowly lowers his heavy wooden spear, resting the butt against the limestone floor and exhaling deeply.
-2-5s: The Leader lowers his torch, exhaling a thick plume of white vapor from dilated nostrils as the battle tension releases from his weathered brow.
-5-8s: Nora secures her torch in a wall niche, resting her hands on her thighs as she breathes deeply, exchanging a shared look of triumph and survival with the hunters.
-PHYSICAL REALISM & BIOMECHANICS:
-Authentic post-adrenaline physiological decompression: slowing respiratory rates, relaxing shoulder muscles, heavy white condensation plumes in cold air.
-CAMERA:
-Handheld shot gently swaying with natural breathing rhythm, capturing each character's subtle expression.
-AUDIO:
-Deep ragged exhalations of white breath, soft clatter of spear base resting on stone, distant muffled storm outside. Strictly NO spoken dialogue.
-```
-
----
-
-### CẢNH 60 (8s) — Cái Đập Vai Công Nhận Của Thủ Lĩnh
-- **Mã kịch bản:** A4-15
-- **Góc máy:** Cận cảnh vừa thời khắc gắn kết sinh tử (Medium close-up kinship bond shot).
-- **Nhân vật:** Thủ Lĩnh bước lại gần Nora, đặt bàn tay nặng trịch lên vai cô đầy tôn kính.
-- **Diễn biến:**
-  - `0-2s`: Thủ Lĩnh quay lại nhìn Nora; ánh mắt ông tràn đầy sự cảm phục trước hành động cứu nguy kịp thời của cô gái.
-  - `2-5s`: Ông bước tới một bước, đưa bàn tay to dày đầy vết chai sần đập nhẹ hai nhịp chắc nịch lên vai áo da hươu của Nora.
-  - `5-8s`: Thủ Lĩnh gật đầu dứt khoát một cái; một cử chỉ công nhận tối cao về bản lĩnh sinh tồn của Nora như một thành viên ruột thịt.
-- **FULL PROMPT (OMNI FLASH R2V):**
-```text
-Photorealistic prehistoric survival documentary footage.
-SHOT:
-Medium close-up shot capturing the decisive physical recognition between the Leader and Nora.
-SETTING:
-Entrance passage inside Pech de l'Azé cave, warm amber firelight playing across both figures.
-CHARACTERS:
-The Leader steps forward to face Nora. Both have lips firmly closed throughout.
-IDENTITY & OUTFIT LOCK (CRITICAL -- match reference images exactly):
-Nora's face and hair match the Nora face reference sheet, and her build and clothing match the Nora Body sheet. Nora has a voluptuous, curvaceous hourglass figure with a prominent high natural bust, tiny narrow waist, and shapely hips. Nora has honey-blonde hair pulled up into a high wavy ponytail tied with a raw leather thong (strictly NO rubber band), with wispy curtain bangs framing both cheeks. Nora wears a form-fitting tailored tunic of smoked golden-tan deer suede, precision-sewn with fine sinew stitches. CHEST LACING LOCK (CRITICAL): Deep plunging V-neckline laced with thick dark-brown leather thongs forming a prominent X-pattern bridge across her cleavage. CORSET BELT LOCK (CRITICAL): Tightly cinched at her tiny waist with a wide 10-12 cm dark-chocolate brown leather belt. SLEEVE CUFF LOCK (CRITICAL): Long fitted sleeves ending cleanly at the wrists; knee-high hide boots worn on her feet. Strictly NO modern jewelry, NO necklace, NO chain.
-
+Nora matches face and Body sheets. Voluptuous figure, honey-blonde ponytail loose around shoulders, golden suede tunic dusted in soot and snow, laced V-neckline heaving with deep breaths.
 CRITICAL VLOG SPEECH LOCK:
-Only Nora speaks English to the camera in her native Laomedeia voice profile; all Neanderthals never speak English and keep their lips firmly closed throughout.
-
-0-2s: The Leader turns fully toward Nora, his weathered eyes softening with profound respect for her courage during the crisis.
-2-5s: He takes one deliberate step forward and places his heavy, calloused right hand firmly on Nora's shoulder, giving two firm, reassuring pats against her suede tunic.
-5-8s: The Leader nods his heavy brow with deep solemn pride; Nora stands tall, smiling softly as an unbreakable bond of mutual survival is forged.; Nora says in a relieved whisper: "We held them off... We survived the night."
+Only Nora speaks English to camera in her native Laomedeia voice profile: "They're gone. We held the cave... We survived."
+0-3s: Nora lets her flaming branch rest against stone as her knees finally give out; she slides down the limestone wall, chest heaving violently with adrenaline let-down.
+3-6s: Massive clouds of breath vapor billow from her mouth; the Leader lowers his heavy spear, turning his soot-stained, rugged face toward Nora with profound, quiet respect.
+6-8s: Nora looks directly into the lens, wiping cold sweat from her brow with trembling fingers; Nora whispers in raw emotional relief: "They're gone. We held the cave... We survived."
 PHYSICAL REALISM & BIOMECHANICS:
-Authentic Neanderthal physical touch: heavy, firm palm placement conveying non-verbal social affirmation without hesitance; natural shoulder recoil under friendly impact.
+Post-combat parasympathetic crash: rapid drop in muscle tension, trembling extremities; heavy pulmonary gasping venting dense vapor into dry cave air.
 CAMERA:
-Intimate handheld medium close-up holding steady focus on the hand on shoulder and their expressive faces.
+Medium two-shot settling low to eye level with Nora, framing both her relief and the Leader's respect.
 AUDIO:
-Firm dull thud of heavy hand patting suede tunic, soft mutual exhalations, crackle of nearby torch. Nora's clear spoken voice/whisper: "We held them off... We survived the night.".
+Ragged gasping breaths of human survivors, steady hiss of crackling pine torches, howling storm outside, Nora's trembling relieved whisper: "They're gone. We held the cave... We survived."
 ```
 
 ---
 
-### CẢNH 61 (8s) — Đêm Bão Tuyết Quây Quần Bên Bếp Lửa Phục Hồi
-- **Mã kịch bản:** A4-16
-- **Góc máy:** Toàn cảnh vừa sinh hoạt hồi phục bên bếp lửa (Medium-wide hearth recovery shot).
-- **Nhân vật:** Nora và cả bộ tộc quây quần sát bên bếp lửa ấm áp giữa lòng hang, tiếng bão gầm rú bên ngoài.
-- **Diễn biến:**
-  - `0-2s`: Cả bộ tộc quay trở lại quanh bếp lửa đá vôi trung tâm; than hồng được khơi thêm dăm gỗ bùng lên ngọn lửa ấm cúng.
-  - `2-5s`: Người Phụ Nữ Lớn Tuổi rót thêm nước ấm lá thông; Người Mạnh Nhất ngồi kiểm tra lại mũi giáo; Thủ Lĩnh ngồi xếp bằng che chắn cho cả nhóm.
-  - `5-8s`: Nora ngồi giữa những người bạn tiền sử, cảm nhận hơi ấm và sự chở che tuyệt đối giữa đêm bão tuyết khốc liệt nhất của Kỷ Băng Hà.
+### CẢNH 53 (8.0s) — Cảnh 53: Cái Đập Vai Công Nhận Của Thủ Lĩnh
+- **Mã kịch bản:** A4-15-SHOULDER-SLAP
+- **Thời lượng:** 8.0s
+- **Nhân vật & Refs:** Nora, Nora Body, Leader, Cave Mouth
+- **Thoại Nora (Dialogue / Laomedeia):** ""
+- **Tóm tắt hành động (VN):** Thủ Lĩnh bước lại gần, dùng bàn tay to nặng đập mạnh lên vai Nora một cái dứt khoát — dấu hiệu công nhận tuyệt đối một chiến binh thực thụ đã cùng bảo vệ hang ổ và bầy đàn.
 - **FULL PROMPT (OMNI FLASH R2V):**
-```text
-Photorealistic prehistoric survival documentary footage.
-SHOT:
-Medium-wide hearthside shot capturing the peaceful domestic recovery after the predator siege.
-SETTING:
-Main central hearth of Pech de l'Azé cave, radiating deep golden-amber warmth while the blizzard rages muffled far outside.
-CHARACTERS:
-All five adult clan members gathered close around the glowing limestone hearth. All have lips firmly closed.
-IDENTITY & OUTFIT LOCK (CRITICAL -- match reference images exactly):
-Nora's face and hair match the Nora face reference sheet, and her build and clothing match the Nora Body sheet. Nora has a voluptuous, curvaceous hourglass figure with a prominent high natural bust, tiny narrow waist, and shapely hips. Nora has honey-blonde hair pulled up into a high wavy ponytail tied with a raw leather thong (strictly NO rubber band), with wispy curtain bangs framing both cheeks. Nora wears a form-fitting tailored tunic of smoked golden-tan deer suede, precision-sewn with fine sinew stitches. CHEST LACING LOCK (CRITICAL): Deep plunging V-neckline laced with thick dark-brown leather thongs forming a prominent X-pattern bridge across her cleavage. CORSET BELT LOCK (CRITICAL): Tightly cinched at her tiny waist with a wide 10-12 cm dark-chocolate brown leather belt. SLEEVE CUFF LOCK (CRITICAL): Long fitted sleeves ending cleanly at the wrists; knee-high hide boots worn on her feet. Strictly NO modern jewelry, NO necklace, NO chain.
 
-0-2s: The clan gathers tightly around the central limestone hearth as fresh pine logs are placed onto glowing coals, sending up welcoming bursts of warm sparks.
-2-5s: The Old Woman tends the warm pine-needle infusion, the Strongest checks his spear, and the Leader sits cross-legged in calm patriarchal vigilance.
-5-8s: Nora sits among them on a soft deer pelt, taking in the profound sanctuary of the firelit hearth as the fierce blizzard howls harmlessly outside the cave walls.
+```text
+Photorealistic prehistoric survival documentary emotional bond footage.
+SHOT:
+Over-the-shoulder medium close-up handheld shot, framing the Leader from Nora's angle, capturing the definitive primeval gesture of warrior acceptance. Handheld camera maintains steady reverent presence; strictly NO 180-degree flips.
+SETTING:
+Threshold corridor of Pech de l'Azé cave, warm firelight dancing on damp stone walls.
+CHARACTERS:
+The Leader stands over Nora. Nora looks up from her seated position against the wall. The Leader's lips stay firmly closed; zero words.
+IDENTITY & OUTFIT LOCK (CRITICAL -- match reference images exactly):
+Nora matches face and Body sheets. Voluptuous figure, honey-blonde ponytail, golden suede tunic, deep plunging laced V-neckline, chocolate belt.
+0-3s: The Leader steps up to Nora, looking down into her eyes with solemn, unwavering dignity; there is no longer any suspicion in his gaze.
+3-6s: He extends his enormous, calloused right palm and delivers a heavy, solid slap onto Nora's shoulder—a blunt, forceful primeval accolade of warrior fraternity.
+6-8s: Nora jolts slightly under the heavy physical impact, then smiles through tears of exhaustion; the Leader nods once with grim, unbreakable respect.
 PHYSICAL REALISM & BIOMECHANICS:
-Relaxed adult resting postures around radiant heat source; natural social clustering reflecting human thermal and emotional bonding under environmental stress.
+Forceful biomechanical impact: heavy hand delivering solid kinetic force to trapezius muscle without injury; genuine mutual eye contact establishing unshakeable pack bond.
 CAMERA:
-Gentle handheld medium-wide shot smoothly framing the entire adult clan in warm, balanced chiaroscuro light.
+Over-the-shoulder medium close-up, capturing the Leader's face, the impactful shoulder slap, and Nora's emotional response.
 AUDIO:
-Warm crackle and pop of fresh pine logs on fire, soft rustle of hides, distant muffled blizzard howl. Strictly NO spoken dialogue.
+Solid heavy thud of palm slapping thick leather tunic, crackle of fire, deep quiet warrior exhale. Strictly NO spoken dialogue.
 ```
 
 ---
 
-### CẢNH 62 (8s) — Nora Nằm Nghỉ Trong Ổ Cành Thông & Da Gấu
-- **Mã kịch bản:** A4-17
-- **Góc máy:** Cận cảnh vừa nghỉ ngơi trong ổ ngủ (Medium close-up resting shot).
-- **Nhân vật:** Nora nằm cuộn mình trong ổ cành thông và da gấu ấm áp, một tay nắm lấy chiếc móng đại bàng trên ngực.
-- **Diễn biến:**
-  - `0-2s`: Nora nằm nghiêng cuộn mình trong lớp da gấu dày dặn trên ổ cành thông êm ái, hơi ấm từ các viên đá giữ nhiệt bên cạnh tỏa lên dịu nhẹ.
-  - `2-5s`: Một bàn tay cô khẽ nắm lấy chiếc móng vuốt đại bàng trước ngực áo, vệt đất son đỏ trên má vẫn còn nguyên vẹn; mắt cô từ từ khép lại.
-  - `5-8s`: Sau một đêm dài sinh tồn trọn vẹn vượt qua giá rét và hiểm nguy, Nora chìm vào giấc ngủ an lành giữa tổ ấm của người Neanderthal.
+### CẢNH 54 (8.0s) — Cảnh 54: Bữa Ăn Chiến Thắng Bên Bếp Lửa: Thịt Nướng Than Hồng
+- **Mã kịch bản:** A4-16-FEAST-HEARTH
+- **Thời lượng:** 8.0s
+- **Nhân vật & Refs:** Nora, Nora Body, Leader, Strongest, Old Woman, Cave Interior
+- **Thoại Nora (Dialogue / Laomedeia):** "Fresh roasted bison fat. Twenty-four hours of starving... Nothing has ever tasted better."
+- **Tóm tắt hành động (VN):** Bộ tộc quây quần bên bếp lửa trung tâm. Những xiên thịt bò bison tươi nướng xèo xèo trên than hồng thơm lừng. Nora nhận một miếng thịt nướng mỡ màng, cắn ngập miệng và tận hưởng hương vị cứu mạng.
 - **FULL PROMPT (OMNI FLASH R2V):**
+
 ```text
-Photorealistic prehistoric survival documentary footage.
+Photorealistic prehistoric survival documentary feast footage.
 SHOT:
-Medium close-up shot looking down gently at Nora resting in the sleeping alcove.
+Medium handheld group shot around the blazing limestone hearth, capturing the celebratory communal feast. Handheld camera maintains warm domestic intimacy; strictly NO 180-degree flips.
 SETTING:
-The sheltered sleeping alcove of Pech de l'Azé cave, illuminated by faint, warm ember glow from the distant hearth.
+Central hearth chamber of Pech de l'Azé cave, alive with crackling flames, glowing coals, and rising savoury meat smoke.
 CHARACTERS:
-Nora resting peacefully on thick fur bedding. The Neanderthals keep their lips firmly closed throughout; zero words from Neanderthals. Only Nora speaks.
-CONTINUITY & BODY LOCK (CRITICAL):
-Nora wears her golden suede tunic; single eagle talon necklace on her chest; red ochre mark on left cheek; resting peacefully after a full night of survival (synchronizing with 24 Hours title).
-
+All clan members sit cross-legged on dry fur pelts around the fire: Nora, the Leader, Strongest, and Old Woman. Meat sizzles on green wooden spits. Lips closed for Neanderthals; only Nora speaks.
 IDENTITY & OUTFIT LOCK (CRITICAL -- match reference images exactly):
-Nora's face and hair match the Nora face reference sheet, and her build and clothing match the Nora Body sheet. Nora has a voluptuous, curvaceous hourglass figure with a prominent high natural bust, tiny narrow waist, and shapely hips. Nora has honey-blonde hair pulled up into a high wavy ponytail tied with a raw leather thong (strictly NO rubber band), with wispy curtain bangs framing both cheeks. Nora wears a form-fitting tailored tunic of smoked golden-tan deer suede, precision-sewn with fine sinew stitches. CHEST LACING LOCK (CRITICAL): Deep plunging V-neckline laced with thick dark-brown leather thongs forming a prominent X-pattern bridge across her cleavage. CORSET BELT LOCK (CRITICAL): Tightly cinched at her tiny waist with a wide 10-12 cm dark-chocolate brown leather belt. SLEEVE CUFF LOCK (CRITICAL): Long fitted sleeves ending cleanly at the wrists; knee-high hide boots worn on her feet. Strictly NO modern jewelry, NO necklace, NO chain.
-0-2s: Nora rests comfortably curled on her side in the thick bear and reindeer pelts layered over springy pine boughs, feeling the gentle residual warmth of the nearby hearth stones.
-2-5s: Her fingers lightly curl around the eagle talon pendant resting against her suede chest; the faint red ochre mark glows softly on her cheek in the dim amber light.
-5-8s: Her eyelids slowly close as fatigue yields to complete safety, drifting into deep, restorative sleep after enduring a full night of Pleistocene survival.; Nora says in a drowsy, grateful whisper: "Warmest bed in the Pleistocene... Safe from the storm."
-PHYSICAL REALISM & BIOMECHANICS:
-Natural breathing rhythm of sleep; realistic compression of soft fur bedding under body weight; authentic relaxation of facial musculature.
-CAMERA:
-Gentle handheld shot floating softly above Nora, slowly settling into peaceful stillness.
-AUDIO:
-Soft slow rhythmic breathing, gentle settling crackle of distant dying hearth coals, muffled wind outside. Nora's clear spoken voice/whisper: "Warmest bed in the Pleistocene... Safe from the storm.".
-
+Nora matches face and Body sheets. Voluptuous figure, honey-blonde ponytail, golden suede tunic, laced V-neckline, chocolate belt. Cheeks rosy from firelight.
 CRITICAL VLOG SPEECH LOCK:
-Only Nora speaks English to the camera in her native Laomedeia voice profile; all Neanderthals never speak English and keep their lips firmly closed throughout.
-```
-
----
-
-### CẢNH 63 (8s) — Ngọn Lửa Canh Gác Trong Đêm Sâu
-- **Mã kịch bản:** A4-18
-- **Góc máy:** Toàn cảnh tĩnh lặng đêm sâu trong hang (Atmospheric wide night sentinel shot).
-- **Nhân vật:** Thủ Lĩnh ngồi canh gác bên đống than hồng ấm áp, bảo vệ giấc ngủ của cả bộ tộc.
-- **Diễn biến:**
-  - `0-2s`: Không gian hang động chìm vào tĩnh mịch của đêm khuya; đống than hồng ở bếp trung tâm tỏa ra ánh sáng đỏ cam huyền ảo.
-  - `2-5s`: Thủ Lĩnh ngồi xếp bằng uy nghiêm bên bếp lửa, tay tựa ngọn giáo gỗ, ánh mắt sắc sảo nhìn về phía vòm cửa hang canh gác cho cả bộ tộc.
-  - `5-8s`: Một hình ảnh biểu tượng tuyệt đẹp về tinh thần trách nhiệm và bản năng bảo vệ giống nòi bền bỉ của người Neanderthal.
-- **FULL PROMPT (OMNI FLASH R2V):**
-```text
-Photorealistic prehistoric survival documentary atmospheric footage.
-SHOT:
-Atmospheric wide shot capturing the deep subterranean silence of the sleeping sanctuary.
-SETTING:
-Central hearth chamber of Pech de l'Azé cave in the dead of winter night, lit only by deep glowing red embers.
-CHARACTERS:
-The Leader sits sentinel in silhouette beside the embers, spear upright beside him. In the shadowed background, the sleeping forms rest peacefully. Lips firmly closed.
-0-2s: The cavern rests in deep nocturnal stillness; the central limestone hearth radiates a low, deep crimson glow across the surrounding stone floor.
-2-5s: The Leader sits motionless in watchful vigilance, his broad silhouette framed against the dying coals, his gaze monitoring the distant entrance passage.
-5-8s: A wisp of aromatic pine smoke curls upward into the vaulted darkness, capturing the timeless guardian spirit of Paleolithic humanity.
+Only Nora speaks English to camera in her native Laomedeia voice profile: "Fresh roasted bison fat. Twenty-four hours of starving... Nothing has ever tasted better."
+0-3s: Thick slabs of fresh Steppe Bison meat and rich yellow marrow fat sizzle on flat river stones over red coals, fat dripping into embers and flaring in fragrant sparks.
+3-6s: The Old Woman hands Nora a steaming, freshly roasted steak on a clean slab of bark; Nora takes a deep, appreciative bite, closing her eyes in sheer culinary bliss.
+6-8s: Nora smiles radiantly toward the camera lens, firelight reflecting in her eyes; Nora whispers in deep emotional satisfaction: "Fresh roasted bison fat. Twenty-four hours of starving... Nothing has ever tasted better."
 PHYSICAL REALISM & BIOMECHANICS:
-Low-key chiaroscuro lighting: long natural shadows cast by low-angle ember light; motionless isometric posture of an experienced night sentinel.
+Sizzling lipid combustion flaring miniature yellow flames; authentic thermal steam rising from cooked meat; primitive communal meal etiquette: peaceful, quiet, nourishing.
 CAMERA:
-Locked-off wide static shot with subtle breathing organic micro-shake, emphasizing subterranean tranquility.
+Handheld medium shot panning from sizzling meat on the stones to Nora taking her first bite.
 AUDIO:
-Soft ticking crackle of cooling coals, slow rhythmic breathing of sleeping figures, exterior storm subsiding into silence. Strictly NO spoken dialogue.
+Loud sizzling spit of rendering animal fat on coals, crackling embers, soft chew of satisfaction, Nora's ecstatic whispered voice: "Fresh roasted bison fat. Twenty-four hours of starving... Nothing has ever tasted better."
 ```
 
 ---
 
-# HỒI 5: BÌNH MINH, KỶ VẬT & LỜI TẠM BIỆT (CẢNH 64 — 75)
-*(Thời lượng: 08:24 – 10:00 | Trọng tâm: Bình minh thung lũng Dordogne, trao tặng quặng Pyrite & móng đại bàng, cái ôm chia tay và lời kết 24 giờ sinh tồn)*
+### CẢNH 55 (8.0s) — Cảnh 55: Bước Vào Gian Phòng Nghi Lễ Hang Sâu
+- **Mã kịch bản:** A4-17-DEEP-CAVE-CALL
+- **Thời lượng:** 8.0s
+- **Nhân vật & Refs:** Nora, Nora Body, Leader, Old Woman, Cave Interior
+- **Thoại Nora (Dialogue / Laomedeia):** "The meal is over. Now... they're taking me into the deep cave."
+- **Tóm tắt hành động (VN):** Bữa ăn kết thúc, Thủ Lĩnh và Người Phụ Nữ Lớn Tuổi đứng dậy cầm ngọn đuốc ra hiệu cho Nora. Họ dẫn cô bước vào nhánh hang tối sâu thẳm tĩnh mịch — nơi lưu giữ nghệ thuật và tâm linh nguyên thủy.
+- **FULL PROMPT (OMNI FLASH R2V):**
+
+```text
+Photorealistic prehistoric survival documentary transition footage.
+SHOT:
+Handheld tracking shot moving behind the Leader and Old Woman as they guide Nora into the dark, vaulted sacred corridor of the deep cave. Handheld camera has solemn forward momentum; strictly NO 180-degree flips.
+SETTING:
+Deep subterranean limestone passage of Pech de l'Azé, ancient stalactites and smooth calcite flows glistening in torchlight. Complete silence and profound isolation from the blizzard above.
+CHARACTERS:
+The Leader walks ahead holding a single pine torch; the Old Woman walks beside Nora. Nora follows with respectful footsteps. Neanderthals keep lips firmly closed; only Nora speaks.
+IDENTITY & OUTFIT LOCK (CRITICAL -- match reference images exactly):
+Nora matches face and Body sheets. Voluptuous figure, honey-blonde ponytail, golden suede tunic, deep plunging laced V-neckline, chocolate belt, long sleeves.
+CRITICAL VLOG SPEECH LOCK:
+Only Nora speaks English to camera in her native Laomedeia voice profile: "The meal is over. Now... they're taking me into the deep cave."
+0-3s: The golden torchlight dances rhythmically across the pristine white limestone ceiling and calcite draperies as the small procession moves into the deep cavern.
+3-6s: The temperature stabilizes into pure cool silence, free from wind; the passage widens into a magnificent natural domed sanctuary with flat stone altars.
+6-8s: Nora films the ancient stone vaults with hushed reverence, whispering to the camera: "The meal is over. Now... they're taking me into the deep cave."
+PHYSICAL REALISM & BIOMECHANICS:
+Subterranean acoustic dampening: complete elimination of surface wind noise; specular flickering reflections off damp mineral calcite; reverent walking cadence.
+CAMERA:
+Handheld tracking shot gliding forward through the limestone corridor, tilting upward to capture the towering stalactite arches.
+AUDIO:
+Soft rhythmic footsteps on stone, soft rhythmic flutter of torch flame, muffled dripping of distant water droplet, Nora's reverent hushed whisper: "The meal is over. Now... they're taking me into the deep cave."
+```
 
 ---
 
-### CẢNH 64 (8s) — Bình Minh Rực Rỡ Sau Bão Trên Thung Lũng Dordogne
-- **Mã kịch bản:** A5-01
-- **Góc máy:** Toàn cảnh góc cao từ gờ vách đá vôi (High-angle landscape shot from limestone ridge).
-- **Nhân vật:** Thung lũng Dordogne phủ đầy tuyết trắng tinh khôi, ánh nắng bình minh vàng hồng rọi sáng dòng sông băng và rừng thông.
-- **Diễn biến:**
-  - `0-2s`: Bão tuyết đã tan hoàn toàn khi rạng đông xuất hiện; bầu trời Kỷ Băng Hà chuyển sang màu xanh trong trẻo và hồng kim lộng lẫy.
-  - `2-5s`: Ánh nắng bình minh đầu tiên chiếu xiên qua các rặng thông phủ tuyết, dát vàng lên dòng sông uốn lượn và vách đá Pech de l'Azé sừng sững.
-  - `5-8s`: Không gian thung lũng Dordogne hiện lên tĩnh lặng, hùng vĩ và nguyên sơ tuyệt đối; một ngày mới bắt đầu sau đêm giông bão sinh tồn.
+### CẢNH 56 (8.0s) — Cảnh 56: Nghi Thức Đất Son Đỏ (Red Ochre): Ấn Ký Hòa Nhập
+- **Mã kịch bản:** A4-18-RED-OCHRE-MARK
+- **Thời lượng:** 8.0s
+- **Nhân vật & Refs:** Nora, Nora Body, Leader, Old Woman, Cave Interior
+- **Thoại Nora (Dialogue / Laomedeia):** "Red ochre on my skin. A mark of belonging. I'm one of them."
+- **Tóm tắt hành động (VN):** Trong gian phòng nghi lễ, Người Phụ Nữ Lớn Tuổi nghiền thỏi đất son đỏ thành bột mịn trộn với mỡ hươu. Thủ Lĩnh nhúng ngón tay vào sơn đỏ, chậm rãi vạch một đường ấn ký ấm áp lên gò má phải của Nora.
 - **FULL PROMPT (OMNI FLASH R2V):**
+
+```text
+Photorealistic prehistoric survival documentary spiritual ritual footage.
+SHOT:
+Intense medium close-up handheld shot at eye level, capturing the sacred ritual painting ceremony. Handheld camera maintains solemn, reverent stillness; strictly NO 180-degree flips.
+SETTING:
+Sacred inner sanctuary chamber of Pech de l'Azé cave. A flat limestone slab holds lumps of dark red hematite mineral (red ochre) and tallow paste. Flickering torchlight bathes the scene in warm crimson glow.
+CHARACTERS:
+The Leader steps close to Nora. Beside them, the Old Woman holds the stone paint palette. Nora looks up with solemn, wide eyes. Lips closed for Neanderthals; only Nora speaks.
+IDENTITY & OUTFIT LOCK (CRITICAL -- match reference images exactly):
+Nora matches face and Body sheets. Voluptuous figure, honey-blonde ponytail, golden suede tunic, laced V-neckline, chocolate belt. Her cheek is bare initially.
+CRITICAL VLOG SPEECH LOCK:
+Only Nora speaks English to camera in her native Laomedeia voice profile: "Red ochre on my skin. A mark of belonging. I'm one of them."
+0-3s: The Leader dips his thick calloused index finger into the rich crimson red ochre paste resting on the stone slab.
+3-6s: With deliberate, solemn gentleness, he reaches up and draws a smooth, broad crimson stroke across Nora's right cheekbone and temple—the sacred clan mark of adoption.
+6-8s: Nora holds her breath under the cool mineral touch, a tear of profound belonging welling in her eye; Nora whispers in an emotional, cracked voice: "Red ochre on my skin. A mark of belonging. I'm one of them."
+PHYSICAL REALISM & BIOMECHANICS:
+Tactile mineral adhesion: thick viscous iron-oxide pigment spreading smoothly across skin dermis; authentic human ritual solemnity; flickering crimson shadows dancing across limestone.
+CAMERA:
+Intense eye-level medium close-up holding steady focus on the finger applying red ochre to Nora's cheek.
+AUDIO:
+Soft wet scrape of pigment on stone palette, gentle breath exhalations, crackling torch flame, Nora's deeply emotional whisper: "Red ochre on my skin. A mark of belonging. I'm one of them."
+```
+
+---
+
+### CẢNH 57 (8.0s) — Cảnh 57: Vách Đá Dấu Bàn Tay: Thổi Bột Màu Âm Bản 51.000 Năm
+- **Mã kịch bản:** A4-19-HAND-STENCILS
+- **Thời lượng:** 8.0s
+- **Nhân vật & Refs:** Nora, Nora Body, Old Woman, Cave Interior
+- **Thoại Nora (Dialogue / Laomedeia):** "Fifty-one thousand years apart... and our hands are on the same stone."
+- **Tóm tắt hành động (VN):** Người phụ nữ áp bàn tay lên vách đá vôi phẳng, ngậm bột đất son đỏ thổi mạnh tạo nên dấu bàn tay âm bản hoàn hảo. Nora giơ bàn tay thon dài của mình ướm cạnh dấu tay tiền sử, một khoảnh khắc vượt thời gian.
+- **FULL PROMPT (OMNI FLASH R2V):**
+
+```text
+Photorealistic prehistoric survival documentary rock art footage.
+SHOT:
+Close-up handheld shot focusing on the flat limestone cave wall, capturing the creation and comparison of negative hand stencils. Handheld camera has gentle documentary presence; strictly NO 180-degree flips.
+SETTING:
+Sacred wall of hands deep inside Pech de l'Azé cave, where dozens of ancient red and black negative hand stencils gleam on the pale limestone surface.
+CHARACTERS:
+The Old Woman pulls her left hand away from the wall to reveal a freshly sprayed red handprint. Nora brings her slender right hand up beside it. Lips closed for Old Woman.
+IDENTITY & OUTFIT LOCK (CRITICAL -- match reference images exactly):
+Nora matches face and Body sheets. Voluptuous figure, honey-blonde ponytail, golden suede tunic, deep plunging laced V-neckline. Red ochre mark on her right cheek.
+CRITICAL VLOG SPEECH LOCK:
+Only Nora speaks English to camera in her native Laomedeia voice profile: "Fifty-one thousand years apart... and our hands are on the same stone."
+0-3s: The Old Woman removes her broad hand from the wall: a perfect, crisp negative hand stencil with a halo of crimson ochre mist appears on the white rock.
+3-6s: Nora brings her slender, modern hand up to hover one centimetre directly beside the ancient Neanderthal handprint, visually comparing the broad, powerful skeletal anatomy with her own.
+6-8s: Nora turns her face toward the lens, her eyes shining with historical awe: "Fifty-one thousand years apart... and our hands are on the same stone."
+PHYSICAL REALISM & BIOMECHANICS:
+Prehistoric spit-spray aerosol stencil physics: fine soft feathered edges of iron-oxide powder; stark anatomical contrast between robust Neanderthal metacarpals and modern human hand.
+CAMERA:
+Close-up handheld tracking from the fresh hand stencil to Nora's hand alongside it and her awed face.
+AUDIO:
+Soft whisper of air settling, quiet breathing, faint torch crackle, Nora's hushed awe-filled spoken voice: "Fifty-one thousand years apart... and our hands are on the same stone."
+```
+
+---
+
+### CẢNH 58 (8.0s) — Cảnh 58: Kỷ Vật Thiêng Liêng: Vòng Móng Vuốt Đại Bàng Đục Lỗ
+- **Mã kịch bản:** A4-20-EAGLE-TALON
+- **Thời lượng:** 8.0s
+- **Nhân vật & Refs:** Nora, Nora Body, Old Woman, Cave Interior
+- **Thoại Nora (Dialogue / Laomedeia):** "An eagle talon necklace... The oldest jewelry on Earth."
+- **Tóm tắt hành động (VN):** Người Phụ Nữ Lớn Tuổi mở một túi da nhỏ, lấy ra chiếc móng vuốt đại bàng đuôi trắng đen bóng được đục lỗ tinh xảo, nhẹ nhàng lồng sợi dây da qua đầu đeo vào cổ Nora. Biểu tượng trang sức lâu đời nhất lịch sử nhân loại.
+- **FULL PROMPT (OMNI FLASH R2V):**
+
+```text
+Photorealistic prehistoric survival documentary artifact footage.
+SHOT:
+Medium close-up handheld shot, capturing the gifting and donning of the sacred eagle talon necklace. Handheld camera maintains intimate reverence; strictly NO 180-degree flips.
+SETTING:
+Sacred chamber deep in Pech de l'Azé cave, golden torchlight illuminating ancient polished stone.
+CHARACTERS:
+The Old Woman places the necklace over Nora's head. Nora bows her neck respectfully, then lifts the pendant to rest on her chest. Lips closed for Old Woman.
+IDENTITY & OUTFIT LOCK (CRITICAL -- match reference images exactly):
+Nora matches face and Body sheets. Voluptuous figure, honey-blonde ponytail, golden suede tunic with plunging laced V-neckline, red ochre mark on cheek. A single polished black eagle talon on leather cord now rests against her chest.
+CRITICAL VLOG SPEECH LOCK:
+Only Nora speaks English to camera in her native Laomedeia voice profile: "An eagle talon necklace... The oldest jewelry on Earth."
+0-3s: The Old Woman carefully holds a braided deer-leather cord bearing a single, curved, razor-sharp white-tailed eagle talon, polished black with ancient stone cut-marks.
+3-6s: With gentle ceremony, she slips the leather cord over Nora's high golden ponytail, letting the curved black talon settle perfectly against Nora's golden suede tunic right below the lacing.
+6-8s: Nora cups the glossy black eagle talon in her fingers, gazing down at it in astonishment before whispering to the camera: "An eagle talon necklace... The oldest jewelry on Earth."
+PHYSICAL REALISM & BIOMECHANICS:
+Functional dressing physics: leather loop slipping smoothly over head and settling on neck; authentic archaeological detail of cut-marks on talon base; glossy keratin specular reflection.
+CAMERA:
+Medium close-up handheld tracking the talon being placed over Nora's head and resting on her chest.
+AUDIO:
+Soft rustle of hair and leather cord, quiet breath of reverence, Nora's whispered amazed voice: "An eagle talon necklace... The oldest jewelry on Earth."
+```
+
+---
+
+
+# HỒI 5: TIỆC NƯỚNG THÂU ĐÊM, NGHI LỄ TỘC VÀ BÌNH MINH CHIA TAY (CẢNH 59 — 75)
+
+---
+
+### CẢNH 59 (8.0s) — Cảnh 59: Đêm Bình Yên Trong Ổ Da Gấu & Cành Thông
+- **Mã kịch bản:** A5-01-COZY-NEST
+- **Thời lượng:** 8.0s
+- **Nhân vật & Refs:** Nora, Nora Body, Cave Interior
+- **Thoại Nora (Dialogue / Laomedeia):** "Hour twenty. Outside it's minus twenty. In here... it's the safest place on Earth."
+- **Tóm tắt hành động (VN):** Nora nằm nghỉ ngơi thoải mái trong ổ ngủ lót cành thông tươi và da gấu dày ấm áp. Ánh lửa bập bùng hắt lên trần hang, bão tuyết gầm thét ngoài xa, gương mặt cô hoàn toàn bình yên.
+- **FULL PROMPT (OMNI FLASH R2V):**
+
+```text
+Photorealistic prehistoric survival documentary cozy night footage.
+SHOT:
+Low-angle handheld selfie vlog perspective, framing Nora resting comfortably in the clan's sleeping alcove. Camera holds steady gentle breathing movement; strictly NO 180-degree flips.
+SETTING:
+Deep domestic sleeping alcove of Pech de l'Azé cave. Floor is deeply layered with fragrant green pine branches and thick brown bear furs. Distant hearth glows with comforting amber embers.
+CHARACTERS:
+Nora lies propped on one elbow, wrapped warmly in dense bear fur, wearing the eagle talon necklace and golden suede tunic.
+IDENTITY & OUTFIT LOCK (CRITICAL -- match reference images exactly):
+Nora matches face and Body sheets. Voluptuous figure, honey-blonde ponytail relaxed over shoulder, golden suede tunic, eagle talon necklace, red ochre mark on cheek.
+CRITICAL VLOG SPEECH LOCK:
+Nora delivers intimate, soft-spoken bedtime vlog delivery in her native Laomedeia voice profile: "Hour twenty. Outside it's minus twenty. In here... it's the safest place on Earth."
+0-3s: Nora adjusts the thick, heavy bear fur around her shoulders, sinking comfortably into the springy cushion of fresh green pine needles beneath her.
+3-6s: She looks out toward the glowing embers of the main hearth, where soft warm shadows dance across the vaulted limestone ceiling in peaceful rhythms.
+6-8s: Nora turns her relaxed, content face toward the lens, breathing softly as she whispers into the microphone: "Hour twenty. Outside it's minus twenty. In here... it's the safest place on Earth."
+PHYSICAL REALISM & BIOMECHANICS:
+Thermal insulation mechanics: deep fur loft trapping body heat; pine needle bed providing springy orthopedic comfort; deep physical relaxation after surviving mortal danger.
+CAMERA:
+Low-angle intimate handheld selfie shot holding steady on Nora's peaceful, firelit face.
+AUDIO:
+Soft muffled rustle of bear fur, distant howling of blizzard wind outside, gentle crackle of dying embers, Nora's soft comforting whisper: "Hour twenty. Outside it's minus twenty. In here... it's the safest place on Earth."
+```
+
+---
+
+### CẢNH 60 (8.0s) — Cảnh 60: Ngọn Lửa Canh Gác Trong Đêm Sâu
+- **Mã kịch bản:** A5-02-NIGHT-WATCH
+- **Thời lượng:** 8.0s
+- **Nhân vật & Refs:** Strongest, Strongest Spear, Cave Mouth
+- **Thoại Nora (Dialogue / Laomedeia):** ""
+- **Tóm tắt hành động (VN):** Bếp lửa chuyển dần sang than hồng rực rỡ như sao đêm. Người Mạnh Nhất ngồi lặng lẽ canh gác bên cửa hang, ngọn giáo gỗ dựng đứng bên cạnh, vóc dáng uy nghi bảo vệ sự bình yên cho bộ tộc.
+- **FULL PROMPT (OMNI FLASH R2V):**
+
+```text
+Photorealistic prehistoric survival documentary night atmosphere footage.
+SHOT:
+Cinematic medium shot from inside the cave corridor looking toward the threshold, capturing the lone Neanderthal sentry. Handheld camera has quiet contemplative stillness; strictly NO 180-degree flips.
+SETTING:
+Threshold of Pech de l'Azé cave, deep night. Glowing red coals of a small defensive fire cast deep amber rim light. Outside, the blizzard winds are finally abating.
+CHARACTERS:
+The Strongest sits vigilantly on a stone boulder, wrapped in a bison pelt, holding his 2.2m ash spear upright. Strictly NO English dialogue.
+0-3s: Deep silence fills the cave; a bed of glowing red embers pulses with gentle orange breaths of heat in the cold air.
+3-6s: The Strongest sits completely motionless on his boulder, muscular silhouette outlined against the deep blue night sky visible through the doorway.
+6-8s: He scans the peaceful, quiet snow slopes outside, steady and eternal, guarding the sleeping clan through the Pleistocene winter night.
+PHYSICAL REALISM & BIOMECHANICS:
+Vigilant sentinel posture; subtle thermal breathing vapor from nose; slow pulsing thermodynamics of dying oak embers.
+CAMERA:
+Steady cinematic medium shot holding a magnificent composition of warrior, spear, and glowing embers.
+AUDIO:
+Faint whistling sigh of dying wind, soft ticking clink of cooling embers, deep steady breath of the sentry. Strictly NO spoken dialogue.
+```
+
+---
+
+### CẢNH 61 (8.0s) — Cảnh 61: Bình Minh Rực Rỡ Sau Bão Trên Thung Lũng Dordogne
+- **Mã kịch bản:** A5-03-DAWN-DRONE
+- **Thời lượng:** 8.0s
+- **Nhân vật & Refs:** Pech Valley
+- **Thoại Nora (Dialogue / Laomedeia):** ""
+- **Tóm tắt hành động (VN):** Bão tuyết đã tan hoàn toàn. Những tia nắng vàng đầu tiên của bình minh chiếu rọi qua rặng thông phủ tuyết trắng tinh khôi, dòng sông dưới thung lũng lấp lánh ánh bạc tạo nên khung cảnh nguyên sơ kỳ vĩ.
+- **FULL PROMPT (OMNI FLASH R2V):**
+
 ```text
 Photorealistic prehistoric survival documentary landscape footage.
 SHOT:
-High-angle panoramic landscape shot filmed from a natural high limestone ridge overlooking the Dordogne river valley.
+Breathtaking cinematic wide glide shot, sweeping smoothly across the pristine snow-covered glacial valley at first light. Camera glides with majestic stability; strictly NO modern artifacts.
 SETTING:
-The vast Pleistocene river valley of the Dordogne at sunrise, about 51,000 years ago. Pristine fresh powder snow blankets the limestone cliffs and ancient pine forests.
+The vast Dordogne river valley, 51,000 years ago Pleistocene dawn. Pure white snow blankets the ancient forest canopy; pale golden sunlight breaks through pink-tinged morning clouds.
 CHARACTERS:
-No figures visible in foreground; pure landscape panoramic study at dawn.
-OBJECTS IN PLACE:
-The winding frozen river reflects soft morning light; a thin curl of blue wood smoke rises peacefully from the distant cave mouth at the base of the limestone cliff.
-0-2s: By dawn, the storm had finally broken: clear pale-blue skies emerge as the first golden-pink morning light crests the distant eastern limestone ridges.
-2-5s: Warm golden sunlight washes across miles of untouched snow-draped pine forests, illuminating the glistening frozen river valley with pristine crystalline clarity.
-5-8s: The camera holds across the breathtaking glacial wilderness, completely silent and serene after the violent blizzard of the night before.
+Strictly NO people in frame; pure primeval Earth majesty.
+0-3s: The camera glides smoothly forward over snow-laden pine ridges; the frozen Dordogne river below winds through the valley floor like a silver ribbon.
+3-6s: Brilliant golden sunlight crests the eastern limestone plateau, illuminating rising mist vapors and bathing the white landscape in warm amber and rose light.
+6-8s: The camera pans gently toward the towering limestone cliffs of Pech de l'Azé, where a thin, peaceful ribbon of white woodsmoke rises into the crystal-clear morning sky.
 PHYSICAL REALISM & BIOMECHANICS:
-Physically accurate atmospheric scattering at dawn: soft pink alpine glow transitioning to crisp golden morning light; natural fresh powder snow topography with no tracks.
+Optical atmospheric refraction: diamond dust ice crystals sparkling in morning sun rays; pristine untouched snowpack with zero modern footprints or structures.
 CAMERA:
-Elevated stationary panoramic landscape shot with subtle organic breathing motion from a natural cliff vantage point; strictly NO drone flight aesthetics.
+High-altitude cinematic wide glide moving steadily toward the cliff face with graceful cinematic majesty.
 AUDIO:
-Gentle glacial morning breeze rustling through frozen pines, distant cry of an eagle, deep quiet wilderness resonance. Strictly NO spoken dialogue.
+Crisp pristine silence of a frozen morning, faint musical breath of morning wind, distant call of a Pleistocene eagle. Strictly NO spoken dialogue.
 ```
 
 ---
 
-### CẢNH 65 (8s) — Nora Bước Ra Cửa Hang Đón Nắng Mai
-- **Mã kịch bản:** A5-02
-- **Góc máy:** Góc theo dõi tầm thấp tiến ra cửa hang (Low-angle tracking shot).
-- **Nhân vật:** Nora sải bước tự tin bước ra ngưỡng cửa hang đá vôi, đón những tia nắng ấm đầu tiên.
-- **Diễn biến:**
-  - `0-2s`: Nora sải bước tự tin từ lòng hang bước ra ngưỡng cửa đá vôi; chiếc móng đại bàng trên ngực áo và vệt đất son trên má sáng rỡ dưới ánh mai.
-  - `2-5s`: Cô bước ra thềm sỏi phủ lớp tuyết mới tinh khôi, đứng thẳng người hít sâu bầu không khí trong lành, sảng khoái của buổi sớm mai.
-  - `5-8s`: Nora đưa tay che nhẹ mắt nhìn ngắm thung lũng rực rỡ nắng vàng; một nụ cười rạng rỡ và tự hào nở trên gương mặt người vlogger sinh tồn.
+### CẢNH 62 (8.0s) — Cảnh 62: Nora Bước Ra Ngưỡng Cửa Hang Đón Nắng Mai
+- **Mã kịch bản:** A5-04-STEPPING-INTO-SUN
+- **Thời lượng:** 8.0s
+- **Nhân vật & Refs:** Nora, Nora Body, Cave Mouth, Pech Valley
+- **Thoại Nora (Dialogue / Laomedeia):** "Morning after the storm. Dordogne bathed in pure, untouched light."
+- **Tóm tắt hành động (VN):** Nora bước ra thềm đá ngoài cửa hang, đón những tia nắng ấm áp đầu tiên chiếu lên gương mặt. Không khí trong lành tinh khiết tuyệt đối của Trái Đất 51.000 năm trước làm rạng rỡ nụ cười của cô.
 - **FULL PROMPT (OMNI FLASH R2V):**
+
 ```text
 Photorealistic prehistoric survival documentary footage.
 SHOT:
-Low-angle handheld tracking shot following Nora as she steps out through the limestone portal into the morning sun.
+Handheld medium tracking shot following from behind Nora as she steps out of the cave shadow into the radiant golden morning sunlight. Handheld camera captures joyful uplifting forward movement; strictly NO 180-degree flips.
 SETTING:
-Threshold apron of Pech de l'Azé cave, covered in a pristine fresh blanket of powdery snow glistening under golden morning rays.
+The threshold apron of Pech de l'Azé cave, dazzling with fresh pristine morning snow under brilliant golden sunshine.
 CHARACTERS:
-Nora stepping into the light, athletic, radiant, and completely unharmed. The Neanderthals keep their lips firmly closed throughout; zero words from Neanderthals. Only Nora speaks.
+Nora strides out with confident, refreshed energy in her tailored golden deer suede tunic, eagle talon necklace, and high golden ponytail.
 IDENTITY & OUTFIT LOCK (CRITICAL -- match reference images exactly):
-Nora's face and hair match the Nora face reference sheet, and her build and clothing match the Nora Body sheet. Nora has a voluptuous, curvaceous hourglass figure with a prominent high natural bust, tiny narrow waist, and shapely hips. Nora has honey-blonde hair pulled up into a high wavy ponytail tied with a raw leather thong (strictly NO rubber band), with wispy curtain bangs framing both cheeks. Nora wears a form-fitting tailored tunic of smoked golden-tan deer suede, precision-sewn with fine sinew stitches. CHEST LACING LOCK (CRITICAL): Deep plunging V-neckline laced with thick dark-brown leather thongs forming a prominent X-pattern bridge across her cleavage. CORSET BELT LOCK (CRITICAL): Tightly cinched at her tiny waist with a wide 10-12 cm dark-chocolate brown leather belt. SLEEVE CUFF LOCK (CRITICAL): Long fitted sleeves ending cleanly at the wrists; knee-high hide boots worn on her feet. Strictly NO modern jewelry, NO necklace, NO chain.
-
+Nora matches face and Body sheets. Voluptuous figure, honey-blonde ponytail glistening in sunlight, golden suede tunic, laced V-neckline, chocolate belt, eagle talon on chest, red ochre mark on cheek.
 CRITICAL VLOG SPEECH LOCK:
-Only Nora speaks English to the camera in her native Laomedeia voice profile; all Neanderthals never speak English and keep their lips firmly closed throughout.
-
-0-2s: Nora walks purposefully out from the shadowed cavern threshold into the bright, crisp morning air, her boots leaving fresh crisp footprints in the virgin snow.
-2-5s: Warm golden sunlight bathes her face and blonde ponytail; she takes a deep, invigorating inhalation of clean glacial air, her shoulders relaxed and strong.
-5-8s: She lifts one hand gently to shade her eyes, gazing out over the glittering golden valley with an expression of quiet pride and profound gratitude.; Nora says in an exhilarated, bright voice: "Morning after the blizzard! Dordogne bathed in pure golden sunlight."
+Only Nora speaks English to camera in her native Laomedeia voice profile: "Morning after the storm. Dordogne bathed in pure, untouched light."
+0-3s: Nora walks through the entrance arch, emerging from the dark cavern into the blinding brilliance of golden morning sunlight.
+3-6s: She stops at the rock ledge, closing her eyes and tilting her head back to bathe in the radiant sun warmth, drawing a deep, revitalizing breath of crisp mountain air.
+6-8s: Nora turns toward the camera lens, her face glowing with health and happiness, her ponytail dancing in the gentle breeze: "Morning after the storm. Dordogne bathed in pure, untouched light."
 PHYSICAL REALISM & BIOMECHANICS:
-Authentic boot compaction mechanics in fresh powder snow; natural squinting and pupil constriction adjusting from dark cavern to brilliant snow daylight.
+Direct sunlight lens flare and golden rim-lighting; breath vapor glistening like gold dust in sunbeams; natural squinting and ocular adjustment from darkness to dazzling snow reflection.
 CAMERA:
-Handheld tracking shot moving smoothly beside Nora, pivoting to capture her face bathed in morning light.
+Handheld tracking shot stepping out with Nora, orbiting gently to capture her radiant, sunlit expression.
 AUDIO:
-Crisp crunch of boots packing fresh dry snow, gentle morning wind, deep peaceful breath of fresh air. Nora's clear spoken voice/whisper: "Morning after the blizzard! Dordogne bathed in pure golden sunlight.".
+Crunch of boots on crisp fresh powder snow, soft gentle morning breeze, Nora's bright joyful spoken voice: "Morning after the storm. Dordogne bathed in pure, untouched light."
 ```
 
 ---
 
-### CẢNH 66 (8s) — Bộ Tộc Neanderthal Chuẩn Bị Cho Ngày Mới
-- **Mã kịch bản:** A5-03
-- **Góc máy:** Toàn cảnh vừa sinh hoạt buổi sáng ngoài cửa hang (Medium shot of morning routine).
-- **Nhân vật:** Thủ Lĩnh, Người Mạnh Nhất, Người Phụ Nữ Lớn Tuổi, Nữ Thợ Săn bắt đầu ngày mới trên thềm đá.
-- **Diễn biến:**
-  - `0-2s`: Trên thềm đá bên ngoài cửa hang, các thành viên bộ tộc Neanderthal đã thức dậy bắt đầu nhịp sinh tồn quen thuộc của ngày mới.
-  - `2-5s`: Người Mạnh Nhất đứng kiểm tra lại đầu mũi giáo gỗ dưới nắng; Nữ Thợ Săn xếp lại các bó cành thông khô; Thủ Lĩnh quan sát thung lũng tìm dấu vết đàn thú.
-  - `5-8s`: Không khí bình yên, chăm chỉ và bền bỉ của những con người đã làm chủ Kỷ Băng Hà suốt hàng trăm ngàn năm.
+### CẢNH 63 (8.0s) — Cảnh 63: Bộ Tộc Chuẩn Bị Cho Ngày Mới Bình Yên
+- **Mã kịch bản:** A5-05-CLAN-MORNING
+- **Thời lượng:** 8.0s
+- **Nhân vật & Refs:** Leader, Strongest, Old Woman, Cave Mouth
+- **Thoại Nora (Dialogue / Laomedeia):** ""
+- **Tóm tắt hành động (VN):** Trên thềm đá ngoài hang, các thợ săn kiểm tra lại giáo gỗ chuẩn bị cho hành trình mới; Người Phụ Nữ Lớn Tuổi phơi tấm da thú mới săn được lên phiến đá ấm. Cuộc sống sinh tồn tiếp diễn tuần hoàn không ngừng.
 - **FULL PROMPT (OMNI FLASH R2V):**
+
 ```text
-Photorealistic prehistoric survival documentary footage.
+Photorealistic prehistoric survival documentary camp life footage.
 SHOT:
-Medium handheld establishing shot capturing the adult clan resuming their daily survival rhythm on the cave apron.
+Medium-wide handheld establishing shot capturing the peaceful domestic morning rhythm of the Neanderthal clan outside the cave. Handheld camera has gentle observant cadence; strictly NO 180-degree flips.
 SETTING:
-The limestone apron outside Pech de l'Azé cave, crisp golden morning sunlight casting long blue shadows across the snow.
+Sunny limestone ledge outside Pech de l'Azé cave, snow sparkling under morning light.
 CHARACTERS:
-The Neanderthal adults on the apron. The Strongest inspects his spear; the Hunter Woman gathers dry pine fuel; the Leader scans the distant valley horizon. Lips firmly closed. Strictly NO children, NO modern items.
-0-2s: Golden morning rays illuminate the bustling entrance apron as the Neanderthal clan members emerge into the serene post-blizzard daylight.
-2-5s: The Strongest runs his fingers along his spear shaft in the sun; the Hunter Woman arranges dried firewood bundles near the sheltered threshold.
-5-8s: The Leader stands tall at the cliff edge, his fur pelt catching the morning breeze as he reads the snow-covered valley below for massive Steppe Bison (Bison priscus) migration tracks across the valley snow.
+The Leader and Strongest inspect wooden spear shafts in the sun. The Old Woman spreads the cleaned Steppe Bison hide over a flat boulder to dry. Lips closed for all; zero words.
+0-3s: The Strongest and Leader stand on the cliff rim in golden sunlight, scraping frost off their wooden hunting spears with flint flakes.
+3-6s: The Old Woman carefully stretches the massive dark bison hide across a sunlit flat rock, weighting the corners with heavy river stones.
+6-8s: The clan moves with calm, practiced rhythm—survivors who conquered the Ice Age through family, courage, and ancient wisdom.
 PHYSICAL REALISM & BIOMECHANICS:
-Authentic morning wilderness routine; relaxed purposeful adult movements; natural interaction with tools and environment without staged posturing.
+Daily life anthropological authenticity; hide stretching mechanics using stone weights; sparkling specular reflection off frozen rock surfaces.
 CAMERA:
-Slow handheld observational pan across the clan members against the pale limestone cliff.
+Observant handheld medium-wide shot panning smoothly across the clan members working in the morning light.
 AUDIO:
-Soft crunch of footsteps on snow, clink of wooden spear resting on rock, gentle valley breeze. Strictly NO spoken dialogue.
+Rhythmic scraping of flint on wood, heavy stone thuds onto leather, peaceful morning birdsong in distant pines. Strictly NO spoken dialogue.
 ```
 
 ---
 
-### CẢNH 67 (8s) — Người Phụ Nữ Lớn Tuổi Lại Gần Nora
-- **Mã kịch bản:** A5-04
-- **Góc máy:** Cận cảnh vừa người phụ nữ tiếp cận Nora (Medium close-up approach shot).
-- **Nhân vật:** Người Phụ Nữ Lớn Tuổi (~45t) bước lại gần Nora, hai bàn tay khum lại giấu một vật quý giá.
-- **Diễn biến:**
-  - `0-2s`: Người Phụ Nữ Lớn Tuổi bước chậm rãi từ thềm hang lại gần vị trí Nora đang đứng đón nắng.
-  - `2-5s`: Khuôn mặt sương gió của bà ánh lên vẻ nhân hậu và ấm áp; hai bàn tay bà khum lại cẩn thận trước ngực che chở một vật nặng.
-  - `5-8s`: Bà dừng lại trước mặt Nora, ánh mắt nhìn thẳng vào mắt cô gái hiện đại với sự yêu thương và tôn trọng trọn vẹn.
+### CẢNH 64 (8.0s) — Cảnh 64: Người Phụ Nữ Lớn Tuổi Bước Lại Gần Nora
+- **Mã kịch bản:** A5-06-APPROACH-NORA
+- **Thời lượng:** 8.0s
+- **Nhân vật & Refs:** Nora, Nora Body, Old Woman, Cave Mouth
+- **Thoại Nora (Dialogue / Laomedeia):** ""
+- **Tóm tắt hành động (VN):** Người Phụ Nữ Lớn Tuổi chậm rãi bước lại gần Nora bên vách đá. Bà cầm một vật nhỏ trong lòng bàn tay nắm chặt, đôi mắt nhìn Nora đầy ấm áp và trìu mến.
 - **FULL PROMPT (OMNI FLASH R2V):**
+
 ```text
-Photorealistic prehistoric survival documentary footage.
+Photorealistic prehistoric survival documentary emotional footage.
 SHOT:
-Medium close-up shot capturing the Old Woman approaching Nora in the warm morning light.
+Medium two-shot handheld perspective on the cliff ledge, capturing the quiet approach of the elder woman toward Nora. Handheld camera holds steady emotional focus; strictly NO 180-degree flips.
 SETTING:
-Frosted limestone apron outside the cave, brilliant morning sunlight creating soft rim lighting along figures.
+Sunlit cliff terrace of Pech de l'Azé overlooking the valley.
 CHARACTERS:
-The Neanderthal Old Woman approaching Nora from the right. Both have lips firmly closed throughout.
+The Old Woman approaches Nora slowly. Nora turns to face her with respectful curiosity. Old Woman keeps lips closed; zero words.
 IDENTITY & OUTFIT LOCK (CRITICAL -- match reference images exactly):
-Nora's face and hair match the Nora face reference sheet, and her build and clothing match the Nora Body sheet. Nora has a voluptuous, curvaceous hourglass figure with a prominent high natural bust, tiny narrow waist, and shapely hips. Nora has honey-blonde hair pulled up into a high wavy ponytail tied with a raw leather thong (strictly NO rubber band), with wispy curtain bangs framing both cheeks. Nora wears a form-fitting tailored tunic of smoked golden-tan deer suede, precision-sewn with fine sinew stitches. CHEST LACING LOCK (CRITICAL): Deep plunging V-neckline laced with thick dark-brown leather thongs forming a prominent X-pattern bridge across her cleavage. CORSET BELT LOCK (CRITICAL): Tightly cinched at her tiny waist with a wide 10-12 cm dark-chocolate brown leather belt. SLEEVE CUFF LOCK (CRITICAL): Long fitted sleeves ending cleanly at the wrists; knee-high hide boots worn on her feet. Strictly NO modern jewelry, NO necklace, NO chain.
-
-0-2s: The Old Woman walks slowly across the frosted gravel toward Nora, her untailored deer pelt glowing richly in the golden morning rays.
-2-5s: Her deeply weathered, expressive face carries a gentle, solemn warmth; her two calloused hands are cupped together securely in front of her chest, concealing a heavy keepsake.
-5-8s: She halts directly before Nora, meeting her eyes with a steady, affectionate gaze that transcends linguistic barriers.
+Nora matches face and Body sheets. Voluptuous figure, honey-blonde ponytail, golden suede tunic, eagle talon necklace, red ochre cheek mark.
+0-3s: The Old Woman walks slowly across the sunlit gravel toward Nora, her weathered face softening with maternal warmth.
+3-6s: She stops one pace away, holding her right fist closed and extended forward between them, hiding a small treasure.
+6-8s: Nora looks from the closed fist to the Old Woman's wise, wrinkled eyes, sensing a final profound moment of connection.
 PHYSICAL REALISM & BIOMECHANICS:
-Natural cautious foot placement on slippery frosted gravel; authentic elderly Neanderthal posture and respectful interpersonal spacing.
+Subtle emotional micro-expressions in facial muscles; authentic human elder presence; gentle morning sunlight illuminating both women.
 CAMERA:
-Handheld medium close-up shot with soft focus background, tracking her gentle approach.
+Medium two-shot framing both women in golden profile against the sparkling valley backdrop.
 AUDIO:
-Soft crunching footsteps on frosted snow, gentle valley wind, quiet steady breathing. Strictly NO spoken dialogue.
+Soft crunch of footsteps on gravel, gentle wind sigh, quiet breath. Strictly NO spoken dialogue.
 ```
 
 ---
 
-### CẢNH 68 (8s) — Món Quà Chia Tay: Viên Đá Quặng Pyrite Đánh Lửa
-- **Mã kịch bản:** A5-05
-- **Góc máy:** Cận cảnh bàn tay trao gửi món quà sinh tồn (Macro farewell gift exchange shot).
-- **Nhân vật:** Người Phụ Nữ Lớn Tuổi, Nora; viên quặng sắt Pyrite vàng óng, túi da thắt lưng của Nora.
-- **Diễn biến:**
-  - `0-2s`: Người phụ nữ từ từ mở hai bàn tay thô ráp ra: trong lòng bàn tay bà là một cục quặng Pyrite vàng đồng óng ánh nặng trịch.
-  - `2-5s`: Bà nâng hai tay đặt cẩn thận viên quặng Pyrite vào lòng bàn tay Nora; đây chính là viên đá quặng đã giúp cô tạo ra ngọn lửa sinh mệnh tối hôm qua.
-  - `5-8s`: Nora cảm kích nắm chặt viên đá, rồi cẩn thận luồn tay cất viên quặng Pyrite vào chiếc túi da nhỏ bên hông thắt lưng để cất giữ mãi mãi.
+### CẢNH 65 (8.0s) — Cảnh 65: Món Quà Chia Tay: Viên Đá Quặng Pyrite Đánh Lửa
+- **Mã kịch bản:** A5-07-PYRITE-GIFT
+- **Thời lượng:** 8.0s
+- **Nhân vật & Refs:** Nora, Nora Body, Old Woman, Cave Mouth
+- **Thoại Nora (Dialogue / Laomedeia):** "The iron pyrite stone... The spark that let me into their world."
+- **Tóm tắt hành động (VN):** Bà mở bàn tay ra: đó là viên quặng sắt Pyrite màu vàng ánh kim lấp lánh — viên đá đã giúp Nora tạo ra ngọn lửa đầu tiên. Bà đặt nó vào lòng bàn tay Nora rồi nắm chặt những ngón tay cô lại.
 - **FULL PROMPT (OMNI FLASH R2V):**
+
 ```text
-Photorealistic prehistoric survival documentary footage.
+Photorealistic prehistoric survival documentary gift exchange footage.
 SHOT:
-Macro close-up shot focusing on the handover of the iron pyrite gift and Nora securing it into her pouch.
+Close-up handheld shot focusing on the two hands exchanging the sacred firestone. Handheld camera holds steady intimate focus; strictly NO 180-degree flips.
 SETTING:
-Limestone apron in golden morning light, brilliant sunlight reflecting off snow and brassy mineral facets.
+Sunlit terrace of Pech de l'Azé cave.
 CHARACTERS:
-The Old Woman on the right; Nora on the left. Both have lips firmly closed throughout.
-CONTINUITY & BODY LOCK (CRITICAL):
-Nora receives the heavy golden iron pyrite lump and explicitly slips it into her dark leather belt pouch, establishing ironclad physical continuity for all subsequent scenes.
-
+The Old Woman's weathered, calloused hand opens to reveal the golden pyrite stone, placing it into Nora's open palm.
 IDENTITY & OUTFIT LOCK (CRITICAL -- match reference images exactly):
-Nora's face and hair match the Nora face reference sheet, and her build and clothing match the Nora Body sheet. Nora has a voluptuous, curvaceous hourglass figure with a prominent high natural bust, tiny narrow waist, and shapely hips. Nora has honey-blonde hair pulled up into a high wavy ponytail tied with a raw leather thong (strictly NO rubber band), with wispy curtain bangs framing both cheeks. Nora wears a form-fitting tailored tunic of smoked golden-tan deer suede, precision-sewn with fine sinew stitches. CHEST LACING LOCK (CRITICAL): Deep plunging V-neckline laced with thick dark-brown leather thongs forming a prominent X-pattern bridge across her cleavage. CORSET BELT LOCK (CRITICAL): Tightly cinched at her tiny waist with a wide 10-12 cm dark-chocolate brown leather belt. SLEEVE CUFF LOCK (CRITICAL): Long fitted sleeves ending cleanly at the wrists; knee-high hide boots worn on her feet. Strictly NO modern jewelry, NO necklace, NO chain.
-0-2s: The Old Woman gently parts her calloused hands, revealing a heavy, fist-sized nodule of lustrous golden-brassy iron pyrite nestled in her palms.
-2-5s: She transfers the golden mineral lump solemnly into Nora's waiting hands; the heavy pyrite glints brilliantly in the crisp morning sun.
-5-8s: Nora curls her fingers around the precious fire-making stone in heartfelt gratitude, then carefully slips the pyrite into the dark leather pouch at her belt, fastening the flap.
-PHYSICAL REALISM & BIOMECHANICS:
-Accurate density and mass transfer of heavy metallic iron pyrite nodule; realistic two-step physical stowage into belt pouch (NO object teleportation).
-CAMERA:
-Sharp macro framing on the open palms and the subsequent motion of stowing the pyrite into the belt pouch.
-AUDIO:
-Soft clinking thud of heavy pyrite resting in palm, quiet rustle of leather pouch flap, soft breath of gratitude. Strictly NO spoken dialogue.
-```
-
----
-
-### CẢNH 69 (8s) — Cái Ôm Tạm Biệt Ấm Áp Vượt Thời Gian
-- **Mã kịch bản:** A5-06
-- **Góc máy:** Cận cảnh vừa cái ôm chia tay xúc động (Medium close-up farewell embrace shot).
-- **Nhân vật:** Nora và Người Phụ Nữ Lớn Tuổi nắm chặt cẳng tay nhau và ôm tạm biệt.
-- **Diễn biến:**
-  - `0-2s`: Nora đưa hai tay nắm chặt cẳng tay người phụ nữ Neanderthal; người phụ nữ cũng nắm chặt cẳng tay Nora theo nghi thức thợ săn.
-  - `2-5s`: Người phụ nữ kéo Nora lại gần, hai người ôm chầm lấy nhau thật chặt; bờ vai và mái tóc của hai người phụ nữ chạm vào nhau trong hơi ấm chân thành.
-  - `5-8s`: Họ buông tay mỉm cười nhìn nhau, nước mắt xúc động ánh lên trong mắt Nora; một cái ôm vượt qua 51,000 năm ngăn cách giữa hai dòng giống con người.
-- **FULL PROMPT (OMNI FLASH R2V):**
-```text
-Photorealistic prehistoric survival documentary footage.
-SHOT:
-Medium close-up shot capturing the deeply emotional farewell embrace between Nora and the Neanderthal Old Woman.
-SETTING:
-Frosted limestone apron outside Pech de l'Azé cave, golden morning sunlight illuminating suede and deer pelts.
-CHARACTERS:
-Nora and the Old Woman facing each other in intimate proximity. The Neanderthals keep their lips firmly closed throughout; zero words from Neanderthals. Only Nora speaks.
-IDENTITY & OUTFIT LOCK (CRITICAL -- match reference images exactly):
-Nora's face and hair match the Nora face reference sheet, and her build and clothing match the Nora Body sheet. Nora has a voluptuous, curvaceous hourglass figure with a prominent high natural bust, tiny narrow waist, and shapely hips. Nora has honey-blonde hair pulled up into a high wavy ponytail tied with a raw leather thong (strictly NO rubber band), with wispy curtain bangs framing both cheeks. Nora wears a form-fitting tailored tunic of smoked golden-tan deer suede, precision-sewn with fine sinew stitches. CHEST LACING LOCK (CRITICAL): Deep plunging V-neckline laced with thick dark-brown leather thongs forming a prominent X-pattern bridge across her cleavage. CORSET BELT LOCK (CRITICAL): Tightly cinched at her tiny waist with a wide 10-12 cm dark-chocolate brown leather belt. SLEEVE CUFF LOCK (CRITICAL): Long fitted sleeves ending cleanly at the wrists; knee-high hide boots worn on her feet. Strictly NO modern jewelry, NO necklace, NO chain.
-
+Nora's slender hand and golden suede sleeve visible. Red ochre and eagle talon on Nora.
 CRITICAL VLOG SPEECH LOCK:
-Only Nora speaks English to the camera in her native Laomedeia voice profile; all Neanderthals never speak English and keep their lips firmly closed throughout.
-
-0-2s: Nora reaches forward, firmly clasping both forearms of the Old Woman in a hunter's grip; the Old Woman reciprocates with powerful, affectionate grip strength.
-2-5s: The Old Woman draws Nora forward into a warm, heartfelt embrace; Nora rests her forehead gently against the elder woman's shoulder fur in profound mutual gratitude.
-5-8s: They step back smoothly, holding each other's gaze with tear-glistening eyes and peaceful smiles, sealing an emotional kinship between two branches of humanity.; Nora says in a moving whisper: "A mother's blessing across fifty-one millennia... The spark of life."
+Only Nora speaks English to camera in her native Laomedeia voice profile: "The iron pyrite stone... The spark that let me into their world."
+0-3s: The Old Woman slowly uncurls her thick, calloused fingers, revealing the glittering golden-brass lump of iron pyrite mineral, sparkling in the sun.
+3-6s: She gently presses the heavy golden firestone into Nora's open palm, then closes Nora's fingers tightly around it, patting her hand with quiet blessing.
+6-8s: Nora gazes down at the golden stone in her hand with a lump in her throat, looking to the lens: "The iron pyrite stone... The spark that let me into their world."
 PHYSICAL REALISM & BIOMECHANICS:
-Authentic reciprocal human embrace: natural shoulder and upper-torso muscle compression against dense pelts; tender release kinematics without theatrical melodrama.
+Tactile mineral transfer; golden specular gleam of crystalline pyrite facets in direct sunlight; gentle maternal closing of fingers.
 CAMERA:
-Handheld medium close-up gently circling forty-five degrees to capture both emotional faces in golden rim light.
+Close-up handheld tracking from the opening palm to the firestone resting in Nora's hand.
 AUDIO:
-Soft rustle of deer furs and suede tunic, quiet mutual exhalations, gentle morning breeze across snow. Nora's clear spoken voice/whisper: "A mother's blessing across fifty-one millennia... The spark of life.".
+Soft clink of mineral on skin, rustle of leather sleeves, Nora's deeply moved whispered voice: "The iron pyrite stone... The spark that let me into their world."
 ```
 
 ---
 
-### CẢNH 70 (8s) — Lời Tạm Biệt Của Thủ Lĩnh & Người Mạnh Nhất
-- **Mã kịch bản:** A5-07
-- **Góc máy:** Trung cảnh hai thợ săn tiễn biệt tại cửa hang (Medium farewell line shot).
-- **Nhân vật:** Thủ Lĩnh (~35t) và Người Mạnh Nhất (~22t) đứng sừng sững tại cửa hang, giơ tay tiễn biệt Nora.
-- **Diễn biến:**
-  - `0-2s`: Nora bước lùi lại ba bước về phía dốc thung lũng, quay lại nhìn hai người thợ săn đang đứng trước vòm cửa hang đá vôi.
-  - `2-5s`: Thủ Lĩnh đứng thẳng người, nâng bàn tay phải to lớn ngang ngực trong một cử chỉ chào từ biệt trang nghiêm; Người Mạnh Nhất khẽ nâng ngọn giáo gỗ chào đáp lễ.
-  - `5-8s`: Hai chiến binh Kỷ Băng Hà đứng sừng sững uy nghi dưới vòm hang tổ tiên, ánh mắt dõi theo bước chân của cô gái phương xa.
+### CẢNH 66 (8.0s) — Cảnh 66: Cái Ôm Tạm Biệt Ấm Áp Vượt 51.000 Năm Thời Gian
+- **Mã kịch bản:** A5-08-THE-EMBRACE
+- **Thời lượng:** 8.0s
+- **Nhân vật & Refs:** Nora, Nora Body, Old Woman, Cave Mouth
+- **Thoại Nora (Dialogue / Laomedeia):** ""
+- **Tóm tắt hành động (VN):** Xúc động trước tấm lòng của người mẹ tiền sử, Nora khẽ nghiêng người ôm lấy bờ vai dầy dặn của bà. Người phụ nữ ngạc nhiên trong giây lát rồi vỗ nhẹ lên lưng Nora, cái ôm xóa nhòa khoảng cách 51.000 năm.
 - **FULL PROMPT (OMNI FLASH R2V):**
+
 ```text
-Photorealistic prehistoric survival documentary footage.
+Photorealistic prehistoric survival documentary emotional embrace footage.
 SHOT:
-Medium shot from Nora's perspective, framing the Neanderthal Leader and the Strongest standing at the cave portal.
+Medium close-up handheld shot, capturing the heartfelt, tearful embrace between the modern vlogger and the Neanderthal elder. Handheld camera has gentle tender intimacy; strictly NO 180-degree flips.
 SETTING:
-The limestone entrance archway of Pech de l'Azé cave, framed against pale limestone cliffs and fresh morning snow.
+Cliff terrace of Pech de l'Azé in brilliant golden morning light.
 CHARACTERS:
-The Leader (wearing 8-talon necklace, red face markings) and the Strongest (holding his fire-hardened spear) standing side by side. Lips firmly closed throughout.
-
+Nora embraces the Old Woman warmly. The Old Woman hugs her back with sturdy maternal strength. Lips closed; zero words.
 IDENTITY & OUTFIT LOCK (CRITICAL -- match reference images exactly):
-Nora's face and hair match the Nora face reference sheet, and her build and clothing match the Nora Body sheet. Nora has a voluptuous, curvaceous hourglass figure with a prominent high natural bust, tiny narrow waist, and shapely hips. Nora has honey-blonde hair pulled up into a high wavy ponytail tied with a raw leather thong (strictly NO rubber band), with wispy curtain bangs framing both cheeks. Nora wears a form-fitting tailored tunic of smoked golden-tan deer suede, precision-sewn with fine sinew stitches. CHEST LACING LOCK (CRITICAL): Deep plunging V-neckline laced with thick dark-brown leather thongs forming a prominent X-pattern bridge across her cleavage. CORSET BELT LOCK (CRITICAL): Tightly cinched at her tiny waist with a wide 10-12 cm dark-chocolate brown leather belt. SLEEVE CUFF LOCK (CRITICAL): Long fitted sleeves ending cleanly at the wrists; knee-high hide boots worn on her feet. Strictly NO modern jewelry, NO necklace, NO chain.
-0-2s: Standing at the entrance archway, the Leader and the Strongest look outward toward Nora with stoic, dignified pride.
-2-5s: The Leader raises his broad right hand to chest height in a deliberate, universal gesture of peaceful farewell; the Strongest rests his hand over his spear in silent salute.
-5-8s: The two Pleistocene hunters stand resolute beneath the ancient limestone portal, immortal guardians of their glacial world, watching Nora's departure.
+Nora matches face and Body sheets. Voluptuous figure, honey-blonde ponytail, golden suede tunic, eagle talon on chest.
+0-3s: Overcome with emotion, Nora leans forward and wraps both arms gently around the Old Woman's sturdy, fur-draped shoulders.
+3-6s: Surprised for a fraction of a second, the Old Woman softens completely, wrapping her thick muscular arms around Nora and patting her back with profound warmth.
+6-8s: They hold the embrace for a quiet second, two human beings from fifty-one millennia apart sharing a single heartbeat of survival and love.
 PHYSICAL REALISM & BIOMECHANICS:
-Dignified, statuesque posture of veteran hunters; natural morning wind gently rustling shaggy dark hair and pelt fringes; steady eye contact.
+Authentic human affection mechanics; compression of coarse bear fur against supple deer suede; tears reflecting morning sunbeams.
 CAMERA:
-Handheld medium shot gently pulling back down the gravel trail, keeping the two figures centered.
+Medium close-up handheld holding steady on the tender embrace against the vast sunlit valley.
 AUDIO:
-Gentle morning valley wind whistling softly, distant raven call echoing off limestone cliff, quiet gravel crunch under retreating boots. Strictly NO spoken dialogue.
+Soft rustle of fur and leather, quiet breath sigh, gentle breeze. Strictly NO spoken dialogue.
 ```
 
 ---
 
-### CẢNH 71 (8s) — Nora Bước Xuống Con Đường Mòn Thung Lũng
-- **Mã kịch bản:** A5-08
-- **Góc máy:** Góc theo dõi phía trước ba phần tư (Medium three-quarter forward tracking shot).
-- **Nhân vật:** Nora sải bước tự tin trên con đường mòn phủ tuyết ven thung lũng, tay đặt lên túi da quặng Pyrite.
-- **Diễn biến:**
-  - `0-2s`: Nora bước đi vững chãi trên con đường mòn đá vôi uốn lượn men theo sườn thung lũng Dordogne phủ đầy tuyết trắng.
-  - `2-5s`: Tay phải cô khẽ đặt lên chiếc túi da bên hông thắt lưng chứa viên quặng Pyrite nặng trĩu; chiếc móng vuốt đại bàng đung đưa nhẹ nhàng trên ngực áo theo từng bước sải chân.
-  - `5-8s`: Gió mai thổi tung bay những lọn tóc đuôi ngựa vàng óng; Nora toát lên vẻ đẹp kiên cường và thanh thản của một người vừa chiến thắng thử thách sinh tồn vĩ đại nhất.
+### CẢNH 67 (8.0s) — Cảnh 67: Lời Tạm Biệt Của Thủ Lĩnh Và Người Mạnh Nhất
+- **Mã kịch bản:** A5-09-HUNTERS-FAREWELL
+- **Thời lượng:** 8.0s
+- **Nhân vật & Refs:** Leader, Strongest, Strongest Spear, Cave Mouth
+- **Thoại Nora (Dialogue / Laomedeia):** ""
+- **Tóm tắt hành động (VN):** Thủ Lĩnh và Người Mạnh Nhất đứng trên mỏm đá cao đón gió sớm, cùng giương ngọn giáo gỗ lên trời như một nghi thức chào tạm biệt trọng thể dành cho người bạn phương xa đã cùng kề vai chiến đấu.
 - **FULL PROMPT (OMNI FLASH R2V):**
+
 ```text
-Photorealistic prehistoric survival documentary footage.
+Photorealistic prehistoric survival documentary farewell salute footage.
 SHOT:
-Medium handheld tracking shot filmed from a three-quarter forward angle, pacing in front of Nora as she walks down the valley trail.
+Low-angle heroic handheld shot, framing the two hunters standing tall on the cliff promontory against the brilliant morning sky. Handheld camera captures epic heroic salute; strictly NO 180-degree flips.
 SETTING:
-A winding limestone scree path along the upper Dordogne valley slope, dusted with fresh morning snow, overlooking pine-covered valleys.
+High limestone ledge of Pech de l'Azé overlooking the valley.
 CHARACTERS:
-Nora walking steadily toward camera, tall, athletic, and confident. Lips firmly closed throughout.
-CONTINUITY & BODY LOCK (CRITICAL):
-Nora wears her golden-tan deer suede tunic; single eagle talon necklace swings gently against her laced cleavage; her right hand rests securely over the heavy iron pyrite stowed inside her dark belt pouch.
-
-IDENTITY & OUTFIT LOCK (CRITICAL -- match reference images exactly):
-Nora's face and hair match the Nora face reference sheet, and her build and clothing match the Nora Body sheet. Nora has a voluptuous, curvaceous hourglass figure with a prominent high natural bust, tiny narrow waist, and shapely hips. Nora has honey-blonde hair pulled up into a high wavy ponytail tied with a raw leather thong (strictly NO rubber band), with wispy curtain bangs framing both cheeks. Nora wears a form-fitting tailored tunic of smoked golden-tan deer suede, precision-sewn with fine sinew stitches. CHEST LACING LOCK (CRITICAL): Deep plunging V-neckline laced with thick dark-brown leather thongs forming a prominent X-pattern bridge across her cleavage. CORSET BELT LOCK (CRITICAL): Tightly cinched at her tiny waist with a wide 10-12 cm dark-chocolate brown leather belt. SLEEVE CUFF LOCK (CRITICAL): Long fitted sleeves ending cleanly at the wrists; knee-high hide boots worn on her feet. Strictly NO modern jewelry, NO necklace, NO chain.
-0-2s: Nora walks with an energetic, athletic stride down the winding snowy path, her boots gripping the limestone scree with practiced ease.
-2-5s: Her right hand rests naturally over the heavy iron pyrite lump nestled safely in her chocolate belt pouch; the black eagle talon pendant swings gently with each rhythmic step.
-5-8s: The crisp valley breeze catches her high blonde ponytail and curtain bangs; she looks ahead toward the vast horizon with radiant inner peace and triumph.
+The Leader and the Strongest stand side-by-side, spears raised high. Lips closed; zero words.
+0-3s: The Leader and the Strongest watch Nora begin her descent, their rugged faces carved in morning sunlight.
+3-6s: Simultaneously, both warriors thrust their heavy spears straight up into the crystal-clear blue sky in a solemn, grand hunter's salute.
+6-8s: The fire-hardened spear tips gleam brightly against the sky, an eternal monument of primeval honor and brotherhood.
 PHYSICAL REALISM & BIOMECHANICS:
-Natural downhill walking biomechanics: weight centered, knee flexion absorbing slope impact; authentic gentle pendulum motion of the talon pendant; hair fluttering realistically in breeze.
+Heroic hunter salute gesture; morning wind fluttering dark fur pelts; specular reflections off polished spear wood.
 CAMERA:
-Smooth handheld forward tracking shot maintaining steady framing on Nora's upper body and determined gait.
+Low-angle handheld shot looking upward at the two mighty hunters silhouetted against the morning sky.
 AUDIO:
-Rhythmic crunch of boots on frosted gravel trail, crisp mountain wind rushing softly, distant frozen river murmur. Strictly NO spoken dialogue.
+Majestic gust of wind, dull clank of spear shafts raised together. Strictly NO spoken dialogue.
 ```
 
 ---
 
-### CẢNH 72 (8s) — Hang Động Pech de l'Azé Sừng Sững Giữa Vách Núi
-- **Mã kịch bản:** A5-09
-- **Góc máy:** Toàn cảnh góc thấp nhìn ngược lên vách núi (Low-angle landscape lookback shot).
-- **Nhân vật:** Vách đá vôi Pech de l'Azé sừng sững cao vút, vòm cửa hang đen thẳm mờ dần sau rặng thông.
-- **Diễn biến:**
-  - `0-2s`: Nora dừng chân trên một mỏm đá cao, quay đầu nhìn lại lần cuối về phía vách núi đá vôi sừng sững của Pech de l'Azé.
-  - `2-5s`: Vách đá vôi trắng ngà dựng đứng cao hàng chục mét giữa rừng thông phủ tuyết; vòm cửa hang tựa như một con mắt bí ẩn của thời gian.
-  - `5-8s`: Làn khói lam mỏng từ bếp lửa của bộ tộc vẫn lượn lờ bốc lên từ vòm hang, một đốm sáng ấm áp của nền văn minh đầu tiên giữa kỷ băng giá.
+### CẢNH 68 (8.0s) — Cảnh 68: Nora Bước Xuống Con Đường Mòn Thung Lũng
+- **Mã kịch bản:** A5-10-WALKING-DOWN
+- **Thời lượng:** 8.0s
+- **Nhân vật & Refs:** Nora, Nora Body, Pech Valley
+- **Thoại Nora (Dialogue / Laomedeia):** "Leaving Pech de l'Azé. But I'm leaving as a changed person."
+- **Tóm tắt hành động (VN):** Nora đeo chiếc móng đại bàng trước ngực, tay nắm chặt viên đá pyrite, bước từng bước vững chãi xuống con dốc phủ sương tuyết, thỉnh thoảng ngoái đầu nhìn lại tổ ấm hang đá trên cao.
 - **FULL PROMPT (OMNI FLASH R2V):**
+
+```text
+Photorealistic prehistoric survival documentary tracking footage.
+SHOT:
+Handheld tracking shot moving alongside Nora as she walks down the winding snow trail away from the cliff. Handheld camera has rhythmic walking bounce; strictly NO 180-degree flips.
+SETTING:
+Snow-dusted talus trail leading down into the open Dordogne valley, pines glistening in morning light.
+CHARACTERS:
+Nora walks with steady, confident strides in her tailored golden deer suede tunic, eagle talon pendant gleaming on her chest, red ochre mark on cheek.
+IDENTITY & OUTFIT LOCK (CRITICAL -- match reference images exactly):
+Nora matches face and Body sheets. Voluptuous figure, honey-blonde ponytail bobbing with steps, golden suede tunic, laced V-neckline, chocolate belt, hide boots crunching in snow.
+CRITICAL VLOG SPEECH LOCK:
+Only Nora speaks English to camera in her native Laomedeia voice profile: "Leaving Pech de l'Azé. But I'm leaving as a changed person."
+0-3s: Nora walks down the slope, hide boots crunching crisply into the fresh morning powder snow, tall pines flanking her path.
+3-6s: She pauses for half a second to look back up at the high cliff cave, touching the eagle talon resting on her chest with reverent fingers.
+6-8s: She turns back to the camera lens, smiling with deep inner peace: "Leaving Pech de l'Azé. But I'm leaving as a changed person."
+PHYSICAL REALISM & BIOMECHANICS:
+Natural downhill walking biomechanics; snow crunching under hide footwear; crisp morning sunlight illuminating facial contours.
+CAMERA:
+Handheld tracking shot moving backward alongside Nora as she descends the mountain trail.
+AUDIO:
+Crisp rhythmic crunch of snow under boots, gentle wind, Nora's calm reflective spoken voice: "Leaving Pech de l'Azé. But I'm leaving as a changed person."
+```
+
+---
+
+### CẢNH 69 (8.0s) — Cảnh 69: Hang Động Pech de l'Azé Sừng Sững Giữa Vách Núi
+- **Mã kịch bản:** A5-11-CAVE-CLIFF-VIEW
+- **Thời lượng:** 8.0s
+- **Nhân vật & Refs:** Cave Mouth, Pech Valley
+- **Thoại Nora (Dialogue / Laomedeia):** ""
+- **Tóm tắt hành động (VN):** Từ dưới thung lũng nhìn lên, cửa hang đá vôi cổ xưa in bóng hiên ngang giữa vách đá dựng đứng, làn khói bếp thông mỏng manh bay lên trời cao, biểu tượng trường tồn của ý chí con người.
+- **FULL PROMPT (OMNI FLASH R2V):**
+
 ```text
 Photorealistic prehistoric survival documentary landscape footage.
 SHOT:
-Low-angle panoramic shot looking upward and back from the valley trail toward the towering limestone massif of Pech de l'Azé.
+Cinematic low-angle telephoto shot from the valley floor looking up at the monumental cliff face and cave entrance. Handheld camera holds steady majestic framing; strictly NO modern artifacts.
 SETTING:
-The colossal pale limestone cliff face of Pech de l'Azé rising dramatically above pine-covered talus slopes, morning sun blazing on the upper crags.
+The towering limestone bluff of Pech de l'Azé rising sheer above the Dordogne pine forest. Morning sunlight paints the cliff face in brilliant gold and ivory.
 CHARACTERS:
-Nora visible as a distant silhouette on the trail; focus remains on the towering limestone massif.
-OBJECTS IN PLACE:
-The dark natural arch of the cave mouth sits nestled high in the cliff; a faint wisp of blue pine smoke curls peacefully from the entrance into the crisp morning sky.
-0-2s: From her trail vantage point, Nora pauses briefly, the camera tilting upward across the immense vertical limestone cliffs of Pech de l'Azé.
-2-5s: Golden morning sunlight blazes across the pale rock towers, while the dark cave entrance remains a sheltered, ancient haven nestled deep in the rock.
-5-8s: A thin, solitary thread of aromatic blue hearth smoke rises gently from the cave arch into the pale azure sky, a timeless beacon of human survival in the Pleistocene wild.
+Strictly NO people in frame; monument of human endurance.
+0-3s: The monumental limestone cliffs rise sheer and ancient against the vivid blue sky, etched by millions of years of glacial ice.
+3-6s: Halfway up the cliff, the dark arch of Pech de l'Azé cave sits like an eagle's aerie; a thin, delicate wisp of white pine smoke curls peacefully from its mouth into the clouds.
+6-8s: The camera tilts slowly down to show the vast, pristine wilderness below, holding a moment of eternal primeval peace.
 PHYSICAL REALISM & BIOMECHANICS:
-Authentic scale perspective between towering karst massif and human landscape; physically accurate atmospheric haze and gentle smoke plume dispersion.
+Geological scale and realism; accurate karst limestone weathering; peaceful dispersal of woodsmoke in buoyant morning air.
 CAMERA:
-Slow upward tilt and gentle panoramic pan capturing the full monumental scale of the limestone cliffs.
+Low-angle telephoto slowly tilting down from the cave mouth to the forest canopy.
 AUDIO:
-Rustling pine boughs in mountain breeze, distant cry of an alpine chough, vast acoustic emptiness. Strictly NO spoken dialogue.
+Distant mountain breeze, peaceful chirping of small winter birds, absolute primeval silence. Strictly NO spoken dialogue.
 ```
 
 ---
 
-### CẢNH 73 (8s) — Selfie Tổng Kết 24 Giờ Sinh Tồn (Nora's Master Reflection)
-- **Mã kịch bản:** A5-10
-- **Góc máy:** Selfie góc rộng 0.5x ngang ngực tổng kết (Wide-angle master vlog selfie shot).
-- **Nhân vật:** Nora (cận cảnh selfie góc rộng 0.5x), thung lũng Dordogne và vách hang Pech de l'Azé xa xa (hậu cảnh).
-- **Diễn biến:**
-  - `0-2s`: Nora đưa máy quay ngang ngực quay selfie góc rộng 0.5x, khuôn mặt rạng rỡ của cô chiếm 1/3 khung hình bên trái, hậu cảnh là thung lũng tuyết trải dài.
-  - `2-5s`: Cô nhìn thẳng vào ống kính với nụ cười mãn nguyện và ánh mắt lấp lánh; vệt đất son trên má và chiếc móng đại bàng trên ngực áo minh chứng cô đã sống sót trọn vẹn 24 giờ.
-  - `5-8s`: Bờ môi Nora khép chặt trong sự lắng đọng thiêng liêng, trong khi lời tổng kết đầy tri ân được cất lên ở hậu kỳ; cô khẽ gật đầu chào khán giả.
+### CẢNH 70 (8.0s) — Cảnh 70: Selfie Tổng Kết 24 Giờ Sinh Tồn (Nora's Master Reflection Part 1)
+- **Mã kịch bản:** A5-12-SELFIE-REFLECTION-1
+- **Thời lượng:** 8.0s
+- **Nhân vật & Refs:** Nora, Nora Body, Pech Valley
+- **Thoại Nora (Dialogue / Laomedeia):** "Twenty-four hours. I came here expecting primitive monsters..."
+- **Tóm tắt hành động (VN):** Nora nhìn thẳng vào camera trong shot selfie 0.5x góc rộng, gió sớm làm bay nhẹ lọn tóc mai. Gương mặt cô rạng ngời với vệt đất son đỏ mờ trên má và chiếc móng đại bàng trên ngực, chia sẻ cảm xúc chân thật.
 - **FULL PROMPT (OMNI FLASH R2V):**
+
 ```text
-Photorealistic prehistoric survival documentary master selfie vlog footage.
+Photorealistic prehistoric survival documentary vlog reflection footage.
 SHOT:
-Handheld wide-angle 0.5x selfie vlog shot held steady at chest level; Nora occupies the left third; the vast snow-covered Dordogne valley and distant limestone cliffs fill the background.
+Handheld chest-level wide-angle selfie vlog shot, tightly framing Nora's speaking face with the magnificent sunlit snow valley blurred softly in the background. Handheld camera has natural personal micro-tremors; strictly NO 180-degree flips.
 SETTING:
-Scenic overlook above the Dordogne valley in bright, crisp morning sunshine; brilliant snow reflections.
+Sunlit pine grove on the floor of Dordogne valley, glistening snowdrifts.
 CHARACTERS:
-Nora in foreground. The Neanderthals keep their lips firmly closed throughout; zero words from Neanderthals. Only Nora speaks. The perspective comes directly from her own outstretched arm; her free hand rests empty at chest level.
+Nora holds the camera lens steadily on herself, looking directly into the lens with deep emotional sincerity.
 IDENTITY & OUTFIT LOCK (CRITICAL -- match reference images exactly):
-Nora's face and hair match the Nora face reference sheet, and her build and clothing match the Nora Body sheet. Nora has a voluptuous, curvaceous hourglass figure with a prominent high natural bust, tiny narrow waist, and shapely hips. Nora has honey-blonde hair pulled up into a high wavy ponytail tied with a raw leather thong (strictly NO rubber band), with wispy curtain bangs framing both cheeks. Nora wears a form-fitting tailored tunic of smoked golden-tan deer suede, precision-sewn with fine sinew stitches. CHEST LACING LOCK (CRITICAL): Deep plunging V-neckline laced with thick dark-brown leather thongs forming a prominent X-pattern bridge across her cleavage. CORSET BELT LOCK (CRITICAL): Tightly cinched at her tiny waist with a wide 10-12 cm dark-chocolate brown leather belt. SLEEVE CUFF LOCK (CRITICAL): Long fitted sleeves ending cleanly at the wrists; knee-high hide boots worn on her feet. Strictly NO modern jewelry, NO necklace, NO chain.
-
+Nora matches face and Body sheets. Voluptuous figure, honey-blonde ponytail, golden suede tunic, deep plunging laced V-neckline, chocolate belt, eagle talon necklace, red ochre mark on cheek.
 CRITICAL VLOG SPEECH LOCK:
-Only Nora speaks English to the camera in her native Laomedeia voice profile; all Neanderthals never speak English and keep their lips firmly closed throughout.
-
-0-2s: The camera opens in a steady chest-level selfie vlog framing: Nora gazes directly into the lens, her face illuminated by radiant morning sunlight with a calm, triumphant smile.
-2-5s: Her closed lips and deeply emotional expression convey the profound realization of having survived a full twenty-four hours among Neanderthals, leaving space for intimate post-production narration.
-5-8s: The mountain breeze ruffles her wispy curtain bangs; she glances once more at the distant cliff cave behind her, then looks back into the lens with quiet, reverent gratitude.; Nora says in an inspiring, confident voice: "Twenty-four hours with Neanderthals. Not brutal savages — deeply human survivors."
+Nora delivers heartfelt, intimate conversational vlog delivery in her native Laomedeia voice profile: "Twenty-four hours. I came here expecting primitive monsters..."
+0-3s: Nora pauses in the pine clearing, lifting the camera lens slightly to frame her face against the sun-drenched valley, taking a deep centering breath.
+3-6s: Her eyes glisten with profound emotion as she smiles gently, the morning breeze fluttering a soft loose strand of hair across her cheek.
+6-8s: Nora speaks directly into the camera lens with raw honesty and passion: "Twenty-four hours. I came here expecting primitive monsters..."
 PHYSICAL REALISM & BIOMECHANICS:
-Steady arm lock maintaining constant distance and angle; authentic 0.5x optical wide perspective without facial distortion; subtle organic footfall tremors.
+Natural documentary camera optical perspective (18mm wide angle, subtle corner distortion); realistic micro-vocal throat vibrations; authentic emotional vulnerability.
 CAMERA:
-Handheld selfie perspective fixed at constant arm's distance, maintaining single-perspective purity with no camera flips.
+Handheld chest-level selfie vlog perspective held at constant arm's distance, maintaining tight focus on Nora's face.
 AUDIO:
-Crisp mountain breeze rustling ponytail and suede, distant raven call echoing across the valley, soft peaceful breathing. Nora's clear spoken voice/whisper: "Twenty-four hours with Neanderthals. Not brutal savages — deeply human survivors.".
+Crisp morning wind, soft breath intake, Nora's clear heartfelt spoken voice: "Twenty-four hours. I came here expecting primitive monsters..."
 ```
 
 ---
 
-### CẢNH 74 (8s) — Kỷ Vật Vượt Thời Gian Trên Lòng Bàn Tay
-- **Mã kịch bản:** A5-11
-- **Góc máy:** Cận cảnh mở lòng bàn tay nắm giữ báu vật (Macro palm artifact payoff shot).
-- **Nhân vật:** Lòng bàn tay mở rộng của Nora, viên quặng Pyrite vàng đồng và chiếc móng vuốt đại bàng đặt cạnh nhau.
-- **Diễn biến:**
-  - `0-2s`: Nora từ từ xòe rộng lòng bàn tay phải của mình ra trước ống kính máy quay trong ánh nắng mai rực rỡ.
-  - `2-5s`: Trên lòng bàn tay cô đặt hai báu vật vô giá: viên quặng Pyrite vàng đồng óng ánh (tượng trưng cho Ngọn Lửa Sinh Tồn) và chiếc móng vuốt đại bàng đen tuyền đục lỗ (tượng trưng cho Nghệ Thuật & Tâm Linh).
-  - `5-8s`: Hai kỷ vật đại diện cho hai trụ cột văn hóa Neanderthal tỏa sáng rực rỡ, chứng minh cho trí tuệ và tâm hồn vĩ đại của con người thời tiền sử.
+### CẢNH 71 (8.0s) — Cảnh 71: Selfie Tổng Kết (Part 2): Gia Đình, Đi Săn, Nghệ Thuật & Lòng Dũng Cảm
+- **Mã kịch bản:** A5-13-SELFIE-REFLECTION-2
+- **Thời lượng:** 8.0s
+- **Nhân vật & Refs:** Nora, Nora Body, Pech Valley
+- **Thoại Nora (Dialogue / Laomedeia):** "...I found family, master hunters, art, and a courage that conquered an Ice Age."
+- **Tóm tắt hành động (VN):** Tiếp nối chia sẻ cảm xúc: Nora nghẹn ngào nhấn mạnh bài học lịch sử to lớn nhất: Người Neanderthal không phải những kẻ hung bạo dã man, họ là những bậc thầy sinh tồn, có gia đình, nghệ thuật và lòng dũng cảm phi thường.
 - **FULL PROMPT (OMNI FLASH R2V):**
+
+```text
+Photorealistic prehistoric survival documentary vlog reflection footage.
+SHOT:
+Handheld chest-level wide-angle selfie vlog shot, continuing seamless physical continuity from Scene 70. Camera maintains intimate direct eye contact; strictly NO 180-degree flips.
+SETTING:
+Sunlit pine grove in Dordogne valley, pristine snow sparkling in pale gold.
+CHARACTERS:
+Nora continues speaking directly to her audience with powerful conviction and awe.
+IDENTITY & OUTFIT LOCK (CRITICAL -- match reference images exactly):
+Nora matches face and Body sheets. Voluptuous figure, honey-blonde ponytail, golden suede tunic, laced V-neckline, chocolate belt, eagle talon on chest, red ochre on cheek.
+CRITICAL VLOG SPEECH LOCK:
+Nora speaks with passionate, inspiring conviction in her native Laomedeia voice profile: "...I found family, master hunters, art, and a courage that conquered an Ice Age."
+0-3s: Nora continues seamlessly from her previous thought, her voice swelling with immense respect and pride for the people who saved her.
+3-6s: She gestures subtly with her free left hand toward the towering limestone cliffs behind her, her expression radiant with enlightenment.
+6-8s: Looking straight down the barrel of the lens, Nora delivers her definitive verdict: "...I found family, master hunters, art, and a courage that conquered an Ice Age."
+PHYSICAL REALISM & BIOMECHANICS:
+Flawless inter-scene postural continuity from Scene 70; subtle chest rise and fall matching vocal cadence; sunlight illuminating golden hair strands.
+CAMERA:
+Handheld chest-level selfie vlog shot maintained with perfect stability and natural human breathing rhythm.
+AUDIO:
+Soft morning wind through pines, Nora's passionate resonant spoken voice: "...I found family, master hunters, art, and a courage that conquered an Ice Age."
+```
+
+---
+
+### CẢNH 72 (8.0s) — Cảnh 72: Khoe Hai Kỷ Vật Trước Ống Kính: Quặng Pyrite & Móng Đại Bàng
+- **Mã kịch bản:** A5-14-TALISMAN-MACRO
+- **Thời lượng:** 8.0s
+- **Nhân vật & Refs:** Nora, Nora Body, Pech Valley
+- **Thoại Nora (Dialogue / Laomedeia):** "Two gifts to remember them by: the spark of fire, and the talon of the eagle."
+- **Tóm tắt hành động (VN):** Nora xòe bàn tay mở rộng trước camera: viên đá Pyrite vàng kim lấp lánh và chiếc móng vuốt đại bàng đen bóng được nâng lên ngang ngực, nổi bật trên nền thung lũng tuyết mờ ảo phía sau.
+- **FULL PROMPT (OMNI FLASH R2V):**
+
 ```text
 Photorealistic prehistoric survival documentary macro payoff footage.
 SHOT:
-Macro close-up shot focusing tightly on Nora's open palm holding the two physical artifacts in brilliant morning sunlight.
+Extreme close-up macro handheld shot, focusing tightly on the two prehistoric artifacts resting in Nora's open palm at chest level, with the sunlit snowy valley softly blurred in the bokeh background. Strictly NO 180-degree flips.
 SETTING:
-Sunlit trail overlook, soft blurred background of fresh white snow and distant blue sky.
+Sunlit clearing in Dordogne valley, beautiful creamy snow bokeh behind the hand.
 CHARACTERS:
-Only Nora's open right palm is in frame, steady and sunlit.
+Nora holds her open left hand steady at chest level; her face smiles softly in soft focus in the background. Hand holds items safely away from lens.
 OBJECTS IN PLACE:
-Resting side by side in her palm: the heavy brassy-golden lump of iron pyrite, and the curved, polished white-tailed sea eagle talon with its drilled suspension hole.
-
-IDENTITY & OUTFIT LOCK (CRITICAL -- match reference images exactly):
-Nora's face and hair match the Nora face reference sheet, and her build and clothing match the Nora Body sheet. Nora has a voluptuous, curvaceous hourglass figure with a prominent high natural bust, tiny narrow waist, and shapely hips. Nora has honey-blonde hair pulled up into a high wavy ponytail tied with a raw leather thong (strictly NO rubber band), with wispy curtain bangs framing both cheeks. Nora wears a form-fitting tailored tunic of smoked golden-tan deer suede, precision-sewn with fine sinew stitches. CHEST LACING LOCK (CRITICAL): Deep plunging V-neckline laced with thick dark-brown leather thongs forming a prominent X-pattern bridge across her cleavage. CORSET BELT LOCK (CRITICAL): Tightly cinched at her tiny waist with a wide 10-12 cm dark-chocolate brown leather belt. SLEEVE CUFF LOCK (CRITICAL): Long fitted sleeves ending cleanly at the wrists; knee-high hide boots worn on her feet. Strictly NO modern jewelry, NO necklace, NO chain.
-0-2s: Nora's open palm enters the warm golden sun, holding the two authentic Neanderthal artifacts steadily before the lens.
-2-5s: The brilliant morning light highlights the contrasting textures: the metallic brassy sparkle of the iron pyrite nodule alongside the smooth, lustrous dark horn curve of the drilled eagle talon.
-5-8s: These two physical relics—fire technology and symbolic culture—reveal how sophisticated Neanderthal survival and cognitive expression truly were, resting safely in human hands.; Nora says with an affectionate smile: "Two gifts to remember them by: the spark of fire, and the symbol of family."
-PHYSICAL REALISM & BIOMECHANICS:
-Physically authentic macro lighting: specular highlights on metallic pyrite crystals and soft sub-surface scattering on polished keratin talon; realistic palm crease micro-textures.
-CAMERA:
-Razor-sharp macro lens holding pristine focus on both objects in Nora's hand.
-AUDIO:
-Gentle mountain breeze, soft dry rustle of skin on rock, deep quiet awe. Nora's clear spoken voice/whisper: "Two gifts to remember them by: the spark of fire, and the symbol of family.".
-
+The glittering golden brass iron pyrite firestone and the polished black white-tailed eagle talon resting side-by-side on Nora's palm.
 CRITICAL VLOG SPEECH LOCK:
-Only Nora speaks English to the camera in her native Laomedeia voice profile; all Neanderthals never speak English and keep their lips firmly closed throughout.
-```
-
----
-
-### CẢNH 75 (8s) — Outro & Toàn Cảnh Thung Lũng Vĩnh Cửu
-- **Mã kịch bản:** A5-12
-- **Góc máy:** Đại toàn cảnh thung lũng Kỷ Băng Hà mờ dần về đen (Extreme wide landscape outro shot).
-- **Nhân vật:** Bóng dáng nhỏ bé của Nora sải bước trên con đường mòn thung lũng Dordogne mênh mông tuyết trắng; cảnh từ từ mờ dần về đen.
-- **Diễn biến:**
-  - `0-2s`: Khung hình đại toàn cảnh (extreme wide shot) bao quát toàn bộ thung lũng Dordogne hùng vĩ dưới nắng mai rực rỡ.
-  - `2-5s`: Bóng dáng nhỏ bé của Nora đang sải bước vững chãi tiến về phía chân trời tuyết trắng, xa xa là vách đá Pech de l'Azé sừng sững nghìn năm.
-  - `5-8s`: Khung hình tĩnh lặng, hùng vĩ và thiêng liêng từ từ mờ dần về màu đen (slow fade to black), khép lại trọn vẹn hành trình 24 giờ kỳ diệu cùng người Neanderthal.
-- **FULL PROMPT (OMNI FLASH R2V):**
-```text
-Photorealistic prehistoric survival documentary outro landscape footage.
-SHOT:
-Extreme wide shot capturing the vast scale of the Pleistocene Dordogne river valley, slowly fading to black.
-SETTING:
-The colossal glacial valley of the Dordogne 51,000 years ago under a brilliant, cloudless morning sky. Massive limestone bluffs flank the snowbound river plain.
-CHARACTERS:
-The solitary small figure of Nora walking steadily along the lower valley trail, heading toward the distant horizon.
-
-IDENTITY & OUTFIT LOCK (CRITICAL -- match reference images exactly):
-Nora's face and hair match the Nora face reference sheet, and her build and clothing match the Nora Body sheet. Nora has a voluptuous, curvaceous hourglass figure with a prominent high natural bust, tiny narrow waist, and shapely hips. Nora has honey-blonde hair pulled up into a high wavy ponytail tied with a raw leather thong (strictly NO rubber band), with wispy curtain bangs framing both cheeks. Nora wears a form-fitting tailored tunic of smoked golden-tan deer suede, precision-sewn with fine sinew stitches. CHEST LACING LOCK (CRITICAL): Deep plunging V-neckline laced with thick dark-brown leather thongs forming a prominent X-pattern bridge across her cleavage. CORSET BELT LOCK (CRITICAL): Tightly cinched at her tiny waist with a wide 10-12 cm dark-chocolate brown leather belt. SLEEVE CUFF LOCK (CRITICAL): Long fitted sleeves ending cleanly at the wrists; knee-high hide boots worn on her feet. Strictly NO modern jewelry, NO necklace, NO chain.
-0-2s: The camera holds an immense wide perspective across the Pleistocene river valley, the towering limestone bluffs of Pech de l'Azé standing proud in the golden morning light.
-2-5s: Nora's solitary figure moves gracefully along the snow-covered trail, dwarfed by the timeless monumental wilderness of glacial Europe.
-5-8s: The majestic wilderness rests in eternal, sacred peace as the frame slowly, gracefully fades to black, bringing the 24-hour survival journey to a definitive close.
+Only Nora speaks English to camera in her native Laomedeia voice profile: "Two gifts to remember them by: the spark of fire, and the talon of the eagle."
+0-3s: Nora extends her open palm into sharp macro focus: the rough, glittering golden crystals of the pyrite stone catch the morning sunbeams, sparkling like pure gold.
+3-6s: Beside it, the smooth curved black eagle talon gleams with jet-black luster, showing the micro-scratches of ancient flint tool cut-marks at its base.
+6-8s: Nora gently curls her fingers around the two treasures, holding them close to her heart; Nora whispers with immense gratitude: "Two gifts to remember them by: the spark of fire, and the talon of the eagle."
 PHYSICAL REALISM & BIOMECHANICS:
-Authentic geological scale and atmospheric depth: natural blue mountain haze over distant ridges; tiny solitary figure adhering to physical terrain contouring.
+High-definition macro mineralogy and paleontology texture; genuine sunlight caustics and specular highlights dancing across pyrite facets; authentic human palm skin lines.
 CAMERA:
-Locked-off extreme wide panoramic landscape shot with slow, graceful fade to black in the final two seconds.
+Extreme close-up macro handheld with creamy background depth of field, holding rock-solid focus on the artifacts.
 AUDIO:
-Majestic mountain wind rustling through ancient valley pines, distant resonant river flow, peaceful acoustic fade to silence. Strictly NO spoken dialogue.
+Soft mineral clink of stone against talon, gentle breeze, Nora's awe-struck tender whisper: "Two gifts to remember them by: the spark of fire, and the talon of the eagle."
 ```
 
 ---
+
+### CẢNH 73 (8.0s) — Cảnh 73: Lời Kết Triết Lý Sâu Sắc: 'Họ Đã Sống Trọn Vẹn'
+- **Mã kịch bản:** A5-15-THEY-LIVED
+- **Thời lượng:** 8.0s
+- **Nhân vật & Refs:** Nora, Nora Body, Pech Valley
+- **Thoại Nora (Dialogue / Laomedeia):** "They didn't just survive. They lived."
+- **Tóm tắt hành động (VN):** Nora nhìn lại camera một lần cuối cùng, nở nụ cười rạng ngời và kiêu hãnh. Cô thốt lên câu kết luận xúc động nhất của cả hành trình 24 giờ: 'Họ không chỉ sinh tồn. Họ đã sống trọn vẹn.'
+- **FULL PROMPT (OMNI FLASH R2V):**
+
+```text
+Photorealistic prehistoric survival documentary outro emotional climax footage.
+SHOT:
+Cinematic close-up handheld selfie vlog shot, tightly framing Nora's radiant, sunlit face as she delivers the final emotional punchline of the journey. Handheld camera maintains steady intimate focus; strictly NO 180-degree flips.
+SETTING:
+Sunlit snowy valley of Dordogne, winter sun creating a soft golden halo around Nora's hair.
+CHARACTERS:
+Nora gazes directly into the lens with profound peace, smiling with warm tears of wonder in her eyes.
+IDENTITY & OUTFIT LOCK (CRITICAL -- match reference images exactly):
+Nora matches face and Body sheets. Voluptuous figure, honey-blonde ponytail glowing in morning light, golden suede tunic, eagle talon on chest, red ochre cheek mark.
+CRITICAL VLOG SPEECH LOCK:
+Nora delivers her iconic final thesis in her native Laomedeia voice profile: "They didn't just survive. They lived."
+0-3s: Nora pauses, looking directly into the viewer's eyes through the camera lens with absolute clarity and warmth.
+3-6s: A gentle, knowing smile spreads across her face, capturing the culmination of twenty-four hours of mortal danger, brotherhood, and wonder.
+6-8s: In a quiet, powerful, unforgettable whisper, Nora delivers the final words of the film: "They didn't just survive. They lived."
+PHYSICAL REALISM & BIOMECHANICS:
+Golden hour halo lighting wrapping around blonde hair fibers; micro-emotional expression of profound philosophical completion; clear peaceful gaze.
+CAMERA:
+Close-up handheld shot holding a rock-solid, loving gaze on Nora's face before slowly drifting back.
+AUDIO:
+Soft whisper of wind, delicate resonant ambient tone, Nora's unforgettable final spoken whisper: "They didn't just survive. They lived."
+```
+
+---
+
+### CẢNH 74 (8.0s) — Cảnh 74: Drone Bay Lùi Bao Quát Thung Lũng Dordogne Vĩnh Cửu
+- **Mã kịch bản:** A5-16-AERIAL-PULLBACK
+- **Thời lượng:** 8.0s
+- **Nhân vật & Refs:** Nora, Nora Body, Pech Valley
+- **Thoại Nora (Dialogue / Laomedeia):** ""
+- **Tóm tắt hành động (VN):** Máy quay bay lùi dần lên cao và ra xa, bóng dáng nhỏ bé của Nora bước đi dọc dòng sông băng giữa thung lũng Dordogne hùng vĩ, bao quanh bởi những rặng thông và vách đá tuyết ngút ngàn.
+- **FULL PROMPT (OMNI FLASH R2V):**
+
+```text
+Photorealistic prehistoric survival documentary aerial pull-back footage.
+SHOT:
+Cinematic high-altitude aerial pull-back shot, beginning at medium height near Nora and pulling smoothly up and backward into the sky, revealing the monumental scale of the Pleistocene Earth. Camera glides with breathtaking majesty; strictly NO modern artifacts.
+SETTING:
+The vast, untamed Dordogne river valley, 51,000 years ago Pleistocene winter. Vast snowfields, primeval forests, and limestone bluffs stretch to the horizon under a crystal-clear blue sky.
+CHARACTERS:
+Nora appears as a small, resilient golden figure walking peacefully along the riverbank trail below.
+0-3s: The camera smoothly accelerates backward and upward, lifting away from Nora as she walks forward through the sparkling snow.
+3-6s: Nora becomes a tiny resilient dot amidst the colossal primeval landscape of frozen rivers, towering pine forests, and massive limestone cliffs.
+6-8s: The majestic scale of the Ice Age planet fills the frame—pure, untamed, breathtaking, and eternal.
+PHYSICAL REALISM & BIOMECHANICS:
+Cinematic exponential pull-back geometry; optical depth scaling; photorealistic landscape rendering of Ice Age Europe without a single trace of modern civilization.
+CAMERA:
+High-speed smooth aerial crane-style pull-back ascending from 5 metres to 200 metres altitude in continuous motion.
+AUDIO:
+Rising majestic wind sweep, profound primeval stillness, distant eagle cry. Strictly NO spoken dialogue.
+```
+
+---
+
+### CẢNH 75 (8.0s) — Cảnh 75: Màn Hình Đen & Kết Thúc Hành Trình 24 Giờ Sinh Tồn
+- **Mã kịch bản:** A5-17-TITLE-FADE
+- **Thời lượng:** 8.0s
+- **Nhân vật & Refs:** Pech Valley
+- **Thoại Nora (Dialogue / Laomedeia):** ""
+- **Tóm tắt hành động (VN):** Cảnh thung lũng vĩnh cửu từ từ chìm vào màn hình đen tĩnh lặng. Dòng chữ kết thúc hành trình 24 giờ cùng người Neanderthal hiện lên trang trọng, khép lại một tập vlog sinh tồn huyền thoại.
+- **FULL PROMPT (OMNI FLASH R2V):**
+
+```text
+Photorealistic prehistoric survival documentary outro outro footage.
+SHOT:
+Static extreme wide aerial shot of the frozen Dordogne valley slowly and gently fading to deep black. Camera holds majestic stillness; strictly NO modern artifacts.
+SETTING:
+The eternal Pleistocene landscape of Dordogne, 51,000 years ago. Sunset light begins touching the highest mountain peaks in the far distance.
+CHARACTERS:
+Strictly NO people in frame; pure primeval Earth.
+0-3s: The grand panorama of the Pleistocene wilderness sits in magnificent, quiet stillness under the fading twilight.
+3-6s: Soft shadows gently envelop the valley basin as the exposure slowly and smoothly dips toward darkness.
+6-8s: The image gracefully dissolves into pure, peaceful cinematic black.
+PHYSICAL REALISM & BIOMECHANICS:
+Gentle photometric exposure fade; twilight color temperature shift from golden-hour amber to deep indigo and black.
+CAMERA:
+Static extreme wide shot holding steady as darkness envelops the frame.
+AUDIO:
+Fading mountain breeze, peaceful resonant silence dissolving into complete quiet. Strictly NO spoken dialogue.
+```
+
+---
+
