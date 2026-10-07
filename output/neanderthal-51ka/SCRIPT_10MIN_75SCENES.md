@@ -76,38 +76,26 @@
   - `3-6s`: Khi cô vừa bước tới gần vòm cửa hang, Người Mạnh Nhất đang đứng gác liền bình tĩnh bước một bước ra, hạ nhẹ thân cây giáo gỗ ngang trước lối đi (chắn nhẹ nhàng, kiên quyết, tuyệt đối KHÔNG đâm chọc hay hung hãn bạo lực).
   - `6-8s`: Nora khựng lại, giơ hai bàn tay trống không run rẩy lên ngang ngực tỏ ý không có vũ khí; Người Mạnh Nhất giữ nguyên ngọn giáo chắn ngang, ánh mắt kiên định không cho người lạ bước qua.
 
-#### Cảnh 09 (8s) — POV Nora bị cấm cửa ngoài thềm đá *(GEN MỚI)*
-- **Góc máy:** POV góc rộng cầm tay nhìn từ ngoài cửa hang vào trong (Handheld POV shivering).
-- **Nhân vật:** Thềm cửa hang đá vôi, ngọn giáo gỗ của Người Mạnh Nhất, hậu cảnh sâu bên trong hang là ánh lửa ấm và bóng người trưởng thành.
-- **Diễn biến:** 
-  - `0-3s`: Máy quay rung rẩy dữ dội theo cơn rét của Nora, nhìn qua ngọn giáo gỗ ngang ngực.
-  - `3-6s`: Bên trong hang cách khoảng 6 mét, đốm lửa bập bùng chiếu sáng vách đá; một phụ nữ lớn tuổi đang ngồi miệt mài bên bếp lửa, khói thơm mùi gỗ thông bay thoang thoảng ra ngoài.
-  - `6-8s`: Gió núi thung lũng thổi thốc vào lưng Nora, sương giá bám vào đuôi tóc cô. Nora thì thầm qua kẽ răng: *"They won't let me in... and the wind is picking up."* *(CẮT BỎ HOÀN TOÀN NGƯỜI BỊ THƯƠNG)*.
+#### Cảnh 09 (10s) — Thủ Lĩnh bước ra & Thử thách ném đá đánh lửa *(MASTER 10S - ĐANG GEN)*
+- **Góc máy:** Qua vai/Sau lưng Nora (OTS Handheld tracking looking toward cave entrance).
+- **Nhân vật:** Nora (đứng ngoài thềm đá run rẩy), Người Mạnh Nhất (giữ giáo gác cửa), Thủ Lĩnh (bước từ trong hang ra cầm 2 hòn đá Pyrite & Flint), Cửa hang đá vôi.
+- **Diễn biến:**
+  - `0-3s`: Tính liên tục từ Cảnh 08: Nora đứng co ro ngoài thềm đá. Người Mạnh Nhất giữ giáo chắn lối, ngoái đầu vào trong hang cất tiếng gầm trầm từ lồng ngực báo hiệu cho Thủ Lĩnh.
+  - `3-6s`: Từ bóng tối ấm áp có ánh lửa sâu trong hang, Thủ Lĩnh sải bước nặng trịch bước ra ngoài thềm đá, đứng cạnh Người Mạnh Nhất đối diện Nora. Tay ông cầm một mảnh đá lửa xám đen và một cục quặng sắt pyrite vàng ánh kim.
+  - `6-8s`: Nhìn Nora ướt sũng run rẩy, Thủ Lĩnh gõ quẹt dứt khoát một nhát đá pyrite vào đá lửa tóe ra vài tia lửa cam chớp tắt trong không khí giá lạnh.
+  - `8-10s`: Thủ Lĩnh buông tay ném cộp 2 viên đá xuống mặt sỏi trước chân Nora, rồi chỉ tay vào 2 viên đá, chỉ vào trong hang, và chỉ xuống dốc thung lũng băng giá: thử thách sinh tồn không lời đanh thép. Nora nhìn xuống 2 viên đá dưới chân.
 
-#### Cảnh 10 (8s) — Thử thách đánh lửa từ Thủ Lĩnh *(GEN MỚI)*
-- **Góc máy:** Góc nhìn thấp từ mặt đất hướng lên Thủ Lĩnh (Low angle POV looking up at Leader).
-- **Nhân vật:** Thủ Lĩnh, Nora (bàn tay run rẩy), Thềm đá trước cửa hang.
-- **Diễn biến:** 
-  - `0-3s`: Thủ Lĩnh từ trong bóng tối bước ra ngưỡng cửa hang, nhìn dáng vẻ run rẩy sắp lả đi vì lạnh của Nora.
-  - `3-6s`: Ông thò tay vào bao da bên hông, lấy ra hai hòn đá: một viên quặng sắt pyrite vàng ánh kim và một mảnh đá lửa (*flint biface*) đen nhánh, ném cộp một tiếng dứt khoát xuống mặt sỏi trước chân Nora.
-  - `6-8s`: Thủ Lĩnh chỉ ngón tay thô ráp xuống hai viên đá rồi chỉ vào đống rêu khô dưới đất, mắt nhìn xoáy vào cô: thông điệp sinh tồn không lời — *"Hãy tự chứng minh cô có khả năng sống sót"*.
+#### Cảnh 10 (8s) — Nora quỳ xuống gõ đá tạo tia lửa đầu tiên
+- **Góc máy:** Cận cảnh mặt đất (Macro ground close-up).
+- **Nhân vật:** Hai bàn tay Nora tím tái vì lạnh, viên pyrite và đá lửa flint, nhúm bùi nhùi rêu khô trên sỏi.
+- **Diễn biến:**
+  - `0-3s`: Nora quỳ sụp gối xuống nền sỏi lạnh buốt, hai bàn tay run lẩy bẩy nhặt viên pyrite và mảnh đá lửa flint lên, gom nhúm rêu khô lại gần.
+  - `3-6s`: Cô tập trung hết sức gõ mạnh quặng pyrite vào sống đá lửa; tia lửa cam tóe ra rơi trúng vào nhúm rêu khô.
+  - `6-8s`: Một đốm than đỏ bừng sáng trong nhúm rêu, sợi khói trắng mỏng mảnh bay lên. Nora ghé sát miệng thổi nhẹ, đốm lửa bùng sáng bốc khói nghi ngút.
 
-#### Cảnh 11 (8s) — Nora gõ đá tạo tia lửa đầu tiên *(GEN MỚI)*
-- **Góc máy:** Cận cảnh bàn tay trên mặt đất (Macro close-up ground shot).
-- **Nhân vật:** Hai bàn tay Nora tím tái vì lạnh, viên pyrite và đá lửa flint, nhúm bùi nhùi rêu khô.
-- **Diễn biến:** 
-  - `0-3s`: Nora quỳ sụp gối xuống nền sỏi, hai bàn tay cóng ngắt cầm chặt viên pyrite và phiến đá lửa, gom nhúm rêu khô phủ bụi nấm bùi nhùi lại gần.
-  - `3-6s`: Cô gõ mạnh một cú quét dứt khoát; cạnh sắc của quặng pyrite cọ vào đá lửa tóe ra một chùm tia lửa cam sáng rực rơi trúng nhúm rêu khô.
-  - `6-8s`: Một điểm đỏ rực bừng sáng trong nhúm rêu, sợi khói trắng mỏng mảnh bay lên. Nora ghé sát môi thổi nhẹ, đốm than đỏ bùng lan rộng.
-
----
-
-### HỒI 2: ĐỜI SỐNG CỘNG ĐỒNG BÊN BẾP LỬA (01:28 – 03:28)
-*(Tập trung vào cuộc sống sinh tồn của người lớn: kỹ nghệ thuộc da, sưởi ấm, tương tác xã hội — KHÔNG TRẺ CON)*
-
-#### Cảnh 12 (8s) — Được công nhận & Bước qua ngưỡng cửa hang
-- **Góc máy:** Selfie góc rộng (Selfie hand-held, ánh lửa phản chiếu trên mặt).
-- **Diễn biến:** Nora cầm nhúm rêu bốc khói đứng dậy. Thủ Lĩnh khẽ gật đầu, Người Mạnh Nhất từ từ thu ngọn giáo gỗ lại né sang một bên. Nora thở phào bước qua ranh giới cửa hang vào không gian ấm áp.
+#### Cảnh 11 (8s) — Được công nhận & Bước qua ngưỡng cửa hang
+- **Góc máy:** Selfie góc rộng cầm tay / OTS (Handheld vlog).
+- **Diễn biến:** Nora cầm nhúm rêu bốc khói đứng dậy đưa ra phía trước. Thủ Lĩnh khẽ gật đầu công nhận bản lĩnh sinh tồn của cô, Người Mạnh Nhất từ từ thu ngọn giáo gỗ lại né sang một bên nhường đường. Nora thở phào bước qua ranh giới cửa hang vào không gian ấm áp bên trong.
 - **Thoại:** *"I'm in. The heat hits my face like a furnace."*
 
 #### Cảnh 13 (8s) — Bếp lửa đá vôi trung tâm hang động

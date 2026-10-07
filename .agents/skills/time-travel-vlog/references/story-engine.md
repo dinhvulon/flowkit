@@ -215,6 +215,30 @@ Tránh trôi nhận diện trang phục (*outfit drift*) xuyên suốt 60–70 c
 - **Jewelry Lock (CRITICAL):** Cấm triệt để mọi loại dây chuyền, vòng cổ, mặt đá, chuỗi hạt, trang sức hiện đại (`Nora wears strictly NO necklace, NO chain, NO pendant, NO cord around her neck, NO modern jewelry; her throat and neck are completely bare skin`).
 - **Sleeve Cuff Lock:** Cổ tay áo kết thúc trơn sạch với đường may chìm, cấm tua rua, cấm lông thú rườm rà.
 
+## 7d. Cơ chế vật lý đánh lửa va đập & Khóa tiếp xúc bùi nhùi (Tinder-Contact Strike & Smoke Origin Lock) (user chốt 2026-10-07)
+
+Rút ra từ bài học thực chiến sửa lỗi Cảnh 10 (Scene 10 V1 → V4):
+1. **Lỗi đánh đá lơ lửng ngoài không khí (Floating Strike Fallacy) & Khóa tiếp xúc bùi nhùi (`TINDER-CONTACT STRIKE LOCK`):**
+   - **Thực tế vật lý va đập lửa (Pyrite & Flint Percussion):** Tia lửa từ khoáng pyrite đập vào đá lửa silic (flint) là các hạt sắt oxy hóa li ti có nhiệt lượng thấp (~600–800°C) và thời gian phát sáng cực ngắn (<0.2 giây) trước khi tàn lạnh trong không khí băng giá. Nếu cầm hai hòn đá đập lơ lửng bên ngoài tổ rêu, tia lửa sẽ bay tứ tán ra ngoài đất hoặc nguội lạnh trước khi chạm tới sợi bùi nhùi.
+   - **Quy tắc cơ học bắt buộc:** Phiến đá flint/silic BẮT BUỘC phải **tì/ghì trực tiếp lên miệng hoặc bên trong tổ rêu bùi nhùi** (`holds the dark flint stone pressed firmly directly on top of the tinder moss nest`). Tay còn lại cầm khối quặng pyrite chém xéo miết mạnh sát sạt mép đá ngay trên miệng bùi nhùi (cách sợi rêu chỉ vài mm) (`strikes the pyrite downward right against the flint edge millimeters directly above the tinder fibers`). Tia lửa vừa bật ra sẽ rơi trực diện cắm thẳng vào lõi sợi rêu bùi nhùi bên dưới để bén than đỏ ngay lập tức.
+   - **Mẫu câu khóa trong prompt:**
+     ```
+     TINDER-CONTACT STRIKE LOCK (CRITICAL): [Character] holds the sharp dark flint biface pressed firmly directly on top of the tinder moss nest; she strikes the pyrite downward right against the flint edge millimeters directly above the tinder fibers. Sparks cascade directly into the moss beneath the stone.
+     ```
+
+2. **Trình tự thao tác giải phóng đạo cụ sau khi bén lửa (`POST-IGNITION PROP DEPOSIT`):**
+   - Đập nhát đầu không ăn → chém 2–3 nhát nhanh dứt khoát → đốm than đỏ bén sáng.
+   - Ngay khi than đỏ đã bắt vào sợi rêu, nhân vật **phải đặt ngay 2 hòn đá sang hai bên thềm sỏi/đất** (`places both fire stones aside onto the gravel ground on either side`), giải phóng hoàn toàn hai tay.
+   - Chụm hai lòng bàn tay hình chữ V úp che chắn gió bấc xung quanh tổ rêu (`cups both hands around the moss nest to shield it from freezing crosswinds`).
+
+3. **Hiện tượng ảo giác khói phì ra từ miệng (Vape Smoke Hallucination) & Khóa nguồn gốc khói (`SMOKE ORIGIN LOCK`):**
+   - **Lỗi AI thường gặp:** Khi mô tả "thổi hơi vào tổ mồi" (`blowing breath into the tinder`), AI rất hay liên tưởng nhầm tới hành vi hút thuốc lá điện tử / vape và sinh ra khói xám bốc phì ra từ trong miệng, môi hoặc mũi của nhân vật.
+   - **Khóa nguồn gốc khói & Thổi hơi êm dịu:**
+     - **Nguồn gốc khói tuyệt đối duy nhất:** Khói chỉ được phép sinh ra từ tâm tổ rêu bùi nhùi đang bén lửa giữa hai bàn tay (`delicate thin wispy grey smoke curling upward exclusively from the burning moss between her hands`).
+     - **Miệng và môi sạch khói hoàn toàn:** Nhân vật ghé sát mặt chúm môi thổi hơi thở nhẹ nhàng, êm dịu; môi và miệng hoàn toàn sạch, không có bất kỳ làn khói nào thoát ra từ miệng (`[Character] blows smooth gentle breath downward; her lips and mouth are completely clean and strictly free of any smoke; NO smoke ever comes from her mouth`).
+     - **Độ êm dịu của luồng khí:** Hơi thổi phải nhẹ nhàng, đều đặn (`gentle, tender, steady breath`), tránh thổi mạnh làm thổi bay nhúm rêu hoặc làm tạt tắt đốm than đỏ.
+     - **Lửa bén liu riu tự nhiên:** Ngọn lửa mồi bùng lên nhỏ nhắn 2–4 cm ở tâm tổ rêu, khói mỏng nhẹ uốn lượn bay lên giữa các kẽ ngón tay.
+
 ## 8. Áp lực xã hội (Act 3)
 
 Ngoài sinh tồn, thêm lớp xung đột "**họ có chấp nhận cô không?**". Vlogger không chỉ học việc, cô phải chứng minh mình có ích:
@@ -340,6 +364,8 @@ Không để 70 clip 8s nối nhau đều đều. Trong script ghi một bảng 
 - [ ] Vật lý lửa mồi: ngọn lửa mồi li ti 2–3 cm (candle-sized), lụi tàn tự nhiên từ từ qua 2–3s, nhả khói trắng xám cuộn sóng liên tục, cấm tắt ngúm đột ngột (mục 7b)?
 - [ ] Đạo cụ nhỏ cầm sẵn trên tay từ frame 0, cấm tự spawn trong không khí hoặc tự biến mất (mục 7b)?
 - [ ] Khóa nhận diện trang phục đã mặc hoàn chỉnh: đai da tương phản sắc nét, đan dây ngực X dày dặn, cổ tay trơn sạch, cấm tuyệt đối đồ trang sức (mục 7c)?
+- [ ] Khóa tiếp xúc bùi nhùi khi đánh lửa: đá flint tì trực tiếp lên miệng tổ rêu, quẹt pyrite sát sạt mép đá rơi tia lửa vào rêu; bén lửa thì bỏ đá sang hai bên, chụm tay che gió (mục 7d)?
+- [ ] Khóa nguồn gốc khói (Smoke Origin Lock): khói mỏng chỉ bốc lên từ tổ bùi nhùi, môi và miệng sạch khói hoàn toàn, cấm khói phì ra từ miệng (mục 7d)?
 - [ ] Không còn từ gây hiểu nhầm / hiện đại hóa; ánh sáng tả bằng cảm giác, không vị trí mặt trời?
 
 **Retention**

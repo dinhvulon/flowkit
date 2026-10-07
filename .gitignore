@@ -1,7 +1,6 @@
 __pycache__/
 *.pyc
 *.db
-!flow_agent.db
 *.db-shm
 *.db-wal
 *.db-journal

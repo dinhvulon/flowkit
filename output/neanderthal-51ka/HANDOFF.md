@@ -30,7 +30,7 @@
 5. **KỊCH BẢN MASTER 10 PHÚT (75 CẢNH):** Kịch bản chuẩn 10 phút nối tiếp hoàn hảo từ Cảnh 07 đã được lập tại [SCRIPT_10MIN_75SCENES.md](SCRIPT_10MIN_75SCENES.md).
    - Cảnh 08: Người Mạnh Nhất đưa ngọn giáo gỗ chắn nhẹ nhàng, bình tĩnh, KHÔNG bạo lực.
    - Cảnh 09: POV Nora bị cấm cửa ngoài thềm đá lạnh buốt, CẮT BỎ HOÀN TOÀN NGƯỜI BỊ THƯƠNG.
-   - Cảnh 10: Thử thách đánh lửa (Thủ Lĩnh ném hai viên quặng pyrite + đá lửa flint biface).
+   - Cảnh 10: Thử thách đánh lửa (Thủ Lĩnh ném hai viên quặng pyrite + đá lửa flint biface). Đã hoàn thành bản V4 chuẩn cơ chế vật lý va đập: đá flint tì trực tiếp lên miệng tổ bùi nhùi, quẹt pyrite sát sạt mép đá rơi tia lửa trực diện vào rêu, than bén thì bỏ 2 hòn đá sang hai bên thềm sỏi, chụm tay che gió và thổi nhẹ êm dịu, khói mỏng chỉ bốc lên từ tổ rêu, môi sạch khói hoàn toàn (Đã ghi vào story-engine mục 7d).
 6. **Prompt của user là chuẩn.** Bản `clips.json` user sửa là nguồn đúng. Review chỉ được đưa ra bảng xung đột để user chọn, không tự đổi góc máy, hành động hay khóa.
 7. **Rule 41 đã bỏ** (user 2026-10-06): shot bám theo từ sau lưng vlogger là hợp lệ (A1-06).
 8. **Rule 29:** không gửi lệnh tốn credit khi user chưa đồng ý; sau mỗi bước gen phải dừng cho user duyệt.
@@ -70,17 +70,18 @@
 | **Meat Cache** | location | `abb4e925-3bac-44ca-bdbf-23ffce5b8da9` | `1f296118-bccf-4938-afe4-5f0dc9378391` | `refs/meat_cache_clean.jpg` · MASTER, A3-09 → A4-15 |
 | **Valley Woodland** | location | `1d041530-52ee-42cb-9233-0d8bcea3825f` | `d092f5aa-ed98-472d-ab53-94b41c8e6d4b` | `refs/valley_woodland_clean.jpg` · A1-03/04/05, A3-07/08, A4-05/05b/16 |
 
-### Trạng thái 60 clip
+### Trạng thái các clip
 
 | Scene | Clip | Trạng thái |
 |---|---|---|
-| — | FOREST-SPRINT (cold open, 10s) | ✅ `1080/scene_01_8ae57638_1080p_clean.mp4`; prompt gốc ở [shipped_prompts_scene01_02.json](shipped_prompts_scene01_02.json) |
-| 1 | MASTER-FIRE (10s) | ⏳ chưa gen (lần gửi đầu user đã hủy); chỉ dùng 4s cuối làm payoff |
-| 2 | EST-01 (6s) | ✅ dùng bản bay FPV đã duyệt `1080/scene_02_3fc899f4_1080p_clean.mp4` |
-| 3–7 | A1-01 → A1-05 | ✅ 1080p clean trong `1080/` |
-| 8–13 | A1-06 → A2-01 | ⏳ cần gen lại (file cũ user đã xóa; bản cũ vẫn còn trong commit `7a9c284`) |
-| 14–23 | A2-02 → A2-11 | ⏳ chưa gen |
-| 24–60 | Act 3–5 (37 clip, gồm A4-05b mới; A5-02 đã cắt) | ⏳ prompt mới, **chờ user duyệt** |
+| 01 | FOREST-SPRINT (cold open, 10s) | ✅ `1080/scene_01_8ae57638_1080p_clean.mp4` (Nora chạy trốn linh cẩu đêm) |
+| 02 | EST-01 (6s) | ✅ `1080/scene_02_3fc899f4_1080p_clean.mp4` (Drone FPV thung lũng & cửa hang có lửa) |
+| 03–07 | A1-01 → A1-05 (8s mỗi clip) | ✅ `1080/` clean (Rơi suối -> Co ro trên đá -> Hai thợ săn rình -> Áp sát -> Kiểm tra áo da & bỏ đi) |
+| **08** | A1-06 (8s, OTS bám sau) | ⏳ **Cần gen lại**: Người Mạnh Nhất đưa giáo chắn nhẹ nhàng, bình tĩnh, KHÔNG bạo lực |
+| **09** | A1-07 (8s, POV cửa hang) | ⏳ **Cần gen lại**: Bị cấm cửa ngoài thềm hang, gió rít, nhìn vào bếp lửa trong hang. **ĐÃ CẮT BỎ NGƯỜI BỊ THƯƠNG** |
+| **10** | A1-08 (8s, OTS phía sau Nora) | ⏳ **Cần gen lại**: **Camera phía sau Nora (OTS qua vai trái)** nhìn Thủ Lĩnh gõ quặng pyrite + flint tóe lửa rồi ném xuống chân Nora thử thách |
+| 11–23 | A1-09 → A2-11 (8s mỗi clip) | ⏳ Chờ gen tiếp theo mạch kịch bản |
+| 24–75 | Act 3–5 (Kịch bản 10 phút mở rộng) | ⏳ Đã lập tại `SCRIPT_10MIN_75SCENES.md` (Symbolic Culture & Hearth Life, KHÔNG TRẺ CON, KHÔNG ẨM THỰC) |
 
 ---
 
