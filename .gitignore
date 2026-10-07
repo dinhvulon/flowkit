@@ -1,6 +1,7 @@
 __pycache__/
 *.pyc
 *.db
+!flow_agent.db
 *.db-shm
 *.db-wal
 *.db-journal
@@ -28,6 +29,8 @@ extension/_metadata/
 .agent/
 flow_session_project.json
 .venv/
-output/ice_age_16_000_bc_survival_vlog/review/
-output/ice_age_16_000_bc_survival_vlog/scenes/
+output/*/review/
+output/*/scenes/
+output/*/1080/*_1080p.mp4
+!output/*/1080/*_1080p_clean.mp4
 
