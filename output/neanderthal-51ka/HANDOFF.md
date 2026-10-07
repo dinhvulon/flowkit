@@ -19,17 +19,27 @@
 
 ---
 
-## 1. Quy tắc bắt buộc (cập nhật 2026-10-06)
+## 1. Quy tắc bắt buộc (cập nhật 2026-10-07)
 
-1. **Prompt của user là chuẩn.** Bản `clips.json` user sửa chiều 2026-10-06 (commit `7a9c284`) là nguồn đúng cho scene 1–23. Review chỉ được đưa ra **bảng xung đột** để user chọn, không tự đổi góc máy, hành động hay khóa.
-2. **Rule 41 đã bỏ** (user 2026-10-06): shot bám theo từ sau lưng vlogger là hợp lệ (A1-06).
-3. **Rule 29:** không gửi lệnh tốn credit khi user chưa đồng ý; sau mỗi bước gen phải dừng cho user duyệt.
-4. **Rule 28:** ảnh AI phải tải về, chạy `python tools/remove_watermark_from_image.py`, upload lại lấy UUID sạch rồi mới gán.
-5. **Nhịp request:** mọi request Flow cách nhau 45–60s (server tự giãn); khi chạy gen dài thì nghỉ thêm 2 phút sau mỗi request (mục 0.4).
-6. **Rule 46:** video chỉ nhận `["Nora", "Nora Body", ...]`; không có entity outfit riêng.
-7. **Ảnh bối cảnh phải sinh mới trên Flow từ prompt**, không cắt frame từ video (user 2026-10-06).
-8. **Project id = Flow project id** ([flow_client.py:621](../../agent/services/flow_client.py#L621)): khi upload ảnh phải truyền `project_id` của project; để rỗng thì ảnh rơi vào session project khác.
-9. Entity `location` **có** được gửi vào R2V (lọc theo `character_names`, tối đa 7 ref, [operations.py:394](../../agent/sdk/services/operations.py#L394)).
+1. **TUYỆT ĐỐI CẤM TRẺ CON (Zero Children Rule - User Rule cứng):** Không bao giờ có trẻ con Neanderthal trong video. Tất cả các cảnh bộ tộc, bên bếp lửa và nghi lễ 100% chỉ có người trưởng thành (Thủ Lĩnh, Người Mạnh Nhất, Người Phụ Nữ Lớn Tuổi, Nữ Thợ Săn Trưởng Thành).
+2. **BỎ ẨM THỰC LẶP LẠI (User Rule 2026-10-07):** Bỏ hoàn toàn các cảnh ăn tủy xương, nướng thịt vì đã có ở tập trước. Không biến video thành review đồ ăn.
+3. **CHỈ ÁP DỤNG 2 TRỤ CỘT VĂN HÓA CỐT LÕI (User Rule 2026-10-07):**
+   - **Nghệ thuật & Tâm linh (Symbolic Culture):** Nghi thức đất son đỏ (*Red Ochre*), dấu bàn tay in vách đá (*Hand Stencils*), vòng cổ móng vuốt đại bàng (*Eagle Talon Necklace*).
+   - **Đời sống gia đình bên bếp lửa (Adult Hearth Life - CHỈ NGƯỜI LỚN):** Người phụ nữ lớn tuổi làm da thú bằng dao nạo đá Mousterian, xỏ gân hươu, nước sôi bằng đá nung, góc ngủ lót cành thông và da gấu ấm áp.
+4. **ĐÃ PHÂN TÍCH & KHÓA CHÍNH XÁC VIDEO 01-07 (1080P CLEAN):** Toàn bộ phân tích chi tiết, góc máy, bối cảnh, hành động và lời thoại thực tế của 7 video có sẵn trong `1080/` đã được lưu tại [SCENES_01_TO_07_ANALYSIS.md](SCENES_01_TO_07_ANALYSIS.md).
+5. **KỊCH BẢN MASTER 10 PHÚT (75 CẢNH):** Kịch bản chuẩn 10 phút nối tiếp hoàn hảo từ Cảnh 07 đã được lập tại [SCRIPT_10MIN_75SCENES.md](SCRIPT_10MIN_75SCENES.md).
+   - Cảnh 08: Người Mạnh Nhất đưa ngọn giáo gỗ chắn nhẹ nhàng, bình tĩnh, KHÔNG bạo lực.
+   - Cảnh 09: POV Nora bị cấm cửa ngoài thềm đá lạnh buốt, CẮT BỎ HOÀN TOÀN NGƯỜI BỊ THƯƠNG.
+   - Cảnh 10: Thử thách đánh lửa (Thủ Lĩnh ném hai viên quặng pyrite + đá lửa flint biface).
+6. **Prompt của user là chuẩn.** Bản `clips.json` user sửa là nguồn đúng. Review chỉ được đưa ra bảng xung đột để user chọn, không tự đổi góc máy, hành động hay khóa.
+7. **Rule 41 đã bỏ** (user 2026-10-06): shot bám theo từ sau lưng vlogger là hợp lệ (A1-06).
+8. **Rule 29:** không gửi lệnh tốn credit khi user chưa đồng ý; sau mỗi bước gen phải dừng cho user duyệt.
+9. **Rule 28:** ảnh AI phải tải về, chạy `python tools/remove_watermark_from_image.py`, upload lại lấy UUID sạch rồi mới gán.
+10. **Nhịp request:** mọi request Flow cách nhau 45–60s (server tự giãn); khi chạy gen dài thì nghỉ thêm 2 phút sau mỗi request.
+11. **Rule 46:** video chỉ nhận `["Nora", "Nora Body", ...]`; không có entity outfit riêng.
+12. **Ảnh bối cảnh phải sinh mới trên Flow từ prompt**, không cắt frame từ video.
+13. **Project id = Flow project id**: khi upload ảnh phải truyền `project_id` của project.
+14. Entity `location` **có** được gửi vào R2V (lọc theo `character_names`, tối đa 7 ref).
 
 ---
 
