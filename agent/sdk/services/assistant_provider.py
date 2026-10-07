@@ -44,6 +44,7 @@ from urllib.parse import urlparse
 
 from agent import config
 from agent.db import crud
+from agent.utils.paths import file_url_to_path
 from agent.sdk.services.provider_base import (
     KIND_AUDIO,
     KIND_EDIT_IMAGE,
@@ -92,8 +93,8 @@ def _video_result(mid: str, url: str) -> dict:
 
 def _audio_result(url: str) -> dict:
     """TTS result: the finished audio URL plus a local path when file://."""
-    parsed = urlparse(url or "")
-    local_path = str(Path(parsed.path).resolve()) if parsed.scheme == "file" else ""
+    local = file_url_to_path(url or "")
+    local_path = str(local.resolve()) if local is not None else ""
     return {"data": {"url": url, "audio_path": local_path or url}}
 
 
@@ -204,29 +205,10 @@ class AssistantProvider(MediaProvider):
         self, url: str, *, name: str = "", project_id: str = ""
     ) -> dict:
         """Mint a UUID media_id for an already-existing local image."""
-        local = None
-        try:
-            p = Path(url)
-            if p.is_file():
-                local = p
-        except Exception:
-            pass
-        if not local and url.startswith("file://"):
-            raw = url[7:]
-            if len(raw) > 2 and raw[0] == "/" and raw[2] == ":":
-                raw = raw[1:]
-            try:
-                p = Path(raw)
-                if p.is_file():
-                    local = p
-                else:
-                    import urllib.request
-                    p2 = Path(urllib.request.url2pathname(raw))
-                    if p2.is_file():
-                        local = p2
-            except Exception:
-                pass
-        if not local or not local.is_file():
+        local = file_url_to_path(url)
+        if local is None:
+            local = Path(url)
+        if not local.is_file():
             return {"error": f"AssistantProvider: local image not found for '{name}': {url}"}
         mid = str(uuid.uuid4())
         canonical = "file://" + str(local.resolve())

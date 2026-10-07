@@ -35,3 +35,6 @@ flow_agent.db-shm
 flow_agent.db-wal
 flow_agent.db.bak*
 
+*.mp3
+
+series_manifest.json
