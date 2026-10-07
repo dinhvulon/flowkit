@@ -47,6 +47,15 @@ Gồm: mặt (tuổi, dáng mặt, mắt, tàn nhang/nốt ruồi), tóc (màu, 
    - **Khóa cấm vươn tay chạm ống kính**: Trong shot vlog selfie, AI hay nhầm giơ tay khoe đồ với vươn tay chọt màn hình/chạm ống kính làm che mắt camera. BẮT BUỘC khóa: `"her free hand NEVER reaches toward, touches, covers, taps, or points at the camera lens; she holds her free hand up at chest level showing the item at a safe distance"`.
    - **Tả trực tiếp hành vi mặc/đeo đạo cụ chức năng**: Khi nhân vật phụ trao hoặc mặc đồ cho vlogger (găng tay, áo choàng, mũ nón, ủng tuyết): AI có xu hướng chỉ cầm sợi dây buộc lủng lẳng mà không hề mặc vào người vlogger. BẮT BUỘC dùng động từ hành động trực tiếp: `"[Character A] attentively holds the [prop] and actively slips and slides it directly onto [Character B]'s [bare hand/body], fitting it completely on before fastening any cords; [Character B] physically wears the [prop]"`. CẤM chỉ viết chung chung "giật dây/buộc dây".
    - **Đồng bộ 3 mốc thời gian**: 0–3s mặc/xỏ đạo cụ vào người; 3–6s đạo cụ mặc xong giơ lên ngang ngực khoe camera; 6–8s tương tác cảm xúc, kiểm tra độ ấm/vừa vặn.
+5. **Khóa Chuẩn Thoại 18–22 từ / Clip 8s & Liên kết chặt chẽ `fk-gen-narrator` (Rule 49 — BẮT BUỘC):**
+   - Clip 8s dùng lệnh `-ss 1` trim 1 giây đầu (khử giật AI) ➔ video hữu dụng thực tế = 7.0s. Trừ buffer đệm 0.5s an toàn ➔ thời lượng phát âm tối đa = ~6.5s.
+   - Tốc độ đọc tự nhiên (Laomedeia / TTS 1.1x - 1.2x): ~3.2 – 3.5 từ/giây.
+   - **BẮT BUỘC thoại 18 ĐẾN 22 TỪ** (cả English `narrator_text` lẫn Vietsub). Dưới 18 từ = **Dead air** (khoảng lặng chết). Trên 22 từ = **Cut-off** (bị ngắt cụt câu sang cảnh sau).
+   - **Phân bổ 3 phân đoạn thời gian:**
+     - `0-3s`: 6–7 từ (Cảm giác ban đầu / Thiết lập bối cảnh).
+     - `3-6s`: 7–8 từ (Hành động trực tiếp / Diễn biến chính).
+     - `6-8s`: 5–7 từ (Cảm xúc đọng lại / Cú punchline kết cảnh).
+   - **Khóa kỹ năng:** Mọi kịch bản POV vlog KHI VIẾT THOẠI BẮT BUỘC phải tuân thủ và gọi các tiêu chuẩn của `fk-gen-narrator`, nhúng thoại trực tiếp vào sub-clips `0-3s`, `3-6s`, `6-8s` trong `video_prompt` và đồng bộ vào `narrator_text`.
 
 
 ## Bước 2 — Research pack (tùy chọn)
@@ -145,11 +154,12 @@ Khi lập Storyboard dài (~10 phút ≈ 38–42 clip 8s), dùng bảng 23 beat 
 - [ ] Công trình nổi tiếng nhất nằm **sau** cao trào; di sản reveal theo 4 bậc (xa → xưởng → chạm → toàn cảnh).
 - [ ] Mỗi beat có một thứ mới (nơi mới, người mới, thông tin mới hoặc nguy hiểm mới).
 
-**Quy tắc thoại** (kinh nghiệm thực chiến tối ưu cho Veo / AI Video):
-- Mật độ theo loại clip (user chốt 2026-10-05): clip 8s bình thường **8–15 từ**, căng thẳng 3–8, cảm xúc 5–12, giải thích tối đa 12–18; có nhịp im lặng; cảnh cuối không thoại. Show > Tell, cấm meta language (`story-engine.md` mục 12).
-- Thoại viết theo `VOICE_LOCK` và qua checklist chống giọng AI ở `.agents/skills/time-travel-vlog/references/voice-bible.md` (tính cách: Nora là chuyên gia sinh tồn liều lĩnh, KHÔNG dạy lịch sử; chửi thề bị bíp; 3 khuôn beat: Làm → Vì sao, Cách của mình vs cách của họ, Người bản địa dạy → Nora làm theo).
-- Không nói chồng. Dân bản địa được nói bằng ngôn ngữ không hiểu được (không tiếng Anh) ở sub-clip riêng, giọng ghi rõ trong prompt; vlogger im lặng phản ứng rồi bình luận về giọng điệu, không dịch (`story-engine.md` mục 13).
-- Giọng vlog thật: câu ngắn, thì thầm khi sợ, tự ngắt ("no, wait—"). Chi tiết thế giới (thật hay bịa) hiện ra qua việc đang làm; không giảng lịch sử, không niên đại, không "scientists say".
+**Quy tắc thoại — Chuẩn Vàng 18 đến 22 từ / Clip 8s (Rule 49 & `/fk-gen-narrator`)**:
+- **BẮT BUỘC độ dài 18 đến 22 từ cho mỗi clip 8s** (video 8s trừ `-ss 1` còn 7s, audio khả dụng ~6.5s ở tốc độ nói đàm thoại 1.1x–1.2x). Tuyệt đối **CẤM dưới 18 từ** (gây khoảng lặng chết Dead Air 2-3s làm tụt retention) và **CẤM trên 22 từ** (gây tràn âm thanh Cut-Off, bị cắt cụt câu khi ghép video).
+- **Phân bổ chuẩn 3 sub-clips**: `0-3s` (6-7 từ: mở đầu / bối cảnh / phản ứng tức thời), `3-6s` (7-8 từ: diễn biến chính / mô tả hành động kịch tính), `6-8s` (5-7 từ: câu chốt / giải tỏa cảm xúc / punchline).
+- Khi viết hoặc sửa thoại, **BẮT BUỘC dùng skill [`/fk-gen-narrator`](file:///c:/flowkit/skills/fk-gen-narrator.md)** ở chế độ Time-Travel Vlog Mode để đồng bộ cả `narrator_text` và phần thoại trong `video_prompt`.
+- **Translator POV (Rule 36)**: Do AI model (Slot 7 Laomedeia) chỉ nhận 1 giọng nữ vlogger và người cổ đại không nói tiếng Anh/Việt, dân bản địa chỉ ra hiệu/hành động, vlogger xoay máy về mình thuật lại/phiên dịch trực tiếp (`Nora says: "Torak warned us that..."`).
+- Thoại viết theo `VOICE_LOCK` và qua checklist chống giọng AI ở `.agents/skills/time-travel-vlog/references/voice-bible.md` (tính cách: chuyên gia sinh tồn liều lĩnh, KHÔNG dạy lịch sử; chửi thề bị bíp; 3 khuôn beat: Làm → Vì sao, Cách của mình vs cách của họ, Người bản địa dạy → làm theo). Cấm tuyệt đối các từ cấm thiết bị theo Rule 40 (`phone`, `smartphone`, `screen`, `device`, `selfie-stick`).
 
 ## Bước 4 — Storyboard
 

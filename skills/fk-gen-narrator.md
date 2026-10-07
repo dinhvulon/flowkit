@@ -78,6 +78,63 @@ The project `story` provides overall narrative context.
 
 **Language:** Use `--language` flag or project's `language` field.
 
+### Project Mode Detection: Time Travel Vlog vs Standard Documentary
+
+Detect whether the project is a **Time Travel Vlog / POV Survival Vlog** (check `project.category == "time_travel_vlog"`, or project title/story mentions "vlog", "POV", "time travel", or uses reference characters with female vlogger profiles like Nora, Mia).
+
+---
+
+### MODE A: TIME TRAVEL VLOG / HISTORICAL POV VLOG (BẮT BUỘC KHÓA VÀO SKILL `time-travel-vlog`, `fk-time-travel-vlog`, `fk-vlog-guide` VÀ RULE 49)
+
+Khi phát hiện dự án là Time Travel / POV Vlog: **TUYỆT ĐỐI TUÂN THỦ CÁC QUY TẮC CỐT LÕI SAU:**
+
+1. **Tư cách người nói (First-Person Vlogger POV)**:
+   - **KHÔNG** dùng ngôi thứ ba tài liệu khách quan ("Người tiền sử đang săn...", "Đoàn thám hiểm đang...").
+   - Người nói là **chính Vlogger hiện đại (ngôi thứ nhất "I" / "mình" / Nora / Mia)** đang cầm camera vlog selfie tương tác trực tiếp với khán giả hoặc đối mặt tình huống sống còn.
+
+2. **CHUẨN VÀNG ĐỘ DÀI THOẠI: 18 ĐẾN 22 TỪ / CLIP 8S (Rule 49)**:
+   - Thời lượng clip gốc: 8.0s. Trừ 1.0s cắt đầu khử rung AI motion (`-ss 1`), usable video = 7.0s. Trừ 0.5s audio safety buffer $\implies$ Thời lượng phát âm tối đa = **~6.5s**.
+   - Ở tốc độ nói chuyện tự nhiên (conversational 1.1x–1.2x): 18–22 từ phát âm vừa vặn 5.8s–6.5s.
+   - **CẤM DƯỚI 18 TỪ (< 18 words)**: Gây khoảng lặng chết (**Dead Air** 2-3s), làm tụt retention người xem thảm hại.
+   - **CẤM TRÊN 22 TỪ (> 22 words)**: Gây tràn âm thanh (**Cut-Off**), câu nói bị nuốt hoặc cắt cụt giữa chừng khi ghép nối.
+
+3. **CẤU TRÚC PHÂN ĐOẠN 3 SUB-CLIPS (Sub-clip Timing Breakdown)**:
+   Mỗi clip 8s được chia thành 3 mốc tương ứng với hành động trong `video_prompt`:
+   - `0–3s`: **6–7 từ** (Mở đầu / Bối cảnh / Phản ứng cảm xúc ban đầu / Đặt vấn đề)
+   - `3–6s`: **7–8 từ** (Mô tả hành động / Diễn biến chính / Chi tiết kịch tính)
+   - `6–8s`: **5–7 từ** (Câu chốt hạ / Cảm xúc bất ngờ / Punchline / Dẫn dắt sang cảnh tiếp theo)
+   - **Tổng cộng**: Luôn kiểm tra linter đạt chuẩn vàng **18–22 từ**.
+
+4. **ĐỒNG BỘ TUYỆT ĐỐI GIỮA `narrator_text` VÀ `video_prompt`**:
+   - Omni Flash / Veo 3 sinh native dialogue từ các câu thoại nằm trong ngoặc kép ở `video_prompt` (ví dụ: `Nora says "Look at that massive tusker..."`).
+   - Khi tạo thoại, `fk-gen-narrator` PHẢI cập nhật CẢ `narrator_text` VÀ câu thoại trong `video_prompt` của scene (qua `PATCH /api/scenes/<sid>`), đảm bảo cả 2 khớp nhau 100%.
+
+5. **KỸ THUẬT VLOG PHIÊN DỊCH (Translator POV - Rule 36)**:
+   - Do Veo 3 / Omni Flash chỉ nhận 1 giọng nói (Slot 7 Laomedeia), và người bản địa tiền sử/cổ đại không nói tiếng hiện đại:
+   - Tuyệt đối **KHÔNG** gán thoại tiếng Anh/Việt cho nhân vật phụ bản địa (`Torak says "..."`).
+   - Nhân vật phụ chỉ ra hiệu, cử chỉ, hô lệnh bằng ngôn ngữ cổ trong phần mô tả hành động.
+   - Vlogger lập tức xoay camera về mình và phiên dịch hoặc thuật lại (`Nora says: "Torak warned us that...", "She told me this is..."`).
+
+6. **VOICE PROFILE LAOMEDEIA (Rule 24)**:
+   - Giọng nữ trẻ trung, tràn đầy năng lượng, tự nhiên, nhịp nói vlog nhanh tự tin, chuyển thành tiếng hét giật thót khi gặp nguy hiểm, hạ giọng thì thầm dồn dập khi lẩn trốn.
+
+7. **BỘ LINTER CHỐNG TỪ CẤM THIẾT BỊ (Rule 40)**:
+   - Tuyệt đối 0 từ cấm: `phone`, `smartphone`, `screen`, `device`, `selfie-stick` trong cả thoại lẫn prompt.
+
+8. **LIÊN KẾT KỸ NĂNG BẮT BUỘC (Skills Cross-Reference)**:
+   - Xem chi tiết nhịp kịch bản, 7 hồi, 23 beat giữ chân người xem tại: [`.agents/skills/time-travel-vlog/SKILL.md`](file:///c:/flowkit/.agents/skills/time-travel-vlog/SKILL.md)
+   - Xem quy trình tổng thể tại: [`skills/fk-time-travel-vlog.md`](file:///c:/flowkit/skills/fk-time-travel-vlog.md)
+   - Xem cẩm nang kỹ thuật góc máy & vật lý tại: [`skills/fk-vlog-guide.md`](file:///c:/flowkit/skills/fk-vlog-guide.md)
+   - Quy tắc hệ thống: **Rule 49 trong AGENTS.md / CLAUDE.md**.
+
+---
+
+### MODE B: STANDARD DOCUMENTARY (Tài Liệu Truyền Thống / Lịch Sử Khách Quan)
+
+Dành cho các phim tài liệu quân sự, chính trị, phóng sự không phải định dạng POV Vlog:
+
+**Language:** Use `--language` flag or project's `language` field.
+
 **CRITICAL: Narrator MUST be shorter than video.**
 Each scene video is 8s. With `-ss 1` trim, usable video = 7s. With 0.5s buffer, narrator must fit in ~6.5s max.
 At 1.1x speed: Vietnamese ~5.5 words/sec, English ~4.5 words/sec.
@@ -132,14 +189,15 @@ narrator_text: `Đại tá Harris phát hiện tín hiệu radar bất thường
 narrator_text: `Colonel Harris detects unusual radar signatures. Dozens of Iranian fast boats racing toward the convoy.`
 (15 words, ~5s at 1.2x — adds Iran context, punchy)
 
-## Step 4: Save narrator_text to each scene
+## Step 4: Save narrator_text and update video_prompt to each scene
 
 For each scene with generated text:
-
+- If Time-Travel Vlog Mode: ensure dialogue inside `video_prompt` matches `narrator_text`.
+- Save via API:
 ```bash
 curl -X PATCH "http://127.0.0.1:8100/api/scenes/<SID>" \
   -H "Content-Type: application/json" \
-  -d '{"narrator_text": "<generated_text>"}'
+  -d '{"narrator_text": "<generated_text>", "video_prompt": "<updated_video_prompt>"}'
 ```
 
 ## Step 5: Show all narrator texts for review
