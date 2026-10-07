@@ -1,9 +1,6 @@
 __pycache__/
 *.pyc
-*.db
-*.db-shm
-*.db-wal
-*.db-journal
+
 .env
 scratch/
 youtube
@@ -32,4 +29,8 @@ output/*/review/
 output/*/scenes/
 output/*/1080/*_1080p.mp4
 !output/*/1080/*_1080p_clean.mp4
+
+# SQLite WAL mode auxiliary files (runtime state, not for repo)
+flow_agent.db-shm
+flow_agent.db-wal
 
