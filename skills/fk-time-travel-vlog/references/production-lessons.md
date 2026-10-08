@@ -541,6 +541,23 @@ Rút ra từ dự án `output/atlantis-9600bc/` (2026-09-27). Khi mâu thuẫn v
          - Khi áp sát mục tiêu, phục kích, hoặc giao chiến sinh tử: BẮT BUỘC dùng First-Person POV và áp dụng **Sonic Isolation** (`Strictly NO spoken dialogue. Her mouth stays firmly closed in dead silence`). 
          - Âm thanh là Foley cơ học: tiếng thở nén qua mũi, tiếng tim đập, tiếng cành cây gãy, tiếng dã thú thở phì phò. Lời dẫn/suy nghĩ nội tâm nếu có chỉ đưa vào voiceover/subtitles hậu kỳ, miệng nhân vật KHÔNG được mấp máy.
       3. **Cánh tay khóa máy chỉ áp dụng cho shot Selfie:** Các bài học 25, 39, 50 về cánh tay duỗi thẳng giữ máy chỉ kích hoạt khi shot đó ĐÃ ĐƯỢC CHỌN là góc Selfie. Khi là shot First-Person POV, hai tay vlogger tự do tham gia hành động (cầm giáo, bò trườn, bám đá).
+62. **BỎ HẲN GIÁP LÁ CÀ / VA CHẠM THỂ XÁC VỚI THÚ LỚN; QUY TẮC PHỐI HỢP GÓC MÁY VLOG CHÂN THỰC (TỰ QUAY + TRẢI NGHIỆM 2 TAY TRONG KHUNG HÌNH); THOẠI DỒN DẬP 23–25 TỪ (User Lock 08/10/2026):**
+    - **Hiện tượng & Root Cause:** 
+      1. Bắt Veo 3 / Omni Flash R2V làm cảnh hành động cận chiến phức tạp đa thực thể (Scene 26–30 Neanderthal: 2 người đâm giáo, bò rừng 1 tấn húc tảng đá, vật lộn gục ngã) làm AI quá tải cơ học tiếp xúc (contact physics) ➔ vũ khí cong queo biến dạng hòa vào thịt, quái thú trượt lướt mất trọng lực, người bị vỡ giải phẫu.
+      2. Góc quay selfie một tay vươn dài gượng gạo vừa dễ gây dị tật cánh tay/méo mặt khi xoay người, vừa làm hẹp góc nhìn và che khuất không gian giao lưu. Tuy nhiên, nếu biến thành 100% First-Person POV vô hình thì vlogger biến mất hoàn toàn, mất đi bản sắc và tính kết nối của người dẫn chương trình vlog!
+      3. Thoại dưới 15 từ làm nhịp video bị thưa, thiếu năng lượng vlog thực tế.
+    - **Quy tắc đúc kết:**
+      1. **Dừng 100% cảnh đánh đấm/vật lộn đối kháng:** AI video hiện nay không xử lý được võ thuật và va chạm thể xác phức tạp. Tuyệt đối không viết cảnh cận chiến giáp lá cà người vs thú lớn.
+      2. **Chuyển sang Phone-Vlog Trải Nghiệm Giao Lưu & Sinh Tồn Kỳ Thú:** 
+         - Kịch bản tập trung vào **Nora đến trải nghiệm giao lưu văn hóa & cơ chế sinh tồn kỳ thú** (học hỏi công thức thành công của các kênh triệu view như Medieval Sisters nhưng giữ vững bản sắc vlog): Kỹ thuật đẽo đá Mousterian sắc như dao mổ, may đo kín khít bằng chỉ gân hươu, đun sôi nước bằng đá nung trong âu da, bột khoáng xúc tác MnO2, dấu bàn tay đất son đỏ.
+      3. **Quy tắc Phối hợp Góc Máy Vlog Chân Thực (Bỏ selfie 1 tay vươn dài):** 
+         - **Lúc cần có Nora (Self-Vlog / Tự quay)**: Nora cầm máy tự nhiên ngang ngực/cổ quay mặt mình, nói trực tiếp vào ống kính dẫn dắt câu chuyện và chia sẻ cảm xúc; không tả cánh tay vươn dài.
+         - **Lúc Nora thao tác 2 tay & Cảnh rộng (In-Frame Host Experience)**: Máy quay đặt trên tảng đá/chạc cây hoặc góc máy trung/toàn (Tripod/Rock-mounted medium/wide shot), Nora xuất hiện rõ ràng trong khung hình (Full/Medium Nora in frame), thoải mái dùng cả hai tay trải nghiệm cơ chế sinh tồn (nếm súp tủy xương, ngồi sưởi ấm bên đống lửa, đẽo đá, may đồ), vừa thao tác vừa quay mặt về phía camera vừa nói/giải thích kiểu người dẫn chương trình thực tế.
+         - **Cận cảnh chi tiết (POV Close-Up)**: Camera quay cận cảnh đồ vật/hiện tượng (đá nung sủi bọt, mũi khâu gân) khi cần khán giả soi chi tiết vi mô.
+      4. **Chuẩn Thoại Dồn Dập Mới: 23 – 25 từ trong clip 8s:** 
+         - Nora nói nhanh, dồn dập, tự nhiên và tràn đầy năng lượng qua giọng Laomedeia (vừa vặn 7.0–7.5 giây của clip 8s), tạo cảm giác vlogger đang livestream thực tế với nhịp adrenaline cao. Không vượt quá 26 từ để tránh bị cụt âm thanh ở giây thứ 8.
+      5. **Khóa Chuẩn Bối Cảnh Địa Lý/Thời Kỳ (Strictly No Snow):** 
+         - Tôn trọng bối cảnh gốc của thời kỳ (MIS 3 liên băng Dordogne là rừng thông ôn đới, đất mùn rêu xanh, tuyệt đối không tự ý chèn tuyết/bão mùa đông).
 
 
 **Nội dung**
