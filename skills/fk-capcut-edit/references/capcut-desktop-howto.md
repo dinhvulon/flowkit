@@ -33,13 +33,17 @@ Chỉ đọc khi user hỏi một nút / thao tác nằm ở đâu (user dựng 
 - **Trim**: kéo mép trái/phải clip. Bỏ 1s đầu mỗi clip FlowKit = đặt đầu phát ở 1.0s của clip → `Q`.
 - **Xóa và tự dồn khoảng trống**: chọn clip → `Delete` trên track chính (track chính tự dồn; track phủ thì không).
 - **CUT ĐEN**: Media → Library (hoặc kho nội bộ) → tìm "black" và kéo clip đen vào; hoặc để trống một đoạn ngắn trên track chính nếu bản CapCut cho phép khoảng trống.
+- **Magnet / Snapping**: biểu tượng nam châm trên thanh công cụ timeline; bật để clip hít sát, không hở khe 1 khung.
+- **Split scenes**: chuột phải một clip dài → Split scenes, CapCut tự tách theo cảnh (dùng khi chỉ có 1 file ghép).
 - **Gộp nhóm** (để di chuyển cả Act): chọn nhiều clip → chuột phải → **Create compound clip** (`Alt+G`).
 
 ## 4. Zoom, punch-in, keyframe
 - **Punch-in**: Split tại mốc 3s/6s → chọn đoạn sau → bảng phải Video → **Basic** → **Scale** = 110–115%. Kéo hình trong trình phát để chỉnh khung (Position).
 - **Push-in chậm**: đầu phát ở đầu clip → bấm biểu tượng **hình thoi (keyframe)** cạnh Scale (100%) → đưa đầu phát về cuối clip → đổi Scale thành 105–108% (keyframe thứ hai tự tạo).
 - **Bám chủ thể** (dùng nhiều ở Shorts): keyframe ở **Position** tại các điểm chủ thể di chuyển.
-- Muốn zoom mượt hơn: chuột phải vào keyframe (hoặc mục Graphs / Curves ở bản mới) → chọn ease in/out.
+- Muốn zoom mượt hơn: chuột phải vào keyframe (hoặc mục Graphs / Curves ở bản mới) → chọn ease in/out (Cubic Out cho `[Zoom-CO]`). `Shift`+`→` nhảy nhanh nhiều khung để đặt keyframe 2.
+- **Thước & đường gióng**: menu của trình phát (biểu tượng ⋯ / View) → Show ruler / guides → kéo từ thước ra một đường ngang ở tầm mắt (`[Gióng mắt]`).
+- **Đổi tốc độ**: chọn clip → bảng phải **Speed** → Normal (hệ số) hoặc **Curve** (dốc tăng tốc, `[Ramp]`). Smooth slow-mo chỉ hiện khi làm chậm.
 
 ## 5. Chữ & card
 - Text → **Default text** (Add text) → kéo lên track phủ đúng vị trí trong Bảng dựng → gõ nội dung ở bảng phải.
@@ -53,6 +57,7 @@ Chỉ đọc khi user hỏi một nút / thao tác nằm ở đâu (user dựng 
 - **Fade**: Fade in / Fade out ngay dưới Volume (nhạc vào/ra 0.5–1s).
 - **Normalize loudness**: toggle trong bảng Audio (nếu có) — bật cho clip thoại để các clip đều tiếng nhau.
 - **Tách âm khỏi clip** (để làm J-cut/L-cut): chuột phải clip → **Extract audio** / **Separate audio**. Kéo phần âm của clip sau sang trái ~0.5s.
+- **Match beats / Auto beat**: chọn nhạc → biểu tượng beat trên thanh công cụ (hoặc chuột phải) → Beat 1 / Beat 2; chấm vàng trên clip nhạc là điểm cắt gợi ý.
 - **Nhạc / SFX**: Audio → **Import** file `/fk-gen-music`, hoặc thư viện Sound effects (gõ "whoosh", "boom", "beep").
 - Tắt tiếng gốc cả track: biểu tượng loa ở đầu track.
 
@@ -74,6 +79,7 @@ Nút **Export** góc phải trên:
 - Resolution **1080p**, Bit rate **Recommended** (hoặc Higher), Codec **H.264**, Format **mp4**, Frame rate **= nguồn** (FlowKit 24 fps).
 - Audio: bật xuất audio, AAC (nhạc trộn sẵn trong CapCut; sau khi xuất chạy lệnh loudnorm −14 LUFS ở SKILL.md mục 5).
 - Bỏ chọn phụ đề (mục 8).
+- **Xuất một đoạn**: đặt `I` (điểm vào) và `O` (điểm ra) trên timeline → Export chỉ vùng đã chọn (bản cũ không có thì Duplicate project rồi xóa phần ngoài).
 - Đặt tên file có ngày: `<slug>_final_2026-10-08.mp4`.
 
 ## 10. Shorts 9:16

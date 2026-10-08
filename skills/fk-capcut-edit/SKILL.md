@@ -5,7 +5,9 @@ description: Lập Bảng dựng CapCut cho mọi loại video YouTube (vlog Flo
 
 # fk-capcut-edit — Bảng dựng CapCut để tăng watch time
 
-User dựng thành thạo trong CapCut Desktop (giao diện tiếng Anh). Việc của Claude là đưa ra **Bảng dựng**: kế hoạch cụ thể tới từng giây để user mở song song và làm theo — không dẫn từng cú click, không dừng chờ sau mỗi thao tác. Chỉ khi user hỏi "nút X ở đâu" mới mở `references/capcut-desktop-howto.md` (đường dẫn tính từ `skills/fk-capcut-edit/`).
+User dựng thành thạo trong CapCut Desktop (giao diện tiếng Anh). Việc của Claude là đưa ra **Bảng dựng**: kế hoạch cụ thể tới từng giây để user mở song song và làm theo — không dẫn từng cú click, không dừng chờ sau mỗi thao tác. Thao tác nào cần kỹ thuật riêng thì gọi **tên công thức** trong ngoặc vuông (`[Zoom-CO]`, `[Gióng mắt]`, `[Beat]`…) từ `references/pro-recipes.md`; đọc file đó trước khi lập bảng. Chỉ khi user hỏi "nút X ở đâu" mới mở `references/capcut-desktop-howto.md` (đường dẫn tính từ `skills/fk-capcut-edit/`). Mỗi mối nối trong bảng ghi **tên kiểu chuyển cảnh**; cách làm từng kiểu trong CapCut nằm ở `references/transitions-capcut.md`.
+
+**Chế độ hướng dẫn chi tiết** — khi user xin "hướng dẫn chi tiết", "làm từng bước", "chuyển cảnh làm sao": viết thêm file hướng dẫn từng bước cho đoạn đó (vd. `output/<slug>/huong_dan_1p_dau.md`). File này gồm: chuẩn bị project, khung timeline có mốc nguồn và mốc TL, từng mối nối kèm khung cắt + thao tác CapCut + SFX + cách tự kiểm tra, rồi tới zoom, card chữ, âm thanh, xuất thử. Mẫu: `output/neanderthal-51ka/huong_dan_1p_dau.md`.
 
 Nền tảng: 5 chiến lược của video *"Cách đạt 1000 Sub và 4000 Giờ xem"* (kênh Hồ Mạnh Thắng Official). Bảng dựng xử lý chiến lược 2 (watch time) và 4 (Shorts kéo view). Chiến lược 1 (thumbnail, SEO), 3 (chủ đề cố định) và 5 (lịch đăng, playlist) nằm ngoài phần dựng — xem bảng cuối file.
 
@@ -18,6 +20,8 @@ Nền tảng: 5 chiến lược của video *"Cách đạt 1000 Sub và 4000 Gi�
 | End screen | **Không chừa đoạn cuối cho end screen**. Video kết thúc theo đúng nhịp truyện (vlog: CUT ĐEN là hết) |
 | Nhạc | Trộn hết trong CapCut (âm lượng, hạ nhạc dưới thoại); sau khi xuất chỉ chạy ffmpeg chuẩn hóa về −14 LUFS |
 | Shorts | Cắt từ video dài 16:9, reframe sang 9:16 trong CapCut (không sinh clip dọc riêng) |
+| Cách hướng dẫn | Mặc định: Bảng dựng + tên công thức (`references/pro-recipes.md`), không dẫn từng click. User xin chi tiết (2026-10-08) → chế độ hướng dẫn chi tiết ở trên |
+| Phím tắt | Mặc định CapCut (`Ctrl+B`, `Q`/`W`…), không đổi keymap |
 
 ## Thứ tự ưu tiên khi các nguồn mâu thuẫn
 
@@ -29,9 +33,12 @@ Nền tảng: 5 chiến lược của video *"Cách đạt 1000 Sub và 4000 Gi�
 
 YouTube đưa video cho ~100 người đầu. Nếu họ thoát sau vài giây, tỷ lệ giữ chân thấp và hệ thống ngừng đề xuất. Bảng dựng nhắm 3 việc:
 
-- **Phút đầu giữ người ở lại** — như trailer phim: khoảnh khắc mạnh nhất / câu hỏi lớn nhất trước, giải thích sau.
+- **Phút đầu giữ người ở lại** — như trailer phim: khoảnh khắc mạnh nhất / câu hỏi lớn nhất trước, giải thích sau. Nhưng trailer phải cho biết chuyện gì đang xảy ra: một intro 40s toàn highlight mà không có tiền đề chỉ giữ được 18.5%. Thước đo là key moment **Intro** trong Studio (% còn xem ở 0:30).
 - **50% đầu được đầu tư nặng nhất** (công thức MrBeast) — ai xem hết nửa đầu thường xem tiếp. Video dài nên ≥ 8 phút (mốc chèn quảng cáo giữa video), và 4–5 phút đầu là nơi dồn công.
-- **Mắt luôn có thứ mới** — đổi góc, đổi cỡ cảnh, B-roll hoặc zoom mỗi 3–5s; nhưng xen nhịp chậm ở khoảnh khắc cảm xúc để video không mệt.
+- **Mắt luôn có thứ mới** — đổi góc, đổi cỡ cảnh, B-roll hoặc zoom mỗi 3–5s; nhưng xen nhịp chậm ở khoảnh khắc cảm xúc để video không mệt. Editor của Ryan Trahan thấy chính việc *chậm lại* ở nhịp nhân vật làm retention tăng.
+- **Kéo lại người xem ở ~3:00 và ~6:00, kết đột ngột** — memo MrBeast: đặt một cảnh mạnh ở hai mốc này, không báo hiệu sắp hết video.
+
+Nguồn và độ tin cậy của từng con số: `references/pro-recipes.md` §8. Điều không có nguồn gốc (vd. "intro ≤ 25s") không đưa vào luật.
 
 ## Quy trình
 
@@ -86,19 +93,32 @@ Mẫu:
 Luật lập bảng:
 - **2s đầu đã có mối nguy / câu hỏi / khoảnh khắc mạnh nhất.** Không logo, không chào hỏi, không xin sub trong phút đầu.
 - **Phút đầu dựng như trailer.** Vlog FlowKit: cold open → CUT ĐEN → card năm → … → mission card trước ~1:00. Video khác: kết quả đẹp nhất / khoảnh khắc gây tò mò nhất trước (món ăn hoàn thành, cú twist, kết quả thử nghiệm), cắt trước khi lộ hết, rồi mới vào phần "làm thế nào".
+- **Tiền đề + cái giá trong ~10s đầu.** Người xem phải biết *ai, ở đâu, sắp mất gì*, bằng một câu thoại hoặc card được phép (vlog: card năm, countdown). Một chuỗi highlight không lời giải thích thì tụt.
+- **Intro montage cắt từ cả video** (khi user muốn trailer dài hơn cold open):
+  - Mảnh 2–3s từ các khoảnh khắc mạnh nhất, theo thứ tự leo thang của truyện; mỗi mảnh là một câu thoại gốc trọn vẹn.
+  - Cắt **trước khi lộ kết quả** (chưa thấy ai thắng, ai sống).
+  - Ngắt giữa các nhịp bằng CUT ĐEN 0.4s + hit trầm; kết bằng câu thì thầm quay về mối nguy, rồi `[J-cut]` sang cảnh mở truyện.
+  - Đổi lấy: mission card bị lùi. Ghi rõ mốc mới; mặc định ~30s để mission card về ~1:20. Bản ~60s chỉ khi user chọn, và lập 2 bản cho user so số Intro ở 0:30.
+  - Clip chưa sinh thì lấy mốc từ phân đoạn `0-3s / 3-6s / 6-8s` của `video_prompt`, ghi "dời lại khi có file".
+- **Phút 1–3 đi nhanh** (memo MrBeast lấy chính video sinh tồn làm ví dụ: gói nhiều ngày trong 3 phút đầu). Không dừng lâu ở giải thích hay chuẩn bị.
+- **Re-hook ở ~3:00 và ~6:00**: đánh dấu trong cột Ghi chú cảnh mạnh rơi vào hai mốc này; nếu không có, đề xuất đổi thứ tự hoặc rút đoạn trước nó.
 - **Cột "Hình đổi ở" không trống quá 5s liên tục** trong 50% đầu video (nửa sau nới tới ~8s).
 - **Mỗi 15–20s phải có thứ mới**: thông tin, vấn đề, thất bại, nguy hiểm hoặc nhịp cảm xúc. Đoạn nào trượt luật này ở nửa đầu → đề xuất cắt, rút ngắn hoặc đẩy cảnh mạnh hơn lên trước, ghi lý do trong cột Ghi chú.
 - **Nhịp nhanh / chậm xen kẽ.** Cảnh hành động, chuỗi thử–hỏng: cắt ngay khi hành động xong (thường giữ 4–6s, ngắn dần). Cảnh cảm xúc, im lặng, cảnh cuối: giữ đủ, không zoom. Cao trào: dài → ngắn → ngắn → ngắn → payoff → dài.
+- **Kết đột ngột** ở nhịp truyện cuối, không câu "cảm ơn đã xem", không báo trước sắp hết.
 - **Tổng thời lượng sau mỗi Act / chương**; cảnh báo nếu video dài < 8 phút.
 
 ### 3. Công cụ đổi hình (ghi vào cột "Hình đổi ở")
 
-Theo thứ tự ưu tiên:
+Theo thứ tự ưu tiên (tên trong ngoặc vuông là công thức ở `references/pro-recipes.md`):
 1. **Cắt thẳng sang clip mới** tại khung che (vật lướt qua ống kính, quay gáy, whip pan) — kèm SFX whoosh nhẹ.
-2. **Punch-in**: split tại mốc 3s hoặc 6s (với clip FlowKit trùng ranh giới `0-3s / 3-6s / 6-8s`), đoạn sau Scale 110–115%.
-3. **Push-in chậm**: keyframe Scale 100% → 105–108% suốt clip — cảnh căng, lời thú nhận, phát hiện.
+2. **`[Punch]`**: split tại mốc 3s hoặc 6s (với clip FlowKit trùng ranh giới `0-3s / 3-6s / 6-8s`), đoạn sau Scale 110–115%. Trên mặt người luôn kèm `[Gióng mắt]`. Zoom có gia tốc vào khoảnh khắc phát hiện: `[Zoom-CO]`.
+3. **`[Push]`**: keyframe Scale 100% → 105–108% suốt clip — cảnh căng, lời thú nhận, phát hiện.
 4. **B-roll / cutaway** trên track phủ 1.5–3s (tay, vật, cảnh rộng) trong khi tiếng clip chính vẫn chạy.
-5. **Jump cut** khi đi bộ hoặc nói dài — bỏ đoạn giữa, giữ khung.
+5. **Jump cut** khi đi bộ hoặc nói dài — bỏ khoảng chết thật, không cắt hơi thở giữa các từ.
+6. **`[Ramp]`** tăng tốc đoạn đi đường / làm việc. Không làm chậm clip AI có mặt hoặc tay.
+
+Mỗi zoom phải có lý do (câu chốt, phát hiện, cảm xúc); zoom chỉ để "có chuyển động" làm video rối.
 
 Giới hạn: Scale tối đa ~120% trên nguồn 1080p (quá mức này hình mềm, lộ lỗi AI); zoom không được cắt mất mặt, tay đang cầm vật hoặc chủ thể chính. Video không phải vlog được dùng thêm transition ngắn (≤ 0.3s) ở chỗ đổi chương, nhưng cắt thẳng vẫn là mặc định.
 
@@ -106,16 +126,18 @@ Giới hạn: Scale tối đa ~120% trên nguồn 1080p (quá mức này hình m
 
 - **Vlog FlowKit**: chỉ năm, mission card, countdown `HOUR X — Y HOURS REMAINING` (~7 mốc cho 9–10 phút, đặt ngay trước/sau nấc leo thang).
 - **Video khác**: tiêu đề chương ngắn, chữ nhấn mạnh từ khóa / con số — tối đa 1 dòng chữ trên hình tại một thời điểm.
-- Style mặc định: chữ đậm không chân, trắng, viền đen, giữa trên ~8% từ mép, hiện ~2.5s, không hiệu ứng bay. Ghi nội dung + timecode chính xác vào cột Chữ.
+- Style mặc định: chữ đậm không chân, trắng, viền đen, giữa trên ~8% từ mép, hiện ~2.5s (đủ đọc, không chớp qua), không hiệu ứng bay. Làm 1 card rồi `[Preset chữ]`. Ghi nội dung + timecode chính xác vào cột Chữ.
 - Không burn phụ đề (lựa chọn đã chốt).
 
 ### 5. Âm thanh (trộn trong CapCut)
 
-Ghi vào cột Âm:
-- **Nhạc**: −20 đến −24 dB khi có thoại; hạ thêm hoặc tắt ở cảnh căng đỉnh điểm và cảnh cuối; không tắt hẳn giữa một cảnh. Câu thoại quan trọng → keyframe hạ nhạc quanh câu đó.
+Ghi vào cột Âm (mức đồng hồ dB và công thức `[Fade]`, `[Duck]`, `[Beat]`: `references/pro-recipes.md` §4):
+- **Thoại**: đỉnh −6 đến −12 dB.
+- **Nhạc**: −20 đến −24 dB khi có thoại (nguồn khác nói hạ 15–20 dB dưới thoại; cả hai đều được); đoạn không thoại như intro, montage lên −15 đến −18 dB; hạ thêm hoặc tắt ở cảnh căng đỉnh điểm và cảnh cuối; không tắt hẳn giữa một cảnh. Câu thoại quan trọng → keyframe hạ nhạc quanh câu đó.
 - **SFX**: whoosh ở cú cắt khung che, boom nhẹ ở CUT ĐEN, bíp ~0.3s nếu có chửi thề (vlog: mốc `bleep_at`). SFX nhỏ hơn thoại.
-- **J-cut**: tiếng clip sau vào sớm ~0.5s trước hình (chỉ khi 0.5s đó không có thoại).
+- **`[J-cut]`**: tiếng clip sau vào sớm ~0.5s trước hình (chỉ khi 0.5s đó không có thoại).
 - Bật **Normalize loudness** cho các clip thoại để clip đều tiếng nhau.
+- **`[Beat]`** chỉ cho intro trailer, montage, Shorts. Đoạn kể chuyện cắt theo câu nói, không theo nhạc.
 
 Sau khi xuất, chuẩn hóa về −14 LUFS / −1 dBTP (YouTube hạ video to hơn mức này, video nhỏ hơn thì nghe yếu hơn video khác):
 ```bash
@@ -132,9 +154,10 @@ Shorts được đề xuất mạnh tới người lạ không cần SEO — dù
 
 - **3–4 Short, mỗi cái 15–45s, một ý duy nhất**, lấy từ khoảnh khắc mạnh nhất. Vlog sinh tồn: món ăn lạ, rượt đuổi / nguy hiểm, mẹo sinh tồn kỳ lạ (`post-and-publish.md` §3). Video khác: kết quả gây bất ngờ, mẹo hay nhất, khoảnh khắc hài / kịch tính nhất.
 - **Nguồn 16:9 → 9:16**: crop mất ~70% bề ngang, nên chọn đoạn có chủ thể lớn, nằm gần giữa khung. Ghi vào cột Reframe: Scale (≈316% để lấp khung dọc) + chủ thể cần bám (mặt, tay, mối nguy) và mốc giây phải dời Position.
-- **Giây đầu = giữa hành động**, không dẫn nhập; đổi hình nhanh hơn video dài (2–3s).
+- **Giây đầu = giữa hành động**, coi như thumbnail của Short (người ta vuốt đi trong 1s); không dẫn nhập; đổi hình nhanh hơn video dài (2–3s).
+- Shorts được tới 3 phút và YouTube nói không có độ dài ưu tiên; giữ 15–45s vì một ý duy nhất hiếm khi cần hơn.
 - **Không phụ đề burn** (lựa chọn đã chốt) → chọn đoạn mà hình tự kể được chuyện, không phụ thuộc vào việc nghe rõ thoại.
-- **Kết** ở khoảnh khắc chưa có kết quả hoặc nối vòng về giây đầu.
+- **Kết** ở khoảnh khắc chưa có kết quả hoặc `[Loop]` nối vòng về giây đầu (view tính cả lượt xem lại).
 - Nhắc user khi đăng: gắn **Related video** trỏ tới video dài, ghim bình luận có link video dài; ngôn ngữ tiêu đề khớp ngôn ngữ thoại (CLAUDE.md Rule 20).
 
 ### 8. Kiểm tra sau khi xuất
@@ -144,12 +167,14 @@ Shorts được đề xuất mạnh tới người lạ không cần SEO — dù
 ffprobe -v error -show_entries format=duration:stream=width,height,r_frame_rate -of default=nw=1 final.mp4
 ffmpeg -i final_14lufs.mp4 -af ebur128=peak=true -f null - 2>&1 | tail -12   # dòng "I:" ≈ -14 LUFS
 ```
-- [ ] Xuất 1080p, H.264, fps bằng nguồn
+- [ ] Xuất 1080p, H.264, **fps bằng nguồn** (FlowKit 24 → xuất 24; mẹo "xuất 30 fps" chỉ đúng khi quay 30, đổi 24 → 30 làm chuyển động giật). Xuất thử intro bằng `[Xuất đoạn]`, xem trên điện thoại trước
 - [ ] 2s đầu có mối nguy / câu hỏi; phút đầu không logo, không chào hỏi
 - [ ] Nửa đầu: không đoạn > 5s hình đứng yên, không đoạn 20s không có gì mới
 - [ ] Thoại rõ trên nhạc (nghe bằng tai nghe **và** loa điện thoại)
 - [ ] Chữ đúng chính tả, đúng loại cho phép; không có phụ đề burn
+- [ ] Tiền đề + cái giá rõ trong ~10s đầu; có cảnh mạnh quanh 3:00 và 6:00; kết đột ngột
 - [ ] Video dài ≥ 8 phút; −14 LUFS ± 1
+- [ ] Sau khi đăng 48h: xem key moment **Intro** (% ở 0:30) và chỗ dip trên biểu đồ retention; dip trùng cảnh nào thì ghi vào bảng dựng video sau
 
 ## Những thứ ngoài phần dựng
 

@@ -18,6 +18,12 @@
       "prompt": "kênh nấu ăn của tôi video toàn 3-4 nghìn view, xem được 30 giây là người ta thoát. Tôi tự quay bằng điện thoại, dựng capcut. Chỉ tôi cách dựng lại 1 video 10 phút cho người ta xem lâu hơn",
       "expected_output": "Không áp luật riêng vlog FlowKit (được dùng chữ nhấn mạnh, tiêu đề chương), hỏi tối đa 1 lượt đầu vào, phút đầu kiểu trailer (món hoàn thành trước), đổi hình 3–5s bằng punch-in/B-roll, dồn công 50% đầu, trộn nhạc trong CapCut + lệnh loudnorm −14 LUFS, không phụ đề burn, ra Bảng dựng chứ không hướng dẫn click.",
       "files": []
+    },
+    {
+      "id": 4,
+      "prompt": "làm cho mình 1 phút intro kiểu trailer cắt từ cả video neanderthal-51ka, kiểu mấy youtuber lớn hay làm ấy",
+      "expected_output": "Bảng intro montage: mảnh 2–3s theo thứ tự leo thang, thoại gốc trọn câu, cắt trước khi lộ kết quả, CUT ĐEN + hit giữa nhịp, kết bằng câu thì thầm rồi J-cut vào cảnh mở; có tiền đề + cái giá trong ~10s đầu (card năm hoặc câu thoại); nêu giá mission card bị lùi và đề xuất bản ~30s; gọi tên công thức ([Beat], [J-cut], [Xuất đoạn]); không chữ ngoài card năm/mission/countdown, không burn phụ đề, xuất 24 fps.",
+      "files": []
     }
   ]
 }

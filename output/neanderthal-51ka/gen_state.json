@@ -2,11 +2,12 @@
   "run": "scenes 14-75",
   "pacing": "wait for previous video, then 5-15s",
   "started": "2026-10-07T22:53:57",
-  "done": [],
+  "done": [
+    14
+  ],
   "failed": [],
-  "status": "READY",
+  "status": "PROCESSING",
   "queue": [
-    14,
     15,
     16,
     17,
@@ -64,7 +65,7 @@
     73,
     74
   ],
-  "current": 14,
+  "current": 15,
   "phase": "generating",
-  "request_id": null
+  "request_id": "5cc46a9b-cc75-4986-8542-14de598b206e"
 }
