@@ -572,9 +572,10 @@ Rút ra từ dự án `output/atlantis-9600bc/` (2026-09-27). Khi mâu thuẫn v
       2. **Khóa trang phục thuần ảnh tham chiếu — CẤM tự mô tả lại bằng lời:**
          - Tuyệt đối KHÔNG mô tả lại trang phục bằng lời trong prompt khi đã có `<Vlogger> Body`.
          - Chỉ dùng câu khóa trỏ thẳng vào reference sheet đã duyệt: `"[Character] wears the exact historical outfit shown in the [Character] Body reference sheet (NO shearling collar, NO extra fur, NO hood, NO outfit variations)."`
-      3. **Chống teo tóp body bằng góc quay Waist-Up & từ khóa đối kháng cực mạnh:**
-         - Không dùng góc quay toàn/xa khi nhân vật cúi gập người. Bắt buộc góc máy ngang ngực/bụng trên (Waist-Up Medium Shot) hơi hất nhẹ lên, nhân vật đứng thẳng kiêu hãnh.
-         - Đưa khối khóa dáng đối kháng cực mạnh lên vị trí sớm ngay sau `Shot:`: `"BODY LOCK (CRITICAL): Nora is a tall, statuesque woman (178 cm / 5'10" tall) with exceptionally long, slender model legs and a voluptuous hourglass figure, featuring an exceptionally large, full, voluminous heavy bust with prominent deep cleavage valley in plunging V-neckline, a tiny narrow waist, and wide curvaceous hips matching Nora Body ref; she is NOT skinny, NOT slender, NOT petite, NOT flat-chested."`
+      3. **Khóa vóc dáng & trang phục thuần tham chiếu (Chống hỏng áo quần do tập trung vào ngực — User Lock 08/10/2026):**
+         - **CẤM TRIỆT ĐỂ mô tả ngực to, khe ngực sâu, khoét cổ sâu (`voluminous heavy bust`, `deep cleavage`, `plunging V-neckline`)**: Việc nhồi nhét các từ khóa phóng đại vòng 1 làm AI diffusion model ép xẻ sâu cổ áo quá đà, làm rách nát, biến dạng và hỏng phom dáng trang phục cổ đại trong ảnh reference.
+         - **Giữ đúng body & outfit thuần tham chiếu**: Chỉ cần khóa vóc dáng thể thao đồng hồ cát và bộ trang phục da lộn may đo theo đúng 100% ảnh reference sheet (`Nora Body`):
+           `"BODY & OUTFIT LOCK (CRITICAL): Nora matches her reference images exactly: her face and hair from the Nora face sheet, and her athletic, curvaceous hourglass build and tailored clothing from the Nora Body sheet. Nora wears the complete historical outfit from the Nora Body reference: form-fitting smoked golden-tan deer suede tunic with laced V-neckline, wide dark corset belt, fitted trousers, and knee-high boots (strictly NO shearling collar, NO extra fur, NO hood, NO outfit variations). From the very first frame to the last, Nora is fully dressed in the complete outfit. No part of the outfit appears, disappears or changes."`
 
 **Nội dung**
 17. **[ĐÃ THAY bởi Rule 46 / bài học 60]** Vlogger mặc đồ hiện đại theo ảnh ref là chấp nhận được. Hiện tại: vlogger mặc trang phục thời kỳ ngay từ clip đầu qua `<Vlogger> Body` đã mặc outfit; đồ hiện đại chỉ khi user yêu cầu phong cách "lạc loài".

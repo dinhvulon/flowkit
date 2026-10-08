@@ -46,7 +46,7 @@ FLOW_GENERATION_MAX_INTERVAL_S = max(
     float(os.environ.get("FLOW_GENERATION_MAX_INTERVAL_S", "60")),
 )
 FLOW_GENERATION_MAX_CONCURRENT = max(
-    1, int(os.environ.get("FLOW_GENERATION_MAX_CONCURRENT", "1"))
+    1, int(os.environ.get("FLOW_GENERATION_MAX_CONCURRENT", "2"))
 )
 FLOW_UNUSUAL_ACTIVITY_COOLDOWN_S = max(
     0.0, float(os.environ.get("FLOW_UNUSUAL_ACTIVITY_COOLDOWN_S", "120"))
