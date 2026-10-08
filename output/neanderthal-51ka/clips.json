@@ -20,7 +20,11 @@
     "narrator_text": "Three. Getting closer. / Come on—",
     "status": "COMPLETED_1080P_CLEAN",
     "media_id": "8ae57638-348f-4ba3-a4e9-08226066bc62",
-    "clean_file": "output/neanderthal-51ka/1080/scene_01_8ae57638_1080p_clean.mp4"
+    "clean_file": "output/neanderthal-51ka/1080/scene_01_8ae57638_1080p_clean.mp4",
+    "character_names": [
+      "Nora",
+      "Nora Body"
+    ]
   },
   {
     "order": 1,
@@ -39,7 +43,11 @@
     "narrator_text": "",
     "status": "COMPLETED_1080P_CLEAN",
     "media_id": "54682aa7-91cf-47a2-9de0-52c3acf3876c",
-    "clean_file": "output/neanderthal-51ka/1080/scene_02_3fc899f4_1080p_clean.mp4"
+    "clean_file": "output/neanderthal-51ka/1080/scene_02_3fc899f4_1080p_clean.mp4",
+    "character_names": [
+      "Nora",
+      "Nora Body"
+    ]
   },
   {
     "order": 2,
@@ -57,7 +65,11 @@
     "narrator_text": "Ten seconds in. Soaked.",
     "status": "COMPLETED_1080P_CLEAN",
     "media_id": "29178e1e-fba4-4732-81e6-e69cdbded862",
-    "clean_file": "output/neanderthal-51ka/1080/scene_03_e7a2e9c3_1080p_clean.mp4"
+    "clean_file": "output/neanderthal-51ka/1080/scene_03_e7a2e9c3_1080p_clean.mp4",
+    "character_names": [
+      "Nora",
+      "Nora Body"
+    ]
   },
   {
     "order": 3,
@@ -75,7 +87,11 @@
     "narrator_text": "Wet clothes kill faster than cold.",
     "status": "COMPLETED_1080P_CLEAN",
     "media_id": "7f579df4-0fca-4046-99c7-bdcccbd878d3",
-    "clean_file": "output/neanderthal-51ka/1080/scene_04_1428bcf0_1080p_clean.mp4"
+    "clean_file": "output/neanderthal-51ka/1080/scene_04_1428bcf0_1080p_clean.mp4",
+    "character_names": [
+      "Nora",
+      "Nora Body"
+    ]
   },
   {
     "order": 4,
@@ -96,7 +112,11 @@
     "narrator_text": "",
     "status": "COMPLETED_1080P_CLEAN",
     "media_id": "2ee54029-6960-4b58-91ae-258048d677e5",
-    "clean_file": "output/neanderthal-51ka/1080/scene_05_2ee54029_1080p_clean.mp4"
+    "clean_file": "output/neanderthal-51ka/1080/scene_05_2ee54029_1080p_clean.mp4",
+    "character_names": [
+      "Nora",
+      "Nora Body"
+    ]
   },
   {
     "order": 5,
@@ -117,7 +137,11 @@
     "narrator_text": "",
     "status": "COMPLETED_1080P_CLEAN",
     "media_id": "25b511a6-104a-4f23-bc35-5014f4114f6d",
-    "clean_file": "output/neanderthal-51ka/1080/scene_06_25b511a6_1080p_clean.mp4"
+    "clean_file": "output/neanderthal-51ka/1080/scene_06_25b511a6_1080p_clean.mp4",
+    "character_names": [
+      "Nora",
+      "Nora Body"
+    ]
   },
   {
     "order": 6,
@@ -136,7 +160,11 @@
     "narrator_text": "",
     "status": "COMPLETED_1080P_CLEAN",
     "media_id": "b24dd212-079e-48cf-a7e4-fe951295d301",
-    "clean_file": "output/neanderthal-51ka/1080/scene_07_b24dd212_1080p_clean.mp4"
+    "clean_file": "output/neanderthal-51ka/1080/scene_07_b24dd212_1080p_clean.mp4",
+    "character_names": [
+      "Nora",
+      "Nora Body"
+    ]
   },
   {
     "order": 7,
@@ -160,7 +188,11 @@
     "media_id": "17feb126-cf2a-4b2f-9498-97722b4cd3fd",
     "clean_file": "output/neanderthal-51ka/1080/scene_08_17feb126_1080p_clean.mp4",
     "raw_video_file": "c:\\flowkit\\output\\neanderthal-51ka\\scenes\\scene_08_17feb126.mp4",
-    "upscaled_media_id": "17feb126-cf2a-4b2f-9498-97722b4cd3fd_upsampled"
+    "upscaled_media_id": "17feb126-cf2a-4b2f-9498-97722b4cd3fd_upsampled",
+    "character_names": [
+      "Nora",
+      "Nora Body"
+    ]
   },
   {
     "order": 8,
@@ -184,7 +216,11 @@
     "media_id": "132d3863-eea0-43f5-9bb1-04ac49626420",
     "clean_file": "c:/flowkit/output/neanderthal-51ka/1080/scene_09_132d3863_1080p_clean.mp4",
     "raw_video_file": "c:\\flowkit\\output\\neanderthal-51ka\\scenes\\scene_09_132d3863.mp4",
-    "upscaled_media_id": "132d3863-eea0-43f5-9bb1-04ac49626420_upsampled"
+    "upscaled_media_id": "132d3863-eea0-43f5-9bb1-04ac49626420_upsampled",
+    "character_names": [
+      "Nora",
+      "Nora Body"
+    ]
   },
   {
     "order": 9,
@@ -207,7 +243,11 @@
     "media_id": "7fdc42df-0f1a-49e1-8cab-54e300f1adcf",
     "clean_file": "output/neanderthal-51ka/1080/scene_10_7fdc42df_1080p_clean.mp4",
     "raw_video_file": null,
-    "upscaled_media_id": null
+    "upscaled_media_id": null,
+    "character_names": [
+      "Nora",
+      "Nora Body"
+    ]
   },
   {
     "order": 10,
@@ -230,7 +270,11 @@
     "status": "COMPLETED_CLEAN",
     "media_id": "4365f996-4906-4050-9caa-3335cb4b2073",
     "clean_file": "output/neanderthal-51ka/1080/scene_11_4365f996_1080p_clean.mp4",
-    "raw_video_file": "output/neanderthal-51ka/scenes/scene_11_4365f996.mp4"
+    "raw_video_file": "output/neanderthal-51ka/scenes/scene_11_4365f996.mp4",
+    "character_names": [
+      "Nora",
+      "Nora Body"
+    ]
   },
   {
     "order": 11,
@@ -251,7 +295,11 @@
     "status": "COMPLETED_CLEAN",
     "media_id": "cbf44f9b-8eef-4c7e-9845-872ee9e44555",
     "clean_file": "output/neanderthal-51ka/1080/scene_12_cbf44f9b_1080p_clean.mp4",
-    "raw_video_file": "output/neanderthal-51ka/scenes/scene_12_cbf44f9b.mp4"
+    "raw_video_file": "output/neanderthal-51ka/scenes/scene_12_cbf44f9b.mp4",
+    "character_names": [
+      "Nora",
+      "Nora Body"
+    ]
   },
   {
     "order": 12,
@@ -274,7 +322,11 @@
     "status": "COMPLETED_CLEAN",
     "media_id": "af96aacf-6352-4bcc-80d9-f3d158974841",
     "clean_file": "output/neanderthal-51ka/1080/scene_13_af96aacf_1080p_clean.mp4",
-    "raw_video_file": "output/neanderthal-51ka/scenes/scene_13_af96aacf.mp4"
+    "raw_video_file": "output/neanderthal-51ka/scenes/scene_13_af96aacf.mp4",
+    "character_names": [
+      "Nora",
+      "Nora Body"
+    ]
   },
   {
     "order": 14,
@@ -358,6 +410,8 @@
     "title": "Cảnh 16: Cận Cảnh Sôi Nước Bằng Đá Nung (Stone-Boiling Macro)",
     "narrator_text_vi": "Hòn đá nung đỏ thả vào nước, lập tức sôi trào dữ dội và bốc lên làn hơi thông thơm ngát.",
     "character_names": [
+      "Nora",
+      "Nora Body",
       "Old Woman",
       "Cave Interior"
     ]
@@ -418,6 +472,8 @@
     "title": "Cảnh 18: Tôi Cứng Đầu Giáo Trên Than Hồng (Chuẩn Bị Săn Bắn)",
     "narrator_text_vi": "Bên bếp lửa, các thợ săn cẩn thận tôi ngọn giáo gỗ và bện dây gân dai chuẩn bị cho ngày mai.",
     "character_names": [
+      "Nora",
+      "Nora Body",
       "Strongest",
       "Leader",
       "Cave Interior"
@@ -601,6 +657,8 @@
     "title": "Cảnh 24: Phát Hiện Bò Rừng Thảo Nguyên (Quái Thú Một Tấn)",
     "narrator_text_vi": "Torak ra hiệu nằm rạp xuống; chúng tôi bò chậm rãi qua tuyết dày, giữ vị trí ngược chiều gió của chúng.",
     "character_names": [
+      "Nora",
+      "Nora Body",
       "Steppe Bison",
       "Pech Valley"
     ]
@@ -660,6 +718,8 @@
     "title": "Cảnh 26: Chiến Thuật Gọng Kìm Hai Mũi (Áp Sát Cự Ly Gần)",
     "narrator_text_vi": "Các thợ săn tách sang hai cánh, khéo léo dồn con mồi đã chọn về phía khe rãnh đá vôi hiểm trở.",
     "character_names": [
+      "Nora",
+      "Nora Body",
       "Leader",
       "Strongest",
       "Steppe Bison",
@@ -691,6 +751,8 @@
     "title": "Cảnh 27: Bò Rừng Cảnh Giác & Giẫm Móng Cào Băng (Đe Dọa)",
     "narrator_text_vi": "Con thú phát hiện mối nguy, dậm móng guốc hất tung tuyết bụi và gầm lên tiếng rống trận đầy uy lực.",
     "character_names": [
+      "Nora",
+      "Nora Body",
       "Steppe Bison",
       "Pech Valley"
     ]
@@ -720,6 +782,8 @@
     "title": "Cảnh 28: Cú Lao Tấn Công Của Quái Thú (Tấn Công Một Tấn)",
     "narrator_text_vi": "Một tấn cơ bắp tiền sử lao thục mạng, cày nát các luống tuyết xông thẳng vào điểm phục kích hiểm trở.",
     "character_names": [
+      "Nora",
+      "Nora Body",
       "Steppe Bison",
       "Leader",
       "Pech Valley"
@@ -751,6 +815,8 @@
     "title": "Cảnh 29: Cú Nhử Đòn & Lách Thân Thần Sầu Của Thủ Lĩnh",
     "narrator_text_vi": "Torak dũng cảm nhảy ra khỏi chỗ nấp, vung áo choàng da thú chuyển hướng con quái thú vào rãnh băng.",
     "character_names": [
+      "Nora",
+      "Nora Body",
       "Leader",
       "Steppe Bison",
       "Pech Valley"
@@ -783,6 +849,8 @@
     "title": "Cảnh 30: Đòn Đâm Giáo Tử Huyệt 2.2m Của Lực Lưỡng",
     "narrator_text_vi": "Khi con thú trượt chân trên băng, người thợ săn lực lưỡng đâm ngọn giáo gỗ ngập sâu vào bả vai nó.",
     "character_names": [
+      "Nora",
+      "Nora Body",
       "Strongest",
       "Strongest Spear",
       "Steppe Bison",
@@ -815,6 +883,8 @@
     "title": "Cảnh 31: Quái Thú Quật Ngã Trên Tuyết (Người Khổng Lồ Gục Ngã)",
     "narrator_text_vi": "Hai thợ săn ghì chặt ủng xuống nền băng, hợp lực vật lộn kiềm chế con thú đang giãy giụa điên cuồng.",
     "character_names": [
+      "Nora",
+      "Nora Body",
       "Steppe Bison",
       "Leader",
       "Strongest",
@@ -879,6 +949,8 @@
     "title": "Cảnh 33: Mổ Thịt Bằng Rìu Đá Lửa Mousterian (Lưỡi Dao Tiền Sử)",
     "narrator_text_vi": "Torak thành kính quỳ xuống, đặt bàn tay lên trán con vật đã khuất và cất lời tạ ơn thiêng liêng.",
     "character_names": [
+      "Nora",
+      "Nora Body",
       "Leader",
       "Strongest",
       "Steppe Bison",
@@ -971,6 +1043,8 @@
     "title": "Cảnh 36: Chằng Buộc Thịt Lên Đòn Gánh Gỗ (Chuẩn Bị Rút Lui Thần Tốc)",
     "narrator_text_vi": "Mùi máu tươi bốc theo gió lạnh; tiếng cười linh cẩu rợn người vọng lại từ rừng thông, báo hiệu nguy hiểm.",
     "character_names": [
+      "Nora",
+      "Nora Body",
       "Leader",
       "Strongest",
       "Pech Valley"
@@ -1063,6 +1137,8 @@
     "title": "Cảnh 39: Cất Giữ Thịt Vào Hốc Đá Sâu (Khóa Chặt Lương Thực)",
     "narrator_text_vi": "Trong hang, thợ săn chuyển thịt vào sâu hốc đá vôi, phủ cành thông tươi khử sạch mùi máu thu hút thú.",
     "character_names": [
+      "Nora",
+      "Nora Body",
       "Strongest",
       "Meat Cache",
       "Cave Interior"
@@ -1149,6 +1225,8 @@
     "title": "Cảnh 42: Đôi Mắt Ánh Lên Trong Bóng Tối (4 Giây Hé Lộ)",
     "narrator_text_vi": "Cặp mắt vàng rực xuất hiện ở cửa hang: bốn con linh cẩu hang khổng lồ to gấp đôi loài hiện nay.",
     "character_names": [
+      "Nora",
+      "Nora Body",
       "Cave Hyena",
       "Cave Mouth"
     ]
@@ -1207,6 +1285,8 @@
     "title": "Cảnh 44: Con Đầu Đàn Thử Lửa (Quái Thú Một Trăm Ký)",
     "narrator_text_vi": "Ba ngọn giáo gỗ tần bì khóa chặt lối hẹp vào hang, chặn đứng mọi ngả đường tiến vào nơi trú ẩn.",
     "character_names": [
+      "Nora",
+      "Nora Body",
       "Cave Hyena",
       "Cave Mouth"
     ]
@@ -1235,6 +1315,8 @@
     "title": "Cảnh 45: Hàng Rào Giáo Gỗ & Tiếng Gầm Thị Uy (Chặn Đứng)",
     "narrator_text_vi": "Con linh cẩu đầu đàn nhe hàm răng sắc nhọn, gầm gừ đe dọa dò xét ranh giới phòng thủ bộ tộc.",
     "character_names": [
+      "Nora",
+      "Nora Body",
       "Leader",
       "Strongest",
       "Cave Hyena",
@@ -1298,6 +1380,8 @@
     "title": "Cảnh 47: Cú Vồ Của Con Đầu Đàn Bị Đánh Bật (Đòn Quét Cán Giáo)",
     "narrator_text_vi": "Cơn gió lốc bất ngờ thốc vào cửa hang, quật mạnh làm ngọn đuốc phòng thủ chập chờn suýt tắt ngúm.",
     "character_names": [
+      "Nora",
+      "Nora Body",
       "Strongest",
       "Cave Hyena",
       "Cave Mouth"
@@ -1355,6 +1439,8 @@
     "title": "Cảnh 49: Bầy Thú Thất Bại & Rút Lui Vào Đêm Đen",
     "narrator_text_vi": "Lao về phía trước trong bóng tối, Nora trao những bó đuốc thông rực sáng cho thợ săn đang giữ cửa hang.",
     "character_names": [
+      "Nora",
+      "Nora Body",
       "Cave Hyena",
       "Cave Mouth"
     ]
@@ -1505,6 +1591,8 @@
     "title": "Cảnh 54: Nghi Thức Bột Đá Đỏ Ochre (Chế Tác Sắc Tộc Thiêng Liêng)",
     "narrator_text_vi": "Quây quần bên than hồng rực, bộ tộc cùng chia nhau sườn bò nướng, vui mừng chiến thắng mùa đông lạnh giá.",
     "character_names": [
+      "Nora",
+      "Nora Body",
       "Old Woman",
       "Cave Interior"
     ]
@@ -1533,6 +1621,8 @@
     "title": "Cảnh 55: Dấu Bàn Tay Trên Vách Hang (Bản Tuyên Ngôn Bất Tử)",
     "narrator_text_vi": "Bà lão tộc trưởng dẫn Nora qua khu sinh hoạt, bước vào gian phòng nghi lễ bí mật lung linh ánh đèn.",
     "character_names": [
+      "Nora",
+      "Nora Body",
       "Leader",
       "Cave Interior"
     ]
@@ -1620,9 +1710,9 @@
     "title": "Cảnh 58: Món Quà Danh Dự: Chuỗi Móng Vuốt Đại Bàng",
     "narrator_text_vi": "Bà lão đeo chuỗi móng đại bàng vào cổ Nora; món trang sức cổ xưa nhất nhân loại sáng bừng dưới lửa.",
     "character_names": [
-      "Old Woman",
       "Nora",
       "Nora Body",
+      "Old Woman",
       "Cave Interior"
     ]
   },

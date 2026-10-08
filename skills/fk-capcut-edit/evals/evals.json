@@ -22,7 +22,13 @@
     {
       "id": 4,
       "prompt": "làm cho mình 1 phút intro kiểu trailer cắt từ cả video neanderthal-51ka, kiểu mấy youtuber lớn hay làm ấy",
-      "expected_output": "Bảng intro montage: mảnh 2–3s theo thứ tự leo thang, thoại gốc trọn câu, cắt trước khi lộ kết quả, CUT ĐEN + hit giữa nhịp, kết bằng câu thì thầm rồi J-cut vào cảnh mở; có tiền đề + cái giá trong ~10s đầu (card năm hoặc câu thoại); nêu giá mission card bị lùi và đề xuất bản ~30s; gọi tên công thức ([Beat], [J-cut], [Xuất đoạn]); không chữ ngoài card năm/mission/countdown, không burn phụ đề, xuất 24 fps.",
+      "expected_output": "Đọc references/trailer-intro.md; chạy trailer_cuts.py scan trên output/neanderthal-51ka/1080 (--pattern clean, --clips-json), xem ảnh ứng viên + thoại; đề xuất cutlist.json 2 bản 30s và 45s theo cấu trúc cold open → tiền đề (card năm trước giây 5) → leo thang câu thoại–khoảnh khắc → cao trào mảnh 0.3–0.7s → im → button cắt đen; mảnh không lộ kết quả; nêu mission card bị lùi; DỪNG chờ user duyệt danh sách trước khi build; không chữ ngoài card năm/mission/countdown, không burn phụ đề, 24 fps.",
+      "files": []
+    },
+    {
+      "id": 5,
+      "prompt": "ok duyệt danh sách cắt trailer rồi, dựng bản nháp cả 30s và 45s cho neanderthal-51ka đi",
+      "expected_output": "Chạy trailer_cuts.py build output/neanderthal-51ka/trailer/cutlist.json; báo đường dẫn trailer_30s.mp4, trailer_45s.mp4, thư mục cuts/ và trailer_<bản>_timeline.md; nhắc SFX trong nháp là âm tạm, thay bằng Sound effects CapCut; hướng dẫn hoàn thiện CapCut theo trailer-intro.md §6 (nhạc + Match beats trước, khớp phách, im trước button, J-cut vào truyện); không gọi Flow, không tốn credit.",
       "files": []
     }
   ]

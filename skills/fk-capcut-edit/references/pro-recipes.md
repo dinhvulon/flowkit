@@ -117,4 +117,6 @@ Lọc từ nghiên cứu 2026-10-08. Nhãn: **[P]** nguồn gốc / người là
 | Shorts tối đa 3 phút (từ 15/10/2024); YouTube nói không có độ dài ưu tiên | [YT] TechCrunch/PetaPixel | Giữ 15–45s mặc định; "15–30s là tốt nhất" chỉ là [Yếu] |
 | Mỗi Short gắn được 1 Related video tới video dài | [YT] | Đã có ở SKILL.md §7 |
 
+Nguồn riêng về trailer intro (cấu trúc, âm thanh trailer, test 3 bản cắt của YouTube): `trailer-intro.md` §8.
+
 Không tìm được nguồn gốc cho: "intro MrBeast ≤ 25s, đổi cấu trúc mỗi 30s", "giữ ≥ 60% ở 0:30", "im 1.5–3s trước reveal", con số màu. Không đưa vào luật.

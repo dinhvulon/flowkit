@@ -1,6 +1,6 @@
 ---
 name: fk-capcut-edit
-description: Lập Bảng dựng CapCut cho mọi loại video YouTube (vlog FlowKit, video tự quay, nấu ăn, review…) để tăng watch time và sớm đủ điều kiện bật kiếm tiền (1000 sub / 4000 giờ xem) — kế hoạch từng clip theo giây: giữ đoạn nào, cắt ở đâu, punch-in/zoom, B-roll, chữ trên hình, nhạc, SFX, phút đầu kiểu trailer, đổi hình mỗi 3–5s, chuẩn −14 LUFS, và kế hoạch cắt Shorts 9:16 từ video dài. Dùng skill này mỗi khi user nhắc tới CapCut, "edit video", "dựng video", "hậu kỳ", "cắt ghép", "bảng dựng", "watch time", "giữ chân người xem", "retention", "người xem thoát sớm", "cắt Shorts từ video dài", hoặc vừa có bản 1080p clean từ FlowKit và hỏi bước tiếp theo — kể cả khi user không nói chữ "CapCut".
+description: Lập Bảng dựng CapCut cho mọi loại video YouTube (vlog FlowKit, video tự quay, nấu ăn, review…) để tăng watch time và sớm đủ điều kiện bật kiếm tiền (1000 sub / 4000 giờ xem) — kế hoạch từng clip theo giây: giữ đoạn nào, cắt ở đâu, punch-in/zoom, B-roll, chữ trên hình, nhạc, SFX, phút đầu kiểu trailer, intro trailer montage 30s/45s ghép từ cảnh gây cấn (có script dò cảnh + cắt ghép nháp), chuyển cảnh, đổi hình mỗi 3–5s, chuẩn −14 LUFS, và kế hoạch cắt Shorts 9:16 từ video dài. Dùng skill này mỗi khi user nhắc tới CapCut, "edit video", "dựng video", "hậu kỳ", "cắt ghép", "bảng dựng", "watch time", "giữ chân người xem", "retention", "người xem thoát sớm", "cắt Shorts từ video dài", "trailer", "intro", "hook 30s", "montage mở đầu", "chuyển cảnh", hoặc vừa có bản 1080p clean từ FlowKit và hỏi bước tiếp theo — kể cả khi user không nói chữ "CapCut".
 ---
 
 # fk-capcut-edit — Bảng dựng CapCut để tăng watch time
@@ -21,6 +21,7 @@ Nền tảng: 5 chiến lược của video *"Cách đạt 1000 Sub và 4000 Gi�
 | Nhạc | Trộn hết trong CapCut (âm lượng, hạ nhạc dưới thoại); sau khi xuất chỉ chạy ffmpeg chuẩn hóa về −14 LUFS |
 | Shorts | Cắt từ video dài 16:9, reframe sang 9:16 trong CapCut (không sinh clip dọc riêng) |
 | Cách hướng dẫn | Mặc định: Bảng dựng + tên công thức (`references/pro-recipes.md`), không dẫn từng click. User xin chi tiết (2026-10-08) → chế độ hướng dẫn chi tiết ở trên |
+| Intro trailer | 2 bản 30s và 45s. Claude dò cảnh mạnh + user duyệt danh sách; script cắt mảnh + ghép bản nháp (`references/trailer-intro.md`) |
 | Phím tắt | Mặc định CapCut (`Ctrl+B`, `Q`/`W`…), không đổi keymap |
 
 ## Thứ tự ưu tiên khi các nguồn mâu thuẫn
@@ -94,11 +95,12 @@ Luật lập bảng:
 - **2s đầu đã có mối nguy / câu hỏi / khoảnh khắc mạnh nhất.** Không logo, không chào hỏi, không xin sub trong phút đầu.
 - **Phút đầu dựng như trailer.** Vlog FlowKit: cold open → CUT ĐEN → card năm → … → mission card trước ~1:00. Video khác: kết quả đẹp nhất / khoảnh khắc gây tò mò nhất trước (món ăn hoàn thành, cú twist, kết quả thử nghiệm), cắt trước khi lộ hết, rồi mới vào phần "làm thế nào".
 - **Tiền đề + cái giá trong ~10s đầu.** Người xem phải biết *ai, ở đâu, sắp mất gì*, bằng một câu thoại hoặc card được phép (vlog: card năm, countdown). Một chuỗi highlight không lời giải thích thì tụt.
-- **Intro montage cắt từ cả video** (khi user muốn trailer dài hơn cold open):
-  - Mảnh 2–3s từ các khoảnh khắc mạnh nhất, theo thứ tự leo thang của truyện; mỗi mảnh là một câu thoại gốc trọn vẹn.
-  - Cắt **trước khi lộ kết quả** (chưa thấy ai thắng, ai sống).
-  - Ngắt giữa các nhịp bằng CUT ĐEN 0.4s + hit trầm; kết bằng câu thì thầm quay về mối nguy, rồi `[J-cut]` sang cảnh mở truyện.
-  - Đổi lấy: mission card bị lùi. Ghi rõ mốc mới; mặc định ~30s để mission card về ~1:20. Bản ~60s chỉ khi user chọn, và lập 2 bản cho user so số Intro ở 0:30.
+- **Intro trailer (montage 30s / 45s cắt từ cả video)** — khi user muốn mở bằng trailer: đọc `references/trailer-intro.md` và làm theo quy trình ở đó.
+  - Cấu trúc: cold open → tiền đề (card trước giây 5) → leo thang "câu thoại — khoảnh khắc" → cao trào mảnh 0.3–0.7s trên phách → im → button cắt đen giữa chừng.
+  - Mỗi mảnh đặt câu hỏi, không trả lời; không lộ kết quả / kết thúc.
+  - Mặc định làm **2 bản 30s và 45s** (user chốt 2026-10-08).
+  - Script `scripts/trailer_cuts.py`: `scan` dò cảnh mạnh → Claude xem ảnh + thoại, đề xuất `cutlist.json` → **user duyệt** → `build` ra bản nháp + mảnh cắt sẵn cho CapCut + bảng timeline.
+  - Đổi lấy: mission card / tiền đề truyện lùi 30–45s, nên trailer phải tự mang tiền đề.
   - Clip chưa sinh thì lấy mốc từ phân đoạn `0-3s / 3-6s / 6-8s` của `video_prompt`, ghi "dời lại khi có file".
 - **Phút 1–3 đi nhanh** (memo MrBeast lấy chính video sinh tồn làm ví dụ: gói nhiều ngày trong 3 phút đầu). Không dừng lâu ở giải thích hay chuẩn bị.
 - **Re-hook ở ~3:00 và ~6:00**: đánh dấu trong cột Ghi chú cảnh mạnh rơi vào hai mốc này; nếu không có, đề xuất đổi thứ tự hoặc rút đoạn trước nó.
