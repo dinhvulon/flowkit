@@ -559,6 +559,22 @@ Rút ra từ dự án `output/atlantis-9600bc/` (2026-09-27). Khi mâu thuẫn v
       5. **Khóa Chuẩn Bối Cảnh Địa Lý/Thời Kỳ (Strictly No Snow):** 
          - Tôn trọng bối cảnh gốc của thời kỳ (MIS 3 liên băng Dordogne là rừng thông ôn đới, đất mùn rêu xanh, tuyệt đối không tự ý chèn tuyết/bão mùa đông).
 
+63. **CẤM TRIỆT ĐỂ TỪ KHÓA 'PHONE/SMARTPHONE/PHONE_VLOG/DEVICE/SCREEN' (GHOST DEVICE MATERIALIZATION), KHÓA TRANG PHỤC THUẦN ẢNH THAM CHIẾU (PURE DRESSED-BODY REF LOCK) & CHỐNG TEO TÓP BODY DO GÓC QUAY (WAIST-UP BODY DRIFT PREVENTION) (User Lock 08/10/2026):**
+    - **Hiện tượng & Root Cause:**
+      1. **Vật thể hóa điện thoại (Ghost Device Materialization - Bài học Scene 24):** Khi đưa chữ `phone` hoặc `phone_vlog` vào project material hoặc prompt header/body, diffusion model sẽ hiểu nhầm token text và tự động vẽ (vật thể hóa) một chiếc smartphone vật lý 3D ngoài đời thật lơ lửng hoặc cầm trên tay nhân vật trong bối cảnh tiền sử/cổ đại.
+      2. **Loạn trang phục do tự tả bằng lời (Outfit Drift - Bài học Scene 21):** Khi `<Vlogger> Body` đã là ảnh body mặc hoàn chỉnh trang phục (Rule 46/60), nếu prompt tự mô tả lại bằng lời các chi tiết như `shearling collar`, `tunic`, `fur-lined`, model AI sẽ bị xung đột giữa token văn bản và latent của ảnh tham chiếu ➔ tự ý vẽ thêm chi tiết lạ (như Cảnh 21 tự mọc thêm cổ lông cừu trắng kỳ quái che mất áo da lộn cổ V đan dây của Nora Body v8).
+      3. **Teo tóp vóc dáng do góc quay & tư thế (Body Drift - Bài học Scene 23 cũ):** Quay góc toàn/xa khi nhân vật cúi gập người khiến phối cảnh ép phẳng vòng 1 và làm mất hoàn toàn eo, biến vóc dáng đồng hồ cát thành dáng phẳng lì, thô kệch.
+    - **Quy tắc đúc kết:**
+      1. **Cấm 100% từ khóa thiết bị trong Prompt & Material:**
+         - TUYỆT ĐỐI CẤM 100% các từ `phone`, `smartphone`, `phone_vlog`, `device`, `screen`, `gimbal` trong cả Material và Prompt (kể cả câu cấm "no phone").
+         - Material của project dùng: `prehistoric_vlog` (với bối cảnh tiền sử) hoặc `realistic` / `documentary_footage`. Tuyệt đối không dùng token chứa chữ `phone`.
+         - Khóa góc nhìn quang học thuần khiết: `"The camera lens and viewpoint are completely outside the visible frame and never seen; both hands are empty."`
+      2. **Khóa trang phục thuần ảnh tham chiếu — CẤM tự mô tả lại bằng lời:**
+         - Tuyệt đối KHÔNG mô tả lại trang phục bằng lời trong prompt khi đã có `<Vlogger> Body`.
+         - Chỉ dùng câu khóa trỏ thẳng vào reference sheet đã duyệt: `"[Character] wears the exact historical outfit shown in the [Character] Body reference sheet (NO shearling collar, NO extra fur, NO hood, NO outfit variations)."`
+      3. **Chống teo tóp body bằng góc quay Waist-Up & từ khóa đối kháng cực mạnh:**
+         - Không dùng góc quay toàn/xa khi nhân vật cúi gập người. Bắt buộc góc máy ngang ngực/bụng trên (Waist-Up Medium Shot) hơi hất nhẹ lên, nhân vật đứng thẳng kiêu hãnh.
+         - Đưa khối khóa dáng đối kháng cực mạnh lên vị trí sớm ngay sau `Shot:`: `"BODY LOCK (CRITICAL): Nora is a tall, statuesque woman (178 cm / 5'10" tall) with exceptionally long, slender model legs and a voluptuous hourglass figure, featuring an exceptionally large, full, voluminous heavy bust with prominent deep cleavage valley in plunging V-neckline, a tiny narrow waist, and wide curvaceous hips matching Nora Body ref; she is NOT skinny, NOT slender, NOT petite, NOT flat-chested."`
 
 **Nội dung**
 17. **[ĐÃ THAY bởi Rule 46 / bài học 60]** Vlogger mặc đồ hiện đại theo ảnh ref là chấp nhận được. Hiện tại: vlogger mặc trang phục thời kỳ ngay từ clip đầu qua `<Vlogger> Body` đã mặc outfit; đồ hiện đại chỉ khi user yêu cầu phong cách "lạc loài".

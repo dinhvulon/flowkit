@@ -26,10 +26,12 @@ Format ăn view nhờ 3 thứ: **góc nhìn người thật** (mọi thứ như 
 | Hư cấu | Phim giải trí, không phải tài liệu: sự kiện, phong tục, mẹo sinh tồn đều bịa được. Vlogger **không dạy lịch sử** (không niên đại, "scientists say"). Chỉ giữ: trông đúng thời kỳ + không biếm họa dân tộc/tôn giáo. `/fk-research` tùy chọn | `era-research.md` |
 | Sinh video | **Chỉ R2V Ingredients** (`GENERATE_VIDEO_REFS`, `abra_r2v_<N>s`, `MZZa6b`). Không sinh start frame rồi i2v cho clip có vlogger | `flowkit-pipeline.md` |
 | Bộ ref vlogger | `<V>` (mặt+tóc) + `<V> Body` (body 3 góc **đã mặc outfit**, EDIT từ Body trần gốc theo công thức outfit lock). Không entity `<V> Outfit`. Tối đa 3 ref/clip. Body phải được user duyệt trước khi sinh video | `character-bible.md` §5–6 |
+| Khóa trang phục | **Khóa trang phục thuần ref**: TUYỆT ĐỐI KHÔNG mô tả lại trang phục bằng lời trong prompt. Chỉ trỏ thẳng: `wears the exact historical outfit shown in the <V> Body reference sheet (NO shearling collar, NO extra fur, NO hood, NO outfit variations)` | `production-lessons.md` #63 |
+| Khóa hình thể | **Chống teo tóp body**: Góc máy ngang ngực/bụng trên (Waist-Up Medium Shot) hơi hất nhẹ lên, nhân vật đứng thẳng; cụm đối kháng cực mạnh: `tall statuesque 178 cm, voluptuous hourglass, large heavy bust, tiny waist, wide hips, NOT flat-chested, NOT skinny` | `production-lessons.md` #63 |
 | Giọng | Chỉ vlogger có `voice_description` (Laomedeia). 1 giọng/clip | `character-bible.md` §3 |
 | Nhân vật phụ | Được nói, bằng ngôn ngữ không hiểu được, ở sub-clip riêng, giọng tả bằng chữ; vlogger phản ứng với giọng điệu, **không dịch** | `character-bible.md` §4 |
 | Thoại | **23–25 từ / clip 8s** (tốc độ nói nhanh, dồn dập, tự nhiên kiểu vlog Laomedeia; tối đa 26 từ chống cụt âm thanh). **Ngoại lệ Sonic Isolation**: Cảnh rình mồi, phục kích thì 0 từ trên hình (miệng khóa chặt, thoại dẫn chuyển thành voiceover hậu kỳ). Viết/sửa qua `/fk-gen-narrator` | `voice-bible.md` §2, `production-lessons.md` #62 |
-| Thiết bị | Không viết `phone`, `smartphone`, `camera` (đạo cụ), `selfie stick`, `device`, `screen`, `gimbal` — kể cả câu phủ định. Ràng buộc là câu khẳng định, không dòng `Negative:` | `prompt-lock.md` #16 |
+| Thiết bị & Material | **Cấm 100% từ khóa thiết bị**: Không viết `phone`, `smartphone`, `phone_vlog`, `camera` (đạo cụ), `selfie stick`, `device`, `screen`, `gimbal` — kể cả câu phủ định và trong project material. Ràng buộc quang học: `The camera lens and viewpoint are completely outside the visible frame and never seen; both hands are empty` | `prompt-lock.md` #16, #28, `production-lessons.md` #63 |
 | Góc máy & Động học | **Phối hợp Góc máy Vlog Chân thực (Bỏ selfie 1 tay vươn dài)**: Linh hoạt phối hợp 3 góc máy: (1) *Lúc cần có Nora (Self-Vlog / Tự quay)*: Cầm máy tự nhiên ngang ngực/cổ quay mặt mình, nhìn thẳng camera dẫn dắt; (2) *Lúc thao tác 2 tay & Cảnh rộng (In-Frame Host Experience)*: Máy đặt cố định trên đá/cây (Medium/Wide shot), Nora xuất hiện rõ trong khung hình dùng 2 tay trải nghiệm sinh tồn, vừa làm vừa nhìn camera giới thiệu; (3) *Cận cảnh chi tiết (POV Close-Up)*: Soi cận cảnh đồ vật/hiện tượng | `production-lessons.md` #62 |
 | Nội dung sinh tồn | **Cấm 100% đánh đấm / vật lộn cận chiến với thú lớn** (tử huyệt làm vỡ hình AI). Tập trung 100% vào **Cơ chế sinh tồn kỳ thú & giao lưu văn hóa** (đẽo đá Mousterian, may đo chỉ gân hươu, đun nước đá nung, bột xúc tác MnO2, dấu bàn tay đất son đỏ) theo phong cách documentary trải nghiệm triệu view (như Medieval Sisters) | `production-lessons.md` #62 |
 | Bối cảnh thời kỳ | **Khóa bối cảnh chuẩn xác (Strictly No Snow)**: Tôn trọng đúng khí hậu thời kỳ (MIS 3 Neanderthal Dordogne là rừng thông ôn đới, đất mùn rêu xanh, tuyệt đối không tự ý chèn tuyết/bão mùa đông) | `production-lessons.md` #62 |
@@ -68,7 +70,7 @@ Long-form → ghi `output/<slug>/script.md` (cập nhật dần theo Act); Short
 | Ngôn ngữ thoại | English; dân bản địa nói ngôn ngữ không hiểu được |
 | Nhân vật | Vlogger nữ ngoại quốc ngoại hình nổi bật, mặc trang phục thời kỳ ngay từ clip đầu |
 | Tỉ lệ khung | HORIZONTAL 16:9 (long-form) hoặc VERTICAL 9:16 (Shorts); mọi ảnh ref đều 16:9 |
-| Material | `phone_vlog` (tạo theo `shots-and-realism.md`) hoặc `realistic` |
+| Material | `prehistoric_vlog` (hoặc `<era>_vlog`), `documentary_footage` hoặc `realistic`; **TUYỆT ĐỐI CẤM material chứa chữ phone (như `phone_vlog`)** |
 
 Chỉ học format; không sao chép tên, ngoại hình hay lời thoại nhân vật của kênh gốc user đưa làm ví dụ.
 
