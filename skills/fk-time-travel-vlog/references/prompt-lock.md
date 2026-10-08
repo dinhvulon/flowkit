@@ -6,7 +6,7 @@
 
 **A. Thứ tự khối trong `video_prompt` (không đảo, không bỏ khối):**
 
-1. **Style + góc máy** — chọn đúng 1 trong 3 loại, không trộn trong cùng clip (Rule 42):
+1. **Style + góc máy** — chọn đúng 1 trong 3 loại theo **Tỷ lệ Góc Máy Vàng (Rule 42)**: 60%–70% POV, 20%–30% Selfie & Over-the-shoulder, 10% Máy dựng cố định. Tuyệt đối không để 100% video đều là selfie dí sát mặt; cấm 3 clip selfie liên tiếp:
    - *Selfie:* `"The lens sits at the end of <V>'s outstretched right arm, completely outside the visible frame and never seen; her right arm stays extended toward the lens for the entire clip, and she never reaches toward, touches, covers, taps, or points at the lens. Only her left hand is free."`
    - *POV:* `"The view is <V>'s own eyes; all recording gear is completely outside the visible frame, and her hands stay out of frame for the whole clip."` (chỉ viết "her hands enter the frame" khi sub-clip **thật sự** có thao tác tay — Bài học 50).
    - *Máy dựng cố định:* `"Static footage from a fixed viewpoint resting on <vật cụ thể>; the frame does not move; nobody touches the viewpoint. Both of <V>'s hands are free."` — dùng khi hành động cần **hai tay** (Bài học 50).
@@ -23,13 +23,13 @@
 
 | # | Kiểm tra | Bài học |
 |---|---|---|
-| 1 | Chỉ 1 loại góc máy; selfie thì cánh tay phải giữ máy suốt clip, mọi thao tác chỉ bằng **tay trái** | 41, 42, 50 |
+| 1 | Chỉ 1 loại góc máy; tuân thủ Tỷ lệ Góc Máy Vàng (60-70% POV, 20-30% Selfie, 10% Fixed); nếu là selfie thì cánh tay phải giữ máy suốt clip, mọi thao tác chỉ bằng **tay trái** | 41, 42, 50, 61 |
 | 2 | Hành động cần **2 tay** (trượt, chống tay, kẹp tay vào nách, ôm vật nặng) → đã chuyển sang POV hoặc máy dựng cố định | 50, Scene 27/45 |
 | 3 | Mọi người/vật/sinh vật trong sub-clip đều đã có mặt trong khối "already in place" với vị trí + khoảng cách ở giây 0 | 48, Scene 2/14/39/73 |
 | 4 | Không giao hành động cho người không có trong khung; chuyển đồ vật tả từng bước tay (đưa → đỡ bằng tay nào → tay kia buông) | 48, Scene 14/15 |
 | 5 | Không nhắc tên món đồ trên người (mũ, găng, khăn) trong sub-clip nếu không muốn nhân vật thao tác với nó; mũ đã khóa "luôn để xuống" | 52, Scene 21/62 |
 | 6 | Đạo cụ chức năng (găng, áo) tả **động tác mặc/xỏ trước**, buộc dây sau, khoe ngang ngực | 45, 46 |
-| 7 | Người bản địa hiện mặt + vlogger có thoại → selfie qua vai; người bản địa không thoại thì khóa miệng, có thoại thì ở sub-clip riêng, ngôn ngữ không hiểu được, giọng ghi rõ; POV thoại ngoài khung chỉ khi không thấy mặt người | 49, character-bible §4, Scene 13/53 |
+| 7 | Người bản địa hiện mặt + vlogger có thoại → selfie qua vai; người bản địa không thoại thì khóa miệng, có thoại thì ở sub-clip riêng, ngôn ngữ không hiểu được, giọng ghi rõ; cảnh săn bắn/áp sát thú thì BẮT BUỘC dùng Sonic Isolation (im lặng tuyệt đối, miệng ngậm chặt) | 49, character-bible §4, Scene 13/53, 61 |
 | 8 | Ngã/trượt/va chạm có **nguyên nhân vật lý** và **máy chịu hậu quả** (rung, chúi, văng); không ngã khi không gấp | 51, Scene 1/45 |
 | 9 | Vật nặng (tấm da cửa, đá) chỉ chuyển động khi có tay tác động, không giao cho "gió" | 50, Scene 9 |
 | 10 | Hai sinh vật cùng lông/màu không chạm nhau (vòi–voi con…); câu `"each animal is a separate body; they never overlap or merge"` | Scene 36 |
@@ -46,5 +46,7 @@
 | 21 | **Đạo cụ cầm tay của nhân vật phụ** (giáo, gậy, cốc) → tạo ref riêng `<Tên> <Đạo cụ>` (vd `Torak Spear`) bằng **EDIT từ ảnh ref gốc** của nhân vật (giữ mặt + trang phục), sheet 16:9 3 góc, đạo cụ cầm sẵn trong tay; xóa logo → upload lại → dùng thay ref nhân vật trong cảnh đó | Scene 29 |
 | 22 | Clip hành động chia đúng 3 pha (chuẩn bị → **một** đòn theo một hướng → thu thế) khớp `0-3s / 3-6s / 6-8s`; không xoay 360°, không thú lao thẳng vào ống kính, không tả xuyên thịt — chỉ tả quỹ đạo và hậu quả | `cinematic-toolkit.md` §1 |
 | 23 | Cảm xúc của vlogger viết bằng triệu chứng cơ thể (thở, mắt, hàm, vai), không bằng tính từ (`terrified`, `sad`); clip có vòng A → chất xúc tác → B | `cinematic-toolkit.md` §2 |
+| 24 | **KHÓA SĂN BẮN & HÀNH ĐỘNG (Rule 50):** Đi săn, giao chiến, chạy trốn, dùng 2 tay BẮT BUỘC dùng First-Person POV qua mắt vlogger hoặc camera nấp sau vật cản; **CẤM TUYỆT ĐỐI vừa đi săn vừa giơ tay selfie quay mặt mình nói chuyện**. Cắt thoại trong lúc rình săn (Sonic isolation) | Rule 50, `cinematic-toolkit.md` §1 |
+| 25 | **ĐỔI CỠ CẢNH LIÊN TỤC (Rule 50):** **CẤM TUYỆT ĐỐI 2 cảnh liền nhau cùng 1 góc máy/cỡ cảnh**. Phải xoay vòng: POV rộng → POV chi tiết tay → POV quay lén từ chỗ nấp → Selfie qua vai → Máy dựng cố định | Rule 50, `cinematic-toolkit.md` §2–3 |
 
 **C. Sau khi sinh — rà lỗi theo cùng checklist** khi review (`/fk-review-video` + user): trích ~16 frame/clip, đối chiếu từng dòng B; lỗi mới chưa có trong bảng → ghi bài học mới vào `production-lessons.md` **và** thêm 1 dòng vào bảng B.

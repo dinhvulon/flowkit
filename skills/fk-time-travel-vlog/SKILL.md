@@ -28,9 +28,9 @@ Format ăn view nhờ 3 thứ: **góc nhìn người thật** (mọi thứ như 
 | Bộ ref vlogger | `<V>` (mặt+tóc) + `<V> Body` (body 3 góc **đã mặc outfit**, EDIT từ Body trần gốc theo công thức outfit lock). Không entity `<V> Outfit`. Tối đa 3 ref/clip. Body phải được user duyệt trước khi sinh video | `character-bible.md` §5–6 |
 | Giọng | Chỉ vlogger có `voice_description` (Laomedeia). 1 giọng/clip | `character-bible.md` §3 |
 | Nhân vật phụ | Được nói, bằng ngôn ngữ không hiểu được, ở sub-clip riêng, giọng tả bằng chữ; vlogger phản ứng với giọng điệu, **không dịch** | `character-bible.md` §4 |
-| Thoại | **18–22 từ / clip 8s** (6–7 / 7–8 / 5–7 theo `0-3s / 3-6s / 6-8s`), Rule 49. Chỉ cảnh cuối và establishing shot 4s không người được 0 từ. Viết/sửa qua `/fk-gen-narrator` | `voice-bible.md` §2 |
+| Thoại | **18–22 từ / clip 8s** (6–7 / 7–8 / 5–7 theo `0-3s / 3-6s / 6-8s`), Rule 49. **Ngoại lệ Sonic Isolation**: Cảnh rình mồi, phục kích, áp sát dã thú hoặc cận chiến sinh tử thì BẮT BUỘC 0 từ trên hình (miệng khóa chặt, thoại dẫn chuyển thành voiceover hậu kỳ). Chỉ cảnh cuối/establishing shot và hunting stealth được 0 từ. Viết/sửa qua `/fk-gen-narrator` | `voice-bible.md` §2, `cinematic-toolkit.md` §1 |
 | Thiết bị | Không viết `phone`, `smartphone`, `camera` (đạo cụ), `selfie stick`, `device`, `screen`, `gimbal` — kể cả câu phủ định. Ràng buộc là câu khẳng định, không dòng `Negative:` | `prompt-lock.md` #16 |
-| Góc máy | 1 shot = 1 góc (selfie **hoặc** POV **hoặc** máy dựng). Cấm lật 180° trong shot. Hành động hai tay → POV hoặc máy dựng | `prompt-lock.md` khối 1 |
+| Góc máy | **Tỷ lệ Góc Máy Vàng (Rule 42)**: 60%–70% POV, 20%–30% Selfie & OTS, 10% Máy dựng. Cấm 100% selfie hoặc 3 cảnh selfie liên tiếp. 1 shot = 1 góc (selfie **hoặc** POV **hoặc** máy dựng). Cấm lật 180° trong shot. Đi săn / hành động / thao tác hai tay BẮT BUỘC dùng POV hoặc máy dựng | `prompt-lock.md` khối 1, Rule 42 |
 | Chuyển cảnh | Cắt thẳng tại khung che. Selfie → swing/whip pan; POV → foreground wipe; cùng tư thế → match on action. Không crossfade, không title card | `transitions.md` |
 | Chữ trên hình | Chỉ năm, mission card, countdown `HOUR X — Y HOURS REMAINING`, chèn hậu kỳ, không viết vào prompt | `story-engine.md` §9 |
 | Cổng duyệt | Hỏi trước **mỗi** bước sinh; dừng sau mỗi bước cho user duyệt; lỗi thì đề xuất, không tự sinh lại | CLAUDE.md Rule 29 |
@@ -80,21 +80,29 @@ Chỉ học format; không sao chép tên, ngoại hình hay lời thoại nhân
 6. **Clip JSON từng clip** (long-form theo từng Act, hỏi trước khi sang Act sau).
 7. **Ghi chú hậu kỳ + gói YouTube.**
 
-## Skill liên quan
+## ⚠️ KHÓA BẮT BUỘC 7 SKILL ĐIỆN ẢNH & HÀNH ĐỘNG (RULE 50 — CẤM TUYỆT ĐỐI BỎ SÓT HOẶC LÀM TẮT)
+
+Mọi dự án POV / Time-Travel Vlog (`/fk-time-travel-vlog`, `/fk-vlog-guide`, `/fk-vlog-japan`) **BẮT BUỘC** phải tuân thủ nghiêm ngặt 7 skill điện ảnh và hành động dưới đây (đã tích hợp vào `references/cinematic-toolkit.md`). **AI AGENT TUYỆT ĐỐI KHÔNG ĐƯỢC PHÉP BỎ QUA HOẶC LÀM TẮT BẤT KỲ SKILL NÀO**:
+
+| Skill Bắt Buộc | Vai Trò & Điều Khoản Khóa Cứng (Non-Negotiable) |
+|---|---|
+| **`/fk-action-choreography`** | **BẮT BUỘC cho cảnh săn bắn & hành động**: Khi săn thú, giao chiến, chạy trốn, ngã, hoặc thao tác dùng 2 tay ➔ **100% dùng First-Person POV qua mắt vlogger** hoặc **Camera dựng cố định / nấp sau vật cản** (`cinematic-toolkit.md` §1). **CẤM TUYỆT ĐỐI việc vừa đi săn vừa giơ tay selfie quay mặt mình!** Chia đúng **3 pha hành động** (`0-3s` Chuẩn bị $\to$ `3-6s` Một đòn duy nhất dứt khoát theo hướng $\to$ `6-8s` Thu thế & chấn động). Dùng từ vựng an toàn chống méo người (thú lao chéo góc, đất mùn/tuyết tung tóe, không tả xuyên thịt/máu me). |
+| **`/fk-scriptwriter`** | **BẮT BUỘC xoay vòng đổi cỡ cảnh liên tục**: **CẤM TUYỆT ĐỐI 2 cảnh liền nhau cùng 1 góc máy/cỡ cảnh** (`cinematic-toolkit.md` §2–3). Phải xoay vòng: POV rộng $\to$ POV chi tiết tay $\to$ POV quay lén từ chỗ nấp $\to$ Selfie qua vai (Over-the-shoulder) $\to$ Máy dựng cố định. Thể hiện cảm xúc bằng triệu chứng cơ thể (thở dốc, bấu chặt ngón tay, mắt đảo), không dùng tính từ trừu tượng. Kỹ thuật hồi hộp: Blind spot, Sonic isolation (im lặng nghẹt thở khi rình mồi / rình săn), Deceptive calm. |
+| **`/fk-character-bible`** | **BẮT BUỘC khóa trang phục thời kỳ (`OUTFIT LOCK`)**: Quản lý trạng thái trang phục theo §4–5. Áo tunic dài tay, đai corset, quần da, ủng cao cổ. **CẤM TRIỆT ĐỂ áo ba lỗ / tank top / đồ tập gym thể thao hiện đại** lọt vào video tiền sử/cổ đại. |
+| **`/fk-camera-guide`** | **BẮT BUỘC kiến trúc Prompt 5 lớp & quang học Smartphone**: Camera đặt ngang ngực/bụng trên, rung nảy tự nhiên theo bước chân người chạy; cấm camera tự bay lượn như flycam/gimbal. |
+| **`/fk-sound-design`** | **BẮT BUỘC hậu kỳ âm thanh (§6)**: Ducking nhạc nền tự động khi có tiếng thoại/foley; master chuẩn YouTube -14 LUFS / -1 dBTP; chạy `scripts/sfx_layering.py` bổ sung tiếng va chạm/tiếng tim đập khi cần. |
+| **`/fk-cinematic-transitions`** | **BẮT BUỘC kỹ thuật nối cảnh (§7)**: J-cut âm thanh khi cắt thẳng (tiếng clip sau vào sớm 0.5s); card chữ đè lên hình; **CẤM** bumper, dip-to-black, crossfade làm mất tính chân thực của vlog. |
+| **`/fk-capcut-edit`** | **BẮT BUỘC dựng Intro Trailer Hook**: Dùng `scripts/trailer_cuts.py` chạy 2 bước scan loudness/motion và build timeline trailer 30s/45s trước khi ghép bản master. |
+
+### Các Skill Hỗ Trợ Khác
 
 | Dùng | Khi nào |
 |---|---|
-| `/fk-gen-narrator` | **Bắt buộc** khi viết/sửa thoại (Time-Travel Vlog Mode, 18–22 từ) |
-| `/fk-research` | Tùy chọn, gom ý tưởng hình ảnh |
-| `/fk-camera-guide` | Mục "5-Layer Physical Prompt" và quang học smartphone. **Bỏ qua** bảng ống kính điện ảnh / color grade (Anamorphic, Cooke…) — trái cảm giác footage tự quay |
-| `/fk-action-choreography` | Đã chuyển thành `references/cinematic-toolkit.md` §1: hành động 3 pha khớp sub-clip thoại, góc máy của vlogger, từ vựng săn/né/thú lao tới chống méo người |
-| `/fk-scriptwriter` | Phần dùng được đã chuyển vào `cinematic-toolkit.md` §2–3: cảm xúc bằng triệu chứng cơ thể, vòng A→B mỗi clip, 6 kỹ thuật hồi hộp, đổi cỡ cảnh. **Không** dùng lời dẫn TTS và luật 10–12 từ của nó |
-| `/fk-character-bible` | `cinematic-toolkit.md` §4–5: mỗi trạng thái trang phục = một ảnh `<V> Body …` riêng; tập mới mang theo **mặt + Body trần gốc** (mặt qua `scripts/series_manifest.py bootstrap --only "<V>"`, Body trần qua `source_media_id`), rồi EDIT ra Body mặc outfit của tập theo công thức outfit lock (`character-bible.md` §6) |
-| `/fk-sound-design` | `cinematic-toolkit.md` §6: duck nhạc theo track clip + master −14 LUFS (lệnh đã test), `scripts/sfx_layering.py` khi thiếu tiếng va chạm |
-| `/fk-cinematic-transitions` | `cinematic-toolkit.md` §7: J-cut khi cắt thẳng và card chữ đè lên hình (lệnh đã test). **Không** bumper, dip-to-black, crossfade, hardsub |
-| `/fk-upload-ref`, `/fk-gen-refs`, `/fk-remove-watermark`, `/fk-upload-image` | Bộ ref (bước 7) |
-| `/fk-review-video`, `/fk-review-board`, `/fk-concat`, `/fk-gen-music` | Bước 9–10 |
-| `/fk-youtube-seo`, `/fk-thumbnail`, `/fk-youtube-upload` | Bước 11 (bật nhãn "Altered or synthetic content" bằng tay) |
+| `/fk-gen-narrator` | **Bắt buộc** khi viết/sửa thoại (Time-Travel Vlog Mode, 18–22 từ). *Lưu ý: Trong cảnh săn bắn rình mồi, ưu tiên sự chân thực và im lặng (Sonic isolation), không nhét thoại vô lý.* |
+| `/fk-research` | Tùy chọn, gom ý tưởng hình ảnh và bối cảnh lịch sử |
+| `/fk-upload-ref`, `/fk-gen-refs`, `/fk-remove-watermark`, `/fk-upload-image` | Chuẩn bị bộ ref (bước 7) |
+| `/fk-review-video`, `/fk-review-board`, `/fk-concat`, `/fk-gen-music` | Duyệt video 720p thô trước khi upscale 1080p (Bước 8–10) |
+| `/fk-youtube-seo`, `/fk-thumbnail`, `/fk-youtube-upload` | Đóng gói phát hành (Bước 11) |
 | `/fk-doctor` | Bất kỳ lỗi pipeline nào |
 
 Không dùng: `/fk-gen-chain-videos` (unsupported), `/fk-gen-images` cho clip có vlogger (R2V không cần start frame), `/fk-gen-text-overlays` và `/fk-concat-fit-narrator` với text overlay/crossfade.

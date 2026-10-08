@@ -16,40 +16,51 @@ Cách chuyển một template gốc sang vlog:
 
 ## 1. Hành động & cảnh săn — 3 pha (từ `/fk-action-choreography`) · Bước 5
 
-Mỗi clip hành động 8s đúng 3 pha, khớp luôn 3 sub-clip thoại:
+Mỗi clip hành động 8s đúng 3 pha:
+- `0-3s`: **Chuẩn bị** — hạ trọng tâm, siết tay cầm, khóa mắt vào mục tiêu (mọi người/thú/vật đã ở đúng chỗ từ giây 0, khối "already in place").
+- `3-6s`: **Một đòn theo một hướng duy nhất** — đâm, ném, chạy, né (tả quỹ đạo và tác động lên môi trường, đất mùn tung, lá văng, không tả xuyên thịt).
+- `6-8s`: **Thu thế & neo** — dừng trượt, giữ thế thủ, ngực phập phồng (bụi/tuyết lắng, rung nảy dần ổn định).
 
-| Sub-clip | Pha | Hình | Thoại (18–22 từ, câu ngắn đứt quãng) |
+**Phân biệt 2 chế độ hành động cốt lõi:**
+
+| Chế độ | Góc máy bắt buộc | Thoại / Âm thanh (Rule 49) | Ví dụ bối cảnh |
 |---|---|---|---|
-| `0-3s` | **Chuẩn bị** — hạ trọng tâm, siết tay cầm, khóa mắt vào mục tiêu | Mọi người/thú/vật đã ở đúng chỗ từ giây 0 (khối "already in place") | 6–7 từ, thì thầm / nín thở |
-| `3-6s` | **Một đòn theo một hướng duy nhất** — đâm, ném, chạy, né | Tả quỹ đạo và tác động lên môi trường (tuyết tung, đá văng, lửa bùng), không tả xuyên thịt | 7–8 từ, đứt quãng, thở dốc |
-| `6-8s` | **Thu thế & neo** — dừng trượt, giữ thế thủ, ngực phập phồng | Bụi/tuyết lắng, khói tan; máy rung dần ổn định | 5–7 từ, phản ứng / micro-hook |
+| **A. Rình mồi & Săn thú cận chiến** | **100% First-Person POV** qua mắt vlogger hoặc Camera nấp sau tảng đá/thân cây | **Sonic Isolation (Im lặng tuyệt đối):** Miệng ngậm chặt, 0 từ thoại trên hình (`Strictly NO spoken dialogue`). Kịch tính qua tiếng thở dồn, tim đập, foley lá gãy | Áp sát bò mộng, phục kích voi ma mút, rình bầy linh cẩu, leo trèo |
+| **B. Tháo chạy & Thoát nạn sinh tử** | **Selfie góc rộng 0.5x** (cánh tay khóa cứng máy, không buông) | **18–22 từ thoại thở dốc / hét nghẹn:** `0-3s` (6-7 từ) $\to$ `3-6s` (7-8 từ) $\to$ `6-8s` (5-7 từ) | Động đất, tuyết lở, thú dữ bất ngờ quay đầu truy đuổi |
 
-**Góc máy cho hành động** (vlogger là người cầm máy):
+**Góc máy cho hành động** (vlogger là người cầm máy — tuân thủ Golden Camera Ratio ở Rule 42: 60-70% POV, 20-30% Selfie/OTS, 10% Fixed):
+- Rình rập, bò trườn, đâm/ném giáo, hai tay làm việc: **100% First-Person POV hoặc máy dựng/tựa đá** (Bài học 50, 61) — vlogger không thể vừa giơ tay selfie vừa đi săn.
 - Chạy trốn, né: selfie một tay, máy nảy theo từng bước, cánh tay không bao giờ buông máy (Bài học 25, 39).
-- Đâm/ném giáo, kéo thú, trèo, hai tay làm việc: **POV hoặc máy dựng** (Bài học 50) — vlogger không thể vừa giữ máy vừa dùng hai tay.
-- Người bản địa ra đòn chính: selfie qua vai (vlogger 1/3 tiền cảnh) hoặc POV từ chỗ nấp (`/fk-camera-guide` mục 6 "quay lén").
+- Người bản địa ra đòn chính: POV từ chỗ nấp (`/fk-camera-guide` mục 6 "quay lén") hoặc selfie qua vai (vlogger 1/3 tiền cảnh) ở những giây quan sát an toàn.
 
 **Từ vựng an toàn chống méo người:**
 
 | Hành động | ❌ Dễ méo / bị chặn | ✅ Viết thế này |
 |---|---|---|
-| Đâm giáo vào thú | `spear pierces the bison's chest, blood sprays` | `thrusts the spear forward in one straight line toward the bison's flank; snow bursts up where the bison stumbles` |
+| Đâm giáo vào thú | `spear pierces the bison's chest, blood sprays` | `thrusts the spear forward in one straight line toward the bison's flank; dark loam and moss burst up where the beast stumbles` |
 | Ném giáo | `throws three spears in two seconds` | `draws the spear back to her shoulder, then throws once; the spear streaks diagonally across the frame` |
-| Thú lao tới | `the mammoth charges straight into the lens` | `the mammoth charges diagonally from the far left toward the right edge, snow churning under its feet` |
-| Né | `she backflips away` | `she drops low and sidesteps to the right, the tusk sweeping past above her` |
-| Vật lộn với thú / người | `wrestles the wolf on the ground` | Giữ khoảng cách một sải tay; cho thấy hậu quả: tuyết tung, máy chúi, thở dốc |
+| Thú lao tới | `the mammoth charges straight into the lens` | `the bison charges diagonally from the far left toward the right edge, dark loam churning under its hooves` |
+| Né | `she backflips away` | `she drops low and sidesteps behind the boulder, the horn sweeping past above her` |
+| Vật lộn với thú / người | `wrestles the wolf on the ground` | Giữ khoảng cách một sải tay; cho thấy hậu quả: đất tung, máy chúi, thở dốc |
 | Đập đá, đánh lửa | `smashes rocks rapidly` | `strikes the flint once against the pyrite above the tinder; a single spark drops onto it` (`story-engine.md` mục 7d) |
 | Quay người | `spins 360 degrees` | Tách 2 clip, cắt thẳng (Rule 42, 44) |
 
-Thương tích, máu, cái chết: chỉ cho thấy **hậu quả** (tuyết đỏ ở xa, con thú nằm yên, nhóm im lặng), không cho thấy lúc xuyên/thương — vừa tránh `UNSAFE_GENERATION` vừa tránh model làm cong vũ khí.
+Thương tích, máu, cái chết: chỉ cho thấy **hậu quả** (vết cày trên đất, con thú nằm yên, nhóm thở dốc hồi sức), không cho thấy lúc xuyên/thương — vừa tránh `UNSAFE_GENERATION` vừa tránh model làm cong vũ khí.
 
-**Mẫu khung một clip săn** (ghép vào khung 9 khối của `prompt-lock.md`, không thay thế nó):
+**Mẫu 1: Khung clip săn rình mồi / cận chiến im lặng (Sonic Isolation — POV):**
 ```text
-0-3s: Torak crouches low behind the snow ridge, gripping one spear with both hands, eyes locked on the bison twenty paces ahead. Nora whispers (barely breathing): "Don't move. Don't even blink. He's waiting."
-3-6s: Torak rises and thrusts the spear forward in one straight line toward the bison's flank; snow bursts up as the bison stumbles sideways. Nora says (sharp gasp, voice cracking): "He hit it— it's turning toward us!"
-6-8s: The bison skids to a halt, breath steaming; Torak holds his ground, chest heaving. Nora says (shaky laugh): "Okay. Okay. Still alive. Barely."
+0-3s: Torak and Nora crouch low behind a mossy limestone boulder at the woodland edge, eyes locked on the bull bison twenty paces ahead. Nora holds her breath; strictly NO spoken dialogue, her mouth stays firmly closed in dead silence.
+3-6s: Torak lunges forward in one explosive thrust, driving his heavy wooden spear with full body weight toward the bison's flank; dark loam and damp pine needles burst upward as the beast bellows gutturally and stumbles sideways.
+6-8s: The bison crashes onto its front knees, churning the forest floor; Torak holds his low braced stance as the heavy animal collapses. Nora stays frozen behind the boulder, pulse racing; zero dialogue, only heavy nasal breathing and woodland wind.
 ```
-(Thoại = 7 + 7 + 5 = 19 từ.)
+
+**Mẫu 2: Khung clip tháo chạy có thoại (Voiced Evasion — Selfie 18–22 từ):**
+```text
+0-3s: Nora sprints past leaning pine trunks, her right arm permanently extended holding the camera locked on her face; behind her, timber cracks loudly. Nora gasps (voice cracking): "It turned around— it's right behind us!"
+3-6s: Nora veers sharply right behind a granite outcrop as a massive dark shadow thunders past off-screen, showering dirt onto her shoulder. Nora pants (choked whisper): "Keep moving! Don't look back, just run!"
+6-8s: Nora skids to a halt, pressing her back against the damp stone, chest heaving violently. Nora whispers (shaky exhale): "I think... I think we lost it."
+```
+(Thoại Mẫu 2 = 7 + 8 + 6 = 21 từ.)
 
 ---
 
@@ -80,7 +91,7 @@ Dùng khi viết outline / Act — mỗi Act nên có ít nhất 1 kỹ thuật:
 | **Ticking clock** | Mặt trời lặn dần / lửa sắp tắt / bão kéo tới — gắn với countdown `HOUR X — Y HOURS REMAINING` (`story-engine.md` mục 9). Chèn shot POV vật đếm giờ (than tàn, bóng đổ dài ra) |
 | **Blind spot** | Selfie với vlogger 1/3 khung, **2/3 còn lại là bóng tối** phía sau (cửa hang, rừng). Thứ nguy hiểm đã có sẵn trong bóng tối từ giây 0, chỉ lộ dần (Bài học 48) |
 | **Delayed reveal** | Clip A: selfie, mặt vlogger biến sắc nhìn qua vai máy (không quay máy). Cắt sang Clip B: POV thấy thứ cô thấy. Cấm lật 180° trong 1 shot (Rule 42) |
-| **Sonic isolation** | Hậu kỳ: tắt nhạc 1–2s trước reveal, chỉ còn tiếng thở + gió. Ghi `[im lặng Xs]` trong kịch bản |
+| **Sonic isolation** | Tuyệt đối im lặng khi rình mồi / áp sát cận chiến (Rule 49): trong prompt ghi `Strictly NO spoken dialogue. Her mouth stays firmly closed in dead silence`. Hậu kỳ tắt hẳn nhạc nền, chỉ còn tiếng thở dồn nén, tim đập và tiếng foley tự nhiên. Thoại dẫn chuyện chỉ chèn qua voiceover/subtitles nội tâm |
 | **Deceptive calm** | Clip yên bình (hồ phẳng, đàn thú gặm cỏ) → vật rung nhẹ, chim bay tán loạn ở `6-8s` → cắt |
 | **Time dilation** | Một khoảnh khắc 1 giây kéo thành cả clip 8s: bàn tay với tới mép đá, tia lửa rơi xuống bùi nhùi |
 

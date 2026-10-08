@@ -12,7 +12,7 @@ FORBIDDEN_GHOST_DEVICE_PATTERNS = [
     (r"\b(phone|smartphone)\b", "FORBIDDEN: Mentioning 'phone' or 'smartphone' causes AI to render a 3D phone device in hand and switches camera to 3rd-person spectator."),
     (r"\b(selfie[- ]?stick)\b", "FORBIDDEN: Mentioning 'selfie stick' renders a physical stick in the shot."),
     (r"\b(device)\b", "FORBIDDEN: Mentioning 'device' causes AI to render gadgets or screens."),
-    (r"(?<!off-)\bscreen\b", "FORBIDDEN: Mentioning 'screen' (except 'off-screen') may cause AI to render a phone or monitor screen. Use 'in the frame' instead."),
+    (r"(?<!off-)(?<!on-)\bscreen\b", "FORBIDDEN: Mentioning 'screen' (except 'off-screen' / 'on-screen') may cause AI to render a phone or monitor screen. Use 'in the frame' instead."),
     (r"\bnegative:\b", "FORBIDDEN: 'Negative:' lines are banned by repo rules. Use plain constraint sentences in prompt body."),
     (r"\b(?:starts?\s+(?:from\s+)?(?:just\s+)?behind|from\s+just\s+behind)\s+(?:her|his|their)\s+(?:head|back)\b", "FORBIDDEN (Rule 41): Starting behind character's head/back and turning around switches to 3rd-person and causes AI to render a physical camera/lens in hand (Camera Materialization Glitch)."),
     (r"\b(?:brings?|turns?)\s+the\s+camera\s+around\s+(?:her|his|their)\s+side\b", "FORBIDDEN (Rule 41): 'brings the camera around' causes AI to treat camera as a physical handheld prop/lens. Use 'pivots extended arm back toward herself'."),
@@ -85,7 +85,7 @@ def lint_prompt(prompt: str) -> list[dict]:
 
     # 5. Check Functional Prop Dressing (Lesson 46 / Rule 45)
     # If props like mitten, glove, cloak, parka, strap, cord are being handed or tied
-    if any(k in p_lower for k in ["mitten", "glove", "parka", "cloak", "boot", "cord"]) and any(k in p_lower for k in ["ties", "gives", "hands", "fastens", "slips", "wears"]):
+    if any(k in p_lower for k in ["mitten", "glove", "parka", "cloak", "goggles"]) and any(k in p_lower for k in ["ties", "gives", "hands", "fastens", "slips"]):
         has_dressing_verb = any(v in p_lower for v in ["slips", "slides", "pulls over", "fits over", "wears", "wearing"])
         if not has_dressing_verb:
             issues.append({

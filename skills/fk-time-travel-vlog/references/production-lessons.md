@@ -527,6 +527,21 @@ Rút ra từ dự án `output/atlantis-9600bc/` (2026-09-27). Khi mâu thuẫn v
     - **Câu identity:** *"Nora looks exactly like her two reference images: her face and hair from the Nora face sheet, and her build and clothing from the Nora Body sheet."* Vẫn giữ `OUTFIT LOCK` + `BODY LOCK` bằng chữ trong prompt (Rule 47).
     - **Cổng duyệt bắt buộc (Rule 46):** Bắt buộc trình ảnh `<Vlogger> Body` sạch logo cho user xem và duyệt phom dáng & trang phục trước khi gửi bất kỳ lệnh sinh video nào.
 
+61. **PHÂN BIỆT RẠCH RÒI SELFIE VLOGGER VS POV ĐI SĂN / HÀNH ĐỘNG CẬN CHIẾN & TỶ LỆ GÓC MÁY VÀNG (Bài học Neanderthal 51ka, Scene 20–36, user review 08/10/2026):**
+    - **Hiện tượng & Root Cause:** 
+      1. Hiểu nhầm luật "phone is the camera" và bài học 25/39/50 (cánh tay vươn dài giữ máy) thành việc ép 100% mọi cảnh vlogger phải giơ tay selfie quay mặt mình. Kết quả: vlogger vừa đi săn vừa giơ tay quay mặt mình nói chuyện, biểu cảm đơ cứng, không thể di chuyển tự nhiên, biến cuộc đi săn thành buổi livestream lố bịch, phản sinh tồn.
+      2. Áp dụng máy móc Rule 49 (thoại 18–22 từ) vào lúc áp sát con thú lớn, khiến nhân vật lải nhải khi đang cách bò mộng 3 mét.
+    - **Quy tắc:**
+      1. **Tỷ lệ Góc Máy Vàng (Golden Camera Ratio — Rule 42):** 
+         - **60%–70% First-Person POV qua mắt vlogger (Cam sau):** Toàn bộ hành động rình rập, săn bắn, di chuyển, chiến đấu, chế tác công cụ, quan sát đồng đội và cảnh quan.
+         - **20%–30% Front-Camera Selfie & Over-the-Shoulder (Cam trước 0.5x):** Dành riêng cho lúc an toàn, mở đầu/kết thúc tập, tâm sự với khán giả, hoặc phản ứng sốc/hú vía sau khi vượt qua hiểm nguy.
+         - **10% Ground / Fixed Cam:** Camera tựa đá/mặt đất khi cần 2 tay rảnh hoàn toàn.
+         - **CẤM TUYỆT ĐỐI 3 cảnh selfie liên tiếp.**
+      2. **Khóa Im Lặng Khi Rình Mồi / Cận Chiến (Sonic Isolation — Rule 49 & 50):** 
+         - Khi áp sát mục tiêu, phục kích, hoặc giao chiến sinh tử: BẮT BUỘC dùng First-Person POV và áp dụng **Sonic Isolation** (`Strictly NO spoken dialogue. Her mouth stays firmly closed in dead silence`). 
+         - Âm thanh là Foley cơ học: tiếng thở nén qua mũi, tiếng tim đập, tiếng cành cây gãy, tiếng dã thú thở phì phò. Lời dẫn/suy nghĩ nội tâm nếu có chỉ đưa vào voiceover/subtitles hậu kỳ, miệng nhân vật KHÔNG được mấp máy.
+      3. **Cánh tay khóa máy chỉ áp dụng cho shot Selfie:** Các bài học 25, 39, 50 về cánh tay duỗi thẳng giữ máy chỉ kích hoạt khi shot đó ĐÃ ĐƯỢC CHỌN là góc Selfie. Khi là shot First-Person POV, hai tay vlogger tự do tham gia hành động (cầm giáo, bò trườn, bám đá).
+
 
 **Nội dung**
 17. **[ĐÃ THAY bởi Rule 46 / bài học 60]** Vlogger mặc đồ hiện đại theo ảnh ref là chấp nhận được. Hiện tại: vlogger mặc trang phục thời kỳ ngay từ clip đầu qua `<Vlogger> Body` đã mặc outfit; đồ hiện đại chỉ khi user yêu cầu phong cách "lạc loài".
