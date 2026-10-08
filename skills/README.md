@@ -52,6 +52,7 @@ Workflow skills for AI agents and humans. Each skill is a step-by-step recipe.
 
 | Skill | File | Description |
 |-------|------|-------------|
+| `fk-capcut-edit` | [fk-capcut-edit/SKILL.md](fk-capcut-edit/SKILL.md) | CapCut edit sheet for any video: trailer-style first minute, 3–5s visual changes, −14 LUFS, Shorts cut-down plan |
 | `fk-brand-logo` | [fk-brand-logo.md](fk-brand-logo.md) | Channel intro/outro bumpers, corner watermark logo, 4K resolution badge |
 | `fk-thumbnail-guide` | [fk-thumbnail-guide.md](fk-thumbnail-guide.md) | YouTube thumbnail rules, high-CTR composition & 3-second hook principles |
 | `fk-thumbnail` | [fk-thumbnail.md](fk-thumbnail.md) | Generate 4 YouTube thumbnail variants with high-impact typography |

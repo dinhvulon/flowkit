@@ -1,0 +1,23 @@
+{
+  "skill_name": "fk-capcut-edit",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "đã có đủ bản 1080p clean của dự án neanderthal-51ka rồi, giờ mình dựng trong capcut thế nào cho giữ chân người xem? lập giúp mình bảng dựng phút đầu với Act 1",
+      "expected_output": "Bảng dựng ghi vào output/neanderthal-51ka/capcut_edit_sheet.md, đúng clip trong 1080/, giữ từ 1.0s, cold open → CUT ĐEN → card năm → mission card trước 1:00, cột 'Hình đổi ở' không trống quá 5s, theo bảng Nhịp dựng của script.md, không crossfade/bumper, không phụ đề burn, không đoạn end screen, không dẫn từng cú click.",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "mình có video dài 9 phút về Ice Age (output/ice_age_16_000_bc_survival_vlog), lên kế hoạch cắt mấy cái Shorts để kéo view về video dài giúp mình",
+      "expected_output": "Kế hoạch 3–4 Short 15–45s với timecode nguồn, hook giây đầu giữa hành động, cột Reframe (Scale ~316%, chủ thể cần bám) từ nguồn 16:9, không burn phụ đề nên chọn đoạn hình tự kể chuyện, nhắc gắn Related video + ghim link.",
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "kênh nấu ăn của tôi video toàn 3-4 nghìn view, xem được 30 giây là người ta thoát. Tôi tự quay bằng điện thoại, dựng capcut. Chỉ tôi cách dựng lại 1 video 10 phút cho người ta xem lâu hơn",
+      "expected_output": "Không áp luật riêng vlog FlowKit (được dùng chữ nhấn mạnh, tiêu đề chương), hỏi tối đa 1 lượt đầu vào, phút đầu kiểu trailer (món hoàn thành trước), đổi hình 3–5s bằng punch-in/B-roll, dồn công 50% đầu, trộn nhạc trong CapCut + lệnh loudnorm −14 LUFS, không phụ đề burn, ra Bảng dựng chứ không hướng dẫn click.",
+      "files": []
+    }
+  ]
+}

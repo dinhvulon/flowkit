@@ -137,7 +137,7 @@ curl -s "http://127.0.0.1:8100/api/requests/batch-status?video_id=<VID>&type=GEN
 
 ## Skills
 
-This project has reusable skills in `skills/`. When the user says `/fk-<name>`, read `skills/fk-<name>.md` — or `skills/fk-<name>/SKILL.md` for a folder skill with `references/` (currently `/fk-time-travel-vlog`) — and follow the instructions inside.
+This project has reusable skills in `skills/`. When the user says `/fk-<name>`, read `skills/fk-<name>.md` — or `skills/fk-<name>/SKILL.md` for a folder skill with `references/` (currently `/fk-time-travel-vlog`, `/fk-capcut-edit`) — and follow the instructions inside.
 
 | Skill | Purpose |
 |-------|---------|
@@ -145,6 +145,7 @@ This project has reusable skills in `skills/`. When the user says `/fk-<name>`, 
 | `/fk-add-material` | fk-add-material — Image Material System |
 | `/fk-brand-logo` | fk-brand-logo — Apply Channel Branding (Intro + Outro + Logo + 4K Badge) |
 | `/fk-camera-guide` | Camera Guide — Cinematic Video Prompts (Veo 3) |
+| `/fk-capcut-edit` | CapCut Edit — Bảng dựng CapCut cho mọi loại video để tăng watch time: phút đầu kiểu trailer, đổi hình 3–5s, −14 LUFS, kế hoạch cắt Shorts — `skills/fk-capcut-edit/SKILL.md` + `references/` |
 | `/fk-change-model` | fk-change-model — View & Change Video/Image Model Keys |
 | `/fk-character-bible` | Character Bible & Visual Consistency — wardrobe state matrix, series manifest |
 | `/fk-change-provider` | fk-change-provider — View & Switch the AI CLI for a Role |
