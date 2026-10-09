@@ -718,7 +718,7 @@ async function runBatchRpc(cmd) {
 
   let freq = cmd.freq;
   if (cmd.captchaAction) {
-    const solved = await captchaFromTab(tab.id, cmd.id, cmd.captchaAction);
+    const solved = await solveCaptcha(cmd.id, cmd.captchaAction);
     if (!solved?.token) return { error: `CAPTCHA_FAILED: ${solved?.error || 'no token'}` };
     freq = freq.split(CAPTCHA_SLOT).join(solved.token);
   }

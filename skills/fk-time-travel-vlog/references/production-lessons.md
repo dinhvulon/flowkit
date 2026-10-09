@@ -639,6 +639,32 @@ Rút ra từ dự án `output/atlantis-9600bc/` (2026-09-27). Khi mâu thuẫn v
          - Đối với các cảnh tập kết đồ vật (như đống củi, khay đá, rổ thức ăn): Đạo cụ **PHẢI NẰM CỐ ĐỊNH TRÊN MẶT ĐẤT CẠNH BẾP TỪ FRAME 0** (`from frame 0, a neat stack of dry split pine firewood already rests on the limestone floor beside the hearth`).
          - Nhân vật ngồi cạnh chỉ cần thao tác hơ tay sưởi ấm hoặc cầm 1 que củi cho vào bếp; **TUYỆT ĐỐI KHÔNG** mô tả động tác ôm cả bó đồ rồi đặt buông xuống đất để tránh lỗi tan biến điểm ảnh.
 
+69. **KHÓA BỐI CẢNH BẰNG ẢNH REF 16:9 DÙNG CHUNG & DUYỆT START FRAME BỐI CẢNH TRƯỚC KHI SINH R2V; KHÓA ĐẠO CỤ ĐƠN NHẤT & CẤM NGƯỜI NGOÀI RÌA (Shared 16:9 Setting Ref Lock, Start-Frame Review Gate, Single-Prop Identity & Zero-Bystander Lock — Bài học Scene 27, 28, 30 Neanderthal 51ka, User review 09/10/2026):**
+    - **Hiện tượng & Root Cause:**
+      1. **Lệch bối cảnh giữa các cảnh liên tiếp (Scene 27 vs Scene 28):** Cùng một không gian bếp lửa trung tâm hang Pech de l'Azé và chỉ cách nhau 3 giây trong kịch bản. Cảnh 27 quay OTS thấy bếp lửa bên trái quây bằng đá nhỏ, nền đá sỏi phẳng, Thủ Lĩnh cởi trần vắt da. Sang cảnh 28, bếp lửa tự nhiên nhảy ra chính giữa, quây bằng những hòn đá cuội to tròn nhẵn thín, Thủ Lĩnh quỳ bên trái mặc áo lông thú dày kín mít, dưới đất xuất hiện thớt đá và tấm da hươu đốm to. Vì R2V chỉ truyền Face và Body của nhân vật mà KHÔNG có ảnh reference bối cảnh (`Setting Reference`), AI đã tự tưởng tượng (hallucinate) ra 2 bếp lửa và 2 bố cục hang hoàn toàn khác nhau!
+      2. **Lỗi người ngoài rìa biến mất (Vanishing Bystander - Bài học Scene 30):** Ở giây 0-1, AI tự ý vẽ thêm nửa thân dưới của một người đàn ông đứng ở rìa phải sau lưng Nora (`standing bystander`). Nhưng do prompt không quy định người này và không khóa thời gian, đến giây 5-8 AI tự động xóa sổ người này biến mất không dấu vết.
+      3. **Lỗi cục đá kê xuất hiện & cành cây lơ lửng (Floating Props & Morphing Base - Bài học Scene 30):** Bàn kê da không có cấu trúc vật lý neo cố định từ đầu nên AI tự đẻ một tảng đá xám kê dưới khúc gỗ và làm cành cây phía sau trôi nổi lơ lửng mất gốc.
+      4. **Lỗi phân mảnh đạo cụ 1 thành 2 (Tool Duplication / Forking Glitch - Bài học Scene 30):** Prompt mô tả bà lão cầm xương lissoir rồi miết lên da, nhưng AI không hiểu sự kế thừa chuyển động, tự "đẻ" thêm một thanh xương thứ hai nằm sẵn trên da ở giây 5-8, khiến bà lão một tay cầm xương cạo, một tay đè lên thanh xương thứ hai!
+      5. **Thiếu bước Review Bối cảnh:** Quy trình R2V trước đây bỏ qua việc sinh start frame ảnh, dẫn đến việc User hoàn toàn không được nhìn và duyệt trước không gian, góc đặt máy, bếp lửa và đạo cụ trước khi AI sinh video.
+    - **Quy tắc giải pháp:**
+      1. **Mỗi cụm bối cảnh (Setting Sequence) BẮT BUỘC phải tạo 1 ảnh Reference Bối cảnh 16:9 (Setting / Scene Start-Frame Ref):**
+         - Trước khi sinh video cho bất kỳ phân đoạn nào (như Cụm Bếp lửa ghè đá Cảnh 27-28, Cụm Bàn thuộc da Lissoir Cảnh 30-31, Cụm Ngưỡng cửa hang rào gỗ Cảnh 33-36, Cụm Ổ ngủ cành thông Cảnh 51-54, Cụm Thềm đá ban mai Cảnh 60-67): BẮT BUỘC phải sinh 1 ảnh bối cảnh 16:9 chuẩn (hoặc start frame góc máy tĩnh không người hoặc đúng bố cục người/vật).
+         - Quy trình 4 bước chuẩn sạch watermark:
+           1. Gen ảnh bối cảnh 16:9.
+           2. Tẩy logo watermark & SynthID (`python tools/remove_watermark_from_image.py`).
+           3. Upload lên Flow lấy `media_id` UUID sạch (`POST /api/flow/upload-image`).
+           4. Đưa lên Review Board (`:8200` / file ảnh) cho User xem và duyệt bối cảnh/bố cục trước.
+      2. **Đưa vào R2V Ingredients làm Shared Reference:**
+         - UUID ảnh bối cảnh sạch được gán vào `reference_media_ids` của tất cả các cảnh thuộc cùng cụm bối cảnh đó.
+         - Ví dụ: Cảnh 27 và 28 cùng nhận `reference_media_ids = [Nora_Face, Nora_Body, Leader_Face, Hearth_Setting_UUID]`. Cảnh 30 và 31 cùng nhận `[Nora_Face, Nora_Body, OldWoman_Face, Leatherwork_Bench_UUID]`.
+      3. **Khóa Bối cảnh trong Video Prompt:**
+         - Khối `SETTING` trong prompt BẮT BUỘC phải trỏ trực tiếp và khóa chặt theo ảnh ref bối cảnh:
+           `SETTING: Matches the exact cave hearth / workspace layout, rock formation, and prop placement shown in the [Setting Reference] image. From the very first frame to the last, all background rocks, embers, and ground textures remain completely consistent.`
+      4. **Khóa Đạo cụ Đơn nhất & Khóa Người ngoài rìa (Scene 30 Fixes):**
+         - `Strictly ONE single curved deer rib bone tool (lissoir) only; NEVER duplicate, NEVER spawn a second bone, NO extra tools on the pelt.`
+         - `The wooden log bench and ground support remain rock-solid and static from frame 0; NO stone block appears under the log; background sticks firmly touch the stone floor and NEVER float.`
+         - `Strictly NO bystanders, NO extra people standing in the background or framing edges; only Nora and the Elder Woman are present in the scene.`
+
 **Nội dung**
 17. **[ĐÃ THAY bởi Rule 46 / bài học 60]** Vlogger mặc đồ hiện đại theo ảnh ref là chấp nhận được. Hiện tại: vlogger mặc trang phục thời kỳ ngay từ clip đầu qua `<Vlogger> Body` đã mặc outfit; đồ hiện đại chỉ khi user yêu cầu phong cách "lạc loài".
 18. User có thể yêu cầu **cảnh mở đầu FPV điện ảnh** (từ không gian lao xuống toàn cảnh thành phố, không có vlogger), là ngoại lệ của luật "mọi shot quay bằng điện thoại". Clip đó dùng ảnh ref toàn cảnh, giữ yên 2–3 giây cuối, và clip sau mở bằng vật lướt qua ống kính để che cú cắt.
