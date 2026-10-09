@@ -27,6 +27,8 @@ flow_session_project.json
 .venv/
 output/*/review/
 output/*/scenes/
+!output/neanderthal-51ka/scenes/
+!output/neanderthal-51ka/scenes/**
 output/*/1080/*_1080p.mp4
 !output/*/1080/*_1080p_clean.mp4
 
