@@ -665,6 +665,18 @@ Rút ra từ dự án `output/atlantis-9600bc/` (2026-09-27). Khi mâu thuẫn v
          - `The wooden log bench and ground support remain rock-solid and static from frame 0; NO stone block appears under the log; background sticks firmly touch the stone floor and NEVER float.`
          - `Strictly NO bystanders, NO extra people standing in the background or framing edges; only Nora and the Elder Woman are present in the scene.`
 
+70. **KHÓA TAY CẦM ĐẠO CỤ CỐ ĐỊNH SUỐT CLIP — DAO ĐÁ NHẢY TAY / BIẾN MẤT RỒI TỰ HIỆN (One Hand, One Prop, Whole Clip — Bài học Scene 29 Neanderthal 51ka, User review 09/10/2026, lỗi NẶNG):**
+    - **Hiện tượng:** Máy dựng cố định, Nora quỳ sau phiến đá thử phiến dao đá cắt gân hươu (10s). Prompt ghi "tay phải cầm dao, tay trái đè gân" nhưng giây 0 dao nằm ở **tay trái**; giây ~3.5 dao **nhảy sang tay phải** không có động tác chuyền; giây ~7.5 dao rời tay phải đặt xuống bàn rồi **tự dịch sang dưới tay trái**, còn đoạn gân lại hiện ở tay phải. User đánh giá: tay chân biến hóa, dao biến mất rồi tự xuất hiện — lỗi nặng, không dùng được.
+    - **Root cause:**
+      1. **Nhầm trái/phải khi nhân vật đối diện máy:** "her right hand" của nhân vật nằm ở **bên trái khung hình**; model hay lật gương nên khởi đầu sai tay, rồi tự "sửa" giữa clip bằng cách teleport đạo cụ.
+      2. **Quá nhiều thao tác tay trong 1 clip:** cầm dao + đè gân + cắt + đặt dao xuống + nhấc gân lên khoe = 5 lần đổi trạng thái tay. Mỗi lần đặt/nhấc là một cơ hội để đạo cụ đổi tay hoặc biến mất.
+      3. **"Đặt đạo cụ xuống rồi cầm thứ khác"** khiến model mất dấu vật đang nằm trên bàn và vẽ lại nó ở chỗ khác.
+    - **Quy tắc giải pháp:**
+      1. **Một tay — một đạo cụ — suốt clip:** đạo cụ chính (dao, búa, xương) ở **một tay duy nhất từ giây 0 đến giây cuối**, không bao giờ đặt xuống, không chuyền tay: `"the flake stays in her right hand from the first frame to the last; it never leaves that hand, never changes hands, and is never put down"`.
+      2. **Ghi kèm vị trí trong khung khi nhân vật đối diện máy:** `"her right hand, on the left side of the frame"` / `"her left hand, on the right side of the frame"`.
+      3. **Tối đa 2 trạng thái tay mỗi clip** (vd: chuẩn bị → cắt). Phần "khoe kết quả" làm bằng chính tay đang cầm sẵn (tay đè gân nhấc đầu gân đã cắt lên), không đặt dao để lấy vật khác.
+      4. **Đếm đạo cụ trong `negative_constraints`:** `"exactly one flake in the whole clip, always in her right hand; it never vanishes, never duplicates, never appears on the slab"`.
+
 **Nội dung**
 17. **[ĐÃ THAY bởi Rule 46 / bài học 60]** Vlogger mặc đồ hiện đại theo ảnh ref là chấp nhận được. Hiện tại: vlogger mặc trang phục thời kỳ ngay từ clip đầu qua `<Vlogger> Body` đã mặc outfit; đồ hiện đại chỉ khi user yêu cầu phong cách "lạc loài".
 18. User có thể yêu cầu **cảnh mở đầu FPV điện ảnh** (từ không gian lao xuống toàn cảnh thành phố, không có vlogger), là ngoại lệ của luật "mọi shot quay bằng điện thoại". Clip đó dùng ảnh ref toàn cảnh, giữ yên 2–3 giây cuối, và clip sau mở bằng vật lướt qua ống kính để che cú cắt.
