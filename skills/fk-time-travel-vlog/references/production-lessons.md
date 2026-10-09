@@ -591,6 +591,54 @@ Rút ra từ dự án `output/atlantis-9600bc/` (2026-09-27). Khi mâu thuẫn v
       2. **Nhúng thoại chia đều 3 mốc (0-3s, 3-6s, 6-8s):** Chia câu thoại 22–24 từ thành 3 cụm gắn trực tiếp vào từng mốc thời gian để AI dàn trải khẩu hình từ đầu tới cuối clip 8s.
       3. **Khóa trong SPEECH & LIP LOCK:** `"From second 0 through second 7.5s, Nora speaks continuously without dead air at the beginning; she starts speaking immediately from frame 0."`
 
+66. **CẤM TẢ BÀN TAY VLOGGER TRONG GÓC POV; CHUYỂN THAO TÁC TAY SANG OTS/FIXED & BẮT BUỘC ẢNH REF SAU GÁY VLOGGER (POV Hand Glitch, OTS Transition & Back/Nape Reference Lock — Bài học Neanderthal 51ka, User review 09/10/2026):**
+    - **Hiện tượng & Root Cause:**
+      1. **Lỗi tay lơ lửng & biến dạng trong POV (POV Hand Glitch):** Khi đặt góc POV (Point of View) mà prompt lại mô tả bàn tay của Vlogger thò vào khung hình (`Nora's hands reach in...`, `holding meat`, `pressing palm against stone`, `holding herbal root`), AI Diffusion (Veo 3 / Omni Flash R2V) chỉ nhận ảnh mặt trước (`<Vlogger>`) và ảnh body không đầu (`<Vlogger> Body`), hoàn toàn không có dữ liệu hình ảnh về bàn tay của Vlogger. Hậu quả: AI tự "bịa" ra bàn tay lơ lửng không gắn liền cơ thể, dẫn đến bàn tay bị biến dạng 6 ngón, sai màu da, hoặc biến thành bàn tay lông lá, thô ráp của đàn ông Neanderthal / thổ dân.
+      2. **Lỗi tụt tóc & mất nhận diện khi quay sau lưng / qua vai (OTS Nape/Hair Drift):** Khi camera quay góc OTS (Over-The-Shoulder / nhìn qua vai từ sau tới), AI nhìn vào sau gáy và tóc của Vlogger. Do ảnh `<Vlogger> Body` bị crop ngang vai (không có đầu/tóc/gáy) và `<Vlogger>` chỉ chụp mặt trước, AI không có ảnh tham chiếu góc nhìn sau gáy. Hậu quả: AI tự ý vẽ kiểu tóc sau gáy, gây bung tóc xõa, mất đuôi ngựa cột cao đặc trưng, hoặc dáng gáy biến dạng.
+      3. **Mất cân đối tỷ lệ góc máy Vlog (Vlog Camera Imbalance):** Tỷ lệ POV quá cao (50%) trong khi Selfie quá thấp (1.4% = 1 cảnh) làm mất hoàn toàn tính chất kết nối cảm xúc của Travel Vlog. Khán giả cần thấy biểu cảm khuôn mặt, sự hoảng loạn, kinh ngạc và nụ cười của Vlogger để giữ chân (Retention).
+    - **Quy tắc giải pháp:**
+      1. **POV Thuần túy (Pure POV Lock — CẤM 100% tả tay Vlogger):**
+         - Trong các shot POV, **TUYỆT ĐỐI CẤM 100%** mô tả bàn tay, cánh tay hay ngón tay của Vlogger xuất hiện trong khung hình (`strictly NO hands of the vlogger enter the frame`).
+         - Góc nhìn POV 100% hướng ra ngoài cảnh vật, đường đi, thiên nhiên, hoặc **đối phương thao tác** (Thủ Lĩnh cạo đá, Người Phụ Nữ bản địa đào rễ cây).
+      2. **Chuyển toàn bộ cảnh thao tác tay của Vlogger sang OTS hoặc FIXED:**
+         - Bất kỳ cảnh nào Vlogger cần thao tác tay (cầm đuốc, mài bột đất son, cầm thịt nướng, đặt tay lên vách in tranh, nhặt đồ vật): BẮT BUỘC chuyển từ POV sang **OTS (Over-The-Shoulder / Nhìn qua vai từ sau tới)** hoặc **FIXED (Kê máy tĩnh)**.
+         - Khi nhìn từ sau vai hoặc kê máy tĩnh, cả cánh tay và bàn tay của Vlogger được neo vững chắc vào cơ thể và trang phục từ ảnh Body Reference, khử sạch hoàn toàn lỗi tay lơ lửng.
+      3. **Bắt buộc tạo Ảnh Reference Sau Gáy / Sau Đầu của Vlogger (`<Vlogger> Back`):**
+         - Mọi dự án có góc quay OTS / Follow Shot sau lưng BẮT BUỘC phải có ảnh reference chuyên biệt cho góc nhìn sau gáy (`<Vlogger> Back` hoặc Turnaround Sheet có góc sau đầu rõ nét).
+         - Ảnh thể hiện rõ: Mái tóc đuôi ngựa cột cao đặc trưng (`high ponytail`), những lọn tóc mai buông nhẹ hai bên, bờ gáy thon gọn, cổ áo và bờ vai áo da nhìn từ sau lưng để gán vào Slot tham chiếu của các cảnh OTS.
+      4. **Tái cân bằng Tỷ lệ Góc máy Vàng (Golden Camera Ratio) cho POV Travel Vlog:**
+         - Phân bổ chuẩn kịch bản: **POV ~35%** (hành động, rình rập, cảnh vật), **OTS ~35%** (đồng hành, thao tác tay qua vai), **FIXED ~15%** (chế tác 2 tay, nhịp nghỉ quanh đống lửa), **SELFIE ~15%** (khoảng 8–10 cảnh then chốt: hook mở đầu, chia sẻ cảm xúc, thì thầm hoảng loạn, kết nối người xem).
+
+67. **QUY TẮC ĐỒNG NHẤT ĐIỂM NHÌN POV VLOG — CẤM GÓC POV TỰ THÂN KHI QUAY NGƯỜI KHÁC; CHUYỂN TOÀN BỘ THAO TÁC CỦA ĐỐI PHƯƠNG SANG OTS HOẶC OBSERVER CLOSE-UP (Observer POV vs Self-POV Identity Conflict — Bài học Scene 28 & 32 Neanderthal 51ka, User review 09/10/2026):**
+    - **Hiện tượng & Root Cause (Nghịch lý đồng nhất điểm nhìn):**
+      1. Trong Travel Vlog, điểm nhìn camera là **đôi mắt của Vlogger (Nora)**.
+      2. Khi đặt góc quay *"First-person POV nhìn xuống mặt đất/tấm da"* mà có 2 cánh tay thò từ dưới camera lên làm việc (như ghè đá, phết keo):
+         - Tâm lý khán giả mặc định 100%: **Đó là 2 cánh tay của người đang cầm máy quay (Vlogger Nora)**!
+         - Nhưng thực tế trong hình, 2 cánh tay đó lại là tay đàn ông vạm vỡ, lông lá, sạm khói bếp của thổ dân Neanderthal, trong khi giọng thuyết minh của Nora lại nói ở ngôi thứ ba: *"One sharp glancing blow from HIS hammerstone..." (Một nhát gõ từ hòn búa của ÔNG ẤY...)*.
+         - **Hậu quả**: Khán giả bị rối loạn nhân dạng nghiêm trọng — không biết Vlogger là ai, tại sao người đàn ông lại có camera mọc trên ngực trong khi giọng nói là con gái bên ngoài.
+    - **Quy tắc giải pháp:**
+      1. **CẤM TUYỆT ĐỐI góc POV "nhìn xuống tay mình" khi chủ thể hành động là người khác:** Không bao giờ để camera đặt ở góc nhìn thứ nhất của nhân vật phụ nhìn xuống chính tay họ.
+      2. **Chuyển toàn bộ cảnh đối phương thao tác sang OTS (Over-The-Shoulder qua bờ vai Vlogger):**
+         - Đặt camera sau vai/gáy Vlogger (thấy vai áo và tóc đuôi ngựa của Vlogger ở góc khung hình), nhìn thẳng sang đối phương đang ngồi đối diện thao tác (Thủ Lĩnh ghè đá, thợ săn bôi keo).
+         - Khán giả thấy rõ ràng: **Vlogger đang đứng cạnh quan sát và quay lại cảnh đối phương làm việc**.
+      3. **Hoặc dùng Observer Close-Up (Góc quay cận cảnh người quan sát):**
+         - Camera hướng từ đối diện/chếch bên hông nhìn vào cả khuôn mặt, thân trên và đôi tay đang thao tác của nhân vật phụ, không có bất kỳ cánh tay nào mọc ra từ mép dưới camera.
+
+68. **BẢO TOÀN ĐẠO CỤ VẬT LÝ, CẤM THAO TÁC BUÔNG/ĐẶT ĐỒ XUỐNG ĐẤT & CẤM XOAY NGƯỜI 180° KHI VÁC ĐỒ NẶNG (Prop Continuity, Anti-Vanishing, No Drop-Off & Steady Posture Lock — Bài học Scene 33, 36, 37 Neanderthal 51ka, User review 09/10/2026):**
+    - **Hiện tượng & Root Cause:**
+      1. **Lỗi biến mất đạo cụ khi quay người 180° (Vanishing Prop on Turning - Bài học Cảnh 33):** Khi nhân vật đang vác một thân cây thông lớn trên vai bước đi, nếu prompt yêu cầu nhân vật quay người lại đối diện camera, không gian tiềm ẩn (latent space) của diffusion model không thể xử lý vật thể dài bị che khuất và xoay chiều trong không gian 3D, dẫn đến AI "giải quyết" bằng cách xóa sổ luôn thân cây, làm hai tay nhân vật bỗng chốc trống không kỳ quái.
+      2. **Lỗi biến hình mọc thêm đạo cụ / cành lá (Prop Spawning / Morphing - Bài học Cảnh 36):** Nhân vật khiêng một thân gỗ tròn nhẵn, nhưng prompt lại mô tả thêm *"chèn cành thông dày và phiến đá"*, khiến AI bị nhiễu loạn token và "mọc thêm" các cành lá thông um tùm hoặc biến khúc gỗ thành bụi cây rậm rạp giữa chừng.
+      3. **Lỗi đặt đồ vật xuống đất bị bốc hơi biến mất (Disappearing Object on Release - Bài học Cảnh 37):** Khi mô tả nhân vật ôm bó củi rồi *"đặt bó củi xuống đất cạnh bếp lửa"*, AI video diffusion model **hoàn toàn không có engine vật lý va chạm và chuyển giao vật thể**. Ngay khi hai bàn tay buông ra, các điểm ảnh của bó củi bị hòa tan (dissolve) vào mặt sàn đá và biến mất không dấu vết.
+    - **Quy tắc giải pháp:**
+      1. **Giữ hướng chuyển động đồng nhất khi mang vác (Steady Forward Progression):**
+         - Khi nhân vật vác thân cây/khúc gỗ/vũ khí lớn, **CẤM TUYỆT ĐỐI** yêu cầu nhân vật xoay người 180° hay đổi hướng đột ngột.
+         - Cả hai nhân vật cùng giữ vững hướng bước đi về phía trước (tiến về cửa hang) từ giây 0 đến giây 8, giữ nguyên thân gỗ vững chắc trên vai suốt toàn bộ clip (`steady forward walking, the heavy pine log remains firmly anchored on his shoulder from frame 0 through frame 8; NO turning around, NO dropping or vanishing of the log`).
+      2. **Bảo toàn một trạng thái đạo cụ duy nhất từ Frame 0 (Single Static Prop Identity):**
+         - Nếu là thân gỗ tròn (`timber log`), chỉ mô tả DUY NHẤT một thân gỗ tròn thô ráp được hai người hạ thẳng xuống đất chèn ngang ngưỡng cửa. Tuyệt đối không mô tả thêm cành nhánh, tán lá thông rậm rạp làm AI biến hình đạo cụ (`strictly ONE single heavy pine timber log without branches or foliage; NO foliage spawning, NO morphing`).
+      3. **Đạo cụ nằm sẵn cố định trên mặt đất từ Frame 0 — CẤM tả động tác đặt xuống đất:**
+         - Đối với các cảnh tập kết đồ vật (như đống củi, khay đá, rổ thức ăn): Đạo cụ **PHẢI NẰM CỐ ĐỊNH TRÊN MẶT ĐẤT CẠNH BẾP TỪ FRAME 0** (`from frame 0, a neat stack of dry split pine firewood already rests on the limestone floor beside the hearth`).
+         - Nhân vật ngồi cạnh chỉ cần thao tác hơ tay sưởi ấm hoặc cầm 1 que củi cho vào bếp; **TUYỆT ĐỐI KHÔNG** mô tả động tác ôm cả bó đồ rồi đặt buông xuống đất để tránh lỗi tan biến điểm ảnh.
+
 **Nội dung**
 17. **[ĐÃ THAY bởi Rule 46 / bài học 60]** Vlogger mặc đồ hiện đại theo ảnh ref là chấp nhận được. Hiện tại: vlogger mặc trang phục thời kỳ ngay từ clip đầu qua `<Vlogger> Body` đã mặc outfit; đồ hiện đại chỉ khi user yêu cầu phong cách "lạc loài".
 18. User có thể yêu cầu **cảnh mở đầu FPV điện ảnh** (từ không gian lao xuống toàn cảnh thành phố, không có vlogger), là ngoại lệ của luật "mọi shot quay bằng điện thoại". Clip đó dùng ảnh ref toàn cảnh, giữ yên 2–3 giây cuối, và clip sau mở bằng vật lướt qua ống kính để che cú cắt.

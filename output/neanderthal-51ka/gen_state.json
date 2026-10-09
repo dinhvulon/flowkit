@@ -1,16 +1,25 @@
 {
   "project_id": "7012528f-470b-4369-ab97-805f2d660241",
   "video_id": "87f9cadd-b234-4297-b2e4-a026b0dc1880",
-  "phase": "all_completed",
-  "current": "21-25",
+  "phase": "generating_act3_scenes_28_37",
+  "current_act": "Act 3: Scenes 28-37",
   "details": {
-    "scenes": [
-      23,
-      21,
-      22,
-      24,
-      25
-    ]
+    "completed_scenes": [
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37
+    ],
+    "active_scenes": [],
+    "queued_scenes": []
   },
-  "updated": "2026-10-08T23:23:21"
+  "updated": "2026-10-09T14:54:57"
 }

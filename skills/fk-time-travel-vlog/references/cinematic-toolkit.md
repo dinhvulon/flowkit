@@ -1,6 +1,18 @@
-# Cinematic toolkit cho time-travel vlog
+# Cinematic Toolkit & 5 Subagents Cho Time-Travel Vlog
 
-Đọc ở các bước ghi trong từng mục. File này gom phần dùng được của 5 skill upstream — `/fk-action-choreography`, `/fk-scriptwriter`, `/fk-character-bible`, `/fk-sound-design`, `/fk-cinematic-transitions` — đã chỉnh theo luật vlog. **Dùng bản trong file này**, không chép nguyên template từ skill gốc: các template gốc có dòng `Negative:`, góc máy người thứ ba (dolly, orbit 180°, telephoto), lời dẫn TTS và thoại 10–12 từ — đều trái luật vlog.
+Đọc ở các bước ghi trong từng mục. File này điều phối **bộ 5 Subagent Bắt Buộc** dùng để lấy output viết Kịch bản và Prompt — `/fk-action-choreography`, `/fk-add-material`, `/fk-cinematic-transitions`, `/fk-gen-narrator`, `/fk-camera-guide` — cùng các kỹ thuật điện ảnh đã chỉnh theo luật vlog.
+
+> **QUY TẮC BẮT BUỘC (LOCK CỨNG):** Khi xây dựng kịch bản, AI Agent **BẮT BUỘC** phải vận hành 5 subagent này để lấy output chuyên môn cấu thành kịch bản, tuyệt đối không tự bịa hoặc bỏ qua bất kỳ subagent nào!
+
+### Bảng Ánh Xạ 5 Subagent Viết Kịch Bản
+
+| Subagent | Chuyên Môn | Output Cung Cấp Cho Kịch Bản |
+|---|---|---|
+| **`/fk-action-choreography`** | Vũ đạo hành động & an toàn cơ học AI | 3 pha động học (`0-3s` / `3-6s` / `6-8s`), từ vựng né/săn an toàn |
+| **`/fk-add-material`** | Image Material & Visual Style | Style instruction, lighting, cấm token phone |
+| **`/fk-cinematic-transitions`** | Kỹ thuật nối cảnh & nhịp chuyển màn | Match-on-action, foreground wipe, swing pan, J-cut |
+| **`/fk-gen-narrator`** | Biên kịch thoại & khẩu hình vlog | Thoại 20–25 từ chia 3 mốc, sonic isolation, nói từ giây 0 |
+| **`/fk-camera-guide`** | Đạo diễn hình ảnh & quang học smartphone | 5 tầng prompt, tỷ lệ vàng POV/OTS/FIXED/SELFIE |
 
 Cách chuyển một template gốc sang vlog:
 
@@ -8,7 +20,7 @@ Cách chuyển một template gốc sang vlog:
 |---|---|
 | `Negative: ...` | Câu khẳng định trước dòng `Audio:` (`prompt-lock.md` khối 8) |
 | "The camera tracks / dollies / orbits / pushes in" | Góc nhìn của vlogger: selfie, POV hoặc máy dựng (`prompt-lock.md` khối 1) + rung tay theo bước chân (Bài học 25, 35) |
-| `narrator_text` lời dẫn | Thoại native của vlogger 18–22 từ trong `video_prompt` (Rule 49) |
+| `narrator_text` lời dẫn | Thoại native của vlogger 20–25 từ trong `video_prompt` (Lesson 62, 65) |
 | Nhân vật chính là chiến binh/tướng | Vlogger là người sống sót bị cuốn vào; người bản địa làm phần khó |
 | Kiếm, khiên, kỵ binh | Vũ khí và mối nguy đúng thời kỳ: giáo, đá, đuốc, thú lớn, bão |
 
