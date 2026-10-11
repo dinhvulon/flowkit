@@ -1,0 +1,90 @@
+{
+  "camera": {
+    "type": "over-the-shoulder handheld selfie",
+    "position": "the lens sits at the end of Nora's outstretched right arm at chest height, completely outside the visible frame and never seen; her right arm stays extended toward the lens for the whole clip; she never reaches toward, touches, covers, taps or points at the lens",
+    "framing": "Nora chest-up in the right third of the foreground, facing the lens; over her left shoulder in the left two thirds of the background, about fifteen meters behind her, the two close dawn redwood trunks with the tyrannosaur standing just behind the gap between them"
+  },
+  "setting": {
+    "location": "Hell Creek floodplain forest, Montana, Late Cretaceous, 66 million years ago, warm humid late morning",
+    "elements": [
+      "a humid riverside forest of broadleaf flowering trees and shrubs mixed with tall straight dawn redwood trunks; hazy sunlight slants in from the upper left; low ferns and leafy shrubs line a soft wet mud path with puddles; no grass anywhere; warm and humid, no snow, no frost",
+      "from frame 0 the two massive dawn redwood trunks stand about fifteen meters behind Nora with the muddy path passing between them; the gap is far narrower than the tyrannosaur's body",
+      "exactly one tyrannosaur stands just behind the gap from frame 0, too wide to pass through; it stays there for the whole clip, never appears suddenly and never vanishes",
+      "the tyrannosaur is the only animal in the frame; no birds in the frame, no other people"
+    ]
+  },
+  "characters": [
+    {
+      "name": "Nora",
+      "visual_lock": "matches Nora face and Nora Body reference images exactly; honey-blonde hair tied in a high ponytail at the crown of her head, wispy curtain bangs parted in the middle, a few loose strands stuck to her damp forehead",
+      "outfit": "wears the exact historical outfit shown in the Nora Body reference sheet: golden-tan deer suede tunic with long sleeves that reach all the way to her wrists (never sleeveless), wide dark belt, golden-tan suede leggings the same color as the tunic that cover her legs completely from hips to boots, and criss-cross laced knee boots; no bare skin on her thighs, knees or shins at any moment (NO shearling collar, NO extra fur, NO hood, NO fringe, NO tassels, NO outfit variations)",
+      "action": "stands on the path facing the lens, chest heaving, flushed and laughing; for the whole clip her free left hand stays pressed flat on her chest over her racing heart and never lifts to gesture, even while she talks; she glances over her left shoulder at the tyrannosaur and back to the lens while keeping her face three-quarters toward the lens, so her mouth stays visible"
+    },
+    {
+      "name": "Tyrannosaur",
+      "visual_lock": "matches the Tyrannosaurus reference image exactly: massive boxy skull, tiny two-fingered forearms, dark grey-brown pebbly hide with faint darker stripes and a paler belly, long tail held straight out level",
+      "position": "stands just behind the gap between the trunks, its head and shoulders framed by them; it is huge: its head is level with the lowest branches, far above Nora's head, and its hips are higher than her head; it never touches the trunks; alive for the whole clip: chest heaving, nostrils flaring, it shifts its weight from foot to foot, takes one step to its left along the trunks and one step back to the right, and turns its head slowly over about one second; mouth closed with scaly lips covering the teeth"
+    }
+  ],
+  "timeline_action": {
+    "0-3s": "From frame 0 Nora faces the lens, out of breath, and the tyrannosaur stands just behind the gap in the background. From the very first frame Nora speaks immediately, and glances once over her left shoulder.",
+    "3-7s": "The tyrannosaur takes one heavy step to its left along the trunks, then one step back to the right, testing the gap without touching the trunks. Nora keeps talking to the lens, laughing between words.",
+    "7-10s": "The tyrannosaur stands still behind the gap and slowly turns its head away, chest heaving. Nora finishes her line by about 9 seconds with a big grin; the last half second is her catching her breath."
+  },
+  "motion_choreography": {
+    "frame0_state": "Selfie view: Nora chest-up in the right third facing the lens, left hand flat on her chest; behind her over her left shoulder the two trunks and the tyrannosaur standing just behind the gap.",
+    "0-3s": {
+      "Nora": "chest heaving, speaking from frame 0, one glance over her left shoulder and back; left hand flat on her chest",
+      "Tyrannosaur": "standing behind the gap, nostrils flaring, chest heaving"
+    },
+    "3-7s": {
+      "Nora": "talking and laughing to the lens; left hand still on her chest",
+      "Tyrannosaur": "one slow heavy step to its left along the trunks and one step back to the right, never touching them"
+    },
+    "7-10s": {
+      "Nora": "finishes her line by about 9 seconds, big grin, catching her breath; left hand still on her chest",
+      "Tyrannosaur": "stands still behind the gap, head turning away slowly over about one second"
+    },
+    "end_state": "Nora grinning at the lens, left hand on her chest; the tyrannosaur standing behind the gap with its head turned away."
+  },
+  "speech": {
+    "speaker": "Nora",
+    "voice_profile": "Laomedeia, breathless and panicked, rising into a cracking shout in danger, then a relieved laugh",
+    "segments": {
+      "0-3s": "Look behind me, it's stuck between the trees!",
+      "3-7s": "It's too big to squeeze through, and it is so angry.",
+      "7-10s": "Best ride of my life, honestly!"
+    },
+    "delivery": {
+      "0-3s": "Nora says (breathless, laughing, from frame 0)",
+      "3-7s": "Nora says (amazed, catching her breath)",
+      "7-10s": "Nora says (grinning, still panting)"
+    },
+    "dialogue": "Look behind me, it's stuck between the trees! It's too big to squeeze through, and it is so angry. Best ride of my life, honestly!"
+  },
+  "audio": {
+    "ambience": "forest insects and breeze, low under her voice",
+    "sfx": "a low rumbling growl and one heavy footfall from the tyrannosaur, only in the short pauses between her lines, never over her voice"
+  },
+  "physical_realism": {
+    "force_and_traction": "the tyrannosaur's feet sink into the mud and its step leaves deep prints; Nora's boots are planted on the muddy path",
+    "secondary_motion": "Nora's ponytail sways a beat behind each head turn and settles; loose strands stick to her damp forehead; the tyrannosaur's tail sways slightly and settles a beat after it stops",
+    "environment": "hazy sunbeams between the trees, fern fronds stirring in the breeze",
+    "camera_response": "subtle handheld micro-tremor and breathing sway from her heaving chest; framing stays over her shoulder",
+    "documentary_texture": "matte, dry, weathered scaly hides caked with real mud, real contact shadows under the animals, natural available light only, slight motion blur on fast legs; looks like real handheld wildlife footage of living animals, not CGI, not a game, not toys, not animatronics"
+  },
+  "negative_constraints": [
+    "the camera lens itself and her gripping right hand are completely outside the visible frame and never seen",
+    "her free left hand stays flat on her chest for the whole clip and never reaches toward, touches, covers or taps the lens",
+    "no third-person spectator switch, no 180-degree flip, pure single perspective throughout",
+    "the tyrannosaur never touches the trunks and never comes through the gap; it stays behind the trunks for the whole clip",
+    "exactly one dinosaur in the frame; the Triceratops is not in the frame; no other animals and no other people",
+    "the tyrannosaur never leaps and never has both feet off the ground; its teeth stay hidden behind its lips",
+    "no snow, no frost, no winter",
+    "no subtitles, no text on screen, no watermark",
+    "no morphing or vanishing animals, people or objects",
+    "no metal, no modern items anywhere in the frame",
+    "the tyrannosaur looks like a real heavy living animal, never like a plastic toy, rubber model or animatronic",
+    "no character stands frozen or statue-like at any moment"
+  ]
+}

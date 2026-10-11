@@ -1,0 +1,88 @@
+{
+  "camera": {
+    "type": "first-person pov, handheld",
+    "position": "the view is Nora's own eyes as she rides astride the juvenile Triceratops just behind its frill, facing forward in the direction it gallops; all recording gear is completely outside the visible frame",
+    "framing": "the back of the Triceratops's frill rim and the tips of its two brow horns fill the bottom of the frame; Nora's two hands, in long golden-tan suede sleeves, grip the frill rim at the bottom left and bottom right; the muddy path runs ahead through the centre"
+  },
+  "setting": {
+    "location": "Hell Creek floodplain forest, Montana, Late Cretaceous, 66 million years ago, warm humid late morning",
+    "elements": [
+      "a humid riverside forest of broadleaf flowering trees and shrubs mixed with tall straight dawn redwood trunks; hazy sunlight slants in from the upper left; low ferns and leafy shrubs line a soft wet mud path with puddles; no grass anywhere; warm and humid, no snow, no frost",
+      "two massive dawn redwood trunks stand close together on both sides of the path about twenty-five meters ahead from frame 0; the path itself passes between them, in the same plane as the running Triceratops; the gap is only just wider than the Triceratops; they stay in that spot for the whole clip",
+      "the only animal in the frame is the Triceratops Nora rides; no other animals, no birds in the frame, no people"
+    ]
+  },
+  "characters": [
+    {
+      "name": "Nora",
+      "visual_lock": "matches the Nora face and Nora Body reference images (her own hands and sleeves); her face is never shown because the view is her own eyes; only her two hands and sleeves are visible",
+      "outfit": "her sleeves are the long golden-tan suede tunic sleeves of the Nora Body reference, reaching all the way to her wrists",
+      "action": "rides astride the Triceratops; for the whole clip both hands grip the frill rim at the bottom left and bottom right of the frame, knuckles tight, and never let go, even while she talks; she speaks off-screen, breathless"
+    },
+    {
+      "name": "Juvenile Triceratops",
+      "visual_lock": "matches the Juvenile Triceratops reference image exactly: pony-sized, olive-brown pebbly hide with darker mottled bands, short brow horns curving backward, a short rounded frill edged with small triangular bumps",
+      "position": "carries Nora and gallops straight ahead along the path and through the gap between the two trunks; it never turns"
+    }
+  ],
+  "timeline_action": {
+    "0-3s": "From frame 0 the Triceratops is already galloping straight along the path and the two close trunks stand ahead in the centre of the frame, small in the distance. By 3 seconds they fill the middle third of the frame. Nora speaks from second 0, off-screen.",
+    "3-7s": "The trunks grow until they fill the frame on both sides. At about 5 seconds the Triceratops passes through the gap: the left trunk sweeps past the left edge of the frame and the right trunk past the right edge, close enough to see the bark texture blur; the frill rim passes between them without touching.",
+    "7-10s": "Beyond the trunks the path opens ahead and the Triceratops keeps galloping straight. Nora finishes her line by about 9 seconds; the last half second is only the bouncing gallop."
+  },
+  "motion_choreography": {
+    "frame0_state": "First-person view over the frill rim with both hands gripping it; the path runs ahead through the centre to the two close trunks about twenty-five meters away.",
+    "0-3s": {
+      "Nora": "both hands grip the frill rim; speaking off-screen",
+      "Juvenile Triceratops": "straight gallop toward the gap, mud flying"
+    },
+    "3-7s": {
+      "Nora": "both hands grip tighter; shouting",
+      "Juvenile Triceratops": "straight through the gap at about 5 seconds without touching the trunks"
+    },
+    "7-10s": {
+      "Nora": "both hands still gripping; finishes her line by about 9 seconds",
+      "Juvenile Triceratops": "keeps galloping straight along the open path"
+    },
+    "end_state": "The two trunks are behind them and out of the frame; the open path runs ahead; both hands still grip the frill rim."
+  },
+  "speech": {
+    "speaker": "Nora",
+    "voice_profile": "Laomedeia, breathless and panicked, rising into a cracking shout in danger, then a relieved laugh",
+    "segments": {
+      "0-3s": "There, between those two trees, go straight!",
+      "3-7s": "Squeeze through, squeeze through, keep your head down!",
+      "7-10s": "We made it through! It's way too big to follow!"
+    },
+    "delivery": {
+      "0-3s": "Nora shouts (urgent, pointing the way with her voice)",
+      "3-7s": "Nora shouts (tense, fast)",
+      "7-10s": "Nora shouts (breaking into a relieved laugh)"
+    },
+    "dialogue": "There, between those two trees, go straight! Squeeze through, squeeze through, keep your head down! We made it through! It's way too big to follow!"
+  },
+  "audio": {
+    "ambience": "rushing forest air, low under her voice",
+    "sfx": "the Triceratops's pounding footfalls and mud splashes, low under her voice; heavy distant footfalls far behind, low under her voice"
+  },
+  "physical_realism": {
+    "force_and_traction": "each Triceratops footfall slaps into the wet mud and throws clods forward and sideways; its shoulders drive up and down under the rider",
+    "secondary_motion": "the frill rim and brow horns bob with every stride a beat behind the shoulders; fern fronds whip past both edges of the frame and spring back",
+    "environment": "hazy sunbeams between the trees, flying mud droplets catching the light, puddles splashing; the bark of the two trunks rushes past both edges of the frame at about 5 seconds",
+    "camera_response": "a hard vertical bounce on every Triceratops stride and a slight side-to-side sway with its shoulders; the view never floats smoothly and never turns to look backward",
+    "documentary_texture": "matte, dry, weathered scaly hides caked with real mud, real contact shadows under the animals, natural available light only, slight motion blur on fast legs; looks like real handheld wildlife footage of living animals, not CGI, not a game, not toys, not animatronics"
+  },
+  "negative_constraints": [
+    "the view is first-person for the whole clip; it never switches to a third-person view and never turns to look backward",
+    "Nora's face and body never appear; only her two hands and sleeves are visible; the camera lens and viewpoint are completely outside the visible frame and never seen",
+    "both of Nora's hands stay on the frill rim for the whole clip and never let go",
+    "the view stays on the Triceratops's back until the last frame and her two hands stay visible on the frill rim until the last frame; the Triceratops never walks away from the view",
+    "no snow, no frost, no winter",
+    "no subtitles, no text on screen, no watermark",
+    "no morphing or vanishing animals, people or objects",
+    "no metal, no modern items anywhere in the frame",
+    "the animals look like real heavy living animals, never like plastic toys, rubber models or animatronics",
+    "no dinosaur other than the Triceratops Nora rides appears in the frame",
+    "the Triceratops never touches the trunks; the trunks stay rooted and do not move"
+  ]
+}

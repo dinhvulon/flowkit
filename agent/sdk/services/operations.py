@@ -375,10 +375,7 @@ class OperationService:
         if not pid:
             return {"error": "No project_id for r2v video generation"}
 
-        # Collect up to 3 reference images (API max).
-        # Priority order:
-        #   1. character entities — main character face consistency (locked identity)
-        # Collect up to 3 reference images (API max).  Priority order:
+        # Collect up to _R2V_MAX_REFS reference images (Omni Flash max = 7).  Priority order:
         #   1. end_scene_media_id — chain continuity target (end frame)
         #   2. visual_asset entities — primary objects (vehicles, props)
         #   3. character entities — main character consistency

@@ -47,7 +47,7 @@ Thay cả kiểu "người bản địa câm, môi khép" lẫn kiểu "Translat
 
 - Vlogger có đúng **2 ref**: `<Vlogger>` (mặt & tóc) và `<Vlogger> Body` (body đã mặc hoàn chỉnh trang phục). **Không tạo entity `<Vlogger> Outfit`.**
 - Ảnh `<Vlogger> Body` = `EDIT_CHARACTER_IMAGE` với `source_media_id` = Body trần gốc (EDIT 1 lần từ gốc, không chain): giữ 3 panel chính diện / 3/4 / sau lưng, khung cắt vai không lộ mặt, đúng dáng; chỉ thay quần áo. Không ma-nơ-canh, không crop. Xóa watermark (Rule 28) → upload lại → gán làm media_id của `<Vlogger> Body`.
-- Mọi video: `character_names` = `["<Vlogger>", "<Vlogger> Body", <tối đa 1 ref bối cảnh/đạo cụ>]` (tối đa 3 ref/clip, Bài học 4). Cảnh POV có tay vlogger cũng dùng đúng bộ này.
+- Mọi video: `character_names` = `["<Vlogger>", "<Vlogger> Body", <ref mọi sinh vật/bối cảnh/đạo cụ có trong khung>]` — tối đa 7 ref/clip (giới hạn Omni Flash, Bài học 88). Cảnh POV có tay vlogger cũng dùng đúng bộ này.
 - **Phụ kiện rời** (bao tay, mũ, khăn) mà cảnh sau có thao tác đeo/tháo: ảnh Body **không** đính kèm chúng (để tay trần); đưa vào bằng prompt hành động (Bài học 46, Rule 45).
 - **Cổng duyệt bắt buộc:** trước bất kỳ lệnh sinh video nào, xuất ảnh Body đã mặc trang phục (đã xóa logo) cho user xem và **chờ user duyệt dáng & trang phục**.
 - Khối `[ID-LOCK]` trong mọi `video_prompt`: *"her face and hair from the <Vlogger> face sheet, and her build and clothing from the <Vlogger> Body sheet (which shows her full body dressed in this handmade outfit)"*, kèm `BODY LOCK` & `OUTFIT LOCK` (Bài học 60, Bài học 63, `prompt-lock.md` khối 5).

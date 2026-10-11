@@ -254,7 +254,7 @@ Nếu bạn muốn đóng vai Vlogger chính trong chuyến du hành thay vì đ
 #### Quy tắc ref của R2V (kiểm chứng trong `agent/sdk/services/operations.py`)
 | Quy tắc | Hệ quả khi viết kịch bản |
 |---|---|
-| Mỗi scene dùng **tối đa 3 ref**: entity `character` trước, sau đó đến `visual_asset` | `character_names` của scene chỉ nên có 1–3 tên, nhân vật chính đứng đầu |
+| Mỗi scene dùng **tối đa 7 ref** (giới hạn Omni Flash): mặt + Body vlogger trước, rồi mọi sinh vật/bối cảnh có trong khung | `character_names` gồm đủ những thứ có trong khung, nhân vật chính đứng đầu |
 | Entity `location` **bị bỏ qua** (chỉ dùng khi scene không có ref nào khác) | Công trình hoặc bối cảnh cần giữ nhất quán thì khai báo là `visual_asset` |
 | Scene thiếu `duration` sẽ **mặc định 10s** (không báo lỗi); `POST /api/scenes` không nhận trường này | Tạo scene xong thì `PATCH` thêm `{"duration": 8}` |
 | Mỗi clip chỉ có **1 giọng**, lấy từ **từ đầu tiên** của `voice_description` của entity **đầu tiên (theo thứ tự trong DB, không phải thứ tự trong `character_names`)** có khai báo voice | Viết `voice_description` bắt đầu bằng tên voice, ví dụ `Laomedeia — soft, …`. **Chỉ nhân vật chính có `voice_description`**, nếu không giọng nhân vật phụ sẽ đè lên thoại của nhân vật chính |
@@ -289,7 +289,7 @@ Chỉ với một câu lệnh duy nhất, hệ thống tự động làm hết m
 
 **Các giai đoạn tự động chạy ngầm:**
 
-1. **Model R2V (`abra_r2v_<duration>s`)**: dùng thẳng ảnh ref (nhân vật + visual asset, tối đa 3) để sinh video, không cần ảnh tĩnh Start Frame.
+1. **Model R2V (`abra_r2v_<duration>s`)**: dùng thẳng ảnh ref (nhân vật + sinh vật + visual asset, tối đa 7) để sinh video, không cần ảnh tĩnh Start Frame.
 2. **Khẩu hình native**: Omni Flash tự sinh giọng và khẩu hình từ dòng `Mia says: …` trong `video_prompt`, với voice lấy từ `voice_description` (ví dụ Laomedeia).
 3. **Lồng tiếng TTS** *(chỉ khi có `--tts`)*: sinh narration riêng.
 4. **Review 720p thô trước**: Tải về `scenes/`, trích xuất frames chạy AI Vision Review và mở Review Board (`http://localhost:8200`) để User duyệt từng clip (chưa cần xóa logo để tiết kiệm thời gian).

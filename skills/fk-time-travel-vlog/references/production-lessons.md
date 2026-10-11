@@ -14,7 +14,7 @@ Rút ra từ dự án `output/atlantis-9600bc/` (2026-09-27). Khi mâu thuẫn v
 3. **Ảnh ref phải được user xem trước khi dùng.** Ghép bảng ảnh và đưa đường dẫn file để user tự xem.
 
 **Ảnh ref (R2V)**
-4. Mỗi clip **tối đa 3 ref**; worker chỉ lấy entity `character` và `visual_asset`. Công trình hay bối cảnh cần giữ nhất quán (thành phố, tường thành, đền) phải khai báo là `visual_asset`.
+4. **[ĐÃ THAY bởi Bài học 88]** ~~Mỗi clip tối đa 3 ref; worker chỉ lấy entity `character` và `visual_asset`.~~ Hiện tại: tối đa 7 ref (Omni Flash); khi scene có `character_names`, server chọn ref theo tên, mọi loại entity (kể cả `creature`); chỉ nhánh dự phòng (scene không ghi tên) mới lọc `character`/`visual_asset`. Công trình hay bối cảnh cần giữ nhất quán (thành phố, tường thành, đền) phải khai báo là `visual_asset`.
 5. **Clip nào có thành phố hay bối cảnh lớn thì phải kèm ảnh ref của chính bối cảnh đó** (ví dụ ảnh toàn cảnh thành phố). Chỉ tả bằng chữ thì model tự vẽ một thành phố khác.
 6. **Mọi ảnh ref đều sinh ngang 16:9** (góp ý của user, 2026-10-01), kể cả nhân vật (sheet các góc đặt cạnh nhau). FlowKit đã sinh 16:9 cho mọi loại entity. Entity `location` **không** được worker đưa vào R2V, nên mọi bối cảnh cần giữ nhất quán phải khai báo `visual_asset`. Worker lấy `visual_asset` trước `character`, nên tổng `character_names` của mỗi clip phải ≤3 và luôn có vlogger, nếu không vlogger bị loại khỏi ref.
 7. Ảnh ref không được có người, tay, đồ vật hay trang phục hiện đại lọt vào (găng tay, ủng, người mặc áo thun), không có kiến trúc lệch thời kỳ (mái vòm, tháp nhọn, lâu đài trung cổ), và không có dải màu trơn quanh ảnh.
@@ -411,7 +411,7 @@ Rút ra từ dự án `output/atlantis-9600bc/` (2026-09-27). Khi mâu thuẫn v
        - Khi tinh gọn ref còn đúng 3 ref cốt lõi `[<Vlogger>, <Vlogger> Outfit, Creature]` và có text anchor mạnh mẽ, model ánh xạ chính xác 100% bộ đầm từ ma-nơ-canh lên thân hình vlogger!
 
     #### 3. Quy tắc Vàng: Công thức Khóa Nhận diện Tóc & Outfit chuẩn 100%
-    1. **Bộ Reference tối ưu (Tối đa 3 Ref cho cảnh Vlogger):**
+    1. **Bộ Reference tối ưu (Tối đa 3 Ref cho cảnh Vlogger — [ĐÃ THAY bởi Bài học 88: tối đa 7 ref]):**
        - Khóa chuẩn: `[<Vlogger>, <Vlogger> Outfit, <Creature/Asset>]`.
        - **BẮT BUỘC LOẠI BỎ `<Vlogger> Body`** đối với mọi cảnh nhân vật mặc trang phục mùa đông/may đo dài tay kín đáo. Từ 05/10/2026 (bài học 60): **Body trần/gym** không bao giờ gửi vào video; trang phục nào cũng được mặc lên Body bằng EDIT và chính ảnh đã mặc đó là `<Vlogger> Body` gửi vào video.
        - **[ĐÃ THAY bởi bài học 60]** Entity `<Vlogger> Outfit` chỉ còn ở project Ice Age cũ. Project mới: ảnh 3 góc đã mặc outfit (EDIT từ Body, xóa watermark) gán thẳng làm `<Vlogger> Body`, không có entity Outfit.
@@ -444,7 +444,7 @@ Rút ra từ dự án `output/atlantis-9600bc/` (2026-09-27). Khi mâu thuẫn v
     - **Hiện tượng:** Scene 13 là POV của Nora, thoại viết `Nora's off-screen voice says`, gương mặt duy nhất trong khung là Alva → Alva mở miệng "nói" suốt clip bằng giọng Laomedeia. Vi phạm luật "chỉ vlogger nói".
     - **Root cause:** Omni Flash chỉ có 1 giọng (Slot 7) và luôn cố gắn khẩu hình vào **một cái miệng nhìn thấy được**. Khi miệng vlogger không có trong khung, nó gắn vào người bản địa duy nhất đang hiện mặt. Câu `Only Nora speaks` không đủ để khóa miệng người kia.
     - **Quy tắc:**
-      1. Beat có thoại + người bản địa hiện mặt → **dùng Selfie Qua Vai** (Rule 42, mục 2b): vlogger 1/3 tiền cảnh nói bằng chính miệng mình, người bản địa 2/3 hậu cảnh; thêm `Nora`, `Nora Body` vào `character_names` (giữ tối đa 3 ref theo Bài học 47 & Rule 46).
+      1. Beat có thoại + người bản địa hiện mặt → **dùng Selfie Qua Vai** (Rule 42, mục 2b): vlogger 1/3 tiền cảnh nói bằng chính miệng mình, người bản địa 2/3 hậu cảnh; thêm `Nora`, `Nora Body` vào `character_names` (tối đa 7 ref theo Bài học 88 & Rule 46).
       2. Clip người bản địa **không có thoại**: thêm câu khóa `"<Local>'s lips stay closed for the entire clip; she never speaks or mouths words, and communicates only by frowning, shaking her head and hand gestures. The only moving mouth in the frame is Nora's."` (Cập nhật 2026-10-05: người bản địa **được** nói ngôn ngữ không hiểu được ở sub-clip riêng, mục 2b; khi đó không dùng câu khóa này mà ghi rõ ai nói, lúc nào, giọng gì.)
       3. POV thoại ngoài khung chỉ an toàn khi trong khung **không có mặt người** (tay, đồ vật, phong cảnh) hoặc người bản địa quay lưng / ở rất xa.
     - **Rà soát:** sau khi gen, lọc mọi scene có `off-screen voice` + người bản địa trong `character_names` rồi kiểm tra miệng (Part 2: 13 lỗi rõ; 53, 31 nghi ngờ).
@@ -775,6 +775,15 @@ Rút ra từ dự án `output/atlantis-9600bc/` (2026-09-27). Khi mâu thuẫn v
     - **Hiện tượng:** prompt D sau khi cập nhật theo research ghi bạo chúa "heavy fast walk, never a run", nhưng còn sót "running along the same path", "keeps running", "runs from left to right" và "between the conifers" (bối cảnh đã đổi sang cây lá rộng). Đồng thời khung "does not move / never moves" nhưng `camera_response` lại "shakes slightly with each footfall". Bản có lỗi chữ "running" đã được gửi sinh; clip ra chạy tại chỗ (Bài học 85).
     - **Nguyên nhân:** sửa bằng cách thay đúng những câu đang nhớ, không đọc lại toàn bộ prompt; linter chỉ dò chuỗi cấm nên không bắt được hai câu nói ngược nhau; checklist B làm bằng tay và không có bước bắt buộc báo cáo, nên bị bỏ qua.
     - **Quy tắc:** mục D của `prompt-lock.md` (đọc lại toàn bộ sau mỗi lần sửa, gom câu theo thuộc tính, chạy hết checklist B, báo cáo tự đánh giá kèm prompt); linter có thêm `SPEED_CONTRADICTION` và `CAMERA_CONTRADICTION` (MEDIUM).
+
+87. **MÁY DỰNG CỐ ĐỊNH TRONG CẢNH RƯỢT ĐUỔI LÀ PHI LÝ VỚI VLOG CẦM TAY (user 11/10/2026):**
+    - **Hiện tượng:** cảnh D quay rượt đuổi bằng máy đặt cố định trên tảng đá nhìn ngang. User: "khung cố định bỏ đi nhé, nó không hợp lý, chất liệu phone vlog mà" — giữa lúc bị bạo chúa đuổi không ai đặt được máy, khung tĩnh làm mất cảm giác người thật đang tự quay.
+    - **Quy tắc:** cảnh hành động/nguy hiểm quay POV cầm tay; muốn thấy kẻ đuổi thì cho nó chạy chéo/song song ở cạnh khung POV, hoặc tách sang một clip selfie khi đã an toàn. Máy dựng chỉ khi vlogger tự đặt máy lúc yên ổn. Checklist B dòng 55 (sửa) và 60. Rule 51 (CLAUDE.md) hiểu theo luật này.
+
+88. **TỐI ĐA 7 REF (GIỚI HẠN OMNI FLASH), KHÔNG PHẢI 3 (user 11/10/2026):**
+    - **Bối cảnh:** cảnh rượt đuổi E1 cần Nora (mặt), Nora Body, Triceratops con và bạo chúa = 4 ref; luật cũ "tối đa 3 ref" (Bài học 4, 47) buộc phải bỏ ref mặt dù checklist dòng 20 bắt POV có tay phải gửi mặt + Body. User: "dùng tối đa 7 ref chứ, Omni Flash chứ".
+    - **Sự thật kỹ thuật:** Omni Flash nhận tối đa 7 ảnh ref (`OMNI_FLASH_MAX_REFERENCE_IMAGES = 7`, `agent/services/omni_flash.py`; server `_R2V_MAX_REFS = 7`). Khi scene có `character_names`, server lấy ref theo tên, mọi loại entity kể cả `creature`. Giới hạn 3 là luật kinh nghiệm từ test Ice Age thời còn ảnh ma-nơ-canh trang phục, không phải giới hạn API.
+    - **Quy tắc:** gửi ref cho mọi thứ cần giữ nhất quán có trong khung, tối đa 7: thấy bất kỳ phần nào của vlogger → mặt + Body; mỗi sinh vật → ref của nó; bối cảnh cần giữ → `visual_asset`. Không gửi ref của thứ không có trong khung. Từ 5 ref trở lên soi kỹ trang phục khi review; nếu trang phục trôi lặp lại thì ghi bài học mới. Checklist B dòng 15.
 
 **Nội dung**
 17. **[ĐÃ THAY bởi Rule 46 / bài học 60]** Vlogger mặc đồ hiện đại theo ảnh ref là chấp nhận được. Hiện tại: vlogger mặc trang phục thời kỳ ngay từ clip đầu qua `<Vlogger> Body` đã mặc outfit; đồ hiện đại chỉ khi user yêu cầu phong cách "lạc loài".
