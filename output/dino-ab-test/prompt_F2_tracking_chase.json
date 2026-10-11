@@ -1,0 +1,100 @@
+{
+  "camera": {
+    "type": "low tracking shot moving alongside the chase",
+    "position": "moving along the right-hand side of the muddy path (right-hand relative to the direction the animals travel) at about waist height, about six meters from the Triceratops, keeping pace with it; it carries a slight natural shake and sway, never smooth and floating",
+    "framing": "side-on to the chase, which moves toward the right of the frame: the juvenile Triceratops carrying Nora stays in the right half of the frame; the tyrannosaur follows far behind them, small in the left third of the frame, and stays there; the forest background and foreground plants stream past from right to left, showing the speed"
+  },
+  "setting": {
+    "location": "Hell Creek floodplain forest, Montana, Late Cretaceous, 66 million years ago, humid late morning",
+    "elements": [
+      "a dense, messy, irregular floodplain forest, never tidy or park-like: trees of many different ages and sizes, broadleaf trees and a few tall dawn redwoods, some trunks leaning, some broken and dead, fallen logs and rotting branches, hanging vines, moss and lichen on the bark, tangled leafy undergrowth and ferns of uneven height, leaf litter and puddles on uneven muddy ground; the trees are not evenly spaced",
+      "soft grey overcast daylight under the canopy, slightly underexposed in the shade, with brighter patches where the canopy opens; no sunbeams, no god rays, no visible light shafts",
+      "a shallow muddy stream about knee-deep on the Triceratops crosses the path; at frame 0 the Triceratops is just climbing out of the stream onto the exit bank (the bank on the way forward), and the tyrannosaur is about twenty-five meters behind, stepping into the stream from the far bank",
+      "exactly two dinosaurs and one person in the whole clip, all visible from frame 0: the Triceratops, Nora riding it, and the tyrannosaur; no other animals, no birds in the frame, no other people; nothing appears from nowhere and nothing vanishes"
+    ]
+  },
+  "characters": [
+    {
+      "name": "Nora",
+      "visual_lock": "matches Nora face and Nora Body reference images exactly; honey-blonde hair tied in a high ponytail at the crown of her head, wispy curtain bangs parted in the middle",
+      "outfit": "wears the exact historical outfit shown in the Nora Body reference sheet: golden-tan deer suede tunic with long sleeves that reach all the way to her wrists (never sleeveless), wide dark belt, golden-tan suede leggings the same color as the tunic that cover her legs completely from hips to boots, and criss-cross laced knee boots; no bare skin on her thighs, knees or shins at any moment (NO shearling collar, NO extra fur, NO hood, NO fringe, NO tassels, NO outfit variations)",
+      "action": "rides astride the Triceratops just behind its frill, leaning forward low; for the whole clip both hands grip the frill rim and never let go, even while she talks; her knees clamp its flanks and her boots hang along its ribs; she looks back over her right shoulder, toward the camera side, at the tyrannosaur while she speaks, so her face and mouth stay visible to the camera"
+    },
+    {
+      "name": "Juvenile Triceratops",
+      "visual_lock": "matches the Juvenile Triceratops reference image exactly: pony-sized, olive-brown pebbly hide with darker mottled bands, short brow horns curving backward, a short rounded frill edged with small triangular bumps",
+      "position": "gallops heavily to the right along the path with Nora on its back for the whole clip; it never turns and never stops; its back is about as high as Nora's waist when she stands"
+    },
+    {
+      "name": "Tyrannosaur",
+      "visual_lock": "matches the Tyrannosaurus reference image exactly: massive boxy skull, tiny two-fingered forearms, dark grey-brown pebbly hide with faint darker stripes and a paler belly, long tail held straight out level",
+      "position": "follows far behind them along the same path and stays far behind for the whole clip: its head never passes the Triceratops's tail and it never comes alongside; more than twice as tall as the Triceratops: its hips are higher than the top of the Triceratops's frill with Nora on top; it moves at a heavy fast walk, never a run, one foot always on the ground; it slows as it wades through the water; its mouth is closed with scaly lips over the teeth except during the roar"
+    }
+  ],
+  "timeline_action": {
+    "0-3s": "From frame 0 the Triceratops is already climbing out of the stream onto the exit bank, muddy water pouring off its legs and belly, and keeps galloping to the right; the tyrannosaur steps into the stream behind them, about twenty-five meters back, sending up a heavy splash with each footfall. Nora shouts from second 0.",
+    "3-7s": "The tyrannosaur wades through the stream still far behind them, small in the left third of the frame, water bursting up around its thighs. From about 3.5 to 5 seconds it lifts its head and opens its jaws wide in one long roar while Nora goes silent and presses herself low against the frill; its jaws close by 5 seconds. Then Nora looks back over her right shoulder and shouts again. The Triceratops keeps galloping to the right.",
+    "7-10s": "The tyrannosaur is still wading through the stream far behind them, water up to its thighs, small in the left third of the frame; it never comes closer. The Triceratops keeps galloping to the right, pulling further ahead. Nora finishes her line by about 9 seconds; the last half second is only the gallop."
+  },
+  "motion_choreography": {
+    "frame0_state": "Side-on tracking view: the Triceratops with Nora is on the exit bank of the stream in the right half of the frame, water pouring off its legs; the tyrannosaur is about twenty-five meters behind, small in the left third, stepping into the stream from the far bank.",
+    "0-3s": {
+      "Nora": "both hands grip the frill rim; leaning forward low; shouting",
+      "Juvenile Triceratops": "climbs out of the water and gallops right, legs pumping, water and mud flying",
+      "Tyrannosaur": "steps into the stream, heavy splashes rising to its knees"
+    },
+    "3-7s": {
+      "Nora": "silent and pressed flat during the roar; then looks back over her right shoulder and shouts, hands still on the rim",
+      "Juvenile Triceratops": "keeps galloping right",
+      "Tyrannosaur": "wades through far behind, small in the left third, water bursting around its thighs; one roar from 3.5 to 5 seconds, neck muscles straining"
+    },
+    "7-10s": {
+      "Nora": "still looking back at the tyrannosaur far behind, then forward; finishes her line by about 9 seconds",
+      "Juvenile Triceratops": "keeps galloping right, pulling ahead",
+      "Tyrannosaur": "still wading slowly through the stream far behind, water up to its thighs, small in the left third; it never comes closer and never turns around"
+    },
+    "end_state": "The Triceratops with Nora still galloping in the right half of the frame; the tyrannosaur still in the stream far behind, small in the left third; the two never touch."
+  },
+  "speech": {
+    "speaker": "Nora",
+    "voice_profile": "Laomedeia, breathless and panicked, rising into a cracking shout in danger, then a relieved laugh",
+    "segments": {
+      "0-3s": "Hold on, hold on, we're through the water, keep going!",
+      "3-7s": "It's coming after us, faster, faster!",
+      "7-10s": "Yes! It's still in the water, we're getting away!"
+    },
+    "delivery": {
+      "0-3s": "Nora shouts (breathless, urgent)",
+      "3-7s": "Nora stays silent during the roar, then shouts (panicked, high and cracking)",
+      "7-10s": "Nora shouts (breaking into a relieved laugh)"
+    },
+    "dialogue": "Hold on, hold on, we're through the water, keep going! It's coming after us, faster, faster! Yes! It's still in the water, we're getting away!"
+  },
+  "audio": {
+    "ambience": "forest and flowing stream water, low under her voice",
+    "sfx": "heavy splashing and pounding footfalls from both animals, low under her voice; one long deep tyrannosaur roar from 3.5 to 5 seconds while Nora is silent"
+  },
+  "physical_realism": {
+    "force_and_traction": "both animals are enormously heavy: water bursts up and sheets off their legs; every footfall sinks into the mud; the tyrannosaur wades slowly, pushing a brown bow wave with its thighs; the Triceratops's shoulders drive up and down under the rider",
+    "secondary_motion": "Nora's ponytail bounces a beat behind each stride; water drips from the animals' bellies; leaves and ferns whip aside and spring back; the tyrannosaur's tail sways slightly against each step",
+    "environment": "muddy water churning brown, droplets flying, wet leaves trembling as the animals pass",
+    "camera_response": "the tracking view shakes and sways slightly as it keeps pace; it never floats smoothly; foreground plants whip past the lens",
+    "documentary_texture": "real camera footage: slight motion blur on the fast-moving legs, focus that lags a fraction behind the moving animals, exposure that shifts as the camera passes from shade into brighter gaps, faint natural noise in the shadows, foreground ferns and branches whipping past very close to the lens and briefly blurring the frame edge; matte, wet, mud-caked scaly hides; looks like real footage of living animals, not CGI, not a video game, not a 3D render, not toys"
+  },
+  "negative_constraints": [
+    "no god rays, no volumetric light beams, no lens flare, no light orbs, no colored light spots anywhere in the frame",
+    "the forest is never tidy, evenly spaced or park-like",
+    "the camera lens and any recording gear are completely outside the visible frame and never seen",
+    "the tyrannosaur never touches the Triceratops or Nora, never comes alongside, and its head never passes the Triceratops's tail; it stays far behind for the whole clip",
+    "the tyrannosaur never turns around and never spins; it keeps facing the way it travels",
+    "the tyrannosaur never leaps, never falls over and never has both feet off the ground; its teeth show only while its jaws are open for the roar",
+    "Nora stays seated on the Triceratops for the whole clip and never falls; both her hands stay on the frill rim",
+    "exactly two dinosaurs and one person; no other animals and no other people",
+    "no snow, no frost, no winter",
+    "no subtitles, no text on screen, no watermark",
+    "no morphing or vanishing animals, people or objects",
+    "no metal, no modern items anywhere in the frame",
+    "the animals look like real heavy living animals, never like plastic toys, rubber models or animatronics",
+    "no character stands frozen or statue-like at any moment"
+  ]
+}

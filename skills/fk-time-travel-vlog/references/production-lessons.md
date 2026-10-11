@@ -785,6 +785,29 @@ Rút ra từ dự án `output/atlantis-9600bc/` (2026-09-27). Khi mâu thuẫn v
     - **Sự thật kỹ thuật:** Omni Flash nhận tối đa 7 ảnh ref (`OMNI_FLASH_MAX_REFERENCE_IMAGES = 7`, `agent/services/omni_flash.py`; server `_R2V_MAX_REFS = 7`). Khi scene có `character_names`, server lấy ref theo tên, mọi loại entity kể cả `creature`. Giới hạn 3 là luật kinh nghiệm từ test Ice Age thời còn ảnh ma-nơ-canh trang phục, không phải giới hạn API.
     - **Quy tắc:** gửi ref cho mọi thứ cần giữ nhất quán có trong khung, tối đa 7: thấy bất kỳ phần nào của vlogger → mặt + Body; mỗi sinh vật → ref của nó; bối cảnh cần giữ → `visual_asset`. Không gửi ref của thứ không có trong khung. Từ 5 ref trở lên soi kỹ trang phục khi review; nếu trang phục trôi lặp lại thì ghi bài học mới. Checklist B dòng 15.
 
+89. **TEST E1 (POV CƯỠI TRICERATOPS, BẠO CHÚA CHẠY SONG SONG, 4 REF) — POV GIỮ ĐƯỢC LƯNG THÚ, NHƯNG KHOẢNG CÁCH SỐ KHÔNG GIỮ ĐƯỢC VÀ CÓ ĐỐM LÓA (11/10/2026):**
+    - **Đạt:** khung ở trên lưng Triceratops và hai tay neo trên diềm cổ tới frame cuối (sửa được lỗi tách lưng của Bài học 83 nhờ câu khóa dòng 56); tay áo da lộn nâu vàng đúng, bàn tay đủ ngón; không hề lộ mặt Nora dù có ref mặt (4 ref); bạo chúa đúng ref, đi nặng, có mặt từ giây 0 ở mép trái, gầm khoảng 3.75–4.75s.
+    - **Lỗi 1:** prompt ghi "never comes closer than about ten meters" nhưng từ 5s bạo chúa áp sát còn ~3–4 m ở mép trái khung (không chạm). Con số khoảng cách bị bỏ qua.
+    - **Lỗi 2:** đốm lóa tròn màu hồng trôi qua khung ở 2.75–7s (khi trên thân cây, khi trên cổ bạo chúa) — lóa ống kính do câu "hazy sunlight slants in".
+    - **Nhẹ:** Triceratops chạy chậm hơn "phi" và khung nảy ít hơn mô tả.
+    - **Quy tắc:** dòng 61–62 checklist B.
+
+90. **RỪNG TRÔNG GIẢ VÌ TẢ QUÁ ĐẸP + POV QUÁ MƯỢT (user 11/10/2026: "video không chân thực, cây cối nhìn giả giả, prompt không cần POV, quay theo đường chạy"):**
+    - **Nguyên nhân:** prompt tả "tall straight dawn redwood trunks", "hazy sunlight slants in", "hazy sunbeams" → model vẽ rừng kiểu game: cây đều và cách đều, đường sạch, tia nắng có khối (dấu hiệu CGI), kéo theo đốm lóa. Không có chi tiết rừng thật (cây gãy, dây leo, rêu, lá rụng, bụi rối) và không có đặc tính máy quay thật (nhòe, nét trễ, sáng tối đổi, nhiễu, tiền cảnh lướt sát). POV E1 lại quá mượt.
+    - **Quy tắc:** dòng 63 checklist B. Cảnh rượt đuổi: theo lựa chọn của user, quay máy chạy bám theo đường chạy (ngoại lệ điện ảnh, dòng 60).
+
+91. **TEST F (MÁY BÁM THEO ĐƯỜNG CHẠY, RỪNG THẬT): RỪNG ĐÃ THẬT, NHƯNG BẠO CHÚA ĐUỔI KỊP RỒI XOAY NGOẮT 180° (11/10/2026):**
+    - **Đạt:** rừng lộn xộn, trời âm u, không tia nắng/lóa (dòng 63 có tác dụng rõ — hết vẻ game); máy bám ngang, nền trôi, thấy tốc độ (không còn chạy tại chỗ); nước suối bắn thật; trang phục Nora đủ 4 phần, hai tay giữ diềm, ngoái lại thấy mặt; gầm ~3.75–4.75s.
+    - **Lỗi:** từ ~6s bạo chúa đuổi kịp, chạy song song, đầu ngang tầm Nora; ~7.3–8.0s nó xoay ngoắt 180° trong < 0.5s, đuôi quét ngang qua lưng Triceratops (gần chạm, trái Rule 51); cú "trượt chân ở bờ bùn rồi tụt lại" không xảy ra.
+    - **Vận hành:** lần sinh trước đó bị Flow nhận rồi bỏ ngầm (không có media trong project sau 17 phút), lần gửi lại bị `UNUSUAL_ACTIVITY`; sau khi user xóa cookie, lần thứ ba xong trong 6.7 phút (chậm hơn bình thường ~2.7 phút). Khi một request chậm hơn ~2 lần bình thường, kiểm `GET /api/flow/debug-listing/<operation_id>?project_id=<pid>` thay vì chờ hết 15 phút.
+    - **Quy tắc:** dòng 64 checklist B.
+
+92. **TEST F2 (BẠO CHÚA GIỮ Ở XA): 9 GIÂY ĐẦU ĐẠT, GIÂY CUỐI MỌC CON BẠO CHÚA THỨ HAI; CƯỠI THÚ LÀM HỞ ĐÙI (11/10/2026):**
+    - **Đạt:** bạo chúa ở xa phía sau suốt 0–9s đúng dòng 64 (không đuổi kịp, không xoay người); rừng thật, lá tiền cảnh lướt sát ống kính ~6.75–7.75s tạo chiều sâu; gầm ~3.75–4.75s; Nora ngoái lại thấy mặt.
+    - **Lỗi 1 (nặng):** 9.25–10s một con bạo chúa thứ hai, to và nhòe, lao vào từ mép phải tiền cảnh, che cả Nora, trong khi con thứ nhất vẫn ở xa. Khi ref sinh vật bị giữ nhỏ cả clip, model "dùng" ref đó bằng một bản sao lớn ở cuối.
+    - **Lỗi 2:** lộ dải da đùi giữa vạt áo và cổ bốt khi Nora ngồi dạng chân cưỡi thú — câu khóa chân kín (dòng 38) không đủ cho tư thế cưỡi.
+    - **Quy tắc:** dòng 65 checklist B; dòng 38 thêm tư thế cưỡi: `even while riding astride with her knees apart, golden-tan suede leggings cover her thighs completely up to the tunic hem`.
+
 **Nội dung**
 17. **[ĐÃ THAY bởi Rule 46 / bài học 60]** Vlogger mặc đồ hiện đại theo ảnh ref là chấp nhận được. Hiện tại: vlogger mặc trang phục thời kỳ ngay từ clip đầu qua `<Vlogger> Body` đã mặc outfit; đồ hiện đại chỉ khi user yêu cầu phong cách "lạc loài".
 18. User có thể yêu cầu **cảnh mở đầu FPV điện ảnh** (từ không gian lao xuống toàn cảnh thành phố, không có vlogger), là ngoại lệ của luật "mọi shot quay bằng điện thoại". Clip đó dùng ảnh ref toàn cảnh, giữ yên 2–3 giây cuối, và clip sau mở bằng vật lướt qua ống kính để che cú cắt.

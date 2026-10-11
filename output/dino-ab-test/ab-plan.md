@@ -67,3 +67,40 @@ Cả hai dưới ngưỡng giữ 9. Một mẫu mỗi bản: chỉ là xu hướ
 | Khe cây để thoát | **Lỗi**: cây thành hậu cảnh, không có khe trên đường |
 | Bạo chúa khựng trước khe | **Lỗi**: tới sát sau lưng Nora, đầu ở trên cô 7–10s (không chạm) |
 | Điểm ước tính | ~7 (C ~6) |
+
+## Clip E1 — POV cưỡi Triceratops, bạo chúa song song, 4 ref (scene `b0c38a90-0daa-4e78-8de4-ae80e1edac1e`)
+
+| Tiêu chí | Kết quả |
+|---|---|
+| Khung giữ trên lưng thú, 2 tay neo tới frame cuối | Đạt |
+| Tay áo / bàn tay đúng, không lộ mặt Nora (có ref mặt) | Đạt |
+| Bạo chúa đúng ref, đi nặng, có mặt từ giây 0 ở mép trái | Đạt |
+| Gầm ~3.75–4.75s | Đạt (thấy miệng mở; tiếng cần user nghe) |
+| Giữ khoảng cách ≥ 10 m | **Lỗi**: áp sát ~3–4 m từ 5s (không chạm) |
+| Đốm lóa hồng 2.75–7s | **Lỗi** |
+| Triceratops phi, khung nảy mạnh | Nhẹ hơn mô tả |
+| Điểm ước tính | ~8.3 |
+
+## Clip F — máy bám theo đường chạy, rừng thật, 4 ref (scene `b84b8005-9325-47cb-906d-51521fa2bedb`)
+
+| Tiêu chí | Kết quả |
+|---|---|
+| Rừng thật (không tia nắng, lộn xộn) | Đạt — cải thiện rõ |
+| Máy bám ngang, thấy tốc độ | Đạt |
+| Nước suối, bùn | Đạt |
+| Nora: trang phục, tay giữ diềm, ngoái lại | Đạt |
+| Gầm lúc Nora im | Đạt (~3.75–4.75s) |
+| Bạo chúa luôn ở sau | **Lỗi**: đuổi kịp, song song từ ~6s |
+| Bạo chúa trượt chân rồi tụt lại | **Lỗi**: không xảy ra; xoay ngoắt 180° ~7.3–8.0s, đuôi quét qua lưng Triceratops |
+| Điểm ước tính | ~7.5 |
+
+## Clip F2 — bạo chúa giữ ở xa (scene `4ae816a1-53fd-49f4-b18e-150216961529`)
+
+| Tiêu chí | Kết quả |
+|---|---|
+| Bạo chúa ở xa, không đuổi kịp, không xoay người (0–9s) | Đạt |
+| Rừng thật, tiền cảnh lướt ống kính | Đạt |
+| Gầm lúc Nora im | Đạt (~3.75–4.75s) |
+| Chỉ 2 con khủng long | **Lỗi nặng**: con bạo chúa thứ hai lao vào tiền cảnh 9.25–10s |
+| Chân kín khi cưỡi | **Lỗi**: lộ dải da đùi trên cổ bốt |
+| Điểm ước tính | ~7.4 (0–9s riêng lẻ ~8.5+) |
