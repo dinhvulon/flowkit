@@ -192,6 +192,7 @@ This project has reusable skills in `skills/`. When the user says `/fk-<name>`, 
 | `/fk-refresh-urls` | Re-sign expired media URLs for all scenes in a video (images, videos, upscale videos) and character reference images. |
 | `/fk-remove-watermark` | fk-remove-watermark — Remove Watermark & Disrupt SynthID from Images and Videos |
 | `/fk-research` | fk-research — Fact-Check & Research Before Scripting |
+| `/fk-review-prompt` | Self-review a video_prompt before approval/generation: linter + whole-prompt contradiction table + checklist B + report. Auto-suggested by the PostToolUse hook `tools/hooks/prompt_review_hook.py` (configured in `.claude/settings.local.json`) |
 | `/fk-review-board` | Start the Scene Review Board web app for visual feedback on scene chains. |
 | `/fk-review-video` | Review AI-generated scene videos for quality using Claude Vision. |
 | `/fk-scriptwriter` | AI Screenplay Bible — narrator-led cinematic series scripts (not for POV vlogs) |

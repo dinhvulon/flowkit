@@ -771,6 +771,11 @@ Rút ra từ dự án `output/atlantis-9600bc/` (2026-09-27). Khi mâu thuẫn v
     - **Lỗi 2 — lối thoát mất:** "hai thân cây đứng gần nhau bên phải đường" bị vẽ thành cây hậu cảnh, không có khe trên đường chạy; bạo chúa đi thẳng tới sát sau lưng Nora (đầu lơ lửng phía trên cô ở 7–10s) thay vì khựng lại trước khe. Không chạm, nhưng sai logic thoát thân.
     - **Quy tắc:** dòng 58–59 checklist B (`prompt-lock.md`).
 
+86. **PROMPT TỰ MÂU THUẪN VÌ SỬA TỪNG CÂU, KHÔNG ĐỌC LẠI TOÀN BỘ (Self-Contradiction After Partial Edits — user hỏi 11/10/2026):**
+    - **Hiện tượng:** prompt D sau khi cập nhật theo research ghi bạo chúa "heavy fast walk, never a run", nhưng còn sót "running along the same path", "keeps running", "runs from left to right" và "between the conifers" (bối cảnh đã đổi sang cây lá rộng). Đồng thời khung "does not move / never moves" nhưng `camera_response` lại "shakes slightly with each footfall". Bản có lỗi chữ "running" đã được gửi sinh; clip ra chạy tại chỗ (Bài học 85).
+    - **Nguyên nhân:** sửa bằng cách thay đúng những câu đang nhớ, không đọc lại toàn bộ prompt; linter chỉ dò chuỗi cấm nên không bắt được hai câu nói ngược nhau; checklist B làm bằng tay và không có bước bắt buộc báo cáo, nên bị bỏ qua.
+    - **Quy tắc:** mục D của `prompt-lock.md` (đọc lại toàn bộ sau mỗi lần sửa, gom câu theo thuộc tính, chạy hết checklist B, báo cáo tự đánh giá kèm prompt); linter có thêm `SPEED_CONTRADICTION` và `CAMERA_CONTRADICTION` (MEDIUM).
+
 **Nội dung**
 17. **[ĐÃ THAY bởi Rule 46 / bài học 60]** Vlogger mặc đồ hiện đại theo ảnh ref là chấp nhận được. Hiện tại: vlogger mặc trang phục thời kỳ ngay từ clip đầu qua `<Vlogger> Body` đã mặc outfit; đồ hiện đại chỉ khi user yêu cầu phong cách "lạc loài".
 18. User có thể yêu cầu **cảnh mở đầu FPV điện ảnh** (từ không gian lao xuống toàn cảnh thành phố, không có vlogger), là ngoại lệ của luật "mọi shot quay bằng điện thoại". Clip đó dùng ảnh ref toàn cảnh, giữ yên 2–3 giây cuối, và clip sau mở bằng vật lướt qua ống kính để che cú cắt.

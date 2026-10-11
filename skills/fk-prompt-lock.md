@@ -280,6 +280,7 @@ python tools/lint_prompt.py --scene <scene_id>
 - `DIALOGUE_ACTING_PUNCT` (HIGH): `...` hoặc chữ VIẾT HOA trong câu thoại — chuyển ngữ điệu ra ngoặc tròn trước ngoặc kép (`Nora says (hushed, hesitant): "..."`). Bài học 81.
 - `FREEZE_PHRASE` (MEDIUM, cảnh báo): `subtle smile`, `looks at`, `reacts`… trong phần mô tả động tác (không tính lời thoại) — thay bằng bộ phận + chuyển động + mốc. `fk-time-travel-vlog/references/cinematic-toolkit.md` §8.
 - `SPEECH_SEGMENT_MISMATCH` (MEDIUM): mốc trong `speech.segments` không có mốc tương ứng trong `timeline_action`.
+- `SPEED_CONTRADICTION` / `CAMERA_CONTRADICTION` (MEDIUM): prompt tự mâu thuẫn sau khi sửa từng câu (thú "chỉ đi" mà còn `running`; khung cố định mà `camera_response` lại rung). Linter chỉ bắt được hai kiểu này — các mâu thuẫn khác phải tự đọc lại toàn bộ prompt (`fk-time-travel-vlog/references/prompt-lock.md` mục D, Bài học 86).
 
 ---
 

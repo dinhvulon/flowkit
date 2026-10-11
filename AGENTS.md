@@ -182,6 +182,7 @@ This project has reusable skills in `skills/`. When the user says `/fk-<name>`, 
 | `/fk-remove-watermark` | fk-remove-watermark — Remove Watermark & Disrupt SynthID from Images and Videos |
 | `/fk-research` | fk-research — Fact-Check & Research Before Scripting |
 | `/fk-review-board` | Start the Scene Review Board web app for visual feedback on scene chains. |
+| `/fk-review-prompt` | Use after writing or editing any FlowKit video_prompt (prompt*.json file, POST/PATCH /api/scenes with video_prompt) and before asking the user to approve generation — or when the prompt-review hook says so, or when the user asks to review a prompt. |
 | `/fk-review-video` | Review AI-generated scene videos for quality. |
 | `/fk-scriptwriter` | The Ultimate AI Screenplay Bible — Google Flow & Veo 3 |
 | `/fk-sound-design` | Sound Design & Audio Mastering — AI Cinematic Soundscapes |

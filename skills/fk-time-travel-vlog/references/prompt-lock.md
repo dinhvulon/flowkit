@@ -83,4 +83,14 @@
 | 58 | **BĂNG QUA KHUNG MÁY CỐ ĐỊNH = GHI VỊ TRÍ THEO GIÂY:** người/thú chạy ngang khung máy dựng phải có vị trí trên màn hình theo mốc (`at 0s its head is at the left third of the frame; by 3s at the centre; by 6s past the right third; by 8s it leaves the frame through the right edge`), nếu không model giữ chủ thể ở giữa khung và cho **chạy tại chỗ** (chân đạp mà thân không tiến) | Bài học 85 (test D) |
 | 59 | **VẬT CHẮN / LỐI THOÁT PHẢI NẰM TRÊN ĐƯỜNG CHẠY:** khe cây, khe đá để thoát ghi rõ là đường đi xuyên qua nó và nó nằm ở trung cảnh cùng mặt phẳng với chủ thể (`the path itself passes between the two trunks, in the same plane as the animals`); chỉ ghi "hai thân cây đứng gần nhau" thì model vẽ thành hậu cảnh, thú chạy đâm vào cây và kẻ đuổi không bị chặn | Bài học 85 (test D) |
 
+**D. Tự đánh giá bắt buộc — trước khi đưa prompt cho user duyệt hoặc gửi sinh (Bài học 86):**
+
+Chạy bằng `/fk-review-prompt`. Hook `tools/hooks/prompt_review_hook.py` tự nhắc sau mỗi lần ghi file `prompt*.json` hoặc POST/PATCH `/api/scenes` có `video_prompt`.
+
+1. `python tools/lint_prompt.py --file <prompt>`: 0 CRITICAL / 0 HIGH; mỗi MEDIUM phải sửa, hoặc ghi lý do giữ vào báo cáo.
+2. **Đọc lại toàn bộ prompt từ đầu tới cuối sau mỗi lần sửa**, không chỉ đoạn vừa sửa. Đổi một thuộc tính (tốc độ, hướng, vị trí, miệng, tay, khung cố định/rung, loại cây…) thì tìm mọi câu khác nói về thuộc tính đó (`camera`, `setting`, `characters`, `timeline_action`, `motion_choreography`, `physical_realism`, `negative_constraints`) và sửa cho khớp.
+3. Với từng nhân vật/thú và với khung hình, gom các câu về tốc độ, hướng, vị trí theo mốc, trạng thái miệng/tay, khung chuyển động hay đứng yên — tất cả phải nói cùng một điều.
+4. Chạy hết checklist B: dòng nào áp dụng thì ghi Đạt / Không đạt.
+5. Gửi kèm prompt một **báo cáo tự đánh giá** ngắn: kết quả linter, các dòng checklist áp dụng và kết quả, mâu thuẫn đã tìm thấy và đã sửa, rủi ro còn lại. Chưa có báo cáo này thì không hỏi user duyệt sinh.
+
 **C. Sau khi sinh — rà lỗi theo cùng checklist** khi review (`/fk-review-video` + user): trích ~16 frame/clip, đối chiếu từng dòng B; lỗi mới chưa có trong bảng → ghi bài học mới vào `production-lessons.md` **và** thêm 1 dòng vào bảng B.

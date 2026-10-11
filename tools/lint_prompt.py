@@ -207,6 +207,31 @@ def lint_json_prompt(data: dict) -> list[dict]:
     motion_text = extract_text_from_json(data, exclude_keys=("negative_constraints", "constraints", "speech"))
     issues.extend(lint_dialogue_and_motion(motion_text, quotes))
 
+    # 8b. Self-contradictions left behind by partial edits (Lesson 86)
+    full_text = extract_text_from_json(data, exclude_keys=("speech",)).lower()
+    if re.search(r"never a (?:run|sprint)|fast walk|one foot (?:is )?always on the ground", full_text):
+        runs = sorted(set(re.findall(r"\b(?:runs?|running|sprints?|sprinting)\b",
+                                     re.sub(r"never (?:a )?(?:run|sprint)\w*|\b(?:path|road|trail|track|river|stream|line) runs\b", " ", full_text))))
+        if runs:
+            issues.append({
+                "severity": "MEDIUM",
+                "type": "SPEED_CONTRADICTION",
+                "token": ", ".join(runs),
+                "message": f"The prompt says an animal only walks (never runs), but still uses {runs}. Re-read every sentence about that animal and use one speed word throughout (Lesson 86)."
+            })
+    cam = data.get("camera", {})
+    cam_text = " ".join(str(v) for v in cam.values()).lower() if isinstance(cam, dict) else str(cam).lower()
+    realism = data.get("physical_realism", {})
+    response = str(realism.get("camera_response", "")).lower() if isinstance(realism, dict) else ""
+    if (re.search(r"\b(?:static|fixed|locked)\b", cam_text) or re.search(r"never moves|does not move", full_text)) \
+            and re.search(r"\b(?:shakes?|shaking|bounces?|bouncing|sways?|jitter|tremor|wobbles?)\b", response):
+        issues.append({
+            "severity": "MEDIUM",
+            "type": "CAMERA_CONTRADICTION",
+            "token": response[:60],
+            "message": "The frame is fixed / never moves, yet camera_response says it shakes. Pick one: keep the frame locked and put the vibration in the scene (ferns, puddles), or allow 'a faint ground-vibration tremor' and drop 'never moves' (Lesson 86)."
+        })
+
     # 9. speech.segments must use the same time windows as timeline_action (Rule 54)
     if isinstance(segments, dict) and segments and isinstance(action_data, dict):
         missing = [k for k in segments if k not in action_data]
@@ -428,6 +453,15 @@ def run_json_prompt_tests():
     assert len(seg_issues) == 1 and seg_issues[0]["token"] == "3-7s", f"Expected 3-7s flagged, got: {seg_issues}"
     assert not any(i["type"] == "FREEZE_PHRASE" for i in lint_prompt(json.dumps(seg_json))), "'Look at' inside dialogue must not count as a freeze phrase"
     print("  [PASS] Test 7: Speech window mismatch caught; dialogue words ignored by freeze check.")
+
+    # Test 7b: contradictions left by partial edits
+    contra_json = json.loads(json.dumps(valid_json))
+    contra_json["camera"] = {"type": "static fixed viewpoint", "position": "on a boulder", "framing": "side-on"}
+    contra_json["physical_realism"] = {"camera_response": "the frame shakes slightly with each footfall"}
+    contra_json["characters"][1]["position"] = "a heavy fast walk, never a run, then keeps running toward the hearth"
+    contra_types = [iss["type"] for iss in lint_prompt(json.dumps(contra_json))]
+    assert "SPEED_CONTRADICTION" in contra_types and "CAMERA_CONTRADICTION" in contra_types, f"Expected both contradictions, got: {contra_types}"
+    print("  [PASS] Test 7b: Speed and camera contradictions caught.")
 
     # Test 8: Plain-text prompt dialogue with ellipsis
     plain_issues = lint_prompt('The lens is outside the visible frame; her empty left hand never touches anything. Nora says (hushed): "Wait... listen."')
