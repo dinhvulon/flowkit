@@ -725,6 +725,52 @@ Rút ra từ dự án `output/atlantis-9600bc/` (2026-09-27). Khi mâu thuẫn v
     - **Nguyên nhân:** khi hai tay cùng buông thõng hai bên, model có xu hướng làm hai tay đối xứng, nên sao chép đạo cụ sang tay trống.
     - **Quy tắc:** bàn tay trống phải được **neo vào một chỗ cố định suốt clip** (đặt trên đá, trên đùi, nắm vạt áo), ghi `never lets go, never drops to his side, never holds anything`. Tránh để hai tay cùng buông thõng hai bên ở cuối clip khi một tay đang cầm đồ.
 
+80. **ĐIỂM TỰA, FRAME 0 TRƯỚC HÀNH ĐỘNG, CHỪA NHỊP CUỐI, SỬA ĐÚNG KHỐI (Body Support & Pre-Action Frame — tiếp thu từ skill `yyl-video-prompt`, 11/10/2026):**
+    - **Nguồn:** bài học thực chiến của skill `yyl-video-prompt` (ttfake92-lab/skills, đo trên Seedance 2.5). Không phải lỗi từ clip của dự án; chỉ lấy những điểm không trái luật FlowKit. Không lấy luật "chỉ viết điều quan trọng nhất" (trái Rule 56) và cách viết "ai cầm điện thoại quay" (trái Rule 52).
+    - **Điểm tựa:** nhân vật ngả 45° mà không ghi vật đỡ → model cho người lơ lửng; ghi "lưng tựa vào tay vịn, tay vịn lún xuống" và câu khóa "suốt clip lưng tựa X" ở đầu prompt thì hết lỗi.
+    - **Frame 0:** muốn giây 2–3 bắt chéo chân mà frame 0 không tả hai chân khép → model vẽ sai tư thế; tả frame 0 là trạng thái **trước** hành động thì đúng.
+    - **Nhịp cuối:** model chạy gần đúng theo giây, sai số ~0.5s, nhịp cuối hay trễ → không đặt động tác chốt vào 0.5s cuối. Trên Omni Flash R2V chưa đo; khớp với kinh nghiệm thoại 23–25 từ phải xong trước ~9s ở clip 10s.
+    - **Sửa prompt:** nói rõ sai gì, đổi thành gì, phần còn lại giữ nguyên → mặt và bối cảnh không chạy.
+    - **Quy tắc:** dòng 42–45 checklist B (`prompt-lock.md`), `cinematic-toolkit.md` §9.
+
+81. **THOẠI SẠCH DẤU DIỄN XUẤT, MẶT TRONG KHUNG KHI NÓI, ÂM THANH ≤ 5, TỪ LÀM ĐƠ HÌNH (Dialogue & Anti-Freeze Grammar — tiếp thu từ skill `video-prompt` của mikefluff/skills, 11/10/2026):**
+    - **Nguồn:** skill `video-prompt` (mikefluff/skills), phần Veo 3.1 + `beat-structure.md` + `audio-prompting.md`. Không phải lỗi từ clip của dự án; chỉ lấy điểm không trái luật FlowKit.
+    - **Dấu câu trong ngoặc kép:** `...`, chữ VIẾT HOA, kéo dài chữ trong câu thoại bị model bỏ qua hoặc đọc thành khựng/im lặng. Ngữ điệu đặt trước ngoặc (`Nora says (hushed, excited): "..."`). Test khủng long B: câu `"Okay, don't move... a baby Triceratops"` có khoảng im 0.75s ngay sau mấy chữ đầu — khớp với lỗi này (1 mẫu, chưa chứng minh).
+    - **Mặt phải thấy khi nói:** khẩu hình chỉ khớp khi miệng trong khung. Test B: 0–1s Nora quay lưng về ống kính trong lúc đã bắt đầu nói.
+    - **Âm thanh:** quá 5 yếu tố (thoại + nền + SFX) hoặc SFX lớn đè lên câu thoại thì thoại bị chìm; model không tự giảm âm nền khi có thoại nên phải viết sẵn `low under her voice`.
+    - **Từ làm đơ hình:** `subtle smile`, `looks at`, `reacts`, `makes a gesture`… khiến model vẽ một tư thế rồi giữ nguyên. Thay bằng bộ phận + chuyển động + mốc; động tác đứng yên của NPC/thú viết dạng lặp `never fully stops`.
+    - **Không lấy (trái luật đã chốt):** "không đặt thoại ở beat đầu" (trái Rule 54 — nói từ giây 0); từ vựng camera dolly/orbit/crane (trái Rule 42, góc máy vlog); "camera ghi cuối prompt" và khung `Beat 1/2/3` (trái Rule 55 — JSON); "không tả lại trang phục khi có ref" ở mức tuyệt đối (Bài học 78: phải chốt đủ 4 phần trang phục, nếu không model tự chế đúng phần bị bỏ sót); `--execute` gọi thẳng Gemini API (bỏ qua Flow, nhịp 45–60s và Rule 29).
+    - **Quy tắc:** dòng 46–51 checklist B (`prompt-lock.md`), bảng cụm từ cấm ở `cinematic-toolkit.md` §8, `voice-bible.md` §2.
+
+82. **TEST A/B KHỦNG LONG — TAY NEO BỊ BỎ KHI NÓI, THÚ QUAY ĐẦU NGOẮT, SAI CỠ CON NON, QUẦN LỆCH MÀU (Bài học clip test Hell Creek 66 Ma, 11/10/2026):**
+    - **Bối cảnh:** 1 clip 10s, Nora quỳ sau khúc gỗ rêu, Triceratops con bước ra khỏi bụi dương xỉ và ăn lá. Bản A theo skill mới (dòng 42–45), bản B theo skill cũ. A ~8.5, B ~7.6 (`output/dino-ab-test/ab-plan.md`).
+    - **Tay neo bị bỏ (A):** prompt ghi cẳng tay trái tựa khúc gỗ "for the whole clip", nhưng Nora nói hăng nên khua tay suốt. → Câu neo tay phải có `even while she talks, she never lifts it to gesture`.
+    - **Thú quay đầu ngoắt (A, 8.1–8.3s):** đang cúi ăn, đầu quay từ chính diện sang nghiêng trong ~0.2s, nhòe chuyển động. → Mọi cú quay/ngẩng đầu của thú lớn ghi `slowly, over about one second, no sudden snap`.
+    - **Sai cỡ (A):** "juvenile, about as tall as a pony" vẫn ra con to như trưởng thành, sừng dài chĩa trước (B ra đúng con non hơn). → Ghi cỡ so với vật trong khung (`its back is no higher than the top of the mossy log`).
+    - **Quần lệch màu (A):** câu khóa có "tan suede leggings" nhưng ra quần nâu sẫm. → Ghi `golden-tan suede leggings, the same color as the tunic`.
+    - **Lặp lỗi Bài học 78 (B):** hở đùi + đầu gối dù câu khóa chân giống hệt A — nhắc rằng câu khóa giảm xác suất chứ không xóa lỗi; review vẫn phải cắt cận chân ở cảnh ngồi/quỳ.
+    - **Frame 0 (dòng 43) có dấu hiệu hiệu quả:** chỉ A giữ khủng long sau bụi ở giây 0 rồi bước ra; B đặt nó ngoài trống từ đầu.
+    - **Quy tắc:** dòng 38 (màu quần), 52–54 checklist B (`prompt-lock.md`).
+
+83. **POV NGOÁI SAU TRÊN LƯNG KHỦNG LONG BỊ ĐẢO CHIỀU, NGƯỜI CƯỠI BIẾN MẤT CUỐI CLIP (Bài học clip test rượt đuổi C — Hell Creek, 11/10/2026):**
+    - **Bối cảnh:** 1 clip 10s viết theo skill mới (dòng 42–54): POV Nora cưỡi Triceratops con, ngoái nhìn ra sau suốt clip, bạo chúa đuổi phía sau, Triceratops ngoặt phải chui qua khe hai thân cây, bạo chúa quá to nên khựng lại ở khe. Điểm ~6/10 (`output/dino-ab-test/ab-plan.md`).
+    - **Đảo chiều (cả clip):** model vẽ góc nhìn về phía trước qua diềm cổ Triceratops, nên bạo chúa ở phía trước và hai con lao vào nhau. Người cưỡi nhìn về trước là mặc định quá mạnh; câu `looking back over the hips` bị bỏ qua.
+    - **Tách khỏi lưng thú (8.1s):** đầu gối Nora biến mất, khung hình rời khỏi lưng Triceratops; Triceratops thành con riêng đi về phía bạo chúa và áp sát mặt nó ở 8.5–9s (gần chạm, trái Rule 51). Bạo chúa không dừng ở khe như prompt.
+    - **Phần đạt:** quần cùng màu áo, che kín gối (dòng 38 mới); tiếng gầm 3.75–4.75s đúng khung 3.5–5s lúc Nora im (dòng 49); thân cây trượt vào từ cạnh khung, không mọc ra; bạo chúa to hơn hẳn Triceratops (dòng 54).
+    - **Quy tắc:** dòng 55–56 checklist B (`prompt-lock.md`).
+
+84. **KHỦNG LONG TẢ BẰNG CHỮ RA ĐỒ CHƠI, SAI TUỔI, BIẾN HÌNH → BẮT BUỘC REF SHEET TỪ RESEARCH + MATERIAL (Creature Ref Lock — user lock 11/10/2026):**
+    - **Hiện tượng:** các clip test A, B, C tả khủng long chỉ bằng chữ. Kết quả: chuyển động "như đồ chơi", không có khối lượng, chất liệu da kém; Triceratops ở A ra con trưởng thành sừng dài, ở C biến thành con nhỏ khác cuối clip. User: "không có tính vật lý, chuyển động tệ như đồ chơi, chất liệu không tốt — phải có ảnh ref 2 con khủng long chi tiết, ảnh character đàng hoàng các chi tiết vóc dáng", và "cần chạy fk-research và fk material để nghiên cứu khủng long tạo ảnh ref lại".
+    - **Nguyên nhân:** không có ảnh ref thì model tự bịa hình dạng ở mỗi clip; prompt tả bằng chữ không đủ neo vóc dáng, da và cỡ. Thêm nữa server mặc định gắn "ONE single image only" vào prompt ảnh ref khi project có `story`, trái Rule 5.
+    - **Quy tắc:** (1) mọi sinh vật trong khung có entity `creature` + sheet 16:9 (toàn thân nghiêng ⅔ | 3/4 trước | cận đầu và da); (2) chạy `/fk-research` trước để lấy cỡ theo tuổi, sừng/diềm, tư thế chân, da, miệng, dáng đi và tốc độ thật (ví dụ bạo chúa chỉ đi nhanh ~18–27 km/h, luôn một chân chạm đất — `.omc/research/hell_creek_dinosaurs_research.md`); (3) `/fk-add-material` tạo material chống đồ chơi/CGI (đã có `prehistoric_wildlife`) và chép text material vào `image_prompt`; (4) xóa logo → upload lại → user duyệt; (5) dữ kiện dáng đi/tốc độ từ research cũng vào `video_prompt`. Checklist B dòng 57; CLAUDE.md Rule 5.
+
+85. **MÁY CỐ ĐỊNH NHÌN NGANG: THÚ CHẠY TẠI CHỖ, LỐI THOÁT BỊ VẼ THÀNH HẬU CẢNH (Bài học clip test D — Hell Creek, 11/10/2026):**
+    - **Bối cảnh:** clip D viết lại theo time-vlog + research + 2 ref sheet khủng long (Triceratops v1, bạo chúa v2) + `Nora Body`. Máy dựng cố định nhìn ngang; Triceratops chở Nora phi qua khe hai thân cây, bạo chúa đi nhanh đuổi theo rồi khựng lại trước khe. Điểm ~7/10.
+    - **Đạt nhờ ref + research:** da mờ, đóng bùn, không còn vẻ nhựa; bạo chúa đi nặng nề, bùn văng ở bước chân (~7.75s), gầm đúng 3.75–4.75s; Triceratops đúng con non sừng ngắn như ref; trang phục Nora khớp ảnh Body (quần da lộn cùng màu, bốt, tay áo dài), hai tay giữ diềm cổ, mặt thấy được.
+    - **Lỗi 1 — chạy tại chỗ:** Triceratops đạp chân suốt 10s nhưng thân gần như không tiến, cuối clip áp vào một thân cây. Model giữ chủ thể ở giữa khung khi prompt chỉ ghi "phi từ trái sang phải".
+    - **Lỗi 2 — lối thoát mất:** "hai thân cây đứng gần nhau bên phải đường" bị vẽ thành cây hậu cảnh, không có khe trên đường chạy; bạo chúa đi thẳng tới sát sau lưng Nora (đầu lơ lửng phía trên cô ở 7–10s) thay vì khựng lại trước khe. Không chạm, nhưng sai logic thoát thân.
+    - **Quy tắc:** dòng 58–59 checklist B (`prompt-lock.md`).
+
 **Nội dung**
 17. **[ĐÃ THAY bởi Rule 46 / bài học 60]** Vlogger mặc đồ hiện đại theo ảnh ref là chấp nhận được. Hiện tại: vlogger mặc trang phục thời kỳ ngay từ clip đầu qua `<Vlogger> Body` đã mặc outfit; đồ hiện đại chỉ khi user yêu cầu phong cách "lạc loài".
 18. User có thể yêu cầu **cảnh mở đầu FPV điện ảnh** (từ không gian lao xuống toàn cảnh thành phố, không có vlogger), là ngoại lệ của luật "mọi shot quay bằng điện thoại". Clip đó dùng ảnh ref toàn cảnh, giữ yên 2–3 giây cuối, và clip sau mở bằng vật lướt qua ống kính để che cú cắt.

@@ -20,6 +20,65 @@ FORBIDDEN_GHOST_DEVICE_PATTERNS = [
     (r"\b(?:180-degree|180\s*deg|whip\s+pan|pivoting\s+the\s+viewpoint)\b.*\b(?:turning\s+to\s+face|turning\s+around\s+to\s+face|settles?\s+.*selfie|back\s+toward\s+(?:nora|her|him|herself|himself))\b", "FORBIDDEN (Rule 42): 180° camera flip between 1st-person POV and selfie in a single shot breaks single-perspective vlog purity. Use 100% Selfie (over-the-shoulder) or 100% POV."),
 ]
 
+FREEZE_PHRASE_PATTERNS = [
+    r"\bsubtle (?:smile|movement|motion|gesture)s?\b",
+    r"\blooks? at\b",
+    r"\breacts?\b",
+    r"\bmakes? a gesture\b",
+    r"\boccasionally glances?\b",
+    r"\badds? life\b",
+    r"\bmoves? gracefully\b",
+]
+
+# A spoken line: `Nora says (hushed): "..."`, `Nora, hushed: "..."`, `Nora: "..."`.
+DIALOGUE_LINE_PATTERN = re.compile(
+    r'(?:\b(?:says|whispers|shouts|asks|exclaims|laughs|mutters|calls|yells|gasps)\b[^"\n]{0,80}'
+    r'|\b[A-Z]\w*(?:,[^":\n]{0,60})?):\s*"([^"]+)"'
+)
+ALLOWED_CAPS_WORDS = {"OK", "TV", "UV"}
+
+
+def lint_dialogue_and_motion(text: str, quotes: list[str]) -> list[dict]:
+    """Checks shared by JSON and plain prompts: acting punctuation inside spoken lines, freeze phrases (Lesson 81)."""
+    issues = []
+    for q in dict.fromkeys(q.strip() for q in quotes):  # dedupe: dialogue repeats its segments
+        if "..." in q or "…" in q:
+            issues.append({
+                "severity": "HIGH",
+                "type": "DIALOGUE_ACTING_PUNCT",
+                "token": q[:60],
+                "message": "Ellipsis inside a spoken line makes the model stall or go silent mid-line (Lesson 81). Put the delivery before the quote: 'Nora says (hushed, hesitant): \"...\"'."
+            })
+        caps = [w for w in re.findall(r"\b[A-Z]{2,}\b", q) if w not in ALLOWED_CAPS_WORDS]
+        if caps:
+            issues.append({
+                "severity": "HIGH",
+                "type": "DIALOGUE_ACTING_PUNCT",
+                "token": ", ".join(caps),
+                "message": "ALL-CAPS words inside a spoken line are read flat or garbled (Lesson 81). Write the word normally and put 'shouts' / 'urgent' in the delivery tag before the quote."
+            })
+        stretched = re.findall(r"\b\w*([a-zA-Z])\1{2,}\w*\b", q)
+        if stretched:
+            issues.append({
+                "severity": "MEDIUM",
+                "type": "DIALOGUE_ACTING_PUNCT",
+                "token": q[:60],
+                "message": "Stretched letters ('sooo') inside a spoken line render as literal stutter (Lesson 81). Use a delivery tag instead."
+            })
+    text_lower = re.sub(r'"[^"]*"', " ", text).lower()  # spoken words are not motion directions
+    for pat in FREEZE_PHRASE_PATTERNS:
+        m = re.search(pat, text_lower)
+        if m:
+            issues.append({
+                "severity": "MEDIUM",
+                "type": "FREEZE_PHRASE",
+                "token": m.group(0),
+                "position": m.start(),
+                "message": f"'{m.group(0)}' tends to render one held pose (Lesson 81). Name the body part, the motion and its timing instead (cinematic-toolkit.md §8)."
+            })
+    return issues
+
+
 def is_json_prompt(prompt: str) -> tuple[bool, dict | None]:
     """Check if prompt is a JSON string and parse it if valid."""
     s = prompt.strip()
@@ -137,6 +196,28 @@ def lint_json_prompt(data: dict) -> list[dict]:
                 "message": "FORBIDDEN (Lesson 46): Reaching hand toward camera/lens blocks the frame and causes camera materialization."
             })
 
+    # 8. Dialogue punctuation + freeze phrases (Lesson 81)
+    speech = data.get("speech", {})
+    segments = speech.get("segments", {}) if isinstance(speech, dict) else {}
+    quotes = DIALOGUE_LINE_PATTERN.findall(extracted_text)
+    if isinstance(speech, dict) and isinstance(speech.get("dialogue"), str):
+        quotes.append(speech["dialogue"])
+    if isinstance(segments, dict):
+        quotes.extend(v for v in segments.values() if isinstance(v, str))
+    motion_text = extract_text_from_json(data, exclude_keys=("negative_constraints", "constraints", "speech"))
+    issues.extend(lint_dialogue_and_motion(motion_text, quotes))
+
+    # 9. speech.segments must use the same time windows as timeline_action (Rule 54)
+    if isinstance(segments, dict) and segments and isinstance(action_data, dict):
+        missing = [k for k in segments if k not in action_data]
+        if missing:
+            issues.append({
+                "severity": "MEDIUM",
+                "type": "SPEECH_SEGMENT_MISMATCH",
+                "token": ", ".join(missing),
+                "message": f"speech.segments windows {missing} have no matching timeline_action window. Use the same keys (10s: 0-3s / 3-7s / 7-10s) so each line lands on its action."
+            })
+
     return issues
 
 
@@ -221,6 +302,9 @@ def lint_prompt(prompt: str) -> list[dict]:
                 "type": "INDIRECT_PROP_DESCRIPTION",
                 "message": "Prop/clothing interaction detected, but missing direct functional dressing verbs ('slips and slides directly onto', 'fits securely over', 'wearing'). Simply tying cords or handing props causes AI to omit actual dressing."
             })
+
+    # 6. Dialogue punctuation + freeze phrases (Lesson 81)
+    issues.extend(lint_dialogue_and_motion(prompt, DIALOGUE_LINE_PATTERN.findall(prompt)))
 
     return issues
 
@@ -322,6 +406,33 @@ def run_json_prompt_tests():
     schema_types = [iss["type"] for iss in issues_schema]
     assert "JSON_SCHEMA_MISSING_KEY" in schema_types, f"Expected JSON_SCHEMA_MISSING_KEY, got: {schema_types}"
     print("  [PASS] Test 4: Missing schema keys successfully caught.")
+
+    # Test 5: Ellipsis / ALL CAPS inside spoken lines
+    punct_json = json.loads(json.dumps(valid_json))
+    punct_json["speech"]["dialogue"] = "Okay, don't move... it's RIGHT there!"
+    punct_issues = [iss for iss in lint_prompt(json.dumps(punct_json)) if iss["type"] == "DIALOGUE_ACTING_PUNCT"]
+    assert len(punct_issues) == 2 and all(i["severity"] == "HIGH" for i in punct_issues), f"Expected 2 HIGH DIALOGUE_ACTING_PUNCT, got: {punct_issues}"
+    print("  [PASS] Test 5: Ellipsis and ALL-CAPS inside dialogue caught.")
+
+    # Test 6: Freeze phrase in timeline
+    freeze_json = json.loads(json.dumps(valid_json))
+    freeze_json["timeline_action"]["0-3s"] = "Nora gives a subtle smile while the Chief works."
+    freeze_types = [iss["type"] for iss in lint_prompt(json.dumps(freeze_json))]
+    assert "FREEZE_PHRASE" in freeze_types, f"Expected FREEZE_PHRASE, got: {freeze_types}"
+    print("  [PASS] Test 6: Freeze phrase caught.")
+
+    # Test 7: speech.segments windows must match timeline_action windows
+    seg_json = json.loads(json.dumps(valid_json))
+    seg_json["speech"]["segments"] = {"0-3s": "Look at his hands.", "3-7s": "Pure engineering!"}
+    seg_issues = [iss for iss in lint_prompt(json.dumps(seg_json)) if iss["type"] == "SPEECH_SEGMENT_MISMATCH"]
+    assert len(seg_issues) == 1 and seg_issues[0]["token"] == "3-7s", f"Expected 3-7s flagged, got: {seg_issues}"
+    assert not any(i["type"] == "FREEZE_PHRASE" for i in lint_prompt(json.dumps(seg_json))), "'Look at' inside dialogue must not count as a freeze phrase"
+    print("  [PASS] Test 7: Speech window mismatch caught; dialogue words ignored by freeze check.")
+
+    # Test 8: Plain-text prompt dialogue with ellipsis
+    plain_issues = lint_prompt('The lens is outside the visible frame; her empty left hand never touches anything. Nora says (hushed): "Wait... listen."')
+    assert any(i["type"] == "DIALOGUE_ACTING_PUNCT" for i in plain_issues), f"Expected DIALOGUE_ACTING_PUNCT in plain prompt, got: {plain_issues}"
+    print("  [PASS] Test 8: Plain-text dialogue ellipsis caught.")
 
     print("\nAll JSON Prompt Linter Tests PASSED! 🎉")
 

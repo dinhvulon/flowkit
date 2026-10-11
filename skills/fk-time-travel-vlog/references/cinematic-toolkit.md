@@ -1,20 +1,18 @@
-# Cinematic Toolkit & 7 Subagents Cho Time-Travel Vlog
+# Cinematic Toolkit & 5 Subagents Cho Time-Travel Vlog
 
-Đọc ở các bước ghi trong từng mục. File này điều phối **bộ 7 Subagent Bắt Buộc** dùng để lấy output viết Kịch bản và Prompt — `/fk-action-choreography`, `/fk-add-material`, `/fk-cinematic-transitions`, `/fk-gen-narrator`, `/fk-camera-guide`, `/fk-animation-vocabulary`, `/fk-improve-animations` — cùng các kỹ thuật điện ảnh đã chỉnh theo luật vlog.
+Đọc ở các bước ghi trong từng mục. File này điều phối **bộ 5 Subagent Bắt Buộc** dùng để lấy output viết Kịch bản và Prompt — `/fk-action-choreography`, `/fk-add-material`, `/fk-cinematic-transitions`, `/fk-gen-narrator`, `/fk-camera-guide` — cùng các kỹ thuật điện ảnh đã chỉnh theo luật vlog. Từ vựng chuyển động (Rule 57) và nhịp động học (Rule 58) nằm ngay trong file này ở §8–9, không cần skill riêng.
 
-> **QUY TẮC BẮT BUỘC (LOCK CỨNG):** Khi xây dựng kịch bản và viết prompt, AI Agent **BẮT BUỘC** phải vận hành 7 subagent này để lấy output chuyên môn cấu thành kịch bản và prompt, tuyệt đối không tự bịa hoặc bỏ qua bất kỳ subagent nào!
+> **QUY TẮC BẮT BUỘC (LOCK CỨNG):** Khi xây dựng kịch bản và viết prompt, AI Agent **BẮT BUỘC** phải vận hành 5 subagent này để lấy output chuyên môn cấu thành kịch bản và prompt, tuyệt đối không tự bịa hoặc bỏ qua bất kỳ subagent nào!
 
-### Bảng Ánh Xạ 7 Subagent Viết Kịch Bản & Prompt
+### Bảng Ánh Xạ 5 Subagent Viết Kịch Bản & Prompt
 
 | Subagent | Chuyên Môn | Output Cung Cấp Cho Kịch Bản & Prompt |
 |---|---|---|
 | **`/fk-action-choreography`** | Vũ đạo hành động & an toàn cơ học AI | 3 pha động học (`0-3s` / `3-6s` / `6-8s`), từ vựng né/săn an toàn |
 | **`/fk-add-material`** | Image Material & Visual Style | Style instruction, lighting, cấm token phone |
 | **`/fk-cinematic-transitions`** | Kỹ thuật nối cảnh & nhịp chuyển màn | Match-on-action, foreground wipe, swing pan, J-cut |
-| **`/fk-gen-narrator`** | Biên kịch thoại & khẩu hình vlog | Thoại 20–25 từ chia 3 mốc, sonic isolation, nói từ giây 0 |
+| **`/fk-gen-narrator`** | Biên kịch thoại & khẩu hình vlog | Thoại 23–25 từ / clip 10s chia 3 mốc, sonic isolation, nói từ giây 0 |
 | **`/fk-camera-guide`** | Đạo diễn hình ảnh & quang học smartphone | 5 tầng prompt, tỷ lệ vàng POV/OTS/FIXED/SELFIE |
-| **`/fk-animation-vocabulary`** | Từ vựng chuyển động & động học animation | Thuật ngữ chuẩn (anticipation, overshoot, secondary motion, rubber-banding...) |
-| **`/fk-improve-animations`** | Thiết kế gia tốc, nhịp độ & giảm chấn động học | Phân bổ ngân sách thời gian (duration budgeting), đường cong gia tốc & giảm chấn |
 
 Cách chuyển một template gốc sang vlog:
 
@@ -22,7 +20,7 @@ Cách chuyển một template gốc sang vlog:
 |---|---|
 | `Negative: ...` | Câu khẳng định trước dòng `Audio:` (`prompt-lock.md` khối 8) |
 | "The camera tracks / dollies / orbits / pushes in" | Góc nhìn của vlogger: selfie, POV hoặc máy dựng (`prompt-lock.md` khối 1) + rung tay theo bước chân (Bài học 25, 35) |
-| `narrator_text` lời dẫn | Thoại native của vlogger 20–25 từ trong `video_prompt` (Lesson 62, 65) |
+| `narrator_text` lời dẫn | Thoại native của vlogger 23–25 từ / clip 10s trong `video_prompt` (Lesson 62, 65; user chốt 2026-10-09) |
 | Nhân vật chính là chiến binh/tướng | Vlogger là người sống sót bị cuốn vào; người bản địa làm phần khó |
 | Kiếm, khiên, kỵ binh | Vũ khí và mối nguy đúng thời kỳ: giáo, đá, đuốc, thú lớn, bão |
 
@@ -183,47 +181,71 @@ ffmpeg -i clip.mp4 -vf "drawtext=fontfile='C\:/Windows/Fonts/arialbd.ttf':text='
 
 ---
 
-## 8. Chuẩn hóa từ vựng chuyển động & động học (từ `/fk-animation-vocabulary`) · Rule 57
+## 8. Từ vựng chuyển động chuẩn · Rule 57 · Bước 5
 
-BẮT BUỘC dùng từ điển tra cứu `animation-vocabulary` để đưa các thuật ngữ động học chuẩn xác vào khối `action` và `timeline_action` (`0-3s`, `3-6s`, `6-8s`):
+Động từ mơ hồ ("moves quickly") để trống vector lực, model tự bịa ra trôi lướt, tua nhanh, méo tay chân. Mỗi chuyển động trong `timeline_action` và `physical_realism` viết bằng hành động vật lý cụ thể, rồi gắn thuật ngữ trong ngoặc. Không bao giờ chỉ viết thuật ngữ trơn.
 
-| Hiện tượng thực tế | ❌ Từ ngữ mơ hồ (dễ méo/lướt trôi) | ✅ Thuật ngữ chuẩn `animation-vocabulary` |
+| Hiện tượng thực tế | ❌ Từ ngữ mơ hồ (dễ méo/lướt trôi) | ✅ Thuật ngữ + câu prompt |
 |---|---|---|
 | **Lấy đà trước khi hành động** | `she prepares to jump`, `moves back` | **Anticipation**: `crouches low, lowering center of gravity to load leg muscles (anticipation)` |
 | **Văng quá đà trước khi nén lại** | `stops suddenly`, `jerks stop` | **Overshoot & Settle**: `overshoots past the braking mark before settling back onto both heels` |
 | **Chuyển động quán tính của tóc/tà áo** | `hair moves`, `clothes shake` | **Secondary Motion**: `secondary motion lag: ponytail snaps forward with inertia after body stops` |
-| **Vật/người xuất hiện bất ngờ** | `appears quickly`, `shows up` | **Pop in**: `pops into the frame with crisp elastic rebound` |
+| **Vật/người lộ ra** | `appears quickly`, `shows up`, `pops in` | **Reveal**: `the bison steps out from behind the boulder that has been in frame since second 0`. Không viết `pops into the frame` / `appears`: model sẽ cho vật mọc ra giữa clip (Bài học 48, 64) |
 | **Hành động so le kế tiếp nhau** | `Torak does this, then Nora does that` | **Stagger**: `staggered reactions: Torak drops first, followed 0.5s later by Nora dropping behind the rock` |
 | **Camera/tay kéo căng rồi nảy lại** | `camera jerks back and forth` | **Rubber-banding**: `reaches arm to maximum extension with slight rubber-banding elasticity` |
 | **Độ trễ khi quay đầu** | `turns head slowly` | **Rotational Lag**: `head pivots quickly with rotational lag in camera tracking` |
 | **Bước chạy nhấp nhô** | `camera bounces` | **Vertical Bounce**: `vertical bounce cadence matching rapid footfalls` |
 | **Trượt dốc giảm tốc** | `slides down and stops` | **Slide & Dampen**: `frictional furrow dampens momentum gradually down the 45-degree slope` |
+| **Tiếp đất / ngồi phịch xuống** | `falls down`, `sits` | **Impact & Compression**: `her knees bend deeply on landing, absorbing the impact, then she straightens` |
+| **NPC đứng yên mà vẫn sống** | `stands there` | **Idle micro-motion**: `chest rises and falls, he blinks, shifts his weight to his left leg` |
+
+**Cụm từ làm đơ hình** (model vẽ một tư thế rồi giữ nguyên — Bài học 81, checklist B dòng 50):
+
+| ❌ Cấm | ✅ Thay bằng |
+|---|---|
+| `subtle smile` / `smiles` | `the corners of her mouth lift first, then her eyes crinkle; the smile settles after about a second` |
+| `looks at the dinosaur` | `her eyes track the dinosaur from the ferns to the log, then flick back to the lens` |
+| `reacts` | tên phản ứng cụ thể: `flinches`, `shifts her weight back`, `holds her breath`, `freezes mid-word` |
+| `makes a gesture` | cử chỉ cụ thể + tay nào + mấy lần: `taps two fingers on the log twice` |
+| `occasionally glances` | mốc cụ thể: `at 2s she glances left; at 4s her gaze returns to the lens` |
+| `subtle movement`, `adds life`, `moves gracefully` | xóa; ghi bộ phận nào chuyển động, nhanh hay chậm, chạm vào đâu |
+
+**Mẫu "never fully stops"** chỉ dùng cho cơ thể đứng yên của NPC và thú (dòng 51): `jaw keeps working, never fully stops chewing`, `flanks keep rising and falling, the tail never fully stills`. Không dùng cho tay đang neo (dòng 39, 52) hay đạo cụ phải đứng yên, vì nó sẽ làm chúng cử động.
+
+Tên lỗi dùng khi review: **floating/gliding** (đi mà chân không đặt xuống), **foot sliding** (chân chạm đất vẫn trượt), **speed ramp** (đoạn tua nhanh), **linear robot motion** (khởi động và dừng đột ngột), **spawn/vanish**, **prop teleport**, **frozen NPC**, **gimbal float** (khung bay mượt mất cảm giác tay cầm).
 
 ---
 
-## 9. Thiết kế động lực học & Giám định chuyển động (từ `/fk-improve-animations`) · Rule 58
+## 9. Nhịp động học, điểm tựa & sửa lỗi chuyển động · Rule 58 · Bước 4, 5, 9, 10
 
-Đóng vai trò là **Senior Motion Advisor** bắt buộc trong cả hai khâu: **Viết Storyboard & Prompt (Bước 4 & 5)** và **Review / Hậu kỳ (Bước 9 & 10)**:
+### A. Khi viết storyboard & prompt (bước 4–5)
 
-### A. Khi Viết Storyboard & Prompt (Tiền kỳ - Bắt buộc áp dụng):
-1. **Phân bổ ngân sách thời gian (Duration Budgeting)**:
-   - Trong clip 8s, mỗi sub-clip 2–3s (`0-3s`, `3-6s`, `6-8s`) **CHỈ BỐ TRÍ ĐÚNG 1 CHU KỲ CHUYỂN ĐỘNG CHÍNH**.
-   - Cấm nhồi nhét 2–3 hành động dồn dập vào cùng 1 mốc thời gian (như "cúi xuống nhặt giáo, quay người và ném đi"), khiến model AI phải tua nhanh khung hình gây giật cục và méo hình.
-2. **Thiết kế đường cong gia tốc (Easing & Timing Curves)**:
-   - Mọi chuyển động phải có 3 pha rõ rệt: Khởi phát lấy đà (`Anticipation / Ease-in`), Đỉnh vận tốc (`Peak velocity`), và Hãm phanh triệt tiêu quán tính (`Deceleration / Damping / Settle`).
-   - Cấm miêu tả chuyển động tuyến tính thô cứng (`linear speed`) diễn ra đều đều từ đầu đến cuối sub-clip.
-3. **Độ trễ của quán tính thứ cấp (Secondary Motion Timing)**:
-   - Tóc đuôi ngựa, viền lông thú, tà áo và dây thắt lưng luôn có độ trễ quán tính 0.2s–0.3s so với chuyển động của cơ thể. Khi thân người dừng lại, tóc và vạt áo tiếp tục văng về phía trước rồi mới hồi vị (`settle`).
+1. **Ngân sách thời gian:** mỗi mốc chỉ **1 beat chính**. Clip 8s: `0-3s / 3-6s / 6-8s`. Clip 10s (thoại 23–25 từ): `0-3s / 3-7s / 7-10s`. Nhồi 2–3 hành động vào một mốc ("cúi nhặt giáo, quay người, ném") làm model tua nhanh và méo hình. Beat thừa chuyển sang clip khác, báo user.
+2. **Ba pha cho mọi động tác:** lấy đà (`anticipation`) → đỉnh vận tốc ở giữa mốc → hãm và hồi thăng bằng (`settle`). Không tả tốc độ đều từ đầu tới cuối. Vật nặng (thú lớn, tảng đá) tăng tốc chậm và cần nhiều bước để dừng.
+3. **Quán tính thứ cấp:** tóc, lông viền, tà áo, dây trễ 0.2–0.3s so với thân; khi thân dừng thì chúng văng tiếp rồi mới `settle`. Chỉ gắn vào phần trang phục ref cho phép (Bài học 74).
+4. **Điểm tựa cho mọi bộ phận chịu lực:** người ngồi, quỳ, ngả, dựa phải ghi rõ đặt lên đâu: mông trên gì, lưng tựa vào gì, chân đặt ở đâu, tay chống lên gì. Tư thế nghiêng mà không có vật đỡ thì model cho người lơ lửng. Tư thế giữ suốt clip thì viết một câu khóa ở đầu: `For the whole clip her back stays pressed against the rock wall and both boots stay flat on the cave floor.`
+5. **Frame 0 là tư thế trước hành động đầu tiên:** muốn giây 2 nhân vật đứng dậy thì frame 0 phải đang ngồi; muốn giây 3 cầm đạo cụ lên thì frame 0 đạo cụ nằm trên bề mặt, tay ở đâu ghi rõ. Không tả frame 0 bằng trạng thái sau hành động.
+6. **Chừa 0.5s cuối:** động tác chốt và chữ thoại cuối phải xong trước 0.5s cuối của clip (clip 10s: động tác xong trước ~9.5s, thoại xong trước ~9s). Model hay làm nhịp cuối trễ, dễ bị cắt.
 
-### B. Khi Review Video 720p Thô (Bước 9):
-1. **Giám định Motion Scorecard (khi điểm Motion Quality < 7.5)**:
-   - Chạy quy trình `improve-animations audit` soi sâu:
-     - **Tốc độ & Gia tốc (Timing & Acceleration)**: Hành động bị quá nhanh/chậm bất thường hay không?
-     - **Điểm dừng & Giảm chấn (Deceleration & Ease-out)**: Có bị khựng đột ngột như robot không?
-     - **Điểm tựa cơ học (Contact & Footing)**: Chân có bị lướt trượt trên mặt đất (`foot sliding / gliding`) không?
-2. **Lập Motion Remediation Plan sửa prompt**:
-   - Xuất kế hoạch sửa đổi prompt độc lập (theo khung `PLAN-TEMPLATE.md`), chỉ định rõ mốc thời gian sửa, bổ sung vector lực và quán tính trễ trước khi đưa User duyệt để chạy `REGENERATE_VIDEO`.
+Bảng chuyển động mỗi clip (đưa user duyệt cùng bảng vật lý ở bước 4):
 
-### C. Khi Hậu kỳ Cắt Nối Cảnh (Bước 10):
-- Audit hướng vector chuyển động (motion vector) giữa 2 cảnh cắt nối (Match-on-action và J-cut) để đảm bảo mắt người xem không bị giật hoặc đứt gãy mạch theo dõi chuyển động.
+| Mốc | Beat chính (1) | Lấy đà → đỉnh → hồi | Điểm tựa | Quán tính thứ cấp | NPC/thú (thở, chớp mắt, phản ứng so le) | Phản ứng của khung hình |
+|---|---|---|---|---|---|---|
 
+### B. Khi review 720p (bước 9)
+
+Chạy cho mọi clip dưới 9/10 (ngưỡng giữ của user), mọi clip có Motion Quality hoặc Temporal Coherence < 7.5, và mọi clip có lỗi chuyển động nhìn thấy dù điểm cao.
+
+1. **Soi lỗi** bằng frame của `/fk-review-video` (lỗi trượt chân và tua nhanh cần chế độ deep 8 fps): tốc độ bất thường, dừng như robot, trượt chân/trôi lướt, thiếu quán tính thứ cấp, đạo cụ mọc ra/biến mất/nhảy tay, NPC đơ, khung bay mượt như gimbal. Ghi giây + frame + tên lỗi (§8).
+2. **Truy về prompt:** lỗi ở mốc nào, mốc đó thiếu gì (beat bị nhồi, thiếu điểm tựa, frame 0 sai tư thế, động từ mơ hồ, nhịp cuối sát 0.5s cuối).
+3. **Motion Fix Plan** ghi vào `${OUTDIR}/motion-plans/scene_{idx}_{sid}.md`:
+   - lỗi: giây, frame, tên lỗi, mức (CRITICAL = mọc/biến mất/biến dạng/thừa tay chân; HIGH = trôi, trượt chân, tua nhanh, dừng robot, gimbal float; MEDIUM = thiếu quán tính thứ cấp, NPC đơ);
+   - khối prompt gây lỗi, trích nguyên văn;
+   - khối mới, nguyên văn. **Chỉ đổi khối liên quan, phần còn lại giữ nguyên văn**, để mặt và bối cảnh không chạy. Sửa bằng cách tả thêm cho chính xác, không cắt bớt (Rule 56);
+   - phần đụng vào prompt user đã duyệt → đưa thành lựa chọn cho user, không tự ghi đè.
+4. `python tools/lint_prompt.py --file <prompt.json>` đạt 0 CRITICAL / 0 HIGH → PATCH scene → **hỏi user trước khi** `REGENERATE_VIDEO` (Rule 29).
+5. Lỗi mới chưa có trong `production-lessons.md` → thêm bài học + dòng checklist B trong `prompt-lock.md`.
+
+### C. Khi cắt nối (bước 10)
+
+Kiểm hướng chuyển động giữa 2 clip liền nhau: rời khung bên phải ở clip A thì vào từ bên trái ở clip B, tốc độ tương đương; tư thế và hướng nhìn cuối clip A khớp 1–2s đầu clip B (Rule 44). Không khớp được thì cắt trong khung che hoặc J-cut (§7, `transitions.md`).

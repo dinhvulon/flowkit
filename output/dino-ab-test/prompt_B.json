@@ -1,0 +1,123 @@
+{
+  "camera": {
+    "type": "over-the-shoulder handheld tracking shot",
+    "position": "chest level just behind and beside Nora's right shoulder, looking past her toward a small fern clearing",
+    "framing": "Nora's shoulder, ponytail and three-quarter profile fill the right third of the foreground; one juvenile Triceratops stands in the left two thirds of the frame in the midground, about two meters beyond the mossy log; tall conifer trunks and morning haze behind"
+  },
+  "setting": {
+    "location": "Hell Creek floodplain forest, Montana, Late Cretaceous, 66 million years ago, warm humid morning",
+    "elements": [
+      "soft hazy morning sunlight slants in from the upper left between tall straight conifer trunks; the air is warm and humid with a light haze; no snow, no frost, no winter anywhere",
+      "the ground is damp dark soil covered with low ankle-high ferns; there is no grass lawn",
+      "one fallen moss-covered log lies across the right foreground from frame 0; it stays in that same spot for the whole clip",
+      "one dense waist-high clump of tall green fern fronds stands in the left midground from frame 0; its fronds stay rooted in place and only sway when the animal brushes past them",
+      "exactly one juvenile Triceratops is already standing behind the fern clump from frame 0: its head, frill and front half are visible above and between the fronds, its hind half hidden behind them; it stays the only animal in the whole clip, it never appears suddenly and never vanishes",
+      "the juvenile Triceratops is about as tall as a pony at the shoulder, with a heavy rounded body on four thick legs, pebbly olive-brown scaly skin with darker mottling, a short hooked parrot-like beak, one short nose horn, two short brow horns that curve slightly backward, and a bony neck frill with a scalloped edge; it is a dinosaur, never a rhinoceros, never a cow, never a lizard, with no fur and no feathers"
+    ]
+  },
+  "characters": [
+    {
+      "name": "Nora",
+      "visual_lock": "matches Nora face and Nora Body reference images exactly",
+      "outfit": "wears the exact historical outfit shown in the Nora Body reference sheet: golden-tan deer suede tunic, dark corset belt, high blonde ponytail (NO shearling collar, NO extra fur, NO hood, NO fringe, NO tassels, NO outfit variations; long tunic sleeves that reach all the way to her wrists, never sleeveless; wide dark belt, tan suede leggings that cover her legs completely from hips to boots, and criss-cross laced knee boots exactly as in the Nora Body reference; no bare skin on her thighs, knees or shins at any moment, even when she kneels)",
+      "action": "kneels behind the mossy log, turning her face toward the lens in three-quarter profile while she talks in a hushed, excited voice; her empty left hand rests on top of the log"
+    },
+    {
+      "name": "Juvenile Triceratops",
+      "visual_lock": "described in setting; one animal only",
+      "position": "standing behind the fern clump in the left midground, about two meters beyond the log, head raised and turned toward Nora; alive for the whole clip: flanks rise and fall with slow breathing, nostrils flare, it blinks, its tail sways slowly, its head tilts a little toward each sound; never frozen like a statue"
+    }
+  ],
+  "timeline_action": {
+    "0-3s": "From frame 0 the Triceratops stands behind the fern clump. From the very first frame at second 0, Nora begins speaking immediately in a hushed, excited voice in three-quarter profile toward the lens. The Triceratops sniffs the air toward her.",
+    "3-7s": "The Triceratops shifts its weight back (anticipation), then pops out from behind the fern clump with a crisp elastic rebound (pop in) and takes two slow, heavy steps forward, stopping about two meters from the log; its body rolls slightly with each step and settles when it stops.",
+    "7-10s": "It lowers its head, tears one low fern frond with its beak and chews, then lifts its head and looks toward the lens as the clip ends. Nora finishes her line toward the lens by about second 9."
+  },
+  "motion_choreography": {
+    "frame0_state": "Over-the-shoulder view from behind Nora's right shoulder; Nora kneels behind the mossy log facing the lens in three-quarter profile, her empty left hand resting on top of the log. The Triceratops stands behind the fern clump in the left midground; its head, frill and front half show above the fronds.",
+    "0-3s": {
+      "Nora": {
+        "left_hand": "empty, resting on top of the log",
+        "right_hand": "right arm extended toward the lens, hand outside the frame",
+        "gaze": "toward the lens in three-quarter profile, flicks once to the animal and back",
+        "posture": "kneeling behind the log, torso leaning slightly forward",
+        "movement": "stays in place",
+        "breath_and_micro": "speaking from frame 0 in a hushed excited voice, blinks, quick shallow breaths, ponytail sways slightly"
+      },
+      "Juvenile Triceratops": {
+        "head": "turned toward Nora",
+        "body": "standing behind the fern clump",
+        "movement": "stays in place",
+        "breath_and_micro": "nostrils flare as it sniffs the air, flanks rise and fall, blinks, tail sways slowly"
+      }
+    },
+    "3-7s": {
+      "Nora": {
+        "left_hand": "empty, resting on top of the log",
+        "right_hand": "right arm extended toward the lens, hand outside the frame",
+        "gaze": "follows the animal as it steps out, then back to the lens",
+        "posture": "kneeling behind the log, torso leaning slightly forward",
+        "movement": "stays in place",
+        "breath_and_micro": "speaking, blinks, holds her breath between phrases"
+      },
+      "Juvenile Triceratops": {
+        "head": "stays level, swaying gently with each step",
+        "body": "weight shifts back, then it pops out from behind the fern clump with a crisp elastic rebound and takes two slow heavy steps forward; body rolls side to side with each step and settles when it stops",
+        "movement": "moves forward about one body length toward the left-center of the frame, stops two meters from the log",
+        "breath_and_micro": "a soft snort, fern fronds brush along its flank and spring back behind it"
+      }
+    },
+    "7-10s": {
+      "Nora": {
+        "left_hand": "empty, resting on top of the log",
+        "right_hand": "right arm extended toward the lens, hand outside the frame",
+        "gaze": "back to the lens with a wide amazed smile",
+        "posture": "kneeling behind the log, torso leaning slightly forward",
+        "movement": "stays in place",
+        "breath_and_micro": "finishes her line by about second 9, blinks, small delighted exhale"
+      },
+      "Juvenile Triceratops": {
+        "head": "lowers to the low ferns at its feet, tears one frond with its beak, chews, then lifts its head and looks toward the lens at the end of the clip",
+        "body": "four feet planted, stays in place",
+        "movement": "only the head and neck move",
+        "breath_and_micro": "jaw works steadily, flanks keep breathing, tail sways"
+      }
+    },
+    "end_state": "The Triceratops stands in the open two meters from the log, chewing, its head lifted toward the lens; Nora still kneels behind the log, facing the lens."
+  },
+  "speech": {
+    "speaker": "Nora",
+    "voice_profile": "Laomedeia conversational energetic vlog delivery, hushed and excited, natural pace",
+    "segments": {
+      "0-3s": "Okay, don't move... a baby Triceratops,",
+      "3-7s": "right there, two meters away! Look at that frill and those little horns.",
+      "7-10s": "It's munching ferns like salad!"
+    },
+    "dialogue": "Okay, don't move... a baby Triceratops, right there, two meters away! Look at that frill and those little horns. It's munching ferns like salad!"
+  },
+  "audio": {
+    "ambience": "warm humid forest morning: insects buzzing, distant unseen calls, light breeze in the ferns",
+    "sfx": "two heavy soft thuds as the feet press into damp soil, fern fronds rustling and one frond tearing, a low snort, steady chewing"
+  },
+  "physical_realism": {
+    "force_and_traction": "each of the Triceratops's feet sinks a little into the damp soil and leaves a print; its weight rolls from side to side as it steps and settles when it stops",
+    "secondary_motion": "Nora's ponytail and loose strands sway with every head turn and settle a beat after she stops; fern fronds bend as the animal brushes past and spring back; Nora's tunic keeps the smooth plain hems, wide dark belt and criss-cross laced boots of the Nora Body reference (no fringe, no tassels on her)",
+    "environment": "warm humid morning haze, slanting sunbeams between the conifers, tiny insects drifting in the light, dew on the ferns",
+    "camera_response": "subtle handheld micro-tremor and breathing sway, a slight drift when Nora leans lower; framing stays over her shoulder; the view never floats smoothly",
+    "documentary_texture": "real skin pores, scaly textured hide, wet soil and moss, natural available light only; looks like real footage, not CGI or a game"
+  },
+  "negative_constraints": [
+    "the camera lens itself and her gripping right hand are completely outside the visible frame and never seen",
+    "her free left hand stays on the log and never reaches toward, touches, covers, or taps the camera lens",
+    "no 3rd-person spectator switch, no 180-degree flip, pure single perspective throughout",
+    "exactly one dinosaur in the whole clip; no other animals, no birds in the frame, no people",
+    "the Triceratops never touches Nora, the log or the lens, never charges and never rears up",
+    "Nora never stands up and never leaves the log during the clip",
+    "no snow, no frost, no winter, no grass lawn",
+    "no subtitles, no text on screen, no watermark",
+    "no morphing or vanishing objects or characters",
+    "no metal tools, no modern items anywhere in the frame",
+    "no character stands frozen or statue-like at any moment",
+    "the animal is a juvenile Triceratops, never a rhinoceros, cow or lizard, with no fur and no feathers"
+  ]
+}

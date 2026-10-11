@@ -131,18 +131,21 @@ Thoại dày làm phim thành podcast có hình, thoại thưa làm clip có dea
 | Loại clip | Số từ tiếng Anh của vlogger |
 |---|---|
 | Mọi clip 8s có thoại | **18–22** — chia `0-3s` 6–7 từ / `3-6s` 7–8 từ / `6-8s` 5–7 từ |
-| Clip 10s | ~23–28 (cộng ~25%, chia thêm sub-clip `8-10s`) |
+| Clip 10s (mặc định cho clip thoại dài) | **23–25** — chia `0-3s / 3-7s / 7-10s`, nói xong trước ~9s (user chốt 2026-10-09; thay mức ~23–28 cũ) |
 | Cảnh cuối (hình ảnh đáng nhớ, CUT BLACK — `story-engine.md` mục 11) | 0 |
 | 3 establishing shot 4s không có vlogger trong khung (`story-engine.md` mục 2b) | 0 |
 
 Vì sao: clip 8s bị trim `-ss 1` còn 7s, trừ đệm 0.5s → ~6.5s audio ở ~3.2–3.5 từ/giây. Dưới 18 từ = **dead air** (vlogger đứng im 2–3s, tụt retention); trên 22 = **cut-off** (câu bị cắt sang clip sau). Viết/sửa thoại bằng `/fk-gen-narrator` (Time-Travel Vlog Mode) để đồng bộ `narrator_text` và `video_prompt`.
 
-Clip căng thẳng / hành động vẫn đủ 18–22 từ, nhưng là **câu ngắn đứt quãng** (`"Run— no, left. LEFT. Behind the bones, now— she's turning, she's turning, go go go."`), không phải câu dài. Nhịp im lặng (bên dưới) nằm **trong** một sub-clip, các sub-clip còn lại gánh đủ số từ.
+Clip căng thẳng / hành động vẫn đủ số từ, nhưng là **câu ngắn đứt quãng**, độ gấp ghi bằng ngữ điệu trước ngoặc chứ không bằng chữ hoa: `Nora says (breathless, urgent, rising panic): "Run, no, left! Left, behind the bones, now! She's turning, she's turning, go go go!"`, không phải câu dài. Nhịp im lặng (bên dưới) nằm **trong** một sub-clip, các sub-clip còn lại gánh đủ số từ.
 
 - **Show > Tell:** `"Fire."` khi người xem đã thấy tia lửa, không phải `"Now I'm making fire using the flint I found earlier."`
 - **Nhịp im lặng:** mỗi Act ít nhất 1 lần không ai nói từ 1s trở lên trước một tiết lộ. Kịch bản ghi `[im lặng 2s]`, prompt ghi `No one speaks for the first 2 seconds; only wind and breathing.`
 - **Không nói chồng.** Nhân vật phụ nói (ngôn ngữ không hiểu được) ở sub-clip riêng, Nora im lặng phản ứng trong lúc đó, rồi mới nói.
 - Luôn ghi cách diễn đạt trong ngoặc ngay sau tên: `Nora says (hushed, hands busy, breath fogging): "..."`. Model video phản ứng với tag này mạnh hơn với tính từ rải trong prompt.
+- **Trong ngoặc kép chỉ có lời nói** (Bài học 81): không `...` để ngắt, không VIẾT HOA để hét, không kéo dài chữ (`sooo`), không gạch ngang làm khoảng ngừng (gạch ngang chỉ cho tự sửa câu). Khựng, hét, thì thầm đều ghi trong ngoặc tròn trước câu thoại. Dấu diễn xuất trong ngoặc kép làm model đọc khựng hoặc im lặng giữa câu.
+- **Miệng trong khung khi đang nói** (selfie / qua vai / máy dựng): không cho Nora quay lưng hay quay hẳn đi trong mốc có thoại. Cảnh POV không thấy mặt là giọng ngoài khung, không đòi khẩu hình.
+- **Âm thanh quanh câu thoại:** tối đa 5 yếu tố âm thanh / clip; âm nền ghi `low under her voice`; SFX lớn đặt vào lúc Nora ngừng nói.
 - Đếm từ trước khi chốt. Vượt 22 → cắt phần mô tả thứ người xem đang thấy trước, rồi tới lý do. Dưới 18 → thêm phản ứng cơ thể, câu hỏi hoặc micro-hook, không thêm câu giảng.
 
 ---
@@ -209,6 +212,7 @@ Ghi chú: các câu mẫu không có chi tiết lịch sử nào — đúng pers
 - [ ] Meta language: "as you saw earlier", "you saw the cold open", "in this video", "this is where things get interesting", "I didn't know this yet".
 - [ ] Nhân vật phụ nói tiếng Anh, hoặc Nora dịch nguyên văn lời họ.
 - [ ] Hai người nói chồng trong cùng một sub-clip.
+- [ ] `...`, chữ VIẾT HOA, chữ kéo dài hoặc gạch ngang làm khoảng ngừng nằm trong ngoặc kép.
 
 **Bắt buộc:**
 - [ ] Mỗi beat kiến thức theo đúng 1 khuôn ở mục 4, gắn với hành động đang có trên hình.
@@ -216,7 +220,7 @@ Ghi chú: các câu mẫu không có chi tiết lịch sử nào — đúng pers
 - [ ] Mỗi 3–4 clip có ít nhất 1 chi tiết lạ của thế giới này (thật hay bịa) hiện ra qua việc đang làm trên hình — không giảng.
 - [ ] Cứ 2 clip có ít nhất 1 chỗ tự ngắt, tự sửa, hoặc 1 câu đùa khô.
 - [ ] Người bản địa có vai trò thật (khuôn C), Nora không đúng mọi lúc về chuyện địa phương.
-- [ ] Mỗi clip 8s có thoại đúng 18–22 từ, chia 6–7 / 7–8 / 5–7 theo sub-clip (mục 2, Rule 49); chỉ cảnh cuối và 3 establishing shot 4s được 0 từ.
+- [ ] Clip 10s có thoại 23–25 từ (`0-3s / 3-7s / 7-10s`), clip 8s có 18–22 từ (6–7 / 7–8 / 5–7) — mục 2; chỉ cảnh cuối, 3 establishing shot 4s và cảnh Sonic Isolation được 0 từ.
 - [ ] Mỗi Act có ít nhất 1 nhịp im lặng.
 
 ---

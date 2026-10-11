@@ -277,6 +277,9 @@ python tools/lint_prompt.py --scene <scene_id>
 - `0 CRITICAL` issues.
 - `0 HIGH` issues.
 - Nếu phát hiện `GHOST_DEVICE`, `CAMERA_TOUCH_GLITCH`, hoặc `JSON_SCHEMA_MISSING_KEY`: **BẮT BUỘC SỬA LẠI PROMPT NGAY LẬP TỨC TRƯỚC KHI GỬI GEN**.
+- `DIALOGUE_ACTING_PUNCT` (HIGH): `...` hoặc chữ VIẾT HOA trong câu thoại — chuyển ngữ điệu ra ngoặc tròn trước ngoặc kép (`Nora says (hushed, hesitant): "..."`). Bài học 81.
+- `FREEZE_PHRASE` (MEDIUM, cảnh báo): `subtle smile`, `looks at`, `reacts`… trong phần mô tả động tác (không tính lời thoại) — thay bằng bộ phận + chuyển động + mốc. `fk-time-travel-vlog/references/cinematic-toolkit.md` §8.
+- `SPEECH_SEGMENT_MISMATCH` (MEDIUM): mốc trong `speech.segments` không có mốc tương ứng trong `timeline_action`.
 
 ---
 
@@ -296,23 +299,22 @@ python tools/lint_prompt.py --scene <scene_id>
   ```
 - `negative_constraints` luôn có: `"no character stands frozen or statue-like at any moment"`.
 - **Sửa lỗi bằng cách tả thêm cho chính xác**, không cắt bớt.
-- Trước khi viết: áp `/fk-camera-guide`, `/fk-cinematic-transitions`, `/fk-action-choreography`, `/fk-scriptwriter` (story-engine), `/fk-character-bible`, `/fk-gen-narrator`, `/fk-sound-design`, `/fk-animation-vocabulary`, `/fk-improve-animations`.
+- Trước khi viết: áp `/fk-camera-guide`, `/fk-cinematic-transitions`, `/fk-action-choreography`, `/fk-scriptwriter` (story-engine), `/fk-character-bible`, `/fk-gen-narrator`, `/fk-sound-design`; từ vựng chuyển động và nhịp động học theo `fk-time-travel-vlog/references/cinematic-toolkit.md` §8–9.
 
 ---
 
-## 7. Rule 57 — Chuẩn Hóa Từ Vựng Chuyển Động & Động Học Qua `animation-vocabulary` (User Lock 11/10/2026)
+## 7. Rule 57 — Từ Vựng Chuyển Động Chuẩn (User Lock 11/10/2026)
 
-- **Bắt buộc tra cứu skill `animation-vocabulary`**: Khi viết prompt (cả dạng JSON lẫn văn bản), mọi mô tả chuyển động camera và nhân vật BẮT BUỘC phải dùng thuật ngữ animation chuẩn xác:
-  - *Động học & Quán tính*: `Anticipation`, `Overshoot`, `Settle`, `Secondary motion`.
-  - *Xuất hiện & Chuyển đổi khung*: `Pop in`, `Stagger`, `Foreground wipe`, `Clip-path sweep`, `Slide & Dampen`.
-  - *Động học Camera*: `Rubber-banding`, `Vertical bounce`, `Rotational lag`, `Drift`.
-- **Cấm từ ngữ chuyển động mơ hồ**: Không dùng `moves quickly`, `shakes violently`, `jumps weirdly`.
+- Mọi mô tả chuyển động của nhân vật và khung hình viết bằng hành động vật lý cụ thể, kèm thuật ngữ trong ngoặc: `Anticipation`, `Overshoot`, `Settle`, `Secondary motion`, `Stagger`, `Reveal`, `Slide & Dampen`, `Rubber-banding`, `Vertical bounce`, `Rotational lag`, `Drift`. Bảng tra: `fk-time-travel-vlog/references/cinematic-toolkit.md` §8.
+- **Cấm từ ngữ chuyển động mơ hồ**: không dùng `moves quickly`, `shakes violently`, `jumps weirdly`, `appears`, `pops in` (vật lộ ra phải đi từ sau vật che có sẵn từ giây 0).
 
 ---
 
-## 8. Rule 58 — Thiết Kế Động Lực Học Khi Viết Prompt Qua `improve-animations` (User Lock 11/10/2026)
+## 8. Rule 58 — Nhịp Động Học & Điểm Tựa (User Lock 11/10/2026)
 
-- **Ngân sách thời gian (Duration Budgeting)**: Trong clip 8s, mỗi sub-clip 2–3s chỉ bố trí 1 chu kỳ chuyển động chính. Cấm nhồi nhét 2–3 hành động dồn dập vào cùng 1 mốc thời gian.
-- **Đường cong gia tốc (Easing & Damping Curves)**: Thiết kế đủ 3 pha: Khởi phát lấy đà (`Anticipation`), Đỉnh vận tốc (`Peak velocity`), và Hãm phanh triệt tiêu quán tính (`Deceleration / Settle`). Cấm chuyển động tuyến tính đều đều.
-- **Độ trễ quán tính thứ cấp**: Tóc, lông thú, tà áo luôn trễ 0.2s–0.3s so với thân người khi dừng lại.
-- **Review 720p & Hậu kỳ**: Khi Motion Quality < 7.5, lập Motion Remediation Plan độc lập theo mẫu `PLAN-TEMPLATE.md` trước khi regen; rà soát motion vector khi cắt ghép J-cut / match-on-action.
+- **Ngân sách thời gian**: mỗi mốc `timeline_action` đúng 1 beat chính (8s: `0-3s / 3-6s / 6-8s`; 10s: `0-3s / 3-7s / 7-10s`). Cấm nhồi 2–3 hành động vào một mốc.
+- **Ba pha**: lấy đà (`Anticipation`) → đỉnh vận tốc → hãm và hồi thăng bằng (`Settle`). Cấm tốc độ đều từ đầu tới cuối.
+- **Quán tính thứ cấp**: tóc, lông, tà áo trễ 0.2–0.3s so với thân khi dừng.
+- **Điểm tựa**: người ngồi/quỳ/ngả/dựa ghi rõ đặt lên đâu; tư thế giữ suốt clip có câu khóa đầu clip.
+- **Frame 0** là tư thế trước hành động đầu tiên; **chừa 0.5s cuối** không đặt động tác chốt hay chữ thoại cuối.
+- **Review 720p & hậu kỳ**: lập Motion Fix Plan theo `cinematic-toolkit.md` §9B (chỉ đổi khối gây lỗi, giữ nguyên văn phần còn lại) trước khi hỏi user regen; rà hướng chuyển động khi cắt nối.
