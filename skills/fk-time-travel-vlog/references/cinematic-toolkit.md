@@ -1,18 +1,20 @@
-# Cinematic Toolkit & 5 Subagents Cho Time-Travel Vlog
+# Cinematic Toolkit & 7 Subagents Cho Time-Travel Vlog
 
-Đọc ở các bước ghi trong từng mục. File này điều phối **bộ 5 Subagent Bắt Buộc** dùng để lấy output viết Kịch bản và Prompt — `/fk-action-choreography`, `/fk-add-material`, `/fk-cinematic-transitions`, `/fk-gen-narrator`, `/fk-camera-guide` — cùng các kỹ thuật điện ảnh đã chỉnh theo luật vlog.
+Đọc ở các bước ghi trong từng mục. File này điều phối **bộ 7 Subagent Bắt Buộc** dùng để lấy output viết Kịch bản và Prompt — `/fk-action-choreography`, `/fk-add-material`, `/fk-cinematic-transitions`, `/fk-gen-narrator`, `/fk-camera-guide`, `/fk-animation-vocabulary`, `/fk-improve-animations` — cùng các kỹ thuật điện ảnh đã chỉnh theo luật vlog.
 
-> **QUY TẮC BẮT BUỘC (LOCK CỨNG):** Khi xây dựng kịch bản, AI Agent **BẮT BUỘC** phải vận hành 5 subagent này để lấy output chuyên môn cấu thành kịch bản, tuyệt đối không tự bịa hoặc bỏ qua bất kỳ subagent nào!
+> **QUY TẮC BẮT BUỘC (LOCK CỨNG):** Khi xây dựng kịch bản và viết prompt, AI Agent **BẮT BUỘC** phải vận hành 7 subagent này để lấy output chuyên môn cấu thành kịch bản và prompt, tuyệt đối không tự bịa hoặc bỏ qua bất kỳ subagent nào!
 
-### Bảng Ánh Xạ 5 Subagent Viết Kịch Bản
+### Bảng Ánh Xạ 7 Subagent Viết Kịch Bản & Prompt
 
-| Subagent | Chuyên Môn | Output Cung Cấp Cho Kịch Bản |
+| Subagent | Chuyên Môn | Output Cung Cấp Cho Kịch Bản & Prompt |
 |---|---|---|
 | **`/fk-action-choreography`** | Vũ đạo hành động & an toàn cơ học AI | 3 pha động học (`0-3s` / `3-6s` / `6-8s`), từ vựng né/săn an toàn |
 | **`/fk-add-material`** | Image Material & Visual Style | Style instruction, lighting, cấm token phone |
 | **`/fk-cinematic-transitions`** | Kỹ thuật nối cảnh & nhịp chuyển màn | Match-on-action, foreground wipe, swing pan, J-cut |
 | **`/fk-gen-narrator`** | Biên kịch thoại & khẩu hình vlog | Thoại 20–25 từ chia 3 mốc, sonic isolation, nói từ giây 0 |
 | **`/fk-camera-guide`** | Đạo diễn hình ảnh & quang học smartphone | 5 tầng prompt, tỷ lệ vàng POV/OTS/FIXED/SELFIE |
+| **`/fk-animation-vocabulary`** | Từ vựng chuyển động & động học animation | Thuật ngữ chuẩn (anticipation, overshoot, secondary motion, rubber-banding...) |
+| **`/fk-improve-animations`** | Thiết kế gia tốc, nhịp độ & giảm chấn động học | Phân bổ ngân sách thời gian (duration budgeting), đường cong gia tốc & giảm chấn |
 
 Cách chuyển một template gốc sang vlog:
 
@@ -178,3 +180,50 @@ ffmpeg -i clip.mp4 -vf "drawtext=fontfile='C\:/Windows/Fonts/arialbd.ttf':text='
 ```
 
 **Không dùng từ skill này:** chapter bumper, dip-to-black/crossfade giữa clip, hardsub (`scripts/generate_subtitles.py --burn-subtitles`), `scripts/build_master_film.py` (dành cho phim nhiều chương có bumper). Dip/cut to black chỉ ở cảnh kết. Graphic match cut và whip pan đã có trong `transitions.md`. Rack focus dùng được trong POV (từ vật trong tay ra hậu cảnh).
+
+---
+
+## 8. Chuẩn hóa từ vựng chuyển động & động học (từ `/fk-animation-vocabulary`) · Rule 57
+
+BẮT BUỘC dùng từ điển tra cứu `animation-vocabulary` để đưa các thuật ngữ động học chuẩn xác vào khối `action` và `timeline_action` (`0-3s`, `3-6s`, `6-8s`):
+
+| Hiện tượng thực tế | ❌ Từ ngữ mơ hồ (dễ méo/lướt trôi) | ✅ Thuật ngữ chuẩn `animation-vocabulary` |
+|---|---|---|
+| **Lấy đà trước khi hành động** | `she prepares to jump`, `moves back` | **Anticipation**: `crouches low, lowering center of gravity to load leg muscles (anticipation)` |
+| **Văng quá đà trước khi nén lại** | `stops suddenly`, `jerks stop` | **Overshoot & Settle**: `overshoots past the braking mark before settling back onto both heels` |
+| **Chuyển động quán tính của tóc/tà áo** | `hair moves`, `clothes shake` | **Secondary Motion**: `secondary motion lag: ponytail snaps forward with inertia after body stops` |
+| **Vật/người xuất hiện bất ngờ** | `appears quickly`, `shows up` | **Pop in**: `pops into the frame with crisp elastic rebound` |
+| **Hành động so le kế tiếp nhau** | `Torak does this, then Nora does that` | **Stagger**: `staggered reactions: Torak drops first, followed 0.5s later by Nora dropping behind the rock` |
+| **Camera/tay kéo căng rồi nảy lại** | `camera jerks back and forth` | **Rubber-banding**: `reaches arm to maximum extension with slight rubber-banding elasticity` |
+| **Độ trễ khi quay đầu** | `turns head slowly` | **Rotational Lag**: `head pivots quickly with rotational lag in camera tracking` |
+| **Bước chạy nhấp nhô** | `camera bounces` | **Vertical Bounce**: `vertical bounce cadence matching rapid footfalls` |
+| **Trượt dốc giảm tốc** | `slides down and stops` | **Slide & Dampen**: `frictional furrow dampens momentum gradually down the 45-degree slope` |
+
+---
+
+## 9. Thiết kế động lực học & Giám định chuyển động (từ `/fk-improve-animations`) · Rule 58
+
+Đóng vai trò là **Senior Motion Advisor** bắt buộc trong cả hai khâu: **Viết Storyboard & Prompt (Bước 4 & 5)** và **Review / Hậu kỳ (Bước 9 & 10)**:
+
+### A. Khi Viết Storyboard & Prompt (Tiền kỳ - Bắt buộc áp dụng):
+1. **Phân bổ ngân sách thời gian (Duration Budgeting)**:
+   - Trong clip 8s, mỗi sub-clip 2–3s (`0-3s`, `3-6s`, `6-8s`) **CHỈ BỐ TRÍ ĐÚNG 1 CHU KỲ CHUYỂN ĐỘNG CHÍNH**.
+   - Cấm nhồi nhét 2–3 hành động dồn dập vào cùng 1 mốc thời gian (như "cúi xuống nhặt giáo, quay người và ném đi"), khiến model AI phải tua nhanh khung hình gây giật cục và méo hình.
+2. **Thiết kế đường cong gia tốc (Easing & Timing Curves)**:
+   - Mọi chuyển động phải có 3 pha rõ rệt: Khởi phát lấy đà (`Anticipation / Ease-in`), Đỉnh vận tốc (`Peak velocity`), và Hãm phanh triệt tiêu quán tính (`Deceleration / Damping / Settle`).
+   - Cấm miêu tả chuyển động tuyến tính thô cứng (`linear speed`) diễn ra đều đều từ đầu đến cuối sub-clip.
+3. **Độ trễ của quán tính thứ cấp (Secondary Motion Timing)**:
+   - Tóc đuôi ngựa, viền lông thú, tà áo và dây thắt lưng luôn có độ trễ quán tính 0.2s–0.3s so với chuyển động của cơ thể. Khi thân người dừng lại, tóc và vạt áo tiếp tục văng về phía trước rồi mới hồi vị (`settle`).
+
+### B. Khi Review Video 720p Thô (Bước 9):
+1. **Giám định Motion Scorecard (khi điểm Motion Quality < 7.5)**:
+   - Chạy quy trình `improve-animations audit` soi sâu:
+     - **Tốc độ & Gia tốc (Timing & Acceleration)**: Hành động bị quá nhanh/chậm bất thường hay không?
+     - **Điểm dừng & Giảm chấn (Deceleration & Ease-out)**: Có bị khựng đột ngột như robot không?
+     - **Điểm tựa cơ học (Contact & Footing)**: Chân có bị lướt trượt trên mặt đất (`foot sliding / gliding`) không?
+2. **Lập Motion Remediation Plan sửa prompt**:
+   - Xuất kế hoạch sửa đổi prompt độc lập (theo khung `PLAN-TEMPLATE.md`), chỉ định rõ mốc thời gian sửa, bổ sung vector lực và quán tính trễ trước khi đưa User duyệt để chạy `REGENERATE_VIDEO`.
+
+### C. Khi Hậu kỳ Cắt Nối Cảnh (Bước 10):
+- Audit hướng vector chuyển động (motion vector) giữa 2 cảnh cắt nối (Match-on-action và J-cut) để đảm bảo mắt người xem không bị giật hoặc đứt gãy mạch theo dõi chuyển động.
+

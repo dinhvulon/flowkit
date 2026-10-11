@@ -141,6 +141,10 @@ This zone MUST contain:
 - Primary keyword (same as title)
 - Secondary keyword
 - Emotional hook matching title
+- **Dòng khai báo tái dựng bằng AI (BẮT BUỘC cho video hư cấu / tái hiện lịch sử / time-travel vlog — user chốt 2026-10-11)**: đặt **ngay dòng thứ 2**, sau câu hook, trước CTA, để người xem thấy ngay mà không phải bấm "Show more". Dòng này nói rõ ba ý trong một câu: (1) video được **tái dựng bằng AI**, (2) dựa trên **dữ kiện lịch sử / khảo cổ có thật** về tộc người, địa điểm, niên đại cụ thể, (3) nhân vật và lời thoại là hư cấu. Chỉ ghi "dựa trên dữ kiện" khi dự án có research (`.omc/research/`); không có research thì ghi "lấy cảm hứng từ thời kỳ…". Không nêu tên công cụ AI (Rule C). Disclaimer đầy đủ 3 lớp vẫn đặt cuối Zone 3 (Rule A).
+  - English: `🎬 An AI-recreated historical vlog, based on real archaeological evidence about {people} at {site}, {date}. The characters and dialogue are dramatized.`
+  - Tiếng Việt: `🎬 Video tái dựng bằng AI, dựa trên dữ kiện khảo cổ có thật về {tộc người} tại {địa điểm}, {niên đại}. Nhân vật và lời thoại được hư cấu.`
+  - 日本語: `🎬 本動画は、{場所}・{年代}の{人々}に関する実際の考古学的証拠をもとにAIで再現した歴史Vlogです。登場人物とセリフはフィクションです。`
 
 ### Zone 2: Main body (150-2000 chars)
 
@@ -174,8 +178,9 @@ Rules:
 ### Full description template:
 
 ```
-[Zone 1 — Hook + CTA]
+[Zone 1 — Hook + AI recreation line + CTA]
 {hook_sentence}
+{ai_recreation_line — BẮT BUỘC cho video hư cấu/tái hiện lịch sử, xem Zone 1}
 
 Like & Subscribe for more {niche} content!
 Turn on notifications 🔔 to never miss a video.
@@ -199,7 +204,7 @@ Turn on notifications 🔔 to never miss a video.
 > **CRITICAL RULES (Fiction Disclaimer vs Tool Branding — Tách bạch 2 khái niệm):**
 >
 > **Rule A — BẮT BUỘC: Fictional Content Disclaimer (Khai báo nội dung hư cấu)**
-> Mọi video hư cấu / tái hiện lịch sử / time-travel vlog PHẢI có đoạn disclaimer cuối Zone 3.
+> Mọi video hư cấu / tái hiện lịch sử / time-travel vlog PHẢI có **hai chỗ khai báo**: dòng ngắn "tái dựng bằng AI dựa trên dữ kiện lịch sử" ở dòng thứ 2 của Zone 1 (người xem thấy ngay), và đoạn disclaimer đầy đủ 3 lớp cuối Zone 3.
 > Đây là quy định của kênh, YouTube không bắt buộc. YouTube chỉ bắt buộc bật khai báo AI trong Studio (Rule D), và disclaimer trong description KHÔNG thay thế được bước đó. Disclaimer có ích vì nó nói rõ với người xem phần nào là thật, phần nào là hư cấu, điều mà nhãn AI tự động của YouTube không làm.
 > Chọn template theo ngôn ngữ script:
 >
@@ -453,7 +458,9 @@ Print each section with clear separators so they can copy individual parts.
     content"). Bắt buộc với cảnh AI photorealistic. Khai báo không làm giảm
     lượt hiển thị hay doanh thu; không khai báo nhiều lần có thể bị xóa video
     hoặc đình chỉ khỏi YPP. (Rule D)
-  □ Disclaimer hư cấu đã có ở cuối description (Rule A). Nó không thay thế bước trên.
+  □ Dòng thứ 2 của description nói rõ "tái dựng bằng AI, dựa trên dữ kiện lịch sử/khảo cổ
+    có thật, nhân vật và lời thoại hư cấu" (Zone 1), và disclaimer đầy đủ ở cuối
+    description (Rule A). Cả hai không thay thế bước khai báo AI trong Studio ở trên.
   □ Series: tập này có mạch truyện và kết khác các tập trước (Rule E).
   □ Audience → "No, it's not made for kids". Video có bạo lực/chủ đề người lớn
     nên thuộc nhóm "general audience" (support.google.com/youtube/answer/9528076).

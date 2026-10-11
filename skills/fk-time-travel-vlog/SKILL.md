@@ -50,12 +50,12 @@ Mỗi bước: đọc reference ghi kèm **trước khi** làm. Bước có ⛔ 
 | 1 | **Ý tưởng thế giới** (tùy chọn): `/fk-research` hoặc tự bịa, chọn 10–15 beat | `era-research.md` | bảng beat |
 | 2 | **Character Bible**: `CHARACTER_LOCK` + Laomedeia + `VOICE_LOCK` + kế hoạch bộ ref | `character-bible.md`, `voice-bible.md` §0–1, `prompt-templates.md`, `cinematic-toolkit.md` §4 (trang phục đổi giữa tập) | khối lock trong `script.md` |
 | 3 | **Outline**: chuỗi nhân quả sinh tồn → cold open 8s → 5 Act mỗi Act 1 câu hỏi → payoff → cảnh cuối không thoại. **Bắt buộc dùng subagent**: `fk-action-choreography` (động lực học), `fk-camera-guide` (tỷ lệ góc máy), `fk-cinematic-transitions` (chuyển hồi) | `story-engine.md` (bắt buộc), `structure-7-acts.md`, `reference-analysis.md`, `cinematic-toolkit.md` §3 | outline + thời lượng |
-| 4 | **Storyboard + bảng vật lý** từng clip (máy ở đâu, có gì ở giây 0, hướng + tốc độ vật di chuyển, ai rời khung bằng cách nào). **Bắt buộc dùng subagent**: `fk-camera-guide` (bảng vật lý & quang học), `fk-cinematic-transitions` (khớp điểm nối) ⛔ user duyệt bảng vật lý | `shots-and-realism.md`, `transitions.md` | bảng storyboard + bảng vật lý |
-| 5 | **Clip JSON + `video_prompt`** theo khung 9 khối, qua checklist B. **Bắt buộc phối hợp 5 subagent**: `fk-action-choreography` (3 pha hành động), `fk-add-material` (visual profile), `fk-cinematic-transitions` (chuyển cảnh), `fk-gen-narrator` (thoại 20–25 từ chia 3 mốc), `fk-camera-guide` (5 tầng quang học). Long-form xuất từng Act, ⛔ hỏi user trước khi sang Act sau | `prompt-lock.md`, `production-lessons.md`, `prompt-templates.md`, `voice-bible.md` §2–6, `cinematic-toolkit.md` §1–2 | `output/<slug>/script.md` |
+| 4 | **Storyboard + bảng vật lý** từng clip (máy ở đâu, có gì ở giây 0, hướng + tốc độ vật di chuyển, ai rời khung bằng cách nào). **Bắt buộc dùng subagent**: `fk-camera-guide` (bảng vật lý & quang học), `fk-cinematic-transitions` (khớp điểm nối), `fk-improve-animations` (ngân sách thời gian & nhịp độ động học) ⛔ user duyệt bảng vật lý | `shots-and-realism.md`, `transitions.md`, `improve-animations` | bảng storyboard + bảng vật lý |
+| 5 | **Clip JSON + `video_prompt`** theo khung 9 khối, qua checklist B. **Bắt buộc phối hợp 7 subagent**: `fk-action-choreography` (3 pha hành động), `fk-add-material` (visual profile), `fk-cinematic-transitions` (chuyển cảnh), `fk-gen-narrator` (thoại 20–25 từ chia 3 mốc), `fk-camera-guide` (5 tầng quang học), `fk-animation-vocabulary` (chuẩn hóa từ vựng chuyển động, Rule 57), `fk-improve-animations` (thiết kế gia tốc, nhịp độ & giảm chấn quán tính, Rule 58). Long-form xuất từng Act, ⛔ hỏi user trước khi sang Act sau | `prompt-lock.md`, `production-lessons.md`, `prompt-templates.md`, `voice-bible.md` §2–6, `cinematic-toolkit.md` §1–2, `improve-animations` | `output/<slug>/script.md` |
 | 6 | **Dựng dự án FlowKit** (pre-flight, flush PENDING, project, video, scenes, PATCH `duration` + `narrator_text`) | `flowkit-pipeline.md` §2–3; tập tiếp theo của series: `cinematic-toolkit.md` §5 | project/video/scene ids |
 | 7 | **Refs**: mặt, Body đã mặc outfit (công thức outfit lock), bối cảnh — xóa logo, upload lại ⛔ hỏi trước khi sinh, ⛔ user duyệt ảnh | `flowkit-pipeline.md` §4, `character-bible.md` §6 | entity có UUID media_id |
 | 8 | **Video R2V**: clip khó nhất trước, rồi clip mốc, rồi cả loạt ⛔ hỏi trước mỗi lượt | `flowkit-pipeline.md` §5 | clip 720p |
-| 9 | **Review 720p** (`/fk-review-video` + Review Board :8200) ⛔ user duyệt từng clip → upscale 1080p → xóa logo → concat | `flowkit-pipeline.md` §6 | bản 1080p clean |
+| 9 | **Review 720p & Giám định Motion** (`/fk-review-video` + `/fk-improve-animations` + Review Board :8200) ⛔ user duyệt từng clip; cảnh lỗi motion dùng `fk-improve-animations` lập Motion Fix Plan sửa prompt trước khi regen → user duyệt → upscale 1080p → xóa logo → concat | `flowkit-pipeline.md` §6, `improve-animations` (Rule 58) | bản 1080p clean |
 | 10 | **Hậu kỳ**: cắt tại khung che + J-cut, nhạc duck dưới thoại, card chữ, bíp, master −14 LUFS | `post-and-publish.md` §1, `cinematic-toolkit.md` §6–7 | video final |
 | 11 | **Đóng gói YouTube** + chiến lược kênh | `post-and-publish.md` §2–4 | tiêu đề, mô tả, thumbnail |
 
@@ -84,11 +84,11 @@ Chỉ học format; không sao chép tên, ngoại hình hay lời thoại nhân
 6. **Clip JSON từng clip** (long-form theo từng Act, hỏi trước khi sang Act sau).
 7. **Ghi chú hậu kỳ + gói YouTube.**
 
-## ⚠️ KHÓA BẮT BUỘC 5 SUBAGENT VIẾT KỊCH BẢN & CÁC SKILL ĐIỆN ẢNH (RULE 50 — LOCK CỨNG PHẢI DÙNG)
+## ⚠️ KHÓA BẮT BUỘC 7 SUBAGENT VIẾT KỊCH BẢN & CÁC SKILL ĐIỆN ẢNH (RULE 50, RULE 57 & RULE 58 — LOCK CỨNG PHẢI DÙNG)
 
-Mọi dự án POV / Time-Travel Vlog (`/fk-time-travel-vlog`, `/fk-vlog-guide`, `/fk-vlog-japan`) **BẮT BUỘC** phải vận hành 5 skill dưới đây làm **SUBAGENT CHUYÊN TRÁCH** để lấy output chuẩn trước khi viết Kịch bản, Storyboard và Video Prompt (Bước 3, 4, 5). **AI AGENT TUYỆT ĐỐI KHÔNG ĐƯỢC PHÉP BỎ QUA HOẶC TỰ BỊA KỊCH BẢN MÀ KHÔNG DÙNG OUTPUT CỦA 5 SUBAGENT NÀY**:
+Mọi dự án POV / Time-Travel Vlog (`/fk-time-travel-vlog`, `/fk-vlog-guide`, `/fk-vlog-japan`) **BẮT BUỘC** phải vận hành 7 skill dưới đây làm **SUBAGENT CHUYÊN TRÁCH** để lấy output chuẩn trước khi viết Kịch bản, Storyboard và Video Prompt (Bước 3, 4, 5). **AI AGENT TUYỆT ĐỐI KHÔNG ĐƯỢC PHÉP BỎ QUA HOẶC TỰ BỊA KỊCH BẢN MÀ KHÔNG DÙNG OUTPUT CỦA 7 SUBAGENT NÀY**:
 
-### 1. Bộ 5 Subagent Bắt Buộc Để Lấy Output Viết Kịch Bản
+### 1. Bộ 7 Subagent Bắt Buộc Để Lấy Output Viết Kịch Bản
 
 | Subagent Chuyên Trách | Vai Trò & Output Cung Cấp Cho Kịch Bản (Lock Cứng) |
 |---|---|
@@ -97,6 +97,8 @@ Mọi dự án POV / Time-Travel Vlog (`/fk-time-travel-vlog`, `/fk-vlog-guide`,
 | **`fk-cinematic-transitions`** | **Subagent Kỹ Thuật Nối Cảnh & Chuyển Màn**: <br>• *Nhiệm vụ*: Thiết kế logic chuyển cảnh chuẩn vlog chân thực: Match-on-action (khớp tư thế cuối clip trước theo Rule 44), Foreground wipe (vật lướt qua che ống kính cho POV), Swing/Whip-pan (lia máy nhòe chuyển động cho Selfie), J-cut âm thanh (tiếng clip sau vào sớm 0.5s). **CẤM TUYỆT ĐỐI** bumper, dip-to-black, crossfade làm mất tính vlog thật. <br>• *Output cung cấp*: Thiết kế liên kết chuỗi cảnh và `transition_prompt` đưa vào Storyboard và `clips.json`. |
 | **`fk-gen-narrator`** | **Subagent Biên Kịch Thoại & Khẩu Hình Bản Địa**: <br>• *Nhiệm vụ*: Chuẩn hóa số từ tiếng Anh của Vlogger theo chuẩn Time-Travel Vlog Mode: **20–25 từ / clip 8s** (khớp chính xác 7.0–7.5s giọng Laomedeia, Lesson 62 & 65). BẮT BUỘC chia đều 3 mốc thời gian (`0-3s`, `3-6s`, `6-8s`) và bắt đầu nói ngay từ 0.0s (Lesson 65). Áp dụng **Sonic Isolation (Im lặng tuyệt đối 0 từ)** khi rình mồi / rình săn / tập trung cao độ. Dân bản địa không nói tiếng Anh, chỉ dùng cử chỉ hoặc âm gằn ngực tự nhiên. <br>• *Output cung cấp*: Cặp trường `narrator_text` và lời thoại nhúng trong `video_prompt` khớp từng giây. |
 | **`fk-camera-guide`** | **Subagent Đạo Diễn Hình Ảnh & Quang Học Camera**: <br>• *Nhiệm vụ*: Thiết lập quang học Smartphone Vlog tự nhiên (0.5x ultra-wide, horizontal 16:9, vertical bounce nảy dọc theo bước chân, rotational lag khi xoay người, cấm góc nhìn gimbal/flycam bay lơ lửng). Kiến trúc prompt 5 tầng (Layer 1: Chủ thể $\to$ Layer 2: Lực tiếp xúc $\to$ Layer 3: Quán tính thứ cấp $\to$ Layer 4: Phản ứng môi trường $\to$ Layer 5: Động học camera). Phân bổ tỷ lệ góc máy vàng (Golden Camera Ratio theo Lesson 66: POV ~35%, OTS ~35%, FIXED ~15%, SELFIE ~15%). <br>• *Output cung cấp*: Cỡ cảnh, vị trí đặt máy, quang học camera và bảng vật lý cho từng cảnh. |
+| **`fk-animation-vocabulary`** | **Subagent Từ Vựng Chuyển Động & Động Học Animation (Rule 57)**: <br>• *Nhiệm vụ*: Tra cứu và chuẩn hóa các thuật ngữ chuyển động của nhân vật, camera và hiệu ứng vật lý (*Anticipation*, *Overshoot*, *Settle*, *Secondary Motion*, *Pop in*, *Stagger*, *Rubber-banding*, *Rotational lag*, *Vertical bounce*, *Slide & Dampen*). Loại bỏ triệt để các tính từ/động từ mơ hồ ("moves fast", "shakes", "smoothly"). <br>• *Output cung cấp*: Các từ khóa động học chính xác đưa trực tiếp vào các mốc `0-3s`, `3-6s`, `6-8s` của `timeline_action` và `camera` trong `video_prompt` JSON. |
+| **`fk-improve-animations`** | **Subagent Thiết Kế Động Lực Học & Nhịp Độ Chuyển Động (Rule 58)**: <br>• *Nhiệm vụ*: Phân bổ ngân sách thời gian hành động (Duration Budgeting: không quá tải hành động trong 8s), thiết kế đường cong gia tốc và giảm chấn (Easing & Damping Curves), phân định rõ ràng thời điểm đạt đỉnh vận tốc và thời điểm hồi phục thăng bằng. Khử 100% chuyển động tuyến tính thô cứng (linear motion) hoặc giật cục phi tự nhiên. <br>• *Output cung cấp*: Thông số nhịp thời gian, đường cong giảm chấn, lực cản và điểm tựa tiếp xúc cơ học đưa trực tiếp vào cấu trúc prompt. |
 
 ### 2. Các Skill Điện Ảnh Bổ Trợ & Đóng Gói
 
@@ -107,10 +109,9 @@ Mọi dự án POV / Time-Travel Vlog (`/fk-time-travel-vlog`, `/fk-vlog-guide`,
 | **`/fk-capcut-edit`** | **Dựng Intro Trailer Hook**: Dùng `scripts/trailer_cuts.py` dựng trailer 30s/45s trước khi ghép master. |
 | **`/fk-research`** | Tùy chọn, gom ý tưởng hình ảnh và bối cảnh lịch sử. |
 | **`/fk-review-video` / `/fk-review-board`** | Duyệt video 720p thô trước khi upscale 1080p và xóa watermark. |
+| **`/fk-improve-animations`** | **Giám định & Tối ưu động lực học (Motion Audit & Fix Planning - Rule 58)**: Chuyên gia audit các lỗi giật khung, trôi lướt vô trọng lực, sai gia tốc; lập Motion Remediation Plan sửa prompt trước khi regen video 720p; audit tính liên tục chuyển động ở khâu cắt ghép hậu kỳ CapCut. |
 | **`/fk-youtube-seo` / `/fk-thumbnail`** | Đóng gói metadata và thumbnail YouTube chuẩn SEO. |
 | **`/fk-doctor`** | Chẩn đoán và sửa lỗi toàn bộ pipeline. |
-
-Không dùng: `/fk-gen-chain-videos` (unsupported), `/fk-gen-images` cho clip có vlogger (R2V không cần start frame), `/fk-gen-text-overlays` và `/fk-concat-fit-narrator` với text overlay/crossfade.
 
 Không dùng: `/fk-gen-chain-videos` (unsupported), `/fk-gen-images` cho clip có vlogger (R2V không cần start frame), `/fk-gen-text-overlays` và `/fk-concat-fit-narrator` với text overlay/crossfade.
 
