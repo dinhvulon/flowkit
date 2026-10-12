@@ -1,0 +1,881 @@
+[
+  {
+    "clip_id": "MASTER-GLASS",
+    "scene_name": "Cold Open / Master Shot — Glass Storm in Cave",
+    "duration": 10,
+    "aspect_ratio": "16:9",
+    "refs": ["Nora", "Nora Body", "Triceratops Juvenile"],
+    "camera": {
+      "viewpoint": "fixed camera resting firmly on the cave floor against the red earthen wall at knee height, angled outward toward the cave opening",
+      "shot_size": "medium shot",
+      "description": "Static camera locked on the dirt floor inside the cave opening. The camera does not move and nobody touches the lens. The camera lens and recording apparatus are completely outside the visible frame and never seen."
+    },
+    "style": "documentary realism, handheld 4k footage look, dramatic apocalyptic atmospheric lighting, glowing red sky outside, heavy haze and flying debris",
+    "setting": "Inside a shallow hollow cave beneath a 2-meter earthen bank at Hell Creek, 66 million BC. Creek bed glows violent crimson orange outside. Incandescent glass spherules streak diagonally through the air outside, sizzling into wet sand.",
+    "characters": [
+      {
+        "name": "Nora",
+        "visual_lock": "Nora, 26-year-old athletic woman, face and red hair in bun matching Nora face reference, wearing era-appropriate tailored outfit matching Nora Body reference.",
+        "state": "Lying on her side against the earthen wall from frame 0, dark wet mud caked thickly over her forearms and neck, soaked broad palm frond draped over her torso, right boot visible in the crimson glow."
+      },
+      {
+        "name": "Triceratops Juvenile",
+        "visual_lock": "Young Triceratops, 1.2 meters tall, pebbled scaly hide with dried red clay patches, tiny blunt brow horn buds.",
+        "state": "Enters frame at 8s from the right cave entrance, thick front foot stepping down beside Nora."
+      }
+    ],
+    "in_place": "Earthen hollow cave walls and ceiling are fully established from frame 0. Glowing crimson creek outside. Streaking glass beads outside. Wet mud on Nora's arms.",
+    "timeline_action": {
+      "0-3s": "Nora lies motionless under the dripping mud bank, chest heaving in shallow panicked breaths as incandescent glass beads sizzle into the sand outside the opening.",
+      "3-7s": "Her mud-caked left hand slowly drags the dripping palm frond tighter over her chest and neck, shielding herself from stray incandescent fragments.",
+      "7-10s": "At 8s, a heavy scaly three-toed front foot of a juvenile Triceratops steps down into the right edge of the frame right beside her face and stands motionless."
+    },
+    "speech": {
+      "speaker": "Nora",
+      "mode": "Sonic Isolation",
+      "delivery": "Dead silence in generation; cold open audio edit uses gasping whispers from script",
+      "dialogue": []
+    },
+    "dramatic_craft": {
+      "beat": "Ultimate survival threshold: shelter holding against atmospheric fire vs intrusion of prehistoric megafauna",
+      "value_turn": "Vulnerable (-5) -> Fragile shelter (+1) -> Mutual proximity with juvenile dinosaur (+2)",
+      "subtext": "Complete stripping of human hubris; surviving purely through animal instincts and earth cover",
+      "prop_and_detail": "Soaked palm frond acting as heat shield; wet red mud crust insulating skin; burning spherules hitting sand"
+    },
+    "audio": "Heavy muffled roar of atmospheric entry, sizzling hot glass spherules hitting wet creek sand, deep strained nasal breathing of Nora, heavy thud of dinosaur footstep",
+    "physics": "Camera rests on dirt ground; Nora static on ground; flying glass spherules maintain 45-degree diagonal trajectory top-left to bottom-right; dinosaur foot lands at 8s with subtle ground thud vibration",
+    "negative_constraints": [
+      "NO modern technology, NO electronics, NO artificial gear. The camera lens and operator are completely outside the visible frame and never seen.",
+      "Camera lens and recording apparatus are completely outside the visible frame and never seen.",
+      "Strictly NO spoken dialogue in generation prompt; Nora's lips stay firmly shut in dead silence.",
+      "No CGI floating artifacts; physical debris interacts directly with ground surfaces."
+    ]
+  },
+  {
+    "clip_id": "EST-01",
+    "scene_name": "Establishing Drone — Hell Creek Dawn",
+    "duration": 6,
+    "aspect_ratio": "16:9",
+    "refs": ["Hell Creek Bank", "Hell Creek Trail"],
+    "camera": {
+      "viewpoint": "high aerial viewpoint at 120 meters altitude drifting forward and downward",
+      "shot_size": "extreme wide shot",
+      "description": "Smooth cinematic high-altitude aerial drift over the prehistoric river system. No humans visible. Viewpoint is completely outside the scene."
+    },
+    "style": "cinematic nature documentary footage, early morning misty lighting, soft golden dawn, photorealistic, 4k",
+    "setting": "Hell Creek, Montana, 66 million BC at dawn (06:00). A winding brown river meanders through vast lush floodplains of dense tree ferns, flowering laurel, and fan palms. Pale morning mist drifts across the water.",
+    "characters": [],
+    "in_place": "River bends, gravel bars, and dense Cretaceous palm forests are already fully in place from frame 0. Morning mist drifts slowly left to right across the water.",
+    "timeline_action": {
+      "0-3s": "The aerial view glides smoothly forward over the wide gravel bar where early morning fog curls over the dark water.",
+      "3-6s": "Mist thins revealing the distant silhouette of a large dinosaur herd grazing peacefully in a fern prairie 300 meters away."
+    },
+    "speech": {
+      "speaker": "None",
+      "dialogue": []
+    },
+    "dramatic_craft": {
+      "beat": "Establish primeval world: calm before the extinction storm; breathtaking natural grandeur",
+      "value_turn": "Apocalyptic nightmare of Cold Open (-) -> Serene primeval morning (+)",
+      "subtext": "The earth is completely unaware of the asteroid already 12 hours out",
+      "prop_and_detail": "Meandering silty brown creek, early morning river fog, pristine canopy untouched by man"
+    },
+    "audio": "Distant primeval river flow, morning bird-like avian chirps, gentle breeze through giant fern fronds, deep low guttural rumble in the far distance",
+    "physics": "Smooth camera descent from 120m to 90m at 4 m/s; mist drifts left to right at 0.5 m/s; distant dinosaur shapes move at slow grazing pace",
+    "negative_constraints": [
+      "NO modern structures, NO roads, NO contrails, NO humans, NO camera gear visible.",
+      "NO modern gear, NO artificial items."
+    ]
+  },
+  {
+    "clip_id": "A1-01",
+    "scene_name": "River Landing & Croc Threat",
+    "duration": 6,
+    "aspect_ratio": "16:9",
+    "refs": ["Nora", "Nora Body", "Hell Creek Bank"],
+    "camera": {
+      "viewpoint": "handheld chest-level first-person POV wading in water, backing away toward gravel bank",
+      "shot_size": "medium wide shot",
+      "description": "First-person perspective looking down and forward at murky river surface from chest height. Both hands are empty. The camera lens and operator are completely outside the visible frame and never seen."
+    },
+    "style": "raw handheld POV documentary footage, natural water ripples, wet lens droplets, morning cool daylight",
+    "setting": "Hell Creek riverbank, shallow brown murky water at dawn (06:00, L1 light). Pale gravel shore visible 3 meters behind.",
+    "characters": [
+      {
+        "name": "Borealosuchus",
+        "visual_lock": "Prehistoric crocodylian, 4 meters long, dark ridged scutes along back, broad snout.",
+        "state": "Two dark ridged scute backs floating on the water surface 5 meters ahead from frame 0, drifting forward slowly."
+      }
+    ],
+    "in_place": "Two armored crocodile backs are already floating in the murky water 5 meters ahead from frame 0. River water ripples around them.",
+    "timeline_action": {
+      "0-3s": "The two dark armored croc ridges drift slowly toward the viewpoint at 0.3 m/s; water laps against Nora's thighs as the camera steps backward through the water.",
+      "3-6s": "The camera backs up faster, splashing through shallowing water toward the gravel edge as the crocs remain menacingly steady in mid-stream."
+    },
+    "speech": {
+      "speaker": "Nora",
+      "mode": "Sonic Isolation",
+      "delivery": "Dead silence; tense shallow nasal breathing only",
+      "dialogue": []
+    },
+    "dramatic_craft": {
+      "beat": "Arrival shock: immediate collision with Cretaceous apex ambush predators; retreat to land",
+      "value_turn": "Arrival alive (+) -> Ambushed in water (-)",
+      "subtext": "Survival is active every second; predators don't announce themselves",
+      "prop_and_detail": "Dark scute ridges cutting silty water; river current lapping against soaked wool tunic"
+    },
+    "audio": "Water sloshing and splashing around wading legs, deep tense breathing through nose, heavy river current, ominous water ripple SFX",
+    "physics": "Camera moves backward at 0.5 m/s; croc ridges drift forward at 0.3 m/s; water ripples radially from wading steps; gravel enters bottom frame at 5s",
+    "negative_constraints": [
+      "The camera lens and operator are completely outside the visible frame and never seen; no hands reach toward viewpoint.",
+      "Strictly NO spoken dialogue; heavy breathing only.",
+      "Crocodiles do not jump out of water or act like movie monsters; realistic reptile drift."
+    ]
+  },
+  {
+    "clip_id": "A1-02",
+    "scene_name": "Gravel Bar Selfie — Soaked Arrival",
+    "duration": 8,
+    "aspect_ratio": "16:9",
+    "refs": ["Nora", "Nora Body", "Hell Creek Bank"],
+    "camera": {
+      "viewpoint": "handheld selfie at 50 cm distance, Nora's right arm extended off-screen holding the viewpoint",
+      "shot_size": "medium close-up",
+      "description": "Nora holds the viewpoint at chest level angled slightly upward with her extended right arm. The camera lens itself and her right gripping hand are completely outside the visible frame and never seen. Only her left hand is free."
+    },
+    "style": "handheld vlog footage, natural wide-angle perspective, subtle organic hand shake, cool morning light",
+    "setting": "Pale gravel bar at Hell Creek riverbank. Murky brown creek and drifting crocodile ridges visible in the background.",
+    "characters": [
+      {
+        "name": "Nora",
+        "visual_lock": "Nora, 26, copper-red hair in damp loose bun, freckles, soaked tailored prehistoric tunic and pants matching Nora Body ref, hourglass build.",
+        "state": "Kneeling on wet gravel from frame 0, dripping wet from waist down, gasping for breath."
+      }
+    ],
+    "in_place": "Nora is kneeling on wet gravel from frame 0. Water drips from her soaked clothes into the pebbles.",
+    "timeline_action": {
+      "0-3s": "From frame 0 Nora sits up on her knees, gasping for breath, her left hand resting on her wet thigh as she recovers.",
+      "3-6s": "She glances back toward the murky river behind her, then looks straight into the lens with dry, adrenaline-fueled disbelief.",
+      "6-8s": "She steadies her breath, speaking with wry humor, shivering slightly in the cool Cretaceous morning air."
+    },
+    "speech": {
+      "speaker": "Nora",
+      "delivery": "panting, shivering, fast conversational delivery with dry adrenaline shock, rising on the punchline 'patient'",
+      "dialogue": [
+        {"t": "0-3s", "speaker": "Nora", "line": "Okay. I'm out, I'm out of the water."},
+        {"t": "3-6s", "speaker": "Nora", "line": "Those were crocodiles, two of them, and they were not curious."},
+        {"t": "6-8s", "speaker": "Nora", "line": "They were patient."}
+      ]
+    },
+    "dramatic_craft": {
+      "beat": "Vlog opening statement: recovery on dry land, cognitive recognition of predator behavior (Retention Beat C1)",
+      "value_turn": "Mortal danger (-) -> Temporary safety on gravel (+)",
+      "subtext": "Masking terrifying near-death experience with cynical professional composure",
+      "prop_and_detail": "Wet pebbles under boots; cold river water dripping from woolen cuffs; pale morning mist behind"
+    },
+    "audio": "Water dripping on gravel, shivering breath, river lapping behind, crisp morning ambient breeze",
+    "physics": "Camera shakes gently with Nora's shivering arm; body posture rises from kneel at 1s; droplets fall vertically onto gravel",
+    "negative_constraints": [
+      "The camera lens itself and her right gripping hand are completely outside the visible frame and never seen. She never reaches toward, touches, covers, or points at the camera lens. NO modern gear.",
+      "Her right arm remains extended off-screen; gripping hand is never seen.",
+      "Word count strictly 22 words matching script.md exactly.",
+      "BODY LOCK: Nora is tall and voluptuous with large natural bust in tailored tunic, NOT flat-chested, NOT slender."
+    ]
+  },
+  {
+    "clip_id": "A1-03",
+    "scene_name": "Approaching the Edmontosaurus Carcass",
+    "duration": 8,
+    "aspect_ratio": "16:9",
+    "refs": ["Hell Creek Bank"],
+    "camera": {
+      "viewpoint": "handheld first-person POV walking forward along gravel bar",
+      "shot_size": "medium wide shot",
+      "description": "First-person POV walking along gravel bank. Both hands empty and down. Viewpoint is completely outside the visible frame and never seen."
+    },
+    "style": "handheld documentary realism, natural footstep vertical bounce, morning light",
+    "setting": "Hell Creek gravel bank, 15 meters upstream. Huge ribbed ribcage and dried carcass of an adult Edmontosaurus lying on the stones.",
+    "characters": [],
+    "in_place": "Huge dinosaur carcass lies 15 meters ahead from frame 0, ribcage pointing upward, swarms of prehistoric flies buzzing around it.",
+    "timeline_action": {
+      "0-3s": "The viewpoint walks forward over crunchy gravel at 0.8 m/s toward the massive carcass.",
+      "3-6s": "Closing distance to 5 meters, revealing massive scalloped bite indentations gouged deep into the thick pelvic bone.",
+      "6-8s": "The camera stops 2 meters from the ribcage; thick black flies scatter and circle in the morning sunlight."
+    },
+    "speech": {
+      "speaker": "Nora",
+      "delivery": "hushed off-screen commentary, wary, observational, sharp drop on 'stepped away'",
+      "dialogue": [
+        {"t": "0-3s", "speaker": "Nora", "line": "Okay, that's a body. A big one."},
+        {"t": "3-6s", "speaker": "Nora", "line": "Something ate half of it last night and left."},
+        {"t": "6-8s", "speaker": "Nora", "line": "Left, or stepped away."}
+      ]
+    },
+    "dramatic_craft": {
+      "beat": "Discovery of fresh kill: deduction of apex predator territory; raising immediate question",
+      "value_turn": "Exploring land (+) -> Realizing proximity to super-predator (-)",
+      "subtext": "The hunter hasn't abandoned this meal; it's somewhere in the immediate tree line",
+      "prop_and_detail": "Massive ribcage arches like cathedral rafters; black prehistoric flies buzzing; fresh dried flesh"
+    },
+    "audio": "Crunching footsteps on loose gravel, buzzing swarm of flies, gentle river murmur, heavy hush",
+    "physics": "Natural footstep vertical camera bob at 2 Hz; fly swarm moves with chaotic brownian motion around dried flesh",
+    "negative_constraints": [
+      "NO modern technology, NO visible gear blocking lens. The camera lens and operator are completely outside the visible frame and never seen.",
+      "Word count strictly 20 words matching script.md exactly."
+    ]
+  },
+  {
+    "clip_id": "A1-04",
+    "scene_name": "Bite Groove Detail on Bone",
+    "duration": 8,
+    "aspect_ratio": "16:9",
+    "refs": ["Hell Creek Bank"],
+    "camera": {
+      "viewpoint": "macro first-person POV looking down at 30 cm distance",
+      "shot_size": "extreme close-up",
+      "description": "Macro downward view of the massive serrated bite groove in the dinosaur thigh bone. Nora's empty left hand enters to measure. The camera lens itself is completely outside the visible frame and never seen."
+    },
+    "style": "documentary macro shot, tactile texture, razor sharp focus on bone serrations, soft gravel bokeh",
+    "setting": "Hell Creek gravel bank, directly on the pelvic bone of the Edmontosaurus carcass. Flies crawling on dry sinew.",
+    "characters": [],
+    "in_place": "Deep scalloped gouge in the thick white dinosaur bone is in sharp focus from frame 0.",
+    "timeline_action": {
+      "0-3s": "Viewpoint holds steady on the massive curved bite groove showing serration scratch marks in the fossil-like bone.",
+      "3-6s": "At 3s, Nora's bare, dirt-smudged left hand enters from the lower frame and lays flat inside the single tooth gouge, easily swallowed by its width.",
+      "6-8s": "Her left hand remains static inside the bite mark, then at 6.5s withdraws down out of the frame."
+    },
+    "speech": {
+      "speaker": "Nora",
+      "delivery": "whispered, awe-struck, grim realization delivered with chill dry humor",
+      "dialogue": [
+        {"t": "0-3s", "speaker": "Nora", "line": "Look at the size of that bite."},
+        {"t": "3-6s", "speaker": "Nora", "line": "My whole hand fits in one tooth mark."},
+        {"t": "6-8s", "speaker": "Nora", "line": "I'm standing in its kitchen."}
+      ]
+    },
+    "dramatic_craft": {
+      "beat": "Sensory proof of T. rex presence: physical comparison scale without naming the monster (Setup rule)",
+      "value_turn": "Curiosity (+) -> Gut-wrenching vulnerability (-)",
+      "subtext": "Realization that human technology or intellect means zero when faced with 12,000 Newtons of jaw force",
+      "prop_and_detail": "Hand dwarfed by a single gouge; serrated enamel scrapes visible on ivory-colored bone surface"
+    },
+    "audio": "Close muffled buzzing of a solitary fly, faint creek trickle, soft gravel crunch under boot weight",
+    "physics": "Camera completely static at 30 cm; hand enters at 3s and rests flat without pressing down; hand withdraws vertically at 6.5s",
+    "negative_constraints": [
+      "NO modern tape measure, NO modern gadgets. The camera lens and operator are completely outside the visible frame and never seen.",
+      "Word count strictly 20 words matching script.md exactly."
+    ]
+  },
+  {
+    "clip_id": "A1-05",
+    "scene_name": "Selfie 12-Hour Clock & Misbelief",
+    "duration": 8,
+    "aspect_ratio": "16:9",
+    "refs": ["Nora", "Nora Body", "Hell Creek Bank"],
+    "camera": {
+      "viewpoint": "handheld selfie at 60 cm distance, Nora's right arm extended off-screen holding the viewpoint",
+      "shot_size": "medium shot",
+      "description": "Nora holds the viewpoint at chest level angled slightly upward with her extended right arm. The camera lens itself and her right gripping hand are completely outside the visible frame and never seen."
+    },
+    "style": "handheld vlog footage, documentary natural lighting, cool morning sun, warm copper hair tone",
+    "setting": "Hell Creek gravel bank. The carcass lies in the background to the left; the murky brown creek flows to the right.",
+    "characters": [
+      {
+        "name": "Nora",
+        "visual_lock": "Nora, 26, athletic voluptuous figure, auburn hair in loose practical bun, tailored linen-wool survival outfit matching Nora Body ref.",
+        "state": "Standing tall on the gravel, carcass behind her left shoulder, gesturing slightly toward the southeast horizon with her free left hand."
+      }
+    ],
+    "in_place": "Nora is standing on the gravel bank from frame 0. Carcass and river are clearly established behind her.",
+    "timeline_action": {
+      "0-3s": "Nora speaks directly to the lens with calm, confident authority, her expression resolute.",
+      "3-6s": "She gestures with her free left hand toward the distant southeast sky behind her shoulder, then looks back to the lens.",
+      "6-8s": "She offers a slight, self-assured smirk, delivering her core philosophical misbelief."
+    },
+    "speech": {
+      "speaker": "Nora",
+      "delivery": "confident, articulate, travel vlogger arrogance with subtle ironic detachment",
+      "dialogue": [
+        {"t": "0-3s", "speaker": "Nora", "line": "I picked today on purpose."},
+        {"t": "3-6s", "speaker": "Nora", "line": "Twelve hours from now, the sky over there catches fire."},
+        {"t": "6-8s", "speaker": "Nora", "line": "I'm just here to watch."}
+      ]
+    },
+    "dramatic_craft": {
+      "beat": "Planting the ticking clock & the protagonist's core misbelief (to be shattered at A4-04)",
+      "value_turn": "Survival anxiety (-) -> Arrogant intellectual superiority (+)",
+      "subtext": "Nora mistakenly believes knowledge of the future makes her a spectator rather than a casualty",
+      "prop_and_detail": "Pale morning sky innocent of smoke; rotting carcass behind providing stark visual irony"
+    },
+    "audio": "Morning wind rustling palm fronds, distant avian cries, river murmuring steadily",
+    "physics": "Camera sways slightly with arm sway; left hand gestures outward at 4s and lowers at 6s; boots firmly planted on gravel",
+    "negative_constraints": [
+      "The camera lens itself and her right gripping hand are completely outside the visible frame and never seen. NO modern gear.",
+      "Her right arm remains extended off-screen; gripping hand is never seen.",
+      "Word count strictly 20 words matching script.md exactly.",
+      "BODY LOCK: Nora has a voluptuous hourglass figure with large natural bust, tiny waist, wide hips. NOT flat-chested."
+    ]
+  },
+  {
+    "clip_id": "A1-06",
+    "scene_name": "Finding Turtle Shell & Hollow Bank",
+    "duration": 8,
+    "aspect_ratio": "16:9",
+    "refs": ["Hell Creek Bank"],
+    "camera": {
+      "viewpoint": "handheld chest-level first-person POV looking down, then panning up",
+      "shot_size": "medium shot",
+      "description": "First-person POV looking down at gravel, then panning right to the water's edge, then tilting up to the far bank. Both hands are empty until picking up shell. The camera lens is completely outside the frame."
+    },
+    "style": "handheld observational documentary footage, natural morning light, organic camera handling",
+    "setting": "Hell Creek gravel bank. A dry hollow cave sits under the red earthen bank across the river; a dark croc back lies below it.",
+    "characters": [],
+    "in_place": "An intact, hollowed-out turtle shell lies on the pale gravel 1 meter ahead from frame 0.",
+    "timeline_action": {
+      "0-3s": "Both hands reach down and pick up the dry 22 cm olive turtle shell from the gravel, turning it over to show its smooth hollow interior.",
+      "3-6s": "The viewpoint pans right to the water's edge, scooping clean river water into the shell basin.",
+      "6-8s": "The camera tilts up across the river to the far red earthen bank, lingering 2 seconds on a shallow dry cave above a waiting crocodile."
+    },
+    "speech": {
+      "speaker": "Nora",
+      "delivery": "pragmatic, quick problem-solving, casual dismissal on 'So, no'",
+      "dialogue": [
+        {"t": "0-3s", "speaker": "Nora", "line": "Turtle shell, size of a dinner plate."},
+        {"t": "3-6s", "speaker": "Nora", "line": "There's a dry hollow under that far bank."},
+        {"t": "6-8s", "speaker": "Nora", "line": "Crocodiles right below it. So, no."}
+      ]
+    },
+    "dramatic_craft": {
+      "beat": "Planting essential props and locations: water vessel acquired (shatters A3-06) & shelter spotted (payoff MASTER)",
+      "value_turn": "Need water vessel (-) -> Solution found (+) -> Cave inaccessible (-)",
+      "subtext": "Instinctive scouting for shelter that will save her life 12 hours later",
+      "prop_and_detail": "22 cm olive turtle shell (Q2 prop geometry); red earthen undercut cave across the creek"
+    },
+    "audio": "Gravel scraping as shell is lifted, gentle water scoop slosh, distant low reptilian hiss",
+    "physics": "Hands lift shell smoothly at 1s; water enters shell with fluid surface tension; camera tilt up takes 1.5s",
+    "negative_constraints": [
+      "NO manufactured modern bottle, NO metal canteen. The camera lens and operator are completely outside the visible frame and never seen.",
+      "Word count strictly 21 words matching script.md exactly."
+    ]
+  },
+  {
+    "clip_id": "A1-07",
+    "scene_name": "Knotting Turtle Shell Vessel",
+    "duration": 8,
+    "aspect_ratio": "16:9",
+    "refs": ["Nora", "Nora Body", "Hell Creek Bank"],
+    "camera": {
+      "viewpoint": "fixed camera resting on a bleached driftwood log 50 cm high, 2 meters away",
+      "shot_size": "medium shot",
+      "description": "Static camera resting on a bleached driftwood log. Nora is framed from waist up. Nobody touches the camera. The camera lens and operator are completely outside the visible frame and never seen."
+    },
+    "style": "documentary field craft, crisp early morning sunlight, warm textures of leather and fiber",
+    "setting": "Hell Creek gravel bank beside a large driftwood log. Clear view of the riverbank behind.",
+    "characters": [
+      {
+        "name": "Nora",
+        "visual_lock": "Nora, 26, copper hair in practical bun, athletic voluptuous build in tailored prehistoric outfit matching Nora Body ref.",
+        "state": "Standing waist-up from frame 0, holding filled turtle shell in left hand, twisting palm fiber cord with right hand."
+      }
+    ],
+    "in_place": "Nora is standing at the log from frame 0. Turtle shell and twisted palm fiber cord are in her hands.",
+    "timeline_action": {
+      "0-3s": "Nora threads the twisted palm cord through two drilled holes in the turtle shell rim, looping it tight.",
+      "3-6s": "She fastens the knot securely to the leather harness at her left hip, testing its tension with a tug.",
+      "6-8s": "She looks directly toward the camera lens, resting both hands on her hips, speaking with wry humor."
+    },
+    "speech": {
+      "speaker": "Nora",
+      "delivery": "focused, practical crafting tone, shifting to dry humor punchline on 'crocodile pool'",
+      "dialogue": [
+        {"t": "0-3s", "speaker": "Nora", "line": "Palm fibre, twisted twice, through the gaps in the rim."},
+        {"t": "3-6s", "speaker": "Nora", "line": "If this knot fails today,"},
+        {"t": "6-8s", "speaker": "Nora", "line": "I'm drinking from the crocodile pool."}
+      ]
+    },
+    "dramatic_craft": {
+      "beat": "Planting the prop vulnerability: tying the makeshift vessel cord (Chekhov's knot: snaps in A3-06)",
+      "value_turn": "Unsecured water (-) -> Water secured to hip (+)",
+      "subtext": "Foreshadowing the loss of water that will drive her into extreme desperation",
+      "prop_and_detail": "Twisted plant-fiber cord; dark olive turtle shell with chipped rear edge knotted to left hip harness"
+    },
+    "audio": "Friction sound of plant fiber cord pulling taut, soft clink of shell against leather buckle, gentle breeze",
+    "physics": "Camera completely motionless; hands execute knot tying with realistic finger motor mechanics; shell hangs at left hip at 6s",
+    "negative_constraints": [
+      "NO modern knots, NO nylon ropes, NO synthetic straps. Camera lens completely off-screen.",
+      "Word count strictly 21 words matching script.md exactly.",
+      "BODY LOCK: Voluptuous hourglass physique in fitted tunic, NOT flat-chested."
+    ]
+  },
+  {
+    "clip_id": "A1-08",
+    "scene_name": "Forest Wall & Game Trail Entrance",
+    "duration": 8,
+    "aspect_ratio": "16:9",
+    "refs": ["Hell Creek Trail"],
+    "camera": {
+      "viewpoint": "handheld chest-level first-person POV standing still, then slow horizontal pan",
+      "shot_size": "medium wide shot",
+      "description": "First-person POV facing the impenetrable wall of Cretaceous jungle, then slowly panning right to reveal a muddy trail opening. Both hands empty. Camera lens is completely outside the visible frame and never seen."
+    },
+    "style": "documentary environmental POV, deep subtropical lush green, dappled morning canopy sunlight",
+    "setting": "Edge of Hell Creek floodplain jungle. Towering Sabalites palms, giant tree ferns, and thick tangled understory.",
+    "characters": [],
+    "in_place": "Dense green jungle wall is established from frame 0. Red mud game trail cuts through on the right.",
+    "timeline_action": {
+      "0-3s": "Camera faces the solid, impenetrable wall of giant fern fronds and palm trunks, completely opaque beyond 2 meters.",
+      "3-6s": "Camera executes a smooth horizontal pan to the right, revealing a wide, heavily churned red mud path cutting into the jungle.",
+      "6-8s": "Camera holds steady on the dark entrance of the game trail, where broken branches hang high overhead."
+    },
+    "speech": {
+      "speaker": "Nora",
+      "delivery": "whispered, cautious, analytical narration, lingering on 'Something big'",
+      "dialogue": [
+        {"t": "0-3s", "speaker": "Nora", "line": "Forest is a solid wall, I can't see two metres in."},
+        {"t": "3-6s", "speaker": "Nora", "line": "But that's a path."},
+        {"t": "6-8s", "speaker": "Nora", "line": "Something big made it."}
+      ]
+    },
+    "dramatic_craft": {
+      "beat": "Threshold crossing: finding the game trail that leads from riverbank into the interior",
+      "value_turn": "Stuck on exposed gravel (-) -> Path found (+) -> Path made by giant beasts (?)",
+      "subtext": "Choosing the lesser of two evils: stay on the crocodile bank or enter megafauna highway",
+      "prop_and_detail": "Churned red clay path; trampled tree ferns 3 meters wide; deep jungle canopy blocking direct sun"
+    },
+    "audio": "Hum of subtropical insects, distant rustling canopy, soft squelch of wet soil under boots",
+    "physics": "Camera holds static for 3s, then pans right at 15 deg/s, settling static for final 2s",
+    "negative_constraints": [
+      "NO paved trail, NO human signs, NO markers. The camera lens and operator are completely outside the visible frame and never seen.",
+      "Word count strictly 19 words matching script.md exactly."
+    ]
+  },
+  {
+    "clip_id": "A1-09",
+    "scene_name": "Macro Footprint with Cloudy Water",
+    "duration": 8,
+    "aspect_ratio": "16:9",
+    "refs": ["Hell Creek Trail"],
+    "camera": {
+      "viewpoint": "macro first-person POV looking straight down from 1 meter height",
+      "shot_size": "extreme close-up",
+      "description": "Macro downward view of a massive round three-toed dinosaur footprint in wet red mud. Nora's right boot enters the frame to compare scale. The camera lens itself is completely outside the visible frame and never seen."
+    },
+    "style": "tactile nature macro, rich red clay texture, muddy water reflection, morning light glint",
+    "setting": "Hell Creek game trail, deep churned red mud. Thick palm roots bordering the footprint impression.",
+    "characters": [],
+    "in_place": "A massive rounded print 80 cm across, filled with silty brown water, is centered from frame 0.",
+    "timeline_action": {
+      "0-3s": "Viewpoint holds on the massive rounded depression in the mud, where silty brown puddle water is still swirling.",
+      "3-6s": "Nora's era-appropriate right leather boot steps into the lower edge of the frame right beside the track, looking tiny by comparison.",
+      "6-8s": "Her boot holds static for scale comparison, then at 6.5s withdraws down out of the frame."
+    },
+    "speech": {
+      "speaker": "Nora",
+      "delivery": "hushed, urgent deduction, tense gravelly whisper on 'close'",
+      "dialogue": [
+        {"t": "0-3s", "speaker": "Nora", "line": "Round footprint, wider than my shoulders."},
+        {"t": "3-6s", "speaker": "Nora", "line": "Water inside is still cloudy, so it's fresh."},
+        {"t": "6-8s", "speaker": "Nora", "line": "Whatever made this is close."}
+      ]
+    },
+    "dramatic_craft": {
+      "beat": "Tracking deduction: reading physical evidence of immediate proximity (Lu Jun detail principle)",
+      "value_turn": "Abstract danger (-) -> Imminent physical encounter (-)",
+      "subtext": "Cloudy water means seconds, not hours; the beast is within listening distance",
+      "prop_and_detail": "80 cm wide rounded print; cloudy clay silt still settling in water; blunt hoof impressions"
+    },
+    "audio": "Squelch of mud as boot steps down, gentle water ripple inside print, soft insect hum",
+    "physics": "Camera static at 1m height; boot enters at 3s and leaves footprint at 6.5s; water swirls settle slowly",
+    "negative_constraints": [
+      "NO modern rubber soles, NO brand logos. The camera lens and operator are completely outside the visible frame and never seen.",
+      "Word count strictly 19 words matching script.md exactly."
+    ]
+  },
+  {
+    "clip_id": "A1-10",
+    "scene_name": "Over-The-Shoulder First Herd Sighting",
+    "duration": 8,
+    "aspect_ratio": "16:9",
+    "refs": ["Nora", "Nora Body", "Hell Creek Trail"],
+    "camera": {
+      "viewpoint": "over-the-shoulder POV behind Nora's left shoulder, peering through fern fronds",
+      "shot_size": "medium shot",
+      "description": "Nora's head and left shoulder occupy the left third foreground, crouching behind giant fern leaves. The right two-thirds background shows the Triceratops herd grazing in a sunlit fern meadow 40 meters away. Camera lens completely off-screen."
+    },
+    "style": "cinematic over-the-shoulder wildlife documentary, dappled forest foreground, bright sunlit clearing background",
+    "setting": "Hell Creek game trail opening into a wide sunlit fern meadow. Giant cycads and flowering magnolias.",
+    "characters": [
+      {
+        "name": "Nora",
+        "visual_lock": "Nora, 26, athletic voluptuous build, auburn hair in bun, tailored survival tunic matching Nora Body ref.",
+        "state": "Crouching in foreground left from frame 0, whispering over her shoulder while keeping eyes on the herd."
+      },
+      {
+        "name": "Triceratops Herd",
+        "visual_lock": "Seven to eight adult and subadult Triceratops horridus, massive horned skulls with bony frills, pebbled gray-brown hides.",
+        "state": "Grazing calmly in the meadow 40 meters away from frame 0, moving slowly left to right."
+      }
+    ],
+    "in_place": "Nora is crouching behind ferns in left foreground from frame 0. Seven to eight Triceratops graze peacefully in the clearing.",
+    "timeline_action": {
+      "0-3s": "Nora parts the fern fronds slightly with her left hand, peering into the sunlit clearing at the massive grazing silhouettes.",
+      "3-6s": "She glances back toward the lens, whispering with cautious awe while gesturing gently toward the meadow.",
+      "6-8s": "She turns her gaze back to the herd, her expression a mix of wonder and lingering hesitation."
+    },
+    "speech": {
+      "speaker": "Nora",
+      "delivery": "hushed whisper, tense awe, slight nervous hesitation on 'I hope'",
+      "dialogue": [
+        {"t": "0-3s", "speaker": "Nora", "line": "There. Seven, eight of them, horned, grazing."},
+        {"t": "3-6s", "speaker": "Nora", "line": "They're the biggest things in this valley."},
+        {"t": "6-8s", "speaker": "Nora", "line": "Big means safe, I hope."}
+      ]
+    },
+    "dramatic_craft": {
+      "beat": "First herd contact: identifying potential protection; planting naive assumption 'Big means safe'",
+      "value_turn": "Lost and stalked (-) -> Potential protective shield found (+)",
+      "subtext": "The tragic irony of assuming mega-herbivores are gentle protectors",
+      "prop_and_detail": "Deep green fern fronds framing the lens; giant horned frills chewing palm foliage in morning light"
+    },
+    "audio": "Distant rhythmic chewing and tearing of foliage, heavy low guttural grunts from the herd, Nora's warm whisper",
+    "physics": "Camera static over shoulder; fern leaf moves slightly with left hand; dinosaurs move at slow grazing pace 0.2 m/s",
+    "negative_constraints": [
+      "The camera lens itself is completely outside the visible frame and never seen. NO modern gear.",
+      "Word count strictly 19 words matching script.md exactly.",
+      "BODY LOCK: Nora in tailored outfit with voluptuous curves visible in OTS framing."
+    ]
+  },
+  {
+    "clip_id": "A1-S1",
+    "scene_name": "Overconfident Selfie Before Approach",
+    "duration": 8,
+    "aspect_ratio": "16:9",
+    "refs": ["Nora", "Nora Body", "Hell Creek Trail"],
+    "camera": {
+      "viewpoint": "handheld selfie at 50 cm distance, Nora's right arm extended off-screen holding the viewpoint",
+      "shot_size": "medium close-up",
+      "description": "Nora holds the viewpoint at chest level angled slightly upward with her extended right arm. The camera lens itself and her right gripping hand are completely outside the visible frame and never seen. The grazing herd is visible in the soft bokeh behind her."
+    },
+    "style": "handheld travel vlog footage, bright morning sunshine, casual playful hubris",
+    "setting": "Edge of the fern brush at Hell Creek Trail. Open sunlit meadow and grazing horned dinosaurs in the background.",
+    "characters": [
+      {
+        "name": "Nora",
+        "visual_lock": "Nora, 26, copper hair in loose bun, sunlit freckles, athletic voluptuous figure in tailored survival tunic matching Nora Body ref.",
+        "state": "Smiling confidently into the lens from frame 0, beginning to step backward out of the brush into the meadow."
+      }
+    ],
+    "in_place": "Nora is standing at the brush edge from frame 0. Triceratops herd grazes peacefully behind her.",
+    "timeline_action": {
+      "0-3s": "Nora smiles into the lens with casual, dismissive confidence, whispering conspiratorially.",
+      "3-6s": "She gestures backward toward the massive horned shapes with a playful shrug, entirely relaxed.",
+      "6-8s": "She turns her torso and takes a confident step out of the bushes toward the open meadow, flashing a wry grin."
+    },
+    "speech": {
+      "speaker": "Nora",
+      "delivery": "smug, playful, classic travel vlogger arrogance, airy dismissal on 'Just watch'",
+      "dialogue": [
+        {"t": "0-3s", "speaker": "Nora", "line": "They're massive, but they're strictly vegetarians."},
+        {"t": "3-6s", "speaker": "Nora", "line": "They will completely ignore me out here."},
+        {"t": "6-8s", "speaker": "Nora", "line": "Just you watch."}
+      ]
+    },
+    "dramatic_craft": {
+      "beat": "Fatal overconfidence beat: classic dramatic irony right before the bull charge",
+      "value_turn": "Careful stealth (+) -> Blind complacency (-)",
+      "subtext": "Treating 6-ton wild animals like zoo petting exhibits; pride before the fall",
+      "prop_and_detail": "Dappled morning sun on auburn hair; massive horns chewing foliage peacefully in background"
+    },
+    "audio": "Soft morning breeze, crisp vocal delivery, distant tearing of branches, bird-like chirps",
+    "physics": "Camera tracks Nora's step backward; body sways naturally with walking motion; herd remains peaceful in bokeh",
+    "negative_constraints": [
+      "The camera lens itself and her right gripping hand are completely outside the visible frame and never seen. NO modern gear.",
+      "Her right arm remains extended off-screen; gripping hand is never seen.",
+      "Word count strictly 16 words matching script.md exactly.",
+      "BODY LOCK: Nora has large natural bust in fitted tunic, hourglass silhouette, NOT flat-chested."
+    ]
+  },
+  {
+    "clip_id": "A1-11",
+    "scene_name": "POV Stepping Out & Bull Alert",
+    "duration": 6,
+    "aspect_ratio": "16:9",
+    "refs": ["Triceratops Bull"],
+    "camera": {
+      "viewpoint": "handheld chest-level first-person POV walking forward 2 steps then freezing",
+      "shot_size": "medium wide shot",
+      "description": "First-person POV taking two steps out of the brush onto open grass, then abruptly freezing. Both hands empty. The camera lens and operator are completely outside the visible frame and never seen."
+    },
+    "style": "tense observational documentary footage, sudden drop in atmospheric comfort, harsh morning sunlight",
+    "setting": "Hell Creek fern meadow. An immense adult bull Triceratops stands 25 meters ahead, head lowered chewing.",
+    "characters": [
+      {
+        "name": "Bull Triceratops",
+        "visual_lock": "Adult male Triceratops horridus, 9 tons, broken left horn tip, scarred neck frill with flushed red vascular pattern, squared massive beak.",
+        "state": "Head down grazing at 25m from frame 0; lifts head sharply at 2s, eyes locking onto the camera."
+      }
+    ],
+    "in_place": "Bull Triceratops is 25 meters ahead from frame 0. Open meadow between brush and dinosaur.",
+    "timeline_action": {
+      "0-2s": "The viewpoint takes two crunching steps out onto the open grass, closing distance to 22 meters as the bull chews.",
+      "2-4s": "The bull suddenly stops chewing, jerks its massive horned head up, and turns its broad skull directly toward the camera.",
+      "4-6s": "The camera freezes dead still; the bull's broken left horn points forward, and its bony frill visibly flushes dull crimson."
+    },
+    "speech": {
+      "speaker": "Nora",
+      "mode": "Sonic Isolation",
+      "delivery": "Dead silence; frozen breath only",
+      "dialogue": []
+    },
+    "dramatic_craft": {
+      "beat": "Sudden territorial challenge: predator vs territorial herbivore reality check (Sonic Isolation)",
+      "value_turn": "Carefree approach (+) -> Instant territorial lock (-)",
+      "subtext": "Herbivores kill more humans than carnivores; the bull sees an intruder, not a fan",
+      "prop_and_detail": "Broken left horn tip (identifier Q3); vascular red flush spreading across bone frill"
+    },
+    "audio": "Sudden cessation of bird songs, heavy wet exhalation through dinosaur nostrils, footstep freeze",
+    "physics": "Camera moves forward 1 m/s for 2s, then decelerates to 0 m/s; bull raises 1.5-ton skull with powerful neck inertia",
+    "negative_constraints": [
+      "The camera lens and operator are completely outside the visible frame and never seen.",
+      "Strictly NO spoken dialogue; dead silence.",
+      "Bull does not roar like a movie lion; deep nasal snort only."
+    ]
+  },
+  {
+    "clip_id": "A1-12a",
+    "scene_name": "POV Bull Charge Chain (1/3) — The Charge",
+    "duration": 4,
+    "aspect_ratio": "16:9",
+    "refs": ["Triceratops Bull"],
+    "camera": {
+      "viewpoint": "handheld chest-level first-person POV frozen in terror",
+      "shot_size": "medium shot",
+      "description": "First-person POV frozen at meadow edge. The camera lens and operator are completely outside the visible frame and never seen. Static camera position facing the oncoming charging beast."
+    },
+    "style": "visceral survival documentary, kinetic camera tremble, blurred charging mass, bright daylight",
+    "setting": "Hell Creek fern meadow. Open muddy turf leading straight to the camera.",
+    "characters": [
+      {
+        "name": "Bull Triceratops",
+        "visual_lock": "Adult male Triceratops horridus, broken left horn, scarred flushed frill, 9 tons.",
+        "state": "Standing 15m away facing camera from frame 0, head lowered; explodes into charge."
+      }
+    ],
+    "in_place": "Bull Triceratops is 15 meters away facing directly at the viewpoint with lowered head from frame 0.",
+    "timeline_action": {
+      "0-2s": "From frame 0 the bull drops its beak to the dirt and surges forward, accelerating directly toward the viewpoint.",
+      "2-4s": "The bull covers ground in three massive, thunderous strides, closing from 15m to 8m as clods of mud tear from its forefeet; clip cuts mid-stride at 8 meters."
+    },
+    "speech": {
+      "speaker": "Nora",
+      "mode": "Sonic Isolation",
+      "dialogue": []
+    },
+    "dramatic_craft": {
+      "beat": "Inciting territorial explosion (Hardest sequence C2 · Chain 1/3): full momentum charge",
+      "value_turn": "Standoff (-) -> Imminent lethal collision (- -)",
+      "subtext": "Nine tons of armored bone moving at 25 km/h; absolute physical helplessness",
+      "prop_and_detail": "Lowered nose horn pointing straight down the lens; mud spraying back from massive front claws"
+    },
+    "audio": "Thunderous low frequency ground thuds, wet turf tearing, violent air displacement, sharp intake of breath",
+    "physics": "Bull accelerates from 0 to 4 m/s toward camera; distance decreases from 15m to 8m; subtle camera micro-tremble at 4 Hz",
+    "negative_constraints": [
+      "The camera lens and operator are completely outside the visible frame and never seen.",
+      "Strictly NO spoken dialogue; silence of pure shock.",
+      "Chain rule: ends abruptly mid-stride with bull at 8 meters distance."
+    ]
+  },
+  {
+    "clip_id": "A1-12b",
+    "scene_name": "POV Bull Charge Chain (2/3) — The Skid & Warning",
+    "duration": 4,
+    "aspect_ratio": "16:9",
+    "refs": ["Triceratops Bull"],
+    "camera": {
+      "viewpoint": "handheld chest-level first-person POV jerking backward half a step",
+      "shot_size": "medium shot",
+      "description": "First-person POV at meadow edge, matching exact camera position of A1-12a. The camera lens and operator are completely outside the visible frame and never seen."
+    },
+    "style": "raw kinetic documentary footage, violent camera jolt, flying mud spray, harsh daylight",
+    "setting": "Hell Creek fern meadow. Muddy ground right in front of the camera.",
+    "characters": [
+      {
+        "name": "Bull Triceratops",
+        "visual_lock": "Adult male Triceratops horridus, broken left horn, scarred flushed frill, 9 tons.",
+        "state": "Opens at 8 meters mid-charge (matching A1-12a end frame); plants forelegs and skids."
+      }
+    ],
+    "in_place": "Bull Triceratops is 8 meters away mid-stride from frame 0, exactly matching the ending frame of A1-12a.",
+    "timeline_action": {
+      "0-2s": "Opens on the bull mid-charge at 8m; it abruptly plants both massive front pillars, skidding to a halt 6 meters away with churned mud spraying forward.",
+      "2-4s": "Standing tall 6 meters away, the bull scrapes its right front foot twice violently against the turf, blasting red mud toward the camera; viewpoint jerks backward."
+    },
+    "speech": {
+      "speaker": "Nora",
+      "mode": "Sonic Isolation",
+      "dialogue": []
+    },
+    "dramatic_craft": {
+      "beat": "The fake-out charge (Chain 2/3): demonstration of territorial dominance without lethal intent",
+      "value_turn": "Lethal strike (- -) -> Warning display (-)",
+      "subtext": "The bull was never hunting; it was asserting dominance and boundary lines",
+      "prop_and_detail": "Front claws gouging deep trenches in red clay; wet mud spraying toward the lens; steaming nostrils"
+    },
+    "audio": "Deafening ground skid impact, violent wet mud splattering close, guttural chest vibration rumble",
+    "physics": "Bull decelerates from 4 m/s to 0 m/s between 8m and 6m; foot scrapes kick mud clods forward at 6 m/s; camera recoils backward 0.3m",
+    "negative_constraints": [
+      "The camera lens and operator are completely outside the visible frame and never seen.",
+      "Strictly NO spoken dialogue.",
+      "Chain rule: ends with bull standing at 6 meters, camera tipping backward."
+    ]
+  },
+  {
+    "clip_id": "A1-12c",
+    "scene_name": "POV Bull Charge Chain (3/3) — The Fall into Ferns",
+    "duration": 4,
+    "aspect_ratio": "16:9",
+    "refs": ["Triceratops Bull"],
+    "camera": {
+      "viewpoint": "handheld first-person POV tumbling backward onto ground, tilting up to canopy",
+      "shot_size": "medium shot to extreme close-up of foliage",
+      "description": "First-person POV tipping backward and crashing into deep fern fronds. The camera flips backward and upward, settling on the green palm canopy above. Both hands are empty. The camera lens is completely outside the frame."
+    },
+    "style": "chaotic handheld fall physics, fast motion blur, green fern wipe, canopy daylight",
+    "setting": "Hell Creek fern meadow edge. Deep tangle of giant fern fronds and palm bushes.",
+    "characters": [
+      {
+        "name": "Bull Triceratops",
+        "visual_lock": "Adult male Triceratops horridus, broken left horn, scarred flushed frill, 9 tons.",
+        "state": "Opens standing 6 meters away with lowered head (matching A1-12b end frame); leaves frame as camera tumbles."
+      }
+    ],
+    "in_place": "Bull stands 6 meters away facing camera from frame 0 as viewpoint is already tilting backward.",
+    "timeline_action": {
+      "0-2s": "From frame 0 the viewpoint tips backward out of control; the bull disappears out of the bottom frame as green fern leaves whip violently across the lens.",
+      "2-4s": "The viewpoint crashes onto the soft spongy fern bed, rocking once and settling motionless, looking straight up through towering palm fronds at the pale morning sky."
+    },
+    "speech": {
+      "speaker": "Nora",
+      "mode": "Sonic Isolation",
+      "delivery": "A single raw, cracked shriek of pure panic cutting out as she hits the ground",
+      "dialogue": []
+    },
+    "dramatic_craft": {
+      "beat": "Loss of control & ground impact (Chain 3/3): physical collapse into undergrowth",
+      "value_turn": "Active agent (-) -> Knocked flat on back (- -)",
+      "subtext": "Gravity and fear stripping away the final shred of composure; survivor reflex",
+      "prop_and_detail": "Giant green fern fronds whipping across the frame; soft thud of forest floor moss cushioning the fall"
+    },
+    "audio": "A single ragged cracking scream of panic, violent rustle of crushing fern fronds, heavy dull body thud into moss, dazed ringing silence",
+    "physics": "Rotational pitch backward at 90 deg/s; vertical drop of 1.2 meters to ground; settling bounce at 2.5s",
+    "negative_constraints": [
+      "The camera lens and operator are completely outside the visible frame and never seen; no hands reach to camera.",
+      "No words spoken; single inarticulate shriek only.",
+      "Chain rule: ends static looking up into palm canopy, establishing start position for A1-13."
+    ]
+  },
+  {
+    "clip_id": "A1-13",
+    "scene_name": "Lying in Ferns — Adrenaline Relief Selfie",
+    "duration": 8,
+    "aspect_ratio": "16:9",
+    "refs": ["Nora", "Nora Body", "Hell Creek Trail"],
+    "camera": {
+      "viewpoint": "handheld selfie from above, Nora lying on her side in the ferns looking up at viewpoint",
+      "shot_size": "medium close-up",
+      "description": "Nora lies on her side nestled in the giant fern fronds, her right arm extended upward off-screen holding the viewpoint. A broad green fern leaf lies draped across the upper frame. The camera lens itself and her right gripping hand are completely outside the visible frame and never seen."
+    },
+    "style": "raw intimate survival vlog footage, dappled green shadow, chest-heaving realism",
+    "setting": "Hell Creek meadow edge, deep bed of crushed fern fronds under dense palm canopy.",
+    "characters": [
+      {
+        "name": "Nora",
+        "visual_lock": "Nora, 26, auburn hair escaping bun with dirt smudges on forehead and temple, voluptuous figure in tailored survival tunic matching Nora Body ref.",
+        "state": "Lying on her side in crushed ferns from frame 0, chest heaving violently, gasping for air."
+      }
+    ],
+    "in_place": "Nora is lying in the crushed ferns from frame 0, matching the end frame of A1-12c. Fern frond rests across the frame.",
+    "timeline_action": {
+      "0-3s": "From frame 0 Nora lies on her side, chest heaving in rapid shallow breaths, her eyes wide with lingering shock.",
+      "3-6s": "She blinks, slowly processing that she is unharmed; a ragged exhalation escapes her lips as she turns her gaze into the lens.",
+      "6-8s": "A weak, self-deprecating smile touches her lips as she delivers her dry humor survival punchline."
+    },
+    "speech": {
+      "speaker": "Nora",
+      "delivery": "breathless, raspy gasping, transitioning to dry self-deprecating humor on 'Message received'",
+      "dialogue": [
+        {"t": "0-3s", "speaker": "Nora", "line": "He stopped. He stopped six metres short."},
+        {"t": "3-6s", "speaker": "Nora", "line": "That was a warning, not an attack."},
+        {"t": "6-8s", "speaker": "Nora", "line": "Message received, big guy."}
+      ]
+    },
+    "dramatic_craft": {
+      "beat": "Adrenaline decompression: interpreting the charge as a boundary warning rather than murder attempt",
+      "value_turn": "Near death shock (- -) -> Survival understanding & dry humor (+)",
+      "subtext": "Humor as an armor against paralyzing terror; acknowledging the beast's supremacy",
+      "prop_and_detail": "Crushed fern fronds trembling with each ragged breath; smear of dark mud on cheekbone"
+    },
+    "audio": "Heaving ragged gasps, rustle of fern fronds vibrating with breathing, distant deep foot thud of bull retreating",
+    "physics": "Camera shakes subtly with Nora's trembling extended arm; chest moves with prominent vertical displacement at 0.8 Hz",
+    "negative_constraints": [
+      "The camera lens itself and her right gripping hand are completely outside the visible frame and never seen. NO modern gear.",
+      "Her right arm remains extended off-screen; gripping hand is never seen.",
+      "Word count strictly 18 words matching script.md exactly.",
+      "BODY LOCK: Voluptuous curves and heavy natural bust in fitted tunic clearly visible lying down, NOT flat-chested."
+    ]
+  },
+  {
+    "clip_id": "A1-14",
+    "scene_name": "Seated at Edge — Act 1 Task Anchor",
+    "duration": 10,
+    "aspect_ratio": "16:9",
+    "refs": ["Nora", "Nora Body", "Hell Creek Trail"],
+    "camera": {
+      "viewpoint": "fixed camera resting on a mossy tree stump 2 meters away at chest height of a seated person",
+      "shot_size": "medium shot",
+      "description": "Static camera locked on a mossy tree stump. Nora sits waist-up on the left side of the frame. The grazing herd is visible in the meadow 30 meters behind her on the right. Nobody touches the camera. The camera lens and operator are completely outside the visible frame and never seen."
+    },
+    "style": "contemplative wildlife documentary, clean warm morning sunlight, crisp shadow edges, rich green floodplain",
+    "setting": "Hell Creek trail edge overlooking the broad fern meadow. Bright mid-morning sunlight (L2 light, 08:00).",
+    "characters": [
+      {
+        "name": "Nora",
+        "visual_lock": "Nora, 26, athletic voluptuous figure, auburn hair tied back securely, tailored linen survival outfit matching Nora Body ref.",
+        "state": "Sitting quietly waist-up on a fallen log at left frame from frame 0, hands resting on knees, watching the herd."
+      },
+      {
+        "name": "Triceratops Herd",
+        "visual_lock": "Adult Triceratops herd grazing calmly 30 meters away in the background.",
+        "state": "Grazing steadily in the background right from frame 0."
+      }
+    ],
+    "in_place": "Nora is seated on the log at left from frame 0. Herd is grazing 30 meters away on the right. Sunlight is fully established.",
+    "timeline_action": {
+      "0-3s": "Nora sits motionless on the fallen log, looking out at the herd, her posture humble and still.",
+      "3-7s": "She turns her head toward the camera lens, speaking with quiet, disciplined determination.",
+      "7-10s": "She settles her gaze back onto the grazing herd, remaining completely still as the warm breeze ruffles her hair."
+    },
+    "speech": {
+      "speaker": "Nora",
+      "delivery": "calm, disciplined, quiet resolve, natural conversational cadence",
+      "dialogue": [
+        {"t": "0-3s", "speaker": "Nora", "line": "So I can't walk in. Not yet."},
+        {"t": "3-7s", "speaker": "Nora", "line": "I sit here at the edge, where they can see me."},
+        {"t": "7-10s", "speaker": "Nora", "line": "I don't move. And I wait."}
+      ]
+    },
+    "dramatic_craft": {
+      "beat": "Act 1 Dramatic Climax & Task Anchor: accepting outside status, adopting passive integration strategy",
+      "value_turn": "Impulsive intrusion (-) -> Patient strategic observation (+)",
+      "subtext": "Setting the master task of Act 2: earn the right to exist in their perimeter through stillness",
+      "prop_and_detail": "Mossy fallen log; turtle shell resting safely at left hip; herd moving at 0.2 m/s 30 meters behind"
+    },
+    "audio": "Gentle forest canopy breeze, distant rhythmic chewing of dinosaurs, Nora's clear quiet voice, primeval tranquility",
+    "physics": "Camera completely motionless; Nora seated motionless with subtle breathing; herd shifts slowly in background",
+    "negative_constraints": [
+      "NO modern gear, NO artificial items. The camera lens and operator are completely outside the visible frame and never seen.",
+      "Word count strictly 24 words matching script.md exactly.",
+      "BODY LOCK: Nora in tailored survival tunic, voluptuous hourglass figure, NOT flat-chested, NOT slender."
+    ]
+  }
+]

@@ -1,0 +1,881 @@
+[
+  {
+    "clip_id": "MASTER-GLASS",
+    "scene_name": "Mở đầu / Master Shot — Bão thủy tinh trong hang",
+    "duration": 10,
+    "aspect_ratio": "16:9",
+    "refs": ["Nora", "Nora Body", "Triceratops Juvenile"],
+    "camera": {
+      "viewpoint": "máy quay cố định đặt vững chắc trên sàn hang tựa vào vách đất đỏ ở độ cao ngang đầu gối, hướng chếch ra ngoài cửa hang",
+      "shot_size": "cảnh trung (medium shot)",
+      "description": "Máy quay tĩnh khóa chặt trên sàn đất bên trong cửa hang. Máy quay không di chuyển và không ai chạm vào ống kính. Ống kính máy quay và thiết bị ghi hình hoàn toàn nằm ngoài khung hình nhìn thấy và không bao giờ xuất hiện."
+    },
+    "style": "phim tài liệu chân thực, phong cách thước phim cầm tay 4k, ánh sáng khí quyển tận thế kịch tính, bầu trời đỏ rực bên ngoài, sương mù dày đặc và mảnh vỡ bay lượn",
+    "setting": "Bên trong một hang hốc nông dưới bờ đất 2 mét tại Hell Creek, 66 triệu năm TCN. Lòng suối bên ngoài rực sáng màu cam thẫm bạo lực. Những hạt thủy tinh nung đỏ bay xẹt qua không khí bên ngoài theo đường chéo, xèo xèo rơi xuống bãi cát ướt.",
+    "characters": [
+      {
+        "name": "Nora",
+        "visual_lock": "Nora, phụ nữ lực lưỡng 26 tuổi, khuôn mặt và mái tóc đỏ búi khớp với tham khảo khuôn mặt Nora, mặc trang phục may đo hợp thời kỳ khớp với tham khảo Thân hình Nora.",
+        "state": "Nằm nghiêng tựa vào vách đất từ khung hình 0, bùn ướt sậm bám dày cộp quanh cẳng tay và cổ, một tàu lá cọ rộng ngấm nước phủ hờ trên ngực, chiếc bốt bên phải lộ rõ trong ánh sáng đỏ rực."
+      },
+      {
+        "name": "Triceratops non",
+        "visual_lock": "Khủng long sừng mặt non, cao 1,2 mét, lớp da vảy sần sùi dính các mảng đất sét đỏ khô, những chồi sừng trán nhỏ cùn.",
+        "state": "Bước vào khung hình lúc 8 giây từ lối vào hang bên phía phải, bàn chân trước dày dặn bước xuống ngay cạnh Nora."
+      }
+    ],
+    "in_place": "Vách và trần hang hốc bằng đất đã hiện diện hoàn toàn từ khung hình 0. Suối đỏ rực bên ngoài. Các hạt thủy tinh bay xèo xèo bên ngoài. Bùn ướt trên tay Nora.",
+    "timeline_action": {
+      "0-3s": "Nora nằm bất động dưới bờ bùn nhỏ giọt, lồng ngực phập phồng trong những nhịp thở hoảng loạn nông khi các hạt thủy tinh nung đỏ xèo xèo rơi xuống cát ngoài cửa hang.",
+      "3-7s": "Bàn tay trái bám đầy bùn của cô chậm rãi kéo chiếc tàu lá cọ đẫm nước che chặt hơn lên ngực và cổ, tự bảo vệ mình khỏi những mảnh vỡ nung đỏ lạc hướng.",
+      "7-10s": "Vào giây thứ 8, bàn chân trước ba ngón nặng nề của một chú Triceratops non bước xuống rìa bên phải khung hình ngay sát mặt cô và đứng bất động."
+    },
+    "speech": {
+      "speaker": "Nora",
+      "mode": "Cách ly âm thanh (Sonic Isolation)",
+      "delivery": "Im lặng tuyệt đối khi quay sinh video; phần dựng Cold Open lồng tiếng thì thầm gấp rút từ kịch bản",
+      "dialogue": []
+    },
+    "dramatic_craft": {
+      "beat": "Ngưỡng sinh tồn tột đỉnh: nơi trú ẩn chống chọi hỏa ngục khí quyển vs sự xuất hiện của cự thú tiền sử",
+      "value_turn": "Tổn thương trần trụi (-5) -> Nơi trú ẩn mong manh (+1) -> Khoảng cách gần gũi với khủng long non (+2)",
+      "subtext": "Mọi ngạo mạn công nghệ bị tước bỏ; sinh tồn bằng bản năng động vật thuần túy dưới lòng đất mẹ",
+      "prop_and_detail": "Tàu lá cọ đẫm nước làm khiên chắn nhiệt; lớp bùn đỏ cách nhiệt trên da; hạt thủy tinh nung đỏ xèo vào cát"
+    },
+    "audio": "Tiếng gầm rú trầm đục của quá trình lao vào khí quyển, tiếng thủy tinh nóng xèo xèo chạm cát suối ướt, tiếng thở mũi sâu đầy căng thẳng của Nora, tiếng bước chân khủng long nặng trịch",
+    "physics": "Máy quay đặt trên mặt đất; Nora nằm tĩnh trên sàn; các hạt thủy tinh bay duy trì quỹ đạo chéo 45 độ từ trên trái xuống dưới phải; chân khủng long chạm đất lúc 8 giây làm rung chấn nhẹ mặt đất",
+    "negative_constraints": [
+      "KHÔNG có công nghệ hiện đại, KHÔNG có thiết bị điện tử, KHÔNG có dụng cụ nhân tạo. Ống kính máy quay và người quay hoàn toàn ở ngoài khung hình có thể nhìn thấy và không bao giờ xuất hiện.",
+      "Ống kính máy quay và thiết bị ghi hình hoàn toàn nằm ngoài khung hình nhìn thấy và không bao giờ xuất hiện.",
+      "Tuyệt đối KHÔNG có lời thoại phát ra trong prompt sinh hình; môi Nora khép chặt trong sự im lặng chết chóc.",
+      "Không có vật thể trôi nổi bằng CGI; các mảnh vỡ vật lý tương tác trực tiếp với bề mặt đất cát."
+    ]
+  },
+  {
+    "clip_id": "EST-01",
+    "scene_name": "Drone thiết lập cảnh — Bình minh Hell Creek",
+    "duration": 6,
+    "aspect_ratio": "16:9",
+    "refs": ["Bờ Hell Creek", "Đường mòn Hell Creek"],
+    "camera": {
+      "viewpoint": "góc máy trên không ở độ cao 120 mét lướt chậm về phía trước và hạ dần độ cao",
+      "shot_size": "cảnh đại toàn (extreme wide shot)",
+      "description": "Cú lướt điện ảnh mượt mà từ độ cao lớn bao quát hệ thống sông tiền sử. Không có bóng người. Góc nhìn hoàn toàn nằm ngoài cảnh vật."
+    },
+    "style": "thước phim tài liệu thiên nhiên điện ảnh, ánh sáng sương sớm, bình minh vàng dịu, chân thực 4k",
+    "setting": "Hell Creek, Montana, 66 triệu năm TCN lúc rạng đông (06:00, ánh sáng L1). Dòng sông nâu uốn khúc qua vùng đồng bằng ngập lũ tươi tốt của dương xỉ thân gỗ, nguyệt quế nở hoa và cọ quạt. Sương sớm mỏng manh lững lờ trôi trên mặt nước.",
+    "characters": [],
+    "in_place": "Khúc cua sông, các bãi sỏi và rừng cọ kỷ Phấn trắng dày đặc đã hiện diện trọn vẹn từ khung hình 0. Sương sớm trôi chậm từ trái sang phải trên mặt nước.",
+    "timeline_action": {
+      "0-3s": "Góc nhìn trên cao lướt êm về phía trước qua bãi sỏi rộng nơi sương mù sáng sớm cuộn trên mặt nước sẫm màu.",
+      "3-6s": "Màn sương mỏng hé lộ hình bóng xa xa của một đàn khủng long lớn đang gặm cỏ bình yên trên thảo nguyên dương xỉ cách 300 mét."
+    },
+    "speech": {
+      "speaker": "Không có",
+      "dialogue": []
+    },
+    "dramatic_craft": {
+      "beat": "Thiết lập thế giới nguyên sinh: sự yên bình tĩnh mịch trước cơn bão tuyệt chủng; vẻ đẹp hùng vĩ của tự nhiên",
+      "value_turn": "Cơn ác mộng tận thế của Cold Open (-) -> Bình minh nguyên sinh thanh bình (+)",
+      "subtext": "Mặt đất hoàn toàn không hề hay biết thiên thạch đang lao tới chỉ còn cách 12 giờ",
+      "prop_and_detail": "Dòng suối nâu phù sa uốn khúc, sương sớm trên mặt nước, tán rừng trinh nguyên chưa từng có vết chân người"
+    },
+    "audio": "Tiếng dòng sông cổ đại chảy từ xa, tiếng chim tiền sử líu lo buổi sớm, gió nhẹ qua tán dương xỉ khổng lồ, tiếng gầm ồm sâu ở khoảng cách xa",
+    "physics": "Máy quay hạ độ cao mượt mà từ 120m xuống 90m với tốc độ 4 m/s; sương mù trôi từ trái qua phải với tốc độ 0,5 m/s; đàn khủng long di chuyển chậm rãi theo nhịp gặm cỏ",
+    "negative_constraints": [
+      "KHÔNG có công trình hiện đại, KHÔNG có đường sá, KHÔNG có vệt khói máy bay, KHÔNG có con người, KHÔNG thấy thiết bị quay phim.",
+      "KHÔNG có đồ dùng hiện đại, KHÔNG có vật dụng nhân tạo."
+    ]
+  },
+  {
+    "clip_id": "A1-01",
+    "scene_name": "Đáp bãi sông & Mối đe dọa cá sấu",
+    "duration": 6,
+    "aspect_ratio": "16:9",
+    "refs": ["Nora", "Thân hình Nora", "Bờ Hell Creek"],
+    "camera": {
+      "viewpoint": "POV ngôi thứ nhất cầm tay ngang ngực đang lội nước, lùi dần về phía bãi sỏi",
+      "shot_size": "cảnh trung rộng (medium wide shot)",
+      "description": "Góc nhìn thứ nhất nhìn thẳng xuống mặt nước sông đục ngầu từ độ cao ngang ngực. Cả hai tay đều trống không. Ống kính máy quay và người quay hoàn toàn ở ngoài khung hình và không bao giờ xuất hiện."
+    },
+    "style": "thước phim tài liệu POV cầm tay thô ráp, gợn sóng nước tự nhiên, giọt nước bắn lên ống kính, ánh sáng ban mai mát mẻ",
+    "setting": "Bờ sông Hell Creek, vùng nước đục nâu nông lúc rạng đông (06:00, ánh sáng L1). Bờ sỏi nhạt màu lộ rõ cách 3 mét phía sau.",
+    "characters": [
+      {
+        "name": "Borealosuchus",
+        "visual_lock": "Cá sấu tiền sử, dài 4 mét, dải lưng vảy sần sùi sẫm màu, mõm rộng.",
+        "state": "Hai dải lưng sần nổi trên mặt nước cách 5 mét phía trước từ khung hình 0, lững lờ trôi tới."
+      }
+    ],
+    "in_place": "Hai dải lưng cá sấu bọc giáp đã nằm sẵn trên mặt nước đục cách 5 mét từ khung hình 0. Nước sông gợn sóng quanh thân chúng.",
+    "timeline_action": {
+      "0-3s": "Hai dải sống lưng cá sấu trôi chậm về phía góc nhìn với vận tốc 0,3 m/s; nước vỗ quanh đùi Nora khi máy quay lùi từng bước qua làn nước.",
+      "3-6s": "Máy quay lùi nhanh hơn, nước bắn tung tóe khi mực nước cạn dần về phía mép bãi sỏi trong khi lũ cá sấu vẫn kiên định trôi giữa dòng."
+    },
+    "speech": {
+      "speaker": "Nora",
+      "mode": "Cách ly âm thanh (Sonic Isolation)",
+      "delivery": "Im lặng tuyệt đối; chỉ có tiếng thở dốc nghẹn ngào qua mũi",
+      "dialogue": []
+    },
+    "dramatic_craft": {
+      "beat": "Cú sốc khi đặt chân đến: chạm trán ngay lập tức với thú săn mồi phục kích kỷ Phấn trắng; tháo chạy lên cạn",
+      "value_turn": "Sống sót đến nơi (+) -> Bị phục kích dưới nước (-)",
+      "subtext": "Sinh tồn là sự chủ động từng giây; dã thú săn mồi không bao giờ đánh tiếng báo trước",
+      "prop_and_detail": "Sống lưng vảy gồ ghề rẽ nước phù sa; dòng nước lạnh buốt quất vào vạt áo tunic len ướt sũng"
+    },
+    "audio": "Tiếng nước lõm bõm bì bõm quanh đôi chân đang lội, tiếng thở dốc căng thẳng qua mũi, dòng nước sông cuộn chảy, hiệu ứng sóng nước điềm gở",
+    "physics": "Máy quay di chuyển lùi với vận tốc 0,5 m/s; gờ lưng cá sấu trôi tiến lên ở vận tốc 0,3 m/s; nước gợn sóng tỏa tròn từ các bước lội; bãi sỏi xuất hiện ở đáy khung lúc 5s",
+    "negative_constraints": [
+      "Ống kính máy quay và người quay hoàn toàn ở ngoài khung hình nhìn thấy và không bao giờ xuất hiện; không có bàn tay nào đưa về phía góc nhìn.",
+      "Tuyệt đối KHÔNG có lời thoại phát ra; chỉ có tiếng thở nặng nhọc.",
+      "Cá sấu không nhảy chồm lên khỏi mặt nước hay hành xử như quái vật điện ảnh; chuyển động bò sát thực tế."
+    ]
+  },
+  {
+    "clip_id": "A1-02",
+    "scene_name": "Selfie bãi sỏi — Lên bờ ướt sũng",
+    "duration": 8,
+    "aspect_ratio": "16:9",
+    "refs": ["Nora", "Thân hình Nora", "Bờ Hell Creek"],
+    "camera": {
+      "viewpoint": "selfie cầm tay ở cự ly 50 cm, cánh tay phải của Nora duỗi thẳng ra ngoài khung hình giữ góc nhìn",
+      "shot_size": "cảnh cận trung (medium close-up)",
+      "description": "Nora giữ góc nhìn ở độ cao ngang ngực hướng chếch lên trên bằng cánh tay phải duỗi thẳng. Bản thân ống kính máy quay và bàn tay cầm nắm bên phải hoàn toàn nằm ngoài khung hình và không bao giờ xuất hiện. Chỉ có tay trái là tự do."
+    },
+    "style": "thước phim vlog cầm tay, phối cảnh góc rộng tự nhiên, độ rung hữu cơ, ánh sáng sáng sớm mát mẻ",
+    "setting": "Bãi sỏi nhạt màu tại bờ sông Hell Creek. Dòng suối nâu đục và gờ lưng cá sấu đang trôi ở hậu cảnh.",
+    "characters": [
+      {
+        "name": "Nora",
+        "visual_lock": "Nora, 26 tuổi, tóc đỏ đồng búi lỏng ẩm ướt, tàn nhang, áo tunic may đo và quần tiền sử ướt sũng khớp với tham khảo Thân hình Nora, vóc dáng đồng hồ cát.",
+        "state": "Quỳ trên sỏi ướt từ khung hình 0, ướt sũng từ eo trở xuống, thở dốc."
+      }
+    ],
+    "in_place": "Nora quỳ trên bãi sỏi ướt từ khung hình 0. Nước nhỏ giọt từ quần áo ướt sũng của cô xuống những viên sỏi.",
+    "timeline_action": {
+      "0-3s": "Từ khung hình 0, Nora ngồi dậy trên đầu gối, thở hổn hển, tay trái tự do đặt lên đùi ướt khi cô trấn tĩnh lại.",
+      "3-6s": "Cô liếc nhìn lại dòng nước đục phía sau, rồi nhìn thẳng vào ống kính với vẻ kinh ngạc đầy sốc adrenaline khô khốc.",
+      "6-8s": "Cô lấy lại nhịp thở, nói với giọng mỉa mai khô khan, hơi rùng mình trong làn gió sáng sớm lạnh buốt của kỷ Phấn trắng."
+    },
+    "speech": {
+      "speaker": "Nora",
+      "delivery": "thở dốc, rùng mình, lối nói chuyện nhanh với sự sốc adrenaline khô khan, nhấn giọng ở punchline 'kiên nhẫn chờ' (patient)",
+      "dialogue": [
+        {"t": "0-3s", "speaker": "Nora", "line": "Được rồi. Tôi thoát rồi, tôi lên khỏi nước rồi."},
+        {"t": "3-6s", "speaker": "Nora", "line": "Đó là cá sấu, hai con, và chúng không hề tò mò."},
+        {"t": "6-8s", "speaker": "Nora", "line": "Chúng đang kiên nhẫn chờ."}
+      ]
+    },
+    "dramatic_craft": {
+      "beat": "Lời mở đầu Vlog: hồi phục trên đất cạn, nhận thức hành vi săn mồi của dã thú (Retention Beat C1 · punchline 'patient')",
+      "value_turn": "Cận kề cái chết (-) -> Tạm thời an toàn trên bãi sỏi (+)",
+      "subtext": "Dùng sự bình tĩnh mỉa mai chuyên nghiệp để che đậy nỗi kinh hoàng vừa thoát chết trong gang tấc",
+      "prop_and_detail": "Những viên sỏi ướt dưới bốt chân; nước sông lạnh nhỏ giọt từ gấu tay áo len; sương mờ buổi sớm phía sau"
+    },
+    "audio": "Tiếng nước nhỏ giọt trên sỏi, tiếng thở run rẩy, tiếng nước sông vỗ phía sau, làn gió sáng sớm mát lạnh",
+    "physics": "Máy quay rung nhẹ theo cánh tay run rẩy của Nora; tư thế nhấc lên từ thế quỳ lúc 1s; các giọt nước rơi thẳng đứng xuống sỏi",
+    "negative_constraints": [
+      "Bản thân ống kính máy quay và bàn tay cầm nắm bên phải hoàn toàn nằm ngoài khung hình nhìn thấy và không bao giờ xuất hiện. Cô không bao giờ đưa tay chạm, che hay chỉ vào ống kính. KHÔNG có đồ hiện đại.",
+      "Cánh tay phải duỗi thẳng ra ngoài khung hình; bàn tay cầm nắm không bao giờ lộ diện.",
+      "Khớp chuẩn 100% lời thoại nguyên bản từ script.md.",
+      "KHÓA CƠ THỂ: Nora có thân hình đồng hồ cát đẫy đà với vòng một tự nhiên lớn trong áo tunic may đo, KHÔNG ngực phẳng, KHÔNG mảnh khảnh."
+    ]
+  },
+  {
+    "clip_id": "A1-03",
+    "scene_name": "Tiến lại xác Edmontosaurus",
+    "duration": 8,
+    "aspect_ratio": "16:9",
+    "refs": ["Bờ Hell Creek"],
+    "camera": {
+      "viewpoint": "POV ngôi thứ nhất cầm tay bước dọc theo bãi sỏi",
+      "shot_size": "cảnh trung rộng (medium wide shot)",
+      "description": "Góc nhìn thứ nhất bước đi dọc bãi sỏi. Cả hai tay buông thõng tự do. Góc nhìn hoàn toàn nằm ngoài khung hình nhìn thấy và không bao giờ xuất hiện."
+    },
+    "style": "tài liệu chân thực cầm tay, độ nảy bước chân thẳng đứng tự nhiên, ánh sáng ban mai",
+    "setting": "Bãi sỏi Hell Creek, cách 15 mét ngược dòng. Bộ khung xương sườn khổng lồ và xác khô của một con Edmontosaurus trưởng thành nằm trên đá.",
+    "characters": [],
+    "in_place": "Xác khủng long khổng lồ nằm cách 15 mét phía trước từ khung hình 0, xương sườn nhô lên, bầy ruồi tiền sử bu đầy xung quanh.",
+    "timeline_action": {
+      "0-3s": "Góc nhìn bước tiến lên trên nền sỏi lạo xạo với tốc độ 0,8 m/s hướng về cái xác khổng lồ.",
+      "3-6s": "Thu hẹp khoảng cách xuống 5 mét, để lộ những vết ngoạm khổng lồ hình vỏ sò khoét sâu vào xương chậu dày cộp.",
+      "6-8s": "Máy quay dừng lại cách khung sườn 2 mét; đàn ruồi đen dày đặc tản ra bay lượn trong nắng sớm."
+    },
+    "speech": {
+      "speaker": "Nora",
+      "delivery": "thì thầm ngoài khung hình, cảnh giác, quan sát sắc bén, ngắt giọng đáng sợ ở 'vừa bước sang bên'",
+      "dialogue": [
+        {"t": "0-3s", "speaker": "Nora", "line": "Được rồi, đó là một cái xác. Một cái xác khổng lồ."},
+        {"t": "3-6s", "speaker": "Nora", "line": "Thứ gì đó đã ăn một nửa đêm qua rồi rời đi."},
+        {"t": "6-8s", "speaker": "Nora", "line": "Rời đi, hay chỉ vừa bước sang bên."}
+      ]
+    },
+    "dramatic_craft": {
+      "beat": "Phát hiện xác con mồi mới: suy đoán lãnh địa thú săn mồi thượng tầng; đặt ra câu hỏi treo kịch tính",
+      "value_turn": "Thám hiểm đất cạn (+) -> Nhận ra đang ở sát bên siêu dã thú (-)",
+      "subtext": "Kẻ đi săn chưa hề bỏ bữa ăn này; nó đang nấp đâu đó ngay sau rặng cây bên cạnh",
+      "prop_and_detail": "Khung xương sườn khổng lồ uốn cong như mái vòm nhà thờ; bầy ruồi đen tiền sử vo ve; thớ thịt khô còn tươi"
+    },
+    "audio": "Tiếng bước chân lạo xạo trên sỏi rời, tiếng đàn ruồi vo ve bu quanh, tiếng sông rì rào, bầu không khí tĩnh mịch đáng sợ",
+    "physics": "Độ nảy thẳng đứng tự nhiên theo bước chân ở tần số 2 Hz; đàn ruồi chuyển động hỗn loạn quanh miếng thịt khô",
+    "negative_constraints": [
+      "KHÔNG có công nghệ hiện đại, KHÔNG có vật dụng che ống kính. Ống kính máy quay và người quay hoàn toàn ở ngoài khung hình nhìn thấy.",
+      "Khớp chuẩn 100% lời thoại nguyên bản từ script.md."
+    ]
+  },
+  {
+    "clip_id": "A1-04",
+    "scene_name": "Cận cảnh rãnh răng trên xương đùi",
+    "duration": 8,
+    "aspect_ratio": "16:9",
+    "refs": ["Bờ Hell Creek"],
+    "camera": {
+      "viewpoint": "POV macro ngôi thứ nhất nhìn thẳng xuống ở cự ly 30 cm",
+      "shot_size": "cảnh cực cận (extreme close-up)",
+      "description": "Góc nhìn macro nhìn thẳng xuống rãnh cắn khổng lồ có răng cưa trên xương đùi khủng long. Bàn tay trái trống không của Nora đưa vào để so sánh tỷ lệ. Ống kính máy quay hoàn toàn ở ngoài khung hình."
+    },
+    "style": "cận cảnh tài liệu xúc giác, độ sắc nét cao vào các vết cưa trên xương, phông nền sỏi mờ mềm mại",
+    "setting": "Bãi sỏi Hell Creek, trực tiếp trên xương chậu của xác Edmontosaurus. Ruồi bò trên gân khô.",
+    "characters": [],
+    "in_place": "Vết ngoạm sâu hình vỏ sò trên khúc xương khủng long trắng dày được lấy nét sắc cạnh từ khung hình 0.",
+    "timeline_action": {
+      "0-3s": "Góc nhìn giữ tĩnh trên rãnh cắn cong khổng lồ cho thấy các vết xước răng cưa ăn sâu vào thớ xương.",
+      "3-6s": "Ở giây thứ 3, bàn tay trái trần dính bụi đất của Nora đi vào từ mép dưới và đặt phẳng vào trong một vết răng cắn, lọt thỏm trước chiều rộng của nó.",
+      "6-8s": "Bàn tay trái của cô giữ tĩnh bên trong vết cắn, sau đó ở giây 6.5 rút lui xuống dưới ra khỏi khung hình."
+    },
+    "speech": {
+      "speaker": "Nora",
+      "delivery": "thì thầm, bàng hoàng, nhận thức nghiệt ngã thốt ra với sự mỉa mai lạnh người",
+      "dialogue": [
+        {"t": "0-3s", "speaker": "Nora", "line": "Nhìn kích thước vết cắn này xem."},
+        {"t": "3-6s", "speaker": "Nora", "line": "Cả bàn tay tôi lọt thỏm trong một vết răng."},
+        {"t": "6-8s", "speaker": "Nora", "line": "Tôi đang đứng ngay trong gian bếp của nó."}
+      ]
+    },
+    "dramatic_craft": {
+      "beat": "Bằng chứng xúc giác về T. rex: so sánh tỷ lệ vật lý mà không gọi tên quái vật (Nguyên tắc gieo mầm)",
+      "value_turn": "Tò mò tìm hiểu (+) -> Cảm giác nhỏ bé bất lực cùng cực (-)",
+      "subtext": "Nhận ra công nghệ hay trí khôn loài người đều vô nghĩa trước lực cắn 12.000 Newton",
+      "prop_and_detail": "Bàn tay lọt thỏm trong một rãnh răng; các vết cào của men răng cưa sắc lẹm trên bề mặt xương ngà"
+    },
+    "audio": "Tiếng vo ve ngột ngạt của một con ruồi đơn độc, tiếng nước suối chảy nhẹ từ xa, tiếng sỏi lạo xạo dưới gót bốt",
+    "physics": "Máy quay hoàn toàn tĩnh ở cự ly 30 cm; bàn tay đi vào lúc 3s và nằm phẳng không ấn mạnh; bàn tay rút lui theo chiều dọc lúc 6.5s",
+    "negative_constraints": [
+      "KHÔNG có thước dây hiện đại, KHÔNG có dụng cụ nhân tạo. Ống kính máy quay và người quay hoàn toàn ở ngoài khung hình.",
+      "Khớp chuẩn 100% lời thoại nguyên bản từ script.md."
+    ]
+  },
+  {
+    "clip_id": "A1-05",
+    "scene_name": "Selfie Đồng hồ 12 tiếng & Niềm tin sai",
+    "duration": 8,
+    "aspect_ratio": "16:9",
+    "refs": ["Nora", "Thân hình Nora", "Bờ Hell Creek"],
+    "camera": {
+      "viewpoint": "selfie cầm tay ở khoảng cách 60 cm, cánh tay phải của Nora duỗi thẳng ra ngoài khung hình giữ góc nhìn",
+      "shot_size": "cảnh trung (medium shot)",
+      "description": "Nora giữ góc nhìn ở độ cao ngang ngực hướng chếch lên trên bằng cánh tay phải duỗi thẳng. Bản thân ống kính máy quay và bàn tay cầm nắm bên phải hoàn toàn nằm ngoài khung hình và không bao giờ xuất hiện."
+    },
+    "style": "thước phim vlog cầm tay, ánh sáng tài liệu tự nhiên, nắng sớm mát mẻ, tông tóc đỏ ấm áp",
+    "setting": "Bãi sỏi Hell Creek. Cái xác nằm ở hậu cảnh bên trái; dòng nước suối đục ngầu chảy bên phải.",
+    "characters": [
+      {
+        "name": "Nora",
+        "visual_lock": "Nora, 26 tuổi, vóc dáng đồng hồ cát đẫy đà lực lưỡng, tóc nâu đỏ búi gọn, trang phục sinh tồn vải thô may đo khớp với tham khảo Thân hình Nora.",
+        "state": "Đứng thẳng trên bãi sỏi, cái xác sau vai trái, tay trái tự do hơi chỉ về phía chân trời đông nam."
+      }
+    ],
+    "in_place": "Nora đang đứng trên bãi sỏi từ khung hình 0. Xác khủng long và dòng sông hiện diện rõ ràng phía sau cô.",
+    "timeline_action": {
+      "0-3s": "Nora nói thẳng vào ống kính với phong thái tự tin, quyết đoán.",
+      "3-6s": "Cô dùng bàn tay trái tự do chỉ về phía bầu trời đông nam xa xăm sau vai, rồi nhìn lại vào ống kính.",
+      "6-8s": "Cô nở một nụ cười nhếch mép tự tin, phát biểu niềm tin sai lầm cốt lõi của mình."
+    },
+    "speech": {
+      "speaker": "Nora",
+      "delivery": "tự tin, rành mạch, phong thái ngạo mạn của vlogger du lịch pha chút mỉa mai ngầm",
+      "dialogue": [
+        {"t": "0-3s", "speaker": "Nora", "line": "Tôi đã cố tình chọn ngày hôm nay."},
+        {"t": "3-6s", "speaker": "Nora", "line": "Mười hai tiếng nữa kể từ bây giờ, bầu trời đằng kia sẽ bốc cháy."},
+        {"t": "6-8s", "speaker": "Nora", "line": "Tôi chỉ ở đây để quan sát."}
+      ]
+    },
+    "dramatic_craft": {
+      "beat": "Kích hoạt đồng hồ đếm ngược 12 tiếng & gieo niềm tin sai của nhân vật (sẽ bị bẻ gãy ở A4-04)",
+      "value_turn": "Bất an sinh tồn (-) -> Ảo tưởng kiểm soát vượt trội (+)",
+      "subtext": "Nora lầm tưởng biết trước tương lai biến cô thành khán giả an toàn thay vì nạn nhân diệt vong",
+      "prop_and_detail": "Bầu trời sáng sớm trong xanh chưa vướng khói bụi; cái xác thối rữa phía sau tạo sự tương phản châm biếm"
+    },
+    "audio": "Gió sáng sớm xào xạc qua tán cọ, tiếng chim kêu xa xa, tiếng sông rì rào đều đặn",
+    "physics": "Máy quay khẽ đung đưa theo cánh tay; bàn tay trái chỉ ra ngoài lúc 4s và hạ xuống lúc 6s; bốt đứng vững trên sỏi",
+    "negative_constraints": [
+      "Ống kính máy quay và bàn tay cầm nắm bên phải hoàn toàn nằm ngoài khung hình nhìn thấy và không bao giờ xuất hiện. KHÔNG có đồ hiện đại.",
+      "Cánh tay phải duỗi thẳng ra ngoài khung hình; bàn tay cầm nắm không bao giờ lộ diện.",
+      "Khớp chuẩn 100% lời thoại nguyên bản từ script.md.",
+      "KHÓA CƠ THỂ: Nora có thân hình đồng hồ cát với vòng một tự nhiên lớn, eo thon, hông nở. KHÔNG ngực phẳng."
+    ]
+  },
+  {
+    "clip_id": "A1-06",
+    "scene_name": "Nhặt mai rùa & Phát hiện hốc đất",
+    "duration": 8,
+    "aspect_ratio": "16:9",
+    "refs": ["Bờ Hell Creek"],
+    "camera": {
+      "viewpoint": "POV ngôi thứ nhất cầm tay ngang ngực nhìn xuống, sau đó lia ngang và ngửa lên",
+      "shot_size": "cảnh trung (medium shot)",
+      "description": "Góc nhìn thứ nhất nhìn xuống bãi sỏi, lia sang phải mép nước, rồi ngửa lên nhìn bờ đối diện. Hai tay trống cho đến khi nhặt mai rùa. Ống kính hoàn toàn nằm ngoài khung hình."
+    },
+    "style": "thước phim tài liệu quan sát cầm tay, ánh sáng sáng sớm tự nhiên, góc máy hữu cơ",
+    "setting": "Bãi sỏi Hell Creek. Một hốc hang khô ráo nằm dưới chân vách đất đỏ bên kia sông; một dải lưng cá sấu nằm canh ngay dưới miệng hốc.",
+    "characters": [],
+    "in_place": "Một chiếc mai rùa rỗng nguyên vẹn nằm trên bãi sỏi nhạt màu cách 1 mét phía trước từ khung hình 0.",
+    "timeline_action": {
+      "0-3s": "Cả hai bàn tay cúi xuống nhặt chiếc mai rùa màu ô liu khô dài 22 cm lên khỏi sỏi, lật lại để lộ lòng mai rỗng nhẵn nhụi.",
+      "3-6s": "Góc nhìn lia sang phải ra mép nước, múc đầy nước sông sạch vào lòng mai rùa.",
+      "6-8s": "Máy quay ngửa lên nhìn qua bên kia sông tới vách đất đỏ, dừng lại 2 giây trên một hốc hang khô ráo phía trên một con cá sấu đang rình rập."
+    },
+    "speech": {
+      "speaker": "Nora",
+      "delivery": "thực dụng, giải quyết vấn đề nhanh, gạt phắt dứt khoát ở câu 'không đời nào'",
+      "dialogue": [
+        {"t": "0-3s", "speaker": "Nora", "line": "Mai rùa, to cỡ một cái đĩa ăn."},
+        {"t": "3-6s", "speaker": "Nora", "line": "Có một hốc khô dưới chân vách đất đằng xa."},
+        {"t": "6-8s", "speaker": "Nora", "line": "Cá sấu nằm ngay dưới miệng hốc. Nên, không đời nào."}
+      ]
+    },
+    "dramatic_craft": {
+      "beat": "Gieo đạo cụ và địa điểm then chốt: có vật chứa nước (vỡ ở A3-06) & thấy hốc hang trú ẩn (thu hoạch ở A4-16 / MASTER)",
+      "value_turn": "Cần đồ đựng nước (-) -> Tìm thấy giải pháp (+) -> Hốc hang bị chặn (-)",
+      "subtext": "Bản năng sinh tồn vô thức khảo sát nơi trú ẩn sẽ cứu mạng cô 12 tiếng sau",
+      "prop_and_detail": "Mai rùa ô liu 22 cm (hình học đạo cụ Q2); hang hốc nông vách đất đỏ bờ đối diện suối"
+    },
+    "audio": "Tiếng sỏi cọ xát khi nhặt mai rùa, tiếng nước múc vào mai rùa xao động, tiếng phì mũi trầm đục của loài bò sát đằng xa",
+    "physics": "Hai tay nâng mai rùa nhịp nhàng lúc 1s; nước tràn vào mai rùa tạo sức căng mặt ngoài; máy quay ngửa lên trong 1,5s",
+    "negative_constraints": [
+      "KHÔNG có chai nước công nghiệp, KHÔNG có bi-đông kim loại. Ống kính máy quay và người quay hoàn toàn ở ngoài khung hình.",
+      "Khớp chuẩn 100% lời thoại nguyên bản từ script.md."
+    ]
+  },
+  {
+    "clip_id": "A1-07",
+    "scene_name": "Buộc dây mai rùa",
+    "duration": 8,
+    "aspect_ratio": "16:9",
+    "refs": ["Nora", "Thân hình Nora", "Bờ Hell Creek"],
+    "camera": {
+      "viewpoint": "máy quay cố định kê trên khúc gỗ trôi dạt cao 50 cm, cách 2 mét",
+      "shot_size": "cảnh trung (medium shot)",
+      "description": "Máy quay tĩnh đặt trên khúc gỗ trôi dạt. Nora được lấy từ thắt lưng trở lên. Không ai chạm vào máy quay. Ống kính máy quay và người quay hoàn toàn ở ngoài khung hình nhìn thấy."
+    },
+    "style": "thước phim tài liệu chế tác hiện trường, nắng sớm sắc nét, chất liệu da và sợi thực vật ấm áp",
+    "setting": "Bãi sỏi Hell Creek bên cạnh một khúc gỗ trôi dạt lớn. Toàn cảnh bờ sông hiện rõ phía sau.",
+    "characters": [
+      {
+        "name": "Nora",
+        "visual_lock": "Nora, 26 tuổi, tóc đỏ búi gọn gàng, thân hình đồng hồ cát lực lưỡng trong trang phục tiền sử khớp với tham khảo Thân hình Nora.",
+        "state": "Đứng từ thắt lưng trở lên từ khung hình 0, tay trái cầm mai rùa đầy nước, tay phải xoắn sợi cọ bện."
+      }
+    ],
+    "in_place": "Nora đang đứng bên khúc gỗ từ khung hình 0. Mai rùa và sợi dây cọ bện đã nằm sẵn trên tay cô.",
+    "timeline_action": {
+      "0-3s": "Nora xỏ sợi dây cọ bện qua hai lỗ khoan ở vành mai rùa, thắt chặt vòng dây.",
+      "3-6s": "Cô buộc chặt nút dây vào dây đai da bên hông trái, giật nhẹ kiểm tra độ căng.",
+      "6-8s": "Cô nhìn thẳng về phía ống kính máy quay, chống hai tay lên hông, nói với sự hài hước khô khốc."
+    },
+    "speech": {
+      "speaker": "Nora",
+      "delivery": "tập trung, thực tế khi thao tác, chuyển sang punchline hài hước khô khan ở 'uống nước từ vũng cá sấu'",
+      "dialogue": [
+        {"t": "0-3s", "speaker": "Nora", "line": "Sợi cọ, bện đôi, xỏ qua các khe ở vành mai."},
+        {"t": "3-6s", "speaker": "Nora", "line": "Nếu nút buộc này hôm nay mà đứt,"},
+        {"t": "6-8s", "speaker": "Nora", "line": "thì tôi phải uống nước từ vũng cá sấu."}
+      ]
+    },
+    "dramatic_craft": {
+      "beat": "Gieo điểm yếu của đạo cụ: buộc nút dây tạm bợ (Nút thắt Chekhov: sẽ đứt ở A3-06)",
+      "value_turn": "Nước chưa cố định (-) -> Bình nước đã đeo chắc bên hông (+)",
+      "subtext": "Báo trước thảm họa mất nước sạch sẽ đẩy cô vào cơn khát cùng cực",
+      "prop_and_detail": "Dây sợi cọ bện đôi; mai rùa ô liu có vết mẻ sau lưng buộc bên hông trái"
+    },
+    "audio": "Tiếng ma sát của sợi thực vật siết chặt, tiếng va chạm khẽ giữa mai rùa và khóa đai da, gió thổi êm đềm",
+    "physics": "Máy quay hoàn toàn bất động; các ngón tay thao tác thắt nút cơ học chân thực; mai rùa rủ xuống bên hông trái lúc 6s",
+    "negative_constraints": [
+      "KHÔNG có nút thắt hiện đại, KHÔNG có dây dù nylon. Ống kính máy quay hoàn toàn ngoài khung hình.",
+      "Khớp chuẩn 100% lời thoại nguyên bản từ script.md.",
+      "KHÓA CƠ THỂ: Vóc dáng đồng hồ cát đẫy đà trong áo tunic ôm sát, KHÔNG ngực phẳng."
+    ]
+  },
+  {
+    "clip_id": "A1-08",
+    "scene_name": "Bức tường rừng & Cửa lối mòn thú",
+    "duration": 8,
+    "aspect_ratio": "16:9",
+    "refs": ["Đường mòn Hell Creek"],
+    "camera": {
+      "viewpoint": "POV ngôi thứ nhất cầm tay ngang ngực đứng yên, sau đó lia ngang chậm",
+      "shot_size": "cảnh trung rộng (medium wide shot)",
+      "description": "Góc nhìn thứ nhất đối diện với bức tường rừng rậm rạp không thể xuyên qua, sau đó lia chậm sang phải để lộ lối mòn bùn đỏ. Cả hai tay trống không. Ống kính hoàn toàn nằm ngoài khung hình nhìn thấy."
+    },
+    "style": "POV tài liệu môi trường, màu xanh lục nhiệt đới sâu thẳm, nắng ban mai lốm đốm qua vòm lá",
+    "setting": "Mép rừng ngập lũ Hell Creek. Cọ Sabalites cao vút, dương xỉ thân gỗ khổng lồ và bụi rậm chằng chịt.",
+    "characters": [],
+    "in_place": "Bức tường rừng rậm xanh ngắt được thiết lập từ khung hình 0. Lối mòn bùn đỏ cắt xuyên qua ở bên phải.",
+    "timeline_action": {
+      "0-3s": "Máy quay đối diện với bức tường dày đặc các tàu lá dương xỉ khổng lồ và thân cọ, hoàn toàn mù mịt tầm nhìn sau 2 mét.",
+      "3-6s": "Máy quay lia ngang mượt mà sang phải, hé lộ một lối mòn bùn đỏ rộng bị cày xới dữ dội đâm sâu vào rừng.",
+      "6-8s": "Máy quay dừng lại vững vàng trên lối vào tối tăm của con đường mòn, nơi các cành cây gãy gập treo cao bên trên."
+    },
+    "speech": {
+      "speaker": "Nora",
+      "delivery": "thì thầm, thận trọng, giọng phân tích, ngập ngừng ở cụm 'Thứ gì đó to lớn'",
+      "dialogue": [
+        {"t": "0-3s", "speaker": "Nora", "line": "Rừng rậm như một bức tường đặc, tôi không nhìn nổi quá hai mét."},
+        {"t": "3-6s", "speaker": "Nora", "line": "Nhưng kia là một lối mòn."},
+        {"t": "6-8s", "speaker": "Nora", "line": "Thứ gì đó to lớn đã mở lối này."}
+      ]
+    },
+    "dramatic_craft": {
+      "beat": "Vượt ngưỡng: tìm thấy lối mòn thú dẫn từ bãi sông vào sâu trong nội địa",
+      "value_turn": "Mắc kẹt trên bãi sỏi trống trải (-) -> Tìm thấy đường đi (+) -> Con đường do cự thú mở (?)",
+      "subtext": "Chọn điều ít tồi tệ hơn: ở lại bãi cá sấu rình hay bước vào đường cao tốc của cự thú",
+      "prop_and_detail": "Lối mòn đất sét đỏ bị cày xới; dương xỉ bị dẫm nát rộng 3 mét; tán rừng rậm che khuất ánh mặt trời"
+    },
+    "audio": "Tiếng côn trùng cận nhiệt đới râm ran, tiếng xào xạc trên vòm lá xa xa, tiếng bùn ướt lép bép dưới bốt",
+    "physics": "Máy quay tĩnh trong 3s, sau đó lia sang phải với vận tốc 15 độ/s, dừng tĩnh 2s cuối",
+    "negative_constraints": [
+      "KHÔNG có đường mòn nhân tạo, KHÔNG có biển báo. Ống kính máy quay và người quay hoàn toàn ở ngoài khung hình.",
+      "Khớp chuẩn 100% lời thoại nguyên bản từ script.md."
+    ]
+  },
+  {
+    "clip_id": "A1-09",
+    "scene_name": "Macro Dấu chân chứa nước đục",
+    "duration": 8,
+    "aspect_ratio": "16:9",
+    "refs": ["Đường mòn Hell Creek"],
+    "camera": {
+      "viewpoint": "POV macro ngôi thứ nhất nhìn thẳng xuống từ độ cao 1 mét",
+      "shot_size": "cảnh cực cận (extreme close-up)",
+      "description": "Góc nhìn macro nhìn thẳng xuống dấu chân khủng long ba ngón tròn khổng lồ trong bùn đỏ ướt. Chiếc bốt phải của Nora đưa vào để so sánh tỷ lệ. Ống kính máy quay hoàn toàn ở ngoài khung hình."
+    },
+    "style": "macro thiên nhiên xúc giác, kết cấu đất sét đỏ đậm đặc, mặt nước vũng phản chiếu lấp lánh ánh mai",
+    "setting": "Đường mòn thú Hell Creek, bùn đất sét đỏ cày xới sâu. Rễ cọ lớn bọc quanh dấu chân.",
+    "characters": [],
+    "in_place": "Dấu chân tròn khổng lồ rộng 80 cm, đọng đầy nước nâu phù sa đục ngầu, nằm chính giữa từ khung hình 0.",
+    "timeline_action": {
+      "0-3s": "Góc nhìn giữ tĩnh trên vết lõm tròn khổng lồ trong bùn, nơi nước bùn đục vẫn đang gợn sóng xoáy nhẹ.",
+      "3-6s": "Chiếc bốt da hợp thời kỳ bên phải của Nora bước vào mép dưới khung hình ngay cạnh dấu chân, trông bé nhỏ hẳn khi so sánh.",
+      "6-8s": "Bốt chân giữ tĩnh để so sánh kích thước, sau đó ở giây 6.5 rút lui xuống dưới ra khỏi khung hình."
+    },
+    "speech": {
+      "speaker": "Nora",
+      "delivery": "thì thầm khẩn trương, suy đoán gấp rút, giọng thì thầm khàn đục ở từ 'ở rất gần'",
+      "dialogue": [
+        {"t": "0-3s", "speaker": "Nora", "line": "Dấu chân tròn, rộng hơn cả vai tôi."},
+        {"t": "3-6s", "speaker": "Nora", "line": "Nước bên trong vẫn còn đục, nghĩa là nó vừa mới qua."},
+        {"t": "6-8s", "speaker": "Nora", "line": "Thứ tạo ra vết này đang ở rất gần."}
+      ]
+    },
+    "dramatic_craft": {
+      "beat": "Suy đoán dấu vết: đọc manh mối vật lý về khoảng cách cận kề (Nguyên lý chi tiết của Lục Quân)",
+      "value_turn": "Mối nguy trừu tượng (-) -> Cuộc chạm trán vật lý cận kề (-)",
+      "subtext": "Nước còn đục nghĩa là tính bằng giây chứ không phải bằng giờ; sinh vật đang ở ngay trong tầm nghe",
+      "prop_and_detail": "Dấu chân tròn rộng 80 cm; phù sa sét đục vẫn đang lắng; vết ngón chân cùn bẹt ép lún bùn"
+    },
+    "audio": "Tiếng bùn nhão lún xuống khi bốt chân dẫm xuống, tiếng nước gợn nhẹ trong lòng dấu chân, tiếng côn trùng kêu nhỏ",
+    "physics": "Máy quay tĩnh ở độ cao 1m; bốt chân đi vào lúc 3s và rút lui lúc 6.5s; các xoáy nước bùn lắng chậm",
+    "negative_constraints": [
+      "KHÔNG có đế cao su hiện đại, KHÔNG có logo thương hiệu. Ống kính máy quay hoàn toàn ngoài khung hình.",
+      "Khớp chuẩn 100% lời thoại nguyên bản từ script.md."
+    ]
+  },
+  {
+    "clip_id": "A1-10",
+    "scene_name": "Qua vai — Lần đầu thấy đàn Triceratops",
+    "duration": 8,
+    "aspect_ratio": "16:9",
+    "refs": ["Nora", "Thân hình Nora", "Đường mòn Hell Creek"],
+    "camera": {
+      "viewpoint": "POV qua vai trái của Nora, nhìn lén qua các tàu lá dương xỉ",
+      "shot_size": "cảnh trung (medium shot)",
+      "description": "Đầu và vai trái của Nora chiếm 1/3 tiền cảnh bên trái, đang nép sau lá dương xỉ khổng lồ. 2/3 hậu cảnh bên phải cho thấy đàn Triceratops đang gặm cỏ trong trảng dương xỉ ngập nắng cách 40 mét. Ống kính hoàn toàn ngoài khung hình."
+    },
+    "style": "phim tài liệu động vật hoang dã qua vai điện ảnh, tiền cảnh rừng râm mát, hậu cảnh trảng cỏ ngập nắng rực rỡ",
+    "setting": "Cửa rừng đường mòn Hell Creek mở ra một trảng dương xỉ rộng ngập nắng. Cây tuế khổng lồ và hoa mộc lan.",
+    "characters": [
+      {
+        "name": "Nora",
+        "visual_lock": "Nora, 26 tuổi, vóc dáng đồng hồ cát lực lưỡng, tóc đỏ búi, trang phục áo tunic sinh tồn may đo khớp với tham khảo Thân hình Nora.",
+        "state": "Nép ở tiền cảnh bên trái từ khung hình 0, thì thầm qua vai trong khi mắt dán chặt vào bầy đàn."
+      },
+      {
+        "name": "Đàn Triceratops",
+        "visual_lock": "Bảy đến tám cá thể Triceratops horridus trưởng thành và bán trưởng thành, hộp sọ có sừng khổng lồ với diềm xương, da vảy sần màu xám nâu.",
+        "state": "Gặm cỏ bình thản trong trảng cách 40 mét từ khung hình 0, di chuyển chậm từ trái sang phải."
+      }
+    ],
+    "in_place": "Nora đang nép sau dương xỉ ở tiền cảnh trái từ khung hình 0. Bảy đến tám con Triceratops đang gặm cỏ bình yên trong bãi cỏ.",
+    "timeline_action": {
+      "0-3s": "Nora dùng tay trái gạt nhẹ tán lá dương xỉ, nhìn chăm chú vào bãi đất ngập nắng nơi những bóng lưng khổng lồ đang ăn cỏ.",
+      "3-6s": "Cô liếc nhìn lại về phía ống kính, thì thầm với vẻ kính sợ thận trọng trong khi khẽ ra hiệu về phía trảng cỏ.",
+      "6-8s": "Cô quay lại nhìn bầy đàn, ánh mắt pha lẫn giữa sự kinh ngạc và chút do dự ngập ngừng."
+    },
+    "speech": {
+      "speaker": "Nora",
+      "delivery": "thì thầm, kính sợ căng thẳng, ngập ngừng lo âu ở từ 'hy vọng thế'",
+      "dialogue": [
+        {"t": "0-3s", "speaker": "Nora", "line": "Kìa. Bảy, tám con, có sừng, đang gặm cỏ."},
+        {"t": "3-6s", "speaker": "Nora", "line": "Chúng là những sinh vật to lớn nhất trong thung lũng này."},
+        {"t": "6-8s", "speaker": "Nora", "line": "To lớn nghĩa là an toàn, tôi hy vọng thế."}
+      ]
+    },
+    "dramatic_craft": {
+      "beat": "Tiếp xúc bầy đàn đầu tiên: tìm kiếm tấm khiên bảo vệ tiềm năng; gieo nghi vấn ngây thơ 'To lớn nghĩa là an toàn'",
+      "value_turn": "Lạc lõng bị rình rập (-) -> Tìm thấy tấm lá chắn khổng lồ (+)",
+      "subtext": "Sự châm biếm bi kịch khi cho rằng động vật ăn cỏ khổng lồ là những kẻ bảo vệ hiền lành",
+      "prop_and_detail": "Tàu lá dương xỉ xanh sẫm viền quanh ống kính; diềm xương sừng khổng lồ nhai lá cọ trong nắng sớm"
+    },
+    "audio": "Tiếng nhai và xé lá cây nhịp nhàng từ xa, tiếng gầm ồm sâu trong lồng ngực bầy đàn, tiếng thì thầm ấm áp của Nora",
+    "physics": "Máy quay tĩnh qua vai; lá dương xỉ khẽ lay động theo tay trái; khủng long di chuyển chậm ở tốc độ gặm cỏ 0,2 m/s",
+    "negative_constraints": [
+      "Bản thân ống kính máy quay hoàn toàn ngoài khung hình nhìn thấy. KHÔNG có đồ hiện đại.",
+      "Khớp chuẩn 100% lời thoại nguyên bản từ script.md.",
+      "KHÓA CƠ THỂ: Nora trong trang phục may đo với các đường cong đẫy đà lộ rõ trong góc máy qua vai."
+    ]
+  },
+  {
+    "clip_id": "A1-S1",
+    "scene_name": "Selfie Tự tin thái quá trước khi bước ra",
+    "duration": 8,
+    "aspect_ratio": "16:9",
+    "refs": ["Nora", "Thân hình Nora", "Đường mòn Hell Creek"],
+    "camera": {
+      "viewpoint": "selfie cầm tay ở cự ly 50 cm, cánh tay phải của Nora duỗi thẳng ra ngoài khung hình giữ góc nhìn",
+      "shot_size": "cảnh cận trung (medium close-up)",
+      "description": "Nora giữ góc nhìn ở độ cao ngang ngực hướng chếch lên bằng cánh tay phải duỗi thẳng. Ống kính máy quay và bàn tay cầm nắm bên phải hoàn toàn nằm ngoài khung hình và không bao giờ xuất hiện. Đàn khủng long gặm cỏ mờ ảo ở phông nền sau lưng."
+    },
+    "style": "thước phim vlog du lịch cầm tay, ánh nắng sáng sớm rực rỡ, vẻ tự đắc vui vẻ",
+    "setting": "Mép bụi dương xỉ tại Đường mòn Hell Creek. Trảng cỏ ngập nắng và bầy khủng long có sừng đang gặm cỏ ở hậu cảnh.",
+    "characters": [
+      {
+        "name": "Nora",
+        "visual_lock": "Nora, 26 tuổi, tóc đỏ búi lỏng, tàn nhang lấp lánh nắng, thân hình đồng hồ cát lực lưỡng trong áo tunic sinh tồn may đo khớp với tham khảo Thân hình Nora.",
+        "state": "Mỉm cười tự tin vào ống kính từ khung hình 0, bắt đầu bước lùi ra khỏi bụi rậm vào trảng cỏ."
+      }
+    ],
+    "in_place": "Nora đang đứng ở mép bụi cây từ khung hình 0. Đàn Triceratops đang gặm cỏ bình yên sau lưng cô.",
+    "timeline_action": {
+      "0-3s": "Nora mỉm cười vào ống kính với vẻ tự tin ngạo mạn, thoải mái, thì thầm đầy đắc ý.",
+      "3-6s": "Cô nhún vai ra hiệu về phía những bóng sừng khổng lồ phía sau, hoàn toàn thư thái.",
+      "6-8s": "Cô xoay người và tự tin bước một bước ra khỏi bụi rậm hướng về trảng cỏ, nở nụ cười nhếch mép thách thức."
+    },
+    "speech": {
+      "speaker": "Nora",
+      "delivery": "tự mãn, đùa cợt, vẻ ngạo mạn kinh điển của vlogger du lịch, gạt phắt nhẹ nhõm ở câu 'Cứ nhìn xem'",
+      "dialogue": [
+        {"t": "0-3s", "speaker": "Nora", "line": "Chúng khổng lồ, nhưng hoàn toàn ăn thực vật."},
+        {"t": "3-6s", "speaker": "Nora", "line": "Chúng sẽ hoàn toàn ngó lơ tôi ở ngoài này."},
+        {"t": "6-8s", "speaker": "Nora", "line": "Cứ chờ xem."}
+      ]
+    },
+    "dramatic_craft": {
+      "beat": "Nhịp tự tin thái quá chí mạng: sự châm biếm kịch tính kinh điển ngay trước cú xông của Bò Đực",
+      "value_turn": "Ẩn nấp cẩn trọng (+) -> Chủ quan mù quáng (-)",
+      "subtext": "Xem động vật hoang dã 6 tấn như thú cưng trong thảo cầm viên; kiêu ngạo trước cú ngã",
+      "prop_and_detail": "Nắng sớm lốm đốm trên mái tóc đỏ đồng; những chiếc sừng khổng lồ nhai lá bình yên ở hậu cảnh"
+    },
+    "audio": "Gió sáng sớm êm dịu, giọng nói trong trẻo đắc ý, tiếng bẻ cành cây từ xa, tiếng chim ríu rít",
+    "physics": "Máy quay di chuyển theo bước lùi của Nora; cơ thể đung đưa tự nhiên theo bước đi; bầy đàn vẫn bình yên trong phông mờ",
+    "negative_constraints": [
+      "Bản thân ống kính máy quay và bàn tay cầm nắm bên phải hoàn toàn nằm ngoài khung hình nhìn thấy và không bao giờ xuất hiện. KHÔNG có đồ hiện đại.",
+      "Cánh tay phải duỗi thẳng ra ngoài khung hình; bàn tay cầm nắm không bao giờ lộ diện.",
+      "Khớp chuẩn 100% lời thoại nguyên bản từ script.md.",
+      "KHÓA CƠ THỂ: Nora có vòng một tự nhiên lớn trong áo tunic ôm sát, dáng người đồng hồ cát, KHÔNG ngực phẳng."
+    ]
+  },
+  {
+    "clip_id": "A1-11",
+    "scene_name": "POV Bước ra & Bò Đực cảnh giác",
+    "duration": 6,
+    "aspect_ratio": "16:9",
+    "refs": ["Triceratops Bull"],
+    "camera": {
+      "viewpoint": "POV ngôi thứ nhất cầm tay ngang ngực bước tới 2 bước rồi khựng lại",
+      "shot_size": "cảnh trung rộng (medium wide shot)",
+      "description": "Góc nhìn thứ nhất bước hai bước ra khỏi bụi rậm vào bãi cỏ trống, sau đó đột ngột đứng sững lại. Cả hai tay trống không. Ống kính máy quay và người quay hoàn toàn ở ngoài khung hình."
+    },
+    "style": "thước phim tài liệu quan sát căng thẳng, sự sụp đổ đột ngột của bầu không khí dễ chịu, ánh nắng sáng gay gắt",
+    "setting": "Trảng dương xỉ Hell Creek. Một con Triceratops đực trưởng thành to lớn đứng cách 25 mét phía trước, đầu cúi đang gặm cỏ.",
+    "characters": [
+      {
+        "name": "Bò Đực",
+        "visual_lock": "Triceratops horridus đực trưởng thành, 9 tấn, sừng trái gãy cụt 1/3, diềm cổ sẹo chằng chịt có mạch máu đỏ rực, mõm vuông rộng khổng lồ.",
+        "state": "Đầu cúi gặm cỏ cách 25m từ khung hình 0; ngẩng phắt đầu lên lúc 2s, mắt khóa chặt vào máy quay."
+      }
+    ],
+    "in_place": "Bò Đực Triceratops đứng cách 25 mét phía trước từ khung hình 0. Bãi cỏ trống nằm giữa bụi cây và con khủng long.",
+    "timeline_action": {
+      "0-2s": "Góc nhìn bước hai bước lạo xạo ra bãi cỏ trống, rút ngắn khoảng cách xuống 22 mét khi con bò đực đang nhai.",
+      "2-4s": "Con bò đực đột ngột ngừng nhai, giật phắt chiếc đầu có sừng khổng lồ lên, và quay trọn hộp sọ rộng thẳng về phía máy quay.",
+      "4-6s": "Máy quay đứng sững như trời trồng; chiếc sừng trái bị gãy của con bò đực chĩa về phía trước, và diềm xương của nó đỏ rực lên rõ rệt."
+    },
+    "speech": {
+      "speaker": "Nora",
+      "mode": "Cách ly âm thanh (Sonic Isolation)",
+      "delivery": "Im lặng tuyệt đối; chỉ có tiếng nín thở đông cứng",
+      "dialogue": []
+    },
+    "dramatic_craft": {
+      "beat": "Thách thức lãnh địa đột ngột: va chạm thực tế về động vật ăn cỏ bảo vệ lãnh thổ (Sonic Isolation)",
+      "value_turn": "Tiếp cận thảnh thơi (+) -> Bị khóa mục tiêu lãnh địa lập tức (-)",
+      "subtext": "Động vật ăn cỏ giết người nhiều hơn thú ăn thịt; con bò đực nhìn thấy kẻ xâm phạm, không phải người hâm mộ",
+      "prop_and_detail": "Chóp sừng trái bị gãy cụt (dấu hiệu nhận diện Q3); mạch máu đỏ rực loang trên diềm xương"
+    },
+    "audio": "Tiếng chim hót đột ngột tắt bặt, tiếng thở phì ướt át nặng nề qua lỗ mũi khủng long, tiếng bước chân đông cứng",
+    "physics": "Máy quay tiến lên 1 m/s trong 2s, sau đó giảm tốc về 0 m/s; con bò đực nâng hộp sọ 1,5 tấn bằng quán tính cổ cực mạnh",
+    "negative_constraints": [
+      "Ống kính máy quay và người quay hoàn toàn ở ngoài khung hình nhìn thấy.",
+      "Tuyệt đối KHÔNG có lời thoại phát ra; im lặng chết chóc.",
+      "Con bò đực không gầm rú như sư tử phim ảnh; chỉ có tiếng khịt mũi sâu trong lồng ngực."
+    ]
+  },
+  {
+    "clip_id": "A1-12a",
+    "scene_name": "Chuỗi Bò Đực Xông (1/3) — Cú Lao",
+    "duration": 4,
+    "aspect_ratio": "16:9",
+    "refs": ["Triceratops Bull"],
+    "camera": {
+      "viewpoint": "POV ngôi thứ nhất cầm tay ngang ngực đông cứng trong nỗi kinh hoàng",
+      "shot_size": "cảnh trung (medium shot)",
+      "description": "Góc nhìn thứ nhất đông cứng tại mép trảng cỏ. Ống kính máy quay và người quay hoàn toàn ở ngoài khung hình nhìn thấy. Vị trí máy quay tĩnh đối diện với dã thú đang điên cuồng lao tới."
+    },
+    "style": "tài liệu sinh tồn trực diện, độ rung lắc kinh hoàng của máy quay, khối lượng lao tới mờ chuyển động, ánh sáng ban ngày chói chang",
+    "setting": "Trảng dương xỉ Hell Creek. Nền đất bùn lầy dẫn thẳng về phía máy quay.",
+    "characters": [
+      {
+        "name": "Bò Đực",
+        "visual_lock": "Triceratops horridus đực trưởng thành, sừng trái gãy, diềm sẹo đỏ rực, 9 tấn.",
+        "state": "Đứng cách 15m đối diện máy quay từ khung hình 0, đầu cúi thấp; bùng nổ cú lao."
+      }
+    ],
+    "in_place": "Bò Đực Triceratops đứng cách 15 mét đối diện thẳng vào góc nhìn với đầu cúi thấp từ khung hình 0.",
+    "timeline_action": {
+      "0-2s": "Từ khung hình 0 con bò đực hạ mỏ sát đất và chồm lên phía trước, tăng tốc phi thẳng về phía góc nhìn.",
+      "2-4s": "Con bò đực cày nát mặt đất trong ba bước chạy sấm sét khổng lồ, thu hẹp khoảng cách từ 15m xuống 8m khi bùn đất văng tung tóe từ móng trước; clip cắt đột ngột giữa bước chạy ở cự ly 8 mét."
+    },
+    "speech": {
+      "speaker": "Nora",
+      "mode": "Cách ly âm thanh (Sonic Isolation)",
+      "dialogue": []
+    },
+    "dramatic_craft": {
+      "beat": "Bùng nổ xung đột lãnh thổ (Cảnh khó nhất C2 · Mắt xích 1/3): cú lao toàn lực",
+      "value_turn": "Giằng co đối đầu (-) -> Va chạm chết chóc cận kề (- -)",
+      "subtext": "Chín tấn xương giáp lao đi với tốc độ 25 km/h; con người hoàn toàn bất lực về thể chất",
+      "prop_and_detail": "Chiếc sừng mũi chúc xuống chĩa thẳng vào ống kính; bùn đất bắn tung tóe từ các móng vuốt trước khổng lồ"
+    },
+    "audio": "Tiếng mặt đất rung chuyển trầm đục như sấm, tiếng cỏ bùn bị xé toạc, tiếng không khí bị xé rách dữ dội, tiếng hít hơi gấp kinh hoàng",
+    "physics": "Con bò đực tăng tốc từ 0 lên 4 m/s về phía máy quay; khoảng cách giảm từ 15m xuống 8m; độ rung nhẹ của máy quay ở tần số 4 Hz",
+    "negative_constraints": [
+      "Ống kính máy quay và người quay hoàn toàn ở ngoài khung hình nhìn thấy.",
+      "Tuyệt đối KHÔNG có lời thoại; sự im lặng của cú sốc tột độ.",
+      "Quy tắc chuỗi: kết thúc đột ngột giữa bước chạy khi con bò đực cách 8 mét."
+    ]
+  },
+  {
+    "clip_id": "A1-12b",
+    "scene_name": "Chuỗi Bò Đực Xông (2/3) — Khựng Lại & Cảnh Cáo",
+    "duration": 4,
+    "aspect_ratio": "16:9",
+    "refs": ["Triceratops Bull"],
+    "camera": {
+      "viewpoint": "POV ngôi thứ nhất cầm tay ngang ngực giật lùi nửa bước",
+      "shot_size": "cảnh trung (medium shot)",
+      "description": "Góc nhìn thứ nhất tại mép trảng cỏ, khớp chính xác vị trí máy quay của A1-12a. Ống kính máy quay và người quay hoàn toàn ở ngoài khung hình nhìn thấy."
+    },
+    "style": "thước phim tài liệu động lực học thô ráp, cú giật máy quay dữ dội, bùn bắn tung tóe, ánh sáng ban ngày gay gắt",
+    "setting": "Trảng dương xỉ Hell Creek. Mặt đất bùn lầy ngay trước ống kính máy quay.",
+    "characters": [
+      {
+        "name": "Bò Đực",
+        "visual_lock": "Triceratops horridus đực trưởng thành, sừng trái gãy, diềm sẹo đỏ rực, 9 tấn.",
+        "state": "Mở đầu ở cự ly 8 mét giữa bước chạy (khớp khung cuối A1-12a); ghì chặt chân trước trượt phanh."
+      }
+    ],
+    "in_place": "Bò Đực Triceratops ở cự ly 8 mét giữa sải bước từ khung hình 0, khớp chuẩn xác khung hình kết thúc của A1-12a.",
+    "timeline_action": {
+      "0-2s": "Mở đầu khi con bò đực đang giữa đà lao ở 8m; nó đột ngột ghì chặt hai cột chân trước khổng lồ, trượt phanh dừng lại cách 6 mét với bùn đất cày xới bắn tung tóe về phía trước.",
+      "2-4s": "Đứng sừng sững cách 6 mét, con bò đực cào chân trước bên phải hai lần dữ dội xuống nền đất, hất bùn đỏ văng thẳng về phía máy quay; góc nhìn giật lùi về phía sau."
+    },
+    "speech": {
+      "speaker": "Nora",
+      "mode": "Cách ly âm thanh (Sonic Isolation)",
+      "dialogue": []
+    },
+    "dramatic_craft": {
+      "beat": "Cú xông dọa giả vờ (Mắt xích 2/3): phô diễn sức mạnh thống trị lãnh địa mà không có ý định giết hại",
+      "value_turn": "Cú húc chết chóc (- -) -> Màn phô diễn cảnh cáo (-)",
+      "subtext": "Con bò đực không hề đi săn; nó đang xác lập ranh giới lãnh thổ tối thượng",
+      "prop_and_detail": "Móng chân trước cày những rãnh sâu trên đất sét đỏ; bùn ướt văng về phía ống kính; lỗ mũi bốc khói ẩm"
+    },
+    "audio": "Tiếng phanh trượt dập đất đinh tai nhức óc, tiếng bùn ướt bắn tung tóe sát bên, tiếng gầm rung chuyển lồng ngực",
+    "physics": "Con bò đực giảm tốc từ 4 m/s về 0 m/s trong khoảng 8m đến 6m; động tác cào chân hất các mảng bùn bay về phía trước với vận tốc 6 m/s; máy quay giật lùi 0,3m",
+    "negative_constraints": [
+      "Ống kính máy quay và người quay hoàn toàn ở ngoài khung hình nhìn thấy.",
+      "Tuyệt đối KHÔNG có lời thoại phát ra.",
+      "Quy tắc chuỗi: kết thúc với hình ảnh con bò đực đứng cách 6 mét, máy quay đang ngả ra sau."
+    ]
+  },
+  {
+    "clip_id": "A1-12c",
+    "scene_name": "Chuỗi Bò Đực Xông (3/3) — Ngã Ngửa Vào Dương Xỉ",
+    "duration": 4,
+    "aspect_ratio": "16:9",
+    "refs": ["Triceratops Bull"],
+    "camera": {
+      "viewpoint": "POV ngôi thứ nhất cầm tay ngã ngửa xuống đất, lật ngược lên tán lá vòm rừng",
+      "shot_size": "cảnh trung chuyển sang cực cận của tán lá",
+      "description": "Góc nhìn thứ nhất ngả ngửa mất kiểm soát và đập xuống thảm dương xỉ dày. Máy quay lật ngược lên trên, dừng lại hướng thẳng lên vòm cọ xanh phía trên. Cả hai tay trống không. Ống kính hoàn toàn ngoài khung hình."
+    },
+    "style": "vật lý cú ngã cầm tay hỗn loạn, vệt mờ chuyển động nhanh, lá dương xỉ quét qua, ánh sáng vòm lá",
+    "setting": "Mép trảng dương xỉ Hell Creek. Bụi dương xỉ rậm rạp và vòm cọ đan xen.",
+    "characters": [
+      {
+        "name": "Bò Đực",
+        "visual_lock": "Triceratops horridus đực trưởng thành, sừng trái gãy, diềm sẹo đỏ rực, 9 tấn.",
+        "state": "Mở đầu đứng cách 6 mét với đầu cúi thấp (khớp khung cuối A1-12b); rời khỏi khung hình khi máy quay lộn ngửa."
+      }
+    ],
+    "in_place": "Con bò đực đứng cách 6 mét đối diện máy quay từ khung hình 0 khi góc nhìn đã bắt đầu ngả ra sau.",
+    "timeline_action": {
+      "0-2s": "Từ khung hình 0 góc nhìn ngả ngửa mất kiểm soát; con bò đực biến mất khỏi đáy khung hình khi những tàu lá dương xỉ xanh quét dữ dội qua ống kính.",
+      "2-4s": "Góc nhìn đập mạnh xuống thảm dương xỉ xốp mềm, nảy nhẹ một nhịp rồi nằm bất động, nhìn thẳng lên vòm lá cọ cao vút dưới bầu trời sáng sớm mờ ảo."
+    },
+    "speech": {
+      "speaker": "Nora",
+      "mode": "Cách ly âm thanh (Sonic Isolation)",
+      "delivery": "Một tiếng thét vỡ giọng duy nhất vì hoảng loạn tột độ rồi nghẹn bặt khi chạm đất",
+      "dialogue": []
+    },
+    "dramatic_craft": {
+      "beat": "Mất kiểm soát & ngã sụp xuống đất (Mắt xích 3/3): cơ thể sụp đổ hoàn toàn vào bụi cây",
+      "value_turn": "Chủ thể hành động (-) -> Ngã ngửa bẹp dí trên lưng (- -)",
+      "subtext": "Trọng lực và nỗi sợ hãi tước bỏ chút điềm tĩnh cuối cùng; phản xạ tự nhiên của kẻ sống sót",
+      "prop_and_detail": "Những tàu lá dương xỉ khổng lồ quét ngang khung hình; thảm rêu xốp rừng già giảm chấn cú ngã"
+    },
+    "audio": "Một tiếng thét vỡ giọng duy nhất kinh hoàng, tiếng gãy vụn dữ dội của lá dương xỉ, tiếng cơ thể đập phịch xuống rêu, sự im lặng ù tai sau cú ngã",
+    "physics": "Góc nghiêng quay ngửa ra sau với tốc độ 90 độ/s; cú rơi thẳng đứng 1,2 mét xuống đất; độ nảy ổn định lúc 2,5s",
+    "negative_constraints": [
+      "Ống kính máy quay và người quay hoàn toàn ở ngoài khung hình nhìn thấy; không có bàn tay nào đưa về phía máy quay.",
+      "Không có từ ngữ nào thốt ra; chỉ có một tiếng thét phi ngôn từ duy nhất.",
+      "Quy tắc chuỗi: kết thúc tĩnh nhìn thẳng lên vòm cọ, tạo tiền đề khớp vị trí mở màn cho A1-13."
+    ]
+  },
+  {
+    "clip_id": "A1-13",
+    "scene_name": "Nằm trong dương xỉ — Selfie Thở phào adrenaline",
+    "duration": 8,
+    "aspect_ratio": "16:9",
+    "refs": ["Nora", "Thân hình Nora", "Đường mòn Hell Creek"],
+    "camera": {
+      "viewpoint": "selfie cầm tay từ trên nhìn xuống, Nora nằm nghiêng trong đám dương xỉ nhìn lên góc nhìn",
+      "shot_size": "cảnh cận trung (medium close-up)",
+      "description": "Nora nằm nghiêng lọt thỏm trong đám lá dương xỉ khổng lồ, cánh tay phải duỗi thẳng lên trên ra ngoài khung hình giữ góc nhìn. Một tàu lá dương xỉ xanh vắt ngang phần trên khung hình. Ống kính máy quay và bàn tay cầm nắm hoàn toàn ngoài khung hình."
+    },
+    "style": "thước phim vlog sinh tồn thân mật thô ráp, bóng râm dương xỉ lốm đốm, lồng ngực phập phồng chân thực",
+    "setting": "Mép trảng cỏ Hell Creek, thảm dương xỉ dập nát dưới tán cọ dày đặc.",
+    "characters": [
+      {
+        "name": "Nora",
+        "visual_lock": "Nora, 26 tuổi, tóc đỏ bung xõa với vết bùn đất trên trán và thái dương, thân hình đồng hồ cát đẫy đà trong áo tunic may đo khớp với tham khảo Thân hình Nora.",
+        "state": "Nằm nghiêng trong đám dương xỉ dập nát từ khung hình 0, lồng ngực phập phồng dữ dội, thở dốc hớp không khí."
+      }
+    ],
+    "in_place": "Nora đang nằm trong đám dương xỉ dập nát từ khung hình 0, khớp chuẩn xác khung hình kết thúc của A1-12c. Tàu lá dương xỉ vắt ngang khung hình.",
+    "timeline_action": {
+      "0-3s": "Từ khung hình 0 Nora nằm nghiêng, lồng ngực phập phồng trong những nhịp thở dốc nông gấp gáp, đôi mắt mở to bàng hoàng.",
+      "3-6s": "Cô chớp mắt, dần nhận thức được mình vẫn còn nguyên vẹn; một hơi thở hắt ra run rẩy khi cô hướng ánh nhìn vào ống kính.",
+      "6-8s": "Một nụ cười yếu ớt tự giễu nở trên môi khi cô thốt ra câu punchline hài hước khô khốc của kẻ sống sót."
+    },
+    "speech": {
+      "speaker": "Nora",
+      "delivery": "hụt hơi, thở dốc khàn đặc, chuyển sang sự tự giễu khô khốc ở câu 'Đã nhận được thông điệp'",
+      "dialogue": [
+        {"t": "0-3s", "speaker": "Nora", "line": "Nó đã dừng lại. Nó dừng lại cách đúng sáu mét."},
+        {"t": "3-6s", "speaker": "Nora", "line": "Đó là một lời cảnh cáo, không phải đòn tấn công."},
+        {"t": "6-8s", "speaker": "Nora", "line": "Đã nhận được thông điệp, anh bạn to xác."}
+      ]
+    },
+    "dramatic_craft": {
+      "beat": "Giải tỏa adrenaline: giải mã cú xông như một lời cảnh báo ranh giới thay vì hành vi giết chóc",
+      "value_turn": "Cú sốc cận kề cái chết (- -) -> Hiểu ra quy luật & hài hước tự vệ (+)",
+      "subtext": "Sự hài hước là chiếc áo giáp chống lại nỗi tê liệt kinh hoàng; thừa nhận vị thế tối thượng của dã thú",
+      "prop_and_detail": "Những tàu lá dương xỉ dập nát rung lên theo từng nhịp thở dốc; vệt bùn tối màu trên gò má"
+    },
+    "audio": "Tiếng thở dốc hổn hển nặng nhọc, tiếng xào xạc của lá dương xỉ rung theo hơi thở, tiếng bước chân nặng nề rút lui của con bò đực ở xa",
+    "physics": "Máy quay khẽ rung theo cánh tay run rẩy duỗi thẳng của Nora; lồng ngực chuyển động nhấp nhô rõ rệt ở tần số 0,8 Hz",
+    "negative_constraints": [
+      "Bản thân ống kính máy quay và bàn tay cầm nắm bên phải hoàn toàn nằm ngoài khung hình nhìn thấy và không bao giờ xuất hiện. KHÔNG có đồ hiện đại.",
+      "Cánh tay phải duỗi thẳng ra ngoài khung hình; bàn tay cầm nắm không bao giờ lộ diện.",
+      "Khớp chuẩn 100% lời thoại nguyên bản từ script.md.",
+      "KHÓA CƠ THỂ: Vóc dáng đồng hồ cát đẫy đà với vòng một tự nhiên lớn lộ rõ trong tư thế nằm nghiêng, KHÔNG ngực phẳng."
+    ]
+  },
+  {
+    "clip_id": "A1-14",
+    "scene_name": "Ngồi ở mép — Thẻ nhiệm vụ Act 1",
+    "duration": 10,
+    "aspect_ratio": "16:9",
+    "refs": ["Nora", "Thân hình Nora", "Đường mòn Hell Creek"],
+    "camera": {
+      "viewpoint": "máy quay cố định kê trên một gốc cây phủ rêu cách 2 mét ở độ cao ngang ngực người ngồi",
+      "shot_size": "cảnh trung (medium shot)",
+      "description": "Máy quay tĩnh khóa chặt trên gốc cây mục phủ rêu. Nora ngồi từ thắt lưng trở lên ở phía bên trái khung hình. Đàn khủng long đang gặm cỏ hiện rõ trong trảng cách 30 mét phía sau bên phải. Không ai chạm vào máy quay. Ống kính hoàn toàn ngoài khung hình."
+    },
+    "style": "phim tài liệu động vật hoang dã trầm lắng, ánh nắng ban mai trong trẻo ấm áp, bóng đổ sắc nét, đồng bằng ngập lũ xanh ngắt",
+    "setting": "Mép đường mòn Hell Creek nhìn ra trảng dương xỉ rộng lớn. Nắng giữa buổi sáng rực rỡ (ánh sáng L2, 08:00).",
+    "characters": [
+      {
+        "name": "Nora",
+        "visual_lock": "Nora, 26 tuổi, vóc dáng đồng hồ cát lực lưỡng, tóc đỏ cột gọn gàng, trang phục sinh tồn vải lanh may đo khớp với tham khảo Thân hình Nora.",
+        "state": "Ngồi tĩnh lặng từ thắt lưng trở lên trên thân cây đổ ở bên trái khung hình từ khung hình 0, hai tay đặt trên đầu gối, quan sát bầy đàn."
+      },
+      {
+        "name": "Đàn Triceratops",
+        "visual_lock": "Đàn Triceratops trưởng thành gặm cỏ bình thản cách 30 mét ở hậu cảnh.",
+        "state": "Gặm cỏ đều đặn ở hậu cảnh bên phải từ khung hình 0."
+      }
+    ],
+    "in_place": "Nora đang ngồi trên thân cây gỗ ở bên trái từ khung hình 0. Bầy đàn đang gặm cỏ cách 30 mét bên phải. Ánh nắng rực rỡ đã ổn định.",
+    "timeline_action": {
+      "0-3s": "Nora ngồi bất động trên thân cây đổ, nhìn ra bầy đàn, tư thế khiêm nhường và tĩnh lặng.",
+      "3-7s": "Cô quay đầu về phía ống kính máy quay, nói với sự kiên định tĩnh lặng, kỷ luật.",
+      "7-10s": "Cô hướng ánh nhìn trở lại bầy đàn đang gặm cỏ, giữ cơ thể hoàn toàn bất động khi làn gió ấm làm lay nhẹ mái tóc."
+    },
+    "speech": {
+      "speaker": "Nora",
+      "delivery": "bình tĩnh, kỷ luật, quyết tâm tĩnh lặng, nhịp điệu đàm thoại tự nhiên",
+      "dialogue": [
+        {"t": "0-3s", "speaker": "Nora", "line": "Vậy là tôi không thể bước vào trong. Chưa thể."},
+        {"t": "3-7s", "speaker": "Nora", "line": "Tôi sẽ ngồi đây ở ngoài rìa, nơi chúng có thể nhìn thấy tôi."},
+        {"t": "7-10s", "speaker": "Nora", "line": "Tôi không cử động. Và tôi chờ."}
+      ]
+    },
+    "dramatic_craft": {
+      "beat": "Cao trào kịch tính Act 1 & Thẻ nhiệm vụ: chấp nhận vị thế kẻ ngoài rìa, áp dụng chiến lược hòa nhập thụ động",
+      "value_turn": "Xâm phạm bốc đồng (-) -> Kiên nhẫn quan sát chiến lược (+)",
+      "subtext": "Xác lập nhiệm vụ chủ đạo của Act 2: giành quyền tồn tại trong bán kính an toàn của chúng bằng sự bất động",
+      "prop_and_detail": "Thân cây đổ phủ rêu xanh; mai rùa đựng nước yên vị bên hông trái; bầy đàn di chuyển chậm 0,2 m/s cách 30 mét phía sau"
+    },
+    "audio": "Làn gió nhẹ qua vòm rừng, tiếng nhai lá nhịp nhàng của khủng long từ xa, giọng nói trong trẻo tĩnh lặng của Nora, sự thanh bình nguyên sinh",
+    "physics": "Máy quay hoàn toàn bất động; Nora ngồi yên với nhịp thở tinh tế; bầy đàn chuyển dịch chậm ở hậu cảnh",
+    "negative_constraints": [
+      "KHÔNG có đồ hiện đại, KHÔNG có vật dụng nhân tạo. Ống kính máy quay và người quay hoàn toàn ở ngoài khung hình nhìn thấy.",
+      "Khớp chuẩn 100% lời thoại nguyên bản từ script.md.",
+      "KHÓA CƠ THỂ: Nora trong áo tunic sinh tồn may đo, thân hình đồng hồ cát đẫy đà, KHÔNG ngực phẳng, KHÔNG mảnh khảnh."
+    ]
+  }
+]

@@ -20,13 +20,13 @@ FORBIDDEN_GHOST_DEVICE_PATTERNS = [
     (r"\b(?:180-degree|180\s*deg|whip\s+pan|pivoting\s+the\s+viewpoint)\b.*\b(?:turning\s+to\s+face|turning\s+around\s+to\s+face|settles?\s+.*selfie|back\s+toward\s+(?:nora|her|him|herself|himself))\b", "FORBIDDEN (Rule 42): 180° camera flip between 1st-person POV and selfie in a single shot breaks single-perspective vlog purity. Use 100% Selfie (over-the-shoulder) or 100% POV."),
 ]
 
-def is_json_prompt(prompt: str) -> tuple[bool, dict | None]:
+def is_json_prompt(prompt: str) -> tuple[bool, dict | list | None]:
     """Check if prompt is a JSON string and parse it if valid."""
     s = prompt.strip()
     if (s.startswith("{") and s.endswith("}")) or (s.startswith("[") and s.endswith("]")):
         try:
             parsed = json.loads(s)
-            if isinstance(parsed, dict):
+            if isinstance(parsed, (dict, list)):
                 return True, parsed
         except Exception:
             return True, None  # intended as JSON but malformed
@@ -71,16 +71,20 @@ def lint_json_prompt(data: dict) -> list[dict]:
 
     # 2. Camera field checks
     camera_data = data.get("camera", {})
+    cam_text = ""
     if isinstance(camera_data, dict):
         cam_text = " ".join(str(v) for v in camera_data.values()).lower()
-        if "selfie" in cam_text or "front-lens" in cam_text or "vlog" in cam_text:
-            constraints_text = " ".join(str(x) for x in data.get("negative_constraints", [])).lower()
-            if not ("off-screen" in cam_text or "outside the visible frame" in cam_text or "outside the frame" in cam_text or "outside the frame" in constraints_text or "off-screen" in constraints_text):
-                issues.append({
-                    "severity": "HIGH",
-                    "type": "OPTICAL_VIEWPOINT",
-                    "message": "JSON camera or negative_constraints is missing explicit camera blind-spot constraint: 'the camera lens itself and her right gripping hand are completely outside the visible frame and never seen'."
-                })
+    elif isinstance(camera_data, str):
+        cam_text = camera_data.lower()
+
+    if "selfie" in cam_text or "front-lens" in cam_text or "vlog" in cam_text:
+        constraints_text = " ".join(str(x) for x in data.get("negative_constraints", [])).lower()
+        if not ("off-screen" in cam_text or "outside the visible frame" in cam_text or "outside the frame" in cam_text or "outside the frame" in constraints_text or "off-screen" in constraints_text):
+            issues.append({
+                "severity": "HIGH",
+                "type": "OPTICAL_VIEWPOINT",
+                "message": "JSON camera or negative_constraints is missing explicit camera blind-spot constraint: 'the camera lens itself and her right gripping hand are completely outside the visible frame and never seen'."
+            })
 
     # 3. Characters field checks
     chars_data = data.get("characters", [])
@@ -126,7 +130,7 @@ def lint_json_prompt(data: dict) -> list[dict]:
                 })
 
     # 7. Camera Touch / Lens Blocking
-    if "selfie" in text_lower or "front-lens" in text_lower:
+    if "selfie" in text_lower or "front-lens" in text_lower or "selfie" in cam_text:
         m_reach = re.search(r"\b(?:reaches?|extends?|brings?)\s+(?:her|his|their)?\s*(?:free\s*)?(?:hand|arm)\s+toward\s+(?:the\s+)?(?:camera|lens|screen)\b", text_lower)
         if m_reach:
             issues.append({
@@ -141,7 +145,7 @@ def lint_json_prompt(data: dict) -> list[dict]:
 
 
 def lint_prompt(prompt: str) -> list[dict]:
-    """Check prompt against FlowKit rules. Supports both plain text and JSON structured prompts."""
+    """Check prompt against FlowKit rules. Supports both plain text, single JSON, and list of JSON prompts."""
     is_json, json_obj = is_json_prompt(prompt)
     if is_json:
         if json_obj is None:
@@ -150,6 +154,15 @@ def lint_prompt(prompt: str) -> list[dict]:
                 "type": "MALFORMED_JSON",
                 "message": "Prompt appears to be JSON but failed to parse with json.loads."
             }]
+        if isinstance(json_obj, list):
+            all_issues = []
+            for idx, item in enumerate(json_obj):
+                if isinstance(item, dict):
+                    item_issues = lint_json_prompt(item)
+                    for iss in item_issues:
+                        iss["clip_id"] = item.get("clip_id", f"item_{idx}")
+                    all_issues.extend(item_issues)
+            return all_issues
         return lint_json_prompt(json_obj)
 
     issues = []
