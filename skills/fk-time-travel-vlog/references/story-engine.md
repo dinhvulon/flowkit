@@ -1,6 +1,6 @@
 # Story Engine — Luật giữ chân người xem (user chốt 2026-10-05)
 
-Rút từ bản phê bình 18 điểm của user cho tập Neanderthal (`output/neanderthal-51ka/script.md` v1 → v2). Áp dụng cho **mọi tập** time-travel / survival vlog. Khi mâu thuẫn với bảng 7 hồi, 23 beat, mật độ thoại cũ hay quy tắc "không chữ trên màn hình" ở chỗ khác trong skill, **file này thắng** về cấu trúc truyện và thoại. Các luật kỹ thuật dựng prompt (mục 10b, mục 11 của `skills/fk-time-travel-vlog.md`) vẫn giữ nguyên.
+Rút từ bản phê bình 18 điểm của user cho tập Neanderthal (`output/neanderthal-51ka/script.md` v1 → v2). Áp dụng cho **mọi tập** time-travel / survival vlog. **File này là nguồn cấu trúc truyện duy nhất** (khung 7 hồi cũ đã bị xóa khỏi `structure-7-acts.md` ngày 2026-10-12; file đó giờ chỉ còn là kho ý tưởng cảnh/beat). Các luật kỹ thuật dựng prompt giữ ở `prompt-lock.md` và `production-lessons.md` §1.
 
 Đọc file này **trước khi viết outline**, và chạy checklist ở mục 14 trước khi đưa kịch bản cho user review.
 

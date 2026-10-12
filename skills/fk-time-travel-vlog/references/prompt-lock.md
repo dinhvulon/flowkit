@@ -6,7 +6,7 @@
 
 **A. Thứ tự khối trong `video_prompt` (không đảo, không bỏ khối):**
 
-1. **Style + góc máy** — chọn đúng 1 trong 3 loại theo **Tỷ lệ Góc Máy Vàng (Rule 42)**: 60%–70% POV, 20%–30% Selfie & Over-the-shoulder, 10% Máy dựng cố định. Tuyệt đối không để 100% video đều là selfie dí sát mặt; cấm 3 clip selfie liên tiếp:
+1. **Style + góc máy** — chọn đúng 1 trong 3 loại **theo bản chất hành động của clip** (Rule 42 (3) — KHÔNG có tỷ lệ phần trăm cứng): hành động / di chuyển / rình săn / quan sát ➔ POV; thao tác cần 2 tay ➔ Máy dựng cố định; tâm sự / hook / kết / phản ứng cảm xúc ➔ Selfie & OTS. Ràng buộc: cấm 100% video là selfie dí sát mặt; cấm 3 clip selfie liên tiếp; cấm 2 clip liền nhau cùng cỡ cảnh + cùng góc máy:
    - *Selfie:* `"The lens sits at the end of <V>'s outstretched right arm, completely outside the visible frame and never seen; her right arm stays extended toward the lens for the entire clip, and she never reaches toward, touches, covers, taps, or points at the lens. Only her left hand is free."`
    - *POV:* `"The view is <V>'s own eyes; all recording gear is completely outside the visible frame, and her hands stay out of frame for the whole clip."` (chỉ viết "her hands enter the frame" khi sub-clip **thật sự** có thao tác tay — Bài học 50).
    - *Máy dựng cố định:* `"Static footage from a fixed viewpoint resting on <vật cụ thể>; the frame does not move; nobody touches the viewpoint. Both of <V>'s hands are free."` — dùng khi hành động cần **hai tay** (Bài học 50).
@@ -23,7 +23,7 @@
 
 | # | Kiểm tra | Bài học |
 |---|---|---|
-| 1 | Chỉ 1 loại góc máy; tuân thủ Tỷ lệ Góc Máy Vàng (60-70% POV, 20-30% Selfie, 10% Fixed); nếu là selfie thì cánh tay phải giữ máy suốt clip, mọi thao tác chỉ bằng **tay trái** | 41, 42, 50, 61 |
+| 1 | Chỉ 1 loại góc máy, **chọn theo hành động** (không theo tỷ lệ %); không phải clip selfie thứ 3 liên tiếp; không trùng cỡ cảnh + góc máy với clip liền trước; nếu là selfie thì cánh tay phải giữ máy suốt clip, mọi thao tác chỉ bằng **tay trái** | 41, 42, 50, 61 |
 | 2 | Hành động cần **2 tay** (trượt, chống tay, kẹp tay vào nách, ôm vật nặng) → đã chuyển sang POV hoặc máy dựng cố định | 50, Scene 27/45 |
 | 3 | Mọi người/vật/sinh vật trong sub-clip đều đã có mặt trong khối "already in place" với vị trí + khoảng cách ở giây 0 | 48, Scene 2/14/39/73 |
 | 4 | Không giao hành động cho người không có trong khung; chuyển đồ vật tả từng bước tay (đưa → đỡ bằng tay nào → tay kia buông) | 48, Scene 14/15 |

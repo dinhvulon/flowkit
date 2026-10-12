@@ -11,8 +11,8 @@
 | **`/fk-action-choreography`** | Vũ đạo hành động & an toàn cơ học AI | 3 pha động học (`0-3s` / `3-6s` / `6-8s`), từ vựng né/săn an toàn |
 | **`/fk-add-material`** | Image Material & Visual Style | Style instruction, lighting, cấm token phone |
 | **`/fk-cinematic-transitions`** | Kỹ thuật nối cảnh & nhịp chuyển màn | Match-on-action, foreground wipe, swing pan, J-cut |
-| **`/fk-gen-narrator`** | Biên kịch thoại & khẩu hình vlog | Thoại 20–25 từ chia 3 mốc, sonic isolation, nói từ giây 0 |
-| **`/fk-camera-guide`** | Đạo diễn hình ảnh & quang học smartphone | 5 tầng prompt, tỷ lệ vàng POV/OTS/FIXED/SELFIE |
+| **`/fk-gen-narrator`** | Biên kịch thoại & khẩu hình vlog | Thoại 18–22 từ chia 3 mốc (Rule 49), sonic isolation, nói từ giây 0 |
+| **`/fk-camera-guide`** | Đạo diễn hình ảnh & quang học smartphone | 5 tầng prompt, chọn POV/OTS/FIXED/SELFIE theo hành động (không có tỷ lệ %) |
 
 Cách chuyển một template gốc sang vlog:
 
@@ -20,7 +20,7 @@ Cách chuyển một template gốc sang vlog:
 |---|---|
 | `Negative: ...` | Câu khẳng định trước dòng `Audio:` (`prompt-lock.md` khối 8) |
 | "The camera tracks / dollies / orbits / pushes in" | Góc nhìn của vlogger: selfie, POV hoặc máy dựng (`prompt-lock.md` khối 1) + rung tay theo bước chân (Bài học 25, 35) |
-| `narrator_text` lời dẫn | Thoại native của vlogger 20–25 từ trong `video_prompt` (Lesson 62, 65) |
+| `narrator_text` lời dẫn | Thoại native của vlogger 18–22 từ trong `video_prompt` (Rule 49, Lesson 65) |
 | Nhân vật chính là chiến binh/tướng | Vlogger là người sống sót bị cuốn vào; người bản địa làm phần khó |
 | Kiếm, khiên, kỵ binh | Vũ khí và mối nguy đúng thời kỳ: giáo, đá, đuốc, thú lớn, bão |
 
@@ -40,7 +40,7 @@ Mỗi clip hành động 8s đúng 3 pha:
 | **A. Rình mồi & Săn thú cận chiến** | **100% First-Person POV** qua mắt vlogger hoặc Camera nấp sau tảng đá/thân cây | **Sonic Isolation (Im lặng tuyệt đối):** Miệng ngậm chặt, 0 từ thoại trên hình (`Strictly NO spoken dialogue`). Kịch tính qua tiếng thở dồn, tim đập, foley lá gãy | Áp sát bò mộng, phục kích voi ma mút, rình bầy linh cẩu, leo trèo |
 | **B. Tháo chạy & Thoát nạn sinh tử** | **Selfie góc rộng 0.5x** (cánh tay khóa cứng máy, không buông) | **18–22 từ thoại thở dốc / hét nghẹn:** `0-3s` (6-7 từ) $\to$ `3-6s` (7-8 từ) $\to$ `6-8s` (5-7 từ) | Động đất, tuyết lở, thú dữ bất ngờ quay đầu truy đuổi |
 
-**Góc máy cho hành động** (vlogger là người cầm máy — tuân thủ Golden Camera Ratio ở Rule 42: 60-70% POV, 20-30% Selfie/OTS, 10% Fixed):
+**Góc máy cho hành động** (vlogger là người cầm máy — chọn theo bản chất hành động, KHÔNG theo tỷ lệ %; Rule 42 (3)):
 - Rình rập, bò trườn, đâm/ném giáo, hai tay làm việc: **100% First-Person POV hoặc máy dựng/tựa đá** (Bài học 50, 61) — vlogger không thể vừa giơ tay selfie vừa đi săn.
 - Chạy trốn, né: selfie một tay, máy nảy theo từng bước, cánh tay không bao giờ buông máy (Bài học 25, 39).
 - Người bản địa ra đòn chính: POV từ chỗ nấp (`/fk-camera-guide` mục 6 "quay lén") hoặc selfie qua vai (vlogger 1/3 tiền cảnh) ở những giây quan sát an toàn.

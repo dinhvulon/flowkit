@@ -66,3 +66,20 @@ Cột "Khung cuối" mô tả chính xác khung hình cuối clip (vd: "súc g�
   }'
   ```
   Rồi tạo project với `"material": "phone_vlog"`. Nếu user không muốn thêm material → dùng `realistic` và dựa vào style string trong `video_prompt`.
+
+## Sổ liên tục bối cảnh (`scene-design` — repo tham chiếu)
+
+Bài học 48 ("vật tự hiện ra / biến mất") và 69 (ref bối cảnh 16:9 dùng chung) xử lý **trong một clip**. Khi một địa điểm xuất hiện ở 5–10 clip rải khắp video, cần thêm một sổ truyền trạng thái **giữa các clip** — phương pháp ở `skills/character-scene-design-skills-main/.agents/skills/scene-design/SKILL.md` → *scene continuity ledger*.
+
+Tách làm 2 tầng cho mỗi địa điểm:
+
+- **Base scene** (bất biến, viết 1 lần, dán vào mọi clip ở địa điểm đó): kiến trúc / địa hình, hướng lối vào–lối ra, vật liệu, nguồn sáng chính, 1–3 đạo cụ cố định, `@tên-bối-cảnh`.
+- **Scene state** (viết lại cho **từng** clip): giờ & chất ánh sáng, thời tiết / mặt đất, trạng thái cửa–rèm–lối đi, **vết tích tích lũy** (tro, máu, dấu chân, đồ đã dùng, hư hại), vị trí vlogger & người bản địa trong khung, **và trạng thái mà clip kế tiếp phải kế thừa**.
+
+| Lỗi nó vá | Cách dùng |
+|---|---|
+| Đống lửa clip 12 đang cháy to, clip 20 lại mới nhóm | Cột "vết tích tích lũy" chỉ được **tăng**, không tự reset |
+| Trời chiều ở clip 8, trưa nắng ở clip 9, lại chiều ở clip 10 | Cột "giờ & ánh sáng" chạy một chiều theo trục thời gian của tập |
+| Đồ đã dùng/đã cho đi lại xuất hiện nguyên vẹn | "Trạng thái kế thừa" của clip trước là đầu vào bắt buộc của khối `Everything is already in place from the very first frame` (`prompt-lock.md` khối 3) |
+
+Ghi sổ này thành một bảng trong `output/<slug>/script.md`, ngay dưới bảng vật lý của Bước 4. **Bỏ qua** phần power-space / short-drama 9:16 và các đường dẫn `/Users/baimengke/...` trong file gốc.
