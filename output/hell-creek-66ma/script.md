@@ -64,8 +64,7 @@ Mọi `video_prompt` mang câu khẳng định: *"No subtitles, captions, labels
 CHARACTER_LOCK:
 Nora, a 26-year-old Western woman with a heart-shaped face, hazel-green eyes, dense freckles across nose and cheeks,
 bright copper-red hair in a high bun held by a dark wooden hairpin, a few loose strands at the temples,
-wearing an olive-drab waxed-canvas field shirt with sleeves rolled above the elbow and the collar open,
-a dark brown leather chest harness with two flat pouches, heavy slate-grey canvas trousers, scuffed brown leather boots.
+wearing the tailored Late Cretaceous survival field outfit shown in Nora Body ref: olive-tan raw linen tunic with laced plunging V-neckline, dark leather utility belt cinching narrow waist, 22 cm turtle shell water flask at left hip, olive-brown leather trekking trousers, and laced field boots.
 Voice: Laomedeia - upbeat, mid-high pitched, energetic expressive conversational female voice, fast confident vlog delivery with dry humor, rises into real cracking screams when in danger, drops to a fast whisper when hiding.
 ```
 
