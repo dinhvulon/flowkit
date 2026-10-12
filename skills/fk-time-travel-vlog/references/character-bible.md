@@ -29,7 +29,7 @@ Nhân vật **mặc đồ của thời kỳ ngay từ clip đầu** để "trà 
 ## 3. Giọng — Laomedeia, 1 giọng mỗi clip
 
 - Vlogger nữ: `voice_description` theo chuẩn **Laomedeia** (Google Gemini-TTS, khối mẫu ở trên). Slot 7 của Omni Flash `MZZa6b` mặc định `[["laomedeia"]]`.
-- Thoại nhúng thẳng trong sub-clip: `0-3s / 3-6s / 6-8s` (clip 10s: `6-10s`), dạng `Nora says (tag cách nói): "..."` để `abra_r2v` tự sinh khẩu hình native.
+- Thoại nhúng thẳng trong sub-clip theo `duration` (4s `0-2s / 2-4s`; 6s `0-2s / 2-4s / 4-6s`; 8s `0-3s / 3-6s / 6-8s`; 10s `0-3s / 3-7s / 7-10s`), dạng `Nora says (tag cách nói): "..."` để `abra_r2v` tự sinh khẩu hình native.
 - Slot 7 chỉ gửi **một** voice id, lấy từ entity **đầu tiên theo thứ tự DB** có `voice_description` → **chỉ vlogger khai báo voice**. Gửi 2 giọng làm clip thất bại (test 2026-10-05).
 
 ## 4. Nhân vật phụ nói ngôn ngữ không hiểu được (user chốt 2026-10-05)
@@ -90,3 +90,15 @@ Edit this image: keep the exact same three panels side by side, the same three p
 - Câu `[OUTFIT]` ghi rõ cả thứ **không** có (không mũ trùm, không viền lông, không khóa kim loại…) — đây là prompt ảnh, không phải `video_prompt`, nên câu "NOT…" được phép.
 - Phụ kiện sẽ đeo/tháo trong cảnh (bao tay, mũ) **không** đưa vào `[OUTFIT]` (mục 5).
 - Cùng câu `[OUTFIT]` đó là `OUTFIT LOCK` trong `video_prompt` của tập — một nguồn duy nhất, không viết lại khác đi.
+
+## 7. Kỹ thuật bổ sung — `character-design` (repo tham chiếu)
+
+Mục 1–6 ở trên là **luật của skill này** và luôn thắng. Mục 7 chỉ trỏ sang kho phương pháp ở `skills/character-scene-design-skills-main/skills/character-design/` — đọc khi gặp đúng triệu chứng dưới đây, không đọc mặc định, không copy nội dung về.
+
+| Triệu chứng | Đọc | Áp dụng vào đâu |
+|---|---|---|
+| Body trôi dáng giữa các clip; 3 panel của `<V> Body` không giống "một người xoay" (lệch body width, leg length, waist line, đường dây đeo, bên đeo đạo cụ) | `character-design/SKILL.md` → *Production Asset Pipeline* bước 1 (**proportion / height lock**) + bước 4 (**W0 turnaround contract**) | Làm **trước** khi sinh `<V> Body`: chốt net height, head ratio, width-to-height ratio, leg ratio, foot baseline thành câu chữ, rồi mới EDIT outfit (mục 6). Mạnh hơn là nhồi thêm tính từ vào `BODY LOCK` |
+| Đạo cụ cố định (gùi, túi da, dao, bầu nước) trôi thành vật generic giữa 40 clip | cùng file → bước 3 (**permanent prop geometry**) | Tả đạo cụ bằng **hình học + bên đeo + cách gắn + chất liệu + mặt trước/sau**, và **nêu rõ nó KHÔNG phải cái gì** (`not a round ball, not a bottle, not a pouch`). Dùng trong prompt **ảnh ref**; `video_prompt` vẫn theo Rule 52 (2) — chỉ trỏ ref, không tả lại |
+| Nhiều người bản địa bị trộn mặt thành một | cùng file → *Bone And Face Structure Layer* | Mỗi nhân vật phụ đổi ít nhất **2 trong**: face envelope, cheek/jaw, eye geometry, hairline, skin texture, posture. Ghi vào cột dấu nhận diện ở bảng nhân vật (`story-engine.md`) |
+
+**Bỏ qua** trong repo đó: toàn bộ phần short-drama / casting dọc 9:16, `references/full-manual.md`, `SECTIONS/`, và mọi đường dẫn `/Users/baimengke/...` (không tồn tại trên máy này).

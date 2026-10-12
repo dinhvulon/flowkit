@@ -2,7 +2,43 @@
 
 Đọc ở **Bước 5** của `SKILL.md` trước khi viết `video_prompt`, và khi review clip lỗi. Đây là mục 11 cũ của skill, giữ nguyên số thứ tự bài học để các tham chiếu "Bài học N" cũ vẫn đúng.
 
-**Thứ tự ưu tiên:** CLAUDE.md > bài học có số lớn hơn / ngày mới hơn > bài học cũ. Các bài học đã bị thay được đánh dấu `[ĐÃ THAY]` ngay đầu dòng; giữ lại làm bằng chứng, không làm theo. Các chỗ ghi "mục N" trong file này trỏ tới số mục của skill cũ — tra bảng "Bản đồ mục cũ" trong `SKILL.md`.
+**Thứ tự ưu tiên:** CLAUDE.md > bài học có số lớn hơn / ngày mới hơn > bài học cũ. Các bài học đã bị thay được đánh dấu `[ĐÃ THAY]` ngay đầu dòng; giữ lại làm bằng chứng, không làm theo.
+
+---
+
+## §1. LUẬT HIỆN HÀNH — đọc mục này là đủ để viết prompt
+
+> Bảng tra nhanh (cập nhật 2026-10-12). File dưới §2 là **kho lịch sử 71 bài học**; khi nghi ngờ, bảng này thắng. Mỗi khi chốt luật mới, sửa bảng này **trước**, rồi mới ghi bài học mới vào §2.
+
+| Chủ đề | Luật hiện hành | Nguồn | Đã thay luật nào |
+|---|---|---|---|
+| **Độ dài clip** | **Không cố định.** Dễ lỗi → chuỗi 4s cùng bối cảnh (1 hành động/clip, khớp tư thế đầu-cuối). Dễ, không chuyển cảnh → 8s; long take / master / cảnh cuối → 10s; lưng chừng → 6s | Rule 49 (0) + Bài 71 | ~~mọi clip 8s~~ |
+| **Số từ thoại theo độ dài** | **4s** 0 hoặc 6–8 (`0-2s / 2-4s`) · **6s** 12–15 (`0-2s / 2-4s / 4-6s`) · **8s** 18–22, chia `0-3s` 6–7 / `3-6s` 7–8 / `6-8s` 5–7 · **10s** 24–28 (`0-3s / 3-7s / 7-10s`). Thiếu → dead air; thừa → cụt âm. Nói **ngay từ giây 0.0** | CLAUDE.md Rule 49 + Bài 65, 71 | ~~23–25 từ~~ (Bài 62), ~~20–25 từ~~ |
+| **Tỷ lệ góc máy** | **KHÔNG có tỷ lệ % nào.** Chọn theo hành động: POV (hành động/di chuyển/rình săn/quan sát) · OTS (đồng hành, thao tác qua vai) · FIXED (thao tác 2 tay) · SELFIE (hook, tâm sự, phản ứng, kết). Cấm 100% selfie · cấm 3 selfie liên tiếp · cấm 2 clip liền nhau trùng cỡ cảnh + góc máy | Rule 42 (3) | ~~60–70% POV~~ (Bài 61), ~~POV 35/OTS 35/FIXED 15/SELFIE 15~~ (Bài 66) |
+| **Im lặng khi rình săn** | Cảnh áp sát thú/phục kích/ẩn nấp: **0 từ trên hình**, miệng khóa chặt (`Sonic Isolation`). Thoại dẫn → voiceover hậu kỳ | Rule 49 (4) + Bài 61 | — |
+| **Bộ ref vlogger** | `<V>` (mặt+tóc) + `<V> Body` (3 góc, **đã mặc outfit**, EDIT 1 lần từ Body trần gốc). **Không** có entity `<V> Outfit`. Tối đa 3 ref/clip. Cảnh OTS cần thêm `<V> Back` (sau gáy) | Rule 46 + Bài 60, 66 | ~~entity Outfit riêng~~ |
+| **Khóa trang phục** | **Thuần ref** — cấm mô tả lại quần áo bằng lời. Chỉ trỏ: `wears the exact historical outfit shown in the <V> Body reference sheet (NO shearling collar, NO extra fur, NO hood, NO outfit variations)` | Rule 52 (2) + Bài 63 | ~~tả outfit bằng chữ trong prompt~~ |
+| **Khóa hình thể** | Waist-Up Medium Shot hơi hất lên, đứng thẳng + cụm `BODY LOCK` đối kháng. Cấm góc xa/toàn khi cúi gập người | Rule 52 (3) + Bài 63 | — |
+| **Từ cấm (ghost device)** | Cấm 100% `phone`, `smartphone`, `phone_vlog`, `device`, `screen`, `selfie stick`, `gimbal`, `camera` (đạo cụ) — **kể cả trong câu phủ định và trong project material**. Thay bằng: `The camera lens and viewpoint are completely outside the visible frame and never seen; both hands are empty` | Rule 52 (1) + Bài 9, 33, 63 | — |
+| **Bàn tay trong POV** | Nếu POV có thao tác tay (nhặt đồ, vốc nước, chạm dấu chân): BẮT BUỘC cấp ref `<V> Hand` (sheet 16:9 cẳng tay/bàn tay chuẩn giải phẫu nữ, xắn áo kaki khớp outfit) + gán `characters: ["<V> Hand"]`. Cấm để rỗng nhân vật khiến AI vẽ tay đàn ông lông lá. Nếu không có ref tay → chuyển sang **OTS hoặc FIXED** | Bài 66, 67, 72 | ~~cấm tuyệt đối tay trong POV~~ |
+| **Vật ở giây 0** | Mọi người/sinh vật/đạo cụ phải nằm trong khối `Everything is already in place from the very first frame`, ghi vị trí + khoảng cách + số lượng + tay nào cầm | Bài 48, 69 | — |
+| **Chất liệu / bột** | Phải có sẵn trên bề mặt từ Frame 0; quệt ngón tay trực tiếp vào đá. Cấm hứng bụi/bột rơi giữa không trung | Rule 53 + Bài 64 | — |
+| **Đạo cụ** | Bảo toàn xuyên suốt clip; cấm buông/đặt xuống đất giữa chừng; cấm xoay người 180° khi vác đồ nặng. Đạo cụ đơn nhất, không nhân bản | Bài 68, 69 | — |
+| **Cận chiến** | **Cấm 100%** đánh đấm/vật lộn cận chiến người vs thú lớn. Thay bằng cơ chế sinh tồn & giao lưu văn hóa | Rule 51 (1) + Bài 62 | — |
+| **Miệng nhân vật phụ** | Không thoại → khóa miệng. Có thoại → sub-clip riêng, ngôn ngữ không hiểu được, giọng tả bằng chữ, vlogger im lặng khi họ nói | Bài 49 | ~~người bản địa câm hoàn toàn~~ |
+| **Duration** | **PATCH `duration`** sau khi POST scene, nếu không clip tự thành 10s | Bài 12 | — |
+| **Bối cảnh** | Ảnh ref bối cảnh 16:9 dùng chung cho mọi clip cùng địa điểm; duyệt start frame bối cảnh trước khi sinh R2V | Bài 69 | — |
+
+**Kỹ thuật bổ sung từ `skills/character-scene-design-skills-main/`** (repo tham chiếu, đọc khi cần — xem con trỏ trong `character-bible.md` §7 và `shots-and-realism.md`):
+- *Proportion lock → W0 turnaround contract* (`skills/character-design/SKILL.md`) — khóa tỉ lệ hình thể **trước** khi sinh sheet; chống body drift mạnh hơn nhồi tính từ vào prompt.
+- *Permanent prop geometry* (cùng file) — tả đạo cụ bằng hình học + nêu rõ **nó KHÔNG phải cái gì**.
+- *Scene continuity ledger* (`.agents/skills/scene-design/SKILL.md`) — tách base scene khỏi per-segment scene state để truyền trạng thái qua từng clip.
+
+---
+
+## §2. Kho bài học (lịch sử đầy đủ, 1–71)
+
+Giữ nguyên số thứ tự để các tham chiếu "Bài học N" cũ vẫn đúng. Bài nào đã bị §1 thay thì §1 thắng.
 
 **Thêm bài học mới:** mỗi lỗi gen lặp lại ghi thành MỘT bài học đánh số tiếp theo (root-cause, câu prompt sửa, bằng chứng: clip nào, bản nào) **và** thêm 1 dòng vào checklist B của `prompt-lock.md`.
 
@@ -30,7 +66,7 @@ Rút ra từ dự án `output/atlantis-9600bc/` (2026-09-27). Khi mâu thuẫn v
     - nhưng **vẫn phải kèm ảnh ref bối cảnh** (quy tắc 5), nếu không sẽ mất nhận diện (ví dụ Atlantis thành làng chài Anh).
 
 **Kỹ thuật FlowKit**
-12. `POST /api/scenes` không nhận `duration`; phải `PATCH {"duration": 8}` (thiếu thì âm thầm ra clip 10s).
+12. `POST /api/scenes` không nhận `duration`; phải `PATCH {"duration": <4|6|8|10>}` theo cột `Dur` của storyboard (thiếu thì âm thầm ra clip 10s).
 13. Mỗi clip chỉ có 1 giọng, lấy từ entity **đầu tiên theo thứ tự DB** có `voice_description`. **Chỉ nhân vật chính khai báo voice**; khai báo cho nhân vật phụ thì giọng họ sẽ đè lên thoại của nhân vật chính.
 14. Sinh lại một scene R2V đã COMPLETED: PATCH `horizontal_video_status: PENDING` rồi gửi `GENERATE_VIDEO_REFS` (không có `REGENERATE_VIDEO_REFS`).
 15. Ảnh do Flow sinh luôn có logo ✦ ở góc dưới phải (tâm khoảng `(W-98, H-97)`). Xóa bằng `tools/remove_watermark_from_image.py` (đã sửa ngưỡng ngày 2026-09-27), rồi **mở ảnh ra kiểm tra**. Ảnh không phải do Flow sinh (ví dụ bảng ảnh ghép của user) thì tool có thể đoán sai vị trí.
@@ -527,21 +563,21 @@ Rút ra từ dự án `output/atlantis-9600bc/` (2026-09-27). Khi mâu thuẫn v
     - **Câu identity:** *"Nora looks exactly like her two reference images: her face and hair from the Nora face sheet, and her build and clothing from the Nora Body sheet."* Vẫn giữ `OUTFIT LOCK` + `BODY LOCK` bằng chữ trong prompt (Rule 47).
     - **Cổng duyệt bắt buộc (Rule 46):** Bắt buộc trình ảnh `<Vlogger> Body` sạch logo cho user xem và duyệt phom dáng & trang phục trước khi gửi bất kỳ lệnh sinh video nào.
 
-61. **PHÂN BIỆT RẠCH RÒI SELFIE VLOGGER VS POV ĐI SĂN / HÀNH ĐỘNG CẬN CHIẾN & TỶ LỆ GÓC MÁY VÀNG (Bài học Neanderthal 51ka, Scene 20–36, user review 08/10/2026):**
+61. **PHÂN BIỆT RẠCH RÒI SELFIE VLOGGER VS POV ĐI SĂN / HÀNH ĐỘNG CẬN CHIẾN (Bài học Neanderthal 51ka, Scene 20–36, user review 08/10/2026):** *(phần tỷ lệ % góc máy đã bị BỎ — xem Rule 42 (3), user lock 2026-10-12)*
     - **Hiện tượng & Root Cause:** 
       1. Hiểu nhầm luật "phone is the camera" và bài học 25/39/50 (cánh tay vươn dài giữ máy) thành việc ép 100% mọi cảnh vlogger phải giơ tay selfie quay mặt mình. Kết quả: vlogger vừa đi săn vừa giơ tay quay mặt mình nói chuyện, biểu cảm đơ cứng, không thể di chuyển tự nhiên, biến cuộc đi săn thành buổi livestream lố bịch, phản sinh tồn.
       2. Áp dụng máy móc Rule 49 (thoại 18–22 từ) vào lúc áp sát con thú lớn, khiến nhân vật lải nhải khi đang cách bò mộng 3 mét.
     - **Quy tắc:**
-      1. **Tỷ lệ Góc Máy Vàng (Golden Camera Ratio — Rule 42):** 
-         - **60%–70% First-Person POV qua mắt vlogger (Cam sau):** Toàn bộ hành động rình rập, săn bắn, di chuyển, chiến đấu, chế tác công cụ, quan sát đồng đội và cảnh quan.
-         - **20%–30% Front-Camera Selfie & Over-the-Shoulder (Cam trước 0.5x):** Dành riêng cho lúc an toàn, mở đầu/kết thúc tập, tâm sự với khán giả, hoặc phản ứng sốc/hú vía sau khi vượt qua hiểm nguy.
-         - **10% Ground / Fixed Cam:** Camera tựa đá/mặt đất khi cần 2 tay rảnh hoàn toàn.
-         - **CẤM TUYỆT ĐỐI 3 cảnh selfie liên tiếp.**
+      1. **Chọn góc máy theo hành động, KHÔNG theo tỷ lệ phần trăm (Rule 42 (3)):**
+         - **First-Person POV (Cam sau):** hành động rình rập, săn bắn, di chuyển, quan sát đồng đội và cảnh quan.
+         - **Front-Camera Selfie & Over-the-Shoulder (Cam trước 0.5x):** lúc an toàn, mở đầu/kết thúc tập, tâm sự với khán giả, phản ứng sốc/hú vía sau khi vượt hiểm nguy; OTS cho cảnh đồng hành cùng người bản địa.
+         - **Ground / Fixed Cam:** camera tựa đá/mặt đất khi cần 2 tay rảnh hoàn toàn (chế tác, nấu nướng, khiêng vác).
+         - **CẤM TUYỆT ĐỐI 3 cảnh selfie liên tiếp; cấm 100% video là selfie; cấm 2 clip liền nhau cùng cỡ cảnh + cùng góc máy.**
       2. **Khóa Im Lặng Khi Rình Mồi / Cận Chiến (Sonic Isolation — Rule 49 & 50):** 
          - Khi áp sát mục tiêu, phục kích, hoặc giao chiến sinh tử: BẮT BUỘC dùng First-Person POV và áp dụng **Sonic Isolation** (`Strictly NO spoken dialogue. Her mouth stays firmly closed in dead silence`). 
          - Âm thanh là Foley cơ học: tiếng thở nén qua mũi, tiếng tim đập, tiếng cành cây gãy, tiếng dã thú thở phì phò. Lời dẫn/suy nghĩ nội tâm nếu có chỉ đưa vào voiceover/subtitles hậu kỳ, miệng nhân vật KHÔNG được mấp máy.
       3. **Cánh tay khóa máy chỉ áp dụng cho shot Selfie:** Các bài học 25, 39, 50 về cánh tay duỗi thẳng giữ máy chỉ kích hoạt khi shot đó ĐÃ ĐƯỢC CHỌN là góc Selfie. Khi là shot First-Person POV, hai tay vlogger tự do tham gia hành động (cầm giáo, bò trườn, bám đá).
-62. **BỎ HẲN GIÁP LÁ CÀ / VA CHẠM THỂ XÁC VỚI THÚ LỚN; QUY TẮC PHỐI HỢP GÓC MÁY VLOG CHÂN THỰC (TỰ QUAY + TRẢI NGHIỆM 2 TAY TRONG KHUNG HÌNH); THOẠI DỒN DẬP 23–25 TỪ (User Lock 08/10/2026):**
+62. **BỎ HẲN GIÁP LÁ CÀ / VA CHẠM THỂ XÁC VỚI THÚ LỚN; QUY TẮC PHỐI HỢP GÓC MÁY VLOG CHÂN THỰC (TỰ QUAY + TRẢI NGHIỆM 2 TAY TRONG KHUNG HÌNH) (User Lock 08/10/2026):** *(phần "thoại 23–25 từ" đã bị BỎ — số từ chuẩn là 18–22 theo Rule 49, user lock 2026-10-12)*
     - **Hiện tượng & Root Cause:** 
       1. Bắt Veo 3 / Omni Flash R2V làm cảnh hành động cận chiến phức tạp đa thực thể (Scene 26–30 Neanderthal: 2 người đâm giáo, bò rừng 1 tấn húc tảng đá, vật lộn gục ngã) làm AI quá tải cơ học tiếp xúc (contact physics) ➔ vũ khí cong queo biến dạng hòa vào thịt, quái thú trượt lướt mất trọng lực, người bị vỡ giải phẫu.
       2. Góc quay selfie một tay vươn dài gượng gạo vừa dễ gây dị tật cánh tay/méo mặt khi xoay người, vừa làm hẹp góc nhìn và che khuất không gian giao lưu. Tuy nhiên, nếu biến thành 100% First-Person POV vô hình thì vlogger biến mất hoàn toàn, mất đi bản sắc và tính kết nối của người dẫn chương trình vlog!
@@ -555,7 +591,7 @@ Rút ra từ dự án `output/atlantis-9600bc/` (2026-09-27). Khi mâu thuẫn v
          - **Lúc Nora thao tác 2 tay & Cảnh rộng (In-Frame Host Experience)**: Máy quay đặt trên tảng đá/chạc cây hoặc góc máy trung/toàn (Tripod/Rock-mounted medium/wide shot), Nora xuất hiện rõ ràng trong khung hình (Full/Medium Nora in frame), thoải mái dùng cả hai tay trải nghiệm cơ chế sinh tồn (nếm súp tủy xương, ngồi sưởi ấm bên đống lửa, đẽo đá, may đồ), vừa thao tác vừa quay mặt về phía camera vừa nói/giải thích kiểu người dẫn chương trình thực tế.
          - **Cận cảnh chi tiết (POV Close-Up)**: Camera quay cận cảnh đồ vật/hiện tượng (đá nung sủi bọt, mũi khâu gân) khi cần khán giả soi chi tiết vi mô.
       4. **Chuẩn Thoại Dồn Dập Mới: 23 – 25 từ trong clip 8s:** 
-         - Nora nói nhanh, dồn dập, tự nhiên và tràn đầy năng lượng qua giọng Laomedeia (vừa vặn 7.0–7.5 giây của clip 8s), tạo cảm giác vlogger đang livestream thực tế với nhịp adrenaline cao. Không vượt quá 26 từ để tránh bị cụt âm thanh ở giây thứ 8.
+         - Nora nói nhanh, tự nhiên và tràn đầy năng lượng qua giọng Laomedeia, tạo cảm giác vlogger đang livestream thực tế với nhịp adrenaline cao. Số từ theo Rule 49: **18–22 từ / clip 8s** (dưới 18 → dead air; trên 22 → cụt âm ở giây thứ 8).
       5. **Khóa Chuẩn Bối Cảnh Địa Lý/Thời Kỳ (Strictly No Snow):** 
          - Tôn trọng bối cảnh gốc của thời kỳ (MIS 3 liên băng Dordogne là rừng thông ôn đới, đất mùn rêu xanh, tuyệt đối không tự ý chèn tuyết/bão mùa đông).
 
@@ -606,8 +642,7 @@ Rút ra từ dự án `output/atlantis-9600bc/` (2026-09-27). Khi mâu thuẫn v
       3. **Bắt buộc tạo Ảnh Reference Sau Gáy / Sau Đầu của Vlogger (`<Vlogger> Back`):**
          - Mọi dự án có góc quay OTS / Follow Shot sau lưng BẮT BUỘC phải có ảnh reference chuyên biệt cho góc nhìn sau gáy (`<Vlogger> Back` hoặc Turnaround Sheet có góc sau đầu rõ nét).
          - Ảnh thể hiện rõ: Mái tóc đuôi ngựa cột cao đặc trưng (`high ponytail`), những lọn tóc mai buông nhẹ hai bên, bờ gáy thon gọn, cổ áo và bờ vai áo da nhìn từ sau lưng để gán vào Slot tham chiếu của các cảnh OTS.
-      4. **Tái cân bằng Tỷ lệ Góc máy Vàng (Golden Camera Ratio) cho POV Travel Vlog:**
-         - Phân bổ chuẩn kịch bản: **POV ~35%** (hành động, rình rập, cảnh vật), **OTS ~35%** (đồng hành, thao tác tay qua vai), **FIXED ~15%** (chế tác 2 tay, nhịp nghỉ quanh đống lửa), **SELFIE ~15%** (khoảng 8–10 cảnh then chốt: hook mở đầu, chia sẻ cảm xúc, thì thầm hoảng loạn, kết nối người xem).
+      4. **~~Tái cân bằng Tỷ lệ Góc máy Vàng~~ — ĐÃ BỎ (user lock 2026-10-12):** Không còn hạn ngạch phần trăm nào cho POV / OTS / FIXED / SELFIE. Góc máy chọn theo **bản chất hành động** của từng clip (Rule 42 (3)): hành động/di chuyển/rình săn ➔ POV; đồng hành & thao tác qua vai ➔ OTS; chế tác 2 tay & nhịp nghỉ ➔ FIXED; hook mở đầu, chia sẻ cảm xúc, thì thầm hoảng loạn, kết nối người xem ➔ SELFIE. Chỉ giữ ràng buộc định tính: cấm 100% selfie, cấm 3 clip selfie liên tiếp, cấm 2 clip liền nhau cùng cỡ cảnh + cùng góc máy.
 
 67. **QUY TẮC ĐỒNG NHẤT ĐIỂM NHÌN POV VLOG — CẤM GÓC POV TỰ THÂN KHI QUAY NGƯỜI KHÁC; CHUYỂN TOÀN BỘ THAO TÁC CỦA ĐỐI PHƯƠNG SANG OTS HOẶC OBSERVER CLOSE-UP (Observer POV vs Self-POV Identity Conflict — Bài học Scene 28 & 32 Neanderthal 51ka, User review 09/10/2026):**
     - **Hiện tượng & Root Cause (Nghịch lý đồng nhất điểm nhìn):**
@@ -808,6 +843,40 @@ Rút ra từ dự án `output/atlantis-9600bc/` (2026-09-27). Khi mâu thuẫn v
     - **Lỗi 2:** lộ dải da đùi giữa vạt áo và cổ bốt khi Nora ngồi dạng chân cưỡi thú — câu khóa chân kín (dòng 38) không đủ cho tư thế cưỡi.
     - **Quy tắc:** dòng 65 checklist B; dòng 38 thêm tư thế cưỡi: `even while riding astride with her knees apart, golden-tan suede leggings cover her thighs completely up to the tunic hem`.
 
+71. **ĐỘ DÀI CLIP LINH HOẠT THEO ĐỘ KHÓ — CẢNH DỄ LỖI SINH CHUỖI 4s CÙNG BỐI CẢNH, CẢNH DỄ GIỮ 8s/10s (Variable Duration & 4s Chain — User Lock 12/10/2026):**
+    - **Hiện tượng:** Skill cũ mặc định mọi clip 8s. Clip hành động 8–10s nhồi 3–5 thay đổi trạng thái (thú lao tới → dừng → máy rơi → lật lên tán cây) nên càng về cuối clip càng trôi: thú đổi dáng, tay/đạo cụ teleport (Bài 70), vật hiện/biến (Bài 48). Một chỗ hỏng ở giây 6 bắt sinh lại cả clip 8s.
+    - **Quy tắc:**
+      1. **Chọn `duration` theo độ khó, không theo mặc định.** Dễ lỗi (chuyển động nhanh, tương tác thú, ngã / rơi máy, sinh vật lớn đi ngang khung, VFX chớp sáng / mưa kính / sóng chấn động, vật đổi trạng thái: vỡ, đứt, đổ) → **4s**. Dễ và không chuyển cảnh (selfie nói chuyện, fixed cam, lia chậm, phong cảnh) → **8s**; long take, master take, cảnh cuối im lặng → **10s**; lưng chừng → **6s**.
+      2. **Chuỗi 4s = một cảnh liền, cắt thành nhiều mắt xích (CẤM CHUYỂN CẢNH).** Đặt ID `A1-12a / b / c`. Mỗi mắt xích **chỉ một hành động** (một pha của `fk-action-choreography`).
+         - **RÀNG BUỘC THÉP TRONG CHUỖI 4s:** Giữ nguyên 100%: bộ ref (≤3), câu `Setting` + trạng thái ánh sáng, và **vị trí máy + góc máy + cỡ cảnh**. **TUYỆT ĐỐI CẤM CHUYỂN CẢNH / ĐỔI GÓC NHÌN GIỮA CÁC MẮT XÍCH**. Mắt xích sau mở **đúng tư thế / vị trí** mắt xích trước kết thúc (Rule 44), viết thẳng vào khối `Everything is already in place from the very first frame` (`"the bull is already standing six metres away, head low, from the very first frame"`).
+         - **CẢNH PHỨC TẠP CÓ CHUYỂN CẢNH / ĐỔI GÓC:** Nếu phân đoạn đòi hỏi đổi góc nhìn (ví dụ: góc 1 thấy dã thú lao tới → góc 2 cận cảnh khuôn mặt hét → góc 3 thấy chân trượt bùn), **TUYỆT ĐỐI CẤM GOM VÀO CHUỖI `a/b/c`**. Phải tách thành các **Scene ID riêng biệt** (độ dài 4s hoặc 6s), kết nối bằng kỹ thuật dựng phim (Cut / Match on Action / Whip-pan / Khung che/Wipe).
+      3. **Thoại theo bảng Rule 49 (0):** 4s = 0 từ (hành động) hoặc 6–8 từ chia `0-2s / 2-4s`. Chuỗi hành động thường 0 từ (thở dốc, Foley); câu nói dồn vào mắt xích cuối hoặc clip 8s kế tiếp.
+      4. **Dựng:** 4s trim `-ss 0.5` → 3.5s dùng được; cắt thẳng giữa các mắt xích (match on action), không crossfade. Runtime tính theo thời lượng dùng được, không theo số clip × 8.
+      5. **Sinh lại theo mắt xích:** mắt xích nào rớt review thì chỉ sinh lại mắt xích đó; mắt xích kế tiếp vẫn dùng được vì điểm nối đã khóa bằng chữ.
+    - **Đổi kèm:** CLAUDE.md Rule 11 + Rule 49 (0); `SKILL.md` hàng "Độ dài clip"; §1 bảng tra nhanh.
+
+72. **KHÓA BÀN TAY POV BẰNG ẢNH REF `<VLOGGER> HAND` & CẤM ĐỂ RỖNG CHARACTER TRONG SHOT TƯƠNG TÁC (POV Hand Reference Lock, Dedicated Forearm Sheet & Anti-Male Hand Glitch — Bài học Scene 7 Hell Creek 66 Ma, User review 12/10/2026):**
+    - **Hiện tượng & Root Cause:**
+      1. **Tay biến hình / thành tay đàn ông / dị tật ngón trong cảnh POV:** Khi thực hiện cảnh quay góc nhìn thứ nhất (First-person POV nhìn xuống nhặt đồ vật, vốc nước, gạt cành dương xỉ, chạm vào dấu chân bùn, cầm mai rùa...), nếu prompt chỉ gán bối cảnh (`refs: ["Hell Creek Bank"]`, `characters: []`) mà không có nhân vật, hoặc chỉ gắn `<Vlogger>` (chỉ có khuôn mặt):
+         - AI video diffusion model (Omni Flash / Veo) **hoàn toàn không có dữ liệu về bàn tay của nhân vật chính**.
+         - Kết quả: AI tự tưởng tượng ra một bàn tay ngẫu nhiên — thường biến thành **bàn tay đàn ông thô ráp, đốt ngón tay đầy lông lá, sạm đen**, hoặc xuất hiện móng tay dài sơn móng lòe loẹt, móng vuốt kỳ quái, cổ tay áo hiện đại, đồng hồ thông minh, hoặc dị tật ngón (6 ngón, ngón tay tan chảy).
+         - Nếu cố tình nhét `<Vlogger>` (ảnh mặt), AI lại cố gắng ép khuôn mặt lọt vào góc nhìn POV, gây vỡ bố cục máy quay.
+    - **Quy tắc giải pháp:**
+      1. **Bổ sung Entity `<Vlogger> Hand` vào Bộ Reference Chuẩn của Dự Án POV:**
+         - Đối với bất kỳ dự án POV Vlog nào có phân cảnh nhân vật chính dùng tay tương tác với môi trường hoặc đạo cụ, BẮT BUỘC tạo thêm 1 entity reference: `<Vlogger> Hand` (hoặc `POV Hand Sheet`).
+         - **Chuẩn Turnaround Sheet 16:9 của `<Vlogger> Hand`:**
+           - Thể hiện cận cảnh 4 góc cẳng tay & bàn tay của nữ vlogger: mu bàn tay, lòng bàn tay, ngón tay duỗi và ngón tay cầm nắm đồ vật.
+           - Đặc điểm giải phẫu: Cánh tay thon gọn, thanh mảnh nhưng săn chắc khỏe khoắn; làn da tự nhiên có vết rám nắng nhẹ dã ngoại; móng tay cắt ngắn sạch sẽ, **tuyệt đối không sơn móng**.
+           - Trang phục tay áo: Ống tay áo sơ mi xám tro/kaki xắn ngang cẳng tay (khớp 100% với trang phục trên `<Vlogger> Body`), cổ tay để trần hoặc có vòng dây da thô mộc thời kỳ.
+         - Tẩy sạch watermark logo & SynthID (Rule 28) rồi upload lên Flow lấy UUID Media ID sạch.
+      2. **Khóa Nhân vật trong Scene POV Tương tác:**
+         - Mọi scene POV có xuất hiện bàn tay (`reaches down`, `picks up`, `scoops`, `holds`, `parts foliage`), `character_names` và `refs` BẮT BUỘC phải đính kèm: `["<Vlogger> Hand", "<Bối Cảnh / Đạo Cụ>"]`.
+         - Trong khối `characters` của Structured JSON:
+           `{"name": "<Vlogger> Hand", "visual_lock": "Slender athletic female forearms and hands matching <Vlogger> Hand reference, rolled sleeves matching outfit, natural unpainted fingernails; NO male hands, NO hairy knuckles, NO modern jewelry/smartwatch."}`
+         - Trong `negative_constraints`:
+           `"NO male hands, NO hairy arms, NO modern wristwatch or bracelet, NO painted fingernails, NO extra or deformed fingers; strictly matching <Vlogger> Hand reference."`
+
 **Nội dung**
 17. **[ĐÃ THAY bởi Rule 46 / bài học 60]** Vlogger mặc đồ hiện đại theo ảnh ref là chấp nhận được. Hiện tại: vlogger mặc trang phục thời kỳ ngay từ clip đầu qua `<Vlogger> Body` đã mặc outfit; đồ hiện đại chỉ khi user yêu cầu phong cách "lạc loài".
 18. User có thể yêu cầu **cảnh mở đầu FPV điện ảnh** (từ không gian lao xuống toàn cảnh thành phố, không có vlogger), là ngoại lệ của luật "mọi shot quay bằng điện thoại". Clip đó dùng ảnh ref toàn cảnh, giữ yên 2–3 giây cuối, và clip sau mở bằng vật lướt qua ống kính để che cú cắt.
+

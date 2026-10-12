@@ -12,7 +12,7 @@
 | Không có nhân vật (vũ trụ, phong cảnh, FPV mở đầu theo yêu cầu — Bài học 18) | Có thể dùng ảnh khung đầu / Omni Flash first+last: `POST /api/flow/generate-video` với `model_family: "omni_flash"` + `start_image_media_id` (+ `end_image_media_id`), 4/6/8/10s, xem `docs/OMNI_FLASH.md` | Ảnh AI phải qua 4 bước xóa logo → upload lại trước khi dùng (Rule 28) |
 
 - **Không dùng `/fk-gen-chain-videos`** (Veo start+end frame) — fail `UNSUPPORTED_ON_BATCH_API`; `FLOW_ALLOW_DEGRADED=1` chỉ biến nó thành i2v thường.
-- FlowKit không có Extend. Một beat ~15s = 2 scene 8s nối bằng khung che.
+- FlowKit không có Extend. Một beat ~15s = vài scene nối bằng khung che / match on action; độ dài từng scene chọn theo độ khó (4/6/8/10s — CLAUDE.md Rule 49 (0), Bài 71): cảnh dễ lỗi = chuỗi 4s cùng bối cảnh, cảnh dễ không chuyển cảnh = 8s/10s.
 
 ## 2. Clip JSON → scene FlowKit
 
@@ -20,11 +20,11 @@ Clip JSON (mẫu ở `prompt-templates.md`) là bản thiết kế đọc đư�
 
 | Trường Clip JSON | Vào trường FlowKit |
 |---|---|
-| `refs` | `character_names` của scene = `["<V>", "<V> Body", <ref mọi sinh vật/bối cảnh có trong khung>]` (tối đa 7 — giới hạn Omni Flash, Bài học 88) |
-| `camera` + `style` + `setting` + `in_place` + `shot` + ID-LOCK + `action` + `dialogue` + `background_people` + `transition_in/out` + `constraints` + `audio` | `video_prompt`, dựng đúng thứ tự 9 khối của `prompt-lock.md`; sub-clip `0-3s / 3-6s / 6-8s`; thoại dạng `Nora says (tag): "..."` |
+| `refs` | `character_names` của scene = `["<V>", "<V> Body", <1 ref bối cảnh/sinh vật>]` (tối đa 3) |
+| `camera` + `style` + `setting` + `in_place` + `shot` + ID-LOCK + `action` + `dialogue` + `background_people` + `transition_in/out` + `constraints` + `audio` | `video_prompt`, dựng đúng thứ tự 9 khối của `prompt-lock.md`; sub-clip theo `duration` (4s `0-2s / 2-4s`; 6s `0-2s / 2-4s / 4-6s`; 8s `0-3s / 3-6s / 6-8s`; 10s `0-3s / 3-7s / 7-10s`); thoại dạng `Nora says (tag): "..."` |
 | `setting` (tóm tắt) | `prompt` của scene (mô tả cảnh — R2V không dùng ảnh Frame 0) |
-| `dialogue` (ghép 3 sub-clip) | `narrator_text` (PATCH, 18–22 từ) — đồng bộ bằng `/fk-gen-narrator` |
-| `duration` | **PATCH** `{"duration": 8}` sau khi tạo scene — POST không nhận, thiếu thì âm thầm ra 10s (Bài học 12) |
+| `dialogue` (ghép 3 sub-clip) | `narrator_text` (PATCH, số từ theo độ dài clip — Rule 49 (0)) — đồng bộ bằng `/fk-gen-narrator` |
+| `duration` | **PATCH** `{"duration": <4|6|8|10>}` theo cột `Dur` của storyboard sau khi tạo scene — POST không nhận, thiếu thì âm thầm ra 10s (Bài học 12) |
 | `join` | ghi chú cho bước concat (điểm cắt); `chain_type` = `ROOT` cho mọi scene R2V |
 | `bleep_at` (tùy chọn) | không vào FlowKit — ghi chú hậu kỳ (`voice-bible.md` mục 3) |
 
@@ -76,7 +76,7 @@ curl -X POST http://127.0.0.1:8100/api/projects -H "Content-Type: application/js
 2. `/fk-review-video` (light) trên bản 720p thô: scorecard 6 tiêu chí + lỗi Critical/High/Minor, đối chiếu checklist B của `prompt-lock.md`. Bật Review Board `python tools/review_server.py 8200`.
 3. **DỪNG — user duyệt từng clip.** Clip < 7.5 hoặc user chê: sửa `video_prompt` (xung đột với prompt user đã duyệt → đưa danh sách cho user chọn) → sinh lại ở 720p. Tối đa 2 vòng.
 4. Chỉ clip đã duyệt: `UPSCALE_VIDEO` (1080p, `p0UkFb`) → `${OUTDIR}/1080/scene_{idx}_{sid}_1080p.mp4` → `remove_watermark_video` → `..._1080p_clean.mp4`.
-5. `/fk-concat` cắt thẳng tại khung che (không crossfade, không text overlay); trim `-ss 1` đầu mỗi clip. Chỉ thêm `--tts` nếu user chọn lồng tiếng thay thoại native.
+5. `/fk-concat` cắt thẳng tại khung che (không crossfade, không text overlay); trim đầu mỗi clip `-ss 1` (6/8/10s) hoặc `-ss 0.5` (4s); chuỗi 4s cùng bối cảnh nối liền nhau theo thứ tự `a → b → c`. Chỉ thêm `--tts` nếu user chọn lồng tiếng thay thoại native.
 
 ## 7. Dự án nhiều tập — series manifest
 

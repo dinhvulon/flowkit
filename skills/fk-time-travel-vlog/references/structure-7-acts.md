@@ -1,24 +1,22 @@
-# Kho cấu trúc 7 hồi / 23 beat / Survival Preset
+# Kho ý tưởng cảnh, beat & kỹ thuật máy (Survival Preset)
 
-Đọc ở **Bước 3** của `SKILL.md`, **sau** `story-engine.md`. Mục này thay mục 5 cũ.
+Đọc ở **Bước 3** của `SKILL.md`, **sau** `story-engine.md`.
 
-> **Thứ tự ưu tiên:** `story-engine.md` thắng file này về cấu trúc truyện, thoại và cảnh kết. Cụ thể: "mồi tập sau" trong bảng dưới **không** được nói thành lời trong video (story-engine mục 10–11: cảnh cuối không thoại, CUT BLACK, không "see you next time") — chỉ đưa vào mô tả YouTube / end screen. Thoại mọi clip theo Rule 49 (18–22 từ, `SKILL.md` mục Khóa cứng).
+> **File này KHÔNG phải một cấu trúc truyện.** Cấu trúc duy nhất là **cold open + 5 Act** ở `story-engine.md` mục 3 (user chốt 2026-10-05). Khung "7 hồi / % thời lượng" cũ đã **bị xóa khỏi file này ngày 2026-10-12** vì cạnh tranh trực tiếp với 5 Act. Những gì còn lại dưới đây là **kho ý tưởng cảnh, beat mẫu và kỹ thuật máy quay** — lấy ra dùng tự do, không theo thứ tự.
 
-> **Survival / "I Survived 24 Hours": dùng công thức cold open + 5 Act ở `story-engine.md` mục 3 (user chốt 2026-10-05).** Bảng 7 hồi và 23 beat dưới đây chỉ còn là kho ý tưởng cảnh và kỹ thuật máy; không bắt buộc theo thứ tự hay % thời lượng của nó.
+> Luật khác: thoại theo độ dài clip (8s = 18–22 từ; 4/6/10s theo bảng Rule 49 (0)); "mồi tập sau" **không** nói thành lời trong video (story-engine mục 10–11: cảnh cuối không thoại, CUT BLACK) — chỉ đưa vào mô tả YouTube / end screen.
 
 **Không mở bằng cảnh du hành.** Vào thẳng thế giới từ giây 0 — khung đầu là chuyển động mạnh sát ống kính (bánh xe, ngựa, súc gỗ) rồi mở ra nhân vật giữa đám đông.
 
-## 1. Bảng 7 Hồi & 3 Cú Reveal Lớn (The 3 Grand Reveals)
+## 1. Ba cú Reveal lớn (kỹ thuật — dùng ở bất kỳ Act nào)
 
-| % thời lượng | Hồi | Nội dung & Vai trò | Điểm nhấn camera & Reveal | Mốc video mẫu (211 BC) |
-|---|---|---|---|---|
-| **0–5%** | **Hồi 1: Hook** | Giữa chợ/đường lớn, câu đầu nói rõ đang ở đâu, năm nào, lời hứa video | Foreground wipe sát ống kính ở giây 0 | 0:00 bánh xe bò sát ống kính → chợ Hàm Dương |
-| **5–40%** | **Hồi 2: Đời thường** | Đời sống thường nhật: hành chính, ẩm thực, nghề nghiệp, đo lường (mỗi beat 1 sự thật mới) | Ít nhất 1 beat **máy dựng trên bàn** khi ăn + 2 beat **POV xúc giác** (cầm/đong/sờ) | 0:30–4:15 đường lớn, thẻ tre, cháo kê (dựng bàn), đong hạt, xưởng nhuộm |
-| **40–55%** | **Hồi 3: Quyền lực** | Quân đội, công trường, lực lượng cai trị — nâng quy mô và tạo áp lực | **Reveal #1**: Quay gáy (Look-away) reveal lực lượng quân sự/quy mô lớn | 5:05 quay gáy → đại quân tập trận, chuồng ngựa |
-| **55–70%** | **Hồi 4: Cao trào nguy hiểm** | **Một** sự kiện quyền lực lớn duy nhất → bị phát hiện/để ý → rượt đuổi nghẹt thở qua ngõ → thoát hiểm | Máy rung lắc, thở dốc, chạy trốn, phóng ngựa ra cổng | 6:05–7:05 đoàn xe hoàng đế đi qua, dân quỳ rạp, lính tiến lại, chạy qua ngõ, phi ngựa thoát |
-| **70–75%** | **Hồi 5: Hạ nhịp** | **Khoảng đệm hạ nhiệt**: đi nhờ xe, trò chuyện với dân quê thân thiện, cảnh đồng quê | Camera tĩnh hơn, nhịp thở chậm, J-cut ambient bình yên | 7:25 đi nhờ xe bò với bà nông dân thân thiện |
-| **75–95%** | **Hồi 6: Di sản** | Kỳ quan/di sản người xem **đã biết tên** — reveal theo 4 bậc: nhìn từ xa → xưởng làm → chạm tay → toàn cảnh khổng lồ | **Reveal #2**: Nhìn công trình từ xa (7:50)<br>**Reveal #3**: Toàn cảnh kỳ quan từ trên cao (9:25) + POV chạm tay (9:05) + chi tiết "Wow" sơn màu (8:50) | 7:50–10:05 lăng mộ từ xa → lò nung đầu tượng → tượng sơn màu rực rỡ → chạm kiếm đồng → hố tượng khổng lồ |
-| **95–100%** | **Hồi 7: Kết** | Ngồi tĩnh lúc hoàng hôn, chia sẻ suy nghĩ cá nhân, mồi tập sau. Không có cảnh "quay về" | **Máy dựng cố định** dưới gốc cây/bờ tường hoàng hôn | 10:22 ngồi dưới gốc cây hoàng hôn |
+| Reveal | Kỹ thuật máy | Ví dụ video mẫu (211 BC) |
+|---|---|---|
+| **Reveal #1 — Quyền lực** | **Quay gáy (Look-away)**: nhân vật quay đi khỏi máy → mở ra lực lượng quân sự / quy mô lớn phía sau | 5:05 quay gáy → đại quân tập trận |
+| **Reveal #2 — Di sản từ xa** | Nhìn công trình/kỳ quan từ khoảng cách, chưa chạm tới | 7:50 lăng mộ nhìn từ xa |
+| **Reveal #3 — Toàn cảnh + chạm tay** | Toàn cảnh từ trên cao, ghép với POV chạm tay vào hiện vật và một chi tiết "Wow" | 9:25 hố tượng khổng lồ + 9:05 chạm kiếm đồng |
+
+Thang 4 bậc khi giới thiệu một kỳ quan: **nhìn từ xa → xưởng/quá trình làm ra nó → chạm tay → toàn cảnh khổng lồ.**
 
 ## 2. Bảng ánh xạ 23 Beat chi tiết từ Video Mẫu
 
@@ -62,7 +60,7 @@ Shorts: hook (1) → 2–3 beat đời thường/wow (2–4) → nguy hiểm ho�
    - Beat kết (~98%): Máy dựng đối diện nhân vật lúc hoàng hôn.
 4. **Khoảng hạ nhiệt sau thoát hiểm (70–75%)**: Tuyệt đối không nhảy thẳng từ rượt đuổi sang kỳ quan. Phải có cảnh đi nhờ xe, trò chuyện với dân bản địa hiền hòa để nhịp phim lắng xuống.
 
-**Shorts (4–6 beat × 8s)** — nén cùng đường cong, không đảo thứ tự:
+**Shorts (4–6 beat, mỗi beat 1 clip 8s hoặc chuỗi 4s nếu dễ lỗi — Bài 71)** — nén cùng đường cong, không đảo thứ tự:
 
 | Beat (6 beat) | Hồi | Bắt buộc | Nếu chỉ 4 beat |
 |---|---|---|---|
@@ -107,7 +105,7 @@ Dùng khi bối cảnh tự nó có thể giết người (Kỷ Băng Hà, khủ
 Khung kịch bản và tỉ lệ shot ở trên không phải suy đoán — được rút ra từ phân tích khung-hình thật của video *"I Time Traveled to Ancient China in 211 BC! (Vlog)"* (10:40, ~38 shot). Toàn bộ chi tiết nằm ở `reference-analysis.md`.
 
 **Số liệu chính:**
-- ~38 shot / 10:40 → trung bình ~17s, trung vị ~15s. Rất nhiều mối nối cách nhau đúng ~15s → mỗi beat ≈ 2 clip 8s nối liền (trong FlowKit: 2 scene R2V, nối bằng khung che / match on action — `flowkit-pipeline.md` mục 1).
+- ~38 shot / 10:40 → trung bình ~17s, trung vị ~15s. Rất nhiều mối nối cách nhau đúng ~15s → mỗi beat ≈ 2 clip 8s nối liền, hoặc chuỗi 4s nếu beat dễ lỗi (trong FlowKit: vài scene R2V, nối bằng khung che / match on action — `flowkit-pipeline.md` mục 1).
 - 1 cao trào nguy hiểm duy nhất ở ~60% video (đoàn xe hoàng đế đi qua → bị lính để ý → chạy trốn), sau đó hạ nhịp rồi dồn vào reveal.
 - Không có cảnh "du hành" mở đầu — vào thẳng thế giới từ giây 0 bằng một vật chuyển động mạnh sát ống kính (bánh xe bò).
 - Âm thanh gần như không có khoảng lặng; không có chữ trên màn hình.
