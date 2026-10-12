@@ -195,31 +195,37 @@ Mọi mắt xích nối bằng **"vì vậy"** hoặc **"nhưng"**. Không có "
 | 8 | Bìa rừng là bức tường dương xỉ không đọc được | **NHƯNG** |
 | 9 | Chỉ một thứ đọc được: lối mòn rộng đầy dấu chân tròn ngón tù | **VÌ VẬY** |
 | 10 | Cô bám theo lối mòn, tìm được đàn Triceratops — thú lớn là tấm khiên | **VÌ VẬY** |
-| 11 | **HỎNG 1** — Bò Đực dọa-xông giả, cô ngã ngửa vào bụi dương xỉ. Hết Act 1 cô vẫn ở **ngoài** đàn | **NHƯNG** |
-| 12 | Cô phải học khoảng cách mà đàn cho phép | **VÌ VẬY** |
-| 13 | Act 2: quan sát, bắt chước, học tín hiệu — diềm ửng máu, cào chân, nghiêng vai cụp mắt. Bài học cốt lõi: **khi tất cả cùng đứng sững, có thứ đang tới** | **VÌ VẬY** |
-| 14 | Bài học bị kiểm tra: cả đàn đứng sững → T. rex đi ngang → cô nấp sau thân cây đổ, **không một từ** | **VÌ VẬY** |
-| 15 | **THẮNG MỘT PHẦN** — cô sống vì đã đọc được chúng. Đàn chịu cho cô ở cách 20 bước | **NHƯNG** |
-| 16 | Giữa trưa, mai rùa đựng nước gần cạn | **VÌ VẬY** |
-| 17 | Act 3: mục tiêu có hạn chót — theo kịp đàn khi chúng kéo tới hố nước | **NHƯNG** |
-| 18 | Đàn đi nhanh, cô tụt lại | **VÌ VẬY** |
-| 19 | **HỎNG 2** — trượt chân, dây đứt, mai rùa vỡ, nước ngấm hết vào cát. **Mất cả nước lẫn đàn** | **VÌ VẬY** |
-| 20 | Cô phải **tự đọc** dấu chân: lòng dấu còn ướt, trục dấu chỉ về rặng cọ — kỹ năng của chính cô | **NHƯNG** |
-| 21 | Lối đó cắt ngang bãi trống — đúng thứ xác Edmontosaurus đã dạy cô đừng làm; Quetzalcoatlus đang săn mồi nhỏ ở đó | **VÌ VẬY** |
-| 22 | Cô lần dấu tìm ra đàn ở hố nước | **NHƯNG** |
-| 23 | Bò Đực đứng chắn mép nước, diềm đỏ | **VÌ VẬY** |
-| 24 | Cô dùng luật Act 2 (nghiêng vai, cụp mắt) → Bò Đực cho uống. **THẮNG GIẢ** — Con Non lại gần; "I almost forgot what today is" | **NHƯNG** |
-| 25 | Tất cả cùng đứng sững — đúng tín hiệu Act 2. Cô quét mắt tìm T. rex. **Dưới đất không có gì cả** | **VÌ VẬY** |
-| 26 | Act 4: chớp trắng; một cái bóng thứ hai mọc ra, cứng hơn, chỉ gần như ngược hướng | **VÌ VẬY** |
-| 27 | Niềm tin sai vỡ: biết trước không biến cô thành khán giả ("I'm not watching.") | **NHƯNG** |
-| 28 | ~10 phút sau: sóng địa chấn. Cây đổ. Cô bị quật sấp | **VÌ VẬY** |
-| 29 | Đàn vỡ chạy. Cô chạy theo nhưng không theo kịp | **VÌ VẬY** |
-| 30 | Cô một mình giữa bãi trống khi trời bắt đầu rơi thủy tinh | **NHƯNG** |
-| 31 | Con Non tách đàn lao xuống phía lạch cá sấu; đàn chạy lên rừng phía bắc | **VÌ VẬY** |
-| 32 | **KHỦNG HOẢNG** — hai cái ác: rừng (sẽ cháy) hay lạch cá sấu. Cô chọn theo con vật, "vì nó chưa sai lần nào" — bài học Act 2 dùng lần cuối | **VÌ VẬY** |
-| 33 | Con Non chui vào **đúng cái hốc cô bỏ qua sáng nay** | **VÌ VẬY** |
-| 34 | **PAYOFF** `MASTER-GLASS` 6→10s: dưới vách đất, tàu lá cọ ướt, bùn dập hạt thủy tinh, bàn chân Con Non đặt xuống cạnh mặt cô | **VÌ VẬY** |
-| 35 | Act 5: rừng cháy → tro rơi → xác Bò Đực, sừng gãy nhô khỏi tro → im lặng → Con Non đi vào màn tro, Nora nhổm dậy rồi ngồi lại → hết, không thoại | — |
+| 11 | **Sai lầm (A1-S1)** — Cô tin thú ăn cỏ thì vô hại ("they're vegetarians, they'll ignore me"), tự tin bước ra | **NHƯNG** |
+| 12 | **HỎNG 1** — Bò Đực dọa-xông giả (chuỗi A1-12), cô ngã ngửa vào bụi dương xỉ. Hết Act 1 cô vẫn ở **ngoài** đàn | **NHƯNG** |
+| 13 | Cô phải học khoảng cách mà đàn cho phép | **VÌ VẬY** |
+| 14 | Act 2: quan sát, bắt chước, học tín hiệu — diềm ửng máu, cào chân, nghiêng vai cụp mắt. Bài học cốt lõi: **khi tất cả cùng đứng sững, có thứ đang tới** | **VÌ VẬY** |
+| 15 | Bài học bị kiểm tra: cả đàn đứng sững → T. rex đi ngang → cô nấp sau thân cây đổ, **không một từ** | **VÌ VẬY** |
+| 16 | Hai con Acheroraptor bám vệt T. rex mò tới mép đàn; đàn khép vòng tròn bảo vệ Con Non, Nora bị bỏ ngoài rìa | **NHƯNG** |
+| 17 | Con Cái Già đỏ diềm nhìn cô, mở khe hở; Nora lách vào bóng đàn — học **luật 3: đứng ở mép tức là làm mồi** (A2-R1→R5) | **VÌ VẬY** |
+| 18 | **THẮNG MỘT PHẦN** (midpoint) — cô sống vì đã ở trong vòng. Đàn coi cô là "furniture" | **NHƯNG** |
+| 19 | Giữa trưa, mai rùa đựng nước gần cạn | **VÌ VẬY** |
+| 20 | Act 3: mục tiêu có hạn chót — theo kịp đàn khi chúng kéo tới hố nước | **NHƯNG** |
+| 21 | Đàn đi nhanh, cô tụt lại | **VÌ VẬY** |
+| 22 | **HỎNG 2** — trượt chân, dây đứt, mai rùa vỡ, nước ngấm hết vào cát. **Mất cả nước lẫn đàn** | **VÌ VẬY** |
+| 23 | Cô phải **tự đọc** dấu chân: lòng dấu còn ướt, trục dấu chỉ về rặng cọ — kỹ năng của chính cô | **NHƯNG** |
+| 24 | Gặp đàn Edmontosaurus sống: cô áp dụng luật đọc diềm nhưng chúng không có diềm; đàn chạy cắt ngang đường, đất rung bần bật | **VÌ VẬY** |
+| 25 | Cô học **luật 4: nghe rung chấn mặt đất** (A3-D1→D3) — thuộc luật diềm chưa đủ, phải biết lắng nghe đất | **VÌ VẬY** |
+| 26 | Lối đi cắt ngang bãi bùn; Quetzalcoatlus đang săn mồi nhỏ ở đó | **VÌ VẬY** |
+| 27 | Cô lần dấu tìm ra đàn ở hố nước | **NHƯNG** |
+| 28 | Đàn uống theo lượt, luôn có con đứng canh vì Borealosuchus rình dưới đáy bùn — **luật 5: chỉ uống khi con canh ngẩng đầu** (A3-W1→W3) | **VÌ VẬY** |
+| 29 | Bò Đực đứng chắn mép nước, diềm đỏ | **VÌ VẬY** |
+| 30 | Cô dùng luật Act 2 (nghiêng vai, cụp mắt) → Bò Đực cho uống. **THẮNG GIẢ** — Con Non lại gần ngủ tựa chân cô (A3-Q1); "I almost forgot what today is" | **NHƯNG** |
+| 31 | Đàn thằn lằn bay nhỏ bay dạt về hướng tây nam (A3-Q2); rồi tất cả cùng đứng sững — đúng tín hiệu Act 2. Cô quét mắt tìm T. rex. **Dưới đất không có gì cả** | **VÌ VẬY** |
+| 32 | Act 4: chớp trắng; một cái bóng thứ hai mọc ra, cứng hơn, chỉ gần như ngược hướng | **VÌ VẬY** |
+| 33 | Niềm tin sai vỡ: biết trước không biến cô thành khán giả ("I'm not watching.") | **NHƯNG** |
+| 34 | ~10 phút sau: sóng địa chấn. Cây đổ. Cô bị quật sấp | **VÌ VẬY** |
+| 35 | Đàn vỡ chạy. Cô chạy theo nhưng không theo kịp | **VÌ VẬY** |
+| 36 | Cây cọ cháy đổ chắn đường; T. rex khổng lồ hoảng loạn xé khói chạy qua — kẻ săn mồi nay cũng là nạn nhân tháo chạy (A4-P/T) | **NHƯNG** |
+| 37 | Cô một mình giữa bãi trống khi trời rơi thủy tinh; Con Non tách đàn lao xuống phía lạch cá sấu; đàn chạy lên rừng phía bắc | **VÌ VẬY** |
+| 38 | **KHỦNG HOẢNG** — hai cái ác: rừng (sẽ cháy) hay lạch cá sấu. Cô chọn theo con vật, "vì nó chưa sai lần nào" — bài học Act 2 dùng lần cuối | **VÌ VẬY** |
+| 39 | Con Non chui vào **đúng cái hốc cô bỏ qua sáng nay** | **VÌ VẬY** |
+| 40 | **PAYOFF** `MASTER-GLASS` 6→10s: dưới vách đất, tàu lá cọ ướt, bùn dập hạt thủy tinh, bàn chân Con Non đặt xuống cạnh mặt cô | **VÌ VẬY** |
+| 41 | Act 5: rừng cháy → tro rơi → xác Bò Đực, sừng gãy nhô khỏi tro → im lặng → Con Non đi vào màn tro, Nora nhổm dậy rồi ngồi lại → hết, không thoại | — |
 
 ---
 
@@ -230,31 +236,33 @@ Nora ép mình dưới vách đất bờ lạch, trời đỏ rực, hạt thủ
 
 ### EST-01 (6s) — aerial wide, bình minh, không thoại → thẻ năm
 
-### ACT 1 — ARRIVAL (16 lần sinh, HOUR 0 → 2)
+### ACT 1 — ARRIVAL (17 lần sinh, HOUR 0 → 2)
 **Câu hỏi:** *Thứ gì ở đây sẽ giết cô trước — và cô bám vào đâu để sống?*
 **Gieo:** hốc khô dưới vách bờ bên kia (A1-06) — cô bỏ qua vì cá sấu nằm ngay dưới miệng hốc. Niềm tin sai nói ra ở A1-05.
+**Sai lầm trực tiếp (A1-S1):** tự tin thú ăn cỏ vô hại → bước ra mép bãi.
 **Hỏng thì thấy gì:** Bò Đực dọa-xông giả (chuỗi 4s A1-12a/b/c); hết Act cô ngồi một mình ngoài rìa đàn, trời đã sáng rõ, tay không.
 → thẻ nhiệm vụ `3,000 KM FROM GROUND ZERO`
 
-### ACT 2 — READING THE HERD (18 clip + EST-02, HOUR 2 → 6)
+### ACT 2 — READING THE HERD (24 clip + EST-02, 25 lần sinh, HOUR 2 → 6)
 **Câu hỏi:** *Cô có học nổi thứ ngôn ngữ không phải của người không?*
 **Hỏng thì thấy gì:** T. rex đi ngang cách 15 bước (chuỗi 4s A2-12a/b/c). Không đọc được tín hiệu đứng sững thì cô đã ở giữa lối mòn.
-**Thắng một phần:** đàn chịu cho cô ở trong vòng 20 bước.
+**Thử thách mép đàn:** Acheroraptor bám vệt T. rex rình rập; đàn khép vòng bảo vệ con non, Con Cái Già mở khe hở cho cô lách vào (A2-R1→R5).
+**Thắng một phần (midpoint):** đàn chịu cho cô ở trong vòng 20 bước, coi cô là "furniture".
 
 ### EST-02 (4s) — aerial rất cao, giữa trưa, **một đốm sáng nhỏ nhợt** không nên có giữa trời ban ngày. Không ai dưới đất nhận ra.
 
-### ACT 3 — THE WATER HOLE (21 clip + EST-03, HOUR 6 → 11)
+### ACT 3 — THE WATER HOLE (32 clip + EST-03, 33 lần sinh, HOUR 6 → 11)
 **Câu hỏi:** *Cô giữ được chỗ của mình trong đàn khi đàn di chuyển không?*
 **Hỏng thì thấy gì:** mai rùa vỡ (chuỗi 4s A3-06a/b/c), vệt nước sẫm lại rồi co mất vào cát; đàn đã khuất.
-**Thắng nhờ chính mình:** tự đọc dấu chân tìm lại đàn (A3-08/09); dùng luật Act 2 qua mặt Bò Đực để được uống (A3-14).
-**Thắng giả:** cô uống được, Con Non đứng cách một sải tay, "I almost forgot what today is".
+**Thắng nhờ chính mình:** tự đọc dấu chân tìm lại đàn (A3-08/09); học nghe đất khi gặp đàn Edmontosaurus mỏ vịt chạy loạn (A3-D1→D3); học uống theo lượt vì cá sấu rình hố nước (A3-W1→W3); dùng luật Act 2 qua mặt Bò Đực để được uống (A3-14).
+**Thắng giả:** cô uống được, Con Non ngủ tựa chân cô (A3-Q1), thằn lằn bay về phía nam (A3-Q2), "I almost forgot what today is".
 → thẻ `HOUR 11 — 1 HOUR REMAINING`
 
 ### EST-03 (4s) — aerial cực cao, kéo lùi, rừng trải vô tận không một dấu vết người, chính giữa khung ánh lóe nhỏ của hố nước. Trời đã sang màu đồng. **Cô lập tuyệt đối.**
 
-### ACT 4 — IMPACT (23 clip + MASTER, HOUR 12 → +40 phút)
+### ACT 4 — IMPACT (27 clip + MASTER, 28 lần sinh, HOUR 12 → +40 phút)
 **Câu hỏi:** *Thứ cô học được từ đám thú có cứu nổi cô không?*
-**Hỏng thì thấy gì:** đàn vỡ chạy bỏ cô lại; cô một mình giữa bãi trống khi trời bắt đầu rơi.
+**Hỏng thì thấy gì:** đàn vỡ chạy bỏ cô lại; cọ cháy đổ chắn lối; T. rex xé khói tháo chạy (A4-P/T); cô một mình giữa bãi trống khi trời bắt đầu rơi thủy tinh.
 **Khủng hoảng (A4-14, lựa chọn tĩnh):** đàn chạy lên rừng phía bắc — rừng sẽ cháy; Con Non lao xuống lạch cá sấu. Hai cái ác. Cô chọn theo con vật.
 **Payoff:** `MASTER-GLASS` 6→10s — Con Non chui vào đúng cái hốc cô bỏ qua sáng nay; cô dập hạt thủy tinh bằng bùn ướt, và một bàn chân Con Non đặt xuống ngay cạnh mặt cô.
 
@@ -272,23 +280,23 @@ Rừng cháy ở chân trời → tro rơi dày như tuyết → xác Bò Đực
 | Act | Nhịp | Độ dài dựng | Ghi chú |
 |---|---|---|---|
 | Cold open + EST-01 | Dài | 8.0s + 5.0s | Cold open giữ nguyên master take |
-| Act 1 | Dài (thiết lập) | 6.5–7.0s; A1-14 9.0s | Chuỗi A1-12 (3.5 / 3.0 / 3.5) là cú giật nhịp duy nhất của Act |
-| Act 2 | Chậm → vừa | 5.0–9.0s so le | A2-01 9.0 mở Act; clip quan sát 0 từ 5.0; chuỗi T. rex 3.5 / 3.0 / 3.5 |
-| Act 3 | Ngắn dần → payoff dài | 7.0 → 3.5 → 3.0s (A3-02 → A3-06c), rồi **9.0s** ở A3-17 | 6 clip 4s gần như liền nhau là đoạn dồn; giữ đủ ở "thắng giả" |
-| Act 4 | **Ngắn nhất phim** | phần lớn 3.0–3.5s | Clip thoại 6.5–7.0s là chỗ thở; chuỗi A4-03 và A4-07 dựng đủ 3 mắt xích (≈10s mỗi chuỗi) |
-| Act 5 | **Dài nhất mỗi clip** | 6.5–7.0s; A5-09 **9.0s**, không trim đuôi | Đảo ngược hoàn toàn Act 4 |
+| Act 1 | Dài (thiết lập) | 6.5–7.0s; A1-14 9.0s | A1-S1 (7.0s) củng cố sai lầm; chuỗi A1-12 (3.5 / 3.0 / 3.5) giật nhịp |
+| Act 2 | Chậm → vừa | 5.0–9.0s so le | A2-01 9.0s mở Act; chuỗi T. rex A2-12; chuỗi Acheroraptor A2-R2 (3.5 / 3.0 / 3.5) |
+| Act 3 | Ngắn dần → payoff dài | 7.0 → 3.5 → 3.0s | Chuỗi vỡ mai rùa A3-06; chuỗi mỏ vịt A3-D2; chuỗi cá sấu A3-W2; neo thở ở A3-17 9.0s |
+| Act 4 | **Ngắn nhất phim** | phần lớn 3.0–3.5s | Cọ cháy A4-P1; chuỗi T. rex tháo chạy A4-T1/T2; chuỗi chớp A4-03; chuỗi địa chấn A4-07 |
+| Act 5 | **Dài nhất mỗi clip** | 6.5–7.0s; A5-09 **9.0s**, không trim đuôi | Đảo ngược hoàn toàn Act 4; lắng đọng tuyệt đối |
 
 | Phần | Lần sinh | Dựng |
 |---|---|---|
 | Cold open (cắt từ MASTER) + EST-01 | 1 | 13.0s |
-| Act 1 | 16 | 97.5s |
-| Act 2 + EST-02 | 19 | 105.5s |
-| Act 3 + EST-03 | 22 | 116.0s |
-| Act 4 + MASTER | 24 | 102.0s |
+| Act 1 | 17 | 104.5s |
+| Act 2 + EST-02 | 25 | 132.5s |
+| Act 3 + EST-03 | 33 | 170.0s |
+| Act 4 + MASTER | 28 | 115.5s |
 | Act 5 | 9 | 63.0s |
-| **Tổng** | **91** | **497.0s ≈ 8:17** |
+| **Tổng** | **117** | **608.5s ≈ 10:08** |
 
-**Kiểm tra:** không 3 clip liên tiếp cùng độ dài (±0.3s); clip thoại 8s ≥ 6.5s, 10s ≥ 8.5s (cắt ngắn hơn là cụt câu); mỗi Act ≥ 1 clip giữ đủ độ dài khả dụng làm điểm neo thở; Act 4 nhiều clip nhất nhưng tổng **không** dài nhất (102.0s < 116.0s của Act 3).
+**Kiểm tra:** không 3 clip liên tiếp cùng độ dài (±0.3s); clip thoại 8s ≥ 6.5s, 10s ≥ 8.5s; mỗi Act ≥ 1 clip giữ đủ độ dài khả dụng làm điểm neo thở; Act 3 nhận nhiều thời lượng nhất (170.0s) tạo thành thân "猪肚" vững chãi của khung 起承转合; Act 4 ngắn và dồn dập; Act 5 cô đọng và dư ba.
 
 ---
 
@@ -314,9 +322,9 @@ Rừng cháy ở chân trời → tro rơi dày như tuyết → xác Bò Đực
 
 ---
 
-## 9. STORYBOARD — 91 lần sinh
+## 9. STORYBOARD — 117 lần sinh
 
-**Cột:** `Dur` = `duration` gửi Flow (PATCH `{"duration": N}` trước khi sinh; thiếu → im lặng thành 10s). `Shot` = góc máy · cỡ cảnh (mã R1–R6 ở §7). `Ref 3` = ref thứ ba cạnh `Nora` + `Nora Body` (không bao giờ 4). `Từ` = số từ thoại theo Rule 49 (0): 4s = 0 (hoặc 6–8) · 6s = 12–15 · 8s = 18–22 · 10s = 24–28; **0** = Sonic Isolation / hành động sinh tử / establishing / im lặng chủ đích của Act 5. `Dựng` = độ dài sau trim đầu và cắt đuôi.
+**Cột:** `Dur` = `duration` gửi Flow (PATCH `{"duration": N}` trước khi sinh; thiếu → im lặng thành 10s). `Shot` = góc máy · cỡ cảnh (mã R1–R6 ở §7). `Ref 3` = ref thứ ba cạnh `Nora` + `Nora Body` (không bao giờ 4). `Từ` = số từ thoại theo Rule 49 (0): 4s = 0 (hoặc 6–8, 11) · 6s = 12–15 · 8s = 18–22 · 10s = 24–28; **0** = Sonic Isolation / hành động sinh tử / establishing / im lặng chủ đích của Act 5. `Dựng` = độ dài sau trim đầu và cắt đuôi.
 **Luật độ dài:** clip có thoại giữ ≥ 6.5s (8s) / ≥ 8.5s (10s). Chỉ clip **0 từ** mới được cắt ngắn hơn khả dụng.
 **Thoại tách mốc theo `Dur`** bằng dấu `/`: 8s `0-3s / 3-6s / 6-8s`; 10s `0-3s / 3-7s / 7-10s`. Không dùng gạch ngang dài trong thoại (Rule 55).
 **Chuỗi 4s** (`xx-NNa/b/c`): 1 hành động / mắt xích; cùng 3 ref + câu `Setting` + câu ánh sáng + vị trí máy với mắt xích `a`; mắt xích sau **mở bằng tư thế cuối** của mắt xích trước (Rule 44, trường `chain.opens_on` trong template); hỏng mắt xích nào sinh lại đúng mắt xích đó.
@@ -328,7 +336,7 @@ Rừng cháy ở chân trời → tro rơi dày như tuyết → xác Bò Đực
 | CO | — | FIXED · MS | Hell Creek Bank | **Cắt từ MASTER-GLASS 0→8s** (không sinh riêng). Nora ép người dưới vách đất bờ lạch, trời đỏ rực, hạt thủy tinh nóng cắm xuống cát quanh cô; cô kéo tàu lá cọ sũng nước trùm lên, một chiếc giày còn thò ra ánh đỏ. **CẮT ĐEN.** | "Down, down, it's burning, it won't hold! / Wet mud on the arm, on everything, stay flat. / Pull the frond, boot's still out!" | 22 | 1,2 | Hook: nguy hiểm tột đỉnh trước khi biết cô là ai | 8.0 (không trim) |
 | EST-01 | 6 | AERIAL · EWS | Hell Creek Bank | Bình minh: sương trên lạch uốn khúc, bãi sỏi, rừng cọ; xa xa vài chấm thú đứng ở bãi dương xỉ. Không người → **thẻ năm** | — | 0 | 2 | Thở sau cold open, đặt thế giới | 5.0 |
 
-### ACT 1 — ARRIVAL (16 lần sinh · L1 → L2 · HOUR 0 → 2)
+### ACT 1 — ARRIVAL (17 lần sinh · L1 → L2 · HOUR 0 → 2)
 
 | # | Dur | Shot | Ref 3 | Visual | Thoại Nora | Từ | Việc | Retention beat | Dựng |
 |---|---|---|---|---|---|---|---|---|---|
@@ -342,6 +350,7 @@ Rừng cháy ở chân trời → tro rơi dày như tuyết → xác Bò Đực
 | A1-08 | 8 | POV · WS | Hell Creek Trail | Bìa rừng: bức tường dương xỉ + cọ không đọc được; máy lia sang miệng một lối mòn bùn đỏ rộng chui vào rừng | "Forest is a solid wall, I can't see two metres in. / But that's a path. / Something big made it." | 19 | 2,4 | "Cái gì to?" | 7.0 |
 | A1-09 | 8 | MACRO · ECU | Hell Creek Trail | Dấu chân tròn rộng hơn vai, ngón tù, nước đục đọng trong lòng; mũi giày phải đặt cạnh để so | "Round footprint, wider than my shoulders. / Water inside is still cloudy, so it's fresh. / Whatever made this is close." | 19 | 1,2 | Nó ở gần | 6.5 |
 | A1-10 | 8 | OTS · MS | Hell Creek Trail | Nora 1/3 tiền cảnh nấp sau dương xỉ, thì thầm; 2/3 hậu cảnh: đàn Triceratops gặm ở bãi dương xỉ cách 40 m | "There. Seven, eight of them, horned, grazing. / They're the biggest things in this valley. / Big means safe, I hope." | 19 | 3,4 | Lần đầu thấy đàn — "I hope" gieo nghi | 7.0 |
+| A1-S1 | 8 | SELFIE · MCU | Hell Creek Trail | **Mới.** Nora mỉm cười tự tin nhìn vào máy, đàn gặm cỏ sau lưng; cô bước ra khỏi bụi rậm | "They're massive, but they're strictly vegetarians. / They'll completely ignore me. / Just watch." | 16 | 2,3 | Niềm tin sai chủ quan trước cú xông | 7.0 |
 | A1-11 | 6 | POV · WS | Bò Đực | Bước ra mép bãi; Bò Đực ngẩng đầu, sừng trái gãy, diềm ửng đỏ; máy tiến 2 bước rồi dừng | — (Sonic Isolation) | 0 | 1,3 | Im lặng trước cú xông | 5.0 |
 | A1-12a | 4 | POV · MS | Bò Đực | **Chuỗi 4s (1/3) — xông.** Bò Đực cúi đầu, lao thẳng về máy 3 bước; kết khi còn cách ~8 m | — | 0 | 1,3 | **C2** · HỎNG 1 · chuỗi khó nhất phim | 3.5 |
 | A1-12b | 4 | POV · MS | Bò Đực | **(2/3) — khựng.** Mở bằng Bò Đực giữa bước lao cách ~8 m; khựng lại cách 6 m, cào chân trước, bùn văng về máy; máy giật lùi | — | 0 | 1,3 | Dọa, không giết | 3.0 |
@@ -349,7 +358,7 @@ Rừng cháy ở chân trời → tro rơi dày như tuyết → xác Bò Đực
 | A1-13 | 8 | SELFIE · MCU | Hell Creek Trail | Nora nằm nghiêng trong dương xỉ, lá vắt ngang khung, thở dốc (khớp A1-12c: vừa ngã ngửa) | "He stopped. He stopped six metres short. / That was a warning, not an attack. / Message received, big guy." | 18 | 3 | Thả hơi bằng dry humor | 7.0 |
 | A1-14 | 10 | FIXED · MS | Hell Creek Trail | Máy kê trên gốc cây. Nora ngồi ngang eo ở mép trái, đàn gặm cỏ hậu cảnh cách 30 m, trời đã sáng rõ | "So I can't walk in. Not yet. / I sit here at the edge, where they can see me. / I don't move. And I wait." | 24 | 3,4 | Kết Act hỏng: vẫn ở **ngoài** đàn → **thẻ nhiệm vụ** | 9.0 |
 
-### ACT 2 — READING THE HERD (18 clip + EST-02 · L3 · HOUR 2 → 6)
+### ACT 2 — READING THE HERD (24 clip + EST-02 · L3 · HOUR 2 → 6)
 
 | # | Dur | Shot | Ref 3 | Visual | Thoại Nora | Từ | Việc | Retention beat | Dựng |
 |---|---|---|---|---|---|---|---|---|---|
@@ -369,11 +378,17 @@ Rừng cháy ở chân trời → tro rơi dày như tuyết → xác Bò Đực
 | A2-12c | 4 | HIDE · WS | T. rex | **(3/3) — ra.** Mở bằng thân sau giữa khe; đuôi lướt qua, ra mép trái; lối mòn trống, dương xỉ lắc rồi đứng | — (Sonic Isolation) | 0 | 1 | Thả | 3.5 |
 | A2-13 | 6 | MACRO · ECU | Hell Creek Trail | Bàn tay Nora ép phẳng trên bùn sau gỗ; nước trong một vết chân nhỏ rung theo từng bước đập, yếu dần; tay nhấc lên | — | 0 | 1 | Âm thanh kể chuyện | 5.0 |
 | A2-14 | 8 | SELFIE · MCU | Hell Creek Trail | Nora vẫn nằm thấp sau gỗ, quay mặt vào máy (khớp A2-13: tay vừa nhấc khỏi bùn), run | "It walked right past me. / They froze before I heard a single thing. / Their silence is my alarm now." | 19 | 3,4 | Bài học chốt — dùng lại ở Act 4 | 7.0 |
+| A2-R1 | 6 | POV · WS | Acheroraptor | **Mới.** Hai con Acheroraptor lông nâu xám, cao ngang hông, bước thận trọng ở mép lối mòn bám theo vệt T. rex; máy lùi chậm | — (Sonic Isolation) | 0 | 1 | Kẻ ăn thừa bám vệt T. rex | 5.0 |
+| A2-R2a | 4 | POV · WS | Hell Creek Trail | **Chuỗi 4s (1/3) — khép vòng.** Đàn Triceratops rùng mình, dồn sát vào nhau tạo vòng tròn bảo vệ Con Non, đầu quay ra ngoài; Nora bị gạt ra ngoài rìa | — | 0 | 1,3 | Đàn khép vòng | 3.5 |
+| A2-R2b | 4 | POV · MS | Acheroraptor | **(2/3) — rình mép.** Mở bằng Nora ở ngoài rìa; hai con Acheroraptor dừng cách 8 m, mắt khóa chặt vào Nora, gừ nhẹ trong cổ | — | 0 | 1 | Ở mép tức là làm mồi | 3.0 |
+| A2-R2c | 4 | POV · MS | Con Cái Già | **(3/3) — lách vào.** Mở bằng Con Cái Già đỏ rực diềm xương nhìn thẳng vào Nora; một khe hở giữa hai chân nó mở ra; Nora lao sấp người lách qua khe vào trong bóng đàn | — | 0 | 3,4 | Lách vào vòng tròn | 3.5 |
+| A2-R3 | 8 | SELFIE · MCU | Hell Creek Trail | Nora ngồi nép giữa hai chân trụ của đàn, thở dốc, nhìn ra ngoài nơi raptor đang bỏ đi | "Rule three: standing on the edge makes you bait. / They didn't close the circle for me, / but they let me in." | 21 | 3,4 | Luật 3: ở mép là làm mồi | 7.0 |
+| A2-R4 | 6 | POV · CU | Con Cái Già | Chân trước khổng lồ của Con Cái Già chắn ngay sát sườn Nora; ngoài xa hai con Acheroraptor lủi vào rừng; đàn hạ cảnh giác | — | 0 | 3 | Tấm khiên sống | 5.0 |
 | A2-15 | 8 | FIXED · MS | Bò Đực | Đàn gặm cỏ lại; Nora ngồi ngang eo cách 20 bước, Bò Đực liếc cô rồi nhai tiếp | "Twenty steps away. Big guy looked right at me, kept eating. / I'm not family yet. / But I'm furniture now." | 19 | 3,4 | **THẮNG MỘT PHẦN** (midpoint) | 6.5 |
 | A2-16 | 8 | POV · CU | Hell Creek Trail | Hai tay nghiêng mai rùa: chỉ còn một lóng tay nước sóng sánh | "Problem. This is all the water I've got left. / It's noon, it's boiling, / and the creek is full of crocodiles." | 20 | 1,2 | Đồng hồ thứ hai: nước | 7.0 |
 | EST-02 | 4 | AERIAL · EWS | Hell Creek Trail | Rất cao, giữa trưa: tán rừng vô tận; một đốm sáng nhỏ nhợt không nên có giữa trời ban ngày. Không ai dưới đất nhận ra | — | 0 | 2 | Chỉ khán giả thấy | 3.5 |
 
-### ACT 3 — THE WATER HOLE (21 clip + EST-03 · L4 · HOUR 6 → 11)
+### ACT 3 — THE WATER HOLE (32 clip + EST-03 · L4 · HOUR 6 → 11)
 
 | # | Dur | Shot | Ref 3 | Visual | Thoại Nora | Từ | Việc | Retention beat | Dựng |
 |---|---|---|---|---|---|---|---|---|---|
@@ -386,27 +401,38 @@ Rừng cháy ở chân trời → tro rơi dày như tuyết → xác Bò Đực
 | A3-06b | 4 | POV · CU | Hell Creek Waterhole | **(2/3) — vỡ.** Mở bằng mai rùa lủng lẳng xa hông; dây sợi cọ đứt, mai rơi thẳng xuống đá, nứt đôi, nước bắn | — (1 tiếng hớp hơi) | 0 | 1 | **C5** · vỡ mai rùa | 3.0 |
 | A3-06c | 4 | POV · CU | Hell Creek Waterhole | **(3/3) — ngấm.** Mở bằng hai nửa mai trên đá, nước tràn ra cát; vệt sẫm loang rồi co mất vào cát | — | 0 | 1 | Mất nước | 3.5 |
 | A3-07 | 8 | SELFIE · MCU | Hell Creek Waterhole | Nora quỳ, tay trái cầm hai nửa mai rùa (khớp A3-06c: vệt ướt vừa ngấm) | "No, no, no. That was all of it. / The sand just drank my water in two seconds. / And they're gone." | 20 | 1 | Mất cả nước lẫn đàn | 7.0 |
-| A3-08 | 6 | MACRO · ECU | Hell Creek Waterhole | **Mới (F8).** Nhìn thẳng xuống: dấu chân tròn trên bùn nứt, lòng dấu còn ướt sẫm; ngón tay Nora ấn vào mép dấu, bùn lún mềm; tay chỉ dọc trục dấu, máy ngẩng theo tới rặng cọ xa | — (thở chậm lại) | 0 | 4 | Cô **tự đọc** được — kỹ năng của chính cô | 5.0 |
+| A3-08 | 6 | MACRO · ECU | Hell Creek Waterhole | Nhìn thẳng xuống: dấu chân tròn trên bùn nứt, lòng dấu còn ướt sẫm; ngón tay Nora ấn vào mép dấu, bùn lún mềm; tay chỉ dọc trục dấu, máy ngẩng theo tới rặng cọ xa | — (thở chậm lại) | 0 | 4 | Cô **tự đọc** được — kỹ năng của chính cô | 5.0 |
 | A3-09 | 8 | POV · EWS | Hell Creek Waterhole | Bãi bùn nứt nẻ mênh mông, vệt dấu chân đàn chạy thẳng về rặng cọ phía bắc; không thấy con nào | "Fresh tracks, the mud's still wet inside them. / They're heading north, toward that line of palms. / Palms mean water. Follow the feet." | 22 | 1,4 | Bãi trống — đúng chỗ xác thú dạy đừng đi | 7.0 |
+| A3-D1 | 8 | SELFIE · MCU | Edmontosaurus Herd | **Mới.** Nora dừng bước trên bãi bùn, nhìn sang phải: đàn Edmontosaurus mỏ vịt lững thững đi qua | "Another herd, duck-billed Edmontosaurus. / Trying to read their frills, but they don't have frills. / Zero facial signals." | 20 | 2,3 | Không đọc được bằng luật diềm | 7.0 |
+| A3-D2a | 4 | POV · WS | Edmontosaurus Herd | **Chuỗi 4s (1/3) — hoảng loạn.** Cả đàn Edmontosaurus giật mình, rống trầm qua mũi rồi chạy tán loạn cắt ngang lối đi của Nora | — (Sonic Isolation) | 0 | 1 | Đàn mỏ vịt chạy loạn | 3.5 |
+| A3-D2b | 4 | POV · WS | Edmontosaurus Herd | **(2/3) — đất rung.** Mở bằng thân đàn 4 tấn lao sầm sập qua trước mặt cách 10 m, bùn đất bắn tung tóe; máy Nora chao đảo | — | 0 | 1 | Đất rung dữ dội | 3.0 |
+| A3-D2c | 4 | POV · MS | Hell Creek Waterhole | **(3/3) — áp đất.** Mở bằng đàn chạy khuất xa; Nora ngã ngồi thụp xuống bùn, hai bàn tay áp chặt xuống mặt đất đang rung | — | 0 | 4 | Cảm nhận rung chấn | 3.5 |
+| A3-D3 | 8 | SELFIE · MCU | Hell Creek Waterhole | Nora quỳ, hai tay vẫn áp trên bùn, mắt mở to nhìn theo vệt bụi xa | "Rule four: reading frills only works on horns. / When they don't have faces, you listen to the ground. / The earth told them first." | 23 | 3,4 | Luật 4: nghe đất | 7.0 |
 | A3-10 | 6 | POV · WS | Hell Creek Waterhole | Cách 60 m: Quetzalcoatlus cao như hươu cao cổ sải bước bốn chân trên bãi, mổ xuống bùn; máy khựng lại | — (Sonic Isolation) | 0 | 1 | Dấu hiệu trời #1 | 5.0 |
 | A3-11 | 8 | SELFIE · MCU | Hell Creek Waterhole | Nora cúi thấp thì thầm, Quetzalcoatlus mờ hậu cảnh | "That's a flying reptile. Taller than a giraffe, walking. / It's hunting small things in the mud. / I'm a small thing." | 20 | 1 | Dry humor dưới áp lực | 7.0 |
 | A3-12a | 4 | POV · EWS | Hell Creek Waterhole | **Chuỗi 4s (1/2) — bật lên.** Quetzalcoatlus hạ thấp người, chống hai cánh xuống bùn, bật lên khỏi mặt đất | — | 0 | 2 | Sinh vật lớn cất cánh | 3.5 |
 | A3-12b | 4 | POV · EWS | Hell Creek Waterhole | **(2/2) — bay đi.** Mở bằng Quetzalcoatlus trên không thấp, cánh dang; bay xa về đông nam, nhỏ dần thành chấm | — | 0 | 2 | Hướng đông nam = hướng tai họa | 3.0 |
 | A3-13 | 8 | POV · WS | Hell Creek Waterhole | Hố nước nâu co hẹp, vành bùn giẫm nát; cả đàn đứng trong và quanh nước uống | "Found them, just by reading their feet! / The whole herd, in the only water around. / Slowly now. Low and boring." | 20 | 3,4 | Đuổi kịp nhờ chính mình | 7.0 |
-| A3-14 | 8 | FIXED · WS | Bò Đực | **Mới.** Máy kê trên tảng đất cao. Bò Đực đứng chắn mép nước cách Nora 8 m, diềm đỏ; Nora dừng, xoay vai nghiêng, cụp mắt (luật A2-05); diềm nhạt dần, Bò Đực cúi xuống uống; Nora bước một bước. Thì thầm (cách 8 m, không phải rình săn) | "Big guy's blocking the water. Frill's red. / Sideways, eyes down, boring. Very boring. / Pale frill. Okay. One step." | 18 | 3,4 | Bài Act 2 qua kiểm tra · Bò Đực chấp nhận | 7.0 |
+| A3-W1 | 6 | POV · WS | Hell Creek Waterhole | **Mới.** Cả đàn không uống cùng lúc: ba con cúi uống, một con đực khác đứng vươn cổ ngẩng cao đầu canh chừng mép nước đục | — (Sonic Isolation) | 0 | 1,3 | **C6** · đàn uống theo lượt | 5.0 |
+| A3-W2a | 4 | POV · CU | Hell Creek Waterhole | **Chuỗi 4s (1/2) — gợn sóng.** Nhìn ra giữa hố nước: chóp mõm và hai mắt Borealosuchus trồi chậm lên mặt nước đục không tiếng động cách chân thú 3 m | — | 0 | 1 | Cá sấu rình hố nước | 3.5 |
+| A3-W2b | 4 | POV · CU | Hell Creek Waterhole | **(2/2) — lặn mất.** Mở bằng chóp mõm cá sấu; con Triceratops canh dậm chân mạnh xuống nước làm sóng bắn tung; cá sấu lặn mất tăm | — | 0 | 1 | Con canh xua đuổi | 3.0 |
+| A3-W3 | 8 | SELFIE · MCU | Hell Creek Waterhole | Nora ngồi chờ ở rìa bùn, quan sát con canh | "Rule five: take shifts. The herd never drinks together. / There's always one head up watching the deep. / I only drink when they watch." | 23 | 3,4 | Luật 5: uống theo lượt | 6.5 |
+| A3-14 | 8 | FIXED · WS | Bò Đực | Máy kê trên tảng đất cao. Bò Đực đứng chắn mép nước cách Nora 8 m, diềm đỏ; Nora dừng, xoay vai nghiêng, cụp mắt (luật A2-05); diềm nhạt dần, Bò Đực cúi xuống uống; Nora bước một bước | "Big guy's blocking the water. Frill's red. / Sideways, eyes down, boring. Very boring. / Pale frill. Okay. One step." | 18 | 3,4 | Bài Act 2 qua kiểm tra · Bò Đực chấp nhận | 7.0 |
 | A3-15 | 8 | FIXED · MS | Hell Creek Waterhole | Máy kê trên tảng đất. Nora quỳ ngang eo ở mép nước, vốc nước bằng hai tay uống, đàn hậu cảnh | "Muddy, warm, and tastes like a dinosaur's foot. / Honestly, best drink of my whole life. / Don't tell anyone." | 18 | 4 | Thở | 6.5 |
 | A3-16 | 8 | OTS · MS | Con Non | Con Non lội tới đứng cách một sải tay, kêu 2 nhịp; Nora tiền cảnh thì thầm | "Hey, buddy, you found me again. / Arm's length. Closest anyone's let me get all day. / I'll take it." | 18 | 3 | Quan hệ lên một bậc | 7.0 |
-| A3-17 | 10 | SELFIE · MCU | Hell Creek Waterhole | Ánh hổ phách thấp; Nora cười mệt, đàn uống nước sau lưng | "Water. Shade. A herd that tolerates me. / First time today I actually feel safe. Like a holiday. / I almost forgot what today is. Almost." | 24 | 2 | **C6** · THẮNG GIẢ — misbelief quay lại dưới dạng yên ổn | 9.0 |
+| A3-Q1 | 8 | OTS · MS | Con Non | **Mới.** Con Non nằm bệt xuống bùn cạnh chân Nora, đầu tựa vào gối cô thở êm; Nora cúi nhìn, giơ ngón tay đếm giờ | "One hour left. / He's sleeping like it's just another afternoon. / His pulse is beating right through my boot." | 19 | 3,2 | **C7** · Con Non ngủ tựa chân | 7.0 |
+| A3-Q2 | 6 | POV · EWS | Hell Creek Waterhole | **Mới.** Ngẩng lên trời chiều hổ phách: một đàn pterosaur nhỏ bay thành bầy vội vã rẽ ngang bầu trời, bay dạt hết về hướng tây nam | — (Sonic Isolation) | 0 | 1,2 | Điềm báo: chim bay tránh nạn | 5.0 |
+| A3-17 | 10 | SELFIE · MCU | Hell Creek Waterhole | Ánh hổ phách thấp; Nora cười mệt, đàn uống nước sau lưng | "Water. Shade. A herd that tolerates me. / First time today I actually feel safe. Like a holiday. / I almost forgot what today is. Almost." | 24 | 2 | THẮNG GIẢ — misbelief quay lại dưới dạng yên ổn | 9.0 |
 | A3-18 | 6 | POV · WS | Hell Creek Waterhole | Mọi con đồng loạt ngừng uống, ngẩng đầu, đứng sững; nước nhỏ giọt từ cằm; Con Cái Già trước tiên | — (Sonic Isolation) | 0 | 1,2 | Cliffhanger: đúng tín hiệu Act 2 | 5.0 |
-| EST-03 | 4 | AERIAL · EWS | Hell Creek Waterhole | Kéo lùi lên cực cao: rừng vô tận không một dấu vết người, ánh lóe nhỏ của hố nước ở tâm khung, trời đã sang màu đồng; một bóng cánh bay ngang, **xa khỏi** hướng đông nam (dấu hiệu trời #2) | — | 0 | 1,2 | Cô lập tuyệt đối · cầu sang Act 4 | 3.5 |
+| EST-03 | 4 | AERIAL · EWS | Hell Creek Waterhole | Kéo lùi lên cực cao: rừng vô tận không một dấu vết người, ánh lóe nhỏ của hố nước ở tâm khung, trời đã sang màu đồng; một bóng cánh bay ngang, **xa khỏi** hướng đông nam | — | 0 | 1,2 | Cô lập tuyệt đối · cầu sang Act 4 | 3.5 |
 
-### ACT 4 — IMPACT (23 clip + MASTER-GLASS · L4 → L5 → L5' → L6 · HOUR 12 → +40 phút)
+### ACT 4 — IMPACT (27 clip + MASTER-GLASS · L4 → L5 → L5' → L6 · HOUR 12 → +40 phút)
 
 | # | Dur | Shot | Ref 3 | Visual | Thoại Nora | Từ | Việc | Retention beat | Dựng |
 |---|---|---|---|---|---|---|---|---|---|
 | A4-01 | 6 | POV · WS | Hell Creek Waterhole | Quét chậm trái→phải dọc rặng cọ quanh hố nước tìm T. rex; không có gì | — (Sonic Isolation) | 0 | 2 | Khán giả tìm cùng cô | 4.5 |
 | A4-02 | 8 | SELFIE · MCU | Hell Creek Waterhole | Nora thì thầm gấp, đàn đứng sững sau lưng | "They're all frozen, like before, but there's nothing. / No footsteps, no smell, nothing in the trees. / Then what..." | 18 | 2 | Câu hỏi lớn nhất phim | 6.5 |
-| A4-03a | 4 | POV · MS | Hell Creek Waterhole | **Chuỗi 4s (1/3) — chớp.** Nhìn xuống đất: bóng Nora + bóng đàn đổ dài sang phải (đông), tĩnh; chớp trắng câm từ phía sau-phải phủ trắng toàn khung | — (im lặng tuyệt đối; J-cut: âm thanh tắt trước hình) | 0 | 1,2 | **C7** · Shadow-flip | 3.5 |
+| A4-03a | 4 | POV · MS | Hell Creek Waterhole | **Chuỗi 4s (1/3) — chớp.** Nhìn xuống đất: bóng Nora + bóng đàn đổ dài sang phải (đông), tĩnh; chớp trắng câm từ phía sau-phải phủ trắng toàn khung | — (im lặng tuyệt đối; J-cut: âm thanh tắt trước hình) | 0 | 1,2 | **C8** · Shadow-flip | 3.5 |
 | A4-03b | 4 | POV · MS | Hell Creek Waterhole | **(2/3) — tắt.** Mở bằng khung trắng lóa; trắng tắt dần, màu nhạt trở lại, đất và bóng cũ lộ ra | — | 0 | 2 | Nín thở | 3.0 |
 | A4-03c | 4 | POV · MS | Hell Creek Waterhole | **(3/3) — bóng thứ hai.** Mở bằng đất + bóng cũ nhạt; dưới mỗi vật mọc thêm **bóng thứ hai** cứng hơn, đổ chéo về trước-trái, gần như ngược bóng cũ | — | 0 | 1,2 | Khoảnh khắc đắt nhất phim | 3.5 |
 | A4-04 | 8 | SELFIE · MCU | Hell Creek Waterhole | Nora nhìn qua vai phải về chân trời đông nam: một quầng cam đục đang phồng lên ở phía ngược mặt trời; rồi nhìn thẳng máy | "I knew the hour, the place, the distance. / I thought knowing meant I'd be watching. / I'm not watching." | 18 | 1 | **Misbelief bị bẻ** (A1-05 → A4-04) | 7.0 |
@@ -418,10 +444,14 @@ Rừng cháy ở chân trời → tro rơi dày như tuyết → xác Bò Đực
 | A4-08 | 8 | SELFIE · MCU | Hell Creek Waterhole | Má áp bùn, nhấc đầu lên (khớp A4-07c: úp sấp), bùn xám nâu trên má trái; đàn chạy mờ hậu cảnh | "Ground wave. The whole valley just rolled like water. / The herd's breaking, they're running. / Get up, get up!" | 18 | 1 | Gấp | 6.5 |
 | A4-09 | 4 | POV · WS | Hell Creek Waterhole | Đàn vỡ chạy về rặng cây phía bắc, lướt qua cách 10 m; máy chạy theo, tụt lại | — (thở) | 0 | 1,3 | Bị bỏ lại | 3.5 |
 | A4-10 | 4 | POV · EWS | Hell Creek Waterhole | Chạy trên bãi trống; trời phía trước chuyển cam → đỏ thẫm; những hạt sáng đầu tiên vạch xuống, xèo vào bùn quanh máy | — | 0 | 1 | Ánh sáng L6 bắt đầu | 3.0 |
+| A4-P1 | 4 | POV · WS | Hell Creek Trail | **Mới.** Cây cọ cổ thụ đang bốc cháy đổ ầm xuống chắn ngang lối mòn, than hồng bắn tung tóe; máy khựng lại | — (Sonic Isolation) | 0 | 1 | Cây cọ cháy chắn đường | 3.5 |
+| A4-T1 | 4 | POV · WS | T. rex | **Chuỗi 4s (1/2) — xé khói.** Giữa màn khói đỏ, bóng T. rex phi nước đại xé toạc màn khói, mắt trợn trừng hoảng loạn, không nhìn Nora | — (Sonic Isolation) | 0 | 1 | T. rex chạy trốn · không săn | 3.5 |
+| A4-T2 | 4 | POV · WS | T. rex | **(2/2) — lướt qua.** Mở bằng thân T. rex phi ngang bãi trống; đuôi quét gãy cành cọ cháy, lao vút vào khói phía tây; đất rung chuyển | — (Sonic Isolation) | 0 | 1 | Chúa tể cũng là nạn nhân | 3.0 |
+| A4-P2 | 4 | SELFIE · MCU | Hell Creek Trail | **Mới.** Nora nép sát gốc cây tránh tàn lửa, mặt ám khói, nhìn theo hướng T. rex vừa chạy mất | "Even the king is running. / Nobody owns this valley anymore." | 11 | 1 | Không ai bất tử · Rule 51 | 3.5 |
 | A4-11 | 4 | MACRO · ECU | Hell Creek Waterhole | Hạt thủy tinh nóng cắm xuống bùn quanh mũi giày đang chạy, khói mảnh bốc lên | — | 0 | 1 | Nhịp ngắn nhất phim | 3.0 |
 | A4-12 | 8 | SELFIE · MCU | Hell Creek Waterhole | Nora ngồi thụp sau thân cọ đổ giữa bãi trống, trời đỏ, hạt sáng vạch nền | "It's raining glass, hot glass, everywhere. / I lost them, I can't see the herd. / Where do I go?" | 18 | 1,2 | **Đáy Act 4** (all is lost) | 7.0 |
 | A4-13 | 4 | POV · WS | Con Non | Con Non tách đàn lao qua trước máy cách 5 m — không theo bụi đàn về rừng phía bắc mà chúi xuống dốc về phía bờ lạch | — | 0 | 2,3 | Hai hướng mở ra | 3.5 |
-| A4-14 | 8 | SELFIE · MCU | Hell Creek Waterhole | **Mới (F5) — khủng hoảng tĩnh.** Nora vẫn ngồi thụp sau thân cọ đổ. 0–3s nhìn sang trái (bụi đàn vào rừng phía bắc); 3–6s nhìn sang phải (Con Non xuống lạch cá sấu); 6–8s nhìn thẳng máy, quyết | "Herd's going north, into the trees. / The little one's going down, toward the crocodiles. / He hasn't been wrong yet. Follow the kid." | 22 | 2,3,4 | **Khủng hoảng:** rừng sẽ cháy vs lạch cá sấu — cô chọn lắng nghe | 7.0 |
+| A4-14 | 8 | SELFIE · MCU | Hell Creek Waterhole | Nora vẫn ngồi thụp sau thân cọ đổ. 0–3s nhìn sang trái (bụi đàn vào rừng phía bắc); 3–6s nhìn sang phải (Con Non xuống lạch cá sấu); 6–8s nhìn thẳng máy, quyết | "Herd's going north, into the trees. / The little one's going down, toward the crocodiles. / He hasn't been wrong yet. Follow the kid." | 22 | 2,3,4 | **Khủng hoảng:** rừng sẽ cháy vs lạch cá sấu — cô chọn lắng nghe | 7.0 |
 | A4-15 | 4 | POV · MS | Hell Creek Trail | Chạy theo Con Non trên lối mòn dốc xuống lạch, ánh đỏ, khung giật | — (thở) | 0 | 4 | Bài học Act 2 dùng lần cuối | 3.0 |
 | A4-16 | 8 | OTS · MS | Hell Creek Bank | Nora quỳ trên mép vách đất tiền cảnh; dưới lòng lạch, Con Non đang chui vào **đúng cái hốc ở A1-06** | "That hollow under the bank. / The one I skipped this morning because of the crocodiles. / He's already in. Go, go." | 20 | 3,4 | **Payoff gieo A1-06** | 7.0 |
 | A4-17 | 4 | POV · WS | Hell Creek Bank | Trượt xuống vách đất vào lòng lạch; miệng hốc ngay trước mặt, đuôi Con Non khuất vào; bên kia lạch xác Edmontosaurus bốc khói | — | 0 | 4 | Về đúng nơi bắt đầu | 3.5 |
@@ -474,6 +504,7 @@ Mỗi dòng trả lời 4 câu: máy ở đâu · frame 0 có gì (Rule 53: vậ
 | A1-08 | Ngang ngực đứng yên, rồi lia | Bức tường dương xỉ + cọ; mép phải là miệng lối mòn | Máy lia trái→phải, chậm | — |
 | A1-09 | Nhìn thẳng xuống từ 1 m | Dấu chân tròn, nước đục; mũi giày phải đặt cạnh | Nước trong dấu khẽ gợn | Giày rút ra mép dưới ~6.5s |
 | A1-10 | Giơ sau vai trái Nora (OTS) | Nora 1/3 trái tiền cảnh sau dương xỉ; đàn 40 m hậu cảnh phải | Đàn gặm, dịch rất chậm trái→phải · Nora tĩnh | — |
+| A1-S1 | Tay phải giơ ngang mặt | Nora thì thầm cười; đàn gặm chậm sau lưng | Tĩnh · mắt Nora liếc đàn tự tin | — |
 | A1-11 | Ngang ngực, bước ra khỏi dương xỉ | Bò Đực 25 m, đang cúi gặm | Bò Đực ngẩng đầu, xoay mặt về máy · máy tiến 2 bước rồi dừng | — |
 | A1-12a | Ngang ngực, đứng yên | Bò Đực 15 m, đối diện, diềm đỏ, đầu cúi | Bò Đực lao thẳng về máy ~3 m/s, 3 bước | Không. Kết: Bò Đực giữa bước lao, còn ~8 m |
 | A1-12b | Ngang ngực, cùng vị trí 12a | Bò Đực giữa bước lao, ~8 m (= cuối 12a) | 0–2s khựng lại cách 6 m, chân trước trượt bùn · 2–4s cào chân 2 lần, bùn văng về máy · máy giật lùi nửa bước | Không. Kết: máy đang ngả ra sau |
@@ -501,6 +532,12 @@ Mỗi dòng trả lời 4 câu: máy ở đâu · frame 0 có gì (Rule 53: vậ
 | A2-12c | Như 12a | Thân sau + đùi giữa khe (= cuối 12b) | 0–2s đuôi lướt qua · 2–4s lối mòn trống, dương xỉ lắc rồi đứng | Đuôi ra mép trái ~2s |
 | A2-13 | Nhìn xuống tay | Tay trái ép phẳng trên bùn; vết chân nhỏ có nước bên cạnh | Nước rung theo nhịp bước ~1 lần/s, yếu dần · tay nhấc ở ~4.5s | — |
 | A2-14 | Tay phải giơ thấp sát gỗ | Nora nằm sấp sau gỗ | Quay mặt vào máy | — |
+| A2-R1 | Sát đất sau khúc gỗ | Rừng dương xỉ rìa lối mòn, hai dải chuyển động thấp ở mép phải cách 20 m | Dương xỉ rẽ chậm · hai cặp chân có vuốt liềm bước êm theo vệt T. rex, đầu rướn ngửi | Hai Acheroraptor khuất sau dương xỉ ~5s |
+| A2-R2a | Ngang ngực người ngồi | Nora nhìn ra bãi; Con Non ở mép ngoài cùng đàn đang ăn lá dương xỉ | 0–2s một bóng lông vũ lướt nhanh sát bụi rậm · 2–4s Con Cái Già khịt mũi gầm trầm, đàn giật mình ngẩng đầu | Kết: đàn ngẩng đầu |
+| A2-R2b | Ngang ngực, cùng vị trí 2a | Đàn ngẩng đầu (= cuối 2a) | 0–2s Con Cái Già và Bò Đực xoay sừng hướng ra ngoài · 2–4s đàn khép vòng cung che Con Non vào giữa, chân giẫm rầm rầm | Kết: vòng sừng khép chặt |
+| A2-R2c | Thấp sát đất, bò nhanh | Vòng chân khổng lồ và đuôi gai của đàn (= cuối 2b) | 0–2s Nora bò rạp dưới sườn Con Cái Già · 2–4s Nora cuộn người nép sát chân trụ khổng lồ | Kết: Nora nép sát chân Con Cái Già |
+| A2-R3 | Ngửa nhẹ lên từ khe chân | Vòm ngực Con Cái Già cao 3 m; hai raptor lượn quanh ngoài rìa cách 10 m | Hai raptor rít the thé, nhảy lùi khi sừng quét · Con Cái Già dộng chân cản | Raptor lùi ra rìa ~5s |
+| A2-R4 | Tay phải giơ thấp ngang ngực | Nora ngồi ép lưng vào gót chân Con Cái Già | Nora thì thầm thở dốc; chân voi khổng lồ tĩnh như cột đá | — |
 | A2-15 | Kê cách 2 m | Nora ngồi ngang eo; Bò Đực 20 bước hậu cảnh | Bò Đực ngẩng, liếc, cúi gặm tiếp | — |
 | A2-16 | Nhìn xuống | Hai tay cầm mai rùa, một lóng nước trong lòng | Nghiêng mai trái–phải, nước sóng sánh | — |
 
@@ -512,6 +549,11 @@ Mỗi dòng trả lời 4 câu: máy ở đâu · frame 0 có gì (Rule 53: vậ
 | A3-02 | Ngang ngực, đang chạy | Đàn đi kiệu 20 m phía trước, bụi | Đàn ra xa ~3 m/s · máy ~2.5 m/s, khoảng cách giãn dần | — |
 | A3-03 | OTS, đi bộ nhanh | Nora tiền cảnh phải; đàn 50 m hậu cảnh | Nora đi về phía đàn, cùng chiều máy · đàn nhỏ dần | — |
 | A3-04 | Nhìn xuống bước chân | Dấu chân tròn có nước | Giày phải bước vào, nước gợn | Giày ra mép trên ~3s |
+| A3-D1 | Ngang ngực, trèo lên gò đất | Vạt rừng dương xỉ thưa; đàn Edmontosaurus 60 m phía trước đang ăn lá | Đàn mỏ vịt ăn lá chậm rãi · Nora nhìn theo | — |
+| A3-D2a | Ngang ngực, đứng | Đàn mỏ vịt cách 40 m | 0–2s đất khẽ rung · 2–4s con đầu đàn rống rỗng loa kèn, cả đàn giật mình quay ngoắt | Kết: đàn quay đầu |
+| A3-D2b | Ngang ngực, cùng vị trí 2a | Cả đàn quay đầu (= cuối 2a) | 0–2s đàn mỏ vịt chồm dậy phóng nước đại 4 chân · 2–4s đàn lao ầm ầm cắt ngang lối mòn, bụi mù mịt | Kết: đàn phóng ngang |
+| A3-D2c | Thấp sát đất, ngã nhào | Bụi mù mịt và chân mỏ vịt phi qua cách 5 m (= cuối 2b) | 0–2s Nora nhảy thụp xuống rãnh đất khô · 2–4s Nora áp chặt lòng bàn tay trái xuống đất nứt rung bần bật | Kết: tay áp đất rung |
+| A3-D3 | Nhìn xuống tay | Bàn tay trái áp phẳng trên bùn nứt khô; mặt đất rung bần bật | Đất rung từng nhịp móng guốc nặng nề · bụi lắng chậm | Tay rút lên ~5s |
 | A3-05 | Ngang ngực, trèo xuống | Bờ sỏi lở; bãi bùn phía dưới; đàn đang khuất sau rặng cây xa | Sỏi lăn xuống · máy hạ dần | Đàn khuất hẳn ~2.5s |
 | A3-06a | Nhìn xuống chân | Mai rùa đầy treo hông trái; phiến đá phẳng dưới chân | 0–2s giày phải đặt lên đá trơn · 2–4s trượt, người chao, mai văng ra xa hông theo dây | Không. Kết: mai lủng lẳng xa hông |
 | A3-06b | Nhìn xuống chân, cùng 6a | Mai lủng lẳng xa hông (= cuối 6a) | 0–2s dây sợi cọ đứt · 2–4s mai rơi thẳng xuống đá, nứt đôi, nước bắn | Không. Kết: hai nửa mai trên đá |
@@ -526,8 +568,14 @@ Mỗi dòng trả lời 4 câu: máy ở đâu · frame 0 có gì (Rule 53: vậ
 | A3-13 | Ngang ngực, đứng rồi tiến | Hố nước; đàn trong nước | Đàn uống · máy tiến chậm | — |
 | A3-14 | Kê trên tảng đất cao ở mép hố, cách Nora 4 m | Nora đứng mép trái; Bò Đực ở mép nước bên phải cách cô 8 m, diềm đỏ, đầu hướng về cô; đàn uống hậu cảnh | 0–3s Nora dừng · 3–6s xoay vai nghiêng 45°, cụp mắt · 6–8s diềm Bò Đực nhạt dần, nó cúi uống; Nora bước 1 bước | — |
 | A3-15 | Kê trên tảng đất, cách 2 m | Nora quỳ ngang eo ở mép nước | Hai tay vốc nước đưa lên miệng | — |
+| A3-W1 | Cúi sát mép nước hố | Nước nâu đục; vạt bùn nứt ngập mút | Hai bọt khí to ục lên từ bùn sâu; một gờ sừng mắt cá sấu Borealosuchus nổi im lìm | Gờ mắt chìm chậm không sủi bọt · gờ mắt lặn mất ~4s |
+| A3-W2a | Cúi sát mép nước | Borealosuchus rình ngầm dưới nước nông | 0–2s Nora giật tay lùi lại · 2–4s Con Non bước xăm xăm xuống nước | Kết: Con Non sát mép nước |
+| A3-W2b | Ngang ngực, cùng vị trí 2a | Con Non sát mép nước (= cuối 2a) | 0–2s Bò Đực dậm chân sầm sầm, ngẩng đầu gầm trầm đuổi · 2–4s mõm cá sấu quẫy đuôi lặn sâu trốn mất | Kết: cá sấu lặn mất |
+| A3-W3 | Tay phải giơ ngang mặt | Nora quỳ mép bùn; Bò Đực đứng sừng sững canh gác hậu cảnh | Tĩnh · nước hố phẳng trở lại | — |
 | A3-16 | Giơ sau vai (OTS) | Nora tiền cảnh trái; Con Non trong nước cách 4 m | Con Non lội tới, dừng cách một sải tay | — |
 | A3-17 | Tay phải giơ ngang mặt | Nora; đàn sau lưng | Tĩnh suốt 10s · nước chảy từ mõm thú | — |
+| A3-Q1 | Kê ngang gối, cách 1.5 m | Hoàng hôn hổ phách; Nora ngồi tựa gò đất; Con Non ngủ vùi, đầu tựa chân Nora | Con Non thở đều, mắt nhắm · Nora nhẹ nhàng vuốt nhẹ vảy mõm | — |
+| A3-Q2 | Lia từ chân lên bầu trời chiều | Chân Con Non và Nora ở đáy khung; trời hổ phách sẫm | Một đàn dực long nhỏ vỗ cánh gấp gáp bay thấp về hướng tây nam tránh bão | Đàn dực long ra mép trái ~6s |
 | A3-18 | Ngang ngực | Đàn đang uống | Đồng loạt ngừng, ngẩng · tĩnh tuyệt đối | — |
 
 ### Act 4
@@ -549,6 +597,10 @@ Mỗi dòng trả lời 4 câu: máy ở đâu · frame 0 có gì (Rule 53: vậ
 | A4-09 | Ngang ngực, chạy | Đàn chạy qua cách 10 m | Đàn trái→phải ~5 m/s về rặng cây bắc · máy chạy theo chậm hơn | Đàn ra mép phải ~2.5s |
 | A4-10 | Ngang ngực, chạy | Bãi trống; trời cam-đỏ | Hạt sáng vạch chéo trên→dưới · máy tiến ~3 m/s | Hạt chạm đất là tắt |
 | A4-11 | Nhìn xuống giày đang chạy | Bùn, mũi giày | Hạt cắm xuống quanh giày, khói mảnh bốc thẳng | — |
+| A4-P1 | Ngang ngực, đang chạy | Khói mù mịt, tàn lửa đỏ; một thân cọ cổ thụ cháy rực gãy đổ sập chắn ngang | Cây cọ đổ ầm xuống đất, than hồng nổ lách tách tóe lửa · Nora khựng lại | — |
+| A4-T1 | Ngang ngực, khựng lại | Cây cọ cháy chắn ngang (= cuối P1) | 0–2s đất chấn động dữ dội, cành cây gãy răng rắc · 2–4s đầu một con T. rex khổng lồ lao vọt ra từ màn khói | Kết: đầu T. rex xé khói |
+| A4-T2 | Ngang ngực, cùng vị trí T1 | T. rex khổng lồ xé khói (= cuối T1) | 0–2s T. rex phi nước đại sầm sập vượt qua cây cọ, không thèm liếc Nora · 2–4s chân khổng lồ dẫm nát thân cọ cháy, đuôi quật gió | T. rex ra mép trái ~3.5s |
+| A4-P2 | Tay phải giơ ngang mặt | Nora nép sát vách đất mù mịt khói; trán ám muội than | Nora thở dốc không ra tiếng; mắt trợn tròn nhìn theo hướng T. rex chạy | — |
 | A4-12 | Tay phải giơ thấp | Nora ngồi thụp sau thân cọ đổ | Hạt sáng vạch nền · Nora thở dốc | — |
 | A4-13 | Ngang ngực người ngồi | Bãi trống; bụi đàn xa ở mép trái (bắc) | Con Non vào từ trái ~4 m/s, lao qua cách 5 m, chúi xuống dốc về phía phải-dưới (lạch) | Con Non ra mép phải ~2.5s |
 | A4-14 | Tay phải giơ thấp | Nora ngồi thụp sau thân cọ đổ; trời đỏ | 0–3s quay đầu nhìn trái · 3–6s nhìn phải · 6–8s nhìn thẳng máy, gật · hạt sáng vạch nền | — |
@@ -622,8 +674,9 @@ Nguồn: `skills/character-scene-design-skills-main/.agents/skills/scene-design/
 | T1 | A1-10 → A1-14 | Đàn ở bãi cách 40 → 30 m; từ A1-12c có một mảng dương xỉ bị đè bẹp chỗ Nora ngã | Ánh sáng L2 |
 | T2 | A2-01 → A2-09 | Nắng lên gắt; đàn quanh vũng bùn; từ A2-07 Nora có bùn đỏ trên cẳng tay và cổ, cầm tàu lá cọ | Đàn dịch chỗ trong bãi |
 | T3 | A2-10 → A2-14 | Đàn đứng sững; tàu lá cọ bỏ lại cạnh khúc gỗ; từ A2-12b có **một hàng dấu chân ba ngón khổng lồ** của T. rex dọc lối mòn | Dấu T. rex ở lại vĩnh viễn |
-| T4 | A2-15 → A3-04, EST-02 | Đàn gặm lại; dấu T. rex còn; giữa trưa đến A2-16; từ Act 3 ánh L4; đàn rời đi theo lối mòn từ A3-01 | Bụi trên lối mòn |
-| T5 | A4-15 | Trời đỏ, lối mòn trống, dấu chân đàn bị giẫm nát, hạt sáng rơi | — |
+| T3.5 | A2-R1 → A2-R4 | Hai Acheroraptor rình mép dương xỉ theo vệt T. rex; đàn Triceratops khép vòng sừng quanh Con Non; Nora nép sát chân Con Cái Già; dương xỉ rìa lối mòn bị gạt bẹp thêm | Raptor rút lui |
+| T4 | A2-15 → A3-04, EST-02 | Đàn gặm lại; dấu T. rex còn; giữa trưa đến A2-16; từ Act 3 ánh L4; đàn rời đi theo lối mòn từ A3-01; từ A3-D2 một dải dương xỉ bị đàn Edmontosaurus cày nát ngang lối mòn | Bụi trên lối mòn |
+| T5 | A4-P1 → A4-P2, A4-15 | Cây cọ cổ thụ cháy gãy sập chắn ngang lối mòn; thân cọ bị T. rex phi nước đại giẫm nát vỡ vụn; khói mù mịt, tàn than nổ đỏ; dấu chân đàn bị giẫm nát, hạt sáng rơi | — |
 
 ### 11.3 Hell Creek Waterhole
 
@@ -644,7 +697,7 @@ Nguồn: `skills/character-scene-design-skills-main/.agents/skills/scene-design/
 | Bậc | Clip | Trạng thái | Được phép đổi |
 |---|---|---|---|
 | W0 | A3-05 → A3-12b | Bãi bùn trống; từ A3-06b **hai nửa mai rùa trên phiến đá** (Nora cầm lên ở A3-07, bỏ lại từ A3-08) cạnh một vệt ướt đang khô; dấu chân đàn trên bùn nứt; Quetzalcoatlus ở giữa bãi đến A3-12b | Vệt ướt khô dần |
-| W1 | A3-13 → A3-18, EST-03 | Đàn trong và quanh hố; Bò Đực ở mép nước từ A3-14; vết đầu gối Nora ở mép nước từ A3-15; ánh hổ phách | Ánh đồng đậm dần |
+| W1 | A3-13 → A3-18, EST-03 | Đàn trong và quanh hố; Bò Đực ở mép nước từ A3-14; vết đầu gối Nora ở mép nước từ A3-15; gờ mắt Borealosuchus lặn mất ở mép nước từ A3-W2b; Con Non ngủ tựa chân Nora ở A3-Q1; đàn dực long bay qua ở A3-Q2; ánh hổ phách | Ánh đồng đậm dần |
 | W2 | A4-01 → A4-06 | Đàn đứng sững; từ A4-03c **mỗi vật có hai bóng**; từ A4-04 quầng cam ở chân trời đông nam | Quầng cam phồng lên |
 | W3 | A4-07a → A4-14 | Từ A4-07b cây thông chết **đã đổ** ngang mép nước; nước hố bị sóng tạt lên vành bùn; bùn bị đàn giẫm nát; từ A4-10 trời đỏ, hạt thủy tinh rơi; từ A4-09 đàn đã đi về phía bắc; từ A4-13 Con Non đã xuống lạch | Thêm vết hạt, không bớt |
 
@@ -660,6 +713,7 @@ Mọi dấu vết đều **thêm dần, không bao giờ biến mất** giữa c
 | A2-07 → A2-11 | Tàu lá cọ che đầu | Bỏ lại ở A2-11 |
 | A3-07 | Tay trái cầm hai nửa mai rùa | Bỏ lại trên phiến đá từ A3-08 |
 | A4-07c | Bùn xám nâu trên má trái | Không mất |
+| A4-P2 | Vệt muội than đen xám ám trán và gò má phải sau khi nép cọ cháy | Không mất |
 | A4-18 | Bùn ướt dày trên cẳng tay và cổ | Không mất |
 | A4-19 → hết | Tàu lá cọ sũng nước trên vai/người | Không mất |
 | A5-03 → hết | Tro xám trên vai, tóc, cẳng tay, dày dần | Không mất |
@@ -670,14 +724,18 @@ Mọi dấu vết đều **thêm dần, không bao giờ biến mất** giữa c
 
 **Khó nhất trước** (production-lessons). Trong một chuỗi: sinh `a` trước, chỉ sinh `b` khi `a` đạt (tư thế cuối của `a` là `chain.opens_on` của `b`). Hỏng mắt xích nào sinh lại **đúng mắt xích đó**. Một mắt xích hỏng 2 lần → dừng, sửa kịch bản trước khi sinh tiếp.
 
-1. **Chuỗi A1-12** a → b → c — Bò Đực dọa-xông giả.
-2. **Chuỗi A2-12** a → b → c — T. rex đi ngang.
-3. **Chuỗi A4-07** a → b → c — sóng địa chấn.
-4. **MASTER-GLASS** (10s) — đồng thời là cold open.
-5. **Chuỗi A4-03** a → b → c — Shadow-flip.
-6. **Chuỗi A3-06** a → b → c — vỡ mai rùa.
+1. **Chuỗi A1-12** a → b → c — Bò Đực dọa-xông giả (4s ×3).
+2. **Chuỗi A2-12** a → b → c — T. rex đi ngang qua khe khúc gỗ (4s ×3).
+3. **Chuỗi A2-R2** a → b → c — Đàn khép vòng bảo vệ Con Non, Nora chui chân Con Cái Già né Raptor (4s ×3).
+4. **Chuỗi A4-07** a → b → c — Sóng địa chấn và cây thông chết đổ (4s ×3).
+5. **Chuỗi A4-T1 / A4-T2** — T. rex khổng lồ phi nước đại xé khói vượt thân cọ cháy (4s ×2).
+6. **MASTER-GLASS** (10s) — Đồng thời là cold open giông hạt thủy tinh rực đỏ.
+7. **Chuỗi A4-03** a → b → c — Shadow-flip (chớp trắng và bóng đổ kép) (4s ×3).
+8. **Chuỗi A3-D2** a → b → c — Đàn Edmontosaurus hoảng loạn chạy cắt ngang (4s ×3).
+9. **Chuỗi A3-06** a → b → c — Vỡ mai rùa trên phiến đá (4s ×3).
+10. **Chuỗi A3-W2** a → b — Borealosuchus rình và Bò Đực dậm chân xua đuổi (4s ×2).
 
-Sau 6 mục này (16 lần sinh), sinh theo thứ tự Act.
+Sau 10 cụm này (27 lần sinh), sinh theo thứ tự Act: Act 1 → Act 2 → Act 3 → Act 4 → Act 5 → Drone/EST.
 
 **Trước khi gửi:** PATCH `{"duration": <4|6|8|10>}` cho từng scene đúng cột `Dur` §9 — thiếu hoặc sai sẽ im lặng thành 10s (CLAUDE.md "Since Flow moved").
 
