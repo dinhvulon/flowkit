@@ -137,6 +137,13 @@
 - Tiêu đề: "I Time Travelled to the Last 12 Hours of the Dinosaurs"; thoại tiếng Anh → SEO tiếng Anh (Rule 20)
 - Không timestamp, không chapter cho vlog POV
 
+## 8 Tài sản hình ảnh & Outfit Bible (Visual & Material Assets)
+- **Image Material:** `cretaceous_vlog` (xem chi tiết `script.md` §3). Phim tài liệu thô, ISO cao, cấm 100% CGI / 3D render.
+- **Trang phục Nora (`outfit.json`):** Tunic vải lanh thô dệt tay khoét cổ V sâu buộc dây da, quần da thuộc co giãn, bốt da cao cổ, đai da đeo bao nước mai rùa hông trái.
+  - File cấu hình prompt: `output/hell-creek-66ma/outfit.json` (chứa đầy đủ `edit_prompt` trên `nora_body_v3_clean.jpg` và `image_prompt`).
+  - Khóa tỷ lệ Q1: 178 cm, 3 panel 16:9, đồng hồ cát quyến rũ ngực đầy eo thon chân dài.
+- **Bộ Prompt Reference (`ref_prompts.json`):** File `output/hell-creek-66ma/ref_prompts.json` gồm 8 tài sản (Nora, Nora Body, Hell Creek Bank, Hell Creek Trail, Hell Creek Waterhole, Bò Đực, Con Non, T. rex) đã được khóa chất liệu và kiểm toán quang học.
+
 ## Câu hỏi mở (đã áp mặc định, chờ user xác nhận)
 1. Thời lượng: nâng lên ~10 phút (10:08 / 117 lượt sinh, 6 cụm tình tiết mới) → **đã áp**
 2. Premise / controlling idea ở §1 → **giữ nguyên**
@@ -151,5 +158,6 @@
 - 2026-10-12: Áp 4 mặc định cho câu hỏi mở để viết bản 2 (91 lượt sinh, 8:17)
 - 2026-10-12: **Nâng thời lượng lên ~10:00 (đo thật 10:08, 117 lượt sinh)** theo `sw-workflow` và `sw-story-structure`: từ chối giải pháp kéo giãn clip (tránh khoảng lặng vô nghĩa), chọn giải pháp thêm 6 cụm tình tiết mới thay đổi tình thế của Nora (A1-S1, A2-R vòng tròn đàn, A3-D đàn mỏ vịt, A3-W cá sấu hố nước, A3-Q giờ thứ 11, A4-P/T T. rex chạy loạn). Phân bổ lại 起承转合: Thừa chiếm 51%, Hợp 11%. Chạy lại 5 bảng chẩn đoán đạt chuẩn.
 - 2026-10-12: **Khóa cứng nguyên tắc phân định Chuỗi 4s vs Chuyển cảnh** (User lock): Chuỗi 4s (`a/b/c`) bắt buộc là MỘT shot liền mạch, giữ nguyên 100% vị trí máy, cỡ cảnh, góc quay, câu Setting, ánh sáng và ref, CẤM TUYỆT ĐỐI chuyển cảnh / đổi góc giữa các mắt xích; cảnh phức tạp CÓ CHUYỂN CẢNH / ĐỔI GÓC bắt buộc tách Scene ID riêng biệt (4s/6s) nối bằng kỹ thuật dựng phim, cấm gom vào chuỗi `a/b/c`. Đã lock vào `CLAUDE.md` Rule 49 (0), `production-lessons.md` Bài 71, `prompt-lock.md` dòng 31 và `SKILL.md`.
+- 2026-10-12: **Khóa tài sản Outfit & Ref Prompts ngay từ Pre-Production** (User lock): Sinh file `output/hell-creek-66ma/outfit.json` và `output/hell-creek-66ma/ref_prompts.json` ngay giai đoạn Tiền kỳ (story-bible & script), cấm nhảy cóc sang prompt video khi chưa có file trang phục và bộ prompt reference.
 
-Bước tiếp: user duyệt storyboard bản 3 (§9 trong script.md) và các cập nhật trong story-bible.md → giai đoạn 5 viết video_prompt JSON + lint → cổng Rule 29 (hỏi trước khi sinh bất cứ thứ gì).
+Bước tiếp: user duyệt storyboard bản 3 (§9 trong script.md), file `outfit.json` và `ref_prompts.json` → giai đoạn sinh ảnh reference → sinh video.

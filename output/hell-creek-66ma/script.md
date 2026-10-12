@@ -89,18 +89,22 @@ OUTFIT LOCK: Nora wears the exact field outfit shown in the Nora Body reference 
 [ID-LOCK] Nora keeps her face and hair from the Nora face sheet, and her build and clothing from the Nora Body sheet (which shows her full body dressed in this field outfit). Her face, hair colour, hairline, freckles, eye colour and body proportions are identical in every frame and never drift.
 ```
 
-### 2.5 Tài sản cố định
+### 2.5 Tài sản cố định (SSOT: `outfit.json` & `ref_prompts.json`)
 
-| Asset | Nguồn | Ghi chú |
+Toàn bộ prompt của tài sản bên dưới đã được nghiên cứu chất liệu (`cretaceous_vlog`) và soạn thảo hoàn chỉnh tại:
+- **`outfit.json`**: Cấu hình `edit_prompt` và `image_prompt` mặc trang phục thời kỳ lên `uploads/nora_body_v3_clean.jpg`.
+- **`ref_prompts.json`**: Toàn bộ prompt ảnh bối cảnh và sinh vật chuẩn 16:9, sạch bóng người theo Rule 34.
+
+| Asset | Nguồn | Ghi chú & File SSOT |
 |---|---|---|
-| `Nora` (mặt + tóc) | `uploads/nora_main.jpg` (đã có) | Tái dùng, không sinh lại |
-| `Nora Body` (sheet 3 panel ĐÃ MẶC outfit) | `EDIT_CHARACTER_IMAGE` **1 lần** từ `uploads/nora_base_body_clean.jpg` | **Không chain edit.** Xóa logo → upload lại → UUID sạch (Rule 28) |
-| `Hell Creek Bank` (bãi sỏi ven sông + vách đất có hốc) | ref bối cảnh 16:9 | Ref 3 của 16 lần sinh |
-| `Hell Creek Trail` (lối mòn rừng cọ) | ref bối cảnh 16:9 | Ref 3 của 21 lần sinh |
-| `Hell Creek Waterhole` (hố nước) | ref bối cảnh 16:9 | Ref 3 của 32 lần sinh |
-| `Bò Đực` | ref sinh vật 16:9 (Rule 5), dấu nhận diện §2.6 | Ref 3 của 8 lần sinh |
-| `Con Non` | ref sinh vật 16:9, dấu nhận diện §2.6 | Ref 3 của 11 lần sinh |
-| `T. rex` | ref sinh vật 16:9, dấu nhận diện §2.6 | Ref 3 của chuỗi A2-12 (3 lần sinh) |
+| `Nora` (mặt + tóc) | `uploads/nora_main.jpg` (đã có) | Tái dùng, không sinh lại (0 credit) |
+| `Nora Body` (sheet 3 panel ĐÃ MẶC outfit) | `EDIT_CHARACTER_IMAGE` **1 lần** từ `uploads/nora_body_v3_clean.jpg` | Xem prompt tại `output/hell-creek-66ma/outfit.json`. Xóa logo → upload lại → UUID sạch (Rule 28) |
+| `Hell Creek Bank` (bãi sỏi ven sông + vách đất có hốc) | ref bối cảnh 16:9 | Prompt chi tiết trong `ref_prompts.json`. Ref 3 của 16 lần sinh |
+| `Hell Creek Trail` (lối mòn rừng cọ) | ref bối cảnh 16:9 | Prompt chi tiết trong `ref_prompts.json`. Ref 3 của 21 lần sinh |
+| `Hell Creek Waterhole` (hố nước) | ref bối cảnh 16:9 | Prompt chi tiết trong `ref_prompts.json`. Ref 3 của 32 lần sinh |
+| `Bò Đực` | ref sinh vật 16:9 (Rule 5), dấu nhận diện §2.6 | Prompt chi tiết trong `ref_prompts.json`. Ref 3 của 8 lần sinh |
+| `Con Non` | ref sinh vật 16:9, dấu nhận diện §2.6 | Prompt chi tiết trong `ref_prompts.json`. Ref 3 của 11 lần sinh |
+| `T. rex` | ref sinh vật 16:9, dấu nhận diện §2.6 | Prompt chi tiết trong `ref_prompts.json`. Ref 3 của chuỗi A2-12 (3 lần sinh) |
 
 **Q1 — Proportion lock trước khi sinh `Nora Body`** (cổng 5.5): chốt thành câu chữ trong prompt ảnh Body —
 `net height 178 cm; head height = 1/7.6 of total; shoulder width = 1/4.1 of height; leg length from hip crease to floor = 0.54 of height; foot baseline level across all three panels; identical camera distance and identical eye-level in all three panels.`

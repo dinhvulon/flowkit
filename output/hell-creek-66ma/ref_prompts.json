@@ -1,0 +1,76 @@
+{
+  "project": "hell-creek-66ma",
+  "material": {
+    "id": "cretaceous_vlog",
+    "name": "Cretaceous Field Documentary",
+    "style_instruction": "Raw handheld natural-history field footage shot on location in a hot humid Late Cretaceous floodplain forest. Unprocessed documentary look: true-to-life colours, no grade, no colour filter, mild high-ISO grain crawling in the shadows, highlights that clip to flat white where the sun hits, shallow-depth background falloff with a soft bokeh that never looks painted. Subtropical haze softens everything past thirty metres; sweat, humidity and fine airborne grit sit in the air. Extinct animals are rendered to current palaeontological reconstruction standards with real animal skin physics: slack dewlaps, scar tissue, insect bites, caked red mud on the belly and feet, flies, laboured breathing that visibly moves the ribcage. Everything carries the weight and imperfection of real wildlife footage recorded by one person who is physically present and in danger.",
+    "negative_prompt": "NOT a 3D render, NOT CGI, NOT a video-game cinematic, NOT a movie trailer, NOT concept art, NOT matte painting, NOT colour-graded teal-and-orange, NOT HDR tone-mapped, NOT a slow-motion hero shot, NOT a smooth flying aerial move, NOT a snowy landscape, NOT a desert, NOT a volcano erupting in the foreground, NOT mountains, NOT clean studio lighting, NOT plastic or rubbery skin, NOT oversaturated, NOT sharpened, NOT any modern manufactured object, NOT any on-image interface, icon, label, watermark or text, strictly NO scale humans, NO measuring rods, NO split screen unless requested.",
+    "lighting": "Hot humid subtropical daylight filtered through palm and conifer canopy; hard dappled patches on the mud, heavy green bounce, thick haze in the depth, highlights clipping to white, no artificial fill"
+  },
+  "reference_entities": [
+    {
+      "entity_name": "Nora",
+      "type": "character_face",
+      "source_file": "uploads/nora_main.jpg",
+      "action": "UPLOAD_ONLY",
+      "description": "Nora face and hair close-up. Reused from uploads/nora_main.jpg, no generation needed (0 credit cost)."
+    },
+    {
+      "entity_name": "Nora Body",
+      "type": "character_sheet_turnaround",
+      "aspect_ratio": "16:9",
+      "action": "GENERATE_TURNAROUND_SHEET",
+      "source_base": "uploads/nora_base_body_clean.jpg",
+      "prompt": "16:9 character turnaround model sheet showing 3 full-body views (front view, three-quarter view, side profile view) of Nora, a tall statuesque 26-year-old woman (178 cm / 5'10\" tall) with a voluptuous hourglass figure, exceptionally large full heavy natural bust, tiny narrow waist, and wide curvaceous hips. Fully dressed from head to toe in her tailored Late Cretaceous survival field outfit: a durable olive-tan linen short-sleeve survival tunic with a deep laced V-neckline accentuating her bust, fitted olive-brown leather trekking pants, and tall lace-up supple leather field boots. Across her chest is a slim leather utility harness carrying a 22 cm turtle shell water flask at her left hip. Auburn hair styled in a practical messy bun with stray strands framing her face. PROPORTION LOCK: net height 178 cm; head height = 1/7.6 of total; shoulder width = 1/4.1 of height; leg length from hip crease to floor = 0.54 of height; foot baseline level across all three panels; identical camera distance and identical eye-level in all three panels. Plain neutral background, natural documentary lighting, photorealistic skin texture with subtle sweat and light freckles. Strictly NO modern phones, NO modern logos, NO shearling collars, NO extra fur hoods.",
+      "negative_prompt": "NOT flat-chested, NOT skinny, NOT petite, NOT modern synthetic clothes, NOT shearling collar, NOT fur hood, NOT gym clothes, NOT 3D CGI render, NOT cartoon, NOT anime, NOT oversaturated, NOT inconsistent height between panels."
+    },
+    {
+      "entity_name": "Hell Creek Bank",
+      "type": "location",
+      "aspect_ratio": "16:9",
+      "action": "GENERATE_LOCATION",
+      "prompt": "One single unified natural history documentary landscape photograph of Hell Creek riverbank, 66 million years ago. A broad muddy creek with slow-moving silty brown water gently lapping against a damp gravel bar and exposed red mudbanks. In the background rises a steep earthen cliff overgrown with massive tangled roots of Sabalites fan palms and weeping tree ferns. A sheltered natural hollow between thick gnarled palm roots sits above the waterline. Warm humid morning river mist drifts low over the water surface. Filtered golden dawn sunlight breaks through the subtropical palm canopy creating soft dappled highlights on wet pebbles and clay. Strictly ONE unified photograph, strictly NO humans, NO people, NO scale figures, NO measuring rods, NO split screen.",
+      "negative_prompt": "NOT a 3D render, NOT CGI, NOT modern buildings, NOT plastic trash, NOT snow, NOT desert, NO humans, NO people, NO scale bars, NO split screen, NO artificial lighting."
+    },
+    {
+      "entity_name": "Hell Creek Trail",
+      "type": "location",
+      "aspect_ratio": "16:9",
+      "action": "GENERATE_LOCATION",
+      "prompt": "One single unified documentary landscape photograph of a primitive animal trail through the dense Late Cretaceous subtropical forest of Hell Creek, 66 million years ago. A churned red clay pathway trodden wide by megafauna, bordered by giant ancient ferns, wild ginger ground cover, and towering Sabalites palms intermingled with tall Araucaria conifer trunks. Fallen decaying logs covered in thick moss and primitive fungi flank the path. Warm humid air with atmospheric haze and dust motes illuminated by beams of morning sunlight slanting through the canopy. Strictly ONE unified photograph, strictly NO humans, NO people, NO scale figures, NO measuring rods, NO split screen.",
+      "negative_prompt": "NOT a 3D render, NOT CGI, NOT modern paths, NOT asphalt, NOT tire tracks, NO people, NO humans, NO measuring rods, NO text, NO watermarks."
+    },
+    {
+      "entity_name": "Hell Creek Waterhole",
+      "type": "location",
+      "aspect_ratio": "16:9",
+      "action": "GENERATE_LOCATION",
+      "prompt": "One single unified documentary landscape photograph of a vast muddy waterhole on the Hell Creek floodplain, 66 million years ago. Shallow murky brown water rimmed with extensive dried red mud flats heavily pitted with deep three-toed dinosaur footprints and massive rounded depressions from ceratopsian feet. Clumps of primitive horsetails and swamp reeds grow along the muddy shallows. In the far distance, a dense subtropical forest tree line fades into the humid heat haze under a glaring pale daylight sky. Photorealistic wildlife documentary aesthetic. Strictly ONE unified photograph, strictly NO humans, NO people, NO scale figures, NO measuring rods, NO split screen.",
+      "negative_prompt": "NOT CGI, NOT 3D render, NOT fantasy landscape, NOT crystal clear tropical pool, NO people, NO humans, NO measuring rods, NO borders, NO collage."
+    },
+    {
+      "entity_name": "Bò Đực",
+      "type": "creature",
+      "aspect_ratio": "16:9",
+      "action": "GENERATE_CREATURE",
+      "prompt": "One single unified wildlife documentary photograph of a massive adult male Triceratops horridus, standing in the Hell Creek floodplain forest. The animal weighs over 8 tons, with a square broad beak, thick pebbled grey-brown reptilian skin, and heavily wrinkled skin folds around the neck and flanks. Dấu nhận diện đặc trưng: his LEFT brow horn is broken off and blunt at one-third of its length, and his wide bony neck frill bears an old healed vertical gash and ragged battle scars. Dried red mud cakes his lower legs and belly. Natural biological anatomy according to current 2026 palaeontological standards: correct quadrupedal stance, muscular dewlap, realistic skin texture with irregular scales and dirt, subtle flies buzzing near the eye. Mid-morning natural subtropical lighting. Strictly ONE unified photograph, strictly NO humans, NO people, NO scale figures, NO split screen.",
+      "negative_prompt": "NOT Jurassic Park rubbery skin, NOT CGI, NOT 3D video game model, NOT roaring upright monster, NOT vibrant fantasy colors, NOT miniature toy, NO humans, NO people, NO scale figures, NO text."
+    },
+    {
+      "entity_name": "Con Non",
+      "type": "creature",
+      "aspect_ratio": "16:9",
+      "action": "GENERATE_CREATURE",
+      "prompt": "One single unified wildlife documentary photograph of a juvenile Triceratops horridus, approximately 2 years old, about the size of a large pony. The young dinosaur has rounded, soft-edged bony neck frill and stubby, newly-budding brow horns pointing slightly forward. Its skin is a lighter dusty olive-tan with fine pebbled scales, and dried red clay mud is smeared thickly over its flanks and underbelly. The juvenile stands alert at the edge of tall tree ferns, head tilted curiously. True-to-life animal documentary photography, natural filtered sunlight. Strictly ONE unified photograph, strictly NO humans, NO people, NO scale figures, NO split screen.",
+      "negative_prompt": "NOT cute cartoon character, NOT Pixar style, NOT CGI render, NOT fantasy lizard, NO humans, NO people, NO measuring rods, NO borders."
+    },
+    {
+      "entity_name": "T. rex",
+      "type": "creature",
+      "aspect_ratio": "16:9",
+      "action": "GENERATE_CREATURE",
+      "prompt": "One single unified wildlife documentary photograph of a massive adult Tyrannosaurus rex prowling through the humid subtropical foliage of Hell Creek. The theropod is 12 metres long, built with enormous heavy muscular neck, massive jaw lined with serrated teeth, and completely featherless, fine-scaled brown-grey leathery skin. Dấu nhận diện: deep healed territorial scars run along the right side of its snout, and tiny flies hover around the saliva-slick corners of its lips. Lower legs and giant clawed feet are dusted with pale river silt. The predator moves with low-slung, heavy momentum, horizontal body posture counterbalanced by its thick tail. Strictly scientific palaeontological reconstruction, raw documentary footage style, dappled sunlight on wet scales. Strictly ONE unified photograph, strictly NO humans, NO people, NO scale figures, NO split screen.",
+      "negative_prompt": "NOT roaring upright Godzilla pose, NOT Jurassic Park movie monster, NOT feathers, NOT bright cartoon scales, NOT 3D render, NOT CGI, NO humans, NO people, NO measuring bars."
+    }
+  ]
+}

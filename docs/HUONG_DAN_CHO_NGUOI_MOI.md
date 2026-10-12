@@ -65,11 +65,29 @@ Dưới đây là sơ đồ phân công chuẩn mực của hệ thống:
                             ⛔ [CỔNG DUYỆT 2]: Bạn duyệt prompt trước khi gen video
 ```
 
+## 🎨 2.5 BƯỚC BẮT BUỘC: NGHIÊN CỨU CHẤT LIỆU & SOẠN PROMPT ẢNH REF TRƯỚC KHI GEN
+Rất nhiều người mới mắc sai lầm là nhảy thẳng vào bấm sinh ảnh, dẫn đến ảnh AI bị generic, khủng long trông như đồ chơi nhựa CGI hoặc bối cảnh sai lệch thời kỳ.  
+**Quy trình chuẩn hóa bắt buộc phải có bước này trước khi bấm nút sinh media:**
+
+```text
+┌───────────────────────────────────────────────────────────────────────────┐
+│ BƯỚC 2.5: THIẾT KẾ & DUYỆT PROMPT ẢNH REFERENCE                           │
+│ 1. /fk-research: Nghiên cứu địa chất, thực vật, giải phẫu sinh vật học    │
+│ 2. /fk-add-material: Khóa chất liệu (style_instruction, negative_prompt,  │
+│    lighting) để ảnh trông như phim tài liệu thực tế, cấm 100% CGI/3D      │
+│ 3. Soạn thảo file ref_prompts.json: Chốt chi tiết từng câu prompt cho:     │
+│    • Nora Body: Turnaround Sheet 16:9 đã mặc hoàn chỉnh trang phục         │
+│    • Bối cảnh (16:9): Không người, không thước đo (Rule 34)                │
+│    • Sinh vật / Đạo cụ (16:9): Chuẩn giải phẫu, da sần, bùn đỏ            │
+│ 4. ⛔ [CỔNG DUYỆT PROMPT REF]: Trình danh sách Prompt Ref cho Bạn duyệt!   │
+└───────────────────────────────────────────────────────────────────────────┘
+```
+
 ---
 
 ## 🎬 3. GIAI ĐOẠN SẢN XUẤT MEDIA: TỪ PROMPT RA VIDEO HOÀN CHỈNH
 
-Sau khi kịch bản và prompt được bạn thông qua, quá trình sản xuất trên Google Flow diễn ra theo các bước nghiêm ngặt:
+Sau khi bạn duyệt danh sách Prompt Reference và Kịch bản, quá trình sản xuất trên Google Flow diễn ra tuần tự:
 
 ### Bước 1: Chuẩn bị môi trường (Pre-Flight)
 1. **Google Chrome:** Cài Chrome Extension bản `≥ 0.5.2` (tại thư mục `c:\flowkit\extension`), bật *Developer Mode*.
@@ -81,12 +99,11 @@ Sau khi kịch bản và prompt được bạn thông qua, quá trình sản xu�
    ```
    *(Server chạy tại cổng `http://127.0.0.1:8100`).*
 
-### Bước 2: Tạo Reference Images Sạch Logo (Rule 28, 33, 46)
-- Model Omni Flash R2V cần 2 ảnh chính của Vlogger:
-  1. `<V>`: Ảnh cận cảnh khuôn mặt và tóc.
-  2. `<V> Body`: Character Sheet toàn thân 3-4 góc **đã mặc hoàn chỉnh trang phục thời kỳ**.
+### Bước 2: Sinh Ảnh Reference & Tẩy Watermark AI (Rule 28, 33, 46)
+- Gửi các prompt trong `ref_prompts.json` lên Flow để sinh ảnh 16:9.
 - **Quy trình tẩy watermark bắt buộc (Rule 28):** Mọi ảnh AI sinh ra từ Flow đều có logo chìm. Agent sẽ:
-  `Tải ảnh về` $\to$ `Chạy tools/remove_watermark_from_image.py` $\to$ `Upload ngược lên Flow lấy UUID sạch`.
+  `Tải ảnh về máy` $\to$ `Chạy tools/remove_watermark_from_image.py` $\to$ `Upload ngược lên Flow lấy UUID sạch`.
+- Bạn mở gallery ảnh để duyệt start frame & entity ref trước khi sinh video.
 
 ### Bước 3: Sinh Video R2V Omni Flash (`abra_r2v`)
 - Tuyệt đối **không sinh Start Frame** rồi chạy `i2v` (làm đơ mặt và méo người).

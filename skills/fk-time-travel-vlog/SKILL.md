@@ -106,12 +106,12 @@ Mọi dự án kịch bản FlowKit bắt buộc trải qua đúng 3 tầng tài
        │                      • /sw-story-structure: Khung 起承转合 (Khởi 19% - Thừa 51% - Chuyển 19% - Hợp 11%), 12 mốc giờ
        │                      • /sw-character-conflict: Nora Want vs Need, Đàn Triceratops là "bộ tộc"
        ▼
-[TẦNG 2: script.md]      ◄── Tạo bởi /sw-scene-craft + /sw-dialogue phối hợp các Subagents điện ảnh:
-       │                      • §1–§8: Triết lý, Character Bible, Material, Khung thời lượng, Luật sinh tồn
-       │                      • §7: Chu kỳ góc máy (POV -> Macro -> Hiding/OTS -> Selfie -> Fixed)
-       │                      • §9 Storyboard: Toàn bộ clip (Shot, Ref, Visual, Thoại Nora chuẩn Rule 49, Việc, Retention Beat)
+[TẦNG 2: script.md + outfit.json + ref_prompts.json] ◄── Phối hợp các Subagents điện ảnh & material:
+       │                      • §1–§8: Triết lý, Character Bible, Material (/fk-add-material), Khung thời lượng
+       │                      • output/<slug>/outfit.json: Prompt may đo trang phục thời kỳ lên Nora Body
+       │                      • output/<slug>/ref_prompts.json: Toàn bộ prompt ảnh Ref bối cảnh, sinh vật, đạo cụ
+       │                      • §9 Storyboard: Toàn bộ clip (Shot, Ref, Visual, Thoại Nora chuẩn Rule 49, Việc)
        │                      • §10 Bảng vật lý (/fk-action-choreography): Vị trí máy, Frame 0, Vector chuyển động, Chuỗi 4s
-       │                      • §11–§12: Sổ liên tục bối cảnh & 10 chuỗi khó ưu tiên
        ▼
 [TẦNG 3: prompts_actX.json + vn.json] ◄── Tạo bởi /fk-script-to-prompts (Rule 56):
                               • Chuyển thể 100% kịch bản sang Structured JSON Prompt phân cấp
@@ -122,10 +122,11 @@ Mọi dự án kịch bản FlowKit bắt buộc trải qua đúng 3 tầng tài
 ## Định dạng output (theo đúng thứ tự)
 
 1. **Giả định** (3–5 dòng).
-2. **Character Bible** — `CHARACTER_LOCK` + `voice_description` + `VOICE_LOCK` + bảng nhân vật (cột `Voice` cho nhân vật phụ có thoại).
-3. **Bảng beat** (thật hoặc bịa).
+2. **Character Bible & Outfit JSON** — `CHARACTER_LOCK` + `voice_description` + xuất file `output/<slug>/outfit.json` (prompt mặc đồ thời kỳ lên `<V> Body`).
+3. **Bảng beat** (thật hoặc bịa) + Nghiên cứu chất liệu (`/fk-add-material`, `/fk-research`).
 4. **Bảng chuỗi nhân quả sinh tồn** + **outline** cold open / 5 Act + thời lượng.
 5. **Storyboard toàn bộ clip** + **bảng vật lý** ⛔ user duyệt (`script.md`).
+5.5. **Bảng Prompt Ảnh Reference** — Xuất file `output/<slug>/ref_prompts.json` gồm tất cả prompt ảnh bối cảnh, sinh vật, đạo cụ chuẩn 16:9 ⛔ user duyệt trước khi sinh media.
 6. **Clip JSON từng clip** — BẮT BUỘC dùng [`/fk-script-to-prompts`](../fk-script-to-prompts/SKILL.md) để chuyển thể từ kịch bản phân cảnh sang prompt JSON, tự động chạy linter `lint_prompt.py` self-repair, và xuất file `prompts_actX.json` + `vn.json` (long-form theo từng Act, user duyệt trước khi sang Act sau).
 7. **Ghi chú hậu kỳ + gói YouTube.**
 
