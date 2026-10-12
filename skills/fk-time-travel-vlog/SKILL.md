@@ -52,14 +52,32 @@ Mỗi bước: đọc reference ghi kèm **trước khi** làm. Bước có ⛔ 
 | 3 | **Outline**: chuỗi nhân quả sinh tồn → cold open 8s → 5 Act mỗi Act 1 câu hỏi → payoff → cảnh cuối không thoại. **Bắt buộc dùng subagent**: `fk-action-choreography` (động lực học), `fk-camera-guide` (chọn góc máy theo hành động), `fk-cinematic-transitions` (chuyển hồi) | `story-engine.md` (**nguồn cấu trúc duy nhất**), `structure-7-acts.md` (kho ý tưởng cảnh/beat, không phải cấu trúc), `reference-analysis.md`, `cinematic-toolkit.md` §3 | outline + thời lượng |
 | 4 | **Storyboard + bảng vật lý** từng clip (máy ở đâu, có gì ở giây 0, hướng + tốc độ vật di chuyển, ai rời khung bằng cách nào). **Bắt buộc dùng subagent**: `fk-camera-guide` (bảng vật lý & quang học), `fk-cinematic-transitions` (khớp điểm nối) ⛔ user duyệt bảng vật lý | `shots-and-realism.md`, `transitions.md` | bảng storyboard + bảng vật lý |
 | 5 | **Clip JSON + `video_prompt`** theo khung 9 khối, qua checklist B. **Bắt buộc phối hợp 5 subagent**: `fk-action-choreography` (3 pha hành động), `fk-add-material` (visual profile), `fk-cinematic-transitions` (chuyển cảnh), `fk-gen-narrator` (thoại 18–22 từ chia 3 mốc), `fk-camera-guide` (5 tầng quang học). Long-form xuất từng Act, ⛔ hỏi user trước khi sang Act sau | `prompt-lock.md`, `production-lessons.md`, `prompt-templates.md`, `voice-bible.md` §2–6, `cinematic-toolkit.md` §1–2 | `output/<slug>/script.md` |
+| 5.5 | **Cổng QC — review & viết lại prompt** (bắt buộc, chạy trên 100% prompt trước khi lưu): soi từng prompt qua 4 bộ kiểm của repo `character-scene-design-skills-main`, **sửa trực tiếp câu chữ** rồi mới `python tools/lint_prompt.py`. Xem §QC dưới | `character-bible.md` §7, §QC dưới | prompt đã viết lại + sổ liên tục bối cảnh |
 | 6 | **Dựng dự án FlowKit** (pre-flight, flush PENDING, project, video, scenes, PATCH `duration` + `narrator_text`) | `flowkit-pipeline.md` §2–3; tập tiếp theo của series: `cinematic-toolkit.md` §5 | project/video/scene ids |
 | 7 | **Refs**: mặt, Body đã mặc outfit (công thức outfit lock), bối cảnh — xóa logo, upload lại ⛔ hỏi trước khi sinh, ⛔ user duyệt ảnh | `flowkit-pipeline.md` §4, `character-bible.md` §6 | entity có UUID media_id |
 | 8 | **Video R2V**: clip khó nhất trước, rồi clip mốc, rồi cả loạt ⛔ hỏi trước mỗi lượt | `flowkit-pipeline.md` §5 | clip 720p |
-| 9 | **Review 720p** (`/fk-review-video` + Review Board :8200) ⛔ user duyệt từng clip → upscale 1080p → xóa logo → concat | `flowkit-pipeline.md` §6 | bản 1080p clean |
+| 9 | **Review 720p** (`/fk-review-video` + Review Board :8200) ⛔ user duyệt từng clip. Clip rớt → **quay lại cổng 5.5**: chẩn đoán lỗi theo bảng §QC, viết lại prompt, lint, rồi mới đề xuất regen → upscale 1080p → xóa logo → concat | `flowkit-pipeline.md` §6 | bản 1080p clean |
 | 10 | **Hậu kỳ**: cắt tại khung che + J-cut, nhạc duck dưới thoại, card chữ, bíp, master −14 LUFS | `post-and-publish.md` §1, `cinematic-toolkit.md` §6–7 | video final |
 | 11 | **Đóng gói YouTube** + chiến lược kênh | `post-and-publish.md` §2–4 | tiêu đề, mô tả, thumbnail |
 
 Long-form → ghi `output/<slug>/script.md` (cập nhật dần theo Act); Shorts → trả thẳng trong chat. Chỉ dựng dự án FlowKit (bước 6) sau khi user duyệt kịch bản.
+
+### §QC — Cổng review & viết lại prompt (bước 5.5)
+
+Kho phương pháp: `skills/character-scene-design-skills-main/` (repo tham chiếu — **đọc, không copy về**). Luật của skill này luôn thắng khi mâu thuẫn; repo chỉ cung cấp **cách soi và cách viết lại**.
+
+Chạy **4 bộ kiểm theo đúng thứ tự** này, mỗi bộ là một lượt quét qua toàn bộ prompt của Act:
+
+| # | Bộ kiểm | Đọc | Soi cái gì | Viết lại thế nào |
+|---|---|---|---|---|
+| Q1 | **Proportion lock** | `skills/character-design/SKILL.md` → *Production Asset Pipeline* b1 + b4 (*W0 turnaround contract*) | Chạy **một lần trước khi sinh `<V> Body`**, không phải mỗi clip. 3 panel của sheet có giống "một người xoay" không: net height, head ratio, width-to-height, leg ratio, foot baseline | Chốt 5 con số đó **thành câu chữ** trong prompt ảnh Body. Mạnh hơn nhồi thêm tính từ vào `BODY LOCK` |
+| Q2 | **Permanent prop geometry** | cùng file → b3 | Mọi đạo cụ cố định (gùi, túi, dao, bầu nước) trong prompt **ảnh ref**. Có bị tả chung chung → trôi thành vật generic giữa 40 clip không | Tả bằng **hình học + bên đeo + cách gắn + chất liệu + mặt trước/sau**, và nêu rõ **nó KHÔNG phải cái gì** (`not a round ball, not a bottle, not a pouch`). Chỉ trong prompt ảnh — `video_prompt` vẫn chỉ trỏ ref (Rule 52 §2) |
+| Q3 | **Bone And Face Structure Layer** | cùng file | Bảng nhân vật phụ: có ≥2 người dễ bị trộn mặt không | Mỗi nhân vật phụ đổi ít nhất **2 trong**: face envelope, cheek/jaw, eye geometry, hairline, skin texture, posture. Ghi vào cột dấu nhận diện |
+| Q4 | **Scene continuity ledger** | `.agents/skills/scene-design/SKILL.md` → đoạn *base location vs scene state* + danh sách trường của *scene continuity ledger* | Mỗi địa điểm xuất hiện ≥5 clip: trạng thái có chạy **một chiều** không; dấu vết (vết kéo, vật vỡ, bùn trên da) có bị "reset sạch" giữa các clip không | Lập sổ 2 tầng ngay trong `script.md`: **base scene** (bản đồ cố định, mốc được bảo vệ, hướng trục máy) + **bậc trạng thái** S0→Sn ghi clip nào dùng bậc nào, kèm dấu vết, ánh sáng, vùng đứng của nhân vật, thứ được phép đổi. Trạng thái kế thừa của clip trước là **đầu vào bắt buộc** của khối 3 `Everything is already in place from the very first frame` ở clip sau |
+
+Sau 4 bộ kiểm → chạy checklist B (`prompt-lock.md`) → `python tools/lint_prompt.py` → phải 0 lỗi Critical/High mới được lưu.
+
+**Bỏ qua** trong repo đó: short-drama / casting dọc 9:16, `references/full-manual.md`, `SECTIONS/`, `scene-illustration-workflow/` (bộ sinh prompt tiếng Trung cho Jimeng — khác công cụ, khác `scene-design` ở `.agents/`), và mọi đường dẫn `/Users/baimengke/...` (không tồn tại trên máy này).
 
 ### Mặc định đầu vào (bước 0)
 
