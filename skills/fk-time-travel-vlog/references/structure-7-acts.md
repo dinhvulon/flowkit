@@ -4,7 +4,7 @@
 
 > **File này KHÔNG phải một cấu trúc truyện.** Cấu trúc duy nhất là **cold open + 5 Act** ở `story-engine.md` mục 3 (user chốt 2026-10-05). Khung "7 hồi / % thời lượng" cũ đã **bị xóa khỏi file này ngày 2026-10-12** vì cạnh tranh trực tiếp với 5 Act. Những gì còn lại dưới đây là **kho ý tưởng cảnh, beat mẫu và kỹ thuật máy quay** — lấy ra dùng tự do, không theo thứ tự.
 
-> Luật khác: thoại 18–22 từ (Rule 49); "mồi tập sau" **không** nói thành lời trong video (story-engine mục 10–11: cảnh cuối không thoại, CUT BLACK) — chỉ đưa vào mô tả YouTube / end screen.
+> Luật khác: thoại theo độ dài clip (8s = 18–22 từ; 4/6/10s theo bảng Rule 49 (0)); "mồi tập sau" **không** nói thành lời trong video (story-engine mục 10–11: cảnh cuối không thoại, CUT BLACK) — chỉ đưa vào mô tả YouTube / end screen.
 
 **Không mở bằng cảnh du hành.** Vào thẳng thế giới từ giây 0 — khung đầu là chuyển động mạnh sát ống kính (bánh xe, ngựa, súc gỗ) rồi mở ra nhân vật giữa đám đông.
 
@@ -60,7 +60,7 @@ Shorts: hook (1) → 2–3 beat đời thường/wow (2–4) → nguy hiểm ho�
    - Beat kết (~98%): Máy dựng đối diện nhân vật lúc hoàng hôn.
 4. **Khoảng hạ nhiệt sau thoát hiểm (70–75%)**: Tuyệt đối không nhảy thẳng từ rượt đuổi sang kỳ quan. Phải có cảnh đi nhờ xe, trò chuyện với dân bản địa hiền hòa để nhịp phim lắng xuống.
 
-**Shorts (4–6 beat × 8s)** — nén cùng đường cong, không đảo thứ tự:
+**Shorts (4–6 beat, mỗi beat 1 clip 8s hoặc chuỗi 4s nếu dễ lỗi — Bài 71)** — nén cùng đường cong, không đảo thứ tự:
 
 | Beat (6 beat) | Hồi | Bắt buộc | Nếu chỉ 4 beat |
 |---|---|---|---|
@@ -105,7 +105,7 @@ Dùng khi bối cảnh tự nó có thể giết người (Kỷ Băng Hà, khủ
 Khung kịch bản và tỉ lệ shot ở trên không phải suy đoán — được rút ra từ phân tích khung-hình thật của video *"I Time Traveled to Ancient China in 211 BC! (Vlog)"* (10:40, ~38 shot). Toàn bộ chi tiết nằm ở `reference-analysis.md`.
 
 **Số liệu chính:**
-- ~38 shot / 10:40 → trung bình ~17s, trung vị ~15s. Rất nhiều mối nối cách nhau đúng ~15s → mỗi beat ≈ 2 clip 8s nối liền (trong FlowKit: 2 scene R2V, nối bằng khung che / match on action — `flowkit-pipeline.md` mục 1).
+- ~38 shot / 10:40 → trung bình ~17s, trung vị ~15s. Rất nhiều mối nối cách nhau đúng ~15s → mỗi beat ≈ 2 clip 8s nối liền, hoặc chuỗi 4s nếu beat dễ lỗi (trong FlowKit: vài scene R2V, nối bằng khung che / match on action — `flowkit-pipeline.md` mục 1).
 - 1 cao trào nguy hiểm duy nhất ở ~60% video (đoàn xe hoàng đế đi qua → bị lính để ý → chạy trốn), sau đó hạ nhịp rồi dồn vào reveal.
 - Không có cảnh "du hành" mở đầu — vào thẳng thế giới từ giây 0 bằng một vật chuyển động mạnh sát ống kính (bánh xe bò).
 - Âm thanh gần như không có khoảng lặng; không có chữ trên màn hình.

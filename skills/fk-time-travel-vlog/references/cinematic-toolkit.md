@@ -8,10 +8,10 @@
 
 | Subagent | Chuyên Môn | Output Cung Cấp Cho Kịch Bản |
 |---|---|---|
-| **`/fk-action-choreography`** | Vũ đạo hành động & an toàn cơ học AI | 3 pha động học (`0-3s` / `3-6s` / `6-8s`), từ vựng né/săn an toàn |
+| **`/fk-action-choreography`** | Vũ đạo hành động & an toàn cơ học AI | 3 pha động học (dễ: trong 1 clip 8s `0-3s` / `3-6s` / `6-8s`; dễ lỗi: mỗi pha 1 clip 4s — Bài 71), từ vựng né/săn an toàn |
 | **`/fk-add-material`** | Image Material & Visual Style | Style instruction, lighting, cấm token phone |
 | **`/fk-cinematic-transitions`** | Kỹ thuật nối cảnh & nhịp chuyển màn | Match-on-action, foreground wipe, swing pan, J-cut |
-| **`/fk-gen-narrator`** | Biên kịch thoại & khẩu hình vlog | Thoại 18–22 từ chia 3 mốc (Rule 49), sonic isolation, nói từ giây 0 |
+| **`/fk-gen-narrator`** | Biên kịch thoại & khẩu hình vlog | Thoại theo độ dài clip (8s = 18–22 từ chia 3 mốc; 4/6/10s theo bảng Rule 49 (0)), sonic isolation, nói từ giây 0 |
 | **`/fk-camera-guide`** | Đạo diễn hình ảnh & quang học smartphone | 5 tầng prompt, chọn POV/OTS/FIXED/SELFIE theo hành động (không có tỷ lệ %) |
 
 Cách chuyển một template gốc sang vlog:
@@ -20,7 +20,7 @@ Cách chuyển một template gốc sang vlog:
 |---|---|
 | `Negative: ...` | Câu khẳng định trước dòng `Audio:` (`prompt-lock.md` khối 8) |
 | "The camera tracks / dollies / orbits / pushes in" | Góc nhìn của vlogger: selfie, POV hoặc máy dựng (`prompt-lock.md` khối 1) + rung tay theo bước chân (Bài học 25, 35) |
-| `narrator_text` lời dẫn | Thoại native của vlogger 18–22 từ trong `video_prompt` (Rule 49, Lesson 65) |
+| `narrator_text` lời dẫn | Thoại native của vlogger trong `video_prompt`, số từ theo độ dài clip (Rule 49, Lesson 65) |
 | Nhân vật chính là chiến binh/tướng | Vlogger là người sống sót bị cuốn vào; người bản địa làm phần khó |
 | Kiếm, khiên, kỵ binh | Vũ khí và mối nguy đúng thời kỳ: giáo, đá, đuốc, thú lớn, bão |
 
@@ -28,7 +28,7 @@ Cách chuyển một template gốc sang vlog:
 
 ## 1. Hành động & cảnh săn — 3 pha (từ `/fk-action-choreography`) · Bước 5
 
-Mỗi clip hành động 8s đúng 3 pha:
+Hành động luôn chia 3 pha. **Dễ lỗi** (chạy nhanh, tương tác thú, ngã/rơi máy, sinh vật lớn băng qua khung, VFX, vật vỡ/gãy) → **mỗi pha là 1 clip 4s** (`A1-12a/b/c`, `0-2s / 2-4s`), cùng refs, cùng câu `Setting`, cùng vị trí máy; mắt xích sau mở bằng tư thế cuối mắt xích trước (Rule 44); hỏng mắt xích nào sinh lại mắt xích đó (Bài 71). **Dễ** → 3 pha trong 1 clip 8s:
 - `0-3s`: **Chuẩn bị** — hạ trọng tâm, siết tay cầm, khóa mắt vào mục tiêu (mọi người/thú/vật đã ở đúng chỗ từ giây 0, khối "already in place").
 - `3-6s`: **Một đòn theo một hướng duy nhất** — đâm, ném, chạy, né (tả quỹ đạo và tác động lên môi trường, đất mùn tung, lá văng, không tả xuyên thịt).
 - `6-8s`: **Thu thế & neo** — dừng trượt, giữ thế thủ, ngực phập phồng (bụi/tuyết lắng, rung nảy dần ổn định).
@@ -38,7 +38,7 @@ Mỗi clip hành động 8s đúng 3 pha:
 | Chế độ | Góc máy bắt buộc | Thoại / Âm thanh (Rule 49) | Ví dụ bối cảnh |
 |---|---|---|---|
 | **A. Rình mồi & Săn thú cận chiến** | **100% First-Person POV** qua mắt vlogger hoặc Camera nấp sau tảng đá/thân cây | **Sonic Isolation (Im lặng tuyệt đối):** Miệng ngậm chặt, 0 từ thoại trên hình (`Strictly NO spoken dialogue`). Kịch tính qua tiếng thở dồn, tim đập, foley lá gãy | Áp sát bò mộng, phục kích voi ma mút, rình bầy linh cẩu, leo trèo |
-| **B. Tháo chạy & Thoát nạn sinh tử** | **Selfie góc rộng 0.5x** (cánh tay khóa cứng máy, không buông) | **18–22 từ thoại thở dốc / hét nghẹn:** `0-3s` (6-7 từ) $\to$ `3-6s` (7-8 từ) $\to$ `6-8s` (5-7 từ) | Động đất, tuyết lở, thú dữ bất ngờ quay đầu truy đuổi |
+| **B. Tháo chạy & Thoát nạn sinh tử** | **Selfie góc rộng 0.5x** (cánh tay khóa cứng máy, không buông) | **Thoại thở dốc / hét nghẹn theo độ dài clip:** 8s = `0-3s` (6-7 từ) $\to$ `3-6s` (7-8 từ) $\to$ `6-8s` (5-7 từ); chuỗi 4s = 0 hoặc 6–8 từ / mắt xích | Động đất, tuyết lở, thú dữ bất ngờ quay đầu truy đuổi |
 
 **Góc máy cho hành động** (vlogger là người cầm máy — chọn theo bản chất hành động, KHÔNG theo tỷ lệ %; Rule 42 (3)):
 - Rình rập, bò trườn, đâm/ném giáo, hai tay làm việc: **100% First-Person POV hoặc máy dựng/tựa đá** (Bài học 50, 61) — vlogger không thể vừa giơ tay selfie vừa đi săn.
@@ -105,7 +105,7 @@ Dùng khi viết outline / Act — mỗi Act nên có ít nhất 1 kỹ thuật:
 | **Delayed reveal** | Clip A: selfie, mặt vlogger biến sắc nhìn qua vai máy (không quay máy). Cắt sang Clip B: POV thấy thứ cô thấy. Cấm lật 180° trong 1 shot (Rule 42) |
 | **Sonic isolation** | Tuyệt đối im lặng khi rình mồi / áp sát cận chiến (Rule 49): trong prompt ghi `Strictly NO spoken dialogue. Her mouth stays firmly closed in dead silence`. Hậu kỳ tắt hẳn nhạc nền, chỉ còn tiếng thở dồn nén, tim đập và tiếng foley tự nhiên. Thoại dẫn chuyện chỉ chèn qua voiceover/subtitles nội tâm |
 | **Deceptive calm** | Clip yên bình (hồ phẳng, đàn thú gặm cỏ) → vật rung nhẹ, chim bay tán loạn ở `6-8s` → cắt |
-| **Time dilation** | Một khoảnh khắc 1 giây kéo thành cả clip 8s: bàn tay với tới mép đá, tia lửa rơi xuống bùi nhùi |
+| **Time dilation** | Một khoảnh khắc 1 giây kéo thành cả một clip (4s nếu dễ lỗi, 8s nếu dễ): bàn tay với tới mép đá, tia lửa rơi xuống bùi nhùi |
 
 **Đổi cỡ cảnh liên tục** (mục G): không để 2 clip liền nhau cùng cỡ cảnh/góc. Xoay vòng selfie gần → POV rộng → POV chi tiết tay → selfie qua vai → máy dựng.
 

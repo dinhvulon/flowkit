@@ -29,7 +29,7 @@ Nhân vật **mặc đồ của thời kỳ ngay từ clip đầu** để "trà 
 ## 3. Giọng — Laomedeia, 1 giọng mỗi clip
 
 - Vlogger nữ: `voice_description` theo chuẩn **Laomedeia** (Google Gemini-TTS, khối mẫu ở trên). Slot 7 của Omni Flash `MZZa6b` mặc định `[["laomedeia"]]`.
-- Thoại nhúng thẳng trong sub-clip: `0-3s / 3-6s / 6-8s` (clip 10s: `6-10s`), dạng `Nora says (tag cách nói): "..."` để `abra_r2v` tự sinh khẩu hình native.
+- Thoại nhúng thẳng trong sub-clip theo `duration` (4s `0-2s / 2-4s`; 6s `0-2s / 2-4s / 4-6s`; 8s `0-3s / 3-6s / 6-8s`; 10s `0-3s / 3-7s / 7-10s`), dạng `Nora says (tag cách nói): "..."` để `abra_r2v` tự sinh khẩu hình native.
 - Slot 7 chỉ gửi **một** voice id, lấy từ entity **đầu tiên theo thứ tự DB** có `voice_description` → **chỉ vlogger khai báo voice**. Gửi 2 giọng làm clip thất bại (test 2026-10-05).
 
 ## 4. Nhân vật phụ nói ngôn ngữ không hiểu được (user chốt 2026-10-05)

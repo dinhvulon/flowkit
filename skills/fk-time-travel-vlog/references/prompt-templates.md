@@ -16,7 +16,7 @@ wearing an era-appropriate [dark indigo cross-collar hemp robe with a white inne
 Voice: Laomedeia — upbeat, mid-high pitched, energetic expressive conversational female voice, fast confident vlog delivery with dry humor, rises into real cracking screams when in danger, drops to a fast whisper when hiding.
 ```
 
-## Clip JSON (bản thiết kế 1 clip 8s, R2V Omni Flash)
+## Clip JSON (bản thiết kế 1 clip, ví dụ 8s, R2V Omni Flash)
 ```json
 {
   "clip_id": "CH2-05",
@@ -43,7 +43,20 @@ Voice: Laomedeia — upbeat, mid-high pitched, energetic expressive conversation
   "constraints": "Nora stays in frame for the whole clip and never disappears. The locals wear plain Qin-era hemp clothing; everything around is 211 BC China, with no modern buildings or vehicles. Only Nora speaks English; nobody speaks over anyone else. No subtitles or text appear on screen. This looks like real footage, not a movie or a 3D render."
 }
 ```
-Thoại 18–22 từ / clip 8s, chia 6–7 / 7–8 / 5–7 từ theo sub-clip (Rule 49). Mẫu trên = 7 + 7 + 5 = 19 từ.
+Thoại 18–22 từ / clip 8s, chia 6–7 / 7–8 / 5–7 từ theo sub-clip (Rule 49). Mẫu trên = 7 + 7 + 5 = 19 từ. `duration` không cố định: đổi 4/6/8/10 theo độ khó, sub-clip và số từ theo bảng Rule 49 (0) (Bài học 71).
+
+**Mắt xích chuỗi 4s** (cảnh dễ lỗi — 1 hành động / mắt xích, cùng refs + `setting` + vị trí máy với mắt xích trước):
+```json
+{
+  "clip_id": "A1-12b",
+  "duration": 4,
+  "chain": {"prev": "A1-12a", "next": "A1-12c", "opens_on": "<tư thế/vị trí cuối của A1-12a>"},
+  "action": "0-2s <hành động duy nhất, phần 1>; 2-4s <cùng hành động, phần 2 / hậu quả>",
+  "dialogue": [],
+  "join": "CUT liền — mắt xích kế mở bằng tư thế cuối của mắt xích này"
+}
+```
+Các trường còn lại (`refs`, `camera`, `style`, `setting`, `in_place`, `constraints`, `audio`) chép nguyên từ mắt xích `a`.
 
 ## Clip nhân vật phụ nói (ngôn ngữ không hiểu được)
 - Sub-clip riêng cho người nói: `3-5s: The Leader speaks in a deep, gravelly male voice — short guttural non-English sounds, no recognizable words; Nora stays silent and watches him.`

@@ -47,7 +47,7 @@ Clip đầu là trọn 8s của khoảnh khắc cao trào, cắt trước khi bi
 | 7–8s | Gần thành công → **CUT ĐEN** |
 
 - Người xem phải cảm thấy "**nếu cô thất bại thì chuyện kinh khủng gì xảy ra?**", không chỉ "cô phải làm X".
-- Thoại 18–22 từ (Rule 49) nhưng là câu ngắn đứt quãng, thở dốc, theo nhịp hành động. Cấm: giải thích lịch sử, giới thiệu vlogger, giới thiệu người bản địa, logo, kêu subscribe.
+- Thoại theo độ dài đoạn cắt (cold open 8s = 18–22 từ, Rule 49) nhưng là câu ngắn đứt quãng, thở dốc, theo nhịp hành động. Cấm: giải thích lịch sử, giới thiệu vlogger, giới thiệu người bản địa, logo, kêu subscribe.
 - **Payoff** ở cuối cao trào (Act 4): dựng lại 2–3s cuối của cold open, rồi cho thấy kết quả **cùng góc máy**. Clip đứng ngay trước payoff kết bằng tư thế hoặc hướng nhìn khớp với đoạn phát lại (Rule 44).
 - **Cold open và payoff cắt từ CÙNG MỘT master take** (user chốt 2026-10-05). Sinh một clip 10s FIXED CAM chứa trọn khoảnh khắc (mối nguy → hỏng → hỏng → thành công một phần → kết quả). Cold open dùng đoạn đầu đến trước kết quả → CUT ĐEN; payoff dùng 4–5s cuối. Hai clip sinh riêng thì nhân vật, ánh sáng, vị trí mối nguy sẽ lệch nhau, và người xem nhận ra ngay. Ghi rõ trong script master take chia giây thế nào và mỗi đoạn dùng giây nào.
 - **Thứ tự ưu tiên hình trong cold open phải đơn giản:** mối nguy → vlogger → tay → kết quả → đen. Nền tối, ít chi tiết, không để thứ gì tranh sự chú ý.
@@ -158,7 +158,7 @@ Act 1 chịu luật này nặng nhất: các shot nhìn, ngửi, trao đổi, ng
 
 ## 5. Không quá 15–20s không có thay đổi
 
-Cứ mỗi 15–20s (2–3 clip 8s) phải có ít nhất một trong năm thứ: **NEW INFORMATION**, **NEW PROBLEM**, **NEW FAILURE**, **NEW DANGER**, **NEW EMOTIONAL BEAT**.
+Cứ mỗi 15–20s (2–3 clip 8s, hoặc 4–5 clip của chuỗi 4s) phải có ít nhất một trong năm thứ: **NEW INFORMATION**, **NEW PROBLEM**, **NEW FAILURE**, **NEW DANGER**, **NEW EMOTIONAL BEAT**.
 
 Mỗi 30–60s phải có một nấc leo thang.
 
@@ -282,14 +282,16 @@ Mạnh hơn mọi câu "See you next time". Vật trong món quà nên là đạ
 
 | Loại clip | Số từ tiếng Anh của vlogger |
 |---|---|
-| Mọi clip 8s có thoại | **18–22** — chia `0-3s` 6–7 từ / `3-6s` 7–8 từ / `6-8s` 5–7 từ |
-| Clip 10s | ~23–28 (cộng ~25%, chia thêm sub-clip `8-10s`) |
+| Clip 4s (mắt xích chuỗi 4s cảnh dễ lỗi, Bài 71) | **0** (hành động) hoặc **6–8** — `0-2s / 2-4s` |
+| Clip 6s | **12–15** — `0-2s / 2-4s / 4-6s` |
+| Clip 8s có thoại | **18–22** — chia `0-3s` 6–7 từ / `3-6s` 7–8 từ / `6-8s` 5–7 từ |
+| Clip 10s | **24–28** — `0-3s / 3-7s / 7-10s` |
 | Cảnh cuối (hình ảnh đáng nhớ, CUT BLACK — mục 11) | 0 |
-| 3 establishing shot 4s không có vlogger trong khung (mục 2b) | 0 |
+| Establishing shot không có vlogger trong khung (mục 2b) | 0 |
 
-Vì sao: clip 8s bị trim `-ss 1` còn 7s, trừ đệm 0.5s → ~6.5s audio ở ~3.2–3.5 từ/giây. Dưới 18 từ = **dead air** (vlogger đứng im 2–3s, tụt retention); trên 22 = **cut-off** (câu bị cắt sang clip sau). Viết/sửa thoại bằng `/fk-gen-narrator` (Time-Travel Vlog Mode) để đồng bộ `narrator_text` và `video_prompt`.
+Độ dài clip không cố định: chọn 4/6/8/10s theo độ khó (CLAUDE.md Rule 49 (0), `production-lessons.md` Bài 71). Vì sao dải 8s là 18–22: clip 8s bị trim `-ss 1` còn 7s, trừ đệm 0.5s → ~6.5s audio ở ~3.2–3.5 từ/giây. Dưới dải = **dead air** (vlogger đứng im 2–3s, tụt retention); trên dải = **cut-off** (câu bị cắt sang clip sau). Clip 4s trim `-ss 0.5`, còn 3.5s. Viết/sửa thoại bằng `/fk-gen-narrator` (Time-Travel Vlog Mode) để đồng bộ `narrator_text` và `video_prompt`.
 
-Clip căng thẳng / hành động vẫn đủ 18–22 từ, nhưng là **câu ngắn đứt quãng** (`"Run— no, left. LEFT. Behind the bones, now— she's turning, she's turning, go go go."`), không phải câu dài. Nhịp im lặng (bên dưới) nằm **trong** một sub-clip, các sub-clip còn lại gánh đủ số từ.
+Clip căng thẳng / hành động có thoại vẫn đủ dải từ của độ dài clip, nhưng là **câu ngắn đứt quãng** (`"Run— no, left. LEFT. Behind the bones, now— she's turning, she's turning, go go go."`), không phải câu dài. Nhịp im lặng (bên dưới) nằm **trong** một sub-clip, các sub-clip còn lại gánh đủ số từ.
 
 **Show > Tell.** Thay vì giải thích, cho người xem thấy rồi gói lại bằng vài từ.
 - Thay *"They waste nothing."* (kể) bằng: thịt → mỡ → xương → tủy → da hiện ra trên hình; Nora nhìn: *"Nothing gets wasted."*
@@ -332,7 +334,7 @@ Thay quy tắc cũ "người bản địa không thoại, môi khép" (Translato
 
 ## 13b. Nhịp dựng (hậu kỳ)
 
-Không để 70 clip 8s nối nhau đều đều. Trong script ghi một bảng **Nhịp dựng**:
+Không để mọi clip cùng một độ dài nối nhau đều đều — độ dài clip đã khác nhau theo độ khó (4/6/8/10s, Bài 71); chuỗi 4s tự tạo nhịp nhanh cho đoạn hành động. Trong script ghi một bảng **Nhịp dựng**:
 - **Chậm** (giữ đủ, có thể kéo ambient): khoảnh khắc im lặng, quan hệ, món quà cuối.
 - **Nhanh** (cắt sớm, bỏ đầu/đuôi thừa 1–3s): chuỗi thất bại lặp, hành động.
 - Cao trào dựng theo **dài → ngắn → ngắn → ngắn → payoff → dài**: đoạn căng giữ dài, chuỗi thử–hỏng cắt ngắn dần, payoff, rồi một shot dài để thở.

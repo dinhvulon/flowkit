@@ -130,14 +130,16 @@ Thoại dày làm phim thành podcast có hình, thoại thưa làm clip có dea
 
 | Loại clip | Số từ tiếng Anh của vlogger |
 |---|---|
-| Mọi clip 8s có thoại | **18–22** — chia `0-3s` 6–7 từ / `3-6s` 7–8 từ / `6-8s` 5–7 từ |
-| Clip 10s | ~23–28 (cộng ~25%, chia thêm sub-clip `8-10s`) |
+| Clip 4s (mắt xích chuỗi 4s cảnh dễ lỗi, Bài 71) | **0** (hành động) hoặc **6–8** — `0-2s / 2-4s` |
+| Clip 6s | **12–15** — `0-2s / 2-4s / 4-6s` |
+| Clip 8s có thoại | **18–22** — chia `0-3s` 6–7 từ / `3-6s` 7–8 từ / `6-8s` 5–7 từ |
+| Clip 10s | **24–28** — `0-3s / 3-7s / 7-10s` |
 | Cảnh cuối (hình ảnh đáng nhớ, CUT BLACK — `story-engine.md` mục 11) | 0 |
-| 3 establishing shot 4s không có vlogger trong khung (`story-engine.md` mục 2b) | 0 |
+| Establishing shot không có vlogger trong khung (`story-engine.md` mục 2b) | 0 |
 
-Vì sao: clip 8s bị trim `-ss 1` còn 7s, trừ đệm 0.5s → ~6.5s audio ở ~3.2–3.5 từ/giây. Dưới 18 từ = **dead air** (vlogger đứng im 2–3s, tụt retention); trên 22 = **cut-off** (câu bị cắt sang clip sau). Viết/sửa thoại bằng `/fk-gen-narrator` (Time-Travel Vlog Mode) để đồng bộ `narrator_text` và `video_prompt`.
+Độ dài clip không cố định: chọn 4/6/8/10s theo độ khó (CLAUDE.md Rule 49 (0), `production-lessons.md` Bài 71). Vì sao dải 8s là 18–22: clip 8s bị trim `-ss 1` còn 7s, trừ đệm 0.5s → ~6.5s audio ở ~3.2–3.5 từ/giây. Dưới dải = **dead air** (vlogger đứng im 2–3s, tụt retention); trên dải = **cut-off** (câu bị cắt sang clip sau). Clip 4s trim `-ss 0.5`, còn 3.5s. Viết/sửa thoại bằng `/fk-gen-narrator` (Time-Travel Vlog Mode) để đồng bộ `narrator_text` và `video_prompt`.
 
-Clip căng thẳng / hành động vẫn đủ 18–22 từ, nhưng là **câu ngắn đứt quãng** (`"Run— no, left. LEFT. Behind the bones, now— she's turning, she's turning, go go go."`), không phải câu dài. Nhịp im lặng (bên dưới) nằm **trong** một sub-clip, các sub-clip còn lại gánh đủ số từ.
+Clip căng thẳng / hành động có thoại vẫn đủ dải từ của độ dài clip, nhưng là **câu ngắn đứt quãng** (`"Run— no, left. LEFT. Behind the bones, now— she's turning, she's turning, go go go."`), không phải câu dài. Nhịp im lặng (bên dưới) nằm **trong** một sub-clip, các sub-clip còn lại gánh đủ số từ.
 
 - **Show > Tell:** `"Fire."` khi người xem đã thấy tia lửa, không phải `"Now I'm making fire using the flint I found earlier."`
 - **Nhịp im lặng:** mỗi Act ít nhất 1 lần không ai nói từ 1s trở lên trước một tiết lộ. Kịch bản ghi `[im lặng 2s]`, prompt ghi `No one speaks for the first 2 seconds; only wind and breathing.`
@@ -216,7 +218,7 @@ Ghi chú: các câu mẫu không có chi tiết lịch sử nào — đúng pers
 - [ ] Mỗi 3–4 clip có ít nhất 1 chi tiết lạ của thế giới này (thật hay bịa) hiện ra qua việc đang làm trên hình — không giảng.
 - [ ] Cứ 2 clip có ít nhất 1 chỗ tự ngắt, tự sửa, hoặc 1 câu đùa khô.
 - [ ] Người bản địa có vai trò thật (khuôn C), Nora không đúng mọi lúc về chuyện địa phương.
-- [ ] Mỗi clip 8s có thoại đúng 18–22 từ, chia 6–7 / 7–8 / 5–7 theo sub-clip (mục 2, Rule 49); chỉ cảnh cuối và 3 establishing shot 4s được 0 từ.
+- [ ] Số từ mỗi clip khớp độ dài của nó (mục 2, Rule 49 (0)): 8s = 18–22 chia 6–7 / 7–8 / 5–7; 4s = 0 hoặc 6–8; 6s = 12–15; 10s = 24–28. Chỉ cảnh cuối, establishing shot, clip Sonic Isolation và mắt xích 4s hành động được 0 từ.
 - [ ] Mỗi Act có ít nhất 1 nhịp im lặng.
 
 ---

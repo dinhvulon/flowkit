@@ -8,11 +8,12 @@
 
 ## §1. LUẬT HIỆN HÀNH — đọc mục này là đủ để viết prompt
 
-> Bảng tra nhanh (cập nhật 2026-10-12). File dưới §2 là **kho lịch sử 69 bài học**; khi nghi ngờ, bảng này thắng. Mỗi khi chốt luật mới, sửa bảng này **trước**, rồi mới ghi bài học mới vào §2.
+> Bảng tra nhanh (cập nhật 2026-10-12). File dưới §2 là **kho lịch sử 71 bài học**; khi nghi ngờ, bảng này thắng. Mỗi khi chốt luật mới, sửa bảng này **trước**, rồi mới ghi bài học mới vào §2.
 
 | Chủ đề | Luật hiện hành | Nguồn | Đã thay luật nào |
 |---|---|---|---|
-| **Số từ thoại / clip 8s** | **18–22 từ**, chia `0-3s` 6–7 / `3-6s` 7–8 / `6-8s` 5–7. Dưới 18 → dead air; trên 22 → cụt âm. Nói **ngay từ giây 0.0** | CLAUDE.md Rule 49 + Bài 65 | ~~23–25 từ~~ (Bài 62), ~~20–25 từ~~ |
+| **Độ dài clip** | **Không cố định.** Dễ lỗi → chuỗi 4s cùng bối cảnh (1 hành động/clip, khớp tư thế đầu-cuối). Dễ, không chuyển cảnh → 8s; long take / master / cảnh cuối → 10s; lưng chừng → 6s | Rule 49 (0) + Bài 71 | ~~mọi clip 8s~~ |
+| **Số từ thoại theo độ dài** | **4s** 0 hoặc 6–8 (`0-2s / 2-4s`) · **6s** 12–15 (`0-2s / 2-4s / 4-6s`) · **8s** 18–22, chia `0-3s` 6–7 / `3-6s` 7–8 / `6-8s` 5–7 · **10s** 24–28 (`0-3s / 3-7s / 7-10s`). Thiếu → dead air; thừa → cụt âm. Nói **ngay từ giây 0.0** | CLAUDE.md Rule 49 + Bài 65, 71 | ~~23–25 từ~~ (Bài 62), ~~20–25 từ~~ |
 | **Tỷ lệ góc máy** | **KHÔNG có tỷ lệ % nào.** Chọn theo hành động: POV (hành động/di chuyển/rình săn/quan sát) · OTS (đồng hành, thao tác qua vai) · FIXED (thao tác 2 tay) · SELFIE (hook, tâm sự, phản ứng, kết). Cấm 100% selfie · cấm 3 selfie liên tiếp · cấm 2 clip liền nhau trùng cỡ cảnh + góc máy | Rule 42 (3) | ~~60–70% POV~~ (Bài 61), ~~POV 35/OTS 35/FIXED 15/SELFIE 15~~ (Bài 66) |
 | **Im lặng khi rình săn** | Cảnh áp sát thú/phục kích/ẩn nấp: **0 từ trên hình**, miệng khóa chặt (`Sonic Isolation`). Thoại dẫn → voiceover hậu kỳ | Rule 49 (4) + Bài 61 | — |
 | **Bộ ref vlogger** | `<V>` (mặt+tóc) + `<V> Body` (3 góc, **đã mặc outfit**, EDIT 1 lần từ Body trần gốc). **Không** có entity `<V> Outfit`. Tối đa 3 ref/clip. Cảnh OTS cần thêm `<V> Back` (sau gáy) | Rule 46 + Bài 60, 66 | ~~entity Outfit riêng~~ |
@@ -35,7 +36,7 @@
 
 ---
 
-## §2. Kho bài học (lịch sử đầy đủ, 1–69)
+## §2. Kho bài học (lịch sử đầy đủ, 1–71)
 
 Giữ nguyên số thứ tự để các tham chiếu "Bài học N" cũ vẫn đúng. Bài nào đã bị §1 thay thì §1 thắng.
 
@@ -65,7 +66,7 @@ Rút ra từ dự án `output/atlantis-9600bc/` (2026-09-27). Khi mâu thuẫn v
     - nhưng **vẫn phải kèm ảnh ref bối cảnh** (quy tắc 5), nếu không sẽ mất nhận diện (ví dụ Atlantis thành làng chài Anh).
 
 **Kỹ thuật FlowKit**
-12. `POST /api/scenes` không nhận `duration`; phải `PATCH {"duration": 8}` (thiếu thì âm thầm ra clip 10s).
+12. `POST /api/scenes` không nhận `duration`; phải `PATCH {"duration": <4|6|8|10>}` theo cột `Dur` của storyboard (thiếu thì âm thầm ra clip 10s).
 13. Mỗi clip chỉ có 1 giọng, lấy từ entity **đầu tiên theo thứ tự DB** có `voice_description`. **Chỉ nhân vật chính khai báo voice**; khai báo cho nhân vật phụ thì giọng họ sẽ đè lên thoại của nhân vật chính.
 14. Sinh lại một scene R2V đã COMPLETED: PATCH `horizontal_video_status: PENDING` rồi gửi `GENERATE_VIDEO_REFS` (không có `REGENERATE_VIDEO_REFS`).
 15. Ảnh do Flow sinh luôn có logo ✦ ở góc dưới phải (tâm khoảng `(W-98, H-97)`). Xóa bằng `tools/remove_watermark_from_image.py` (đã sửa ngưỡng ngày 2026-09-27), rồi **mở ảnh ra kiểm tra**. Ảnh không phải do Flow sinh (ví dụ bảng ảnh ghép của user) thì tool có thể đoán sai vị trí.
@@ -710,6 +711,16 @@ Rút ra từ dự án `output/atlantis-9600bc/` (2026-09-27). Khi mâu thuẫn v
       2. **Ghi kèm vị trí trong khung khi nhân vật đối diện máy:** `"her right hand, on the left side of the frame"` / `"her left hand, on the right side of the frame"`.
       3. **Tối đa 2 trạng thái tay mỗi clip** (vd: chuẩn bị → cắt). Phần "khoe kết quả" làm bằng chính tay đang cầm sẵn (tay đè gân nhấc đầu gân đã cắt lên), không đặt dao để lấy vật khác.
       4. **Đếm đạo cụ trong `negative_constraints`:** `"exactly one flake in the whole clip, always in her right hand; it never vanishes, never duplicates, never appears on the slab"`.
+
+71. **ĐỘ DÀI CLIP LINH HOẠT THEO ĐỘ KHÓ — CẢNH DỄ LỖI SINH CHUỖI 4s CÙNG BỐI CẢNH, CẢNH DỄ GIỮ 8s/10s (Variable Duration & 4s Chain — User Lock 12/10/2026):**
+    - **Hiện tượng:** Skill cũ mặc định mọi clip 8s. Clip hành động 8–10s nhồi 3–5 thay đổi trạng thái (thú lao tới → dừng → máy rơi → lật lên tán cây) nên càng về cuối clip càng trôi: thú đổi dáng, tay/đạo cụ teleport (Bài 70), vật hiện/biến (Bài 48). Một chỗ hỏng ở giây 6 bắt sinh lại cả clip 8s.
+    - **Quy tắc:**
+      1. **Chọn `duration` theo độ khó, không theo mặc định.** Dễ lỗi (chuyển động nhanh, tương tác thú, ngã / rơi máy, sinh vật lớn đi ngang khung, VFX chớp sáng / mưa kính / sóng chấn động, vật đổi trạng thái: vỡ, đứt, đổ) → **4s**. Dễ và không chuyển cảnh (selfie nói chuyện, fixed cam, lia chậm, phong cảnh) → **8s**; long take, master take, cảnh cuối im lặng → **10s**; lưng chừng → **6s**.
+      2. **Chuỗi 4s = một cảnh liền, cắt thành nhiều mắt xích.** Đặt ID `A1-12a / b / c`. Mỗi mắt xích **chỉ một hành động** (một pha của `fk-action-choreography`). Giữ nguyên: bộ ref (≤3), câu `Setting` + trạng thái ánh sáng, vị trí máy. Mắt xích sau mở **đúng tư thế / vị trí** mắt xích trước kết thúc (Rule 44), viết thẳng vào khối `Everything is already in place from the very first frame` (`"the bull is already standing six metres away, head low, from the very first frame"`).
+      3. **Thoại theo bảng Rule 49 (0):** 4s = 0 từ (hành động) hoặc 6–8 từ chia `0-2s / 2-4s`. Chuỗi hành động thường 0 từ (thở dốc, Foley); câu nói dồn vào mắt xích cuối hoặc clip 8s kế tiếp.
+      4. **Dựng:** 4s trim `-ss 0.5` → 3.5s dùng được; cắt thẳng giữa các mắt xích (match on action), không crossfade. Runtime tính theo thời lượng dùng được, không theo số clip × 8.
+      5. **Sinh lại theo mắt xích:** mắt xích nào rớt review thì chỉ sinh lại mắt xích đó; mắt xích kế tiếp vẫn dùng được vì điểm nối đã khóa bằng chữ.
+    - **Đổi kèm:** CLAUDE.md Rule 11 + Rule 49 (0); `SKILL.md` hàng "Độ dài clip"; §1 bảng tra nhanh.
 
 **Nội dung**
 17. **[ĐÃ THAY bởi Rule 46 / bài học 60]** Vlogger mặc đồ hiện đại theo ảnh ref là chấp nhận được. Hiện tại: vlogger mặc trang phục thời kỳ ngay từ clip đầu qua `<Vlogger> Body` đã mặc outfit; đồ hiện đại chỉ khi user yêu cầu phong cách "lạc loài".
