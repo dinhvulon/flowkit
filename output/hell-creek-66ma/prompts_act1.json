@@ -910,45 +910,53 @@
     "duration": 4,
     "aspect_ratio": "16:9",
     "refs": [
-      "Bò Đực"
+      "Bò Đực",
+      "Hell Creek Trail"
     ],
     "camera": {
-      "viewpoint": "handheld first-person POV tumbling backward onto ground, tilting up to canopy",
-      "shot_size": "medium shot to extreme close-up of foliage",
-      "description": "First-person POV tipping backward and crashing into deep fern fronds. The camera flips backward and upward, settling on the green palm canopy above. Both hands are empty. The camera lens is completely outside the frame."
+      "viewpoint": "first-person POV slipping and tumbling backward into fern verge, settling flat on back",
+      "shot_size": "medium shot to ground-level foliage view",
+      "description": "First-person POV losing footing on wet red mud, jolting violently backward and falling into a dense bed of giant Osmunda ferns. The camera viewpoint is completely outside the visible frame and never seen. Strictly NO hands, NO arms, NO fingers reach into or appear anywhere in the frame."
     },
-    "style": "chaotic handheld fall physics, fast motion blur, green fern wipe, canopy daylight",
-    "setting": "Hell Creek fern meadow edge. Deep tangle of giant fern fronds and palm bushes.",
+    "style": "raw handheld field documentary footage, authentic Cretaceous natural lighting, realistic high-ISO sensor grain in foliage shadows, heavy organic motion blur during violent fall, crushed sap and soil texture, NOT CGI, NOT a 3D render, NOT a video game cutscene, NOT oversaturated",
+    "setting": "Hell Creek fern meadow verge, bordered by giant Osmunda ferns and tall conifers. Churned red mud on the ground, pale morning daylight filtering through canopy.",
     "characters": [
       {
         "name": "Bull Triceratops",
-        "visual_lock": "Adult male Triceratops horridus, broken left horn, scarred flushed frill, 9 tons.",
-        "state": "Opens standing 6 meters away with lowered head (matching A1-12b end frame); leaves frame as camera tumbles."
+        "visual_lock": "Adult male Triceratops horridus, broken left horn, scarred flushed frill, 9 tons, identical to Scene 15 end frame.",
+        "state": "Opens standing planted 6 meters away from frame 0 in churned red mud, steam trailing from nostrils (perfect continuity matching Scene 15 end frame)."
       }
     ],
-    "in_place": "Bull stands 6 meters away facing camera from frame 0 as viewpoint is already tilting backward.",
+    "in_place": "Bull Triceratops is already standing planted 6 meters away in churned mud from frame 0 with steam trailing from nostrils, exactly matching the final frame of Scene 15.",
     "timeline_action": {
-      "0-2s": "From frame 0 the viewpoint tips backward out of control; the bull disappears out of the bottom frame as green fern leaves whip violently across the lens.",
-      "2-4s": "The viewpoint crashes onto the soft spongy fern bed, rocking once and settling motionless, looking straight up through towering palm fronds at the pale morning sky."
+      "0-2s": "Opens on the massive bull planted 6 meters away; the camera viewpoint suddenly slips backward on wet clay turf, pitching violently downward and backward as the bull disappears out of the bottom frame.",
+      "2-4s": "Giant green Osmunda fern fronds whip violently across the lens with heavy realistic motion blur as the viewpoint crashes flat onto the spongy damp fern bed, landing with a solid ground thud and settling motionless among crushed fern leaves with conifer canopy visible above."
     },
     "speech": {
       "speaker": "Nora",
       "mode": "Sonic Isolation",
-      "delivery": "A single raw, cracked shriek of pure panic cutting out as she hits the ground",
+      "delivery": "A single raw, cracked shriek of pure panic cutting out sharply as body hits the ground",
       "dialogue": []
     },
-    "dramatic_craft": {
-      "beat": "Loss of control & ground impact (Chain 3/3): physical collapse into undergrowth",
-      "value_turn": "Active agent (-) -> Knocked flat on back (- -)",
-      "subtext": "Gravity and fear stripping away the final shred of composure; survivor reflex",
-      "prop_and_detail": "Giant green fern fronds whipping across the frame; soft thud of forest floor moss cushioning the fall"
+    "chain": {
+      "chain_id": "A1-12-CHARGE",
+      "step": "3/3",
+      "opens_on": "Bull Triceratops planted 6 meters away facing camera in churned red mud with steam trailing from nostrils, identical to Scene 15 closing frame",
+      "closes_on": "Viewpoint resting flat on back in crushed Osmunda fern bed, fern fronds framing edges, palm canopy seen through leaves above, perfectly establishing Scene 17 start frame"
     },
-    "audio": "A single ragged cracking scream of panic, violent rustle of crushing fern fronds, heavy dull body thud into moss, dazed ringing silence",
-    "physics": "Rotational pitch backward at 90 deg/s; vertical drop of 1.2 meters to ground; settling bounce at 2.5s",
+    "dramatic_craft": {
+      "beat": "Loss of control & ground impact (Chain 3/3): physical collapse into undergrowth, surviving by falling below line of sight",
+      "value_turn": "Imminent lethal trampling (- -) -> Escaped line of sight, sheltered in ferns (-)",
+      "subtext": "Gravity and fear stripping away composure; falling into cover saves her from the bull's charge",
+      "prop_and_detail": "Wet crushed Osmunda fern fronds; flying bits of damp red clay; broken horn of bull visible in opening frame"
+    },
+    "audio": "A single ragged cracking scream of panic, violent rustle and snapping of crushed fern stems, heavy dull body impact thud into spongy moss, sudden dazed silence",
+    "physics": "Instantaneous loss of traction on wet clay (friction coefficient mu=0.1); angular pitch backward at 90 deg/s; vertical drop of 1.1m to ground cushioned by damp moss (damping ratio zeta=0.8); camera lands flat",
     "negative_constraints": [
-      "The camera lens and operator are completely outside the visible frame and never seen; no hands reach to camera.",
-      "No words spoken; single inarticulate shriek only.",
-      "Chain rule: ends static looking up into palm canopy, establishing start position for A1-13."
+      "The camera lens and recording apparatus are completely outside the visible frame and never seen.",
+      "Strictly NO hands, NO arms, NO fingers, NO body parts reaching into or appearing anywhere in the visible frame.",
+      "Strictly NO spoken dialogue; single inarticulate panic shriek only.",
+      "NOT a 3D render, NOT CGI, NOT a video game perspective, NOT oversaturated green, NOT plastic textures."
     ]
   },
   {
