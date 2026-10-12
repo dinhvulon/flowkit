@@ -20,7 +20,7 @@
 | **Khóa trang phục** | **Thuần ref** — cấm mô tả lại quần áo bằng lời. Chỉ trỏ: `wears the exact historical outfit shown in the <V> Body reference sheet (NO shearling collar, NO extra fur, NO hood, NO outfit variations)` | Rule 52 (2) + Bài 63 | ~~tả outfit bằng chữ trong prompt~~ |
 | **Khóa hình thể** | Waist-Up Medium Shot hơi hất lên, đứng thẳng + cụm `BODY LOCK` đối kháng. Cấm góc xa/toàn khi cúi gập người | Rule 52 (3) + Bài 63 | — |
 | **Từ cấm (ghost device)** | Cấm 100% `phone`, `smartphone`, `phone_vlog`, `device`, `screen`, `selfie stick`, `gimbal`, `camera` (đạo cụ) — **kể cả trong câu phủ định và trong project material**. Thay bằng: `The camera lens and viewpoint are completely outside the visible frame and never seen; both hands are empty` | Rule 52 (1) + Bài 9, 33, 63 | — |
-| **Bàn tay trong POV** | Cấm tả tay vlogger thò lên trong góc POV tự thân. Thao tác tay → chuyển sang **OTS hoặc FIXED**. Quay người khác làm việc → **OTS / Observer close-up**, không dùng Self-POV | Bài 66, 67 | — |
+| **Bàn tay trong POV** | Nếu POV có thao tác tay (nhặt đồ, vốc nước, chạm dấu chân): BẮT BUỘC cấp ref `<V> Hand` (sheet 16:9 cẳng tay/bàn tay chuẩn giải phẫu nữ, xắn áo kaki khớp outfit) + gán `characters: ["<V> Hand"]`. Cấm để rỗng nhân vật khiến AI vẽ tay đàn ông lông lá. Nếu không có ref tay → chuyển sang **OTS hoặc FIXED** | Bài 66, 67, 72 | ~~cấm tuyệt đối tay trong POV~~ |
 | **Vật ở giây 0** | Mọi người/sinh vật/đạo cụ phải nằm trong khối `Everything is already in place from the very first frame`, ghi vị trí + khoảng cách + số lượng + tay nào cầm | Bài 48, 69 | — |
 | **Chất liệu / bột** | Phải có sẵn trên bề mặt từ Frame 0; quệt ngón tay trực tiếp vào đá. Cấm hứng bụi/bột rơi giữa không trung | Rule 53 + Bài 64 | — |
 | **Đạo cụ** | Bảo toàn xuyên suốt clip; cấm buông/đặt xuống đất giữa chừng; cấm xoay người 180° khi vác đồ nặng. Đạo cụ đơn nhất, không nhân bản | Bài 68, 69 | — |
@@ -724,6 +724,28 @@ Rút ra từ dự án `output/atlantis-9600bc/` (2026-09-27). Khi mâu thuẫn v
       5. **Sinh lại theo mắt xích:** mắt xích nào rớt review thì chỉ sinh lại mắt xích đó; mắt xích kế tiếp vẫn dùng được vì điểm nối đã khóa bằng chữ.
     - **Đổi kèm:** CLAUDE.md Rule 11 + Rule 49 (0); `SKILL.md` hàng "Độ dài clip"; §1 bảng tra nhanh.
 
+72. **KHÓA BÀN TAY POV BẰNG ẢNH REF `<VLOGGER> HAND` & CẤM ĐỂ RỖNG CHARACTER TRONG SHOT TƯƠNG TÁC (POV Hand Reference Lock, Dedicated Forearm Sheet & Anti-Male Hand Glitch — Bài học Scene 7 Hell Creek 66 Ma, User review 12/10/2026):**
+    - **Hiện tượng & Root Cause:**
+      1. **Tay biến hình / thành tay đàn ông / dị tật ngón trong cảnh POV:** Khi thực hiện cảnh quay góc nhìn thứ nhất (First-person POV nhìn xuống nhặt đồ vật, vốc nước, gạt cành dương xỉ, chạm vào dấu chân bùn, cầm mai rùa...), nếu prompt chỉ gán bối cảnh (`refs: ["Hell Creek Bank"]`, `characters: []`) mà không có nhân vật, hoặc chỉ gắn `<Vlogger>` (chỉ có khuôn mặt):
+         - AI video diffusion model (Omni Flash / Veo) **hoàn toàn không có dữ liệu về bàn tay của nhân vật chính**.
+         - Kết quả: AI tự tưởng tượng ra một bàn tay ngẫu nhiên — thường biến thành **bàn tay đàn ông thô ráp, đốt ngón tay đầy lông lá, sạm đen**, hoặc xuất hiện móng tay dài sơn móng lòe loẹt, móng vuốt kỳ quái, cổ tay áo hiện đại, đồng hồ thông minh, hoặc dị tật ngón (6 ngón, ngón tay tan chảy).
+         - Nếu cố tình nhét `<Vlogger>` (ảnh mặt), AI lại cố gắng ép khuôn mặt lọt vào góc nhìn POV, gây vỡ bố cục máy quay.
+    - **Quy tắc giải pháp:**
+      1. **Bổ sung Entity `<Vlogger> Hand` vào Bộ Reference Chuẩn của Dự Án POV:**
+         - Đối với bất kỳ dự án POV Vlog nào có phân cảnh nhân vật chính dùng tay tương tác với môi trường hoặc đạo cụ, BẮT BUỘC tạo thêm 1 entity reference: `<Vlogger> Hand` (hoặc `POV Hand Sheet`).
+         - **Chuẩn Turnaround Sheet 16:9 của `<Vlogger> Hand`:**
+           - Thể hiện cận cảnh 4 góc cẳng tay & bàn tay của nữ vlogger: mu bàn tay, lòng bàn tay, ngón tay duỗi và ngón tay cầm nắm đồ vật.
+           - Đặc điểm giải phẫu: Cánh tay thon gọn, thanh mảnh nhưng săn chắc khỏe khoắn; làn da tự nhiên có vết rám nắng nhẹ dã ngoại; móng tay cắt ngắn sạch sẽ, **tuyệt đối không sơn móng**.
+           - Trang phục tay áo: Ống tay áo sơ mi xám tro/kaki xắn ngang cẳng tay (khớp 100% với trang phục trên `<Vlogger> Body`), cổ tay để trần hoặc có vòng dây da thô mộc thời kỳ.
+         - Tẩy sạch watermark logo & SynthID (Rule 28) rồi upload lên Flow lấy UUID Media ID sạch.
+      2. **Khóa Nhân vật trong Scene POV Tương tác:**
+         - Mọi scene POV có xuất hiện bàn tay (`reaches down`, `picks up`, `scoops`, `holds`, `parts foliage`), `character_names` và `refs` BẮT BUỘC phải đính kèm: `["<Vlogger> Hand", "<Bối Cảnh / Đạo Cụ>"]`.
+         - Trong khối `characters` của Structured JSON:
+           `{"name": "<Vlogger> Hand", "visual_lock": "Slender athletic female forearms and hands matching <Vlogger> Hand reference, rolled sleeves matching outfit, natural unpainted fingernails; NO male hands, NO hairy knuckles, NO modern jewelry/smartwatch."}`
+         - Trong `negative_constraints`:
+           `"NO male hands, NO hairy arms, NO modern wristwatch or bracelet, NO painted fingernails, NO extra or deformed fingers; strictly matching <Vlogger> Hand reference."`
+
 **Nội dung**
 17. **[ĐÃ THAY bởi Rule 46 / bài học 60]** Vlogger mặc đồ hiện đại theo ảnh ref là chấp nhận được. Hiện tại: vlogger mặc trang phục thời kỳ ngay từ clip đầu qua `<Vlogger> Body` đã mặc outfit; đồ hiện đại chỉ khi user yêu cầu phong cách "lạc loài".
 18. User có thể yêu cầu **cảnh mở đầu FPV điện ảnh** (từ không gian lao xuống toàn cảnh thành phố, không có vlogger), là ngoại lệ của luật "mọi shot quay bằng điện thoại". Clip đó dùng ảnh ref toàn cảnh, giữ yên 2–3 giây cuối, và clip sau mở bằng vật lướt qua ống kính để che cú cắt.
+

@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hell Creek 66 Ma — Reference Assets Review Board</title>
+  <style>
+    :root {
+      --bg: #0a0c10;
+      --card-bg: rgba(22, 27, 34, 0.85);
+      --card-border: #30363d;
+      --text: #f0f6fc;
+      --text-muted: #8b949e;
+      --accent: #2ea043;
+      --accent-glow: rgba(46, 160, 67, 0.25);
+      --amber: #d29922;
+      --cyan: #58a6ff;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      padding: 32px 24px;
+      line-height: 1.5;
+    }
+    .container { max-width: 1400px; margin: 0 auto; }
+    header {
+      margin-bottom: 28px;
+      padding-bottom: 20px;
+      border-bottom: 1px solid var(--card-border);
+    }
+    .badge {
+      display: inline-block;
+      padding: 4px 10px;
+      border-radius: 12px;
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+      background: var(--accent-glow);
+      color: #3fb950;
+      border: 1px solid #238636;
+      margin-bottom: 10px;
+    }
+    h1 { font-size: 26px; font-weight: 700; color: #fff; margin-bottom: 8px; }
+    .meta { font-size: 13px; color: var(--text-muted); display: flex; gap: 20px; flex-wrap: wrap; }
+    .meta span strong { color: var(--text); }
+    
+    .section-title {
+      font-size: 18px;
+      font-weight: 600;
+      color: var(--cyan);
+      margin: 28px 0 16px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 10px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      transition: transform 0.2s, border-color 0.2s, box-shadow 0.2s;
+    }
+    .card:hover {
+      transform: translateY(-3px);
+      border-color: #58a6ff;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.5);
+    }
+    .img-wrap {
+      position: relative;
+      background: #010409;
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .img-wrap.portrait { aspect-ratio: 9 / 16; max-height: 480px; }
+    .img-wrap img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.3s;
+    }
+    .card:hover .img-wrap img { transform: scale(1.02); }
+    .clean-tag {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      background: rgba(46, 160, 67, 0.9);
+      color: #fff;
+      font-size: 10px;
+      font-weight: 700;
+      padding: 3px 8px;
+      border-radius: 6px;
+      backdrop-filter: blur(4px);
+    }
+    .card-body { padding: 14px 16px; display: flex; flex-direction: column; gap: 8px; flex: 1; }
+    .card-title { font-size: 16px; font-weight: 600; color: #fff; }
+    .card-desc { font-size: 12px; color: var(--text-muted); line-height: 1.4; }
+    .uuid-box {
+      margin-top: auto;
+      background: #0d1117;
+      padding: 8px 10px;
+      border-radius: 6px;
+      border: 1px solid #21262d;
+      font-family: ui-monospace, SFMono-Regular, Consolas, monospace;
+      font-size: 11px;
+      color: #79c0ff;
+      word-break: break-all;
+    }
+    .rule-note {
+      margin-top: 32px;
+      padding: 16px 20px;
+      background: rgba(56, 139, 253, 0.1);
+      border: 1px solid rgba(56, 139, 253, 0.3);
+      border-radius: 8px;
+      font-size: 13px;
+      color: #c9d1d9;
+    }
+    .rule-note strong { color: var(--cyan); }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="badge">Pre-Production Gate &bull; Rule 28 &amp; 33 Compliant</div>
+      <h1>Hell Creek 66 Ma &mdash; Bảng Duyệt Reference Assets (Start Frames)</h1>
+      <div class="meta">
+        <span>Project ID: <strong>21513736-f0db-422c-954c-4c20dffd29a3</strong></span>
+        <span>Video ID: <strong>bff25f18-b35d-41c8-811a-4f0a52184380</strong></span>
+        <span>Material: <strong>cretaceous_vlog</strong> (Late Cretaceous Film Grain)</span>
+        <span>Status: <strong style="color: #3fb950;">8/8 Sạch Watermark &amp; Đã nạp DB</strong></span>
+      </div>
+    </header>
+
+    <!-- Nhân vật chính -->
+    <div class="section-title">
+      <span>1. Nhân Vật Chính &amp; Vlogger (Ingredients Hierarchy)</span>
+    </div>
+    <div class="grid">
+      <div class="card">
+        <div class="img-wrap portrait">
+          <img src="images/ref_nora_face.jpg" alt="Nora Face">
+          <span class="clean-tag">FACE LOCK</span>
+        </div>
+        <div class="card-body">
+          <div class="card-title">Nora &mdash; Vlogger Face Reference</div>
+          <div class="card-desc">Chân dung cận cảnh khuôn mặt gốc: Nữ travel vlogger 23 tuổi người Việt, tóc đen dài buộc đuôi ngựa, da trắng tự nhiên, mắt sắc sảo biểu cảm.</div>
+          <div class="uuid-box">UUID: 4d206c1b-b148-40d4-a52b-e72841c080df</div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="img-wrap portrait">
+          <img src="images/ref_nora_body_clean.jpg" alt="Nora Body">
+          <span class="clean-tag">CLEAN &bull; BODY LOCK</span>
+        </div>
+        <div class="card-body">
+          <div class="card-title">Nora Body &mdash; Turnaround Sheet &amp; Outfit</div>
+          <div class="card-desc">Chuẩn Turnaround 4 góc (Front, 3/4, Profile, Closeup): Dáng đồng hồ cát, ngực đầy đặn khe sâu cổ chữ V, mặc áo thun ôm xám tro dính bụi, sơ mi kaki buộc eo, quần cargo rêu ôm hông, đai field pouch, ủng trekking. Đã tẩy sạch watermark.</div>
+          <div class="uuid-box">UUID: 37c9c041-8eab-4a8c-847c-f09957b78a42</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Sinh vật -->
+    <div class="section-title">
+      <span>2. Sinh Vật Tiền Sử (Standard 16:9 4-Angle Turnaround Sheets)</span>
+    </div>
+    <div class="grid">
+      <div class="card">
+        <div class="img-wrap">
+          <img src="images/ref_bo_duc_clean.jpg" alt="Bò Đực">
+          <span class="clean-tag">CLEAN &bull; 16:9 SHEET</span>
+        </div>
+        <div class="card-body">
+          <div class="card-title">Bò Đực &mdash; Triceratops prorsus (Alpha Bull)</div>
+          <div class="card-desc">Bò đực đầu đàn 9 tấn: Diềm xương lớn có gai viền nhọn, sừng mũi ngắn dày chếch lên, 2 sừng trán dài 1m cong nhẹ, vảy da sừng lớn, sẹo chiến đấu, cơ bắp cuồn cuộn.</div>
+          <div class="uuid-box">UUID: 4ca3dc4a-b799-41c2-988f-d3713f171806</div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="img-wrap">
+          <img src="images/ref_con_non_clean.jpg" alt="Con Non">
+          <span class="clean-tag">CLEAN &bull; 16:9 SHEET</span>
+        </div>
+        <div class="card-body">
+          <div class="card-title">Con Non &mdash; Sub-adult Triceratops (Bê Cà Phơ)</div>
+          <div class="card-desc">Con non 2.5 tấn: Tỉ lệ cơ thể nhỏ nhắn, sừng trán ngắn hướng thẳng, sừng mũi nhỏ như cục u, vảy da mềm hơn, ánh mắt tò mò cảnh giác.</div>
+          <div class="uuid-box">UUID: 2b5a6504-67e0-41a1-bc69-ff40c60ff413</div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="img-wrap">
+          <img src="images/ref_t_rex_clean.jpg" alt="T. rex">
+          <span class="clean-tag">CLEAN &bull; 16:9 SHEET</span>
+        </div>
+        <div class="card-body">
+          <div class="card-title">T. rex &mdash; Tyrannosaurus rex (Apex Predator)</div>
+          <div class="card-desc">Khủng long bạo chúa 8 tấn dài 12m: Đầu to hộp sọ đồ sộ, mắt nhìn trực diện hai mắt (binocular vision), hàm răng hình quả chuối khỏe vô địch, cơ hàm khổng lồ, da vảy sẫm màu đốm ngụy trang.</div>
+          <div class="uuid-box">UUID: 5b4f19b1-1d73-4823-8b6c-cb4f03d1f5fc</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bối cảnh -->
+    <div class="section-title">
+      <span>3. Bối Cảnh Địa Điểm (Architectural &amp; Environmental Cleanliness)</span>
+    </div>
+    <div class="grid">
+      <div class="card">
+        <div class="img-wrap">
+          <img src="images/ref_hell_creek_bank_clean.jpg" alt="Hell Creek Bank">
+          <span class="clean-tag">CLEAN &bull; 16:9 LANDSCAPE</span>
+        </div>
+        <div class="card-body">
+          <div class="card-title">Hell Creek Bank &mdash; Bờ Sông Đầm Lầy (Act 1 Open)</div>
+          <div class="card-desc">Bãi bồi phù sa sông uốn khúc: Cát pha sỏi và bùn đen, dương xỉ rậm rạp, thân gỗ lũa hóa thạch, sương mù ẩm ướt lơ lửng, lá bạch quả và ngô đồng cổ rải rác.</div>
+          <div class="uuid-box">UUID: 714a75c1-76e5-44d7-b60b-4da7db1579ad</div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="img-wrap">
+          <img src="images/ref_hell_creek_waterhole.jpg" alt="Hell Creek Waterhole">
+          <span class="clean-tag">CLEAN &bull; 16:9 LANDSCAPE</span>
+        </div>
+        <div class="card-body">
+          <div class="card-title">Hell Creek Waterhole &mdash; Vũng Nước Rừng Rậm</div>
+          <div class="card-desc">Vũng nước sâu trong rừng lá rộng cổ đại: Nước màu trà sẫm phản chiếu bầu trời mây tầng thấp, rêu bám bờ đá phù sa, bách đầm lầy và cây họ cọ cổ đại vươn cao.</div>
+          <div class="uuid-box">UUID: b3584e8d-534c-4d5e-8ba1-c9e96b2eb522</div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="img-wrap">
+          <img src="images/ref_hell_creek_trail_clean.jpg" alt="Hell Creek Trail">
+          <span class="clean-tag">CLEAN &bull; 16:9 LANDSCAPE</span>
+        </div>
+        <div class="card-body">
+          <div class="card-title">Hell Creek Trail &mdash; Lối Mòn Dấu Chân Bùn</div>
+          <div class="card-desc">Lối mòn lầy lội xuyên rừng cận nhiệt đới: Dấu chân 3 ngón khổng lồ của động vật ăn cỏ ngập nước, bùn nhão nén vệt xước móng vuốt, lá dương xỉ dập nát.</div>
+          <div class="uuid-box">UUID: f4efad11-9020-4ebb-a52a-4b6a30b2b92b</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="rule-note">
+      <strong>Quy trình Tuân thủ Rule 27, 28 &amp; 29:</strong><br>
+      Toàn bộ 8 assets đã được xử lý qua công cụ giải mã SynthID và xóa logo watermark (<span style="color:#79c0ff;">tools/remove_watermark_from_image.py</span>), sau đó tải ngược lên Flow để sinh ra các <strong>Media ID UUID sạch tuyệt đối</strong>. Các UUID này đã được liên kết trực tiếp vào 19 Scene Structured Prompts của Act 1.
+    </div>
+  </div>
+</body>
+</html>

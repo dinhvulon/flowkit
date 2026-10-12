@@ -71,6 +71,14 @@
       "action": "GENERATE_CREATURE",
       "prompt": "One single unified wildlife documentary photograph of a massive adult Tyrannosaurus rex prowling through the humid subtropical foliage of Hell Creek. The theropod is 12 metres long, built with enormous heavy muscular neck, massive jaw lined with serrated teeth, and completely featherless, fine-scaled brown-grey leathery skin. Dấu nhận diện: deep healed territorial scars run along the right side of its snout, and tiny flies hover around the saliva-slick corners of its lips. Lower legs and giant clawed feet are dusted with pale river silt. The predator moves with low-slung, heavy momentum, horizontal body posture counterbalanced by its thick tail. Strictly scientific palaeontological reconstruction, raw documentary footage style, dappled sunlight on wet scales. Strictly ONE unified photograph, strictly NO humans, NO people, NO scale figures, NO split screen.",
       "negative_prompt": "NOT roaring upright Godzilla pose, NOT Jurassic Park movie monster, NOT feathers, NOT bright cartoon scales, NOT 3D render, NOT CGI, NO humans, NO people, NO measuring bars."
+    },
+    {
+      "entity_name": "Nora Hand",
+      "type": "character_sheet_hands",
+      "aspect_ratio": "16:9",
+      "action": "GENERATE_TURNAROUND_SHEET",
+      "prompt": "16:9 multi-view reference model sheet showing 4 detailed close-up views of the forearms and hands of Nora, a 26-year-old athletic female field survivalist and vlogger. Panel 1: Dorsal view (back of hand) showing slender, strong, athletic female hands with natural warm sun-kissed skin tone, short trimmed clean unpainted fingernails, subtle veins and faint freckles. Panel 2: Palmar view (palm) showing natural hand creases, subtle calluses from field climbing, clean healthy skin. Panel 3: Side gripping view showing her hand holding and grasping a 22 cm prehistoric turtle shell basin. Panel 4: Forearm view showing her lower arm with rolled-up olive-tan linen survival tunic sleeve ending at mid-forearm, bare wrist with a thin simple weathered leather cord. Plain neutral grey studio background, photorealistic documentary lighting, high-definition skin pores and natural texture. Strictly NO male hands, NO hairy arms or knuckles, NO modern wristwatches, NO smartwatches, NO jewelry, NO painted or long fingernails, NO extra fingers.",
+      "negative_prompt": "NOT male hands, NOT hairy knuckles, NOT modern wristwatch, NOT smartwatch, NOT painted nails, NOT long acrylic nails, NOT rings, NOT bracelets, NOT 6 fingers, NOT extra digits, NOT deformed hands, NOT cartoon, NOT CGI render."
     }
   ]
 }

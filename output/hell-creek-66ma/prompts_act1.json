@@ -4,7 +4,11 @@
     "scene_name": "Cold Open / Master Shot — Glass Storm in Cave",
     "duration": 10,
     "aspect_ratio": "16:9",
-    "refs": ["Nora", "Nora Body", "Triceratops Juvenile"],
+    "refs": [
+      "Nora",
+      "Nora Body",
+      "Con Non"
+    ],
     "camera": {
       "viewpoint": "fixed camera resting firmly on the cave floor against the red earthen wall at knee height, angled outward toward the cave opening",
       "shot_size": "medium shot",
@@ -19,7 +23,7 @@
         "state": "Lying on her side against the earthen wall from frame 0, dark wet mud caked thickly over her forearms and neck, soaked broad palm frond draped over her torso, right boot visible in the crimson glow."
       },
       {
-        "name": "Triceratops Juvenile",
+        "name": "Con Non",
         "visual_lock": "Young Triceratops, 1.2 meters tall, pebbled scaly hide with dried red clay patches, tiny blunt brow horn buds.",
         "state": "Enters frame at 8s from the right cave entrance, thick front foot stepping down beside Nora."
       }
@@ -56,7 +60,10 @@
     "scene_name": "Establishing Drone — Hell Creek Dawn",
     "duration": 6,
     "aspect_ratio": "16:9",
-    "refs": ["Hell Creek Bank", "Hell Creek Trail"],
+    "refs": [
+      "Hell Creek Bank",
+      "Hell Creek Trail"
+    ],
     "camera": {
       "viewpoint": "high aerial viewpoint at 120 meters altitude drifting forward and downward",
       "shot_size": "extreme wide shot",
@@ -92,7 +99,11 @@
     "scene_name": "River Landing & Croc Threat",
     "duration": 6,
     "aspect_ratio": "16:9",
-    "refs": ["Nora", "Nora Body", "Hell Creek Bank"],
+    "refs": [
+      "Nora",
+      "Nora Body",
+      "Hell Creek Bank"
+    ],
     "camera": {
       "viewpoint": "handheld chest-level first-person POV wading in water, backing away toward gravel bank",
       "shot_size": "medium wide shot",
@@ -137,7 +148,11 @@
     "scene_name": "Gravel Bar Selfie — Soaked Arrival",
     "duration": 8,
     "aspect_ratio": "16:9",
-    "refs": ["Nora", "Nora Body", "Hell Creek Bank"],
+    "refs": [
+      "Nora",
+      "Nora Body",
+      "Hell Creek Bank"
+    ],
     "camera": {
       "viewpoint": "handheld selfie at 50 cm distance, Nora's right arm extended off-screen holding the viewpoint",
       "shot_size": "medium close-up",
@@ -162,9 +177,21 @@
       "speaker": "Nora",
       "delivery": "panting, shivering, fast conversational delivery with dry adrenaline shock, rising on the punchline 'patient'",
       "dialogue": [
-        {"t": "0-3s", "speaker": "Nora", "line": "Okay. I'm out, I'm out of the water."},
-        {"t": "3-6s", "speaker": "Nora", "line": "Those were crocodiles, two of them, and they were not curious."},
-        {"t": "6-8s", "speaker": "Nora", "line": "They were patient."}
+        {
+          "t": "0-3s",
+          "speaker": "Nora",
+          "line": "Okay. I'm out, I'm out of the water."
+        },
+        {
+          "t": "3-6s",
+          "speaker": "Nora",
+          "line": "Those were crocodiles, two of them, and they were not curious."
+        },
+        {
+          "t": "6-8s",
+          "speaker": "Nora",
+          "line": "They were patient."
+        }
       ]
     },
     "dramatic_craft": {
@@ -187,7 +214,9 @@
     "scene_name": "Approaching the Edmontosaurus Carcass",
     "duration": 8,
     "aspect_ratio": "16:9",
-    "refs": ["Hell Creek Bank"],
+    "refs": [
+      "Hell Creek Bank"
+    ],
     "camera": {
       "viewpoint": "handheld first-person POV walking forward along gravel bar",
       "shot_size": "medium wide shot",
@@ -206,9 +235,21 @@
       "speaker": "Nora",
       "delivery": "hushed off-screen commentary, wary, observational, sharp drop on 'stepped away'",
       "dialogue": [
-        {"t": "0-3s", "speaker": "Nora", "line": "Okay, that's a body. A big one."},
-        {"t": "3-6s", "speaker": "Nora", "line": "Something ate half of it last night and left."},
-        {"t": "6-8s", "speaker": "Nora", "line": "Left, or stepped away."}
+        {
+          "t": "0-3s",
+          "speaker": "Nora",
+          "line": "Okay, that's a body. A big one."
+        },
+        {
+          "t": "3-6s",
+          "speaker": "Nora",
+          "line": "Something ate half of it last night and left."
+        },
+        {
+          "t": "6-8s",
+          "speaker": "Nora",
+          "line": "Left, or stepped away."
+        }
       ]
     },
     "dramatic_craft": {
@@ -229,7 +270,9 @@
     "scene_name": "Bite Groove Detail on Bone",
     "duration": 8,
     "aspect_ratio": "16:9",
-    "refs": ["Hell Creek Bank"],
+    "refs": [
+      "Hell Creek Bank"
+    ],
     "camera": {
       "viewpoint": "macro first-person POV looking down at 30 cm distance",
       "shot_size": "extreme close-up",
@@ -248,9 +291,21 @@
       "speaker": "Nora",
       "delivery": "whispered, awe-struck, grim realization delivered with chill dry humor",
       "dialogue": [
-        {"t": "0-3s", "speaker": "Nora", "line": "Look at the size of that bite."},
-        {"t": "3-6s", "speaker": "Nora", "line": "My whole hand fits in one tooth mark."},
-        {"t": "6-8s", "speaker": "Nora", "line": "I'm standing in its kitchen."}
+        {
+          "t": "0-3s",
+          "speaker": "Nora",
+          "line": "Look at the size of that bite."
+        },
+        {
+          "t": "3-6s",
+          "speaker": "Nora",
+          "line": "My whole hand fits in one tooth mark."
+        },
+        {
+          "t": "6-8s",
+          "speaker": "Nora",
+          "line": "I'm standing in its kitchen."
+        }
       ]
     },
     "dramatic_craft": {
@@ -271,7 +326,11 @@
     "scene_name": "Selfie 12-Hour Clock & Misbelief",
     "duration": 8,
     "aspect_ratio": "16:9",
-    "refs": ["Nora", "Nora Body", "Hell Creek Bank"],
+    "refs": [
+      "Nora",
+      "Nora Body",
+      "Hell Creek Bank"
+    ],
     "camera": {
       "viewpoint": "handheld selfie at 60 cm distance, Nora's right arm extended off-screen holding the viewpoint",
       "shot_size": "medium shot",
@@ -296,9 +355,21 @@
       "speaker": "Nora",
       "delivery": "confident, articulate, travel vlogger arrogance with subtle ironic detachment",
       "dialogue": [
-        {"t": "0-3s", "speaker": "Nora", "line": "I picked today on purpose."},
-        {"t": "3-6s", "speaker": "Nora", "line": "Twelve hours from now, the sky over there catches fire."},
-        {"t": "6-8s", "speaker": "Nora", "line": "I'm just here to watch."}
+        {
+          "t": "0-3s",
+          "speaker": "Nora",
+          "line": "I picked today on purpose."
+        },
+        {
+          "t": "3-6s",
+          "speaker": "Nora",
+          "line": "Twelve hours from now, the sky over there catches fire."
+        },
+        {
+          "t": "6-8s",
+          "speaker": "Nora",
+          "line": "I'm just here to watch."
+        }
       ]
     },
     "dramatic_craft": {
@@ -321,28 +392,49 @@
     "scene_name": "Finding Turtle Shell & Hollow Bank",
     "duration": 8,
     "aspect_ratio": "16:9",
-    "refs": ["Hell Creek Bank"],
+    "refs": [
+      "Nora Hand",
+      "Hell Creek Bank"
+    ],
     "camera": {
       "viewpoint": "handheld chest-level first-person POV looking down, then panning up",
       "shot_size": "medium shot",
-      "description": "First-person POV looking down at gravel, then panning right to the water's edge, then tilting up to the far bank. Both hands are empty until picking up shell. The camera lens is completely outside the frame."
+      "description": "First-person POV looking down at gravel, then panning right to the water's edge, then tilting up to the far bank. Nora's hands are visible reaching down into frame. The camera lens is completely outside the frame."
     },
     "style": "handheld observational documentary footage, natural morning light, organic camera handling",
     "setting": "Hell Creek gravel bank. A dry hollow cave sits under the red earthen bank across the river; a dark croc back lies below it.",
-    "characters": [],
+    "characters": [
+      {
+        "name": "Nora Hand",
+        "visual_lock": "Slender athletic female forearms and hands matching Nora Hand reference, natural warm sun-kissed skin tone, short trimmed clean unpainted fingernails, rolled-up linen sleeve at mid-forearm. NO male hands, NO hairy knuckles, NO modern jewelry/smartwatch.",
+        "state": "Reaching down into frame from below camera at 1s to pick up turtle shell."
+      }
+    ],
     "in_place": "An intact, hollowed-out turtle shell lies on the pale gravel 1 meter ahead from frame 0.",
     "timeline_action": {
-      "0-3s": "Both hands reach down and pick up the dry 22 cm olive turtle shell from the gravel, turning it over to show its smooth hollow interior.",
-      "3-6s": "The viewpoint pans right to the water's edge, scooping clean river water into the shell basin.",
+      "0-3s": "Nora's slender female hands matching Nora Hand reference reach down from below the frame and pick up the dry 22 cm olive turtle shell from the gravel, turning it over to show its smooth hollow interior.",
+      "3-6s": "Holding the shell with both female hands, the viewpoint pans right to the water's edge, scooping clean river water into the shell basin.",
       "6-8s": "The camera tilts up across the river to the far red earthen bank, lingering 2 seconds on a shallow dry cave above a waiting crocodile."
     },
     "speech": {
       "speaker": "Nora",
       "delivery": "pragmatic, quick problem-solving, casual dismissal on 'So, no'",
       "dialogue": [
-        {"t": "0-3s", "speaker": "Nora", "line": "Turtle shell, size of a dinner plate."},
-        {"t": "3-6s", "speaker": "Nora", "line": "There's a dry hollow under that far bank."},
-        {"t": "6-8s", "speaker": "Nora", "line": "Crocodiles right below it. So, no."}
+        {
+          "t": "0-3s",
+          "speaker": "Nora",
+          "line": "Turtle shell, size of a dinner plate."
+        },
+        {
+          "t": "3-6s",
+          "speaker": "Nora",
+          "line": "There's a dry hollow under that far bank."
+        },
+        {
+          "t": "6-8s",
+          "speaker": "Nora",
+          "line": "Crocodiles right below it. So, no."
+        }
       ]
     },
     "dramatic_craft": {
@@ -354,6 +446,7 @@
     "audio": "Gravel scraping as shell is lifted, gentle water scoop slosh, distant low reptilian hiss",
     "physics": "Hands lift shell smoothly at 1s; water enters shell with fluid surface tension; camera tilt up takes 1.5s",
     "negative_constraints": [
+      "NO male hands, NO hairy arms or knuckles, NO modern wristwatch or smartwatch, NO painted fingernails, NO extra fingers, strictly matching Nora Hand reference.",
       "NO manufactured modern bottle, NO metal canteen. The camera lens and operator are completely outside the visible frame and never seen.",
       "Word count strictly 21 words matching script.md exactly."
     ]
@@ -363,7 +456,11 @@
     "scene_name": "Knotting Turtle Shell Vessel",
     "duration": 8,
     "aspect_ratio": "16:9",
-    "refs": ["Nora", "Nora Body", "Hell Creek Bank"],
+    "refs": [
+      "Nora",
+      "Nora Body",
+      "Hell Creek Bank"
+    ],
     "camera": {
       "viewpoint": "fixed camera resting on a bleached driftwood log 50 cm high, 2 meters away",
       "shot_size": "medium shot",
@@ -388,9 +485,21 @@
       "speaker": "Nora",
       "delivery": "focused, practical crafting tone, shifting to dry humor punchline on 'crocodile pool'",
       "dialogue": [
-        {"t": "0-3s", "speaker": "Nora", "line": "Palm fibre, twisted twice, through the gaps in the rim."},
-        {"t": "3-6s", "speaker": "Nora", "line": "If this knot fails today,"},
-        {"t": "6-8s", "speaker": "Nora", "line": "I'm drinking from the crocodile pool."}
+        {
+          "t": "0-3s",
+          "speaker": "Nora",
+          "line": "Palm fibre, twisted twice, through the gaps in the rim."
+        },
+        {
+          "t": "3-6s",
+          "speaker": "Nora",
+          "line": "If this knot fails today,"
+        },
+        {
+          "t": "6-8s",
+          "speaker": "Nora",
+          "line": "I'm drinking from the crocodile pool."
+        }
       ]
     },
     "dramatic_craft": {
@@ -412,7 +521,9 @@
     "scene_name": "Forest Wall & Game Trail Entrance",
     "duration": 8,
     "aspect_ratio": "16:9",
-    "refs": ["Hell Creek Trail"],
+    "refs": [
+      "Hell Creek Trail"
+    ],
     "camera": {
       "viewpoint": "handheld chest-level first-person POV standing still, then slow horizontal pan",
       "shot_size": "medium wide shot",
@@ -431,9 +542,21 @@
       "speaker": "Nora",
       "delivery": "whispered, cautious, analytical narration, lingering on 'Something big'",
       "dialogue": [
-        {"t": "0-3s", "speaker": "Nora", "line": "Forest is a solid wall, I can't see two metres in."},
-        {"t": "3-6s", "speaker": "Nora", "line": "But that's a path."},
-        {"t": "6-8s", "speaker": "Nora", "line": "Something big made it."}
+        {
+          "t": "0-3s",
+          "speaker": "Nora",
+          "line": "Forest is a solid wall, I can't see two metres in."
+        },
+        {
+          "t": "3-6s",
+          "speaker": "Nora",
+          "line": "But that's a path."
+        },
+        {
+          "t": "6-8s",
+          "speaker": "Nora",
+          "line": "Something big made it."
+        }
       ]
     },
     "dramatic_craft": {
@@ -454,7 +577,9 @@
     "scene_name": "Macro Footprint with Cloudy Water",
     "duration": 8,
     "aspect_ratio": "16:9",
-    "refs": ["Hell Creek Trail"],
+    "refs": [
+      "Hell Creek Trail"
+    ],
     "camera": {
       "viewpoint": "macro first-person POV looking straight down from 1 meter height",
       "shot_size": "extreme close-up",
@@ -473,9 +598,21 @@
       "speaker": "Nora",
       "delivery": "hushed, urgent deduction, tense gravelly whisper on 'close'",
       "dialogue": [
-        {"t": "0-3s", "speaker": "Nora", "line": "Round footprint, wider than my shoulders."},
-        {"t": "3-6s", "speaker": "Nora", "line": "Water inside is still cloudy, so it's fresh."},
-        {"t": "6-8s", "speaker": "Nora", "line": "Whatever made this is close."}
+        {
+          "t": "0-3s",
+          "speaker": "Nora",
+          "line": "Round footprint, wider than my shoulders."
+        },
+        {
+          "t": "3-6s",
+          "speaker": "Nora",
+          "line": "Water inside is still cloudy, so it's fresh."
+        },
+        {
+          "t": "6-8s",
+          "speaker": "Nora",
+          "line": "Whatever made this is close."
+        }
       ]
     },
     "dramatic_craft": {
@@ -496,7 +633,11 @@
     "scene_name": "Over-The-Shoulder First Herd Sighting",
     "duration": 8,
     "aspect_ratio": "16:9",
-    "refs": ["Nora", "Nora Body", "Hell Creek Trail"],
+    "refs": [
+      "Nora",
+      "Nora Body",
+      "Hell Creek Trail"
+    ],
     "camera": {
       "viewpoint": "over-the-shoulder POV behind Nora's left shoulder, peering through fern fronds",
       "shot_size": "medium shot",
@@ -526,9 +667,21 @@
       "speaker": "Nora",
       "delivery": "hushed whisper, tense awe, slight nervous hesitation on 'I hope'",
       "dialogue": [
-        {"t": "0-3s", "speaker": "Nora", "line": "There. Seven, eight of them, horned, grazing."},
-        {"t": "3-6s", "speaker": "Nora", "line": "They're the biggest things in this valley."},
-        {"t": "6-8s", "speaker": "Nora", "line": "Big means safe, I hope."}
+        {
+          "t": "0-3s",
+          "speaker": "Nora",
+          "line": "There. Seven, eight of them, horned, grazing."
+        },
+        {
+          "t": "3-6s",
+          "speaker": "Nora",
+          "line": "They're the biggest things in this valley."
+        },
+        {
+          "t": "6-8s",
+          "speaker": "Nora",
+          "line": "Big means safe, I hope."
+        }
       ]
     },
     "dramatic_craft": {
@@ -550,7 +703,11 @@
     "scene_name": "Overconfident Selfie Before Approach",
     "duration": 8,
     "aspect_ratio": "16:9",
-    "refs": ["Nora", "Nora Body", "Hell Creek Trail"],
+    "refs": [
+      "Nora",
+      "Nora Body",
+      "Hell Creek Trail"
+    ],
     "camera": {
       "viewpoint": "handheld selfie at 50 cm distance, Nora's right arm extended off-screen holding the viewpoint",
       "shot_size": "medium close-up",
@@ -575,9 +732,21 @@
       "speaker": "Nora",
       "delivery": "smug, playful, classic travel vlogger arrogance, airy dismissal on 'Just watch'",
       "dialogue": [
-        {"t": "0-3s", "speaker": "Nora", "line": "They're massive, but they're strictly vegetarians."},
-        {"t": "3-6s", "speaker": "Nora", "line": "They will completely ignore me out here."},
-        {"t": "6-8s", "speaker": "Nora", "line": "Just you watch."}
+        {
+          "t": "0-3s",
+          "speaker": "Nora",
+          "line": "They're massive, but they're strictly vegetarians."
+        },
+        {
+          "t": "3-6s",
+          "speaker": "Nora",
+          "line": "They will completely ignore me out here."
+        },
+        {
+          "t": "6-8s",
+          "speaker": "Nora",
+          "line": "Just you watch."
+        }
       ]
     },
     "dramatic_craft": {
@@ -600,7 +769,9 @@
     "scene_name": "POV Stepping Out & Bull Alert",
     "duration": 6,
     "aspect_ratio": "16:9",
-    "refs": ["Triceratops Bull"],
+    "refs": [
+      "Bò Đực"
+    ],
     "camera": {
       "viewpoint": "handheld chest-level first-person POV walking forward 2 steps then freezing",
       "shot_size": "medium wide shot",
@@ -646,7 +817,9 @@
     "scene_name": "POV Bull Charge Chain (1/3) — The Charge",
     "duration": 4,
     "aspect_ratio": "16:9",
-    "refs": ["Triceratops Bull"],
+    "refs": [
+      "Bò Đực"
+    ],
     "camera": {
       "viewpoint": "handheld chest-level first-person POV frozen in terror",
       "shot_size": "medium shot",
@@ -690,7 +863,9 @@
     "scene_name": "POV Bull Charge Chain (2/3) — The Skid & Warning",
     "duration": 4,
     "aspect_ratio": "16:9",
-    "refs": ["Triceratops Bull"],
+    "refs": [
+      "Bò Đực"
+    ],
     "camera": {
       "viewpoint": "handheld chest-level first-person POV jerking backward half a step",
       "shot_size": "medium shot",
@@ -734,7 +909,9 @@
     "scene_name": "POV Bull Charge Chain (3/3) — The Fall into Ferns",
     "duration": 4,
     "aspect_ratio": "16:9",
-    "refs": ["Triceratops Bull"],
+    "refs": [
+      "Bò Đực"
+    ],
     "camera": {
       "viewpoint": "handheld first-person POV tumbling backward onto ground, tilting up to canopy",
       "shot_size": "medium shot to extreme close-up of foliage",
@@ -779,7 +956,11 @@
     "scene_name": "Lying in Ferns — Adrenaline Relief Selfie",
     "duration": 8,
     "aspect_ratio": "16:9",
-    "refs": ["Nora", "Nora Body", "Hell Creek Trail"],
+    "refs": [
+      "Nora",
+      "Nora Body",
+      "Hell Creek Trail"
+    ],
     "camera": {
       "viewpoint": "handheld selfie from above, Nora lying on her side in the ferns looking up at viewpoint",
       "shot_size": "medium close-up",
@@ -804,9 +985,21 @@
       "speaker": "Nora",
       "delivery": "breathless, raspy gasping, transitioning to dry self-deprecating humor on 'Message received'",
       "dialogue": [
-        {"t": "0-3s", "speaker": "Nora", "line": "He stopped. He stopped six metres short."},
-        {"t": "3-6s", "speaker": "Nora", "line": "That was a warning, not an attack."},
-        {"t": "6-8s", "speaker": "Nora", "line": "Message received, big guy."}
+        {
+          "t": "0-3s",
+          "speaker": "Nora",
+          "line": "He stopped. He stopped six metres short."
+        },
+        {
+          "t": "3-6s",
+          "speaker": "Nora",
+          "line": "That was a warning, not an attack."
+        },
+        {
+          "t": "6-8s",
+          "speaker": "Nora",
+          "line": "Message received, big guy."
+        }
       ]
     },
     "dramatic_craft": {
@@ -829,7 +1022,11 @@
     "scene_name": "Seated at Edge — Act 1 Task Anchor",
     "duration": 10,
     "aspect_ratio": "16:9",
-    "refs": ["Nora", "Nora Body", "Hell Creek Trail"],
+    "refs": [
+      "Nora",
+      "Nora Body",
+      "Hell Creek Trail"
+    ],
     "camera": {
       "viewpoint": "fixed camera resting on a mossy tree stump 2 meters away at chest height of a seated person",
       "shot_size": "medium shot",
@@ -859,9 +1056,21 @@
       "speaker": "Nora",
       "delivery": "calm, disciplined, quiet resolve, natural conversational cadence",
       "dialogue": [
-        {"t": "0-3s", "speaker": "Nora", "line": "So I can't walk in. Not yet."},
-        {"t": "3-7s", "speaker": "Nora", "line": "I sit here at the edge, where they can see me."},
-        {"t": "7-10s", "speaker": "Nora", "line": "I don't move. And I wait."}
+        {
+          "t": "0-3s",
+          "speaker": "Nora",
+          "line": "So I can't walk in. Not yet."
+        },
+        {
+          "t": "3-7s",
+          "speaker": "Nora",
+          "line": "I sit here at the edge, where they can see me."
+        },
+        {
+          "t": "7-10s",
+          "speaker": "Nora",
+          "line": "I don't move. And I wait."
+        }
       ]
     },
     "dramatic_craft": {

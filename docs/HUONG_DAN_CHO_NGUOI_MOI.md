@@ -77,6 +77,8 @@ Rất nhiều người mới mắc sai lầm là nhảy thẳng vào bấm sinh 
 │    lighting) để ảnh trông như phim tài liệu thực tế, cấm 100% CGI/3D      │
 │ 3. Soạn thảo file ref_prompts.json: Chốt chi tiết từng câu prompt cho:     │
 │    • Nora Body: Turnaround Sheet 16:9 đã mặc hoàn chỉnh trang phục         │
+│    • Nora Hand (16:9): Cận cảnh cẳng tay & bàn tay vlogger cho shot POV    │
+│      tương tác (nhặt đồ, vốc nước, gạt cành) tránh lỗi tay đàn ông (Bài 72)│
 │    • Bối cảnh (16:9): Không người, không thước đo (Rule 34)                │
 │    • Sinh vật / Đạo cụ (16:9): Chuẩn giải phẫu, da sần, bùn đỏ            │
 │ 4. ⛔ [CỔNG DUYỆT PROMPT REF]: Trình danh sách Prompt Ref cho Bạn duyệt!   │
