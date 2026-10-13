@@ -350,6 +350,30 @@ Example:
 
 For multi-character shots, write each character as a separate block, then describe left/center/right blocking.
 
+## Rule 57, 58 & 60: 16:9 Turnaround Contract & Ironclad 1:1 Face Lock (User Lock 13/10/2026)
+
+When designing references for living entities (Characters, Megafauna, Creatures):
+
+### 1. Creature & Megafauna Turnaround Sheet 16:9 (Rule 58)
+- **STRICTLY FORBIDDEN:** Single-angle photographs (Single Photograph) for major creatures/animals (causes mirror horn flip, lost asymmetry, and anatomical collapse).
+- **Mandatory 3-Panel Format in One 16:9 Image:**
+  - **Panel 1 (3/4 Left View):** Shows full body silhouette and left anatomical traits (e.g. broken left brow horn snapped to 30cm weathered fibrous keratin core).
+  - **Panel 2 (3/4 Right View):** Shows opposing side and asymmetric traits (e.g. intact long right brow horn 100cm).
+  - **Panel 3 (Close-Up Frontal Skull/Face):** Head combat anatomy, beak/jaws, amber eyes with vertical slit pupils, neck frill wrinkles, keratin texture.
+- **5-Layer DNA Anchors:** Proportion Lock, Bone & Face Structure Layer, Skin/Epidermis vi mô Rule 57, Permanent Prop/Geometry, and Forbidden Drift & Anti-Smoke Lock (`NO train-engine white smoke plumes; breath vapor is subtle faint mist only`).
+
+### 2. Biological Material & Anti-CGI Realism (Rule 57)
+- **Skin & Osteoderms:** `rugged pebbled reptilian hide covered in irregular osteoderms and thick keratinized tubercles; thick skin folds around neck dewlap caked in dried red mud`.
+- **Keratin & Battle Wear:** Fibrous weathered keratin, healed scars, faint frothy saliva at beak/jaw corners.
+- **Zero Plastic / Zero CGI:** STRICTLY NO smooth plastic texture, NO wax museum statue, NO clean studio lighting, NO cartoonish 3D render.
+
+### 3. Ironclad 1:1 Face Lock via Mandatory Reference Command & Facial Geometry DNA (Rule 60)
+- **Use Existing Reference Directly:** Never crop or fragment media if an existing locked reference is available.
+- **Mandatory 1:1 Command:** Always begin with: `"[Name]'s face is an exact 1:1 identical match to the attached [Name] reference image. Perfectly preserve her exact facial likeness from the reference photo without changes."`
+- **Facial Geometry DNA:** Explicitly describe facial bone structure: `youthful 22-year-old soft feminine heart-shaped face, delicate rounded chin, soft cheeks, petite straight nose, distinctively FULL PLUMP PILLOWY LIPS with defined Cupid's bow, large hazel-green almond eyes`.
+- **Anti-Drift Negative Constraints:** `STRICTLY FORBIDDEN: strictly NO square jaw, NO long rectangular face, NO thin lips, NO hollow cheeks, NO aged appearance (must look 22-23), NO facial distortion, NO face drift.`
+- **Empty Hand Lock:** Camera lens is completely outside visible frame; character's free hand is completely empty; strictly NO phone, NO smartphone, NO device in hand.
+
 ## Common Failure Checks
 
 - Is the character only attractive, not memorable?
