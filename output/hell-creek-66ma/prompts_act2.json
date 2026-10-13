@@ -19,7 +19,7 @@
     "characters": [
       {
         "name": "Nora",
-        "visual_lock": "Nora, 26, auburn hair in practical messy bun, tailored olive-tan linen survival tunic matching Nora Body ref.",
+        "visual_lock": "Nora, youthful 22-year-old female vlogger with soft feminine heart-shaped face, delicate rounded chin, soft cheeks, petite straight nose, distinctively FULL PLUMP PILLOWY LIPS with defined Cupid's bow, luminous hazel-green almond eyes, honey-blonde hair tied in a high wavy ponytail with wispy curtain bangs framing forehead and temples, fair smooth creamy skin (strictly NO red hair, NO freckles). Curvaceous athletic hourglass figure matching Nora Body ref: form-fitting tailored olive-tan linen tunic with laced deep V-neckline cinched by dark leather belt. Empty hands, strictly NO camera, NO viewpoint.",
         "state": "Seated motionless on an exposed conifer root in deep shade at the clearing's edge from frame 0."
       }
     ],
@@ -126,7 +126,7 @@
     "characters": [
       {
         "name": "Nora",
-        "visual_lock": "Nora, 26, auburn hair in messy bun with loose temple strands, freckles, tailored linen field tunic with laced deep V-neckline matching Nora Body ref.",
+        "visual_lock": "Nora, youthful 22-year-old female vlogger with soft feminine heart-shaped face, delicate rounded chin, soft cheeks, petite straight nose, distinctively FULL PLUMP PILLOWY LIPS with defined Cupid's bow, luminous hazel-green almond eyes, honey-blonde hair tied in a high wavy ponytail with wispy curtain bangs framing forehead and temples, fair smooth creamy skin (strictly NO red hair, NO freckles). Curvaceous athletic hourglass figure matching Nora Body ref: form-fitting tailored olive-tan linen tunic with laced deep V-neckline cinched by dark leather belt. Empty hands, strictly NO camera, NO viewpoint.",
         "state": "Crouched in leafy shadow from frame 0, sweat glinting on collarbone, dirt smudge on jawline."
       }
     ],
@@ -239,7 +239,7 @@
     "characters": [
       {
         "name": "Nora",
-        "visual_lock": "Nora, 26, tall statuesque woman with athletic hourglass figure, copper-red hair in bun, tailored olive-tan linen survival tunic matching Nora Body ref.",
+        "visual_lock": "Nora, youthful 22-year-old female vlogger with soft feminine heart-shaped face, delicate rounded chin, soft cheeks, petite straight nose, distinctively FULL PLUMP PILLOWY LIPS with defined Cupid's bow, luminous hazel-green almond eyes, honey-blonde hair tied in a high wavy ponytail with wispy curtain bangs framing forehead and temples, fair smooth creamy skin (strictly NO red hair, NO freckles). Curvaceous athletic hourglass figure matching Nora Body ref: form-fitting tailored olive-tan linen tunic with laced deep V-neckline cinched by dark leather belt. Empty hands, strictly NO camera, NO viewpoint.",
         "state": "Standing waist-up in profile to the camera from frame 0, framed against the conifer trunk."
       }
     ],
@@ -367,7 +367,7 @@
     "characters": [
       {
         "name": "Nora",
-        "visual_lock": "Nora, 26, tall statuesque woman with athletic hourglass figure, copper-red hair in bun, tailored olive-tan linen survival tunic matching Nora Body ref.",
+        "visual_lock": "Nora, youthful 22-year-old female vlogger with soft feminine heart-shaped face, delicate rounded chin, soft cheeks, petite straight nose, distinctively FULL PLUMP PILLOWY LIPS with defined Cupid's bow, luminous hazel-green almond eyes, honey-blonde hair tied in a high wavy ponytail with wispy curtain bangs framing forehead and temples, fair smooth creamy skin (strictly NO red hair, NO freckles). Curvaceous athletic hourglass figure matching Nora Body ref: form-fitting tailored olive-tan linen tunic with laced deep V-neckline cinched by dark leather belt. Empty hands, strictly NO camera, NO viewpoint.",
         "state": "Kneeling at the edge of the clay pool from frame 0 with hands in red mud."
       }
     ],
@@ -432,7 +432,7 @@
     "characters": [
       {
         "name": "Nora",
-        "visual_lock": "Nora, 26, copper hair in bun, mud-caked neck, tailored olive-tan tunic matching Nora Body ref.",
+        "visual_lock": "Nora, youthful 22-year-old female vlogger with soft feminine heart-shaped face, delicate rounded chin, soft cheeks, petite straight nose, distinctively FULL PLUMP PILLOWY LIPS with defined Cupid's bow, luminous hazel-green almond eyes, honey-blonde hair tied in a high wavy ponytail with wispy curtain bangs framing forehead and temples, fair smooth creamy skin (strictly NO red hair, NO freckles). Curvaceous athletic hourglass figure matching Nora Body ref: form-fitting tailored olive-tan linen tunic with laced deep V-neckline cinched by dark leather belt. Empty hands, strictly NO camera, NO viewpoint.",
         "state": "Standing frozen in the right foreground from frame 0."
       },
       {
@@ -496,13 +496,13 @@
       "shot_size": "extreme close-up",
       "description": "Macro camera held static 20 cm from forearm. Nora's bare mud-caked forearm extends horizontally along the lower third. Viewpoint is completely outside visible frame."
     },
-    "style": "raw natural history macro cinematography, shallow depth of field, warm dappled sunlight",
+    "style": "raw natural history macro cinematography, deep focus, deep depth of field (f/8 aperture), entire frame sharp, warm dappled sunlight",
     "setting": "Shaded understory, warm sunlight glinting off red clay crust on skin.",
     "characters": [],
     "in_place": "Nora's mud-caked left forearm is already held horizontally in the lower third of frame from frame 0.",
     "timeline_action": {
       "0-2s": "The pebbled, leathery snout of the juvenile dinosaur enters from the top edge, flared warm nostrils sniffing the drying red mud on Nora's forearm.",
-      "2-4s": "The juvenile exhales a warm puff of air that rustles the fine hairs on her arm, gives a gentle two-note squeak, and pulls back smoothly."
+      "2-4s": "The juvenile exhales a gentle breath of air that rustles the fine hairs on her arm, gives a gentle two-note squeak, and pulls back smoothly."
     },
     "speech": {
       "speaker": "Nora",
@@ -516,7 +516,7 @@
       "subtext": "Nature bridges species through the common soil of the earth",
       "prop_and_detail": "Pebbled scale texture on reptilian nostrils; fine reddish clay dust on skin; tiny moisture droplets on snout rim"
     },
-    "audio": "Deep wet nasal sniff, warm gentle puff of breath rustling arm hairs, soft two-tone chirrup squeak",
+    "audio": "Deep wet nasal sniff, warm gentle breath of breath rustling arm hairs, soft two-tone chirrup squeak",
     "physics": "Exhaled breath displaces micro-droplets on skin; dinosaur snout maintains rigid biological bone structure without morphing",
     "negative_constraints": [
       "The camera lens and recording apparatus are completely outside the visible frame and never seen.",
@@ -824,7 +824,7 @@
     "characters": [
       {
         "name": "Nora",
-        "visual_lock": "Nora, 26, copper hair in loose messy bun, trembling lips, pale face with dense freckles, tailored tunic with laced plunging V-neckline matching Nora Body ref.",
+        "visual_lock": "Nora, youthful 22-year-old female vlogger with soft feminine heart-shaped face, delicate rounded chin, soft cheeks, petite straight nose, distinctively FULL PLUMP PILLOWY LIPS with defined Cupid's bow, luminous hazel-green almond eyes, honey-blonde hair tied in a high wavy ponytail with wispy curtain bangs framing forehead and temples, fair smooth creamy skin (strictly NO red hair, NO freckles). Curvaceous athletic hourglass figure matching Nora Body ref: form-fitting tailored olive-tan linen tunic with laced deep V-neckline cinched by dark leather belt. Empty hands, strictly NO camera, NO viewpoint.",
         "state": "Resting back against rotting conifer log from frame 0, chest heaving rapidly."
       }
     ],
@@ -1069,7 +1069,7 @@
     "characters": [
       {
         "name": "Nora",
-        "visual_lock": "Nora, 26, copper hair in loose bun with loose wisps, sweat and red mud caked on collarbone, tailored tunic with deep V-neckline matching Nora Body ref.",
+        "visual_lock": "Nora, youthful 22-year-old female vlogger with soft feminine heart-shaped face, delicate rounded chin, soft cheeks, petite straight nose, distinctively FULL PLUMP PILLOWY LIPS with defined Cupid's bow, luminous hazel-green almond eyes, honey-blonde hair tied in a high wavy ponytail with wispy curtain bangs framing forehead and temples, fair smooth creamy skin (strictly NO red hair, NO freckles). Curvaceous athletic hourglass figure matching Nora Body ref: form-fitting tailored olive-tan linen tunic with laced deep V-neckline cinched by dark leather belt. Empty hands, strictly NO camera, NO viewpoint.",
         "state": "Huddled low between two pillar legs from frame 0, heaving with adrenaline relief."
       }
     ],
@@ -1175,7 +1175,7 @@
     "characters": [
       {
         "name": "Nora",
-        "visual_lock": "Nora, 26, tall athletic statuesque build, copper hair in bun, tailored olive-tan tunic matching Nora Body ref.",
+        "visual_lock": "Nora, youthful 22-year-old female vlogger with soft feminine heart-shaped face, delicate rounded chin, soft cheeks, petite straight nose, distinctively FULL PLUMP PILLOWY LIPS with defined Cupid's bow, luminous hazel-green almond eyes, honey-blonde hair tied in a high wavy ponytail with wispy curtain bangs framing forehead and temples, fair smooth creamy skin (strictly NO red hair, NO freckles). Curvaceous athletic hourglass figure matching Nora Body ref: form-fitting tailored olive-tan linen tunic with laced deep V-neckline cinched by dark leather belt. Empty hands, strictly NO camera, NO viewpoint.",
         "state": "Sitting comfortably on a mossy root waist-up from frame 0, relaxed posture."
       },
       {

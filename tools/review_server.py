@@ -249,6 +249,9 @@ class ReviewHandler(SimpleHTTPRequestHandler):
             self.send_header("Content-Type", content_type)
             self.send_header("Content-Length", len(data))
             self.send_header("Access-Control-Allow-Origin", "*")
+            self.send_header("Cache-Control", "no-cache, no-store, must-revalidate")
+            self.send_header("Pragma", "no-cache")
+            self.send_header("Expires", "0")
             if content_type == "video/mp4":
                 self.send_header("Accept-Ranges", "bytes")
             self.end_headers()

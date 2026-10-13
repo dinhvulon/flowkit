@@ -13,11 +13,24 @@ FORBIDDEN_GHOST_DEVICE_PATTERNS = [
     (r"\b(selfie[- ]?stick)\b", "FORBIDDEN: Mentioning 'selfie stick' renders a physical stick in the shot."),
     (r"\b(device)\b", "FORBIDDEN: Mentioning 'device' causes AI to render gadgets or screens."),
     (r"(?<!off-)(?<!on-)\bscreen\b", "FORBIDDEN: Mentioning 'screen' (except 'off-screen' / 'on-screen') may cause AI to render a phone or monitor screen. Use 'in the frame' instead."),
+    (r"\b(celular|tel[eé]fono|m[oó]vil|pantalla|dispositivo|palo\s+de\s+selfie|c[aá]mara)\b", "FORBIDDEN (Spanish dialogue): device words in Spanish ('celular', 'teléfono', 'móvil', 'pantalla', 'dispositivo', 'palo de selfie', 'cámara') render a gadget in the scene, same as 'phone'. Rephrase the line (e.g. 'miren esto' instead of 'miren a la cámara')."),
     (r"\bnegative:\b", "FORBIDDEN: 'Negative:' lines are banned in plain-text prompts. Use plain constraint sentences in prompt body, or use 'negative_constraints' in JSON prompts."),
     (r"\b(?:starts?\s+(?:from\s+)?(?:just\s+)?behind|from\s+just\s+behind)\s+(?:her|his|their)\s+(?:head|back)\b", "FORBIDDEN (Rule 41): Starting behind character's head/back and turning around switches to 3rd-person and causes AI to render a physical camera/lens in hand (Camera Materialization Glitch)."),
     (r"\b(?:brings?|turns?)\s+the\s+camera\s+around\s+(?:her|his|their)\s+side\b", "FORBIDDEN (Rule 41): 'brings the camera around' causes AI to treat camera as a physical handheld prop/lens. Use 'pivots extended arm back toward herself'."),
     (r"\bholds?\s+the\s+camera\s+in\s+(?:her|his|their)\s+hand\b", "FORBIDDEN (Rule 41): Camera must NOT be described as an object held in hand. The viewer looks directly through the lens; gripping hand is off-screen."),
     (r"\b(?:180-degree|180\s*deg|whip\s+pan|pivoting\s+the\s+viewpoint)\b.*\b(?:turning\s+to\s+face|turning\s+around\s+to\s+face|settles?\s+.*selfie|back\s+toward\s+(?:nora|her|him|herself|himself))\b", "FORBIDDEN (Rule 42): 180° camera flip between 1st-person POV and selfie in a single shot breaks single-perspective vlog purity. Use 100% Selfie (over-the-shoulder) or 100% POV."),
+]
+
+FORBIDDEN_CREATURE_AND_LIGHTING_PATTERNS = [
+    (r"\b(?:hot\s+condensed\s+breath|breath\s+vapor|vapor\s+mist|white\s+steam|smoke\s+plumes?|(?:exhaling|blasting|snort(?:ing|s)?|nostrils?)\s+(?:(?:\w+\s+){0,3})(?:vapor|mist|steam|smoke|puff|plume))\b",
+     "ANTI_SMOKE_VIOLATION",
+     "FORBIDDEN (Rule 62 Anti-Smoke Lock): Breathing smoke, steam, or condensed vapor plumes from nostrils is banned. It causes AI to render cartoon locomotive steam plumes. Use 'clean dry nostrils, transparent clean exhalation, strictly NO smoke or steam'."),
+    (r"\b(?:sunlight\s+streaming|volumetric\s+(?:rays|beams)|god\s*rays|magical\s+sunbeams)\b",
+     "ARTIFICIAL_LIGHTING_VIOLATION",
+     "FORBIDDEN (Rule 59 & 62 Anti-CGI Lock): 'sunlight streaming' or 'god rays' causes artificial 3D CGI studio lighting and specular plastic sheen. Use 'flat natural overcast diffuse daylight'."),
+    (r"\b(?:shallow\s+depth\s+of\s+field|bokeh|blurred\s+background|blurry\s+background)\b",
+     "BOKEH_VIOLATION",
+     "FORBIDDEN (Rule 62 Deep Focus Lock): Shallow DoF / bokeh blurs prehistoric survival environment. Use 'deep focus, deep depth of field (f/8 aperture), entire frame sharp'."),
 ]
 
 def is_json_prompt(prompt: str) -> tuple[bool, dict | list | None]:
@@ -141,6 +154,19 @@ def lint_json_prompt(data: dict) -> list[dict]:
                 "message": "FORBIDDEN (Lesson 46): Reaching hand toward camera/lens blocks the frame and causes camera materialization."
             })
 
+    # 8. Check Creature, Lighting & Bokeh patterns on extracted text (Rule 62)
+    for pat, iss_type, msg in FORBIDDEN_CREATURE_AND_LIGHTING_PATTERNS:
+        matches = list(re.finditer(pat, text_lower))
+        if matches:
+            for m in matches:
+                issues.append({
+                    "severity": "CRITICAL" if iss_type == "ANTI_SMOKE_VIOLATION" else "HIGH",
+                    "type": iss_type,
+                    "token": m.group(0),
+                    "position": m.start(),
+                    "message": msg
+                })
+
     return issues
 
 
@@ -162,6 +188,25 @@ def lint_prompt(prompt: str) -> list[dict]:
                     for iss in item_issues:
                         iss["clip_id"] = item.get("clip_id", f"item_{idx}")
                     all_issues.extend(item_issues)
+            return all_issues
+        if isinstance(json_obj, dict) and "scenes" in json_obj:
+            all_issues = []
+            for s in json_obj.get("scenes", []):
+                clip_id = s.get("clip_id") or s.get("scene_num", "unknown")
+                if "video_prompt" in s:
+                    for iss in lint_prompt(s["video_prompt"]):
+                        iss["clip_id"] = f"{clip_id} (video)"
+                        all_issues.append(iss)
+                if "image_prompt" in s:
+                    for iss in lint_prompt(s["image_prompt"]):
+                        iss["clip_id"] = f"{clip_id} (image)"
+                        all_issues.append(iss)
+            for r in json_obj.get("references", []):
+                ref_name = r.get("name", "ref")
+                if "image_prompt" in r:
+                    for iss in lint_prompt(r["image_prompt"]):
+                        iss["clip_id"] = f"ref:{ref_name}"
+                        all_issues.append(iss)
             return all_issues
         return lint_json_prompt(json_obj)
 
@@ -234,6 +279,19 @@ def lint_prompt(prompt: str) -> list[dict]:
                 "type": "INDIRECT_PROP_DESCRIPTION",
                 "message": "Prop/clothing interaction detected, but missing direct functional dressing verbs ('slips and slides directly onto', 'fits securely over', 'wearing'). Simply tying cords or handing props causes AI to omit actual dressing."
             })
+
+    # 6. Check Creature, Lighting & Bokeh patterns (Rule 62)
+    for pat, iss_type, msg in FORBIDDEN_CREATURE_AND_LIGHTING_PATTERNS:
+        matches = list(re.finditer(pat, p_lower))
+        if matches:
+            for m in matches:
+                issues.append({
+                    "severity": "CRITICAL" if iss_type == "ANTI_SMOKE_VIOLATION" else "HIGH",
+                    "type": iss_type,
+                    "token": m.group(0),
+                    "position": m.start(),
+                    "message": msg
+                })
 
     return issues
 

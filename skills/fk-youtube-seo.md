@@ -2,7 +2,9 @@
 
 Generate SEO-optimized YouTube metadata: hook title, description, hashtags, and niche keywords.
 
-Usage: `/fk-youtube-seo <project_id> [--language vi] [--niche military-documentary]`
+Usage: `/fk-youtube-seo <project_id> [--language vi|en|ja|es] [--niche military-documentary]`
+
+`--language es` = tiếng Tây Ban Nha Mỹ Latinh (mặc định Mexico; thoại viết theo `skills/fk-time-travel-vlog/references/dialogue-es-mx-ca.md`). Đọc mục **"Tiếng Tây Ban Nha (es-419)"** ở cuối file trước khi viết metadata.
 
 ## Step 1: Load project context + channel rules
 
@@ -117,6 +119,7 @@ The title is the #1 SEO factor. It must:
        - `I Showed Modern Medicine to 14th Century Plague Doctors`
 
    - **Bắt buộc khi chạy `/fk-youtube-seo` cho POV Vlog**: Luôn luôn xuất ra đầy đủ **cả 3 Option High-Stakes** này trong phần `📌 TITLE OPTIONS` để người dùng lựa chọn, kèm phân tích CTR và góc khai thác!
+   - **Thoại tiếng Tây Ban Nha**: không dịch máy 3 option tiếng Anh. Dùng bộ công thức tiếng Tây Ban Nha ở mục "Tiếng Tây Ban Nha (es-419)" cuối file.
 
 ### Generate 3 title variants, ranked by SEO strength.
 
@@ -145,6 +148,7 @@ This zone MUST contain:
   - English: `🎬 An AI-recreated historical vlog, based on real archaeological evidence about {people} at {site}, {date}. The characters and dialogue are dramatized.`
   - Tiếng Việt: `🎬 Video tái dựng bằng AI, dựa trên dữ kiện khảo cổ có thật về {tộc người} tại {địa điểm}, {niên đại}. Nhân vật và lời thoại được hư cấu.`
   - 日本語: `🎬 本動画は、{場所}・{年代}の{人々}に関する実際の考古学的証拠をもとにAIで再現した歴史Vlogです。登場人物とセリフはフィクションです。`
+  - Español (Latinoamérica): `🎬 Vlog histórico recreado con IA, basado en evidencia arqueológica real sobre {pueblo} en {lugar}, {fecha}. Los personajes y los diálogos son ficticios.`
 
 ### Zone 2: Main body (150-2000 chars)
 
@@ -255,6 +259,21 @@ Turn on notifications 🔔 to never miss a video.
 > この時代についてもっと知りたい方は、概要欄のリンクをご覧ください。
 > ```
 >
+> **Español (Latinoamérica) — plantilla de 3 capas:**
+> ```
+> ⚠️ SOBRE ESTE VIDEO:
+> Esta es una recreación histórica creativa hecha con IA, inspirada en evidencia arqueológica
+> e investigación histórica, para despertar la imaginación sobre el pasado.
+>
+> ✅ BASADO EN HECHOS: La época, la especie humana, la geografía, las herramientas y la forma
+> de vida se basan en investigaciones y hallazgos arqueológicos actuales.
+> 🎭 FICCIÓN: La vlogger, los personajes, los diálogos y los sucesos concretos fueron
+> escritos o dramatizados para contar la historia.
+>
+> ¿Quieres saber más sobre esta época? Revisa las fuentes en la descripción.
+> ```
+> Viết `video` (không `vídeo` như ở Tây Ban Nha). Dòng ✅ cũng chỉ liệt kê điều đã kiểm chứng, như mọi ngôn ngữ khác.
+>
 > **Dòng ✅ CÓ THẬT chỉ được liệt kê điều đã kiểm chứng.** Vlog time-travel được phép hư cấu (CLAUDE.md Rule 14), nên nhiều chi tiết trong video có thể là bịa. Đối chiếu với `.omc/research/` hoặc bảng nguồn của dự án: chi tiết nào không có nguồn thì chuyển sang dòng 🎭 HƯ CẤU. Nếu dự án không research gì, bỏ cụm "dựa trên bằng chứng khảo cổ" và chỉ giữ thời đại/địa điểm làm bối cảnh. Ghi "dựa trên nghiên cứu" cho nội dung bịa còn gây hiểu lầm hơn cả không có disclaimer. Câu "Xem nguồn tham khảo" chỉ giữ khi đã thêm link nguồn thật.
 >
 > **Cách điền `{era}` và `{species}` vào template:**
@@ -293,7 +312,7 @@ Turn on notifications 🔔 to never miss a video.
 
 ## Step 5: Generate HASHTAGS
 
-YouTube allows up to 15 hashtags (first 3 shown above title).
+Dùng 15 hashtag theo 3 tầng bên dưới. Giới hạn cứng của YouTube là 60: quá 60 thì **mọi** hashtag của video bị bỏ qua, và gắn quá nhiều có thể khiến video bị gỡ khỏi tìm kiếm. YouTube hiện tối đa 3 hashtag mà họ coi là "most engaging" phía trên tiêu đề, không nhất thiết là 3 cái đầu tiên ([Help: hashtags](https://support.google.com/youtube/answer/6390658), kiểm tra 2026-10-13).
 
 **If channel rules loaded**: prepend `seo.always_include_hashtags` (e.g., `#PhimTàiLiệu #QuânSự`) as the first hashtags in Tier 1. Use `seo.hashtag_language` to control language mix (`mixed_vi_en` = Vietnamese + English).
 
@@ -472,6 +491,8 @@ Print each section with clear separators so they can copy individual parts.
     tuổi (support.google.com/youtube/answer/9229980).
   □ Title/thumbnail không chứa chửi thề. Trong video, chửi thề đã bíp vẫn
     được đủ quảng cáo; đưa lên title/thumbnail thì bị hạn chế quảng cáo.
+  □ (Tiếng Tây Ban Nha) Details → Video language và "Title and description
+    language" = cùng một biến thể Tây Ban Nha Mỹ Latinh (xem mục es-419).
 ```
 
 ## Step 9: Save backup (optional)
@@ -511,3 +532,75 @@ The primary output is the terminal print in Step 8 — the file is just a backup
 | Too many broad hashtags | Competes with giant channels | Use 5 broad + 10 specific/long-tail |
 | Title > 70 chars | Gets truncated on mobile | Keep under 65 chars ideally |
 | No CTA in description | Lower engagement signals | Add subscribe/like CTA above fold |
+
+## Tiếng Tây Ban Nha (es-419) — Mexico & Mỹ Latinh
+
+Dùng khi thoại là tiếng Tây Ban Nha Mỹ Latinh (`--language es`). Mọi bước ở trên vẫn áp dụng; mục này thay phần ngôn ngữ. Research 2026-10-13: trang trợ giúp YouTube (hashtag, bản dịch metadata), tiêu đề các video tiếng Tây Ban Nha cùng thể loại, các hướng dẫn SEO YouTube tiếng Tây Ban Nha.
+
+### Mọi thứ bằng tiếng Tây Ban Nha Mỹ Latinh (Rule 20)
+
+Tiêu đề, mô tả, hashtag, tag, chữ trên thumbnail. Không trộn tiếng Anh vào tiêu đề. Từ khóa phải là **từ người Mỹ Latinh gõ**, không phải từ của Tây Ban Nha: dùng sai biến thể là mất lượt tìm kiếm.
+
+| Dùng (Mỹ Latinh) | Không dùng (Tây Ban Nha) |
+|---|---|
+| encendedor | mechero |
+| celular | móvil |
+| video | vídeo |
+| computadora | ordenador |
+| ustedes / "les mostré" | vosotros / "os enseñé" |
+
+Tên tộc người: viết `neandertales` (dạng chuẩn tiếng Tây Ban Nha) trong tiêu đề, và thêm biến thể `neanderthal` vào tag vì người xem gõ cả hai.
+
+### Niên đại & số
+
+- `Hace 51,000 Años` (Mexico, Mỹ: dấu phẩy ngăn nghìn); `Hace 51.000 Años` (Argentina, Colombia, Chile, và video mẫu "Hace 300.000 Años"). Chọn theo thị trường chính, giữ thống nhất cả kênh.
+- Trước/sau Công nguyên: `a. C.` / `d. C.` (`79 d. C.`, `20,000 a. C.`). Quy tắc niên đại đúng research ở Step 3 vẫn áp dụng.
+
+### Viết hoa
+
+Chính tả chuẩn chỉ viết hoa chữ đầu câu. Nhưng kênh tiếng Tây Ban Nha cùng thể loại (như video mẫu "Hace 300.000 Años: Así Era La Vida En La Edad De Piedra") viết hoa mọi chữ. Theo đúng kiểu của kênh và giữ nhất quán. Mặc định viết hoa mọi chữ như video mẫu.
+
+### Công thức tiêu đề (≤ 65 ký tự; tiếng Tây Ban Nha dài hơn tiếng Anh ~15–20%, nên viết gọn)
+
+Vẫn xuất đủ 3 option high-stakes. Không dịch máy từ tiếng Anh.
+
+| Option | Khuôn | Ví dụ (số ký tự) |
+|---|---|---|
+| 1 — Nguy hiểm cận kề | `Viajé [Al Año / N Años Al Pasado] — Y [mối nguy]` | `Viajé 20,000 Años Al Pasado — Y Casi Me Aplasta Un Mamut` (56) · `Viajé Al Año 79 d. C. — Y El Vesubio Empezó A Hacer Erupción` (60) |
+| 2 — Câu hỏi sinh tồn | `¿[Tộc người] Te Dejarían [việc]? ([niên đại])` hoặc `¿Qué Pasa Cuando [tình huống có trong video]?` | `¿Los Neandertales Te Dejarían Entrar? (Hace 51,000 Años)` (56) · `¿Qué Pasa Cuando Las Hienas Atacan Un Campamento Neandertal?` (60) |
+| 3 — Shock văn hóa | `Les Mostré [vật hiện đại] A [tộc người] — Y [hệ quả có trong video]` hoặc `¿Qué Pasa Si Le Muestras [vật] A [người]?` | `¿Qué Pasa Si Le Muestras Un Encendedor A Un Neandertal?` (55) |
+| Lai với khuôn kênh mẫu | `Hace [N] Años: [hook option 1/2]` | `Hace 51,000 Años: ¿Los Neandertales Te Dejarían Entrar?` (55) · `Hace 66 Millones De Años: Seguí A Una Manada De Triceratops` (59) |
+
+- Khuôn "Así Era La Vida Hace N Años" rất phổ biến trong tiếng Tây Ban Nha (cả các video "Documental IA"), nhưng nó là khuôn tài liệu, đúng loại tiêu đề "giáo khoa" mà Step 3 cấm cho POV vlog. Chỉ mượn **phần mở `Hace N Años:`** để lấy từ khóa tìm kiếm, phần sau phải là hook.
+- **Tránh `¿Qué Pasaría Si…?`**: đó là tên một kênh tiếng Tây Ban Nha lớn ("Qué pasaría si - What If Español"), nên tìm kiếm sẽ đẩy video của họ lên. Dùng `¿Qué Pasa Cuando/Si…?`.
+- Không dùng `Sobreviví 24 Horas` (cùng lý do bỏ "I Survived 24 Hours" ở Step 3).
+- Mỗi tiêu đề phải có cảnh thực hiện đúng lời hứa (chính sách clickbait, Step 3).
+
+### Mô tả
+
+- Zone 1: câu hook → dòng khai báo AI tiếng Tây Ban Nha (Zone 1 ở trên) → CTA: `Suscríbete y activa la campanita 🔔 para no perderte el próximo viaje.` (`activa la campanita` là cách nói quen thuộc với khán giả Mỹ Latinh).
+- Zone 3: disclaimer 3 lớp bản `Español (Latinoamérica)` (Rule A).
+- Giọng văn mô tả: `tú` với người xem (`¿Te atreverías…?`), không `vosotros`.
+
+### Hashtag (ví dụ cho vlog Neanderthal)
+
+```
+#ViajeEnElTiempo #Neandertales #Prehistoria #EdadDePiedra #Paleolítico
+#Supervivencia #VlogHistórico #HombresDeLasCavernas #Historia ...
+```
+
+Hashtag dẫn tới một trang kết quả. Trước khi chốt, mở trang kết quả của từng hashtag chính trên YouTube: nhiều video tiếng Tây Ban Nha đang hoạt động thì giữ, trống thì đổi.
+
+### Tag (≤ 500 ký tự)
+
+```
+viaje en el tiempo, viajé en el tiempo, neandertales, neanderthal, hace 51000 años, prehistoria, edad de piedra, hombres de las cavernas, cómo vivían los neandertales, vida en la prehistoria, paleolítico, vlog histórico, supervivencia prehistórica, documental de historia
+```
+
+(271 ký tự.) Thêm cả dạng có dấu và không dấu cho cụm chính (`viajé` / `viaje`), vì người xem gõ trên điện thoại hay bỏ dấu. Chưa có dữ liệu lượng tìm kiếm riêng cho Mexico ở thể loại này: kiểm tra bằng gợi ý tìm kiếm của YouTube với tài khoản đặt ngôn ngữ/vị trí Mexico, và Google Trends lọc theo Mexico.
+
+### YouTube Studio
+
+- **Video language** và **Title and description language**: `Spanish (Latin America)` / `español (Latinoamérica)`. Đây là biến thể có trong danh sách ngôn ngữ của YouTube. Nếu menu có `español (México)` mà kênh chỉ nhắm Mexico thì có thể chọn nó, nhưng YouTube không ghi rõ hai lựa chọn này khác nhau thế nào khi phân phối. Mặc định dùng Latinoamérica để phủ cả vùng.
+- **Bản dịch metadata (tùy chọn)**: thêm tiêu đề và mô tả tiếng Anh ở Subtitles → Language → Title & description. Bản dịch hiện theo **ngôn ngữ cài đặt của người xem**, không theo quốc gia, nên giúp người xem đặt tiếng Anh tìm thấy video mà không đổi bản gốc tiếng Tây Ban Nha.
+- Khai báo AI (Rule D) và mọi mục checklist Step 8 vẫn bắt buộc.

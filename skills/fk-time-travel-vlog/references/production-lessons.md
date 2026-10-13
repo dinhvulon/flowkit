@@ -33,6 +33,7 @@
 | **Ánh sáng tự nhiên (Anti-God Rays)** | Ánh sáng ban mai tán xạ dịu, sương ẩm mép sông, mai rùa nửa chìm bùn sỏi. CẤM 100% tia nắng thần thoại volumetric god rays kiểu hoạt hình / diorama hồ cá | Rule 59 (3) + Bài 75 | ~~god rays diorama~~ |
 | **Khóa khuôn mặt (Anti-Text Drift)** | Prompt BẮT BUỘC khóa 1:1 theo ảnh ref face (tóc vàng mật ong, mái thưa, da trắng mịn không tàn nhang). CẤM tả lệch màu tóc/kiểu tóc/da đè lên ref | Rule 59 (4) + Bài 75 | ~~prompt ghi đè tóc đỏ/tàn nhang~~ |
 | **Khóa ngũ quan & Lệnh ép 1:1 (Ironclad Face Lock)** | Dùng đúng ảnh ref hiện có. BẮT BUỘC lệnh ép: exact 1:1 identical match to attached reference + đặc tả ngũ quan (mặt trái xoan mềm, môi mọng Cupid's bow, cằm thon, mũi thẳng). CẤM mặt vuông già, cấm môi mỏng | Rule 60 + Bài 76 | ~~tả chung chung gây mặt vuông/môi mỏng~~ |
+| **Ánh sáng tự nhiên & Chống Glamour CGI** | 100% ánh sáng tự nhiên (overcast / dappled canopy), micro-shadows. CẤM 100% beauty glow, smooth creamy skin, studio lighting, cấm cánh tay selfie vươn dài (camera off-screen, both hands natural/empty). Khủng long vảy sần cặn bùn thật | Rule 61 + Bài 77 | ~~tả da mịn làm dính beauty filter / selfie vươn tay~~ |
 
 **Kỹ thuật bổ sung từ `skills/character-scene-design-skills-main/`** (repo tham chiếu, đọc khi cần — xem con trỏ trong `character-bible.md` §7 và `shots-and-realism.md`):
 - *Proportion lock → W0 turnaround contract* (`skills/character-design/SKILL.md`) — khóa tỉ lệ hình thể **trước** khi sinh sheet; chống body drift mạnh hơn nhồi tính từ vào prompt.
@@ -954,8 +955,29 @@ Rút ra từ dự án `output/atlantis-9600bc/` (2026-09-27). Khi mâu thuẫn v
       4. **Khối Phủ Định Triệt Tiêu Trôi Dạt (Anti-Drift Negative Constraints):** Bắt buộc chèn câu cấm tuyệt đối:
          `"STRICTLY FORBIDDEN: strictly NO square jaw, NO long rectangular face, NO thin lips, NO hollow cheeks, NO aged appearance (must look 22-23), NO facial distortion, NO face drift."`
 
+77. **KHÓA ÁNH SÁNG TỰ NHIÊN, TRIỆT TIÊU GLAMOUR BIAS & CẤM CÁNH TAY SELFIE VƯƠN DÀI (Natural Lighting, Anti-Glamour Raw Realism & Zero Stretched Selfie Arm Lock — Bài học ảnh Start Frame Hell Creek 66 Ma, User Review 13/10/2026, Rule 61):**
+    - **Hiện tượng & Nguyên nhân gốc rễ (Root Cause):**
+      1. **Ảnh bị hiệu ứng "Cosplay / 3D Render Unreal Engine / Filter Instagram":** Mặc dù prompt mô tả chi tiết, ảnh gen ra nhìn như người mẫu chụp ảnh cosplay studio với đèn hắt sáng và da búp bê sáp, không ra chất sinh tồn Kỷ Phấn Trắng trần trụi.
+      2. **Xung đột Glamour Bias (Làm đẹp giả trân):** Các từ ngữ như `fair smooth creamy skin`, `beauty glow`, `luminous eyes` kích hoạt bộ lọc chân dung thương mại của Imagen 3, làm mờ lỗ chân lông, khử sạch bụi bẩn và nếp nhăn tự nhiên.
+      3. **Cánh tay selfie vươn dài biến dạng (Stretched Arm Glitch):** Prompt mô tả `her right arm extends holding camera at chest level` khiến AI vẽ cánh tay dài ngoằng, to tướng thò vào mép ảnh như cây gậy selfie tàng hình, gây mất tự nhiên và méo giải phẫu.
+      4. **Khủng long bị biến thành mô hình nhựa / tượng sáp 3D:** Thiếu ánh sáng ban mai tán xạ thực tế và vảy sần phong hóa cặn bùn, khiến Triceratops nhìn như tượng đặt trong công viên.
+    - **Quy tắc giải pháp bắt buộc (Rule 61):**
+      1. **Ánh Sáng Tự Nhiên 100% (Natural Ambient & Dappled Daylight):**
+         - Đầm lầy/sông nước: `flat natural morning overcast daylight, cool humid river mist diffusing soft ambient daylight, realistic moisture reflections on wet gravel and silt; strictly NO volumetric god rays, strictly NO artificial rim lights`.
+         - Rừng rậm: `natural dappled canopy sunlight filtering through giant tree ferns and conifers, organic deep micro-shadows breaking flat CGI render`.
+      2. **Triệt Tiêu Bẫy Làm Đẹp (Zero Beauty Filter / Raw Survival Texture):**
+         - CẤM: `fair smooth creamy skin`, `beauty glow`, `flawless porcelain skin`.
+         - BẮT BUỘC: `authentic unretouched outdoor skin texture, fine pores, natural perspiration sheen, light mud and dirt smudges on cheek and jawline, natural wind-blown stray hair strands, zero makeup, zero cosmetics, raw 35mm wildlife forensic documentary realism`.
+      3. **Cấm Cánh Tay Selfie Vươn Dài (Zero Stretched Arm Lock):**
+         - Điểm nhìn người xem chính là thấu kính camera. CẤM vẽ cánh tay vươn ra cầm máy.
+         - BẮT BUỘC: `The camera viewpoint and gripping arm are completely outside the visible frame and never seen; both hands are empty and natural (or resting on ground/prop)`.
+         - Ưu tiên góc First-Person POV (cam sau) và Góc máy cố định tựa đá/gốc cây (In-frame experience) theo Rule 42 & Rule 51.
+      4. **Chất Liệu Sinh Học Sống Động Cho Khủng Long:**
+         - `tactile organic epidermis, irregular polygonal basement scales, prominent conical keratin tubercles, weathered hairline fissures on horns, matte dried alluvial clay caked into crevices, natural breath vapor misting from nostrils`.
+
 **Nội dung**
 17. **[ĐÃ THAY bởi Rule 46 / bài học 60]** Vlogger mặc đồ hiện đại theo ảnh ref là chấp nhận được. Hiện tại: vlogger mặc trang phục thời kỳ ngay từ clip đầu qua `<Vlogger> Body` đã mặc outfit; đồ hiện đại chỉ khi user yêu cầu phong cách "lạc loài".
 18. User có thể yêu cầu **cảnh mở đầu FPV điện ảnh** (từ không gian lao xuống toàn cảnh thành phố, không có vlogger), là ngoại lệ của luật "mọi shot quay bằng điện thoại". Clip đó dùng ảnh ref toàn cảnh, giữ yên 2–3 giây cuối, và clip sau mở bằng vật lướt qua ống kính để che cú cắt.
+
 
 

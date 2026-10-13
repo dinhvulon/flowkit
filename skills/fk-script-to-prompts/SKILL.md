@@ -58,10 +58,13 @@ Skill này là điểm hội tụ (Convergence Node) của 3 hệ thống kỹ n
     - Gắn ref `<Vlogger>` (Mặt) + `<Vlogger> Body` (Body đã mặc hoàn chỉnh trang phục). Cấm tự tả lại trang phục bằng lời.
 13. **`fk-scriptwriter`**: Bảo toàn Single Source of Truth, bảng vật lý §10, tính liên tục của ánh sáng và bối cảnh.
 14. **`fk-review-video`**: Chuẩn hóa prompt để đạt điểm tối đa trên 6 tiêu chí review.
+15. **`Rule 57, 61, 62 (Chất liệu sinh học & Triệt tiêu CGI, Khói, Ánh sáng nhân tạo)`**: Khủng long/dã thú dùng `rough non-reflective pachyderm hide`, ánh sáng `flat natural overcast diffuse daylight`; CẤM 100% `breath vapor`, `vapor mist`, `snorting steam`, `smoke plumes`, `sunlight streaming`, `god rays`.
+16. **`Rule 60, 62 (Khóa nhận diện 1:1 & Ngũ quan DNA cho Start Frame & Video)`**: BẮT BUỘC lệnh ép 1:1 `[Name]'s face is an exact 1:1 identical match to reference` + ngũ quan DNA (mặt trái xoan mềm, cằm thon, má bầu, mũi nhỏ thẳng, môi mọng dày trái tim, tóc cột cao mái bay), cấm lệch nét giữa các cảnh.
+17. **`Rule 62 (Deep Focus f/8 Chống Xóa Phông Bokeh)`**: Cảnh vlog medium shot bắt buộc `deep focus, deep depth of field (f/8 aperture), entire frame sharp`, cấm shallow DoF / bokeh f/1.8.
 
 ### C. Bộ Quy Chuẩn Prompt Structured JSON & Linter Gate
-15. **`fk-prompt-lock`**: Cấu trúc JSON phân cấp bắt buộc, triệt tiêu Attention Decay và Token Drift.
-16. **`tools/lint_prompt.py`**: Linter tự động kiểm tra quang học, anti-ghost device, body lock, schema JSON.
+18. **`fk-prompt-lock`**: Cấu trúc JSON phân cấp bắt buộc, triệt tiêu Attention Decay và Token Drift.
+19. **`tools/lint_prompt.py`**: Linter tự động kiểm tra quang học, anti-ghost device, body lock, anti-smoke, anti-god rays, anti-bokeh, schema JSON.
 
 ---
 
@@ -81,16 +84,16 @@ Mỗi clip trong mảng JSON `prompts_actX.json` bắt buộc tuân thủ cấu 
     "shot_size": "cỡ cảnh (extreme close-up | close-up | medium close-up | medium shot | wide shot | extreme wide shot)",
     "description": "khóa điểm mù quang học: 'The camera lens itself and her right gripping hand are completely outside the visible frame and never seen. Both hands are empty unless handling specified prop.'"
   },
-  "style": "phong cách tài liệu thực địa tự nhiên, không CGI, không bộ lọc màu công nghiệp",
-  "setting": "mô tả bối cảnh và mốc ánh sáng L1-L7 khớp script.md §3",
+  "style": "phong cách tài liệu thực địa tự nhiên (raw 35mm wildlife forensic documentary realism), không CGI, không bộ lọc màu công nghiệp",
+  "setting": "mô tả bối cảnh và mốc ánh sáng L1-L7 khớp script.md §3: flat natural overcast diffuse daylight, soft organic environmental shadows",
   "characters": [
     {
       "name": "Nora",
-      "visual_lock": "khóa nhận diện khuôn mặt và body reference",
+      "visual_lock": "khóa nhận diện khuôn mặt 1:1 và body reference: exact 1:1 match to reference, soft heart-shaped face, full plump pillowy lips with Cupid's bow, delicate chin, straight petite nose, honey-blonde ponytail with curtain bangs",
       "state": "trạng thái thể chất lúc mở màn (giây 0)"
     }
   ],
-  "in_place": "mọi vật thể, bối cảnh, dã thú đã hiện diện đầy đủ từ khung hình 0 (Already In Place)",
+  "in_place": "mọi vật thể, bối cảnh, dã thú đã hiện diện đầy đủ từ khung hình 0 (Already In Place), clean dry nostrils breathing transparent clean air",
   "timeline_action": {
     "0-3s": "hành động 1 + tương tác vật lý + nhân vật bắt đầu nói ngay từ 0.0s",
     "3-6s": "hành động 2 + biến dạng vật liệu",
@@ -98,6 +101,7 @@ Mỗi clip trong mảng JSON `prompts_actX.json` bắt buộc tuân thủ cấu 
   },
   "speech": {
     "speaker": "Nora",
+    "language": "(chỉ khi thoại không phải English) vd. es-419 Latin American Spanish, neutral Mexican accent — xem fk-time-travel-vlog/references/dialogue-es-latam.md",
     "delivery": "chỉ dẫn ngữ điệu Laomedeia, subtext, trạng thái thở dốc/adrenaline",
     "dialogue": [
       {"t": "0-3s", "speaker": "Nora", "line": "câu thoại 1 khớp script.md"},
@@ -112,13 +116,17 @@ Mỗi clip trong mảng JSON `prompts_actX.json` bắt buộc tuân thủ cấu 
     "prop_and_detail": "chức năng đạo cụ kịch tính & chi tiết đắt giá (Lu Jun)"
   },
   "audio": "thiết kế âm thanh 3 lớp (thoại + foley + ambient/sonic isolation)",
-  "physics": "vận tốc, gia tốc, trọng lực, tương tác tiếp xúc cơ học, phản lực đất",
+  "physics": "vận tốc, gia tốc, trọng lực, tương tác tiếp xúc cơ học, phản lực đất, p=m*v quán tính dã thú",
   "negative_constraints": [
     "The camera lens itself and her right gripping hand are completely outside the visible frame and never seen.",
     "NO phone, NO smartphone, NO screen, NO device, NO selfie stick.",
     "NO modern technology, NO artificial gadgets.",
     "Word count strictly N words matching script.md exactly.",
-    "BODY LOCK: matches Nora Body reference, voluptuous hourglass figure, NOT flat-chested, NOT slender."
+    "BODY LOCK: matches Nora Body reference, voluptuous hourglass figure, NOT flat-chested, NOT slender.",
+    "FACE LOCK: exact 1:1 match to attached face reference; soft heart-shaped face, full plump pillowy lips with Cupid's bow, delicate rounded chin, petite straight nose; strictly NO square jaw, NO thin lips, NO freckles, NO face drift.",
+    "ANTI-SMOKE LOCK: strictly NO smoke, strictly NO breath vapor, strictly NO steam, strictly NO white plumes; clean dry nostrils breathing transparent clean air.",
+    "ANTI-CGI LOCK: rough non-reflective pachyderm hide, strictly NOT a 3D digital render, NOT a plastic toy model, NOT a museum resin statue, strictly NO artificial god rays, strictly NO sunlight streaming, strictly NO studio rim light.",
+    "DEEP FOCUS: deep depth of field (f/8 aperture), entire frame sharp from foreground to distant horizon, strictly NO shallow depth of field, strictly NO bokeh."
   ]
 }
 ```
@@ -168,7 +176,11 @@ python tools/lint_prompt.py --file output/<project>/prompts_actX.json
 3. Điểm mù quang học được khóa bằng câu chuẩn: `"The camera lens itself and her right gripping hand are completely outside the visible frame and never seen."`
 4. Số từ thoại trong `speech.dialogue` khớp chính xác 100% số từ đã định trong `script.md` §9.
 5. Cảnh hành động phức tạp / chuỗi 4s có đúng 1 hành động và khớp tư thế đầu-cuối.
-6. **Nếu có bất kỳ lỗi nào**: Agent PHẢI TỰ ĐỘNG SỬA NGAY LẬP TỨC và chạy lại linter. Vòng lặp tự sửa tối đa 3 lần cho đến khi đạt `0 issues`.
+6. **Anti-Smoke Lock (Rule 62)**: CẤM 100% `breath vapor`, `vapor mist`, `snorting steam`, `smoke plumes`. BẮT BUỘC có `strictly NO smoke, strictly NO breath vapor, strictly NO steam; clean dry nostrils breathing transparent clean air`.
+7. **Pachyderm Living Biology & Anti-CGI Lock (Rule 57, 62)**: Khủng long/dã thú dùng `rough non-reflective pachyderm hide`, ánh sáng `flat natural overcast diffuse daylight`; CẤM `sunlight streaming`, `god rays`, `3d render`, `cgi`, `plastic model`.
+8. **Deep Focus f/8 Lock (Rule 62)**: BẮT BUỘC `deep focus, deep depth of field (f/8 aperture), entire frame sharp, strictly NO shallow depth of field, strictly NO bokeh`.
+9. **1:1 Face Lock & Ngũ quan DNA (Rule 60, 62)**: Cảnh có nhân vật mở đầu bằng lệnh ép 1:1 `exact 1:1 match to reference` + ngũ quan DNA (môi dày mọng trái tim, má bầu, cằm thon, mũi thẳng, tóc vàng cột cao mái bay).
+10. **Nếu có bất kỳ lỗi nào**: Agent PHẢI TỰ ĐỘNG SỬA NGAY LẬP TỨC và chạy lại linter. Vòng lặp tự sửa tối đa 3 lần cho đến khi đạt `0 issues`.
 
 ### Bước 5: Đồng Bộ Bản Dịch & Trình Duyệt
 - Tự động tạo/cập nhật file `output/<project>/vn.json` dịch chuẩn xác 100% ngữ nghĩa kịch bản, giữ trọn vẹn subtext, punchline và thuật ngữ điện ảnh.
@@ -181,6 +193,7 @@ python tools/lint_prompt.py --file output/<project>/prompts_actX.json
 - [ ] Toàn bộ các cảnh của Act được chuyển thể đầy đủ vào `prompts_actX.json`.
 - [ ] 100% lời thoại giữ nguyên bản từ `script.md` §9, chuẩn số từ Rule 49, không tự chế thoại.
 - [ ] Khối `dramatic_craft` hiện diện đầy đủ trong từng clip JSON.
+- [ ] Tuân thủ 100% Rule 62: Zero smoke/steam, da thú pachyderm không bóng nhựa, deep focus f/8, và 1:1 face lock.
 - [ ] Chạy `python tools/lint_prompt.py` đạt `0 issues`.
 - [ ] File `vn.json` được cập nhật đồng bộ, văn phong giàu tính điện ảnh và subtext.
 - [ ] Xuất báo cáo và file hoàn chỉnh cho User review.

@@ -86,9 +86,9 @@ Toàn bộ 10 entity này đã có sẵn trong dự án với Media ID UUID sạ
 | **Hell Creek Trail**      | location     | `97133e49-4bbc-43d4-bc84-e6adcf56299a` | Hành lang thú dẫm đạp trong rừng cận nhiệt đới, đất sét đỏ lún dấu chân, cấm 100% vệt lốp xe.                                                    |
 | **Hell Creek Waterhole**  | location     | `b3584e8d-534c-4d5e-8ba1-c9e96b2eb522` | Bãi nước bùn đỏ Hell Creek, dấu chân 3 ngón, cỏ tháp bút và lau sậy cổ đại.                                                                      |
 | **Nora**                  | character    | `553d94da-0545-471e-a503-b45855b87f92` | Mặt Nora 16:9: 22 tuổi, mặt trái xoan mềm, má bầu, môi mọng Cupid's bow, tóc đuôi ngựa vàng mật ong.                                             |
-| **Nora Body**             | character    | `d32e92ec-e9a3-4a1e-84b2-03d6d02860b3` | Body Nora đã mặc outfit thời kỳ: áo tunic vải lanh màu olive-tan cổ V đan dây, đai da, quần bó, ủng cao cổ.                                      |
-| **Nora Hand**             | character    | `24a1ffae-63ba-4ef3-9201-9f9b5d720c02` | Turnaround Sheet 16:9 cẳng tay & bàn tay nữ thon gọn, xắn tay áo khớp outfit, móng tự nhiên không sơn (dùng cho các shot POV tương tác nhặt đồ). |
-| **T. rex**                | creature     | `763f69eb-a83a-4467-b50a-e5fa0061e897` | Khủng long bạo chúa T. rex Hell Creek.                                                                                                           |
+| **Nora Body**             | character    | `37c9c041-8eab-4a8c-847c-f09957b78a42` | Body Nora đã mặc outfit thời kỳ: áo tunic vải lanh màu olive-tan cổ V đan dây, đai da, quần bó, ủng cao cổ.                                      |
+| **Nora Hand**             | character    | `e7c38ac4-a190-4bc1-942d-5c0e52f870bf` | Turnaround Sheet 16:9 cẳng tay & bàn tay nữ thon gọn, xắn tay áo khớp outfit, móng tự nhiên không sơn (dùng cho các shot POV tương tác nhặt đồ). |
+| **T. rex**                | creature     | `c83b20b6-3799-4aa7-b556-29adf881c3d8` | Khủng long bạo chúa T. rex Hell Creek.                                                                                                           |
 
 ---
 
@@ -208,4 +208,29 @@ Tiến hành sản xuất theo quy trình 2 tầng chuẩn mực (Rule 27 & Rule
 
 ---
 
-**Tài liệu này được tạo tự động và đồng bộ với commit Git `10fce83`. Mọi AI Agent tiếp quản dự án này trên máy mới chỉ cần đọc tài liệu này là có thể tiếp tục công việc một cách hoàn hảo.**
+---
+
+## 8. TIẾN ĐỘ THỰC HIỆN TRỰC TIẾP (TỐI 13/10/2026)
+
+1. **Giai đoạn A (Start Frames Act 1 — 18 Cảnh)**:
+   - Đã sinh hoàn tất 100% (18/18 Start Frames) trên Google Flow (`GENERATE_IMAGE`).
+   - Đã tự động tải về `output/hell_creek_66_ma/images/scene_{0..17}.jpg` và làm sạch watermark/SynthID thành công 100% (`scene_{0..17}_clean.jpg`).
+   - Đang chạy ngầm tiến trình upload ảnh sạch lên Flow (`upload_all_clean_images.py`) với nhịp pacing an toàn 45–55s theo Rule 10 để cấp Media ID UUID sạch và tự động PATCH vào Database (`horizontal_image_media_id`).
+   - File theo dõi UUID sạch: [clean_media_ids.json](file:///c:/flowkit/output/hell_creek_66_ma/clean_media_ids.json).
+   - Review Board đang phục vụ tại: `http://localhost:8200/review_images.html` ([review_images.html](file:///c:/flowkit/output/hell_creek_66_ma/review_images.html)).
+
+2. **Chuẩn hóa & Biên dịch Toàn bộ Act 2 (25 Cảnh)**:
+   - Đã biên dịch toàn bộ 25 phân cảnh của Act 2 sang chuẩn FlowKit Video Prompt Architecture v2 tại [prompts_act2_v2.json](file:///c:/flowkit/output/hell_creek_66_ma/prompts_act2_v2.json).
+   - Tích hợp 100% **Rule 60** (Nora 22-23 tuổi, mặt trái xoan, môi mọng Cupid's bow, tóc đuôi ngựa vàng mật ong, cấm 100% từ khóa phone/device gây glitch), **Rule 57** (da hóa thạch Lane BHI-6200), **Rule 58** (Anti-smoke: hơi sương mờ, cấm khói trắng), **Rule 59** (đường mòn thú, cấm vết lốp xe).
+   - Tự động kiểm toán qua [lint_prompt.py](file:///c:/flowkit/tools/lint_prompt.py) đạt chuẩn tuyệt đối: **0 lỗi linter**.
+   - Toàn bộ 7 Reference Entities sử dụng trong Act 2 (`Bò Đực`, `Con Non`, `Hell Creek Trail`, `Nora`, `Nora Body`, `Nora Hand`, `T. rex`) đều đã có sẵn trong danh sách 10 Reference Entities của dự án với Media ID UUID sạch, không cần sinh thêm ref mới.
+
+3. **Cổng Duyệt Bắt Buộc (Rule 22 & Rule 25)**:
+   - Dừng lại tại Cổng Duyệt Start Frames (Review Gate) để User xem và duyệt 18 Start Frames trên Review Board (`http://localhost:8200/review_images.html`).
+   - Khi User xác nhận đồng ý ("YES" / "Duyệt") và tiến trình upload clean UUID hoàn tất: Sẵn sàng bấm lệnh chuyển sang Giai đoạn B (Sinh 18 video 720p thô qua Omni Flash R2V Ingredients Workflow).
+
+---
+
+**Tài liệu này được đồng bộ và cập nhật liên tục theo tiến độ sản xuất thực tế của dự án.**
+
+

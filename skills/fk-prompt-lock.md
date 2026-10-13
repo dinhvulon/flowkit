@@ -287,7 +287,7 @@ python tools/lint_prompt.py --scene <scene_id>
 ## 6. Rule 56 — Chi tiết tối đa cử chỉ & chuyển động (User Lock 10/10/2026)
 
 - **Không giới hạn độ dài.** Mỗi mốc `timeline_action` tả rõ: tay trái làm gì, tay phải làm gì, ánh mắt, tư thế, trọng tâm, hơi thở, hướng di chuyển (trái/phải/tới/lui), đồ vật ở đâu từ frame 0 và trạng thái cuối clip.
-- **Nhân vật phụ có khối "sống"** trong `characters[].position` (thở, hơi thở đọng khói, đổi trọng tâm, chớp mắt, quay đầu theo hành động, siết đồ đang cầm). Người/thú ở hậu cảnh tả trong `setting.elements` kèm cử động liên tục.
+- **Nhân vật phụ có khối "sống"** trong `characters[].position` (thở nhẹ nhàng chậm rãi `slow quiet breathing`, không khí trong suốt không khói `transparent clear air`, đổi trọng tâm, chớp mắt, quay đầu theo hành động, siết đồ đang cầm). Người/thú ở hậu cảnh tả trong `setting.elements` kèm cử động liên tục.
 - **Thêm khóa `physical_realism`** (5 tầng của `/fk-camera-guide`):
   ```json
   "physical_realism": {
@@ -319,3 +319,21 @@ python tools/lint_prompt.py --scene <scene_id>
 - **Điểm tựa**: người ngồi/quỳ/ngả/dựa ghi rõ đặt lên đâu; tư thế giữ suốt clip có câu khóa đầu clip.
 - **Frame 0** là tư thế trước hành động đầu tiên; **chừa 0.5s cuối** không đặt động tác chốt hay chữ thoại cuối.
 - **Review 720p & hậu kỳ**: lập Motion Fix Plan theo `cinematic-toolkit.md` §9B (chỉ đổi khối gây lỗi, giữ nguyên văn phần còn lại) trước khi hỏi user regen; rà hướng chuyển động khi cắt nối.
+
+---
+
+## 9. Rule 62 — Khóa Tuyệt Đối Chống Khói Thở, Da Thú Pachyderm, Deep Focus f/8 & 1:1 Face Lock (User Lock 13/10/2026)
+
+1. **Khóa Tuyệt Đối Chống Khói Thở (Zero Smoke / Zero Breath Vapor / Zero Steam Lock)**:
+   - Trong khí hậu ấm áp, nhiệt đới/cận nhiệt hoặc tiền sử/Hell Creek: **CẤM TUYỆT ĐỐI** `hot condensed breath vapor`, `vapor mist`, `snorting steam`, `smoke plumes`, `breath vapor misting`. Linter sẽ chặn Critical!
+   - BẮT BUỘC: `clean dry nostrils breathing transparent clean air, strictly NO smoke, strictly NO breath vapor, strictly NO steam`.
+2. **Chất Liệu Sinh Học Da Thú Sống (Pachyderm Living Biology vs Anti-Plastic Sheen)**:
+   - Khủng long/dã thú lớn: **CẤM 100%** vảy bóng nhờn (specular sheen), tia nắng ảo (`sunlight streaming`, `volumetric god rays`), đèn viền studio (`studio rim lighting`) làm biến thành mô hình nhựa 3D CGI.
+   - BẮT BUỘC: `visceral living megafauna biology: rough non-reflective pachyderm hide (matching African black rhinoceros and elephant skin texture), matte polygonal basement scales, dry keratin horn sheath, flat natural overcast diffuse daylight, soft organic environmental shadows; strictly NOT a 3D digital render, NOT a plastic toy model, strictly NO artificial god rays, strictly NO studio rim light`.
+3. **Deep Focus f/8 (Chống Xóa Phông Bokeh / Anti-Shallow DoF)**:
+   - Cảnh trung & vlog: **CẤM** shallow depth of field, xóa phông mù mịt bokeh f/1.8 làm mờ bối cảnh sinh tồn.
+   - BẮT BUỘC: `deep focus, deep depth of field (f/8 aperture), entire frame sharp from foreground to distant horizon, strictly NO shallow depth of field, strictly NO bokeh`.
+4. **Khóa Nhận Diện Start Frame 1:1 & Ngũ Quan DNA (Chống Face Drift)**:
+   - BẮT BUỘC lệnh ép 1:1: `[Name]'s face is an exact 1:1 identical match to the attached [Name] reference image. Perfectly preserve her exact facial likeness from the reference photo without changes.`
+   - BẮT BUỘC khóa ngũ quan DNA: mặt trái xoan mềm mại (`youthful soft feminine heart-shaped face`), cằm thon tròn (`delicate rounded chin`), má bầu bĩnh trẻ trung (`soft rounded youthful cheeks`), sống mũi nhỏ thẳng (`petite straight nose`), bờ môi dày mọng hình trái tim (`distinctively FULL PLUMP PILLOWY LIPS with defined Cupid's bow and pouty lower lip`), tóc vàng mật ong cột cao mái bay.
+   - Khối phủ định: `strictly NO square jaw, NO long rectangular face, NO thin lips, NO hollow cheeks, NO aged appearance, NO freckles, NO face drift`.

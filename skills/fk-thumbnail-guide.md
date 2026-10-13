@@ -63,7 +63,7 @@
 
 - **Character & Emotion (Adrenaline & Peril):** Vlogger face (35-45% of frame), extreme emotion: terror, breathless survival, adrenaline rush, shock (frost on eyelashes, frozen breath, flushed red cheeks from -40°C blizzard, wide terrified eyes). NEVER neutral, calm, or smiling tourist. Dressed strictly in period-accurate historical attire locked from entity references (`[Character]` + `[Character] Outfit`).
 - **Immediate Threat & High Stakes:** Must show overwhelming danger, imminent peril, or extreme culture shock in frame: massive woolly mammoth foot or curved tusks looming inches away, angry prehistoric hunters with flint spears in defensive standoff, raging blizzard, or collapsing environment.
-- **Text (Mandatory English 2-Line Punch):**
+- **Text (Mandatory 2-Line Punch, in the dialogue language — CLAUDE.md Rule 20; English examples below, Spanish pairs in `fk-thumbnail.md` → es-419):**
   - **Line 1 (Urgent Hook):** 2-3 words, bold uppercase sans-serif in vivid yellow or fiery orange/red with black outline (`ALMOST TRAMPLED!`, `-40°C SURVIVAL!`, `THEY SAW FIRE!`, `DON'T LOOK BACK!`).
   - **Line 2 (Location & Era Context):** White with heavy drop shadow (`ICE AGE • 20,000 BC`, `24 HOURS WITH CAVEMEN`, `20,000 BC CULTURE SHOCK`).
   - Position: Upper half only. Never bottom-right (dead zone for YouTube duration badge).

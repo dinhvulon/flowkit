@@ -118,6 +118,8 @@ Hour 1 they're wary → she fails in front of them → she earns respect with a 
 she learns local tricks by watching and copying → after the climax she's part of the group.
 ```
 
+Thoại tiếng Tây Ban Nha Mỹ Latinh: giữ nguyên persona này, đổi lớp ngôn ngữ (tật nói, chửi bíp, danh sách cấm, từ Mỹ Latinh vs Tây Ban Nha) theo `dialogue-es-latam.md` §4–5.
+
 Persona khác (series sau) → viết `VOICE_LOCK` mới theo đúng các trường: **ai + chuyên môn / tốc độ / phong cách giải thích / móc câu riêng / kiểu hài / tật nói / điểm yếu / chửi thề / không bao giờ nói / quan hệ với người bản địa**. Tên trong `VOICE_LOCK` phải trùng tên trong `CHARACTER_LOCK` và tên người nói trong `video_prompt`.
 
 ---
