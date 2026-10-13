@@ -20,9 +20,15 @@ In multi-chapter AI filmmaking (5 to 20+ episodes), the most destructive failure
 
 ---
 
-## 2. Character Visual Anchor Sheet
+## 2. Character Visual Anchor Sheet & Runtime Interlock (`/fk-character-design`)
 
-Before scripting an episode, every recurring character requires an immutable Visual Anchor Sheet saved at `.omc/research/<series>_character_bible.md`:
+> [!IMPORTANT]
+> **Mandatory Runtime Interlock with `/fk-character-design` (Rule 58):**
+> Before scripting an episode or generating reference images, every recurring character and key creature MUST be designed using the `/fk-character-design` skill (`skills/fk-character-design/`). This ensures:
+> 1. **16:9 Multi-View Turnaround Sheet (W0 Turnaround Contract):** 4 góc cho nhân vật (Front | 3/4 | Side | Portrait Close-up) hoặc 3 panel cho sinh vật (3/4 Trái | 3/4 Phải | Cận cảnh đầu sọ). Tuyệt đối không dùng ảnh đơn 1 góc.
+> 2. **5-Layer DNA Anchors:** Proportion/Height Lock, Bone & Face Structure Layer, Skin/Epidermis Texture, Permanent Prop Geometry, và Forbidden Drift Constraints.
+
+Save the completed Visual Anchor Sheet at `.omc/research/<series>_character_bible.md`:
 
 ### Specification Template:
 ```markdown

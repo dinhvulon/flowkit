@@ -32,6 +32,24 @@ Filter to entities that do NOT yet have `media_id` (UUID format `xxxxxxxx-xxxx-x
 
 **GENERATE vs REGENERATE:** `GENERATE_CHARACTER_IMAGE` skips if `media_id` already exists. Use `REGENERATE_CHARACTER_IMAGE` to force a fresh generation (clears existing image first).
 
+## Step 2.5: Mandatory Reference Design Check via `/fk-character-design` (Rule 58)
+
+> [!IMPORTANT]
+> **Enforce `/fk-character-design` for All Characters & Key Creatures:**
+> Trước khi gửi batch submit `GENERATE_CHARACTER_IMAGE`, BẮT BUỘC kiểm tra `image_prompt` của các thực thể sống (Nhân vật, `<Vlogger> Body`, Sinh vật/Quái thú chủ chốt):
+> 1. **TUYỆT ĐỐI KHÔNG DÙNG ẢNH ĐƠN 1 GÓC** cho nhân vật hoặc sinh vật chủ chốt (như Triceratops Bull, T-Rex, Mammoth). Thiếu góc nhìn đối diện sẽ gây lỗi nghiêm trọng (Lật sừng, mất dị tật, trôi giải phẫu).
+> 2. **Chuẩn 16:9 Turnaround Sheet:**
+>    - *Nhân vật*: 4 góc chuẩn (Full-body front view, Full-body 3/4, Full-body side profile, Close-up face/hair). `<Vlogger> Body` bắt buộc đã mặc hoàn chỉnh outfit (Rule 46).
+>    - *Sinh vật/Quái thú*: 3 panel chuẩn (Panel 1: 3/4 góc trái thể hiện rõ đặc điểm bên trái; Panel 2: 3/4 góc phải thể hiện rõ góc đối diện và đặc điểm bất đối xứng; Panel 3: Cận cảnh chính diện đầu sọ khóa đối xứng, rãnh máu nứt nẻ, vi mô biểu bì và keratin).
+> 3. **Khóa 5 lớp DNA Anchor từ `/fk-character-design`:**
+>    - Proportion Lock (chiều cao, tỷ lệ đầu/thân/chân, baseline).
+>    - Bone & Face Structure Layer (cấu trúc sọ, hàm, hốc mắt, diềm cổ, gai nón).
+>    - Skin & Micro-Texture Layer (vảy đa giác, keratin phong hóa theo Rule 57).
+>    - Permanent Prop / Anatomy Geometry (sừng gãy bên nào, sẹo ở đâu, phụ kiện đeo bên nào).
+>    - Forbidden Drift & Anti-Smoke Lock (cấm lật sừng, cấm khói thở trắng đặc, cấm nhựa 3D CGI).
+> 
+> Nếu `image_prompt` của entity chưa đạt chuẩn trên, BẮT BUỘC chạy `/fk-character-design` để viết lại prompt và gọi `PATCH /api/characters/<CID>` trước khi sinh ảnh!
+
 ## Step 3: Submit ALL requests at once
 
 The server handles throttling automatically (max 5 concurrent, 10s cooldown). Submit everything in one batch call:

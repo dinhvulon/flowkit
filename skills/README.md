@@ -31,6 +31,7 @@ Workflow skills for AI agents and humans. Each skill is a step-by-step recipe.
 
 | Skill | File | Description |
 |-------|------|-------------|
+| `fk-character-design` | [fk-character-design](fk-character-design/SKILL.md) | Character & creature design runtime: 16:9 turnaround sheets, proportion/bone/texture locks (Rule 58) |
 | `fk-character-bible` | [fk-character-bible.md](fk-character-bible.md) | Biometric anchor sheets, wardrobe state matrices & series manifest engine |
 | `fk-add-material` | [fk-add-material.md](fk-add-material.md) | Image material management (realistic, 3d_pixar, anime, etc.) |
 | `fk-upload-image` | [fk-upload-image.md](fk-upload-image.md) | Upload local images to Google Flow to get UUID media_ids |

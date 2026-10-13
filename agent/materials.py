@@ -3,7 +3,7 @@
 _BUILTIN_IDS: frozenset[str] = frozenset({
     "realistic", "3d_pixar", "anime", "ghibli", "stop_motion", "minecraft",
     "oil_painting", "watercolor", "comic_book", "cyberpunk", "claymation",
-    "lego", "retro_vhs",
+    "lego", "retro_vhs", "cretaceous_vlog", "prehistoric_vlog",
 })
 
 MATERIALS: dict[str, dict] = {
@@ -244,6 +244,42 @@ MATERIALS: dict[str, dict] = {
             "CRT curvature, nostalgic 80s grain."
         ),
         "lighting": "Warm tungsten lighting, CRT glow, analog video bloom",
+    },
+    "cretaceous_vlog": {
+        "id": "cretaceous_vlog",
+        "name": "Cretaceous Survival Vlog (Rule 57/59)",
+        "style_instruction": (
+            "Authentic handheld 35mm natural history documentary footage, National Geographic realism, "
+            "tactile biological reptilian hide with pebbled osteoderms and weathered keratin, "
+            "dappled jungle canopy sunlight, organic mud and river silt textures, completely zero CGI plastic render."
+        ),
+        "negative_prompt": (
+            "NOT 3D render, NOT CGI, NOT smooth plastic, NOT wax museum figure, NOT cartoon, "
+            "NOT clean studio lighting, NOT vehicle tire tracks, NOT modern lumber, NOT god rays."
+        ),
+        "scene_prefix": (
+            "Raw authentic handheld survival vlog documentary photograph, dappled canopy sunlight, "
+            "tactile prehistoric biological textures, zero 3D CGI gloss."
+        ),
+        "lighting": "Natural morning overcast daylight, humid river mist, dappled canopy shadows",
+    },
+    "prehistoric_vlog": {
+        "id": "prehistoric_vlog",
+        "name": "Prehistoric POV Vlog (Rule 52/57)",
+        "style_instruction": (
+            "Authentic handheld first-person POV travel vlog documentary photography, 35mm film grain, "
+            "natural outdoor daylight, realistic organic materials and tailored historical garments, "
+            "zero 3D CGI, zero modern digital devices or phones."
+        ),
+        "negative_prompt": (
+            "NOT 3D render, NOT CGI, NOT plastic, NOT phone, NOT smartphone, NOT smartwatch, "
+            "NOT modern clothing, NOT anime, NOT studio portrait."
+        ),
+        "scene_prefix": (
+            "Raw authentic handheld POV travel vlog documentary style, natural daylight, "
+            "tactile organic realism, zero modern artifacts, zero CGI."
+        ),
+        "lighting": "Natural outdoor daylight, realistic ambient diffusion",
     },
 }
 

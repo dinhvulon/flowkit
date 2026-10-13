@@ -8,7 +8,7 @@ Usage: `/fk-pipeline [project_id] [orientation] [options]`
 > **Confirm before every generation step.** Before any stage that makes Flow generate media (refs, scene images, videos, test clips, retries, review-driven regens), state what and how many items, then wait for the user's explicit yes. After each generation stage, STOP and show the results for review; start the next stage only after approval. Failures and low review scores are reported with a proposed fix, not auto-retried. This overrides the auto-retry / auto-regen / back-to-back behavior described below (see CLAUDE.md, AGENTS.md rule 29).
 
 Options:
-- `--r2v` — direct Reference-to-Video mode (`abra_r2v_8s`). Skips Stage 1 (Scene Images) and generates videos directly from reference entity images (uploaded via `/fk-upload-ref` or Stage 0) using RPC `MZZa6b`.
+- `--r2v` — Reference-to-Video mode (`abra_r2v_<N>s`). Generates videos combining the approved Start Frame (Frame 0 anchor) and reference entity images (`character_names`) using RPC `MZZa6b`.
 - `--upscale` — include 1080p AI upscale stage via Google Flow's Veo 3.1 Upsampler (RPC `p0UkFb`). Automatically upscales completed 720p videos to 1080p Full HD.
 - `--tts` — include TTS narration stage (parallel with upscale)
 - `--download` — auto-download 4K files as upscales complete
@@ -22,7 +22,7 @@ Options:
 
 Examples:
 - `/fk-pipeline` — detect state and continue most recent project
-- `/fk-pipeline --r2v --tts --concat` — direct R2V run: skips start frame images, renders video, TTS, concats, and auto-generates SEO + thumbnails
+- `/fk-pipeline --r2v --tts --concat` — R2V run: generates start frame images, review gate, renders video, TTS, concats, and auto-generates SEO + thumbnails
 - `/fk-pipeline --upscale --tts --download --notify` — full run with all options
 - `/fk-pipeline <project_id> HORIZONTAL --upscale --download` — explicit project + orientation
 
@@ -202,6 +202,13 @@ if concat_flag:
 
 Only run if any entity is missing `media_id`.
 
+> [!IMPORTANT]
+> **Check Trước Khi Sinh Ref (Rule 58 — Mandatory `/fk-character-design` Check):**
+> Trước khi submit batch `GENERATE_CHARACTER_IMAGE`, BẮT BUỘC kiểm tra xem mọi thực thể sống (Nhân vật, `<Vlogger> Body`, Sinh vật/Quái thú chủ chốt) đã có prompt được thiết kế theo chuẩn **Turnaround Sheet 16:9** của `/fk-character-design` chưa:
+> - CẤM ảnh đơn 1 góc (Single Photograph) cho sinh vật chủ chốt hoặc nhân vật (gây lỗi lật sừng, mất sẹo, vỡ giải phẫu).
+> - Bắt buộc 16:9 Turnaround Sheet đa góc (3 panel cho sinh vật, 4 góc cho nhân vật) khóa 5 tầng DNA anchors (tỷ lệ, xương sọ, biểu bì vi mô, đạo cụ cố định, forbidden drift).
+> - Nếu chưa đạt chuẩn: chạy `/fk-character-design` để cập nhật prompt (`PATCH /api/characters/<CID>`) trước khi gửi batch.
+
 > [!TIP]
 > **Custom Face Reference:** If you uploaded custom character or asset photos via `/fk-upload-ref`, those entities already have a valid `media_id` UUID. Stage 0 will automatically preserve them (skipping AI generation) and pass them as `imageInputs` references in Stage 1 (Scene Images) and Stage 2 (Scene Videos).
 
@@ -220,15 +227,15 @@ for CID in <missing_ids>:
 
 ---
 
-### Stage 1 — Scene Images (Skip if using `--r2v`)
+### Stage 1 — Scene Start Frame Images (Mandatory Frame 0 Anchor)
 
 Only run after all refs have `media_id`.
 
-> [!NOTE]
-> **R2V Mode:** If `--r2v` is set, **SKIP Stage 1 entirely**. FlowKit will use the reference entity images (`character_names`) directly to generate videos via `abra_r2v_8s` without generating start scene images first.
+> [!IMPORTANT]
+> **Start Frame Anchor (Rule 22, 25, 27):** Every scene MUST have a Start Frame image generated and approved by the user BEFORE generating video (even in R2V mode). FlowKit uses the approved Start Frame as the Frame 0 anchor to lock space, biological micro-textures, and lighting, preventing AI hallucination and plastic 3D CGI distortions.
 
 ```bash
-# For each scene with image_status != COMPLETED (I2V mode only):
+# For each scene with image_status != COMPLETED:
 curl -X POST http://127.0.0.1:8100/api/requests \
   -H "Content-Type: application/json" \
   -d '{"type":"GENERATE_IMAGE","scene_id":"<SID>","project_id":"<PID>","video_id":"<VID>","orientation":"<ORIENTATION>"}'

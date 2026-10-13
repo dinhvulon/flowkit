@@ -1,0 +1,499 @@
+{
+  "project_name": "Hell Creek 66 Ma",
+  "project_id": "21513736-f0db-422c-954c-4c20dffd29a3",
+  "act": 1,
+  "description": "Historical POV survival vlog — Hell Creek 66 million BC on the day of the Chicxulub impact. Master prompt package with locked reference entities and Act 1 scene prompts.",
+  "references": [
+    {
+      "id": "0decc884-2fdc-4da8-894d-c6dbf75451af",
+      "name": "Bò Đực",
+      "media_id": "cab5ec79-af18-4d26-9e5e-278a8b0595bf",
+      "entity_type": "creature",
+      "image_prompt": "16:9 CREATURE REFERENCE TURNAROUND SHEET. Natural history documentary aesthetic, BBC / Prehistoric Planet biological reconstruction. Exactly three panels side by side on a plain neutral warm-grey field backdrop with soft diffused museum lighting, 50mm lens, sharp focus, extreme anatomical and macro-texture detail.\n\nSUBJECT: Adult male Triceratops horridus, 8.5 tons, massive muscular build, barrel chest, low center of gravity, quadrupedal ceratopsian stance with foot baseline perfectly level across all three panels.\n\nPANEL 1 (LEFT 3/4 VIEW): Full-body view from the left side showing the entire animal. The LEFT brow horn is visibly broken off and blunt at one-third of its length (only 30 cm remains), showing a jagged splintered fibrous keratin core weathered by time. An old healed vertical battle scar crosses the left side of the wide bony neck frill. Massive wrinkled dewlap and thick muscular flanks. Lower legs and hooves are dusted with dried, caked red Cretaceous clay.\n\nPANEL 2 (RIGHT 3/4 VIEW): Full-body view from the opposite right side. The RIGHT brow horn is completely intact and long (over 100 cm), sweeping gracefully forward and curving upward into a deadly sharp conical tip. Clean, powerful anatomy displaying the unbroken right flank, heavy shoulder girdle, and thick counterbalancing tail.\n\nPANEL 3 (FRONTAL CRANIAL CLOSE-UP): Frontal portrait focusing on the massive 2.2-meter combat skull. Asymmetric horn configuration is clearly visible: short broken horn on the left versus long pointed horn on the right. Wide semicircular bony frill bordered by rounded epoccipital osteoderms. Sharp keratinous hooked beak with natural faint moisture at the corners. Feral dark amber eyes with narrow vertical slit pupils reflecting soft light. Natural nostrils with subtle faint condensation mist (strictly NO thick white smoke plumes).\n\nMICRO-TEXTURE & BIOLOGICAL REALISM (RULE 57): Tactile organic epidermis based on the Lane Triceratops mummy fossil (BHI-6200): non-overlapping basement polygonal scales across the hide, scattered large conical tubercles and osteoderms (5-12 cm) along the back and hips. Deep skin folds and biological wrinkles around the neck dewlap and limbs. Realistic fibrous longitudinal grain on horn sheaths.\n\nFORBIDDEN DRIFT: strictly NO flipping the broken horn to the right side; the RIGHT horn is permanently long and intact; the LEFT horn is permanently broken and blunt; NO symmetrical horns; NO fantasy orange or bright frill paint; strictly NO locomotive train-engine white smoke plumes; NO smooth plastic CGI texture; strictly NOT a 3D digital render, NOT a wax museum model, NOT a toy action figure. Strictly NO humans, NO scale figures, NO text, NO logos.",
+      "description": "Bò Đực: Adult male Triceratops horridus (8.5 tons) 16:9 Creature Turnaround Sheet. Panel 1: Left 3/4 view showing broken left horn (30cm jagged keratin) and healed frill scar. Panel 2: Right 3/4 view showing intact long right horn (100cm sharp). Panel 3: Frontal cranial close-up locking horn asymmetry and Rule 57 Lane fossil polygonal scales. Anti-smoke locked. Story context: Nora shadows herd at Hell Creek 66 Ma."
+    },
+    {
+      "id": "532b4077-da3a-4f0d-bf38-56ba877a5e61",
+      "name": "Con Non",
+      "media_id": "9311fac7-6e45-4e67-9205-6ae818a13299",
+      "entity_type": "creature",
+      "image_prompt": "16:9 CREATURE REFERENCE TURNAROUND SHEET. Natural history documentary aesthetic, BBC / Prehistoric Planet biological reconstruction. Exactly three panels side by side on a plain neutral warm-grey field backdrop with soft diffused museum lighting, 50mm lens, sharp focus, extreme anatomical and macro-texture detail.\n\nSUBJECT: Juvenile Triceratops horridus, approximately 2 years old, size of a large pony (~1.2 meters hip height, 2.5 meters length, 350 kg). Quadrupedal juvenile stance with foot baseline perfectly level across all three panels.\n\nPANEL 1 (LEFT 3/4 VIEW): Full-body left side view showing rounded, soft-edged bony neck frill and small stubby budding brow horns pointing slightly forward. Compact agile body with slender legs and short tail. Lighter dusty olive-tan reptilian skin with fine pebbled scales, with lower flanks and hooves smeared with dried red Cretaceous clay mud.\n\nPANEL 2 (RIGHT 3/4 VIEW): Full-body right side view showing symmetrical juvenile anatomy, alert curious posture, clean smooth neck dewlap folds.\n\nPANEL 3 (FRONTAL CRANIAL CLOSE-UP): Frontal close-up portrait of the juvenile head. Soft rounded frill with faint scalloped edge, stubby budding brow horns (10 cm long, rounded tips), cute hooked keratinous beak with faint natural moisture. Inquisitive dark amber eyes with horizontal pupils reflecting soft daylight. Natural nostrils with subtle faint condensation mist (strictly NO thick white smoke plumes).\n\nMICRO-TEXTURE & BIOLOGICAL REALISM (RULE 57): Fine organic pebbled scales across hide, delicate skin folds at neck and groin, dried red mud on lower feet. Authentic living animal texture.\n\nFORBIDDEN DRIFT: strictly NO adult horn length, NO sharp horn tips; strictly NO train-engine white smoke plumes; NO bright cartoon colors; NO smooth plastic CGI texture; strictly NOT a 3D digital render, NOT a toy action figure. Strictly NO humans, NO scale figures, NO text, NO logos.",
+      "description": "Con Non: Juvenile Triceratops horridus (2 years old, pony-sized) 16:9 Creature Turnaround Sheet. Panel 1: Left 3/4 view. Panel 2: Right 3/4 view. Panel 3: Frontal cranial close-up locking rounded soft frill, stubby budding horns, and fine olive-tan pebbled scales. Anti-smoke locked."
+    },
+    {
+      "id": "e04a3248-eb3b-47fc-bac5-843ae1e53bb8",
+      "name": "Edmontosaurus Carcass",
+      "media_id": "4883a5b5-4610-40c0-acec-fc50f49454e1",
+      "entity_type": "visual_asset",
+      "image_prompt": "Raw natural-history forensic documentary photograph of an adult 12-meter Edmontosaurus annectens carcass lying on its side, heavily sunken 30cm into wet river silt and a pale gravel sandbar at the water's edge at Hell Creek, 66 million BC. Real animal decomposition physics: the massive ribcage is exposed with weather-stained yellowish bone, dark coagulated reddish-brown muscle tissues and glistening tendons adhering to the costal cartilage and spine. Thick leathery hadrosaur hide with authentic irregular polygonal pebbled scales and cracked epidermis is torn open by large theropod teeth with ragged fatty edges curled back, caked in river silt, dried dark blood and flies. A massive scalloped U-shaped T. rex tooth bite is deeply gouged into the thick pelvic bone and scapula, showing crushed marrow. A dense cloud of small prehistoric midges buzzes over rotting crevices. Meandering silty brown river in background under humid morning sun. ONE single unified photograph only, strictly NO humans, NO people, NO scale figures, NO measuring rods, NO split screen. Authentic 35mm wildlife forensic photograph, gritty textured bone and rotting organic detail, natural daylight, zero CGI gloss, NOT a museum diorama, NOT wax figure, NOT plastic or rubbery skin, NOT dry clean bones.",
+      "description": "Edmontosaurus Carcass: Massive 12-meter, 7-ton adult hadrosaur carcass lying on its side, heavily sunken 30cm into wet river silt and alluvial red clay mud at the water's edge. Authentic biological decomposition physics in hot humid Cretaceous climate: exposed curved yellowish costal ribcage with dark coagulated reddish-brown muscle tissue and tendons clinging to bone, torn scaly hadrosaur hide with ragged fatty edges curled back, caked in wet silt and dried dark blood, colossal U-shaped serrated T. rex tooth gouges crushed deep into pelvic bone showing shattered marrow, clouds of prehistoric flies."
+    },
+    {
+      "id": "8411cab8-62ef-4714-9710-8d304dc24b53",
+      "name": "Hell Creek Bank",
+      "media_id": "8652b9b3-9c05-459d-a99b-d59fd6a0df6c",
+      "entity_type": "location",
+      "image_prompt": "One single unified natural history documentary landscape photograph of Hell Creek riverbank, 66 million years ago. A broad meandering creek with slow-moving silty brown water gently lapping against a damp gravel bar and exposed red mudbanks. In the background rises a steep red clay cliff overgrown with massive tangled roots of Sabalites fan palms and weeping tree ferns. A sheltered natural hollow between thick gnarled palm roots sits above the waterline. Warm humid morning river mist drifts low over water. Natural morning daylight creating soft organic highlights on wet pebbles and clay. Strictly ONE unified photograph, strictly NO humans, NO scale figures, NO artificial god rays, NO split screen.",
+      "description": "Hell Creek Bank: Natural history documentary landscape photograph of Hell Creek riverbank 66 Ma. Broad meandering creek with slow silty brown water, wet gravel bar, steep red clay cliff with massive gnarled roots of Sabalites fan palms and weeping tree ferns, humid river mist."
+    },
+    {
+      "id": "b5c78f2f-abb2-41d6-8d70-59a381c790dd",
+      "name": "Hell Creek Trail",
+      "media_id": "97133e49-4bbc-43d4-bc84-e6adcf56299a",
+      "entity_type": "location",
+      "image_prompt": "One single unified documentary landscape photograph of an untamed animal-trampled game trail through the dense Late Cretaceous subtropical forest of Hell Creek, 66 million years ago. A chaotic, deeply churned red clay pathway trodden wide by megafauna, filled with irregular rounded dinosaur foot depressions, crushed 3-meter tree ferns, wild ginger ground cover, and towering Sabalites fan palms intermingled with tall Araucaria and Taxodium conifer trunks. Naturally fallen mossy decaying tree trunks with primitive fungi. Hot humid atmosphere with natural canopy daylight filtering through leaves. Strictly ONE unified photograph, strictly NO vehicle tracks, strictly NO parallel tire ruts, strictly NO modern road, strictly NO sawn logs, strictly NO artificial god rays, strictly NO humans, NO scale figures, NO split screen.",
+      "description": "Hell Creek Trail: Untamed primitive animal-trampled game corridor cutting through dense Late Cretaceous subtropical rainforest 66 Ma. Chaotic irregular red clay mud deeply churned by megafauna (ceratopsians and hadrosaurs), overlapping rounded foot depressions, crushed fern fronds, stagnant muddy puddles. Strictly NO vehicle tracks, NO parallel tire ruts, NO sawn lumber logs, NO man-made road."
+    },
+    {
+      "id": "8df71b8f-98b5-40bb-a50d-8f93edca8dca",
+      "name": "Hell Creek Waterhole",
+      "media_id": "b3584e8d-534c-4d5e-8ba1-c9e96b2eb522",
+      "entity_type": "location",
+      "image_prompt": "One single unified documentary landscape photograph of a vast muddy waterhole on the Hell Creek floodplain, 66 million years ago. Shallow murky brown water rimmed with extensive dried red mud flats heavily pitted with deep three-toed dinosaur footprints and massive rounded depressions from ceratopsian feet. Clumps of primitive horsetails and swamp reeds grow along the muddy shallows. In the far distance, a dense subtropical forest tree line fades into the humid heat haze under a glaring pale daylight sky. Photorealistic wildlife documentary aesthetic. Strictly ONE unified photograph, strictly NO humans, NO people, NO scale figures, NO measuring rods, NO split screen.",
+      "description": "Hell Creek Waterhole: Vast muddy waterhole on Hell Creek floodplain 66 Ma. Murky shallow brown water rimmed with dried red mud flats pitted with deep three-toed dinosaur footprints, swamp reeds, heat haze.. Story context: Modern vlogger Nora time travels to Hell Creek 66 million years ago on the day of the Chicxulub impact, 3,000 km from ground zero. To survive, she must read and shadow a herd of Triceratops through five escalating phases."
+    },
+    {
+      "id": "296dc671-bedd-44ba-8491-cf5e1d265c4c",
+      "name": "Nora",
+      "media_id": "553d94da-0545-471e-a503-b45855b87f92",
+      "entity_type": "character",
+      "image_prompt": "16:9 portrait reference sheet matching Nora face reference: young 22-year-old soft feminine heart-shaped face, delicate rounded chin, soft rounded cheeks with subtle natural flush, petite straight nose, distinctively FULL PLUMP PILLOWY LIPS with defined Cupid's bow and pouty lower lip, large luminous hazel-green almond eyes, honey-blonde hair in high wavy ponytail with wispy curtain bangs softly framing forehead and temples, fair smooth creamy skin. STRICTLY FORBIDDEN: strictly NO square jaw, NO long rectangular face, NO thin lips, NO hollow cheeks, NO aged appearance (must look 22-23), NO red hair, NO freckles, NO modern makeup, NO 3D CGI gloss. Soft diffused natural studio lighting.",
+      "description": "Nora: Young 23-year-old female travel vlogger, strictly matching Nora face reference: honey-blonde hair tied in a high wavy ponytail with wispy parted curtain bangs softly framing her forehead and temples, fair smooth creamy complexion with zero freckles, soft natural rosy cheeks, hazel-green almond eyes, expressive jawline. Story context: Modern vlogger Nora time travels to Hell Creek 66 million years ago on the day of the Chicxulub impact, 3,000 km from ground zero. To survive, she must read and shadow a herd of Triceratops through five escalating phases."
+    },
+    {
+      "id": "9f9276b0-437b-4d08-b10b-ae644f45a341",
+      "name": "Nora Body",
+      "media_id": "37c9c041-8eab-4a8c-847c-f09957b78a42",
+      "entity_type": "character",
+      "image_prompt": "BODY REFERENCE ONLY, NO FACE. 16:9 model reference sheet in the style of modeling-agency digitals, exactly three panels side by side on a plain light-grey studio background, the same woman in every panel, soft even daylight, 50mm lens with no distortion, sharp focus, high detail. FRAMING: in every panel the top edge of the frame cuts horizontally across her shoulders at the base of the neck; her head, chin, mouth and face are completely outside the frame and never visible; only the ends of her honey-blonde / auburn ponytail may show over one shoulder. BODY: tall slender statuesque woman 178 cm (5'10\") with a pronounced hourglass figure, exceptionally large full heavy natural bust projecting forward, tiny narrow waist with flat toned stomach, wide rounded hips, and long slim lean legs. Clothing: a skin-tight, form-fitting tailored tunic of raw olive-tan woven linen that closely hugs the body, accentuating the large full bust with a laced plunging V-neckline laced with criss-crossing dark leather thongs forming an X-pattern bridge across her cleavage; tightly cinched at the very small narrow waist with a wide 8-10 cm dark leather belt (plain tied leather, NO metal buckle) defining her hourglass curves; a 22 cm turtle shell water flask hangs at her left hip; short sleeves ending above elbows; clean open neck with NO collar, NO hood, NO fur; skin-tight olive-brown hide trekking pants closely hugging her long slender legs; calf-high laced field boots. Natural neutral standing poses. PROPORTION LOCK: net height 178 cm; head height = 1/7.6 of total; shoulder width = 1/4.1 of height; leg length = 0.54 of height; foot baseline level across all three panels. BODY LOCK (CRITICAL): voluptuous hourglass figure, large heavy bust, tiny narrow waist, wide hips, long legs. NOT flat-chested, NOT skinny, NOT loose baggy clothes, NOT modern synthetic clothes, NOT shearling collar, NOT fur hood, NOT 3D CGI render. Photorealistic RAW photograph. Strictly NO text, NO logos.",
+      "description": "Prompt mặc trang phục dã ngoại sinh tồn Kỷ Phấn Trắng (Cretaceous Field Outfit) lên body chuẩn nora_body_v3_clean.jpg, giữ nguyên 100% tỷ lệ giải phẫu (ngực đầy đặn, eo con kiến, chân dài thon, 3 panel cắt ngang vai)."
+    },
+    {
+      "id": "80057477-316e-4e3d-889f-549a4cb1843e",
+      "name": "Nora Hand",
+      "media_id": "e7c38ac4-a190-4bc1-942d-5c0e52f870bf",
+      "entity_type": "visual_asset",
+      "image_prompt": "16:9 multi-view reference model sheet showing 4 detailed close-up views of the forearms and hands of Nora, a 26-year-old athletic female field survivalist and vlogger. Panel 1: Dorsal view (back of hand) showing slender, strong, athletic female hands with natural warm sun-kissed skin tone, short trimmed clean unpainted fingernails, subtle veins and faint freckles. Panel 2: Palmar view (palm) showing natural hand creases, subtle calluses from field climbing, clean healthy skin. Panel 3: Side gripping view showing her hand holding and grasping a 22 cm prehistoric turtle shell basin. Panel 4: Forearm view showing her lower arm with rolled-up olive-tan linen survival tunic sleeve ending at mid-forearm, bare wrist with a thin simple weathered leather cord. Plain neutral grey studio background, photorealistic documentary lighting, high-definition skin pores and natural texture. Strictly NO male hands, NO hairy arms or knuckles, NO modern wristwatches, NO smartwatches, NO jewelry, NO painted or long fingernails, NO extra fingers.",
+      "description": "POV Hand and Forearm reference sheet of 26yo female vlogger Nora"
+    },
+    {
+      "id": "97de1e65-ee15-416b-be16-f478b3612be0",
+      "name": "T. rex",
+      "media_id": "c83b20b6-3799-4aa7-b556-29adf881c3d8",
+      "entity_type": "creature",
+      "image_prompt": "16:9 CREATURE REFERENCE TURNAROUND SHEET. Natural history documentary aesthetic, BBC / Prehistoric Planet biological reconstruction. Exactly three panels side by side on a plain neutral warm-grey field backdrop with soft diffused museum lighting, 50mm lens, sharp focus, extreme anatomical and macro-texture detail.\n\nSUBJECT: Adult male Tyrannosaurus rex, 12 meters long, 9 tons, apex theropod, massive muscular neck, horizontal bipedal stance counterbalanced by thick muscular tail, foot baseline perfectly level across all three panels.\n\nPANEL 1 (LEFT 3/4 VIEW): Full-body left profile showing enormous skull, powerful bird-like legs with heavy three-toed clawed feet dusted with river silt, deep barrel chest, and tiny two-fingered forelimbs held close to torso. Featherless, fine-scaled brown-grey leathery skin.\n\nPANEL 2 (RIGHT 3/4 VIEW): Full-body right profile displaying deep healed territorial battle bite scars along the right side of the snout, heavy jaw musculature, and thick muscular tail base.\n\nPANEL 3 (FRONTAL CRANIAL CLOSE-UP): Frontal combat close-up of massive theropod skull. Wide skull rear providing forward-facing binocular vision, serrated robust teeth partially visible behind fleshy lips, natural saliva moisture at corners of mouth. Piercing cold amber eyes with vertical slit pupils. Natural nostrils with subtle faint condensation mist (strictly NO thick white smoke plumes).\n\nMICRO-TEXTURE & BIOLOGICAL REALISM (RULE 57): Tactile organic reptile hide, non-overlapping fine reticulate scales, thickened epidermal pads under feet, deep skin folds around neck dewlap. Authentic living apex predator.\n\nFORBIDDEN DRIFT: strictly NO feathers, NO pronated bunny hands, NO shrink-wrapping; strictly NO train-engine white smoke plumes; NO smooth plastic CGI texture; strictly NOT a 3D digital render, NOT a movie monster. Strictly NO humans, NO scale figures, NO text, NO logos.",
+      "description": "T. rex: Massive adult Tyrannosaurus rex (12m, 9 tons) 16:9 Creature Turnaround Sheet. Panel 1: Left 3/4 view showing massive theropod build. Panel 2: Right 3/4 view showing healed territorial scars along right snout. Panel 3: Frontal cranial close-up locking binocular vision, serrated teeth, and leathery brown-grey hide. Anti-smoke locked."
+    }
+  ],
+  "scenes": [
+    {
+      "scene_num": 1,
+      "clip_id": "EST-01",
+      "scene_name": "Hell Creek Dawn Aerial",
+      "duration": 6,
+      "shot_type": "AERIAL · EWS",
+      "refs": [
+        "Hell Creek Bank",
+        "Hell Creek Trail"
+      ],
+      "image_prompt": "Raw natural history field documentary photograph, extreme wide aerial view looking down at the meandering Hell Creek river system at dawn, 66 million BC. Silty brown river curving through vast primeval floodplains of giant tree ferns, fan palms, and towering ancient conifers. Layer of cool white morning mist clinging to the water surface. Pale cool morning light, desaturated organic earth tones, realistic humidity haze in distance. Highly detailed natural foliage texture, muddy gravel sandbars. Authentic 35mm wildlife film still, natural film grain, zero CGI gloss, zero digital saturation, strictly NO modern items.",
+      "video_prompt": "[AERIAL ESTABLISHING - DAWN] (0-3s): The camera drifts forward and downward over the winding brown river system at dawn, morning mist curling over gravel sandbars. (3-6s): Mist thins gradually revealing distant grazing dinosaur herd silhouettes across the far fern prairie 300 meters away. Raw amateur natural-history documentary footage, organic subtle wind wobble, natural morning light, true colours, no grading, zero CGI gloss.",
+      "dialogue": []
+    },
+    {
+      "scene_num": 2,
+      "clip_id": "A1-01",
+      "scene_name": "River Landing & Croc Threat",
+      "duration": 6,
+      "shot_type": "POV · WS",
+      "refs": [
+        "Nora",
+        "Nora Body",
+        "Hell Creek Bank"
+      ],
+      "image_prompt": "First-person POV documentary photograph looking slightly downward from chest height across murky brown prehistoric river water at dawn. Directly in front at 5 meters distance, two dark armored, jagged-ridged backs of prehistoric crocodiles (Borealosuchus) float menacingly on the water surface, eyes and snout tips barely breaking the muddy current. Gentle concentric water ripples disturb the surface. In the immediate lower frame, pale wet gravel bank is visible just inches away. Raw handheld POV camera perspective, cold misty dawn lighting, water droplets on lens, natural murky water texture, organic documentary realism, strictly NO modern items, NO humans visible.",
+      "video_prompt": "[FIRST-PERSON POV - CHEST LEVEL] (0-3s): Looking through Nora's eyes wading waist-deep in murky river water, two dark armored crocodile scute ridges drift slowly forward 5 meters ahead as the camera steps backward through the water with natural vertical footfall bobbing. (3-6s): The camera steps backward faster, splashing through shallowing water toward the gravel shore as the crocodiles remain steady in mid-stream. Raw handheld footage, camera lens completely outside visible frame, empty hands, cold morning daylight, water splashing audio.",
+      "dialogue": []
+    },
+    {
+      "scene_num": 3,
+      "clip_id": "A1-02",
+      "scene_name": "Gravel Bar Selfie — Soaked Arrival",
+      "duration": 8,
+      "shot_type": "SELFIE · MCU",
+      "refs": [
+        "Nora",
+        "Nora Body"
+      ],
+      "image_prompt": "Handheld 0.5x ultra-wide vlog documentary photograph of Nora kneeling on wet gravel riverbank, camera held at chest level angled slightly upward at her face by her extended right arm.\n\nFACE & IDENTITY LOCK (CRITICAL): Nora's face is an exact 1:1 identical match to the attached Nora reference image. Perfectly preserve her exact facial likeness from the reference photo: youthful 22-year-old soft feminine heart-shaped face, delicate rounded chin, soft rounded cheeks with subtle natural flush, petite straight nose, distinctively FULL PLUMP PILLOWY LIPS with defined Cupid's bow and pouty lower lip, large luminous hazel-green almond eyes wide with adrenaline shock, honey-blonde hair in damp high wavy ponytail with wispy curtain bangs softly framing forehead and temples.\nSTRICTLY FORBIDDEN: strictly NO square jaw, NO long rectangular face, NO thin lips, NO hollow cheeks, NO aged appearance (must look 22-23), NO bulging bug-eyes, NO facial distortion, NO face drift.\n\nBODY & OUTFIT: Athletic curvaceous hourglass figure matching Nora Body reference, wearing tailored form-fitting olive-tan linen tunic with laced plunging V-neckline, damp fabric clinging to skin. Her left hand rests naturally on her knee, completely empty; strictly NO phone, NO smartphone, NO device in hand.\n\nBACKGROUND: Murky silty brown river lapping against wet damp gravel bar, with dark primitive crocodile ridges drifting past in distance under morning river mist.\n\nSTYLE: Raw authentic handheld vlog documentary still, cool morning daylight, tactile skin texture with real goosebumps and water droplets, zero 3D plastic CGI gloss.",
+      "video_prompt": "[HANDHELD SELFIE VLOG - 0.5x ULTRA-WIDE] (0-3s): Nora kneels on wet gravel, gasping for breath, holding camera at chest level angled up at her face. Nora says \"Made it to the bank. Barely.\" (3-6s): She glances over her shoulder at the water surface where crocodile ridges drift past. Nora says \"Borealosuchus. Four metres of armor and teeth.\" (6-8s): She turns back into lens, wiping river water from her temple. Nora says \"Rule one: stay out of the deep pools.\" Handheld vlog perspective, natural outdoor dawn light.",
+      "dialogue": [
+        {
+          "t": "0-3s",
+          "line": "Okay. I'm out, I'm out of the water."
+        },
+        {
+          "t": "3-6s",
+          "line": "Those were crocodiles, two of them, and they were not curious."
+        },
+        {
+          "t": "6-8s",
+          "line": "They were patient."
+        }
+      ]
+    },
+    {
+      "scene_num": 4,
+      "clip_id": "A1-03",
+      "scene_name": "Approaching Edmontosaurus Carcass",
+      "duration": 8,
+      "shot_type": "POV · WS",
+      "refs": [
+        "Edmontosaurus Carcass",
+        "Hell Creek Bank"
+      ],
+      "image_prompt": "First-person POV field documentary photograph walking forward on a prehistoric gravel bank, approaching the carcass matching Edmontosaurus Carcass reference. 15 meters directly ahead lies the colossal partially-eaten adult Edmontosaurus carcass lying on its side, heavily sunken 30cm into wet river silt and mud: massive exposed curved yellowish weather-stained ribcage, rotting dark coagulated reddish-brown muscle tissue adhering to costal bone, torn dark pebbled hadrosaur hide with ragged fatty edges curled back, stripped pelvic bone with scalloped bite gouges. A dense cloud of small prehistoric midges buzzes over the moist decaying flesh. Meandering silty brown river in background under humid morning sun. Eye-level walking perspective with camera held chest-height, wet gravel stones in foreground, authentic 35mm wildlife forensic documentary realism, natural morning light, strictly NO modern items, NO humans visible, NOT a museum diorama, NOT wax figure, NOT dry clean bones.",
+      "video_prompt": "[FIRST-PERSON POV - WALKING] (0-3s): The camera walks forward over crunchy gravel at natural pace toward the massive carcass matching Edmontosaurus Carcass reference 15 meters ahead, natural footstep vertical bobbing. Nora says off-screen \"Okay, that's a body. A big one.\" (3-6s): Closing distance to 5 meters, revealing massive scalloped bite indentations gouged deep into the thick pelvic bone of the carcass. Nora says \"Something ate half of it last night and left.\" (6-8s): Camera pauses 3 meters from the exposed ribcage; black flies scatter in morning sunlight. Nora says \"Left, or stepped away.\" Viewpoint is Nora's eyes, both hands empty, authentic natural history documentary realism.",
+      "dialogue": [
+        {
+          "t": "0-3s",
+          "line": "Okay, that's a body. A big one."
+        },
+        {
+          "t": "3-6s",
+          "line": "Something ate half of it last night and left."
+        },
+        {
+          "t": "6-8s",
+          "line": "Left, or stepped away."
+        }
+      ]
+    },
+    {
+      "scene_num": 5,
+      "clip_id": "A1-04",
+      "scene_name": "Macro Tooth Bite Measurement",
+      "duration": 8,
+      "shot_type": "POV MACRO · ECU",
+      "refs": [
+        "Nora Hand",
+        "Edmontosaurus Carcass"
+      ],
+      "image_prompt": "Extreme close-up macro forensic documentary photograph looking down at the massive exposed rib and shoulder bone of the Edmontosaurus Carcass (matching Edmontosaurus Carcass reference). A slender weathered woman's left hand (matching Nora Hand reference: rolled up olive-tan sleeve cuff, damp dirty skin, short clean nails) is placed flat directly inside a colossal serrated U-shaped tooth gouge deeply embedded into the thick yellowish prehistoric bone. The tooth gouge is wider than her entire spread palm, with crushed bone marrow and dark coagulated reddish tissue texture inside the groove. Behind the bone, the curved ribcage and torn scaly hide of the carcass extend into soft focus. Sharp macro focal depth on hand and bone groove, natural dawn sunlight, gritty tactile forensic texture, strictly NO modern items, NO living dinosaur, zero CGI gloss.",
+      "video_prompt": "[POV MACRO CLOSE-UP] (0-3s): Looking directly down at the massive Edmontosaurus carcass bone matching Edmontosaurus Carcass reference, Nora's weathered left hand (matching Nora Hand reference) enters lower frame and places flat inside the colossal serrated tooth gouge. Nora says off-screen \"Look at the size of that bite.\" (3-6s): Her fingers spread out, completely fitting inside the single scalloped indentation on the bone. Nora says \"My whole hand fits in one tooth mark.\" (6-8s): Her hand lifts off the bone and pulls back as she shivers. Nora says \"I'm standing in its kitchen.\" Tactile authentic documentary macro shot, sharp natural morning light, realistic forensic detail.",
+      "dialogue": [
+        {
+          "t": "0-3s",
+          "line": "Look at the size of that bite."
+        },
+        {
+          "t": "3-6s",
+          "line": "My whole hand fits in one tooth mark."
+        },
+        {
+          "t": "6-8s",
+          "line": "I'm standing in its kitchen."
+        }
+      ]
+    },
+    {
+      "scene_num": 6,
+      "clip_id": "A1-05",
+      "scene_name": "Carcass Standoff — 12 Hours Clock",
+      "duration": 8,
+      "shot_type": "SELFIE · MS",
+      "refs": [
+        "Nora",
+        "Nora Body",
+        "Edmontosaurus Carcass"
+      ],
+      "image_prompt": "Handheld 0.5x wide-angle selfie vlog photograph of Nora talking directly to camera held at chest level by her extended right arm.\n\nFACE & IDENTITY LOCK (CRITICAL): Nora's face is an exact 1:1 identical match to the attached Nora reference image. Perfectly preserve her exact facial likeness from the reference photo: youthful 22-year-old soft feminine heart-shaped face, delicate rounded chin, soft cheeks, petite straight nose, distinctively FULL PLUMP PILLOWY LIPS with Cupid's bow, large hazel-green almond eyes, and honey-blonde hair in high wavy ponytail with wispy curtain bangs softly framing forehead and temples.\nSTRICTLY FORBIDDEN: strictly NO square jaw, NO long rectangular face, NO thin lips, NO hollow cheeks, NO aged appearance (must look 22-23), NO facial distortion, NO face drift.\n\nBODY & OUTFIT: Statuesque hourglass athletic figure matching Nora Body reference, wearing form-fitting tailored olive-tan linen tunic with laced V-neckline, cinched at narrow waist by dark leather belt with turtle-shell flask. Her left arm hangs naturally at her side, hand completely empty; strictly NO phone, NO smartphone, NO handheld device in hand.\n\nBACKGROUND: 15 meters behind her on the gravel bar rests the decaying Edmontosaurus carcass matching reference, sunken 30cm in wet river silt with exposed ribs and swarm of flies. Dense subtropical forest and river in background.\n\nSTYLE: Raw authentic handheld vlog documentary photograph, natural morning lighting, realistic skin texture with subtle sweat sheen, zero CGI plastic render.",
+      "video_prompt": "[HANDHELD SELFIE VLOG - WAIST-UP] (0-3s): Nora stands on gravel bank, the massive Edmontosaurus carcass matching Edmontosaurus Carcass reference clearly visible on gravel in background left, camera held at chest level angled slightly upward. Nora says \"I picked today on purpose.\" (3-6s): She gestures briefly with left hand toward the south-east horizon, eyes darkening with grave knowledge. Nora says \"Twelve hours from now, the sky over there catches fire.\" (6-8s): She drops her hand, locking eyes with lens with naive defiance. Nora says \"I'm just here to watch.\" Handheld vlog perspective, hourglass stature, natural outdoor light.",
+      "dialogue": [
+        {
+          "t": "0-3s",
+          "line": "I picked today on purpose."
+        },
+        {
+          "t": "3-6s",
+          "line": "Twelve hours from now, the sky over there catches fire."
+        },
+        {
+          "t": "6-8s",
+          "line": "I'm just here to watch."
+        }
+      ]
+    },
+    {
+      "scene_num": 7,
+      "clip_id": "A1-06",
+      "scene_name": "Finding Turtle Shell & Clay Cave",
+      "duration": 8,
+      "shot_type": "POV · MS",
+      "refs": [
+        "Nora Hand",
+        "Hell Creek Bank"
+      ],
+      "image_prompt": "First-person POV natural history documentary photograph looking slightly downward at pale river gravel and wet muddy silt at the water's edge. An authentic empty freshwater Cretaceous turtle shell (Basilemys: 25 cm flattened dark olive-brown river-worn carapace with visible scute growth rings and suture lines, chipped horn rim, hollow cavity) lies naturally half-embedded among wet silt and river stones. Across the 15-meter wide silty brown flowing river channel, a red clay cut-bank has a dark natural eroded hollow cavity at its base; directly below the hollow, a 4-meter armored Borealosuchus crocodile lies motionless on the muddy clay shelf. Flat natural morning overcast daylight, humid river mist in distance, wet stone specular reflections, authentic field expedition realism, strictly NO digital god rays, strictly NO artificial sunbeams, strictly NO miniature diorama appearance.",
+      "video_prompt": "[FIRST-PERSON POV - GROUND TO HORIZON] (0-3s): Looking down at gravel, Nora's left hand reaches into frame and picks up the weathered 25cm turtle shell flask. Nora says off-screen \"Turtle shell, size of a dinner plate.\" (3-6s): The camera tilts upward looking across the silty river to the red clay bank where a dark dry hollow cavity sits at the base. Nora says \"There's a dry hollow under that far bank.\" (6-8s): Camera pans down to the muddy river shelf right below the hollow where a massive 4m crocodile lies waiting. Nora says \"Crocodiles right below it. So, no.\" Natural camera tilt and pan, realistic handheld movement.",
+      "dialogue": [
+        {
+          "t": "0-3s",
+          "line": "Turtle shell, size of a dinner plate."
+        },
+        {
+          "t": "3-6s",
+          "line": "There's a dry hollow under that far bank."
+        },
+        {
+          "t": "6-8s",
+          "line": "Crocodiles right below it. So, no."
+        }
+      ]
+    },
+    {
+      "scene_num": 8,
+      "clip_id": "A1-07",
+      "scene_name": "Securing Water Flask Knot",
+      "duration": 8,
+      "shot_type": "FIXED · MS",
+      "refs": [
+        "Nora",
+        "Nora Body"
+      ],
+      "image_prompt": "Static waist-up medium shot photograph with camera resting on a weathered bleached driftwood log on the riverbank.\n\nFACE & IDENTITY LOCK (CRITICAL): Nora's face is an exact 1:1 identical match to the attached Nora reference image. Perfectly preserve her exact facial likeness from the reference photo: youthful 22-year-old soft feminine heart-shaped face, delicate rounded chin, soft cheeks, petite straight nose, distinctively FULL PLUMP PILLOWY LIPS with defined Cupid's bow, hazel-green almond eyes looking down attentively, honey-blonde hair in high wavy ponytail with wispy curtain bangs framing forehead and temples.\nSTRICTLY FORBIDDEN: strictly NO square jaw, NO long face, NO thin lips, NO hollow cheeks, NO aged appearance (must look 22-23), NO facial distortion, NO face drift.\n\nBODY, OUTFIT & ACTION: Athletic curvaceous hourglass figure matching Nora Body reference, wearing tailored olive-tan linen tunic with laced plunging V-neckline, cinched by dark leather belt. Stands waist-up at 1.5m distance, using both bare hands to securely tie the dark turtle-shell flask to the left hip of her belt with coarse twisted plant cord; both hands interact only with the flask and belt, strictly NO phone, NO modern device.\n\nBACKGROUND: Pale gravel riverbank with morning sunlight casting soft shadows, silty brown river flowing in background with weeping tree ferns.\n\nSTYLE: Fixed tripod-like documentary framing, natural crisp depth of field, authentic outdoor realism, zero CGI plastic render.",
+      "video_prompt": "[STATIC FIXED CAMERA - MEDIUM SHOT] (0-3s): Camera sits firmly on driftwood log. Nora stands 1.5m away, both hands threading twisted palm-fibre cord through holes in the turtle shell flask. Nora says \"Palm fibre, twisted twice, through the gaps in the rim.\" (3-6s): She pulls the knot tight against the left hip of her utility belt, testing the tension. Nora says \"If this knot fails today,\" (6-8s): She glances up into the lens with dry wry irony. Nora says \"I'm drinking from the crocodile pool.\" Static camera, realistic two-handed prop interaction, crisp morning light.",
+      "dialogue": [
+        {
+          "t": "0-3s",
+          "line": "Palm fibre, twisted twice, through the gaps in the rim."
+        },
+        {
+          "t": "3-6s",
+          "line": "If this knot fails today,"
+        },
+        {
+          "t": "6-8s",
+          "line": "I'm drinking from the crocodile pool."
+        }
+      ]
+    },
+    {
+      "scene_num": 9,
+      "clip_id": "A1-08",
+      "scene_name": "Entering the Mud Trail",
+      "duration": 8,
+      "shot_type": "POV · WS",
+      "refs": [
+        "Hell Creek Trail"
+      ],
+      "image_prompt": "First-person POV handheld natural-history documentary photograph approaching the primeval Cretaceous rainforest edge from the gravel bar. Massive towering Sabalites fan palms, tall Taxodium and Araucaria conifers, flowering magnolias, and giant 4-meter tree ferns form a dense, untamed green canopy. A wide, chaotic animal-trampled game trail cuts directly into the dense undergrowth: the ground is irregular, deeply churned red clay mud filled with massive rounded ceratopsian and hadrosaur foot depressions, crushed fern fronds, mud wallows, and stagnant muddy puddles. STRICTLY NO vehicle tracks, STRICTLY NO parallel tire ruts, STRICTLY NO modern dirt road, STRICTLY NO sawn lumber logs, STRICTLY NO human path. Natural dappled canopy daylight, humid heat haze softening distance, genuine untouched 66 million BC wilderness expedition photograph.",
+      "video_prompt": "[FIRST-PERSON POV - WALKING] (0-3s): Walking away from river toward dense conifer and palm forest wall, fronds swaying in morning breeze. Nora says off-screen \"Forest is a solid wall, I can't see two metres in.\" (3-6s): Camera pans right to reveal a massive churned red-mud animal trail cutting into the dense undergrowth. Nora says \"But that's a path.\" (6-8s): Camera steps directly into the muddy entrance of the animal trail, wet mud squelching. Nora says \"Something big made it.\" Handheld forward walking perspective, dappled canopy light.",
+      "dialogue": [
+        {
+          "t": "0-3s",
+          "line": "Forest is a solid wall, I can't see two metres in."
+        },
+        {
+          "t": "3-6s",
+          "line": "But that's a path."
+        },
+        {
+          "t": "6-8s",
+          "line": "Something big made it."
+        }
+      ]
+    },
+    {
+      "scene_num": 10,
+      "clip_id": "A1-09",
+      "scene_name": "Macro Footprint Inspection",
+      "duration": 8,
+      "shot_type": "POV MACRO · ECU",
+      "refs": [
+        "Hell Creek Trail"
+      ],
+      "image_prompt": "Extreme close-up macro field photograph looking straight down at wet churned red alluvial clay on the forest floor. A colossal rounded three-toed dinosaur footprint (80 cm wide, heavy ceratopsian pedal print) is deeply pressed 25cm into wet clay, cloudy rainwater pooled inside the heel impression with organic leaf litter floating. At the right edge of the frame, the laced toe of Nora's weathered brown leather field trekking boot (rough leather, mud-splattered, practical trail shoe) is placed beside the track for scale comparison, dwarfed by the immense dinosaur foot. Sharp macro focus on wet clay ridges, pebble grains, and water surface, natural dappled forest light, authentic palaeontology field photo.",
+      "video_prompt": "[POV MACRO CLOSE-UP - GROUND] (0-3s): Looking directly down at churned wet clay, Nora's leather trekking boot steps into right frame beside a colossal 80cm three-toed footprint. Nora says off-screen \"Round footprint, wider than my shoulders.\" (3-6s): Murky water pooled inside the footprint ripples gently from her step. Nora says \"Water inside is still cloudy, so it's fresh.\" (6-8s): Camera tilts slightly forward along the trail where more tracks lead ahead. Nora says \"Whatever made this is close.\" Sharp macro focus on clay and water, realistic documentary scale shot.",
+      "dialogue": [
+        {
+          "t": "0-3s",
+          "line": "Round footprint, wider than my shoulders."
+        },
+        {
+          "t": "3-6s",
+          "line": "Water inside is still cloudy, so it's fresh."
+        },
+        {
+          "t": "6-8s",
+          "line": "Whatever made this is close."
+        }
+      ]
+    },
+    {
+      "scene_num": 11,
+      "clip_id": "A1-10",
+      "scene_name": "Spotting the Herd from Ferns",
+      "duration": 8,
+      "shot_type": "OTS · MS",
+      "refs": [
+        "Nora",
+        "Hell Creek Trail"
+      ],
+      "image_prompt": "Over-the-shoulder natural-history documentary photograph from behind dense giant fern fronds. In the left foreground (1/3 frame), the side profile of Nora strictly matching Nora face reference: soft rounded cheeks, delicate feminine chin, full plump lips, honey-blonde hair in high wavy ponytail with wispy curtain bangs framing her temple, peering cautiously through wet green leaves. Her hands hold the fern fronds softly, completely empty; strictly NO phone, NO device. In the midground 40 meters away across an open sunlit fern prairie, a peaceful herd of adult Triceratops horridus are grazing quietly, their massive bone frills and brow horns glinting in morning light. Soft dappled forest foreground, crisp bright prairie background, authentic wildlife spy-shot documentary framing, natural daylight, zero CGI.",
+      "video_prompt": "[OVER-THE-SHOULDER - LURKING] (0-3s): Nora's head and shoulder in left foreground peeking through lush fern leaves. 40 meters ahead across open meadow, seven massive Triceratops graze peacefully. Nora whispers \"There. Seven, eight of them, horned, grazing.\" (3-6s): Camera shifts slightly to frame the massive herbivores chewing low cycad fronds. Nora says \"They're the biggest things in this valley.\" (6-8s): Nora watches in silent awe, whispering with cautious hope. Nora says \"Big means safe, I hope.\" Natural spy-cam wildlife documentary look, contrast between dark canopy foreground and bright sunlit meadow.",
+      "dialogue": [
+        {
+          "t": "0-3s",
+          "line": "There. Seven, eight of them, horned, grazing."
+        },
+        {
+          "t": "3-6s",
+          "line": "They're the biggest things in this valley."
+        },
+        {
+          "t": "6-8s",
+          "line": "Big means safe, I hope."
+        }
+      ]
+    },
+    {
+      "scene_num": 12,
+      "clip_id": "A1-S1",
+      "scene_name": "Naive Vegetarian Assumption",
+      "duration": 8,
+      "shot_type": "SELFIE · MCU",
+      "refs": [
+        "Nora",
+        "Nora Body"
+      ],
+      "image_prompt": "Handheld 0.5x ultra-wide selfie vlog photograph of Nora standing at the untamed fern forest boundary, speaking directly to camera held at chest level by her extended right arm.\n\nFACE & IDENTITY LOCK (CRITICAL): Nora's face is an exact 1:1 identical match to the attached Nora reference image. Perfectly preserve her exact facial likeness from the reference photo: youthful 22-year-old soft feminine heart-shaped face, delicate rounded chin, soft cheeks, petite straight nose, distinctively FULL PLUMP PILLOWY LIPS with defined Cupid's bow curled in a confident warm wry smile, bright hazel-green almond eyes, honey-blonde hair in high wavy ponytail with wispy curtain bangs softly framing forehead and temples.\nSTRICTLY FORBIDDEN: strictly NO square jaw, NO long face, NO thin lips, NO hollow cheeks, NO aged appearance (must look 22-23), NO facial distortion, NO face drift.\n\nBODY & OUTFIT: Athletic curvaceous hourglass figure matching Nora Body reference, wearing tailored form-fitting olive-tan linen tunic with laced plunging V-neckline, dark leather belt with turtle-shell flask. Her left arm hangs naturally at her side, hand completely empty; strictly NO phone, NO smartphone, NO handheld device in either hand.\n\nBACKGROUND: 30 meters behind her across an open wild fern prairie, massive horned Triceratops with giant bone frills graze peacefully. Untamed ancient vegetation, strictly NO road, strictly NO vehicle tracks.\n\nSTYLE: Warm morning canopy sunlight, rich organic green foliage, authentic conversational YouTube travel-vlogger documentary aesthetic, zero CGI render.",
+      "video_prompt": "[HANDHELD SELFIE VLOG - 0.5x WIDE] (0-3s): Nora smiles with naive confidence directly into lens, holding camera at chest level, herd grazing 30m behind her. Nora says \"They're massive, but they're strictly vegetarians.\" (3-6s): She turns slightly, starting to step out from the fern thicket into the open meadow. Nora says \"They'll completely ignore me.\" (6-8s): She winks at the camera with cheeky bravado before turning fully toward the meadow. Nora says \"Just watch.\" Authentic handheld vlog perspective, sunny Cretaceous morning.",
+      "dialogue": [
+        {
+          "t": "0-3s",
+          "line": "They're massive, but they're strictly vegetarians."
+        },
+        {
+          "t": "3-6s",
+          "line": "They'll completely ignore me."
+        },
+        {
+          "t": "6-8s",
+          "line": "Just watch."
+        }
+      ]
+    },
+    {
+      "scene_num": 13,
+      "clip_id": "A1-11",
+      "scene_name": "Stepping Out & Bull Notice",
+      "duration": 6,
+      "shot_type": "POV · WS",
+      "refs": [
+        "Bò Đực",
+        "Hell Creek Trail"
+      ],
+      "image_prompt": "First-person POV documentary photograph standing at the edge of the open fern meadow. 15 meters directly ahead stands a colossal 9-ton adult bull Triceratops (matching Bò Đực reference): massive 2-meter wide neck frill flushed dark reddish-pink along bone rim, right brow horn 1 meter long and sharply pointed, LEFT BROW HORN BROKEN OFF AT 30CM exposing rough jagged weathered keratin core. Its dark reptilian eye is locked aggressively on the viewer. Warm Cretaceous morning air, breath is completely transparent with ZERO smoke and ZERO steam. Churned red mud under heavy columnar legs. Tense real wildlife standoff photo.",
+      "video_prompt": "[FIRST-PERSON POV - STANDOFF] (0-3s): The camera steps two paces into the open grass and freezes dead still. 15 meters ahead, the massive 9-ton Bull Triceratops abruptly jerks its massive head upward from grazing, dark eye locking directly onto the viewer. (3-6s): The bull's massive neck frill flushes dark crimson along the upper scalloped rim; its broken 30cm left horn and sharp 1m right horn point toward the lens. Exhalation is completely transparent with zero steam. Dead silent tension, bird sounds cut out.",
+      "dialogue": []
+    },
+    {
+      "scene_num": 14,
+      "clip_id": "A1-12a",
+      "scene_name": "Bull Charge — First 3 Steps",
+      "duration": 4,
+      "shot_type": "POV · MS",
+      "refs": [
+        "Bò Đực",
+        "Hell Creek Trail"
+      ],
+      "image_prompt": "First-person POV action photograph of the massive 9-ton bull Triceratops charging aggressively forward in a mock-charge. The massive dinosaur head is lowered menacingly, broken left horn and sharp right horn pointed forward, heavy front legs thundering across red mud at 10 meters distance. Churned wet earth and fern debris kicking up from heavy footfalls. Warm ambient daylight, transparent breath with NO steam. Terrifying realistic wildlife charge perspective, dynamic kinetic framing, authentic natural motion blur.",
+      "video_prompt": "[FIRST-PERSON POV - ACTION CHARGE] (0-2s): From frame 0, the colossal Bull Triceratops lowers its massive head and charges violently forward 3 heavy thunderous strides directly toward the camera, closing from 15m to 9m. (2-4s): Mud and fern clods spray outward under massive front feet, ground violently shaking the camera frame. Broken 30cm left horn and sharp right horn fill the center frame. Transparent breath with ZERO smoke or steam. Raw terrifying kinetic momentum.",
+      "dialogue": []
+    },
+    {
+      "scene_num": 15,
+      "clip_id": "A1-12b",
+      "scene_name": "Bull Skid & Violent Stop",
+      "duration": 4,
+      "shot_type": "POV · MS",
+      "refs": [
+        "Bò Đực",
+        "Hell Creek Trail"
+      ],
+      "image_prompt": "First-person POV documentary action photograph of the 9-ton bull Triceratops skidding abruptly to a halt at 7 meters distance. Its heavy splayed front legs have gouged two deep 40cm braking ruts into the wet red mud. The massive head shakes aggressively side to side in a dominant territorial threat display, jagged 30cm broken left horn prominently visible, long right horn glinting in morning sun. Clods of wet mud spraying outward. Warm air, completely clear transparent exhalation, NO steam plume. Terrifyingly close wildlife encounter still.",
+      "video_prompt": "[FIRST-PERSON POV - SKIDDING STOP] (0-2s): Opening at 8m distance, the 9-ton Bull Triceratops plants its front feet and skids forcefully to a dead halt at 6 meters, gouging two 40cm deep mud ruts. (2-4s): It shakes its colossal head aggressively side to side, broken 30cm left horn slicing air, front foot scraping wet mud backward in a dominant warning. Camera jerks backward in panic. Completely clear breath, ZERO smoke plume, massive tactile animal presence.",
+      "dialogue": []
+    },
+    {
+      "scene_num": 16,
+      "clip_id": "A1-12c",
+      "scene_name": "Bull Stomp & Dominant Threat — Dramatic Close-Up",
+      "duration": 4,
+      "shot_type": "POV CLOSE-UP · CU",
+      "refs": [
+        "Bò Đực",
+        "Hell Creek Trail"
+      ],
+      "image_prompt": "Dramatic low-angle close-up field action photograph looking upward at the colossal head and front limb of the 9-ton bull Triceratops (matching Bò Đực reference) at 4 meters distance. The massive head is lowered menacingly: jagged weathered 30cm broken left horn and sharp 1-meter right horn dominate the upper frame; dark furious reptilian eye locked forward. Massive columnar front foot stomps violently into wet red clay, spraying clods of mud and fern debris outward toward the lens. Warm morning air, transparent exhalation with strictly ZERO steam and ZERO smoke. Intense, terrifying close-up wildlife confrontation still, tactile keratin scale texture, natural morning daylight, authentic 35mm documentary realism, zero CGI.",
+      "video_prompt": "[POV CLOSE-UP - DOMINANT STOMP] (0-2s): Opening frame at 4m distance, the colossal Bull Triceratops lowers its head, broken 30cm left horn and sharp right horn filling the upper frame, and stomps its massive front foot heavily down. (2-4s): Wet red mud sprays outward toward the camera, ground jolting violently. The bull snorts clear transparent breath (zero steam), holding its dominant ground. Nora's viewpoint trips backward into crushed ferns. Pure kinetic close-up intensity, gritty wildlife documentary realism.",
+      "dialogue": []
+    },
+    {
+      "scene_num": 17,
+      "clip_id": "A1-13",
+      "scene_name": "Shaken Recovery in Ferns — Waist-Up Medium Vlog",
+      "duration": 8,
+      "shot_type": "SELFIE · MS",
+      "refs": [
+        "Nora",
+        "Nora Body"
+      ],
+      "image_prompt": "Handheld 0.5x wide-angle selfie vlog photograph of Nora sitting waist-up, leaning back against a mossy tree root inside a dense thicket of giant ferns, single right arm extended holding camera firmly at shoulder level.\n\nFACE & IDENTITY LOCK (CRITICAL): Nora's face is an exact 1:1 identical match to the attached Nora reference image. Perfectly preserve her exact facial likeness from the reference photo: youthful 22-year-old soft feminine heart-shaped face, delicate rounded chin, soft cheeks, petite straight nose, distinctively FULL PLUMP PILLOWY LIPS with defined Cupid's bow slightly parted as she catches her breath, large shock-relieved hazel-green almond eyes, honey-blonde hair in high wavy ponytail with wispy curtain bangs framing forehead and temples. A subtle streak of red clay mud across her left cheek, sweat glistening realistically on skin.\nSTRICTLY FORBIDDEN: strictly NO square jaw, NO long face, NO thin lips, NO hollow cheeks, NO aged appearance (must look 22-23), NO facial distortion, NO face drift.\n\nBODY & OUTFIT: Athletic curvaceous hourglass figure matching Nora Body reference, tailored olive-tan linen tunic cinched tightly at narrow waist by dark leather utility belt with turtle flask, plunging laced V-neckline. Her free left hand rests flat against the mossy root for support, completely empty; strictly NO phone, NO device in hand.\n\nBACKGROUND: Dense primeval jungle canopy with giant tree fern fronds and gnarled mossy tree trunks. Dappled morning sunlight filtering through leaves.\n\nSTYLE: Raw authentic survivor vlog still, realistic skin texture with sweat droplets, natural lighting, zero CGI plastic render.",
+      "video_prompt": "[HANDHELD SELFIE VLOG - WAIST-UP MEDIUM SHOT] (0-3s): Nora sits waist-up against mossy tree root in ferns, holding camera with right hand at shoulder level, chest heaving as she gasps for breath. Nora says \"He stopped... He stopped six metres short.\" (3-6s): Her left hand wipes a streak of wet mud from her cheek, dark humor returning to her eyes. Nora says \"That was a warning, not an attack.\" (6-8s): She blows a loose honey-blonde hair strand from her forehead with shaky relief. Nora says \"Message received, big guy.\" Handheld vlog perspective, single-arm camera grip, rich natural skin texture, dappled forest light.",
+      "dialogue": [
+        {
+          "t": "0-3s",
+          "line": "He stopped. He stopped six metres short."
+        },
+        {
+          "t": "3-6s",
+          "line": "That was a warning, not an attack."
+        },
+        {
+          "t": "6-8s",
+          "line": "Message received, big guy."
+        }
+      ]
+    },
+    {
+      "scene_num": 18,
+      "clip_id": "A1-14",
+      "scene_name": "Perimeter Standoff — Majestic Valley Wide Shot",
+      "duration": 10,
+      "shot_type": "CINEMATIC FIXED · WS",
+      "refs": [
+        "Nora",
+        "Nora Body",
+        "Hell Creek Trail"
+      ],
+      "image_prompt": "Cinematic extreme wide shot (WS/EWS) natural history documentary photograph overlooking the sunlit Cretaceous floodplain at dawn. In the immediate lower-left foreground (1/5 frame), Nora, matching Nora face and body references: honey-blonde hair in high wavy ponytail with curtain bangs, fair smooth creamy skin (strictly NO red hair, NO freckles), tailored olive-tan tunic, dark leather belt, sits quietly on a giant mossy fallen conifer log, watching the horizon. Spanning across the vast middle and background 40 to 60 meters away across an open sunlit fern prairie, the entire herd of seven massive adult Triceratops horridus and two juveniles graze peacefully among low cycads and magnolia groves beside a curving silty river under morning mist. Majestic wide-angle landscape composition, authentic 35mm wildlife cinema still, natural organic lighting, zero CGI gloss.",
+      "video_prompt": "[CINEMATIC FIXED CAMERA - EXTREME WIDE SHOT] (0-3s): Fixed camera on mossy log. Nora sits quietly in lower-left foreground gazing across the vast sunlit fern savanna where the 7-strong Triceratops herd grazes 50m away. Nora says \"So I can't walk in. Not yet.\" (3-7s): Camera holds still as a warm breeze ripples through giant fern fronds and conifer canopies; the horned herbivores chew calmly under the golden morning sun. Nora says \"I sit here at the edge, where they can see me.\" (7-10s): Nora leans back against the tree bark, watchful and resolute as morning birds call in the canopy. Nora says \"I don't move. And I wait.\" Epic wide cinematic tableau, tranquil prehistoric nature, powerful Act 1 cliffhanger.",
+      "dialogue": [
+        {
+          "t": "0-3s",
+          "line": "So I can't walk in. Not yet."
+        },
+        {
+          "t": "3-7s",
+          "line": "I sit here at the edge, where they can see me."
+        },
+        {
+          "t": "7-10s",
+          "line": "I don't move. And I wait."
+        }
+      ]
+    }
+  ]
+}
