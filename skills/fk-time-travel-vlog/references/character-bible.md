@@ -91,14 +91,15 @@ Edit this image: keep the exact same three panels side by side, the same three p
 - Phụ kiện sẽ đeo/tháo trong cảnh (bao tay, mũ) **không** đưa vào `[OUTFIT]` (mục 5).
 - Cùng câu `[OUTFIT]` đó là `OUTFIT LOCK` trong `video_prompt` của tập — một nguồn duy nhất, không viết lại khác đi.
 
-## 7. Kỹ thuật bổ sung — `character-design` (repo tham chiếu)
+## 7. Khóa cứng Thiết kế Nhân vật & Sinh vật Chủ Chốt — `/fk-character-design` (Rule 58 BẮT BUỘC)
 
-Mục 1–6 ở trên là **luật của skill này** và luôn thắng. Mục 7 chỉ trỏ sang kho phương pháp ở `skills/character-scene-design-skills-main/skills/character-design/` — đọc khi gặp đúng triệu chứng dưới đây, không đọc mặc định, không copy nội dung về.
+Mục 1–6 ở trên là luật bất biến của vlog. BẮT BUỘC áp dụng runtime `/fk-character-design` (`skills/fk-character-design/`) để thiết kế reference sheet 16:9 cho toàn bộ Nhân vật và Sinh vật chủ chốt / Antagonist trước khi sinh ảnh hoặc video:
 
-| Triệu chứng | Đọc | Áp dụng vào đâu |
+| Thực thể / Hạng mục | Quy chuẩn từ `/fk-character-design` | Áp dụng vào đâu |
 |---|---|---|
-| Body trôi dáng giữa các clip; 3 panel của `<V> Body` không giống "một người xoay" (lệch body width, leg length, waist line, đường dây đeo, bên đeo đạo cụ) | `character-design/SKILL.md` → *Production Asset Pipeline* bước 1 (**proportion / height lock**) + bước 4 (**W0 turnaround contract**) | Làm **trước** khi sinh `<V> Body`: chốt net height, head ratio, width-to-height ratio, leg ratio, foot baseline thành câu chữ, rồi mới EDIT outfit (mục 6). Mạnh hơn là nhồi thêm tính từ vào `BODY LOCK` |
-| Đạo cụ cố định (gùi, túi da, dao, bầu nước) trôi thành vật generic giữa 40 clip | cùng file → bước 3 (**permanent prop geometry**) | Tả đạo cụ bằng **hình học + bên đeo + cách gắn + chất liệu + mặt trước/sau**, và **nêu rõ nó KHÔNG phải cái gì** (`not a round ball, not a bottle, not a pouch`). Dùng trong prompt **ảnh ref**; `video_prompt` vẫn theo Rule 52 (2) — chỉ trỏ ref, không tả lại |
-| Nhiều người bản địa bị trộn mặt thành một | cùng file → *Bone And Face Structure Layer* | Mỗi nhân vật phụ đổi ít nhất **2 trong**: face envelope, cheek/jaw, eye geometry, hairline, skin texture, posture. Ghi vào cột dấu nhận diện ở bảng nhân vật (`story-engine.md`) |
+| **`<V> Body` & Nhân vật chính** | *Production Asset Pipeline* bước 1 (**proportion / height lock**) + bước 4 (**W0 turnaround contract**) | Chốt 5 chỉ số (net height 178cm, head ratio 1:7.5, width-to-height ratio, leg ratio, foot baseline) thành câu chữ trong prompt tạo sheet 3 panel, rồi mới EDIT trang phục theo Rule 46. |
+| **Sinh vật chủ chốt / Quái thú (Triceratops Bull, T-Rex, Mammoth)** | *Creature Turnaround Contract* (Rule 58): 3 panel trong 1 ảnh 16:9 (3/4 Trái, 3/4 Phải, Cận cảnh đầu sọ) | **CẤM ẢNH ĐƠN 1 GÓC**. Khóa rõ đặc điểm bất đối xứng (sừng gãy bên trái, sừng dài bên phải, vết sẹo), vi mô biểu bì vảy đa giác, rãnh máu nứt nẻ (Rule 57), và lệnh cấm khói thở trắng đặc. |
+| **Đạo cụ cố định (gùi, túi da, dao, giáo)** | Bước 3 (**permanent prop geometry**) | Tả đạo cụ bằng **hình học + bên đeo + cách gắn + chất liệu + mặt trước/sau**, và **nêu rõ nó KHÔNG phải cái gì** (`not a round ball, not a bottle, not a pouch`). Chỉ ghi trong prompt **ảnh ref**; `video_prompt` chỉ trỏ ref theo Rule 52 (2). |
+| **Người bản địa / Nhân vật phụ** | *Bone And Face Structure Layer* | Mỗi nhân vật phụ đổi ít nhất **2 trong**: face envelope, cheek/jaw, eye geometry, hairline, skin texture, posture để chống lẫn mặt. |
 
 **Bỏ qua** trong repo đó: toàn bộ phần short-drama / casting dọc 9:16, `references/full-manual.md`, `SECTIONS/`, và mọi đường dẫn `/Users/baimengke/...` (không tồn tại trên máy này).

@@ -89,6 +89,12 @@ class ReviewHandler(SimpleHTTPRequestHandler):
             self._serve_file(TOOLS_DIR / "review_board.html", "text/html")
             return
 
+        if path in ("/review_refs", "/review_refs.html", "/refs-review"):
+            pdir = _resolve_proj_dir()
+            if pdir and (pdir / "review_refs.html").exists():
+                self._serve_file(pdir / "review_refs.html", "text/html")
+                return
+
         if path in ("/review_images", "/review_images.html", "/images-review"):
             pdir = _resolve_proj_dir()
             if pdir and (pdir / "review_images.html").exists():
@@ -101,10 +107,23 @@ class ReviewHandler(SimpleHTTPRequestHandler):
                 self._serve_file(pdir / "review_videos.html", "text/html")
                 return
 
+        if path in ("/master", "/master_player", "/master_player.html"):
+            pdir = _resolve_proj_dir()
+            if pdir and (pdir / "master_player.html").exists():
+                self._serve_file(pdir / "master_player.html", "text/html")
+                return
+
         if path in ("/review_1080p", "/review_1080p.html", "/1080"):
             pdir = _resolve_proj_dir()
             if pdir and (pdir / "review_1080p.html").exists():
                 self._serve_file(pdir / "review_1080p.html", "text/html")
+                return
+
+        if path.endswith(".html"):
+            fname = path.lstrip("/")
+            pdir = _resolve_proj_dir()
+            if pdir and (pdir / fname).exists():
+                self._serve_file(pdir / fname, "text/html")
                 return
 
         if path.startswith("/1080/"):

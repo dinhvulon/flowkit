@@ -1,13 +1,14 @@
-# Cinematic Toolkit & 5 Subagents Cho Time-Travel Vlog
+# Cinematic Toolkit & Upstream Subagents Cho Time-Travel Vlog
 
-Đọc ở các bước ghi trong từng mục. File này điều phối **bộ 5 Subagent Bắt Buộc** dùng để lấy output viết Kịch bản và Prompt — `/fk-action-choreography`, `/fk-add-material`, `/fk-cinematic-transitions`, `/fk-gen-narrator`, `/fk-camera-guide` — cùng các kỹ thuật điện ảnh đã chỉnh theo luật vlog.
+Đọc ở các bước ghi trong từng mục. File này điều phối **bộ Subagent Bắt Buộc** dùng để lấy output viết Kịch bản, Thiết kế Reference và Prompt — `/fk-character-design`, `/fk-action-choreography`, `/fk-add-material`, `/fk-cinematic-transitions`, `/fk-gen-narrator`, `/fk-camera-guide` — cùng các kỹ thuật điện ảnh đã chỉnh theo luật vlog.
 
-> **QUY TẮC BẮT BUỘC (LOCK CỨNG):** Khi xây dựng kịch bản, AI Agent **BẮT BUỘC** phải vận hành 5 subagent này để lấy output chuyên môn cấu thành kịch bản, tuyệt đối không tự bịa hoặc bỏ qua bất kỳ subagent nào!
+> **QUY TẮC BẮT BUỘC (LOCK CỨNG):** Khi xây dựng kịch bản và reference, AI Agent **BẮT BUỘC** phải vận hành các subagent này để lấy output chuyên môn cấu thành kịch bản, tuyệt đối không tự bịa hoặc bỏ qua bất kỳ subagent nào!
 
-### Bảng Ánh Xạ 5 Subagent Viết Kịch Bản
+### Bảng Ánh Xạ Subagent Viết Kịch Bản & Thiết Kế
 
-| Subagent | Chuyên Môn | Output Cung Cấp Cho Kịch Bản |
+| Subagent | Chuyên Môn | Output Cung Cấp Cho Kịch Bản / Reference |
 |---|---|---|
+| **`/fk-character-design`** | Thiết kế Nhân vật & Sinh vật Chủ Chốt (Rule 58) | Chuẩn Turnaround Sheet 16:9 đa góc (4 góc nhân vật, 3 panel sinh vật), khóa 5 tầng DNA anchors (tỷ lệ, xương sọ, biểu bì Rule 57, đạo cụ, cấm lật sừng & cấm khói) |
 | **`/fk-action-choreography`** | Vũ đạo hành động & an toàn cơ học AI | 3 pha động học (dễ: trong 1 clip 8s `0-3s` / `3-6s` / `6-8s`; dễ lỗi: mỗi pha 1 clip 4s — Bài 71), từ vựng né/săn an toàn |
 | **`/fk-add-material`** | Image Material & Visual Style | Style instruction, lighting, cấm token phone |
 | **`/fk-cinematic-transitions`** | Kỹ thuật nối cảnh & nhịp chuyển màn | Match-on-action, foreground wipe, swing pan, J-cut |
@@ -23,6 +24,17 @@ Cách chuyển một template gốc sang vlog:
 | `narrator_text` lời dẫn | Thoại native của vlogger trong `video_prompt`, số từ theo độ dài clip (Rule 49, Lesson 65) |
 | Nhân vật chính là chiến binh/tướng | Vlogger là người sống sót bị cuốn vào; người bản địa làm phần khó |
 | Kiếm, khiên, kỵ binh | Vũ khí và mối nguy đúng thời kỳ: giáo, đá, đuốc, thú lớn, bão |
+
+---
+
+## 0. Thiết kế Nhân vật & Sinh vật Chủ Chốt (từ `/fk-character-design` & Rule 58) · Bước 2, Bước 7
+
+Áp dụng trước khi sinh bất kỳ ảnh reference nào:
+1. **Tuyệt đối cấm ảnh đơn 1 góc** cho nhân vật chính, nhân vật phụ bản địa hoặc sinh vật/quái thú chủ chốt.
+2. **Chuẩn 16:9 Turnaround Sheet:**
+   - **Nhân vật:** 4 góc (Full-body front | Full-body 3/4 | Full-body side | Close-up face/hair). `<Vlogger> Body` bắt buộc đã mặc hoàn chỉnh outfit (Rule 46).
+   - **Sinh vật chủ chốt:** 3 panel trong 1 khung hình 16:9 (Panel 1: 3/4 Trái; Panel 2: 3/4 Phải khóa đối xứng/bất đối xứng; Panel 3: Cận cảnh chính diện sọ/hàm/mắt/keratin/biểu bì Rule 57).
+3. **Khóa 5 tầng DNA Anchor:** Proportion Lock, Bone & Face Structure, Skin/Epidermis vi mô, Permanent Prop/Geometry, Forbidden Drift & Anti-Smoke.
 
 ---
 

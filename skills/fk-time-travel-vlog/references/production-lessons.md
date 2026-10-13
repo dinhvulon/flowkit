@@ -28,6 +28,11 @@
 | **Miệng nhân vật phụ** | Không thoại → khóa miệng. Có thoại → sub-clip riêng, ngôn ngữ không hiểu được, giọng tả bằng chữ, vlogger im lặng khi họ nói | Bài 49 | ~~người bản địa câm hoàn toàn~~ |
 | **Duration** | **PATCH `duration`** sau khi POST scene, nếu không clip tự thành 10s | Bài 12 | — |
 | **Bối cảnh** | Ảnh ref bối cảnh 16:9 dùng chung cho mọi clip cùng địa điểm; duyệt start frame bối cảnh trước khi sinh R2V | Bài 69 | — |
+| **Xác phân hủy sinh học** | Xác thú lớn lún bùn 30cm, thịt rữa đỏ thẫm + gân nhờn bám sườn ố vàng, vết cắn T. rex dập tủy, ruồi nhặng. CẤM xương thạch cao trắng khô như tượng sáp / mô hình bảo tàng | Rule 59 (1) + Bài 75 | ~~xương trắng khô trên sỏi~~ |
+| **Đường mòn tiền sử (Anti-Tire)** | Lối mòn thú giẫm đạp hỗn loạn, hố chân tròn lún bùn, dương xỉ dập nát. CẤM 100% vệt lốp xe ô tô 4x4, thân gỗ xẻ, đường lâm nghiệp hiện đại | Rule 59 (2) + Bài 75 | ~~từ khóa trail gây lốp xe~~ |
+| **Ánh sáng tự nhiên (Anti-God Rays)** | Ánh sáng ban mai tán xạ dịu, sương ẩm mép sông, mai rùa nửa chìm bùn sỏi. CẤM 100% tia nắng thần thoại volumetric god rays kiểu hoạt hình / diorama hồ cá | Rule 59 (3) + Bài 75 | ~~god rays diorama~~ |
+| **Khóa khuôn mặt (Anti-Text Drift)** | Prompt BẮT BUỘC khóa 1:1 theo ảnh ref face (tóc vàng mật ong, mái thưa, da trắng mịn không tàn nhang). CẤM tả lệch màu tóc/kiểu tóc/da đè lên ref | Rule 59 (4) + Bài 75 | ~~prompt ghi đè tóc đỏ/tàn nhang~~ |
+| **Khóa ngũ quan & Lệnh ép 1:1 (Ironclad Face Lock)** | Dùng đúng ảnh ref hiện có. BẮT BUỘC lệnh ép: exact 1:1 identical match to attached reference + đặc tả ngũ quan (mặt trái xoan mềm, môi mọng Cupid's bow, cằm thon, mũi thẳng). CẤM mặt vuông già, cấm môi mỏng | Rule 60 + Bài 76 | ~~tả chung chung gây mặt vuông/môi mỏng~~ |
 
 **Kỹ thuật bổ sung từ `skills/character-scene-design-skills-main/`** (repo tham chiếu, đọc khi cần — xem con trỏ trong `character-bible.md` §7 và `shots-and-realism.md`):
 - *Proportion lock → W0 turnaround contract* (`skills/character-design/SKILL.md`) — khóa tỉ lệ hình thể **trước** khi sinh sheet; chống body drift mạnh hơn nhồi tính từ vào prompt.
@@ -745,7 +750,81 @@ Rút ra từ dự án `output/atlantis-9600bc/` (2026-09-27). Khi mâu thuẫn v
          - Trong `negative_constraints`:
            `"NO male hands, NO hairy arms, NO modern wristwatch or bracelet, NO painted fingernails, NO extra or deformed fingers; strictly matching <Vlogger> Hand reference."`
 
+73. **ĐẶC TẢ CHẤT LIỆU SINH HỌC KHỦNG LONG, TẬP TÍNH THỊ UY & TRIỆT TIÊU CGI (Prehistoric Reptilian Megafauna Material Lock, Territorial Behavior & Anti-CGI Realism — Bài học Chuỗi Khủng Long Bò Đực A1-12 Hell Creek 66 Ma, User Review 13/10/2026, Rule 57):**
+    - **Hiện tượng & Nguyên nhân gốc rễ (Root Cause):**
+      1. **Khủng long bị "giả trân" như tượng sáp hoặc đồ chơi 3D (CGI / Plastic Toy Glitch):** Khi mô tả khủng long hoặc bò sát khổng lồ, nếu prompt chỉ ghi chung chung tên loài (`Triceratops`, `T. rex`, `realistic`) mà thiếu các đặc tả sinh học sâu, AI video diffusion model (Veo 3, Flow, Sora) có xu hướng sinh ra một bề mặt da nhẵn thín, bóng loáng như nhựa dẻo, mắt đen vô hồn, ánh sáng phẳng lỳ như mô hình bảo tàng rẻ tiền hoặc game 3D đời cũ.
+      2. **Nhầm lẫn tập tính sinh thái (Thú ăn cỏ vs Thú săn mồi):** Khủng long ăn cỏ khổng lồ (Triceratops, Sauropod) tấn công do **bảo vệ lãnh thổ và đàn con**, KHÔNG PHẢI ĐỂ ĂN THỊT. Do đó, chúng không lao vào cắn xé như quái vật phim kinh dị, mà thực hiện chuỗi hành vi: **Dọa xông (mock charge) $\to$ Trượt cày đất phanh lại thị uy $\to$ Giậm chân gầm khè khẳng định ranh giới $\to$ Quay đầu bỏ đi khi đối phương nằm im phục tùng**. Việc prompt cũ bỏ quên khủng long ở pha 3 để quay lá cây là sai lệch kịch bản nghiêm trọng.
+      3. **Vật thể người xâm lấn (Ghost Hands):** Khi camera POV ngã ngửa vào bụi cây mà không khóa chủ thể khủng long, AI sẽ tự động vẽ thêm 2 bàn tay game FPS thò ra lơ lửng đỡ đất.
+    - **Quy tắc giải pháp chuẩn hóa cho 3 trụ cột: Action, Material, Setting:**
+      1. **TRỤ CỘT 1 — ACTION (Vũ đạo & Tập tính động vật):**
+         - **Góc lao an toàn:** Thú khổng lồ BẮT BUỘC lao theo góc chéo 3/4 (`diagonal trajectory`), TUYỆT ĐỐI CẤM lao thẳng chính diện đâm vào ống kính (gây méo tỷ lệ sọ và chảy xệ chi tiết mặt).
+         - **Quán tính $p = m \cdot v$ & Phanh cày đất:** Không phanh đứng khựng kiểu xe hơi ABS; chân trước găm móng guốc cày nát 2 rãnh bùn đỏ sâu 40cm, thân sau 9 tấn trượt văng nghiêng 30 độ do mất ma sát rồi mới khựng lại ở cự ly 5–6 mét.
+         - **Pha kết thúc thị uy (The Domination Stomp):** Thú khổng lồ KHÔNG biến mất khỏi khung hình. Nó đứng sừng sững chiếm trọn khung hình ở góc nhìn thấp (low-angle), giậm chân nện đất, cào bùn thị uy, rồi quay thân mình 9 tấn lừng lững bước đi trong tiếng rung chuyển mặt đất. Cắt sang cảnh sau vlogger thở phào nhẹ nhõm.
+      2. **TRỤ CỘT 2 — MATERIAL (Chất liệu sinh học & Triệt tiêu CGI):**
+         - **Da vảy sần sùi không đều:** BẮT BUỘC dùng cụm: `rugged pebbled reptilian hide covered in irregular osteoderms and thick keratinized tubercles`. CẤM các từ gợi ý bề mặt nhẵn bóng.
+         - **Nếp gấp da & Bùn đất nứt nẻ:** `thick folded skin around neck dewlap, flanks and joints caked in dried, cracked Cretaceous red mud`.
+         - **Sừng & Sẹo chiến tích:** `scarred bony neck frill with deep healed predator bite marks; splintered jagged horn tip revealing weathered fibrous keratin core`.
+         - **Nhiệt động học & Dịch tiết sinh học:** `nostrils flare violently blasting twin plumes of dense, hot breath vapor billowing in humid morning air; faint natural frothy saliva at corners of razor-sharp keratin beak`.
+         - **Mắt sinh vật sống:** `feral amber eyes with narrow vertical slit pupils reflecting natural forest light; living breathing animal, NO smooth plastic CGI texture, NO cartoonish 3D render`.
+      3. **TRỤ CỘT 3 — SETTING (Bối cảnh & Tương tác vật lý môi trường):**
+         - **Nền đất & Độ biến dạng:** Nền đất bùn đỏ phù sa Hell Creek (`churned iron-rich wet red clay`); móng guốc giậm với áp lực 15 kPa làm lún sâu, xé toác đất bùn và hất tung các tảng đất lẫn rễ cây dương xỉ.
+         - **Thực vật gãy vỡ:** Sừng quét làm gãy toác thân cây cọ mục (`shatters rotting palm stump, showering wood splinters and damp peat across foreground`).
+         - **Ánh sáng tự nhiên phá vỡ CGI:** Ánh nắng ban mai xuyên qua tán lá cọ *Sabalites* và cây lá kim cổ đại (`dappled jungle canopy sunlight with broken shadows rippling across scaly hide`), tạo khối sáng tối gồ ghề tự nhiên, xóa sạch ánh sáng phẳng của mô hình 3D.
+
+74. **MANDATORY CREATURE & CHARACTER TURNAROUND SHEET VIA `/fk-character-design` (Khóa cứng Sheet 16:9 Đa Góc & 5 Lớp DNA Anchor — Bài học Lỗi Lật Sừng & Khói Thở Con Bò Đực Hell Creek, User review 13/10/2026, Rule 58):**
+    - **Hiện tượng & Root Cause:**
+      1. **Lỗi Lật Sừng (Horn Flip) & Dị tật biến mất:** Khi sinh ảnh reference bằng ảnh đơn 1 góc chụp (Single Photograph, ví dụ chỉ thấy sườn trái), AI không có góc nhìn đối diện. Khi camera chuyển sang sườn phải hoặc góc quay khác trong video, AI bị "nhầm gương" (mirror glitch), tự lật sừng gãy sang bên phải, hoặc biến sừng gãy thành sừng dài lành lặn nguyên vẹn.
+      2. **Lỗi Khói Thở như đầu máy xe lửa (Train Smoke Glitch):** Do thiếu Anti-Smoke Lock và mô tả nhiệt động học quá đà, AI sinh ra luồng khói trắng xóa đặc quánh phụt ra từ mũi như ống khói tàu hỏa, che khuất toàn bộ mặt khủng long và trông cực kỳ giả trân.
+    - **Quy tắc giải pháp bắt buộc (Rule 58):**
+      1. **Bắt buộc kích hoạt `/fk-character-design` cho mọi Reference thực thể sống:** CẢ Claude VÀ Antigravity BẮT BUỘC kích hoạt `/fk-character-design` để thiết kế Character/Creature Turnaround Sheet 16:9 trước khi sinh bất kỳ ảnh reference nào. Tuyệt đối cấm ảnh đơn 1 góc cho nhân vật và sinh vật chủ chốt.
+      2. **Chuẩn Creature Turnaround Sheet 16:9 (3 panel trong 1 ảnh 16:9):**
+         - Panel 1 (3/4 Trái): Thể hiện rõ toàn bộ cấu trúc thân thể và đặc điểm bên trái (sừng trái gãy cụt còn 30cm lộ lõi keratin thô ráp phong hóa).
+         - Panel 2 (3/4 Phải): Thể hiện rõ góc đối diện và đặc điểm bất đối xứng (sừng phải dài 1m nhọn hoắt nguyên vẹn).
+         - Panel 3 (Cận cảnh sọ chính diện): Khóa giác đấu đầu sọ, sừng, hàm mỏ, mắt hổ phách, nếp nhăn diềm sọ, vảy biểu bì lát gạch (Rule 57).
+      3. **Khóa 5 Tầng DNA Anchor:** Proportion Lock, Bone & Face Structure Layer, Skin/Epidermis vi mô Rule 57, Permanent Prop/Geometry, và Forbidden Drift & Anti-Smoke Lock (`NO train-engine white smoke plumes; breath vapor is subtle faint mist only`).
+75. **KHÓA CHẤT LIỆU XÁC ĐỘNG VẬT PHÂN HỦY SINH HỌC, BẢO TOÀN ĐƯỜNG MÒN NGUYÊN SINH (TRIỆT TIÊU VỆT LỐP XE / CƯA XẺ HIỆN ĐẠI), XÓA GOD RAYS, VÀ KHÓA NHẬN DIỆN KHUÔN MẶT CHỐNG PROMPT ĐÈ (Biological Carcass Decomposition Material, Prehistoric Trail Integrity & Anti-Tire-Track Lock, Anti-God-Rays, Face Lock against Text-Prompt Drift — Bài học Act 1 Hell Creek 66 Ma, User Review 13/10/2026, Rule 59):**
+    - **Hiện tượng & Root Cause:**
+      1. **Xác động vật giả trân như mô hình bảo tàng (Fake Plastic/Plaster Skeleton):** Prompt cũ tả "khung xương trắng xám cong trên bãi sỏi", thiếu độ chìm lún và thịt thối, khiến AI vẽ ra bộ xương thạch cao trắng bóc, khô cong, nằm hờ hững trên sỏi như mô hình đồ chơi nhựa trong bảo tàng.
+      2. **Rừng Kỷ Phấn Trắng bị dính vệt lốp xe tải 4x4 & gỗ xẻ hiện đại (Truck Tire Ruts & Lumber Glitch):** Do dùng từ khóa `mud trail` hay `trail`, AI diffusion model tự liên tưởng tới đường mòn lâm nghiệp nông thôn và vẽ ra 2 vệt bánh xe tải song song sâu hoắm trong bùn kèm thân cây bị cưa xẻ đặt gọn gàng 2 bên đường ở thời điểm 66 triệu năm trước.
+      3. **Tia nắng thần thoại CGI (God Rays Glitch):** Prompt dùng các từ ngữ ánh sáng hoa mỹ khiến khung hình bị phủ các luồng sáng volumetric beams như đồ họa Avatar/Disney, lòng sông thu hẹp như mương cảnh quan hồ cá.
+      4. **Lỗi khuôn mặt nhân vật chính bị Text Prompt ghi đè (Face Drift by Text Override):** Mặc dù ảnh ref `ref_nora_face.jpg` là cô gái tóc vàng mật ong (*honey-blonde*), da trắng mịn không tàn nhang, nhưng trong DB và prompt lại ghi `auburn hair escaping bun with dirt smudges` hoặc `copper-red hair, freckles`. AI diffusion model ưu tiên chữ hơn ảnh ref, biến nhân vật thành cô gái tóc đỏ cam tàn nhang búi tóc củ tỏi lệch 100% so với ref!
+    - **Quy tắc giải pháp bắt buộc (Rule 59):**
+      1. **Chất liệu Xác Phân Hủy Sinh Học Thực Tế (`fk-add-material` & `cretaceous_vlog`):**
+         - Trọng lượng & Lún bùn: Xác thú lớn (Edmontosaurus 12m, 7 tấn) BẮT BUỘC chìm lún sâu 20–30cm vào bùn phù sa ướt và sét đỏ mép nước (`heavily sunken 30cm into wet river silt and alluvial mud`), tạo gờ đùn bùn đất quanh thân xác.
+         - Thịt cơ & Gân rữa bám xương: Khung sườn ố vàng vì nắng gió; cơ thịt đỏ thẫm đông kết và gân nhờn bám chặt vào xương sườn và sụn (`dark coagulated reddish-brown muscle tissue and glistening tendons adhering to costal bone and cartilage`); nội tạng phân hủy trong khoang ngực; da vảy sừng rách tả tơi mép mỡ quăn dính bùn và máu đông khô. CẤM TUYỆT ĐỐI xương thạch cao trắng khô như tượng sáp hoặc mô hình bảo tàng (`NOT a museum diorama, NOT wax figure, NOT dry clean bones`).
+         - Vết cắn thú săn mồi: Vết cắn của T. rex hình chữ U sâu hoắm trên xương bả vai/hông phải thấy rõ tủy xương bị dập nát (`scalloped bite gouges with crushed marrow`).
+         - Côn trùng: Bầy ruồi nhặng và muỗi cổ đại bu quanh kẽ thịt thối.
+      2. **Triệt Tiêu 100% Vệt Lốp Xe & Đường Lâm Nghiệp:**
+         - CẤM dùng từ `trail`, `dirt road`, `country road` đơn độc.
+         - BẮT BUỘC dùng: `wide, chaotic animal-trampled game corridor cutting into primeval rainforest; deeply churned red clay mud filled with massive rounded ceratopsian foot depressions, crushed fern fronds, mud wallows; STRICTLY NO vehicle tracks, STRICTLY NO parallel tire ruts, STRICTLY NO modern dirt road, STRICTLY NO sawn lumber logs`.
+      3. **Ánh Sáng Tự Nhiên & Triệt Tiêu Tia Nắng Thần Thoại:**
+         - CẤM `god rays`, `volumetric beams`, `magical sunbeams`.
+         - BẮT BUỘC dùng: `flat natural morning overcast daylight, humid river mist in distance, natural dappled canopy sunlight`. Mai rùa nằm nửa chìm trong bùn sỏi ướt sát mép nước (`half-embedded in wet river silt and pebbles with thin specular reflections`).
+      4. **Khóa Khuôn Mặt Tuyệt Đối Chống Text Prompt Ghi Đè:**
+         - Text prompt trong scene BẮT BUỘC phải đồng bộ 100% với ảnh ref `ref_face`.
+         - BẮT BUỘC dùng: `matching Nora face reference: young 23-year-old woman with honey-blonde hair in high wavy ponytail with wispy curtain bangs framing forehead, fair smooth creamy skin (strictly NO red hair, NO auburn hair, NO messy bun, NO freckles), hazel-green eyes`.
+
+76. **KHÓA CHẶT 1:1 KHUÔN MẶT BẰNG MỆNH LỆNH SẮT ĐÁ VÀ ĐẶC TẢ HÌNH HỌC NGŨ QUAN — DÙNG ĐÚNG ẢNH REF HIỆN CÓ (Ironclad 1:1 Face Lock via Mandatory Reference Command & Facial Geometry DNA — Bài học Khắc Phục Lệch Mặt Cảnh 01, 04, 15 Hell Creek 66 Ma, User Review 13/10/2026, Rule 60):**
+    - **Hiện tượng & Nguyên nhân gốc rễ (Root Cause):**
+      1. **Gương mặt bị trôi dạt và biến dạng nặng nề dù đã có ảnh Reference:** Khi sinh Start Frame hoặc hình ảnh có nhân vật chính (Nora), mặc dù đã gắn ảnh Reference `<Vlogger>` trong DB, kết quả khuôn mặt vẫn bị lệch nghiêm trọng:
+         - Cảnh 04 mặt vuông dài già nua như phụ nữ 35 tuổi, xương hàm bạnh nam tính, má hóp.
+         - Cảnh 15 môi mỏng dính, miệng há to hốc hác méo mó.
+         - Cảnh 01 mắt lồi, gò má lệch.
+      2. **Vì sao có ảnh Ref mà AI vẫn vẽ sai mặt?**
+         - *Prompt thiếu mệnh lệnh ép 1:1:* Prompt cũ chỉ ghi mô tả chung chung (`matching Nora face reference: young 23-year-old woman with honey-blonde hair...`). Diffusion model hiểu đây chỉ là "cảm hứng/gợi ý phong cách", không phải lệnh bắt buộc.
+         - *Thiếu đặc tả hình học khung xương & ngũ quan (Facial Geometry DNA):* Không mô tả dáng mặt (trái xoan mềm mại / heart-shaped vs mặt vuông), cằm thon, má bầu bĩnh, và đặc biệt là **bờ môi dày mọng hình trái tim (`distinctively full plump pillowy lips with defined Cupid's bow`)** - đặc trưng nhận diện lớn nhất của ảnh gốc. Khi text không có từ khóa này, AI tự do vẽ môi mỏng và cằm vuông.
+         - *Thiếu khối phủ định cấm biến dạng (Negative Identity Constraints):* Không cấm mặt vuông (`strictly NO square jaw`), cấm mặt già (`NO aged appearance`), cấm môi mỏng (`NO thin lips`).
+    - **Quy tắc giải pháp bắt buộc (Rule 60):**
+      1. **DÙNG ĐÚNG ẢNH REFERENCE HIỆN CÓ — KHÔNG CẦN CẮT MỚI:** Đã có ảnh Reference của nhân vật trong dự án thì tái sử dụng nguyên vẹn, không cần cắt hay tạo ảnh mới làm phân mảnh media.
+      2. **Khóa Mệnh Lệnh Sắt Đá 1:1 (Mandatory 1:1 Reference Command):** BẮT BUỘC mở đầu khối nhận diện bằng câu lệnh khẳng định trực tiếp:
+         `"Nora's face is an exact 1:1 identical match to the attached Nora reference image. Perfectly preserve her exact facial likeness from the reference photo without changes."`
+      3. **Đặc Tả Hình Học Khung Xương & Ngũ Quan (Facial Geometry DNA Lock):** Bắt buộc nêu rõ các thông số hình học:
+         `"youthful 22-year-old soft feminine heart-shaped face, delicate rounded chin, soft cheeks, petite straight nose, distinctively FULL PLUMP PILLOWY LIPS with defined Cupid's bow, large hazel-green almond eyes, and honey-blonde hair in high wavy ponytail with wispy curtain bangs softly framing forehead and temples."`
+      4. **Khối Phủ Định Triệt Tiêu Trôi Dạt (Anti-Drift Negative Constraints):** Bắt buộc chèn câu cấm tuyệt đối:
+         `"STRICTLY FORBIDDEN: strictly NO square jaw, NO long rectangular face, NO thin lips, NO hollow cheeks, NO aged appearance (must look 22-23), NO facial distortion, NO face drift."`
+
 **Nội dung**
 17. **[ĐÃ THAY bởi Rule 46 / bài học 60]** Vlogger mặc đồ hiện đại theo ảnh ref là chấp nhận được. Hiện tại: vlogger mặc trang phục thời kỳ ngay từ clip đầu qua `<Vlogger> Body` đã mặc outfit; đồ hiện đại chỉ khi user yêu cầu phong cách "lạc loài".
 18. User có thể yêu cầu **cảnh mở đầu FPV điện ảnh** (từ không gian lao xuống toàn cảnh thành phố, không có vlogger), là ngoại lệ của luật "mọi shot quay bằng điện thoại". Clip đó dùng ảnh ref toàn cảnh, giữ yên 2–3 giây cuối, và clip sau mở bằng vật lướt qua ống kính để che cú cắt.
+
 
