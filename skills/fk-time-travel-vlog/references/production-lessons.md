@@ -975,6 +975,18 @@ Rút ra từ dự án `output/atlantis-9600bc/` (2026-09-27). Khi mâu thuẫn v
       4. **Chất Liệu Sinh Học Sống Động Cho Khủng Long:**
          - `tactile organic epidermis, irregular polygonal basement scales, prominent conical keratin tubercles, weathered hairline fissures on horns, matte dried alluvial clay caked into crevices, natural breath vapor misting from nostrils`.
 
+78. **BẮT BUỘC TRUYỀN ID ẢNH REF VLOGGER (`source_media_id`) KHI SINH START FRAME CÓ NHÂN VẬT — CHỐNG LỆCH MẶT & MẤT NEO REF TRÊN GOOGLE FLOW (Mandatory Vlogger Ref ID / source_media_id Injection in Scene Start Frames — Bài học Khắc Phục Lệch Mặt Cảnh Có Nora Hell Creek 66 Ma, User Review 14/10/2026, Rule 63):**
+    - **Hiện tượng & Nguyên nhân gốc rễ (Root Cause):**
+      1. **Ảnh Start Frame trên Google Flow không có ảnh ref đính kèm & mặt bị lệch hoàn toàn:** Khi kiểm tra trên giao diện `flow.google.com`, các ảnh Start Frame được sinh ra hoàn toàn KHÔNG CÓ chip ảnh reference của Nora đính kèm, dẫn đến việc Imagen 3 vẽ khuôn mặt ngẫu nhiên từ mô tả chữ (Cảnh 2, 3 cằm/môi khác nhau; Cảnh 6 bị biến thành tóc nâu và người khác).
+      2. **Vì sao Google Flow không gắn ảnh ref?**
+         - Khi submit batch `GENERATE_IMAGE`, hệ thống chỉ gửi request dạng Text-to-Image thuần túy mà **KHÔNG truyền `source_media_id` (chứa UUID của ảnh ref nhân vật)**.
+         - Khi không có `source_media_id`, Google Flow không có `BASE_IMAGE` làm neo gốc. Backend Imagen 3 của Flow bỏ qua danh sách tham chiếu phụ và tạo ảnh hoàn toàn từ con số 0 (Text-to-Image).
+      3. **Hậu quả xung đột trong Video R2V:** Nếu Start Frame Frame 0 mang khuôn mặt lạ đưa vào `GENERATE_VIDEO_REFS`, video model sẽ bị xung đột giữa Frame 0 (mặt người lạ) và Ingredients tham chiếu (mặt Nora thật), gây méo mó, biến dạng hoặc trôi dạt nhận diện.
+    - **Quy tắc giải pháp bắt buộc (Rule 63):**
+      1. **BẮT BUỘC truyền `source_media_id` cho cảnh có nhân vật:** Mọi request sinh ảnh Start Frame cho cảnh có Vlogger / nhân vật chính BẮT BUỘC phải truyền `source_media_id` = UUID của ảnh ref nhân vật chính (`1fb0ffe9-c60c-434b-a962-93a23fd17571` cho Nora) qua `EDIT_IMAGE` hoặc `GENERATE_IMAGE` có `source_media_id`.
+      2. **Hiệu ứng trên Google Flow:** Khi có `source_media_id`, FlowKit đưa ID vào `base_media_id` / `target_asset`. Trên `flow.google.com`, Flow gán trực tiếp thẻ ảnh ref của nhân vật vào khung làm việc làm ảnh nguồn, khóa cứng 1:1 nhận diện ngũ quan, không bao giờ bị vẽ mặt ngẫu nhiên.
+      3. **Cảnh không người (Phong cảnh, Khủng long, B-roll):** Tiếp tục dùng `GENERATE_IMAGE` thuần túy không cần `source_media_id`.
+
 **Nội dung**
 17. **[ĐÃ THAY bởi Rule 46 / bài học 60]** Vlogger mặc đồ hiện đại theo ảnh ref là chấp nhận được. Hiện tại: vlogger mặc trang phục thời kỳ ngay từ clip đầu qua `<Vlogger> Body` đã mặc outfit; đồ hiện đại chỉ khi user yêu cầu phong cách "lạc loài".
 18. User có thể yêu cầu **cảnh mở đầu FPV điện ảnh** (từ không gian lao xuống toàn cảnh thành phố, không có vlogger), là ngoại lệ của luật "mọi shot quay bằng điện thoại". Clip đó dùng ảnh ref toàn cảnh, giữ yên 2–3 giây cuối, và clip sau mở bằng vật lướt qua ống kính để che cú cắt.

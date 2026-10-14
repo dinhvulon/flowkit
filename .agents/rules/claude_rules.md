@@ -149,6 +149,13 @@ page can sign a Flow request, so nothing works headless.
       - Khi sinh ảnh Start Frame 2D (Imagen 3), các tấm reference dạng Turnaround Sheet nhiều panel (4 góc) dễ làm phân tán cross-attention của model dẫn đến lệch nét giữa các cảnh.
       - BẮT BUỘC khóa 100% bằng bộ ngũ quan DNA chi tiết trong prompt (mặt trái xoan mềm, cằm thon tròn, má bầu bĩnh, sống mũi nhỏ thẳng, môi mọng đầy đặn hình trái tim, tóc vàng mật ong cột đuôi ngựa cao có mái bay) và chỉ định mệnh lệnh 1:1.
 
+63. **Mandatory Vlogger Ref ID / source_media_id Injection in Scene Start Frames (Bắt buộc truyền ID ảnh Ref Vlogger khi sinh Start Frame có nhân vật — User Lock 14/10/2026)** —
+    - (1) **Hiện tượng & Nguyên nhân gốc rễ (Root Cause)**: Khi submit request sinh ảnh Start Frame cho các cảnh có nhân vật (như Nora), nếu chỉ gửi `{"type": "GENERATE_IMAGE", "scene_id": ...}` mà KHÔNG truyền `source_media_id` (chứa UUID của ảnh ref nhân vật `uploads/nora_main_clean.jpg`): (a) Google Flow sẽ coi request này là Text-to-Image thuần túy từ con số 0 (không có `base_media_id` / `target_asset`), (b) Trên giao diện web `flow.google.com`, khung tạo ảnh hoàn toàn KHÔNG CÓ ảnh tham chiếu của nhân vật được gắn vào, (c) Imagen 3 tự động vẽ khuôn mặt ngẫu nhiên từ text mô tả, gây Face Drift và xung đột nghiêm trọng khi đưa vào sinh video R2V.
+    - (2) **Quy tắc bắt buộc (Mandatory Protocol)**:
+      - Đối với BẤT KỲ cảnh nào xuất hiện Vlogger hoặc nhân vật chính, request tạo Start Frame BẮT BUỘC phải truyền `source_media_id` = UUID của ảnh ref nhân vật chính (`c.media_id` của `<Vlogger>`): `{"type": "EDIT_IMAGE", "scene_id": sid, "source_media_id": nora_media_id, "project_id": pid, "video_id": vid, "orientation": "HORIZONTAL"}` (hoặc truyền `source_media_id` trong `GENERATE_IMAGE`).
+      - Tác dụng trên Google Flow: FlowKit đưa ID này vào `base_media_id` / `target_asset`. Trên `flow.google.com`, Flow sẽ gán trực tiếp thẻ ảnh ref của nhân vật vào khung tạo ảnh làm ảnh gốc (`BASE_IMAGE`), khóa cứng nhận diện ngũ quan 1:1, không bị Imagen 3 vẽ khuôn mặt ngẫu nhiên.
+      - Cảnh không người (Phong cảnh, Khủng long, B-roll): Tiếp tục dùng `GENERATE_IMAGE` thuần túy không cần `source_media_id`.
+
 ## Pipeline Order (Omni Flash R2V Ingredients Workflow)
 
 ```

@@ -10,9 +10,10 @@ Serves:
 import json
 import os
 import sys
-from http.server import HTTPServer, SimpleHTTPRequestHandler
+from http.server import ThreadingHTTPServer as HTTPServer, SimpleHTTPRequestHandler
 from pathlib import Path
-from urllib.parse import urlparse, parse_qs
+from urllib.parse import urlparse, parse_qs, unquote
+import urllib.parse
 import urllib.request
 
 API_BASE = "http://127.0.0.1:8100"
@@ -51,21 +52,31 @@ def _resolve_video_dir():
                 return d
     except Exception:
         return None
+import time
+
+_cached_proj_dir = None
+_cached_proj_time = 0.0
+
 def _resolve_proj_dir():
+    global _cached_proj_dir, _cached_proj_time
+    now = time.time()
+    if _cached_proj_dir and (now - _cached_proj_time) < 30.0:
+        return _cached_proj_dir
     try:
-        with urllib.request.urlopen(f"{API_BASE}/api/active-project", timeout=5) as r:
+        with urllib.request.urlopen(f"{API_BASE}/api/active-project", timeout=2) as r:
             active = json.loads(r.read())
         pid = active.get("project_id")
-        if not pid:
-            return None
-        with urllib.request.urlopen(f"{API_BASE}/api/projects/{pid}/output-dir", timeout=5) as r:
-            out = json.loads(r.read())
-        out_path = out.get("path")
-        if not out_path:
-            return None
-        return (PROJECT_ROOT / out_path).resolve()
+        if pid:
+            with urllib.request.urlopen(f"{API_BASE}/api/projects/{pid}/output-dir", timeout=2) as r:
+                out = json.loads(r.read())
+            out_path = out.get("path")
+            if out_path:
+                _cached_proj_dir = (PROJECT_ROOT / out_path).resolve()
+                _cached_proj_time = now
+                return _cached_proj_dir
     except Exception:
-        return None
+        pass
+    return _cached_proj_dir
 
 
 class ReviewHandler(SimpleHTTPRequestHandler):
@@ -148,7 +159,7 @@ class ReviewHandler(SimpleHTTPRequestHandler):
 
         # Serve local images
         if path.startswith("/images/"):
-            fname = path[len("/images/"):]
+            fname = urllib.parse.unquote(path[len("/images/"):])
             pdir = _resolve_proj_dir()
             if pdir:
                 fpath = pdir / "images" / fname
@@ -157,6 +168,19 @@ class ReviewHandler(SimpleHTTPRequestHandler):
                     self._serve_file(fpath, ctype)
                     return
             self.send_error(404, f"Image not found: {fname}")
+            return
+
+        # Serve local reference images
+        if path.startswith("/refs/"):
+            fname = urllib.parse.unquote(path[len("/refs/"):])
+            pdir = _resolve_proj_dir()
+            if pdir:
+                fpath = pdir / "refs" / fname
+                if fpath.exists():
+                    ctype = "image/png" if fname.endswith(".png") else "image/jpeg"
+                    self._serve_file(fpath, ctype)
+                    return
+            self.send_error(404, f"Ref not found: {fname}")
             return
 
         # Serve local videos
@@ -256,8 +280,13 @@ class ReviewHandler(SimpleHTTPRequestHandler):
                 self.send_header("Accept-Ranges", "bytes")
             self.end_headers()
             self.wfile.write(data)
+        except (ConnectionResetError, ConnectionAbortedError, BrokenPipeError, OSError):
+            pass
         except Exception as e:
-            self.send_error(500, str(e))
+            try:
+                self.send_error(500, str(e))
+            except Exception:
+                pass
 
     def log_message(self, format, *args):
         # Quieter logging
