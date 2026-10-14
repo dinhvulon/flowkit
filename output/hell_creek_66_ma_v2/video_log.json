@@ -1,0 +1,61 @@
+{
+  "A1-12a": {
+    "request_id": "28a80da7-b663-4f86-9d66-a117ea8e27de",
+    "status": "COMPLETED",
+    "media_id": "5d29e53e-9137-4b62-add0-f9d29cc9aa50",
+    "file": "scene_013_A1-12a_e18bf361.mp4"
+  },
+  "EST-01": {
+    "request_id": "876fb7f4-1666-406c-aa0d-566516e16c8e",
+    "status": "COMPLETED",
+    "media_id": "099d95a3-22d7-4664-8ceb-c56bc43bbe3a",
+    "file": "scene_000_EST-01_533b18b6.mp4"
+  },
+  "A1-01": {
+    "request_id": "ff0eb92c-aa44-420f-a7fb-a4af5533dca1",
+    "status": "COMPLETED",
+    "media_id": "da0a20a0-3b3c-428b-952c-8e61c99d75b4",
+    "file": "scene_001_A1-01_ba9e7dd0.mp4"
+  },
+  "A1-12b": {
+    "request_id": "79613bd4-be53-46df-8f81-194df62f13ac",
+    "status": "COMPLETED",
+    "media_id": "66c6ee0b-0eb4-4643-b31a-df9cbcea6853",
+    "file": "scene_014_A1-12b_6ef6dca6.mp4"
+  },
+  "A1-02": {
+    "request_id": "cff44c7c-68d3-4342-8895-d8eeaceb2072",
+    "status": "COMPLETED",
+    "media_id": "296d2d6a-e2a1-4111-8a25-4520dbdbb368",
+    "file": "scene_002_A1-02_d4ffd8d5.mp4"
+  },
+  "A1-12c": {
+    "request_id": "dd4e7a65-95d3-4f22-9a43-1d0418ab33c3",
+    "status": "COMPLETED",
+    "media_id": "56f885a5-a9c6-48aa-8b01-1937dc7334db",
+    "file": "scene_015_A1-12c_4b674781.mp4"
+  },
+  "A1-04": {
+    "request_id": "60092fff-8f66-49e9-bdf7-ab6b7ae315f6",
+    "status": "COMPLETED",
+    "media_id": "60e8d0af-3e5f-48e5-9906-d145d52b42d4",
+    "file": "scene_004_A1-04_6e65ed64.mp4"
+  },
+  "A1-05": {
+    "request_id": "c98eb5a0-e076-44a8-9c62-6c012ea36a6a",
+    "status": "COMPLETED",
+    "media_id": "dcc60671-fd58-4a5b-8795-26661a6d309a",
+    "file": "scene_005_A1-05_8b049391.mp4"
+  },
+  "A1-06": {
+    "request_id": "9a580164-6ee0-4f01-a461-6ff7c0499afb",
+    "status": "COMPLETED",
+    "media_id": "6194aaf0-474f-46fc-a0bc-d4a76f204f72",
+    "file": "scene_006_A1-06_03c3325e.mp4"
+  },
+  "A1-03": {
+    "request_id": "1559c001-0566-4137-abac-642c03c27396",
+    "status": "FAILED",
+    "error": "orphaned: PROCESSING since 23:03 with 0 active workers; marked failed at stop of session 2026-10-14"
+  }
+}

@@ -45,3 +45,7 @@ flow_agent.db.bak*
 *.mp3
 
 series_manifest.json
+# Hell Creek v2 raw 720p scene videos are committed so they can be pushed (user 2026-10-14).
+# Must stay after the output/**/*.mp4 rule: the last matching rule wins.
+!output/hell_creek_66_ma_v2/scenes/
+!output/hell_creek_66_ma_v2/scenes/**
