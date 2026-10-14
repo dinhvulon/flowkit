@@ -415,6 +415,14 @@ class OperationService:
                     if c.get("reference_image_url"):
                         ref_urls.append(c["reference_image_url"])
 
+        # Inline mentions ({{media:<uuid>|<file>}}, Rule 64) must be attached too — e.g. the
+        # approved Start Frame mentioned as the opening shot. They go first and keep the cap.
+        from agent.services.flow_batch import mentioned_media_ids
+        mentioned = [m for m in mentioned_media_ids(prompt) if m not in seen]
+        if mentioned:
+            ref_ids = (mentioned + ref_ids)[:_R2V_MAX_REFS]
+            seen.update(mentioned)
+
         # Fallback: if no character/asset found, allow any project character/asset
         if not ref_ids:
             project_entities = await crud.get_project_characters(pid)

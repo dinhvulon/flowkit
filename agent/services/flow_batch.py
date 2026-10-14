@@ -353,6 +353,31 @@ def _context(project_id: str, asset_id: Optional[str] = None) -> list:
             [CAPTCHA_SLOT, 1]]
 
 
+# Inline image mention inside a prompt, written by callers as {{media:<uuid>|<file name>}}.
+# Flow's UI splits the prompt slot into segments: text is ["..."], a mentioned
+# image is [None, [[media_id, file_name]]] (captured from flow.google.com 2026-10-14).
+MEDIA_MENTION_RE = re.compile(r"\{\{media:([0-9a-fA-F-]{36})\|([^}|]+)\}\}")
+
+
+def prompt_segments(prompt: str) -> list:
+    """Split a prompt into Flow prompt segments; plain text stays one segment."""
+    segments: list = []
+    pos = 0
+    for m in MEDIA_MENTION_RE.finditer(prompt):
+        if m.start() > pos:
+            segments.append([prompt[pos:m.start()]])
+        segments.append([None, [[m.group(1), m.group(2)]]])
+        pos = m.end()
+    if pos < len(prompt) or not segments:
+        segments.append([prompt[pos:]])
+    return segments
+
+
+def mentioned_media_ids(prompt: str) -> list[str]:
+    """Media ids mentioned inline, in order, without duplicates."""
+    return list(dict.fromkeys(m.group(1) for m in MEDIA_MENTION_RE.finditer(prompt)))
+
+
 def _image_input(media_id: str, input_type: int) -> list:
     return [media_id, None, None, None, input_type]
 
@@ -388,14 +413,15 @@ def image_request(prompt: str, project_id: str, count: int = 1,
     target_asset = asset_id or base_media_id
     for index in range(count):
         text = prompts[index] if prompts and index < len(prompts) else prompt
+        refs = list(dict.fromkeys(list(ref_media_ids or []) + mentioned_media_ids(text)))
         image_inputs = []
         if base_media_id:
             image_inputs.append(_base_image(base_media_id))
         image_inputs.extend(
-            _reference(mid) for mid in (ref_media_ids or []) if mid != base_media_id
+            _reference(mid) for mid in refs if mid != base_media_id
         )
         items.append([None, None, image_inputs or None, base + index * 9973, ratio,
-                      resolved_model, None, _context(project_id, target_asset), [[[text]]],
+                      resolved_model, None, _context(project_id, target_asset), [prompt_segments(text)],
                       None, None, None, None, _client_uuid()])
     return build_envelope(RPC_GEN_IMAGE, [None, items, 1, _context(project_id, target_asset),
                                           [_client_uuid()]])
@@ -462,7 +488,7 @@ def video_request(prompt: str, project_id: str, source_media_id: str,
                   aspect: Any = VIDEO_ASPECT_LANDSCAPE,
                   model: str = VIDEO_MODEL) -> str:
     inner = [
-        [[[None, None, [[[prompt]]]], model, resolve_video_aspect(aspect), None,
+        [[[None, None, [prompt_segments(prompt)]], model, resolve_video_aspect(aspect), None,
           [None, source_media_id, None, None, None,
            FULL_FRAME_CROP if crop is None else crop],
           [None, None, None, None, _client_uuid(), _client_uuid()]]],
@@ -488,7 +514,7 @@ def omni_first_frame_request(prompt: str, project_id: str, source_media_id: str,
         raise ValueError("Omni resolution must be 360p or 720p")
     model = f"abra_i2v_{duration_s}s" + ("_360p" if res == "360p" else "")
     request = [
-        [None, None, [[[prompt]]]],
+        [None, None, [prompt_segments(prompt)]],
         model,
         resolve_video_aspect(aspect),
         None,
@@ -519,7 +545,7 @@ def omni_first_last_request(prompt: str, project_id: str,
         raise ValueError("Omni resolution must be 360p or 720p")
     model = f"omni_flash_i2v_{duration_s}s_first_last" + ("_360p" if res == "360p" else "")
     request = [
-        [None, None, [[[prompt]]]],
+        [None, None, [prompt_segments(prompt)]],
         model,
         resolve_video_aspect(aspect),
         None,
@@ -552,7 +578,7 @@ def omni_reference_video_request(prompt: str, project_id: str,
         raise ValueError("Omni resolution must be 360p or 720p")
     model = f"abra_r2v_{duration_s}s" + ("_360p" if res == "360p" else "")
     request = [
-        [None, None, [[[prompt]]]],
+        [None, None, [prompt_segments(prompt)]],
         [[None, mid] for mid in refs],
         model,
         resolve_video_aspect(aspect),
@@ -593,7 +619,7 @@ def text_video_request(prompt: str, project_id: str,
     if res == "720p" and resolved_model.endswith("_360p"):
         resolved_model = resolved_model.removesuffix("_360p")
     request = [
-        [None, None, [[[prompt]]]],
+        [None, None, [prompt_segments(prompt)]],
         resolved_model,
         resolve_video_aspect(aspect),
         None,

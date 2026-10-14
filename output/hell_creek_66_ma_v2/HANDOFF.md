@@ -49,8 +49,17 @@ Bài học rút ra đã ghi vào skill: production-lessons #93 và prompt-lock B
 ## Việc tiếp theo
 
 1. User duyệt prompt (đọc `vn.json` hoặc file JSON).
-2. Tạo 112 scene (POST /api/scenes) → PATCH `duration` + `narrator_text` (không tốn credit).
+2. ✅ Đã tạo 112 scene (14/10 ~20:30): `project_state.json` → `scene_ids` (clip_id → scene_id), đã PATCH `duration` + `narrator_text`, `video_prompt` = JSON clip bỏ khối start_frame, `image_prompt` = start frame. Lint lại từ DB: 0 Critical/High. Script: `scratchpad/hc2/create_scenes.py` (chạy lại được, bỏ qua scene đã có).
 3. Start Frame → cổng duyệt ảnh → video. Chạy clip khó nhất trước (A1-12), mỗi bước đều hỏi trước (Rule 29).
+
+## Cập nhật 14/10 tối (~21:30)
+
+- **Chip ảnh ref trong prompt (Rule 64):** `flow_batch.prompt_segments` tạo đoạn `[null,[["uuid","tên file"]]]` giống Flow web (đã capture thật). Prompt dùng `{{ref:Entity}}`; `push_prompts.py` đổi token thành `{{media:uuid|file}}`. Áp dụng cho cả ảnh lẫn video. `lint_prompt.py` đã kiểm định dạng này (test 6). Server đã khởi động lại để nạp code mới (đang chạy nền từ phiên Claude, log ở scratchpad `agent_server.log`).
+- **Mặt / makeup / trang phục:** không tả lại bằng chữ, chỉ khóa vào chip (`FACE LOCK` + `MAKEUP LOCK: keep her makeup exactly as in {{ref:Nora}}, unchanged`).
+- **Start Frame có Nora:** đính 3 ref [Nora, Nora Body, ảnh bối cảnh]; video giữ đủ ref.
+- **Thoại → tiếng Tây Ban Nha Mỹ Latinh (es-419, giọng Mexico City):** 47 clip, đúng số từ Rule 49; script.md §9 đã cập nhật; bản tiếng Anh lưu ở `dialogue_en_backup.json`. Mỗi clip có câu khóa giọng; `vn.json` = thoại es + dịch Việt.
+- **Test:** ảnh A1-02 có chip mặt đạt khoảng 8.5/10 (mặt + makeup đúng). Video A1-02 (test, chưa dùng) lộ gimbal ở 0.5s, lộ tay cầm máy, sai áo, sai bờ suối. Hướng sửa đề xuất: đính ảnh Start Frame đã duyệt làm ref và nhắc nó ở đầu prompt; câu camera selfie bỏ "held in her right hand".
+- **Phát hiện:** builder R2V (MZZa6b) không có ô Start Frame, nên video chưa dùng ảnh Start Frame đã duyệt.
 
 ## File
 

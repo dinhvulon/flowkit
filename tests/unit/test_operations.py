@@ -257,6 +257,30 @@ class TestGenerateSceneVideoRefs:
         assert mock_poll.await_args.args[1][0]["operation"]["name"] == "op-r2v"
         assert result is polled
 
+    @pytest.mark.asyncio
+    async def test_inline_mentions_are_attached_first(self, service, base_scene, mock_client):
+        """Rule 64: an image mentioned in the prompt (e.g. the approved Start Frame) is sent as a reference."""
+        mock_client.generate_video_from_references = AsyncMock(return_value={
+            "status": 200,
+            "data": {"operations": [{"operation": {"name": "op-r2v"},
+                                     "status": "MEDIA_GENERATION_STATUS_PENDING"}]},
+        })
+        start = "11111111-2222-3333-4444-555555555555"
+        prompt = "The video opens exactly on {{media:%s|A1-02_clean.jpg}}; Nora talks." % start
+        with patch("agent.sdk.services.operations.crud") as ops_crud,              patch("agent.sdk.services.flow_provider.crud") as flow_crud,              patch("agent.sdk.services.operations._build_video_prompt",
+                   new=AsyncMock(return_value=prompt)),              patch("agent.sdk.services.flow_provider._poll_operations",
+                   new=AsyncMock(return_value={"data": {}})):
+            ops_crud.get_project = AsyncMock(return_value={"user_paygate_tier": "PAYGATE_TIER_ONE"})
+            ops_crud.get_project_characters = AsyncMock(return_value=[
+                {"name": "Hero", "entity_type": "character", "media_id": SAMPLE_UUID}])
+            flow_crud.get_request = AsyncMock(return_value=None)
+            flow_crud.update_request = AsyncMock()
+            await service.generate_scene_video_refs(
+                {**base_scene, "duration": 8.0}, "VERTICAL", request_id="req-1")
+
+        refs = mock_client.generate_video_from_references.await_args.kwargs["reference_media_ids"]
+        assert refs[0] == start and SAMPLE_UUID in refs
+
 
     @pytest.mark.asyncio
     @pytest.mark.parametrize("duration", [None, 7, 8.5, "abc"])

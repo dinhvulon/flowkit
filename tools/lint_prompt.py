@@ -33,6 +33,38 @@ FORBIDDEN_CREATURE_AND_LIGHTING_PATTERNS = [
      "FORBIDDEN (Rule 62 Deep Focus Lock): Shallow DoF / bokeh blurs prehistoric survival environment. Use 'deep focus, deep depth of field (f/8 aperture), entire frame sharp'."),
 ]
 
+# Inline reference-image mentions (Flow UI format, captured 2026-10-14). Design files use {{ref:<entity name>}};
+# what is sent to Flow is {{media:<uuid>|<file name>}}, which flow_batch.prompt_segments turns into the
+# [None, [[media_id, file_name]]] prompt segment. User rule: a prompt that uses reference images must
+# mention them inline at the sentence that locks them.
+REF_TOKEN_RE = re.compile(r"\{\{ref:([^}]+)\}\}")
+MEDIA_TOKEN_RE = re.compile(r"\{\{media:([0-9a-fA-F-]{36})\|([^}|]+)\}\}")
+ANY_TOKEN_RE = re.compile(r"\{\{(?:ref|media):[^}]*\}\}")
+
+
+def lint_ref_mentions(text: str, refs=None, sent_to_flow: bool = False) -> list[dict]:
+    """Check inline reference mentions. refs = entity names attached to this prompt (None = unknown)."""
+    issues = []
+    for m in ANY_TOKEN_RE.finditer(text):
+        tok = m.group(0)
+        if tok.startswith("{{media:") and not MEDIA_TOKEN_RE.fullmatch(tok):
+            issues.append({"severity": "CRITICAL", "type": "MALFORMED_REF_MENTION", "token": tok,
+                           "message": "Reference mention must be {{media:<uuid>|<file name>}} (Flow UI mention segment)."})
+        if tok.startswith("{{ref:") and sent_to_flow:
+            issues.append({"severity": "HIGH", "type": "UNRESOLVED_REF_MENTION", "token": tok,
+                           "message": "{{ref:<entity>}} must be resolved to {{media:<uuid>|<file name>}} before the prompt is sent to Flow."})
+    if refs is not None:
+        names = [n.strip() for n in REF_TOKEN_RE.findall(text)]
+        stray = [n for n in names if n not in refs]
+        if stray:
+            issues.append({"severity": "HIGH", "type": "REF_MENTION_NOT_ATTACHED", "token": ", ".join(stray),
+                           "message": "Prompt mentions reference images that are not attached to this request."})
+        if refs and not names and not MEDIA_TOKEN_RE.search(text):
+            issues.append({"severity": "HIGH", "type": "REF_MENTION_MISSING",
+                           "message": "Prompt uses reference images but never mentions one inline. Mention the ref at the sentence that locks it, e.g. 'Nora's face is exactly the face in {{ref:Nora}}'."})
+    return issues
+
+
 def is_json_prompt(prompt: str) -> tuple[bool, dict | list | None]:
     """Check if prompt is a JSON string and parse it if valid."""
     s = prompt.strip()
@@ -122,6 +154,25 @@ def lint_json_prompt(data: dict) -> list[dict]:
                 "type": "TIMELINE_SUBCLIPS",
                 "message": "JSON 'timeline_action' should use sub-clip keys (e.g. '0-3s', '3-6s', '6-8s') for precise temporal pacing."
             })
+
+    # 4b. Start Frame image prompt must mention its reference images inline (user rule 2026-10-14)
+    sf = data.get("start_frame")
+    if isinstance(sf, dict) and isinstance(sf.get("image_prompt"), str):
+        ip = sf["image_prompt"]
+        refs = sf.get("image_refs") if isinstance(sf.get("image_refs"), list) else (
+            data.get("refs") if isinstance(data.get("refs"), list) else None)
+        mentioned = set(n.strip() for n in REF_TOKEN_RE.findall(ip))
+        # frames with the vlogger's face carry only [face, body, location]; mentions are checked against clip refs
+        issues.extend(lint_ref_mentions(ip, refs=refs if (refs and (mentioned or refs)) else None))
+
+    # 4c. Video prompt mentions must point at attached refs
+    if isinstance(data.get("refs"), list):
+        body = {k: v for k, v in data.items() if k != "start_frame"}
+        vtext = json.dumps(body, ensure_ascii=False)
+        stray = sorted(set(n.strip() for n in REF_TOKEN_RE.findall(vtext)) - set(data["refs"]))
+        if stray:
+            issues.append({"severity": "HIGH", "type": "REF_MENTION_NOT_ATTACHED", "token": ", ".join(stray),
+                           "message": "video_prompt mentions reference images that are not in this clip's refs."})
 
     # 5. Extract all text for keyword rule checking (excluding negative_constraints key)
     extracted_text = extract_text_from_json(data)
@@ -221,8 +272,8 @@ def lint_prompt(prompt: str) -> list[dict]:
             return all_issues
         return lint_json_prompt(json_obj)
 
-    issues = []
-    p_lower = prompt.lower()
+    issues = lint_ref_mentions(prompt, sent_to_flow=True)
+    p_lower = ANY_TOKEN_RE.sub(" ", prompt).lower()
 
     # 1. Check Ghost Device patterns
     for pat, msg in FORBIDDEN_GHOST_DEVICE_PATTERNS:
@@ -414,6 +465,19 @@ def run_json_prompt_tests():
     bad_types = [iss["type"] for iss in lint_prompt(json.dumps(refs_bad))]
     assert "GHOST_DEVICE" in bad_types and "ARTIFICIAL_LIGHTING_VIOLATION" in bad_types, bad_types
     print("  [PASS] Test 5: ref_prompts schema linted per entity; negative_prompt and 'split screen' allowed.")
+
+    # Test 6: inline reference mentions (Flow UI format)
+    mid = "3a3b6dbc-a1e5-4045-9713-b878b4bec006"
+    ok_plain = "Nora {{media:%s|nora_main_clean.jpg}}  kneeling on a gravel bar, looking at the lens." % mid
+    assert lint_prompt(ok_plain) == [], lint_prompt(ok_plain)
+    bad_types = [i["type"] for i in lint_prompt("Nora {{ref:Nora}} kneeling. {{media:123|x.jpg}}")]
+    assert "UNRESOLVED_REF_MENTION" in bad_types and "MALFORMED_REF_MENTION" in bad_types, bad_types
+    clip = json.loads(json.dumps(valid_json)); clip["refs"] = ["Nora", "Nora Body"]
+    clip["start_frame"] = {"image_prompt": "A woman kneeling on gravel."}
+    assert "REF_MENTION_MISSING" in [i["type"] for i in lint_prompt(json.dumps(clip))]
+    clip["start_frame"] = {"image_prompt": "Her face is exactly the face in {{ref:Nora}}; outfit as in {{ref:Hell Creek Bank}}."}
+    assert "REF_MENTION_NOT_ATTACHED" in [i["type"] for i in lint_prompt(json.dumps(clip))]
+    print("  [PASS] Test 6: inline reference mentions enforced ({{media:uuid|name}} / {{ref:entity}}).")
 
     print("\nAll JSON Prompt Linter Tests PASSED! 🎉")
 

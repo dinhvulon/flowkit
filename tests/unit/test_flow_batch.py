@@ -85,6 +85,28 @@ class TestImageRequest:
         item = inner(fb.image_request("a cat", self.PID, ref_media_ids=["mid-1"]))[1][0]
         assert item[2] == [["mid-1", None, None, None, fb.REF_TYPE_IMAGE]]
 
+    def test_inline_mention_splits_the_prompt_like_the_flow_ui(self):
+        """Live capture 2026-10-14: a mentioned image sits between text segments
+        as [None, [[media_id, file_name]]] and is also attached as a reference."""
+        mid = "3a3b6dbc-a1e5-4045-9713-b878b4bec006"
+        item = inner(fb.image_request(
+            "Nora {{media:%s|nora_main_clean.jpg}}  kneeling on a gravel bar, looking at the lens." % mid,
+            self.PID,
+        ))[1][0]
+        assert item[8] == [[["Nora "], [None, [[mid, "nora_main_clean.jpg"]]],
+                            ["  kneeling on a gravel bar, looking at the lens."]]]
+        assert item[2] == [[mid, None, None, None, fb.REF_TYPE_IMAGE]]
+
+    def test_mention_already_in_refs_is_not_attached_twice(self):
+        mid = "3a3b6dbc-a1e5-4045-9713-b878b4bec006"
+        item = inner(fb.image_request("A {{media:%s|a.jpg}} b" % mid, self.PID,
+                                      ref_media_ids=[mid, "other"]))[1][0]
+        assert [r[0] for r in item[2]] == [mid, "other"]
+
+    def test_plain_prompt_stays_a_single_text_segment(self):
+        assert fb.prompt_segments("a cat") == [["a cat"]]
+        assert fb.prompt_segments("") == [[""]]
+
     def test_base_image_and_references_use_distinct_wire_types(self):
         item = inner(fb.image_request(
             "make the boat blue", self.PID,

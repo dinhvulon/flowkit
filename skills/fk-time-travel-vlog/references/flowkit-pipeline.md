@@ -20,7 +20,7 @@ Clip JSON (mẫu ở `prompt-templates.md`) là bản thiết kế đọc đư�
 
 | Trường Clip JSON | Vào trường FlowKit |
 |---|---|
-| `refs` | `character_names` của scene = `["<V>", "<V> Body", <1 ref bối cảnh/sinh vật>]` (tối đa 3) |
+| `refs` | `character_names` của scene = `["<V>", "<V> Body", <ref bối cảnh/sinh vật trong khung>]` (tối đa 7 — giới hạn Omni Flash) |
 | `camera` + `style` + `setting` + `in_place` + `shot` + ID-LOCK + `action` + `dialogue` + `background_people` + `transition_in/out` + `constraints` + `audio` | `video_prompt`, dựng đúng thứ tự 9 khối của `prompt-lock.md`; sub-clip theo `duration` (4s `0-2s / 2-4s`; 6s `0-2s / 2-4s / 4-6s`; 8s `0-3s / 3-6s / 6-8s`; 10s `0-3s / 3-7s / 7-10s`); thoại dạng `Nora says (tag): "..."` |
 | `setting` (tóm tắt) | `prompt` của scene (mô tả cảnh — R2V không dùng ảnh Frame 0) |
 | `dialogue` (ghép 3 sub-clip) | `narrator_text` (PATCH, số từ theo độ dài clip — Rule 49 (0)) — đồng bộ bằng `/fk-gen-narrator` |
