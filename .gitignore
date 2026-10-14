@@ -36,7 +36,8 @@ output/*/images/
 !output/hell_creek_66_ma/images/
 !output/hell_creek_66_ma/images/**
 
-# SQLite WAL mode auxiliary files (runtime state, not for repo)
+# SQLite database and WAL mode auxiliary files (runtime state, not for repo)
+flow_agent.db
 flow_agent.db-shm
 flow_agent.db-wal
 flow_agent.db.bak*
