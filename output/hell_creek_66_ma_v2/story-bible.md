@@ -16,7 +16,7 @@
 
 ## Giai đoạn hiện tại
 
-**Kịch bản đã duyệt (v2.1, 2026-10-14).** Bước tiếp: dựng project FlowKit, sinh ref (hỏi trước — Rule 29).
+**Kịch bản đã duyệt (v2.1, 2026-10-14). Ref xong (tài khoản mới). Prompt JSON 112 clip đã xuất + lint đạt — chờ user duyệt** (`prompts_act1..5.json`, `vn.json`).
 
 ## Quyết định đã chốt
 
@@ -133,7 +133,7 @@
 | Storyboard 112 clip (kiểm tra số từ, Rule 42, từ cấm) | ✅ 0 lỗi |
 | `script.md` | ✅ đã duyệt (v2.1) |
 | Project FlowKit | ✅ `6cb771f6-3b2d-437a-a2cb-bd6106d43522` · video `51995d85-cb99-48fc-bbe2-dd532682a8cb` (HORIZONTAL) · đã upload mặt Nora + Body trần · ID lưu ở `project_state.json` |
-| Ref (14 ảnh) | ⏳ chờ user đồng ý sinh (Rule 29) |
+| Ref (14 ảnh) | ✅ đủ 14 + mặt Nora, tài khoản mới, 3 vòng review 14/10 (xem `HANDOFF.md`, `refs/`, `ref_clean_log.json`); chờ user duyệt cuối |
 | Prompt JSON (`/fk-script-to-prompts` + lint) | ⛔ |
 | Ref → Start Frame → Video | ⛔ (Rule 29: hỏi trước mỗi bước) |
 

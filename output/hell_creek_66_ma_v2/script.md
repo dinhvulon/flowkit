@@ -62,8 +62,10 @@ Giọng (chỉ Nora có `voice_description`): **Laomedeia** — upbeat, mid-high
 ### 2.2 BODY LOCK
 
 ```
-BODY LOCK (CRITICAL): Nora is a tall, statuesque woman (178 cm / 5'10" tall) with exceptionally long, slender model legs and a voluptuous hourglass figure, featuring an exceptionally large, full, voluminous heavy bust with prominent deep cleavage valley in plunging V-neckline, a tiny narrow waist, and wide curvaceous hips matching Nora Body ref; she is NOT skinny, NOT slender, NOT petite, NOT flat-chested.
+BODY LOCK: Nora's build and proportions match the Nora Body reference sheet exactly: a tall young woman (178 cm) with natural, normal proportions. Her body shape never changes from frame to frame.
 ```
+
+User 2026-10-14: hình thể bình thường, **không** thêm mô tả ngực to / đồng hồ cát — ảnh Nora Body đã sinh là tham chiếu duy nhất (thay khối cũ và Rule 52 §3 / prompt-lock B27 cho dự án này).
 
 ### 2.3 OUTFIT LOCK
 

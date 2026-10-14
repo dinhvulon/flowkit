@@ -1,0 +1,2475 @@
+[
+  {
+    "clip_id": "EST-01",
+    "duration": 6,
+    "shot": "AERIAL · EWS",
+    "refs": [
+      "Hell Creek Bank"
+    ],
+    "start_frame": "GENERATE_IMAGE",
+    "hinh": "Bình minh: sương nằm trên lạch nâu uốn khúc giữa đồng ngập phẳng, bãi cát vàng nhạt, rừng lá rộng thấp mùa xuân lốm đốm vài cây cọ quạt; xa xa ba chấm thú đứng ở bãi trống. Không người → **thẻ năm**",
+    "beat": "Thở sau cold open, đặt thế giới",
+    "thoai": [],
+    "so_tu": 0
+  },
+  {
+    "clip_id": "A1-01",
+    "duration": 6,
+    "shot": "POV · WS",
+    "refs": [
+      "Borealosuchus",
+      "Hell Creek Bank"
+    ],
+    "start_frame": "GENERATE_IMAGE",
+    "hinh": "Ngập ngang đùi giữa lạch nâu, sương sớm. Hai dải lưng sần Borealosuchus **đã nằm sẵn** cách ~5 sải tay, trôi chậm về phía máy; máy lùi dần về bãi sỏi",
+    "beat": "Nguy hiểm ngay giây 0 (Sonic Isolation: thở gấp qua mũi, nước vỗ)",
+    "thoai": [],
+    "so_tu": 0
+  },
+  {
+    "clip_id": "A1-02",
+    "duration": 8,
+    "shot": "SELFIE · MCU",
+    "refs": [
+      "Nora",
+      "Nora Body",
+      "Borealosuchus",
+      "Hell Creek Bank"
+    ],
+    "start_frame": "EDIT_IMAGE",
+    "hinh": "Nora quỳ trên sỏi, ướt sũng, ngồi thẳng dậy (khớp A1-01: vừa bò lùi lên bờ). Sau lưng: hai dải lưng đã vào chỗ nước nông",
+    "beat": "**C1** · punchline \"patient\"",
+    "thoai": [
+      {
+        "t": "0-3s",
+        "en": "Okay. I'm out, I'm out of the water.",
+        "vi": "Được rồi. Mình ra rồi, ra khỏi nước rồi."
+      },
+      {
+        "t": "3-6s",
+        "en": "Those were crocodiles, two of them, and they were not curious.",
+        "vi": "Đó là cá sấu, hai con, và chúng chẳng tò mò gì cả."
+      },
+      {
+        "t": "6-8s",
+        "en": "They were patient.",
+        "vi": "Chúng đang kiên nhẫn."
+      }
+    ],
+    "so_tu": 22
+  },
+  {
+    "clip_id": "A1-03",
+    "duration": 8,
+    "shot": "POV · WS",
+    "refs": [
+      "Edmontosaurus Carcass",
+      "Hell Creek Bank"
+    ],
+    "start_frame": "GENERATE_IMAGE",
+    "hinh": "Quay lưng khỏi nước: xác Edmontosaurus nằm sẵn trên bãi bùn xám cách ~15 m, lún sâu, sườn trơ, ruồi; máy tiến chậm",
+    "beat": "Câu hỏi: con gì ăn, còn quanh đây không?",
+    "thoai": [
+      {
+        "t": "0-3s",
+        "en": "Okay, that's a body. A big one.",
+        "vi": "Được rồi, đó là một cái xác. To lắm."
+      },
+      {
+        "t": "3-6s",
+        "en": "Something ate half of it last night and left.",
+        "vi": "Có gì đó đã ăn mất một nửa đêm qua rồi bỏ đi."
+      },
+      {
+        "t": "6-8s",
+        "en": "Left, or stepped away.",
+        "vi": "Bỏ đi, hay chỉ tạm bước ra chỗ khác."
+      }
+    ],
+    "so_tu": 20
+  },
+  {
+    "clip_id": "A1-04",
+    "duration": 8,
+    "shot": "MACRO · ECU",
+    "refs": [
+      "Nora",
+      "Nora Body",
+      "Nora Hand",
+      "Edmontosaurus Carcass",
+      "Hell Creek Bank"
+    ],
+    "start_frame": "GENERATE_IMAGE",
+    "hinh": "Rãnh răng to bằng bàn tay trên xương chậu xác; bàn tay trái Nora đặt phẳng trong rãnh để so",
+    "beat": "Gieo T. rex bằng hình, không gọi tên",
+    "thoai": [
+      {
+        "t": "0-3s",
+        "en": "Look at the size of that bite.",
+        "vi": "Nhìn kích cỡ vết cắn kìa."
+      },
+      {
+        "t": "3-6s",
+        "en": "My whole hand fits in one tooth mark.",
+        "vi": "Cả bàn tay mình lọt thỏm trong một dấu răng."
+      },
+      {
+        "t": "6-8s",
+        "en": "I'm standing in its kitchen.",
+        "vi": "Mình đang đứng trong bếp của nó."
+      }
+    ],
+    "so_tu": 20
+  },
+  {
+    "clip_id": "A1-05",
+    "duration": 8,
+    "shot": "SELFIE · MS",
+    "refs": [
+      "Nora",
+      "Nora Body",
+      "Edmontosaurus Carcass",
+      "Hell Creek Bank"
+    ],
+    "start_frame": "EDIT_IMAGE",
+    "hinh": "Nora đứng, xác ở hậu cảnh trái, lạch bên phải. **Lần duy nhất** cô nói vì sao chọn ngày này, và nói ra niềm tin sai",
+    "beat": "Đồng hồ 12h chạy · misbelief (bị bẻ ở A4-04)",
+    "thoai": [
+      {
+        "t": "0-3s",
+        "en": "I picked today on purpose.",
+        "vi": "Mình cố tình chọn đúng hôm nay."
+      },
+      {
+        "t": "3-6s",
+        "en": "Twelve hours from now, the sky over there catches fire.",
+        "vi": "Mười hai tiếng nữa, bầu trời đằng kia sẽ bốc cháy."
+      },
+      {
+        "t": "6-8s",
+        "en": "I'm just here to watch.",
+        "vi": "Mình chỉ ở đây để xem thôi."
+      }
+    ],
+    "so_tu": 20
+  },
+  {
+    "clip_id": "A1-06",
+    "duration": 8,
+    "shot": "POV · MS",
+    "refs": [
+      "Nora",
+      "Nora Body",
+      "Nora Hand",
+      "Borealosuchus",
+      "Hell Creek Bank"
+    ],
+    "start_frame": "GENERATE_IMAGE",
+    "hinh": "Mai rùa rỗng **nằm sẵn** giữa sỏi (frame 0); hai tay nhặt lên, múc đầy ở mép nước. Ngẩng lên: bên kia lạch, dưới vách đất bùn xám cao ~2 m là **một hốc khô tối**; một dải lưng Borealosuchus nằm ngay dưới miệng hốc",
+    "beat": "Gieo mai rùa (vỡ A3-06) + **gieo hốc** (payoff A4-16 / MASTER)",
+    "thoai": [
+      {
+        "t": "0-3s",
+        "en": "Turtle shell, size of a dinner plate.",
+        "vi": "Mai rùa, cỡ cái đĩa ăn tối."
+      },
+      {
+        "t": "3-6s",
+        "en": "There's a dry hollow under that far bank.",
+        "vi": "Có một cái hốc khô dưới bờ bên kia."
+      },
+      {
+        "t": "6-8s",
+        "en": "Crocodiles right below it. So, no.",
+        "vi": "Cá sấu nằm ngay bên dưới. Vậy thì, không."
+      }
+    ],
+    "so_tu": 21
+  },
+  {
+    "clip_id": "A1-07",
+    "duration": 8,
+    "shot": "FIXED · MS",
+    "refs": [
+      "Nora",
+      "Nora Body",
+      "Hell Creek Bank"
+    ],
+    "start_frame": "EDIT_IMAGE",
+    "hinh": "Máy kê trên khúc gỗ trôi. Nora đứng ngang eo, xỏ dây sợi cọ qua 2 lỗ ở vành mai, buộc vào đai ngực bên hông TRÁI",
+    "beat": "Gieo nút buộc sẽ đứt",
+    "thoai": [
+      {
+        "t": "0-3s",
+        "en": "Palm fibre, twisted twice, through the gaps in the rim.",
+        "vi": "Sợi cọ, xoắn hai lần, luồn qua khe ở vành."
+      },
+      {
+        "t": "3-6s",
+        "en": "If this knot fails today,",
+        "vi": "Nếu cái nút này tuột hôm nay,"
+      },
+      {
+        "t": "6-8s",
+        "en": "I'm drinking from the crocodile pool.",
+        "vi": "mình sẽ phải uống nước ở hồ cá sấu."
+      }
+    ],
+    "so_tu": 21
+  },
+  {
+    "clip_id": "A1-08",
+    "duration": 8,
+    "shot": "POV · WS",
+    "refs": [
+      "Hell Creek Game Corridor"
+    ],
+    "start_frame": "GENERATE_IMAGE",
+    "hinh": "Bìa rừng lá rộng: bụi rậm dây leo, cây gãy, rêu, lá mục, không đọc được; máy lia sang miệng một **hành lang thú** bùn xám rộng chui vào rừng",
+    "beat": "\"Cái gì to?\"",
+    "thoai": [
+      {
+        "t": "0-3s",
+        "en": "Forest is a solid wall, I can't see two metres in.",
+        "vi": "Rừng là một bức tường đặc, mình không nhìn được quá hai mét."
+      },
+      {
+        "t": "3-6s",
+        "en": "But that's a path.",
+        "vi": "Nhưng kia là một lối đi."
+      },
+      {
+        "t": "6-8s",
+        "en": "Something big made it.",
+        "vi": "Có thứ gì đó rất to đã tạo ra nó."
+      }
+    ],
+    "so_tu": 19
+  },
+  {
+    "clip_id": "A1-09",
+    "duration": 8,
+    "shot": "MACRO · ECU",
+    "refs": [
+      "Nora",
+      "Nora Body",
+      "Nora Hand",
+      "Hell Creek Game Corridor"
+    ],
+    "start_frame": "GENERATE_IMAGE",
+    "hinh": "Dấu chân tròn rộng hơn vai, ngón tù, nước đục đọng trong lòng; mũi giày phải đặt cạnh để so",
+    "beat": "Nó ở gần",
+    "thoai": [
+      {
+        "t": "0-3s",
+        "en": "Round footprint, wider than my shoulders.",
+        "vi": "Dấu chân tròn, rộng hơn cả vai mình."
+      },
+      {
+        "t": "3-6s",
+        "en": "Water inside is still cloudy, so it's fresh.",
+        "vi": "Nước bên trong vẫn còn đục, nghĩa là mới."
+      },
+      {
+        "t": "6-8s",
+        "en": "Whatever made this is close.",
+        "vi": "Thứ gì tạo ra nó đang ở gần đây."
+      }
+    ],
+    "so_tu": 19
+  },
+  {
+    "clip_id": "A1-10",
+    "duration": 8,
+    "shot": "OTS · MS",
+    "refs": [
+      "Nora",
+      "Nora Body",
+      "Bò Đực",
+      "Con Cái Già",
+      "Con Non",
+      "Hell Creek Game Corridor"
+    ],
+    "start_frame": "EDIT_IMAGE",
+    "hinh": "Nora 1/3 tiền cảnh nấp sau bụi lá, thì thầm; 2/3 hậu cảnh: ba con Triceratops gặm cây thấp ở bãi trống cách ~40 m",
+    "beat": "Lần đầu thấy đàn · \"I hope\" gieo nghi",
+    "thoai": [
+      {
+        "t": "0-3s",
+        "en": "There. Three of them, horned, grazing.",
+        "vi": "Kia. Ba con, có sừng, đang gặm cỏ cây."
+      },
+      {
+        "t": "3-6s",
+        "en": "They're the biggest things in this valley.",
+        "vi": "Chúng là thứ to nhất thung lũng này."
+      },
+      {
+        "t": "6-8s",
+        "en": "Big means safe, I hope.",
+        "vi": "To nghĩa là an toàn, mình hy vọng thế."
+      }
+    ],
+    "so_tu": 18
+  },
+  {
+    "clip_id": "A1-S1",
+    "duration": 8,
+    "shot": "SELFIE · MCU",
+    "refs": [
+      "Nora",
+      "Nora Body",
+      "Bò Đực",
+      "Con Cái Già",
+      "Con Non",
+      "Hell Creek Game Corridor"
+    ],
+    "start_frame": "EDIT_IMAGE",
+    "hinh": "Nora mỉm cười tự tin nhìn vào máy, đàn gặm cây sau lưng; cô bước ra khỏi bụi rậm",
+    "beat": "Niềm tin sai chủ quan trước cú xông",
+    "thoai": [
+      {
+        "t": "0-3s",
+        "en": "Okay, they're massive, but they only eat plants.",
+        "vi": "Được rồi, chúng khổng lồ thật, nhưng chỉ ăn cây thôi."
+      },
+      {
+        "t": "3-6s",
+        "en": "They'll completely ignore a tiny thing like me.",
+        "vi": "Chúng sẽ hoàn toàn phớt lờ một thứ bé tí như mình."
+      },
+      {
+        "t": "6-8s",
+        "en": "Just watch.",
+        "vi": "Cứ xem đi."
+      }
+    ],
+    "so_tu": 18
+  },
+  {
+    "clip_id": "A1-11",
+    "duration": 6,
+    "shot": "POV · WS",
+    "refs": [
+      "Bò Đực",
+      "Hell Creek Game Corridor"
+    ],
+    "start_frame": "GENERATE_IMAGE",
+    "hinh": "Bước ra mép bãi; Bò Đực ngẩng đầu chậm (~1s), sừng trái gãy, diềm ửng đỏ; máy tiến 2 bước rồi dừng",
+    "beat": "Im lặng trước cú xông (Sonic Isolation)",
+    "thoai": [],
+    "so_tu": 0
+  },
+  {
+    "clip_id": "A1-12a",
+    "duration": 4,
+    "shot": "POV · MS",
+    "refs": [
+      "Bò Đực",
+      "Hell Creek Game Corridor"
+    ],
+    "start_frame": "GENERATE_IMAGE",
+    "hinh": "**Chuỗi 4s (1/3) — xông.** Bò Đực cúi đầu, lao về máy 3 bước nặng; kết khi đầu nó to bằng nửa khung",
+    "beat": "**C2** · HỎNG 1 · chuỗi khó nhất phim",
+    "thoai": [],
+    "so_tu": 0
+  },
+  {
+    "clip_id": "A1-12b",
+    "duration": 4,
+    "shot": "POV · MS",
+    "refs": [
+      "Bò Đực",
+      "Hell Creek Game Corridor"
+    ],
+    "start_frame": "PREV_LAST_FRAME",
+    "hinh": "**(2/3) — khựng.** Mở bằng Bò Đực giữa bước lao; khựng lại, cào chân trước, bùn văng về máy; máy giật lùi",
+    "beat": "Dọa, không giết",
+    "thoai": [],
+    "so_tu": 0
+  },
+  {
+    "clip_id": "A1-12c",
+    "duration": 4,
+    "shot": "POV · MS",
+    "refs": [
+      "Bò Đực",
+      "Hell Creek Game Corridor"
+    ],
+    "start_frame": "PREV_LAST_FRAME",
+    "hinh": "**(3/3) — ngã.** Mở bằng Bò Đực đứng yên, máy ngả ra sau; máy ngã ngửa vào bụi cây thấp, khung lật lên tán lá non",
+    "beat": "Kết trên tán lá (1 tiếng thét vỡ giọng, không thành lời)",
+    "thoai": [],
+    "so_tu": 0
+  },
+  {
+    "clip_id": "A1-13",
+    "duration": 8,
+    "shot": "SELFIE · MCU",
+    "refs": [
+      "Nora",
+      "Nora Body",
+      "Hell Creek Game Corridor"
+    ],
+    "start_frame": "EDIT_IMAGE",
+    "hinh": "Nora nằm nghiêng trong bụi cây thấp, lá vắt ngang khung, thở dốc (khớp A1-12c: vừa ngã ngửa)",
+    "beat": "Thả hơi bằng dry humor",
+    "thoai": [
+      {
+        "t": "0-3s",
+        "en": "He stopped. He stopped six metres short.",
+        "vi": "Nó dừng lại rồi. Nó dừng cách mình sáu mét."
+      },
+      {
+        "t": "3-6s",
+        "en": "That was a warning, not an attack.",
+        "vi": "Đó là lời cảnh cáo, không phải tấn công."
+      },
+      {
+        "t": "6-8s",
+        "en": "Message received, big guy.",
+        "vi": "Đã nhận thông điệp, anh bạn to xác."
+      }
+    ],
+    "so_tu": 18
+  },
+  {
+    "clip_id": "A1-14",
+    "duration": 10,
+    "shot": "FIXED · MS",
+    "refs": [
+      "Nora",
+      "Nora Body",
+      "Bò Đực",
+      "Con Cái Già",
+      "Con Non",
+      "Hell Creek Game Corridor"
+    ],
+    "start_frame": "EDIT_IMAGE",
+    "hinh": "Máy kê trên gốc cây gãy. Nora ngồi ngang eo ở mép trái, đàn gặm cây hậu cảnh cách ~30 m",
+    "beat": "Kết Act hỏng: vẫn ở **ngoài** đàn → **thẻ nhiệm vụ**",
+    "thoai": [
+      {
+        "t": "0-3s",
+        "en": "So I can't walk in. Not yet.",
+        "vi": "Vậy là mình không thể bước vào. Chưa được."
+      },
+      {
+        "t": "3-7s",
+        "en": "I sit here at the edge, where they can see me.",
+        "vi": "Mình ngồi đây ở rìa, chỗ chúng nhìn thấy mình."
+      },
+      {
+        "t": "7-10s",
+        "en": "I don't move. And I wait.",
+        "vi": "Mình không cử động. Và mình chờ."
+      }
+    ],
+    "so_tu": 24
+  },
+  {
+    "clip_id": "A2-01",
+    "duration": 10,
+    "shot": "POV · WS",
+    "refs": [
+      "Bò Đực",
+      "Con Cái Già",
+      "Con Non",
+      "Hell Creek Game Corridor"
+    ],
+    "start_frame": "GENERATE_IMAGE",
+    "hinh": "Sáng muộn. Đàn gặm cây thấp; Con Cái Già ngẩng đầu chậm, đứng im 2 giây rồi cúi xuống lại",
+    "beat": "Ai là \"radar\" của đàn",
+    "thoai": [
+      {
+        "t": "0-3s",
+        "en": "An hour, sitting right here, watching.",
+        "vi": "Một tiếng rồi, ngồi ngay đây, quan sát."
+      },
+      {
+        "t": "3-7s",
+        "en": "Watching who they listen to. And it's not the big guy.",
+        "vi": "Xem chúng nghe theo ai. Và không phải anh bạn to xác."
+      },
+      {
+        "t": "7-10s",
+        "en": "It's her. The old one, with the faded frill.",
+        "vi": "Mà là bà ấy. Con già, với cái diềm bạc màu."
+      }
+    ],
+    "so_tu": 26
+  },
+  {
+    "clip_id": "A2-02",
+    "duration": 6,
+    "shot": "POV · CU",
+    "refs": [
+      "Con Cái Già",
+      "Hell Creek Game Corridor"
+    ],
+    "start_frame": "GENERATE_IMAGE",
+    "hinh": "Zoom: diềm Con Cái Già ửng hồng đỏ khi nó nhìn về bìa rừng",
+    "beat": "Tín hiệu 1 bằng hình",
+    "thoai": [],
+    "so_tu": 0
+  },
+  {
+    "clip_id": "A2-03",
+    "duration": 8,
+    "shot": "SELFIE · MCU",
+    "refs": [
+      "Nora",
+      "Nora Body",
+      "Con Cái Già",
+      "Hell Creek Game Corridor"
+    ],
+    "start_frame": "EDIT_IMAGE",
+    "hinh": "Nora thì thầm, đàn mờ hậu cảnh",
+    "beat": "Luật 1",
+    "thoai": [
+      {
+        "t": "0-3s",
+        "en": "When their frills flush red, something's bothering them.",
+        "vi": "Khi diềm của chúng ửng đỏ, là có gì đó làm chúng khó chịu."
+      },
+      {
+        "t": "3-6s",
+        "en": "Red frill, I back off.",
+        "vi": "Diềm đỏ, mình lùi lại."
+      },
+      {
+        "t": "6-8s",
+        "en": "Pale frill, I get one step.",
+        "vi": "Diềm nhạt, mình được tiến một bước."
+      }
+    ],
+    "so_tu": 19
+  },
+  {
+    "clip_id": "A2-04",
+    "duration": 6,
+    "shot": "POV · WS",
+    "refs": [
+      "Bò Đực",
+      "Hell Creek Game Corridor"
+    ],
+    "start_frame": "GENERATE_IMAGE",
+    "hinh": "Bò Đực nghiêng người cào chân trước, bùn xám văng; máy lùi một bước",
+    "beat": "Luật 2 bằng hình",
+    "thoai": [],
+    "so_tu": 0
+  },
+  {
+    "clip_id": "A2-05",
+    "duration": 8,
+    "shot": "FIXED · MS",
+    "refs": [
+      "Nora",
+      "Nora Body",
+      "Hell Creek Game Corridor"
+    ],
+    "start_frame": "EDIT_IMAGE",
+    "hinh": "Máy kê gốc cây. Nora đứng thẳng ngang eo, xoay vai nghiêng, mắt cụp xuống, diễn lại cho máy",
+    "beat": "Học + humor (dùng lại ở A3-14)",
+    "thoai": [
+      {
+        "t": "0-3s",
+        "en": "Rule two: foot scraping means leave.",
+        "vi": "Luật hai: cào chân nghĩa là đi đi."
+      },
+      {
+        "t": "3-6s",
+        "en": "So I turn sideways, eyes down, and I look boring.",
+        "vi": "Nên mình quay nghiêng người, cụp mắt, và trông thật nhàm chán."
+      },
+      {
+        "t": "6-8s",
+        "en": "Very boring.",
+        "vi": "Cực kỳ nhàm chán."
+      }
+    ],
+    "so_tu": 18
+  },
+  {
+    "clip_id": "A2-06",
+    "duration": 8,
+    "shot": "POV · MS",
+    "refs": [
+      "Con Non",
+      "Hell Creek Game Corridor"
+    ],
+    "start_frame": "GENERATE_IMAGE",
+    "hinh": "Vũng bùn xám ô liu giữa bãi; Con Non lăn mình, bùn phủ kín bụng và hông",
+    "beat": "Gieo bùn (payoff Act 4)",
+    "thoai": [
+      {
+        "t": "0-3s",
+        "en": "The little one keeps rolling in that grey mud.",
+        "vi": "Con nhỏ cứ lăn mãi trong vũng bùn xám đó."
+      },
+      {
+        "t": "3-6s",
+        "en": "Keeps the bugs off, and he smells like the river.",
+        "vi": "Để đuổi côn trùng, và nó có mùi như con sông."
+      },
+      {
+        "t": "6-8s",
+        "en": "Smart kid.",
+        "vi": "Thằng nhóc khôn đấy."
+      }
+    ],
+    "so_tu": 21
+  },
+  {
+    "clip_id": "A2-07",
+    "duration": 8,
+    "shot": "FIXED · MS",
+    "refs": [
+      "Nora",
+      "Nora Body",
+      "Hell Creek Game Corridor"
+    ],
+    "start_frame": "EDIT_IMAGE",
+    "hinh": "Bùn xám **có sẵn** trên mép vũng (frame 0). Nora quệt bùn lên cẳng tay và cổ, nhặt tàu lá cọ quạt rụng giơ che đầu",
+    "beat": "Gieo bùn + lá cọ (payoff MASTER)",
+    "thoai": [
+      {
+        "t": "0-3s",
+        "en": "Copying the kid.",
+        "vi": "Bắt chước thằng nhóc."
+      },
+      {
+        "t": "3-6s",
+        "en": "Wet mud on the arms, on the neck, palm fan over my head.",
+        "vi": "Bùn ướt lên tay, lên cổ, lá cọ che trên đầu."
+      },
+      {
+        "t": "6-8s",
+        "en": "Now I smell like him.",
+        "vi": "Giờ mình có mùi giống nó rồi."
+      }
+    ],
+    "so_tu": 21
+  },
+  {
+    "clip_id": "A2-08",
+    "duration": 8,
+    "shot": "OTS · MS",
+    "refs": [
+      "Nora",
+      "Nora Body",
+      "Con Non",
+      "Con Cái Già",
+      "Hell Creek Game Corridor"
+    ],
+    "start_frame": "EDIT_IMAGE",
+    "hinh": "Nora tiền cảnh đứng im; Con Non tự đi lại, dừng cách ~3 sải tay; Con Cái Già nhìn chằm chằm hậu cảnh",
+    "beat": "Quan hệ đầu tiên",
+    "thoai": [
+      {
+        "t": "0-3s",
+        "en": "Don't move. Don't move. He's coming over by himself.",
+        "vi": "Đừng động đậy. Đừng động đậy. Nó đang tự đi lại đây."
+      },
+      {
+        "t": "3-6s",
+        "en": "Mum is watching me very hard right now.",
+        "vi": "Mẹ nó đang nhìn mình rất gắt lúc này."
+      },
+      {
+        "t": "6-8s",
+        "en": "Hi, buddy.",
+        "vi": "Chào anh bạn nhỏ."
+      }
+    ],
+    "so_tu": 19
+  },
+  {
+    "clip_id": "A2-09",
+    "duration": 4,
+    "shot": "MACRO · ECU",
+    "refs": [
+      "Nora",
+      "Nora Body",
+      "Nora Hand",
+      "Con Non"
+    ],
+    "start_frame": "GENERATE_IMAGE",
+    "hinh": "Mõm Con Non hít bùn trên cẳng tay Nora (cẳng tay ở đáy khung), kêu 2 nốt cao, rút về",
+    "beat": "Khoảnh khắc ấm",
+    "thoai": [],
+    "so_tu": 0
+  },
+  {
+    "clip_id": "A2-10",
+    "duration": 6,
+    "shot": "POV · WS",
+    "refs": [
+      "Bò Đực",
+      "Con Cái Già",
+      "Con Non",
+      "Hell Creek Game Corridor"
+    ],
+    "start_frame": "GENERATE_IMAGE",
+    "hinh": "**Cả đàn đứng sững**, ngừng nhai, đầu ngẩng chậm; Con Cái Già trước tiên; chim im bặt",
+    "beat": "**C3** · tín hiệu đứng sững (Sonic Isolation)",
+    "thoai": [],
+    "so_tu": 0
+  },
+  {
+    "clip_id": "A2-11",
+    "duration": 6,
+    "shot": "HIDE · MS",
+    "refs": [
+      "Nora",
+      "Nora Body",
+      "Nora Hand",
+      "Hell Creek Game Corridor"
+    ],
+    "start_frame": "GENERATE_IMAGE",
+    "hinh": "Máy lùi thấp, chui sau khúc cây đổ phủ rêu, dừng ở khe giữa gỗ và bụi; tàu lá cọ bỏ lại cạnh gỗ",
+    "beat": "Nấp",
+    "thoai": [],
+    "so_tu": 0
+  },
+  {
+    "clip_id": "A2-12a",
+    "duration": 4,
+    "shot": "HIDE · WS",
+    "refs": [
+      "T. rex",
+      "Hell Creek Game Corridor"
+    ],
+    "start_frame": "GENERATE_IMAGE",
+    "hinh": "**Chuỗi 4s (1/3) — vào.** Qua khe gỗ: nước vũng rung, bụi cây mép phải rung; đầu + vai T. rex vào từ mép phải, chậm, ruồi quanh mõm",
+    "beat": "Đỉnh căng Act 2 · chuỗi khó thứ 2 (Sonic Isolation)",
+    "thoai": [],
+    "so_tu": 0
+  },
+  {
+    "clip_id": "A2-12b",
+    "duration": 4,
+    "shot": "HIDE · WS",
+    "refs": [
+      "T. rex",
+      "Hell Creek Game Corridor"
+    ],
+    "start_frame": "PREV_LAST_FRAME",
+    "hinh": "**(2/3) — ngang qua.** Mở bằng đầu T. rex giữa khe; thân đi phải→trái cách ~15 bước, không quay đầu về máy",
+    "beat": "Nín thở",
+    "thoai": [],
+    "so_tu": 0
+  },
+  {
+    "clip_id": "A2-12c",
+    "duration": 4,
+    "shot": "HIDE · WS",
+    "refs": [
+      "T. rex",
+      "Hell Creek Game Corridor"
+    ],
+    "start_frame": "PREV_LAST_FRAME",
+    "hinh": "**(3/3) — ra.** Mở bằng thân sau giữa khe; đuôi lướt qua, ra mép trái; hành lang trống, bụi lắc rồi đứng",
+    "beat": "Thả",
+    "thoai": [],
+    "so_tu": 0
+  },
+  {
+    "clip_id": "A2-13",
+    "duration": 6,
+    "shot": "MACRO · ECU",
+    "refs": [
+      "Nora",
+      "Nora Body",
+      "Nora Hand",
+      "Hell Creek Game Corridor"
+    ],
+    "start_frame": "GENERATE_IMAGE",
+    "hinh": "Bàn tay Nora ép phẳng trên bùn sau gỗ; nước trong một vết chân nhỏ rung theo từng bước đập, yếu dần; tay nhấc lên",
+    "beat": "Âm thanh kể chuyện",
+    "thoai": [],
+    "so_tu": 0
+  },
+  {
+    "clip_id": "A2-14",
+    "duration": 8,
+    "shot": "SELFIE · MCU",
+    "refs": [
+      "Nora",
+      "Nora Body",
+      "Hell Creek Game Corridor"
+    ],
+    "start_frame": "EDIT_IMAGE",
+    "hinh": "Nora vẫn nằm thấp sau gỗ, quay mặt vào máy (khớp A2-13: tay vừa nhấc khỏi bùn), run",
+    "beat": "Bài học chốt, dùng lại ở Act 4",
+    "thoai": [
+      {
+        "t": "0-3s",
+        "en": "It walked right past me.",
+        "vi": "Nó đi ngang ngay sát mình."
+      },
+      {
+        "t": "3-6s",
+        "en": "They froze before I heard a single thing.",
+        "vi": "Chúng đứng sững trước khi mình nghe thấy bất cứ thứ gì."
+      },
+      {
+        "t": "6-8s",
+        "en": "Their silence is my alarm now.",
+        "vi": "Sự im lặng của chúng giờ là chuông báo của mình."
+      }
+    ],
+    "so_tu": 19
+  },
+  {
+    "clip_id": "A2-R1",
+    "duration": 6,
+    "shot": "HIDE · MS",
+    "refs": [
+      "Acheroraptor",
+      "Hell Creek Game Corridor"
+    ],
+    "start_frame": "GENERATE_IMAGE",
+    "hinh": "Hai con Acheroraptor cỡ chó sói đồng cỏ, phủ lông nâu xám, bước thận trọng ở mép hành lang bám theo vệt T. rex",
+    "beat": "Kẻ ăn thừa bám vệt T. rex (Sonic Isolation)",
+    "thoai": [],
+    "so_tu": 0
+  },
+  {
+    "clip_id": "A2-R2a",
+    "duration": 4,
+    "shot": "POV · WS",
+    "refs": [
+      "Bò Đực",
+      "Con Cái Già",
+      "Con Non",
+      "Acheroraptor",
+      "Hell Creek Game Corridor"
+    ],
+    "start_frame": "GENERATE_IMAGE",
+    "hinh": "**Chuỗi 4s (1/3) — khép.** Con Cái Già khịt trầm, đàn giật mình; ba con xoay sừng ra ngoài, đứng tam giác che Con Non; Nora ở ngoài",
+    "beat": "Đàn khép vòng",
+    "thoai": [],
+    "so_tu": 0
+  },
+  {
+    "clip_id": "A2-R2b",
+    "duration": 4,
+    "shot": "POV · WS",
+    "refs": [
+      "Bò Đực",
+      "Con Cái Già",
+      "Con Non",
+      "Acheroraptor",
+      "Hell Creek Game Corridor"
+    ],
+    "start_frame": "PREV_LAST_FRAME",
+    "hinh": "**(2/3) — rình mép.** Mở bằng tam giác sừng; hai Acheroraptor dừng ở rìa bụi, mắt khóa vào máy, gừ nhẹ",
+    "beat": "Ở mép tức là làm mồi",
+    "thoai": [],
+    "so_tu": 0
+  },
+  {
+    "clip_id": "A2-R2c",
+    "duration": 4,
+    "shot": "POV · WS",
+    "refs": [
+      "Bò Đực",
+      "Con Cái Già",
+      "Con Non",
+      "Acheroraptor",
+      "Hell Creek Game Corridor"
+    ],
+    "start_frame": "PREV_LAST_FRAME",
+    "hinh": "**(3/3) — khe hở.** Mở bằng raptor mép trái; Con Cái Già nhìn thẳng máy, diềm nhạt đi, nhích chân trước mở một khe giữa nó và Bò Đực",
+    "beat": "Đàn mở cửa",
+    "thoai": [],
+    "so_tu": 0
+  },
+  {
+    "clip_id": "A2-R3",
+    "duration": 8,
+    "shot": "SELFIE · MCU",
+    "refs": [
+      "Nora",
+      "Nora Body",
+      "Con Cái Già",
+      "Hell Creek Game Corridor"
+    ],
+    "start_frame": "EDIT_IMAGE",
+    "hinh": "Nora ngồi nép sát chân trụ Con Cái Già trong tam giác, thở dốc, nhìn ra ngoài nơi raptor đang bỏ đi",
+    "beat": "Luật 3: ở mép là làm mồi",
+    "thoai": [
+      {
+        "t": "0-3s",
+        "en": "Rule three: standing on the edge makes you bait.",
+        "vi": "Luật ba: đứng ở rìa là làm mồi."
+      },
+      {
+        "t": "3-6s",
+        "en": "They didn't close the circle for me,",
+        "vi": "Chúng không khép vòng vì mình,"
+      },
+      {
+        "t": "6-8s",
+        "en": "but they let me in.",
+        "vi": "nhưng chúng đã cho mình vào."
+      }
+    ],
+    "so_tu": 21
+  },
+  {
+    "clip_id": "A2-R4",
+    "duration": 6,
+    "shot": "POV · CU",
+    "refs": [
+      "Nora",
+      "Nora Body",
+      "Nora Hand",
+      "Con Cái Già",
+      "Acheroraptor",
+      "Hell Creek Game Corridor"
+    ],
+    "start_frame": "GENERATE_IMAGE",
+    "hinh": "Chân trước khổng lồ của Con Cái Già chắn sát sườn Nora (tay Nora áp vào da nó); ngoài xa hai Acheroraptor lủi vào bụi",
+    "beat": "Tấm khiên sống",
+    "thoai": [],
+    "so_tu": 0
+  },
+  {
+    "clip_id": "A2-15",
+    "duration": 8,
+    "shot": "FIXED · MS",
+    "refs": [
+      "Nora",
+      "Nora Body",
+      "Bò Đực",
+      "Hell Creek Game Corridor"
+    ],
+    "start_frame": "EDIT_IMAGE",
+    "hinh": "Đàn gặm lại; Nora ngồi ngang eo cách ~20 bước, Bò Đực liếc cô rồi nhai tiếp",
+    "beat": "**THẮNG MỘT PHẦN** (midpoint)",
+    "thoai": [
+      {
+        "t": "0-3s",
+        "en": "Twenty steps away. Big guy looked right at me, kept eating.",
+        "vi": "Cách hai mươi bước. Anh to xác nhìn thẳng vào mình, rồi ăn tiếp."
+      },
+      {
+        "t": "3-6s",
+        "en": "I'm not family yet.",
+        "vi": "Mình chưa phải người nhà."
+      },
+      {
+        "t": "6-8s",
+        "en": "But I'm furniture now.",
+        "vi": "Nhưng giờ mình là đồ nội thất."
+      }
+    ],
+    "so_tu": 19
+  },
+  {
+    "clip_id": "EST-02",
+    "duration": 4,
+    "shot": "AERIAL · EWS",
+    "refs": [
+      "Hell Creek Game Corridor"
+    ],
+    "start_frame": "GENERATE_IMAGE",
+    "hinh": "Rất cao, giữa trưa trời mây mỏng: tán rừng lá rộng vô tận, lạch uốn khúc; bóng mây trôi chậm trên tán; ba chấm thú nhỏ cạnh một hố nước đang cạn. Thế giới rộng và vô tư",
+    "beat": "Thời gian trôi · thế giới không hay biết",
+    "thoai": [],
+    "so_tu": 0
+  },
+  {
+    "clip_id": "A2-16",
+    "duration": 8,
+    "shot": "POV · CU",
+    "refs": [
+      "Nora",
+      "Nora Body",
+      "Nora Hand",
+      "Hell Creek Game Corridor"
+    ],
+    "start_frame": "GENERATE_IMAGE",
+    "hinh": "Hai tay nghiêng mai rùa: chỉ còn một lóng tay nước sóng sánh",
+    "beat": "Đồng hồ thứ hai: nước",
+    "thoai": [
+      {
+        "t": "0-3s",
+        "en": "Problem. This is all the water I've got left.",
+        "vi": "Có vấn đề. Đây là toàn bộ nước mình còn lại."
+      },
+      {
+        "t": "3-6s",
+        "en": "It's noon, I've walked all morning,",
+        "vi": "Đã trưa rồi, mình đi bộ cả buổi sáng,"
+      },
+      {
+        "t": "6-8s",
+        "en": "and the creek is full of crocodiles.",
+        "vi": "và con suối thì đầy cá sấu."
+      }
+    ],
+    "so_tu": 22
+  },
+  {
+    "clip_id": "A3-01",
+    "duration": 8,
+    "shot": "SELFIE · MCU",
+    "refs": [
+      "Nora",
+      "Nora Body",
+      "Bò Đực",
+      "Con Cái Già",
+      "Con Non",
+      "Hell Creek Game Corridor"
+    ],
+    "start_frame": "EDIT_IMAGE",
+    "hinh": "Nora bật dậy; sau lưng cả đàn quay đầu cùng một hướng, bắt đầu rời đi",
+    "beat": "Mục tiêu có hạn chót",
+    "thoai": [
+      {
+        "t": "0-3s",
+        "en": "Wait, they're leaving, all of them, same direction.",
+        "vi": "Khoan, chúng đi rồi, tất cả, cùng một hướng."
+      },
+      {
+        "t": "3-6s",
+        "en": "They know exactly where the water is.",
+        "vi": "Chúng biết chính xác nước ở đâu."
+      },
+      {
+        "t": "6-8s",
+        "en": "I'm coming with you!",
+        "vi": "Mình đi với các bạn!"
+      }
+    ],
+    "so_tu": 19
+  },
+  {
+    "clip_id": "A3-02",
+    "duration": 4,
+    "shot": "POV · WS",
+    "refs": [
+      "Bò Đực",
+      "Con Cái Già",
+      "Con Non",
+      "Hell Creek Game Corridor"
+    ],
+    "start_frame": "GENERATE_IMAGE",
+    "hinh": "Chạy: đàn đi bước nhanh trên hành lang thú 20 m phía trước; khung giật theo bước",
+    "beat": "**C4** (thở)",
+    "thoai": [],
+    "so_tu": 0
+  },
+  {
+    "clip_id": "A3-03",
+    "duration": 8,
+    "shot": "OTS · MS",
+    "refs": [
+      "Nora",
+      "Nora Body",
+      "Bò Đực",
+      "Con Cái Già",
+      "Con Non",
+      "Hell Creek Game Corridor"
+    ],
+    "start_frame": "EDIT_IMAGE",
+    "hinh": "Nora tiền cảnh đi nhanh, mồ hôi, bùn xám khô nứt trên tay; đàn nhỏ dần hậu cảnh",
+    "beat": "Tụt lại",
+    "thoai": [
+      {
+        "t": "0-3s",
+        "en": "They walk faster than I run.",
+        "vi": "Chúng đi còn nhanh hơn mình chạy."
+      },
+      {
+        "t": "3-6s",
+        "en": "Every minute they gain another hundred metres on me.",
+        "vi": "Mỗi phút chúng lại bỏ xa mình thêm một trăm mét."
+      },
+      {
+        "t": "6-8s",
+        "en": "Keep moving, Nora.",
+        "vi": "Đi tiếp đi, Nora."
+      }
+    ],
+    "so_tu": 18
+  },
+  {
+    "clip_id": "A3-04",
+    "duration": 4,
+    "shot": "MACRO · ECU",
+    "refs": [
+      "Nora",
+      "Nora Body",
+      "Nora Hand",
+      "Hell Creek Game Corridor"
+    ],
+    "start_frame": "GENERATE_IMAGE",
+    "hinh": "Giày bước vào một dấu chân tròn mới, nước trong lòng còn rung",
+    "beat": "Nhịp dồn",
+    "thoai": [],
+    "so_tu": 0
+  },
+  {
+    "clip_id": "A3-05",
+    "duration": 4,
+    "shot": "POV · MS",
+    "refs": [
+      "Hell Creek Waterhole"
+    ],
+    "start_frame": "GENERATE_IMAGE",
+    "hinh": "Trèo xuống bờ đất lở ra bãi bùn khô nứt; rặng cây cao xa xa",
+    "beat": "Nhịp dồn (thở)",
+    "thoai": [],
+    "so_tu": 0
+  },
+  {
+    "clip_id": "A3-06a",
+    "duration": 4,
+    "shot": "POV · CU",
+    "refs": [
+      "Nora",
+      "Nora Body",
+      "Nora Hand",
+      "Hell Creek Waterhole"
+    ],
+    "start_frame": "GENERATE_IMAGE",
+    "hinh": "**Chuỗi 4s (1/3) — trượt.** Nhìn xuống chân: giày phải đặt lên phiến đá phẳng trơn, trượt; mai rùa văng ra xa hông trái theo dây",
+    "beat": "HỎNG 2 bắt đầu",
+    "thoai": [],
+    "so_tu": 0
+  },
+  {
+    "clip_id": "A3-06b",
+    "duration": 4,
+    "shot": "POV · CU",
+    "refs": [
+      "Nora",
+      "Nora Body",
+      "Nora Hand",
+      "Hell Creek Waterhole"
+    ],
+    "start_frame": "PREV_LAST_FRAME",
+    "hinh": "**(2/3) — vỡ.** Mở bằng mai rùa lủng lẳng; dây sợi cọ đứt, mai rơi thẳng xuống đá, nứt đôi, nước bắn",
+    "beat": "**C5** · vỡ mai rùa (1 tiếng hớp hơi)",
+    "thoai": [],
+    "so_tu": 0
+  },
+  {
+    "clip_id": "A3-06c",
+    "duration": 4,
+    "shot": "POV · CU",
+    "refs": [
+      "Nora",
+      "Nora Body",
+      "Nora Hand",
+      "Hell Creek Waterhole"
+    ],
+    "start_frame": "PREV_LAST_FRAME",
+    "hinh": "**(3/3) — ngấm.** Mở bằng hai nửa mai trên đá, nước tràn ra cát; vệt sẫm loang rồi co mất vào cát",
+    "beat": "Mất nước",
+    "thoai": [],
+    "so_tu": 0
+  },
+  {
+    "clip_id": "A3-07",
+    "duration": 8,
+    "shot": "SELFIE · MCU",
+    "refs": [
+      "Nora",
+      "Nora Body",
+      "Hell Creek Waterhole"
+    ],
+    "start_frame": "EDIT_IMAGE",
+    "hinh": "Nora quỳ, tay trái cầm hai nửa mai rùa (khớp A3-06c: vệt ướt vừa ngấm); ở hông trái chỉ còn đầu dây đứt",
+    "beat": "Mất cả nước lẫn đàn",
+    "thoai": [
+      {
+        "t": "0-3s",
+        "en": "No, no, no. That was all of it.",
+        "vi": "Không, không, không. Đó là tất cả rồi."
+      },
+      {
+        "t": "3-6s",
+        "en": "The sand just drank my water in two seconds.",
+        "vi": "Cát vừa uống sạch nước của mình trong hai giây."
+      },
+      {
+        "t": "6-8s",
+        "en": "And they're gone.",
+        "vi": "Và chúng đi mất rồi."
+      }
+    ],
+    "so_tu": 20
+  },
+  {
+    "clip_id": "A3-08",
+    "duration": 6,
+    "shot": "MACRO · ECU",
+    "refs": [
+      "Nora",
+      "Nora Body",
+      "Nora Hand",
+      "Hell Creek Waterhole"
+    ],
+    "start_frame": "GENERATE_IMAGE",
+    "hinh": "Nhìn thẳng xuống: dấu chân tròn trên bùn nứt, lòng dấu còn ướt sẫm; ngón tay Nora ấn vào mép dấu, bùn lún mềm; máy ngẩng theo trục dấu tới rặng cây cao xa",
+    "beat": "Cô **tự đọc** được (thở chậm lại)",
+    "thoai": [],
+    "so_tu": 0
+  },
+  {
+    "clip_id": "A3-09",
+    "duration": 8,
+    "shot": "POV · EWS",
+    "refs": [
+      "Hell Creek Waterhole"
+    ],
+    "start_frame": "GENERATE_IMAGE",
+    "hinh": "Bãi bùn nứt mênh mông, vệt dấu chân đàn chạy thẳng về rặng cây đầm lầy cao (bách nước) phía bắc; không thấy con nào",
+    "beat": "Bãi trống",
+    "thoai": [
+      {
+        "t": "0-3s",
+        "en": "Fresh tracks, mud's still wet inside.",
+        "vi": "Dấu chân mới, bùn bên trong còn ướt."
+      },
+      {
+        "t": "3-6s",
+        "en": "Heading north, toward those tall swamp trees.",
+        "vi": "Đi về phía bắc, về phía những cây đầm lầy cao kia."
+      },
+      {
+        "t": "6-8s",
+        "en": "Swamp trees mean water. Follow the feet.",
+        "vi": "Cây đầm lầy nghĩa là có nước. Đi theo dấu chân."
+      }
+    ],
+    "so_tu": 20
+  },
+  {
+    "clip_id": "A3-D1",
+    "duration": 8,
+    "shot": "SELFIE · MCU",
+    "refs": [
+      "Nora",
+      "Nora Body",
+      "Edmontosaurus",
+      "Hell Creek Waterhole"
+    ],
+    "start_frame": "EDIT_IMAGE",
+    "hinh": "Nora dừng trên bãi bùn, nhìn sang phải: đàn Edmontosaurus mỏ vịt lững thững đi qua hậu cảnh",
+    "beat": "Không đọc được bằng luật diềm",
+    "thoai": [
+      {
+        "t": "0-3s",
+        "en": "Another herd, duck-billed Edmontosaurus.",
+        "vi": "Một đàn khác, khủng long mỏ vịt Edmontosaurus."
+      },
+      {
+        "t": "3-6s",
+        "en": "Trying to read their frills, but they don't have frills.",
+        "vi": "Đang cố đọc diềm của chúng, nhưng chúng không có diềm."
+      },
+      {
+        "t": "6-8s",
+        "en": "Zero facial signals.",
+        "vi": "Không có tín hiệu nào trên mặt."
+      }
+    ],
+    "so_tu": 18
+  },
+  {
+    "clip_id": "A3-D2a",
+    "duration": 4,
+    "shot": "POV · WS",
+    "refs": [
+      "Nora",
+      "Nora Body",
+      "Nora Hand",
+      "Edmontosaurus",
+      "Hell Creek Waterhole"
+    ],
+    "start_frame": "GENERATE_IMAGE",
+    "hinh": "**Chuỗi 4s (1/3) — giật mình.** Đàn Edmontosaurus đồng loạt ngẩng đầu, rống trầm qua mũi, quay mình",
+    "beat": "Đàn mỏ vịt hoảng (Sonic Isolation)",
+    "thoai": [],
+    "so_tu": 0
+  },
+  {
+    "clip_id": "A3-D2b",
+    "duration": 4,
+    "shot": "POV · WS",
+    "refs": [
+      "Nora",
+      "Nora Body",
+      "Nora Hand",
+      "Edmontosaurus",
+      "Hell Creek Waterhole"
+    ],
+    "start_frame": "PREV_LAST_FRAME",
+    "hinh": "**(2/3) — đất rung.** Mở bằng đàn hướng về máy; chạy sầm sập cắt ngang trước mặt cách ~10 m, bùn bắn; khung chao",
+    "beat": "Đất rung",
+    "thoai": [],
+    "so_tu": 0
+  },
+  {
+    "clip_id": "A3-D2c",
+    "duration": 4,
+    "shot": "POV · MS",
+    "refs": [
+      "Nora",
+      "Nora Body",
+      "Nora Hand",
+      "Edmontosaurus",
+      "Hell Creek Waterhole"
+    ],
+    "start_frame": "PREV_LAST_FRAME",
+    "hinh": "**(3/3) — áp đất.** Mở bằng bãi trống, bụi lơ lửng; máy hạ thấp, hai bàn tay Nora áp chặt mặt bùn còn rung",
+    "beat": "Cảm nhận rung chấn",
+    "thoai": [],
+    "so_tu": 0
+  },
+  {
+    "clip_id": "A3-D3",
+    "duration": 8,
+    "shot": "SELFIE · MCU",
+    "refs": [
+      "Nora",
+      "Nora Body",
+      "Hell Creek Waterhole"
+    ],
+    "start_frame": "EDIT_IMAGE",
+    "hinh": "Nora quỳ, hai tay vẫn áp trên bùn, mắt mở to nhìn theo vệt bụi xa",
+    "beat": "Luật 4: nghe đất",
+    "thoai": [
+      {
+        "t": "0-3s",
+        "en": "Rule four: frills only work on horned faces.",
+        "vi": "Luật bốn: diềm chỉ có tác dụng với những khuôn mặt có sừng."
+      },
+      {
+        "t": "3-6s",
+        "en": "No faces? Then you listen to the ground.",
+        "vi": "Không có mặt ư? Thì phải lắng nghe mặt đất."
+      },
+      {
+        "t": "6-8s",
+        "en": "The earth told them first.",
+        "vi": "Mặt đất đã báo cho chúng trước."
+      }
+    ],
+    "so_tu": 21
+  },
+  {
+    "clip_id": "A3-10",
+    "duration": 6,
+    "shot": "POV · WS",
+    "refs": [
+      "Infernodrakon",
+      "Hell Creek Waterhole"
+    ],
+    "start_frame": "GENERATE_IMAGE",
+    "hinh": "Cách ~60 m: một con Infernodrakon (thằn lằn bay cao ngang người) sải bước bốn chân trên bãi, mổ xuống bùn; máy khựng lại",
+    "beat": "Sinh vật lạ (Sonic Isolation)",
+    "thoai": [],
+    "so_tu": 0
+  },
+  {
+    "clip_id": "A3-11",
+    "duration": 8,
+    "shot": "SELFIE · MCU",
+    "refs": [
+      "Nora",
+      "Nora Body",
+      "Infernodrakon",
+      "Hell Creek Waterhole"
+    ],
+    "start_frame": "EDIT_IMAGE",
+    "hinh": "Nora cúi thấp thì thầm, Infernodrakon nhỏ ở hậu cảnh",
+    "beat": "Dry humor dưới áp lực",
+    "thoai": [
+      {
+        "t": "0-3s",
+        "en": "That's a flying reptile, walking, about my height.",
+        "vi": "Đó là một con bò sát bay, đang đi bộ, cao cỡ mình."
+      },
+      {
+        "t": "3-6s",
+        "en": "It's hunting small things in the mud.",
+        "vi": "Nó đang săn những thứ nhỏ trong bùn."
+      },
+      {
+        "t": "6-8s",
+        "en": "I'm a small thing.",
+        "vi": "Mình là một thứ nhỏ."
+      }
+    ],
+    "so_tu": 19
+  },
+  {
+    "clip_id": "A3-12a",
+    "duration": 4,
+    "shot": "POV · WS",
+    "refs": [
+      "Infernodrakon",
+      "Hell Creek Waterhole"
+    ],
+    "start_frame": "GENERATE_IMAGE",
+    "hinh": "**Chuỗi 4s (1/2) — bật lên.** Infernodrakon hạ thấp người, chống hai cánh gấp xuống bùn, bật lên",
+    "beat": "Cất cánh",
+    "thoai": [],
+    "so_tu": 0
+  },
+  {
+    "clip_id": "A3-12b",
+    "duration": 4,
+    "shot": "POV · WS",
+    "refs": [
+      "Infernodrakon",
+      "Hell Creek Waterhole"
+    ],
+    "start_frame": "PREV_LAST_FRAME",
+    "hinh": "**(2/2) — bay đi.** Mở bằng Infernodrakon trên không thấp; vỗ cánh bay xa qua đồng ngập, nhỏ dần",
+    "beat": "Thả",
+    "thoai": [],
+    "so_tu": 0
+  },
+  {
+    "clip_id": "A3-13",
+    "duration": 8,
+    "shot": "POV · EWS",
+    "refs": [
+      "Bò Đực",
+      "Con Cái Già",
+      "Con Non",
+      "Hell Creek Waterhole"
+    ],
+    "start_frame": "GENERATE_IMAGE",
+    "hinh": "Hố nước nâu co hẹp dưới rặng bách nước, vành bùn giẫm nát; ba con đứng trong và quanh nước",
+    "beat": "Đuổi kịp nhờ chính mình",
+    "thoai": [
+      {
+        "t": "0-3s",
+        "en": "Found them, just by reading their feet!",
+        "vi": "Tìm thấy rồi, chỉ bằng cách đọc dấu chân!"
+      },
+      {
+        "t": "3-6s",
+        "en": "The whole herd, in the only water around.",
+        "vi": "Cả đàn, ở chỗ nước duy nhất quanh đây."
+      },
+      {
+        "t": "6-8s",
+        "en": "Slowly now. Low and boring.",
+        "vi": "Chậm thôi. Thấp và nhàm chán."
+      }
+    ],
+    "so_tu": 20
+  },
+  {
+    "clip_id": "A3-W1",
+    "duration": 6,
+    "shot": "POV · WS",
+    "refs": [
+      "Bò Đực",
+      "Con Cái Già",
+      "Con Non",
+      "Hell Creek Waterhole"
+    ],
+    "start_frame": "GENERATE_IMAGE",
+    "hinh": "Đàn không uống cùng lúc: Bò Đực và Con Non cúi uống, Con Cái Già đứng ngẩng đầu canh mép nước đục",
+    "beat": "**C6** · uống theo lượt (Sonic Isolation)",
+    "thoai": [],
+    "so_tu": 0
+  },
+  {
+    "clip_id": "A3-W2a",
+    "duration": 4,
+    "shot": "POV · CU",
+    "refs": [
+      "Borealosuchus",
+      "Con Cái Già",
+      "Hell Creek Waterhole"
+    ],
+    "start_frame": "GENERATE_IMAGE",
+    "hinh": "**Chuỗi 4s (1/2) — trồi.** Chóp mõm và hai mắt Borealosuchus trồi chậm lên mặt nước đục, không tiếng động, gần chân Con Cái Già",
+    "beat": "Cá sấu rình hố nước",
+    "thoai": [],
+    "so_tu": 0
+  },
+  {
+    "clip_id": "A3-W2b",
+    "duration": 4,
+    "shot": "POV · CU",
+    "refs": [
+      "Borealosuchus",
+      "Con Cái Già",
+      "Hell Creek Waterhole"
+    ],
+    "start_frame": "PREV_LAST_FRAME",
+    "hinh": "**(2/2) — lặn.** Mở bằng mõm cá sấu; Con Cái Già dậm chân trước xuống nước, sóng tung; cá sấu lặn mất",
+    "beat": "Con canh xua đuổi",
+    "thoai": [],
+    "so_tu": 0
+  },
+  {
+    "clip_id": "A3-W3",
+    "duration": 8,
+    "shot": "SELFIE · MCU",
+    "refs": [
+      "Nora",
+      "Nora Body",
+      "Con Cái Già",
+      "Hell Creek Waterhole"
+    ],
+    "start_frame": "EDIT_IMAGE",
+    "hinh": "Nora ngồi chờ ở rìa bùn, quan sát Con Cái Già canh",
+    "beat": "Luật 5: uống theo lượt",
+    "thoai": [
+      {
+        "t": "0-3s",
+        "en": "Rule five: take shifts. They never all drink together.",
+        "vi": "Luật năm: chia ca. Chúng không bao giờ uống cùng lúc."
+      },
+      {
+        "t": "3-6s",
+        "en": "One head always up, watching the deep.",
+        "vi": "Luôn có một cái đầu ngẩng lên, canh chỗ nước sâu."
+      },
+      {
+        "t": "6-8s",
+        "en": "I drink when she watches.",
+        "vi": "Mình uống khi bà ấy canh."
+      }
+    ],
+    "so_tu": 21
+  },
+  {
+    "clip_id": "A3-14",
+    "duration": 8,
+    "shot": "FIXED · WS",
+    "refs": [
+      "Nora",
+      "Nora Body",
+      "Bò Đực",
+      "Hell Creek Waterhole"
+    ],
+    "start_frame": "EDIT_IMAGE",
+    "hinh": "Máy kê trên tảng đất cao. Bò Đực chắn mép nước, diềm đỏ; Nora dừng, xoay vai nghiêng, cụp mắt (luật A2-05); diềm nhạt dần, Bò Đực cúi uống; Nora bước một bước",
+    "beat": "Bài Act 2 qua kiểm tra",
+    "thoai": [
+      {
+        "t": "0-3s",
+        "en": "Big guy's blocking the water. Frill's red.",
+        "vi": "Anh to xác đang chặn nước. Diềm đỏ."
+      },
+      {
+        "t": "3-6s",
+        "en": "Sideways, eyes down, boring. Very boring.",
+        "vi": "Nghiêng người, cụp mắt, nhàm chán. Cực kỳ nhàm chán."
+      },
+      {
+        "t": "6-8s",
+        "en": "Pale frill. Okay. One step.",
+        "vi": "Diềm nhạt rồi. Được. Một bước."
+      }
+    ],
+    "so_tu": 18
+  },
+  {
+    "clip_id": "A3-15",
+    "duration": 8,
+    "shot": "FIXED · MS",
+    "refs": [
+      "Nora",
+      "Nora Body",
+      "Hell Creek Waterhole"
+    ],
+    "start_frame": "EDIT_IMAGE",
+    "hinh": "Máy kê trên tảng đất. Nora quỳ ngang eo ở mép nước, vốc nước bằng hai tay uống, đàn hậu cảnh",
+    "beat": "Thở",
+    "thoai": [
+      {
+        "t": "0-3s",
+        "en": "Muddy, cold, and tastes like a dinosaur's foot.",
+        "vi": "Đầy bùn, lạnh, và có vị như chân khủng long."
+      },
+      {
+        "t": "3-6s",
+        "en": "Honestly, best drink of my whole life.",
+        "vi": "Thật lòng, ngụm nước ngon nhất đời mình."
+      },
+      {
+        "t": "6-8s",
+        "en": "Don't tell anyone.",
+        "vi": "Đừng kể với ai nhé."
+      }
+    ],
+    "so_tu": 18
+  },
+  {
+    "clip_id": "A3-16",
+    "duration": 8,
+    "shot": "OTS · MS",
+    "refs": [
+      "Nora",
+      "Nora Body",
+      "Con Non",
+      "Hell Creek Waterhole"
+    ],
+    "start_frame": "EDIT_IMAGE",
+    "hinh": "Con Non lội tới đứng cách một sải tay, kêu 2 nốt; Nora tiền cảnh thì thầm",
+    "beat": "Quan hệ lên một bậc",
+    "thoai": [
+      {
+        "t": "0-3s",
+        "en": "Hey, buddy, you found me again.",
+        "vi": "Này, anh bạn, nhóc lại tìm thấy mình rồi."
+      },
+      {
+        "t": "3-6s",
+        "en": "Arm's length. Closest anyone's let me get all day.",
+        "vi": "Một sải tay. Gần nhất ai đó cho mình đến cả ngày nay."
+      },
+      {
+        "t": "6-8s",
+        "en": "I'll take it.",
+        "vi": "Mình nhận đấy."
+      }
+    ],
+    "so_tu": 18
+  },
+  {
+    "clip_id": "A3-Q1",
+    "duration": 8,
+    "shot": "FIXED · MS",
+    "refs": [
+      "Nora",
+      "Nora Body",
+      "Con Non",
+      "Hell Creek Waterhole"
+    ],
+    "start_frame": "EDIT_IMAGE",
+    "hinh": "Con Non nằm xuống bùn cạnh chân Nora, đầu tựa vào ống giày cô thở êm; Nora cúi nhìn",
+    "beat": "**C7** · Con Non ngủ tựa chân",
+    "thoai": [
+      {
+        "t": "0-3s",
+        "en": "One hour left.",
+        "vi": "Còn một giờ."
+      },
+      {
+        "t": "3-6s",
+        "en": "He's sleeping like it's just another afternoon.",
+        "vi": "Nó đang ngủ như thể đây chỉ là một buổi chiều bình thường."
+      },
+      {
+        "t": "6-8s",
+        "en": "His pulse is beating right through my boot.",
+        "vi": "Mạch của nó đập xuyên qua cả giày mình."
+      }
+    ],
+    "so_tu": 18
+  },
+  {
+    "clip_id": "A3-Q2",
+    "duration": 6,
+    "shot": "POV · WS",
+    "refs": [
+      "Con Cái Già",
+      "Hell Creek Waterhole"
+    ],
+    "start_frame": "GENERATE_IMAGE",
+    "hinh": "Con Cái Già đang uống bỗng ngừng, ngẩng đầu nhỏ nước, nhìn đăm đăm về chân trời nam-đông nam trống trơn vài giây; rồi cúi xuống uống tiếp. Trời bình thường, chim vẫn bay",
+    "beat": "Cài: \"ra-đa\" bắt được gì đó (trả ở A4-03)",
+    "thoai": [],
+    "so_tu": 0
+  },
+  {
+    "clip_id": "A3-17",
+    "duration": 10,
+    "shot": "SELFIE · MCU",
+    "refs": [
+      "Nora",
+      "Nora Body",
+      "Bò Đực",
+      "Con Cái Già",
+      "Con Non",
+      "Hell Creek Waterhole"
+    ],
+    "start_frame": "EDIT_IMAGE",
+    "hinh": "Ánh chiều dịu; Nora cười mệt, đàn uống nước sau lưng",
+    "beat": "THẮNG GIẢ: misbelief quay lại dưới dạng yên ổn",
+    "thoai": [
+      {
+        "t": "0-3s",
+        "en": "Water. Shade. A herd that tolerates me.",
+        "vi": "Nước. Bóng râm. Một đàn chịu đựng được mình."
+      },
+      {
+        "t": "3-7s",
+        "en": "First time today I actually feel safe. Like a holiday.",
+        "vi": "Lần đầu tiên hôm nay mình thực sự thấy an toàn. Như đi nghỉ vậy."
+      },
+      {
+        "t": "7-10s",
+        "en": "I almost forgot what today is. Almost.",
+        "vi": "Mình suýt quên hôm nay là ngày gì. Suýt thôi."
+      }
+    ],
+    "so_tu": 24
+  },
+  {
+    "clip_id": "EST-03",
+    "duration": 4,
+    "shot": "AERIAL · EWS",
+    "refs": [
+      "Hell Creek Waterhole"
+    ],
+    "start_frame": "GENERATE_IMAGE",
+    "hinh": "Kéo lùi lên cao: đồng ngập vô tận không dấu vết người, ánh lóe hố nước ở tâm khung; một đàn chim nhỏ bay ngang",
+    "beat": "Cô lập tuyệt đối · cầu sang Act 4",
+    "thoai": [],
+    "so_tu": 0
+  },
+  {
+    "clip_id": "A4-01",
+    "duration": 6,
+    "shot": "POV · WS",
+    "refs": [
+      "Bò Đực",
+      "Con Cái Già",
+      "Con Non",
+      "Hell Creek Waterhole"
+    ],
+    "start_frame": "GENERATE_IMAGE",
+    "hinh": "6 giờ chiều, bình yên: đàn gặm cây quanh hố nước, chim và côn trùng hoạt động; máy lia chậm dọc đàn",
+    "beat": "Bình yên giả (deceptive calm)",
+    "thoai": [],
+    "so_tu": 0
+  },
+  {
+    "clip_id": "A4-02",
+    "duration": 8,
+    "shot": "SELFIE · MCU",
+    "refs": [
+      "Nora",
+      "Nora Body",
+      "Con Cái Già",
+      "Hell Creek Waterhole"
+    ],
+    "start_frame": "EDIT_IMAGE",
+    "hinh": "Nora thì thầm, đàn gặm bình thường sau lưng",
+    "beat": "Mỉa mai kịch tính",
+    "thoai": [
+      {
+        "t": "0-3s",
+        "en": "Six o'clock. Sun's still up, birds are singing,",
+        "vi": "Sáu giờ. Mặt trời vẫn còn, chim vẫn hót,"
+      },
+      {
+        "t": "3-6s",
+        "en": "nothing looks any different.",
+        "vi": "chẳng có gì trông khác cả."
+      },
+      {
+        "t": "6-8s",
+        "en": "Maybe I got the day wrong.",
+        "vi": "Có khi mình nhầm ngày."
+      }
+    ],
+    "so_tu": 18
+  },
+  {
+    "clip_id": "A4-03a",
+    "duration": 4,
+    "shot": "POV · WS",
+    "refs": [
+      "Bò Đực",
+      "Con Cái Già",
+      "Con Non",
+      "Hell Creek Waterhole"
+    ],
+    "start_frame": "GENERATE_IMAGE",
+    "hinh": "**Chuỗi 4s (1/3) — tĩnh.** Nhìn qua hố nước về phía nam-đông nam: Con Cái Già uống nước ở tiền cảnh trái, Bò Đực và Con Non gặm cây ở hậu cảnh; côn trùng rỉ rả, trời chiều yên",
+    "beat": "**C8** (J-cut: âm thanh tắt trước hình)",
+    "thoai": [],
+    "so_tu": 0
+  },
+  {
+    "clip_id": "A4-03b",
+    "duration": 4,
+    "shot": "POV · WS",
+    "refs": [
+      "Bò Đực",
+      "Con Cái Già",
+      "Con Non",
+      "Hell Creek Waterhole"
+    ],
+    "start_frame": "PREV_LAST_FRAME",
+    "hinh": "**(2/3) — im bặt.** Côn trùng và chim cùng tắt tiếng một lúc; Con Cái Già ngẩng phắt đầu khỏi mặt nước, nước nhỏ từ mỏ, diềm đỏ dần lên. Trời vẫn y nguyên",
+    "beat": "Không tiếng động · trả cài A3-Q2",
+    "thoai": [],
+    "so_tu": 0
+  },
+  {
+    "clip_id": "A4-03c",
+    "duration": 4,
+    "shot": "POV · WS",
+    "refs": [
+      "Bò Đực",
+      "Con Cái Già",
+      "Con Non",
+      "Hell Creek Waterhole"
+    ],
+    "start_frame": "PREV_LAST_FRAME",
+    "hinh": "**(3/3) — cả đàn quay.** Mở bằng Con Cái Già ngẩng đầu, diềm đỏ; Bò Đực rồi Con Non lần lượt ngẩng lên, cả ba quay mặt cùng một hướng, nhìn chằm chằm vào chân trời trống trơn, đứng sững",
+    "beat": "Khoảnh khắc đắt nhất phim: đàn biết trước Nora",
+    "thoai": [],
+    "so_tu": 0
+  },
+  {
+    "clip_id": "A4-04",
+    "duration": 8,
+    "shot": "SELFIE · MCU",
+    "refs": [
+      "Nora",
+      "Nora Body",
+      "Con Cái Già",
+      "Hell Creek Waterhole"
+    ],
+    "start_frame": "EDIT_IMAGE",
+    "hinh": "Nora nhìn qua vai phải: Con Cái Già đứng sững, diềm đỏ, mặt hướng về chân trời trống; rồi Nora nhìn thẳng máy",
+    "beat": "**Misbelief bị bẻ** (A1-05 → A4-04)",
+    "thoai": [
+      {
+        "t": "0-3s",
+        "en": "I knew the hour, the place, the distance.",
+        "vi": "Mình biết giờ, biết nơi, biết khoảng cách."
+      },
+      {
+        "t": "3-6s",
+        "en": "I thought knowing meant I'd be watching.",
+        "vi": "Mình tưởng biết trước nghĩa là mình sẽ được đứng xem."
+      },
+      {
+        "t": "6-8s",
+        "en": "I'm not watching.",
+        "vi": "Mình không còn đứng xem nữa."
+      }
+    ],
+    "so_tu": 18
+  },
+  {
+    "clip_id": "A4-05",
+    "duration": 6,
+    "shot": "POV · WS",
+    "refs": [
+      "Bò Đực",
+      "Con Cái Già",
+      "Con Non",
+      "Hell Creek Waterhole"
+    ],
+    "start_frame": "GENERATE_IMAGE",
+    "hinh": "Vài phút trôi: đàn đứng sững, diềm Con Cái Già đỏ, Bò Đực cào chân, Con Non ép sát Con Cái Già; chim im",
+    "beat": "Chờ (Sonic Isolation)",
+    "thoai": [],
+    "so_tu": 0
+  },
+  {
+    "clip_id": "A4-06",
+    "duration": 4,
+    "shot": "MACRO · ECU",
+    "refs": [
+      "Hell Creek Waterhole"
+    ],
+    "start_frame": "GENERATE_IMAGE",
+    "hinh": "Mặt hố nước rung lăn tăn vòng đồng tâm dù không gió; cả bầy chim bật khỏi cây cùng lúc (sóng P, ~6 phút)",
+    "beat": "Báo trước",
+    "thoai": [],
+    "so_tu": 0
+  },
+  {
+    "clip_id": "A4-07a",
+    "duration": 4,
+    "shot": "POV · WS",
+    "refs": [
+      "Hell Creek Waterhole"
+    ],
+    "start_frame": "GENERATE_IMAGE",
+    "hinh": "**Chuỗi 4s (1/3) — giật.** Mặt đất giật mạnh, cây lay dù không gió, nước hố tạt lên vành bùn, bụi rũ khỏi cành; máy chao",
+    "beat": "Sóng S · chuỗi khó thứ 3",
+    "thoai": [],
+    "so_tu": 0
+  },
+  {
+    "clip_id": "A4-07b",
+    "duration": 4,
+    "shot": "POV · WS",
+    "refs": [
+      "Hell Creek Waterhole"
+    ],
+    "start_frame": "PREV_LAST_FRAME",
+    "hinh": "**(2/3) — cuộn.** Mở bằng cây nghiêng; mặt đất cuộn như sóng chậm, bùn nứt; cây bách chết đổ ngang mép nước, nước bắn",
+    "beat": "Sóng Rayleigh",
+    "thoai": [],
+    "so_tu": 0
+  },
+  {
+    "clip_id": "A4-07c",
+    "duration": 4,
+    "shot": "POV · WS",
+    "refs": [
+      "Hell Creek Waterhole"
+    ],
+    "start_frame": "PREV_LAST_FRAME",
+    "hinh": "**(3/3) — ngã.** Mở bằng cây nằm ngang, máy chao mạnh; máy ngã nhào về trước, khung đập xuống bùn",
+    "beat": "Kết úp trong bùn (thét vỡ giọng)",
+    "thoai": [],
+    "so_tu": 0
+  },
+  {
+    "clip_id": "A4-08",
+    "duration": 8,
+    "shot": "SELFIE · MCU",
+    "refs": [
+      "Nora",
+      "Nora Body",
+      "Bò Đực",
+      "Con Cái Già",
+      "Con Non",
+      "Hell Creek Waterhole"
+    ],
+    "start_frame": "EDIT_IMAGE",
+    "hinh": "Má áp bùn, nhấc đầu lên (khớp A4-07c), bùn xám nâu trên má trái; đàn chạy mờ hậu cảnh",
+    "beat": "Gấp",
+    "thoai": [
+      {
+        "t": "0-3s",
+        "en": "Ground wave. The whole valley just rolled like water.",
+        "vi": "Sóng mặt đất. Cả thung lũng vừa cuộn lên như nước."
+      },
+      {
+        "t": "3-6s",
+        "en": "The herd's breaking, they're running.",
+        "vi": "Đàn đang tan rồi, chúng đang chạy."
+      },
+      {
+        "t": "6-8s",
+        "en": "Get up, get up!",
+        "vi": "Đứng dậy, đứng dậy!"
+      }
+    ],
+    "so_tu": 18
+  },
+  {
+    "clip_id": "A4-09",
+    "duration": 4,
+    "shot": "POV · WS",
+    "refs": [
+      "Bò Đực",
+      "Con Cái Già",
+      "Con Non",
+      "Hell Creek Waterhole"
+    ],
+    "start_frame": "GENERATE_IMAGE",
+    "hinh": "Đàn chạy về rặng cây phía bắc, lướt qua cách ~10 m; máy chạy theo, tụt lại",
+    "beat": "Bị bỏ lại (thở)",
+    "thoai": [],
+    "so_tu": 0
+  },
+  {
+    "clip_id": "A4-P1",
+    "duration": 4,
+    "shot": "POV · MS",
+    "refs": [
+      "Hell Creek Waterhole"
+    ],
+    "start_frame": "GENERATE_IMAGE",
+    "hinh": "Bờ đất cao phía trước sạt lở trượt xuống hố nước thành một khối bùn, chắn lối; máy khựng lại",
+    "beat": "Bờ sạt (thay cây cọ cháy, research)",
+    "thoai": [],
+    "so_tu": 0
+  },
+  {
+    "clip_id": "A4-T1",
+    "duration": 4,
+    "shot": "HIDE · EWS",
+    "refs": [
+      "T. rex",
+      "Hell Creek Waterhole"
+    ],
+    "start_frame": "GENERATE_IMAGE",
+    "hinh": "**Chuỗi 4s (1/2) — xuất hiện.** Bên kia bãi trống, xa: T. rex bước nhanh nặng nề ra khỏi rặng cây, đầu thấp, không nhìn về máy",
+    "beat": "T. rex rời đi · không săn (Sonic Isolation)",
+    "thoai": [],
+    "so_tu": 0
+  },
+  {
+    "clip_id": "A4-T2",
+    "duration": 4,
+    "shot": "HIDE · EWS",
+    "refs": [
+      "T. rex",
+      "Hell Creek Waterhole"
+    ],
+    "start_frame": "PREV_LAST_FRAME",
+    "hinh": "**(2/2) — đi qua.** Mở bằng T. rex giữa bãi; tiếp tục bước nhanh nặng nề, khuất vào rặng cây phía tây; không chạy, không quay đầu",
+    "beat": "Chúa tể cũng là nạn nhân",
+    "thoai": [],
+    "so_tu": 0
+  },
+  {
+    "clip_id": "A4-P2",
+    "duration": 6,
+    "shot": "SELFIE · MCU",
+    "refs": [
+      "Nora",
+      "Nora Body",
+      "Hell Creek Waterhole"
+    ],
+    "start_frame": "EDIT_IMAGE",
+    "hinh": "Nora nép sau khối bùn sạt, mặt và tóc dính bụi đất, nhìn theo hướng T. rex vừa khuất",
+    "beat": "Không ai bất tử · Rule 51",
+    "thoai": [
+      {
+        "t": "0-3s",
+        "en": "Even the king is leaving in a hurry.",
+        "vi": "Đến cả vua cũng đang vội vã bỏ đi."
+      },
+      {
+        "t": "3-6s",
+        "en": "Nobody owns this valley anymore.",
+        "vi": "Không ai còn làm chủ thung lũng này nữa."
+      }
+    ],
+    "so_tu": 13
+  },
+  {
+    "clip_id": "A4-10",
+    "duration": 4,
+    "shot": "POV · EWS",
+    "refs": [
+      "Hell Creek Waterhole"
+    ],
+    "start_frame": "GENERATE_IMAGE",
+    "hinh": "Chạy trên bãi trống; bầu trời phía trên đầy vệt sáng mảnh như sao băng, những hạt thủy tinh đầu tiên lộp độp xuống bùn quanh máy; ánh sáng chuyển màu đồng",
+    "beat": "Mưa thủy tinh bắt đầu (~15 phút)",
+    "thoai": [],
+    "so_tu": 0
+  },
+  {
+    "clip_id": "A4-11",
+    "duration": 4,
+    "shot": "MACRO · ECU",
+    "refs": [
+      "Nora",
+      "Nora Body",
+      "Nora Hand",
+      "Hell Creek Waterhole"
+    ],
+    "start_frame": "GENERATE_IMAGE",
+    "hinh": "Hạt thủy tinh li ti (~1 mm) lộp độp xuống bùn xám quanh mũi giày đang chạy, nảy lên, chấm lỗ trên mặt vũng",
+    "beat": "Nhịp ngắn nhất phim",
+    "thoai": [],
+    "so_tu": 0
+  },
+  {
+    "clip_id": "A4-12",
+    "duration": 8,
+    "shot": "SELFIE · MCU",
+    "refs": [
+      "Nora",
+      "Nora Body",
+      "Hell Creek Waterhole"
+    ],
+    "start_frame": "EDIT_IMAGE",
+    "hinh": "Nora ngồi thụp sau thân cây bách đổ giữa bãi trống, trời màu đồng, hạt thủy tinh lộp độp, dính trên tóc",
+    "beat": "**Đáy Act 4** (all is lost)",
+    "thoai": [
+      {
+        "t": "0-3s",
+        "en": "It's raining glass, tiny beads, everywhere.",
+        "vi": "Trời đang mưa thủy tinh, những hạt nhỏ, khắp nơi."
+      },
+      {
+        "t": "3-6s",
+        "en": "I lost them, I can't see the herd.",
+        "vi": "Mình lạc mất chúng rồi, mình không thấy đàn đâu."
+      },
+      {
+        "t": "6-8s",
+        "en": "Where do I go?",
+        "vi": "Mình đi đâu bây giờ?"
+      }
+    ],
+    "so_tu": 18
+  },
+  {
+    "clip_id": "A4-13",
+    "duration": 4,
+    "shot": "POV · WS",
+    "refs": [
+      "Bò Đực",
+      "Con Cái Già",
+      "Con Non",
+      "Hell Creek Waterhole"
+    ],
+    "start_frame": "GENERATE_IMAGE",
+    "hinh": "Con Non tách đàn lao qua trước máy cách ~5 m, không theo đàn về rừng phía bắc mà chúi xuống dốc về phía lạch",
+    "beat": "Hai hướng mở ra",
+    "thoai": [],
+    "so_tu": 0
+  },
+  {
+    "clip_id": "A4-14",
+    "duration": 8,
+    "shot": "SELFIE · MCU",
+    "refs": [
+      "Nora",
+      "Nora Body",
+      "Hell Creek Waterhole"
+    ],
+    "start_frame": "EDIT_IMAGE",
+    "hinh": "Nora vẫn ngồi thụp. 0–3s nhìn sang trái (đàn vào rừng phía bắc); 3–6s nhìn sang phải (Con Non xuống lạch cá sấu); 6–8s nhìn thẳng máy, quyết",
+    "beat": "**Khủng hoảng:** rừng vs lạch cá sấu, cô chọn lắng nghe",
+    "thoai": [
+      {
+        "t": "0-3s",
+        "en": "Herd's going north, into the trees.",
+        "vi": "Đàn đang đi về phía bắc, vào rừng."
+      },
+      {
+        "t": "3-6s",
+        "en": "The little one's going down, toward the crocodiles.",
+        "vi": "Con nhỏ đang đi xuống, về phía bầy cá sấu."
+      },
+      {
+        "t": "6-8s",
+        "en": "He hasn't been wrong yet. Follow the kid.",
+        "vi": "Nó chưa sai lần nào. Đi theo thằng nhóc."
+      }
+    ],
+    "so_tu": 22
+  },
+  {
+    "clip_id": "A4-15",
+    "duration": 4,
+    "shot": "POV · MS",
+    "refs": [
+      "Con Non",
+      "Hell Creek Game Corridor"
+    ],
+    "start_frame": "GENERATE_IMAGE",
+    "hinh": "Chạy theo Con Non xuống hành lang thú dốc về lạch; bầu trời đỏ cam đục, nóng, lá cong",
+    "beat": "Bài học Act 2 dùng lần cuối (thở)",
+    "thoai": [],
+    "so_tu": 0
+  },
+  {
+    "clip_id": "A4-16",
+    "duration": 8,
+    "shot": "OTS · MS",
+    "refs": [
+      "Nora",
+      "Nora Body",
+      "Con Non",
+      "Hell Creek Bank"
+    ],
+    "start_frame": "EDIT_IMAGE",
+    "hinh": "Nora quỳ trên mép vách đất tiền cảnh; dưới lòng lạch, Con Non đang chui vào **đúng cái hốc ở A1-06**",
+    "beat": "**Payoff gieo A1-06**",
+    "thoai": [
+      {
+        "t": "0-3s",
+        "en": "That hollow under the bank.",
+        "vi": "Cái hốc dưới bờ đó."
+      },
+      {
+        "t": "3-6s",
+        "en": "The one I skipped this morning because of the crocodiles.",
+        "vi": "Cái mà sáng nay mình bỏ qua vì đám cá sấu."
+      },
+      {
+        "t": "6-8s",
+        "en": "He's already in. Go, go.",
+        "vi": "Nó vào trong rồi. Đi, đi."
+      }
+    ],
+    "so_tu": 20
+  },
+  {
+    "clip_id": "A4-17",
+    "duration": 4,
+    "shot": "POV · WS",
+    "refs": [
+      "Hell Creek Bank",
+      "Edmontosaurus Carcass"
+    ],
+    "start_frame": "GENERATE_IMAGE",
+    "hinh": "Trượt xuống vách đất vào lòng lạch: nước lạch **chảy ngược**, dâng cao, cuốn khúc gỗ và cá chết; mặt nước sát dưới miệng hốc; bên kia, xác Edmontosaurus ngập nửa",
+    "beat": "Sóng dềnh (seiche, research)",
+    "thoai": [],
+    "so_tu": 0
+  },
+  {
+    "clip_id": "A4-18",
+    "duration": 4,
+    "shot": "MACRO · ECU",
+    "refs": [
+      "Nora",
+      "Nora Body",
+      "Nora Hand",
+      "Hell Creek Bank"
+    ],
+    "start_frame": "GENERATE_IMAGE",
+    "hinh": "Hai tay vốc bùn ướt **có sẵn** ở mép lạch, trát lên cẳng tay và cổ",
+    "beat": "Payoff bùn (A2-06/07)",
+    "thoai": [],
+    "so_tu": 0
+  },
+  {
+    "clip_id": "A4-19",
+    "duration": 4,
+    "shot": "POV · MS",
+    "refs": [
+      "Nora",
+      "Nora Body",
+      "Nora Hand",
+      "Hell Creek Bank"
+    ],
+    "start_frame": "GENERATE_IMAGE",
+    "hinh": "Kéo một tàu lá cọ sũng nước **có sẵn** ở mép lạch, bò vào dưới vách",
+    "beat": "Dẫn thẳng vào MASTER (thở)",
+    "thoai": [],
+    "so_tu": 0
+  },
+  {
+    "clip_id": "MASTER",
+    "duration": 10,
+    "shot": "FIXED · MS",
+    "refs": [
+      "Nora",
+      "Nora Body",
+      "Con Non",
+      "Hell Creek Bank"
+    ],
+    "start_frame": "EDIT_IMAGE",
+    "hinh": "**MASTER 10s**, dựng đoạn 6→10s ở đây. Máy kê vách hốc. Nora nằm nghiêng dưới vách, bùn kín tay và cổ, tàu lá cọ sũng nước nửa người, một giày thò ra; hạt thủy tinh lộp độp ngoài miệng hốc, trời cam đỏ đục. 8–10s: **bàn chân trước Con Non đặt xuống ngay cạnh mặt cô.** Im",
+    "beat": "**PAYOFF**",
+    "thoai": [
+      {
+        "t": "0-3s",
+        "en": "Down, down, the air is burning hot!",
+        "vi": "Nằm xuống, nằm xuống, không khí đang nóng bỏng!"
+      },
+      {
+        "t": "3-7s",
+        "en": "Wet mud on the arms, on everything, stay flat.",
+        "vi": "Bùn ướt lên tay, lên khắp người, nằm sát xuống."
+      },
+      {
+        "t": "3-7s",
+        "en": "Pull the frond, boot's still out!",
+        "vi": "Kéo tàu lá lại, giày còn thò ra!"
+      },
+      {
+        "t": "7-8s",
+        "en": "Don't move.",
+        "vi": "Đừng động đậy."
+      }
+    ],
+    "so_tu": 24
+  },
+  {
+    "clip_id": "A5-01",
+    "duration": 6,
+    "shot": "POV · WS",
+    "refs": [
+      "Hell Creek Bank",
+      "Edmontosaurus Carcass"
+    ],
+    "start_frame": "GENERATE_IMAGE",
+    "hinh": "Nhìn ra từ hốc: lạch xám dâng, mưa thủy tinh đã ngừng, bụi xám mịn lắng; trời nâu xám mờ, mặt trời chỉ là đĩa nhạt thấp phía tây; vài sợi khói mảnh từ lá mục âm ỉ bờ bên kia",
+    "beat": "Thở sau payoff",
+    "thoai": [],
+    "so_tu": 0
+  },
+  {
+    "clip_id": "A5-02",
+    "duration": 8,
+    "shot": "FIXED · MS",
+    "refs": [
+      "Nora",
+      "Nora Body",
+      "Con Non",
+      "Hell Creek Bank"
+    ],
+    "start_frame": "EDIT_IMAGE",
+    "hinh": "Máy kê vách hốc. Nora ngồi ngang eo, bùn khô, lá cọ trên vai; Con Non nằm ép sát bên",
+    "beat": "Còn sống",
+    "thoai": [
+      {
+        "t": "0-3s",
+        "en": "The glass stopped falling a while ago.",
+        "vi": "Thủy tinh đã ngừng rơi một lúc rồi."
+      },
+      {
+        "t": "3-6s",
+        "en": "The sky went orange, then brown, then grey.",
+        "vi": "Bầu trời chuyển cam, rồi nâu, rồi xám."
+      },
+      {
+        "t": "6-8s",
+        "en": "We're still alive.",
+        "vi": "Chúng ta vẫn còn sống."
+      }
+    ],
+    "so_tu": 18
+  },
+  {
+    "clip_id": "A5-03",
+    "duration": 6,
+    "shot": "MACRO · ECU",
+    "refs": [
+      "Nora",
+      "Nora Body",
+      "Nora Hand",
+      "Con Non"
+    ],
+    "start_frame": "GENERATE_IMAGE",
+    "hinh": "Bụi xám mịn lắng lên cẳng tay bùn của Nora và hông bùn của Con Non, phủ thành lớp mỏng",
+    "beat": "Mùa đông bắt đầu",
+    "thoai": [],
+    "so_tu": 0
+  },
+  {
+    "clip_id": "A5-04",
+    "duration": 6,
+    "shot": "POV · MS",
+    "refs": [
+      "Con Non",
+      "Hell Creek Bank"
+    ],
+    "start_frame": "GENERATE_IMAGE",
+    "hinh": "Con Non ngẩng đầu kêu 2 nốt về phía rừng; không tiếng đáp; im",
+    "beat": "Im lặng là câu trả lời",
+    "thoai": [],
+    "so_tu": 0
+  },
+  {
+    "clip_id": "A5-05",
+    "duration": 6,
+    "shot": "POV · EWS",
+    "refs": [
+      "Bò Đực",
+      "Edmontosaurus Carcass",
+      "Borealosuchus",
+      "Hell Creek Bank"
+    ],
+    "start_frame": "GENERATE_IMAGE",
+    "hinh": "Ra miệng hốc: lớp bụi xám mỏng phủ bãi sỏi; xác Edmontosaurus thành ụ xám; hai dải lưng bất động trong nước xám. Máy lia chậm, dừng ở bìa rừng: **một thân lớn có diềm nằm im dưới bụi, sừng trái gãy cụt**",
+    "beat": "**Payoff Bò Đực** · callback mở đầu",
+    "thoai": [],
+    "so_tu": 0
+  },
+  {
+    "clip_id": "A5-06",
+    "duration": 8,
+    "shot": "SELFIE · MCU",
+    "refs": [
+      "Nora",
+      "Nora Body",
+      "Hell Creek Bank"
+    ],
+    "start_frame": "EDIT_IMAGE",
+    "hinh": "Nora, bụi xám trên tóc, nhìn về bãi sỏi",
+    "beat": "Vòng tròn khép",
+    "thoai": [
+      {
+        "t": "0-3s",
+        "en": "This morning I crawled out of that creek.",
+        "vi": "Sáng nay mình đã bò ra khỏi con lạch đó."
+      },
+      {
+        "t": "3-6s",
+        "en": "Twelve hours later, the whole world just went quiet.",
+        "vi": "Mười hai tiếng sau, cả thế giới im bặt."
+      },
+      {
+        "t": "6-8s",
+        "en": "Listen.",
+        "vi": "Nghe này."
+      }
+    ],
+    "so_tu": 18
+  },
+  {
+    "clip_id": "A5-07",
+    "duration": 8,
+    "shot": "OTS · MS",
+    "refs": [
+      "Nora",
+      "Nora Body",
+      "Con Non",
+      "Hell Creek Bank"
+    ],
+    "start_frame": "EDIT_IMAGE",
+    "hinh": "Nora tiền cảnh, Con Non cạnh bên. **Câu thoại cuối cùng của phim**",
+    "beat": "Lời cuối · bỏ vai khán giả hẳn (callback A1-05, A4-14)",
+    "thoai": [
+      {
+        "t": "0-3s",
+        "en": "I came here to watch the end.",
+        "vi": "Mình đến đây để xem ngày tận thế."
+      },
+      {
+        "t": "3-6s",
+        "en": "Turns out the end doesn't need an audience.",
+        "vi": "Hóa ra ngày tận thế chẳng cần khán giả."
+      },
+      {
+        "t": "6-8s",
+        "en": "Rule six. Follow the kid.",
+        "vi": "Luật sáu. Đi theo thằng nhóc."
+      }
+    ],
+    "so_tu": 20
+  },
+  {
+    "clip_id": "A5-08",
+    "duration": 6,
+    "shot": "MACRO · ECU",
+    "refs": [
+      "Nora",
+      "Nora Body",
+      "Nora Hand",
+      "Con Non"
+    ],
+    "start_frame": "GENERATE_IMAGE",
+    "hinh": "Bàn tay Nora đặt phẳng trên lớp bụi cạnh bàn chân Con Non; bàn chân nhấc lên ra khỏi khung (nó đứng dậy)",
+    "beat": "Khớp động tác vào cảnh cuối",
+    "thoai": [],
+    "so_tu": 0
+  },
+  {
+    "clip_id": "A5-09",
+    "duration": 10,
+    "shot": "FIXED · WS",
+    "refs": [
+      "Nora",
+      "Nora Body",
+      "Con Non",
+      "Hell Creek Bank"
+    ],
+    "start_frame": "EDIT_IMAGE",
+    "hinh": "**Cảnh cuối, 0 từ.** Con Non đi chậm dọc lạch về phía màn bụi xám. Nora chống tay đứng dậy, phủi bụi trên cẳng tay, bước theo sau nó; hai bóng nhỏ dần rồi tan vào bụi. **CẮT THẲNG SANG ĐEN**",
+    "beat": "Kết im lặng · đi theo kẻ sống sót",
+    "thoai": [],
+    "so_tu": 0
+  }
+]

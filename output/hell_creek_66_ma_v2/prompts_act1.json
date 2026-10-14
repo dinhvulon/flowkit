@@ -1,0 +1,1329 @@
+[
+  {
+    "clip_id": "EST-01",
+    "scene_name": "Dawn over the floodplain (year card)",
+    "duration": 6,
+    "aspect_ratio": "16:9",
+    "refs": [
+      "Hell Creek Bank"
+    ],
+    "camera": {
+      "viewpoint": "Very high aerial establishing view about 120 m above the floodplain, drifting slowly forward, perfectly smooth.",
+      "shot_size": "extreme wide shot",
+      "description": "A very smooth, slow documentary establishing view from high above; no people anywhere."
+    },
+    "style": "Raw handheld natural-history field footage, Hell Creek floodplain in spring: small broadleaf trees with sycamore-, magnolia- and laurel-like leaves, a few fan palms and tall dawn redwoods at wet sites, horsetails at the water's edge, leaf litter and moss on grey-brown silt. True-to-life muted colours, fine 35mm film grain, raw 35mm wildlife documentary realism, deep focus, deep depth of field (f/8 aperture), entire frame sharp from foreground to distant horizon. Real amateur footage filmed by one person who is physically present.",
+    "setting": "Hell Creek river floodplain, Montana, 66 million years ago, spring, on the day of the Chicxulub impact. Location: the creek exactly as in the Hell Creek Bank reference: a slow silty brown creek about 15 m wide flowing from left to right; on the near side a bar of grey gravel and buff sand with driftwood; on the far side a near-vertical 2 m bank of layered grey-brown silt and olive-grey clay with roots hanging from its top and one dark, dry, low hollow about 1.5 m wide just above the waterline; horsetails at the water's edge; a spring broadleaf woodland edge with a few fan palms and a tall dawn redwood behind the bank. Light: cool blue pre-dawn twilight turning to soft pale-gold light on the eastern horizon, low river mist lying over still brown water, damp air, muted colours, dew on leaves, long soft shadows. Natural sun and sky only, as on a real field day at about 55 degrees north in spring; organic micro-shadows under leaves and bodies; no artificial fill light.",
+    "characters": [],
+    "in_place": "Everything is already in place from the very first frame: the creek, the sand bars, the woodland, and exactly three distant animal shapes standing still in a small clearing at the upper right; low mist lying on the water. Every person, animal and object stays where it is placed unless the timeline moves it; nothing appears suddenly, nothing vanishes.",
+    "shot": "A meandering brown creek curves through the lower half of the frame between pale sand bars; low spring broadleaf woodland dotted with a few fan palms fills the rest; three tiny animal shapes stand in a clearing at the upper right.",
+    "timeline_action": {
+      "0-2s": "Low river mist drifts slowly from left to right over the still brown water.",
+      "2-4s": "The view keeps drifting forward; pale-gold light spreads along the eastern horizon.",
+      "4-6s": "The three distant animals stay standing still in their clearing; the mist keeps drifting; the view settles."
+    },
+    "speech": {
+      "speaker": "none",
+      "delivery": "Strictly NO spoken dialogue for the whole clip. only held breathing through the nose and the real sounds of the place are heard."
+    },
+    "dramatic_craft": {
+      "beat": "Establish the untouched world before the last day.",
+      "value_turn": "+ calm and beauty / - for the audience who knows the date.",
+      "subtext": "A world that does not know it has twelve hours left.",
+      "prop_and_detail": "The three dots are the herd Nora will meet."
+    },
+    "audio": "Dawn ambience only: a distant frog chorus, single bird calls, faint moving water; no voice, no music.",
+    "physics": "Slow aerial drift about 2 m/s with no shake; mist moving at walking pace left to right; animals static.",
+    "negative_constraints": [
+      "No people, no aircraft, nothing man-made anywhere in the frame.",
+      "No subtitles, captions, labels, icons or text of any kind appear anywhere in the frame.",
+      "The image is clean footage only: no interface, no recording indicator, no battery icon, no zoom label, no names, no text or symbols.",
+      "Strictly NO spoken words in this clip.",
+      "Deep focus: strictly NO shallow depth of field, strictly NO bokeh, no blurred background.",
+      "Dialogue word count strictly 0 words, exactly as written in script.md."
+    ],
+    "start_frame": {
+      "type": "GENERATE_IMAGE",
+      "source_media_id": null,
+      "image_prompt": "Single still photograph, frame 0 of this shot, before any movement. Raw handheld natural-history field footage, Hell Creek floodplain in spring: small broadleaf trees with sycamore-, magnolia- and laurel-like leaves, a few fan palms and tall dawn redwoods at wet sites, horsetails at the water's edge, leaf litter and moss on grey-brown silt. True-to-life muted colours, fine 35mm film grain, raw 35mm wildlife documentary realism, deep focus, deep depth of field (f/8 aperture), entire frame sharp from foreground to distant horizon. Real amateur footage filmed by one person who is physically present. Setting: Hell Creek river floodplain, Montana, 66 million years ago, spring, on the day of the Chicxulub impact. Location: the creek exactly as in the Hell Creek Bank reference: a slow silty brown creek about 15 m wide flowing from left to right; on the near side a bar of grey gravel and buff sand with driftwood; on the far side a near-vertical 2 m bank of layered grey-brown silt and olive-grey clay with roots hanging from its top and one dark, dry, low hollow about 1.5 m wide just above the waterline; horsetails at the water's edge; a spring broadleaf woodland edge with a few fan palms and a tall dawn redwood behind the bank. Light: cool blue pre-dawn twilight turning to soft pale-gold light on the eastern horizon, low river mist lying over still brown water, damp air, muted colours, dew on leaves, long soft shadows. Natural sun and sky only, as on a real field day at about 55 degrees north in spring; organic micro-shadows under leaves and bodies; no artificial fill light. Composition (extreme wide shot): A meandering brown creek curves through the lower half of the frame between pale sand bars; low spring broadleaf woodland dotted with a few fan palms fills the rest; three tiny animal shapes stand in a clearing at the upper right. Already in place: the creek, the sand bars, the woodland, and exactly three distant animal shapes standing still in a small clearing at the upper right; low mist lying on the water. No subtitles, captions, labels, icons or text of any kind appear anywhere in the frame."
+    }
+  },
+  {
+    "clip_id": "A1-01",
+    "scene_name": "Waist-deep with two crocodiles",
+    "duration": 6,
+    "aspect_ratio": "16:9",
+    "refs": [
+      "Borealosuchus",
+      "Hell Creek Bank"
+    ],
+    "camera": {
+      "viewpoint": "First-person view through Nora's own eyes. At chest height, standing waist-deep in the creek and backing slowly toward the near gravel bar.",
+      "shot_size": "wide shot",
+      "description": "All recording gear and her gripping arm are completely outside the visible frame and never seen. The shot never switches to a third-person view; Nora's face never appears."
+    },
+    "style": "Raw handheld natural-history field footage, Hell Creek floodplain in spring: small broadleaf trees with sycamore-, magnolia- and laurel-like leaves, a few fan palms and tall dawn redwoods at wet sites, horsetails at the water's edge, leaf litter and moss on grey-brown silt. True-to-life muted colours, fine 35mm film grain, raw 35mm wildlife documentary realism, deep focus, deep depth of field (f/8 aperture), entire frame sharp from foreground to distant horizon. Real amateur footage filmed by one person who is physically present.",
+    "setting": "Hell Creek river floodplain, Montana, 66 million years ago, spring, on the day of the Chicxulub impact. Location: the creek exactly as in the Hell Creek Bank reference: a slow silty brown creek about 15 m wide flowing from left to right; on the near side a bar of grey gravel and buff sand with driftwood; on the far side a near-vertical 2 m bank of layered grey-brown silt and olive-grey clay with roots hanging from its top and one dark, dry, low hollow about 1.5 m wide just above the waterline; horsetails at the water's edge; a spring broadleaf woodland edge with a few fan palms and a tall dawn redwood behind the bank. Light: low raking early-morning sunlight from behind the subject, warm side light skimming the grey-brown mud and catching the edges of leaves and skin, thin haze over the river, deep soft shadows, natural documentary exposure. Natural sun and sky only, as on a real field day at about 55 degrees north in spring; organic micro-shadows under leaves and bodies; no artificial fill light.",
+    "characters": [
+      {
+        "name": "the Borealosuchus crocodiles",
+        "visual_lock": "Match the Borealosuchus reference: crocodylians with long moderately narrow snouts; in the water only their rough ridged scute backs, eyes and snout tips show. Living crocodylian: rough dark olive-grey armoured scutes, wet silt on the flanks, thin real highlights only where water sits; clean dry nostrils at the snout tip, no vapour.",
+        "state": "Two of them, floating, drifting slowly toward the viewer, never lunging. Even when standing still it keeps continuous living micro-motion: ribs rising and falling with each breath, eyes blinking, skin twitching at flies, small weight shifts; it never freezes like a statue."
+      }
+    ],
+    "in_place": "Everything is already in place from the very first frame: exactly two Borealosuchus floating in the middle of the creek about five arm-spans away, only their ridged scute backs and eye bumps above the brown water; they stay in view for the whole clip; the near gravel bar is just behind the viewer. Every person, animal and object stays where it is placed unless the timeline moves it; nothing appears suddenly, nothing vanishes.",
+    "shot": "The brown creek fills the frame; two rough ridged crocodile backs float in the middle of the frame about five arm-spans away.",
+    "timeline_action": {
+      "0-2s": "The two ridged backs drift slowly toward the viewer, small ripples ahead of them; the view holds still.",
+      "2-4s": "The view backs away step by step; the grey gravel bar slides into the bottom of the frame; brown water swirls.",
+      "4-6s": "The view climbs out onto the gravel bar; the waterline drops out of the bottom of the frame; the two backs are still in the water, still in view."
+    },
+    "speech": {
+      "speaker": "none",
+      "delivery": "Strictly NO spoken dialogue for the whole clip. only held breathing through the nose and the real sounds of the place are heard."
+    },
+    "dramatic_craft": {
+      "beat": "Get out of the water without provoking them.",
+      "value_turn": "- trapped in the water / + on dry gravel.",
+      "subtext": "Her body reacts before her mind catches up.",
+      "prop_and_detail": "The two backs are patience made visible (paid off in A1-02: 'patient')."
+    },
+    "audio": "Sonic Isolation: fast, held breathing through the nose, water sloshing around unseen legs, gravel crunch at the end, slow creek water lapping, a frog chorus, distant bird calls.",
+    "physics": "Crocodiles drift about 0.3 m/s; the viewer backs out at about 0.5 m/s against water resistance; each step adds a small vertical bounce.",
+    "negative_constraints": [
+      "The camera viewpoint and her gripping arm are completely outside the visible frame and never seen.",
+      "No subtitles, captions, labels, icons or text of any kind appear anywhere in the frame.",
+      "The image is clean footage only: no interface, no recording indicator, no battery icon, no zoom label, no names, no text or symbols.",
+      "Strictly NO spoken words in this clip.",
+      "Deep focus: strictly NO shallow depth of field, strictly NO bokeh, no blurred background.",
+      "Dialogue word count strictly 0 words, exactly as written in script.md.",
+      "ANTI-SMOKE LOCK: strictly NO smoke, strictly NO breath vapour, strictly NO steam, strictly NO white plumes from any nostril; clean dry nostrils breathing transparent clean air.",
+      "ANTI-CGI LOCK: strictly NOT a 3D digital render, NOT a plastic toy model, NOT a museum resin statue, NO specular plastic sheen, NO artificial god rays, NO sunlight streaming beams, NO studio rim light.",
+      "Each animal is a separate body; animals never overlap, merge, duplicate or vanish."
+    ],
+    "start_frame": {
+      "type": "GENERATE_IMAGE",
+      "source_media_id": null,
+      "image_prompt": "Single still photograph, frame 0 of this shot, before any movement. Raw handheld natural-history field footage, Hell Creek floodplain in spring: small broadleaf trees with sycamore-, magnolia- and laurel-like leaves, a few fan palms and tall dawn redwoods at wet sites, horsetails at the water's edge, leaf litter and moss on grey-brown silt. True-to-life muted colours, fine 35mm film grain, raw 35mm wildlife documentary realism, deep focus, deep depth of field (f/8 aperture), entire frame sharp from foreground to distant horizon. Real amateur footage filmed by one person who is physically present. Setting: Hell Creek river floodplain, Montana, 66 million years ago, spring, on the day of the Chicxulub impact. Location: the creek exactly as in the Hell Creek Bank reference: a slow silty brown creek about 15 m wide flowing from left to right; on the near side a bar of grey gravel and buff sand with driftwood; on the far side a near-vertical 2 m bank of layered grey-brown silt and olive-grey clay with roots hanging from its top and one dark, dry, low hollow about 1.5 m wide just above the waterline; horsetails at the water's edge; a spring broadleaf woodland edge with a few fan palms and a tall dawn redwood behind the bank. Light: low raking early-morning sunlight from behind the subject, warm side light skimming the grey-brown mud and catching the edges of leaves and skin, thin haze over the river, deep soft shadows, natural documentary exposure. Natural sun and sky only, as on a real field day at about 55 degrees north in spring; organic micro-shadows under leaves and bodies; no artificial fill light. Composition (wide shot): The brown creek fills the frame; two rough ridged crocodile backs float in the middle of the frame about five arm-spans away. Already in place: exactly two Borealosuchus floating in the middle of the creek about five arm-spans away, only their ridged scute backs and eye bumps above the brown water; they stay in view for the whole clip; the near gravel bar is just behind the viewer. Match the Borealosuchus reference: crocodylians with long moderately narrow snouts; in the water only their rough ridged scute backs, eyes and snout tips show. Living crocodylian: rough dark olive-grey armoured scutes, wet silt on the flanks, thin real highlights only where water sits; clean dry nostrils at the snout tip, no vapour. Nothing that records the scene is visible. No subtitles, captions, labels, icons or text of any kind appear anywhere in the frame."
+    }
+  },
+  {
+    "clip_id": "A1-02",
+    "scene_name": "Out of the water",
+    "duration": 8,
+    "aspect_ratio": "16:9",
+    "refs": [
+      "Nora",
+      "Nora Body",
+      "Borealosuchus",
+      "Hell Creek Bank"
+    ],
+    "camera": {
+      "viewpoint": "Self-filmed vlog view: the lens is held in Nora's right hand at chest height, tilted very slightly up toward her face. She kneels on the gravel bar.",
+      "shot_size": "medium close-up",
+      "description": "The camera viewpoint and her gripping arm are completely outside the visible frame and never seen. She never reaches toward, touches, covers, taps or points at the lens. Only her left hand is free; it is empty unless the timeline says otherwise. Pure front-facing self-filmed view; the shot never switches to a third-person view."
+    },
+    "style": "Raw handheld natural-history field footage, Hell Creek floodplain in spring: small broadleaf trees with sycamore-, magnolia- and laurel-like leaves, a few fan palms and tall dawn redwoods at wet sites, horsetails at the water's edge, leaf litter and moss on grey-brown silt. True-to-life muted colours, fine 35mm film grain, raw 35mm wildlife documentary realism, deep focus, deep depth of field (f/8 aperture), entire frame sharp from foreground to distant horizon. Real amateur footage filmed by one person who is physically present.",
+    "setting": "Hell Creek river floodplain, Montana, 66 million years ago, spring, on the day of the Chicxulub impact. Location: the creek exactly as in the Hell Creek Bank reference: a slow silty brown creek about 15 m wide flowing from left to right; on the near side a bar of grey gravel and buff sand with driftwood; on the far side a near-vertical 2 m bank of layered grey-brown silt and olive-grey clay with roots hanging from its top and one dark, dry, low hollow about 1.5 m wide just above the waterline; horsetails at the water's edge; a spring broadleaf woodland edge with a few fan palms and a tall dawn redwood behind the bank. Light: low raking early-morning sunlight from behind the subject, warm side light skimming the grey-brown mud and catching the edges of leaves and skin, thin haze over the river, deep soft shadows, natural documentary exposure. Natural sun and sky only, as on a real field day at about 55 degrees north in spring; organic micro-shadows under leaves and bodies; no artificial fill light.",
+    "characters": [
+      {
+        "name": "Nora",
+        "visual_lock": "Nora's face is an exact 1:1 identical match to the attached Nora reference image. Perfectly preserve her exact facial likeness from the reference photo without changes. Nora is a young 22-23-year-old woman with a youthful soft feminine heart-shaped face, delicate rounded chin, soft rounded youthful cheeks, petite straight nose and distinctively FULL PLUMP PILLOWY LIPS with a defined Cupid's bow and pouty lower lip; hazel-green eyes; honey-blonde hair in a high wavy ponytail with wispy curtain bangs framing her forehead (strictly NO red hair, NO auburn hair, NO messy bun, NO freckles). Authentic unretouched outdoor skin texture, fine pores, natural perspiration sheen, light dirt smudges, natural wind-blown stray hair strands, zero makeup. She wears no jewelry: no earrings, no necklace, no rings. STRICTLY FORBIDDEN: strictly NO square jaw, NO long rectangular face, NO thin lips, NO hollow cheeks, NO aged appearance (must look 22-23), NO facial distortion, NO face drift. Her honey-blonde ponytail is tied high at the crown of her head, never low at the nape; the wispy curtain bangs stay over the edges of her forehead and frame both cheeks. [ID-LOCK] Nora keeps her face and hair from the Nora face sheet, and her build and clothing from the Nora Body sheet (which shows her full body dressed in this field outfit). Her face, hair colour, hairline, eye colour and body proportions are identical in every frame and never drift. BODY LOCK: Nora's build and proportions match the Nora Body reference sheet exactly: a tall young woman (178 cm) with natural, normal proportions. Her body shape never changes from frame to frame. OUTFIT LOCK: Nora wears the exact field outfit shown in the Nora Body reference sheet (NO fur, NO hood, NO shearling collar, NO cloak, NO modern logo, NO outfit variations). From the very first frame to the last, Nora is fully dressed in the complete outfit. No part of the outfit appears, disappears or changes. The only exception is the turtle-shell flask at her left hip: whether it is there, tied on, or gone follows the state sentence and the timeline of this clip, not the Body sheet.",
+        "state": "She has just crawled backward out of the creek and is straightening up from her knees. Her hair and clothes are still soaking wet from the creek. The turtle-shell flask is not on her yet: nothing hangs at her left hip."
+      },
+      {
+        "name": "the Borealosuchus crocodiles",
+        "visual_lock": "Match the Borealosuchus reference: crocodylians with long moderately narrow snouts; in the water only their rough ridged scute backs, eyes and snout tips show. Living crocodylian: rough dark olive-grey armoured scutes, wet silt on the flanks, thin real highlights only where water sits; clean dry nostrils at the snout tip, no vapour.",
+        "state": "Two backs lying still in the shallows behind her. Even when standing still it keeps continuous living micro-motion: ribs rising and falling with each breath, eyes blinking, skin twitching at flies, small weight shifts; it never freezes like a statue."
+      }
+    ],
+    "in_place": "Everything is already in place from the very first frame: Nora kneeling on the gravel bar; exactly two Borealosuchus backs lying still in the shallows behind her, visible the whole clip. Every person, animal and object stays where it is placed unless the timeline moves it; nothing appears suddenly, nothing vanishes.",
+    "shot": "Nora kneels on wet grey gravel, framed chest-up, centre-left; behind her right shoulder the creek, with two ridged crocodile backs lying in the shallows about 8 m away.",
+    "timeline_action": {
+      "0-3s": "Nora straightens up from her knees, breathless, water dripping from her hair and sleeves, her free left hand pressed flat on the gravel.",
+      "3-6s": "She turns her head over her right shoulder to look at the two backs in the water, jaw tight, then turns back.",
+      "6-8s": "She looks straight into the lens, eyes wide, one short exhale through the nose after the last word."
+    },
+    "speech": {
+      "speaker": "Nora",
+      "delivery": "From the very first frame at second 0, Nora begins speaking immediately. Breathless, fast, half-whisper; dry humor lands on 'They were patient.' Nora's voice (Laomedeia): upbeat, mid-high, energetic conversational female voice, fast confident vlog delivery with dry humor; rises into real cracking screams in danger; drops to a fast whisper when hiding.",
+      "dialogue": [
+        {
+          "t": "0-3s",
+          "speaker": "Nora",
+          "line": "Okay. I'm out, I'm out of the water."
+        },
+        {
+          "t": "3-6s",
+          "speaker": "Nora",
+          "line": "Those were crocodiles, two of them, and they were not curious."
+        },
+        {
+          "t": "6-8s",
+          "speaker": "Nora",
+          "line": "They were patient."
+        }
+      ]
+    },
+    "dramatic_craft": {
+      "beat": "Name the threat to take back control.",
+      "value_turn": "- panic / + control through a joke.",
+      "subtext": "She is shaking; the joke is armour.",
+      "prop_and_detail": "The crocodiles never leave the background: the threat stays."
+    },
+    "audio": "Nora's voice; gravel crunch under her knees; water dripping; slow creek water lapping, a frog chorus, distant bird calls.",
+    "physics": "Her chest heaves about one breath per second; water drips from her hair and sleeves; the gravel shifts under her knees.",
+    "negative_constraints": [
+      "The camera viewpoint and her gripping arm are completely outside the visible frame and never seen.",
+      "No subtitles, captions, labels, icons or text of any kind appear anywhere in the frame.",
+      "The image is clean footage only: no interface, no recording indicator, no battery icon, no zoom label, no names, no text or symbols.",
+      "Only Nora speaks, in English; the animals make only animal sounds, never words.",
+      "Deep focus: strictly NO shallow depth of field, strictly NO bokeh, no blurred background.",
+      "Dialogue word count strictly 22 words, exactly as written in script.md.",
+      "FACE LOCK: exact 1:1 match to the attached Nora face reference; strictly NO square jaw, NO thin lips, NO freckles, NO red or auburn hair, NO messy bun, NO jewelry, NO face drift.",
+      "BODY and OUTFIT LOCK: build, proportions and outfit exactly as the Nora Body reference sheet; NO fur, NO hood, NO cloak, NO outfit variations.",
+      "ANTI-SMOKE LOCK: strictly NO smoke, strictly NO breath vapour, strictly NO steam, strictly NO white plumes from any nostril; clean dry nostrils breathing transparent clean air.",
+      "ANTI-CGI LOCK: strictly NOT a 3D digital render, NOT a plastic toy model, NOT a museum resin statue, NO specular plastic sheen, NO artificial god rays, NO sunlight streaming beams, NO studio rim light.",
+      "Each animal is a separate body; animals never overlap, merge, duplicate or vanish."
+    ],
+    "start_frame": {
+      "type": "EDIT_IMAGE",
+      "source_media_id": "<Nora face media_id>",
+      "image_prompt": "Single still photograph, frame 0 of this shot, before any movement. Raw handheld natural-history field footage, Hell Creek floodplain in spring: small broadleaf trees with sycamore-, magnolia- and laurel-like leaves, a few fan palms and tall dawn redwoods at wet sites, horsetails at the water's edge, leaf litter and moss on grey-brown silt. True-to-life muted colours, fine 35mm film grain, raw 35mm wildlife documentary realism, deep focus, deep depth of field (f/8 aperture), entire frame sharp from foreground to distant horizon. Real amateur footage filmed by one person who is physically present. Setting: Hell Creek river floodplain, Montana, 66 million years ago, spring, on the day of the Chicxulub impact. Location: the creek exactly as in the Hell Creek Bank reference: a slow silty brown creek about 15 m wide flowing from left to right; on the near side a bar of grey gravel and buff sand with driftwood; on the far side a near-vertical 2 m bank of layered grey-brown silt and olive-grey clay with roots hanging from its top and one dark, dry, low hollow about 1.5 m wide just above the waterline; horsetails at the water's edge; a spring broadleaf woodland edge with a few fan palms and a tall dawn redwood behind the bank. Light: low raking early-morning sunlight from behind the subject, warm side light skimming the grey-brown mud and catching the edges of leaves and skin, thin haze over the river, deep soft shadows, natural documentary exposure. Natural sun and sky only, as on a real field day at about 55 degrees north in spring; organic micro-shadows under leaves and bodies; no artificial fill light. Composition (medium close-up): Nora kneels on wet grey gravel, framed chest-up, centre-left; behind her right shoulder the creek, with two ridged crocodile backs lying in the shallows about 8 m away. Already in place: Nora kneeling on the gravel bar; exactly two Borealosuchus backs lying still in the shallows behind her, visible the whole clip. Nora's face is an exact 1:1 identical match to the attached Nora reference image. Perfectly preserve her exact facial likeness from the reference photo without changes. Nora is a young 22-23-year-old woman with a youthful soft feminine heart-shaped face, delicate rounded chin, soft rounded youthful cheeks, petite straight nose and distinctively FULL PLUMP PILLOWY LIPS with a defined Cupid's bow and pouty lower lip; hazel-green eyes; honey-blonde hair in a high wavy ponytail with wispy curtain bangs framing her forehead (strictly NO red hair, NO auburn hair, NO messy bun, NO freckles). Authentic unretouched outdoor skin texture, fine pores, natural perspiration sheen, light dirt smudges, natural wind-blown stray hair strands, zero makeup. She wears no jewelry: no earrings, no necklace, no rings. STRICTLY FORBIDDEN: strictly NO square jaw, NO long rectangular face, NO thin lips, NO hollow cheeks, NO aged appearance (must look 22-23), NO facial distortion, NO face drift. Her honey-blonde ponytail is tied high at the crown of her head, never low at the nape; the wispy curtain bangs stay over the edges of her forehead and frame both cheeks. BODY LOCK: Nora's build and proportions match the Nora Body reference sheet exactly: a tall young woman (178 cm) with natural, normal proportions. Her body shape never changes from frame to frame. OUTFIT LOCK: Nora wears the exact field outfit shown in the Nora Body reference sheet (NO fur, NO hood, NO shearling collar, NO cloak, NO modern logo, NO outfit variations). From the very first frame to the last, Nora is fully dressed in the complete outfit. No part of the outfit appears, disappears or changes. The only exception is the turtle-shell flask at her left hip: whether it is there, tied on, or gone follows the state sentence and the timeline of this clip, not the Body sheet. Her hair and clothes are still soaking wet from the creek. The turtle-shell flask is not on her yet: nothing hangs at her left hip. She has just crawled backward out of the creek and is straightening up from her knees. Match the Borealosuchus reference: crocodylians with long moderately narrow snouts; in the water only their rough ridged scute backs, eyes and snout tips show. Living crocodylian: rough dark olive-grey armoured scutes, wet silt on the flanks, thin real highlights only where water sits; clean dry nostrils at the snout tip, no vapour. The camera viewpoint and her gripping arm are completely outside the visible frame and never seen. Self-filmed vlog framing. No subtitles, captions, labels, icons or text of any kind appear anywhere in the frame."
+    }
+  },
+  {
+    "clip_id": "A1-03",
+    "scene_name": "The carcass on the silt bar",
+    "duration": 8,
+    "aspect_ratio": "16:9",
+    "refs": [
+      "Edmontosaurus Carcass",
+      "Hell Creek Bank"
+    ],
+    "camera": {
+      "viewpoint": "First-person view through Nora's own eyes. At chest height, walking slowly forward over gravel and silt.",
+      "shot_size": "wide shot",
+      "description": "All recording gear and her gripping arm are completely outside the visible frame and never seen. The shot never switches to a third-person view; Nora's face never appears."
+    },
+    "style": "Raw handheld natural-history field footage, Hell Creek floodplain in spring: small broadleaf trees with sycamore-, magnolia- and laurel-like leaves, a few fan palms and tall dawn redwoods at wet sites, horsetails at the water's edge, leaf litter and moss on grey-brown silt. True-to-life muted colours, fine 35mm film grain, raw 35mm wildlife documentary realism, deep focus, deep depth of field (f/8 aperture), entire frame sharp from foreground to distant horizon. Real amateur footage filmed by one person who is physically present.",
+    "setting": "Hell Creek river floodplain, Montana, 66 million years ago, spring, on the day of the Chicxulub impact. Location: the creek exactly as in the Hell Creek Bank reference: a slow silty brown creek about 15 m wide flowing from left to right; on the near side a bar of grey gravel and buff sand with driftwood; on the far side a near-vertical 2 m bank of layered grey-brown silt and olive-grey clay with roots hanging from its top and one dark, dry, low hollow about 1.5 m wide just above the waterline; horsetails at the water's edge; a spring broadleaf woodland edge with a few fan palms and a tall dawn redwood behind the bank. Light: low raking early-morning sunlight from behind the subject, warm side light skimming the grey-brown mud and catching the edges of leaves and skin, thin haze over the river, deep soft shadows, natural documentary exposure. Natural sun and sky only, as on a real field day at about 55 degrees north in spring; organic micro-shadows under leaves and bodies; no artificial fill light.",
+    "characters": [
+      {
+        "name": "the Edmontosaurus carcass",
+        "visual_lock": "Matches the Edmontosaurus Carcass reference: a half-eaten 10 m duck-billed carcass sunken into the silt, ribs torn open, flies.",
+        "state": ""
+      }
+    ],
+    "in_place": "Everything is already in place from the very first frame: the carcass already lying across the middle of the frame about 15 m away, sunk into the silt with a ridge of pushed-up mud around it; clouds of flies; the creek at the left edge. Every person, animal and object stays where it is placed unless the timeline moves it; nothing appears suddenly, nothing vanishes.",
+    "shot": "The half-eaten Edmontosaurus carcass lies across the middle of the frame on the grey-brown silt bar about 15 m away, sunk into the mud, ribs open, flies circling.",
+    "timeline_action": {
+      "0-3s": "The view walks slowly toward the carcass; flies circle the open rib cage.",
+      "3-6s": "Closer: the torn pebbly hide, dark meat on yellowed ribs and the ridge of pushed-up mud become clear.",
+      "6-8s": "The view stops about 6 m from the carcass and holds still."
+    },
+    "speech": {
+      "speaker": "Nora",
+      "delivery": "From the very first frame at second 0, Nora begins speaking immediately. Low, flat and unsettled; a small pause before 'Left, or stepped away.' Nora's voice (Laomedeia): upbeat, mid-high, energetic conversational female voice, fast confident vlog delivery with dry humor; rises into real cracking screams in danger; drops to a fast whisper when hiding. She is the viewer: her voice comes from behind the view; her face never appears.",
+      "dialogue": [
+        {
+          "t": "0-3s",
+          "speaker": "Nora",
+          "line": "Okay, that's a body. A big one."
+        },
+        {
+          "t": "3-6s",
+          "speaker": "Nora",
+          "line": "Something ate half of it last night and left."
+        },
+        {
+          "t": "6-8s",
+          "speaker": "Nora",
+          "line": "Left, or stepped away."
+        }
+      ]
+    },
+    "dramatic_craft": {
+      "beat": "Read the scene like a detective.",
+      "value_turn": "+ curiosity / - unease.",
+      "subtext": "Whatever ate this may still be near.",
+      "prop_and_detail": "The carcass is the first proof of something far bigger than her."
+    },
+    "audio": "Nora's voice; a dense buzz of flies growing louder; footsteps on gravel then soft silt; slow creek water lapping, a frog chorus, distant bird calls.",
+    "physics": "Walking pace about 0.5 m/s with a gentle step bounce; the carcass is heavy and motionless; only flies move.",
+    "negative_constraints": [
+      "The camera viewpoint and her gripping arm are completely outside the visible frame and never seen.",
+      "No subtitles, captions, labels, icons or text of any kind appear anywhere in the frame.",
+      "The image is clean footage only: no interface, no recording indicator, no battery icon, no zoom label, no names, no text or symbols.",
+      "Only Nora speaks, in English; the animals make only animal sounds, never words.",
+      "Deep focus: strictly NO shallow depth of field, strictly NO bokeh, no blurred background.",
+      "Dialogue word count strictly 20 words, exactly as written in script.md."
+    ],
+    "start_frame": {
+      "type": "GENERATE_IMAGE",
+      "source_media_id": null,
+      "image_prompt": "Single still photograph, frame 0 of this shot, before any movement. Raw handheld natural-history field footage, Hell Creek floodplain in spring: small broadleaf trees with sycamore-, magnolia- and laurel-like leaves, a few fan palms and tall dawn redwoods at wet sites, horsetails at the water's edge, leaf litter and moss on grey-brown silt. True-to-life muted colours, fine 35mm film grain, raw 35mm wildlife documentary realism, deep focus, deep depth of field (f/8 aperture), entire frame sharp from foreground to distant horizon. Real amateur footage filmed by one person who is physically present. Setting: Hell Creek river floodplain, Montana, 66 million years ago, spring, on the day of the Chicxulub impact. Location: the creek exactly as in the Hell Creek Bank reference: a slow silty brown creek about 15 m wide flowing from left to right; on the near side a bar of grey gravel and buff sand with driftwood; on the far side a near-vertical 2 m bank of layered grey-brown silt and olive-grey clay with roots hanging from its top and one dark, dry, low hollow about 1.5 m wide just above the waterline; horsetails at the water's edge; a spring broadleaf woodland edge with a few fan palms and a tall dawn redwood behind the bank. Light: low raking early-morning sunlight from behind the subject, warm side light skimming the grey-brown mud and catching the edges of leaves and skin, thin haze over the river, deep soft shadows, natural documentary exposure. Natural sun and sky only, as on a real field day at about 55 degrees north in spring; organic micro-shadows under leaves and bodies; no artificial fill light. Composition (wide shot): The half-eaten Edmontosaurus carcass lies across the middle of the frame on the grey-brown silt bar about 15 m away, sunk into the mud, ribs open, flies circling. Already in place: the carcass already lying across the middle of the frame about 15 m away, sunk into the silt with a ridge of pushed-up mud around it; clouds of flies; the creek at the left edge. Matches the Edmontosaurus Carcass reference: a half-eaten 10 m duck-billed carcass sunken into the silt, ribs torn open, flies. Nothing that records the scene is visible. No subtitles, captions, labels, icons or text of any kind appear anywhere in the frame."
+    }
+  },
+  {
+    "clip_id": "A1-04",
+    "scene_name": "Hand inside the bite mark",
+    "duration": 8,
+    "aspect_ratio": "16:9",
+    "refs": [
+      "Nora",
+      "Nora Body",
+      "Nora Hand",
+      "Edmontosaurus Carcass",
+      "Hell Creek Bank"
+    ],
+    "camera": {
+      "viewpoint": "First-person view through Nora's own eyes. Close, looking straight down at the carcass pelvis about 40 cm away.",
+      "shot_size": "extreme close-up",
+      "description": "All recording gear and her gripping arm are completely outside the visible frame and never seen. The shot never switches to a third-person view; Nora's face never appears."
+    },
+    "style": "Raw handheld natural-history field footage, Hell Creek floodplain in spring: small broadleaf trees with sycamore-, magnolia- and laurel-like leaves, a few fan palms and tall dawn redwoods at wet sites, horsetails at the water's edge, leaf litter and moss on grey-brown silt. True-to-life muted colours, fine 35mm film grain, raw 35mm wildlife documentary realism, deep focus, deep depth of field (f/8 aperture), entire frame sharp from foreground to distant horizon. Real amateur footage filmed by one person who is physically present.",
+    "setting": "Hell Creek river floodplain, Montana, 66 million years ago, spring, on the day of the Chicxulub impact. Location: the creek exactly as in the Hell Creek Bank reference: a slow silty brown creek about 15 m wide flowing from left to right; on the near side a bar of grey gravel and buff sand with driftwood; on the far side a near-vertical 2 m bank of layered grey-brown silt and olive-grey clay with roots hanging from its top and one dark, dry, low hollow about 1.5 m wide just above the waterline; horsetails at the water's edge; a spring broadleaf woodland edge with a few fan palms and a tall dawn redwood behind the bank. Light: low raking early-morning sunlight from behind the subject, warm side light skimming the grey-brown mud and catching the edges of leaves and skin, thin haze over the river, deep soft shadows, natural documentary exposure. Natural sun and sky only, as on a real field day at about 55 degrees north in spring; organic micro-shadows under leaves and bodies; no artificial fill light.",
+    "characters": [
+      {
+        "name": "Nora (hands only)",
+        "visual_lock": "Only Nora's hands, forearms and boots appear, matching the Nora Hand reference sheet: slender adult female hands with long fingers, short clean unpainted nails, light natural skin tone, no rings, no bracelets, no watch; her sleeves, trousers and boots match the Nora Body reference sheet. Her face never appears.",
+        "state": "Her hair and clothes are still soaking wet from the creek. The turtle-shell flask is not on her yet: nothing hangs at her left hip."
+      },
+      {
+        "name": "the Edmontosaurus carcass",
+        "visual_lock": "Matches the Edmontosaurus Carcass reference: a half-eaten 10 m duck-billed carcass sunken into the silt, ribs torn open, flies.",
+        "state": ""
+      }
+    ],
+    "in_place": "Everything is already in place from the very first frame: the carcass pelvis with exactly one deep U-shaped scalloped bite gouge in the centre; flies on the meat; Nora's left hand is just below the bottom edge. Every person, animal and object stays where it is placed unless the timeline moves it; nothing appears suddenly, nothing vanishes.",
+    "shot": "A deep U-shaped bite gouge as wide as a hand fills the centre of the frame in the yellowed pelvis bone, crushed marrow and dried blood inside.",
+    "timeline_action": {
+      "0-3s": "Nora's left hand enters from the bottom edge, palm down, fingers spread.",
+      "3-6s": "She lays it flat inside the gouge: the whole hand fits inside one tooth mark with room to spare; a fly lifts off.",
+      "6-8s": "The hand stays still inside the gouge, fingertips pressing lightly into the edge."
+    },
+    "speech": {
+      "speaker": "Nora",
+      "delivery": "From the very first frame at second 0, Nora begins speaking immediately. Hushed and awed; dark dry humor on 'I'm standing in its kitchen.' Nora's voice (Laomedeia): upbeat, mid-high, energetic conversational female voice, fast confident vlog delivery with dry humor; rises into real cracking screams in danger; drops to a fast whisper when hiding. She is the viewer: her voice comes from behind the view; her face never appears.",
+      "dialogue": [
+        {
+          "t": "0-3s",
+          "speaker": "Nora",
+          "line": "Look at the size of that bite."
+        },
+        {
+          "t": "3-6s",
+          "speaker": "Nora",
+          "line": "My whole hand fits in one tooth mark."
+        },
+        {
+          "t": "6-8s",
+          "speaker": "Nora",
+          "line": "I'm standing in its kitchen."
+        }
+      ]
+    },
+    "dramatic_craft": {
+      "beat": "Measure the predator without naming it.",
+      "value_turn": "+ fascination / - fear.",
+      "subtext": "The T. rex is planted by image only.",
+      "prop_and_detail": "Hand against tooth mark: the scale of the enemy."
+    },
+    "audio": "Nora's voice close and quiet; flies buzzing near; a soft wet touch of skin on bone.",
+    "physics": "The hand moves slowly, about 10 cm/s; the bone does not move; the gouge edge is hard and rough.",
+    "negative_constraints": [
+      "The camera viewpoint and her gripping arm are completely outside the visible frame and never seen.",
+      "No subtitles, captions, labels, icons or text of any kind appear anywhere in the frame.",
+      "The image is clean footage only: no interface, no recording indicator, no battery icon, no zoom label, no names, no text or symbols.",
+      "Only Nora speaks, in English; the animals make only animal sounds, never words.",
+      "Deep focus: strictly NO shallow depth of field, strictly NO bokeh, no blurred background.",
+      "Dialogue word count strictly 20 words, exactly as written in script.md.",
+      "HAND LOCK: strictly NO male hands, NO hairy knuckles, NO rings, NO watch, NO painted nails, NO extra or fused fingers."
+    ],
+    "start_frame": {
+      "type": "GENERATE_IMAGE",
+      "source_media_id": null,
+      "image_prompt": "Single still photograph, frame 0 of this shot, before any movement. Raw handheld natural-history field footage, Hell Creek floodplain in spring: small broadleaf trees with sycamore-, magnolia- and laurel-like leaves, a few fan palms and tall dawn redwoods at wet sites, horsetails at the water's edge, leaf litter and moss on grey-brown silt. True-to-life muted colours, fine 35mm film grain, raw 35mm wildlife documentary realism, deep focus, deep depth of field (f/8 aperture), entire frame sharp from foreground to distant horizon. Real amateur footage filmed by one person who is physically present. Setting: Hell Creek river floodplain, Montana, 66 million years ago, spring, on the day of the Chicxulub impact. Location: the creek exactly as in the Hell Creek Bank reference: a slow silty brown creek about 15 m wide flowing from left to right; on the near side a bar of grey gravel and buff sand with driftwood; on the far side a near-vertical 2 m bank of layered grey-brown silt and olive-grey clay with roots hanging from its top and one dark, dry, low hollow about 1.5 m wide just above the waterline; horsetails at the water's edge; a spring broadleaf woodland edge with a few fan palms and a tall dawn redwood behind the bank. Light: low raking early-morning sunlight from behind the subject, warm side light skimming the grey-brown mud and catching the edges of leaves and skin, thin haze over the river, deep soft shadows, natural documentary exposure. Natural sun and sky only, as on a real field day at about 55 degrees north in spring; organic micro-shadows under leaves and bodies; no artificial fill light. Composition (extreme close-up): A deep U-shaped bite gouge as wide as a hand fills the centre of the frame in the yellowed pelvis bone, crushed marrow and dried blood inside. Already in place: the carcass pelvis with exactly one deep U-shaped scalloped bite gouge in the centre; flies on the meat; Nora's left hand is just below the bottom edge. Only Nora's hands, forearms and boots appear, matching the Nora Hand reference sheet: slender adult female hands with long fingers, short clean unpainted nails, light natural skin tone, no rings, no bracelets, no watch; her sleeves, trousers and boots match the Nora Body reference sheet. Her face never appears. Matches the Edmontosaurus Carcass reference: a half-eaten 10 m duck-billed carcass sunken into the silt, ribs torn open, flies. Nothing that records the scene is visible. No subtitles, captions, labels, icons or text of any kind appear anywhere in the frame."
+    }
+  },
+  {
+    "clip_id": "A1-05",
+    "scene_name": "Why today (the misbelief)",
+    "duration": 8,
+    "aspect_ratio": "16:9",
+    "refs": [
+      "Nora",
+      "Nora Body",
+      "Edmontosaurus Carcass",
+      "Hell Creek Bank"
+    ],
+    "camera": {
+      "viewpoint": "Self-filmed vlog view: the lens is held in Nora's right hand at chest height, tilted very slightly up toward her face. She stands upright on the silt bar.",
+      "shot_size": "medium shot",
+      "description": "The camera viewpoint and her gripping arm are completely outside the visible frame and never seen. She never reaches toward, touches, covers, taps or points at the lens. Only her left hand is free; it is empty unless the timeline says otherwise. Pure front-facing self-filmed view; the shot never switches to a third-person view."
+    },
+    "style": "Raw handheld natural-history field footage, Hell Creek floodplain in spring: small broadleaf trees with sycamore-, magnolia- and laurel-like leaves, a few fan palms and tall dawn redwoods at wet sites, horsetails at the water's edge, leaf litter and moss on grey-brown silt. True-to-life muted colours, fine 35mm film grain, raw 35mm wildlife documentary realism, deep focus, deep depth of field (f/8 aperture), entire frame sharp from foreground to distant horizon. Real amateur footage filmed by one person who is physically present.",
+    "setting": "Hell Creek river floodplain, Montana, 66 million years ago, spring, on the day of the Chicxulub impact. Location: the creek exactly as in the Hell Creek Bank reference: a slow silty brown creek about 15 m wide flowing from left to right; on the near side a bar of grey gravel and buff sand with driftwood; on the far side a near-vertical 2 m bank of layered grey-brown silt and olive-grey clay with roots hanging from its top and one dark, dry, low hollow about 1.5 m wide just above the waterline; horsetails at the water's edge; a spring broadleaf woodland edge with a few fan palms and a tall dawn redwood behind the bank. Light: low raking early-morning sunlight from behind the subject, warm side light skimming the grey-brown mud and catching the edges of leaves and skin, thin haze over the river, deep soft shadows, natural documentary exposure. Natural sun and sky only, as on a real field day at about 55 degrees north in spring; organic micro-shadows under leaves and bodies; no artificial fill light.",
+    "characters": [
+      {
+        "name": "Nora",
+        "visual_lock": "Nora's face is an exact 1:1 identical match to the attached Nora reference image. Perfectly preserve her exact facial likeness from the reference photo without changes. Nora is a young 22-23-year-old woman with a youthful soft feminine heart-shaped face, delicate rounded chin, soft rounded youthful cheeks, petite straight nose and distinctively FULL PLUMP PILLOWY LIPS with a defined Cupid's bow and pouty lower lip; hazel-green eyes; honey-blonde hair in a high wavy ponytail with wispy curtain bangs framing her forehead (strictly NO red hair, NO auburn hair, NO messy bun, NO freckles). Authentic unretouched outdoor skin texture, fine pores, natural perspiration sheen, light dirt smudges, natural wind-blown stray hair strands, zero makeup. She wears no jewelry: no earrings, no necklace, no rings. STRICTLY FORBIDDEN: strictly NO square jaw, NO long rectangular face, NO thin lips, NO hollow cheeks, NO aged appearance (must look 22-23), NO facial distortion, NO face drift. Her honey-blonde ponytail is tied high at the crown of her head, never low at the nape; the wispy curtain bangs stay over the edges of her forehead and frame both cheeks. [ID-LOCK] Nora keeps her face and hair from the Nora face sheet, and her build and clothing from the Nora Body sheet (which shows her full body dressed in this field outfit). Her face, hair colour, hairline, eye colour and body proportions are identical in every frame and never drift. BODY LOCK: Nora's build and proportions match the Nora Body reference sheet exactly: a tall young woman (178 cm) with natural, normal proportions. Her body shape never changes from frame to frame. OUTFIT LOCK: Nora wears the exact field outfit shown in the Nora Body reference sheet (NO fur, NO hood, NO shearling collar, NO cloak, NO modern logo, NO outfit variations). From the very first frame to the last, Nora is fully dressed in the complete outfit. No part of the outfit appears, disappears or changes. The only exception is the turtle-shell flask at her left hip: whether it is there, tied on, or gone follows the state sentence and the timeline of this clip, not the Body sheet.",
+        "state": "Her hair and clothes are still soaking wet from the creek. The turtle-shell flask is not on her yet: nothing hangs at her left hip."
+      },
+      {
+        "name": "the Edmontosaurus carcass",
+        "visual_lock": "Matches the Edmontosaurus Carcass reference: a half-eaten 10 m duck-billed carcass sunken into the silt, ribs torn open, flies.",
+        "state": ""
+      }
+    ],
+    "in_place": "Everything is already in place from the very first frame: Nora standing; the carcass in the background left; the creek in the background right; an ordinary calm morning sky. Every person, animal and object stays where it is placed unless the timeline moves it; nothing appears suddenly, nothing vanishes.",
+    "shot": "Nora standing, framed waist-up, centre; the carcass on the silt bar in the background left, the creek in the background right.",
+    "timeline_action": {
+      "0-3s": "Nora speaks calmly and steadily, almost proud, looking into the lens.",
+      "3-6s": "She glances over her right shoulder toward the south-south-east horizon, where the sky is completely ordinary and calm, then looks back.",
+      "6-8s": "She gives a small confident smile into the lens."
+    },
+    "speech": {
+      "speaker": "Nora",
+      "delivery": "From the very first frame at second 0, Nora begins speaking immediately. Calm, confident, a little smug; lower on 'Twelve hours from now'; light and easy on 'I'm just here to watch.' Nora's voice (Laomedeia): upbeat, mid-high, energetic conversational female voice, fast confident vlog delivery with dry humor; rises into real cracking screams in danger; drops to a fast whisper when hiding.",
+      "dialogue": [
+        {
+          "t": "0-3s",
+          "speaker": "Nora",
+          "line": "I picked today on purpose."
+        },
+        {
+          "t": "3-6s",
+          "speaker": "Nora",
+          "line": "Twelve hours from now, the sky over there catches fire."
+        },
+        {
+          "t": "6-8s",
+          "speaker": "Nora",
+          "line": "I'm just here to watch."
+        }
+      ]
+    },
+    "dramatic_craft": {
+      "beat": "Set the clock and state the misbelief.",
+      "value_turn": "+ confidence.",
+      "subtext": "She believes knowing equals being safe.",
+      "prop_and_detail": "The glance south-south-east plants the direction of the impact."
+    },
+    "audio": "Nora's voice; distant flies at the carcass; slow creek water lapping, a frog chorus, distant bird calls.",
+    "physics": "She stands still; only her head turns, about 1 second each way.",
+    "negative_constraints": [
+      "The camera viewpoint and her gripping arm are completely outside the visible frame and never seen.",
+      "No subtitles, captions, labels, icons or text of any kind appear anywhere in the frame.",
+      "The image is clean footage only: no interface, no recording indicator, no battery icon, no zoom label, no names, no text or symbols.",
+      "Only Nora speaks, in English; the animals make only animal sounds, never words.",
+      "Deep focus: strictly NO shallow depth of field, strictly NO bokeh, no blurred background.",
+      "Dialogue word count strictly 20 words, exactly as written in script.md.",
+      "FACE LOCK: exact 1:1 match to the attached Nora face reference; strictly NO square jaw, NO thin lips, NO freckles, NO red or auburn hair, NO messy bun, NO jewelry, NO face drift.",
+      "BODY and OUTFIT LOCK: build, proportions and outfit exactly as the Nora Body reference sheet; NO fur, NO hood, NO cloak, NO outfit variations."
+    ],
+    "start_frame": {
+      "type": "EDIT_IMAGE",
+      "source_media_id": "<Nora face media_id>",
+      "image_prompt": "Single still photograph, frame 0 of this shot, before any movement. Raw handheld natural-history field footage, Hell Creek floodplain in spring: small broadleaf trees with sycamore-, magnolia- and laurel-like leaves, a few fan palms and tall dawn redwoods at wet sites, horsetails at the water's edge, leaf litter and moss on grey-brown silt. True-to-life muted colours, fine 35mm film grain, raw 35mm wildlife documentary realism, deep focus, deep depth of field (f/8 aperture), entire frame sharp from foreground to distant horizon. Real amateur footage filmed by one person who is physically present. Setting: Hell Creek river floodplain, Montana, 66 million years ago, spring, on the day of the Chicxulub impact. Location: the creek exactly as in the Hell Creek Bank reference: a slow silty brown creek about 15 m wide flowing from left to right; on the near side a bar of grey gravel and buff sand with driftwood; on the far side a near-vertical 2 m bank of layered grey-brown silt and olive-grey clay with roots hanging from its top and one dark, dry, low hollow about 1.5 m wide just above the waterline; horsetails at the water's edge; a spring broadleaf woodland edge with a few fan palms and a tall dawn redwood behind the bank. Light: low raking early-morning sunlight from behind the subject, warm side light skimming the grey-brown mud and catching the edges of leaves and skin, thin haze over the river, deep soft shadows, natural documentary exposure. Natural sun and sky only, as on a real field day at about 55 degrees north in spring; organic micro-shadows under leaves and bodies; no artificial fill light. Composition (medium shot): Nora standing, framed waist-up, centre; the carcass on the silt bar in the background left, the creek in the background right. Already in place: Nora standing; the carcass in the background left; the creek in the background right; an ordinary calm morning sky. Nora's face is an exact 1:1 identical match to the attached Nora reference image. Perfectly preserve her exact facial likeness from the reference photo without changes. Nora is a young 22-23-year-old woman with a youthful soft feminine heart-shaped face, delicate rounded chin, soft rounded youthful cheeks, petite straight nose and distinctively FULL PLUMP PILLOWY LIPS with a defined Cupid's bow and pouty lower lip; hazel-green eyes; honey-blonde hair in a high wavy ponytail with wispy curtain bangs framing her forehead (strictly NO red hair, NO auburn hair, NO messy bun, NO freckles). Authentic unretouched outdoor skin texture, fine pores, natural perspiration sheen, light dirt smudges, natural wind-blown stray hair strands, zero makeup. She wears no jewelry: no earrings, no necklace, no rings. STRICTLY FORBIDDEN: strictly NO square jaw, NO long rectangular face, NO thin lips, NO hollow cheeks, NO aged appearance (must look 22-23), NO facial distortion, NO face drift. Her honey-blonde ponytail is tied high at the crown of her head, never low at the nape; the wispy curtain bangs stay over the edges of her forehead and frame both cheeks. BODY LOCK: Nora's build and proportions match the Nora Body reference sheet exactly: a tall young woman (178 cm) with natural, normal proportions. Her body shape never changes from frame to frame. OUTFIT LOCK: Nora wears the exact field outfit shown in the Nora Body reference sheet (NO fur, NO hood, NO shearling collar, NO cloak, NO modern logo, NO outfit variations). From the very first frame to the last, Nora is fully dressed in the complete outfit. No part of the outfit appears, disappears or changes. The only exception is the turtle-shell flask at her left hip: whether it is there, tied on, or gone follows the state sentence and the timeline of this clip, not the Body sheet. Her hair and clothes are still soaking wet from the creek. The turtle-shell flask is not on her yet: nothing hangs at her left hip. Matches the Edmontosaurus Carcass reference: a half-eaten 10 m duck-billed carcass sunken into the silt, ribs torn open, flies. The camera viewpoint and her gripping arm are completely outside the visible frame and never seen. Self-filmed vlog framing. No subtitles, captions, labels, icons or text of any kind appear anywhere in the frame."
+    }
+  },
+  {
+    "clip_id": "A1-06",
+    "scene_name": "Turtle shell and the dry hollow",
+    "duration": 8,
+    "aspect_ratio": "16:9",
+    "refs": [
+      "Nora",
+      "Nora Body",
+      "Nora Hand",
+      "Borealosuchus",
+      "Hell Creek Bank"
+    ],
+    "camera": {
+      "viewpoint": "First-person view through Nora's own eyes. At chest height, first tilted down at the gravel, then rising to the far bank.",
+      "shot_size": "medium shot",
+      "description": "All recording gear and her gripping arm are completely outside the visible frame and never seen. The shot never switches to a third-person view; Nora's face never appears."
+    },
+    "style": "Raw handheld natural-history field footage, Hell Creek floodplain in spring: small broadleaf trees with sycamore-, magnolia- and laurel-like leaves, a few fan palms and tall dawn redwoods at wet sites, horsetails at the water's edge, leaf litter and moss on grey-brown silt. True-to-life muted colours, fine 35mm film grain, raw 35mm wildlife documentary realism, deep focus, deep depth of field (f/8 aperture), entire frame sharp from foreground to distant horizon. Real amateur footage filmed by one person who is physically present.",
+    "setting": "Hell Creek river floodplain, Montana, 66 million years ago, spring, on the day of the Chicxulub impact. Location: the creek exactly as in the Hell Creek Bank reference: a slow silty brown creek about 15 m wide flowing from left to right; on the near side a bar of grey gravel and buff sand with driftwood; on the far side a near-vertical 2 m bank of layered grey-brown silt and olive-grey clay with roots hanging from its top and one dark, dry, low hollow about 1.5 m wide just above the waterline; horsetails at the water's edge; a spring broadleaf woodland edge with a few fan palms and a tall dawn redwood behind the bank. Light: low raking early-morning sunlight from behind the subject, warm side light skimming the grey-brown mud and catching the edges of leaves and skin, thin haze over the river, deep soft shadows, natural documentary exposure. Natural sun and sky only, as on a real field day at about 55 degrees north in spring; organic micro-shadows under leaves and bodies; no artificial fill light.",
+    "characters": [
+      {
+        "name": "Nora (hands only)",
+        "visual_lock": "Only Nora's hands, forearms and boots appear, matching the Nora Hand reference sheet: slender adult female hands with long fingers, short clean unpainted nails, light natural skin tone, no rings, no bracelets, no watch; her sleeves, trousers and boots match the Nora Body reference sheet. Her face never appears.",
+        "state": "Her hair and clothes are still soaking wet from the creek. The turtle-shell flask is not on her yet: nothing hangs at her left hip."
+      },
+      {
+        "name": "the Borealosuchus crocodiles",
+        "visual_lock": "Match the Borealosuchus reference: crocodylians with long moderately narrow snouts; in the water only their rough ridged scute backs, eyes and snout tips show. Living crocodylian: rough dark olive-grey armoured scutes, wet silt on the flanks, thin real highlights only where water sits; clean dry nostrils at the snout tip, no vapour.",
+        "state": "Exactly one ridged back lying still in the water just below the hollow. Even when standing still it keeps continuous living micro-motion: ribs rising and falling with each breath, eyes blinking, skin twitching at flies, small weight shifts; it never freezes like a statue."
+      }
+    ],
+    "in_place": "Everything is already in place from the very first frame: exactly one empty hollow turtle shell, about 22 cm, the size of a dinner plate, lying on the gravel; the creek edge; across the creek the far 2 m silt bank with one dark dry hollow just above the waterline; exactly one ridged Borealosuchus back lying in the water directly below the hollow. Every person, animal and object stays where it is placed unless the timeline moves it; nothing appears suddenly, nothing vanishes.",
+    "shot": "An empty turtle shell lies among wet grey gravel at the bottom centre; the creek edge just beyond; the far bank already visible at the top of the frame.",
+    "timeline_action": {
+      "0-3s": "Both of Nora's hands enter from the bottom edge, pick up the turtle shell and dip it into the creek edge, filling it with brown water.",
+      "3-6s": "Holding the filled shell low, the view rises to the far bank: the dark dry hollow under the overhang.",
+      "6-8s": "The view holds on the hollow and on the single ridged crocodile back lying in the water just below it."
+    },
+    "speech": {
+      "speaker": "Nora",
+      "delivery": "From the very first frame at second 0, Nora begins speaking immediately. Quiet and practical; deadpan on 'So, no.' Nora's voice (Laomedeia): upbeat, mid-high, energetic conversational female voice, fast confident vlog delivery with dry humor; rises into real cracking screams in danger; drops to a fast whisper when hiding. She is the viewer: her voice comes from behind the view; her face never appears.",
+      "dialogue": [
+        {
+          "t": "0-3s",
+          "speaker": "Nora",
+          "line": "Turtle shell, size of a dinner plate."
+        },
+        {
+          "t": "3-6s",
+          "speaker": "Nora",
+          "line": "There's a dry hollow under that far bank."
+        },
+        {
+          "t": "6-8s",
+          "speaker": "Nora",
+          "line": "Crocodiles right below it. So, no."
+        }
+      ]
+    },
+    "dramatic_craft": {
+      "beat": "Find water and a shelter, then reject the shelter.",
+      "value_turn": "+ resources found / - shelter denied.",
+      "subtext": "She will need that hollow later.",
+      "prop_and_detail": "Turtle shell (breaks in A3-06) and the hollow (payoff in A4-16 and MASTER)."
+    },
+    "audio": "Nora's voice; gravel clatter; water gurgling into the shell; slow creek water lapping, a frog chorus, distant bird calls.",
+    "physics": "Water pours into the shell and adds weight; the hands lower slightly; the tilt up is slow, about 15 degrees per second.",
+    "negative_constraints": [
+      "The camera viewpoint and her gripping arm are completely outside the visible frame and never seen.",
+      "No subtitles, captions, labels, icons or text of any kind appear anywhere in the frame.",
+      "The image is clean footage only: no interface, no recording indicator, no battery icon, no zoom label, no names, no text or symbols.",
+      "Only Nora speaks, in English; the animals make only animal sounds, never words.",
+      "Deep focus: strictly NO shallow depth of field, strictly NO bokeh, no blurred background.",
+      "Dialogue word count strictly 21 words, exactly as written in script.md.",
+      "HAND LOCK: strictly NO male hands, NO hairy knuckles, NO rings, NO watch, NO painted nails, NO extra or fused fingers.",
+      "ANTI-SMOKE LOCK: strictly NO smoke, strictly NO breath vapour, strictly NO steam, strictly NO white plumes from any nostril; clean dry nostrils breathing transparent clean air.",
+      "ANTI-CGI LOCK: strictly NOT a 3D digital render, NOT a plastic toy model, NOT a museum resin statue, NO specular plastic sheen, NO artificial god rays, NO sunlight streaming beams, NO studio rim light.",
+      "Each animal is a separate body; animals never overlap, merge, duplicate or vanish."
+    ],
+    "start_frame": {
+      "type": "GENERATE_IMAGE",
+      "source_media_id": null,
+      "image_prompt": "Single still photograph, frame 0 of this shot, before any movement. Raw handheld natural-history field footage, Hell Creek floodplain in spring: small broadleaf trees with sycamore-, magnolia- and laurel-like leaves, a few fan palms and tall dawn redwoods at wet sites, horsetails at the water's edge, leaf litter and moss on grey-brown silt. True-to-life muted colours, fine 35mm film grain, raw 35mm wildlife documentary realism, deep focus, deep depth of field (f/8 aperture), entire frame sharp from foreground to distant horizon. Real amateur footage filmed by one person who is physically present. Setting: Hell Creek river floodplain, Montana, 66 million years ago, spring, on the day of the Chicxulub impact. Location: the creek exactly as in the Hell Creek Bank reference: a slow silty brown creek about 15 m wide flowing from left to right; on the near side a bar of grey gravel and buff sand with driftwood; on the far side a near-vertical 2 m bank of layered grey-brown silt and olive-grey clay with roots hanging from its top and one dark, dry, low hollow about 1.5 m wide just above the waterline; horsetails at the water's edge; a spring broadleaf woodland edge with a few fan palms and a tall dawn redwood behind the bank. Light: low raking early-morning sunlight from behind the subject, warm side light skimming the grey-brown mud and catching the edges of leaves and skin, thin haze over the river, deep soft shadows, natural documentary exposure. Natural sun and sky only, as on a real field day at about 55 degrees north in spring; organic micro-shadows under leaves and bodies; no artificial fill light. Composition (medium shot): An empty turtle shell lies among wet grey gravel at the bottom centre; the creek edge just beyond; the far bank already visible at the top of the frame. Already in place: exactly one empty hollow turtle shell, about 22 cm, the size of a dinner plate, lying on the gravel; the creek edge; across the creek the far 2 m silt bank with one dark dry hollow just above the waterline; exactly one ridged Borealosuchus back lying in the water directly below the hollow. Only Nora's hands, forearms and boots appear, matching the Nora Hand reference sheet: slender adult female hands with long fingers, short clean unpainted nails, light natural skin tone, no rings, no bracelets, no watch; her sleeves, trousers and boots match the Nora Body reference sheet. Her face never appears. Match the Borealosuchus reference: crocodylians with long moderately narrow snouts; in the water only their rough ridged scute backs, eyes and snout tips show. Living crocodylian: rough dark olive-grey armoured scutes, wet silt on the flanks, thin real highlights only where water sits; clean dry nostrils at the snout tip, no vapour. Nothing that records the scene is visible. No subtitles, captions, labels, icons or text of any kind appear anywhere in the frame."
+    }
+  },
+  {
+    "clip_id": "A1-07",
+    "scene_name": "Tying the flask",
+    "duration": 8,
+    "aspect_ratio": "16:9",
+    "refs": [
+      "Nora",
+      "Nora Body",
+      "Hell Creek Bank"
+    ],
+    "camera": {
+      "viewpoint": "Static footage from a fixed viewpoint resting on a driftwood log on the gravel bar at waist height, about 1.5 m from Nora. The frame does not move; nobody touches the viewpoint.",
+      "shot_size": "medium shot",
+      "description": "Nothing that records the scene is ever visible. Both of Nora's hands are free. The shot never switches angle."
+    },
+    "style": "Raw handheld natural-history field footage, Hell Creek floodplain in spring: small broadleaf trees with sycamore-, magnolia- and laurel-like leaves, a few fan palms and tall dawn redwoods at wet sites, horsetails at the water's edge, leaf litter and moss on grey-brown silt. True-to-life muted colours, fine 35mm film grain, raw 35mm wildlife documentary realism, deep focus, deep depth of field (f/8 aperture), entire frame sharp from foreground to distant horizon. Real amateur footage filmed by one person who is physically present.",
+    "setting": "Hell Creek river floodplain, Montana, 66 million years ago, spring, on the day of the Chicxulub impact. Location: the creek exactly as in the Hell Creek Bank reference: a slow silty brown creek about 15 m wide flowing from left to right; on the near side a bar of grey gravel and buff sand with driftwood; on the far side a near-vertical 2 m bank of layered grey-brown silt and olive-grey clay with roots hanging from its top and one dark, dry, low hollow about 1.5 m wide just above the waterline; horsetails at the water's edge; a spring broadleaf woodland edge with a few fan palms and a tall dawn redwood behind the bank. Light: low raking early-morning sunlight from behind the subject, warm side light skimming the grey-brown mud and catching the edges of leaves and skin, thin haze over the river, deep soft shadows, natural documentary exposure. Natural sun and sky only, as on a real field day at about 55 degrees north in spring; organic micro-shadows under leaves and bodies; no artificial fill light.",
+    "characters": [
+      {
+        "name": "Nora",
+        "visual_lock": "Nora's face is an exact 1:1 identical match to the attached Nora reference image. Perfectly preserve her exact facial likeness from the reference photo without changes. Nora is a young 22-23-year-old woman with a youthful soft feminine heart-shaped face, delicate rounded chin, soft rounded youthful cheeks, petite straight nose and distinctively FULL PLUMP PILLOWY LIPS with a defined Cupid's bow and pouty lower lip; hazel-green eyes; honey-blonde hair in a high wavy ponytail with wispy curtain bangs framing her forehead (strictly NO red hair, NO auburn hair, NO messy bun, NO freckles). Authentic unretouched outdoor skin texture, fine pores, natural perspiration sheen, light dirt smudges, natural wind-blown stray hair strands, zero makeup. She wears no jewelry: no earrings, no necklace, no rings. STRICTLY FORBIDDEN: strictly NO square jaw, NO long rectangular face, NO thin lips, NO hollow cheeks, NO aged appearance (must look 22-23), NO facial distortion, NO face drift. Her honey-blonde ponytail is tied high at the crown of her head, never low at the nape; the wispy curtain bangs stay over the edges of her forehead and frame both cheeks. [ID-LOCK] Nora keeps her face and hair from the Nora face sheet, and her build and clothing from the Nora Body sheet (which shows her full body dressed in this field outfit). Her face, hair colour, hairline, eye colour and body proportions are identical in every frame and never drift. BODY LOCK: Nora's build and proportions match the Nora Body reference sheet exactly: a tall young woman (178 cm) with natural, normal proportions. Her body shape never changes from frame to frame. OUTFIT LOCK: Nora wears the exact field outfit shown in the Nora Body reference sheet (NO fur, NO hood, NO shearling collar, NO cloak, NO modern logo, NO outfit variations). From the very first frame to the last, Nora is fully dressed in the complete outfit. No part of the outfit appears, disappears or changes. The only exception is the turtle-shell flask at her left hip: whether it is there, tied on, or gone follows the state sentence and the timeline of this clip, not the Body sheet.",
+        "state": "At second 0 the shell is in her hands, not yet at her hip. Her hair and clothes are still soaking wet from the creek. The turtle-shell flask hangs at her left hip on its twisted plant-fibre cord, exactly as on the Nora Body sheet."
+      }
+    ],
+    "in_place": "Everything is already in place from the very first frame: Nora holding exactly one water-filled turtle shell in both hands at waist level with a short twisted palm-fibre cord already threaded through two gaps in its rim; this is the only shell and it becomes the flask at her left hip. Every person, animal and object stays where it is placed unless the timeline moves it; nothing appears suddenly, nothing vanishes.",
+    "shot": "Nora stands framed from mid-thigh to head in the centre; the creek and the far bank behind her.",
+    "timeline_action": {
+      "0-3s": "Nora pulls the twisted palm-fibre cord through the two gaps in the shell rim with both hands.",
+      "3-6s": "She ties the cord to her belt at her LEFT hip with a double knot; the shell now hangs at her left hip.",
+      "6-8s": "She tugs the knot once; the shell swings slightly and settles at her left hip; she looks into the lens with a wry face."
+    },
+    "speech": {
+      "speaker": "Nora",
+      "delivery": "From the very first frame at second 0, Nora begins speaking immediately. Focused, half to herself; ominous joke on the last line. Nora's voice (Laomedeia): upbeat, mid-high, energetic conversational female voice, fast confident vlog delivery with dry humor; rises into real cracking screams in danger; drops to a fast whisper when hiding.",
+      "dialogue": [
+        {
+          "t": "0-3s",
+          "speaker": "Nora",
+          "line": "Palm fibre, twisted twice, through the gaps in the rim."
+        },
+        {
+          "t": "3-6s",
+          "speaker": "Nora",
+          "line": "If this knot fails today,"
+        },
+        {
+          "t": "6-8s",
+          "speaker": "Nora",
+          "line": "I'm drinking from the crocodile pool."
+        }
+      ]
+    },
+    "dramatic_craft": {
+      "beat": "Secure the water supply.",
+      "value_turn": "+ prepared.",
+      "subtext": "The knot will fail.",
+      "prop_and_detail": "The knot is the planted gun (A3-06b)."
+    },
+    "audio": "Nora's voice; fibre rasping through the shell gaps; the shell knocking softly against her belt; slow creek water lapping, a frog chorus, distant bird calls.",
+    "physics": "The filled shell weighs about 1 kg; it swings like a pendulum when released and settles in about 1 second.",
+    "negative_constraints": [
+      "The camera viewpoint and her gripping arm are completely outside the visible frame and never seen.",
+      "No subtitles, captions, labels, icons or text of any kind appear anywhere in the frame.",
+      "The image is clean footage only: no interface, no recording indicator, no battery icon, no zoom label, no names, no text or symbols.",
+      "Only Nora speaks, in English; the animals make only animal sounds, never words.",
+      "Deep focus: strictly NO shallow depth of field, strictly NO bokeh, no blurred background.",
+      "Dialogue word count strictly 21 words, exactly as written in script.md.",
+      "FACE LOCK: exact 1:1 match to the attached Nora face reference; strictly NO square jaw, NO thin lips, NO freckles, NO red or auburn hair, NO messy bun, NO jewelry, NO face drift.",
+      "BODY and OUTFIT LOCK: build, proportions and outfit exactly as the Nora Body reference sheet; NO fur, NO hood, NO cloak, NO outfit variations."
+    ],
+    "start_frame": {
+      "type": "EDIT_IMAGE",
+      "source_media_id": "<Nora face media_id>",
+      "image_prompt": "Single still photograph, frame 0 of this shot, before any movement. Raw handheld natural-history field footage, Hell Creek floodplain in spring: small broadleaf trees with sycamore-, magnolia- and laurel-like leaves, a few fan palms and tall dawn redwoods at wet sites, horsetails at the water's edge, leaf litter and moss on grey-brown silt. True-to-life muted colours, fine 35mm film grain, raw 35mm wildlife documentary realism, deep focus, deep depth of field (f/8 aperture), entire frame sharp from foreground to distant horizon. Real amateur footage filmed by one person who is physically present. Setting: Hell Creek river floodplain, Montana, 66 million years ago, spring, on the day of the Chicxulub impact. Location: the creek exactly as in the Hell Creek Bank reference: a slow silty brown creek about 15 m wide flowing from left to right; on the near side a bar of grey gravel and buff sand with driftwood; on the far side a near-vertical 2 m bank of layered grey-brown silt and olive-grey clay with roots hanging from its top and one dark, dry, low hollow about 1.5 m wide just above the waterline; horsetails at the water's edge; a spring broadleaf woodland edge with a few fan palms and a tall dawn redwood behind the bank. Light: low raking early-morning sunlight from behind the subject, warm side light skimming the grey-brown mud and catching the edges of leaves and skin, thin haze over the river, deep soft shadows, natural documentary exposure. Natural sun and sky only, as on a real field day at about 55 degrees north in spring; organic micro-shadows under leaves and bodies; no artificial fill light. Composition (medium shot): Nora stands framed from mid-thigh to head in the centre; the creek and the far bank behind her. Already in place: Nora holding exactly one water-filled turtle shell in both hands at waist level with a short twisted palm-fibre cord already threaded through two gaps in its rim; this is the only shell and it becomes the flask at her left hip. Nora's face is an exact 1:1 identical match to the attached Nora reference image. Perfectly preserve her exact facial likeness from the reference photo without changes. Nora is a young 22-23-year-old woman with a youthful soft feminine heart-shaped face, delicate rounded chin, soft rounded youthful cheeks, petite straight nose and distinctively FULL PLUMP PILLOWY LIPS with a defined Cupid's bow and pouty lower lip; hazel-green eyes; honey-blonde hair in a high wavy ponytail with wispy curtain bangs framing her forehead (strictly NO red hair, NO auburn hair, NO messy bun, NO freckles). Authentic unretouched outdoor skin texture, fine pores, natural perspiration sheen, light dirt smudges, natural wind-blown stray hair strands, zero makeup. She wears no jewelry: no earrings, no necklace, no rings. STRICTLY FORBIDDEN: strictly NO square jaw, NO long rectangular face, NO thin lips, NO hollow cheeks, NO aged appearance (must look 22-23), NO facial distortion, NO face drift. Her honey-blonde ponytail is tied high at the crown of her head, never low at the nape; the wispy curtain bangs stay over the edges of her forehead and frame both cheeks. BODY LOCK: Nora's build and proportions match the Nora Body reference sheet exactly: a tall young woman (178 cm) with natural, normal proportions. Her body shape never changes from frame to frame. OUTFIT LOCK: Nora wears the exact field outfit shown in the Nora Body reference sheet (NO fur, NO hood, NO shearling collar, NO cloak, NO modern logo, NO outfit variations). From the very first frame to the last, Nora is fully dressed in the complete outfit. No part of the outfit appears, disappears or changes. The only exception is the turtle-shell flask at her left hip: whether it is there, tied on, or gone follows the state sentence and the timeline of this clip, not the Body sheet. Her hair and clothes are still soaking wet from the creek. The turtle-shell flask hangs at her left hip on its twisted plant-fibre cord, exactly as on the Nora Body sheet. At second 0 the shell is in her hands, not yet at her hip. Nothing that records the scene is visible. No subtitles, captions, labels, icons or text of any kind appear anywhere in the frame."
+    }
+  },
+  {
+    "clip_id": "A1-08",
+    "scene_name": "The wall of forest and the corridor",
+    "duration": 8,
+    "aspect_ratio": "16:9",
+    "refs": [
+      "Hell Creek Game Corridor"
+    ],
+    "camera": {
+      "viewpoint": "First-person view through Nora's own eyes. At chest height, standing, panning slowly from left to right at about 10 degrees per second.",
+      "shot_size": "wide shot",
+      "description": "All recording gear and her gripping arm are completely outside the visible frame and never seen. The shot never switches to a third-person view; Nora's face never appears."
+    },
+    "style": "Raw handheld natural-history field footage, Hell Creek floodplain in spring: small broadleaf trees with sycamore-, magnolia- and laurel-like leaves, a few fan palms and tall dawn redwoods at wet sites, horsetails at the water's edge, leaf litter and moss on grey-brown silt. True-to-life muted colours, fine 35mm film grain, raw 35mm wildlife documentary realism, deep focus, deep depth of field (f/8 aperture), entire frame sharp from foreground to distant horizon. Real amateur footage filmed by one person who is physically present.",
+    "setting": "Hell Creek river floodplain, Montana, 66 million years ago, spring, on the day of the Chicxulub impact. Location: the game corridor exactly as in the Hell Creek Game Corridor reference: a wide, chaotic animal-trampled corridor of deeply churned grey-brown silt and olive-grey clay with massive rounded ceratopsian foot depressions holding cloudy water, cutting from a small clearing into a spring broadleaf woodland; one big moss-covered fallen log lies along the right side of the corridor; a shallow grey mud wallow in the clearing; low shrubs, vines, moss, leaf litter and a few fan palms. Light: low raking early-morning sunlight from behind the subject, warm side light skimming the grey-brown mud and catching the edges of leaves and skin, thin haze over the river, deep soft shadows, natural documentary exposure. Natural sun and sky only, as on a real field day at about 55 degrees north in spring; organic micro-shadows under leaves and bodies; no artificial fill light.",
+    "characters": [],
+    "in_place": "Everything is already in place from the very first frame: the woodland edge: thick shrubs, vines, snapped saplings, moss and leaf litter; at the right third the opening of the wide game corridor with rounded foot depressions holding cloudy water; one leafy branch in the near foreground at the left edge. Every person, animal and object stays where it is placed unless the timeline moves it; nothing appears suddenly, nothing vanishes.",
+    "shot": "A dense wall of spring broadleaf woodland edge fills the left two thirds; the opening of a wide animal-trampled corridor is at the right third.",
+    "timeline_action": {
+      "0-3s": "The view pans slowly left to right along the impenetrable thicket; the near leafy branch brushes across the left edge of the frame.",
+      "3-6s": "The pan reaches the corridor opening: churned grey-brown silt and rounded foot depressions with cloudy water.",
+      "6-8s": "The view stops and holds on the corridor leading into the trees."
+    },
+    "speech": {
+      "speaker": "Nora",
+      "delivery": "From the very first frame at second 0, Nora begins speaking immediately. Frustrated, then intrigued; drops low on 'Something big made it.' Nora's voice (Laomedeia): upbeat, mid-high, energetic conversational female voice, fast confident vlog delivery with dry humor; rises into real cracking screams in danger; drops to a fast whisper when hiding. She is the viewer: her voice comes from behind the view; her face never appears.",
+      "dialogue": [
+        {
+          "t": "0-3s",
+          "speaker": "Nora",
+          "line": "Forest is a solid wall, I can't see two metres in."
+        },
+        {
+          "t": "3-6s",
+          "speaker": "Nora",
+          "line": "But that's a path."
+        },
+        {
+          "t": "6-8s",
+          "speaker": "Nora",
+          "line": "Something big made it."
+        }
+      ]
+    },
+    "dramatic_craft": {
+      "beat": "Find a way in.",
+      "value_turn": "- blocked / + a path.",
+      "subtext": "The path belongs to something big.",
+      "prop_and_detail": "The corridor is the herd's road."
+    },
+    "audio": "Nora's voice; leaves rustling as the branch brushes; insects; birds in the canopy.",
+    "physics": "Smooth slow pan with tiny handheld tremor; the branch springs back after brushing the frame edge.",
+    "negative_constraints": [
+      "The camera viewpoint and her gripping arm are completely outside the visible frame and never seen.",
+      "No subtitles, captions, labels, icons or text of any kind appear anywhere in the frame.",
+      "The image is clean footage only: no interface, no recording indicator, no battery icon, no zoom label, no names, no text or symbols.",
+      "Only Nora speaks, in English; the animals make only animal sounds, never words.",
+      "Deep focus: strictly NO shallow depth of field, strictly NO bokeh, no blurred background.",
+      "Dialogue word count strictly 19 words, exactly as written in script.md."
+    ],
+    "start_frame": {
+      "type": "GENERATE_IMAGE",
+      "source_media_id": null,
+      "image_prompt": "Single still photograph, frame 0 of this shot, before any movement. Raw handheld natural-history field footage, Hell Creek floodplain in spring: small broadleaf trees with sycamore-, magnolia- and laurel-like leaves, a few fan palms and tall dawn redwoods at wet sites, horsetails at the water's edge, leaf litter and moss on grey-brown silt. True-to-life muted colours, fine 35mm film grain, raw 35mm wildlife documentary realism, deep focus, deep depth of field (f/8 aperture), entire frame sharp from foreground to distant horizon. Real amateur footage filmed by one person who is physically present. Setting: Hell Creek river floodplain, Montana, 66 million years ago, spring, on the day of the Chicxulub impact. Location: the game corridor exactly as in the Hell Creek Game Corridor reference: a wide, chaotic animal-trampled corridor of deeply churned grey-brown silt and olive-grey clay with massive rounded ceratopsian foot depressions holding cloudy water, cutting from a small clearing into a spring broadleaf woodland; one big moss-covered fallen log lies along the right side of the corridor; a shallow grey mud wallow in the clearing; low shrubs, vines, moss, leaf litter and a few fan palms. Light: low raking early-morning sunlight from behind the subject, warm side light skimming the grey-brown mud and catching the edges of leaves and skin, thin haze over the river, deep soft shadows, natural documentary exposure. Natural sun and sky only, as on a real field day at about 55 degrees north in spring; organic micro-shadows under leaves and bodies; no artificial fill light. Composition (wide shot): A dense wall of spring broadleaf woodland edge fills the left two thirds; the opening of a wide animal-trampled corridor is at the right third. Already in place: the woodland edge: thick shrubs, vines, snapped saplings, moss and leaf litter; at the right third the opening of the wide game corridor with rounded foot depressions holding cloudy water; one leafy branch in the near foreground at the left edge. Nothing that records the scene is visible. No subtitles, captions, labels, icons or text of any kind appear anywhere in the frame."
+    }
+  },
+  {
+    "clip_id": "A1-09",
+    "scene_name": "Fresh footprint",
+    "duration": 8,
+    "aspect_ratio": "16:9",
+    "refs": [
+      "Nora",
+      "Nora Body",
+      "Nora Hand",
+      "Hell Creek Game Corridor"
+    ],
+    "camera": {
+      "viewpoint": "First-person view through Nora's own eyes. Looking straight down at the silt.",
+      "shot_size": "extreme close-up",
+      "description": "All recording gear and her gripping arm are completely outside the visible frame and never seen. The shot never switches to a third-person view; Nora's face never appears."
+    },
+    "style": "Raw handheld natural-history field footage, Hell Creek floodplain in spring: small broadleaf trees with sycamore-, magnolia- and laurel-like leaves, a few fan palms and tall dawn redwoods at wet sites, horsetails at the water's edge, leaf litter and moss on grey-brown silt. True-to-life muted colours, fine 35mm film grain, raw 35mm wildlife documentary realism, deep focus, deep depth of field (f/8 aperture), entire frame sharp from foreground to distant horizon. Real amateur footage filmed by one person who is physically present.",
+    "setting": "Hell Creek river floodplain, Montana, 66 million years ago, spring, on the day of the Chicxulub impact. Location: the game corridor exactly as in the Hell Creek Game Corridor reference: a wide, chaotic animal-trampled corridor of deeply churned grey-brown silt and olive-grey clay with massive rounded ceratopsian foot depressions holding cloudy water, cutting from a small clearing into a spring broadleaf woodland; one big moss-covered fallen log lies along the right side of the corridor; a shallow grey mud wallow in the clearing; low shrubs, vines, moss, leaf litter and a few fan palms. Light: low raking early-morning sunlight from behind the subject, warm side light skimming the grey-brown mud and catching the edges of leaves and skin, thin haze over the river, deep soft shadows, natural documentary exposure. Natural sun and sky only, as on a real field day at about 55 degrees north in spring; organic micro-shadows under leaves and bodies; no artificial fill light.",
+    "characters": [
+      {
+        "name": "Nora (hands only)",
+        "visual_lock": "Only Nora's hands, forearms and boots appear, matching the Nora Hand reference sheet: slender adult female hands with long fingers, short clean unpainted nails, light natural skin tone, no rings, no bracelets, no watch; her sleeves, trousers and boots match the Nora Body reference sheet. Her face never appears.",
+        "state": "Her hair and clothes are still soaking wet from the creek. The turtle-shell flask hangs at her left hip on its twisted plant-fibre cord, exactly as on the Nora Body sheet."
+      }
+    ],
+    "in_place": "Everything is already in place from the very first frame: exactly one large rounded footprint in the grey-brown silt with cloudy water inside; Nora's right boot is just below the bottom edge. Every person, animal and object stays where it is placed unless the timeline moves it; nothing appears suddenly, nothing vanishes.",
+    "shot": "One rounded ceratopsian footprint wider than a person's shoulders fills the centre, blunt toe marks, cloudy water inside.",
+    "timeline_action": {
+      "0-3s": "The toe of Nora's right boot enters from the bottom edge and stops beside the footprint.",
+      "3-6s": "The cloudy water inside the print still swirls faintly.",
+      "6-8s": "The boot stays still beside the print; tiny ripples fade."
+    },
+    "speech": {
+      "speaker": "Nora",
+      "delivery": "From the very first frame at second 0, Nora begins speaking immediately. Whispered; tension rising line by line. Nora's voice (Laomedeia): upbeat, mid-high, energetic conversational female voice, fast confident vlog delivery with dry humor; rises into real cracking screams in danger; drops to a fast whisper when hiding. She is the viewer: her voice comes from behind the view; her face never appears.",
+      "dialogue": [
+        {
+          "t": "0-3s",
+          "speaker": "Nora",
+          "line": "Round footprint, wider than my shoulders."
+        },
+        {
+          "t": "3-6s",
+          "speaker": "Nora",
+          "line": "Water inside is still cloudy, so it's fresh."
+        },
+        {
+          "t": "6-8s",
+          "speaker": "Nora",
+          "line": "Whatever made this is close."
+        }
+      ]
+    },
+    "dramatic_craft": {
+      "beat": "Measure and date the track.",
+      "value_turn": "+ curious / - close.",
+      "subtext": "It is near and it is huge.",
+      "prop_and_detail": "Boot against print: scale."
+    },
+    "audio": "Nora's whisper; a soft squelch of silt under the boot; insects; a distant low rumble of an animal.",
+    "physics": "The boot presses about 1 cm into the soft silt; the water in the print moves slower than the boot.",
+    "negative_constraints": [
+      "The camera viewpoint and her gripping arm are completely outside the visible frame and never seen.",
+      "No subtitles, captions, labels, icons or text of any kind appear anywhere in the frame.",
+      "The image is clean footage only: no interface, no recording indicator, no battery icon, no zoom label, no names, no text or symbols.",
+      "Only Nora speaks, in English; the animals make only animal sounds, never words.",
+      "Deep focus: strictly NO shallow depth of field, strictly NO bokeh, no blurred background.",
+      "Dialogue word count strictly 19 words, exactly as written in script.md.",
+      "HAND LOCK: strictly NO male hands, NO hairy knuckles, NO rings, NO watch, NO painted nails, NO extra or fused fingers."
+    ],
+    "start_frame": {
+      "type": "GENERATE_IMAGE",
+      "source_media_id": null,
+      "image_prompt": "Single still photograph, frame 0 of this shot, before any movement. Raw handheld natural-history field footage, Hell Creek floodplain in spring: small broadleaf trees with sycamore-, magnolia- and laurel-like leaves, a few fan palms and tall dawn redwoods at wet sites, horsetails at the water's edge, leaf litter and moss on grey-brown silt. True-to-life muted colours, fine 35mm film grain, raw 35mm wildlife documentary realism, deep focus, deep depth of field (f/8 aperture), entire frame sharp from foreground to distant horizon. Real amateur footage filmed by one person who is physically present. Setting: Hell Creek river floodplain, Montana, 66 million years ago, spring, on the day of the Chicxulub impact. Location: the game corridor exactly as in the Hell Creek Game Corridor reference: a wide, chaotic animal-trampled corridor of deeply churned grey-brown silt and olive-grey clay with massive rounded ceratopsian foot depressions holding cloudy water, cutting from a small clearing into a spring broadleaf woodland; one big moss-covered fallen log lies along the right side of the corridor; a shallow grey mud wallow in the clearing; low shrubs, vines, moss, leaf litter and a few fan palms. Light: low raking early-morning sunlight from behind the subject, warm side light skimming the grey-brown mud and catching the edges of leaves and skin, thin haze over the river, deep soft shadows, natural documentary exposure. Natural sun and sky only, as on a real field day at about 55 degrees north in spring; organic micro-shadows under leaves and bodies; no artificial fill light. Composition (extreme close-up): One rounded ceratopsian footprint wider than a person's shoulders fills the centre, blunt toe marks, cloudy water inside. Already in place: exactly one large rounded footprint in the grey-brown silt with cloudy water inside; Nora's right boot is just below the bottom edge. Only Nora's hands, forearms and boots appear, matching the Nora Hand reference sheet: slender adult female hands with long fingers, short clean unpainted nails, light natural skin tone, no rings, no bracelets, no watch; her sleeves, trousers and boots match the Nora Body reference sheet. Her face never appears. Nothing that records the scene is visible. No subtitles, captions, labels, icons or text of any kind appear anywhere in the frame."
+    }
+  },
+  {
+    "clip_id": "A1-10",
+    "scene_name": "First sight of the herd",
+    "duration": 8,
+    "aspect_ratio": "16:9",
+    "refs": [
+      "Nora",
+      "Nora Body",
+      "Bò Đực",
+      "Con Cái Già",
+      "Con Non",
+      "Hell Creek Game Corridor"
+    ],
+    "camera": {
+      "viewpoint": "Over-the-shoulder vlog view filmed by Nora herself from just behind her own shoulder at shoulder height. She films from just behind her own right shoulder, crouched behind leafy bushes.",
+      "shot_size": "medium shot",
+      "description": "The camera viewpoint and her gripping arm are completely outside the visible frame and never seen. She never reaches toward or touches the lens. The shot never switches to a third-person view."
+    },
+    "style": "Raw handheld natural-history field footage, Hell Creek floodplain in spring: small broadleaf trees with sycamore-, magnolia- and laurel-like leaves, a few fan palms and tall dawn redwoods at wet sites, horsetails at the water's edge, leaf litter and moss on grey-brown silt. True-to-life muted colours, fine 35mm film grain, raw 35mm wildlife documentary realism, deep focus, deep depth of field (f/8 aperture), entire frame sharp from foreground to distant horizon. Real amateur footage filmed by one person who is physically present.",
+    "setting": "Hell Creek river floodplain, Montana, 66 million years ago, spring, on the day of the Chicxulub impact. Location: the game corridor exactly as in the Hell Creek Game Corridor reference: a wide, chaotic animal-trampled corridor of deeply churned grey-brown silt and olive-grey clay with massive rounded ceratopsian foot depressions holding cloudy water, cutting from a small clearing into a spring broadleaf woodland; one big moss-covered fallen log lies along the right side of the corridor; a shallow grey mud wallow in the clearing; low shrubs, vines, moss, leaf litter and a few fan palms. Light: low raking early-morning sunlight from behind the subject, warm side light skimming the grey-brown mud and catching the edges of leaves and skin, thin haze over the river, deep soft shadows, natural documentary exposure. Natural sun and sky only, as on a real field day at about 55 degrees north in spring; organic micro-shadows under leaves and bodies; no artificial fill light.",
+    "characters": [
+      {
+        "name": "Nora",
+        "visual_lock": "Nora's face is an exact 1:1 identical match to the attached Nora reference image. Perfectly preserve her exact facial likeness from the reference photo without changes. Nora is a young 22-23-year-old woman with a youthful soft feminine heart-shaped face, delicate rounded chin, soft rounded youthful cheeks, petite straight nose and distinctively FULL PLUMP PILLOWY LIPS with a defined Cupid's bow and pouty lower lip; hazel-green eyes; honey-blonde hair in a high wavy ponytail with wispy curtain bangs framing her forehead (strictly NO red hair, NO auburn hair, NO messy bun, NO freckles). Authentic unretouched outdoor skin texture, fine pores, natural perspiration sheen, light dirt smudges, natural wind-blown stray hair strands, zero makeup. She wears no jewelry: no earrings, no necklace, no rings. STRICTLY FORBIDDEN: strictly NO square jaw, NO long rectangular face, NO thin lips, NO hollow cheeks, NO aged appearance (must look 22-23), NO facial distortion, NO face drift. Her honey-blonde ponytail is tied high at the crown of her head, never low at the nape; the wispy curtain bangs stay over the edges of her forehead and frame both cheeks. [ID-LOCK] Nora keeps her face and hair from the Nora face sheet, and her build and clothing from the Nora Body sheet (which shows her full body dressed in this field outfit). Her face, hair colour, hairline, eye colour and body proportions are identical in every frame and never drift. BODY LOCK: Nora's build and proportions match the Nora Body reference sheet exactly: a tall young woman (178 cm) with natural, normal proportions. Her body shape never changes from frame to frame. OUTFIT LOCK: Nora wears the exact field outfit shown in the Nora Body reference sheet (NO fur, NO hood, NO shearling collar, NO cloak, NO modern logo, NO outfit variations). From the very first frame to the last, Nora is fully dressed in the complete outfit. No part of the outfit appears, disappears or changes. The only exception is the turtle-shell flask at her left hip: whether it is there, tied on, or gone follows the state sentence and the timeline of this clip, not the Body sheet.",
+        "state": "Her hair and clothes are still soaking wet from the creek. The turtle-shell flask hangs at her left hip on its twisted plant-fibre cord, exactly as on the Nora Body sheet."
+      },
+      {
+        "name": "the bull Triceratops",
+        "visual_lock": "Matches the Bò Đực reference exactly: adult bull Triceratops, its LEFT brow horn broken off to a short rough stump, its RIGHT brow horn long and intact, an old pale scar across the LEFT half of its frill. The broken horn is always on its own left side and never heals. Visceral living animal biology filmed in the wild: rough non-reflective hide, matte scales, deep biological wrinkles and folds, grey-brown silt caked into crevices and on the lower limbs, flanks visibly moving with each breath; clean dry nostrils with faint moisture at the rim only, breathing transparent clean air. Triceratops hide like an African black rhinoceros: matte polygonal basement scales, prominent conical keratin tubercles, dry keratin horn sheaths with hairline micro-fractures.",
+        "state": "Grazing. Even when standing still it keeps continuous living micro-motion: ribs rising and falling with each breath, eyes blinking, skin twitching at flies, small weight shifts; it never freezes like a statue."
+      },
+      {
+        "name": "the old female Triceratops",
+        "visual_lock": "Matches the Con Cái Già reference exactly: old female Triceratops, smaller than the bull, faded pale grey-beige frill with a chipped, notched edge, worn blunt brow horns, sway-backed. Visceral living animal biology filmed in the wild: rough non-reflective hide, matte scales, deep biological wrinkles and folds, grey-brown silt caked into crevices and on the lower limbs, flanks visibly moving with each breath; clean dry nostrils with faint moisture at the rim only, breathing transparent clean air. Triceratops hide like an African black rhinoceros: matte polygonal basement scales, prominent conical keratin tubercles, dry worn keratin horn sheaths with hairline micro-fractures.",
+        "state": "Grazing. Even when standing still it keeps continuous living micro-motion: ribs rising and falling with each breath, eyes blinking, skin twitching at flies, small weight shifts; it never freezes like a statue."
+      },
+      {
+        "name": "the juvenile Triceratops",
+        "visual_lock": "Matches the Con Non reference exactly: a two-year-old Triceratops about 3 m long and hip-high to an adult, tiny rounded horn nubs, short frill, a pale crescent patch on its RIGHT cheek only. Visceral living animal biology filmed in the wild: rough non-reflective hide, matte scales, deep biological wrinkles and folds, grey-brown silt caked into crevices and on the lower limbs, flanks visibly moving with each breath; clean dry nostrils with faint moisture at the rim only, breathing transparent clean air. Young Triceratops hide: fine matte pebbly scales, small keratin horn nubs.",
+        "state": "Grazing beside the old female. Even when standing still it keeps continuous living micro-motion: ribs rising and falling with each breath, eyes blinking, skin twitching at flies, small weight shifts; it never freezes like a statue."
+      }
+    ],
+    "in_place": "Everything is already in place from the very first frame: Nora crouched behind leafy bushes in the foreground; the bull, the old female and the juvenile already grazing in the clearing about 40 m away, each a separate body. Every person, animal and object stays where it is placed unless the timeline moves it; nothing appears suddenly, nothing vanishes.",
+    "shot": "Nora's right shoulder, ponytail and cheek fill the left third of the foreground behind leaves; in the right two thirds a clearing about 40 m away where three Triceratops graze low shrubs.",
+    "timeline_action": {
+      "0-3s": "Nora whispers, peering through the leaves; the three animals graze, tails swaying slowly.",
+      "3-6s": "She turns half her face back toward the lens, eyes wide.",
+      "6-8s": "She looks back at the herd and swallows once on 'I hope.'"
+    },
+    "speech": {
+      "speaker": "Nora",
+      "delivery": "From the very first frame at second 0, Nora begins speaking immediately. Hushed, excited whisper; doubt creeps in on 'I hope.' Nora's voice (Laomedeia): upbeat, mid-high, energetic conversational female voice, fast confident vlog delivery with dry humor; rises into real cracking screams in danger; drops to a fast whisper when hiding.",
+      "dialogue": [
+        {
+          "t": "0-3s",
+          "speaker": "Nora",
+          "line": "There. Three of them, horned, grazing."
+        },
+        {
+          "t": "3-6s",
+          "speaker": "Nora",
+          "line": "They're the biggest things in this valley."
+        },
+        {
+          "t": "6-8s",
+          "speaker": "Nora",
+          "line": "Big means safe, I hope."
+        }
+      ]
+    },
+    "dramatic_craft": {
+      "beat": "First contact with the herd.",
+      "value_turn": "+ wonder / - doubt.",
+      "subtext": "She wants them to be safe because she needs them to be.",
+      "prop_and_detail": "'I hope' plants doubt."
+    },
+    "audio": "Nora's whisper; leaves rustling at her shoulder; distant crunching of shrubs, low grunts; birds.",
+    "physics": "The animals move slowly, each step heavy; their heads dip and lift every few seconds.",
+    "negative_constraints": [
+      "The camera viewpoint and her gripping arm are completely outside the visible frame and never seen.",
+      "No subtitles, captions, labels, icons or text of any kind appear anywhere in the frame.",
+      "The image is clean footage only: no interface, no recording indicator, no battery icon, no zoom label, no names, no text or symbols.",
+      "Only Nora speaks, in English; the animals make only animal sounds, never words.",
+      "Deep focus: strictly NO shallow depth of field, strictly NO bokeh, no blurred background.",
+      "Dialogue word count strictly 18 words, exactly as written in script.md.",
+      "FACE LOCK: exact 1:1 match to the attached Nora face reference; strictly NO square jaw, NO thin lips, NO freckles, NO red or auburn hair, NO messy bun, NO jewelry, NO face drift.",
+      "BODY and OUTFIT LOCK: build, proportions and outfit exactly as the Nora Body reference sheet; NO fur, NO hood, NO cloak, NO outfit variations.",
+      "ANTI-SMOKE LOCK: strictly NO smoke, strictly NO breath vapour, strictly NO steam, strictly NO white plumes from any nostril; clean dry nostrils breathing transparent clean air.",
+      "ANTI-CGI LOCK: strictly NOT a 3D digital render, NOT a plastic toy model, NOT a museum resin statue, NO specular plastic sheen, NO artificial god rays, NO sunlight streaming beams, NO studio rim light.",
+      "Each animal is a separate body; animals never overlap, merge, duplicate or vanish."
+    ],
+    "start_frame": {
+      "type": "EDIT_IMAGE",
+      "source_media_id": "<Nora face media_id>",
+      "image_prompt": "Single still photograph, frame 0 of this shot, before any movement. Raw handheld natural-history field footage, Hell Creek floodplain in spring: small broadleaf trees with sycamore-, magnolia- and laurel-like leaves, a few fan palms and tall dawn redwoods at wet sites, horsetails at the water's edge, leaf litter and moss on grey-brown silt. True-to-life muted colours, fine 35mm film grain, raw 35mm wildlife documentary realism, deep focus, deep depth of field (f/8 aperture), entire frame sharp from foreground to distant horizon. Real amateur footage filmed by one person who is physically present. Setting: Hell Creek river floodplain, Montana, 66 million years ago, spring, on the day of the Chicxulub impact. Location: the game corridor exactly as in the Hell Creek Game Corridor reference: a wide, chaotic animal-trampled corridor of deeply churned grey-brown silt and olive-grey clay with massive rounded ceratopsian foot depressions holding cloudy water, cutting from a small clearing into a spring broadleaf woodland; one big moss-covered fallen log lies along the right side of the corridor; a shallow grey mud wallow in the clearing; low shrubs, vines, moss, leaf litter and a few fan palms. Light: low raking early-morning sunlight from behind the subject, warm side light skimming the grey-brown mud and catching the edges of leaves and skin, thin haze over the river, deep soft shadows, natural documentary exposure. Natural sun and sky only, as on a real field day at about 55 degrees north in spring; organic micro-shadows under leaves and bodies; no artificial fill light. Composition (medium shot): Nora's right shoulder, ponytail and cheek fill the left third of the foreground behind leaves; in the right two thirds a clearing about 40 m away where three Triceratops graze low shrubs. Already in place: Nora crouched behind leafy bushes in the foreground; the bull, the old female and the juvenile already grazing in the clearing about 40 m away, each a separate body. Nora's face is an exact 1:1 identical match to the attached Nora reference image. Perfectly preserve her exact facial likeness from the reference photo without changes. Nora is a young 22-23-year-old woman with a youthful soft feminine heart-shaped face, delicate rounded chin, soft rounded youthful cheeks, petite straight nose and distinctively FULL PLUMP PILLOWY LIPS with a defined Cupid's bow and pouty lower lip; hazel-green eyes; honey-blonde hair in a high wavy ponytail with wispy curtain bangs framing her forehead (strictly NO red hair, NO auburn hair, NO messy bun, NO freckles). Authentic unretouched outdoor skin texture, fine pores, natural perspiration sheen, light dirt smudges, natural wind-blown stray hair strands, zero makeup. She wears no jewelry: no earrings, no necklace, no rings. STRICTLY FORBIDDEN: strictly NO square jaw, NO long rectangular face, NO thin lips, NO hollow cheeks, NO aged appearance (must look 22-23), NO facial distortion, NO face drift. Her honey-blonde ponytail is tied high at the crown of her head, never low at the nape; the wispy curtain bangs stay over the edges of her forehead and frame both cheeks. BODY LOCK: Nora's build and proportions match the Nora Body reference sheet exactly: a tall young woman (178 cm) with natural, normal proportions. Her body shape never changes from frame to frame. OUTFIT LOCK: Nora wears the exact field outfit shown in the Nora Body reference sheet (NO fur, NO hood, NO shearling collar, NO cloak, NO modern logo, NO outfit variations). From the very first frame to the last, Nora is fully dressed in the complete outfit. No part of the outfit appears, disappears or changes. The only exception is the turtle-shell flask at her left hip: whether it is there, tied on, or gone follows the state sentence and the timeline of this clip, not the Body sheet. Her hair and clothes are still soaking wet from the creek. The turtle-shell flask hangs at her left hip on its twisted plant-fibre cord, exactly as on the Nora Body sheet. Matches the Bò Đực reference exactly: adult bull Triceratops, its LEFT brow horn broken off to a short rough stump, its RIGHT brow horn long and intact, an old pale scar across the LEFT half of its frill. The broken horn is always on its own left side and never heals. Visceral living animal biology filmed in the wild: rough non-reflective hide, matte scales, deep biological wrinkles and folds, grey-brown silt caked into crevices and on the lower limbs, flanks visibly moving with each breath; clean dry nostrils with faint moisture at the rim only, breathing transparent clean air. Triceratops hide like an African black rhinoceros: matte polygonal basement scales, prominent conical keratin tubercles, dry keratin horn sheaths with hairline micro-fractures. Matches the Con Cái Già reference exactly: old female Triceratops, smaller than the bull, faded pale grey-beige frill with a chipped, notched edge, worn blunt brow horns, sway-backed. Visceral living animal biology filmed in the wild: rough non-reflective hide, matte scales, deep biological wrinkles and folds, grey-brown silt caked into crevices and on the lower limbs, flanks visibly moving with each breath; clean dry nostrils with faint moisture at the rim only, breathing transparent clean air. Triceratops hide like an African black rhinoceros: matte polygonal basement scales, prominent conical keratin tubercles, dry worn keratin horn sheaths with hairline micro-fractures. Matches the Con Non reference exactly: a two-year-old Triceratops about 3 m long and hip-high to an adult, tiny rounded horn nubs, short frill, a pale crescent patch on its RIGHT cheek only. Visceral living animal biology filmed in the wild: rough non-reflective hide, matte scales, deep biological wrinkles and folds, grey-brown silt caked into crevices and on the lower limbs, flanks visibly moving with each breath; clean dry nostrils with faint moisture at the rim only, breathing transparent clean air. Young Triceratops hide: fine matte pebbly scales, small keratin horn nubs. The camera viewpoint and her gripping arm are completely outside the visible frame and never seen. Self-filmed vlog framing. No subtitles, captions, labels, icons or text of any kind appear anywhere in the frame."
+    }
+  },
+  {
+    "clip_id": "A1-S1",
+    "scene_name": "Overconfidence",
+    "duration": 8,
+    "aspect_ratio": "16:9",
+    "refs": [
+      "Nora",
+      "Nora Body",
+      "Bò Đực",
+      "Con Cái Già",
+      "Con Non",
+      "Hell Creek Game Corridor"
+    ],
+    "camera": {
+      "viewpoint": "Self-filmed vlog view: the lens is held in Nora's right hand at chest height, tilted very slightly up toward her face. She walks slowly backward out of the bushes.",
+      "shot_size": "medium close-up",
+      "description": "The camera viewpoint and her gripping arm are completely outside the visible frame and never seen. She never reaches toward, touches, covers, taps or points at the lens. Only her left hand is free; it is empty unless the timeline says otherwise. Pure front-facing self-filmed view; the shot never switches to a third-person view."
+    },
+    "style": "Raw handheld natural-history field footage, Hell Creek floodplain in spring: small broadleaf trees with sycamore-, magnolia- and laurel-like leaves, a few fan palms and tall dawn redwoods at wet sites, horsetails at the water's edge, leaf litter and moss on grey-brown silt. True-to-life muted colours, fine 35mm film grain, raw 35mm wildlife documentary realism, deep focus, deep depth of field (f/8 aperture), entire frame sharp from foreground to distant horizon. Real amateur footage filmed by one person who is physically present.",
+    "setting": "Hell Creek river floodplain, Montana, 66 million years ago, spring, on the day of the Chicxulub impact. Location: the game corridor exactly as in the Hell Creek Game Corridor reference: a wide, chaotic animal-trampled corridor of deeply churned grey-brown silt and olive-grey clay with massive rounded ceratopsian foot depressions holding cloudy water, cutting from a small clearing into a spring broadleaf woodland; one big moss-covered fallen log lies along the right side of the corridor; a shallow grey mud wallow in the clearing; low shrubs, vines, moss, leaf litter and a few fan palms. Light: low raking early-morning sunlight from behind the subject, warm side light skimming the grey-brown mud and catching the edges of leaves and skin, thin haze over the river, deep soft shadows, natural documentary exposure. Natural sun and sky only, as on a real field day at about 55 degrees north in spring; organic micro-shadows under leaves and bodies; no artificial fill light.",
+    "characters": [
+      {
+        "name": "Nora",
+        "visual_lock": "Nora's face is an exact 1:1 identical match to the attached Nora reference image. Perfectly preserve her exact facial likeness from the reference photo without changes. Nora is a young 22-23-year-old woman with a youthful soft feminine heart-shaped face, delicate rounded chin, soft rounded youthful cheeks, petite straight nose and distinctively FULL PLUMP PILLOWY LIPS with a defined Cupid's bow and pouty lower lip; hazel-green eyes; honey-blonde hair in a high wavy ponytail with wispy curtain bangs framing her forehead (strictly NO red hair, NO auburn hair, NO messy bun, NO freckles). Authentic unretouched outdoor skin texture, fine pores, natural perspiration sheen, light dirt smudges, natural wind-blown stray hair strands, zero makeup. She wears no jewelry: no earrings, no necklace, no rings. STRICTLY FORBIDDEN: strictly NO square jaw, NO long rectangular face, NO thin lips, NO hollow cheeks, NO aged appearance (must look 22-23), NO facial distortion, NO face drift. Her honey-blonde ponytail is tied high at the crown of her head, never low at the nape; the wispy curtain bangs stay over the edges of her forehead and frame both cheeks. [ID-LOCK] Nora keeps her face and hair from the Nora face sheet, and her build and clothing from the Nora Body sheet (which shows her full body dressed in this field outfit). Her face, hair colour, hairline, eye colour and body proportions are identical in every frame and never drift. BODY LOCK: Nora's build and proportions match the Nora Body reference sheet exactly: a tall young woman (178 cm) with natural, normal proportions. Her body shape never changes from frame to frame. OUTFIT LOCK: Nora wears the exact field outfit shown in the Nora Body reference sheet (NO fur, NO hood, NO shearling collar, NO cloak, NO modern logo, NO outfit variations). From the very first frame to the last, Nora is fully dressed in the complete outfit. No part of the outfit appears, disappears or changes. The only exception is the turtle-shell flask at her left hip: whether it is there, tied on, or gone follows the state sentence and the timeline of this clip, not the Body sheet.",
+        "state": "Her hair and clothes are still soaking wet from the creek. The turtle-shell flask hangs at her left hip on its twisted plant-fibre cord, exactly as on the Nora Body sheet."
+      },
+      {
+        "name": "the bull Triceratops",
+        "visual_lock": "Matches the Bò Đực reference exactly: adult bull Triceratops, its LEFT brow horn broken off to a short rough stump, its RIGHT brow horn long and intact, an old pale scar across the LEFT half of its frill. The broken horn is always on its own left side and never heals. Visceral living animal biology filmed in the wild: rough non-reflective hide, matte scales, deep biological wrinkles and folds, grey-brown silt caked into crevices and on the lower limbs, flanks visibly moving with each breath; clean dry nostrils with faint moisture at the rim only, breathing transparent clean air. Triceratops hide like an African black rhinoceros: matte polygonal basement scales, prominent conical keratin tubercles, dry keratin horn sheaths with hairline micro-fractures.",
+        "state": "Grazing. Even when standing still it keeps continuous living micro-motion: ribs rising and falling with each breath, eyes blinking, skin twitching at flies, small weight shifts; it never freezes like a statue."
+      },
+      {
+        "name": "the old female Triceratops",
+        "visual_lock": "Matches the Con Cái Già reference exactly: old female Triceratops, smaller than the bull, faded pale grey-beige frill with a chipped, notched edge, worn blunt brow horns, sway-backed. Visceral living animal biology filmed in the wild: rough non-reflective hide, matte scales, deep biological wrinkles and folds, grey-brown silt caked into crevices and on the lower limbs, flanks visibly moving with each breath; clean dry nostrils with faint moisture at the rim only, breathing transparent clean air. Triceratops hide like an African black rhinoceros: matte polygonal basement scales, prominent conical keratin tubercles, dry worn keratin horn sheaths with hairline micro-fractures.",
+        "state": "Grazing. Even when standing still it keeps continuous living micro-motion: ribs rising and falling with each breath, eyes blinking, skin twitching at flies, small weight shifts; it never freezes like a statue."
+      },
+      {
+        "name": "the juvenile Triceratops",
+        "visual_lock": "Matches the Con Non reference exactly: a two-year-old Triceratops about 3 m long and hip-high to an adult, tiny rounded horn nubs, short frill, a pale crescent patch on its RIGHT cheek only. Visceral living animal biology filmed in the wild: rough non-reflective hide, matte scales, deep biological wrinkles and folds, grey-brown silt caked into crevices and on the lower limbs, flanks visibly moving with each breath; clean dry nostrils with faint moisture at the rim only, breathing transparent clean air. Young Triceratops hide: fine matte pebbly scales, small keratin horn nubs.",
+        "state": "Grazing. Even when standing still it keeps continuous living micro-motion: ribs rising and falling with each breath, eyes blinking, skin twitching at flies, small weight shifts; it never freezes like a statue."
+      }
+    ],
+    "in_place": "Everything is already in place from the very first frame: Nora at the edge of the bushes; the bull, the old female and the juvenile grazing in the clearing behind her, each a separate body. Every person, animal and object stays where it is placed unless the timeline moves it; nothing appears suddenly, nothing vanishes.",
+    "shot": "Nora framed chest-up, centre-right, smiling; behind her the herd grazing in the clearing about 30 m away.",
+    "timeline_action": {
+      "0-3s": "Nora grins confidently into the lens while stepping slowly backward out of the bushes.",
+      "3-6s": "She gestures loosely back at the herd with her empty left hand.",
+      "6-8s": "She turns her shoulders to step out into the clearing; the view follows her face."
+    },
+    "speech": {
+      "speaker": "Nora",
+      "delivery": "From the very first frame at second 0, Nora begins speaking immediately. Confident, playful, a touch smug. Nora's voice (Laomedeia): upbeat, mid-high, energetic conversational female voice, fast confident vlog delivery with dry humor; rises into real cracking screams in danger; drops to a fast whisper when hiding.",
+      "dialogue": [
+        {
+          "t": "0-3s",
+          "speaker": "Nora",
+          "line": "Okay, they're massive, but they only eat plants."
+        },
+        {
+          "t": "3-6s",
+          "speaker": "Nora",
+          "line": "They'll completely ignore a tiny thing like me."
+        },
+        {
+          "t": "6-8s",
+          "speaker": "Nora",
+          "line": "Just watch."
+        }
+      ]
+    },
+    "dramatic_craft": {
+      "beat": "Talk herself into stepping out.",
+      "value_turn": "+ confidence (false).",
+      "subtext": "Bravado before the fall.",
+      "prop_and_detail": "The herd behind her, oblivious, sets up the charge."
+    },
+    "audio": "Nora's voice; leaves brushing as she steps out; grazing crunches behind her.",
+    "physics": "Slow backward steps about 0.4 m/s; branches spring back past her shoulder.",
+    "negative_constraints": [
+      "The camera viewpoint and her gripping arm are completely outside the visible frame and never seen.",
+      "No subtitles, captions, labels, icons or text of any kind appear anywhere in the frame.",
+      "The image is clean footage only: no interface, no recording indicator, no battery icon, no zoom label, no names, no text or symbols.",
+      "Only Nora speaks, in English; the animals make only animal sounds, never words.",
+      "Deep focus: strictly NO shallow depth of field, strictly NO bokeh, no blurred background.",
+      "Dialogue word count strictly 18 words, exactly as written in script.md.",
+      "FACE LOCK: exact 1:1 match to the attached Nora face reference; strictly NO square jaw, NO thin lips, NO freckles, NO red or auburn hair, NO messy bun, NO jewelry, NO face drift.",
+      "BODY and OUTFIT LOCK: build, proportions and outfit exactly as the Nora Body reference sheet; NO fur, NO hood, NO cloak, NO outfit variations.",
+      "ANTI-SMOKE LOCK: strictly NO smoke, strictly NO breath vapour, strictly NO steam, strictly NO white plumes from any nostril; clean dry nostrils breathing transparent clean air.",
+      "ANTI-CGI LOCK: strictly NOT a 3D digital render, NOT a plastic toy model, NOT a museum resin statue, NO specular plastic sheen, NO artificial god rays, NO sunlight streaming beams, NO studio rim light.",
+      "Each animal is a separate body; animals never overlap, merge, duplicate or vanish."
+    ],
+    "start_frame": {
+      "type": "EDIT_IMAGE",
+      "source_media_id": "<Nora face media_id>",
+      "image_prompt": "Single still photograph, frame 0 of this shot, before any movement. Raw handheld natural-history field footage, Hell Creek floodplain in spring: small broadleaf trees with sycamore-, magnolia- and laurel-like leaves, a few fan palms and tall dawn redwoods at wet sites, horsetails at the water's edge, leaf litter and moss on grey-brown silt. True-to-life muted colours, fine 35mm film grain, raw 35mm wildlife documentary realism, deep focus, deep depth of field (f/8 aperture), entire frame sharp from foreground to distant horizon. Real amateur footage filmed by one person who is physically present. Setting: Hell Creek river floodplain, Montana, 66 million years ago, spring, on the day of the Chicxulub impact. Location: the game corridor exactly as in the Hell Creek Game Corridor reference: a wide, chaotic animal-trampled corridor of deeply churned grey-brown silt and olive-grey clay with massive rounded ceratopsian foot depressions holding cloudy water, cutting from a small clearing into a spring broadleaf woodland; one big moss-covered fallen log lies along the right side of the corridor; a shallow grey mud wallow in the clearing; low shrubs, vines, moss, leaf litter and a few fan palms. Light: low raking early-morning sunlight from behind the subject, warm side light skimming the grey-brown mud and catching the edges of leaves and skin, thin haze over the river, deep soft shadows, natural documentary exposure. Natural sun and sky only, as on a real field day at about 55 degrees north in spring; organic micro-shadows under leaves and bodies; no artificial fill light. Composition (medium close-up): Nora framed chest-up, centre-right, smiling; behind her the herd grazing in the clearing about 30 m away. Already in place: Nora at the edge of the bushes; the bull, the old female and the juvenile grazing in the clearing behind her, each a separate body. Nora's face is an exact 1:1 identical match to the attached Nora reference image. Perfectly preserve her exact facial likeness from the reference photo without changes. Nora is a young 22-23-year-old woman with a youthful soft feminine heart-shaped face, delicate rounded chin, soft rounded youthful cheeks, petite straight nose and distinctively FULL PLUMP PILLOWY LIPS with a defined Cupid's bow and pouty lower lip; hazel-green eyes; honey-blonde hair in a high wavy ponytail with wispy curtain bangs framing her forehead (strictly NO red hair, NO auburn hair, NO messy bun, NO freckles). Authentic unretouched outdoor skin texture, fine pores, natural perspiration sheen, light dirt smudges, natural wind-blown stray hair strands, zero makeup. She wears no jewelry: no earrings, no necklace, no rings. STRICTLY FORBIDDEN: strictly NO square jaw, NO long rectangular face, NO thin lips, NO hollow cheeks, NO aged appearance (must look 22-23), NO facial distortion, NO face drift. Her honey-blonde ponytail is tied high at the crown of her head, never low at the nape; the wispy curtain bangs stay over the edges of her forehead and frame both cheeks. BODY LOCK: Nora's build and proportions match the Nora Body reference sheet exactly: a tall young woman (178 cm) with natural, normal proportions. Her body shape never changes from frame to frame. OUTFIT LOCK: Nora wears the exact field outfit shown in the Nora Body reference sheet (NO fur, NO hood, NO shearling collar, NO cloak, NO modern logo, NO outfit variations). From the very first frame to the last, Nora is fully dressed in the complete outfit. No part of the outfit appears, disappears or changes. The only exception is the turtle-shell flask at her left hip: whether it is there, tied on, or gone follows the state sentence and the timeline of this clip, not the Body sheet. Her hair and clothes are still soaking wet from the creek. The turtle-shell flask hangs at her left hip on its twisted plant-fibre cord, exactly as on the Nora Body sheet. Matches the Bò Đực reference exactly: adult bull Triceratops, its LEFT brow horn broken off to a short rough stump, its RIGHT brow horn long and intact, an old pale scar across the LEFT half of its frill. The broken horn is always on its own left side and never heals. Visceral living animal biology filmed in the wild: rough non-reflective hide, matte scales, deep biological wrinkles and folds, grey-brown silt caked into crevices and on the lower limbs, flanks visibly moving with each breath; clean dry nostrils with faint moisture at the rim only, breathing transparent clean air. Triceratops hide like an African black rhinoceros: matte polygonal basement scales, prominent conical keratin tubercles, dry keratin horn sheaths with hairline micro-fractures. Matches the Con Cái Già reference exactly: old female Triceratops, smaller than the bull, faded pale grey-beige frill with a chipped, notched edge, worn blunt brow horns, sway-backed. Visceral living animal biology filmed in the wild: rough non-reflective hide, matte scales, deep biological wrinkles and folds, grey-brown silt caked into crevices and on the lower limbs, flanks visibly moving with each breath; clean dry nostrils with faint moisture at the rim only, breathing transparent clean air. Triceratops hide like an African black rhinoceros: matte polygonal basement scales, prominent conical keratin tubercles, dry worn keratin horn sheaths with hairline micro-fractures. Matches the Con Non reference exactly: a two-year-old Triceratops about 3 m long and hip-high to an adult, tiny rounded horn nubs, short frill, a pale crescent patch on its RIGHT cheek only. Visceral living animal biology filmed in the wild: rough non-reflective hide, matte scales, deep biological wrinkles and folds, grey-brown silt caked into crevices and on the lower limbs, flanks visibly moving with each breath; clean dry nostrils with faint moisture at the rim only, breathing transparent clean air. Young Triceratops hide: fine matte pebbly scales, small keratin horn nubs. The camera viewpoint and her gripping arm are completely outside the visible frame and never seen. Self-filmed vlog framing. No subtitles, captions, labels, icons or text of any kind appear anywhere in the frame."
+    }
+  },
+  {
+    "clip_id": "A1-11",
+    "scene_name": "The bull looks up",
+    "duration": 6,
+    "aspect_ratio": "16:9",
+    "refs": [
+      "Bò Đực",
+      "Hell Creek Game Corridor"
+    ],
+    "camera": {
+      "viewpoint": "First-person view through Nora's own eyes. At chest height, walking a few steps into the clearing.",
+      "shot_size": "wide shot",
+      "description": "All recording gear and her gripping arm are completely outside the visible frame and never seen. The shot never switches to a third-person view; Nora's face never appears."
+    },
+    "style": "Raw handheld natural-history field footage, Hell Creek floodplain in spring: small broadleaf trees with sycamore-, magnolia- and laurel-like leaves, a few fan palms and tall dawn redwoods at wet sites, horsetails at the water's edge, leaf litter and moss on grey-brown silt. True-to-life muted colours, fine 35mm film grain, raw 35mm wildlife documentary realism, deep focus, deep depth of field (f/8 aperture), entire frame sharp from foreground to distant horizon. Real amateur footage filmed by one person who is physically present.",
+    "setting": "Hell Creek river floodplain, Montana, 66 million years ago, spring, on the day of the Chicxulub impact. Location: the game corridor exactly as in the Hell Creek Game Corridor reference: a wide, chaotic animal-trampled corridor of deeply churned grey-brown silt and olive-grey clay with massive rounded ceratopsian foot depressions holding cloudy water, cutting from a small clearing into a spring broadleaf woodland; one big moss-covered fallen log lies along the right side of the corridor; a shallow grey mud wallow in the clearing; low shrubs, vines, moss, leaf litter and a few fan palms. Light: low raking early-morning sunlight from behind the subject, warm side light skimming the grey-brown mud and catching the edges of leaves and skin, thin haze over the river, deep soft shadows, natural documentary exposure. Natural sun and sky only, as on a real field day at about 55 degrees north in spring; organic micro-shadows under leaves and bodies; no artificial fill light.",
+    "characters": [
+      {
+        "name": "the bull Triceratops",
+        "visual_lock": "Matches the Bò Đực reference exactly: adult bull Triceratops, its LEFT brow horn broken off to a short rough stump, its RIGHT brow horn long and intact, an old pale scar across the LEFT half of its frill. The broken horn is always on its own left side and never heals. Visceral living animal biology filmed in the wild: rough non-reflective hide, matte scales, deep biological wrinkles and folds, grey-brown silt caked into crevices and on the lower limbs, flanks visibly moving with each breath; clean dry nostrils with faint moisture at the rim only, breathing transparent clean air. Triceratops hide like an African black rhinoceros: matte polygonal basement scales, prominent conical keratin tubercles, dry keratin horn sheaths with hairline micro-fractures.",
+        "state": "Grazing, then lifting its head to stare. Even when standing still it keeps continuous living micro-motion: ribs rising and falling with each breath, eyes blinking, skin twitching at flies, small weight shifts; it never freezes like a statue."
+      }
+    ],
+    "in_place": "Everything is already in place from the very first frame: the bull Triceratops grazing about 12 m away, head down; the clearing; the woodland behind. Every person, animal and object stays where it is placed unless the timeline moves it; nothing appears suddenly, nothing vanishes.",
+    "shot": "The bull grazes at the edge of the clearing about 12 m away, filling one third of the frame.",
+    "timeline_action": {
+      "0-2s": "The bull slowly lifts its head over about one second; its broken left horn stump and long right horn turn toward the viewer; its frill flushes red.",
+      "2-4s": "The view takes two cautious steps forward.",
+      "4-6s": "The view stops; the bull stares straight at the viewer, motionless."
+    },
+    "speech": {
+      "speaker": "none",
+      "delivery": "Strictly NO spoken dialogue for the whole clip. only held breathing through the nose and the real sounds of the place are heard."
+    },
+    "dramatic_craft": {
+      "beat": "Approach the giant.",
+      "value_turn": "+ hope / - threat.",
+      "subtext": "Silence before the charge.",
+      "prop_and_detail": "The red frill is the warning she cannot read yet."
+    },
+    "audio": "Sonic Isolation: held breath through the nose, a quickening heartbeat, the bull's slow heavy breathing, leaves; all birds fall quiet.",
+    "physics": "A 6-tonne animal lifting its head: slow, deliberate, neck skin folding; the viewer's steps are small and careful.",
+    "negative_constraints": [
+      "The camera viewpoint and her gripping arm are completely outside the visible frame and never seen.",
+      "No subtitles, captions, labels, icons or text of any kind appear anywhere in the frame.",
+      "The image is clean footage only: no interface, no recording indicator, no battery icon, no zoom label, no names, no text or symbols.",
+      "Strictly NO spoken words in this clip.",
+      "Deep focus: strictly NO shallow depth of field, strictly NO bokeh, no blurred background.",
+      "Dialogue word count strictly 0 words, exactly as written in script.md.",
+      "ANTI-SMOKE LOCK: strictly NO smoke, strictly NO breath vapour, strictly NO steam, strictly NO white plumes from any nostril; clean dry nostrils breathing transparent clean air.",
+      "ANTI-CGI LOCK: strictly NOT a 3D digital render, NOT a plastic toy model, NOT a museum resin statue, NO specular plastic sheen, NO artificial god rays, NO sunlight streaming beams, NO studio rim light."
+    ],
+    "start_frame": {
+      "type": "GENERATE_IMAGE",
+      "source_media_id": null,
+      "image_prompt": "Single still photograph, frame 0 of this shot, before any movement. Raw handheld natural-history field footage, Hell Creek floodplain in spring: small broadleaf trees with sycamore-, magnolia- and laurel-like leaves, a few fan palms and tall dawn redwoods at wet sites, horsetails at the water's edge, leaf litter and moss on grey-brown silt. True-to-life muted colours, fine 35mm film grain, raw 35mm wildlife documentary realism, deep focus, deep depth of field (f/8 aperture), entire frame sharp from foreground to distant horizon. Real amateur footage filmed by one person who is physically present. Setting: Hell Creek river floodplain, Montana, 66 million years ago, spring, on the day of the Chicxulub impact. Location: the game corridor exactly as in the Hell Creek Game Corridor reference: a wide, chaotic animal-trampled corridor of deeply churned grey-brown silt and olive-grey clay with massive rounded ceratopsian foot depressions holding cloudy water, cutting from a small clearing into a spring broadleaf woodland; one big moss-covered fallen log lies along the right side of the corridor; a shallow grey mud wallow in the clearing; low shrubs, vines, moss, leaf litter and a few fan palms. Light: low raking early-morning sunlight from behind the subject, warm side light skimming the grey-brown mud and catching the edges of leaves and skin, thin haze over the river, deep soft shadows, natural documentary exposure. Natural sun and sky only, as on a real field day at about 55 degrees north in spring; organic micro-shadows under leaves and bodies; no artificial fill light. Composition (wide shot): The bull grazes at the edge of the clearing about 12 m away, filling one third of the frame. Already in place: the bull Triceratops grazing about 12 m away, head down; the clearing; the woodland behind. Matches the Bò Đực reference exactly: adult bull Triceratops, its LEFT brow horn broken off to a short rough stump, its RIGHT brow horn long and intact, an old pale scar across the LEFT half of its frill. The broken horn is always on its own left side and never heals. Visceral living animal biology filmed in the wild: rough non-reflective hide, matte scales, deep biological wrinkles and folds, grey-brown silt caked into crevices and on the lower limbs, flanks visibly moving with each breath; clean dry nostrils with faint moisture at the rim only, breathing transparent clean air. Triceratops hide like an African black rhinoceros: matte polygonal basement scales, prominent conical keratin tubercles, dry keratin horn sheaths with hairline micro-fractures. Nothing that records the scene is visible. No subtitles, captions, labels, icons or text of any kind appear anywhere in the frame."
+    }
+  },
+  {
+    "clip_id": "A1-12a",
+    "scene_name": "Charge 1/3 - the charge",
+    "duration": 4,
+    "aspect_ratio": "16:9",
+    "refs": [
+      "Bò Đực",
+      "Hell Creek Game Corridor"
+    ],
+    "camera": {
+      "viewpoint": "First-person view through Nora's own eyes. at chest height, standing still at the edge of the clearing, facing the bull about 10 m away; this exact position, height, angle and framing are held identically for all three links A1-12a, A1-12b and A1-12c.",
+      "shot_size": "medium shot",
+      "description": "All recording gear and her gripping arm are completely outside the visible frame and never seen. The shot never switches to a third-person view; Nora's face never appears."
+    },
+    "style": "Raw handheld natural-history field footage, Hell Creek floodplain in spring: small broadleaf trees with sycamore-, magnolia- and laurel-like leaves, a few fan palms and tall dawn redwoods at wet sites, horsetails at the water's edge, leaf litter and moss on grey-brown silt. True-to-life muted colours, fine 35mm film grain, raw 35mm wildlife documentary realism, deep focus, deep depth of field (f/8 aperture), entire frame sharp from foreground to distant horizon. Real amateur footage filmed by one person who is physically present.",
+    "setting": "Hell Creek river floodplain, Montana, 66 million years ago, spring, on the day of the Chicxulub impact. Location: the game corridor exactly as in the Hell Creek Game Corridor reference: a wide, chaotic animal-trampled corridor of deeply churned grey-brown silt and olive-grey clay with massive rounded ceratopsian foot depressions holding cloudy water, cutting from a small clearing into a spring broadleaf woodland; one big moss-covered fallen log lies along the right side of the corridor; a shallow grey mud wallow in the clearing; low shrubs, vines, moss, leaf litter and a few fan palms. Light: low raking early-morning sunlight from behind the subject, warm side light skimming the grey-brown mud and catching the edges of leaves and skin, thin haze over the river, deep soft shadows, natural documentary exposure. Natural sun and sky only, as on a real field day at about 55 degrees north in spring; organic micro-shadows under leaves and bodies; no artificial fill light.",
+    "characters": [
+      {
+        "name": "the bull Triceratops",
+        "visual_lock": "Matches the Bò Đực reference exactly: adult bull Triceratops, its LEFT brow horn broken off to a short rough stump, its RIGHT brow horn long and intact, an old pale scar across the LEFT half of its frill. The broken horn is always on its own left side and never heals. Visceral living animal biology filmed in the wild: rough non-reflective hide, matte scales, deep biological wrinkles and folds, grey-brown silt caked into crevices and on the lower limbs, flanks visibly moving with each breath; clean dry nostrils with faint moisture at the rim only, breathing transparent clean air. Triceratops hide like an African black rhinoceros: matte polygonal basement scales, prominent conical keratin tubercles, dry keratin horn sheaths with hairline micro-fractures.",
+        "state": "Lowers its head and charges three heavy steps at a slight diagonal. Even when standing still it keeps continuous living micro-motion: ribs rising and falling with each breath, eyes blinking, skin twitching at flies, small weight shifts; it never freezes like a statue."
+      }
+    ],
+    "in_place": "Everything is already in place from the very first frame: the bull standing about 10 m away facing the viewer; churned silt between them; low bushes at the bottom edge. Every person, animal and object stays where it is placed unless the timeline moves it; nothing appears suddenly, nothing vanishes.",
+    "shot": "The bull stands facing the viewer about 10 m away, head level, staring (identical to the last frame of A1-11).",
+    "timeline_action": {
+      "0-2s": "The bull lowers its head, horns forward, front legs bracing.",
+      "2-4s": "It charges three heavy steps toward the viewer at a slight diagonal, silt spraying from its feet; it ends with its head filling half the frame."
+    },
+    "speech": {
+      "speaker": "none",
+      "delivery": "Strictly NO spoken dialogue for the whole clip. only held breathing through the nose and the real sounds of the place are heard."
+    },
+    "dramatic_craft": {
+      "beat": "Survive the charge.",
+      "value_turn": "- danger peaks.",
+      "subtext": "The 'big means safe' belief breaks.",
+      "prop_and_detail": "Mud spray and the broken horn at close range."
+    },
+    "audio": "No voice except one sharp gasp; ground-shaking thuds of the charge, silt spray, the bull's heavy snort.",
+    "physics": "About 6 tonnes accelerating over three strides; each footfall shakes the frame slightly; momentum p = m*v carries it forward.",
+    "negative_constraints": [
+      "The camera viewpoint and her gripping arm are completely outside the visible frame and never seen.",
+      "No subtitles, captions, labels, icons or text of any kind appear anywhere in the frame.",
+      "The image is clean footage only: no interface, no recording indicator, no battery icon, no zoom label, no names, no text or symbols.",
+      "Strictly NO spoken words in this clip.",
+      "Deep focus: strictly NO shallow depth of field, strictly NO bokeh, no blurred background.",
+      "Dialogue word count strictly 0 words, exactly as written in script.md.",
+      "ANTI-SMOKE LOCK: strictly NO smoke, strictly NO breath vapour, strictly NO steam, strictly NO white plumes from any nostril; clean dry nostrils breathing transparent clean air.",
+      "ANTI-CGI LOCK: strictly NOT a 3D digital render, NOT a plastic toy model, NOT a museum resin statue, NO specular plastic sheen, NO artificial god rays, NO sunlight streaming beams, NO studio rim light."
+    ],
+    "start_frame": {
+      "type": "GENERATE_IMAGE",
+      "source_media_id": null,
+      "image_prompt": "Single still photograph, frame 0 of this shot, before any movement. Raw handheld natural-history field footage, Hell Creek floodplain in spring: small broadleaf trees with sycamore-, magnolia- and laurel-like leaves, a few fan palms and tall dawn redwoods at wet sites, horsetails at the water's edge, leaf litter and moss on grey-brown silt. True-to-life muted colours, fine 35mm film grain, raw 35mm wildlife documentary realism, deep focus, deep depth of field (f/8 aperture), entire frame sharp from foreground to distant horizon. Real amateur footage filmed by one person who is physically present. Setting: Hell Creek river floodplain, Montana, 66 million years ago, spring, on the day of the Chicxulub impact. Location: the game corridor exactly as in the Hell Creek Game Corridor reference: a wide, chaotic animal-trampled corridor of deeply churned grey-brown silt and olive-grey clay with massive rounded ceratopsian foot depressions holding cloudy water, cutting from a small clearing into a spring broadleaf woodland; one big moss-covered fallen log lies along the right side of the corridor; a shallow grey mud wallow in the clearing; low shrubs, vines, moss, leaf litter and a few fan palms. Light: low raking early-morning sunlight from behind the subject, warm side light skimming the grey-brown mud and catching the edges of leaves and skin, thin haze over the river, deep soft shadows, natural documentary exposure. Natural sun and sky only, as on a real field day at about 55 degrees north in spring; organic micro-shadows under leaves and bodies; no artificial fill light. Composition (medium shot): The bull stands facing the viewer about 10 m away, head level, staring (identical to the last frame of A1-11). Already in place: the bull standing about 10 m away facing the viewer; churned silt between them; low bushes at the bottom edge. Matches the Bò Đực reference exactly: adult bull Triceratops, its LEFT brow horn broken off to a short rough stump, its RIGHT brow horn long and intact, an old pale scar across the LEFT half of its frill. The broken horn is always on its own left side and never heals. Visceral living animal biology filmed in the wild: rough non-reflective hide, matte scales, deep biological wrinkles and folds, grey-brown silt caked into crevices and on the lower limbs, flanks visibly moving with each breath; clean dry nostrils with faint moisture at the rim only, breathing transparent clean air. Triceratops hide like an African black rhinoceros: matte polygonal basement scales, prominent conical keratin tubercles, dry keratin horn sheaths with hairline micro-fractures. Nothing that records the scene is visible. No subtitles, captions, labels, icons or text of any kind appear anywhere in the frame."
+    }
+  },
+  {
+    "clip_id": "A1-12b",
+    "scene_name": "Charge 2/3 - the stop",
+    "duration": 4,
+    "aspect_ratio": "16:9",
+    "refs": [
+      "Bò Đực",
+      "Hell Creek Game Corridor"
+    ],
+    "camera": {
+      "viewpoint": "First-person view through Nora's own eyes. at chest height, standing still at the edge of the clearing, facing the bull about 10 m away; this exact position, height, angle and framing are held identically for all three links A1-12a, A1-12b and A1-12c.",
+      "shot_size": "medium shot",
+      "description": "All recording gear and her gripping arm are completely outside the visible frame and never seen. The shot never switches to a third-person view; Nora's face never appears."
+    },
+    "style": "Raw handheld natural-history field footage, Hell Creek floodplain in spring: small broadleaf trees with sycamore-, magnolia- and laurel-like leaves, a few fan palms and tall dawn redwoods at wet sites, horsetails at the water's edge, leaf litter and moss on grey-brown silt. True-to-life muted colours, fine 35mm film grain, raw 35mm wildlife documentary realism, deep focus, deep depth of field (f/8 aperture), entire frame sharp from foreground to distant horizon. Real amateur footage filmed by one person who is physically present.",
+    "setting": "Hell Creek river floodplain, Montana, 66 million years ago, spring, on the day of the Chicxulub impact. Location: the game corridor exactly as in the Hell Creek Game Corridor reference: a wide, chaotic animal-trampled corridor of deeply churned grey-brown silt and olive-grey clay with massive rounded ceratopsian foot depressions holding cloudy water, cutting from a small clearing into a spring broadleaf woodland; one big moss-covered fallen log lies along the right side of the corridor; a shallow grey mud wallow in the clearing; low shrubs, vines, moss, leaf litter and a few fan palms. Light: low raking early-morning sunlight from behind the subject, warm side light skimming the grey-brown mud and catching the edges of leaves and skin, thin haze over the river, deep soft shadows, natural documentary exposure. Natural sun and sky only, as on a real field day at about 55 degrees north in spring; organic micro-shadows under leaves and bodies; no artificial fill light.",
+    "characters": [
+      {
+        "name": "the bull Triceratops",
+        "visual_lock": "Matches the Bò Đực reference exactly: adult bull Triceratops, its LEFT brow horn broken off to a short rough stump, its RIGHT brow horn long and intact, an old pale scar across the LEFT half of its frill. The broken horn is always on its own left side and never heals. Visceral living animal biology filmed in the wild: rough non-reflective hide, matte scales, deep biological wrinkles and folds, grey-brown silt caked into crevices and on the lower limbs, flanks visibly moving with each breath; clean dry nostrils with faint moisture at the rim only, breathing transparent clean air. Triceratops hide like an African black rhinoceros: matte polygonal basement scales, prominent conical keratin tubercles, dry keratin horn sheaths with hairline micro-fractures.",
+        "state": "Brakes, scrapes a front foot. Even when standing still it keeps continuous living micro-motion: ribs rising and falling with each breath, eyes blinking, skin twitching at flies, small weight shifts; it never freezes like a statue."
+      }
+    ],
+    "in_place": "Everything is already in place from the very first frame: the bull mid-charge with its head filling half the frame. Every person, animal and object stays where it is placed unless the timeline moves it; nothing appears suddenly, nothing vanishes.",
+    "shot": "Same framing as A1-12a.",
+    "timeline_action": {
+      "0-2s": "The clip opens exactly on the final frame of A1-12a: the bull mid-charge with its head filling half the frame. The bull brakes hard, front feet ploughing into the silt with its own momentum, and stops; one front foot scrapes the ground.",
+      "2-4s": "A spray of grey-brown mud flies toward the view; the view jerks back half a step and tips backward."
+    },
+    "speech": {
+      "speaker": "none",
+      "delivery": "Strictly NO spoken dialogue for the whole clip. only held breathing through the nose and the real sounds of the place are heard."
+    },
+    "dramatic_craft": {
+      "beat": "A warning, not a kill.",
+      "value_turn": "- terror / + spared.",
+      "subtext": "He chose to stop.",
+      "prop_and_detail": "Mud hitting the view."
+    },
+    "audio": "No voice; a deep grunt, silt ploughing, mud spatter, a hoof scraping.",
+    "physics": "Inertia: the bull slides about 40 cm in the silt before stopping; mud arcs toward the view and falls.",
+    "negative_constraints": [
+      "The camera viewpoint and her gripping arm are completely outside the visible frame and never seen.",
+      "No subtitles, captions, labels, icons or text of any kind appear anywhere in the frame.",
+      "The image is clean footage only: no interface, no recording indicator, no battery icon, no zoom label, no names, no text or symbols.",
+      "Strictly NO spoken words in this clip.",
+      "Deep focus: strictly NO shallow depth of field, strictly NO bokeh, no blurred background.",
+      "Dialogue word count strictly 0 words, exactly as written in script.md.",
+      "ANTI-SMOKE LOCK: strictly NO smoke, strictly NO breath vapour, strictly NO steam, strictly NO white plumes from any nostril; clean dry nostrils breathing transparent clean air.",
+      "ANTI-CGI LOCK: strictly NOT a 3D digital render, NOT a plastic toy model, NOT a museum resin statue, NO specular plastic sheen, NO artificial god rays, NO sunlight streaming beams, NO studio rim light."
+    ],
+    "start_frame": {
+      "type": "PREV_LAST_FRAME",
+      "note": "use the last frame of A1-12a"
+    }
+  },
+  {
+    "clip_id": "A1-12c",
+    "scene_name": "Charge 3/3 - the fall",
+    "duration": 4,
+    "aspect_ratio": "16:9",
+    "refs": [
+      "Bò Đực",
+      "Hell Creek Game Corridor"
+    ],
+    "camera": {
+      "viewpoint": "First-person view through Nora's own eyes. at chest height, standing still at the edge of the clearing, facing the bull about 10 m away; this exact position, height, angle and framing are held identically for all three links A1-12a, A1-12b and A1-12c. In this link the view falls backward at the end.",
+      "shot_size": "medium shot",
+      "description": "All recording gear and her gripping arm are completely outside the visible frame and never seen. The shot never switches to a third-person view; Nora's face never appears."
+    },
+    "style": "Raw handheld natural-history field footage, Hell Creek floodplain in spring: small broadleaf trees with sycamore-, magnolia- and laurel-like leaves, a few fan palms and tall dawn redwoods at wet sites, horsetails at the water's edge, leaf litter and moss on grey-brown silt. True-to-life muted colours, fine 35mm film grain, raw 35mm wildlife documentary realism, deep focus, deep depth of field (f/8 aperture), entire frame sharp from foreground to distant horizon. Real amateur footage filmed by one person who is physically present.",
+    "setting": "Hell Creek river floodplain, Montana, 66 million years ago, spring, on the day of the Chicxulub impact. Location: the game corridor exactly as in the Hell Creek Game Corridor reference: a wide, chaotic animal-trampled corridor of deeply churned grey-brown silt and olive-grey clay with massive rounded ceratopsian foot depressions holding cloudy water, cutting from a small clearing into a spring broadleaf woodland; one big moss-covered fallen log lies along the right side of the corridor; a shallow grey mud wallow in the clearing; low shrubs, vines, moss, leaf litter and a few fan palms. Light: low raking early-morning sunlight from behind the subject, warm side light skimming the grey-brown mud and catching the edges of leaves and skin, thin haze over the river, deep soft shadows, natural documentary exposure. Natural sun and sky only, as on a real field day at about 55 degrees north in spring; organic micro-shadows under leaves and bodies; no artificial fill light.",
+    "characters": [
+      {
+        "name": "the bull Triceratops",
+        "visual_lock": "Matches the Bò Đực reference exactly: adult bull Triceratops, its LEFT brow horn broken off to a short rough stump, its RIGHT brow horn long and intact, an old pale scar across the LEFT half of its frill. The broken horn is always on its own left side and never heals. Visceral living animal biology filmed in the wild: rough non-reflective hide, matte scales, deep biological wrinkles and folds, grey-brown silt caked into crevices and on the lower limbs, flanks visibly moving with each breath; clean dry nostrils with faint moisture at the rim only, breathing transparent clean air. Triceratops hide like an African black rhinoceros: matte polygonal basement scales, prominent conical keratin tubercles, dry keratin horn sheaths with hairline micro-fractures.",
+        "state": "Stands still; slides out of the bottom of the frame as the view tips up. Even when standing still it keeps continuous living micro-motion: ribs rising and falling with each breath, eyes blinking, skin twitching at flies, small weight shifts; it never freezes like a statue."
+      }
+    ],
+    "in_place": "Everything is already in place from the very first frame: the bull standing still about 6 m away; low bushes behind the viewer; spring leaves overhead. Every person, animal and object stays where it is placed unless the timeline moves it; nothing appears suddenly, nothing vanishes.",
+    "shot": "Same framing as A1-12a, then tipping up into leaves.",
+    "timeline_action": {
+      "0-2s": "The clip opens exactly on the final frame of A1-12b: the bull standing still about 6 m away; low bushes behind the viewer; spring leaves overhead. The view tips backward as Nora falls; the bull slides down out of the bottom edge of the frame.",
+      "2-4s": "The frame swings up into the pale-green spring leaves of a low bush canopy, shakes and comes to rest."
+    },
+    "speech": {
+      "speaker": "none",
+      "delivery": "No words: one single real cracking scream at the start, then fast breathing."
+    },
+    "dramatic_craft": {
+      "beat": "Fall and survive.",
+      "value_turn": "- humiliated / + alive.",
+      "subtext": "She was never in control.",
+      "prop_and_detail": "Ending on the leaves: lost in his world."
+    },
+    "audio": "One cracking wordless scream, branches snapping under her, leaves rustling, then fast breathing.",
+    "physics": "Falling backward about 1.5 m into springy bushes; the frame rotates up about 90 degrees and bounces twice before resting.",
+    "negative_constraints": [
+      "The camera viewpoint and her gripping arm are completely outside the visible frame and never seen.",
+      "No subtitles, captions, labels, icons or text of any kind appear anywhere in the frame.",
+      "The image is clean footage only: no interface, no recording indicator, no battery icon, no zoom label, no names, no text or symbols.",
+      "Strictly NO spoken words in this clip.",
+      "Deep focus: strictly NO shallow depth of field, strictly NO bokeh, no blurred background.",
+      "Dialogue word count strictly 0 words, exactly as written in script.md.",
+      "ANTI-SMOKE LOCK: strictly NO smoke, strictly NO breath vapour, strictly NO steam, strictly NO white plumes from any nostril; clean dry nostrils breathing transparent clean air.",
+      "ANTI-CGI LOCK: strictly NOT a 3D digital render, NOT a plastic toy model, NOT a museum resin statue, NO specular plastic sheen, NO artificial god rays, NO sunlight streaming beams, NO studio rim light."
+    ],
+    "start_frame": {
+      "type": "PREV_LAST_FRAME",
+      "note": "use the last frame of A1-12b"
+    }
+  },
+  {
+    "clip_id": "A1-13",
+    "scene_name": "Message received",
+    "duration": 8,
+    "aspect_ratio": "16:9",
+    "refs": [
+      "Nora",
+      "Nora Body",
+      "Hell Creek Game Corridor"
+    ],
+    "camera": {
+      "viewpoint": "Self-filmed vlog view: the lens is held in Nora's right hand at chest height, tilted very slightly up toward her face. She lies on her side in a low bush.",
+      "shot_size": "medium close-up",
+      "description": "The camera viewpoint and her gripping arm are completely outside the visible frame and never seen. She never reaches toward, touches, covers, taps or points at the lens. Only her left hand is free; it is empty unless the timeline says otherwise. Pure front-facing self-filmed view; the shot never switches to a third-person view."
+    },
+    "style": "Raw handheld natural-history field footage, Hell Creek floodplain in spring: small broadleaf trees with sycamore-, magnolia- and laurel-like leaves, a few fan palms and tall dawn redwoods at wet sites, horsetails at the water's edge, leaf litter and moss on grey-brown silt. True-to-life muted colours, fine 35mm film grain, raw 35mm wildlife documentary realism, deep focus, deep depth of field (f/8 aperture), entire frame sharp from foreground to distant horizon. Real amateur footage filmed by one person who is physically present.",
+    "setting": "Hell Creek river floodplain, Montana, 66 million years ago, spring, on the day of the Chicxulub impact. Location: the game corridor exactly as in the Hell Creek Game Corridor reference: a wide, chaotic animal-trampled corridor of deeply churned grey-brown silt and olive-grey clay with massive rounded ceratopsian foot depressions holding cloudy water, cutting from a small clearing into a spring broadleaf woodland; one big moss-covered fallen log lies along the right side of the corridor; a shallow grey mud wallow in the clearing; low shrubs, vines, moss, leaf litter and a few fan palms. Light: low raking early-morning sunlight from behind the subject, warm side light skimming the grey-brown mud and catching the edges of leaves and skin, thin haze over the river, deep soft shadows, natural documentary exposure. Natural sun and sky only, as on a real field day at about 55 degrees north in spring; organic micro-shadows under leaves and bodies; no artificial fill light.",
+    "characters": [
+      {
+        "name": "Nora",
+        "visual_lock": "Nora's face is an exact 1:1 identical match to the attached Nora reference image. Perfectly preserve her exact facial likeness from the reference photo without changes. Nora is a young 22-23-year-old woman with a youthful soft feminine heart-shaped face, delicate rounded chin, soft rounded youthful cheeks, petite straight nose and distinctively FULL PLUMP PILLOWY LIPS with a defined Cupid's bow and pouty lower lip; hazel-green eyes; honey-blonde hair in a high wavy ponytail with wispy curtain bangs framing her forehead (strictly NO red hair, NO auburn hair, NO messy bun, NO freckles). Authentic unretouched outdoor skin texture, fine pores, natural perspiration sheen, light dirt smudges, natural wind-blown stray hair strands, zero makeup. She wears no jewelry: no earrings, no necklace, no rings. STRICTLY FORBIDDEN: strictly NO square jaw, NO long rectangular face, NO thin lips, NO hollow cheeks, NO aged appearance (must look 22-23), NO facial distortion, NO face drift. Her honey-blonde ponytail is tied high at the crown of her head, never low at the nape; the wispy curtain bangs stay over the edges of her forehead and frame both cheeks. [ID-LOCK] Nora keeps her face and hair from the Nora face sheet, and her build and clothing from the Nora Body sheet (which shows her full body dressed in this field outfit). Her face, hair colour, hairline, eye colour and body proportions are identical in every frame and never drift. BODY LOCK: Nora's build and proportions match the Nora Body reference sheet exactly: a tall young woman (178 cm) with natural, normal proportions. Her body shape never changes from frame to frame. OUTFIT LOCK: Nora wears the exact field outfit shown in the Nora Body reference sheet (NO fur, NO hood, NO shearling collar, NO cloak, NO modern logo, NO outfit variations). From the very first frame to the last, Nora is fully dressed in the complete outfit. No part of the outfit appears, disappears or changes. The only exception is the turtle-shell flask at her left hip: whether it is there, tied on, or gone follows the state sentence and the timeline of this clip, not the Body sheet.",
+        "state": "She has just fallen backward into the bush. Her hair and clothes are still soaking wet from the creek. The turtle-shell flask hangs at her left hip on its twisted plant-fibre cord, exactly as on the Nora Body sheet."
+      }
+    ],
+    "in_place": "Everything is already in place from the very first frame: Nora lying in the bush; leaves around her; the bull is out of frame to the left. Every person, animal and object stays where it is placed unless the timeline moves it; nothing appears suddenly, nothing vanishes.",
+    "shot": "Nora lies on her side in a low bush, framed face and shoulders; leaves cross the edges of the frame.",
+    "timeline_action": {
+      "0-3s": "Nora speaks between fast breaths, leaves trembling around her face.",
+      "3-6s": "She blinks, swallows, and her eyes dart toward where the bull was, off to the left.",
+      "6-8s": "A crooked, shaky smile on 'Message received, big guy.'"
+    },
+    "speech": {
+      "speaker": "Nora",
+      "delivery": "From the very first frame at second 0, Nora begins speaking immediately. Breathless, then dry humor to let the air out. Nora's voice (Laomedeia): upbeat, mid-high, energetic conversational female voice, fast confident vlog delivery with dry humor; rises into real cracking screams in danger; drops to a fast whisper when hiding.",
+      "dialogue": [
+        {
+          "t": "0-3s",
+          "speaker": "Nora",
+          "line": "He stopped. He stopped six metres short."
+        },
+        {
+          "t": "3-6s",
+          "speaker": "Nora",
+          "line": "That was a warning, not an attack."
+        },
+        {
+          "t": "6-8s",
+          "speaker": "Nora",
+          "line": "Message received, big guy."
+        }
+      ]
+    },
+    "dramatic_craft": {
+      "beat": "Recover with humor.",
+      "value_turn": "- shock / + understanding.",
+      "subtext": "She is reading him now.",
+      "prop_and_detail": "Leaves across the frame: she is still down."
+    },
+    "audio": "Nora's breathless voice; leaves crackling as she moves; the bull grazing again in the distance.",
+    "physics": "Her chest heaves fast; leaves bob with each breath.",
+    "negative_constraints": [
+      "The camera viewpoint and her gripping arm are completely outside the visible frame and never seen.",
+      "No subtitles, captions, labels, icons or text of any kind appear anywhere in the frame.",
+      "The image is clean footage only: no interface, no recording indicator, no battery icon, no zoom label, no names, no text or symbols.",
+      "Only Nora speaks, in English; the animals make only animal sounds, never words.",
+      "Deep focus: strictly NO shallow depth of field, strictly NO bokeh, no blurred background.",
+      "Dialogue word count strictly 18 words, exactly as written in script.md.",
+      "FACE LOCK: exact 1:1 match to the attached Nora face reference; strictly NO square jaw, NO thin lips, NO freckles, NO red or auburn hair, NO messy bun, NO jewelry, NO face drift.",
+      "BODY and OUTFIT LOCK: build, proportions and outfit exactly as the Nora Body reference sheet; NO fur, NO hood, NO cloak, NO outfit variations."
+    ],
+    "start_frame": {
+      "type": "EDIT_IMAGE",
+      "source_media_id": "<Nora face media_id>",
+      "image_prompt": "Single still photograph, frame 0 of this shot, before any movement. Raw handheld natural-history field footage, Hell Creek floodplain in spring: small broadleaf trees with sycamore-, magnolia- and laurel-like leaves, a few fan palms and tall dawn redwoods at wet sites, horsetails at the water's edge, leaf litter and moss on grey-brown silt. True-to-life muted colours, fine 35mm film grain, raw 35mm wildlife documentary realism, deep focus, deep depth of field (f/8 aperture), entire frame sharp from foreground to distant horizon. Real amateur footage filmed by one person who is physically present. Setting: Hell Creek river floodplain, Montana, 66 million years ago, spring, on the day of the Chicxulub impact. Location: the game corridor exactly as in the Hell Creek Game Corridor reference: a wide, chaotic animal-trampled corridor of deeply churned grey-brown silt and olive-grey clay with massive rounded ceratopsian foot depressions holding cloudy water, cutting from a small clearing into a spring broadleaf woodland; one big moss-covered fallen log lies along the right side of the corridor; a shallow grey mud wallow in the clearing; low shrubs, vines, moss, leaf litter and a few fan palms. Light: low raking early-morning sunlight from behind the subject, warm side light skimming the grey-brown mud and catching the edges of leaves and skin, thin haze over the river, deep soft shadows, natural documentary exposure. Natural sun and sky only, as on a real field day at about 55 degrees north in spring; organic micro-shadows under leaves and bodies; no artificial fill light. Composition (medium close-up): Nora lies on her side in a low bush, framed face and shoulders; leaves cross the edges of the frame. Already in place: Nora lying in the bush; leaves around her; the bull is out of frame to the left. Nora's face is an exact 1:1 identical match to the attached Nora reference image. Perfectly preserve her exact facial likeness from the reference photo without changes. Nora is a young 22-23-year-old woman with a youthful soft feminine heart-shaped face, delicate rounded chin, soft rounded youthful cheeks, petite straight nose and distinctively FULL PLUMP PILLOWY LIPS with a defined Cupid's bow and pouty lower lip; hazel-green eyes; honey-blonde hair in a high wavy ponytail with wispy curtain bangs framing her forehead (strictly NO red hair, NO auburn hair, NO messy bun, NO freckles). Authentic unretouched outdoor skin texture, fine pores, natural perspiration sheen, light dirt smudges, natural wind-blown stray hair strands, zero makeup. She wears no jewelry: no earrings, no necklace, no rings. STRICTLY FORBIDDEN: strictly NO square jaw, NO long rectangular face, NO thin lips, NO hollow cheeks, NO aged appearance (must look 22-23), NO facial distortion, NO face drift. Her honey-blonde ponytail is tied high at the crown of her head, never low at the nape; the wispy curtain bangs stay over the edges of her forehead and frame both cheeks. BODY LOCK: Nora's build and proportions match the Nora Body reference sheet exactly: a tall young woman (178 cm) with natural, normal proportions. Her body shape never changes from frame to frame. OUTFIT LOCK: Nora wears the exact field outfit shown in the Nora Body reference sheet (NO fur, NO hood, NO shearling collar, NO cloak, NO modern logo, NO outfit variations). From the very first frame to the last, Nora is fully dressed in the complete outfit. No part of the outfit appears, disappears or changes. The only exception is the turtle-shell flask at her left hip: whether it is there, tied on, or gone follows the state sentence and the timeline of this clip, not the Body sheet. Her hair and clothes are still soaking wet from the creek. The turtle-shell flask hangs at her left hip on its twisted plant-fibre cord, exactly as on the Nora Body sheet. She has just fallen backward into the bush. The camera viewpoint and her gripping arm are completely outside the visible frame and never seen. Self-filmed vlog framing. No subtitles, captions, labels, icons or text of any kind appear anywhere in the frame."
+    }
+  },
+  {
+    "clip_id": "A1-14",
+    "scene_name": "Sit at the edge and wait",
+    "duration": 10,
+    "aspect_ratio": "16:9",
+    "refs": [
+      "Nora",
+      "Nora Body",
+      "Bò Đực",
+      "Con Cái Già",
+      "Con Non",
+      "Hell Creek Game Corridor"
+    ],
+    "camera": {
+      "viewpoint": "Static footage from a fixed viewpoint resting on a broken tree stump at waist height. The frame does not move; nobody touches the viewpoint.",
+      "shot_size": "medium shot",
+      "description": "Nothing that records the scene is ever visible. Both of Nora's hands are free. The shot never switches angle."
+    },
+    "style": "Raw handheld natural-history field footage, Hell Creek floodplain in spring: small broadleaf trees with sycamore-, magnolia- and laurel-like leaves, a few fan palms and tall dawn redwoods at wet sites, horsetails at the water's edge, leaf litter and moss on grey-brown silt. True-to-life muted colours, fine 35mm film grain, raw 35mm wildlife documentary realism, deep focus, deep depth of field (f/8 aperture), entire frame sharp from foreground to distant horizon. Real amateur footage filmed by one person who is physically present.",
+    "setting": "Hell Creek river floodplain, Montana, 66 million years ago, spring, on the day of the Chicxulub impact. Location: the game corridor exactly as in the Hell Creek Game Corridor reference: a wide, chaotic animal-trampled corridor of deeply churned grey-brown silt and olive-grey clay with massive rounded ceratopsian foot depressions holding cloudy water, cutting from a small clearing into a spring broadleaf woodland; one big moss-covered fallen log lies along the right side of the corridor; a shallow grey mud wallow in the clearing; low shrubs, vines, moss, leaf litter and a few fan palms. Light: low raking early-morning sunlight from behind the subject, warm side light skimming the grey-brown mud and catching the edges of leaves and skin, thin haze over the river, deep soft shadows, natural documentary exposure. Natural sun and sky only, as on a real field day at about 55 degrees north in spring; organic micro-shadows under leaves and bodies; no artificial fill light.",
+    "characters": [
+      {
+        "name": "Nora",
+        "visual_lock": "Nora's face is an exact 1:1 identical match to the attached Nora reference image. Perfectly preserve her exact facial likeness from the reference photo without changes. Nora is a young 22-23-year-old woman with a youthful soft feminine heart-shaped face, delicate rounded chin, soft rounded youthful cheeks, petite straight nose and distinctively FULL PLUMP PILLOWY LIPS with a defined Cupid's bow and pouty lower lip; hazel-green eyes; honey-blonde hair in a high wavy ponytail with wispy curtain bangs framing her forehead (strictly NO red hair, NO auburn hair, NO messy bun, NO freckles). Authentic unretouched outdoor skin texture, fine pores, natural perspiration sheen, light dirt smudges, natural wind-blown stray hair strands, zero makeup. She wears no jewelry: no earrings, no necklace, no rings. STRICTLY FORBIDDEN: strictly NO square jaw, NO long rectangular face, NO thin lips, NO hollow cheeks, NO aged appearance (must look 22-23), NO facial distortion, NO face drift. Her honey-blonde ponytail is tied high at the crown of her head, never low at the nape; the wispy curtain bangs stay over the edges of her forehead and frame both cheeks. [ID-LOCK] Nora keeps her face and hair from the Nora face sheet, and her build and clothing from the Nora Body sheet (which shows her full body dressed in this field outfit). Her face, hair colour, hairline, eye colour and body proportions are identical in every frame and never drift. BODY LOCK: Nora's build and proportions match the Nora Body reference sheet exactly: a tall young woman (178 cm) with natural, normal proportions. Her body shape never changes from frame to frame. OUTFIT LOCK: Nora wears the exact field outfit shown in the Nora Body reference sheet (NO fur, NO hood, NO shearling collar, NO cloak, NO modern logo, NO outfit variations). From the very first frame to the last, Nora is fully dressed in the complete outfit. No part of the outfit appears, disappears or changes. The only exception is the turtle-shell flask at her left hip: whether it is there, tied on, or gone follows the state sentence and the timeline of this clip, not the Body sheet.",
+        "state": "Her hair and clothes are still soaking wet from the creek. The turtle-shell flask hangs at her left hip on its twisted plant-fibre cord, exactly as on the Nora Body sheet."
+      },
+      {
+        "name": "the bull Triceratops",
+        "visual_lock": "Matches the Bò Đực reference exactly: adult bull Triceratops, its LEFT brow horn broken off to a short rough stump, its RIGHT brow horn long and intact, an old pale scar across the LEFT half of its frill. The broken horn is always on its own left side and never heals. Visceral living animal biology filmed in the wild: rough non-reflective hide, matte scales, deep biological wrinkles and folds, grey-brown silt caked into crevices and on the lower limbs, flanks visibly moving with each breath; clean dry nostrils with faint moisture at the rim only, breathing transparent clean air. Triceratops hide like an African black rhinoceros: matte polygonal basement scales, prominent conical keratin tubercles, dry keratin horn sheaths with hairline micro-fractures.",
+        "state": "Grazing. Even when standing still it keeps continuous living micro-motion: ribs rising and falling with each breath, eyes blinking, skin twitching at flies, small weight shifts; it never freezes like a statue."
+      },
+      {
+        "name": "the old female Triceratops",
+        "visual_lock": "Matches the Con Cái Già reference exactly: old female Triceratops, smaller than the bull, faded pale grey-beige frill with a chipped, notched edge, worn blunt brow horns, sway-backed. Visceral living animal biology filmed in the wild: rough non-reflective hide, matte scales, deep biological wrinkles and folds, grey-brown silt caked into crevices and on the lower limbs, flanks visibly moving with each breath; clean dry nostrils with faint moisture at the rim only, breathing transparent clean air. Triceratops hide like an African black rhinoceros: matte polygonal basement scales, prominent conical keratin tubercles, dry worn keratin horn sheaths with hairline micro-fractures.",
+        "state": "Grazing. Even when standing still it keeps continuous living micro-motion: ribs rising and falling with each breath, eyes blinking, skin twitching at flies, small weight shifts; it never freezes like a statue."
+      },
+      {
+        "name": "the juvenile Triceratops",
+        "visual_lock": "Matches the Con Non reference exactly: a two-year-old Triceratops about 3 m long and hip-high to an adult, tiny rounded horn nubs, short frill, a pale crescent patch on its RIGHT cheek only. Visceral living animal biology filmed in the wild: rough non-reflective hide, matte scales, deep biological wrinkles and folds, grey-brown silt caked into crevices and on the lower limbs, flanks visibly moving with each breath; clean dry nostrils with faint moisture at the rim only, breathing transparent clean air. Young Triceratops hide: fine matte pebbly scales, small keratin horn nubs.",
+        "state": "Grazing. Even when standing still it keeps continuous living micro-motion: ribs rising and falling with each breath, eyes blinking, skin twitching at flies, small weight shifts; it never freezes like a statue."
+      }
+    ],
+    "in_place": "Everything is already in place from the very first frame: Nora standing at the left edge; the bull, the old female and the juvenile grazing in the background right, each a separate body. Every person, animal and object stays where it is placed unless the timeline moves it; nothing appears suddenly, nothing vanishes.",
+    "shot": "Nora at the left edge of the frame; the herd grazing in the background right about 30 m away.",
+    "timeline_action": {
+      "0-3s": "Nora sits down cross-legged on the leaf litter while speaking.",
+      "3-7s": "She sits still, hands resting on her knees, eyes on the herd.",
+      "7-10s": "She turns her face to the lens on the last line, then back to the herd; she does not move again."
+    },
+    "speech": {
+      "speaker": "Nora",
+      "delivery": "From the very first frame at second 0, Nora begins speaking immediately. Calm, resolved, quiet; each short sentence a decision. Nora's voice (Laomedeia): upbeat, mid-high, energetic conversational female voice, fast confident vlog delivery with dry humor; rises into real cracking screams in danger; drops to a fast whisper when hiding.",
+      "dialogue": [
+        {
+          "t": "0-3s",
+          "speaker": "Nora",
+          "line": "So I can't walk in. Not yet."
+        },
+        {
+          "t": "3-7s",
+          "speaker": "Nora",
+          "line": "I sit here at the edge, where they can see me."
+        },
+        {
+          "t": "7-10s",
+          "speaker": "Nora",
+          "line": "I don't move. And I wait."
+        }
+      ]
+    },
+    "dramatic_craft": {
+      "beat": "Choose patience over force.",
+      "value_turn": "- outside the herd / + a plan.",
+      "subtext": "Act 1 ends in partial defeat.",
+      "prop_and_detail": "The edge she sits on will matter (rule three in Act 2)."
+    },
+    "audio": "Nora's quiet voice; leaf litter rustling as she sits; grazing crunches; birds.",
+    "physics": "She lowers herself slowly over about 2 seconds; then only breathing movement.",
+    "negative_constraints": [
+      "The camera viewpoint and her gripping arm are completely outside the visible frame and never seen.",
+      "No subtitles, captions, labels, icons or text of any kind appear anywhere in the frame.",
+      "The image is clean footage only: no interface, no recording indicator, no battery icon, no zoom label, no names, no text or symbols.",
+      "Only Nora speaks, in English; the animals make only animal sounds, never words.",
+      "Deep focus: strictly NO shallow depth of field, strictly NO bokeh, no blurred background.",
+      "Dialogue word count strictly 24 words, exactly as written in script.md.",
+      "FACE LOCK: exact 1:1 match to the attached Nora face reference; strictly NO square jaw, NO thin lips, NO freckles, NO red or auburn hair, NO messy bun, NO jewelry, NO face drift.",
+      "BODY and OUTFIT LOCK: build, proportions and outfit exactly as the Nora Body reference sheet; NO fur, NO hood, NO cloak, NO outfit variations.",
+      "ANTI-SMOKE LOCK: strictly NO smoke, strictly NO breath vapour, strictly NO steam, strictly NO white plumes from any nostril; clean dry nostrils breathing transparent clean air.",
+      "ANTI-CGI LOCK: strictly NOT a 3D digital render, NOT a plastic toy model, NOT a museum resin statue, NO specular plastic sheen, NO artificial god rays, NO sunlight streaming beams, NO studio rim light.",
+      "Each animal is a separate body; animals never overlap, merge, duplicate or vanish."
+    ],
+    "start_frame": {
+      "type": "EDIT_IMAGE",
+      "source_media_id": "<Nora face media_id>",
+      "image_prompt": "Single still photograph, frame 0 of this shot, before any movement. Raw handheld natural-history field footage, Hell Creek floodplain in spring: small broadleaf trees with sycamore-, magnolia- and laurel-like leaves, a few fan palms and tall dawn redwoods at wet sites, horsetails at the water's edge, leaf litter and moss on grey-brown silt. True-to-life muted colours, fine 35mm film grain, raw 35mm wildlife documentary realism, deep focus, deep depth of field (f/8 aperture), entire frame sharp from foreground to distant horizon. Real amateur footage filmed by one person who is physically present. Setting: Hell Creek river floodplain, Montana, 66 million years ago, spring, on the day of the Chicxulub impact. Location: the game corridor exactly as in the Hell Creek Game Corridor reference: a wide, chaotic animal-trampled corridor of deeply churned grey-brown silt and olive-grey clay with massive rounded ceratopsian foot depressions holding cloudy water, cutting from a small clearing into a spring broadleaf woodland; one big moss-covered fallen log lies along the right side of the corridor; a shallow grey mud wallow in the clearing; low shrubs, vines, moss, leaf litter and a few fan palms. Light: low raking early-morning sunlight from behind the subject, warm side light skimming the grey-brown mud and catching the edges of leaves and skin, thin haze over the river, deep soft shadows, natural documentary exposure. Natural sun and sky only, as on a real field day at about 55 degrees north in spring; organic micro-shadows under leaves and bodies; no artificial fill light. Composition (medium shot): Nora at the left edge of the frame; the herd grazing in the background right about 30 m away. Already in place: Nora standing at the left edge; the bull, the old female and the juvenile grazing in the background right, each a separate body. Nora's face is an exact 1:1 identical match to the attached Nora reference image. Perfectly preserve her exact facial likeness from the reference photo without changes. Nora is a young 22-23-year-old woman with a youthful soft feminine heart-shaped face, delicate rounded chin, soft rounded youthful cheeks, petite straight nose and distinctively FULL PLUMP PILLOWY LIPS with a defined Cupid's bow and pouty lower lip; hazel-green eyes; honey-blonde hair in a high wavy ponytail with wispy curtain bangs framing her forehead (strictly NO red hair, NO auburn hair, NO messy bun, NO freckles). Authentic unretouched outdoor skin texture, fine pores, natural perspiration sheen, light dirt smudges, natural wind-blown stray hair strands, zero makeup. She wears no jewelry: no earrings, no necklace, no rings. STRICTLY FORBIDDEN: strictly NO square jaw, NO long rectangular face, NO thin lips, NO hollow cheeks, NO aged appearance (must look 22-23), NO facial distortion, NO face drift. Her honey-blonde ponytail is tied high at the crown of her head, never low at the nape; the wispy curtain bangs stay over the edges of her forehead and frame both cheeks. BODY LOCK: Nora's build and proportions match the Nora Body reference sheet exactly: a tall young woman (178 cm) with natural, normal proportions. Her body shape never changes from frame to frame. OUTFIT LOCK: Nora wears the exact field outfit shown in the Nora Body reference sheet (NO fur, NO hood, NO shearling collar, NO cloak, NO modern logo, NO outfit variations). From the very first frame to the last, Nora is fully dressed in the complete outfit. No part of the outfit appears, disappears or changes. The only exception is the turtle-shell flask at her left hip: whether it is there, tied on, or gone follows the state sentence and the timeline of this clip, not the Body sheet. Her hair and clothes are still soaking wet from the creek. The turtle-shell flask hangs at her left hip on its twisted plant-fibre cord, exactly as on the Nora Body sheet. Matches the Bò Đực reference exactly: adult bull Triceratops, its LEFT brow horn broken off to a short rough stump, its RIGHT brow horn long and intact, an old pale scar across the LEFT half of its frill. The broken horn is always on its own left side and never heals. Visceral living animal biology filmed in the wild: rough non-reflective hide, matte scales, deep biological wrinkles and folds, grey-brown silt caked into crevices and on the lower limbs, flanks visibly moving with each breath; clean dry nostrils with faint moisture at the rim only, breathing transparent clean air. Triceratops hide like an African black rhinoceros: matte polygonal basement scales, prominent conical keratin tubercles, dry keratin horn sheaths with hairline micro-fractures. Matches the Con Cái Già reference exactly: old female Triceratops, smaller than the bull, faded pale grey-beige frill with a chipped, notched edge, worn blunt brow horns, sway-backed. Visceral living animal biology filmed in the wild: rough non-reflective hide, matte scales, deep biological wrinkles and folds, grey-brown silt caked into crevices and on the lower limbs, flanks visibly moving with each breath; clean dry nostrils with faint moisture at the rim only, breathing transparent clean air. Triceratops hide like an African black rhinoceros: matte polygonal basement scales, prominent conical keratin tubercles, dry worn keratin horn sheaths with hairline micro-fractures. Matches the Con Non reference exactly: a two-year-old Triceratops about 3 m long and hip-high to an adult, tiny rounded horn nubs, short frill, a pale crescent patch on its RIGHT cheek only. Visceral living animal biology filmed in the wild: rough non-reflective hide, matte scales, deep biological wrinkles and folds, grey-brown silt caked into crevices and on the lower limbs, flanks visibly moving with each breath; clean dry nostrils with faint moisture at the rim only, breathing transparent clean air. Young Triceratops hide: fine matte pebbly scales, small keratin horn nubs. Nothing that records the scene is visible. No subtitles, captions, labels, icons or text of any kind appear anywhere in the frame."
+    }
+  }
+]

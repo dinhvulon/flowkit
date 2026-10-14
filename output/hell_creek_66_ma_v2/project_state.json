@@ -1,26 +1,26 @@
 {
-  "project_id": "6cb771f6-3b2d-437a-a2cb-bd6106d43522",
-  "video_id": "51995d85-cb99-48fc-bbe2-dd532682a8cb",
+  "account": "new account 2026-10-14",
+  "project_id": "34396f76-de18-4bb7-8596-d8c78db2c563",
+  "video_id": "bdedcb6c-2fba-4ab5-9c91-4c8cee4d79e1",
   "character_ids": {
-    "N": "5280cb44-302f-46d1-8d1c-1d467415d3e8",
-    "NB": "cb16e31f-e8f1-47a3-ae61-16cb57b5a47f",
-    "NH": "d3406f77-6a6d-4aa9-b918-c2162d74b148",
-    "BD": "b7c77c5d-1d2f-4c4f-8127-b86e6b8e0f50",
-    "CG": "65570fb0-5c69-4f1a-9ce8-3c618ab419f8",
-    "CN": "2d496eb3-9dd9-4065-815e-bbffeba85479",
-    "TR": "909fc4c0-4186-4124-a35b-f4b464891f65",
-    "AR": "4e595fef-9209-4bab-ba77-e92c89f97ba9",
-    "ED": "299aa9fb-0072-4292-a5a0-e147a5b92492",
-    "BS": "686b7705-1f2f-47bd-b80c-17936c31032d",
-    "IN": "fe43ec36-9856-411c-a34c-e4a524df8ac0",
-    "CA": "c05f375d-7a49-4718-9d15-1578bb3c396f",
-    "LB": "f0b011b0-c7f2-4130-91b1-5275155aebec",
-    "LC": "9433572b-b72b-4515-8cb7-8468f3e161b7",
-    "LW": "ca554f70-8fea-4dd3-b157-b3a534108194"
+    "N": "8cc43a0e-e143-41b4-b36d-f4e050265153",
+    "NB": "109feff6-8152-4d70-8776-5de4ee3aa43d",
+    "NH": "613c1591-d940-4d91-960a-00f35b3265e9",
+    "BD": "e03628ba-c6b0-496a-82e5-1fb11d4328cf",
+    "CG": "c7a8eef5-c256-430f-8c7a-adae7adbb023",
+    "CN": "734cef6d-77a9-4860-8e66-7d660902f019",
+    "TR": "d6933d0f-51bb-4189-a24e-e515b6e66f66",
+    "AR": "83d33466-b003-4140-b7ba-1fb32f24defb",
+    "ED": "8b21428a-3977-4b4d-96d4-2af0e7aff628",
+    "BS": "b3c36bfb-9290-4e4c-bf29-d0782b3c5d45",
+    "IN": "62d98bf4-f6e6-4472-b6ed-9f0a6f10af5a",
+    "CA": "f914382f-a5b4-4c03-a8db-78f6ef2b48b5",
+    "LB": "7d660646-f7c2-4f4f-9b64-f12f90708797",
+    "LC": "90f685df-dc3d-40bf-974d-c872e4bd638c",
+    "LW": "bf78c1c2-b79a-4c8b-9f4c-fe56ea3854ca"
   },
   "uploads": {
-    "nora_face": "41f6f329-21ac-4862-a899-59c73b664a0f",
-    "nora_body_bare": "605d6efa-521a-468d-88a4-5847e5cc8f23"
-  },
-  "nh_retry_request": "566e60f7-b527-4c65-bb62-824b8619bca4"
+    "nora_face": "3a3b6dbc-a1e5-4045-9713-b878b4bec006",
+    "nora_body_bare": "b513a211-a468-4ee4-bdb0-8bfd2b7d0d69"
+  }
 }

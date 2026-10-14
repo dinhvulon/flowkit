@@ -12,7 +12,7 @@ FORBIDDEN_GHOST_DEVICE_PATTERNS = [
     (r"\b(phone|smartphone)\b", "FORBIDDEN: Mentioning 'phone' or 'smartphone' causes AI to render a 3D phone device in hand and switches camera to 3rd-person spectator."),
     (r"\b(selfie[- ]?stick)\b", "FORBIDDEN: Mentioning 'selfie stick' renders a physical stick in the shot."),
     (r"\b(device)\b", "FORBIDDEN: Mentioning 'device' causes AI to render gadgets or screens."),
-    (r"(?<!off-)(?<!on-)\bscreen\b", "FORBIDDEN: Mentioning 'screen' (except 'off-screen' / 'on-screen') may cause AI to render a phone or monitor screen. Use 'in the frame' instead."),
+    (r"(?<!off-)(?<!on-)(?<!split )\bscreen\b", "FORBIDDEN: Mentioning 'screen' (except 'off-screen' / 'on-screen' / Rule 34 'split screen') may cause AI to render a phone or monitor screen. Use 'in the frame' instead."),
     (r"\b(celular|tel[eé]fono|m[oó]vil|pantalla|dispositivo|palo\s+de\s+selfie|c[aá]mara)\b", "FORBIDDEN (Spanish dialogue): device words in Spanish ('celular', 'teléfono', 'móvil', 'pantalla', 'dispositivo', 'palo de selfie', 'cámara') render a gadget in the scene, same as 'phone'. Rephrase the line (e.g. 'miren esto' instead of 'miren a la cámara')."),
     (r"\bnegative:\b", "FORBIDDEN: 'Negative:' lines are banned in plain-text prompts. Use plain constraint sentences in prompt body, or use 'negative_constraints' in JSON prompts."),
     (r"\b(?:starts?\s+(?:from\s+)?(?:just\s+)?behind|from\s+just\s+behind)\s+(?:her|his|their)\s+(?:head|back)\b", "FORBIDDEN (Rule 41): Starting behind character's head/back and turning around switches to 3rd-person and causes AI to render a physical camera/lens in hand (Camera Materialization Glitch)."),
@@ -208,6 +208,17 @@ def lint_prompt(prompt: str) -> list[dict]:
                         iss["clip_id"] = f"ref:{ref_name}"
                         all_issues.append(iss)
             return all_issues
+        if isinstance(json_obj, dict) and "reference_entities" in json_obj:
+            # ref_prompts.json (reference image prompts): lint each entity prompt as plain text.
+            # negative_prompt fields hold "NOT god rays / NOT bokeh ..." on purpose, so they are skipped,
+            # like negative_constraints in video prompts.
+            all_issues = []
+            for e in json_obj.get("reference_entities", []):
+                if isinstance(e, dict) and isinstance(e.get("prompt"), str):
+                    for iss in lint_prompt(e["prompt"]):
+                        iss["clip_id"] = f"ref:{e.get('code') or e.get('entity_name', 'ref')}"
+                        all_issues.append(iss)
+            return all_issues
         return lint_json_prompt(json_obj)
 
     issues = []
@@ -393,6 +404,16 @@ def run_json_prompt_tests():
     schema_types = [iss["type"] for iss in issues_schema]
     assert "JSON_SCHEMA_MISSING_KEY" in schema_types, f"Expected JSON_SCHEMA_MISSING_KEY, got: {schema_types}"
     print("  [PASS] Test 4: Missing schema keys successfully caught.")
+
+    # Test 5: ref_prompts.json schema - entity prompts linted, negative_prompt skipped, Rule 34 'split screen' allowed
+    refs_ok = {"material": {"negative_prompt": "NOT god rays, NOT bokeh"},
+               "reference_entities": [{"code": "LB", "prompt": "One single unified photograph, strictly NO humans, NO split screen, NO text.",
+                                       "negative_prompt": "NOT god rays, NOT bokeh"}]}
+    assert lint_prompt(json.dumps(refs_ok)) == [], "Expected 0 issues for clean ref_prompts schema"
+    refs_bad = {"reference_entities": [{"code": "X", "prompt": "A creek with god rays and a phone on a rock."}]}
+    bad_types = [iss["type"] for iss in lint_prompt(json.dumps(refs_bad))]
+    assert "GHOST_DEVICE" in bad_types and "ARTIFICIAL_LIGHTING_VIOLATION" in bad_types, bad_types
+    print("  [PASS] Test 5: ref_prompts schema linted per entity; negative_prompt and 'split screen' allowed.")
 
     print("\nAll JSON Prompt Linter Tests PASSED! 🎉")
 

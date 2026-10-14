@@ -1,56 +1,62 @@
-# Handoff — Hell Creek 66 Ma v2 (dừng 14/10/2026 ~17:15)
+# Handoff — Hell Creek 66 Ma v2 (cập nhật 14/10/2026 ~19:45, tài khoản Google mới)
 
 ## Trạng thái
 
-- Kịch bản v2.1 đã duyệt (10 flag): `story-bible.md`, `script.md`, `outfit.json`, `ref_prompts.json`.
-- Project FlowKit đã tạo — `project_state.json`:
-  - project_id `6cb771f6-3b2d-437a-a2cb-bd6106d43522`
-  - video_id `51995d85-cb99-48fc-bbe2-dd532682a8cb`
-  - material `cretaceous_documentary`, omni_flash, Nora voice = Laomedeia
-- Nora (N) dùng ảnh mặt đã upload `41f6f329-21ac-4862-a899-59c73b664a0f`. Body trần upload `605d6efa-521a-468d-88a4-5847e5cc8f23`.
-- Script sinh ref theo đợt và monitor 5 phút **đã dừng**. Đợt 5 (LC, LW) **chưa gửi**.
+- Kịch bản v2.1 đã duyệt: `story-bible.md`, `script.md`, `outfit.json`, `ref_prompts.json`.
+- Đã đổi tài khoản Google. Project cũ (`6cb771f6…`) và toàn bộ media_id cũ không dùng được nữa. Thông tin cũ lưu trong `project_state_old_account.json`.
+- Project mới — `project_state.json`:
+  - project_id `34396f76-de18-4bb7-8596-d8c78db2c563` (đã đặt làm active project)
+  - video_id `bdedcb6c-2fba-4ab5-9c91-4c8cee4d79e1`
+  - material `cretaceous_documentary` (đã tạo lại trong DB), omni_flash, allow_voice, Nora = Laomedeia
+  - `image_prompt` của mọi entity = prompt trong `ref_prompts.json` (kèm negative); NB = `outfit.json` edit_prompt
+- Upload: mặt Nora `3a3b6dbc-a1e5-4045-9713-b878b4bec006` (đã gán vào N), Body trần `b513a211-a468-4ee4-bdb0-8bfd2b7d0d69`.
+- Đã sinh đủ 14 ref (1 EDIT + 13 GENERATE), không lỗi. Mọi ảnh đã tải về `refs/`, xóa logo, upload bản sạch và PATCH media_id sạch.
+  - Raw/clean id: `ref_clean_log.json`. Request id: `ref_gen_log.json`.
+  - NB sạch được copy sang `uploads/nora_body_cretaceous_dressed_clean.jpg`.
+- Review board: `python tools/review_server.py 8200` → http://localhost:8200/review_refs
 
-## Ảnh ref (14)
+## Kết quả review ảnh ref — 3 vòng (14/10)
 
-| Mã | Trạng thái | media_id Flow (ảnh thô, còn logo) |
+Ảnh đang dùng: `refs/<CODE>_clean.jpg`. Các bản cũ lưu trong `refs/r1`, `refs/r2`, `refs/r3`. Media_id lấy theo `ref_clean_log.json`; lịch sử các vòng xem `ref_clean_log_history.json`.
+
+| Mã | Bản dùng | Ghi chú |
 |---|---|---|
-| NB Nora Body (EDIT) | ✅ COMPLETED | 9362d971-1810-4214-8362-d6c7c85ab087 |
-| BD | ✅ COMPLETED | beecccad-efe4-4ff8-930f-4933390ba757 |
-| CG | ✅ COMPLETED | af75eb7a-3eba-4fe5-a484-3f094606ce7a |
-| CN | ✅ COMPLETED | e2f8213e-da1e-4860-9dc6-6b4287514f70 |
-| TR | ✅ COMPLETED | 2d79b7e0-c86d-49fe-994d-311dbb517ec0 |
-| AR | ✅ COMPLETED | d738c1bd-02e4-4fbb-b612-2be3bef11d7d |
-| NH v1 | ❌ UNSAFE_GENERATION (prompt cũ — đã thay bằng prompt sạch trong `ref_prompts.json`) | — |
-| ED, BS | ❌ PER_MODEL_DAILY_QUOTA_REACHED | — |
-| IN, CA, LB, NH v2 | ⚠️ Lúc dừng còn PROCESSING; worker đang retry vì lỗi QUOTA | — |
-| LC, LW | ⏸ chưa gửi | — |
+| N | upload | — |
+| NB | vòng 2 | Áo ôm hơn, hông rõ; ngực vẫn nhỏ hơn Body trần (giới hạn của EDIT). Vòng 3 bị loại vì bình mai rùa sang hông phải. Lộ cằm ở panel 1–2. |
+| NH | vòng 1 | Tay hơi già, vệt bùn hơi xanh (lỗi nhỏ) |
+| BD | vòng 3 | Sừng gãy và sẹo đúng bên trái ở cả 3 panel. Bố cục 2 panel xếp chồng + 1 cận đầu 3/4. Đã tẩy cục bộ 2 chữ số "2" do model tự chèn. Diềm có vài đốm cam nhạt. |
+| CG | vòng 2 | Đạt; lưng võng chưa rõ, sừng hơi dài |
+| CN | vòng 3 | Đạt; da hơi giống render |
+| TR | vòng 3 | Đạt (miệng khép kín, sẹo bên trái) |
+| AR | vòng 2 | Đạt |
+| ED | vòng 3 | Mỏ vịt đúng; đuôi bị cắt ở mép panel (cả 3 vòng đều vậy) |
+| BS | vòng 1 | Đạt |
+| IN | vòng 3 | Giới hạn: cánh gấp vẫn vẽ thành tấm tam giác (cả 3 vòng). Chỉ dùng cho cảnh xa. |
+| CA | vòng 2 | Đạt; da hơi bóng như cao su, đầu có mào thịt |
+| LB / LC / LW | vòng 1 | Đạt; LB và LW có dải cỏ nhỏ |
 
-**Nguyên nhân dừng:** hết quota ảnh trong ngày của model (`PUBLIC_ERROR_PER_MODEL_DAILY_QUOTA_REACHED`).
+Lỗi chung: ảnh đã xóa logo còn một vết nhòe nhỏ ở góc dưới bên phải.
+Bài học rút ra đã ghi vào skill: production-lessons #93 và prompt-lock B dòng 39.
 
-## Tối làm tiếp — theo thứ tự
+## Prompt 112 clip (14/10, ~20:10) — đã xong, chờ user duyệt
 
-1. **Pre-flight:** chạy `GET /health` và `GET /api/flow/status`, đồng thời mở sẵn tab flow.google.com.
-2. **Kiểm tra 4 request còn treo** (IN `bbf69d8e`, CA `5ee10dd3`, LB `b0e3c249`, NH v2 `566e60f7`) bằng `GET /api/requests/{id}`. Cái nào hết retry vì QUOTA thì để FAILED. Cái nào COMPLETED thì ghi vào `ref_gen_log.json`.
-   - `ref_gen_log.json` hiện chỉ có NB…BS. `post_refs.py` chỉ xử lý mã có `status: COMPLETED` trong log, nên phải bổ sung log trước khi chạy.
-3. **Xử lý 6 ref đã xong (không tốn credit):** chạy `scratchpad/hc2/post_refs.py`. Script sẽ tải ảnh → `remove_watermark_from_image.py` → upload ảnh sạch → PATCH `media_id` → tạo `review_refs.html`.
-   - NB được copy thêm sang `uploads/nora_body_cretaceous_dressed_clean.jpg`.
-   - Xem kết quả tại http://localhost:8200/review_refs (cần chạy `python tools/review_server.py 8200`).
-4. **User duyệt 6 ref đó.**
-5. **Hỏi user trước khi gửi lại** (Rule 29) các ref còn thiếu, tối đa 8 cái: ED, BS, LC, LW, cùng những cái trong IN/CA/LB/NH v2 bị fail.
-   - Chỉ gửi khi quota đã reset. Nếu muốn đổi model ảnh thì dùng `/fk-change-model`.
-   - Gửi mỗi đợt 3 request song song (user yêu cầu). Gặp QUOTA hoặc UNUSUAL_ACTIVITY thì dừng ngay.
-   - Lưu ý: `gen_refs_waves.py` có dừng khi gặp UNUSUAL_ACTIVITY nhưng **chưa dừng khi gặp QUOTA**. Cần thêm `'quota' in err.lower()` vào điều kiện dừng trước khi chạy lại, và sửa `WAVES` chỉ còn các mã thiếu.
-6. Sau khi đủ 14 ref:
-   - Cập nhật dòng "Ref (14 ảnh)" trong `story-bible.md`.
-   - Chạy `/fk-script-to-prompts` cho 112 clip + `lint_prompt.py`.
-   - Tạo scenes → Start Frame → cổng duyệt ảnh → video. Mỗi bước đều chờ user đồng ý.
+- `prompts_act1.json` (18) · `prompts_act2.json` (25) · `prompts_act3.json` (32) · `prompts_act4.json` (28) · `prompts_act5.json` (9) = 112 clip; `vn.json` = bản tiếng Việt (hình, beat, thoại EN/VI, số từ).
+- Mỗi clip có thêm `start_frame` (EDIT_IMAGE + mặt Nora / GENERATE_IMAGE / PREV_LAST_FRAME), kèm `image_prompt`. Khi gửi `video_prompt` lên Flow thì bỏ khối `start_frame`.
+- `lint_prompt.py`: 5/5 file đạt. Đã quét thêm: không có từ thiết bị (kể cả trong negative_constraints), không có trail/grass/red clay, không mô tả ngực. Thoại khớp nguyên văn và đúng số từ §9.
+- BODY LOCK mới: hình thể bình thường, ảnh Nora Body là tham chiếu (user 14/10). Script §2.2 đã sửa.
+- Bộ build: `scratchpad/hc2/prompts/` gồm `common.py`, `act1..5.py`, `build.py`. Sửa dữ liệu ở đó rồi chạy lại `python build.py`.
+
+## Việc tiếp theo
+
+1. User duyệt prompt (đọc `vn.json` hoặc file JSON).
+2. Tạo 112 scene (POST /api/scenes) → PATCH `duration` + `narrator_text` (không tốn credit).
+3. Start Frame → cổng duyệt ảnh → video. Chạy clip khó nhất trước (A1-12), mỗi bước đều hỏi trước (Rule 29).
 
 ## File
 
-- Script tạm: `C:/Users/ADMINI~1/AppData/Local/Temp/claude/c--flowkit/924dd737-fdc4-4102-9cbc-03a8660cba2c/scratchpad/hc2/`
-  - `setup_project.py` (đã chạy)
-  - `gen_refs_waves.py`
-  - `post_refs.py`
-  - `waves.log`
-  - Thư mục scratchpad này có thể bị xóa khi sang phiên mới. Nếu mất thì viết lại theo mô tả ở bước 3 và bước 5.
-- Log sinh ref: `output/hell_creek_66_ma_v2/ref_gen_log.json`
+- Script tạm (phiên này): `C:/Users/Admin/AppData/Local/Temp/claude/c--flowkit/7fe7b637-29ac-43f7-8647-8f5f298985c5/scratchpad/hc2/`
+  - `setup_project.py`: đã chạy
+  - `prompts/`: bộ build prompt 112 clip
+  - `revise_r2.py` / `revise_r3.py`: chỉnh prompt cho từng vòng (prompt cũ giữ lại trong `prompt_r1` / `prompt_r2` của `ref_prompts.json` và `edit_prompt_r1` / `_r2` của `outfit.json`)
+  - `gen_refs.py`: gửi batch + theo dõi; dừng khi gặp QUOTA/UNUSUAL_ACTIVITY
+  - `post_refs.py`: tải ảnh → xóa logo → upload ảnh sạch → PATCH → tạo `review_refs.html`
