@@ -1,0 +1,26 @@
+{
+  "project_id": "6cb771f6-3b2d-437a-a2cb-bd6106d43522",
+  "video_id": "51995d85-cb99-48fc-bbe2-dd532682a8cb",
+  "character_ids": {
+    "N": "5280cb44-302f-46d1-8d1c-1d467415d3e8",
+    "NB": "cb16e31f-e8f1-47a3-ae61-16cb57b5a47f",
+    "NH": "d3406f77-6a6d-4aa9-b918-c2162d74b148",
+    "BD": "b7c77c5d-1d2f-4c4f-8127-b86e6b8e0f50",
+    "CG": "65570fb0-5c69-4f1a-9ce8-3c618ab419f8",
+    "CN": "2d496eb3-9dd9-4065-815e-bbffeba85479",
+    "TR": "909fc4c0-4186-4124-a35b-f4b464891f65",
+    "AR": "4e595fef-9209-4bab-ba77-e92c89f97ba9",
+    "ED": "299aa9fb-0072-4292-a5a0-e147a5b92492",
+    "BS": "686b7705-1f2f-47bd-b80c-17936c31032d",
+    "IN": "fe43ec36-9856-411c-a34c-e4a524df8ac0",
+    "CA": "c05f375d-7a49-4718-9d15-1578bb3c396f",
+    "LB": "f0b011b0-c7f2-4130-91b1-5275155aebec",
+    "LC": "9433572b-b72b-4515-8cb7-8468f3e161b7",
+    "LW": "ca554f70-8fea-4dd3-b157-b3a534108194"
+  },
+  "uploads": {
+    "nora_face": "41f6f329-21ac-4862-a899-59c73b664a0f",
+    "nora_body_bare": "605d6efa-521a-468d-88a4-5847e5cc8f23"
+  },
+  "nh_retry_request": "566e60f7-b527-4c65-bb62-824b8619bca4"
+}

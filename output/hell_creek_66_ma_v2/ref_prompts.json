@@ -1,0 +1,221 @@
+{
+  "project": "hell_creek_66_ma_v2",
+  "version": "2026-10-14 v2 (research: .omc/research/hell_creek_66ma_v2_research.md)",
+  "notes": [
+    "Every ref is 16:9 (Rule 5). Creatures use the 3-panel Creature Turnaround Sheet of /fk-character-design (Rule 58): Panel 1 left three-quarter, Panel 2 right three-quarter, Panel 3 frontal head close-up.",
+    "Locations and the carcass are ONE single photograph with no humans (Rule 34).",
+    "All refs use neutral bright overcast daylight so each clip's own light key (script.md section 3) controls the time of day.",
+    "Research corrections applied: grey-brown silt and olive-grey clay (no red clay), spring broadleaf woodland with a few fan palms and dawn redwoods (no giant tree ferns, no grass, no tropical jungle), no breath vapour.",
+    "Nora face is reused (upload only). Nora Body is a NEW sheet: one EDIT_CHARACTER_IMAGE from uploads/nora_body_v3_clean.jpg (user choice 2026-10-14). See outfit.json."
+  ],
+  "material": {
+    "id": "cretaceous_documentary",
+    "name": "Cretaceous Field Documentary (natural light)",
+    "style_instruction": "Raw handheld natural-history field footage recorded on location on a Late Cretaceous river floodplain in spring. Unprocessed documentary look with true-to-life muted greens and browns, a restrained honest grade, fine 35mm film grain and deep focus at f/8 so the whole frame is sharp from foreground to the far treeline. Light comes only from the sun and sky as it would on a real field day at about 55 degrees north. Extinct animals follow current palaeontological reconstruction: rough non-reflective pachyderm hide or fine pebbly scales, matte polygonal basement scales, deep biological wrinkles, scars, flies, grey-brown river silt caked on legs and bellies, ribs that visibly move with each breath through clean dry nostrils. Everything carries the weight and imperfection of real wildlife footage filmed by one person who is physically present.",
+    "negative_prompt": "NOT a 3D render, NOT CGI, NOT a video-game cinematic, NOT a movie trailer, NOT concept art, NOT a matte painting, NOT a museum diorama, NOT a resin statue, NOT a plastic toy, NOT plastic or waxy skin, NOT glossy specular scales, NOT god rays, NOT volumetric light beams, NOT studio rim light, NOT beauty lighting, NOT teal-and-orange grade, NOT HDR, NOT oversaturated, NOT shallow depth of field, NOT bokeh, NOT slow motion, NOT a smooth flying camera move, NOT breath vapour, NOT steam, NOT smoke plumes from nostrils, NOT red clay, NOT giant tree ferns, NOT tropical jungle, NOT grass meadow, NOT mountains, NOT a desert, NOT snow, NOT tire tracks, NOT sawn logs, NOT any modern manufactured object, NOT any subtitle, caption, label, icon, watermark or text.",
+    "scene_prefix": "Raw handheld field documentary footage, Hell Creek river floodplain in spring 66 million years ago: small broadleaf trees with sycamore-, magnolia- and laurel-like leaves, a few fan palms and tall dawn redwoods at wet sites, horsetails at the water's edge, leaf litter and moss on grey-brown silt. Natural light only, true colours, deep focus, fine film grain, not a 3D render.",
+    "lighting": "Natural sun and sky only, spring at about 55 degrees north: low raking light near sunrise and sunset, soft overcast or broken cloud, organic micro-shadows, no fill, no god rays, no rim light."
+  },
+  "reference_entities": [
+    {
+      "entity_name": "Nora",
+      "code": "N",
+      "type": "character_face",
+      "action": "UPLOAD_ONLY",
+      "source_file": "uploads/nora_main_clean.jpg",
+      "description": "Face and hair 4-panel sheet (front close-up, 3/4, profile, back of ponytail). Reused, 0 credit. Upload into the new Flow project to get a project-local UUID. Note: the sheet shows small gold hoop earrings and a thin gold necklace; every video_prompt adds 'she wears no earrings, no necklace and no jewelry of any kind'."
+    },
+    {
+      "entity_name": "Nora Body",
+      "code": "NB",
+      "type": "character_body_dressed",
+      "action": "EDIT_CHARACTER_IMAGE",
+      "description": "3-panel dressed body sheet (front, 3/4, back), cropped at the shoulders, no face. One EDIT from the bare body; prompt = outfit.json edit.edit_prompt. Remove watermark and re-upload before use (Rule 28).",
+      "source_file": "uploads/nora_body_v3_clean.jpg"
+    },
+    {
+      "entity_name": "Nora Hand",
+      "code": "NH",
+      "type": "character_hands_sheet",
+      "aspect_ratio": "16:9",
+      "action": "GENERATE_CHARACTER_IMAGE",
+      "regenerate_reason": "Old hand sheet said 26 years old with freckles; it contradicts the face ref (Rule 59 section 4).",
+      "prompt": "One 16:9 hand reference sheet for a wildlife field guide, plain light-grey background, four panels side by side: (1) two adult hands seen from the back, fingers relaxed; (2) two open adult palms facing the viewer; (3) a right hand in a loose half-grip seen from the side; (4) a left hand resting flat on a smooth grey river stone seen from above. Each panel shows only the hand and wrist. Light natural skin tone, long slender fingers, short clean unpainted nails, fine knuckle creases, a faint grey-brown silt smudge across the right knuckles. Realistic unretouched texture, flat natural overcast daylight, deep focus, fine 35mm film grain. Same skin tone, hand size and finger length in all four panels. No rings, no bracelets, no watch, no jewelry. No text, no labels.",
+      "negative_prompt": "NOT freckles, NOT wrinkled hands, NOT painted nails, NOT extra fingers, NOT fused fingers, NOT glossy plastic skin, NOT a 3D render, NOT text.",
+      "prompt_v1_blocked": "One 16:9 hand reference sheet on a plain light-grey background, four panels side by side: (1) both hands seen from the back, fingers relaxed; (2) both palms facing the viewer; (3) the right hand in a loose half-grip seen from the side; (4) the left hand pressed flat on a surface seen from above. The hands and bare forearms of a young woman aged 22 to 23 with a light natural skin tone: slender long fingers, short clean unpainted nails, fine knuckle creases, visible pores and fine vellus hair, a faint grey-brown silt smudge across the right knuckles, a short-sleeve hem of olive-tan raw linen just visible above the elbow in panels 1 and 2. Authentic unretouched skin texture, zero makeup, flat natural overcast daylight, deep focus, fine 35mm film grain. Identical skin tone, hand size and finger length in all four panels. She wears no rings, no bracelets, no watch and no jewelry of any kind. No face, no body beyond the elbows, no text, no labels."
+    },
+    {
+      "entity_name": "Bò Đực",
+      "code": "BD",
+      "type": "creature_turnaround",
+      "aspect_ratio": "16:9",
+      "action": "GENERATE_CHARACTER_IMAGE",
+      "dna": {
+        "proportion": "adult bull Triceratops horridus, about 8.5 m long, about 3 m tall at the hips, head with frill about 2.4 m long, four columnar legs, heavy barrel body, short thick tail",
+        "bone_face": "broad square-tipped parrot beak; LEFT brow horn broken off to a 30 cm stump showing a rough fibrous keratin core; RIGHT brow horn intact, about 1 m, slightly curved forward; short blunt nose horn; solid bony frill with triangular epoccipital bumps along its edge",
+        "skin": "rough non-reflective pachyderm hide like an African black rhinoceros: large matte polygonal basement scales on flanks and shoulders, scattered conical keratin tubercles 5 to 12 cm across the back and hips, deep wrinkles around the neck and armpits, grey-brown river silt dried and cracked on the lower legs and belly",
+        "permanent_marks": "an old healed pale scar slashed horizontally across the LEFT half of the frill; the broken horn is on the LEFT side only and is never healed or regrown",
+        "forbidden_drift": "never move the broken horn to the right side, never show both brow horns intact, never change the frill scar, no breath vapour, no glossy scales"
+      },
+      "prompt": "One 16:9 creature turnaround reference sheet, three panels in one frame on a neutral flat grey-brown silt ground with an out-of-focus plain backdrop: Panel 1 the LEFT three-quarter view of the whole animal; Panel 2 the RIGHT three-quarter view of the whole animal; Panel 3 a frontal close-up of the head, beak, horns and frill. The animal is an adult bull Triceratops horridus about 8.5 m long and 3 m tall at the hips, heavy barrel body on four columnar legs, short thick tail. Its LEFT brow horn is broken off to a 30 cm stump with a rough fibrous keratin core exposed; its RIGHT brow horn is intact, about 1 m long and curving slightly forward; a short blunt nose horn; a broad square-tipped beak. A solid bony frill edged with triangular bumps carries an old pale healed scar slashed across its LEFT half. Rough non-reflective pachyderm hide like an African black rhinoceros: large matte polygonal scales on flanks and shoulders, conical keratin tubercles across the back and hips, deep wrinkles at the neck and armpits, horn sheaths dry with fine hairline cracks, grey-brown river silt dried and cracked on the lower legs and belly. Clean dry nostrils with faint moisture at the rim only. Muted earthy olive-brown and grey colouring. Flat natural overcast daylight, soft organic shadows, deep focus f/8, fine 35mm film grain, BBC natural history documentary realism. Identical animal, identical horn damage and identical scar in all three panels. Strictly no humans, no other animals, no text, no labels.",
+      "negative_prompt": "NOT both horns intact, NOT broken horn on the right, NOT red mud, NOT glossy or plastic skin, NOT a museum statue, NOT a toy, NOT 3D render, NOT breath vapour, NOT smoke, NOT god rays, NOT text, NOT extra horns, NOT feathers."
+    },
+    {
+      "entity_name": "Con Cái Già",
+      "code": "CG",
+      "type": "creature_turnaround",
+      "aspect_ratio": "16:9",
+      "action": "GENERATE_CHARACTER_IMAGE",
+      "new_in_v2": true,
+      "dna": {
+        "proportion": "old female Triceratops horridus, about 7.5 m long, slightly smaller than the bull, visibly sway-backed with a dipped spine between shoulders and hips",
+        "bone_face": "both brow horns intact but worn blunt and shorter, about 70 cm; narrower beak than the bull; frill edge chipped and notched in many places",
+        "skin": "same matte pachyderm hide and polygonal scales, more wrinkled and loose at the neck, older pale scratches on the flanks",
+        "permanent_marks": "frill faded to a pale washed-out grey-beige compared with the body; many chips along the frill edge; sway back",
+        "forbidden_drift": "never a broken horn, never a vivid or patterned frill, never as tall as the bull"
+      },
+      "prompt": "One 16:9 creature turnaround reference sheet, three panels in one frame on a neutral flat grey-brown silt ground with an out-of-focus plain backdrop: Panel 1 the LEFT three-quarter view of the whole animal; Panel 2 the RIGHT three-quarter view; Panel 3 a frontal close-up of the head and frill. The animal is an old female Triceratops horridus about 7.5 m long, visibly sway-backed with a dipped spine between shoulders and hips. Both brow horns are intact but worn blunt and short, about 70 cm; a narrow beak; the frill is faded to a pale washed-out grey-beige and its edge is chipped and notched in many places. Rough non-reflective pachyderm hide with matte polygonal scales, loose deep wrinkles at the neck, old pale scratches on the flanks, grey-brown silt dried on the legs. Clean dry nostrils with faint moisture at the rim only. Flat natural overcast daylight, soft organic shadows, deep focus f/8, fine 35mm film grain, BBC natural history documentary realism. Identical animal in all three panels. Strictly no humans, no other animals, no text, no labels.",
+      "negative_prompt": "NOT a broken horn, NOT a bright or patterned frill, NOT young, NOT red mud, NOT glossy skin, NOT 3D render, NOT breath vapour, NOT text, NOT feathers."
+    },
+    {
+      "entity_name": "Con Non",
+      "code": "CN",
+      "type": "creature_turnaround",
+      "aspect_ratio": "16:9",
+      "action": "GENERATE_CHARACTER_IMAGE",
+      "dna": {
+        "proportion": "juvenile Triceratops about two years old, about 3 m long and about 1.2 m at the hips, head proportionally large, legs short and thick",
+        "bone_face": "brow horns only short stubby nubs about 10 cm, curving slightly backwards as in young Triceratops; tiny nose horn bump; frill short with a soft rounded scalloped edge",
+        "skin": "finer pebbly scales than the adults, smoother looking but matte, grey-olive mud dried on the belly and flanks",
+        "permanent_marks": "a pale crescent patch on the right cheek below the eye",
+        "forbidden_drift": "never long horns, never as large as an adult, never red mud"
+      },
+      "prompt": "One 16:9 creature turnaround reference sheet, three panels in one frame on a neutral flat grey-brown silt ground with an out-of-focus plain backdrop: Panel 1 the LEFT three-quarter view of the whole animal; Panel 2 the RIGHT three-quarter view; Panel 3 a frontal close-up of the head. The animal is a juvenile Triceratops about two years old, about 3 m long and 1.2 m tall at the hips, with a proportionally large head and short thick legs. Its brow horns are only short stubby nubs about 10 cm long curving slightly backwards; a tiny nose horn bump; a short frill with a soft rounded scalloped edge; a pale crescent-shaped patch on the RIGHT cheek below the eye. Fine matte pebbly scales, grey-olive river mud dried and cracked on the belly and flanks. Clean dry nostrils with faint moisture at the rim only, bright alert dark eyes. Flat natural overcast daylight, soft organic shadows, deep focus f/8, fine 35mm film grain, BBC natural history documentary realism. Identical animal in all three panels. Strictly no humans, no other animals, no text, no labels.",
+      "negative_prompt": "NOT long horns, NOT adult size, NOT cute cartoon, NOT big glossy eyes, NOT red mud, NOT glossy skin, NOT 3D render, NOT breath vapour, NOT text, NOT feathers."
+    },
+    {
+      "entity_name": "T. rex",
+      "code": "TR",
+      "type": "creature_turnaround",
+      "aspect_ratio": "16:9",
+      "action": "GENERATE_CHARACTER_IMAGE",
+      "dna": {
+        "proportion": "adult Tyrannosaurus rex about 12 m long, hips about 3.8 m high, horizontal body held level, massive deep skull, tiny two-fingered arms, thick muscular tail held off the ground",
+        "bone_face": "deep broad skull, small forward-facing eyes under rough brow bosses, scaly lips covering the teeth when the mouth is closed",
+        "skin": "fully scaly, no feathers: small pebbly scales over most of the body, larger matte scales on the snout and legs, deep folds at the neck",
+        "permanent_marks": "a long healed vertical scar running down the LEFT side of the snout; flies around the mouth",
+        "forbidden_drift": "never feathered, never upright tail-dragging pose, never running or galloping, no exposed crocodile teeth when the mouth is shut, no breath vapour"
+      },
+      "prompt": "One 16:9 creature turnaround reference sheet, three panels in one frame on a neutral flat grey-brown silt ground with an out-of-focus plain backdrop: Panel 1 the LEFT three-quarter view of the whole animal walking; Panel 2 the RIGHT three-quarter view of the whole animal walking; Panel 3 a frontal close-up of the head. The animal is an adult Tyrannosaurus rex about 12 m long with its body held level, a massive deep skull, small forward-facing eyes under rough brow bosses, scaly lips that cover the teeth when the mouth is closed, tiny two-fingered arms and a thick muscular tail held off the ground. Fully scaly with no feathers: fine pebbly scales over the body, larger matte scales on snout and legs, deep folds at the neck. A long healed scar runs down the LEFT side of its snout, a few flies around its mouth, grey-brown silt dried on the feet. Clean dry nostrils with faint moisture at the rim only. Flat natural overcast daylight, soft organic shadows, deep focus f/8, fine 35mm film grain, BBC natural history documentary realism. Identical animal in all three panels. Strictly no humans, no other animals, no text, no labels.",
+      "negative_prompt": "NOT feathers, NOT an upright tail-dragging pose, NOT running, NOT roaring with open jaws, NOT exposed teeth with closed mouth, NOT glossy skin, NOT 3D render, NOT a movie monster, NOT breath vapour, NOT text."
+    },
+    {
+      "entity_name": "Acheroraptor",
+      "code": "AR",
+      "type": "creature_turnaround",
+      "aspect_ratio": "16:9",
+      "action": "GENERATE_CHARACTER_IMAGE",
+      "dna": {
+        "proportion": "coyote-sized dromaeosaurid, about 2.5 m long including the long stiff tail, hip-high to an adult human, lightly built",
+        "bone_face": "long narrow snout, closed feathered lips, sharp amber eyes",
+        "skin": "fully feathered in mottled brown-grey; long pennaceous feathers on the forearms folded like small wings; a fan of feathers at the tail tip; bare scaly feet",
+        "permanent_marks": "a raised sickle claw on the second toe of each foot, held off the ground",
+        "forbidden_drift": "never scaly-naked, never human-sized, never pack of more than two"
+      },
+      "prompt": "One 16:9 creature turnaround reference sheet, three panels in one frame on a neutral leaf-litter ground with an out-of-focus plain backdrop: Panel 1 the LEFT three-quarter view of the whole animal; Panel 2 the RIGHT three-quarter view; Panel 3 a frontal close-up of the head. The animal is Acheroraptor, a coyote-sized feathered dromaeosaurid about 2.5 m long including its long stiff tail and standing hip-high to an adult human. It is fully covered in mottled brown-grey feathers, with long feathers on the forearms folded like small wings and a fan of feathers at the tail tip; a long narrow snout with closed feathered lips, sharp amber eyes; bare scaly feet with a raised sickle claw held off the ground on the second toe. Matte natural feather texture with dust and a few broken barbs. Flat natural overcast daylight, soft organic shadows, deep focus f/8, fine 35mm film grain, BBC natural history documentary realism. Identical animal in all three panels. Strictly no humans, no other animals, no text, no labels.",
+      "negative_prompt": "NOT scaly naked skin, NOT Velociraptor movie design, NOT human-sized, NOT bright colours, NOT glossy, NOT 3D render, NOT text."
+    },
+    {
+      "entity_name": "Edmontosaurus",
+      "code": "ED",
+      "type": "creature_turnaround",
+      "aspect_ratio": "16:9",
+      "action": "GENERATE_CHARACTER_IMAGE",
+      "new_in_v2": true,
+      "dna": {
+        "proportion": "adult Edmontosaurus annectens about 12 m long, long low body, walks on four legs, long tail held level",
+        "bone_face": "long flat broad duck-like bill, smooth face with no horns and no frill",
+        "skin": "mostly tiny pebbly scales, larger polygonal scales on the lower body and tail, thin skin wrinkled over the ribs",
+        "permanent_marks": "a fleshy crest running along the neck and back that becomes a single row of spikes down the tail; hooves on the three hind toes and on the forefeet",
+        "forbidden_drift": "never a bony head crest, never horns, never a frill"
+      },
+      "prompt": "One 16:9 creature turnaround reference sheet, three panels in one frame on a neutral flat grey-brown silt ground with an out-of-focus plain backdrop: Panel 1 the LEFT three-quarter view of the whole animal walking on four legs; Panel 2 the RIGHT three-quarter view; Panel 3 a frontal close-up of the head. The animal is an adult Edmontosaurus annectens about 12 m long with a long low body, a long flat broad duck-like bill and a smooth face with no horns and no frill. A fleshy crest runs along the neck and back and becomes a single row of spikes down the tail. The hind feet end in three wedge-shaped hooves with a fleshy heel pad and the forefeet touch the ground only with hooves. Mostly tiny matte pebbly scales, larger polygonal scales on the lower body and tail, thin skin wrinkled over the ribs, grey-brown silt on the legs. Clean dry nostrils with faint moisture at the rim only. Flat natural overcast daylight, soft organic shadows, deep focus f/8, fine 35mm film grain, BBC natural history documentary realism. Identical animal in all three panels. Strictly no humans, no other animals, no text, no labels.",
+      "negative_prompt": "NOT a bony head crest, NOT Parasaurolophus, NOT horns, NOT a frill, NOT clawed feet, NOT glossy skin, NOT 3D render, NOT breath vapour, NOT text."
+    },
+    {
+      "entity_name": "Borealosuchus",
+      "code": "BS",
+      "type": "creature_turnaround",
+      "aspect_ratio": "16:9",
+      "action": "GENERATE_CHARACTER_IMAGE",
+      "dna": {
+        "proportion": "crocodylian about 4 m long, low and flat",
+        "bone_face": "long moderately narrow crocodile snout, raised eyes and nostrils on top of the head",
+        "skin": "dark olive-grey armoured back with rows of raised bony scutes, paler belly, wet silt on the flanks",
+        "permanent_marks": "two rows of raised scutes that read as a rough ridged back strip above the waterline",
+        "forbidden_drift": "never a modern alligator with a very broad snout, never bright green"
+      },
+      "prompt": "One 16:9 creature turnaround reference sheet, three panels in one frame on a neutral wet grey-brown silt bank with an out-of-focus plain backdrop: Panel 1 the LEFT three-quarter view of the whole animal lying on the bank; Panel 2 the RIGHT three-quarter view; Panel 3 a low frontal close-up of the head at water level with only the snout tip, eyes and ridged back showing above shallow brown water. The animal is Borealosuchus, a crocodylian about 4 m long with a long moderately narrow snout, raised eyes and nostrils on top of the head, a dark olive-grey back armoured with rows of raised bony scutes, a paler belly and wet silt on the flanks. Matte wet natural texture with thin real specular highlights only where water sits. Flat natural overcast daylight, deep focus f/8, fine 35mm film grain, BBC natural history documentary realism. Identical animal in all three panels. Strictly no humans, no other animals, no text, no labels.",
+      "negative_prompt": "NOT a very broad alligator snout, NOT bright green, NOT glossy plastic, NOT 3D render, NOT text."
+    },
+    {
+      "entity_name": "Infernodrakon",
+      "code": "IN",
+      "type": "creature_turnaround",
+      "aspect_ratio": "16:9",
+      "action": "GENERATE_CHARACTER_IMAGE",
+      "new_in_v2": true,
+      "replaces": "Quetzalcoatlus (not present at Hell Creek, research section 3)",
+      "dna": {
+        "proportion": "azhdarchid pterosaur, wingspan about 5 m, standing on all fours on folded wings about the height of an adult human",
+        "bone_face": "long stiff neck, long straight pointed toothless beak, modest low head crest",
+        "skin": "short brown-grey fuzz (pycnofibres) over the body and neck, leathery wing membranes folded along the arms",
+        "permanent_marks": "walks on the knuckles of its folded wings and on its hind feet, beak pointing down at the ground",
+        "forbidden_drift": "never giraffe-tall, never a flock, never a dragon or bat"
+      },
+      "prompt": "One 16:9 creature turnaround reference sheet, three panels in one frame on a neutral dry cracked grey mud flat with an out-of-focus plain backdrop: Panel 1 the LEFT three-quarter view of the whole animal walking on all fours on its folded wings; Panel 2 the RIGHT three-quarter view; Panel 3 a frontal close-up of the head and beak. The animal is Infernodrakon, an azhdarchid pterosaur with a wingspan of about 5 m that stands about as tall as an adult human when walking on the knuckles of its folded wings and on its hind feet. A long stiff neck, a long straight pointed toothless beak, a low modest head crest, short brown-grey fuzz over the body and neck, leathery wing membranes folded along the arms. Matte natural texture. Flat natural overcast daylight, deep focus f/8, fine 35mm film grain, BBC natural history documentary realism. Identical animal in all three panels. Strictly no humans, no other animals, no text, no labels.",
+      "negative_prompt": "NOT giraffe-tall, NOT Quetzalcoatlus giant, NOT a dragon, NOT a bat, NOT teeth, NOT feathers, NOT glossy, NOT 3D render, NOT text."
+    },
+    {
+      "entity_name": "Edmontosaurus Carcass",
+      "code": "CA",
+      "type": "prop_location",
+      "aspect_ratio": "16:9",
+      "action": "GENERATE_LOCATION",
+      "prompt": "One single unified wildlife forensic documentary photograph of a half-eaten Edmontosaurus carcass lying on its side on a grey-brown silt bar beside a slow brown creek in spring, 66 million years ago. The 10 m body is heavily sunken 20 to 30 cm into the wet river silt with a ridge of pushed-up mud around it. The rib cage is torn open: dark coagulated reddish-brown muscle and glistening tendons cling to yellowed ribs and cartilage, wet decaying organs inside the chest, torn pebbly-scaled skin curled at the edges and crusted with silt and dried blood. Deep U-shaped scalloped bite gouges on the pelvis show crushed marrow. Clouds of flies on the meat. The flat duck-like bill and the fleshy back crest are still visible at the near end. Flat natural overcast daylight, soft organic shadows, deep focus f/8, fine 35mm film grain. Strictly ONE unified photograph, strictly NO humans, NO people, NO scale figures, NO measuring rods, NO split screen, NO text.",
+      "negative_prompt": "NOT a museum diorama, NOT a wax figure, NOT dry clean white bones, NOT a skeleton display, NOT red clay, NOT 3D render, NOT gore exaggeration, NOT text."
+    },
+    {
+      "entity_name": "Hell Creek Bank",
+      "code": "LB",
+      "type": "location",
+      "aspect_ratio": "16:9",
+      "action": "GENERATE_LOCATION",
+      "continuity_anchors": "slow brown creek flowing left to right; near side a grey gravel and buff sand bar; far side a 2 m high bank of grey-brown silt and olive-grey clay with one dark dry hollow just above the waterline, about 1.5 m wide; woodland edge behind the bank",
+      "prompt": "One single unified natural history documentary landscape photograph of a creek on the Hell Creek river floodplain in spring, 66 million years ago. A slow silty brown creek about 15 m wide flows from left to right. In the foreground a damp bar of grey gravel and buff sand with scattered driftwood. Across the water rises a near-vertical earth bank about 2 m high of layered grey-brown silt and olive-grey clay with a thin black peaty band, roots hanging from its top; just above the waterline the bank holds one dark, dry, low hollow about 1.5 m wide, cut back under the overhang. Horsetail stands at the water's edge. Behind the bank a woodland edge of small to medium broadleaf trees with fresh pale spring leaves, a few fan palms and one tall feathery dawn redwood. Bright overcast daylight, soft even light with gentle shadows, a faint haze softening the far trees, true muted colours, deep focus f/8, fine 35mm film grain. Strictly ONE unified photograph, strictly NO humans, NO people, NO animals, NO scale figures, NO measuring rods, NO split screen, NO text.",
+      "negative_prompt": "NOT red clay, NOT red mud, NOT tree ferns, NOT tropical jungle, NOT grass, NOT a cave in rock, NOT god rays, NOT 3D render, NOT text."
+    },
+    {
+      "entity_name": "Hell Creek Game Corridor",
+      "code": "LC",
+      "type": "location",
+      "aspect_ratio": "16:9",
+      "action": "GENERATE_LOCATION",
+      "renamed_from": "Hell Creek Trail (the word 'trail' draws tire ruts, Rule 59 section 2)",
+      "continuity_anchors": "wide trampled corridor entering the woodland from a small clearing; one big moss-covered fallen log lying along the right side of the corridor; a shallow grey mud wallow in the clearing",
+      "prompt": "One single unified natural history documentary landscape photograph of a wide, chaotic animal-trampled game corridor cutting from a small clearing into a spring broadleaf woodland on the Hell Creek floodplain, 66 million years ago. The corridor floor is deeply churned grey-brown silt and olive-grey clay mud filled with massive rounded ceratopsian foot depressions holding cloudy water, crushed low herbs and snapped saplings. A big moss-covered fallen log lies along the right side of the corridor. In the clearing a shallow grey mud wallow. Both sides are a dense tangle of small to medium broadleaf trees with sycamore-, magnolia- and laurel-like fresh spring leaves, some leaves chewed and mined by insects, vines, moss, leaf litter and a few fan palms. Bright overcast daylight, soft even light with gentle shadows, natural dappled shade at the woodland edge, true muted greens and browns, deep focus f/8, fine 35mm film grain. Strictly NO vehicle tracks, NO parallel tire ruts, NO modern dirt road, NO sawn lumber. Strictly ONE unified photograph, strictly NO humans, NO people, NO animals, NO scale figures, NO measuring rods, NO split screen, NO text.",
+      "negative_prompt": "NOT a road, NOT tire ruts, NOT sawn logs, NOT red clay, NOT tree ferns, NOT tropical jungle, NOT grass, NOT god rays, NOT 3D render, NOT text."
+    },
+    {
+      "entity_name": "Hell Creek Waterhole",
+      "code": "LW",
+      "type": "location",
+      "aspect_ratio": "16:9",
+      "action": "GENERATE_LOCATION",
+      "continuity_anchors": "shrinking brown waterhole in the middle; a stand of tall dawn redwoods and swamp cypress on the far north side with one dead grey cypress leaning at the left; trampled grey mud rim; wide cracked mud flat in front; flowering water lilies at the right edge; open floodplain toward the south-south-east horizon behind the camera",
+      "prompt": "One single unified natural history documentary landscape photograph of a shrinking waterhole on the Hell Creek floodplain in spring, 66 million years ago. Murky brown water about 30 m across sits in the middle, its rim trampled into grey mud full of rounded ceratopsian foot depressions and three-toed prints. On the far side stands a grove of tall feathery dawn redwoods and swamp cypress, with one dead grey cypress trunk leaning at the left edge of the grove. A wide flat of dry cracked grey mud spreads across the foreground. Flowering white water lilies float at the right edge of the water, horsetail stands along the shallows. Bright overcast daylight, soft even light with gentle shadows, humid haze softening the distant treeline, natural colour, deep focus f/8, fine 35mm film grain. Strictly ONE unified photograph, strictly NO humans, NO people, NO animals, NO scale figures, NO measuring rods, NO split screen, NO text.",
+      "negative_prompt": "NOT red mud, NOT clear tropical lagoon, NOT tree ferns, NOT grass, NOT mountains, NOT god rays, NOT 3D render, NOT text."
+    }
+  ],
+  "per_clip_ref_policy": "Up to 7 refs per clip (lesson 88). Nora in frame: Nora + Nora Body. Her hands in frame: + Nora Hand. Each animal only when it is in frame. One location ref per clip. Every link of a 4s chain keeps exactly the same ref set as link a. Codes used in script.md section 9."
+}
