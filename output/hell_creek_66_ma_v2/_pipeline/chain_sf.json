@@ -1,0 +1,32 @@
+{
+  "A3-06b": {
+    "status": "COMPLETED",
+    "clean_media_id": "06e9b898-de28-4bb2-9bf5-522568c92183",
+    "source": "last frame of A3-06a"
+  },
+  "A3-06c": {
+    "status": "COMPLETED",
+    "clean_media_id": "4e37283d-9645-493f-bcff-b1904bf6cca1",
+    "source": "last frame of A3-06b"
+  },
+  "A3-D2b": {
+    "status": "COMPLETED",
+    "clean_media_id": "cb058abc-5603-4820-81c8-5d4fc1455f32",
+    "source": "last frame of A3-D2a"
+  },
+  "A3-D2c": {
+    "status": "COMPLETED",
+    "clean_media_id": "7478727b-6d63-4131-ab63-328dd631107e",
+    "source": "last frame of A3-D2b"
+  },
+  "A3-12b": {
+    "status": "COMPLETED",
+    "clean_media_id": "294be5a3-7ce4-4903-8fd8-9057a2dd0e28",
+    "source": "last frame of A3-12a"
+  },
+  "A3-W2b": {
+    "status": "COMPLETED",
+    "clean_media_id": "61c0716a-d612-4f23-9747-3fba164a5c54",
+    "source": "last frame of A3-W2a"
+  }
+}

@@ -1,15 +1,66 @@
 # Handoff — Hell Creek 66 Ma v2
 
-## Cập nhật 16/10/2026 (tài khoản mới — thay phần dưới nếu mâu thuẫn)
+## Cập nhật 16/10/2026 tối — Act 1–3 xong, phiên sau làm Act 4 (đọc phần này trước; phần dưới là lịch sử)
 
-- project `946904bf-3e57-4ba2-97bb-9d545d037914` · video `32aa6e3a-02ef-4020-8ae2-7dda0164f18b` · `project_state.json` `scene_ids` = 94 clip (Act 2–5).
-- **Act 1:** chốt, không sinh lại — `hell_creek_act1_1080p.mp4`. Đã xóa scene A1 tạm trên project mới.
-- **Act 2:** 24/25 clip 720p xong, user đã duyệt. **A2-R3 BỎ HẲN** (timeout lặp lại ~5 lần; A2-R4 có Start Frame riêng nên vẫn liền mạch) → khi concat bỏ qua A2-R3.
-- **A2-16:** sinh lại với ref Turtle Shell Flask + SHELL LOCK "mai kín, không thành bát" → `scenes/scene_024_A2-16_749d40ac.mp4` (đã duyệt). Bản cũ hình bát: `scene_041_A2-16_1fc2dfc8_old_bowl.mp4`.
-- **Act 3–5:** đang sinh Start Frame (`gen_sf_waves.py act3 act4 act5`); duyệt trên Review Board rồi mới sinh video.
-- Số file `scenes/scene_{order:03d}_…` theo thứ tự trong `scene_ids` của project mới (khác số của tài khoản cũ).
-- **Sửa thẳng trong JSON, chưa đưa vào `_pipeline/prompts/*.py`** (không sửa .py khi job đang chạy): A2-16 (SHELL LOCK mai kín, `prompts_act2.json`), A3-W3 (`start_frame.image_prompt` bỏ câu "Self-filmed vlog framing", khóa ngồi + 2 tay trong lòng, `prompts_act3.json`). Chạy `build.py` sẽ ghi đè → phải chép sang `act2.py`/`act3.py` trước. Script tạm 5 ảnh/đợt: scratchpad `gen_sf_waves5.py` (WAVE=5, nhận request đang chạy).
-- **Lỗi worker:** poll timeout → `processor.py` tự đặt lại PENDING và gửi lại lên Flow (kể cả request đã đặt FAILED tay). Cần sửa khi hàng đợi rảnh (sửa .py làm server khởi động lại).
+**Định danh (tài khoản mới):** project `946904bf-3e57-4ba2-97bb-9d545d037914` · video `32aa6e3a-02ef-4020-8ae2-7dda0164f18b` · `project_state.json` `scene_ids` = 94 clip (Act 2–5), clip_id → scene_id. File video `scenes/scene_{order:03d}_{clip}_{sid8}.mp4`, `order` = vị trí trong `scene_ids`.
+
+### Đã xong
+
+| Act | Tình trạng |
+|---|---|
+| 1 | Chốt, **không bao giờ sinh lại** — `hell_creek_act1_1080p.mp4` |
+| 2 | 24 clip đã duyệt. **A2-R3 bỏ hẳn** (bỏ qua khi dựng). A2-16 bản mai kín = `scene_024_A2-16_749d40ac.mp4` |
+| 3 | 32 clip đã duyệt. 5 clip sinh lại lần 2 (bản cũ ở `scenes/_old_a3/`): A3-W1 7.6 (dùng 1–5s), A3-W2a 7.8, A3-W2b 7.8, A3-15 8.0 (đúng áo tunic), A3-01 7.5 |
+| **Bản dựng** | **`edit/edit_v1.mp4` = Act 1+2+3 — ĐÃ GIAO, không ghi đè.** 6:44.7 (404.7s), 1920x1080 24fps, −14.0 LUFS, LRA 9.7, true peak −0.8 dBTP (hơi trên mức −1; đã đề nghị user bản v2 hạ ~0.3 dB, chưa trả lời). Act 1 0–106.57s · Act 2 106.57–236.41s · Act 3 236.41–404.67s. EDL `edit/edit_v1_edl.csv` |
+
+**Báo user:** 2 credit bị phí ở Act 3 — A3-W3 và A3-14 bị worker gửi lại lần 2 khi poll timeout (lỗi đã sửa, xem dưới).
+
+### Act 4 — trạng thái hiện tại
+
+- `prompts_act4.json`: 28 clip, tổng 148s. 23 clip `GENERATE_IMAGE`, 5 mắt xích `PREV_LAST_FRAME` (**A4-03b, A4-03c, A4-07b, A4-07c, A4-T2** — không sinh ảnh, lấy khung cuối clip trước).
+- Start Frame đã sinh + xóa logo + upload (media_id sạch trong `start_frame_log.json`, ảnh `images/<clip>_clean.jpg`): **21/23**. **Còn thiếu: A4-19, MASTER.** A4-16/17/18 có ghi chú "reset: stale PROCESSING on startup" nhưng đã COMPLETED, nên kiểm tra lại ảnh.
+- **Chưa có ảnh Act 4 nào được user duyệt** (`start_frame_approved.json` chưa có A4-*). Chưa sinh video Act 4 nào.
+- Act 5: 9 clip, chưa sinh Start Frame nào.
+
+### Act 4 — làm theo thứ tự
+
+1. **Server:** `cd C:\flowkit; venv\Scripts\python -m agent.main` → `GET /health` phải `extension_connected: true` + tab flow.google.com (tài khoản mới) đang mở. Lỗi gì → `/fk-doctor` trước (Rule 31).
+2. **Start Frame A4-19 + MASTER (2 ảnh):** hỏi user (Rule 29), đồng ý thì `python -u _pipeline\gen_sf_waves.py act4` (bỏ qua ảnh đã COMPLETED; có mặt Nora → `source_media_id`, Rule 63).
+3. **Review ảnh (Rule 22/25):** `python tools\review_server.py 8200` → `http://localhost:8200/review_images` cho 23 ảnh Act 4. User duyệt → thêm id vào `start_frame_approved.json`. Ảnh bị chê → sửa `start_frame.image_prompt` → `gen_sf_waves.py act4 --regen=ID,ID` (hỏi trước).
+4. **Video Act 4 (hỏi trước: 28 clip):** `python -u _pipeline\gen_videos9.py A4-01 A4-02 A4-03a A4-03b A4-03c …` (liệt kê theo thứ tự timeline; script tự chờ mắt xích trước). Lưu ý: script **không tự kiểm tra** ảnh đã duyệt — chỉ truyền clip đã duyệt. Đọc log, video tải vào `scenes/`, nhật ký `video_log.json`.
+5. **Review 720p (Rule 32/16):** `/fk-review-video` light mode trên Act 4, bảng điểm + Review Board. Clip < 7.5 → đề xuất sửa prompt, hỏi trước khi `gen_videos9.py <clip> --regen`. Tối đa 2 vòng.
+6. **Dựng `edit_v2`** (không upscale, xem "Cách dựng"): thêm cắt review của Act 4 vào `IN_PT`/`OUT_PT` trong `_pipeline\build_edit.py`, rồi `python _pipeline\build_edit.py render v2 2 3 4`. Nếu user muốn sửa true peak thì làm luôn trong v2.
+
+### Cách dựng (Rule 66, không upscale — user 16/10)
+
+- `_pipeline\build_edit.py prep|render vN <act…>`: clip 720p → `agent.services.watermark.remove_watermark_video` → `scenes_clean/*_clean.mp4` → cắt → lanczos 1920x1080, 24fps, yuv420p, AAC 48k stereo 192k → `edit/work/A{act}_{clip}_seg.mp4` → nối sau `hell_creek_act1_1080p.mp4` → loudnorm 2 lượt I=−14 TP=−1 LRA=11 → `edit/edit_vN.mp4` + EDL. Từ chối nếu `edit_vN` đã có hoặc thiếu clip.
+- Điểm vào: mắt xích `PREV_LAST_FRAME` 0.04s; clip 4s 0.5s; còn lại 1.0s. Cắt theo review: A3-08 0.5–3.0s, A3-W1 1.0–5.0s.
+- Segment đã có thì `prep` bỏ qua → **sinh lại clip nào thì xóa `edit/work/A?_<clip>_seg.mp4` và `scenes_clean/` của clip đó** để dựng lại.
+
+### Script (`_pipeline/`, chép từ scratchpad 16/10)
+
+| File | Việc |
+|---|---|
+| `gen_videos9.py clip… [--regen]` | R2V tối đa 9 video cùng lúc; mắt xích chờ clip trước, cắt khung cuối → xóa logo → upload → PATCH Start Frame; `push_prompts.py <clip>` rồi POST `GENERATE_VIDEO_REFS`; nhận request đang chạy, không gửi trùng; dừng khi QUOTA/UNUSUAL_ACTIVITY. (`gen_videos.py` là bản cũ 3 slot.) |
+| `build_edit.py` | Dựng, như trên |
+| `gen_sf_waves.py`, `push_prompts.py`, `prompts/` | Như bảng "Bộ script" bên dưới |
+
+### Server / worker (đã sửa 16/10)
+
+- Poll timeout **không gửi lại**: giữ `request_id`, poll lại cùng job (`VIDEO_POLL_TIMEOUT=300`s/vòng, `MAX_POLL_ROUNDS=24`), xong thì tải (`processor.py`).
+- Poll mỗi video **3 phút** (`VIDEO_POLL_INTERVAL=180`); poll RPC `jwpduf`/`Zzl0ze`/`as29s` không chịu khoảng 30–45s, chỉ cách nhau `FLOW_POLL_MIN_GAP_S=2`s (`agent/services/flow_client.py`). Lệnh sinh/upload/tạo project vẫn cách 30–45s.
+- Sửa bất kỳ file `.py` nào trong repo (kể cả `output/`) → :8100 tự khởi động lại → **không sửa .py khi còn clip PROCESSING**.
+
+### Sửa thẳng trong JSON, CHƯA chép vào `_pipeline/prompts/*.py`
+
+Chạy `prompts\build.py` sẽ **ghi đè** các sửa này → chép sang `act2.py`/`act3.py` trước khi build lại:
+- `prompts_act2.json` A2-16: SHELL LOCK mai kín, không thành bát.
+- `prompts_act3.json` A3-W3: `start_frame.image_prompt` bỏ "Self-filmed vlog framing", khóa ngồi + 2 tay trong lòng.
+- `prompts_act3.json` (5 clip sinh lại): A3-W1/W2a/W2b FULL-FRAME LOCK + "First-person view at Nora's eye height."; A3-W2b không có gì dưới chân giậm; A3-15 OUTFIT LOCK áo tunic olive cổ V buộc dây, không cổ; A3-01 FRAMING LOCK.
+
+### Ràng buộc luôn giữ
+
+Nói chuyện tiếng Việt · Rule 29: nêu số lượng + chờ "có" trước MỌI lần sinh (ảnh, video, regen); lỗi thì báo, không tự retry · Act 1 không đụng · bỏ A2-R3 · không upscale · bản dựng đánh số `edit_vN`, không ghi đè · script tạm chỉ ở scratchpad.
 
 ## Trạng thái nhanh (14/10, tài khoản cũ)
 

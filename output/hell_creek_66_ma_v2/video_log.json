@@ -444,5 +444,11 @@
     "status": "COMPLETED",
     "media_id": "4a70759c-44e6-4ac4-bc92-58566e4ffcd3",
     "file": "scene_025_A3-01_f187a3e7.mp4"
+  },
+  "A3-W2b": {
+    "request_id": "c8d56eed-8ebb-4bd6-b000-e395c7708bda",
+    "status": "COMPLETED",
+    "media_id": "6ab0f510-1a8d-4171-93ad-22f9d5fd088e",
+    "file": "scene_048_A3-W2b_1a042651.mp4"
   }
 }
