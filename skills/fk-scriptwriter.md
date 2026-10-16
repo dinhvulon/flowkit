@@ -5,7 +5,7 @@
 Usage: `/fk-scriptwriter "<topic / series title>" [--episode N] [--scenes 8|12] [--lang vi|en] [--orientation HORIZONTAL|VERTICAL] [--fast]`
 
 - **Default:** Runs the **Interactive 5-Step Director Workflow** (Section A), pausing for approval at Steps 1, 3, and 5.
-- `--fast`: Bypasses user review gates to directly generate technical production scripts (still strictly enforces Section N Quality Gates).
+- `--fast`: Bypasses user review gates to directly generate technical production scripts (still strictly enforces Section N Quality Gates). Under `--fast`, checkpoint 23 requires 0 paper-edit errors; cut proposals stay listed in the report for the user to answer before generation (Rule 29 still applies).
 
 ---
 
@@ -24,9 +24,13 @@ Usage: `/fk-scriptwriter "<topic / series title>" [--episode N] [--scenes 8|12] 
 
 ## A. Interactive 5-Step Director Workflow
 
-### Step 1 — Pitch Logline (Pause for Approval)
+### Step 1 — Pitch Logline + Package (Pause for Approval)
 - If the subject is based on real historical events or public figures: execute `/fk-research` first (Rule 14).
-- Present **2–3 creative angles**, each including: 1-sentence logline, genre preset (Section L), narrative tone, and the opening 3-second visual hook.
+- Present **2–3 creative angles**, each including: 1-sentence logline, genre preset (Section L), narrative tone, the opening 3-second visual hook, and a **package** (Section G2):
+  - **Working title** — follows `/fk-youtube-seo` Step 3 rules (≤ `seo.title_max_chars`, default 65; keyword in the first 5 words; dialogue language per Rule 20).
+  - **Thumbnail concept** — one focal subject + ≤ 3 words of text, per `fk-thumbnail-guide.md`.
+  - **Promise** — one sentence: what the viewer will see that makes the click worth it.
+- **Package before you produce:** the user approves logline **and** package together. The approved package is the contract the script must pay off; it is saved in the screenplay JSON `package` field (O.1). `/fk-youtube-seo` and `/fk-thumbnail` later refine it — they do not replace the promise.
 
 ### Step 2 — Cast & World Lock
 - Enumerate project entities: `character` (vertical 9:16 portrait), `location` (horizontal 16:9 landscape), and `visual_asset`.
@@ -35,14 +39,16 @@ Usage: `/fk-scriptwriter "<topic / series title>" [--episode N] [--scenes 8|12] 
 
 ### Step 3 — Beat Sheet: 8–12 Beats (Pause for Approval)
 One line per scene: scene archetype (Section D) · shot scale · characters present · dialogue presence · targeted emotional shift (Section I2).
+Mark the **promise payoff** scene (must start before 0:30 usable time) and every **re-hook** scene (`beat: "rehook"`, gap ≤ 90s) per Section G2.
 
 ### Step 4 — Technical Production Script
 Author exhaustive specifications per scene: `prompt`, `video_prompt`, `narrator_text`, `character_names`, `music_cue`, `wardrobe_state`.
 
 ### Step 5 — Self-Audit & Pipeline Ingestion (Pause for Approval)
-1. Run the **20-Point Quality Gate** (Section N) — output full verification scorecard; resolve any failing items.
-2. Save screenplay: `.omc/research/<slug>_ep<NN>_script.json`.
-3. Inquire: *"Dispatch into FlowKit pipeline immediately?"* → upon confirmation, execute Section O.
+1. Save screenplay: `.omc/research/<slug>_ep<NN>_script.json`.
+2. Run **`/fk-paper-edit .omc/research/<slug>_ep<NN>_script.json`** (multi-episode film: pass all episode files in order) — runtime, Section J word counts, promise check, re-hook map, cut proposals. Fix errors.
+3. Run the **23-Point Quality Gate** (Section N) — output full verification scorecard; resolve any failing items. Checkpoints 21–23 read the paper-edit report from step 2.
+4. Inquire: *"Dispatch into FlowKit pipeline immediately?"* → upon confirmation, execute Section O. When asking (Rule 29), quote the video count from the paper-edit report **plus** the start-frame and reference images to generate.
 
 ---
 
@@ -229,6 +235,21 @@ Never use the same shot scale in consecutive scenes. Standard 8-Scene Rhythm:
 | 7 | Cliffhanger | Wide → Slow Push-in | Accelerating Dread | Climactic line |
 
 **The Dialogue Invariant:** Every 8-scene episode must contain **at least 2 dialogue scenes**. A video without dialogue is an automated slideshow, not cinema.
+
+---
+
+## G2. Retention Map — Package → Promise → Re-hook → Next
+
+Adapted from the CHAIN framework (external skill `youtube-long-form`). Shot rhythm (Section G) keeps the eye busy; this map keeps the viewer's *reason to stay*. Times are **usable** seconds after trim (Rule 49 table: 8s clip = 7.0s).
+
+| Layer | Rule | Where it is checked |
+| :--- | :--- | :--- |
+| **Package** | Title + thumbnail concept + one-sentence promise approved in Step 1, before any beat is written. | Step 1 gate |
+| **Promise** | The viewer sees or hears what the package promised — or a clear preview of it (cold open cut from an existing clip) — before **0:30**. No logo, no "hello everyone" before it. | Checkpoint 21, `/fk-paper-edit` step 3 |
+| **Re-hook** | At most **90s** between two re-hooks (target 60–90s ≈ every 9–12 scenes of 7.0s). A re-hook introduces something new: a new threat, a new question, a reveal, a clear jump in place/time, or a "coming up" tease. Mark it `beat: "rehook"`. | Checkpoint 22, `/fk-paper-edit` step 4 |
+| **Next** | The final scene points to the next episode (cliffhanger, checkpoint 16) **and** leaves room for a 5–20s end screen. One topic per video — no padding to reach a length. | Checkpoint 16, `/fk-youtube-analytics` step 4 |
+
+**Single-episode scale:** an 8-scene episode is ~56s usable, so it needs only the opening hook (scene 0) plus the cliffhanger. The re-hook rule matters when episodes are concatenated into a multi-chapter film (`/fk-concat-fit-narrator`): run `/fk-paper-edit` on the assembled scene order, not only per episode.
 
 ---
 
@@ -479,9 +500,9 @@ If a prompt trips safety moderation, descend this ladder systematically:
 
 ---
 
-## N. Quality Gate — 20 Production Checkpoints
+## N. Quality Gate — 23 Production Checkpoints
 
-Every scene script must pass this 20-point audit before generation:
+Every scene script must pass this 23-point audit before generation:
 
 | # | Checkpoint | Pass Criteria |
 | :-: | :--- | :--- |
@@ -505,6 +526,9 @@ Every scene script must pass this 20-point audit before generation:
 | 18 | Chain Type Standard | Defaulted to `ROOT` |
 | 19 | Dialogue Presence | Minimum 2 dialogue scenes per 8-scene episode |
 | 20 | Subtitle Suppression | All dialogue includes `(no subtitles)` suffix |
+| 21 | Promise Payoff ≤ 0:30 | Approved package exists; the scene paying off its promise starts before 0:30 usable time (Section G2) |
+| 22 | Re-hook Cadence | No gap > 90s usable time between re-hooks (`beat: "rehook"`) across the assembled scene order (Section G2) |
+| 23 | Paper Edit Passed | `/fk-paper-edit` report is current with 0 errors; cut proposals answered by the user (or listed as pending under `--fast`) |
 
 ---
 
@@ -518,6 +542,11 @@ Save at `.omc/research/<slug>_ep<NN>_script.json`:
   "episode": 2,
   "title": "Race Against Time",
   "orientation": "HORIZONTAL",
+  "package": {
+    "title": "<working title approved in Step 1>",
+    "thumbnail_concept": "<one focal subject + ≤ 3 words of text>",
+    "promise": "<what the viewer will see — paid off before 0:30>"
+  },
   "lighting_signature": "volumetric light through dust (indoor); harsh midday sun (outdoor)",
   "scenes": [
     {

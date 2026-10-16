@@ -8,6 +8,7 @@ Workflow skills for AI agents and humans. Each skill is a step-by-step recipe.
 |---|-------|------|-------------|
 | 0 | `fk-research` | [fk-research.md](fk-research.md) | Fact-check events and research historical/story lore before scripting |
 | 1 | `fk-scriptwriter` | [fk-scriptwriter.md](fk-scriptwriter.md) | The Ultimate AI Screenplay Bible (10 Archetypes, 8s Arcs, Quality Gates) |
+| 1.5 | `fk-paper-edit` | [fk-paper-edit.md](fk-paper-edit.md) | Paper edit before any generation: timecode, Rule 49 word counts, 30s promise check, re-hook map (≤ 90s), cut proposals — `tools/paper_edit.py` |
 | 2 | `fk-create-project` | [fk-create-project.md](fk-create-project.md) | Create project + entities + video + scenes |
 | 3 | `fk-gen-refs` | [fk-gen-refs.md](fk-gen-refs.md) | Generate reference images for all entities |
 | 4 | `fk-gen-images` | [fk-gen-images.md](fk-gen-images.md) | Generate scene images with character refs bound |
@@ -59,6 +60,7 @@ Workflow skills for AI agents and humans. Each skill is a step-by-step recipe.
 | `fk-thumbnail` | [fk-thumbnail.md](fk-thumbnail.md) | Generate 4 YouTube thumbnail variants with high-impact typography |
 | `fk-youtube-seo` | [fk-youtube-seo.md](fk-youtube-seo.md) | Generate high-converting hook titles, 3-zone descriptions, tags & AI disclosures |
 | `fk-youtube-upload` | [fk-youtube-upload.md](fk-youtube-upload.md) | Automated YouTube API video upload (Shorts & Long-form) |
+| `fk-youtube-analytics` | [fk-youtube-analytics.md](fk-youtube-analytics.md) | Post-publish diagnosis at 48h / 7d: CTR, 30s retention, AVD; change one variable; end screen, playlist, Shorts plan |
 
 ## Operations, Monitoring & Provider Management
 

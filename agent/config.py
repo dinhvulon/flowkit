@@ -33,17 +33,20 @@ FLOW_PROJECT_ID = os.environ.get("FLOW_PROJECT_ID", "")
 # both drop to plain i2v off the start frame. Upscale has no fallback.
 FLOW_ALLOW_DEGRADED = os.environ.get("FLOW_ALLOW_DEGRADED", "0") == "1"
 
-# Process-wide guard for EVERY Flow RPC (creates, uploads, project creation,
-# status polls, metadata reads), including direct API calls that bypass the
-# background worker's limiter. Each call waits a random gap in [MIN, MAX]
-# seconds after the previous one: bursts trip Google's
-# PUBLIC_ERROR_UNUSUAL_ACTIVITY (user-set 45-60s for all requests, 2026-10-04).
+# Process-wide guard for Flow RPCs (creates, uploads, project creation,
+# metadata reads), including direct API calls that bypass the background
+# worker's limiter. Each call waits a random gap in [MIN, MAX] seconds after
+# the previous one: bursts trip Google's PUBLIC_ERROR_UNUSUAL_ACTIVITY
+# (user-set 45-60s 2026-10-04, lowered to 30-45s 2026-10-16).
+# Status polls (operation / project listing / media record) are exempt and
+# only keep FLOW_POLL_MIN_GAP_S between themselves; each video is instead
+# polled once every VIDEO_POLL_INTERVAL (user 2026-10-16: "3p call check status").
 FLOW_GENERATION_MIN_INTERVAL_S = max(
-    0.0, float(os.environ.get("FLOW_GENERATION_MIN_INTERVAL_S", "45"))
+    0.0, float(os.environ.get("FLOW_GENERATION_MIN_INTERVAL_S", "30"))
 )
 FLOW_GENERATION_MAX_INTERVAL_S = max(
     FLOW_GENERATION_MIN_INTERVAL_S,
-    float(os.environ.get("FLOW_GENERATION_MAX_INTERVAL_S", "60")),
+    float(os.environ.get("FLOW_GENERATION_MAX_INTERVAL_S", "45")),
 )
 FLOW_GENERATION_MAX_CONCURRENT = max(
     1, int(os.environ.get("FLOW_GENERATION_MAX_CONCURRENT", "2"))
@@ -98,9 +101,13 @@ MUSE2API_ALLOW_DEGRADED = os.environ.get("MUSE2API_ALLOW_DEGRADED", "0") == "1"
 
 # ─── Worker ──────────────────────────────────────────────────
 POLL_INTERVAL = int(os.environ.get("POLL_INTERVAL", "5"))
-VIDEO_POLL_INTERVAL = int(os.environ.get("VIDEO_POLL_INTERVAL", "10"))  # polling interval for video/upscale status
+VIDEO_POLL_INTERVAL = int(os.environ.get("VIDEO_POLL_INTERVAL", "180"))  # polling interval for video/upscale status (user 2026-10-16: every 3 min)
+FLOW_POLL_MIN_GAP_S = max(0.0, float(os.environ.get("FLOW_POLL_MIN_GAP_S", "2")))  # spacing between status-poll RPCs
 MAX_RETRIES = int(os.environ.get("MAX_RETRIES", "5"))
-VIDEO_POLL_TIMEOUT = int(os.environ.get("VIDEO_POLL_TIMEOUT", "900"))  # long enough for 45-60s-spaced polls
+# One poll round; on timeout the worker re-polls the same Flow op (never resubmits),
+# up to MAX_POLL_ROUNDS rounds (user 2026-10-16: 300s rounds).
+VIDEO_POLL_TIMEOUT = int(os.environ.get("VIDEO_POLL_TIMEOUT", "300"))
+MAX_POLL_ROUNDS = int(os.environ.get("MAX_POLL_ROUNDS", "24"))
 # Omni Flash defaults used by the worker when a project's video_model_family
 # is "omni_flash". Duration must be 4/6/8/10; resolution 360p or 720p.
 OMNI_FLASH_DURATION_S = int(os.environ.get("OMNI_FLASH_DURATION_S", "8"))

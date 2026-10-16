@@ -411,27 +411,27 @@ extension are not needed for muse2api requests. Full setup:
 
 ### Configuration
 
-| Env var                            | Default            | What it does                                                                                                                                                                                                    |
-| ---------------------------------- | ------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `FLOW_PROJECT_ID`                  | —                  | Fallback Flow project for older internal callers. `POST /api/projects` creates a fresh Flow project when `flow_project_id` is omitted; direct `/api/flow/*` calls without `project_id` use the session project. |
-| `FLOW_ALLOW_DEGRADED`              | `0`                | Exactly `1` lets Veo chaining and Veo r2v fall back to plain i2v instead of failing.                                                                                                                            |
-| `FLOW_GENERATION_MIN_INTERVAL_S`   | `3`                | Minimum gap between two image/video submits, process-wide (worker and direct API alike).                                                                                                                        |
-| `FLOW_GENERATION_MAX_CONCURRENT`   | `1`                | Image/video submits in flight at once.                                                                                                                                                                          |
-| `FLOW_UNUSUAL_ACTIVITY_COOLDOWN_S` | `120`              | After `PUBLIC_ERROR_UNUSUAL_ACTIVITY`, submits are refused locally (429) for this long.                                                                                                                         |
-| `FLOW_SESSION_PROJECT_IDLE_S`      | `7200`             | The session project rotates after this much inactivity (minimum 300). State lives in `flow_session_project.json`.                                                                                               |
-| `DEFAULT_PAYGATE_TIER`             | `PAYGATE_TIER_TWO` | Tier reported by `/api/flow/credits` (the batch path cannot fetch the real one). Only picks the Veo i2v model via `models.json`; images, Omni and upscale ignore it.                                            |
-| `MEDIA_PROVIDER`                   | `flow`             | `flow` (Google Flow via extension) or `assistant` (route all generation to the AI assistant).                                                                                                                   |
-| `ASSISTANT_PROVIDER_TIMEOUT_S`     | `1800`             | How long a request waits for a worker to complete its provider job before failing.                                                                                                                              |
-| `ASSISTANT_PROVIDER_POLL_S`        | `15`               | How often to poll the provider-job row while waiting for completion.                                                                                                                                            |
-| `MUSE2API_URL` | — | Base URL of a running [muse2api](https://github.com/crisng95/muse2api) gateway — a separate service you start from its own repo (see [Muse Media Provider](#muse-media-provider-provider-muse2api)). Setting it makes the `muse2api` provider available. |
-| `MUSE2API_KEY` | — | The gateway's `MUSE2API_API_KEY` (sent as `Authorization: Bearer`). |
-| `MUSE2API_IMAGE_MODEL` / `MUSE2API_VIDEO_MODEL` | `muse-image` / `muse-video` | Model ids sent to the gateway. |
-| `MUSE2API_VIDEO_SECONDS` | `8` | Clip length requested for i2v. |
-| `MUSE2API_TIMEOUT_S` | `1800` | Max wait for one image call or video task (covers the gateway's own account failover). |
-| `MUSE2API_POLL_S` | `5` | Video task poll interval. |
-| `MUSE2API_MAX_CONCURRENT` / `MUSE2API_COOLDOWN_S` | `2` / `0` | Worker throttling for this provider. |
-| `MUSE2API_ALLOW_DEGRADED` | `0` | `1` renders chained scenes and r2v as plain i2v (muse.ai takes a first frame only). |
-| `FLOW_MAX_CONCURRENT` / `FLOW_COOLDOWN_S` | `5` / `10` | Worker throttling for the Flow provider (the 45-60s per-RPC gap still applies underneath). |
+| Env var                                           | Default                     | What it does                                                                                                                                                                                                                                             |
+| ------------------------------------------------- | --------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `FLOW_PROJECT_ID`                                 | —                           | Fallback Flow project for older internal callers. `POST /api/projects` creates a fresh Flow project when `flow_project_id` is omitted; direct `/api/flow/*` calls without `project_id` use the session project.                                          |
+| `FLOW_ALLOW_DEGRADED`                             | `0`                         | Exactly `1` lets Veo chaining and Veo r2v fall back to plain i2v instead of failing.                                                                                                                                                                     |
+| `FLOW_GENERATION_MIN_INTERVAL_S`                  | `3`                         | Minimum gap between two image/video submits, process-wide (worker and direct API alike).                                                                                                                                                                 |
+| `FLOW_GENERATION_MAX_CONCURRENT`                  | `1`                         | Image/video submits in flight at once.                                                                                                                                                                                                                   |
+| `FLOW_UNUSUAL_ACTIVITY_COOLDOWN_S`                | `120`                       | After `PUBLIC_ERROR_UNUSUAL_ACTIVITY`, submits are refused locally (429) for this long.                                                                                                                                                                  |
+| `FLOW_SESSION_PROJECT_IDLE_S`                     | `7200`                      | The session project rotates after this much inactivity (minimum 300). State lives in `flow_session_project.json`.                                                                                                                                        |
+| `DEFAULT_PAYGATE_TIER`                            | `PAYGATE_TIER_TWO`          | Tier reported by `/api/flow/credits` (the batch path cannot fetch the real one). Only picks the Veo i2v model via `models.json`; images, Omni and upscale ignore it.                                                                                     |
+| `MEDIA_PROVIDER`                                  | `flow`                      | `flow` (Google Flow via extension) or `assistant` (route all generation to the AI assistant).                                                                                                                                                            |
+| `ASSISTANT_PROVIDER_TIMEOUT_S`                    | `1800`                      | How long a request waits for a worker to complete its provider job before failing.                                                                                                                                                                       |
+| `ASSISTANT_PROVIDER_POLL_S`                       | `15`                        | How often to poll the provider-job row while waiting for completion.                                                                                                                                                                                     |
+| `MUSE2API_URL`                                    | —                           | Base URL of a running [muse2api](https://github.com/crisng95/muse2api) gateway — a separate service you start from its own repo (see [Muse Media Provider](#muse-media-provider-provider-muse2api)). Setting it makes the `muse2api` provider available. |
+| `MUSE2API_KEY`                                    | —                           | The gateway's `MUSE2API_API_KEY` (sent as `Authorization: Bearer`).                                                                                                                                                                                      |
+| `MUSE2API_IMAGE_MODEL` / `MUSE2API_VIDEO_MODEL`   | `muse-image` / `muse-video` | Model ids sent to the gateway.                                                                                                                                                                                                                           |
+| `MUSE2API_VIDEO_SECONDS`                          | `8`                         | Clip length requested for i2v.                                                                                                                                                                                                                           |
+| `MUSE2API_TIMEOUT_S`                              | `1800`                      | Max wait for one image call or video task (covers the gateway's own account failover).                                                                                                                                                                   |
+| `MUSE2API_POLL_S`                                 | `5`                         | Video task poll interval.                                                                                                                                                                                                                                |
+| `MUSE2API_MAX_CONCURRENT` / `MUSE2API_COOLDOWN_S` | `2` / `0`                   | Worker throttling for this provider.                                                                                                                                                                                                                     |
+| `MUSE2API_ALLOW_DEGRADED`                         | `0`                         | `1` renders chained scenes and r2v as plain i2v (muse.ai takes a first frame only).                                                                                                                                                                      |
+| `FLOW_MAX_CONCURRENT` / `FLOW_COOLDOWN_S`         | `5` / `10`                  | Worker throttling for the Flow provider (the 45-60s per-RPC gap still applies underneath).                                                                                                                                                               |
 
 ### Assistant Media Provider (`MEDIA_PROVIDER=assistant`)
 
@@ -490,12 +490,12 @@ cp .env.example .env
 
 Edit `.env`:
 
-| Variable | Set to | Why |
-|----------|--------|-----|
-| `MUSE2API_DRIVER` | `browser` | The default `mock` returns fake media — fine for a dry run, useless for real renders. |
-| `MUSE2API_CHROMIUM_PATH` | path to Chromium/Chrome (or leave empty to auto-detect) | The browser driver drives muse.ai through Chromium. |
-| `MUSE2API_API_KEY` | any secret | Flow Kit sends it as `MUSE2API_KEY`. Left empty, one is generated into `data/api_key`. |
-| `MUSE2API_HOST` | `0.0.0.0` only if Flow Kit runs on another machine | Default `127.0.0.1` accepts local connections only. |
+| Variable                 | Set to                                                  | Why                                                                                    |
+| ------------------------ | ------------------------------------------------------- | -------------------------------------------------------------------------------------- |
+| `MUSE2API_DRIVER`        | `browser`                                               | The default `mock` returns fake media — fine for a dry run, useless for real renders.  |
+| `MUSE2API_CHROMIUM_PATH` | path to Chromium/Chrome (or leave empty to auto-detect) | The browser driver drives muse.ai through Chromium.                                    |
+| `MUSE2API_API_KEY`       | any secret                                              | Flow Kit sends it as `MUSE2API_KEY`. Left empty, one is generated into `data/api_key`. |
+| `MUSE2API_HOST`          | `0.0.0.0` only if Flow Kit runs on another machine      | Default `127.0.0.1` accepts local connections only.                                    |
 
 Start it and leave it running (its own terminal, tmux, or a service manager):
 
@@ -1427,3 +1427,5 @@ python tools/db_sync.py load   # đè DB local bằng bản trên git, xoá -wal
 ```
 
 > DB là file binary nên git không merge được — bản đã push luôn thắng. Không chép đè DB khi server đang chạy và không để file `-wal` cũ nằm cạnh DB mới: SQLite sẽ áp WAL cũ lên DB mới và làm hỏng DB.
+
+ffmpeg -i final_act1.mp4 -af loudnorm=I=-14:LRA=11:TP=-1.0 -c:v copy -c:a aac -b:a 192k -ar 48000 final_act1_14lufs.mp

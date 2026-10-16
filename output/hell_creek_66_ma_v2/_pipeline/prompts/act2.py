@@ -26,8 +26,9 @@ CLIPS = {
 "A2-02": dict(
     name="Frill signal",
     cam="At chest height while sitting, static, looking closely at the old female.",
-    frame="The old female's faded, chipped frill fills half the frame.",
-    inplace="the old female standing side-on with her faded frill filling half the frame; woodland edge beyond.",
+    frame="The old female's faded, chipped frill fills half the frame; dense green foliage directly behind her; NO sky gap, NO horizon line visible.",
+    inplace="the old female standing side-on with her faded frill filling half the frame; dense green foliage directly behind her at every edge; no sky visible.",
+    sf_refs=["CG"],
     anim={"CG": "Turns her head toward the woodland edge; her frill flushes from pale to red."},
     tl=["She turns her head slowly toward the woodland edge.",
         "A pinkish-red flush begins to spread across the pale frill.",
@@ -39,9 +40,21 @@ CLIPS = {
 ),
 "A2-03": dict(
     name="Rule one",
-    cam="She sits on leaf litter.",
+    cam="Close, at Nora's eye level while she sits cross-legged on leaf litter, about 60 cm from her face.",
     frame="Nora framed chest-up, centre; the old female grazing small in the background about 25 m away.",
-    inplace="Nora sitting; the old female in the background.",
+    inplace="Nora sitting cross-legged on leaf litter; the old female in the background with her head down, grazing.",
+    img_extra=("The old female in the background has her head lowered to the ground, grazing; her frill is faded pale "
+               "grey-beige, NOT red, NOT orange, NOT flushed, with no colour patches; her brow horns are short, worn, blunt "
+               "stubs, NOT long, NOT sharp; her mouth is closed. CRITICAL FRAMING: CHEST-UP CLOSE shot, Nora's head "
+               "and shoulders fill the left half of the frame, the bottom edge cuts across her chest, her legs and boots "
+               "are NOT visible; NOT a wide shot, NOT full body. The old female is far behind her, about 25 m away, "
+               "small in the background and softly framed between tree trunks. ARM LOCK: both of Nora's hands rest relaxed on her knees below the "
+               "bottom edge of the frame; NO arm reaches toward the viewer, NO arm extends out of the frame edge, NO "
+               "stretched selfie arm; the viewpoint is outside the frame and nothing holds it."),
+    sf_refs=["N", "NB", "CG"],
+    img_selfie=("Close chest-up shot from directly in front of Nora at her eye level, as if from a small camera resting "
+                "on a log about 60 cm in front of her; both her arms hang down relaxed with her hands on her knees, out of "
+                "frame; no arm points toward the viewer."),
     anim={"CG": "Grazing in the background."},
     tl=["Nora whispers the rule, eyes narrowed and serious, leaning close to the lens.",
         "She glances over her shoulder at the old female grazing behind her, then back.",
@@ -55,8 +68,9 @@ CLIPS = {
 "A2-04": dict(
     name="Rule two, shown",
     cam="At chest height, standing.",
-    frame="The bull stands side-on about 10 m away, filling half the frame.",
-    inplace="the bull standing side-on about 10 m away.",
+    frame="The bull stands side-on about 10 m away, filling half the frame; flat overcast diffuse light falls equally on the bull and the ground behind it.",
+    inplace="the bull standing side-on about 10 m away; same flat overcast light on both the bull's hide and the muddy ground behind; no hard compositing edge between the animal and its background.",
+    sf_refs=["BD"],
     anim={"BD": "Leans and scrapes its front foot backward through the silt."},
     tl=["The bull leans its whole weight forward and scrapes its front foot backward through the silt.",
         "Grey-brown mud sprays behind it; it gives a short low snort through clean dry nostrils.",
@@ -68,9 +82,13 @@ CLIPS = {
 ),
 "A2-05": dict(
     name="Rule two: look boring",
-    cam="resting on a tree stump at waist height.",
-    frame="Nora stands facing the lens, framed from mid-thigh up in the centre; leaf litter and the corridor edge behind her.",
-    inplace="Nora standing on leaf litter; the corridor edge behind her.",
+    cam="Fixed at Nora's waist height, about 1.5 m in front of her, aimed at her.",
+    sf_refs=["N", "NB"],
+    img_extra=("CRITICAL FRAMING: waist-up MEDIUM CLOSE shot. The bottom edge of the frame cuts across her hips; her legs, knees "
+               "and boots are NOT visible. Her head and shoulders sit in the upper half of the frame and her torso fills the "
+               "middle; she is large and close, not a full-body shot, not a wide shot. She stands on flat ground."),
+    frame="Waist-up medium close shot: Nora fills the frame from her hips at the bottom edge to just above her crown; her torso takes up at least half the frame width; sharp leaf litter and corridor edge behind her.",
+    inplace="Nora standing close, about 1.5 m from the lens, large in the frame; leaf litter on the ground; corridor edge behind her.",
     tl=["Nora explains while standing straight, facing the lens, hands loose at her sides.",
         "She turns her shoulders sideways and drops her eyes to the ground, demonstrating, body slack.",
         "She glances back at the lens from the corner of her eye with a small smirk."],
@@ -82,9 +100,9 @@ CLIPS = {
 ),
 "A2-06": dict(
     name="The juvenile's mud bath",
-    cam="At chest height while sitting, static.",
-    frame="The juvenile stands at the edge of the olive-grey mud wallow about 8 m away.",
-    inplace="the juvenile at the edge of the shallow grey mud wallow in the clearing.",
+    cam="At knee height, kneeling, static, about 4 m from the juvenile.",
+    frame="The juvenile at the edge of the olive-grey mud wallow about 4 m away; it fills at least half the frame height; its texture and scales are clearly visible; no sky.",
+    inplace="the juvenile at the edge of the shallow grey mud wallow about 4 m away; large in the frame, taking up at least half the frame height; the wallow mud is olive-grey and wet.",
     anim={"CN": "Kneels into the mud, rolls onto its side, stands and shakes."},
     tl=["The juvenile walks into the wallow and kneels down into the wet mud, front legs first.",
         "It rolls onto its side; grey mud covers its belly and flank.",
@@ -97,9 +115,10 @@ CLIPS = {
 ),
 "A2-07": dict(
     name="Copying the kid",
-    cam="resting on a tree root at waist height.",
-    frame="Nora kneels beside the mud wallow, centre, framed from the knees up.",
-    inplace="Nora kneeling beside the wallow; wet grey mud already on the rim; exactly one fallen fan-palm frond lying on the ground by her right knee.",
+    cam="Fixed at Nora's eye level while she kneels, about 1.5 m away from Nora; aimed directly at her face.",
+    frame="Nora kneels beside the mud wallow, centre, framed from knees up; EXACTLY ONE woman in the frame, no other person.",
+    inplace="Nora kneeling beside the wallow; her face clean and clearly visible; wet grey mud already on the rim of the wallow; exactly one fallen fan-palm frond by her right knee.",
+    sf_refs=["N", "NB"],
     tl=["Nora drags her fingers through the wet grey mud on the rim.",
         "She smears the mud over her forearms and her neck.",
         "She picks up the palm frond with her left hand and holds it over her head."],
@@ -111,9 +130,14 @@ CLIPS = {
 ),
 "A2-08": dict(
     name="Hi, buddy",
-    cam="She films from just behind her own left shoulder, standing still.",
-    frame="Nora's left shoulder and muddy neck fill the left third of the foreground; the juvenile walks toward her in the middle; the old female stands staring in the background.",
-    inplace="Nora standing still with the palm frond held over her head in her left hand; the juvenile about 10 m away; the old female in the background about 20 m away; each a separate body.",
+    cam="Static over-the-shoulder viewpoint just behind and left of Nora's left shoulder, at her shoulder height.",
+    img_extra=("CRITICAL: EXACTLY ONE human body part set in the whole image, all belonging to Nora: her head, her left shoulder "
+               "and her raised left arm holding the frond. There is NO other arm, NO other hand, NO extra fingers and NO held "
+               "object at the left edge or anywhere else in the frame. The viewpoint and whatever records the scene are "
+               "completely outside the visible frame and never seen."),
+    frame="Nora's left shoulder and muddy neck fill the left third of the foreground; the juvenile walks toward her in the middle; the old female stands staring in the background; DEEP FOCUS f/8, entire frame sharp from foreground to distant background.",
+    inplace="Nora standing still with the palm frond held over her head in her left hand; the juvenile about 10 m away; the old female in the background about 20 m away; each a separate body; everything sharp from Nora's shoulder to the background trees.",
+    state="The grey mud on her forearms and neck is thin matte river silt — flat, earthy, natural (NOT tattoos, NOT dark paint lines, NOT symbols, NOT stripes — just natural dried grey mud smeared in broad uneven patches).",
     anim={"CN": "Walks slowly toward Nora and stops about three arm-spans away.", "CG": "Stands still, staring hard at Nora."},
     tl=["Nora whispers, frozen in place, barely moving her lips; the juvenile walks slowly toward her.",
         "It stops about three arm-spans away; the old female stares hard.",
@@ -152,9 +176,10 @@ CLIPS = {
 ),
 "A2-11": dict(
     name="Into hiding",
-    cam="Very low to the ground, crawling backward.",
-    frame="The big moss-covered fallen log fills the near foreground; leaf litter at the bottom.",
-    inplace="the big moss-covered fallen log along the right side of the corridor; leaf litter; Nora's hands at the bottom edge, her left hand still holding the palm frond.",
+    cam="Lying flat on the ground, aiming HORIZONTALLY FORWARD at the big moss-covered log from about half a metre away; lens at ground level pointing straight ahead.",
+    frame="The big moss-covered fallen log fills most of the frame horizontally, seen straight-on from ground level; leaf litter in the lower foreground; the gap between the log and a bush visible at the right; NO overhead view.",
+    inplace="the big moss-covered log across most of the frame, seen horizontal from ground level; leaf litter in the lower foreground; the gap to the right; two narrow slivers of Nora's bare forearms at the very bottom edge only.",
+    img_extra="CRITICAL VIEW DIRECTION: The camera looks HORIZONTALLY FORWARD toward the log face-on, NOT downward at the hands. The log dominates the frame. Nora's hands appear ONLY as two narrow forearm strips at the very bottom edge of the frame. NO torso visible, NO knees visible, NO legs visible, NO person wearing shorts anywhere in the frame — only the mossy log, leaf litter ground, and the very bottom slivers of two bare forearms.",
     tl=["Her hands drag through the leaf litter at the bottom edge as she crawls backward, low.",
         "She stops in the gap between the log and a bush.",
         "Her left hand lays the palm frond down beside the log."],
@@ -165,8 +190,9 @@ CLIPS = {
 "A2-12a": dict(
     name="T. rex passes 1/3 - entry",
     cam=C12,
-    frame="Through the gap: the empty game corridor about 15 steps away; a small puddle in the foreground mud.",
-    inplace="the gap between the log and the bush; the empty corridor beyond; a small puddle in the foreground; the bushes at the right edge.",
+    frame="Through the gap: the empty game corridor about 15 steps away; a small puddle in the foreground mud; NO animal visible anywhere in the corridor at this moment.",
+    inplace="the gap between the log and the bush; the completely empty corridor beyond — no animal present yet; a small puddle in the foreground mud; the bushes at the right edge.",
+    sf_refs=["LC"],
     anim={"TR": "Enters slowly from the right edge, head low, mouth shut."},
     tl=["The puddle trembles in rings with each distant footfall; the bushes at the right edge shake.",
         "The head and shoulders of the Tyrannosaurus enter slowly from the right edge, head low, mouth shut, flies around its snout; it ends with its head in the middle of the gap."],

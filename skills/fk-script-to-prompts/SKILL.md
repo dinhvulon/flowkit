@@ -61,6 +61,7 @@ Skill này là điểm hội tụ (Convergence Node) của 3 hệ thống kỹ n
 15. **`Rule 57, 61, 62 (Chất liệu sinh học & Triệt tiêu CGI, Khói, Ánh sáng nhân tạo)`**: Khủng long/dã thú dùng `rough non-reflective pachyderm hide`, ánh sáng `flat natural overcast diffuse daylight`; CẤM 100% `breath vapor`, `vapor mist`, `snorting steam`, `smoke plumes`, `sunlight streaming`, `god rays`.
 16. **`Rule 60, 62 (Khóa nhận diện 1:1 & Ngũ quan DNA cho Start Frame & Video)`**: BẮT BUỘC lệnh ép 1:1 `[Name]'s face is an exact 1:1 identical match to reference` + ngũ quan DNA (mặt trái xoan mềm, cằm thon, má bầu, mũi nhỏ thẳng, môi mọng dày trái tim, tóc cột cao mái bay), cấm lệch nét giữa các cảnh.
 17. **`Rule 62 (Deep Focus f/8 Chống Xóa Phông Bokeh)`**: Cảnh vlog medium shot bắt buộc `deep focus, deep depth of field (f/8 aperture), entire frame sharp`, cấm shallow DoF / bokeh f/1.8.
+17b. **`Rule 65 (Start Frame: liên tục cắt Last Frame, chuyển cảnh mới sinh ảnh — mở rộng 16/10/2026)`**: Với TỪNG clip, so với clip đứng ngay trước trong timeline: cùng địa điểm + cùng khoảnh khắc + cùng vị trí/góc máy + cùng cỡ cảnh (không có cú cắt) ➔ `start_frame = {"type": "PREV_LAST_FRAME", "note": "<lý do>"}`, KHÔNG có `image_prompt`. Áp cho mọi clip nối tiếp, không chỉ ID có hậu tố `a/b/c`. Đổi một yếu tố ➔ `GENERATE_IMAGE` kèm `image_prompt`. Xuất kèm bảng phân loại Start Frame cho User duyệt.
 
 ### C. Bộ Quy Chuẩn Prompt Structured JSON & Linter Gate
 18. **`fk-prompt-lock`**: Cấu trúc JSON phân cấp bắt buộc, triệt tiêu Attention Decay và Token Drift.

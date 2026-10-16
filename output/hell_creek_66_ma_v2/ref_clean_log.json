@@ -1,60 +1,83 @@
 {
-  "NH": {
-    "raw_media_id": "c0c423cb-89e1-42ce-a4e3-1b831b33d006",
-    "clean_media_id": "f970890e-9976-492c-a66b-80d956694008"
-  },
-  "BS": {
-    "raw_media_id": "34c6905e-bdfb-4735-b20b-aaf551b47baa",
-    "clean_media_id": "87a2d9ec-ea70-499a-8ec2-5aa05b47c63c"
-  },
-  "LB": {
-    "raw_media_id": "447e5471-7174-49e1-9c63-40279d88d0e3",
-    "clean_media_id": "6fed142d-5aa4-49e9-b53b-db0e19bb9365"
-  },
-  "LC": {
-    "raw_media_id": "05303b6b-5627-4bbd-8d21-6d9324bcea06",
-    "clean_media_id": "67f71269-fcbb-4029-8e20-ba7c9e873c45"
-  },
-  "LW": {
-    "raw_media_id": "40a75a15-a45f-47cc-9e38-6f4d4036001e",
-    "clean_media_id": "ee7e29ca-a00f-4021-9b33-f50850c101f9"
-  },
-  "CG": {
-    "raw_media_id": "07b79ba3-d409-4ccb-b478-625188e0ce60",
-    "clean_media_id": "c41b2022-58ec-4dd6-848c-a71319371b1f"
-  },
-  "AR": {
-    "raw_media_id": "716390d9-e62f-4bc1-b763-b4367e1eb9cf",
-    "clean_media_id": "711553af-e192-4857-b5fe-42d5b1190d18"
-  },
-  "CA": {
-    "raw_media_id": "e616582b-77a8-4b20-b01f-8de97e8fc8ca",
-    "clean_media_id": "7f60d0b1-4294-4db7-a8ff-89c42152c770"
+  "N": {
+    "clean_media_id": "6aab9770-3031-40fd-9817-9f033c9fcf8c",
+    "file": "refs/N_clean.jpg",
+    "uploaded_as": "nora_main_clean.jpg"
   },
   "NB": {
-    "raw_media_id": "849a0a69-1e07-453d-8c98-0e20c207106a",
-    "clean_media_id": "27806f20-a54b-4db7-9bbd-aa9523df62f3",
-    "chosen": "round 2 (round 3 moved the flask to the right hip)"
+    "clean_media_id": "162e9ec9-64f9-4d69-8e29-b0c7e91c09a5",
+    "file": "refs\\NB_clean.jpg",
+    "uploaded_as": "NB_clean.jpg"
+  },
+  "NH": {
+    "clean_media_id": "c06f2ae3-6d51-4b85-a9ab-d185c0df1021",
+    "file": "refs\\NH_clean.jpg",
+    "uploaded_as": "NH_clean.jpg"
   },
   "BD": {
-    "raw_media_id": "aa3e358a-b9c9-4349-bd32-21ff3baa51e9",
-    "clean_media_id": "c4770c8c-10b0-4c19-8ffa-860a469a65eb",
-    "note": "round 3, stray \"2\" labels painted out locally"
+    "clean_media_id": "40b41cbd-423e-4098-a8c7-2692f7392921",
+    "file": "refs\\BD_clean.jpg",
+    "uploaded_as": "BD_clean.jpg"
+  },
+  "CG": {
+    "clean_media_id": "7a6522c1-74fa-4629-b7a4-118f8c48d1ab",
+    "file": "refs\\CG_clean.jpg",
+    "uploaded_as": "CG_clean.jpg"
   },
   "CN": {
-    "raw_media_id": "854e446c-c8f8-4d5b-9854-ec09dc68dd56",
-    "clean_media_id": "8d21d53b-4450-4f66-a5b8-f9e50f796fff"
+    "clean_media_id": "fef35c05-0bb1-4ac8-a6e4-ce4c7d54b27e",
+    "file": "refs\\CN_clean.jpg",
+    "uploaded_as": "CN_clean.jpg"
   },
   "TR": {
-    "raw_media_id": "5445f18c-221b-4167-98c7-42c6141e0e3d",
-    "clean_media_id": "f1753a0c-a0bb-4405-819e-5955659268f8"
+    "clean_media_id": "f2a6cc83-4e99-4bfb-8a3a-053951c518e8",
+    "file": "refs\\TR_clean.jpg",
+    "uploaded_as": "TR_clean.jpg"
+  },
+  "AR": {
+    "clean_media_id": "aa8f01d2-64a2-4a25-8959-665f9a6406b7",
+    "file": "refs\\AR_clean.jpg",
+    "uploaded_as": "AR_clean.jpg"
   },
   "ED": {
-    "raw_media_id": "c4dd2b19-f6b5-4b43-855c-43fe16352768",
-    "clean_media_id": "6a53ff42-9538-49fd-b7c3-5d472321569c"
+    "clean_media_id": "c6cfe695-36bf-44d9-8ca9-1512eb0aab69",
+    "file": "refs\\ED_clean.jpg",
+    "uploaded_as": "ED_clean.jpg"
+  },
+  "BS": {
+    "clean_media_id": "ed37a2ae-66c9-4f5e-a12a-4ff5073a4dd1",
+    "file": "refs\\BS_clean.jpg",
+    "uploaded_as": "BS_clean.jpg"
   },
   "IN": {
-    "raw_media_id": "fcce96f9-526e-4b8b-ae06-8753b0492b66",
-    "clean_media_id": "c292e4e1-afa9-4797-ad3b-54121e2cf17c"
+    "clean_media_id": "f08664d5-3f59-46e9-85ef-832ec5082bcf",
+    "file": "refs\\IN_clean.jpg",
+    "uploaded_as": "IN_clean.jpg"
+  },
+  "CA": {
+    "clean_media_id": "f2f5f25e-f062-493a-86c2-12c4df5ea89b",
+    "file": "refs\\CA_clean.jpg",
+    "uploaded_as": "CA_clean.jpg"
+  },
+  "LB": {
+    "clean_media_id": "d8316b39-0146-4325-a68a-9e94e3110a73",
+    "file": "refs\\LB_clean.jpg",
+    "uploaded_as": "LB_clean.jpg"
+  },
+  "LC": {
+    "clean_media_id": "41643687-cf49-43ad-94a7-07437f0957e2",
+    "file": "refs\\LC_clean.jpg",
+    "uploaded_as": "LC_clean.jpg"
+  },
+  "LW": {
+    "clean_media_id": "ab0730b1-b385-4050-a31a-e6d30ac9cf11",
+    "file": "refs\\LW_clean.jpg",
+    "uploaded_as": "LW_clean.jpg"
+  },
+  "TF": {
+    "clean_media_id": "b7e9038e-ddd7-4f67-8b22-04d22108f354",
+    "file": "refs/TF_clean.jpg",
+    "uploaded_as": "TF_clean.jpg",
+    "raw_media_id": "2cea8421-1b5a-4052-8dac-e38082dba0e1"
   }
 }

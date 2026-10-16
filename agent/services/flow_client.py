@@ -31,11 +31,15 @@ from agent.config import (
     DEFAULT_PAYGATE_TIER,
     FLOW_GENERATION_MIN_INTERVAL_S, FLOW_GENERATION_MAX_INTERVAL_S,
     FLOW_GENERATION_MAX_CONCURRENT, FLOW_UNUSUAL_ACTIVITY_COOLDOWN_S,
+    FLOW_POLL_MIN_GAP_S,
 )
 from agent import config as _config
 from agent.services import flow_batch as fb
 
 logger = logging.getLogger(__name__)
+
+# Status reads: exempt from the 30-45s generation gap (see config).
+_POLL_RPCS = {fb.RPC_OPERATION, fb.RPC_PROJECT_MEDIA, fb.RPC_MEDIA}
 
 # Captured from the current Flow image composer. x4 launches independent
 # ogiZ0b requests at roughly 0.0s, 0.5s, 1.5s and 2.5s rather than bursting
@@ -70,6 +74,8 @@ class FlowClient:
         self._generation_slots = asyncio.Semaphore(FLOW_GENERATION_MAX_CONCURRENT)
         self._generation_rate_gate = asyncio.Lock()
         self._generation_last_submit_at = 0.0
+        self._poll_gate = asyncio.Lock()
+        self._poll_last_at = 0.0
         self._generation_unusual_until = 0.0
         self._generation_last_unusual_at: Optional[float] = None
         self._generation_last_unusual_rpc: Optional[str] = None
@@ -523,8 +529,10 @@ class FlowClient:
                         timeout: float = 300) -> dict:
         """Run one batchexecute RPC in the Flow page. Returns the raw body.
 
-        Every RPC to Flow — creates, polls and metadata reads alike — waits a
-        random FLOW_GENERATION_MIN/MAX_INTERVAL_S gap after the previous one.
+        Every RPC to Flow except status polls waits a random
+        FLOW_GENERATION_MIN/MAX_INTERVAL_S gap after the previous one; polls
+        only keep FLOW_POLL_MIN_GAP_S between themselves, since the poll loop
+        already spaces each video's checks by VIDEO_POLL_INTERVAL.
         Create-type calls (CAPTCHA-bearing image/video/upscale submits, image
         uploads, project creation) additionally hold the generation slot and
         honour the UNUSUAL_ACTIVITY cooldown.
@@ -539,6 +547,13 @@ class FlowClient:
 
         is_generation = (captcha_action in {fb.CAPTCHA_IMAGE, fb.CAPTCHA_VIDEO}
                          or rpcid in {fb.RPC_UPLOAD_IMAGE, fb.RPC_CREATE_PROJECT})
+        if not is_generation and rpcid in _POLL_RPCS:
+            async with self._poll_gate:
+                delay = FLOW_POLL_MIN_GAP_S - (time.monotonic() - self._poll_last_at)
+                if delay > 0:
+                    await asyncio.sleep(delay)
+                self._poll_last_at = time.monotonic()
+            return await self._send("batch_rpc", params, timeout=timeout)
         if not is_generation:
             async with self._generation_rate_gate:
                 await self._wait_request_gap()

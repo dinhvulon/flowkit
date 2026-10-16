@@ -1,10 +1,4 @@
 {
-  "A1-12a": {
-    "request_id": "28a80da7-b663-4f86-9d66-a117ea8e27de",
-    "status": "COMPLETED",
-    "media_id": "5d29e53e-9137-4b62-add0-f9d29cc9aa50",
-    "file": "scene_013_A1-12a_e18bf361.mp4"
-  },
   "EST-01": {
     "request_id": "876fb7f4-1666-406c-aa0d-566516e16c8e",
     "status": "COMPLETED",
@@ -17,23 +11,11 @@
     "media_id": "da0a20a0-3b3c-428b-952c-8e61c99d75b4",
     "file": "scene_001_A1-01_ba9e7dd0.mp4"
   },
-  "A1-12b": {
-    "request_id": "79613bd4-be53-46df-8f81-194df62f13ac",
-    "status": "COMPLETED",
-    "media_id": "66c6ee0b-0eb4-4643-b31a-df9cbcea6853",
-    "file": "scene_014_A1-12b_6ef6dca6.mp4"
-  },
   "A1-02": {
     "request_id": "cff44c7c-68d3-4342-8895-d8eeaceb2072",
     "status": "COMPLETED",
     "media_id": "296d2d6a-e2a1-4111-8a25-4520dbdbb368",
     "file": "scene_002_A1-02_d4ffd8d5.mp4"
-  },
-  "A1-12c": {
-    "request_id": "dd4e7a65-95d3-4f22-9a43-1d0418ab33c3",
-    "status": "COMPLETED",
-    "media_id": "56f885a5-a9c6-48aa-8b01-1937dc7334db",
-    "file": "scene_015_A1-12c_4b674781.mp4"
   },
   "A1-04": {
     "request_id": "60092fff-8f66-49e9-bdf7-ab6b7ae315f6",
@@ -47,15 +29,420 @@
     "media_id": "dcc60671-fd58-4a5b-8795-26661a6d309a",
     "file": "scene_005_A1-05_8b049391.mp4"
   },
-  "A1-06": {
-    "request_id": "9a580164-6ee0-4f01-a461-6ff7c0499afb",
+  "A1-07": {
+    "request_id": "b6d01e06(db)",
     "status": "COMPLETED",
-    "media_id": "6194aaf0-474f-46fc-a0bc-d4a76f204f72",
-    "file": "scene_006_A1-06_03c3325e.mp4"
+    "media_id": "d4bc4aaf-0b69-4944-ab1b-17e0b4156218",
+    "file": "scene_007_A1-07_dd501c45.mp4",
+    "approved": "2026-10-15"
   },
-  "A1-03": {
-    "request_id": "1559c001-0566-4137-abac-642c03c27396",
-    "status": "FAILED",
-    "error": "orphaned: PROCESSING since 23:03 with 0 active workers; marked failed at stop of session 2026-10-14"
+  "A1-08": {
+    "request_id": "e1414f4c-5a7f-4258-b564-e1366f19cb03",
+    "status": "COMPLETED",
+    "media_id": "d54f33df-eadd-4d6a-8bbc-7b59b86cb480",
+    "file": "scene_008_A1-08_f2fbb6e2.mp4"
+  },
+  "A1-09": {
+    "request_id": "4a93977d-7038-40a1-9f8a-a025ce5aa10a",
+    "status": "COMPLETED",
+    "media_id": "36f0c378-de8c-4095-acf7-2cb0429f2a2c",
+    "file": "scene_009_A1-09_e8a7080e.mp4"
+  },
+  "A1-10": {
+    "request_id": "4588f57e-ac4c-4e19-9088-e05ad1e42a13",
+    "status": "COMPLETED",
+    "media_id": "df001296-6f15-422a-8f36-8ce3563b9dff",
+    "file": "scene_010_A1-10_5e72915f.mp4"
+  },
+  "A1-S1": {
+    "request_id": "66319fbb-b7c9-49a0-a4e8-935da219aedf",
+    "status": "COMPLETED",
+    "media_id": "ce2a8204-bf87-4af2-a60c-a967a6baf693",
+    "file": "scene_011_A1-S1_1e61b7d2.mp4"
+  },
+  "A1-11": {
+    "request_id": "0b180f3b-c00c-422f-8537-89c34b9eed75",
+    "status": "COMPLETED",
+    "media_id": "29ffdd59-7815-429a-b5d1-e12cfbb84992",
+    "file": "scene_012_A1-11_56d05221.mp4"
+  },
+  "A1-13": {
+    "request_id": "7866a41e-8c48-41d2-9768-90ad664940af",
+    "status": "COMPLETED",
+    "media_id": "eb105962-bf60-44f8-b739-c93371ee5a31",
+    "file": "scene_016_A1-13_a841469a.mp4"
+  },
+  "A1-12a": {
+    "request_id": "76442cce-3ecd-4bbf-9cfa-a93ae980a156",
+    "status": "COMPLETED",
+    "media_id": "bdc5ce40-e2db-4397-af11-687ade6e9c2d",
+    "file": "scene_013_A1-12a_e18bf361.mp4"
+  },
+  "A1-14": {
+    "request_id": "a038565c(db)",
+    "status": "COMPLETED",
+    "media_id": "250ee517-509b-4467-adf9-43fac990974a",
+    "file": "scene_017_A1-14_00a04296.mp4"
+  },
+  "A1-12b": {
+    "request_id": "0eea0242-fc9c-4fd9-b9e8-a3cbfc8e630e",
+    "status": "COMPLETED",
+    "media_id": "95898261-d74c-49f8-9787-900f56b451d4",
+    "file": "scene_014_A1-12b_6ef6dca6.mp4"
+  },
+  "A1-12c": {
+    "request_id": "e6ff28ad-20a4-461f-a013-f722c0968cf0",
+    "status": "COMPLETED",
+    "media_id": "470fec42-a692-4c9f-9951-b7f28d6cefcd",
+    "file": "scene_015_A1-12c_4b674781.mp4"
+  },
+  "A1-06": {
+    "request_id": "0e86b62f-1c71-4a8c-a5ac-582b9a66c431",
+    "status": "COMPLETED",
+    "media_id": "1a153a31-f45a-45a6-bcff-3a3c6a7b683c",
+    "file": "scene_005_A1-06_03c3325e.mp4",
+    "approved": "2026-10-15",
+    "note": "take 3: walk to creek edge + shell stays upright; take1/take2 archived"
+  },
+  "A2-01": {
+    "request_id": "bfddd3aa-08da-457c-8883-ae0eb2c65a55",
+    "status": "COMPLETED",
+    "media_id": "d799a31b-e0b2-48ab-8c30-36c4cd4a6de6",
+    "file": "scene_017_A2-01_b576a201.mp4",
+    "approved": true
+  },
+  "A2-02": {
+    "request_id": "211593d5-1015-499c-b2a0-200111df5da5",
+    "status": "COMPLETED",
+    "media_id": "ad1dd68a-17a6-41a7-8f21-1dcc18a4847c",
+    "file": "scene_018_A2-02_5060b62b.mp4",
+    "approved": true
+  },
+  "A2-03": {
+    "request_id": "91f539ea-9c63-48c6-8a66-eb5132eeb63e",
+    "status": "COMPLETED",
+    "media_id": "ec21e108-b8e0-4908-9930-93d9688f0f4a",
+    "file": "scene_019_A2-03_ac590665.mp4",
+    "approved": true
+  },
+  "A2-04": {
+    "request_id": "6382c36d-ee3b-44ed-9132-1bf141f2859b",
+    "status": "COMPLETED",
+    "media_id": "34cdafeb-0a87-4e42-a8fe-08cbd3966a97",
+    "file": "scene_020_A2-04_2af01d62.mp4",
+    "approved": true
+  },
+  "A2-05": {
+    "request_id": "ad573c5b-f85c-4793-bf0d-22b91668175a",
+    "status": "COMPLETED",
+    "media_id": "2f3fb880-1093-4b46-bfe3-3532662da41b",
+    "file": "scene_021_A2-05_5c61a1e0.mp4",
+    "approved": true
+  },
+  "A2-06": {
+    "request_id": "59912b94-d177-4111-ada2-c05e13e2d285",
+    "status": "COMPLETED",
+    "media_id": "6c8e6a49-1a70-4a7b-8ca9-2aed368a70e4",
+    "file": "scene_022_A2-06_3e5fb11d.mp4"
+  },
+  "A2-07": {
+    "request_id": "f8d9335e-a7b5-4048-8b8d-da722db9e2ff",
+    "status": "COMPLETED",
+    "media_id": "81551b91-06fd-4ad2-bbc2-efe5f9d62d5b",
+    "file": "scene_023_A2-07_35b67bf7.mp4"
+  },
+  "A2-08": {
+    "request_id": "c4d774f8-74b4-47d3-ae8a-e68b2036a9f3",
+    "status": "COMPLETED",
+    "media_id": "5718da9d-59c8-4e15-9382-f740bcd94e3d",
+    "file": "scene_024_A2-08_b9f9e8b6.mp4"
+  },
+  "A2-09": {
+    "request_id": "bcd59009-91a5-4e58-814b-b2152ccbf17f",
+    "status": "COMPLETED",
+    "media_id": "7a3ccfd2-2ad5-425b-9e13-14ba087eda12",
+    "file": "scene_025_A2-09_02712bc8.mp4"
+  },
+  "A2-10": {
+    "request_id": "5203813e-0b63-466e-afa6-6534f3e306e5",
+    "status": "COMPLETED",
+    "media_id": "d0aad5f2-037d-42cb-a702-ea4ef4f2a65f",
+    "file": "scene_026_A2-10_937ce32d.mp4"
+  },
+  "A2-11": {
+    "request_id": "3d70c59f-ccdc-47b1-9a9e-169da2044746",
+    "status": "COMPLETED",
+    "media_id": "9f60ea61-24e6-4f4c-b540-b11683724643",
+    "file": "scene_027_A2-11_e22b4432.mp4"
+  },
+  "A2-12a": {
+    "request_id": "8f30e8c1-ea30-44fa-b414-3c32d1f7c23f",
+    "status": "COMPLETED",
+    "media_id": "dc671993-5bb6-419d-998d-829a15dd4eba",
+    "file": "scene_028_A2-12a_359ae650.mp4"
+  },
+  "A2-13": {
+    "request_id": "669ada89-e4ca-4f8f-a25a-cf5b95b74abc",
+    "status": "COMPLETED",
+    "media_id": "5c84d1b3-4a38-4a76-b72e-1ceb53ba5b6b",
+    "file": "scene_031_A2-13_8d2e09a8.mp4"
+  },
+  "A2-14": {
+    "request_id": "36583dc2-6467-45c6-9cb2-fc66c534944b",
+    "status": "COMPLETED",
+    "media_id": "c374d203-9a58-4842-acc2-63f056b39982",
+    "file": "scene_032_A2-14_91693d4e.mp4"
+  },
+  "A2-12b": {
+    "request_id": "3b0a94e5-8de0-4de9-847e-ad317bc0c388",
+    "status": "COMPLETED",
+    "media_id": "11356c22-3a26-4573-ad7c-01cb25025f76",
+    "file": "scene_029_A2-12b_2a29f838.mp4"
+  },
+  "A2-R1": {
+    "request_id": "1c139dbb-075d-45c7-bedc-ab638086d7b9",
+    "status": "COMPLETED",
+    "media_id": "a424c411-3e4e-406f-a268-b1828d19cba2",
+    "file": "scene_033_A2-R1_25cb3836.mp4"
+  },
+  "A2-R2a": {
+    "request_id": "3f1da12d-8c71-453e-9aff-aee23f3fa4cd",
+    "status": "COMPLETED",
+    "media_id": "2d737ef3-adaf-40a2-9158-b81236717509",
+    "file": "scene_034_A2-R2a_b30cce0f.mp4"
+  },
+  "A2-12c": {
+    "request_id": "1b09c16d-58ac-4c6d-a0b3-b5d0b6e6870b",
+    "status": "COMPLETED",
+    "media_id": "0d41fbf5-ba7f-4b6b-acfb-9a46d0fd780a",
+    "file": "scene_030_A2-12c_5805426a.mp4"
+  },
+  "A2-R2b": {
+    "request_id": "db828b57-ec58-4587-9329-ccca6d7298b3",
+    "status": "COMPLETED",
+    "media_id": "d26e4eb9-5a6d-42de-8866-e9fe905123af",
+    "file": "scene_035_A2-R2b_3be18e7d.mp4"
+  },
+  "A2-R4": {
+    "request_id": "50ada059-76b9-46e2-9130-6e1c1ab36efb",
+    "status": "COMPLETED",
+    "media_id": "2a7f45af-e459-44fb-b061-053178319be9",
+    "file": "scene_038_A2-R4_b55e70ec.mp4"
+  },
+  "A2-R2c": {
+    "request_id": "7fd7683e-9801-4ea0-938e-545f7bc1a150",
+    "status": "COMPLETED",
+    "media_id": "4158d0c5-f3c5-424e-ac71-5a5883f70fc8",
+    "file": "scene_036_A2-R2c_68e594a0.mp4"
+  },
+  "A2-15": {
+    "request_id": "36eac7a5-4d63-47de-b6a2-eecdf9ca8d4f",
+    "status": "COMPLETED",
+    "media_id": "093f7539-2aac-4b89-9985-33d792a7c00f",
+    "file": "scene_039_A2-15_b3e63257.mp4"
+  },
+  "EST-02": {
+    "request_id": "b236a2f9-b8cf-4916-92be-bf46490aa458",
+    "status": "COMPLETED",
+    "media_id": "f5c63566-661f-4779-965e-daa81e7f07e3",
+    "file": "scene_040_EST-02_87d8d1bb.mp4"
+  },
+  "A2-16_old_bowl": {
+    "request_id": "cc076604-a129-4d73-86f5-169bd186c921",
+    "status": "COMPLETED",
+    "media_id": "d3c29db7-302f-4d9b-ac7c-3d7ac8634917",
+    "file": "scene_041_A2-16_1fc2dfc8.mp4"
+  },
+  "A2-16": {
+    "request_id": "9ee336d0-61c5-44c9-947b-1af1fca139b4",
+    "status": "COMPLETED",
+    "media_id": "8533e5fb-af34-459c-becf-52cea7a75a83",
+    "file": "scene_024_A2-16_749d40ac.mp4"
+  },
+  "A3-02": {
+    "request_id": "760314ef-58c0-49ff-9f71-a6c7c683b6e7",
+    "status": "COMPLETED",
+    "media_id": "52755a7b-a342-488b-a82f-f491cc825197",
+    "file": "scene_026_A3-02_5cf0744f.mp4"
+  },
+  "A3-03": {
+    "request_id": "3f0d0eed-a7c6-4024-b219-421b8dacfc15",
+    "status": "COMPLETED",
+    "media_id": "b7b3b279-1d10-4d42-b2db-b8256c361dbf",
+    "file": "scene_027_A3-03_18da1543.mp4"
+  },
+  "A3-04": {
+    "request_id": "8a6bfbd3-f325-48a2-9929-e97706c999af",
+    "status": "COMPLETED",
+    "media_id": "42d77465-860e-4896-b001-4662dcecb33e",
+    "file": "scene_028_A3-04_90bc8aff.mp4"
+  },
+  "A3-05": {
+    "request_id": "b6b67a6b-feec-4901-bf87-9e790739b871",
+    "status": "COMPLETED",
+    "media_id": "c1e0681c-67ca-4c40-9e60-5623889ad872",
+    "file": "scene_029_A3-05_a241e178.mp4"
+  },
+  "A3-06a": {
+    "request_id": "1e29eb85-64a5-4be1-8e06-22a3b5056a4f",
+    "status": "COMPLETED",
+    "media_id": "95f96509-c359-4d8c-aa5c-ab3cf93ffa16",
+    "file": "scene_030_A3-06a_af5ba591.mp4"
+  },
+  "A3-07": {
+    "request_id": "7f5f6bcb-dca6-4438-9561-f0429e2d7954",
+    "status": "COMPLETED",
+    "media_id": "22e877da-c4dc-403d-b7b8-82fde62db997",
+    "file": "scene_033_A3-07_e363a6cf.mp4"
+  },
+  "A3-08": {
+    "request_id": "9ccc425f-5015-4efd-bf78-839809fc7558",
+    "status": "COMPLETED",
+    "media_id": "49c49f77-d99c-44d2-bc27-1ef7fc69ce5d",
+    "file": "scene_034_A3-08_f269ef69.mp4"
+  },
+  "A3-09": {
+    "request_id": "72ad668f-107a-4410-9dd0-b3de8d4db6a7",
+    "status": "COMPLETED",
+    "media_id": "99534dd7-2573-4dbf-9298-a18cb5963986",
+    "file": "scene_035_A3-09_3f872dbd.mp4"
+  },
+  "A3-06b": {
+    "request_id": "7767131a-5788-44b0-9a68-643cb074df8f",
+    "status": "COMPLETED",
+    "media_id": "c516e486-7da1-427e-ad28-e0ce0d126458",
+    "file": "scene_031_A3-06b_3a5e3034.mp4"
+  },
+  "A3-D1": {
+    "request_id": "537af5dd-0ede-4841-ba14-8bd9f0c68085",
+    "status": "COMPLETED",
+    "media_id": "3963c112-8f62-419c-ab8e-a101df06fec9",
+    "file": "scene_036_A3-D1_3302699a.mp4"
+  },
+  "A3-D2a": {
+    "request_id": "4285a7fa-b7f0-4158-9190-af229dbe2140",
+    "status": "COMPLETED",
+    "media_id": "dcb51bf5-2dc2-4b8f-8567-d79dfe43ff68",
+    "file": "scene_037_A3-D2a_ecf22753.mp4"
+  },
+  "A3-D3": {
+    "request_id": "d3529943-a6b3-40ba-8288-8e4b7fc2b178",
+    "status": "COMPLETED",
+    "media_id": "420f83e9-e4a8-421c-91f5-708b2add1955",
+    "file": "scene_040_A3-D3_8e35f326.mp4"
+  },
+  "A3-06c": {
+    "request_id": "d9c0f5be-d8a6-4a97-a537-188a4df1fa4a",
+    "status": "COMPLETED",
+    "media_id": "e99963ce-304b-4e2d-97dd-b161d5cc737a",
+    "file": "scene_032_A3-06c_ab8cdb05.mp4"
+  },
+  "A3-D2b": {
+    "request_id": "b50fe822-4dee-4dd7-b069-afd0160ffd00",
+    "status": "COMPLETED",
+    "media_id": "b22d3728-76b4-4556-845a-cd64a261d3f7",
+    "file": "scene_038_A3-D2b_3513e9b5.mp4"
+  },
+  "A3-10": {
+    "request_id": "8807ff2a-3796-4c93-815a-7bac9c3e6bb5",
+    "status": "COMPLETED",
+    "media_id": "5e04d6b6-0857-4223-8bcf-1cddc9722b17",
+    "file": "scene_041_A3-10_b580455c.mp4"
+  },
+  "A3-11": {
+    "request_id": "b76340e0-66ea-4855-afbd-1951744fc866",
+    "status": "COMPLETED",
+    "media_id": "6ac4d04e-b3c9-4ef7-b931-3f6a571dbad1",
+    "file": "scene_042_A3-11_b7090ccf.mp4"
+  },
+  "A3-12a": {
+    "request_id": "e0dd5073-b8d1-4bfc-970f-66e165370c65",
+    "status": "COMPLETED",
+    "media_id": "28ca3afb-b85f-408e-a354-e14bc3feeb14",
+    "file": "scene_043_A3-12a_d4e5cba3.mp4"
+  },
+  "A3-13": {
+    "request_id": "f90c8ed6-d077-47c9-91aa-52252802b4de",
+    "status": "COMPLETED",
+    "media_id": "c53d9d66-3e7a-428c-b97e-4b4a44568493",
+    "file": "scene_045_A3-13_6fb44671.mp4"
+  },
+  "A3-D2c": {
+    "request_id": "58d2f598-2367-442b-9e3d-f7404925db9f",
+    "status": "COMPLETED",
+    "media_id": "2edbf190-753e-41f7-ad63-ce44cf44ee6c",
+    "file": "scene_039_A3-D2c_c6a5cd91.mp4"
+  },
+  "A3-12b": {
+    "request_id": "085a2ada-563c-42d3-bf0e-68271b004cf4",
+    "status": "COMPLETED",
+    "media_id": "64cc1e13-a60e-4c5c-8e97-3515679bed25",
+    "file": "scene_044_A3-12b_363d531e.mp4"
+  },
+  "A3-16": {
+    "request_id": "4947b697-d97c-42a6-9c42-5ea04f10650d",
+    "status": "COMPLETED",
+    "media_id": "08c1a3e3-17a8-48f6-a0a6-a271a0c37a09",
+    "file": "scene_052_A3-16_b73d3bd7.mp4"
+  },
+  "A3-Q1": {
+    "request_id": "406ed0e7-0169-4715-aad2-adbce06f4532",
+    "status": "COMPLETED",
+    "media_id": "0b914f72-af23-4bcc-8854-012e2da412ad",
+    "file": "scene_053_A3-Q1_0ad36f36.mp4"
+  },
+  "A3-W3": {
+    "request_id": "088456cb-a3f8-4b8a-879f-97ca54769104",
+    "status": "COMPLETED",
+    "media_id": "dac5cb16-3edf-4dbc-be47-2a7b3d4e70c4",
+    "file": "scene_049_A3-W3_a4b167a6.mp4"
+  },
+  "A3-Q2": {
+    "request_id": "ab3f5261-51ba-49cb-b7f7-b0742594f7fd",
+    "status": "COMPLETED",
+    "media_id": "36555a47-086b-4c37-a7fe-76701ef331ba",
+    "file": "scene_054_A3-Q2_86502278.mp4"
+  },
+  "A3-14": {
+    "request_id": "7e3619d9-6f41-4437-9ce2-25bd53295915",
+    "status": "COMPLETED",
+    "media_id": "a3c83d71-bff5-4426-9bf2-a922218417e7",
+    "file": "scene_050_A3-14_43209c59.mp4"
+  },
+  "A3-17": {
+    "request_id": "01cf30a5-0f60-4cf6-a012-2e72eafa4888",
+    "status": "COMPLETED",
+    "media_id": "ab021566-be73-4cfc-a300-6c456c5f815b",
+    "file": "scene_055_A3-17_a7ff5f81.mp4"
+  },
+  "EST-03": {
+    "request_id": "c362f00f-2d8e-4c90-9dec-64010126d514",
+    "status": "COMPLETED",
+    "media_id": "5351f68e-5602-4799-a954-21ce6bf3779a",
+    "file": "scene_056_EST-03_c25e0d2e.mp4"
+  },
+  "A3-W1": {
+    "request_id": "198e98a2-ca67-4912-a155-bff770147c6c",
+    "status": "COMPLETED",
+    "media_id": "cb91e600-5801-4b5e-ba6f-2cca1ae3ee9f",
+    "file": "scene_046_A3-W1_ec1ecdbe.mp4"
+  },
+  "A3-W2a": {
+    "request_id": "0146caef-eb95-47aa-9da4-25101514ddbc",
+    "status": "COMPLETED",
+    "media_id": "fc58f187-2dc0-4078-adae-dc6b9b15d6cb",
+    "file": "scene_047_A3-W2a_e0fa1b00.mp4"
+  },
+  "A3-15": {
+    "request_id": "68f20b54-ac6d-4fc5-8bab-619dda1d7660",
+    "status": "COMPLETED",
+    "media_id": "7449d7db-900e-4468-95e0-680c770e196c",
+    "file": "scene_051_A3-15_2495968d.mp4"
+  },
+  "A3-01": {
+    "request_id": "8832241d-a5e6-4c1f-bbe0-f99a14672f01",
+    "status": "COMPLETED",
+    "media_id": "4a70759c-44e6-4ac4-bc92-58566e4ffcd3",
+    "file": "scene_025_A3-01_f187a3e7.mp4"
   }
 }

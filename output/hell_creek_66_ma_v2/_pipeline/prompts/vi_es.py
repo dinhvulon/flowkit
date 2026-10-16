@@ -2,7 +2,6 @@
 """Vietnamese translation of the es-419 lines (for user review only, never in prompts)."""
 VI = {
 "A1-02": ["Rồi. Ra rồi, ra khỏi nước rồi.", "Là cá sấu, hai con, và chúng chẳng tò mò gì.", "Cái chúng có là sự kiên nhẫn."],
-"A1-03": ["Rồi, đó là một cái xác. To lắm.", "Có gì đó ăn mất nửa con đêm qua rồi bỏ đi.", "Bỏ đi, hay chỉ tạm tránh ra."],
 "A1-04": ["Nhìn cỡ vết cắn kìa.", "Cả bàn tay mình lọt trong một cái răng.", "Mình đang đứng trong bếp của nó."],
 "A1-05": ["Mình cố tình chọn đúng ngày này.", "Mười hai tiếng nữa bầu trời kia sẽ bốc cháy.", "Mình chỉ đến để xem thôi."],
 "A1-06": ["Mai rùa, cỡ cái đĩa ăn tối.", "Có một cái hốc khô dưới bờ bên kia.", "Cá sấu nằm ngay bên dưới. Vậy thì thôi."],

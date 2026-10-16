@@ -111,12 +111,16 @@ async def _poll_workflows(
     - "still gen" = response missing video block, or encodedVideo missing/empty
     """
     poll_interval = VIDEO_POLL_INTERVAL
+    # Wall clock, not a sum of sleeps: each poll also waits 45-60s in the Flow
+    # throttle, so counting only poll_interval stretched the timeout ~6x.
+    loop = asyncio.get_running_loop()
+    started = loop.time()
     elapsed = 0
     completed = {}  # media_id → local_path
 
     while elapsed < timeout:
         await asyncio.sleep(poll_interval)
-        elapsed += poll_interval
+        elapsed = int(loop.time() - started)
 
         for op in operations:
             mid = op.get("_primary_media_id", "")
@@ -198,6 +202,9 @@ async def _poll_operations(
         return await _poll_workflows(client, operations, timeout)
 
     poll_interval = VIDEO_POLL_INTERVAL
+    # Wall clock — see _poll_workflows.
+    loop = asyncio.get_running_loop()
+    started = loop.time()
     elapsed = 0
     current_ops = operations
     # The batch path attaches the operation's own grumble ("Media not found.")
@@ -207,7 +214,7 @@ async def _poll_operations(
 
     while elapsed < timeout:
         await asyncio.sleep(poll_interval)
-        elapsed += poll_interval
+        elapsed = int(loop.time() - started)
 
         status_result = await client.check_video_status(current_ops)
         if _is_error(status_result):

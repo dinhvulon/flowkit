@@ -10,7 +10,8 @@ st = json.loads((OUT / "project_state.json").read_text(encoding="utf-8"))
 http = httpx.Client(timeout=60)
 CODE = {"Nora": "N", "Nora Body": "NB", "Nora Hand": "NH", "Bò Đực": "BD", "Con Cái Già": "CG", "Con Non": "CN",
         "T. rex": "TR", "Acheroraptor": "AR", "Edmontosaurus": "ED", "Borealosuchus": "BS", "Infernodrakon": "IN",
-        "Edmontosaurus Carcass": "CA", "Hell Creek Bank": "LB", "Hell Creek Game Corridor": "LC", "Hell Creek Waterhole": "LW"}
+        "Edmontosaurus Carcass": "CA", "Hell Creek Bank": "LB", "Hell Creek Game Corridor": "LC", "Hell Creek Waterhole": "LW",
+        "Turtle Shell Flask": "TF"}
 chars = {c["name"]: c for c in http.get(f"{API}/api/projects/{st['project_id']}/characters").json()}
 
 
@@ -53,6 +54,7 @@ for a in range(1, 6):
         body = {"video_prompt": resolve(json.dumps(vp, ensure_ascii=False, separators=(",", ":")))}
         body["narrator_text"] = " ".join(d["line"] for d in c["speech"].get("dialogue", []))
         body["duration"] = c["duration"]
+        body["character_names"] = c["refs"]
         if c["start_frame"].get("image_prompt"):
             body["image_prompt"] = resolve(c["start_frame"]["image_prompt"])
         http.patch(f"{API}/api/scenes/{st['scene_ids'][c['clip_id']]}", json=body).raise_for_status()

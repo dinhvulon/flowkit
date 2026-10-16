@@ -71,10 +71,10 @@
     "error": null
   },
   "CA": {
-    "request_id": "4714936d-70da-4602-9bd0-63a19800b32f",
+    "request_id": "b5e63390-05e6-4894-87b6-eea2ce232660",
     "status": "COMPLETED",
-    "media_id": "e616582b-77a8-4b20-b01f-8de97e8fc8ca",
-    "url": "https://flow-content.google/image/e616582b-77a8-4b20-b01f-8de97e8fc8ca?Expires=1792001849&KeyName=labs-flow-prod-cdn-key&Signature=YQmQhhBGlOOC4EV1O8xbUeGxHtA",
+    "media_id": "dacb8184-6054-4fb5-8e74-b9cf9dcf11ea",
+    "url": "https://flow-content.google/image/dacb8184-6054-4fb5-8e74-b9cf9dcf11ea?Expires=1792068079&KeyName=labs-flow-prod-cdn-key&Signature=0ns9nFEn1caIZnBeFfnHkE7LTrU",
     "error": null
   },
   "LB": {

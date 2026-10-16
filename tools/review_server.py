@@ -183,6 +183,19 @@ class ReviewHandler(SimpleHTTPRequestHandler):
             self.send_error(404, f"Ref not found: {fname}")
             return
 
+        # Serve review frames and sheets
+        if path.startswith("/review/"):
+            fname = urllib.parse.unquote(path[len("/review/"):])
+            pdir = _resolve_proj_dir()
+            if pdir:
+                fpath = pdir / "review" / fname
+                if fpath.exists():
+                    ctype = "image/png" if fname.endswith(".png") else ("application/json" if fname.endswith(".json") else "image/jpeg")
+                    self._serve_file(fpath, ctype)
+                    return
+            self.send_error(404, f"Review file not found: {fname}")
+            return
+
         # Serve local videos
         if path.startswith("/videos/") or path.startswith("/scenes/"):
             prefix = "/videos/" if path.startswith("/videos/") else "/scenes/"

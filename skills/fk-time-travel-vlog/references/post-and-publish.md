@@ -37,8 +37,8 @@
      - **Short 3 (Prehistoric Lifehack):** Kỹ thuật sinh tồn kỳ lạ (đun sôi nước bằng đá nung đỏ, may áo ấm -40°C).
    - **Gắn tính năng "Related Video" trong YouTube Studio**: Để người xem Short bấm 1 chạm chuyển thẳng sang xem full video dài 7.5–10 phút. Shorts sẽ dễ dàng đạt vài nghìn đến vài chục nghìn view, từ đó "bơm" khán giả thật sang video dài.
 2. **Kiểm tra 2 chỉ số sống còn sau 48h**:
-   - **CTR (Click-Through Rate):** Phải $\ge 6\%$. Nếu dưới $4\%$, đổi ngay sang Title Option khác (Option 1/2/3) và bộ Thumbnail dự phòng đã chuẩn bị sẵn.
-   - **AVD (Average View Duration):** Tỷ lệ giữ chân người xem 30 giây đầu phải $\ge 60\%$.
+   - **CTR (Click-Through Rate):** Phải $\ge 6\%$. Nếu dưới $4\%$, đổi gói theo `/fk-youtube-analytics` Bước 3: mỗi lần chỉ đổi 1 biến — bộ Thumbnail dự phòng trước, Title Option khác (Option 1/2/3) sau, đo lại sau ≥ 48h.
+   - **Giữ chân 30s:** Tỷ lệ người xem còn ở giây 30 phải $\ge 60\%$. (AVD — thời lượng xem trung bình — là chỉ số riêng; xem `/fk-youtube-analytics`.)
 3. **Giữ nhịp phát hành 2 tuần/video**:
    - Đừng để kênh "ngủ đông" 1 tháng. Hãy duy trì đều đặn: **2 tuần = 1 video dài (7–10 phút) + 4 Shorts xen kẽ** (mỗi tuần 2 Shorts cắt từ video dài đó) để thuật toán YouTube ghi nhận kênh đang hoạt động tích cực.
 

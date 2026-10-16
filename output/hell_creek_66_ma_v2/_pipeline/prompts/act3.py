@@ -9,7 +9,7 @@ C12 = ("at chest height, standing still on the cracked mud flat about 60 m from 
        "position and framing are held for A3-12a and A3-12b (in A3-12b the view tilts up slightly to follow it).")
 CW2 = ("at chest height while sitting at the waterhole rim, static, looking closely at the water; this exact position "
        "and framing are held for A3-W2a and A3-W2b.")
-D2REFS = ["N", "NB", "NH", "ED", "LW"]
+D2REFS = ["N", "NB", "ED", "LW"]
 
 CLIPS = {
 "A3-01": dict(

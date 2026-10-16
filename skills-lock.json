@@ -156,6 +156,12 @@
       "sourceType": "github",
       "skillPath": "plugins/screenwriting/skills/sw-writers-room/SKILL.md",
       "computedHash": "319fbbf9c4b4b98ddfe3285c2cc3e26cadc4dd0a79bb8c7330cff26808e1fe0a"
+    },
+    "video-editing": {
+      "source": "affaan-m/ecc",
+      "sourceType": "github",
+      "skillPath": "skills/video-editing/SKILL.md",
+      "computedHash": "021c5b9207697949a1a40c936617793e3db0cb03904f3c3388e153337c290da1"
     }
   }
 }

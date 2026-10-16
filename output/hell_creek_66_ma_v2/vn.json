@@ -59,43 +59,12 @@
     "so_tu": 19
   },
   {
-    "clip_id": "A1-03",
-    "duration": 8,
-    "shot": "POV · WS",
-    "refs": [
-      "Edmontosaurus Carcass",
-      "Hell Creek Bank"
-    ],
-    "start_frame": "GENERATE_IMAGE",
-    "hinh": "Quay lưng khỏi nước: xác Edmontosaurus nằm sẵn trên bãi bùn xám cách ~15 m, lún sâu, sườn trơ, ruồi; máy tiến chậm",
-    "beat": "Câu hỏi: con gì ăn, còn quanh đây không?",
-    "thoai": [
-      {
-        "t": "0-3s",
-        "es": "Okey, eso es un cuerpo. Uno grande.",
-        "vi": "Rồi, đó là một cái xác. To lắm."
-      },
-      {
-        "t": "3-6s",
-        "es": "Algo se comió media anoche y se fue.",
-        "vi": "Có gì đó ăn mất nửa con đêm qua rồi bỏ đi."
-      },
-      {
-        "t": "6-8s",
-        "es": "Se fue, o nada más se apartó.",
-        "vi": "Bỏ đi, hay chỉ tạm tránh ra."
-      }
-    ],
-    "so_tu": 22
-  },
-  {
     "clip_id": "A1-04",
     "duration": 8,
     "shot": "MACRO · ECU",
     "refs": [
       "Nora",
       "Nora Body",
-      "Nora Hand",
       "Edmontosaurus Carcass",
       "Hell Creek Bank"
     ],
@@ -155,17 +124,17 @@
   },
   {
     "clip_id": "A1-06",
-    "duration": 8,
+    "duration": 10,
     "shot": "POV · MS",
     "refs": [
       "Nora",
       "Nora Body",
-      "Nora Hand",
+      "Turtle Shell Flask",
       "Borealosuchus",
       "Hell Creek Bank"
     ],
     "start_frame": "GENERATE_IMAGE",
-    "hinh": "Mai rùa rỗng **nằm sẵn** giữa sỏi (frame 0); hai tay nhặt lên, múc đầy ở mép nước. Ngẩng lên: bên kia lạch, dưới vách đất bùn xám cao ~2 m là **một hốc khô tối**; một dải lưng Borealosuchus nằm ngay dưới miệng hốc",
+    "hinh": "Mai rùa rỗng **nằm sẵn** giữa sỏi (frame 0); hai tay nhặt lên, lật ngửa (mai rỗng, khô); hạ xuống mép nước, **ấn vành mai chìm xuống cho nước tràn vào**, nhấc lên đầy nước nhỏ giọt. Ngẩng lên: bên kia lạch, dưới vách đất bùn xám cao ~2 m là **một hốc khô tối**; một dải lưng Borealosuchus nằm ngay dưới miệng hốc",
     "beat": "Gieo mai rùa (vỡ A3-06) + **gieo hốc** (payoff A4-16 / MASTER)",
     "thoai": [
       {
@@ -174,17 +143,17 @@
         "vi": "Mai rùa, cỡ cái đĩa ăn tối."
       },
       {
-        "t": "3-6s",
-        "es": "Hay un hueco seco bajo esa orilla.",
+        "t": "3-7s",
+        "es": "Lo hundo en la orilla, y listo: agua.",
         "vi": "Có một cái hốc khô dưới bờ bên kia."
       },
       {
-        "t": "6-8s",
-        "es": "Cocodrilos justo abajo. Así que no.",
+        "t": "7-10s",
+        "es": "Hay un hueco seco allá. Cocodrilos justo abajo. Así que no.",
         "vi": "Cá sấu nằm ngay bên dưới. Vậy thì thôi."
       }
     ],
-    "so_tu": 20
+    "so_tu": 26
   },
   {
     "clip_id": "A1-07",
@@ -193,6 +162,7 @@
     "refs": [
       "Nora",
       "Nora Body",
+      "Turtle Shell Flask",
       "Hell Creek Bank"
     ],
     "start_frame": "GENERATE_IMAGE",
@@ -253,7 +223,7 @@
     "refs": [
       "Nora",
       "Nora Body",
-      "Nora Hand",
+      "Turtle Shell Flask",
       "Hell Creek Game Corridor"
     ],
     "start_frame": "GENERATE_IMAGE",
@@ -368,7 +338,7 @@
       "Bò Đực",
       "Hell Creek Game Corridor"
     ],
-    "start_frame": "GENERATE_IMAGE",
+    "start_frame": "PREV_LAST_FRAME",
     "hinh": "**Chuỗi 4s (1/3) — xông.** Bò Đực cúi đầu, lao về máy 3 bước nặng; kết khi đầu nó to bằng nửa khung",
     "beat": "**C2** · HỎNG 1 · chuỗi khó nhất phim",
     "thoai": [],
@@ -409,6 +379,7 @@
     "refs": [
       "Nora",
       "Nora Body",
+      "Turtle Shell Flask",
       "Hell Creek Game Corridor"
     ],
     "start_frame": "GENERATE_IMAGE",
@@ -520,6 +491,7 @@
     "refs": [
       "Nora",
       "Nora Body",
+      "Turtle Shell Flask",
       "Con Cái Già",
       "Hell Creek Game Corridor"
     ],
@@ -566,6 +538,7 @@
     "refs": [
       "Nora",
       "Nora Body",
+      "Turtle Shell Flask",
       "Hell Creek Game Corridor"
     ],
     "start_frame": "GENERATE_IMAGE",
@@ -627,6 +600,7 @@
     "refs": [
       "Nora",
       "Nora Body",
+      "Turtle Shell Flask",
       "Hell Creek Game Corridor"
     ],
     "start_frame": "GENERATE_IMAGE",
@@ -658,6 +632,7 @@
     "refs": [
       "Nora",
       "Nora Body",
+      "Turtle Shell Flask",
       "Con Non",
       "Con Cái Già",
       "Hell Creek Game Corridor"
@@ -691,7 +666,7 @@
     "refs": [
       "Nora",
       "Nora Body",
-      "Nora Hand",
+      "Turtle Shell Flask",
       "Con Non"
     ],
     "start_frame": "GENERATE_IMAGE",
@@ -734,7 +709,7 @@
     "refs": [
       "Nora",
       "Nora Body",
-      "Nora Hand",
+      "Turtle Shell Flask",
       "Hell Creek Game Corridor"
     ],
     "start_frame": "GENERATE_IMAGE",
@@ -792,7 +767,7 @@
     "refs": [
       "Nora",
       "Nora Body",
-      "Nora Hand",
+      "Turtle Shell Flask",
       "Hell Creek Game Corridor"
     ],
     "start_frame": "GENERATE_IMAGE",
@@ -808,6 +783,7 @@
     "refs": [
       "Nora",
       "Nora Body",
+      "Turtle Shell Flask",
       "Hell Creek Game Corridor"
     ],
     "start_frame": "GENERATE_IMAGE",
@@ -904,6 +880,7 @@
     "refs": [
       "Nora",
       "Nora Body",
+      "Turtle Shell Flask",
       "Con Cái Già",
       "Hell Creek Game Corridor"
     ],
@@ -936,7 +913,7 @@
     "refs": [
       "Nora",
       "Nora Body",
-      "Nora Hand",
+      "Turtle Shell Flask",
       "Con Cái Già",
       "Acheroraptor",
       "Hell Creek Game Corridor"
@@ -970,6 +947,7 @@
     "refs": [
       "Nora",
       "Nora Body",
+      "Turtle Shell Flask",
       "Bò Đực",
       "Hell Creek Game Corridor"
     ],
@@ -1015,7 +993,7 @@
     "refs": [
       "Nora",
       "Nora Body",
-      "Nora Hand",
+      "Turtle Shell Flask",
       "Hell Creek Game Corridor"
     ],
     "start_frame": "GENERATE_IMAGE",
@@ -1142,7 +1120,7 @@
     "refs": [
       "Nora",
       "Nora Body",
-      "Nora Hand",
+      "Turtle Shell Flask",
       "Hell Creek Game Corridor"
     ],
     "start_frame": "GENERATE_IMAGE",
@@ -1193,7 +1171,7 @@
     "refs": [
       "Nora",
       "Nora Body",
-      "Nora Hand",
+      "Turtle Shell Flask",
       "Hell Creek Waterhole"
     ],
     "start_frame": "GENERATE_IMAGE",
@@ -1209,7 +1187,7 @@
     "refs": [
       "Nora",
       "Nora Body",
-      "Nora Hand",
+      "Turtle Shell Flask",
       "Hell Creek Waterhole"
     ],
     "start_frame": "PREV_LAST_FRAME",
@@ -1225,7 +1203,7 @@
     "refs": [
       "Nora",
       "Nora Body",
-      "Nora Hand",
+      "Turtle Shell Flask",
       "Hell Creek Waterhole"
     ],
     "start_frame": "PREV_LAST_FRAME",
@@ -1272,7 +1250,6 @@
     "refs": [
       "Nora",
       "Nora Body",
-      "Nora Hand",
       "Hell Creek Waterhole"
     ],
     "start_frame": "GENERATE_IMAGE",
@@ -1365,7 +1342,6 @@
     "refs": [
       "Nora",
       "Nora Body",
-      "Nora Hand",
       "Edmontosaurus",
       "Hell Creek Waterhole"
     ],
@@ -1382,7 +1358,6 @@
     "refs": [
       "Nora",
       "Nora Body",
-      "Nora Hand",
       "Edmontosaurus",
       "Hell Creek Waterhole"
     ],
@@ -1399,7 +1374,6 @@
     "refs": [
       "Nora",
       "Nora Body",
-      "Nora Hand",
       "Edmontosaurus",
       "Hell Creek Waterhole"
     ],
@@ -2189,7 +2163,6 @@
     "refs": [
       "Nora",
       "Nora Body",
-      "Nora Hand",
       "Hell Creek Waterhole"
     ],
     "start_frame": "GENERATE_IMAGE",
@@ -2387,7 +2360,6 @@
     "refs": [
       "Nora",
       "Nora Body",
-      "Nora Hand",
       "Hell Creek Bank"
     ],
     "start_frame": "GENERATE_IMAGE",
@@ -2414,7 +2386,6 @@
     "refs": [
       "Nora",
       "Nora Body",
-      "Nora Hand",
       "Hell Creek Bank"
     ],
     "start_frame": "GENERATE_IMAGE",
@@ -2524,7 +2495,6 @@
     "refs": [
       "Nora",
       "Nora Body",
-      "Nora Hand",
       "Con Non"
     ],
     "start_frame": "GENERATE_IMAGE",
@@ -2649,7 +2619,6 @@
     "refs": [
       "Nora",
       "Nora Body",
-      "Nora Hand",
       "Con Non"
     ],
     "start_frame": "GENERATE_IMAGE",

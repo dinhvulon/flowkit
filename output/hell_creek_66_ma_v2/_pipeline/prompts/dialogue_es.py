@@ -2,10 +2,9 @@
 """Nora dialogue, es-419 Mexico City (Rule 49 counts; dialogue-es-latam.md + dialogue-es-mx-ca.md)."""
 ES = {
 "A1-02": ["Okey. Ya salí, ya salí del agua.", "Eran cocodrilos, dos, y no tenían curiosidad.", "Lo que tenían era paciencia."],
-"A1-03": ["Okey, eso es un cuerpo. Uno grande.", "Algo se comió media anoche y se fue.", "Se fue, o nada más se apartó."],
 "A1-04": ["Miren el tamaño de esa mordida.", "Mi mano entera cabe en un solo diente.", "Estoy parada en su cocina."],
 "A1-05": ["Yo escogí este día a propósito.", "En doce horas ese cielo se incendia.", "Yo nada más vine a ver."],
-"A1-06": ["Caparazón de tortuga, tamaño plato de cena.", "Hay un hueco seco bajo esa orilla.", "Cocodrilos justo abajo. Así que no."],
+"A1-06": ["Caparazón de tortuga, tamaño plato de cena.", "Lo hundo en la orilla, y listo: agua.", "Hay un hueco seco allá. Cocodrilos justo abajo. Así que no."],
 "A1-07": ["Fibra de palma torcida, por los huecos.", "Si este nudo se suelta hoy mismo,", "me toca beber del charco de cocodrilos."],
 "A1-08": ["Este bosque es un muro sólido.", "Pero por ahí hay un paso abierto.", "Y algo muy grande lo abrió."],
 "A1-09": ["Huella redonda, más ancha que mis hombros.", "El agua sigue turbia, así que es reciente.", "Lo que la hizo está cerca."],

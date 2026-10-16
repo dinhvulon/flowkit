@@ -14,7 +14,7 @@ import aiohttp
 from agent.db import crud
 from agent.services.flow_client import get_flow_client
 from agent.services.event_bus import event_bus
-from agent.config import POLL_INTERVAL, MAX_RETRIES
+from agent.config import POLL_INTERVAL, MAX_RETRIES, MAX_POLL_ROUNDS
 from agent.worker._parsing import _is_error
 from agent.sdk.services.result_handler import parse_result, apply_scene_result, apply_character_result
 
@@ -553,6 +553,20 @@ async def _handle_failure(rid: str, req: dict, result: dict, retry_after: dict =
             await _mark_scene_failed(req)
             logger.error("Request %s FAILED after 10 reCAPTCHA retries: %s", rid[:8], error_msg)
             return
+
+    # Poll timeout: the job is still on Flow. Keep its operation id (request_id) so the
+    # next pass re-polls the same job and downloads it when done — never resubmit, a
+    # resubmit pays for the video twice (user 2026-10-16).
+    if "polling timeout" in error_lower and req.get("request_id"):
+        repoll = req.get("retry_count", 0) + 1
+        if repoll <= MAX_POLL_ROUNDS:
+            await crud.update_request(rid, status="PENDING", retry_count=repoll, error_message=str(error_msg))
+            logger.warning("Request %s poll timeout, re-polling same op (round %d/%d)", rid[:8], repoll, MAX_POLL_ROUNDS)
+        else:
+            await crud.update_request(rid, status="FAILED", error_message=f"gave up polling: {error_msg}")
+            await _mark_scene_failed(req)
+            logger.error("Request %s FAILED after %d poll rounds (not resubmitted): %s", rid[:8], repoll - 1, error_msg)
+        return
 
     retry = req.get("retry_count", 0) + 1
     if retry < MAX_RETRIES:

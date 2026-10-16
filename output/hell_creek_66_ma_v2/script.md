@@ -173,7 +173,7 @@ Visceral living megafauna biology: rough non-reflective pachyderm hide, matte po
 | # | Mắt xích | Nối |
 |---|---|---|
 | 1 | Nora tỉnh dậy cạnh suối, cá sấu dưới nước (A1-01) | VÌ VẬY cô im lặng, tránh mép nước |
-| 2 | Xác Edmontosaurus có vết cắn (A1-03/04) | NHƯNG cô vẫn tin mình chỉ đứng xem (A1-05) |
+| 2 | Xác Edmontosaurus có vết cắn (A1-04; A1-03 đã bỏ 15/10 — Flow chặn ảnh xác) | NHƯNG cô vẫn tin mình chỉ đứng xem (A1-05) |
 | 3 | Thấy hõm khô dưới bờ xa — cá sấu nằm ngay dưới (A1-06) | VÌ VẬY chưa dám tới (cài cho A4-16) |
 | 4 | Theo hành lang thú, gặp 3 Triceratops (A1-08 → A1-10) | NHƯNG "to = an toàn" là sai |
 | 5 | Bò Đực dọa húc, Nora ngã vào bụi (A1-12) | VÌ VẬY cô quyết ngồi chờ, đọc đàn (A1-14) |
@@ -262,17 +262,16 @@ Mỗi clip phải làm ít nhất một việc:
 |---|---|---|---|---|---|---|---|---|---|---|---|
 | **A1-01** | 6s | POV · WS | BS,LB | G | L1 | Ngập ngang đùi giữa lạch nâu, sương sớm. Hai dải lưng sần Borealosuchus **đã nằm sẵn** cách ~5 sải tay, trôi chậm về phía máy; máy lùi dần về bãi sỏi | *(0 từ, Sonic Isolation)* | 0 | 1,2 | Nguy hiểm ngay giây 0 (Sonic Isolation: thở gấp qua mũi, nước vỗ) | 5.0s |
 | **A1-02** | 8s | SELFIE · MCU | N,NB,BS,LB | E | L1 | Nora quỳ trên sỏi, ướt sũng, ngồi thẳng dậy (khớp A1-01: vừa bò lùi lên bờ). Sau lưng: hai dải lưng đã vào chỗ nước nông | Okey. Ya salí, ya salí del agua. / Eran cocodrilos, dos, y no tenían curiosidad. / Lo que tenían era paciencia. | 19 | 1 | **C1** · punchline "patient" | 7.0s |
-| **A1-03** | 8s | POV · WS | CA,LB | G | L1 | Quay lưng khỏi nước: xác Edmontosaurus nằm sẵn trên bãi bùn xám cách ~15 m, lún sâu, sườn trơ, ruồi; máy tiến chậm | Okey, eso es un cuerpo. Uno grande. / Algo se comió media anoche y se fue. / Se fue, o nada más se apartó. | 22 | 1,2 | Câu hỏi: con gì ăn, còn quanh đây không? | 7.0s |
 | **A1-04** | 8s | MACRO · ECU | N,NB,NH,CA,LB | G | L1 | Rãnh răng to bằng bàn tay trên xương chậu xác; bàn tay trái Nora đặt phẳng trong rãnh để so | Miren el tamaño de esa mordida. / Mi mano entera cabe en un solo diente. / Estoy parada en su cocina. | 19 | 1 | Gieo T. rex bằng hình, không gọi tên | 7.0s |
 | **A1-05** | 8s | SELFIE · MS | N,NB,CA,LB | E | L1 | Nora đứng, xác ở hậu cảnh trái, lạch bên phải. **Lần duy nhất** cô nói vì sao chọn ngày này, và nói ra niềm tin sai | Yo escogí este día a propósito. / En doce horas ese cielo se incendia. / Yo nada más vine a ver. | 19 | 2 | Đồng hồ 12h chạy · misbelief (bị bẻ ở A4-04) | 7.0s |
-| **A1-06** | 8s | POV · MS | N,NB,NH,BS,LB | G | L1 | Mai rùa rỗng **nằm sẵn** giữa sỏi (frame 0); hai tay nhặt lên, múc đầy ở mép nước. Ngẩng lên: bên kia lạch, dưới vách đất bùn xám cao ~2 m là **một hốc khô tối**; một dải lưng Borealosuchus nằm ngay dưới miệng hốc | Caparazón de tortuga, tamaño plato de cena. / Hay un hueco seco bajo esa orilla. / Cocodrilos justo abajo. Así que no. | 20 | 4,1 | Gieo mai rùa (vỡ A3-06) + **gieo hốc** (payoff A4-16 / MASTER) | 7.0s |
+| **A1-06** | 10s | POV · MS | N,NB,NH,BS,LB | G | L1 | Mai rùa rỗng **nằm sẵn** giữa sỏi (frame 0); hai tay nhặt lên, lật ngửa (mai rỗng, khô); hạ xuống mép nước, **ấn vành mai chìm xuống cho nước tràn vào**, nhấc lên đầy nước nhỏ giọt. Ngẩng lên: bên kia lạch, dưới vách đất bùn xám cao ~2 m là **một hốc khô tối**; một dải lưng Borealosuchus nằm ngay dưới miệng hốc | Caparazón de tortuga, tamaño plato de cena. / Lo hundo en la orilla, y listo: agua. / Hay un hueco seco allá. Cocodrilos justo abajo. Así que no. | 26 | 4,1 | Gieo mai rùa (vỡ A3-06) + **gieo hốc** (payoff A4-16 / MASTER) | 9.0s |
 | **A1-07** | 8s | FIXED · MS | N,NB,LB | E | L1 | Máy kê trên khúc gỗ trôi. Nora đứng ngang eo, xỏ dây sợi cọ qua 2 lỗ ở vành mai, buộc vào đai ngực bên hông TRÁI | Fibra de palma torcida, por los huecos. / Si este nudo se suelta hoy mismo, / me toca beber del charco de cocodrilos. | 21 | 4 | Gieo nút buộc sẽ đứt | 7.0s |
 | **A1-08** | 8s | POV · WS | LC | G | L1 | Bìa rừng lá rộng: bụi rậm dây leo, cây gãy, rêu, lá mục, không đọc được; máy lia sang miệng một **hành lang thú** bùn xám rộng chui vào rừng | Este bosque es un muro sólido. / Pero por ahí hay un paso abierto. / Y algo muy grande lo abrió. | 19 | 2,4 | "Cái gì to?" | 7.0s |
 | **A1-09** | 8s | MACRO · ECU | N,NB,NH,LC | G | L1 | Dấu chân tròn rộng hơn vai, ngón tù, nước đục đọng trong lòng; mũi giày phải đặt cạnh để so | Huella redonda, más ancha que mis hombros. / El agua sigue turbia, así que es reciente. / Lo que la hizo está cerca. | 21 | 1,2 | Nó ở gần | 7.0s |
 | **A1-10** | 8s | OTS · MS | N,NB,BD,CG,CN,LC | E | L1 | Nora 1/3 tiền cảnh nấp sau bụi lá, thì thầm; 2/3 hậu cảnh: ba con Triceratops gặm cây thấp ở bãi trống cách ~40 m | Ahí. Son tres, con cuernos, comiendo. / Son lo más grande de este valle. / Grande quiere decir seguro, ojalá. | 18 | 3,4 | Lần đầu thấy đàn · "I hope" gieo nghi | 7.0s |
 | **A1-S1** | 8s | SELFIE · MCU | N,NB,BD,CG,CN,LC | E | L1 | Nora mỉm cười tự tin nhìn vào máy, đàn gặm cây sau lưng; cô bước ra khỏi bụi rậm | Okey, son enormes, pero solo comen plantas. / Ni van a notar algo tan chiquito. / Nada más miren, ahorita lo ven. | 20 | 2,3 | Niềm tin sai chủ quan trước cú xông | 7.0s |
 | **A1-11** | 6s | POV · WS | BD,LC | G | L1 | Bước ra mép bãi; Bò Đực ngẩng đầu chậm (~1s), sừng trái gãy, diềm ửng đỏ; máy tiến 2 bước rồi dừng | *(0 từ, Sonic Isolation)* | 0 | 1,3 | Im lặng trước cú xông (Sonic Isolation) | 5.0s |
-| **A1-12a** | 4s | POV · MS | BD,LC | G | L1 | **Chuỗi 4s (1/3) — xông.** Bò Đực cúi đầu, lao về máy 3 bước nặng; kết khi đầu nó to bằng nửa khung | *(0 từ)* | 0 | 1,3 | **C2** · HỎNG 1 · chuỗi khó nhất phim | 3.5s |
+| **A1-12a** | 4s | POV · MS | BD,LC | P | L1 | **Chuỗi 4s (1/3) — xông.** Bò Đực cúi đầu, lao về máy 3 bước nặng; kết khi đầu nó to bằng nửa khung | *(0 từ)* | 0 | 1,3 | **C2** · HỎNG 1 · chuỗi khó nhất phim | 3.5s |
 | **A1-12b** | 4s | POV · MS | BD,LC | P | L1 | **(2/3) — khựng.** Mở bằng Bò Đực giữa bước lao; khựng lại, cào chân trước, bùn văng về máy; máy giật lùi | *(0 từ)* | 0 | 1,3 | Dọa, không giết | 3.5s |
 | **A1-12c** | 4s | POV · MS | BD,LC | P | L1 | **(3/3) — ngã.** Mở bằng Bò Đực đứng yên, máy ngả ra sau; máy ngã ngửa vào bụi cây thấp, khung lật lên tán lá non | *(0 từ)* | 0 | 1 | Kết trên tán lá (1 tiếng thét vỡ giọng, không thành lời) | 3.5s |
 | **A1-13** | 8s | SELFIE · MCU | N,NB,LC | E | L1 | Nora nằm nghiêng trong bụi cây thấp, lá vắt ngang khung, thở dốc (khớp A1-12c: vừa ngã ngửa) | Se detuvo. Se detuvo a seis metros. / Eso fue una advertencia, no un ataque. / Okey, mensaje recibido, grandote. Híjole. | 19 | 3 | Thả hơi bằng dry humor | 7.0s |
@@ -306,7 +305,7 @@ Mỗi clip phải làm ít nhất một việc:
 | **A2-R4** | 6s | POV · CU | N,NB,NH,CG,AR,LC | G | L2 | Chân trước khổng lồ của Con Cái Già chắn sát sườn Nora (tay Nora áp vào da nó); ngoài xa hai Acheroraptor lủi vào bụi | Quietecita. Ella me tapa. / Se están yendo los dos. / Gracias, señora, en serio. | 13 | 3 | Tấm khiên sống | 5.0s |
 | **A2-15** | 8s | FIXED · MS | N,NB,BD,LC | E | L2 | Đàn gặm lại; Nora ngồi ngang eo cách ~20 bước, Bò Đực liếc cô rồi nhai tiếp | A veinte pasos. Me miró y siguió. / Todavía no soy parte de la familia. / Pero ya soy un mueble más. | 20 | 3,4 | **THẮNG MỘT PHẦN** (midpoint) | 7.0s |
 | **EST-02** | 4s | AERIAL · EWS | LC | G | L3 | Rất cao, giữa trưa trời mây mỏng: tán rừng lá rộng vô tận, lạch uốn khúc; bóng mây trôi chậm trên tán; ba chấm thú nhỏ cạnh một hố nước đang cạn. Thế giới rộng và vô tư | *(0 từ)* | 0 | 2 | Thời gian trôi · thế giới không hay biết | 3.5s |
-| **A2-16** | 8s | POV · CU | N,NB,NH,LC | G | L3 | Hai tay nghiêng mai rùa: chỉ còn một lóng tay nước sóng sánh | Problema. Es toda el agua que queda. / Ya es mediodía, caminé toda la mañana, / y el arroyo está lleno de cocodrilos. | 21 | 1,2 | Đồng hồ thứ hai: nước | 7.0s |
+| **A2-16** | 8s | POV · CU | N,NB,NH,LC | G | L3 | Hai tay dốc mai rùa (kín, đúng ref TF) qua lỗ trước: chỉ rơi ra vài giọt vào lòng bàn tay | Problema. Es toda el agua que queda. / Ya es mediodía, caminé toda la mañana, / y el arroyo está lleno de cocodrilos. | 21 | 1,2 | Đồng hồ thứ hai: nước | 7.0s |
 
 ### ACT 3 — THE WATER HOLE (+ EST-03 · HOUR 6 → 11 · L3 → L4 → L5)
 
@@ -407,10 +406,9 @@ Mỗi clip phải làm ít nhất một việc:
 |---|---|---|---|---|
 | A1-01 | Ngang ngực, cầm tay, lùi | Mặt nước nâu, hai dải lưng ở giữa khung | 0–2s hai dải lưng trôi về máy chậm · 2–4s máy lùi, bờ sỏi lọt vào đáy khung · 4–6s máy lên bờ, nước tụt khỏi khung | Dải lưng vẫn trong khung (không biến mất) |
 | A1-02 | Tay phải giữ máy ngang ngực, tay trái chống sỏi | Nora quỳ, tóc ướt dính trán, hai dải lưng ở nước nông hậu cảnh | Nora thở dốc, quay đầu nhìn nước 3–6s rồi nhìn lại máy | — |
-| A1-03 | Ngang ngực, đi bộ chậm | Xác nằm ngang giữa khung, lún bùn, sườn trơ | Máy tiến ~0.5 m/s · ruồi bay quanh sườn · máy dừng ở 6–8s | — |
 | A1-04 | Chúc xuống sát xương | Rãnh răng hình chữ U trên xương, tủy dập | 0–3s tay trái vào khung từ dưới · 3–6s đặt phẳng trong rãnh · 6–8s giữ yên | — |
 | A1-05 | Tay phải giữ ngang ngực | Nora MS, xác hậu cảnh trái, lạch phải | 3–6s Nora liếc qua vai phải về hướng nam-đông nam rồi nhìn lại | — |
-| A1-06 | Chúc xuống rồi ngẩng lên | Mai rùa trên sỏi, hai tay ở đáy khung | 0–3s nhặt, múc nước · 3–6s ngẩng lên bờ bên kia · 6–8s giữ ở hốc + dải lưng | — |
+| A1-06 | Chúc xuống rồi ngẩng lên | Mai rùa trên sỏi, hai tay ở đáy khung | 0–3s nhặt, lật ngửa · 3–7s ấn vành chìm, nước tràn vào, nhấc lên · 7–10s ngẩng lên hốc + dải lưng | — |
 | A1-07 | Kê cố định trên khúc gỗ, ngang eo | Nora ngang eo, mai rùa trong hai tay | Hai tay xỏ dây, thắt nút ở hông trái, kéo thử | — |
 | A1-08 | Ngang ngực, lia chậm trái→phải | Bìa rừng rậm, lá non mùa xuân | Lia ~10°/s, dừng ở miệng hành lang 5–8s · lá cành tiền cảnh quệt qua mép khung | — |
 | A1-09 | Chúc thẳng xuống | Dấu chân trên bùn xám, nước đục | Mũi giày phải vào khung 0–3s, đặt cạnh dấu · nước trong dấu gợn nhẹ | — |
@@ -451,7 +449,7 @@ Mỗi clip phải làm ít nhất một việc:
 | A2-R4 | Ngang ngực người ngồi | Chân Con Cái Già trái khung, tay Nora trên da | Raptor xa dần, khuất bụi ~4s · chân đứng yên như cột | Raptor ra mép phải |
 | A2-15 | Kê trên tảng đất, ngang eo | Nora tiền cảnh trái, Bò Đực hậu cảnh phải | Bò Đực quay đầu chậm nhìn 0–3s rồi cúi gặm | — |
 | EST-02 | Rất cao ~400 m, gần như đứng yên | Tán rừng, lạch, hố nước nhỏ, trời mây mỏng | Bóng mây trôi chậm · tán lá lăn tăn | — |
-| A2-16 | Chúc xuống ngang ngực | Mai rùa trong hai tay | Nghiêng mai, nước sóng sánh, dựng lại | — |
+| A2-16 | Chúc xuống ngang ngực | Mai rùa trong hai tay | Dốc mai kín, vài giọt rơi vào lòng bàn tay, lắc nhẹ, áp vào hông | — |
 
 ### ACT 3 — THE WATER HOLE (+ EST-03 · HOUR 6 → 11 · L3 → L4 → L5)
 

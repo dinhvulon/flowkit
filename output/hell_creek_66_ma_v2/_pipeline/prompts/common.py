@@ -8,7 +8,7 @@ SCRIPT = (OUT / "script.md").read_text(encoding="utf-8")
 ENT = {"N": "Nora", "NB": "Nora Body", "NH": "Nora Hand", "BD": "Bò Đực", "CG": "Con Cái Già", "CN": "Con Non",
        "TR": "T. rex", "AR": "Acheroraptor", "ED": "Edmontosaurus", "BS": "Borealosuchus", "IN": "Infernodrakon",
        "CA": "Edmontosaurus Carcass", "LB": "Hell Creek Bank", "LC": "Hell Creek Game Corridor",
-       "LW": "Hell Creek Waterhole"}
+       "LW": "Hell Creek Waterhole", "TF": "Turtle Shell Flask"}
 
 
 def _block(title):
@@ -81,9 +81,18 @@ CREATURE = {
     "ED": ("the Edmontosaurus herd", "Matches the Edmontosaurus reference: long, low duck-billed hadrosaurs walking on four legs, flat broad bills, a fleshy crest along the back, long thick tails held level and fully visible; not horned, no frills."),
     "BS": ("the Borealosuchus crocodiles", "Match the Borealosuchus reference: crocodylians with long moderately narrow snouts; in the water only their rough ridged scute backs, eyes and snout tips show."),
     "IN": ("the Infernodrakon", "Matches the Infernodrakon reference: an azhdarchid pterosaur about as tall as a person when walking on all fours, long stiff neck, long straight pointed beak, short brown-grey fuzz, wings folded shut tight along its forelimbs like a closed umbrella while on the ground."),
-    "CA": ("the Edmontosaurus carcass", "Matches the Edmontosaurus Carcass reference: the remains of a large 10 m duck-billed dinosaur lying sunken into the silt, ribs showing, a few flies."),
+    "CA": ("the Edmontosaurus remains", "Matches the Edmontosaurus Carcass reference: the old weathered remains of a large 10 m duck-billed dinosaur lying half sunk into the silt, pale ribs showing."),
 }
 ANIMALS = {"BD", "CG", "CN", "TR", "AR", "ED", "BS", "IN"}
+_TRIKE = ("hide is uneven mottled dark grey-brown and olive with darker blotches, never one flat uniform clay colour; "
+          "heavy skin folds hang at the neck and behind the legs; legs thick as tree trunks sink into the mud.")
+SCALE = {
+    "BD": "SCALE: a 9-tonne animal, about 3 m tall at the hips and 9 m long, as large as an elephant and bigger than a car; "
+          "it towers over the fallen logs and dwarfs the shrubs beside it, never small, never toy-sized. Its " + _TRIKE,
+    "CG": "SCALE: about 2.8 m tall at the hips and 8 m long, larger than an elephant; it dwarfs the logs and shrubs "
+          "around it, never small, never toy-sized. Its " + _TRIKE,
+    "CN": "SCALE: about 3 m long and 1.2 m tall, the size of a cow; its hide is mottled grey-brown, never flat clay grey.",
+}
 
 # ---------------------------------------------------------------- script.md parser
 def parse_storyboard():
@@ -131,6 +140,8 @@ def nora_state(cid):
         s.append("Her hair and clothes are still soaking wet from the creek.")
     if IDX[cid] < IDX["A1-07"]:
         s.append("The turtle-shell flask is not on her yet: nothing hangs at her left hip.")
+    elif cid == "A1-07":
+        pass  # the clip ties the flask on: its own state sentence and timeline say where the shell is
     elif IDX[cid] <= IDX["A3-06a"]:
         s.append("The turtle-shell flask hangs at her left hip on its twisted plant-fibre cord, exactly as on the Nora Body sheet.")
     elif IDX[cid] >= IDX["A3-07"]:
@@ -158,14 +169,35 @@ OUTFIT_WORDS = ("Outfit check (image only, exactly as on the Nora Body sheet): a
 REF_FACE_LOCK = ("FACE LOCK: Nora's face is exactly the face in {{ref:Nora}}, kept 1:1 as it is in "
                  "that image, including her makeup and hairstyle, in every frame. Do not redraw, restyle, retouch, age or "
                  "change anything about her face. MAKEUP LOCK: keep her makeup exactly as in {{ref:Nora}}, unchanged in every frame.")
-HANDS_TXT_V = ("First-person view looking down at her own hands; the hands look exactly like {{ref:Nora Hand}}, with "
-               "short clean unpainted nails and no rings or watch; her sleeves, trousers and boots are exactly as in {{ref:Nora Body}}.")
-HANDS_TXT_I = ("First-person view looking down at her own hands; the hands look exactly like {{ref:Nora Hand}}, with "
-               "short clean unpainted nails and no rings or watch; the edge of an olive-tan linen short sleeve shows at the side of the frame.")
+# User 2026-10-15: POV hands come from the Nora Body sheet (short sleeves end above the elbow, bare smooth forearms),
+# not from the separate hand sheet; A1-06 with Nora Hand came out with hairy male forearms and a long frayed sleeve.
+ARMS = ("her hands and bare forearms are exactly the hands and arms of the woman in {{ref:Nora Body}}: a young woman's "
+        "slender, smooth, hairless forearms and hands with short clean unpainted nails, no rings or watch; her linen "
+        "sleeves are short and end above the elbow, so no sleeve, cuff or fabric is anywhere on her forearms")
+HANDS_TXT_V = ("First-person view looking down at her own hands; " + ARMS + "; her trousers and boots are exactly as in {{ref:Nora Body}}.")
+HANDS_TXT_I = ("First-person view looking down at her own hands; " + ARMS + ".")
 FEET_TXT = ("First-person view looking down at her own feet: the toe of one mid-calf laced brown leather boot, "
             "described in words only, with no reference image for it.")
+# One canonical look for the shell, so A1-06 (found on the gravel) and A1-07 (tied on) match the flask on the
+# Nora Body sheet. Hell Creek baenid river turtles: low-domed carapace, finely sculpted shell (Saxochelys, Plesiobaena).
+SHELL_LOOK = ("one low-domed river-turtle carapace about 22 cm long, the same shell as the flask at the left hip in "
+              "{{ref:Nora Body}}: outside, dark walnut-brown to olive-brown with finely sculpted, clearly outlined scute "
+              "plates separated by thin pale seams; inside, smooth pale bone; never white, never bleached, never a "
+              "seashell or clam shell, never a metal or modern canteen")
 FLASK_X = ("The only exception is the turtle-shell flask at her left hip: whether it is there, tied on, or "
            "gone follows the state sentence and the timeline of this clip, not the Body sheet.")
+# User 2026-10-16: every clip that shows the shell carries its own ref image (Turtle Shell Flask, TF), from the
+# moment she finds it (A1-06) until it breaks (A3-06c); from A3-07 on it is gone, so no ref.
+SHELL_LOCK_V = ("SHELL LOCK: the turtle shell, and later the flask at her left hip, is exactly the shell in "
+                "{{ref:Turtle Shell Flask}}: same shape, size, colour and scute pattern in every frame; there is only one shell.")
+BODY_SHELL = "the same shell as the flask at the left hip in {{ref:Nora Body}}"
+MAX_VIDEO_REFS = 7  # Omni Flash cap, counting the opening-frame chip that push_prompts.py adds
+
+
+def shell_present(cid, codes):
+    return bool(codes & {"N", "NB", "NH"}) and IDX["A1-06"] <= IDX[cid] < IDX["A3-07"]
+
+
 BLIND = "The camera viewpoint and her gripping arm are completely outside the visible frame and never seen."
 NOTEXT = "No subtitles, captions, labels, icons or text of any kind appear anywhere in the frame."
 CLEAN = ("The image is clean footage only: no interface, no recording indicator, no battery icon, no zoom label, "
@@ -205,6 +237,12 @@ def build(cid, d, chain_head=None):
     r = ROWS[cid]
     kind, sz = [x.strip() for x in r["shot"].split("·")]
     refs = list(d.get("refs_override") or r["refs"])
+    if "N" in refs and "NH" in refs:  # hands come from Nora Body now (user 2026-10-15)
+        refs = [c for c in refs if c != "NH"] + ([] if "NB" in refs else ["NB"])
+    # +1 for TF, +1 for the opening-frame chip; over the cap the shell stays text-only (Nora Body sheet)
+    shell = shell_present(cid, set(refs)) and len(refs) + 2 <= MAX_VIDEO_REFS
+    if shell:
+        refs.insert(refs.index("NB") + 1 if "NB" in refs else len(refs), "TF")
     codes = set(refs)
     face = "N" in codes and kind in ("SELFIE", "OTS", "FIXED")
     hands = "N" in codes and not face
@@ -220,16 +258,16 @@ def build(cid, d, chain_head=None):
 
     chars = []
     if face:
-        chars.append({"name": "Nora", "visual_lock": " ".join([REF_FACE_LOCK, BODY_LOCK_V, OUTFIT_LOCK_V, FLASK_X]),
+        chars.append({"name": "Nora", "visual_lock": " ".join([REF_FACE_LOCK, BODY_LOCK_V, OUTFIT_LOCK_V, FLASK_X] + ([SHELL_LOCK_V] if shell else [])),
                       "state": (d.get("state", "") + " " + nora_state(cid)).strip()})
     elif hands:
         chars.append({"name": "Nora's hands (first-person)",
-                      "visual_lock": (FEET_TXT if d.get("feet_only") else HANDS_TXT_V),
+                      "visual_lock": (FEET_TXT if d.get("feet_only") else HANDS_TXT_V) + (" " + SHELL_LOCK_V if shell else ""),
                       "state": (d.get("state", "") + " " + nora_state(cid)).strip()})
     for a in animals:
         name, lock = CREATURE[a]
         lock_v = lock.replace(f"the {ENT[a]} reference", "{{ref:%s}}" % ENT[a])
-        chars.append({"name": name, "visual_lock": lock_v + (" " + BIOLOGY[a] if a in BIOLOGY else ""),
+        chars.append({"name": name, "visual_lock": lock_v + (" " + BIOLOGY[a] if a in BIOLOGY else "") + (" " + SCALE[a] if a in SCALE else ""),
                       "state": d.get("anim", {}).get(a, "")})
 
     keys = d.get("keys") or segs(r["dur"])
@@ -265,7 +303,7 @@ def build(cid, d, chain_head=None):
         neg.append("FACE and MAKEUP LOCK: no face drift: her face, makeup and hairstyle never differ from the attached Nora reference image; no bare-faced or restyled look.")
         neg.append("BODY and OUTFIT LOCK: build, proportions and outfit exactly as the Nora Body reference sheet; NO fur, NO hood, NO cloak, NO outfit variations.")
     if hands:
-        neg.append("HAND LOCK: strictly NO male hands, NO hairy knuckles, NO rings, NO watch, NO painted nails, NO extra or fused fingers.")
+        neg.append("HAND LOCK: strictly NO male hands, NO hairy knuckles, NO hairy forearms, NO long or frayed sleeve on the forearm, NO rings, NO watch, NO painted nails, NO extra or fused fingers.")
     if any(a in ANIMALS for a in animals):
         neg.append("ANTI-SMOKE LOCK: strictly NO smoke, strictly NO breath vapour, strictly NO steam, strictly NO white plumes from any nostril; clean dry nostrils breathing transparent clean air.")
         neg.append("ANTI-CGI LOCK: strictly NOT a 3D digital render, NOT a plastic toy model, NOT a museum resin statue, NO specular plastic sheen, NO artificial god rays, NO sunlight streaming beams, NO studio rim light.")
@@ -280,7 +318,8 @@ def build(cid, d, chain_head=None):
         "style": STYLE,
         "setting": setting,
         "characters": chars,
-        "in_place": "Everything is already in place from the very first frame: " + d["inplace"] +
+        "in_place": "Everything is already in place from the very first frame: " +
+                    (d["inplace"].replace(BODY_SHELL, "exactly the shell in {{ref:Turtle Shell Flask}}") if shell else d["inplace"]) +
                     " Every person, animal and object stays where it is placed unless the timeline moves it; nothing appears suddenly, nothing vanishes.",
         "shot": d["frame"],
         "timeline_action": tl,
@@ -296,15 +335,18 @@ def build(cid, d, chain_head=None):
     else:
         # Subject + identity first, then composition, then place/light/style (short). User 2026-10-14:
         # Nora's face goes in as a REFERENCE image (GENERATE_IMAGE + refs), never as the edited base image.
-        if kind == "AERIAL":
+        if d.get("sf_refs"):
+            # Highest-priority override: explicit ref list for start-frame image only (bypasses all auto-logic)
+            image_refs = [ENT.get(c, c) for c in d["sf_refs"]]
+        elif kind == "AERIAL":
             image_refs = []
         elif face:
             image_refs = ["Nora", "Nora Body"] + ([ENT[loc]] if loc else [])
         elif d.get("image_refs"):
             image_refs = [ENT[c] for c in d["image_refs"]]
         elif hands:
-            # hands/feet-only frames: never attach the face or body sheet (UNSAFE_GENERATION on A1-04/06/09)
-            image_refs = [ENT[c] for c in refs if c not in ("N", "NB") and not (d.get("feet_only") and c == "NH")]
+            # hands-only frames: the hands come from the Body sheet (user 2026-10-15), never the face sheet
+            image_refs = [ENT[c] for c in refs if c not in ("N", "NB", "NH")] if d.get("feet_only") else                          ["Nora Body"] + [ENT[c] for c in refs if c not in ("N", "NB", "NH")]
         else:
             image_refs = [ENT[c] for c in refs]
         img = [f"Single still photograph, frame 0 of this shot before any movement, {SIZE[sz]}."]
@@ -320,6 +362,9 @@ def build(cid, d, chain_head=None):
             img.append("MAKEUP LOCK: keep her makeup exactly as in {{ref:Nora}}, unchanged.")
             img.append("BODY and OUTFIT LOCK: her build and complete outfit are exactly as shown in {{ref:Nora Body}}; "
                        "do not redraw or change any part of the outfit. " + FLASK_X + " " + nora_state(cid) + " " + d.get("state", ""))
+            img.append("COLOUR LOCK: the tunic is the same dull brownish olive-khaki linen as in {{ref:Nora Body}}, never bright "
+                       "green, never grass green, never emerald; the leggings are olive-brown leather; the dark-brown leather "
+                       "belt wraps the waist and is tied with long hanging tails, exactly as in {{ref:Nora Body}}.")
         elif hands:
             img.append(FEET_TXT.replace(", described in words only, with no reference image for it", "") if d.get("feet_only") else HANDS_TXT_I)
         else:
@@ -328,9 +373,19 @@ def build(cid, d, chain_head=None):
             # frames with Nora's face carry only [face, body, location] refs, so animals are described in words only
             mention = f"{CREATURE[a][0][0].upper() + CREATURE[a][0][1:]}: exactly as shown in {{{{ref:{ENT[a]}}}}}. " if ENT[a] in image_refs else ""
             desc = CREATURE[a][1].split(": ", 1)[1] if ENT[a] not in image_refs and CREATURE[a][1].startswith("Match") else CREATURE[a][1]
-            img.append(mention + desc)
-        img.append(f"Composition: {d['frame']} Already in place: {d['inplace']}")
-        if kind == "SELFIE":
+            # user 2026-10-16: A2-01/A2-03 came out as small smooth clay toys -> skin + scale in every animal still
+            img.append(mention + desc + (" " + BIOLOGY[a] if a in BIOLOGY else "") + (" " + SCALE[a] if a in SCALE else ""))
+        if d.get("img_extra"):
+            img.append(d["img_extra"])
+        inplace_i = d["inplace"]
+        if ENT["TF"] in image_refs:
+            img.append(SHELL_LOCK_V)
+            inplace_i = inplace_i.replace(BODY_SHELL, "exactly the shell in {{ref:Turtle Shell Flask}}")
+        img.append(f"Composition: {d['frame']} Already in place: {inplace_i}")
+        if kind == "SELFIE" and d.get("img_selfie"):
+            # user 2026-10-16: "self-filmed" wording makes Imagen draw a stretched selfie arm; per-clip framing instead
+            img.append(d["img_selfie"] + " " + BLIND)
+        elif kind == "SELFIE":
             img.append("Self-filmed vlog framing, close: only Nora's head, shoulders and chest are in the frame, her face large "
                        "and sharp in the upper third, looking straight into the lens. " + BLIND)
         elif kind == "OTS":
@@ -339,7 +394,8 @@ def build(cid, d, chain_head=None):
             img.append("First-person or fixed documentary view; nothing that records the scene is visible.")
         if kind == "AERIAL" or not loc or ENT[loc] not in image_refs:
             place_txt = PLACE[loc].split(": ", 1)[-1] if loc else ""
-            img.append(f"Place: {WORLD}; seen from high above: {place_txt}. Light: {light}.")
+            img.append(f"Place: {WORLD}" + (f"; seen from high above: {place_txt}" if kind == "AERIAL" and place_txt
+                       else f"; {place_txt}" if place_txt else "") + f". Light: {light}.")
         else:
             img.append(f"Place: {WORLD}; the same place as {{{{ref:{ENT[loc]}}}}} (same creek, banks, plants and ground), "
                        f"but seen from THIS frame's own viewpoint and composition above; do not copy the reference photo's framing. "

@@ -327,6 +327,32 @@ _CRITICAL_RULES = """\
     - (4) **Kiến trúc Face Reference cho Start Frame (Chống Face Drift)**:
       - Khi sinh ảnh Start Frame 2D (Imagen 3), các tấm reference dạng Turnaround Sheet nhiều panel (4 góc) dễ làm phân tán cross-attention của model dẫn đến lệch nét giữa các cảnh.
       - BẮT BUỘC khóa 100% bằng bộ ngũ quan DNA chi tiết trong prompt (mặt trái xoan mềm, cằm thon tròn, má bầu bĩnh, sống mũi nhỏ thẳng, môi mọng đầy đặn hình trái tim, tóc vàng mật ong cột đuôi ngựa cao có mái bay) và chỉ định mệnh lệnh 1:1.
+63. **Mandatory Vlogger Ref ID / source_media_id Injection in Scene Start Frames (Bắt buộc truyền ID ảnh Ref Vlogger khi sinh Start Frame có nhân vật — User Lock 14/10/2026)** —
+    - (1) **Hiện tượng & Nguyên nhân gốc rễ (Root Cause)**: Khi submit request sinh ảnh Start Frame cho các cảnh có nhân vật (như Nora), nếu chỉ gửi `{"type": "GENERATE_IMAGE", "scene_id": ...}` mà KHÔNG truyền `source_media_id` (chứa UUID của ảnh ref nhân vật `uploads/nora_main_clean.jpg`): (a) Google Flow sẽ coi request này là Text-to-Image thuần túy từ con số 0 (không có `base_media_id` / `target_asset`), (b) Trên giao diện web `flow.google.com`, khung tạo ảnh hoàn toàn KHÔNG CÓ ảnh tham chiếu của nhân vật được gắn vào, (c) Imagen 3 tự động vẽ khuôn mặt ngẫu nhiên từ text mô tả, gây Face Drift và xung đột nghiêm trọng khi đưa vào sinh video R2V.
+    - (2) **Quy tắc bắt buộc (Mandatory Protocol)**:
+      - Đối với BẤT KỲ cảnh nào xuất hiện Vlogger hoặc nhân vật chính, request tạo Start Frame BẮT BUỘC phải truyền `source_media_id` = UUID của ảnh ref nhân vật chính (`c.media_id` của `<Vlogger>`): `{"type": "EDIT_IMAGE", "scene_id": sid, "source_media_id": nora_media_id, "project_id": pid, "video_id": vid, "orientation": "HORIZONTAL"}` (hoặc truyền `source_media_id` trong `GENERATE_IMAGE`).
+      - Tác dụng trên Google Flow: FlowKit đưa ID này vào `base_media_id` / `target_asset`. Trên `flow.google.com`, Flow sẽ gán trực tiếp thẻ ảnh ref của nhân vật vào khung tạo ảnh làm ảnh gốc (`BASE_IMAGE`), khóa cứng nhận diện ngũ quan 1:1, không bị Imagen 3 vẽ khuôn mặt ngẫu nhiên.
+      - Cảnh không người (Phong cảnh, Khủng long, B-roll): Tiếp tục dùng `GENERATE_IMAGE` thuần túy không cần `source_media_id`.
+
+64. **Inline Reference Mention — Bắt buộc nhắc ảnh ref ngay trong prompt (User Lock 14/10/2026)** — Khi request có ảnh ref (ảnh Start Frame lẫn video R2V), prompt BẮT BUỘC nhắc ảnh đó **ngay tại câu khóa**, đúng cách Flow web chèn chip ảnh: trong file thiết kế viết `{{ref:<Tên entity>}}`; trước khi gửi đổi thành `{{media:<uuid>|<tên file đã upload>}}`; `flow_batch.prompt_segments` tách thành các đoạn `["chữ"]` / `[null,[["<uuid>","<tên file>"]]]` (capture thật từ flow.google.com 14/10/2026). Không mô tả lại khuôn mặt/makeup/trang phục bằng chữ — chỉ một câu khóa trỏ vào chip: `Nora's face is exactly the face in {{ref:Nora}}, kept 1:1 ... including her makeup and hairstyle` + `MAKEUP LOCK`. Start Frame có vlogger chỉ đính 3 ref [mặt, Body, bối cảnh]; video giữ đủ ref (≤7). `tools/lint_prompt.py` kiểm: token sai dạng (CRITICAL), `{{ref:}}` chưa resolve khi gửi, chip không nằm trong bộ ref, prompt có ref mà không nhắc ảnh nào (HIGH).
+
+65. **Continuous Scene Chains vs. Scene Transitions Start Frame Protocol (Quy tắc bất di bất dịch: Cảnh liên tục cắt Last Frame làm Start Frame, chuyển cảnh mới sinh ảnh — User Lock 15/10/2026)** —
+    - (1) **Quy tắc phân định 2 loại cảnh (The Two Scene Categories)**:
+      - **Loại 1 — Cảnh liên tục (Continuous Action / Scene Chains / Cùng góc nhìn tiếp nối)**:
+        - Là các cảnh diễn ra liên tiếp trong cùng một chuỗi hành động thời gian thực (ví dụ: chuỗi rượt đuổi, va chạm 3 nhịp `a/b/c`, vlogger vừa nói câu trước xoay người làm hành động tiếp theo ở câu sau mà không cắt đổi địa điểm/thời gian).
+        - **CẤM TUYỆT ĐỐI**: KHÔNG sinh ảnh tĩnh Start Frame mới từ văn bản (`GENERATE_IMAGE` hoặc Text-to-Image AI). Việc sinh ảnh mới cho cảnh liên tục sẽ làm vỡ giải phẫu, méo nhân vật, đổi dáng vóc, và trôi dạt bối cảnh giữa 2 giây giao nhau.
+        - **BẮT BUỘC 100% (`PREV_LAST_FRAME`)**: Trích xuất khung hình cuối cùng (Last Frame) của video clip trước bằng `ffmpeg -sseof -0.08 -i prev.mp4 -frames:v 1`, chạy ngay qua `tools/remove_watermark_from_image.py` để xóa sạch watermark và SynthID, upload file sạch lên FlowKit để lấy `media_id` UUID sạch gán làm Start Frame (`horizontal_image_media_id`) cho cảnh kế tiếp. Clip kế tiếp tự động chờ clip trước hoàn thành mới trích xuất và sinh video.
+      - **Loại 2 — Chuyển cảnh (Scene Transitions / Cutaways / Đổi góc / Đổi bối cảnh / Đổi thời gian)**:
+        - Là các cú cắt cảnh thực sự: đổi từ POV sang Selfie hoặc ngược lại, đổi cỡ cảnh đột ngột, chuyển sang vị trí mới, chuyển thời gian (sáng sang trưa, ngoài sông vào sâu trong rừng), hoặc cảnh mở đầu Establishing Shot.
+        - **QUY TRÌNH CHUẨN**: Sinh ảnh tĩnh Frame 0 độc lập bằng `GENERATE_IMAGE` (tuân thủ Rule 63 về `source_media_id`), tải về, tẩy watermark (`remove_watermark_from_image.py`), upload ảnh sạch lên Flowkit, và **mở Review Board (`review_images.html`) chờ User duyệt trước khi sinh video**.
+    - (2) **Phạm vi áp dụng — mọi clip nối tiếp trực tiếp, KHÔNG chỉ chuỗi `a/b/c` (User Lock 16/10/2026)**: Quy tắc Loại 1 áp cho BẤT KỲ clip nào nối tiếp trực tiếp clip đứng trước nó trong timeline, dù clip ID có hậu tố `a/b/c` hay không. Phép thử: clip B mở ra ở **cùng địa điểm + cùng khoảnh khắc + cùng vị trí/góc máy + cùng cỡ cảnh** với khung hình cuối của clip A (không có cú cắt) ➔ B là Loại 1 ➔ `start_frame.type = "PREV_LAST_FRAME"`, CẤM `GENERATE_IMAGE`. Chỉ cần MỘT trong bốn yếu tố đổi (góc máy, cỡ cảnh, địa điểm, thời gian) ➔ Loại 2. Khi viết prompt (`/fk-script-to-prompts`) phải phân loại từng clip và ghi rõ lý do vào `start_frame.note`; clip Loại 1 không có `image_prompt`.
+    - (3) **Thứ tự sinh & review**: Clip Loại 1 chỉ sinh SAU KHI clip trước đã sinh xong VÀ được User duyệt (Last Frame lấy từ clip đã duyệt; nếu clip trước bị regen thì Last Frame của clip sau phải cắt lại và clip sau phải regen theo). Start Frame Loại 1 không cần qua Review Board ảnh (Rule 22/25) vì nó là khung hình của video đã duyệt; nhưng vẫn phải tẩy watermark trước khi upload (Rule 28).
+
+66. **Post-Production Editing via `/video-editing` (Khóa skill dựng hậu kỳ cho cả Claude và Antigravity/Gemini — User Lock 16/10/2026)** — Skill `video-editing` (nguồn `affaan-m/ecc`, cài tại `.agents/skills/video-editing/`, Claude đọc qua symlink `.claude/skills/video-editing/`) là skill BẮT BUỘC cho mọi bước dựng sau khi clip đã được duyệt: cắt/trim theo bảng Rule 49, ghép (Concat), phát hiện dead air / cảnh trùng, chèn overlay/phụ đề, reframe 16:9 ➔ 9:16 cho Shorts. CẢ Claude VÀ Antigravity (Gemini) đều phải kích hoạt skill này ở bước 10 của Pipeline, phối hợp với `/fk-capcut-edit`, `/fk-cinematic-transitions`, `/fk-sound-design`. Ràng buộc khi áp dụng cho FlowKit:
+    - (1) **Chỉ dựng footage đã duyệt**: đầu vào là clip 1080p sạch logo đã qua review (`${OUTDIR}/1080/*_1080p_clean.mp4`, Rule 18/32); bỏ qua Layer 1 Capture của skill. Bản dựng nháp có thể dùng clip 720p trong `scenes/`, nhưng không đưa bản 720p vào bản xuất cuối.
+    - (2) **Không sinh asset ngoài FlowKit**: KHÔNG gọi ElevenLabs, fal.ai, VideoDB hay dịch vụ sinh media bên ngoài nêu trong skill. Giọng nói dùng thoại gốc Veo/Omni (Laomedeia, Rule 24) hoặc `/fk-gen-narrator`; nhạc dùng `/fk-gen-music`. Mọi bước có tốn credit vẫn phải hỏi trước theo Rule 29.
+    - (3) **Âm thanh theo chuẩn FlowKit**: master −14 LUFS / −1 dBTP theo `/fk-sound-design`, KHÔNG dùng mức `loudnorm I=-16` mặc định trong skill.
+    - (4) **Lưu kết quả dựng và giữ phiên bản**: script ffmpeg/Remotion tạm đặt trong scratch (Rule 4, 43); danh sách cắt (EDL), file concat và bản dựng lưu trong `${OUTDIR}/edit/` với tên có số phiên bản (`edit_v1`, `edit_v2`...); không ghi đè bản dựng đã giao cho User.
 """
 
 _PIPELINE_OVERVIEW = """\
@@ -336,6 +362,8 @@ _PIPELINE_OVERVIEW = """\
 [PRE-PRODUCTION / TIỀN KỲ KỊCH BẢN]
 - Tầng 1: story-bible.md  /sw-workflow điều phối (/sw-premise-theme, /sw-story-structure, /sw-character-conflict)
 - Tầng 2: script.md       /sw-scene-craft + /sw-dialogue + /fk-scriptwriter + /fk-camera-guide + /fk-action-choreography
+                          (gói tiêu đề + thumbnail + lời hứa được duyệt TRƯỚC khi viết — /fk-scriptwriter G2, /fk-time-travel-vlog bước 1.5)
+- Tầng 2.5: paper_edit.md /fk-paper-edit (python tools/paper_edit.py: bấm giờ, Rule 49, lời hứa 30s, móc giữ chân ≤ 90s, đề xuất cắt -> user duyệt)
 - Tầng 3: prompts.json    /fk-script-to-prompts (chuyển thể prompt JSON + lint_prompt.py self-repair -> user duyệt)
 
 [PRODUCTION / SẢN XUẤT MEDIA FLOWKIT]
@@ -347,9 +375,10 @@ _PIPELINE_OVERVIEW = """\
 5. Gen ref images    POST /api/requests/batch (GENERATE_CHARACTER_IMAGE / upload locked refs)
                      BẮT BUỘC dùng /fk-character-design để thiết kế Character Sheet & Creature Turnaround Sheet 16:9 đa góc.
                      Verify all key entities (Character, Body, Location, Creature) have UUID media_id
-6. Gen scene images  MANDATORY START FRAMES: POST /api/requests/batch (type: "GENERATE_IMAGE")
-                     Tạo ảnh tĩnh Frame 0 cho từng Scene với image_prompt đặc tả chất liệu vi mô & anti-CGI.
-6.5 Image Review Gate MANDATORY GATE! Tải ảnh về ${OUTDIR}/images/scene_{idx}.jpg.
+6. Gen scene images  START FRAMES (Rule 65):
+                     - CẢNH CHUYỂN / CẮT CẢNH: POST /api/requests/batch (type: "GENERATE_IMAGE", có source_media_id theo Rule 63).
+                     - CẢNH LIÊN TỤC (Chain): CẤM sinh ảnh mới. Cắt Last Frame clip trước bằng ffmpeg -> de-watermark -> upload lấy media_id (Rule 65).
+6.5 Image Review Gate MANDATORY GATE! Với ảnh chuyển cảnh: Tải về ${OUTDIR}/images/scene_{idx}.jpg.
                      Xóa sạch watermark qua remove_watermark_from_image.py -> upload file clean lấy media_id mới.
                      Cập nhật horizontal_image_media_id, mở Review Board ảnh (review_images.html).
                      STOP & PAUSE: Chờ User duyệt Start Frame trước khi sinh video!
@@ -364,7 +393,9 @@ _PIPELINE_OVERVIEW = """\
                      Tải video 1080p về folder 1080/ -> ${OUTDIR}/1080/scene_XX_1080p.mp4
 9. De-watermark      Chạy remove_watermark_video TRỰC TIẾP trên bản 1080p -> ${OUTDIR}/1080/scene_XX_1080p_clean.mp4
 10. Concat           ffmpeg normalize + concat (dùng toàn bộ video 1080p clean đã duyệt)
+                     BẮT BUỘC dùng /video-editing (Rule 66) + /fk-capcut-edit + /fk-sound-design cho dựng & master.
 11. SEO & Thumbnails Auto-match script language (e.g. 100% native Japanese for Japanese POV vlog)
+12. Analytics        Sau đăng 48h và 7 ngày: /fk-youtube-analytics (CTR, giữ chân 30s, AVD; đổi 1 biến; end screen/playlist/Shorts)
 ```
 """
 
@@ -420,6 +451,7 @@ def _agents_md_body(skills, title):
         f"| Skill | Purpose |\n"
         f"|-------|---------|\n"
         f"{rows}\n"
+        f"| `/video-editing` | Dựng hậu kỳ footage đã duyệt: cắt, ghép, dead air, overlay, reframe Shorts (Rule 66; skill ngoài `affaan-m/ecc`, cài ở `.agents/skills/`) |\n"
     )
 
 

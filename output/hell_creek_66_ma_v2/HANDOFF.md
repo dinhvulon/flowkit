@@ -1,6 +1,17 @@
-# Handoff — Hell Creek 66 Ma v2 (dừng 14/10/2026 ~23:50)
+# Handoff — Hell Creek 66 Ma v2
 
-## Trạng thái nhanh
+## Cập nhật 16/10/2026 (tài khoản mới — thay phần dưới nếu mâu thuẫn)
+
+- project `946904bf-3e57-4ba2-97bb-9d545d037914` · video `32aa6e3a-02ef-4020-8ae2-7dda0164f18b` · `project_state.json` `scene_ids` = 94 clip (Act 2–5).
+- **Act 1:** chốt, không sinh lại — `hell_creek_act1_1080p.mp4`. Đã xóa scene A1 tạm trên project mới.
+- **Act 2:** 24/25 clip 720p xong, user đã duyệt. **A2-R3 BỎ HẲN** (timeout lặp lại ~5 lần; A2-R4 có Start Frame riêng nên vẫn liền mạch) → khi concat bỏ qua A2-R3.
+- **A2-16:** sinh lại với ref Turtle Shell Flask + SHELL LOCK "mai kín, không thành bát" → `scenes/scene_024_A2-16_749d40ac.mp4` (đã duyệt). Bản cũ hình bát: `scene_041_A2-16_1fc2dfc8_old_bowl.mp4`.
+- **Act 3–5:** đang sinh Start Frame (`gen_sf_waves.py act3 act4 act5`); duyệt trên Review Board rồi mới sinh video.
+- Số file `scenes/scene_{order:03d}_…` theo thứ tự trong `scene_ids` của project mới (khác số của tài khoản cũ).
+- **Sửa thẳng trong JSON, chưa đưa vào `_pipeline/prompts/*.py`** (không sửa .py khi job đang chạy): A2-16 (SHELL LOCK mai kín, `prompts_act2.json`), A3-W3 (`start_frame.image_prompt` bỏ câu "Self-filmed vlog framing", khóa ngồi + 2 tay trong lòng, `prompts_act3.json`). Chạy `build.py` sẽ ghi đè → phải chép sang `act2.py`/`act3.py` trước. Script tạm 5 ảnh/đợt: scratchpad `gen_sf_waves5.py` (WAVE=5, nhận request đang chạy).
+- **Lỗi worker:** poll timeout → `processor.py` tự đặt lại PENDING và gửi lại lên Flow (kể cả request đã đặt FAILED tay). Cần sửa khi hàng đợi rảnh (sửa .py làm server khởi động lại).
+
+## Trạng thái nhanh (14/10, tài khoản cũ)
 
 | Hạng mục | Tình trạng |
 |---|---|
@@ -9,9 +20,9 @@
 | 112 scene trên FlowKit | ✅ đã tạo; đã PATCH `duration`, `narrator_text`, `video_prompt`, `image_prompt` |
 | Start Frame Act 1 (16 ảnh) | ✅ xong, đã duyệt (`start_frame_approved.json`) |
 | Start Frame Act 2–5 (79 ảnh) | ⏸ chưa sinh |
-| **Video Act 1 (18 clip)** | 🟡 **9/18 xong** — bảng dưới |
+| **Video Act 1 (18 clip)** | 🟢 **17/18 xong (94.4%)** — Đã audit Vision tính liên tục đạt TB 9.18/10. Chỉ còn **A1-03** chờ xác nhận sinh lại. |
 | Video Act 2–5 | ⏸ chưa sinh |
-| Review video 720p / upscale / concat | ⏸ chưa làm (user bảo chưa cần review lúc sinh) |
+| Review video 720p / upscale / concat | 🟢 **Review Board Live**: `http://localhost:8200/` (`review_videos.html`). 17 clip đạt chuẩn, không cần regen clip nào. |
 
 ## Định danh
 
@@ -21,11 +32,11 @@
 
 ## Video Act 1
 
-| Xong — 720p thô trong `scenes/` | Chưa sinh |
+| Xong — 720p thô trong `scenes/` (17 clip) | Chưa sinh / Cần chạy lại (1 clip) |
 |---|---|
-| EST-01, A1-01, A1-02, A1-04, A1-05, A1-06, A1-12a, A1-12b, A1-12c | **A1-03** (request treo mồ côi: PROCESSING từ 23:03, worker báo 0 active → đã đánh FAILED), A1-07, A1-08, A1-09, A1-10, A1-S1, A1-11, A1-13, A1-14 |
+| EST-01, A1-01, A1-02, A1-04, A1-05, A1-06, A1-07, A1-08, A1-09, A1-10, A1-S1, A1-11, A1-12a, A1-12b, A1-12c, A1-13, A1-14 | **A1-03** (request bị timeout/dropped trên Google Flow >60m → đã unblock FAILED, chờ lệnh sinh lại riêng) |
 
-Nhật ký: `video_log.json`. Chưa upscale, chưa xóa logo video (Rule 18). `scenes/` đã mở khỏi `.gitignore` để commit/push.
+Nhật ký: `video_log.json`. Review Board trực quan: `http://localhost:8200/`. Đã audit tính liên tục toàn diện: 17 clip đều đạt điểm cao (TB 9.18/10), không lỗi morphing, đạo cụ mai rùa và vết thương sinh vật nhất quán 100%. Chưa upscale, chưa xóa logo video (Rule 18).
 
 ## Mai làm tiếp — theo thứ tự
 
@@ -57,6 +68,7 @@ Nhật ký: `video_log.json`. Chưa upscale, chưa xóa logo video (Rule 18). `s
 - **Ánh sáng:** tự nhiên, không khí trong, không nắng ngược phát sáng/tia sáng (khóa L1–L5 đã sửa; giữ L0 sương bình minh, LG/LT/LD của va chạm).
 - **3 video / 3 ảnh một lúc** (memory `request-pacing-45-60s`).
 - **Video mở đầu bằng Start Frame đã duyệt:** builder R2V (MZZa6b) không có ô khung đầu → khối `opening_frame` nhắc ảnh Start Frame bằng chip.
+- **Rule 65 — Cảnh liên tục vs Chuyển cảnh (User Lock 15/10/2026):** Cảnh liên tục (Chain/Action sequence/cùng góc nối tiếp): CẤM sinh Start Frame mới từ text (`GENERATE_IMAGE`), 100% cắt Last Frame clip trước bằng `ffmpeg -sseof -0.08`, tẩy watermark, upload làm Start Frame sạch (`PREV_LAST_FRAME`). Chỉ cảnh chuyển (đổi góc POV <-> Selfie, đổi bối cảnh, cutaway) mới sinh Start Frame tĩnh bằng `GENERATE_IMAGE` (có `source_media_id`), tẩy watermark, và chờ user duyệt qua `review_images.html`.
 
 ## Thay đổi chưa commit
 

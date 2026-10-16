@@ -82,10 +82,16 @@ def ready(cid):
     if sf["type"] != "PREV_LAST_FRAME":
         return True
     prev = sf["note"].split()[-1]
+    if prev in queue or prev in running:
+        return False
     return video_file(prev).exists() and (vlog.get(prev) or {}).get("status") == "COMPLETED"
 
 
 queue = [c for c in args if "--regen" in sys.argv or not (vlog.get(c) or {}).get("file")]
+if "--regen" in sys.argv:
+    for c in queue:
+        vlog.pop(c, None)
+    VLOG.write_text(json.dumps(vlog, indent=2), encoding="utf-8")
 running = {}
 while queue or running:
     for cid in list(queue):
