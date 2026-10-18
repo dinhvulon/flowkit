@@ -272,9 +272,9 @@
    }
   ],
   "timeline_action": {
-   "0-2s": "Over Nora's shoulder in the foreground: Eli faces her across the yard. From the very first frame at second 0, Eli begins speaking immediately: Eli says \"Go, then. You're good at going. Mom went. Now you go too.\" (no subtitles). The line runs on from 0s through 6s, spoken at a natural pace.",
-   "2-4s": "Eli turns away from her toward the trailer as he speaks.",
-   "4-6s": "He keeps walking toward the trailer, his back to her."
+   "0-2s": "Over Nora's shoulder in the foreground: Eli faces her in the middle of the open gravel yard, nothing between them. From the very first frame at second 0, Eli begins speaking immediately: Eli says \"Go, then. You're good at going. Mom went. Now you go too.\" (no subtitles). The line runs on from 0s through 6s, spoken at a natural pace.",
+   "2-4s": "Eli turns away from her as he speaks and walks straight off across the open gravel yard toward the house; the path ahead of him is clear and empty.",
+   "4-6s": "He keeps walking away across the open yard, his back to her; Nora stays still in the foreground."
   },
   "speech": {
    "speaker": [
@@ -303,6 +303,7 @@
    "ANTI-CGI LOCK: real documentary footage, not a 3D render, not a video game, not CGI fire, not cartoon flames, no plastic skin.",
    "No breath vapor and no white steam from anyone's mouth; no god rays, no volumetric beams.",
    "Separate bodies never merge; natural hands with five fingers; no extra limbs.",
+   "Nobody walks through any fence, post or wall; every solid object stays solid.",
    "No background music.",
    "Eli is a 19-year-old adult man: ordinary clothes fully on, no glamour framing.",
    "Nora is never posed like a model: no beauty filter, no glamour lighting, no catwalk pose.",
@@ -318,7 +319,8 @@
    "image_prompt": "Single still photograph, frame 0 of this shot before any movement, OTS→Eli, 35-50mm lens, static tripod, calm composition. EXACTLY 2 figures in the frame. Nora's face is not featured. Eli is exactly the 19-year-old young man in {{ref:Eli}}, kept 1:1: same face and hair, same hoodie, jeans and sneakers. He is an adult, an ordinary lean young man of 19. Clothes clean. Frame 0: Over Nora's shoulder in the foreground: Eli faces her across the yard. Location: exactly the place in {{ref:Hale Ranch}}. Light: morning, hard sun. full-bleed 16:9 widescreen cinema frame with no borders, no white bars and no film edges, cinematic documentary realism, natural film grain, natural color, real locations and real people. Deep focus where the frame is wide. No readable text anywhere.",
    "source_media_id": "media_id of Eli (Rule 63)",
    "note": "Rule 65 type 2 (new angle/place/time): generate, de-watermark, upload, Review Board before video."
-  }
+  },
+  "wardrobe_lock": "Nora is seen only from behind at the right edge of the frame: her honey-blonde ponytail and the red-and-charcoal plaid flannel shirt exactly as in {{ref:Nora Body Ranch}}; her face and mouth are not visible and she does not speak."
  },
  {
   "clip_id": "RA-06",
