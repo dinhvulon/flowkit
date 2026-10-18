@@ -20,6 +20,7 @@ role points at in `agent/providers.json`).
 - `ffmpeg` + `ffprobe` installed
 - Scenes must have completed videos (`${ori}_video_status = COMPLETED`)
 - (`cli` only) the review CLI installed; (`muse`) nothing extra
+- Dialogue check (Step 3c): `pip install faster-whisper` in the FlowKit venv (CPU is fine; `small.en` downloads ~460 MB on first run)
 
 ## Step 1: Pre-check
 
@@ -99,6 +100,34 @@ curl -X POST "http://127.0.0.1:8100/api/videos/<VID>/review?project_id=<PID>&mod
 
 The API extracts frames from each scene video, sends them to the configured
 review CLI, and returns per-scene quality scores.
+
+## Step 3c: Dialogue check — listen with Whisper (every clip, both backends)
+
+Frames cannot hear. Run this on every clip **before** showing the scorecard (also on single-clip reviews):
+
+```bash
+venv/Scripts/python.exe tools/review_dialogue.py <clip.mp4> --scene-id <SID> [--json <out.json>]
+# or: --prompt-file output/<slug>/prompts.json --clip <CLIP_ID>
+# or: --expect "Nora|kore|0-4s|Let go. I am."   (repeatable)
+```
+
+It transcribes the clip (faster-whisper, word timestamps, VAD) and compares it with the
+native lines in the scene's `video_prompt` → `speech.dialogue` (`post_vo` lines are added in
+the edit, so they are not expected in the clip). Per line it reports what was heard, word
+accuracy, start–end time and median pitch.
+
+| Flag | Meaning | Action |
+|---|---|---|
+| `MISSING` | line not heard | fail → regen (mouths may move with no audio, or the line was dropped) |
+| `WORDS: accuracy < 80%` | wrong or garbled words | fail → regen; check spelling of names in the prompt |
+| `CUT-OFF` | last word missing / speech runs into the clip end | fail → shorten the line (Rule 49) or regen |
+| `TIMING` | line heard outside its `t` window (±0.75 s) | fail if it breaks the beat or overlaps another speaker |
+| `EXTRA SPEECH` / `SPEECH IN A SILENT CLIP` | words nobody wrote (ghost lines, a silent clip that talks) | fail → regen; add "Nobody speaks" / Sonic Isolation |
+| `? VOICE?` warnings | rough pitch says the voice may be the wrong sex, or two speakers sound alike/swapped | **never fails on its own** — listen to the clip; pitch from short excited lines is unreliable |
+
+Exit code 0 = pass, 1 = problems, 2 = could not run. Put the transcript, each line's accuracy and
+any flags into the scorecard ("Thoại" row): **Prompt Adherence** drops for missing/wrong lines,
+**Temporal Coherence** for cut-offs or overlaps. Tell the user which `?` warnings need a listen.
 
 ## Step 4: Interpret results
 

@@ -7,7 +7,8 @@
   "image_refs": [
    "Nora",
    "Eli",
-   "Juniper"
+   "Juniper",
+   "Hale Ranch"
   ],
   "video_refs": [
    "Eli",
@@ -16,14 +17,19 @@
    "Juniper",
    "Hale Ranch"
   ],
-  "raw_image_media_id": "d8f7fd06-c94a-4125-89a2-b6f7a3769596",
-  "clean_media_id": "3a625b18-c2fb-49a7-a0e3-eab3ac104a8a",
-  "image_file": "images/scene_001_RA-02_clean.jpg"
+  "raw_image_media_id": "4b2489e8-70d3-40ff-80ac-9ff3696afae0",
+  "image_file": "images/scene_001_RA-02_clean.jpg",
+  "video_media_id": "44182348-3ff7-45be-aae8-f9560f5ecd7d",
+  "video_file": "scenes/scene_001_RA-02_49c1a6a2.mp4",
+  "local_clean": "images/scene_001_RA-02_clean.jpg",
+  "uploaded": true,
+  "clean_media_id": "40d6f784-9739-4750-ad17-7f367bd3b55a",
+  "approved": true
  },
  "RA-03": {
   "scene_id": "2528b08c-0add-409a-9819-4a6faf8b438b",
   "act": "act1",
-  "duration": 4,
+  "duration": 6,
   "start_frame": "GENERATE_IMAGE",
   "image_refs": [
    "Juniper",
@@ -36,7 +42,10 @@
   ],
   "raw_image_media_id": "9bb6dad1-91b5-471a-ac85-75bb2a314e81",
   "clean_media_id": "7fbf9e17-29e9-4890-b92a-2d87a398cf2a",
-  "image_file": "images/scene_002_RA-03_clean.jpg"
+  "image_file": "images/scene_002_RA-03_clean.jpg",
+  "video_media_id": "3d83affe-1f41-47eb-b70f-87f4529de292",
+  "video_file": "scenes/scene_002_RA-03_2528b08c.mp4",
+  "approved": true
  },
  "RA-04": {
   "scene_id": "28ccd1b4-d508-4fca-8f94-118479c4772f",
@@ -53,9 +62,13 @@
    "Nora Body Ranch",
    "Hale Ranch"
   ],
-  "raw_image_media_id": "409a13a4-3762-4779-b982-ecba6cbe01f1",
-  "clean_media_id": "c7cf2415-ebcb-4bd5-ab71-611c221fda5e",
-  "image_file": "images/scene_003_RA-04_clean.jpg"
+  "raw_image_media_id": "dcb1ddfe-bbea-4e8d-983a-bb0a550c3c4b",
+  "image_file": "images/scene_003_RA-04_clean.jpg",
+  "video_media_id": "a70ef0d4-39d8-4c7f-8031-afd7a401d402",
+  "video_file": "scenes/scene_003_RA-04_28ccd1b4.mp4",
+  "local_clean": "images/scene_003_RA-04_clean.jpg",
+  "uploaded": true,
+  "clean_media_id": "623b261e-38e7-4b5d-8fd9-9a132b466961"
  },
  "RA-05": {
   "scene_id": "43cddfc4-2392-4e96-b959-6fd4cab977b9",

@@ -11,3 +11,4 @@ numpy>=1.24.0
 google-api-python-client>=2.100.0
 google-auth-oauthlib>=1.0.0
 python-multipart>=0.0.9
+faster-whisper>=1.0.0   # tools/review_dialogue.py (/fk-review-video Step 3c dialogue check)

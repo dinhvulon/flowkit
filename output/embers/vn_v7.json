@@ -31,7 +31,7 @@
  },
  {
   "clip_id": "RA-03",
-  "duration": 4,
+  "duration": 6,
   "shot": "ECU",
   "refs": [
    "Juniper",
@@ -39,7 +39,7 @@
    "Hale Ranch"
   ],
   "start_frame": "GENERATE_IMAGE + ảnh ref",
-  "hinh": "Mắt đen của Juniper; lấy nét sang tay Nora dừng lại sát mõm ngựa rồi rút về.",
+  "hinh": "Cận cảnh khóa máy: mắt ngựa Juniper chớp một lần; nét chuyển sang tay Nora vươn về phía mõm, đầu ngón tay dừng cách ~10 cm, không chạm, co lại rồi rút về; mắt ngựa nhìn theo.",
   "beat": "Cài cắm: ánh nhìn",
   "thoai": [],
   "so_tu": 0

@@ -17,7 +17,7 @@
    "description": "35-50mm lens, static tripod, calm composition"
   },
   "style": "35mm film, cinematic documentary realism, natural film grain, natural color, real locations and real people",
-  "setting": "Location: exactly the place in {{ref:Hale Ranch}}, the small Hale ranch in dry golden hills: weathered house, pole fence, gravel yard. A thin brown smoke column rises over the far ridge. Light: dawn, golden.",
+  "setting": "Location: exactly the place in {{ref:Hale Ranch}}, the small Hale ranch in dry golden hills: weathered house, pole fence, gravel yard. A thin brown smoke column rises over the far ridge. Light: dawn, golden. Behind them for the whole clip: the weathered grey clapboard house with its rusted tin roof, the pole fence and the two big oak trees stay clearly visible.",
   "characters": [
    {
     "name": "Nora",
@@ -36,9 +36,9 @@
    }
   ],
   "timeline_action": {
-   "0-3s": "Nora leads the grey mare by her lead rope toward the trailer ramp; Eli runs in from frame-left and grabs the rope; on the far ridge behind them a thin brown smoke column rises. From the very first frame at second 0, Eli begins speaking immediately: Eli says \"Mom rode her through the Pine Gulch burn. You can't sell her.\" (no subtitles). The line runs on from 0s through 4s, spoken at a natural pace.",
-   "3-6s": "Brother and sister face each other in profile across the rope, the mare between them and the trailer. Eli stops; Nora says \"Let go. Mom isn't paying the bank, Eli. I am.\" (no subtitles). The line runs on from 4s through 8s, spoken at a natural pace.",
-   "6-8s": "Nora pulls the rope out of Eli's hands and turns back to the ramp."
+   "0-3s": "Nora leads the grey mare by her lead rope toward the trailer ramp; Eli runs in from frame-left and grabs the mare's halter by its leather cheek strap with one hand; he does not touch the rope; on the far ridge behind them a thin brown smoke column rises. From the very first frame at second 0, Eli begins speaking immediately: Eli says \"Mom rode her through the Pine Gulch burn. You can't sell her.\" (no subtitles). The line runs on from 0s through 4s, spoken at a natural pace.",
+   "3-6s": "Brother and sister face each other in profile, Eli's hand still on the halter, the mare between them and the trailer. Eli stops; Nora says \"Let go. Mom isn't paying the bank, Eli. I am.\" (no subtitles). The line runs on from 4s through 8s, spoken at a natural pace.",
+   "6-8s": "Nora pulls the lead rope firmly and leads the mare away toward the ramp; the halter slips out of Eli's fingers and his hand drops empty to his side."
   },
   "speech": {
    "speaker": [
@@ -75,6 +75,7 @@
    "ANTI-CGI LOCK: real documentary footage, not a 3D render, not a video game, not CGI fire, not cartoon flames, no plastic skin.",
    "No breath vapor and no white steam from anyone's mouth; no god rays, no volumetric beams.",
    "Separate bodies never merge; natural hands with five fingers; no extra limbs.",
+   "The lead rope never breaks, never splits into two pieces and never duplicates; Eli never holds any rope; there is no second rope.",
    "No background music.",
    "The horse has exactly one head and four legs and never merges with a person.",
    "Eli is a 19-year-old adult man: ordinary clothes fully on, no glamour framing.",
@@ -89,15 +90,16 @@
     "Eli",
     "Juniper"
    ],
-   "image_prompt": "Single still photograph, frame 0 of this shot before any movement, MS, 35-50mm lens, static tripod, calm composition. EXACTLY 2 people and one horse in the frame. Nora's face is exactly the face in {{ref:Nora}}, kept 1:1, an adult woman of 23, very pretty, athletic and strong. Clean; ranch clothes. Eli is exactly the 19-year-old young man in {{ref:Eli}}, kept 1:1: same face and hair, same hoodie, jeans and sneakers. He is an adult, an ordinary lean young man of 19. Clothes clean. Juniper is exactly the old grey mare in {{ref:Juniper}}: same grey coat and markings, dark eye, braided forelock. A real horse with real anatomy: one head, four legs, natural weight and muscle. An old rope halter. Frame 0: Nora leads the grey mare by her lead rope toward the trailer ramp; Eli runs in from frame-left and grabs the rope; a thin brown smoke column rises over the far ridge behind them. Light: dawn, golden. full-bleed 16:9 widescreen cinema frame with no borders, no white bars and no film edges, cinematic documentary realism, natural film grain, natural color, real locations and real people. Deep focus where the frame is wide. No readable text anywhere.",
+   "image_prompt": "Single still photograph, frame 0 of this shot before any movement, MS, 35-50mm lens, static tripod, calm composition. EXACTLY 2 people and one horse in the frame. Nora's face is exactly the face in {{ref:Nora}}, kept 1:1, an adult woman of 23, very pretty, athletic and strong. Clean; ranch clothes. Eli is exactly the 19-year-old young man in {{ref:Eli}}, kept 1:1: same face and hair, same hoodie, jeans and sneakers. He is an adult, an ordinary lean young man of 19. Clothes clean. Juniper is exactly the old grey mare in {{ref:Juniper}}: same grey coat and markings, dark eye, braided forelock. A real horse with real anatomy: one head, four legs, natural weight and muscle. An old rope halter. Frame 0: Nora leads the grey mare by her lead rope toward the trailer ramp; Eli runs in from frame-left and grabs the same rope near the halter, so both of them hold one single unbroken rope; a thin brown smoke column rises over the far ridge behind them. Light: dawn, golden. full-bleed 16:9 widescreen cinema frame with no borders, no white bars and no film edges, cinematic documentary realism, natural film grain, natural color, real locations and real people. Deep focus where the frame is wide. No readable text anywhere.",
    "source_media_id": "media_id of Nora (Rule 63)",
    "note": "Rule 65 type 2 (new angle/place/time): generate, de-watermark, upload, Review Board before video."
-  }
+  },
+  "props_lock": "ROPE LOCK: exactly ONE lead rope, a single continuous tan rope clipped under the mare's chin to her halter; only Nora holds it, the free end coiled in her hand. Eli never holds the rope; he holds only the halter's cheek strap."
  },
  {
   "clip_id": "RA-03",
   "scene_name": "Plant: the look",
-  "duration": 4,
+  "duration": 6,
   "aspect_ratio": "16:9",
   "refs": [
    "Juniper",
@@ -107,7 +109,7 @@
   "camera": {
    "viewpoint": "third-person cinematic camera; the camera itself is never seen",
    "shot_size": "ECU",
-   "description": "35-50mm lens, static tripod, calm composition"
+   "description": "50mm lens on a locked-off static tripod, framing stays an extreme close-up of the eye and muzzle for all 6 seconds: the camera never moves, never zooms, never pulls back; only the focus shifts from the eye to the hand"
   },
   "style": "35mm film, cinematic documentary realism, natural film grain, natural color, real locations and real people",
   "setting": "Location: exactly the place in {{ref:Hale Ranch}}, the small Hale ranch in dry golden hills: weathered house, pole fence, gravel yard. Light: dawn, golden.",
@@ -124,8 +126,9 @@
    }
   ],
   "timeline_action": {
-   "0-2s": "Extreme close-up of Juniper's dark eye, the braided forelock at the edge of the frame; she blinks.",
-   "2-4s": "Focus shifts to Nora's hand stopping just short of the mare's muzzle, then pulling back."
+   "0-2s": "Locked-off extreme close-up of Juniper's dark eye, the braided forelock at the edge of the frame; she blinks once, slowly.",
+   "2-4s": "Nora's hand enters slowly from frame-right and reaches toward the mare's muzzle while the focus pulls from the eye to the hand; her fingertips stop about 20 cm short of the muzzle, a wide clear gap of air between fingers and nose, never touching.",
+   "4-6s": "The hand hovers there one beat, the fingers curl in, then it pulls back out of frame without ever touching the horse; the mare's eye follows the hand."
   },
   "speech": {
    "speaker": [],
@@ -144,11 +147,12 @@
    "ANTI-CGI LOCK: real documentary footage, not a 3D render, not a video game, not CGI fire, not cartoon flames, no plastic skin.",
    "No breath vapor and no white steam from anyone's mouth; no god rays, no volumetric beams.",
    "Separate bodies never merge; natural hands with five fingers; no extra limbs.",
+   "Nora's hand never touches, strokes, pats or rests on the horse; a wide visible gap of air (about 20 cm) always stays between her fingers and the muzzle.",
    "No background music.",
    "The horse has exactly one head and four legs and never merges with a person.",
    "Nora is never posed like a model: no beauty filter, no glamour lighting, no catwalk pose.",
    "Nobody speaks in this clip.",
-   "Spoken words in this clip: 0 (Rule 49 band for 4s: 0 or 6-8)."
+   "Spoken words in this clip: 0 (silent shot)."
   ],
   "start_frame": {
    "type": "GENERATE_IMAGE",
@@ -160,7 +164,8 @@
    "image_prompt": "Single still photograph, frame 0 of this shot before any movement, ECU, 35-50mm lens, static tripod, calm composition. EXACTLY 1 person and one horse in the frame. Nora's face is not featured. Juniper is exactly the old grey mare in {{ref:Juniper}}: same grey coat and markings, dark eye, braided forelock. A real horse with real anatomy: one head, four legs, natural weight and muscle. An old rope halter. Frame 0: Extreme close-up of Juniper's dark eye, the braided forelock at the edge of the frame; she blinks. Location: exactly the place in {{ref:Hale Ranch}}. Light: dawn, golden. full-bleed 16:9 widescreen cinema frame with no borders, no white bars and no film edges, cinematic documentary realism, natural film grain, natural color, real locations and real people. Deep focus where the frame is wide. No readable text anywhere.",
    "source_media_id": "media_id of Juniper (Rule 63)",
    "note": "Rule 65 type 2 (new angle/place/time): generate, de-watermark, upload, Review Board before video."
-  }
+  },
+  "wardrobe_lock": "Nora's sleeve and cuff are exactly the red-and-charcoal plaid flannel shirt shown in {{ref:Nora Body Ranch}}; no other shirt, no grey or blue plaid."
  },
  {
   "clip_id": "RA-04",
@@ -187,9 +192,9 @@
    }
   ],
   "timeline_action": {
-   "0-2s": "The pager clipped to Nora's belt buzzes; she unclips it and reads it. From the very first frame at second 0, Nora begins speaking immediately: Nora says \"Every crew's called in. Bike stays in the barn today. I'll know, Eli.\" (no subtitles). The line runs on from 0s through 6s, spoken at a natural pace.",
-   "2-4s": "She lifts her eyes to the smoke column on the far ridge.",
-   "4-6s": "She turns her head toward Eli off-frame-left, firm."
+   "0-2s": "Nora stands in the yard with both thumbs hooked in her belt, hands still; she hears a short electronic beep from her hip and keeps her hands where they are. From the very first frame at second 0, Nora begins speaking immediately: Nora says \"Every crew's called in. Bike stays in the barn today. I'll know, Eli.\" (no subtitles). The line runs on from 0s through 6s, spoken at a natural pace.",
+   "2-4s": "She lifts her eyes to the brown smoke column rising over the far ridge behind her; her thumbs stay hooked in her belt.",
+   "4-6s": "She turns her head toward Eli off-frame-left, firm, hands still at her belt."
   },
   "speech": {
    "speaker": [
@@ -212,7 +217,7 @@
    "beat": "Clock set",
    "subtext": "She manages him like a crew member: orders, not reasons. The bike line plants his escape."
   },
-  "audio": "no background music",
+  "audio": "a short electronic pager beep at second 0, wind, distant dog; no background music",
   "negative_constraints": [
    "No subtitles, no captions, no on-frame text, no logos, no watermarks; no readable letters anywhere, including on helmets and vehicles.",
    "ANTI-CGI LOCK: real documentary footage, not a 3D render, not a video game, not CGI fire, not cartoon flames, no plastic skin.",
@@ -220,7 +225,8 @@
    "Separate bodies never merge; natural hands with five fingers; no extra limbs.",
    "No background music.",
    "Nora is never posed like a model: no beauty filter, no glamour lighting, no catwalk pose.",
-   "Spoken words in this clip: 13 (Rule 49 band for 6s: 12-15)."
+   "Spoken words in this clip: 13 (Rule 49 band for 6s: 12-15).",
+   "Nothing appears in or disappears from her hands; her hands never leave her belt."
   ],
   "start_frame": {
    "type": "GENERATE_IMAGE",
@@ -230,10 +236,11 @@
     "Nora Body Ranch",
     "Hale Ranch"
    ],
-   "image_prompt": "Single still photograph, frame 0 of this shot before any movement, MCU, 35-50mm lens, static tripod, calm composition. EXACTLY 1 person in the frame. Nora's face is exactly the face in {{ref:Nora}}, kept 1:1, an adult woman of 23, very pretty, athletic and strong. Her build and clothing are exactly as in {{ref:Nora Body Ranch}}. Clean; ranch clothes. Frame 0: The pager clipped to Nora's belt buzzes; she unclips it and reads it. Location: exactly the place in {{ref:Hale Ranch}}. Light: morning, hard sun. full-bleed 16:9 widescreen cinema frame with no borders, no white bars and no film edges, cinematic documentary realism, natural film grain, natural color, real locations and real people. Deep focus where the frame is wide. No readable text anywhere.",
+   "image_prompt": "Single still photograph, frame 0 of this shot before any movement, MCU, 35-50mm lens, static tripod, calm composition. EXACTLY 1 person in the frame. Nora's face is exactly the face in {{ref:Nora}}, kept 1:1, an adult woman of 23, very pretty, athletic and strong. Her build and clothing are exactly as in {{ref:Nora Body Ranch}}. Clean; ranch clothes. Frame 0: Nora stands in the gravel yard, the small black pager clipped on her belt at her hip, both hands empty and relaxed at her sides, looking down at the pager on her belt; behind her, over the far golden ridge, a brown smoke column rises clearly into the sky. Location: exactly the place in {{ref:Hale Ranch}}. Light: morning, hard sun. full-bleed 16:9 widescreen cinema frame with no borders, no white bars and no film edges, cinematic documentary realism, natural film grain, natural color, real locations and real people. Deep focus where the frame is wide. No readable text anywhere.",
    "source_media_id": "media_id of Nora (Rule 63)",
    "note": "Rule 65 type 2 (new angle/place/time): generate, de-watermark, upload, Review Board before video."
-  }
+  },
+  "props_lock": "PROP LOCK: the small black pager stays clipped to her belt the whole clip and is never touched, lifted or looked at; her thumbs stay hooked in her belt; nothing is ever held in her hands."
  },
  {
   "clip_id": "RA-05",
