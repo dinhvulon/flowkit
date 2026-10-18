@@ -333,9 +333,8 @@
   ],
   "camera": {
    "viewpoint": "third-person cinematic camera; the camera itself is never seen",
-   "shot_size": "WS",
-   "description": "35-50mm lens, static tripod, calm composition",
-   "focus": "deep focus, entire frame sharp from foreground to the far ridge (f/8)"
+   "shot_size": "MS tracking",
+   "description": "35mm lens, smooth tracking alongside the moving horse trailer at the same speed, framing only the rear half of the trailer box and the mare's head; both ends of the trailer, the hitch and any vehicle stay outside the frame"
   },
   "style": "35mm film, cinematic documentary realism, natural film grain, natural color, real locations and real people",
   "setting": "Location: exactly the place in {{ref:Hale Ranch}}, the small Hale ranch in dry golden hills: weathered house, pole fence, gravel yard. Light: morning, dust.",
@@ -347,8 +346,8 @@
    }
   ],
   "timeline_action": {
-   "0-2s": "The truck and horse trailer pull out of the yard left to right, kicking up dust; the driver is never seen.",
-   "2-4s": "Juniper's grey head turns in the trailer slats toward the ranch; she whinnies."
+   "0-2s": "Tracking alongside a closed horse trailer rolling left to right: the frame holds only its weathered side wall and slats; Juniper's grey head turns in the slats, looking back.",
+   "2-4s": "Behind the trailer the ranch house and the oak trees slide past, softened by dust; Juniper whinnies, her dark eye on the house."
   },
   "speech": {
    "speaker": [],
@@ -367,11 +366,13 @@
    "ANTI-CGI LOCK: real documentary footage, not a 3D render, not a video game, not CGI fire, not cartoon flames, no plastic skin.",
    "No breath vapor and no white steam from anyone's mouth; no god rays, no volumetric beams.",
    "Separate bodies never merge; natural hands with five fingers; no extra limbs.",
+   "No horse outside the trailer, no second horse, no horse walking beside the trailer.",
    "No background music.",
    "The horse has exactly one head and four legs and never merges with a person.",
    "No bokeh and no blurred background.",
    "Nobody speaks in this clip.",
-   "Spoken words in this clip: 0 (Rule 49 band for 4s: 0 or 6-8)."
+   "Spoken words in this clip: 0 (Rule 49 band for 4s: 0 or 6-8).",
+   "No truck or car is visible anywhere in the frame."
   ],
   "start_frame": {
    "type": "GENERATE_IMAGE",
@@ -383,7 +384,8 @@
    "image_prompt": "Single still photograph, frame 0 of this shot before any movement, WS, 35-50mm lens, static tripod, calm composition. Exactly one horse in the frame. Juniper is exactly the old grey mare in {{ref:Juniper}}: same grey coat and markings, dark eye, braided forelock. A real horse with real anatomy: one head, four legs, natural weight and muscle. An old rope halter. Frame 0: The truck and horse trailer pull out of the yard left to right, kicking up dust; the driver is never seen. Location: exactly the place in {{ref:Hale Ranch}}. Light: morning, dust. full-bleed 16:9 widescreen cinema frame with no borders, no white bars and no film edges, cinematic documentary realism, natural film grain, natural color, real locations and real people. Deep focus where the frame is wide. No readable text anywhere.",
    "source_media_id": "media_id of Juniper (Rule 63)",
    "note": "Rule 65 type 2 (new angle/place/time): generate, de-watermark, upload, Review Board before video."
-  }
+  },
+  "props_lock": "ANIMAL LOCK: exactly ONE horse, the grey mare, INSIDE the trailer, only her head visible through the slats. FRAME LOCK: no vehicle, no hitch and no trailer ends are ever in frame; the trailer is simply moving past the house."
  },
  {
   "clip_id": "RA-07",

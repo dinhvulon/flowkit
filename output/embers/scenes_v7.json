@@ -94,7 +94,8 @@
   "clean_media_id": "0646675d-b8d1-43dc-bb59-2756a7ac7352",
   "video_media_id": "87105ae1-0e23-4a9e-8082-e6ab8bac8cd9",
   "video_file": "scenes/scene_004_RA-05_43cddfc4.mp4",
-  "start_frame_mode": "none (user 2026-10-18: refs-only r2v)"
+  "start_frame_mode": "none (user 2026-10-18: refs-only r2v)",
+  "approved": true
  },
  "RA-06": {
   "scene_id": "14421c95-0980-493f-9ea4-1a65695a240c",
@@ -112,7 +113,9 @@
   "raw_image_media_id": "27ad516b-669a-46b2-b983-cf06e0859dfd",
   "image_file": "images/scene_005_RA-06_clean.jpg",
   "clean_media_id": "6198384e-a835-4d3b-8bd6-11a0f9b214ce",
-  "start_frame_mode": "none (user 2026-10-18: refs-only r2v)"
+  "start_frame_mode": "none (user 2026-10-18: refs-only r2v)",
+  "video_media_id": "273e4575-57c1-40a5-993d-9317f77230c9",
+  "video_file": "scenes/scene_005_RA-06_14421c95.mp4"
  },
  "RA-07": {
   "scene_id": "f996fd3e-2ce7-4160-a377-c79c2c626a4b",
