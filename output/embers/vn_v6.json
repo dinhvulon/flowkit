@@ -1,0 +1,2387 @@
+[
+  {
+    "clip_id": "RA-01",
+    "duration": 6,
+    "shot": "EWS",
+    "refs": [
+      "Hale Ranch"
+    ],
+    "start_frame": "GENERATE_IMAGE (không người)",
+    "hinh": "Trang trại nhỏ giữa đồi cỏ vàng khô lúc bình minh; xe chở ngựa chờ trong sân; xa trên đỉnh đồi cột khói nâu đã bốc lên.",
+    "beat": "Mở cảnh · mối đe dọa đã hiện ra",
+    "thoai": [],
+    "so_tu": 0
+  },
+  {
+    "clip_id": "RA-02",
+    "duration": 8,
+    "shot": "MS",
+    "refs": [
+      "Nora",
+      "Nora Body Ranch",
+      "Eli",
+      "Juniper",
+      "Hale Ranch"
+    ],
+    "start_frame": "GENERATE_IMAGE + ảnh ref",
+    "hinh": "Nora (áo flannel) dắt ngựa xám lên dốc xe; Eli chạy tới giật dây dắt; hai chị em đối mặt nhìn nghiêng.",
+    "beat": "Vết thương · cài cắm Pine Gulch",
+    "thoai": [
+      {
+        "nguoi": "Eli",
+        "kieu": "nói trong video",
+        "en": "Mom rode her through the Pine Gulch burn. You can't sell her.",
+        "vi": "Mẹ đã cưỡi nó qua trận cháy Pine Gulch. Chị không được bán nó."
+      },
+      {
+        "nguoi": "Nora",
+        "kieu": "nói trong video",
+        "en": "Let go. Mom isn't paying the bank, Eli. I am.",
+        "vi": "Buông ra. Mẹ đâu có trả nợ ngân hàng, Eli. Chị trả."
+      }
+    ],
+    "so_tu": 22
+  },
+  {
+    "clip_id": "RA-03",
+    "duration": 4,
+    "shot": "ECU",
+    "refs": [
+      "Juniper",
+      "Nora Body Ranch",
+      "Hale Ranch"
+    ],
+    "start_frame": "GENERATE_IMAGE + ảnh ref",
+    "hinh": "Mắt đen của Juniper; lấy nét sang tay Nora dừng lại sát mõm ngựa rồi rút về.",
+    "beat": "Cài cắm: ánh nhìn",
+    "thoai": [],
+    "so_tu": 0
+  },
+  {
+    "clip_id": "RA-04",
+    "duration": 6,
+    "shot": "MCU",
+    "refs": [
+      "Nora",
+      "Nora Body Ranch",
+      "Hale Ranch"
+    ],
+    "start_frame": "GENERATE_IMAGE + ảnh ref",
+    "hinh": "Máy nhắn tin ở thắt lưng Nora rung; cô đọc rồi nhìn cột khói.",
+    "beat": "Đặt đồng hồ đếm ngược",
+    "thoai": [
+      {
+        "nguoi": "Nora",
+        "kieu": "nói trong video",
+        "en": "All crews called in. It's moving. Eli, stay home today. I mean it.",
+        "vi": "Tất cả đội được gọi về. Nó đang lan. Eli, hôm nay ở nhà. Chị nói thật đấy."
+      }
+    ],
+    "so_tu": 13
+  },
+  {
+    "clip_id": "RA-05",
+    "duration": 6,
+    "shot": "OTS→Eli",
+    "refs": [
+      "Eli",
+      "Nora Body Ranch",
+      "Hale Ranch"
+    ],
+    "start_frame": "GENERATE_IMAGE + ảnh ref",
+    "hinh": "Qua vai Nora: Eli quay lưng đi về phía xe chở ngựa.",
+    "beat": "Cài cắm: \"giỏi bỏ đi\"",
+    "thoai": [
+      {
+        "nguoi": "Eli",
+        "kieu": "nói trong video",
+        "en": "Go, then. You're good at going. Mom went. Now you go too.",
+        "vi": "Đi đi. Chị giỏi bỏ đi lắm. Mẹ đã đi. Giờ chị cũng đi."
+      }
+    ],
+    "so_tu": 12
+  },
+  {
+    "clip_id": "RA-06",
+    "duration": 4,
+    "shot": "WS",
+    "refs": [
+      "Juniper",
+      "Hale Ranch"
+    ],
+    "start_frame": "GENERATE_IMAGE + ảnh ref",
+    "hinh": "Xe kéo của Keller rời sân; đầu ngựa xám quay lại qua khe song, hí lên.",
+    "beat": "Mất mát",
+    "thoai": [],
+    "so_tu": 0
+  },
+  {
+    "clip_id": "RA-07",
+    "duration": 8,
+    "shot": "MCU",
+    "refs": [
+      "Nora",
+      "Nora Body Fire",
+      "HALE Helmet",
+      "Nora Pickup"
+    ],
+    "start_frame": "GENERATE_IMAGE + ảnh ref",
+    "hinh": "Nora lái xe, áo chữa cháy vàng; mũ HALE cháy xém nằm ghế phụ; qua kính, cột khói đã thành mây lửa trắng khổng lồ.",
+    "beat": "Nhắc lại móc · tiền cược · cài cắm mũ, Keller Lane",
+    "thoai": [
+      {
+        "nguoi": "Dispatch",
+        "kieu": "lồng tiếng hậu kỳ",
+        "en": "Evacuation warning for Cedar Flat, Ridge Road and Keller Lane. Fire's making a run. All crews report to Division Alpha.",
+        "vi": "Cảnh báo sơ tán Cedar Flat, Ridge Road và Keller Lane. Lửa đang bùng chạy. Tất cả đội về Phân khu Alpha."
+      }
+    ],
+    "so_tu": 20
+  },
+  {
+    "clip_id": "RA-08",
+    "duration": 4,
+    "shot": "MS",
+    "refs": [
+      "Eli",
+      "Eli Pack",
+      "Hale Ranch"
+    ],
+    "start_frame": "GENERATE_IMAGE + ảnh ref",
+    "hinh": "Bên hàng rào, mắt nhìn khói, Eli nhét dây khớp mõm và dây dắt vào ba lô.",
+    "beat": "Cài cắm: dây khớp mõm",
+    "thoai": [],
+    "so_tu": 0
+  },
+  {
+    "clip_id": "RA-09",
+    "duration": 4,
+    "shot": "EWS",
+    "refs": [
+      "Eli",
+      "Eli Bike",
+      "Eli Pack",
+      "Hale Ranch"
+    ],
+    "start_frame": "GENERATE_IMAGE + ảnh ref",
+    "hinh": "Eli đạp xe đi, trái sang phải, về phía khói.",
+    "beat": "Eli lên đường",
+    "thoai": [],
+    "so_tu": 0
+  },
+  {
+    "clip_id": "FL-01",
+    "duration": 8,
+    "shot": "WS",
+    "refs": [
+      "Ray",
+      "Fire Line"
+    ],
+    "start_frame": "GENERATE_IMAGE + ảnh ref",
+    "hinh": "Đội áo vàng trên sườn khô; mây lửa trắng sau lưng; Ray (mũ trắng) chỉ về sườn đồi đã cháy đen xa xa.",
+    "beat": "Tiền cược · cài cắm vùng đã cháy",
+    "thoai": [
+      {
+        "nguoi": "Ray",
+        "kieu": "nói trong video",
+        "en": "Wind's twenty and climbing. Town's four miles back. We hold here. Fire goes wrong, get in the black above Keller's.",
+        "vi": "Gió hai mươi và đang mạnh lên. Thị trấn cách bốn dặm. Ta giữ ở đây. Lửa trở chứng thì vào vùng đã cháy phía trên nhà Keller."
+      }
+    ],
+    "so_tu": 20
+  },
+  {
+    "clip_id": "FL-02",
+    "duration": 6,
+    "shot": "MCU",
+    "refs": [
+      "Nora",
+      "Nora Body Fire",
+      "Crew Helmet",
+      "Fire Line"
+    ],
+    "start_frame": "GENERATE_IMAGE + ảnh ref",
+    "hinh": "Nora bấm khóa túi lều chống cháy ở thắt lưng, liếc sang một lính mới ngoài khung.",
+    "beat": "Cài cắm: lều chống cháy, mẹ",
+    "thoai": [
+      {
+        "nguoi": "rookie",
+        "kieu": "lồng tiếng hậu kỳ",
+        "en": "You ever had to deploy one of those?",
+        "vi": "Chị từng phải bung cái đó chưa?"
+      },
+      {
+        "nguoi": "Nora",
+        "kieu": "nói trong video",
+        "en": "No. My mother did. Once.",
+        "vi": "Chưa. Mẹ tôi thì có. Một lần."
+      }
+    ],
+    "so_tu": 13
+  },
+  {
+    "clip_id": "FL-04",
+    "duration": 6,
+    "shot": "WS",
+    "refs": [
+      "Ray",
+      "Fire Line"
+    ],
+    "start_frame": "GENERATE_IMAGE + ảnh ref",
+    "hinh": "Bão tàn lửa thổi ngang qua đội đang phát đường băng; Ray đập tắt chỗ cháy âm ỉ trên ba lô một lính mới.",
+    "beat": "Nhắc lại móc · bão tàn lửa",
+    "thoai": [
+      {
+        "nguoi": "Ray",
+        "kieu": "nói trong video",
+        "en": "Embers! Check your partner's back! Keep cutting, keep moving, don't stop now!",
+        "vi": "Tàn lửa! Kiểm tra lưng đồng đội! Cứ cắt, cứ đi, đừng dừng lại!"
+      }
+    ],
+    "so_tu": 12
+  },
+  {
+    "clip_id": "EL-01",
+    "duration": 6,
+    "shot": "MS head-on",
+    "refs": [
+      "Eli",
+      "Eli Bike",
+      "Eli Pack",
+      "Ridge Road"
+    ],
+    "start_frame": "GENERATE_IMAGE + ảnh ref",
+    "hinh": "Eli đạp xe hết sức lên đường sỏi giữa rừng thông khô, thẳng về phía máy quay; dây khớp mõm lủng lẳng ở ba lô.",
+    "beat": "Cắt xen · hiểm nguy bắt đầu",
+    "thoai": [],
+    "so_tu": 0
+  },
+  {
+    "clip_id": "EL-02",
+    "duration": 6,
+    "shot": "EWS",
+    "refs": [
+      "Eli",
+      "Eli Bike",
+      "Ridge Road"
+    ],
+    "start_frame": "GENERATE_IMAGE + ảnh ref",
+    "hinh": "Eli nhấc xe qua rào chắn đường, đạp vào khói; xa phía sau một người đàn ông cạnh xe bán tải vẫy hai tay.",
+    "beat": "Cài cắm: Walt đã thấy nó",
+    "thoai": [
+      {
+        "nguoi": "Walt",
+        "kieu": "lồng tiếng hậu kỳ",
+        "en": "Hey! Eli Hale! That road's closed! Get back here right now, son!",
+        "vi": "Này! Eli Hale! Đường đó đóng rồi! Quay lại đây ngay, con!"
+      }
+    ],
+    "so_tu": 12
+  },
+  {
+    "clip_id": "FL-05",
+    "duration": 4,
+    "shot": "2S MS",
+    "refs": [
+      "Ray",
+      "Nora",
+      "Nora Body Fire",
+      "Crew Helmet",
+      "Fire Line"
+    ],
+    "start_frame": "GENERATE_IMAGE + ảnh ref",
+    "hinh": "Ray (trái khung) trao đuốc nhỏ giọt cho Nora (phải khung); Nora nhận, gật một cái, không nói.",
+    "beat": "Kế hoạch: đốt chặn",
+    "thoai": [
+      {
+        "nguoi": "Ray",
+        "kieu": "nói trong video",
+        "en": "Hale, torch. Burn it before it gets here.",
+        "vi": "Hale, đuốc. Đốt nó trước khi nó tới đây."
+      }
+    ],
+    "so_tu": 8
+  },
+  {
+    "clip_id": "FL-06",
+    "duration": 4,
+    "shot": "ECU",
+    "refs": [
+      "Nora Body Fire",
+      "Fire Line"
+    ],
+    "start_frame": "GENERATE_IMAGE + ảnh ref",
+    "hinh": "Đuốc nhỏ giọt rải một vệt lửa vào cỏ khô, trái sang phải.",
+    "beat": "Lấy lửa trị lửa",
+    "thoai": [],
+    "so_tu": 0
+  },
+  {
+    "clip_id": "FL-07",
+    "duration": 6,
+    "shot": "MCU",
+    "refs": [
+      "Nora",
+      "Nora Body Fire",
+      "Crew Helmet",
+      "Fire Line"
+    ],
+    "start_frame": "GENERATE_IMAGE + ảnh ref",
+    "hinh": "Nora cầm đuốc đi dọc đường băng, trả lời một lính mới ngoài khung.",
+    "beat": "Cài cắm: \"không cháy hai lần\"",
+    "thoai": [
+      {
+        "nguoi": "rookie",
+        "kieu": "lồng tiếng hậu kỳ",
+        "en": "We're lighting more fire?",
+        "vi": "Mình đang đốt thêm lửa à?"
+      },
+      {
+        "nguoi": "Nora",
+        "kieu": "nói trong video",
+        "en": "Burn the fuel before it does. The black can't burn twice.",
+        "vi": "Đốt hết chất cháy trước khi nó đốt. Chỗ đã cháy thì không cháy lần hai."
+      }
+    ],
+    "so_tu": 15
+  },
+  {
+    "clip_id": "EL-07",
+    "duration": 6,
+    "shot": "WS",
+    "refs": [
+      "Eli",
+      "Eli Bike",
+      "Eli Pack",
+      "Ridge Road"
+    ],
+    "start_frame": "GENERATE_IMAGE + ảnh ref",
+    "hinh": "Eli đạp xe trái sang phải xuyên qua mưa tàn lửa; đám cháy nhỏ bùng lên bên đường, cậu lạng tay lái rồi vẫn đạp vào khói.",
+    "beat": "Cắt xen · cậu đang lao vào lửa",
+    "thoai": [],
+    "so_tu": 0
+  },
+  {
+    "clip_id": "FL-08",
+    "duration": 8,
+    "shot": "EWS long lens",
+    "refs": [
+      "Fire Line"
+    ],
+    "start_frame": "GENERATE_IMAGE (không người)",
+    "hinh": "Ống kính dài, hơi nóng uốn lượn: lửa đốt chặn chạy lên dốc gặp đám cháy tán từ hẻm núi xuống; hai bức tường lửa gặp nhau, vút lên thành một cột.",
+    "beat": "Nhắc lại móc · hai bức tường lửa gặp nhau",
+    "thoai": [],
+    "so_tu": 0
+  },
+  {
+    "clip_id": "FL-09",
+    "duration": 4,
+    "shot": "WS low angle",
+    "refs": [
+      "Fire Line"
+    ],
+    "start_frame": "GENERATE_IMAGE (không người)",
+    "hinh": "Lốc lửa xoáy lên từ mép vùng đốt chặn.",
+    "beat": "Leo thang",
+    "thoai": [],
+    "so_tu": 0
+  },
+  {
+    "clip_id": "FL-10",
+    "duration": 6,
+    "shot": "MS",
+    "refs": [
+      "Ray",
+      "Fire Line"
+    ],
+    "start_frame": "GENERATE_IMAGE + ảnh ref",
+    "hinh": "Ray đẩy đội lùi khỏi mép lửa khi hơi nóng phả vào mặt.",
+    "beat": "Hiểm nguy",
+    "thoai": [
+      {
+        "nguoi": "Ray",
+        "kieu": "nói trong video",
+        "en": "Whirl! Back off the edge! Everybody back! Hale, kill the torch, now!",
+        "vi": "Lốc lửa! Lùi khỏi mép! Tất cả lùi lại! Hale, tắt đuốc, ngay!"
+      }
+    ],
+    "so_tu": 12
+  },
+  {
+    "clip_id": "FL-11",
+    "duration": 4,
+    "shot": "EWS",
+    "refs": [
+      "Fire Line"
+    ],
+    "start_frame": "GENERATE_IMAGE (không người)",
+    "hinh": "Máy bay chữa cháy đỏ rải mây chất chống cháy đỏ lên sườn đồi trên đầu đội.",
+    "beat": "Cảnh hoành tráng",
+    "thoai": [],
+    "so_tu": 0
+  },
+  {
+    "clip_id": "FL-12",
+    "duration": 6,
+    "shot": "MS",
+    "refs": [
+      "Nora",
+      "Nora Body Fire",
+      "Crew Helmet",
+      "Fire Line"
+    ],
+    "start_frame": "GENERATE_IMAGE + ảnh ref",
+    "hinh": "Nora ướt sũng chất chống cháy hồng, vừa ho vừa bật cười; cả đội cười theo.",
+    "beat": "Điểm giữa · chiến thắng giả",
+    "thoai": [
+      {
+        "nguoi": "crew",
+        "kieu": "lồng tiếng hậu kỳ",
+        "en": "Hey, Hale, you're pink!",
+        "vi": "Ê, Hale, cô hồng rồi kìa!"
+      },
+      {
+        "nguoi": "Nora",
+        "kieu": "nói trong video",
+        "en": "Put it on my tab. The bank takes anything.",
+        "vi": "Ghi vào nợ của tôi. Ngân hàng nhận hết."
+      }
+    ],
+    "so_tu": 13
+  },
+  {
+    "clip_id": "MP-01",
+    "duration": 4,
+    "shot": "ECU",
+    "refs": [
+      "Fire Line"
+    ],
+    "start_frame": "GENERATE_IMAGE (không người)",
+    "hinh": "Cỏ khô trên sườn đồi đột ngột rạp về hướng ngược lại.",
+    "beat": "Bước ngoặt",
+    "thoai": [],
+    "so_tu": 0
+  },
+  {
+    "clip_id": "MP-02",
+    "duration": 4,
+    "shot": "MCU",
+    "refs": [
+      "Nora",
+      "Nora Body Fire",
+      "Crew Helmet",
+      "Fire Line"
+    ],
+    "start_frame": "GENERATE_IMAGE + ảnh ref",
+    "hinh": "Nora quay sang Ray ngoài khung, chỉ xuống cỏ.",
+    "beat": "Cô thấy trước",
+    "thoai": [
+      {
+        "nguoi": "Nora",
+        "kieu": "nói trong video",
+        "en": "Cap. The grass. It's laying down uphill.",
+        "vi": "Đội trưởng. Cỏ. Nó đang rạp lên dốc."
+      }
+    ],
+    "so_tu": 7
+  },
+  {
+    "clip_id": "MP-03",
+    "duration": 8,
+    "shot": "EWS",
+    "refs": [
+      "Ray",
+      "Fire Line"
+    ],
+    "start_frame": "GENERATE_IMAGE + ảnh ref",
+    "hinh": "Cột lửa nghiêng; tàn lửa bay qua đỉnh xuống thung lũng sau lưng đội.",
+    "beat": "Nhắc lại móc · lửa vượt sườn",
+    "thoai": [
+      {
+        "nguoi": "Ray",
+        "kieu": "nói trong video",
+        "en": "She's spotting over the top! Packs on, tools up! Everybody to the trucks, now! Lookouts, you're last off!",
+        "vi": "Nó bắn tàn qua đỉnh! Đeo ba lô, cầm dụng cụ! Tất cả về xe, ngay! Trinh sát, các cậu rút cuối!"
+      }
+    ],
+    "so_tu": 18
+  },
+  {
+    "clip_id": "MP-04",
+    "duration": 6,
+    "shot": "Track handheld",
+    "refs": [
+      "Nora",
+      "Nora Body Fire",
+      "Crew Helmet",
+      "Fire Line"
+    ],
+    "start_frame": "GENERATE_IMAGE + ảnh ref",
+    "hinh": "Đội chạy xuống dốc dọc đường băng, đám cháy lẻ bùng lên hai bên.",
+    "beat": "Tháo chạy",
+    "thoai": [],
+    "so_tu": 0
+  },
+  {
+    "clip_id": "FL-13",
+    "duration": 6,
+    "shot": "MS",
+    "refs": [
+      "Nora",
+      "Nora Body Fire",
+      "Crew Helmet",
+      "Fire Line"
+    ],
+    "start_frame": "GENERATE_IMAGE + ảnh ref",
+    "hinh": "Một lính mới quay lại nhặt cưa rơi; Nora túm quai ba lô kéo cậu lại.",
+    "beat": "Cài cắm: luật (tên phim)",
+    "thoai": [
+      {
+        "nguoi": "Nora",
+        "kieu": "nói trong video",
+        "en": "Leave it! You never go back on a fire. Not for anything.",
+        "vi": "Bỏ nó! Không bao giờ quay lại đám cháy. Không vì bất cứ thứ gì."
+      }
+    ],
+    "so_tu": 12
+  },
+  {
+    "clip_id": "MP-05",
+    "duration": 6,
+    "shot": "EWS",
+    "refs": [
+      "Staging Area"
+    ],
+    "start_frame": "GENERATE_IMAGE (không người)",
+    "hinh": "Ống kính tele xa: đoàn xe cứu hỏa chạy phải sang trái; trên sườn núi lửa chạy cùng hướng và vượt lên trước đoàn xe.",
+    "beat": "Rút lui · lửa nhanh hơn họ",
+    "thoai": [],
+    "so_tu": 0
+  },
+  {
+    "clip_id": "EL-03",
+    "duration": 6,
+    "shot": "WS",
+    "refs": [
+      "Eli",
+      "Eli Bike",
+      "Eli Pack",
+      "Keller Barn"
+    ],
+    "start_frame": "GENERATE_IMAGE + ảnh ref",
+    "hinh": "Eli thả xe ở cổng nhà Keller; sân trống, chuồng đỏ; tàn lửa bay qua.",
+    "beat": "Một mình",
+    "thoai": [
+      {
+        "nguoi": "Eli",
+        "kieu": "nói trong video",
+        "en": "Mr. Keller? It's Eli Hale! I'm here to buy her back! I've got forty dollars!",
+        "vi": "Ông Keller? Cháu là Eli Hale! Cháu đến mua lại nó! Cháu có bốn mươi đô!"
+      }
+    ],
+    "so_tu": 15
+  },
+  {
+    "clip_id": "EL-04",
+    "duration": 4,
+    "shot": "ECU",
+    "refs": [
+      "Keller Barn"
+    ],
+    "start_frame": "GENERATE_IMAGE (không người)",
+    "hinh": "Xe chở ngựa trống, dốc lõm vết đá móng; sợi dây đứt đung đưa ở vòng buộc.",
+    "beat": "Vì sao nó bị bỏ lại",
+    "thoai": [],
+    "so_tu": 0
+  },
+  {
+    "clip_id": "EL-05",
+    "duration": 6,
+    "shot": "MCU",
+    "refs": [
+      "Eli",
+      "Juniper",
+      "Keller Barn"
+    ],
+    "start_frame": "GENERATE_IMAGE + ảnh ref",
+    "hinh": "Trong chuồng tối, Eli (trái khung) áp trán vào mặt ngựa; bên phải, khói luồn vào dưới cửa sau lưng cậu.",
+    "beat": "Hiểm nguy dâng lên",
+    "thoai": [
+      {
+        "nguoi": "Eli",
+        "kieu": "nói trong video",
+        "en": "Hey, girl. Hey. I told you. I told you I'd come back.",
+        "vi": "Này, bé. Này. Anh bảo rồi mà. Anh bảo là anh sẽ quay lại."
+      }
+    ],
+    "so_tu": 12
+  },
+  {
+    "clip_id": "EL-06",
+    "duration": 6,
+    "shot": "CU",
+    "refs": [
+      "Eli",
+      "Keller Barn"
+    ],
+    "start_frame": "GENERATE_IMAGE + ảnh ref",
+    "hinh": "Eli áp máy vào tai để lại tin nhắn, mắt nhìn khói dưới cửa; cuối clip có tiếng đổ sập, ngựa hí thét, Eli quay phắt lại.",
+    "beat": "Móc giữ chân · tin nhắn bị cắt ngang",
+    "thoai": [
+      {
+        "nguoi": "Eli",
+        "kieu": "nói trong video",
+        "en": "Nora, it's me. I'm at Keller's. Don't be mad. I couldn't leave—",
+        "vi": "Chị Nora, em đây. Em ở nhà Keller. Đừng giận. Em không bỏ nó được—"
+      }
+    ],
+    "so_tu": 12
+  },
+  {
+    "clip_id": "EM-01",
+    "duration": 6,
+    "shot": "WS",
+    "refs": [
+      "Ray",
+      "Staging Area"
+    ],
+    "start_frame": "GENERATE_IMAGE + ảnh ref",
+    "hinh": "Bãi tập kết, xe đội nổ máy; bộ đàm trên ngực Ray rè lên; Nora đứng cạnh xe phía sau.",
+    "beat": "Nhắc lại móc · Eli mất tích",
+    "thoai": [
+      {
+        "nguoi": "Walt",
+        "kieu": "lồng tiếng hậu kỳ",
+        "en": "Walt Pruitt, county volunteers. Hale boy with you? He biked up Ridge Road at four.",
+        "vi": "Walt Pruitt, đội tình nguyện hạt. Thằng bé nhà Hale có đi với anh không? Nó đạp xe lên Ridge Road lúc bốn giờ."
+      }
+    ],
+    "so_tu": 15
+  },
+  {
+    "clip_id": "EM-02",
+    "duration": 4,
+    "shot": "CU",
+    "refs": [
+      "Nora",
+      "Nora Body Fire",
+      "Crew Helmet",
+      "Staging Area"
+    ],
+    "start_frame": "GENERATE_IMAGE + ảnh ref",
+    "hinh": "Nora, mặt đầy muội và vệt hồng, khựng lại tay trên cửa xe.",
+    "beat": "Sốc",
+    "thoai": [],
+    "so_tu": 0
+  },
+  {
+    "clip_id": "EM-03",
+    "duration": 8,
+    "shot": "MS",
+    "refs": [
+      "Nora",
+      "Nora Body Fire",
+      "Crew Helmet",
+      "Staging Area"
+    ],
+    "start_frame": "GENERATE_IMAGE + ảnh ref",
+    "hinh": "Nora sải bước tới Ray, giật bộ đàm trên ngực ông.",
+    "beat": "Tiền cược",
+    "thoai": [
+      {
+        "nguoi": "Nora",
+        "kieu": "nói trong video",
+        "en": "Walt, it's Nora. Which way was he headed?",
+        "vi": "Walt, Nora đây. Nó đi hướng nào?"
+      },
+      {
+        "nguoi": "Walt",
+        "kieu": "lồng tiếng hậu kỳ",
+        "en": "Keller's place. Had a halter and rope over his shoulder.",
+        "vi": "Nhà Keller. Vai đeo dây khớp mõm với dây dắt."
+      }
+    ],
+    "so_tu": 18
+  },
+  {
+    "clip_id": "EM-04",
+    "duration": 4,
+    "shot": "ECU",
+    "refs": [
+      "Nora",
+      "Nora Body Fire",
+      "Crew Helmet"
+    ],
+    "start_frame": "GENERATE_IMAGE + ảnh ref",
+    "hinh": "Mắt Nora hướng về sườn đồi đang cháy.",
+    "beat": "Quyết định đang hình thành",
+    "thoai": [],
+    "so_tu": 0
+  },
+  {
+    "clip_id": "CH-01",
+    "duration": 8,
+    "shot": "OTS→Ray low angle",
+    "refs": [
+      "Ray",
+      "Nora Body Fire",
+      "Staging Area"
+    ],
+    "start_frame": "GENERATE_IMAGE + ảnh ref",
+    "hinh": "Qua vai Nora: Ray (trái khung) bước chắn trước cửa xe cô.",
+    "beat": "Đối thủ của lựa chọn · lương là căn nhà",
+    "thoai": [
+      {
+        "nguoi": "Ray",
+        "kieu": "nói trong video",
+        "en": "Nora. Truck's not getting past the switchbacks. You go up there tonight, I lose two Hales. And you're off my crew.",
+        "vi": "Nora. Xe không qua nổi mấy khúc cua đâu. Tối nay cô lên đó, tôi mất hai người nhà Hale. Và cô ra khỏi đội tôi."
+      }
+    ],
+    "so_tu": 21
+  },
+  {
+    "clip_id": "CH-02",
+    "duration": 4,
+    "shot": "CU 85mm",
+    "refs": [
+      "Nora",
+      "Nora Body Fire",
+      "Crew Helmet",
+      "Staging Area"
+    ],
+    "start_frame": "GENERATE_IMAGE + ảnh ref",
+    "hinh": "Nora nhìn thẳng, không chớp mắt.",
+    "beat": "Lựa chọn",
+    "thoai": [
+      {
+        "nguoi": "Nora",
+        "kieu": "nói trong video",
+        "en": "Move, Ray. I'm not asking twice.",
+        "vi": "Tránh ra, Ray. Tôi không nói lần hai."
+      }
+    ],
+    "so_tu": 6
+  },
+  {
+    "clip_id": "CH-03",
+    "duration": 6,
+    "shot": "OTS→Ray dolly-in",
+    "refs": [
+      "Ray",
+      "Nora Body Fire",
+      "Staging Area"
+    ],
+    "start_frame": "GENERATE_IMAGE + ảnh ref",
+    "hinh": "Máy đẩy chậm vào Ray qua vai Nora; giọng ông trầm xuống.",
+    "beat": "Tiết lộ",
+    "thoai": [
+      {
+        "nguoi": "Ray",
+        "kieu": "nói trong video",
+        "en": "Nine years ago your mother said that to me. Same two words. Move, Ray.",
+        "vi": "Chín năm trước mẹ cô cũng nói với tôi câu đó. Đúng mấy chữ đó. Tránh ra, Ray."
+      }
+    ],
+    "so_tu": 14
+  },
+  {
+    "clip_id": "CH-04",
+    "duration": 4,
+    "shot": "ECU",
+    "refs": [
+      "Nora Body Fire",
+      "Ray"
+    ],
+    "start_frame": "GENERATE_IMAGE + ảnh ref",
+    "hinh": "Nora ấn bộ đàm của mình vào lòng bàn tay Ray; ngón tay ông khép lại.",
+    "beat": "Cắt dây liên lạc",
+    "thoai": [],
+    "so_tu": 0
+  },
+  {
+    "clip_id": "CH-05",
+    "duration": 6,
+    "shot": "OTS→Nora",
+    "refs": [
+      "Nora",
+      "Nora Body Fire",
+      "Crew Helmet",
+      "Nora Pickup",
+      "Staging Area"
+    ],
+    "start_frame": "GENERATE_IMAGE + ảnh ref",
+    "hinh": "Qua vai Ray: Nora bước vòng qua ông, giật cửa xe, ngoái lại.",
+    "beat": "Lời hứa",
+    "thoai": [
+      {
+        "nguoi": "Nora",
+        "kieu": "nói trong video",
+        "en": "Then hang on to this. I'm coming back for it. With him.",
+        "vi": "Vậy giữ cái này. Tôi sẽ quay lại lấy. Cùng với nó."
+      }
+    ],
+    "so_tu": 12
+  },
+  {
+    "clip_id": "CH-06",
+    "duration": 4,
+    "shot": "WS",
+    "refs": [
+      "Ray",
+      "Staging Area"
+    ],
+    "start_frame": "GENERATE_IMAGE + ảnh ref",
+    "hinh": "Cửa xe đóng sầm; Ray hét theo.",
+    "beat": "Mệnh lệnh bị phá",
+    "thoai": [
+      {
+        "nguoi": "Ray",
+        "kieu": "nói trong video",
+        "en": "Hale! Get out of that truck! Nora!",
+        "vi": "Hale! Ra khỏi xe! Nora!"
+      }
+    ],
+    "so_tu": 7
+  },
+  {
+    "clip_id": "CH-07",
+    "duration": 6,
+    "shot": "EWS high angle",
+    "refs": [
+      "Ray",
+      "Nora Pickup",
+      "Staging Area"
+    ],
+    "start_frame": "GENERATE_IMAGE + ảnh ref",
+    "hinh": "Góc cao: xe bán tải lao đi trái sang phải về sườn đồi cháy; Ray đứng một mình trong bụi.",
+    "beat": "Đoạn tuyệt",
+    "thoai": [],
+    "so_tu": 0
+  },
+  {
+    "clip_id": "CH-09",
+    "duration": 6,
+    "shot": "MCU",
+    "refs": [
+      "Ray",
+      "Staging Area"
+    ],
+    "start_frame": "GENERATE_IMAGE + ảnh ref",
+    "hinh": "Ray nâng bộ đàm của mình, mắt nhìn sườn đồi.",
+    "beat": "Ray che chở cô (L-cut sang RR-01)",
+    "thoai": [
+      {
+        "nguoi": "Ray",
+        "kieu": "nói trong video",
+        "en": "Dispatch, Duran. One of mine is past the closure on Ridge Road. Hale.",
+        "vi": "Điều phối, Duran đây. Một người của tôi đã qua chốt chặn trên Ridge Road. Hale."
+      }
+    ],
+    "so_tu": 13
+  },
+  {
+    "clip_id": "RR-01",
+    "duration": 8,
+    "shot": "EWS",
+    "refs": [
+      "Nora Pickup",
+      "Ridge Road"
+    ],
+    "start_frame": "GENERATE_IMAGE (không người)",
+    "hinh": "Xe bán tải nhỏ leo đường sỏi trái sang phải giữa hai hàng thông đang cháy; tàn lửa bay ngang đường.",
+    "beat": "Nhắc lại móc · vào đám cháy",
+    "thoai": [],
+    "so_tu": 0
+  },
+  {
+    "clip_id": "RR-02",
+    "duration": 4,
+    "shot": "WS",
+    "refs": [
+      "Ridge Road"
+    ],
+    "start_frame": "GENERATE_IMAGE (không người)",
+    "hinh": "Trong đèn pha, một cây thông đang cháy đổ chắn ngang đường.",
+    "beat": "Bị chặn",
+    "thoai": [],
+    "so_tu": 0
+  },
+  {
+    "clip_id": "RR-04",
+    "duration": 6,
+    "shot": "MCU passenger side",
+    "refs": [
+      "Nora",
+      "Nora Body Fire",
+      "Nora Pickup"
+    ],
+    "start_frame": "GENERATE_IMAGE + ảnh ref",
+    "hinh": "Từ ghế phụ của xe đang dừng: Nora áp máy vào tai; hơi thở khựng lại; khớp tay trắng bệch trên vô lăng.",
+    "beat": "Tin nhắn đến tai · thông tin mới",
+    "thoai": [],
+    "so_tu": 0
+  },
+  {
+    "clip_id": "RR-06",
+    "duration": 4,
+    "shot": "CU",
+    "refs": [
+      "Nora",
+      "Nora Body Fire",
+      "HALE Helmet",
+      "Nora Pickup"
+    ],
+    "start_frame": "GENERATE_IMAGE + ảnh ref",
+    "hinh": "Nora chộp mũ HALE trên ghế phụ, đội lên và cài quai trong một động tác.",
+    "beat": "Đạo cụ trả nợ · trở thành mẹ",
+    "thoai": [],
+    "so_tu": 0
+  },
+  {
+    "clip_id": "RR-07",
+    "duration": 6,
+    "shot": "MS",
+    "refs": [
+      "Nora",
+      "Nora Body Fire",
+      "HALE Helmet",
+      "Nora Pickup",
+      "Ridge Road"
+    ],
+    "start_frame": "GENERATE_IMAGE + ảnh ref",
+    "hinh": "Nora bước ra khỏi xe vào gió nóng, để cửa mở, kéo kính bảo hộ xuống; bộ đàm trong xe rè lên.",
+    "beat": "Nguồn của hook",
+    "thoai": [
+      {
+        "nguoi": "Ray",
+        "kieu": "lồng tiếng hậu kỳ",
+        "en": "Hale, answer me. The whole ridge is going up. Nora, turn around.",
+        "vi": "Hale, trả lời tôi. Cả sườn núi đang cháy. Nora, quay lại đi."
+      }
+    ],
+    "so_tu": 12
+  },
+  {
+    "clip_id": "RR-08",
+    "duration": 6,
+    "shot": "Track handheld-leading",
+    "refs": [
+      "Nora",
+      "Nora Body Fire",
+      "HALE Helmet",
+      "Ridge Road"
+    ],
+    "start_frame": "GENERATE_IMAGE + ảnh ref",
+    "hinh": "Nora chạy bộ trái sang phải lên con đường đầy khói; lửa leo trên rặng thông phía sau.",
+    "beat": "Thử thách",
+    "thoai": [],
+    "so_tu": 0
+  },
+  {
+    "clip_id": "LH-01",
+    "duration": 6,
+    "shot": "EWS",
+    "refs": [
+      "Cedar Flat"
+    ],
+    "start_frame": "GENERATE_IMAGE (không người)",
+    "hinh": "Ban đêm, ống kính tele: đèn xe sơ tán chảy thành dòng phải sang trái ra khỏi thị trấn nhỏ; trên mái nhà, sườn núi đỏ rực.",
+    "beat": "Móc giữ chân · tuyến phụ · thị trấn là mục tiêu kế tiếp",
+    "thoai": [
+      {
+        "nguoi": "Dispatch",
+        "kieu": "lồng tiếng hậu kỳ",
+        "en": "All units, Cedar Flat is now mandatory evacuation. Fire is two miles out.",
+        "vi": "Tất cả đơn vị, Cedar Flat giờ sơ tán bắt buộc. Lửa còn cách hai dặm."
+      }
+    ],
+    "so_tu": 13
+  },
+  {
+    "clip_id": "LH-02",
+    "duration": 6,
+    "shot": "MS low angle",
+    "refs": [
+      "Ray",
+      "Cedar Flat"
+    ],
+    "start_frame": "GENERATE_IMAGE + ảnh ref",
+    "hinh": "Góc thấp: Ray (mũ trắng) đứng trên đường ủi đất mới giữa những căn nhà cuối và bụi khô; đội đào phía sau.",
+    "beat": "Tiền cược của Ray",
+    "thoai": [
+      {
+        "nguoi": "Ray",
+        "kieu": "nói trong video",
+        "en": "Last line. Behind us, a school and three hundred homes. Nobody leaves.",
+        "vi": "Tuyến cuối. Sau lưng ta là một trường học và ba trăm căn nhà. Không ai rời đi."
+      }
+    ],
+    "so_tu": 12
+  },
+  {
+    "clip_id": "LH-03",
+    "duration": 4,
+    "shot": "ECU",
+    "refs": [
+      "Ray",
+      "Cedar Flat"
+    ],
+    "start_frame": "GENERATE_IMAGE + ảnh ref",
+    "hinh": "Cận cực: hai bộ đàm trên ngực Ray, của anh và của Nora; ngón cái anh đặt lên bộ của cô.",
+    "beat": "Anh đang giữ lời hứa thay cô",
+    "thoai": [],
+    "so_tu": 0
+  },
+  {
+    "clip_id": "LH-04",
+    "duration": 6,
+    "shot": "MS",
+    "refs": [
+      "Cedar Flat"
+    ],
+    "start_frame": "GENERATE_IMAGE (không người)",
+    "hinh": "Ven thị trấn, lính cứu hỏa trên thang xịt nước lên mái gỗ đang bốc khói giữa mưa tàn lửa; dưới sân trống một con chó sủa.",
+    "beat": "Áp lực lên thị trấn",
+    "thoai": [],
+    "so_tu": 0
+  },
+  {
+    "clip_id": "RR-13",
+    "duration": 6,
+    "shot": "WS low angle",
+    "refs": [
+      "Nora",
+      "Nora Body Fire",
+      "HALE Helmet",
+      "Ridge Road"
+    ],
+    "start_frame": "GENERATE_IMAGE + ảnh ref",
+    "hinh": "Lửa cháy tán trên đầu; một cành cháy rơi sập ngay trước mặt, Nora nằm rạp xuống rồi bật dậy chạy tiếp.",
+    "beat": "Cảnh hoành tráng · suýt chết",
+    "thoai": [],
+    "so_tu": 0
+  },
+  {
+    "clip_id": "RR-14",
+    "duration": 4,
+    "shot": "ECU",
+    "refs": [
+      "Nora Body Fire",
+      "Ridge Road"
+    ],
+    "start_frame": "GENERATE_IMAGE + ảnh ref",
+    "hinh": "Cận cực: bàn tay đeo găng của Nora phủi tro trên đường, lộ ra vệt bánh xe đạp mảnh dẫn lên dốc.",
+    "beat": "Manh mối · em đã đi đường này",
+    "thoai": [],
+    "so_tu": 0
+  },
+  {
+    "clip_id": "RR-10",
+    "duration": 4,
+    "shot": "CU low angle",
+    "refs": [
+      "Eli Bike",
+      "Keller Barn"
+    ],
+    "start_frame": "GENERATE_IMAGE (không người)",
+    "hinh": "Xe đạp của Eli nằm ở cổng nhà Keller, bánh trước vẫn còn quay.",
+    "beat": "Nhắc lại móc · bằng chứng",
+    "thoai": [],
+    "so_tu": 0
+  },
+  {
+    "clip_id": "RR-11",
+    "duration": 6,
+    "shot": "MS",
+    "refs": [
+      "Nora",
+      "Nora Body Fire",
+      "HALE Helmet",
+      "Keller Barn"
+    ],
+    "start_frame": "GENERATE_IMAGE + ảnh ref",
+    "hinh": "Nora đứng ở cổng gào vào màn khói.",
+    "beat": "Tìm kiếm",
+    "thoai": [
+      {
+        "nguoi": "Nora",
+        "kieu": "nói trong video",
+        "en": "Eli! Eli Hale! I got your message! I'm not mad! I'm not mad!",
+        "vi": "Eli! Eli Hale! Chị nhận được tin nhắn rồi! Chị không giận! Chị không giận!"
+      }
+    ],
+    "so_tu": 13
+  },
+  {
+    "clip_id": "RR-12",
+    "duration": 4,
+    "shot": "WS",
+    "refs": [
+      "Nora",
+      "Nora Body Fire",
+      "HALE Helmet",
+      "Keller Barn"
+    ],
+    "start_frame": "GENERATE_IMAGE + ảnh ref",
+    "hinh": "Tiếng ngựa thét; Nora quay phắt lại; mái chuồng đỏ hiện qua khói.",
+    "beat": "Tìm thấy",
+    "thoai": [],
+    "so_tu": 0
+  },
+  {
+    "clip_id": "BN-01",
+    "duration": 8,
+    "shot": "EWS",
+    "refs": [
+      "Nora",
+      "Nora Body Fire",
+      "HALE Helmet",
+      "Keller Barn"
+    ],
+    "start_frame": "GENERATE_IMAGE + ảnh ref",
+    "hinh": "Khói cuộn trên mái chuồng đỏ; Nora chạy trái sang phải băng qua sân, lao vào cửa.",
+    "beat": "Đến nơi",
+    "thoai": [],
+    "so_tu": 0
+  },
+  {
+    "clip_id": "BN-02",
+    "duration": 6,
+    "shot": "MS",
+    "refs": [
+      "Eli",
+      "Eli Pack",
+      "Juniper",
+      "Keller Barn"
+    ],
+    "start_frame": "GENERATE_IMAGE + ảnh ref",
+    "hinh": "Trong chuồng, Eli giật nút dây buộc, tay kia cầm dây khớp mõm, con ngựa xoay và chồm lên.",
+    "beat": "Hiểm nguy",
+    "thoai": [
+      {
+        "nguoi": "Eli",
+        "kieu": "nói trong video",
+        "en": "Easy, girl! I'll give you all my apples! Just hold still! Please!",
+        "vi": "Bình tĩnh, bé ơi! Cho bé hết táo của anh! Đứng yên đi! Xin đấy!"
+      }
+    ],
+    "so_tu": 12
+  },
+  {
+    "clip_id": "BN-03",
+    "duration": 4,
+    "shot": "MCU",
+    "refs": [
+      "Nora",
+      "Nora Body Fire",
+      "HALE Helmet",
+      "Keller Barn"
+    ],
+    "start_frame": "GENERATE_IMAGE + ảnh ref",
+    "hinh": "Nora đẩy kính lên, túm vai Eli xoay cậu lại.",
+    "beat": "Mệnh lệnh",
+    "thoai": [
+      {
+        "nguoi": "Nora",
+        "kieu": "nói trong video",
+        "en": "Drop the rope. We're leaving. Right now.",
+        "vi": "Bỏ dây ra. Mình đi. Ngay bây giờ."
+      }
+    ],
+    "so_tu": 7
+  },
+  {
+    "clip_id": "BN-04",
+    "duration": 8,
+    "shot": "2S profile",
+    "refs": [
+      "Eli",
+      "Nora",
+      "Nora Body Fire",
+      "HALE Helmet",
+      "Juniper",
+      "Keller Barn"
+    ],
+    "start_frame": "GENERATE_IMAGE + ảnh ref",
+    "hinh": "Eli giằng ra, đứng chắn giữa chị và con ngựa, hai người nhìn nghiêng.",
+    "beat": "Đỉnh xung đột · \"giỏi bỏ đi\" trả nợ",
+    "thoai": [
+      {
+        "nguoi": "Eli",
+        "kieu": "nói trong video",
+        "en": "You go. You're good at going.",
+        "vi": "Chị đi đi. Chị giỏi bỏ đi mà."
+      },
+      {
+        "nguoi": "Nora",
+        "kieu": "nói trong video",
+        "en": "Leave the horse, Eli. Now.",
+        "vi": "Bỏ con ngựa, Eli. Ngay."
+      },
+      {
+        "nguoi": "Eli",
+        "kieu": "nói trong video",
+        "en": "Like you left her at the trailer?",
+        "vi": "Như chị bỏ nó ở xe chở ngựa à?"
+      }
+    ],
+    "so_tu": 18
+  },
+  {
+    "clip_id": "BN-05",
+    "duration": 8,
+    "shot": "OTS→Eli Dutch",
+    "refs": [
+      "Eli",
+      "Nora Body Fire",
+      "Keller Barn"
+    ],
+    "start_frame": "GENERATE_IMAGE + ảnh ref",
+    "hinh": "Qua vai Nora, khung hơi nghiêng: hai chị em gào vào mặt nhau.",
+    "beat": "Sự thật",
+    "thoai": [
+      {
+        "nguoi": "Nora",
+        "kieu": "lồng tiếng hậu kỳ",
+        "en": "I sold her so we could keep the house!",
+        "vi": "Chị bán nó để giữ lại căn nhà!"
+      },
+      {
+        "nguoi": "Eli",
+        "kieu": "nói trong video",
+        "en": "You sold her because she looks at you like Mom did.",
+        "vi": "Chị bán nó vì nó nhìn chị giống như Mẹ từng nhìn."
+      }
+    ],
+    "so_tu": 20
+  },
+  {
+    "clip_id": "BN-06",
+    "duration": 4,
+    "shot": "CU",
+    "refs": [
+      "Nora",
+      "Nora Body Fire",
+      "HALE Helmet",
+      "Keller Barn"
+    ],
+    "start_frame": "GENERATE_IMAGE + ảnh ref",
+    "hinh": "Nora đứng lặng; một giọt nước mắt rạch đường qua lớp muội trên má.",
+    "beat": "Trúng đòn",
+    "thoai": [],
+    "so_tu": 0
+  },
+  {
+    "clip_id": "BN-07",
+    "duration": 4,
+    "shot": "WS",
+    "refs": [
+      "Keller Barn"
+    ],
+    "start_frame": "GENERATE_IMAGE (không người)",
+    "hinh": "Lửa chạy dọc xà mái; rơm cháy rơi xuống lối đi.",
+    "beat": "Nhắc lại móc · mái bắt lửa",
+    "thoai": [],
+    "so_tu": 0
+  },
+  {
+    "clip_id": "BN-08",
+    "duration": 4,
+    "shot": "ECU",
+    "refs": [
+      "Nora Body Fire",
+      "Juniper",
+      "Keller Barn"
+    ],
+    "start_frame": "GENERATE_IMAGE + ảnh ref",
+    "hinh": "Dao của Nora cứa đứt nút dây buộc.",
+    "beat": "Nhượng bộ đầu tiên",
+    "thoai": [],
+    "so_tu": 0
+  },
+  {
+    "clip_id": "BN-09",
+    "duration": 6,
+    "shot": "MCU",
+    "refs": [
+      "Nora",
+      "Nora Body Fire",
+      "HALE Helmet",
+      "Keller Barn"
+    ],
+    "start_frame": "GENERATE_IMAGE + ảnh ref",
+    "hinh": "Nora tra dao vào vỏ; phía sau Eli cài dây khớp mõm cho ngựa.",
+    "beat": "Nhượng bộ đầu tiên",
+    "thoai": [
+      {
+        "nguoi": "Nora",
+        "kieu": "nói trong video",
+        "en": "Fine. She comes. But you hold my hand and you don't let go.",
+        "vi": "Được. Nó đi cùng. Nhưng em nắm tay chị và không được buông."
+      }
+    ],
+    "so_tu": 13
+  },
+  {
+    "clip_id": "BN-10",
+    "duration": 4,
+    "shot": "CU",
+    "refs": [
+      "Eli",
+      "Juniper",
+      "Keller Barn"
+    ],
+    "start_frame": "GENERATE_IMAGE + ảnh ref",
+    "hinh": "Tay Eli móc dây dắt vào khoen dây khớp mõm.",
+    "beat": "Dây khớp mõm trả nợ",
+    "thoai": [],
+    "so_tu": 0
+  },
+  {
+    "clip_id": "BN-11",
+    "duration": 6,
+    "shot": "MCU (Nora)",
+    "refs": [
+      "Nora",
+      "Nora Body Fire",
+      "HALE Helmet",
+      "Juniper",
+      "Keller Barn"
+    ],
+    "start_frame": "GENERATE_IMAGE + ảnh ref",
+    "hinh": "Nora buộc khăn đỏ che mắt ngựa.",
+    "beat": "Kỹ năng",
+    "thoai": [
+      {
+        "nguoi": "Nora",
+        "kieu": "nói trong video",
+        "en": "Horses won't leave a burning barn. They think it's home. Hold her tight.",
+        "vi": "Ngựa không chịu rời chuồng đang cháy. Chúng tưởng đó là nhà. Giữ chặt nó."
+      }
+    ],
+    "so_tu": 13
+  },
+  {
+    "clip_id": "BN-12",
+    "duration": 4,
+    "shot": "CU (Eli)",
+    "refs": [
+      "Eli",
+      "Keller Barn"
+    ],
+    "start_frame": "GENERATE_IMAGE + ảnh ref",
+    "hinh": "Eli đứng lặng, môi hé, dây dắt chùng trong tay.",
+    "beat": "Mẹ",
+    "thoai": [
+      {
+        "nguoi": "Eli",
+        "kieu": "nói trong video",
+        "en": "How do you know that?",
+        "vi": "Sao chị biết?"
+      },
+      {
+        "nguoi": "Nora",
+        "kieu": "lồng tiếng hậu kỳ",
+        "en": "Mom.",
+        "vi": "Mẹ."
+      }
+    ],
+    "so_tu": 6
+  },
+  {
+    "clip_id": "BN-13a",
+    "duration": 4,
+    "shot": "WS static",
+    "refs": [
+      "Nora",
+      "Nora Body Fire",
+      "Eli",
+      "Juniper",
+      "Keller Barn"
+    ],
+    "start_frame": "GENERATE_IMAGE + ảnh ref",
+    "hinh": "Ba người đi nhanh ra khỏi cửa chuồng, phải sang trái, Eli dắt con ngựa bị bịt mắt.",
+    "beat": "Thoát ra",
+    "thoai": [],
+    "so_tu": 0
+  },
+  {
+    "clip_id": "BN-13b",
+    "duration": 4,
+    "shot": "WS static",
+    "refs": [
+      "Nora",
+      "Nora Body Fire",
+      "Eli",
+      "Juniper",
+      "Keller Barn"
+    ],
+    "start_frame": "PREV_LAST_FRAME (BN-13a)",
+    "hinh": "Cùng khung: mái chuồng sập sau lưng họ trong cơn mưa tia lửa; họ không ngoảnh lại.",
+    "beat": "Không còn đường lui",
+    "thoai": [],
+    "so_tu": 0
+  },
+  {
+    "clip_id": "ES-01",
+    "duration": 6,
+    "shot": "Track handheld-leading",
+    "refs": [
+      "Nora",
+      "Nora Body Fire",
+      "HALE Helmet",
+      "Eli",
+      "Juniper",
+      "Ridge Road"
+    ],
+    "start_frame": "GENERATE_IMAGE + ảnh ref",
+    "hinh": "Máy cầm tay đi trước: Nora nắm tay Eli chạy phải sang trái giữa hai hàng cọc rào đang cháy; Eli dắt con ngựa bịt mắt.",
+    "beat": "Thoát thân",
+    "thoai": [],
+    "so_tu": 0
+  },
+  {
+    "clip_id": "ES-02",
+    "duration": 4,
+    "shot": "WS",
+    "refs": [
+      "Nora",
+      "Nora Body Fire",
+      "HALE Helmet",
+      "Eli",
+      "Juniper",
+      "Ridge Road"
+    ],
+    "start_frame": "GENERATE_IMAGE + ảnh ref",
+    "hinh": "Một thanh rào đang cháy sập chắn ngang lối; con ngựa giật lùi, Eli níu dây bằng cả hai tay.",
+    "beat": "Chướng ngại",
+    "thoai": [],
+    "so_tu": 0
+  },
+  {
+    "clip_id": "ES-03",
+    "duration": 6,
+    "shot": "MCU",
+    "refs": [
+      "Nora",
+      "Nora Body Fire",
+      "HALE Helmet",
+      "Ridge Road"
+    ],
+    "start_frame": "GENERATE_IMAGE + ảnh ref",
+    "hinh": "Nora đá văng thanh rào cháy bằng ủng, ngoái lại hét với Eli.",
+    "beat": "Mệnh lệnh",
+    "thoai": [
+      {
+        "nguoi": "Nora",
+        "kieu": "nói trong video",
+        "en": "Keep her moving! Eyes on my back! Don't stop for anything, Eli!",
+        "vi": "Giữ nó đi tiếp! Nhìn lưng chị! Đừng dừng vì bất cứ thứ gì, Eli!"
+      }
+    ],
+    "so_tu": 12
+  },
+  {
+    "clip_id": "ES-04",
+    "duration": 4,
+    "shot": "CU",
+    "refs": [
+      "Eli",
+      "Ridge Road"
+    ],
+    "start_frame": "GENERATE_IMAGE + ảnh ref",
+    "hinh": "Cận Eli, kéo cổ áo che miệng, ho trong khói, siết dây dắt và bước tiếp.",
+    "beat": "Cậu không buông",
+    "thoai": [],
+    "so_tu": 0
+  },
+  {
+    "clip_id": "ES-05",
+    "duration": 6,
+    "shot": "WS high angle",
+    "refs": [
+      "Nora",
+      "Nora Body Fire",
+      "HALE Helmet",
+      "Eli",
+      "Juniper",
+      "Ridge Road"
+    ],
+    "start_frame": "GENERATE_IMAGE + ảnh ref",
+    "hinh": "Góc cao: tàn lửa rơi xuống cỏ khô phía trước; lửa chạy ngang lối bên dưới chặn đường xuống; Nora quay cả ba lên dốc.",
+    "beat": "Móc giữ chân · đường xuống bị cắt",
+    "thoai": [],
+    "so_tu": 0
+  },
+  {
+    "clip_id": "LH-05",
+    "duration": 8,
+    "shot": "EWS long lens",
+    "refs": [
+      "Cedar Flat"
+    ],
+    "start_frame": "GENERATE_IMAGE (không người)",
+    "hinh": "Ống kính tele, hơi nóng lượn sóng: mặt lửa vượt đỉnh núi cuối, đổ dốc về phía đường ủi và mái nhà thị trấn.",
+    "beat": "Móc giữ chân · lửa tới thị trấn",
+    "thoai": [],
+    "so_tu": 0
+  },
+  {
+    "clip_id": "LH-06",
+    "duration": 6,
+    "shot": "MS",
+    "refs": [
+      "Ray",
+      "Cedar Flat"
+    ],
+    "start_frame": "GENERATE_IMAGE + ảnh ref",
+    "hinh": "Một đám cháy nhỏ nhảy qua đường ủi vào sân sau một căn nhà; Ray chỉ tay hét gọi đội.",
+    "beat": "Tuyến vỡ",
+    "thoai": [
+      {
+        "nguoi": "Ray",
+        "kieu": "nói trong video",
+        "en": "Slopover! Right flank! Engine Two, hit it! Hit it now before it finds the houses!",
+        "vi": "Lửa vượt tuyến! Sườn phải! Xe Hai, dập nó! Dập ngay trước khi nó tới nhà!"
+      }
+    ],
+    "so_tu": 15
+  },
+  {
+    "clip_id": "LH-07",
+    "duration": 6,
+    "shot": "WS",
+    "refs": [
+      "Cedar Flat"
+    ],
+    "start_frame": "GENERATE_IMAGE (không người)",
+    "hinh": "Đội xe cứu hỏa xịt vòi vào sân sau; lửa tắt thành khói bên chiếc xích đu trẻ con; đèn thị trấn vẫn sáng phía sau.",
+    "beat": "Tuyến giữ được — tạm thời",
+    "thoai": [],
+    "so_tu": 0
+  },
+  {
+    "clip_id": "LH-08",
+    "duration": 6,
+    "shot": "MCU",
+    "refs": [
+      "Ray",
+      "Cedar Flat"
+    ],
+    "start_frame": "GENERATE_IMAGE + ảnh ref",
+    "hinh": "Ray mặt đầy muội, nhìn lên sườn núi đang cháy nơi có Ridge Road.",
+    "beat": "Niềm tin của Ray",
+    "thoai": [
+      {
+        "nguoi": "crew",
+        "kieu": "lồng tiếng hậu kỳ",
+        "en": "Cap, Hale's truck radio is just static.",
+        "vi": "Đội trưởng, bộ đàm xe Hale chỉ có tiếng rè."
+      },
+      {
+        "nguoi": "Ray",
+        "kieu": "nói trong video",
+        "en": "She'll answer. Hales always answer late.",
+        "vi": "Cô ấy sẽ trả lời. Nhà Hale lúc nào cũng trả lời muộn."
+      }
+    ],
+    "so_tu": 13
+  },
+  {
+    "clip_id": "LS-01",
+    "duration": 8,
+    "shot": "EWS",
+    "refs": [
+      "Nora",
+      "Nora Body Fire",
+      "Eli",
+      "Juniper",
+      "Ridge Road"
+    ],
+    "start_frame": "GENERATE_IMAGE + ảnh ref",
+    "hinh": "Trên gò, ba người dừng lại: lửa tràn con đường bên dưới và hai sườn đồi.",
+    "beat": "Nhắc lại móc · bị vây",
+    "thoai": [],
+    "so_tu": 0
+  },
+  {
+    "clip_id": "LS-02",
+    "duration": 6,
+    "shot": "MS",
+    "refs": [
+      "Nora",
+      "Nora Body Fire",
+      "HALE Helmet",
+      "Ridge Road"
+    ],
+    "start_frame": "GENERATE_IMAGE + ảnh ref",
+    "hinh": "Nora giật túi lều chống cháy khỏi thắt lưng, giũ tấm bạc ra về phía Eli.",
+    "beat": "Mất tất cả · lều trả nợ (1)",
+    "thoai": [
+      {
+        "nguoi": "Nora",
+        "kieu": "nói trong video",
+        "en": "Shake it out. Step in. Face down. Feet to the fire. It fits one.",
+        "vi": "Giũ nó ra. Bước vào. Úp mặt xuống. Chân về phía lửa. Nó vừa một người."
+      }
+    ],
+    "so_tu": 14
+  },
+  {
+    "clip_id": "LS-03",
+    "duration": 8,
+    "shot": "OTS→Eli",
+    "refs": [
+      "Eli",
+      "Nora Body Fire",
+      "Ridge Road"
+    ],
+    "start_frame": "GENERATE_IMAGE + ảnh ref",
+    "hinh": "Qua vai Nora: Eli không cầm tấm bạc.",
+    "beat": "Đêm tối tâm hồn",
+    "thoai": [
+      {
+        "nguoi": "Eli",
+        "kieu": "nói trong video",
+        "en": "And you?",
+        "vi": "Còn chị?"
+      },
+      {
+        "nguoi": "Nora",
+        "kieu": "lồng tiếng hậu kỳ",
+        "en": "I'll be right here. I'll lie on top of you.",
+        "vi": "Chị sẽ ở ngay đây. Chị sẽ nằm đè lên em."
+      },
+      {
+        "nguoi": "Eli",
+        "kieu": "nói trong video",
+        "en": "That's what Mom said. Isn't it?",
+        "vi": "Mẹ cũng đã nói thế. Phải không?"
+      }
+    ],
+    "so_tu": 18
+  },
+  {
+    "clip_id": "LS-04",
+    "duration": 4,
+    "shot": "CU",
+    "refs": [
+      "Nora",
+      "Nora Body Fire",
+      "HALE Helmet",
+      "Ridge Road"
+    ],
+    "start_frame": "GENERATE_IMAGE + ảnh ref",
+    "hinh": "Môi Nora hé mà không thành tiếng; cô nuốt khan hai lần, nhìn lửa.",
+    "beat": "Gục ngã",
+    "thoai": [],
+    "so_tu": 0
+  },
+  {
+    "clip_id": "LS-05a",
+    "duration": 4,
+    "shot": "WS low angle",
+    "refs": [
+      "Juniper",
+      "Eli",
+      "Ridge Road"
+    ],
+    "start_frame": "GENERATE_IMAGE + ảnh ref",
+    "hinh": "Con ngựa hất văng khăn bịt mắt và chồm lên.",
+    "beat": "Bước ngoặt",
+    "thoai": [],
+    "so_tu": 0
+  },
+  {
+    "clip_id": "LS-05b",
+    "duration": 4,
+    "shot": "WS low angle",
+    "refs": [
+      "Juniper",
+      "Eli",
+      "Ridge Road"
+    ],
+    "start_frame": "PREV_LAST_FRAME (LS-05a)",
+    "hinh": "Cùng khung: ngựa giật dây khỏi tay Eli, phóng lên dốc phải sang trái ra khỏi khung.",
+    "beat": "Bước ngoặt",
+    "thoai": [],
+    "so_tu": 0
+  },
+  {
+    "clip_id": "LS-06",
+    "duration": 6,
+    "shot": "EWS 85mm",
+    "refs": [
+      "Juniper",
+      "The Black"
+    ],
+    "start_frame": "GENERATE_IMAGE + ảnh ref",
+    "hinh": "Xa xa, con ngựa xám phi lên dốc phải sang trái qua khói về phía sườn đồi tối.",
+    "beat": "Con ngựa biết",
+    "thoai": [],
+    "so_tu": 0
+  },
+  {
+    "clip_id": "LS-07",
+    "duration": 4,
+    "shot": "MCU",
+    "refs": [
+      "Eli",
+      "Ridge Road"
+    ],
+    "start_frame": "GENERATE_IMAGE + ảnh ref",
+    "hinh": "Eli chỉ theo con ngựa.",
+    "beat": "Ý tưởng",
+    "thoai": [
+      {
+        "nguoi": "Eli",
+        "kieu": "nói trong video",
+        "en": "Nora! She's heading for the burned side!",
+        "vi": "Chị Nora! Nó chạy về phía đã cháy!"
+      }
+    ],
+    "so_tu": 7
+  },
+  {
+    "clip_id": "TR-01",
+    "duration": 8,
+    "shot": "2S profile",
+    "refs": [
+      "Eli",
+      "Nora",
+      "Nora Body Fire",
+      "HALE Helmet",
+      "Ridge Road"
+    ],
+    "start_frame": "GENERATE_IMAGE + ảnh ref",
+    "hinh": "Eli nắm tay Nora chỉ lên dốc; hai người nhìn nghiêng, mặt ửng cam.",
+    "beat": "Tranh cãi · Pine Gulch trả nợ",
+    "thoai": [
+      {
+        "nguoi": "Eli",
+        "kieu": "nói trong video",
+        "en": "Nora, she's done this before. The Pine Gulch burn. She walks where it's already burned.",
+        "vi": "Chị Nora, nó từng làm vậy rồi. Trận cháy Pine Gulch. Nó đi chỗ đã cháy rồi."
+      },
+      {
+        "nguoi": "Nora",
+        "kieu": "nói trong video",
+        "en": "Horses run from fire.",
+        "vi": "Ngựa chạy trốn lửa."
+      }
+    ],
+    "so_tu": 19
+  },
+  {
+    "clip_id": "TR-02",
+    "duration": 6,
+    "shot": "MCU (Eli)",
+    "refs": [
+      "Eli",
+      "Ridge Road"
+    ],
+    "start_frame": "GENERATE_IMAGE + ảnh ref",
+    "hinh": "Hơi thở Eli chậm lại; cậu đứng vững, nhìn thẳng mắt chị.",
+    "beat": "Lời đề nghị",
+    "thoai": [
+      {
+        "nguoi": "Eli",
+        "kieu": "nói trong video",
+        "en": "You said they won't leave a burning barn. She left. She ran uphill.",
+        "vi": "Chị nói chúng không rời chuồng đang cháy. Nó đã rời. Nó chạy lên dốc."
+      }
+    ],
+    "so_tu": 13
+  },
+  {
+    "clip_id": "TR-03",
+    "duration": 4,
+    "shot": "ECU",
+    "refs": [
+      "Nora",
+      "Nora Body Fire",
+      "HALE Helmet"
+    ],
+    "start_frame": "GENERATE_IMAGE + ảnh ref",
+    "hinh": "Hàm Nora giãn ra; mắt dõi theo đường ngựa chạy; thở ra dài.",
+    "beat": "Thay đổi · vùng đã cháy trả nợ",
+    "thoai": [
+      {
+        "nguoi": "Nora",
+        "kieu": "nói trong video",
+        "en": "The black. It can't burn twice.",
+        "vi": "Vùng đã cháy. Nó không thể cháy hai lần."
+      }
+    ],
+    "so_tu": 6
+  },
+  {
+    "clip_id": "TR-04",
+    "duration": 4,
+    "shot": "CU",
+    "refs": [
+      "Nora Body Fire",
+      "Eli"
+    ],
+    "start_frame": "GENERATE_IMAGE + ảnh ref",
+    "hinh": "Eli chìa bàn tay; Nora nhìn, nuốt khan, rồi nắm lấy.",
+    "beat": "Tin tưởng",
+    "thoai": [],
+    "so_tu": 0
+  },
+  {
+    "clip_id": "TR-05",
+    "duration": 4,
+    "shot": "MS axis flip",
+    "refs": [
+      "Eli",
+      "Nora Body Fire",
+      "Ridge Road"
+    ],
+    "start_frame": "GENERATE_IMAGE + ảnh ref",
+    "hinh": "Bắt đầu từ cái nắm tay; Eli quay lên dốc trước, kéo chị theo.",
+    "beat": "Đảo vai",
+    "thoai": [
+      {
+        "nguoi": "Eli",
+        "kieu": "nói trong video",
+        "en": "My turn. Hold on and don't let go.",
+        "vi": "Đến lượt em. Nắm chặt và đừng buông."
+      }
+    ],
+    "so_tu": 8
+  },
+  {
+    "clip_id": "TR-06",
+    "duration": 6,
+    "shot": "Static low angle",
+    "refs": [
+      "Nora",
+      "Nora Body Fire",
+      "HALE Helmet",
+      "Eli",
+      "The Black"
+    ],
+    "start_frame": "GENERATE_IMAGE + ảnh ref",
+    "hinh": "Tay trong tay họ chạy phải sang trái qua máy quay, lên dốc theo bóng ngựa xám.",
+    "beat": "Cuộc chạy cao trào",
+    "thoai": [],
+    "so_tu": 0
+  },
+  {
+    "clip_id": "TR-07",
+    "duration": 4,
+    "shot": "WS",
+    "refs": [
+      "Nora",
+      "Nora Body Fire",
+      "HALE Helmet",
+      "Eli",
+      "Ridge Road"
+    ],
+    "start_frame": "GENERATE_IMAGE + ảnh ref",
+    "hinh": "Một cây chết đang cháy đổ xuống; Eli giật tay Nora kéo sang bên; cây đập đất tóe lửa.",
+    "beat": "Móc giữ chân · em cứu chị",
+    "thoai": [],
+    "so_tu": 0
+  },
+  {
+    "clip_id": "TR-08",
+    "duration": 6,
+    "shot": "MCU",
+    "refs": [
+      "Nora",
+      "Nora Body Fire",
+      "HALE Helmet",
+      "Eli",
+      "Ridge Road"
+    ],
+    "start_frame": "GENERATE_IMAGE + ảnh ref",
+    "hinh": "Nora quỳ một gối; Eli kéo chị dậy bằng cả hai tay và hét.",
+    "beat": "Đảo vai bằng hành động",
+    "thoai": [
+      {
+        "nguoi": "Eli",
+        "kieu": "nói trong video",
+        "en": "Get up! You told me don't let go. So you don't let go either!",
+        "vi": "Đứng dậy! Chị bảo em đừng buông. Vậy chị cũng đừng buông!"
+      }
+    ],
+    "so_tu": 14
+  },
+  {
+    "clip_id": "BK-01",
+    "duration": 8,
+    "shot": "EWS",
+    "refs": [
+      "Nora",
+      "Nora Body Fire",
+      "Eli",
+      "Juniper",
+      "The Black"
+    ],
+    "start_frame": "GENERATE_IMAGE + ảnh ref",
+    "hinh": "Họ lên tới sườn đồi cháy đen; con ngựa đứng giữa vùng đen.",
+    "beat": "Đến nơi",
+    "thoai": [],
+    "so_tu": 0
+  },
+  {
+    "clip_id": "BK-02",
+    "duration": 4,
+    "shot": "MS",
+    "refs": [
+      "Nora",
+      "Nora Body Fire",
+      "HALE Helmet",
+      "The Black"
+    ],
+    "start_frame": "GENERATE_IMAGE + ảnh ref",
+    "hinh": "Nora quỳ xuống áp lòng bàn tay vào tro, ngẩng lên nhìn Eli, nhẹ nhõm.",
+    "beat": "Trả nợ",
+    "thoai": [
+      {
+        "nguoi": "Nora",
+        "kieu": "nói trong video",
+        "en": "Cold. It's cold. Eli, she found it.",
+        "vi": "Lạnh. Lạnh rồi. Eli, nó tìm thấy rồi."
+      }
+    ],
+    "so_tu": 7
+  },
+  {
+    "clip_id": "BK-03",
+    "duration": 8,
+    "shot": "WS",
+    "refs": [
+      "Nora",
+      "Nora Body Fire",
+      "HALE Helmet",
+      "Juniper",
+      "The Black"
+    ],
+    "start_frame": "GENERATE_IMAGE + ảnh ref",
+    "hinh": "Mặt trận lửa gầm dọc mép vùng đen; Nora kéo Eli nằm xuống sát chân ngựa.",
+    "beat": "Cao trào · mặt trận lửa",
+    "thoai": [
+      {
+        "nguoi": "Nora",
+        "kieu": "nói trong video",
+        "en": "Down! Face in the dirt! Shirt over your mouth! Don't look up. Count your breaths. I'm counting with you.",
+        "vi": "Nằm xuống! Úp mặt xuống đất! Kéo áo che miệng! Đừng ngẩng lên. Đếm hơi thở. Chị đếm cùng em."
+      }
+    ],
+    "so_tu": 19
+  },
+  {
+    "clip_id": "BK-04",
+    "duration": 4,
+    "shot": "CU",
+    "refs": [
+      "Nora",
+      "Nora Body Fire",
+      "HALE Helmet",
+      "Eli",
+      "The Black"
+    ],
+    "start_frame": "GENERATE_IMAGE + ảnh ref",
+    "hinh": "Nora tháo mũ HALE vàng đội lên đầu Eli.",
+    "beat": "Món quà",
+    "thoai": [],
+    "so_tu": 0
+  },
+  {
+    "clip_id": "BK-05",
+    "duration": 6,
+    "shot": "MS",
+    "refs": [
+      "Nora",
+      "Nora Body Fire",
+      "The Black"
+    ],
+    "start_frame": "GENERATE_IMAGE + ảnh ref",
+    "hinh": "Nora kéo lều chống cháy trùm lên cả hai, nắm tay ghim mép vào tro; tấm bạc gợn cam.",
+    "beat": "Lều trả nợ (2)",
+    "thoai": [
+      {
+        "nguoi": "Nora",
+        "kieu": "nói trong video",
+        "en": "It fits one person. Out here in the black, it fits two.",
+        "vi": "Nó vừa một người. Ở ngoài vùng đã cháy này, nó vừa hai người."
+      }
+    ],
+    "so_tu": 12
+  },
+  {
+    "clip_id": "BK-14",
+    "duration": 6,
+    "shot": "EWS long lens",
+    "refs": [
+      "The Black"
+    ],
+    "start_frame": "GENERATE_IMAGE (không người)",
+    "hinh": "Ống kính dài: bức tường lửa và bão tàn lửa quét dọc mép vùng đen; tấm lều bạc nhỏ rực cam ở giữa, bóng ngựa xám nằm cạnh.",
+    "beat": "Cảnh hoành tráng · đỉnh hiểm nguy",
+    "thoai": [],
+    "so_tu": 0
+  },
+  {
+    "clip_id": "BK-06",
+    "duration": 4,
+    "shot": "ECU",
+    "refs": [
+      "Nora",
+      "Eli"
+    ],
+    "start_frame": "GENERATE_IMAGE + ảnh ref",
+    "hinh": "Dưới tấm bạc, hai khuôn mặt cách nhau vài phân.",
+    "beat": "Im lặng",
+    "thoai": [],
+    "so_tu": 0
+  },
+  {
+    "clip_id": "BK-07",
+    "duration": 6,
+    "shot": "MCU (Eli)",
+    "refs": [
+      "Eli",
+      "HALE Helmet"
+    ],
+    "start_frame": "GENERATE_IMAGE + ảnh ref",
+    "hinh": "Dưới tấm bạc chống cháy, ánh cam, Eli chạm mũ trên đầu và thì thầm hỏi chị.",
+    "beat": "Móc giữ chân · nguồn gốc lộ ra lúc nguy nhất",
+    "thoai": [
+      {
+        "nguoi": "Eli",
+        "kieu": "nói trong video",
+        "en": "That's Mom's. Were you there when she went back?",
+        "vi": "Đó là của Mẹ. Chị có ở đó lúc Mẹ quay vào không?"
+      },
+      {
+        "nguoi": "Nora",
+        "kieu": "lồng tiếng hậu kỳ",
+        "en": "I was your age.",
+        "vi": "Chị bằng tuổi em."
+      }
+    ],
+    "so_tu": 13
+  },
+  {
+    "clip_id": "BK-15",
+    "duration": 4,
+    "shot": "ECU",
+    "refs": [
+      "Nora Body Fire"
+    ],
+    "start_frame": "GENERATE_IMAGE + ảnh ref",
+    "hinh": "Cận cực: gió lật mép tấm bạc, ánh lửa tràn vào; nắm tay đeo găng của Nora đập mép bạc xuống tro và giữ chặt.",
+    "beat": "Hiểm nguy vẫn đè xuống",
+    "thoai": [],
+    "so_tu": 0
+  },
+  {
+    "clip_id": "BK-11",
+    "duration": 6,
+    "shot": "MCU (Eli)",
+    "refs": [
+      "Eli",
+      "HALE Helmet"
+    ],
+    "start_frame": "GENERATE_IMAGE + ảnh ref",
+    "hinh": "Dưới tấm bạc, Eli (đội mũ) quay sang nhìn chị.",
+    "beat": "Niềm tin sai bị phá",
+    "thoai": [
+      {
+        "nguoi": "Eli",
+        "kieu": "nói trong video",
+        "en": "Mom went back in. You came back out. With both of us.",
+        "vi": "Mẹ đã quay vào. Chị đã quay ra. Mang theo cả hai tụi em."
+      }
+    ],
+    "so_tu": 12
+  },
+  {
+    "clip_id": "BK-12",
+    "duration": 4,
+    "shot": "CU",
+    "refs": [
+      "Nora",
+      "Nora Body Fire"
+    ],
+    "start_frame": "GENERATE_IMAGE + ảnh ref",
+    "hinh": "Dưới tấm bạc: tiếng cười nghẹn rung vai Nora; nước mắt rạch qua lớp muội.",
+    "beat": "Giải tỏa",
+    "thoai": [],
+    "so_tu": 0
+  },
+  {
+    "clip_id": "BK-16",
+    "duration": 4,
+    "shot": "ECU",
+    "refs": [
+      "Nora Body Fire",
+      "Eli"
+    ],
+    "start_frame": "GENERATE_IMAGE + ảnh ref",
+    "hinh": "Cận cực dưới tấm bạc: tay Eli tìm tay chị trong tro, siết lại; chị siết lại.",
+    "beat": "Bên nhau",
+    "thoai": [],
+    "so_tu": 0
+  },
+  {
+    "clip_id": "BK-08",
+    "duration": 4,
+    "shot": "WS",
+    "refs": [
+      "Nora",
+      "Nora Body Fire",
+      "Juniper",
+      "The Black"
+    ],
+    "start_frame": "GENERATE_IMAGE + ảnh ref",
+    "hinh": "Nora hất tấm bạc cháy xém ra; cách vài bước con ngựa xám nằm im trong tro.",
+    "beat": "Cú sợ cuối: nó chết rồi sao?",
+    "thoai": [],
+    "so_tu": 0
+  },
+  {
+    "clip_id": "BK-09",
+    "duration": 4,
+    "shot": "CU",
+    "refs": [
+      "Juniper",
+      "Nora Body Fire",
+      "The Black"
+    ],
+    "start_frame": "GENERATE_IMAGE + ảnh ref",
+    "hinh": "Con ngựa đang nằm ngẩng đầu, dụi mõm vào vai Nora.",
+    "beat": "Tha thứ · ánh nhìn trả nợ",
+    "thoai": [],
+    "so_tu": 0
+  },
+  {
+    "clip_id": "BK-13",
+    "duration": 6,
+    "shot": "MS",
+    "refs": [
+      "Nora",
+      "Nora Body Fire",
+      "Eli",
+      "HALE Helmet",
+      "Juniper",
+      "The Black"
+    ],
+    "start_frame": "GENERATE_IMAGE + ảnh ref",
+    "hinh": "Eli ngủ tựa vào sườn ngựa, đội mũ; Nora thức, nắm tay em nhìn tàn lửa.",
+    "beat": "Nghỉ ngơi",
+    "thoai": [],
+    "so_tu": 0
+  },
+  {
+    "clip_id": "DW-01",
+    "duration": 8,
+    "shot": "EWS",
+    "refs": [
+      "Ray",
+      "The Black"
+    ],
+    "start_frame": "GENERATE_IMAGE + ảnh ref",
+    "hinh": "Bình minh xám: tro rơi như tuyết; một hàng lính cứu hỏa áo vàng, mũ trắng dẫn đầu, đi lên dốc.",
+    "beat": "Nhắc lại móc · cứu hộ",
+    "thoai": [],
+    "so_tu": 0
+  },
+  {
+    "clip_id": "DW-02",
+    "duration": 4,
+    "shot": "CU",
+    "refs": [
+      "Ray",
+      "The Black"
+    ],
+    "start_frame": "GENERATE_IMAGE + ảnh ref",
+    "hinh": "Ray thấy gì đó trên dốc, khựng lại rồi chạy.",
+    "beat": "Tìm thấy",
+    "thoai": [],
+    "so_tu": 0
+  },
+  {
+    "clip_id": "DW-03",
+    "duration": 6,
+    "shot": "OTS→Nora",
+    "refs": [
+      "Nora",
+      "Nora Body Fire",
+      "The Black"
+    ],
+    "start_frame": "GENERATE_IMAGE + ảnh ref",
+    "hinh": "Qua vai Ray: Nora đứng dậy từ tro bên Eli và con ngựa; giọng khàn.",
+    "beat": "Giữ lời hứa",
+    "thoai": [
+      {
+        "nguoi": "Ray",
+        "kieu": "lồng tiếng hậu kỳ",
+        "en": "Nora.",
+        "vi": "Nora."
+      },
+      {
+        "nguoi": "Nora",
+        "kieu": "nói trong video",
+        "en": "Captain. Brought him back. Like I said. Plus one stubborn horse.",
+        "vi": "Đội trưởng. Đưa nó về rồi. Như tôi đã nói. Thêm một con ngựa cứng đầu."
+      }
+    ],
+    "so_tu": 12
+  },
+  {
+    "clip_id": "DW-04",
+    "duration": 4,
+    "shot": "MCU (Ray)",
+    "refs": [
+      "Ray",
+      "The Black"
+    ],
+    "start_frame": "GENERATE_IMAGE + ảnh ref",
+    "hinh": "Ray chìa bộ đàm của cô và cốc cà phê.",
+    "beat": "Trở về",
+    "thoai": [
+      {
+        "nguoi": "Ray",
+        "kieu": "nói trong video",
+        "en": "Think you came back for this.",
+        "vi": "Chắc cô quay lại vì cái này."
+      }
+    ],
+    "so_tu": 6
+  },
+  {
+    "clip_id": "DW-05",
+    "duration": 6,
+    "shot": "2S locked-off 85mm",
+    "refs": [
+      "Ray",
+      "Nora Body Fire",
+      "The Black"
+    ],
+    "start_frame": "GENERATE_IMAGE + ảnh ref",
+    "hinh": "Ray trái khung, Nora phải khung: cô cầm bộ đàm, uống cà phê che miệng; Ray giữ mặt nghiêm.",
+    "beat": "Luật được nới",
+    "thoai": [
+      {
+        "nguoi": "Ray",
+        "kieu": "nói trong video",
+        "en": "I should write you up, Hale.",
+        "vi": "Đáng lẽ tôi phải lập biên bản cô, Hale."
+      },
+      {
+        "nguoi": "Nora",
+        "kieu": "lồng tiếng hậu kỳ",
+        "en": "Write it up.",
+        "vi": "Lập đi."
+      },
+      {
+        "nguoi": "Ray",
+        "kieu": "nói trong video",
+        "en": "Lost my pen.",
+        "vi": "Mất bút rồi."
+      }
+    ],
+    "so_tu": 12
+  },
+  {
+    "clip_id": "DW-06",
+    "duration": 8,
+    "shot": "EWS",
+    "refs": [
+      "Cedar Flat"
+    ],
+    "start_frame": "GENERATE_IMAGE (không người)",
+    "hinh": "Từ trên dốc đen lúc bình minh xám: xa bên dưới, Cedar Flat còn nguyên mái nhà; vùng cháy dừng đúng ở đường ủi.",
+    "beat": "Tuyến phụ trả kết · thị trấn giữ được",
+    "thoai": [
+      {
+        "nguoi": "Ray",
+        "kieu": "lồng tiếng hậu kỳ",
+        "en": "Town held, Hale. We lost two barns and a mile of fence. Not one house. Not one person.",
+        "vi": "Thị trấn giữ được, Hale. Mất hai cái chuồng và một dặm hàng rào. Không mất căn nhà nào. Không mất ai."
+      }
+    ],
+    "so_tu": 18
+  },
+  {
+    "clip_id": "DW-07",
+    "duration": 8,
+    "shot": "OTS→Nora",
+    "refs": [
+      "Nora",
+      "Nora Body Fire",
+      "Juniper",
+      "The Black"
+    ],
+    "start_frame": "GENERATE_IMAGE + ảnh ref",
+    "hinh": "Qua vai Eli: Nora nhặt dây dắt, đặt vào tay em.",
+    "beat": "Kết thúc",
+    "thoai": [
+      {
+        "nguoi": "Nora",
+        "kieu": "nói trong video",
+        "en": "She's yours. I'll call Keller. We'll figure out the money.",
+        "vi": "Nó là của em. Chị sẽ gọi Keller. Mình sẽ lo tiền."
+      },
+      {
+        "nguoi": "Eli",
+        "kieu": "lồng tiếng hậu kỳ",
+        "en": "I'll sell my bike.",
+        "vi": "Em sẽ bán xe đạp."
+      },
+      {
+        "nguoi": "Nora",
+        "kieu": "nói trong video",
+        "en": "Genius, your bike's at Keller's gate.",
+        "vi": "Thiên tài à, xe đạp của em nằm ở cổng nhà Keller."
+      }
+    ],
+    "so_tu": 20
+  },
+  {
+    "clip_id": "DW-08",
+    "duration": 4,
+    "shot": "CU",
+    "refs": [
+      "Ray",
+      "The Black"
+    ],
+    "start_frame": "GENERATE_IMAGE + ảnh ref",
+    "hinh": "Ray thấy chiếc mũ HALE trên đầu cậu bé, mỉm cười, lẩm bẩm.",
+    "beat": "Sự bình yên của Ray",
+    "thoai": [
+      {
+        "nguoi": "Ray",
+        "kieu": "nói trong video",
+        "en": "Most stubborn Hale left alive. Figures.",
+        "vi": "Đứa nhà Hale cứng đầu nhất còn sống. Đúng thôi."
+      }
+    ],
+    "so_tu": 6
+  },
+  {
+    "clip_id": "DW-09",
+    "duration": 10,
+    "shot": "EWS",
+    "refs": [
+      "Nora",
+      "Nora Body Fire",
+      "Eli",
+      "HALE Helmet",
+      "Juniper",
+      "The Black"
+    ],
+    "start_frame": "GENERATE_IMAGE + ảnh ref",
+    "hinh": "Bình minh qua tro rơi: Eli đội mũ dắt ngựa xuống dốc đen phải sang trái; Nora đi sau một bước.",
+    "beat": "Hình ảnh cuối",
+    "thoai": [],
+    "so_tu": 0
+  }
+]

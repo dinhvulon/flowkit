@@ -557,6 +557,10 @@ async def _handle_failure(rid: str, req: dict, result: dict, retry_after: dict =
     # Poll timeout: the job is still on Flow. Keep its operation id (request_id) so the
     # next pass re-polls the same job and downloads it when done — never resubmit, a
     # resubmit pays for the video twice (user 2026-10-16).
+    # `req` was read before the submit, so it can lack the op id the provider stored
+    # since; re-read it or a timeout falls through to the resubmit path below.
+    if "polling timeout" in error_lower:
+        req = await crud.get_request(rid) or req
     if "polling timeout" in error_lower and req.get("request_id"):
         repoll = req.get("retry_count", 0) + 1
         if repoll <= MAX_POLL_ROUNDS:

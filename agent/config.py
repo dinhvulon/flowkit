@@ -105,8 +105,8 @@ VIDEO_POLL_INTERVAL = int(os.environ.get("VIDEO_POLL_INTERVAL", "180"))  # polli
 FLOW_POLL_MIN_GAP_S = max(0.0, float(os.environ.get("FLOW_POLL_MIN_GAP_S", "2")))  # spacing between status-poll RPCs
 MAX_RETRIES = int(os.environ.get("MAX_RETRIES", "5"))
 # One poll round; on timeout the worker re-polls the same Flow op (never resubmits),
-# up to MAX_POLL_ROUNDS rounds (user 2026-10-16: 300s rounds).
-VIDEO_POLL_TIMEOUT = int(os.environ.get("VIDEO_POLL_TIMEOUT", "300"))
+# up to MAX_POLL_ROUNDS rounds (user 2026-10-18: 600s rounds — Omni r2v can take ~7 min).
+VIDEO_POLL_TIMEOUT = int(os.environ.get("VIDEO_POLL_TIMEOUT", "600"))
 MAX_POLL_ROUNDS = int(os.environ.get("MAX_POLL_ROUNDS", "24"))
 # Omni Flash defaults used by the worker when a project's video_model_family
 # is "omni_flash". Duration must be 4/6/8/10; resolution 360p or 720p.

@@ -619,8 +619,41 @@
     "clean_media_id": "06e9b898-de28-4bb2-9bf5-522568c92183",
     "source": "last frame of A3-06a"
   },
-  "request_id": "4e4ba28d-186b-4823-b8fa-d2b5a1d4ac0b",
-  "status": "COMPLETED",
-  "raw_media_id": "6e29f8df-0004-43f8-a058-8a4100a18c08",
-  "clean_media_id": "c080df1d-4b4a-455f-a90a-f5b6e2347f3d"
+  "A4-19": {
+    "request_id": "f355c9ab-cabe-4946-a8c8-d53a2fba83fa",
+    "status": "COMPLETED",
+    "error": null,
+    "raw_media_id": "5923bd34-5d7d-46e6-b09d-c3ade0b25bd8",
+    "clean_media_id": "b7be5042-4cfe-406c-b47b-55ccfbb69545"
+  },
+  "MASTER": {
+    "request_id": "eb4b9559-6c09-4c0a-a144-96409c887f6f",
+    "status": "FAILED",
+    "error": "RpcError: ogiZ0b failed: [5]"
+  },
+  "A4-03b": {
+    "status": "COMPLETED",
+    "clean_media_id": "9cb3dc16-d17c-415f-866b-e3d21784bc2e",
+    "source": "last frame of A4-03a"
+  },
+  "A4-07b": {
+    "status": "COMPLETED",
+    "clean_media_id": "18a19d6b-956a-497b-b99c-dfa5b21e3fb8",
+    "source": "last frame of A4-07a"
+  },
+  "A4-T2": {
+    "status": "COMPLETED",
+    "clean_media_id": "4f94a421-5d6c-4ee1-b644-3cd83011730f",
+    "source": "last frame of A4-T1"
+  },
+  "A4-03c": {
+    "status": "COMPLETED",
+    "clean_media_id": "7d2e69d4-4832-4769-91a1-eab060654674",
+    "source": "last frame of A4-03b"
+  },
+  "A4-07c": {
+    "status": "COMPLETED",
+    "clean_media_id": "efd6ae12-547d-4d41-8208-9849b0e6776b",
+    "source": "last frame of A4-07b"
+  }
 }

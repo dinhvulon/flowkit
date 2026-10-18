@@ -1,0 +1,78 @@
+{
+  "project_id": "6a41afad-f3cb-459f-a724-4db4fde08cb8",
+  "character_ids": {
+    "Fire Line": "1d869bf4-3830-4bec-927e-f28075724e63",
+    "Hale Ranch": "0d434e12-0ad6-4a16-9882-73e2c9b71895"
+  },
+  "video_id": "128db436-d06f-4ceb-a90a-905f9250c5ba",
+  "scene_ids": {
+    "FL-08": "3ec5eca6-ecbe-4e46-ac9f-2586d9e4f598",
+    "RA-01": "599db95a-f098-4a87-b15f-5785e4b74c2d"
+  },
+  "refs": {
+    "Fire Line": {
+      "raw_media_id": "266e2c92-0ee0-49fb-b95d-074119d79fad",
+      "clean_media_id": "54d231c8-18ea-4aad-a1c6-c01b553b0fec",
+      "file": "FL_clean.jpg"
+    },
+    "Hale Ranch": {
+      "raw_media_id": "f03971dd-2159-4f38-bdfc-d9671f9fed1a",
+      "clean_media_id": "38a536a9-8872-453a-917e-2d040b4b3f8a",
+      "file": "HR_clean.jpg",
+      "clean_media_id_v1": "51839cab-ddf1-4bd6-872b-d895313f5be3"
+    }
+  },
+  "start_frames": {
+    "FL-08": {
+      "raw_media_id": "1def968d-d631-4c7b-ace4-fce77c8696e5",
+      "clean_media_id": "0bafa8aa-3bc3-42dc-b3a7-31d53c865775",
+      "file": "scene_FL-08_v3_clean.jpg",
+      "image_prompt_override": "Single still photograph, frame 0 of this shot before any movement. Extreme wide shot through a very long 600mm telephoto lens from a much HIGHER vantage point: shot from a tall mountain summit far above and several miles away, looking DOWN steeply at about 30 degrees onto the burning terrain, compressed perspective, like real wildfire news footage from a high lookout: strong heat shimmer, slight handheld drift. We see the land from above: the whole mountain ridge from {{media:54d231c8-18ea-4aad-a1c6-c01b553b0fec|FL_clean.jpg}} lies far below in the middle of the frame, with the deep canyon floor visible beneath it and layer after layer of ridges stretching toward the horizon; the dry pine ridge and its dirt fire line are tiny against the enormous scale of the fire. A massive wall of fire already climbs the near slope below the ridge: a long continuous front of tall orange flames, many trees torching, dense glowing embers. On the far side of the canyon a second fire burns in the pine crowns. Above it all a gigantic towering column of dark brown-grey smoke rises and fills the upper two thirds of the sky, lit orange from below; a small blood-red sun hangs dimmed inside the smoke. Dusk. Majestic, overwhelming, epic natural scale. No identifiable person in the frame, no vehicles, no aircraft. 35mm film, cinematic documentary realism, natural film grain, natural color; real wildfire footage look: irregular orange-yellow flames, dark brown-grey smoke, glowing embers. Deep focus, entire frame sharp. No readable text anywhere. Not a 3D render, not CGI, no god rays."
+    },
+    "FL-08_v1": {
+      "raw_media_id": "2d2b4577-b0b7-4b16-8a2b-6fe40874f2fb",
+      "clean_media_id": "e14ee9ae-0467-444a-a577-4bf8adba4371",
+      "file": "scene_FL-08_clean.jpg"
+    },
+    "FL-08_v2": {
+      "raw_media_id": "fbbcfc6a-815e-4283-841d-6bc585b21c96",
+      "clean_media_id": "6a68dd8d-7c82-4abf-a261-54c2f74bd15a",
+      "file": "scene_FL-08_v2_clean.jpg",
+      "image_prompt_override": "Single still photograph, frame 0 of this shot before any movement. Extreme wide shot through a very long 600mm telephoto lens from a far opposite ridge several miles away, compressed perspective, like real wildfire news footage: strong heat shimmer, slight handheld drift. The whole mountain ridge from {{media:54d231c8-18ea-4aad-a1c6-c01b553b0fec|FL_clean.jpg}} is small in the lower third of the frame, seen from far across a deep canyon; the dry pine ridge and its dirt fire line are tiny against the enormous scale of the fire. A massive wall of fire already climbs the near slope below the ridge: a long continuous front of tall orange flames, many trees torching, dense glowing embers. On the far side of the canyon a second fire burns in the pine crowns. Above it all a gigantic towering column of dark brown-grey smoke rises and fills the upper two thirds of the sky, lit orange from below; a small blood-red sun hangs dimmed inside the smoke. Dusk. Majestic, overwhelming, epic natural scale. No identifiable person in the frame, no vehicles, no aircraft. 35mm film, cinematic documentary realism, natural film grain, natural color; real wildfire footage look: irregular orange-yellow flames, dark brown-grey smoke, glowing embers. Deep focus, entire frame sharp. No readable text anywhere. Not a 3D render, not CGI, no god rays."
+    },
+    "RA-01": {
+      "raw_media_id": "b167b5ad-cc91-49ba-8de7-888adcd52e94",
+      "clean_media_id": "4a639eb4-4166-4173-b4e2-6e2ccf087f64",
+      "file": "scene_RA-01_v2_clean.jpg",
+      "image_prompt_override": "Single still photograph, frame 0 of this shot before any movement. Extreme wide shot, 35-50mm lens, static tripod, calm composition, eye level from the edge of the pasture. Location: exactly the ranch in {{ref:Hale Ranch}}: the same weathered wooden house with porch, the faded red barn, the wooden corral, the gravel yard and the split-rail fence in waist-high golden dry grass. In the middle of the gravel yard between the house and the barn stands an old faded white two-horse bumper-pull horse trailer, unhitched, its rear loading ramp lowered flat onto the gravel, empty inside. Light: early dawn, low warm golden sun from the side, long soft shadows, dry dusty haze. On the far ridge behind the ranch a single thick column of dark brown-grey wildfire smoke already rises from behind the hills and leans to the right with the wind; no flames visible, the fire is hidden behind the ridge, the smoke is far away and quiet. No people, no horses, no animals, no cars. 35mm film, cinematic documentary realism, natural film grain, natural color. Deep focus, entire frame sharp from the foreground grass to the far ridge. No readable text anywhere, no letters on the trailer, no logos. Not a 3D render, not CGI, no god rays, no volumetric beams.",
+      "v1": {
+        "raw_media_id": "1e5b0f68-7873-481e-be0b-1d4a812cb680",
+        "clean_media_id": "f49eb1a6-855d-4c62-98c0-07925db46ec4",
+        "file": "scene_RA-01_clean.jpg"
+      }
+    }
+  },
+  "videos": {
+    "FL-08": {
+      "request_id": "6794f8a3-88d3-4fce-b468-91bc165bace9",
+      "media_id": "84450f0b-7498-4ba0-b756-7f369eca35c7",
+      "file": "scene_FL-08_v3r2v_3ec5eca6.mp4",
+      "mode": "r2v_inline_start_mention"
+    },
+    "FL-08_v1": {
+      "request_id": "fc5f8ea3-b549-414a-98ce-4e621d024e77",
+      "media_id": "c490534d-bf48-48ee-b4b6-1eb7986a05ff",
+      "file": "scene_FL-08_3ec5eca6.mp4"
+    },
+    "FL-08_v2": {
+      "request_id": "6a3fd4dc-d028-408e-9c8e-a73c7d92b0dd",
+      "media_id": "e2773c8e-dea9-40d6-9a97-caeaaf4fb8df",
+      "file": "scene_FL-08_v2_3ec5eca6.mp4",
+      "mode": "omni_first_frame"
+    }
+  },
+  "video_prompts_old": {
+    "FL-08_v1": "{\"clip_id\":\"FL-08\",\"scene_name\":\"RH · the walls meet\",\"duration\":8,\"aspect_ratio\":\"16:9\",\"refs\":[\"Fire Line\"],\"camera\":{\"viewpoint\":\"third-person cinematic camera; the camera itself is never seen\",\"shot_size\":\"EWS long lens\",\"description\":\"very long telephoto lens from far away, like real news or fire-crew footage: heat shimmer, smoke-dimmed sun, slight handheld drift\",\"focus\":\"deep focus, entire frame sharp from foreground to the far ridge (f/8)\"},\"style\":\"35mm film, cinematic documentary realism, natural film grain, natural color, real locations and real people; real wildfire footage look: irregular orange-yellow flames, dark brown-grey smoke, glowing embers in the air, faces lit by fire glow, fire never fills the foreground of a face shot\",\"setting\":\"Location: exactly the place in {{media:54d231c8-18ea-4aad-a1c6-c01b553b0fec|FL_clean.jpg}}, a steep dry ridge of pine and golden grass where the crew cuts a fire line. Light: dusk, smoke-red sun.\",\"characters\":[],\"timeline_action\":{\"0-3s\":\"Long lens from far away through heat shimmer: the burnout races uphill on the near slope.\",\"3-6s\":\"A crown fire comes down the canyon from the other side, torching treetop after treetop.\",\"6-8s\":\"The two walls of fire meet and tear upward into one towering column of flame and dark smoke.\"},\"speech\":{\"speaker\":[],\"voices\":{},\"delivery\":\"no native dialogue\",\"dialogue\":[]},\"post_vo\":[],\"dramatic_craft\":{\"beat\":\"RH · the walls meet\",\"subtext\":\"The plan works, and it is terrifying.\"},\"audio\":\"natural sound: roar, the crew falls silent; wildfire roar, wind, crackling wood; no background music\",\"negative_constraints\":[\"No subtitles, no captions, no on-frame text, no logos, no watermarks; no readable letters anywhere, including on helmets and vehicles.\",\"ANTI-CGI LOCK: real documentary footage, not a 3D render, not a video game, not CGI fire, not cartoon flames, no plastic skin.\",\"No breath vapor and no white steam from anyone's mouth; no god rays, no volumetric beams.\",\"Separate bodies never merge; natural hands with five fingers; no extra limbs.\",\"No background music.\",\"No bokeh and no blurred background.\",\"Nobody speaks in this clip.\",\"Spoken words in this clip: 0 (Rule 49 band for 8s: 18-22).\"]}",
+    "FL-08_v2": "{\"clip_id\": \"FL-08\", \"scene_name\": \"RH - the walls meet\", \"duration\": 8, \"aspect_ratio\": \"16:9\", \"refs\": [], \"start_frame\": {\"type\": \"GENERATED_IMAGE\", \"note\": \"Approved start frame v3 is frame 0 (Omni first-frame). The clip continues exactly from it.\"}, \"camera\": {\"viewpoint\": \"third-person cinematic camera; the camera itself is never seen\", \"shot_size\": \"EWS long lens\", \"description\": \"ONE single continuous locked-off shot, exactly the framing of the first frame: a very long 600mm telephoto lens from a tall mountain summit far above, looking steeply down at about 30 degrees onto the burning ridge and canyon. The camera does not cut, does not change angle, does not move closer; only a very slow subtle push-in and slight handheld drift with heat shimmer.\", \"focus\": \"deep focus, entire frame sharp from foreground to the far ridges (f/8)\"}, \"style\": \"35mm film, cinematic documentary realism, natural film grain, natural color; real wildfire news footage from a high lookout: irregular orange-yellow flames, dark brown-grey smoke, glowing embers drifting on the wind\", \"setting\": \"Location: the same ridge, canyon and layered mountain ridges seen in the first frame, far below the camera. Light: dusk, small blood-red sun dimmed inside the smoke.\", \"characters\": [], \"timeline_action\": {\"0-3s\": \"Seen from high above, the long wall of fire on the near slope keeps climbing toward the ridge, trees torching one after another, embers streaming uphill.\", \"3-6s\": \"On the far side of the canyon the crown fire spreads down through the pine tops, flames jumping from tree to tree toward the canyon floor.\", \"6-8s\": \"The two fire fronts merge along the canyon; the dark brown-grey smoke column thickens and slowly rises higher, lit orange from below.\"}, \"speech\": {\"speaker\": [], \"voices\": {}, \"delivery\": \"no native dialogue\", \"dialogue\": []}, \"post_vo\": [], \"dramatic_craft\": {\"beat\": \"RH - the walls meet\", \"subtext\": \"The plan works, and it is terrifying.\"}, \"audio\": \"natural sound: distant deep wildfire roar, wind, faint crackling; no background music\", \"negative_constraints\": [\"One continuous shot with no cuts, no angle change, no scene change and no jump to a closer view.\", \"No explosion, no fireball, no mushroom cloud, no blast wave; the fire burns like a real wildfire, spreading through trees and grass.\", \"ANTI-CGI LOCK: real documentary footage, not a 3D render, not a video game, not CGI fire, not cartoon flames.\", \"No people, no vehicles, no aircraft in the frame.\", \"No subtitles, no captions, no on-frame text, no logos, no watermarks.\", \"No god rays, no volumetric beams.\", \"No background music.\", \"No bokeh and no blurred background.\", \"Nobody speaks in this clip.\", \"Spoken words in this clip: 0 (Rule 49 band for 8s: 18-22).\"]}"
+  }
+}

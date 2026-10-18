@@ -28,5 +28,30 @@
     "status": "COMPLETED",
     "clean_media_id": "61c0716a-d612-4f23-9747-3fba164a5c54",
     "source": "last frame of A3-W2a"
+  },
+  "A4-03b": {
+    "status": "COMPLETED",
+    "clean_media_id": "9cb3dc16-d17c-415f-866b-e3d21784bc2e",
+    "source": "last frame of A4-03a"
+  },
+  "A4-07b": {
+    "status": "COMPLETED",
+    "clean_media_id": "18a19d6b-956a-497b-b99c-dfa5b21e3fb8",
+    "source": "last frame of A4-07a"
+  },
+  "A4-T2": {
+    "status": "COMPLETED",
+    "clean_media_id": "4f94a421-5d6c-4ee1-b644-3cd83011730f",
+    "source": "last frame of A4-T1"
+  },
+  "A4-03c": {
+    "status": "COMPLETED",
+    "clean_media_id": "7d2e69d4-4832-4769-91a1-eab060654674",
+    "source": "last frame of A4-03b"
+  },
+  "A4-07c": {
+    "status": "COMPLETED",
+    "clean_media_id": "efd6ae12-547d-4d41-8208-9849b0e6776b",
+    "source": "last frame of A4-07b"
   }
 }

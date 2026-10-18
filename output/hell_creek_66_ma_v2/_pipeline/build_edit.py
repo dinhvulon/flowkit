@@ -20,9 +20,14 @@ CLEAN.mkdir(exist_ok=True)
 sys.path.insert(0, str(ROOT))
 ACTS = (2, 3)  # overridden by the act numbers on the command line
 SKIP = {"A2-R3"}
-# review cuts: A3-08 jumps at 3s, A3-W1 background jumps at ~5.2s
-IN_PT = {"A3-08": 0.5}
-OUT_PT = {"A3-08": 3.0, "A3-W1": 5.0}
+# review cuts: A3-08 jumps at 3s, A3-W1 background jumps at ~5.2s, A2-10 hard cut at 2.46s,
+# A2-13 (regen 16/10) arm drifts after 5.2s
+IN_PT = {"A3-08": 0.5, "A2-10": 2.5, "A4-17": 2.2}
+OUT_PT = {"A3-08": 3.0, "A3-W1": 5.0, "A2-13": 5.2,
+          "A4-01": 3.5, "A4-11": 2.7, "A4-16": 5.5, "MASTER": 8.5}  # Act 4 review trims (user OK 16/10)
+# Act 1 (final file) minus 87.65-90.55s: the triceratops tumble (user 16/10). edit_v1 used it whole;
+# edit_v2 also dropped the Nora-in-mud clip (90.55-97.56), which the user wants kept.
+ACT1_KEEP = [(0, 87.65), (90.55, 106.57)]
 
 
 def clips():
@@ -79,8 +84,15 @@ def render(ver):
         sys.exit(f"{final.name} exists; pick a new version")
     if prep():
         sys.exit("clips missing; not rendering")
-    parts = [("A1", "ACT1", OUT / "hell_creek_act1_1080p.mp4")] + \
-            [(f"A{c['act']}", c["cid"], WORK / f"A{c['act']}_{c['cid']}_seg.mp4") for c in clips()]
+    a1 = []
+    for i, (s, e) in enumerate(ACT1_KEEP, 1):
+        p = WORK / f"A1_part{i}.mp4"
+        if not p.exists():
+            run(["ffmpeg", "-y", "-ss", str(s), "-to", str(e), "-i", str(OUT / "hell_creek_act1_1080p.mp4"),
+                 "-vf", "fps=24,format=yuv420p,setsar=1", "-af", "aresample=48000,aformat=channel_layouts=stereo",
+                 "-c:v", "libx264", "-preset", "medium", "-crf", "17", "-c:a", "aac", "-b:a", "192k", str(p)])
+        a1.append(("A1", f"ACT1_{s:g}-{e:g}", p))
+    parts = a1 + [(f"A{c['act']}", c["cid"], WORK / f"A{c['act']}_{c['cid']}_seg.mp4") for c in clips()]
     edl, t = ["act,clip,source,start,end,length"], 0.0
     for act, cid, p in parts:
         d = dur(p); edl.append(f"{act},{cid},{p.name},{t:.2f},{t + d:.2f},{d:.2f}"); t += d

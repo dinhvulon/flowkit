@@ -1066,7 +1066,7 @@
     "characters": [
       {
         "name": "Nora's hands (first-person)",
-        "visual_lock": "First-person view looking down at her own hands; her hands and bare forearms are exactly the hands and arms of the woman in {{ref:Nora Body}}: a young woman's slender, smooth, hairless forearms and hands with short clean unpainted nails, no rings or watch; her linen sleeves are short and end above the elbow, so no sleeve, cuff or fabric is anywhere on her forearms; her trousers and boots are exactly as in {{ref:Nora Body}}. SHELL LOCK: the turtle shell, and later the flask at her left hip, is exactly the shell in {{ref:Turtle Shell Flask}}: same shape, size, colour and scute pattern in every frame; there is only one shell.",
+        "visual_lock": "First-person view looking down at her own hands; her hands and bare forearms are exactly the hands and arms of the woman in {{ref:Nora Body}}: a young woman's slender, smooth, hairless forearms and hands with short clean unpainted nails, no rings or watch; her linen sleeves are short and end above the elbow, so no sleeve, cuff or fabric is anywhere on her forearms; her trousers and boots are exactly as in {{ref:Nora Body}}. SHELL LOCK: the turtle shell, and later the flask at her left hip, is exactly the shell in {{ref:Turtle Shell Flask}}: same shape, size, colour and scute pattern in every frame; there is only one shell. SLEEVE LOCK: the only fabric in view is the short olive-green linen sleeve of her tunic at the right edge of the frame, exactly the olive colour of the outfit in {{ref:Nora Body}} and of the opening frame, in every frame.",
         "state": "The turtle-shell flask hangs at her left hip on its twisted plant-fibre cord, exactly as on the Nora Body sheet. Dried grey mud is smeared on her forearms and neck."
       }
     ],
@@ -1096,7 +1096,8 @@
       "Strictly NO spoken words in this clip.",
       "Deep focus: strictly NO shallow depth of field, strictly NO bokeh, no blurred background.",
       "Dialogue word count strictly 0 words, exactly as written in script.md.",
-      "HAND LOCK: strictly NO male hands, NO hairy knuckles, NO hairy forearms, NO long or frayed sleeve on the forearm, NO rings, NO watch, NO painted nails, NO extra or fused fingers."
+      "HAND LOCK: strictly NO male hands, NO hairy knuckles, NO hairy forearms, NO long or frayed sleeve on the forearm, NO rings, NO watch, NO painted nails, NO extra or fused fingers.",
+      "SLEEVE COLOUR LOCK (CRITICAL): her sleeve is olive green in every frame; strictly NO cream, NO beige, NO white, NO off-white or undyed linen sleeve, NO long sleeve, NO rolled-up cuff."
     ],
     "start_frame": {
       "type": "GENERATE_IMAGE",

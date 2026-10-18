@@ -585,9 +585,10 @@ def omni_reference_video_request(prompt: str, project_id: str,
         None,
         [None, None, None, None, _client_uuid(), _client_uuid()],
     ]
-    # Default to laomedeia voice in Slot 7
-    v_id = str(voice_id or "laomedeia").strip().lower()
-    request.extend([None, [[v_id]]])
+    # Slot 7 voices: "kore" -> [["kore"]]; "kore,fenrir" -> [["kore"],["fenrir"]]
+    # (multi-voice shape is unverified against a UI capture). Default laomedeia.
+    v_ids = [v.strip().lower() for v in str(voice_id or "laomedeia").split(",") if v.strip()]
+    request.extend([None, [[v] for v in (v_ids or ["laomedeia"])]])
     if res == "360p":
         request.extend([None, None, None, [4]])
     return build_envelope(RPC_GEN_VIDEO_REFERENCES, [

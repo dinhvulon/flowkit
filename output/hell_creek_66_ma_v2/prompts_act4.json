@@ -1894,7 +1894,10 @@
       "Only Nora speaks, and only in Latin American Spanish; nobody speaks over anyone else; the animals make only animal sounds, never words.",
       "Deep focus: strictly NO shallow depth of field, strictly NO bokeh, no blurred background.",
       "Dialogue word count strictly 6 words, exactly as written in script.md.",
-      "HAND LOCK: strictly NO male hands, NO hairy knuckles, NO hairy forearms, NO long or frayed sleeve on the forearm, NO rings, NO watch, NO painted nails, NO extra or fused fingers."
+      "HAND LOCK: strictly NO male hands, NO hairy knuckles, NO hairy forearms, NO long or frayed sleeve on the forearm, NO rings, NO watch, NO painted nails, NO extra or fused fingers.",
+      "ONE-TAKE LOCK (CRITICAL): the whole clip is one single unbroken first-person take with no cut, no jump, no scene change and no change of place; it never switches to a third-person view, and Nora's face and whole body never appear.",
+      "SLEEVE COLOUR LOCK: any sleeve in view is the short olive-green linen sleeve of the outfit in the Nora Body reference; strictly NO cream, NO beige, NO white shirt.",
+      "Only her own two forearms and hands are in view, smearing mud; the view stays looking down at the creek edge."
     ],
     "start_frame": {
       "type": "GENERATE_IMAGE",
@@ -1930,11 +1933,11 @@
         "state": "The turtle-shell flask is gone; only a short snapped plant-fibre cord end hangs at her left hip. Dried grey mud is smeared on her forearms and neck. Grey-brown mud is smeared across her left cheek. Dust coats her face and hair. Tiny glass beads are caught in her hair. Wet mud covers her arms, neck and clothes."
       }
     ],
-    "in_place": "Everything is already in place from the very first frame: exactly one soaked fan-palm frond at the water's edge; the dark mouth of the hollow 2 m ahead; Nora's hands at the bottom edge. Every person, animal and object stays where it is placed unless the timeline moves it; nothing appears suddenly, nothing vanishes.",
-    "shot": "A soaked fan-palm frond lies at the water's edge; the dark mouth of the hollow is 2 m ahead.",
+    "in_place": "Everything is already in place from the very first frame: her two forearms at the left and right edges, hands flat on the gravel; exactly one soaked fan-palm frond between them; the dark hollow low in the earth bank beyond the shallow water, already visible in the first frame. Every person, animal and object stays where it is placed unless the timeline moves it; nothing appears suddenly, nothing vanishes.",
+    "shot": "Her two bare forearms reach in from the left and right edges, hands flat on the gravel; a soaked fan-palm frond lies between them; beyond a shallow strip of water the dark hollow sits low in the earth bank.",
     "timeline_action": {
-      "0-2s": "Her hand grabs the soaked palm frond by its stem and drags it toward her.",
-      "2-4s": "The view crawls into the hollow, the frond dragging alongside; it ends in shadow."
+      "0-2s": "Her right hand grabs the soaked palm frond by its stem and pulls it to her.",
+      "2-4s": "The view creeps slowly forward low over the gravel toward the same hollow, the frond dragging under her hand; the hollow grows slightly larger."
     },
     "speech": {
       "speaker": "Nora",
@@ -1968,7 +1971,11 @@
       "Only Nora speaks, and only in Latin American Spanish; nobody speaks over anyone else; the animals make only animal sounds, never words.",
       "Deep focus: strictly NO shallow depth of field, strictly NO bokeh, no blurred background.",
       "Dialogue word count strictly 6 words, exactly as written in script.md.",
-      "HAND LOCK: strictly NO male hands, NO hairy knuckles, NO hairy forearms, NO long or frayed sleeve on the forearm, NO rings, NO watch, NO painted nails, NO extra or fused fingers."
+      "HAND LOCK: strictly NO male hands, NO hairy knuckles, NO hairy forearms, NO long or frayed sleeve on the forearm, NO rings, NO watch, NO painted nails, NO extra or fused fingers.",
+      "SLEEVE COLOUR LOCK: any sleeve in view is the short olive-green linen sleeve of the outfit in the Nora Body reference; strictly NO cream, NO beige, NO white shirt.",
+      "ONE-TAKE LOCK (CRITICAL): one single unbroken first-person take through Nora's own eyes; no cut, no jump, no scene change; it never switches to a third-person or side view.",
+      "FACE LOCK (CRITICAL): Nora's face, head, hair and shoulders NEVER appear anywhere in the frame; only her two forearms and hands are ever visible.",
+      "The hollow is the same one from the first frame, in the same place in the earth bank; no new cave, tunnel or arch appears; she does not reach or enter it in this clip."
     ],
     "start_frame": {
       "type": "GENERATE_IMAGE",
