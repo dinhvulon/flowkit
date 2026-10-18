@@ -115,7 +115,8 @@
   "clean_media_id": "6198384e-a835-4d3b-8bd6-11a0f9b214ce",
   "start_frame_mode": "none (user 2026-10-18: refs-only r2v)",
   "video_media_id": "273e4575-57c1-40a5-993d-9317f77230c9",
-  "video_file": "scenes/scene_005_RA-06_14421c95.mp4"
+  "video_file": "scenes/scene_005_RA-06_14421c95.mp4",
+  "approved": true
  },
  "RA-07": {
   "scene_id": "f996fd3e-2ce7-4160-a377-c79c2c626a4b",
