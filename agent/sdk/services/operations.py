@@ -84,6 +84,46 @@ def _char_matches(c: dict, name_set: set) -> bool:
     return (slug and slug in name_set) or (name and name in name_set)
 
 
+def _voice_token(voice_description: str | None) -> str | None:
+    """First word of a voice_description is the Gemini voice ID ("kore: firm..." -> "kore")."""
+    words = (voice_description or "").strip().split()
+    tok = words[0].rstrip("—:,-").lower() if words else ""
+    return tok or None
+
+
+def _resolve_voice_ids(video_prompt: str | None, char_names: list, project_chars: list) -> str | None:
+    """Voice(s) for the people who actually speak in the clip, in speaking order, comma-joined.
+
+    1. Structured JSON prompt (Rule 55): speech.speaker gives who speaks; speech.voices gives
+       explicit IDs, otherwise each speaker's entity voice_description is used.
+    2. Otherwise the first voiced entity in the scene's character_names order.
+    """
+    by_name = {}
+    for c in project_chars:
+        tok = _voice_token(c.get("voice_description"))
+        if tok:
+            for key in (c.get("name"), c.get("slug")):
+                if key:
+                    by_name[key] = tok
+    try:
+        speech = json.loads(video_prompt or "").get("speech") or {}
+    except (json.JSONDecodeError, AttributeError):
+        speech = {}
+    if isinstance(speech, dict) and speech.get("speaker"):
+        explicit = speech.get("voices") or {}
+        ids = []
+        for spk in speech["speaker"]:
+            vid = explicit.get(spk) or by_name.get(spk)
+            if vid and vid not in ids:
+                ids.append(vid.strip().lower())
+        if ids:
+            return ",".join(ids)
+    for name in char_names:
+        if by_name.get(name):
+            return by_name[name]
+    return None
+
+
 def _reference_aspect_ratio(entity_type: str) -> str:
     """Reference images are always 16:9 — characters included (multi-view sheets)."""
     return "IMAGE_ASPECT_RATIO_LANDSCAPE"
@@ -447,18 +487,12 @@ class OperationService:
                 f"(got {scene.get('duration')!r}); PATCH /api/scenes/<id> "
                 f"with \"duration\" set to one of (4, 6, 8, 10)")}
 
-        # Resolve voice_id (e.g. "laomedeia" for slot 7 in MZZa6b)
+        # Resolve voice_id (e.g. "laomedeia" for slot 7 in MZZa6b): the voice of whoever speaks
+        # in this clip, not of whichever voiced entity comes first in the project.
         voice_id = None
-        if char_names_raw:
+        if char_names_raw or scene.get("video_prompt"):
             project_chars = await crud.get_project_characters(pid)
-            char_names_set = set(char_names_raw)
-            for c in project_chars:
-                if _char_matches(c, char_names_set) and c.get("voice_description"):
-                    raw_vd = c["voice_description"].strip()
-                    tok = raw_vd.split()[0].rstrip("—:,-").lower()
-                    if tok:
-                        voice_id = tok
-                        break
+            voice_id = _resolve_voice_ids(scene.get("video_prompt"), char_names_raw or [], project_chars)
         if not voice_id and project and project.get("narrator_voice"):
             voice_id = str(project["narrator_voice"]).strip().lower()
         if not voice_id:

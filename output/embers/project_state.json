@@ -1,78 +1,138 @@
 {
-  "project_id": "6a41afad-f3cb-459f-a724-4db4fde08cb8",
-  "character_ids": {
-    "Fire Line": "1d869bf4-3830-4bec-927e-f28075724e63",
-    "Hale Ranch": "0d434e12-0ad6-4a16-9882-73e2c9b71895"
+ "project_id": "f4415512-2ab8-42ce-852f-122351e055a8",
+ "video_id": "d6806340-c53a-4e58-86b0-940e2dfb1082",
+ "character_ids": {
+  "Juniper": "26df0eb4-92ac-414a-85d1-19d1dae55ae0",
+  "Eli": "3765cbe4-e92f-4d96-9273-838c738416ae",
+  "Cedar Flat": "3ef4319d-6ae4-4c90-90c3-46e70da4f84a",
+  "Hale Ranch": "571df687-440c-49aa-a72b-ce7ba2237962",
+  "Fire Line": "5d83658f-937c-42e5-86b3-d15ed3e276bd",
+  "Nora": "70358912-8d74-490a-85e9-4a4fc43119fb",
+  "HALE Helmet": "98146242-2775-4760-a279-6ddb9252742c",
+  "The Black": "a26f4949-7cd7-4846-afd4-4ee80e06661b",
+  "Ridge Road": "a3c42179-4ef3-48d3-88c1-9295a2f6779d",
+  "Nora Pickup": "c989f5ee-56b1-4e70-81be-d2c0ac586d69",
+  "Eli Pack": "cfbf23d4-cf9b-4da8-9051-83b379dbc37a",
+  "Crew Helmet": "cfe70552-7a50-40c6-9f03-19fae59cd440",
+  "Keller Barn": "e9eee774-b21c-4ab3-ab9c-934ccdb2547c",
+  "Nora Body Ranch": "eaa271a7-22b9-4b90-a761-5d4b716d2df3",
+  "Eli Bike": "eab5d82a-7f1c-46d0-949b-3c4623be5784",
+  "Ray": "edfc8719-b70a-4092-81b2-5b23b8a95783",
+  "Staging Area": "f70e5ad4-4b9c-4770-9c23-9f2d912dc0ab",
+  "Nora Body Fire": "fb0ddfb0-c002-4989-b0c3-af01661f9a43"
+ },
+ "created": "2026-10-18",
+ "note": "New project for script_v7 (old 6a41afad lost when flow_agent.db was reverted by git). All refs new except Nora face.",
+ "uploads": {
+  "Nora face (nora_main_clean.jpg)": "134ff212-a50e-4e9f-a5b0-5ee1a6295d10",
+  "Nora base body (nora_body_v3_clean.jpg, EDIT source for Nora Body Ranch/Fire)": "677ebc70-867c-450c-a17e-d9120449458d"
+ },
+ "refs": {
+  "Nora": {
+   "media_id": "134ff212-a50e-4e9f-a5b0-5ee1a6295d10",
+   "file": "uploads/nora_main_clean.jpg"
   },
-  "video_id": "128db436-d06f-4ceb-a90a-905f9250c5ba",
-  "scene_ids": {
-    "FL-08": "3ec5eca6-ecbe-4e46-ac9f-2586d9e4f598",
-    "RA-01": "599db95a-f098-4a87-b15f-5785e4b74c2d"
+  "Nora Body Ranch": {
+   "raw_media_id": "3f9409bf-5ab3-483f-9260-17a8617045c5",
+   "clean_media_id": "66b36af8-8d71-4feb-a915-1274b18306a4",
+   "media_id": "66b36af8-8d71-4feb-a915-1274b18306a4",
+   "file": "refs/nora_body_ranch_clean.jpg"
   },
-  "refs": {
-    "Fire Line": {
-      "raw_media_id": "266e2c92-0ee0-49fb-b95d-074119d79fad",
-      "clean_media_id": "54d231c8-18ea-4aad-a1c6-c01b553b0fec",
-      "file": "FL_clean.jpg"
-    },
-    "Hale Ranch": {
-      "raw_media_id": "f03971dd-2159-4f38-bdfc-d9671f9fed1a",
-      "clean_media_id": "38a536a9-8872-453a-917e-2d040b4b3f8a",
-      "file": "HR_clean.jpg",
-      "clean_media_id_v1": "51839cab-ddf1-4bd6-872b-d895313f5be3"
-    }
+  "Nora Body Fire": {
+   "raw_media_id": "f4cb9f90-779a-4047-a569-6968129124d3",
+   "clean_media_id": "d0173244-c54e-4bd4-9651-9bb197464400",
+   "media_id": "d0173244-c54e-4bd4-9651-9bb197464400",
+   "file": "refs/nora_body_fire_clean.jpg"
   },
-  "start_frames": {
-    "FL-08": {
-      "raw_media_id": "1def968d-d631-4c7b-ace4-fce77c8696e5",
-      "clean_media_id": "0bafa8aa-3bc3-42dc-b3a7-31d53c865775",
-      "file": "scene_FL-08_v3_clean.jpg",
-      "image_prompt_override": "Single still photograph, frame 0 of this shot before any movement. Extreme wide shot through a very long 600mm telephoto lens from a much HIGHER vantage point: shot from a tall mountain summit far above and several miles away, looking DOWN steeply at about 30 degrees onto the burning terrain, compressed perspective, like real wildfire news footage from a high lookout: strong heat shimmer, slight handheld drift. We see the land from above: the whole mountain ridge from {{media:54d231c8-18ea-4aad-a1c6-c01b553b0fec|FL_clean.jpg}} lies far below in the middle of the frame, with the deep canyon floor visible beneath it and layer after layer of ridges stretching toward the horizon; the dry pine ridge and its dirt fire line are tiny against the enormous scale of the fire. A massive wall of fire already climbs the near slope below the ridge: a long continuous front of tall orange flames, many trees torching, dense glowing embers. On the far side of the canyon a second fire burns in the pine crowns. Above it all a gigantic towering column of dark brown-grey smoke rises and fills the upper two thirds of the sky, lit orange from below; a small blood-red sun hangs dimmed inside the smoke. Dusk. Majestic, overwhelming, epic natural scale. No identifiable person in the frame, no vehicles, no aircraft. 35mm film, cinematic documentary realism, natural film grain, natural color; real wildfire footage look: irregular orange-yellow flames, dark brown-grey smoke, glowing embers. Deep focus, entire frame sharp. No readable text anywhere. Not a 3D render, not CGI, no god rays."
-    },
-    "FL-08_v1": {
-      "raw_media_id": "2d2b4577-b0b7-4b16-8a2b-6fe40874f2fb",
-      "clean_media_id": "e14ee9ae-0467-444a-a577-4bf8adba4371",
-      "file": "scene_FL-08_clean.jpg"
-    },
-    "FL-08_v2": {
-      "raw_media_id": "fbbcfc6a-815e-4283-841d-6bc585b21c96",
-      "clean_media_id": "6a68dd8d-7c82-4abf-a261-54c2f74bd15a",
-      "file": "scene_FL-08_v2_clean.jpg",
-      "image_prompt_override": "Single still photograph, frame 0 of this shot before any movement. Extreme wide shot through a very long 600mm telephoto lens from a far opposite ridge several miles away, compressed perspective, like real wildfire news footage: strong heat shimmer, slight handheld drift. The whole mountain ridge from {{media:54d231c8-18ea-4aad-a1c6-c01b553b0fec|FL_clean.jpg}} is small in the lower third of the frame, seen from far across a deep canyon; the dry pine ridge and its dirt fire line are tiny against the enormous scale of the fire. A massive wall of fire already climbs the near slope below the ridge: a long continuous front of tall orange flames, many trees torching, dense glowing embers. On the far side of the canyon a second fire burns in the pine crowns. Above it all a gigantic towering column of dark brown-grey smoke rises and fills the upper two thirds of the sky, lit orange from below; a small blood-red sun hangs dimmed inside the smoke. Dusk. Majestic, overwhelming, epic natural scale. No identifiable person in the frame, no vehicles, no aircraft. 35mm film, cinematic documentary realism, natural film grain, natural color; real wildfire footage look: irregular orange-yellow flames, dark brown-grey smoke, glowing embers. Deep focus, entire frame sharp. No readable text anywhere. Not a 3D render, not CGI, no god rays."
-    },
-    "RA-01": {
-      "raw_media_id": "b167b5ad-cc91-49ba-8de7-888adcd52e94",
-      "clean_media_id": "4a639eb4-4166-4173-b4e2-6e2ccf087f64",
-      "file": "scene_RA-01_v2_clean.jpg",
-      "image_prompt_override": "Single still photograph, frame 0 of this shot before any movement. Extreme wide shot, 35-50mm lens, static tripod, calm composition, eye level from the edge of the pasture. Location: exactly the ranch in {{ref:Hale Ranch}}: the same weathered wooden house with porch, the faded red barn, the wooden corral, the gravel yard and the split-rail fence in waist-high golden dry grass. In the middle of the gravel yard between the house and the barn stands an old faded white two-horse bumper-pull horse trailer, unhitched, its rear loading ramp lowered flat onto the gravel, empty inside. Light: early dawn, low warm golden sun from the side, long soft shadows, dry dusty haze. On the far ridge behind the ranch a single thick column of dark brown-grey wildfire smoke already rises from behind the hills and leans to the right with the wind; no flames visible, the fire is hidden behind the ridge, the smoke is far away and quiet. No people, no horses, no animals, no cars. 35mm film, cinematic documentary realism, natural film grain, natural color. Deep focus, entire frame sharp from the foreground grass to the far ridge. No readable text anywhere, no letters on the trailer, no logos. Not a 3D render, not CGI, no god rays, no volumetric beams.",
-      "v1": {
-        "raw_media_id": "1e5b0f68-7873-481e-be0b-1d4a812cb680",
-        "clean_media_id": "f49eb1a6-855d-4c62-98c0-07925db46ec4",
-        "file": "scene_RA-01_clean.jpg"
-      }
-    }
+  "Eli": {
+   "raw_media_id": "90856b8f-6d0b-42ea-b455-6cd3791a12e1",
+   "clean_media_id": "8ffec18e-4abc-410d-bd30-6ef8c74fe79b",
+   "media_id": "8ffec18e-4abc-410d-bd30-6ef8c74fe79b",
+   "file": "refs/eli_clean.jpg"
   },
-  "videos": {
-    "FL-08": {
-      "request_id": "6794f8a3-88d3-4fce-b468-91bc165bace9",
-      "media_id": "84450f0b-7498-4ba0-b756-7f369eca35c7",
-      "file": "scene_FL-08_v3r2v_3ec5eca6.mp4",
-      "mode": "r2v_inline_start_mention"
-    },
-    "FL-08_v1": {
-      "request_id": "fc5f8ea3-b549-414a-98ce-4e621d024e77",
-      "media_id": "c490534d-bf48-48ee-b4b6-1eb7986a05ff",
-      "file": "scene_FL-08_3ec5eca6.mp4"
-    },
-    "FL-08_v2": {
-      "request_id": "6a3fd4dc-d028-408e-9c8e-a73c7d92b0dd",
-      "media_id": "e2773c8e-dea9-40d6-9a97-caeaaf4fb8df",
-      "file": "scene_FL-08_v2_3ec5eca6.mp4",
-      "mode": "omni_first_frame"
-    }
+  "Ray": {
+   "raw_media_id": "50930f39-0121-4606-97ba-af02aad93ef3",
+   "clean_media_id": "24d8c5d2-68d5-444c-b0ae-f13eec36f5f0",
+   "media_id": "24d8c5d2-68d5-444c-b0ae-f13eec36f5f0",
+   "file": "refs/ray_clean.jpg"
   },
-  "video_prompts_old": {
-    "FL-08_v1": "{\"clip_id\":\"FL-08\",\"scene_name\":\"RH · the walls meet\",\"duration\":8,\"aspect_ratio\":\"16:9\",\"refs\":[\"Fire Line\"],\"camera\":{\"viewpoint\":\"third-person cinematic camera; the camera itself is never seen\",\"shot_size\":\"EWS long lens\",\"description\":\"very long telephoto lens from far away, like real news or fire-crew footage: heat shimmer, smoke-dimmed sun, slight handheld drift\",\"focus\":\"deep focus, entire frame sharp from foreground to the far ridge (f/8)\"},\"style\":\"35mm film, cinematic documentary realism, natural film grain, natural color, real locations and real people; real wildfire footage look: irregular orange-yellow flames, dark brown-grey smoke, glowing embers in the air, faces lit by fire glow, fire never fills the foreground of a face shot\",\"setting\":\"Location: exactly the place in {{media:54d231c8-18ea-4aad-a1c6-c01b553b0fec|FL_clean.jpg}}, a steep dry ridge of pine and golden grass where the crew cuts a fire line. Light: dusk, smoke-red sun.\",\"characters\":[],\"timeline_action\":{\"0-3s\":\"Long lens from far away through heat shimmer: the burnout races uphill on the near slope.\",\"3-6s\":\"A crown fire comes down the canyon from the other side, torching treetop after treetop.\",\"6-8s\":\"The two walls of fire meet and tear upward into one towering column of flame and dark smoke.\"},\"speech\":{\"speaker\":[],\"voices\":{},\"delivery\":\"no native dialogue\",\"dialogue\":[]},\"post_vo\":[],\"dramatic_craft\":{\"beat\":\"RH · the walls meet\",\"subtext\":\"The plan works, and it is terrifying.\"},\"audio\":\"natural sound: roar, the crew falls silent; wildfire roar, wind, crackling wood; no background music\",\"negative_constraints\":[\"No subtitles, no captions, no on-frame text, no logos, no watermarks; no readable letters anywhere, including on helmets and vehicles.\",\"ANTI-CGI LOCK: real documentary footage, not a 3D render, not a video game, not CGI fire, not cartoon flames, no plastic skin.\",\"No breath vapor and no white steam from anyone's mouth; no god rays, no volumetric beams.\",\"Separate bodies never merge; natural hands with five fingers; no extra limbs.\",\"No background music.\",\"No bokeh and no blurred background.\",\"Nobody speaks in this clip.\",\"Spoken words in this clip: 0 (Rule 49 band for 8s: 18-22).\"]}",
-    "FL-08_v2": "{\"clip_id\": \"FL-08\", \"scene_name\": \"RH - the walls meet\", \"duration\": 8, \"aspect_ratio\": \"16:9\", \"refs\": [], \"start_frame\": {\"type\": \"GENERATED_IMAGE\", \"note\": \"Approved start frame v3 is frame 0 (Omni first-frame). The clip continues exactly from it.\"}, \"camera\": {\"viewpoint\": \"third-person cinematic camera; the camera itself is never seen\", \"shot_size\": \"EWS long lens\", \"description\": \"ONE single continuous locked-off shot, exactly the framing of the first frame: a very long 600mm telephoto lens from a tall mountain summit far above, looking steeply down at about 30 degrees onto the burning ridge and canyon. The camera does not cut, does not change angle, does not move closer; only a very slow subtle push-in and slight handheld drift with heat shimmer.\", \"focus\": \"deep focus, entire frame sharp from foreground to the far ridges (f/8)\"}, \"style\": \"35mm film, cinematic documentary realism, natural film grain, natural color; real wildfire news footage from a high lookout: irregular orange-yellow flames, dark brown-grey smoke, glowing embers drifting on the wind\", \"setting\": \"Location: the same ridge, canyon and layered mountain ridges seen in the first frame, far below the camera. Light: dusk, small blood-red sun dimmed inside the smoke.\", \"characters\": [], \"timeline_action\": {\"0-3s\": \"Seen from high above, the long wall of fire on the near slope keeps climbing toward the ridge, trees torching one after another, embers streaming uphill.\", \"3-6s\": \"On the far side of the canyon the crown fire spreads down through the pine tops, flames jumping from tree to tree toward the canyon floor.\", \"6-8s\": \"The two fire fronts merge along the canyon; the dark brown-grey smoke column thickens and slowly rises higher, lit orange from below.\"}, \"speech\": {\"speaker\": [], \"voices\": {}, \"delivery\": \"no native dialogue\", \"dialogue\": []}, \"post_vo\": [], \"dramatic_craft\": {\"beat\": \"RH - the walls meet\", \"subtext\": \"The plan works, and it is terrifying.\"}, \"audio\": \"natural sound: distant deep wildfire roar, wind, faint crackling; no background music\", \"negative_constraints\": [\"One continuous shot with no cuts, no angle change, no scene change and no jump to a closer view.\", \"No explosion, no fireball, no mushroom cloud, no blast wave; the fire burns like a real wildfire, spreading through trees and grass.\", \"ANTI-CGI LOCK: real documentary footage, not a 3D render, not a video game, not CGI fire, not cartoon flames.\", \"No people, no vehicles, no aircraft in the frame.\", \"No subtitles, no captions, no on-frame text, no logos, no watermarks.\", \"No god rays, no volumetric beams.\", \"No background music.\", \"No bokeh and no blurred background.\", \"Nobody speaks in this clip.\", \"Spoken words in this clip: 0 (Rule 49 band for 8s: 18-22).\"]}"
+  "Juniper": {
+   "raw_media_id": "dd82a218-6dc1-4226-ba91-10b23ae8a32d",
+   "clean_media_id": "cc6d0d0e-e07c-48da-ad6c-c4c85045db79",
+   "media_id": "cc6d0d0e-e07c-48da-ad6c-c4c85045db79",
+   "file": "refs/juniper_clean.jpg"
+  },
+  "Hale Ranch": {
+   "raw_media_id": "7fbee13a-babb-42c5-a249-5e89d2dab999",
+   "clean_media_id": "47b71b56-0c24-45a8-9d1f-d713d17dc82b",
+   "media_id": "47b71b56-0c24-45a8-9d1f-d713d17dc82b",
+   "file": "refs/hale_ranch_clean.jpg"
+  },
+  "Fire Line": {
+   "raw_media_id": "4a317b66-625e-4ca4-8aa5-f6e5df21ed82",
+   "clean_media_id": "1e8a091b-8605-44bd-931c-5254b3ea9794",
+   "media_id": "1e8a091b-8605-44bd-931c-5254b3ea9794",
+   "file": "refs/fire_line_clean.jpg"
+  },
+  "Staging Area": {
+   "raw_media_id": "73bef002-72b3-48d7-a8e1-3bf709a8356e",
+   "clean_media_id": "7a4152b9-05cd-461b-833b-00adab07e667",
+   "media_id": "7a4152b9-05cd-461b-833b-00adab07e667",
+   "file": "refs/staging_area_clean.jpg"
+  },
+  "Cedar Flat": {
+   "raw_media_id": "c33cf08c-16ae-48ab-812f-8c15f5860a5f",
+   "clean_media_id": "b22241b5-f6a5-4075-95a8-6615e4de9a83",
+   "media_id": "b22241b5-f6a5-4075-95a8-6615e4de9a83",
+   "file": "refs/cedar_flat_clean.jpg"
+  },
+  "Ridge Road": {
+   "raw_media_id": "f004cd5a-8c27-4fce-acdf-a95bb3abea2f",
+   "clean_media_id": "c2680b90-1541-4259-9e29-2918867219b0",
+   "media_id": "c2680b90-1541-4259-9e29-2918867219b0",
+   "file": "refs/ridge_road_clean.jpg"
+  },
+  "Keller Barn": {
+   "raw_media_id": "9fa629d4-c60a-4dab-8bf7-a32b4f783869",
+   "clean_media_id": "095cd3ce-c7f2-4db9-9115-20ea8959382c",
+   "media_id": "095cd3ce-c7f2-4db9-9115-20ea8959382c",
+   "file": "refs/keller_barn_clean.jpg"
+  },
+  "The Black": {
+   "raw_media_id": "fcbdd59e-4639-451a-b54e-f6589306ef72",
+   "clean_media_id": "c02305d4-a8dd-44a1-ba0f-8bc0924fc2a4",
+   "media_id": "c02305d4-a8dd-44a1-ba0f-8bc0924fc2a4",
+   "file": "refs/the_black_clean.jpg"
+  },
+  "HALE Helmet": {
+   "raw_media_id": "d9d76fb7-a677-47f9-83f7-909cf8d03f80",
+   "clean_media_id": "acb730d1-75fd-4866-bc04-3285c458f81b",
+   "media_id": "acb730d1-75fd-4866-bc04-3285c458f81b",
+   "file": "refs/hale_helmet_clean.jpg"
+  },
+  "Crew Helmet": {
+   "raw_media_id": "85247998-7f30-4bff-9c1d-763471e212bc",
+   "clean_media_id": "182bfdbd-6c89-4886-828c-04c1ea740f9f",
+   "media_id": "182bfdbd-6c89-4886-828c-04c1ea740f9f",
+   "file": "refs/crew_helmet_clean.jpg"
+  },
+  "Nora Pickup": {
+   "raw_media_id": "db3e6cf3-196a-40b4-b331-7ed468548ea8",
+   "clean_media_id": "74d374ff-538e-436d-ad15-368412c4f4cd",
+   "media_id": "74d374ff-538e-436d-ad15-368412c4f4cd",
+   "file": "refs/nora_pickup_clean.jpg"
+  },
+  "Eli Bike": {
+   "raw_media_id": "e9b66ae0-7dd0-49fe-902d-b35845053f23",
+   "clean_media_id": "c8f8d887-f46f-41b0-b13f-2e9b2c058f58",
+   "media_id": "c8f8d887-f46f-41b0-b13f-2e9b2c058f58",
+   "file": "refs/eli_bike_clean.jpg"
+  },
+  "Eli Pack": {
+   "raw_media_id": "ae6ac6dc-b5ca-43f5-a4bd-364b86642bb3",
+   "clean_media_id": "8253ab13-be5c-4526-ad26-3985c5f4288c",
+   "media_id": "8253ab13-be5c-4526-ad26-3985c5f4288c",
+   "file": "refs/eli_pack_clean.jpg"
   }
+ }
 }

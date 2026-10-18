@@ -42,11 +42,11 @@ FLOW_ALLOW_DEGRADED = os.environ.get("FLOW_ALLOW_DEGRADED", "0") == "1"
 # only keep FLOW_POLL_MIN_GAP_S between themselves; each video is instead
 # polled once every VIDEO_POLL_INTERVAL (user 2026-10-16: "3p call check status").
 FLOW_GENERATION_MIN_INTERVAL_S = max(
-    0.0, float(os.environ.get("FLOW_GENERATION_MIN_INTERVAL_S", "30"))
+    0.0, float(os.environ.get("FLOW_GENERATION_MIN_INTERVAL_S", "45"))
 )
 FLOW_GENERATION_MAX_INTERVAL_S = max(
     FLOW_GENERATION_MIN_INTERVAL_S,
-    float(os.environ.get("FLOW_GENERATION_MAX_INTERVAL_S", "45")),
+    float(os.environ.get("FLOW_GENERATION_MAX_INTERVAL_S", "60")),
 )
 FLOW_GENERATION_MAX_CONCURRENT = max(
     1, int(os.environ.get("FLOW_GENERATION_MAX_CONCURRENT", "2"))
