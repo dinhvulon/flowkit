@@ -1122,7 +1122,16 @@
     "flow_account": "dinhvulon25",
     "flow_project_id": "5fef436f-7af9-4797-b88b-c5f128b63a03",
     "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)",
-    "created_note": "2026-10-19: scene created from prompts_v7.json (chips resolved to named refs); handoff lessons not applied yet"
+    "created_note": "2026-10-19: scene created from prompts_v7.json (chips resolved to named refs); handoff lessons not applied yet",
+    "video_media_id": "6835b1e1-837f-40f2-a7d1-ff07e3164ec9",
+    "video_file": "scenes/scene_040_CH-05_213d9d86_v2.mp4",
+    "approved": true,
+    "ai_keep": true,
+    "ai_score": 8.5,
+    "submit_note": "v2 request 9434e816 op 94c9b9a6 (Ray ref added, yellow fire shirt lock)",
+    "review_note": "v2 score 8.5 (CC 8.5 / PA 8.5 / MQ 8.5 / VF 8.5 / TC 8.5 / CO 8.5): Ray now in his yellow fire shirt with pack straps and plain white helmet, seen from behind (fixes v1 white T-shirt); one continuous shot; Nora walks up hard, grips and swings open the blue pickup door, looks back at Ray; staging intact, fire only far away. Whisper PASS 100% Nora/kore 0.08-4.8s, pitch 246 Hz (firmer than v1). Audio -14.7 LUFS, peak -0.7 dBFS. Minor: Ray's back fills the frame for ~0.5s around 1.5s; the edge of his cheek shows at the end; pink retardant lighter on Nora's shirt.",
+    "review_note_v1": "v1 score 8.15 (CC 7.5 / PA 8.0 / MQ 8.5 / VF 8.5 / TC 8.5 / CO 8.5): one continuous shot over Ray's shoulder (white helmet, face never shown); Nora (pink-stained yellow shirt) steps up, points hard at Ray, yanks open the blue pickup door and looks back at him; staging trucks intact, fire only on the far ridge (nofire style works). Whisper PASS 100% Nora/kore 0.3-5.38s, delivery firm. Audio -15.5 LUFS, peak -1.0 dBFS. Flag: Ray in the foreground wears a WHITE T-SHIRT, not his yellow fire shirt - the clip's refs do not include Ray; shoulder patch/emblem on Nora's sleeve and helmet.",
+    "approve_note": "user approved v2 2026-10-19; v1 deleted"
   },
   "CH-07": {
     "scene_id": "7387b5cb-6d4e-4305-9b99-4991e23b3965",
@@ -1136,7 +1145,16 @@
     "flow_account": "dinhvulon25",
     "flow_project_id": "5fef436f-7af9-4797-b88b-c5f128b63a03",
     "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)",
-    "created_note": "2026-10-19: scene created from prompts_v7.json (chips resolved to named refs); handoff lessons not applied yet"
+    "created_note": "2026-10-19: scene created from prompts_v7.json (chips resolved to named refs); handoff lessons not applied yet",
+    "approved": true,
+    "review_note_v1": "v1 score 7.1 (media 471e7962-c866-43b1-aa62-d47aeeec0999, scenes/scene_041_CH-07_7387b5cb.mp4; CC 5.5 / PA 7.5 / MQ 8.0 / VF 8.5 / TC 7.0 / CO 8.5): one steady high wide shot, staging trucks intact, fire only on the far ridge, dust plume behind the pickup, Whisper PASS (silent). FAIL: the pickup is TAN/brown, the Nora Pickup ref (and CH-05) is a dark navy-blue old Ford with a rusty toolbox; Ray is not in frame for 0-4s and then appears standing in the dust (pop-in) instead of being there from frame 0.",
+    "video_media_id": "65f7964b-5c5a-4494-bf74-b49c6c51d517",
+    "video_file": "scenes/scene_041_CH-07_7387b5cb_v2.mp4",
+    "ai_keep": true,
+    "ai_score": 8.5,
+    "submit_note": "v2 request f4a3eff6 op 6a626e96 (navy pickup lock, Ray in frame from frame 0)",
+    "review_note": "v2 score 8.5 (CC 8.5 / PA 8.5 / MQ 8.5 / VF 8.5 / TC 8.5 / CO 8.5): dark navy-blue Ford pickup matches the ref and CH-05 (fixes v1 tan truck); Ray (white helmet, yellow shirt) stands in the left foreground with his back to the viewer from the first frame to the last, watching; the pickup drives out left to right and away in a boiling dust plume; staging trucks intact, fire only on the far ridge under a red sunset. Whisper PASS (silent). Audio -20.5 LUFS, peak -9.1 dBFS. Minor: closer to eye level than a high angle; a dark print on the back of Ray's shirt.",
+    "approve_note": "user approved v2 2026-10-19; v1 deleted"
   },
   "CH-09": {
     "scene_id": "bbf4f595-c093-4e15-9a9c-e8960fbc9b37",
@@ -1149,20 +1167,40 @@
     "flow_account": "dinhvulon25",
     "flow_project_id": "5fef436f-7af9-4797-b88b-c5f128b63a03",
     "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)",
-    "created_note": "2026-10-19: scene created from prompts_v7.json (chips resolved to named refs); handoff lessons not applied yet"
+    "created_note": "2026-10-19: scene created from prompts_v7.json (chips resolved to named refs); handoff lessons not applied yet",
+    "video_media_id": "eba93aa0-ae42-4f02-b901-01dfc066d59e",
+    "video_file": "scenes/scene_042_CH-09_bbf4f595.mp4",
+    "approved": true,
+    "ai_keep": true,
+    "ai_score": 8.4,
+    "submit_note": "v1 request dcf8d88a op dbb61f3e",
+    "review_note": "v1 score 8.4 (CC 8.5 / PA 8.5 / MQ 8.5 / VF 8.5 / TC 8.0 / CO 8.5): one continuous MCU; Ray (white helmet, yellow shirt) in three-quarter profile lifts one radio, reports with eyes on the ridge, lowers it and holds still; no reply voice. Whisper 96%: full line heard 0.0-3.96s plus the last word 'Hale' after a short pause (transcribed 'hail'); the tool flagged CUT-OFF/extra speech because of that split - false positive, the line is complete. Audio -16.9 LUFS, peak -1.3 dBFS. Minor: flames burn on the hillside behind the staging trucks (on the hill, not on the trucks); the radio is a blur while he lifts it at 0-0.5s.",
+    "approve_note": "user approved 2026-10-19"
   },
   "RR-01": {
     "scene_id": "6d65d48b-d025-4a08-9c2b-4df3c4091590",
     "act": "",
     "duration": 8,
     "video_refs": [
+      "Nora",
+      "Nora Body Fire",
+      "Crew Helmet",
       "Nora Pickup",
       "Ridge Road"
     ],
     "flow_account": "dinhvulon25",
     "flow_project_id": "5fef436f-7af9-4797-b88b-c5f128b63a03",
     "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)",
-    "created_note": "2026-10-19: scene created from prompts_v7.json (chips resolved to named refs); handoff lessons not applied yet"
+    "created_note": "2026-10-19: scene created from prompts_v7.json (chips resolved to named refs); handoff lessons not applied yet",
+    "approved": true,
+    "review_note_v1": "v1 score 7.35 (media c3e37cb8-43c6-4ef2-a17b-6916f45e3ff6, scenes/scene_043_RR-01_6d65d48b.mp4; CC 8.0 / PA 6.0 / MQ 7.0 / VF 8.0 / TC 7.5 / CO 8.0): dark navy Ford pickup on a gravel road between burning pines, no driver visible, Whisper PASS (silent). FAIL: the pickup's front points to frame LEFT and it drives right-to-left / toward the camera (CH-07 exit was left-to-right); a burst of flame flares under the front wheel ~2.5-3.5s (reads like the truck catching fire); daylight haze instead of night-orange.",
+    "video_media_id": "42877952-277c-4646-8061-a0119f2741f2",
+    "video_file": "scenes/scene_043_RR-01_6d65d48b_v3.mp4",
+    "ai_keep": true,
+    "ai_score": 8.5,
+    "submit_note": "v3 request 94a430c3 op 4da842ea (front to frame right, Nora visible driving, fast tracking); v2 (no driver ref, silhouette read as a man, slow) superseded",
+    "review_note": "v3 score 8.5 (CC 8.5 / PA 8.5 / MQ 8.5 / VF 8.5 / TC 8.5 / CO 8.5): dark navy Ford in clean profile, front to frame right the whole clip (fixes v1 direction); Nora in yellow helmet clearly at the wheel through the driver's window (fixes v2 male silhouette); fast parallel tracking - gravel and foreground trees streak past, burning pines both sides, embers on the road; no flame touches the truck. Whisper PASS (silent). Audio -18.4 LUFS, peak -8.2 dBFS. Minor: light reads as hazy dusk rather than near-dark; the truck's own bounce is mild - speed comes mostly from the background blur.",
+    "approve_note": "user approved v3 2026-10-19; v1, v2 deleted"
   },
   "RR-02": {
     "scene_id": "ba32ecf9-5503-4009-8468-b6ac16e69052",
@@ -1174,7 +1212,15 @@
     "flow_account": "dinhvulon25",
     "flow_project_id": "5fef436f-7af9-4797-b88b-c5f128b63a03",
     "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)",
-    "created_note": "2026-10-19: scene created from prompts_v7.json (chips resolved to named refs); handoff lessons not applied yet"
+    "created_note": "2026-10-19: scene created from prompts_v7.json (chips resolved to named refs); handoff lessons not applied yet",
+    "video_media_id": "9d610353-d1d2-4f04-8a9b-1ccc7cb769fd",
+    "video_file": "scenes/scene_044_RR-02_ba32ecf9.mp4",
+    "approved": true,
+    "ai_keep": true,
+    "ai_score": 8.3,
+    "submit_note": "v1 request 6154809b op e73751fe",
+    "review_note": "v1 score 8.3 (CC - / PA 8.0 / MQ 8.5 / VF 8.5 / TC 8.5 / CO 8.5): low view over the hood edge up the gravel road between burning pines, smoke drifting; one tall pine on the right tips and falls in one continuous motion right to left across the road (~1.5-3s) and lands flat, then burns along the trunk; no explosion, no fireball. Whisper PASS (silent). Audio -23.2 LUFS, peak -0.5 dBFS. Minor: the falling pine's crown is mostly green (only the trunk burns); light reads as smoky daylight-dusk rather than dark; headlight beams not distinct.",
+    "approve_note": "user approved 2026-10-19"
   },
   "RR-04": {
     "scene_id": "855e529b-0641-4150-b8df-b0351e69f903",
@@ -1182,13 +1228,23 @@
     "duration": 8,
     "video_refs": [
       "Nora",
-      "Nora Body Fire",
-      "Nora Pickup"
+      "Nora Body Fire"
     ],
     "flow_account": "dinhvulon25",
     "flow_project_id": "5fef436f-7af9-4797-b88b-c5f128b63a03",
     "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)",
-    "created_note": "2026-10-19: scene created from prompts_v7.json (chips resolved to named refs); handoff lessons not applied yet"
+    "created_note": "2026-10-19: scene created from prompts_v7.json (chips resolved to named refs); handoff lessons not applied yet",
+    "video_media_id": "3b3151aa-492e-4f47-97e9-75d515dce514",
+    "video_file": "scenes/scene_045_RR-04_855e529b_v5.mp4",
+    "approved": false,
+    "ai_keep": true,
+    "ai_score": 8.2,
+    "approve_note": "user approved 2026-10-19 (before AI review); AI flagged the viewfinder corner marks",
+    "submit_note": "v5 request f5539d65 op c9b94ed6 (voicemail-style clear close voice, no pickup ref, empty road)",
+    "review_note": "v5 score 8.2 (CC 8.0 / PA 8.5 / MQ 8.5 / VF 8.5 / TC 8.5 / CO 8.0): over-the-shoulder from the back seat, face never shown; ponytail as in the ref; handset at her ear, lowered at the end while she grips the wheel; road ahead empty, no extra truck (fixes v4); fire only outside. Whisper PASS 100% Eli/fenrir 0.0-5.1s BUT '? VOICE?' pitch 308 Hz (v3/v4 were 152 Hz) - the clearer voicemail voice may read young or female - listen. Audio -15.5 LUFS, peak -1.4 dBFS. Minor: the road looks paved with a centre line rather than gravel.",
+    "review_note_v1": "v1 score 8.0 (CC 8.5 / PA 8.5 / MQ 8.5 / VF 6.5 / TC 8.5 / CO 8.0): from the passenger seat, Nora in three-quarter profile listens on a corded handset, eyes go wide, grips the wheel, lowers the handset; scorched sleeve, bare head; fire only outside the windshield; no voice from the handset - Whisper PASS (silent). Audio -31.7 LUFS (quiet), peak -16.0 dBFS. FLAG: white viewfinder corner brackets are burned into all four corners of every frame (camera-UI overlay) - needs a crop (~6%) in the edit or a regen; the handset is a coiled-cord radio mic rather than a phone. | USER: regen.",
+    "edit_audio": "v5 picture + dub: v5 native audio muted 0-5.4s (its 308 Hz voice read as Nora talking), then fades back; Eli's EL-06 v3 voice 0-6s (line + crash + mare scream), light voicemail filter 180-5000 Hz +3 dB @1.8 kHz, compressed, +7 dB, starts 0.2s, fades 5.6-6.0s; loudnorm -16 LUFS. Preview: output/embers/edit/preview_RR-04_v5_elivoice_v2.mp4 (Whisper 100% Eli 0.27-4.35s, 184 Hz).",
+    "review_note_v3": "v3 score 7.8 (media 85147556-0a58-4665-98a4-f514916231b9, scenes/scene_045_RR-04_855e529b_v3.mp4; CC 8.5 / PA 7.5 / MQ 8.0 / VF 8.5 / TC 8.0 / CO 8.5): native voice from the handset works - Whisper PASS 100% Eli/fenrir 0.0-4.6s, 152 Hz; braid back, scorched sleeve, no overlays, fire only outside. FAIL: Nora's mouth opens and moves ~1.5-3.5s as if she says Eli's line (model lip-syncs the off-screen voice onto the only face); crash/scream/dead-line not clearly separated. Alternative: v2 picture + ffmpeg voicemail dub (mouth closed), preview edit/preview_RR-04_voicemail_v1.mp4."
   },
   "RR-06": {
     "scene_id": "cd708a9f-db06-4430-a17a-ec5c2641d76e",
