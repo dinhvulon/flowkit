@@ -52,19 +52,7 @@
    "No bokeh and no blurred background.",
    "Nobody speaks in this clip.",
    "Spoken words in this clip: 0 (Rule 49 band for 8s: 18-22)."
-  ],
-  "start_frame": {
-   "type": "GENERATE_IMAGE",
-   "class": "E",
-   "image_refs": [
-    "Nora",
-    "Nora Body Fire",
-    "Keller Barn"
-   ],
-   "image_prompt": "Single still photograph, frame 0 of this shot before any movement, EWS, 85mm lens, handheld but controlled, tight on faces. EXACTLY 1 person in the frame. Nora's face is exactly the face in {{ref:Nora}}, kept 1:1, an adult woman of 23, very pretty, athletic and strong. Her build and clothing are exactly as in {{ref:Nora Body Fire}}. Heavy soot, dried pink retardant streaks and one scorched shirt sleeve. Frame 0: Smoke rolls off the red barn's roof. Location: exactly the place in {{ref:Keller Barn}}. Light: night, smoke rolling, embers. full-bleed 16:9 widescreen cinema frame with no borders, no white bars and no film edges, cinematic documentary realism, natural film grain, natural color, real locations and real people; real wildfire footage look: irregular orange-yellow flames, dark brown-grey smoke, glowing embers in the air, faces lit by fire glow, fire never fills the foreground of a face shot. Deep focus where the frame is wide. No readable text anywhere.",
-   "source_media_id": "media_id of Nora (Rule 63)",
-   "note": "Rule 65 type 2 (new angle/place/time): generate, de-watermark, upload, Review Board before video."
-  }
+  ]
  },
  {
   "clip_id": "BN-02",
@@ -132,19 +120,7 @@
    "The horse has exactly one head and four legs and never merges with a person.",
    "Eli is a 19-year-old adult man: ordinary clothes fully on, no glamour framing.",
    "Spoken words in this clip: 12 (Rule 49 band for 6s: 12-15)."
-  ],
-  "start_frame": {
-   "type": "GENERATE_IMAGE",
-   "class": "E",
-   "image_refs": [
-    "Eli",
-    "Juniper",
-    "Keller Barn"
-   ],
-   "image_prompt": "Single still photograph, frame 0 of this shot before any movement, MS, 85mm lens, handheld but controlled, tight on faces. EXACTLY 1 person and one horse in the frame. Eli is exactly the 19-year-old young man in {{ref:Eli}}, kept 1:1: same face and hair, same hoodie, jeans and sneakers. He is an adult, an ordinary lean young man of 19. Hoodie and jeans smudged with soot and ash. Juniper is exactly the old grey mare in {{ref:Juniper}}: same grey coat and markings, dark eye, braided forelock. A real horse with real anatomy: one head, four legs, natural weight and muscle. An old rope halter; ash in her mane. Frame 0: Inside, Eli tears at a knotted tie rope with one hand, his own halter in the other. Location: exactly the place in {{ref:Keller Barn}}. Light: night, orange through slats, smoke. full-bleed 16:9 widescreen cinema frame with no borders, no white bars and no film edges, cinematic documentary realism, natural film grain, natural color, real locations and real people; real wildfire footage look: irregular orange-yellow flames, dark brown-grey smoke, glowing embers in the air, faces lit by fire glow, fire never fills the foreground of a face shot. Deep focus where the frame is wide. No readable text anywhere.",
-   "source_media_id": "media_id of Eli (Rule 63)",
-   "note": "Rule 65 type 2 (new angle/place/time): generate, de-watermark, upload, Review Board before video."
-  }
+  ]
  },
  {
   "clip_id": "BN-03",
@@ -205,19 +181,7 @@
    "No background music.",
    "Nora is never posed like a model: no beauty filter, no glamour lighting, no catwalk pose.",
    "Spoken words in this clip: 8 (Rule 49 band for 4s: 0 or 6-8)."
-  ],
-  "start_frame": {
-   "type": "GENERATE_IMAGE",
-   "class": "E",
-   "image_refs": [
-    "Nora",
-    "Nora Body Fire",
-    "Keller Barn"
-   ],
-   "image_prompt": "Single still photograph, frame 0 of this shot before any movement, MCU, 85mm lens, handheld but controlled, tight on faces. EXACTLY 1 person in the frame. Nora's face is exactly the face in {{ref:Nora}}, kept 1:1, an adult woman of 23, very pretty, athletic and strong. Her build and clothing are exactly as in {{ref:Nora Body Fire}}. Heavy soot, dried pink retardant streaks and one scorched shirt sleeve. Frame 0: Nora pushes her goggles up onto her helmet. Location: exactly the place in {{ref:Keller Barn}}. Light: night, orange, smoke. full-bleed 16:9 widescreen cinema frame with no borders, no white bars and no film edges, cinematic documentary realism, natural film grain, natural color, real locations and real people; real wildfire footage look: irregular orange-yellow flames, dark brown-grey smoke, glowing embers in the air, faces lit by fire glow, fire never fills the foreground of a face shot. Deep focus where the frame is wide. No readable text anywhere.",
-   "source_media_id": "media_id of Nora (Rule 63)",
-   "note": "Rule 65 type 2 (new angle/place/time): generate, de-watermark, upload, Review Board before video."
-  }
+  ]
  },
  {
   "clip_id": "BN-04",
@@ -306,19 +270,7 @@
    "Eli is a 19-year-old adult man: ordinary clothes fully on, no glamour framing.",
    "Nora is never posed like a model: no beauty filter, no glamour lighting, no catwalk pose.",
    "Spoken words in this clip: 18 (Rule 49 band for 8s: 18-22)."
-  ],
-  "start_frame": {
-   "type": "GENERATE_IMAGE",
-   "class": "E",
-   "image_refs": [
-    "Nora",
-    "Eli",
-    "Juniper"
-   ],
-   "image_prompt": "Single still photograph, frame 0 of this shot before any movement, 2S profile, 85mm lens, handheld but controlled, tight on faces. EXACTLY 2 people and one horse in the frame. Nora's face is exactly the face in {{ref:Nora}}, kept 1:1, an adult woman of 23, very pretty, athletic and strong. Heavy soot, dried pink retardant streaks and one scorched shirt sleeve. Eli is exactly the 19-year-old young man in {{ref:Eli}}, kept 1:1: same face and hair, same hoodie, jeans and sneakers. He is an adult, an ordinary lean young man of 19. Hoodie and jeans smudged with soot and ash. Juniper is exactly the old grey mare in {{ref:Juniper}}: same grey coat and markings, dark eye, braided forelock. A real horse with real anatomy: one head, four legs, natural weight and muscle. An old rope halter; ash in her mane. Frame 0: Opens on Nora's grip on Eli's shoulder; Eli wrenches free. Light: night, orange, smoke. full-bleed 16:9 widescreen cinema frame with no borders, no white bars and no film edges, cinematic documentary realism, natural film grain, natural color, real locations and real people; real wildfire footage look: irregular orange-yellow flames, dark brown-grey smoke, glowing embers in the air, faces lit by fire glow, fire never fills the foreground of a face shot. Deep focus where the frame is wide. No readable text anywhere.",
-   "source_media_id": "media_id of Nora (Rule 63)",
-   "note": "Rule 65 type 2 (new angle/place/time): generate, de-watermark, upload, Review Board before video."
-  }
+  ]
  },
  {
   "clip_id": "BN-05",
@@ -394,18 +346,7 @@
    "Nora is never posed like a model: no beauty filter, no glamour lighting, no catwalk pose.",
    "Nora does not speak aloud in this clip.",
    "Spoken words in this clip: 21 (Rule 49 band for 8s: 18-22)."
-  ],
-  "start_frame": {
-   "type": "GENERATE_IMAGE",
-   "class": "E",
-   "image_refs": [
-    "Eli",
-    "Keller Barn"
-   ],
-   "image_prompt": "Single still photograph, frame 0 of this shot before any movement, OTS→Eli Dutch, 85mm lens, handheld but controlled, tight on faces. EXACTLY 2 figures in the frame. Nora's face is not featured. Eli is exactly the 19-year-old young man in {{ref:Eli}}, kept 1:1: same face and hair, same hoodie, jeans and sneakers. He is an adult, an ordinary lean young man of 19. Hoodie and jeans smudged with soot and ash. Frame 0: Over Nora's shoulder, slight Dutch tilt: brother and sister face to face, shouting over the roar. Location: exactly the place in {{ref:Keller Barn}}. Light: night, orange, smoke. full-bleed 16:9 widescreen cinema frame with no borders, no white bars and no film edges, cinematic documentary realism, natural film grain, natural color, real locations and real people; real wildfire footage look: irregular orange-yellow flames, dark brown-grey smoke, glowing embers in the air, faces lit by fire glow, fire never fills the foreground of a face shot. Deep focus where the frame is wide. No readable text anywhere.",
-   "source_media_id": "media_id of Eli (Rule 63)",
-   "note": "Rule 65 type 2 (new angle/place/time): generate, de-watermark, upload, Review Board before video."
-  }
+  ]
  },
  {
   "clip_id": "BN-06",
@@ -457,19 +398,7 @@
    "Nora is never posed like a model: no beauty filter, no glamour lighting, no catwalk pose.",
    "Nobody speaks in this clip.",
    "Spoken words in this clip: 0 (Rule 49 band for 4s: 0 or 6-8)."
-  ],
-  "start_frame": {
-   "type": "GENERATE_IMAGE",
-   "class": "E",
-   "image_refs": [
-    "Nora",
-    "Nora Body Fire",
-    "Keller Barn"
-   ],
-   "image_prompt": "Single still photograph, frame 0 of this shot before any movement, CU, 85mm lens, handheld but controlled, tight on faces. EXACTLY 1 person in the frame. Nora's face is exactly the face in {{ref:Nora}}, kept 1:1, an adult woman of 23, very pretty, athletic and strong. Her build and clothing are exactly as in {{ref:Nora Body Fire}}. Heavy soot, dried pink retardant streaks and one scorched shirt sleeve. Frame 0: Nora goes completely still. Location: exactly the place in {{ref:Keller Barn}}. Light: night, orange flicker. full-bleed 16:9 widescreen cinema frame with no borders, no white bars and no film edges, cinematic documentary realism, natural film grain, natural color, real locations and real people; real wildfire footage look: irregular orange-yellow flames, dark brown-grey smoke, glowing embers in the air, faces lit by fire glow, fire never fills the foreground of a face shot. Deep focus where the frame is wide. No readable text anywhere.",
-   "source_media_id": "media_id of Nora (Rule 63)",
-   "note": "Rule 65 type 2 (new angle/place/time): generate, de-watermark, upload, Review Board before video."
-  }
+  ]
  },
  {
   "clip_id": "BN-07",
@@ -513,16 +442,7 @@
    "No bokeh and no blurred background.",
    "Nobody speaks in this clip.",
    "Spoken words in this clip: 0 (Rule 49 band for 4s: 0 or 6-8)."
-  ],
-  "start_frame": {
-   "type": "GENERATE_IMAGE",
-   "class": "G",
-   "image_refs": [
-    "Keller Barn"
-   ],
-   "image_prompt": "Single still photograph, frame 0 of this shot before any movement, WS, 85mm lens, handheld but controlled, tight on faces. No identifiable person in the frame. Frame 0: Flames run along the barn's rafters. Location: exactly the place in {{ref:Keller Barn}}. Light: night, flames on rafters. full-bleed 16:9 widescreen cinema frame with no borders, no white bars and no film edges, cinematic documentary realism, natural film grain, natural color, real locations and real people; real wildfire footage look: irregular orange-yellow flames, dark brown-grey smoke, glowing embers in the air, faces lit by fire glow, fire never fills the foreground of a face shot. Deep focus where the frame is wide. No readable text anywhere.",
-   "note": "Rule 65 type 2 (new angle/place/time): generate, de-watermark, upload, Review Board before video."
-  }
+  ]
  },
  {
   "clip_id": "BN-08",
@@ -579,18 +499,7 @@
    "Nora is never posed like a model: no beauty filter, no glamour lighting, no catwalk pose.",
    "Nobody speaks in this clip.",
    "Spoken words in this clip: 0 (Rule 49 band for 4s: 0 or 6-8)."
-  ],
-  "start_frame": {
-   "type": "GENERATE_IMAGE",
-   "class": "E",
-   "image_refs": [
-    "Juniper",
-    "Keller Barn"
-   ],
-   "image_prompt": "Single still photograph, frame 0 of this shot before any movement, ECU, 85mm lens, handheld but controlled, tight on faces. EXACTLY 1 person and one horse in the frame. Nora's face is not featured. Juniper is exactly the old grey mare in {{ref:Juniper}}: same grey coat and markings, dark eye, braided forelock. A real horse with real anatomy: one head, four legs, natural weight and muscle. An old rope halter; ash in her mane. Frame 0: Nora's knife saws at the knotted tie rope by the mare's halter. Location: exactly the place in {{ref:Keller Barn}}. Light: night, flames overhead. full-bleed 16:9 widescreen cinema frame with no borders, no white bars and no film edges, cinematic documentary realism, natural film grain, natural color, real locations and real people; real wildfire footage look: irregular orange-yellow flames, dark brown-grey smoke, glowing embers in the air, faces lit by fire glow, fire never fills the foreground of a face shot. Deep focus where the frame is wide. No readable text anywhere.",
-   "source_media_id": "media_id of Juniper (Rule 63)",
-   "note": "Rule 65 type 2 (new angle/place/time): generate, de-watermark, upload, Review Board before video."
-  }
+  ]
  },
  {
   "clip_id": "BN-09",
@@ -652,19 +561,7 @@
    "No background music.",
    "Nora is never posed like a model: no beauty filter, no glamour lighting, no catwalk pose.",
    "Spoken words in this clip: 13 (Rule 49 band for 6s: 12-15)."
-  ],
-  "start_frame": {
-   "type": "GENERATE_IMAGE",
-   "class": "E",
-   "image_refs": [
-    "Nora",
-    "Nora Body Fire",
-    "Keller Barn"
-   ],
-   "image_prompt": "Single still photograph, frame 0 of this shot before any movement, MCU, 85mm lens, handheld but controlled, tight on faces. EXACTLY 1 person in the frame. Nora's face is exactly the face in {{ref:Nora}}, kept 1:1, an adult woman of 23, very pretty, athletic and strong. Her build and clothing are exactly as in {{ref:Nora Body Fire}}. Heavy soot, dried pink retardant streaks and one scorched shirt sleeve. Frame 0: Nora sheathes the knife at her belt. Location: exactly the place in {{ref:Keller Barn}}. Light: night, flames overhead. full-bleed 16:9 widescreen cinema frame with no borders, no white bars and no film edges, cinematic documentary realism, natural film grain, natural color, real locations and real people; real wildfire footage look: irregular orange-yellow flames, dark brown-grey smoke, glowing embers in the air, faces lit by fire glow, fire never fills the foreground of a face shot. Deep focus where the frame is wide. No readable text anywhere.",
-   "source_media_id": "media_id of Nora (Rule 63)",
-   "note": "Rule 65 type 2 (new angle/place/time): generate, de-watermark, upload, Review Board before video."
-  }
+  ]
  },
  {
   "clip_id": "BN-11",
@@ -733,19 +630,7 @@
    "The horse has exactly one head and four legs and never merges with a person.",
    "Nora is never posed like a model: no beauty filter, no glamour lighting, no catwalk pose.",
    "Spoken words in this clip: 13 (Rule 49 band for 6s: 12-15)."
-  ],
-  "start_frame": {
-   "type": "GENERATE_IMAGE",
-   "class": "E",
-   "image_refs": [
-    "Nora",
-    "Juniper",
-    "Keller Barn"
-   ],
-   "image_prompt": "Single still photograph, frame 0 of this shot before any movement, MCU (Nora), 85mm lens, handheld but controlled, tight on faces. EXACTLY 1 person and one horse in the frame. Nora's face is exactly the face in {{ref:Nora}}, kept 1:1, an adult woman of 23, very pretty, athletic and strong. Heavy soot, dried pink retardant streaks and one scorched shirt sleeve. Juniper is exactly the old grey mare in {{ref:Juniper}}: same grey coat and markings, dark eye, braided forelock. A real horse with real anatomy: one head, four legs, natural weight and muscle. A halter and lead rope on; a red bandana tied over her eyes as a blindfold; ash in her mane. Frame 0: Nora pulls a red bandana from her pocket. Location: exactly the place in {{ref:Keller Barn}}. Light: night, flames overhead. full-bleed 16:9 widescreen cinema frame with no borders, no white bars and no film edges, cinematic documentary realism, natural film grain, natural color, real locations and real people; real wildfire footage look: irregular orange-yellow flames, dark brown-grey smoke, glowing embers in the air, faces lit by fire glow, fire never fills the foreground of a face shot. Deep focus where the frame is wide. No readable text anywhere.",
-   "source_media_id": "media_id of Nora (Rule 63)",
-   "note": "Rule 65 type 2 (new angle/place/time): generate, de-watermark, upload, Review Board before video."
-  }
+  ]
  },
  {
   "clip_id": "BN-12",
@@ -812,18 +697,7 @@
    "No background music.",
    "Eli is a 19-year-old adult man: ordinary clothes fully on, no glamour framing.",
    "Spoken words in this clip: 6 (Rule 49 band for 4s: 0 or 6-8)."
-  ],
-  "start_frame": {
-   "type": "GENERATE_IMAGE",
-   "class": "E",
-   "image_refs": [
-    "Eli",
-    "Keller Barn"
-   ],
-   "image_prompt": "Single still photograph, frame 0 of this shot before any movement, CU (Eli), 85mm lens, handheld but controlled, tight on faces. EXACTLY 1 person in the frame. Eli is exactly the 19-year-old young man in {{ref:Eli}}, kept 1:1: same face and hair, same hoodie, jeans and sneakers. He is an adult, an ordinary lean young man of 19. Hoodie and jeans smudged with soot and ash. Frame 0: Eli goes still, lips parted, the lead slack in his hand. Location: exactly the place in {{ref:Keller Barn}}. Light: night, flames overhead. full-bleed 16:9 widescreen cinema frame with no borders, no white bars and no film edges, cinematic documentary realism, natural film grain, natural color, real locations and real people; real wildfire footage look: irregular orange-yellow flames, dark brown-grey smoke, glowing embers in the air, faces lit by fire glow, fire never fills the foreground of a face shot. Deep focus where the frame is wide. No readable text anywhere.",
-   "source_media_id": "media_id of Eli (Rule 63)",
-   "note": "Rule 65 type 2 (new angle/place/time): generate, de-watermark, upload, Review Board before video."
-  }
+  ]
  },
  {
   "clip_id": "BN-13a",
@@ -890,19 +764,7 @@
    "No bokeh and no blurred background.",
    "Nobody speaks in this clip.",
    "Spoken words in this clip: 0 (Rule 49 band for 4s: 0 or 6-8)."
-  ],
-  "start_frame": {
-   "type": "GENERATE_IMAGE",
-   "class": "E",
-   "image_refs": [
-    "Nora",
-    "Eli",
-    "Juniper"
-   ],
-   "image_prompt": "Single still photograph, frame 0 of this shot before any movement, WS static, 85mm lens, handheld but controlled, tight on faces. EXACTLY 2 people and one horse in the frame. Nora's face is exactly the face in {{ref:Nora}}, kept 1:1, an adult woman of 23, very pretty, athletic and strong. Heavy soot, dried pink retardant streaks and one scorched shirt sleeve. Eli is exactly the 19-year-old young man in {{ref:Eli}}, kept 1:1: same face and hair, same hoodie, jeans and sneakers. He is an adult, an ordinary lean young man of 19. Hoodie and jeans smudged with soot and ash. Juniper is exactly the old grey mare in {{ref:Juniper}}: same grey coat and markings, dark eye, braided forelock. A real horse with real anatomy: one head, four legs, natural weight and muscle. A halter and lead rope on; a red bandana tied over her eyes as a blindfold; ash in her mane. Frame 0: The three walk fast out of the barn door, right to left, Eli leading the blindfolded mare. Light: night, fire behind, smoke. full-bleed 16:9 widescreen cinema frame with no borders, no white bars and no film edges, cinematic documentary realism, natural film grain, natural color, real locations and real people; real wildfire footage look: irregular orange-yellow flames, dark brown-grey smoke, glowing embers in the air, faces lit by fire glow, fire never fills the foreground of a face shot. Deep focus where the frame is wide. No readable text anywhere.",
-   "source_media_id": "media_id of Nora (Rule 63)",
-   "note": "Rule 65 type 2 (new angle/place/time): generate, de-watermark, upload, Review Board before video."
-  }
+  ]
  },
  {
   "clip_id": "BN-13b",
@@ -969,12 +831,7 @@
    "No bokeh and no blurred background.",
    "Nobody speaks in this clip.",
    "Spoken words in this clip: 0 (Rule 49 band for 4s: 0 or 6-8)."
-  ],
-  "start_frame": {
-   "type": "PREV_LAST_FRAME",
-   "from_clip": "BN-13a",
-   "note": "Rule 65 type 1: same place, moment, camera position and shot size as the end of BN-13a. Use the last frame of approved BN-13a (ffmpeg -sseof -0.08), de-watermark, upload, set as start frame. No image_prompt."
-  }
+  ]
  },
  {
   "clip_id": "ES-01",
@@ -1041,19 +898,7 @@
    "Nora is never posed like a model: no beauty filter, no glamour lighting, no catwalk pose.",
    "Nobody speaks in this clip.",
    "Spoken words in this clip: 0 (Rule 49 band for 6s: 12-15)."
-  ],
-  "start_frame": {
-   "type": "GENERATE_IMAGE",
-   "class": "E",
-   "image_refs": [
-    "Nora",
-    "Eli",
-    "Juniper"
-   ],
-   "image_prompt": "Single still photograph, frame 0 of this shot before any movement, Track handheld-leading, 24-35mm lens, handheld documentary camera that moves with the people. EXACTLY 2 people and one horse in the frame. Nora's face is exactly the face in {{ref:Nora}}, kept 1:1, an adult woman of 23, very pretty, athletic and strong. Heavy soot, dried pink retardant streaks and one scorched shirt sleeve. Eli is exactly the 19-year-old young man in {{ref:Eli}}, kept 1:1: same face and hair, same hoodie, jeans and sneakers. He is an adult, an ordinary lean young man of 19. Hoodie and jeans smudged with soot and ash. Juniper is exactly the old grey mare in {{ref:Juniper}}: same grey coat and markings, dark eye, braided forelock. A real horse with real anatomy: one head, four legs, natural weight and muscle. A halter and lead rope on; a red bandana tied over her eyes as a blindfold; ash in her mane. Frame 0: Handheld camera leading them at night: Nora runs right to left down the lane between burning fence posts, gripping Eli's hand. Light: night, fence lines burning. full-bleed 16:9 widescreen cinema frame with no borders, no white bars and no film edges, cinematic documentary realism, natural film grain, natural color, real locations and real people; real wildfire footage look: irregular orange-yellow flames, dark brown-grey smoke, glowing embers in the air, faces lit by fire glow, fire never fills the foreground of a face shot. Deep focus where the frame is wide. No readable text anywhere.",
-   "source_media_id": "media_id of Nora (Rule 63)",
-   "note": "Rule 65 type 2 (new angle/place/time): generate, de-watermark, upload, Review Board before video."
-  }
+  ]
  },
  {
   "clip_id": "ES-02",
@@ -1121,19 +966,7 @@
    "No bokeh and no blurred background.",
    "Nobody speaks in this clip.",
    "Spoken words in this clip: 0 (Rule 49 band for 4s: 0 or 6-8)."
-  ],
-  "start_frame": {
-   "type": "GENERATE_IMAGE",
-   "class": "E",
-   "image_refs": [
-    "Nora",
-    "Eli",
-    "Juniper"
-   ],
-   "image_prompt": "Single still photograph, frame 0 of this shot before any movement, WS, 24-35mm lens, handheld documentary camera that moves with the people. EXACTLY 2 people and one horse in the frame. Nora's face is exactly the face in {{ref:Nora}}, kept 1:1, an adult woman of 23, very pretty, athletic and strong. Heavy soot, dried pink retardant streaks and one scorched shirt sleeve. Eli is exactly the 19-year-old young man in {{ref:Eli}}, kept 1:1: same face and hair, same hoodie, jeans and sneakers. He is an adult, an ordinary lean young man of 19. Hoodie and jeans smudged with soot and ash. Juniper is exactly the old grey mare in {{ref:Juniper}}: same grey coat and markings, dark eye, braided forelock. A real horse with real anatomy: one head, four legs, natural weight and muscle. A halter and lead rope on; a red bandana tied over her eyes as a blindfold; ash in her mane. Frame 0: At a gap between two burning fence posts, the blindfolded mare plants her hooves and refuses to move; Eli leans back on the rope with both hands. Light: night, fire glow. full-bleed 16:9 widescreen cinema frame with no borders, no white bars and no film edges, cinematic documentary realism, natural film grain, natural color, real locations and real people; real wildfire footage look: irregular orange-yellow flames, dark brown-grey smoke, glowing embers in the air, faces lit by fire glow, fire never fills the foreground of a face shot. Deep focus where the frame is wide. No readable text anywhere.",
-   "source_media_id": "media_id of Nora (Rule 63)",
-   "note": "Rule 65 type 2 (new angle/place/time): generate, de-watermark, upload, Review Board before video."
-  }
+  ]
  },
  {
   "clip_id": "ES-03",
@@ -1207,19 +1040,7 @@
    "No background music.",
    "Nora is never posed like a model: no beauty filter, no glamour lighting, no catwalk pose.",
    "Spoken words in this clip: 13 (Rule 49 band for 6s: 12-15)."
-  ],
-  "start_frame": {
-   "type": "GENERATE_IMAGE",
-   "class": "E",
-   "image_refs": [
-    "Nora",
-    "Eli",
-    "Juniper"
-   ],
-   "image_prompt": "Single still photograph, frame 0 of this shot before any movement, MS, 24-35mm lens, handheld documentary camera that moves with the people. EXACTLY 2 people and one horse in the frame. Nora's face is exactly the face in {{ref:Nora}}, kept 1:1, an adult woman of 23, very pretty, athletic and strong. Heavy soot, dried pink retardant streaks and one scorched shirt sleeve. Eli is exactly the 19-year-old young man in {{ref:Eli}}, kept 1:1: same face and hair, same hoodie, jeans and sneakers. He is an adult, an ordinary lean young man of 19. Hoodie and jeans smudged with soot and ash. Juniper is exactly the old grey mare in {{ref:Juniper}}: same grey coat and markings, dark eye, braided forelock. A real horse with real anatomy: one head, four legs, natural weight and muscle. A halter and lead rope on; a red bandana tied over her eyes as a blindfold; ash in her mane. Frame 0: Nora steps back beside Eli and takes the lead rope just under the blindfolded mare's chin, between two burning fence posts. Light: night, fire glow. full-bleed 16:9 widescreen cinema frame with no borders, no white bars and no film edges, cinematic documentary realism, natural film grain, natural color, real locations and real people; real wildfire footage look: irregular orange-yellow flames, dark brown-grey smoke, glowing embers in the air, faces lit by fire glow, fire never fills the foreground of a face shot. Deep focus where the frame is wide. No readable text anywhere.",
-   "source_media_id": "media_id of Nora (Rule 63)",
-   "note": "Rule 65 type 2 (new angle/place/time): generate, de-watermark, upload, Review Board before video."
-  }
+  ]
  },
  {
   "clip_id": "ES-04",
@@ -1269,18 +1090,7 @@
    "Eli is a 19-year-old adult man: ordinary clothes fully on, no glamour framing.",
    "Nobody speaks in this clip.",
    "Spoken words in this clip: 0 (Rule 49 band for 4s: 0 or 6-8)."
-  ],
-  "start_frame": {
-   "type": "GENERATE_IMAGE",
-   "class": "E",
-   "image_refs": [
-    "Eli",
-    "Ridge Road"
-   ],
-   "image_prompt": "Single still photograph, frame 0 of this shot before any movement, CU, 24-35mm lens, handheld documentary camera that moves with the people. EXACTLY 1 person in the frame. Eli is exactly the 19-year-old young man in {{ref:Eli}}, kept 1:1: same face and hair, same hoodie, jeans and sneakers. He is an adult, an ordinary lean young man of 19. Hoodie and jeans smudged with soot and ash. Frame 0: Close on Eli at night, his hoodie collar pulled up over his mouth, coughing in the smoke. Location: exactly the place in {{ref:Ridge Road}}. Light: night, fire glow, smoke. full-bleed 16:9 widescreen cinema frame with no borders, no white bars and no film edges, cinematic documentary realism, natural film grain, natural color, real locations and real people; real wildfire footage look: irregular orange-yellow flames, dark brown-grey smoke, glowing embers in the air, faces lit by fire glow, fire never fills the foreground of a face shot. Deep focus where the frame is wide. No readable text anywhere.",
-   "source_media_id": "media_id of Eli (Rule 63)",
-   "note": "Rule 65 type 2 (new angle/place/time): generate, de-watermark, upload, Review Board before video."
-  }
+  ]
  },
  {
   "clip_id": "ES-05",
@@ -1349,19 +1159,7 @@
    "No bokeh and no blurred background.",
    "Nobody speaks in this clip.",
    "Spoken words in this clip: 0 (Rule 49 band for 6s: 12-15)."
-  ],
-  "start_frame": {
-   "type": "GENERATE_IMAGE",
-   "class": "E",
-   "image_refs": [
-    "Nora",
-    "Eli",
-    "Juniper"
-   ],
-   "image_prompt": "Single still photograph, frame 0 of this shot before any movement, WS high angle, 24-35mm lens, handheld documentary camera that moves with the people. EXACTLY 2 people and one horse in the frame. Nora's face is exactly the face in {{ref:Nora}}, kept 1:1, an adult woman of 23, very pretty, athletic and strong. Heavy soot, dried pink retardant streaks and one scorched shirt sleeve. Eli is exactly the 19-year-old young man in {{ref:Eli}}, kept 1:1: same face and hair, same hoodie, jeans and sneakers. He is an adult, an ordinary lean young man of 19. Hoodie and jeans smudged with soot and ash. Juniper is exactly the old grey mare in {{ref:Juniper}}: same grey coat and markings, dark eye, braided forelock. A real horse with real anatomy: one head, four legs, natural weight and muscle. A halter and lead rope on; a red bandana tied over her eyes as a blindfold; ash in her mane. Frame 0: High angle, wide: Nora, Eli and the blindfolded mare move down the lane; embers land in the dry grass ahead of them. Light: night, embers. full-bleed 16:9 widescreen cinema frame with no borders, no white bars and no film edges, cinematic documentary realism, natural film grain, natural color, real locations and real people; real wildfire footage look: irregular orange-yellow flames, dark brown-grey smoke, glowing embers in the air, faces lit by fire glow, fire never fills the foreground of a face shot. Deep focus where the frame is wide. No readable text anywhere.",
-   "source_media_id": "media_id of Nora (Rule 63)",
-   "note": "Rule 65 type 2 (new angle/place/time): generate, de-watermark, upload, Review Board before video."
-  }
+  ]
  },
  {
   "clip_id": "LH-05",
@@ -1406,16 +1204,7 @@
    "No bokeh and no blurred background.",
    "Nobody speaks in this clip.",
    "Spoken words in this clip: 0 (Rule 49 band for 8s: 18-22)."
-  ],
-  "start_frame": {
-   "type": "GENERATE_IMAGE",
-   "class": "G",
-   "image_refs": [
-    "Cedar Flat"
-   ],
-   "image_prompt": "Single still photograph, frame 0 of this shot before any movement, EWS long lens, very long telephoto lens from far away, like real news or fire-crew footage: heat shimmer, smoke-dimmed sun, slight handheld drift. No identifiable person in the frame. Frame 0: Very long lens at night through heat shimmer: the fire front crests the last ridge above the town. Location: exactly the place in {{ref:Cedar Flat}}. Light: night, heat shimmer. full-bleed 16:9 widescreen cinema frame with no borders, no white bars and no film edges, cinematic documentary realism, natural film grain, natural color, real locations and real people; real wildfire footage look: irregular orange-yellow flames, dark brown-grey smoke, glowing embers in the air, faces lit by fire glow, fire never fills the foreground of a face shot. Deep focus where the frame is wide. No readable text anywhere.",
-   "note": "Rule 65 type 2 (new angle/place/time): generate, de-watermark, upload, Review Board before video."
-  }
+  ]
  },
  {
   "clip_id": "LH-06",
@@ -1474,18 +1263,7 @@
    "Separate bodies never merge; natural hands with five fingers; no extra limbs.",
    "No background music.",
    "Spoken words in this clip: 15 (Rule 49 band for 6s: 12-15)."
-  ],
-  "start_frame": {
-   "type": "GENERATE_IMAGE",
-   "class": "E",
-   "image_refs": [
-    "Ray",
-    "Cedar Flat"
-   ],
-   "image_prompt": "Single still photograph, frame 0 of this shot before any movement, MS, 24-35mm lens, handheld documentary camera that moves with the people. EXACTLY 1 person in the frame. FACE LOCK: Ray's face is exactly the face in {{ref:Ray}}, kept 1:1: a man of about 55 with grey stubble and a weathered face. He wears a white captain's wildland helmet, yellow fire shirt and green fire pants, a radio clipped to his chest. Soot on his face and shirt. Frame 0: A spot fire jumps the dirt line and catches the dry grass of a backyard. Location: exactly the place in {{ref:Cedar Flat}}. Light: night, orange, embers. full-bleed 16:9 widescreen cinema frame with no borders, no white bars and no film edges, cinematic documentary realism, natural film grain, natural color, real locations and real people; real wildfire footage look: irregular orange-yellow flames, dark brown-grey smoke, glowing embers in the air, faces lit by fire glow, fire never fills the foreground of a face shot. Deep focus where the frame is wide. No readable text anywhere.",
-   "source_media_id": "media_id of Ray (Rule 63)",
-   "note": "Rule 65 type 2 (new angle/place/time): generate, de-watermark, upload, Review Board before video."
-  }
+  ]
  },
  {
   "clip_id": "LH-07",
@@ -1530,16 +1308,7 @@
    "No bokeh and no blurred background.",
    "Nobody speaks in this clip.",
    "Spoken words in this clip: 0 (Rule 49 band for 6s: 12-15)."
-  ],
-  "start_frame": {
-   "type": "GENERATE_IMAGE",
-   "class": "G",
-   "image_refs": [
-    "Cedar Flat"
-   ],
-   "image_prompt": "Single still photograph, frame 0 of this shot before any movement, WS, 24-35mm lens, handheld documentary camera that moves with the people. No identifiable person in the frame. Frame 0: An engine crew blasts the burning backyard grass with a hose; spray hisses into the flames. Location: exactly the place in {{ref:Cedar Flat}}. Light: night, orange, spray. full-bleed 16:9 widescreen cinema frame with no borders, no white bars and no film edges, cinematic documentary realism, natural film grain, natural color, real locations and real people; real wildfire footage look: irregular orange-yellow flames, dark brown-grey smoke, glowing embers in the air, faces lit by fire glow, fire never fills the foreground of a face shot. Deep focus where the frame is wide. No readable text anywhere.",
-   "note": "Rule 65 type 2 (new angle/place/time): generate, de-watermark, upload, Review Board before video."
-  }
+  ]
  },
  {
   "clip_id": "LH-08",
@@ -1606,18 +1375,7 @@
    "Separate bodies never merge; natural hands with five fingers; no extra limbs.",
    "No background music.",
    "Spoken words in this clip: 13 (Rule 49 band for 6s: 12-15)."
-  ],
-  "start_frame": {
-   "type": "GENERATE_IMAGE",
-   "class": "E",
-   "image_refs": [
-    "Ray",
-    "Cedar Flat"
-   ],
-   "image_prompt": "Single still photograph, frame 0 of this shot before any movement, MCU, 24-35mm lens, handheld documentary camera that moves with the people. EXACTLY 1 person in the frame. FACE LOCK: Ray's face is exactly the face in {{ref:Ray}}, kept 1:1: a man of about 55 with grey stubble and a weathered face. He wears a white captain's wildland helmet, yellow fire shirt and green fire pants, a radio clipped to his chest. Soot on his face and shirt. Frame 0: Ray, soot on his face, looks up at the burning ridge far away. Location: exactly the place in {{ref:Cedar Flat}}. Light: night, orange. full-bleed 16:9 widescreen cinema frame with no borders, no white bars and no film edges, cinematic documentary realism, natural film grain, natural color, real locations and real people; real wildfire footage look: irregular orange-yellow flames, dark brown-grey smoke, glowing embers in the air, faces lit by fire glow, fire never fills the foreground of a face shot. Deep focus where the frame is wide. No readable text anywhere.",
-   "source_media_id": "media_id of Ray (Rule 63)",
-   "note": "Rule 65 type 2 (new angle/place/time): generate, de-watermark, upload, Review Board before video."
-  }
+  ]
  },
  {
   "clip_id": "LH-09",
@@ -1667,17 +1425,6 @@
    "No background music.",
    "Nobody speaks in this clip.",
    "Spoken words in this clip: 0 (Rule 49 band for 6s: 12-15)."
-  ],
-  "start_frame": {
-   "type": "GENERATE_IMAGE",
-   "class": "E",
-   "image_refs": [
-    "Ray",
-    "Cedar Flat"
-   ],
-   "image_prompt": "Single still photograph, frame 0 of this shot before any movement, MS, 35-50mm lens, static, eye level. EXACTLY 1 person in the frame. FACE LOCK: Ray's face is exactly the face in {{ref:Ray}}, kept 1:1: a man of about 55 with grey stubble and a weathered face. He wears a white captain's wildland helmet, yellow fire shirt and green fire pants, a radio clipped to his chest. Soot on his face and shirt. Frame 0: Ray strides to an engine at the edge of town and grabs the door handle, eyes on the burning ridge. Location: exactly the place in {{ref:Cedar Flat}}. Light: night, orange. full-bleed 16:9 widescreen cinema frame with no borders, no white bars and no film edges, cinematic documentary realism, natural film grain, natural color, real locations and real people; real wildfire footage look: irregular orange-yellow flames, dark brown-grey smoke, glowing embers in the air, faces lit by fire glow, fire never fills the foreground of a face shot. Deep focus where the frame is wide. No readable text anywhere.",
-   "source_media_id": "media_id of Ray (Rule 63)",
-   "note": "Rule 65 type 2 (new angle/place/time): generate, de-watermark, upload, Review Board before video."
-  }
+  ]
  }
 ]

@@ -10,7 +10,6 @@
    "Juniper",
    "Hale Ranch"
   ],
-  "start_frame": "GENERATE_IMAGE + ảnh ref",
   "hinh": "Nora (áo flannel) dắt ngựa xám lên dốc xe; Eli chạy tới giật dây dắt; hai chị em đối mặt nhìn nghiêng; xa sau lưng họ cột khói nâu mảnh đã bốc lên trên đỉnh đồi.",
   "beat": "Vết thương · cài cắm Pine Gulch",
   "thoai": [
@@ -38,7 +37,6 @@
    "Nora Body Ranch",
    "Hale Ranch"
   ],
-  "start_frame": "GENERATE_IMAGE + ảnh ref",
   "hinh": "Cận cảnh khóa máy: mắt ngựa Juniper chớp một lần; nét chuyển sang tay Nora vươn về phía mõm, đầu ngón tay dừng cách ~10 cm, không chạm, co lại rồi rút về; mắt ngựa nhìn theo.",
   "beat": "Cài cắm: ánh nhìn",
   "thoai": [],
@@ -47,14 +45,14 @@
  {
   "clip_id": "RA-04",
   "duration": 6,
-  "shot": "MCU",
+  "shot": "MS",
   "refs": [
    "Nora",
    "Nora Body Ranch",
+   "Nora Pickup",
    "Hale Ranch"
   ],
-  "start_frame": "GENERATE_IMAGE + ảnh ref",
-  "hinh": "Máy nhắn tin ở thắt lưng Nora rung; cô đọc rồi nhìn cột khói.",
+  "hinh": "Nora quăng túi đồ chữa cháy lên thùng xe bán tải, máy nhắn tin kêu nhưng cô không nhìn; liếc cột khói rồi đóng sập cửa thùng, quay sang Eli.",
   "beat": "Đặt đồng hồ đếm ngược",
   "thoai": [
    {
@@ -73,10 +71,10 @@
   "refs": [
    "Eli",
    "Nora Body Ranch",
+   "Nora Pickup",
    "Hale Ranch"
   ],
-  "start_frame": "GENERATE_IMAGE + ảnh ref",
-  "hinh": "Qua vai Nora: Eli quay lưng đi về phía xe chở ngựa.",
+  "hinh": "Qua vai Nora (tay còn đặt trên cửa thùng xe đã đóng): Eli nhìn chiếc xe chất đầy đồ, nói rồi quay lưng đi vào nhà.",
   "beat": "Cài cắm: \"giỏi bỏ đi\"",
   "thoai": [
    {
@@ -96,7 +94,6 @@
    "Juniper",
    "Hale Ranch"
   ],
-  "start_frame": "GENERATE_IMAGE + ảnh ref",
   "hinh": "Xe kéo của Keller rời sân; đầu ngựa xám quay lại qua khe song, hí lên.",
   "beat": "Mất mát",
   "thoai": [],
@@ -112,7 +109,6 @@
    "HALE Helmet",
    "Nora Pickup"
   ],
-  "start_frame": "GENERATE_IMAGE + ảnh ref",
   "hinh": "Nora lái xe, áo chữa cháy vàng; mũ HALE cháy xém nằm ghế phụ; qua kính, cột khói đã thành mây lửa trắng khổng lồ.",
   "beat": "Nhắc lại móc · tiền cược · cài cắm mũ, Keller Lane",
   "thoai": [
@@ -134,7 +130,6 @@
    "Eli Pack",
    "Hale Ranch"
   ],
-  "start_frame": "GENERATE_IMAGE + ảnh ref",
   "hinh": "Bên hàng rào, mắt nhìn khói, Eli nhét dây khớp mõm và dây dắt vào ba lô.",
   "beat": "Cài cắm: dây khớp mõm",
   "thoai": [],
@@ -150,7 +145,6 @@
    "Eli Pack",
    "Hale Ranch"
   ],
-  "start_frame": "GENERATE_IMAGE + ảnh ref",
   "hinh": "Eli đạp xe đi, trái sang phải, về phía khói.",
   "beat": "Eli lên đường",
   "thoai": [],
@@ -164,7 +158,6 @@
    "Ray",
    "Fire Line"
   ],
-  "start_frame": "GENERATE_IMAGE + ảnh ref",
   "hinh": "Đội áo vàng trên sườn khô; mây lửa trắng sau lưng; Ray (mũ trắng) chỉ về sườn đồi đã cháy đen xa xa.",
   "beat": "Tiền cược · cài cắm vùng đã cháy",
   "thoai": [
@@ -187,7 +180,6 @@
    "Crew Helmet",
    "Fire Line"
   ],
-  "start_frame": "GENERATE_IMAGE + ảnh ref",
   "hinh": "Nora bấm khóa túi lều chống cháy ở thắt lưng, liếc sang một lính mới ngoài khung.",
   "beat": "Cài cắm: lều chống cháy, mẹ",
   "thoai": [
@@ -214,7 +206,6 @@
    "Ray",
    "Fire Line"
   ],
-  "start_frame": "GENERATE_IMAGE + ảnh ref",
   "hinh": "Bão tàn lửa thổi ngang qua đội đang phát đường băng; Ray đập tắt chỗ cháy âm ỉ trên ba lô một lính mới.",
   "beat": "Nhắc lại móc · bão tàn lửa",
   "thoai": [
@@ -237,7 +228,6 @@
    "Eli Pack",
    "Ridge Road"
   ],
-  "start_frame": "GENERATE_IMAGE + ảnh ref",
   "hinh": "Eli đạp xe hết sức lên đường sỏi giữa rừng thông khô, thẳng về phía máy quay; dây khớp mõm lủng lẳng ở ba lô.",
   "beat": "Cắt xen · hiểm nguy bắt đầu",
   "thoai": [],
@@ -252,7 +242,6 @@
    "Eli Bike",
    "Ridge Road"
   ],
-  "start_frame": "GENERATE_IMAGE + ảnh ref",
   "hinh": "Eli nhấc xe qua rào chắn đường, đạp vào khói; xa phía sau một người đàn ông cạnh xe bán tải vẫy hai tay.",
   "beat": "Cài cắm: Walt đã thấy nó",
   "thoai": [
@@ -276,7 +265,6 @@
    "Crew Helmet",
    "Fire Line"
   ],
-  "start_frame": "GENERATE_IMAGE + ảnh ref",
   "hinh": "Ray (trái khung) trao đuốc nhỏ giọt cho Nora (phải khung); Nora nhận, gật một cái, không nói.",
   "beat": "Kế hoạch: đốt chặn",
   "thoai": [
@@ -297,7 +285,6 @@
    "Nora Body Fire",
    "Fire Line"
   ],
-  "start_frame": "GENERATE_IMAGE + ảnh ref",
   "hinh": "Đuốc nhỏ giọt rải một vệt lửa vào cỏ khô, trái sang phải.",
   "beat": "Lấy lửa trị lửa",
   "thoai": [],
@@ -313,7 +300,6 @@
    "Crew Helmet",
    "Fire Line"
   ],
-  "start_frame": "GENERATE_IMAGE + ảnh ref",
   "hinh": "Nora cầm đuốc đi dọc đường băng, trả lời một lính mới ngoài khung.",
   "beat": "Cài cắm: \"không cháy hai lần\"",
   "thoai": [
@@ -342,7 +328,6 @@
    "Eli Pack",
    "Ridge Road"
   ],
-  "start_frame": "GENERATE_IMAGE + ảnh ref",
   "hinh": "Eli đạp xe trái sang phải xuyên qua mưa tàn lửa; đám cháy nhỏ bùng lên bên đường, cậu lạng tay lái rồi vẫn đạp vào khói.",
   "beat": "Cắt xen · cậu đang lao vào lửa",
   "thoai": [],
@@ -355,7 +340,6 @@
   "refs": [
    "Fire Line"
   ],
-  "start_frame": "GENERATE_IMAGE (không người)",
   "hinh": "Ống kính dài, hơi nóng uốn lượn: lửa đốt chặn chạy lên dốc gặp đám cháy tán từ hẻm núi xuống; hai bức tường lửa gặp nhau, vút lên thành một cột.",
   "beat": "Nhắc lại móc · hai bức tường lửa gặp nhau",
   "thoai": [],
@@ -368,7 +352,6 @@
   "refs": [
    "Fire Line"
   ],
-  "start_frame": "GENERATE_IMAGE (không người)",
   "hinh": "Lốc lửa xoáy lên từ mép vùng đốt chặn.",
   "beat": "Leo thang",
   "thoai": [],
@@ -382,7 +365,6 @@
    "Ray",
    "Fire Line"
   ],
-  "start_frame": "GENERATE_IMAGE + ảnh ref",
   "hinh": "Ray đẩy đội lùi khỏi mép lửa khi hơi nóng phả vào mặt.",
   "beat": "Hiểm nguy",
   "thoai": [
@@ -402,7 +384,6 @@
   "refs": [
    "Fire Line"
   ],
-  "start_frame": "GENERATE_IMAGE (không người)",
   "hinh": "Máy bay chữa cháy đỏ rải mây chất chống cháy đỏ lên sườn đồi trên đầu đội.",
   "beat": "Cảnh hoành tráng",
   "thoai": [],
@@ -418,7 +399,6 @@
    "Crew Helmet",
    "Fire Line"
   ],
-  "start_frame": "GENERATE_IMAGE + ảnh ref",
   "hinh": "Nora ướt sũng chất chống cháy hồng, vừa ho vừa bật cười; cả đội cười theo.",
   "beat": "Chiến thắng giả · bước ngoặt Màn 1",
   "thoai": [
@@ -444,7 +424,6 @@
   "refs": [
    "Fire Line"
   ],
-  "start_frame": "GENERATE_IMAGE (không người)",
   "hinh": "Cỏ khô trên sườn đồi đột ngột rạp về hướng ngược lại.",
   "beat": "Bước ngoặt",
   "thoai": [],
@@ -460,7 +439,6 @@
    "Crew Helmet",
    "Fire Line"
   ],
-  "start_frame": "GENERATE_IMAGE + ảnh ref",
   "hinh": "Nora quay sang Ray ngoài khung, chỉ xuống cỏ.",
   "beat": "Cô thấy trước",
   "thoai": [
@@ -481,7 +459,6 @@
    "Ray",
    "Fire Line"
   ],
-  "start_frame": "GENERATE_IMAGE + ảnh ref",
   "hinh": "Cột lửa nghiêng; tàn lửa bay qua đỉnh xuống thung lũng sau lưng đội.",
   "beat": "Lửa vượt đỉnh · cài luật: không chạy lên dốc trong khói",
   "thoai": [
@@ -504,7 +481,6 @@
    "Crew Helmet",
    "Fire Line"
   ],
-  "start_frame": "GENERATE_IMAGE + ảnh ref",
   "hinh": "Đội chạy xuống dốc dọc đường băng, đám cháy lẻ bùng lên hai bên.",
   "beat": "Tháo chạy",
   "thoai": [],
@@ -520,7 +496,6 @@
    "Crew Helmet",
    "Fire Line"
   ],
-  "start_frame": "GENERATE_IMAGE + ảnh ref",
   "hinh": "Một lính mới quay lại nhặt cưa rơi; Nora túm quai ba lô kéo cậu lại.",
   "beat": "Cài cắm: luật (tên phim)",
   "thoai": [
@@ -540,7 +515,6 @@
   "refs": [
    "Staging Area"
   ],
-  "start_frame": "GENERATE_IMAGE (không người)",
   "hinh": "Ống kính tele xa: đoàn xe cứu hỏa chạy phải sang trái; trên sườn núi lửa chạy cùng hướng và vượt lên trước đoàn xe.",
   "beat": "Rút lui · lửa nhanh hơn họ",
   "thoai": [],
@@ -556,7 +530,6 @@
    "Eli Pack",
    "Keller Barn"
   ],
-  "start_frame": "GENERATE_IMAGE + ảnh ref",
   "hinh": "Eli thả xe ở cổng nhà Keller; sân trống, chuồng đỏ; tàn lửa bay qua.",
   "beat": "Một mình",
   "thoai": [
@@ -578,7 +551,6 @@
    "Juniper",
    "Keller Barn"
   ],
-  "start_frame": "GENERATE_IMAGE + ảnh ref",
   "hinh": "Trong chuồng tối, Eli (trái khung) áp trán vào mặt ngựa; bên phải, khói luồn vào dưới cửa sau lưng cậu.",
   "beat": "Hiểm nguy dâng lên",
   "thoai": [
@@ -599,7 +571,6 @@
    "Eli",
    "Keller Barn"
   ],
-  "start_frame": "GENERATE_IMAGE + ảnh ref",
   "hinh": "Eli áp máy vào tai để lại tin nhắn, mắt nhìn khói dưới cửa; cuối clip có tiếng đổ sập, ngựa hí thét, Eli quay phắt lại.",
   "beat": "Móc giữ chân · tin nhắn bị cắt ngang",
   "thoai": [
@@ -620,7 +591,6 @@
    "Ray",
    "Staging Area"
   ],
-  "start_frame": "GENERATE_IMAGE + ảnh ref",
   "hinh": "Bãi tập kết, xe đội nổ máy; bộ đàm trên ngực Ray rè lên; Nora đứng cạnh xe phía sau.",
   "beat": "Nhắc lại móc · Eli mất tích",
   "thoai": [
@@ -643,7 +613,6 @@
    "Crew Helmet",
    "Staging Area"
   ],
-  "start_frame": "GENERATE_IMAGE + ảnh ref",
   "hinh": "Nora, mặt đầy muội và vệt hồng, khựng lại tay trên cửa xe.",
   "beat": "Sốc",
   "thoai": [],
@@ -659,7 +628,6 @@
    "Crew Helmet",
    "Staging Area"
   ],
-  "start_frame": "GENERATE_IMAGE + ảnh ref",
   "hinh": "Nora tới chỗ Ray, giật radio trên ngực anh; nghe trả lời; mắt nhìn lên dãy núi đang cháy.",
   "beat": "Tiền cược",
   "thoai": [

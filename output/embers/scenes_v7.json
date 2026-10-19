@@ -25,7 +25,7 @@
   "uploaded": true,
   "clean_media_id": "40d6f784-9739-4750-ad17-7f367bd3b55a",
   "approved": true,
-  "start_frame_mode": "none (user 2026-10-18: refs-only r2v)"
+  "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)"
  },
  "RA-03": {
   "scene_id": "2528b08c-0add-409a-9819-4a6faf8b438b",
@@ -47,7 +47,7 @@
   "video_media_id": "3d83affe-1f41-47eb-b70f-87f4529de292",
   "video_file": "scenes/scene_002_RA-03_2528b08c.mp4",
   "approved": true,
-  "start_frame_mode": "none (user 2026-10-18: refs-only r2v)"
+  "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)"
  },
  "RA-04": {
   "scene_id": "28ccd1b4-d508-4fca-8f94-118479c4772f",
@@ -57,11 +57,13 @@
   "image_refs": [
    "Nora",
    "Nora Body Ranch",
+   "Nora Pickup",
    "Hale Ranch"
   ],
   "video_refs": [
    "Nora",
    "Nora Body Ranch",
+   "Nora Pickup",
    "Hale Ranch"
   ],
   "raw_image_media_id": "dcb1ddfe-bbea-4e8d-983a-bb0a550c3c4b",
@@ -71,8 +73,9 @@
   "local_clean": "images/scene_003_RA-04_clean.jpg",
   "uploaded": true,
   "clean_media_id": "623b261e-38e7-4b5d-8fd9-9a132b466961",
-  "approved": true,
-  "start_frame_mode": "none (user 2026-10-18: refs-only r2v)"
+  "approved": false,
+  "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)",
+  "note_v7_rewrite": "2026-10-19: rewritten (pickup loading / answer the truck); old video obsolete, needs regen"
  },
  "RA-05": {
   "scene_id": "43cddfc4-2392-4e96-b959-6fd4cab977b9",
@@ -81,12 +84,13 @@
   "start_frame": "GENERATE_IMAGE",
   "image_refs": [
    "Eli",
-   "Nora Body Ranch",
+   "Nora Pickup",
    "Hale Ranch"
   ],
   "video_refs": [
    "Eli",
    "Nora Body Ranch",
+   "Nora Pickup",
    "Hale Ranch"
   ],
   "raw_image_media_id": "52004780-00a2-4bbf-bbee-0183e9f6341c",
@@ -94,8 +98,9 @@
   "clean_media_id": "0646675d-b8d1-43dc-bb59-2756a7ac7352",
   "video_media_id": "87105ae1-0e23-4a9e-8082-e6ab8bac8cd9",
   "video_file": "scenes/scene_004_RA-05_43cddfc4.mp4",
-  "start_frame_mode": "none (user 2026-10-18: refs-only r2v)",
-  "approved": true
+  "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)",
+  "approved": false,
+  "note_v7_rewrite": "2026-10-19: rewritten (pickup loading / answer the truck); old video obsolete, needs regen"
  },
  "RA-06": {
   "scene_id": "14421c95-0980-493f-9ea4-1a65695a240c",
@@ -113,7 +118,7 @@
   "raw_image_media_id": "27ad516b-669a-46b2-b983-cf06e0859dfd",
   "image_file": "images/scene_005_RA-06_clean.jpg",
   "clean_media_id": "6198384e-a835-4d3b-8bd6-11a0f9b214ce",
-  "start_frame_mode": "none (user 2026-10-18: refs-only r2v)",
+  "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)",
   "video_media_id": "273e4575-57c1-40a5-993d-9317f77230c9",
   "video_file": "scenes/scene_005_RA-06_14421c95.mp4",
   "approved": true
@@ -137,7 +142,7 @@
   "raw_image_media_id": "58671eed-fac8-42ed-97a4-9d91aabb06f1",
   "clean_media_id": "3accbb43-ff65-4f69-83c2-ecc92afeb454",
   "image_file": "images/scene_006_RA-07_clean.jpg",
-  "start_frame_mode": "none (user 2026-10-18: refs-only r2v)"
+  "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)"
  },
  "RA-08": {
   "scene_id": "1a7e8514-48aa-4562-ab0e-4b5c759c17a4",
@@ -157,7 +162,7 @@
   "raw_image_media_id": "499886cd-c00c-4b6f-ac6e-651c7e458fbb",
   "clean_media_id": "212c4c1f-8dac-4d51-8af9-eadeaf5ec9ab",
   "image_file": "images/scene_007_RA-08_clean.jpg",
-  "start_frame_mode": "none (user 2026-10-18: refs-only r2v)"
+  "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)"
  },
  "RA-09": {
   "scene_id": "aeb258ed-c72d-4440-8954-ed724d51e48e",
@@ -178,7 +183,7 @@
   "raw_image_media_id": "59049829-e85a-45fb-940a-a249c3beefb4",
   "clean_media_id": "627fa37c-eab6-40f1-b1a4-435671ba0d99",
   "image_file": "images/scene_008_RA-09_clean.jpg",
-  "start_frame_mode": "none (user 2026-10-18: refs-only r2v)"
+  "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)"
  },
  "FL-01": {
   "scene_id": "b2919f94-a57e-4556-b2f3-fa3084e6e12b",
@@ -198,7 +203,7 @@
   "local_clean": "images/scene_009_FL-01_clean.jpg",
   "uploaded": true,
   "clean_media_id": "77a3e227-04ce-4dcb-9198-4c2db6369bcd",
-  "start_frame_mode": "none (user 2026-10-18: refs-only r2v)"
+  "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)"
  },
  "FL-02": {
   "scene_id": "99f32c8f-dbc7-4d6f-a33d-192c48ab3b2d",
@@ -219,7 +224,7 @@
   "raw_image_media_id": "1b72acf4-524f-4296-a56d-69ff446eea9b",
   "image_file": "images/scene_010_FL-02_clean.jpg",
   "clean_media_id": "9d5713e6-25dc-4bd7-86d6-a5556c36c7ef",
-  "start_frame_mode": "none (user 2026-10-18: refs-only r2v)"
+  "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)"
  },
  "FL-04": {
   "scene_id": "5fd1fc66-54a5-4281-aed1-0feb0e4e2cd7",
@@ -237,7 +242,7 @@
   "raw_image_media_id": "e893c252-ca04-4173-9992-5d00669582f7",
   "clean_media_id": "d6fa6f98-c431-473d-9d37-2aaf1b8c81a8",
   "image_file": "images/scene_011_FL-04_clean.jpg",
-  "start_frame_mode": "none (user 2026-10-18: refs-only r2v)"
+  "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)"
  },
  "EL-01": {
   "scene_id": "a6727dd7-b652-421d-9e21-4b02e218f28b",
@@ -258,7 +263,7 @@
   "raw_image_media_id": "7333826b-4332-4215-9f7b-2d0dff7d12e3",
   "clean_media_id": "3130b4b1-7fd1-4b63-b09e-15461bb581d3",
   "image_file": "images/scene_012_EL-01_clean.jpg",
-  "start_frame_mode": "none (user 2026-10-18: refs-only r2v)"
+  "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)"
  },
  "EL-02": {
   "scene_id": "1941e521-3a7e-44a0-8dc9-30ca165d97bb",
@@ -278,7 +283,7 @@
   "raw_image_media_id": "078e58d8-fb85-496c-b64d-244b5100b379",
   "clean_media_id": "3cdbcb28-7446-4c41-bbf5-caa6b33394f8",
   "image_file": "images/scene_013_EL-02_clean.jpg",
-  "start_frame_mode": "none (user 2026-10-18: refs-only r2v)"
+  "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)"
  },
  "FL-05": {
   "scene_id": "4157ec00-7fe5-467c-a04b-27c0457b6de8",
@@ -300,7 +305,7 @@
   "raw_image_media_id": "a3651a93-1aa1-4fe0-9183-6f6258cdb4ac",
   "clean_media_id": "b02a9655-d33c-4e0f-a466-1b35ebb475a9",
   "image_file": "images/scene_014_FL-05_clean.jpg",
-  "start_frame_mode": "none (user 2026-10-18: refs-only r2v)"
+  "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)"
  },
  "FL-06": {
   "scene_id": "075b26da-387e-4670-b8e5-e2341c82ce82",
@@ -317,7 +322,7 @@
   "raw_image_media_id": "813bb7f0-bf44-4664-ac19-c8811d07dd38",
   "image_file": "images/scene_015_FL-06_clean.jpg",
   "clean_media_id": "32eb3d61-c1e8-43d8-979d-916fbba939e6",
-  "start_frame_mode": "none (user 2026-10-18: refs-only r2v)"
+  "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)"
  },
  "FL-07": {
   "scene_id": "c8ec4bc6-b38b-492c-8f26-3ed4e1729120",
@@ -338,7 +343,7 @@
   "raw_image_media_id": "7a686aaa-cfad-4c17-a951-38951bfdbd8e",
   "clean_media_id": "cdc0e69a-76f0-43a6-a437-69864225bbc0",
   "image_file": "images/scene_016_FL-07_clean.jpg",
-  "start_frame_mode": "none (user 2026-10-18: refs-only r2v)"
+  "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)"
  },
  "EL-07": {
   "scene_id": "82687128-9822-4e07-8bda-d2bdd53142fc",
@@ -359,7 +364,7 @@
   "raw_image_media_id": "ca9d6c42-54bc-4192-8d81-51ef10ace64c",
   "clean_media_id": "14af7a11-3de4-4b35-a8c1-92abe00b363c",
   "image_file": "images/scene_017_EL-07_clean.jpg",
-  "start_frame_mode": "none (user 2026-10-18: refs-only r2v)"
+  "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)"
  },
  "FL-08": {
   "scene_id": "948b7239-030d-49c3-9482-f8292e09ae90",
@@ -377,7 +382,7 @@
   "local_clean": "images/scene_018_FL-08_clean.jpg",
   "uploaded": true,
   "clean_media_id": "e04636bc-100e-4ae9-b743-70fa30ec80ac",
-  "start_frame_mode": "none (user 2026-10-18: refs-only r2v)"
+  "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)"
  },
  "FL-09": {
   "scene_id": "a87ab55e-64cd-4171-9714-c156bdf2682d",
@@ -395,7 +400,7 @@
   "uploaded": true,
   "clean_media_id": "b5408a5b-573e-48c7-bc1c-a2a6a57df1a6",
   "image_file": "images/scene_019_FL-09_clean.jpg",
-  "start_frame_mode": "none (user 2026-10-18: refs-only r2v)"
+  "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)"
  },
  "FL-10": {
   "scene_id": "1f54cd9e-da3a-45f7-9a04-342067b743ab",
@@ -415,7 +420,7 @@
   "uploaded": true,
   "clean_media_id": "d17edaa8-0578-43b4-b093-4cbc0a32e818",
   "image_file": "images/scene_020_FL-10_clean.jpg",
-  "start_frame_mode": "none (user 2026-10-18: refs-only r2v)"
+  "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)"
  },
  "FL-11": {
   "scene_id": "9460e14b-bceb-409e-a4ec-848b2ea1f87b",
@@ -433,7 +438,7 @@
   "uploaded": true,
   "clean_media_id": "383b7a75-0ae4-444c-9b3f-2f1361426f1f",
   "image_file": "images/scene_021_FL-11_clean.jpg",
-  "start_frame_mode": "none (user 2026-10-18: refs-only r2v)"
+  "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)"
  },
  "FL-12": {
   "scene_id": "136294a1-2bca-4212-ad13-73553717096a",
@@ -456,7 +461,7 @@
   "uploaded": true,
   "clean_media_id": "e4487e94-ec9a-4b21-ad11-b7eb2d1ee266",
   "image_file": "images/scene_022_FL-12_clean.jpg",
-  "start_frame_mode": "none (user 2026-10-18: refs-only r2v)"
+  "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)"
  },
  "MP-01": {
   "scene_id": "ba45804a-292c-4c27-80bb-4082f8411cb2",
@@ -474,7 +479,7 @@
   "uploaded": true,
   "clean_media_id": "9f0f9b25-b16c-4406-b728-4edbdbced9e0",
   "image_file": "images/scene_023_MP-01_clean.jpg",
-  "start_frame_mode": "none (user 2026-10-18: refs-only r2v)"
+  "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)"
  },
  "MP-02": {
   "scene_id": "20b5906a-098e-4212-abb6-b7f2b0dda6c8",
@@ -497,7 +502,7 @@
   "uploaded": true,
   "clean_media_id": "8c34fc69-e9bd-45ac-ab4a-428823813f8f",
   "image_file": "images/scene_024_MP-02_clean.jpg",
-  "start_frame_mode": "none (user 2026-10-18: refs-only r2v)"
+  "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)"
  },
  "MP-03": {
   "scene_id": "cc8585de-dd53-480a-922a-3ef81052b717",
@@ -517,7 +522,7 @@
   "uploaded": true,
   "clean_media_id": "9a58df67-54ae-4dd1-9ef9-a3a91a8c76c4",
   "image_file": "images/scene_025_MP-03_clean.jpg",
-  "start_frame_mode": "none (user 2026-10-18: refs-only r2v)"
+  "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)"
  },
  "MP-04": {
   "scene_id": "d4f60adf-b750-4853-9090-04b121e4acaf",
@@ -540,7 +545,7 @@
   "uploaded": true,
   "clean_media_id": "06ab02ea-87f5-44c8-a509-1f9ec6d444e4",
   "image_file": "images/scene_026_MP-04_clean.jpg",
-  "start_frame_mode": "none (user 2026-10-18: refs-only r2v)"
+  "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)"
  },
  "FL-13": {
   "scene_id": "0e9a4d05-a89e-42cd-9906-baa634e61749",
@@ -563,7 +568,7 @@
   "uploaded": true,
   "clean_media_id": "79264b72-6934-4493-b2c8-6bc6e3cc5dd0",
   "image_file": "images/scene_027_FL-13_clean.jpg",
-  "start_frame_mode": "none (user 2026-10-18: refs-only r2v)"
+  "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)"
  },
  "MP-05": {
   "scene_id": "4f44afa0-49eb-4e6e-b81e-bc1e28db3fb2",
@@ -581,7 +586,7 @@
   "uploaded": true,
   "clean_media_id": "2dc91f64-a17b-4ec7-8be5-9f958bf40a42",
   "image_file": "images/scene_028_MP-05_clean.jpg",
-  "start_frame_mode": "none (user 2026-10-18: refs-only r2v)"
+  "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)"
  },
  "EL-03": {
   "scene_id": "7b51db6b-a00b-4d82-b2e7-3916e542d4bc",
@@ -604,7 +609,7 @@
   "uploaded": true,
   "clean_media_id": "d5454556-1db0-4b00-9385-f2cc496abadb",
   "image_file": "images/scene_029_EL-03_clean.jpg",
-  "start_frame_mode": "none (user 2026-10-18: refs-only r2v)"
+  "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)"
  },
  "EL-05": {
   "scene_id": "de04a4b9-23d0-4525-9e9c-67d9318fd999",
@@ -626,7 +631,7 @@
   "uploaded": true,
   "clean_media_id": "6ea722b3-ab03-4264-a997-57039227a4f3",
   "image_file": "images/scene_030_EL-05_clean.jpg",
-  "start_frame_mode": "none (user 2026-10-18: refs-only r2v)"
+  "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)"
  },
  "EL-06": {
   "scene_id": "c50977a5-b917-48ae-8df9-3b28a71f58a2",
@@ -646,7 +651,7 @@
   "uploaded": true,
   "clean_media_id": "86ed0a79-c336-4bf5-8dfc-605898401266",
   "image_file": "images/scene_031_EL-06_clean.jpg",
-  "start_frame_mode": "none (user 2026-10-18: refs-only r2v)"
+  "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)"
  },
  "EM-01": {
   "scene_id": "493785b6-4f87-4ead-997f-d91317344862",
@@ -666,7 +671,7 @@
   "uploaded": true,
   "clean_media_id": "e043e764-da8f-45ae-8405-bd93751b2173",
   "image_file": "images/scene_032_EM-01_clean.jpg",
-  "start_frame_mode": "none (user 2026-10-18: refs-only r2v)"
+  "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)"
  },
  "EM-02": {
   "scene_id": "3835fbf3-df8e-4c01-b165-984d100d683d",
@@ -689,7 +694,7 @@
   "uploaded": true,
   "clean_media_id": "7be95241-f74d-4df7-a973-796a947fabe7",
   "image_file": "images/scene_033_EM-02_clean.jpg",
-  "start_frame_mode": "none (user 2026-10-18: refs-only r2v)"
+  "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)"
  },
  "EM-03": {
   "scene_id": "808d2300-d060-4972-acfb-3872d2c0d162",
@@ -712,6 +717,6 @@
   "uploaded": true,
   "clean_media_id": "9c379f8c-9ec9-449e-a8ca-85bd924d1f96",
   "image_file": "images/scene_034_EM-03_clean.jpg",
-  "start_frame_mode": "none (user 2026-10-18: refs-only r2v)"
+  "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)"
  }
 }

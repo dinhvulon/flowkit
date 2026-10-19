@@ -10,7 +10,6 @@
    "Juniper",
    "The Black"
   ],
-  "start_frame": "GENERATE_IMAGE + ảnh ref",
   "hinh": "Họ lên tới sườn đồi cháy đen; con ngựa đứng giữa vùng đen.",
   "beat": "Đến nơi",
   "thoai": [],
@@ -26,7 +25,6 @@
    "HALE Helmet",
    "The Black"
   ],
-  "start_frame": "GENERATE_IMAGE + ảnh ref",
   "hinh": "Nora quỳ xuống áp lòng bàn tay vào tro, ngẩng lên nhìn Eli, nhẹ nhõm.",
   "beat": "Trả nợ",
   "thoai": [
@@ -50,7 +48,6 @@
    "Juniper",
    "The Black"
   ],
-  "start_frame": "GENERATE_IMAGE + ảnh ref",
   "hinh": "Mặt trận lửa gầm dọc mép vùng đen; Nora kéo Eli nằm xuống sát chân ngựa.",
   "beat": "Cao trào · mặt trận lửa",
   "thoai": [
@@ -74,7 +71,6 @@
    "Eli",
    "The Black"
   ],
-  "start_frame": "GENERATE_IMAGE + ảnh ref",
   "hinh": "Nora tháo mũ HALE vàng đội lên đầu Eli.",
   "beat": "Món quà",
   "thoai": [],
@@ -89,7 +85,6 @@
    "Nora Body Fire",
    "The Black"
   ],
-  "start_frame": "GENERATE_IMAGE + ảnh ref",
   "hinh": "Nora kéo lều chống cháy trùm lên cả hai, nắm tay ghim mép vào tro; tấm bạc gợn cam.",
   "beat": "Lều trả nợ (2)",
   "thoai": [
@@ -109,7 +104,6 @@
   "refs": [
    "The Black"
   ],
-  "start_frame": "GENERATE_IMAGE (không người)",
   "hinh": "Lửa quét qua: bức tường lửa gầm rú dọc mép vùng đã cháy, bão tàn lửa bay qua mặt đất cháy đen; tấm lều bạc nhỏ rực cam ở giữa, bóng con ngựa xám nằm cạnh; mặt đất đã cháy không bén lửa lại.",
   "beat": "Cảnh hoành tráng · đỉnh hiểm nguy",
   "thoai": [],
@@ -123,7 +117,6 @@
    "Nora",
    "Eli"
   ],
-  "start_frame": "GENERATE_IMAGE + ảnh ref",
   "hinh": "Dưới tấm bạc, hai khuôn mặt cách nhau vài phân.",
   "beat": "Im lặng",
   "thoai": [],
@@ -137,7 +130,6 @@
    "Eli",
    "HALE Helmet"
   ],
-  "start_frame": "GENERATE_IMAGE + ảnh ref",
   "hinh": "Dưới tấm lều, tiếng gầm bên ngoài, Eli chạm vào chiếc mũ trên đầu và thì thầm với chị; rồi chờ đợi, mắt rưng rưng.",
   "beat": "Móc giữ chân · nguồn gốc lộ ra lúc nguy nhất",
   "thoai": [
@@ -163,7 +155,6 @@
   "refs": [
    "Nora Body Fire"
   ],
-  "start_frame": "GENERATE_IMAGE + ảnh ref",
   "hinh": "Cận cực: gió lật mép tấm bạc, ánh lửa tràn vào; nắm tay đeo găng của Nora đập mép bạc xuống tro và giữ chặt.",
   "beat": "Hiểm nguy vẫn đè xuống",
   "thoai": [],
@@ -179,7 +170,6 @@
    "Eli",
    "HALE Helmet"
   ],
-  "start_frame": "GENERATE_IMAGE + ảnh ref",
   "hinh": "Vẫn dưới tấm lều, Nora quay mặt về phía em trai, nước mắt rạch qua lớp muội; mép mũ vàng trên đầu Eli ở rìa khung hình.",
   "beat": "Niềm tin sai bị phá (Nora tự nói)",
   "thoai": [
@@ -200,7 +190,6 @@
    "Nora",
    "Nora Body Fire"
   ],
-  "start_frame": "GENERATE_IMAGE + ảnh ref",
   "hinh": "Dưới tấm bạc: tiếng cười nghẹn rung vai Nora; nước mắt rạch qua lớp muội.",
   "beat": "Giải tỏa",
   "thoai": [],
@@ -216,7 +205,6 @@
    "Juniper",
    "The Black"
   ],
-  "start_frame": "GENERATE_IMAGE + ảnh ref",
   "hinh": "Nora hất tấm bạc cháy xém ra; cách vài bước con ngựa xám nằm im trong tro.",
   "beat": "Cú sợ cuối: nó chết rồi sao?",
   "thoai": [],
@@ -231,7 +219,6 @@
    "Nora Body Fire",
    "The Black"
   ],
-  "start_frame": "GENERATE_IMAGE + ảnh ref",
   "hinh": "Con ngựa đang nằm ngẩng đầu, dụi mõm vào vai Nora.",
   "beat": "Tha thứ · ánh nhìn trả nợ",
   "thoai": [],
@@ -249,7 +236,6 @@
    "Juniper",
    "The Black"
   ],
-  "start_frame": "GENERATE_IMAGE + ảnh ref",
   "hinh": "Eli ngủ tựa vào sườn ngựa, đội mũ; Nora thức, nắm tay em nhìn tàn lửa.",
   "beat": "Nghỉ ngơi",
   "thoai": [],
@@ -263,7 +249,6 @@
    "Ray",
    "The Black"
   ],
-  "start_frame": "GENERATE_IMAGE + ảnh ref",
   "hinh": "Tro rơi như tuyết trên đồi đen; một hàng lính cứu hỏa áo vàng, mũ trắng đi đầu, leo dốc; mũ trắng dừng lại rồi chạy vụt lên.",
   "beat": "Nhắc lại móc · cứu hộ",
   "thoai": [],
@@ -278,7 +263,6 @@
    "Nora Body Fire",
    "The Black"
   ],
-  "start_frame": "GENERATE_IMAGE + ảnh ref",
   "hinh": "Qua vai Ray: Nora đứng dậy từ tro bên Eli và con ngựa; giọng khàn.",
   "beat": "Giữ lời hứa",
   "thoai": [
@@ -305,7 +289,6 @@
    "Ray",
    "The Black"
   ],
-  "start_frame": "GENERATE_IMAGE + ảnh ref",
   "hinh": "Ray chìa radio của cô ra.",
   "beat": "Trở về",
   "thoai": [
@@ -327,7 +310,6 @@
    "Nora Body Fire",
    "The Black"
   ],
-  "start_frame": "GENERATE_IMAGE + ảnh ref",
   "hinh": "Ray bên trái, Nora bên phải: cô gắn radio lên dây đai ngực; trả lời khi mặt quay đi về phía Eli và con ngựa.",
   "beat": "Cái giá",
   "thoai": [
@@ -359,7 +341,6 @@
   "refs": [
    "Cedar Flat"
   ],
-  "start_frame": "GENERATE_IMAGE (không người)",
   "hinh": "Từ trên dốc đen lúc bình minh xám: xa bên dưới, Cedar Flat còn nguyên mái nhà; vùng cháy dừng đúng ở đường ủi.",
   "beat": "Tuyến phụ trả kết · thị trấn giữ được",
   "thoai": [
@@ -382,7 +363,6 @@
    "Juniper",
    "The Black"
   ],
-  "start_frame": "GENERATE_IMAGE + ảnh ref",
   "hinh": "Qua vai Eli: Nora nhặt dây dắt, đặt vào tay em, khép ngón tay em lại rồi lùi một bước.",
   "beat": "Kết thúc",
   "thoai": [
@@ -403,7 +383,6 @@
    "Ray",
    "The Black"
   ],
-  "start_frame": "GENERATE_IMAGE + ảnh ref",
   "hinh": "Ray thấy chiếc mũ HALE trên đầu Eli, mỉm cười, lẩm bẩm.",
   "beat": "Sự bình yên của Ray",
   "thoai": [
@@ -428,7 +407,6 @@
    "Juniper",
    "The Black"
   ],
-  "start_frame": "GENERATE_IMAGE + ảnh ref",
   "hinh": "Bình minh qua tro rơi: Eli đội mũ dắt ngựa xuống dốc đen phải sang trái; Nora đi sau một bước.",
   "beat": "Hình ảnh cuối",
   "thoai": [],
