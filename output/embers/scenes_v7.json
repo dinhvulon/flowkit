@@ -450,13 +450,14 @@
     "clean_media_id": "14af7a11-3de4-4b35-a8c1-92abe00b363c",
     "image_file": "images/scene_017_EL-07_clean.jpg",
     "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)",
-    "video_media_id": "8de6a2ca-d847-45e8-9213-0a410661aeea",
-    "video_file": "scenes/scene_017_EL-07_82687128_v2.mp4",
+    "video_media_id": "3a376702-d43f-4896-91c4-91c010fb7c8b",
+    "video_file": "scenes/scene_017_EL-07_82687128_v3.mp4",
     "flow_account": "namlt",
     "flow_project_id": "d882e8cb-005a-45a6-9451-f822b820a7cf",
-    "approved": false,
+    "approved": true,
     "review_note_v1": "v1 score 5.0: CRITICAL ghost film-camera rig in left foreground 0-1.5s; no ember rain (smoke is white puffs, fire = campfire patches); foot drags on gravel ~3-4s (no fall). Good: one bike, backpack on, no cuts, no speech (Whisper PASS), never looks at lens.",
-    "review_note": "v2 score 6.5: no rig, smoky haze good, Whisper PASS (no speech), no cuts. FAIL beat: at ~3.4-4.4s he swerves toward the viewer and U-turns, riding right-to-left back the way he came (should keep riding into the smoke). Embers sparse; spot fire looks like a campfire pile. Usable 0-3.4s only."
+    "review_note_v2": "v2 score 6.5: no rig, smoky haze good, Whisper PASS (no speech), no cuts. FAIL beat: at ~3.4-4.4s he swerves toward the viewer and U-turns, riding right-to-left back the way he came (should keep riding into the smoke). Embers sparse; spot fire looks like a campfire pile. Usable 0-3.4s only.",
+    "review_note": "v3 score 8.0: rides left-to-right the whole clip, no U-turn; real grass flame line along the right roadside, passes it and rides on away into light haze; no rig, no cuts, Whisper PASS (no speech); one bike, backpack on, feet on pedals. Minor: embers sparse, smoke is light haze not brown; swerve is subtle."
   },
   "FL-08": {
     "scene_id": "948b7239-030d-49c3-9482-f8292e09ae90",
@@ -474,7 +475,14 @@
     "local_clean": "images/scene_018_FL-08_clean.jpg",
     "uploaded": true,
     "clean_media_id": "e04636bc-100e-4ae9-b743-70fa30ec80ac",
-    "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)"
+    "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)",
+    "video_media_id": "08c6b481-6e82-4e13-ad84-0e685cd766e2",
+    "video_file": "scenes/scene_018_FL-08_948b7239_v2.mp4",
+    "flow_account": "namlt",
+    "flow_project_id": "d882e8cb-005a-45a6-9451-f822b820a7cf",
+    "approved": true,
+    "review_note_v1": "v1 score 6.0: Whisper PASS (no speech), no cuts, no people/gear, real-looking 0-3.5s (burnout left, red sun, dark smoke). FAIL: ~3.7-4.5s the crown fire fades in as a translucent ghost on the right and the whole right slope is ablaze a moment later (dissolve, not pouring down); 6-8s flames turn stylized/CGI (swirling flame shapes outlining trees, a mushroom-shaped fireball at the end).",
+    "review_note": "v2 score 7.5: both fires visible from frame 0, no fade-in, no cuts, Whisper PASS (no speech); burnout climbs the near ridge, flames converge on the ridgeline center and the smoke rolls into one dark column with orange base. Minor: smoke puffs a bit cotton-ball/stylized, last frame column slightly mushroom-shaped; crown fire stays on the far right wall rather than pouring down."
   },
   "FL-09": {
     "scene_id": "a87ab55e-64cd-4171-9714-c156bdf2682d",
@@ -492,7 +500,16 @@
     "uploaded": true,
     "clean_media_id": "b5408a5b-573e-48c7-bc1c-a2a6a57df1a6",
     "image_file": "images/scene_019_FL-09_clean.jpg",
-    "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)"
+    "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)",
+    "video_media_id": "ca1caf48-1523-4716-b1b2-b443ff12ca8a",
+    "video_file": "scenes/scene_019_FL-09_a87ab55e_v2.mp4",
+    "flow_account": "namlt",
+    "flow_project_id": "d882e8cb-005a-45a6-9451-f822b820a7cf",
+    "approved": false,
+    "review_note": "v2 score 8.0: dusk light with low warm sky, blackened burned ground with ash in the foreground, ragged flame line burning along the ridge from frame 0; whirl starts as a small dust swirl at ~0.5s and grows into a tall twisting column with flames wrapped around it and burning debris thrown off; no cuts, no people/gear, Whisper PASS (no speech). Minor: smoke in the column is a bit lumpy/cotton-like at 2-4s; sun not visible (pale dusk sky, not red sun).",
+    "review_note_v1": "v1 score 7.5: whirl grows out of the burning edge already on screen (no fade-in), spins up into a tall twisting column with ash/dust wrapped at its base and flying burning debris; no cuts, no people/gear, Whisper PASS (no speech); fire-line cut visible up the ridge. Minor: flame is a smooth ribbon with hard edges at ~1-1.5s (slightly stylized); little blackened ground; light more overcast day than dusk.",
+    "dropped": true,
+    "drop_note": "user 2026-10-19: clip dropped (fire whirl looked fake); v1+v2 videos deleted"
   },
   "FL-10": {
     "scene_id": "1f54cd9e-da3a-45f7-9a04-342067b743ab",
@@ -512,7 +529,14 @@
     "uploaded": true,
     "clean_media_id": "d17edaa8-0578-43b4-b093-4cbc0a32e818",
     "image_file": "images/scene_020_FL-10_clean.jpg",
-    "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)"
+    "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)",
+    "video_media_id": "303d2744-ad2d-4aaf-bfd8-0c8dd326bf1d",
+    "video_file": "scenes/scene_020_FL-10_1f54cd9e.mp4",
+    "flow_account": "namlt",
+    "flow_project_id": "d882e8cb-005a-45a6-9451-f822b820a7cf",
+    "approved": true,
+    "line_change": "user 2026-10-19: 'Whirl!' -> 'It's jumping!' (FL-09 dropped)",
+    "review_note": "v1 score 8.3: one continuous handheld move (no cut; pans right with Ray at ~2s); burnout edge and grass spot fires burning from frame 0, ragged flames, brown-grey smoke, no whirl/fireball; Ray arm up vs heat 0-1.5s, shoves two crew back 2-4s, turns left and shouts 4-6s; only Ray speaks. Whisper PASS acc 92% 0.0-5.52s ('hail' = Hale), flag ? VOICE? pitch 364 Hz (shouting) - listen. Minor: light is hazy afternoon more than red dusk; crew faces partly visible in profile; Ray faces the lens for a moment at 0s."
   },
   "FL-11": {
     "scene_id": "9460e14b-bceb-409e-a4ec-848b2ea1f87b",
@@ -530,7 +554,13 @@
     "uploaded": true,
     "clean_media_id": "383b7a75-0ae4-444c-9b3f-2f1361426f1f",
     "image_file": "images/scene_021_FL-11_clean.jpg",
-    "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)"
+    "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)",
+    "video_media_id": "902c843f-b13a-40ff-9962-19bbf27ecd56",
+    "video_file": "scenes/scene_021_FL-11_9460e14b.mp4",
+    "flow_account": "namlt",
+    "flow_project_id": "d882e8cb-005a-45a6-9451-f822b820a7cf",
+    "approved": true,
+    "review_note": "v1 score 8.5: smoke-red sun low in a brown haze (real dusk), ragged flame line along the ridge from frame 0, dark brown-grey smoke; one red air tanker flies straight left to right the whole clip, drops a long red retardant curtain from ~2.3s that falls onto the burning ridge; no cuts, no text on the plane, no other aircraft/gear; Whisper PASS (no speech). Minor: tiny crew figures not really readable under the drop; plane a bit large/close for an EWS telephoto; smoke column upper right slightly puffy."
   },
   "FL-12": {
     "scene_id": "136294a1-2bca-4212-ad13-73553717096a",
@@ -553,7 +583,16 @@
     "uploaded": true,
     "clean_media_id": "e4487e94-ec9a-4b21-ad11-b7eb2d1ee266",
     "image_file": "images/scene_022_FL-12_clean.jpg",
-    "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)"
+    "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)",
+    "video_media_id": "203a2e1b-e0c6-403b-9d81-04de91cab52b",
+    "video_file": "scenes/scene_022_FL-12_136294a1.mp4",
+    "review_note_v2": "v2 score 8.2 (post_vo crew line removed from prompt, Nora line at 0.5s, drenched look, gaze off-lens): one continuous shot, no cuts; Nora soaked head to toe in pink sludge (helmet, goggles, face, braid, shirt), arms held out at the start, looks off to her left not into the lens, laughs, then wipes the goggles with her glove and grins; flame line along the ridge with brown-grey smoke, warm dusk haze. Whisper PASS: only Nora, 'put it on my tab the bank takes anything' 0.14-2.4s, 100%. Minor: line delivered fast and early, ~3.5s of wordless laughing after; crew walk into frame from the left around 3-4s instead of being there from frame 0, one crew face at the back visible and smiling; flame line a bit evenly dotted; upper smoke slightly puffy.",
+    "flow_account": "namlt",
+    "flow_project_id": "d882e8cb-005a-45a6-9451-f822b820a7cf",
+    "approved": true,
+    "submit_note": "first submit op d92e6b4e never landed in the Flow project (ghost op, request 253cd205 set FAILED, no credit); resubmitted identical prompt -> op 398178eb",
+    "review_note": "v1 score 6.8: one continuous shot (no cuts), dusk light, ragged flames and brown-grey smoke on the ridge, pink retardant mist drifting at the start, two crew in helmets behind her; ends with her touching the goggles and grinning. FAIL Whisper EXTRA SPEECH 1.3-2.9s 'hey hale youre pink' - Nora's own mouth moves there, so the model voiced the post_vo crew line through her; her real line 'put it on my tab the bank takes anything' plays 3.56-5.46s (100% match, but late). Also: retardant reads as pink streaks on the shirt, not a drenching; face almost clean; she looks straight into the lens; arms not held out; no visible cough/laugh beat.",
+    "v1_note": "v1 video and sheet deleted after v2 approval (user 2026-10-19)"
   },
   "MP-01": {
     "scene_id": "ba45804a-292c-4c27-80bb-4082f8411cb2",
@@ -571,7 +610,15 @@
     "uploaded": true,
     "clean_media_id": "9f0f9b25-b16c-4406-b728-4edbdbced9e0",
     "image_file": "images/scene_023_MP-01_clean.jpg",
-    "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)"
+    "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)",
+    "video_media_id": "fb3e6037-99b4-479c-9da5-2dbe9bf2d937",
+    "video_file": "scenes/scene_023_MP-01_ba45804a.mp4",
+    "flow_account": "namlt",
+    "flow_project_id": "d882e8cb-005a-45a6-9451-f822b820a7cf",
+    "approved": true,
+    "review_note": "v1 score 6.3: low grass-level view, golden dry grass in front of a burning ridge, red-orange sun in smoky dusk haze, ragged flames and brown-grey smoke, no people/gear; Whisper PASS (no speech). FAIL: hard jump at 2.42s (scene-detect hit; between 2.33s and 2.41s the background smoke, haze and mountains change and the flames suddenly grow) - reads as a cut/time skip. The wind turn itself is not readable: the grass leans the same way before and after 2s. Upper smoke a bit puffy.",
+    "review_note_v2": "v2 score 8.0 (continuous wind swing, frozen background): one continuous shot, no cuts (scene-detect clean); golden grass stems sharp in front of a dark ridge line under a smoke-filled dusk sky with a low orange glow; 0-2.3s stems lean left with embers drifting, ~2.4-2.8s they sweep up through upright, then bend over to the right until the end; background stays the same the whole clip. Whisper PASS (no speech). Minor: the final right-hand bend is moderate, not a hard lay-down; some embers read as soft round bokeh dots; glow on the ridge small and far.",
+    "v1_note": "v1 video and sheet deleted after v2 approval (user 2026-10-19)"
   },
   "MP-02": {
     "scene_id": "20b5906a-098e-4212-abb6-b7f2b0dda6c8",
