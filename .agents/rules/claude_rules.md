@@ -29,7 +29,7 @@ page can sign a Flow request, so nothing works headless.
 7. **Cascade on regen** — regenerating an image auto-clears downstream video + upscale.
 8. **REGENERATE vs GENERATE** — `GENERATE_*` skips if already COMPLETED. `REGENERATE_*` always runs (clears + regenerates).
 9. **Image Material required** — every project needs a `material` field (e.g. `realistic`, `3d_pixar`, `anime`). List available: `GET /api/materials`.
-10. **Server handles throttling — EVERY Flow request spaced 45–60s** — every call the server sends to Flow (image/video/upscale submit, image upload, project creation, status polls, metadata reads) waits a random 45–60s after the previous one (`FLOW_GENERATION_MIN_INTERVAL_S=45` / `FLOW_GENERATION_MAX_INTERVAL_S=60` in `agent/config.py`; `VIDEO_POLL_TIMEOUT=900` to fit the slower polls). User-set 2026-10-04: bursts trip `PUBLIC_ERROR_UNUSUAL_ACTIVITY`. Submit ALL requests via `/batch` and let the server pace them; do NOT loop faster. If a script paces its own submits, use `random.uniform(45, 60)` between requests and stop on `UNUSUAL_ACTIVITY` / `QUOTA`.
+10. **Server handles throttling — Flow requests spaced 30–45s, status polls every 3 min** — every call the server sends to Flow (image/video/upscale submit, image upload, project creation, metadata reads) waits a random 30–45s after the previous one; **status polls (`jwpduf` / `Zzl0ze` / `as29s`) are exempt** (user 2026-10-16: "3p call check status các video") — each in-flight video is checked every `VIDEO_POLL_INTERVAL=180`s, polls only keep `FLOW_POLL_MIN_GAP_S=2`s between themselves (`FLOW_GENERATION_MIN_INTERVAL_S=30` / `FLOW_GENERATION_MAX_INTERVAL_S=45` in `agent/config.py`). User-set 2026-10-04 at 45–60s, lowered to 30–45s 2026-10-16: bursts trip `PUBLIC_ERROR_UNUSUAL_ACTIVITY` — if it trips, go back to 45–60s. Submit ALL requests via `/batch` and let the server pace them; do NOT loop faster. If a script paces its own submits, use `random.uniform(30, 45)` between requests and stop on `UNUSUAL_ACTIVITY` / `QUOTA`. **Poll timeout never resubmits** (user 2026-10-16): one poll round is `VIDEO_POLL_TIMEOUT=600`s (raised from 300s 2026-10-18 — Omni r2v can take ~7 min); on timeout the worker keeps the Flow operation id and re-polls the same job (up to `MAX_POLL_ROUNDS=24`), downloading it when done — a resubmit would pay for the video twice.
 11. **Video prompts use sub-clip timing** — structure every clip as time segments matched to its `duration` (Rule 49 table): 4s `0-2s / 2-4s`; 6s `0-2s / 2-4s / 4-6s`; 8s `0-3s / 3-6s / 6-8s`; 10s `0-3s / 3-7s / 7-10s`.
 12. **Character dialogue in sub-clips** — embed speech in quotes: `Luna says "Goodnight."` Max 10-15 words per character per 2-3s segment.
 13. **Scenes are mutable** — use `PATCH /api/scenes/{sid}` to update `prompt`, `video_prompt`, `narrator_text`, `character_names` after creation. Don't delete and recreate — patch instead.
@@ -176,12 +176,20 @@ page can sign a Flow request, so nothing works headless.
     - (3) **Âm thanh theo chuẩn FlowKit**: master −14 LUFS / −1 dBTP theo `/fk-sound-design`, KHÔNG dùng mức `loudnorm I=-16` mặc định trong skill.
     - (4) **Lưu kết quả dựng và giữ phiên bản**: script ffmpeg/Remotion tạm đặt trong scratch (Rule 4, 43); danh sách cắt (EDL), file concat và bản dựng lưu trong `${OUTDIR}/edit/` với tên có số phiên bản (`edit_v1`, `edit_v2`...); không ghi đè bản dựng đã giao cho User.
 
+67. **Mandatory Whisper Dialogue Review (Bắt buộc nghe thoại bằng Whisper trong MỌI lần review video — cả Claude và Antigravity/Gemini — User Lock 19/10/2026)** — Khung hình không nghe được. MỌI lần review clip (pipeline, review sau regen, chuỗi 4s, kể cả check nhanh 1–2 clip) BẮT BUỘC chạy `venv/Scripts/python.exe tools/review_dialogue.py <clip.mp4> --scene-id <SID>` (faster-whisper, word timestamps) TRƯỚC khi trình scorecard. CẤM chấm điểm/duyệt clip chỉ bằng frame; CẤM thay bằng script Whisper tự viết.
+    - (1) Scorecard phải có dòng **"Thoại"**: transcript, độ khớp chữ từng câu, thời gian bắt đầu–kết thúc và các cờ (`MISSING`, `WORDS <80%`, `CUT-OFF`, `TIMING`, `EXTRA SPEECH`, `? VOICE?`) theo bảng `/fk-review-video` Step 3c.
+    - (2) Exit 1 (MISSING / WORDS / CUT-OFF / TIMING / EXTRA SPEECH) = clip KHÔNG ĐẠT dù hình đẹp; đề xuất sửa và hỏi trước khi regen (Rule 29). Cờ `? VOICE?` không tự đánh trượt — báo User nghe lại.
+    - (3) Mốc thời gian từng từ của Whisper là nguồn chọn điểm cắt thoại khi dựng; không cắt mù `-ss 1` khi thoại bắt đầu từ giây 0.
+    - (4) Lỗi cấp phát OpenBLAS/MKL ➔ đặt `OPENBLAS_NUM_THREADS=1` rồi chạy lại. Tool không chạy được (exit 2) ➔ báo rõ cho User, không được lặng lẽ bỏ qua bước này.
+
 ## Pipeline Order (Omni Flash R2V Ingredients Workflow)
 
 ```
 [PRE-PRODUCTION / TIỀN KỲ KỊCH BẢN]
 - Tầng 1: story-bible.md  /sw-workflow điều phối (/sw-premise-theme, /sw-story-structure, /sw-character-conflict)
 - Tầng 2: script.md       /sw-scene-craft + /sw-dialogue + /fk-scriptwriter + /fk-camera-guide + /fk-action-choreography
+                          (gói tiêu đề + thumbnail + lời hứa được duyệt TRƯỚC khi viết — /fk-scriptwriter G2, /fk-time-travel-vlog bước 1.5)
+- Tầng 2.5: paper_edit.md /fk-paper-edit (python tools/paper_edit.py: bấm giờ, Rule 49, lời hứa 30s, móc giữ chân ≤ 90s, đề xuất cắt -> user duyệt)
 - Tầng 3: prompts.json    /fk-script-to-prompts (chuyển thể prompt JSON + lint_prompt.py self-repair -> user duyệt)
 
 [PRODUCTION / SẢN XUẤT MEDIA FLOWKIT]
@@ -204,6 +212,7 @@ page can sign a Flow request, so nothing works headless.
                      Omni Flash abra_r2v kết hợp Start Frame đã duyệt (làm Frame 0 anchor) + Ingredients (Face, Body, Props).
                      Auto-retry failed videos up to 5x; rolling download 720p clips to scenes/
 7.5 Review videos    Trích xuất frames từ video 720p thô (CHƯA CẦN XÓA LOGO).
+                     BẮT BUỘC nghe thoại từng clip: tools/review_dialogue.py (Whisper, Rule 67) -> dòng "Thoại" trong scorecard.
                      Display per-scene scorecard table + Review Board (http://localhost:8200).
                      STOP & PAUSE: User reviews each scene clip individually.
                      Nếu chưa đạt: sửa prompt -> REGENERATE_VIDEO (ở mức 720p, không tốn công xóa logo).
@@ -213,6 +222,7 @@ page can sign a Flow request, so nothing works headless.
 10. Concat           ffmpeg normalize + concat (dùng toàn bộ video 1080p clean đã duyệt)
                      BẮT BUỘC dùng /video-editing (Rule 66) + /fk-capcut-edit + /fk-sound-design cho dựng & master.
 11. SEO & Thumbnails Auto-match script language (e.g. 100% native Japanese for Japanese POV vlog)
+12. Analytics        Sau đăng 48h và 7 ngày: /fk-youtube-analytics (CTR, giữ chân 30s, AVD; đổi 1 biến; end screen/playlist/Shorts)
 ```
 
 ## Since Flow moved (September 2026)
@@ -286,6 +296,7 @@ This project has reusable skills in `skills/`. When the user says `/fk-<name>`, 
 | `/fk-import-voice` | fk-import-voice — Import Existing Voice as Template |
 | `/fk-insert-scene` | Insert new scene(s) into an existing video chain — for multi-angle shots, cutaways, or close-ups. |
 | `/fk-monitor` | fk-monitor — Full Pipeline Monitor |
+| `/fk-paper-edit` | Dựng trên giấy trước khi sinh: bấm giờ, số từ Rule 49, lời hứa 30s, móc giữ chân ≤ 90s, đề xuất cắt (`tools/paper_edit.py`) |
 | `/fk-pipeline` | fk-pipeline — Smart Full-Pipeline Orchestrator |
 | `/fk-refresh-urls` | Re-sign expired media URLs for all scenes in a video (images, videos, upscale videos) and character reference images. |
 | `/fk-remove-watermark` | fk-remove-watermark — Remove Watermark & Disrupt SynthID from Images and Videos |
@@ -302,6 +313,7 @@ This project has reusable skills in `skills/`. When the user says `/fk-<name>`, 
 | `/fk-upload-image` | Upload a local image file to Google Flow and get a media_id (UUID). |
 | `/fk-upload-ref` | fk-upload-ref — Upload Custom Reference Image for Character/Entity |
 | `/fk-vlog-guide` | fk-vlog-guide — Master Guide & Interactive Hub for Historical POV Vlogs |
+| `/fk-youtube-analytics` | Chẩn đoán sau đăng 48h / 7 ngày: CTR, giữ chân 30s, AVD; đổi 1 biến; end screen, playlist, Shorts |
 | `/fk-youtube-seo` | fk-youtube-seo — Generate YouTube Metadata (SEO-Optimized) |
 | `/fk-youtube-upload` | fk-youtube-upload — Upload Video to YouTube (Shorts + Long-form) |
 | `/translate-capcut-srt` | Trích xuất Auto Captions từ CapCut Desktop project và dịch sang ngôn ngữ khác. |

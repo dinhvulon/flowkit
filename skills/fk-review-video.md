@@ -101,9 +101,9 @@ curl -X POST "http://127.0.0.1:8100/api/videos/<VID>/review?project_id=<PID>&mod
 The API extracts frames from each scene video, sends them to the configured
 review CLI, and returns per-scene quality scores.
 
-## Step 3c: Dialogue check — listen with Whisper (every clip, both backends)
+## Step 3c: Dialogue check — listen with Whisper (MANDATORY, Rule 67 — every clip, both backends)
 
-Frames cannot hear. Run this on every clip **before** showing the scorecard (also on single-clip reviews):
+Frames cannot hear. Run this on every clip **before** showing the scorecard (also on single-clip reviews and quick 1–2 clip checks). Never score or approve a clip from frames alone, and never swap in an ad-hoc Whisper script. If OpenBLAS/MKL fails to allocate memory, set `OPENBLAS_NUM_THREADS=1` and rerun; if the tool cannot run (exit 2), tell the user — do not skip the step.
 
 ```bash
 venv/Scripts/python.exe tools/review_dialogue.py <clip.mp4> --scene-id <SID> [--json <out.json>]

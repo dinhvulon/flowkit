@@ -174,6 +174,12 @@ page can sign a Flow request, so nothing works headless.
     - (3) **Âm thanh theo chuẩn FlowKit**: master −14 LUFS / −1 dBTP theo `/fk-sound-design`, KHÔNG dùng mức `loudnorm I=-16` mặc định trong skill.
     - (4) **Lưu kết quả dựng và giữ phiên bản**: script ffmpeg/Remotion tạm đặt trong scratch (Rule 4, 43); danh sách cắt (EDL), file concat và bản dựng lưu trong `${OUTDIR}/edit/` với tên có số phiên bản (`edit_v1`, `edit_v2`...); không ghi đè bản dựng đã giao cho User.
 
+67. **Mandatory Whisper Dialogue Review (Bắt buộc nghe thoại bằng Whisper trong MỌI lần review video — cả Claude và Antigravity/Gemini — User Lock 19/10/2026)** — Khung hình không nghe được. MỌI lần review clip (pipeline, review sau regen, chuỗi 4s, kể cả check nhanh 1–2 clip) BẮT BUỘC chạy `venv/Scripts/python.exe tools/review_dialogue.py <clip.mp4> --scene-id <SID>` (faster-whisper, word timestamps) TRƯỚC khi trình scorecard. CẤM chấm điểm/duyệt clip chỉ bằng frame; CẤM thay bằng script Whisper tự viết.
+    - (1) Scorecard phải có dòng **"Thoại"**: transcript, độ khớp chữ từng câu, thời gian bắt đầu–kết thúc và các cờ (`MISSING`, `WORDS <80%`, `CUT-OFF`, `TIMING`, `EXTRA SPEECH`, `? VOICE?`) theo bảng `/fk-review-video` Step 3c.
+    - (2) Exit 1 (MISSING / WORDS / CUT-OFF / TIMING / EXTRA SPEECH) = clip KHÔNG ĐẠT dù hình đẹp; đề xuất sửa và hỏi trước khi regen (Rule 29). Cờ `? VOICE?` không tự đánh trượt — báo User nghe lại.
+    - (3) Mốc thời gian từng từ của Whisper là nguồn chọn điểm cắt thoại khi dựng; không cắt mù `-ss 1` khi thoại bắt đầu từ giây 0.
+    - (4) Lỗi cấp phát OpenBLAS/MKL ➔ đặt `OPENBLAS_NUM_THREADS=1` rồi chạy lại. Tool không chạy được (exit 2) ➔ báo rõ cho User, không được lặng lẽ bỏ qua bước này.
+
 ## Pipeline Order (Omni Flash R2V Ingredients Workflow)
 
 ```
@@ -204,6 +210,7 @@ page can sign a Flow request, so nothing works headless.
                      Omni Flash abra_r2v kết hợp Start Frame đã duyệt (làm Frame 0 anchor) + Ingredients (Face, Body, Props).
                      Auto-retry failed videos up to 5x; rolling download 720p clips to scenes/
 7.5 Review videos    Trích xuất frames từ video 720p thô (CHƯA CẦN XÓA LOGO).
+                     BẮT BUỘC nghe thoại từng clip: tools/review_dialogue.py (Whisper, Rule 67) -> dòng "Thoại" trong scorecard.
                      Display per-scene scorecard table + Review Board (http://localhost:8200).
                      STOP & PAUSE: User reviews each scene clip individually.
                      Nếu chưa đạt: sửa prompt -> REGENERATE_VIDEO (ở mức 720p, không tốn công xóa logo).
