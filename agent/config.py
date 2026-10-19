@@ -40,7 +40,7 @@ FLOW_ALLOW_DEGRADED = os.environ.get("FLOW_ALLOW_DEGRADED", "0") == "1"
 # (user-set 45-60s 2026-10-04, lowered to 30-45s 2026-10-16).
 # Status polls (operation / project listing / media record) are exempt and
 # only keep FLOW_POLL_MIN_GAP_S between themselves; each video is instead
-# polled once every VIDEO_POLL_INTERVAL (user 2026-10-16: "3p call check status").
+# polled once every VIDEO_POLL_INTERVAL (user 2026-10-19: "cứ 45s check 1 lần").
 FLOW_GENERATION_MIN_INTERVAL_S = max(
     0.0, float(os.environ.get("FLOW_GENERATION_MIN_INTERVAL_S", "45"))
 )
@@ -48,6 +48,9 @@ FLOW_GENERATION_MAX_INTERVAL_S = max(
     FLOW_GENERATION_MIN_INTERVAL_S,
     float(os.environ.get("FLOW_GENERATION_MAX_INTERVAL_S", "60")),
 )
+# Image uploads skip the gap above: one at a time, each sent this many seconds
+# after the previous upload finished (user 2026-10-19: "cách nhau 5s").
+FLOW_UPLOAD_GAP_S = max(0.0, float(os.environ.get("FLOW_UPLOAD_GAP_S", "5")))
 FLOW_GENERATION_MAX_CONCURRENT = max(
     1, int(os.environ.get("FLOW_GENERATION_MAX_CONCURRENT", "2"))
 )
@@ -101,7 +104,7 @@ MUSE2API_ALLOW_DEGRADED = os.environ.get("MUSE2API_ALLOW_DEGRADED", "0") == "1"
 
 # ─── Worker ──────────────────────────────────────────────────
 POLL_INTERVAL = int(os.environ.get("POLL_INTERVAL", "5"))
-VIDEO_POLL_INTERVAL = int(os.environ.get("VIDEO_POLL_INTERVAL", "180"))  # polling interval for video/upscale status (user 2026-10-16: every 3 min)
+VIDEO_POLL_INTERVAL = int(os.environ.get("VIDEO_POLL_INTERVAL", "45"))  # polling interval for video/upscale status (user 2026-10-19: every 45s, was 3 min)
 FLOW_POLL_MIN_GAP_S = max(0.0, float(os.environ.get("FLOW_POLL_MIN_GAP_S", "2")))  # spacing between status-poll RPCs
 MAX_RETRIES = int(os.environ.get("MAX_RETRIES", "5"))
 # One poll round; on timeout the worker re-polls the same Flow op (never resubmits),

@@ -1,722 +1,814 @@
 {
- "RA-02": {
-  "scene_id": "49c1a6a2-db37-4047-b091-35d27b6ec64d",
-  "act": "act1",
-  "duration": 8,
-  "start_frame": "GENERATE_IMAGE",
-  "image_refs": [
-   "Nora",
-   "Eli",
-   "Juniper",
-   "Hale Ranch"
-  ],
-  "video_refs": [
-   "Eli",
-   "Nora",
-   "Nora Body Ranch",
-   "Juniper",
-   "Hale Ranch"
-  ],
-  "raw_image_media_id": "4b2489e8-70d3-40ff-80ac-9ff3696afae0",
-  "image_file": "images/scene_001_RA-02_clean.jpg",
-  "video_media_id": "44182348-3ff7-45be-aae8-f9560f5ecd7d",
-  "video_file": "scenes/scene_001_RA-02_49c1a6a2.mp4",
-  "local_clean": "images/scene_001_RA-02_clean.jpg",
-  "uploaded": true,
-  "clean_media_id": "40d6f784-9739-4750-ad17-7f367bd3b55a",
-  "approved": true,
-  "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)"
- },
- "RA-03": {
-  "scene_id": "2528b08c-0add-409a-9819-4a6faf8b438b",
-  "act": "act1",
-  "duration": 6,
-  "start_frame": "GENERATE_IMAGE",
-  "image_refs": [
-   "Juniper",
-   "Hale Ranch"
-  ],
-  "video_refs": [
-   "Juniper",
-   "Nora Body Ranch",
-   "Hale Ranch"
-  ],
-  "raw_image_media_id": "9bb6dad1-91b5-471a-ac85-75bb2a314e81",
-  "clean_media_id": "7fbf9e17-29e9-4890-b92a-2d87a398cf2a",
-  "image_file": "images/scene_002_RA-03_clean.jpg",
-  "video_media_id": "3d83affe-1f41-47eb-b70f-87f4529de292",
-  "video_file": "scenes/scene_002_RA-03_2528b08c.mp4",
-  "approved": true,
-  "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)"
- },
- "RA-04": {
-  "scene_id": "28ccd1b4-d508-4fca-8f94-118479c4772f",
-  "act": "act1",
-  "duration": 6,
-  "start_frame": "GENERATE_IMAGE",
-  "image_refs": [
-   "Nora",
-   "Nora Body Ranch",
-   "Nora Pickup",
-   "Hale Ranch"
-  ],
-  "video_refs": [
-   "Nora",
-   "Nora Body Ranch",
-   "Nora Pickup",
-   "Hale Ranch"
-  ],
-  "raw_image_media_id": "dcb1ddfe-bbea-4e8d-983a-bb0a550c3c4b",
-  "image_file": "images/scene_003_RA-04_clean.jpg",
-  "video_media_id": "6d1be31f-3b73-4f09-9fd2-b9fee74656c9",
-  "video_file": "scenes/scene_003_RA-04_28ccd1b4.mp4",
-  "local_clean": "images/scene_003_RA-04_clean.jpg",
-  "uploaded": true,
-  "clean_media_id": "623b261e-38e7-4b5d-8fd9-9a132b466961",
-  "approved": false,
-  "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)",
-  "note_v7_rewrite": "2026-10-19: rewritten (pickup loading / answer the truck); old video obsolete, needs regen"
- },
- "RA-05": {
-  "scene_id": "43cddfc4-2392-4e96-b959-6fd4cab977b9",
-  "act": "act1",
-  "duration": 6,
-  "start_frame": "GENERATE_IMAGE",
-  "image_refs": [
-   "Eli",
-   "Nora Pickup",
-   "Hale Ranch"
-  ],
-  "video_refs": [
-   "Eli",
-   "Nora Body Ranch",
-   "Nora Pickup",
-   "Hale Ranch"
-  ],
-  "raw_image_media_id": "52004780-00a2-4bbf-bbee-0183e9f6341c",
-  "image_file": "images/scene_004_RA-05_clean.jpg",
-  "clean_media_id": "0646675d-b8d1-43dc-bb59-2756a7ac7352",
-  "video_media_id": "87105ae1-0e23-4a9e-8082-e6ab8bac8cd9",
-  "video_file": "scenes/scene_004_RA-05_43cddfc4.mp4",
-  "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)",
-  "approved": false,
-  "note_v7_rewrite": "2026-10-19: rewritten (pickup loading / answer the truck); old video obsolete, needs regen"
- },
- "RA-06": {
-  "scene_id": "14421c95-0980-493f-9ea4-1a65695a240c",
-  "act": "act1",
-  "duration": 4,
-  "start_frame": "GENERATE_IMAGE",
-  "image_refs": [
-   "Juniper",
-   "Hale Ranch"
-  ],
-  "video_refs": [
-   "Juniper",
-   "Hale Ranch"
-  ],
-  "raw_image_media_id": "27ad516b-669a-46b2-b983-cf06e0859dfd",
-  "image_file": "images/scene_005_RA-06_clean.jpg",
-  "clean_media_id": "6198384e-a835-4d3b-8bd6-11a0f9b214ce",
-  "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)",
-  "video_media_id": "273e4575-57c1-40a5-993d-9317f77230c9",
-  "video_file": "scenes/scene_005_RA-06_14421c95.mp4",
-  "approved": true
- },
- "RA-07": {
-  "scene_id": "f996fd3e-2ce7-4160-a377-c79c2c626a4b",
-  "act": "act1",
-  "duration": 8,
-  "start_frame": "GENERATE_IMAGE",
-  "image_refs": [
-   "Nora",
-   "Nora Body Fire",
-   "HALE Helmet"
-  ],
-  "video_refs": [
-   "Nora",
-   "Nora Body Fire",
-   "HALE Helmet",
-   "Nora Pickup"
-  ],
-  "raw_image_media_id": "58671eed-fac8-42ed-97a4-9d91aabb06f1",
-  "clean_media_id": "3accbb43-ff65-4f69-83c2-ecc92afeb454",
-  "image_file": "images/scene_006_RA-07_clean.jpg",
-  "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)"
- },
- "RA-08": {
-  "scene_id": "1a7e8514-48aa-4562-ab0e-4b5c759c17a4",
-  "act": "act1",
-  "duration": 4,
-  "start_frame": "GENERATE_IMAGE",
-  "image_refs": [
-   "Eli",
-   "Hale Ranch",
-   "Eli Pack"
-  ],
-  "video_refs": [
-   "Eli",
-   "Eli Pack",
-   "Hale Ranch"
-  ],
-  "raw_image_media_id": "499886cd-c00c-4b6f-ac6e-651c7e458fbb",
-  "clean_media_id": "212c4c1f-8dac-4d51-8af9-eadeaf5ec9ab",
-  "image_file": "images/scene_007_RA-08_clean.jpg",
-  "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)"
- },
- "RA-09": {
-  "scene_id": "aeb258ed-c72d-4440-8954-ed724d51e48e",
-  "act": "act1",
-  "duration": 4,
-  "start_frame": "GENERATE_IMAGE",
-  "image_refs": [
-   "Eli",
-   "Hale Ranch",
-   "Eli Bike"
-  ],
-  "video_refs": [
-   "Eli",
-   "Eli Bike",
-   "Eli Pack",
-   "Hale Ranch"
-  ],
-  "raw_image_media_id": "59049829-e85a-45fb-940a-a249c3beefb4",
-  "clean_media_id": "627fa37c-eab6-40f1-b1a4-435671ba0d99",
-  "image_file": "images/scene_008_RA-09_clean.jpg",
-  "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)"
- },
- "FL-01": {
-  "scene_id": "b2919f94-a57e-4556-b2f3-fa3084e6e12b",
-  "act": "act1",
-  "duration": 8,
-  "start_frame": "GENERATE_IMAGE",
-  "image_refs": [
-   "Ray",
-   "Fire Line"
-  ],
-  "video_refs": [
-   "Ray",
-   "Fire Line"
-  ],
-  "raw_image_media_id": "7c19aaef-8c7d-4059-a0ad-e31404c81bb4",
-  "image_file": "images/scene_009_FL-01_clean.jpg",
-  "local_clean": "images/scene_009_FL-01_clean.jpg",
-  "uploaded": true,
-  "clean_media_id": "77a3e227-04ce-4dcb-9198-4c2db6369bcd",
-  "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)"
- },
- "FL-02": {
-  "scene_id": "99f32c8f-dbc7-4d6f-a33d-192c48ab3b2d",
-  "act": "act1",
-  "duration": 6,
-  "start_frame": "GENERATE_IMAGE",
-  "image_refs": [
-   "Nora",
-   "Nora Body Fire",
-   "Fire Line"
-  ],
-  "video_refs": [
-   "Nora",
-   "Nora Body Fire",
-   "Crew Helmet",
-   "Fire Line"
-  ],
-  "raw_image_media_id": "1b72acf4-524f-4296-a56d-69ff446eea9b",
-  "image_file": "images/scene_010_FL-02_clean.jpg",
-  "clean_media_id": "9d5713e6-25dc-4bd7-86d6-a5556c36c7ef",
-  "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)"
- },
- "FL-04": {
-  "scene_id": "5fd1fc66-54a5-4281-aed1-0feb0e4e2cd7",
-  "act": "act1",
-  "duration": 6,
-  "start_frame": "GENERATE_IMAGE",
-  "image_refs": [
-   "Ray",
-   "Fire Line"
-  ],
-  "video_refs": [
-   "Ray",
-   "Fire Line"
-  ],
-  "raw_image_media_id": "e893c252-ca04-4173-9992-5d00669582f7",
-  "clean_media_id": "d6fa6f98-c431-473d-9d37-2aaf1b8c81a8",
-  "image_file": "images/scene_011_FL-04_clean.jpg",
-  "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)"
- },
- "EL-01": {
-  "scene_id": "a6727dd7-b652-421d-9e21-4b02e218f28b",
-  "act": "act1",
-  "duration": 6,
-  "start_frame": "GENERATE_IMAGE",
-  "image_refs": [
-   "Eli",
-   "Ridge Road",
-   "Eli Bike"
-  ],
-  "video_refs": [
-   "Eli",
-   "Eli Bike",
-   "Eli Pack",
-   "Ridge Road"
-  ],
-  "raw_image_media_id": "7333826b-4332-4215-9f7b-2d0dff7d12e3",
-  "clean_media_id": "3130b4b1-7fd1-4b63-b09e-15461bb581d3",
-  "image_file": "images/scene_012_EL-01_clean.jpg",
-  "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)"
- },
- "EL-02": {
-  "scene_id": "1941e521-3a7e-44a0-8dc9-30ca165d97bb",
-  "act": "act1",
-  "duration": 6,
-  "start_frame": "GENERATE_IMAGE",
-  "image_refs": [
-   "Eli",
-   "Ridge Road",
-   "Eli Bike"
-  ],
-  "video_refs": [
-   "Eli",
-   "Eli Bike",
-   "Ridge Road"
-  ],
-  "raw_image_media_id": "078e58d8-fb85-496c-b64d-244b5100b379",
-  "clean_media_id": "3cdbcb28-7446-4c41-bbf5-caa6b33394f8",
-  "image_file": "images/scene_013_EL-02_clean.jpg",
-  "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)"
- },
- "FL-05": {
-  "scene_id": "4157ec00-7fe5-467c-a04b-27c0457b6de8",
-  "act": "act1",
-  "duration": 4,
-  "start_frame": "GENERATE_IMAGE",
-  "image_refs": [
-   "Nora",
-   "Ray",
-   "Fire Line"
-  ],
-  "video_refs": [
-   "Ray",
-   "Nora",
-   "Nora Body Fire",
-   "Crew Helmet",
-   "Fire Line"
-  ],
-  "raw_image_media_id": "a3651a93-1aa1-4fe0-9183-6f6258cdb4ac",
-  "clean_media_id": "b02a9655-d33c-4e0f-a466-1b35ebb475a9",
-  "image_file": "images/scene_014_FL-05_clean.jpg",
-  "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)"
- },
- "FL-06": {
-  "scene_id": "075b26da-387e-4670-b8e5-e2341c82ce82",
-  "act": "act1",
-  "duration": 4,
-  "start_frame": "GENERATE_IMAGE",
-  "image_refs": [
-   "Fire Line"
-  ],
-  "video_refs": [
-   "Nora Body Fire",
-   "Fire Line"
-  ],
-  "raw_image_media_id": "813bb7f0-bf44-4664-ac19-c8811d07dd38",
-  "image_file": "images/scene_015_FL-06_clean.jpg",
-  "clean_media_id": "32eb3d61-c1e8-43d8-979d-916fbba939e6",
-  "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)"
- },
- "FL-07": {
-  "scene_id": "c8ec4bc6-b38b-492c-8f26-3ed4e1729120",
-  "act": "act1",
-  "duration": 6,
-  "start_frame": "GENERATE_IMAGE",
-  "image_refs": [
-   "Nora",
-   "Nora Body Fire",
-   "Fire Line"
-  ],
-  "video_refs": [
-   "Nora",
-   "Nora Body Fire",
-   "Crew Helmet",
-   "Fire Line"
-  ],
-  "raw_image_media_id": "7a686aaa-cfad-4c17-a951-38951bfdbd8e",
-  "clean_media_id": "cdc0e69a-76f0-43a6-a437-69864225bbc0",
-  "image_file": "images/scene_016_FL-07_clean.jpg",
-  "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)"
- },
- "EL-07": {
-  "scene_id": "82687128-9822-4e07-8bda-d2bdd53142fc",
-  "act": "act1",
-  "duration": 6,
-  "start_frame": "GENERATE_IMAGE",
-  "image_refs": [
-   "Eli",
-   "Ridge Road",
-   "Eli Bike"
-  ],
-  "video_refs": [
-   "Eli",
-   "Eli Bike",
-   "Eli Pack",
-   "Ridge Road"
-  ],
-  "raw_image_media_id": "ca9d6c42-54bc-4192-8d81-51ef10ace64c",
-  "clean_media_id": "14af7a11-3de4-4b35-a8c1-92abe00b363c",
-  "image_file": "images/scene_017_EL-07_clean.jpg",
-  "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)"
- },
- "FL-08": {
-  "scene_id": "948b7239-030d-49c3-9482-f8292e09ae90",
-  "act": "act1",
-  "duration": 8,
-  "start_frame": "GENERATE_IMAGE",
-  "image_refs": [
-   "Fire Line"
-  ],
-  "video_refs": [
-   "Fire Line"
-  ],
-  "raw_image_media_id": "272c58a2-d726-493d-bb20-bf1a5f903926",
-  "image_file": "images/scene_018_FL-08_clean.jpg",
-  "local_clean": "images/scene_018_FL-08_clean.jpg",
-  "uploaded": true,
-  "clean_media_id": "e04636bc-100e-4ae9-b743-70fa30ec80ac",
-  "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)"
- },
- "FL-09": {
-  "scene_id": "a87ab55e-64cd-4171-9714-c156bdf2682d",
-  "act": "act1",
-  "duration": 4,
-  "start_frame": "GENERATE_IMAGE",
-  "image_refs": [
-   "Fire Line"
-  ],
-  "video_refs": [
-   "Fire Line"
-  ],
-  "raw_image_media_id": "3cb399d0-80e0-463b-b947-c607f12573fa",
-  "local_clean": "images/scene_019_FL-09_clean.jpg",
-  "uploaded": true,
-  "clean_media_id": "b5408a5b-573e-48c7-bc1c-a2a6a57df1a6",
-  "image_file": "images/scene_019_FL-09_clean.jpg",
-  "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)"
- },
- "FL-10": {
-  "scene_id": "1f54cd9e-da3a-45f7-9a04-342067b743ab",
-  "act": "act1",
-  "duration": 6,
-  "start_frame": "GENERATE_IMAGE",
-  "image_refs": [
-   "Ray",
-   "Fire Line"
-  ],
-  "video_refs": [
-   "Ray",
-   "Fire Line"
-  ],
-  "raw_image_media_id": "368a3946-8e46-46e2-a5b9-22cf699ff6c4",
-  "local_clean": "images/scene_020_FL-10_clean.jpg",
-  "uploaded": true,
-  "clean_media_id": "d17edaa8-0578-43b4-b093-4cbc0a32e818",
-  "image_file": "images/scene_020_FL-10_clean.jpg",
-  "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)"
- },
- "FL-11": {
-  "scene_id": "9460e14b-bceb-409e-a4ec-848b2ea1f87b",
-  "act": "act1",
-  "duration": 4,
-  "start_frame": "GENERATE_IMAGE",
-  "image_refs": [
-   "Fire Line"
-  ],
-  "video_refs": [
-   "Fire Line"
-  ],
-  "raw_image_media_id": "2803d357-2fc9-4101-9b6a-d9a5d8644afe",
-  "local_clean": "images/scene_021_FL-11_clean.jpg",
-  "uploaded": true,
-  "clean_media_id": "383b7a75-0ae4-444c-9b3f-2f1361426f1f",
-  "image_file": "images/scene_021_FL-11_clean.jpg",
-  "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)"
- },
- "FL-12": {
-  "scene_id": "136294a1-2bca-4212-ad13-73553717096a",
-  "act": "act1",
-  "duration": 6,
-  "start_frame": "GENERATE_IMAGE",
-  "image_refs": [
-   "Nora",
-   "Nora Body Fire",
-   "Fire Line"
-  ],
-  "video_refs": [
-   "Nora",
-   "Nora Body Fire",
-   "Crew Helmet",
-   "Fire Line"
-  ],
-  "raw_image_media_id": "4715a61c-c2d0-49c1-8707-79abc256e2b8",
-  "local_clean": "images/scene_022_FL-12_clean.jpg",
-  "uploaded": true,
-  "clean_media_id": "e4487e94-ec9a-4b21-ad11-b7eb2d1ee266",
-  "image_file": "images/scene_022_FL-12_clean.jpg",
-  "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)"
- },
- "MP-01": {
-  "scene_id": "ba45804a-292c-4c27-80bb-4082f8411cb2",
-  "act": "act1",
-  "duration": 4,
-  "start_frame": "GENERATE_IMAGE",
-  "image_refs": [
-   "Fire Line"
-  ],
-  "video_refs": [
-   "Fire Line"
-  ],
-  "raw_image_media_id": "8c1fc28c-1995-462e-a170-62dc6cd430a0",
-  "local_clean": "images/scene_023_MP-01_clean.jpg",
-  "uploaded": true,
-  "clean_media_id": "9f0f9b25-b16c-4406-b728-4edbdbced9e0",
-  "image_file": "images/scene_023_MP-01_clean.jpg",
-  "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)"
- },
- "MP-02": {
-  "scene_id": "20b5906a-098e-4212-abb6-b7f2b0dda6c8",
-  "act": "act1",
-  "duration": 4,
-  "start_frame": "GENERATE_IMAGE",
-  "image_refs": [
-   "Nora",
-   "Nora Body Fire",
-   "Fire Line"
-  ],
-  "video_refs": [
-   "Nora",
-   "Nora Body Fire",
-   "Crew Helmet",
-   "Fire Line"
-  ],
-  "raw_image_media_id": "641a25a7-7703-4242-8b1e-a8f5d56d512e",
-  "local_clean": "images/scene_024_MP-02_clean.jpg",
-  "uploaded": true,
-  "clean_media_id": "8c34fc69-e9bd-45ac-ab4a-428823813f8f",
-  "image_file": "images/scene_024_MP-02_clean.jpg",
-  "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)"
- },
- "MP-03": {
-  "scene_id": "cc8585de-dd53-480a-922a-3ef81052b717",
-  "act": "act1",
-  "duration": 8,
-  "start_frame": "GENERATE_IMAGE",
-  "image_refs": [
-   "Ray",
-   "Fire Line"
-  ],
-  "video_refs": [
-   "Ray",
-   "Fire Line"
-  ],
-  "raw_image_media_id": "4f70ee7f-acf7-4728-ad88-045c8de03bd8",
-  "local_clean": "images/scene_025_MP-03_clean.jpg",
-  "uploaded": true,
-  "clean_media_id": "9a58df67-54ae-4dd1-9ef9-a3a91a8c76c4",
-  "image_file": "images/scene_025_MP-03_clean.jpg",
-  "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)"
- },
- "MP-04": {
-  "scene_id": "d4f60adf-b750-4853-9090-04b121e4acaf",
-  "act": "act1",
-  "duration": 6,
-  "start_frame": "GENERATE_IMAGE",
-  "image_refs": [
-   "Nora",
-   "Nora Body Fire",
-   "Fire Line"
-  ],
-  "video_refs": [
-   "Nora",
-   "Nora Body Fire",
-   "Crew Helmet",
-   "Fire Line"
-  ],
-  "raw_image_media_id": "2d1ac384-2c49-41aa-955b-538ff8b2faa3",
-  "local_clean": "images/scene_026_MP-04_clean.jpg",
-  "uploaded": true,
-  "clean_media_id": "06ab02ea-87f5-44c8-a509-1f9ec6d444e4",
-  "image_file": "images/scene_026_MP-04_clean.jpg",
-  "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)"
- },
- "FL-13": {
-  "scene_id": "0e9a4d05-a89e-42cd-9906-baa634e61749",
-  "act": "act1",
-  "duration": 6,
-  "start_frame": "GENERATE_IMAGE",
-  "image_refs": [
-   "Nora",
-   "Nora Body Fire",
-   "Fire Line"
-  ],
-  "video_refs": [
-   "Nora",
-   "Nora Body Fire",
-   "Crew Helmet",
-   "Fire Line"
-  ],
-  "raw_image_media_id": "d70719ac-0704-477d-b14d-de3c9b6b8b66",
-  "local_clean": "images/scene_027_FL-13_clean.jpg",
-  "uploaded": true,
-  "clean_media_id": "79264b72-6934-4493-b2c8-6bc6e3cc5dd0",
-  "image_file": "images/scene_027_FL-13_clean.jpg",
-  "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)"
- },
- "MP-05": {
-  "scene_id": "4f44afa0-49eb-4e6e-b81e-bc1e28db3fb2",
-  "act": "act1",
-  "duration": 6,
-  "start_frame": "GENERATE_IMAGE",
-  "image_refs": [
-   "Staging Area"
-  ],
-  "video_refs": [
-   "Staging Area"
-  ],
-  "raw_image_media_id": "e79188d8-fffd-49f4-bb5d-2bb576f66f8c",
-  "local_clean": "images/scene_028_MP-05_clean.jpg",
-  "uploaded": true,
-  "clean_media_id": "2dc91f64-a17b-4ec7-8be5-9f958bf40a42",
-  "image_file": "images/scene_028_MP-05_clean.jpg",
-  "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)"
- },
- "EL-03": {
-  "scene_id": "7b51db6b-a00b-4d82-b2e7-3916e542d4bc",
-  "act": "act1",
-  "duration": 6,
-  "start_frame": "GENERATE_IMAGE",
-  "image_refs": [
-   "Eli",
-   "Keller Barn",
-   "Eli Bike"
-  ],
-  "video_refs": [
-   "Eli",
-   "Eli Bike",
-   "Eli Pack",
-   "Keller Barn"
-  ],
-  "raw_image_media_id": "26a3d54d-1196-4842-9690-f46bd87fac1e",
-  "local_clean": "images/scene_029_EL-03_clean.jpg",
-  "uploaded": true,
-  "clean_media_id": "d5454556-1db0-4b00-9385-f2cc496abadb",
-  "image_file": "images/scene_029_EL-03_clean.jpg",
-  "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)"
- },
- "EL-05": {
-  "scene_id": "de04a4b9-23d0-4525-9e9c-67d9318fd999",
-  "act": "act1",
-  "duration": 6,
-  "start_frame": "GENERATE_IMAGE",
-  "image_refs": [
-   "Eli",
-   "Juniper",
-   "Keller Barn"
-  ],
-  "video_refs": [
-   "Eli",
-   "Juniper",
-   "Keller Barn"
-  ],
-  "raw_image_media_id": "2fca0ae0-eb08-4a70-b873-4ae276a66e1e",
-  "local_clean": "images/scene_030_EL-05_clean.jpg",
-  "uploaded": true,
-  "clean_media_id": "6ea722b3-ab03-4264-a997-57039227a4f3",
-  "image_file": "images/scene_030_EL-05_clean.jpg",
-  "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)"
- },
- "EL-06": {
-  "scene_id": "c50977a5-b917-48ae-8df9-3b28a71f58a2",
-  "act": "act1",
-  "duration": 6,
-  "start_frame": "GENERATE_IMAGE",
-  "image_refs": [
-   "Eli",
-   "Keller Barn"
-  ],
-  "video_refs": [
-   "Eli",
-   "Keller Barn"
-  ],
-  "raw_image_media_id": "7ab6bbef-2f39-40b9-b008-cac53943c4c3",
-  "local_clean": "images/scene_031_EL-06_clean.jpg",
-  "uploaded": true,
-  "clean_media_id": "86ed0a79-c336-4bf5-8dfc-605898401266",
-  "image_file": "images/scene_031_EL-06_clean.jpg",
-  "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)"
- },
- "EM-01": {
-  "scene_id": "493785b6-4f87-4ead-997f-d91317344862",
-  "act": "act1",
-  "duration": 6,
-  "start_frame": "GENERATE_IMAGE",
-  "image_refs": [
-   "Ray",
-   "Staging Area"
-  ],
-  "video_refs": [
-   "Ray",
-   "Staging Area"
-  ],
-  "raw_image_media_id": "c9138afe-c0a9-4dbf-a895-d849b03fb996",
-  "local_clean": "images/scene_032_EM-01_clean.jpg",
-  "uploaded": true,
-  "clean_media_id": "e043e764-da8f-45ae-8405-bd93751b2173",
-  "image_file": "images/scene_032_EM-01_clean.jpg",
-  "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)"
- },
- "EM-02": {
-  "scene_id": "3835fbf3-df8e-4c01-b165-984d100d683d",
-  "act": "act1",
-  "duration": 4,
-  "start_frame": "GENERATE_IMAGE",
-  "image_refs": [
-   "Nora",
-   "Nora Body Fire",
-   "Staging Area"
-  ],
-  "video_refs": [
-   "Nora",
-   "Nora Body Fire",
-   "Crew Helmet",
-   "Staging Area"
-  ],
-  "raw_image_media_id": "e5d40daa-3bd1-4d7c-8bda-5a3c48876834",
-  "local_clean": "images/scene_033_EM-02_clean.jpg",
-  "uploaded": true,
-  "clean_media_id": "7be95241-f74d-4df7-a973-796a947fabe7",
-  "image_file": "images/scene_033_EM-02_clean.jpg",
-  "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)"
- },
- "EM-03": {
-  "scene_id": "808d2300-d060-4972-acfb-3872d2c0d162",
-  "act": "act1",
-  "duration": 8,
-  "start_frame": "GENERATE_IMAGE",
-  "image_refs": [
-   "Nora",
-   "Nora Body Fire",
-   "Staging Area"
-  ],
-  "video_refs": [
-   "Nora",
-   "Nora Body Fire",
-   "Crew Helmet",
-   "Staging Area"
-  ],
-  "raw_image_media_id": "8a9fd7c5-1f6f-4faa-bce9-ae7a002dc2f6",
-  "local_clean": "images/scene_034_EM-03_clean.jpg",
-  "uploaded": true,
-  "clean_media_id": "9c379f8c-9ec9-449e-a8ca-85bd924d1f96",
-  "image_file": "images/scene_034_EM-03_clean.jpg",
-  "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)"
- }
+  "RA-02": {
+    "scene_id": "49c1a6a2-db37-4047-b091-35d27b6ec64d",
+    "act": "act1",
+    "duration": 8,
+    "start_frame": "GENERATE_IMAGE",
+    "image_refs": [
+      "Nora",
+      "Eli",
+      "Juniper",
+      "Hale Ranch"
+    ],
+    "video_refs": [
+      "Eli",
+      "Nora",
+      "Nora Body Ranch",
+      "Juniper",
+      "Hale Ranch"
+    ],
+    "raw_image_media_id": "4b2489e8-70d3-40ff-80ac-9ff3696afae0",
+    "image_file": "images/scene_001_RA-02_clean.jpg",
+    "video_media_id": "44182348-3ff7-45be-aae8-f9560f5ecd7d",
+    "video_file": "scenes/scene_001_RA-02_49c1a6a2.mp4",
+    "local_clean": "images/scene_001_RA-02_clean.jpg",
+    "uploaded": true,
+    "clean_media_id": "40d6f784-9739-4750-ad17-7f367bd3b55a",
+    "approved": true,
+    "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)",
+    "flow_account": "dinhvulon25",
+    "flow_project_id": "f4415512-2ab8-42ce-852f-122351e055a8"
+  },
+  "RA-03": {
+    "scene_id": "2528b08c-0add-409a-9819-4a6faf8b438b",
+    "act": "act1",
+    "duration": 6,
+    "start_frame": "GENERATE_IMAGE",
+    "image_refs": [
+      "Juniper",
+      "Hale Ranch"
+    ],
+    "video_refs": [
+      "Juniper",
+      "Nora Body Ranch",
+      "Hale Ranch"
+    ],
+    "raw_image_media_id": "9bb6dad1-91b5-471a-ac85-75bb2a314e81",
+    "clean_media_id": "7fbf9e17-29e9-4890-b92a-2d87a398cf2a",
+    "image_file": "images/scene_002_RA-03_clean.jpg",
+    "video_media_id": "3d83affe-1f41-47eb-b70f-87f4529de292",
+    "video_file": "scenes/scene_002_RA-03_2528b08c.mp4",
+    "approved": true,
+    "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)",
+    "flow_account": "dinhvulon25",
+    "flow_project_id": "f4415512-2ab8-42ce-852f-122351e055a8"
+  },
+  "RA-04": {
+    "scene_id": "28ccd1b4-d508-4fca-8f94-118479c4772f",
+    "act": "act1",
+    "duration": 6,
+    "start_frame": "GENERATE_IMAGE",
+    "image_refs": [
+      "Nora",
+      "Nora Body Ranch",
+      "Nora Pickup",
+      "Hale Ranch"
+    ],
+    "video_refs": [
+      "Nora",
+      "Nora Body Ranch",
+      "Nora Pickup",
+      "Hale Ranch"
+    ],
+    "raw_image_media_id": "dcb1ddfe-bbea-4e8d-983a-bb0a550c3c4b",
+    "image_file": "images/scene_003_RA-04_clean.jpg",
+    "video_media_id": "6d1be31f-3b73-4f09-9fd2-b9fee74656c9",
+    "video_file": "scenes/scene_003_RA-04_28ccd1b4.mp4",
+    "local_clean": "images/scene_003_RA-04_clean.jpg",
+    "uploaded": true,
+    "clean_media_id": "623b261e-38e7-4b5d-8fd9-9a132b466961",
+    "approved": false,
+    "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)",
+    "note_v7_rewrite": "2026-10-19: rewritten (pickup loading / answer the truck); old video obsolete, needs regen",
+    "flow_account": "dinhvulon25",
+    "flow_project_id": "f4415512-2ab8-42ce-852f-122351e055a8"
+  },
+  "RA-05": {
+    "scene_id": "43cddfc4-2392-4e96-b959-6fd4cab977b9",
+    "act": "act1",
+    "duration": 6,
+    "start_frame": "GENERATE_IMAGE",
+    "image_refs": [
+      "Eli",
+      "Nora Pickup",
+      "Hale Ranch"
+    ],
+    "video_refs": [
+      "Eli",
+      "Nora Body Ranch",
+      "Nora Pickup",
+      "Hale Ranch"
+    ],
+    "raw_image_media_id": "52004780-00a2-4bbf-bbee-0183e9f6341c",
+    "image_file": "images/scene_004_RA-05_clean.jpg",
+    "clean_media_id": "0646675d-b8d1-43dc-bb59-2756a7ac7352",
+    "video_media_id": "87105ae1-0e23-4a9e-8082-e6ab8bac8cd9",
+    "video_file": "scenes/scene_004_RA-05_43cddfc4.mp4",
+    "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)",
+    "approved": false,
+    "note_v7_rewrite": "2026-10-19: rewritten (pickup loading / answer the truck); old video obsolete, needs regen",
+    "flow_account": "dinhvulon25",
+    "flow_project_id": "f4415512-2ab8-42ce-852f-122351e055a8"
+  },
+  "RA-06": {
+    "scene_id": "14421c95-0980-493f-9ea4-1a65695a240c",
+    "act": "act1",
+    "duration": 4,
+    "start_frame": "GENERATE_IMAGE",
+    "image_refs": [
+      "Juniper",
+      "Hale Ranch"
+    ],
+    "video_refs": [
+      "Juniper",
+      "Hale Ranch"
+    ],
+    "raw_image_media_id": "27ad516b-669a-46b2-b983-cf06e0859dfd",
+    "image_file": "images/scene_005_RA-06_clean.jpg",
+    "clean_media_id": "6198384e-a835-4d3b-8bd6-11a0f9b214ce",
+    "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)",
+    "video_media_id": "273e4575-57c1-40a5-993d-9317f77230c9",
+    "video_file": "scenes/scene_005_RA-06_14421c95.mp4",
+    "approved": true,
+    "flow_account": "dinhvulon25",
+    "flow_project_id": "f4415512-2ab8-42ce-852f-122351e055a8"
+  },
+  "RA-07": {
+    "scene_id": "f996fd3e-2ce7-4160-a377-c79c2c626a4b",
+    "act": "act1",
+    "duration": 8,
+    "start_frame": "GENERATE_IMAGE",
+    "image_refs": [
+      "Nora",
+      "Nora Body Fire",
+      "HALE Helmet"
+    ],
+    "video_refs": [
+      "Nora",
+      "Nora Body Fire",
+      "HALE Helmet",
+      "Nora Pickup"
+    ],
+    "raw_image_media_id": "58671eed-fac8-42ed-97a4-9d91aabb06f1",
+    "clean_media_id": "3accbb43-ff65-4f69-83c2-ecc92afeb454",
+    "image_file": "images/scene_006_RA-07_clean.jpg",
+    "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)",
+    "video_media_id": "dbf66a2c-aabf-4185-b427-6f84c679f033",
+    "video_file": "scenes/scene_006_RA-07_f996fd3e.mp4",
+    "approved": true,
+    "review_note": "2026-10-19: hard cut ~5.8s to closer angle, helmet leaves frame, looks into lens; native dispatch voice speaks the script line 0-7s (Whisper EXTRA SPEECH) | user approved 2026-10-19 (use 0-5.8s)",
+    "flow_account": "dinhvulon25",
+    "flow_project_id": "f4415512-2ab8-42ce-852f-122351e055a8"
+  },
+  "RA-08": {
+    "scene_id": "1a7e8514-48aa-4562-ab0e-4b5c759c17a4",
+    "act": "act1",
+    "duration": 4,
+    "start_frame": "GENERATE_IMAGE",
+    "image_refs": [
+      "Eli",
+      "Hale Ranch",
+      "Eli Pack"
+    ],
+    "video_refs": [
+      "Eli",
+      "Eli Pack",
+      "Hale Ranch"
+    ],
+    "raw_image_media_id": "499886cd-c00c-4b6f-ac6e-651c7e458fbb",
+    "clean_media_id": "212c4c1f-8dac-4d51-8af9-eadeaf5ec9ab",
+    "image_file": "images/scene_007_RA-08_clean.jpg",
+    "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)",
+    "video_media_id": "32a64c4a-08fd-4889-93c8-050d6ef9a232",
+    "video_file": "scenes/scene_007_RA-08_1a7e8514_v3.mp4",
+    "approved": true,
+    "review_note": "v3 2026-10-19 ~8/10: one continuous shot at fence, one backpack held in front, rope coil stuffed in and zipped, eyes back on smoke at end; no tripod/device. Minor: framing is full-body (not MS), smoke on ridge faint, halter reads as rope coil. Whisper PASS (no speech). v1 hard cut+2 packs; v2 tripod in frame. | user approved v3 2026-10-19; v1/v2 files deleted.",
+    "flow_account": "dinhvulon25",
+    "flow_project_id": "f4415512-2ab8-42ce-852f-122351e055a8"
+  },
+  "RA-09": {
+    "scene_id": "aeb258ed-c72d-4440-8954-ed724d51e48e",
+    "act": "act1",
+    "duration": 4,
+    "start_frame": "GENERATE_IMAGE",
+    "image_refs": [
+      "Eli",
+      "Hale Ranch",
+      "Eli Bike"
+    ],
+    "video_refs": [
+      "Eli",
+      "Eli Bike",
+      "Eli Pack",
+      "Hale Ranch"
+    ],
+    "raw_image_media_id": "59049829-e85a-45fb-940a-a249c3beefb4",
+    "clean_media_id": "627fa37c-eab6-40f1-b1a4-435671ba0d99",
+    "image_file": "images/scene_008_RA-09_clean.jpg",
+    "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)",
+    "video_media_id": "c6f1adbc-c834-46f7-829b-6f6290545948",
+    "video_file": "scenes/scene_008_RA-09_aeb258ed.mp4",
+    "approved": true,
+    "review_note": "v1 2026-10-19 ~8/10: one continuous wide shot, Eli on red bike (matches ref) with backpack rides L-to-R then away past the ranch house; no tripod/device. Minor: he ends small but not tiny; smoke on ridge faint (behind right oak). Whisper PASS (no speech). | user approved 2026-10-19.",
+    "flow_account": "dinhvulon25",
+    "flow_project_id": "f4415512-2ab8-42ce-852f-122351e055a8"
+  },
+  "FL-01": {
+    "scene_id": "b2919f94-a57e-4556-b2f3-fa3084e6e12b",
+    "act": "act1",
+    "duration": 8,
+    "start_frame": "GENERATE_IMAGE",
+    "image_refs": [
+      "Ray",
+      "Fire Line"
+    ],
+    "video_refs": [
+      "Ray",
+      "Fire Line"
+    ],
+    "raw_image_media_id": "7c19aaef-8c7d-4059-a0ad-e31404c81bb4",
+    "image_file": "images/scene_009_FL-01_clean.jpg",
+    "local_clean": "images/scene_009_FL-01_clean.jpg",
+    "uploaded": true,
+    "clean_media_id": "77a3e227-04ce-4dcb-9198-4c2db6369bcd",
+    "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)",
+    "video_media_id": "647f966e-8dd3-482a-9dbf-8d1e5e02344c",
+    "video_file": "scenes/scene_009_FL-01_b2919f94_v3.mp4",
+    "approved": true,
+    "review_note": "v3 2026-10-19 ~8.5/10: one continuous shot, no flames anywhere near crew, crew digging line, pyrocumulus whole clip, a clearly black burned-out hillside behind; Ray points ~3.5-6s, drops arm, looks at crew. Minor: the black is an adjacent ridge, not across a valley. Whisper PASS: 100%, 0.18-7.5s, 151 Hz. Fix vs v2: clip-specific style without flames/embers. v1: cut at 3.33s; v2: flames beside crew. | user approved v3 2026-10-19; v1/v2 files deleted.",
+    "flow_account": "dinhvulon25",
+    "flow_project_id": "f4415512-2ab8-42ce-852f-122351e055a8"
+  },
+  "FL-02": {
+    "scene_id": "99f32c8f-dbc7-4d6f-a33d-192c48ab3b2d",
+    "act": "act1",
+    "duration": 6,
+    "start_frame": "GENERATE_IMAGE",
+    "image_refs": [
+      "Nora",
+      "Nora Body Fire",
+      "Fire Line"
+    ],
+    "video_refs": [
+      "Nora",
+      "Nora Body Fire",
+      "Crew Helmet",
+      "Fire Line"
+    ],
+    "raw_image_media_id": "1b72acf4-524f-4296-a56d-69ff446eea9b",
+    "image_file": "images/scene_010_FL-02_clean.jpg",
+    "clean_media_id": "9d5713e6-25dc-4bd7-86d6-a5556c36c7ef",
+    "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)",
+    "video_media_id": "70e64f3c-587c-4b47-a4d6-469bd1ffce01",
+    "video_file": "scenes/scene_010_FL-02_99f32c8f_v3.mp4",
+    "approved": true,
+    "review_note": "v3 2026-10-19 ~8.5/10: first clip with inline voice chips. Whisper PASS, no VOICE flag: Rookie alnilam 0.11-1.77s 100% 163 Hz; Nora kore 1.77-4.73s 100% 193 Hz (30 Hz gap vs 12 Hz in v2). One continuous shot, no cut, no flames, goggles on helmet. Issue: rookie half-face/helmet edge visible at right frame edge from ~1s (prompt said never shown) - reads as over-the-shoulder. v2 (bb2350ae) = alternative without rookie in frame.",
+    "voices": "alnilam,kore (inline {{voice:}} chips)",
+    "flow_account": "dinhvulon25",
+    "flow_project_id": "f4415512-2ab8-42ce-852f-122351e055a8"
+  },
+  "FL-04": {
+    "scene_id": "5fd1fc66-54a5-4281-aed1-0feb0e4e2cd7",
+    "act": "act1",
+    "duration": 6,
+    "start_frame": "GENERATE_IMAGE",
+    "image_refs": [
+      "Ray",
+      "Fire Line"
+    ],
+    "video_refs": [
+      "Ray",
+      "Fire Line"
+    ],
+    "raw_image_media_id": "e893c252-ca04-4173-9992-5d00669582f7",
+    "clean_media_id": "d6fa6f98-c431-473d-9d37-2aaf1b8c81a8",
+    "image_file": "images/scene_011_FL-04_clean.jpg",
+    "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)",
+    "video_media_id": "2f74f3ab-f56a-4228-bdf1-29adc50f752b",
+    "video_file": "scenes/scene_011_FL-04_5fd1fc66_v2.mp4",
+    "approved": true,
+    "voices": "algenib (inline chip)",
+    "review_note": "v2 2026-10-19 ~8/10: Whisper PASS 100% 0.34-5.52s, ? VOICE? 302 Hz (shouting, same as v1 296 Hz). No cut. Only one white-helmet Ray; rookie young, yellow helmet, consistent all clip; Ray slaps rookie pack 2-4s; crew cutting 4-6s. Flames on mid/far slope, not behind face. Minor: embers look like large flat flakes; small flame at left edge 0-0.5s. v1 (314bbf8f) had Ray clone.",
+    "flow_account": "dinhvulon25",
+    "flow_project_id": "f4415512-2ab8-42ce-852f-122351e055a8"
+  },
+  "EL-01": {
+    "scene_id": "a6727dd7-b652-421d-9e21-4b02e218f28b",
+    "act": "act1",
+    "duration": 6,
+    "start_frame": "GENERATE_IMAGE",
+    "image_refs": [
+      "Eli",
+      "Ridge Road",
+      "Eli Bike"
+    ],
+    "video_refs": [
+      "Eli",
+      "Eli Bike",
+      "Eli Pack",
+      "Ridge Road"
+    ],
+    "raw_image_media_id": "7333826b-4332-4215-9f7b-2d0dff7d12e3",
+    "clean_media_id": "3130b4b1-7fd1-4b63-b09e-15461bb581d3",
+    "image_file": "images/scene_012_EL-01_clean.jpg",
+    "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)",
+    "video_media_id": "9f48ec00-4629-4180-ba98-c7b32314c38d",
+    "video_file": "scenes/scene_012_EL-01_a6727dd7.mp4",
+    "approved": true,
+    "review_note": "v1 2026-10-19 ~8/10: Whisper PASS (no speech, silent clip as planned). No cut. Eli (green hoodie, jeans, red bike, backpack) pedals head-on up gravel road through dry pines, smoke haze, no flames. Minor: halter strap swinging from pack not visible (pack on his back, head-on angle); mostly seated rather than standing on pedals.",
+    "flow_account": "dinhvulon25",
+    "flow_project_id": "f4415512-2ab8-42ce-852f-122351e055a8"
+  },
+  "EL-02": {
+    "scene_id": "1941e521-3a7e-44a0-8dc9-30ca165d97bb",
+    "act": "act1",
+    "duration": 6,
+    "start_frame": "GENERATE_IMAGE",
+    "image_refs": [
+      "Eli",
+      "Ridge Road",
+      "Eli Bike"
+    ],
+    "video_refs": [
+      "Eli",
+      "Eli Bike",
+      "Ridge Road"
+    ],
+    "raw_image_media_id": "078e58d8-fb85-496c-b64d-244b5100b379",
+    "clean_media_id": "3cdbcb28-7446-4c41-bbf5-caa6b33394f8",
+    "image_file": "images/scene_013_EL-02_clean.jpg",
+    "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)",
+    "duration_note": "changed 6s -> 8s 2026-10-19 (user: artistic bike turn); Walt line padded to 18 words for Rule 49",
+    "video_media_id": "19e89394-e56d-41d0-991c-ff64cd9469dc",
+    "video_file": "scenes/scene_013_EL-02_1941e521_v6_8s.mp4",
+    "approved": true,
+    "review_note_v3": "v3 8s 2026-10-19 ~6/10: Whisper 92% but TIMING flag (Walt 0.1-7.0s vs planned 0-6s), ? VOICE? 320 Hz. No cut, no fire. Bike goes around the open left end of the barricade (physics OK), leg-over mount. FAIL: Eli wears a brown t-shirt instead of his green hoodie; Walt stands up the road beyond the barricade so Eli rides TOWARD him instead of away.",
+    "review_note": "v1 2026-10-19 ~8/10: Whisper PASS 89% (Walt/sadaltager native shout 0.0-5.54s, 'sister'll' heard as 'sister will'); ? VOICE? 340 Hz (shouting). No cut. Walt small far back by pickup waving arms; Eli silent, walks bike past plain sawhorse barricade (no text), mounts and rides away into haze; no fire, no equipment. Minor: rides through the gap rather than lifting the bike around.",
+    "review_note_v4": "v4 8s 2026-10-19 ~8/10: Whisper 92%, TIMING flag (Walt 0.2-7.7s vs planned 0-6s), ? VOICE? 333 Hz. No cut, no fire. Green hoodie OK. Walt far down the hill behind the barricade; Eli (already above the barricade) looks back, turns the bike, leg-over mount, rides off frame-left away from Walt; clip ends on the empty road with Walt waving. Minor: Eli's mouth opens briefly ~1s (reaction, no speech heard); he never actually goes around the barricade (starts on the uphill side).",
+    "review_note_v5": "v5 8s 2026-10-19 ~6/10 (media c981ef7c-75c0-4f02-853a-84d63644b945, scenes/scene_013_EL-02_1941e521_v5_8s.mp4): Whisper 92%, TIMING (Walt 0.0-7.2s), ? VOICE? 302 Hz. MOUTH LOCK failed: Eli's mouth wide open ~1s while Walt shouts (model lip-syncs the line onto the only big face). Bike/leg overlap the barricade post ~2.5-3s. Ends with Eli riding past camera, hoodie OK.",
+    "review_note_v6": "v6 8s 2026-10-19 ~8.5/10: Whisper 92%, TIMING flag (Walt 0.0-6.8s vs 0-6s), ? VOICE? 302 Hz. No cut, no fire. Eli back to camera 0-6.5s (face hidden while Walt shouts), then turns the bike, mounts and rides past camera with lips pressed shut, jaw set. Barricade stays in the background, never touched. Hoodie OK. Minor: Walt's pickup a bit nearer than 'far'.",
+    "flow_account": "dinhvulon25",
+    "flow_project_id": "f4415512-2ab8-42ce-852f-122351e055a8"
+  },
+  "FL-05": {
+    "scene_id": "4157ec00-7fe5-467c-a04b-27c0457b6de8",
+    "act": "act1",
+    "duration": 4,
+    "start_frame": "GENERATE_IMAGE",
+    "image_refs": [
+      "Nora",
+      "Ray",
+      "Fire Line"
+    ],
+    "video_refs": [
+      "Ray",
+      "Nora",
+      "Nora Body Fire",
+      "Crew Helmet",
+      "Fire Line"
+    ],
+    "raw_image_media_id": "a3651a93-1aa1-4fe0-9183-6f6258cdb4ac",
+    "clean_media_id": "b02a9655-d33c-4e0f-a466-1b35ebb475a9",
+    "image_file": "images/scene_014_FL-05_clean.jpg",
+    "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)",
+    "video_media_id": "e35ac235-2c56-4629-9a63-363fe1142612",
+    "video_file": "scenes/scene_014_FL-05_4157ec00.mp4",
+    "approved": true,
+    "review_note": "v1 2026-10-19 ~8.5/10: Whisper PASS 93% (Ray/algenib 133 Hz, 'Hale' heard as 'hail'). No cut. Ray (white helmet, only one) hands a lit drip torch to Nora (yellow helmet, braid, mouth closed); flames on the far slope between them, never behind a face. Minor: small emblem on Ray's helmet (not readable), Nora's nod is subtle.",
+    "flow_account": "dinhvulon25",
+    "flow_project_id": "f4415512-2ab8-42ce-852f-122351e055a8"
+  },
+  "FL-06": {
+    "scene_id": "075b26da-387e-4670-b8e5-e2341c82ce82",
+    "act": "act1",
+    "duration": 4,
+    "start_frame": "GENERATE_IMAGE",
+    "image_refs": [
+      "Fire Line"
+    ],
+    "video_refs": [
+      "Nora Body Fire",
+      "Fire Line"
+    ],
+    "raw_image_media_id": "813bb7f0-bf44-4664-ac19-c8811d07dd38",
+    "image_file": "images/scene_015_FL-06_clean.jpg",
+    "clean_media_id": "32eb3d61-c1e8-43d8-979d-916fbba939e6",
+    "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)",
+    "video_media_id": "1fca17c9-1945-4585-b7fe-a8f8de85633a",
+    "video_file": "scenes/scene_015_FL-06_075b26da_v2.mp4",
+    "flow_account": "namlt",
+    "flow_project_id": "d882e8cb-005a-45a6-9451-f822b820a7cf",
+    "review_note_v1": "v1 score 6.0: Whisper PASS (no speech); one hand, one torch OK; JUMP at ~1.9s: hillside teleports from unburnt grass + blue sky to a fully burnt smoky slope (time skip, scene filter missed it). Fix: keep the fire a thin few-meter strip, hillside behind stays unburnt, sky clear, no smoke wall.",
+    "review_note": "v2 score 8.0: Whisper PASS (no speech); one continuous shot, no time skip; thin flame line, hillside stays golden, clear sky; one hand, one torch. Minor: torch reads as a rusty can, open grassland with few pines.",
+    "approved": true
+  },
+  "FL-07": {
+    "scene_id": "c8ec4bc6-b38b-492c-8f26-3ed4e1729120",
+    "act": "act1",
+    "duration": 6,
+    "start_frame": "GENERATE_IMAGE",
+    "image_refs": [
+      "Nora",
+      "Nora Body Fire",
+      "Fire Line"
+    ],
+    "video_refs": [
+      "Nora",
+      "Nora Body Fire",
+      "Crew Helmet",
+      "Fire Line"
+    ],
+    "raw_image_media_id": "7a686aaa-cfad-4c17-a951-38951bfdbd8e",
+    "clean_media_id": "cdc0e69a-76f0-43a6-a437-69864225bbc0",
+    "image_file": "images/scene_016_FL-07_clean.jpg",
+    "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)",
+    "video_media_id": "a66351ed-c8ab-4801-b20e-47d20670624c",
+    "video_file": "scenes/scene_016_FL-07_c8ec4bc6_v2.mp4",
+    "flow_account": "namlt",
+    "flow_project_id": "d882e8cb-005a-45a6-9451-f822b820a7cf",
+    "review_note_v1": "v1 score 6.0: Whisper PASS (rookie 0.37-1.73s, Nora 2.43-5.53s, 100%); torch-to-face tilt works, rookie never seen, Nora mouth closed during rookie line. FAIL: whole clip has a 35mm film-strip border (black edges, rounded corners); torch vanishes after ~3s (hands empty); Nora walks straight at the camera looking into it instead of at the flame. Fix: full-bleed frame ban on film border, torch stays in right hand all clip, she looks down-left at the flame line.",
+    "review_note": "v2 score 8.5: Whisper PASS 100% (rookie 0.0-1.0s off-frame, Nora 2.12-5.2s); full-bleed frame, no film border; torch-to-face tilt in one shot; Nora looks down-left at the flame, never at lens; pine ridge matches Fire Line ref. Minor: torch leaves the frame once the shot is MCU (not seen vanishing).",
+    "approved": true
+  },
+  "EL-07": {
+    "scene_id": "82687128-9822-4e07-8bda-d2bdd53142fc",
+    "act": "act1",
+    "duration": 6,
+    "start_frame": "GENERATE_IMAGE",
+    "image_refs": [
+      "Eli",
+      "Ridge Road",
+      "Eli Bike"
+    ],
+    "video_refs": [
+      "Eli",
+      "Eli Bike",
+      "Eli Pack",
+      "Ridge Road"
+    ],
+    "raw_image_media_id": "ca9d6c42-54bc-4192-8d81-51ef10ace64c",
+    "clean_media_id": "14af7a11-3de4-4b35-a8c1-92abe00b363c",
+    "image_file": "images/scene_017_EL-07_clean.jpg",
+    "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)",
+    "video_media_id": "8de6a2ca-d847-45e8-9213-0a410661aeea",
+    "video_file": "scenes/scene_017_EL-07_82687128_v2.mp4",
+    "flow_account": "namlt",
+    "flow_project_id": "d882e8cb-005a-45a6-9451-f822b820a7cf",
+    "approved": false,
+    "review_note_v1": "v1 score 5.0: CRITICAL ghost film-camera rig in left foreground 0-1.5s; no ember rain (smoke is white puffs, fire = campfire patches); foot drags on gravel ~3-4s (no fall). Good: one bike, backpack on, no cuts, no speech (Whisper PASS), never looks at lens.",
+    "review_note": "v2 score 6.5: no rig, smoky haze good, Whisper PASS (no speech), no cuts. FAIL beat: at ~3.4-4.4s he swerves toward the viewer and U-turns, riding right-to-left back the way he came (should keep riding into the smoke). Embers sparse; spot fire looks like a campfire pile. Usable 0-3.4s only."
+  },
+  "FL-08": {
+    "scene_id": "948b7239-030d-49c3-9482-f8292e09ae90",
+    "act": "act1",
+    "duration": 8,
+    "start_frame": "GENERATE_IMAGE",
+    "image_refs": [
+      "Fire Line"
+    ],
+    "video_refs": [
+      "Fire Line"
+    ],
+    "raw_image_media_id": "272c58a2-d726-493d-bb20-bf1a5f903926",
+    "image_file": "images/scene_018_FL-08_clean.jpg",
+    "local_clean": "images/scene_018_FL-08_clean.jpg",
+    "uploaded": true,
+    "clean_media_id": "e04636bc-100e-4ae9-b743-70fa30ec80ac",
+    "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)"
+  },
+  "FL-09": {
+    "scene_id": "a87ab55e-64cd-4171-9714-c156bdf2682d",
+    "act": "act1",
+    "duration": 4,
+    "start_frame": "GENERATE_IMAGE",
+    "image_refs": [
+      "Fire Line"
+    ],
+    "video_refs": [
+      "Fire Line"
+    ],
+    "raw_image_media_id": "3cb399d0-80e0-463b-b947-c607f12573fa",
+    "local_clean": "images/scene_019_FL-09_clean.jpg",
+    "uploaded": true,
+    "clean_media_id": "b5408a5b-573e-48c7-bc1c-a2a6a57df1a6",
+    "image_file": "images/scene_019_FL-09_clean.jpg",
+    "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)"
+  },
+  "FL-10": {
+    "scene_id": "1f54cd9e-da3a-45f7-9a04-342067b743ab",
+    "act": "act1",
+    "duration": 6,
+    "start_frame": "GENERATE_IMAGE",
+    "image_refs": [
+      "Ray",
+      "Fire Line"
+    ],
+    "video_refs": [
+      "Ray",
+      "Fire Line"
+    ],
+    "raw_image_media_id": "368a3946-8e46-46e2-a5b9-22cf699ff6c4",
+    "local_clean": "images/scene_020_FL-10_clean.jpg",
+    "uploaded": true,
+    "clean_media_id": "d17edaa8-0578-43b4-b093-4cbc0a32e818",
+    "image_file": "images/scene_020_FL-10_clean.jpg",
+    "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)"
+  },
+  "FL-11": {
+    "scene_id": "9460e14b-bceb-409e-a4ec-848b2ea1f87b",
+    "act": "act1",
+    "duration": 4,
+    "start_frame": "GENERATE_IMAGE",
+    "image_refs": [
+      "Fire Line"
+    ],
+    "video_refs": [
+      "Fire Line"
+    ],
+    "raw_image_media_id": "2803d357-2fc9-4101-9b6a-d9a5d8644afe",
+    "local_clean": "images/scene_021_FL-11_clean.jpg",
+    "uploaded": true,
+    "clean_media_id": "383b7a75-0ae4-444c-9b3f-2f1361426f1f",
+    "image_file": "images/scene_021_FL-11_clean.jpg",
+    "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)"
+  },
+  "FL-12": {
+    "scene_id": "136294a1-2bca-4212-ad13-73553717096a",
+    "act": "act1",
+    "duration": 6,
+    "start_frame": "GENERATE_IMAGE",
+    "image_refs": [
+      "Nora",
+      "Nora Body Fire",
+      "Fire Line"
+    ],
+    "video_refs": [
+      "Nora",
+      "Nora Body Fire",
+      "Crew Helmet",
+      "Fire Line"
+    ],
+    "raw_image_media_id": "4715a61c-c2d0-49c1-8707-79abc256e2b8",
+    "local_clean": "images/scene_022_FL-12_clean.jpg",
+    "uploaded": true,
+    "clean_media_id": "e4487e94-ec9a-4b21-ad11-b7eb2d1ee266",
+    "image_file": "images/scene_022_FL-12_clean.jpg",
+    "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)"
+  },
+  "MP-01": {
+    "scene_id": "ba45804a-292c-4c27-80bb-4082f8411cb2",
+    "act": "act1",
+    "duration": 4,
+    "start_frame": "GENERATE_IMAGE",
+    "image_refs": [
+      "Fire Line"
+    ],
+    "video_refs": [
+      "Fire Line"
+    ],
+    "raw_image_media_id": "8c1fc28c-1995-462e-a170-62dc6cd430a0",
+    "local_clean": "images/scene_023_MP-01_clean.jpg",
+    "uploaded": true,
+    "clean_media_id": "9f0f9b25-b16c-4406-b728-4edbdbced9e0",
+    "image_file": "images/scene_023_MP-01_clean.jpg",
+    "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)"
+  },
+  "MP-02": {
+    "scene_id": "20b5906a-098e-4212-abb6-b7f2b0dda6c8",
+    "act": "act1",
+    "duration": 4,
+    "start_frame": "GENERATE_IMAGE",
+    "image_refs": [
+      "Nora",
+      "Nora Body Fire",
+      "Fire Line"
+    ],
+    "video_refs": [
+      "Nora",
+      "Nora Body Fire",
+      "Crew Helmet",
+      "Fire Line"
+    ],
+    "raw_image_media_id": "641a25a7-7703-4242-8b1e-a8f5d56d512e",
+    "local_clean": "images/scene_024_MP-02_clean.jpg",
+    "uploaded": true,
+    "clean_media_id": "8c34fc69-e9bd-45ac-ab4a-428823813f8f",
+    "image_file": "images/scene_024_MP-02_clean.jpg",
+    "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)"
+  },
+  "MP-03": {
+    "scene_id": "cc8585de-dd53-480a-922a-3ef81052b717",
+    "act": "act1",
+    "duration": 8,
+    "start_frame": "GENERATE_IMAGE",
+    "image_refs": [
+      "Ray",
+      "Fire Line"
+    ],
+    "video_refs": [
+      "Ray",
+      "Fire Line"
+    ],
+    "raw_image_media_id": "4f70ee7f-acf7-4728-ad88-045c8de03bd8",
+    "local_clean": "images/scene_025_MP-03_clean.jpg",
+    "uploaded": true,
+    "clean_media_id": "9a58df67-54ae-4dd1-9ef9-a3a91a8c76c4",
+    "image_file": "images/scene_025_MP-03_clean.jpg",
+    "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)"
+  },
+  "MP-04": {
+    "scene_id": "d4f60adf-b750-4853-9090-04b121e4acaf",
+    "act": "act1",
+    "duration": 6,
+    "start_frame": "GENERATE_IMAGE",
+    "image_refs": [
+      "Nora",
+      "Nora Body Fire",
+      "Fire Line"
+    ],
+    "video_refs": [
+      "Nora",
+      "Nora Body Fire",
+      "Crew Helmet",
+      "Fire Line"
+    ],
+    "raw_image_media_id": "2d1ac384-2c49-41aa-955b-538ff8b2faa3",
+    "local_clean": "images/scene_026_MP-04_clean.jpg",
+    "uploaded": true,
+    "clean_media_id": "06ab02ea-87f5-44c8-a509-1f9ec6d444e4",
+    "image_file": "images/scene_026_MP-04_clean.jpg",
+    "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)"
+  },
+  "FL-13": {
+    "scene_id": "0e9a4d05-a89e-42cd-9906-baa634e61749",
+    "act": "act1",
+    "duration": 6,
+    "start_frame": "GENERATE_IMAGE",
+    "image_refs": [
+      "Nora",
+      "Nora Body Fire",
+      "Fire Line"
+    ],
+    "video_refs": [
+      "Nora",
+      "Nora Body Fire",
+      "Crew Helmet",
+      "Fire Line"
+    ],
+    "raw_image_media_id": "d70719ac-0704-477d-b14d-de3c9b6b8b66",
+    "local_clean": "images/scene_027_FL-13_clean.jpg",
+    "uploaded": true,
+    "clean_media_id": "79264b72-6934-4493-b2c8-6bc6e3cc5dd0",
+    "image_file": "images/scene_027_FL-13_clean.jpg",
+    "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)"
+  },
+  "MP-05": {
+    "scene_id": "4f44afa0-49eb-4e6e-b81e-bc1e28db3fb2",
+    "act": "act1",
+    "duration": 6,
+    "start_frame": "GENERATE_IMAGE",
+    "image_refs": [
+      "Staging Area"
+    ],
+    "video_refs": [
+      "Staging Area"
+    ],
+    "raw_image_media_id": "e79188d8-fffd-49f4-bb5d-2bb576f66f8c",
+    "local_clean": "images/scene_028_MP-05_clean.jpg",
+    "uploaded": true,
+    "clean_media_id": "2dc91f64-a17b-4ec7-8be5-9f958bf40a42",
+    "image_file": "images/scene_028_MP-05_clean.jpg",
+    "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)"
+  },
+  "EL-03": {
+    "scene_id": "7b51db6b-a00b-4d82-b2e7-3916e542d4bc",
+    "act": "act1",
+    "duration": 6,
+    "start_frame": "GENERATE_IMAGE",
+    "image_refs": [
+      "Eli",
+      "Keller Barn",
+      "Eli Bike"
+    ],
+    "video_refs": [
+      "Eli",
+      "Eli Bike",
+      "Eli Pack",
+      "Keller Barn"
+    ],
+    "raw_image_media_id": "26a3d54d-1196-4842-9690-f46bd87fac1e",
+    "local_clean": "images/scene_029_EL-03_clean.jpg",
+    "uploaded": true,
+    "clean_media_id": "d5454556-1db0-4b00-9385-f2cc496abadb",
+    "image_file": "images/scene_029_EL-03_clean.jpg",
+    "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)"
+  },
+  "EL-05": {
+    "scene_id": "de04a4b9-23d0-4525-9e9c-67d9318fd999",
+    "act": "act1",
+    "duration": 6,
+    "start_frame": "GENERATE_IMAGE",
+    "image_refs": [
+      "Eli",
+      "Juniper",
+      "Keller Barn"
+    ],
+    "video_refs": [
+      "Eli",
+      "Juniper",
+      "Keller Barn"
+    ],
+    "raw_image_media_id": "2fca0ae0-eb08-4a70-b873-4ae276a66e1e",
+    "local_clean": "images/scene_030_EL-05_clean.jpg",
+    "uploaded": true,
+    "clean_media_id": "6ea722b3-ab03-4264-a997-57039227a4f3",
+    "image_file": "images/scene_030_EL-05_clean.jpg",
+    "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)"
+  },
+  "EL-06": {
+    "scene_id": "c50977a5-b917-48ae-8df9-3b28a71f58a2",
+    "act": "act1",
+    "duration": 6,
+    "start_frame": "GENERATE_IMAGE",
+    "image_refs": [
+      "Eli",
+      "Keller Barn"
+    ],
+    "video_refs": [
+      "Eli",
+      "Keller Barn"
+    ],
+    "raw_image_media_id": "7ab6bbef-2f39-40b9-b008-cac53943c4c3",
+    "local_clean": "images/scene_031_EL-06_clean.jpg",
+    "uploaded": true,
+    "clean_media_id": "86ed0a79-c336-4bf5-8dfc-605898401266",
+    "image_file": "images/scene_031_EL-06_clean.jpg",
+    "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)"
+  },
+  "EM-01": {
+    "scene_id": "493785b6-4f87-4ead-997f-d91317344862",
+    "act": "act1",
+    "duration": 6,
+    "start_frame": "GENERATE_IMAGE",
+    "image_refs": [
+      "Ray",
+      "Staging Area"
+    ],
+    "video_refs": [
+      "Ray",
+      "Staging Area"
+    ],
+    "raw_image_media_id": "c9138afe-c0a9-4dbf-a895-d849b03fb996",
+    "local_clean": "images/scene_032_EM-01_clean.jpg",
+    "uploaded": true,
+    "clean_media_id": "e043e764-da8f-45ae-8405-bd93751b2173",
+    "image_file": "images/scene_032_EM-01_clean.jpg",
+    "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)"
+  },
+  "EM-02": {
+    "scene_id": "3835fbf3-df8e-4c01-b165-984d100d683d",
+    "act": "act1",
+    "duration": 4,
+    "start_frame": "GENERATE_IMAGE",
+    "image_refs": [
+      "Nora",
+      "Nora Body Fire",
+      "Staging Area"
+    ],
+    "video_refs": [
+      "Nora",
+      "Nora Body Fire",
+      "Crew Helmet",
+      "Staging Area"
+    ],
+    "raw_image_media_id": "e5d40daa-3bd1-4d7c-8bda-5a3c48876834",
+    "local_clean": "images/scene_033_EM-02_clean.jpg",
+    "uploaded": true,
+    "clean_media_id": "7be95241-f74d-4df7-a973-796a947fabe7",
+    "image_file": "images/scene_033_EM-02_clean.jpg",
+    "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)"
+  },
+  "EM-03": {
+    "scene_id": "808d2300-d060-4972-acfb-3872d2c0d162",
+    "act": "act1",
+    "duration": 8,
+    "start_frame": "GENERATE_IMAGE",
+    "image_refs": [
+      "Nora",
+      "Nora Body Fire",
+      "Staging Area"
+    ],
+    "video_refs": [
+      "Nora",
+      "Nora Body Fire",
+      "Crew Helmet",
+      "Staging Area"
+    ],
+    "raw_image_media_id": "8a9fd7c5-1f6f-4faa-bce9-ae7a002dc2f6",
+    "local_clean": "images/scene_034_EM-03_clean.jpg",
+    "uploaded": true,
+    "clean_media_id": "9c379f8c-9ec9-449e-a8ca-85bd924d1f96",
+    "image_file": "images/scene_034_EM-03_clean.jpg",
+    "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)"
+  }
 }

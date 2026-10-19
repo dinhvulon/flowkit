@@ -1,5 +1,5 @@
 {
- "project_id": "f4415512-2ab8-42ce-852f-122351e055a8",
+ "project_id": "d882e8cb-005a-45a6-9451-f822b820a7cf",
  "video_id": "d6806340-c53a-4e58-86b0-940e2dfb1082",
  "character_ids": {
   "Juniper": "26df0eb4-92ac-414a-85d1-19d1dae55ae0",
@@ -29,110 +29,153 @@
  },
  "refs": {
   "Nora": {
-   "media_id": "134ff212-a50e-4e9f-a5b0-5ee1a6295d10",
-   "file": "uploads/nora_main_clean.jpg"
+   "media_id": "0b95a5ea-2522-4ec0-a266-95d923f4acfc",
+   "file": "uploads/nora_main_clean.jpg",
+   "account1_media_id": "134ff212-a50e-4e9f-a5b0-5ee1a6295d10",
+   "account2_media_id": "0b95a5ea-2522-4ec0-a266-95d923f4acfc"
   },
   "Nora Body Ranch": {
    "raw_media_id": "3f9409bf-5ab3-483f-9260-17a8617045c5",
    "clean_media_id": "66b36af8-8d71-4feb-a915-1274b18306a4",
-   "media_id": "66b36af8-8d71-4feb-a915-1274b18306a4",
-   "file": "refs/nora_body_ranch_clean.jpg"
+   "media_id": "54397d42-8d4a-4853-a8d2-d70c362aadb6",
+   "file": "refs/nora_body_ranch_clean.jpg",
+   "account1_media_id": "66b36af8-8d71-4feb-a915-1274b18306a4",
+   "account2_media_id": "54397d42-8d4a-4853-a8d2-d70c362aadb6"
   },
   "Nora Body Fire": {
    "raw_media_id": "f4cb9f90-779a-4047-a569-6968129124d3",
    "clean_media_id": "d0173244-c54e-4bd4-9651-9bb197464400",
-   "media_id": "d0173244-c54e-4bd4-9651-9bb197464400",
-   "file": "refs/nora_body_fire_clean.jpg"
+   "media_id": "a8266bed-4d72-44fd-8a45-c83af717d85a",
+   "file": "refs/nora_body_fire_clean.jpg",
+   "account1_media_id": "d0173244-c54e-4bd4-9651-9bb197464400",
+   "account2_media_id": "a8266bed-4d72-44fd-8a45-c83af717d85a"
   },
   "Eli": {
    "raw_media_id": "90856b8f-6d0b-42ea-b455-6cd3791a12e1",
    "clean_media_id": "8ffec18e-4abc-410d-bd30-6ef8c74fe79b",
-   "media_id": "8ffec18e-4abc-410d-bd30-6ef8c74fe79b",
-   "file": "refs/eli_clean.jpg"
+   "media_id": "c988935e-1475-4805-b259-4391ebafea73",
+   "file": "refs/eli_clean.jpg",
+   "account1_media_id": "8ffec18e-4abc-410d-bd30-6ef8c74fe79b",
+   "account2_media_id": "c988935e-1475-4805-b259-4391ebafea73"
   },
   "Ray": {
    "raw_media_id": "50930f39-0121-4606-97ba-af02aad93ef3",
    "clean_media_id": "24d8c5d2-68d5-444c-b0ae-f13eec36f5f0",
-   "media_id": "24d8c5d2-68d5-444c-b0ae-f13eec36f5f0",
-   "file": "refs/ray_clean.jpg"
+   "media_id": "1547e4aa-69ca-42f8-b89b-dde8d87ee6ae",
+   "file": "refs/ray_clean.jpg",
+   "account1_media_id": "24d8c5d2-68d5-444c-b0ae-f13eec36f5f0",
+   "account2_media_id": "1547e4aa-69ca-42f8-b89b-dde8d87ee6ae"
   },
   "Juniper": {
    "raw_media_id": "dd82a218-6dc1-4226-ba91-10b23ae8a32d",
    "clean_media_id": "cc6d0d0e-e07c-48da-ad6c-c4c85045db79",
-   "media_id": "cc6d0d0e-e07c-48da-ad6c-c4c85045db79",
-   "file": "refs/juniper_clean.jpg"
+   "media_id": "6a956c1e-1c7d-4fa9-97f8-fa7fd577eab0",
+   "file": "refs/juniper_clean.jpg",
+   "account1_media_id": "cc6d0d0e-e07c-48da-ad6c-c4c85045db79",
+   "account2_media_id": "6a956c1e-1c7d-4fa9-97f8-fa7fd577eab0"
   },
   "Hale Ranch": {
    "raw_media_id": "7fbee13a-babb-42c5-a249-5e89d2dab999",
    "clean_media_id": "47b71b56-0c24-45a8-9d1f-d713d17dc82b",
-   "media_id": "47b71b56-0c24-45a8-9d1f-d713d17dc82b",
-   "file": "refs/hale_ranch_clean.jpg"
+   "media_id": "0174c960-6da5-42f3-ae18-b85e09466b2a",
+   "file": "refs/hale_ranch_clean.jpg",
+   "account1_media_id": "47b71b56-0c24-45a8-9d1f-d713d17dc82b",
+   "account2_media_id": "0174c960-6da5-42f3-ae18-b85e09466b2a"
   },
   "Fire Line": {
    "raw_media_id": "4a317b66-625e-4ca4-8aa5-f6e5df21ed82",
    "clean_media_id": "1e8a091b-8605-44bd-931c-5254b3ea9794",
-   "media_id": "1e8a091b-8605-44bd-931c-5254b3ea9794",
-   "file": "refs/fire_line_clean.jpg"
+   "media_id": "f06f34f3-18a3-4993-9e65-061dcfb2b547",
+   "file": "refs/fire_line_clean.jpg",
+   "account1_media_id": "1e8a091b-8605-44bd-931c-5254b3ea9794",
+   "account2_media_id": "f06f34f3-18a3-4993-9e65-061dcfb2b547"
   },
   "Staging Area": {
    "raw_media_id": "73bef002-72b3-48d7-a8e1-3bf709a8356e",
    "clean_media_id": "7a4152b9-05cd-461b-833b-00adab07e667",
-   "media_id": "7a4152b9-05cd-461b-833b-00adab07e667",
-   "file": "refs/staging_area_clean.jpg"
+   "media_id": "fdd457c4-b707-4c1b-8797-f048523e42cb",
+   "file": "refs/staging_area_clean.jpg",
+   "account1_media_id": "7a4152b9-05cd-461b-833b-00adab07e667",
+   "account2_media_id": "fdd457c4-b707-4c1b-8797-f048523e42cb"
   },
   "Cedar Flat": {
    "raw_media_id": "c33cf08c-16ae-48ab-812f-8c15f5860a5f",
    "clean_media_id": "b22241b5-f6a5-4075-95a8-6615e4de9a83",
-   "media_id": "b22241b5-f6a5-4075-95a8-6615e4de9a83",
-   "file": "refs/cedar_flat_clean.jpg"
+   "media_id": "55f9229a-fb63-435f-af7c-704391f74b96",
+   "file": "refs/cedar_flat_clean.jpg",
+   "account1_media_id": "b22241b5-f6a5-4075-95a8-6615e4de9a83",
+   "account2_media_id": "55f9229a-fb63-435f-af7c-704391f74b96"
   },
   "Ridge Road": {
    "raw_media_id": "f004cd5a-8c27-4fce-acdf-a95bb3abea2f",
    "clean_media_id": "c2680b90-1541-4259-9e29-2918867219b0",
-   "media_id": "c2680b90-1541-4259-9e29-2918867219b0",
-   "file": "refs/ridge_road_clean.jpg"
+   "media_id": "bdf81749-64c3-4c4c-a169-71715fce8b8c",
+   "file": "refs/ridge_road_clean.jpg",
+   "account1_media_id": "c2680b90-1541-4259-9e29-2918867219b0",
+   "account2_media_id": "bdf81749-64c3-4c4c-a169-71715fce8b8c"
   },
   "Keller Barn": {
    "raw_media_id": "9fa629d4-c60a-4dab-8bf7-a32b4f783869",
    "clean_media_id": "095cd3ce-c7f2-4db9-9115-20ea8959382c",
-   "media_id": "095cd3ce-c7f2-4db9-9115-20ea8959382c",
-   "file": "refs/keller_barn_clean.jpg"
+   "media_id": "c3e7555d-7662-49d1-bb64-114ae43cf0c3",
+   "file": "refs/keller_barn_clean.jpg",
+   "account1_media_id": "095cd3ce-c7f2-4db9-9115-20ea8959382c",
+   "account2_media_id": "c3e7555d-7662-49d1-bb64-114ae43cf0c3"
   },
   "The Black": {
    "raw_media_id": "fcbdd59e-4639-451a-b54e-f6589306ef72",
    "clean_media_id": "c02305d4-a8dd-44a1-ba0f-8bc0924fc2a4",
-   "media_id": "c02305d4-a8dd-44a1-ba0f-8bc0924fc2a4",
-   "file": "refs/the_black_clean.jpg"
+   "media_id": "d0b1fecf-0332-4820-b19f-a48aabc822ee",
+   "file": "refs/the_black_clean.jpg",
+   "account1_media_id": "c02305d4-a8dd-44a1-ba0f-8bc0924fc2a4",
+   "account2_media_id": "d0b1fecf-0332-4820-b19f-a48aabc822ee"
   },
   "HALE Helmet": {
    "raw_media_id": "d9d76fb7-a677-47f9-83f7-909cf8d03f80",
    "clean_media_id": "acb730d1-75fd-4866-bc04-3285c458f81b",
-   "media_id": "acb730d1-75fd-4866-bc04-3285c458f81b",
-   "file": "refs/hale_helmet_clean.jpg"
+   "media_id": "eb9ba524-cbf7-4ac2-86ce-08d922dfe210",
+   "file": "refs/hale_helmet_clean.jpg",
+   "account1_media_id": "acb730d1-75fd-4866-bc04-3285c458f81b",
+   "account2_media_id": "eb9ba524-cbf7-4ac2-86ce-08d922dfe210"
   },
   "Crew Helmet": {
    "raw_media_id": "85247998-7f30-4bff-9c1d-763471e212bc",
    "clean_media_id": "182bfdbd-6c89-4886-828c-04c1ea740f9f",
-   "media_id": "182bfdbd-6c89-4886-828c-04c1ea740f9f",
-   "file": "refs/crew_helmet_clean.jpg"
+   "media_id": "a64d4352-73ac-40da-b6a5-e4207cec42a8",
+   "file": "refs/crew_helmet_clean.jpg",
+   "account1_media_id": "182bfdbd-6c89-4886-828c-04c1ea740f9f",
+   "account2_media_id": "a64d4352-73ac-40da-b6a5-e4207cec42a8"
   },
   "Nora Pickup": {
    "raw_media_id": "db3e6cf3-196a-40b4-b331-7ed468548ea8",
    "clean_media_id": "74d374ff-538e-436d-ad15-368412c4f4cd",
-   "media_id": "74d374ff-538e-436d-ad15-368412c4f4cd",
-   "file": "refs/nora_pickup_clean.jpg"
+   "media_id": "6d72e2a1-ca71-4cd7-9842-ccdf6604ebcd",
+   "file": "refs/nora_pickup_clean.jpg",
+   "account1_media_id": "74d374ff-538e-436d-ad15-368412c4f4cd",
+   "account2_media_id": "6d72e2a1-ca71-4cd7-9842-ccdf6604ebcd"
   },
   "Eli Bike": {
    "raw_media_id": "e9b66ae0-7dd0-49fe-902d-b35845053f23",
    "clean_media_id": "c8f8d887-f46f-41b0-b13f-2e9b2c058f58",
-   "media_id": "c8f8d887-f46f-41b0-b13f-2e9b2c058f58",
-   "file": "refs/eli_bike_clean.jpg"
+   "media_id": "ce33bea7-67db-4ae5-b47a-f494d81d8bb0",
+   "file": "refs/eli_bike_clean.jpg",
+   "account1_media_id": "c8f8d887-f46f-41b0-b13f-2e9b2c058f58",
+   "account2_media_id": "ce33bea7-67db-4ae5-b47a-f494d81d8bb0"
   },
   "Eli Pack": {
    "raw_media_id": "ae6ac6dc-b5ca-43f5-a4bd-364b86642bb3",
    "clean_media_id": "8253ab13-be5c-4526-ad26-3985c5f4288c",
-   "media_id": "8253ab13-be5c-4526-ad26-3985c5f4288c",
-   "file": "refs/eli_pack_clean.jpg"
+   "media_id": "c181de29-173f-4197-9509-055019e1631d",
+   "file": "refs/eli_pack_clean.jpg",
+   "account1_media_id": "8253ab13-be5c-4526-ad26-3985c5f4288c",
+   "account2_media_id": "c181de29-173f-4197-9509-055019e1631d"
   }
- }
+ },
+ "old_project_id": "f4415512-2ab8-42ce-852f-122351e055a8",
+ "new_project_id": "d882e8cb-005a-45a6-9451-f822b820a7cf",
+ "flow_accounts": {
+  "dinhvulon25": "f4415512-2ab8-42ce-852f-122351e055a8",
+  "namlt": "d882e8cb-005a-45a6-9451-f822b820a7cf"
+ },
+ "current_flow_account": "namlt"
 }

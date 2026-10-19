@@ -49,9 +49,30 @@ ACC_PASS = 0.80             # word accuracy needed per line
 WINDOW_SLACK_S = 0.75       # allowed drift outside the "t" window
 
 
+ONES = "zero one two three four five six seven eight nine ten eleven twelve thirteen fourteen fifteen sixteen " \
+       "seventeen eighteen nineteen".split()
+TENS = "_ _ twenty thirty forty fifty sixty seventy eighty ninety".split()
+
+
+def num_words(n):
+    """Spell 0-9999 the way a script writes it, so Whisper's "20" matches "twenty"."""
+    if n < 20:
+        return [ONES[n]]
+    if n < 100:
+        return [TENS[n // 10]] + ([ONES[n % 10]] if n % 10 else [])
+    if n < 1000:
+        return [ONES[n // 100], "hundred"] + (num_words(n % 100) if n % 100 else [])
+    return num_words(n // 1000) + ["thousand"] + (num_words(n % 1000) if n % 1000 else [])
+
+
 def norm_words(text):
+    """Lowercase words with apostrophes dropped ("Keller's" == "kellers") and digits spelled out."""
     text = re.sub(r"\(.*?\)", " ", text or "")
-    return [w for w in re.sub(r"[^a-z0-9' ]+", " ", text.lower().replace("’", "'")).split() if w]
+    text = re.sub(r"(?<=\d),(?=\d{3})", "", text.lower()).replace("’", "").replace("'", "")
+    out = []
+    for w in re.sub(r"[^a-z0-9 ]+", " ", text).split():
+        out += num_words(int(w)) if w.isdigit() and int(w) < 10000 else [w]
+    return out
 
 
 def parse_window(t):

@@ -31,7 +31,7 @@ from agent.config import (
     DEFAULT_PAYGATE_TIER,
     FLOW_GENERATION_MIN_INTERVAL_S, FLOW_GENERATION_MAX_INTERVAL_S,
     FLOW_GENERATION_MAX_CONCURRENT, FLOW_UNUSUAL_ACTIVITY_COOLDOWN_S,
-    FLOW_POLL_MIN_GAP_S,
+    FLOW_POLL_MIN_GAP_S, FLOW_UPLOAD_GAP_S,
 )
 from agent import config as _config
 from agent.services import flow_batch as fb
@@ -76,6 +76,8 @@ class FlowClient:
         self._generation_last_submit_at = 0.0
         self._poll_gate = asyncio.Lock()
         self._poll_last_at = 0.0
+        self._upload_gate = asyncio.Lock()
+        self._upload_done_at = 0.0
         self._generation_unusual_until = 0.0
         self._generation_last_unusual_at: Optional[float] = None
         self._generation_last_unusual_rpc: Optional[str] = None
@@ -569,6 +571,17 @@ class FlowClient:
                     f"retry in about {remaining}s"
                 ),
             }
+
+        if rpcid == fb.RPC_UPLOAD_IMAGE:
+            # Uploads run one at a time, FLOW_UPLOAD_GAP_S after the last one finished.
+            async with self._upload_gate:
+                delay = FLOW_UPLOAD_GAP_S - (time.monotonic() - self._upload_done_at)
+                if delay > 0:
+                    await asyncio.sleep(delay)
+                try:
+                    return await self._send("batch_rpc", params, timeout=timeout)
+                finally:
+                    self._upload_done_at = time.monotonic()
 
         await self._generation_slots.acquire()
         try:

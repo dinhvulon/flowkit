@@ -357,16 +357,24 @@ def _context(project_id: str, asset_id: Optional[str] = None) -> list:
 # Flow's UI splits the prompt slot into segments: text is ["..."], a mentioned
 # image is [None, [[media_id, file_name]]] (captured from flow.google.com 2026-10-14).
 MEDIA_MENTION_RE = re.compile(r"\{\{media:([0-9a-fA-F-]{36})\|([^}|]+)\}\}")
+# Inline voice mention, written as {{voice:<id>}}; Flow's UI sends it as
+# [None, [None, [voice_id, "Display name"]]] (captured from flow.google.com 2026-10-19).
+VOICE_MENTION_RE = re.compile(r"\{\{voice:([a-zA-Z]+)\}\}")
+MENTION_RE = re.compile(f"{MEDIA_MENTION_RE.pattern}|{VOICE_MENTION_RE.pattern}")
 
 
 def prompt_segments(prompt: str) -> list:
     """Split a prompt into Flow prompt segments; plain text stays one segment."""
     segments: list = []
     pos = 0
-    for m in MEDIA_MENTION_RE.finditer(prompt):
+    for m in MENTION_RE.finditer(prompt):
         if m.start() > pos:
             segments.append([prompt[pos:m.start()]])
-        segments.append([None, [[m.group(1), m.group(2)]]])
+        if m.group(3):
+            voice = m.group(3).lower()
+            segments.append([None, [None, [voice, voice.capitalize()]]])
+        else:
+            segments.append([None, [[m.group(1), m.group(2)]]])
         pos = m.end()
     if pos < len(prompt) or not segments:
         segments.append([prompt[pos:]])
@@ -376,6 +384,11 @@ def prompt_segments(prompt: str) -> list:
 def mentioned_media_ids(prompt: str) -> list[str]:
     """Media ids mentioned inline, in order, without duplicates."""
     return list(dict.fromkeys(m.group(1) for m in MEDIA_MENTION_RE.finditer(prompt)))
+
+
+def mentioned_voice_ids(prompt: str) -> list[str]:
+    """Voice ids mentioned inline, in order, without duplicates."""
+    return list(dict.fromkeys(m.group(1).lower() for m in VOICE_MENTION_RE.finditer(prompt)))
 
 
 def _image_input(media_id: str, input_type: int) -> list:
@@ -585,9 +598,10 @@ def omni_reference_video_request(prompt: str, project_id: str,
         None,
         [None, None, None, None, _client_uuid(), _client_uuid()],
     ]
-    # Slot 7 voices: "kore" -> [["kore"]]; "kore,fenrir" -> [["kore"],["fenrir"]]
-    # (multi-voice shape is unverified against a UI capture). Default laomedeia.
+    # Slot 7 voices: "kore" -> [["kore"]]; "kore,fenrir" -> [["kore"],["fenrir"]], plus every
+    # {{voice:<id>}} mentioned in the prompt (UI capture 2026-10-19 lists all of them). Default laomedeia.
     v_ids = [v.strip().lower() for v in str(voice_id or "laomedeia").split(",") if v.strip()]
+    v_ids = list(dict.fromkeys(v_ids + mentioned_voice_ids(prompt)))
     request.extend([None, [[v] for v in (v_ids or ["laomedeia"])]])
     if res == "360p":
         request.extend([None, None, None, [4]])
