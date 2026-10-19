@@ -367,11 +367,11 @@ When designing references for living entities (Characters, Megafauna, Creatures)
 - **Keratin & Battle Wear:** Fibrous weathered keratin, healed scars, faint frothy saliva at beak/jaw corners.
 - **Zero Plastic / Zero CGI:** STRICTLY NO smooth plastic texture, NO wax museum statue, NO clean studio lighting, NO cartoonish 3D render.
 
-### 3. Ironclad 1:1 Face Lock via Mandatory Reference Command & Facial Geometry DNA (Rule 60)
+### 3. Face Lock = Reference Only (Rule 60, 64 — user 19/10/2026: "không tả ngũ quan")
 - **Use Existing Reference Directly:** Never crop or fragment media if an existing locked reference is available.
-- **Mandatory 1:1 Command:** Always begin with: `"[Name]'s face is an exact 1:1 identical match to the attached [Name] reference image. Perfectly preserve her exact facial likeness from the reference photo without changes."`
-- **Facial Geometry DNA:** Explicitly describe facial bone structure: `youthful 22-year-old soft feminine heart-shaped face, delicate rounded chin, soft cheeks, petite straight nose, distinctively FULL PLUMP PILLOWY LIPS with defined Cupid's bow, large hazel-green almond eyes`.
-- **Anti-Drift Negative Constraints:** `STRICTLY FORBIDDEN: strictly NO square jaw, NO long rectangular face, NO thin lips, NO hollow cheeks, NO aged appearance (must look 22-23), NO facial distortion, NO face drift.`
+- **One lock sentence pointing at the ref chip:** `"FACE LOCK: [Name]'s face is exactly the face in {{ref:[Name]}}, kept 1:1: same face shape, eyes, nose, lips, brows and hair."` Nothing else about the face.
+- **No facial description in words:** do not write face shape, chin, cheeks, nose, lips, eyes, hair color/style or makeup in `image_prompt` or `video_prompt`; words compete with the reference image. Age and role ("an adult woman of 23") stay. This rule applies only to scene prompts. The ref sheet itself (the image prompt that creates the face) still describes the face.
+- **No body-part negation lists:** no `NO square jaw, NO thin lips…`. At most one sentence: `"no face drift: the face never changes from the reference."`
 - **Empty Hand Lock:** Camera lens is completely outside visible frame; character's free hand is completely empty; strictly NO phone, NO smartphone, NO device in hand.
 
 ## Common Failure Checks

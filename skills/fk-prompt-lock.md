@@ -337,7 +337,7 @@ python tools/lint_prompt.py --scene <scene_id>
 3. **Deep Focus f/8 (Chống Xóa Phông Bokeh / Anti-Shallow DoF)**:
    - Cảnh trung & vlog: **CẤM** shallow depth of field, xóa phông mù mịt bokeh f/1.8 làm mờ bối cảnh sinh tồn.
    - BẮT BUỘC: `deep focus, deep depth of field (f/8 aperture), entire frame sharp from foreground to distant horizon, strictly NO shallow depth of field, strictly NO bokeh`.
-4. **Khóa Nhận Diện Start Frame 1:1 & Ngũ Quan DNA (Chống Face Drift)**:
-   - BẮT BUỘC lệnh ép 1:1: `[Name]'s face is an exact 1:1 identical match to the attached [Name] reference image. Perfectly preserve her exact facial likeness from the reference photo without changes.`
-   - BẮT BUỘC khóa ngũ quan DNA: mặt trái xoan mềm mại (`youthful soft feminine heart-shaped face`), cằm thon tròn (`delicate rounded chin`), má bầu bĩnh trẻ trung (`soft rounded youthful cheeks`), sống mũi nhỏ thẳng (`petite straight nose`), bờ môi dày mọng hình trái tim (`distinctively FULL PLUMP PILLOWY LIPS with defined Cupid's bow and pouty lower lip`), tóc vàng mật ong cột cao mái bay.
-   - Khối phủ định: `strictly NO square jaw, NO long rectangular face, NO thin lips, NO hollow cheeks, NO aged appearance, NO freckles, NO face drift`.
+4. **Khóa Nhận Diện 1:1 = Chỉ Ảnh Ref, KHÔNG tả ngũ quan (Rule 60, 64 — user 19/10/2026)**:
+   - MỘT câu khóa trỏ vào chip ảnh: `FACE LOCK: [Name]'s face is exactly the face in {{ref:[Name]}}, kept 1:1: same face shape, eyes, nose, lips, brows and hair.`
+   - CẤM tả dáng mặt, cằm, má, mũi, môi, mắt, tóc, makeup bằng chữ trong prompt cảnh; CẤM câu phủ định liệt kê bộ phận mặt (`NO square jaw, NO thin lips…`). Tuổi và vai trò vẫn ghi.
+   - Mặt trôi → sửa ảnh ref / bộ ref đính kèm, không thêm chữ tả mặt.

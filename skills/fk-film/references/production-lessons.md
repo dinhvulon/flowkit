@@ -676,7 +676,7 @@ Rút ra từ dự án `output/atlantis-9600bc/` (2026-09-27). Khi mâu thuẫn v
          - Text prompt trong scene BẮT BUỘC phải đồng bộ 100% với ảnh ref `ref_face`.
          - BẮT BUỘC dùng: `matching Nora face reference: young 23-year-old woman with honey-blonde hair in high wavy ponytail with wispy curtain bangs framing forehead, fair smooth creamy skin (strictly NO red hair, NO auburn hair, NO messy bun, NO freckles), hazel-green eyes`.
 
-76. **KHÓA CHẶT 1:1 KHUÔN MẶT BẰNG MỆNH LỆNH SẮT ĐÁ VÀ ĐẶC TẢ HÌNH HỌC NGŨ QUAN — DÙNG ĐÚNG ẢNH REF HIỆN CÓ (Ironclad 1:1 Face Lock via Mandatory Reference Command & Facial Geometry DNA — Bài học Khắc Phục Lệch Mặt Cảnh 01, 04, 15 Hell Creek 66 Ma, User Review 13/10/2026, Rule 60):**
+76. **[ĐÃ THAY 19/10/2026 bởi Rule 60 mới + Rule 64: KHÔNG tả ngũ quan bằng chữ, chỉ một câu khóa trỏ vào chip ảnh ref — user: "không tả ngũ quan". Nội dung dưới chỉ để tham khảo lịch sử.]** **KHÓA CHẶT 1:1 KHUÔN MẶT BẰNG MỆNH LỆNH SẮT ĐÁ VÀ ĐẶC TẢ HÌNH HỌC NGŨ QUAN — DÙNG ĐÚNG ẢNH REF HIỆN CÓ (Ironclad 1:1 Face Lock via Mandatory Reference Command & Facial Geometry DNA — Bài học Khắc Phục Lệch Mặt Cảnh 01, 04, 15 Hell Creek 66 Ma, User Review 13/10/2026, Rule 60):**
     - **Hiện tượng & Nguyên nhân gốc rễ (Root Cause):**
       1. **Gương mặt bị trôi dạt và biến dạng nặng nề dù đã có ảnh Reference:** Khi sinh Start Frame hoặc hình ảnh có nhân vật chính (Nora), mặc dù đã gắn ảnh Reference `<Vlogger>` trong DB, kết quả khuôn mặt vẫn bị lệch nghiêm trọng:
          - Cảnh 04 mặt vuông dài già nua như phụ nữ 35 tuổi, xương hàm bạnh nam tính, má hóp.
