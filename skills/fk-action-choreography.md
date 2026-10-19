@@ -1,6 +1,6 @@
 # Action Choreography — AI Cinematic Combat & Motion Direction
 
-> **Time-travel / POV vlog (`/fk-time-travel-vlog`):** dùng bản đã chỉnh theo luật vlog ở `skills/fk-time-travel-vlog/references/cinematic-toolkit.md` §1 (hành động 3 pha theo góc nhìn vlogger, từ vựng săn/né/thú lao tới). Template trong file này có dòng `Negative:` và góc máy người thứ ba — không chép nguyên vào prompt vlog.
+> **Phim (`/fk-film`):** dùng bản đã chỉnh ở `skills/fk-film/references/cinematic-toolkit.md` §1 (hành động 3 pha, từ vựng an toàn chống méo người, chuỗi 4s cho cảnh dễ lỗi). Phim giữ góc máy điện ảnh ngôi thứ ba của template; chỉ bỏ dòng `Negative:` (ràng buộc viết vào `negative_constraints` của prompt JSON). Phần "góc nhìn vlogger" trong file đó chỉ áp cho POV vlog (`skills/fk-film/references/vlog-archive.md`).
 
 Technical manual for choreographing physics-safe action sequences, duels, and epic battle dynamics optimized specifically for generative AI video models (Google Veo 3, Flow, Sora). Eliminates anatomical morphing, limb fusion, and weapon clipping.
 

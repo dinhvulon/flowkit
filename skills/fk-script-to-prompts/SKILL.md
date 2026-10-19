@@ -28,17 +28,18 @@ Skill này là điểm hội tụ (Convergence Node) của 3 hệ thống kỹ n
    - **3 tầng nội dung**: Nói ra (Said), Chưa nói (Unsaid / Subtext), Không thể nói (Unsayable / Sốc sinh tồn).
    - **CẤM TRIỆT ĐỂ On-The-Nose Exposition**: Tuyệt đối không để nhân vật tự giải thích thời gian, địa điểm, bối cảnh như hướng dẫn viên bảo tàng (*"Tôi vừa đến Hell Creek 66 triệu năm TCN..."* $\to$ **CẤM**).
    - **Khóa 100% thoại gốc từ `script.md` §9**: Chuẩn từng từ theo **Rule 49 bảng (0)**, khớp ngắt nhịp `/` theo mốc thời gian (`0-3s / 3-6s / 6-8s` hoặc `0-3s / 3-7s / 7-10s`).
-   - **Giọng Laomedeia**: Upbeat, conversational, dry humor, tự giễu dưới áp lực, thét vỡ giọng khi nguy cấp.
+   - **Giọng**: phim — mỗi nhân vật có thoại một voice id riêng (`speech.voices`, `fk-film/references/voice-bible.md` §0). *(Chỉ áp cho POV vlog: giọng Laomedeia — upbeat, conversational, dry humor, thét vỡ giọng khi nguy cấp.)*
 4. **`sw-character-conflict` (Xung đột nhân vật & Tâm lý)**:
    - **Khát vọng (Want) vs Nhu cầu (Need)**: Khát vọng ngạo mạn muốn đứng ngoài quan sát vs Nhận thức thực tế mình là một con mồi trong chuỗi thức ăn.
    - **Niềm tin sai lầm (Misbelief)**: Thể hiện rõ niềm tin sai ở Act 1 để chuẩn bị bẻ gãy ở Act 4.
    - **Triệu chứng cơ thể sinh tồn (Body symptoms)**: Tim đập thình thịch, thở dốc qua mũi, run rẩy adrenaline, tay siết chặt.
 5. **`sw-story-structure`**: Khung nhịp điệu 起承转合 (Khởi-Thừa-Chuyển-Hợp), Plot Point, Midpoint đảo nghịch.
 6. **`sw-format-adaptation`**: Chuẩn hóa chuyển thể nghe-nhìn từ chữ viết sang hình ảnh và âm thanh.
-7. **`sw-genre-anatomy`**: Khóa quy chuẩn thể loại Sinh tồn Kỷ Phấn Trắng / POV Vlog Lịch sử.
+7. **`sw-genre-anatomy`**: Khóa quy chuẩn thể loại của dự án (phim sinh tồn, drama, thảm họa…; POV vlog lịch sử chỉ khi user yêu cầu vlog).
 
 ### B. Hệ Thống 7 Cinematic Subagents FlowKit (`fk-*`)
-8. **`fk-camera-guide` (Đạo diễn hình ảnh & Quang học smartphone)**:
+8. **`fk-camera-guide` (Đạo diễn hình ảnh)**:
+   - **Phim (`/fk-film`)**: máy điện ảnh ngôi thứ ba (`third-person cinematic camera; the camera itself is never seen`), cỡ cảnh và chuyển động máy theo nhịp kịch, không 2 clip liền nhau cùng cỡ cảnh + góc máy. Các gạch đầu dòng dưới đây **chỉ áp cho POV vlog** (`skills/fk-film/references/vlog-archive.md`).
    - **Chu kỳ góc máy (§7)**: POV (EWS/WS) $\to$ Macro (ECU) $\to$ Hiding/OTS $\to$ Selfie (MCU) $\to$ Fixed (MS).
    - **Ràng buộc cứng**: Cấm 100% selfie, cấm 3 selfie liên tiếp, cấm 2 clip liền nhau cùng góc máy & cỡ cảnh.
    - **Quang học tự nhiên**: 0.5x ultra-wide, vertical footstep bounce, rotational lag, cấm góc nhìn gimbal bay lơ lửng.
@@ -49,18 +50,18 @@ Skill này là điểm hội tụ (Convergence Node) của 3 hệ thống kỹ n
    - **Chuỗi 4s (Rule 44/49)**: Hành động phức tạp tách thành chuỗi clip 4s, mỗi clip đúng 1 hành động/mắt xích, giữ nguyên góc máy, ánh sáng và bối cảnh, mắt xích sau mở bằng tư thế kết thúc của mắt xích trước.
    - **Rule 51**: Tuyệt đối không cận chiến giáp lá cà người vs dã thú lớn.
 10. **`fk-sound-design` (Thiết kế âm thanh 3 lớp)**:
-    - Lớp 1: Thoại native khớp khẩu hình (Laomedeia).
+    - Lớp 1: Thoại native khớp khẩu hình (voice id của từng nhân vật; Laomedeia chỉ cho POV vlog).
     - Lớp 2: Foley SFX thực tế (nước bắn, sỏi lạo xạo, bùn nhão, tiếng móng guốc cào đất).
     - Lớp 3: Ambient / Sonic Isolation (tiếng rừng ngập lũ, côn trùng, im lặng nín thở khi dã thú áp sát).
 11. **`fk-cinematic-transitions` (Mối nối điện ảnh)**:
     - Match-on-action (khớp cử động), Foreground wipe (dương xỉ/vật thể che khung), Swing/Whip-pan, J-cut âm thanh.
 12. **`fk-character-bible` (Khóa nhận diện nhân vật)**:
-    - Gắn ref `<Vlogger>` (Mặt) + `<Vlogger> Body` (Body đã mặc hoàn chỉnh trang phục). Cấm tự tả lại trang phục bằng lời.
+    - Gắn ref `<Tên>` (Mặt) + `<Tên> Body <trạng thái trang phục>` (Body đã mặc hoàn chỉnh trang phục) cho mỗi nhân vật trong khung. Cấm tự tả lại trang phục bằng lời; nhắc chip ref ngay trong câu khóa (Rule 64).
 13. **`fk-scriptwriter`**: Bảo toàn Single Source of Truth, bảng vật lý §10, tính liên tục của ánh sáng và bối cảnh.
 14. **`fk-review-video`**: Chuẩn hóa prompt để đạt điểm tối đa trên 6 tiêu chí review.
 15. **`Rule 57, 61, 62 (Chất liệu sinh học & Triệt tiêu CGI, Khói, Ánh sáng nhân tạo)`**: Khủng long/dã thú dùng `rough non-reflective pachyderm hide`, ánh sáng `flat natural overcast diffuse daylight`; CẤM 100% `breath vapor`, `vapor mist`, `snorting steam`, `smoke plumes`, `sunlight streaming`, `god rays`.
-16. **`Rule 60, 62 (Khóa nhận diện 1:1 & Ngũ quan DNA cho Start Frame & Video)`**: BẮT BUỘC lệnh ép 1:1 `[Name]'s face is an exact 1:1 identical match to reference` + ngũ quan DNA (mặt trái xoan mềm, cằm thon, má bầu, mũi nhỏ thẳng, môi mọng dày trái tim, tóc cột cao mái bay), cấm lệch nét giữa các cảnh.
-17. **`Rule 62 (Deep Focus f/8 Chống Xóa Phông Bokeh)`**: Cảnh vlog medium shot bắt buộc `deep focus, deep depth of field (f/8 aperture), entire frame sharp`, cấm shallow DoF / bokeh f/1.8.
+16. **`Rule 60, 62 (Khóa nhận diện 1:1 & Ngũ quan DNA cho Start Frame & Video)`** *(phim EMBERS: dùng câu khóa chip ref của Rule 64, không tả lại ngũ quan — memory "Face lock = reference only" 2026-10-14)*: BẮT BUỘC lệnh ép 1:1 `[Name]'s face is an exact 1:1 identical match to reference` + ngũ quan DNA (mặt trái xoan mềm, cằm thon, má bầu, mũi nhỏ thẳng, môi mọng dày trái tim, tóc cột cao mái bay), cấm lệch nét giữa các cảnh.
+17. **`Rule 62 (Deep Focus f/8 Chống Xóa Phông Bokeh)`**: Cảnh medium shot cần thấy bối cảnh bắt buộc `deep focus, deep depth of field (f/8 aperture), entire frame sharp`, cấm shallow DoF / bokeh f/1.8.
 17b. **`Rule 65 (Start Frame: liên tục cắt Last Frame, chuyển cảnh mới sinh ảnh — mở rộng 16/10/2026)`**: Với TỪNG clip, so với clip đứng ngay trước trong timeline: cùng địa điểm + cùng khoảnh khắc + cùng vị trí/góc máy + cùng cỡ cảnh (không có cú cắt) ➔ `start_frame = {"type": "PREV_LAST_FRAME", "note": "<lý do>"}`, KHÔNG có `image_prompt`. Áp cho mọi clip nối tiếp, không chỉ ID có hậu tố `a/b/c`. Đổi một yếu tố ➔ `GENERATE_IMAGE` kèm `image_prompt`. Xuất kèm bảng phân loại Start Frame cho User duyệt.
 
 ### C. Bộ Quy Chuẩn Prompt Structured JSON & Linter Gate
@@ -75,62 +76,61 @@ Mỗi clip trong mảng JSON `prompts_actX.json` bắt buộc tuân thủ cấu 
 
 ```json
 {
-  "clip_id": "Mã clip duy nhất khớp script.md (ví dụ: A1-02, A1-12a)",
-  "scene_name": "Tên cảnh mô tả hành động",
+  "clip_id": "Mã clip duy nhất khớp script.md (ví dụ: RA-02, EM-01a)",
+  "scene_name": "Tên beat / cảnh",
   "duration": 8,
   "aspect_ratio": "16:9",
-  "refs": ["Nora", "Nora Body", "Hell Creek Bank"],
+  "refs": ["Nora", "Nora Body Ranch", "Eli", "Hale Ranch"],
   "camera": {
-    "viewpoint": "mô tả góc nhìn quang học (ngang ngực/bụng trên, hơi hất nhẹ lên)",
-    "shot_size": "cỡ cảnh (extreme close-up | close-up | medium close-up | medium shot | wide shot | extreme wide shot)",
-    "description": "khóa điểm mù quang học: 'The camera lens itself and her right gripping hand are completely outside the visible frame and never seen. Both hands are empty unless handling specified prop.'"
+    "viewpoint": "third-person cinematic camera; the camera itself is never seen",
+    "shot_size": "ECU | CU | MCU | MS | WS | EWS",
+    "description": "ống kính, máy cố định hay di chuyển (dolly / track / handheld), bố cục"
   },
-  "style": "phong cách tài liệu thực địa tự nhiên (raw 35mm wildlife forensic documentary realism), không CGI, không bộ lọc màu công nghiệp",
-  "setting": "mô tả bối cảnh và mốc ánh sáng L1-L7 khớp script.md §3: flat natural overcast diffuse daylight, soft organic environmental shadows",
+  "style": "35mm film, cinematic documentary realism, natural film grain, natural color, real locations and real people",
+  "setting": "Location: exactly the place in {{ref:Hale Ranch}} … Light: … (khớp clip trước và sau). Những gì đứng yên ở hậu cảnh suốt clip.",
   "characters": [
     {
       "name": "Nora",
-      "visual_lock": "khóa nhận diện khuôn mặt 1:1 và body reference: exact 1:1 match to reference, soft heart-shaped face, full plump pillowy lips with Cupid's bow, delicate chin, straight petite nose, honey-blonde ponytail with curtain bangs",
-      "state": "trạng thái thể chất lúc mở màn (giây 0)"
+      "visual_lock": "FACE LOCK: Nora's face is exactly the face in {{ref:Nora}}, kept 1:1 … BODY and OUTFIT LOCK: her build and clothing are exactly as in {{ref:Nora Body Ranch}}.",
+      "state": "trạng thái ở giây 0 (sạch / bẩn / bỏng / ướt…)"
     }
   ],
-  "in_place": "mọi vật thể, bối cảnh, dã thú đã hiện diện đầy đủ từ khung hình 0 (Already In Place), clean dry nostrils breathing transparent clean air",
   "timeline_action": {
-    "0-3s": "hành động 1 + tương tác vật lý + nhân vật bắt đầu nói ngay từ 0.0s",
-    "3-6s": "hành động 2 + biến dạng vật liệu",
-    "6-8s": "thu thế & neo đất + kết thúc hành động"
+    "0-3s": "hành động 1 + người nói bắt đầu nói ngay từ giây 0: Eli says \"…\" (no subtitles)",
+    "3-6s": "hành động 2 + câu đáp",
+    "6-8s": "thu thế, kết beat"
   },
   "speech": {
-    "speaker": "Nora",
-    "language": "(chỉ khi thoại không phải English) vd. es-419 Latin American Spanish, neutral Mexican accent — xem fk-time-travel-vlog/references/dialogue-es-latam.md",
-    "delivery": "chỉ dẫn ngữ điệu Laomedeia, subtext, trạng thái thở dốc/adrenaline",
+    "speaker": ["Eli", "Nora"],
+    "voices": {"Eli": "fenrir", "Nora": "kore"},
+    "language": "(chỉ khi thoại không phải English) vd. es-419 Latin American Spanish, neutral Mexican accent — xem fk-film/references/dialogue-es-latam.md",
+    "delivery": "native lines in the character's own voice, lip-synced; cảnh cãi nhau: loud, sharp and clipped (Bài học 101)",
     "dialogue": [
-      {"t": "0-3s", "speaker": "Nora", "line": "câu thoại 1 khớp script.md"},
-      {"t": "3-6s", "speaker": "Nora", "line": "câu thoại 2 khớp script.md"},
-      {"t": "6-8s", "speaker": "Nora", "line": "câu thoại 3 khớp script.md"}
+      {"t": "0-4s", "speaker": "Eli", "line": "câu thoại nguyên văn từ script.md"},
+      {"t": "4-8s", "speaker": "Nora", "line": "câu thoại nguyên văn từ script.md"}
     ]
   },
+  "post_vo": ["lời qua bộ đàm / điện thoại / lời dẫn — thêm khi dựng (Bài học 99)"],
   "dramatic_craft": {
     "beat": "nhịp kịch tính: mục tiêu hành động & phản ứng đối kháng",
     "value_turn": "chuyển biến giá trị (+/-)",
     "subtext": "tầng nghĩa ngầm / ý đồ tâm lý của nhân vật",
     "prop_and_detail": "chức năng đạo cụ kịch tính & chi tiết đắt giá (Lu Jun)"
   },
-  "audio": "thiết kế âm thanh 3 lớp (thoại + foley + ambient/sonic isolation)",
-  "physics": "vận tốc, gia tốc, trọng lực, tương tác tiếp xúc cơ học, phản lực đất, p=m*v quán tính dã thú",
+  "audio": "thoại + foley + ambient; giọng nói nổi trên nền",
+  "physics": "vận tốc, trọng lực, tiếp xúc, phản lực đất, quán tính",
   "negative_constraints": [
-    "The camera lens itself and her right gripping hand are completely outside the visible frame and never seen.",
-    "NO phone, NO smartphone, NO screen, NO device, NO selfie stick.",
-    "NO modern technology, NO artificial gadgets.",
-    "Word count strictly N words matching script.md exactly.",
-    "BODY LOCK: matches Nora Body reference, voluptuous hourglass figure, NOT flat-chested, NOT slender.",
-    "FACE LOCK: exact 1:1 match to attached face reference; soft heart-shaped face, full plump pillowy lips with Cupid's bow, delicate rounded chin, petite straight nose; strictly NO square jaw, NO thin lips, NO freckles, NO face drift.",
-    "ANTI-SMOKE LOCK: strictly NO smoke, strictly NO breath vapor, strictly NO steam, strictly NO white plumes; clean dry nostrils breathing transparent clean air.",
-    "ANTI-CGI LOCK: rough non-reflective pachyderm hide, strictly NOT a 3D digital render, NOT a plastic toy model, NOT a museum resin statue, strictly NO artificial god rays, strictly NO sunlight streaming, strictly NO studio rim light.",
-    "DEEP FOCUS: deep depth of field (f/8 aperture), entire frame sharp from foreground to distant horizon, strictly NO shallow depth of field, strictly NO bokeh."
-  ]
+    "No subtitles, no captions, no on-frame text, no logos, no watermarks.",
+    "ANTI-CGI LOCK: real documentary footage, not a 3D render, not a video game, not CGI fire, no plastic skin.",
+    "No breath vapor and no white steam from anyone's mouth; no god rays, no volumetric beams.",
+    "Separate bodies never merge; natural hands with five fingers; no extra limbs.",
+    "Spoken words in this clip: N (Rule 49 band for 8s: 18-22)."
+  ],
+  "props_lock": "(khi có đạo cụ dễ lỗi: một câu tả chuẩn + câu cấm đứt / nhân đôi — Bài học 94, 96)"
 }
 ```
+
+Mẫu thật: `output/embers/prompts_v7_act*.json`. Schema cũ của POV vlog (khóa điểm mù tay cầm máy, cấm `phone`, `BODY LOCK`, giọng Laomedeia) lưu nguyên văn ở `skills/fk-film/references/vlog-archive.md` §4 — chỉ dùng khi user yêu cầu rõ một POV vlog.
 
 ---
 
@@ -150,7 +150,7 @@ graph TD
 
 ### Bước 1: Nạp Input SSOT
 - Đọc [script.md](file:///c:/flowkit/output/<project>/script.md):
-  * §9 Storyboard: Cột Shot, Cột Visual, Cột Thoại Nora (kèm phân nhịp `/`), Cột Từ, Cột Việc, Cột Retention Beat.
+  * §9 Storyboard: Cột Shot, Cột Visual, Cột Thoại (kèm phân nhịp `/`), Cột Từ, Cột Việc, Cột Retention Beat.
   * §10 Bảng vật lý: Máy ở đâu, Frame 0 có gì, Chuyển động (hướng/tốc độ), Rời khung.
   * §3 Material & 7 Mốc ánh sáng (L1 $\to$ L7).
   * §2 Bảng nhân vật & Thực thể tham chiếu.
@@ -161,7 +161,14 @@ graph TD
 - **`sw-dialogue`**: Giữ nguyên 100% lời thoại gốc từ `script.md` §9. Không thêm bớt một từ. Đếm đúng số từ chuẩn Rule 49.
 - **`sw-scene-craft`**: Viết khối `dramatic_craft` thể hiện rõ mục tiêu, value turn (+/-), subtext, chức năng đạo cụ (mai rùa, rãnh răng, vết bùn).
 - **`fk-action-choreography`**: Chuyển đổi mô tả hành động thành 3 pha động học an toàn. Kiểm tra chuỗi 4s đúng luật 1 hành động/mắt xích.
-- **`fk-camera-guide`**: Khóa điểm mù quang học, cấm toàn bộ từ cấm.
+- **`fk-camera-guide`**: Phim — khóa `camera.viewpoint` ngôi thứ ba, không gọi tên vật không muốn thấy. POV vlog — khóa điểm mù quang học, cấm từ chỉ thiết bị.
+- **Khóa cao trào tranh cãi (Argument Climax Lock — Bài học 101, user lock 19/10/2026)**: mọi beat cãi nhau, chặn đường, đối đầu, hay ra lệnh dưới áp lực (value turn căng, `dramatic_craft.beat` có xung đột trực diện) BẮT BUỘC ghi giọng **to, gắt, cộc**:
+  * `speech.delivery`: `"lip-synced, loud, sharp and clipped like a fire captain giving orders over the roar"` (đổi vai/bối cảnh cho đúng).
+  * Nhịp timeline có câu thoại: `"begins speaking immediately, loud and sharp, his/her voice raised over the roar … every word hard, clipped and forceful, each short sentence punched out like an order."`
+  * Nhịp giữa và nhịp cuối giữ lực: `"stays loud and hard, jaw clenched, leaning toward …"`, `"finishes on a hard, raised voice and holds the look"`. Người nghe đáp trả bằng thân thể (khựng, nghiến răng, không lùi).
+  * `audio`: giọng nói nổi rõ trên nền lửa/gió (`"<name>'s loud, sharp voice clearly on top; … underneath"`).
+  * CẤM trong các beat này: `low`, `quiet`, `softly`, `voice drops`, `flat`, `calm`, `natural pace`. Ngoại lệ duy nhất: kịch bản ghi rõ giọng thì thầm đe dọa.
+  * Không trích lại câu thoại trong ngoặc kép ở nhịp khác, vì model sẽ nói hai lần.
 
 ### Bước 3: Xuất File JSON Prompt
 - Ghi ra file `output/<project>/prompts_actX.json` với định dạng JSON hợp lệ.
@@ -174,14 +181,15 @@ python tools/lint_prompt.py --file output/<project>/prompts_actX.json
 **Checklist bắt buộc kiểm toán**:
 1. Linter trả về `✅ PROMPT LINT PASSED! No ghost devices or viewpoint issues found.`
 2. Tuyệt đối không chứa các từ cấm `phone`, `smartphone`, `screen`, `device`, `selfie stick`.
-3. Điểm mù quang học được khóa bằng câu chuẩn: `"The camera lens itself and her right gripping hand are completely outside the visible frame and never seen."`
+3. *(Chỉ POV vlog)* Điểm mù quang học được khóa bằng câu chuẩn: `"The camera lens itself and her right gripping hand are completely outside the visible frame and never seen."`
 4. Số từ thoại trong `speech.dialogue` khớp chính xác 100% số từ đã định trong `script.md` §9.
 5. Cảnh hành động phức tạp / chuỗi 4s có đúng 1 hành động và khớp tư thế đầu-cuối.
 6. **Anti-Smoke Lock (Rule 62)**: CẤM 100% `breath vapor`, `vapor mist`, `snorting steam`, `smoke plumes`. BẮT BUỘC có `strictly NO smoke, strictly NO breath vapor, strictly NO steam; clean dry nostrils breathing transparent clean air`.
 7. **Pachyderm Living Biology & Anti-CGI Lock (Rule 57, 62)**: Khủng long/dã thú dùng `rough non-reflective pachyderm hide`, ánh sáng `flat natural overcast diffuse daylight`; CẤM `sunlight streaming`, `god rays`, `3d render`, `cgi`, `plastic model`.
 8. **Deep Focus f/8 Lock (Rule 62)**: BẮT BUỘC `deep focus, deep depth of field (f/8 aperture), entire frame sharp, strictly NO shallow depth of field, strictly NO bokeh`.
-9. **1:1 Face Lock & Ngũ quan DNA (Rule 60, 62)**: Cảnh có nhân vật mở đầu bằng lệnh ép 1:1 `exact 1:1 match to reference` + ngũ quan DNA (môi dày mọng trái tim, má bầu, cằm thon, mũi thẳng, tóc vàng cột cao mái bay).
-10. **Nếu có bất kỳ lỗi nào**: Agent PHẢI TỰ ĐỘNG SỬA NGAY LẬP TỨC và chạy lại linter. Vòng lặp tự sửa tối đa 3 lần cho đến khi đạt `0 issues`.
+9. **1:1 Face Lock (Rule 60, 64)** — phim: câu khóa chip ref `{{ref:<Tên>}}`, không tả lại mặt; bản cũ ngũ quan DNA: Cảnh có nhân vật mở đầu bằng lệnh ép 1:1 `exact 1:1 match to reference` + ngũ quan DNA (môi dày mọng trái tim, má bầu, cằm thon, mũi thẳng, tóc vàng cột cao mái bay).
+10. **Argument Climax Lock (Bài học 101)**: mọi clip có xung đột trực diện dùng giọng to, gắt, cộc (`loud and sharp … clipped and forceful`) ở cả `speech.delivery` lẫn timeline. Các beat này không còn `low`, `quiet`, `voice drops`, `flat`, `natural pace`, và câu thoại không bị trích lại ở nhịp khác.
+11. **Nếu có bất kỳ lỗi nào**: Agent PHẢI TỰ ĐỘNG SỬA NGAY LẬP TỨC và chạy lại linter. Vòng lặp tự sửa tối đa 3 lần cho đến khi đạt `0 issues`.
 
 ### Bước 5: Đồng Bộ Bản Dịch & Trình Duyệt
 - Tự động tạo/cập nhật file `output/<project>/vn.json` dịch chuẩn xác 100% ngữ nghĩa kịch bản, giữ trọn vẹn subtext, punchline và thuật ngữ điện ảnh.
@@ -194,6 +202,7 @@ python tools/lint_prompt.py --file output/<project>/prompts_actX.json
 - [ ] Toàn bộ các cảnh của Act được chuyển thể đầy đủ vào `prompts_actX.json`.
 - [ ] 100% lời thoại giữ nguyên bản từ `script.md` §9, chuẩn số từ Rule 49, không tự chế thoại.
 - [ ] Khối `dramatic_craft` hiện diện đầy đủ trong từng clip JSON.
+- [ ] Mọi cảnh tranh cãi / đối đầu khóa giọng to, gắt, cộc để tạo cao trào (Argument Climax Lock, Bài học 101).
 - [ ] Tuân thủ 100% Rule 62: Zero smoke/steam, da thú pachyderm không bóng nhựa, deep focus f/8, và 1:1 face lock.
 - [ ] Chạy `python tools/lint_prompt.py` đạt `0 issues`.
 - [ ] File `vn.json` được cập nhật đồng bộ, văn phong giàu tính điện ảnh và subtext.

@@ -15,15 +15,15 @@ Phần lịch quay theo bối cảnh, batch-shoot và đăng bài qua WoopSocial
 
 ## Thứ tự ưu tiên khi mâu thuẫn
 
-1. `CLAUDE.md`: Rule 14 (fact-check), Rule 20 (ngôn ngữ), Rule 29 (hỏi trước khi sinh), Rule 42 (góc máy), Rule 49 (độ dài clip + số từ), Rule 65 (chuỗi clip liên tục).
-2. Skill gọi skill này: `/fk-time-travel-vlog` hoặc `/fk-scriptwriter`.
+1. `CLAUDE.md`: Rule 14 (fact-check), Rule 20 (ngôn ngữ), Rule 29 (hỏi trước khi sinh), Rule 42 (4) (không 2 khối liền nhau cùng cỡ cảnh + góc máy; phần selfie của Rule 42 chỉ áp cho POV vlog), Rule 49 (độ dài clip + số từ), Rule 65 (chuỗi clip liên tục).
+2. Skill gọi skill này: `/fk-film` hoặc `/fk-scriptwriter`.
 3. Skill này.
 
 ## Khi nào chạy
 
 | Luồng | Thời điểm |
 |---|---|
-| `/fk-time-travel-vlog` | Bước 4.5: sau bước 4 (user duyệt storyboard `script.md`), trước bước 5 (`/fk-script-to-prompts`). |
+| `/fk-film` | Bước 4.5: sau bước 4 (user duyệt storyboard `script.md`), trước bước 5 (`/fk-script-to-prompts`). |
 | `/fk-scriptwriter` | Step 5 mục 2: sau khi lưu screenplay JSON, trước Quality Gate 23 điểm. |
 | Mọi luồng | Chạy lại sau mỗi lần thêm, bỏ hoặc đổi thứ tự clip. |
 
@@ -32,7 +32,7 @@ Skill này không gọi Flow API và không tốn credit. Rule 29 không áp d�
 ## Đầu vào
 
 1. **Kịch bản** (một hoặc nhiều file, ghép theo thứ tự truyền vào — dùng cho phim nhiều tập):
-   - `script.md` có bảng storyboard với header chứa `Clip` và `Dur` (định dạng storyboard `script.md` §9 của `/fk-time-travel-vlog`: `Clip | Dur | Shot | Ref | SF | Sáng | Hình | Thoại | Từ | Việc | Beat | Dựng`), hoặc
+   - `script.md` có bảng storyboard với header chứa `Clip` và `Dur` (định dạng storyboard `script.md` của `/fk-film`: `Clip | Dur | Shot | Ref | SF | Sáng | Hình | Thoại | Từ | Việc | Beat | Dựng`), hoặc
    - screenplay JSON của `/fk-scriptwriter` (Section O.1, có mảng `scenes`).
 2. **Gói (package):** tiêu đề + ý tưởng thumbnail + lời hứa (1 câu: người xem sẽ thấy gì). Tiêu đề và chữ trên thumbnail theo ngôn ngữ thoại (Rule 20).
    - Vlog: dòng `- **Package:** <tiêu đề> · <thumbnail> · <lời hứa>` ở khối thông tin đầu `script.md`. Tool tự đọc dòng này.
@@ -73,7 +73,7 @@ Tool tính và ghi vào báo cáo:
 | Lời hứa trong 30s đầu | Hình + thoại của mọi clip bắt đầu trước giây 30 |
 | Bản đồ móc giữ chân | Clip có nhãn `Hook` / `RH` / `Re-hook` + mốc đề xuất cho khoảng trống > 90s |
 | Lỗi | Số từ sai dải (kiểm cả số từ đếm được trong ô thoại lẫn cột `Từ`); `duration` ngoài 4/6/8/10; bảng không có cột thoại |
-| Cảnh báo | Cột `Từ` lệch số từ thực tế > 1; 0 từ ở clip 6/8/10s không ghi im lặng; dòng có số ô khác header; 2 khối liền nhau cùng `Shot`; khối selfie thứ 3 liên tiếp (Rule 42) |
+| Cảnh báo | Cột `Từ` lệch số từ thực tế > 1; 0 từ ở clip 6/8/10s không ghi im lặng; dòng có số ô khác header; 2 khối liền nhau cùng `Shot`; khối selfie thứ 3 liên tiếp (Rule 42, chỉ dự án POV vlog) |
 | Dòng thời gian AV | Bảng hai lớp hình / tiếng theo timecode — dùng cho Bước 2 |
 
 Một **khối** (Rule 42) gồm clip đầu và các clip nối tiếp nó: chuỗi 4s `a/b/c` cùng gốc ID, hoặc clip có `SF = P` (Start Frame là khung cuối clip trước, Rule 65).

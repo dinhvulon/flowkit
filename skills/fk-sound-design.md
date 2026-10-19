@@ -1,6 +1,6 @@
 # Sound Design & Audio Mastering — AI Cinematic Soundscapes
 
-> **Time-travel / POV vlog (`/fk-time-travel-vlog`):** dùng bản đã chỉnh theo luật vlog ở `skills/fk-time-travel-vlog/references/cinematic-toolkit.md` §6 (duck nhạc theo track clip có thoại native, master −14 LUFS — lệnh đã test). Template trong file này có dòng `Negative:` và góc máy người thứ ba — không chép nguyên vào prompt vlog.
+> **Phim (`/fk-film`):** dùng bản đã chỉnh ở `skills/fk-film/references/cinematic-toolkit.md` §6 (duck nhạc theo track clip có thoại native, master −14 LUFS — lệnh đã test). Template trong file này có dòng `Negative:` — chuyển ràng buộc vào `negative_constraints` của prompt JSON. Luật riêng của POV vlog: `skills/fk-film/references/vlog-archive.md`.
 
 Industry standards for multi-layer sound design, automated dynamic ducking, sub-bass rumble synthesis, and EBU R128 loudness mastering for Google Veo 3, Edge-TTS, and AI cinematic productions.
 

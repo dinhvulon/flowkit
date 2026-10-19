@@ -1,5 +1,7 @@
 # Thư viện chuyển cảnh in-camera cho Time Travel Vlog
 
+> **Phim vs vlog (2026-10-19):** phim dùng match cut, match on action, time-skip bằng hình, dust / smoke / light wipe, J-cut, jump cut khi cần, và luật "giấu mối nối". **Chỉ áp cho POV vlog** (xem [`vlog-archive.md`](vlog-archive.md)): foreground wipe "cho POV", swing / whip pan "cho selfie", look-away / back-of-head của vlogger, selfie → POV, hand-over-lens, selfie flip, phone glitch, và luật chữ trên hình chỉ năm / mission card / countdown. Phim nối cảnh theo `/fk-cinematic-transitions`.
+
 Đọc ở **Bước 4** của `SKILL.md`.
 
 > **Áp dụng trong FlowKit (ghi đè phần tương ứng bên dưới):**

@@ -4,7 +4,7 @@ description: Use after writing or editing any FlowKit video_prompt (prompt*.json
 
 # fk-review-prompt — Tự đánh giá video_prompt trước khi duyệt / sinh
 
-Chạy sau **mỗi lần** viết hoặc sửa `video_prompt`, trước khi hỏi user duyệt sinh. Hook `tools/hooks/prompt_review_hook.py` tự nhắc chạy skill này sau khi ghi file prompt hoặc PATCH scene. Đây là mục D của `skills/fk-time-travel-vlog/references/prompt-lock.md` (Bài học 86) dưới dạng một bước có báo cáo.
+Chạy sau **mỗi lần** viết hoặc sửa `video_prompt`, trước khi hỏi user duyệt sinh. Hook `tools/hooks/prompt_review_hook.py` tự nhắc chạy skill này sau khi ghi file prompt hoặc PATCH scene. Đây là mục D của `skills/fk-film/references/prompt-lock.md` (Bài học 86) dưới dạng một bước có báo cáo.
 
 Usage: `/fk-review-prompt <prompt.json | scene_id> [...]`
 
@@ -28,11 +28,11 @@ Mọi ô phải nói cùng một điều. Hai câu ngược nhau = mâu thuẫn 
 
 ## Bước 3 — Checklist B
 
-Chạy hết checklist B trong `skills/fk-time-travel-vlog/references/prompt-lock.md` (với dự án không phải vlog: các dòng chung về vật lý, sinh vật, đạo cụ, âm thanh vẫn áp). Ghi dòng nào áp dụng và Đạt / Không đạt.
+Chạy hết checklist B trong `skills/fk-film/references/prompt-lock.md` (checklist của phim; các dòng chỉ áp cho POV vlog đã chuyển sang `vlog-archive.md` §4 — chỉ chạy chúng khi dự án là POV vlog). Ghi dòng nào áp dụng và Đạt / Không đạt.
 
 Kiểm thêm ngoài prompt:
 - Mọi sinh vật trong khung có entity `creature` với `media_id` UUID và ảnh ref đã duyệt (dòng 57, CLAUDE.md Rule 5).
-- `character_names` của scene ≤ 3 ref cho cảnh có vlogger; đúng tên entity.
+- `character_names` của scene ≤ 7 ref (giới hạn Omni Flash, Bài học 88); là TÊN entity, không phải UUID.
 - `duration` của scene khớp các mốc (10s: `0-3s / 3-7s / 7-10s`).
 
 ## Bước 4 — Báo cáo tự đánh giá (bắt buộc, gửi kèm prompt)

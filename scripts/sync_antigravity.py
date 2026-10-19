@@ -30,7 +30,7 @@ def discover_skills():
 
     skills = []
     for f in sorted(SKILLS_DIR.glob("fk-*.md")):
-        skill_id = f.stem  # e.g. "fk-time-travel-vlog"
+        skill_id = f.stem  # e.g. "fk-film"
         raw_text = f.read_text(encoding="utf-8")
         lines = raw_text.splitlines()
 

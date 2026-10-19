@@ -1,5 +1,7 @@
 # Triển khai trong FlowKit — R2V Ingredients
 
+> **Phim vs vlog (2026-10-19):** quy trình dựng dự án, refs, sinh R2V, review, upscale áp cho phim. **Chỉ áp cho POV vlog:** "swing cho selfie, foreground wipe cho POV" ở §1, material `phone_vlog` và `voice_description` Laomedeia trong ví dụ §3, câu "chỉ vlogger có `voice_description`" (phim: mỗi nhân vật có thoại một voice id). Đọc `<V>` là tên nhân vật chính. Xem [`vlog-archive.md`](vlog-archive.md).
+
 Đọc ở **Bước 6–9** của `SKILL.md`. Thay mục 7a, 10 và phần 🛠️ cũ (quy trình start-frame → i2v cũ đã bỏ theo CLAUDE.md Rule 27).
 
 > **Xác nhận trước mỗi bước sinh (Rule 29).** Trước bất kỳ lệnh nào khiến Flow sinh media (ref, video, clip thử, sinh lại, upscale), nói rõ sinh gì, bao nhiêu, rồi chờ user đồng ý. Xong mỗi bước thì DỪNG, đưa kết quả cho user duyệt. Lỗi hoặc điểm review thấp → báo cáo kèm đề xuất sửa, không tự sinh lại.

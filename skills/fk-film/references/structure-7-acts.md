@@ -1,5 +1,7 @@
 # Kho ý tưởng cảnh, beat & kỹ thuật máy (Survival Preset)
 
+> **Chỉ áp cho POV / time-travel vlog** (2026-10-19): kho beat và kỹ thuật máy rút từ video vlog mẫu. Phim không dùng file này; cấu trúc phim theo `story-bible.md` (`/sw-workflow`) và `story-engine.md`. Xem [`vlog-archive.md`](vlog-archive.md).
+
 Đọc ở **Bước 3** của `SKILL.md`, **sau** `story-engine.md`.
 
 > **File này KHÔNG phải một cấu trúc truyện.** Cấu trúc duy nhất là **cold open + 5 Act** ở `story-engine.md` mục 3 (user chốt 2026-10-05). Khung "7 hồi / % thời lượng" cũ đã **bị xóa khỏi file này ngày 2026-10-12** vì cạnh tranh trực tiếp với 5 Act. Những gì còn lại dưới đây là **kho ý tưởng cảnh, beat mẫu và kỹ thuật máy quay** — lấy ra dùng tự do, không theo thứ tự.

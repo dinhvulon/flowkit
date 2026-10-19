@@ -11,7 +11,7 @@ Mục lục: 1. Luật chung · 2. Kiểu dùng được cho vlog POV · 3. Vide
 - **Âm thanh dẫn hình**: J-cut (âm cảnh sau vào trước) và L-cut (âm cảnh trước kéo qua) làm mối nối trôi hơn bất kỳ hiệu ứng hình nào.
 - **Whoosh chỉ đi với cú cắt có chuyển động.** Cắt tĩnh gắn whoosh nghe như template. Chỗ to nhất của whoosh đặt đúng khung cắt (đầu whoosh vào sớm ~0.2s), −10 dB.
 - Giữ mắt nhân vật cùng một vị trí khung qua mối nối [Gióng mắt].
-- **Vlog POV (FlowKit)**: không mở tab Transitions, không crossfade, không dip-to-black. Ngoại lệ là CUT ĐEN ở cold open và kết. Glitch chỉ khi user yêu cầu (`fk-time-travel-vlog/references/transitions.md`).
+- **Vlog POV (FlowKit)**: không mở tab Transitions, không crossfade, không dip-to-black. Ngoại lệ là CUT ĐEN ở cold open và kết. Glitch chỉ khi user yêu cầu (`fk-film/references/transitions.md`, phần vlog). Phim (`/fk-film`) nối theo `/fk-cinematic-transitions`.
 
 ## 2. Kiểu dùng được cho vlog POV
 

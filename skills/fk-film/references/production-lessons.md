@@ -4,37 +4,40 @@
 
 **Thứ tự ưu tiên:** CLAUDE.md > bài học có số lớn hơn / ngày mới hơn > bài học cũ. Các bài học đã bị thay được đánh dấu `[ĐÃ THAY]` ngay đầu dòng; giữ lại làm bằng chứng, không làm theo.
 
+**Phim vs vlog (2026-10-19):** skill này giờ là skill làm **phim kể chuyện ngôi thứ ba** (`/fk-film`). Bài học chỉ đúng cho POV / selfie vlog đã chuyển sang [`vlog-archive.md`](vlog-archive.md); chỗ cũ chỉ còn một dòng `→ chuyển sang vlog-archive.md` để giữ số thứ tự. Bài học trộn cả hai có dòng *(Phạm vi: …)* ngay dưới tiêu đề, ghi phần nào chỉ áp cho vlog. Trong các bài còn lại, chữ "vlogger" đọc là "nhân vật chính", `<V>` là tên nhân vật.
+
 ---
 
-## §1. LUẬT HIỆN HÀNH — đọc mục này là đủ để viết prompt
+## §1. LUẬT HIỆN HÀNH (PHIM) — đọc mục này là đủ để viết prompt
 
-> Bảng tra nhanh (cập nhật 2026-10-12). File dưới §2 là **kho lịch sử 71 bài học**; khi nghi ngờ, bảng này thắng. Mỗi khi chốt luật mới, sửa bảng này **trước**, rồi mới ghi bài học mới vào §2.
+> Bảng tra nhanh cho phim (cập nhật 2026-10-19). Bảng §1 cũ của bản vlog (2026-10-12) lưu nguyên văn ở `vlog-archive.md` §2. File dưới §2 là **kho lịch sử bài học**; khi nghi ngờ, bảng này thắng. Mỗi khi chốt luật mới, sửa bảng này **trước**, rồi mới ghi bài học mới vào §2.
 
-| Chủ đề | Luật hiện hành | Nguồn | Đã thay luật nào |
-|---|---|---|---|
-| **Độ dài clip** | **Không cố định.** Dễ lỗi → chuỗi 4s cùng bối cảnh (1 hành động/clip, khớp tư thế đầu-cuối). Dễ, không chuyển cảnh → 8s; long take / master / cảnh cuối → 10s; lưng chừng → 6s | Rule 49 (0) + Bài 71 | ~~mọi clip 8s~~ |
-| **Số từ thoại theo độ dài** | **4s** 0 hoặc 6–8 (`0-2s / 2-4s`) · **6s** 12–15 (`0-2s / 2-4s / 4-6s`) · **8s** 18–22, chia `0-3s` 6–7 / `3-6s` 7–8 / `6-8s` 5–7 · **10s** 24–28 (`0-3s / 3-7s / 7-10s`). Thiếu → dead air; thừa → cụt âm. Nói **ngay từ giây 0.0** | CLAUDE.md Rule 49 + Bài 65, 71 | ~~23–25 từ~~ (Bài 62), ~~20–25 từ~~ |
-| **Tỷ lệ góc máy** | **KHÔNG có tỷ lệ % nào.** Chọn theo hành động: POV (hành động/di chuyển/rình săn/quan sát) · OTS (đồng hành, thao tác qua vai) · FIXED (thao tác 2 tay) · SELFIE (hook, tâm sự, phản ứng, kết). Cấm 100% selfie · cấm 3 selfie liên tiếp · cấm 2 clip liền nhau trùng cỡ cảnh + góc máy | Rule 42 (3) | ~~60–70% POV~~ (Bài 61), ~~POV 35/OTS 35/FIXED 15/SELFIE 15~~ (Bài 66) |
-| **Im lặng khi rình săn** | Cảnh áp sát thú/phục kích/ẩn nấp: **0 từ trên hình**, miệng khóa chặt (`Sonic Isolation`). Thoại dẫn → voiceover hậu kỳ | Rule 49 (4) + Bài 61 | — |
-| **Bộ ref vlogger** | `<V>` (mặt+tóc) + `<V> Body` (3 góc, **đã mặc outfit**, EDIT 1 lần từ Body trần gốc). **Không** có entity `<V> Outfit`. Tối đa 3 ref/clip. Cảnh OTS cần thêm `<V> Back` (sau gáy) | Rule 46 + Bài 60, 66 | ~~entity Outfit riêng~~ |
-| **Khóa trang phục** | **Thuần ref** — cấm mô tả lại quần áo bằng lời. Chỉ trỏ: `wears the exact historical outfit shown in the <V> Body reference sheet (NO shearling collar, NO extra fur, NO hood, NO outfit variations)` | Rule 52 (2) + Bài 63 | ~~tả outfit bằng chữ trong prompt~~ |
-| **Khóa hình thể** | Waist-Up Medium Shot hơi hất lên, đứng thẳng + cụm `BODY LOCK` đối kháng. Cấm góc xa/toàn khi cúi gập người | Rule 52 (3) + Bài 63 | — |
-| **Từ cấm (ghost device)** | Cấm 100% `phone`, `smartphone`, `phone_vlog`, `device`, `screen`, `selfie stick`, `gimbal`, `camera` (đạo cụ) — **kể cả trong câu phủ định và trong project material**. Thay bằng: `The camera lens and viewpoint are completely outside the visible frame and never seen; both hands are empty` | Rule 52 (1) + Bài 9, 33, 63 | — |
-| **Bàn tay trong POV** | Nếu POV có thao tác tay (nhặt đồ, vốc nước, chạm dấu chân): BẮT BUỘC cấp ref `<V> Hand` (sheet 16:9 cẳng tay/bàn tay chuẩn giải phẫu nữ, xắn áo kaki khớp outfit) + gán `characters: ["<V> Hand"]`. Cấm để rỗng nhân vật khiến AI vẽ tay đàn ông lông lá. Nếu không có ref tay → chuyển sang **OTS hoặc FIXED** | Bài 66, 67, 72 | ~~cấm tuyệt đối tay trong POV~~ |
-| **Vật ở giây 0** | Mọi người/sinh vật/đạo cụ phải nằm trong khối `Everything is already in place from the very first frame`, ghi vị trí + khoảng cách + số lượng + tay nào cầm | Bài 48, 69 | — |
-| **Chất liệu / bột** | Phải có sẵn trên bề mặt từ Frame 0; quệt ngón tay trực tiếp vào đá. Cấm hứng bụi/bột rơi giữa không trung | Rule 53 + Bài 64 | — |
-| **Đạo cụ** | Bảo toàn xuyên suốt clip; cấm buông/đặt xuống đất giữa chừng; cấm xoay người 180° khi vác đồ nặng. Đạo cụ đơn nhất, không nhân bản | Bài 68, 69 | — |
-| **Cận chiến** | **Cấm 100%** đánh đấm/vật lộn cận chiến người vs thú lớn. Thay bằng cơ chế sinh tồn & giao lưu văn hóa | Rule 51 (1) + Bài 62 | — |
-| **Miệng nhân vật phụ** | Không thoại → khóa miệng. Có thoại → sub-clip riêng, ngôn ngữ không hiểu được, giọng tả bằng chữ, vlogger im lặng khi họ nói | Bài 49 | ~~người bản địa câm hoàn toàn~~ |
-| **Duration** | **PATCH `duration`** sau khi POST scene, nếu không clip tự thành 10s | Bài 12 | — |
-| **Bối cảnh** | Ảnh ref bối cảnh 16:9 dùng chung cho mọi clip cùng địa điểm; duyệt start frame bối cảnh trước khi sinh R2V | Bài 69 | — |
-| **Xác phân hủy sinh học** | Xác thú lớn lún bùn 30cm, thịt rữa đỏ thẫm + gân nhờn bám sườn ố vàng, vết cắn T. rex dập tủy, ruồi nhặng. CẤM xương thạch cao trắng khô như tượng sáp / mô hình bảo tàng | Rule 59 (1) + Bài 75 | ~~xương trắng khô trên sỏi~~ |
-| **Đường mòn tiền sử (Anti-Tire)** | Lối mòn thú giẫm đạp hỗn loạn, hố chân tròn lún bùn, dương xỉ dập nát. CẤM 100% vệt lốp xe ô tô 4x4, thân gỗ xẻ, đường lâm nghiệp hiện đại | Rule 59 (2) + Bài 75 | ~~từ khóa trail gây lốp xe~~ |
-| **Ánh sáng tự nhiên (Anti-God Rays)** | Ánh sáng ban mai tán xạ dịu, sương ẩm mép sông, mai rùa nửa chìm bùn sỏi. CẤM 100% tia nắng thần thoại volumetric god rays kiểu hoạt hình / diorama hồ cá | Rule 59 (3) + Bài 75 | ~~god rays diorama~~ |
-| **Khóa khuôn mặt (Anti-Text Drift)** | Prompt BẮT BUỘC khóa 1:1 theo ảnh ref face (tóc vàng mật ong, mái thưa, da trắng mịn không tàn nhang). CẤM tả lệch màu tóc/kiểu tóc/da đè lên ref | Rule 59 (4) + Bài 75 | ~~prompt ghi đè tóc đỏ/tàn nhang~~ |
-| **Khóa ngũ quan & Lệnh ép 1:1 (Ironclad Face Lock)** | Dùng đúng ảnh ref hiện có. BẮT BUỘC lệnh ép: exact 1:1 identical match to attached reference + đặc tả ngũ quan (mặt trái xoan mềm, môi mọng Cupid's bow, cằm thon, mũi thẳng). CẤM mặt vuông già, cấm môi mỏng | Rule 60 + Bài 76 | ~~tả chung chung gây mặt vuông/môi mỏng~~ |
-| **Ánh sáng tự nhiên & Chống Glamour CGI** | 100% ánh sáng tự nhiên (overcast / dappled canopy), micro-shadows. CẤM 100% beauty glow, smooth creamy skin, studio lighting, cấm cánh tay selfie vươn dài (camera off-screen, both hands natural/empty). Khủng long vảy sần cặn bùn thật | Rule 61 + Bài 77 | ~~tả da mịn làm dính beauty filter / selfie vươn tay~~ |
-| **Start Frame: Liên tục vs Chuyển cảnh** | **Cảnh liên tục cắt Last Frame (`ffmpeg -sseof -0.08`), CẤM sinh ảnh mới. Chỉ chuyển cảnh/cắt góc mới sinh Start Frame tĩnh** (truyền `source_media_id` cho cảnh có người, tẩy watermark, user duyệt) | Rule 65 + Bài 79 | ~~sinh ảnh start frame cho mọi cảnh~~ |
+| Chủ đề | Luật hiện hành (phim) | Nguồn |
+|---|---|---|
+| **Góc nhìn** | Máy điện ảnh **ngôi thứ ba**: `third-person cinematic camera; the camera itself is never seen`, người xem vô hình. Không selfie, không POV điện thoại, không nhân vật nói với ống kính. Cỡ cảnh và cách đặt máy chọn theo nhịp kịch (`/fk-camera-guide`); cấm 2 clip liền nhau trùng cỡ cảnh + góc máy | prompt EMBERS v7, Rule 42 (4) |
+| **Prompt** | Structured JSON: `camera`, `style`, `setting`, `characters`, `timeline_action`, `speech`, `post_vo`, `dramatic_craft`, `audio`, `negative_constraints` (+ `props_lock` khi cần). Viết qua `/fk-script-to-prompts`, lint bằng `tools/lint_prompt.py` (0 Critical/High) | Rule 55, 56 |
+| **Độ dài clip** | **Không cố định.** Dễ lỗi → chuỗi 4s cùng bối cảnh (1 hành động/clip, khớp tư thế đầu-cuối). Dễ, không chuyển cảnh → 8s; long take / master / cảnh cuối → 10s; lưng chừng → 6s. **PATCH `duration`** sau khi POST scene | Rule 49 (0) + Bài 71, 12 |
+| **Số từ thoại theo độ dài** | **4s** 0 hoặc 6–8 · **6s** 12–15 · **8s** 18–22 · **10s** 24–28 (memory: thoại 23–25 từ → clip 10s). Thiếu → dead air; thừa → cụt âm. Nói **ngay từ giây 0.0**. Mặt người nói phải thấy được khi nói | Rule 49, 54 + Bài 65, 81 |
+| **Giọng** | Mỗi nhân vật có thoại một voice id riêng (danh sách 30 giọng ở `voice-bible.md` §0), ghi `speech.voices`; Slot 7 mang nhiều giọng theo thứ tự nói. Không mặc định Laomedeia (đó là giọng vlogger, Rule 24) | prompt EMBERS, Bài 13 |
+| **Im lặng khi rình / ẩn nấp** | Cảnh áp sát thú, phục kích, ẩn nấp: **0 từ trên hình**, miệng khóa (`Sonic Isolation`). Lời trong đầu → `post_vo` | Rule 49 (4) |
+| **Thoại ngoài hình** | Câu qua bộ đàm / điện thoại / lời dẫn → `post_vo`, thêm khi dựng. Clip im lặng không để bộ đàm hiện trên hình | Bài 99 |
+| **Cảnh tranh cãi** | Nói **to, gắt, cộc** ở cả `speech.delivery` lẫn nhịp timeline; bỏ `low / quiet / voice drops / flat` | Bài 101 |
+| **Thoại bị chặn im lặng** | Không để nhân vật nói chuyện trả tiền / mua bán (ghost op). Ý đó đưa vào `post_vo` / phụ đề | Bài 100 |
+| **Nghe thoại khi review** | Mọi lần review chạy `tools/review_dialogue.py` (Whisper) trước khi chấm điểm | Rule 67 |
+| **Bộ ref nhân vật** | `<Tên>` (mặt) + `<Tên> Body <trạng thái trang phục>` (đã mặc đồ, EDIT 1 lần từ Body gốc). Không có entity Outfit riêng. Tối đa 7 ref/clip; gửi ref cho mọi thứ cần giữ nhất quán có trong khung; `character_names` là TÊN entity | Rule 46 + Bài 60, 88, 34 (ý chung) |
+| **Khóa mặt & trang phục** | Nhắc chip ref ngay trong câu khóa (`{{ref:<Tên>}}`, Rule 64); không tả lại mặt / makeup / trang phục bằng chữ. Phần trang phục dễ bị model "sáng tạo" (tay áo, quần khi ngồi, gấu áo) chốt bằng câu khóa trỏ về ref | Rule 52 (2), 64 + Bài 63, 74, 78 |
+| **Vật ở giây 0** | Mọi người/sinh vật/đạo cụ nằm trong khối `Everything is already in place from the very first frame`, ghi vị trí + khoảng cách + số lượng + tay nào cầm | Bài 48, 69 |
+| **Gọi tên là hiện ra** | Model không hiểu phủ định: không gọi tên vật/thú/lửa/thiết bị mà mình không muốn thấy, kể cả trong thoại và audio | Bài 33 (ý chung), 73, 77, 99 |
+| **Chất liệu / bột** | Có sẵn trên bề mặt từ Frame 0; chạm trực tiếp. Cấm hứng bụi/bột rơi giữa không trung | Rule 53 + Bài 64 |
+| **Đạo cụ** | Một tay — một đạo cụ — suốt clip; không buông/đặt xuống giữa chừng; đạo cụ đơn nhất; một câu tả chuẩn cho đạo cụ xuất hiện ở ≥2 clip; dây hai người cùng cầm là **một sợi liền** | Bài 68, 69, 70, 94, 96 |
+| **Vật cản & khoảng cách** | Ghi đường đi so với rào/cổng/xe; cảnh "suýt chạm" ghi khoảng cách bằng cm + câu cấm chạm | Bài 97, 98 |
+| **Cận chiến** | **Cấm** đánh đấm/vật lộn cận chiến người vs thú lớn | Rule 51 (1) + Bài 62 (quy tắc 1) |
+| **Miệng nhân vật phụ** | Không thoại → khóa miệng. Có thoại → nhịp riêng, voice id riêng, không nói chồng | Bài 49 (ý chung) |
+| **Bối cảnh** | Ảnh ref bối cảnh 16:9 dùng chung cho mọi clip cùng địa điểm; sổ liên tục bối cảnh chạy một chiều | Bài 69, `shots-and-realism.md` |
+| **Lửa, khói, chất liệu (anti-CGI)** | `35mm film`, documentary realism, không CGI; không khói thở / hơi nước trắng; bếp than là lớp than đỏ, nguồn sáng ghi rõ chỗ; không god rays | Rule 57, 59, 61, 62 + Bài 73, 75 |
+| **Ánh sáng & da người** | Ánh sáng tự nhiên; chống glamour (không beauty glow, da thật); deep focus khi cần thấy bối cảnh | Rule 61, 62 (3) + Bài 77 (mục 1, 2) |
+| **Start Frame** | Cảnh nối tiếp trực tiếp → cắt Last Frame clip trước (`PREV_LAST_FRAME`); chuyển cảnh → `GENERATE_IMAGE` có `source_media_id`, tẩy logo, user duyệt. Riêng EMBERS: refs-only r2v, không start frame (memory 2026-10-18) | Rule 63, 65 + Bài 79 |
+| **Xác phân hủy / đường mòn tiền sử** | Theo Rule 59 khi phim có bối cảnh tiền sử | Rule 59 + Bài 75 |
 
 **Kỹ thuật bổ sung từ `skills/character-scene-design-skills-main/`** (repo tham chiếu, đọc khi cần — xem con trỏ trong `character-bible.md` §7 và `shots-and-realism.md`):
 - *Proportion lock → W0 turnaround contract* (`skills/character-design/SKILL.md`) — khóa tỉ lệ hình thể **trước** khi sinh sheet; chống body drift mạnh hơn nhồi tính từ vào prompt.
@@ -64,8 +67,8 @@ Rút ra từ dự án `output/atlantis-9600bc/` (2026-09-27). Khi mâu thuẫn v
 
 **Viết `video_prompt`**
 8. **Ràng buộc là câu khẳng định**, không dùng dòng `Negative:` (xem mục 9).
-9. **Điện thoại là máy quay, nhưng KHÔNG viết chữ `phone` trong prompt (bài 33):** chỉ tả góc nhìn (`The lens sits at the end of her outstretched arm…` / `The view is her own eyes`) và tay trống (`her free hand is empty`). Không viết `she holds the phone up`, `the phone is the camera` hay `no phone`; nhắc tới đồ vật, kể cả câu phủ định, đều làm model vẽ nó ra. Với POV, cho tay nhân vật bận việc khác (bám mép thuyền, cầm đồ vật).
-10. **Shot selfie không dùng vật lướt qua ống kính** (xà gỗ, ngựa…): ở góc selfie, vật phải chen vào khoảng khoảng 60 cm giữa gậy selfie và mặt nên trông như "bay" đến, và model hay xóa luôn nhân vật (user duyệt: không thực tế). Selfie chuyển cảnh bằng **swing/whip pan** (nhân vật xoay gậy lia máy nhanh sang cảnh mới, nhòe chuyển động nửa giây cuối; clip sau mở giữa cú lia rồi dừng lại trên nhân vật ở chỗ mới) hoặc **jump cut**. Foreground wipe chỉ dùng cho shot POV.
+9. → chuyển sang [`vlog-archive.md`](vlog-archive.md) (chỉ áp cho POV vlog: điện thoại là máy quay, không viết chữ `phone`).
+10. → chuyển sang [`vlog-archive.md`](vlog-archive.md) (shot selfie không dùng vật lướt qua ống kính).
 11. **Chống hình kiểu 3D ở cảnh thần thoại hoặc thảm họa** (model chỉ biết những cảnh này qua phim và game):
     - mở prompt bằng khối "footage thật": `raw unedited amateur video, looks like real footage posted online, not a movie`, rung tay, auto-exposure, nhiễu nén, giọt nước trên ống kính, ánh sáng bệt;
     - tả bằng vật liệu có thật (ví dụ "tường ốp tấm đồng đỏ cũ, xỉn màu" thay vì "orichalcum phát sáng"); tên thần thoại chỉ để trong lời thoại;
@@ -74,7 +77,7 @@ Rút ra từ dự án `output/atlantis-9600bc/` (2026-09-27). Khi mâu thuẫn v
 
 **Kỹ thuật FlowKit**
 12. `POST /api/scenes` không nhận `duration`; phải `PATCH {"duration": <4|6|8|10>}` theo cột `Dur` của storyboard (thiếu thì âm thầm ra clip 10s).
-13. Mỗi clip chỉ có 1 giọng, lấy từ entity **đầu tiên theo thứ tự DB** có `voice_description`. **Chỉ nhân vật chính khai báo voice**; khai báo cho nhân vật phụ thì giọng họ sẽ đè lên thoại của nhân vật chính.
+13. Mỗi clip chỉ có 1 giọng, lấy từ entity **đầu tiên theo thứ tự DB** có `voice_description`. **Chỉ nhân vật chính khai báo voice**; khai báo cho nhân vật phụ thì giọng họ sẽ đè lên thoại của nhân vật chính. *(Phim nhiều người nói: mỗi nhân vật có voice id riêng trong `speech.voices`, Slot 7 mang nhiều giọng theo thứ tự nói (prompt EMBERS, `voice-bible.md` §0). Câu "chỉ nhân vật chính khai báo voice" là luật của vlog một giọng.)*
 14. Sinh lại một scene R2V đã COMPLETED: PATCH `horizontal_video_status: PENDING` rồi gửi `GENERATE_VIDEO_REFS` (không có `REGENERATE_VIDEO_REFS`).
 15. Ảnh do Flow sinh luôn có logo ✦ ở góc dưới phải (tâm khoảng `(W-98, H-97)`). Xóa bằng `tools/remove_watermark_from_image.py` (đã sửa ngưỡng ngày 2026-09-27), rồi **mở ảnh ra kiểm tra**. Ảnh không phải do Flow sinh (ví dụ bảng ảnh ghép của user) thì tool có thể đoán sai vị trí.
 16. Google chặn sinh tự động (`UNUSUAL_ACTIVITY`) → làm theo Bước 4.9. Đổi tài khoản Google thì phải tạo project mới (project và media thuộc tài khoản đã tạo ra chúng).
@@ -85,21 +88,13 @@ Rút ra từ dự án `output/atlantis-9600bc/` (2026-09-27). Khi mâu thuẫn v
 
 21. **Bảng vật lý phải được user duyệt trước khi viết Clip JSON** (mục Định dạng output, bước 5b): mỗi clip ghi máy đặt ở đâu và nhìn về đâu, có gì trong khung ở giây 0, mọi vật di chuyển (hướng, tốc độ, hệ quả trong khung), chuyển động vật lý thật, và ai hoặc cái gì rời khung bằng cách nào. Nội dung bảng được viết thành câu trong `video_prompt` (quy tắc 19, 20). Đây là chỗ bắt lỗi vật lý rẻ nhất: sửa trên giấy, không tốn credit.
 
-22. **[ĐÃ THAY bởi bài học 60 / Rule 46 — trang phục mặc lên `<Vlogger> Body`, không tách entity Outfit]** **Trang phục khóa bằng panel toàn thân trong ảnh sheet nhân vật** (góp ý của user, 2026-10-01; thay bài học S31 Atlantis): ảnh ref vlogger là một sheet 16:9 có mặt rõ, góc 3/4 và toàn thân mặc trang phục (xem mục 2). Chỉ tách entity `<Vlogger> Outfit` riêng khi trang phục vẫn bị đổi giữa các clip.
+22. → chuyển sang [`vlog-archive.md`](vlog-archive.md) ([ĐÃ THAY] sheet nhân vật vlogger khóa trang phục).
 
-23. **Tuyệt đối CẤM từ khóa `selfie-stick` và mô tả cầm điện thoại (bài học S11, S17, S20 Atlantis):**
-    - Từ khóa `selfie-stick` hay `smartphone selfie` làm AI vẽ thêm 1 chiếc gậy selfie trong tay, hoặc vẽ 1 chiếc điện thoại/màn hình điện thoại bay lơ lửng trước ống kính (hiện tượng quay màn hình điện thoại).
-    - **Chuẩn thay thế:** Dùng `Handheld front-camera vlog footage, ultra-wide 0.5x lens, slight wide-angle barrel distortion`. Tả cánh tay: `Mia holds the camera at arm's length with her right arm extended toward the bottom-right corner of the frame.`
-    - **Khóa câu khẳng định bắt buộc:** `The lens sits at the end of Mia's outstretched right arm, looking back at her; her right hand is beyond the frame edge and her other hand is empty, so the frame contains only Mia and the scene behind her.` (không nhắc tới thiết bị, xem bài 33)
+23. → chuyển sang [`vlog-archive.md`](vlog-archive.md) (cấm `selfie-stick`, câu khóa cánh tay selfie).
 
-24. **100% First-Person POV không vẽ thiết bị hay thao tác sai vật lý (bài học S12, S16, S34 Atlantis):**
-    - Khi quay POV (nhúng tay thử nước, bước qua cầu, nhìn xuống mặt nước): Người xem nhìn thẳng qua mắt vlogger. Vlogger đứng hoàn toàn sau camera, hai tay giữ máy ở tầm ngực.
-    - Chỉ có **1 bàn tay không** (trống trơn, không cầm gì) vươn vào mép dưới khung hình để tương tác (chạm nước, nhặt đá, chỉ tay).
-    - CẤM mô tả "cầm gậy rồi thả ra rồi cầm điện thoại" hoặc vẽ bàn tay cầm điện thoại khác; cấm để điện thoại nổi lơ lửng trên mặt nước. Khóa câu: `The view is Mia's own eyes; Mia's face and body never appear, and only her bare empty hand enters the lower frame.` (không nhắc tới thiết bị, xem bài 33)
+24. → chuyển sang [`vlog-archive.md`](vlog-archive.md) (100% First-Person POV của vlogger, bàn tay trống).
 
-25. **Vật lý cầm máy khi chạy tháo chạy và nhảy — Running & Action Leap Physics (bài học S27, S30 Atlantis):**
-    - **Khi chạy trốn (S27):** Vlogger vlogging cuộc tháo chạy của mình thì **PHẢI LUÔN NẮM CHẶT CAMERA QUAY MẶT MÌNH**. Cấm để AI cho nhân vật buông tay, vứt điện thoại hay chạy xa khỏi camera. Tả: `Mia clutches the camera firmly in her right hand at arm's length pointed continuously at her face; she NEVER drops, releases, or lets go of the camera. The camera shakes violently with her sprint.`
-    - **Khi nhảy (S30):** Vlogger một tay nắm chặt máy nhảy xuống thuyền; camera trải qua một cú giật nảy giật dọc cực kỳ thực tế khi tiếp đất trên sàn thuyền gỗ. Cấm buông máy/gậy trước khi nhảy.
+25. → chuyển sang [`vlog-archive.md`](vlog-archive.md) (vlogger giữ máy khi chạy và nhảy).
 
 26. **Khóa cố định nền đất cho cảnh trên cạn (bài học S11 Atlantis):**
     - Với các cảnh đứng trên bờ đá, suối khoáng, thềm gạch: Bắt buộc ghi rõ `Mia stands firmly on a solid stone terrace/ground; zero vehicle or boat motion; background structures remain completely static`. Tránh mô tả chung chung về nước chảy khiến AI làm nền trôi bồng bềnh như đang trên thuyền hay cầu di chuyển theo thuyền.
@@ -122,6 +117,7 @@ Rút ra từ dự án `output/atlantis-9600bc/` (2026-09-27). Khi mâu thuẫn v
     - **Khí động học:** Hơi thở trong −35°C tan biến nhanh trong không khí lạnh (`dense short-lived breath vapor that dissipates rapidly`), không đọng thành khói; khói bốc theo đối lưu nhiệt và bị gió lạnh làm xáo trộn; tàn lửa bay theo luồng khí nóng rồi nguội dần và tắt.
 
 30. **Cử động nhân vật & Quang học Smartphone chân thực (Character Action & Dynamic Smartphone Optics) (bài học S18, S26, S27, S33, S37, toàn bộ 45 cảnh):**
+    - *(Phạm vi: ý "Quang học Smartphone" và "Động học camera chuyển động" chỉ áp cho POV vlog, xem [`vlog-archive.md`](vlog-archive.md); ý di chuyển trong tuyết sâu, không chạy lùi khi tháo chạy, cân bằng sáng áp cho phim.)*
     - **Di chuyển trong tuyết sâu:** Người chạy trong tuyết ngập đầu gối không thể lướt nhanh, mà sải bước nặng nhọc với bước chân rút ngắn (`struggles through knee-deep powder with shortened, heavy strides, boots sinking deep`). Dấu chân nén tuyết sâu với gờ tuyết đùn cao xung quanh mép (`raised rim of displaced snow`).
     - **Không chạy lùi khi tháo chạy:** Vừa chạy tới vừa xoay người ngoái nhìn (`runs forward while twisting upper body and looking back over shoulder`), tránh chạy lùi trên địa hình nguy hiểm.
     - **Quang học Smartphone:** Bỏ câu lệnh cứng nhắc "zero lens distortion", chuyển sang `natural wide-angle handheld perspective, no exaggerated fisheye distortion` (không dùng chữ `smartphone`, xem bài 33).
@@ -139,155 +135,26 @@ Rút ra từ dự án `output/atlantis-9600bc/` (2026-09-27). Khi mâu thuẫn v
 32. **Tính liên tục của Đạo cụ & Vật lý giữa các cảnh (Physical & Prop Continuity):**
     - Khi các cảnh nối tiếp nhau (ví dụ: gắp đá nung S10 → đun nước S11 → uống nước ấm S12), kích thước viên đá, màu sắc than hồng, túi nước và nhiệt độ phải đồng nhất xuyên suốt chuỗi cảnh.
 
-33. **ĐIỆN THOẠI HIỆN RA LẶP ĐI LẶP LẠI — KHÔNG ĐƯỢC NHẮC TỚI THIẾT BỊ TRONG PROMPT (bài học H1/H2 Ice Age 16,000 BC, sau 4 lượt gen hỏng liên tiếp):**
-    - **Root-cause:** model video **không hiểu phủ định**. Câu "no phone, no phone screen, no device…" thực chất là gọi tên đồ vật nhiều lần, nên model càng vẽ ra nó. Bản lock `PHONE INVISIBILITY RULE (CRITICAL)` từng ghi ở đây là **SAI**: prompt H1 khi đó chứa `phone` 8 lần, `screen` 4, `device` 3, `smartphone` 3, và kết quả vẫn có điện thoại. Ngoài ra, mọi `style.*` cũ đều mở đầu bằng "Handheld smartphone footage… natural smartphone perspective".
-    - **Luật bắt buộc:** trong `style`, `lock`, `general`, `physics`, `bg`, `shot`, `frame0` TUYỆT ĐỐI KHÔNG có các từ `phone`, `smartphone`, `device`, `screen` (theo nghĩa thiết bị), `gadget`, `selfie stick`, `tripod` (đồ vật). Chỉ tả **góc nhìn** và **tay đang trống**:
-      - `selfie`/`run`: *"The lens sits at the end of Nora's outstretched right arm, about 60 cm in front of her face, looking back at her; her right shoulder and upper arm reach toward the bottom-right corner and leave the frame there, so her right hand is never in view."* + *"Her left hand is empty, and nothing is held up in front of her or near her face."*
-      - `pov`: *"The view is Nora's own eyes, and only the world in front of her fills the frame; the view simply moves as she moves."* (câu khẳng định; không viết "no face, no body, no person" vì phủ định vẫn gọi tên đối tượng, xem bài 37)
-      - `tripod`: *"Static locked-off footage from a fixed viewpoint resting on a ledge… nothing that holds or supports the view is visible."*
-      - thay "natural smartphone perspective" bằng **"natural wide-angle handheld perspective"**.
-    - **Kiểm tra trước khi gen:** sau khi render, grep prompt; phải ra 0 kết quả cho `\b(phone|smartphone|device|gadget|selfie stick)\b`.
-    - **Tay giữ camera không được đánh khi chạy (lỗi H1, góc selfie bị gãy ở giây 2.5):** nếu prompt vừa nói "right arm extended toward the lens" vừa nói "arms swinging hard" thì model buộc phải chọn một. Nó cho cả 2 tay đánh, và góc quay biến thành camera người ngoài quay theo. Với shot `run`, luôn viết **"her left arm pumps hard while her right arm stays extended toward the lens for the entire clip"**, không bao giờ viết "arms swing" (số nhiều).
-    - **Tốc độ chạy trong tuyết sâu:** để cảnh trông KHẨN CẤP và NHANH, tả `legs pumping as fast as physically possible, her left arm pumping hard, the view bouncing violently with each stride, face locked in wide-eyed terror`. Tránh "short heavy strides" vì model sẽ gen thành đi bộ.
-    - **Kẻ đuổi không được bắt kịp:** ghi rõ khoảng cách cố định, ví dụ *"The mammoth stays about twenty metres behind Nora for the whole clip; she never draws level with Nora."* Nếu chỉ ghi "never catches up" thì khung cuối mammoth vẫn chạy ngang hàng.
-    - **Biểu cảm:** Với cảnh trốn chạy, phải khóa cứng `wide-eyed terror, mouth open in a gasp or scream, no smile whatsoever, brow furrowed hard` — nếu chỉ tả "terrified" mà không chi tiết, model hay gen mặt cười kiểu excited.
+33. → chuyển sang [`vlog-archive.md`](vlog-archive.md) (điện thoại hiện ra lặp lại). Ý chung vẫn áp cho phim: model không hiểu phủ định, gọi tên một vật (kể cả để cấm) là mời nó vào khung (Bài 73, 77, 99); kẻ đuổi ghi khoảng cách cố định bằng câu khẳng định; biểu cảm sợ hãi khóa bằng chi tiết mặt (`wide-eyed terror, mouth open, no smile`).
 
-34. **[LEGACY & BÀI HỌC GỐC] BỘ REF CHO VLOGGER: Mặt + Body (bài học H1/H2 Ice Age 16,000 BC; từ 05/10/2026 cập nhật theo Rule 46 & Bài học 60):**
-    - **Root-cause #1 (lỗi nặng nhất): `character_names` phải là TÊN entity, không phải UUID.** Server so khớp theo `name`/`slug` (`_char_matches` trong `agent/sdk/services/operations.py`). Nếu lưu UUID thì không khớp entity nào → server rơi vào nhánh dự phòng và chỉ gửi **1 ref duy nhất** (entity đầu tiên của project). Mọi lock outfit/body đều vô hiệu. Luôn PATCH `character_names: ["Nora", "Nora Body", ...]` (bài học 60) và đọc lại scene để kiểm tra.
-    - **Root-cause #2: giới hạn ref r2v.** `_R2V_MAX_REFS` đã nâng từ 3 lên 7 (giới hạn Omni Flash). Thứ tự ưu tiên: `visual_asset` trước, rồi `character`; entity `location` KHÔNG được gửi làm ref (chỉ mô tả bằng prompt). Một scene có tối đa 7 ref visual_asset + character.
-    - **Root-cause #3: không có entity body/outfit riêng** → model tự suy diễn quần áo theo bối cảnh (tuyết → áo parka nâu) và tự đổi dáng người.
-    - **Bộ 2 entity chuẩn cho vlogger (Rule 46 & Bài học 60 — TUYỆT ĐỐI KHÔNG TẠO ENTITY OUTFIT RIÊNG):**
-      | Entity | Nguồn ảnh | Chứa gì |
-      |---|---|---|
-      | `<Vlogger>` | Ảnh mặt user cung cấp (Ice Age: `uploads/nora_main.jpg`) — upload thẳng, KHÔNG gen lại | Chỉ khuôn mặt, tóc, khuyên tai |
-      | `<Vlogger> Body` | **`EDIT_CHARACTER_IMAGE` từ ảnh body trần nguồn (`source_media_id` = media_id của Body trần chuẩn)** để "mặc trang phục" lên body: giữ nguyên 3 panel (chính diện, 3/4, sau lưng), tư thế, tỉ lệ giải phẫu (ngực đầy, eo thon, hông nở, chân dài), khung cắt vai/dưới cằm không lộ mặt, và nền studio. **Đây chính là Body đã mặc hoàn chỉnh trang phục, đóng vai trò là `<Vlogger> Body` duy nhất.** | Body đã mặc outfit: dáng người + trang phục |
-    - **Vì sao body KHÔNG có mặt:** nếu ảnh body có mặt, model nhận 2 khuôn mặt khác nhau (ảnh mặt + ảnh body) và trộn lẫn → mặt trôi. Body sheet chỉ được mang thông tin dáng người và trang phục.
-    - **Quy trình khi setup project (Rule 46 & Bài học 60):**
-      1. Xóa logo ảnh mặt → upload → PATCH `media_id` của `<Vlogger>`.
-      2. Lấy ảnh Body trần của user (ví dụ `uploads/nora_body_v3_clean.jpg`) làm nguồn (`source_media_id`), chạy `EDIT_CHARACTER_IMAGE` với prompt mô tả trang phục vừa vặn form-fitting để "mặc đồ" lên body. Tải về, kiểm tra không lộ mặt, giữ đúng dáng ngực/eo/hông/chân, xóa logo SynthID, upload lại lấy UUID sạch và gán trực tiếp làm `media_id` cho entity `<Vlogger> Body`.
-      3. **Duyệt Body đã mặc đồ**: Xuất ảnh `<Vlogger> Body` sạch logo cho user duyệt trước khi gen video.
-      4. Trong `clips.json` / scene: mọi clip có `<Vlogger>` chỉ gắn **2 ref nhân vật** `["<Vlogger>", "<Vlogger> Body", ...]`. **TUYỆT ĐỐI KHÔNG tạo entity Outfit riêng và KHÔNG gửi ảnh Body trần/gym vào video** (Rule 46 & 47).
-      5. `common.identity` nêu rõ vai trò từng ảnh: *"her face and hair from the Nora face sheet, and her build and clothing from the Nora Body sheet."*
-    - **LUẬT CỨNG cho shot POV (`pov`, `pov_hand`, `wide`): KHÔNG gắn `<Vlogger>`, `<Vlogger> Body` vào `refs`/`character_names`.** Bằng chứng: H2 hỏng 3 lần liên tiếp theo cùng một kiểu. Prompt nói Nora ở sau camera, nhưng ảnh ref chứa mặt Nora. Model ưu tiên ảnh hơn chữ nên vẽ Nora vào khung. Vì prompt POV không có khối identity/outfit, model tự chọn áo parka sẫm, rồi diễn giải "holding it firmly" thành cầm điện thoại thấy rõ màn hình. POV chỉ gắn ref của thứ cần thấy trong khung (động vật, đồ vật, người địa phương). Với `pov_hand`, tả tay áo bằng chữ trong lock (*"her bare empty hand… coming out of a cream suede sleeve with a thick white fox-fur cuff"*).
-    - **Outfit lock trong `common.identity`:** Cập nhật `common.identity` trong `clips.json` để mô tả chi tiết màu sắc, chất liệu, phụ kiện của trang phục. Phải nêu rõ "NOT dark, NOT brown, NOT a parka" để ngăn model suy diễn.
-    - **Outfit lock trong `video_prompt`:** Thêm `OUTFIT LOCK (CRITICAL)` vào mỗi `video_prompt` của cảnh có vlogger, nêu rõ màu chủ đạo (ví dụ: "WHITE/CREAM reindeer suede dress, NOT dark/brown coat").
-    - **Lưu ý mannequin:** KHÔNG gen outfit trên mannequin (phom người thon thẳng, không có tay chân thật → các góc mâu thuẫn, mất tay áo/legging; Neanderthal ep 2 v1/v2 hỏng). Trang phục luôn EDIT trực tiếp lên Body sheet của user (Rule 46 & Bài học 60).
-    - **[LEGACY — chỉ project Ice Age cũ] Lệnh crop Nora Outfit ref** (project mới dùng bài học 60):
-      ```bash
-      ffmpeg -y -i "output/<slug>/refs/nora_clean.jpg" \
-        -vf "crop=iw*2/3:ih:iw/3:0" \
-        "output/<slug>/refs/nora_outfit_crop.jpg"
-      # Kết quả: panel 3/4 + full-body từ nora_clean.jpg, không có face close-up
-      # Upload rồi dùng làm media_id của entity "Nora Outfit"
-      ```
+34. → chuyển sang [`vlog-archive.md`](vlog-archive.md) (bộ ref vlogger Ice Age, legacy). Ý chung vẫn áp cho phim: `character_names` phải là TÊN entity, không phải UUID; lưu UUID thì server rơi vào nhánh dự phòng và chỉ gửi 1 ref.
 
-    **[ICE AGE PROJECT — LEGACY, project mới theo bài học 60] Nora — bộ 3 ref đã khóa:**
-    - `Nora` ← `uploads/nora_main.jpg` (sheet mặt 4 góc, đã xóa logo → `refs/nora_main_clean.jpg`). Đây là ảnh nhân vật chính thức; KHÔNG dùng `nora_clean.jpg` làm ảnh mặt nữa.
-    - `Nora Body` ← `refs/nora_body_v3_clean.jpg` (EDIT_CHARACTER_IMAGE từ nora_main + `uploads/nora_base_body_prompt.json` v3: khung cắt ngang vai, áo tank + quần bike ôm sát để thấy eo nhỏ, chân thon, ngực đầy; không có mặt).
-    - `Nora Outfit` ← `refs/nora_outfit_crop.jpg` (crop từ `nora_clean.jpg`).
-    - `refs` của mọi clip có Nora: `["Nora", "Nora Body", "Nora Outfit", ...]`.
-    - **common.identity lock (dùng trong tất cả cảnh Nora xuất hiện):**
-      ```
-      Nora looks exactly like her three reference images: her face from the Nora face sheet
-      (honey-blonde high ponytail with curtain bangs, grey-green eyes), her tall curvy hourglass build
-      from the Nora Body sheet, and her clothing from the Nora Outfit sheet.
-      OUTFIT LOCK (CRITICAL -- match the Nora Outfit reference image exactly):
-      she wears a fitted WHITE/CREAM reindeer suede jacket-dress (mid-thigh length),
-      deep plunging V neckline laced with thin leather ties and ivory beads along the edges,
-      large white arctic-fox fur collar/hood framing the neckline,
-      long sleeves with thick white fur cuffs,
-      wide tan leather belt at waist sewn with rows of drilled ivory/bone teeth,
-      the body of the dress is CREAM/OFF-WHITE suede -- NOT dark, NOT brown, NOT a parka.
-      Light beige-white hide leggings (NOT dark/black).
-      Knee-high suede cream boots with white fur cuff trim at the top.
-      Small white fur mittens on a braided cord hanging at her sides.
-      Every scene featuring Nora must show this exact costume.
-      ```
-    - **Inline OUTFIT LOCK cho video_prompt (thêm sau "No one else in the shot."):**
-      ```
-      OUTFIT LOCK (CRITICAL -- match Nora Outfit reference exactly):
-      Nora wears a fitted WHITE/CREAM reindeer suede jacket-dress (mid-thigh length),
-      deep V neckline laced with leather ties and ivory beads, large white arctic-fox fur collar,
-      long sleeves with thick white fur cuffs, wide tan leather belt with bone teeth at waist,
-      light beige-white hide leggings (NOT dark/black leggings),
-      knee-high cream suede boots with white fur cuff trim,
-      small white fur mittens on braided cord.
-      This outfit is WHITE/CREAM throughout -- NOT a dark coat, NOT a brown parka, NOT modern clothing.
-      ```
+35. → chuyển sang [`vlog-archive.md`](vlog-archive.md) (rung khung hình khi vlogger tự cầm máy chạy).
 
-35. **CHẠY MÀ KHUNG HÌNH KHÔNG RUNG (bài học H1 Ice Age 16,000 BC bản v4 — người chạy hết sức nhưng mặt Nora và đường chân trời đứng yên như quay bằng gimbal):**
-    - **Root-cause:** prompt chỉ ghi chung chung "the view bounces vertically with each footfall" một lần ở phần style. Model video mặc định ổn định hình (stabilize), nên một câu trừu tượng như vậy bị lờ đi. Chỉ chân và tay chuyển động, còn khung hình thì không.
-    - **Fix: tả hiệu ứng rung NHÌN THẤY ĐƯỢC trên khung hình, có biên độ cụ thể, và nhắc lại trong TỪNG đoạn thời gian:**
-      - Style `run` (bản đã sửa theo bài 36): *"Raw unstabilized footage: because the lens is in Nora's own outstretched right hand, every stride she takes jolts the whole frame — her face jumps up and down by about a tenth of the frame height and the horizon behind her tilts a few degrees left and right, with a brief motion blur on each footfall, while her face always stays in the frame."*
-      - Mỗi segment `0-3s / 3-6s / 6-8s` của shot chạy phải có một cụm rung riêng, **gắn vào tay vlogger**, ví dụ *"her outstretched arm jolting the frame hard on every stride"*, *"the horizon swinging left and right with each footfall"*.
-      - Không dùng các từ làm model ổn định hình: `smooth`, `steady`, `stable`, `cinematic tracking`.
-    - **Mức rung theo hành động** (rung phải khớp nhịp chân): đi bộ → nảy nhẹ, chân trời nghiêng ≤2°. Chạy bộ → mặt nhảy ~5% chiều cao khung. Chạy thục mạng hoặc vấp → mặt nhảy ~10%, chân trời nghiêng 3–5°, nhòe chuyển động mỗi bước. Trượt, ngã → khung xoay mạnh. Với shot selfie, mặt vlogger luôn nằm trong khung; không tả "khung trôi khỏi mặt rồi giật về" (xem bài 36).
-    - **Review:** khi xem contact sheet, so vị trí mặt và đường chân trời giữa các khung liền nhau. Nếu gần như không đổi trong lúc nhân vật đang chạy thì trừ điểm Motion Quality và sửa prompt theo mẫu trên.
+36. → chuyển sang [`vlog-archive.md`](vlog-archive.md) (tả rung như camera độc lập làm mất góc selfie).
 
-36. **TẢ RUNG NHƯ MỘT CAMERA ĐỘC LẬP LÀM MẤT GÓC SELFIE (bài học H1 Ice Age v5 — v4 giữ selfie đủ 8 giây, v5 thành người ngoài chạy giật lùi quay theo, cả hai tay Nora đều đánh):**
-    - **Root-cause:** thay đổi duy nhất giữa v4 và v5 là câu rung *"the framing drifts off her face and snaps back"* cùng cụm *"the framing lurching and snapping back"* trong từng segment. Câu này mô tả khung hình có chuyển động riêng, tách khỏi cơ thể Nora, nên model hiểu là có một người quay riêng và dựng thành tracking shot. (Mới có một mẫu so sánh, nhưng đây là thay đổi duy nhất.)
-    - **Fix:** mọi mô tả rung trong shot selfie/run phải nêu **nguyên nhân là tay của chính vlogger**: *"because the lens is in Nora's own outstretched right hand, every stride she takes jolts the whole frame … while her face always stays in the frame"*. Segment dùng *"her outstretched arm jolting the frame"*, không dùng "the framing lurches / drifts / snaps back".
-    - **Kiểm tra trước khi gen:** grep prompt shot `run`/`selfie`; không được có `framing (drifts|lurch|snaps)`.
+37. → chuyển sang [`vlog-archive.md`](vlog-archive.md) (chủ ngữ trong shot POV của vlogger).
 
-37. **SHOT POV TẢ HÀNH ĐỘNG CỦA NGƯỜI QUAY → MODEL VẼ NGƯỜI ĐÓ TỪ BÊN NGOÀI (bài học H2 Ice Age v5 — cuối clip thấy một người mặc đồ sẫm lăn xuống dốc ở góc người thứ ba):**
-    - **Root-cause:** segment ghi *"the camera pitches down sharply as Nora slides over the lip"*. "Nora slides" là hành động cơ thể có chủ ngữ là người, nên model dựng hình người đó trượt. Prompt POV không gắn ref Nora, nên model tự bịa ra một người mặc đồ sẫm.
-    - **Fix:** trong shot `pov`/`wide`, chủ ngữ chỉ được là **góc nhìn hoặc khung hình** ("the view tips forward and drops over the lip, sliding fast down the snowy slope, snow spraying across the frame"), không bao giờ là "Nora …". Riêng `pov_hand` được tả bàn tay ("Nora's bare hand lifts…") vì tay có trong khung.
-    - **Không dùng phủ định để chặn người** ("no person is seen", "no face, no body"): phủ định vẫn gọi tên đối tượng (cùng cơ chế với bài 33). Viết câu khẳng định: *"only snow, sky and the slope fill the frame"*, *"only the world in front of her fills the frame"*.
-    - Đã sửa cùng lỗi ở S30 (cũng "Nora slides over the lip") và S49 ("whips back down toward Nora" trong shot wide → "toward the firelit camp").
-    - **Kiểm tra trước khi gen:** với clip `pov`/`wide`, grep segment; không được có `\bNora\b` ngoài "Nora says".
+38. → chuyển sang [`vlog-archive.md`](vlog-archive.md) (POV của vlogger bị người lạ chiếm khung vì `over the shoulder`).
 
-38. **SHOT POV BỊ NGƯỜI LẠ CHIẾM KHUNG — "OVER THE SHOULDER" VÀ "FROM BEHIND THE CAMERA" (bài học H2 Ice Age v6 — 2.5 giây đầu quay qua vai một phụ nữ lạ tóc nâu tết, áo parka sẫm, không phải Nora):**
-    - **Root-cause:** trường `shot` ghi *"first looking back over the shoulder"*. Với model video, "over the shoulder" là thuật ngữ góc máy chuẩn: quay qua vai một người đang đứng trong khung. Model dựng đúng nghĩa đen. Vì cảnh POV không gắn ref vlogger, model bịa ra một người lạ. Thêm nữa, lời thoại gắn dạng *"Nora says from behind the camera"* ngầm báo có một người quay đứng sau máy, càng kéo model vẽ người. Đoạn cuối *"sliding fast down the slope"* là hành động của cơ thể, nên vẫn ra một người lăn.
-    - **Fix:**
-      - Không dùng thuật ngữ góc máy có người trong đó (`over the shoulder`, `OTS`, `two-shot`, `behind her`) cho shot POV. Viết theo chuyển động của góc nhìn: *"the view swings round to face backward toward the mammoth, then swings forward to the riverbank edge"*.
-      - Lời thoại POV/wide gắn dạng **`Nora's off-screen voice says, …:`**, không dùng "from behind the camera".
-      - Rơi hoặc trượt trong POV thì tả mặt đất lao về phía ống kính: *"the view tips forward over the lip and the snowy slope rushes up toward the lens, snow spraying across the frame until it turns white"*. Không dùng "sliding", "tumbling", "falling" (động từ của cơ thể).
-    - **Kiểm tra trước khi gen:** clip `pov`/`wide` không được có `over the shoulder|from behind the camera|\b(sliding|tumbling|falling)\b` trong `shot` và segment.
-    - **Trạng thái:** fix đã áp vào `clips.json` nhưng chưa gen kiểm chứng (hết credit ngày 2026-10-02). Gen xong phải ghi kết quả vào đây.
+39. → chuyển sang [`vlog-archive.md`](vlog-archive.md) (selfie nhảy/tiếp đất làm buông máy).
 
-39. **NHẢY HOẶC TIẾP ĐẤT TRONG SHOT SELFIE DỄ BỊ BUÔNG MÁY → CHUYỂN GÓC THỨ BA (bài học H2 Ice Age 16,000 BC bản v7):**
-    - **Root-cause:** Khi mô tả nhân vật nhảy hoặc trượt qua gờ dốc ("Nora reaches the edge and leaps, sliding feet-first..."), model video AI (Omni Flash / Veo) ưu tiên mô tả hành động cơ thể tiếp đất tự nhiên (người nhảy phải vung hai tay giữ thăng bằng), dẫn đến việc model "buông điện thoại", lùi camera ra ngoài thành góc người thứ 3 (third-person spectator wide shot) hoặc vẽ Nora chạy ra xa máy.
-    - **Fix:**
-      - **Khóa cứng cánh tay và máy quay (Permanent Arm & Camera Lock):** Trong shot selfie có động tác nhảy/rơi/trượt, bắt buộc tả rõ cánh tay vlogger luôn duỗi thẳng và nắm chặt máy hướng về mặt mình: *"Nora plunges downward over the icy lip, her right arm remaining permanently extended gripping the camera tightly aimed directly back at her screaming face; she NEVER drops, releases, or lets go of the camera, and the view NEVER switches to third-person or spectator angle."*
-      - **Tả chuyển động khung hình và tuyết thay vì tả chuyển động toàn thân:** Khung hình rung giật dọc theo quán tính cú rơi (`view jerks violently downward with the sudden drop`), tuyết bắn mù mịt xung quanh bờ vực, nhưng khuôn mặt vlogger luôn neo chặt ở trung tâm khung hình selfie.
-    - **Kiểm tra trước khi gen:** Trong shot selfie có hành động nhảy/rơi/trượt (`leap`, `slide`, `jump`, `fall`): Bắt buộc phải có mệnh đề khẳng định: `her [right/left] arm remains extended pointing the camera at her face, NEVER drops or lets go of the camera, view never switches to third-person`.
-    - **Bằng chứng thực nghiệm:** H2 bản v8 (media `665ccebc-ec01-406a-88cd-55aaefc9643b`) giữ góc selfie 100% từ 0s đến 6s, Nora vừa trượt dốc tuyết vừa la hét trực tiếp vào ống kính, cánh tay vươn dài giữ chắc máy, hoàn toàn không chuyển góc thứ 3.
+40. → chuyển sang [`vlog-archive.md`](vlog-archive.md) (body drift do ma-nơ-canh, thứ tự ref vlogger — legacy).
 
-40. **BODY DRIFT KHI DÙNG VÁY MANNEQUIN VÀ THỨ TỰ TRUYỀN REF TRONG R2V INGREDIENTS (bài học H1/H2 Ice Age 16,000 BC bản v7):**
-    - **Root-cause:**
-      1. Ảnh Outfit tạo trên manocanh (mannequin display) có phom người thon gọn, thẳng đuột tiêu chuẩn. Khi đưa vào R2V ingredients cùng với ảnh Body đồng hồ cát, model video AI có xu hướng bị phom dáng mảnh khảnh của manocanh làm lấn át (body drift), khiến nhân vật trong video bị phẳng ngực và mất đường cong eo-hông dù prompt có ghi "hourglass build".
-      2. Thứ tự ref gửi lên server: Nếu entity Outfit được gửi trước entity Body, model sẽ dựng phom áo trước khi gán tỉ lệ cơ thể.
-    - **Fix (từ 05/10/2026 thay bằng Rule 46 & bài học 60: outfit EDIT trực tiếp lên Body, <Vlogger> Body chính là Body đã mặc trang phục, video chỉ nhận `["<Vlogger>", "<Vlogger> Body"]` → không còn mannequin và không có entity Outfit riêng lẻ; các ý dưới chỉ là tài liệu tham khảo cho project cũ):**
-      - **Bảo toàn thứ tự truyền Ref theo chuỗi nhận diện:** Server (`agent/sdk/services/operations.py`) bảo toàn thứ tự entities trong `character_names`: `[Face] -> [Body]` (ví dụ: `["Nora", "Nora Body"]`). Model cố định nhận diện khuôn mặt trước, sau đó áp vóc dáng và trang phục từ Body sheet.
-      - **Manocanh không đầu (Headless Mannequin):** Ảnh trang phục manocanh BẮT BUỘC là manocanh không đầu trên nền studio trung tính, chụp 3 góc (chính diện, 3/4, sau lưng); tuyệt đối không có tóc giả hay mặt người giả để tránh xung đột nhận diện khuôn mặt.
-      - **Khóa tương phản giải phẫu cơ thể (Negative Contrast Constraints) trong Prompt:** Trong `common.identity` và `video_prompt`, phải có cụm từ tương phản đối kháng mạnh mẽ ép model tuân thủ ảnh Body: *"BODY LOCK (CRITICAL): Nora has a voluptuous hourglass figure with a large full heavy natural bust, tiny narrow waist, and wide curvaceous hips matching Nora Body reference; she is NOT skinny, NOT slender, NOT petite, NOT flat-chested, and her deep neckline proudly showcases her cleavage."*
-    - **Bằng chứng thực nghiệm:** H1 (media `81b3bf5f`) và H2 (media `665ccebc`) bản v8 thể hiện chuẩn xác vóc dáng đồng hồ cát nóng bỏng với vòng 1 đầy đặn và váy slip dress lụa trắng xẻ ngực sâu trùng khớp hoàn toàn với ảnh `thumbnail_v2_2k_clean.jpg` và `nora_body_v3_clean.jpg`.
-
-41. **LOCK BODY, TÔN DÁNG VÒNG 1 (PUSH-UP CLEAVAGE), CHÂN DÀI SIÊU MẪU & QUY TẮC VIẾT PROMPT (bài học H1/H2 Ice Age 16,000 BC bản v9):**
-    - **Hiện tượng & Root-causes khiến vòng 1 trông nhỏ và chân bị ngắn trong video:**
-      1. *Ảnh Body Ref bị nén thể thao:* Người mẫu trong ảnh Body thường mặc áo tank top thể thao bó sát (compression tank), khiến mô ngực bị nén phẳng chặt vào lồng ngực (cỡ C-cup thể thao tự nhiên) và tỉ lệ thân/chân 1:1, không có gọng đẩy ngực (push-up) hay khe ngực sâu như trong ảnh thumbnail.
-      2. *Động tác chạy mở rộng lồng ngực:* Khi vlogger chạy thục mạng một tay vươn cầm máy và một tay vung ra sau, lồng ngực mở rộng kéo dạt hai bầu ngực sang hai bên nách, không thể chụm lại tạo khe ngực sâu như lúc đứng yên khoanh tay (trong ảnh thumbnail).
-      3. *Hiệu ứng co ngắn phối cảnh góc rộng (Foreshortening) của ống kính 0.5x:* Khi cầm máy ngang mặt chúc xuống, phần đầu/mặt ở gần ống kính nhất sẽ bị phóng to (magnified), trong khi phần hông/đùi/chân ở xa trục camera sẽ bị hút nhỏ và co ngắn lại (foreshortening). Người chạy chúi thân trên về phía trước càng làm chân bị lùi sâu vào hậu cảnh.
-      4. *Vị trí khối BODY LOCK bị chôn vùi cuối prompt (Attention Decay):* Trong prompt dài 5.000–6.000 ký tự, nếu để khối BODY LOCK ở vị trí thứ 8 sau 3.500 ký tự (sau style, setting, timed segments, physics...), model AI bị phân tán sự chú ý và ưu tiên mô phỏng chuyển động trước khi áp hình thể nhân vật.
-    - **Bộ giải pháp chuẩn khi viết Prompt (BẮT BUỘC ÁP DỤNG MỌI CẢNH):**
-      - **1. Kiến trúc Prompt đưa Body Lock lên SỚM (Early Conditioning):**
-        Đưa khối `Identity & Body Lock` lên vị trí **ngay sau `Shot:`**, TRƯỚC các phân đoạn hành động `0-3s`, `3-6s`. Cấu trúc chuẩn: `[Style] -> [Setting & Light] -> [Shot] -> [Identity & Body Lock (Face + Body + Outfit)] -> [Timed Segments] -> [Background] -> [Physics] -> [Lock] -> [General] -> [Audio]`. Model AI sẽ định hình lưới giải phẫu và trang phục trước khi render động tác.
-      - **2. Cụm từ khóa đấm lực vòng 1 (Push-up Cleavage Punch):**
-        TUYỆT ĐỐI CẤM các từ gây xệ hoặc phẳng ngực (`low-hanging bust`, `natural bust compression`). BẮT BUỘC dùng cụm khẳng định đối kháng cực mạnh:
-        *"BODY LOCK (CRITICAL): [Character] has an exceptionally large, full, voluminous heavy bust pushed up with prominent deep cleavage valley spilling out of the plunging V-neckline (dramatic push-up cleavage effect, huge voluptuous cleavage), a dramatically tiny narrow cinched waist, and wide curvaceous hips; she is distinctly voluptuous, curvy, and busty -- NOT flat-chested, NOT small-busted, NOT skinny, NOT slender."*
-      - **3. Cụm từ khóa chân dài & chiều cao siêu mẫu (Statuesque Legs Punch):**
-        CẤM dùng "thick thighs" đơn độc làm chân trông ngắn và mập. Bổ sung thông số chuẩn:
-        *"STATURE & LEGS: [Character] is a tall, statuesque woman (178 cm / 5'10" tall) with exceptionally long, slender model legs and high hip placement, an elongated tall athletic silhouette -- NOT short, NOT stubby, NOT stocky."*
-      - **4. Quang học góc máy tôn dáng (Optical Angle — Low-Angle Chest Level):**
-        Trong `style.run` và `style.selfie`, điều chỉnh vị trí đặt máy:
-        *"The lens sits at the end of [Character]'s outstretched right arm, held at chest/mid-torso level angled slightly upward looking back at [Character]; this dynamic angle captures her face, her plunging low-cut cleavage, tiny waist, and long slender legs, emphasizing her tall statuesque height."*
-        Góc máy từ ngực/bụng hất nhẹ lên loại bỏ hiện tượng to đầu - ngắn chân, khoe trọn khe ngực và kéo dài đôi chân.
-      - **5. Nhúng đặc điểm thể hình trực tiếp vào chuyển động (Action-Segment Reinforcement):**
-        Trong từng phân đoạn `0-3s`, `3-6s`, lặp lại trực tiếp:
-        *"...her tall statuesque frame and long slender legs pumping powerfully through the snow; her exceptionally large, voluptuous full bust bounces with dramatic push-up cleavage prominently spilling out of the deep plunging neckline of her snug white silk slip dress; her tiny cinched waist and wide curvy hips accentuated..."*
-    - **Bằng chứng thực nghiệm:** H1 (`2f001786`) và H2 (`287f5bf5`) bản v9: góc máy hất nhẹ lên khoe trọn đôi chân dài miên man đang sải bước trong tuyết, khe ngực sâu push-up căng đầy bốc lửa trong chiếc váy lụa trắng xẻ sâu, điểm số AI Review Scorecard đạt 95.5 và 97.0 / 100.
+41. → chuyển sang [`vlog-archive.md`](vlog-archive.md) (BODY LOCK tôn vòng 1 / chân dài cho vlogger — trái memory 2026-10-14 "Body lock = normal figure").
 
 42. **BỘ TỨ NGUYÊN LÝ VẬT LÝ SINH TỒN & ĐIỂM MÙ QUANG HỌC POV VLOG (bài học H2 Ice Age 16,000 BC bản v10):**
+    - *(Phạm vi: mục 1, 2, 4 (động lượng, trọng tải trên sườn dốc, biến dạng tuyết) áp cho phim; mục 3 đã chuyển sang [`vlog-archive.md`](vlog-archive.md); mục 5 (chạy linter sau khi viết prompt) áp cho mọi dự án, riêng ý "đặt BODY LOCK sớm sau `Shot:`" là khung văn xuôi cũ của vlog.)*
     
     #### 1. Nguyên lý Động lượng & Quán tính cơ học ($p = m \cdot v$)
     - **Lỗi AI thường gặp ("Nhìn giả như AI"):**
@@ -310,17 +177,7 @@ Rút ra từ dự án `output/atlantis-9600bc/` (2026-09-27). Khi mâu thuẫn v
       - *Voi ma mút (6.000 kg — gấp hơn 100 lần):* Khối lượng quá khủng khiếp khiến nó không thể lao xuống sườn dốc băng tuyết trơn trượt vì sẽ gây sạt lở tuyết, gãy chân hoặc lăn đè bẹp chính nó!
       - ➔ **Chính định luật vật lý về trọng tải đã giải thích tại sao Nora sống sót và tại sao con voi ma mút bắt buộc phải phanh khựng lại trên đỉnh mép dốc!**
 
-    #### 3. Nguyên lý Động học Camera & Điểm mù Quang học (Optical Viewpoint)
-    - **Hiện tượng "Điện thoại ma" (Ghost Phone) dưới góc nhìn vật lý AI:**
-      - Khi trong prompt xuất hiện từ `phone`, `smartphone`, `screen`, `device`, `selfie stick` (ngay cả trong câu cấm *"she never drops the phone"*), model AI hiểu rằng có một vật thể vật lý 3D mang tên "chiếc điện thoại" cần xuất hiện trong khung hình. Thế là nó vẽ chiếc iPhone trên tay Nora và tự động đặt một camera thứ ba lùi ra xa để quay cảnh đó!
-    - **Vật lý quang học chân thực của POV Vlog:**
-      - Bản thân người xem đang nhìn **XUYÊN QUA ỐNG KÍNH MÁY QUAY**.
-      - Cánh tay phải giơ ra giữ ống kính, nghĩa là **thân máy và bàn tay cầm máy nằm ở PHÍA SAU MẶT PHẲNG TIÊU CỰ (Behind the focal plane / Off-screen)**, quang học tự nhiên không thể nào chụp được chính cái máy đang quay nó!
-      - **Đặc tả đúng kỹ thuật:**
-        `Handheld front-lens vlog footage, ultra-wide 0.5x lens, natural wide-angle handheld perspective. The lens sits at the end of [Character]'s outstretched right arm, held at chest level angled slightly upward; the camera lens itself and her right gripping hand are completely outside the visible frame and never seen; her free left hand is completely empty and flails naturally for balance.`
-      - **TUYỆT ĐỐI CẤM 100% các từ:** `phone`, `smartphone`, `screen`, `device`, `selfie stick` trong toàn bộ prompt.
-    - **Động học chấn động (Kinematic Shockwave):**
-      - Khi thân người đập xuống tuyết và trượt dốc, cánh tay có khớp vai và cơ bắp chịu chấn động gián tiếp: khung hình phải rung giật cực mạnh chúc xuống mặt tuyết (`rotational jolt & downward shockwave`), tuyết bột bắn tung tóe dính vào mặt kính thấu kính (`powder snow coats the lens glass`) làm mờ nhòe tự nhiên (whiteout transition).
+    #### 3. → chuyển sang [`vlog-archive.md`](vlog-archive.md) (điểm mù quang học POV vlog & "điện thoại ma").
 
     #### 4. Nguyên lý Biến dạng Vật liệu & Triệt tiêu Động năng (Energy Dissipation)
     - **Tuyết Kỷ Băng Hà không phải là mặt sàn bê tông cứng:**
@@ -335,68 +192,10 @@ Rút ra từ dự án `output/atlantis-9600bc/` (2026-09-27). Khi mâu thuẫn v
       3. Kiểm tra vị trí `BODY LOCK` (phải đặt SỚM ngay sau `Shot:` trước `0-3s`).
     - **Bằng chứng thực nghiệm:** H2 Ice Age 16,000 BC bản v10 loại bỏ 100% từ "phone", camera giữ góc POV selfie hoàn hảo, tuyết phủ mặt kính chuyển cảnh mượt mà, không còn bất kỳ chiếc điện thoại ma nào xuất hiện trong khung hình.
 
-43. **LỖI "VẬT THỂ HÓA MÁY ẢNH" & XUNG ĐỘT GÓC NHÌN NGƯỜI THỨ BA (Camera Prop Glitch & Third-Person POV Conflict — Bài học Scene 04 Ice Age 16,000 BC):**
-    
-    #### 1. Hiện tượng lỗi thực tế
-    - Trong Scene 04 của Ice Age 16,000 BC, ở giây thứ 1, AI vẽ Nora đứng quay lưng lại, trên tay cầm một chiếc **máy ảnh compact kỹ thuật số có màn hình LCD** chĩa vào thợ săn Torak. Đến giây thứ 5 khi cô xoay tay lại để selfie, chiếc máy ảnh biến dạng thành một **ống kính máy ảnh rời (DSLR Lens)** to đùng trên tay Nora giơ ra trước mặt khán giả.
-    
-    #### 2. Root Cause (Nguyên nhân gốc rễ)
-    - **Xung đột góc nhìn chết người (Third-Person vs POV):**
-      - Prompt mô tả: *"Handheld vlog footage that starts from Nora's raised hand just behind her head and then turns around to face her... Shot: From just behind Nora's head, then turning around to a selfie."*
-      - Khi camera đặt ở phía sau đầu / sau lưng vlogger nhìn tới (`from just behind Nora's head`), đây là **GÓC NHÌN NGƯỜI THỨ BA (Third-person spectator)**. Khán giả đứng ngoài nhìn thấy toàn bộ lưng và cánh tay của Nora.
-      - AI model lập luận logic: *"Người xem đang đứng sau lưng quay cảnh Nora và Torak, vậy vật thể mà tay Nora đang giơ lên là cái gì?"* ➔ AI bắt buộc phải vật thể hóa thành một **chiếc máy ảnh kỹ thuật số (Compact Camera / LCD screen)** trong tay nhân vật!
-    - **Lỗi ngữ nghĩa từ "Camera" như một Đạo cụ (Prop):**
-      - Mặc dù đã cấm `phone/smartphone`, prompt lại dùng từ `camera` tới 5 lần như tân ngữ của hành động: *"starts from Nora's raised hand... Nora slowly brings the camera around... she never lets go of the camera..."*.
-      - Trong góc nhìn người thứ ba, AI hiểu "the camera" là một **đạo cụ vật lý (prop)** cầm tay chứ không phải ống kính của chính người xem. Khi Nora xoay tay lại, AI tiếp tục giữ góc nhìn người xem ở ngoài và vẽ một **ống kính máy ảnh rời (DSLR Lens)** trong tay Nora!
-    - **AI Video không thể tự "chui vào mắt" vlogger:**
-      - AI diffusion model không thể chuyển đổi mượt mà giữa camera thứ 3 (sau lưng) và camera thứ 1 (POV cầm tay) trong cùng một chuỗi khung hình liên tục mà không sinh ra thiết bị quay thứ hai.
+43. → chuyển sang [`vlog-archive.md`](vlog-archive.md) (vật thể hóa máy ảnh khi quay từ sau đầu vlogger rồi xoay ra selfie). Ý chung vẫn áp cho phim: chữ `camera` làm tân ngữ của hành động (`brings the camera around`) bị hiểu là đạo cụ cầm tay; chỉ tả máy trong khối `camera`, không cho nhân vật cầm hay xoay nó.
 
-    #### 3. Quy tắc & Giải pháp Khắc phục Triệt để
-    - **1. TUYỆT ĐỐI CẤM các shot quay từ sau đầu / sau lưng vlogger rồi xoay ra trước mặt:**
-      - CẤM: `from just behind her head`, `from behind her back`, `over her shoulder from behind then turning`.
-    - **2. Kỹ thuật Đơn góc nhìn thuần khiết (Single-Perspective Vlog Purity — THAY THẾ Whip Pan 180°):**
-      - *Lưu ý quan trọng (Đã lỗi thời):* Cú lia máy Whip Pan 180° trong 1 clip trước đây từng được thử nghiệm để loại bỏ đạo cụ máy ảnh ma, nhưng đã bị bãi bỏ vì gây cảm giác phi lý (quay cam trước lật cam sau thì mù màn hình, camera bay như có người thứ ba; xem chi tiết Bài học 44).
-      - **Giải pháp chuẩn:** Khi vlogger muốn tương tác với đối tượng phía sau hoặc cảnh vật:
-        - **Bản đề xuất 100% Selfie Tự Nhiên (Over-the-Shoulder Selfie Interaction):** Toàn bộ shot 8s–10s giữ 100% cam trước Selfie 0.5x. Vlogger ở 1/3 tiền cảnh, đối tượng ở 2/3 hậu cảnh. Tương tác qua ánh mắt và quay đầu, camera luôn cố định vào vlogger, loại bỏ hoàn toàn cảm giác xoay lật giả tạo.
-        - **Hoặc Cặp Shot Kép (Two Separate Shots):** Shot 1 (100% POV Cam sau) nhìn qua mắt vlogger ➔ Cắt cảnh (Cut) sang Shot 2 (100% Selfie Cam trước) vlogger nói chuyện. Không xoay 180° trong cùng 1 clip.
-    - **3. Không bao giờ mô tả nhân vật "cầm/xoay the camera" như một vật thể:**
-      - Thay câu *"she brings the camera around"* bằng *"she pivots her extended arm back toward herself"*.
-      - Điểm nhìn người xem chính là thấu kính (`The viewer looks directly through the camera lens`).
-    - **4. Tự động kiểm tra qua Prompt Self-Linter:**
-      - Linter BẮT BUỘC quét và chặn các cụm từ: `behind (her|his|their) head`, `behind (her|his|their) back`, và cảnh báo hành động cầm nắm `camera` làm đạo cụ.
+44. → chuyển sang [`vlog-archive.md`](vlog-archive.md) (lật camera 180° giữa cam trước và cam sau trong một shot).
 
-44. **LỖI LẬT XOAY CAMERA 180° GIỮA CAM TRƯỚC & CAM SAU TRONG CÙNG MỘT SHOT (The 180° Camera Flip Fallacy & Single-Perspective Vlog Purity — Bài học Scene 04 Ice Age 16,000 BC bản v2):**
-    
-    #### 1. Hiện tượng lỗi thực tế
-    - Dù đã loại bỏ được chiếc máy ảnh/ống kính ma bằng kỹ thuật Whip Pan 180° (Two-Phase POV), nhưng khi xem video thực tế, người xem lập tức cảm thấy **vô lý, giả tạo và phi logic** khi camera đang quay góc nhìn thứ nhất (cam sau nhìn Torak ở 0-3s) rồi đột ngột xoay lật 180° chuyển sang góc selfie (cam trước ở 4-10s) trong cùng một shot 10 giây.
-    
-    #### 2. Root Cause (Nguyên nhân gốc rễ)
-    - **Nghịch lý công thái học điện thoại (Smartphone Ergonomics Fallacy):**
-      - Trong thực tế, khi cầm điện thoại quay vlog:
-        - Nếu bạn đang quay cam sau (quay người khác/cảnh vật), rồi lật ngược điện thoại 180° lại để tự quay mình, thì màn hình điện thoại sẽ quay ra phía trước! Người quay bị hoàn toàn mù màn hình, không thể nhìn thấy khung hình, biểu cảm hay kiểm tra người đứng sau lưng.
-        - Nếu dùng tính năng chuyển cam trên màn hình (flip camera button), ứng dụng luôn tạo ra một cú **CẮT CẢNH (Cut shot)**, chứ không bao giờ lia xoay vật lý 180° trong không gian.
-    - **Nghịch lý động học không gian (Spatial Kinematics & Fake Cameraman Feel):**
-      - Ở 3 giây đầu, điểm nhìn camera nằm ở ngang tầm mắt người quay (cam sau). Đến giây thứ 5, camera bỗng nhiên nằm ở trước mặt vlogger cách 60cm nhìn ngược lại.
-      - Cú xoay này đòi hỏi camera phải tự bay một vòng quỹ đạo bán kính lớn trong không khí, tạo cảm giác như **có một người quay phim thứ ba (cameraman cầm gimbal/flycam)** chạy vòng quanh vlogger, phá hủy hoàn toàn cảm giác "vlogger đơn độc tự cầm máy sinh tồn".
-    - **Gãy mạch thị giác (Visual Continuity Breakdown):**
-      - Scene 03 là góc Selfie cam trước. Scene 05 là góc Selfie cam trước. Việc Scene 04 bị chèn một đoạn cam sau rồi xoay lật làm vỡ nhịp điệu thị giác và tính nhất quán của chuỗi vlog.
-    
-    #### 3. Quy tắc Vàng: Đơn góc nhìn thuần khiết & Selfie qua vai (Single-Perspective Vlog Purity & Over-the-Shoulder Vlog Composition)
-    - **Quy tắc tuyệt đối: 1 SHOT = 1 GÓC NHÌN DUY NHẤT (Single Perspective per Shot):**
-      - Mỗi shot 8s–10s chỉ được chọn MỘT trong hai góc nhìn:
-        - Hoặc là **100% Selfie (Cam trước 0.5x)** từ đầu đến cuối clip.
-        - Hoặc là **100% First-Person POV (Cam sau)** từ đầu đến cuối clip.
-      - **TUYỆT ĐỐI CẤM** xoay lật 180° giữa cam trước và cam sau trong cùng một shot (`whip pan 180-degree ... turning to face`, `pivoting the viewpoint back`).
-    - **Kỹ thuật Vlog Selfie qua vai (Over-the-Shoulder Selfie Interaction):**
-      - Khi vlogger muốn giao tiếp hoặc phản ứng với một nhân vật phụ / sinh vật xuất hiện:
-        1. **Bố cục 1/3 tiền cảnh (Vlogger in Foreground 1/3):** Vlogger cầm máy ở góc selfie 0.5x (bên trái hoặc bên phải), chiếm 1/3 khung hình. Tay cầm máy nằm ngoài điểm mù (`outside the visible frame`).
-        2. **Nhân vật phụ ở 2/3 hậu cảnh (Subject in Background 2/3):** Nhân vật phụ (như Torak, thổ dân, quái thú) xuất hiện ở 2/3 khung hình còn lại, nhìn thấy rõ hành động bước tới, cử chỉ hoặc hiệu lệnh săn bắn ngay phía sau vai vlogger.
-        3. **Tương tác đa chiều bằng ánh mắt & quay đầu (Gaze & Head Turns, NOT Camera Flips):**
-           - Vlogger nói trực tiếp với khán giả qua ống kính: *"Okay, that's Torak. My name for him."*
-           - Vlogger khẽ quay đầu hoặc liếc mắt ra sau kiểm tra đối tượng khi đối tượng hành động (giơ tay dừng, giơ giáo): *"Hand flat, palm down, probably means stay. I stay."*
-           - Vlogger quay lại nhìn thẳng vào camera thể hiện cảm xúc chân thật (lo lắng, cười gượng, thì thầm): *"A stranger walking into a winter camp? I'd spear me too."*
-        ➔ Camera luôn neo cố định vào vlogger, chuyển động chỉ là rung lắc bước chân tự nhiên (`subtle hand shake / footfall bounce`), tạo cảm giác chân thực 100% như vlog YouTube/TikTok đời thực!
-    
 45. **LỖI GÃY MẠCH TƯ THẾ ĐẦU KHI CẮT NỐI HAI SHOT & KỸ THUẬT KHỚP ĐỘNG TÁC (The Inter-Scene Posture Snap & Head-Turn Match Continuity — Bài học Scene 03 -> Scene 04 Ice Age 16,000 BC):**
     
     #### 1. Hiện tượng lỗi thực tế
@@ -415,6 +214,7 @@ Rút ra từ dự án `output/atlantis-9600bc/` (2026-09-27). Khi mâu thuẫn v
       3. **Tác dụng kỳ diệu**: Mối nối giữa Clip A và Clip B trở thành một cú cắt **Match on Action**. Khán giả nhìn thấy động tác quay đầu diễn ra mượt mà và tự nhiên, hoàn toàn triệt tiêu cảm giác giật hình (jump cut) của AI!
 
 46. **LỖI VƯƠN TAY CHẠM ỐNG KÍNH VLOG & TƯƠNG TÁC ĐẠO CỤ TRANG PHỤC (Hand Reaching Camera Lens & Functional Prop Dressing Continuity — Bài học Scene 07 Ice Age 16,000 BC):**
+    - *(Phạm vi: mục 3.1 "Khóa cấm chạm thấu kính" và động tác khoe đồ ngang ngực với camera chỉ áp cho vlog; mục 3.2 "tả hành động chức năng trước" áp cho phim (Rule 45 (2)).)*
     
     #### 1. Hiện tượng lỗi thực tế
     - Trong Scene 07, vlogger Nora trong lúc quay vlog selfie lại đưa cánh tay vươn thẳng tới sát ống kính camera/màn hình làm chắn khung hình và tạo tư thế cầm máy bất thường (đang quay lại đưa tay lên camera/màn hình).
@@ -435,43 +235,7 @@ Rút ra từ dự án `output/atlantis-9600bc/` (2026-09-27). Khi mâu thuẫn v
         - **Cố định phụ kiện:** Sau khi đã xỏ găng/mặc đồ xong, mới mô tả thao tác khóa dây: *"Alva fastens and snugs the soft hide wrist-cord tied around Nora's left wrist so the mitten cannot slip off."*
         - **Phản ứng tương tác tự nhiên:** Vlogger giơ bàn tay đã mặc đồ lên ngang ngực (giữ khoảng cách an toàn với camera) để khoe với người xem: *"Nora lifts her left hand—now wearing the thick fur mitten—up to chest level to display the warm mitten clearly to the camera, flexing her mittened fingers."*
 
-47. **OUTFIT DRIFT, SAI KIỂU TÓC & CÔNG THỨC KHÓA NHẬN DIỆN VỚI ẢNH MANNEQUIN TRONG R2V (Omni Flash / Veo 3 — Bài học Scene 00 H1 Ice Age 16,000 BC bản Test 1-4):**
-    
-    #### 1. Hiện tượng lỗi thực tế qua các vòng Test
-    - **Test 1**: Mô tả sơ sài/thiếu chuẩn xác khiến vlogger biến thành mặc váy ngắn hiện đại (mini dress) lộ đùi trần giữa bão tuyết, kèm theo chiếc máy ảnh DSLR trên gimbal xuất hiện góc phải khung hình.
-    - **Test 2**: Dù đã loại sạch từ khoá camera để hết máy ảnh ma, nhưng do **xoá trắng mô tả trang phục và tóc trong prompt** (chỉ để câu logic trơ trọi `"wearing the exact outfit from reference image"`), kết hợp việc gửi kèm ref `Nora Body` (ảnh mặc đồ gym: áo tank top sát nách và quần đùi đen lộ da thịt trần). Kết quả: Vlogger biến thành người tiền sử cởi trần mặc áo da thú thô màu nâu rách rưới, tóc nâu bù xù xoã tự do, mất sạch kiểu tóc đuôi ngựa vàng và mất đầm trắng may đo!
-    - **Test 3**: Đổi sang dùng ảnh crop nhân vật `nora_outfit_crop_clean.jpg`. Đã khóa được màu trắng và tóc đuôi ngựa, nhưng thiếu mất cổ áo mũ trùm lông cáo tuyết dày bản lớn và đai răng xương đặc trưng của trang phục ma-nơ-canh `nora_outfit_clean.jpg`.
-    - **Test 4 (Chuẩn xác 100%)**: Dùng đúng ảnh ma-nơ-canh 3 góc `nora_outfit_clean.jpg`, loại bỏ hoàn toàn `Nora Body`, và viết khối `IDENTITY & OUTFIT LOCK` neo chính xác từng chi tiết (mũ trùm lông cổ vai to bản, dây đan ngực chéo, thắt lưng nẹp răng xương, bo viền lông cổ tay, tóc đuôi ngựa vàng cột cao có mái bay). ➔ Kết quả: Đạt chuẩn 100% cả tóc lẫn outfit.
-
-    #### 2. Root Cause (Nguyên nhân gốc rễ)
-    1. **Nhiễm da thịt trần từ ảnh Body gym (`Body Latent Contamination`):**
-       - Khi đưa entity `<Vlogger> Body` (vốn mặc đồ tập gym ngắn áo tank top + quần đùi lộ da tay chân) vào cùng danh sách `character_names` với `<Vlogger> Outfit` trong bối cảnh mùa đông/tiền sử, model R2V bị nhiễm latent tay chân trần từ ảnh body. Khi kết hợp với bối cảnh "Ice Age 16,000 BC", AI tự động biến thành áo da thú cộc tay cởi trần kiểu người tiền sử generic!
-    2. **Cái bẫy "Xoá sạch mô tả outfit" (`The Empty Prompt Trap`):**
-       - Diffusion model hoạt động bằng cơ chế liên kết chéo (Cross-Attention) giữa text embeddings và image latents. Nó KHÔNG hiểu câu lệnh trỏ logic thuần tuý: `"wearing the exact outfit from reference image"`.
-       - Nếu trong prompt không có các từ neo thị giác (`honey-blonde hair tied in a high wavy ponytail with curtain bangs`, `cream-white reindeer suede dress`, `fluffy white fur hood and collar`, `criss-cross leather ties`), thì các từ khoá bối cảnh thời kỳ (`Ice Age 16,000 BC mammoth steppe`) sẽ chiếm 100% trọng số attention, ép nhân vật ra kiểu tóc bù xù xoã ngang vai và áo da thú cởi trần nguyên thủy.
-    3. **Hiện tượng loãng trọng số Ma-nơ-canh (`Mannequin Attention Dilution`):**
-       - Ảnh ma-nơ-canh không đầu trên nền trung tính rất tốt để AI học cấu trúc 3D của trang phục, NHƯNG nếu có quá nhiều ref (ví dụ 5 ref gồm cả Body, Location, Creature) hoặc thiếu text anchor, model sẽ bỏ qua ma-nơ-canh vì nó không phải là con người.
-       - Khi tinh gọn ref còn đúng 3 ref cốt lõi `[<Vlogger>, <Vlogger> Outfit, Creature]` và có text anchor mạnh mẽ, model ánh xạ chính xác 100% bộ đầm từ ma-nơ-canh lên thân hình vlogger!
-
-    #### 3. Quy tắc Vàng: Công thức Khóa Nhận diện Tóc & Outfit chuẩn 100%
-    1. **Bộ Reference tối ưu (Tối đa 3 Ref cho cảnh Vlogger — [ĐÃ THAY bởi Bài học 88: tối đa 7 ref]):**
-       - Khóa chuẩn: `[<Vlogger>, <Vlogger> Outfit, <Creature/Asset>]`.
-       - **BẮT BUỘC LOẠI BỎ `<Vlogger> Body`** đối với mọi cảnh nhân vật mặc trang phục mùa đông/may đo dài tay kín đáo. Từ 05/10/2026 (bài học 60): **Body trần/gym** không bao giờ gửi vào video; trang phục nào cũng được mặc lên Body bằng EDIT và chính ảnh đã mặc đó là `<Vlogger> Body` gửi vào video.
-       - **[ĐÃ THAY bởi bài học 60]** Entity `<Vlogger> Outfit` chỉ còn ở project Ice Age cũ. Project mới: ảnh 3 góc đã mặc outfit (EDIT từ Body, xóa watermark) gán thẳng làm `<Vlogger> Body`, không có entity Outfit.
-    2. **Khối cấu trúc Prompt `IDENTITY & OUTFIT LOCK` bắt buộc (Đưa lên vị trí SỚM ngay sau `Shot:` trước `0-3s`):**
-       ```text
-       IDENTITY & OUTFIT LOCK (CRITICAL -- match reference images exactly):
-       [Character] has [hair color] hair tied in a [exact hairstyle, e.g. high wavy ponytail with curtain bangs framing her face], [eye color] eyes, and fair skin with natural pink flush. Her high blonde ponytail bounces energetically with each running stride.
-       [Character] wears the exact outfit from the [Character] Outfit reference ([outfit_ref_name]): a tailored cream-white reindeer suede dress with a large fluffy white arctic-fox fur hood and collar framing a plunging laced V-neckline, long sleeves with thick white fur cuffs, a wide tan belt sewn with vertical bone teeth at her waist, thick white fur trim at the mid-thigh hem, cream hide leggings, and knee-high boots with white fur cuff trim.
-       This outfit is WHITE/CREAM throughout -- NOT dark, NOT brown, NOT a caveman fur pelt, NOT sleeveless, NOT bare legs, NOT loose unkempt hair, NOT modern clothing.
-       ```
-    3. **Gia cố chi tiết trong từng phân đoạn hành động (Action Sub-clips):**
-       - Phân đoạn `0-3s`: Nhắc lại chuyển động tóc và tay áo (`her blonde high ponytail bouncing with her desperate survival momentum; her cream suede sleeves with thick white fur cuffs pump powerfully in rhythm; her wide tooth-studded belt and fur collar flutter in the freezing wind`).
-       - Phân đoạn `3-6s`: Nhắc lại tà váy và bo lông (`her white fur-trimmed dress and fur cuffs flutter in the freezing wind`).
-    4. **Duy trì không vết tích thiết bị quay (No Ghost Devices):**
-       - Tuân thủ Bài học 40, 42: hoàn toàn không xuất hiện từ `phone`, `smartphone`, `screen`, `device`, `gimbal`, `selfie stick`. Dùng góc nhìn `Handheld front-facing running vlog POV footage, ultra-wide 0.5x view, natural wide-angle perspective`.
-    5. **Bằng chứng thực nghiệm:**
-       - Scene 00 H1 Ice Age 16,000 BC bản Test 4 (`bfb7ba56-a131-45ae-8612-d2c5fa4528c1`) thể hiện chuẩn xác 100% bộ đầm may đo da tuần lộc trắng kem với cổ áo mũ trùm lông cáo tuyết dày to bản, đan dây ngực chéo, đai răng xương, bo lông gấu áo, kiểu tóc đuôi ngựa vàng cột cao có mái bay, động tác chạy nổ tuyết chân thực, không có thiết bị ma.
+47. → chuyển sang [`vlog-archive.md`](vlog-archive.md) (outfit drift với ảnh ma-nơ-canh, entity Outfit riêng — legacy).
 
 48. **ĐỒ VẬT / NGƯỜI TỰ HIỆN RA GIỮA CLIP (Object & Person Pop-in — Bài học Scene 02, 14, 15 Ice Age 16,000 BC Part 2, user review 03/10/2026):**
     - **Hiện tượng:** Scene 02 Torak đột ngột "biến ra" ở cửa lều lúc ~4.5s. Scene 14 hòn đá + kẹp gạc lơ lửng ở frame đầu rồi tay mới xuất hiện chụp lấy; tấm da đựng nước trống rồi nước tự có. Scene 15 Nora tự nhiên cầm một cái cốc thứ hai trong khi Alva vẫn cầm cốc của mình (cuối clip Nora cầm 2 cốc).
@@ -484,6 +248,7 @@ Rút ra từ dự án `output/atlantis-9600bc/` (2026-09-27). Khi mâu thuẫn v
       5. Hành động trong shot POV chỉ giao cho **tay của chính vlogger** hoặc người đang hiện rõ trong khung.
 
 49. **NHÂN VẬT PHỤ MẤP MÁY MIỆNG TRONG SHOT POV THOẠI NGOÀI KHUNG (Off-screen Voice Lip Transfer — Bài học Scene 13 Ice Age 16,000 BC Part 2, user review 03/10/2026):**
+    - *(Phạm vi: cách sửa "Selfie Qua Vai" ở quy tắc 1 chỉ áp cho vlog. Ý chung áp cho phim: giọng luôn bám vào một cái miệng nhìn thấy được, nên người không có thoại phải khóa miệng, còn người có thoại phải hiện mặt ở đúng nhịp mình nói.)*
     - **Hiện tượng:** Scene 13 là POV của Nora, thoại viết `Nora's off-screen voice says`, gương mặt duy nhất trong khung là Alva → Alva mở miệng "nói" suốt clip bằng giọng Laomedeia. Vi phạm luật "chỉ vlogger nói".
     - **Root cause:** Omni Flash chỉ có 1 giọng (Slot 7) và luôn cố gắn khẩu hình vào **một cái miệng nhìn thấy được**. Khi miệng vlogger không có trong khung, nó gắn vào người bản địa duy nhất đang hiện mặt. Câu `Only Nora speaks` không đủ để khóa miệng người kia.
     - **Quy tắc:**
@@ -492,16 +257,10 @@ Rút ra từ dự án `output/atlantis-9600bc/` (2026-09-27). Khi mâu thuẫn v
       3. POV thoại ngoài khung chỉ an toàn khi trong khung **không có mặt người** (tay, đồ vật, phong cảnh) hoặc người bản địa quay lưng / ở rất xa.
     - **Rà soát:** sau khi gen, lọc mọi scene có `off-screen voice` + người bản địa trong `character_names` rồi kiểm tra miệng (Part 2: 13 lỗi rõ; 53, 31 nghi ngờ).
 
-50. **HÀNH ĐỘNG HAI TAY KHI ĐANG CẦM MÁY & ĐƯỜNG ĐI CỦA GÓC NHÌN QUA CỬA (Two-Hand Action While Filming — Bài học Scene 09, 11 Ice Age 16,000 BC Part 2, user review 03/10/2026):**
-    - **Hiện tượng:** Scene 11 Nora vén tấm da cửa bằng **cả hai tay** trong khi góc nhìn đã nằm sẵn bên trong lều nhìn ra — không thể vừa tự quay vừa có máy ở trong trước. Cuối clip `swings her outstretched arm` sinh ra bàn tay vung về phía ống kính. Scene 09 tấm da cửa tự vén lên cứng đờ "do gió" trong khi tóc và cỏ đứng yên.
-    - **Root cause:** Prompt không phân vai hai tay (tay nào giữ góc quay, tay nào làm việc) và không mô tả góc nhìn đi qua cửa thế nào. Vật nặng (tấm da cửa) được giao cho "gió" thay vì cho một bàn tay.
-    - **Quy tắc:**
-      1. Mọi shot selfie ghi rõ: `"her right arm stays extended toward the lens for the entire clip ... Only her left hand is free."` Mọi thao tác (vén cửa, cầm cốc, kéo mũ) tả là `"using only her free left hand"`.
-      2. Đi qua cửa trong selfie: cánh tay giữ máy dẫn trước → `"the viewpoint passes through the doorway first, facing back at Nora, and she follows it inside"`.
-      3. Vật nặng chỉ chuyển động khi có lực: `"It is thick and weighted; it stays completely still unless a hand moves it."` Không dùng "sways in the wind / lifts slightly" cho tấm da cửa.
-      4. Chuyển cảnh swing dùng **cả góc nhìn lia** (`"the whole view whips quickly to the left in a heavy motion blur; no hand comes into the frame"`), không dùng "swings her arm".
+50. → chuyển sang [`vlog-archive.md`](vlog-archive.md) (thao tác hai tay khi vlogger đang tự cầm máy). Ý chung vẫn áp cho phim: vật nặng (tấm da cửa, cánh cửa, rèm) chỉ chuyển động khi có tay tác động, không giao cho "gió" (checklist B dòng 9).
 
 51. **NGÃ KHÔNG CÓ NHÂN QUẢ & GÓC QUAY ĐỨNG YÊN KHI NGÃ (Fall Without Cause — Bài học Scene 01 Ice Age 16,000 BC Part 2, user review 03/10/2026):**
+    - *(Phạm vi: "máy phải chịu hậu quả" và "văng máy khỏi tay" ở quy tắc 2–3 chỉ áp cho vlog cầm tay; quy tắc 1 và "ngã phải có nguyên nhân vật lý" áp cho phim.)*
     - **Hiện tượng:** Clip nối ngay sau cảnh voi rượt nhưng Nora chỉ ngồi phịch xuống tuyết như chơi, không voi, không gấp gáp, khung hình ổn định, mặt luôn ở giữa; ánh sáng đổi từ hoàng hôn vàng sang trời xám; cuối clip cười tươi.
     - **Root cause:** Prompt chọn động tác an toàn "seated glissade" + khóa `viewpoint remains locked on her face` → cú ngã không có lực và không ảnh hưởng gì tới máy. Bỏ ref sinh vật đang rượt (`Woolly Mammoth`) và dùng ref bối cảnh trời xám → mất truy đuổi và lệch ánh sáng so với clip trước.
     - **Quy tắc:**
@@ -563,6 +322,7 @@ Rút ra từ dự án `output/atlantis-9600bc/` (2026-09-27). Khi mâu thuẫn v
     - **Quy tắc:** Dùng `long shadows, low winter sunlight, daylight fading fast` / `dusk` / `moonlight`. Chỉ đưa mặt trời vào khung khi đó là chủ thể của shot (bình minh cuối tập).
 
 60. **BODY ĐÃ MẶC TRANG PHỤC LÀM <VLOGGER> BODY; VIDEO NHẬN MẶT + BODY, KHÔNG CẦN NHẬN OUTFIT RIÊNG (Dressed-Body as Vlogger Body — Neanderthal 51ka, user lock 05/10/2026; thay thế hoàn toàn entity Outfit riêng theo Rule 46 & 47):**
+    - *(Phim: áp cho mọi nhân vật chính có ref: `<Tên>` (mặt) + `<Tên> Body <trạng thái trang phục>` (ví dụ EMBERS `Nora Body Ranch`); chữ "vlogger" ở đây đọc là "nhân vật chính".)*
     - **Chỉ đạo cốt lõi của User (05/10/2026):** Khi tạo ảnh trang phục mặc lên body, nó KHÔNG PHẢI là outfit riêng lẻ nữa. Nó chính là **Body đã mặc trang phục** và đóng vai trò trực tiếp là **`<Vlogger> Body`** duy nhất. Không tạo entity `<Vlogger> Outfit` riêng gây phân mảnh và thừa thãi. Downstream video R2V chỉ nhận: `["<Vlogger>", "<Vlogger> Body", ...]`.
     - **Bằng chứng:** Outfit gen trên mannequin hỏng (v1/v2: giày hiện đại, cụt tay, mất legging, làm phẳng ngực). Khi dùng `EDIT_CHARACTER_IMAGE` từ ảnh Body trần của user (`uploads/nora_body_v3_clean.jpg`) với prompt tôn dáng (ôm sát, nâng ngực nhô cao, eo thon, chân dài) → sinh ra ảnh 3 góc khớp nhau tuyệt đối, chuẩn trang phục cổ đại và giữ nguyên vóc dáng đồng hồ cát.
     - **Quy tắc 1 — tạo ref `<Vlogger> Body`:** Dùng ảnh Body trần nguồn của user làm `source_media_id`, chạy `EDIT_CHARACTER_IMAGE` để "mặc trang phục" lên body: giữ nguyên 3 panel (chính diện, 3/4, sau lưng), tư thế, tỉ lệ giải phẫu (ngực đầy, eo thon, hông nở, chân dài), khung cắt vai không lộ mặt, và nền studio. Sau khi sinh xong: tải về, xóa sạch watermark SynthID bằng `python tools/remove_watermark_from_image.py`, upload lại lấy UUID sạch và gán trực tiếp làm `media_id` cho entity `<Vlogger> Body`.
@@ -570,21 +330,9 @@ Rút ra từ dự án `output/atlantis-9600bc/` (2026-09-27). Khi mâu thuẫn v
     - **Câu identity:** *"Nora looks exactly like her two reference images: her face and hair from the Nora face sheet, and her build and clothing from the Nora Body sheet."* Vẫn giữ `OUTFIT LOCK` + `BODY LOCK` bằng chữ trong prompt (Rule 47).
     - **Cổng duyệt bắt buộc (Rule 46):** Bắt buộc trình ảnh `<Vlogger> Body` sạch logo cho user xem và duyệt phom dáng & trang phục trước khi gửi bất kỳ lệnh sinh video nào.
 
-61. **PHÂN BIỆT RẠCH RÒI SELFIE VLOGGER VS POV ĐI SĂN / HÀNH ĐỘNG CẬN CHIẾN (Bài học Neanderthal 51ka, Scene 20–36, user review 08/10/2026):** *(phần tỷ lệ % góc máy đã bị BỎ — xem Rule 42 (3), user lock 2026-10-12)*
-    - **Hiện tượng & Root Cause:** 
-      1. Hiểu nhầm luật "phone is the camera" và bài học 25/39/50 (cánh tay vươn dài giữ máy) thành việc ép 100% mọi cảnh vlogger phải giơ tay selfie quay mặt mình. Kết quả: vlogger vừa đi săn vừa giơ tay quay mặt mình nói chuyện, biểu cảm đơ cứng, không thể di chuyển tự nhiên, biến cuộc đi săn thành buổi livestream lố bịch, phản sinh tồn.
-      2. Áp dụng máy móc Rule 49 (thoại 18–22 từ) vào lúc áp sát con thú lớn, khiến nhân vật lải nhải khi đang cách bò mộng 3 mét.
-    - **Quy tắc:**
-      1. **Chọn góc máy theo hành động, KHÔNG theo tỷ lệ phần trăm (Rule 42 (3)):**
-         - **First-Person POV (Cam sau):** hành động rình rập, săn bắn, di chuyển, quan sát đồng đội và cảnh quan.
-         - **Front-Camera Selfie & Over-the-Shoulder (Cam trước 0.5x):** lúc an toàn, mở đầu/kết thúc tập, tâm sự với khán giả, phản ứng sốc/hú vía sau khi vượt hiểm nguy; OTS cho cảnh đồng hành cùng người bản địa.
-         - **Ground / Fixed Cam:** camera tựa đá/mặt đất khi cần 2 tay rảnh hoàn toàn (chế tác, nấu nướng, khiêng vác).
-         - **CẤM TUYỆT ĐỐI 3 cảnh selfie liên tiếp; cấm 100% video là selfie; cấm 2 clip liền nhau cùng cỡ cảnh + cùng góc máy.**
-      2. **Khóa Im Lặng Khi Rình Mồi / Cận Chiến (Sonic Isolation — Rule 49 & 50):** 
-         - Khi áp sát mục tiêu, phục kích, hoặc giao chiến sinh tử: BẮT BUỘC dùng First-Person POV và áp dụng **Sonic Isolation** (`Strictly NO spoken dialogue. Her mouth stays firmly closed in dead silence`). 
-         - Âm thanh là Foley cơ học: tiếng thở nén qua mũi, tiếng tim đập, tiếng cành cây gãy, tiếng dã thú thở phì phò. Lời dẫn/suy nghĩ nội tâm nếu có chỉ đưa vào voiceover/subtitles hậu kỳ, miệng nhân vật KHÔNG được mấp máy.
-      3. **Cánh tay khóa máy chỉ áp dụng cho shot Selfie:** Các bài học 25, 39, 50 về cánh tay duỗi thẳng giữ máy chỉ kích hoạt khi shot đó ĐÃ ĐƯỢC CHỌN là góc Selfie. Khi là shot First-Person POV, hai tay vlogger tự do tham gia hành động (cầm giáo, bò trườn, bám đá).
+61. → chuyển sang [`vlog-archive.md`](vlog-archive.md) (selfie vs POV khi đi săn). Ý chung vẫn áp cho phim: rình, áp sát, ẩn nấp → Sonic Isolation, 0 từ trên hình (Rule 49 (4)).
 62. **BỎ HẲN GIÁP LÁ CÀ / VA CHẠM THỂ XÁC VỚI THÚ LỚN; QUY TẮC PHỐI HỢP GÓC MÁY VLOG CHÂN THỰC (TỰ QUAY + TRẢI NGHIỆM 2 TAY TRONG KHUNG HÌNH) (User Lock 08/10/2026):** *(phần "thoại 23–25 từ" đã bị BỎ — số từ chuẩn là 18–22 theo Rule 49, user lock 2026-10-12)*
+    - *(Phạm vi: quy tắc 1 (cấm giáp lá cà với thú lớn) áp cho phim; quy tắc 2–4 (phone-vlog trải nghiệm, phối hợp góc máy vlog, thoại Laomedeia) chỉ áp cho vlog; quy tắc 5 là luật riêng của tập Neanderthal.)*
     - **Hiện tượng & Root Cause:** 
       1. Bắt Veo 3 / Omni Flash R2V làm cảnh hành động cận chiến phức tạp đa thực thể (Scene 26–30 Neanderthal: 2 người đâm giáo, bò rừng 1 tấn húc tảng đá, vật lộn gục ngã) làm AI quá tải cơ học tiếp xúc (contact physics) ➔ vũ khí cong queo biến dạng hòa vào thịt, quái thú trượt lướt mất trọng lực, người bị vỡ giải phẫu.
       2. Góc quay selfie một tay vươn dài gượng gạo vừa dễ gây dị tật cánh tay/méo mặt khi xoay người, vừa làm hẹp góc nhìn và che khuất không gian giao lưu. Tuy nhiên, nếu biến thành 100% First-Person POV vô hình thì vlogger biến mất hoàn toàn, mất đi bản sắc và tính kết nối của người dẫn chương trình vlog!
@@ -603,6 +351,7 @@ Rút ra từ dự án `output/atlantis-9600bc/` (2026-09-27). Khi mâu thuẫn v
          - Tôn trọng bối cảnh gốc của thời kỳ (MIS 3 liên băng Dordogne là rừng thông ôn đới, đất mùn rêu xanh, tuyệt đối không tự ý chèn tuyết/bão mùa đông).
 
 63. **CẤM TRIỆT ĐỂ TỪ KHÓA 'PHONE/SMARTPHONE/PHONE_VLOG/DEVICE/SCREEN' (GHOST DEVICE MATERIALIZATION), KHÓA TRANG PHỤC THUẦN ẢNH THAM CHIẾU (PURE DRESSED-BODY REF LOCK) & CHỐNG TEO TÓP BODY DO GÓC QUAY (WAIST-UP BODY DRIFT PREVENTION) (User Lock 08/10/2026):**
+    - *(Phạm vi: quy tắc 1 (từ khóa thiết bị, material `prehistoric_vlog`) chỉ áp cho vlog; quy tắc 2 (khóa trang phục thuần ref) và quy tắc 3 (không tả vòng 1, khóa dáng theo ref) áp cho phim.)*
     - **Hiện tượng & Root Cause:**
       1. **Vật thể hóa điện thoại (Ghost Device Materialization - Bài học Scene 24):** Khi đưa chữ `phone` hoặc `phone_vlog` vào project material hoặc prompt header/body, diffusion model sẽ hiểu nhầm token text và tự động vẽ (vật thể hóa) một chiếc smartphone vật lý 3D ngoài đời thật lơ lửng hoặc cầm trên tay nhân vật trong bối cảnh tiền sử/cổ đại.
       2. **Loạn trang phục do tự tả bằng lời (Outfit Drift - Bài học Scene 21):** Khi `<Vlogger> Body` đã là ảnh body mặc hoàn chỉnh trang phục (Rule 46/60), nếu prompt tự mô tả lại bằng lời các chi tiết như `shearling collar`, `tunic`, `fur-lined`, model AI sẽ bị xung đột giữa token văn bản và latent của ảnh tham chiếu ➔ tự ý vẽ thêm chi tiết lạ (như Cảnh 21 tự mọc thêm cổ lông cừu trắng kỳ quái che mất áo da lộn cổ V đan dây của Nora Body v8).
@@ -634,37 +383,9 @@ Rút ra từ dự án `output/atlantis-9600bc/` (2026-09-27). Khi mâu thuẫn v
       2. **Nhúng thoại chia đều 3 mốc (0-3s, 3-6s, 6-8s):** Chia câu thoại 22–24 từ thành 3 cụm gắn trực tiếp vào từng mốc thời gian để AI dàn trải khẩu hình từ đầu tới cuối clip 8s.
       3. **Khóa trong SPEECH & LIP LOCK:** `"From second 0 through second 7.5s, Nora speaks continuously without dead air at the beginning; she starts speaking immediately from frame 0."`
 
-66. **CẤM TẢ BÀN TAY VLOGGER TRONG GÓC POV; CHUYỂN THAO TÁC TAY SANG OTS/FIXED & BẮT BUỘC ẢNH REF SAU GÁY VLOGGER (POV Hand Glitch, OTS Transition & Back/Nape Reference Lock — Bài học Neanderthal 51ka, User review 09/10/2026):**
-    - **Hiện tượng & Root Cause:**
-      1. **Lỗi tay lơ lửng & biến dạng trong POV (POV Hand Glitch):** Khi đặt góc POV (Point of View) mà prompt lại mô tả bàn tay của Vlogger thò vào khung hình (`Nora's hands reach in...`, `holding meat`, `pressing palm against stone`, `holding herbal root`), AI Diffusion (Veo 3 / Omni Flash R2V) chỉ nhận ảnh mặt trước (`<Vlogger>`) và ảnh body không đầu (`<Vlogger> Body`), hoàn toàn không có dữ liệu hình ảnh về bàn tay của Vlogger. Hậu quả: AI tự "bịa" ra bàn tay lơ lửng không gắn liền cơ thể, dẫn đến bàn tay bị biến dạng 6 ngón, sai màu da, hoặc biến thành bàn tay lông lá, thô ráp của đàn ông Neanderthal / thổ dân.
-      2. **Lỗi tụt tóc & mất nhận diện khi quay sau lưng / qua vai (OTS Nape/Hair Drift):** Khi camera quay góc OTS (Over-The-Shoulder / nhìn qua vai từ sau tới), AI nhìn vào sau gáy và tóc của Vlogger. Do ảnh `<Vlogger> Body` bị crop ngang vai (không có đầu/tóc/gáy) và `<Vlogger>` chỉ chụp mặt trước, AI không có ảnh tham chiếu góc nhìn sau gáy. Hậu quả: AI tự ý vẽ kiểu tóc sau gáy, gây bung tóc xõa, mất đuôi ngựa cột cao đặc trưng, hoặc dáng gáy biến dạng.
-      3. **Mất cân đối tỷ lệ góc máy Vlog (Vlog Camera Imbalance):** Tỷ lệ POV quá cao (50%) trong khi Selfie quá thấp (1.4% = 1 cảnh) làm mất hoàn toàn tính chất kết nối cảm xúc của Travel Vlog. Khán giả cần thấy biểu cảm khuôn mặt, sự hoảng loạn, kinh ngạc và nụ cười của Vlogger để giữ chân (Retention).
-    - **Quy tắc giải pháp:**
-      1. **POV Thuần túy (Pure POV Lock — CẤM 100% tả tay Vlogger):**
-         - Trong các shot POV, **TUYỆT ĐỐI CẤM 100%** mô tả bàn tay, cánh tay hay ngón tay của Vlogger xuất hiện trong khung hình (`strictly NO hands of the vlogger enter the frame`).
-         - Góc nhìn POV 100% hướng ra ngoài cảnh vật, đường đi, thiên nhiên, hoặc **đối phương thao tác** (Thủ Lĩnh cạo đá, Người Phụ Nữ bản địa đào rễ cây).
-      2. **Chuyển toàn bộ cảnh thao tác tay của Vlogger sang OTS hoặc FIXED:**
-         - Bất kỳ cảnh nào Vlogger cần thao tác tay (cầm đuốc, mài bột đất son, cầm thịt nướng, đặt tay lên vách in tranh, nhặt đồ vật): BẮT BUỘC chuyển từ POV sang **OTS (Over-The-Shoulder / Nhìn qua vai từ sau tới)** hoặc **FIXED (Kê máy tĩnh)**.
-         - Khi nhìn từ sau vai hoặc kê máy tĩnh, cả cánh tay và bàn tay của Vlogger được neo vững chắc vào cơ thể và trang phục từ ảnh Body Reference, khử sạch hoàn toàn lỗi tay lơ lửng.
-      3. **Bắt buộc tạo Ảnh Reference Sau Gáy / Sau Đầu của Vlogger (`<Vlogger> Back`):**
-         - Mọi dự án có góc quay OTS / Follow Shot sau lưng BẮT BUỘC phải có ảnh reference chuyên biệt cho góc nhìn sau gáy (`<Vlogger> Back` hoặc Turnaround Sheet có góc sau đầu rõ nét).
-         - Ảnh thể hiện rõ: Mái tóc đuôi ngựa cột cao đặc trưng (`high ponytail`), những lọn tóc mai buông nhẹ hai bên, bờ gáy thon gọn, cổ áo và bờ vai áo da nhìn từ sau lưng để gán vào Slot tham chiếu của các cảnh OTS.
-      4. **~~Tái cân bằng Tỷ lệ Góc máy Vàng~~ — ĐÃ BỎ (user lock 2026-10-12):** Không còn hạn ngạch phần trăm nào cho POV / OTS / FIXED / SELFIE. Góc máy chọn theo **bản chất hành động** của từng clip (Rule 42 (3)): hành động/di chuyển/rình săn ➔ POV; đồng hành & thao tác qua vai ➔ OTS; chế tác 2 tay & nhịp nghỉ ➔ FIXED; hook mở đầu, chia sẻ cảm xúc, thì thầm hoảng loạn, kết nối người xem ➔ SELFIE. Chỉ giữ ràng buộc định tính: cấm 100% selfie, cấm 3 clip selfie liên tiếp, cấm 2 clip liền nhau cùng cỡ cảnh + cùng góc máy.
+66. → chuyển sang [`vlog-archive.md`](vlog-archive.md) (tay vlogger trong POV, ref `<Vlogger> Back`, tỷ lệ góc máy vlog).
 
-67. **QUY TẮC ĐỒNG NHẤT ĐIỂM NHÌN POV VLOG — CẤM GÓC POV TỰ THÂN KHI QUAY NGƯỜI KHÁC; CHUYỂN TOÀN BỘ THAO TÁC CỦA ĐỐI PHƯƠNG SANG OTS HOẶC OBSERVER CLOSE-UP (Observer POV vs Self-POV Identity Conflict — Bài học Scene 28 & 32 Neanderthal 51ka, User review 09/10/2026):**
-    - **Hiện tượng & Root Cause (Nghịch lý đồng nhất điểm nhìn):**
-      1. Trong Travel Vlog, điểm nhìn camera là **đôi mắt của Vlogger (Nora)**.
-      2. Khi đặt góc quay *"First-person POV nhìn xuống mặt đất/tấm da"* mà có 2 cánh tay thò từ dưới camera lên làm việc (như ghè đá, phết keo):
-         - Tâm lý khán giả mặc định 100%: **Đó là 2 cánh tay của người đang cầm máy quay (Vlogger Nora)**!
-         - Nhưng thực tế trong hình, 2 cánh tay đó lại là tay đàn ông vạm vỡ, lông lá, sạm khói bếp của thổ dân Neanderthal, trong khi giọng thuyết minh của Nora lại nói ở ngôi thứ ba: *"One sharp glancing blow from HIS hammerstone..." (Một nhát gõ từ hòn búa của ÔNG ẤY...)*.
-         - **Hậu quả**: Khán giả bị rối loạn nhân dạng nghiêm trọng — không biết Vlogger là ai, tại sao người đàn ông lại có camera mọc trên ngực trong khi giọng nói là con gái bên ngoài.
-    - **Quy tắc giải pháp:**
-      1. **CẤM TUYỆT ĐỐI góc POV "nhìn xuống tay mình" khi chủ thể hành động là người khác:** Không bao giờ để camera đặt ở góc nhìn thứ nhất của nhân vật phụ nhìn xuống chính tay họ.
-      2. **Chuyển toàn bộ cảnh đối phương thao tác sang OTS (Over-The-Shoulder qua bờ vai Vlogger):**
-         - Đặt camera sau vai/gáy Vlogger (thấy vai áo và tóc đuôi ngựa của Vlogger ở góc khung hình), nhìn thẳng sang đối phương đang ngồi đối diện thao tác (Thủ Lĩnh ghè đá, thợ săn bôi keo).
-         - Khán giả thấy rõ ràng: **Vlogger đang đứng cạnh quan sát và quay lại cảnh đối phương làm việc**.
-      3. **Hoặc dùng Observer Close-Up (Góc quay cận cảnh người quan sát):**
-         - Camera hướng từ đối diện/chếch bên hông nhìn vào cả khuôn mặt, thân trên và đôi tay đang thao tác của nhân vật phụ, không có bất kỳ cánh tay nào mọc ra từ mép dưới camera.
+67. → chuyển sang [`vlog-archive.md`](vlog-archive.md) (POV tự thân vs quay người khác trong vlog).
 
 68. **BẢO TOÀN ĐẠO CỤ VẬT LÝ, CẤM THAO TÁC BUÔNG/ĐẶT ĐỒ XUỐNG ĐẤT & CẤM XOAY NGƯỜI 180° KHI VÁC ĐỒ NẶNG (Prop Continuity, Anti-Vanishing, No Drop-Off & Steady Posture Lock — Bài học Scene 33, 36, 37 Neanderthal 51ka, User review 09/10/2026):**
     - **Hiện tượng & Root Cause:**
@@ -722,6 +443,7 @@ Rút ra từ dự án `output/atlantis-9600bc/` (2026-09-27). Khi mâu thuẫn v
       5. **Đạo cụ phụ nhỏ trong tay nhân vật phụ (que, cành) hay tự xuất hiện/biến mất (Scene 32, 10/10/2026, 2 lần liền):** khi model muốn nhân vật cầm đạo cụ chính (giáo) bằng 2 tay, đạo cụ phụ ở tay kia sẽ hiện ra giữa clip rồi biến mất — khóa câu chữ không cứu được. Cách sửa: **bỏ hẳn đạo cụ phụ**, viết lại hành động chỉ với 1 đạo cụ cầm 2 tay (nhúng thẳng khớp mũi giáo vào khay nhựa thay vì dùng que phết).
 
 71. **SELFIE VỪA ĐI VỪA NÓI: HẬU CẢNH NHẢY CÓC & TÓC BUNG (Continuous-Take Lock — Bài học Scene 34 Neanderthal 51ka, 10/10/2026):**
+    - *(Phim: luật hậu cảnh cố định + `one continuous take` áp cho mọi shot máy đi theo nhân vật, không chỉ selfie.)*
     - **Hiện tượng:** Selfie Nora vừa leo dốc vừa nói, 10s. Giây ~2.7 hậu cảnh đổi phắt từ sườn đá có cửa hang sang bầu trời + thung lũng như bị cắt cảnh; đuôi ngựa bung, tóc xõa bay tứ tung vì prompt viết "loose strands blown back by the wind" và "a strong gust pushes her hair back".
     - **Quy tắc:** (1) Khung selfie di chuyển phải ghi rõ hậu cảnh cố định từ giây 0 tới cuối + `"one continuous take with no cut and no change of background"`; (2) không tả gió thổi tóc, chỉ `"the ponytail swings, the bangs stay over her forehead"` (khớp checklist 19); (3) `negative_constraints` có `"the ponytail never comes undone; her hair is never loose"`.
 
@@ -776,6 +498,7 @@ Rút ra từ dự án `output/atlantis-9600bc/` (2026-09-27). Khi mâu thuẫn v
     - **Quy tắc:** dòng 42–45 checklist B (`prompt-lock.md`), `cinematic-toolkit.md` §9.
 
 81. **THOẠI SẠCH DẤU DIỄN XUẤT, MẶT TRONG KHUNG KHI NÓI, ÂM THANH ≤ 5, TỪ LÀM ĐƠ HÌNH (Dialogue & Anti-Freeze Grammar — tiếp thu từ skill `video-prompt` của mikefluff/skills, 11/10/2026):**
+    - *(Phim: ý "từ vựng camera dolly/orbit/crane trái Rule 42" chỉ đúng với vlog; phim được dùng từ vựng máy điện ảnh theo `/fk-camera-guide`.)*
     - **Nguồn:** skill `video-prompt` (mikefluff/skills), phần Veo 3.1 + `beat-structure.md` + `audio-prompting.md`. Không phải lỗi từ clip của dự án; chỉ lấy điểm không trái luật FlowKit.
     - **Dấu câu trong ngoặc kép:** `...`, chữ VIẾT HOA, kéo dài chữ trong câu thoại bị model bỏ qua hoặc đọc thành khựng/im lặng. Ngữ điệu đặt trước ngoặc (`Nora says (hushed, excited): "..."`). Test khủng long B: câu `"Okay, don't move... a baby Triceratops"` có khoảng im 0.75s ngay sau mấy chữ đầu — khớp với lỗi này (1 mẫu, chưa chứng minh).
     - **Mặt phải thấy khi nói:** khẩu hình chỉ khớp khi miệng trong khung. Test B: 0–1s Nora quay lưng về ống kính trong lúc đã bắt đầu nói.
@@ -818,9 +541,7 @@ Rút ra từ dự án `output/atlantis-9600bc/` (2026-09-27). Khi mâu thuẫn v
     - **Nguyên nhân:** sửa bằng cách thay đúng những câu đang nhớ, không đọc lại toàn bộ prompt; linter chỉ dò chuỗi cấm nên không bắt được hai câu nói ngược nhau; checklist B làm bằng tay và không có bước bắt buộc báo cáo, nên bị bỏ qua.
     - **Quy tắc:** mục D của `prompt-lock.md` (đọc lại toàn bộ sau mỗi lần sửa, gom câu theo thuộc tính, chạy hết checklist B, báo cáo tự đánh giá kèm prompt); linter có thêm `SPEED_CONTRADICTION` và `CAMERA_CONTRADICTION` (MEDIUM).
 
-87. **MÁY DỰNG CỐ ĐỊNH TRONG CẢNH RƯỢT ĐUỔI LÀ PHI LÝ VỚI VLOG CẦM TAY (user 11/10/2026):**
-    - **Hiện tượng:** cảnh D quay rượt đuổi bằng máy đặt cố định trên tảng đá nhìn ngang. User: "khung cố định bỏ đi nhé, nó không hợp lý, chất liệu phone vlog mà" — giữa lúc bị bạo chúa đuổi không ai đặt được máy, khung tĩnh làm mất cảm giác người thật đang tự quay.
-    - **Quy tắc:** cảnh hành động/nguy hiểm quay POV cầm tay; muốn thấy kẻ đuổi thì cho nó chạy chéo/song song ở cạnh khung POV, hoặc tách sang một clip selfie khi đã an toàn. Máy dựng chỉ khi vlogger tự đặt máy lúc yên ổn. Checklist B dòng 55 (sửa) và 60. Rule 51 (CLAUDE.md) hiểu theo luật này.
+87. → chuyển sang [`vlog-archive.md`](vlog-archive.md) (máy dựng cố định phi lý với vlog cầm tay). Phim: máy cố định hay bám theo chọn theo nhịp kịch của cảnh.
 
 88. **TỐI ĐA 7 REF (GIỚI HẠN OMNI FLASH), KHÔNG PHẢI 3 (user 11/10/2026):**
     - **Bối cảnh:** cảnh rượt đuổi E1 cần Nora (mặt), Nora Body, Triceratops con và bạo chúa = 4 ref; luật cũ "tối đa 3 ref" (Bài học 4, 47) buộc phải bỏ ref mặt dù checklist dòng 20 bắt POV có tay phải gửi mặt + Body. User: "dùng tối đa 7 ref chứ, Omni Flash chứ".
@@ -881,6 +602,12 @@ Rút ra từ dự án `output/atlantis-9600bc/` (2026-09-27). Khi mâu thuẫn v
 
 98. **NHÂN VẬT ĐI XUYÊN HÀNG RÀO (Obstacle Path Lock — EMBERS RA-05, 18/10/2026):** prompt chỉ ghi "walks away / walks toward the trailer" trong khi khung hình có hàng rào chắn giữa → model cho nhân vật đi xuyên qua thanh rào. **Cách sửa:** khi có vật cản trong khung (rào, cổng, xe, cột, bàn), ghi rõ đường đi so với vật cản ("walks toward frame-left along the outside of the fence, parallel to it, staying on the open gravel") + câu cấm "never touches, climbs or walks through the fence; the rails stay solid and unbroken". Hướng đi phải khớp những gì Start Frame cho thấy (không gọi tên vật không có trong khung).
 
+99. **CÓ RADIO TRÊN HÌNH THÌ CLIP IM LẶNG VẪN BỊ LỒNG TIẾNG (Radio Ghost Speech — EMBERS EM-01, 19/10/2026):** cảnh im lặng có bộ đàm trên ngực nhân vật ("the radio crackles; he turns his head to it") → Omni tự cho nhân vật nhấc radio lên miệng và lồng một câu điều phối bịa ra (v1 "I've had to treat", v2 tiếng lẩm bẩm, v3 "All units be advised, we have a missing firefighter… Eli is not answering his radio", sai cả cốt truyện). Đã thử cấm bằng câu ("radio stays clipped, he never touches it, lips pressed shut", audio "no voices, no words at all") nhưng v3 vẫn hỏng. Whisper bắt được cả 3 lần (EXTRA SPEECH / SPEECH IN A SILENT CLIP), còn khung hình nhìn bình thường. **Cách sửa:** câu thoại phát qua radio là `post_vo`, thêm ở khâu dựng. Trong clip im lặng, **không để bộ đàm xuất hiện trên hình**: nhân vật chỉ khựng lại, nghiêng đầu như vừa nghe thấy gì. Nếu bắt buộc phải có radio, chấp nhận tắt hoặc thay tiếng gốc của clip khi dựng và ghi rõ điều đó vào `review_note`.
+
+100. **KIỂM GHOST BẰNG `debug-listing` CŨNG LÀ REQUEST TỚI FLOW (Listing Reads Count — EMBERS EL-03, 19/10/2026):** script chờ clip gọi `GET /api/flow/debug-listing/<op>` mỗi 45s suốt 40 phút, trong lúc EL-03 bị ghost op. Mỗi lần gọi là một RPC đọc media của project (`RPC_PROJECT_MEDIA`) gửi tới Flow. Ngay sau đó, lần gửi kế tiếp dính `PUBLIC_ERROR_UNUSUAL_ACTIVITY`. **Cách làm:** mỗi clip chỉ kiểm ghost **2 lần** (khoảng phút 3 và phút 12). Quá 12 phút mà op không có trong project thì kết luận ghost: đặt request về FAILED với `retry_count=99` rồi mới gửi lại. Clip Omni r2v bình thường xong trong khoảng 1,5–2 phút, nên quá 5 phút là dấu hiệu ghost. Cùng một clip ghost 2 lần thì nghi bộ lọc an toàn im lặng chặn nội dung prompt: kiểm ảnh ref bằng `GET /api/flow/debug-project-media` (cả 18 ref EMBERS đều có), rồi soát câu thoại tìm cụm dễ bị hiểu sai. Ví dụ EL-03: "I'm here to buy her back! I've got forty dollars!" không có ngữ cảnh con ngựa nên ghost 3 lần, kể cả khi đã thêm ngữ cảnh. Gửi lại bằng câu không mua bán. **Kết luận sau 9 lần gửi (19/10/2026):** thủ phạm là **bất kỳ ý trả tiền nào trong thoại**. Câu "Please, I can pay!" vẫn ghost thêm 5 lần, dù đã lần lượt bỏ dây thừng, xe đạp, lửa, đổi bộ ref và chuyển sang project có ảnh ref mang tên. Chỉ khi đổi thoại thành "I came for Juniper! Is anyone here?" thì clip mới sinh được ngay. Một nhân vật trẻ đứng một mình, nói với một người đàn ông chuyện trả tiền hay mua bán, rất dễ bị Flow chặn im lặng như một lời gạ gẫm. Ý mua hay chuộc lại, nếu cần, đưa vào `post_vo` hoặc phụ đề khi dựng.
+
+101. **CẢNH TRANH CÃI BỊ NÓI BÌNH BÌNH, NHỎ NHẸ (Argument Delivery Lock — EMBERS CH-03, 19/10/2026):** prompt ghi "speaking low and hard", "his voice drops" → Omni đọc câu đối đầu nhỏ nhẹ, đều đều; user: "cần to tiếng kiểu ngăn ngản chứ, không bình bình… những đoạn tranh cãi cần như vậy". **Cách sửa:** mọi câu cãi nhau / chặn đường / ra lệnh dưới áp lực ghi rõ ở `speech.delivery` và nhịp timeline: "loud and sharp, voice raised over the roar of the fire, every word hard, clipped and forceful, each short sentence punched out like an order"; nhịp giữa "stays loud and hard, jaw clenched, leaning toward her"; `audio` để giọng nói nổi trên tiếng lửa. Bỏ "low / quiet / voice drops / flat" trừ khi kịch bản muốn giọng thì thầm đe dọa. Không trích lại câu thoại trong ngoặc kép ở nhịp khác (model có thể nói hai lần).
+
 71. **ĐỘ DÀI CLIP LINH HOẠT THEO ĐỘ KHÓ — CẢNH DỄ LỖI SINH CHUỖI 4s CÙNG BỐI CẢNH, CẢNH DỄ GIỮ 8s/10s (Variable Duration & 4s Chain — User Lock 12/10/2026):**
     - **Hiện tượng:** Skill cũ mặc định mọi clip 8s. Clip hành động 8–10s nhồi 3–5 thay đổi trạng thái (thú lao tới → dừng → máy rơi → lật lên tán cây) nên càng về cuối clip càng trôi: thú đổi dáng, tay/đạo cụ teleport (Bài 70), vật hiện/biến (Bài 48). Một chỗ hỏng ở giây 6 bắt sinh lại cả clip 8s.
     - **Quy tắc:**
@@ -893,26 +620,7 @@ Rút ra từ dự án `output/atlantis-9600bc/` (2026-09-27). Khi mâu thuẫn v
       5. **Sinh lại theo mắt xích:** mắt xích nào rớt review thì chỉ sinh lại mắt xích đó; mắt xích kế tiếp vẫn dùng được vì điểm nối đã khóa bằng chữ.
     - **Đổi kèm:** CLAUDE.md Rule 11 + Rule 49 (0); `SKILL.md` hàng "Độ dài clip"; §1 bảng tra nhanh.
 
-72. **KHÓA BÀN TAY POV BẰNG ẢNH REF `<VLOGGER> HAND` & CẤM ĐỂ RỖNG CHARACTER TRONG SHOT TƯƠNG TÁC (POV Hand Reference Lock, Dedicated Forearm Sheet & Anti-Male Hand Glitch — Bài học Scene 7 Hell Creek 66 Ma, User review 12/10/2026):**
-    - **Hiện tượng & Root Cause:**
-      1. **Tay biến hình / thành tay đàn ông / dị tật ngón trong cảnh POV:** Khi thực hiện cảnh quay góc nhìn thứ nhất (First-person POV nhìn xuống nhặt đồ vật, vốc nước, gạt cành dương xỉ, chạm vào dấu chân bùn, cầm mai rùa...), nếu prompt chỉ gán bối cảnh (`refs: ["Hell Creek Bank"]`, `characters: []`) mà không có nhân vật, hoặc chỉ gắn `<Vlogger>` (chỉ có khuôn mặt):
-         - AI video diffusion model (Omni Flash / Veo) **hoàn toàn không có dữ liệu về bàn tay của nhân vật chính**.
-         - Kết quả: AI tự tưởng tượng ra một bàn tay ngẫu nhiên — thường biến thành **bàn tay đàn ông thô ráp, đốt ngón tay đầy lông lá, sạm đen**, hoặc xuất hiện móng tay dài sơn móng lòe loẹt, móng vuốt kỳ quái, cổ tay áo hiện đại, đồng hồ thông minh, hoặc dị tật ngón (6 ngón, ngón tay tan chảy).
-         - Nếu cố tình nhét `<Vlogger>` (ảnh mặt), AI lại cố gắng ép khuôn mặt lọt vào góc nhìn POV, gây vỡ bố cục máy quay.
-    - **Quy tắc giải pháp:**
-      1. **Bổ sung Entity `<Vlogger> Hand` vào Bộ Reference Chuẩn của Dự Án POV:**
-         - Đối với bất kỳ dự án POV Vlog nào có phân cảnh nhân vật chính dùng tay tương tác với môi trường hoặc đạo cụ, BẮT BUỘC tạo thêm 1 entity reference: `<Vlogger> Hand` (hoặc `POV Hand Sheet`).
-         - **Chuẩn Turnaround Sheet 16:9 của `<Vlogger> Hand`:**
-           - Thể hiện cận cảnh 4 góc cẳng tay & bàn tay của nữ vlogger: mu bàn tay, lòng bàn tay, ngón tay duỗi và ngón tay cầm nắm đồ vật.
-           - Đặc điểm giải phẫu: Cánh tay thon gọn, thanh mảnh nhưng săn chắc khỏe khoắn; làn da tự nhiên có vết rám nắng nhẹ dã ngoại; móng tay cắt ngắn sạch sẽ, **tuyệt đối không sơn móng**.
-           - Trang phục tay áo: Ống tay áo sơ mi xám tro/kaki xắn ngang cẳng tay (khớp 100% với trang phục trên `<Vlogger> Body`), cổ tay để trần hoặc có vòng dây da thô mộc thời kỳ.
-         - Tẩy sạch watermark logo & SynthID (Rule 28) rồi upload lên Flow lấy UUID Media ID sạch.
-      2. **Khóa Nhân vật trong Scene POV Tương tác:**
-         - Mọi scene POV có xuất hiện bàn tay (`reaches down`, `picks up`, `scoops`, `holds`, `parts foliage`), `character_names` và `refs` BẮT BUỘC phải đính kèm: `["<Vlogger> Hand", "<Bối Cảnh / Đạo Cụ>"]`.
-         - Trong khối `characters` của Structured JSON:
-           `{"name": "<Vlogger> Hand", "visual_lock": "Slender athletic female forearms and hands matching <Vlogger> Hand reference, rolled sleeves matching outfit, natural unpainted fingernails; NO male hands, NO hairy knuckles, NO modern jewelry/smartwatch."}`
-         - Trong `negative_constraints`:
-           `"NO male hands, NO hairy arms, NO modern wristwatch or bracelet, NO painted fingernails, NO extra or deformed fingers; strictly matching <Vlogger> Hand reference."`
+72. → chuyển sang [`vlog-archive.md`](vlog-archive.md) (bản 2: sheet `<Vlogger> Hand` cho POV vlog; đã thay bởi Bài 95).
 
 73. **ĐẶC TẢ CHẤT LIỆU SINH HỌC KHỦNG LONG, TẬP TÍNH THỊ UY & TRIỆT TIÊU CGI (Prehistoric Reptilian Megafauna Material Lock, Territorial Behavior & Anti-CGI Realism — Bài học Chuỗi Khủng Long Bò Đực A1-12 Hell Creek 66 Ma, User Review 13/10/2026, Rule 57):**
     - **Hiện tượng & Nguyên nhân gốc rễ (Root Cause):**
@@ -988,6 +696,7 @@ Rút ra từ dự án `output/atlantis-9600bc/` (2026-09-27). Khi mâu thuẫn v
          `"STRICTLY FORBIDDEN: strictly NO square jaw, NO long rectangular face, NO thin lips, NO hollow cheeks, NO aged appearance (must look 22-23), NO facial distortion, NO face drift."`
 
 77. **KHÓA ÁNH SÁNG TỰ NHIÊN, TRIỆT TIÊU GLAMOUR BIAS & CẤM CÁNH TAY SELFIE VƯƠN DÀI (Natural Lighting, Anti-Glamour Raw Realism & Zero Stretched Selfie Arm Lock — Bài học ảnh Start Frame Hell Creek 66 Ma, User Review 13/10/2026, Rule 61):**
+    - *(Phạm vi: mục 3 "Cấm cánh tay selfie vươn dài" chỉ áp cho vlog; mục 1, 2, 4 (ánh sáng tự nhiên, chống glamour, chất liệu sinh học) áp cho phim.)*
     - **Hiện tượng & Nguyên nhân gốc rễ (Root Cause):**
       1. **Ảnh bị hiệu ứng "Cosplay / 3D Render Unreal Engine / Filter Instagram":** Mặc dù prompt mô tả chi tiết, ảnh gen ra nhìn như người mẫu chụp ảnh cosplay studio với đèn hắt sáng và da búp bê sáp, không ra chất sinh tồn Kỷ Phấn Trắng trần trụi.
       2. **Xung đột Glamour Bias (Làm đẹp giả trân):** Các từ ngữ như `fair smooth creamy skin`, `beauty glow`, `luminous eyes` kích hoạt bộ lọc chân dung thương mại của Imagen 3, làm mờ lỗ chân lông, khử sạch bụi bẩn và nếp nhăn tự nhiên.
@@ -1033,8 +742,8 @@ Rút ra từ dự án `output/atlantis-9600bc/` (2026-09-27). Khi mâu thuẫn v
       3. **Ghi lý do & thứ tự:** `/fk-script-to-prompts` phân loại từng clip và ghi lý do vào `start_frame.note`. Clip liên tục chỉ sinh sau khi clip trước xong và được duyệt; clip trước bị regen thì cắt lại Last Frame và regen clip sau. Start Frame cắt từ video đã duyệt không cần qua Review Board ảnh, nhưng vẫn phải tẩy watermark (Rule 28).
 
 **Nội dung**
-17. **[ĐÃ THAY bởi Rule 46 / bài học 60]** Vlogger mặc đồ hiện đại theo ảnh ref là chấp nhận được. Hiện tại: vlogger mặc trang phục thời kỳ ngay từ clip đầu qua `<Vlogger> Body` đã mặc outfit; đồ hiện đại chỉ khi user yêu cầu phong cách "lạc loài".
-18. User có thể yêu cầu **cảnh mở đầu FPV điện ảnh** (từ không gian lao xuống toàn cảnh thành phố, không có vlogger), là ngoại lệ của luật "mọi shot quay bằng điện thoại". Clip đó dùng ảnh ref toàn cảnh, giữ yên 2–3 giây cuối, và clip sau mở bằng vật lướt qua ống kính để che cú cắt.
+17. → chuyển sang [`vlog-archive.md`](vlog-archive.md) ([ĐÃ THAY] vlogger mặc đồ hiện đại).
+18. → chuyển sang [`vlog-archive.md`](vlog-archive.md) (cảnh FPV mở đầu là ngoại lệ của luật "mọi shot quay bằng điện thoại").
 
 
 

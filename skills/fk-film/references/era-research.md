@@ -1,5 +1,7 @@
 # Checklist nghiên cứu thời kỳ
 
+> **Phim vs vlog (2026-10-19):** checklist thời kỳ áp cho phim cổ trang / tiền sử. Ngoại lệ "hư cấu được phép, research tùy chọn" của Rule 14 chỉ dành cho time-travel / POV vlog; phim dựa trên sự kiện thật phải `/fk-research` trước (Rule 14), phim hư cấu hoàn toàn thì ghi rõ là hư cấu trong `story-bible.md`.
+
 Đọc ở **Bước 1** của `SKILL.md` (tùy chọn). Hư cấu được phép: chi tiết thật hay bịa đều được, miễn trông hợp với thế giới đó (CLAUDE.md Rule 14 — ngoại lệ cho time-travel vlog).
 
 ## Research Pack — chọn beat

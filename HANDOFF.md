@@ -39,7 +39,7 @@
 
 ## 3. TOÀN BỘ BÀI HỌC VÀ QUY TẮC MỚI (CHIỀU 13/10/2026)
 
-Tất cả các bài học dưới đây đã được lưu trữ và đồng bộ vào `setup.py`, `CLAUDE.md`, `AGENTS.md`, `.agents/rules/claude_rules.md`, `skills/fk-character-design/SKILL.md`, và `skills/fk-time-travel-vlog/references/`:
+Tất cả các bài học dưới đây đã được lưu trữ và đồng bộ vào `setup.py`, `CLAUDE.md`, `AGENTS.md`, `.agents/rules/claude_rules.md`, `skills/fk-character-design/SKILL.md`, và `skills/fk-time-travel-vlog/references/` (nay là `skills/fk-film/references/`; bài học chỉ áp cho vlog ở `vlog-archive.md`):
 
 ### Rule 57 / Bài học 73: Đặc tả chất liệu sinh học khủng long & Triệt tiêu CGI
 

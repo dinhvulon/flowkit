@@ -1,5 +1,7 @@
 # Phân tích video mẫu: "I Time Traveled to Ancient China in 211 BC! (Vlog)"
 
+> **Chỉ áp cho POV / time-travel vlog** (2026-10-19): phân tích một video vlog mẫu. Phim không dùng file này. Xem [`vlog-archive.md`](vlog-archive.md).
+
 Nguồn: WD3riCBUUJU, dài 10:40. Phân tích từ khung hình 240p (tách cảnh bằng ffmpeg). Không có transcript nên phần lời thoại không phân tích được.
 
 ## Số liệu kỹ thuật

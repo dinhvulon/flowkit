@@ -1,5 +1,7 @@
 # Cinematic Toolkit & Upstream Subagents Cho Time-Travel Vlog
 
+> **Phim vs vlog (2026-10-19):** phim dùng §0, §1 (3 pha hành động, từ vựng an toàn — bỏ bảng góc máy vlogger), §2 (cảm xúc bằng triệu chứng cơ thể — đọc "vlogger" là nhân vật), §3, §4, §5, §6, §7. **Chỉ áp cho POV vlog** (xem [`vlog-archive.md`](vlog-archive.md)): bảng "Cách chuyển một template gốc sang vlog" ở đầu file, chế độ B "selfie 0.5x khi tháo chạy" và mọi câu "vlogger là người cầm máy" ở §1. Phim giữ góc máy điện ảnh của template gốc (`tracks / dollies / pushes in`), chỉ bỏ dòng `Negative:`.
+
 Đọc ở các bước ghi trong từng mục. File này điều phối **bộ Subagent Bắt Buộc** dùng để lấy output viết Kịch bản, Thiết kế Reference và Prompt — `/fk-character-design`, `/fk-action-choreography`, `/fk-add-material`, `/fk-cinematic-transitions`, `/fk-gen-narrator`, `/fk-camera-guide` — cùng các kỹ thuật điện ảnh đã chỉnh theo luật vlog.
 
 > **QUY TẮC BẮT BUỘC (LOCK CỨNG):** Khi xây dựng kịch bản và reference, AI Agent **BẮT BUỘC** phải vận hành các subagent này để lấy output chuyên môn cấu thành kịch bản, tuyệt đối không tự bịa hoặc bỏ qua bất kỳ subagent nào!

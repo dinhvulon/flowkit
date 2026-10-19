@@ -1,5 +1,7 @@
 # Character Bible — khóa nhân vật, giọng và bộ ref
 
+> **Phim vs vlog (2026-10-19):** áp cho phim: §1 (`CHARACTER_LOCK` dán vào entity, không sửa giữa các clip), §2, §5–6 (mặt + Body đã mặc đồ, công thức EDIT trang phục), §7 — đọc `<Vlogger>` / `<V>` là tên nhân vật chính. **Chỉ áp cho POV vlog** (xem [`vlog-archive.md`](vlog-archive.md)): dòng `Voice: Laomedeia` trong mẫu §1, câu "không mô tả thiết bị quay", §3 (Laomedeia, 1 giọng mỗi clip — phim dùng voice id riêng cho từng người, `voice-bible.md` §0), §4 (người bản địa nói tiếng không hiểu được, bố cục selfie qua vai), và đoạn "chống teo tóp body" cuối §5 (trái memory 2026-10-14 "Body lock = normal figure").
+
 Đọc ở **Bước 2** của `SKILL.md`. Mục này thay mục 2 / 2b cũ.
 
 ## 1. `CHARACTER_LOCK` — khóa ngoại hình

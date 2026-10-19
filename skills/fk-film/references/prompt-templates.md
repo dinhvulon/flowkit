@@ -1,5 +1,7 @@
 # Template prompt
 
+> **Chỉ áp cho POV vlog** (2026-10-19): mẫu Clip JSON selfie / POV / máy dựng và `CHARACTER_LOCK` có giọng Laomedeia. Phim dùng khung A của `prompt-lock.md` và mẫu thật `output/embers/prompts_v7_act*.json`; mẫu "Mắt xích chuỗi 4s" ở dưới vẫn dùng được cho phim. Xem [`vlog-archive.md`](vlog-archive.md).
+
 Đọc ở **Bước 2** (CHARACTER_LOCK) và **Bước 5** (Clip JSON) của `SKILL.md`. Câu chữ cuối cùng trong `video_prompt` phải theo khung 9 khối của `prompt-lock.md`; file này chỉ là bản thiết kế.
 
 Quy ước chung (Bài học 23, 33, CLAUDE.md Rule 30):

@@ -1,5 +1,7 @@
 # Thoại tiếng Tây Ban Nha Mỹ Latinh (`es-419`) — chế độ ngôn ngữ thoại
 
+> **Phim vs vlog (2026-10-19):** luật viết thoại tiếng Tây Ban Nha Mỹ Latinh (prompt tiếng Anh, chỉ thoại trong ngoặc kép là tiếng Tây Ban Nha, câu khóa accent, số từ Rule 49) áp cho phim. Phần giọng Laomedeia, persona vlogger và "giống một vlogger Mỹ Latinh thật" chỉ áp cho vlog (xem [`vlog-archive.md`](vlog-archive.md)); phim chọn voice id riêng cho từng nhân vật.
+
 Đọc file này khi user chọn thoại **tiếng Tây Ban Nha Mỹ Latinh** (español latinoamericano / "español latino"), ví dụ khi họ đưa video mẫu kiểu *"Hace 300.000 Años: Así Era La Vida En La Edad De Piedra"* và muốn làm bản tiếng Tây Ban Nha. Mặc định của skill vẫn là English. File này chỉ đổi **ngôn ngữ thoại**; mọi luật khác (Rule 49 số từ, Sonic Isolation, prompt-lock, VOICE_LOCK persona) giữ nguyên.
 
 Vì sao cần file riêng: model video lấy giọng từ voice id (Laomedeia) nhưng lấy **ngôn ngữ và accent từ chữ trong ngoặc kép** và câu tả cách nói. Nếu chỉ dịch thoại sang tiếng Tây Ban Nha mà không khóa accent, model hay trôi sang giọng Tây Ban Nha (Castilian, ngọng "th" kiểu Madrid) hoặc chen chữ tiếng Anh. Còn nếu dịch máy từng câu, thoại ra giọng sách vở, không giống một vlogger Mỹ Latinh thật.

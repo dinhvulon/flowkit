@@ -1,5 +1,7 @@
 # Voice Bible — Giọng nói & Tính cách Vlogger
 
+> **Phim vs vlog (2026-10-19):** phim dùng danh sách 30 giọng ở §0 và cách tự chọn giọng ở §0b cho **mọi** nhân vật có thoại (mỗi người một voice id, ghi `speech.voices`), §2 (độ dài thoại Rule 49), §3 (bíp), §6 (checklist chống giọng AI). **Chỉ áp cho POV vlog** (xem [`vlog-archive.md`](vlog-archive.md)): giọng mặc định Laomedeia ở §0, `VOICE_LOCK` persona vlogger ở §1, ba khuôn beat sinh tồn của vlogger ở §4, mẫu §5. Phim khóa cách nói của từng nhân vật trong `story-bible.md` / `script.md`.
+
 `CHARACTER_LOCK` khóa **ngoại hình**, `voice_description` (Laomedeia) khóa **chất giọng**. File này khóa **cách nói**: vlogger là ai, biết gì, nói nhanh hay chậm, đùa kiểu gì, sợ gì, và những câu cô không bao giờ nói. Thiếu lớp này thì thoại tự trượt về giọng AI trung bình: cảm thán, giảng bài, câu chốt khẩu hiệu.
 
 Đọc file này **trước khi viết bất kỳ dòng thoại nào**, và chạy checklist ở mục 6 trên từng dòng trước khi đưa vào `video_prompt`. Cấu trúc truyện, mật độ thoại theo loại clip và cách nhân vật phụ nói nằm ở `story-engine.md` (user chốt 2026-10-05); file đó thắng nếu hai file lệch nhau.
@@ -88,7 +90,7 @@ Mỗi nhân vật phụ **có thoại** (kể cả ngôn ngữ không hiểu đ�
 
 ## 1. VOICE_LOCK — khóa tính cách (ghi vào `script.md`, KHÔNG sửa giữa các clip)
 
-Persona đã chốt (user, 2026-10-01; sửa 2026-10-05): **chuyên gia sinh tồn, nói nhanh, liều, chửi thề nhẹ bị bíp — KHÔNG dạy lịch sử**. Người xem ở lại vì cô **làm được việc thật** (biết cách và biết vì sao, nói bằng một câu đời thường), vì cô hài, và vì nguy hiểm leo thang. Cô không phải "cô gái thành phố ngơ ngác" (persona đó đã bị loại), nhưng cũng không phải giảng viên. Chi tiết thế giới được bịa thoải mái (xem "Hư cấu được phép" ở đầu `skills/fk-time-travel-vlog.md`).
+Persona đã chốt (user, 2026-10-01; sửa 2026-10-05): **chuyên gia sinh tồn, nói nhanh, liều, chửi thề nhẹ bị bíp — KHÔNG dạy lịch sử**. Người xem ở lại vì cô **làm được việc thật** (biết cách và biết vì sao, nói bằng một câu đời thường), vì cô hài, và vì nguy hiểm leo thang. Cô không phải "cô gái thành phố ngơ ngác" (persona đó đã bị loại), nhưng cũng không phải giảng viên. Chi tiết thế giới được bịa thoải mái (xem hàng "Hư cấu" trong bản `SKILL.md` vlog cũ, `vlog-archive.md` §1).
 
 ```
 VOICE_LOCK:

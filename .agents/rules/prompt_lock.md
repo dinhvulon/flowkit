@@ -35,7 +35,7 @@ Nếu có bất kỳ lỗi nào (`CRITICAL` hoặc `HIGH`): **CẤM GỬI LỆNH
 2. **Sửa lỗi bằng cách tả thêm, không cắt bớt.** Chỉ bỏ yếu tố khi hỏng lặp lại nhiều lần và phải báo user.
 3. **Nhân vật phụ luôn "sống"**, kể cả hậu cảnh (thở, đọng khói hơi thở, đổi trọng tâm, chớp mắt, quay đầu theo hành động, siết đồ đang cầm); thú vật đánh hơi, bước, vẫy tai. Không ai đứng đơ như tượng.
 4. **Khối vật lý 5 tầng** (`/fk-camera-guide`) trong mọi prompt: chuyển động chính · lực & ma sát · chuyển động phụ · môi trường · phản ứng máy quay.
-5. **Bắt buộc dùng skill:** `/fk-camera-guide`, `/fk-cinematic-transitions` (+ `references/transitions.md`), `/fk-action-choreography`, `/fk-scriptwriter` + `references/story-engine.md`, `/fk-character-bible`, `/fk-gen-narrator`, `/fk-sound-design`, và `/fk-prompt-lock`; từ vựng chuyển động và nhịp động học theo `skills/fk-time-travel-vlog/references/cinematic-toolkit.md` §8–9 (Rule 57–58). Ghi rõ skill đã áp cho từng clip trong kịch bản/storyboard.
+5. **Bắt buộc dùng skill:** `/fk-camera-guide`, `/fk-cinematic-transitions` (+ `references/transitions.md`), `/fk-action-choreography`, `/fk-scriptwriter` + `references/story-engine.md`, `/fk-character-bible`, `/fk-gen-narrator`, `/fk-sound-design`, và `/fk-prompt-lock`; từ vựng chuyển động và nhịp động học theo `skills/fk-film/references/cinematic-toolkit.md` §8–9 (Rule 57–58). Ghi rõ skill đã áp cho từng clip trong kịch bản/storyboard.
 
 ---
 
@@ -45,7 +45,7 @@ Nếu có bất kỳ lỗi nào (`CRITICAL` hoặc `HIGH`): **CẤM GỬI LỆNH
 
 1. Mọi chuyển động của nhân vật và khung hình viết bằng hành động vật lý cụ thể, kèm thuật ngữ trong ngoặc: **Anticipation**, **Overshoot**, **Settle**, **Secondary motion**, **Stagger**, **Reveal**, **Slide & Dampen**, **Rubber-banding**, **Vertical bounce**, **Rotational lag**, **Drift**.
 2. CẤM từ mơ hồ: "moves quickly", "shakes violently", "jumps weirdly", "smoothly appears", "pops in". Vật/người lộ ra phải đi từ sau vật che có sẵn từ giây 0.
-3. Bảng tra: `skills/fk-time-travel-vlog/references/cinematic-toolkit.md` §8.
+3. Bảng tra: `skills/fk-film/references/cinematic-toolkit.md` §8.
 
 ---
 

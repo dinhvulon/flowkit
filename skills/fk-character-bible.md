@@ -1,6 +1,6 @@
 # Character Bible & Visual Consistency — AI Film Production
 
-> **Time-travel / POV vlog (`/fk-time-travel-vlog`):** dùng bản đã chỉnh theo luật vlog ở `skills/fk-time-travel-vlog/references/cinematic-toolkit.md` §4–5 (trạng thái trang phục = ảnh `<V> Body …` riêng, không entity Outfit; tập mới mang theo mặt + Body trần gốc rồi EDIT ra Body mặc outfit theo công thức outfit lock ở `references/character-bible.md` §6). Template trong file này có dòng `Negative:` và góc máy người thứ ba — không chép nguyên vào prompt vlog.
+> **Phim (`/fk-film`):** dùng bản đã chỉnh ở `skills/fk-film/references/cinematic-toolkit.md` §4–5 (trạng thái trang phục = ảnh `<Tên> Body <trạng thái>` riêng, không entity Outfit; tập mới mang theo mặt + Body gốc rồi EDIT ra Body mặc đồ theo công thức ở `skills/fk-film/references/character-bible.md` §6). Template trong file này có dòng `Negative:` — chuyển ràng buộc vào `negative_constraints` của prompt JSON. Luật riêng của POV vlog: `skills/fk-film/references/vlog-archive.md`.
 
 Standards and technical workflows for maintaining biometric fidelity, wardrobe coherence, signature accessories, and environmental continuity across multi-chapter AI films in Google Flow and Veo 3.
 

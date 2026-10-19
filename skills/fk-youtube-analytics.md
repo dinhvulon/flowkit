@@ -22,7 +22,7 @@ Mỗi thuật ngữ dưới đây chỉ dùng cho đúng một chỉ số.
 | Điểm tụt | Timecode mà đường giữ chân giảm dốc nhất | Biểu đồ Audience retention |
 | End screen CTR | End screen element click rate | Analytics → Engagement |
 
-Lưu ý: bản cũ của `skills/fk-time-travel-vlog/references/post-and-publish.md` §3 gọi chỉ số 30s là "AVD" (đã sửa 16/10/2026). Skill này tách riêng **Giữ chân 30s** và **AVD**.
+Lưu ý: bản cũ của `skills/fk-film/references/post-and-publish.md` §3 (khi còn là `fk-time-travel-vlog`) gọi chỉ số 30s là "AVD" (đã sửa 16/10/2026). Skill này tách riêng **Giữ chân 30s** và **AVD**.
 
 ## Ngưỡng
 
@@ -95,7 +95,7 @@ Với mỗi điểm tụt, ghi giả thuyết nguyên nhân (nhãn `HYPOTHESIS`)
 | End screen | 2 phần tử: video kế tiếp cùng series + playlist. YouTube cho end screen dài 5–20s; kịch bản video sau NÊN chừa cảnh cuối đủ dài cho end screen |
 | Playlist series | Thứ tự tập theo `output/<slug>/series_manifest.json` (nếu có) |
 | Shorts mồi | 3–4 Shorts cắt từ video dài, gắn "Related video" về video dài (`post-and-publish.md` §3.1; kế hoạch cắt ở `/fk-capcut-edit` §7) |
-| Câu dẫn sang video sau | Chỉ áp dụng cho video sau: đưa vào kịch bản (`/fk-scriptwriter` Section G2 hoặc `/fk-time-travel-vlog` bước 3) |
+| Câu dẫn sang video sau | Chỉ áp dụng cho video sau: đưa vào kịch bản (`/fk-scriptwriter` Section G2 hoặc `/fk-film` bước 2–4) |
 | Bình luận ghim | 1 câu hỏi mở về nội dung phim + link playlist |
 
 End screen CTR thấp → đề xuất đổi video được trỏ tới (chọn video có CTR cao nhất kênh), không đổi vị trí phần tử.
@@ -111,7 +111,7 @@ End screen CTR thấp → đề xuất đổi video được trỏ tới (chọn
 
 Giá trị không có → `null`. KHÔNG ĐƯỢC điền số ước đoán.
 
-3. Bài học cho video sau → trình user. Chỉ khi user đồng ý: vlog → thêm vào `skills/fk-time-travel-vlog/references/production-lessons.md` (số bài học kế tiếp, đúng format file); phim tài liệu narrator → ghi chú vào screenplay JSON của tập sau.
+3. Bài học cho video sau → trình user. Chỉ khi user đồng ý: phim `/fk-film` → thêm vào `skills/fk-film/references/production-lessons.md` (số bài học kế tiếp, đúng format file); bài học chỉ đúng cho POV vlog → `skills/fk-film/references/vlog-archive.md`; phim tài liệu narrator → ghi chú vào screenplay JSON của tập sau.
 
 ---
 

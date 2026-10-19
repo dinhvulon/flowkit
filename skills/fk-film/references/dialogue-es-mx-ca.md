@@ -1,5 +1,7 @@
 # Thoại tiếng Tây Ban Nha — Mexico & Trung Mỹ (hồ sơ giọng + cách ra lệnh cho model)
 
+> **Phim vs vlog (2026-10-19):** hồ sơ giọng Mexico / Trung Mỹ và câu khóa giọng áp cho phim; kho từ "cho Nora (giọng trẻ, YouTube)" và persona vlogger chỉ áp cho vlog (xem [`vlog-archive.md`](vlog-archive.md)).
+
 Đọc sau `dialogue-es-latam.md` khi project nhắm khán giả **Mexico** (mặc định của chế độ es-419) hoặc một nước **Trung Mỹ** (Guatemala, El Salvador, Honduras, Nicaragua, Costa Rica, Panama). File đó giữ luật chung (prompt tiếng Anh + thoại tiếng Tây Ban Nha, Rule 49, checklist). File này trả lời hai câu: **viết thoại thế nào cho đúng giọng nước đó**, và **viết prompt thế nào để model nói đúng giọng đó**.
 
 Nguồn research (2026-10-13): Wikipedia *Mexican Spanish*, *Central American Spanish*, *Salvadoran Spanish*, *Costa Rican Spanish*; tài liệu Gemini-TTS (Google Cloud, Gemini API); hướng dẫn thoại tiếng Tây Ban Nha cho Veo 3 (Arsturn); các bài về tiếng lóng Mexico/Trung Mỹ. Từ có dấu **†** là chưa xác minh được trong đợt research này. Chỉ dùng khi người bản xứ đã duyệt, và **không** đưa vào câu mẫu.

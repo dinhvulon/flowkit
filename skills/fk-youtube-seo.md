@@ -4,7 +4,7 @@ Generate SEO-optimized YouTube metadata: hook title, description, hashtags, and 
 
 Usage: `/fk-youtube-seo <project_id> [--language vi|en|ja|es] [--niche military-documentary]`
 
-`--language es` = tiếng Tây Ban Nha Mỹ Latinh (mặc định Mexico; thoại viết theo `skills/fk-time-travel-vlog/references/dialogue-es-mx-ca.md`). Đọc mục **"Tiếng Tây Ban Nha (es-419)"** ở cuối file trước khi viết metadata.
+`--language es` = tiếng Tây Ban Nha Mỹ Latinh (mặc định Mexico; thoại viết theo `skills/fk-film/references/dialogue-es-mx-ca.md`). Đọc mục **"Tiếng Tây Ban Nha (es-419)"** ở cuối file trước khi viết metadata.
 
 ## Step 1: Load project context + channel rules
 
@@ -96,7 +96,7 @@ The title is the #1 SEO factor. It must:
        - `I Time Travelled to 79 AD — And Mount Vesuvius Started Erupting`
        - `I Time Travelled to 1986 Chernobyl — And the Sirens Went Off`
 
-   - **Option 2 (Câu hỏi sinh tồn / Survival Question Hook — Áp dụng cho Nhóm 3: Newsjacking & Thử Thách Khắc Nghiệt, và mọi vlog dùng Survival Preset của `/fk-time-travel-vlog` mục 5c)**:
+   - **Option 2 (Câu hỏi sinh tồn / Survival Question Hook — Áp dụng cho Nhóm 3: Newsjacking & Thử Thách Khắc Nghiệt, và mọi vlog dùng Survival Preset của skill vlog cũ — nay lưu ở `skills/fk-film/references/vlog-archive.md`; phim sinh tồn của `/fk-film` cũng dùng được)**:
      - **Cấu trúc**: `Would [People] Let You [Into Their Cave / Join Their Hunt]? ([Year])` hoặc `What Happens When [Situation có trong video] [with People]? ([Year])`.
      - **Câu hỏi phải được video trả lời rõ.** YouTube xếp tiêu đề hứa điều video không có vào "Malicious clickbait" (Spam Policy). Ví dụ: hỏi "Would Neanderthals Let You In?" thì video phải có cảnh họ chặn cửa rồi cho vào.
      - **Không dùng "Can I Survive…?"** vì trùng kênh đối thủ. **Không dùng "I Survived 24 Hours"** (user bỏ 2026-10-06): tiêu đề này hứa trọn 24 giờ, và cả series dễ bị coi là cùng một khuôn.

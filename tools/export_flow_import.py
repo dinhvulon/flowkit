@@ -2,7 +2,7 @@
 
 Fallback for when Google blocks automated generation
 (PUBLIC_ERROR_UNUSUAL_ACTIVITY): the project is rebuilt by hand in the import
-tool from this file. Template: skills/fk-time-travel-vlog/references/
+tool from this file. Template: skills/fk-film/references/
 flow-import-template.json.
 
 R2V mapping: there are no start frames, so each video node references the
@@ -196,7 +196,7 @@ def main():
         "name": project["name"],
         "meta": {
             "concept": project.get("description") or project.get("story") or project["name"],
-            "author": "skill:fk-time-travel-vlog",
+            "author": "skill:fk-film",
             "target_market": args.market,
             "style": "photorealistic smartphone-shot POV selfie vlog, handheld, ultra-wide 0.5x front camera, "
                      "deep focus, documentary realism",

@@ -78,13 +78,26 @@ The project `story` provides overall narrative context.
 
 **Language:** Use `--language` flag or project's `language` field.
 
-### Project Mode Detection: Time Travel Vlog vs Standard Documentary
+### Project Mode Detection: Film vs Time Travel Vlog vs Standard Documentary
 
-Detect whether the project is a **Time Travel Vlog / POV Survival Vlog** (check `project.category == "time_travel_vlog"`, or project title/story mentions "vlog", "POV", "time travel", or uses reference characters with female vlogger profiles like Nora, Mia).
+Check in this order:
+1. **MODE C — Film** (`/fk-film`, ví dụ EMBERS): third-person narrative film / series, prompts carry `camera.viewpoint` = third-person cinematic, several characters speak native lines. A character name like Nora or Mia does **not** make a project a vlog.
+2. **MODE A — Time Travel / POV Survival Vlog**: only when the user explicitly asks for a POV / time-travel vlog, or `project.category == "time_travel_vlog"`. Its rules are archived in `skills/fk-film/references/vlog-archive.md` and never apply to a film.
+3. **MODE B — Standard documentary** (narrator TTS).
 
 ---
 
-### MODE A: TIME TRAVEL VLOG / HISTORICAL POV VLOG (BẮT BUỘC KHÓA VÀO SKILL `time-travel-vlog`, `fk-time-travel-vlog`, `fk-vlog-guide` VÀ RULE 49)
+### MODE C: PHIM KỂ CHUYỆN NGÔI THỨ BA (`/fk-film`)
+
+1. **Thoại native của từng nhân vật**, lấy nguyên văn từ `script.md`; mỗi người nói có voice id riêng (`speech.voices`), không mặc định Laomedeia, không phiên dịch qua một người.
+2. **Số từ theo `duration`** (Rule 49 bảng (0)): 4s 0 hoặc 6–8 · 6s 12–15 · 8s 18–22 · 10s 24–28; chia đều các mốc của clip; nói từ giây 0 (Rule 54). Clip im lặng: 0 từ.
+3. **Đồng bộ `narrator_text` và `speech.dialogue`** của prompt JSON (PATCH cả hai).
+4. **Lời ngoài hình** (bộ đàm, điện thoại, suy nghĩ) vào `post_vo`, không vào thoại trên hình (Bài học 99); không để nhân vật nói chuyện trả tiền / mua bán (Bài học 100); cảnh cãi nhau giọng to, gắt, cộc (Bài học 101).
+5. Chi tiết: [`skills/fk-film/SKILL.md`](file:///c:/flowkit/skills/fk-film/SKILL.md), `skills/fk-film/references/voice-bible.md` §0, §2, §6.
+
+---
+
+### MODE A: TIME TRAVEL VLOG / HISTORICAL POV VLOG — *(Chỉ áp cho POV vlog — phim dùng MODE C / `/fk-film`)* (luật cũ của `time-travel-vlog`, `fk-time-travel-vlog`, `fk-vlog-guide` VÀ RULE 49; lưu ở `skills/fk-film/references/vlog-archive.md`)
 
 Khi phát hiện dự án là Time Travel / POV Vlog: **TUYỆT ĐỐI TUÂN THỦ CÁC QUY TẮC CỐT LÕI SAU:**
 
@@ -122,9 +135,9 @@ Khi phát hiện dự án là Time Travel / POV Vlog: **TUYỆT ĐỐI TUÂN TH�
    - Tuyệt đối 0 từ cấm: `phone`, `smartphone`, `screen`, `device`, `selfie-stick` trong cả thoại lẫn prompt.
 
 8. **LIÊN KẾT KỸ NĂNG BẮT BUỘC (Skills Cross-Reference)**:
-   - Xem chi tiết nhịp kịch bản, 7 hồi, 23 beat giữ chân người xem tại: [`skills/fk-time-travel-vlog/references/story-engine.md`](file:///c:/flowkit/skills/fk-time-travel-vlog/references/story-engine.md) và [`structure-7-acts.md`](file:///c:/flowkit/skills/fk-time-travel-vlog/references/structure-7-acts.md)
-   - Xem quy trình tổng thể tại: [`skills/fk-time-travel-vlog/SKILL.md`](file:///c:/flowkit/skills/fk-time-travel-vlog/SKILL.md)
-   - Xem cẩm nang kỹ thuật góc máy & vật lý tại: [`skills/fk-vlog-guide.md`](file:///c:/flowkit/skills/fk-vlog-guide.md)
+   - Xem chi tiết nhịp kịch bản, 7 hồi, 23 beat giữ chân người xem tại: [`skills/fk-film/references/story-engine.md`](file:///c:/flowkit/skills/fk-film/references/story-engine.md) và [`structure-7-acts.md`](file:///c:/flowkit/skills/fk-film/references/structure-7-acts.md)
+   - Xem quy trình vlog cũ tại: [`skills/fk-film/references/vlog-archive.md`](file:///c:/flowkit/skills/fk-film/references/vlog-archive.md) §1
+   - Xem cẩm nang kỹ thuật góc máy & vật lý tại: [`skills/fk-vlog-guide.md`](file:///c:/flowkit/skills/fk-vlog-guide.md) (ngừng dùng)
    - Quy tắc hệ thống: **Rule 49 trong AGENTS.md / CLAUDE.md**.
 
 ---

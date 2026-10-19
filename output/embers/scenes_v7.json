@@ -81,7 +81,9 @@
     "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)",
     "note_v7_rewrite": "2026-10-19: rewritten (pickup loading / answer the truck); old video obsolete, needs regen",
     "flow_account": "dinhvulon25",
-    "flow_project_id": "f4415512-2ab8-42ce-852f-122351e055a8"
+    "flow_project_id": "f4415512-2ab8-42ce-852f-122351e055a8",
+    "skip_regen": true,
+    "skip_note": "user 2026-10-19 ~22:15: không cần sinh lại"
   },
   "RA-05": {
     "scene_id": "43cddfc4-2392-4e96-b959-6fd4cab977b9",
@@ -108,7 +110,9 @@
     "approved": false,
     "note_v7_rewrite": "2026-10-19: rewritten (pickup loading / answer the truck); old video obsolete, needs regen",
     "flow_account": "dinhvulon25",
-    "flow_project_id": "f4415512-2ab8-42ce-852f-122351e055a8"
+    "flow_project_id": "f4415512-2ab8-42ce-852f-122351e055a8",
+    "skip_regen": true,
+    "skip_note": "user 2026-10-19 ~22:15: không cần sinh lại"
   },
   "RA-06": {
     "scene_id": "14421c95-0980-493f-9ea4-1a65695a240c",
@@ -641,7 +645,15 @@
     "uploaded": true,
     "clean_media_id": "8c34fc69-e9bd-45ac-ab4a-428823813f8f",
     "image_file": "images/scene_024_MP-02_clean.jpg",
-    "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)"
+    "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)",
+    "video_media_id": "650c6b59-df34-4198-bad8-8236c40057cd",
+    "video_file": "scenes/scene_024_MP-02_20b5906a.mp4",
+    "flow_account": "dinhvulon25",
+    "flow_project_id": "f4415512-2ab8-42ce-852f-122351e055a8",
+    "approved": true,
+    "approve_note": "user approved 2026-10-19 evening",
+    "submit_note": "2026-10-19 evening: v7 prompt + 3 handoff lessons (viewer invisible, digital cinema full-bleed, soaked pink sludge); request 11f154a1 op dbdbbd3e, not a ghost (matched in listing)",
+    "review_note": "v1 score 8.0: one continuous handheld shot that arcs around her (scene-detect clean, no fade-in, no border); Whisper PASS 100% Nora/kore 0.0-3.16s 'Cap. The grass. It's laying down uphill.', only Nora speaks; she looks off-left at Ray, never into the lens; from ~2.7s she points down-left with her glove; ragged flames and grey-brown smoke on the slope, dusk light. Minor: pink retardant is heavy streaks on shirt and braid, not a full head-to-toe soak (face mostly soot); lime-green patches appear on her helmet from ~2s (Crew Helmet ref is plain yellow); a crew shoulder fills the left foreground 0-1s; the grass laying uphill is not readable; no low red sun."
   },
   "MP-03": {
     "scene_id": "cc8585de-dd53-480a-922a-3ef81052b717",
@@ -661,7 +673,17 @@
     "uploaded": true,
     "clean_media_id": "9a58df67-54ae-4dd1-9ef9-a3a91a8c76c4",
     "image_file": "images/scene_025_MP-03_clean.jpg",
-    "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)"
+    "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)",
+    "video_media_id": "a599f2fe-e4c9-4f51-8059-e4686988c001",
+    "video_file": "scenes/scene_025_MP-03_cc8585de.mp4",
+    "flow_account": "dinhvulon25",
+    "flow_project_id": "f4415512-2ab8-42ce-852f-122351e055a8",
+    "approved": true,
+    "ai_keep": true,
+    "ai_score": 8.25,
+    "submit_note": "2026-10-19 evening auto-loop: v7 prompt + handoff lessons; request 525f98cf op 7d4fce6b",
+    "review_note": "v1 score 8.25 (CC 8.5 / PA 7.5 / MQ 8.5 / VF 8.5 / TC 8.5 / CO 8.0): one continuous handheld shot, scene-detect clean, no border; Ray (white helmet, only one) shouts to the crew, gestures toward the ridge, crew grabs tools and starts moving 6-8s; low red sun in smoke haze, flames on the ridge. Whisper PASS 95% Ray/algenib 0.0-7.6s, '? VOICE?' 276 Hz (shouting) - listen. Audio -14.7 LUFS, peak -3.0 dBFS, no dead air. Minor: framed MS/WS on Ray, not the EWS of the fire column leaning over the ridge; embers streaming over the crest barely readable; smoke column a bit puffy; crew faces visible.",
+    "approve_note": "user approved 2026-10-19 ~22:05 (\"duyệt hết những video đã gen\")"
   },
   "MP-04": {
     "scene_id": "d4f60adf-b750-4853-9090-04b121e4acaf",
@@ -684,7 +706,19 @@
     "uploaded": true,
     "clean_media_id": "06ab02ea-87f5-44c8-a509-1f9ec6d444e4",
     "image_file": "images/scene_026_MP-04_clean.jpg",
-    "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)"
+    "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)",
+    "flow_account": "dinhvulon25",
+    "flow_project_id": "f4415512-2ab8-42ce-852f-122351e055a8",
+    "approved": true,
+    "review_note_v1": "v1 score 7.55 (media 361ef197-6c75-4101-8e8d-7b91b6f7d835, scenes/scene_026_MP-04_d4f60adf.mp4; CC 6.5 / PA 7.0 / MQ 8.5 / VF 8.5 / TC 8.5 / CO 7.0): one continuous shot, no cuts, Whisper PASS (silent), spot fires bloom both sides, low red sun. FAIL: Nora has no pink retardant at all (continuity with FL-12/MP-02); crew runs straight at the camera instead of right to left; Nora ends staring into the lens. Fix: side-on tracking right-to-left in profile, pink sludge in the timeline, eyes on the path.",
+    "video_media_id": "075e878c-6fd1-4b10-9523-0e03eed38619",
+    "video_file": "scenes/scene_026_MP-04_d4f60adf_v2.mp4",
+    "ai_keep": true,
+    "ai_score": 8.0,
+    "submit_note": "v2 request e19579a1 op 3d096c61 (side-on tracking, pink sludge in timeline, eyes on path)",
+    "review_note": "v2 score 8.0 (CC 8.0 / PA 7.5 / MQ 8.0 / VF 8.5 / TC 8.0 / CO 8.5): one continuous handheld shot, scene-detect clean; Nora soaked pink (helmet, face, shirt, braid) runs in profile with the crew, never looks at the lens; spot fires bloom in the grass on both sides; low red sun, smoke haze. Whisper PASS (silent). Audio -24.4 LUFS (no dialogue), peak -3.9 dBFS. Minor/flag: running direction reads left-to-right in the first half and right-to-left at the end as the camera arcs around her; pink sludge also covers her pants (whole outfit pink); smoke column a bit puffy.",
+    "delete_note": "2026-10-19: takes v1 (below 8) deleted on user request; kept take is video_file",
+    "approve_note": "user approved 2026-10-19 ~22:05 (\"duyệt hết những video đã gen\")"
   },
   "FL-13": {
     "scene_id": "0e9a4d05-a89e-42cd-9906-baa634e61749",
@@ -707,7 +741,17 @@
     "uploaded": true,
     "clean_media_id": "79264b72-6934-4493-b2c8-6bc6e3cc5dd0",
     "image_file": "images/scene_027_FL-13_clean.jpg",
-    "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)"
+    "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)",
+    "video_media_id": "03ff5f0e-21ee-4140-aa75-92dc9a91d4b1",
+    "video_file": "scenes/scene_027_FL-13_0e9a4d05.mp4",
+    "flow_account": "dinhvulon25",
+    "flow_project_id": "f4415512-2ab8-42ce-852f-122351e055a8",
+    "approved": true,
+    "ai_keep": true,
+    "ai_score": 8.5,
+    "submit_note": "2026-10-19 evening auto-loop: v7 prompt + handoff lessons; request 266e53bb op 44748611",
+    "review_note": "v1 score 8.5 (CC 8.5 / PA 8.5 / MQ 8.5 / VF 8.5 / TC 8.5 / CO 8.5): one continuous handheld shot, scene-detect clean; rookie turns back to a dropped chainsaw, Nora grabs his pack strap, hauls him back and shoves him downhill; pink retardant on her shirt and helmet, soot on face; eyes on the rookie, never the lens; flames on the slope, low red sun. Whisper PASS 100% Nora/kore 0.11-4.29s. Audio -12.5 LUFS, true peak -0.1 dBFS (hot - normalize in edit). Minor: rookie's face partly visible in profile; pink is lighter than FL-12's drench; orange chainsaw (no readable logo).",
+    "approve_note": "user approved 2026-10-19 ~22:05 (\"duyệt hết những video đã gen\")"
   },
   "MP-05": {
     "scene_id": "4f44afa0-49eb-4e6e-b81e-bc1e28db3fb2",
@@ -725,7 +769,19 @@
     "uploaded": true,
     "clean_media_id": "2dc91f64-a17b-4ec7-8be5-9f958bf40a42",
     "image_file": "images/scene_028_MP-05_clean.jpg",
-    "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)"
+    "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)",
+    "flow_account": "dinhvulon25",
+    "flow_project_id": "f4415512-2ab8-42ce-852f-122351e055a8",
+    "approved": true,
+    "review_note_v1": "v1 score 6.5 (media d1960cc4-3319-43c3-803f-4e0f08a1a37a, scenes/scene_028_MP-05_4f44afa0.mp4; CC - / PA 6.0 / MQ 6.0 / VF 7.5 / TC 5.5 / CO 7.0): Whisper PASS (silent). FAIL: ~1.5-2.5s the view dissolves from distant sunset smoke to a different close burning ridge (time jump, scene-detect missed it); trucks drive toward the camera, not right to left; second half the trucks barely move. Fix: one fixed side-on telephoto framing, ridge burning from frame 0, trucks right-to-left continuously.",
+    "video_media_id": "3ff5457c-35b7-48b3-9bc5-2c14cbe38dc0",
+    "video_file": "scenes/scene_028_MP-05_4f44afa0_v2.mp4",
+    "ai_keep": true,
+    "ai_score": 8.25,
+    "submit_note": "v2 request f1edd95f op 99370fcb (fixed side-on telephoto, ridge burning from frame 0, trucks R-to-L)",
+    "review_note": "v2 score 8.25 (CC 8.5 / PA 7.5 / MQ 8.5 / VF 8.0 / TC 9.0 / CO 8.5): one fixed telephoto framing, no cut/dissolve; burning pine ridge from frame 0 under a smoke-red sun; a line of red engines drives right to left on the dirt road raising dust the whole clip (checked 0.5/3/5.5s crops). Whisper PASS (silent). Audio -23.8 LUFS, peak -4.2 dBFS. Minor: the fire pulling ahead of the trucks is not readable; smoke column puffy/round; parked staging vehicles and containers in the lower-left foreground.",
+    "delete_note": "2026-10-19: takes v1 (below 8) deleted on user request; kept take is video_file",
+    "approve_note": "user approved 2026-10-19 ~22:05 (\"duyệt hết những video đã gen\")"
   },
   "EL-03": {
     "scene_id": "7b51db6b-a00b-4d82-b2e7-3916e542d4bc",
@@ -748,7 +804,18 @@
     "uploaded": true,
     "clean_media_id": "d5454556-1db0-4b00-9385-f2cc496abadb",
     "image_file": "images/scene_029_EL-03_clean.jpg",
-    "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)"
+    "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)",
+    "flow_account": "dinhvulon25",
+    "flow_project_id": "5fef436f-7af9-4797-b88b-c5f128b63a03",
+    "approved": true,
+    "submit_note": "2026-10-19: two ghost ops (req 35d799db op 47b51917, req 2253543c op 5fb7db95), both set FAILED retry_count=99; all 18 refs exist in the Flow project; suspected silent safety filter on the line 'I'm here to buy her back! I've got forty dollars!' (no horse context in the prompt). Waiting for the user to pick a fix. | 3rd try with option A (horse context added, line unchanged): req e646ca9b op c998b0f4 also ghosted after 9 min, set FAILED retry_count=99. | 4th try (option C line \"I came for Juniper! Please, I can pay!\" + rope halter over shoulder) req 03053b25 op a9ae0c99 ghosted, set FAILED retry_count=99. Found dramatic_craft.subtext still said \"buy back a horse with forty dollars\" in every try; 5th try strips all buy/dollar/rope/sell wording. | 2-ref tries (Eli + Keller Barn): op d12f538b and v6 (no fire/embers wording) op c25b304c both ghosted. Not explained by dialogue, money/rope wording, ref set or DB row; needs a manual test in the Flow web UI.",
+    "video_media_id": "7079d73a-1695-4c9b-bad9-83d8f114f56b",
+    "video_file": "scenes/scene_029_EL-03_7b51db6b_nopay.mp4",
+    "ai_keep": true,
+    "ai_score": 8.35,
+    "line_change": "2026-10-19: line changed to \"Mr. Keller? It's Eli Hale! I came for Juniper! Is anyone here?\" (12 words) - every earlier wording that mentioned paying/buying (\"buy her back... forty dollars\", \"Please, I can pay!\") ghosted 8 times; update script_v7.md / subtitles",
+    "review_note": "v1 score 8.35 (CC 8.5 / PA 8.0 / MQ 8.5 / VF 8.5 / TC 8.5 / CO 8.0): first take that rendered (named-ref project 5fef436f, 4 refs); one continuous shot, scene-detect clean; Eli (green hoodie, backpack) lays the red bike down by the open gate, cups his hands and calls toward the red barn, walks into the empty yard and looks around; dusk orange sky with smoke behind the barn. Whisper PASS 100% Eli/fenrir 0.53-5.33s, '? VOICE?' 320 Hz (shouting) - listen. Audio -15.8 LUFS, peak -2.9 dBFS. Minor: embers barely visible; smoke slightly puffy; at the end he faces the camera side-on, eyes off to frame right.",
+    "approve_note": "user approved 2026-10-19 ~22:05 (\"duyệt hết những video đã gen\")"
   },
   "EL-05": {
     "scene_id": "de04a4b9-23d0-4525-9e9c-67d9318fd999",
@@ -770,7 +837,19 @@
     "uploaded": true,
     "clean_media_id": "6ea722b3-ab03-4264-a997-57039227a4f3",
     "image_file": "images/scene_030_EL-05_clean.jpg",
-    "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)"
+    "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)",
+    "flow_account": "dinhvulon25",
+    "flow_project_id": "f4415512-2ab8-42ce-852f-122351e055a8",
+    "approved": true,
+    "review_note_v1": "v1 score 7.1 (media 2055e043-7baf-4a06-8531-b1b0bfbd5b1c, scenes/scene_030_EL-05_de04a4b9.mp4; CC 8.5 / PA 6.0 / MQ 6.0 / VF 7.5 / TC 7.0 / CO 7.5): no cuts; Eli (green hoodie) and grey dappled mare match refs; Whisper PASS 100% Eli/fenrir 0.14-4.98s. FAIL: the barn door opens onto a burning yard with large black wing-like debris flying around (2-5s), far more than smoke curling under the door; Eli talks beside the mare instead of pressing his forehead to her face. Fix: door stays shut, thin floor smoke ribbon, forehead-to-face, nothing flies.",
+    "video_media_id": "0916c120-cc1b-40cb-ba01-e672f7ffb6ca",
+    "video_file": "scenes/scene_030_EL-05_de04a4b9_v2.mp4",
+    "ai_keep": true,
+    "ai_score": 8.5,
+    "submit_note": "v2 request 9e2a27a7 op 0ca64192 (door shut, floor smoke ribbon, forehead-to-face)",
+    "review_note": "v2 score 8.5 (CC 9.0 / PA 8.0 / MQ 8.5 / VF 8.5 / TC 8.5 / CO 8.5): one continuous shot, no cuts; Eli (green hoodie) rests his forehead on the grey dappled mare's face, hand on her cheek, then strokes her head; low grey smoke drifts in behind the mare from ~2.5s; no flames, nothing flying; Eli never looks at the lens. Whisper PASS 100% Eli/fenrir 0.11-5.19s. Audio -17.5 LUFS, peak -1.5 dBFS. Minor: light through the slats reads white daylight, not orange; smoke comes from behind the mare rather than visibly under the door; his eyes are not clearly closed.",
+    "delete_note": "2026-10-19: takes v1 (below 8) deleted on user request; kept take is video_file",
+    "approve_note": "user approved 2026-10-19 ~22:05 (\"duyệt hết những video đã gen\")"
   },
   "EL-06": {
     "scene_id": "c50977a5-b917-48ae-8df9-3b28a71f58a2",
@@ -790,7 +869,20 @@
     "uploaded": true,
     "clean_media_id": "86ed0a79-c336-4bf5-8dfc-605898401266",
     "image_file": "images/scene_031_EL-06_clean.jpg",
-    "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)"
+    "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)",
+    "flow_account": "dinhvulon25",
+    "flow_project_id": "f4415512-2ab8-42ce-852f-122351e055a8",
+    "approved": true,
+    "review_note_v1": "v1 score 7.55 (media 1f5e7a8b-3d92-4559-a096-6c2d721efac8, scenes/scene_031_EL-06_c50977a5.mp4; CC 8.5 / PA 7.0 / MQ 7.5 / VF 6.5 / TC 8.0 / CO 7.5): no cuts; Eli (green hoodie) leaves the message, spins at the end. Whisper PASS 100% Eli/fenrir 0.43-4.19s. Audio -14.7 LUFS, peak -0.2 dBFS. FAIL: cartoon puffy round smoke clumps; flames burning all over inside the barn (script: smoke under the door); Eli stares straight into the lens ~3.5-4s. Fix: no flames inside, thin torn wisps under the door, eyes on the door.",
+    "review_note_v2": "v2 score 6.6 (media f523b7e3-614f-4870-8b09-5f64c7d78ba1, scenes/scene_031_EL-06_c50977a5_v2.mp4; CC 5.0 / PA 7.0 / MQ 7.5 / VF 6.5 / TC 7.0 / CO 8.0): no flames, eyes off-lens, Whisper PASS 100% 0.02-4.18s, audio peak -0.0 dBFS. FAIL: smoke drawn as thin CGI squiggle ribbons floating mid-air; at 4-6s a bright daylight doorway opens and a BROWN horse appears (Juniper is grey dappled; script keeps the mare off-frame). Fix: soft low floor haze, door shut, mare heard never seen.",
+    "video_media_id": "34c40e30-89bc-4cc2-b957-240864067140",
+    "video_file": "scenes/scene_031_EL-06_c50977a5_v3.mp4",
+    "ai_keep": true,
+    "ai_score": 8.0,
+    "submit_note": "v3 request ef6df83d op a1c2ac2c (soft floor haze, door shut, mare off-frame); v2 attempt 9e36b278 hit UNUSUAL_ACTIVITY (no video)",
+    "review_note": "v3 score 8.0 (CC 7.0 / PA 8.0 / MQ 8.5 / VF 8.5 / TC 8.5 / CO 8.5): one continuous shot, no cuts; Eli on the handset leaves the message, eyes on the door, never the lens; realistic soft grey smoke seeps in low across the straw; no flames; at the end he spins and moves toward frame right. Whisper PASS 100% Eli/fenrir 0.05-4.15s. Audio -15.4 LUFS, peak -1.0 dBFS. Flag: 4-6s a dim BROWN horse head shows in a background stall (Juniper is grey dappled; should stay off-frame); cool grey light, not orange; he holds the handset with both hands at times.",
+    "delete_note": "2026-10-19: takes v1,v2 (below 8) deleted on user request; kept take is video_file",
+    "approve_note": "user approved 2026-10-19 ~22:05 (\"duyệt hết những video đã gen\")"
   },
   "EM-01": {
     "scene_id": "493785b6-4f87-4ead-997f-d91317344862",
@@ -810,7 +902,21 @@
     "uploaded": true,
     "clean_media_id": "e043e764-da8f-45ae-8405-bd93751b2173",
     "image_file": "images/scene_032_EM-01_clean.jpg",
-    "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)"
+    "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)",
+    "flow_account": "dinhvulon25",
+    "flow_project_id": "5fef436f-7af9-4797-b88b-c5f128b63a03",
+    "approved": true,
+    "review_note_v1": "v1 score 7.6 (media 53d0b9b1-7d49-44fb-b88c-c3f19ebde8df, scenes/scene_032_EM-01_493785b6.mp4; CC 8.5 / PA 6.0 / MQ 8.0 / VF 7.5 / TC 7.5 / CO 8.0): one shot, no cuts; Ray (white helmet) by the engine, lifts a radio, female firefighter by the pickup at the end; red sunset sky. FAIL: Whisper EXTRA SPEECH 'I've had to treat' 3.0-3.9s in a silent clip (likely the radio voiced a line); a tall flame jet right behind the engine reads as the truck burning. Fix: radio static only, no voices in audio; flames only on the distant ridge.",
+    "review_note_v2": "v2 score 7.4 (media b7f0cf65-59ad-447b-9202-0a31464d6d64, scenes/scene_032_EM-01_493785b6_v2.mp4; CC 8.5 / PA 6.0 / MQ 8.0 / VF 8.0 / TC 6.5 / CO 8.0): one shot, fire only on the distant ridge, trucks intact, red sunset. FAIL: Ray lifts the radio to his mouth from ~2.5s and talks into it - Whisper EXTRA SPEECH 3.1-5.5s 'thats a two sir died you twenty cans of given'; female firefighter tiny, look-up not readable. Fix: radio stays clipped, Ray never touches it, lips shut, hands at sides.",
+    "submit_note": "v5 request abadcceb op 56660e6d (no radio on screen, edge-to-edge frame, Ray still side-on)",
+    "review_note": "v5 score 8.4 (CC 8.5 / PA 8.0 / MQ 8.5 / VF 8.5 / TC 8.5 / CO 8.5): edge-to-edge frame, square corners, no border (fixes v4); one continuous shot, scene-detect clean; Ray (white helmet) stands still side-on by the engine, turns his head slightly as if hearing something; female firefighter by the white pickup appears at 4-6s, stops and looks toward him; fire only on the far hills under a red-pink sunset; nobody speaks. Whisper PASS (silent). Audio -28.2 LUFS (quiet, raise in the edit - Walt's radio post_vo goes over it), peak -4.5 dBFS. Minor: a coiled cord and small clip still hang from Ray's chest strap; flames on the right hillside a bit nearer than the far ridge.",
+    "delete_note": "2026-10-19: v1/v2/v3 (all below 8: 7.6 / 7.4 / 7.5, radio ghost speech) deleted on user request; regen without any radio on screen (Bài học 99)",
+    "review_note_v4": "v4 score 7.45 (media d9c2ca94-8bb5-4a9d-a5ca-3019e55a5e5e, scenes/scene_032_EM-01_493785b6_v4.mp4; CC 8.5 / PA 7.0 / MQ 8.0 / VF 6.5 / TC 8.5 / CO 5.0): no radio voice - Whisper PASS (silent), no speech at all; fire only on the far ridge, trucks intact, Ray (white helmet) by the gear, female firefighter by the white pickup. FAIL: whole clip sits inside a dark film-frame border with rounded corners (like FL-07 v1); a small speaker-mic still hangs on Ray's chest strap; Ray walks toward the viewer and the woman walks toward the lens instead of stopping and looking up. Audio very quiet -34.3 LUFS.",
+    "video_media_id": "fba33422-66ca-4f98-be69-d3941a4c5fdb",
+    "video_file": "scenes/scene_032_EM-01_493785b6_v5.mp4",
+    "ai_keep": true,
+    "ai_score": 8.4,
+    "approve_note": "user approved v5 2026-10-19 ~22:12; v4 deleted"
   },
   "EM-02": {
     "scene_id": "3835fbf3-df8e-4c01-b165-984d100d683d",
@@ -833,7 +939,20 @@
     "uploaded": true,
     "clean_media_id": "7be95241-f74d-4df7-a973-796a947fabe7",
     "image_file": "images/scene_033_EM-02_clean.jpg",
-    "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)"
+    "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)",
+    "flow_account": "dinhvulon25",
+    "flow_project_id": "f4415512-2ab8-42ce-852f-122351e055a8",
+    "approved": true,
+    "review_note_v1": "v1 score 7.7 (media ba502022-1824-4796-af54-5ae6163a7626, scenes/scene_033_EM-02_3835fbf3.mp4; CC 8.5 / PA 7.0 / MQ 7.5 / VF 8.0 / TC 8.0 / CO 7.0): one shot, no cuts, Whisper PASS (silent), pink retardant on her shirt, plain yellow helmet. FAIL: she opens the door, lets go and turns away instead of freezing with her hand on the handle; framed MS not CU; flames burning on the ground right among the staging trucks; at the end she nearly stares into the lens. Fix: CU, door stays shut, hand stays on handle, eyes to frame left, no fire near trucks.",
+    "review_note_v2": "v2 score 7.9 (media 797735c9-8ae0-4761-a82d-54d2d039c528, scenes/scene_033_EM-02_3835fbf3_v2.mp4; CC 6.0 / PA 8.5 / MQ 8.5 / VF 8.5 / TC 8.5 / CO 8.5): one shot, Whisper PASS (silent); hand closes on the handle, door stays shut, she freezes and her eyes widen; staging area safe, fire only on the far ridge; heavy pink sludge and soot. FAIL: outfit drift - she wears a SLEEVELESS top with bare arms instead of the long-sleeved yellow fire shirt from Nora Body Fire; green patches on the helmet again. Fix: explicit long-sleeve lock.",
+    "video_media_id": "5e03a615-bcea-4c6b-9326-9a92467029ad",
+    "video_file": "scenes/scene_033_EM-02_3835fbf3_v3.mp4",
+    "ai_keep": true,
+    "ai_score": 8.25,
+    "submit_note": "v3 request f9c75e52 op ad226aaf (long-sleeve lock)",
+    "review_note": "v3 score 8.25 (CC 8.0 / PA 8.0 / MQ 8.5 / VF 8.5 / TC 8.5 / CO 8.5): one shot, no cuts; long-sleeved yellow fire shirt, gloved hand closes on the handle, door stays shut, she freezes and her eyes widen toward frame left, never the lens; staging area safe, fire only on the far ridge under a red-pink sunset. Whisper PASS (silent). Audio -27.7 LUFS, peak -0.7 dBFS. Minor/flag: pink retardant almost gone (just soot and dirt) - continuity with FL-12/MP-02; lime reflective band on the helmet again.",
+    "delete_note": "2026-10-19: takes v1,v2 (below 8) deleted on user request; kept take is video_file",
+    "approve_note": "user approved 2026-10-19 ~22:05 (\"duyệt hết những video đã gen\")"
   },
   "EM-03": {
     "scene_id": "808d2300-d060-4972-acfb-3872d2c0d162",
@@ -856,6 +975,1286 @@
     "uploaded": true,
     "clean_media_id": "9c379f8c-9ec9-449e-a8ca-85bd924d1f96",
     "image_file": "images/scene_034_EM-03_clean.jpg",
-    "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)"
+    "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)",
+    "flow_account": "dinhvulon25",
+    "flow_project_id": "f4415512-2ab8-42ce-852f-122351e055a8",
+    "approved": true,
+    "review_note_v1": "v1 score 7.9 (media 5c488a71-b6ba-439b-8883-a9927811e96e, scenes/scene_034_EM-03_808d2300.mp4; CC 8.5 / PA 7.0 / MQ 8.5 / VF 8.0 / TC 8.0 / CO 7.0): one shot, no cuts; Whisper PASS 100% Nora/kore 0.62-3.14s, no radio voice; long-sleeved shirt, faint pink. Audio -12.4 LUFS, peak +0.1 dBFS (clips - normalize). FAIL: she faces and nearly stares into the lens the whole clip; flames burning right by the staging trucks; at 6-8s she never turns to the burning ridge. Fix: three-quarter profile, eyes off-frame right then frame left, no fire near trucks.",
+    "video_media_id": "27046933-4a7d-4c2b-bcc1-e4dbe5b2699b",
+    "video_file": "scenes/scene_034_EM-03_808d2300_v2.mp4",
+    "ai_keep": true,
+    "ai_score": 8.15,
+    "submit_note": "v2 request 42f889b4 op 62a17e26 (three-quarter profile, eyes off-lens, no fire near trucks)",
+    "review_note": "v2 score 8.15 (CC 7.5 / PA 8.0 / MQ 8.5 / VF 8.5 / TC 8.5 / CO 8.5): one shot, no cuts; Nora in three-quarter profile speaks into the handheld radio, listens with her mouth closed, lowers it and turns her head; long-sleeved shirt; fire only on the distant hills, staging trucks safe. Whisper PASS 100% Nora/kore 0.37-2.83s, no radio voice. Audio -15.7 LUFS, peak -0.8 dBFS. Flag: 0-1.5s a man in a YELLOW helmet stands at the right frame edge (Ray wears white) before leaving frame; pink retardant faint; final look-back is toward frame right rather than clearly at the ridge.",
+    "delete_note": "2026-10-19: takes v1 (below 8) deleted on user request; kept take is video_file",
+    "approve_note": "user approved 2026-10-19 ~22:05 (\"duyệt hết những video đã gen\")"
+  },
+  "CH-00": {
+    "scene_id": "ca4a14db-d83c-4f3a-a8c9-37ed7b11d020",
+    "act": "",
+    "duration": 8,
+    "video_refs": [
+      "Nora",
+      "Nora Body Fire",
+      "Crew Helmet",
+      "Staging Area"
+    ],
+    "flow_account": "dinhvulon25",
+    "flow_project_id": "5fef436f-7af9-4797-b88b-c5f128b63a03",
+    "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)",
+    "created_note": "2026-10-19: scene created from prompts_v7.json (chips resolved to named refs); handoff lessons not applied yet",
+    "approved": true,
+    "review_note_v1": "v1 score 7.55 (media 1e9f1e88-ff3a-4177-9225-941dfcbbe2fa, scenes/scene_035_CH-00_ca4a14db.mp4; CC 8.0 / PA 6.5 / MQ 8.5 / VF 8.0 / TC 7.0 / CO 6.5): one shot, no cuts, no radio voice, long sleeves, pink retardant on the shirt; at 6-8s she lowers the radio and turns toward the pickup. FAIL: Whisper TIMING - Nora's line runs 0.34-5.8s (planned 0-4s), overlapping where the dispatch reply goes in the edit; she faces the camera straight-on and nearly looks into the lens the whole time; flames burn right behind/above the parked engines (staging area should be safe); a star emblem and green patches on her helmet. Audio -11.5 LUFS, peak +0.1 dBFS (clips).",
+    "video_media_id": "9bf8f6b2-7094-44cf-b6b6-a94ff3955ff8",
+    "video_file": "scenes/scene_035_CH-00_ca4a14db_v2.mp4",
+    "ai_keep": true,
+    "ai_score": 8.2,
+    "submit_note": "v2 request 1832da2e op e1ab2b2b (three-quarter profile, fast line, no fire near trucks, plain helmet)",
+    "review_note": "v2 score 8.2 (CC 8.0 / PA 8.0 / MQ 8.5 / VF 8.5 / TC 7.5 / CO 8.5): one continuous shot, no cuts; Nora in three-quarter profile speaks into the handheld radio, eyes on the far hills, never at the lens; listens with her mouth closed, lowers the radio and turns away at the end; fire only on the distant hillside, staging trucks intact; no radio voice. Whisper 92% ('Hale' heard as 'hail') but TIMING flag: line runs 0.21-5.59s (planned 0-3.5s) - Omni speaks 12 words at a natural ~5.4s pace; in the edit start the dispatch post_vo at ~5.7s and let it J-cut into the next clip. Audio -13.4 LUFS, true peak -0.0 dBFS (normalize). Minor: pink retardant nearly gone (soot only); lime band on the helmet again.",
+    "approve_note": "user approved v2 2026-10-19; v1 deleted"
+  },
+  "CH-01": {
+    "scene_id": "78bee1b9-16f2-40d3-9ddb-a2288b42c1cc",
+    "act": "",
+    "duration": 8,
+    "video_refs": [
+      "Ray",
+      "Nora Body Fire",
+      "Staging Area"
+    ],
+    "flow_account": "dinhvulon25",
+    "flow_project_id": "5fef436f-7af9-4797-b88b-c5f128b63a03",
+    "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)",
+    "created_note": "2026-10-19: scene created from prompts_v7.json (chips resolved to named refs); handoff lessons not applied yet",
+    "video_media_id": "ef9608a0-ae1d-4f6f-b4c6-27e5d5638a2b",
+    "video_file": "scenes/scene_036_CH-01_78bee1b9.mp4",
+    "approved": true,
+    "ai_keep": true,
+    "ai_score": 8.4,
+    "submit_note": "v1 request 758abdf0 op 4e3dc754",
+    "review_note": "v1 score 8.4 (CC 8.5 / PA 8.0 / MQ 8.5 / VF 8.5 / TC 9.0 / CO 8.0): one continuous shot, scene-detect clean; over Nora's shoulder (braid, helmet, pink-stained long-sleeved shirt, face never shown), Ray (white helmet) steps in front of the open truck door and speaks low and hard, then holds still; staging trucks intact, flames only on the hillside behind. Whisper PASS 100% Ray/algenib 0.0-6.4s. Audio -16.2 LUFS, peak -3.2 dBFS. Minor: eye-level rather than a low angle on Ray; a shoulder patch on Nora's sleeve (not readable); lime band on her helmet.",
+    "approve_note": "user approved 2026-10-19"
+  },
+  "CH-02": {
+    "scene_id": "cb02f9b9-f8fe-46ca-adfb-44434309ac16",
+    "act": "",
+    "duration": 4,
+    "video_refs": [
+      "Nora",
+      "Nora Body Fire",
+      "Crew Helmet",
+      "Staging Area"
+    ],
+    "flow_account": "dinhvulon25",
+    "flow_project_id": "5fef436f-7af9-4797-b88b-c5f128b63a03",
+    "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)",
+    "created_note": "2026-10-19: scene created from prompts_v7.json (chips resolved to named refs); handoff lessons not applied yet",
+    "video_media_id": "ce2fab2c-743d-4d9a-9528-111585440698",
+    "video_file": "scenes/scene_037_CH-02_cb02f9b9.mp4",
+    "approved": true,
+    "ai_keep": true,
+    "ai_score": 8.25,
+    "submit_note": "v1 request 60ceb558 op 1e535611",
+    "review_note": "v1 score 8.25 (CC 8.5 / PA 7.5 / MQ 8.5 / VF 8.5 / TC 8.5 / CO 8.0): one continuous close-up, scene-detect clean; Nora in three-quarter profile, eyes mostly off-frame left toward Ray, delivers the line flat and quiet; pink streaks on the shirt, soot on the face. Whisper PASS 83% Nora/kore 0.14-2.9s ('Ray' heard as 'rey'). Audio -12.4 LUFS, peak -0.8 dBFS. Minor: her face turns close to the lens around 1-1.5s; a flame burns just behind the pickup on the left (staging area should be safe); lime reflective band on the helmet - not in the Crew Helmet ref, the model adds it from real wildland helmets.",
+    "approve_note": "user approved 2026-10-19"
+  },
+  "CH-03": {
+    "scene_id": "e2543c1f-1aed-4954-b0d0-a39bbb16ed00",
+    "act": "",
+    "duration": 8,
+    "video_refs": [
+      "Ray",
+      "Nora Body Fire",
+      "Staging Area"
+    ],
+    "flow_account": "dinhvulon25",
+    "flow_project_id": "5fef436f-7af9-4797-b88b-c5f128b63a03",
+    "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)",
+    "created_note": "2026-10-19: scene created from prompts_v7.json (chips resolved to named refs); handoff lessons not applied yet",
+    "video_media_id": "e192189d-2ad2-40ab-95dd-69268dd77646",
+    "video_file": "scenes/scene_038_CH-03_e2543c1f_v2.mp4",
+    "approved": true,
+    "ai_keep": true,
+    "ai_score": 8.15,
+    "submit_note": "v2 request 8cffdd81 op 303b05b8 (loud, sharp, clipped delivery - Bài học 101)",
+    "review_note": "v2 score 8.15 (CC 8.5 / PA 7.0 / MQ 8.5 / VF 8.5 / TC 8.5 / CO 8.0): delivery fixed - Ray shouts, mouth wide, jaw set, pitch 182 Hz vs 123 Hz in v1; push-in over Nora's shoulder, heavy pink sludge on her back, face never shown. Whisper PASS 100% 0.27-6.61s. Audio -16.0 LUFS, peak -2.3 dBFS. FAIL-ish: flames now burn right behind and among the staging trucks (the 'voice raised over the roar of the fire' wording likely pulled the fire in); a handheld radio clipped on Ray's chest; lime band on Nora's helmet.",
+    "review_note_v1": "v1 score 8.6 (CC 8.5 / PA 8.5 / MQ 8.5 / VF 8.5 / TC 9.0 / CO 8.5): one continuous shot with a slow push-in on Ray over Nora's shoulder (braid, pink-stained shirt, face never shown); Ray (white helmet) speaks low, eyes drifting away, then holds her look; staging trucks intact, smoke only on the far hills. Whisper PASS 100% Ray/algenib 0.08-6.98s. Audio -15.5 LUFS, peak -1.0 dBFS. Minor: a speaker-mic clipped on Ray's chest; lime band on Nora's helmet.",
+    "approve_note": "user approved v2 (loud delivery) 2026-10-19; v1 deleted"
+  },
+  "CH-04": {
+    "scene_id": "1c465109-f6ef-44f7-9d85-2b8bd4a7bf16",
+    "act": "",
+    "duration": 4,
+    "video_refs": [
+      "Nora Body Fire",
+      "Ray"
+    ],
+    "flow_account": "dinhvulon25",
+    "flow_project_id": "5fef436f-7af9-4797-b88b-c5f128b63a03",
+    "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)",
+    "created_note": "2026-10-19: scene created from prompts_v7.json (chips resolved to named refs); handoff lessons not applied yet",
+    "video_media_id": "743af859-b27d-4bac-9500-ebff965fb2b3",
+    "video_file": "scenes/scene_039_CH-04_1c465109_v4.mp4",
+    "approved": false,
+    "ai_keep": true,
+    "ai_score": 8.3,
+    "submit_note": "v4 request d29a16d3 op d792f7cc (rigid stubby-antenna radio lying flat, tan gloves, no border); first v4 try 9e916917 hit UNUSUAL_ACTIVITY",
+    "review_note": "v4 score 8.3 (CC 8.5 / PA 8.0 / MQ 8.0 / VF 8.5 / TC 8.5 / CO 8.5): full frame, no border (fixes v3); tan leather glove, pink-stained sleeve; staging area calm, fire only a far glow. Radio keeps the same body and short antenna lying flat (antenna to frame right) for ~0-3s while Nora sets it in Ray's palm; Whisper PASS (silent). Flag: last ~1s Ray turns the radio upright so the antenna reads longer; background slightly soft. Audio -34.4 LUFS (raise in edit), peak -5.7 dBFS.",
+    "review_note_v1": "v1 score 8.0 (CC 8.5 / PA 7.0 / MQ 8.5 / VF 8.0 / TC 8.5 / CO 7.5): one continuous ECU, no cuts; Nora's gloved hand (pink-stained sleeve) presses the radio into Ray's bare palm, his fingers close on it, her hand pulls away; hands natural, one radio throughout; radio silent - Whisper PASS (no speech). Audio -32.0 LUFS (quiet), peak -1.2 dBFS. Flag: a large fire burns right behind the hands among the staging trucks (staging area should be safe) - likely caused by the generic style line 'real wildfire footage look: irregular orange-yellow flames...'; background soft rather than sharp.",
+    "review_note_v2": "v2 score 8.55 (CC 8.5 / PA 8.5 / MQ 8.5 / VF 8.5 / TC 9.0 / CO 8.5): staging area calm and intact, fire only as a small glow under smoke on the far ridge (fixes v1); one continuous close shot; Nora's gloved hand (pink-stained sleeve) presses the radio into Ray's palm, his fingers close, her hand pulls away, he looks down at it; radio silent - Whisper PASS (no speech). Audio -34.7 LUFS (quiet, raise in the edit), peak -4.6 dBFS. Minor: background slightly soft rather than fully crisp. | USER: the radio morphs during the hand-off -> regen v3 with a rigid single-radio props_lock.",
+    "review_note_v3": "v3 (media 04b3220a-ba91-4f22-b236-2d4700f4f392, scenes/scene_039_CH-04_1c465109_v3.mp4): USER rejected. Rounded-corner film-frame border came back; radio antenna and body grow longer in the second half; Nora's glove shows a red pattern. Audio very quiet -41.8 LUFS. Whisper PASS (silent).",
+    "review_note_v4": "v4 score 8.3 (CC 8.5 / PA 8.0 / MQ 8.0 / VF 8.5 / TC 8.5 / CO 8.5): full frame, no border (fixes v3); tan leather glove, pink-stained sleeve; staging area calm, fire only a far glow. Radio keeps the same body and short antenna lying flat (antenna to frame right) for ~0-3s while Nora sets it in Ray's palm; Whisper PASS (silent). Flag: last ~1s Ray turns the radio upright so the antenna reads longer; background slightly soft. Audio -34.4 LUFS (raise in edit), peak -5.7 dBFS. | USER: radio flips direction at the end -> regen v5 with the hand held still and no rotation.",
+    "review_note_v5": "v5 score 7.75 (media b7150a80-6444-49d3-8f95-f7efdddf22fc, scenes/scene_039_CH-04_1c465109_v5.mp4; CC 8.0 / PA 7.0 / MQ 7.5 / VF 8.5 / TC 8.0 / CO 8.0): no border, staging calm, Whisper PASS (silent). FAIL: radio antenna points right 0-2s, then flips to point LEFT from ~2s when Nora's hand leaves (same flip as v4); Nora's sleeve lost the pink; camera drifts up to Ray's face. The hand-off itself keeps triggering a flip.",
+    "review_note_v6": "v6 score 7.5 (media b4042b07-2eb2-4596-b1f8-afc8f1f4ec8d, scenes/scene_039_CH-04_1c465109_v6.mp4): no hand-off, no border, staging calm, Whisper PASS. FAIL: while Nora's glove covers it (0-1.2s) the radio is a plain block; when the glove lifts (~1.3s) an antenna appears, pointing frame LEFT, and then stays stable to the end. Ray's fingers never close. The model always draws a radio with an antenna, and once it is uncovered it keeps it pointing left."
+  },
+  "CH-05": {
+    "scene_id": "213d9d86-2a34-4354-8693-e662ccf859dc",
+    "act": "",
+    "duration": 6,
+    "video_refs": [
+      "Nora",
+      "Nora Body Fire",
+      "Crew Helmet",
+      "Nora Pickup",
+      "Staging Area"
+    ],
+    "flow_account": "dinhvulon25",
+    "flow_project_id": "5fef436f-7af9-4797-b88b-c5f128b63a03",
+    "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)",
+    "created_note": "2026-10-19: scene created from prompts_v7.json (chips resolved to named refs); handoff lessons not applied yet"
+  },
+  "CH-07": {
+    "scene_id": "7387b5cb-6d4e-4305-9b99-4991e23b3965",
+    "act": "",
+    "duration": 6,
+    "video_refs": [
+      "Ray",
+      "Nora Pickup",
+      "Staging Area"
+    ],
+    "flow_account": "dinhvulon25",
+    "flow_project_id": "5fef436f-7af9-4797-b88b-c5f128b63a03",
+    "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)",
+    "created_note": "2026-10-19: scene created from prompts_v7.json (chips resolved to named refs); handoff lessons not applied yet"
+  },
+  "CH-09": {
+    "scene_id": "bbf4f595-c093-4e15-9a9c-e8960fbc9b37",
+    "act": "",
+    "duration": 6,
+    "video_refs": [
+      "Ray",
+      "Staging Area"
+    ],
+    "flow_account": "dinhvulon25",
+    "flow_project_id": "5fef436f-7af9-4797-b88b-c5f128b63a03",
+    "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)",
+    "created_note": "2026-10-19: scene created from prompts_v7.json (chips resolved to named refs); handoff lessons not applied yet"
+  },
+  "RR-01": {
+    "scene_id": "6d65d48b-d025-4a08-9c2b-4df3c4091590",
+    "act": "",
+    "duration": 8,
+    "video_refs": [
+      "Nora Pickup",
+      "Ridge Road"
+    ],
+    "flow_account": "dinhvulon25",
+    "flow_project_id": "5fef436f-7af9-4797-b88b-c5f128b63a03",
+    "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)",
+    "created_note": "2026-10-19: scene created from prompts_v7.json (chips resolved to named refs); handoff lessons not applied yet"
+  },
+  "RR-02": {
+    "scene_id": "ba32ecf9-5503-4009-8468-b6ac16e69052",
+    "act": "",
+    "duration": 4,
+    "video_refs": [
+      "Ridge Road"
+    ],
+    "flow_account": "dinhvulon25",
+    "flow_project_id": "5fef436f-7af9-4797-b88b-c5f128b63a03",
+    "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)",
+    "created_note": "2026-10-19: scene created from prompts_v7.json (chips resolved to named refs); handoff lessons not applied yet"
+  },
+  "RR-04": {
+    "scene_id": "855e529b-0641-4150-b8df-b0351e69f903",
+    "act": "",
+    "duration": 8,
+    "video_refs": [
+      "Nora",
+      "Nora Body Fire",
+      "Nora Pickup"
+    ],
+    "flow_account": "dinhvulon25",
+    "flow_project_id": "5fef436f-7af9-4797-b88b-c5f128b63a03",
+    "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)",
+    "created_note": "2026-10-19: scene created from prompts_v7.json (chips resolved to named refs); handoff lessons not applied yet"
+  },
+  "RR-06": {
+    "scene_id": "cd708a9f-db06-4430-a17a-ec5c2641d76e",
+    "act": "",
+    "duration": 4,
+    "video_refs": [
+      "Nora",
+      "Nora Body Fire",
+      "HALE Helmet",
+      "Nora Pickup"
+    ],
+    "flow_account": "dinhvulon25",
+    "flow_project_id": "5fef436f-7af9-4797-b88b-c5f128b63a03",
+    "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)",
+    "created_note": "2026-10-19: scene created from prompts_v7.json (chips resolved to named refs); handoff lessons not applied yet"
+  },
+  "RR-07": {
+    "scene_id": "c85505c5-7a2c-42e2-9e6c-25c71c27a924",
+    "act": "",
+    "duration": 6,
+    "video_refs": [
+      "Nora",
+      "Nora Body Fire",
+      "HALE Helmet",
+      "Nora Pickup",
+      "Ridge Road"
+    ],
+    "flow_account": "dinhvulon25",
+    "flow_project_id": "5fef436f-7af9-4797-b88b-c5f128b63a03",
+    "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)",
+    "created_note": "2026-10-19: scene created from prompts_v7.json (chips resolved to named refs); handoff lessons not applied yet"
+  },
+  "RR-08": {
+    "scene_id": "545ae5e1-1dc6-4a95-af4b-1aa42407cc59",
+    "act": "",
+    "duration": 6,
+    "video_refs": [
+      "Nora",
+      "Nora Body Fire",
+      "HALE Helmet",
+      "Ridge Road"
+    ],
+    "flow_account": "dinhvulon25",
+    "flow_project_id": "5fef436f-7af9-4797-b88b-c5f128b63a03",
+    "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)",
+    "created_note": "2026-10-19: scene created from prompts_v7.json (chips resolved to named refs); handoff lessons not applied yet"
+  },
+  "LH-01": {
+    "scene_id": "366868c5-4bbf-4bd9-856c-93c0303be71d",
+    "act": "",
+    "duration": 6,
+    "video_refs": [
+      "Cedar Flat"
+    ],
+    "flow_account": "dinhvulon25",
+    "flow_project_id": "5fef436f-7af9-4797-b88b-c5f128b63a03",
+    "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)",
+    "created_note": "2026-10-19: scene created from prompts_v7.json (chips resolved to named refs); handoff lessons not applied yet"
+  },
+  "LH-02": {
+    "scene_id": "76ffc9cc-4cd4-43d4-a9ba-c04faba63c3e",
+    "act": "",
+    "duration": 6,
+    "video_refs": [
+      "Ray",
+      "Cedar Flat"
+    ],
+    "flow_account": "dinhvulon25",
+    "flow_project_id": "5fef436f-7af9-4797-b88b-c5f128b63a03",
+    "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)",
+    "created_note": "2026-10-19: scene created from prompts_v7.json (chips resolved to named refs); handoff lessons not applied yet"
+  },
+  "RR-13": {
+    "scene_id": "da00d8ea-edd9-4f02-861c-cbc6d5a64c32",
+    "act": "",
+    "duration": 6,
+    "video_refs": [
+      "Nora",
+      "Nora Body Fire",
+      "HALE Helmet",
+      "Ridge Road"
+    ],
+    "flow_account": "dinhvulon25",
+    "flow_project_id": "5fef436f-7af9-4797-b88b-c5f128b63a03",
+    "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)",
+    "created_note": "2026-10-19: scene created from prompts_v7.json (chips resolved to named refs); handoff lessons not applied yet"
+  },
+  "RR-14": {
+    "scene_id": "916b6f45-0e46-4dfe-a614-bd7a137c79b4",
+    "act": "",
+    "duration": 4,
+    "video_refs": [
+      "Nora Body Fire",
+      "Ridge Road"
+    ],
+    "flow_account": "dinhvulon25",
+    "flow_project_id": "5fef436f-7af9-4797-b88b-c5f128b63a03",
+    "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)",
+    "created_note": "2026-10-19: scene created from prompts_v7.json (chips resolved to named refs); handoff lessons not applied yet"
+  },
+  "RR-10": {
+    "scene_id": "fba01c21-6879-4782-bce8-eebce2083bdd",
+    "act": "",
+    "duration": 4,
+    "video_refs": [
+      "Eli Bike",
+      "Keller Barn"
+    ],
+    "flow_account": "dinhvulon25",
+    "flow_project_id": "5fef436f-7af9-4797-b88b-c5f128b63a03",
+    "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)",
+    "created_note": "2026-10-19: scene created from prompts_v7.json (chips resolved to named refs); handoff lessons not applied yet"
+  },
+  "RR-11": {
+    "scene_id": "d8aeb207-8d06-4e14-9b44-57cf90c80ce5",
+    "act": "",
+    "duration": 6,
+    "video_refs": [
+      "Nora",
+      "Nora Body Fire",
+      "HALE Helmet",
+      "Keller Barn"
+    ],
+    "flow_account": "dinhvulon25",
+    "flow_project_id": "5fef436f-7af9-4797-b88b-c5f128b63a03",
+    "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)",
+    "created_note": "2026-10-19: scene created from prompts_v7.json (chips resolved to named refs); handoff lessons not applied yet"
+  },
+  "RR-12": {
+    "scene_id": "def0c40f-f4bb-4e17-85cd-8b88bdac04b1",
+    "act": "",
+    "duration": 4,
+    "video_refs": [
+      "Nora",
+      "Nora Body Fire",
+      "HALE Helmet",
+      "Keller Barn"
+    ],
+    "flow_account": "dinhvulon25",
+    "flow_project_id": "5fef436f-7af9-4797-b88b-c5f128b63a03",
+    "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)",
+    "created_note": "2026-10-19: scene created from prompts_v7.json (chips resolved to named refs); handoff lessons not applied yet"
+  },
+  "BN-01": {
+    "scene_id": "57546ddf-36d2-4bd1-bdca-c3fa7573bdbe",
+    "act": "",
+    "duration": 8,
+    "video_refs": [
+      "Nora",
+      "Nora Body Fire",
+      "HALE Helmet",
+      "Keller Barn"
+    ],
+    "flow_account": "dinhvulon25",
+    "flow_project_id": "5fef436f-7af9-4797-b88b-c5f128b63a03",
+    "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)",
+    "created_note": "2026-10-19: scene created from prompts_v7.json (chips resolved to named refs); handoff lessons not applied yet"
+  },
+  "BN-02": {
+    "scene_id": "0843e5c9-99a1-4db0-b4aa-a92f7a34f87c",
+    "act": "",
+    "duration": 6,
+    "video_refs": [
+      "Eli",
+      "Eli Pack",
+      "Juniper",
+      "Keller Barn"
+    ],
+    "flow_account": "dinhvulon25",
+    "flow_project_id": "5fef436f-7af9-4797-b88b-c5f128b63a03",
+    "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)",
+    "created_note": "2026-10-19: scene created from prompts_v7.json (chips resolved to named refs); handoff lessons not applied yet"
+  },
+  "BN-03": {
+    "scene_id": "bf2c51f3-c58a-4d42-b955-0047d36825bf",
+    "act": "",
+    "duration": 4,
+    "video_refs": [
+      "Nora",
+      "Nora Body Fire",
+      "HALE Helmet",
+      "Keller Barn"
+    ],
+    "flow_account": "dinhvulon25",
+    "flow_project_id": "5fef436f-7af9-4797-b88b-c5f128b63a03",
+    "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)",
+    "created_note": "2026-10-19: scene created from prompts_v7.json (chips resolved to named refs); handoff lessons not applied yet"
+  },
+  "BN-04": {
+    "scene_id": "7f0a63af-dfd8-48ad-b77d-35a719f72c23",
+    "act": "",
+    "duration": 8,
+    "video_refs": [
+      "Eli",
+      "Nora",
+      "Nora Body Fire",
+      "HALE Helmet",
+      "Juniper",
+      "Keller Barn"
+    ],
+    "flow_account": "dinhvulon25",
+    "flow_project_id": "5fef436f-7af9-4797-b88b-c5f128b63a03",
+    "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)",
+    "created_note": "2026-10-19: scene created from prompts_v7.json (chips resolved to named refs); handoff lessons not applied yet"
+  },
+  "BN-05": {
+    "scene_id": "ba7aec0c-b213-497d-bd42-bd86a17ff52b",
+    "act": "",
+    "duration": 8,
+    "video_refs": [
+      "Eli",
+      "Nora Body Fire",
+      "Keller Barn"
+    ],
+    "flow_account": "dinhvulon25",
+    "flow_project_id": "5fef436f-7af9-4797-b88b-c5f128b63a03",
+    "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)",
+    "created_note": "2026-10-19: scene created from prompts_v7.json (chips resolved to named refs); handoff lessons not applied yet"
+  },
+  "BN-06": {
+    "scene_id": "a6adad15-83b3-42d4-a1f1-5cb5ca872890",
+    "act": "",
+    "duration": 4,
+    "video_refs": [
+      "Nora",
+      "Nora Body Fire",
+      "HALE Helmet",
+      "Keller Barn"
+    ],
+    "flow_account": "dinhvulon25",
+    "flow_project_id": "5fef436f-7af9-4797-b88b-c5f128b63a03",
+    "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)",
+    "created_note": "2026-10-19: scene created from prompts_v7.json (chips resolved to named refs); handoff lessons not applied yet"
+  },
+  "BN-07": {
+    "scene_id": "4d709362-90bf-48b8-9feb-e256b80cd4e2",
+    "act": "",
+    "duration": 4,
+    "video_refs": [
+      "Keller Barn"
+    ],
+    "flow_account": "dinhvulon25",
+    "flow_project_id": "5fef436f-7af9-4797-b88b-c5f128b63a03",
+    "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)",
+    "created_note": "2026-10-19: scene created from prompts_v7.json (chips resolved to named refs); handoff lessons not applied yet"
+  },
+  "BN-08": {
+    "scene_id": "fca69fca-0adc-4973-bf50-02fc1ee67272",
+    "act": "",
+    "duration": 4,
+    "video_refs": [
+      "Nora Body Fire",
+      "Juniper",
+      "Keller Barn"
+    ],
+    "flow_account": "dinhvulon25",
+    "flow_project_id": "5fef436f-7af9-4797-b88b-c5f128b63a03",
+    "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)",
+    "created_note": "2026-10-19: scene created from prompts_v7.json (chips resolved to named refs); handoff lessons not applied yet"
+  },
+  "BN-09": {
+    "scene_id": "49c328ff-3782-4d1d-9932-f687418f7cc6",
+    "act": "",
+    "duration": 6,
+    "video_refs": [
+      "Nora",
+      "Nora Body Fire",
+      "HALE Helmet",
+      "Keller Barn"
+    ],
+    "flow_account": "dinhvulon25",
+    "flow_project_id": "5fef436f-7af9-4797-b88b-c5f128b63a03",
+    "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)",
+    "created_note": "2026-10-19: scene created from prompts_v7.json (chips resolved to named refs); handoff lessons not applied yet"
+  },
+  "BN-11": {
+    "scene_id": "19fa5343-3651-4712-b7e4-31b4797585be",
+    "act": "",
+    "duration": 6,
+    "video_refs": [
+      "Nora",
+      "Nora Body Fire",
+      "HALE Helmet",
+      "Juniper",
+      "Keller Barn"
+    ],
+    "flow_account": "dinhvulon25",
+    "flow_project_id": "5fef436f-7af9-4797-b88b-c5f128b63a03",
+    "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)",
+    "created_note": "2026-10-19: scene created from prompts_v7.json (chips resolved to named refs); handoff lessons not applied yet"
+  },
+  "BN-12": {
+    "scene_id": "717955f2-0209-4b27-88d4-48bd7e97dca5",
+    "act": "",
+    "duration": 4,
+    "video_refs": [
+      "Eli",
+      "Keller Barn"
+    ],
+    "flow_account": "dinhvulon25",
+    "flow_project_id": "5fef436f-7af9-4797-b88b-c5f128b63a03",
+    "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)",
+    "created_note": "2026-10-19: scene created from prompts_v7.json (chips resolved to named refs); handoff lessons not applied yet"
+  },
+  "BN-13a": {
+    "scene_id": "e5937af3-981a-48da-ada8-ad8746509690",
+    "act": "",
+    "duration": 4,
+    "video_refs": [
+      "Nora",
+      "Nora Body Fire",
+      "Eli",
+      "Juniper",
+      "Keller Barn"
+    ],
+    "flow_account": "dinhvulon25",
+    "flow_project_id": "5fef436f-7af9-4797-b88b-c5f128b63a03",
+    "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)",
+    "created_note": "2026-10-19: scene created from prompts_v7.json (chips resolved to named refs); handoff lessons not applied yet"
+  },
+  "BN-13b": {
+    "scene_id": "f044334e-3245-423a-95db-b4d9acbba415",
+    "act": "",
+    "duration": 4,
+    "video_refs": [
+      "Nora",
+      "Nora Body Fire",
+      "Eli",
+      "Juniper",
+      "Keller Barn"
+    ],
+    "flow_account": "dinhvulon25",
+    "flow_project_id": "5fef436f-7af9-4797-b88b-c5f128b63a03",
+    "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)",
+    "created_note": "2026-10-19: scene created from prompts_v7.json (chips resolved to named refs); handoff lessons not applied yet"
+  },
+  "ES-01": {
+    "scene_id": "e9546133-3a10-449c-bd6d-4415b2f117d3",
+    "act": "",
+    "duration": 6,
+    "video_refs": [
+      "Nora",
+      "Nora Body Fire",
+      "HALE Helmet",
+      "Eli",
+      "Juniper",
+      "Ridge Road"
+    ],
+    "flow_account": "dinhvulon25",
+    "flow_project_id": "5fef436f-7af9-4797-b88b-c5f128b63a03",
+    "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)",
+    "created_note": "2026-10-19: scene created from prompts_v7.json (chips resolved to named refs); handoff lessons not applied yet"
+  },
+  "ES-02": {
+    "scene_id": "019f7e0c-b37b-46da-abe6-4c06e51554da",
+    "act": "",
+    "duration": 4,
+    "video_refs": [
+      "Nora",
+      "Nora Body Fire",
+      "HALE Helmet",
+      "Eli",
+      "Juniper",
+      "Ridge Road"
+    ],
+    "flow_account": "dinhvulon25",
+    "flow_project_id": "5fef436f-7af9-4797-b88b-c5f128b63a03",
+    "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)",
+    "created_note": "2026-10-19: scene created from prompts_v7.json (chips resolved to named refs); handoff lessons not applied yet"
+  },
+  "ES-03": {
+    "scene_id": "cd9776b4-585a-4c22-9b40-38c201f63b09",
+    "act": "",
+    "duration": 6,
+    "video_refs": [
+      "Nora",
+      "Nora Body Fire",
+      "HALE Helmet",
+      "Eli",
+      "Juniper",
+      "Ridge Road"
+    ],
+    "flow_account": "dinhvulon25",
+    "flow_project_id": "5fef436f-7af9-4797-b88b-c5f128b63a03",
+    "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)",
+    "created_note": "2026-10-19: scene created from prompts_v7.json (chips resolved to named refs); handoff lessons not applied yet"
+  },
+  "ES-04": {
+    "scene_id": "8a05f7e2-872e-4fb8-80e4-4cec3ac0b805",
+    "act": "",
+    "duration": 4,
+    "video_refs": [
+      "Eli",
+      "Ridge Road"
+    ],
+    "flow_account": "dinhvulon25",
+    "flow_project_id": "5fef436f-7af9-4797-b88b-c5f128b63a03",
+    "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)",
+    "created_note": "2026-10-19: scene created from prompts_v7.json (chips resolved to named refs); handoff lessons not applied yet"
+  },
+  "ES-05": {
+    "scene_id": "522f7b24-3188-4dbd-a595-a6ba114bf2dd",
+    "act": "",
+    "duration": 6,
+    "video_refs": [
+      "Nora",
+      "Nora Body Fire",
+      "HALE Helmet",
+      "Eli",
+      "Juniper",
+      "Ridge Road"
+    ],
+    "flow_account": "dinhvulon25",
+    "flow_project_id": "5fef436f-7af9-4797-b88b-c5f128b63a03",
+    "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)",
+    "created_note": "2026-10-19: scene created from prompts_v7.json (chips resolved to named refs); handoff lessons not applied yet"
+  },
+  "LH-05": {
+    "scene_id": "369f11e9-3a78-4c12-8ff9-80bbe21073f4",
+    "act": "",
+    "duration": 8,
+    "video_refs": [
+      "Cedar Flat"
+    ],
+    "flow_account": "dinhvulon25",
+    "flow_project_id": "5fef436f-7af9-4797-b88b-c5f128b63a03",
+    "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)",
+    "created_note": "2026-10-19: scene created from prompts_v7.json (chips resolved to named refs); handoff lessons not applied yet"
+  },
+  "LH-06": {
+    "scene_id": "795d4209-7c95-44da-a008-82d420a87af4",
+    "act": "",
+    "duration": 6,
+    "video_refs": [
+      "Ray",
+      "Cedar Flat"
+    ],
+    "flow_account": "dinhvulon25",
+    "flow_project_id": "5fef436f-7af9-4797-b88b-c5f128b63a03",
+    "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)",
+    "created_note": "2026-10-19: scene created from prompts_v7.json (chips resolved to named refs); handoff lessons not applied yet"
+  },
+  "LH-07": {
+    "scene_id": "9d228d87-2aa8-4b32-beb7-9678ea0f7f3b",
+    "act": "",
+    "duration": 6,
+    "video_refs": [
+      "Cedar Flat"
+    ],
+    "flow_account": "dinhvulon25",
+    "flow_project_id": "5fef436f-7af9-4797-b88b-c5f128b63a03",
+    "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)",
+    "created_note": "2026-10-19: scene created from prompts_v7.json (chips resolved to named refs); handoff lessons not applied yet"
+  },
+  "LH-08": {
+    "scene_id": "cf3c46ae-1c5f-40fc-8757-2256a630852a",
+    "act": "",
+    "duration": 6,
+    "video_refs": [
+      "Ray",
+      "Cedar Flat"
+    ],
+    "flow_account": "dinhvulon25",
+    "flow_project_id": "5fef436f-7af9-4797-b88b-c5f128b63a03",
+    "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)",
+    "created_note": "2026-10-19: scene created from prompts_v7.json (chips resolved to named refs); handoff lessons not applied yet"
+  },
+  "LH-09": {
+    "scene_id": "039b294a-ff9e-4ce9-ae70-373cb6a451ce",
+    "act": "",
+    "duration": 6,
+    "video_refs": [
+      "Ray",
+      "Cedar Flat"
+    ],
+    "flow_account": "dinhvulon25",
+    "flow_project_id": "5fef436f-7af9-4797-b88b-c5f128b63a03",
+    "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)",
+    "created_note": "2026-10-19: scene created from prompts_v7.json (chips resolved to named refs); handoff lessons not applied yet"
+  },
+  "LS-01": {
+    "scene_id": "063eed0f-57bd-4eed-9102-70f34c0857e5",
+    "act": "",
+    "duration": 8,
+    "video_refs": [
+      "Nora",
+      "Nora Body Fire",
+      "Eli",
+      "Juniper",
+      "Ridge Road"
+    ],
+    "flow_account": "dinhvulon25",
+    "flow_project_id": "5fef436f-7af9-4797-b88b-c5f128b63a03",
+    "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)",
+    "created_note": "2026-10-19: scene created from prompts_v7.json (chips resolved to named refs); handoff lessons not applied yet"
+  },
+  "LS-01b": {
+    "scene_id": "e996ada6-2279-4945-8222-3211272ee4e4",
+    "act": "",
+    "duration": 4,
+    "video_refs": [
+      "Nora Body Fire",
+      "Ridge Road"
+    ],
+    "flow_account": "dinhvulon25",
+    "flow_project_id": "5fef436f-7af9-4797-b88b-c5f128b63a03",
+    "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)",
+    "created_note": "2026-10-19: scene created from prompts_v7.json (chips resolved to named refs); handoff lessons not applied yet"
+  },
+  "LS-02": {
+    "scene_id": "ea1dcbff-a83a-4b76-a65e-fefc1aeb0962",
+    "act": "",
+    "duration": 6,
+    "video_refs": [
+      "Nora",
+      "Nora Body Fire",
+      "HALE Helmet",
+      "Ridge Road"
+    ],
+    "flow_account": "dinhvulon25",
+    "flow_project_id": "5fef436f-7af9-4797-b88b-c5f128b63a03",
+    "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)",
+    "created_note": "2026-10-19: scene created from prompts_v7.json (chips resolved to named refs); handoff lessons not applied yet"
+  },
+  "LS-03": {
+    "scene_id": "8edf6e5e-e51b-4c5c-929e-b04decac4e19",
+    "act": "",
+    "duration": 8,
+    "video_refs": [
+      "Eli",
+      "Nora Body Fire",
+      "Ridge Road"
+    ],
+    "flow_account": "dinhvulon25",
+    "flow_project_id": "5fef436f-7af9-4797-b88b-c5f128b63a03",
+    "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)",
+    "created_note": "2026-10-19: scene created from prompts_v7.json (chips resolved to named refs); handoff lessons not applied yet"
+  },
+  "LS-04": {
+    "scene_id": "688433d8-5d9e-4b42-9467-6ef8407ca07f",
+    "act": "",
+    "duration": 4,
+    "video_refs": [
+      "Nora",
+      "Nora Body Fire",
+      "HALE Helmet",
+      "Ridge Road"
+    ],
+    "flow_account": "dinhvulon25",
+    "flow_project_id": "5fef436f-7af9-4797-b88b-c5f128b63a03",
+    "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)",
+    "created_note": "2026-10-19: scene created from prompts_v7.json (chips resolved to named refs); handoff lessons not applied yet"
+  },
+  "LS-05a": {
+    "scene_id": "06e4334a-78e4-4dba-b9b1-5e08415aa413",
+    "act": "",
+    "duration": 4,
+    "video_refs": [
+      "Juniper",
+      "Eli",
+      "Ridge Road"
+    ],
+    "flow_account": "dinhvulon25",
+    "flow_project_id": "5fef436f-7af9-4797-b88b-c5f128b63a03",
+    "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)",
+    "created_note": "2026-10-19: scene created from prompts_v7.json (chips resolved to named refs); handoff lessons not applied yet"
+  },
+  "LS-05b": {
+    "scene_id": "132a93aa-a4f2-459a-8f9f-a888504df2c2",
+    "act": "",
+    "duration": 4,
+    "video_refs": [
+      "Juniper",
+      "Eli",
+      "Ridge Road"
+    ],
+    "flow_account": "dinhvulon25",
+    "flow_project_id": "5fef436f-7af9-4797-b88b-c5f128b63a03",
+    "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)",
+    "created_note": "2026-10-19: scene created from prompts_v7.json (chips resolved to named refs); handoff lessons not applied yet"
+  },
+  "LS-06": {
+    "scene_id": "8db9b69f-5e08-4b28-a66f-9d40c6388d74",
+    "act": "",
+    "duration": 6,
+    "video_refs": [
+      "Juniper",
+      "The Black"
+    ],
+    "flow_account": "dinhvulon25",
+    "flow_project_id": "5fef436f-7af9-4797-b88b-c5f128b63a03",
+    "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)",
+    "created_note": "2026-10-19: scene created from prompts_v7.json (chips resolved to named refs); handoff lessons not applied yet"
+  },
+  "LS-07": {
+    "scene_id": "3cec72f4-f271-42a0-9fe7-19fac90e341f",
+    "act": "",
+    "duration": 4,
+    "video_refs": [
+      "Eli",
+      "Ridge Road"
+    ],
+    "flow_account": "dinhvulon25",
+    "flow_project_id": "5fef436f-7af9-4797-b88b-c5f128b63a03",
+    "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)",
+    "created_note": "2026-10-19: scene created from prompts_v7.json (chips resolved to named refs); handoff lessons not applied yet"
+  },
+  "TR-01": {
+    "scene_id": "6fb760ac-9b9c-4c73-86e8-8b29e69d1079",
+    "act": "",
+    "duration": 8,
+    "video_refs": [
+      "Eli",
+      "Nora",
+      "Nora Body Fire",
+      "HALE Helmet",
+      "Ridge Road"
+    ],
+    "flow_account": "dinhvulon25",
+    "flow_project_id": "5fef436f-7af9-4797-b88b-c5f128b63a03",
+    "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)",
+    "created_note": "2026-10-19: scene created from prompts_v7.json (chips resolved to named refs); handoff lessons not applied yet"
+  },
+  "TR-02": {
+    "scene_id": "38f302b0-498d-4e0f-b686-5ee200bf0891",
+    "act": "",
+    "duration": 6,
+    "video_refs": [
+      "Eli",
+      "Ridge Road"
+    ],
+    "flow_account": "dinhvulon25",
+    "flow_project_id": "5fef436f-7af9-4797-b88b-c5f128b63a03",
+    "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)",
+    "created_note": "2026-10-19: scene created from prompts_v7.json (chips resolved to named refs); handoff lessons not applied yet"
+  },
+  "TR-02b": {
+    "scene_id": "8c6e40a9-c5e2-46a2-8561-6d0cb21dd51d",
+    "act": "",
+    "duration": 6,
+    "video_refs": [
+      "Eli",
+      "Nora",
+      "Nora Body Fire",
+      "HALE Helmet",
+      "Ridge Road"
+    ],
+    "flow_account": "dinhvulon25",
+    "flow_project_id": "5fef436f-7af9-4797-b88b-c5f128b63a03",
+    "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)",
+    "created_note": "2026-10-19: scene created from prompts_v7.json (chips resolved to named refs); handoff lessons not applied yet"
+  },
+  "TR-03": {
+    "scene_id": "ec671432-b431-46e2-8949-30daac531cda",
+    "act": "",
+    "duration": 4,
+    "video_refs": [
+      "Nora",
+      "Nora Body Fire",
+      "HALE Helmet"
+    ],
+    "flow_account": "dinhvulon25",
+    "flow_project_id": "5fef436f-7af9-4797-b88b-c5f128b63a03",
+    "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)",
+    "created_note": "2026-10-19: scene created from prompts_v7.json (chips resolved to named refs); handoff lessons not applied yet"
+  },
+  "TR-04": {
+    "scene_id": "ba88171a-d522-4164-948e-4fc7fc61c0cb",
+    "act": "",
+    "duration": 4,
+    "video_refs": [
+      "Nora Body Fire",
+      "Eli"
+    ],
+    "flow_account": "dinhvulon25",
+    "flow_project_id": "5fef436f-7af9-4797-b88b-c5f128b63a03",
+    "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)",
+    "created_note": "2026-10-19: scene created from prompts_v7.json (chips resolved to named refs); handoff lessons not applied yet"
+  },
+  "TR-05": {
+    "scene_id": "e49435c5-124c-4277-ad1e-fea4ce7fe0f1",
+    "act": "",
+    "duration": 4,
+    "video_refs": [
+      "Eli",
+      "Nora Body Fire",
+      "Ridge Road"
+    ],
+    "flow_account": "dinhvulon25",
+    "flow_project_id": "5fef436f-7af9-4797-b88b-c5f128b63a03",
+    "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)",
+    "created_note": "2026-10-19: scene created from prompts_v7.json (chips resolved to named refs); handoff lessons not applied yet"
+  },
+  "TR-06": {
+    "scene_id": "d6bf93f0-39ec-4659-9d23-276a6f4aa458",
+    "act": "",
+    "duration": 6,
+    "video_refs": [
+      "Nora",
+      "Nora Body Fire",
+      "HALE Helmet",
+      "Eli",
+      "The Black"
+    ],
+    "flow_account": "dinhvulon25",
+    "flow_project_id": "5fef436f-7af9-4797-b88b-c5f128b63a03",
+    "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)",
+    "created_note": "2026-10-19: scene created from prompts_v7.json (chips resolved to named refs); handoff lessons not applied yet"
+  },
+  "TR-06b": {
+    "scene_id": "301d93b0-e007-42f4-92e7-1a5af81fccf1",
+    "act": "",
+    "duration": 6,
+    "video_refs": [
+      "Nora",
+      "Nora Body Fire",
+      "HALE Helmet",
+      "Eli",
+      "The Black"
+    ],
+    "flow_account": "dinhvulon25",
+    "flow_project_id": "5fef436f-7af9-4797-b88b-c5f128b63a03",
+    "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)",
+    "created_note": "2026-10-19: scene created from prompts_v7.json (chips resolved to named refs); handoff lessons not applied yet"
+  },
+  "TR-07": {
+    "scene_id": "cbbf568b-4a47-42ca-993b-653bc4225f34",
+    "act": "",
+    "duration": 4,
+    "video_refs": [
+      "Nora",
+      "Nora Body Fire",
+      "HALE Helmet",
+      "Eli",
+      "Ridge Road"
+    ],
+    "flow_account": "dinhvulon25",
+    "flow_project_id": "5fef436f-7af9-4797-b88b-c5f128b63a03",
+    "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)",
+    "created_note": "2026-10-19: scene created from prompts_v7.json (chips resolved to named refs); handoff lessons not applied yet"
+  },
+  "TR-08": {
+    "scene_id": "876c7396-6753-42b0-aecd-caf254c19822",
+    "act": "",
+    "duration": 6,
+    "video_refs": [
+      "Nora",
+      "Nora Body Fire",
+      "HALE Helmet",
+      "Eli",
+      "Ridge Road"
+    ],
+    "flow_account": "dinhvulon25",
+    "flow_project_id": "5fef436f-7af9-4797-b88b-c5f128b63a03",
+    "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)",
+    "created_note": "2026-10-19: scene created from prompts_v7.json (chips resolved to named refs); handoff lessons not applied yet"
+  },
+  "BK-01": {
+    "scene_id": "982e23b8-e264-484d-8146-53c3eb125bd5",
+    "act": "",
+    "duration": 8,
+    "video_refs": [
+      "Nora",
+      "Nora Body Fire",
+      "Eli",
+      "Juniper",
+      "The Black"
+    ],
+    "flow_account": "dinhvulon25",
+    "flow_project_id": "5fef436f-7af9-4797-b88b-c5f128b63a03",
+    "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)",
+    "created_note": "2026-10-19: scene created from prompts_v7.json (chips resolved to named refs); handoff lessons not applied yet"
+  },
+  "BK-02": {
+    "scene_id": "c405434c-8220-490f-80f3-34de0083f6f7",
+    "act": "",
+    "duration": 4,
+    "video_refs": [
+      "Nora",
+      "Nora Body Fire",
+      "HALE Helmet",
+      "The Black"
+    ],
+    "flow_account": "dinhvulon25",
+    "flow_project_id": "5fef436f-7af9-4797-b88b-c5f128b63a03",
+    "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)",
+    "created_note": "2026-10-19: scene created from prompts_v7.json (chips resolved to named refs); handoff lessons not applied yet"
+  },
+  "BK-03": {
+    "scene_id": "d110dcec-dccb-40b0-9c6c-436eb2c641b9",
+    "act": "",
+    "duration": 8,
+    "video_refs": [
+      "Nora",
+      "Nora Body Fire",
+      "HALE Helmet",
+      "Juniper",
+      "The Black"
+    ],
+    "flow_account": "dinhvulon25",
+    "flow_project_id": "5fef436f-7af9-4797-b88b-c5f128b63a03",
+    "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)",
+    "created_note": "2026-10-19: scene created from prompts_v7.json (chips resolved to named refs); handoff lessons not applied yet"
+  },
+  "BK-04": {
+    "scene_id": "0fac1b6c-c8a0-4a9a-8941-8193c8a3eb4e",
+    "act": "",
+    "duration": 4,
+    "video_refs": [
+      "Nora",
+      "Nora Body Fire",
+      "HALE Helmet",
+      "Eli",
+      "The Black"
+    ],
+    "flow_account": "dinhvulon25",
+    "flow_project_id": "5fef436f-7af9-4797-b88b-c5f128b63a03",
+    "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)",
+    "created_note": "2026-10-19: scene created from prompts_v7.json (chips resolved to named refs); handoff lessons not applied yet"
+  },
+  "BK-05": {
+    "scene_id": "cb82a6c7-7e24-48ec-9349-e475987fc77b",
+    "act": "",
+    "duration": 6,
+    "video_refs": [
+      "Nora",
+      "Nora Body Fire",
+      "The Black"
+    ],
+    "flow_account": "dinhvulon25",
+    "flow_project_id": "5fef436f-7af9-4797-b88b-c5f128b63a03",
+    "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)",
+    "created_note": "2026-10-19: scene created from prompts_v7.json (chips resolved to named refs); handoff lessons not applied yet"
+  },
+  "BK-14": {
+    "scene_id": "a225e5e1-ffd0-49b4-b5b9-406ebb55a8ae",
+    "act": "",
+    "duration": 6,
+    "video_refs": [
+      "The Black"
+    ],
+    "flow_account": "dinhvulon25",
+    "flow_project_id": "5fef436f-7af9-4797-b88b-c5f128b63a03",
+    "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)",
+    "created_note": "2026-10-19: scene created from prompts_v7.json (chips resolved to named refs); handoff lessons not applied yet"
+  },
+  "BK-06": {
+    "scene_id": "1de510ab-a252-48c3-b559-7743fd435b8f",
+    "act": "",
+    "duration": 4,
+    "video_refs": [
+      "Nora",
+      "Eli"
+    ],
+    "flow_account": "dinhvulon25",
+    "flow_project_id": "5fef436f-7af9-4797-b88b-c5f128b63a03",
+    "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)",
+    "created_note": "2026-10-19: scene created from prompts_v7.json (chips resolved to named refs); handoff lessons not applied yet"
+  },
+  "BK-07": {
+    "scene_id": "42d3c55f-c1a7-4f0a-9a5d-b68d1292dec6",
+    "act": "",
+    "duration": 8,
+    "video_refs": [
+      "Eli",
+      "HALE Helmet"
+    ],
+    "flow_account": "dinhvulon25",
+    "flow_project_id": "5fef436f-7af9-4797-b88b-c5f128b63a03",
+    "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)",
+    "created_note": "2026-10-19: scene created from prompts_v7.json (chips resolved to named refs); handoff lessons not applied yet"
+  },
+  "BK-15": {
+    "scene_id": "d8c41355-9a95-4ba0-9744-7caecd4c7c8e",
+    "act": "",
+    "duration": 4,
+    "video_refs": [
+      "Nora Body Fire"
+    ],
+    "flow_account": "dinhvulon25",
+    "flow_project_id": "5fef436f-7af9-4797-b88b-c5f128b63a03",
+    "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)",
+    "created_note": "2026-10-19: scene created from prompts_v7.json (chips resolved to named refs); handoff lessons not applied yet"
+  },
+  "BK-11": {
+    "scene_id": "c564c2db-7758-4df4-8eff-6fac71475af4",
+    "act": "",
+    "duration": 6,
+    "video_refs": [
+      "Nora",
+      "Nora Body Fire",
+      "Eli",
+      "HALE Helmet"
+    ],
+    "flow_account": "dinhvulon25",
+    "flow_project_id": "5fef436f-7af9-4797-b88b-c5f128b63a03",
+    "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)",
+    "created_note": "2026-10-19: scene created from prompts_v7.json (chips resolved to named refs); handoff lessons not applied yet"
+  },
+  "BK-12": {
+    "scene_id": "57274609-0972-4fe5-8e6f-965d364ca06b",
+    "act": "",
+    "duration": 4,
+    "video_refs": [
+      "Nora",
+      "Nora Body Fire"
+    ],
+    "flow_account": "dinhvulon25",
+    "flow_project_id": "5fef436f-7af9-4797-b88b-c5f128b63a03",
+    "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)",
+    "created_note": "2026-10-19: scene created from prompts_v7.json (chips resolved to named refs); handoff lessons not applied yet"
+  },
+  "BK-08": {
+    "scene_id": "b2f826e3-fe78-4608-be52-eda6c67651a8",
+    "act": "",
+    "duration": 4,
+    "video_refs": [
+      "Nora",
+      "Nora Body Fire",
+      "Juniper",
+      "The Black"
+    ],
+    "flow_account": "dinhvulon25",
+    "flow_project_id": "5fef436f-7af9-4797-b88b-c5f128b63a03",
+    "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)",
+    "created_note": "2026-10-19: scene created from prompts_v7.json (chips resolved to named refs); handoff lessons not applied yet"
+  },
+  "BK-09": {
+    "scene_id": "bdbebe2e-a9fa-40c6-81d0-562b44873edc",
+    "act": "",
+    "duration": 4,
+    "video_refs": [
+      "Juniper",
+      "Nora Body Fire",
+      "The Black"
+    ],
+    "flow_account": "dinhvulon25",
+    "flow_project_id": "5fef436f-7af9-4797-b88b-c5f128b63a03",
+    "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)",
+    "created_note": "2026-10-19: scene created from prompts_v7.json (chips resolved to named refs); handoff lessons not applied yet"
+  },
+  "BK-13": {
+    "scene_id": "5d61f4ce-7990-4438-8534-e65dc70ade3c",
+    "act": "",
+    "duration": 6,
+    "video_refs": [
+      "Nora",
+      "Nora Body Fire",
+      "Eli",
+      "HALE Helmet",
+      "Juniper",
+      "The Black"
+    ],
+    "flow_account": "dinhvulon25",
+    "flow_project_id": "5fef436f-7af9-4797-b88b-c5f128b63a03",
+    "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)",
+    "created_note": "2026-10-19: scene created from prompts_v7.json (chips resolved to named refs); handoff lessons not applied yet"
+  },
+  "DW-01": {
+    "scene_id": "60e63daf-fd48-45c3-b906-cfa5d69e6168",
+    "act": "",
+    "duration": 8,
+    "video_refs": [
+      "Ray",
+      "The Black"
+    ],
+    "flow_account": "dinhvulon25",
+    "flow_project_id": "5fef436f-7af9-4797-b88b-c5f128b63a03",
+    "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)",
+    "created_note": "2026-10-19: scene created from prompts_v7.json (chips resolved to named refs); handoff lessons not applied yet"
+  },
+  "DW-03": {
+    "scene_id": "4edbc610-9b78-456f-a1f2-2d31e1de35cb",
+    "act": "",
+    "duration": 6,
+    "video_refs": [
+      "Nora",
+      "Nora Body Fire",
+      "The Black"
+    ],
+    "flow_account": "dinhvulon25",
+    "flow_project_id": "5fef436f-7af9-4797-b88b-c5f128b63a03",
+    "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)",
+    "created_note": "2026-10-19: scene created from prompts_v7.json (chips resolved to named refs); handoff lessons not applied yet"
+  },
+  "DW-04": {
+    "scene_id": "7b90a993-36e2-43a9-a23a-52bc2861774b",
+    "act": "",
+    "duration": 4,
+    "video_refs": [
+      "Ray",
+      "The Black"
+    ],
+    "flow_account": "dinhvulon25",
+    "flow_project_id": "5fef436f-7af9-4797-b88b-c5f128b63a03",
+    "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)",
+    "created_note": "2026-10-19: scene created from prompts_v7.json (chips resolved to named refs); handoff lessons not applied yet"
+  },
+  "DW-05": {
+    "scene_id": "7696c58e-d6d0-4f6e-b970-37b0fcc6c499",
+    "act": "",
+    "duration": 6,
+    "video_refs": [
+      "Ray",
+      "Nora Body Fire",
+      "The Black"
+    ],
+    "flow_account": "dinhvulon25",
+    "flow_project_id": "5fef436f-7af9-4797-b88b-c5f128b63a03",
+    "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)",
+    "created_note": "2026-10-19: scene created from prompts_v7.json (chips resolved to named refs); handoff lessons not applied yet"
+  },
+  "DW-06": {
+    "scene_id": "5ba3119b-caa4-4342-9d80-116dfd8b2b31",
+    "act": "",
+    "duration": 8,
+    "video_refs": [
+      "Cedar Flat"
+    ],
+    "flow_account": "dinhvulon25",
+    "flow_project_id": "5fef436f-7af9-4797-b88b-c5f128b63a03",
+    "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)",
+    "created_note": "2026-10-19: scene created from prompts_v7.json (chips resolved to named refs); handoff lessons not applied yet"
+  },
+  "DW-07": {
+    "scene_id": "959868ec-e3bf-4c27-84fc-81fa57aa6fc1",
+    "act": "",
+    "duration": 6,
+    "video_refs": [
+      "Nora",
+      "Nora Body Fire",
+      "Juniper",
+      "The Black"
+    ],
+    "flow_account": "dinhvulon25",
+    "flow_project_id": "5fef436f-7af9-4797-b88b-c5f128b63a03",
+    "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)",
+    "created_note": "2026-10-19: scene created from prompts_v7.json (chips resolved to named refs); handoff lessons not applied yet"
+  },
+  "DW-08": {
+    "scene_id": "6bed35a5-d1f6-41be-9b85-0bdf4ebf3a79",
+    "act": "",
+    "duration": 4,
+    "video_refs": [
+      "Ray",
+      "The Black"
+    ],
+    "flow_account": "dinhvulon25",
+    "flow_project_id": "5fef436f-7af9-4797-b88b-c5f128b63a03",
+    "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)",
+    "created_note": "2026-10-19: scene created from prompts_v7.json (chips resolved to named refs); handoff lessons not applied yet"
+  },
+  "DW-09": {
+    "scene_id": "d55dde91-a027-412b-bbb4-205b1db2a761",
+    "act": "",
+    "duration": 10,
+    "video_refs": [
+      "Nora",
+      "Nora Body Fire",
+      "Eli",
+      "HALE Helmet",
+      "Juniper",
+      "The Black"
+    ],
+    "flow_account": "dinhvulon25",
+    "flow_project_id": "5fef436f-7af9-4797-b88b-c5f128b63a03",
+    "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)",
+    "created_note": "2026-10-19: scene created from prompts_v7.json (chips resolved to named refs); handoff lessons not applied yet"
   }
 }

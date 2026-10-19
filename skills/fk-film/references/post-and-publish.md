@@ -1,5 +1,7 @@
 # Hậu kỳ, đóng gói YouTube & chiến lược kênh
 
+> **Phim vs vlog (2026-10-19):** hậu kỳ và đóng gói áp cho phim; câu "đồng nhất để trông như footage của một máy" và SFX "vút" khi vật lướt qua ống kính là luật của vlog (xem [`vlog-archive.md`](vlog-archive.md)). Phim dựng theo `/video-editing` (Rule 66), `/fk-cinematic-transitions`, `/fk-sound-design`.
+
 Đọc ở **Bước 10–11** của `SKILL.md`. Thay Bước 5–7 và mục 1b cũ.
 
 ## 1. Hậu kỳ — đồng nhất để trông như footage của một máy

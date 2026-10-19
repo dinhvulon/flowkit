@@ -42,9 +42,9 @@ Examples:
 
 `/fk-pipeline` orchestrates rendering, TTS, concat, and publication. To create the project and scenes first, choose one of:
 
-1. **Time Travel / Historical POV Vlogs (mọi thời kỳ, mọi địa điểm)**:
-   - Use **[`/fk-time-travel-vlog`](file:///c:/flowkit/skills/fk-time-travel-vlog/SKILL.md)** — Paris 1888, Rome 79 AD, Qin dynasty, Viking Age, Victorian London, v.v.
-   - Tự động dựng kịch bản 7 hồi, Character Bible, fact-check lịch sử, storyboard 12+ scene VERTICAL/HORIZONTAL.
+1. **Narrative Film / Series (phim kể chuyện ngôi thứ ba)**:
+   - Use **[`/fk-film`](file:///c:/flowkit/skills/fk-film/SKILL.md)** — story bible, kịch bản, storyboard, prompt JSON, refs, R2V Omni Flash (ví dụ EMBERS).
+   - Skill cũ `/fk-time-travel-vlog` đã đổi thành `/fk-film`; luật POV / time-travel vlog lưu ở `skills/fk-film/references/vlog-archive.md` và chỉ dùng khi user yêu cầu rõ một vlog.
 2. **General / Custom Story Projects**:
    - Use **[`/fk-create-project`](file:///c:/flowkit/skills/fk-create-project.md)** to generate scenes from any story concept.
 3. **Real Face Reference (Optional)**:
@@ -204,7 +204,7 @@ Only run if any entity is missing `media_id`.
 
 > [!IMPORTANT]
 > **Check Trước Khi Sinh Ref (Rule 58 — Mandatory `/fk-character-design` Check):**
-> Trước khi submit batch `GENERATE_CHARACTER_IMAGE`, BẮT BUỘC kiểm tra xem mọi thực thể sống (Nhân vật, `<Vlogger> Body`, Sinh vật/Quái thú chủ chốt) đã có prompt được thiết kế theo chuẩn **Turnaround Sheet 16:9** của `/fk-character-design` chưa:
+> Trước khi submit batch `GENERATE_CHARACTER_IMAGE`, BẮT BUỘC kiểm tra xem mọi thực thể sống (Nhân vật, `<Tên> Body`, Sinh vật/Quái thú chủ chốt) đã có prompt được thiết kế theo chuẩn **Turnaround Sheet 16:9** của `/fk-character-design` chưa:
 > - CẤM ảnh đơn 1 góc (Single Photograph) cho sinh vật chủ chốt hoặc nhân vật (gây lỗi lật sừng, mất sẹo, vỡ giải phẫu).
 > - Bắt buộc 16:9 Turnaround Sheet đa góc (3 panel cho sinh vật, 4 góc cho nhân vật) khóa 5 tầng DNA anchors (tỷ lệ, xương sọ, biểu bì vi mô, đạo cụ cố định, forbidden drift).
 > - Nếu chưa đạt chuẩn: chạy `/fk-character-design` để cập nhật prompt (`PATCH /api/characters/<CID>`) trước khi gửi batch.
@@ -289,8 +289,8 @@ curl -X POST http://127.0.0.1:8100/api/requests \
 ```
 
 > [!TIP]
-> **Dual-Track Voice Handling & Laomedeia Profile:**
-> 1. **In-Video Lip-Sync (Veo 3):** Structure the `video_prompt` with quoted dialogue in sub-clips (e.g. `0-3s: Mia walks and says "Look at that gate!"`). Set character `voice_description` to the **Laomedeia** profile (Google Gemini-TTS: upbeat, mid-high pitched, energetic expressive conversational female voice, fast confident vlog delivery with dry humor, rises into real cracking screams when in danger, drops to a fast whisper when hiding). Veo 3 / Pinhole automatically animates character lips and generates matching voice audio inside the video.
+> **Dual-Track Voice Handling (Laomedeia = POV vlog only):**
+> 1. **In-Video Lip-Sync (Veo 3):** Structure the `video_prompt` with quoted dialogue in sub-clips (e.g. `0-3s: Mia walks and says "Look at that gate!"`). Films (`/fk-film`) give each speaking character their own voice id (`speech.voices`, `skills/fk-film/references/voice-bible.md` §0). POV vlogs only: set the vlogger's `voice_description` to the **Laomedeia** profile (Google Gemini-TTS: upbeat, mid-high pitched, energetic expressive conversational female voice, fast confident vlog delivery with dry humor, rises into real cracking screams when in danger, drops to a fast whisper when hiding). Veo 3 / Pinhole automatically animates character lips and generates matching voice audio inside the video.
 > 2. **Studio TTS Narration:** Run Stage 3 with `--tts` (OmniVoice / EdgeTTS / Gemini-TTS Laomedeia) to generate crisp narration audio that aligns cleanly with the storyline during concatenation.
 
 Batch 5. Poll 15s. Each video takes 2-5 min.

@@ -1,5 +1,7 @@
 # Story Engine — Luật giữ chân người xem (user chốt 2026-10-05)
 
+> **Phim vs vlog (2026-10-19):** các luật giữ chân người xem (cold open, chuỗi nhân quả, Act có câu hỏi lớn, goal chaining, thất bại có giá trị, không quá 15–20s không thay đổi, cảnh cuối không thoại, checklist §14) áp cho phim. **Chỉ áp cho POV vlog** (xem [`vlog-archive.md`](vlog-archive.md)): mọi chỗ vlogger nói với ống kính / người xem, countdown `HOUR X — Y HOURS REMAINING` và mission card (§9), nhân vật phụ nói tiếng không hiểu được (§13), persona vlogger. Phim lấy cấu trúc từ `story-bible.md` (`/sw-workflow`, `/sw-story-structure`) — file này là bộ kiểm giữ chân bổ sung.
+
 Rút từ bản phê bình 18 điểm của user cho tập Neanderthal (`output/neanderthal-51ka/script.md` v1 → v2). Áp dụng cho **mọi tập** time-travel / survival vlog. **File này là nguồn cấu trúc truyện duy nhất** (khung 7 hồi cũ đã bị xóa khỏi `structure-7-acts.md` ngày 2026-10-12; file đó giờ chỉ còn là kho ý tưởng cảnh/beat). Các luật kỹ thuật dựng prompt giữ ở `prompt-lock.md` và `production-lessons.md` §1.
 
 Đọc file này **trước khi viết outline**, và chạy checklist ở mục 14 trước khi đưa kịch bản cho user review.

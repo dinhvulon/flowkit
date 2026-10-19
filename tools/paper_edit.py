@@ -3,7 +3,7 @@
 
 Reads one or more of (concatenated in the order given, e.g. episodes of one film):
   * a storyboard markdown file (`output/<slug>/script.md`) with tables whose header has `Clip` and `Dur`
-    (time-travel vlog format: Clip | Dur | Shot | Ref | SF | ... | Hình | Thoại | Từ | Việc | Beat | Dựng)
+    (fk-film storyboard format: Clip | Dur | Shot | Ref | SF | ... | Hình | Thoại | Từ | Việc | Beat | Dựng)
   * a screenplay JSON from /fk-scriptwriter (`{"scenes": [...]}`, Section O.1)
 
 Word-count rules:

@@ -29,6 +29,8 @@ description: "Lock và chuẩn hóa video prompt FlowKit theo kiến trúc Struc
 
 Mỗi `video_prompt` phải là một chuỗi JSON hợp lệ chứa các trường sau:
 
+> **Phim (`/fk-film`):** schema đầy đủ của phim (máy ngôi thứ ba, `speech.voices`, `post_vo`, `dramatic_craft`, `props_lock`) ở `skills/fk-script-to-prompts/SKILL.md` §2 và `skills/fk-film/references/prompt-lock.md` khung A; mẫu thật `output/embers/prompts_v7_act*.json`. Mẫu dưới đây là bản POV vlog: `voice_profile` Laomedeia, khóa tay cầm máy, cấm `phone / selfie stick / gimbal`, `no 3rd-person spectator switch` chỉ áp cho vlog.
+
 ```json
 {
   "camera": {
@@ -82,7 +84,7 @@ Mỗi `video_prompt` phải là một chuỗi JSON hợp lệ chứa các trư�
 
 ## 3. Các Quy Tắc Cốt Lõi Khóa Vào Prompt (Core Locks)
 
-### A. Khóa Góc Máy Quang Học & Tỷ Lệ Góc Máy Vàng (Rule 41, 42)
+### A. *(Chỉ áp cho POV vlog — phim dùng /fk-film; tỷ lệ % đã bỏ theo Rule 42 (3))* Khóa Góc Máy Quang Học & Tỷ Lệ Góc Máy Vàng (Rule 41, 42)
 - **Tỷ lệ**: 60%–70% First-Person POV (cam sau qua mắt vlogger), 20%–30% Over-The-Shoulder / Selfie (cam trước 0.5x), 10% Máy dựng cố định.
 - **CẤM 100%**:
   - Cấm lia máy xoay lật 180° giữa trước và sau trong 1 shot.
@@ -100,7 +102,7 @@ Mỗi `video_prompt` phải là một chuỗi JSON hợp lệ chứa các trư�
 - **CẤM 100% đánh đấm, giáp lá cà, vật lộn với dã thú**.
 - **CẤM mô tả hứng bụi/bột rơi giữa không trung**: Mọi chất liệu (bột son, tro, đất sét) phải có sẵn trên bề mặt tảng đá/âu da từ Frame 0. Nhân vật quệt ngón tay trực tiếp vào bề mặt có sẵn đó.
 
-### D. Khóa Thoại 23–25 Từ & Nói Ngay Từ Giây 0 (Rule 51, 54)
+### D. Khóa Thoại & Nói Ngay Từ Giây 0 (Rule 49, 54) — *số từ hiện hành theo Rule 49 bảng (0) cho mọi dự án; dải 23–25 từ / 8s bên dưới là bản vlog cũ (memory: 23–25 từ → clip 10s)*
 - **Độ dài thoại**: Chuẩn dồn dập 23–25 từ / clip 8s (không quá 26 từ) tạo cảm giác adrenaline vlog thực tế.
 - **Nói ngay từ giây 0**: Trong mốc `0-3s` phải ghi rõ nhân vật bắt đầu nói ngay từ giây đầu tiên (`From the very first frame at second 0, Nora speaks immediately...`), tránh lỗi im lặng đầu clip dẫn đến bị cụt âm cuối clip.
 - **Ngoại lệ Sonic Isolation**: Khi rình săn, áp sát thú dữ, ẩn nấp: miệng ngậm chặt tuyệt đối, không có lời thoại (`Strictly NO spoken dialogue. Her mouth stays firmly closed; she holds her breath in dead silence`).
@@ -108,6 +110,8 @@ Mỗi `video_prompt` phải là một chuỗi JSON hợp lệ chứa các trư�
 ---
 
 ## 4. Các Mẫu Template Chuẩn (Ready-to-Use Templates)
+
+> **Ba mẫu dưới đây chỉ áp cho POV vlog** (selfie qua vai, POV của vlogger, máy dựng trên đá). Phim (`/fk-film`) dùng mẫu thật `output/embers/prompts_v7_act*.json`.
 
 ### Template 1: Over-the-Shoulder / Self-Vlog Interaction (20%–30% Tỷ Lệ)
 Dùng khi vlogger dẫn dắt câu chuyện hoặc giao lưu với người bản địa:
@@ -278,9 +282,9 @@ python tools/lint_prompt.py --scene <scene_id>
 - `0 HIGH` issues.
 - Nếu phát hiện `GHOST_DEVICE`, `CAMERA_TOUCH_GLITCH`, hoặc `JSON_SCHEMA_MISSING_KEY`: **BẮT BUỘC SỬA LẠI PROMPT NGAY LẬP TỨC TRƯỚC KHI GỬI GEN**.
 - `DIALOGUE_ACTING_PUNCT` (HIGH): `...` hoặc chữ VIẾT HOA trong câu thoại — chuyển ngữ điệu ra ngoặc tròn trước ngoặc kép (`Nora says (hushed, hesitant): "..."`). Bài học 81.
-- `FREEZE_PHRASE` (MEDIUM, cảnh báo): `subtle smile`, `looks at`, `reacts`… trong phần mô tả động tác (không tính lời thoại) — thay bằng bộ phận + chuyển động + mốc. `fk-time-travel-vlog/references/cinematic-toolkit.md` §8.
+- `FREEZE_PHRASE` (MEDIUM, cảnh báo): `subtle smile`, `looks at`, `reacts`… trong phần mô tả động tác (không tính lời thoại) — thay bằng bộ phận + chuyển động + mốc. `fk-film/references/cinematic-toolkit.md` §8.
 - `SPEECH_SEGMENT_MISMATCH` (MEDIUM): mốc trong `speech.segments` không có mốc tương ứng trong `timeline_action`.
-- `SPEED_CONTRADICTION` / `CAMERA_CONTRADICTION` (MEDIUM): prompt tự mâu thuẫn sau khi sửa từng câu (thú "chỉ đi" mà còn `running`; khung cố định mà `camera_response` lại rung). Linter chỉ bắt được hai kiểu này — các mâu thuẫn khác phải tự đọc lại toàn bộ prompt (`fk-time-travel-vlog/references/prompt-lock.md` mục D, Bài học 86).
+- `SPEED_CONTRADICTION` / `CAMERA_CONTRADICTION` (MEDIUM): prompt tự mâu thuẫn sau khi sửa từng câu (thú "chỉ đi" mà còn `running`; khung cố định mà `camera_response` lại rung). Linter chỉ bắt được hai kiểu này — các mâu thuẫn khác phải tự đọc lại toàn bộ prompt (`fk-film/references/prompt-lock.md` mục D, Bài học 86).
 
 ---
 
@@ -300,13 +304,13 @@ python tools/lint_prompt.py --scene <scene_id>
   ```
 - `negative_constraints` luôn có: `"no character stands frozen or statue-like at any moment"`.
 - **Sửa lỗi bằng cách tả thêm cho chính xác**, không cắt bớt.
-- Trước khi viết: áp `/fk-camera-guide`, `/fk-cinematic-transitions`, `/fk-action-choreography`, `/fk-scriptwriter` (story-engine), `/fk-character-bible`, `/fk-gen-narrator`, `/fk-sound-design`; từ vựng chuyển động và nhịp động học theo `fk-time-travel-vlog/references/cinematic-toolkit.md` §8–9.
+- Trước khi viết: áp `/fk-camera-guide`, `/fk-cinematic-transitions`, `/fk-action-choreography`, `/fk-scriptwriter` (story-engine), `/fk-character-bible`, `/fk-gen-narrator`, `/fk-sound-design`; từ vựng chuyển động và nhịp động học theo `fk-film/references/cinematic-toolkit.md` §8–9.
 
 ---
 
 ## 7. Rule 57 — Từ Vựng Chuyển Động Chuẩn (User Lock 11/10/2026)
 
-- Mọi mô tả chuyển động của nhân vật và khung hình viết bằng hành động vật lý cụ thể, kèm thuật ngữ trong ngoặc: `Anticipation`, `Overshoot`, `Settle`, `Secondary motion`, `Stagger`, `Reveal`, `Slide & Dampen`, `Rubber-banding`, `Vertical bounce`, `Rotational lag`, `Drift`. Bảng tra: `fk-time-travel-vlog/references/cinematic-toolkit.md` §8.
+- Mọi mô tả chuyển động của nhân vật và khung hình viết bằng hành động vật lý cụ thể, kèm thuật ngữ trong ngoặc: `Anticipation`, `Overshoot`, `Settle`, `Secondary motion`, `Stagger`, `Reveal`, `Slide & Dampen`, `Rubber-banding`, `Vertical bounce`, `Rotational lag`, `Drift`. Bảng tra: `fk-film/references/cinematic-toolkit.md` §8.
 - **Cấm từ ngữ chuyển động mơ hồ**: không dùng `moves quickly`, `shakes violently`, `jumps weirdly`, `appears`, `pops in` (vật lộ ra phải đi từ sau vật che có sẵn từ giây 0).
 
 ---

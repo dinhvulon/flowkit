@@ -1,5 +1,7 @@
 # Storyboard, tỉ lệ shot & chuẩn chân thực
 
+> **Phim vs vlog (2026-10-19):** áp cho phim: Ethnicity & Period Lock, bảng storyboard + bảng vật lý (Bài học 21), sổ liên tục bối cảnh. **Chỉ áp cho POV vlog** (xem [`vlog-archive.md`](vlog-archive.md)): "Tỉ lệ loại shot" (65% selfie…), "Chuẩn chân thực — mọi thứ quay bằng máy của cô" (style string handheld vlog, câu ràng buộc tay trống), material `phone_vlog` (bị Bài học 63 cấm), và luật chữ trên hình chỉ năm / mission card / countdown. Phim dùng style `35mm film, cinematic documentary realism` và góc máy ngôi thứ ba (`prompt-lock.md` khung A).
+
 Đọc ở **Bước 4** của `SKILL.md`. Mục này thay mục 3, 6, 8, 9 cũ. Câu chữ đưa vào `video_prompt` luôn lấy từ `prompt-lock.md` — bảng dưới chỉ để lập storyboard.
 
 ## Ethnicity Lock & Period Lock (mục 3 cũ)

@@ -135,7 +135,7 @@ Bạn chỉ cần nhắn cho AI:
 > *"Làm tập time travel vlog: Thành Rome năm 79 AD (trước khi núi lửa Vesuvius phun trào)"*
 
 **AI sẽ tự động làm gì?**
-1. Tự kích hoạt `/fk-time-travel-vlog`.
+1. Tự kích hoạt quy trình vlog cũ (skill `/fk-time-travel-vlog` đã đổi thành `/fk-film` — làm phim kể chuyện ngôi thứ ba; luật vlog lưu ở `skills/fk-film/references/vlog-archive.md`). Muốn làm phim: *"Làm phim … bằng /fk-film"*.
 2. Tự gọi bộ skill `sw-*` tạo `output/rome-79ad/story-bible.md` (Tầng 1).
 3. Tự phối hợp 5 subagents điện ảnh tạo `output/rome-79ad/script.md` (Tầng 2).
 4. Dừng lại báo cáo bạn để duyệt kịch bản trước khi làm tiếp!
@@ -176,6 +176,6 @@ Bạn chỉ cần nhắn cho AI:
 
 ### 4. Muốn xem lại các bài học sản xuất thực tế thì xem ở đâu?
 - Toàn bộ 71+ bài học xương máu được tổng hợp tại:
-  `skills/fk-time-travel-vlog/references/production-lessons.md`
+  `skills/fk-film/references/production-lessons.md` (bài học chỉ áp cho vlog: `skills/fk-film/references/vlog-archive.md`)
 - Checklist cấu trúc câu chữ prompt tại:
-  `skills/fk-time-travel-vlog/references/prompt-lock.md`
+  `skills/fk-film/references/prompt-lock.md`

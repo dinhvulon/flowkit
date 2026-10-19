@@ -1,6 +1,6 @@
 # Cinematic Transitions & Chapter Bumpers — AI Film Direction
 
-> **Time-travel / POV vlog (`/fk-time-travel-vlog`):** dùng bản đã chỉnh theo luật vlog ở `skills/fk-time-travel-vlog/references/cinematic-toolkit.md` §7 (J-cut khi cắt thẳng, card chữ đè lên hình). Vlog không dùng bumper, dip-to-black, crossfade, hardsub. Template trong file này có dòng `Negative:` và góc máy người thứ ba — không chép nguyên vào prompt vlog.
+> **Phim (`/fk-film`):** dùng file này cho mối nối của phim (match on action, J/L-cut, bumper khi cần) cùng `skills/fk-film/references/cinematic-toolkit.md` §7. Template trong file này có dòng `Negative:` — chuyển ràng buộc vào `negative_constraints` của prompt JSON. **Chỉ áp cho POV vlog** (`skills/fk-film/references/vlog-archive.md`): không bumper, không dip-to-black, không crossfade, không hardsub.
 
 Comprehensive technical guide and automated recipes for Hollywood-grade transitions, chapter interstitial bumpers, and multi-layer continuity in Google Flow and Veo 3.
 

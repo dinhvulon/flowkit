@@ -113,7 +113,7 @@ Provide the link: **`http://localhost:8200?video_id=<VID>`**
 3. **STOP AND PAUSE HERE:**
    - **DO NOT** upscale 1080p or remove watermarks yet!
    - Ra video 720p là AI review trước rồi User duyệt từng clip một!
-   - Ask user for feedback on each clip. If any clip needs adjustments (e.g. action, camera angle, phone selfie vlog perspective, lip sync), update the scene's `video_prompt` and submit `REGENERATE_VIDEO` (ở mức 720p).
+   - Ask user for feedback on each clip. If any clip needs adjustments (e.g. action, camera angle, lip sync), update the scene's `video_prompt` and submit `REGENERATE_VIDEO` (ở mức 720p).
    - Only when user approves the scene video, proceed to Step 8.
 
 ## Step 8: Conditional Upscale 1080p & De-watermark (Chỉ sau khi User duyệt)

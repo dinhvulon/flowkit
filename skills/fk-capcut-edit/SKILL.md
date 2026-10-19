@@ -27,7 +27,7 @@ Nền tảng: 5 chiến lược của video *"Cách đạt 1000 Sub và 4000 Gi�
 ## Thứ tự ưu tiên khi các nguồn mâu thuẫn
 
 1. `CLAUDE.md`, memory của user, và bảng "Lựa chọn user đã chốt" ở trên.
-2. Với POV / time-travel vlog: luật hậu kỳ của `/fk-time-travel-vlog` (`references/post-and-publish.md` §1, `story-engine.md` §1, §5, §9, §11, §13b, `transitions.md`) — không crossfade, không bumper, chữ trên hình chỉ năm / mission card / countdown.
+2. Với phim làm bằng `/fk-film`: luật hậu kỳ ở `skills/fk-film/references/post-and-publish.md` §1, `story-engine.md` §1, §5, §11, §13b và phần phim của `transitions.md`. Với POV / time-travel vlog (chỉ khi user yêu cầu vlog): thêm luật vlog ở `skills/fk-film/references/vlog-archive.md` — không crossfade, không bumper, chữ trên hình chỉ năm / mission card / countdown.
 3. Skill này.
 
 ## Vì sao dựng quyết định watch time
@@ -184,7 +184,7 @@ ffmpeg -i final_14lufs.mp4 -af ebur128=peak=true -f null - 2>&1 | tail -12   # d
 |---|---|
 | Thumbnail (chiến lược 1) | `/fk-thumbnail`, `/fk-thumbnail-guide` — biểu cảm mặt rõ, cảm xúc mạnh |
 | Tiêu đề, mô tả, tag SEO (chiến lược 1) | `/fk-youtube-seo` (vlog: không timestamp, theo memory) |
-| Chủ đề cố định (chiến lược 3), lịch đăng + playlist (chiến lược 5) | `skills/fk-time-travel-vlog/references/post-and-publish.md` §3–4. Playlist sắp trong YouTube Studio, không cần chèn vào video |
+| Chủ đề cố định (chiến lược 3), lịch đăng + playlist (chiến lược 5) | `skills/fk-film/references/post-and-publish.md` §3–4. Playlist sắp trong YouTube Studio, không cần chèn vào video |
 | Ghép tự động bằng ffmpeg không qua CapCut | `/fk-concat` |
 | Nhạc | `/fk-gen-music` |
 | Phụ đề `.srt` rời | `/extract-capcut-srt`, `/translate-capcut-srt` |
