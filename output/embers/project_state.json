@@ -19,7 +19,10 @@
   "Eli Bike": "eab5d82a-7f1c-46d0-949b-3c4623be5784",
   "Ray": "edfc8719-b70a-4092-81b2-5b23b8a95783",
   "Staging Area": "f70e5ad4-4b9c-4770-9c23-9f2d912dc0ab",
-  "Nora Body Fire": "fb0ddfb0-c002-4989-b0c3-af01661f9a43"
+  "Nora Body Fire": "fb0ddfb0-c002-4989-b0c3-af01661f9a43",
+  "Keller Barn Stall": "310c42fd-b39f-4de3-9640-e32935a53f8b",
+  "Keller Barn Aisle Door": "ba0fe597-fbfe-48ab-b551-1aaf96efe360",
+  "Keller Barn Back Wall": "5a32acd6-57dd-45a0-803c-7cc0e8374c84"
  },
  "created": "2026-10-18",
  "note": "New project for script_v7 (old 6a41afad lost when flow_agent.db was reverted by git). All refs new except Nora face.",
@@ -271,6 +274,27 @@
    "account3_media_id": "0e488127-af21-4a74-9069-12d7eec7640c",
    "account3_file_name": "Keller Barn Door Close.jpg",
    "media_id": "0e488127-af21-4a74-9069-12d7eec7640c"
+  },
+  "Keller Barn Stall": {
+   "source": "BN-06 v2 frame 2.0s, de-watermarked, uploaded 25174b72; EDIT_CHARACTER_IMAGE removed Nora and Eli's head -> 5b6e85ef; de-watermarked again",
+   "raw_media_id": "5b6e85ef-a633-469e-8639-ffee0367aa43",
+   "account3_media_id": "685cef8f-ca1c-485d-97d1-56801b4829f7",
+   "account3_file_name": "Keller Barn Stall.jpg",
+   "media_id": "685cef8f-ca1c-485d-97d1-56801b4829f7"
+  },
+  "Keller Barn Aisle Door": {
+   "source": "cut from approved clip (BN-02 geography canon), people/horse removed by EDIT_CHARACTER_IMAGE, de-watermarked",
+   "raw_media_id": "d32a584e-b998-44fb-b608-57d5c294cef4",
+   "account3_media_id": "a131b94f-8e43-4cdc-8f2d-cac77c64e85a",
+   "account3_file_name": "Keller Barn Aisle Door.jpg",
+   "media_id": "a131b94f-8e43-4cdc-8f2d-cac77c64e85a"
+  },
+  "Keller Barn Back Wall": {
+   "source": "cut from approved clip (BN-02 geography canon), people/horse removed by EDIT_CHARACTER_IMAGE, de-watermarked",
+   "raw_media_id": "52a2326a-22a5-4a1a-85c5-195bc89ea99d",
+   "account3_media_id": "25f505ab-69a9-4d0f-8fb2-52d9ce9976a8",
+   "account3_file_name": "Keller Barn Back Wall.jpg",
+   "media_id": "25f505ab-69a9-4d0f-8fb2-52d9ce9976a8"
   }
  },
  "old_project_id": "f4415512-2ab8-42ce-852f-122351e055a8",

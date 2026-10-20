@@ -27,7 +27,12 @@
     "approved": true,
     "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)",
     "flow_account": "dinhvulon25",
-    "flow_project_id": "f4415512-2ab8-42ce-852f-122351e055a8"
+    "flow_project_id": "f4415512-2ab8-42ce-852f-122351e055a8",
+    "upscale_media_id": "44182348-3ff7-45be-aae8-f9560f5ecd7d",
+    "file_1080_clean": "1080/scene_001_RA-02_49c1a6a2_1080p_clean.mp4",
+    "upscale_note": "2026-10-20/21 UPSCALE_VIDEO on dinhvulon25 (project f4415512), 1920x1080, logo removed",
+    "video_file_720_deleted": "scenes/scene_001_RA-02_49c1a6a2.mp4",
+    "upscaled": true
   },
   "RA-03": {
     "scene_id": "2528b08c-0add-409a-9819-4a6faf8b438b",
@@ -51,7 +56,12 @@
     "approved": true,
     "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)",
     "flow_account": "dinhvulon25",
-    "flow_project_id": "f4415512-2ab8-42ce-852f-122351e055a8"
+    "flow_project_id": "f4415512-2ab8-42ce-852f-122351e055a8",
+    "upscale_media_id": "3d83affe-1f41-47eb-b70f-87f4529de292",
+    "file_1080_clean": "1080/scene_002_RA-03_2528b08c_1080p_clean.mp4",
+    "upscale_note": "2026-10-20/21 UPSCALE_VIDEO on dinhvulon25 (project f4415512), 1920x1080, logo removed",
+    "video_file_720_deleted": "scenes/scene_002_RA-03_2528b08c.mp4",
+    "upscaled": true
   },
   "RA-04": {
     "scene_id": "28ccd1b4-d508-4fca-8f94-118479c4772f",
@@ -135,7 +145,12 @@
     "video_file": "scenes/scene_005_RA-06_14421c95.mp4",
     "approved": true,
     "flow_account": "dinhvulon25",
-    "flow_project_id": "f4415512-2ab8-42ce-852f-122351e055a8"
+    "flow_project_id": "f4415512-2ab8-42ce-852f-122351e055a8",
+    "upscale_media_id": "273e4575-57c1-40a5-993d-9317f77230c9",
+    "file_1080_clean": "1080/scene_005_RA-06_14421c95_1080p_clean.mp4",
+    "upscale_note": "2026-10-20/21 UPSCALE_VIDEO on dinhvulon25 (project f4415512), 1920x1080, logo removed",
+    "video_file_720_deleted": "scenes/scene_005_RA-06_14421c95.mp4",
+    "upscaled": true
   },
   "RA-07": {
     "scene_id": "f996fd3e-2ce7-4160-a377-c79c2c626a4b",
@@ -162,7 +177,11 @@
     "approved": true,
     "review_note": "2026-10-19: hard cut ~5.8s to closer angle, helmet leaves frame, looks into lens; native dispatch voice speaks the script line 0-7s (Whisper EXTRA SPEECH) | user approved 2026-10-19 (use 0-5.8s)",
     "flow_account": "dinhvulon25",
-    "flow_project_id": "f4415512-2ab8-42ce-852f-122351e055a8"
+    "flow_project_id": "f4415512-2ab8-42ce-852f-122351e055a8",
+    "upscale_media_id": "dbf66a2c-aabf-4185-b427-6f84c679f033",
+    "file_1080_clean": "1080/scene_006_RA-07_f996fd3e_1080p_clean.mp4",
+    "upscale_note": "2026-10-20/21 UPSCALE_VIDEO on dinhvulon25 (project f4415512), 1920x1080, logo removed",
+    "upscaled": true
   },
   "RA-08": {
     "scene_id": "1a7e8514-48aa-4562-ab0e-4b5c759c17a4",
@@ -188,7 +207,11 @@
     "approved": true,
     "review_note": "v3 2026-10-19 ~8/10: one continuous shot at fence, one backpack held in front, rope coil stuffed in and zipped, eyes back on smoke at end; no tripod/device. Minor: framing is full-body (not MS), smoke on ridge faint, halter reads as rope coil. Whisper PASS (no speech). v1 hard cut+2 packs; v2 tripod in frame. | user approved v3 2026-10-19; v1/v2 files deleted.",
     "flow_account": "dinhvulon25",
-    "flow_project_id": "f4415512-2ab8-42ce-852f-122351e055a8"
+    "flow_project_id": "f4415512-2ab8-42ce-852f-122351e055a8",
+    "upscale_media_id": "32a64c4a-08fd-4889-93c8-050d6ef9a232",
+    "file_1080_clean": "1080/scene_007_RA-08_1a7e8514_1080p_clean.mp4",
+    "upscale_note": "2026-10-20/21 UPSCALE_VIDEO on dinhvulon25 (project f4415512), 1920x1080, logo removed",
+    "upscaled": true
   },
   "RA-09": {
     "scene_id": "aeb258ed-c72d-4440-8954-ed724d51e48e",
@@ -215,7 +238,11 @@
     "approved": true,
     "review_note": "v1 2026-10-19 ~8/10: one continuous wide shot, Eli on red bike (matches ref) with backpack rides L-to-R then away past the ranch house; no tripod/device. Minor: he ends small but not tiny; smoke on ridge faint (behind right oak). Whisper PASS (no speech). | user approved 2026-10-19.",
     "flow_account": "dinhvulon25",
-    "flow_project_id": "f4415512-2ab8-42ce-852f-122351e055a8"
+    "flow_project_id": "f4415512-2ab8-42ce-852f-122351e055a8",
+    "upscale_media_id": "c6f1adbc-c834-46f7-829b-6f6290545948",
+    "file_1080_clean": "1080/scene_008_RA-09_aeb258ed_1080p_clean.mp4",
+    "upscale_note": "2026-10-20/21 UPSCALE_VIDEO on dinhvulon25 (project f4415512), 1920x1080, logo removed",
+    "upscaled": true
   },
   "FL-01": {
     "scene_id": "b2919f94-a57e-4556-b2f3-fa3084e6e12b",
@@ -241,7 +268,11 @@
     "approved": true,
     "review_note": "v3 2026-10-19 ~8.5/10: one continuous shot, no flames anywhere near crew, crew digging line, pyrocumulus whole clip, a clearly black burned-out hillside behind; Ray points ~3.5-6s, drops arm, looks at crew. Minor: the black is an adjacent ridge, not across a valley. Whisper PASS: 100%, 0.18-7.5s, 151 Hz. Fix vs v2: clip-specific style without flames/embers. v1: cut at 3.33s; v2: flames beside crew. | user approved v3 2026-10-19; v1/v2 files deleted.",
     "flow_account": "dinhvulon25",
-    "flow_project_id": "f4415512-2ab8-42ce-852f-122351e055a8"
+    "flow_project_id": "f4415512-2ab8-42ce-852f-122351e055a8",
+    "upscale_media_id": "647f966e-8dd3-482a-9dbf-8d1e5e02344c",
+    "file_1080_clean": "1080/scene_009_FL-01_b2919f94_1080p_clean.mp4",
+    "upscale_note": "2026-10-20/21 UPSCALE_VIDEO on dinhvulon25 (project f4415512), 1920x1080, logo removed",
+    "upscaled": true
   },
   "FL-02": {
     "scene_id": "99f32c8f-dbc7-4d6f-a33d-192c48ab3b2d",
@@ -269,7 +300,11 @@
     "review_note": "v3 2026-10-19 ~8.5/10: first clip with inline voice chips. Whisper PASS, no VOICE flag: Rookie alnilam 0.11-1.77s 100% 163 Hz; Nora kore 1.77-4.73s 100% 193 Hz (30 Hz gap vs 12 Hz in v2). One continuous shot, no cut, no flames, goggles on helmet. Issue: rookie half-face/helmet edge visible at right frame edge from ~1s (prompt said never shown) - reads as over-the-shoulder. v2 (bb2350ae) = alternative without rookie in frame.",
     "voices": "alnilam,kore (inline {{voice:}} chips)",
     "flow_account": "dinhvulon25",
-    "flow_project_id": "f4415512-2ab8-42ce-852f-122351e055a8"
+    "flow_project_id": "f4415512-2ab8-42ce-852f-122351e055a8",
+    "upscale_media_id": "70e64f3c-587c-4b47-a4d6-469bd1ffce01",
+    "file_1080_clean": "1080/scene_010_FL-02_99f32c8f_1080p_clean.mp4",
+    "upscale_note": "2026-10-20/21 UPSCALE_VIDEO on dinhvulon25 (project f4415512), 1920x1080, logo removed",
+    "upscaled": true
   },
   "FL-04": {
     "scene_id": "5fd1fc66-54a5-4281-aed1-0feb0e4e2cd7",
@@ -294,7 +329,11 @@
     "voices": "algenib (inline chip)",
     "review_note": "v2 2026-10-19 ~8/10: Whisper PASS 100% 0.34-5.52s, ? VOICE? 302 Hz (shouting, same as v1 296 Hz). No cut. Only one white-helmet Ray; rookie young, yellow helmet, consistent all clip; Ray slaps rookie pack 2-4s; crew cutting 4-6s. Flames on mid/far slope, not behind face. Minor: embers look like large flat flakes; small flame at left edge 0-0.5s. v1 (314bbf8f) had Ray clone.",
     "flow_account": "dinhvulon25",
-    "flow_project_id": "f4415512-2ab8-42ce-852f-122351e055a8"
+    "flow_project_id": "f4415512-2ab8-42ce-852f-122351e055a8",
+    "upscale_media_id": "2f74f3ab-f56a-4228-bdf1-29adc50f752b",
+    "file_1080_clean": "1080/scene_011_FL-04_5fd1fc66_1080p_clean.mp4",
+    "upscale_note": "2026-10-20/21 UPSCALE_VIDEO on dinhvulon25 (project f4415512), 1920x1080, logo removed",
+    "upscaled": true
   },
   "EL-01": {
     "scene_id": "a6727dd7-b652-421d-9e21-4b02e218f28b",
@@ -321,7 +360,11 @@
     "approved": true,
     "review_note": "v1 2026-10-19 ~8/10: Whisper PASS (no speech, silent clip as planned). No cut. Eli (green hoodie, jeans, red bike, backpack) pedals head-on up gravel road through dry pines, smoke haze, no flames. Minor: halter strap swinging from pack not visible (pack on his back, head-on angle); mostly seated rather than standing on pedals.",
     "flow_account": "dinhvulon25",
-    "flow_project_id": "f4415512-2ab8-42ce-852f-122351e055a8"
+    "flow_project_id": "f4415512-2ab8-42ce-852f-122351e055a8",
+    "upscale_media_id": "9f48ec00-4629-4180-ba98-c7b32314c38d",
+    "file_1080_clean": "1080/scene_012_EL-01_a6727dd7_1080p_clean.mp4",
+    "upscale_note": "2026-10-20/21 UPSCALE_VIDEO on dinhvulon25 (project f4415512), 1920x1080, logo removed",
+    "upscaled": true
   },
   "EL-02": {
     "scene_id": "1941e521-3a7e-44a0-8dc9-30ca165d97bb",
@@ -352,7 +395,11 @@
     "review_note_v5": "v5 8s 2026-10-19 ~6/10 (media c981ef7c-75c0-4f02-853a-84d63644b945, scenes/scene_013_EL-02_1941e521_v5_8s.mp4): Whisper 92%, TIMING (Walt 0.0-7.2s), ? VOICE? 302 Hz. MOUTH LOCK failed: Eli's mouth wide open ~1s while Walt shouts (model lip-syncs the line onto the only big face). Bike/leg overlap the barricade post ~2.5-3s. Ends with Eli riding past camera, hoodie OK.",
     "review_note_v6": "v6 8s 2026-10-19 ~8.5/10: Whisper 92%, TIMING flag (Walt 0.0-6.8s vs 0-6s), ? VOICE? 302 Hz. No cut, no fire. Eli back to camera 0-6.5s (face hidden while Walt shouts), then turns the bike, mounts and rides past camera with lips pressed shut, jaw set. Barricade stays in the background, never touched. Hoodie OK. Minor: Walt's pickup a bit nearer than 'far'.",
     "flow_account": "dinhvulon25",
-    "flow_project_id": "f4415512-2ab8-42ce-852f-122351e055a8"
+    "flow_project_id": "f4415512-2ab8-42ce-852f-122351e055a8",
+    "upscale_media_id": "19e89394-e56d-41d0-991c-ff64cd9469dc",
+    "file_1080_clean": "1080/scene_013_EL-02_1941e521_1080p_clean.mp4",
+    "upscale_note": "2026-10-20/21 UPSCALE_VIDEO on dinhvulon25 (project f4415512), 1920x1080, logo removed",
+    "upscaled": true
   },
   "FL-05": {
     "scene_id": "4157ec00-7fe5-467c-a04b-27c0457b6de8",
@@ -380,7 +427,11 @@
     "approved": true,
     "review_note": "v1 2026-10-19 ~8.5/10: Whisper PASS 93% (Ray/algenib 133 Hz, 'Hale' heard as 'hail'). No cut. Ray (white helmet, only one) hands a lit drip torch to Nora (yellow helmet, braid, mouth closed); flames on the far slope between them, never behind a face. Minor: small emblem on Ray's helmet (not readable), Nora's nod is subtle.",
     "flow_account": "dinhvulon25",
-    "flow_project_id": "f4415512-2ab8-42ce-852f-122351e055a8"
+    "flow_project_id": "f4415512-2ab8-42ce-852f-122351e055a8",
+    "upscale_media_id": "e35ac235-2c56-4629-9a63-363fe1142612",
+    "file_1080_clean": "1080/scene_014_FL-05_4157ec00_1080p_clean.mp4",
+    "upscale_note": "2026-10-20/21 UPSCALE_VIDEO on dinhvulon25 (project f4415512), 1920x1080, logo removed",
+    "upscaled": true
   },
   "FL-06": {
     "scene_id": "075b26da-387e-4670-b8e5-e2341c82ce82",
@@ -406,7 +457,8 @@
     "review_note": "v2 score 8.0: Whisper PASS (no speech); one continuous shot, no time skip; thin flame line, hillside stays golden, clear sky; one hand, one torch. Minor: torch reads as a rusty can, open grassland with few pines.",
     "approved": true,
     "upscale_media_id": "1fca17c9-1945-4585-b7fe-a8f8de85633a",
-    "file_1080_clean": "1080/scene_015_FL-06_075b26da_1080p_clean.mp4"
+    "file_1080_clean": "1080/scene_015_FL-06_075b26da_1080p_clean.mp4",
+    "upscaled": true
   },
   "FL-07": {
     "scene_id": "c8ec4bc6-b38b-492c-8f26-3ed4e1729120",
@@ -436,7 +488,8 @@
     "review_note": "v2 score 8.5: Whisper PASS 100% (rookie 0.0-1.0s off-frame, Nora 2.12-5.2s); full-bleed frame, no film border; torch-to-face tilt in one shot; Nora looks down-left at the flame, never at lens; pine ridge matches Fire Line ref. Minor: torch leaves the frame once the shot is MCU (not seen vanishing).",
     "approved": true,
     "upscale_media_id": "a66351ed-c8ab-4801-b20e-47d20670624c",
-    "file_1080_clean": "1080/scene_016_FL-07_c8ec4bc6_1080p_clean.mp4"
+    "file_1080_clean": "1080/scene_016_FL-07_c8ec4bc6_1080p_clean.mp4",
+    "upscaled": true
   },
   "EL-07": {
     "scene_id": "82687128-9822-4e07-8bda-d2bdd53142fc",
@@ -467,7 +520,8 @@
     "review_note_v2": "v2 score 6.5: no rig, smoky haze good, Whisper PASS (no speech), no cuts. FAIL beat: at ~3.4-4.4s he swerves toward the viewer and U-turns, riding right-to-left back the way he came (should keep riding into the smoke). Embers sparse; spot fire looks like a campfire pile. Usable 0-3.4s only.",
     "review_note": "v3 score 8.0: rides left-to-right the whole clip, no U-turn; real grass flame line along the right roadside, passes it and rides on away into light haze; no rig, no cuts, Whisper PASS (no speech); one bike, backpack on, feet on pedals. Minor: embers sparse, smoke is light haze not brown; swerve is subtle.",
     "upscale_media_id": "3a376702-d43f-4896-91c4-91c010fb7c8b",
-    "file_1080_clean": "1080/scene_017_EL-07_82687128_1080p_clean.mp4"
+    "file_1080_clean": "1080/scene_017_EL-07_82687128_1080p_clean.mp4",
+    "upscaled": true
   },
   "FL-08": {
     "scene_id": "948b7239-030d-49c3-9482-f8292e09ae90",
@@ -494,7 +548,8 @@
     "review_note_v1": "v1 score 6.0: Whisper PASS (no speech), no cuts, no people/gear, real-looking 0-3.5s (burnout left, red sun, dark smoke). FAIL: ~3.7-4.5s the crown fire fades in as a translucent ghost on the right and the whole right slope is ablaze a moment later (dissolve, not pouring down); 6-8s flames turn stylized/CGI (swirling flame shapes outlining trees, a mushroom-shaped fireball at the end).",
     "review_note": "v2 score 7.5: both fires visible from frame 0, no fade-in, no cuts, Whisper PASS (no speech); burnout climbs the near ridge, flames converge on the ridgeline center and the smoke rolls into one dark column with orange base. Minor: smoke puffs a bit cotton-ball/stylized, last frame column slightly mushroom-shaped; crown fire stays on the far right wall rather than pouring down.",
     "upscale_media_id": "08c6b481-6e82-4e13-ad84-0e685cd766e2",
-    "file_1080_clean": "1080/scene_018_FL-08_948b7239_1080p_clean.mp4"
+    "file_1080_clean": "1080/scene_018_FL-08_948b7239_1080p_clean.mp4",
+    "upscaled": true
   },
   "FL-09": {
     "scene_id": "a87ab55e-64cd-4171-9714-c156bdf2682d",
@@ -523,7 +578,8 @@
     "dropped": true,
     "drop_note": "user 2026-10-19: clip dropped (fire whirl looked fake); v1+v2 videos deleted",
     "upscale_media_id": "ca1caf48-1523-4716-b1b2-b443ff12ca8a",
-    "file_1080_clean": "1080/scene_019_FL-09_a87ab55e_1080p_clean.mp4"
+    "file_1080_clean": "1080/scene_019_FL-09_a87ab55e_1080p_clean.mp4",
+    "upscaled": true
   },
   "FL-10": {
     "scene_id": "1f54cd9e-da3a-45f7-9a04-342067b743ab",
@@ -552,7 +608,8 @@
     "line_change": "user 2026-10-19: 'Whirl!' -> 'It's jumping!' (FL-09 dropped)",
     "review_note": "v1 score 8.3: one continuous handheld move (no cut; pans right with Ray at ~2s); burnout edge and grass spot fires burning from frame 0, ragged flames, brown-grey smoke, no whirl/fireball; Ray arm up vs heat 0-1.5s, shoves two crew back 2-4s, turns left and shouts 4-6s; only Ray speaks. Whisper PASS acc 92% 0.0-5.52s ('hail' = Hale), flag ? VOICE? pitch 364 Hz (shouting) - listen. Minor: light is hazy afternoon more than red dusk; crew faces partly visible in profile; Ray faces the lens for a moment at 0s.",
     "upscale_media_id": "303d2744-ad2d-4aaf-bfd8-0c8dd326bf1d",
-    "file_1080_clean": "1080/scene_020_FL-10_1f54cd9e_1080p_clean.mp4"
+    "file_1080_clean": "1080/scene_020_FL-10_1f54cd9e_1080p_clean.mp4",
+    "upscaled": true
   },
   "FL-11": {
     "scene_id": "9460e14b-bceb-409e-a4ec-848b2ea1f87b",
@@ -578,7 +635,8 @@
     "approved": true,
     "review_note": "v1 score 8.5: smoke-red sun low in a brown haze (real dusk), ragged flame line along the ridge from frame 0, dark brown-grey smoke; one red air tanker flies straight left to right the whole clip, drops a long red retardant curtain from ~2.3s that falls onto the burning ridge; no cuts, no text on the plane, no other aircraft/gear; Whisper PASS (no speech). Minor: tiny crew figures not really readable under the drop; plane a bit large/close for an EWS telephoto; smoke column upper right slightly puffy.",
     "upscale_media_id": "902c843f-b13a-40ff-9962-19bbf27ecd56",
-    "file_1080_clean": "1080/scene_021_FL-11_9460e14b_1080p_clean.mp4"
+    "file_1080_clean": "1080/scene_021_FL-11_9460e14b_1080p_clean.mp4",
+    "upscaled": true
   },
   "FL-12": {
     "scene_id": "136294a1-2bca-4212-ad13-73553717096a",
@@ -612,7 +670,8 @@
     "review_note": "v1 score 6.8: one continuous shot (no cuts), dusk light, ragged flames and brown-grey smoke on the ridge, pink retardant mist drifting at the start, two crew in helmets behind her; ends with her touching the goggles and grinning. FAIL Whisper EXTRA SPEECH 1.3-2.9s 'hey hale youre pink' - Nora's own mouth moves there, so the model voiced the post_vo crew line through her; her real line 'put it on my tab the bank takes anything' plays 3.56-5.46s (100% match, but late). Also: retardant reads as pink streaks on the shirt, not a drenching; face almost clean; she looks straight into the lens; arms not held out; no visible cough/laugh beat.",
     "v1_note": "v1 video and sheet deleted after v2 approval (user 2026-10-19)",
     "upscale_media_id": "203a2e1b-e0c6-403b-9d81-04de91cab52b",
-    "file_1080_clean": "1080/scene_022_FL-12_136294a1_1080p_clean.mp4"
+    "file_1080_clean": "1080/scene_022_FL-12_136294a1_1080p_clean.mp4",
+    "upscaled": true
   },
   "MP-01": {
     "scene_id": "ba45804a-292c-4c27-80bb-4082f8411cb2",
@@ -640,7 +699,8 @@
     "review_note_v2": "v2 score 8.0 (continuous wind swing, frozen background): one continuous shot, no cuts (scene-detect clean); golden grass stems sharp in front of a dark ridge line under a smoke-filled dusk sky with a low orange glow; 0-2.3s stems lean left with embers drifting, ~2.4-2.8s they sweep up through upright, then bend over to the right until the end; background stays the same the whole clip. Whisper PASS (no speech). Minor: the final right-hand bend is moderate, not a hard lay-down; some embers read as soft round bokeh dots; glow on the ridge small and far.",
     "v1_note": "v1 video and sheet deleted after v2 approval (user 2026-10-19)",
     "upscale_media_id": "fb3e6037-99b4-479c-9da5-2dbe9bf2d937",
-    "file_1080_clean": "1080/scene_023_MP-01_ba45804a_1080p_clean.mp4"
+    "file_1080_clean": "1080/scene_023_MP-01_ba45804a_1080p_clean.mp4",
+    "upscaled": true
   },
   "MP-02": {
     "scene_id": "20b5906a-098e-4212-abb6-b7f2b0dda6c8",
@@ -671,7 +731,12 @@
     "approved": true,
     "approve_note": "user approved 2026-10-19 evening",
     "submit_note": "2026-10-19 evening: v7 prompt + 3 handoff lessons (viewer invisible, digital cinema full-bleed, soaked pink sludge); request 11f154a1 op dbdbbd3e, not a ghost (matched in listing)",
-    "review_note": "v1 score 8.0: one continuous handheld shot that arcs around her (scene-detect clean, no fade-in, no border); Whisper PASS 100% Nora/kore 0.0-3.16s 'Cap. The grass. It's laying down uphill.', only Nora speaks; she looks off-left at Ray, never into the lens; from ~2.7s she points down-left with her glove; ragged flames and grey-brown smoke on the slope, dusk light. Minor: pink retardant is heavy streaks on shirt and braid, not a full head-to-toe soak (face mostly soot); lime-green patches appear on her helmet from ~2s (Crew Helmet ref is plain yellow); a crew shoulder fills the left foreground 0-1s; the grass laying uphill is not readable; no low red sun."
+    "review_note": "v1 score 8.0: one continuous handheld shot that arcs around her (scene-detect clean, no fade-in, no border); Whisper PASS 100% Nora/kore 0.0-3.16s 'Cap. The grass. It's laying down uphill.', only Nora speaks; she looks off-left at Ray, never into the lens; from ~2.7s she points down-left with her glove; ragged flames and grey-brown smoke on the slope, dusk light. Minor: pink retardant is heavy streaks on shirt and braid, not a full head-to-toe soak (face mostly soot); lime-green patches appear on her helmet from ~2s (Crew Helmet ref is plain yellow); a crew shoulder fills the left foreground 0-1s; the grass laying uphill is not readable; no low red sun.",
+    "upscale_media_id": "650c6b59-df34-4198-bad8-8236c40057cd",
+    "file_1080_clean": "1080/scene_024_MP-02_20b5906a_1080p_clean.mp4",
+    "upscale_note": "2026-10-20/21 UPSCALE_VIDEO on dinhvulon25 (project f4415512), 1920x1080, logo removed",
+    "video_file_720_deleted": "scenes/scene_024_MP-02_20b5906a.mp4",
+    "upscaled": true
   },
   "MP-03": {
     "scene_id": "cc8585de-dd53-480a-922a-3ef81052b717",
@@ -701,7 +766,12 @@
     "ai_score": 8.25,
     "submit_note": "2026-10-19 evening auto-loop: v7 prompt + handoff lessons; request 525f98cf op 7d4fce6b",
     "review_note": "v1 score 8.25 (CC 8.5 / PA 7.5 / MQ 8.5 / VF 8.5 / TC 8.5 / CO 8.0): one continuous handheld shot, scene-detect clean, no border; Ray (white helmet, only one) shouts to the crew, gestures toward the ridge, crew grabs tools and starts moving 6-8s; low red sun in smoke haze, flames on the ridge. Whisper PASS 95% Ray/algenib 0.0-7.6s, '? VOICE?' 276 Hz (shouting) - listen. Audio -14.7 LUFS, peak -3.0 dBFS, no dead air. Minor: framed MS/WS on Ray, not the EWS of the fire column leaning over the ridge; embers streaming over the crest barely readable; smoke column a bit puffy; crew faces visible.",
-    "approve_note": "user approved 2026-10-19 ~22:05 (\"duyệt hết những video đã gen\")"
+    "approve_note": "user approved 2026-10-19 ~22:05 (\"duyệt hết những video đã gen\")",
+    "upscale_media_id": "a599f2fe-e4c9-4f51-8059-e4686988c001",
+    "file_1080_clean": "1080/scene_025_MP-03_cc8585de_1080p_clean.mp4",
+    "upscale_note": "2026-10-20/21 UPSCALE_VIDEO on dinhvulon25 (project f4415512), 1920x1080, logo removed",
+    "video_file_720_deleted": "scenes/scene_025_MP-03_cc8585de.mp4",
+    "upscaled": true
   },
   "MP-04": {
     "scene_id": "d4f60adf-b750-4853-9090-04b121e4acaf",
@@ -736,7 +806,12 @@
     "submit_note": "v2 request e19579a1 op 3d096c61 (side-on tracking, pink sludge in timeline, eyes on path)",
     "review_note": "v2 score 8.0 (CC 8.0 / PA 7.5 / MQ 8.0 / VF 8.5 / TC 8.0 / CO 8.5): one continuous handheld shot, scene-detect clean; Nora soaked pink (helmet, face, shirt, braid) runs in profile with the crew, never looks at the lens; spot fires bloom in the grass on both sides; low red sun, smoke haze. Whisper PASS (silent). Audio -24.4 LUFS (no dialogue), peak -3.9 dBFS. Minor/flag: running direction reads left-to-right in the first half and right-to-left at the end as the camera arcs around her; pink sludge also covers her pants (whole outfit pink); smoke column a bit puffy.",
     "delete_note": "2026-10-19: takes v1 (below 8) deleted on user request; kept take is video_file",
-    "approve_note": "user approved 2026-10-19 ~22:05 (\"duyệt hết những video đã gen\")"
+    "approve_note": "user approved 2026-10-19 ~22:05 (\"duyệt hết những video đã gen\")",
+    "upscale_media_id": "075e878c-6fd1-4b10-9523-0e03eed38619",
+    "file_1080_clean": "1080/scene_026_MP-04_d4f60adf_1080p_clean.mp4",
+    "upscale_note": "2026-10-20/21 UPSCALE_VIDEO on dinhvulon25 (project f4415512), 1920x1080, logo removed",
+    "video_file_720_deleted": "scenes/scene_026_MP-04_d4f60adf_v2.mp4",
+    "upscaled": true
   },
   "FL-13": {
     "scene_id": "0e9a4d05-a89e-42cd-9906-baa634e61749",
@@ -769,7 +844,12 @@
     "ai_score": 8.5,
     "submit_note": "2026-10-19 evening auto-loop: v7 prompt + handoff lessons; request 266e53bb op 44748611",
     "review_note": "v1 score 8.5 (CC 8.5 / PA 8.5 / MQ 8.5 / VF 8.5 / TC 8.5 / CO 8.5): one continuous handheld shot, scene-detect clean; rookie turns back to a dropped chainsaw, Nora grabs his pack strap, hauls him back and shoves him downhill; pink retardant on her shirt and helmet, soot on face; eyes on the rookie, never the lens; flames on the slope, low red sun. Whisper PASS 100% Nora/kore 0.11-4.29s. Audio -12.5 LUFS, true peak -0.1 dBFS (hot - normalize in edit). Minor: rookie's face partly visible in profile; pink is lighter than FL-12's drench; orange chainsaw (no readable logo).",
-    "approve_note": "user approved 2026-10-19 ~22:05 (\"duyệt hết những video đã gen\")"
+    "approve_note": "user approved 2026-10-19 ~22:05 (\"duyệt hết những video đã gen\")",
+    "upscale_media_id": "03ff5f0e-21ee-4140-aa75-92dc9a91d4b1",
+    "file_1080_clean": "1080/scene_027_FL-13_0e9a4d05_1080p_clean.mp4",
+    "upscale_note": "2026-10-20/21 UPSCALE_VIDEO on dinhvulon25 (project f4415512), 1920x1080, logo removed",
+    "video_file_720_deleted": "scenes/scene_027_FL-13_0e9a4d05.mp4",
+    "upscaled": true
   },
   "MP-05": {
     "scene_id": "4f44afa0-49eb-4e6e-b81e-bc1e28db3fb2",
@@ -799,7 +879,12 @@
     "submit_note": "v2 request f1edd95f op 99370fcb (fixed side-on telephoto, ridge burning from frame 0, trucks R-to-L)",
     "review_note": "v2 score 8.25 (CC 8.5 / PA 7.5 / MQ 8.5 / VF 8.0 / TC 9.0 / CO 8.5): one fixed telephoto framing, no cut/dissolve; burning pine ridge from frame 0 under a smoke-red sun; a line of red engines drives right to left on the dirt road raising dust the whole clip (checked 0.5/3/5.5s crops). Whisper PASS (silent). Audio -23.8 LUFS, peak -4.2 dBFS. Minor: the fire pulling ahead of the trucks is not readable; smoke column puffy/round; parked staging vehicles and containers in the lower-left foreground.",
     "delete_note": "2026-10-19: takes v1 (below 8) deleted on user request; kept take is video_file",
-    "approve_note": "user approved 2026-10-19 ~22:05 (\"duyệt hết những video đã gen\")"
+    "approve_note": "user approved 2026-10-19 ~22:05 (\"duyệt hết những video đã gen\")",
+    "upscale_media_id": "3ff5457c-35b7-48b3-9bc5-2c14cbe38dc0",
+    "file_1080_clean": "1080/scene_028_MP-05_4f44afa0_1080p_clean.mp4",
+    "upscale_note": "2026-10-20/21 UPSCALE_VIDEO on dinhvulon25 (project f4415512), 1920x1080, logo removed",
+    "video_file_720_deleted": "scenes/scene_028_MP-05_4f44afa0_v2.mp4",
+    "upscaled": true
   },
   "EL-03": {
     "scene_id": "7b51db6b-a00b-4d82-b2e7-3916e542d4bc",
@@ -833,7 +918,12 @@
     "ai_score": 8.35,
     "line_change": "2026-10-19: line changed to \"Mr. Keller? It's Eli Hale! I came for Juniper! Is anyone here?\" (12 words) - every earlier wording that mentioned paying/buying (\"buy her back... forty dollars\", \"Please, I can pay!\") ghosted 8 times; update script_v7.md / subtitles",
     "review_note": "v1 score 8.35 (CC 8.5 / PA 8.0 / MQ 8.5 / VF 8.5 / TC 8.5 / CO 8.0): first take that rendered (named-ref project 5fef436f, 4 refs); one continuous shot, scene-detect clean; Eli (green hoodie, backpack) lays the red bike down by the open gate, cups his hands and calls toward the red barn, walks into the empty yard and looks around; dusk orange sky with smoke behind the barn. Whisper PASS 100% Eli/fenrir 0.53-5.33s, '? VOICE?' 320 Hz (shouting) - listen. Audio -15.8 LUFS, peak -2.9 dBFS. Minor: embers barely visible; smoke slightly puffy; at the end he faces the camera side-on, eyes off to frame right.",
-    "approve_note": "user approved 2026-10-19 ~22:05 (\"duyệt hết những video đã gen\")"
+    "approve_note": "user approved 2026-10-19 ~22:05 (\"duyệt hết những video đã gen\")",
+    "upscale_media_id": "7079d73a-1695-4c9b-bad9-83d8f114f56b",
+    "file_1080_clean": "1080/scene_029_EL-03_7b51db6b_1080p_clean.mp4",
+    "upscale_note": "2026-10-20/21 UPSCALE_VIDEO on dinhvulon25 (project 5fef436f), 1920x1080, logo removed",
+    "video_file_720_deleted": "scenes/scene_029_EL-03_7b51db6b_nopay.mp4",
+    "upscaled": true
   },
   "EL-05": {
     "scene_id": "de04a4b9-23d0-4525-9e9c-67d9318fd999",
@@ -867,7 +957,12 @@
     "submit_note": "v2 request 9e2a27a7 op 0ca64192 (door shut, floor smoke ribbon, forehead-to-face)",
     "review_note": "v2 score 8.5 (CC 9.0 / PA 8.0 / MQ 8.5 / VF 8.5 / TC 8.5 / CO 8.5): one continuous shot, no cuts; Eli (green hoodie) rests his forehead on the grey dappled mare's face, hand on her cheek, then strokes her head; low grey smoke drifts in behind the mare from ~2.5s; no flames, nothing flying; Eli never looks at the lens. Whisper PASS 100% Eli/fenrir 0.11-5.19s. Audio -17.5 LUFS, peak -1.5 dBFS. Minor: light through the slats reads white daylight, not orange; smoke comes from behind the mare rather than visibly under the door; his eyes are not clearly closed.",
     "delete_note": "2026-10-19: takes v1 (below 8) deleted on user request; kept take is video_file",
-    "approve_note": "user approved 2026-10-19 ~22:05 (\"duyệt hết những video đã gen\")"
+    "approve_note": "user approved 2026-10-19 ~22:05 (\"duyệt hết những video đã gen\")",
+    "upscale_media_id": "0916c120-cc1b-40cb-ba01-e672f7ffb6ca",
+    "file_1080_clean": "1080/scene_030_EL-05_de04a4b9_1080p_clean.mp4",
+    "upscale_note": "2026-10-20/21 UPSCALE_VIDEO on dinhvulon25 (project f4415512), 1920x1080, logo removed",
+    "video_file_720_deleted": "scenes/scene_030_EL-05_de04a4b9_v2.mp4",
+    "upscaled": true
   },
   "EL-06": {
     "scene_id": "c50977a5-b917-48ae-8df9-3b28a71f58a2",
@@ -900,7 +995,12 @@
     "submit_note": "v3 request ef6df83d op a1c2ac2c (soft floor haze, door shut, mare off-frame); v2 attempt 9e36b278 hit UNUSUAL_ACTIVITY (no video)",
     "review_note": "v3 score 8.0 (CC 7.0 / PA 8.0 / MQ 8.5 / VF 8.5 / TC 8.5 / CO 8.5): one continuous shot, no cuts; Eli on the handset leaves the message, eyes on the door, never the lens; realistic soft grey smoke seeps in low across the straw; no flames; at the end he spins and moves toward frame right. Whisper PASS 100% Eli/fenrir 0.05-4.15s. Audio -15.4 LUFS, peak -1.0 dBFS. Flag: 4-6s a dim BROWN horse head shows in a background stall (Juniper is grey dappled; should stay off-frame); cool grey light, not orange; he holds the handset with both hands at times.",
     "delete_note": "2026-10-19: takes v1,v2 (below 8) deleted on user request; kept take is video_file",
-    "approve_note": "user approved 2026-10-19 ~22:05 (\"duyệt hết những video đã gen\")"
+    "approve_note": "user approved 2026-10-19 ~22:05 (\"duyệt hết những video đã gen\")",
+    "upscale_media_id": "34c40e30-89bc-4cc2-b957-240864067140",
+    "file_1080_clean": "1080/scene_031_EL-06_c50977a5_1080p_clean.mp4",
+    "upscale_note": "2026-10-20/21 UPSCALE_VIDEO on dinhvulon25 (project f4415512), 1920x1080, logo removed",
+    "video_file_720_deleted": "scenes/scene_031_EL-06_c50977a5_v3.mp4",
+    "upscaled": true
   },
   "EM-01": {
     "scene_id": "493785b6-4f87-4ead-997f-d91317344862",
@@ -934,7 +1034,12 @@
     "video_file": "scenes/scene_032_EM-01_493785b6_v5.mp4",
     "ai_keep": true,
     "ai_score": 8.4,
-    "approve_note": "user approved v5 2026-10-19 ~22:12; v4 deleted"
+    "approve_note": "user approved v5 2026-10-19 ~22:12; v4 deleted",
+    "upscale_media_id": "fba33422-66ca-4f98-be69-d3941a4c5fdb",
+    "file_1080_clean": "1080/scene_032_EM-01_493785b6_1080p_clean.mp4",
+    "upscale_note": "2026-10-20/21 UPSCALE_VIDEO on dinhvulon25 (project 5fef436f), 1920x1080, logo removed",
+    "video_file_720_deleted": "scenes/scene_032_EM-01_493785b6_v5.mp4",
+    "upscaled": true
   },
   "EM-02": {
     "scene_id": "3835fbf3-df8e-4c01-b165-984d100d683d",
@@ -970,7 +1075,12 @@
     "submit_note": "v3 request f9c75e52 op ad226aaf (long-sleeve lock)",
     "review_note": "v3 score 8.25 (CC 8.0 / PA 8.0 / MQ 8.5 / VF 8.5 / TC 8.5 / CO 8.5): one shot, no cuts; long-sleeved yellow fire shirt, gloved hand closes on the handle, door stays shut, she freezes and her eyes widen toward frame left, never the lens; staging area safe, fire only on the far ridge under a red-pink sunset. Whisper PASS (silent). Audio -27.7 LUFS, peak -0.7 dBFS. Minor/flag: pink retardant almost gone (just soot and dirt) - continuity with FL-12/MP-02; lime reflective band on the helmet again.",
     "delete_note": "2026-10-19: takes v1,v2 (below 8) deleted on user request; kept take is video_file",
-    "approve_note": "user approved 2026-10-19 ~22:05 (\"duyệt hết những video đã gen\")"
+    "approve_note": "user approved 2026-10-19 ~22:05 (\"duyệt hết những video đã gen\")",
+    "upscale_media_id": "5e03a615-bcea-4c6b-9326-9a92467029ad",
+    "file_1080_clean": "1080/scene_033_EM-02_3835fbf3_1080p_clean.mp4",
+    "upscale_note": "2026-10-20/21 UPSCALE_VIDEO on dinhvulon25 (project f4415512), 1920x1080, logo removed",
+    "video_file_720_deleted": "scenes/scene_033_EM-02_3835fbf3_v3.mp4",
+    "upscaled": true
   },
   "EM-03": {
     "scene_id": "808d2300-d060-4972-acfb-3872d2c0d162",
@@ -1005,7 +1115,12 @@
     "submit_note": "v2 request 42f889b4 op 62a17e26 (three-quarter profile, eyes off-lens, no fire near trucks)",
     "review_note": "v2 score 8.15 (CC 7.5 / PA 8.0 / MQ 8.5 / VF 8.5 / TC 8.5 / CO 8.5): one shot, no cuts; Nora in three-quarter profile speaks into the handheld radio, listens with her mouth closed, lowers it and turns her head; long-sleeved shirt; fire only on the distant hills, staging trucks safe. Whisper PASS 100% Nora/kore 0.37-2.83s, no radio voice. Audio -15.7 LUFS, peak -0.8 dBFS. Flag: 0-1.5s a man in a YELLOW helmet stands at the right frame edge (Ray wears white) before leaving frame; pink retardant faint; final look-back is toward frame right rather than clearly at the ridge.",
     "delete_note": "2026-10-19: takes v1 (below 8) deleted on user request; kept take is video_file",
-    "approve_note": "user approved 2026-10-19 ~22:05 (\"duyệt hết những video đã gen\")"
+    "approve_note": "user approved 2026-10-19 ~22:05 (\"duyệt hết những video đã gen\")",
+    "upscale_media_id": "27046933-4a7d-4c2b-bcc1-e4dbe5b2699b",
+    "file_1080_clean": "1080/scene_034_EM-03_808d2300_1080p_clean.mp4",
+    "upscale_note": "2026-10-20/21 UPSCALE_VIDEO on dinhvulon25 (project f4415512), 1920x1080, logo removed",
+    "video_file_720_deleted": "scenes/scene_034_EM-03_808d2300_v2.mp4",
+    "upscaled": true
   },
   "CH-00": {
     "scene_id": "ca4a14db-d83c-4f3a-a8c9-37ed7b11d020",
@@ -1029,7 +1144,12 @@
     "ai_score": 8.2,
     "submit_note": "v2 request 1832da2e op e1ab2b2b (three-quarter profile, fast line, no fire near trucks, plain helmet)",
     "review_note": "v2 score 8.2 (CC 8.0 / PA 8.0 / MQ 8.5 / VF 8.5 / TC 7.5 / CO 8.5): one continuous shot, no cuts; Nora in three-quarter profile speaks into the handheld radio, eyes on the far hills, never at the lens; listens with her mouth closed, lowers the radio and turns away at the end; fire only on the distant hillside, staging trucks intact; no radio voice. Whisper 92% ('Hale' heard as 'hail') but TIMING flag: line runs 0.21-5.59s (planned 0-3.5s) - Omni speaks 12 words at a natural ~5.4s pace; in the edit start the dispatch post_vo at ~5.7s and let it J-cut into the next clip. Audio -13.4 LUFS, true peak -0.0 dBFS (normalize). Minor: pink retardant nearly gone (soot only); lime band on the helmet again.",
-    "approve_note": "user approved v2 2026-10-19; v1 deleted"
+    "approve_note": "user approved v2 2026-10-19; v1 deleted",
+    "upscale_media_id": "9bf8f6b2-7094-44cf-b6b6-a94ff3955ff8",
+    "file_1080_clean": "1080/scene_035_CH-00_ca4a14db_1080p_clean.mp4",
+    "upscale_note": "2026-10-20/21 UPSCALE_VIDEO on dinhvulon25 (project 5fef436f), 1920x1080, logo removed",
+    "video_file_720_deleted": "scenes/scene_035_CH-00_ca4a14db_v2.mp4",
+    "upscaled": true
   },
   "CH-01": {
     "scene_id": "78bee1b9-16f2-40d3-9ddb-a2288b42c1cc",
@@ -1051,7 +1171,12 @@
     "ai_score": 8.4,
     "submit_note": "v1 request 758abdf0 op 4e3dc754",
     "review_note": "v1 score 8.4 (CC 8.5 / PA 8.0 / MQ 8.5 / VF 8.5 / TC 9.0 / CO 8.0): one continuous shot, scene-detect clean; over Nora's shoulder (braid, helmet, pink-stained long-sleeved shirt, face never shown), Ray (white helmet) steps in front of the open truck door and speaks low and hard, then holds still; staging trucks intact, flames only on the hillside behind. Whisper PASS 100% Ray/algenib 0.0-6.4s. Audio -16.2 LUFS, peak -3.2 dBFS. Minor: eye-level rather than a low angle on Ray; a shoulder patch on Nora's sleeve (not readable); lime band on her helmet.",
-    "approve_note": "user approved 2026-10-19"
+    "approve_note": "user approved 2026-10-19",
+    "upscale_media_id": "ef9608a0-ae1d-4f6f-b4c6-27e5d5638a2b",
+    "file_1080_clean": "1080/scene_036_CH-01_78bee1b9_1080p_clean.mp4",
+    "upscale_note": "2026-10-20/21 UPSCALE_VIDEO on dinhvulon25 (project 5fef436f), 1920x1080, logo removed",
+    "video_file_720_deleted": "scenes/scene_036_CH-01_78bee1b9.mp4",
+    "upscaled": true
   },
   "CH-02": {
     "scene_id": "cb02f9b9-f8fe-46ca-adfb-44434309ac16",
@@ -1074,7 +1199,12 @@
     "ai_score": 8.25,
     "submit_note": "v1 request 60ceb558 op 1e535611",
     "review_note": "v1 score 8.25 (CC 8.5 / PA 7.5 / MQ 8.5 / VF 8.5 / TC 8.5 / CO 8.0): one continuous close-up, scene-detect clean; Nora in three-quarter profile, eyes mostly off-frame left toward Ray, delivers the line flat and quiet; pink streaks on the shirt, soot on the face. Whisper PASS 83% Nora/kore 0.14-2.9s ('Ray' heard as 'rey'). Audio -12.4 LUFS, peak -0.8 dBFS. Minor: her face turns close to the lens around 1-1.5s; a flame burns just behind the pickup on the left (staging area should be safe); lime reflective band on the helmet - not in the Crew Helmet ref, the model adds it from real wildland helmets.",
-    "approve_note": "user approved 2026-10-19"
+    "approve_note": "user approved 2026-10-19",
+    "upscale_media_id": "ce2fab2c-743d-4d9a-9528-111585440698",
+    "file_1080_clean": "1080/scene_037_CH-02_cb02f9b9_1080p_clean.mp4",
+    "upscale_note": "2026-10-20/21 UPSCALE_VIDEO on dinhvulon25 (project 5fef436f), 1920x1080, logo removed",
+    "video_file_720_deleted": "scenes/scene_037_CH-02_cb02f9b9.mp4",
+    "upscaled": true
   },
   "CH-03": {
     "scene_id": "e2543c1f-1aed-4954-b0d0-a39bbb16ed00",
@@ -1097,7 +1227,12 @@
     "submit_note": "v2 request 8cffdd81 op 303b05b8 (loud, sharp, clipped delivery - Bài học 101)",
     "review_note": "v2 score 8.15 (CC 8.5 / PA 7.0 / MQ 8.5 / VF 8.5 / TC 8.5 / CO 8.0): delivery fixed - Ray shouts, mouth wide, jaw set, pitch 182 Hz vs 123 Hz in v1; push-in over Nora's shoulder, heavy pink sludge on her back, face never shown. Whisper PASS 100% 0.27-6.61s. Audio -16.0 LUFS, peak -2.3 dBFS. FAIL-ish: flames now burn right behind and among the staging trucks (the 'voice raised over the roar of the fire' wording likely pulled the fire in); a handheld radio clipped on Ray's chest; lime band on Nora's helmet.",
     "review_note_v1": "v1 score 8.6 (CC 8.5 / PA 8.5 / MQ 8.5 / VF 8.5 / TC 9.0 / CO 8.5): one continuous shot with a slow push-in on Ray over Nora's shoulder (braid, pink-stained shirt, face never shown); Ray (white helmet) speaks low, eyes drifting away, then holds her look; staging trucks intact, smoke only on the far hills. Whisper PASS 100% Ray/algenib 0.08-6.98s. Audio -15.5 LUFS, peak -1.0 dBFS. Minor: a speaker-mic clipped on Ray's chest; lime band on Nora's helmet.",
-    "approve_note": "user approved v2 (loud delivery) 2026-10-19; v1 deleted"
+    "approve_note": "user approved v2 (loud delivery) 2026-10-19; v1 deleted",
+    "upscale_media_id": "e192189d-2ad2-40ab-95dd-69268dd77646",
+    "file_1080_clean": "1080/scene_038_CH-03_e2543c1f_1080p_clean.mp4",
+    "upscale_note": "2026-10-20/21 UPSCALE_VIDEO on dinhvulon25 (project 5fef436f), 1920x1080, logo removed",
+    "video_file_720_deleted": "scenes/scene_038_CH-03_e2543c1f_v2.mp4",
+    "upscaled": true
   },
   "CH-04": {
     "scene_id": "1c465109-f6ef-44f7-9d85-2b8bd4a7bf16",
@@ -1124,7 +1259,12 @@
     "review_note_v4": "v4 score 8.3 (CC 8.5 / PA 8.0 / MQ 8.0 / VF 8.5 / TC 8.5 / CO 8.5): full frame, no border (fixes v3); tan leather glove, pink-stained sleeve; staging area calm, fire only a far glow. Radio keeps the same body and short antenna lying flat (antenna to frame right) for ~0-3s while Nora sets it in Ray's palm; Whisper PASS (silent). Flag: last ~1s Ray turns the radio upright so the antenna reads longer; background slightly soft. Audio -34.4 LUFS (raise in edit), peak -5.7 dBFS. | USER: radio flips direction at the end -> regen v5 with the hand held still and no rotation.",
     "review_note_v5": "v5 score 7.75 (media b7150a80-6444-49d3-8f95-f7efdddf22fc, scenes/scene_039_CH-04_1c465109_v5.mp4; CC 8.0 / PA 7.0 / MQ 7.5 / VF 8.5 / TC 8.0 / CO 8.0): no border, staging calm, Whisper PASS (silent). FAIL: radio antenna points right 0-2s, then flips to point LEFT from ~2s when Nora's hand leaves (same flip as v4); Nora's sleeve lost the pink; camera drifts up to Ray's face. The hand-off itself keeps triggering a flip.",
     "review_note_v6": "v6 score 7.5 (media b4042b07-2eb2-4596-b1f8-afc8f1f4ec8d, scenes/scene_039_CH-04_1c465109_v6.mp4): no hand-off, no border, staging calm, Whisper PASS. FAIL: while Nora's glove covers it (0-1.2s) the radio is a plain block; when the glove lifts (~1.3s) an antenna appears, pointing frame LEFT, and then stays stable to the end. Ray's fingers never close. The model always draws a radio with an antenna, and once it is uncovered it keeps it pointing left.",
-    "approve_note": "user approved v6 2026-10-19 (antenna appears at ~1.3s when the glove lifts, then stable); v1-v5 deleted"
+    "approve_note": "user approved v6 2026-10-19 (antenna appears at ~1.3s when the glove lifts, then stable); v1-v5 deleted",
+    "upscale_media_id": "b4042b07-2eb2-4596-b1f8-afc8f1f4ec8d",
+    "file_1080_clean": "1080/scene_039_CH-04_1c465109_1080p_clean.mp4",
+    "upscale_note": "2026-10-20/21 UPSCALE_VIDEO on dinhvulon25 (project 5fef436f), 1920x1080, logo removed",
+    "video_file_720_deleted": "scenes/scene_039_CH-04_1c465109_v6.mp4",
+    "upscaled": true
   },
   "CH-05": {
     "scene_id": "213d9d86-2a34-4354-8693-e662ccf859dc",
@@ -1149,7 +1289,12 @@
     "submit_note": "v2 request 9434e816 op 94c9b9a6 (Ray ref added, yellow fire shirt lock)",
     "review_note": "v2 score 8.5 (CC 8.5 / PA 8.5 / MQ 8.5 / VF 8.5 / TC 8.5 / CO 8.5): Ray now in his yellow fire shirt with pack straps and plain white helmet, seen from behind (fixes v1 white T-shirt); one continuous shot; Nora walks up hard, grips and swings open the blue pickup door, looks back at Ray; staging intact, fire only far away. Whisper PASS 100% Nora/kore 0.08-4.8s, pitch 246 Hz (firmer than v1). Audio -14.7 LUFS, peak -0.7 dBFS. Minor: Ray's back fills the frame for ~0.5s around 1.5s; the edge of his cheek shows at the end; pink retardant lighter on Nora's shirt.",
     "review_note_v1": "v1 score 8.15 (CC 7.5 / PA 8.0 / MQ 8.5 / VF 8.5 / TC 8.5 / CO 8.5): one continuous shot over Ray's shoulder (white helmet, face never shown); Nora (pink-stained yellow shirt) steps up, points hard at Ray, yanks open the blue pickup door and looks back at him; staging trucks intact, fire only on the far ridge (nofire style works). Whisper PASS 100% Nora/kore 0.3-5.38s, delivery firm. Audio -15.5 LUFS, peak -1.0 dBFS. Flag: Ray in the foreground wears a WHITE T-SHIRT, not his yellow fire shirt - the clip's refs do not include Ray; shoulder patch/emblem on Nora's sleeve and helmet.",
-    "approve_note": "user approved v2 2026-10-19; v1 deleted"
+    "approve_note": "user approved v2 2026-10-19; v1 deleted",
+    "upscale_media_id": "6835b1e1-837f-40f2-a7d1-ff07e3164ec9",
+    "file_1080_clean": "1080/scene_040_CH-05_213d9d86_1080p_clean.mp4",
+    "upscale_note": "2026-10-20/21 UPSCALE_VIDEO on dinhvulon25 (project 5fef436f), 1920x1080, logo removed",
+    "video_file_720_deleted": "scenes/scene_040_CH-05_213d9d86_v2.mp4",
+    "upscaled": true
   },
   "CH-07": {
     "scene_id": "7387b5cb-6d4e-4305-9b99-4991e23b3965",
@@ -1172,7 +1317,12 @@
     "ai_score": 8.5,
     "submit_note": "v2 request f4a3eff6 op 6a626e96 (navy pickup lock, Ray in frame from frame 0)",
     "review_note": "v2 score 8.5 (CC 8.5 / PA 8.5 / MQ 8.5 / VF 8.5 / TC 8.5 / CO 8.5): dark navy-blue Ford pickup matches the ref and CH-05 (fixes v1 tan truck); Ray (white helmet, yellow shirt) stands in the left foreground with his back to the viewer from the first frame to the last, watching; the pickup drives out left to right and away in a boiling dust plume; staging trucks intact, fire only on the far ridge under a red sunset. Whisper PASS (silent). Audio -20.5 LUFS, peak -9.1 dBFS. Minor: closer to eye level than a high angle; a dark print on the back of Ray's shirt.",
-    "approve_note": "user approved v2 2026-10-19; v1 deleted"
+    "approve_note": "user approved v2 2026-10-19; v1 deleted",
+    "upscale_media_id": "65f7964b-5c5a-4494-bf74-b49c6c51d517",
+    "file_1080_clean": "1080/scene_041_CH-07_7387b5cb_1080p_clean.mp4",
+    "upscale_note": "2026-10-20/21 UPSCALE_VIDEO on dinhvulon25 (project 5fef436f), 1920x1080, logo removed",
+    "video_file_720_deleted": "scenes/scene_041_CH-07_7387b5cb_v2.mp4",
+    "upscaled": true
   },
   "CH-09": {
     "scene_id": "bbf4f595-c093-4e15-9a9c-e8960fbc9b37",
@@ -1193,7 +1343,12 @@
     "ai_score": 8.4,
     "submit_note": "v1 request dcf8d88a op dbb61f3e",
     "review_note": "v1 score 8.4 (CC 8.5 / PA 8.5 / MQ 8.5 / VF 8.5 / TC 8.0 / CO 8.5): one continuous MCU; Ray (white helmet, yellow shirt) in three-quarter profile lifts one radio, reports with eyes on the ridge, lowers it and holds still; no reply voice. Whisper 96%: full line heard 0.0-3.96s plus the last word 'Hale' after a short pause (transcribed 'hail'); the tool flagged CUT-OFF/extra speech because of that split - false positive, the line is complete. Audio -16.9 LUFS, peak -1.3 dBFS. Minor: flames burn on the hillside behind the staging trucks (on the hill, not on the trucks); the radio is a blur while he lifts it at 0-0.5s.",
-    "approve_note": "user approved 2026-10-19"
+    "approve_note": "user approved 2026-10-19",
+    "upscale_media_id": "eba93aa0-ae42-4f02-b901-01dfc066d59e",
+    "file_1080_clean": "1080/scene_042_CH-09_bbf4f595_1080p_clean.mp4",
+    "upscale_note": "2026-10-20/21 UPSCALE_VIDEO on dinhvulon25 (project 5fef436f), 1920x1080, logo removed",
+    "video_file_720_deleted": "scenes/scene_042_CH-09_bbf4f595.mp4",
+    "upscaled": true
   },
   "RR-01": {
     "scene_id": "6d65d48b-d025-4a08-9c2b-4df3c4091590",
@@ -1218,7 +1373,12 @@
     "ai_score": 8.5,
     "submit_note": "v3 request 94a430c3 op 4da842ea (front to frame right, Nora visible driving, fast tracking); v2 (no driver ref, silhouette read as a man, slow) superseded",
     "review_note": "v3 score 8.5 (CC 8.5 / PA 8.5 / MQ 8.5 / VF 8.5 / TC 8.5 / CO 8.5): dark navy Ford in clean profile, front to frame right the whole clip (fixes v1 direction); Nora in yellow helmet clearly at the wheel through the driver's window (fixes v2 male silhouette); fast parallel tracking - gravel and foreground trees streak past, burning pines both sides, embers on the road; no flame touches the truck. Whisper PASS (silent). Audio -18.4 LUFS, peak -8.2 dBFS. Minor: light reads as hazy dusk rather than near-dark; the truck's own bounce is mild - speed comes mostly from the background blur.",
-    "approve_note": "user approved v3 2026-10-19; v1, v2 deleted"
+    "approve_note": "user approved v3 2026-10-19; v1, v2 deleted",
+    "upscale_media_id": "42877952-277c-4646-8061-a0119f2741f2",
+    "file_1080_clean": "1080/scene_043_RR-01_6d65d48b_1080p_clean.mp4",
+    "upscale_note": "2026-10-20/21 UPSCALE_VIDEO on dinhvulon25 (project 5fef436f), 1920x1080, logo removed",
+    "video_file_720_deleted": "scenes/scene_043_RR-01_6d65d48b_v3.mp4",
+    "upscaled": true
   },
   "RR-02": {
     "scene_id": "ba32ecf9-5503-4009-8468-b6ac16e69052",
@@ -1238,7 +1398,12 @@
     "ai_score": 8.3,
     "submit_note": "v1 request 6154809b op e73751fe",
     "review_note": "v1 score 8.3 (CC - / PA 8.0 / MQ 8.5 / VF 8.5 / TC 8.5 / CO 8.5): low view over the hood edge up the gravel road between burning pines, smoke drifting; one tall pine on the right tips and falls in one continuous motion right to left across the road (~1.5-3s) and lands flat, then burns along the trunk; no explosion, no fireball. Whisper PASS (silent). Audio -23.2 LUFS, peak -0.5 dBFS. Minor: the falling pine's crown is mostly green (only the trunk burns); light reads as smoky daylight-dusk rather than dark; headlight beams not distinct.",
-    "approve_note": "user approved 2026-10-19"
+    "approve_note": "user approved 2026-10-19",
+    "upscale_media_id": "9d610353-d1d2-4f04-8a9b-1ccc7cb769fd",
+    "file_1080_clean": "1080/scene_044_RR-02_ba32ecf9_1080p_clean.mp4",
+    "upscale_note": "2026-10-20/21 UPSCALE_VIDEO on dinhvulon25 (project 5fef436f), 1920x1080, logo removed",
+    "video_file_720_deleted": "scenes/scene_044_RR-02_ba32ecf9.mp4",
+    "upscaled": true
   },
   "RR-04": {
     "scene_id": "855e529b-0641-4150-b8df-b0351e69f903",
@@ -1284,7 +1449,11 @@
       "chain": "band-pass 380-3000 Hz, +5 dB @1.7 kHz, compressor 6:1, tanh soft-clip, bitcrush 12-bit mix 0.2; white-noise static bed (500-4000 Hz) loud squelch 0-0.2s and 5.7-5.95s, low hiss between, dead air 5.95-6.0s; loudnorm -16; 6.0s mono mp3",
       "whisper": "100% Eli 0.27-4.35s (314 Hz reading is the band-pass, same as before)",
       "mix": "v8 native audio is near silent (-33 LUFS): keep it under the mp3, no mute needed"
-    }
+    },
+    "upscale_media_id": "e7ee0802-8758-493b-b95c-383d97d0016d",
+    "file_1080_clean": "1080/scene_045_RR-04_855e529b_1080p_clean.mp4",
+    "upscale_note": "2026-10-20/21 UPSCALE_VIDEO on dinhvulon25 (project 5fef436f), 1920x1080, logo removed",
+    "upscaled": true
   },
   "RR-06": {
     "scene_id": "cd708a9f-db06-4430-a17a-ec5c2641d76e",
@@ -1320,7 +1489,8 @@
     "ai_score_v1": 7.38,
     "approve_note_v1": "user approved v1 2026-10-20 as is (known minor issues: clean helmet without scorched brim, charred sheet in the left window)",
     "video_file_v1": "deleted 2026-10-20 (user: delete old takes after approval)",
-    "flow_account_note": "user 2026-10-20: every take generated this morning (v1, v2, v3) was made on Flow account dinhvulon25; upscale from dinhvulon25."
+    "flow_account_note": "user 2026-10-20: every take generated this morning (v1, v2, v3) was made on Flow account dinhvulon25; upscale from dinhvulon25.",
+    "upscaled": false
   },
   "RR-07": {
     "scene_id": "c85505c5-7a2c-42e2-9e6c-25c71c27a924",
@@ -1360,7 +1530,8 @@
       "line": "Hale, answer me. That road burns over inside the hour. Nora, turn around.",
       "dropped": "2026-10-20 user: only RR-04 (handset call) gets the radio dub"
     },
-    "flow_account_note": "user 2026-10-20: every take generated this morning (v1, v2) was made on Flow account dinhvulon25; upscale from dinhvulon25."
+    "flow_account_note": "user 2026-10-20: every take generated this morning (v1, v2) was made on Flow account dinhvulon25; upscale from dinhvulon25.",
+    "upscaled": false
   },
   "RR-08": {
     "scene_id": "545ae5e1-1dc6-4a95-af4b-1aa42407cc59",
@@ -1394,7 +1565,8 @@
     "video_media_id_v1": "6dd6956c-036c-4249-9e16-6a1a94865511",
     "video_file_v1": "deleted 2026-10-20",
     "approve_note": "approved 2026-10-20 (v3): real run left to right, fire chasing behind, goggles down; trim first 0.5s (puffy smoke).",
-    "flow_account_note": "user 2026-10-20: every take generated this morning (v1, v2, v3) was made on Flow account dinhvulon25; upscale from dinhvulon25."
+    "flow_account_note": "user 2026-10-20: every take generated this morning (v1, v2, v3) was made on Flow account dinhvulon25; upscale from dinhvulon25.",
+    "upscaled": false
   },
   "LH-01": {
     "scene_id": "366868c5-4bbf-4bd9-856c-93c0303be71d",
@@ -1426,7 +1598,8 @@
     "ai_score": 8.2,
     "approve_note": "approved 2026-10-20 (v1): keep the native Dispatch voice; radio version extracted to edit/audio/LH-01_dispatch_radio.mp3",
     "upscale_media_id": "9088ef5c-079e-479d-9e9b-19143b537ab2",
-    "file_1080_clean": "1080/scene_049_LH-01_366868c5_1080p_clean.mp4"
+    "file_1080_clean": "1080/scene_049_LH-01_366868c5_1080p_clean.mp4",
+    "upscaled": true
   },
   "LH-02": {
     "scene_id": "76ffc9cc-4cd4-43d4-a9ba-c04faba63c3e",
@@ -1457,7 +1630,8 @@
     "review_note_v2": "Urgent: Ray strides, points back at lit schoolhouse, shouts; crew hacking, ember gust ~2.3s, spot fire flares ~4.5s, Ray turns and clamps radio. MINOR: smoky dusk not full night, shouts roughly toward lens 0-1.5s, brief grimace reads half-smile ~4.5s. Whisper: 100% words, 0.0-1.12 + 2.0-4.86s (TIMING flag: planned to finish by 4s), pitch 327-372 Hz = shouting, user to listen.",
     "ai_score_v2": 8.12,
     "upscale_media_id": "572766cc-b724-4c75-a36a-929a52cd6c11",
-    "file_1080_clean": "1080/scene_050_LH-02_76ffc9cc_1080p_clean.mp4"
+    "file_1080_clean": "1080/scene_050_LH-02_76ffc9cc_1080p_clean.mp4",
+    "upscaled": true
   },
   "RR-13": {
     "scene_id": "da00d8ea-edd9-4f02-861c-cbc6d5a64c32",
@@ -1510,7 +1684,8 @@
     "flow_account_v6": "namlt",
     "review_note_v6": "8s: chạy về phía máy, cành cây đổ sau lưng, cắt cảnh 6s sang đặc tả mặt hoảng sợ (đoạn 6–8s rất tốt). Lỗi: lửa yếu hơn v5 (trời xám, cháy rải rác); cả cây đổ chéo sát sau lưng, cành quệt qua vai; quay toàn thân, tốc độ chạy vừa; đặc tả nền mờ.",
     "upscale_media_id": "eeef0a8b-d741-4d04-bd03-12fc313525f2",
-    "file_1080_clean": "1080/scene_051_RR-13_da00d8ea_1080p_clean.mp4"
+    "file_1080_clean": "1080/scene_051_RR-13_da00d8ea_1080p_clean.mp4",
+    "upscaled": true
   },
   "RR-14": {
     "scene_id": "916b6f45-0e46-4dfe-a614-bd7a137c79b4",
@@ -1548,7 +1723,8 @@
     "approve_note": "v4 duyệt 20/10/2026 (thay v2; lửa mạnh khớp RR-10/RR-13)",
     "video_file_v2": "deleted 2026-10-20",
     "upscale_media_id": "c93693cf-84c0-48d9-9110-40c688dd6167",
-    "file_1080_clean": "1080/scene_052_RR-14_916b6f45_1080p_clean.mp4"
+    "file_1080_clean": "1080/scene_052_RR-14_916b6f45_1080p_clean.mp4",
+    "upscaled": true
   },
   "RR-10": {
     "scene_id": "fba01c21-6879-4782-bce8-eebce2083bdd",
@@ -1620,7 +1796,8 @@
     "v6_flow_account": "namlt",
     "v6_review": "ref Keller Gate Bike (c674e7f3, frame RR-11 v3 giây 0.5 đã xóa Nora): xe nằm nghiêng góc dưới trái sát cột cổng, đầu xe trái, đúng vị trí và hướng RR-11; nằm im 4s; máy đẩy chậm vào; ánh chiều qua khói. Whisper PASS.",
     "upscale_media_id": "8b372485-bece-42a5-8ecb-60bb76125d1c",
-    "file_1080_clean": "1080/scene_053_RR-10_fba01c21_1080p_clean.mp4"
+    "file_1080_clean": "1080/scene_053_RR-10_fba01c21_1080p_clean.mp4",
+    "upscaled": true
   },
   "RR-11": {
     "scene_id": "d8aeb207-8d06-4e14-9b44-57cf90c80ce5",
@@ -1673,7 +1850,8 @@
     "v1_review": "Thoại đủ 13 từ (100%) nhưng chậm: câu 1 0.5–4.0s, câu 2 4.3–5.6s (Whisper FAIL TIMING). HIGH: bàn tay đeo găng thừa lơ lửng sau vai 2–3s; 0.5–1.5s đi ra từ chuồng, mặt cười. MINOR: trời xám, lửa chưa đều cả rừng. Đoạn 2–6s khum tay hét tốt.",
     "approve_note": "v3 duyệt 20/10/2026",
     "upscale_media_id": "f1582f38-48fc-4ab8-b0f2-0fa7b62de37e",
-    "file_1080_clean": "1080/scene_054_RR-11_d8aeb207_1080p_clean.mp4"
+    "file_1080_clean": "1080/scene_054_RR-11_d8aeb207_1080p_clean.mp4",
+    "upscaled": true
   },
   "RR-12": {
     "scene_id": "def0c40f-f4bb-4e17-85cd-8b88bdac04b1",
@@ -1702,7 +1880,8 @@
     "v1_ai_score": 7.7,
     "v1_note": "v1 had a dark brown horse (not Juniper grey); replaced by v2",
     "upscale_media_id": "82d38046-ff26-47c9-835b-3043c09eed9e",
-    "file_1080_clean": "1080/scene_055_RR-12_def0c40f_1080p_clean.mp4"
+    "file_1080_clean": "1080/scene_055_RR-12_def0c40f_1080p_clean.mp4",
+    "upscaled": true
   },
   "BN-01": {
     "scene_id": "57546ddf-36d2-4bd1-bdca-c3fa7573bdbe",
@@ -1735,7 +1914,8 @@
     "v2_ai_score": 8.2,
     "v2_note": "v2: good but no start frame from 55; replaced by v3 per user",
     "upscale_media_id": "de44752e-c2c6-40c7-bfc9-c229000570ae",
-    "file_1080_clean": "1080/scene_056_BN-01_57546ddf_1080p_clean.mp4"
+    "file_1080_clean": "1080/scene_056_BN-01_57546ddf_1080p_clean.mp4",
+    "upscaled": true
   },
   "BN-02": {
     "scene_id": "0843e5c9-99a1-4db0-b4aa-a92f7a34f87c",
@@ -1750,7 +1930,23 @@
     "flow_account": "dinhvulon16",
     "flow_project_id": "3b6be3e0-4a39-46e8-bf4e-aa727e449cd5",
     "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)",
-    "created_note": "2026-10-19: scene created from prompts_v7.json (chips resolved to named refs); handoff lessons not applied yet"
+    "created_note": "2026-10-19: scene created from prompts_v7.json (chips resolved to named refs); handoff lessons not applied yet",
+    "video_media_id": "9a518019-b2f0-49a8-ad40-14daab0fe97a",
+    "video_file": "scenes/scene_057_BN-02_0843e5c9_v2.mp4",
+    "ai_score": 8.1,
+    "approved": true,
+    "submit_note": "v2 request a93812ca op 062684e0, 2026-10-20, acc dinhvulon16: v1 fixes (Eli stays seated, beam on shins, closed walls, thicker smoke/fire, Nora stops one step short, deeper Eli voice)",
+    "review_note": "v2 score 8.1 (CC 8.5 / PA 7.5 / MQ 8.0 / VF 8.5 / TC 8.0 / CO 8.0): one continuous following shot, no cuts; frame 0 Nora at the front door, Eli pinned far end; Juniper light grey, no halter, gallops past Nora, nudges Eli, rears 4-5s and stays; Eli seated with the beam on his legs the whole clip; back wall burning hard; closed stalls (only barred stall slits lit). MINOR: Nora's hand reaches Eli's shoulder in the last ~0.5s; a second charred beam leans diagonally behind Eli; smoke thin at floor level. Whisper PASS 100% (Nora 0.11-1.73 'Eli! Eli!', Eli 1.73-5.49), ? VOICE? Eli 302-327 Hz vs Nora 246 Hz - user to listen.",
+    "v1_video_media_id": "ab578373-ec53-4f66-ab9e-85d1706a1627",
+    "v1_file": "scenes/scene_057_BN-02_0843e5c9.mp4 (deleted 2026-10-20)",
+    "v1_ai_score": 6.7,
+    "v1_note": "v1 score 6.7 (CC 8.0 / PA 4.5 / MQ 6.5 / VF 8.0 / TC 6.0 / CO 7.0): one continuous following shot, no cuts; Juniper grey enters past Nora, runs to Eli, rears 4-5s; Nora back-only. FAIL: 4-6s Eli gets up from under the beam and stands, Nora grabs him at the end (both forbidden); beam sits raised above his legs at 2-3s instead of lying on his shins; open bright doorway with trees/fence on the left wall from 2s; almost no smoke, flames are thin vertical strips; halter-like straps on Juniper's face at 6s. Whisper PASS 100% (Nora 0.0-1.7 'Eli! Eli!', Eli 1.7-5.6), ? VOICE? Eli 340 Hz higher than Nora 286 Hz - user to listen.",
+    "approve_note": "v2 duyệt 20/10/2026",
+    "upscale_media_id": "9a518019-b2f0-49a8-ad40-14daab0fe97a",
+    "file_1080_clean": "1080/scene_057_BN-02_0843e5c9_1080p_clean.mp4",
+    "upscale_note": "2026-10-20 ~22:40-22:52 UPSCALE_VIDEO on dinhvulon16 (project 3b6be3e0), 1920x1080, logo removed with tools/remove_watermark_from_link.py",
+    "video_file_720_deleted": "scenes/scene_057_BN-02_0843e5c9_v2.mp4",
+    "upscaled": true
   },
   "BN-03": {
     "scene_id": "bf2c51f3-c58a-4d42-b955-0047d36825bf",
@@ -1760,12 +1956,40 @@
       "Nora",
       "Nora Body Fire",
       "HALE Helmet",
-      "Keller Barn"
+      "Eli",
+      "Keller Barn Interior"
     ],
     "flow_account": "dinhvulon16",
     "flow_project_id": "3b6be3e0-4a39-46e8-bf4e-aa727e449cd5",
-    "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)",
-    "created_note": "2026-10-19: scene created from prompts_v7.json (chips resolved to named refs); handoff lessons not applied yet"
+    "start_frame_mode": "START FRAME + Omni first-frame i2v, no refs (user 2026-10-20). Frame r2: GENERATE_IMAGE c4006446 with refs incl. 'Keller Barn Aisle Door' (BN-02 geography: aisle + bright front door behind Nora), images/sf_bn03_clean.jpg, upload a3306347",
+    "created_note": "2026-10-19: scene created from prompts_v7.json (chips resolved to named refs); handoff lessons not applied yet",
+    "prompt_note": "2026-10-20: prompt rewritten from script_v7 BN-03 (kneel, goggles up, grip shoulder, 'Stop pulling. That roof's got a minute.') with handoff lessons; old DB prompt (night exterior, 'Drop the rope') replaced",
+    "video_media_id": "e70ef05e-c708-4abd-8b52-a0c961c4797e",
+    "video_file": "scenes/scene_058_BN-03_bf2c51f3_v6.mp4",
+    "ai_score": 8.4,
+    "approved": true,
+    "submit_note": "v3 request 09b3ea01 op 2132c751, 2026-10-20 ~21:17, GENERATE_VIDEO i2v, acc dinhvulon16",
+    "review_note": "v6 request b3b0e264 op 5b01f6c7 (i2v): opens on the start frame, aisle + bright door behind Nora; goggles pushed up onto the helmet by ~1s and stay up, eyes visible; she yells both lines hard and clamps Eli's shoulder ~2.5s to the end; tan canvas pack; one shot, no cuts. MINOR: a couple of frames read as a grin while yelling; camera drifts closer. Whisper PASS 100% (0.27-1.25, 1.25-3.09).",
+    "v1_video_media_id": "9b05a293-2622-4eee-adc9-3b2fe38e42b5",
+    "v1_file": "scenes/scene_058_BN-03_bf2c51f3.mp4 (deleted 2026-10-20)",
+    "v1_ai_score": 8.05,
+    "v1_note": "v1 score 8.05 (CC 8.0 / PA 7.5 / MQ 8.5 / VF 8.0 / TC 8.5 / CO 8.0): one continuous shot, no cuts; Nora crouches down into frame, pushes goggles up with her right hand, left glove grips Eli's shoulder 2-4s and holds; aisle to bright front door behind her. MINOR: Eli's face (profile, grimacing) is in frame, prompt said out of frame; barn reads brighter and wider than BN-02, almost no fire glow on her face (only loft flames at the top from ~2.5s), smoke under the ceiling a bit puffy; no pink retardant visible. Whisper PASS 100% (Nora 0.75-1.77 'Stop pulling', 2.77-3.75 'That roof's got a minute').",
+    "approve_note": "duyệt 20/10/2026 (start frame + i2v, đúng bố cục BN-02)",
+    "continuity_note": "2026-10-20 user: BN-03/04/05 not continuous (pose under the beam, horse, pack, light). Redo with a start frame (GENERATE_IMAGE from refs incl. new 'Keller Barn Stall' location ref made from BN-06 v2 frame 2.0s), user reviews the frame, then GENERATE_VIDEO (Omni first-frame i2v) with no ref ingredients and a prompt that starts exactly from the start frame.",
+    "v2_video_media_id": "6031e15e-a535-463b-83ce-9ef38af7b11c",
+    "v2_file": "scenes/scene_058_BN-03_bf2c51f3_v2.mp4 (kept until user approves v3; user 2026-10-20: not continuous)",
+    "v2_note": "v2 score 8.1 (CC 8.0 / PA 7.5 / MQ 8.5 / VF 8.5 / TC 8.5 / CO 8.0): one continuous shot, no cuts; dark low barn, burning loft boards along the top and stall fronts burning, orange glow on Nora, front door a small dim rectangle: matches BN-02; pink retardant splashes on sleeves/chest; goggles pushed up with right hand 0-1.5s, left glove grips Eli's shoulder ~2.3-4s and holds. MINOR: Eli's head (profile/back) still in frame on the right; a vertical flame strip at the far left edge in the foreground. Whisper PASS 100% (Nora 0.72-1.76 'Stop pulling', 2.48-3.40 'That roof's got a minute').",
+    "v3_note": "v3 (i2v from start frame sf_bn03, media cfc03998, 8.4 technically) REJECTED: wrong geography - behind Nora must be the aisle and the bright front door (BN-02 layout: Eli faces the door, back wall burns behind him); the start frame put the burning stall behind her. File deleted.",
+    "geography": "BN-02 canon: front door -> narrow aisle (barred stalls both sides) -> Eli sitting facing the door, beam across his shins, back wall burning behind him; Juniper on the right of Eli as seen from the door; Nora between Eli and the door, back to the door.",
+    "v4_note": "v4 2026-10-20: i2v from approved start frame (upload ed85f54f), request ba5d6493 media 9fb1bc4c: geography right (aisle + bright door behind Nora), shout OK, grip OK, Whisper 100%; FAIL ~7.6: Nora touches the goggles but never pushes them up (eyes covered whole clip). File deleted; v5 forces goggles up by 1.5s.",
+    "v5_note": "v5 request 0ba7761c op 97c573a9 blocked/ghost; user set FAILED and asked for a new frame + regen",
+    "superseded_video_media_id": "6031e15e-a535-463b-83ce-9ef38af7b11c",
+    "superseded_file": "scenes/scene_058_BN-03_bf2c51f3_v2.mp4 (deleted 2026-10-20, replaced by start-frame i2v version)",
+    "upscale_media_id": "e70ef05e-c708-4abd-8b52-a0c961c4797e",
+    "file_1080_clean": "1080/scene_058_BN-03_bf2c51f3_1080p_clean.mp4",
+    "upscale_note": "2026-10-20 ~22:40-22:52 UPSCALE_VIDEO on dinhvulon16 (project 3b6be3e0), 1920x1080, logo removed with tools/remove_watermark_from_link.py",
+    "video_file_720_deleted": "scenes/scene_058_BN-03_bf2c51f3_v6.mp4",
+    "upscaled": true
   },
   "BN-04": {
     "scene_id": "7f0a63af-dfd8-48ad-b77d-35a719f72c23",
@@ -1773,16 +1997,37 @@
     "duration": 8,
     "video_refs": [
       "Eli",
+      "Eli Pack",
       "Nora",
       "Nora Body Fire",
       "HALE Helmet",
       "Juniper",
-      "Keller Barn"
+      "Keller Barn Interior"
     ],
     "flow_account": "dinhvulon16",
     "flow_project_id": "3b6be3e0-4a39-46e8-bf4e-aa727e449cd5",
-    "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)",
-    "created_note": "2026-10-19: scene created from prompts_v7.json (chips resolved to named refs); handoff lessons not applied yet"
+    "start_frame_mode": "START FRAME + Omni first-frame i2v, no refs (user 2026-10-20). Frame: user chose the EDIT version (halter removed, goggles added) images/sf_bn04_final_clean.jpg, upload eb974e03",
+    "created_note": "2026-10-19: scene created from prompts_v7.json (chips resolved to named refs); handoff lessons not applied yet",
+    "prompt_note": "2026-10-20: prompt rewritten from script_v7 BN-04 (inside barn, Eli pinned, profile two-shot, loose mare) with handoff lessons; old DB prompt (night exterior, halter, Eli standing) replaced",
+    "video_media_id": "c451b4b6-a6f6-4452-9a8b-eacd04aab42b",
+    "video_file": "scenes/scene_059_BN-04_7f0a63af_v3.mp4",
+    "ai_score": 8.0,
+    "approved": true,
+    "submit_note": "v2 request 866f9293 op 77c596e0, 2026-10-20 ~20:10, acc dinhvulon16: full shout lock (lesson 101 BN-04 addendum: 'yells', full-volume delivery block, tense bodies, ban normal voice)",
+    "review_note": "v3 request f5086b60 op 7fd6c65c (i2v): opens on the approved frame; Eli knocks her hand off, both yell (shout lock), Eli jabs his arm toward the door at the end; beam stays on his shins, mare (no halter) behind him; one shot. MINOR: white door-frame strip at the right edge from the frame; faces small in this wide side shot, Nora reads almost smiling in the first second. Whisper PASS 100% (Eli 0.3-2.64, Nora 2.64-4.6, Eli 4.6-6.9), ? VOICE? Eli 314-340 Hz from yelling - user to listen.",
+    "v1_video_media_id": "e52bfbbc-ef2b-4563-823c-1074d3b643ea",
+    "v1_file": "scenes/scene_059_BN-04_7f0a63af.mp4 (deleted 2026-10-20: user - argument sounded like normal talking)",
+    "v1_ai_score": 8.15,
+    "v1_note": "v1 score 8.15 (CC 8.0 / PA 8.0 / MQ 8.5 / VF 8.0 / TC 8.0 / CO 8.5): one continuous profile two-shot, no cuts; Nora kneeling left, Eli pinned right with the charred beam on his shins the whole clip, halter rope on his shoulder; Eli knocks her hand off 0-1.5s, points left toward the door 5-8s; Juniper loose behind him, one horse. MINOR: Juniper reads tan/beige in the first ~1s then dapple grey; fire is a few flame patches on the back wall and loft, weaker than BN-03; little smoke. Whisper 100% words, Eli 174-182 Hz (male, OK), Nora 232 Hz; flag TIMING: Nora heard 2.13-4.77s vs planned 3-5s (she answers right after Eli, order intact, no cut-off) - kept, user to judge.",
+    "continuity_note": "2026-10-20 user: BN-03/04/05 not continuous (pose under the beam, horse, pack, light). Redo with a start frame (GENERATE_IMAGE from refs incl. new 'Keller Barn Stall' location ref made from BN-06 v2 frame 2.0s), user reviews the frame, then GENERATE_VIDEO (Omni first-frame i2v) with no ref ingredients and a prompt that starts exactly from the start frame.",
+    "superseded_video_media_id": "a29df260-9cb1-41f7-83ac-cf1cf8cf2b5a",
+    "superseded_file": "scenes/scene_059_BN-04_7f0a63af_v2.mp4 (deleted 2026-10-20, replaced by start-frame i2v version)",
+    "approve_note": "duyệt 20/10/2026 (start frame + i2v, đúng bố cục BN-02)",
+    "upscale_media_id": "c451b4b6-a6f6-4452-9a8b-eacd04aab42b",
+    "file_1080_clean": "1080/scene_059_BN-04_7f0a63af_1080p_clean.mp4",
+    "upscale_note": "2026-10-20 ~22:40-22:52 UPSCALE_VIDEO on dinhvulon16 (project 3b6be3e0), 1920x1080, logo removed with tools/remove_watermark_from_link.py",
+    "video_file_720_deleted": "scenes/scene_059_BN-04_7f0a63af_v3.mp4",
+    "upscaled": true
   },
   "BN-05": {
     "scene_id": "ba7aec0c-b213-497d-bd42-bd86a17ff52b",
@@ -1790,13 +2035,46 @@
     "duration": 8,
     "video_refs": [
       "Eli",
+      "Eli Pack",
       "Nora Body Fire",
-      "Keller Barn"
+      "HALE Helmet",
+      "Nora",
+      "Keller Barn Interior"
     ],
     "flow_account": "dinhvulon16",
     "flow_project_id": "3b6be3e0-4a39-46e8-bf4e-aa727e449cd5",
-    "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)",
-    "created_note": "2026-10-19: scene created from prompts_v7.json (chips resolved to named refs); handoff lessons not applied yet"
+    "start_frame_mode": "START FRAME + Omni first-frame i2v, no refs (user 2026-10-20). Frame: GENERATE_IMAGE ea9e974a (refs incl. Keller Barn Back Wall) + EDIT removing the halter -> images/sf_bn05_e2_clean.jpg, upload ad33544e",
+    "created_note": "2026-10-19: scene created from prompts_v7.json (chips resolved to named refs); handoff lessons not applied yet",
+    "post_vo": [
+      {
+        "t": "0-3s",
+        "speaker": "Nora",
+        "line": "Somebody had to sign the papers, Eli! Mom sure didn't!",
+        "note": "edit only, never in the prompt"
+      }
+    ],
+    "v1_note": "v1 2026-10-20: request 957faef3 ghost op dc40356f (FAILED retry 99); resubmit ff91a490 op 6704d263 media 05466119 scored ~7.6 (beam a short block on his knees, legs free; god-ray light shafts; Nora's cheek visible); file deleted, prompt fixed",
+    "v2_note": "v2 2026-10-20: request c62aa9ea op 8a0f2ce6 media 1afc3c91 ~7.2 (beam lifted to his lap by Nora; white paper-like ribbons floating; Eli looks away); file deleted. v3: high-angle OTS, Nora presses on top of the beam, no 'heave' wording",
+    "prompt_note": "2026-10-20: prompt rewritten from script_v7 BN-05 with handoff lessons; Nora's post_vo kept out of the prompt",
+    "video_media_id": "2de101d6-26fb-4da2-a5ca-71fd75476565",
+    "video_file": "scenes/scene_060_BN-05_ba7aec0c_v5.mp4",
+    "ai_score": 8.0,
+    "approved": true,
+    "submit_note": "v4 request 631907d4 op a7baa316, 2026-10-20 ~20:17, acc dinhvulon16: shout lock (lesson 101 addendum) after user flagged flat arguments",
+    "review_note": "v5 request 851bfcad op a5ec4a08 (i2v): opens on the start frame; burning back wall behind Eli, mare beside him with nothing on her head; Nora kneels with gloved hands under the beam and strains, beam stays on his legs; Eli snarls and yells up at her from 2.8s; one shot, no cuts. MINOR: mare reads darker grey than in BN-04 and shifts around; white door-frame strip at the right edge; wide framing keeps faces small; Nora's cheek visible in profile. Whisper PASS 100% (Eli 2.83-6.91), ? VOICE? 320 Hz from yelling - user to listen. Nora post_vo 0-3s in edit.",
+    "v3_video_media_id": "d938cc0d-a3ef-450f-b8ba-bf330f434b69",
+    "v3_file": "scenes/scene_060_BN-05_ba7aec0c_v3.mp4 (deleted 2026-10-20: replaced by v4 with shout lock)",
+    "v3_note": "v3 score 8.05 (CC 8.5 / PA 7.0 / MQ 8.0 / VF 8.5 / TC 8.5 / CO 8.0): one continuous over-the-shoulder shot, no cuts; Nora back to camera (face hidden), gloved hands on the long charred beam; Eli sitting pinned, glaring up at her, says his line; back wall burning hard; no light shafts, no white debris. MINOR/continuity: the beam lies across his thighs (legs out underneath), BN-04 had it on his shins; angle is eye level, not the high angle asked for; Dutch tilt barely visible. Whisper PASS 100% (Eli 2.70-6.62s), ? VOICE? Eli 267 Hz - user to listen. Nora post_vo (0-3s) to add in edit.",
+    "continuity_note": "2026-10-20 user: BN-03/04/05 not continuous (pose under the beam, horse, pack, light). Redo with a start frame (GENERATE_IMAGE from refs incl. new 'Keller Barn Stall' location ref made from BN-06 v2 frame 2.0s), user reviews the frame, then GENERATE_VIDEO (Omni first-frame i2v) with no ref ingredients and a prompt that starts exactly from the start frame.",
+    "pending_note": "2026-10-20 ~22:10: start frame EDIT (halter removed) done images/sf_bn05_e2_clean.jpg, uploaded ad33544e; video request 7d5f16c3 FAILED on UNUSUAL_ACTIVITY cooldown - resend GENERATE_VIDEO when Flow recovers.",
+    "superseded_video_media_id": "e876fbdd-466c-41f1-ab9f-a8e603ba5fd6",
+    "superseded_file": "scenes/scene_060_BN-05_ba7aec0c_v4.mp4 (deleted 2026-10-20, replaced by start-frame i2v v5)",
+    "approve_note": "v5 duyệt 20/10/2026",
+    "upscale_media_id": "2de101d6-26fb-4da2-a5ca-71fd75476565",
+    "file_1080_clean": "1080/scene_060_BN-05_ba7aec0c_1080p_clean.mp4",
+    "upscale_note": "2026-10-20 ~22:40-22:52 UPSCALE_VIDEO on dinhvulon16 (project 3b6be3e0), 1920x1080, logo removed with tools/remove_watermark_from_link.py",
+    "video_file_720_deleted": "scenes/scene_060_BN-05_ba7aec0c_v5.mp4",
+    "upscaled": true
   },
   "BN-06": {
     "scene_id": "a6adad15-83b3-42d4-a1f1-5cb5ca872890",
@@ -1806,24 +2084,57 @@
       "Nora",
       "Nora Body Fire",
       "HALE Helmet",
-      "Keller Barn"
+      "Keller Barn Interior"
     ],
     "flow_account": "dinhvulon16",
     "flow_project_id": "3b6be3e0-4a39-46e8-bf4e-aa727e449cd5",
     "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)",
-    "created_note": "2026-10-19: scene created from prompts_v7.json (chips resolved to named refs); handoff lessons not applied yet"
+    "created_note": "2026-10-19: scene created from prompts_v7.json (chips resolved to named refs); handoff lessons not applied yet",
+    "v1_note": "2026-10-20: request e9dc6570 ghost op 19b8d590 (FAILED retry 99); resubmit da762719 op 1306315f media fa2910bc ~7.7 (blurred extra head/shoulder at right edge, Nora upright not looking down, tear barely visible, puffy smoke); file deleted, prompt fixed",
+    "prompt_note": "2026-10-20: prompt rewritten from script_v7 BN-06 with handoff lessons",
+    "video_media_id": "e036c1aa-cc61-4aaa-814a-de0355555018",
+    "video_file": "scenes/scene_061_BN-06_a6adad15_v2.mp4",
+    "ai_score": 8.4,
+    "approved": false,
+    "submit_note": "v2 request a7e560da op 904d264a, 2026-10-20 ~20:20, acc dinhvulon16",
+    "review_note": "v2 score 8.4 (CC 8.5 / PA 8.5 / MQ 8.0 / VF 8.5 / TC 8.5 / CO 8.5): one continuous close shot, no cuts; Nora looking down then out, frozen, tears run clean lines through the soot to her jaw (clearly visible 2.5-4s); pink retardant on her collar, gloved hand on the beam; embers and burning stall behind; no smoke clumps. MINOR: top of Eli's head at the lower right edge in places (where he sits, reads as Eli); framing medium close-up rather than tight. Whisper PASS (no speech, as planned).",
+    "upscale_media_id": "e036c1aa-cc61-4aaa-814a-de0355555018",
+    "file_1080_clean": "1080/scene_061_BN-06_a6adad15_1080p_clean.mp4",
+    "upscale_note": "2026-10-20 ~22:40-22:52 UPSCALE_VIDEO on dinhvulon16 (project 3b6be3e0), 1920x1080, logo removed with tools/remove_watermark_from_link.py",
+    "approve_note": "không duyệt riêng; user dùng khung BN-06 v2 làm ref bối cảnh và yêu cầu upscale mọi video acc16 (20/10/2026)",
+    "video_file_720_deleted": "scenes/scene_061_BN-06_a6adad15_v2.mp4",
+    "upscaled": true
   },
   "BN-07": {
     "scene_id": "4d709362-90bf-48b8-9feb-e256b80cd4e2",
     "act": "",
     "duration": 4,
     "video_refs": [
-      "Keller Barn"
+      "Keller Barn Interior"
     ],
     "flow_account": "dinhvulon16",
     "flow_project_id": "3b6be3e0-4a39-46e8-bf4e-aa727e449cd5",
-    "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)",
-    "created_note": "2026-10-19: scene created from prompts_v7.json (chips resolved to named refs); handoff lessons not applied yet"
+    "start_frame_mode": "START FRAME + Omni first-frame i2v, no refs. Insert redesign (user): close-up up at the burning loft, plank cracks and falls, no people. Frame GENERATE_IMAGE 138df7f2 -> images/sf_bn07_clean.jpg, approved by user",
+    "created_note": "2026-10-19: scene created from prompts_v7.json (chips resolved to named refs); handoff lessons not applied yet",
+    "v1_note": "v1 2026-10-20: request d7a0bb22 op 98aa6022 media 9c544185 ~7.0 (white cloth/sheets hanging and falling instead of hay, flames a neat straight glowing strip, no smoke, back wall not burning); file deleted, prompt fixed",
+    "prompt_note": "2026-10-20: prompt rewritten from script_v7 BN-07 (interior, empty aisle, low angle) with handoff lessons",
+    "video_media_id": "c5bb102e-8151-46cb-b3f9-ebbfd005009d",
+    "video_file": "scenes/scene_062_BN-07_4d709362_v4.mp4",
+    "ai_score": 8.2,
+    "approved": true,
+    "submit_note": "v2 request aa68f056 op 2b876d4a, 2026-10-20 ~20:25, acc dinhvulon16",
+    "review_note": "v4 insert request 662dd46d op ca3efb0f (i2v from approved diagonal frame, upload 06ffaa1d): asymmetric diagonal close-up of the burning loft; real irregular flames up the rafter, hay tufts burning; ~2.7-3.3s the cracked plank breaks and drops past camera with burning hay, embers rain, a burning gap opens; one shot, no cuts. MINOR: smoke still partly in soft puffy clumps at the top; dim night-like look. Whisper: no speech (as planned). 4s used in full (user).",
+    "redesign_note": "2026-10-20 user: v2 'vô nghĩa, cần quay cinematic, thấy rõ ngọn lửa, ghê rợn'. Redesign via /fk-film: low-angle 24mm from the floor behind Nora+Eli (silhouettes lower third), ceiling smoke layer with rollover flame tongues racing toward the door, burning hay drops between them and the bright doorway; start frame (refs incl. Keller Barn Aisle Door) + i2v no refs. Prompts ready in scratchpad (bn07_sf_patch.json, bn07i_patch.json), not sent: Flow UNUSUAL_ACTIVITY at ~22:10.",
+    "edit_note": "user 2026-10-20: dùng đủ 4s",
+    "v3_note": "v3 insert request ecdf8298 op eff9dcdd (i2v from approved frame, upload 5e14008c): flames lick along the loft, hay tufts burn, the split plank flares ~2.7s in a burst of sparks, breaks in two and swings down, embers rain; one shot, no cuts. ISSUES: composition symmetric/staged and very dark like night; a straight horizontal glow line along the boards; smoke forms round puffy clumps; the spark burst looks like welding sparks. Whisper: no speech (as planned). Waiting for user choice vs v2. REJECTED by user; file deleted.",
+    "superseded_video_media_id": "2247c2ab-efe9-4eb0-acb6-d20a09b95a56",
+    "superseded_file": "scenes/scene_062_BN-07_4d709362_v2.mp4 (deleted 2026-10-20, replaced by cinematic insert v4)",
+    "approve_note": "v4 duyệt 20/10/2026 (insert cận cảnh trần cháy, 4s)",
+    "upscale_media_id": "c5bb102e-8151-46cb-b3f9-ebbfd005009d",
+    "file_1080_clean": "1080/scene_062_BN-07_4d709362_1080p_clean.mp4",
+    "upscale_note": "2026-10-20 ~22:40-22:52 UPSCALE_VIDEO on dinhvulon16 (project 3b6be3e0), 1920x1080, logo removed with tools/remove_watermark_from_link.py",
+    "video_file_720_deleted": "scenes/scene_062_BN-07_4d709362_v4.mp4",
+    "upscaled": true
   },
   "BN-08": {
     "scene_id": "fca69fca-0adc-4973-bf50-02fc1ee67272",
@@ -1831,13 +2142,14 @@
     "duration": 4,
     "video_refs": [
       "Nora Body Fire",
-      "Juniper",
-      "Keller Barn"
+      "Eli",
+      "Keller Barn Interior"
     ],
     "flow_account": "dinhvulon16",
     "flow_project_id": "3b6be3e0-4a39-46e8-bf4e-aa727e449cd5",
     "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)",
-    "created_note": "2026-10-19: scene created from prompts_v7.json (chips resolved to named refs); handoff lessons not applied yet"
+    "created_note": "2026-10-19: scene created from prompts_v7.json (chips resolved to named refs); handoff lessons not applied yet",
+    "ghost_note": "2026-10-20 ~20:30-20:58: two ghost ops in a row (req 5cfd5708 op 03831254, req 2c10eee9 op 7d55feca), both FAILED retry 99; skipped pending diagnosis (BN-09 sent as a control). Suspect silent content filter (axe/pry/legs/'no wound' wording) or account limits."
   },
   "BN-09": {
     "scene_id": "49c328ff-3782-4d1d-9932-f687418f7cc6",
@@ -1847,12 +2159,16 @@
       "Nora",
       "Nora Body Fire",
       "HALE Helmet",
-      "Keller Barn"
+      "Eli",
+      "Eli Pack",
+      "Juniper",
+      "Keller Barn Interior"
     ],
     "flow_account": "dinhvulon16",
     "flow_project_id": "3b6be3e0-4a39-46e8-bf4e-aa727e449cd5",
     "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)",
-    "created_note": "2026-10-19: scene created from prompts_v7.json (chips resolved to named refs); handoff lessons not applied yet"
+    "created_note": "2026-10-19: scene created from prompts_v7.json (chips resolved to named refs); handoff lessons not applied yet",
+    "v1_note": "v1 2026-10-20: request 95b2e36d op a02d831d media ada9f92f ~7.8 (Eli's backpack missing, halter already on, Nora points instead of holding out her hand; Whisper 100% words, TIMING flag first line 0.0-2.1s); also served as the account-health control after BN-08 ghosts (account OK). File deleted; redo with the start-frame method."
   },
   "BN-11": {
     "scene_id": "19fa5343-3651-4712-b7e4-31b4797585be",
