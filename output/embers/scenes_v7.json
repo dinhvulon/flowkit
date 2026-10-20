@@ -404,7 +404,9 @@
     "flow_project_id": "d882e8cb-005a-45a6-9451-f822b820a7cf",
     "review_note_v1": "v1 score 6.0: Whisper PASS (no speech); one hand, one torch OK; JUMP at ~1.9s: hillside teleports from unburnt grass + blue sky to a fully burnt smoky slope (time skip, scene filter missed it). Fix: keep the fire a thin few-meter strip, hillside behind stays unburnt, sky clear, no smoke wall.",
     "review_note": "v2 score 8.0: Whisper PASS (no speech); one continuous shot, no time skip; thin flame line, hillside stays golden, clear sky; one hand, one torch. Minor: torch reads as a rusty can, open grassland with few pines.",
-    "approved": true
+    "approved": true,
+    "upscale_media_id": "1fca17c9-1945-4585-b7fe-a8f8de85633a",
+    "file_1080_clean": "1080/scene_015_FL-06_075b26da_1080p_clean.mp4"
   },
   "FL-07": {
     "scene_id": "c8ec4bc6-b38b-492c-8f26-3ed4e1729120",
@@ -432,7 +434,9 @@
     "flow_project_id": "d882e8cb-005a-45a6-9451-f822b820a7cf",
     "review_note_v1": "v1 score 6.0: Whisper PASS (rookie 0.37-1.73s, Nora 2.43-5.53s, 100%); torch-to-face tilt works, rookie never seen, Nora mouth closed during rookie line. FAIL: whole clip has a 35mm film-strip border (black edges, rounded corners); torch vanishes after ~3s (hands empty); Nora walks straight at the camera looking into it instead of at the flame. Fix: full-bleed frame ban on film border, torch stays in right hand all clip, she looks down-left at the flame line.",
     "review_note": "v2 score 8.5: Whisper PASS 100% (rookie 0.0-1.0s off-frame, Nora 2.12-5.2s); full-bleed frame, no film border; torch-to-face tilt in one shot; Nora looks down-left at the flame, never at lens; pine ridge matches Fire Line ref. Minor: torch leaves the frame once the shot is MCU (not seen vanishing).",
-    "approved": true
+    "approved": true,
+    "upscale_media_id": "a66351ed-c8ab-4801-b20e-47d20670624c",
+    "file_1080_clean": "1080/scene_016_FL-07_c8ec4bc6_1080p_clean.mp4"
   },
   "EL-07": {
     "scene_id": "82687128-9822-4e07-8bda-d2bdd53142fc",
@@ -461,7 +465,9 @@
     "approved": true,
     "review_note_v1": "v1 score 5.0: CRITICAL ghost film-camera rig in left foreground 0-1.5s; no ember rain (smoke is white puffs, fire = campfire patches); foot drags on gravel ~3-4s (no fall). Good: one bike, backpack on, no cuts, no speech (Whisper PASS), never looks at lens.",
     "review_note_v2": "v2 score 6.5: no rig, smoky haze good, Whisper PASS (no speech), no cuts. FAIL beat: at ~3.4-4.4s he swerves toward the viewer and U-turns, riding right-to-left back the way he came (should keep riding into the smoke). Embers sparse; spot fire looks like a campfire pile. Usable 0-3.4s only.",
-    "review_note": "v3 score 8.0: rides left-to-right the whole clip, no U-turn; real grass flame line along the right roadside, passes it and rides on away into light haze; no rig, no cuts, Whisper PASS (no speech); one bike, backpack on, feet on pedals. Minor: embers sparse, smoke is light haze not brown; swerve is subtle."
+    "review_note": "v3 score 8.0: rides left-to-right the whole clip, no U-turn; real grass flame line along the right roadside, passes it and rides on away into light haze; no rig, no cuts, Whisper PASS (no speech); one bike, backpack on, feet on pedals. Minor: embers sparse, smoke is light haze not brown; swerve is subtle.",
+    "upscale_media_id": "3a376702-d43f-4896-91c4-91c010fb7c8b",
+    "file_1080_clean": "1080/scene_017_EL-07_82687128_1080p_clean.mp4"
   },
   "FL-08": {
     "scene_id": "948b7239-030d-49c3-9482-f8292e09ae90",
@@ -486,7 +492,9 @@
     "flow_project_id": "d882e8cb-005a-45a6-9451-f822b820a7cf",
     "approved": true,
     "review_note_v1": "v1 score 6.0: Whisper PASS (no speech), no cuts, no people/gear, real-looking 0-3.5s (burnout left, red sun, dark smoke). FAIL: ~3.7-4.5s the crown fire fades in as a translucent ghost on the right and the whole right slope is ablaze a moment later (dissolve, not pouring down); 6-8s flames turn stylized/CGI (swirling flame shapes outlining trees, a mushroom-shaped fireball at the end).",
-    "review_note": "v2 score 7.5: both fires visible from frame 0, no fade-in, no cuts, Whisper PASS (no speech); burnout climbs the near ridge, flames converge on the ridgeline center and the smoke rolls into one dark column with orange base. Minor: smoke puffs a bit cotton-ball/stylized, last frame column slightly mushroom-shaped; crown fire stays on the far right wall rather than pouring down."
+    "review_note": "v2 score 7.5: both fires visible from frame 0, no fade-in, no cuts, Whisper PASS (no speech); burnout climbs the near ridge, flames converge on the ridgeline center and the smoke rolls into one dark column with orange base. Minor: smoke puffs a bit cotton-ball/stylized, last frame column slightly mushroom-shaped; crown fire stays on the far right wall rather than pouring down.",
+    "upscale_media_id": "08c6b481-6e82-4e13-ad84-0e685cd766e2",
+    "file_1080_clean": "1080/scene_018_FL-08_948b7239_1080p_clean.mp4"
   },
   "FL-09": {
     "scene_id": "a87ab55e-64cd-4171-9714-c156bdf2682d",
@@ -513,7 +521,9 @@
     "review_note": "v2 score 8.0: dusk light with low warm sky, blackened burned ground with ash in the foreground, ragged flame line burning along the ridge from frame 0; whirl starts as a small dust swirl at ~0.5s and grows into a tall twisting column with flames wrapped around it and burning debris thrown off; no cuts, no people/gear, Whisper PASS (no speech). Minor: smoke in the column is a bit lumpy/cotton-like at 2-4s; sun not visible (pale dusk sky, not red sun).",
     "review_note_v1": "v1 score 7.5: whirl grows out of the burning edge already on screen (no fade-in), spins up into a tall twisting column with ash/dust wrapped at its base and flying burning debris; no cuts, no people/gear, Whisper PASS (no speech); fire-line cut visible up the ridge. Minor: flame is a smooth ribbon with hard edges at ~1-1.5s (slightly stylized); little blackened ground; light more overcast day than dusk.",
     "dropped": true,
-    "drop_note": "user 2026-10-19: clip dropped (fire whirl looked fake); v1+v2 videos deleted"
+    "drop_note": "user 2026-10-19: clip dropped (fire whirl looked fake); v1+v2 videos deleted",
+    "upscale_media_id": "ca1caf48-1523-4716-b1b2-b443ff12ca8a",
+    "file_1080_clean": "1080/scene_019_FL-09_a87ab55e_1080p_clean.mp4"
   },
   "FL-10": {
     "scene_id": "1f54cd9e-da3a-45f7-9a04-342067b743ab",
@@ -540,7 +550,9 @@
     "flow_project_id": "d882e8cb-005a-45a6-9451-f822b820a7cf",
     "approved": true,
     "line_change": "user 2026-10-19: 'Whirl!' -> 'It's jumping!' (FL-09 dropped)",
-    "review_note": "v1 score 8.3: one continuous handheld move (no cut; pans right with Ray at ~2s); burnout edge and grass spot fires burning from frame 0, ragged flames, brown-grey smoke, no whirl/fireball; Ray arm up vs heat 0-1.5s, shoves two crew back 2-4s, turns left and shouts 4-6s; only Ray speaks. Whisper PASS acc 92% 0.0-5.52s ('hail' = Hale), flag ? VOICE? pitch 364 Hz (shouting) - listen. Minor: light is hazy afternoon more than red dusk; crew faces partly visible in profile; Ray faces the lens for a moment at 0s."
+    "review_note": "v1 score 8.3: one continuous handheld move (no cut; pans right with Ray at ~2s); burnout edge and grass spot fires burning from frame 0, ragged flames, brown-grey smoke, no whirl/fireball; Ray arm up vs heat 0-1.5s, shoves two crew back 2-4s, turns left and shouts 4-6s; only Ray speaks. Whisper PASS acc 92% 0.0-5.52s ('hail' = Hale), flag ? VOICE? pitch 364 Hz (shouting) - listen. Minor: light is hazy afternoon more than red dusk; crew faces partly visible in profile; Ray faces the lens for a moment at 0s.",
+    "upscale_media_id": "303d2744-ad2d-4aaf-bfd8-0c8dd326bf1d",
+    "file_1080_clean": "1080/scene_020_FL-10_1f54cd9e_1080p_clean.mp4"
   },
   "FL-11": {
     "scene_id": "9460e14b-bceb-409e-a4ec-848b2ea1f87b",
@@ -564,7 +576,9 @@
     "flow_account": "namlt",
     "flow_project_id": "d882e8cb-005a-45a6-9451-f822b820a7cf",
     "approved": true,
-    "review_note": "v1 score 8.5: smoke-red sun low in a brown haze (real dusk), ragged flame line along the ridge from frame 0, dark brown-grey smoke; one red air tanker flies straight left to right the whole clip, drops a long red retardant curtain from ~2.3s that falls onto the burning ridge; no cuts, no text on the plane, no other aircraft/gear; Whisper PASS (no speech). Minor: tiny crew figures not really readable under the drop; plane a bit large/close for an EWS telephoto; smoke column upper right slightly puffy."
+    "review_note": "v1 score 8.5: smoke-red sun low in a brown haze (real dusk), ragged flame line along the ridge from frame 0, dark brown-grey smoke; one red air tanker flies straight left to right the whole clip, drops a long red retardant curtain from ~2.3s that falls onto the burning ridge; no cuts, no text on the plane, no other aircraft/gear; Whisper PASS (no speech). Minor: tiny crew figures not really readable under the drop; plane a bit large/close for an EWS telephoto; smoke column upper right slightly puffy.",
+    "upscale_media_id": "902c843f-b13a-40ff-9962-19bbf27ecd56",
+    "file_1080_clean": "1080/scene_021_FL-11_9460e14b_1080p_clean.mp4"
   },
   "FL-12": {
     "scene_id": "136294a1-2bca-4212-ad13-73553717096a",
@@ -596,7 +610,9 @@
     "approved": true,
     "submit_note": "first submit op d92e6b4e never landed in the Flow project (ghost op, request 253cd205 set FAILED, no credit); resubmitted identical prompt -> op 398178eb",
     "review_note": "v1 score 6.8: one continuous shot (no cuts), dusk light, ragged flames and brown-grey smoke on the ridge, pink retardant mist drifting at the start, two crew in helmets behind her; ends with her touching the goggles and grinning. FAIL Whisper EXTRA SPEECH 1.3-2.9s 'hey hale youre pink' - Nora's own mouth moves there, so the model voiced the post_vo crew line through her; her real line 'put it on my tab the bank takes anything' plays 3.56-5.46s (100% match, but late). Also: retardant reads as pink streaks on the shirt, not a drenching; face almost clean; she looks straight into the lens; arms not held out; no visible cough/laugh beat.",
-    "v1_note": "v1 video and sheet deleted after v2 approval (user 2026-10-19)"
+    "v1_note": "v1 video and sheet deleted after v2 approval (user 2026-10-19)",
+    "upscale_media_id": "203a2e1b-e0c6-403b-9d81-04de91cab52b",
+    "file_1080_clean": "1080/scene_022_FL-12_136294a1_1080p_clean.mp4"
   },
   "MP-01": {
     "scene_id": "ba45804a-292c-4c27-80bb-4082f8411cb2",
@@ -622,7 +638,9 @@
     "approved": true,
     "review_note": "v1 score 6.3: low grass-level view, golden dry grass in front of a burning ridge, red-orange sun in smoky dusk haze, ragged flames and brown-grey smoke, no people/gear; Whisper PASS (no speech). FAIL: hard jump at 2.42s (scene-detect hit; between 2.33s and 2.41s the background smoke, haze and mountains change and the flames suddenly grow) - reads as a cut/time skip. The wind turn itself is not readable: the grass leans the same way before and after 2s. Upper smoke a bit puffy.",
     "review_note_v2": "v2 score 8.0 (continuous wind swing, frozen background): one continuous shot, no cuts (scene-detect clean); golden grass stems sharp in front of a dark ridge line under a smoke-filled dusk sky with a low orange glow; 0-2.3s stems lean left with embers drifting, ~2.4-2.8s they sweep up through upright, then bend over to the right until the end; background stays the same the whole clip. Whisper PASS (no speech). Minor: the final right-hand bend is moderate, not a hard lay-down; some embers read as soft round bokeh dots; glow on the ridge small and far.",
-    "v1_note": "v1 video and sheet deleted after v2 approval (user 2026-10-19)"
+    "v1_note": "v1 video and sheet deleted after v2 approval (user 2026-10-19)",
+    "upscale_media_id": "fb3e6037-99b4-479c-9da5-2dbe9bf2d937",
+    "file_1080_clean": "1080/scene_023_MP-01_ba45804a_1080p_clean.mp4"
   },
   "MP-02": {
     "scene_id": "20b5906a-098e-4212-abb6-b7f2b0dda6c8",
@@ -1406,7 +1424,9 @@
     "approved": true,
     "review_note": "v1 (namlt, request b6a49d59 op c0541ae8): EWS night, small town with church steeple under a pine ridge burning orange, headlights stream along the town road, embers fill the sky from ~3s, glow brightens. Whisper: the model SPOKE the Dispatch line natively 0.0-5.5s, all 13 words (tool flags EXTRA SPEECH because the prompt had no native dialogue). Minor: billowing smoke clouds; car direction hard to read at this distance.",
     "ai_score": 8.2,
-    "approve_note": "approved 2026-10-20 (v1): keep the native Dispatch voice; radio version extracted to edit/audio/LH-01_dispatch_radio.mp3"
+    "approve_note": "approved 2026-10-20 (v1): keep the native Dispatch voice; radio version extracted to edit/audio/LH-01_dispatch_radio.mp3",
+    "upscale_media_id": "9088ef5c-079e-479d-9e9b-19143b537ab2",
+    "file_1080_clean": "1080/scene_049_LH-01_366868c5_1080p_clean.mp4"
   },
   "LH-02": {
     "scene_id": "76ffc9cc-4cd4-43d4-a9ba-c04faba63c3e",
@@ -1435,7 +1455,9 @@
     "video_media_id_v2": "572766cc-b724-4c75-a36a-929a52cd6c11",
     "video_file_v2": "scenes/scene_050_LH-02_76ffc9cc_v2.mp4",
     "review_note_v2": "Urgent: Ray strides, points back at lit schoolhouse, shouts; crew hacking, ember gust ~2.3s, spot fire flares ~4.5s, Ray turns and clamps radio. MINOR: smoky dusk not full night, shouts roughly toward lens 0-1.5s, brief grimace reads half-smile ~4.5s. Whisper: 100% words, 0.0-1.12 + 2.0-4.86s (TIMING flag: planned to finish by 4s), pitch 327-372 Hz = shouting, user to listen.",
-    "ai_score_v2": 8.12
+    "ai_score_v2": 8.12,
+    "upscale_media_id": "572766cc-b724-4c75-a36a-929a52cd6c11",
+    "file_1080_clean": "1080/scene_050_LH-02_76ffc9cc_1080p_clean.mp4"
   },
   "RR-13": {
     "scene_id": "da00d8ea-edd9-4f02-861c-cbc6d5a64c32",
@@ -1486,7 +1508,9 @@
     "duration_v6": 8,
     "ai_score_v6": 7.25,
     "flow_account_v6": "namlt",
-    "review_note_v6": "8s: chạy về phía máy, cành cây đổ sau lưng, cắt cảnh 6s sang đặc tả mặt hoảng sợ (đoạn 6–8s rất tốt). Lỗi: lửa yếu hơn v5 (trời xám, cháy rải rác); cả cây đổ chéo sát sau lưng, cành quệt qua vai; quay toàn thân, tốc độ chạy vừa; đặc tả nền mờ."
+    "review_note_v6": "8s: chạy về phía máy, cành cây đổ sau lưng, cắt cảnh 6s sang đặc tả mặt hoảng sợ (đoạn 6–8s rất tốt). Lỗi: lửa yếu hơn v5 (trời xám, cháy rải rác); cả cây đổ chéo sát sau lưng, cành quệt qua vai; quay toàn thân, tốc độ chạy vừa; đặc tả nền mờ.",
+    "upscale_media_id": "eeef0a8b-d741-4d04-bd03-12fc313525f2",
+    "file_1080_clean": "1080/scene_051_RR-13_da00d8ea_1080p_clean.mp4"
   },
   "RR-14": {
     "scene_id": "916b6f45-0e46-4dfe-a614-bd7a137c79b4",
@@ -1522,7 +1546,9 @@
     "review_note_v4": "Ref Ridge Road Fire: lửa mạnh đều phía sau. Lỗi: dấu vết là vết gai lốp/đế giày ngắn rộng, không phải rãnh mảnh 4 cm chạy lên dốc; găng tay quét sỏi tung bụi.",
     "flow_account_v4": "namlt",
     "approve_note": "v4 duyệt 20/10/2026 (thay v2; lửa mạnh khớp RR-10/RR-13)",
-    "video_file_v2": "deleted 2026-10-20"
+    "video_file_v2": "deleted 2026-10-20",
+    "upscale_media_id": "c93693cf-84c0-48d9-9110-40c688dd6167",
+    "file_1080_clean": "1080/scene_052_RR-14_916b6f45_1080p_clean.mp4"
   },
   "RR-10": {
     "scene_id": "fba01c21-6879-4782-bce8-eebce2083bdd",
@@ -1592,7 +1618,9 @@
       "Keller Gate Bike"
     ],
     "v6_flow_account": "namlt",
-    "v6_review": "ref Keller Gate Bike (c674e7f3, frame RR-11 v3 giây 0.5 đã xóa Nora): xe nằm nghiêng góc dưới trái sát cột cổng, đầu xe trái, đúng vị trí và hướng RR-11; nằm im 4s; máy đẩy chậm vào; ánh chiều qua khói. Whisper PASS."
+    "v6_review": "ref Keller Gate Bike (c674e7f3, frame RR-11 v3 giây 0.5 đã xóa Nora): xe nằm nghiêng góc dưới trái sát cột cổng, đầu xe trái, đúng vị trí và hướng RR-11; nằm im 4s; máy đẩy chậm vào; ánh chiều qua khói. Whisper PASS.",
+    "upscale_media_id": "8b372485-bece-42a5-8ecb-60bb76125d1c",
+    "file_1080_clean": "1080/scene_053_RR-10_fba01c21_1080p_clean.mp4"
   },
   "RR-11": {
     "scene_id": "d8aeb207-8d06-4e14-9b44-57cf90c80ce5",
@@ -1643,7 +1671,9 @@
     "v1_file": "scenes/scene_054_RR-11_d8aeb207.mp4 (deleted 2026-10-20)",
     "v1_ai_score": 7.0,
     "v1_review": "Thoại đủ 13 từ (100%) nhưng chậm: câu 1 0.5–4.0s, câu 2 4.3–5.6s (Whisper FAIL TIMING). HIGH: bàn tay đeo găng thừa lơ lửng sau vai 2–3s; 0.5–1.5s đi ra từ chuồng, mặt cười. MINOR: trời xám, lửa chưa đều cả rừng. Đoạn 2–6s khum tay hét tốt.",
-    "approve_note": "v3 duyệt 20/10/2026"
+    "approve_note": "v3 duyệt 20/10/2026",
+    "upscale_media_id": "f1582f38-48fc-4ab8-b0f2-0fa7b62de37e",
+    "file_1080_clean": "1080/scene_054_RR-11_d8aeb207_1080p_clean.mp4"
   },
   "RR-12": {
     "scene_id": "def0c40f-f4bb-4e17-85cd-8b88bdac04b1",
@@ -1670,7 +1700,9 @@
     "v1_video_media_id": "8a7f09ac-9e2e-4617-b8d8-21dd38117467",
     "v1_file": "scenes/scene_055_RR-12_def0c40f.mp4 (deleted 2026-10-20)",
     "v1_ai_score": 7.7,
-    "v1_note": "v1 had a dark brown horse (not Juniper grey); replaced by v2"
+    "v1_note": "v1 had a dark brown horse (not Juniper grey); replaced by v2",
+    "upscale_media_id": "82d38046-ff26-47c9-835b-3043c09eed9e",
+    "file_1080_clean": "1080/scene_055_RR-12_def0c40f_1080p_clean.mp4"
   },
   "BN-01": {
     "scene_id": "57546ddf-36d2-4bd1-bdca-c3fa7573bdbe",
@@ -1701,7 +1733,9 @@
     "v2_video_media_id": "989d1374-4e39-4901-a71f-974c7ed28e53",
     "v2_file": "scenes/scene_056_BN-01_57546ddf_v2.mp4 (deleted 2026-10-20)",
     "v2_ai_score": 8.2,
-    "v2_note": "v2: good but no start frame from 55; replaced by v3 per user"
+    "v2_note": "v2: good but no start frame from 55; replaced by v3 per user",
+    "upscale_media_id": "de44752e-c2c6-40c7-bfc9-c229000570ae",
+    "file_1080_clean": "1080/scene_056_BN-01_57546ddf_1080p_clean.mp4"
   },
   "BN-02": {
     "scene_id": "0843e5c9-99a1-4db0-b4aa-a92f7a34f87c",

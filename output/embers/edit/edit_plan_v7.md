@@ -14,7 +14,7 @@ Cập nhật lần cuối: 20/10/2026, sau khi duyệt RR-10 v6, RR-11 v3, RR-12
 
 - **Bản xuất cuối:** chỉ dùng bản 1080p đã xoá logo, `output/embers/1080/*_1080p_clean.mp4`.
   - Clip nào cũng phải upscale từ đúng tài khoản Flow đã sinh ra nó (cột "Acc" ở mục C).
-  - Hiện chưa upscale clip nào.
+  - Đã upscale + xoá logo (20/10): 17 clip namlt đã duyệt (FL-06 → FL-12, EL-07, MP-01, LH-01, LH-02, RR-10 → RR-14, BN-01). Clip dinhvulon25 chưa upscale.
 - **Bản nháp:** được dùng bản 720p trong `output/embers/scenes/`.
 - **Điểm cắt thoại:** lấy theo mốc thời gian từng từ của Whisper (`tools/review_dialogue.py`). Không cắt mù 1 giây đầu.
 - **Âm lượng:** master ở −14 LUFS / −1 dBTP. Không dùng mức `loudnorm -16` mặc định của skill.
