@@ -169,6 +169,13 @@ graph TD
   * `audio`: giọng nói nổi rõ trên nền lửa/gió (`"<name>'s loud, sharp voice clearly on top; … underneath"`).
   * CẤM trong các beat này: `low`, `quiet`, `softly`, `voice drops`, `flat`, `calm`, `natural pace`. Ngoại lệ duy nhất: kịch bản ghi rõ giọng thì thầm đe dọa.
   * Không trích lại câu thoại trong ngoặc kép ở nhịp khác, vì model sẽ nói hai lần.
+- **Khóa gấp gáp vùng nguy hiểm (Danger-Zone Urgency Lock — Bài học 102, user lock 20/10/2026)**: mọi clip có thoại khi nguy hiểm đang diễn ra (cháy, bão, rượt đuổi, cứu người, sơ tán), kể cả khi không cãi nhau:
+  * KHÔNG viết `"The line runs on from 0s through Ns, spoken at a natural pace"`. Tách câu thoại theo nhịp timeline và ghi `"His/Her whole line is finished by second N"` (khoảng 2/3 clip).
+  * `speech.delivery`: `"shouted fast and hoarse over the <roar>: an urgent, clipped command voice, no pauses, never calm, never slow"`.
+  * `characters.state`: căng thẳng bằng thân thể (`sweat, jaw clenched, eyes darting, shouting with his whole chest; he never stands still`). Không tả ngũ quan (Rule 60).
+  * Timeline: nhân vật luôn di chuyển hoặc ra hiệu; hậu cảnh có người làm việc hết tốc lực; một biến cố áp lực (gió hất tàn lửa, đám cháy nhỏ bùng lên) để nhân vật phản ứng ở nhịp cuối.
+  * `negative_constraints`: `"<name> is never calm or relaxed: no slow talking, no soft voice, no pauses between words, no standing still, no gentle smile."`
+  * Giữ nhịp chậm chỉ cho beat lặng có chủ đích (hậu quả, nghỉ, tha thứ, thì thầm khi ẩn nấp).
 
 ### Bước 3: Xuất File JSON Prompt
 - Ghi ra file `output/<project>/prompts_actX.json` với định dạng JSON hợp lệ.
@@ -189,7 +196,9 @@ python tools/lint_prompt.py --file output/<project>/prompts_actX.json
 8. **Deep Focus f/8 Lock (Rule 62)**: BẮT BUỘC `deep focus, deep depth of field (f/8 aperture), entire frame sharp, strictly NO shallow depth of field, strictly NO bokeh`.
 9. **Face Lock = chỉ ảnh ref (Rule 60, 64)** — một câu khóa chip `{{ref:<Tên>}}`; không có chữ nào tả ngũ quan, không có câu phủ định liệt kê bộ phận mặt.
 10. **Argument Climax Lock (Bài học 101)**: mọi clip có xung đột trực diện dùng giọng to, gắt, cộc (`loud and sharp … clipped and forceful`) ở cả `speech.delivery` lẫn timeline. Các beat này không còn `low`, `quiet`, `voice drops`, `flat`, `natural pace`, và câu thoại không bị trích lại ở nhịp khác.
-11. **Nếu có bất kỳ lỗi nào**: Agent PHẢI TỰ ĐỘNG SỬA NGAY LẬP TỨC và chạy lại linter. Vòng lặp tự sửa tối đa 3 lần cho đến khi đạt `0 issues`.
+11. **Danger-Zone Urgency Lock (Bài học 102)**: clip có thoại trong lúc nguy hiểm không còn `natural pace` / `runs on from 0s through`; có `shouted fast … never calm, never slow`, câu chia theo nhịp và nói xong sớm, thân thể căng, luôn chuyển động, câu cấm "never calm or relaxed".
+12. **Whole-Forest Burn Lock (Bài học 103)**: clip nhân vật giữa đám cháy rừng có `setting` "whole forest on both sides burning evenly" và lửa là nguồn sáng chính; máy cách nhân vật 3–4 m (khung từ gối), không `WS`; có câu cấm lửa chỉ ở một hai cây và cấm vật cháy bay ngang.
+13. **Nếu có bất kỳ lỗi nào**: Agent PHẢI TỰ ĐỘNG SỬA NGAY LẬP TỨC và chạy lại linter. Vòng lặp tự sửa tối đa 3 lần cho đến khi đạt `0 issues`.
 
 ### Bước 5: Đồng Bộ Bản Dịch & Trình Duyệt
 - Tự động tạo/cập nhật file `output/<project>/vn.json` dịch chuẩn xác 100% ngữ nghĩa kịch bản, giữ trọn vẹn subtext, punchline và thuật ngữ điện ảnh.

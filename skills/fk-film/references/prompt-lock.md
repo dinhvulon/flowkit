@@ -150,6 +150,10 @@ Thứ tự khóa (không bỏ khóa bắt buộc):
 
 | 47 | **CẢNH TRANH CÃI NÓI TO, GẮT, CỘC (Bài học 101):** thoại đối đầu / ra lệnh dưới áp lực ghi rõ "loud and sharp, voice raised over the roar, every word hard, clipped and forceful, each short sentence punched out like an order" ở cả `speech.delivery` lẫn nhịp timeline; bỏ "low / quiet / voice drops / flat"; không trích lại câu thoại ở nhịp khác | Bài học 101, EMBERS CH-03 |
 
+| 48 | **THOẠI TRONG VÙNG NGUY HIỂM PHẢI GẤP (Bài học 102):** clip có thoại khi nguy hiểm đang diễn ra (cháy, bão, rượt đuổi, cứu người, sơ tán) không được có `natural pace` / `runs on from 0s through Ns`; `speech.delivery` ghi "shouted fast and hoarse over the roar, urgent, clipped, no pauses, never calm, never slow"; tách câu theo nhịp và nói xong sớm (vd. hết thoại trước giây 4 của clip 6s); `characters.state` có trạng thái căng bằng thân thể (mồ hôi, hàm nghiến, mắt đảo, không đứng yên); timeline luôn có chuyển động + một biến cố áp lực; câu cấm "never calm or relaxed: no slow talking, no soft voice, no pauses, no standing still, no gentle smile". Nhịp chậm chỉ cho beat lặng có chủ đích | Bài học 102, EMBERS LH-02 |
+
+| 49 | **CẢNH CHÁY RỪNG PHẢI CHÁY ĐỀU, MÁY GẦN (Bài học 103):** `setting` tả cả rừng hai bên cháy đều (thân cây, ngọn, cỏ mép đường, tường lửa liền phía sau, không còn cây xanh), lửa là nguồn sáng chính; `camera` cầm tay cách nhân vật 3–4 m, khung từ gối trở lên, không `WS` / ống kính dài; câu cấm "fire never limited to one or two trees" và "no burning object flies sideways through the air"; vật rơi gần người phải ghi khoảng cách bằng mét kèm "never falls on or touches her" | Bài học 103, EMBERS RR-13 |
+
 | 46 | **THOẠI KHÔNG NÓI CHUYỆN TRẢ TIỀN / MUA BÁN (Bài học 100):** nhân vật trẻ nói với người khác về trả tiền/mua/bán ("buy her back… forty dollars", "Please, I can pay!") bị Flow chặn im lặng (ghost op) dù đã thêm ngữ cảnh con vật; bỏ hẳn ý tiền khỏi thoại và subtext, đưa vào `post_vo`/phụ đề nếu cần; ghost 2 lần cùng clip → soát thoại trước, không gửi lại nguyên văn | Bài học 100, EMBERS EL-03 |
 
 
