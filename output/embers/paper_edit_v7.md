@@ -36,7 +36,7 @@
 | 0:03.5 | HK-02 | Nora, soot and pink retardant on her face, freezes with her hand on the truck door. | (audio lifted from EM-01, Walt on radio) "Your brother biked up Ridge Road at four." |
 | 0:07.0 | HK-03 | Nora, unblinking, to someone off-frame. | (Nora) "Move, Ray. I'm not asking twice." |
 | 0:10.5 | HK-04 | A burning pine crashes across the road in the headlights. | (no dialogue, crash) |
-| 0:14.0 | HK-05 | Inside a smoky barn, a young man fights a knotted rope while a grey mare rears. | (audio lifted from EL-06, Eli's voicemail, from "it's me") "It's me. I'm at Keller's. Don't be mad." (then the horse screams) |
+| 0:14.0 | HK-05 | Inside a smoky barn, a young man pinned under a burning beam shouts at a grey mare to run. | (audio lifted from EL-06, Eli's voicemail, from "it's me") "It's me. I'm at Keller's. Don't be mad." (then the horse screams) |
 | 0:17.5 | HK-06 | A foil fire shelter snaps open in a gale of embers. | (no dialogue, foil roar) |
 | 0:21.0 | HK-07 | Nora, back to camera, walks toward a wall of fire. Smash to black, title. | (audio lifted from FL-13, Nora) "You never go back on a fire." |
 | 0:24.5 | RA-02 | Nora (fitted flannel) walks the grey mare up the trailer ramp; Eli runs in and grabs the lead rope; both face each other in profile; a thin  | (Eli, 0–4s) "Mom rode her through the Pine Gulch burn. You can't sell her." (Nora, 4–8s) "Let go. Mom isn't paying the bank, Eli. I am." |
@@ -90,7 +90,7 @@
 | 0:03.5 | HK-02 🔁 | 4s | 3.5s | CU | Nora, soot and pink retardant on her face, freezes with her hand on the truck door. | (audio lifted from EM-01, Walt on radio) "Your brother biked up Ridge Road at four." | 8 | Hook · premise |
 | 0:07.0 | HK-03 🔁 | 4s | 3.5s | CU 85mm | Nora, unblinking, to someone off-frame. | (Nora) "Move, Ray. I'm not asking twice." | 6 | Hook · defiance |
 | 0:10.5 | HK-04 🔁 | 4s | 3.5s | WS | A burning pine crashes across the road in the headlights. | (no dialogue, crash) | 0 | Hook · obstacle |
-| 0:14.0 | HK-05 🔁 | 4s | 3.5s | MS | Inside a smoky barn, a young man fights a knotted rope while a grey mare rears. | (audio lifted from EL-06, Eli's voicemail, from "it's me") "It's me. I'm at Keller's. Don't be mad." (then the | 8 | Hook · question (brother + horse + danger in one cut) |
+| 0:14.0 | HK-05 🔁 | 4s | 3.5s | MS | Inside a smoky barn, a young man pinned under a burning beam shouts at a grey mare to run. | (audio lifted from EL-06, Eli's voicemail, from "it's me") "It's me. I'm at Keller's. Don't be mad." (then the | 8 | Hook · question (brother + horse + danger in one cut) |
 | 0:17.5 | HK-06 🔁 | 4s | 3.5s | ECU | A foil fire shelter snaps open in a gale of embers. | (no dialogue, foil roar) | 0 | Hook · question |
 | 0:21.0 | HK-07 🔁 | 4s | 3.5s | WS | Nora, back to camera, walks toward a wall of fire. Smash to black, title. | (audio lifted from FL-13, Nora) "You never go back on a fire." | 7 | Hook · button (irony) |
 | 0:24.5 | RA-02 | 8s | 7.0s | MS | Nora (fitted flannel) walks the grey mare up the trailer ramp; Eli runs in and grabs the lead rope; both face  | (Eli, 0–4s) "Mom rode her through the Pine Gulch burn. You can't sell her." (Nora, 4–8s) "Let go. Mom isn't pa | 22 | Wound · plant: Pine Gulch · threat on the horizon |
@@ -149,13 +149,13 @@
 | 4:47.5 | RR-11 | 6s | 5.0s | MS | Nora stands at the gate and shouts into the smoke. | (Nora) "Eli! Eli Hale! I got your message! I'm not mad! I'm not mad!" | 13 | Search |
 | 4:52.5 | RR-12 | 4s | 3.5s | WS | A horse screams; Nora turns; a red barn roof shows through the smoke. | (no dialogue) | 0 | Found |
 | 4:56.0 | BN-01 | 8s | 7.0s | EWS | Smoke rolls off the red barn's roof; Nora runs left to right across the yard and through the open door. | (no dialogue, roar) | 0 | Arrival |
-| 5:03.0 | BN-02 | 6s | 5.0s | MS | Inside, Eli tears at a knotted tie rope, his own halter in his other hand, while the mare spins and rears. | (Eli) "Easy, girl! I'll give you all my apples! Just hold still! Please!" | 12 | Danger |
-| 5:08.0 | BN-03 | 4s | 3.5s | MCU | Nora pushes her goggles up, grabs Eli's shoulder and spins him around. | (Nora) "Drop the rope. That roof's got a minute." | 8 | Order, with a reason |
+| 5:03.0 | BN-02 | 6s | 5.0s | MS | Over Nora's shoulder: Eli lies pinned under a burning loft beam, shoving at it; the loose grey mare circles and won't leave him. | (Eli) "Juniper, go! Get out of here! Don't wait for me, girl! Go!" | 12 | Danger |
+| 5:08.0 | BN-03 | 4s | 3.5s | MCU | Nora drops to her knees by Eli, pushes her goggles up and grabs his shoulder to stop him pulling. | (Nora) "Stop pulling. That roof's got a minute." | 7 | Order, with a reason |
 | 5:11.5 | BN-04 | 8s | 7.0s | 2S profile | Opens on Nora's grip on his shoulder; Eli wrenches free and plants himself between her and the horse, both in  | (Eli, 0–3s) "Go on. You're good at going." (Nora, 3–5s) "Not without you, Eli." (Eli, 5–8s) "Then you'll have  | 18 | Conflict peak · "good at going" pays · plant: both of us |
 | 5:18.5 | BN-05 | 8s | 7.0s | OTS→Eli Dutch | Over Nora's shoulder, slight Dutch tilt: face to face, both shouting over the roar. | (post-VO Nora, back to camera, 0–3s) "Somebody had to sign the papers, Eli! Mom sure didn't!" (Eli, 3–8s) "You | 21 | Truth |
 | 5:25.5 | BN-06 | 4s | 3.5s | CU | Nora goes still; a line cuts through the soot on her cheek. | (no dialogue, roar drops away) | 0 | Hit |
 | 5:29.0 | BN-07 🔁 | 4s | 3.5s | WS | Flames run along the rafters; burning hay drops into the aisle. | (no dialogue) | 0 | RH · roof catches |
-| 5:32.5 | BN-08 | 4s | 3.5s | ECU | Nora's knife saws through the knotted tie rope. | (no dialogue) | 0 | First yield |
+| 5:32.5 | BN-08 | 4s | 3.5s | ECU | Nora jams her Pulaski handle under the beam and heaves; Eli drags his leg free. | (no dialogue, strained grunt) | 0 | First yield |
 | 5:36.0 | BN-09 | 6s | 5.0s | MCU | Nora sheathes the knife; behind her Eli buckles his halter onto the mare. | (Nora) "Fine. She comes. But you hold my hand and you don't let go." | 13 | First yield |
 | 5:41.0 | BN-11 | 6s | 5.0s | MCU (Nora) | Nora ties her red bandana over the mare's eyes. | (Nora) "Horses won't leave a burning barn. They think it's home. Hold her tight." | 13 | Skill |
 | 5:46.0 | BN-12 | 4s | 3.5s | CU (Eli) | Eli goes still, lips parted, the lead slack in his hand. | (Eli) "How do you know that?" (post-VO Nora, off-screen) "Mom." | 6 | Mother |

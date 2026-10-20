@@ -1,7 +1,7 @@
 # Kế hoạch dựng EMBERS v7
 
 File này dùng làm đầu vào cho bước dựng. Khi dựng, gọi `/video-editing` (Rule 66), kết hợp với `/fk-capcut-edit`, `/fk-cinematic-transitions` và `/fk-sound-design`, rồi làm theo các mục dưới đây.
-Cập nhật lần cuối: 20/10/2026, sau khi duyệt RR-10 v6, RR-11 v3 và RR-12 v2. Mỗi lần duyệt thêm clip hoặc chốt quyết định âm thanh thì cập nhật file này.
+Cập nhật lần cuối: 20/10/2026, sau khi duyệt RR-10 v6, RR-11 v3, RR-12 v2 và BN-01 v3. Mỗi lần duyệt thêm clip hoặc chốt quyết định âm thanh thì cập nhật file này.
 
 ## 0. Nguồn
 
@@ -78,7 +78,7 @@ Trước khi tạo giọng mới, phải hỏi user.
 | DW-05 (chưa sinh) | 2.5-4s | Nora | kore | "Worth it." |
 | DW-06 (chưa sinh) | 0-3s | Ray | algenib | "Town held, Hale. We lost two barns and a mile of fence. Not one house. Not one person." |
 
-## C. Clip đã duyệt (52 clip; còn 67 clip chưa sinh hoặc chưa duyệt)
+## C. Clip đã duyệt (53 clip; còn 66 clip chưa sinh hoặc chưa duyệt)
 
 | Clip | File 720p | Độ dài | AI | Acc | Ghi chú dựng |
 |---|---|---|---|---|---|
@@ -134,5 +134,6 @@ Trước khi tạo giọng mới, phải hỏi user.
 | RR-10 | `scenes/scene_053_RR-10_fba01c21_v6.mp4` | 4s | 8.65 | namlt | dùng 0–4s (giây 0–1 hơi rộng, có thể dùng 1–4s), không thoại. v6: xe nằm nghiêng im ở góc dưới trái sát cột cổng, đầu xe trái — khớp vị trí và hướng xe RR-11 (ref Keller Gate Bike lấy từ frame RR-11). Máy đẩy chậm vào; chiều muộn qua khói, lửa mạnh đều. |
 | RR-11 | `scenes/scene_054_RR-11_d8aeb207_v3.mp4` | 6s | 7.67 | namlt | dùng 0–6s. Thoại gốc Nora (kore), gào 2 lần: "Eli! Eli Hale!" 0.2–2.6s, ngậm miệng nghe ngóng 3–4s, "I'm not mad!" ~4.1–5.1s. Đứng ở cổng cạnh xe đạp, khum tay gào, chỉ về chuồng; mặt hoảng. |
 | RR-12 | `scenes/scene_055_RR-12_def0c40f_v2.mp4` | 4s | 8.15 | namlt | dùng 0–4s, không thoại (tiếng ngựa hí + thở gấp). v2: Nora quay phắt về chuồng; 0–2s Juniper (ngựa xám) chồm trong khe cửa rồi lùi vào; 2–4s Nora lao tới cửa, cuối clip đứng ở khe cửa, tay chạm ngựa ở ngưỡng (BN-01 mở từ tư thế này). |
+| BN-01 | `scenes/scene_056_BN-01_57546ddf_v3.mp4` | 6s | 8.05 | namlt | dùng 0–6s, không thoại (lửa gầm, cửa nghiến ray, ngựa hí). v3 nối thẳng từ khung cuối RR-12 v2 (khung đó làm ref mở đầu): Nora quay lưng, tay trên cổ Juniper ở khe cửa; kéo cửa rộng ra; che mặt lao vào khói. Mối nối: ngựa ở frame 0 sáng hơn và đứng giữa khe cửa hơn so với cuối RR-12 — cắt thẳng, có thể chồng 2–3 frame nếu thấy nhảy. |
 
 Clip đã duyệt có thể chưa dùng hết trong bản dựng. Ví dụ FL-09 đã bỏ. `script_v7.md` vẫn ghi FL-10 là "Whirl!"; khi dựng phải hỏi user.
