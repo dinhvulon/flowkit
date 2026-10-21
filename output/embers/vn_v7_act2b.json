@@ -149,16 +149,31 @@
   "so_tu": 0
  },
  {
-  "clip_id": "BN-08",
+  "clip_id": "BN-08a",
   "duration": 4,
-  "shot": "ECU",
+  "shot": "CS sát sàn",
   "refs": [
    "Nora Body Fire",
-   "Juniper",
-   "Keller Barn"
+   "Eli",
+   "Keller Barn Interior"
   ],
-  "hinh": "Dao của Nora cứa đứt nút dây buộc.",
-  "beat": "Nhượng bộ đầu tiên",
+  "hinh": "Nora luồn đầu thép phẳng của rìu Pulaski xuống dưới xà, gác cán lên tấm ván cháy làm điểm tựa rồi dồn hết sức đè cán xuống; xà nhích lên một gang tay, Eli lết cả hai chân ra phía phải.",
+  "beat": "Nhượng bộ đầu tiên · đòn bẩy ăn",
+  "thoai": [],
+  "so_tu": 0
+ },
+ {
+  "clip_id": "BN-08b",
+  "duration": 4,
+  "shot": "CS sát sàn (nối tiếp BN-08a)",
+  "refs": [
+   "Nora Body Fire",
+   "Eli",
+   "Keller Barn Interior",
+   "BN-08a last frame"
+  ],
+  "hinh": "Găng tay trượt trên cán dính muội, cán bật khỏi tay Nora; xà rơi đánh rầm xuống chỗ rơm trống nơi chân Eli vừa nằm, tóe tàn lửa; đầu rìu kẹt dưới xà, cán chổng lên.",
+  "beat": "Suýt chết · mất dụng cụ",
   "thoai": [],
   "so_tu": 0
  },
@@ -189,11 +204,13 @@
   "duration": 6,
   "shot": "MCU (Nora)",
   "refs": [
+   "BN-11 Start",
    "Nora",
    "Nora Body Fire",
-   "HALE Helmet",
+   "HALE Helmet Goggles",
+   "Eli",
    "Juniper",
-   "Keller Barn"
+   "Juniper Blindfold"
   ],
   "hinh": "Nora buộc khăn đỏ che mắt ngựa.",
   "beat": "Kỹ năng",
@@ -208,57 +225,48 @@
   "so_tu": 13
  },
  {
-  "clip_id": "BN-12",
+  "clip_id": "BN-13a",
   "duration": 4,
-  "shot": "CU (Eli)",
+  "shot": "WS máy cố định",
   "refs": [
+   "BN-13a Start",
+   "Nora",
+   "Nora Body Fire",
+   "HALE Helmet Goggles",
    "Eli",
-   "Keller Barn"
+   "Juniper Blindfold",
+   "Keller Barn Door"
   ],
-  "hinh": "Eli đứng lặng, môi hé, dây dắt chùng trong tay.",
-  "beat": "Mẹ",
+  "hinh": "Nora dìu Eli ra khỏi cửa chuồng đang cháy (tay phải Eli quàng vai Nora, tay trái Nora ôm eo anh), đi nhanh từ phải sang trái, thấy nghiêng; Eli lò cò chân phải, tay trái dắt ngựa bịt mắt (ngựa phía gần máy); mặt Nora khuất sau Eli; không ai ngoái lại.",
+  "beat": "Thoát ra · Mẹ",
   "thoai": [
    {
     "nguoi": "Eli",
     "kieu": "nói trong video",
-    "en": "How do you know that?",
-    "vi": "Sao chị biết?"
+    "en": "How do you even know that?",
+    "vi": "Sao chị biết vậy?"
    },
    {
     "nguoi": "Nora",
-    "kieu": "lồng tiếng hậu kỳ (off-screen)",
+    "kieu": "lồng tiếng hậu kỳ",
     "en": "Mom.",
     "vi": "Mẹ."
    }
   ],
-  "so_tu": 6
- },
- {
-  "clip_id": "BN-13a",
-  "duration": 4,
-  "shot": "WS static",
-  "refs": [
-   "Nora",
-   "Nora Body Fire",
-   "Eli",
-   "Juniper",
-   "Keller Barn"
-  ],
-  "hinh": "Ba người đi nhanh ra khỏi cửa chuồng, phải sang trái, Eli dắt con ngựa bị bịt mắt.",
-  "beat": "Thoát ra",
-  "thoai": [],
-  "so_tu": 0
+  "so_tu": 7
  },
  {
   "clip_id": "BN-13b",
   "duration": 4,
   "shot": "WS static",
   "refs": [
+   "BN-13b Start",
    "Nora",
    "Nora Body Fire",
+   "HALE Helmet Goggles",
    "Eli",
-   "Juniper",
-   "Keller Barn"
+   "Juniper Blindfold",
+   "Keller Barn Door"
   ],
   "hinh": "Cùng khung: mái chuồng sập sau lưng họ trong cơn mưa tia lửa; họ không ngoảnh lại.",
   "beat": "Midpoint · không còn đường lùi",
@@ -274,7 +282,7 @@
    "Nora Body Fire",
    "HALE Helmet",
    "Eli",
-   "Juniper",
+   "Juniper Blindfold",
    "Ridge Road"
   ],
   "hinh": "Máy cầm tay đi trước: Nora nắm tay Eli chạy phải sang trái giữa hai hàng cọc rào đang cháy; Eli dắt con ngựa bịt mắt.",
@@ -291,7 +299,7 @@
    "Nora Body Fire",
    "HALE Helmet",
    "Eli",
-   "Juniper",
+   "Juniper Blindfold",
    "Ridge Road"
   ],
   "hinh": "Ở khe hở giữa hai cọc rào đang cháy, con ngựa bị bịt mắt cắm vó không chịu đi; Eli ngả người kéo dây bằng cả hai tay.",
@@ -308,7 +316,7 @@
    "Nora Body Fire",
    "HALE Helmet",
    "Eli",
-   "Juniper",
+   "Juniper Blindfold",
    "Ridge Road"
   ],
   "hinh": "Nora lùi lại, cầm dây dắt sát cằm ngựa, dắt nó qua khe từng bước; Eli theo sau, một tay đặt lên vai ngựa.",
@@ -339,17 +347,17 @@
  {
   "clip_id": "ES-05",
   "duration": 6,
-  "shot": "WS high angle",
+  "shot": "WS góc cao",
   "refs": [
+   "ES-05 Start",
    "Nora",
    "Nora Body Fire",
-   "HALE Helmet",
+   "HALE Helmet Goggles",
    "Eli",
-   "Juniper",
-   "Ridge Road"
+   "Juniper Blindfold"
   ],
-  "hinh": "Góc cao: tàn lửa rơi xuống cỏ khô phía trước; lửa chạy ngang lối bên dưới chặn đường xuống; Nora quay cả ba lên dốc.",
-  "beat": "Móc giữ chân · đường xuống bị cắt",
+  "hinh": "Trời đã tối hẳn, rừng hai bên sườn cháy dữ. Nora hoảng hốt dìu Eli lao nhanh xuống đường, Eli lò cò, tay trái dắt ngựa; tàn lửa rơi xuống cỏ, nối thành dải lửa chặn ngang đường cách họ ~5 m; Nora kéo cả ba lên mỏm đá trơ bên phải; họ dừng trên đá thở dốc, không leo vào khói.",
+  "beat": "Đường xuống bị cắt",
   "thoai": [],
   "so_tu": 0
  },
@@ -431,8 +439,8 @@
    "Ray",
    "Cedar Flat"
   ],
-  "hinh": "Ray sải bước tới một xe chữa cháy, nắm tay nắm cửa, mắt nhìn dãy núi cháy; ngoái nhìn thị trấn và đội, tay kia đặt lên radio của Nora; buông cửa, quay lại tuyến.",
-  "beat": "Lựa chọn của Ray · ở lại và tin cô",
+  "hinh": "Ray nắm tay nắm cửa xe chữa cháy, khựng lại nhìn thị trấn, tay ấn bộ đàm; anh buông cửa, đi nhanh về phía máy, quay lại phòng tuyến. Sau lưng anh, anh không thấy, gió thổi một trận tàn lửa rơi lên mái tối của ngôi trường dài thấp.",
+  "beat": "Ray chọn ở lại · vòng mở: ngôi trường",
   "thoai": [],
   "so_tu": 0
  }

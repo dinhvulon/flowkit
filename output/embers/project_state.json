@@ -251,9 +251,11 @@
    "media_id": "3584b716-522c-4615-8e2e-e1ca3d54c368"
   },
   "Ridge Road Fire": {
-   "account3_media_id": "d5bfe3f4-2660-462a-9929-782018efcc42",
-   "account3_file_name": "Ridge Road Fire.jpg",
-   "media_id": "d5bfe3f4-2660-462a-9929-782018efcc42"
+   "media_id": "2983af59-909e-4865-9655-b4d61d37f337",
+   "file": "refs/ridge_road_fire_clean.jpg",
+   "account2_media_id": "d5bfe3f4-2660-462a-9929-782018efcc42",
+   "account3_media_id": "2983af59-909e-4865-9655-b4d61d37f337",
+   "account3_file_name": "Ridge Road Fire.jpg"
   },
   "Keller Barn Fire": {
    "account3_media_id": "5395a684-c8b3-4e7d-9c3f-c12a78688536",

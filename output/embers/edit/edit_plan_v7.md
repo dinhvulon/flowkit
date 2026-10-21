@@ -15,6 +15,7 @@ Cập nhật lần cuối: 20/10/2026, sau khi duyệt RR-10 v6, RR-11 v3, RR-12
 - **Bản xuất cuối:** chỉ dùng bản 1080p đã xoá logo, `output/embers/1080/*_1080p_clean.mp4`.
   - Clip nào cũng phải upscale từ đúng tài khoản Flow đã sinh ra nó (cột "Acc" ở mục C).
   - Đã upscale + xoá logo (20/10): 17 clip namlt đã duyệt (FL-06 → FL-12, EL-07, MP-01, LH-01, LH-02, RR-10 → RR-14, BN-01). Clip dinhvulon25 chưa upscale.
+  - Đã upscale + xoá logo (21/10, acc dinhvulon16): BN-11, BN-13a, BN-13b, ES-05, LH-09, TR-02b, TR-04.
 - **Bản nháp:** được dùng bản 720p trong `output/embers/scenes/`.
 - **Điểm cắt thoại:** lấy theo mốc thời gian từng từ của Whisper (`tools/review_dialogue.py`). Không cắt mù 1 giây đầu.
 - **Âm lượng:** master ở −14 LUFS / −1 dBTP. Không dùng mức `loudnorm -16` mặc định của skill.
@@ -70,7 +71,7 @@ Trước khi tạo giọng mới, phải hỏi user.
 | EM-03 (đã duyệt) | 3-7s | Walt | sadaltager | "Keller's place. Had a halter and rope over his shoulder." |
 | CH-00 (đã duyệt) | 4-8s | Dispatch | erinome | "Negative, Hale. Air is grounded. No engines past the closure." |
 | BN-05 (chưa sinh) | 0-3s | Nora | kore | "Somebody had to sign the papers, Eli! Mom sure didn't!" |
-| BN-12 (chưa sinh) | 2-4s | Nora | kore | "Mom." |
+| BN-13a (`scenes/scene_067_BN-13a_e5937af3_hg2.mp4`) | 2.5-3.5s | Nora | kore | "Mom." (dời từ BN-12 đã cắt, 2026-10-21 #21; mặt Nora khuất, chỉ lồng tiếng; _hg2: Eli gào 0.78–2.22s, đặt "Mom." sau 2.3s để không đè) |
 | LH-08 (chưa sinh) | 0-2s | crew | alnilam | "Cap, Hale's truck radio is just static." |
 | LS-03 (chưa sinh) | 1.5-5s | Nora | kore | "Right here, Eli. Same as always. On top of you." |
 | BK-07 (chưa sinh) | 4-8s | Nora | kore | "For a kid on a horse. She got him out. Not herself." |
@@ -135,5 +136,22 @@ Trước khi tạo giọng mới, phải hỏi user.
 | RR-11 | `scenes/scene_054_RR-11_d8aeb207_v3.mp4` | 6s | 7.67 | namlt | dùng 0–6s. Thoại gốc Nora (kore), gào 2 lần: "Eli! Eli Hale!" 0.2–2.6s, ngậm miệng nghe ngóng 3–4s, "I'm not mad!" ~4.1–5.1s. Đứng ở cổng cạnh xe đạp, khum tay gào, chỉ về chuồng; mặt hoảng. |
 | RR-12 | `scenes/scene_055_RR-12_def0c40f_v2.mp4` | 4s | 8.15 | namlt | dùng 0–4s, không thoại (tiếng ngựa hí + thở gấp). v2: Nora quay phắt về chuồng; 0–2s Juniper (ngựa xám) chồm trong khe cửa rồi lùi vào; 2–4s Nora lao tới cửa, cuối clip đứng ở khe cửa, tay chạm ngựa ở ngưỡng (BN-01 mở từ tư thế này). |
 | BN-01 | `scenes/scene_056_BN-01_57546ddf_v3.mp4` | 6s | 8.05 | namlt | dùng 0–6s, không thoại (lửa gầm, cửa nghiến ray, ngựa hí). v3 nối thẳng từ khung cuối RR-12 v2 (khung đó làm ref mở đầu): Nora quay lưng, tay trên cổ Juniper ở khe cửa; kéo cửa rộng ra; che mặt lao vào khói. Mối nối: ngựa ở frame 0 sáng hơn và đứng giữa khe cửa hơn so với cuối RR-12 — cắt thẳng, có thể chồng 2–3 frame nếu thấy nhảy. |
+| BN-11 | `scenes/scene_065_BN-11_19fa5343_hg2.mp4` | 6s | 7.0 | dinhvulon16 | Whisper PASS 3 câu. Lỗi đã chấp nhận: rút khăn ra rồi nhưng vẫn thấy góc khăn đỏ trong túi quần Nora — nếu lộ rõ thì crop nhẹ / cắt sớm; sửa triệt để = start frame mới giấu khăn. |
+| BN-13a | `scenes/scene_067_BN-13a_e5937af3_hg2.mp4` | 4s | 8.0 | dinhvulon16 | Eli gào 0.78–2.22s (cờ `? VOICE?` 372 Hz — nghe lại khi dựng). Bước nhảy lò cò chưa rõ. Lồng "Mom." xem mục A. |
+| BN-13b | `scenes/scene_068_BN-13b_f044334e_hg2.mp4` | 4s | 7.8 | dinhvulon16 | Không thoại, thở gấp. Mái sập có chùm tia lửa hơi giống pháo hoa; cuối clip chạy lướt qua máy → có thể cắt đuôi ~0.5s. |
+| ES-05 | `scenes/scene_073_ES-05_522f7b24_hg2.mp4` | 6s | 8.5 | dinhvulon16 | Không thoại. Ban đêm, ngựa đi cùng suốt clip, khớp start frame; không cần grade. |
+
+## D. Thay đổi dựng từ lượt căng thẳng 2026-10-21 (#21)
+
+- BN-12 và TR-05 đã cắt khỏi kịch bản; không dựng.
+- BN-09r (~2s, chỉ dựng, không sinh): cắt lại một đoạn mái/gác cháy từ BN-07 v4, chèn giữa BN-09 và BN-11 để giữ nhịp đồng hồ "mái sắp sập". Chọn đoạn khi BN-07 v4 và BN-09 đã duyệt.
+- BN-08 tách thành BN-08a (đòn bẩy ăn) + BN-08b (găng trượt, xà rơi xuống rơm trống, rìu kẹt lại). Nối thẳng a → b; BN-08b mở từ khung cuối BN-08a.
+
+- BN-13a + BN-13b bản `_hg2` (thay v8/v1) đã duyệt 2026-10-21: ra cửa chuồng ban đêm, mái sập sau lưng; mũ ref `HALE Helmet Goggles`. Khăn đỏ giờ che kín hai mắt ngựa (ref `Juniper Blindfold`), không còn nằm trên trán — giữ như vậy tới LS-05a (ngựa hất khăn).
 
 Clip đã duyệt có thể chưa dùng hết trong bản dựng. Ví dụ FL-09 đã bỏ. `script_v7.md` vẫn ghi FL-10 là "Whirl!"; khi dựng phải hỏi user.
+
+### Thang giờ (user chọn A, 2026-10-21)
+- RR → BN → ES: **chiều tà dưới khói** (khớp các clip đã duyệt RR-07/08/12, BN-01..07). LS → TR: **chập tối dưới khói**. BK: đêm. DW: bình minh.
+- **ES-05** bản `_hg2` (thay v4): đã là ban đêm, ánh lửa cam, khớp start frame; ngựa đi cùng suốt clip → không cần grade tối nữa.
+- Nguyên nhân: ảnh ref `Ridge Road` chụp ban ngày nên model lấy luôn ánh sáng của ảnh. Câu Light trong prompt nay có thêm "never the plain grey daylight of the location photo".
