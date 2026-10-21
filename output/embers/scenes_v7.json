@@ -2145,22 +2145,60 @@
     "video_file_720_deleted": "scenes/scene_062_BN-07_4d709362_v4.mp4",
     "upscaled": true
   },
-  "BN-08": {
+  "BN-08a": {
     "scene_id": "fca69fca-0adc-4973-bf50-02fc1ee67272",
     "act": "",
     "duration": 4,
     "video_refs": [
+      "BN-08a Start",
+      "Nora Soot",
       "Nora Body Fire",
+      "HALE Helmet Goggles",
       "Eli",
+      "Juniper",
       "Keller Barn Interior"
     ],
     "flow_account": "dinhvulon16",
     "flow_project_id": "3b6be3e0-4a39-46e8-bf4e-aa727e449cd5",
-    "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)",
+    "start_frame_mode": "GENERATED START FRAME (b31e4baf) as r2v ref; helmet ref = HALE Helmet Goggles",
     "created_note": "2026-10-19: scene created from prompts_v7.json (chips resolved to named refs); handoff lessons not applied yet",
     "ghost_note": "2026-10-20 ~20:30-20:58: two ghost ops in a row (req 5cfd5708 op 03831254, req 2c10eee9 op 7d55feca), both FAILED retry 99; skipped pending diagnosis (BN-09 sent as a control). Suspect silent content filter (axe/pry/legs/'no wound' wording) or account limits.",
     "tension_note": "2026-10-21 #21: script splits BN-08 into BN-08a (lever works, beam rises a hand width, Eli drags both legs out) + BN-08b (gloves slip, beam slams onto empty straw, Pulaski trapped; frame 0 = BN-08a last frame as inline ref). New prompts in prompts_v7_act2b.json. Proposed: PATCH this scene to the BN-08a prompt, create a new BN-08b scene after BN-08a is approved. 2026-10-21: user approved; DB scene PATCHed to the BN-08a prompt (clip_id BN-08a). BN-08b scene to be created after BN-08a is approved.",
-    "submit_note_21": "2026-10-21 03:15Z: GENERATE_VIDEO_REFS submitted (batch of 6, dinhvulon16)."
+    "submit_note_21": "2026-10-21 03:15Z: GENERATE_VIDEO_REFS submitted (batch of 6, dinhvulon16).",
+    "clip_id": "BN-08a",
+    "rename_note": "2026-10-21: key renamed BN-08 -> BN-08a (same DB scene fca69fca). Content: Nora's bare-hand attempt fails, she grabs Eli's forearms and hauls back, his legs stay pinned, she falls back onto the straw. No pole/lever/tool.",
+    "takes_note": "takes 1-7 rejected (beam kept lifting high; take 7 failed by user as too slow). Old take files sf1-sf4 deleted.",
+    "start_frame_media_id": "b31e4baf-ebe6-434c-b4b9-d57537135444",
+    "video_media_id": "a8a755e2-254a-45f1-b39d-8e98bc063a0a",
+    "approved_file": "scenes/scene_063_BN-08a_fca69fca_sf5.mp4",
+    "approved": "2026-10-21",
+    "approve_note": "take 8 duyệt 21/10/2026",
+    "upscale_media_id": "a8a755e2-254a-45f1-b39d-8e98bc063a0a",
+    "file_1080_clean": "1080/scene_063_BN-08a_fca69fca_1080p_clean.mp4",
+    "upscale_note": "2026-10-21 ~10:40Z UPSCALE_VIDEO request 2d784efb on dinhvulon16 (project 3b6be3e0), 1920x1080, logo removed with agent.services.watermark.remove_watermark_video",
+    "upscaled": true
+  },
+  "BN-08b": {
+    "scene_id": "aa417498-5c3d-41b6-b84e-3cdaf7273704",
+    "act": "",
+    "duration": 4,
+    "clip_id": "BN-08b",
+    "video_refs": [
+      "BN-08b Start",
+      "Nora Soot",
+      "Nora Body Fire",
+      "HALE Helmet Goggles",
+      "Eli",
+      "Juniper",
+      "Keller Barn Interior"
+    ],
+    "flow_account": "dinhvulon16",
+    "flow_project_id": "3b6be3e0-4a39-46e8-bf4e-aa727e449cd5",
+    "start_frame_mode": "PREV_LAST_FRAME: last frame of approved BN-08a take 8, de-watermarked, upload d97a1ebc (user 21/10: no generated start frame for continuous clips)",
+    "start_frame_media_id": "d97a1ebc-92f5-4803-8654-c95b9698f513",
+    "content_note": "Nora wedges her shoulder under the near end and heaves; the beam rises only a few cm (user 21/10: 'cần nhích lên 1 tí chứ cố nâng hết tí tí thôi'); Eli drags his legs out behind the beam. Nora screams \"Eli, pull your legs out! Now!\"",
+    "takes_note": "take1 6.0 (beam chest-high, white ribbons); take2 failed by user ('nhích lên cao quá'); take3 5.5 (lifted high, Eli not freed); take4 8.0 (no lift at all, user wanted a slight lift); take5 6.5 (lift to hip, Eli's feet still in front of the beam); take6 request 20f0735b (Flow req 5c0ce51b) still PROCESSING after ~6 min, marked FAILED by user 2026-10-21 10:45Z, never downloaded.",
+    "status": "no approved take yet (take 6 failed by user; next take not sent)"
   },
   "BN-09": {
     "scene_id": "49c328ff-3782-4d1d-9932-f687418f7cc6",
@@ -2180,7 +2218,8 @@
     "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)",
     "created_note": "2026-10-19: scene created from prompts_v7.json (chips resolved to named refs); handoff lessons not applied yet",
     "v1_note": "v1 2026-10-20: request 95b2e36d op a02d831d media ada9f92f ~7.8 (Eli's backpack missing, halter already on, Nora points instead of holding out her hand; Whisper 100% words, TIMING flag first line 0.0-2.1s); also served as the account-health control after BN-08 ghosts (account OK). File deleted; redo with the start-frame method.",
-    "leg_note": "2026-10-21 #21 leg lock: Eli left leg hurt, weight on right. DB video_prompt PATCHed (user approved)."
+    "leg_note": "2026-10-21 #21 leg lock: Eli left leg hurt, weight on right. DB video_prompt PATCHed (user approved).",
+    "v2_note": "2026-10-21: video scene_064_BN-09_49c328ff_sf1.mp4 scored 5.5 (Eli healthy, no support). Redo: start = last frame of approved BN-08b; Eli weak and hurt just up, Nora supports him while screaming into his face (user: 'mới đứng dậy thì nora cần dìu đi như video sau đó'), ending in ES-01's support posture."
   },
   "BN-11": {
     "scene_id": "19fa5343-3651-4712-b7e4-31b4797585be",

@@ -145,7 +145,7 @@ Trước khi tạo giọng mới, phải hỏi user.
 
 - BN-12 và TR-05 đã cắt khỏi kịch bản; không dựng.
 - BN-09r (~2s, chỉ dựng, không sinh): cắt lại một đoạn mái/gác cháy từ BN-07 v4, chèn giữa BN-09 và BN-11 để giữ nhịp đồng hồ "mái sắp sập". Chọn đoạn khi BN-07 v4 và BN-09 đã duyệt.
-- BN-08 tách thành BN-08a (đòn bẩy ăn) + BN-08b (găng trượt, xà rơi xuống rơm trống, rìu kẹt lại). Nối thẳng a → b; BN-08b mở từ khung cuối BN-08a.
+- BN-08 (sửa 21/10, không đòn bẩy/rìu): BN-08a = Nora tay không ấn cây rồi kéo tay Eli, thất bại, ngã ngồi (mở từ khung cuối BN-05; DUYỆT take 8 = scene_063_BN-08a_fca69fca_sf5.mp4, 4s, không thoại). BN-08b = Nora lấy vai đẩy cây lên một gang tay, hét "Eli, pull your legs out! Now!", Eli lôi chân ra, cây rơi xuống rơm trống (mở từ khung cuối BN-08a sf5). Nối thẳng a → b → BN-09; BN-09 mở từ khung cuối BN-08b (không sinh start frame), Nora dìu Eli yếu, vừa dìu vừa hét vào mặt.
 
 - BN-13a + BN-13b bản `_hg2` (thay v8/v1) đã duyệt 2026-10-21: ra cửa chuồng ban đêm, mái sập sau lưng; mũ ref `HALE Helmet Goggles`. Khăn đỏ giờ che kín hai mắt ngựa (ref `Juniper Blindfold`), không còn nằm trên trán — giữ như vậy tới LS-05a (ngựa hất khăn).
 

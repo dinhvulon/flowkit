@@ -3637,52 +3637,61 @@
  },
  {
   "clip_id": "BN-08a",
-  "scene_name": "First yield · the lever works",
+  "scene_name": "She tries again · it will not move",
   "duration": 4,
   "aspect_ratio": "16:9",
   "refs": [
+   "BN-08a Start",
+   "Nora Soot",
    "Nora Body Fire",
+   "HALE Helmet Goggles",
    "Eli",
+   "Juniper",
    "Keller Barn Interior"
   ],
   "camera": {
    "viewpoint": "third-person view; the viewer is invisible and nobody looks into the lens",
-   "shot_size": "close shot at floor level on the beam and Eli's legs: the long charred beam lying across the center of the frame, the charred plank beside it on the left, Nora's gloved hands and yellow sleeves on the left; Eli's legs in jeans come in from the right edge of frame and pass under the beam",
-   "description": "35 mm lens, handheld low on the straw, one fixed angle for all 4 seconds.",
+   "shot_size": "OPENING FRAME = {{ref:BN-08a Start}}: the very first frame is exactly that image: the same camera position, framing, people and places; a medium-wide shot from behind Nora's left shoulder at kneeling height: Nora kneeling on the left with her back to the camera, the long charred beam across Eli's legs, Eli sitting on the straw facing her, the grey mare standing behind him on the right",
+   "description": "35 mm lens, handheld with a slight natural shake, one fixed angle for all 4 seconds, the same as the opening frame.",
    "continuity": "one continuous unbroken shot from the first frame to the last, no cuts, no fade-in",
-   "focus": "deep focus, the beam, the plank, the tool, both pairs of hands and the straw all sharp (f/8)"
+   "focus": "deep focus, Nora, Eli, the beam, the mare and the burning barn behind all sharp (f/8)"
   },
   "style": "digital cinema camera with a subtle 35mm grain, full-bleed frame edge to edge, cinematic documentary realism, natural color, real locations and real people; real wildfire footage look: torn, ragged dark grey-brown smoke, glowing embers drifting in the air; low-key interior: the barn is dim and the strongest light is the warm orange flicker of the fire",
-  "setting": "Location: exactly the place in {{ref:Keller Barn Interior}}: inside Keller's small, low, dark old barn, black-barred stall fronts over dark wooden planks, loose straw on the dirt floor, the low hay-loft ceiling of dark boards burning with real orange flames. Light: exactly the same as the shots before: strong flickering orange-red glow of the burning back wall and loft, dim everywhere else, never pitch dark, never bright flat daylight. Smoke: ragged grey-brown smoke streams under the loft ceiling toward the front door in thin torn streaks and wisps, never round puffy clumps; embers drift down. The beam: the same huge long square loft timber, charred black, lying across both of Eli's shins; its far end rests on a heap of broken boards, so it sits a few centimeters above the straw and holds his legs down without flattening them. The pivot: a thick charred plank lies flat on the straw right beside the beam on Nora's side, parallel to it, about a hand's length away.",
+  "setting": "Location: exactly the place in {{ref:BN-08a Start}} and {{ref:Keller Barn Interior}}: inside Keller's small, low, dark old barn, black-barred stall fronts over dark wooden planks, loose straw on the dirt floor, the low hay-loft ceiling of dark boards burning with real orange flames. Light: exactly the same as the shots before: strong flickering orange-red glow of the burning back wall and loft, dim everywhere else, never pitch dark, never bright flat daylight. Smoke: ragged grey-brown smoke streams under the loft ceiling toward the front door in thin torn streaks and wisps, never round puffy clumps; embers drift down. The beam: the same huge long square loft timber, charred black, lying heavily across Eli's legs exactly as in the opening frame. Nobody holds any tool; there is no pole, no stick and no lever anywhere.",
   "characters": [
    {
     "name": "Nora",
-    "visual_lock": "Only her gloved hands, forearms and yellow sleeves are in frame: her yellow wildland fire shirt exactly as in {{ref:Nora Body Fire}}, with dried pink fire-retardant splashes.",
-    "state": "she holds her Pulaski by its handle: one wildland fire tool with a single straight wooden handle about 90 cm long and a steel head; only the flat steel end of the head is used here, slid under the beam. Her face is never in frame."
+    "visual_lock": "FACE LOCK: Nora's face is exactly the face in {{ref:Nora Soot}}, kept 1:1: same face shape, eyes, nose, lips, brows and hair. She is an adult woman of 23, a working firefighter. Her build and clothing are exactly as in {{ref:Nora Body Fire}}: the same yellow wildland fire shirt, harness straps and belt; she wears her mother's old yellow helmet with the scorched brim exactly as in {{ref:HALE Helmet Goggles}}, goggles pushed up on the front of the helmet.",
+    "state": "from the very first frame light grey-black soot streaks on her cheeks, forehead and jaw exactly as in {{ref:Nora Soot}}, her skin still clearly visible; ash dust on her yellow shirt and green pants, dried pink fire-retardant splashes on her sleeves, gloves on; kneeling at the beam with her back to the camera at first; desperate, straining with everything she has, never giving up inside the clip."
    },
    {
     "name": "Eli",
-    "visual_lock": "Only his legs in blue jeans, his sneakers and his hands, exactly as in {{ref:Eli}}; his face is out of frame.",
-    "state": "both legs held under the beam, both hands braced on the straw behind him, ready to pull back."
+    "visual_lock": "FACE LOCK: Eli's face is exactly the face in {{ref:Eli}}, kept 1:1: same face shape, eyes, nose, lips, brows and hair. He is an adult, an ordinary lean young man of 19, wearing exactly the clothes in that reference: the same green pullover hoodie, blue jeans and white sneakers.",
+    "state": "sitting on the straw facing Nora, his upper body propped up on his hands, both legs stretched out under the beam exactly as in the opening frame; wincing, breathing hard, he only cries out wordlessly when she pulls him."
+   },
+   {
+    "name": "Juniper",
+    "visual_lock": "Juniper is exactly the old grey mare in {{ref:Juniper}}: light dapple grey coat, pale face, dark eye, the same grey in every frame even in orange firelight. A real horse with real anatomy: one head, four legs, natural weight and muscle.",
+    "state": "standing behind Eli, frightened, tossing her head; no halter yet, both eyes uncovered."
    }
   ],
   "timeline_action": {
-   "0-2s": "The very first frame: the beam lying across Eli's shins and the charred plank beside it. Nora's gloved hands slide the flat steel end of the tool along the straw and under the beam right beside his legs, then lay the wooden handle across the charred plank, so the handle rests on the plank and slopes up from it to her hands at chest height.",
-   "2-4s": "Nora throws her whole weight down on the far end of the handle with both hands: her hands go down, the handle tips over the plank, and the steel end under the beam goes up and lifts the beam a hand's width, slowly and heavily. Eli drags both legs out from under it toward the right of frame, his sneakers scraping through the straw. At the final frame his legs are free on the straw beside the raised beam and Nora is still bearing down on the handle."
+   "0-2s": "The very first frame is exactly the opening-frame image. Nora plants both gloved hands flat on top of the beam and shoves down and forward with all her weight in one short desperate push; her hands never go under it: her arms locked and shaking, a raw groan through her clenched teeth. The beam does not move at all: it stays lying flat on Eli's legs and on the straw, both ends on the ground, only a few charred flakes shake off.",
+   "2-4s": "She gives up on the beam, grabs both of Eli's forearms and throws her whole weight backward, hauling him toward her to drag his legs out from under it; his legs do not slide out at all, still pinned under the beam; Eli cries out in pain; her gloves slip off his arms and she falls back onto the straw, gasping. At the final frame Nora is sitting back on the straw on the left, panting, and the beam still lies across Eli's legs, exactly where it was in the first frame."
   },
-  "physical_realism": "Lever and pivot: the charred plank is the pivot; the handle crosses it; the short end goes under the beam and the long end is in Nora's hands. Her hands move down about 30 cm, the beam moves up about 10 cm. Real weight: the beam rises slowly and the handle flexes a little under the load.",
+  "physical_realism": "The beam is a solid wet-heavy timber of several hundred kilos, far too heavy for one person: all the motion is in Nora's body (shaking arms, straining neck, slipping boots, her weight pulling back), none in the beam and none in Eli's trapped legs; the beam never leaves Eli's legs, never tilts up and never moves. Real weight, real effort, no success; real handheld documentary footage, not staged.",
   "speech": {
    "speaker": [],
    "voices": {},
-   "delivery": "no words: only Nora's strained grunt and Eli's sharp breath",
+   "delivery": "no words: only Nora's strained groans and gasps and Eli's wordless cry of pain",
    "dialogue": []
   },
   "post_vo": [],
   "dramatic_craft": {
-   "beat": "First yield · the lever works",
-   "subtext": "She uses a tool and a lever, not orders: the first thing that actually works."
+   "beat": "She tries again · it will not move",
+   "subtext": "Pure strength is not enough: the beam wins."
   },
-  "audio": "fire roar, crackling loft boards, the wooden handle grinding on the charred plank and the beam, Nora's strained grunt, Eli's sneakers scraping through straw; no words, no background music",
+  "audio": "fire roar, crackling loft boards, the beam creaking under her grip, Nora's strained groans and gasping, her boots scraping in the straw, the mare snorting; no words, no background music",
   "negative_constraints": [
    "No subtitles, no captions, no on-frame text, no logos, no watermarks; no readable letters anywhere, including on helmets and vehicles.",
    "ANTI-CGI LOCK: real documentary footage, not a 3D render, not a video game, not CGI fire, not cartoon flames, no plastic skin.",
@@ -3694,64 +3703,86 @@
    "Smoke is ragged and torn, never round puffy clumps, never a rope, never a white haze filling the frame; no fire tornado.",
    "Smooth continuous motion with a still background; nothing pops in or out; no reverse motion.",
    "The barn stays as dark, low and fire-lit as the shots before: no side door, no window, no trees, no fence, never a bright open stable.",
-   "One continuous unbroken shot: a single low angle for all 4 seconds, no cuts, no change of angle, no fade-in.",
-   "No faces in frame; nobody speaks words.",
-   "The tool is one single tool with one wooden handle and one steel head; it never bends, never duplicates, never changes shape.",
-   "Lever physics: the handle rests on the plank; when Nora pushes her end down, the end under the beam goes up. She never lifts the handle upward, and the beam never rises before she pushes down.",
-   "The beam rises only a hand's width, only on the tool, slowly and with real weight; it never floats, never flips, never flies.",
-   "Exactly two hands for Nora and two for Eli.",
+   "The first frame is exactly the opening-frame image; no fade-in, no reframing, no camera move away from that angle.",
+   "Nora is never posed like a model: no beauty filter, no glamour lighting, no catwalk pose.",
+   "Eli is a 19-year-old adult man: ordinary clothes fully on, no glamour framing. He wears only the green pullover hoodie from his reference: never a collared shirt, never a button-up work shirt, never a jacket, never a fire shirt.",
+   "One continuous unbroken shot: the single angle of the opening frame for all 4 seconds, no cuts, no change of angle.",
+   "Nobody speaks words; nobody looks into the lens.",
+   "Nora only pushes down on the beam with flat gloved hands and then pulls Eli by his forearms: she never gets her hands under the beam and never lifts it; no pole, no stick, no lever, no tool of any kind appears.",
+   "The beam never comes up and never tilts: neither end lifts off the ground, it is never raised to knee, waist or chest height, it never floats, never flips, never rolls off, never breaks, never looks light like foam or plastic; Eli's legs stay under it the whole time.",
+   "Exactly one horse: the old grey mare, light dapple grey with a pale face in every frame; never brown, never bay, never chestnut; she has exactly one head and four legs and never merges with a person.",
+   "Soot is light: a few grey-black streaks on Nora's face, never a perfectly clean face and never a blackened face.",
+   "Exactly three figures: Nora, Eli and the mare, each person with exactly two hands; nobody else.",
    "Spoken words in this clip: 0."
   ]
  },
  {
   "clip_id": "BN-08b",
-  "scene_name": "Near miss · she loses her tool",
+  "scene_name": "Shoulder under it · he is free",
   "duration": 4,
   "aspect_ratio": "16:9",
   "refs": [
+   "BN-08b Start",
+   "Nora Soot",
    "Nora Body Fire",
+   "HALE Helmet Goggles",
    "Eli",
-   "Keller Barn Interior",
-   "BN-08a last frame"
+   "Juniper",
+   "Keller Barn Interior"
   ],
   "camera": {
    "viewpoint": "third-person view; the viewer is invisible and nobody looks into the lens",
-   "shot_size": "the same close shot at floor level as the previous shot: the raised charred beam in the center, the plank beside it on the left, Nora's gloved hands on the handle on the left, Eli's legs in jeans on the straw at the right edge of frame, already clear of the beam",
-   "description": "35 mm lens, handheld low on the straw, one fixed angle for all 4 seconds; the same framing as the previous shot.",
-   "continuity": "direct continuation of the previous shot: frame 0 is exactly {{ref:BN-08a last frame}}, no cut, no fade-in, no reframing at the start; one continuous unbroken shot to the last frame",
-   "focus": "deep focus, the beam, the plank, the tool, the hands and the straw all sharp (f/8)"
+   "shot_size": "OPENING FRAME = {{ref:BN-08b Start}}: the very first frame is exactly that image: the same camera position, framing, people and places; a medium-wide shot from a three-quarter angle at kneeling height: Nora sitting back on the straw at the far left, just fallen, one gloved hand reaching out; the long charred beam lying across Eli's legs; Eli in the middle sitting on the straw, wincing in pain; the grey mare standing behind him on the right",
+   "description": "35 mm lens, handheld with a slight natural shake, one fixed angle for all 4 seconds, the same as the opening frame.",
+   "continuity": "one continuous unbroken shot from the first frame to the last, no cuts, no fade-in",
+   "focus": "deep focus, Nora, Eli, the beam, the mare and the burning barn behind all sharp (f/8)"
   },
   "style": "digital cinema camera with a subtle 35mm grain, full-bleed frame edge to edge, cinematic documentary realism, natural color, real locations and real people; real wildfire footage look: torn, ragged dark grey-brown smoke, glowing embers drifting in the air; low-key interior: the barn is dim and the strongest light is the warm orange flicker of the fire",
-  "setting": "Location: exactly the place in {{ref:Keller Barn Interior}}: inside Keller's small, low, dark old barn, black-barred stall fronts over dark wooden planks, loose straw on the dirt floor, the low hay-loft ceiling of dark boards burning with real orange flames. Light: exactly the same as the shots before: strong flickering orange-red glow of the burning back wall and loft, dim everywhere else, never pitch dark, never bright flat daylight. Smoke: ragged grey-brown smoke streams under the loft ceiling toward the front door in thin torn streaks and wisps, never round puffy clumps; embers drift down. The beam: the same huge long square loft timber, charred black, held up a hand's width on the tool; Eli's legs are already free on the straw beside it. The charred plank lies under the handle as the pivot.",
+  "setting": "Location: exactly the place in {{ref:BN-08b Start}} and {{ref:Keller Barn Interior}}: inside Keller's small, low, dark old barn, black-barred stall fronts over dark wooden planks, loose straw on the dirt floor, the low hay-loft ceiling of dark boards burning with real orange flames. Light: exactly the same as the shots before: strong flickering orange-red glow of the burning back wall and loft, dim everywhere else, never pitch dark, never bright flat daylight. Smoke: ragged grey-brown smoke streams under the loft ceiling toward the front door in thin torn streaks and wisps, never round puffy clumps; embers drift down. The beam: the same huge long square loft timber, charred black, lying across Eli's legs exactly as in the opening frame. Nobody holds any tool; there is no pole, no stick and no lever anywhere.",
   "characters": [
    {
     "name": "Nora",
-    "visual_lock": "Only her gloved hands, forearms and yellow sleeves are in frame: her yellow wildland fire shirt exactly as in {{ref:Nora Body Fire}}, with dried pink fire-retardant splashes.",
-    "state": "both gloved hands bearing down on the far end of the wooden handle; her face is never in frame."
+    "visual_lock": "FACE LOCK: Nora's face is exactly the face in {{ref:Nora Soot}}, kept 1:1: same face shape, eyes, nose, lips, brows and hair. She is an adult woman of 23, a working firefighter. Her build and clothing are exactly as in {{ref:Nora Body Fire}}: the same yellow wildland fire shirt, harness straps and belt; she wears her mother's old yellow helmet with the scorched brim exactly as in {{ref:HALE Helmet Goggles}}, goggles pushed up on the front of the helmet.",
+    "state": "from the very first frame light grey-black soot streaks on her cheeks, forehead and jaw exactly as in {{ref:Nora Soot}}, her skin still clearly visible; ash dust on her yellow shirt and green pants, dried pink fire-retardant splashes on her sleeves, gloves on; sitting back on the straw at the far left at first, just fallen; desperate and furious with effort."
    },
    {
     "name": "Eli",
-    "visual_lock": "Only his legs in blue jeans, his sneakers and his hands, exactly as in {{ref:Eli}}; his face is out of frame.",
-    "state": "legs free, scrambling backward on the straw toward the right of frame."
+    "visual_lock": "FACE LOCK: Eli's face is exactly the face in {{ref:Eli}}, kept 1:1: same face shape, eyes, nose, lips, brows and hair. He is an adult, an ordinary lean young man of 19, wearing exactly the clothes in that reference: the same green pullover hoodie, blue jeans and white sneakers.",
+    "state": "sitting on the straw facing Nora, his upper body propped up on both hands behind him, both legs stretched out under the beam exactly as in the opening frame; his left ankle is hurt; mouth closed, breathing hard."
+   },
+   {
+    "name": "Juniper",
+    "visual_lock": "Juniper is exactly the old grey mare in {{ref:Juniper}}: light dapple grey coat, pale face, dark eye, the same grey in every frame even in orange firelight. A real horse with real anatomy: one head, four legs, natural weight and muscle.",
+    "state": "standing behind Eli, frightened, tossing her head; no halter yet, both eyes uncovered."
    }
   ],
   "timeline_action": {
-   "0-2s": "The very first frame matches the previous shot: the beam held up a hand's width on the tool, Nora bearing down on the handle. Her gloves slip on the soot-covered wood; the handle jerks up out of her hands and her hands fly back out of the left of frame.",
-   "2-4s": "The beam drops and slams down flat onto the empty straw where Eli's legs were a second ago, throwing up a burst of orange embers and straw dust; Eli's legs are already pulled clear to the right. At the final frame the beam lies on the straw with the steel head of the tool trapped under it and the wooden handle sticking up at an angle."
+   "0-2s": "The very first frame is exactly the opening-frame image. Nora scrambles forward on her knees to the near end of the beam, stays low on her knees, wedges her right shoulder against the underside edge of the beam's near end and grips its side with both gloved hands, her boots dug into the straw; her face is terrified and furious, never smiling; she screams \"Eli, pull your legs out! Now!\" (no subtitles).",
+   "2-4s": "Nora heaves upward from her knees with a raw scream of effort, her whole body shaking, her face red: the near end of the beam creaks up only a few centimetres, just a finger's width of gap opening over Eli's shins, trembling, never higher than that; the beam stays almost flat and its far end stays down on the straw. Eli shoves back hard on both hands and scoots his whole body backward, away from the camera, dragging both legs out under the small gap, his face twisting with pain as his left ankle scrapes free; his white sneakers slide back under the beam and disappear behind it, to the far side of the beam from the camera. The moment his feet are clear, Nora lets go and the beam thuds back down onto the empty straw. At the final frame Eli sits on the straw half a meter behind the beam, farther from the camera than the beam, his knees bent up and both sneakers planted on the straw on the far side of the beam, half hidden behind it; no part of his legs is on the camera side of the beam and nothing lies on his legs; Nora is on her knees at the beam, panting; the beam lies flat on the straw."
   },
-  "physical_realism": "The handle slips from her gloves; with nothing holding the long end down, the beam drops straight back the hand's width it was raised and lands flat. The tool head stays under it, so the handle stays tilted up.",
+  "physical_realism": "The beam is a solid timber of several hundred kilos. With everything she has, Nora can raise its near end only a few centimetres, a finger's width over Eli's shins, which is just enough for him to drag his legs out; it never rises higher. All the effort shows in Nora's shaking body, red face and slipping boots; the beam only trembles, then drops back with a thud.",
   "speech": {
-   "speaker": [],
-   "voices": {},
-   "delivery": "no words: only the crash of the beam and Eli's sharp gasp",
-   "dialogue": []
+   "speaker": [
+    "Nora"
+   ],
+   "voices": {
+    "Nora": "kore"
+   },
+   "delivery": "Nora screams over the fire roar in a young woman's voice: panicked, breathless and hoarse, scared for both of them and in a hurry to get out, every word fast and frantic, each short sentence thrown out like an order, no pauses, never calm, never slow, never a normal talking voice; lip-synced for Nora only; Eli says nothing and keeps his mouth closed; each line ends with (no subtitles)",
+   "dialogue": [
+    {
+     "t": "0-2s",
+     "speaker": "Nora",
+     "line": "Eli, pull your legs out! Now!"
+    }
+   ]
   },
   "post_vo": [],
   "dramatic_craft": {
-   "beat": "Near miss · she loses her tool",
-   "subtext": "The thing that worked fails a second later: one beat slower and it would have been his legs. She has lost the Pulaski for the rest of the night."
+   "beat": "Shoulder under it · he is free",
+   "subtext": "She cannot lift it with her arms, so she puts her whole body under it."
   },
-  "audio": "fire roar, gloves squeaking on wood, a heavy wooden crash as the beam hits the floor, embers hissing, Eli's sharp gasp; no words, no background music",
+  "audio": "loud fire roar, crackling loft boards, Nora's screamed line and her raw scream of effort, the beam creaking, Eli's sharp cry of pain, sneakers scraping in the straw, the heavy beam creaking as its end strains up a few centimetres, then a heavy thud as it drops back onto the straw, the mare snorting; no background music",
   "negative_constraints": [
    "No subtitles, no captions, no on-frame text, no logos, no watermarks; no readable letters anywhere, including on helmets and vehicles.",
    "ANTI-CGI LOCK: real documentary footage, not a 3D render, not a video game, not CGI fire, not cartoon flames, no plastic skin.",
@@ -3763,13 +3794,19 @@
    "Smoke is ragged and torn, never round puffy clumps, never a rope, never a white haze filling the frame; no fire tornado.",
    "Smooth continuous motion with a still background; nothing pops in or out; no reverse motion.",
    "The barn stays as dark, low and fire-lit as the shots before: no side door, no window, no trees, no fence, never a bright open stable.",
-   "One continuous unbroken shot: a single low angle for all 4 seconds, no cuts, no change of angle, no fade-in.",
-   "No faces in frame; nobody speaks words.",
-   "The beam lands only on empty straw, never on anyone; Eli's legs are clear of it before it drops.",
-   "The tool is one single tool with one wooden handle and one steel head; it stays trapped under the beam and never breaks into pieces.",
-   "The beam falls with real weight straight down and stays down; it never bounces up, never flips, never floats.",
-   "Exactly two hands for Nora and two for Eli.",
-   "Spoken words in this clip: 0."
+   "The first frame is exactly the opening-frame image; no fade-in, no reframing, no camera move away from that angle.",
+   "Nora is never posed like a model: no beauty filter, no glamour lighting, no catwalk pose.",
+   "Eli is a 19-year-old adult man: ordinary clothes fully on, no glamour framing. He wears only the green pullover hoodie from his reference: never a collared shirt, never a button-up work shirt, never a jacket, never a fire shirt.",
+   "One continuous unbroken shot: the single angle of the opening frame for all 4 seconds, no cuts, no change of angle.",
+   "Nobody looks into the lens; Eli says nothing and keeps his mouth closed except for a short cry of pain.",
+   "Nora strains against the beam only with her shoulder and gloved hands: no pole, no stick, no lever, no tool of any kind appears.",
+   "Nora stays on her knees the whole time and never stands up; she never holds the beam in her arms and never carries it; the beam rises only a few centimetres at its near end, at most a hand's width off the straw and a finger's width off Eli's shins, never higher: it never comes up to her knee, waist, chest or head, never stands at an angle, its far end stays on the straw; it never floats, never flips, never rolls over, never breaks.",
+   "Exactly one horse: the old grey mare, light dapple grey with a pale face in every frame; never brown, never bay, never chestnut; she has exactly one head and four legs and never merges with a person.",
+   "Nothing white floats or hangs in the air: no white ribbons, no paper streamers, no strips of cloth, no white smoke curls; only small orange embers drift down.",
+   "Soot is light: a few grey-black streaks on Nora's face, never a perfectly clean face and never a blackened face.",
+   "Eli's legs never pass through the beam; at the end his feet are never in front of the beam, never on the camera side of it.",
+   "Exactly three figures: Nora, Eli and the mare, each person with exactly two hands and two legs; nobody else.",
+   "Spoken words in this clip: 6, all Nora's, screamed fast; never a calm voice."
   ]
  },
  {
@@ -3778,29 +3815,43 @@
   "duration": 6,
   "aspect_ratio": "16:9",
   "refs": [
-   "Nora",
+   "BN-09 Start",
+   "Nora Soot",
    "Nora Body Fire",
-   "HALE Helmet",
-   "Keller Barn"
+   "HALE Helmet Goggles",
+   "Eli",
+   "Juniper",
+   "Keller Barn Interior"
   ],
   "camera": {
-   "viewpoint": "third-person cinematic camera; the camera itself is never seen",
-   "shot_size": "MCU",
-   "description": "85mm lens, handheld but controlled, tight on faces"
+   "viewpoint": "third-person view; the viewer is invisible and nobody looks into the lens",
+   "shot_size": "OPENING FRAME = {{ref:BN-09 Start}}: the very first frame is exactly that image: the same camera position, framing, people and places; a medium shot in the barn aisle at chest height: Nora on the left from the thighs up, Eli on the right buckling a rope halter onto the grey mare's head, the mare between them in the middle-right, the charred beam lying on the straw behind them with the long plain wooden pole lying on the straw beside it",
+   "description": "50 mm lens, handheld with a slight natural shake, one fixed angle for all 6 seconds, the same as the opening frame; the burning back of the barn behind them.",
+   "continuity": "one continuous unbroken shot from the first frame to the last, no cuts, no fade-in",
+   "focus": "deep focus, Nora, Eli, the mare and the burning barn behind all sharp (f/8)"
   },
-  "style": "35mm film, cinematic documentary realism, natural film grain, natural color, real locations and real people; real wildfire footage look: irregular orange-yellow flames, dark brown-grey smoke, glowing embers in the air, faces lit by fire glow, fire never fills the foreground of a face shot",
-  "setting": "Location: exactly the place in {{ref:Keller Barn}}, Keller's old red wooden barn and empty farmyard. Prop: the mother's old yellow wildland helmet with a scorched brim, exactly as in {{ref:HALE Helmet}}. Light: late twilight under the smoke, almost dark: the sun has set, the sky a dim dark blue-grey and brown smoke ceiling with only a last faint glow low on the horizon, the land and the trees falling into shadow, the fire glow is now the main light on faces and the ground, no stars, never daylight, never the plain grey daylight of the location photo, flames overhead.",
+  "style": "digital cinema camera with a subtle 35mm grain, full-bleed frame edge to edge, cinematic documentary realism, natural color, real locations and real people; real wildfire footage look: torn, ragged dark grey-brown smoke, glowing embers drifting in the air; low-key interior: the barn is dim and the strongest light is the warm orange flicker of the fire",
+  "setting": "Location: exactly the place in {{ref:BN-09 Start}} and {{ref:Keller Barn Interior}}: inside Keller's small, low, dark old barn, black-barred stall fronts over dark wooden planks, loose straw on the dirt floor, the low hay-loft ceiling of dark boards burning with real orange flames. Light: exactly the same as the shots before: strong flickering orange-red glow of the burning back wall and loft, dim everywhere else, never pitch dark, never bright flat daylight. Smoke: ragged grey-brown smoke streams under the loft ceiling toward the front door in thin torn streaks and wisps, never round puffy clumps; embers drift down. The huge charred beam lies on the empty straw behind them, the long plain wooden pole and the firewood block lying on the straw beside it; neither moves in this clip.",
   "characters": [
    {
     "name": "Nora",
-    "visual_lock": "FACE LOCK: Nora's face is exactly the face in {{ref:Nora}}, kept 1:1: same face shape, eyes, nose, lips, brows and hair, no makeup look. She is an adult woman of 23, very pretty, athletic and strong with a fit, full figure and a hard, confident stare. BODY and OUTFIT LOCK: her build and clothing are exactly as in {{ref:Nora Body Fire}} (yellow wildland fire shirt, green fire pants, gloves, goggles, fire pack and shelter pouch on her belt). Attractive but never posed: the camera treats her as a working firefighter.",
-    "state": "heavy soot, dried pink retardant streaks and one scorched shirt sleeve. She wears her mother's old yellow helmet with the scorched brim exactly as in {{ref:HALE Helmet}}."
+    "visual_lock": "FACE LOCK: Nora's face is exactly the face in {{ref:Nora Soot}}, kept 1:1: same face shape, eyes, nose, lips, brows and hair. She is an adult woman of 23, a working firefighter. Her build and clothing are exactly as in {{ref:Nora Body Fire}}: the same yellow wildland fire shirt, harness straps and belt; she wears her mother's old yellow helmet with the scorched brim exactly as in {{ref:HALE Helmet Goggles}}, goggles pushed up on the front of the helmet.",
+    "state": "from the very first frame light grey-black soot streaks on her cheeks, forehead and jaw exactly as in {{ref:Nora Soot}}, her skin still clearly visible; ash dust on her yellow shirt and green pants, dried pink fire-retardant splashes on her sleeves, gloves on. Giving in for the first time, but still in charge: jaw clenched, yelling with her whole chest, never still."
+   },
+   {
+    "name": "Eli",
+    "visual_lock": "FACE LOCK: Eli's face is exactly the face in {{ref:Eli}}, kept 1:1: same face shape, eyes, nose, lips, brows and hair. He is an adult, an ordinary lean young man of 19, wearing exactly the clothes in that reference: the same green pullover hoodie, blue jeans and white sneakers.",
+    "state": "just freed, light soot on his face, ash on his hoodie and jeans; standing with his weight on his right leg, his left leg hurt; both hands on the rope halter at the mare's cheek."
+   },
+   {
+    "name": "Juniper",
+    "visual_lock": "Juniper is exactly the old grey mare in {{ref:Juniper}}: light dapple grey coat, pale face, dark eye, the same grey in every frame even in orange firelight. A real horse with real anatomy: one head, four legs, natural weight and muscle.",
+    "state": "standing beside Eli, head low, frightened but still; ash in her mane; a plain rope halter on her head and nothing else, both eyes uncovered."
    }
   ],
   "timeline_action": {
-   "0-2s": "Nora sheathes the knife at her belt. From the very first frame at second 0, Nora begins speaking immediately: Nora shouts \"Fine. She comes. But you hold my hand and you don't let go.\" (no subtitles). The line runs on from 0s through 6s, shouted fast at full volume over the fire roar.",
-   "2-4s": "Behind her, a boy in a hoodie buckles a halter onto the mare.",
-   "4-6s": "Nora turns to him and speaks."
+   "0-2s": "The very first frame is exactly the opening-frame image. Nora turns her head from the barn door to Eli and the mare, and from second 1 she yells \"Fine. She comes.\" (no subtitles), hard and clipped; Eli keeps buckling the halter at the mare's cheek, his hands working fast.",
+   "2-6s": "Eli pulls the buckle tight and takes the lead rope in his left hand; the mare tosses her head once. Nora takes one step toward him and yells \"But you hold my hand and you don't let go.\" (no subtitles), fast and hard, right after the first line with no pause, and holds out her gloved right hand toward him. At the final frame the halter is buckled on the mare, the lead rope in Eli's left hand, Nora's gloved hand held out to him, her eyes on him."
   },
   "speech": {
    "speaker": [
@@ -3809,28 +3860,50 @@
    "voices": {
     "Nora": "kore"
    },
-   "delivery": "native lines in the character's own voice, lip-synced, shouted fast and hoarse at full volume over the fire roar: voice raised to a yell, every word hard and clipped, never calm, never slow, never whispered; each line ends with (no subtitles)",
+   "delivery": "Nora yells over the fire roar in a young woman's voice: shouted fast and hoarse, an urgent, clipped command voice, every word hard and forceful, each short sentence punched out like an order, no pauses, never calm, never slow, never a normal talking voice; lip-synced for Nora only; Eli says nothing and keeps his mouth closed; each line ends with (no subtitles)",
    "dialogue": [
     {
-     "t": "0-6s",
+     "t": "1-2s",
      "speaker": "Nora",
-     "line": "Fine. She comes. But you hold my hand and you don't let go."
+     "line": "Fine. She comes."
+    },
+    {
+     "t": "2-6s",
+     "speaker": "Nora",
+     "line": "But you hold my hand and you don't let go."
     }
    ]
   },
   "post_vo": [],
   "dramatic_craft": {
    "beat": "First yield",
-   "subtext": "'Hold my hand' is the first tender thing she has said."
+   "subtext": "She gives in on the horse, and asks for something back: his hand."
   },
-  "audio": "wildfire roar, wind, crackling wood; no background music",
+  "audio": "fire roar, crackling loft boards, the mare snorting and shifting her hooves, the halter buckle, Nora's two lines; no background music",
   "negative_constraints": [
    "No subtitles, no captions, no on-frame text, no logos, no watermarks; no readable letters anywhere, including on helmets and vehicles.",
    "ANTI-CGI LOCK: real documentary footage, not a 3D render, not a video game, not CGI fire, not cartoon flames, no plastic skin.",
    "No breath vapor and no white steam from anyone's mouth; no god rays, no volumetric beams.",
    "Separate bodies never merge; natural hands with five fingers; no extra limbs.",
    "No background music.",
+   "No bokeh, no blurred background, no black borders, no letterbox bars, no vignette.",
+   "No camera rig, no film crew, no filming equipment.",
+   "Smoke is ragged and torn, never round puffy clumps, never a rope, never a white haze filling the frame; no fire tornado.",
+   "Smooth continuous motion with a still background; nothing pops in or out; no reverse motion.",
+   "The barn stays as dark, low and fire-lit as the shots before: no side door, no window, no trees, no fence, never a bright open stable.",
+   "The first frame is exactly the opening-frame image; no fade-in, no reframing, no camera move away from that angle.",
    "Nora is never posed like a model: no beauty filter, no glamour lighting, no catwalk pose.",
+   "Eli is a 19-year-old adult man: ordinary clothes fully on, no glamour framing. He wears only the green pullover hoodie from his reference: never a collared shirt, never a button-up work shirt, never a jacket, never a fire shirt.",
+   "Nobody is calm or relaxed: no slow walking, no standing still, no gentle smile, no soft voice.",
+   "One continuous unbroken shot: the single angle of the opening frame for all 6 seconds, no cuts, no change of angle.",
+   "Only Nora speaks and only her mouth moves; nobody looks into the lens.",
+   "Every line is yelled hard and fast at full volume: never a normal talking voice, no soft voice, no slow talking, no pauses.",
+   "Exactly one horse: the old grey mare, light dapple grey with a pale face in every frame; never brown, never bay, never chestnut; she has exactly one head and four legs and never merges with a person.",
+   "The mare has exactly one plain rope halter and nothing else on her head: no bridle, no bit, no saddle, no blindfold yet.",
+   "Eli stands with his weight on his right leg; no blood, no gore.",
+   "The fallen beam and the wooden pole stay where they are on the straw; nothing falls in this clip.",
+   "Soot is light: a few grey-black streaks on the faces, never a perfectly clean face and never a blackened face.",
+   "Exactly three figures: Nora, Eli and the mare; nobody else.",
    "Spoken words in this clip: 13 (Rule 49 band for 6s: 12-15)."
   ]
  },
