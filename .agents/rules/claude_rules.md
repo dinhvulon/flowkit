@@ -181,6 +181,10 @@ page can sign a Flow request, so nothing works headless.
     - (2) Exit 1 (MISSING / WORDS / CUT-OFF / TIMING / EXTRA SPEECH) = clip KHÔNG ĐẠT dù hình đẹp; đề xuất sửa và hỏi trước khi regen (Rule 29). Cờ `? VOICE?` không tự đánh trượt — báo User nghe lại.
     - (3) Mốc thời gian từng từ của Whisper là nguồn chọn điểm cắt thoại khi dựng; không cắt mù `-ss 1` khi thoại bắt đầu từ giây 0.
     - (4) Lỗi cấp phát OpenBLAS/MKL ➔ đặt `OPENBLAS_NUM_THREADS=1` rồi chạy lại. Tool không chạy được (exit 2) ➔ báo rõ cho User, không được lặng lẽ bỏ qua bước này.
+68. **Mandatory `/fk-review-prompt` before every generation (Bắt buộc review prompt trước MỌI lần sinh — cả Claude và Antigravity/Gemini — User Lock 20/10/2026)** — Linter (`tools/lint_prompt.py`) chỉ bắt chuỗi cấm, không bắt mâu thuẫn hay vật lý sai (EMBERS BN-08 20/10: đòn bẩy tả điểm tựa sai phía, linter vẫn PASS). Vì vậy:
+    - (1) Sau MỖI lần viết hoặc sửa `video_prompt` **và** `image_prompt` của start frame (kể cả sửa một câu, kể cả prompt EDIT ảnh), chạy `/fk-review-prompt`: linter 0 CRITICAL/HIGH ➔ đọc lại TOÀN BỘ prompt, lập bảng từng chủ thể theo giây (vị trí, hướng, tay/miệng, trạng thái cuối, máy) ➔ checklist B của `skills/fk-film/references/prompt-lock.md` ➔ kiểm vật lý (lực, điểm tựa, trọng lực, hướng đi) và liên tục với clip trước/sau.
+    - (2) Báo cáo tự đánh giá (mẫu ở Bước 4 của skill) gửi kèm khi hỏi User duyệt sinh. CẤM hỏi duyệt hoặc gửi request sinh khi chưa có báo cáo; "lint PASS" không thay cho báo cáo.
+    - (3) Review đề xuất đổi prompt User đã duyệt ➔ đưa thành lựa chọn cho User, không tự ghi đè.
 
 ## Pipeline Order (Omni Flash R2V Ingredients Workflow)
 

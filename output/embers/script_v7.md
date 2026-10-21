@@ -33,7 +33,7 @@
 ## Camera & continuity plan
 
 - **Screen direction:** toward the fire = left → right. Toward home / safety (and the black) = right → left.
-- **Axis:** Ray screen-left, Nora screen-right in every two-shot. Planned axis flip at TR-05.
+- **Axis:** Ray screen-left, Nora screen-right in every two-shot. Planned axis flip at TR-04 (TR-05 merged into it, 2026-10-21).
 - **Lenses:** 35–50mm static at the ranch → 24–35mm handheld on the line → 85mm for confrontations (CH, BN) → locked-off 85mm two-shots at dawn. Ray low angle until CH-07, high angle after.
 - **Fire rule (anti-CGI):** documentary look — 35mm grain, handheld, faces lit by glow, smoke and embers in the air, fire never fills the foreground of a face shot. Big-fire shots (FL-08, FL-09, FL-11, RR-13, BK-14) are framed as real news/IR-crew footage: long lens, heat shimmer, smoke-dimmed sun. Test the hardest one (FL-08) first.
 - **Helmets:** Nora wears a plain yellow `Crew Helmet` FL-01→CH-09. The mother's `HALE Helmet` (scorched brim) rides on the pickup seat from RA-07 until RR-06, where Nora puts it on; she wears it until BK-04, Eli from BK-04. Ray wears a white helmet.
@@ -169,11 +169,13 @@ Built in the edit from later clips (trailer-intro structure: conflict 0–3s →
 | BN-05 | 8s | OTS→Eli Dutch | Eli, Nora Body Fire, Keller Barn | E | night, orange, smoke | Over Nora's shoulder as she braces both hands under the burning beam, slight Dutch tilt: Eli pinned below, face to face, both shouting over the roar. | (post-VO Nora, back to camera, 0–3s) "Somebody had to sign the papers, Eli! Mom sure didn't!" (Eli, 3–8s) "You sold her because she looks at you like Mom did." | 21 | native: Eli · post: Nora | Truth |
 | BN-06 | 4s | CU | Nora, Nora Body Fire, HALE Helmet, Keller Barn | E | night, orange flicker | Nora goes still; a line cuts through the soot on her cheek. | (no dialogue, roar drops away) | 0 | none | Hit |
 | BN-07 | 4s | WS | Keller Barn | G | night, flames on rafters | Flames run along the rafters; burning hay drops into the aisle. | (no dialogue) | 0 | none | RH · roof catches |
-| BN-08 | 4s | CU | Nora Body Fire, Eli, Keller Barn Interior | E | late afternoon through smoke, flames overhead | Nora jams her Pulaski handle under the beam and heaves; the beam lifts and Eli drags his leg free. | (no dialogue, Nora's strained grunt) | 0 | none | First yield |
+| BN-08a | 4s | CU floor level | Nora Body Fire, Eli, Keller Barn Interior | E | late afternoon through smoke, flames overhead | The beam lies across both of Eli's shins, one end propped on broken boards. Nora slides the flat steel end of her Pulaski under the beam beside his legs, lays the handle over a thick charred plank on the straw as a pivot and throws her weight down on the far end of the handle: her hands go down, the beam goes up a hand's width, and Eli drags both legs out to the right. | (no dialogue, Nora's strained grunt) | 0 | none | First yield · the lever works |
+| BN-08b | 4s | CU floor level, same frame | Nora Body Fire, Eli, Keller Barn Interior + BN-08a last frame (inline ref) | E | late afternoon through smoke, flames overhead | Same frame, continuous: her gloves slip, the handle snaps up out of her hands and the beam slams down on the empty straw where his legs just were, in a burst of embers; the Pulaski stays trapped under the beam, its handle sticking up. | (no dialogue, crash, Eli's sharp gasp) | 0 | none | Near miss · she loses her tool |
 | BN-09 | 6s | MCU | Nora, Nora Body Fire, HALE Helmet, Keller Barn Interior | E | late afternoon through smoke, flames overhead | Nora hauls Eli to his feet; limping behind her, he buckles his halter onto the mare. | (Nora) "Fine. She comes. But you hold my hand and you don't let go." | 13 | native: Nora | First yield |
+| BN-09r | ~2s | WS (re-cut, no generation) | (from BN-07 v4) | — | night, flames on rafters | Edit-only re-cut from approved BN-07: the burning loft above them, burning hay dropping into the aisle. | (no dialogue, crack of a rafter) | 0 | none | Clock · the roof is going |
 | BN-11 | 6s | MCU (Nora) | Nora, Nora Body Fire, HALE Helmet, Juniper, Keller Barn | E | night, flames overhead | Nora ties her red bandana over the mare's eyes. | (Nora) "Horses won't leave a burning barn. They think it's home. Hold her tight." | 13 | native: Nora | Skill |
-| BN-12 | 4s | CU (Eli) | Eli, Keller Barn | E | night, flames overhead | Eli goes still, lips parted, the lead slack in his hand. | (Eli) "How do you know that?" (post-VO Nora, off-screen) "Mom." | 6 | native: Eli · post: Nora | Mother |
-| BN-13a | 4s | WS static | Nora, Nora Body Fire, Eli, Juniper, Keller Barn | E | night, fire behind, smoke | The three walk fast out of the barn door, right to left, Eli limping and leading the blindfolded mare, his other hand in Nora's. | (no dialogue, roar) | 0 | none | Escape |
+| ~~BN-12~~ | — | cut 2026-10-21 (#21) | — | — | — | Cut: the still close-up stalled the barn clock. Its two lines move into BN-13a. | — | — | — | — |
+| BN-13a | 4s | WS static | Nora, Nora Body Fire, HALE Helmet, Eli, Eli Pack, Juniper, Keller Barn | E | night, fire behind, smoke | The three walk fast out of the barn door, right to left: Eli limping on his left leg, leading the blindfolded mare with his right hand, his left hand in Nora's; Nora walks on the far side, her face hidden behind Eli and the mare. | (Eli, 0–2s) "How do you even know that?" (post-VO Nora, 2.5–3.5s) "Mom." | 7 | native: Eli (fenrir) · post: Nora (kore) | Escape · Mother |
 | BN-13b | 4s | WS static | Nora, Nora Body Fire, Eli, Juniper, Keller Barn | P | night, sparks | Same frame: behind them the barn roof collapses in a burst of sparks; they don't look back. | (no dialogue, crash) | 0 | none | Midpoint · no way back |
 
 ## 12. Out of the barn (6:25–6:47)
@@ -184,7 +186,7 @@ Built in the edit from later clips (trailer-intro structure: conflict 0–3s →
 | ES-02 | 4s | WS | Nora, Nora Body Fire, HALE Helmet, Eli, Juniper, Ridge Road | E | night, fire glow | At a gap between two burning fence posts the blindfolded mare plants her hooves and refuses; Eli leans back on the rope with both hands. | (no dialogue, crackle, horse squeal) | 0 | none | Obstacle · the mare balks |
 | ES-03 | 6s | MS | Nora, Nora Body Fire, HALE Helmet, Eli, Juniper, Ridge Road | E | night, fire glow | Nora steps back, takes the lead rope under the mare's chin and walks her through the gap step by step; Eli follows, a hand on the mare's shoulder. | (Nora) "Eyes on my back, Eli. Where I step, she steps. Count it out." | 13 | native: Nora | Command · she leads (the habit she must give up) |
 | ES-04 | 4s | CU | Eli, Ridge Road | E | night, fire glow, smoke | Eli, shirt pulled over his mouth, coughing, clutches the lead rope and keeps walking. | (no dialogue, coughing) | 0 | none | He holds on |
-| ES-05 | 6s | WS high angle | Nora, Nora Body Fire, HALE Helmet, Eli, Juniper, Ridge Road | E | night, embers | Embers land in the dry grass ahead; flames race across the lane below them and cut off the way down; Nora turns them uphill. | (no dialogue, whoosh, roar) | 0 | none | RH · way down cut off |
+| ES-05 | 6s | WS high angle | Nora, Nora Body Fire, HALE Helmet, Eli, Juniper, Ridge Road | E | night, embers | Embers land in the dry grass ahead; flames race across the lane below them and cut off the way down; Nora leads them a few steps up onto a bare rocky rise just above the lane, the only ground not burning yet. They do not go into the smoke. | (no dialogue, whoosh, roar) | 0 | none | RH · way down cut off |
 
 ## 13. Cedar Flat — slopover (cross-cut, 6:47–7:09)
 
@@ -194,7 +196,7 @@ Built in the edit from later clips (trailer-intro structure: conflict 0–3s →
 | LH-06 | 6s | MS | Ray, Cedar Flat | E | night, orange, embers | A spot fire jumps the dozer line into a backyard; Ray points and shouts at the crew. | (Ray) "Slopover! Right flank! Engine Two, hit it! Hit it now before it finds the houses!" | 15 | native: Ray | Line breaks |
 | LH-07 | 6s | WS | Cedar Flat | G | night, orange, spray | An engine crew blasts the backyard flames with a hose; the fire dies to smoke beside a child's swing set; town lights still burn behind. | (no dialogue, hose roar, hiss) | 0 | none | Line holds — for now |
 | LH-08 | 6s | MCU | Ray, Cedar Flat | E | night, orange | Ray, soot on his face, looks up at the burning ridge where Ridge Road is. | (post-VO crew, off-screen) "Cap, Hale's truck radio is just static." (Ray) "She'll answer. Hales always answer late." | 13 | native: Ray · post: crew | Ray's faith |
-| LH-09 | 6s | MS | Ray, Cedar Flat | E | night, orange | Ray strides to an engine and grabs the door handle, eyes on the burning ridge; he looks back at the town and the crew, his other hand on Nora's radio on his chest; he lets go of the door and walks back to the line. | (no dialogue, engine idle, radio static) | 0 | none | Ray's choice · he stays and trusts her |
+| LH-09 | 6s | MS | Ray, Cedar Flat | E | night, orange | Ray strides to an engine and grabs the door handle, eyes on the burning ridge; he looks back at the town and the crew, his other hand on Nora's radio on his chest; he lets go of the door and walks toward camera, back to the line; behind him, unseen by him, a gust carries a shower of embers over the dark roof of the long, low school at the edge of town. | (no dialogue, engine idle, radio static, gust) | 0 | none | Ray's choice · he stays and trusts her · open loop: the school |
 
 ## 14. All is lost (7:09–7:47)
 
@@ -216,10 +218,10 @@ Built in the edit from later clips (trailer-intro structure: conflict 0–3s →
 |---|---|---|---|---|---|---|---|---|---|---|
 | TR-01 | 8s | 2S profile | Eli, Nora, Nora Body Fire, HALE Helmet, Ridge Road | E | night, fire glow | Eli grabs Nora's arm, pointing up the slope; both in profile, faces lit orange. | (Eli, 0–5.5s) "Nora, she's done this before. The Pine Gulch burn. She walks where it's already burned." (Nora, 6–8s) "Uphill in smoke is how crews die." | 22 | native: Eli (fenrir) + Nora (kore) | Argument · Pine Gulch pays · her rule vs his memory |
 | TR-02 | 6s | MCU (Eli) | Eli, Ridge Road | E | night, fire glow | Eli's breathing slows; he plants his feet and holds her eyes. | (Eli) "You said they won't leave a burning barn. She left. She ran uphill." | 13 | native: Eli | Ask |
-| TR-02b | 6s | MS 2S high angle | Nora, Nora Body Fire, HALE Helmet, Eli, Ridge Road | E | night, fire glow | Nora kneels and keeps shaking the foil out over the ash, hands fast and mechanical; Eli drops to his knees across from her and pins the foil flat with both hands; she stops, crushes it under one arm and looks up the slope. | (no dialogue, foil rattling, roar) | 0 | none | Dilemma · the book vs her brother |
+| TR-02b | 6s | MS 2S high angle | Nora, Nora Body Fire, HALE Helmet, Eli, Ridge Road | E | night, fire glow | Nora kneels and keeps shaking the foil out over the ash, hands fast and mechanical; Eli drops to his knees across from her and pins the foil flat with both hands; she stops, crushes it under one arm and looks up the slope; behind Eli, about three meters away, the dry grass at the edge of the ash-dusted rock catches and a low line of flame starts creeping toward them. | (no dialogue, foil rattling, roar, grass crackling) | 0 | none | Dilemma · the book vs her brother · the fire closes in |
 | TR-03 | 4s | ECU | Nora, Nora Body Fire, HALE Helmet | E | night, fire glow | Nora stares up into the blank smoke where the horse vanished; nothing to see; she turns to her brother with a long exhale. | (Nora, whisper) "I can't see it. Show me, Eli." | 7 | native: Nora | Change · she asks him to lead |
-| TR-04 | 4s | CU | Nora Body Fire, Eli | E | night, fire glow | Eli holds out his open hand; Nora looks at it, swallows once, and takes it. | (no dialogue) | 0 | none | Trust |
-| TR-05 | 4s | MS axis flip | Eli, Nora Body Fire, Ridge Road | E | night, fire glow, smoke | Opens on the hand grip; Eli turns uphill first, pulling his sister after him. | (Eli) "My turn. Hold on and don't let go." | 8 | native: Eli | Role reversal |
+| TR-04 | 4s | MS axis flip | Eli, Nora, Nora Body Fire, HALE Helmet, Ridge Road | E | night, fire glow, smoke | Eli holds out his open hand and says it fast over the roar; Nora swallows once and takes it; Eli turns uphill first and pulls her after him, the low flames in the grass behind them. | (Eli, 0–2s) "My turn. Hold on and don't let go." | 8 | native: Eli (fenrir) | Trust · role reversal |
+| ~~TR-05~~ | — | cut 2026-10-21 (#21) | — | — | — | Cut: merged into TR-04 (same hand-take twice). | — | — | — | — |
 | TR-06 | 6s | Static low angle | Nora, Nora Body Fire, HALE Helmet, Eli, The Black | E | night, smoke, orange | Hand in hand they run right to left past camera, uphill through the smoke after the grey shape of the horse, Eli in front. | (no dialogue, roar and breath, Theme A in full) | 0 | none | Climax run |
 | TR-06b | 6s | MS handheld-following | Nora, Nora Body Fire, HALE Helmet, Eli, The Black | E | night, thick smoke | Inside thick smoke, visibility a few feet: Eli in front follows hoofprints in the ash; Nora behind holds a fistful of his backpack strap, eyes nearly shut, the foil under her arm. | (no dialogue, wind, coughing, footsteps in ash) | 0 | none | Blind trust · she follows |
 | TR-07 | 4s | WS | Nora, Nora Body Fire, HALE Helmet, Eli, Ridge Road | E | night, smoke, orange | A burning snag topples across the slope; Eli yanks Nora sideways out of its path as it hits the ground in a burst of sparks. | (no dialogue, crack, crash) | 0 | none | RH · he saves her |
@@ -272,11 +274,11 @@ Built in the edit from later clips (trailer-intro structure: conflict 0–3s →
 | HALE helmet | RA-07 | RR-06 → BK-04 → DW-08 (Ray) → DW-09 |
 | Halter | RA-08, EM-03 | BN-09/10 |
 | "Move, Ray" | HK-03, CH-02 | CH-03 (mother said it) |
-| "Hold my hand and don't let go" | BN-09 | TR-05 "My turn" → TR-08 "I'm not asking twice" (Eli saves her) → BK-13 |
+| "Hold my hand and don't let go" | BN-09 | TR-04 "My turn" → TR-08 "I'm not asking twice" (Eli saves her) → BK-13 |
 | "Nobody runs uphill in smoke" | MP-03 | LS-02 (she obeys it) → TR-01 (she argues it) → TR-03/TR-06b (she breaks it on trust) |
 | "Both of us" | BN-04 | BK-05 "fits two" → BK-11 |
 | Radio | CH-04/05 → LH-02/LH-09 (on Ray's chest) | LS-01b (she has none) → DW-04/05 |
-| Cedar Flat / "the town is next" | RA-07, FL-01 | LH-01→08 (B-story) → DW-06 "Not one house" |
+| Cedar Flat / "the town is next" | RA-07, FL-01 | LH-01→08 (B-story) → LH-09 embers over the school (open loop) → DW-06 "Not one house" |
 | Eli's bike | RA-04 ("Bike stays in the barn"), RA-09, EL-03, RR-14 (track) | RR-10 (dumped at the gate) |
 
 ## 19. Retention map (v7, from paper_edit_v7)
@@ -297,10 +299,10 @@ Built in the edit from later clips (trailer-intro structure: conflict 0–3s →
 | 3:05–3:50 | dispatch says no · Ray: "I moved for your mother once" | the choice now costs something and meets resistance |
 | 3:53 | Ridge Road, full voicemail, "That road burns over inside the hour" | new information + a deadline |
 | 4:24 | Cedar Flat: evacuation, "That's the school" | second clock |
-| 4:42–6:12 | bike at the gate · barn fight · roof · escape, the mare balks | conflict peak, new danger |
-| 6:17 | Cedar Flat: fire reaches the town · Ray chooses to stay | B-story turns on the theme |
+| 4:42–6:12 | bike at the gate · barn fight · roof · the lever slips and the beam slams down where his legs were · escape, the mare balks | conflict peak, a near miss, new danger |
+| 6:17 | Cedar Flat: fire reaches the town · Ray chooses to stay · embers over the school behind him | B-story turns on the theme and stays open until DW-06 |
 | 6:44 | trapped; no radio; "It fits one" | all is lost, her choice has a price |
-| 7:20–8:00 | her rule vs his memory · her hands keep doing the book · "Show me, Eli" · blind climb | the turn is a real dilemma |
+| 7:20–8:00 | her rule vs his memory · her hands keep doing the book · grass catches behind Eli · "Show me, Eli" · "My turn" · blind climb | the turn is a real dilemma with the fire creeping in |
 | 8:03 | snag falls, Eli saves her ("I'm not asking twice") | role reversal in action |
 | 8:22–9:15 | burnover; "For a kid on a horse"; Nora: "You brought me back out" | climax + mirror reveal at peak danger |
 | 9:17–10:02 | dawn; thirty days no pay, "Worth it"; "I'll walk behind"; silent ending | the cost and the change; end screen from ~9:45 |
