@@ -110,6 +110,35 @@ Luật lập bảng:
 - **Kết đột ngột** ở nhịp truyện cuối, không câu "cảm ơn đã xem", không báo trước sắp hết.
 - **Tổng thời lượng sau mỗi Act / chương**; cảnh báo nếu video dài < 8 phút.
 
+### 2b. Dựng thẳng vào CapCut bằng MCP `capcut` (user 21/10/2026)
+
+Khi MCP `capcut` đã kết nối (`claude mcp get capcut` → ✓ Connected; cài ở phạm vi user, server Elixir `C:\Users\Admin\capcut-mcp`), Claude **tự dựng bản nháp** theo Bảng dựng thay vì để user kéo từng clip. User mở CapCut chỉ để tinh chỉnh (chuyển cảnh, màu, nhạc) và xuất.
+
+MCP đọc / ghi thẳng file draft JSON của CapCut Desktop (`%LOCALAPPDATA%\CapCut\User Data\Projects\com.lveditor.draft`, đổi bằng biến `CAPCUT_PATH`). Mỗi lần ghi tạo bản `.bak` và ghi nguyên tử. Mọi thời gian tính bằng **mili giây**.
+
+| Việc | Tool MCP |
+|---|---|
+| Xem draft đang có | `list_projects`, `get_project`, `get_timeline`, `read_draft_json` |
+| Tạo bản dựng mới | `create_project` (1920×1080, 24 fps cho phim FlowKit; 1080×1920 cho Shorts) |
+| Đặt clip lên timeline | `add_clip` (`file_path` tuyệt đối, `start_ms`, `duration_ms`, `track_index`) |
+| Cắt đầu / cuối clip | `trim_clip` (điểm vào / ra của nguồn + độ dài trên timeline) |
+| Dời / bỏ clip | `move_clip`, `remove_clip` |
+| Card chữ (tiêu đề, mốc thời gian) | `add_text` — **không** dùng để burn phụ đề (bảng "Lựa chọn user đã chốt") |
+| Âm lượng, hạ nhạc dưới thoại | `set_clip_volume` |
+| Khung, độ trong, blend | `set_clip_transform`, `set_clip_opacity`, `set_clip_blend_mode`, `set_clip_loop` |
+
+Quy trình:
+
+1. **Đóng draft đó trong CapCut** trước khi MCP ghi (CapCut đang mở draft có thể ghi đè bằng bản trong bộ nhớ của nó); mở lại draft sau khi MCP xong để thấy thay đổi.
+2. **Chỉ dựng clip đã duyệt** (Rule 66): bản `output/<slug>/1080/*_1080p_clean.mp4`; bản nháp có thể dùng 720p trong `scenes/`, không đưa 720p vào bản xuất cuối.
+3. `create_project` với tên có số phiên bản (`<slug> edit_v1`, `edit_v2`…) — không ghi đè draft đã giao user.
+4. Đi theo Bảng dựng từ trên xuống: mỗi dòng → `add_clip` (cộng dồn `start_ms`), rồi `trim_clip` theo điểm cắt. Điểm cắt lấy từ mốc từng từ của Whisper (`tools/review_dialogue.py`, Rule 67); clip không thoại theo bảng Rule 49 (4s cắt 0.5s đầu, 6/8/10s cắt 1s đầu); clip có ghi chú cắt riêng trong `scenes_v*.json` (ví dụ nhảy zoom ở ~1s đầu) thì theo ghi chú đó.
+5. Card chữ bằng `add_text` đúng mốc trong Bảng dựng; nhạc (`/fk-gen-music`) bằng `add_clip` lên track riêng rồi `set_clip_volume` hạ dưới thoại.
+6. `get_timeline` → đối chiếu tổng thời lượng và thứ tự với Bảng dựng; ghi danh sách cắt (EDL) vào `output/<slug>/edit/edit_vN_edl.md`.
+7. Báo user mở draft trong CapCut để tinh chỉnh và xuất; sau khi xuất chuẩn hóa âm thanh về −14 LUFS / −1 dBTP (`/fk-sound-design`, không dùng `-16`).
+
+MCP chưa kết nối (phiên cũ chưa khởi động lại, server lỗi) → quay về cách làm cũ: Bảng dựng cho user tự dựng.
+
 ### 3. Công cụ đổi hình (ghi vào cột "Hình đổi ở")
 
 Theo thứ tự ưu tiên (tên trong ngoặc vuông là công thức ở `references/pro-recipes.md`):

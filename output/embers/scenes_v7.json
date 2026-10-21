@@ -2156,11 +2156,43 @@
     ],
     "flow_account": "dinhvulon16",
     "flow_project_id": "3b6be3e0-4a39-46e8-bf4e-aa727e449cd5",
-    "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)",
+    "start_frame_mode": "START FRAME + Omni first-frame i2v, no refs (BN-08a). Frame REGENERATE_IMAGE 737d8313 approved by user 2026-10-21 -> images/sf_bn08a_clean.jpg",
     "created_note": "2026-10-19: scene created from prompts_v7.json (chips resolved to named refs); handoff lessons not applied yet",
     "ghost_note": "2026-10-20 ~20:30-20:58: two ghost ops in a row (req 5cfd5708 op 03831254, req 2c10eee9 op 7d55feca), both FAILED retry 99; skipped pending diagnosis (BN-09 sent as a control). Suspect silent content filter (axe/pry/legs/'no wound' wording) or account limits.",
     "tension_note": "2026-10-21 #21: script splits BN-08 into BN-08a (lever works, beam rises a hand width, Eli drags both legs out) + BN-08b (gloves slip, beam slams onto empty straw, Pulaski trapped; frame 0 = BN-08a last frame as inline ref). New prompts in prompts_v7_act2b.json. Proposed: PATCH this scene to the BN-08a prompt, create a new BN-08b scene after BN-08a is approved. 2026-10-21: user approved; DB scene PATCHed to the BN-08a prompt (clip_id BN-08a). BN-08b scene to be created after BN-08a is approved.",
-    "submit_note_21": "2026-10-21 03:15Z: GENERATE_VIDEO_REFS submitted (batch of 6, dinhvulon16)."
+    "submit_note_21": "2026-10-21 03:15Z: GENERATE_VIDEO_REFS submitted (batch of 6, dinhvulon16).",
+    "start_frame_media_id": "cff559ba-659a-42d8-b9ea-20448df5c5c3",
+    "pending_note": "superseded 2026-10-21 evening: lever redesign dropped by user",
+    "clip_id_now": "BN-08a",
+    "file_1080_clean": "1080/scene_063_BN-08a_fca69fca_1080p_clean.mp4",
+    "approved": "2026-10-21 (user: clip in 1080/; its last frame = images/bn08a_last_1080.jpg, media d282c777)"
+  },
+  "BN-08b": {
+    "scene_id": "746c11c5-6353-4e09-973b-e80e89bff758",
+    "act": "",
+    "duration": 10,
+    "flow_account": "dinhvulon16",
+    "flow_project_id": "3b6be3e0-4a39-46e8-bf4e-aa727e449cd5",
+    "start_frame_mode": "fk-storyboard: opening frame = panel 1 of images/bn08b_storyboard10_v6_clean.jpg (media 2a7e48fd), storyboard ref media 68bb1491",
+    "created_note": "2026-10-21: new scene (display_order 62, same as BN-08a), user: Nora on Eli's side, no lever",
+    "risk_note": "beam in the start frame is plain brown wood; BN-08a beam is charred black (user kept the frame)",
+    "submit_note": "2026-10-21 ~20:30 GENERATE_VIDEO request b0140d12",
+    "video_media_id": "0f158864-e257-4e6b-9b5c-27fe24f6e36b",
+    "video_file": "scenes/scene_063b_BN-08b_746c11c5_10s.mp4",
+    "start_frame_media_id": "5092953b-19db-4749-b407-8c42c8cf5147",
+    "start_frame_file": "images/sf_bn08b_beam_clean.jpg",
+    "ai_score": 7.3,
+    "approved": "2026-10-21",
+    "approve_note": "user approved the 10s storyboard r2v (fk-storyboard, cinematic); one cut at 7s",
+    "superseded_video_media_id": "7abaf51c-ad60-4992-a541-ae2b0a31491c",
+    "superseded_file": "scenes/scene_063b_BN-08b_746c11c5.mp4 (v1, 6.8)",
+    "ghost_note": "2026-10-21 REGENERATE_VIDEO 9e96b8af stuck 10 min, marked FAILED; retry 8814ba43 done in 75 s",
+    "upscaled": true,
+    "upscale_media_id": "e777799d-ce4c-40d4-9414-33f1ebdf5f63",
+    "file_1080_clean": "1080/scene_063b_BN-08b_746c11c5_10s_1080p_clean.mp4",
+    "redo_note": "2026-10-21: user merged the close shot (legs out) into BN-08b; 6s, wide 0-4s + hard cut to floor CU 4-6s; v2 (4s) kept as superseded",
+    "v2_video_media_id": "e777799d-ce4c-40d4-9414-33f1ebdf5f63",
+    "v2_file_1080_clean": "1080/scene_063b_BN-08b_746c11c5_1080p_clean.mp4"
   },
   "BN-09": {
     "scene_id": "49c328ff-3782-4d1d-9932-f687418f7cc6",
@@ -2180,7 +2212,9 @@
     "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)",
     "created_note": "2026-10-19: scene created from prompts_v7.json (chips resolved to named refs); handoff lessons not applied yet",
     "v1_note": "v1 2026-10-20: request 95b2e36d op a02d831d media ada9f92f ~7.8 (Eli's backpack missing, halter already on, Nora points instead of holding out her hand; Whisper 100% words, TIMING flag first line 0.0-2.1s); also served as the account-health control after BN-08 ghosts (account OK). File deleted; redo with the start-frame method.",
-    "leg_note": "2026-10-21 #21 leg lock: Eli left leg hurt, weight on right. DB video_prompt PATCHed (user approved)."
+    "leg_note": "2026-10-21 #21 leg lock: Eli left leg hurt, weight on right. DB video_prompt PATCHed (user approved).",
+    "start_frame_note_21": "2026-10-21 v4 frame 9e7a66e7 (images/sf_bn09_v4.jpg), refs BN-08b Last + Nora/Body/Helmet/Eli; ~7.5: halter missing",
+    "prompt_note": "2026-10-21: start frame v6 approved; video prompt matched to v6; cinematic style block"
   },
   "BN-11": {
     "scene_id": "19fa5343-3651-4712-b7e4-31b4797585be",
@@ -2282,7 +2316,8 @@
     "flow_account": "dinhvulon16",
     "flow_project_id": "3b6be3e0-4a39-46e8-bf4e-aa727e449cd5",
     "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)",
-    "created_note": "2026-10-19: scene created from prompts_v7.json (chips resolved to named refs); handoff lessons not applied yet"
+    "created_note": "2026-10-19: scene created from prompts_v7.json (chips resolved to named refs); handoff lessons not applied yet",
+    "prompt_note": "2026-10-21: rewritten with /fk-film + /fk-storyboard, cinematic material; user approved; DB PATCHed"
   },
   "ES-02": {
     "scene_id": "019f7e0c-b37b-46da-abe6-4c06e51554da",
@@ -2299,7 +2334,8 @@
     "flow_account": "dinhvulon16",
     "flow_project_id": "3b6be3e0-4a39-46e8-bf4e-aa727e449cd5",
     "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)",
-    "created_note": "2026-10-19: scene created from prompts_v7.json (chips resolved to named refs); handoff lessons not applied yet"
+    "created_note": "2026-10-19: scene created from prompts_v7.json (chips resolved to named refs); handoff lessons not applied yet",
+    "prompt_note": "2026-10-21: rewritten with /fk-film + /fk-storyboard, cinematic material; user approved; DB PATCHed"
   },
   "ES-03": {
     "scene_id": "cd9776b4-585a-4c22-9b40-38c201f63b09",
@@ -2316,7 +2352,9 @@
     "flow_account": "dinhvulon16",
     "flow_project_id": "3b6be3e0-4a39-46e8-bf4e-aa727e449cd5",
     "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)",
-    "created_note": "2026-10-19: scene created from prompts_v7.json (chips resolved to named refs); handoff lessons not applied yet"
+    "created_note": "2026-10-19: scene created from prompts_v7.json (chips resolved to named refs); handoff lessons not applied yet",
+    "prompt_note": "2026-10-21: rewritten with /fk-film + /fk-storyboard, cinematic material; user approved; DB PATCHed",
+    "pending_note": "needs entities ['ES-03 P1', 'ES-03 Storyboard'] (storyboard) before generation"
   },
   "ES-04": {
     "scene_id": "8a05f7e2-872e-4fb8-80e4-4cec3ac0b805",
@@ -2329,7 +2367,8 @@
     "flow_account": "dinhvulon16",
     "flow_project_id": "3b6be3e0-4a39-46e8-bf4e-aa727e449cd5",
     "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)",
-    "created_note": "2026-10-19: scene created from prompts_v7.json (chips resolved to named refs); handoff lessons not applied yet"
+    "created_note": "2026-10-19: scene created from prompts_v7.json (chips resolved to named refs); handoff lessons not applied yet",
+    "prompt_note": "2026-10-21: rewritten with /fk-film + /fk-storyboard, cinematic material; user approved; DB PATCHed"
   },
   "ES-05": {
     "scene_id": "522f7b24-3188-4dbd-a595-a6ba114bf2dd",
@@ -2366,7 +2405,8 @@
     "flow_account": "dinhvulon16",
     "flow_project_id": "3b6be3e0-4a39-46e8-bf4e-aa727e449cd5",
     "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)",
-    "created_note": "2026-10-19: scene created from prompts_v7.json (chips resolved to named refs); handoff lessons not applied yet"
+    "created_note": "2026-10-19: scene created from prompts_v7.json (chips resolved to named refs); handoff lessons not applied yet",
+    "prompt_note": "2026-10-21: rewritten with /fk-film + /fk-storyboard, cinematic material; DB PATCHed (user: patch all remaining)"
   },
   "LH-06": {
     "scene_id": "795d4209-7c95-44da-a008-82d420a87af4",
@@ -2379,7 +2419,8 @@
     "flow_account": "dinhvulon16",
     "flow_project_id": "3b6be3e0-4a39-46e8-bf4e-aa727e449cd5",
     "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)",
-    "created_note": "2026-10-19: scene created from prompts_v7.json (chips resolved to named refs); handoff lessons not applied yet"
+    "created_note": "2026-10-19: scene created from prompts_v7.json (chips resolved to named refs); handoff lessons not applied yet",
+    "prompt_note": "2026-10-21: rewritten with /fk-film + /fk-storyboard, cinematic material; DB PATCHed (user: patch all remaining)"
   },
   "LH-07": {
     "scene_id": "9d228d87-2aa8-4b32-beb7-9678ea0f7f3b",
@@ -2391,7 +2432,8 @@
     "flow_account": "dinhvulon16",
     "flow_project_id": "3b6be3e0-4a39-46e8-bf4e-aa727e449cd5",
     "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)",
-    "created_note": "2026-10-19: scene created from prompts_v7.json (chips resolved to named refs); handoff lessons not applied yet"
+    "created_note": "2026-10-19: scene created from prompts_v7.json (chips resolved to named refs); handoff lessons not applied yet",
+    "prompt_note": "2026-10-21: rewritten with /fk-film + /fk-storyboard, cinematic material; DB PATCHed (user: patch all remaining)"
   },
   "LH-08": {
     "scene_id": "cf3c46ae-1c5f-40fc-8757-2256a630852a",
@@ -2404,7 +2446,8 @@
     "flow_account": "dinhvulon16",
     "flow_project_id": "3b6be3e0-4a39-46e8-bf4e-aa727e449cd5",
     "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)",
-    "created_note": "2026-10-19: scene created from prompts_v7.json (chips resolved to named refs); handoff lessons not applied yet"
+    "created_note": "2026-10-19: scene created from prompts_v7.json (chips resolved to named refs); handoff lessons not applied yet",
+    "prompt_note": "2026-10-21: rewritten with /fk-film + /fk-storyboard, cinematic material; DB PATCHed (user: patch all remaining)"
   },
   "LH-09": {
     "scene_id": "039b294a-ff9e-4ce9-ae70-373cb6a451ce",
@@ -2437,7 +2480,8 @@
     "flow_account": "dinhvulon16",
     "flow_project_id": "3b6be3e0-4a39-46e8-bf4e-aa727e449cd5",
     "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)",
-    "created_note": "2026-10-19: scene created from prompts_v7.json (chips resolved to named refs); handoff lessons not applied yet"
+    "created_note": "2026-10-19: scene created from prompts_v7.json (chips resolved to named refs); handoff lessons not applied yet",
+    "prompt_note": "2026-10-21: rewritten with /fk-film + /fk-storyboard, cinematic material; DB PATCHed (user: patch all remaining)"
   },
   "LS-01b": {
     "scene_id": "e996ada6-2279-4945-8222-3211272ee4e4",
@@ -2450,7 +2494,8 @@
     "flow_account": "dinhvulon16",
     "flow_project_id": "3b6be3e0-4a39-46e8-bf4e-aa727e449cd5",
     "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)",
-    "created_note": "2026-10-19: scene created from prompts_v7.json (chips resolved to named refs); handoff lessons not applied yet"
+    "created_note": "2026-10-19: scene created from prompts_v7.json (chips resolved to named refs); handoff lessons not applied yet",
+    "prompt_note": "2026-10-21: rewritten with /fk-film + /fk-storyboard, cinematic material; DB PATCHed (user: patch all remaining)"
   },
   "LS-02": {
     "scene_id": "ea1dcbff-a83a-4b76-a65e-fefc1aeb0962",
@@ -2465,7 +2510,8 @@
     "flow_account": "dinhvulon16",
     "flow_project_id": "3b6be3e0-4a39-46e8-bf4e-aa727e449cd5",
     "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)",
-    "created_note": "2026-10-19: scene created from prompts_v7.json (chips resolved to named refs); handoff lessons not applied yet"
+    "created_note": "2026-10-19: scene created from prompts_v7.json (chips resolved to named refs); handoff lessons not applied yet",
+    "prompt_note": "2026-10-21: rewritten with /fk-film + /fk-storyboard, cinematic material; DB PATCHed (user: patch all remaining)"
   },
   "LS-03": {
     "scene_id": "8edf6e5e-e51b-4c5c-929e-b04decac4e19",
@@ -2479,7 +2525,8 @@
     "flow_account": "dinhvulon16",
     "flow_project_id": "3b6be3e0-4a39-46e8-bf4e-aa727e449cd5",
     "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)",
-    "created_note": "2026-10-19: scene created from prompts_v7.json (chips resolved to named refs); handoff lessons not applied yet"
+    "created_note": "2026-10-19: scene created from prompts_v7.json (chips resolved to named refs); handoff lessons not applied yet",
+    "prompt_note": "2026-10-21: rewritten with /fk-film + /fk-storyboard, cinematic material; DB PATCHed (user: patch all remaining)"
   },
   "LS-04": {
     "scene_id": "688433d8-5d9e-4b42-9467-6ef8407ca07f",
@@ -2494,7 +2541,8 @@
     "flow_account": "dinhvulon16",
     "flow_project_id": "3b6be3e0-4a39-46e8-bf4e-aa727e449cd5",
     "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)",
-    "created_note": "2026-10-19: scene created from prompts_v7.json (chips resolved to named refs); handoff lessons not applied yet"
+    "created_note": "2026-10-19: scene created from prompts_v7.json (chips resolved to named refs); handoff lessons not applied yet",
+    "prompt_note": "2026-10-21: rewritten with /fk-film + /fk-storyboard, cinematic material; DB PATCHed (user: patch all remaining)"
   },
   "LS-05a": {
     "scene_id": "06e4334a-78e4-4dba-b9b1-5e08415aa413",
@@ -2508,7 +2556,8 @@
     "flow_account": "dinhvulon16",
     "flow_project_id": "3b6be3e0-4a39-46e8-bf4e-aa727e449cd5",
     "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)",
-    "created_note": "2026-10-19: scene created from prompts_v7.json (chips resolved to named refs); handoff lessons not applied yet"
+    "created_note": "2026-10-19: scene created from prompts_v7.json (chips resolved to named refs); handoff lessons not applied yet",
+    "prompt_note": "2026-10-21: rewritten with /fk-film + /fk-storyboard, cinematic material; DB PATCHed (user: patch all remaining)"
   },
   "LS-05b": {
     "scene_id": "132a93aa-a4f2-459a-8f9f-a888504df2c2",
@@ -2522,7 +2571,8 @@
     "flow_account": "dinhvulon16",
     "flow_project_id": "3b6be3e0-4a39-46e8-bf4e-aa727e449cd5",
     "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)",
-    "created_note": "2026-10-19: scene created from prompts_v7.json (chips resolved to named refs); handoff lessons not applied yet"
+    "created_note": "2026-10-19: scene created from prompts_v7.json (chips resolved to named refs); handoff lessons not applied yet",
+    "prompt_note": "2026-10-21: rewritten with /fk-film + /fk-storyboard, cinematic material; DB PATCHed (user: patch all remaining)"
   },
   "LS-06": {
     "scene_id": "8db9b69f-5e08-4b28-a66f-9d40c6388d74",
@@ -2535,7 +2585,8 @@
     "flow_account": "dinhvulon16",
     "flow_project_id": "3b6be3e0-4a39-46e8-bf4e-aa727e449cd5",
     "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)",
-    "created_note": "2026-10-19: scene created from prompts_v7.json (chips resolved to named refs); handoff lessons not applied yet"
+    "created_note": "2026-10-19: scene created from prompts_v7.json (chips resolved to named refs); handoff lessons not applied yet",
+    "prompt_note": "2026-10-21: rewritten with /fk-film + /fk-storyboard, cinematic material; DB PATCHed (user: patch all remaining)"
   },
   "LS-07": {
     "scene_id": "3cec72f4-f271-42a0-9fe7-19fac90e341f",
@@ -2548,7 +2599,8 @@
     "flow_account": "dinhvulon16",
     "flow_project_id": "3b6be3e0-4a39-46e8-bf4e-aa727e449cd5",
     "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)",
-    "created_note": "2026-10-19: scene created from prompts_v7.json (chips resolved to named refs); handoff lessons not applied yet"
+    "created_note": "2026-10-19: scene created from prompts_v7.json (chips resolved to named refs); handoff lessons not applied yet",
+    "prompt_note": "2026-10-21: rewritten with /fk-film + /fk-storyboard, cinematic material; DB PATCHed (user: patch all remaining)"
   },
   "TR-01": {
     "scene_id": "6fb760ac-9b9c-4c73-86e8-8b29e69d1079",
@@ -2564,7 +2616,8 @@
     "flow_account": "dinhvulon16",
     "flow_project_id": "3b6be3e0-4a39-46e8-bf4e-aa727e449cd5",
     "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)",
-    "created_note": "2026-10-19: scene created from prompts_v7.json (chips resolved to named refs); handoff lessons not applied yet"
+    "created_note": "2026-10-19: scene created from prompts_v7.json (chips resolved to named refs); handoff lessons not applied yet",
+    "prompt_note": "2026-10-21: rewritten with /fk-film + /fk-storyboard, cinematic material; DB PATCHed (user: patch all remaining)"
   },
   "TR-02": {
     "scene_id": "38f302b0-498d-4e0f-b686-5ee200bf0891",
@@ -2577,7 +2630,8 @@
     "flow_account": "dinhvulon16",
     "flow_project_id": "3b6be3e0-4a39-46e8-bf4e-aa727e449cd5",
     "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)",
-    "created_note": "2026-10-19: scene created from prompts_v7.json (chips resolved to named refs); handoff lessons not applied yet"
+    "created_note": "2026-10-19: scene created from prompts_v7.json (chips resolved to named refs); handoff lessons not applied yet",
+    "prompt_note": "2026-10-21: rewritten with /fk-film + /fk-storyboard, cinematic material; DB PATCHed (user: patch all remaining)"
   },
   "TR-02b": {
     "scene_id": "8c6e40a9-c5e2-46a2-8561-6d0cb21dd51d",
@@ -2598,7 +2652,8 @@
     "submit_note_21": "2026-10-21 03:15Z: GENERATE_VIDEO_REFS submitted (batch of 6, dinhvulon16).",
     "approved": false,
     "approve_note": "approved 2026-10-21 (v1: foil pinned; flames already lit at frame 0 (minor))",
-    "review_redo": "2026-10-21: user — TR-02b trải lều vô nghĩa, làm lại theo quy trình thật; cần nói to hết; áo Eli sai (olive). Chờ duyệt sinh lại."
+    "review_redo": "2026-10-21: user — TR-02b trải lều vô nghĩa, làm lại theo quy trình thật; cần nói to hết; áo Eli sai (olive). Chờ duyệt sinh lại.",
+    "prompt_note": "2026-10-21: rewritten with /fk-film + /fk-storyboard, cinematic material; DB PATCHed (user: patch all remaining)"
   },
   "TR-03": {
     "scene_id": "ec671432-b431-46e2-8949-30daac531cda",
@@ -2612,7 +2667,8 @@
     "flow_account": "dinhvulon16",
     "flow_project_id": "3b6be3e0-4a39-46e8-bf4e-aa727e449cd5",
     "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)",
-    "created_note": "2026-10-19: scene created from prompts_v7.json (chips resolved to named refs); handoff lessons not applied yet"
+    "created_note": "2026-10-19: scene created from prompts_v7.json (chips resolved to named refs); handoff lessons not applied yet",
+    "prompt_note": "2026-10-21: rewritten with /fk-film + /fk-storyboard, cinematic material; DB PATCHed (user: patch all remaining)"
   },
   "TR-04": {
     "scene_id": "ba88171a-d522-4164-948e-4fc7fc61c0cb",
@@ -2634,7 +2690,9 @@
     "design_note_21": "2026-10-21: design shout lock (bai hoc 101/102: delivery+state+timeline+audio) sua SAU khi da submit; DB chua PATCH, clip dang sinh dung ban cu",
     "approved": false,
     "approve_note": "approved 2026-10-21 (v1: shout 155 Hz, 0-2.06s, axis flip correct)",
-    "review_redo": "2026-10-21: user — TR-02b trải lều vô nghĩa, làm lại theo quy trình thật; cần nói to hết; áo Eli sai (olive). Chờ duyệt sinh lại."
+    "review_redo": "2026-10-21: user — TR-02b trải lều vô nghĩa, làm lại theo quy trình thật; cần nói to hết; áo Eli sai (olive). Chờ duyệt sinh lại.",
+    "prompt_note": "2026-10-21: rewritten with /fk-film + /fk-storyboard, cinematic material; DB PATCHed (user: patch all remaining)",
+    "pending_note": "storyboard entities needed before generation: ['TR-04 P1', 'TR-04 Storyboard']"
   },
   "TR-05": {
     "scene_id": "e49435c5-124c-4277-ad1e-fea4ce7fe0f1",
@@ -2665,7 +2723,8 @@
     "flow_account": "dinhvulon16",
     "flow_project_id": "3b6be3e0-4a39-46e8-bf4e-aa727e449cd5",
     "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)",
-    "created_note": "2026-10-19: scene created from prompts_v7.json (chips resolved to named refs); handoff lessons not applied yet"
+    "created_note": "2026-10-19: scene created from prompts_v7.json (chips resolved to named refs); handoff lessons not applied yet",
+    "prompt_note": "2026-10-21: rewritten with /fk-film + /fk-storyboard, cinematic material; DB PATCHed (user: patch all remaining)"
   },
   "TR-06b": {
     "scene_id": "301d93b0-e007-42f4-92e7-1a5af81fccf1",
@@ -2681,7 +2740,8 @@
     "flow_account": "dinhvulon16",
     "flow_project_id": "3b6be3e0-4a39-46e8-bf4e-aa727e449cd5",
     "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)",
-    "created_note": "2026-10-19: scene created from prompts_v7.json (chips resolved to named refs); handoff lessons not applied yet"
+    "created_note": "2026-10-19: scene created from prompts_v7.json (chips resolved to named refs); handoff lessons not applied yet",
+    "prompt_note": "2026-10-21: rewritten with /fk-film + /fk-storyboard, cinematic material; DB PATCHed (user: patch all remaining)"
   },
   "TR-07": {
     "scene_id": "cbbf568b-4a47-42ca-993b-653bc4225f34",
@@ -2697,7 +2757,9 @@
     "flow_account": "dinhvulon16",
     "flow_project_id": "3b6be3e0-4a39-46e8-bf4e-aa727e449cd5",
     "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)",
-    "created_note": "2026-10-19: scene created from prompts_v7.json (chips resolved to named refs); handoff lessons not applied yet"
+    "created_note": "2026-10-19: scene created from prompts_v7.json (chips resolved to named refs); handoff lessons not applied yet",
+    "prompt_note": "2026-10-21: rewritten with /fk-film + /fk-storyboard, cinematic material; DB PATCHed (user: patch all remaining)",
+    "pending_note": "storyboard entities needed before generation: ['TR-07 P1', 'TR-07 Storyboard']"
   },
   "TR-08": {
     "scene_id": "876c7396-6753-42b0-aecd-caf254c19822",
@@ -2713,7 +2775,8 @@
     "flow_account": "dinhvulon16",
     "flow_project_id": "3b6be3e0-4a39-46e8-bf4e-aa727e449cd5",
     "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)",
-    "created_note": "2026-10-19: scene created from prompts_v7.json (chips resolved to named refs); handoff lessons not applied yet"
+    "created_note": "2026-10-19: scene created from prompts_v7.json (chips resolved to named refs); handoff lessons not applied yet",
+    "prompt_note": "2026-10-21: rewritten with /fk-film + /fk-storyboard, cinematic material; DB PATCHed (user: patch all remaining)"
   },
   "BK-01": {
     "scene_id": "982e23b8-e264-484d-8146-53c3eb125bd5",
@@ -2729,7 +2792,8 @@
     "flow_account": "dinhvulon16",
     "flow_project_id": "3b6be3e0-4a39-46e8-bf4e-aa727e449cd5",
     "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)",
-    "created_note": "2026-10-19: scene created from prompts_v7.json (chips resolved to named refs); handoff lessons not applied yet"
+    "created_note": "2026-10-19: scene created from prompts_v7.json (chips resolved to named refs); handoff lessons not applied yet",
+    "prompt_note": "2026-10-21: rewritten with /fk-film + /fk-storyboard, cinematic material; DB PATCHed (user: patch all remaining)"
   },
   "BK-02": {
     "scene_id": "c405434c-8220-490f-80f3-34de0083f6f7",
@@ -2744,7 +2808,8 @@
     "flow_account": "dinhvulon16",
     "flow_project_id": "3b6be3e0-4a39-46e8-bf4e-aa727e449cd5",
     "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)",
-    "created_note": "2026-10-19: scene created from prompts_v7.json (chips resolved to named refs); handoff lessons not applied yet"
+    "created_note": "2026-10-19: scene created from prompts_v7.json (chips resolved to named refs); handoff lessons not applied yet",
+    "prompt_note": "2026-10-21: rewritten with /fk-film + /fk-storyboard, cinematic material; DB PATCHed (user: patch all remaining)"
   },
   "BK-03": {
     "scene_id": "d110dcec-dccb-40b0-9c6c-436eb2c641b9",
@@ -2760,7 +2825,9 @@
     "flow_account": "dinhvulon16",
     "flow_project_id": "3b6be3e0-4a39-46e8-bf4e-aa727e449cd5",
     "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)",
-    "created_note": "2026-10-19: scene created from prompts_v7.json (chips resolved to named refs); handoff lessons not applied yet"
+    "created_note": "2026-10-19: scene created from prompts_v7.json (chips resolved to named refs); handoff lessons not applied yet",
+    "prompt_note": "2026-10-21: rewritten with /fk-film + /fk-storyboard, cinematic material; DB PATCHed (user: patch all remaining)",
+    "pending_note": "storyboard entities needed before generation: ['BK-03 P1', 'BK-03 Storyboard']"
   },
   "BK-04": {
     "scene_id": "0fac1b6c-c8a0-4a9a-8941-8193c8a3eb4e",
@@ -2776,7 +2843,8 @@
     "flow_account": "dinhvulon16",
     "flow_project_id": "3b6be3e0-4a39-46e8-bf4e-aa727e449cd5",
     "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)",
-    "created_note": "2026-10-19: scene created from prompts_v7.json (chips resolved to named refs); handoff lessons not applied yet"
+    "created_note": "2026-10-19: scene created from prompts_v7.json (chips resolved to named refs); handoff lessons not applied yet",
+    "prompt_note": "2026-10-21: rewritten with /fk-film + /fk-storyboard, cinematic material; DB PATCHed (user: patch all remaining)"
   },
   "BK-05": {
     "scene_id": "cb82a6c7-7e24-48ec-9349-e475987fc77b",
@@ -2790,7 +2858,8 @@
     "flow_account": "dinhvulon16",
     "flow_project_id": "3b6be3e0-4a39-46e8-bf4e-aa727e449cd5",
     "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)",
-    "created_note": "2026-10-19: scene created from prompts_v7.json (chips resolved to named refs); handoff lessons not applied yet"
+    "created_note": "2026-10-19: scene created from prompts_v7.json (chips resolved to named refs); handoff lessons not applied yet",
+    "prompt_note": "2026-10-21: rewritten with /fk-film + /fk-storyboard, cinematic material; DB PATCHed (user: patch all remaining)"
   },
   "BK-14": {
     "scene_id": "a225e5e1-ffd0-49b4-b5b9-406ebb55a8ae",
@@ -2802,7 +2871,8 @@
     "flow_account": "dinhvulon16",
     "flow_project_id": "3b6be3e0-4a39-46e8-bf4e-aa727e449cd5",
     "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)",
-    "created_note": "2026-10-19: scene created from prompts_v7.json (chips resolved to named refs); handoff lessons not applied yet"
+    "created_note": "2026-10-19: scene created from prompts_v7.json (chips resolved to named refs); handoff lessons not applied yet",
+    "prompt_note": "2026-10-21: rewritten with /fk-film + /fk-storyboard, cinematic material; DB PATCHed (user: patch all remaining)"
   },
   "BK-06": {
     "scene_id": "1de510ab-a252-48c3-b559-7743fd435b8f",
@@ -2815,7 +2885,8 @@
     "flow_account": "dinhvulon16",
     "flow_project_id": "3b6be3e0-4a39-46e8-bf4e-aa727e449cd5",
     "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)",
-    "created_note": "2026-10-19: scene created from prompts_v7.json (chips resolved to named refs); handoff lessons not applied yet"
+    "created_note": "2026-10-19: scene created from prompts_v7.json (chips resolved to named refs); handoff lessons not applied yet",
+    "prompt_note": "2026-10-21: rewritten with /fk-film + /fk-storyboard, cinematic material; DB PATCHed (user: patch all remaining)"
   },
   "BK-07": {
     "scene_id": "42d3c55f-c1a7-4f0a-9a5d-b68d1292dec6",
@@ -2828,7 +2899,8 @@
     "flow_account": "dinhvulon16",
     "flow_project_id": "3b6be3e0-4a39-46e8-bf4e-aa727e449cd5",
     "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)",
-    "created_note": "2026-10-19: scene created from prompts_v7.json (chips resolved to named refs); handoff lessons not applied yet"
+    "created_note": "2026-10-19: scene created from prompts_v7.json (chips resolved to named refs); handoff lessons not applied yet",
+    "prompt_note": "2026-10-21: rewritten with /fk-film + /fk-storyboard, cinematic material; DB PATCHed (user: patch all remaining)"
   },
   "BK-15": {
     "scene_id": "d8c41355-9a95-4ba0-9744-7caecd4c7c8e",
@@ -2840,7 +2912,8 @@
     "flow_account": "dinhvulon16",
     "flow_project_id": "3b6be3e0-4a39-46e8-bf4e-aa727e449cd5",
     "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)",
-    "created_note": "2026-10-19: scene created from prompts_v7.json (chips resolved to named refs); handoff lessons not applied yet"
+    "created_note": "2026-10-19: scene created from prompts_v7.json (chips resolved to named refs); handoff lessons not applied yet",
+    "prompt_note": "2026-10-21: rewritten with /fk-film + /fk-storyboard, cinematic material; DB PATCHed (user: patch all remaining)"
   },
   "BK-11": {
     "scene_id": "c564c2db-7758-4df4-8eff-6fac71475af4",
@@ -2855,7 +2928,8 @@
     "flow_account": "dinhvulon16",
     "flow_project_id": "3b6be3e0-4a39-46e8-bf4e-aa727e449cd5",
     "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)",
-    "created_note": "2026-10-19: scene created from prompts_v7.json (chips resolved to named refs); handoff lessons not applied yet"
+    "created_note": "2026-10-19: scene created from prompts_v7.json (chips resolved to named refs); handoff lessons not applied yet",
+    "prompt_note": "2026-10-21: rewritten with /fk-film + /fk-storyboard, cinematic material; DB PATCHed (user: patch all remaining)"
   },
   "BK-12": {
     "scene_id": "57274609-0972-4fe5-8e6f-965d364ca06b",
@@ -2868,7 +2942,8 @@
     "flow_account": "dinhvulon16",
     "flow_project_id": "3b6be3e0-4a39-46e8-bf4e-aa727e449cd5",
     "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)",
-    "created_note": "2026-10-19: scene created from prompts_v7.json (chips resolved to named refs); handoff lessons not applied yet"
+    "created_note": "2026-10-19: scene created from prompts_v7.json (chips resolved to named refs); handoff lessons not applied yet",
+    "prompt_note": "2026-10-21: rewritten with /fk-film + /fk-storyboard, cinematic material; DB PATCHed (user: patch all remaining)"
   },
   "BK-08": {
     "scene_id": "b2f826e3-fe78-4608-be52-eda6c67651a8",
@@ -2883,7 +2958,8 @@
     "flow_account": "dinhvulon16",
     "flow_project_id": "3b6be3e0-4a39-46e8-bf4e-aa727e449cd5",
     "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)",
-    "created_note": "2026-10-19: scene created from prompts_v7.json (chips resolved to named refs); handoff lessons not applied yet"
+    "created_note": "2026-10-19: scene created from prompts_v7.json (chips resolved to named refs); handoff lessons not applied yet",
+    "prompt_note": "2026-10-21: rewritten with /fk-film + /fk-storyboard, cinematic material; DB PATCHed (user: patch all remaining)"
   },
   "BK-09": {
     "scene_id": "bdbebe2e-a9fa-40c6-81d0-562b44873edc",
@@ -2897,7 +2973,8 @@
     "flow_account": "dinhvulon16",
     "flow_project_id": "3b6be3e0-4a39-46e8-bf4e-aa727e449cd5",
     "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)",
-    "created_note": "2026-10-19: scene created from prompts_v7.json (chips resolved to named refs); handoff lessons not applied yet"
+    "created_note": "2026-10-19: scene created from prompts_v7.json (chips resolved to named refs); handoff lessons not applied yet",
+    "prompt_note": "2026-10-21: rewritten with /fk-film + /fk-storyboard, cinematic material; DB PATCHed (user: patch all remaining)"
   },
   "BK-13": {
     "scene_id": "5d61f4ce-7990-4438-8534-e65dc70ade3c",
@@ -2914,7 +2991,8 @@
     "flow_account": "dinhvulon16",
     "flow_project_id": "3b6be3e0-4a39-46e8-bf4e-aa727e449cd5",
     "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)",
-    "created_note": "2026-10-19: scene created from prompts_v7.json (chips resolved to named refs); handoff lessons not applied yet"
+    "created_note": "2026-10-19: scene created from prompts_v7.json (chips resolved to named refs); handoff lessons not applied yet",
+    "prompt_note": "2026-10-21: rewritten with /fk-film + /fk-storyboard, cinematic material; DB PATCHed (user: patch all remaining)"
   },
   "DW-01": {
     "scene_id": "60e63daf-fd48-45c3-b906-cfa5d69e6168",
@@ -2927,7 +3005,8 @@
     "flow_account": "dinhvulon16",
     "flow_project_id": "3b6be3e0-4a39-46e8-bf4e-aa727e449cd5",
     "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)",
-    "created_note": "2026-10-19: scene created from prompts_v7.json (chips resolved to named refs); handoff lessons not applied yet"
+    "created_note": "2026-10-19: scene created from prompts_v7.json (chips resolved to named refs); handoff lessons not applied yet",
+    "prompt_note": "2026-10-21: rewritten with /fk-film + /fk-storyboard, cinematic material; DB PATCHed (user: patch all remaining)"
   },
   "DW-03": {
     "scene_id": "4edbc610-9b78-456f-a1f2-2d31e1de35cb",
@@ -2941,7 +3020,8 @@
     "flow_account": "dinhvulon16",
     "flow_project_id": "3b6be3e0-4a39-46e8-bf4e-aa727e449cd5",
     "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)",
-    "created_note": "2026-10-19: scene created from prompts_v7.json (chips resolved to named refs); handoff lessons not applied yet"
+    "created_note": "2026-10-19: scene created from prompts_v7.json (chips resolved to named refs); handoff lessons not applied yet",
+    "prompt_note": "2026-10-21: rewritten with /fk-film + /fk-storyboard, cinematic material; DB PATCHed (user: patch all remaining)"
   },
   "DW-04": {
     "scene_id": "7b90a993-36e2-43a9-a23a-52bc2861774b",
@@ -2954,7 +3034,8 @@
     "flow_account": "dinhvulon16",
     "flow_project_id": "3b6be3e0-4a39-46e8-bf4e-aa727e449cd5",
     "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)",
-    "created_note": "2026-10-19: scene created from prompts_v7.json (chips resolved to named refs); handoff lessons not applied yet"
+    "created_note": "2026-10-19: scene created from prompts_v7.json (chips resolved to named refs); handoff lessons not applied yet",
+    "prompt_note": "2026-10-21: rewritten with /fk-film + /fk-storyboard, cinematic material; DB PATCHed (user: patch all remaining)"
   },
   "DW-05": {
     "scene_id": "7696c58e-d6d0-4f6e-b970-37b0fcc6c499",
@@ -2968,7 +3049,8 @@
     "flow_account": "dinhvulon16",
     "flow_project_id": "3b6be3e0-4a39-46e8-bf4e-aa727e449cd5",
     "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)",
-    "created_note": "2026-10-19: scene created from prompts_v7.json (chips resolved to named refs); handoff lessons not applied yet"
+    "created_note": "2026-10-19: scene created from prompts_v7.json (chips resolved to named refs); handoff lessons not applied yet",
+    "prompt_note": "2026-10-21: rewritten with /fk-film + /fk-storyboard, cinematic material; DB PATCHed (user: patch all remaining)"
   },
   "DW-06": {
     "scene_id": "5ba3119b-caa4-4342-9d80-116dfd8b2b31",
@@ -2980,7 +3062,8 @@
     "flow_account": "dinhvulon16",
     "flow_project_id": "3b6be3e0-4a39-46e8-bf4e-aa727e449cd5",
     "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)",
-    "created_note": "2026-10-19: scene created from prompts_v7.json (chips resolved to named refs); handoff lessons not applied yet"
+    "created_note": "2026-10-19: scene created from prompts_v7.json (chips resolved to named refs); handoff lessons not applied yet",
+    "prompt_note": "2026-10-21: rewritten with /fk-film + /fk-storyboard, cinematic material; DB PATCHed (user: patch all remaining)"
   },
   "DW-07": {
     "scene_id": "959868ec-e3bf-4c27-84fc-81fa57aa6fc1",
@@ -2995,7 +3078,8 @@
     "flow_account": "dinhvulon16",
     "flow_project_id": "3b6be3e0-4a39-46e8-bf4e-aa727e449cd5",
     "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)",
-    "created_note": "2026-10-19: scene created from prompts_v7.json (chips resolved to named refs); handoff lessons not applied yet"
+    "created_note": "2026-10-19: scene created from prompts_v7.json (chips resolved to named refs); handoff lessons not applied yet",
+    "prompt_note": "2026-10-21: rewritten with /fk-film + /fk-storyboard, cinematic material; DB PATCHed (user: patch all remaining)"
   },
   "DW-08": {
     "scene_id": "6bed35a5-d1f6-41be-9b85-0bdf4ebf3a79",
@@ -3008,7 +3092,8 @@
     "flow_account": "dinhvulon16",
     "flow_project_id": "3b6be3e0-4a39-46e8-bf4e-aa727e449cd5",
     "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)",
-    "created_note": "2026-10-19: scene created from prompts_v7.json (chips resolved to named refs); handoff lessons not applied yet"
+    "created_note": "2026-10-19: scene created from prompts_v7.json (chips resolved to named refs); handoff lessons not applied yet",
+    "prompt_note": "2026-10-21: rewritten with /fk-film + /fk-storyboard, cinematic material; DB PATCHed (user: patch all remaining)"
   },
   "DW-09": {
     "scene_id": "d55dde91-a027-412b-bbb4-205b1db2a761",
@@ -3025,6 +3110,12 @@
     "flow_account": "dinhvulon16",
     "flow_project_id": "3b6be3e0-4a39-46e8-bf4e-aa727e449cd5",
     "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)",
-    "created_note": "2026-10-19: scene created from prompts_v7.json (chips resolved to named refs); handoff lessons not applied yet"
+    "created_note": "2026-10-19: scene created from prompts_v7.json (chips resolved to named refs); handoff lessons not applied yet",
+    "prompt_note": "2026-10-21: rewritten with /fk-film + /fk-storyboard, cinematic material; DB PATCHed (user: patch all remaining)"
+  },
+  "BN-08c": {
+    "scene_id": "17785e89-766c-448e-aa04-ce72889f189d",
+    "dropped": true,
+    "drop_note": "2026-10-21: merged into BN-08b by user; scene kept in DB, do not generate; frame images/sf_bn08c_cam.jpg"
   }
 }
