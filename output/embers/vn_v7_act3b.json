@@ -1,444 +1,470 @@
 [
- {
-  "clip_id": "BK-01",
-  "duration": 8,
-  "shot": "EWS",
-  "refs": [
-   "Nora",
-   "Nora Body Fire",
-   "Eli",
-   "Eli Pack",
-   "Juniper",
-   "The Black"
-  ],
-  "hinh": "Họ lên tới sườn đồi cháy đen; con ngựa đứng giữa vùng đen.",
-  "beat": "Đến nơi",
-  "thoai": [],
-  "so_tu": 0,
-  "ghi_chu": "prompt viết lại 21/10 (cinematic, /fk-film + /fk-storyboard)"
- },
- {
-  "clip_id": "BK-02",
-  "duration": 4,
-  "shot": "MS",
-  "refs": [
-   "Nora",
-   "Nora Body Fire",
-   "HALE Helmet Goggles",
-   "The Black"
-  ],
-  "hinh": "Nora quỳ xuống áp lòng bàn tay vào tro, ngẩng lên nhìn Eli, nhẹ nhõm.",
-  "beat": "Trả nợ",
-  "thoai": [
-   {
-    "nguoi": "Nora",
-    "kieu": "nói trong video",
-    "en": "Cold. It can't burn twice. She found it.",
-    "vi": "Nguội rồi. Không cháy lần hai được. Nó tìm ra rồi."
-   }
-  ],
-  "so_tu": 8,
-  "ghi_chu": "prompt viết lại 21/10 (cinematic, /fk-film + /fk-storyboard)"
- },
- {
-  "clip_id": "BK-03",
-  "duration": 8,
-  "shot": "WS",
-  "refs": [
-   "Nora",
-   "Nora Body Fire",
-   "Eli",
-   "Juniper",
-   "The Black"
-  ],
-  "hinh": "Mặt trận lửa gầm dọc mép vùng đen; Nora kéo Eli nằm xuống sát chân ngựa.",
-  "beat": "Cao trào · mặt trận lửa",
-  "thoai": [
-   {
-    "nguoi": "Nora",
-    "kieu": "nói trong video",
-    "en": "Down! Face in the dirt! Shirt over your mouth! Don't look up. Count your breaths. I'm counting with you.",
-    "vi": "Nằm xuống! Úp mặt xuống đất! Kéo áo che miệng! Đừng ngẩng lên. Đếm hơi thở. Chị đếm cùng em."
-   }
-  ],
-  "so_tu": 19,
-  "ghi_chu": "prompt viết lại 21/10 (cinematic, /fk-film + /fk-storyboard)"
- },
- {
-  "clip_id": "BK-04",
-  "duration": 4,
-  "shot": "CU",
-  "refs": [
-   "Nora",
-   "Nora Body Fire",
-   "HALE Helmet Goggles",
-   "Eli",
-   "The Black",
-   "Eli Pack"
-  ],
-  "hinh": "Nora tháo mũ HALE vàng đội lên đầu Eli.",
-  "beat": "Món quà",
-  "thoai": [],
-  "so_tu": 0,
-  "ghi_chu": "prompt viết lại 21/10 (cinematic, /fk-film + /fk-storyboard)"
- },
- {
-  "clip_id": "BK-05",
-  "duration": 6,
-  "shot": "MS",
-  "refs": [
-   "Nora",
-   "Nora Body Fire",
-   "Eli",
-   "HALE Helmet Goggles",
-   "The Black",
-   "Eli Pack"
-  ],
-  "hinh": "Nora kéo lều chống cháy trùm lên cả hai, nắm tay ghim mép vào tro; tấm bạc gợn cam.",
-  "beat": "Lều trả nợ (2)",
-  "thoai": [
-   {
-    "nguoi": "Nora",
-    "kieu": "nói trong video",
-    "en": "It fits one person. Out here in the black, it fits two.",
-    "vi": "Nó vừa một người. Ở ngoài vùng đã cháy này, nó vừa hai người."
-   }
-  ],
-  "so_tu": 12,
-  "ghi_chu": "prompt viết lại 21/10 (cinematic, /fk-film + /fk-storyboard)"
- },
- {
-  "clip_id": "BK-14",
-  "duration": 6,
-  "shot": "EWS long lens",
-  "refs": [
-   "The Black"
-  ],
-  "hinh": "Lửa quét qua: bức tường lửa gầm rú dọc mép vùng đã cháy, bão tàn lửa bay qua mặt đất cháy đen; tấm lều bạc nhỏ rực cam ở giữa, bóng con ngựa xám nằm cạnh; mặt đất đã cháy không bén lửa lại.",
-  "beat": "Cảnh hoành tráng · đỉnh hiểm nguy",
-  "thoai": [],
-  "so_tu": 0,
-  "ghi_chu": "prompt viết lại 21/10 (cinematic, /fk-film + /fk-storyboard)"
- },
- {
-  "clip_id": "BK-06",
-  "duration": 4,
-  "shot": "ECU",
-  "refs": [
-   "Nora",
-   "Eli"
-  ],
-  "hinh": "Dưới tấm bạc, hai khuôn mặt cách nhau vài phân.",
-  "beat": "Im lặng",
-  "thoai": [],
-  "so_tu": 0,
-  "ghi_chu": "prompt viết lại 21/10 (cinematic, /fk-film + /fk-storyboard)"
- },
- {
-  "clip_id": "BK-07",
-  "duration": 8,
-  "shot": "MCU (Eli)",
-  "refs": [
-   "Eli",
-   "HALE Helmet Goggles"
-  ],
-  "hinh": "Dưới tấm lều, tiếng gầm bên ngoài, Eli chạm vào chiếc mũ trên đầu và thì thầm với chị; rồi chờ đợi, mắt rưng rưng.",
-  "beat": "Móc giữ chân · nguồn gốc lộ ra lúc nguy nhất",
-  "thoai": [
-   {
-    "nguoi": "Eli",
-    "kieu": "nói trong video",
-    "en": "That's Mom's. Why did she go back in?",
-    "vi": "Cái này của mẹ. Sao mẹ lại quay vào?"
-   },
-   {
-    "nguoi": "Nora",
-    "kieu": "lồng tiếng hậu kỳ (off-screen)",
-    "en": "For a kid on a horse. She got him out. Not herself.",
-    "vi": "Vì một đứa nhỏ cưỡi ngựa. Mẹ đưa nó ra được. Còn mẹ thì không."
-   }
-  ],
-  "so_tu": 20,
-  "ghi_chu": "prompt viết lại 21/10 (cinematic, /fk-film + /fk-storyboard)"
- },
- {
-  "clip_id": "BK-15",
-  "duration": 4,
-  "shot": "ECU",
-  "refs": [
-   "Nora Body Fire"
-  ],
-  "hinh": "Cận cực: gió lật mép tấm bạc, ánh lửa tràn vào; nắm tay đeo găng của Nora đập mép bạc xuống tro và giữ chặt.",
-  "beat": "Hiểm nguy vẫn đè xuống",
-  "thoai": [],
-  "so_tu": 0,
-  "ghi_chu": "prompt viết lại 21/10 (cinematic, /fk-film + /fk-storyboard)"
- },
- {
-  "clip_id": "BK-11",
-  "duration": 6,
-  "shot": "MCU (Nora)",
-  "refs": [
-   "Nora",
-   "Nora Body Fire",
-   "Eli",
-   "HALE Helmet Goggles"
-  ],
-  "hinh": "Vẫn dưới tấm lều, Nora quay mặt về phía em trai, nước mắt rạch qua lớp muội; mép mũ vàng trên đầu Eli ở rìa khung hình.",
-  "beat": "Niềm tin sai bị phá (Nora tự nói)",
-  "thoai": [
-   {
-    "nguoi": "Nora",
-    "kieu": "nói trong video",
-    "en": "She went in alone. I didn't. You brought me back out, Eli.",
-    "vi": "Mẹ vào một mình. Chị thì không. Em đã đưa chị ra, Eli."
-   }
-  ],
-  "so_tu": 12,
-  "ghi_chu": "prompt viết lại 21/10 (cinematic, /fk-film + /fk-storyboard)"
- },
- {
-  "clip_id": "BK-12",
-  "duration": 4,
-  "shot": "CU",
-  "refs": [
-   "Nora",
-   "Nora Body Fire"
-  ],
-  "hinh": "Dưới tấm bạc: tiếng cười nghẹn rung vai Nora; nước mắt rạch qua lớp muội.",
-  "beat": "Giải tỏa",
-  "thoai": [],
-  "so_tu": 0,
-  "ghi_chu": "prompt viết lại 21/10 (cinematic, /fk-film + /fk-storyboard)"
- },
- {
-  "clip_id": "BK-08",
-  "duration": 4,
-  "shot": "WS",
-  "refs": [
-   "Nora",
-   "Nora Body Fire",
-   "Juniper",
-   "The Black"
-  ],
-  "hinh": "Nora hất tấm bạc cháy xém ra; cách vài bước con ngựa xám nằm im trong tro.",
-  "beat": "Cú sợ cuối: nó chết rồi sao?",
-  "thoai": [],
-  "so_tu": 0,
-  "ghi_chu": "prompt viết lại 21/10 (cinematic, /fk-film + /fk-storyboard)"
- },
- {
-  "clip_id": "BK-09",
-  "duration": 4,
-  "shot": "CU",
-  "refs": [
-   "Juniper",
-   "Nora Body Fire",
-   "The Black"
-  ],
-  "hinh": "Con ngựa đang nằm ngẩng đầu, dụi mõm vào vai Nora.",
-  "beat": "Tha thứ · ánh nhìn trả nợ",
-  "thoai": [],
-  "so_tu": 0,
-  "ghi_chu": "prompt viết lại 21/10 (cinematic, /fk-film + /fk-storyboard)"
- },
- {
-  "clip_id": "BK-13",
-  "duration": 6,
-  "shot": "MS",
-  "refs": [
-   "Nora",
-   "Nora Body Fire",
-   "Eli",
-   "HALE Helmet Goggles",
-   "Juniper",
-   "The Black"
-  ],
-  "hinh": "Eli ngủ tựa vào sườn ngựa, đội mũ; Nora thức, nắm tay em nhìn tàn lửa.",
-  "beat": "Nghỉ ngơi",
-  "thoai": [],
-  "so_tu": 0,
-  "ghi_chu": "prompt viết lại 21/10 (cinematic, /fk-film + /fk-storyboard)"
- },
- {
-  "clip_id": "DW-01",
-  "duration": 8,
-  "shot": "EWS",
-  "refs": [
-   "Ray",
-   "The Black"
-  ],
-  "hinh": "Tro rơi như tuyết trên đồi đen; một hàng lính cứu hỏa áo vàng, mũ trắng đi đầu, leo dốc; mũ trắng dừng lại rồi chạy vụt lên.",
-  "beat": "Nhắc lại móc · cứu hộ",
-  "thoai": [],
-  "so_tu": 0,
-  "ghi_chu": "prompt viết lại 21/10 (cinematic, /fk-film + /fk-storyboard)"
- },
- {
-  "clip_id": "DW-03",
-  "duration": 6,
-  "shot": "OTS→Nora",
-  "refs": [
-   "Nora",
-   "Nora Body Fire",
-   "Juniper",
-   "The Black"
-  ],
-  "hinh": "Qua vai Ray: Nora đứng dậy từ tro bên Eli và con ngựa; giọng khàn.",
-  "beat": "Giữ lời hứa",
-  "thoai": [
-   {
-    "nguoi": "Nora",
-    "kieu": "nói trong video",
-    "en": "Captain. Brought him back, like I said. The horse found the way.",
-    "vi": "Đội trưởng. Đưa nó về rồi, như tôi đã nói. Con ngựa tìm ra đường."
-   },
-   {
-    "nguoi": "Ray",
-    "kieu": "lồng tiếng hậu kỳ (back to camera)",
-    "en": "Nora.",
-    "vi": "Nora."
-   }
-  ],
-  "so_tu": 13,
-  "ghi_chu": "prompt viết lại 21/10 (cinematic, /fk-film + /fk-storyboard)"
- },
- {
-  "clip_id": "DW-04",
-  "duration": 4,
-  "shot": "MCU (Ray)",
-  "refs": [
-   "Ray",
-   "The Black"
-  ],
-  "hinh": "Ray chìa radio của cô ra.",
-  "beat": "Trở về",
-  "thoai": [
-   {
-    "nguoi": "Ray",
-    "kieu": "nói trong video",
-    "en": "Think you came back for this.",
-    "vi": "Chắc cô quay lại vì cái này."
-   }
-  ],
-  "so_tu": 6,
-  "ghi_chu": "prompt viết lại 21/10 (cinematic, /fk-film + /fk-storyboard)"
- },
- {
-  "clip_id": "DW-05",
-  "duration": 6,
-  "shot": "2S locked-off 85mm",
-  "refs": [
-   "Ray",
-   "Nora Body Fire",
-   "The Black"
-  ],
-  "hinh": "Ray bên trái, Nora bên phải: cô gắn radio lên dây đai ngực; trả lời khi mặt quay đi về phía Eli và con ngựa.",
-  "beat": "Cái giá",
-  "thoai": [
-   {
-    "nguoi": "Ray",
-    "kieu": "nói trong video",
-    "en": "Thirty days off the line, Hale. No pay.",
-    "vi": "Nghỉ trực ba mươi ngày, Hale. Không lương."
-   },
-   {
-    "nguoi": "Ray",
-    "kieu": "nói trong video",
-    "en": "I know.",
-    "vi": "Tôi biết."
-   },
-   {
-    "nguoi": "Nora",
-    "kieu": "lồng tiếng hậu kỳ (face turned away)",
-    "en": "Worth it.",
-    "vi": "Đáng mà."
-   }
-  ],
-  "so_tu": 12,
-  "ghi_chu": "prompt viết lại 21/10 (cinematic, /fk-film + /fk-storyboard)"
- },
- {
-  "clip_id": "DW-06",
-  "duration": 8,
-  "shot": "EWS",
-  "refs": [
-   "Cedar Flat"
-  ],
-  "hinh": "Từ trên dốc đen lúc bình minh xám: xa bên dưới, Cedar Flat còn nguyên mái nhà; vùng cháy dừng đúng ở đường ủi.",
-  "beat": "Tuyến phụ trả kết · thị trấn giữ được",
-  "thoai": [
-   {
-    "nguoi": "Ray",
-    "kieu": "lồng tiếng hậu kỳ (off-screen)",
-    "en": "Town held, Hale. We lost two barns and a mile of fence. Not one house. Not one person.",
-    "vi": "Thị trấn giữ được, Hale. Mất hai cái chuồng và một dặm hàng rào. Không mất căn nhà nào. Không mất ai."
-   }
-  ],
-  "so_tu": 18,
-  "ghi_chu": "prompt viết lại 21/10 (cinematic, /fk-film + /fk-storyboard)"
- },
- {
-  "clip_id": "DW-07",
-  "duration": 6,
-  "shot": "OTS→Nora",
-  "refs": [
-   "Nora",
-   "Nora Body Fire",
-   "Juniper",
-   "The Black",
-   "Eli"
-  ],
-  "hinh": "Qua vai Eli: Nora nhặt dây dắt, đặt vào tay em, khép ngón tay em lại rồi lùi một bước.",
-  "beat": "Kết thúc",
-  "thoai": [
-   {
-    "nguoi": "Nora",
-    "kieu": "nói trong video",
-    "en": "She's yours, Eli. You hold the rope from now on. I'll walk behind.",
-    "vi": "Nó là của em, Eli. Từ giờ em cầm dây. Chị đi phía sau."
-   }
-  ],
-  "so_tu": 13,
-  "ghi_chu": "prompt viết lại 21/10 (cinematic, /fk-film + /fk-storyboard)"
- },
- {
-  "clip_id": "DW-08",
-  "duration": 4,
-  "shot": "CU",
-  "refs": [
-   "Ray",
-   "The Black"
-  ],
-  "hinh": "Ray thấy chiếc mũ HALE trên đầu Eli, mỉm cười, lẩm bẩm.",
-  "beat": "Sự bình yên của Ray",
-  "thoai": [
-   {
-    "nguoi": "Ray",
-    "kieu": "nói trong video",
-    "en": "Most stubborn Hale left alive. Figures.",
-    "vi": "Đứa nhà Hale cứng đầu nhất còn sống. Đúng thôi."
-   }
-  ],
-  "so_tu": 6,
-  "ghi_chu": "prompt viết lại 21/10 (cinematic, /fk-film + /fk-storyboard)"
- },
- {
-  "clip_id": "DW-09",
-  "duration": 10,
-  "shot": "EWS",
-  "refs": [
-   "Nora",
-   "Nora Body Fire",
-   "Eli",
-   "HALE Helmet Goggles",
-   "Juniper",
-   "The Black"
-  ],
-  "hinh": "Bình minh qua tro rơi: Eli đội mũ dắt ngựa xuống dốc đen phải sang trái; Nora đi sau một bước.",
-  "beat": "Hình ảnh cuối",
-  "thoai": [],
-  "so_tu": 0,
-  "ghi_chu": "prompt viết lại 21/10 (cinematic, /fk-film + /fk-storyboard)"
- }
+  {
+    "clip_id": "BK-01",
+    "duration": 8,
+    "shot": "EWS",
+    "refs": [
+      "BK-01 Start",
+      "Nora",
+      "Nora Body Fire",
+      "Eli",
+      "Juniper",
+      "The Black",
+      "HALE Helmet Goggles"
+    ],
+    "hinh": "Họ lên tới sườn đồi cháy đen; con ngựa đứng giữa vùng đen.",
+    "beat": "Đến nơi",
+    "thoai": [],
+    "so_tu": 0,
+    "ghi_chu": "prompt viết lại 22/10 (bỏ Eli Pack, đêm tối hẳn, khóa mặt chuẩn, thêm ảnh start / OPENING FRAME)"
+  },
+  {
+    "clip_id": "BK-02",
+    "duration": 4,
+    "shot": "MS",
+    "refs": [
+      "BK-02 Start",
+      "Nora",
+      "Nora Body Fire",
+      "HALE Helmet Goggles",
+      "The Black"
+    ],
+    "hinh": "Nora quỳ xuống áp lòng bàn tay vào tro, ngẩng lên nhìn Eli, nhẹ nhõm.",
+    "beat": "Trả nợ",
+    "thoai": [
+      {
+        "nguoi": "Nora",
+        "kieu": "nói trong video",
+        "en": "Cold. It can't burn twice. She found it.",
+        "vi": "Nguội rồi. Không cháy lần hai được. Nó tìm ra rồi."
+      }
+    ],
+    "so_tu": 8,
+    "ghi_chu": "prompt viết lại 22/10 (bỏ Eli Pack, đêm tối hẳn, khóa mặt chuẩn, thêm ảnh start / OPENING FRAME)"
+  },
+  {
+    "clip_id": "BK-03",
+    "duration": 8,
+    "shot": "WS",
+    "refs": [
+      "BK-03 P1",
+      "BK-03 Storyboard",
+      "Nora",
+      "Nora Body Fire",
+      "Eli",
+      "The Black",
+      "HALE Helmet Goggles"
+    ],
+    "hinh": "Storyboard 4 khung (8s): trên vùng đã cháy, Nora kéo Eli nằm sát chân ngựa đang nằm, ép em sát đất, nằm cạnh choàng tay qua lưng em; tàn lửa trút qua cả ba.",
+    "beat": "Cao trào · mặt trận lửa",
+    "thoai": [
+      {
+        "nguoi": "Nora",
+        "kieu": "nói trong video",
+        "en": "Down! Face in the dirt! Shirt over your mouth! Don't look up. Count your breaths. I'm counting with you.",
+        "vi": "Nằm xuống! Úp mặt xuống đất! Kéo áo che miệng! Đừng ngẩng lên. Đếm hơi thở. Chị đếm cùng em."
+      }
+    ],
+    "so_tu": 19,
+    "ghi_chu": "prompt viết lại 22/10 (bỏ Eli Pack, đêm tối hẳn, khóa mặt chuẩn, thêm ảnh start / OPENING FRAME, storyboard 8s, Juniper tả bằng chữ)"
+  },
+  {
+    "clip_id": "BK-04",
+    "duration": 4,
+    "shot": "CU",
+    "refs": [
+      "BK-04 Start",
+      "Nora",
+      "Nora Body Fire",
+      "HALE Helmet Goggles",
+      "Eli",
+      "The Black"
+    ],
+    "hinh": "Nora tháo mũ HALE vàng đội lên đầu Eli.",
+    "beat": "Món quà",
+    "thoai": [],
+    "so_tu": 0,
+    "ghi_chu": "prompt viết lại 22/10 (bỏ Eli Pack, đêm tối hẳn, khóa mặt chuẩn, thêm ảnh start / OPENING FRAME)"
+  },
+  {
+    "clip_id": "BK-05",
+    "duration": 6,
+    "shot": "MS",
+    "refs": [
+      "BK-05 Start",
+      "Nora",
+      "Nora Body Fire",
+      "Eli",
+      "HALE Helmet Goggles",
+      "The Black",
+      "Juniper"
+    ],
+    "hinh": "Nora kéo lều chống cháy trùm lên cả hai, nắm tay ghim mép vào tro; tấm bạc gợn cam.",
+    "beat": "Lều trả nợ (2)",
+    "thoai": [
+      {
+        "nguoi": "Nora",
+        "kieu": "nói trong video",
+        "en": "It fits one person. Out here in the black, it fits two.",
+        "vi": "Nó vừa một người. Ở ngoài vùng đã cháy này, nó vừa hai người."
+      }
+    ],
+    "so_tu": 12,
+    "ghi_chu": "prompt viết lại 22/10 (bỏ Eli Pack, đêm tối hẳn, khóa mặt chuẩn, thêm ảnh start / OPENING FRAME, thêm Juniper)"
+  },
+  {
+    "clip_id": "BK-14",
+    "duration": 6,
+    "shot": "EWS long lens",
+    "refs": [
+      "BK-14 Start",
+      "The Black"
+    ],
+    "hinh": "Lửa quét qua: bức tường lửa gầm rú dọc mép vùng đã cháy, bão tàn lửa bay qua mặt đất cháy đen; tấm lều bạc nhỏ rực cam ở giữa, bóng con ngựa xám nằm cạnh; mặt đất đã cháy không bén lửa lại.",
+    "beat": "Cảnh hoành tráng · đỉnh hiểm nguy",
+    "thoai": [],
+    "so_tu": 0,
+    "ghi_chu": "prompt viết lại 22/10 (bỏ Eli Pack, đêm tối hẳn, khóa mặt chuẩn, thêm ảnh start / OPENING FRAME)"
+  },
+  {
+    "clip_id": "BK-06",
+    "duration": 4,
+    "shot": "ECU",
+    "refs": [
+      "BK-06 Start",
+      "Nora",
+      "Eli",
+      "HALE Helmet Goggles"
+    ],
+    "hinh": "Dưới tấm bạc, hai khuôn mặt cách nhau vài phân.",
+    "beat": "Im lặng",
+    "thoai": [],
+    "so_tu": 0,
+    "ghi_chu": "prompt viết lại 22/10 (bỏ Eli Pack, đêm tối hẳn, khóa mặt chuẩn, thêm ảnh start / OPENING FRAME)"
+  },
+  {
+    "clip_id": "BK-07",
+    "duration": 8,
+    "shot": "MCU (Eli)",
+    "refs": [
+      "BK-07 Start",
+      "Eli",
+      "HALE Helmet Goggles"
+    ],
+    "hinh": "Dưới tấm lều, tiếng gầm bên ngoài, Eli chạm vào chiếc mũ trên đầu và thì thầm với chị; rồi chờ đợi, mắt rưng rưng.",
+    "beat": "Móc giữ chân · nguồn gốc lộ ra lúc nguy nhất",
+    "thoai": [
+      {
+        "nguoi": "Eli",
+        "kieu": "nói trong video",
+        "en": "That's Mom's. Why did she go back in?",
+        "vi": "Cái này của mẹ. Sao mẹ lại quay vào?"
+      },
+      {
+        "nguoi": "Nora",
+        "kieu": "lồng tiếng hậu kỳ (off-screen)",
+        "en": "For a kid on a horse. She got him out. Not herself.",
+        "vi": "Vì một đứa nhỏ cưỡi ngựa. Mẹ đưa nó ra được. Còn mẹ thì không."
+      }
+    ],
+    "so_tu": 20,
+    "ghi_chu": "prompt viết lại 22/10 (bỏ Eli Pack, đêm tối hẳn, khóa mặt chuẩn, thêm ảnh start / OPENING FRAME)"
+  },
+  {
+    "clip_id": "BK-15",
+    "duration": 4,
+    "shot": "ECU",
+    "refs": [
+      "BK-15 Start",
+      "Nora Body Fire"
+    ],
+    "hinh": "Cận cực: gió lật mép tấm bạc, ánh lửa tràn vào; nắm tay đeo găng của Nora đập mép bạc xuống tro và giữ chặt.",
+    "beat": "Hiểm nguy vẫn đè xuống",
+    "thoai": [],
+    "so_tu": 0,
+    "ghi_chu": "prompt viết lại 22/10 (bỏ Eli Pack, đêm tối hẳn, khóa mặt chuẩn, thêm ảnh start / OPENING FRAME)"
+  },
+  {
+    "clip_id": "BK-11",
+    "duration": 6,
+    "shot": "MCU (Nora)",
+    "refs": [
+      "BK-11 Start",
+      "Nora",
+      "Nora Body Fire",
+      "Eli",
+      "HALE Helmet Goggles"
+    ],
+    "hinh": "Vẫn dưới tấm lều, Nora quay mặt về phía em trai, nước mắt rạch qua lớp muội; mép mũ vàng trên đầu Eli ở rìa khung hình.",
+    "beat": "Niềm tin sai bị phá (Nora tự nói)",
+    "thoai": [
+      {
+        "nguoi": "Nora",
+        "kieu": "nói trong video",
+        "en": "She went in alone. I didn't. You brought me back out, Eli.",
+        "vi": "Mẹ vào một mình. Chị thì không. Em đã đưa chị ra, Eli."
+      }
+    ],
+    "so_tu": 12,
+    "ghi_chu": "prompt viết lại 22/10 (bỏ Eli Pack, đêm tối hẳn, khóa mặt chuẩn, thêm ảnh start / OPENING FRAME)"
+  },
+  {
+    "clip_id": "BK-12",
+    "duration": 4,
+    "shot": "CU",
+    "refs": [
+      "BK-12 Start",
+      "Nora",
+      "Nora Body Fire"
+    ],
+    "hinh": "Dưới tấm bạc: tiếng cười nghẹn rung vai Nora; nước mắt rạch qua lớp muội.",
+    "beat": "Giải tỏa",
+    "thoai": [],
+    "so_tu": 0,
+    "ghi_chu": "prompt viết lại 22/10 (bỏ Eli Pack, đêm tối hẳn, khóa mặt chuẩn, thêm ảnh start / OPENING FRAME)"
+  },
+  {
+    "clip_id": "BK-08",
+    "duration": 4,
+    "shot": "WS",
+    "refs": [
+      "BK-08 Start",
+      "Nora",
+      "Nora Body Fire",
+      "Juniper",
+      "The Black"
+    ],
+    "hinh": "Nora hất tấm bạc cháy xém ra; cách vài bước con ngựa xám nằm im trong tro.",
+    "beat": "Cú sợ cuối: nó chết rồi sao?",
+    "thoai": [],
+    "so_tu": 0,
+    "ghi_chu": "prompt viết lại 22/10 (bỏ Eli Pack, đêm tối hẳn, khóa mặt chuẩn, thêm ảnh start / OPENING FRAME)"
+  },
+  {
+    "clip_id": "BK-09",
+    "duration": 4,
+    "shot": "CU",
+    "refs": [
+      "BK-09 Start",
+      "Juniper",
+      "Nora Body Fire",
+      "The Black"
+    ],
+    "hinh": "Con ngựa đang nằm ngẩng đầu, dụi mõm vào vai Nora.",
+    "beat": "Tha thứ · ánh nhìn trả nợ",
+    "thoai": [],
+    "so_tu": 0,
+    "ghi_chu": "prompt viết lại 22/10 (bỏ Eli Pack, đêm tối hẳn, khóa mặt chuẩn, thêm ảnh start / OPENING FRAME)"
+  },
+  {
+    "clip_id": "BK-13",
+    "duration": 6,
+    "shot": "MS",
+    "refs": [
+      "BK-13 Start",
+      "Nora",
+      "Nora Body Fire",
+      "Eli",
+      "HALE Helmet Goggles",
+      "Juniper",
+      "The Black"
+    ],
+    "hinh": "Eli ngủ tựa vào sườn ngựa, đội mũ; Nora thức, nắm tay em nhìn tàn lửa.",
+    "beat": "Nghỉ ngơi",
+    "thoai": [],
+    "so_tu": 0,
+    "ghi_chu": "prompt viết lại 22/10 (bỏ Eli Pack, đêm tối hẳn, khóa mặt chuẩn, thêm ảnh start / OPENING FRAME)"
+  },
+  {
+    "clip_id": "DW-01",
+    "duration": 8,
+    "shot": "EWS",
+    "refs": [
+      "DW-01 Start",
+      "Ray",
+      "The Black"
+    ],
+    "hinh": "Tro rơi như tuyết trên đồi đen; một hàng lính cứu hỏa áo vàng, mũ trắng đi đầu, leo dốc; mũ trắng dừng lại rồi chạy vụt lên.",
+    "beat": "Nhắc lại móc · cứu hộ",
+    "thoai": [],
+    "so_tu": 0,
+    "ghi_chu": "prompt viết lại 22/10 (bỏ Eli Pack, đêm tối hẳn, khóa mặt chuẩn, thêm ảnh start / OPENING FRAME)"
+  },
+  {
+    "clip_id": "DW-03",
+    "duration": 6,
+    "shot": "OTS→Nora",
+    "refs": [
+      "DW-03 Start",
+      "Nora",
+      "Nora Body Fire",
+      "Juniper",
+      "The Black",
+      "Eli",
+      "HALE Helmet Goggles"
+    ],
+    "hinh": "Qua vai Ray: Nora đứng dậy từ tro bên Eli và con ngựa; giọng khàn.",
+    "beat": "Giữ lời hứa",
+    "thoai": [
+      {
+        "nguoi": "Nora",
+        "kieu": "nói trong video",
+        "en": "Captain. Brought him back, like I said. The horse found the way.",
+        "vi": "Đội trưởng. Đưa nó về rồi, như tôi đã nói. Con ngựa tìm ra đường."
+      },
+      {
+        "nguoi": "Ray",
+        "kieu": "lồng tiếng hậu kỳ (back to camera)",
+        "en": "Nora.",
+        "vi": "Nora."
+      }
+    ],
+    "so_tu": 13,
+    "ghi_chu": "prompt viết lại 22/10 (bỏ Eli Pack, đêm tối hẳn, khóa mặt chuẩn, thêm ảnh start / OPENING FRAME, thêm Eli + mũ)"
+  },
+  {
+    "clip_id": "DW-04",
+    "duration": 4,
+    "shot": "MCU (Ray)",
+    "refs": [
+      "DW-04 Start",
+      "Ray",
+      "The Black"
+    ],
+    "hinh": "Ray chìa radio của cô ra.",
+    "beat": "Trở về",
+    "thoai": [
+      {
+        "nguoi": "Ray",
+        "kieu": "nói trong video",
+        "en": "Think you came back for this.",
+        "vi": "Chắc cô quay lại vì cái này."
+      }
+    ],
+    "so_tu": 6,
+    "ghi_chu": "prompt viết lại 22/10 (bỏ Eli Pack, đêm tối hẳn, khóa mặt chuẩn, thêm ảnh start / OPENING FRAME)"
+  },
+  {
+    "clip_id": "DW-05",
+    "duration": 6,
+    "shot": "2S locked-off 85mm",
+    "refs": [
+      "DW-05 Start",
+      "Ray",
+      "Nora Body Fire",
+      "The Black"
+    ],
+    "hinh": "Ray bên trái, Nora bên phải: cô gắn radio lên dây đai ngực; trả lời khi mặt quay đi về phía Eli và con ngựa.",
+    "beat": "Cái giá",
+    "thoai": [
+      {
+        "nguoi": "Ray",
+        "kieu": "nói trong video",
+        "en": "Thirty days off the line, Hale. No pay.",
+        "vi": "Nghỉ trực ba mươi ngày, Hale. Không lương."
+      },
+      {
+        "nguoi": "Ray",
+        "kieu": "nói trong video",
+        "en": "I know.",
+        "vi": "Tôi biết."
+      },
+      {
+        "nguoi": "Nora",
+        "kieu": "lồng tiếng hậu kỳ (face turned away)",
+        "en": "Worth it.",
+        "vi": "Đáng mà."
+      }
+    ],
+    "so_tu": 12,
+    "ghi_chu": "prompt viết lại 22/10 (bỏ Eli Pack, đêm tối hẳn, khóa mặt chuẩn, thêm ảnh start / OPENING FRAME, ảnh start: Nora quay lưng)"
+  },
+  {
+    "clip_id": "DW-06",
+    "duration": 8,
+    "shot": "EWS",
+    "refs": [
+      "DW-06 Start",
+      "Cedar Flat"
+    ],
+    "hinh": "Từ trên dốc đen lúc bình minh xám: xa bên dưới, Cedar Flat còn nguyên mái nhà; vùng cháy dừng đúng ở đường ủi.",
+    "beat": "Tuyến phụ trả kết · thị trấn giữ được",
+    "thoai": [
+      {
+        "nguoi": "Ray",
+        "kieu": "lồng tiếng hậu kỳ (off-screen)",
+        "en": "Town held, Hale. We lost two barns and a mile of fence. Not one house. Not one person.",
+        "vi": "Thị trấn giữ được, Hale. Mất hai cái chuồng và một dặm hàng rào. Không mất căn nhà nào. Không mất ai."
+      }
+    ],
+    "so_tu": 18,
+    "ghi_chu": "prompt viết lại 22/10 (bỏ Eli Pack, đêm tối hẳn, khóa mặt chuẩn, thêm ảnh start / OPENING FRAME)"
+  },
+  {
+    "clip_id": "DW-07",
+    "duration": 6,
+    "shot": "OTS→Nora",
+    "refs": [
+      "DW-07 Start",
+      "Nora",
+      "Nora Body Fire",
+      "Juniper",
+      "The Black",
+      "Eli",
+      "HALE Helmet Goggles"
+    ],
+    "hinh": "Qua vai Eli: Nora nhặt dây dắt, đặt vào tay em, khép ngón tay em lại rồi lùi một bước.",
+    "beat": "Kết thúc",
+    "thoai": [
+      {
+        "nguoi": "Nora",
+        "kieu": "nói trong video",
+        "en": "She's yours, Eli. You hold the rope from now on. I'll walk behind.",
+        "vi": "Nó là của em, Eli. Từ giờ em cầm dây. Chị đi phía sau."
+      }
+    ],
+    "so_tu": 13,
+    "ghi_chu": "prompt viết lại 22/10 (bỏ Eli Pack, đêm tối hẳn, khóa mặt chuẩn, thêm ảnh start / OPENING FRAME)"
+  },
+  {
+    "clip_id": "DW-08",
+    "duration": 4,
+    "shot": "CU",
+    "refs": [
+      "DW-08 Start",
+      "Ray",
+      "The Black"
+    ],
+    "hinh": "Ray thấy chiếc mũ HALE trên đầu Eli, mỉm cười, lẩm bẩm.",
+    "beat": "Sự bình yên của Ray",
+    "thoai": [
+      {
+        "nguoi": "Ray",
+        "kieu": "nói trong video",
+        "en": "Most stubborn Hale left alive. Figures.",
+        "vi": "Đứa nhà Hale cứng đầu nhất còn sống. Đúng thôi."
+      }
+    ],
+    "so_tu": 6,
+    "ghi_chu": "prompt viết lại 22/10 (bỏ Eli Pack, đêm tối hẳn, khóa mặt chuẩn, thêm ảnh start / OPENING FRAME)"
+  },
+  {
+    "clip_id": "DW-09",
+    "duration": 10,
+    "shot": "EWS",
+    "refs": [
+      "DW-09 Start",
+      "Nora",
+      "Nora Body Fire",
+      "Eli",
+      "HALE Helmet Goggles",
+      "Juniper",
+      "The Black"
+    ],
+    "hinh": "Bình minh qua tro rơi: Eli đội mũ dắt ngựa xuống dốc đen phải sang trái; Nora đi sau một bước.",
+    "beat": "Hình ảnh cuối",
+    "thoai": [],
+    "so_tu": 0,
+    "ghi_chu": "prompt viết lại 22/10 (bỏ Eli Pack, đêm tối hẳn, khóa mặt chuẩn, thêm ảnh start / OPENING FRAME)"
+  }
 ]
