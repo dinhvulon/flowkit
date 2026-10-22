@@ -1,216 +1,262 @@
 ---
 name: sw-chinese-opera-banqiang-cases
-description: Worked full-length scripts of banqiang-system Chinese opera with their creation records (板腔体全本语料库). Primary texts; 翁偶虹《锁麟囊》 (the revised score edition, 65 arias, 15 self-account-vs-score checks), 汪曾祺等《沙家浜》 (the 1965 text, not the 1970 one; 36 arias, a 12-row two-version diff), 田汉《白蛇传》 (the 1955 book, not the web revision; 16 scenes, 王瑶卿说腔五条), 杨兰春《朝阳沟》 (1978 revival, 50 arias, 口语入唱, per-scene sung/spoken ratios), 魏明伦《潘金莲》 (跨时空, missing pages), 罗怀臻's 越剧《李清照》《真假驸马》, 淮剧《金龙与蜉蝣》, 甬剧《典妻》; plus index tables of 翁偶虹's 60 创作记 and 范钧宏's seven 改编札记. Use when you want to see how a 唱工戏 lays out its 板式, need real scene counts, aria counts and 辙口 to imitate, want the road from raw material to 审腔, are writing a 现代戏 or colloquial lyrics, or compare one author across two声腔 systems. Method is in sw-chinese-opera-banqiang; this skill holds the worked scripts and their creation records.
+description: Worked full-length scripts of the Banqiang-system Chinese opera with their creation records (板腔体全本语料库). Primary texts: Weng Ouhong's The Pouch of Red Gauze / Suolin Nang (the revised score edition, 65 arias, 15 self-account-vs-score checks), Wang Zengqi et al.'s Shajiabang (the 1965 text, not the 1970 version; 36 arias, a 12-row two-version diff), Tian Han's The Legend of the White Snake / Baishe Zhuan (the 1955 book, not the web revision; 16 scenes, Wang Yaoqing's five aria-composition principles), Yang Lanchun's Chaoyang Ditch / Chaoyanggou (1978 revival, 50 arias, colloquial speech in lyrics, per-scene sung/spoken ratios), Wei Minglun's Pan Jinlian (trans-temporal absurdism, missing pages note), Luo Huaizhen's Yue opera Li Qingzhao and The True and False Imperial Son-in-Law, Huai opera Golden Dragon and Mayfly, Yong opera The Leased Wife; plus index tables of Weng Ouhong's 60 creation accounts and Fan Junhong's seven adaptation notes. Use when analyzing how a singing-showpiece (Changgongxi) arranges its Banshi rhythm matrix, needing real scene counts, aria counts, and rhyme categories (Zhekou) to emulate, charting the road from raw source material to Shenqiang (vocal score auditing), writing contemporary modern operas (Xiandaixi) or colloquial lyrics, or comparing one author across two musical systems. Methodology is in sw-chinese-opera-banqiang; this skill holds the worked full-length scripts and their creation records.
 ---
 
-# 板腔体全本语料库（Banqiang Full-Script Case Studies）
+# Banqiang Full-Script Case Studies (板腔体全本语料库)
 
-> **输出语言＝提问语言**；术语一律锚回原词，见 [sw-workflow/terms.md](../sw-workflow/terms.md)，不自创译名。戏曲术语（板式、辙口、行当、程式、宾白、垛句、帮腔）没有英文对应物，任何语言下保留原词＋一句释义。
+> **Output Language = Prompt Language**; Technical terms are strictly anchored to their original forms without invented translations (see [sw-workflow/terms.md](../sw-workflow/terms.md)). Traditional theatrical terms (*Banshi* / metric-tempo forms, *Zhekou* / rhyme categories, *Hangdang* / role types, *Chengshi* / conventions, *Binbai* / spoken dialogue, *Duoju* / stacked lines, *Bangqiang* / offstage chorus) have no direct Western equivalents; in any language, retain the original romanized term plus a single explanatory sentence.
 
-**方法见 [sw-chinese-opera-banqiang](../sw-chinese-opera-banqiang/SKILL.md)，本 skill 只放定本与创作记。** 每案固定六项：①作品与版本 ②结构层 ③唱段层 ④程式层 ⑤创作过程 ⑥可迁移手法；方法不重写，只写"见 sw-chinese-opera-banqiang 第 N 节"。**只用一手定本：自述与定本不合，以定本为准、自述为意图；底本非首演本、有缺页、有待核，一律写进①并把那句注带上。**
+**Methodology is detailed in [sw-chinese-opera-banqiang](../sw-chinese-opera-banqiang/SKILL.md); this skill contains only definitive scripts and author creation records.** Every case study follows a standardized six-part schema: ① Work & Editions, ② Structural Layer, ③ Aria & Musical Layer, ④ Conventional/Chengshi Layer, ⑤ Creative Process, and ⑥ Transferable Techniques. Methodological theory is not duplicated here; it cites "see sw-chinese-opera-banqiang §N". **Rely exclusively on primary definitive editions: if an author's memoir conflicts with the definitive score, treat the score as ground truth and the memoir as artistic intent. If a source text is not the premiere draft, has missing pages, or requires verification, document this in ① and attach the annotation.**
 
-逐场结构表、唱段表、板式统计、程式清单、两版差异、创作记索引全在 reference 里，正文只留指针：《锁麟囊》《沙家浜》[reference-jingju.md](reference-jingju.md)（§1–§7）；《白蛇传》[reference-baishezhuan.md](reference-baishezhuan.md)（§8–§12）；《朝阳沟》[reference-chaoyanggou.md](reference-chaoyanggou.md)（§1–§5）；《潘金莲》[reference-panjinlian.md](reference-panjinlian.md)（§6–§9）；罗怀臻越剧 [reference-luo-yueju.md](reference-luo-yueju.md)（§1–§3、§7）与地方戏 [reference-luo-difangxi.md](reference-luo-difangxi.md)（§4–§8）；创作记 [reference-chuangzuoji.md](reference-chuangzuoji.md)。
+Scene-by-scene structural tables, aria manifests, Banshi frequency stats, Chengshi inventories, two-version textual diffs, and creation memoir indices are located in the reference documents: *The Pouch of Red Gauze (Suolin Nang)* & *Shajiabang* in [reference-jingju.md](reference-jingju.md) (§1–§7); *The Legend of the White Snake (Baishe Zhuan)* in [reference-baishezhuan.md](reference-baishezhuan.md) (§8–§12); *Chaoyang Ditch (Chaoyanggou)* in [reference-chaoyanggou.md](reference-chaoyanggou.md) (§1–§5); *Pan Jinlian* in [reference-panjinlian.md](reference-panjinlian.md) (§6–§9); Luo Huaizhen's Yue opera in [reference-luo-yueju.md](reference-luo-yueju.md) (§1–§3, §7) and regional operas in [reference-luo-difangxi.md](reference-luo-difangxi.md) (§4–§8); and creation memoirs in [reference-chuangzuoji.md](reference-chuangzuoji.md).
 
-## 按任务读哪几节（不要通读）
+## Targeted Reading Index (Do Not Read Cover-to-Cover)
 
-| 你想找 | 去 |
+| Objective | Target Section |
 |---|---|
-| 唱工戏的板式怎么排、上板段放哪场 | 一（锁麟囊） |
-| 现代戏怎么删程式、唱白衔接 | 二（沙家浜） |
-| 整理传统题材：保留／删搬／新加 | 三（白蛇传） |
-| 口语怎么进唱词、押韵的尺度 | 四（朝阳沟） |
-| 荒诞、跨时空、帮腔成角色 | 五（潘金莲） |
-| 不标板式的本子、越剧女小生 | 六（罗·越剧） |
-| 歌队、字幕、寓言体 vs 写实体 | 七（罗·地方戏） |
-| 从素材走到审腔；某戏为谁写、改几稿 | 八、九 |
-| **按手法反查案例** | **十——多数情况从这里进** |
-| 同一作者跨体系对照 | 十一 |
+| Arranging Banshi in singing showpieces; placing on-beat (Shangban) arias | §1 (*Suolin Nang*) |
+| Pruning conventions in modern opera; seamless sung/spoken transitions | §2 (*Shajiabang*) |
+| Reorganizing traditional repertoires: retain / cut & relocate / add | §3 (*Baishe Zhuan*) |
+| Infusing vernacular speech into arias; thresholds of rhyme discipline | §4 (*Chaoyanggou*) |
+| Absurdism, trans-temporal collisions, treating Bangqiang as a dramatic character | §5 (*Pan Jinlian*) |
+| Scripts without marked Banshi meters; female Xiaosheng lead writing | §6 (Luo Huaizhen · Yue Opera) |
+| Choruses, projected surtitles, allegorical vs. realist drama | §7 (Luo Huaizhen · Regional Operas) |
+| Moving from raw source material to Shenqiang (score review); writing custom scripts for actors | §8, §9 |
+| **Reverse-lookup cases by dramatic craft technique** | **§10 — Primary Entry Point for Most Queries** |
+| Cross-system comparison by the same author | §11 |
 
 ---
 
-## 一、《锁麟囊》：唱工戏的板式布局，三层俱全
+## 1. *The Pouch of Red Gauze (Suolin Nang)*: Banshi Layout for a Singing Showpiece (All Three Tiers Complete)
 
-**①版本**　翁偶虹编剧，程砚秋 1940 首演。底本＝王吟秋整理、顾永湘记谱《京剧曲谱·锁麟囊》（上海文艺 1983）。**这是改后的曲谱定本，不是首演本**（何慢序记程砚秋"直到逝世前夕还孜孜不倦地致力于革新"）；与自述对不上处先假定是改后版本。**引"掐三节配三让座"必须加注"曲谱本作四节，座序旁椅→客位→上座→中座"。** 唱词录自页图，不标待核。**全批唯一创作记＋同行批评＋演出定本三层俱全的戏。**
+**① Editions**  
+Playwright: Weng Ouhong; premiered by Cheng Yanqiu in 1940. Base text = Wang Yinqun (curation), Gu Yongxiang (transcription), *Peking Opera Scores: Suolin Nang* (Shanghai Literature & Art, 1983). **This is the revised definitive vocal score, not the premiere promptbook** (He Man's preface notes that Cheng Yanqiu "worked tirelessly on innovations until the eve of his death"). Where Weng's memoir diverges from the score, assume it reflects the post-premiere revision. **When quoting the "three-segment cut paired with three reseatings," add the note: "The score actually sets four segments; seating sequence: Side Chair → Guest Seat → Seat of Honor → Center Seat."** Lyrics transcribed directly from facsimile pages, not marked as unverified. **This is the sole play in the corpus possessing all three tiers: creation memoirs, peer criticisms, and definitive performance scores.**
 
-**②结构层**　十二场、65 段唱约 196 句；四场无唱，四场是重点（二、五、九、十二）。**第十二场一场 28 段占 43%**——自述的四个重点里后三个全压进末场，是与定本最大的结构差异。第一场不给主角不给唱，两个丑行念白立"势利眼"这贯穿词；**人物表 21 人里丑行 11，过半**。见 §1。
+**② Structural Layer**  
+12 scenes, 65 aria sections comprising ~196 couplet lines. Four scenes contain zero singing; four serve as structural anchors (Scenes 2, 5, 9, 12). **Scene 12 alone contains 28 aria sections (43% of the entire opera)**—of the four major anchor scenes cited in Weng's memoir, the final three are collapsed entirely into the concluding scene, marking the largest structural divergence from the score. Scene 1 gives neither the protagonist nor any singing; two *Chou* (comic clown) characters deliver spoken dialogue to establish the central thematic leitmotif: "snobbery and opportunism" (*shiliyans*). **Among the 21 dramatis personae, 11 are Chou roles (over 50%).** See §1.
 
-**③唱段层**　**上板段只 20/65，散板摇板 27 段占四成**，上板段全集中在四个重点场（第三节）。**〔二六〕只两次且首尾对称**（第五场善行起点、第十二场善报终点），两次都紧接〔流水〕。**声腔分人分段、不分情绪高低**：富方二黄、贫方西皮，相遇后只剩西皮。**辙口逐场换、首尾同押遥条**（第五场 33 句一韵到底，6d 节）。**六处大垛句全落在上板段的下句**，最长 26 字（6e 节）。见 §2。
+**③ Aria & Musical Layer**  
+**Metrical on-beat sections (*Shangban*) account for only 20 of 65 arias; free-meter arias (*Sanban* and *Yaoban*) comprise 27 sections (40%)**, with on-beat arias concentrated almost entirely within the four structural anchors (§3). **[Erliu] (two-six meter) occurs only twice and forms an exact prologue/epilogue symmetry** (Scene 5 marks the initiation of benevolence; Scene 12 marks the karmic reward), both immediately followed by [Liushui] (flowing meter). **Musical mode aligns with character status, not emotional intensity**: the wealthy party sings *Erhuang*, the impoverished party sings *Xipi*; upon their reunion, only *Xipi* remains. **Rhyme categories (*Zhekou*) shift scene by scene, but the first and final scenes share the identical *Yao-Tiao* rhyme** (Scene 5 sustains 33 lines under one unified rhyme without modulation, §6d). **All six major stacked-sentence passages (*Duoju*) fall squarely on the lower (resolving) line of on-beat meters**, reaching up to 26 characters (§6e). See §2.
 
-**④程式层**　定场诗只给丑行，自报家门只给丑与老生；**主角第一次出场完全不出场**（十余句"（内白）"＋两段绣样诗＝程砚秋点名的"帷灯匣剑"）；**全剧无下场诗**，收场＝两句【散板】说破＋八句【流水】边唱边走圆场＋唢呐〔尾声〕牌子（第五节）。
+**④ Conventional/Chengshi Layer**  
+Opening scene poems (*Dingchangshi*) are granted exclusively to *Chou* roles; self-introductory soliloquies (*Zibao Jiamen*) are restricted to *Chou* and *Laosheng* (elderly male roles). **The protagonist's first appearance is entirely offstage** (over ten lines of offstage spoken dialogue `(Neibai)` plus two embroidery poems, fulfilling Cheng Yanqiu's aesthetic demand for "curtained lanterns and boxed swords" / veiled virtuosity). **The entire opera contains zero exit poems (*Xiachangshi*)**; the finale concludes with two lines of [Sanban] revealing the truth + eight lines of [Liushui] sung while executing stage circles (*Yuanchang*) + a Suona [Weisheng] coda suite (§5).
 
-**⑤创作过程**　程砚秋出题（要喜剧）并给素材；翁的顺序是立意（**喜剧性交给围绕主角的社会群相**）→剧名→人名即人设→四法→落笔。**程砚秋当面提三条**：长唱掐段配三让座、多写长短句以便"因字行腔"、末场【南梆子】改【二六】不换词（定本无南梆子，完全落实）。**同行批评并列**：范钧宏批结尾"格调较低、游离主题"，**改后定本保留**。自述↔定本 15 条（对上 11／部分 3／对不上 1）见 §3。
+**⑤ Creative Process**  
+Cheng Yanqiu commissioned the project (requesting a comedy) and provided the raw material (a short anecdote from *Ju Shuo*). Weng's workflow: Core Controlling Idea (**comedy outsourced to the societal ensemble surrounding the protagonist**) → Title → Names as Character Profiles → Four Dramaturgical Rules → Script Drafting. **Cheng Yanqiu contributed three in-person adjustments**: (a) divide the extended aria into segments paired with the three seating shifts, (b) incorporate varied line lengths (unequal meters) to enable melodic tailoring to phonetics (*Yinzi Xingqiang*), and (c) replace the finale's [Nanbangzi] with [Erliu] without altering a single word (the definitive score has zero Nanbangzi, fully implementing this). **Peer criticism**: Fan Junhong criticized the ending as "thematically petty and adrift from the core struggle," yet **the revised score retained it**. For the 15 comparative checkpoints between Weng's memoir and the score (11 matches, 3 partials, 1 contradiction), see §3.
 
-**⑥可迁移手法**
-1. **给悲情行当写喜剧，笑点全交配角，人物表就配够丑行**（11/21）。*失效*：主角本身是被讽刺对象时反过来。
-2. **长唱掐成 n 节，每节之间一次位置变化，并让一个丑行每次挖苦一句**（第十二场三让座）。*自检*：数对手换了几次位置；一次没换就该掐段。
-3. **重点场一辙撑到底，首个重点场与收场同辙**。*失效*：一场里两个对立人物各自定韵时不适。
-4. **要"报应"，就让后来者把主角旧话一字不改地再说一遍**（麟儿"我可要个绿马"＝第九场大器原话）；**做工段落在总讲里不是唱段，是"哑笛＋夹白"**（第十二场哄麟儿，砌末表为这一场备九件道具）。*自检*：旧话改写过就只是巧合；零句唱而时长过五分钟的段落，必须写出用什么托底。
-
----
-
-## 二、《沙家浜》：现代戏的程式改造与唱白衔接
-
-**①版本**　北京京剧团集体改编，汪曾祺、杨毓珉执笔，据沪剧《芦荡火种》改编。底本＝**中国戏剧出版社 1965 年 8 月本，十场，不是 1970 年定本**（定型本发表于《红旗》1970 年第 6 期，全文未取得）。人名保留 1965 写法（胡传**葵**、陈天民、七龙）。两版差异只列已核实的 12 行；**场次无增删是已核实的结论**。人物表不标行当（该栏据范钧宏补，非原书）。
-
-**②结构层**　十场唱／白明暗相间，**三场敌方场里两场几乎不唱**。**两条主线到第九场才交汇**，此前只靠陈天民两次穿针——集中的是事件不是场地（第二节）。**扣子只在四、六、七三场用**，二、五场以情绪收，一、九、十场以动作收，**不是每场留悬念**。见 §4。
-
-**③唱段层**　36 段。**西皮给行动与交锋，二黄给回忆与困境**——四段二黄都不推进情节。**要切开插白就写摇板散板**，一气到底写原板、二六、流水、快板；一套大唱＝导板→回龙→三眼→原板→末句叫散。**全剧只用 7 个辙**：江阳 15 段是主辙，言前是"说办法"的辙，人辰是短唱过场的辙，**唯一的险韵怀来给反派劝降段，唯一的中东给唯一的群唱**；**一场一辙，换辙＝换场或换线，背供与对唱必须同辙**。36 段只 6 处破格，4 处出在两段名唱里。见 §5–§6。
-
-**④程式层**　**自报家门只留给反派，且改成唱给同场人听**；正面人物身份由第三者用白引见——**身份是秘密时程式让位于人物处境**。定场诗下场诗为零，残留形态是"两人对念四句交代场间事"。**背供保留且是全剧技术中心**；七场"幕启即在场"，**但幕内唱导板上场被保留强化**——后记第 9 条把删闲文与取消锣鼓打上打下当同一件事讲，**程式的取消是连着场次体例一起取消的**（第五节）。**三种唱白衔接只能在散板类板式上做**（第七节）。
-
-**⑤创作过程**　后记（1965 年 5 月，署"改编者"）：三结合、"强调武装斗争的作用"、**"胡传葵对阿庆嫂的态度是信多于疑"（第四场三人对唱能成立的技术前提）**、"十年磨一戏"。**两版差异的读数是"改本不动结构只动字"**：场名、事件次序、唱段位置、板式五年不变，方向一律是降低偶然性、提高事理可信度。**范钧宏正反并列**：既举本剧作背供范例，又批后来者滥用背供"落新传统之套"——**本剧既是范例又是它自己的反面教材**。见 §7。
-
-**⑥可迁移手法**
-1. **交锋场里占主动一方的唱句一律落下句**（智斗十句阿庆嫂五组无例外）。*失效*：写主角被压着打的场面则反过来。
-2. **背供对唱上下句同字数、同句读、反义**（"她态度不卑又不亢／他神情不阴又不阳"）；**三人背供用不同板式区分**。*自检*：遮住人名，能凭板式记号分出谁是谁才算用对。
-3. **答话式唱段每次接唱前先用一个白字重复对方的问词**（第四场"有！""现在！"）。*失效*：连续三次以上会变机械。
-4. **政论入唱写成连续质问句，依据取自对方自己的名号**（第七场四个"为什么"打的是"忠义救国军"这个番号）。*失效*：对方无可反用的自我标榜时改用叙事对比。
+**⑥ Transferable Techniques**
+1. **When writing a comedy for a tragic/sorrowful role type (*Qingyi*), outsource all comic relief to supporting characters and pack the cast list with clown roles (*Chou*, 11/21).** *Failure condition*: Inverted if the protagonist herself is the target of satire.
+2. **Segment an extended aria into $n$ sections, punctuate each interval with a physical shift in stage positioning, and let a comic role deliver an abrasive, sarcastic one-liner during each shift** (Scene 12, Three Reseatings). *Self-check*: Count how many times the opponent shifts positions; if zero, the long aria must be cut into sections.
+3. **Anchor an entire crucial scene with a single rhyme category (*Zhekou*), and link the opening anchor scene to the finale using the identical rhyme.** *Failure condition*: Ineffective if two opposing characters must establish contrasting vocal identities within the same scene.
+4. **To dramatize karmic retribution, have a subsequent character repeat the protagonist's exact past lines verbatim** (Lin'er's "I want a green toy horse" mirrors Daqi's exact words from Scene 9); **a purely gestural/mime segment is scored not as an aria, but as "silent flute accompaniment + intermittent dialogue"** (Scene 12, comforting Lin'er; property list prepares nine specific hand props for this single scene). *Self-check*: If the echoed line is rephrased, it registers merely as coincidence. For scenes exceeding five minutes with zero singing, explicitly define what theatrical engine sustains the stage.
 
 ---
 
-## 三、《白蛇传》：传统题材整理本的三栏账
+## 2. *Shajiabang*: Modern Opera Conventional Reform & Sung-Spoken Interfacing
 
-**①版本**　田汉编剧，**作家出版社 1955 年 6 月初版，十六场**。**网络全文不是 1955 版**——场名全同但板式系统性改动（非正格板式一律拉回西皮常用板式、削减生行）；以 1955 书为底本，网络本只作对照并写"改本作……"，**已核实七处差异**。**引文录自页图者不标待核，录自 OCR 者标 `[待核]`，全批 43 处。** 本案的表在 [reference-baishezhuan.md](reference-baishezhuan.md)，下文 §8–§12 指该文件。
+**① Editions**  
+Collective adaptation by the Peking Opera Troupe of Beijing; written by Wang Zengqi and Yang Yumin; adapted from the Shanghai opera (Huju) *Spark Amidst the Reeds (Ludang Huozhong)*. Base text = **Chinese Theatre Publishing House, August 1965 edition, 10 scenes, not the 1970 model opera text** (the finalized script was published in *Red Flag*, Issue 6, 1970; full text unobtained). Character names retain the 1965 orthography (Hu Chuan**kui**, Chen Tianmin, Qi Long). Textual variants between the two versions are cataloged across 12 verified comparison rows; **the preservation of the original 10-scene structure without additions or deletions is an authenticated fact**. Role types (*Hangdang*) were omitted from the original dramatis personae (reconstructed here from Fan Junhong).
 
-**②结构层**　十六场篇幅极不平均：**断桥 15 页、酒变 11、游湖 10 是最长三场，正是白许关系的三个转折点；守山、水斗、渡江各 2 页**——"唱念为主的场子实写、做舞为主的场子虚写"的实测数据（第三节）。**两场无唱**：结亲（全宾白，却是全剧最大的情节转折之一）与水斗；**结亲能不唱，因为它的顶点在条件谈拢那一刻，不在情绪上**。见 §8。
+**② Structural Layer**  
+10 scenes alternating between sung-heavy and speech-heavy registers; **of the three enemy-camp scenes, two contain virtually no singing**. **The two primary narrative lines converge only in Scene 9**; prior to this, they are bridged exclusively by Chen Tianmin's two liaison appearances—cohesion is forged through dramatic events, not shared physical locations (§2). **Cliffhangers (*Kouzi*) are deployed only in Scenes 4, 6, and 7**; Scenes 2 and 5 conclude on lyrical emotional sustains; Scenes 1, 9, and 10 conclude on decisive physical actions. **Suspense is not artificially forced onto every scene.** See §4.
 
-**③唱段层**　71 行唱段。**白素贞主辙江阳**，只在特定场合换辙（遥条＝盗草托孤，怀来＝合钵的哀恸，言前＝游湖的明丽）；**断桥白押江阳、许押言前，是全剧唯一一次靠辙口分声口**（6d 节）。最长三段唱全在白素贞身上——彻底的旦角唱工戏。**断桥一场九种板式十八段**，长唱用板式分段，**慢的给往事、快的给刚发生的事**。本剧用到九种非常用板式（小安板、梆子清板、拨子碰板、回龙、反西皮、快原板、四平调……）**各对应一种特定情境**——附录按"情境→板式"排。见 §9–§10。
+**③ Aria & Musical Layer**  
+36 aria sections. **Xipi is reserved for dynamic action, confrontation, and verbal sparring; Erhuang is dedicated to historical memory, contemplation, and severe peril**—the four Erhuang arias do not advance external plot events. **To splice spoken dialogue into an aria, employ Yaoban and Sanban**; sustained, unbroken emotional monologues require Yuanban, Erliu, Liushui, or Kuaiban. A monumental aria suite follows the formula: *Daoban (lead-in) → Huilong (winding dragon) → Sanyan (slow 4/4) → Yuanban (moderate 2/4) → terminal line calling for free meter (Jiaosan)*. **The entire opera uses only 7 rhyme categories**: *Jiang-Yang* is the dominant rhyme across 15 arias; *Yan-Qian* governs problem-solving and operational planning; *Ren-Chen* governs short transitional bridge arias; **the precarious, narrow rhyme *Huai-Lai* is restricted to the villain's surrender solicitation, while *Zhong-Dong* is reserved for the sole collective chorus**. **One scene adheres to one rhyme: shifting rhymes indicates changing scenes or narrative strands; aside soliloquies (*Beigong*) and responsive duets must share identical rhymes.** Across 36 arias, only 6 meter breaks occur, 4 of which appear within two celebrated showcase arias. See §5–§6.
 
-**④程式层**　**整理本按角色分配程式：给配角与非人间角色留，给主角去。** 上场牌子只给群体与非凡人——**牌子＝非人间的声音**，凡人主角不唱牌子（与曲牌体的曲牌功能不同，与 `sw-chinese-opera-qupai` 互指）。自报家门只给法海；下场诗改用两人分念的对句。**防误取：主角不自报家门是整理本的选择，不是京剧通例。**
+**④ Conventional/Chengshi Layer**  
+**Self-introductory soliloquies (*Zibao Jiamen*) are retained only for villains and modified to be sung directly to onstage counterparts**; positive characters are introduced by a third party through spoken exposition—**when personal identity is an operational secret, theatrical convention yields to dramatic circumstance**. Opening and exit couplets are entirely eliminated, surviving only as "two characters reciting four rhymed lines in dialogue to bridge scene transitions." **The aside soliloquy (*Beigong*) is retained and turned into the opera's core technical engine**; seven scenes open with characters already present onstage (*Muqi Ji Zai Chang*), **yet offstage Daoban vocal entrances are preserved and heightened**. The 1965 Postscript (§9) equates cutting superfluous conventional business with eliminating traditional percussive entry/exit cues: **the removal of conventional gestures went hand in hand with the restructuring of scene formats** (§5). **The three types of sung-to-spoken interfacing can only be executed over Sanban-class free meters** (§7).
 
-**⑤创作过程**　**《序》是一手创作记**：十二三年，桂林（原名《金钵记》，一上演即被禁）→戏校→京剧院（1954）三阶段。**王瑶卿说腔五条**：唱词不必太规矩以给腔留余地／删《煎药》但保留那段【二黄慢板】对唱、搬进《释疑》／改一个字（"祖护他"→"向着他"）／不排斥高拨子／整场换声腔。**"板式标注是意向书"的原话**："剧本作者虽有所规定，但也信托导演和演员……共同创造"——编剧责任的**上界**，与"责任止于平仄与句格"的下界配对（第十节）。见 §11–§12。
+**⑤ Creative Process**  
+Postscript (May 1965, signed by "The Adaptors"): Three-in-One integration, "emphasizing the decisive role of armed struggle," **"Hu Chuankui's attitude toward Sister Aqing is trust outweighing suspicion" (the technical prerequisite making the Scene 4 three-way battle of wits viable)**, and "ten years grinding a single play." **Textual comparison reveals: "Revisions left structure untouched and modified only individual words."** Scene titles, event sequences, aria placements, and Banshi meters remained unchanged across five years; all edits consistently aimed at reducing coincidences and elevating causal plausibility. **Fan Junhong presents a dialectical critique**: while praising this play as the benchmark for Beigong asides, he admonished imitators who overused asides for "falling into a new conventional trap"—**the play serves simultaneously as the masterclass and its own cautionary counter-example**. See §7.
 
-**⑥可迁移手法**
-1. **整理老戏三个动作分开记账：保留哪些程式、删哪一场并把唱段搬到哪里、加哪一段**（保留牌子／定场诗／哭头；删《煎药》并把对唱移入《释疑》；加风神送许仙与许仙【反西皮】）。*自检*：交稿前列出这三张清单；列不出来说明只是顺手改词（第十一节）。
-2. **一段唱搬到别的场，它的声腔系统会把新场子的基调一起改掉——要么接受，要么重写腔**（《释疑》整场因此从西皮变二黄）。
-3. **交锋的两个人各占一辙**（断桥）；**要让 B 有资格责备 A，就让 A 的处境是被安排的**（第十三场加风神送许仙，田汉自述"这样小青更有理由责备许仙"）。*失效*：同盟或同情境的两人不必分辙。
-4. **复述必须带新信息**（断桥许仙十六句重讲两场，新信息只有两处，正好回答小青的怀疑）。*自检*：把观众看过的事划掉，剩下不足两句就删这段。
-5. **团圆可以只给一个画面，不给抒情**（末场塔倒，白素贞自彩云中出现，无一句唱念）。*失效*：主唱者是这个角色而观众等着听她一段时不适用——本剧能这么做，因为末场的唱全给了小青。
-
----
-
-## 四、《朝阳沟》：口语入唱与押韵的真实尺度
-
-**①版本**　杨兰春编剧。底本＝**人民文学出版社 1978 年 3 月版**，封二标"一九七七年一月河南省豫剧一团演出本"——**是文革后复演本，不是 1958 年三团首演本**。**主题方向已失效，技术层保留**：本子留有明显时代语句（"三大差别""蒋匪帮"等），**只作语料，不进规则**。**正文一处板式也不标，只标"（唱）"**；板式靠书后 16 段曲谱补，**其中 2 段只有速度标记（"亲家母你坐下"与尾声合唱），不要替它们填板式**。
-
-**②结构层**　九场无场名：一至三场＝下乡，四至六场＝动摇，**第七场是唯一的转折场**，八九场＝留下。**两处大转折都在山路上**（第二场进山、第七场下山），同一支曲调、同一起句格式唱两遍，第二遍逐句对照第一遍——**本剧最硬的结构设计**。九场唱白比全部列表（第五场群戏 8:92 最低，第八场母女 73:26 最高）：**群戏用白，两人对峙用唱**——唱白分工那一节唯一一份带数字的证据（第七节）。见 §1。
-
-**③唱段层**　50 段。**每场唱段数 8/3/9/5/2/9/5/4/5——最多的不是转折场，单段最长的在转折场**（第七场约 30 句一韵到底）：铺垫场用多而碎的唱段给各角色定性，转折场用一整块大唱段砸给主角。**【二八板】系 11 次占绝对主体**，慢板 2 段只用于开场自陈与幕后合唱。**"转"字是唱词该换句式的信号**：谱上写"转【垛板】"处，正文一定同时从七／十字句变成三／四字垛——**句式一变，板式就该转**（6e 节）。押韵：**下句 100% 押、上句约五成押**，允许邻辙通押、方言归辙与段中换辙，**九个宽辙覆盖 50 段、险辙一次未用**——口语化剧本的默认是宽韵（6d 节）。见 §2、§3、§5。
-
-**④程式层**　**自报家门、定场诗、下场诗三样是被删掉的，不是被改写的**；**保留并改造上下场、背供（"（背唱）""（旁白）"）、内唱**（第六场用幕后唱代替读信）；**新增幕后合唱当合头**，末场全场合唱取代下场诗。**现代戏丢的是砌末的虚拟，留的是身段的舞蹈化**（12a 节）。**由白转唱全剧只有一种格式：一个称呼语**——与《惊梦》、罗怀臻越剧七部并列，两体系通用（第七节）。**不标行当，功能位仍按行当分**（第四节）。
-
-**⑤创作过程**　**本书没有前言、后记、修改说明、演出记录**，这是它与京剧三本最大的不同；一手信息只有封二、版权页、剧照说明与曲谱署名，创作谈全取自书外（末场靠现场口述＋演员当场记词＋作曲当场谱曲完成；"从写人物出发，而唱是主导"）。**开场道具四个版本**是现成的校勘范例。
-
-**⑥可迁移手法**
-1. **口语入唱带三样：直接引语、实数、方言叠字；缺两样就退回宾白重写**（"没有用""糊涂虫""七点钟"；白生生／青凌凌／饱盈盈／磁丁丁）。*失效*：抒情性的核心大段可以只有实物没有引语。*自检*：这段唱里有几个专名／数字？零个就是空。
-2. **把一件平常事做成大唱段，靠一个反复的三字领句**（第六场代写家信，"你写上："领四次约 22 句）。*失效*：领句超过五次会变顺口溜。
-3. **吵架段句长递减：四句→两句→一句→半句，不写任何提速说明**（第八场母女对唱）。*失效*：递减到半句后必须由一方多说一句把段收住。
-4. **冲突先落到手上的活**（第四场锄掉庄稼、第五场摔水桶，都是可演的技术动作）。*失效*：主人公若是行家里手，改用第二级（人际取笑）。
-5. **同一条路走两遍，第二遍逐项回收**（第二场行路歌／第七场回顾段）。*自检*：第二遍里指的每样东西，第一遍出现过没有。
+**⑥ Transferable Techniques**
+1. **In a dramatic duel scene, the party holding psychological dominance must always take the lower (resolving) line of the couplet** (in Scene 4's "Battle of Wits," Sister Aqing takes the resolving line across all five exchanges without exception). *Failure condition*: Inverted when the protagonist is deliberately depicted as cornered or beaten down.
+2. **In an aside duel (*Beigong Duichang*), upper and lower couplets must have identical syllable counts, identical caesura pauses, and diametrically opposed meanings** ("Her demeanor neither servile nor defiant / His expression neither sinister nor warm"); **use contrasting Banshi meters to differentiate three simultaneous asides.** *Self-check*: Blind the character names; if you cannot distinguish who is speaking purely from the metric notation, the craft is flawed.
+3. **In responsive duets, precede each vocal takeover with a single spoken word echoing the opponent's query** (Scene 4: "Yes!" "Right now!"). *Failure condition*: Repetition beyond three consecutive times turns mechanical.
+4. **To convert political argumentation into lyrical arias, construct an unbroken chain of interrogative sentences aimed at the opponent's own self-proclaimed title** (Scene 7: four consecutive "Why" questions attack the legitimacy of the "Loyal and Righteous National Salvation Army"). *Failure condition*: If the opponent lacks self-proclaimed moral hypocrisy, substitute concrete narrative contrasts.
 
 ---
 
-## 五、《潘金莲》：荒诞、跨时空与帮腔写成角色
+## 3. *The Legend of the White Snake (Baishe Zhuan)*: The Three-Column Ledger of Repertoire Reorganization
 
-**①版本**　魏明伦"荒诞川剧"，底本＝北方文艺出版社 1987 年 9 月版，署"一九八六年九月京沪宁演出后修改"。⚠️ **源 PDF 物理缺页（页图核过，不是 OCR 失败）**：楔子全部、毒杀武大与杀嫂、自白大半只印页顶几行，受影响条目一律标〔残〕，**不要当完整依据**。**本子不标任何板式与曲牌**，只标"唱／帮腔／合唱／背唱／内唱／无词歌"；唯二的声腔标注是"唱河南梆子风味"与"唱歌剧咏叹调"——**演出还揉进越剧与流行歌曲，但本子上没有；凡本子不标的声腔不承担结构功能**。本剧是板腔体写法（弹戏胡琴），不是曲牌体。
+**① Editions**  
+Playwright: Tian Han. Base text = **Writers Publishing House, June 1955 First Edition, 16 scenes**. **Online full texts are not the 1955 edition**—while scene titles match, musical meters were systematically overhauled (atypical meters were flattened into standard Xipi meters, and the Sheng male role was curtailed); the 1955 book serves as base text, with online texts used only for collation and annotated as "variant reads...", **with seven verified textual discrepancies**. **Citations transcribed from facsimile pages are unmarked; those from OCR are marked `[To Verify]`, totaling 43 instances.** Complete tables are located in [reference-baishezhuan.md](reference-baishezhuan.md); references below to §8–§12 cite that document.
 
-**②结构层**　**全剧不分场**，只有楔子与尾声两个标题页，中间不断线，换段靠灯光、云阶、锣鼓、旌旗遮场、跨时空人物上场，笔记按事件切成 14 单元（见 §6）。**尾声不判案，用争辩收场**："吉他变调弹古音，是非且听百家鸣"。
+**② Structural Layer**  
+16 scenes exhibiting extreme length disparities: **The Broken Bridge (15 pages), The Wine Transformation (11 pages), and Boating on the Lake (10 pages) are the longest scenes, precisely mapping the three turning points of the Bai-Xu relationship; Guarding the Mountain, Flooding Jinshan, and Crossing the Yangtze are merely 2 pages each**—empirical proof that "scenes dominated by singing and spoken verse are written concretely, while scenes dominated by acrobatics and martial dance are written schematically" (§3). **Two scenes contain zero singing**: The Nuptials (pure spoken dialogue, yet representing one of the major narrative pivots) and Flooding Jinshan; **The Nuptials can dispense with singing because its climax occurs at the exact moment terms are agreed upon, not in emotional release.** See §8.
 
-**③唱段层**　约 50 段。**判川剧的韵不能用普通话十三辙套**：四川官话前后鼻音不分，人辰与中东通押；入声派入阳平，"色客热洁"可入乜斜辙（6d 节）。**险韵留给最长的那一段**（雪夜饯行乜斜辙）。**换韵即翻脸**：武松从一七换到由求的同时勃然大怒。**跨时空对唱同押一韵**：潘金莲与吕莎莎一句一换共押言前；潘金莲接住西门庆的韵继续唱（二人未见面已同韵）。见 §8。
+**③ Aria & Musical Layer**  
+71 aria blocks. **Bai Suzhen's dominant rhyme is *Jiang-Yang***, modulating only under specific dramatic conditions (*Yao-Tiao* = stealing the celestial herb and entrusting the child; *Huai-Lai* = grief at the alms bowl entombment; *Yan-Qian* = romance during the lake excursion); **at Broken Bridge, Bai sings in *Jiang-Yang* while Xu sings in *Yan-Qian*, marking the only instance where vocal identity is split by rhyme category** (§6d). The three longest arias belong exclusively to Bai Suzhen—a pure Dan singing vehicle. **Scene 14 (Broken Bridge) integrates nine distinct Banshi meters across 18 aria sections**; extended sequences are partitioned by tempo: **slow meters express the past, fast meters confront immediate revelations**. The opera employs nine atypical meters (Xiao'anban, Bangzi Qingban, Bozi Pengban, Huilong, Fan-Xipi, Kuai-Yuanban, Sipingdiao...) **each linked to a distinct dramatic condition**—cataloged in the appendix under "Dramatic Situation → Banshi." See §9–§10.
 
-**④程式层**　**自报家门改造成两种**：外来人物用自己的语体自报（安娜用小说名言，施耐庵用著作），由本地人当场点破；定场诗下场诗一概不用，下场改用评论、自嘲、争辩；虚拟表演原样保留。**云阶是常设的跨时空高台：跨时空人物走云阶、本朝人走平台，空间高低即时代分层，不用换景。** **帮腔写成一个角色**，四种功能：说出角色不肯说的、替他叙述动作并接下句、下判语点潜台词、插进宾白当断喝——**不是伴唱，是台上第二个说话的人**。见 §9。
+**④ Conventional/Chengshi Layer**  
+**Repertoire adaptations allocate conventions strictly by character nature: retained for supporting roles and supernatural entities, stripped from human protagonists.** Entrance overture suites (*Paizi*) are given only to ensembles and celestial/demonic beings—**Paizi represents the voice of the non-human realm**; mortal protagonists never sing Paizi (contrasting with the structural function of Qupai suites; see `sw-chinese-opera-qupai`). Self-introductions are restricted to Fa Hai; exit poems are converted into shared rhymed couplets split between two characters. **Crucial pitfall warning: Removing self-introductions for protagonists is an adaptation choice for this modern revision, not a universal Peking Opera rule.**
 
-**⑤创作过程**　**跨时空人物 9 个的总规律：他们是评论席，能对话、能干预，但改不动情节**（武则天传金莲上殿"替你作主"，金莲掩面逃下——当事人拒绝出庭）。**作者自白本身是剧本体对话**（对话者卡夫卡、欧阳予倩、尤奈斯库、批评家），且**把反方意见原样写进文章并让它占最后发言权**；**自我定位是魔幻现实主义，不是荒诞派**，批评家两头堵，**两方并列不裁决**。**开关句**（12b 节）：《易胆大》走"戏曲现代化"、《四姑娘》走"现代剧戏曲化"，**一个戏只走一个方向**；本剧是前者，与《沙家浜》《朝阳沟》相反。见 §9。
+**⑤ Creative Process**  
+**Tian Han's Preface constitutes a primary creation memoir**: tracing 12–13 years through Guilin (*The Golden Alms Bowl*, banned upon premiere) → Theatre Academy → China National Peking Opera Company (1954). **Wang Yaoqing's Five Aria-Composition Principles**: (1) Lyrics must not be overly rigid in meter to grant melodic flexibility, (2) Cut the scene *Decocting Medicine* but transplant its [Erhuang Manban] duet into *Dispelling Doubts*, (3) Alter single words for vocal ease ("Shielding him" → "Leaning toward him"), (4) Embrace Gaobozi meters where dramatic tension peaks, (5) Transpose entire scene vocal modes. **On "Banshi notation as a statement of intent"**: "Although the playwright specifies meters, trust is placed in director and performers... to create collaboratively"—defining the **upper boundary** of playwriting authority, paired with the lower boundary that "playwright responsibility ends at tonal regulation and line metrics" (§10). See §11–§12.
 
-**⑥可迁移手法**
-1. **跨时空人物只准评说，不准改情节。** *自检*：删掉任何一个跨时空人物，故事线照样走通吗？走不通说明写成了情节功能，荒诞会塌成穿越。
-2. **跨时空对唱要同押一韵。** *失效*：若两人本来就该"说不到一起去"（芝麻官）则反而要换腔换韵。
-3. **帮腔是台上第二个说话的人，写本子时要给它分工。** *失效*：帮腔属川剧高腔的传统装置，移到京剧、豫剧、越剧上没有对应物。
-4. **最难堪的地方不给词**（钻裆、被推倒两处只给一声"啊"）；**中场休息可以写进剧情**。*失效*：后者只有"演员承认自己在演戏"的体裁能用。*自检*：全剧"无词歌"超过三处就是滥用。
-
----
-
-## 六、罗怀臻·越剧《李清照》《真假驸马》：不标板式的本子
-
-**①版本**　《罗怀臻戏剧文集》第三卷（上海人民 2008），越剧七部＋卷后语。**全卷 7 部、496 处唱段标记，板式标注 0 处**——规则是"**有（唱）标记的是唱，没标记的是白**"，板式腔调全归作曲。**这驳倒"板腔体的编剧必须标板式"这个隐含前提**：那是京剧惯例（第九节两式并列）。**收的都是当代新编（1986–2003），不是越剧传统骨子老戏**；《真假驸马》《蛇恋》标了修改年但**书里不收旧稿，两版差异无从对读**；《青衫·红袍》两处署名不一（按剧末"龚孝雄"并存疑）。
-
-**②结构层**　《李清照》七场，**结构法是"一场一首词"**：每场用她一支词作场名，幕内唱该词开场收场，首尾同用《如梦令》、同一副秋千，中间隔五十年。七场唱段数 12/13/3/9/3/2/1，**第五场用一段超长唱抵掉唱段数量的少——"多段"与"一长段"是两种重场写法**；第七场主角一句唱也没有，**大收煞可以不唱**。《真假驸马》六场 18/18/7/19/5/6，**唱压在前四场，第六场（金殿高潮）几乎全是白**；人物表注"孪生兄弟由同一演员兼饰"——**这个题材是为一赶二的行当条件生出来的**。见 §1–§2。
-
-**③唱段层**　**七字句是主干，十字句用于叙事，两者在同一段内自由交替**；短句档齐全（五字成段、四字对句、三字顶针、二字断顿），长句到 11–13 字且**必须回到齐言收**。**越剧扩段靠同字头齐言排比，不靠垛**——全卷真垛句仅 1 处且紧跟着就是身段提示：**越剧的垛句是身段的谱面，不配身段就不用**；同字头**2 句用于对切、4 句常规、6 句为上限**。韵：一段一韵到底是通例，**段中换韵的触发条件是"换说话对象"**，**人辰与中东／庚青互押是常态**（吴语音系特征是**笔记的推断，不是原书**）。**不标板式时，字数就是板式**（6e 节）。见 §3。
-
-**④程式层**　**删**：自报家门、下场诗、锣鼓穿戴检场、板式、行当全为 0。**留**：上下场（无锣鼓）、圆场、**内唱上场 1 处**（京剧【导板】的功能位）、**背供 2 处**（标"（暗唱）"，**只用于猜疑**，与《沙家浜》把背供做成技术中心是两个方向）。**增**：**【字幕：】交代时空**（替掉自报家门与定场白）、**幕内唱／幕后合唱**（7 部皆有：主题句包边、场面交代、心理旁白、合头）、主题歌、评书人。
-
-**⑤创作过程**　卷后语 8 条是越剧部分唯一的一手创作记录：《真假驸马》是他第一部上演的剧本，因此被上海越剧院引进；**《梅龙镇》《青衫·红袍》"专为章瑞虹度身定做"**——共同点（男角、一赶多、大段对唱）即"度身"的具体内容；**同一素材的多次形态转换**（《风月秦淮》→汉剧《柳如是》→本卷越剧本）；**《蛇恋》易名即易主题**。**本卷支持不了的六件事（reference 必须留空）见 §7**——**不要用京剧十三辙或豫剧中州韵填**。
-
-**⑥可迁移手法**
-1. **越剧对唱的默认形态：七字单句对切、一人一句、同韵到底、句句咬字接力**。*失效*：三人以上同场时改成"两两对切＋一句重唱收"。*自检*：遮掉人物名，句子是否仍连成一段完整的话（第八节）。
-2. **句长递减对唱（七→五→四→二字）表"两人越逼越紧"，不必是吵架**（《梅龙镇》母子说理）——与豫剧"狗撕咬"（吵架专用、有板式名）并列两档：**越剧没有板式名，编剧只能靠字数做出这个效果**。
-3. **一段大唱中换说话对象就换韵**（跪母用人辰、转跪妻用言前）；**同字头对准第二人称时用来清算而非抒情**（"我问你／我敬你／难得你"，每句钉死一件已发生、不可逆的事）。*失效*：对象不变只是情绪变时不要换韵。
-4. **事理辩驳、身份举证、群体压迫用白；一个人对另一个人交心用唱**。*失效*：若该场是全剧唯一重场且必须有大唱段，改为"白推进＋末尾一段超长唱收"（《李清照》第五场）。
-5. **传主是诗人／词人时，用他自己的作品做场框，原作与新写唱词不混排**（《李清照》七场）；**为女小生写戏则让他哭、示弱、唱儿歌，并优先一赶多**。*失效*：后者在讲究雉尾／扇子／穷生分路的剧种不适用——**与翁偶虹"按现成行当路数写"方向相反，两条并列**（第四节）。
+**⑥ Transferable Techniques**
+1. **Organize traditional repertoire adaptation using a Three-Column Ledger: Which conventions to retain, which scenes to cut (and where to relocate their arias), and which new segments to add** (Retain: Paizi / Opening Couplets / Kutou wails; Cut: *Decocting Medicine*, moving its duet to *Dispelling Doubts*; Add: Wind God escorting Xu Xian and Xu Xian's [Fan-Xipi]). *Self-check*: List these three inventories before submitting a draft; inability to list them reveals superficial rewording (§11).
+2. **Relocating an aria to another scene drags its vocal mode (*Shengqiang*) along, fundamentally altering the tonal key of the receiving scene—either embrace this shift or recompose the melody from scratch** (*Dispelling Doubts* shifted from Xipi to Erhuang entirely due to this transplant).
+3. **In dramatic confrontation, assign opposing characters distinct rhyme categories** (Broken Bridge); **to give Character B the moral standing to chastise Character A, ensure Character A's betrayal was engineered by external force** (Scene 13: adding the Wind God, Tian Han noted: "This gives Xiaoqing justified grounds to denounce Xu Xian"). *Failure condition*: Allies or shared-plight characters must not split rhymes.
+4. **Recapitulation must carry fresh narrative revelations** (Broken Bridge: Xu Xian's 16-line monologue recounts events from two prior scenes, but embeds two new facts that directly answer Xiaoqing's suspicions). *Self-check*: Strike out all known facts; if fewer than two new lines remain, delete the recapitulation.
+5. **A reunion climax can be staged as a silent tableau without lyrical singing** (Finale: Pagoda collapses, Bai Suzhen emerges amidst colored clouds without a single spoken or sung line). *Failure condition*: Ineffective if the audience expects a vocal tour de force from that specific star—achievable here only because final arias were reassigned to Xiaoqing.
 
 ---
 
-## 七、罗怀臻·地方戏：《金龙与蜉蝣》《典妻》与其余六部
+## 4. *Chaoyang Ditch (Chaoyanggou)*: Vernacular Lyrics & Practical Rhyme Tolerances
 
-**①版本**　《罗怀臻戏剧文集》第二卷（上海人民 2008），八部跨六剧种，**一处板式标记也没有**。**样本是一位作者、每剧种一到三部；只有淮剧跨 1981／1992／1994 三个时间点，可信度高于其余五个剧种**。**两部要打折扣**：《西楚霸王》1994 原创京剧本、1998 改淮剧（京剧程式词"起霸""趟马"留在淮剧本里）；《杨贵妃》自音乐剧改来（四五字短句是音乐剧留下的）。**韵辙一律按普通话归纳，未过方言韵表前只能当"押韵位置"的例子。**
+**① Editions**  
+Playwright: Yang Lanchun. Base text = **People's Literature Publishing House, March 1978 Edition**, inside cover marked "Henan Yu Opera Troupe No. 1 Performance Script, January 1977"—**this is the post-Cultural Revolution revival script, not the 1958 Troupe No. 3 premiere text**. **The thematic ideological framework is historically dated, but the technical craft is enduring**: overtly dated slogans ("Three Major Differences", etc.) are treated as historical data, not dramaturgical rules. **The script omits all Banshi musical notations, marking only `(Sings)`**; musical meters are reconstructed from the 16 vocal scores appended to the volume; **two scores provide only tempo marks ("In-Law, Please Sit" and the Finale Chorus); do not invent Banshi names for them**.
 
-**②结构层**　《金龙与蜉蝣》（1992，首演冠"都市新淮剧"）**不用"场"用"幕"**：序幕＋五幕＋尾声，时间刻意不落朝代；三次字幕大跳把三代人压进七个单元，跳跃之间一律用幕后伴唱填缝——**传统一场一时一地的规矩没破，破的是场与场之间的时距**。**循环结构**：序幕老王被弑悬于王座上方↔尾声金龙被孙子刺穿倒于王座——**寓言的收束不靠人物弧线，靠结构复现**。**它没有"主线的集中"**：三代人各有一条线——**寓言体可以例外，条件是必须有一件贯穿砌末替主线维持因果**（头盔），与范钧宏"纵的集中"直接冲突，**两条并排放**（第二节）。《典妻》（2000，据柔石《为奴隶的母亲》）五场＋尾声，**第一场与尾声的四问四答一字不改地重复**，答案却已相反。见 §4–§6。
+**② Structural Layer**  
+9 untitled scenes: Scenes 1–3 = Going to the Countryside, Scenes 4–6 = Wavering, **Scene 7 is the sole turning point**, Scenes 8–9 = Staying. **Both major turning points occur on mountain paths** (Scene 2 climbing the mountain, Scene 7 descending the mountain), utilizing the same melodic tune and initial line structure, with the second pass answering the first line-by-line—**the most rigorous structural symmetry in the work**. Sung-to-spoken ratios across all 9 scenes are fully tabulated (Scene 5 ensemble has the lowest sung ratio at 8:92; Scene 8 mother-daughter duel has the highest at 73:26): **Ensembles rely on speech; two-character confrontations rely on song**—providing empirical numerical proof for sung/spoken task allocation (§7). See §1.
 
-**③唱段层**　《金龙与蜉蝣》44 段（金龙 12、蜉蝣 11、玉凤 8、玉荞 5、伴唱 7）——**唱段分配本身画出人物结构：两代男人对唱，三代女人轮唱**；**伴唱只管盖住时间跳跃与翻译说不出口的内心，从不推进情节**。**"都市新淮剧"改的不是韵，是句长的方差**：同一段里字数从 3 涨到 14，上下句与韵脚没动，动的只有句腰。《典妻》39 段，妻占 20 段；**最长最重的三段全在第五场（回家路上），而第五场没有任何情节；尾声（儿子死）一句唱都没有**——**这是对"把唱段留给价值转折最大的那一场"的一次反例，一手的分歧，两条并列**（第三节）。**对唱的收煞靠字数，四种并列**：问句变短答句不变、答句末轮多两句、双方递减到一字、顶针递接收到三字（第八节）。见 §6。
+**③ Aria & Musical Layer**  
+50 aria blocks. **Per-scene aria distribution: 8 / 3 / 9 / 5 / 2 / 9 / 5 / 4 / 5—the turning point scene does not have the most arias, but contains the longest single aria** (Scene 7 features ~30 lines locked to a single rhyme): expository scenes use numerous short arias to define character baselines, while the turning scene delivers one monolithic aria block to the protagonist. **The [Erba Ban] family appears 11 times as the overwhelming backbone**; Manban (slow meter) appears only twice, restricted to opening self-expositions and offstage choruses. **The notation "Zhuan" (Modulate) signals metric line restructuring**: wherever the score writes "Modulate to [Duoban]," lyrics shift from 7/10-character lines to 3/4-character stacked pulses—**when line meter shifts, musical meter must modulate** (§6e). Rhyming: **Lower lines rhyme 100%; upper lines rhyme ~50%**; adjacent-rhyme blending, dialect rhyme categorization, and mid-aria rhyme switches are permitted; **nine broad rhyme classes cover all 50 arias, while narrow rhymes are never used**—vernacular librettos default to broad rhymes (§6d). See §2, §3, §5.
 
-**④程式层**　**歌队层**：1992 年以后的七部部部有（幕后伴唱／幕内唱／合唱原诗／帮腔＋莲花落／内唱，形态因剧种而异），职能三项——交代时空、翻译内心、评论事件，**整体替代定场诗与下场诗**；**唯一没有歌队的《韩信之死》（1981）也是唯一还留着定场诗与（念）标记的一部——三项一起消失，是同一件事**（与曲牌体"副末开场＋集唐下场诗"同功能位，第五节）。**川剧帮腔是唯一能嵌进唱句内部的，这是高腔与其他板腔体剧种在文本形态上最硬的分界。** 程式的两条当代用法：**程式名直接写进科介；程式不删、换承担对象**（12c 节）。
+**④ Conventional/Chengshi Layer**  
+**Self-introductions, opening poems, and exit poems were outright discarded, not rewritten**; **entrances/exits, asides `(Sings Aside)` `(Aside Spoken)`, and offstage singing are retained and modernized** (Scene 6 substitutes offstage singing for reading a letter); **an offstage ensemble chorus is introduced as a structural refrain (*Hetou*)**, and a full ensemble chorus replaces the traditional exit poem in the finale. **Modern opera discards imaginary props (*Qimo*), but preserves the choreographic stylization of physical movement** (§12a). **Transitioning from speech to song relies on a single device: a direct vocative term (Character Name / Title)**—aligned with *The Peony Pavilion (Dreaming in the Garden)* and Luo Huaizhen's Yue operas, bridging both musical systems (§7). **Role types (*Hangdang*) are not labeled, but dramatic functions remain distributed by traditional role divisions** (§4).
 
-**⑤创作过程**　卷后语 10 条：《韩信之死》是"真正意义上的处女作"，写作时不足 25 岁，**除个别字词外完全保持初始风貌**——用作"同一作者十一年前后对比"的样本是可靠的；加上《西楚霸王》（同一批人物、隔十三年）与《金龙与蜉蝣》，**淮剧三部是本批唯一一组可以量出作者手法变化的时间序列**。**"都市新戏曲"有确切的作品、年份与场次**（1992 写、1993 年 5 月上海首演、同年 9 月成都会演），不要写成泛论。**苦戏 vs 悲剧的实物对照**：《金龙与蜉蝣》结尾受害者点头认可加害者＝悲剧；《典妻》结尾妻抱死儿坐到雨中＝苦戏（12c 节）。见 §7。
+**⑤ Creative Process**  
+**The volume lacks prefaces, postscripts, revision notes, or production logs**, contrasting sharply with the three Peking Opera case studies; primary evidence is confined to inside covers, copyright pages, production photo captions, and composer credits. Creative reflections are drawn from external interviews (the finale was drafted via live dictation + performer transcription + instantaneous composition; "start from character creation, with singing as primary driver"). **Four evolving variants of opening hand props** provide a textbook demonstration of textual collation.
 
-**⑥可迁移手法**
-1. **不标板式就用字数换挡**：一段唱里字数 5→7→4→3 的四次变化，可做出散板—原板—快板—垛板的效果（《典妻》第五场）。*失效*：给传统剧团写需按谱行腔的本子时，该标板式仍要标。*自检*：把每句字数列成数列，全程 7、7、7、7 就是没有节奏设计。
-2. **垛句垛事件清单，不垛形容词**（"过乌江，抗秦军，入咸阳，灭赢政"）；**改编古典题材时原诗归歌队、新词归角色，两种语体不混排**。
-3. **"同词异境"是当代新编的主结构手段**：一段词一字不改地重复两三次，靠语境翻转（主题歌三现、《典妻》首尾四问四答、《垓下歌》三唱）。*自检*：第二次出现时改了词，效果立刻降级——**改词等于承认第一次没写准**。
-4. **一件砌末贯穿全剧因果**（头盔：锅→糊名→认父→讨饭→迷惑；旧雨伞：三年进出同一把）。*自检*：数它出现几次、每次换没换意义；少于三次或意义不变，它只是布景。
-5. **结尾"诗化升华"与题材绑定，不是风格偏好**：寓言／传奇题材四部一律死者复活／幻象漫天／葬礼变婚仪，写实题材四部一处升华也没有；同理**"都市新戏曲"≠"句式破格"**（《金龙与蜉蝣》句长方差 3–14／《典妻》规整七字十字）——**讲都市化必须分寓言／写实两路**（12c 节）。*自检*：写实题材想用升华结尾，先问前四场有没有一处非写实场面做过铺垫。
+**⑥ Transferable Techniques**
+1. **Infusing vernacular speech into arias requires three components: direct quotations, concrete numbers, and dialect reduplicated adjectives; missing two disqualifies the text into spoken prose** ("Useless", "Fool", "7 o'clock"; snow-white, jade-green, plump-full, porcelain-hard). *Failure condition*: Core lyrical monologues may rely on concrete objects without quotations. *Self-check*: How many proper nouns / numbers appear in this aria? Zero indicates abstract emptiness.
+2. **Transform an ordinary domestic task into a major aria suite through a repeating three-character lead phrase (*Lingju*)** (Scene 6: ghostwriting a family letter, led four times by "Write down this:" across ~22 lines). *Failure condition*: Repeating a lead phrase more than five times devolves into doggerel.
+3. **Structure argument duets with diminishing line lengths: 4 lines → 2 lines → 1 line → half-line, without adding tempo stage directions** (Scene 8: Mother-daughter duel). *Failure condition*: Once reduced to half-lines, one party must deliver an extra line to lock and close the section.
+4. **Ground dramatic conflict first in manual labor tasks** (Scene 4: accidentally hoeing young crops; Scene 5: dropping the water bucket—both actable physical tasks). *Failure condition*: If the protagonist is an expert, substitute with interpersonal teasing.
+5. **Traverse the identical physical road twice, systematically resolving each landmark on the second pass** (Scene 2: mountain travel song / Scene 7: retrospective review). *Self-check*: Did every object referenced in the second pass appear during the first?
 
 ---
 
-## 八、"从素材到审腔"工作流附录（京剧三本合成）
+## 5. *Pan Jinlian*: Absurdism, Trans-Temporal Collisions, & Bangqiang as Character
 
-三本各带一份创作过程材料（翁自述＋程砚秋三条修改／汪曾祺后记＋两版差异／田汉序＋王瑶卿说腔五条），合起来是一条完整的链。方法层见 sw-chinese-opera-banqiang 第十六节，此处每步只给实证。
+**① Editions**  
+Wei Minglun's "Absurdist Sichuan Opera (Chuanju)"; base text = Northern Literature & Art Publishing House, September 1987 Edition, signed "Revised following Beijing, Shanghai, and Nanjing performances, September 1986." ⚠️ **Source PDF has physical missing pages (verified against facsimiles, not an OCR scan failure)**: the entire Prologue, the poisoning of Wu Da, the slaughter of the sister-in-law, and most of the self-confession are cut off at the top margin; affected items are marked `[Damaged]` and **must not serve as complete evidence**. **The script marks zero Banshi meters or Qupai tune titles**, indicating only "Sings / Bangqiang / Chorus / Aside / Offstage / Wordless Vocalise"; the only two vocal notations are "Sung with Henan Bangzi flavor" and "Sung as an operatic aria"—**productions interpolated Yue opera and pop songs, but these are absent from the printed page; unmarked musical forms bear no structural burden.** The work utilizes Banqiang mechanics (Tanxi / Huqin), not Qupai.
 
-| 步 | 锁麟囊 | 沙家浜 | 白蛇传 |
+**② Structural Layer**  
+**The entire play runs without scene divisions**, featuring only Prologue and Epilogue title markers; narrative continuity is unbroken, using lighting, tiered cloud steps (*Yunjie*), percussion, banner walls, and trans-temporal character entrances to pivot. Notes divide the action into 14 event units (see §6). **The epilogue refuses to deliver a legal or moral verdict, closing on unresolved debate**: "Guitar alters pitch to play an ancient chord / Let a hundred schools debate right and wrong."
+
+**③ Aria & Musical Layer**  
+~50 aria blocks. **Rhyme in Sichuan Opera cannot be judged via standard Mandarin Thirteen Rhymes**: Sichuan Mandarin merges front and back nasals (*Ren-Chen* and *Zhong-Dong* rhyme freely); checked-tone words merge into Yangping, allowing "Se, Ke, Re, Jie" to enter the *Mie-Xie* rhyme (§6d). **Narrow, precarious rhymes are reserved for the longest aria** (Farewell on a Snowy Night in *Mie-Xie*). **Shifting rhyme signifies immediate rupture**: Wu Song abruptly shifts from *Yi-Qi* to *You-Qiu* as his fury erupts. **Trans-temporal duets share a single unified rhyme**: Pan Jinlian and Lü Shasha alternate line by line sharing *Yan-Qian*; Pan Jinlian catches Ximen Qing's rhyme and continues singing before they have even met. See §8.
+
+**④ Conventional/Chengshi Layer**  
+**Self-introductions (*Zibao Jiamen*) are bifurcated**: external historical/fictional figures introduce themselves using their native linguistic register (Anna Karenina quotes her novel's opening; Shi Nai'an cites his book), immediately unmasked by local characters; opening and exit poems are discarded in favor of critical commentary, self-mockery, and dialectical debate; virtualized physical staging is retained intact. **Cloud Steps (*Yunjie*) serve as a permanent multi-tier spatial platform: trans-temporal commentators occupy the cloud steps while contemporary Ming-dynasty characters occupy the stage floor—vertical elevation establishes temporal stratification without scene changes.** **Bangqiang is dramatized as a distinct character**, performing four functions: voicing what characters refuse to utter, narrating physical actions while bridging lines, delivering verdicts on subtext, and cutting into spoken dialogue as an authoritative rebuke—**acting not as an accompanying choir, but as a second speaking interlocutor on stage**. See §9.
+
+**⑤ Creative Process**  
+**The Law of the 9 Trans-Temporal Figures: They serve as a commentary panel—capable of dialogue and intervention, but powerless to alter plot outcomes** (Empress Wu Zetian summons Jinlian to court promising "I shall grant you justice," yet Jinlian veils her face and flees—the accused refuses to testify). **The author's self-reflections take the form of theatrical dialogues** (interlocutors include Kafka, Ouyang Yuqian, Ionesco, and drama critics), **incorporating opposing critical arguments verbatim into the essay and granting them the final word**. **The author self-identifies as Magic Realism, not Theatre of the Absurd**; critics are balanced dialectically without authorial adjudication. **The Directional Axis** (§12b): *Master Yi (Yi Danda)* represents "Traditional Opera Modernization"; *Fourth Sister (Si Guniang)* represents "Modern Drama Theatricalization"—**a single production pursues only one direction**; this play embodies the former, contrasting with *Shajiabang* and *Chaoyang Ditch*. See §9.
+
+**⑥ Transferable Techniques**
+1. **Trans-temporal figures are permitted only to critique, never to redirect plot mechanics.** *Self-check*: If you remove any trans-temporal character, does the central plot spine still function? If it breaks, they were written as functional plot agents, collapsing absurdism into standard time-travel.
+2. **Trans-temporal responsive duets must be locked to the identical rhyme category.** *Failure condition*: If the two characters are fundamentally incapable of mutual comprehension (e.g., the petty Magistrate), force contrasting modes and rhymes.
+3. **Treat Bangqiang as an independent onstage speaking entity, assigning it explicit dramatic functions in the script.** *Failure condition*: Bangqiang is an indigenous apparatus of Sichuan Opera Gaoqiang; transplanting it into Peking, Yu, or Yue opera without structural adaptation fails.
+4. **Omit dialogue at moments of extreme degradation** (crawling between legs, being violently shoved down: scored with only a single gasp "Ah!"); **an intermission can be written directly into the dramatic narrative.** *Failure condition*: The latter is viable only in metatheatrical works where actors acknowledge their performance. *Self-check*: If wordless vocalises occur more than three times, they are overused.
+
+---
+
+## 6. Luo Huaizhen · Yue Opera: *Li Qingzhao*, *The True & False Imperial Son-in-Law* (Scripts Without Marked Banshi)
+
+**① Editions**  
+*Collected Dramatic Works of Luo Huaizhen*, Vol. 3 (Shanghai People's Publishing House, 2008): 7 Yue operas + volume postscript. **Across all 7 plays and 496 aria notations, Banshi markings appear 0 times**—operating on the rule that "**text marked with `(Sings)` is sung; unmarked text is spoken**", outsourcing all meter and melodic choices to the composer. **This refutes the implicit assumption that "Banqiang playwrights must specify Banshi"**: that is a Peking Opera convention (§9). **All scripts are contemporary new works (1986–2003), not traditional heritage plays**; *True and False Imperial Son-in-Law* and *Snake Love* note revision years, but **prior drafts are excluded, preventing textual collation**; *Blue Robe · Red Gown* carries dual conflicting author credits (resolved in favor of Gong Xiaoxiong with reservations).
+
+**② Structural Layer**  
+*Li Qingzhao* (7 scenes) **is structured on "One Scene, One Ci Poem"**: each scene uses one of her poems as its title, with offstage vocals singing that poem to open and close the scene; the prologue and epilogue share *Rumengling* and the identical courtyard swing, separated by 50 years. Per-scene aria distribution: 12 / 13 / 3 / 9 / 3 / 2 / 1; **Scene 5 utilizes a single massive aria to balance its low aria count—"multiple short arias" versus "one monolithic aria" represent two distinct methods of weighting anchor scenes**; Scene 7 gives the protagonist zero singing: **a grand climax can conclude without song**. *True and False Imperial Son-in-Law* (6 scenes, 18 / 18 / 7 / 19 / 5 / 6): **singing is packed into the first four scenes; Scene 6 (the imperial court climax) is almost entirely spoken dialogue**; character note: "Twin brothers played by the same actor"—**the dramatic premise was invented specifically to exploit dual-role virtuosity (*Yigan'er*)**. See §1–§2.
+
+**③ Aria & Musical Layer**  
+**7-character lines form the spine; 10-character lines handle exposition; both alternate freely within a single aria block**; short lines are fully represented (5-character standalone blocks, 4-character couplets, 3-character thimble links, 2-character staccato breaks), while long lines expand to 11–13 characters but **must resolve on equal-meter closes**. **Yue Opera expands an aria through repeated lead-character parallelism, not through Duoju stacks**—true Duoju occurs only once in the entire volume, followed immediately by a movement cue: **in Yue Opera, Duoju serves as a score for physical choreography; do not use it without choreography**; identical lead-character lines: **2 lines for responsive cutting, 4 lines standard, 6 lines maximum ceiling**. Rhyme: sustained single-rhyme arias are standard; **switching rhymes mid-aria is triggered strictly by "shifting the interlocutor"**; **cross-rhyming between *Ren-Chen* and *Zhong-Dong* / *Geng-Qing* is normal practice** (Wu dialect phonology is an analytical inference, not noted in the text). **When Banshi is omitted, character count dictates the rhythm** (§6e). See §3.
+
+**④ Conventional/Chengshi Layer**  
+**Cut**: Self-introductions, exit poems, percussion/wardrobe stagehands, Banshi, and role types are all reduced to 0. **Retained**: Entrances/exits (unaccompanied by percussion), stage circles (*Yuanchang*), **offstage vocal entrance (1 instance**, fulfilling the function of Peking Opera's [Daoban]), **asides (2 instances**, marked `(Silent Song)`, **used exclusively for mutual suspicion**, diverging sharply from *Shajiabang*'s use of asides as technical centerpieces). **Added**: **`[Subtitle:]` establishing time and space** (replacing self-introductions and opening spoken verse), **offstage solo/chorus** (present in all 7 plays: framing thematic motifs, providing exposition, voicing internal monologues, supplying refrains), theme songs, and dramatic narrators.
+
+**⑤ Creative Process**  
+Volume Postscript (8 notes) provides the sole primary creation log for the Yue opera section: *True and False Imperial Son-in-Law* was his first staged script, prompting his recruitment by the Shanghai Yue Opera Troupe; ***Meilong Town* and *Blue Robe · Red Gown* were "custom-tailored specifically for Zhang Ruihong"**—their shared traits (male lead, multi-role changes, massive responsive duets) define the parameters of tailoring; **the morphological evolution of raw material** (*Fengyue Qinhuai* → Han opera *Liu Rushi* → Yue opera script); **renaming *Snake Love* altered its core theme**. For the six areas unsupported by this volume (§7), **do not invent data using Peking Opera Thirteen Rhymes or Yu Opera Zhongzhou Rhymes**.
+
+**⑥ Transferable Techniques**
+1. **The baseline architecture of a Yue Opera duet: 7-character single-line antiphony, alternating line by line, maintaining a single rhyme throughout, with each line latching onto the previous word.** *Failure condition*: When three or more characters are present, convert to "pairwise exchanges + a shared unison resolution." *Self-check*: Blind the character names; do the alternating lines still read as a coherent, continuous speech? (§8).
+2. **Diminishing line-length duets (7 → 5 → 4 → 2 characters) depict characters tightening their psychological grip, not necessarily an angry quarrel** (*Meilong Town*: mother and son reasoning) — contrasting with Yu Opera's "Dog Biting Dog" convention (reserved for furious brawling, possessing its own Banshi name): **lacking explicit Banshi names, Yue Opera playwrights achieve this tension purely through line lengths.**
+3. **Modulate rhymes within an extended aria only when switching the addressed interlocutor** (kneeling before the mother uses *Ren-Chen*; turning to kneel before the wife switches to *Yan-Qian*); **repeated lead words aimed at a second-person pronoun serve to demand an accounting, not to lyricize** ("I ask you / I honor you / How rare of you"—each line locking down an irreversible, accomplished fact). *Failure condition*: If the interlocutor remains constant and only emotion changes, do not switch rhymes.
+4. **Use spoken dialogue for logical debate, legal proof, and group coercion; reserve singing for intimate emotional revelation.** *Failure condition*: If the scene is the sole dramatic anchor of the play and demands an extended aria, use "spoken dialogue to advance the conflict + an ultra-long closing aria to resolve" (*Li Qingzhao*, Scene 5).
+5. **When the protagonist is a poet or lyricist, use their authentic works as scene frames, keeping original verses and newly written arias strictly separated** (*Li Qingzhao*, 7 scenes); **when writing for a female Xiaosheng (cross-gender male lead), allow him to weep, expose vulnerability, sing lullabies, and prioritize multi-role transformations.** *Failure condition*: Ineffective in opera styles governed by strict male sub-roles (*Zhiwei* pheasant-feather, *Shanzi* fan, or *Qiongsheng* destitute scholars)—**contrasting with Weng Ouhong's practice of writing to pre-existing role conventions; both paths stand valid** (§4).
+
+---
+
+## 7. Luo Huaizhen · Regional Operas: *Golden Dragon & Mayfly*, *The Leased Wife*, & Other Works
+
+**① Editions**  
+*Collected Dramatic Works of Luo Huaizhen*, Vol. 2 (Shanghai People's Publishing House, 2008): 8 plays spanning six regional genres, **containing zero Banshi notations**. **The corpus represents a single author with 1 to 3 plays per genre; only Huai Opera spans three distinct years (1981 / 1992 / 1994), offering higher historical reliability than the other five genres.** **Two scripts require interpretive caution**: *The Hegemon of Western Chu* was originally a 1994 Peking Opera, adapted in 1998 into Huai Opera (retaining Peking Opera conventional terms like *Qiba* military display and *Tangma* horse choreography); *Yang Guifei* was adapted from a Western-style musical (retaining 4/5-character rhythmic bursts). **Rhymes are categorized via Standard Mandarin phonology; until cross-checked with dialect rhyme tables, they serve only as examples of rhyme positioning.**
+
+**② Structural Layer**  
+*Golden Dragon and Mayfly* (1992, premiered as "Urban New Huai Opera") **replaces "Scenes" with "Acts"**: Prologue + 5 Acts + Epilogue, deliberately leaving the historical era unspecified; three massive subtitle time-jumps compress three generations into seven dramatic units, using offstage choruses to seal the temporal fractures—**traditional unity of time/place per scene remains unbroken; what is fractured is the elapsed interval between scenes**. **Cyclical Architecture**: Prologue opens with the old king assassinated and suspended above the throne ↔ Epilogue closes with Golden Dragon impaled by his grandson and collapsing onto the throne—**allegorical resolution relies not on character arcs, but on structural recurrence**. **It lacks "concentration of a single protagonist's plotline"**: three generations carry distinct threads—**allegorical drama permits this exception only if a single hand prop (*Qimo*) bridges the causal chain throughout (the helmet)**, directly contradicting Fan Junhong's "longitudinal concentration" (§2). *The Leased Wife (Dian Qi)* (2000, adapted from Rou Shi's *A Slave Mother*): 5 scenes + Epilogue; **the four questions and four answers in Scene 1 are repeated verbatim in the Epilogue**, yet their meanings are entirely reversed. See §4–§6.
+
+**③ Aria & Musical Layer**  
+*Golden Dragon and Mayfly* (44 arias: Golden Dragon 12, Mayfly 11, Yufeng 8, Yuqiao 5, Chorus 7)—**aria distribution maps character hierarchy: two generations of men duel in duets; three generations of women rotate in sequence**; **the chorus functions solely to bridge time jumps and voice unspeakable inner thoughts, never advancing plot**. "Urban New Huai Opera" altered not the rhyme, but the variance of line lengths: within the same aria, character counts swing from 3 to 14 without moving upper/lower couplet structures or rhyme endings, flexing only the waist of the line. *The Leased Wife* (39 arias; the Wife holds 20); **the three longest and most weighty arias all occur in Scene 5 (on the journey home), which contains zero plot development; the Epilogue (her son's death) contains zero singing**—**this stands as an empirical counter-example to "reserving major arias for the scene of greatest value reversal"; two divergent dramaturgical approaches stand side by side** (§3). **Duet cadences rely on line counts across four methods**: question lines shorten while answer lines hold; answer lines add two closing lines; both parties diminish to single-character bursts; thimble linkages cascade down to three-character cadences (§8). See §6.
+
+**④ Conventional/Chengshi Layer**  
+**The Chorus Layer**: All seven plays written after 1992 incorporate choruses (offstage accompaniment / offstage solo / choral poetry / Bangqiang + Lianhualuo folk chants / internal singing, varying by genre), executing three tasks: establishing time/space, translating internal subtext, and commenting on events—**collectively superseding traditional opening and exit poems**; **the only play lacking a chorus, *The Death of Han Xin* (1981), is also the only play retaining opening poems and `(Spoken)` annotations—the disappearance of both devices occurs simultaneously as part of the same evolution** (occupying the functional slot of Qupai's *Fumo* opening + *Jitang* exit poems, §5). **Sichuan Opera Bangqiang is unique in its ability to embed directly within an aria line, marking the most rigid textual boundary between Gaoqiang and other Banqiang genres.** Two contemporary treatments of convention: **writing conventional stage business directly into stage directions; retaining the convention while transferring it to a new dramatic entity** (§12c).
+
+**⑤ Creative Process**  
+Volume Postscript (10 notes): *The Death of Han Xin* was his "true maiden work," written before age 25, **retaining its original form except for minor wording**—serving as a reliable benchmark for "comparing the same author across an 11-year gap"; paired with *The Hegemon of Western Chu* (same characters, 13-year gap) and *Golden Dragon and Mayfly*, **these three Huai operas represent the only longitudinal sequence in the corpus tracing an author's stylistic evolution**. **"Urban New Theatrical Opera" is tied to precise works, dates, and venues** (written 1992, premiered May 1993 in Shanghai, showcased September 1993 in Chengdu); do not treat it as a vague abstraction. **Concrete contrast between "Suffering Drama" (*Kuxi*) and Tragedy**: *Golden Dragon and Mayfly* closes with the victim nodding in recognition of the oppressor = Tragedy; *The Leased Wife* closes with the mother clutching her dead child in the pouring rain = Suffering Drama (§12c). See §7.
+
+**⑥ Transferable Techniques**
+1. **When omitting Banshi notations, shift gears via line lengths**: varying line lengths in a sequence of 5 → 7 → 4 → 3 within an aria produces the perceptual progression of Sanban → Yuanban → Kuaiban → Duoban (*The Leased Wife*, Scene 5). *Failure condition*: When writing for traditional troupes requiring strict score composition, explicit Banshi notation remains mandatory. *Self-check*: Chart line lengths as a number sequence; an unbroken 7, 7, 7, 7 demonstrates a complete lack of rhythmic design.
+2. **Stack lines (*Duoju*) with an inventory of concrete events, never an inventory of adjectives** ("Crossed the Wu River, fought Qin legions, entered Xianyang, destroyed the First Emperor"); **in classical adaptations, assign original classical poetry to the chorus and newly authored lyrics to dramatic characters, never blending both registers within the same speaker.**
+3. **"Identical Words, Inverted Context" serves as the primary structural engine of modern adaptation**: repeat an exact stanza of lyrics two or three times verbatim, relying entirely on shifted dramatic context to invert its meaning (theme songs recurring three times; *The Leased Wife*'s opening and closing four questions/answers; *The Hegemon of Western Chu*'s three renditions of *Gaixia Ge*). *Self-check*: If words are altered on the second pass, the dramatic impact degrades immediately—**changing words admits the first version failed to land accurately.**
+4. **Anchor an entire dramatic causal chain with a single physical property (*Qimo*)** (The Helmet: cooking pot → obscuring names → recognizing father → begging for food → moral confusion; The Umbrella: carried on every departure and arrival across three years). *Self-check*: Count its appearances and verify if its symbolic meaning shifts each time; appearing fewer than three times or retaining static meaning reduces it to mere background decor.
+5. **A "poetic transcendent finale" is bound to genre material, not stylistic preference**: all four allegorical/legendary plays feature resurrections, celestial visions, or funerals transforming into weddings; all four realist plays feature zero transcendent elevation; similarly, **"Urban New Opera" does not equate to "breaking metric rules"** (*Golden Dragon and Mayfly* line lengths swing 3–14, whereas *The Leased Wife* maintains strict 7/10-character meters)—**the urbanizing impulse must be bifurcated into allegorical vs. realist pathways** (§12c). *Self-check*: Before using a transcendent ending in a realist drama, verify whether any non-realist device was established in the preceding four scenes.
+
+---
+
+## 8. "From Raw Material to Score Review (Shenqiang)" Workflow (Synthesized Across Three Peking Operas)
+
+Each of the three Peking operas preserves primary records of its creative process (Weng's memoir + Cheng Yanqiu's three structural edits; Wang Zengqi's postscript + two-version textual diffs; Tian Han's preface + Wang Yaoqing's five vocal principles), which together form an end-to-end operational pipeline. Methodological theory is detailed in sw-chinese-opera-banqiang §16; this section provides only authenticated empirical data.
+
+| Phase | *The Pouch of Red Gauze* | *Shajiabang* | *The Legend of the White Snake* |
 |---|---|---|---|
-| **素材** | 程砚秋给《剧说》"赠囊" | 沪剧＋外部主题判断 | 传说＋桂戏本＋峨嵋实地观察 |
-| **戏核** | "贫与富的转折和变化" | "强调武装斗争的作用" | "为着他"三件具体的事 |
-| **分场** | 四个上板场＝四个重点场 | 唱重白重交替，扣子只三场 | 最长三场＝三个关系转折点 |
-| **为演员** | 要喜剧调剂剧目类型 | 刁德一"突破行当"的老生 | 改本砍许仙的唱（**倾斜的反例**） |
-| **唱段辙口** | 上板段集中四场，首尾同辙 | 一场一辙，背供对唱同辙 | 交锋两人各占一辙 |
-| **改词—编腔—审腔** | 程提三条→翁改→编腔时回头换字→**就正于王瑶卿** | — | 说腔五条，改字出自演员 |
-| **定本** | 翁记"掐三节"，本作四节 | 改本不动结构只动字 | 板式是意向书，整场可换声腔 |
+| **Raw Material** | Cheng Yanqiu provided *Ju Shuo* ("Bestowing the Pouch") | Shanghai Opera (Huju) + external thematic mandate | Folk legend + regional Gui Opera text + Mount Emei field research |
+| **Core Dramatic Engine** | "The turning points and reversals of poverty and wealth" | "Emphasizing the decisive role of armed struggle" | Three concrete deeds executed "For his sake" |
+| **Scene Layout** | Four on-beat scenes = Four structural anchors | Alternating sung-heavy and spoken-heavy scenes; only 3 cliffhangers | Three longest scenes = Three relationship turning points |
+| **Tailored for Performers** | Requested comedy to diversify the star's repertoire | Diao Deyi written for an actor who "broke traditional role boundaries" | Revised script curtailed Xu Xian's arias (**counter-example of star bias**) |
+| **Arias & Rhymes** | On-beat arias concentrated in 4 scenes; first & last share identical rhyme | One scene, one rhyme; asides and responsive duets share identical rhymes | Confronting opponents each claim their own distinct rhyme category |
+| **Lyric Revision — Composition — Score Review** | Cheng proposed 3 edits → Weng revised → adjusted words during vocal scoring → **submitted to Wang Yaoqing for audit** | Collective script committee | Five vocal principles; individual lyric edits initiated by the performer |
+| **Definitive Score** | Weng recorded "three-segment cut"; score finalized as four segments | Revisions altered individual words while leaving structure intact | Banshi is a statement of intent; vocal modes can be transposed for an entire scene |
 
-**三条跨本读数**：①**编剧标的板式是提案，主演有权在不动词的前提下换；编腔阶段编剧的主要工作是"换字不换意"**；②**改本改的是字，不是结构**；③**"十年磨一戏"磨的是句子**。
-
----
-
-## 九、创作记索引（说明与指针）
-
-**翁偶虹《翁偶虹编剧生涯》**（1985）是自述体创作回忆录，逐剧交代**为谁写、结构上做了什么决定、改了几稿、哪里失败**。全书 42 章，自述涉及 60 出；索引表按章序排，**收笔记逐章记述到的剧目（约 45 出），未逐一记述者不列**。栏目：剧目／为谁写／结构决定／改稿／成败／页码。**表在 [reference-chuangzuoji.md](reference-chuangzuoji.md) §1。** 用它查三类东西：**某位演员要什么样的本子**（程砚秋要喜剧调剂剧目类型、叶盛兰要穷生本戏、谭富英要改辙口）；**一个本子为什么排不出来**（剧名辈分吃亏、主演正红时不愿老尺加一、一剧大红后马放南山、禁演）；**哪条手法出自哪一出**（帷灯匣剑＝《将相和》、烘云托月／背面敷粉＝《锁麟囊》、草蛇灰线＝《大闹天宫》、隔股聚扇与选兵蓄势＝《西门豹》、殊途同归＝《荆钗记》）。
-
-**范钧宏《戏曲编剧论集》七剧改编札记**（杨门女将、九江口、猎虎记、蝴蝶杯、白毛女、林海雪原，另有卧薪尝胆失败总结），栏目：剧目／底本／换了什么／依据／后果，**表在 §2**。最可复用的三处：**"摸四个底"**（历史底、表演底、风格底、剧本底，动手前先从"外围"下手）；**《蝴蝶杯》三修的自我否定**（当年"只要思想上站得住，艺术上差一点没关系"，删《洞房》连带删逼婚，第三次改回"保留逼婚、不要洞房"）；**《猎虎记》复排删场的两个判据——"拖"与"跳"**。集体改编工作流三例见 §3。
+**Three Cross-Script Principles**:  
+1. **The playwright's Banshi notation is a proposal; the lead performer possesses the artistic authority to change it without altering the lyrics; during vocal composition, the playwright's primary duty is "altering words without altering dramatic intent."**  
+2. **Textual revisions polish words, not macro-structures.**  
+3. **"Ten years grinding a single play" means grinding individual sentences.**
 
 ---
 
-## 十、可迁移手法索引（按手法反查案例）
+## 9. Creation Memoir Indices (Annotations & Pointers)
 
-每案的⑥就是它的手法条目，**失效条件与自检动作只在那一条里，不要脱离它单独引用**。按手法找案例：
+**Weng Ouhong's *Playwriting Career of Weng Ouhong (Weng Ouhong Bianju Shengya)*** (1985) is an autobiographical memoir detailing **for whom each play was written, what structural decisions were made, how many drafts were undertaken, and where specific flaws emerged**. Across 42 chapters, the memoir covers 60 plays; the index catalogs the ~45 plays discussed in depth. Columns: Play Title / Performer / Structural Decision / Revisions / Success or Flaw / Page Number. **Table in [reference-chuangzuoji.md](reference-chuangzuoji.md) §1.** Consult it to investigate three areas:  
+- **What specific scripts particular stars demanded** (Cheng Yanqiu needing comedies to diversify his season; Ye Shenglan demanding destitute scholar showpieces; Tan Fuying requiring rhyme modulations);  
+- **Why specific completed scripts failed to reach production** (hierarchical title conflicts, stars unwilling to play older roles at the height of their youth, resting on laurels after a hit, political bans);  
+- **Which classic dramaturgical devices originated in which plays** (Veiled Virtuosity = *General and Prime Minister Reconciled*; Framing Clouds to Highlight the Moon / Highlighting Contrasts = *The Pouch of Red Gauze*; Hidden Narrative Threads = *Havoc in Heaven*; Converging Streams = *Ximen Bao*; Different Paths to One Destination = *The Thorn Hairpin*).
 
-- **板式与辙口**：上板段集中在重点场（一·③）／长唱掐 n 节配位置变化（一·2）／散板类板式才能切开插白（二·③④）／长唱用板式分段（三·③）／句式一变板式就该转（四·③）／不标板式时用字数换挡（七·1）／主演有权换板式而不动词（一·⑤、八）／重点场一辙到底且首尾同辙（一·3）／一场一辙、背供对唱同辙（二·③）／交锋两人各占一辙（三·3）／宽韵是口语剧本的默认（四·③）／换韵即翻脸（五·③）／换说话对象就换韵（六·3）。
-- **唱词与唱白分工**：垛句只在上板段的下句（一·③）／口语入唱三要素（四·1）／三字领句做大唱段（四·2）／句长递减（四·3、六·2）／垛事件清单（七·2）／群戏用白两人对峙用唱（四·②）／辩驳用白交心用唱（六·4）／称呼语接口（四·④、六）／白字重复问词再接唱（二·3）／唱段留给转折场（四·③）与留给转折前一场（七·③）两说并列。
-- **程式**：主角出场不出场（一·④）／现代戏删三样、留背供与内唱（二·④、四·④）／牌子只给非人间角色（三·④）／帮腔当第二个说话的人（五·3）／歌队三职能替代定场诗下场诗、程式名写进科介（七·④）。
-- **结构与改编**：喜剧性交给配角群像（一·1）／旧话原样还给他（一·4）／整理老戏三栏账（三·1）／搬段换掉整场声腔（三·2）／复述带新信息（三·4）／团圆只给一个画面（三·5）／同一条路走两遍（四·5）／跨时空人物只评说（五·1）／砌末贯穿因果（七·4）／同词异境（七·3）／诗化升华与题材绑定（七·5）／改本改字不改结构（二·⑤、八）／摸四个底与"拖""跳"（九）。
+**Fan Junhong's *Essays on Theatrical Playwriting (Xiqu Bianju Lunji)*: Adaptation Notes on Seven Plays** (*Women Generals of the Yang Family, Jiujiangkou, Hunting the Tiger, The Butterfly Cup, The White-Haired Girl, Forest of Snow*, plus an autopsy of the failed *Goujian's Hardship*). Columns: Title / Source Text / Elements Changed / Rationale / Theatrical Outcome. **Table in §2.** Three most reusable insights:  
+- **"Investigating the Four Foundations"** (Historical Foundation, Performance Foundation, Stylistic Foundation, Script Foundation—mastering external contextual layers before writing);  
+- **The self-critique of the three revisions of *The Butterfly Cup*** (recognizing that past dogmatism—"as long as the ideology is sound, artistic flaws matter little"—ruined earlier drafts by cutting the Bridal Chamber and forced marriage, before the third revision restored the forced marriage while keeping the chamber cut);  
+- **The two criteria for pruning scenes in *Hunting the Tiger*—"Dragging" (*Tuo*) and "Jumping" (*Tiao*).** For three models of collective adaptation workflows, see §3.
 
 ---
 
-## 十一、与曲牌体语料的对照
+## 10. Transferable Techniques Index (Reverse Lookup by Craft Rule)
 
-**《潘金莲》（第五节）与《巴山秀才》（见 `sw-chinese-opera-qupai-cases`）是同一作者、同一剧种、两套写法的对照组**：《巴山秀才》＝川剧高腔＝曲牌体（标牌名、43 条曲牌表、九段帮腔），《潘金莲》＝弹戏胡琴＝板腔体（一个曲牌名也没有）。**这是"分轴是声腔体系不是剧种"最干净的一组证据，两边互指、不拆开**：曲牌体那一半（不成套、零金碎玉选牌、一段一韵而字数自由）在 `sw-chinese-opera-qupai-cases`。
+Item ⑥ within each case study contains its operative craft principles; **failure conditions and self-check diagnostics are bound strictly to their respective entries and must never be applied in isolation.** Locate cases by craft topic:
 
-另两组对照：**帮腔（高腔）—合头（豫剧）—幕内唱（越剧）是同一功能位的三种形态**；**副末开场＋集唐下场诗与歌队＋【字幕：】是同一职能的两套装置**。元杂剧、传奇、昆曲、川剧高腔的全本语料在 `sw-chinese-opera-qupai-cases`。
+- **Banshi & Rhyme Categories (*Zhekou*)**: Concentrate on-beat arias in anchor scenes (§1·③) / Divide extended arias into $n$ segments paired with physical movement (§1·2) / Only Sanban-class free meters permit dialogue interruptions (§2·③④) / Segment extended arias using Banshi transitions (§3·③) / Shifting line lengths demands modulating Banshi (§4·③) / When Banshi is omitted, shift gears via line lengths (§7·1) / Performers hold authority to alter Banshi without altering lyrics (§1·⑤, §8) / Anchor key scenes with a single rhyme, linking opening and finale with the same rhyme (§1·3) / One scene, one rhyme; asides and responsive duets share rhymes (§2·③) / Confronting opponents claim distinct rhymes (§3·3) / Broad rhymes are the default for vernacular scripts (§4·③) / Shifting rhyme signals emotional rupture (§5·③) / Shifting interlocutors triggers rhyme modulation (§6·3).
+- **Arias & Sung/Spoken Division of Labor**: Stacked lines (*Duoju*) fall exclusively on lower resolving lines (§1·③) / Three mandatory components of vernacular arias (§4·1) / Anchor major aria suites with three-character lead phrases (§4·2) / Diminishing line lengths in duets (§4·3, §6·2) / Stack inventories of concrete events (§7·2) / Ensemble scenes rely on speech; duels rely on song (§4·②) / Argumentation uses speech; intimacy uses song (§6·4) / Vocative transitions from speech to song (§4·④, §6) / Precede responsive arias by echoing the question in speech (§2·3) / Placing arias in the turning scene (§4·③) versus placing them in the scene immediately preceding the turn (§7·③).
+- **Conventions (*Chengshi*)**: The protagonist's entrance without appearing onstage (§1·④) / Modern opera pruning three conventions while heightening asides and offstage singing (§2·④, §4·④) / Restricting Paizi overture suites to non-human entities (§3·④) / Casting Bangqiang as an independent onstage character (§5·3) / Chorus performing three functions to replace opening/exit poems; writing conventions directly into stage directions (§7·④).
+- **Structure & Adaptation**: Outsource comedy to supporting ensembles (§1·1) / Mirroring past dialogue verbatim (§1·4) / The Three-Column Ledger of classical reorganization (§3·1) / Relocating an aria transposes an entire scene's vocal mode (§3·2) / Recapitulations must reveal fresh information (§3·4) / Climaxing a reunion with a silent tableau (§3·5) / Walking the identical road twice (§4·5) / Trans-temporal figures critique without redirecting plot (§5·1) / Anchoring dramatic causality with a single physical prop (§7·4) / Identical Words, Inverted Context (§7·3) / Poetic transcendence bound to genre material (§7·5) / Revisions alter words without altering macro-structure (§2·⑤, §8) / Investigating the Four Foundations; detecting "Dragging" vs. "Jumping" (§9).
+
+---
+
+## 11. Cross-System Comparison with Qupai Corpora
+
+***Pan Jinlian* (§5) and *The Scholar of Bashan (Bashan Xiucai)* (see `sw-chinese-opera-qupai-cases`) form an exact comparative control pair: same author, same regional genre (Sichuan Opera), two divergent musical architectures**: *The Scholar of Bashan* = Sichuan Opera Gaoqiang = Qupai System (explicit tune titles, 43-entry Qupai index, 9 Bangqiang choral suites); *Pan Jinlian* = Tanxi Huqin = Banqiang System (zero Qupai tune titles). **This provides the cleanest empirical evidence that the primary divide in Chinese opera is governed by musical system (*Shengqiang*), not regional dialect; the two case studies cross-reference each other directly**: the Qupai half (individual tune selections, one rhyme per aria with flexible line lengths) is housed in `sw-chinese-opera-qupai-cases`.
+
+Two additional structural correspondences:  
+- **Bangqiang (Gaoqiang) — Hetou (Yu Opera) — Offstage Singing (Yue Opera) represent three regional manifestations of the identical functional slot**;  
+- ***Fumo* Prologue + *Jitang* Exit Couplets and Modern Chorus + `[Subtitle:]` represent two distinct historical apparatuses executing the identical dramaturgical duty.** Full-length scripts and case studies for Yuan Zaju, Ming/Qing Chuanqi, Kunqu, and Sichuan Opera Gaoqiang are preserved in `sw-chinese-opera-qupai-cases`.

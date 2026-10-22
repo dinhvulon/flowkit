@@ -109,15 +109,25 @@ Sau 4 bộ kiểm → checklist B (`prompt-lock.md`) → `python tools/lint_prom
 [Ý tưởng]
    │
    ▼
-[TẦNG 1: story-bible.md] ◄── /sw-workflow điều phối:
-   │                          • /sw-premise-theme: premise, theme, misbelief
-   │                          • /sw-story-structure: khung hồi, plot point, midpoint
-   │                          • /sw-character-conflict: want vs need, đối thủ, xung đột
+[TẦNG 1: story-bible.md] ◄── /sw-workflow điều phối toàn diện:
+   │                          • /sw-premise-theme: Premise, controlling idea, moral argument, logline
+   │                          • /sw-genre-anatomy: Hệ thống 12 thể loại Truby, luật thể loại, genre-mixing
+   │                          • /sw-story-structure: Khung 3 hồi / 4 phần, inciting incident, plot points, midpoint, climax
+   │                          • /sw-truby-anatomy: 22 bước organic plot spine, four-corner opposition, moral argument chain
+   │                          • /sw-character-conflict: Want vs. Need, 3D orchestration, unity of opposites, antagonism
+   │                          • (Nếu là series/phim bộ): /sw-series-engine-bible, /sw-series-structure
    ▼
-[TẦNG 2: script.md + ref_prompts.json] ◄── kịch bản + storyboard:
+[TẦNG 2: script.md + ref_prompts.json] ◄── kịch bản + storyboard + ngôn ngữ điện ảnh:
+   │                          • /sw-scene-craft: Beat design, value turns +/-, subtext, sensory details, objective-obstacle-tactic
+   │                          • /sw-dialogue: Dialogue as action, trialogues, subtext, zero on-the-nose exposition, speech duration calibration
+   │                          • /sw-format-adaptation: Spec screenplay standards, Fountain contract, active visual action lines
+   │                          • /fk-scriptwriter: Nhịp kịch tính, triệu chứng cơ thể, công cụ hồi hộp (blind spots, sonic isolation)
+   │                          • /fk-camera-guide: Ngôn ngữ máy điện ảnh, cỡ cảnh, ống kính, 5 tầng vật lý
+   │                          • /fk-action-choreography: Bảng vật lý (physics ledger), hành động 3 pha, chuỗi 4s an toàn
+   │                          • /fk-cinematic-transitions: Mối nối giữa các clip, match on action, J/L-cut
    │                          • bảng nhân vật, material, mốc ánh sáng
    │                          • storyboard từng clip (Clip | Dur | Shot | Ref | SF | Sáng | Hình | Thoại | Từ | Việc | Beat | Dựng)
-   │                          • bảng vật lý (/fk-action-choreography) + sổ liên tục bối cảnh
+   │                          • sổ liên tục bối cảnh (scene continuity ledger: S0 → Sn)
    │                          • ref_prompts.json: prompt ảnh ref nhân vật, Body, sinh vật, bối cảnh
    ▼
 [TẦNG 2.5: paper_edit.md] ◄── /fk-paper-edit: bấm giờ, Rule 49, lời hứa 30s, móc giữ chân, đề xuất cắt ⛔
@@ -138,26 +148,117 @@ Sau 4 bộ kiểm → checklist B (`prompt-lock.md`) → `python tools/lint_prom
 7. **Prompt JSON từng clip** — qua [`/fk-script-to-prompts`](../fk-script-to-prompts/SKILL.md), lint + review, xuất `prompts_<act>.json` + `vn_<act>.json` (theo từng Act).
 8. **Ghi chú hậu kỳ** (`post_vo`, điểm cắt theo mốc Whisper, nhạc) + **gói YouTube**.
 
+## Hệ Thống Từ Vựng Kỹ Thuật Video Điện Ảnh Chuẩn Hóa (Standardized Cinematic Video Taxonomy)
+
+Mọi khâu từ tiền kỳ, thiết kế, dàn dựng bối cảnh, chọn góc máy, viết kịch bản đến prompt JSON BẮT BUỘC sử dụng chuẩn từ vựng kỹ thuật điện ảnh tiếng Anh chuẩn hóa dưới đây:
+
+### 1. Thiết Kế Nhân Vật & Sinh Vật (Character & Creature Design)
+- **16:9 Turnaround Sheet**: Bảng tạo hình đa góc 16:9 bắt buộc theo `/fk-character-design` và Rule 58 (Nhân vật: 4 panels gồm Toàn thân chính diện, Toàn thân 3/4, Toàn thân nghiêng/sau, Cận cảnh chân dung mặt/cổ; Sinh vật: 3/4 trái, 3/4 phải, Cận cảnh đầu sọ).
+- **Proportion Lock**: Khóa tỷ lệ cơ thể bất biến gồm Net Height (chiều cao tịnh), Head-to-Body Ratio (tỷ lệ đầu/thân, ví dụ 1:7.5), Inseam/Leg Ratio (tỷ lệ chân), Foot Baseline.
+- **Bone & Cranial Architecture**: Cấu trúc xương sọ, hốc mắt, xương gò má/quai hàm (`facial bone envelope`), diềm cổ, gai nón sừng, bất đối xứng giải phẫu nhận diện.
+- **Biological Micro-Texture Layer (Rule 57)**: Chi tiết biểu bì vi mô gồm vảy đa giác dạng lát gạch (`polygonal basement scales`), gai nón sừng (`conical keratin tubercles`), rãnh máu phong hóa (`weathered hairline fissures`), nếp gấp da động học (`dewlap biological skin folds`), Subsurface Scattering (SSS) tự nhiên.
+- **Wardrobe State Ladder**: Thang bậc trạng thái trang phục theo tiến trình câu chuyện (`Pristine` → `Worn/Dusted` → `Scorched/Torn` → `Mud-Caked`), khóa cứng theo từng entity `<Character> Body <State>`.
+- **Permanent Prop Geometry**: Hình học đạo cụ cố định (vị trí đeo, cách móc gắn, vật liệu cứng cáp, mặt trước/sau; tả bằng hình học và nêu rõ nó KHÔNG phải cái gì).
+- **Anti-Wax / Zero Plastic Sheen**: Triệt tiêu triệt để lớp bóng nhờn nhựa 3D CGI (`rough non-reflective pachyderm hide`, `matte dried alluvial clay`, không bóng nhờn studio).
+
+### 2. Dựng Cảnh & Bối Cảnh (Mise-en-Scène & Setting)
+- **Base Location vs. Scene State Ledger**: Quản lý bối cảnh 2 tầng (địa điểm gốc + bậc trạng thái S0 → Sn). Trạng thái môi trường suy thoái một chiều (tro tàn, vệt cháy, bùn đất bám tăng dần), cấm reset sạch giữa các clip.
+- **Spatial Blocking & Depth Staging**: Bố trí không gian diễn xuất 3 lớp sâu gồm Tiền cảnh (Foreground - FG), Trung cảnh (Midground - MG), Hậu cảnh (Background - BG); duy trì trục hành động 180 độ (`180-Degree Axis of Action`) và tương quan đường nhìn (`Eyeline Match`).
+- **Motivated Practical Lighting**: Nguồn sáng thực tế có động cơ trong khung hình (ánh lửa bập bùng, đèn bão, mặt trời xiên góc tán cây `natural dappled canopy sunlight`, ánh sáng ban ngày âm u `flat natural overcast diffuse daylight`). CẤM TUYỆT ĐỐI tia nắng đồ họa máy tính (`god rays`, `volumetric beams`) và đèn viền studio (`studio rim lighting`).
+
+### 3. Góc Máy & Ngôn Ngữ Điện Ảnh (Cinematography & Camera)
+- **Shot Scale / Framing (Cỡ cảnh)**:
+  - `EWS` (Extreme Wide Shot): Đại toàn cảnh, thiết lập quy mô thiên nhiên và sự nhỏ bé của con người.
+  - `WS` (Wide Shot / Establishing Shot): Toàn cảnh, xác lập không gian địa lý và vị trí các nhân vật.
+  - `MS` (Medium Shot): Trung cảnh (ngang thắt lưng trở lên), cân bằng giữa hành động và biểu cảm.
+  - `MCU` (Medium Close-Up): Trung cận (ngang ngực trở lên), cỡ cảnh chuẩn cho hội thoại và tương tác tâm lý.
+  - `CU` (Close-Up): Cận cảnh gương mặt hoặc bàn tay, bắt trọn vi biểu cảm hoặc thao tác vật lý sống còn.
+  - `ECU` (Extreme Close-Up): Đặc tả chi tiết vi mô (ánh mắt căng thẳng, mũi dao rạch, giọt mồ hôi).
+  - `OTS` (Over-The-Shoulder): Góc quay qua vai người đối thoại, neo giữ chiều sâu quan hệ.
+- **Camera Angle (Góc máy)**:
+  - `Eye-Level`: Ngang tầm mắt, khách quan trung tính.
+  - `Low-Angle`: Hất nhẹ từ dưới lên (ngang ngực), tôn dáng vóc, tạo cảm giác uy quyền hoặc áp lực sinh vật khổng lồ.
+  - `High-Angle`: Chếch từ trên xuống, thể hiện sự tổn thương, cô lập, nguy nan.
+  - `Dutch Angle / Canted`: Góc nghiêng trục lệch, báo hiệu tâm lý bất an, chấn động, sụp đổ trật tự.
+  - `Top-Down / Bird's-Eye`: Góc nhìn thẳng từ trên đỉnh đầu nhìn xuống mặt đất, lập bản đồ di chuyển.
+- **Camera Movement (Chuyển động máy)**:
+  - `Static / Locked-Off`: Máy cố định trên chân máy, tăng độ căng thẳng ngột ngạt và tính quan sát tài liệu.
+  - `Pan / Tilt`: Lia ngang (Pan) hoặc quét dọc (Tilt) theo hướng di chuyển của chủ thể.
+  - `Dolly-In / Dolly-Out`: Đẩy máy tiến vào hoặc lùi ra theo trục sâu, kéo khán giả vào nội tâm nhân vật.
+  - `Tracking / Trucking`: Máy trượt ngang song song bám theo nhân vật đang chạy hoặc chiến đấu.
+  - `Steadicam / Handheld`: Cầm tay tài liệu hiện trường với độ rung lắc bước chân chân thực (`natural footfall vertical bounce and rotational lag`), cấm bay lượn trơn tuột như game 3D.
+  - `Whip Pan`: Lia giật máy thần tốc tạo chuyển động mờ để cắt cảnh hoặc phản xạ đột ngột.
+- **Optics & Texture (Quang học & Chất cảm)**:
+  - Focal Length: 24mm/35mm (góc rộng điện ảnh, giữ chiều sâu bối cảnh), 50mm (thị giác mắt người tự nhiên), 85mm/135mm (nén hậu cảnh).
+  - Depth of Field: `Deep Focus (f/8)` giữ rõ nét từ tiền cảnh đến chân trời (Rule 62); chỉ dùng `Cinematic Shallow DoF` khi cô lập cảm xúc nhân vật.
+  - Texture: `35mm film grain`, `raw cinematic documentary realism`, 180-degree shutter motion blur.
+
+### 4. Storyboard & Khung Neo (Storyboard & Visual Anchoring)
+- **2×2 Time Storyboard Grid (Rule 69)**: Ảnh storyboard lưới 2×2 thể hiện 4 khoảnh khắc theo dòng thời gian (4 panels 16:9), bắt buộc cho mọi clip chuyển cảnh trong phim.
+- **Panel 1 Frame 0 Anchor**: Panel trên-trái (Panel 1) của storyboard chính là neo xuất phát điểm tại giây 0 của video R2V.
+- **Continuous Scene Chain (`PREV_LAST_FRAME`, Rule 65 Loại 1)**: Cắt khung hình cuối của clip trước làm Start Frame cho clip kế tiếp cùng bối cảnh/góc nhìn; cấm sinh ảnh mới.
+- **Visual Audit of Storyboard Sheet (Rule 69 (7))**: Bắt buộc đọc và phân tích trực quan 4 panel storyboard thực tế trước khi chốt prompt video để khớp 100% cỡ cảnh, góc quay, nhịp cắt.
+
+### 5. Prompt Kỹ Thuật Structured JSON (Structured Video Prompt Architecture)
+Tuân thủ 5 tầng kiến trúc Structured JSON (`/fk-prompt-lock` và Rule 55):
+- `camera`: Viewpoint (strictly third-person cinematic camera, invisible observer), shot scale, angle, lens, motion dynamics.
+- `characters`: Inline media chip reference (`{{media:<uuid>|<file>}}`), Face Lock, Body Lock, physical and wardrobe state.
+- `setting` & `style`: Macro/micro environment, practical lighting, atmospheric particles, material tags.
+- `timeline_action`: Phân đoạn nhịp thời gian (`0-3s`, `3-6s`, `6-8s/6-10s`), cơ học quán tính ($p = m \cdot v$, truyền lực `force -> barrier -> ground`), biến dạng vật liệu, độ trễ thứ cấp.
+- `speech` & `audio`: Thoại trực tiếp gắn nhãn nhân vật (`Character says "..."`), thông số giọng nói, âm thanh môi trường Foley, `post_vo` cho thoại ngoài hình.
+- `negative_constraints`: Danh sách cấm tuyệt đối (zero CGI, zero plastic sheen, zero subtitles, zero split screen, camera never seen).
+
+### 6. Kịch Bản & Hành Động Kịch (Screenplay & Dramatic Action)
+- **Scene Sluglines**: Tiêu đề cảnh chuẩn (`INT.` / `EXT.` - `LOCATION` - `TIME OF DAY`).
+- **Action Lines**: Dòng hành động hiện tại, chỉ tả những gì nhìn thấy và nghe thấy, không viết suy nghĩ trừu tượng vô hình.
+- **Dialogue as Action**: Thoại là hành động công kích/phòng thủ, giàu subtext (lời nói dối, ẩn ý), tránh giải thích dông dài (*on-the-nose exposition*).
+- **Word-to-Duration Calibration (Rule 49)**: Định lượng từ khớp chuẩn thời lượng video:
+  - `4s`: 0 hoặc 6–8 từ
+  - `6s`: 12–15 từ
+  - `8s`: 18–22 từ
+  - `10s`: 24–28 từ
+  - `Sonic Isolation`: Im lặng nghẹt thở (0 từ) khi rình rập, săn mồi, ẩn nấp, chiến đấu sinh tử.
+
+---
+
 ## Bộ skill phối hợp
 
-| Skill | Vai trò trong phim |
-| --- | --- |
-| `/sw-workflow` + `sw-*` | Story bible, cấu trúc, nhân vật, cảnh, thoại (Tầng 1–2) |
-| `/fk-character-design` | Turnaround Sheet 16:9 cho nhân vật và sinh vật chủ chốt, 5 lớp DNA anchor (Rule 58) |
-| `/fk-character-bible` | Ma trận trạng thái trang phục theo cảnh, series manifest |
-| `/fk-scriptwriter` | Nhịp cảnh, cảm xúc bằng triệu chứng cơ thể, bộ công cụ hồi hộp |
-| `/fk-camera-guide` | Ngôn ngữ máy điện ảnh, cỡ cảnh, 5 tầng vật lý trong prompt |
-| `/fk-action-choreography` | Hành động 3 pha, từ vựng an toàn chống méo người, chuỗi 4s |
-| `/fk-storyboard` | **Bắt buộc cho mọi clip có sinh ảnh** (Rule 69, 22/10/2026): ảnh storyboard 2×2 theo thời gian làm ref + panel 1 làm khung mở đầu (r2v); không sinh start frame đơn lẻ. Bắt buộc đọc thể ảnh storyboard thực tế để điều chỉnh camera, góc quay, vắt cảnh trong prompt video trước khi sinh (Rule 69 (7)). Clip liên tục vẫn dùng khung cuối clip trước |
-| `/fk-cinematic-transitions` | Match on action, J/L-cut, mối nối giữa các clip |
-| `/fk-gen-narrator` | Đếm số từ thoại theo `duration`, `narrator_text` (chế độ phim) |
-| `/fk-add-material` | Material của phim (style, lighting, chống CGI) |
-| `/fk-script-to-prompts` + `/fk-prompt-lock` + `/fk-review-prompt` | Chuyển kịch bản sang prompt JSON, lint, đọc lại toàn bộ |
-| `/fk-paper-edit` | Dựng trên giấy trước khi tốn credit |
-| `/fk-review-video` + `/fk-review-board` | Review 720p (kèm Whisper, Rule 67) trước khi upscale |
-| `/video-editing` + `/fk-capcut-edit` + `/fk-sound-design` | Dựng, trailer hook, mix và master −14 LUFS |
-| `/fk-youtube-seo` + `/fk-thumbnail` + `/fk-youtube-analytics` | Đóng gói và chẩn đoán sau đăng |
-| `/fk-doctor` | Mọi lỗi pipeline (Rule 31) |
+| Skill | Nhóm | Vai trò cụ thể trong sản xuất phim `/fk-film` |
+| --- | --- | --- |
+| `/sw-workflow` | Screenwriting | Điều phối quy trình tiền kỳ, quản lý trạng thái dự án, story bible xuyên suốt các giai đoạn |
+| `/sw-premise-theme` | Screenwriting | Thiết lập tiền đề kịch bản, controlling idea (value + cause), xung đột chủ đề, logline thương mại |
+| `/sw-genre-anatomy` | Screenwriting | Khảo sát hệ thống beat chuyên biệt của 12 thể loại Truby, phối trộn thể loại, triệt tiêu cliché |
+| `/sw-story-structure` | Screenwriting | Kiến trúc 3 hồi / 4 phần Syd Field/Snyder, xác lập inciting incident, plot points, midpoint, all is lost, climax |
+| `/sw-truby-anatomy` | Screenwriting | Bộ máy 22 bước phát triển hữu cơ, tứ giác đối kháng (four-corner opposition), chuỗi luận điểm đạo đức |
+| `/sw-character-conflict` | Screenwriting | Thiết kế mâu thuẫn 3D nhân vật (want vs. need, misbelief), phối hợp dàn nhân vật đối kháng, cơ chế phòng vệ tâm lý |
+| `/sw-scene-craft` | Screenwriting | Thủ pháp thiết kế cảnh: value turns (+/-), 5 bước phân tích cảnh McKee, text vs. subtext, chi tiết và đạo cụ đắt giá |
+| `/sw-dialogue` | Screenwriting | Viết và gọt giũa lời thoại: thoại như hành động, tam giác đối thoại (trialogues), cắt bỏ thoại giải thích sáo rỗng |
+| `/sw-format-adaptation` | Screenwriting | Định dạng kịch bản chuẩn spec, hợp đồng Fountain, viết action line trực quan, chuyển thể từ nguyên tác/sự kiện thật |
+| `/sw-american-case-studies` | Screenwriting | Nghiên cứu tình huống cấu trúc kinh điển (Fargo, Thelma & Louise, Good Will Hunting, Hitchcock suspense) |
+| `/sw-korean-french-screenwriting` | Screenwriting | Thủ pháp kịch tính căng thẳng hiện thực, nhân phẩm nhân vật, nhịp dựng cảm xúc phi tuyến tính |
+| `/sw-series-engine-bible` | Screenwriting | Thiết kế động cơ series, ma trận quan hệ nhiều tập, cấu trúc pilot và master series bible (cho phim bộ) |
+| `/sw-series-structure` | Screenwriting | Kiến trúc act ngầm streaming, đan xen tuyến truyện A/B/C/runner, kết thúc hồi mở (cliffhanger) (cho phim bộ) |
+| `/fk-character-design` | Production / Art | Turnaround Sheet 16:9 cho nhân vật và sinh vật chủ chốt, khóa cứng 5 lớp DNA anchor (Rule 58) |
+| `/fk-character-bible` | Production / Art | Ma trận trạng thái trang phục theo cảnh (`Wardrobe State Ladder`), series character manifest |
+| `/fk-scriptwriter` | Directing | Nhịp cảnh điện ảnh, cảm xúc qua triệu chứng cơ thể, bộ công cụ hồi hộp (blind spot, sonic isolation) |
+| `/fk-camera-guide` | Cinematography | Ngôn ngữ máy điện ảnh, cỡ cảnh, ống kính, quang học tài liệu thực tế, 5 tầng vật lý |
+| `/fk-action-choreography` | Cinematography | Bảng vật lý hành động, chuyển động 3 pha, từ vựng an toàn chống méo giải phẫu, chuỗi 4s liên hoàn |
+| `/fk-storyboard` | Cinematography | Storyboard lưới 2×2 theo thời gian (4 panels 16:9) làm neo trực quan, visual audit storyboard sheet (Rule 69) |
+| `/fk-cinematic-transitions` | Editing | Mối nối cảnh quay điện ảnh: Match on action, J-cut, L-cut, in-camera transitions |
+| `/fk-gen-narrator` | Audio | Đo đạc số từ thoại chuẩn xác theo thời lượng `duration` (Rule 49 bảng (0)) |
+| `/fk-add-material` | Material | Khởi tạo Image Material chuyên biệt cho phim (realistic, documentary, anti-CGI) |
+| `/fk-script-to-prompts` | Prompt Eng | Chuyển thể kịch bản sang Structured JSON Prompt, nhúng khối `dramatic_craft` (Rule 56) |
+| `/fk-prompt-lock` | Prompt Eng | Khóa chuẩn kiến trúc prompt JSON, quy tắc tokens và checklist B kiểm soát rủi ro |
+| `/fk-review-prompt` | QC Gate | Rà soát toàn bộ prompt video và storyboard trước khi sinh, lập bảng chủ thể theo giây (Rule 68) |
+| `/fk-paper-edit` | Editing | Dựng kịch bản trên giấy: bấm giờ, kiểm tra lời hứa 30s và móc giữ chân 90s trước khi tốn credit |
+| `/fk-review-video` | Review | Chấm điểm chất lượng clip 720p thô theo 6 tiêu chuẩn cốt lõi (Rule 32) |
+| `tools/review_dialogue.py` | Review | Bắt buộc chạy Whisper phân tích âm thanh, độ khớp chữ và mốc thời gian thoại từng clip (Rule 67) |
+| `/video-editing` | Post-Production | Dựng hậu kỳ footage đã duyệt: trim, ghép, dead air, overlay, reframe Shorts (Rule 66) |
+| `/fk-capcut-edit` | Post-Production | Lập Bảng dựng CapCut chuyên nghiệp, trailer montage hook, kết nối trực tiếp MCP capcut |
+| `/fk-sound-design` | Audio | Mastering âm thanh điện ảnh chuẩn YouTube: ducking tự động, SFX layering, chuẩn −14 LUFS / −1 dBTP |
+| `/fk-youtube-seo` + `/fk-thumbnail` | Packaging | Đóng gói siêu dữ liệu YouTube SEO chuẩn xác và thiết kế thumbnail giữ chân người xem |
+| `/fk-youtube-analytics` | Analytics | Chẩn đoán video sau đăng 48h và 7 ngày (CTR, retention 30s, AVD) để tối ưu hóa dự án tiếp theo |
+| `/fk-doctor` | Diagnostics | Chẩn đoán và xử lý mọi sự cố pipeline (Google Flow, worker, database, network) (Rule 31) |
 
 Không dùng: `/fk-gen-chain-videos` (Veo start+end — `UNSUPPORTED_ON_BATCH_API`).
 

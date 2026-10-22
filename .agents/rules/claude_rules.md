@@ -194,6 +194,31 @@ page can sign a Flow request, so nothing works headless.
 70. **Tối đa chỉ hỗ trợ 7 reference images (Max 7 Refs / Ingredients Lock — User Lock 22/10/2026)** — Google Flow (Omni Flash / Veo 3 Reference-to-Video qua RPC MZZa6b): Mỗi cảnh R2V BẮT BUỘC chỉ được chứa TỐI ĐA 7 REFERENCE IMAGES (Ingredients limit = 7). Danh sách 
 efs trong ideo_prompt và character_names trong database TUYỆT ĐỐI KHÔNG BAO GIỜ ĐƯỢC VƯỢT QUÁ 7 MỤC. Nếu tổng số thực thể nhiều hơn 7, bắt buộc phải chọn lọc tinh gọn đúng 7 ref quan trọng nhất theo thứ tự ưu tiên: (1) Start Frame (Frame 0 Anchor), (2) Time Storyboard 2x2, (3) Khuôn mặt nhân vật chính (Face Lock), (4) Thân hình / Trang phục nhân vật chính (Body Lock), (5) Nhân vật phụ chủ chốt, (6) Đạo cụ sống còn / Quái thú / Sinh vật chủ đạo, (7) Đạo cụ / Thực thể tương tác trực tiếp. TUYỆT ĐỐI CẤM đưa các entity bối cảnh phụ (location generic) hoặc ref rườm rà làm tổng số vượt quá 7 khiến slot RPC bị tràn hoặc model cắt ngẫu nhiên làm mất nhận diện nhân vật!
 
+71. **Screenwriting Skills Interlock & Standardized Cinematic Video Taxonomy (`/fk-film` + `sw-*` Pipeline & Technical Taxonomy — User Lock 22/10/2026)** —
+    - (1) **Phân tầng Screenwriting Skills (`sw-*`) bắt buộc cho `/fk-film`**: Quy trình làm phim tự sự ngôi thứ ba (`/fk-film`) BẮT BUỘC phối hợp chặt chẽ với hệ thống 23 kỹ năng biên kịch chuẩn quốc tế (`sw-*`, toàn bộ đã được chuẩn hóa sang tiếng Anh):
+      - **Tầng 1 — Tiền kỳ Ý tưởng & Kinh Thánh Cốt Truyện (`output/<slug>/story-bible.md`)**:
+        - `/sw-workflow`: Điều phối tổng thể luồng phát triển kịch bản và quản lý trạng thái (`story-bible.md`).
+        - `/sw-premise-theme`: Xác lập tiền đề kịch bản (Premise as tyrant), ý niệm chủ đạo (Controlling idea: Value + Cause), xung đột triết lý và logline thương mại.
+        - `/sw-genre-anatomy`: Định vị hệ thống beat chuyên biệt trong 12 thể loại Truby, luật thể loại, và kỹ thuật phối trộn thể loại (Genre-mixing).
+        - `/sw-story-structure`: Kiến trúc cốt truyện 3 hồi / 4 phần Syd Field & Blake Snyder (Inciting Incident, Plot Points, Midpoint, All Is Lost, Climax).
+        - `/sw-truby-anatomy`: 22 bước phát triển hữu cơ (Organic plot spine), tứ giác đối kháng (Four-corner opposition), và chuỗi luận điểm đạo đức.
+        - `/sw-character-conflict`: Thiết kế mâu thuẫn 3D nhân vật (Want vs. Need, Misbelief), dàn xếp nhân vật đối kháng (Unity of opposites).
+        - *Dành riêng cho phim bộ / Series*: `/sw-series-engine-bible` (động cơ dài tập, character web), `/sw-series-structure` (kiến trúc hồi ngầm, A/B/C runner, cliffhanger).
+      - **Tầng 2 — Kịch bản Chi tiết, Storyboard & Ngôn ngữ Điện ảnh (`script.md` + `ref_prompts.json`)**:
+        - `/sw-scene-craft`: Thiết kế từng nhịp cảnh (Beat design, 5-step scene analysis McKee, Value turns +/-, subtext, sensory details).
+        - `/sw-dialogue`: Thoại là hành động (Dialogue as action), tam giác đối thoại (Trialogues), triệt tiêu thoại giải thích sáo rỗng (*zero on-the-nose exposition*), hiệu chỉnh số từ khớp chuẩn thời lượng video (Rule 49).
+        - `/sw-format-adaptation`: Quy chuẩn kịch bản Spec quốc tế, hợp đồng Fountain, viết action lines trực quan sinh động.
+        - Phối hợp trực tiếp với bộ subagents kỹ xảo điện ảnh: `/fk-character-design` (Turnaround Sheet 16:9), `/fk-camera-guide` (cỡ cảnh, góc máy, quang học), `/fk-action-choreography` (bảng vật lý hành động, chuỗi 4s), `/fk-cinematic-transitions` (mối nối dựng phim), `/fk-storyboard` (neo trực quan 2×2).
+    - (2) **Hệ Thống Từ Vựng Kỹ Thuật Video Điện Ảnh Chuẩn Hóa (Standardized Cinematic Video Taxonomy)**: Mọi khâu sản xuất phim từ thiết kế, dựng cảnh, quay phim, viết kịch bản đến prompt JSON BẮT BUỘC sử dụng chuẩn từ vựng kỹ thuật điện ảnh tiếng Anh:
+      - **Thiết kế nhân vật & sinh vật (Character/Creature Design)**: `16:9 Turnaround Sheet`, `Proportion Lock` (Net height, head ratio, inseam), `Bone & Cranial Architecture`, `Biological Micro-Texture Layer` (`polygonal basement scales`, `conical keratin tubercles`, `weathered fissures`, `dewlap skin folds`), `Wardrobe State Ladder`, `Permanent Prop Geometry`, `Anti-Wax / Zero Plastic Sheen`.
+      - **Dựng cảnh & Bối cảnh (Mise-en-Scène & Setting)**: `Base Location vs. Scene State Ledger` (trạng thái môi trường suy thoái một chiều S0→Sn), `Spatial Blocking & Depth Staging` (Foreground FG, Midground MG, Background BG; `180-Degree Axis of Action`, `Eyeline Match`), `Motivated Practical Lighting` (nguồn sáng thực tế có động cơ, CẤM `god rays` và `studio rim lighting`).
+      - **Góc máy & Ngôn ngữ Điện ảnh (Cinematography & Camera)**: `Framing / Shot Scale` (`EWS`, `WS`, `MS`, `MCU`, `CU`, `ECU`, `OTS`), `Camera Angle` (`Eye-Level`, `Low-Angle`, `High-Angle`, `Dutch / Canted`, `Top-Down`), `Camera Movement` (`Static / Locked-Off`, `Pan`, `Tilt`, `Dolly-In / Dolly-Out`, `Tracking / Trucking`, `Steadicam / Handheld with natural footfall vertical bounce`, `Whip Pan`), `Optics & Texture` (`24mm/35mm/50mm/85mm`, `Deep Focus f/8`, `35mm film grain`, `180-degree shutter motion blur`).
+      - **Storyboard & Khung Neo (Storyboard & Visual Anchoring)**: `2×2 Time Storyboard Grid` (4 panels 16:9 theo thời gian), `Panel 1 Frame 0 Anchor`, `Continuous Scene Chains (PREV_LAST_FRAME)`, `Visual Audit of Storyboard Sheet` (đọc thể ảnh thực tế trước khi chốt prompt video).
+      - **Prompt Kỹ Thuật Structured JSON**: Khóa 5 tầng (`camera`, `characters` với chip ref inline `{{media:<uuid>|<file>}}`, `setting & style`, `timeline_action` với cơ học quán tính p = m * v, `speech & audio`, `negative_constraints`).
+      - **Kịch Bản & Hành Động Kịch (Screenplay & Dramatic Action)**: `Scene Sluglines`, `Action Lines`, `Dialogue as Action`, `Word-to-Duration Calibration` (4s: 0/6-8 từ, 6s: 12-15 từ, 8s: 18-22 từ, 10s: 24-28 từ, `Sonic Isolation`: 0 từ).
+    - (3) **Khóa chuẩn ngôn ngữ tiếng Anh cho bộ 23 kỹ năng `sw-*`**: Toàn bộ tài liệu, nguyên lý và thuật ngữ của 23 skill `sw-*` (tại cả `skills/sw-*/` và `.agents/skills/sw-*/`) BẮT BUỘC duy trì 100% bằng tiếng Anh chuẩn điện ảnh quốc tế để tương thích hoàn hảo với các mô hình AI và workflow sản xuất phim chuyên nghiệp.
+
+
 ## Pipeline Order (Omni Flash R2V Ingredients Workflow)
 
 ```

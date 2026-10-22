@@ -1,282 +1,259 @@
 ---
 name: sw-chinese-opera-qupai-cases
-description: Worked qupai-system (曲牌体) opera scripts, act by act. Guan Hanqing's three surviving zaju (窦娥冤／救风尘／金线池 — twelve acts, 126 tunes, one mode and one rhyme per act, sung/spoken ratios); Tang Xianzu's 牡丹亭 (55 scenes, ~420 tunes, 集唐 closing quatrains, the 圆驾 south-north composite suite); Kong Shangren's 桃花扇 (44 scenes plus four unnumbered, the 副末 frame line, upper/lower halves, a fan's seven transformations, his sixteen 凡例); 长生殿 (Wang Jilie's fifty-scene staging table); Wei Minglun's 巴山秀才 (1983 Sichuan 高腔, 43 tunes, nine 帮腔 passages). Every case states its edition and collation status, then structure, tunes, stage conventions and transferable devices. Method is in sw-chinese-opera-qupai; this skill holds the worked scripts. Use when you want a real example of how a 传奇 or 杂剧 is assembled, need actual scene counts and tune counts to imitate, are judging where a famous script breaks prosody, or need models for 副末开场, 集唐下场诗, 南北合套 or 帮腔 (曲牌体全本／牡丹亭／桃花扇／窦娥冤／救风尘／长生殿／巴山秀才／唱段表／结构表).
+description: Worked Qupai-system (曲牌体) opera scripts, act by act. Guan Hanqing's three surviving Zaju (The Injustice to Dou E, Rescuing a Courtesan, The Gold Thread Pond — twelve acts, 126 tunes, one mode and one rhyme per act, sung/spoken ratios); Tang Xianzu's The Peony Pavilion (55 scenes, ~420 tunes, Jitang closing quatrains, the Imperial Audience Southern-Northern composite suite); Kong Shangren's The Peach Blossom Fan (44 scenes plus four unnumbered, the Fumo narrator through-line, upper/lower volumes, a fan's seven transformations, sixteen Fanli principles); The Palace of Eternal Youth (Wang Jilie's fifty-scene staging table); Wei Minglun's The Scholar of Bashan (1983 Sichuan Gaoqiang, 43 tunes, nine Bangqiang passages). Every case states its edition and collation status, followed by structure, tunes, stage conventions, and transferable craft devices. Methodology is in sw-chinese-opera-qupai; this skill holds the worked full-length scripts. Use when analyzing how a Chuanqi or Zaju is constructed, needing actual scene and tune counts to emulate, evaluating where a classical script breaks prosodic rules, or examining models for Fumo Kaichang, Jitang Xiachangshi, Nanbei Hetao, or Bangqiang.
 ---
 
-# 曲牌体全本语料库（Qupai-System Case Studies）
+# Qupai Full-Script Case Studies (曲牌体全本语料库)
 
-> **输出语言＝提问语言**；术语一律锚回原词，见 [sw-workflow/terms.md](../sw-workflow/terms.md)，不自创译名。戏曲术语（折、齣、楔子、宫调、套数、曲牌、前腔、幺篇、合头、集曲、集唐、副末开场、题目正名、帮腔、宾白、科介）没有英文对应物，任何语言下保留原词加一句释义。
+> **Output Language = Prompt Language**; Technical terms are strictly anchored to their original forms without invented translations (see [sw-workflow/terms.md](../sw-workflow/terms.md)). Traditional theatrical terms (*Zhe*, *Chu*, *Xiezi*, *Gongdiao*, *Taoshu*, *Qupai*, *Qianqiang*, *Yaopian*, *Hetou*, *Jiqu*, *Jitang*, *Fumo Kaichang*, *Timu Zhengming*, *Bangqiang*, *Binbai*, *Kejie*) have no direct Western equivalents; in any language, retain the original romanized term plus a single explanatory sentence.
 
-**这是语料库，不是方法书。** 方法陈述一律不重写，只给指针：见 [sw-chinese-opera-qupai](../sw-chinese-opera-qupai/SKILL.md) 十三节（立场／杂剧支／传奇支／填词法／宫调与套数／排场／宾白→曲接口／帮腔／改编改本／现代新编／名作也违律／边界／诊断）。**每案固定五项**：①作品与版本（含核对状态）②结构层结论 ③唱段／曲牌层结论 ④程式层 ⑤可迁移手法；末尾挂一行"名作违律处"指回 qupai 十一。
+**This is an empirical script corpus, not a theoretical methodology manual.** Methodological theory is not duplicated here; it provides cross-reference pointers to the 13 sections of [sw-chinese-opera-qupai](../sw-chinese-opera-qupai/SKILL.md) (Postures / Zaju Branch / Chuanqi Branch / Tune-Filling Craft / Gongdiao & Suites / Staging Balance / Dialogue-to-Aria Interfaces / Bangqiang / Adaptation / Modern Practices / Masterpiece Violations / Medium Boundaries / Diagnostics). **Every case study adheres to five standardized items**: ① Work & Editions (including collation status), ② Structural Layer Conclusions, ③ Aria/Tune Layer Conclusions, ④ Conventional/Chengshi Layer, and ⑤ Transferable Techniques; closing with a note on prosodic rule violations referencing `sw-chinese-opera-qupai` §11.
 
-**正文只留结论句与手法；表格、逐折数据、原文实例、例证全文一律在 reference**，每处被搬走的地方标"见 reference-xxx.md §N"：[zaju](reference-zaju.md)、[mudanting](reference-mudanting.md)、[taohuashan](reference-taohuashan.md)、[changshengdian](reference-changshengdian.md)、[bashan](reference-bashan.md)。**正文定方向，动笔前把对应 reference 的表拉出来照着填。**
+**The main text preserves core analytical conclusions and transferable techniques; tables, scene-by-scene data, source excerpts, and extended textual citations are housed in reference files**: [zaju](reference-zaju.md), [mudanting](reference-mudanting.md), [taohuashan](reference-taohuashan.md), [changshengdian](reference-changshengdian.md), and [bashan](reference-bashan.md). **The main text dictates dramaturgical direction; consult the reference tables before drafting.**
 
-## 按任务读哪几节（不要通读）
+## Targeted Reading Index (Do Not Read Cover-to-Cover)
 
-| 你想找 | 去 |
+| Objective | Target Section |
 |---|---|
-| 一折几支曲、什么宫调、什么韵 | 一 → ref-zaju §1、§3 |
-| 一人主唱怎么写对手戏 | 一（1.4）→ ref-zaju §5、§6 |
-| 长本传奇怎么排场、怎么养副线 | 二、四 → ref-mudanting §1、ref-changshengdian §1 |
-| 集唐下场诗、南北合套、宫调呼应 | 二（2.3、2.4）→ ref-mudanting §2–§4 |
-| 副末开场扩成贯穿线；上下本怎么分 | 三（3.2）→ ref-taohuashan §1、§8 |
-| 一件道具怎么贯穿全剧 | 三（3.4）→ ref-taohuashan §4 |
-| 作者自定的编剧规则（长折八曲、反集唐） | 三（3.5）→ ref-taohuashan §5–§7 |
-| 现成的排场交替样本 | 四 → ref-changshengdian §1 |
-| 现代新编怎么松、帮腔怎么写 | 五 → ref-bashan §2、§3 |
-| **按手法反查案例** | **六——多数情况从这里进** |
-| 同一作者跨体系的对照组 | 七 |
-
-（ref-xxx ＝ reference-xxx.md）
+| Tune counts per act, Gongdiao modes, and rhyme distributions in Zaju | §1 → ref-zaju §1, §3 |
+| Writing multi-character scenes under a single-singer vocal monopoly | §1 (1.4) → ref-zaju §5, §6 |
+| Staging balance and subplot management in full-length Chuanqi | §2, §4 → ref-mudanting §1, ref-changshengdian §1 |
+| Jitang exit quatrains, Southern-Northern joint suites, modal resonance | §2 (2.3, 2.4) → ref-mudanting §2–§4 |
+| Expanding the Fumo prologue into a through-line; two-volume division | §3 (3.2) → ref-taohuashan §1, §8 |
+| Anchoring an entire opera with a single evolving physical prop | §3 (3.4) → ref-taohuashan §4 |
+| Playwright-defined operational rules (8-tune quotas, anti-Jitang) | §3 (3.5) → ref-taohuashan §5–§7 |
+| 50-scene staging balance templates | §4 → ref-changshengdian §1 |
+| Modern Qupai librettos and writing Bangqiang offstage choruses | §5 → ref-bashan §2, §3 |
+| **Reverse-lookup cases by dramatic craft technique** | **§6 — Primary Entry Point for Most Queries** |
+| Cross-system comparative control pair (same author, two musical systems) | §7 |
 
 ---
 
-## 一、元杂剧三本：十二折的硬实证
+## 1. Yuan Zaju Masterworks: Empirical Evidence Across 12 Acts
 
-### 1.1 作品与版本
+### 1.1 Works & Editions
+Guan Hanqing's *The Injustice to Dou E (Gantian Dongdi Dou E Yuan)*, *Rescuing a Courtesan (Zhao Pan'er Fengyue Jiu Fengchen)*, and *The Gold Thread Pond (Du Ruiniang Zhi Shang Jinxian Chi)*, **based on the Yuanqu Xuan texts in Wikisource** (retrieved 2026-09-12; textual features match Zang Jinshu's *Yuanqu Xuan* system). Citations are drawn directly from source texts. Because *Wangjiang Ting* lacks an authenticated complete edition, *Gold Thread Pond* serves as the **third independent verification sample**; modernized adaptations lacking tune titles and role classifications cannot serve as structural evidence.
 
-关汉卿《感天动地窦娥冤》《赵盼儿风月救风尘》《杜蕊娘智赏金线池》，**据维基文库元曲选本**（抓取 2026-09-12；页面未标底本，正文特征与臧晋叔《元曲选》系统一致）。**引文来自原文，不标待核**；推断另标〔按〕。《望江亭》无全本，故第三本改取《金线池》，是验证前两本结论的**第三个独立样本**；《关汉卿戏剧故事选》（1984）白话改写本**零曲牌零折次零行当**，不能判断结构。
+### 1.2 Structural Layer Conclusions
+Detailed structural tables, sung-to-spoken ratios, three-play comparisons, and collation against Wang Jilie's Northern suite forms are cataloged in [reference-zaju.md](reference-zaju.md) §1, §3, §4.  
+**Core Findings**:  
+- **The wedge (*Xiezi*) is optional** (restricted to Xianlü [Shanghua Shi] or [Duanzheng Hao], at most two tunes with optional Yaopian; singer is flexible);  
+- **All four acts feature a single exclusive singer—the female lead (*Zhengdan*, 123 of 123 arias)**;  
+- **Act 1 is permanently Xianlü; Act 4 is permanently Shuangdiao**;  
+- **One act sustains one rhyme without modulation; four acts use four distinct rhymes**;  
+- **The entire corpus contains zero instances of Qianqiang or Huantou**;  
+- **The finale's resolution may yield to judicial verdicts and spoken verse (*Ciyun*)**;  
+- Titling and Naming (*Timu Zhengming*) lines match narrative strands;  
+- **Sung-to-spoken ratios identify dramatic anchor scenes** (the execution ground in *Dou E* has the densest singing ratio at 1:1.1, while the wedge sits at 1:18.4; Act 4 of *Rescuing a Courtesan* has an even ratio due to plot-trap mechanics; Act 1 is the only act where singing exceeds speech at 1:0.7);  
+- 11 of 12 acts strictly match standard suite formulas, including precedents of chaining two formulas into extended suites.
 
-### 1.2 结构层结论
+### 1.3 Aria & Tune Layer Conclusions
+126 tune instances across the three plays (41 / 44 / 41), cataloged in [reference-zaju.md](reference-zaju.md) §2.  
+**Five Principles**:  
+1. **Singing Right = Protagonist Status**: all 44 arias in *Rescuing a Courtesan* belong to Zhao Pan'er; the victim sings zero arias—**dramatic structure, vocal monopoly, and titular identity constitute a single unified decision**;  
+2. The singing agent and the plot-propelling agent can be bifurcated;  
+3. Descending coda sequences (*Sha*) follow fixed patterns (each tune voicing one wish and one historical allusion);  
+4. **Yaopian stanzas must advance plot action** (*Self-check*: If deleting the Yaopian leaves the plot intact, the stanza is redundant);  
+5. Rhyme acoustics govern terminal cadences (*Yu-Mo* closed-mouth rhymes snap shut decisively; *Jie-Lai* open-mouth rhymes resonate broadly).
 
-**十二折逐折结构表、曲白比表、三剧合看总表、与王季烈北曲套数体式的逐折对照及用韵实查，见 [reference-zaju.md](reference-zaju.md) §1、§3、§4。** 结论句：**楔子可有可无**（曲只仙吕〔賞花時〕〔端正好〕二牌、可带幺、至多两支，唱者不定）；**四折唱者必定是正旦且排他（123/123 支）**；**第一折恒仙吕、第四折恒双调**；**一折一韵到底、四折不重，韵部是折的属性、跨剧可重**；**全剧无一处"前腔""换头"**；**末折收束可让给官断与判词**；题目正名几条线就几句；**曲白比的折内分布是重场戏的指针**（法场折 1:1.1 最密、楔子 1:18.4；四折极平无抒情高峰是设局戏的结构后果；首折 1:0.7 唯一曲多于白）；**套式 11/12 合**（不合的一折宽标准合、严标准不合，**两种判读并列**），并有"**两式串联成长套**"的现成范例。
+### 1.4 Conventional/Chengshi Layer
+Seven core conventions documented in [reference-zaju.md](reference-zaju.md) §5, §6:  
+- Entrance poems + self-introductions (corrupt officials introduce themselves as confessions; honest officials introduce regional governance);  
+- **Primary singers do not recite entrance poems; the opening tune establishes the scene**;  
+- Split-line exit poems **must conclude on an ironic reversal**;  
+- Interspersed speech `[Daiyun]` and asides `[Beichang]`;  
+- **`[Huan'ke]` indicates public staged substitution, immediately answered by an erroneous question to exploit dramatic irony**;  
+- Official verdicts + `[Ciyun]` closing verse;  
+- Virtual exits / phantom entrances (a single line eliminating an actor's physical exit and re-entry).
 
-### 1.3 唱段／曲牌层结论
+### 1.5 Transferable Techniques
+1. **Designate the primary singer first; deduce the play's title directly from their decisive physical action.** (Invalid in Chuanqi and Banqiang opera).  
+2. **Writing multi-character dialogue under a single-singer monopoly**: Convert opposing lines into dialogue interruptions, and ensure the primary singer **catches the key words of that spoken line** to resume singing.  
+3. **Interrupting an aria with stage business or dialogue across two or three fragments is standard technique, not an error.** (An unbroken aria reveals lyrics detached from dramatic action).  
+4. **Plot-trap deception must be explained to the audience in spoken dialogue prior to execution, and the ruse must be partially unmasked mid-way before pivoting to success.** (Contradicts Western suspense: Chinese opera conceals no secrets from the audience).  
+5. **State a thematic proposition three times using identical syntax to construct dramatic architecture; two instances read as mere repetition.** (The third instance must land on an event with irreversible consequences).  
+6. **Use a non-singing supporting character to recite the exit poem to partition dramatic segments** (preventing the protagonist from degrading into a tour guide).
 
-三剧共 **126 条曲牌**（41／44／41），**全表见 [reference-zaju.md](reference-zaju.md) §2。** 五条：**主唱权＝主角权**——44 支全给来救人的赵盼儿、当事人一支不唱，剧名随之，**结构、唱权、剧名是同一个决定**（板腔体无对应物）；**唱的人和推动的人可以分开**；**煞的降序是定式**（一支一愿各带一典）；**幺篇必须推进一步**（**自检**：删掉幺篇，情节还往前走吗）；**韵部与收煞方式一致**（鱼模闭口收得干脆、皆来开口放得开阔）。
-
-### 1.4 程式层
-
-七件，**全部条目、原文实例与七段代表性曲文见 [reference-zaju.md](reference-zaju.md) §5、§6**：上场诗＋自报家门（**贪官写成自供状／清官只写治下景象**两条反向样本）；**主唱者不念上场诗，定场靠首曲**；分句下场诗**末句必须带转折或反讽**；〔帶云〕与〔背唱〕；**〔換科〕＝当众偷换，换完必有一句"错问"兑现落差**；官断＋〔詞云〕（**不专属公案**）；虚下／古门（**一句话省掉一个人的上下场**）。
-
-### 1.5 可迁移手法
-
-**每条的例证、自检与失效条件全文见 [reference-zaju.md](reference-zaju.md) §7。**
-
-1. **先定谁主唱，剧名从他的动作里出**（**不成立于**传奇与板腔体）。
-2. **一人主唱下写众人戏只有两法**：对方的话写成插白、主唱者下一句**接住那句白的字眼**。
-3. **一支曲被科介或白切成两三截是常规，不是破格**（一支也没被切开，说明唱段没长在动作上）。
-4. **计策要在实施前用整段宾白当众交代清楚，且局必须中途被识破一半再绕回去**（**不成立于**通用层的悬念观：戏曲不向观众保守秘密）。
-5. **一个论点出现三次、每次同一句法就成骨架；两次是重复**（第三次必须落在有实际后果的场合）。
-6. **用一个不唱的配角念下场诗来分节**（否则主角变成解说员）。
-
-**名作违律处**：《金线池》第四折**无尾声**——与"同牌四支＋换头可省尾声"并列的第三种省尾出口，见 qupai 十一。
-
----
-
-## 二、《牡丹亭》：五十五齣的南曲传奇顶格样本
-
-### 2.1 作品与版本
-
-汤显祖万历二十六年（1598）成《牡丹亭还魂记》。底本：人民文学出版社徐朔方、杨笑梅校注本（1963 一版，2014 第 24 次印刷），epub 无页码，**一律用齣目名定位**。**核对状态：83 处待核已核，改 4 处，异文 9 处保留，25 处无法核对**（清单见 [reference-mudanting.md](reference-mudanting.md) §7；25 处全是校注本的注释与前言，引用时注明"据徐朔方注"）。两条硬约束：**宫调〔拟〕一处也没去掉**（维基文库全本不标宫调）→ **凡宫调栏带〔拟〕的条目只能当例证不能当依据**，讲宫调只用北曲三套（〈冥判〉〈硬拷〉〈圆驾〉）支撑，要去掉〔拟〕须查《纳书楹曲谱》纸本；**〈冥判〉"列三十九种花"存疑**，由这个数字导出的自检条**暂停，不进 skill**。
-
-### 2.2 结构层结论
-
-**55 齣逐齣结构表见 [reference-mudanting.md](reference-mudanting.md) §1。** 结论句：**55 齣、曲牌约 420 支**，最长齣 20 支、最短 2 支，**唱段密度＝该齣的情感分量**；**大齣之后必接短齣**（**自检**：把曲牌数按齣画成折线，连续两齣超过 10 支就插一齣小戏）；**第一齣〈标目〉不演事**，只做作者自白、剧情梗概、**四句极简提纲**（非集唐）各领一条线，**主线一人一事，副线用一句话挂住**；**生旦为全剧主腦、必须于第二、三折出场**（王季烈语，传奇通例）；**一齣可以有两套曲**（〈闹殇〉前套写死、后套写身后人的反应；**不做**则主角一死就落幕）；**副线是可删的第一去处**（硕园改本删成 43 齣，乾隆订本删的正是两齣番王贼寇戏），**齣数与曲律是两条独立的可改造轴**。
-
-### 2.3 唱段／曲牌层结论
-
-**六条的逐齣实证、〈圆驾〉合套逐支排列、集曲清单、同牌远呼应出处见 [reference-mudanting.md](reference-mudanting.md) §2、§3；唱段全表 425 条见 `_notes/tang-mudanting/01–07`。** 六条：**南北曲分工**——番王贼寇鬼判公堂朝廷用北曲、闺阁家庭书生用南曲，北套**一人主唱到底、他人只有白**（元杂剧"一人主唱"的残留）；**南北合套＝"一人对众人"写进曲律**（**失效条件**：终场若几人平分是非，合套会架空主角，改用同牌轮唱）；**用宫调做跨齣呼应**（板腔体做不到），连带**选曲牌时连牌名的字面一起选**；**集唐下场诗 55 齣全备**，四句七言每句下注原作者，可分念可带合，末齣八句是唯一例外；**同一支曲牌第二次出现时对着第一次的反面写**（**失效条件**：相隔十齣以内或情绪相同就变重复）；**集曲用在情绪零碎、边走边看边想的段落**。
-
-### 2.4 程式层
-
-七件（传奇程式的最小可用集），**逐齣出处与摘段 1–10 见 [reference-mudanting.md](reference-mudanting.md) §4、§6**：**自报家门六件事**（姓名／籍贯／家世／现状／心愿／当下要做的事，末尾"正是……"收口；**丑、贴的家门可用韵语说**并替观众补课）；上场诗**可用前人诗词也可自撰**；**曲中夹白不占曲位**（**自检**：删掉全部插白，曲句是否仍合律仍连贯）；**唱情、白理**（**失效条件**：这段理本身就是情绪爆发时仍可入曲）；**换场靠花神**，同类有去而复返、一齣两个尾声；鬼的进出靠鬼声、掩袖、内风；**现成程式照用但要反转一次**（三叫三应规定"一声高如一声"而演成"声渐低"，验鬼的程式反证她是鬼）。
-
-### 2.5 可迁移手法
-
-**每条的例证、自检与失效条件全文见 [reference-mudanting.md](reference-mudanting.md) §8。**
-
-1. **群戏／过场用"同牌反复＋合头换字"，不为每组另制曲牌**（合头只换末三字）。
-2. **多人同场反应用"一牌四支前腔＋共同合头"，一人一种情绪**（四支各归纳成一个词，出现同义词就删一支）。
-3. **独角齣的曲数＝主角对同一件物的认识层次数，不由时间长短定**（**失效条件**：场上另有可接唱的人物时改分唱）。
-4. **重大信息切成四刀说，每刀之间插一句追问，并给一个身段承担转折**（不做则对手变听众）。
-5. **同一空间写两次，一次事发时一次事过后**（**失效条件**：两次之间没有时间跨度或人物变化时只是重复）。
-6. **要跨二十齣呼应，就用观众本来认得的现成句**（这句话离开本剧还成立吗）。
-7. **改编现成故事的四条动作**（对照表见 §5）：①**删亲属**孤立主角；②**把合法改成违法**（开坟改为私掘，触《大明律》"开棺见尸不分首从皆斩"）；③**改相遇方式**；④**原作的好句子留在宾白里，只改曲文**。**自检**：逐条问"这一改是否制造了新的对手或新的违法风险"。接 qupai 九与 `sw-format-adaptation`。
-
-**名作违律处**：衬字太多至不可句读；〈冥誓〉出宫犯调；四梦排场俱欠斟酌（吴梅、王季烈同批，《紫钗》"实不能演也"）；平上去韵间杂入声。处理方式：「**但当学其文，不可效其法。**」见 qupai 十一。
+*Rule Violation in Masterworks*: Act 4 of *Gold Thread Pond* lacks a coda (*Weisheng*)—the third permissible condition for omitting a coda, see `sw-chinese-opera-qupai` §11.
 
 ---
 
-## 三、《桃花扇》：四十四出、双线绞合与作者自定的编剧规则
+## 2. *The Peony Pavilion (Mudanting)*: The 55-Scene Southern Chuanqi Benchmark
 
-### 3.1 作品与版本
+### 2.1 Work & Editions
+Tang Xianzu completed the script in 1598. Base text: Xu Shuofang and Yang Xiaomei annotated edition (People's Literature Publishing House, 1963/2014); citations reference scene titles. Collation status: 83 checkpoints verified, 4 emendations made, 9 textual variants retained, 25 annotations verified via editorial notes ([reference-mudanting.md](reference-mudanting.md) §7). Two hard constraints: digital editions omit Gongdiao modes (retaining `[Inferred]` status); modal discussions are grounded in the three definitive Northern suites (*Underworld Judgment*, *Severe Interrogation*, *Imperial Audience*).
 
-孔尚任康熙三十八年（1699）定稿。正文底本：epub（Calibre 转，无可靠页码，**一律用出目名定位**）。前置创作论（《小引》《小识》《本末》《凡例》《考据》《纲领》）**epub 全缺，已据维基文库补齐**；**《砌末》一篇仍缺**——已知缺口，不是孔尚任没写。**核对状态：322 处待核已核（643 个片段，覆盖全部 44 出），改 46 处，异文约 56 处保留，11 处无法核对**（清单与两处存疑见 [reference-taohuashan.md](reference-taohuashan.md) §0）。**epub 转换错误率比《牡丹亭》高一个量级且单字错误直接影响韵辙与字句格式的判断**，凡取唱词做韵例一律用核对后的版本；11 处无法核对**全是宫调**——**宫调标注只能当例证不能当依据**。
+### 2.2 Structural Layer Conclusions
+55 scenes, ~420 arias; longest scene contains 20 arias, shortest contains 2; **aria density directly indexes emotional gravity**.  
+- **Major anchor scenes are invariably followed by brief transitional scenes** (*Self-check*: Chart arias per scene; if two consecutive scenes exceed 10 arias, interpolate a transitional vignette);  
+- **Scene 1 (*Prologue / Biaomu*) enacts zero plot events**, providing only authorial reflection, narrative summary, and four minimalist lines framing each plot strand;  
+- **The romantic leads (*Sheng/Dan*) form the structural engine, appearing in Scenes 2 and 3**;  
+- **A single scene may contain two separate aria suites** (*Soul Departure*: first suite enacts death, second suite depicts survivors' grief; without this, the curtain falls prematurely upon death);  
+- Subplots are the primary candidates for pruning (historical adaptations condensed 55 scenes into 43 by cutting bandit and barbarian subplots).
 
-### 3.2 结构层结论
+### 2.3 Aria & Tune Layer Conclusions
+- **Functional Allocation of Northern vs. Southern Tunes**: Northern tunes belong to external entities (rebels, bandits, underworld judges, tribunals, imperial courts), sung as unbroken solo suites with others speaking dialogue only; Southern tunes govern intimate domestic and romantic spheres;  
+- **Southern-Northern Joint Suites (*Nanbei Hetao*) embed "the individual defying the collective" directly into prosodic architecture** (*Imperial Audience*: 10 Northern tunes belong exclusively to Du Liniang, while Southern tunes are distributed to the surrounding ensemble);  
+- **Cross-scene modal resonance** (Du Liniang dies under the "Oriole" suite; Liu Mengmei's Scene 24 mirrors her grief using the identical Gongdiao mode and tune family);  
+- **Jitang exit quatrains across all 55 scenes**, assembling Tang poetic lines to close the current scene while foreshadowing the next;  
+- **When a Qupai tune reappears, compose its lyrics as the diametrical opposite of its first occurrence** (*Failure condition*: Repeating within 10 scenes or under identical emotion produces redundancy);  
+- Pastiche suites (*Jiqu*) accompany fragmented emotional journeys and wandering reflections.
 
-**44 出逐出结构表、脚色分配总表、上本四线分布表见 [reference-taohuashan.md](reference-taohuashan.md) §1、§2、§8。** 结论句：**44 出＝正文 40 出＋四个非编号出**（试一出《先声》、闰二十出《闲话》、加二十一出《孤吟》、续四十出《馀韵》，《凡例》16 自述这是"全体四十出之始终条理"）；**上下本各二十出、各演一夜**（**自检**：上本末出是否把两条线都悬起来而不了断？上本自足，下本就成了续集）；**四条线的交替节奏**三条排法——①**不连排三出同线**；②**每逢奸党线得势，紧接一出生旦线受害**；③下层穿针线卡在两线要接不接的位置上，**可以直接照抄**；**唱段密度＝分量**（全剧约 300 支，最密 14 支合套，最疏**闰二十出 0 支**）；**两出"哭"位置对称而每一项都反过来**（消息由外来改为自取、众哭改为独哭、唱＞白改为唱＜白、拜盟立誓改为五级号令）——**同一部戏写两次"主帅痛哭"，第二次必须把第一次的每个手段换掉**。
+### 2.4 Conventional/Chengshi Layer
+- **Self-introduction (*Zibao Jiamen*) covers six facts**: Name / Native Place / Ancestry / Present Status / Core Desire / Immediate Action, resolving on "Truly it is...";  
+- Dialogue interruptions do not consume metric syllables (*Self-check*: Remove dialogue; do the lyrics remain metrically coherent?);  
+- **Sing emotion, speak logic (*Chang Qing, Bai Li*)**;  
+- Staging reversals: Flower spirits guide scene transitions; ghosts enter via wind effects and sleeve veils; conventional routines are executed with inversions (the three-call routine performed decrescendo rather than crescendo).
 
-### 3.3 唱段／曲牌层结论
+### 2.5 Transferable Techniques
+1. **For ensemble scenes and transitions, use "repeated tunes + altered refrain words" rather than inventing new Qupai tunes.**  
+2. **For multi-character reactions, use "one tune with four Qianqiang iterations + a shared refrain," assigning each character a distinct emotional state.** (Summarize each in one word; if synonyms occur, delete one iteration).  
+3. **In soliloquy scenes, aria count reflects the protagonist's evolving layers of perception toward a single object, independent of elapsed time.**  
+4. **Deliver crucial revelations in four progressive cuts, punctuating each interval with an urgent question and physical movement.**  
+5. **Dramatize the identical physical space twice: once during the event, and once after the event has passed.**  
+6. **To craft a thematic echo spanning 20 scenes, anchor it with an authentic classical quotation recognizable to the audience.**  
+7. **Four Operations in Adapting Classical Tales**: (1) Prune family relatives to isolate the protagonist; (2) Convert legal acts into capital crimes (exhuming the corpse made an illicit grave-robbery under the Ming Code); (3) Transform love at first sight into erotic dreams; (4) Preserve source literary lines inside spoken dialogue while updating sung lyrics.
 
-**九条的逐出实证、曲装公文四例全文、同牌重现出处见 [reference-taohuashan.md](reference-taohuashan.md) §3。** 九条：**南北合套两样本分工相同——外来者唱北，主场众人唱南，听觉上立刻分出敌我**（**失效条件**：双方没有立场对立时这个分工就浪费了）；**⚠️ 但北曲不等于"外来者"**（第十八出北套六支全给坐着不动的主帅），**能当规则记的是：北曲＝这一出里必须由一个人唱到底的那个人**；**同一套曲牌反复使用作"此人要唱到底"的记号**；**曲装公文的三条限制**——一支曲装一件事（条目多时用【前腔】续）、套话要删只留判断句、唱前有人问唱后有人应；**同牌重现造反讽**（前一次没在观众记忆里立住就等于没有）；**忠奸的褒贬靠"同一支曲牌各用一次"不靠台词表态**（还要靠旁人指认，说明两支曲写平了）；**集曲联套**——同一场戏每人一支依次唱下来，最后一支给主角；**一牌到底写大溃散**（**叠句位置一样而内容一路下坠**）；**⚠️ 本剧唯一讲唱法处（"'丝'字是务头"）必须连引王季烈的更正**——孔把"两丝为务头"与"丝字不可出声唱"误合作一事（qupai 四）。
-
-### 3.4 程式层
-
-**七条全文、道具七变表、祭礼仪注全文、下场诗五种收法汇编、脚色兼扮细目见 [reference-taohuashan.md](reference-taohuashan.md) §2、§4、§8。** 七条：**副末开场扩成一条贯穿线**（本剧最大的结构创造，**而且这个叙述者同时是剧中人**——只在框架里说话的叙述者，议论没有分量）；**推场法**（"那公子早已登场，列位请看"，不用下场诗）；**"非情节出"不配曲**（唯一在场的目击者／听的人替观众发问／情绪靠科介音效。**失效条件**：信息能由主线人物带出就别另立一出）；**道具七变**——**每换一次身份必须由别人的动作促成**，且每次都压在一次价值转折上，另加一笔**同一件东西出现一个假的**；**脚色代号是演员编制不是人物名**（**遇到"小生"必须先看该出开头的"扮某某"**；**行当分配就是纲领的落实**）；**下场诗五种收法**（一律自作新诗、**反集唐**）；**祭礼仪注原样入戏**——**同一个"哭"字分三层**（奉命哭／主帅独哭／旁观者忍不住），把板正的仪注摆出来，后两层才有落差可比。
-
-### 3.5 《凡例》十六条与《纲领》的要点
-
-**《凡例》十六条是一份现成的编剧规则清单**，与李渔《闲情偶寄》并列为曲牌体方法的两个一手源头。**十六条原文、《纲领》四色四气全表、《小引》《小识》《本末》《考据》要点见 [reference-taohuashan.md](reference-taohuashan.md) §5–§7。** 最能直接执行的五句：
-
-1. **曲数额度（5 条）**：通例长折十曲短折八曲，孔**自定长折止八曲、短折或六或四**以防优人乱删；代价并列——吴梅批这个额度使"文章却不能畅适"。
-2. **曲白互斥（7 条）**：**已用说白交代过的事不许再用曲重述，该说白的也不许硬塞进曲**。**失效条件**：不成立于重复即修辞的场合（垛句、帮腔、合唱句）。
-3. **反厌套（3 条）**：「**凡局面可拟者，即厌套也。**」**自检**：写出目前先写一行"观众此刻预期下一出是什么"，正是那个就改。**失效条件**：程式性场次恰恰要可预期。
-4. **反集唐（15 条）**：上下场诗"乃**一韵之始终条理**"，一律自作新诗。→ **与《牡丹亭》全集唐正相反，两条并列不裁决**。
-5. **脚色≠道德（14 条）**："正色不足，借用丑净者"。**自检**：列"行当—人物—善恶"表，完全对齐说明分配是偷懒的。
-
-另三条备查（4 条每出不可增删、9 条"词意明亮为主"、12 条"说白详备不容再添一字"）与**《纲领》四色四气**（与 `sw-character-conflict` **并列而非替代**；分类轴是**功能**不是善恶，"色"管离合线、"气"管兴亡线，**框架人物进编制不当楔子**）、《本末》「**每一曲成，必按节而歌**」（找时优唱，**不是自己默读**）、孔评团圆改本"未免形予伧父"（**团圆是市场压力，孔知道而不取**），全文见 §5–§7。
-
-### 3.6 可迁移手法
-
-**每条的例证、自检与失效条件全文见 [reference-taohuashan.md](reference-taohuashan.md) §9。**
-
-1. **一件小道具必须能顶针推到全剧主题**（四级链：私物→人身痕迹→阵营→时代。**失效条件**：链断在第二级就只是信物不是题眼）。
-2. **同一个人物动作写三遍而不重复，靠三样东西区分**：对手的级别、代价的量级、唱白配比的翻转（三次配比一样就是写重了）。
-3. **一群人围攻一个人：一支带过曲拆成句、按攻势排序分派，被围的人只用宾白**（顺序可任意调换就是没分好）。**唱与白的分工就是立场的分工。**
-4. **最硬的话交给宾白，不交给唱**（改写成曲若必须为平仄加虚字，就说明它本来该是白）。
-5. **人物的职业本事必须是情节机关**，且**每次上场换一支更重的曲式**（换掉手艺剧情照样走，手艺就白给了）。
-6. **戏中戏必须做事，不许当气氛**（**让将被抹花脸的人自己说出抹花脸的厉害**；"会不会唱某部戏"决定人物去向）。
-7. **反团圆结尾要连推两次**，次序照抄：**先唱完一支情曲，再共看一次扇，然后才裂**（第二次推翻必须带来新东西）。
-8. **结尾写景：先走完一条路，再说一句话**（一支一处景按脚程排序，每处只写"缺什么"；**地点须都在前面演过**。**失效条件**：短剧没有可回收的旧景）。
-
-**名作违律处**：平仄多失调、衬字欠妥贴；〈传歌〉句法误（吴梅判"**有佳词而无佳调**"）；〈哭坛〉以南〔朝天子〕代北。见 qupai 十一。**孔尚任的《凡例》与吴梅、王季烈的判词是两套坐标，两边都写。**
+*Rule Violations in Masterworks*: Excessive padding obscuring phrasing; modal corruption in Scene 28; uneven staging pacing; mixing level/departing rhymes with entering tones. Maxim: *"Study their literary brilliance, do not imitate their prosodic errors."*
 
 ---
 
-## 四、《长生殿》：五十折排场全表（据王季烈，**无全本**）
+## 3. *The Peach Blossom Fan (Taohua Shan)*: 44 Scenes, Double-Strand Braiding, & Authorial Rules
 
-### 4.1 作品与版本
+### 3.1 Work & Editions
+Kong Shangren finalized the script in 1699. Base text: collated edition against Wikisource and Qing woodblock editions; introductory treatises (*Prefaces, Chronicle, Principles / Fanli, Evidentiary Notes, Theatrical Outlines / Gangling*) restored; 322 checkpoints verified across 44 scenes ([reference-taohuashan.md](reference-taohuashan.md) §0).
 
-洪昇《长生殿》。**本批材料里没有《长生殿》全本笔记**——所有数据来自王季烈《螾庐曲谈》卷二第四章所列的五十折排场表（印本 p0170–p0173，页图直读，不标待核；印本页码＝扫描页−22）。**因此本节只能讲排场与角色分配，不能讲曲牌、唱词与曲白比**；凡涉及具体唱段的结论一律不写。表照原样转写，见 [reference-changshengdian.md](reference-changshengdian.md) §1。
+### 3.2 Structural Layer Conclusions
+- **44 scenes = 40 numbered scenes + 4 unnumbered interludes** (*Prelude*, *Idle Talk*, *Solitary Chanting*, *Residual Melody*), forming the structural joints of the drama;  
+- **Two volumes of 20 numbered scenes each, performed over two consecutive nights** (*Self-check*: Does the Upper Volume finale suspend both narrative strands without resolution? If self-sufficient, the Lower Volume becomes an unwanted sequel);  
+- **Pacing across four narrative strands**: (1) Never run three consecutive scenes on the same strand; (2) Whenever the corrupt faction triumphs, immediately follow with the romantic leads suffering; (3) Lower-class liaison characters bridge narrative gaps;  
+- **Aria density maps dramatic weight** (~300 arias total; densest scene has 14 arias; unnumbered Scene 20 contains 0 arias);  
+- **Symmetrical mourning set-pieces**: Two general mourning scenes invert every staging device (news received from outside vs. investigated personally; collective wailing vs. solitary grief; singing dominating speech vs. speech dominating singing).
 
-### 4.2 结构层结论
+### 3.3 Aria & Tune Layer Conclusions
+- Northern tunes indicate the single performer who must sing unbroken to the end of the scene;  
+- **Three rules for setting official documents to music**: One tune per subject (extend via [Qianqiang] for long lists); delete bureaucratic clichés to leave only operative verdicts; precede with a question and answer with an acknowledgment;  
+- Re-using tunes to forge dramatic irony;  
+- **Differentiating loyalty from treachery by assigning opposing characters identical Qupai tunes** rather than didactic dialogue;  
+- Pastiche suites (*Jiqu*) for sequential multi-character entrances, culminating in the protagonist;  
+- Monolithic tune suites depicting catastrophic military routs (identical repeating meters with plunging emotional content);  
+- ⚠️ Citing Wang Jilie's correction regarding the "word *Si*" and Wutou acoustics (`sw-chinese-opera-qupai` §4).
 
-**五十折全表（折／目／宫调／角色／剧情性质）、剧情性质二十四类分类器、南曲套数六门分类、套数与角色匹配律、过场短剧条，见 [reference-changshengdian.md](reference-changshengdian.md) §1–§3。** 表上读出的两条：
+### 3.4 Conventional/Chengshi Layer
+- **The Fumo narrator expanded into an active through-line character** (the Master of Ceremonies, Lao Zanli);  
+- Transitional handoffs (*Tuichang Fa*) dispensing with exit poems;  
+- **Non-plot expository scenes contain zero arias** (relying on eyewitness dialogue, audience surrogate questions, and percussive sound effects);  
+- **The Seven Transformations of the Fan Prop**: Every transformation is propelled by an external character's action and lands on a value reversal, supplemented by a counterfeit double;  
+- Role types (*Hangdang*) represent theatrical casting, not fixed character identities;  
+- Rejection of Tang collations in favor of newly composed exit poems;  
+- Staging ritual protocols verbatim: splitting grief into three distinct tiers (command mourning, solitary grief, involuntary tears).
 
-- **三不重**（p0169）：「除第一折〈传概〉为上场照例文章外共四十九折。**不特曲牌通体不重复，而前一折之宫调与后一折之宫调不重复；前一折之主要角色与后一折之主要角色决不重复。**」这是全批材料里**唯一一份四十九折逐折可核的排场表**。
-- **排场交替律**（p0169，两体系通用）：「若第一折生唱、第二折旦唱，则第三折必须用**阔口或同场热闹之剧**；若慢曲长套二三折之后，必须间以**过场短剧或丑净所演之谐剧**。」**自检**：把折目按"主唱角色／曲情性质"排一列，看有无连续三折同角色同性质。**失效条件**：十折以内的短剧只保"不连两折同主唱"。
+### 3.5 The Sixteen Fanli Principles & Theatrical Outlines (*Gangling*)
+1. **Aria Quotas (Principle 5)**: Standard length is 10 arias; Kong restricts major scenes to 8 arias and minor scenes to 6 or 4 to prevent actors cutting text (Wu Mei noted this constrained expansive lyricism).  
+2. **Mutual Exclusion of Song and Speech (Principle 7)**: Facts established in speech must not be repeated in song, nor should expository facts be forced into song (*Failure condition*: Rhetorical refrains, Duoju stacks, and choruses are exempt).  
+3. **Anti-Cliché (Principle 3)**: *"Predictable theatrical situations constitute unbearable cliché."* (*Self-check*: Write what the audience anticipates next; if the scene matches, revise it).  
+4. **Anti-Jitang (Principle 15)**: Compose original verse for entrance and exit poems to maintain narrative continuity.  
+5. **Role ≠ Morality (Principle 14)**: Cast villain and clown roles based on dramatic function, avoiding simplistic moral alignment.
 
-### 4.3 从这张表读出的三条技术（王季烈自述，p0174）
-
-1. **一折之中移宫换韵是合法的，但必须因排场变动、剧情改换**（〈定情〉宴饮／密语；〈密誓〉天上相会／宫中设盟；〈埋玉〉逼妃／起行）。「**正以一折中移宫换韵而益见其切合剧情也**」——与《琵琶记·吃糠》"无故换调"正相反。**自检**：换宫那一刻场上发生了什么事？
-2. **北曲一折限一人唱的通例可以变通**：〈觅魂〉全套前半净唱、后半末唱——"此种长套之曲**一人之力决不能唱毕**，出神另易角色究是通幽一人，虽变通古人成法而仍不背于古。"
-3. **总评**："务使**离合悲欢错综参伍，搬演者无劳逸不均之处**。"→ **"搬演者无劳逸不均"是排场表的第二个功能**：它同时是演员的体力分配表。
-
-### 4.4 程式层（本表能支持的部分）
-
-四条全文见 [reference-changshengdian.md](reference-changshengdian.md) §4、§5。要点：**第一折〈传概〉是"上场照例文章"**，不计入三不重统计，与《牡丹亭》〈标目〉、《桃花扇》试一出同一功能位；**末折〈重圆〉回到第二折的格式**，首尾同一格；**"赚"用在排场改变、移宫换羽之际作接榫，"用赚者以一折为宜；一折中用赚亦不宜过二支"**（反例《紫钗》）。
-
-### 4.5 可迁移手法
-
-1. **写长剧先列一张五栏表：折／宫调／角色／曲情性质／事件**，只看"角色"与"性质"两栏有没有连着撞。**不成立于**短剧与折子戏；宫调不可核的本子只能核后两栏。
-2. **最长的诉情大套必须落在价值转折最大的那一折，且宜生旦所唱**（它所在的折不是你认定的重场，唱段就放错了地方——与元杂剧"曲白比最小的折必须是重场"同一条，与 `sw-scene-craft` 同构）。
-3. **两个大场之间必须有过场，且过场只能用短曲急曲**（误用带赠板的慢曲则"情节不贯、线索不联"）。
-4. **排场表同时是体力表**：看谁在连续三折里都要唱大套。**失效条件**：案头本可略——但这一略，本子就退回"文词虽美而不风行于歌场"那一路（p0166）。
-
-**名作违律处**：〈打围〉见 qupai 十一；另《幽闺记·请盟》误把越调〔看花回〕作仙吕〔点绛唇〕，**《邯郸记》《长生殿》连环沿误**——"前人这样标过"不是依据。
-
----
-
-## 五、《巴山秀才》：1983 年的曲牌体是什么样
-
-### 5.1 作品与版本
-
-魏明伦、南国《巴山秀才》，川剧**高腔**（曲牌体，有帮腔），标"新编历史剧"。**1983 年 7 月 30 日九稿于自贡**；四川文艺出版社 1985 年 1 月第一版。**OCR 说明与史实改动清单见 [reference-bashan.md](reference-bashan.md) §0。** **它的独一份价值**：本批材料里**唯一一部现代新编的曲牌体全本**——前四案示范的是明清与理论家眼中的曲牌体，这本示范的是**1983 年怎样**：曲牌名还在、帮腔还在，套数没了、格律松了。**史实改动幅度可量化**：原型"东乡惨案"**真名只保留两个、情节只保留两条**，其余人物与"毒酒"结局全部虚构。
-
-### 5.2 结构层结论
-
-**八场逐场结构表、人物表、伏笔与回收清单见 [reference-bashan.md](reference-bashan.md) §1、§6。** 结论句：**八场，场名全部二字动宾或偏正**（求赈／谎报／屠城／迂告／智告／换札／搜店／揭底），**连读就是一条完整情节线**；**序曲四言四句与末场二句合唱成框**；**主线＝四级告状＝四次上当＝四次认识升华**，**每一级失败都必须让主角多知道一件关于世界的事，否则就是重复的挫折**；**推力全部来自"别人替他承担后果"**，**主角不主动，但每次被推之后认识往前跳一格**（"起点极低"的写法）；**主角缺席的第二场是全剧因果的枢纽**；第四、五场是两个重场，第八场前三分之二全白，**把全剧最后一支曲牌压到人物断气之前**。
-
-### 5.3 唱段／曲牌层结论：四问四答
-
-全剧 **43 条曲牌／唱段**，**全表见 [reference-bashan.md](reference-bashan.md) §2；牌—情绪对应表与四问四答的逐条页码实证见 §4。** 高腔曲牌 11 支，另有【昆曲】4 处、京剧【西皮二六】1 处、【韵白】1 处，**不标牌名的唱段 9 处**。**问一：不成套，彻底放弃曲牌联套**（牌间无宫调关系、全剧一处宫调标注也没有、同一支牌跨场跨人重复；传奇"一出一宫调、一套到底、生旦不共牌"全部不适用；唯一遗迹是**接唱**，占合头的位置只做对唱交锋用）。**问二：零金碎玉选牌，依据是情绪与段落规模；判据是解释得通的为"这段情绪多长、什么调门"，解释不通的是"上一支是什么宫"。** **问三：守一半——一段一韵到底严格，字数平仄完全自由**（四五七十字混排、**三字头大量使用**＝板腔体习惯而非曲牌格律、句数远超原牌容量、口语川话歇后语直接入唱）。**问四：没有自撰新牌，但把牌名栏扩成"唱法指示栏"**：括号里出现**腔种**（"昆曲"，用哪支牌留给作曲）、**外剧种板式**、**念法**、**腔格类别**四类非曲牌的东西。**附：整首唐诗不改一字当唱段**——**曲牌体本有集唐传统，本剧把它从下场诗挪进了唱段。**
-
-### 5.4 程式层：帮腔九段
-
-帮腔**与角色的唱并列排版，行首写"帮腔"二字，和人物名占同一位置——它在剧本里被当作一个角色**。**九段全文、帮腔实例四段与其余程式的逐场出处见 [reference-bashan.md](reference-bashan.md) §3、§5、§7。** **四种功能，一处只挑一种**：叙述／评论／代言参与／情绪放大；另有**起唱**与**接下句**两种纯结构用法。**三条形式规律**：①**极短**（九处里六处只有 3–7 字），**帮腔从不承担成段抒情**；②**位置全在"角色唱不下去"的地方**；③**可以由帮腔完成换牌**，角色跟着走——**这是曲牌体里帮腔特有的结构权力**。**界线**：**伴唱／合唱在幕内**，承担报幕与主题。**孤例：剧中人听见帮腔并采纳它**（"嘿，这一腔帮得好！"随即照办）→ 帮腔从"众声"变成"命运的声音"；**全剧最多一次**，必须放在人物走投无路的节点，用第二次就降格成普通配角。**其余程式**（实例见 §5）：上场引子代自报家门、**定场诗用四言四句**（为末场翻转预留反讽）、**三人接力背唱**（当着告状人的面把合谋唱给观众听）、同台双背躬、**变脸写在人格翻转的节点而不是卖技**、口占散体祭文代下场诗、**幻觉场用服装年代错位标记**、锣鼓标记。
-
-### 5.5 可迁移手法
-
-**每条的例证、自检与失效条件全文见 [reference-bashan.md](reference-bashan.md) §8。**
-
-1. **同曲牌回环**：同一支牌、同一句帮腔在全剧前后各出现一次，内容正反对称（一到十顺数功名梦／十到一倒数告状史）。**失效条件**：间隔太近就成重复；两处必须分处人物转变的前后两侧，第二处要能否定第一处。**板腔体没有"同一支曲牌"这个记号，做不到这么干净。**
-2. **帮腔只写极短的句子，只放在角色唱不下去的位置；每处贴一个功能标签，贴不上的删**（超过七字就问"这句为什么不给人物唱"）。
-3. **用帮腔做冷评论，把悲情在一句之内推成喜剧**（**失效条件**：风格不是悲喜交融时像在笑话主角）。
-4. **用声腔给人物贴标签**（本地官唱高腔、外来亲王唱京剧、权贵庆功唱昆腔＝雅＝假）。**失效条件**：剧种只有一种声腔时不成立。
-5. **整首现成诗可以不改一字当唱段，但必须同时合乎场上情境、暗含另一层意思**（问"去掉它观众会少知道什么"）。
-6. **同一个性格弱点用两次，第二次救人命**（激他"不敢放炮"→偏要放，接幕后旗门炮是全剧最精巧的转场）。与 `sw-character-conflict` 互指。
-7. **梦里的道具原样兑现，兑现即杀人**（功名梦"三杯御酒"→末场真赐三杯，第三杯是毒酒）。同类：念错的字埋四场后由受害者当武器。
-
-**方法层的位置**：本剧进 qupai 第十节"现代新编曲牌体"（不进十一"名作违律"）——它与翁偶虹的昆腔实践（不用套曲、"零金碎玉"交错选曲，理由"套曲拘束太大"）是**两个剧种、两位作者、两个年代独立得出的同一结论**；罗怀臻《班昭》走相反的一条（白话文写而"没有一个字是破格的"，代价是"两天才能填一个曲牌"）。**三家并列，与吴梅、王季烈"填词必按谱"正面冲突，古今两条保留。** **术语冲突必须标**："**背面敷粉**"在本剧创作谈里指旧时代衬新时代，在翁偶虹六法里指一出戏内部用对比人物衬主角。**属通用层的四条**（原文见 §9）：**逐一否定现成类型法**定主角、**支点动作法** → `sw-character-conflict`／`sw-story-structure`；**风格由"人物性质×事件性质"的错配决定**、**主题句先找民间口头语** → `sw-premise-theme`。
+### 3.6 Transferable Techniques
+1. **Trace a minor hand prop across a four-tier thematic escalation**: Private Token → Bodily Mark → Political Faction → Historical Era.  
+2. **Depict an identical character action three times without repetition by varying opponent status, personal cost, and sung-to-spoken ratios.**  
+3. **When an ensemble besieges a solitary figure, split a single tune into lines distributed by aggressive momentum, restricting the besieged character to spoken dialogue.**  
+4. **Reserve the hardest, most uncompromising truths for spoken dialogue, never singing.**  
+5. **A character's professional craft must serve as a functional plot engine**, swapping to a heavier musical form upon each appearance.  
+6. **Plays-within-a-play must perform concrete dramatic work, never serve as decorative background.**  
+7. **Anti-reunion climaxes require two successive reversals**: Sing a passionate love song → examine the romantic token together → tear the token to shreds.  
+8. **Concluding landscape descriptions**: Traverse a physical journey before speaking the final line, revisiting previously enacted locations.
 
 ---
 
-## 六、可迁移手法索引（手法 → 案例 → 方法节号）
+## 4. *The Palace of Eternal Youth (Changsheng Dian)*: 50-Scene Staging Table
 
-救＝救风尘、窦＝窦娥冤、金＝金线池、牡＝牡丹亭、桃＝桃花扇、长＝长生殿、巴＝巴山秀才；方法栏只写数字者＝ `sw-chinese-opera-qupai` 的节号。
+All data drawn from Wang Jilie's *Yinlu Qutan*, Vol. 2, Chapter 4 ([reference-changshengdian.md](reference-changshengdian.md) §1–§3), focusing on staging architecture and character balancing.
 
-| 手法 | 案例 | 方法 |
+- **The Three Non-Repetitions (*San Buchong*) across 49 dramatic scenes**:  
+  1. Qupai tunes never repeat across the entire opera;  
+  2. The Gongdiao mode of one scene never repeats in the adjacent scene;  
+  3. The primary character of one scene never repeats in the adjacent scene.  
+- **The Law of Staging Alternation**: Sheng lead in Scene 1, Dan lead in Scene 2, requiring martial or ensemble spectacles in Scene 3; long slow suites must be punctuated by comedic clown sketches or brief transitions. *Self-check*: Chart scenes by character and emotional tone; ensure no three consecutive scenes collide.  
+- **Modulating Modes and Rhymes Within a Single Scene**: Valid only when justified by shifting staging balance and plot turns (banquet vs. midnight whisper; celestial meeting vs. palace oath; mutiny vs. departure).  
+- **Northern Opera Adaptations**: Extended suites exceeding vocal stamina can be split between two singers (Scene 39: Netherworld search split between Jing and Mo roles).  
+- **Staging Balance as Physical Stamina Management**: Staging tables budget performer fatigue to ensure sustainable vocal delivery across full-length productions.  
+- **Transferable Rules**: (1) Master five-column staging matrix (Scene / Mode / Character / Emotion / Action); (2) Longest romantic confession suite must land on the scene of greatest value reversal; (3) Transitional scenes must employ short, rapid tunes.
+
+---
+
+## 5. *The Scholar of Bashan (Bashan Xiucai)*: Contemporary Qupai Opera (1983)
+
+Wei Minglun and Nan Guo's 1983 Sichuan Gaoqiang masterwork demonstrates how Qupai opera operates in modern practice: tune titles and Bangqiang survive, while rigid suites are abolished and metric constraints relaxed ([reference-bashan.md](reference-bashan.md)).
+
+- **Structural Layer**: 8 scenes titled with two-character verb-object phrases forming a complete plot spine; main plot = four petitions → four deceptions → four progressive realizations; dramatic momentum driven by secondary characters absorbing fatal consequences for the protagonist; Scene 2 (protagonist absent) acts as the causal pivot.  
+- **Aria & Tune Layer (Four Breakthroughs)**: (1) Abandoning suites (zero Gongdiao markings; tunes repeat across characters); (2) Selecting tunes via an emotional/duration matrix; (3) Sustaining single rhymes across arias while completely liberating syllable counts and tonal pitch rules; (4) Expanding tune labels into stage directions (indicating vocal styles, Peking Opera meters, or rhymed speech).  
+- **Bangqiang (Nine Passages)**: Formatted as an onstage character; executes four functions (Narrator, Commentator, Surrogate Agent, Emotional Amplifier); characterized by extreme brevity (3–7 syllables) placed where characters cannot sing; can execute tune modulations.  
+- **The Solitary Exception**: The protagonist hears and obeys Bangqiang once at a total dead end ("Ha! That offstage chorus offers fine advice!"), transforming the chorus into the voice of Fate.  
+- **Transferable Rules**: (1) Symmetrical tune framing across beginning and end; (2) Bangqiang delivers cynical commentary, pivoting pathos into dark comedy within a single line; (3) Vocal modes brand characters (local officials sing Gaoqiang; imperial princes sing Peking Opera; corrupt banquets sing Kunqu = artificial refinement); (4) Staging props seen in dreams materialize in reality to kill (the three imperial wine cups become execution poison).
+
+---
+
+## 6. Transferable Techniques Index (Reverse Lookup by Craft Rule)
+
+| Technique | Source Case | Methodology Reference |
 |---|---|---|
-| 主唱权＝主角权；结构、唱权、剧名是同一个决定 | 救 44/44 | 二、十二 |
-| 一人主唱下写众人戏：插白＋接住字眼往下唱 | 救〔元和令〕 | 二、七 |
-| 一支曲被科介／插白切成三四截 | 〔賺煞〕〔叨叨令〕 | 二 |
-| 幺篇必须推进一步，不能重说 | 救〔勝葫蘆〕→〔么篇〕 | 四 |
-| 三支递收的煞各立一愿 | 窦三誓愿 | 五 |
-| 〔換科〕写当众偷换，换完必有一句"错问" | 救真假休书 | 二＋`sw-scene-craft` |
-| 计策提前全盘交代，局中途被识破一半 | 救二、三折 | 二 |
-| 曲白比最小的折＝重场；最长的诉情套落在最大的价值转折 | 窦法场 1:1.1 | 五、六 |
-| 大齣之后必接短齣；两个大场之间必有过场 | 牡惊梦 12→慈戒 2 | 六 |
-| 排场三不重（曲牌／宫调／主要角色）＋交替律 | 长五十折表 | 六 |
-| 用宫调做跨齣呼应 | 牡"莺"字套（死／唤回） | 五 |
-| 选曲牌连牌名的字面一起选 | 牡啭林莺—玉莺儿 | 五 |
-| 同一曲牌第二次出现对着第一次的反面写 | 牡【皂罗袍】春色／告示 | 四、五 |
-| 同一套曲牌当"此人要唱到底"的记号 | 桃北双调套三用 | 五 |
-| 南北曲分工：北给鬼判番王公堂朝廷，南给闺阁家庭 | 牡冥判、硬拷 | 三 |
-| ⚠️ 北曲不等于外来者：两条并排 | 桃投辕／争位 | 三 |
-| 南北合套＝"一人对众人"写进曲律 | 牡圆驾；桃入道 | 三 |
-| 同牌反复＋合头换字写群戏过场 | 牡劝农四组 | 三 |
-| 一牌四支前腔＋共同合头写多人同场反应 | 牡遇母【番山虎】 | 三 |
-| 一牌到底写大溃散，叠句内容一路下坠 | 桃逃难【香柳娘】 | 三 |
-| 一支带过曲拆成句按攻势分派，被围者只用白 | 桃拒媒六人分唱 | 三、七 |
-| 曲装公文的三条限制 | 桃【一封书】【高阳台】 | 四、七 |
-| 唱情、白理；最硬的话交给宾白 | 桃誓师五级号令 | 七＋`sw-dialogue` |
-| 曲中夹白不占曲位 | 牡闺塾、幽媾、冥誓 | 四、七 |
-| 重大信息切四刀说，每刀插一句追问＋一个身段 | 牡冥誓【啄木犯】 | 七 |
-| 独角齣的曲数＝认识层次数 | 牡玩真八支 | 三、六 |
-| 集唐下场诗（收本齣又暗示下齣，可分角色念） | 牡 55 齣 | 三 |
-| ⚠️ 反集唐：上下场诗一律自作新诗 | 桃凡例 15 | 三、九 |
-| 副末开场扩成贯穿线；叙述者必须同时是剧中人 | 桃老赞礼 | 三 |
-| 长本分上下两本，中间设一出副末回场评戏 | 桃加二十一出 | 三 |
-| 非情节出不配曲（目击者＋代问＋科介音效） | 桃闰二十出 | 三、六 |
-| 一件道具七变，每变由别人的动作促成；另给一假货 | 桃扇 | `sw-scene-craft` |
-| 同一人物动作写三遍：换对手级别、代价量级、唱白配比 | 桃香君三拒 | `sw-character-conflict` |
-| 人物的职业本事必须是情节机关 | 桃柳敬亭／苏昆生 | `sw-character-conflict` |
-| 戏中戏必须做事，不许当气氛 | 桃二、二四、二五出 | 三 |
-| 反团圆连推两次；裂信物要裂在情感最满处 | 桃入道＋馀韵 | 三＋`sw-story-structure` |
-| 结尾写景：先走完一条路再说一句话，地点须演过 | 桃【哀江南】 | `sw-dialogue` |
-| 一句台词跨二十齣呼应，须用现成句 | 牡"三秋桂子"跨 26 齣 | 三 |
-| 同一空间写两次（事发时／事过后） | 牡惊梦园／拾画园 | `sw-scene-craft` |
-| 现成程式照用但执行中反转一次 | 牡遇母"声渐低" | 三 |
-| 改编四动作：删亲属／合法改违法／改相遇／原句留白 | 牡 vs 话本 | 九＋`sw-format-adaptation` |
-| 现代新编：不成套、零金碎玉、韵严字松、牌名＝唱法栏 | 巴四问 | 十 |
-| 帮腔四功能三规律；剧中人听见帮腔（孤例） | 巴九段 | 八 |
-| 同曲牌回环作前后对称 | 巴【流水腔】 | 十 |
-| 用声腔给人物贴标签 | 巴高腔／昆腔／京剧 | 十二 |
-| 每级失败必须让主角多知道一件事 | 巴四级告状 | `sw-story-structure` |
+| Singing Right = Protagonist Status; structure and title unified | *Rescuing a Courtesan* | §2, §12 |
+| Multi-character dialogue under single singer: interjecting speech & catching key words | *Rescuing a Courtesan* | §2, §7 |
+| Segmenting an aria across 3–4 fragments via stage business or dialogue | Guan Hanqing Zaju | §2 |
+| Yaopian stanzas must advance plot action | *Rescuing a Courtesan* | §4 |
+| Descending coda sequences voicing distinct wishes | *Dou E* Three Vows | §5 |
+| `[Huan'ke]` public staged substitution paired with erroneous questioning | *Rescuing a Courtesan* | §2 + `sw-scene-craft` |
+| Plot-trap deception explained in advance; unmasked mid-way | *Rescuing a Courtesan* | §2 |
+| Densest singing ratio = major anchor scene; longest confession on value reversal | *Dou E* Execution | §5, §6 |
+| Major scenes followed by brief transitions; transitions between set-pieces | *Peony Pavilion* | §6 |
+| Three Non-Repetitions (tunes / modes / characters) + Alternation Law | *Palace of Eternal Youth* | §6 |
+| Cross-scene modal resonance | *Peony Pavilion* | §5 |
+| Re-using a tune with inverted dramatic meaning | *Peony Pavilion* | §4, §5 |
+| Identical tune suite signaling "this character sings to the end" | *Peach Blossom Fan* | §5 |
+| Northern tunes for external intruders; Southern for domestic intimacy | *Peony Pavilion* | §3 |
+| Northern tunes indicating solitary unbroken singers | *Peach Blossom Fan* | §3 |
+| Joint suites dramatizing "the individual defying the collective" | *Peony Pavilion* | §3 |
+| Repeated tunes + altered refrain words for ensemble scenes | *Peony Pavilion* | §3 |
+| Four Qianqiang iterations + shared refrain for multi-character reactions | *Peony Pavilion* | §3 |
+| Monolithic tune suites depicting catastrophic military routs | *Peach Blossom Fan* | §3 |
+| Besieged character restricted to spoken dialogue | *Peach Blossom Fan* | §3, §7 |
+| Three rules for setting official documents to music | *Peach Blossom Fan* | §4, §7 |
+| Sing emotion, speak logic; reserve hardest truths for spoken dialogue | *Peach Blossom Fan* | §7 + `sw-dialogue` |
+| Dialogue interruptions do not consume metric syllables | *Peony Pavilion* | §4, §7 |
+| Four-cut revelation punctuated by urgent questions and movement | *Peony Pavilion* | §7 |
+| Soliloquy aria count = layers of perception | *Peony Pavilion* | §3, §6 |
+| Jitang exit quatrains closing scene while foreshadowing next | *Peony Pavilion* | §3 |
+| Anti-Jitang: compose fresh verse for entrance/exit couplets | *Peach Blossom Fan* | §3, §9 |
+| Fumo narrator expanded into active through-line character | *Peach Blossom Fan* | §3 |
+| Two-volume division linked by an unnumbered interlude | *Peach Blossom Fan* | §3 |
+| Non-plot expository scenes contain zero arias | *Peach Blossom Fan* | §3, §6 |
+| Seven transformations of a single prop, each propelled by an external action | *Peach Blossom Fan* | `sw-scene-craft` |
+| Depicting an action three times by varying opponent, cost, and sung/spoken ratio | *Peach Blossom Fan* | `sw-character-conflict` |
+| Professional craft operating as a functional plot engine | *Peach Blossom Fan* | `sw-character-conflict` |
+| Plays-within-a-play performing active dramatic work | *Peach Blossom Fan* | §3 |
+| Anti-reunion climaxes requiring two successive reversals; breaking tokens | *Peach Blossom Fan* | §3 + `sw-story-structure` |
+| Concluding landscape journeys visiting previously staged locations | *Peach Blossom Fan* | `sw-dialogue` |
+| Four operations in adapting classical tales (prune kin, criminalize, etc.) | *Peony Pavilion* | §9 + `sw-format-adaptation` |
+| Modern Qupai: no suites, scattered jewels, strict rhyme with flexible syllables | *Scholar of Bashan* | §10 |
+| Bangqiang: four functions, three formal rules; heard by character once | *Scholar of Bashan* | §8 |
+| Vocal modes branding character identity | *Scholar of Bashan* | §12 |
+| Every progressive failure revealing fresh knowledge to the protagonist | *Scholar of Bashan* | `sw-story-structure` |
 
 ---
 
-## 七、与板腔体语料的对照
+## 7. Cross-System Comparison with Banqiang Corpora
 
-**《巴山秀才》与《潘金莲》是同一作者跨声腔体系的对照组**，两边互指，不要只看一半：
+***The Scholar of Bashan* and *Pan Jinlian* constitute an exact comparative control pair: same author (Wei Minglun), same regional genre (Sichuan Opera), two divergent musical architectures**:
 
-| | 巴山秀才（第五节） | 潘金莲（`sw-chinese-opera-banqiang-cases`） |
+| Dimension | *The Scholar of Bashan* (§5) | *Pan Jinlian* (`sw-chinese-opera-banqiang-cases`) |
 |---|---|---|
-| 声腔 | 川剧**高腔**＝曲牌体 | 川剧**弹戏／胡琴**＝板腔体 |
-| 剧本标什么 | **标牌名**（含腔种、外剧种板式、念法）；无宫调 | **标板式**；无牌名 |
-| 帮腔 | 有，九段，被当作一个角色写 | 有帮腔遗迹作独立角色——**板腔体里的高腔痕迹** |
-| 年代与路数 | 1983 新编历史剧，含泪的喜剧 | 荒诞与跨时空（评论席） |
+| **Musical System** | Sichuan Opera **Gaoqiang** = Qupai System | Sichuan Opera **Tanxi / Huqin** = Banqiang System |
+| **Script Notation** | **Marks Qupai tune titles** (plus vocal styles, foreign meters); zero Gongdiao | **Marks Banshi meters**; zero Qupai tune titles |
+| **Chorus Layer** | Present: 9 Bangqiang passages written as an active character | Retains Bangqiang relics as independent characters — **Gaoqiang traces in Banqiang** |
+| **Dramaturgical Style** | 1983 Historical Drama: tragicomedy with tears | Absurdist Magic Realism: trans-temporal commentary panel |
 
-**同一作者、同一剧种、两套写法**，是"分轴是声腔体系不是剧种"（banqiang 第〇之一节、qupai 开篇）最干净的一组证据；**川剧是一个剧本内部就跨体系的剧种，标注声腔本身是编剧的活**。另两处跨库互指：**当代用歌队／幕后合唱＋字幕替代自报家门、定场诗、下场诗**（banqiang 第六节"歌队层"），对应位是本 skill 的集唐下场诗与副末开场；**唱段密度＝重场戏**——本库三处独立实证与板腔体的"唱段留给重场戏"是同一件事。
+**Same author, same regional genre, two distinct musical architectures**—providing the cleanest proof that the foundational taxonomy of Chinese theatre is governed by musical system (*Shengqiang*), not regional geography; Sichuan Opera spans both systems within a single script. Two cross-corpus correspondences:  
+1. **Modern choruses and surtitles replacing self-introductions and exit poems** (`sw-chinese-opera-banqiang` §6) occupies the identical functional slot as Jitang exit quatrains and Fumo prologues in this skill;  
+2. **Aria density identifying major anchor scenes** represents the identical dramaturgical truth across both systems.
