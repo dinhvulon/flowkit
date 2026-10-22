@@ -112,7 +112,7 @@ Luật lập bảng:
 
 ### 2b. Dựng thẳng vào CapCut bằng MCP `capcut` (user 21/10/2026)
 
-Khi MCP `capcut` đã kết nối (`claude mcp get capcut` → ✓ Connected; cài ở phạm vi user, server Elixir `C:\Users\Admin\capcut-mcp`), Claude **tự dựng bản nháp** theo Bảng dựng thay vì để user kéo từng clip. User mở CapCut chỉ để tinh chỉnh (chuyển cảnh, màu, nhạc) và xuất.
+Khi MCP `capcut` đã kết nối (`claude mcp get capcut` → ✓ Connected; cài ở phạm vi user, server Elixir `C:\Users\Administrator\capcut-mcp`, chạy bằng `cmd.exe /c C:\Users\Administrator\capcut-mcp\start-mcp.bat`), Claude **tự dựng bản nháp** theo Bảng dựng thay vì để user kéo từng clip. User mở CapCut chỉ để tinh chỉnh (chuyển cảnh, màu, nhạc) và xuất.
 
 MCP đọc / ghi thẳng file draft JSON của CapCut Desktop (`%LOCALAPPDATA%\CapCut\User Data\Projects\com.lveditor.draft`, đổi bằng biến `CAPCUT_PATH`). Mỗi lần ghi tạo bản `.bak` và ghi nguyên tử. Mọi thời gian tính bằng **mili giây**.
 

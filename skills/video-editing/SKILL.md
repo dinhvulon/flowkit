@@ -9,6 +9,30 @@ metadata:
 
 AI-assisted editing for real footage. Not generation from prompts. Editing existing video fast.
 
+## FlowKit: dùng cùng `/fk-capcut-edit` và MCP `capcut` (CLAUDE.md Rule 66)
+
+Trong repo FlowKit, phần này đứng trên mọi mục bên dưới. Skill này lo phần máy làm (ffmpeg, dò im lặng / đổi cảnh, EDL); dựng và tinh chỉnh đi qua CapCut.
+
+**Khi nào gọi gì:**
+
+| Việc | Dùng |
+|---|---|
+| Kế hoạch dựng theo giây: trailer phút đầu, đổi hình 3–5s, re-hook 3:00 / 6:00, card chữ, nhạc, Shorts | `/fk-capcut-edit` (đọc `skills/fk-capcut-edit/SKILL.md`, ghi `output/<slug>/capcut_edit_sheet.md`) |
+| Intro trailer 30s / 45s | `/fk-capcut-edit` → `skills/fk-capcut-edit/scripts/trailer_cuts.py` (`scan` → user duyệt cutlist → `build`) |
+| Đặt clip, cắt in/out, card chữ, âm lượng nhạc vào draft CapCut | MCP `capcut` theo `/fk-capcut-edit` mục 2b: `create_project` (tên `<slug> edit_vN`) → `add_clip` → `trim_clip` → `add_text` → `set_clip_volume` → `get_timeline` |
+| Dò khoảng chết, cảnh trùng, điểm cắt thoại | Layer 3 / "Scene Detection" bên dưới + mốc từng từ Whisper (`tools/review_dialogue.py`, Rule 67) |
+| Bản nháp nhanh không cần CapCut, cắt / ghép hàng loạt, proxy, reframe 9:16 dự phòng | ffmpeg (Layer 3, "Social Media Reframing") |
+| Chuyển cảnh, màu, phụ đề, xuất file | User làm tay trong CapCut (MCP không có các tool này) |
+
+**MCP `capcut`:** cài ở phạm vi user (`cmd.exe /c C:\Users\Administrator\capcut-mcp\start-mcp.bat`), ghi thẳng file draft JSON của CapCut Desktop, thời gian tính bằng mili giây, mỗi lần ghi có `.bak`. Trước khi ghi: nhắc user **đóng draft đó trong CapCut**. Không ghi đè draft đã giao, luôn tạo `edit_vN` mới. Tool MCP chưa có trong phiên (`claude mcp get capcut` không Connected) → làm Bảng dựng để user tự dựng.
+
+**Giới hạn FlowKit cho các Layer bên dưới:**
+- Layer 1 Capture: bỏ. Đầu vào là clip đã duyệt `output/<slug>/1080/*_1080p_clean.mp4`; bản nháp có thể dùng 720p trong `scenes/`, bản xuất cuối thì không.
+- Layer 5 (ElevenLabs, fal.ai, VideoDB) và VideoDB reframe: không dùng. Giọng nói dùng thoại gốc Omni hoặc `/fk-gen-narrator`; nhạc dùng `/fk-gen-music`; mọi bước tốn credit hỏi trước (Rule 29).
+- Âm thanh: master −14 LUFS / −1 dBTP theo `/fk-sound-design`, không dùng `loudnorm I=-16`.
+- Không burn phụ đề vào hình.
+- Script ffmpeg / Remotion tạm đặt trong scratchpad; EDL và bản dựng lưu `output/<slug>/edit/` với số phiên bản (`edit_vN_edl.md`).
+
 ## When to Activate
 
 - User wants to edit, cut, or structure video footage
@@ -249,6 +273,8 @@ The last layer is human. Use a traditional editor for:
 - **Export**: platform-specific formats and quality settings
 
 This is where taste lives. AI clears the repetitive work. You make the final calls.
+
+In FlowKit, the rough cut is placed into a CapCut draft by the `capcut` MCP (see "FlowKit" above and `/fk-capcut-edit` §2b); the user then polishes and exports in CapCut.
 
 ## Social Media Reframing
 
