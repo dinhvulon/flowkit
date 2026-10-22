@@ -5081,34 +5081,33 @@
     "refs": [
       "LS-01b P1",
       "LS-01b Storyboard",
+      "Nora",
       "Nora Body Fire",
       "Ridge Road Fire"
     ],
     "start_frame": {
-      "type": "STORYBOARD_2X2",
-      "note": "fk-storyboard Rule 69: 2x2 storyboard sheet (4 moments in time), panel 1 cropped as opening frame",
-      "image_prompt": "A film storyboard sheet, 16:9, made of FOUR photographic panels in a 2 by 2 grid, separated by thin straight black gutters; each panel is itself a 16:9 frame; no text, no numbers, no arrows, no captions anywhere. All four panels are cinematic feature-film stills of ONE continuous 4-second moment at deep night, an extreme close-up study of Nora's chest harness on the bare rocky rise in the burning pine forest of {{media:2983af59-909e-4865-9655-b4d61d37f337|Ridge Road Fire.jpg}}: the only light is the harsh flickering orange glow of firelight reflecting on coarse fabric and soot, deep inky shadows; air thick with floating amber embers, thin ragged smoke drifting past.\nNora: an adult woman firefighter of 23; wearing the yellow wildland fire shirt, heavy dark webbing chest harness straps, buckle and belt exactly as in {{media:85d5446c-43f9-438e-98d4-23d1e9baacf8|Nora Body Fire.jpg}}, yellow fabric stained with dark soot and ash streaks, gloves on.\nTOP-LEFT PANEL, second 0: Extreme close-up of Nora's chest: her right gloved hand slaps instinctively onto the canvas radio pouch mounted on her chest harness; the flap of the radio pouch is open and the pouch is completely EMPTY; no radio inside.\nTOP-RIGHT PANEL, second 1: The same extreme close-up: Nora's thick gloved fingers plunge deep into the open empty pouch, feeling desperately inside, finding only thin empty fabric; her chest rises sharply with a ragged gasp under the harness strap.\nBOTTOM-LEFT PANEL, second 3: The same tight framing: her gloved hand withdraws from the empty pocket, trembling with shock, and balls tightly into a rigid clenched fist against the charred yellow fabric of her shirt.\nBOTTOM-RIGHT PANEL, second 4: Framing widens slightly upward to include Nora's lower face and jaw: soot streaks on her tight jawline and throat as she swallows hard, chin clenched; her fist remains pressed against the empty harness pocket; the realisation of total isolation strikes.\nCinematic feature-film look: shot on ARRI Alexa with Cooke S4 prime lenses, fine 35mm film grain, rich amber-and-teal fire grade, deep inky blacks, motivated fire chiaroscuro, thin smoke haze; deep focus, deep depth of field (f/8), coarse texture of fabric and soot sharp edge to edge. No text, no logos, no watermark. Not a 3D render, not CGI.",
-      "panels_summary": "0s: Gloved hand slaps empty radio pouch -> 1s: Fingers search empty pocket in vain -> 3s: Hand withdraws and clenches into trembling fist -> 4s: Widens to jawline swallowing hard, total isolation"
+      "type": "OPENING_FRAME_REF",
+      "note": "fk-storyboard (Rule 69): Panel 1 cropped from {{media:27bb0346-303c-4a41-a52f-d1ebfb30bd69|LS-01b Storyboard.jpg}} as opening frame {{media:f6cca200-9740-4cc4-9fb6-e42de754ddb4|LS-01b P1.jpg}}, whole storyboard as time ref."
     },
     "camera": {
       "viewpoint": "third-person cinematic camera; the camera itself is never seen",
-      "shot_size": "OPENING FRAME = {{ref:LS-01b P1}}: the very first frame is exactly that image: the same camera position, framing, people and places. A tight close-up on Nora's chest harness and yellow fire shirt at night: the canvas radio pouch on her chest strap is open and completely empty, her right gloved hand slapping down onto it.",
-      "description": "100mm macro Cooke prime, locked close at chest level, subtly tilting and widening slightly upward at seconds 3-4 to reveal Nora's clenched jaw and throat; one continuous unbroken 4-second macro shot.",
+      "shot_size": "OPENING FRAME = {{media:f6cca200-9740-4cc4-9fb6-e42de754ddb4|LS-01b P1.jpg}} (Panel 1 cropped from {{media:27bb0346-303c-4a41-a52f-d1ebfb30bd69|LS-01b Storyboard.jpg}}): the very first frame is exactly that image: the same camera position, framing, people and places. A tight close-up on female firefighter Nora's chest harness and yellow fire shirt at night, with her feminine chin and lips visible at the top: the canvas radio pouch on her chest strap is open and completely empty, her right gloved hand slapping down onto it.",
+      "description": "100mm macro Cooke prime, locked close at chest level, subtly tilting and widening slightly upward at seconds 3-4 to reveal Nora's feminine chin, lips and throat; one continuous unbroken 4-second macro shot.",
       "continuity": "one continuous unbroken shot from the first frame to the last, no cuts, no fade-in",
       "focus": "deep focus, everything sharp (f/8)"
     },
     "style": "cinematic feature-film look: shot on ARRI Alexa with Cooke S4 prime lenses, fine 35mm film grain, a rich amber-and-teal grade driven by the firelight, deep inky blacks, strong motivated chiaroscuro, thin atmospheric haze catching the light, glowing embers drifting through it; real people, real horse and real fire, not CGI, not a video game",
-    "setting": "Location: exactly the place in {{ref:Ridge Road Fire}}: a small bare rocky rise above the lane, grey rock and gravel dusted with ash; dry grass and pines burning on the slopes on both sides and below. Light: night under the smoke, fully dark: a black-brown smoke ceiling, no daylight anywhere, no stars, no moon; the burning slopes are the only light, hard flickering orange on faces and rock.",
+    "setting": "Location: exactly the place in {{media:2983af59-909e-4865-9655-b4d61d37f337|Ridge Road Fire.jpg}}: a small bare rocky rise above the lane, grey rock and gravel dusted with ash; dry grass and pines burning on the slopes on both sides and below. Light: flickering orange firelight and glowing embers at deep night, dark inky shadows.",
     "characters": [
       {
         "name": "Nora",
-        "visual_lock": "Nora: only her chest harness, yellow wildland shirt and gloved hands are in frame, exactly as in {{ref:Nora Body Fire}}; at the final second her lower jawline appears, smudged with soot.",
+        "visual_lock": "FACE LOCK: Nora's face is exactly the face in {{media:9267d26c-e7bd-4214-a310-ecd08b489673|Nora.jpg}}, kept 1:1; an adult woman firefighter of 23; her chest harness, yellow wildland shirt and gloved hands are exactly as in {{media:85d5446c-43f9-438e-98d4-23d1e9baacf8|Nora Body Fire.jpg}}; strictly a female firefighter, NO masculine jaw, NO heavy neck.",
         "state": "soot and ash on the harness; the radio pocket open and empty."
       }
     ],
     "timeline_action": {
-      "0-2s": "Matching Panel 1 to Panel 2: Nora's right gloved hand slaps instinctively onto the open radio pouch on her chest harness, then her thick gloved fingers dig deep inside, feeling desperately for a radio that is not there.",
-      "2-4s": "Matching Panel 3 to Panel 4: Her gloved hand withdraws from the empty pocket and clenches into a rigid, trembling fist pressed against her chest; the camera eases slightly upward to catch her soot-streaked jaw clenching hard as she swallows in silent despair."
+      "0-2s": "Matching Panel 1 to Panel 2 of {{media:27bb0346-303c-4a41-a52f-d1ebfb30bd69|LS-01b Storyboard.jpg}}: The clip starts exactly on {{media:f6cca200-9740-4cc4-9fb6-e42de754ddb4|LS-01b P1.jpg}} (Top-Left Panel). Nora's right gloved hand slaps instinctively onto the open radio pouch on her chest harness, then her thick gloved fingers dig deep inside, feeling desperately for a radio that is not there, matching Top-Right Panel.",
+      "2-4s": "Matching Panel 3 to Panel 4 of {{media:27bb0346-303c-4a41-a52f-d1ebfb30bd69|LS-01b Storyboard.jpg}}: Her gloved hand withdraws from the empty pocket and clenches into a rigid, trembling fist pressed against her chest (Bottom-Left Panel); the camera eases slightly upward to catch her soot-streaked feminine jaw and lips as she swallows in silent despair (Bottom-Right Panel)."
     },
     "physical_realism": "The empty pocket flattens under her palm; there is nothing in it at any moment.",
     "speech": {
@@ -5139,17 +5138,7 @@
       "Spoken words in this clip: 0.",
       "The video is full-frame shots only: never a grid, never panels, never split screen, never black dividing lines."
     ],
-    "storyboard": {
-      "sheet_ref": "LS-01b Storyboard",
-      "p1_ref": "LS-01b P1",
-      "milestones": [
-        0,
-        1,
-        3,
-        4
-      ],
-      "instruction": "TIME STORYBOARD (CRITICAL): the reference image {{ref:LS-01b Storyboard}} is a STORYBOARD OF FOUR MOMENTS IN TIME from this one clip, NOT a single frame and NOT a layout to draw. Read it left to right, top to bottom: top-left = second 0, top-right = second 1, bottom-left = second 3, bottom-right = second 4. Use it only as the plan for how the action and the camera unfold; the video is full-frame shots only, never a grid, never split into panels, never black gutters."
-    }
+    "storyboard": "TIME STORYBOARD (CRITICAL): the reference image {{media:27bb0346-303c-4a41-a52f-d1ebfb30bd69|LS-01b Storyboard.jpg}} is a STORYBOARD OF FOUR MOMENTS IN TIME from this one clip, NOT a single frame and NOT a layout to draw. Read it left to right, top to bottom: top-left = second 0 (Panel 1), top-right = second 1 (Panel 2), bottom-left = second 3 (Panel 3), bottom-right = second 4 (Panel 4). Use it only as the plan for how the action and the camera unfold; the video is full-frame shots only, never a grid, never split into panels, never black gutters. At the final frame Nora's fist remains pressed against the empty radio pocket, her feminine chin and lips visible as she swallows in silent despair, matching the bottom-right panel."
   },
   {
     "clip_id": "LS-02",

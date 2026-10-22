@@ -2549,6 +2549,7 @@
     "video_refs": [
       "LS-01b P1",
       "LS-01b Storyboard",
+      "Nora",
       "Nora Body Fire",
       "Ridge Road Fire"
     ],
@@ -2557,10 +2558,14 @@
     "start_frame_mode": "fk-storyboard 2x2 sheet (Rule 69)",
     "created_note": "2026-10-19: scene created from prompts_v7.json (chips resolved to named refs); handoff lessons not applied yet",
     "prompt_note": "2026-10-22: upgraded to /fk-storyboard 2x2 standard (Rule 69)",
-    "horizontal_image_media_id": "ed9488c6-fa84-4276-997b-f665bbbee029",
-    "storyboard_media_id": "f99c4080-54d9-4fd8-aa60-8e7cc235c38a",
+    "horizontal_image_media_id": "f6cca200-9740-4cc4-9fb6-e42de754ddb4",
+    "storyboard_media_id": "27bb0346-303c-4a41-a52f-d1ebfb30bd69",
     "start_frame_file": "output/embers/images/ls01b_p1.jpg",
-    "storyboard_file": "output/embers/images/ls01b_storyboard_clean.jpg"
+    "storyboard_file": "output/embers/images/ls01b_storyboard_clean.jpg",
+    "video_media_id": "038e4514-dd86-428d-a513-d66e54af9442",
+    "video_file": "scenes/scene_079_LS-01b_e996ada6.mp4",
+    "video_status": "720P_READY_FOR_REVIEW",
+    "approved": false
   },
   "LS-02": {
     "scene_id": "ea1dcbff-a83a-4b76-a65e-fefc1aeb0962",

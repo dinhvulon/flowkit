@@ -111,19 +111,21 @@ Sau khi có ảnh storyboard sạch (và cắt panel 1 làm Frame 0), BẮT BU�
    - Trạng thái cuối ở mốc kết thúc (giây cuối) phải mô tả đúng tư thế/vị trí xuất hiện ở Panel 4 (Bottom-Right).
 4. **CẤM TUYỆT ĐỐI**: Không được lấy nguyên video prompt viết sẵn từ trước mà không đọc ảnh storyboard thực tế vừa sinh! Storyboard là bằng chứng thị giác trực quan, prompt video phải được tinh chỉnh để phục vụ và đồng bộ với bằng chứng đó.
 
-### Bước 4 — Prompt video r2v
+### Bước 4 — Prompt video r2v (Bắt buộc nhắc ảnh Storyboard & P1 bằng chip inline và chỉ thị đọc đúng từng panel — Rule 69 (9))
 
 Theo khung JSON của `/fk-film` (`prompt-lock.md` khung A), thêm:
 
 - `refs` (≤ 7): `<CLIP> P1`, `<CLIP> Storyboard`, rồi mặt / Body / đạo cụ quan trọng nhất.
-- `camera.shot_size` mở bằng `OPENING FRAME = {{ref:<CLIP> P1}}: the very first frame is exactly that image ...`, rồi tả từng góc máy theo panel.
-- Khối `storyboard` với câu khóa (giữ nguyên ý):
+- BẮT BUỘC resolve mọi `{{ref:...}}` thành inline media chip `{{media:<uuid>|<file>.jpg}}` trước khi lưu DB và gửi Flow (Rule 64).
+- `camera.shot_size` mở bằng `OPENING FRAME = {{media:<uuid>|<CLIP> P1.jpg}} (Panel 1 cropped from {{media:<uuid>|<CLIP> Storyboard.jpg}}): the very first frame is exactly that image: the same camera position, framing, people and places ...`, rồi tả chi tiết góc máy mở đầu theo Panel 1.
+- `start_frame` ghi rõ: `{"type": "OPENING_FRAME_REF", "note": "fk-storyboard (Rule 69): Panel 1 cropped from {{media:<uuid>|<CLIP> Storyboard.jpg}} as opening frame {{media:<uuid>|<CLIP> P1.jpg}}, whole storyboard as time ref."}`.
+- Khối `storyboard` với câu khóa trỏ trực tiếp vào chip Storyboard:
 
 ```text
-TIME STORYBOARD (CRITICAL): the reference image {{ref:<CLIP> Storyboard}} is a STORYBOARD OF FOUR MOMENTS IN TIME from this one clip, NOT a single frame and NOT a layout to draw. Read it left to right, top to bottom: top-left = second 0, top-right = second <t2>, bottom-left = second <t3>, bottom-right = second <t4>. Use it only as the plan for how the action and the camera unfold; the video is full-frame shots only, never a grid, never split into panels, never black gutters. <Nhắc lại trạng thái cuối bằng vị trí cụ thể.>
+TIME STORYBOARD (CRITICAL): the reference image {{media:<uuid>|<CLIP> Storyboard.jpg}} is a STORYBOARD OF FOUR MOMENTS IN TIME from this one clip, NOT a single frame and NOT a layout to draw. Read it left to right, top to bottom: top-left = second 0 (Panel 1), top-right = second <t2> (Panel 2), bottom-left = second <t3> (Panel 3), bottom-right = second <t4> (Panel 4). Use it only as the plan for how the action and the camera unfold; the video is full-frame shots only, never a grid, never split into panels, never black gutters. <Nhắc lại trạng thái cuối bằng vị trí cụ thể khớp Panel 4.>
 ```
 
-- `timeline_action` đúng các đoạn của bảng bước 1; mỗi đoạn mở bằng câu máy riêng (`The camera holds still.` / `The camera dollies slowly forward and down.` / `Cut to a close-up at floor level:` — cắt thẳng chỉ với r2v).
+- `timeline_action` đúng các đoạn của bảng bước 1; mỗi đoạn bắt đầu bằng câu đối chiếu panel: `Matching Panel 1 to Panel 2 of {{media:<uuid>|<CLIP> Storyboard.jpg}}: The clip starts exactly on {{media:<uuid>|<CLIP> P1.jpg}} (Top-Left Panel)...`, tiếp theo là `Matching Panel 2 to Panel 3...`, `Matching Panel 3 to Panel 4...`.
 - `negative_constraints` thêm: `The video is full-frame shots only: never a grid, never panels, never split screen, never black dividing lines.` Với mỗi lần cắt, ghi đúng số lần cắt và mốc giây.
 - PATCH `duration` (thiếu thì ra 10s âm thầm), `character_names` = `refs`, `horizontal_image_media_id` = media của P1.
 - Linter 0 Critical/High → `/fk-review-prompt` → báo cáo → hỏi duyệt sinh.
