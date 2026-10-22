@@ -259,12 +259,13 @@ def lint_prompt(prompt: str) -> list[dict]:
                         iss["clip_id"] = f"ref:{ref_name}"
                         all_issues.append(iss)
             return all_issues
-        if isinstance(json_obj, dict) and "reference_entities" in json_obj:
+        if isinstance(json_obj, dict) and ("reference_entities" in json_obj or "references" in json_obj):
             # ref_prompts.json (reference image prompts): lint each entity prompt as plain text.
             # negative_prompt fields hold "NOT god rays / NOT bokeh ..." on purpose, so they are skipped,
             # like negative_constraints in video prompts.
             all_issues = []
-            for e in json_obj.get("reference_entities", []):
+            refs_list = json_obj.get("reference_entities") or json_obj.get("references", [])
+            for e in refs_list:
                 if isinstance(e, dict) and isinstance(e.get("prompt"), str):
                     for iss in lint_prompt(e["prompt"]):
                         iss["clip_id"] = f"ref:{e.get('code') or e.get('entity_name', 'ref')}"

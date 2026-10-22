@@ -1,0 +1,89 @@
+{
+  "project": "golden-tree",
+  "title": "Pirates of the Golden Tree",
+  "generated_at": "2026-10-22T21:45:00Z",
+  "material": "realistic",
+  "style_lock": "35mm film, cinematic documentary realism, Panavision anamorphic lens, rich dark chiaroscuro, natural motivated lighting, matte organic biological textures, strictly NO 3D CGI sheen, NO plastic textures, NO anime, NO Disney aesthetics",
+  "references": [
+    {
+      "entity_name": "Nora",
+      "entity_type": "character",
+      "role": "Lead Captain (Face Lock)",
+      "orientation": "HORIZONTAL",
+      "aspect_ratio": "16:9",
+      "prompt": "Character turnaround sheet, 16:9 aspect ratio, four-panel photographic reference sheet on neutral dark charcoal background. A fierce 26-year-old female pirate captain named Nora. Panel 1 (left): full-body front view showing natural posture, weathered navy-blue linen tunic, layered leather seafarer armor with antique bronze rivets, leather sword belt dangled with a Greek short sword, rugged leather boots. Panel 2: full-body three-quarter view showing silhouette depth, durable tailored seafarer trousers, wind-resistant wool cloak trim. Panel 3: full-body side profile showing weapon grip and athletic stance. Panel 4 (right): 16:9 close-up portrait showing highly detailed natural face: heart-shaped face envelope, sharp defined jawline, hazel-green determined eyes, natural freckles across the bridge of her nose, weathered sun-kissed skin texture, wind-blown copper-red braided pirate hair. Cinematic documentary realism, 35mm film grain, neutral daylight, strictly NO beauty filters, NO porcelain plastic skin, NO split comparisons, NO humans in background."
+    },
+    {
+      "entity_name": "Nora Body Seafarer",
+      "entity_type": "character",
+      "role": "Lead Captain (Body & Wardrobe Lock)",
+      "orientation": "HORIZONTAL",
+      "aspect_ratio": "16:9",
+      "prompt": "Character body turnaround sheet, 16:9 aspect ratio, four-panel complete wardrobe reference sheet on slate gray background. Full-body athletic female pirate captain figure matching Nora's exact proportions: 1.72m tall, head-to-body ratio 1:7.5, athletic muscular build with natural feminine curves, defined shoulders, narrow waist, durable seafarer stance. Wearing complete weathered seafarer costume: navy-blue coarse woven tunic tucked into durable charcoal leather brigandine chest armor with oxidized brass studs, weathered hide breeches tucked into salt-caked leather boots, leather baldric with bone handle short sword scabbard. Panel 1: front full-body. Panel 2: three-quarter angle. Panel 3: side profile. Panel 4: back view showing cloak drape and leather stitching. Raw cinematic costume study, authentic textile wear, tangible salt stains and leather creases, strictly NO CGI, NO clean cosplay, NO modern zippers."
+    },
+    {
+      "entity_name": "Theron",
+      "entity_type": "character",
+      "role": "Stranded Guide (The Karst Hermit)",
+      "orientation": "HORIZONTAL",
+      "aspect_ratio": "16:9",
+      "prompt": "Character turnaround sheet, 16:9 aspect ratio, four-panel study of a 58-year-old stranded navigator named Theron on dark limestone background. Panel 1: full-body front view of an emaciated but sharp-eyed elder, wearing tattered coarse burlap rags tied with frayed hemp rope, weathered skin covered in white limestone dust. Panel 2: full-body three-quarter view leaning on a rough limestone walking stick. Panel 3: full-body side view showing stooped survival posture and cracked barefoot leather sandals. Panel 4: dramatic close-up portrait of his weathered face: wild matted gray beard and unkempt hair crusted with dried lime, deep sunken eye sockets with piercing intelligent dark eyes, hollow cheeks, cracked dry lips. Gripping an ancient flat slate fragment etched with archaic labyrinth glyphs. Gritty cinematic portraiture, 35mm film grain, harsh practical side light, tangible dirt and thirst, strictly NO CGI sheen."
+    },
+    {
+      "entity_name": "Castor",
+      "entity_type": "character",
+      "role": "The Tactician (Skeptical Warrior)",
+      "orientation": "HORIZONTAL",
+      "aspect_ratio": "16:9",
+      "prompt": "Character turnaround sheet, 16:9 aspect ratio, four-panel study of a 29-year-old sharp-featured maritime tactician named Castor on dark slate background. Panel 1: full-body front view in agile athletic stance, wearing dark brown boiled leather cuirass, fitted charcoal wool tunic, quiver of iron-tipped arrows slung across his back, leather bracers, multiple throwing daggers sheathed at his hip. Panel 2: three-quarter view showing compact recurve bow gripped in left hand. Panel 3: side profile highlighting sharp angular posture. Panel 4: close-up portrait: sharp cutting jawline, short trimmed black hair, intense skeptical steel-gray eyes, a thin scar across his left eyebrow, cynical hardened expression. Authentic historical maritime armor, textured full-grain leather, matte finish, 35mm documentary realism, strictly NO fantasy glows, NO CGI."
+    },
+    {
+      "entity_name": "Heracles",
+      "entity_type": "character",
+      "role": "The Behemoth (Heavy Warrior)",
+      "orientation": "HORIZONTAL",
+      "aspect_ratio": "16:9",
+      "prompt": "Character turnaround sheet, 16:9 aspect ratio, four-panel study of a 35-year-old towering behemoth warrior named Heracles on dark rock background. 1.95m tall, massive boulder-like musculature, heavy thick bone frame. Wearing sea-lion hide shoulder mantle with brass clasps, thick iron-studded leather waist belt, bare weathered scarred arms with bulging veins, heavy riveted leather greaves. Panel 1: front full-body gripping heavy iron crowbar. Panel 2: three-quarter view showing massive back and shoulder width. Panel 3: side profile. Panel 4: close-up portrait of square brutal jaw, thick bushy black beard, weathered sun-blackened skin, calm powerful deep-set brown eyes. Authentic practical heavy warrior aesthetic, real skin pores, dried sweat and sea salt, 35mm film grain, strictly NO superhero spandex, NO plastic muscles."
+    },
+    {
+      "entity_name": "Old Fisherman",
+      "entity_type": "character",
+      "role": "The Herald (Inciting Messenger)",
+      "orientation": "HORIZONTAL",
+      "aspect_ratio": "16:9",
+      "prompt": "Character turnaround sheet, 16:9 aspect ratio, three-panel reference study of a 65-year-old fragile Aegean fisherman on foggy marine background. Panel 1: full-body trembling in wet coarse wool tunic, bare calloused feet, clutching a soaked hemp fishnet parcel. Panel 2: three-quarter view cowering away from danger. Panel 3: close-up portrait of deeply wrinkled sun-beaten leather-like face, sparse white stubble, bloodshot eyes wide with primal supernatural terror, trembling mouth. Tangible wet fabric texture, realistic salt spray, documentary photography, 35mm anamorphic, strictly NO CGI, NO smooth 3D."
+    },
+    {
+      "entity_name": "Omen Fish",
+      "entity_type": "creature",
+      "role": "Grotesque Abyssal Leviathan (Map Vessel)",
+      "orientation": "HORIZONTAL",
+      "aspect_ratio": "16:9",
+      "prompt": "Creature turnaround sheet, 16:9 aspect ratio, three-panel unified study on neutral dark slate background. A grotesque prehistoric deep-sea fish, 1.8 meters long, hybrid of Coelacanth armor plates and Gulper Eel jaws. Left panel: three-quarter left full-body view showing rough iridescent charcoal-black polygonal basement scales, elongated spiny fins like hardened bone. Middle panel: three-quarter right full-body showing ventral side with faint emerald-cyan bioluminescent pulsing glow through translucent underbelly skin. Right panel: extreme macro close-up of the grotesque head and gaping jaws filled with needle-sharp translucent teeth, dead milky-white eyes reflecting lantern light, wet slime texture with realistic organic sheen. Hyper-realistic marine documentary photography, 35mm Panavision anamorphic lens, organic wet biological textures, strictly NO plastic 3D CGI, NO cartoon scales, NO scale bars, NO humans."
+    },
+    {
+      "entity_name": "Abyssal Siren",
+      "entity_type": "creature",
+      "role": "Deep-Sea Predatory Deceiver",
+      "orientation": "HORIZONTAL",
+      "aspect_ratio": "16:9",
+      "prompt": "Creature character turnaround sheet, 16:9 aspect ratio, three-panel comparative study on dark oceanic background. A terrifying mythical Abyssal Siren creature. Left panel: deceptive lure form, beautiful porcelain-pale maiden torso floating in dark seafoam, bioluminescent flowing black silk hair, serene hypnotizing expression. Center panel: full-body three-quarter predatory form revealed, muscular shark-like lower tail with rough sandpaper dermal denticles, elongated webbed fingers ending in 15cm black keratin talons, spiny dorsal ridge bursting through shoulder blades. Right panel: extreme close-up of grotesque transformed face, pitch-black sclera eyes without pupils, mouth unhinged wide revealing triple rows of serrated jagged shark teeth, glistening sea saliva. Gritty dark fantasy cinematography, authentic biological horror, wet skin specular highlights, 35mm film grain, strictly NO Disney mermaid, NO anime, NO smooth 3D plastic."
+    },
+    {
+      "entity_name": "Labyrinth Beast",
+      "entity_type": "creature",
+      "role": "Karst Chitin Prowler (Apex Predator)",
+      "orientation": "HORIZONTAL",
+      "aspect_ratio": "16:9",
+      "prompt": "Creature turnaround sheet, 16:9 aspect ratio, three-panel cinematic reference sheet on limestone canyon gray background. The terrifying Karst Labyrinth Chitin Prowler, a massive 6-meter-long prehistoric hybrid of giant scorpion and armored reptile. Left panel: three-quarter low-angle hero view showing massive bulky body, segmented jet-black chitin exoskeleton with rough volcanic stone texture, heavy armored carapace. Center panel: three-quarter side view showcasing six powerful jointed legs with climbing claw hooks gripping limestone boulders, long muscular segmented tail arched high ending in an 80cm jagged bone stinger. Right panel: macro close-up of grotesque predatory head, heavy crushing dual mandibles dripping caustic acidic slime, cluster of eight glowing amber compound eyes, limestone dust particles settled in shell crevices. Ultra-realistic dark fantasy creature design, practical monster effects aesthetic, tangible organic weight and shell friction, strictly NO CGI sheen, NO plastic textures, NO glowing lasers."
+    },
+    {
+      "entity_name": "Golden Tree Sanctuary",
+      "entity_type": "location",
+      "role": "Underground Cenote & Legendary Tree",
+      "orientation": "HORIZONTAL",
+      "aspect_ratio": "16:9",
+      "prompt": "Cinematic master environment photography, 16:9 aspect ratio, single unified shot on 35mm film. The legendary subterranean Golden Tree Sanctuary inside a colossal karst cenote. A gigantic ancient tree, 20 meters tall, stands rooted in the center of a glass-like reflective crystal lake. Its thick gnarled bark is dark petrified ironwood, while its sprawling canopy bears thousands of glowing golden metallic leaves that gently shed glowing golden dust particles into the air. Cool overcast natural moonlight pours down through a colossal circular opening in the limestone ceiling above, mixing with warm amber luminescence radiating from the tree. Scattered around the stone shore beneath the branches are petrified gilded skeletons frozen in reaching poses. Deep focus (f/8), atmospheric natural haze, dark chiaroscuro, raw physical grandeur, strictly ONE single unified photograph only, strictly NO split screen, NO panels, NO CGI rays, NO cartoon glow."
+    }
+  ]
+}

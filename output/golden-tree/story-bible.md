@@ -87,7 +87,7 @@ flowchart TD
 2. **Bảng màu & Xử lý Ánh Sáng (Teal & Orange + Dark Chiaroscuro):**
    * *Ngoại cảnh biển đêm & hẻm đá Karst:* Xanh biển thẫm (Deep Navy), Xám đá ướt (Charcoal Slate), Xanh mòng két (Teal) lạnh lẽo u uất.
    * *Điểm nhấn ma thuật & Cây Vàng:* Ánh sáng hổ phách (Warm Amber), Vàng kim rực rỡ (Molten Gold), Hạt bụi sáng trôi nổi (Golden Embers), Phát quang sinh học (Bioluminescent Cyan).
-   * *Kỹ thuật chiếu sáng:* Rim lighting tách khối nhân vật khỏi phông nền tăm tối; Volumetric god rays chiếu từ giếng trời tự nhiên xuyên qua làn sương mù.
+   * *Kỹ thuật chiếu sáng (Rule 61, 62):* Nguồn sáng thực tế có động cơ trong khung cảnh (Motivated practical light từ ngọn đèn bão, đèn lồng dầu bập bùng); ánh trăng tự nhiên chiếu qua vòm đá giếng trời (natural overcast diffuse moonlight); ánh sáng phát quang nhẹ từ da cá và cây vàng; TUYỆT ĐỐI CẤM tia nắng đồ họa máy tính (zero god rays, zero volumetric beams) và CẤM đèn viền studio giả tạo (zero rim lighting, zero studio backlight).
 
 3. **Chống CGI & Tính Thực Tế Vật Lý (Rule 57, 59):**
    * Kết cấu vật liệu thô ráp, chân thực: da thú mòn xước, sớ gỗ sồi ẩm mục của thân tàu, vảy cá ướt nhớt lấp lánh phản chiếu ngọn đèn dầu, bụi đá vôi tung bay khi quái thú va chạm vách núi.
