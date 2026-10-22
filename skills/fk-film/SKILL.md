@@ -148,7 +148,7 @@ Sau 4 bộ kiểm → checklist B (`prompt-lock.md`) → `python tools/lint_prom
 | `/fk-scriptwriter` | Nhịp cảnh, cảm xúc bằng triệu chứng cơ thể, bộ công cụ hồi hộp |
 | `/fk-camera-guide` | Ngôn ngữ máy điện ảnh, cỡ cảnh, 5 tầng vật lý trong prompt |
 | `/fk-action-choreography` | Hành động 3 pha, từ vựng an toàn chống méo người, chuỗi 4s |
-| `/fk-storyboard` | **Bắt buộc cho mọi clip có sinh ảnh** (Rule 69, 22/10/2026): ảnh storyboard 2×2 theo thời gian làm ref + panel 1 làm khung mở đầu (r2v); không sinh start frame đơn lẻ. Clip liên tục vẫn dùng khung cuối clip trước |
+| `/fk-storyboard` | **Bắt buộc cho mọi clip có sinh ảnh** (Rule 69, 22/10/2026): ảnh storyboard 2×2 theo thời gian làm ref + panel 1 làm khung mở đầu (r2v); không sinh start frame đơn lẻ. Bắt buộc đọc thể ảnh storyboard thực tế để điều chỉnh camera, góc quay, vắt cảnh trong prompt video trước khi sinh (Rule 69 (7)). Clip liên tục vẫn dùng khung cuối clip trước |
 | `/fk-cinematic-transitions` | Match on action, J/L-cut, mối nối giữa các clip |
 | `/fk-gen-narrator` | Đếm số từ thoại theo `duration`, `narrator_text` (chế độ phim — không dùng MODE A vlog) |
 | `/fk-add-material` | Material của phim (style, lighting, chống CGI) |

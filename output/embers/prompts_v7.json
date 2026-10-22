@@ -4987,30 +4987,23 @@
     "duration": 8,
     "aspect_ratio": "16:9",
     "refs": [
-      "LS-01 Start",
+      "LS-01 P1",
+      "LS-01 Storyboard",
       "Nora",
       "Nora Body Fire",
       "Eli",
       "Juniper Blindfold",
-      "Ridge Road Fire",
-      "HALE Helmet Goggles"
+      "Ridge Road Fire"
     ],
     "start_frame": {
-      "type": "GENERATE_IMAGE",
-      "note": "Rule 65 Type 2: new angle; generate a start frame and send it as the first r2v ref (BN-11 pattern) when this clip is generated.",
-      "image_prompt": "A single cinematic film still, 16:9, real documentary footage look, digital cinema camera with subtle 35mm grain, natural color. Location: a small bare rocky rise above a burning lane in the pine forest of {{ref:Ridge Road Fire}}: grey rock and gravel dusted with ash; dry grass and pines burning on the slopes on both sides and below. It is deep night, pitch dark beyond the firelight: the sky is a black-brown smoke ceiling with no glow of day in it, no daylight, no grey or white sky, no blue, no stars; the only light is the fire, hard flickering orange on faces, rock and ground; embers blow low through the air. EXTREME WIDE SHOT from below and to the side: the small bare rocky rise in the middle of the frame with three small figures standing on it: Nora, a firefighter: her face is exactly the face in {{ref:Nora Soot}}, kept 1:1; an adult woman of 23; her build and clothing exactly as in {{ref:Nora Body Fire}}: the yellow wildland fire shirt, harness straps, belt and green fire pants, gloves on; on her head she wears her mother's old helmet exactly as in {{ref:HALE Helmet Goggles}}: the same worn yellow helmet with the scorched, burnt-brown brim and the same goggles with the black rubber frame resting on the front above the brim, black strap around the shell; the helmet and its goggles are on her head in this shot, never a new clean helmet; she holds Eli up with an arm round his waist, her head turning to the fire; beside her Eli: his face is exactly the face in {{ref:Eli}}, kept 1:1; an adult man of 19 in the green pullover hoodie, blue jeans and white lace-up sneakers from that reference, no backpack; his left leg is hurt, his weight on his right leg; the lead rope in his left hand; and beside him the old mare from {{ref:Juniper Blindfold}}: light dapple grey coat, pale face, plain rope halter with one lead rope, the red bandana tied flat over both eyes exactly as in that reference, covering both eyes, never up on the forehead; head up, trembling. Below them the lane is a river of fire, flames running up the dry grass toward the rock on both sides; uphill a solid wall of dark smoke hides the ridge. Light grey-black soot smudges on the faces and ash dust on the clothes; the skin still clearly visible, never a blackened face. Deep focus, everything sharp (f/8). Exactly three figures: Nora, Eli and the mare, small in the frame; nobody else. No text, no logos, no watermark, no subtitles. Not a 3D render, not CGI. No daylight, no blue sky. Nobody looks into the lens.",
-      "image_refs": [
-        "Ridge Road Fire",
-        "Nora Soot",
-        "Nora Body Fire",
-        "HALE Helmet Goggles",
-        "Eli",
-        "Juniper Blindfold"
-      ]
+      "type": "STORYBOARD_2X2",
+      "note": "fk-storyboard Rule 69: 2x2 storyboard sheet (4 moments in time), panel 1 cropped as opening frame",
+      "image_prompt": "A film storyboard sheet, 16:9, made of FOUR photographic panels in a 2 by 2 grid, separated by thin straight black gutters; each panel is itself a 16:9 frame; no text, no numbers, no arrows, no captions anywhere. All four panels are cinematic feature-film stills of ONE continuous 8-second moment at deep night, showing three small figures trapped on a bare rocky rise surrounded by a catastrophic wildfire, exactly matching the location and night lighting in {{media:2983af59-909e-4865-9655-b4d61d37f337|Ridge Road Fire.jpg}}: grey rock and gravel dusted with ash; dry grass and pines burning on the slopes on both sides and below; a black-brown smoke ceiling with no daylight, no blue sky, no stars; the flickering orange wildfire is the only key light, hard motivated chiaroscuro on faces and rock, glowing embers drifting through the air.\nNora, a firefighter, an adult woman of 23: face exactly the face in {{media:9267d26c-e7bd-4214-a310-ecd08b489673|Nora.jpg}}, soot on cheeks; wearing the yellow wildland fire shirt, harness straps, belt and green fire pants exactly as in {{media:85d5446c-43f9-438e-98d4-23d1e9baacf8|Nora Body Fire.jpg}}, gloves on; wearing her mother's worn yellow helmet with the scorched brim and goggles on front exactly as in {{media:5538b7ba-ffec-431d-ac5e-5789ef22e4db|HALE Helmet Goggles.jpg}}.\nEli, an adult man of 19: face exactly the face in {{media:fc0b6845-5516-41ee-9715-9119b022618f|Eli.jpg}}; wearing the green pullover hoodie, blue jeans, white sneakers, wearing his light tan canvas backpack on his back exactly as in {{media:fc17cb6b-fda6-4547-b1b2-5ba9e3270340|Eli Pack.jpg}}; hurt left leg favoured, leaning against Nora; holding the lead rope in his left hand.\nJuniper, an old dapple grey mare with a pale face, standing freely beside Eli: red bandana tied flat over both eyes exactly as in {{media:2a5cbd53-ddb7-46e7-b420-3a097ff85523|Juniper Blindfold.jpg}}, covering both eyes; plain rope halter with one lead rope in Eli's hand.\nTOP-LEFT PANEL, second 0: An extreme wide shot from below and slightly to the side: the small bare rocky rise in the middle of the frame with Nora, Eli and Juniper standing small on it; below them the lane is a river of fire, flames running up the dry grass toward the rock; uphill behind them is dark. Nora stands holding Eli up, both facing left toward the lane.\nTOP-RIGHT PANEL, second 3: A slightly higher crane angle: the camera has risen upward, looking down onto the rise; fire is now visibly roaring on both the left slope and the right slope; Nora turns her head and body, looking urgently to the left and right slopes; Eli grips her arm, leaning heavily on his right leg.\nBOTTOM-LEFT PANEL, second 6: A higher crane-like wide shot looking down from above: the full horseshoe circle of raging fire encircling the rocky rise is now clearly revealed, flames consuming the perimeter below them; Nora has turned fully uphill away from the fire below, searching for a path.\nBOTTOM-RIGHT PANEL, second 8: High crane shot looking uphill past the three small figures: Nora stares uphill where the ridge road should be, but a solid impenetrable wall of dense black-brown smoke and glowing orange embers completely chokes the uphill horizon, blocking any escape route. The three figures stand isolated on the bare dark rock island inside a ring of fire.\nCinematic feature-film look: shot on ARRI Alexa with Cooke S4 prime lenses, fine 35mm film grain, rich amber-and-teal grade driven by firelight, deep inky blacks, strong motivated chiaroscuro, thin atmospheric haze catching the light; deep focus, deep depth of field (f/8), entire frame sharp from the rock foreground to the burning horizon. Soot smudges on faces, skin clearly visible. Exactly three figures: Nora, Eli and the mare; nobody else. Nobody looks into the lens. Not a 3D render, not CGI, no watermark, no logos.",
+      "panels_summary": "0s: Wide shot on rocky rise -> 3s: Crane rises, fire on both slopes -> 6s: Higher crane, horseshoe ring of fire revealed -> 8s: Solid smoke wall chokes uphill ridge"
     },
     "camera": {
       "viewpoint": "third-person cinematic camera; the camera itself is never seen",
-      "shot_size": "OPENING FRAME = {{ref:LS-01 Start}}: the very first frame is exactly that image: the same camera position, framing, people and places. An extreme wide shot from below and to the side: the small rocky rise in the middle of the frame with three small figures on it, fire filling the lane below and climbing the slopes on both sides; uphill, a solid wall of smoke hiding the ridge",
+      "shot_size": "OPENING FRAME = {{ref:LS-01 P1}}: the very first frame is exactly that image: the same camera position, framing, people and places. An extreme wide shot from below and to the side: the small rocky rise in the middle of the frame with three small figures on it, fire filling the lane below and climbing the slopes on both sides; uphill, a solid wall of smoke hiding the ridge",
       "description": "24mm Cooke prime, a slow crane-like rise of the camera over the 8 seconds, revealing more and more fire around them.",
       "continuity": "one continuous unbroken shot from the first frame to the last, no cuts, no fade-in",
       "focus": "deep focus, everything sharp (f/8)"
@@ -5065,8 +5058,20 @@
       "Smoke is ragged and torn, streaming with the wind, never round puffy clumps, never a white haze filling the frame; no fire tornado.",
       "Nobody speaks.",
       "The three never step off the rock.",
-      "Spoken words in this clip: 0."
-    ]
+      "Spoken words in this clip: 0.",
+      "The video is full-frame shots only: never a grid, never panels, never split screen, never black dividing lines."
+    ],
+    "storyboard": {
+      "sheet_ref": "LS-01 Storyboard",
+      "p1_ref": "LS-01 P1",
+      "milestones": [
+        0,
+        3,
+        6,
+        8
+      ],
+      "instruction": "TIME STORYBOARD (CRITICAL): the reference image {{ref:LS-01 Storyboard}} is a STORYBOARD OF FOUR MOMENTS IN TIME from this one clip, NOT a single frame and NOT a layout to draw. Read it left to right, top to bottom: top-left = second 0, top-right = second 3, bottom-left = second 6, bottom-right = second 8. Use it only as the plan for how the action and the camera unfold; the video is full-frame shots only, never a grid, never split into panels, never black gutters."
+    }
   },
   {
     "clip_id": "LS-01b",
@@ -5074,17 +5079,16 @@
     "duration": 4,
     "aspect_ratio": "16:9",
     "refs": [
-      "LS-01b Start",
+      "LS-01b P1",
+      "LS-01b Storyboard",
       "Nora Body Fire",
       "Ridge Road Fire"
     ],
     "start_frame": {
-      "type": "GENERATE_IMAGE",
-      "note": "Rule 65 Type 2: new angle; generate a start frame and send it as the first r2v ref (BN-11 pattern) when this clip is generated.",
-      "image_prompt": "A single cinematic film still, 16:9, real documentary footage look, digital cinema camera with subtle 35mm grain, natural color. It is deep night, pitch dark beyond the firelight: the sky is a black-brown smoke ceiling with no glow of day in it, no daylight, no grey or white sky, no blue, no stars; the only light is the fire, hard flickering orange on faces, rock and ground; embers blow low through the air. EXTREME CLOSE-UP of Nora's chest harness, exactly as in {{ref:Nora Body Fire}}: the yellow wildland fire shirt and the harness straps, soot and ash on them; the radio pocket on the left chest strap hangs open and EMPTY, no radio in it; her gloved right hand coming into the frame from below toward the pocket. Her face is not in the frame. Behind, the orange light of the burning slope. Everything sharp. Only her harness and gloved hand; nobody else. No text, no logos, no watermark, no subtitles. Not a 3D render, not CGI. No daylight, no blue sky. Nobody looks into the lens.",
-      "image_refs": [
-        "Nora Body Fire"
-      ]
+      "type": "STORYBOARD_2X2",
+      "note": "fk-storyboard Rule 69: 2x2 storyboard sheet (4 moments in time), panel 1 cropped as opening frame",
+      "image_prompt": "A film storyboard sheet, 16:9, made of FOUR photographic panels in a 2 by 2 grid, separated by thin straight black gutters; each panel is itself a 16:9 frame; no text, no numbers, no arrows, no captions anywhere. All four panels are cinematic feature-film stills of ONE continuous 4-second moment at deep night, an extreme close-up study of Nora's chest harness on the bare rocky rise in the burning pine forest of {{media:2983af59-909e-4865-9655-b4d61d37f337|Ridge Road Fire.jpg}}: the only light is the harsh flickering orange glow of firelight reflecting on coarse fabric and soot, deep inky shadows; air thick with floating amber embers, thin ragged smoke drifting past.\nNora: an adult woman firefighter of 23; wearing the yellow wildland fire shirt, heavy dark webbing chest harness straps, buckle and belt exactly as in {{media:85d5446c-43f9-438e-98d4-23d1e9baacf8|Nora Body Fire.jpg}}, yellow fabric stained with dark soot and ash streaks, gloves on.\nTOP-LEFT PANEL, second 0: Extreme close-up of Nora's chest: her right gloved hand slaps instinctively onto the canvas radio pouch mounted on her chest harness; the flap of the radio pouch is open and the pouch is completely EMPTY; no radio inside.\nTOP-RIGHT PANEL, second 1: The same extreme close-up: Nora's thick gloved fingers plunge deep into the open empty pouch, feeling desperately inside, finding only thin empty fabric; her chest rises sharply with a ragged gasp under the harness strap.\nBOTTOM-LEFT PANEL, second 3: The same tight framing: her gloved hand withdraws from the empty pocket, trembling with shock, and balls tightly into a rigid clenched fist against the charred yellow fabric of her shirt.\nBOTTOM-RIGHT PANEL, second 4: Framing widens slightly upward to include Nora's lower face and jaw: soot streaks on her tight jawline and throat as she swallows hard, chin clenched; her fist remains pressed against the empty harness pocket; the realisation of total isolation strikes.\nCinematic feature-film look: shot on ARRI Alexa with Cooke S4 prime lenses, fine 35mm film grain, rich amber-and-teal fire grade, deep inky blacks, motivated fire chiaroscuro, thin smoke haze; deep focus, deep depth of field (f/8), coarse texture of fabric and soot sharp edge to edge. No text, no logos, no watermark. Not a 3D render, not CGI.",
+      "panels_summary": "0s: Gloved hand slaps empty radio pouch -> 1s: Fingers search empty pocket in vain -> 3s: Hand withdraws and clenches into trembling fist -> 4s: Widens to jawline swallowing hard, total isolation"
     },
     "camera": {
       "viewpoint": "third-person cinematic camera; the camera itself is never seen",
@@ -5132,8 +5136,20 @@
       "Smoke is ragged and torn, streaming with the wind, never round puffy clumps, never a white haze filling the frame; no fire tornado.",
       "The radio pocket is empty in every frame; no radio, no device appears anywhere.",
       "Nobody speaks.",
-      "Spoken words in this clip: 0."
-    ]
+      "Spoken words in this clip: 0.",
+      "The video is full-frame shots only: never a grid, never panels, never split screen, never black dividing lines."
+    ],
+    "storyboard": {
+      "sheet_ref": "LS-01b Storyboard",
+      "p1_ref": "LS-01b P1",
+      "milestones": [
+        0,
+        1,
+        3,
+        4
+      ],
+      "instruction": "TIME STORYBOARD (CRITICAL): the reference image {{ref:LS-01b Storyboard}} is a STORYBOARD OF FOUR MOMENTS IN TIME from this one clip, NOT a single frame and NOT a layout to draw. Read it left to right, top to bottom: top-left = second 0, top-right = second 1, bottom-left = second 3, bottom-right = second 4. Use it only as the plan for how the action and the camera unfold; the video is full-frame shots only, never a grid, never split into panels, never black gutters."
+    }
   },
   {
     "clip_id": "LS-02",
@@ -5141,22 +5157,18 @@
     "duration": 6,
     "aspect_ratio": "16:9",
     "refs": [
-      "LS-02 Start",
+      "LS-02 P1",
+      "LS-02 Storyboard",
       "Nora",
       "Nora Body Fire",
       "HALE Helmet Goggles",
       "Ridge Road Fire"
     ],
     "start_frame": {
-      "type": "GENERATE_IMAGE",
-      "note": "Rule 65 Type 2: new angle; generate a start frame and send it as the first r2v ref (BN-11 pattern) when this clip is generated.",
-      "image_prompt": "A single cinematic film still, 16:9, real documentary footage look, digital cinema camera with subtle 35mm grain, natural color. Location: a small bare rocky rise above a burning lane in the pine forest of {{ref:Ridge Road Fire}}: grey rock and gravel dusted with ash; dry grass and pines burning on the slopes on both sides and below. It is deep night, pitch dark beyond the firelight: the sky is a black-brown smoke ceiling with no glow of day in it, no daylight, no grey or white sky, no blue, no stars; the only light is the fire, hard flickering orange on faces, rock and ground; embers blow low through the air. MEDIUM SHOT from the waist up, the burning slope behind her: Nora, a firefighter: her face is exactly the face in {{ref:Nora Soot}}, kept 1:1; an adult woman of 23; her build and clothing exactly as in {{ref:Nora Body Fire}}: the yellow wildland fire shirt, harness straps, belt and green fire pants, gloves on; on her head she wears her mother's old helmet exactly as in {{ref:HALE Helmet Goggles}}: the same worn yellow helmet with the scorched, burnt-brown brim and the same goggles with the black rubber frame resting on the front above the brim, black strap around the shell; the helmet and its goggles are on her head in this shot, never a new clean helmet; her face turned toward the left of the frame, mouth open yelling; her right gloved hand closed on the yellow fire-shelter pouch hanging on her belt, about to rip it off; her radio pocket on the chest harness open and empty. Light grey-black soot smudges on the face and ash dust on the clothes; the skin still clearly visible, never a blackened face. Deep focus, everything sharp (f/8). Only Nora; nobody else. No text, no logos, no watermark, no subtitles. Not a 3D render, not CGI. No daylight, no blue sky. Nobody looks into the lens.",
-      "image_refs": [
-        "Ridge Road Fire",
-        "Nora Soot",
-        "Nora Body Fire",
-        "HALE Helmet Goggles"
-      ]
+      "type": "STORYBOARD_2X2",
+      "note": "fk-storyboard Rule 69: 2x2 storyboard sheet (4 moments in time), panel 1 cropped as opening frame",
+      "image_prompt": "A film storyboard sheet, 16:9, made of FOUR photographic panels in a 2 by 2 grid, separated by thin straight black gutters; each panel is itself a 16:9 frame; no text, no numbers, no arrows, no captions anywhere. All four panels are cinematic feature-film stills of ONE continuous 6-second moment at deep night on the bare rocky rise in {{media:2983af59-909e-4865-9655-b4d61d37f337|Ridge Road Fire.jpg}}: a medium two-shot of Nora and Eli; roaring orange wildfire around them, dark smoke ceiling overhead, blowing embers.\nNora: face exactly as in {{media:9267d26c-e7bd-4214-a310-ecd08b489673|Nora.jpg}}; wearing yellow fire shirt, harness, green fire pants, gloves, scorched yellow helmet and goggles exactly as in {{media:85d5446c-43f9-438e-98d4-23d1e9baacf8|Nora Body Fire.jpg}} and {{media:5538b7ba-ffec-431d-ac5e-5789ef22e4db|HALE Helmet Goggles.jpg}}.\nEli: face exactly as in {{media:fc0b6845-5516-41ee-9715-9119b022618f|Eli.jpg}}; wearing olive green hoodie, blue jeans, white sneakers, tan canvas backpack on back {{media:fc17cb6b-fda6-4547-b1b2-5ba9e3270340|Eli Pack.jpg}}; hurt left leg favoured; holding lead rope of Juniper {{media:2a5cbd53-ddb7-46e7-b420-3a097ff85523|Juniper Blindfold.jpg}} who stands behind him.\nTOP-LEFT PANEL, second 0: Medium shot: Nora supports Eli on the rock; her mouth is wide open yelling urgently at him: 'Can't see the black! Can't run uphill blind!'; her other hand reaches down to her hip web belt grabbing the emergency fire shelter case.\nTOP-RIGHT PANEL, second 2: Same medium shot: Nora yanks hard on the bright red tear-strip of the shelter case; the yellow protective case splits open and the folded silver-foil fire shelter packet slips out into her gloved hands; Nora yells: 'Shelter! Face down!'.\nBOTTOM-LEFT PANEL, second 4: Nora shakes the silver foil shelter open with both hands using its two interior deployment straps; the shiny metallic foil sheet crackles violently and billows wide in the fierce hot wind, reflecting blinding orange firelight.\nBOTTOM-RIGHT PANEL, second 6: Nora lunges forward with the deployed silver shelter tent, thrusting it firmly toward Eli's chest to force him down onto the bare rock; Eli stares in horror at the silver shelter, realizing it is designed for only ONE person.\nCinematic feature-film look: ARRI Alexa, Cooke S4 primes, fine 35mm grain, amber-teal grade, deep focus (f/8), motivated firelight, glowing embers. Exactly two people and one horse. No text, no logos, no watermark. Not CGI.",
+      "panels_summary": "0s: Nora yells 'Can't see the black', reaches for shelter -> 2s: Yanks red tear strip, foil shelter drops out -> 4s: Shakes silver shelter open billowing in wind -> 6s: Thrusts shelter at Eli, Eli realizes it's only for one person"
     },
     "camera": {
       "viewpoint": "third-person cinematic camera; the camera itself is never seen",
@@ -5225,8 +5237,20 @@
       "Smoke is ragged and torn, streaming with the wind, never round puffy clumps, never a white haze filling the frame; no fire tornado.",
       "Only Nora speaks and only her mouth moves.",
       "Exactly one fire shelter.",
-      "Spoken words in this clip: 14."
-    ]
+      "Spoken words in this clip: 14.",
+      "The video is full-frame shots only: never a grid, never panels, never split screen, never black dividing lines."
+    ],
+    "storyboard": {
+      "sheet_ref": "LS-02 Storyboard",
+      "p1_ref": "LS-02 P1",
+      "milestones": [
+        0,
+        2,
+        4,
+        6
+      ],
+      "instruction": "TIME STORYBOARD (CRITICAL): the reference image {{ref:LS-02 Storyboard}} is a STORYBOARD OF FOUR MOMENTS IN TIME from this one clip, NOT a single frame and NOT a layout to draw. Read it left to right, top to bottom: top-left = second 0, top-right = second 2, bottom-left = second 4, bottom-right = second 6. Use it only as the plan for how the action and the camera unfold; the video is full-frame shots only, never a grid, never split into panels, never black gutters."
+    }
   },
   {
     "clip_id": "LS-03",
@@ -5234,22 +5258,18 @@
     "duration": 8,
     "aspect_ratio": "16:9",
     "refs": [
-      "LS-03 Start",
+      "LS-03 P1",
+      "LS-03 Storyboard",
       "Eli",
       "Nora Body Fire",
       "HALE Helmet Goggles",
       "Ridge Road Fire"
     ],
     "start_frame": {
-      "type": "GENERATE_IMAGE",
-      "note": "Rule 65 Type 2: new angle; generate a start frame and send it as the first r2v ref (BN-11 pattern) when this clip is generated.",
-      "image_prompt": "A single cinematic film still, 16:9, real documentary footage look, digital cinema camera with subtle 35mm grain, natural color. Location: a small bare rocky rise above a burning lane in the pine forest of {{ref:Ridge Road Fire}}: grey rock and gravel dusted with ash; dry grass and pines burning on the slopes on both sides and below. It is deep night, pitch dark beyond the firelight: the sky is a black-brown smoke ceiling with no glow of day in it, no daylight, no grey or white sky, no blue, no stars; the only light is the fire, hard flickering orange on faces, rock and ground; embers blow low through the air. OVER-THE-SHOULDER SHOT from behind Nora's right shoulder: in the near foreground the back of her yellow shirt, harness straps and the back of her yellow helmet with the scorched brim, exactly as in {{ref:Nora Body Fire}} and {{ref:HALE Helmet Goggles}}, her face never seen; her gloved hands hold an open silver fire shelter out between them. Facing the camera on the rock, Eli: his face is exactly the face in {{ref:Eli}}, kept 1:1; an adult man of 19 in the green pullover hoodie, blue jeans and white lace-up sneakers from that reference, no backpack; his left leg is hurt, his weight on his right leg; the lead rope in his left hand; his right hand pushes the foil back toward her, his mouth open, refusing. The mare is not in this frame. Light grey-black soot smudges on the faces and ash dust on the clothes; the skin still clearly visible, never a blackened face. Deep focus, everything sharp (f/8). Exactly Nora from behind and Eli; nobody else. No text, no logos, no watermark, no subtitles. Not a 3D render, not CGI. No daylight, no blue sky. Nobody looks into the lens.",
-      "image_refs": [
-        "Ridge Road Fire",
-        "Nora Body Fire",
-        "HALE Helmet Goggles",
-        "Eli"
-      ]
+      "type": "STORYBOARD_2X2",
+      "note": "fk-storyboard Rule 69: 2x2 storyboard sheet (4 moments in time), panel 1 cropped as opening frame",
+      "image_prompt": "A film storyboard sheet, 16:9, made of FOUR photographic panels in a 2 by 2 grid, separated by thin straight black gutters; each panel is itself a 16:9 frame; no text, no numbers, no arrows, no captions anywhere. All four panels are cinematic feature-film stills of ONE continuous 8-second dramatic confrontation at deep night on the bare rocky rise in {{media:2983af59-909e-4865-9655-b4d61d37f337|Ridge Road Fire.jpg}}: a tight two-shot between Nora and Eli with the silver fire shelter billowing between them, wildfire roaring in background.\nNora: face {{media:9267d26c-e7bd-4214-a310-ecd08b489673|Nora.jpg}}; wearing firefighter gear {{media:85d5446c-43f9-438e-98d4-23d1e9baacf8|Nora Body Fire.jpg}} and helmet {{media:5538b7ba-ffec-431d-ac5e-5789ef22e4db|HALE Helmet Goggles.jpg}}, soot on cheeks, eyes fierce and desperate.\nEli: face {{media:fc0b6845-5516-41ee-9715-9119b022618f|Eli.jpg}}; wearing olive hoodie, tan pack {{media:fc17cb6b-fda6-4547-b1b2-5ba9e3270340|Eli Pack.jpg}}, lead rope in left hand connecting to Juniper {{media:2a5cbd53-ddb7-46e7-b420-3a097ff85523|Juniper Blindfold.jpg}}.\nTOP-LEFT PANEL, second 0: Tight two-shot: Eli violently shoves the edge of the silver foil shelter back toward Nora's chest; his face is twisted with outrage and fear, yelling directly into her face: 'And you?!'.\nTOP-RIGHT PANEL, second 3: Close-up on Nora: wind whipping soot across her face, jaw rigid, eyes blazing with furious maternal authority, yelling back: 'It's one shelter! Mom said keep you alive!'.\nBOTTOM-LEFT PANEL, second 6: Close-up on Eli: eyes wet with tears reflecting orange fire, teeth clenched, shaking his head with fierce refusal; the crinkling silver foil vibrates in the gale between them.\nBOTTOM-RIGHT PANEL, second 8: Medium close-up two-shot: Eli yells with cracking voice: 'That's what Mom told you! Isn't it?!', his body trembling, refusing to get under the shelter while Nora stands exposed to the flames.\nCinematic feature-film look: ARRI Alexa, Cooke S4, fine 35mm grain, deep focus (f/8), amber-teal fire grade, motivated chiaroscuro, intense character performance. Exactly two people and one horse. No text, no logos, no watermark. Not CGI.",
+      "panels_summary": "0s: Eli shoves foil back, yelling 'And you?!' -> 3s: Nora screams 'It's one shelter! Mom said keep you alive!' -> 6s: Eli in tears shaking head in fierce refusal -> 8s: Eli screams 'That's what Mom told you! Isn't it?!'"
     },
     "camera": {
       "viewpoint": "third-person cinematic camera; the camera itself is never seen",
@@ -5326,8 +5346,20 @@
       "Smoke is ragged and torn, streaming with the wind, never round puffy clumps, never a white haze filling the frame; no fire tornado.",
       "Only Eli's mouth moves; Nora's face is never in frame.",
       "Eli is silent between second 1.5 and 5.5.",
-      "Spoken words in this clip: 9."
-    ]
+      "Spoken words in this clip: 9.",
+      "The video is full-frame shots only: never a grid, never panels, never split screen, never black dividing lines."
+    ],
+    "storyboard": {
+      "sheet_ref": "LS-03 Storyboard",
+      "p1_ref": "LS-03 P1",
+      "milestones": [
+        0,
+        3,
+        6,
+        8
+      ],
+      "instruction": "TIME STORYBOARD (CRITICAL): the reference image {{ref:LS-03 Storyboard}} is a STORYBOARD OF FOUR MOMENTS IN TIME from this one clip, NOT a single frame and NOT a layout to draw. Read it left to right, top to bottom: top-left = second 0, top-right = second 3, bottom-left = second 6, bottom-right = second 8. Use it only as the plan for how the action and the camera unfold; the video is full-frame shots only, never a grid, never split into panels, never black gutters."
+    }
   },
   {
     "clip_id": "LS-04",
@@ -5335,22 +5367,18 @@
     "duration": 4,
     "aspect_ratio": "16:9",
     "refs": [
-      "LS-04 Start",
+      "LS-04 P1",
+      "LS-04 Storyboard",
       "Nora",
       "Nora Body Fire",
       "HALE Helmet Goggles",
       "Ridge Road Fire"
     ],
     "start_frame": {
-      "type": "GENERATE_IMAGE",
-      "note": "Rule 65 Type 2: new angle; generate a start frame and send it as the first r2v ref (BN-11 pattern) when this clip is generated.",
-      "image_prompt": "A single cinematic film still, 16:9, real documentary footage look, digital cinema camera with subtle 35mm grain, natural color. Location: a small bare rocky rise above a burning lane in the pine forest of {{ref:Ridge Road Fire}}: grey rock and gravel dusted with ash; dry grass and pines burning on the slopes on both sides and below. It is deep night, pitch dark beyond the firelight: the sky is a black-brown smoke ceiling with no glow of day in it, no daylight, no grey or white sky, no blue, no stars; the only light is the fire, hard flickering orange on faces, rock and ground; embers blow low through the air. CLOSE-UP of Nora's face under the helmet brim, the burning slope behind her: Nora, a firefighter: her face is exactly the face in {{ref:Nora Soot}}, kept 1:1; an adult woman of 23; her build and clothing exactly as in {{ref:Nora Body Fire}}: the yellow wildland fire shirt, harness straps, belt and green fire pants, gloves on; on her head she wears her mother's old helmet exactly as in {{ref:HALE Helmet Goggles}}: the same worn yellow helmet with the scorched, burnt-brown brim and the same goggles with the black rubber frame resting on the front above the brim, black strap around the shell; the helmet and its goggles are on her head in this shot, never a new clean helmet; her eyes wet and shining in the firelight, lips just parted, no words. Light grey-black soot smudges on the face and ash dust on the clothes; the skin still clearly visible, never a blackened face. Deep focus, everything sharp (f/8). Only Nora; nobody else. No text, no logos, no watermark, no subtitles. Not a 3D render, not CGI. No daylight, no blue sky. Nobody looks into the lens.",
-      "image_refs": [
-        "Ridge Road Fire",
-        "Nora Soot",
-        "Nora Body Fire",
-        "HALE Helmet Goggles"
-      ]
+      "type": "STORYBOARD_2X2",
+      "note": "fk-storyboard Rule 69: 2x2 storyboard sheet (4 moments in time), panel 1 cropped as opening frame",
+      "image_prompt": "A film storyboard sheet, 16:9, made of FOUR photographic panels in a 2 by 2 grid, separated by thin straight black gutters; each panel is itself a 16:9 frame; no text, no numbers, no arrows, no captions anywhere. All four panels are cinematic feature-film stills of ONE continuous 4-second intense psychological breakdown, tight close-up portrait of Nora on the rocky rise in {{media:2983af59-909e-4865-9655-b4d61d37f337|Ridge Road Fire.jpg}}.\nNora: face exactly {{media:9267d26c-e7bd-4214-a310-ecd08b489673|Nora.jpg}}; wearing scorched yellow helmet and goggles {{media:5538b7ba-ffec-431d-ac5e-5789ef22e4db|HALE Helmet Goggles.jpg}}, soot streaks on cheeks, collar {{media:85d5446c-43f9-438e-98d4-23d1e9baacf8|Nora Body Fire.jpg}}; the only light is the orange wildfire glow on her skin and eyes, background is inky dark smoke.\nTOP-LEFT PANEL, second 0: Tight close-up of Nora facing Eli: her lips part slightly to answer her brother's accusation, but sound dies in her throat; her eyes widen in silent agony.\nTOP-RIGHT PANEL, second 1: The same tight close-up: her throat muscles contract visibly as she swallows hard; a single twitch of guilt and despair crosses her brow.\nBOTTOM-LEFT PANEL, second 3: The same framing: Nora's chin trembles once uncontrollably; she slowly averts her gaze downwards and away from Eli, unable to hold her brother's eyes.\nBOTTOM-RIGHT PANEL, second 4: Nora turns her head toward the roaring flames encircling them; the bright orange firelight washes over her face and the charred brim of her mother's helmet; she stands completely broken, exposed and wordless.\nCinematic feature-film look: ARRI Alexa, Cooke S4 primes, fine 35mm grain, deep focus (f/8), amber-teal palette, deep inky blacks, subtle micro-expressions, authentic human emotion, soot and sweat on skin. No text, no logos, no watermark. Not CGI.",
+      "panels_summary": "0s: Nora's lips part to answer but sound dies -> 1s: Throat contracts, swallowing hard in agony -> 3s: Chin trembles, averts eyes from Eli -> 4s: Turns to roaring fire, broken and wordless"
     },
     "camera": {
       "viewpoint": "third-person cinematic camera; the camera itself is never seen",
@@ -5398,8 +5426,20 @@
       "Smoke is ragged and torn, streaming with the wind, never round puffy clumps, never a white haze filling the frame; no fire tornado.",
       "Nobody speaks; her mouth never forms words.",
       "One fixed angle, no camera movement.",
-      "Spoken words in this clip: 0."
-    ]
+      "Spoken words in this clip: 0.",
+      "The video is full-frame shots only: never a grid, never panels, never split screen, never black dividing lines."
+    ],
+    "storyboard": {
+      "sheet_ref": "LS-04 Storyboard",
+      "p1_ref": "LS-04 P1",
+      "milestones": [
+        0,
+        1,
+        3,
+        4
+      ],
+      "instruction": "TIME STORYBOARD (CRITICAL): the reference image {{ref:LS-04 Storyboard}} is a STORYBOARD OF FOUR MOMENTS IN TIME from this one clip, NOT a single frame and NOT a layout to draw. Read it left to right, top to bottom: top-left = second 0, top-right = second 1, bottom-left = second 3, bottom-right = second 4. Use it only as the plan for how the action and the camera unfold; the video is full-frame shots only, never a grid, never split into panels, never black gutters."
+    }
   },
   {
     "clip_id": "LS-05a",
@@ -5407,20 +5447,17 @@
     "duration": 4,
     "aspect_ratio": "16:9",
     "refs": [
-      "LS-05a Start",
+      "LS-05a P1",
+      "LS-05a Storyboard",
       "Juniper Blindfold",
       "Eli",
       "Ridge Road Fire"
     ],
     "start_frame": {
-      "type": "GENERATE_IMAGE",
-      "note": "Rule 65 Type 2 (cut from LS-04); LS-05b continues from this clip's last frame.",
-      "image_prompt": "A single cinematic film still, 16:9, real documentary footage look, digital cinema camera with subtle 35mm grain, natural color. Location: a small bare rocky rise above a burning lane in the pine forest of {{ref:Ridge Road Fire}}: grey rock and gravel dusted with ash; dry grass and pines burning on the slopes on both sides and below. It is deep night, pitch dark beyond the firelight: the sky is a black-brown smoke ceiling with no glow of day in it, no daylight, no grey or white sky, no blue, no stars; the only light is the fire, hard flickering orange on faces, rock and ground; embers blow low through the air. LOW-ANGLE WIDE SHOT from the rock: the old mare from {{ref:Juniper Blindfold}}: light dapple grey coat, pale face, plain rope halter with one lead rope, the red bandana tied flat over both eyes exactly as in that reference, covering both eyes, never up on the forehead; she fills the right half of the frame, head high, nostrils flared, trembling; on the left at her head, Eli: his face is exactly the face in {{ref:Eli}}, kept 1:1; an adult man of 19 in the green pullover hoodie, blue jeans and white lace-up sneakers from that reference, no backpack; his left leg is hurt, his weight on his right leg; both hands on the lead rope near her halter. The burning slope behind them. Light grey-black soot smudges on the face and ash dust on the clothes; the skin still clearly visible, never a blackened face. Deep focus, everything sharp (f/8). Exactly Eli and the mare; nobody else. No text, no logos, no watermark, no subtitles. Not a 3D render, not CGI. No daylight, no blue sky. Nobody looks into the lens.",
-      "image_refs": [
-        "Ridge Road Fire",
-        "Juniper Blindfold",
-        "Eli"
-      ]
+      "type": "STORYBOARD_2X2",
+      "note": "fk-storyboard Rule 69: 2x2 storyboard sheet (4 moments in time), panel 1 cropped as opening frame",
+      "image_prompt": "A film storyboard sheet, 16:9, made of FOUR photographic panels in a 2 by 2 grid, separated by thin straight black gutters; each panel is itself a 16:9 frame; no text, no numbers, no arrows, no captions anywhere. All four panels are cinematic feature-film stills of ONE continuous 4-second sudden action moment on the bare rocky rise in {{media:2983af59-909e-4865-9655-b4d61d37f337|Ridge Road Fire.jpg}}: Juniper the dapple grey mare breaking free, beside Eli and Nora; roaring wildfire in background.\nJuniper: an old dapple grey mare, pale face, muscular equine anatomy; plain rope halter {{media:2a5cbd53-ddb7-46e7-b420-3a097ff85523|Juniper Blindfold.jpg}}.\nEli: wearing olive hoodie, blue jeans, tan backpack {{media:fc17cb6b-fda6-4547-b1b2-5ba9e3270340|Eli Pack.jpg}}, face {{media:fc0b6845-5516-41ee-9715-9119b022618f|Eli.jpg}}.\nNora: wearing yellow fire gear and helmet {{media:85d5446c-43f9-438e-98d4-23d1e9baacf8|Nora Body Fire.jpg}}, standing beside them.\nTOP-LEFT PANEL, second 0: Medium shot: Juniper violently shakes her head and neck twice in sudden panic from the roaring heat; the red bandana covering her eyes loosens and starts to slip down her face.\nTOP-RIGHT PANEL, second 1: The red bandana slips completely off Juniper's head and drops down toward the ash-covered rock; her bare wild eyes are revealed, wide with terror, reflecting the fiery orange inferno.\nBOTTOM-LEFT PANEL, second 3: Juniper rears up on her hind legs, her front hooves lifting high off the rock, neck arched, nostrils flared; the lead rope jerks violently taut, yanking Eli forward off-balance on his hurt leg.\nBOTTOM-RIGHT PANEL, second 4: Juniper's front hooves slam back onto the rock as she pivots 180 degrees to face uphill away from the fire; the lead rope tears violently through Eli's hands; Eli stumbles forward yelling.\nCinematic feature-film look: ARRI Alexa, Cooke S4 primes, fine 35mm grain, deep focus (f/8), amber-teal firelight, dynamic action physics, real animal anatomy, flying sparks. Exactly two people and one horse. No text, no logos, no watermark. Not CGI.",
+      "panels_summary": "0s: Juniper violently shakes head, bandana loosens -> 1s: Bandana slips off falling to rock, bare eyes revealed -> 3s: Rears up on hind legs, rope yanks Eli -> 4s: Slams hooves down pivoting uphill, rope rips through Eli's hands"
     },
     "camera": {
       "viewpoint": "third-person cinematic camera; the camera itself is never seen",
@@ -5473,8 +5510,20 @@
       "Smoke is ragged and torn, streaming with the wind, never round puffy clumps, never a white haze filling the frame; no fire tornado.",
       "Nobody speaks.",
       "The mare half-rears only, never falls, never flips; the rope is one continuous rope.",
-      "Spoken words in this clip: 0."
-    ]
+      "Spoken words in this clip: 0.",
+      "The video is full-frame shots only: never a grid, never panels, never split screen, never black dividing lines."
+    ],
+    "storyboard": {
+      "sheet_ref": "LS-05a Storyboard",
+      "p1_ref": "LS-05a P1",
+      "milestones": [
+        0,
+        1,
+        3,
+        4
+      ],
+      "instruction": "TIME STORYBOARD (CRITICAL): the reference image {{ref:LS-05a Storyboard}} is a STORYBOARD OF FOUR MOMENTS IN TIME from this one clip, NOT a single frame and NOT a layout to draw. Read it left to right, top to bottom: top-left = second 0, top-right = second 1, bottom-left = second 3, bottom-right = second 4. Use it only as the plan for how the action and the camera unfold; the video is full-frame shots only, never a grid, never split into panels, never black gutters."
+    }
   },
   {
     "clip_id": "LS-05b",
@@ -5482,14 +5531,14 @@
     "duration": 4,
     "aspect_ratio": "16:9",
     "refs": [
-      "LS-05b Start",
+      "LS-05a Last",
       "Juniper",
       "Eli",
       "Ridge Road Fire"
     ],
     "start_frame": {
       "type": "PREV_LAST_FRAME",
-      "note": "Rule 65 Type 1: same place, moment, angle and size as LS-05a; start frame = LS-05a last frame, i2v with no refs. The cleaned last frame of the approved previous clip is uploaded as 'LS-05b Start' and sent as the first r2v ref."
+      "note": "Rule 65 Type 1: continuous action nối từ end frame LS-05a"
     },
     "camera": {
       "viewpoint": "third-person cinematic camera; the camera itself is never seen",
@@ -5552,18 +5601,16 @@
     "duration": 6,
     "aspect_ratio": "16:9",
     "refs": [
-      "LS-06 Start",
+      "LS-06 P1",
+      "LS-06 Storyboard",
       "Juniper",
       "The Black"
     ],
     "start_frame": {
-      "type": "GENERATE_IMAGE",
-      "note": "Rule 65 Type 2: new angle; generate a start frame and send it as the first r2v ref (BN-11 pattern) when this clip is generated.",
-      "image_prompt": "A single cinematic film still, 16:9, real documentary footage look, digital cinema camera with subtle 35mm grain, natural color. It is deep night, pitch dark beyond the firelight: the sky is a black-brown smoke ceiling with no glow of day in it, no daylight, no grey or white sky, no blue, no stars; the only light is the fire, hard flickering orange on faces, rock and ground; embers blow low through the air. EXTREME WIDE SHOT on a long lens: a smoky slope burning in patches, and high up on the left a dark hillside already burned black exactly like {{ref:The Black}}; in the middle of the frame, small, the old mare from {{ref:Juniper}}: light dapple grey coat, pale face, dark eyes, plain rope halter with one lead rope, both eyes uncovered, no blindfold; a real horse with real anatomy, one head and four legs; galloping alone from right to left uphill through drifting smoke, the loose lead rope trailing. Deep focus, everything sharp (f/8). Only the mare; no people. No text, no logos, no watermark, no subtitles. Not a 3D render, not CGI. No daylight, no blue sky. Nobody looks into the lens.",
-      "image_refs": [
-        "The Black",
-        "Juniper"
-      ]
+      "type": "STORYBOARD_2X2",
+      "note": "fk-storyboard Rule 69: 2x2 storyboard sheet (4 moments in time), panel 1 cropped as opening frame",
+      "image_prompt": "A film storyboard sheet, 16:9, made of FOUR photographic panels in a 2 by 2 grid, separated by thin straight black gutters; each panel is itself a 16:9 frame; no text, no numbers, no arrows, no captions anywhere. All four panels are cinematic feature-film stills of ONE continuous 6-second moment at deep night in {{media:2983af59-909e-4865-9655-b4d61d37f337|Ridge Road Fire.jpg}}: extreme wide tracking shot looking uphill from the rocky rise, following the dapple grey mare galloping towards safety.\nJuniper: light dapple grey mare with pale face, completely bare eyes (no bandana), rope halter trailing long lead rope bouncing behind her on the ground.\nTOP-LEFT PANEL, second 0: Extreme wide shot looking uphill: far away in the frame, the small grey mare gallops powerfully from right to left through dense drifting smoke; orange fire lines burn far below her.\nTOP-RIGHT PANEL, second 2: Same extreme wide shot: the mare gallops out of the orange firelight glow and crosses an invisible boundary onto dark, black ground on the upper slope; the smoke rapidly thins around her.\nBOTTOM-LEFT PANEL, second 4: The mare reaches the high dark ridge on the upper left—a vast cold black expanse of already-burned slope (The Black); she slows her gallop to an easy, calm trot on the cold ash.\nBOTTOM-RIGHT PANEL, second 6: High on the black ridge against the night sky, Juniper comes to a complete halt on the burned black ground; no flames reach this area; she turns her pale head around to look calmly back down the slope.\nCinematic feature-film look: ARRI Alexa, Cooke S4 primes, fine 35mm grain, deep focus (f/8), amber-teal contrast between roaring fire below and inky black safety above, genuine equine momentum. No text, no logos, no watermark. Not CGI.",
+      "panels_summary": "0s: Mare gallops uphill through smoke -> 2s: Runs out of orange fire glow onto dark ground -> 4s: Reaches high cold black slope (The Black), slows to trot -> 6s: Halts safely on burned black ridge, turns head looking down"
     },
     "camera": {
       "viewpoint": "third-person cinematic camera; the camera itself is never seen",
@@ -5612,8 +5659,20 @@
       "Smoke is ragged and torn, streaming with the wind, never round puffy clumps, never a white haze filling the frame; no fire tornado.",
       "Nobody in frame but the horse.",
       "She runs only from right to left.",
-      "Spoken words in this clip: 0."
-    ]
+      "Spoken words in this clip: 0.",
+      "The video is full-frame shots only: never a grid, never panels, never split screen, never black dividing lines."
+    ],
+    "storyboard": {
+      "sheet_ref": "LS-06 Storyboard",
+      "p1_ref": "LS-06 P1",
+      "milestones": [
+        0,
+        2,
+        4,
+        6
+      ],
+      "instruction": "TIME STORYBOARD (CRITICAL): the reference image {{ref:LS-06 Storyboard}} is a STORYBOARD OF FOUR MOMENTS IN TIME from this one clip, NOT a single frame and NOT a layout to draw. Read it left to right, top to bottom: top-left = second 0, top-right = second 2, bottom-left = second 4, bottom-right = second 6. Use it only as the plan for how the action and the camera unfold; the video is full-frame shots only, never a grid, never split into panels, never black gutters."
+    }
   },
   {
     "clip_id": "LS-07",
@@ -5621,18 +5680,16 @@
     "duration": 4,
     "aspect_ratio": "16:9",
     "refs": [
-      "LS-07 Start",
+      "LS-07 P1",
+      "LS-07 Storyboard",
       "Eli",
       "Ridge Road Fire"
     ],
     "start_frame": {
-      "type": "GENERATE_IMAGE",
-      "note": "Rule 65 Type 2: new angle; generate a start frame and send it as the first r2v ref (BN-11 pattern) when this clip is generated.",
-      "image_prompt": "A single cinematic film still, 16:9, real documentary footage look, digital cinema camera with subtle 35mm grain, natural color. Location: a small bare rocky rise above a burning lane in the pine forest of {{ref:Ridge Road Fire}}: grey rock and gravel dusted with ash; dry grass and pines burning on the slopes on both sides and below. It is deep night, pitch dark beyond the firelight: the sky is a black-brown smoke ceiling with no glow of day in it, no daylight, no grey or white sky, no blue, no stars; the only light is the fire, hard flickering orange on faces, rock and ground; embers blow low through the air. MEDIUM CLOSE-UP of Eli: his face is exactly the face in {{ref:Eli}}, kept 1:1; an adult man of 19 in the green pullover hoodie, blue jeans and white lace-up sneakers from that reference, no backpack; down on one knee on the rock, pushing himself up, his face turned toward the left of the frame, his left arm flung out pointing up the slope to the left; red rope burns on his palm; the burning slope behind him. Light grey-black soot smudges on the face and ash dust on the clothes; the skin still clearly visible, never a blackened face. Deep focus, everything sharp (f/8). Only Eli; nobody else. No text, no logos, no watermark, no subtitles. Not a 3D render, not CGI. No daylight, no blue sky. Nobody looks into the lens.",
-      "image_refs": [
-        "Ridge Road Fire",
-        "Eli"
-      ]
+      "type": "STORYBOARD_2X2",
+      "note": "fk-storyboard Rule 69: 2x2 storyboard sheet (4 moments in time), panel 1 cropped as opening frame",
+      "image_prompt": "A film storyboard sheet, 16:9, made of FOUR photographic panels in a 2 by 2 grid, separated by thin straight black gutters; each panel is itself a 16:9 frame; no text, no numbers, no arrows, no captions anywhere. All four panels are cinematic feature-film stills of ONE continuous 4-second revelation on the bare rocky rise in {{media:2983af59-909e-4865-9655-b4d61d37f337|Ridge Road Fire.jpg}}: medium two-shot of Eli and Nora; roaring fire around them, smoke overhead, blowing embers.\nEli: face {{media:fc0b6845-5516-41ee-9715-9119b022618f|Eli.jpg}}, wearing olive hoodie, tan pack {{media:fc17cb6b-fda6-4547-b1b2-5ba9e3270340|Eli Pack.jpg}}; eyes blazing with ecstatic realization.\nNora: face {{media:9267d26c-e7bd-4214-a310-ecd08b489673|Nora.jpg}}, yellow fire gear and scorched helmet {{media:85d5446c-43f9-438e-98d4-23d1e9baacf8|Nora Body Fire.jpg}}, {{media:5538b7ba-ffec-431d-ac5e-5789ef22e4db|HALE Helmet Goggles.jpg}}.\nTOP-LEFT PANEL, second 0: Medium shot: Eli watches the mare in the distance; his eyes widen with sudden electric revelation; his right arm flings out pointing sharply up the dark slope to the upper left.\nTOP-RIGHT PANEL, second 1: Same shot: Eli's mouth opens wide, shouting with triumphant adrenaline: 'She's heading for the burned side!'; his finger locked on the distant ridge.\nBOTTOM-LEFT PANEL, second 3: Medium close-up: Nora snaps her head around, her eyes following Eli's outstretched pointing arm up into the darkness above the smoke.\nBOTTOM-RIGHT PANEL, second 4: Nora's eyes widen with stunned recognition as she sees the safe black ridge: the mare has found the one path through the fire that humans could not see; Nora grips Eli's shoulder, ready to run.\nCinematic feature-film look: ARRI Alexa, Cooke S4 primes, fine 35mm grain, deep focus (f/8), motivated amber firelight, electric human epiphany, soot on faces. Exactly two people; no horse (mare is off-frame uphill). No text, no logos, no watermark. Not CGI.",
+      "panels_summary": "0s: Eli points sharply up dark slope -> 1s: Shouts 'She's heading for the burned side!' -> 3s: Nora snaps head around following his arm -> 4s: Nora sees the safe black ridge, gripped with hope ready to run"
     },
     "camera": {
       "viewpoint": "third-person cinematic camera; the camera itself is never seen",
@@ -5689,8 +5746,20 @@
       "No camera rig, no film crew, no filming equipment.",
       "Smoke is ragged and torn, streaming with the wind, never round puffy clumps, never a white haze filling the frame; no fire tornado.",
       "Only Eli speaks and only his mouth moves.",
-      "Spoken words in this clip: 7."
-    ]
+      "Spoken words in this clip: 7.",
+      "The video is full-frame shots only: never a grid, never panels, never split screen, never black dividing lines."
+    ],
+    "storyboard": {
+      "sheet_ref": "LS-07 Storyboard",
+      "p1_ref": "LS-07 P1",
+      "milestones": [
+        0,
+        1,
+        3,
+        4
+      ],
+      "instruction": "TIME STORYBOARD (CRITICAL): the reference image {{ref:LS-07 Storyboard}} is a STORYBOARD OF FOUR MOMENTS IN TIME from this one clip, NOT a single frame and NOT a layout to draw. Read it left to right, top to bottom: top-left = second 0, top-right = second 1, bottom-left = second 3, bottom-right = second 4. Use it only as the plan for how the action and the camera unfold; the video is full-frame shots only, never a grid, never split into panels, never black gutters."
+    }
   },
   {
     "clip_id": "TR-01",

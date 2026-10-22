@@ -90,6 +90,19 @@ python skills/fk-storyboard/scripts/crop_panel.py "<sheet>_clean.jpg" --panel 1 
 
 Upload cả `<sheet>_clean.jpg` và `<clip>_p1.jpg` (`POST /api/flow/upload-image`), tạo hai entity `location`: `<CLIP> Storyboard` và `<CLIP> P1`, link vào project. Mở `<clip>_p1.jpg` xem viền: không được còn vạch đen.
 
+### Bước 3.5 — Đọc thể ảnh Storyboard thực tế & tinh chỉnh Video Prompt (Visual Audit of Storyboard Sheet — BẮT BUỘC, User Lock 22/10/2026)
+
+Sau khi có ảnh storyboard sạch (và cắt panel 1 làm Frame 0), BẮT BUỘC mở ảnh lên để quan sát và phân tích thể ảnh thực tế của 4 panel:
+
+1. **Panel 1 (Top-Left, mốc 0s)**: Kiểm tra cỡ cảnh thực tế AI đã vẽ (Close-up, Medium, Wide...), hướng nhìn của nhân vật, bố cục và ánh sáng. Đây là Frame 0 mở đầu video.
+2. **Panel 2 (Top-Right, mốc t2), Panel 3 (Bottom-Left, mốc t3), Panel 4 (Bottom-Right, mốc t4)**: Đọc chính xác góc máy, bố cục và hành động thực tế mà AI đã vẽ ra ở các mốc thời gian (ví dụ: máy tĩnh, dolly tiến lại gần, lia sang phải, hay cắt góc sang cận cảnh).
+3. **Điều chỉnh Video Prompt theo thể ảnh thực tế**:
+   - Khớp `camera.shot_size` với Panel 1 (`OPENING FRAME = {{ref:<CLIP> P1}}: ...`).
+   - Khớp `camera.movement` và nhịp chuyển cảnh trong `timeline_action`: Nếu thực tế giữa panel 1 và 2 là giữ nguyên góc chỉ đổi tư thế ➔ ghi `The camera holds still` hoặc `subtle slow drift`. Nếu panel 2 là góc nhìn khác hẳn ➔ ghi rõ cú cắt cảnh hoặc dolly/pan tương ứng.
+   - Khớp `negative_constraints`: Ghi đúng số lần cắt và mốc giây dựa trên các panel thực tế.
+   - Trạng thái cuối ở mốc kết thúc (giây cuối) phải mô tả đúng tư thế/vị trí xuất hiện ở Panel 4 (Bottom-Right).
+4. **CẤM TUYỆT ĐỐI**: Không được lấy nguyên video prompt viết sẵn từ trước mà không đọc ảnh storyboard thực tế vừa sinh! Storyboard là bằng chứng thị giác trực quan, prompt video phải được tinh chỉnh để phục vụ và đồng bộ với bằng chứng đó.
+
 ### Bước 4 — Prompt video r2v
 
 Theo khung JSON của `/fk-film` (`prompt-lock.md` khung A), thêm:

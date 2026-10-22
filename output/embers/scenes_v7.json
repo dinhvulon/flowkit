@@ -2015,7 +2015,7 @@
     ],
     "flow_account": "dinhvulon16",
     "flow_project_id": "3b6be3e0-4a39-46e8-bf4e-aa727e449cd5",
-    "start_frame_mode": "START FRAME + Omni first-frame i2v, no refs (user 2026-10-20). Frame: user chose the EDIT version (halter removed, goggles added) images/sf_bn04_final_clean.jpg, upload eb974e03",
+    "start_frame_mode": "START FRAME + Omni first-frame i2v, no refs. Clean frame without rope on shoulder (upload 9d008883)",
     "created_note": "2026-10-19: scene created from prompts_v7.json (chips resolved to named refs); handoff lessons not applied yet",
     "prompt_note": "2026-10-20: prompt rewritten from script_v7 BN-04 (inside barn, Eli pinned, profile two-shot, loose mare) with handoff lessons; old DB prompt (night exterior, halter, Eli standing) replaced",
     "video_media_id": "c451b4b6-a6f6-4452-9a8b-eacd04aab42b",
@@ -2036,7 +2036,15 @@
     "file_1080_clean": "1080/scene_059_BN-04_7f0a63af_1080p_clean.mp4",
     "upscale_note": "2026-10-20 ~22:40-22:52 UPSCALE_VIDEO on dinhvulon16 (project 3b6be3e0), 1920x1080, logo removed with tools/remove_watermark_from_link.py",
     "video_file_720_deleted": "scenes/scene_059_BN-04_7f0a63af_v3.mp4",
-    "upscaled": true
+    "upscaled": true,
+    "prompt_note_clean_rope": "2026-10-22: removed coiled rope from Eli shoulder in image_prompt and video_prompt per user request",
+    "horizontal_image_media_id": "9d008883-4f58-4bc9-9b60-12d29bc54eaa",
+    "start_frame_clean_file": "output/embers/images/bn04_start_frame_clean.jpg",
+    "horizontal_video_media_id": "6aa2979d-efc6-4525-b466-fd53d1f01f59",
+    "video_file_720": "output/embers/scenes/scene_059_BN-04_7f0a63af_v4.mp4",
+    "v4_note": "2026-10-22: regen BN-04 with clean start frame (no rope on Eli shoulder), video 720p downloaded",
+    "horizontal_upscale_media_id": "6aa2979d-efc6-4525-b466-fd53d1f01f59",
+    "upscale_v4_note": "2026-10-22: upscaled 1080p v4 clean, no rope on Eli shoulder"
   },
   "BN-05": {
     "scene_id": "ba7aec0c-b213-497d-bd42-bd86a17ff52b",
@@ -2189,32 +2197,44 @@
     "ghost_note": "2026-10-21 REGENERATE_VIDEO 9e96b8af stuck 10 min, marked FAILED; retry 8814ba43 done in 75 s",
     "upscaled": true,
     "upscale_media_id": "e777799d-ce4c-40d4-9414-33f1ebdf5f63",
-    "file_1080_clean": "1080/scene_063b_BN-08b_746c11c5_10s_1080p_clean.mp4",
+    "file_1080_clean": null,
     "redo_note": "2026-10-21: user merged the close shot (legs out) into BN-08b; 6s, wide 0-4s + hard cut to floor CU 4-6s; v2 (4s) kept as superseded",
     "v2_video_media_id": "e777799d-ce4c-40d4-9414-33f1ebdf5f63",
-    "v2_file_1080_clean": "1080/scene_063b_BN-08b_746c11c5_1080p_clean.mp4"
+    "v2_file_1080_clean": "1080/scene_063b_BN-08b_746c11c5_1080p_clean.mp4",
+    "deleted_by_user": true
   },
   "BN-09": {
     "scene_id": "49c328ff-3782-4d1d-9932-f687418f7cc6",
     "act": "",
     "duration": 6,
     "video_refs": [
+      "BN-05 Last",
       "Nora",
       "Nora Body Fire",
-      "HALE Helmet",
+      "HALE Helmet Goggles",
       "Eli",
-      "Eli Pack",
-      "Juniper",
-      "Keller Barn Interior"
+      "Eli Pack"
     ],
     "flow_account": "dinhvulon16",
     "flow_project_id": "3b6be3e0-4a39-46e8-bf4e-aa727e449cd5",
-    "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)",
+    "start_frame_mode": "Rule 65 Type 1: opening frame = BN-05 Last frame (media 7bde6fd9)",
     "created_note": "2026-10-19: scene created from prompts_v7.json (chips resolved to named refs); handoff lessons not applied yet",
     "v1_note": "v1 2026-10-20: request 95b2e36d op a02d831d media ada9f92f ~7.8 (Eli's backpack missing, halter already on, Nora points instead of holding out her hand; Whisper 100% words, TIMING flag first line 0.0-2.1s); also served as the account-health control after BN-08 ghosts (account OK). File deleted; redo with the start-frame method.",
     "leg_note": "2026-10-21 #21 leg lock: Eli left leg hurt, weight on right. DB video_prompt PATCHed (user approved).",
     "start_frame_note_21": "2026-10-21 v4 frame 9e7a66e7 (images/sf_bn09_v4.jpg), refs BN-08b Last + Nora/Body/Helmet/Eli; ~7.5: halter missing",
-    "prompt_note": "2026-10-21: start frame v6 approved; video prompt matched to v6; cinematic style block"
+    "prompt_note": "2026-10-21: start frame v6 approved; video prompt matched to v6; cinematic style block",
+    "horizontal_image_media_id": "7bde6fd9-469d-4977-ab4e-84a2aaba0efe",
+    "storyboard_media_id": "78d3660c-922e-4ebc-9d24-df540f22266d",
+    "note_v3": "2026-10-22: storyboard v3 generated anchored 100% to BN-08b Last frame; panel 1 cropped as BN-09 P1",
+    "note_v4": "2026-10-22: storyboard v4 anchored 100% to BN-08b Last frame (aisle layout, strictly no open stall door); panel 1 cropped as BN-09 P1",
+    "start_frame_file": "output/embers/images/bn05_last_frame.jpg",
+    "bn05_connection_note": "2026-10-22: BN-09 anchored 100% to BN-05 end frame per user direction",
+    "video_media_id": "f37885bd-40fd-4538-ab54-810942e70a0e",
+    "video_file": "output/embers/scenes/scene_063_BN-09_49c328ff.mp4",
+    "status": "1080P_CLEAN",
+    "horizontal_upscale_media_id": "f37885bd-40fd-4538-ab54-810942e70a0e",
+    "file_1080_clean": "1080/scene_064_BN-09_49c328ff_1080p_clean.mp4",
+    "upscale_v5_note": "2026-10-22: upscaled 1080p v5 clean, anchored 100% to BN-05 end frame, horse untied, halter on hook"
   },
   "BN-11": {
     "scene_id": "19fa5343-3651-4712-b7e4-31b4797585be",
@@ -2236,7 +2256,8 @@
     "start_frame_media_id": "3a2a019a-216c-4fce-a0ea-b479a2cb71ee",
     "video_media_id": "0ecd5ba2-a510-4e41-961c-e9a9a5135853",
     "approved_file": "scenes/scene_065_BN-11_19fa5343_hg2.mp4",
-    "approved": "2026-10-21"
+    "approved": "2026-10-21",
+    "file_1080_clean": "1080/scene_065_BN-11_19fa5343_1080p_clean.mp4"
   },
   "BN-12": {
     "scene_id": "717955f2-0209-4b27-88d4-48bd7e97dca5",
@@ -2277,7 +2298,8 @@
     "start_frame_media_id": "8ca5c459-6d9a-4b65-9dfe-e5838ef86a0a",
     "video_media_id": "77f6a2f3-a4d7-4f7a-a9b8-9c7b005755e0",
     "approved_file": "scenes/scene_067_BN-13a_e5937af3_hg2.mp4",
-    "approved": "2026-10-21"
+    "approved": "2026-10-21",
+    "file_1080_clean": "1080/scene_067_BN-13a_e5937af3_1080p_clean.mp4"
   },
   "BN-13b": {
     "scene_id": "f044334e-3245-423a-95db-b4d9acbba415",
@@ -2299,76 +2321,106 @@
     "start_frame_media_id": "4898f516-d70e-44a8-b24f-fc3e0f709358",
     "video_media_id": "a86e5364-4541-410d-833e-6488dcacb03e",
     "approved_file": "scenes/scene_068_BN-13b_f044334e_hg2.mp4",
-    "approved": "2026-10-21"
+    "approved": "2026-10-21",
+    "file_1080_clean": "1080/scene_068_BN-13b_f044334e_1080p_clean.mp4"
   },
   "ES-01": {
     "scene_id": "e9546133-3a10-449c-bd6d-4415b2f117d3",
     "act": "",
     "duration": 6,
     "video_refs": [
+      "ES-01 Start",
       "Nora",
       "Nora Body Fire",
-      "HALE Helmet",
+      "HALE Helmet Goggles",
       "Eli",
-      "Juniper",
-      "Ridge Road"
+      "Juniper Blindfold",
+      "Ridge Road Fire"
     ],
     "flow_account": "dinhvulon16",
     "flow_project_id": "3b6be3e0-4a39-46e8-bf4e-aa727e449cd5",
-    "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)",
+    "start_frame_mode": "Rule 65 Type 2: panel 1 cropped from es01_storyboard_clean.jpg (media 125291f7)",
     "created_note": "2026-10-19: scene created from prompts_v7.json (chips resolved to named refs); handoff lessons not applied yet",
-    "prompt_note": "2026-10-21: rewritten with /fk-film + /fk-storyboard, cinematic material; user approved; DB PATCHed"
+    "prompt_note": "2026-10-21: rewritten with /fk-film + /fk-storyboard, cinematic material; user approved; DB PATCHed",
+    "horizontal_image_media_id": "125291f7-e7f0-411a-91c5-36fe303c9d7d",
+    "start_frame_file": "output/embers/images/es01_p1_clean.jpg",
+    "horizontal_upscale_media_id": "47ca635e-4f3c-4e2d-a080-4981d2682639",
+    "file_1080_clean": "1080/scene_069_ES-01_e9546133_1080p_clean.mp4",
+    "status": "1080P_CLEAN",
+    "upscale_note": "2026-10-22: upscaled 1080p clean, anchored to Panel 1 of storyboard, Nora supporting limping Eli, Juniper blindfolded"
   },
   "ES-02": {
     "scene_id": "019f7e0c-b37b-46da-abe6-4c06e51554da",
     "act": "",
     "duration": 4,
     "video_refs": [
+      "ES-02 Start",
       "Nora",
       "Nora Body Fire",
-      "HALE Helmet",
+      "HALE Helmet Goggles",
       "Eli",
-      "Juniper",
-      "Ridge Road"
+      "Juniper Blindfold",
+      "Ridge Road Fire"
     ],
     "flow_account": "dinhvulon16",
     "flow_project_id": "3b6be3e0-4a39-46e8-bf4e-aa727e449cd5",
-    "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)",
+    "start_frame_mode": "Rule 65 Type 2: panel 1 cropped from es02_storyboard_v3_clean.jpg (media 7374b92b)",
     "created_note": "2026-10-19: scene created from prompts_v7.json (chips resolved to named refs); handoff lessons not applied yet",
-    "prompt_note": "2026-10-21: rewritten with /fk-film + /fk-storyboard, cinematic material; user approved; DB PATCHed"
+    "prompt_note": "2026-10-21: rewritten with /fk-film + /fk-storyboard, cinematic material; user approved; DB PATCHed",
+    "horizontal_image_media_id": "7374b92b-3770-4491-99d1-9dbb54dd76f4",
+    "start_frame_file": "output/embers/images/es02_p1_clean.jpg",
+    "horizontal_upscale_media_id": "589eb9d6-2413-42a8-898b-c19a468a8afa",
+    "file_1080_clean": "1080/scene_070_ES-02_019f7e0c_1080p_clean.mp4",
+    "status": "1080P_CLEAN",
+    "upscale_note": "2026-10-22: upscaled 1080p clean, static wide shot, burning gateway, mare balking"
   },
   "ES-03": {
     "scene_id": "cd9776b4-585a-4c22-9b40-38c201f63b09",
     "act": "",
     "duration": 6,
     "video_refs": [
+      "ES-03 P1",
+      "ES-03 Storyboard",
       "Nora",
       "Nora Body Fire",
-      "HALE Helmet",
+      "HALE Helmet Goggles",
       "Eli",
-      "Juniper",
-      "Ridge Road"
+      "Juniper Blindfold"
     ],
     "flow_account": "dinhvulon16",
     "flow_project_id": "3b6be3e0-4a39-46e8-bf4e-aa727e449cd5",
-    "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)",
+    "start_frame_mode": "Rule 65 Type 2: panel 1 cropped from es03 storyboard (media 97fc9621)",
     "created_note": "2026-10-19: scene created from prompts_v7.json (chips resolved to named refs); handoff lessons not applied yet",
     "prompt_note": "2026-10-21: rewritten with /fk-film + /fk-storyboard, cinematic material; user approved; DB PATCHed",
-    "pending_note": "needs entities ['ES-03 P1', 'ES-03 Storyboard'] (storyboard) before generation"
+    "pending_note": "needs entities ['ES-03 P1', 'ES-03 Storyboard'] (storyboard) before generation",
+    "horizontal_image_media_id": "97fc9621-095f-4db0-9995-4ad88e75def6",
+    "start_frame_file": "output/embers/images/es03_p1_clean.jpg",
+    "horizontal_upscale_media_id": "04d4609c-e69c-40d3-955c-5188066515c0",
+    "file_1080_clean": "1080/scene_071_ES-03_cd9776b4_1080p_clean.mp4",
+    "status": "1080P_CLEAN",
+    "upscale_note": "2026-10-22: upscaled 1080p clean, Nora commands, leads blindfolded mare and Eli through flaming gate"
   },
   "ES-04": {
     "scene_id": "8a05f7e2-872e-4fb8-80e4-4cec3ac0b805",
     "act": "",
     "duration": 4,
     "video_refs": [
+      "ES-04 Start",
       "Eli",
-      "Ridge Road"
+      "Juniper Blindfold",
+      "Ridge Road Fire"
     ],
     "flow_account": "dinhvulon16",
     "flow_project_id": "3b6be3e0-4a39-46e8-bf4e-aa727e449cd5",
-    "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)",
+    "start_frame_mode": "Rule 65 Type 2: panel 1 mirrored from es04 storyboard (media 621b26b8)",
     "created_note": "2026-10-19: scene created from prompts_v7.json (chips resolved to named refs); handoff lessons not applied yet",
-    "prompt_note": "2026-10-21: rewritten with /fk-film + /fk-storyboard, cinematic material; user approved; DB PATCHed"
+    "prompt_note": "2026-10-21: rewritten with /fk-film + /fk-storyboard, cinematic material; user approved; DB PATCHed",
+    "horizontal_image_media_id": "621b26b8-7a22-4cad-af93-05e94ac8f7f7",
+    "start_frame_file": "output/embers/images/es04_p1_mirror_clean.jpg",
+    "horizontal_upscale_media_id": "16e6c443-9620-434d-a420-d6980482ce15",
+    "file_1080_clean": "1080/scene_072_ES-04_8a05f7e2_1080p_clean.mp4",
+    "status": "1080P_CLEAN",
+    "upscale_note": "2026-10-22: upscaled 1080p clean, close-up profile Eli coughing, holding on to lead rope"
   },
   "ES-05": {
     "scene_id": "522f7b24-3188-4dbd-a595-a6ba114bf2dd",
@@ -2471,17 +2523,24 @@
     "act": "",
     "duration": 8,
     "video_refs": [
+      "LS-01 Start",
       "Nora",
       "Nora Body Fire",
       "Eli",
-      "Juniper",
-      "Ridge Road"
+      "Eli Pack",
+      "Juniper Blindfold"
     ],
     "flow_account": "dinhvulon16",
     "flow_project_id": "3b6be3e0-4a39-46e8-bf4e-aa727e449cd5",
-    "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)",
+    "start_frame_mode": "fk-storyboard 2x2 sheet (Rule 69)",
     "created_note": "2026-10-19: scene created from prompts_v7.json (chips resolved to named refs); handoff lessons not applied yet",
-    "prompt_note": "2026-10-21: rewritten with /fk-film + /fk-storyboard, cinematic material; DB PATCHed (user: patch all remaining)"
+    "prompt_note": "2026-10-22: upgraded to /fk-storyboard 2x2 standard (Rule 69)",
+    "horizontal_image_media_id": "2670736b-1bb2-4993-b06b-4576337109a4",
+    "start_frame_file": "output/embers/images/scene_074_LS-01_clean.jpg",
+    "horizontal_upscale_media_id": "094e0241-ba83-4af0-88af-962f7c178bce",
+    "file_1080_clean": "1080/scene_074_LS-01_063eed0f_1080p_clean.mp4",
+    "status": "1080P_CLEAN",
+    "upscale_note": "2026-10-22: upscaled 1080p clean from Storyboard v2, perfect 8s crane rise"
   },
   "LS-01b": {
     "scene_id": "e996ada6-2279-4945-8222-3211272ee4e4",
@@ -2493,9 +2552,9 @@
     ],
     "flow_account": "dinhvulon16",
     "flow_project_id": "3b6be3e0-4a39-46e8-bf4e-aa727e449cd5",
-    "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)",
+    "start_frame_mode": "fk-storyboard 2x2 sheet (Rule 69)",
     "created_note": "2026-10-19: scene created from prompts_v7.json (chips resolved to named refs); handoff lessons not applied yet",
-    "prompt_note": "2026-10-21: rewritten with /fk-film + /fk-storyboard, cinematic material; DB PATCHed (user: patch all remaining)"
+    "prompt_note": "2026-10-22: upgraded to /fk-storyboard 2x2 standard (Rule 69)"
   },
   "LS-02": {
     "scene_id": "ea1dcbff-a83a-4b76-a65e-fefc1aeb0962",
@@ -2509,9 +2568,9 @@
     ],
     "flow_account": "dinhvulon16",
     "flow_project_id": "3b6be3e0-4a39-46e8-bf4e-aa727e449cd5",
-    "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)",
+    "start_frame_mode": "fk-storyboard 2x2 sheet (Rule 69)",
     "created_note": "2026-10-19: scene created from prompts_v7.json (chips resolved to named refs); handoff lessons not applied yet",
-    "prompt_note": "2026-10-21: rewritten with /fk-film + /fk-storyboard, cinematic material; DB PATCHed (user: patch all remaining)"
+    "prompt_note": "2026-10-22: upgraded to /fk-storyboard 2x2 standard (Rule 69)"
   },
   "LS-03": {
     "scene_id": "8edf6e5e-e51b-4c5c-929e-b04decac4e19",
@@ -2524,9 +2583,9 @@
     ],
     "flow_account": "dinhvulon16",
     "flow_project_id": "3b6be3e0-4a39-46e8-bf4e-aa727e449cd5",
-    "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)",
+    "start_frame_mode": "fk-storyboard 2x2 sheet (Rule 69)",
     "created_note": "2026-10-19: scene created from prompts_v7.json (chips resolved to named refs); handoff lessons not applied yet",
-    "prompt_note": "2026-10-21: rewritten with /fk-film + /fk-storyboard, cinematic material; DB PATCHed (user: patch all remaining)"
+    "prompt_note": "2026-10-22: upgraded to /fk-storyboard 2x2 standard (Rule 69)"
   },
   "LS-04": {
     "scene_id": "688433d8-5d9e-4b42-9467-6ef8407ca07f",
@@ -2540,9 +2599,9 @@
     ],
     "flow_account": "dinhvulon16",
     "flow_project_id": "3b6be3e0-4a39-46e8-bf4e-aa727e449cd5",
-    "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)",
+    "start_frame_mode": "fk-storyboard 2x2 sheet (Rule 69)",
     "created_note": "2026-10-19: scene created from prompts_v7.json (chips resolved to named refs); handoff lessons not applied yet",
-    "prompt_note": "2026-10-21: rewritten with /fk-film + /fk-storyboard, cinematic material; DB PATCHed (user: patch all remaining)"
+    "prompt_note": "2026-10-22: upgraded to /fk-storyboard 2x2 standard (Rule 69)"
   },
   "LS-05a": {
     "scene_id": "06e4334a-78e4-4dba-b9b1-5e08415aa413",
@@ -2555,9 +2614,9 @@
     ],
     "flow_account": "dinhvulon16",
     "flow_project_id": "3b6be3e0-4a39-46e8-bf4e-aa727e449cd5",
-    "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)",
+    "start_frame_mode": "fk-storyboard 2x2 sheet (Rule 69)",
     "created_note": "2026-10-19: scene created from prompts_v7.json (chips resolved to named refs); handoff lessons not applied yet",
-    "prompt_note": "2026-10-21: rewritten with /fk-film + /fk-storyboard, cinematic material; DB PATCHed (user: patch all remaining)"
+    "prompt_note": "2026-10-22: upgraded to /fk-storyboard 2x2 standard (Rule 69)"
   },
   "LS-05b": {
     "scene_id": "132a93aa-a4f2-459a-8f9f-a888504df2c2",
@@ -2570,7 +2629,7 @@
     ],
     "flow_account": "dinhvulon16",
     "flow_project_id": "3b6be3e0-4a39-46e8-bf4e-aa727e449cd5",
-    "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)",
+    "start_frame_mode": "Rule 65 Type 1: continuous action (LS-05a Last Frame)",
     "created_note": "2026-10-19: scene created from prompts_v7.json (chips resolved to named refs); handoff lessons not applied yet",
     "prompt_note": "2026-10-21: rewritten with /fk-film + /fk-storyboard, cinematic material; DB PATCHed (user: patch all remaining)"
   },
@@ -2584,9 +2643,9 @@
     ],
     "flow_account": "dinhvulon16",
     "flow_project_id": "3b6be3e0-4a39-46e8-bf4e-aa727e449cd5",
-    "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)",
+    "start_frame_mode": "fk-storyboard 2x2 sheet (Rule 69)",
     "created_note": "2026-10-19: scene created from prompts_v7.json (chips resolved to named refs); handoff lessons not applied yet",
-    "prompt_note": "2026-10-21: rewritten with /fk-film + /fk-storyboard, cinematic material; DB PATCHed (user: patch all remaining)"
+    "prompt_note": "2026-10-22: upgraded to /fk-storyboard 2x2 standard (Rule 69)"
   },
   "LS-07": {
     "scene_id": "3cec72f4-f271-42a0-9fe7-19fac90e341f",
@@ -2598,9 +2657,9 @@
     ],
     "flow_account": "dinhvulon16",
     "flow_project_id": "3b6be3e0-4a39-46e8-bf4e-aa727e449cd5",
-    "start_frame_mode": "NONE (user 2026-10-19: r2v refs only, no start frame)",
+    "start_frame_mode": "fk-storyboard 2x2 sheet (Rule 69)",
     "created_note": "2026-10-19: scene created from prompts_v7.json (chips resolved to named refs); handoff lessons not applied yet",
-    "prompt_note": "2026-10-21: rewritten with /fk-film + /fk-storyboard, cinematic material; DB PATCHed (user: patch all remaining)"
+    "prompt_note": "2026-10-22: upgraded to /fk-storyboard 2x2 standard (Rule 69)"
   },
   "TR-01": {
     "scene_id": "6fb760ac-9b9c-4c73-86e8-8b29e69d1079",

@@ -156,6 +156,7 @@ Thứ tự khóa (không bỏ khóa bắt buộc):
 
 | 46 | **THOẠI KHÔNG NÓI CHUYỆN TRẢ TIỀN / MUA BÁN (Bài học 100):** nhân vật trẻ nói với người khác về trả tiền/mua/bán ("buy her back… forty dollars", "Please, I can pay!") bị Flow chặn im lặng (ghost op) dù đã thêm ngữ cảnh con vật; bỏ hẳn ý tiền khỏi thoại và subtext, đưa vào `post_vo`/phụ đề nếu cần; ghost 2 lần cùng clip → soát thoại trước, không gửi lại nguyên văn | Bài học 100, EMBERS EL-03 |
 | 50 | **CLIP PHIM CÓ SINH ẢNH → STORYBOARD 2×2 (Rule 69, user lock 22/10/2026):** clip chuyển cảnh (Rule 65 Loại 2) có `start_frame.type = "STORYBOARD"`, khối `storyboard` có câu khóa "STORYBOARD OF FOUR MOMENTS IN TIME", `refs` mở bằng `<CLIP> P1` + `<CLIP> Storyboard`; không có `GENERATE_IMAGE` 1 khung. Mốc panel: 4s 0/1/3/4 · 6s 0/2/4/6 · 8s 0/3/6/8 · 10s 0/3/7/10. Clip liên tục vẫn `PREV_LAST_FRAME` | `/fk-storyboard` |
+| 51 | **ĐỌC THỂ ẢNH STORYBOARD THỰC TẾ TRƯỚC KHI SINH VIDEO (Rule 69 (7), user lock 22/10/2026):** Sau khi có ảnh storyboard 2×2 sạch, BẮT BUỘC đọc và phân tích trực quan 4 panel thực tế (cỡ cảnh, góc máy, vị trí người/vật, nhịp hành động) để ĐIỀU CHỈNH LẠI `video_prompt` (`camera.shot_size`, `camera.movement`, chuyển động máy/vắt cảnh dolly vs cut, `timeline_action`, số cú cắt trong `negative_constraints`) cho khớp 100% với ảnh storyboard thực tế. CẤM dùng prompt video viết sẵn mà không đối chiếu với ảnh storyboard thực tế vừa sinh! | Rule 69 (7), `/fk-storyboard` Bước 3.5 |
 
 
 
