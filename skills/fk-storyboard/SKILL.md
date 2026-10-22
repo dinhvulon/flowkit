@@ -88,46 +88,48 @@ Not a 3D render, not CGI, no watermark, no logos.
 - Sinh qua một scene phụ (`REGENERATE_IMAGE` dùng `image_prompt` của scene) để không đè ảnh của scene chính.
 - Chấm từng panel. Panel 1–3 đúng mà panel 4 sai vẫn dùng được nếu prompt video nhắc lại trạng thái cuối; panel 1 sai thì sinh lại.
 
-### Bước 3 — Cắt panel 1, tẩy logo, upload
+### Bước 3 — Tẩy logo và upload tấm Storyboard (User Lock 22/10/2026: R2V là pure references, BỎ cắt Panel 1 / Start Frame)
+
+> **BỎ YÊU CẦU CẮT PANEL 1 / START FRAME (User Lock 22/10/2026: "chỗ nào yêu cầu start frame thì bỏ đi"):**
+> Chế độ sinh video `GENERATE_VIDEO_REFS` (RPC `MZZa6b` - Omni Flash `abra_r2v`) trong Google Flow hoàn toàn là chế độ **Tham chiếu (Pure References / Ingredients)**, không có tham số Start Frame (`start_image_media_id`). Tấm Storyboard 2x2 tự thân đã là bản thiết kế thời gian (Time Reference) cho cả clip. **TUYỆT ĐỐI BỎ bước cắt Panel 1**: không cần cắt P1 làm Start Frame, không cần entity `<CLIP> P1`.
 
 ```bash
 python tools/remove_watermark_from_image.py "<sheet>.jpg"
 rm "<sheet>.jpg"   # Rule 28: có bản _clean thì xóa ảnh gốc còn logo
-python skills/fk-storyboard/scripts/crop_panel.py "<sheet>_clean.jpg" --panel 1 --out "<clip>_p1.jpg"
 ```
 
-Upload cả `<sheet>_clean.jpg` và `<clip>_p1.jpg` (`POST /api/flow/upload-image`), tạo hai entity `location`: `<CLIP> Storyboard` và `<CLIP> P1`, link vào project. Mở `<clip>_p1.jpg` xem viền: không được còn vạch đen.
+Upload `<sheet>_clean.jpg` (`POST /api/flow/upload-image`), tạo entity `location`: `<CLIP> Storyboard`, link vào project.
 
 ### Bước 3.5 — Đọc thể ảnh Storyboard thực tế & tinh chỉnh Video Prompt (Visual Audit of Storyboard Sheet — BẮT BUỘC, User Lock 22/10/2026)
 
-Sau khi có ảnh storyboard sạch (và cắt panel 1 làm Frame 0), BẮT BUỘC mở ảnh lên để quan sát và phân tích thể ảnh thực tế của 4 panel:
+Sau khi có ảnh storyboard sạch, BẮT BUỘC mở ảnh lên để quan sát và phân tích thể ảnh thực tế của 4 panel:
 
-1. **Panel 1 (Top-Left, mốc 0s)**: Kiểm tra cỡ cảnh thực tế AI đã vẽ (Close-up, Medium, Wide...), hướng nhìn của nhân vật, bố cục và ánh sáng. Đây là Frame 0 mở đầu video.
+1. **Panel 1 (Top-Left, mốc 0s)**: Kiểm tra cỡ cảnh thực tế AI đã vẽ (Close-up, Medium, Wide...), hướng nhìn của nhân vật, bố cục và ánh sáng. Đây là góc mở đầu video.
 2. **Panel 2 (Top-Right, mốc t2), Panel 3 (Bottom-Left, mốc t3), Panel 4 (Bottom-Right, mốc t4)**: Đọc chính xác góc máy, bố cục và hành động thực tế mà AI đã vẽ ra ở các mốc thời gian (ví dụ: máy tĩnh, dolly tiến lại gần, lia sang phải, hay cắt góc sang cận cảnh).
 3. **Điều chỉnh Video Prompt theo thể ảnh thực tế**:
-   - Khớp `camera.shot_size` với Panel 1 (`OPENING FRAME = {{ref:<CLIP> P1}}: ...`).
+   - Khớp `camera.shot_size` mở đầu với Top-Left Panel của Storyboard (`OPENING SHOT (second 0): matching the top-left panel of {{media:<uuid>|<CLIP> Storyboard.jpg}}: ...`).
    - Khớp `camera.movement` và nhịp chuyển cảnh trong `timeline_action`: Nếu thực tế giữa panel 1 và 2 là giữ nguyên góc chỉ đổi tư thế ➔ ghi `The camera holds still` hoặc `subtle slow drift`. Nếu panel 2 là góc nhìn khác hẳn ➔ ghi rõ cú cắt cảnh hoặc dolly/pan tương ứng.
    - Khớp `negative_constraints`: Ghi đúng số lần cắt và mốc giây dựa trên các panel thực tế.
    - Trạng thái cuối ở mốc kết thúc (giây cuối) phải mô tả đúng tư thế/vị trí xuất hiện ở Panel 4 (Bottom-Right).
 4. **CẤM TUYỆT ĐỐI**: Không được lấy nguyên video prompt viết sẵn từ trước mà không đọc ảnh storyboard thực tế vừa sinh! Storyboard là bằng chứng thị giác trực quan, prompt video phải được tinh chỉnh để phục vụ và đồng bộ với bằng chứng đó.
 
-### Bước 4 — Prompt video r2v (Bắt buộc nhắc ảnh Storyboard & P1 bằng chip inline và chỉ thị đọc đúng từng panel — Rule 69 (9))
+### Bước 4 — Prompt video r2v (Nhắc ảnh Storyboard bằng chip inline và chỉ thị đọc đúng từng panel — Rule 69)
 
 Theo khung JSON của `/fk-film` (`prompt-lock.md` khung A), thêm:
 
-- `refs` (≤ 7): `<CLIP> P1`, `<CLIP> Storyboard`, rồi mặt / Body / đạo cụ quan trọng nhất.
+- `refs` (≤ 7): `<CLIP> Storyboard`, rồi mặt / Body / đạo cụ quan trọng nhất (không cần `<CLIP> P1`).
 - BẮT BUỘC resolve mọi `{{ref:...}}` thành inline media chip `{{media:<uuid>|<file>.jpg}}` trước khi lưu DB và gửi Flow (Rule 64).
-- `camera.shot_size` mở bằng `OPENING FRAME = {{media:<uuid>|<CLIP> P1.jpg}} (Panel 1 cropped from {{media:<uuid>|<CLIP> Storyboard.jpg}}): the very first frame is exactly that image: the same camera position, framing, people and places ...`, rồi tả chi tiết góc máy mở đầu theo Panel 1.
-- `start_frame` ghi rõ: `{"type": "OPENING_FRAME_REF", "note": "fk-storyboard (Rule 69): Panel 1 cropped from {{media:<uuid>|<CLIP> Storyboard.jpg}} as opening frame {{media:<uuid>|<CLIP> P1.jpg}}, whole storyboard as time ref."}`.
+- `camera.shot_size` mở bằng `OPENING SHOT (second 0): matching the top-left panel of {{media:<uuid>|<CLIP> Storyboard.jpg}}: ...`, rồi tả chi tiết góc máy mở đầu theo Panel 1.
+- `start_frame` ghi rõ: `{"type": "STORYBOARD", "note": "fk-storyboard (Rule 69): reference image {{media:<uuid>|<CLIP> Storyboard.jpg}} is the time reference for the 4 moments in time; pure r2v, no separate start frame."}`.
 - Khối `storyboard` với câu khóa trỏ trực tiếp vào chip Storyboard:
 
 ```text
 TIME STORYBOARD (CRITICAL): the reference image {{media:<uuid>|<CLIP> Storyboard.jpg}} is a STORYBOARD OF FOUR MOMENTS IN TIME from this one clip, NOT a single frame and NOT a layout to draw. Read it left to right, top to bottom: top-left = second 0 (Panel 1), top-right = second <t2> (Panel 2), bottom-left = second <t3> (Panel 3), bottom-right = second <t4> (Panel 4). Use it only as the plan for how the action and the camera unfold; the video is full-frame shots only, never a grid, never split into panels, never black gutters. <Nhắc lại trạng thái cuối bằng vị trí cụ thể khớp Panel 4.>
 ```
 
-- `timeline_action` đúng các đoạn của bảng bước 1; mỗi đoạn bắt đầu bằng câu đối chiếu panel: `Matching Panel 1 to Panel 2 of {{media:<uuid>|<CLIP> Storyboard.jpg}}: The clip starts exactly on {{media:<uuid>|<CLIP> P1.jpg}} (Top-Left Panel)...`, tiếp theo là `Matching Panel 2 to Panel 3...`, `Matching Panel 3 to Panel 4...`.
+- `timeline_action` đúng các đoạn của bảng bước 1; mỗi đoạn bắt đầu bằng câu đối chiếu panel: `Matching Panel 1 to Panel 2 of {{media:<uuid>|<CLIP> Storyboard.jpg}}: The clip starts matching the top-left panel...`, tiếp theo là `Matching Panel 2 to Panel 3...`, `Matching Panel 3 to Panel 4...`.
 - `negative_constraints` thêm: `The video is full-frame shots only: never a grid, never panels, never split screen, never black dividing lines.` Với mỗi lần cắt, ghi đúng số lần cắt và mốc giây.
-- PATCH `duration` (thiếu thì ra 10s âm thầm), `character_names` = `refs`, `horizontal_image_media_id` = media của P1.
+- PATCH `duration` (thiếu thì ra 10s âm thầm), `character_names` = `refs`, `horizontal_image_media_id` = media của Storyboard.
 - Linter 0 Critical/High → `/fk-review-prompt` → báo cáo → hỏi duyệt sinh.
 
 ### Bước 5 — Sinh và theo dõi

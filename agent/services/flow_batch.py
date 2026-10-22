@@ -598,11 +598,9 @@ def omni_reference_video_request(prompt: str, project_id: str,
         None,
         [None, None, None, None, _client_uuid(), _client_uuid()],
     ]
-    # Slot 7 voices: "kore" -> [["kore"]]; "kore,fenrir" -> [["kore"],["fenrir"]], plus every
-    # {{voice:<id>}} mentioned in the prompt (UI capture 2026-10-19 lists all of them). Default laomedeia.
-    v_ids = [v.strip().lower() for v in str(voice_id or "laomedeia").split(",") if v.strip()]
-    v_ids = list(dict.fromkeys(v_ids + mentioned_voice_ids(prompt)))
-    request.extend([None, [[v] for v in (v_ids or ["laomedeia"])]])
+    # Rule 24: In Omni Flash / Pinhole Reference-to-Video (MZZa6b), Slot 7 is natively pinned to [["laomedeia"]].
+    # Sending other voices or multi-voice triggers Google Flow "RpcError: MZZa6b failed: [3]" (INVALID_ARGUMENT).
+    request.extend([None, [["laomedeia"]]])
     if res == "360p":
         request.extend([None, None, None, [4]])
     return build_envelope(RPC_GEN_VIDEO_REFERENCES, [

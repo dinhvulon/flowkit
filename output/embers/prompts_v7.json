@@ -5150,37 +5150,46 @@
       "LS-02 Storyboard",
       "Nora",
       "Nora Body Fire",
-      "HALE Helmet Goggles",
+      "Eli",
+      "Juniper Blindfold",
       "Ridge Road Fire"
     ],
     "start_frame": {
-      "type": "STORYBOARD_2X2",
-      "note": "fk-storyboard Rule 69: 2x2 storyboard sheet (4 moments in time), panel 1 cropped as opening frame",
-      "image_prompt": "A film storyboard sheet, 16:9, made of FOUR photographic panels in a 2 by 2 grid, separated by thin straight black gutters; each panel is itself a 16:9 frame; no text, no numbers, no arrows, no captions anywhere. All four panels are cinematic feature-film stills of ONE continuous 6-second moment at deep night on the bare rocky rise in {{media:2983af59-909e-4865-9655-b4d61d37f337|Ridge Road Fire.jpg}}: a medium two-shot of Nora and Eli; roaring orange wildfire around them, dark smoke ceiling overhead, blowing embers.\nNora: face exactly as in {{media:9267d26c-e7bd-4214-a310-ecd08b489673|Nora.jpg}}; wearing yellow fire shirt, harness, green fire pants, gloves, scorched yellow helmet and goggles exactly as in {{media:85d5446c-43f9-438e-98d4-23d1e9baacf8|Nora Body Fire.jpg}} and {{media:5538b7ba-ffec-431d-ac5e-5789ef22e4db|HALE Helmet Goggles.jpg}}.\nEli: face exactly as in {{media:fc0b6845-5516-41ee-9715-9119b022618f|Eli.jpg}}; wearing olive green hoodie, blue jeans, white sneakers, tan canvas backpack on back {{media:fc17cb6b-fda6-4547-b1b2-5ba9e3270340|Eli Pack.jpg}}; hurt left leg favoured; holding lead rope of Juniper {{media:2a5cbd53-ddb7-46e7-b420-3a097ff85523|Juniper Blindfold.jpg}} who stands behind him.\nTOP-LEFT PANEL, second 0: Medium shot: Nora supports Eli on the rock; her mouth is wide open yelling urgently at him: 'Can't see the black! Can't run uphill blind!'; her other hand reaches down to her hip web belt grabbing the emergency fire shelter case.\nTOP-RIGHT PANEL, second 2: Same medium shot: Nora yanks hard on the bright red tear-strip of the shelter case; the yellow protective case splits open and the folded silver-foil fire shelter packet slips out into her gloved hands; Nora yells: 'Shelter! Face down!'.\nBOTTOM-LEFT PANEL, second 4: Nora shakes the silver foil shelter open with both hands using its two interior deployment straps; the shiny metallic foil sheet crackles violently and billows wide in the fierce hot wind, reflecting blinding orange firelight.\nBOTTOM-RIGHT PANEL, second 6: Nora lunges forward with the deployed silver shelter tent, thrusting it firmly toward Eli's chest to force him down onto the bare rock; Eli stares in horror at the silver shelter, realizing it is designed for only ONE person.\nCinematic feature-film look: ARRI Alexa, Cooke S4 primes, fine 35mm grain, amber-teal grade, deep focus (f/8), motivated firelight, glowing embers. Exactly two people and one horse. No text, no logos, no watermark. Not CGI.",
-      "panels_summary": "0s: Nora yells 'Can't see the black', reaches for shelter -> 2s: Yanks red tear strip, foil shelter drops out -> 4s: Shakes silver shelter open billowing in wind -> 6s: Thrusts shelter at Eli, Eli realizes it's only for one person"
+      "type": "OPENING_FRAME_REF",
+      "note": "fk-storyboard (Rule 69): Panel 1 cropped from {{media:d9846b0b-9d51-41d6-bfe9-11455aa98a50|LS-02 Storyboard.jpg}} as opening frame {{media:75742c26-0948-419a-8909-80e50c46704b|LS-02 P1.jpg}}, whole storyboard as time ref."
     },
     "camera": {
       "viewpoint": "third-person cinematic camera; the camera itself is never seen",
-      "shot_size": "OPENING FRAME = {{ref:LS-02 Start}}: the very first frame is exactly that image: the same camera position, framing, people and places. A medium shot of Nora from the waist up, facing camera-left toward Eli off frame, the burning slope behind her",
-      "description": "50mm Cooke prime, handheld, close and urgent; one continuous angle.",
+      "shot_size": "OPENING FRAME = {{media:75742c26-0948-419a-8909-80e50c46704b|LS-02 P1.jpg}} (Panel 1 cropped from {{media:d9846b0b-9d51-41d6-bfe9-11455aa98a50|LS-02 Storyboard.jpg}}): the very first frame is exactly that image: the same camera position, framing, people and places. A medium two-shot of Nora and Eli on the bare rocky rise in {{media:2983af59-909e-4865-9655-b4d61d37f337|Ridge Road Fire.jpg}} with Juniper behind them: Nora grips Eli's arm yelling urgently while reaching down to her hip belt.",
+      "description": "50mm Cooke prime, handheld, close and urgent; one continuous unbroken 6-second shot, tracking and slightly widening as Nora deploys the shelter and Eli stumbles back.",
       "continuity": "one continuous unbroken shot from the first frame to the last, no cuts, no fade-in",
       "focus": "deep focus, everything sharp (f/8)"
     },
     "style": "cinematic feature-film look: shot on ARRI Alexa with Cooke S4 prime lenses, fine 35mm film grain, a rich amber-and-teal grade driven by the firelight, deep inky blacks, strong motivated chiaroscuro, thin atmospheric haze catching the light, glowing embers drifting through it; real people, real horse and real fire, not CGI, not a video game",
-    "setting": "Location: exactly the place in {{ref:Ridge Road Fire}}: a small bare rocky rise above the lane, grey rock and gravel dusted with ash; dry grass and pines burning on the slopes on both sides and below. Light: night under the smoke, fully dark: a black-brown smoke ceiling, no daylight anywhere, no stars, no moon; the burning slopes are the only light, hard flickering orange on faces and rock.",
+    "setting": "Location: exactly the place in {{media:2983af59-909e-4865-9655-b4d61d37f337|Ridge Road Fire.jpg}}: a small bare rocky rise above the lane, grey rock and gravel dusted with ash; dry grass and pines burning on the slopes on both sides and below. Light: night under the smoke, fully dark: a black-brown smoke ceiling, no daylight anywhere, no stars, no moon; the burning slopes are the only light, hard flickering orange on faces and rock.",
     "characters": [
       {
         "name": "Nora",
-        "visual_lock": "FACE LOCK: Nora's face is exactly the face in {{ref:Nora}}, kept 1:1. She is an adult woman of 23, a working firefighter. Her build and clothing are exactly as in {{ref:Nora Body Fire}}: the yellow wildland fire shirt, harness straps, green fire pants, gloves; she is wearing her mother's old yellow helmet with the scorched brim exactly as in {{ref:HALE Helmet Goggles}}, the goggles on its front.",
-        "state": "heavy soot on her cheeks and forehead, skin still visible, dried pink retardant splashes on her sleeves, one sleeve scorched; her empty radio pocket on her chest harness. The folded fire shelter in its yellow pouch hangs on her belt at the first frame."
+        "visual_lock": "FACE LOCK: Nora's face is exactly the face in {{media:9267d26c-e7bd-4214-a310-ecd08b489673|Nora.jpg}}, kept 1:1; an adult woman wildland firefighter of 23. Her build, yellow fire shirt, chest harness, yellow leather work gloves, green fire pants, scorched yellow helmet and goggles are exactly as in {{media:85d5446c-43f9-438e-98d4-23d1e9baacf8|Nora Body Fire.jpg}}; strictly female firefighter.",
+        "state": "heavy soot on her cheeks and forehead, skin still visible, dried pink retardant splashes on her sleeves. The yellow fire shelter pouch is mounted on her belt at second 0."
+      },
+      {
+        "name": "Eli",
+        "visual_lock": "FACE LOCK: Eli's face is exactly the face in {{media:fc0b6845-5516-41ee-9715-9119b022618f|Eli.jpg}}, kept 1:1. A 20-year-old young man wearing an olive green pullover hoodie, blue jeans, white sneakers, and a tan canvas backpack on his back.",
+        "state": "soot on his face, panicked, disoriented; holding the lead rope of Juniper."
+      },
+      {
+        "name": "Juniper",
+        "visual_lock": "Juniper is a dappled-grey stock horse with a red bandana tied over its muzzle as an improvised smoke mask exactly as in {{media:2a5cbd53-ddb7-46e7-b420-3a097ff85523|Juniper Blindfold.jpg}}.",
+        "state": "nervous and tense behind Eli on the rocky ground."
       }
     ],
     "timeline_action": {
-      "0-2s": "From the very first frame Nora begins speaking immediately: she yells \"Can't see the black. Can't run uphill blind.\" (no subtitles) as she rips the shelter pouch off her belt with one hard pull.",
-      "2-4s": "She yanks the red tear strip and the folded silver shelter drops out into her hands; Nora yells \"Shelter. Face down.\" (no subtitles).",
-      "4-6s": "She shakes the foil open with both hands by its two inner hand straps, the silver sheet snapping out in the hot wind, and thrusts it toward Eli off frame left: Nora yells \"It fits one.\" (no subtitles)."
+      "0-2s": "Matching Panel 1 to Panel 2 of {{media:d9846b0b-9d51-41d6-bfe9-11455aa98a50|LS-02 Storyboard.jpg}}: The clip starts exactly on {{media:75742c26-0948-419a-8909-80e50c46704b|LS-02 P1.jpg}} (Top-Left Panel). Nora holds Eli's arm and yells urgently: \"Can't see the black. Can't run uphill blind.\" (no subtitles). Her other hand reaches down to her hip belt and grabs the yellow emergency fire shelter pouch.",
+      "2-4s": "Matching Panel 2 to Panel 3 of {{media:d9846b0b-9d51-41d6-bfe9-11455aa98a50|LS-02 Storyboard.jpg}}: Nora yanks the bright red tear-strip, pulling the folded silver foil fire shelter packet out into her gloved hands as she shouts: \"Shelter. Face down.\" (no subtitles). Eli watches in mounting panic.",
+      "4-6s": "Matching Panel 3 to Panel 4 of {{media:d9846b0b-9d51-41d6-bfe9-11455aa98a50|LS-02 Storyboard.jpg}}: Nora vigorously shakes the crinkling silver foil shelter open with both hands; it snaps and billows wide in the fierce wind, flashing orange reflections. Eli stumbles backward onto the rocky ground, and Nora lunges forward in a wide stance, throwing the deployed silver shelter over him and yelling: \"It fits one.\" (no subtitles)."
     },
-    "physical_realism": "A real fire shelter: a folded silver sheet that shakes out into a long tent shape; it crackles and billows in the wind; she holds it by the inner straps exactly as she was trained.",
+    "physical_realism": "A real fire shelter: a folded silver foil sheet that shakes out into a long tent shape; it crackles and billows in the wind; she holds it by the inner straps exactly as she was trained.",
     "speech": {
       "speaker": [
         "Nora"
@@ -5224,22 +5233,12 @@
       "No black borders, no letterbox bars, no bokeh, no blurred background.",
       "No camera rig, no film crew, no filming equipment.",
       "Smoke is ragged and torn, streaming with the wind, never round puffy clumps, never a white haze filling the frame; no fire tornado.",
-      "Only Nora speaks and only her mouth moves.",
+      "Only Nora speaks and only her mouth moves; Eli does not speak.",
       "Exactly one fire shelter.",
       "Spoken words in this clip: 14.",
       "The video is full-frame shots only: never a grid, never panels, never split screen, never black dividing lines."
     ],
-    "storyboard": {
-      "sheet_ref": "LS-02 Storyboard",
-      "p1_ref": "LS-02 P1",
-      "milestones": [
-        0,
-        2,
-        4,
-        6
-      ],
-      "instruction": "TIME STORYBOARD (CRITICAL): the reference image {{ref:LS-02 Storyboard}} is a STORYBOARD OF FOUR MOMENTS IN TIME from this one clip, NOT a single frame and NOT a layout to draw. Read it left to right, top to bottom: top-left = second 0, top-right = second 2, bottom-left = second 4, bottom-right = second 6. Use it only as the plan for how the action and the camera unfold; the video is full-frame shots only, never a grid, never split into panels, never black gutters."
-    }
+    "storyboard": "TIME STORYBOARD (CRITICAL): the reference image {{media:d9846b0b-9d51-41d6-bfe9-11455aa98a50|LS-02 Storyboard.jpg}} is a STORYBOARD OF FOUR MOMENTS IN TIME from this one clip, NOT a single frame and NOT a layout to draw. Read it left to right, top to bottom: top-left = second 0 (Panel 1), top-right = second 2 (Panel 2), bottom-left = second 4 (Panel 3), bottom-right = second 6 (Panel 4). Use it only as the plan for how the action and the camera unfold; the video is full-frame shots only, never a grid, never split into panels, never black gutters. At the final frame Eli is collapsed back onto the rock and Nora lunges forward throwing the shiny silver fire shelter over him, matching the bottom-right panel."
   },
   {
     "clip_id": "LS-03",
@@ -5247,54 +5246,59 @@
     "duration": 8,
     "aspect_ratio": "16:9",
     "refs": [
-      "LS-03 P1",
       "LS-03 Storyboard",
       "Eli",
+      "Nora",
       "Nora Body Fire",
       "HALE Helmet Goggles",
+      "Juniper Blindfold",
       "Ridge Road Fire"
     ],
     "start_frame": {
-      "type": "STORYBOARD_2X2",
-      "note": "fk-storyboard Rule 69: 2x2 storyboard sheet (4 moments in time), panel 1 cropped as opening frame",
-      "image_prompt": "A film storyboard sheet, 16:9, made of FOUR photographic panels in a 2 by 2 grid, separated by thin straight black gutters; each panel is itself a 16:9 frame; no text, no numbers, no arrows, no captions anywhere. All four panels are cinematic feature-film stills of ONE continuous 8-second dramatic confrontation at deep night on the bare rocky rise in {{media:2983af59-909e-4865-9655-b4d61d37f337|Ridge Road Fire.jpg}}: a tight two-shot between Nora and Eli with the silver fire shelter billowing between them, wildfire roaring in background.\nNora: face {{media:9267d26c-e7bd-4214-a310-ecd08b489673|Nora.jpg}}; wearing firefighter gear {{media:85d5446c-43f9-438e-98d4-23d1e9baacf8|Nora Body Fire.jpg}} and helmet {{media:5538b7ba-ffec-431d-ac5e-5789ef22e4db|HALE Helmet Goggles.jpg}}, soot on cheeks, eyes fierce and desperate.\nEli: face {{media:fc0b6845-5516-41ee-9715-9119b022618f|Eli.jpg}}; wearing olive hoodie, tan pack {{media:fc17cb6b-fda6-4547-b1b2-5ba9e3270340|Eli Pack.jpg}}, lead rope in left hand connecting to Juniper {{media:2a5cbd53-ddb7-46e7-b420-3a097ff85523|Juniper Blindfold.jpg}}.\nTOP-LEFT PANEL, second 0: Tight two-shot: Eli violently shoves the edge of the silver foil shelter back toward Nora's chest; his face is twisted with outrage and fear, yelling directly into her face: 'And you?!'.\nTOP-RIGHT PANEL, second 3: Close-up on Nora: wind whipping soot across her face, jaw rigid, eyes blazing with furious maternal authority, yelling back: 'It's one shelter! Mom said keep you alive!'.\nBOTTOM-LEFT PANEL, second 6: Close-up on Eli: eyes wet with tears reflecting orange fire, teeth clenched, shaking his head with fierce refusal; the crinkling silver foil vibrates in the gale between them.\nBOTTOM-RIGHT PANEL, second 8: Medium close-up two-shot: Eli yells with cracking voice: 'That's what Mom told you! Isn't it?!', his body trembling, refusing to get under the shelter while Nora stands exposed to the flames.\nCinematic feature-film look: ARRI Alexa, Cooke S4, fine 35mm grain, deep focus (f/8), amber-teal fire grade, motivated chiaroscuro, intense character performance. Exactly two people and one horse. No text, no logos, no watermark. Not CGI.",
-      "panels_summary": "0s: Eli shoves foil back, yelling 'And you?!' -> 3s: Nora screams 'It's one shelter! Mom said keep you alive!' -> 6s: Eli in tears shaking head in fierce refusal -> 8s: Eli screams 'That's what Mom told you! Isn't it?!'"
+      "type": "STORYBOARD",
+      "note": "Storyboard-anchored r2v: reference image {{media:21a98e3e-b690-4a59-b975-20964ca7a0cd|LS-03 Storyboard.jpg}} is the time reference for the 4 moments in time (0s, 3s, 6s, 8s)."
     },
     "camera": {
       "viewpoint": "third-person cinematic camera; the camera itself is never seen",
-      "shot_size": "OPENING FRAME = {{ref:LS-03 Start}}: the very first frame is exactly that image: the same camera position, framing, people and places. An over-the-shoulder shot from behind Nora's right shoulder and the back of her yellow helmet onto Eli, who faces the camera; the open silver shelter held between them in her hands",
-      "description": "50mm Cooke prime, handheld, locked on Eli's face; Nora stays a dark foreground shape, her face never seen.",
-      "continuity": "one continuous unbroken shot from the first frame to the last, no cuts, no fade-in",
+      "shot_size": "OPENING SHOT (second 0): matching the top-left panel of {{media:21a98e3e-b690-4a59-b975-20964ca7a0cd|LS-03 Storyboard.jpg}}: a tense medium two-shot on the rocky rise at {{media:2983af59-909e-4865-9655-b4d61d37f337|Ridge Road Fire.jpg}}: Eli on the left leaning forward with fierce panic clutching the silver foil fire shelter, Nora on the right in her yellow wildland shirt and helmet holding the shelter, wildfire blazing behind them.",
+      "description": "50mm Cooke prime, handheld and emotionally charged, covering the intense confrontation between Eli and Nora with the crinkling silver foil shelter between them.",
+      "continuity": "one continuous unbroken 8-second cinematic scene, framing shifts organically between the two siblings matching the storyboard milestones.",
       "focus": "deep focus, everything sharp (f/8)"
     },
     "style": "cinematic feature-film look: shot on ARRI Alexa with Cooke S4 prime lenses, fine 35mm film grain, a rich amber-and-teal grade driven by the firelight, deep inky blacks, strong motivated chiaroscuro, thin atmospheric haze catching the light, glowing embers drifting through it; real people, real horse and real fire, not CGI, not a video game",
-    "setting": "Location: exactly the place in {{ref:Ridge Road Fire}}: a small bare rocky rise above the lane, grey rock and gravel dusted with ash; dry grass and pines burning on the slopes on both sides and below. Light: night under the smoke, fully dark: a black-brown smoke ceiling, no daylight anywhere, no stars, no moon; the burning slopes are the only light, hard flickering orange on faces and rock.",
+    "setting": "Location: exactly the place in {{media:2983af59-909e-4865-9655-b4d61d37f337|Ridge Road Fire.jpg}}: a small bare rocky rise above the lane, grey rock and gravel dusted with ash; dry grass and pines burning on the slopes on both sides and below. Light: night under the smoke, fully dark: a black-brown smoke ceiling, no daylight anywhere, no stars, no moon; the burning slopes are the only light, hard flickering orange on faces and rock.",
     "characters": [
       {
         "name": "Eli",
-        "visual_lock": "FACE LOCK: Eli's face is exactly the face in {{ref:Eli}}, kept 1:1. He is an adult man of 19 in the green pullover hoodie, blue jeans and white sneakers exactly as in that reference, the hoodie the same colour as the reference, no backpack.",
-        "state": "his left leg is hurt: he limps on it and favours his right leg; soot and ash on his hoodie and jeans. He stands on the rock facing his sister, the lead rope in his left hand, refusing the shelter."
+        "visual_lock": "FACE LOCK: Eli's face is exactly the face in {{media:fc0b6845-5516-41ee-9715-9119b022618f|Eli.jpg}}, kept 1:1. A 20-year-old young man wearing an olive green pullover hoodie, blue jeans, and a tan canvas backpack with rope on his back.",
+        "state": "soot on his face, eyes wide with panic and furious refusal, tears streaming down his cheeks, gripping the crinkling silver foil shelter."
       },
       {
         "name": "Nora",
-        "visual_lock": "Only her back, right shoulder and the back of her yellow helmet with the scorched brim are in frame, exactly as in {{ref:Nora Body Fire}} and {{ref:HALE Helmet Goggles}}; her face is never in frame.",
-        "state": "holding the open shelter out to him with both hands."
+        "visual_lock": "FACE LOCK: Nora's face is exactly the face in {{media:9267d26c-e7bd-4214-a310-ecd08b489673|Nora.jpg}}, kept 1:1; an adult woman wildland firefighter of 23. Her yellow fire shirt, chest harness, yellow leather work gloves, green fire pants, scorched yellow helmet and goggles are exactly as in {{media:85d5446c-43f9-438e-98d4-23d1e9baacf8|Nora Body Fire.jpg}} and {{media:5538b7ba-ffec-431d-ac5e-5789ef22e4db|HALE Helmet Goggles.jpg}}.",
+        "state": "heavy soot on her cheeks and forehead, jaw set with fierce desperation and authority, clutching the shelter with Eli."
+      },
+      {
+        "name": "Juniper",
+        "visual_lock": "Juniper is a dappled-grey stock horse with a red bandana tied over its muzzle as an improvised smoke mask exactly as in {{media:2a5cbd53-ddb7-46e7-b420-3a097ff85523|Juniper Blindfold.jpg}}.",
+        "state": "standing behind Eli on the rocky ground, nervous in the smoke."
       }
     ],
     "timeline_action": {
-      "0-3s": "From the very first frame Eli begins speaking immediately: he pushes the foil back toward her and yells \"And you?\" (no subtitles); then his mouth stays closed while his sister answers from behind the camera side (her line is added in the edit), her shoulders rising.",
-      "3-6s": "Eli listens, jaw tight, eyes wet, shaking his head slowly; the foil crackles in the wind between them.",
-      "6-8s": "At second 5.5 Eli yells \"That's what Mom told you. Isn't it?\" (no subtitles), his voice cracking at the end."
+      "0-3s": "Matching Panel 1 to Panel 2 of {{media:21a98e3e-b690-4a59-b975-20964ca7a0cd|LS-03 Storyboard.jpg}}: The clip starts exactly on {{media:8d5baebe-e797-4fc9-8a90-140255d8835a|LS-03 P1.jpg}} (Top-Left Panel). Eli shoves the crinkling silver foil shelter back toward Nora's chest and yells fiercely: \"And you?\" (no subtitles). The camera angles tight on Nora's desperate, soot-streaked face (Top-Right Panel) as she shouts back with burning conviction: \"It's one shelter! Mom said keep you alive!\" (no subtitles).",
+      "3-6s": "Matching Panel 2 to Panel 3 of {{media:21a98e3e-b690-4a59-b975-20964ca7a0cd|LS-03 Storyboard.jpg}}: Cut/transition to close-up on Eli (Bottom-Left Panel): real tears stream down his soot-stained cheeks, eyes reflecting orange firelight, jaw trembling in stubborn grief and refusal as he shakes his head; the metallic foil rattles in the gale between them.",
+      "6-8s": "Matching Panel 3 to Panel 4 of {{media:21a98e3e-b690-4a59-b975-20964ca7a0cd|LS-03 Storyboard.jpg}}: Widening back to medium two-shot (Bottom-Right Panel): Eli screams through tears with cracking voice: \"That's what Mom told you. Isn't it?\" (no subtitles), clutching the shelter together with Nora, refusing to save himself while his sister burns."
     },
-    "physical_realism": "The foil is light and wild in the wind; both of them hold it down with their hands so it doesn't fly.",
+    "physical_realism": "The emergency fire shelter is a crinkly, paper-thin reflective aluminum foil tent sheet; it flutters, snaps, and billows violently in the fierce hot wind, casting bright metallic orange highlights.",
     "speech": {
       "speaker": [
         "Eli"
       ],
       "voices": {
-        "Eli": "fenrir"
+        "Eli": "fenrir",
+        "Nora": "kore"
       },
-      "delivery": "shouted over the fire roar: loud and sharp, every word hard and clipped, each short sentence punched out, no pauses, never calm, never slow, never soft; lip-synced, only the speaker's mouth moves; each line ends with (no subtitles)",
+      "delivery": "shouted over the fire roar: loud and sharp, every word hard and clipped, each short sentence punched out, voice cracking with tears; lip-synced; each line ends with (no subtitles)",
       "dialogue": [
         {
           "t": "0-1.5s",
@@ -5310,20 +5314,20 @@
     },
     "post_vo": [
       {
-        "t": "1.5-5s",
+        "t": "1.5-4s",
         "speaker": "Nora",
         "voice": "kore",
-        "line": "Right here, Eli. Same as always. On top of you.",
-        "how": "her back to camera, added in the edit"
+        "line": "It's one shelter. Mom said keep you alive.",
+        "how": "lip-synced in Panel 2"
       }
     ],
     "dramatic_craft": {
       "beat": "Dark night",
       "value_turn": "obedience (+) to the truth (-)",
-      "subtext": "He names the thing she has never said: their mother died doing exactly this.",
-      "prop_and_detail": "The foil held between them like a wall."
+      "subtext": "He names the unspeakable: their mother died doing the exact same thing.",
+      "prop_and_detail": "The foil held between them like a wall of fire."
     },
-    "audio": "fire roar, foil crackling, Eli's two lines; no background music",
+    "audio": "roaring wildfire, wind howling, metallic foil crackling and popping, shouted lines over roar; no background music",
     "negative_constraints": [
       "No subtitles, no captions, no on-frame text, no logos, no watermarks; no readable letters anywhere, including on helmets and vehicles.",
       "ANTI-CGI LOCK: real people, a real horse and real fire, not a 3D render, not a video game, not CGI fire, not cartoon flames, no plastic skin.",
@@ -5333,22 +5337,11 @@
       "No black borders, no letterbox bars, no bokeh, no blurred background.",
       "No camera rig, no film crew, no filming equipment.",
       "Smoke is ragged and torn, streaming with the wind, never round puffy clumps, never a white haze filling the frame; no fire tornado.",
-      "Only Eli's mouth moves; Nora's face is never in frame.",
-      "Eli is silent between second 1.5 and 5.5.",
+      "Exactly one fire shelter.",
       "Spoken words in this clip: 9.",
       "The video is full-frame shots only: never a grid, never panels, never split screen, never black dividing lines."
     ],
-    "storyboard": {
-      "sheet_ref": "LS-03 Storyboard",
-      "p1_ref": "LS-03 P1",
-      "milestones": [
-        0,
-        3,
-        6,
-        8
-      ],
-      "instruction": "TIME STORYBOARD (CRITICAL): the reference image {{ref:LS-03 Storyboard}} is a STORYBOARD OF FOUR MOMENTS IN TIME from this one clip, NOT a single frame and NOT a layout to draw. Read it left to right, top to bottom: top-left = second 0, top-right = second 3, bottom-left = second 6, bottom-right = second 8. Use it only as the plan for how the action and the camera unfold; the video is full-frame shots only, never a grid, never split into panels, never black gutters."
-    }
+    "storyboard": "TIME STORYBOARD (CRITICAL): the reference image {{media:21a98e3e-b690-4a59-b975-20964ca7a0cd|LS-03 Storyboard.jpg}} is a STORYBOARD OF FOUR MOMENTS IN TIME from this one clip, NOT a single frame and NOT a layout to draw. Read it left to right, top to bottom: top-left = second 0 (Panel 1), top-right = second 3 (Panel 2), bottom-left = second 6 (Panel 3), bottom-right = second 8 (Panel 4). Use it only as the plan for how the action and the camera unfold; the video is full-frame shots only, never a grid, never split into panels, never black gutters. At the final frame Eli screams in grief through tears clutching the shelter with Nora, matching the bottom-right panel."
   },
   {
     "clip_id": "LS-04",

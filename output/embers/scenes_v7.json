@@ -2562,41 +2562,70 @@
     "storyboard_media_id": "27bb0346-303c-4a41-a52f-d1ebfb30bd69",
     "start_frame_file": "output/embers/images/ls01b_p1.jpg",
     "storyboard_file": "output/embers/images/ls01b_storyboard_clean.jpg",
-    "video_media_id": "038e4514-dd86-428d-a513-d66e54af9442",
+    "video_media_id": "ba895b56-849b-412e-8d0c-d1c50bd8f583",
     "video_file": "scenes/scene_079_LS-01b_e996ada6.mp4",
     "video_status": "720P_READY_FOR_REVIEW",
-    "approved": false
+    "approved": true,
+    "horizontal_upscale_media_id": "ba895b56-849b-412e-8d0c-d1c50bd8f583",
+    "file_1080_clean": "1080/scene_079_LS-01b_e996ada6_1080p_clean.mp4",
+    "status": "1080P_CLEAN",
+    "upscale_note": "2026-10-22: upscaled 1080p clean from Storyboard v2, macro 100mm, feminine jaw/neck locked"
   },
   "LS-02": {
     "scene_id": "ea1dcbff-a83a-4b76-a65e-fefc1aeb0962",
     "act": "",
     "duration": 6,
     "video_refs": [
+      "LS-02 P1",
+      "LS-02 Storyboard",
       "Nora",
       "Nora Body Fire",
-      "HALE Helmet",
-      "Ridge Road"
+      "Eli",
+      "Juniper Blindfold",
+      "Ridge Road Fire"
     ],
     "flow_account": "dinhvulon16",
     "flow_project_id": "3b6be3e0-4a39-46e8-bf4e-aa727e449cd5",
     "start_frame_mode": "fk-storyboard 2x2 sheet (Rule 69)",
     "created_note": "2026-10-19: scene created from prompts_v7.json (chips resolved to named refs); handoff lessons not applied yet",
-    "prompt_note": "2026-10-22: upgraded to /fk-storyboard 2x2 standard (Rule 69)"
+    "prompt_note": "2026-10-22: upgraded to /fk-storyboard 2x2 standard (Rule 69)",
+    "horizontal_image_media_id": "75742c26-0948-419a-8909-80e50c46704b",
+    "storyboard_media_id": "d9846b0b-9d51-41d6-bfe9-11455aa98a50",
+    "start_frame_file": "output/embers/images/ls02_p1.jpg",
+    "storyboard_file": "output/embers/images/ls02_storyboard_clean.jpg"
   },
   "LS-03": {
     "scene_id": "8edf6e5e-e51b-4c5c-929e-b04decac4e19",
     "act": "",
     "duration": 8,
     "video_refs": [
+      "LS-03 P1",
+      "LS-03 Storyboard",
       "Eli",
+      "Nora",
       "Nora Body Fire",
-      "Ridge Road"
+      "Juniper Blindfold",
+      "Ridge Road Fire"
     ],
     "flow_account": "dinhvulon16",
     "flow_project_id": "3b6be3e0-4a39-46e8-bf4e-aa727e449cd5",
-    "start_frame_mode": "fk-storyboard 2x2 sheet (Rule 69)",
+    "start_frame_mode": "fk-storyboard 2x2 sheet (pure reference, no P1 crop)",
     "created_note": "2026-10-19: scene created from prompts_v7.json (chips resolved to named refs); handoff lessons not applied yet",
-    "prompt_note": "2026-10-22: upgraded to /fk-storyboard 2x2 standard (Rule 69)"
+    "prompt_note": "2026-10-22: upgraded to /fk-storyboard 2x2 standard (Rule 69)",
+    "horizontal_image_media_id": "21a98e3e-b690-4a59-b975-20964ca7a0cd",
+    "storyboard_media_id": "21a98e3e-b690-4a59-b975-20964ca7a0cd",
+    "start_frame_file": "output/embers/images/ls03_p1.jpg",
+    "storyboard_file": "output/embers/images/ls03_storyboard_clean.jpg",
+    "character_names": [
+      "LS-03 Storyboard",
+      "Eli",
+      "Nora",
+      "Nora Body Fire",
+      "HALE Helmet Goggles",
+      "Juniper Blindfold",
+      "Ridge Road Fire"
+    ],
+    "p1_media_id": null
   },
   "LS-04": {
     "scene_id": "688433d8-5d9e-4b42-9467-6ef8407ca07f",
