@@ -42,7 +42,7 @@ Phim giữ người xem nhờ 3 thứ: **nhân vật có muốn và cần mâu t
 | Gọi tên là hiện ra | Model không hiểu phủ định: không gọi tên vật / thú / lửa / thiết bị mà mình không muốn thấy, kể cả trong thoại và audio | Bài 73, 77, 99 |
 | Lửa, khói, chất liệu | `35mm film, cinematic documentary realism`; không CGI, không lửa hoạt hình, không khói thở / hơi nước trắng, không god rays; nguồn sáng ghi rõ chỗ; sinh vật da thật không bóng nhựa | Rule 57, 59, 61, 62, Bài 73, 75 |
 | Ánh sáng & người | Ánh sáng tự nhiên, chống glamour (không beauty filter, không tạo dáng người mẫu); deep focus khi cần thấy bối cảnh | Rule 61 (1)(2), 62 (3) |
-| Start Frame | Clip nối tiếp trực tiếp (cùng địa điểm, khoảnh khắc, góc máy, cỡ cảnh) → `PREV_LAST_FRAME`; chuyển cảnh → `GENERATE_IMAGE` có `source_media_id`, tẩy logo, user duyệt. **EMBERS:** refs-only r2v, không start frame (memory 2026-10-18) | Rule 27, 28, 63, 65 |
+| Start Frame | Clip nối tiếp trực tiếp (cùng địa điểm, khoảnh khắc, góc máy, cỡ cảnh) → `PREV_LAST_FRAME`; chuyển cảnh → storyboard 2×2 theo `/fk-storyboard` (Rule 69, bắt buộc từ 22/10/2026), panel 1 làm khung mở đầu, tẩy logo, user duyệt. Không sinh start frame đơn lẻ | Rule 27, 28, 63, 65 |
 | Chuyển cảnh | Cắt thẳng, match on action, J-cut / L-cut theo `/fk-cinematic-transitions`; không crossfade làm nhạt nhịp trừ khi kịch bản chủ đích | `transitions.md` (phần phim), Rule 44 |
 | Chữ trên hình | Không viết vào prompt (`negative_constraints` cấm chữ); title / phụ đề chèn hậu kỳ | `post-and-publish.md` |
 | Cổng duyệt | Hỏi trước **mỗi** bước sinh; dừng sau mỗi bước cho user duyệt; lỗi thì đề xuất, không tự sinh lại. Clip lỗi nhìn thấy được → sinh lại, không "cắt khi dựng" | Rule 29, memory "Regen, never trim" |
@@ -67,7 +67,7 @@ Mỗi bước: đọc reference ghi kèm **trước khi** làm. Bước có ⛔ 
 | 5.5 | **Cổng QC** (bắt buộc, 100% prompt): 4 bộ kiểm §QC dưới → checklist B → `python tools/lint_prompt.py --file …` → `/fk-review-prompt` (đọc lại toàn bộ, mục D) | §QC dưới, `prompt-lock.md` mục D | prompt đã viết lại + báo cáo tự kiểm |
 | 6 | **Dựng dự án FlowKit**: pre-flight, flush PENDING (Rule 21), project + material + entities, video, scenes, PATCH `duration` + `narrator_text` | `flowkit-pipeline.md` §2–3 | project / video / scene ids |
 | 7 | **Refs**: mặt, Body đã mặc đồ cho từng trạng thái trang phục, sinh vật, bối cảnh — Turnaround Sheet 16:9 (Rule 58), xóa logo, upload lại ⛔ hỏi trước khi sinh, ⛔ user duyệt ảnh | `flowkit-pipeline.md` §4, `character-bible.md` §6 | entity có UUID media_id |
-| 7.5 | **Start Frame** theo Rule 65 (chuyển cảnh → `GENERATE_IMAGE` + `source_media_id`; nối tiếp → `PREV_LAST_FRAME`) → tẩy logo → Review Board ảnh ⛔. Bỏ qua bước này nếu dự án là refs-only (EMBERS) | CLAUDE.md Rule 22, 25, 27, 63, 65 | start frame sạch |
+| 7.5 | **Start Frame** theo Rule 65: chuyển cảnh → **storyboard 2×2 bắt buộc** theo `/fk-storyboard` (Rule 69), panel 1 làm khung mở đầu; nối tiếp → `PREV_LAST_FRAME` → tẩy logo → Review Board ảnh ⛔ | CLAUDE.md Rule 22, 25, 27, 63, 65 | start frame sạch |
 | 8 | **Video R2V**: clip khó nhất trước, rồi clip mốc, rồi cả loạt ⛔ hỏi trước mỗi lượt | `flowkit-pipeline.md` §5 | clip 720p |
 | 9 | **Review 720p**: `/fk-review-video` + `tools/review_dialogue.py` (Whisper) + Review Board :8200 ⛔ user duyệt từng clip. Clip rớt → quay lại 5.5, sửa đúng khối gây lỗi, lint, đề xuất regen → upscale 1080p → xóa logo | `flowkit-pipeline.md` §6, Rule 32, 67 | bản 1080p clean |
 | 10 | **Hậu kỳ**: `/video-editing` (Rule 66) + `/fk-capcut-edit` + `/fk-cinematic-transitions` + `/fk-sound-design` (−14 LUFS / −1 dBTP); `post_vo` và phụ đề thêm ở đây | `post-and-publish.md` §1, `cinematic-toolkit.md` §6–7 | `${OUTDIR}/edit/edit_vN` |
@@ -148,7 +148,7 @@ Sau 4 bộ kiểm → checklist B (`prompt-lock.md`) → `python tools/lint_prom
 | `/fk-scriptwriter` | Nhịp cảnh, cảm xúc bằng triệu chứng cơ thể, bộ công cụ hồi hộp |
 | `/fk-camera-guide` | Ngôn ngữ máy điện ảnh, cỡ cảnh, 5 tầng vật lý trong prompt |
 | `/fk-action-choreography` | Hành động 3 pha, từ vựng an toàn chống méo người, chuỗi 4s |
-| `/fk-storyboard` | Clip nhiều nhịp / nhiều góc máy: ảnh storyboard 2×2 theo thời gian làm ref + panel 1 làm khung mở đầu (r2v) |
+| `/fk-storyboard` | **Bắt buộc cho mọi clip có sinh ảnh** (Rule 69, 22/10/2026): ảnh storyboard 2×2 theo thời gian làm ref + panel 1 làm khung mở đầu (r2v); không sinh start frame đơn lẻ. Clip liên tục vẫn dùng khung cuối clip trước |
 | `/fk-cinematic-transitions` | Match on action, J/L-cut, mối nối giữa các clip |
 | `/fk-gen-narrator` | Đếm số từ thoại theo `duration`, `narrator_text` (chế độ phim — không dùng MODE A vlog) |
 | `/fk-add-material` | Material của phim (style, lighting, chống CGI) |

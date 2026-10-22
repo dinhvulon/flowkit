@@ -1,6 +1,6 @@
 ---
 name: fk-storyboard
-description: "Storyboard-anchored film clips: sinh 1 ảnh storyboard 2×2 (4 khoảnh khắc theo thời gian, mỗi panel 16:9), cắt panel 1 làm khung mở đầu, rồi sinh video Omni r2v 6/8/10s đi đúng theo storyboard, kể cả đổi góc máy / cắt cảnh / dolly bên trong một clip. Dùng cho phim kể chuyện (/fk-film), ngôn ngữ điện ảnh (không phải vlog). Dùng ngay khi user nói storyboard, panel, khung neo, 'video đi theo storyboard', clip 10s có chuyển cảnh hoặc đổi góc máy, hoặc khi một hành động khó (cứu người, vật nặng, ngã, đánh nhau, chạy trốn) đã sinh hỏng 2 lần trở lên dù prompt đúng."
+description: "Storyboard-anchored film clips: sinh 1 ảnh storyboard 2×2 (4 khoảnh khắc theo thời gian, mỗi panel 16:9), cắt panel 1 làm khung mở đầu, rồi sinh video Omni r2v 4/6/8/10s đi đúng theo storyboard, kể cả đổi góc máy / cắt cảnh / dolly bên trong một clip. Dùng cho phim kể chuyện (/fk-film), ngôn ngữ điện ảnh (không phải vlog). BẮT BUỘC cho mọi clip phim có sinh ảnh (Rule 69, 22/10/2026) — không sinh start frame đơn lẻ cho phim. Dùng ngay khi user nói storyboard, panel, khung neo, 'video đi theo storyboard', clip 10s có chuyển cảnh hoặc đổi góc máy, hoặc khi một hành động khó (cứu người, vật nặng, ngã, đánh nhau, chạy trốn) đã sinh hỏng 2 lần trở lên dù prompt đúng."
 ---
 
 # fk-storyboard — Clip phim neo bằng storyboard theo thời gian
@@ -25,7 +25,7 @@ Skill chạy **bên trong** `/fk-film` (bước 5–8). Mọi luật của `/fk-
 - Hành động **nhiều nhịp** mà khung đầu không mô tả được kết thúc (vật được nhấc rồi người thoát ra, ngã rồi đứng dậy).
 - Một clip đã **hỏng ≥ 2 lần** vì model không đi tới trạng thái cuối.
 
-Không cần dùng cho clip một nhịp, một góc, dễ (nói chuyện, đi bộ, phong cảnh).
+**Bắt buộc trong phim (user lock 22/10/2026, CLAUDE.md Rule 69):** trong `/fk-film`, **mọi clip có sinh ảnh** (clip chuyển cảnh, Rule 65 Loại 2, kể cả clip một nhịp, một góc, 4s) đều làm bằng storyboard 2×2 theo skill này. Không sinh một ảnh start frame đơn lẻ (`GENERATE_IMAGE` 1 khung) cho clip phim nữa. Ngoại lệ duy nhất: clip liên tục (Rule 65 Loại 1) vẫn mở bằng khung cuối của clip trước đã duyệt, không sinh ảnh. Ba trường hợp trên vẫn là lý do quan trọng nhất; clip dễ dùng storyboard đơn giản (cùng một máy ở cả 4 panel).
 
 ## Điều đã biết (thử thật EMBERS BN-08b, 21/10/2026)
 
@@ -47,6 +47,7 @@ Chia clip theo bảng Rule 49 rồi đặt **4 panel ở các mốc biên**:
 
 | `duration` | Mốc panel | Đoạn timeline |
 |---|---|---|
+| 4s | 0s · 1s · 3s · 4s | `0-2s / 2-4s` (user 22/10/2026) |
 | 6s | 0s · 2s · 4s · 6s | `0-2s / 2-4s / 4-6s` |
 | 8s | 0s · 3s · 6s · 8s | `0-3s / 3-6s / 6-8s` |
 | 10s | 0s · 3s · 7s · 10s | `0-3s / 3-7s / 7-10s` |
