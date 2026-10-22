@@ -84,6 +84,7 @@ Not a 3D render, not CGI, no watermark, no logos.
 
 ```bash
 python tools/remove_watermark_from_image.py "<sheet>.jpg"
+rm "<sheet>.jpg"   # Rule 28: có bản _clean thì xóa ảnh gốc còn logo
 python skills/fk-storyboard/scripts/crop_panel.py "<sheet>_clean.jpg" --panel 1 --out "<clip>_p1.jpg"
 ```
 

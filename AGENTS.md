@@ -295,7 +295,7 @@ This project has reusable skills in `skills/`. When the user says `/fk-<name>`, 
 | `/fk-remove-watermark` | fk-remove-watermark — Remove Watermark & Disrupt SynthID from Images and Videos |
 | `/fk-research` | fk-research — Fact-Check & Research Before Scripting |
 | `/fk-review-board` | Start the Scene Review Board web app for visual feedback on scene chains. |
-| `/fk-review-prompt` | Use after writing or editing any FlowKit video_prompt (prompt*.json file, POST/PATCH /api/scenes with video_prompt) and before asking the user to approve generation — or when the prompt-review hook says so, or when the user asks to review a prompt. |
+| `/fk-review-prompt` | Use after writing or editing any FlowKit video_prompt or start-frame / storyboard image_prompt (prompt*.json file, POST/PATCH /api/scenes with video_prompt or image_prompt) and before asking the user to approve generation — or when the prompt-review hook says so, or when the user asks to review a prompt. Checks the prompt against /fk-film, /fk-storyboard, /fk-camera-guide (shot choice per beat: /fk-scriptwriter §G, /fk-action-choreography, /fk-cinematic-transitions) and the dialogue rules (sw-dialogue, Rule 49/54/67). |
 | `/fk-review-video` | Review AI-generated scene videos for quality. |
 | `/fk-script-to-prompts` | Chuyển thể Kịch Bản (script.md) thành Structured Video Prompt JSON cho FlowKit / Veo 3 / Omni Flash R2V. Bắt buộc tích hợp 100% bộ Screenwriting Skills (sw-*), 7 Cinematic Subagents (fk-*), tự động Self-Review và kiểm toán qua tools/lint_prompt.py trước khi xuất file cho user duyệt. |
 | `/fk-scriptwriter` | The Ultimate AI Screenplay Bible — Google Flow & Veo 3 |

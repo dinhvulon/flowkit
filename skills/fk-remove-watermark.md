@@ -17,7 +17,8 @@ Usage:
    - Định dạng hỗ trợ: `.jpg`, `.jpeg`, `.png`, `.webp`.
    - Sử dụng multi-variant template matching (gồm ảnh gốc, CLAHE-enhanced, inverted) để định vị watermark chính xác.
    - Dùng `cv2.inpaint` (thuật toán `INPAINT_TELEA`) trên mặt nạ logo sparkle đã làm dày viền 1px, trả lại pixel nền tự nhiên.
-   - Kết quả lưu thành `<ten>_clean.<ext>`, giữ nguyên ảnh gốc.
+   - Kết quả lưu thành `<ten>_clean.<ext>`; tool không tự xóa ảnh gốc.
+   - **Bắt buộc (CLAUDE.md Rule 28, user lock 2026-10-22):** kiểm có file `_clean` rồi thì xóa ngay ảnh gốc còn logo (`rm "<ten>.<ext>"`). Thư mục dự án chỉ giữ bản `_clean`.
 
 2. **Video:**
    - Định dạng hỗ trợ: `.mp4`.

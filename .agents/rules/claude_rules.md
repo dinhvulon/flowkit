@@ -56,7 +56,7 @@ page can sign a Flow request, so nothing works headless.
     - **TUYỆT ĐỐI KHÔNG dùng trực tiếp `media_id` do Google Flow tự sinh** để đưa thẳng vào sinh video. Ảnh AI của Google luôn tự chèn watermark logo ở góc dưới; nếu đưa thẳng vào i2v/r2v thì model video sẽ làm logo đó nhấp nháy, méo mó và dính chết vào video.
     - **Quy trình bắt buộc 4 bước đối với mọi ảnh do AI sinh**:
       1. Tải ảnh gốc về máy: `${OUTDIR}/images/scene_{idx}_{sid}.jpg`.
-      2. Chạy ngay `python tools/remove_watermark_from_image.py "${OUTDIR}/images/scene_{idx}_{sid}.jpg"` để xóa sạch logo và SynthID ➔ sinh ra file `scene_{idx}_{sid}_clean.jpg`.
+      2. Chạy ngay `python tools/remove_watermark_from_image.py "${OUTDIR}/images/scene_{idx}_{sid}.jpg"` để xóa sạch logo và SynthID ➔ sinh ra file `scene_{idx}_{sid}_clean.jpg`. **Có file `_clean` rồi thì XÓA NGAY ảnh gốc còn logo** (user lock 2026-10-22): trong thư mục dự án chỉ giữ bản `_clean`, để không ai lấy nhầm ảnh có logo đi upload, cắt panel hay review. Áp cho mọi ảnh AI sinh: start frame, storyboard, ref, last frame cắt từ video.
       3. Upload file sạch `scene_{idx}_{sid}_clean.jpg` ngược lên Google Flow qua `POST /api/flow/upload-image` để nhận một `media_id` UUID hoàn toàn sạch logo.
       4. Cập nhật `media_id` sạch này vào Scene (`horizontal_image_media_id` / `vertical_image_media_id`), đưa lên Review Board cho user duyệt. CHỈ SAU ĐÓ mới dùng `media_id` sạch này để sinh video!
 29. **Confirm before every generation step (overrides the automatic parts of rules 16, 17, 19)** — Generation spends Flow credits, so:
