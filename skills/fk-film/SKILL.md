@@ -42,7 +42,7 @@ Phim giữ người xem nhờ 3 thứ: **nhân vật có muốn và cần mâu t
 | Gọi tên là hiện ra | Model không hiểu phủ định: không gọi tên vật / thú / lửa / thiết bị mà mình không muốn thấy, kể cả trong thoại và audio | Bài 73, 77, 99 |
 | Lửa, khói, chất liệu | `35mm film, cinematic documentary realism`; không CGI, không lửa hoạt hình, không khói thở / hơi nước trắng, không god rays; nguồn sáng ghi rõ chỗ; sinh vật da thật không bóng nhựa | Rule 57, 59, 61, 62, Bài 73, 75 |
 | Ánh sáng & người | Ánh sáng tự nhiên, chống glamour (không beauty filter, không tạo dáng người mẫu); deep focus khi cần thấy bối cảnh | Rule 61 (1)(2), 62 (3) |
-| Start Frame | Clip nối tiếp trực tiếp (cùng địa điểm, khoảnh khắc, góc máy, cỡ cảnh) → `PREV_LAST_FRAME`; chuyển cảnh → storyboard 2×2 theo `/fk-storyboard` (Rule 69, bắt buộc từ 22/10/2026), panel 1 làm khung mở đầu, tẩy logo, user duyệt. Không sinh start frame đơn lẻ | Rule 27, 28, 63, 65 |
+| Khung neo / Storyboard | Clip nối tiếp trực tiếp (cùng địa điểm, khoảnh khắc, góc máy, cỡ cảnh) → `PREV_LAST_FRAME`; chuyển cảnh → **storyboard 2×2 bắt buộc** theo `/fk-storyboard` (Rule 69, bắt buộc từ 22/10/2026). BỎ cắt Panel 1 / Start Frame (Omni R2V là pure references, storyboard là Time Reference), tẩy logo, visual audit đọc thể ảnh trước khi chốt prompt video | Rule 28, 65, 69 |
 | Chuyển cảnh | Cắt thẳng, match on action, J-cut / L-cut theo `/fk-cinematic-transitions`; không crossfade làm nhạt nhịp trừ khi kịch bản chủ đích | `transitions.md` (phần phim), Rule 44 |
 | Chữ trên hình | Không viết vào prompt (`negative_constraints` cấm chữ); title / phụ đề chèn hậu kỳ | `post-and-publish.md` |
 | Cổng duyệt | Hỏi trước **mỗi** bước sinh; dừng sau mỗi bước cho user duyệt; lỗi thì đề xuất, không tự sinh lại. Clip lỗi nhìn thấy được → sinh lại, không "cắt khi dựng" | Rule 29, memory "Regen, never trim" |
@@ -67,10 +67,10 @@ Mỗi bước: đọc reference ghi kèm **trước khi** làm. Bước có ⛔ 
 | 5.5 | **Cổng QC** (bắt buộc, 100% prompt): 4 bộ kiểm §QC dưới → checklist B → `python tools/lint_prompt.py --file …` → `/fk-review-prompt` (đọc lại toàn bộ, mục D) | §QC dưới, `prompt-lock.md` mục D | prompt đã viết lại + báo cáo tự kiểm |
 | 6 | **Dựng dự án FlowKit**: pre-flight, flush PENDING (Rule 21), project + material + entities, video, scenes, PATCH `duration` + `narrator_text` | `flowkit-pipeline.md` §2–3 | project / video / scene ids |
 | 7 | **Refs**: mặt, Body đã mặc đồ cho từng trạng thái trang phục, sinh vật, bối cảnh — Turnaround Sheet 16:9 (Rule 58), xóa logo, upload lại ⛔ hỏi trước khi sinh, ⛔ user duyệt ảnh | `flowkit-pipeline.md` §4, `character-bible.md` §6 | entity có UUID media_id |
-| 7.5 | **Start Frame** theo Rule 65: chuyển cảnh → **storyboard 2×2 bắt buộc** theo `/fk-storyboard` (Rule 69), panel 1 làm khung mở đầu; nối tiếp → `PREV_LAST_FRAME` → tẩy logo → Review Board ảnh ⛔ | CLAUDE.md Rule 22, 25, 27, 63, 65 | start frame sạch |
+| 7.5 | **Storyboard 2×2 / Khung neo** theo Rule 65 & 69: chuyển cảnh → **storyboard 2×2 bắt buộc** (Rule 69; BỎ cắt Panel 1 / Start Frame — pure R2V references) → tẩy logo → **bước 3.5 Visual Audit đọc thể ảnh thực tế để chỉnh Video Prompt** ⛔; nối tiếp → `PREV_LAST_FRAME` → tẩy logo ⛔ | CLAUDE.md Rule 28, 65, 69 | entity Storyboard sạch |
 | 8 | **Video R2V**: clip khó nhất trước, rồi clip mốc, rồi cả loạt ⛔ hỏi trước mỗi lượt | `flowkit-pipeline.md` §5 | clip 720p |
 | 9 | **Review 720p**: `/fk-review-video` + `tools/review_dialogue.py` (Whisper) + Review Board :8200 ⛔ user duyệt từng clip. Clip rớt → quay lại 5.5, sửa đúng khối gây lỗi, lint, đề xuất regen → upscale 1080p → xóa logo | `flowkit-pipeline.md` §6, Rule 32, 67 | bản 1080p clean |
-| 10 | **Hậu kỳ**: `/video-editing` (Rule 66) + `/fk-capcut-edit` + `/fk-cinematic-transitions` + `/fk-sound-design` (−14 LUFS / −1 dBTP); `post_vo` và phụ đề thêm ở đây | `post-and-publish.md` §1, `cinematic-toolkit.md` §6–7 | `${OUTDIR}/edit/edit_vN` |
+| 10 | **Hậu kỳ**: `/video-editing` (Rule 66 — tự động điều phối `/fk-capcut-edit` & MCP `capcut` để lập Bảng dựng và dựng trực tiếp vào timeline draft CapCut) + `/fk-cinematic-transitions` + `/fk-sound-design` (−14 LUFS / −1 dBTP); `post_vo` và phụ đề thêm ở đây | `post-and-publish.md` §1, `cinematic-toolkit.md` §6–7 | `${OUTDIR}/edit/edit_vN` |
 | 11 | **Đóng gói YouTube** (tinh chỉnh từ bước 1.5) → sau đăng 48h và 7 ngày: `/fk-youtube-analytics` | `post-and-publish.md` §2–4, `skills/fk-youtube-analytics.md` | tiêu đề, mô tả, thumbnail |
 
 Long-form → ghi `output/<slug>/` (cập nhật dần theo Act); Shorts → trả thẳng trong chat. Chỉ dựng dự án FlowKit (bước 6) sau khi user duyệt kịch bản.
@@ -212,12 +212,59 @@ Tuân thủ 5 tầng kiến trúc Structured JSON (`/fk-prompt-lock` và Rule 55
 - **Scene Sluglines**: Tiêu đề cảnh chuẩn (`INT.` / `EXT.` - `LOCATION` - `TIME OF DAY`).
 - **Action Lines**: Dòng hành động hiện tại, chỉ tả những gì nhìn thấy và nghe thấy, không viết suy nghĩ trừu tượng vô hình.
 - **Dialogue as Action**: Thoại là hành động công kích/phòng thủ, giàu subtext (lời nói dối, ẩn ý), tránh giải thích dông dài (*on-the-nose exposition*).
-- **Word-to-Duration Calibration (Rule 49)**: Định lượng từ khớp chuẩn thời lượng video:
-  - `4s`: 0 hoặc 6–8 từ
-  - `6s`: 12–15 từ
-  - `8s`: 18–22 từ
-  - `10s`: 24–28 từ
-  - `Sonic Isolation`: Im lặng nghẹt thở (0 từ) khi rình rập, săn mồi, ẩn nấp, chiến đấu sinh tử.
+---
+
+## Hướng Dẫn Chi Tiết Tạo Ảnh Storyboard 2×2 (Storyboard Generation Guide — Rule 69)
+
+Trong quy trình làm phim `/fk-film`, việc tạo ảnh Storyboard 2×2 là **cột mốc bắt buộc** để định hình dòng thời gian thị giác (Visual Timeline) cho clip:
+
+### 1. Nguyên Tắc Cốt Lõi
+- **Bắt buộc cho mọi clip có sinh ảnh (Rule 69 (1))**: Mọi clip chuyển cảnh (Rule 65 Loại 2), đổi góc máy, clip mở đầu, clip hành động khó hoặc clip bị lỗi ≥ 2 lần BẮT BUỘC phải tạo ảnh Storyboard 2×2 (4 panel theo thời gian). CẤM sinh start frame 1 khung đơn lẻ.
+- **BỎ cắt Panel 1 / Start Frame (User Lock 22/10/2026)**: Omni Flash R2V (`MZZa6b` - `GENERATE_VIDEO_REFS`) vận hành theo cơ chế **Pure References (Nguyên liệu tham chiếu)**. Tấm Storyboard 2×2 tự thân là bản thiết kế thời gian (Time Reference) cho cả clip. **TUYỆT ĐỐI BỎ bước cắt Panel 1 làm Start Frame**, không cần entity `<CLIP> P1`.
+
+### 2. Quy Tắc Sống Còn Khi Submit Tạo Ảnh Storyboard (Rule 69 (8))
+- **BẮT BUỘC TRUYỀN `source_media_id` TỪ ẢNH REF CÓ SẴN (CẤM SINH TEXT-TO-IMAGE TỪ CON SỐ 0)**:
+  Khi submit request tạo ảnh Storyboard cho bất kỳ cảnh nào có nhân vật, request (`GENERATE_IMAGE` hoặc `REGENERATE_IMAGE`) **BẮT BUỘC phải truyền `source_media_id` = UUID của ảnh ref có sẵn** trong dự án (`<Character>`, `<Character> Body` hoặc bối cảnh):
+  ```json
+  {"type": "REGENERATE_IMAGE", "scene_id": sid, "source_media_id": character_media_id, "project_id": pid, "video_id": vid, "orientation": "HORIZONTAL"}
+  ```
+- **Tác dụng**: Google Flow đưa `source_media_id` vào `base_media_id` / `target_asset`, gán trực tiếp thẻ ảnh ref làm ảnh gốc (`BASE_IMAGE`), ép Imagen 3 phải bám chặt nhận diện ngũ quan, trang phục và tỷ lệ cơ thể gốc. CẤM TUYỆT ĐỐI gửi request tạo storyboard dạng text-to-image thuần túy không có `source_media_id` khiến AI tự vẽ nhân vật ngẫu nhiên làm biến dạng hoặc vẽ sai giới tính.
+
+### 3. Phân Bổ 4 Panel Theo Thời Lượng (`duration`)
+| `duration` | Mốc Panel | Phân đoạn Timeline |
+|---|---|---|
+| **4s** | 0s (Panel 1) · 1s (Panel 2) · 3s (Panel 3) · 4s (Panel 4) | `0-2s / 2-4s` |
+| **6s** | 0s (Panel 1) · 2s (Panel 2) · 4s (Panel 3) · 6s (Panel 4) | `0-2s / 2-4s / 4-6s` |
+| **8s** | 0s (Panel 1) · 3s (Panel 2) · 6s (Panel 3) · 8s (Panel 4) | `0-3s / 3-6s / 6-8s` |
+| **10s** | 0s (Panel 1) · 3s (Panel 2) · 7s (Panel 3) · 10s (Panel 4) | `0-3s / 3-7s / 7-10s` |
+
+### 4. Cấu Trúc Prompt Mẫu Ảnh Storyboard 2×2
+Khung prompt mẫu bằng tiếng Anh chuẩn điện ảnh (thay thế phần `< >` và đính kèm chip ref `{{media:<uuid>|<file>}}` theo Rule 64):
+```text
+A film storyboard sheet, 16:9, made of FOUR photographic panels in a 2 by 2 grid, separated by thin straight black gutters; each panel is itself a 16:9 frame; no text, no numbers, no arrows, no captions anywhere. All four panels are cinematic feature-film stills of ONE continuous moment in <location chip + practical light>; <character A>, wearing <...>, face exactly the face in <face chip>; <character B> ...
+TOP-LEFT PANEL, second 0: <shot scale, camera angle, lens>. <exact positioning of characters, hands, props>.
+TOP-RIGHT PANEL, second <t2>: <camera, or "same camera">. <motion progression, physical interaction>.
+BOTTOM-LEFT PANEL, second <t3>: <camera angle/movement>. <escalated action or reaction>.
+BOTTOM-RIGHT PANEL, second <t4>: <camera>. <final concrete positions matching final frame>.
+Cinematic feature-film look: 35mm film grain, deep focus (f/8), motivated practical lighting, not a 3D render, not CGI, zero watermark, zero logos.
+```
+
+### 5. Hậu Xử Lý Ảnh Storyboard
+1. Tải ảnh gốc về: `${OUTDIR}/images/<clip>_storyboard.jpg`.
+2. Chạy ngay script xóa watermark:
+   ```bash
+   python tools/remove_watermark_from_image.py "${OUTDIR}/images/<clip>_storyboard.jpg"
+   rm "${OUTDIR}/images/<clip>_storyboard.jpg"
+   ```
+3. Upload ảnh sạch `${OUTDIR}/images/<clip>_storyboard_clean.jpg` lên Flowkit qua `POST /api/flow/upload-image` để nhận `media_id` UUID sạch.
+4. Tạo entity `location`: `<CLIP> Storyboard` gán vào dự án.
+
+### 6. BẮT BUỘC: Đọc Thể Ảnh Storyboard Thực Tế & Tinh Chỉnh Video Prompt (Rule 69 (7))
+Sau khi có ảnh sạch, BẮT BUỘC mở file ảnh lên phân tích trực quan 4 panel thực tế:
+- **Panel 1 (Top-Left, 0s)**: Kiểm tra cỡ cảnh thực tế (Close-up, Wide...), hướng mắt nhìn, bố cục ➔ ghi vào `camera.shot_size`: `OPENING SHOT (second 0): matching the top-left panel of {{media:<uuid>|<CLIP> Storyboard.jpg}}: ...`.
+- **Panel 2, 3, 4**: Đọc chuyển động máy và hành động thực tế mà AI đã vẽ (máy tĩnh hay dolly/pan, có cú cắt thẳng hay không) ➔ điều chỉnh các mốc thời gian trong `timeline_action` và `camera.movement`.
+- **Panel 4 (Bottom-Right, giây cuối)**: Khóa cứng tư thế và vị trí kết thúc của nhân vật/đạo cụ ở giây cuối khớp 100% với Panel 4.
+- **CẤM TUYỆT ĐỐI**: Không gửi lệnh sinh video khi chưa đọc ảnh storyboard thực tế và chưa điều chỉnh video prompt cho ăn khớp!
 
 ---
 
@@ -253,8 +300,8 @@ Tuân thủ 5 tầng kiến trúc Structured JSON (`/fk-prompt-lock` và Rule 55
 | `/fk-paper-edit` | Editing | Dựng kịch bản trên giấy: bấm giờ, kiểm tra lời hứa 30s và móc giữ chân 90s trước khi tốn credit |
 | `/fk-review-video` | Review | Chấm điểm chất lượng clip 720p thô theo 6 tiêu chuẩn cốt lõi (Rule 32) |
 | `tools/review_dialogue.py` | Review | Bắt buộc chạy Whisper phân tích âm thanh, độ khớp chữ và mốc thời gian thoại từng clip (Rule 67) |
-| `/video-editing` | Post-Production | Dựng hậu kỳ footage đã duyệt: trim, ghép, dead air, overlay, reframe Shorts (Rule 66) |
-| `/fk-capcut-edit` | Post-Production | Lập Bảng dựng CapCut chuyên nghiệp, trailer montage hook, kết nối trực tiếp MCP capcut |
+| `/video-editing` | Post-Production | Skill tổng lực dựng hậu kỳ footage đã duyệt (Rule 66): trim, ghép, dead air, overlay, reframe Shorts; **tự động điều phối `/fk-capcut-edit` và MCP `capcut`** để lập Bảng dựng và ráp trực tiếp vào timeline draft CapCut |
+| `/fk-capcut-edit` | Post-Production | Module chuyên sâu được gọi từ `/video-editing`: lập Bảng dựng CapCut theo giây, kịch bản trailer montage hook 30s/45s, điều phối các lệnh MCP `capcut` |
 | `/fk-sound-design` | Audio | Mastering âm thanh điện ảnh chuẩn YouTube: ducking tự động, SFX layering, chuẩn −14 LUFS / −1 dBTP |
 | `/fk-youtube-seo` + `/fk-thumbnail` | Packaging | Đóng gói siêu dữ liệu YouTube SEO chuẩn xác và thiết kế thumbnail giữ chân người xem |
 | `/fk-youtube-analytics` | Analytics | Chẩn đoán video sau đăng 48h và 7 ngày (CTR, retention 30s, AVD) để tối ưu hóa dự án tiếp theo |
