@@ -121,4 +121,4 @@ Trích ~8 khung (đúng các mốc panel + giữa các mốc), đặt **cạnh s
 
 ## Ghi chép
 
-Lưu mọi file trong `output/<slug>/images/` (`<clip>_storyboard.jpg`, `_clean.jpg`, `<clip>_p1.jpg`) và ghi vào `scenes_v*.json` của dự án: media id của storyboard và P1, entity tạo ra, điểm từng panel, kết quả video. Lỗi mới → bài học trong `skills/fk-film/references/production-lessons.md` + một dòng checklist B trong `prompt-lock.md`.
+Lưu mọi file trong `output/<slug>/images/` (`<clip>_storyboard.jpg`, `_clean.jpg`, `<clip>_p1.jpg`). Sinh lại storyboard (`_v2`, `_v3`…) thì chuyển bản cũ vào `output/<slug>/images/rejects/` ngay khi có bản mới để so sánh, không xóa (user lock 22/10/2026); trong `images/` chỉ còn bản mới nhất của mỗi clip. Ghi các thông tin vào `scenes_v*.json` của dự án: media id của storyboard và P1, entity tạo ra, điểm từng panel, kết quả video. Lỗi mới → bài học trong `skills/fk-film/references/production-lessons.md` + một dòng checklist B trong `prompt-lock.md`.
