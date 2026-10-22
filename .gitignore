@@ -52,3 +52,6 @@ series_manifest.json
 
 # Edit intermediates (raw.mov / mix.f32 run 200–800 MB each, over GitHub's 100 MB limit)
 output/*/edit/work/*_pieces/
+
+# Large archives (GitHub 100 MB limit)
+output/**/*.zip
