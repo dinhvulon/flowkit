@@ -151,29 +151,27 @@
  {
   "clip_id": "BN-08a",
   "duration": 4,
-  "shot": "CS sát sàn",
+  "shot": "WS thấp, nhìn dọc lối đi",
   "refs": [
+   "Nora",
    "Nora Body Fire",
+   "HALE Helmet Goggles",
    "Eli",
+   "Juniper",
    "Keller Barn Interior"
   ],
-  "hinh": "Nora luồn đầu thép phẳng của rìu Pulaski xuống dưới xà, gác cán lên tấm ván cháy làm điểm tựa rồi dồn hết sức đè cán xuống; xà nhích lên một gang tay, Eli lết cả hai chân ra phía phải.",
-  "beat": "Nhượng bộ đầu tiên · đòn bẩy ăn",
+  "hinh": "(clip đã duyệt) Eli ngồi giữa lối đi, xà cháy đè ngang đùi, ngựa đứng sau. Nora quỳ trước xà dùng tay không cố nhấc, xà không nhúc nhích, cô ngã ngửa ra.",
+  "beat": "Tay không thất bại",
   "thoai": [],
   "so_tu": 0
  },
  {
   "clip_id": "BN-08b",
   "duration": 4,
-  "shot": "CS sát sàn (nối tiếp BN-08a)",
-  "refs": [
-   "Nora Body Fire",
-   "Eli",
-   "Keller Barn Interior",
-   "BN-08a last frame"
-  ],
-  "hinh": "Găng tay trượt trên cán dính muội, cán bật khỏi tay Nora; xà rơi đánh rầm xuống chỗ rơm trống nơi chân Eli vừa nằm, tóe tàn lửa; đầu rìu kẹt dưới xà, cán chổng lên.",
-  "beat": "Suýt chết · mất dụng cụ",
+  "shot": "WS thấp, cùng trục BN-08a",
+  "refs": [],
+  "hinh": "Nora đã sang phía Eli (sau xà). Cô ngồi thụp, luồn hai tay dưới đầu trái xà, gồng chân đứng dậy: xà nhấc lên một gang tay khỏi đùi Eli, Eli chống tay lết lùi thoát ra.",
+  "beat": "Nhượng bộ đầu tiên · nhấc bằng sức chân",
   "thoai": [],
   "so_tu": 0
  },
@@ -182,19 +180,28 @@
   "duration": 6,
   "shot": "MCU",
   "refs": [
+   "BN-09 Start",
    "Nora",
    "Nora Body Fire",
-   "HALE Helmet",
-   "Keller Barn"
+   "HALE Helmet Goggles",
+   "Eli",
+   "Juniper",
+   "Keller Barn Interior"
   ],
-  "hinh": "Nora tra dao vào vỏ; phía sau Eli cài dây khớp mõm cho ngựa.",
+  "hinh": "Khung đầu: Nora nắm hai cẳng tay Eli đang ngồi trên rơm; phía sau xà đổ, cây gỗ vẫn chĩa lên. Nora kéo Eli đứng dậy (đứng trên chân phải), buông tay; Eli khập khiễng tới Juniper, lấy dây khớp trên vai đeo cho ngựa; Nora chìa tay ra.",
   "beat": "Nhượng bộ đầu tiên",
   "thoai": [
    {
+    "t": "1-2s",
     "nguoi": "Nora",
-    "kieu": "nói trong video",
-    "en": "Fine. She comes. But you hold my hand and you don't let go.",
-    "vi": "Được. Nó đi cùng. Nhưng em nắm tay chị và không được buông."
+    "cau": "Fine. She comes.",
+    "dich": "Được. Nó đi cùng."
+   },
+   {
+    "t": "2-6s",
+    "nguoi": "Nora",
+    "cau": "But you hold my hand and you don't let go.",
+    "dich": "Nhưng em nắm tay chị và không được buông."
    }
   ],
   "so_tu": 13
@@ -280,12 +287,13 @@
   "refs": [
    "Nora",
    "Nora Body Fire",
-   "HALE Helmet",
+   "HALE Helmet Goggles",
    "Eli",
+   "Eli Pack",
    "Juniper Blindfold",
-   "Ridge Road"
+   "Ridge Road Fire"
   ],
-  "hinh": "Máy cầm tay đi trước: Nora nắm tay Eli chạy phải sang trái giữa hai hàng cọc rào đang cháy; Eli dắt con ngựa bịt mắt.",
+  "hinh": "Nora dìu Eli lò cò vội từ phải sang trái dọc lối đi giữa hai hàng cọc rào đang cháy; ngựa bịt mắt bước gắt bên cạnh, dây căng.",
   "beat": "Thoát thân",
   "thoai": [],
   "so_tu": 0
@@ -297,12 +305,13 @@
   "refs": [
    "Nora",
    "Nora Body Fire",
-   "HALE Helmet",
+   "HALE Helmet Goggles",
    "Eli",
+   "Eli Pack",
    "Juniper Blindfold",
-   "Ridge Road"
+   "Ridge Road Fire"
   ],
-  "hinh": "Ở khe hở giữa hai cọc rào đang cháy, con ngựa bị bịt mắt cắm vó không chịu đi; Eli ngả người kéo dây bằng cả hai tay.",
+  "hinh": "Tới khe giữa hai cọc rào cháy, ngựa bịt mắt ghìm chân, hí lên, ngả người ra sau; Eli đứng một chân ngả người kéo dây, Nora đỡ eo cậu.",
   "beat": "Chướng ngại · ngựa không chịu đi",
   "thoai": [],
   "so_tu": 0
@@ -312,14 +321,15 @@
   "duration": 6,
   "shot": "MS",
   "refs": [
+   "ES-03 P1",
+   "ES-03 Storyboard",
    "Nora",
    "Nora Body Fire",
-   "HALE Helmet",
+   "HALE Helmet Goggles",
    "Eli",
-   "Juniper Blindfold",
-   "Ridge Road"
+   "Juniper Blindfold"
   ],
-  "hinh": "Nora lùi lại, cầm dây dắt sát cằm ngựa, dắt nó qua khe từng bước; Eli theo sau, một tay đặt lên vai ngựa.",
+  "hinh": "Nora cầm dây ngắn dưới cằm ngựa, quay đầu hét ra lệnh, dắt ngựa qua khe lửa từng bước; Eli lò cò theo sau, tay đặt trên vai ngựa.",
   "beat": "Ra lệnh · cô dẫn đầu",
   "thoai": [
    {
@@ -337,9 +347,12 @@
   "shot": "CU",
   "refs": [
    "Eli",
-   "Ridge Road"
+   "Eli Pack",
+   "Nora Body Fire",
+   "Juniper Blindfold",
+   "Ridge Road Fire"
   ],
-  "hinh": "Cận Eli, kéo cổ áo che miệng, ho trong khói, siết dây dắt và bước tiếp.",
+  "hinh": "Cận Eli: cổ áo kéo lên che miệng, ho gập người, mắt chảy nước, nắm chặt dây không buông, rồi lò cò tiếp.",
   "beat": "Cậu không buông",
   "thoai": [],
   "so_tu": 0
@@ -371,7 +384,8 @@
   "hinh": "Ống kính tele, hơi nóng lượn sóng: mặt lửa vượt đỉnh núi cuối, đổ dốc về phía đường ủi và mái nhà thị trấn.",
   "beat": "Móc giữ chân · lửa tới thị trấn",
   "thoai": [],
-  "so_tu": 0
+  "so_tu": 0,
+  "ghi_chu": "prompt viết lại 21/10 (cinematic, /fk-film + /fk-storyboard)"
  },
  {
   "clip_id": "LH-06",
@@ -391,7 +405,8 @@
     "vi": "Lửa vượt tuyến! Sườn phải! Xe Hai, dập nó! Dập ngay trước khi nó tới nhà!"
    }
   ],
-  "so_tu": 15
+  "so_tu": 15,
+  "ghi_chu": "prompt viết lại 21/10 (cinematic, /fk-film + /fk-storyboard)"
  },
  {
   "clip_id": "LH-07",
@@ -403,7 +418,8 @@
   "hinh": "Đội xe cứu hỏa xịt vòi vào sân sau; lửa tắt thành khói bên chiếc xích đu trẻ con; đèn thị trấn vẫn sáng phía sau.",
   "beat": "Tuyến giữ được — tạm thời",
   "thoai": [],
-  "so_tu": 0
+  "so_tu": 0,
+  "ghi_chu": "prompt viết lại 21/10 (cinematic, /fk-film + /fk-storyboard)"
  },
  {
   "clip_id": "LH-08",
@@ -429,7 +445,8 @@
     "vi": "Đội trưởng, bộ đàm xe Hale chỉ có tiếng rè."
    }
   ],
-  "so_tu": 13
+  "so_tu": 13,
+  "ghi_chu": "prompt viết lại 21/10 (cinematic, /fk-film + /fk-storyboard)"
  },
  {
   "clip_id": "LH-09",

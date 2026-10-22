@@ -7,13 +7,15 @@
    "Nora",
    "Nora Body Fire",
    "Eli",
+   "Eli Pack",
    "Juniper Blindfold",
    "Ridge Road Fire"
   ],
   "hinh": "Trên một gò cao, ba người dừng lại: lửa tràn kín con đường bên dưới và hai sườn đồi; phía trên dốc là bức tường khói đặc che kín đỉnh núi và vùng đã cháy.",
   "beat": "Nhắc lại móc · bị vây",
   "thoai": [],
-  "so_tu": 0
+  "so_tu": 0,
+  "ghi_chu": "prompt viết lại 21/10 (cinematic, /fk-film + /fk-storyboard)"
  },
  {
   "clip_id": "LS-01b",
@@ -26,7 +28,8 @@
   "hinh": "Bàn tay đeo găng của Nora vỗ vào túi radio trên dây đai ngực: trống trơn. Ngón tay cô nắm vào khoảng không.",
   "beat": "Cái giá của lựa chọn · không còn radio",
   "thoai": [],
-  "so_tu": 0
+  "so_tu": 0,
+  "ghi_chu": "prompt viết lại 21/10 (cinematic, /fk-film + /fk-storyboard)"
  },
  {
   "clip_id": "LS-02",
@@ -35,7 +38,7 @@
   "refs": [
    "Nora",
    "Nora Body Fire",
-   "HALE Helmet",
+   "HALE Helmet Goggles",
    "Ridge Road Fire"
   ],
   "hinh": "Nora giật túi lều chống cháy khỏi thắt lưng, giũ tấm bạc ra về phía Eli.",
@@ -48,7 +51,8 @@
     "vi": "Không thấy vùng cháy rồi. Không thể mù mịt chạy lên dốc. Lều. Úp mặt xuống. Nó chỉ vừa một người."
    }
   ],
-  "so_tu": 14
+  "so_tu": 14,
+  "ghi_chu": "prompt viết lại 21/10 (cinematic, /fk-film + /fk-storyboard)"
  },
  {
   "clip_id": "LS-03",
@@ -56,7 +60,9 @@
   "shot": "OTS→Eli",
   "refs": [
    "Eli",
+   "Eli Pack",
    "Nora Body Fire",
+   "HALE Helmet Goggles",
    "Ridge Road Fire"
   ],
   "hinh": "Qua vai Nora: Eli không cầm tấm bạc.",
@@ -81,7 +87,8 @@
     "vi": "Ngay đây, Eli. Như mọi khi. Nằm đè lên em."
    }
   ],
-  "so_tu": 19
+  "so_tu": 19,
+  "ghi_chu": "prompt viết lại 21/10 (cinematic, /fk-film + /fk-storyboard)"
  },
  {
   "clip_id": "LS-04",
@@ -90,13 +97,14 @@
   "refs": [
    "Nora",
    "Nora Body Fire",
-   "HALE Helmet",
+   "HALE Helmet Goggles",
    "Ridge Road Fire"
   ],
   "hinh": "Môi Nora hé mà không thành tiếng; cô nuốt khan hai lần, nhìn lửa.",
   "beat": "Gục ngã",
   "thoai": [],
-  "so_tu": 0
+  "so_tu": 0,
+  "ghi_chu": "prompt viết lại 21/10 (cinematic, /fk-film + /fk-storyboard)"
  },
  {
   "clip_id": "LS-05a",
@@ -104,14 +112,15 @@
   "shot": "WS low angle",
   "refs": [
    "Juniper Blindfold",
-   "Juniper",
    "Eli",
+   "Eli Pack",
    "Ridge Road Fire"
   ],
   "hinh": "Con ngựa hất văng khăn bịt mắt và chồm lên.",
   "beat": "Bước ngoặt",
   "thoai": [],
-  "so_tu": 0
+  "so_tu": 0,
+  "ghi_chu": "prompt viết lại 21/10 (cinematic, /fk-film + /fk-storyboard)"
  },
  {
   "clip_id": "LS-05b",
@@ -120,12 +129,14 @@
   "refs": [
    "Juniper",
    "Eli",
+   "Eli Pack",
    "Ridge Road Fire"
   ],
   "hinh": "Cùng khung: ngựa giật dây khỏi tay Eli, phóng lên dốc phải sang trái ra khỏi khung.",
   "beat": "Bước ngoặt",
   "thoai": [],
-  "so_tu": 0
+  "so_tu": 0,
+  "ghi_chu": "prompt viết lại 21/10 (cinematic, /fk-film + /fk-storyboard)"
  },
  {
   "clip_id": "LS-06",
@@ -138,7 +149,8 @@
   "hinh": "Xa xa, con ngựa xám phi lên dốc phải sang trái qua khói về phía sườn đồi tối.",
   "beat": "Con ngựa biết",
   "thoai": [],
-  "so_tu": 0
+  "so_tu": 0,
+  "ghi_chu": "prompt viết lại 21/10 (cinematic, /fk-film + /fk-storyboard)"
  },
  {
   "clip_id": "LS-07",
@@ -146,6 +158,7 @@
   "shot": "MCU",
   "refs": [
    "Eli",
+   "Eli Pack",
    "Ridge Road Fire"
   ],
   "hinh": "Eli chỉ theo con ngựa.",
@@ -158,17 +171,19 @@
     "vi": "Chị Nora! Nó chạy về phía đã cháy!"
    }
   ],
-  "so_tu": 7
+  "so_tu": 7,
+  "ghi_chu": "prompt viết lại 21/10 (cinematic, /fk-film + /fk-storyboard)"
  },
  {
   "clip_id": "TR-01",
   "duration": 8,
   "shot": "2S profile",
   "refs": [
-   "Eli",
    "Nora",
    "Nora Body Fire",
-   "HALE Helmet",
+   "HALE Helmet Goggles",
+   "Eli",
+   "Eli Pack",
    "Ridge Road Fire"
   ],
   "hinh": "Eli nắm tay Nora chỉ lên dốc; hai người nhìn nghiêng, mặt ửng cam.",
@@ -187,7 +202,8 @@
     "vi": "Lên dốc trong khói là cách cả đội chết đấy."
    }
   ],
-  "so_tu": 22
+  "so_tu": 22,
+  "ghi_chu": "prompt viết lại 21/10 (cinematic, /fk-film + /fk-storyboard)"
  },
  {
   "clip_id": "TR-02",
@@ -195,6 +211,7 @@
   "shot": "MCU (Eli)",
   "refs": [
    "Eli",
+   "Eli Pack",
    "Ridge Road Fire"
   ],
   "hinh": "Hơi thở Eli chậm lại; cậu đứng vững, nhìn thẳng mắt chị.",
@@ -207,7 +224,8 @@
     "vi": "Chị nói chúng không rời chuồng đang cháy. Nó đã rời. Nó chạy lên dốc."
    }
   ],
-  "so_tu": 13
+  "so_tu": 13,
+  "ghi_chu": "prompt viết lại 21/10 (cinematic, /fk-film + /fk-storyboard)"
  },
  {
   "clip_id": "TR-02b",
@@ -216,8 +234,9 @@
   "refs": [
    "Nora",
    "Nora Body Fire",
-   "HALE Helmet",
+   "HALE Helmet Goggles",
    "Eli",
+   "Eli Pack",
    "Ridge Road Fire"
   ],
   "hinh": "Đêm, gần tối hẳn, cả hai đứng đối mặt, mặt và quần áo đầy muội than. Nora dúi tấm lều bạc đang mở vào ngực Eli, gió nóng quật tấm bạc kêu phần phật, cô hét. Eli gạt tấm lều sang bên bằng cẳng tay, hét \"Không!\" vào mặt chị, chỉ tay lên dốc. Ngay lúc đó một ngọn thông phía sau bùng lửa, tia lửa quét ngang qua hai người, cả hai giật mình. Nora kẹp tấm lều nhàu dưới nách trái, ngẩng phắt lên nhìn theo tay em. Cỏ sau lưng Eli đang cháy, cách khoảng 2 m.",
@@ -236,7 +255,8 @@
     "vi": "Không!"
    }
   ],
-  "so_tu": 6
+  "so_tu": 6,
+  "ghi_chu": "prompt viết lại 21/10 (cinematic, /fk-film + /fk-storyboard)"
  },
  {
   "clip_id": "TR-03",
@@ -245,7 +265,7 @@
   "refs": [
    "Nora",
    "Nora Body Fire",
-   "HALE Helmet"
+   "HALE Helmet Goggles"
   ],
   "hinh": "Nora nhìn lên màn khói trắng xóa nơi con ngựa biến mất; không thấy gì; cô quay sang em trai, thở ra một hơi dài.",
   "beat": "Chuyển biến · cô nhờ em dẫn đường",
@@ -257,17 +277,18 @@
     "vi": "Chị không thấy gì. Chỉ cho chị đi, Eli."
    }
   ],
-  "so_tu": 7
+  "so_tu": 7,
+  "ghi_chu": "prompt viết lại 21/10 (cinematic, /fk-film + /fk-storyboard)"
  },
  {
   "clip_id": "TR-04",
   "duration": 4,
   "shot": "MS 2S, đảo trục, cầm tay rung",
   "refs": [
-   "Eli",
    "Nora",
    "Nora Body Fire",
-   "HALE Helmet",
+   "HALE Helmet Goggles",
+   "Eli",
    "Ridge Road Fire"
   ],
   "hinh": "Lửa trong cỏ bùng lên ngay sau lưng Nora. Eli (bên trái khung) chộp chặt tay phải chị và hét; Nora nắm lại. Eli giật chị chạy khập khiễng lên dốc ra mép trái khung, một giây sau lửa quét qua chỗ hai người vừa đứng. Mặt và quần áo cả hai đầy muội than.",
@@ -280,7 +301,8 @@
     "vi": "Đến lượt em. Nắm chặt, đừng buông."
    }
   ],
-  "so_tu": 8
+  "so_tu": 8,
+  "ghi_chu": "prompt viết lại 21/10 (cinematic, /fk-film + /fk-storyboard)"
  },
  {
   "clip_id": "TR-06",
@@ -289,14 +311,16 @@
   "refs": [
    "Nora",
    "Nora Body Fire",
-   "HALE Helmet",
+   "HALE Helmet Goggles",
    "Eli",
+   "Eli Pack",
    "The Black"
   ],
   "hinh": "Tay trong tay họ chạy phải sang trái qua máy quay, lên dốc theo bóng ngựa xám.",
   "beat": "Cuộc chạy cao trào",
   "thoai": [],
-  "so_tu": 0
+  "so_tu": 0,
+  "ghi_chu": "prompt viết lại 21/10 (cinematic, /fk-film + /fk-storyboard)"
  },
  {
   "clip_id": "TR-06b",
@@ -305,14 +329,16 @@
   "refs": [
    "Nora",
    "Nora Body Fire",
-   "HALE Helmet",
+   "HALE Helmet Goggles",
    "Eli",
+   "Eli Pack",
    "The Black"
   ],
   "hinh": "Trong khói dày, tầm nhìn vài bước: Eli đi trước lần theo vết móng ngựa trên tro; Nora phía sau nắm chặt quai ba lô của em, mắt gần như nhắm, kẹp tấm lều dưới nách.",
   "beat": "Tin mù quáng · cô đi theo",
   "thoai": [],
-  "so_tu": 0
+  "so_tu": 0,
+  "ghi_chu": "prompt viết lại 21/10 (cinematic, /fk-film + /fk-storyboard)"
  },
  {
   "clip_id": "TR-07",
@@ -321,14 +347,15 @@
   "refs": [
    "Nora",
    "Nora Body Fire",
-   "HALE Helmet",
+   "HALE Helmet Goggles",
    "Eli",
    "Ridge Road Fire"
   ],
   "hinh": "Một cây chết đang cháy đổ xuống; Eli giật tay Nora kéo sang bên; cây đập đất tóe lửa.",
   "beat": "Móc giữ chân · em cứu chị",
   "thoai": [],
-  "so_tu": 0
+  "so_tu": 0,
+  "ghi_chu": "prompt viết lại 21/10 (cinematic, /fk-film + /fk-storyboard)"
  },
  {
   "clip_id": "TR-08",
@@ -337,8 +364,9 @@
   "refs": [
    "Nora",
    "Nora Body Fire",
-   "HALE Helmet",
+   "HALE Helmet Goggles",
    "Eli",
+   "Eli Pack",
    "Ridge Road Fire"
   ],
   "hinh": "Nora quỳ một gối; Eli kéo chị dậy bằng cả hai tay và hét.",
@@ -351,6 +379,7 @@
     "vi": "Đứng dậy, chị Nora! Đưa tay đây. Em không nói lần hai đâu. Đi!"
    }
   ],
-  "so_tu": 12
+  "so_tu": 12,
+  "ghi_chu": "prompt viết lại 21/10 (cinematic, /fk-film + /fk-storyboard)"
  }
 ]

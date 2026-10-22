@@ -148,6 +148,7 @@ Sau 4 bộ kiểm → checklist B (`prompt-lock.md`) → `python tools/lint_prom
 | `/fk-scriptwriter` | Nhịp cảnh, cảm xúc bằng triệu chứng cơ thể, bộ công cụ hồi hộp |
 | `/fk-camera-guide` | Ngôn ngữ máy điện ảnh, cỡ cảnh, 5 tầng vật lý trong prompt |
 | `/fk-action-choreography` | Hành động 3 pha, từ vựng an toàn chống méo người, chuỗi 4s |
+| `/fk-storyboard` | Clip nhiều nhịp / nhiều góc máy: ảnh storyboard 2×2 theo thời gian làm ref + panel 1 làm khung mở đầu (r2v) |
 | `/fk-cinematic-transitions` | Match on action, J/L-cut, mối nối giữa các clip |
 | `/fk-gen-narrator` | Đếm số từ thoại theo `duration`, `narrator_text` (chế độ phim — không dùng MODE A vlog) |
 | `/fk-add-material` | Material của phim (style, lighting, chống CGI) |
