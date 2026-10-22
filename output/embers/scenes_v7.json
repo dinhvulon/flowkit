@@ -2540,21 +2540,27 @@
     "horizontal_upscale_media_id": "094e0241-ba83-4af0-88af-962f7c178bce",
     "file_1080_clean": "1080/scene_074_LS-01_063eed0f_1080p_clean.mp4",
     "status": "1080P_CLEAN",
-    "upscale_note": "2026-10-22: upscaled 1080p clean from Storyboard v2, perfect 8s crane rise"
+    "upscale_note": "2026-10-22: upscaled 1080p clean from Storyboard 2x2, regenerated per user request with visual audit alignment"
   },
   "LS-01b": {
     "scene_id": "e996ada6-2279-4945-8222-3211272ee4e4",
     "act": "",
     "duration": 4,
     "video_refs": [
+      "LS-01b P1",
+      "LS-01b Storyboard",
       "Nora Body Fire",
-      "Ridge Road"
+      "Ridge Road Fire"
     ],
     "flow_account": "dinhvulon16",
     "flow_project_id": "3b6be3e0-4a39-46e8-bf4e-aa727e449cd5",
     "start_frame_mode": "fk-storyboard 2x2 sheet (Rule 69)",
     "created_note": "2026-10-19: scene created from prompts_v7.json (chips resolved to named refs); handoff lessons not applied yet",
-    "prompt_note": "2026-10-22: upgraded to /fk-storyboard 2x2 standard (Rule 69)"
+    "prompt_note": "2026-10-22: upgraded to /fk-storyboard 2x2 standard (Rule 69)",
+    "horizontal_image_media_id": "ed9488c6-fa84-4276-997b-f665bbbee029",
+    "storyboard_media_id": "f99c4080-54d9-4fd8-aa60-8e7cc235c38a",
+    "start_frame_file": "output/embers/images/ls01b_p1.jpg",
+    "storyboard_file": "output/embers/images/ls01b_storyboard_clean.jpg"
   },
   "LS-02": {
     "scene_id": "ea1dcbff-a83a-4b76-a65e-fefc1aeb0962",

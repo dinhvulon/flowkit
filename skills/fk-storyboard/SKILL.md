@@ -62,7 +62,15 @@ Kiểm trước khi viết prompt:
 
 Trình bảng 4 panel cho user duyệt.
 
-### Bước 2 — Sinh ảnh storyboard (1 ảnh, hỏi trước)
+### Bước 2 — Sinh ảnh storyboard (dùng ảnh ref có sẵn, bắt buộc truyền `source_media_id` — Rule 69 (8), User Lock 22/10/2026)
+
+> **BẮT BUỘC TRUYỀN `source_media_id` TỪ ẢNH REF CÓ SẴN (CẤM SINH TEXT-TO-IMAGE TỪ SỐ 0):**
+> Khi submit request sinh ảnh Storyboard cho bất kỳ cảnh nào có nhân vật, request (`GENERATE_IMAGE` hoặc `REGENERATE_IMAGE`) **BẮT BUỘC phải truyền `source_media_id` = UUID của ảnh ref nhân vật chính có sẵn** trong dự án (`<Character>` hoặc `<Character> Body` hoặc bối cảnh, ví dụ: `source_media_id: nora_media_id`):
+> ```json
+> {"type": "REGENERATE_IMAGE", "scene_id": sid, "source_media_id": nora_media_id, "project_id": pid, "video_id": vid, "orientation": "HORIZONTAL"}
+> ```
+> Tác dụng: Google Flow đưa `source_media_id` vào `base_media_id` / `target_asset`, gán trực tiếp thẻ ảnh ref của nhân vật vào khung vẽ (`BASE_IMAGE`), ép Imagen 3 phải bám chặt nhận diện ngũ quan, tóc, màu da, tỷ lệ cơ thể và trang phục gốc của nhân vật. **CẤM TUYỆT ĐỐI gửi request sinh ảnh storyboard mà không có `source_media_id`**, khiến AI tự vẽ nhân vật ngẫu nhiên làm biến dạng, vẽ sai mặt hoặc sai giới tính!
+
 
 Mẫu prompt (thay phần `< >`; chip ref theo Rule 64):
 

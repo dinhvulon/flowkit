@@ -5003,8 +5003,8 @@
     },
     "camera": {
       "viewpoint": "third-person cinematic camera; the camera itself is never seen",
-      "shot_size": "OPENING FRAME = {{ref:LS-01 P1}}: the very first frame is exactly that image: the same camera position, framing, people and places. An extreme wide shot from below and to the side: the small rocky rise in the middle of the frame with three small figures on it, fire filling the lane below and climbing the slopes on both sides; uphill, a solid wall of smoke hiding the ridge",
-      "description": "24mm Cooke prime, a slow crane-like rise of the camera over the 8 seconds, revealing more and more fire around them.",
+      "shot_size": "OPENING FRAME = {{ref:LS-01 P1}}: the very first frame is exactly that image: the same camera position, framing, people and places. An eye-level wide shot on the bare rocky rise with the three figures standing together: Nora on the left in her yellow shirt and helmet, adult Eli in the centre in green hoodie, Juniper the grey mare on the right with red bandana over her eyes. Behind and below them, walls of roaring fire climb the slopes under a black sky of dense smoke.",
+      "description": "24mm Cooke prime, a continuous slow crane rise from eye-level in Panel 1 to high overhead crane angle in Panel 3, revealing the complete circle of fire encircling the rocky knoll, then holding on the isolated trio in front of the impenetrable smoke wall in Panel 4; one continuous unbroken 8-second camera movement.",
       "continuity": "one continuous unbroken shot from the first frame to the last, no cuts, no fade-in",
       "focus": "deep focus, everything sharp (f/8)"
     },
@@ -5013,7 +5013,7 @@
     "characters": [
       {
         "name": "Nora",
-        "visual_lock": "FACE LOCK: Nora's face is exactly the face in {{ref:Nora}}, kept 1:1. She is an adult woman of 23, a working firefighter. Her build and clothing are exactly as in {{ref:Nora Body Fire}}: the yellow wildland fire shirt, harness straps, green fire pants, gloves; she is wearing her mother's old yellow helmet with the scorched brim exactly as in {{ref:HALE Helmet Goggles}}, the goggles on its front.",
+        "visual_lock": "FACE LOCK: Nora's face is exactly the face in {{ref:Nora}}, kept 1:1. She is an adult woman of 23, a working firefighter. Her build and clothing are exactly as in {{ref:Nora Body Fire}}: the yellow wildland fire shirt, harness straps, green fire pants, gloves; she is wearing her mother's old yellow helmet with scorched brim and goggles on front.",
         "state": "heavy soot on her cheeks and forehead, skin still visible, dried pink retardant splashes on her sleeves, one sleeve scorched; her empty radio pocket on her chest harness. She stands on the rise holding Eli up, turning to look in every direction."
       },
       {
@@ -5028,9 +5028,9 @@
       }
     ],
     "timeline_action": {
-      "0-3s": "The three stop on the bare rise; below them the lane is a river of fire, flames running up the dry grass toward the rock.",
-      "3-6s": "Nora turns: fire on the left slope, fire on the right slope; the camera rises and the circle of fire around the rise becomes clear.",
-      "6-8s": "Nora looks uphill: where the ridge should be there is only a solid wall of dark smoke; no way through can be seen."
+      "0-3s": "Matching Panel 1 to Panel 2: The camera begins eye-level on the bare rise as the three stop; Nora turns to look at the roaring fireline below while Eli leans on her holding Juniper's lead; the camera begins a slow, steady crane-like ascent upward.",
+      "3-6s": "Matching Panel 2 to Panel 3: As the camera cranes higher looking down, the full circular horseshoe ring of wildfire surrounding the rocky knoll is dramatically revealed, trapping them on a bare rock island.",
+      "6-8s": "Matching Panel 3 to Panel 4: From the high crane viewpoint, Nora stares uphill past the mare: where the ridge should be is a solid impenetrable wall of black smoke and drifting orange embers; they are completely encircled with no way out."
     },
     "physical_realism": "Fire runs fastest up the slopes and around the bare rock; the rock itself does not burn; heat shimmer rises all around them.",
     "speech": {
@@ -5092,8 +5092,8 @@
     },
     "camera": {
       "viewpoint": "third-person cinematic camera; the camera itself is never seen",
-      "shot_size": "OPENING FRAME = {{ref:LS-01b Start}}: the very first frame is exactly that image: the same camera position, framing, people and places. An extreme close-up of Nora's chest harness: the radio pocket on the left chest strap, her gloved right hand coming into frame",
-      "description": "100mm macro Cooke, locked off; one fixed angle for all 4 seconds.",
+      "shot_size": "OPENING FRAME = {{ref:LS-01b P1}}: the very first frame is exactly that image: the same camera position, framing, people and places. A tight close-up on Nora's chest harness and yellow fire shirt at night: the canvas radio pouch on her chest strap is open and completely empty, her right gloved hand slapping down onto it.",
+      "description": "100mm macro Cooke prime, locked close at chest level, subtly tilting and widening slightly upward at seconds 3-4 to reveal Nora's clenched jaw and throat; one continuous unbroken 4-second macro shot.",
       "continuity": "one continuous unbroken shot from the first frame to the last, no cuts, no fade-in",
       "focus": "deep focus, everything sharp (f/8)"
     },
@@ -5102,13 +5102,13 @@
     "characters": [
       {
         "name": "Nora",
-        "visual_lock": "Only her chest harness, yellow shirt and gloved hand are in frame, exactly as in {{ref:Nora Body Fire}}; her face is not in frame.",
+        "visual_lock": "Nora: only her chest harness, yellow wildland shirt and gloved hands are in frame, exactly as in {{ref:Nora Body Fire}}; at the final second her lower jawline appears, smudged with soot.",
         "state": "soot and ash on the harness; the radio pocket open and empty."
       }
     ],
     "timeline_action": {
-      "0-2s": "Nora's gloved hand slaps the radio pocket on her chest harness out of habit: it is open and empty.",
-      "2-4s": "Her fingers dig into the empty pocket, close on nothing, and clench into a fist; her chest heaves under the strap."
+      "0-2s": "Matching Panel 1 to Panel 2: Nora's right gloved hand slaps instinctively onto the open radio pouch on her chest harness, then her thick gloved fingers dig deep inside, feeling desperately for a radio that is not there.",
+      "2-4s": "Matching Panel 3 to Panel 4: Her gloved hand withdraws from the empty pocket and clenches into a rigid, trembling fist pressed against her chest; the camera eases slightly upward to catch her soot-streaked jaw clenching hard as she swallows in silent despair."
     },
     "physical_realism": "The empty pocket flattens under her palm; there is nothing in it at any moment.",
     "speech": {
