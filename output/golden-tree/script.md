@@ -1,269 +1,126 @@
-# KỊCH BẢN PHÂN CẢNH ĐIỆN ẢNH: PIRATES OF THE GOLDEN TREE
+# KỊCH BẢN TỔNG THỂ ĐIỆN ẢNH 26 PHÚT: PIRATES OF THE GOLDEN TREE
 ## (HẢI TẶC CÂY VÀNG: BẢN ĐỒ BỤNG CÁ)
 
 > **Dự án:** Golden Tree (Slug: `golden-tree`)  
-> **Package:** *The Golden Trap: Voyage to the Forgotten Sanctuary*  
-> **Lời hứa kịch tính:** Tấm bản đồ giấu trong bụng con cá dị dạng dẫn lối tới kho báu Cây Vàng, nhưng cái giá phải trả là mạng sống nếu không biết cơ chế mê cung.  
+> **Thời lượng chuẩn:** **26 phút 47 giây** (Đúng **1,607 giây** | Khớp 100% video nguồn YouTube `video_script_analysis.md`)  
+> **Quy mô phân cảnh:** **194 Phân cảnh (SC-01 đến SC-194)**  
 > **Ngôn ngữ thoại:** English (Cinematic Period Maritime English)  
-> **Góc máy:** 100% Third-Person Cinematic Camera (Không selfie, không POV điện thoại, không xưng hô với khán giả).  
+> **Góc máy:** 100% Third-Person Cinematic Camera (Không selfie, không POV điện thoại, không xưng hô khán giả).  
 > **Âm thanh & Mix nhạc:** Chuẩn điện ảnh −14 LUFS / −1 dBTP.  
+> **Quy chuẩn kỹ thuật áp dụng:** Khóa cứng toàn diện theo **Rule 71** (`skills/fk-film/SKILL.md` + 23 `sw-*` screenwriting skills).
 
 ---
 
 ## 1. BẢNG NHÂN VẬT & MÃ GIỌNG ĐIỆN ẢNH (`VOICE_LOCK` & REFS)
 
-| Tên Entity | Vai trò | Voice ID (`voice-bible.md`) | Mô tả âm sắc & Khẩu khí | Bộ References (`character_names`) |
+| Tên Entity | Vai trò nguyên mẫu | Voice ID (`voice-bible.md`) | Mô tả âm sắc & Khẩu khí | Bộ References (`character_names`) |
 | :--- | :--- | :--- | :--- | :--- |
-| **Nora** | Nữ Thuyền trưởng (26 tuổi) | `kore` | Nữ, đanh thép, trầm ổn, dứt khoát; giọng chỉ huy phong trần giữa biển bão. | `["Nora", "Nora Body Seafarer"]` |
-| **Theron** | Hoa tiêu sống sót (58 tuổi) | `sadaltager` | Nam, khản đặc, thở dốc vì đói khát nhưng sắc sảo và am tường địa tầng. | `["Theron"]` |
-| **Castor** | Chiến binh mưu lược (29 tuổi) | `alnilam` | Nam, cộc cằn, sắc lạnh, giọng hoài nghi mang tính lý trí thực tế. | `["Castor"]` |
-| **Heracles** | Chiến binh thể hình (35 tuổi) | `algenib` | Nam, trầm đục, gầm vang uy lực, ít lời nhưng nặng như đá tảng. | `["Heracles"]` |
-| **Lão Ngư Dân**| Sứ giả khởi đầu (65 tuổi) | `enceladus` | Nam, run rẩy, hổn hển, kinh hoàng tột độ. | `["Old Fisherman"]` |
-| **Sirens** | Quái nữ biển sâu | *Sound Design* | Tiếng ngân nga thì thầm ma mị chuyển sang tiếng thét rít xé màng nhĩ. | `["Abyssal Siren"]` |
-| **Labyrinth Beast**| Quái vật Chitin 6 chân | *Sound Design* | Tiếng giáp xác nghiền đá, tiếng rít axit xì khói, tiếng đuôi quất rầm rộ. | `["Labyrinth Beast"]` |
+| **Nora** | Nữ Thuyền trưởng (26 tuổi) — *The Leader* | `kore` | Nữ, đanh thép, trầm ổn, dứt khoát; giọng chỉ huy phong trần giữa biển bão. | `["Nora", "Nora Body Seafarer"]` |
+| **Theron** | Hoa tiêu sống sót (58 tuổi) — *The Mentor* | `sadaltager` | Xuất hiện tại **15:18**; nam, khàn đặc, thở dốc vì đói khát nhưng sắc sảo và am tường địa tầng. | `["Theron"]` |
+| **Castor** | Chiến binh mưu lược (29 tuổi) — *The Tactician* | `alnilam` | Nam, cộc cằn, sắc lạnh, giọng hoài nghi mang tính lý trí thực tế. | `["Castor"]` |
+| **Heracles** | Chiến binh thể hình (35 tuổi) — *The Behemoth* | `algenib` | Nam, trầm đục, gầm vang uy lực, ít lời nhưng nặng như đá tảng. | `["Heracles"]` |
+| **Lão Ngư Dân**| Sứ giả khởi đầu (65 tuổi) — *The Herald* | `enceladus` | Xuất hiện Hồi 1; run rẩy, hổn hển, kinh hoàng tột độ. | `["Old Fisherman"]` |
+| **Sirens** | Quái nữ biển sâu — *The Tricksters* | *Sound Design* | Tiếng ngân nga thì thầm ma mị chuyển sang tiếng thét rít xé màng nhĩ. | `["Abyssal Siren"]` |
+| **Labyrinth Beast**| Quái thú Chitin 6 chân — *The Guardian* | *Sound Design* | Tiếng giáp xác nghiền đá, tiếng rít axit, tiếng đuôi quất rầm rộ. | `["Labyrinth Beast"]` |
 
 ---
 
 ## 2. BẢNG VẬT LÝ & LIÊN TỤC BỐI CẢNH (CONTINUITY LEDGER)
 
 * **Sổ liên tục bối cảnh (Location States):**
-  * `LOC-01 (Biển đêm mù sương)`: Boong tàu gỗ sồi ướt nước mặn, đèn lồng dầu đung đưa hắt ánh sáng vàng hổ phách, sương mù dày lơ lửng mặt nước.
+  * `LOC-01 (Biển đêm mù sương & Cabin tàu)`: Boong gỗ sồi ướt nước mặn, đèn lồng dầu bão hắt ánh sáng hổ phách ấm, sương mù dày lơ lửng mặt nước.
   * `LOC-02 (Eo biển Clashing Rocks)`: Hai vách đá bazan xám đen cao 80m va đập sấm sét, bọt sóng trắng xóa tung cao 15m.
-  * `LOC-03 (Hòn đảo Karst 15:18)`: Vực đá vôi xám xịt cằn cỗi, bụi vôi bám áo quần, khe nứt hẹp ngột ngạt không lối mòn.
-  * `LOC-04 (Điện Thờ Cây Vàng)`: Giếng trời ngầm khổng lồ, giếng trăng rọi qua sương, hồ nước ngầm phản chiếu ánh kim, bụi sáng Golden Embers lơ lửng.
-* **Quy chuẩn tương tác vật lý (Rule 41, 51):**
-  * Đạo cụ tấm bản đồ da cừu: Khi khô là màu trắng tinh khiết; khi dính nước biển/ánh trăng lập tức phát quang đường viền mực vàng kim.
-  * Truyền lực va chạm: Quái vật Labyrinth va vào vách đá làm đá vôi sạt lở trước khi rơi xuống đất; không có va chạm cơ thể người trực diện với quái thú 3.5 tấn.
+  * `LOC-03 (Bãi cạn eo đất & Vịnh Sirens)`: Dải đá cuội, thân thông biển làm con lăn, nước vịnh xanh ngọc bích phẳng lặng như gương.
+  * `LOC-04 (Hòn đảo Karst & Mê cung 15:18)`: Vực đá vôi xám xịt cằn cỗi, bụi vôi bám áo quần, khe nứt hẹp ngột ngạt không lối mòn.
+  * `LOC-05 (Điện Thờ Cây Vàng & Giếng trời Cenote)`: Giếng trời ngầm khổng lồ mở ra bầu trời đêm, hồ nước ngầm phản chiếu ánh kim, bụi sáng Golden Embers lơ lửng.
+  * `LOC-06 (Bình minh đại dương)`: Mặt trời đỏ rực dát vàng mặt biển bao la, buồm trắng căng gió tự do.
+* **Quy chuẩn tương tác vật lý (Rule 41, 51, 61, 62):**
+  * **Đạo cụ tấm bản đồ da cừu:** Khi khô là màu trắng tinh khiết; khi dính nước biển/muối lập tức phát quang đường viền mực vàng kim; khi hoàn thành sứ mệnh ở Hồi 3, mực ma thuật bay hơi trở lại trang giấy trắng vô hại.
+  * **Truyền lực va chạm ($p = m \cdot v$):** 
+    - Thân tàu 40 tấn đè lún trục lăn gỗ thông biển bốc khói ma sát.
+    - Quái vật Labyrinth Beast 3.5 tấn húc đổ vách đá vôi làm bụi trắng mù mịt; Heracles dùng khiên đồng chặn đuôi gai bị trượt lùi 2m.
+    - Vòm đá vôi nứt nẻ 20 tấn đổ sụp nghiền nát quái vật.
+  * **Nguồn sáng thực tế có động cơ (Motivated Practical Light):** Đèn bão dầu, đuốc hắc ín, mực lân tinh, ánh trăng giếng trời, ánh bình minh đỏ rực (Tuyệt đối CẤM `god rays` và `rim lighting`).
 
 ---
 
-## 3. PHÂN CẢNH CHI TIẾT TỪNG SHOT (SCENE-BY-SCENE STORYBOARD)
+## 3. CẤU TRÚC 5 HỒI & PHÂN BỔ 194 PHÂN CẢNH (1,607 GIÂY)
 
-### 3.0. BẢNG MASTER STORYBOARD TỔNG HỢP 14 CẢNH (MASTER STORYBOARD TABLE — RULE 65, 69)
+```mermaid
+flowchart TD
+    subgraph Act1["HỒI 1: KHỞI NGUYÊN & BẢN ĐỒ BỤNG CÁ (00:00 - 05:00 | 300s | 36 Scenes)"]
+        A1["SC-01 đến SC-12: Bắt giữ thuyền cá & Lời cảnh báo lão ngư"] --> A2["SC-13 đến SC-24: Mổ bụng cá dị dạng & Bản đồ phát quang"]
+        A2 --> A3["SC-25 đến SC-36: Tranh luận hải trình & Con tàu lao vào Clashing Rocks"]
+    end
 
-| Clip | Dur | Cỡ cảnh & Góc máy | Refs (≤7) | Loại Neo (Rule 65/69) | Ánh sáng | Tóm tắt hành động | Thoại chính xác | Từ | Vật lý / Chuyển động | Beat (+/-) | Dựng |
-|---|---|---|---|---|---|---|---|---|---|---|---|
-| **SC-01** | 8s | EWS ➔ MS Tracking | Nora, Body, Castor | **STORYBOARD 2×2** (0/3/6/8s) | Đèn bão vàng biển đêm | Kéo thuyền cá, chĩa nỏ, Nora ra mạn | Castor: *"Stand clear! He's hoarding something alive in the hold."* | 10 | Dây neo kéo giật vỏ thuyền cá | [0] Nghi ngại | Cắt thẳng |
-| **SC-02** | 8s | MCU ➔ Macro Insert | Nora, Body, Omen Fish | **STORYBOARD 2×2** (0/3/6/8s) | Đèn bão cabin Chiaroscuro | Mổ bụng cá dị dạng lộ cuộn da cừu | Nora: *"Look at the gills. This was bred in deep abyss."* | 10 | Dao rạch vảy xà cừ, dịch nhờn | [+] Tò mò | Match cut |
-| **SC-03** | 8s | CU ➔ OTS Low-angle | Nora, Body, Castor, Heracles | **PREV_LAST_FRAME** (Loại 1) | Đèn bão + ánh lân tinh | Nhỏ giọt nước biển, bản đồ phát quang | Nora: *"Salt awakens the ink. The Golden Tree is not a myth."* | 11 | Nước loang trên da cừu | [++] Phấn khích | Cắt thẳng |
-| **SC-04** | 8s | EWS Low-Angle Track | Nora, Body, Heracles | **STORYBOARD 2×2** (0/3/6/8s) | Biển bão xám, bọt sóng trắng | Con tàu lách qua hai vách đá nghiền | Nora: *"Brace the mast! Keep her straight into the spray!"* | 10 | Heracles gồng mình giữ tời | [!] Hiểm nguy | J-cut |
-| **SC-05** | 8s | MS ➔ Dutch Angle | Nora, Body, Abyssal Siren | **STORYBOARD 2×2** (0/3/6/8s) | Nước biển xanh ngọc ma quái | Sirens trồi lên biến hình, Nora chém | Nora: *"Cover your ears! Plug the wax and loose the fire-arrows!"* | 11 | Chém móng vuốt, kéo người giật lùi | [!] Bẫy chết | Cắt thẳng |
-| **SC-06** | 8s | MS Two-Shot Eye-level | Nora, Body, Castor | **STORYBOARD 2×2** (0/3/6/8s) | Sương mù lạnh đá vôi xám | Dừng trước vách đá cụt, Castor nổi giận | Castor: *"It's a dead wall, Nora! Your glowing fish-skin led us into an open grave!"* | 15 | Castor phóng mũi tên cắm vách đá | [-] Tuyệt vọng | L-cut |
-| **SC-07** | 8s | Low Tilt ➔ Macro Crevice | Nora, Body, Theron | **PREV_LAST_FRAME** (Loại 1) | Ánh sáng khuất hốc đá | Nghe tiếng cào, Theron thò tay kêu cứu | Theron: *"Help me... the rocks slipped... before the hunter returns!"* | 10 | Đá dăm sạt lở từ hốc nứt | [?] Bí ẩn | Match cut |
-| **SC-08** | 8s | OTS Medium Close-up | Nora, Body, Theron | **PREV_LAST_FRAME** (Loại 1) | Ban ngày qua khe nứt gắt | Đỡ Theron, Theron chỉ ra bẫy bản đồ | Theron: *"That paper doesn't show a passage. It shows the bait. The tree feeds on fools who follow it blindly."* | 19 | Theron giơ phiến đá gõ lách cách | [!] Bừng tỉnh | Cắt thẳng |
-| **SC-09** | 6s | Wide Backwards Dolly | Nora, Body, Theron, Heracles | **STORYBOARD 2×2** (0/2/4/6s) | U tối ẩm ướt trong hang | Theron dẫn đoàn rón rén luồn hẻm đá | Theron: *"Step where the moss clings. The stone beast listens to hollow footsteps."* | 12 | Rung chấn đá rơi từ trần hang | [-] Căng thẳng | Cắt thẳng |
-| **SC-10** | 8s | Low Hero ➔ Shaky Pan | Nora, Body, Labyrinth Beast, Heracles | **STORYBOARD 2×2** (0/3/6/8s) | Đốm sáng vàng mắt quái thú | Quái vật Chitin bổ nhào, quất đuôi gai | *(Sonic Isolation — 0 từ; dồn SFX)* | 0 | Đuôi quất khiên đồng, trượt 2m | [--] Tử thần | Cắt động tác |
-| **SC-11** | 8s | Medium Action ➔ Wide | Nora, Body, Labyrinth Beast, Castor | **STORYBOARD 2×2** (0/3/6/8s) | Bụi đá vôi mờ mịt | Bắn tên bản đồ làm mồi, chặt dây bẫy | Nora: *"Castor, cut the lanyard now! Bring the arch down!"* | 9 | Đá hàng tấn rơi nghiền quái vật | [++] Đảo chiều | J-cut |
-| **SC-12** | 10s | EWS Slow Push-In | Nora, Body, Golden Tree, Theron | **STORYBOARD 2×2** (0/3/7/10s) | Ánh trăng giếng trời + Cây Vàng | Giếng trời mở ra, Cây Vàng rực rỡ, hài cốt | Theron: *"Behold the golden curse, Captain. Every soul that reached for these radiant boughs was turned to metal and became part of the root."* | 23 | Bụi vàng Embers lơ lửng | [!] Choáng ngợp | Cắt chậm |
-| **SC-13** | 8s | MCU Two-Shot Low-Angle | Nora, Body, Castor | **PREV_LAST_FRAME** (Loại 1) | Ánh sáng vàng dịu mặt hồ | Castor định chặt rễ, Nora giữ lại | Nora: *"Gold cannot steer a ship, Castor. We leave with our lives, or we become statues."* | 16 | Nora siết chặt cổ tay Castor | [++] Giác ngộ | L-cut |
-| **SC-14** | 10s | High Crane ➔ Horizon Pan | Nora, Body | **STORYBOARD 2×2** (0/3/7/10s) | Nắng sớm rạng đông rực rỡ | Con tàu giương buồm ra khơi tự do | *(0 từ — Khải hoàn ca giao hưởng)* | 0 | Buồm căng gió rẽ sóng biển | [+++] Tự do | Fade out |
+    subgraph Act2A["HỒI 2A: THỬ THÁCH BIỂN SÂU (05:00 - 15:00 | 600s | 72 Scenes)"]
+        B1["SC-37 đến SC-48: Thoát khỏi Clashing Rocks & Hư hại lườn tàu"] --> B2["SC-49 đến SC-68: Kéo tàu vượt cạn bằng trục lăn gỗ"]
+        B2 --> B3["SC-69 đến SC-88: Tiếng hát Sirens & Trận chiến dưới biển sâu"]
+        B3 --> B4["SC-89 đến SC-108: 'Không bỏ lại ai' & Cập bến hòn đảo Karst lúc 15:00"]
+    end
 
----
+    subgraph Midpoint["BƯỚC NGOẶT TRUNG TÂM (15:00 - 16:30 | 90s | 12 Scenes)"]
+        M1["SC-109 đến SC-110: Hẻm đá cụt & Tranh cãi nảy lửa"] --> M2["SC-111 đến SC-115: ĐÚNG 15:18 - Tiếng kêu cứu & Giải cứu Theron"]
+        M2 --> M3["SC-116 đến SC-120: Theron vạch trần: 'Bản đồ là bẫy mồi nhử!'"]
+    end
 
-### HỒI 1: TẤM BẢN ĐỒ BỤNG CÁ (ACT 1: THE BIOLUMINESCENT OMEN)
+    subgraph Act2B["HỒI 2B: MÊ CUNG & BẪY QUÁI VẬT (16:30 - 20:00 | 210s | 26 Scenes)"]
+        C1["SC-121 đến SC-130: Đi trên rêu mềm & Quái thú Labyrinth thức giấc"] --> C2["SC-131 đến SC-136: Cuộc rượt đuổi nghẹt thở & Khiên đồng chặn giáp"]
+        C2 --> C3["SC-137 đến SC-146: Dùng bản đồ làm mồi & Đánh sập vòm đá 20 tấn"]
+    end
 
-#### Scene 01 | Biển Mù Sương & Bắt Giữ Thuyền Cá
-* **Độ dài:** 8s | **Khung neo (Rule 69):** `STORYBOARD 2×2` (mốc 0s, 3s, 6s, 8s — Pure R2V References, BỎ cắt P1). | **Cỡ cảnh:** Extreme Wide Shot sang Medium Shot (Tracking).
-* **Góc máy:** Máy điện ảnh từ mạn thuyền trôi chậm theo con tàu hải tặc lướt trong sương mù dày đặc; đèn lồng hắt sáng vàng lên mặt nước xanh thẫm.
-* **Refs:** `["Nora", "Nora Body Seafarer", "Castor"]`
-* **Hành động:**
-  * `0-3s`: Con thuyền cá nhỏ tròng trành bị móc neo sắt của tàu hải tặc kéo giật vào mạn; sóng biển vỗ ầm ầm vào vỏ gỗ sồi.
-  * `3-6s`: Castor nhảy xuống mũi thuyền cá, chĩa mũi nỏ vào lão ngư dân đang co rúm người ôm bọc lưới bốc khói lân tinh.
-  * `6-8s`: Nora bước ra mạn tàu, ánh mắt kiên định nhìn xuống bọc lưới phát quang lục bảo.
-* **Thoại:**
-  * `3-6s`: Castor says (harsh, skeptical): *"Stand clear! He's hoarding something alive in the hold."* (10 words)
-* **Audio/SFX:** Tiếng gỗ tàu kẽo kẹt, tiếng nước biển đập mạn, tiếng gió rít qua dây buồm.
+    subgraph Act3["HỒI 3: ĐIỆN THỜ CÂY VÀNG & HẠ MÀN (20:00 - 26:47 | 407s | 48 Scenes)"]
+        D1["SC-147 đến SC-158: Điện Thờ Cây Vàng & Lời nguyền hài cốt mạ vàng"] --> D2["SC-159 đến SC-170: Thử thách lòng tham & Thức tỉnh Castor, nhận chiếc lá vàng"]
+        D2 --> D3["SC-171 đến SC-194: Trở về con tàu & Giương buồm bình minh tự do (26:47)"]
+    end
 
----
-
-#### Scene 02 | Mổ Bụng Con Cá Dị Dạng
-* **Độ dài:** 8s | **Khung neo (Rule 69):** `STORYBOARD 2×2` (mốc 0s, 3s, 6s, 8s — Chuyển cảnh vào cabin tàu). | **Cỡ cảnh:** Medium Close-up to Macro Insert.
-* **Góc máy:** Slow forward dolly push-in hướng vào mặt bàn gỗ mục cabin tàu; ánh đèn bão tạo bóng đổ Chiaroscuro gắt gao.
-* **Refs:** `["Nora", "Nora Body Seafarer", "Omen Fish"]`
-* **Hành động:**
-  * `0-3s`: Con cá dị dạng nằm trên bàn gỗ, lớp vảy xà cừ đen nhấp nháy ánh lục bảo yếu ớt; hàm răng nhọn hoắt há hốc.
-  * `3-6s`: Bàn tay Nora cầm đoản kiếm Hy Lạp rạch dứt khoát một đường dọc bụng cá; chất nhờn lấp lánh cát thạch anh tràn ra.
-  * `6-8s`: Mũi dao tách mô thịt, để lộ cuộn da cừu trắng tinh khiết không dính máu.
-* **Thoại:**
-  * `0-3s`: Nora says (focused, steady): *"Look at the gills. This was bred in deep abyss."* (10 words)
-* **Audio/SFX:** Tiếng dao cắt qua lớp vảy giáp tanh tách, tiếng chất nhờn ướt át trượt trên mặt gỗ.
+    Act1 --> Act2A
+    Act2A --> Midpoint
+    Midpoint --> Act2B
+    Act2B --> Act3
+```
 
 ---
 
-#### Scene 03 | Bản Đồ Ma Thuật Khởi Động
-* **Độ dài:** 8s | **Khung neo (Rule 65):** `PREV_LAST_FRAME` (Loại 1 — Cảnh liên tục trên bàn cabin, lấy khung cuối Scene 02). | **Cỡ cảnh:** Close-up to Over-The-Shoulder Shot.
-* **Góc máy:** Low-angle cố định ngang ngực Nora, hướng về cuộn da cừu mở rộng trên bàn.
-* **Refs:** `["Nora", "Nora Body Seafarer", "Castor", "Heracles"]`
-* **Hành động:**
-  * `0-3s`: Castor nhìn tờ giấy trắng tinh, nhếch mép thất vọng; Heracles đứng khoanh tay sừng sững phía sau.
-  * `3-6s`: Nora nhúng ngón tay vào bát nước biển mặn, nhỏ ba giọt nước lên mặt da cừu.
-  * `6-8s`: Các đường gân mực vàng kim bừng sáng lan tỏa như mạch máu, vẽ nên hải trình ngoằn ngoèo dẫn tới biểu tượng Cây Vàng.
-* **Thoại:**
-  * `3-6s`: Nora says (commanding, inspired): *"Salt awakens the ink. The Golden Tree is not a myth."* (11 words)
-* **Audio/SFX:** Tiếng rít nhẹ phát quang ma thuật (chimes ngân vang), tiếng trầm trồ của thủy thủ ngoài boong.
+## 4. CHI TIẾT TỪNG PHẦN KỊCH BẢN (ACT FILES DIRECTORY)
+
+Kịch bản chi tiết từng cảnh, bảng Storyboard 12 cột, phân bổ giây, mã thoại chính xác và cơ chế chuyển động được chia tách thành 5 tài liệu hoàn chỉnh:
+
+1. **Hồi 1 (00:00 – 05:00 | 300s | SC-01 đến SC-36):**  
+   📄 [Xem chi tiết script_act1.md](file:///c:/flowkit/output/golden-tree/script_act1.md)  
+   *Trọng tâm:* Bắt giữ thuyền cá, mổ bụng cá dị dạng thời tiền sử, thử nghiệm nước muối kích hoạt mực vàng kim, con tàu vượt qua giông bão lao vào vách đá Clashing Rocks.
+
+2. **Hồi 2A (05:00 – 15:00 | 600s | SC-37 đến SC-108):**  
+   📄 [Xem chi tiết script_act2a.md](file:///c:/flowkit/output/golden-tree/script_act2a.md)  
+   *Trọng tâm:* Vượt qua vách đá nghiền, kéo tàu 40 tấn vượt cạn bằng trục lăn gỗ thông biển, trận chiến chống bầy Sirens biến hình dưới nước ngọc bích, Nora lặn cứu thủy thủ trẻ, đốt dầu mặt vịnh bứt phá cập bến đảo Karst.
+
+3. **Bước Ngoặt Trung Tâm Midpoint (15:00 – 16:30 | 90s | SC-109 đến SC-120):**  
+   📄 [Xem chi tiết script_midpoint.md](file:///c:/flowkit/output/golden-tree/script_midpoint.md)  
+   *Trọng tâm:* **Khớp mốc 15:18 (918s) của nguyên tác YouTube**: Đứng trước bức tường đá cụt, Nora quyết định rẽ hướng cứu Theron đang kẹt trong hốc đá sụt thay vì lao theo bản đồ mù quáng; Theron vạch trần tấm bản đồ thực chất là mồi nhử chết chóc của Cây Vàng.
+
+4. **Hồi 2B (16:30 – 20:00 | 210s | SC-121 đến SC-146):**  
+   📄 [Xem chi tiết script_act2b.md](file:///c:/flowkit/output/golden-tree/script_act2b.md)  
+   *Trọng tâm:* Dò dẫm trên rêu mềm, quái vật Labyrinth Beast 6 chân giáp xác truy sát, Heracles dùng khiên đồng chặn đòn, Nora bắn nỏ găm bản đồ làm mồi nhử, Castor chém đứt dây chằng đánh sập 20 tấn đá vôi nghiền nát quái thú.
+
+5. **Hồi 3 (20:00 – 26:47 | 407s | SC-147 đến SC-194):**  
+   📄 [Xem chi tiết script_act3.md](file:///c:/flowkit/output/golden-tree/script_act3.md)  
+   *Trọng tâm:* Khám phá giếng trời ngầm kỳ vĩ, chiêm ngưỡng Cây Vàng rực rỡ phát tán Golden Embers, cảnh báo từ những bộ hài cốt mạ vàng dưới đáy hồ, phép thử lòng tham (Nora can ngăn và thức tỉnh Castor), nhận chiếc lá vàng rụng tự nhiên làm tín vật, giương buồm trở về giữa ánh bình minh đại dương rực rỡ lúc 26:47.
 
 ---
 
-### HỒI 2A: THỬ THÁCH BIỂN SÂU (ACT 2A: THE OCEANIC ORDEALS)
+## 5. THỐNG KÊ QUY CHUẨN KỸ THUẬT & KIỂM ĐỊNH CHẤT LƯỢNG
 
-#### Scene 04 | Vách Đá Nghiền Clashing Rocks
-* **Độ dài:** 8s | **Khung neo (Rule 69):** `STORYBOARD 2×2` (mốc 0s, 3s, 6s, 8s — Chuyển cảnh eo biển bão). | **Cỡ cảnh:** Extreme Wide Low-Angle.
-* **Góc máy:** Dynamic Tracking Shot bám sát mũi tàu lao giữa hai bức tường đá bazan dựng đứng đang chao đảo nghiền vào nhau.
-* **Refs:** `["Nora", "Nora Body Seafarer", "Heracles"]`
-* **Hành động:**
-  * `0-3s`: Sóng biển cuộn trào bọt trắng xóa; vách đá bên phải sụp xuống hàng tấn mảnh đá dăm bay rào rào.
-  * `3-6s`: Heracles dùng cả lồng ngực vạm vỡ gồng mình giữ chặt cần tời buồm; Nora ghì chặt bánh lái bẻ ngoặt 45 độ.
-  * `6-8s`: Con tàu lách qua khe hẹp đúng một gang tay trước khi hai mảng đá khổng lồ đập sập vào nhau tạo tiếng nổ long trời.
-* **Thoại:**
-  * `0-3s`: Nora says (shouting over crashing waves): *"Brace the mast! Keep her straight into the spray!"* (10 words)
-* **Audio/SFX:** Tiếng đá tảng va đập sấm sét, tiếng gỗ chịu lực gầm rú, tiếng sóng biển gầm vang.
-
----
-
-#### Scene 05 | Tiếng Hát Sirens Vực Biển Sâu
-* **Độ dài:** 8s | **Khung neo (Rule 69):** `STORYBOARD 2×2` (mốc 0s, 3s, 6s, 8s — Chuyển cảnh vực nước sâu). | **Cỡ cảnh:** Medium Shot to Dutch Angle.
-* **Góc máy:** Cận mặt nước xanh ngọc bích phát quang ma quái; sương mù bảng lảng.
-* **Refs:** `["Nora", "Nora Body Seafarer", "Abyssal Siren"]`
-* **Hành động:**
-  * `0-3s`: Ba sinh vật Siren trồi lên mạn thuyền, da trắng như ngọc, cất tiếng ngâm nga ngân dài thôi miên thủy thủ đoàn.
-  * `3-6s`: Một thủy thủ thả rơi mái chèo bước ra mạn; đôi mắt Siren lập tức hóa đen tuyền, hàm rách toạc để lộ 3 hàng răng cá mập chồm lên.
-  * `6-8s`: Nora rút đoản kiếm chém đứt móng vuốt quái thú, túm cổ áo thủy thủ giật ngược lại sàn tàu an toàn.
-* **Thoại:**
-  * `3-6s`: Nora says (urgent, breathless): *"Cover your ears! Plug the wax and loose the fire-arrows!"* (11 words)
-* **Audio/SFX:** Tiếng hát du dương biến thành tiếng thét rít quái thai xé toạc không gian.
+| Hạng mục kiểm tra | Chỉ số thực tế | Tiêu chuẩn Rule / Skill | Đánh giá |
+| :--- | :--- | :--- | :--- |
+| **Tổng thời lượng** | **1,607 giây (26:47)** | Khớp 100% video nguồn YouTube | **ĐẠT TUYỆT ĐỐI** |
+| **Tổng số phân cảnh** | **194 Phân cảnh** | Trung bình 8.28 giây/phân cảnh | **CHUẨN ĐIỆN ẢNH** |
+| **Góc máy & Phong cách** | 100% Third-Person | CẤM selfie, CẤM POV điện thoại, CẤM vlog | **ĐẠT (Rule 30, 71)** |
+| **Tỷ lệ Storyboard 2×2** | 134 / 194 scenes (~69%) | Bắt buộc cho chuyển cảnh/đổi góc/hành động | **ĐẠT (Rule 69)** |
+| **Tỷ lệ Prev_Last_Frame** | 60 / 194 scenes (~31%) | Dùng cho phân đoạn đối thoại/cận cảnh liên tục | **ĐẠT (Rule 65)** |
+| **Tuân thủ thoại Rule 49** | 100% các câu thoại từ 8-21 từ | Chừa 40-60% khoảng trống cho SFX và hành động | **CHUẨN XÁC** |
+| **Ánh sáng & Visual** | Motivated Practical Light | Tuyệt đối CẤM `god rays` và `rim lighting` | **ĐẠT (Rule 61, 62)** |
+| **Sức nặng & Động lượng** | $p = m \cdot v$, lực truyền gián tiếp | Không người thường chịu va chạm trực diện quái thú | **ĐẠT (Rule 41, 51)** |
 
 ---
 
-### BƯỚC NGOẶT TRUNG TÂM (MIDPOINT 15:18): HÒN ĐẢO ĐÁ VÔI & GIẢI CỨU THERON
-
-#### Scene 06 | Vách Đá Cụt & Cuộc Tranh Cãi Nảy Lửa
-* **Độ dài:** 8s | **Khung neo (Rule 69):** `STORYBOARD 2×2` (mốc 0s, 3s, 6s, 8s — Chuyển cảnh hòn đảo Karst 15:18). | **Cỡ cảnh:** Medium Two-Shot (Nora & Castor).
-* **Góc máy:** Eye-level tĩnh đặt giữa khe hẻm núi đá vôi xám cằn cỗi; sương mù lạnh trôi là là mặt đất.
-* **Refs:** `["Nora", "Nora Body Seafarer", "Castor"]`
-* **Hành động:**
-  * `0-3s`: Đoàn người dừng chân trước một vách đá vôi sừng sững bít kín hẻm núi; bụi đá trắng bay mù mịt.
-  * `3-6s`: Castor ném mạnh mũi tên cắm phập vào vách đá, chỉ tay vào tấm bản đồ trên tay Nora với ánh mắt phẫn nộ.
-  * `6-8s`: Nora giơ tấm bản đồ phát quang lên đối chiếu với rãnh đá, chân mày nhíu chặt căng thẳng.
-* **Thoại:**
-  * `3-6s`: Castor says (furious, cynical): *"It's a dead wall, Nora! Your glowing fish-skin led us into an open grave!"* (15 words)
-* **Audio/SFX:** Tiếng gió hú qua khe đá hẹp, tiếng bước chân lạo xạo trên đá dăm khô khốc.
-
----
-
-#### Scene 07 | Đúng 15:18 — Tiếng Kêu Cứu Trong Khe Nứt Sạt Lở
-* **Độ dài:** 8s | **Khung neo (Rule 65):** `PREV_LAST_FRAME` (Loại 1 — Tiếp nối chân vách đá, lấy khung cuối Scene 06). | **Cỡ cảnh:** Low-Angle Tilt-Up to Macro Crevice.
-* **Góc máy:** Dutch Angle nhẹ (nghiêng 10 độ) tăng cảm giác bất an; lia máy từ chân vách đá vào một hốc nứt tối tăm.
-* **Refs:** `["Nora", "Nora Body Seafarer", "Theron"]`
-* **Hành động:**
-  * `0-3s`: Nora giơ tay ra hiệu im lặng; giữa tiếng gió hú, vang lên tiếng cào cấu và tiếng thở hổn hển từ khe đá sập.
-  * `3-6s`: Bên trong khe nứt hẹp, khuôn mặt Theron ló ra: râu tóc bạc phơ đóng bụi vôi, ánh mắt hoang dại vì đói khát, bàn tay gầy gò vươn ra cầu cứu.
-  * `6-8s`: Bỏ qua lời phản đối của Castor, Nora lao tới quỳ xuống, chộp lấy bàn tay run rẩy của ông lão.
-* **Thoại:**
-  * `3-6s`: Theron speaks in a weathered, raspy knowledgeable male voice: *"Help me... the rocks slipped... before the hunter returns!"* (10 words)
-* **Audio/SFX:** Tiếng đá dăm rơi rào rào, tiếng thở khò khè nghẹn ngào của Theron.
-
----
-
-#### Scene 08 | Vạch Trần Cái Bẫy Của Bản Đồ Ma Thuật
-* **Độ dài:** 8s | **Khung neo (Rule 65):** `PREV_LAST_FRAME` (Loại 1 — Tiếp nối ngay sau khi cứu Theron). | **Cỡ cảnh:** Over-The-Shoulder (Nora nhìn Theron).
-* **Góc máy:** Cận cảnh trung bình; ánh sáng ban ngày xuyên qua kẽ nứt hắt bóng đổ gắt gao lên khuôn mặt hai người.
-* **Refs:** `["Nora", "Nora Body Seafarer", "Theron"]`
-* **Hành động:**
-  * `0-3s`: Heracles bẩy tảng đá lớn ra; Nora đỡ Theron ngồi tựa vào vách đá, trao bầu nước da.
-  * `3-6s`: Theron nhìn thấy tấm bản đồ da cừu phát quang trên tay Nora, bật cười khản đặc cay đắng.
-  * `6-8s`: Theron giơ phiến đá cổ của mình lên, chỉ vào các rãnh bẫy ngầm mà bản đồ ma thuật đã cố tình che giấu.
-* **Thoại:**
-  * `3-6s`: Theron speaks in a weathered, raspy knowledgeable male voice: *"That paper doesn't show a passage. It shows the bait. The tree feeds on fools who follow it blindly."* (19 words)
-* **Audio/SFX:** Tiếng nuốt nước ừng ực, tiếng phiến đá vôi gõ lách cách vào nhau.
-
----
-
-### HỒI 2B: MÊ CUNG & BẪY QUÁI VẬT CHITIN (ACT 2B: THE LABYRINTH CLASH)
-
-#### Scene 09 | Theron Dẫn Đường Trong Hẻm Ngầm
-* **Độ dài:** 6s | **Khung neo (Rule 69):** `STORYBOARD 2×2` (mốc 0s, 2s, 4s, 6s — Chuyển cảnh vào hẻm đá ngầm). | **Cỡ cảnh:** Wide Tracking Shot.
-* **Góc máy:** Camera lùi dần (Backwards Dolly) dẫn trước đoàn người đang luồn lách qua hẻm đá vôi dốc đứng u tối.
-* **Refs:** `["Nora", "Nora Body Seafarer", "Theron", "Heracles"]`
-* **Hành động:**
-  * `0-3s`: Theron chống gậy đá đi trước, ra hiệu đoàn người cúi thấp người men theo gờ đá ẩm ướt.
-  * `3-6s`: Từ trần hang phía sau, các mảnh đá vôi rung chuyển rơi xuống; tiếng chân giáp xác cào xé vách đá rền vang từ xa.
-* **Thoại:**
-  * `0-3s`: Theron speaks in a weathered, raspy knowledgeable male voice: *"Step where the moss clings. The stone beast listens to hollow footsteps."* (12 words)
-* **Audio/SFX:** Tiếng bước chân nhẹ rón rén, tiếng đá rung chấn động từ sâu trong lòng núi.
-
----
-
-#### Scene 10 | Quái Vật Chitin Xuất Kích
-* **Độ dài:** 8s | **Khung neo (Rule 69):** `STORYBOARD 2×2` (mốc 0s, 3s, 6s, 8s — Hành động hỗn loạn nhiều nhịp). | **Cỡ cảnh:** Low-Angle Hero Shot sang Action Pan.
-* **Góc máy:** Handheld Shaky bám sát chuyển động hỗn loạn; máy rung giật theo từng nhịp va chạm.
-* **Refs:** `["Nora", "Nora Body Seafarer", "Labyrinth Beast", "Heracles"]`
-* **Hành động:**
-  * `0-3s`: Quái vật Chitin 6 mét từ trên vòm hang bổ nhào xuống; 6 chân móc cắm ngập vào vách đá làm vỡ vụn từng mảng đá lớn.
-  * `3-6s`: Chiếc đuôi gai độc quét ngang một đường bạt mạng; Heracles giơ khiên đồng đỡ đòn, chấn lực đẩy trượt lùi 2 mét trên sỏi.
-  * `6-8s`: Quái thú rít lên chói tai, đôi kìm đôi há to nhỏ giọt dịch axit bốc khói nghi ngút.
-* **Thoại:** (Sonic Isolation — 0 từ; dồn toàn bộ kịch tính vào âm thanh chiến đấu).
-* **Audio/SFX:** Tiếng kim loại va đập chát chúa, tiếng rít axit xèo xèo ăn mòn mặt đất, tiếng đất đá sạt lở dữ dội.
-
----
-
-#### Scene 11 | Dùng Bản Đồ Làm Mồi & Kích Hoạt Bẫy Đá Sập
-* **Độ dài:** 8s | **Khung neo (Rule 69):** `STORYBOARD 2×2` (mốc 0s, 3s, 6s, 8s — Bẫy sập 3 nhịp). | **Cỡ cảnh:** Medium Action Shot to Wide Payoff.
-* **Góc máy:** Chuyển từ góc cận Nora kéo nỏ sang góc toàn cảnh hẻm đá nơi bẫy sập được kích hoạt.
-* **Refs:** `["Nora", "Nora Body Seafarer", "Labyrinth Beast", "Castor"]`
-* **Hành động:**
-  * `0-3s`: Nora quấn tấm bản đồ da cừu phát quang quanh mũi tên lửa, giương nỏ bắn cắm phập vào vòm hang bên kia hẻm.
-  * `3-6s`: Quái thú bị ánh sáng lân tinh dụ dỗ chồm lên tảng đá treo; Castor chém đứt sợi dây chão neo giữ cọc gỗ.
-  * `6-8s`: Tảng đá vôi hàng tấn sập xuống như trời giáng, đè bẹp thân quái thú trong bụi mù mịt mịt mùng.
-* **Thoại:**
-  * `0-3s`: Nora says (commanding, shouting): *"Castor, cut the lanyard now! Bring the arch down!"* (9 words)
-* **Audio/SFX:** Tiếng dây chão đứt phựt, tiếng đá rơi ầm ầm long trời lở đất, tiếng gầm tắt nghẽn của quái vật.
-
----
-
-### HỒI 3: ĐIỆN THỜ CÂY VÀNG & TỰ DO (ACT 3: THE GOLDEN SANCTUARY)
-
-#### Scene 12 | Khám Phá Giếng Trời & Cây Vàng Rực Rỡ
-* **Độ dài:** 10s | **Khung neo (Rule 69):** `STORYBOARD 2×2` (mốc 0s, 3s, 7s, 10s — Chuyển cảnh đại cảnh giếng trời Cây Vàng). | **Cỡ cảnh:** Extreme Wide Establishing Master Shot (Slow Push-In).
-* **Góc máy:** Máy điện ảnh từ từ đẩy tới xuyên qua vòm hang tối, mở ra không gian giếng trời ngầm kỳ vĩ ngập ánh trăng.
-* **Refs:** `["Nora", "Nora Body Seafarer", "Golden Tree", "Theron"]`
-* **Hành động:**
-  * `0-3s`: Cả đoàn người đứng sững sờ trên bờ đá; phản chiếu ánh vàng rực rỡ lên áo giáp phong trần của họ.
-  * `3-7s`: Cây Vàng cổ đại sừng sững cao 20m ở trung tâm hồ pha lê, tán lá vàng óng rung rinh phát tán hàng ngàn đốm sáng Golden Embers lơ lửng.
-  * `7-10s`: Dưới chân gốc cây, ánh đèn bộc lộ hàng chục bộ hài cốt mạ vàng bị đông cứng trong tư thế quằn quại vươn tay.
-* **Thoại:**
-  * `3-7s`: Theron speaks in a weathered, raspy knowledgeable male voice: *"Behold the golden curse. Everyone who reached for the boughs became part of the root."* (16 words)
-* **Audio/SFX:** Dàn nhạc giao hưởng thánh thót, tiếng gió luồn qua khe đá tạo âm vang huyền bí, tiếng bụi sáng tanh tách như than hồng.
-
----
-
-#### Scene 13 | Phép Thử Lòng Tham & Quyết Định Của Nora
-* **Độ dài:** 8s | **Khung neo (Rule 65):** `PREV_LAST_FRAME` (Loại 1 — Tiếp nối bên bờ hồ nước ngầm). | **Cỡ cảnh:** Medium Close-up Two-Shot.
-* **Góc máy:** Low-Angle ngang ngực Nora và Castor bên bờ hồ nước ngầm trong vắt.
-* **Refs:** `["Nora", "Nora Body Seafarer", "Castor"]`
-* **Hành động:**
-  * `0-3s`: Castor mê mẩn bước tới sát mặt nước, rút dao găm định vươn tay chặt một nhánh rễ vàng rực sáng.
-  * `3-6s`: Nora đặt bàn tay thép ghì chặt cổ tay Castor lại, ánh mắt nghiêm nghị đầy quyền uy thức tỉnh anh.
-  * `6-8s`: Nora cúi xuống mặt hồ, chỉ vớt lấy một chiếc lá vàng rụng trôi dạt bên mép đá làm chứng tích sống sót.
-* **Thoại:**
-  * `3-6s`: Nora says (firm, calm, resonant): *"Gold cannot steer a ship, Castor. We leave with our lives, or we become statues."* (16 words)
-* **Audio/SFX:** Tiếng nước hồ sóng sánh gợn nhẹ, tiếng kim loại dao găm tra lại vào bao da dứt khoát.
-
----
-
-#### Scene 14 | Hạ Màn — Giương Buồm Ra Khơi Biển Mênh Mông
-* **Độ dài:** 10s | **Khung neo (Rule 69):** `STORYBOARD 2×2` (mốc 0s, 3s, 7s, 10s — Chuyển cảnh rạng đông biển lớn). | **Cỡ cảnh:** Wide Establishing Shot to Horizon Pan.
-* **Góc máy:** Máy quay từ trên cao bay lượn (High-angle Crane/Dolly) theo cánh buồm con tàu hải tặc rẽ sóng ra khỏi vịnh đảo đá vôi; ánh bình minh rạng đông đỏ rực rọi sáng mặt biển bao la.
-* **Refs:** `["Nora", "Nora Body Seafarer"]`
-* **Hành động:**
-  * `0-4s`: Con tàu giương toàn bộ cánh buồm no gió, lướt nhanh ra khỏi hẻm núi tăm tối hướng về biển lớn tự do.
-  * `4-7s`: Nora đứng hiên ngang ở mũi tàu, một tay đặt trên chuôi đoản kiếm, bàn tay kia xòe ra chiếc lá vàng lấp lánh trong nắng sớm.
-  * `7-10s`: Máy quay từ từ nâng cao lên bầu trời xanh biếc; con tàu trở thành biểu tượng kiêu hãnh giữa đại dương bao la.
-* **Thoại:** (0 từ — Lắng đọng trọn vẹn bằng giai điệu điện ảnh hào hùng).
-* **Audio/SFX:** Tiếng sóng vỗ mạn tàu mạnh mẽ, tiếng gió căng buồm, nhạc khúc khải hoàn hạ màn.
-
----
-
-## 4. BƯỚC TIẾP THEO THEO QUY TRÌNH `fk-film`
-1. Đã hoàn tất Tầng 1 (`story-bible.md`) và Tầng 2 (`script.md` + `creatures_and_characters_design.md`).
-2. Sẵn sàng chuyển sang Tầng 2.5: **Dựng trên giấy (`paper_edit.md`)** kiểm toán thời lượng và số từ Rule 49.
-3. Xuất Structured JSON Prompt cho từng phân cảnh (`prompts_act1.json`, `prompts_act2.json`, `prompts_act3.json`).
+> Kịch bản 26 phút 47 giây đã sẵn sàng 100% để chuyển sang giai đoạn tạo Prompt JSON (`fk-script-to-prompts`) và sinh ảnh Storyboard 2×2 (`fk-storyboard`).
