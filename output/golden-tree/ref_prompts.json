@@ -4,7 +4,7 @@
   "generated_at": "2026-10-22T21:45:00Z",
   "material": "realistic",
   "style_lock": "35mm film, cinematic documentary realism, Panavision anamorphic lens, rich dark chiaroscuro, natural motivated lighting, matte organic biological textures, strictly NO 3D CGI sheen, NO plastic textures, NO anime, NO Disney aesthetics",
-  "references": [
+  "reference_entities": [
     {
       "entity_name": "Nora",
       "entity_type": "character",
