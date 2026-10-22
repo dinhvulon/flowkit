@@ -5246,7 +5246,7 @@
     "duration": 8,
     "aspect_ratio": "16:9",
     "refs": [
-      "LS-03 Storyboard",
+      "LS-03 Start Frame",
       "Eli",
       "Nora",
       "Nora Body Fire",
@@ -5255,12 +5255,12 @@
       "Ridge Road Fire"
     ],
     "start_frame": {
-      "type": "STORYBOARD",
-      "note": "Storyboard-anchored r2v: reference image {{media:21a98e3e-b690-4a59-b975-20964ca7a0cd|LS-03 Storyboard.jpg}} is the time reference for the 4 moments in time (0s, 3s, 6s, 8s)."
+      "type": "OPENING_FRAME_REF",
+      "note": "Approved Start Frame {{media:f48ca600-239c-447d-a251-7bdc93d626fc|LS-03 Start Frame.jpg}} anchors Frame 0 exactly."
     },
     "camera": {
       "viewpoint": "third-person cinematic camera; the camera itself is never seen",
-      "shot_size": "OPENING SHOT (second 0): matching the top-left panel of {{media:21a98e3e-b690-4a59-b975-20964ca7a0cd|LS-03 Storyboard.jpg}}: a tense medium two-shot on the rocky rise at {{media:2983af59-909e-4865-9655-b4d61d37f337|Ridge Road Fire.jpg}}: Eli on the left leaning forward with fierce panic clutching the silver foil fire shelter, Nora on the right in her yellow wildland shirt and helmet holding the shelter, wildfire blazing behind them.",
+      "shot_size": "OPENING FRAME = {{media:f48ca600-239c-447d-a251-7bdc93d626fc|LS-03 Start Frame.jpg}}: the very first frame is exactly that image: the same camera position, framing, people and places. A tense waist-level medium two-shot on the rocky rise at {{media:2983af59-909e-4865-9655-b4d61d37f337|Ridge Road Fire.jpg}}: Nora on the right holding the single silver fire shelter packet pressing it toward Eli's chest, Eli on the left with bare empty hands pushing the shelter back shouting 'And you?!', the grey mare Juniper behind them, wildfire raging on Ridge Road.",
       "description": "50mm Cooke prime, handheld and emotionally charged, covering the intense confrontation between Eli and Nora with the crinkling silver foil shelter between them.",
       "continuity": "one continuous unbroken 8-second cinematic scene, framing shifts organically between the two siblings matching the storyboard milestones.",
       "focus": "deep focus, everything sharp (f/8)"
@@ -5339,7 +5339,8 @@
       "Smoke is ragged and torn, streaming with the wind, never round puffy clumps, never a white haze filling the frame; no fire tornado.",
       "Exactly one fire shelter.",
       "Spoken words in this clip: 9.",
-      "The video is full-frame shots only: never a grid, never panels, never split screen, never black dividing lines."
+      "The video is full-frame shots only: never a grid, never panels, never split screen, never black dividing lines.",
+      "Strictly exactly one fire shelter in the entire video: Nora holds the single silver shelter; Eli's hands are bare and he never holds or produces any foil."
     ],
     "storyboard": "TIME STORYBOARD (CRITICAL): the reference image {{media:21a98e3e-b690-4a59-b975-20964ca7a0cd|LS-03 Storyboard.jpg}} is a STORYBOARD OF FOUR MOMENTS IN TIME from this one clip, NOT a single frame and NOT a layout to draw. Read it left to right, top to bottom: top-left = second 0 (Panel 1), top-right = second 3 (Panel 2), bottom-left = second 6 (Panel 3), bottom-right = second 8 (Panel 4). Use it only as the plan for how the action and the camera unfold; the video is full-frame shots only, never a grid, never split into panels, never black gutters. At the final frame Eli screams in grief through tears clutching the shelter with Nora, matching the bottom-right panel."
   },
