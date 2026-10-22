@@ -1,6 +1,6 @@
 ---
 name: fk-film
-description: "Narrative film / series orchestrator (third-person cinematic, structured JSON prompts, Omni Flash r2v) — dùng khi làm phim hoặc series kể chuyện ngôi thứ ba (ví dụ EMBERS, phim cháy rừng): story bible, kịch bản, storyboard, prompt JSON, dựng dự án FlowKit, refs, sinh và review clip, hậu kỳ. Không dùng cho POV / selfie vlog (luật vlog cũ lưu ở references/vlog-archive.md)."
+description: "Narrative film / series orchestrator (third-person cinematic, structured JSON prompts, Omni Flash r2v) — dùng khi làm phim hoặc series kể chuyện ngôi thứ ba (ví dụ EMBERS, phim cháy rừng): story bible, kịch bản, storyboard, prompt JSON, dựng dự án FlowKit, refs, sinh và review clip, hậu kỳ."
 ---
 
 # fk-film — Phim kể chuyện ngôi thứ ba (Narrative Film / Series Orchestrator)
@@ -9,15 +9,15 @@ Phim hoặc series kể chuyện bằng **máy điện ảnh ngôi thứ ba**: n
 
 Phim giữ người xem nhờ 3 thứ: **nhân vật có muốn và cần mâu thuẫn nhau** (xung đột thật, không giải thích bằng lời), **thế giới tin được** (chất liệu thật, lửa và khói đúng vật lý, không CGI), và **chuỗi nhân quả leo thang** tới payoff. Cảnh nào không phục vụ 3 thứ đó thì cắt.
 
-**Đây không phải skill vlog.** Không selfie, không POV điện thoại, không nhân vật nói với ống kính, không mặc định giọng Laomedeia. Skill cũ `/fk-time-travel-vlog` đã đổi thành skill này (2026-10-19); mọi luật và bài học chỉ đúng cho POV vlog nằm ở [`references/vlog-archive.md`](references/vlog-archive.md) — **không tự áp cho phim**. Luật CLAUDE.md có tiền tố *"(Chỉ áp cho POV vlog — phim dùng /fk-film)"* cũng không áp.
+**Quy chuẩn điện ảnh ngôi thứ ba:** Không dùng góc quay POV/selfie, không cầm máy điện thoại, không nhân vật nói với ống kính, không độc thoại kiểu YouTuber. Mọi góc máy đều là góc nhìn điện ảnh khách quan (Third-person cinematic camera).
 
 ## Thứ tự ưu tiên khi các nguồn mâu thuẫn
 
-1. `CLAUDE.md` (trừ các luật có tiền tố "Chỉ áp cho POV vlog") và memory của user.
+1. `CLAUDE.md` và memory của user.
 2. Mục **Khóa cứng** bên dưới.
 3. `references/production-lessons.md` — bảng §1 (phim) trước, rồi bài học số lớn / ngày mới thắng bài cũ.
 4. `story-bible.md` / `script.md` của dự án (nguồn sự thật về truyện, thoại, nhân vật) và `references/prompt-lock.md` (câu chữ prompt).
-5. Các reference còn lại — mỗi file có khung *"Phim vs vlog"* dưới tiêu đề, ghi phần nào chỉ áp cho vlog.
+5. Các reference còn lại trong thư mục `skills/fk-film/references/`.
 
 Đường dẫn `references/…` tính từ thư mục skill này: `skills/fk-film/`.
 
@@ -59,7 +59,7 @@ Mỗi bước: đọc reference ghi kèm **trước khi** làm. Bước có ⛔ 
 | 0 | **Đầu vào** — tối đa 1 lượt hỏi, còn lại dùng mặc định (bảng dưới) và ghi rõ giả định | — | 3–5 dòng giả định |
 | 1 | **Research** (bắt buộc nếu dựa trên sự kiện / nơi chốn thật): `/fk-research`, lưu `.omc/research/` | `era-research.md`, `skills/fk-research.md` | gói research |
 | 1.5 | **Gói trước khi viết**: 3 tiêu đề + 3 ý tưởng thumbnail + 1 câu lời hứa cho mỗi cặp, theo ngôn ngữ thoại (Rule 20) ⛔ user chọn 1 → ghi `- **Package:** …` vào đầu `script.md` | `skills/fk-youtube-seo.md` Step 3, `skills/fk-thumbnail-guide.md`, `post-and-publish.md` §2 | dòng `Package` |
-| 2 | **Story bible** qua `/sw-workflow` (`/sw-premise-theme`, `/sw-story-structure`, `/sw-character-conflict`; series: `/sw-series-engine-bible`, `/sw-series-structure`) ⛔ | `story-engine.md` (bộ kiểm giữ chân) | `output/<slug>/story-bible.md` |
+| 2 | **Story bible** qua `/sw-workflow` (`/sw-premise-theme`, `/sw-story-structure`, `/sw-character-conflict`; series: `/sw-series-engine-bible`, `/sw-series-structure`) ⛔ | `/sw-story-structure`, `/sw-premise-theme` | `output/<slug>/story-bible.md` |
 | 3 | **Nhân vật & sinh vật**: bảng nhân vật (tuổi ≥19, dấu nhận diện, trạng thái trang phục theo cảnh, voice id), thiết kế Turnaround Sheet bằng `/fk-character-design`, `CHARACTER_LOCK` cho từng người | `skills/fk-character-design/SKILL.md`, `character-bible.md` §1, §5–7, `voice-bible.md` §0–0b, `cinematic-toolkit.md` §0, §4 | bảng nhân vật trong `script.md` |
 | 4 | **Kịch bản + storyboard + bảng vật lý**: `/sw-scene-craft`, `/sw-dialogue`, `/fk-scriptwriter`, `/fk-camera-guide`, `/fk-action-choreography`, `/fk-cinematic-transitions`. Cột `Dur` (4/6/8/10), cột `SF` (start frame), sổ liên tục bối cảnh ⛔ user duyệt | `shots-and-realism.md` (phần phim), `transitions.md` (phần phim), `cinematic-toolkit.md` §1–3 | `script.md` |
 | 4.5 | **Dựng trên giấy** (`/fk-paper-edit`): bấm giờ, số từ Rule 49, lời hứa trong 30s, móc giữ chân ≤ 90s, đề xuất cắt ⛔ | `skills/fk-paper-edit.md` | `paper_edit.md` |
@@ -150,7 +150,7 @@ Sau 4 bộ kiểm → checklist B (`prompt-lock.md`) → `python tools/lint_prom
 | `/fk-action-choreography` | Hành động 3 pha, từ vựng an toàn chống méo người, chuỗi 4s |
 | `/fk-storyboard` | **Bắt buộc cho mọi clip có sinh ảnh** (Rule 69, 22/10/2026): ảnh storyboard 2×2 theo thời gian làm ref + panel 1 làm khung mở đầu (r2v); không sinh start frame đơn lẻ. Bắt buộc đọc thể ảnh storyboard thực tế để điều chỉnh camera, góc quay, vắt cảnh trong prompt video trước khi sinh (Rule 69 (7)). Clip liên tục vẫn dùng khung cuối clip trước |
 | `/fk-cinematic-transitions` | Match on action, J/L-cut, mối nối giữa các clip |
-| `/fk-gen-narrator` | Đếm số từ thoại theo `duration`, `narrator_text` (chế độ phim — không dùng MODE A vlog) |
+| `/fk-gen-narrator` | Đếm số từ thoại theo `duration`, `narrator_text` (chế độ phim) |
 | `/fk-add-material` | Material của phim (style, lighting, chống CGI) |
 | `/fk-script-to-prompts` + `/fk-prompt-lock` + `/fk-review-prompt` | Chuyển kịch bản sang prompt JSON, lint, đọc lại toàn bộ |
 | `/fk-paper-edit` | Dựng trên giấy trước khi tốn credit |
@@ -159,7 +159,7 @@ Sau 4 bộ kiểm → checklist B (`prompt-lock.md`) → `python tools/lint_prom
 | `/fk-youtube-seo` + `/fk-thumbnail` + `/fk-youtube-analytics` | Đóng gói và chẩn đoán sau đăng |
 | `/fk-doctor` | Mọi lỗi pipeline (Rule 31) |
 
-Không dùng: `/fk-gen-chain-videos` (Veo start+end — `UNSUPPORTED_ON_BATCH_API`), `/fk-vlog-guide` (hub vlog cũ, ngừng dùng).
+Không dùng: `/fk-gen-chain-videos` (Veo start+end — `UNSUPPORTED_ON_BATCH_API`).
 
 ## Lỗi hay gặp
 
