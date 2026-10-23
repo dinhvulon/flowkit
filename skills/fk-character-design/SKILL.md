@@ -350,9 +350,23 @@ Example:
 
 For multi-character shots, write each character as a separate block, then describe left/center/right blocking.
 
-## Rule 57, 58 & 60: 16:9 Turnaround Contract & Ironclad 1:1 Face Lock (User Lock 13/10/2026)
+## Rule 57, 58, 60 & 72: 16:9 Turnaround Contract, Live-Action 35mm Casting & Anti-2D Lock (User Lock 23/10/2026)
 
 When designing references for living entities (Characters, Megafauna, Creatures):
+
+### 0. Mandatory Live-Action 35mm Casting & Anti-2D/Sketch Lock (Rule 72)
+- **STRICTLY FORBIDDEN:** Writing prompts ad-hoc without invoking this skill, or using 2D/sketch/concept art keywords.
+- **BANNED KEYWORDS (Triggers 2D Concept Art / Sketch Drift):**
+  - `study`, `character study`, `four-panel study`, `comparative study`
+  - `concept art`, `sketch`, `sketchbook`, `drawing`, `illustration`, `line art`, `pencil sketch`, `ink drawing`
+  - `anime`, `cartoon`, `graphic novel`, `CGI render`, `3D digital sculpture`, `wax museum statue`
+- **MANDATORY LIVE-ACTION CASTING CONTRACT FOR HUMAN CHARACTERS:**
+  - Must explicitly state: `Authentic 35mm film still photograph, portrayed by an actual real-life actor in a film casting studio on neutral dark backdrop, shot on Cooke S4 prime lens, 35mm Kodak Vision3 film stock, natural skin texture with visible pores and realistic micro-imperfections, zero makeup, neutral studio rim lighting`.
+  - Must arrange in **4 panels 16:9**: (1) Full-body front view with tailored costume, (2) Full-body 3/4 view, (3) Full-body side profile, (4) Close-up portrait of face and collar.
+- **MANDATORY PRACTICAL SFX CONTRACT FOR CREATURES/MONSTERS:**
+  - Must explicitly state: `Photographed as an authentic practical animatronic creature / physical practical special effects model on 35mm film set, rugged biological hide, weathered keratin, natural saliva/moisture, clean dry nostrils with transparent air (strictly NO breath smoke, NO white steam plumes)`.
+- **MANDATORY NEGATIVE CONSTRAINTS:**
+  - Every character/creature reference prompt MUST end with: `Strictly NO 2D drawing, NO sketch, NO line art, NO illustration, NO concept art, NO anime, NO cartoon, NO CGI render, NOT a 3D model, NOT a wax museum statue, NOT plastic toy`.
 
 ### 1. Creature & Megafauna Turnaround Sheet 16:9 (Rule 58)
 - **STRICTLY FORBIDDEN:** Single-angle photographs (Single Photograph) for major creatures/animals (causes mirror horn flip, lost asymmetry, and anatomical collapse).

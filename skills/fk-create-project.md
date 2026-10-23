@@ -147,9 +147,9 @@ curl -X POST http://127.0.0.1:8100/api/projects \
 ```
 
 > [!IMPORTANT]
-> **Thiết kế Entity bằng `/fk-character-design` (Rule 58):**
+> **Thiết kế Entity bằng `/fk-character-design` (Rule 58 & Rule 72 — BẮT BUỘC 100%):**
 > Khi khai báo các thực thể `character` hoặc sinh vật chủ chốt (creature/monster):
-> BẮT BUỘC sử dụng `/fk-character-design` (`skills/fk-character-design/`) để xây dựng `image_prompt` dạng **Turnaround Sheet 16:9** đa góc (Front | 3/4 | Side | Close-up cho nhân vật; 3/4 Trái | 3/4 Phải | Cận cảnh sọ cho sinh vật) khóa 5 tầng DNA anchors. CẤM tạo entity sinh vật/nhân vật bằng ảnh đơn 1 góc.
+> BẮT BUỘC sử dụng `/fk-character-design` (`skills/fk-character-design/`) để xây dựng `image_prompt` dạng **Turnaround Sheet 16:9** đa góc chụp người thật 35mm (Live-Action Casting) hoặc mô hình animatronic practical special effects thật trên trường quay. Khóa 5 tầng DNA anchors. CẤM tự viết prompt ad-hoc, CẤM tạo entity bằng ảnh đơn 1 góc, và CẤM TRIỆT ĐỂ các từ khóa 2D/sketch (`study`, `concept`, `sketchbook`, `drawing`, `illustration`). Phải có câu phủ định cấm 2D/CGI.
 
 Save the returned `project_id`.
 
