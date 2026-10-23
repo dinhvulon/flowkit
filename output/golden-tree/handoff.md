@@ -64,7 +64,13 @@ Toàn bộ dữ liệu của dự án được lưu trữ độc lập và tự 
     * `SC-15`: `e926a2cc-374a-4b49-895d-b21327164eea` (`SC-15_storyboard_clean.jpg`)
     * `SC-16`: `050d1587-7b86-4bde-b5d1-4d499e885be0` (`SC-16_storyboard_clean.jpg`)
     * `SC-17`: `4f556610-4918-42f7-9ea0-d7cc67598c62` (`SC-17_storyboard_clean.jpg`)
-* **Bước tiếp theo:** Chờ User duyệt 8 tấm Storyboard mới trên Review Board và xác nhận sinh tiếp video **SC-02** (`69d7a32b-d107-41d8-a5c4-e005e73e138c`) hoặc cụm cảnh tiếp theo của Hồi 1.
+* **Cảnh SC-02 (`69d7a32b-d107-41d8-a5c4-e005e73e138c`):**
+  * Lần 1 (`862d5eaf-7bc0-4875-8116-a170c1f196ab`, `output/golden-tree/scenes/scene_02_69d7a32b-d107-41d8-a5c4-e005e73e138c.mp4`):
+    * **Hình ảnh (24 frames `SC-02_contact_sheet_24frames.jpg`)**: **9.65/10** — Hoàn hảo 3 cú máy (Shot 1 `0-3s` Castor trên boong tàu chỉ tay xuống thuyền thúng bên phải; Hard Cut 1 tại `3.0s` sang Shot 2 `3-6s` Castor + Nora cầm đèn lồng đồng nhìn xuống thuyền; Hard Cut 2 tại `6.0s` sang Shot 3 `6-8s` góc cao nhìn thẳng vào thuyền thúng thấy rõ cá Omen Fish 1.8m/80kg bụng phát sáng xanh ngọc bên trái và Ông Lão Ngư Dân ôm mặt bên phải). Không nhân đôi nhân vật, không gộp trục 180°.
+    * **Âm thanh / Thoại (Whisper `tools/review_dialogue.py`)**: Phát hiện 2 vấn đề:
+      1. **Giọng nói (`pitch 232 Hz`)**: Do `SC-02` được gửi lúc `character.voice_description` trong DB chưa gán `fenrir`, hệ thống fallback về giọng mặc định `laomedeia` (giọng nữ) cho Castor (độ chính xác từ 100%). Hiện tại DB đã khóa cứng `Castor -> fenrir` (giọng nam trầm) và sắp xếp `character_names[0] = speaker[0]` cho toàn bộ 154 scenes.
+      2. **Timing thoại (`0.4s–7.12s` so với kế hoạch `0-6s`)**: Câu thoại 20 từ kéo dài lấn 1.12s qua cú cắt gắt ở giây `6.0s`.
+* **Bước tiếp theo:** Chờ User quyết định đối với **SC-02** (Phương án A: Sinh lại `SC-02` với giọng nam `fenrir` + câu thoại rút gọn 14 từ kết thúc trước 6.0s; hoặc Phương án B: Duyệt hình ảnh `SC-02` để upscale 1080p và chuyển sang sinh tiếp **SC-03**).
 
 ---
 
