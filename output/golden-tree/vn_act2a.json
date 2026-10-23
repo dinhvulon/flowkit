@@ -1,0 +1,1202 @@
+[
+  {
+    "clip_id": "SC-31",
+    "scene_name": "Nạy vách đá kẹt lườn",
+    "duration": 10,
+    "dramatic_craft": {
+      "beat": "Hook [!]: Nạy vách đá kẹt lườn",
+      "value_turn": "Danger -> Tactical grit: Overcoming lethal marine obstacles.",
+      "subtext": "The seafarers rely on discipline and physical brotherhood to survive.",
+      "prop_and_detail": "Heavy hemp cordage, oak ship timbers, bronze fittings, wet limestone."
+    },
+    "action_summary": {
+      "0-3s": "From the opening frame at second 0, Heracles begins speaking with commanding authority: Heracles says \"The basalt rock is grinding our outer oak hull to splintered kindling! Give me another heavy crowbar before the entire framing gives way!\" (no subtitles).",
+      "3-7s": "The line continues through the middle seconds as thân tàu kẹt giữa hai vách đá bazan; heracles ghì xà beng nạy kẹt.",
+      "7-10s": "Heracles finishes speaking by second 7; the crew executes the maneuver with iron discipline through second 10."
+    },
+    "dialogue": [
+      {
+        "t": "0-7s",
+        "speaker": "Heracles",
+        "line": "The basalt rock is grinding our outer oak hull to splintered kindling! Give me another heavy crowbar before the entire framing gives way!"
+      }
+    ],
+    "audio": "Heracles: The basalt rock is grinding our outer oak hull to splintered kindling! Give me another heavy crowbar before the entire framing gives way!; crashing surf, whistling wind."
+  },
+  {
+    "clip_id": "SC-32",
+    "scene_name": "Chèo lùi tránh sạt lở",
+    "duration": 8,
+    "dramatic_craft": {
+      "beat": "[-]: Chèo lùi tránh sạt lở",
+      "value_turn": "Danger -> Tactical grit: Overcoming lethal marine obstacles.",
+      "subtext": "The seafarers rely on discipline and physical brotherhood to survive.",
+      "prop_and_detail": "Heavy hemp cordage, oak ship timbers, bronze fittings, wet limestone."
+    },
+    "action_summary": {
+      "0-3s": "From second 0, Castor delivers the line immediately over the ocean sounds: Castor says \"Back-water on the port side immediately! Back-water with all your muscle, or we will get crushed beneath the rock slide!\" (no subtitles).",
+      "3-6s": "Castor's command carries firmly through second 5; castor chỉ huy hàng chèo giật lùi nhịp đôi né đá tảng sạt lở từ vách núi.",
+      "6-8s": "The line concludes by second 6; the seafarers hold disciplined readiness through second 8."
+    },
+    "dialogue": [
+      {
+        "t": "0-6s",
+        "speaker": "Castor",
+        "line": "Back-water on the port side immediately! Back-water with all your muscle, or we will get crushed beneath the rock slide!"
+      }
+    ],
+    "audio": "Castor: Back-water on the port side immediately! Back-water with all your muscle, or we will get crushed beneath the rock slide!; crashing surf, whistling wind."
+  },
+  {
+    "clip_id": "SC-33",
+    "scene_name": "Bẻ lái luồn lạch",
+    "duration": 8,
+    "dramatic_craft": {
+      "beat": "[++]: Bẻ lái luồn lạch",
+      "value_turn": "Danger -> Tactical grit: Overcoming lethal marine obstacles.",
+      "subtext": "The seafarers rely on discipline and physical brotherhood to survive.",
+      "prop_and_detail": "Heavy hemp cordage, oak ship timbers, bronze fittings, wet limestone."
+    },
+    "action_summary": {
+      "0-3s": "From second 0, Nora delivers the line immediately over the ocean sounds: Nora says \"Ride the tidal current! Trust the ocean swell to carry our bruised oak keel straight through the narrow open channel!\" (no subtitles).",
+      "3-6s": "Nora's command carries firmly through second 5; nora bẻ gắt bánh lái gỗ sồi, ghì thẳng mũi tàu vào luồng nước xoáy hẹp.",
+      "6-8s": "The line concludes by second 6; the seafarers hold disciplined readiness through second 8."
+    },
+    "dialogue": [
+      {
+        "t": "0-6s",
+        "speaker": "Nora",
+        "line": "Ride the tidal current! Trust the ocean swell to carry our bruised oak keel straight through the narrow open channel!"
+      }
+    ],
+    "audio": "Nora: Ride the tidal current! Trust the ocean swell to carry our bruised oak keel straight through the narrow open channel!; crashing surf, whistling wind."
+  },
+  {
+    "clip_id": "SC-34",
+    "scene_name": "Sóng thần hất tàu ra khơi",
+    "duration": 8,
+    "dramatic_craft": {
+      "beat": "[!]: Sóng thần hất tàu ra khơi",
+      "value_turn": "Danger -> Tactical grit: Overcoming lethal marine obstacles.",
+      "subtext": "The seafarers rely on discipline and physical brotherhood to survive.",
+      "prop_and_detail": "Heavy hemp cordage, oak ship timbers, bronze fittings, wet limestone."
+    },
+    "action_summary": {
+      "0-3s": "From second 0, Tảng đá rơi sát đuôi tàu tạo cột sóng 10m đẩy tàu vọt ra biển rộng; sóng cuộn trắng xóa.",
+      "3-6s": "Kinetic inertia drives the action across the frame with realistic weight and friction.",
+      "6-8s": "The physical impact resolves cleanly with solid contact by second 8."
+    },
+    "dialogue": [],
+    "audio": "Ambient ocean roar and timber creak (Sonic Isolation); crashing surf, whistling wind."
+  },
+  {
+    "clip_id": "SC-35",
+    "scene_name": "Phát hiện rò rỉ đáy",
+    "duration": 8,
+    "dramatic_craft": {
+      "beat": "[-]: Phát hiện rò rỉ đáy",
+      "value_turn": "Danger -> Tactical grit: Overcoming lethal marine obstacles.",
+      "subtext": "The seafarers rely on discipline and physical brotherhood to survive.",
+      "prop_and_detail": "Heavy hemp cordage, oak ship timbers, bronze fittings, wet limestone."
+    },
+    "action_summary": {
+      "0-3s": "From second 0, Castor delivers the line immediately over the ocean sounds: Castor says \"We are through the basalt jaws, Captain... but the lower cargo hold is drinking cold salt-water far too fast for safety!\" (no subtitles).",
+      "3-6s": "Castor's command carries firmly through second 5; biển đột ngột phẳng lặng sau khe đá; con tàu chao đảo do rò rỉ đáy.",
+      "6-8s": "The line concludes by second 6; the seafarers hold disciplined readiness through second 8."
+    },
+    "dialogue": [
+      {
+        "t": "0-6s",
+        "speaker": "Castor",
+        "line": "We are through the basalt jaws, Captain... but the lower cargo hold is drinking cold salt-water far too fast for safety!"
+      }
+    ],
+    "audio": "Castor: We are through the basalt jaws, Captain... but the lower cargo hold is drinking cold salt-water far too fast for safety!; crashing surf, whistling wind."
+  },
+  {
+    "clip_id": "SC-36",
+    "scene_name": "Báo cáo nứt sườn tàu",
+    "duration": 8,
+    "dramatic_craft": {
+      "beat": "[-]: Báo cáo nứt sườn tàu",
+      "value_turn": "Danger -> Tactical grit: Overcoming lethal marine obstacles.",
+      "subtext": "The seafarers rely on discipline and physical brotherhood to survive.",
+      "prop_and_detail": "Heavy hemp cordage, oak ship timbers, bronze fittings, wet limestone."
+    },
+    "action_summary": {
+      "0-3s": "From second 0, Heracles delivers the line immediately over the ocean sounds: Heracles says \"Three oak ribs cracked completely below the waterline. We cannot cross the open deep water without beaching her for urgent repair.\" (no subtitles).",
+      "3-6s": "Heracles's command carries firmly through second 5; heracles ngoi lên từ khoang dằn, báo cáo ba đường ghép ván sồi bị nứt toác.",
+      "6-8s": "The line concludes by second 6; the seafarers hold disciplined readiness through second 8."
+    },
+    "dialogue": [
+      {
+        "t": "0-6s",
+        "speaker": "Heracles",
+        "line": "Three oak ribs cracked completely below the waterline. We cannot cross the open deep water without beaching her for urgent repair."
+      }
+    ],
+    "audio": "Heracles: Three oak ribs cracked completely below the waterline. We cannot cross the open deep water without beaching her for urgent repair.; crashing surf, whistling wind."
+  },
+  {
+    "clip_id": "SC-37",
+    "scene_name": "Quyết định kéo tàu vượt cạn",
+    "duration": 8,
+    "dramatic_craft": {
+      "beat": "[+]: Quyết định kéo tàu vượt cạn",
+      "value_turn": "Danger -> Tactical grit: Overcoming lethal marine obstacles.",
+      "subtext": "The seafarers rely on discipline and physical brotherhood to survive.",
+      "prop_and_detail": "Heavy hemp cordage, oak ship timbers, bronze fittings, wet limestone."
+    },
+    "action_summary": {
+      "0-3s": "From second 0, Nora delivers the line immediately over the ocean sounds: Nora says \"Look at that gravel spit ahead. We will beach her upon the shallows and haul the forty-ton hull completely dry.\" (no subtitles).",
+      "3-6s": "Nora's command carries firmly through second 5; nora nhìn ra dải cát và bờ đá cuội cạn trước một mũi đất hoang vắng.",
+      "6-8s": "The line concludes by second 6; the seafarers hold disciplined readiness through second 8."
+    },
+    "dialogue": [
+      {
+        "t": "0-6s",
+        "speaker": "Nora",
+        "line": "Look at that gravel spit ahead. We will beach her upon the shallows and haul the forty-ton hull completely dry."
+      }
+    ],
+    "audio": "Nora: Look at that gravel spit ahead. We will beach her upon the shallows and haul the forty-ton hull completely dry.; crashing surf, whistling wind."
+  },
+  {
+    "clip_id": "SC-38",
+    "scene_name": "Lộ trình vượt eo đất",
+    "duration": 10,
+    "dramatic_craft": {
+      "beat": "RH [++]: Lộ trình vượt eo đất",
+      "value_turn": "Danger -> Tactical grit: Overcoming lethal marine obstacles.",
+      "subtext": "The seafarers rely on discipline and physical brotherhood to survive.",
+      "prop_and_detail": "Heavy hemp cordage, oak ship timbers, bronze fittings, wet limestone."
+    },
+    "action_summary": {
+      "0-3s": "From the opening frame at second 0, Nora begins speaking with commanding authority: Nora says \"The glowing gold ink marks an overland crossing ahead. We roll the hull across this narrow neck of land to bypass the sunken reef.\" (no subtitles).",
+      "3-7s": "The line continues through the middle seconds as bản đồ da cừu hiện đường tắt qua eo đất cạn thay vì đi vòng quanh đá ngầm.",
+      "7-10s": "Nora finishes speaking by second 7; the crew executes the maneuver with iron discipline through second 10."
+    },
+    "dialogue": [
+      {
+        "t": "0-7s",
+        "speaker": "Nora",
+        "line": "The glowing gold ink marks an overland crossing ahead. We roll the hull across this narrow neck of land to bypass the sunken reef."
+      }
+    ],
+    "audio": "Nora: The glowing gold ink marks an overland crossing ahead. We roll the hull across this narrow neck of land to bypass the sunken reef.; crashing surf, whistling wind."
+  },
+  {
+    "clip_id": "SC-39",
+    "scene_name": "Phản biện sức nặng",
+    "duration": 6,
+    "dramatic_craft": {
+      "beat": "[-]: Phản biện sức nặng",
+      "value_turn": "Danger -> Tactical grit: Overcoming lethal marine obstacles.",
+      "subtext": "The seafarers rely on discipline and physical brotherhood to survive.",
+      "prop_and_detail": "Heavy hemp cordage, oak ship timbers, bronze fittings, wet limestone."
+    },
+    "action_summary": {
+      "0-2s": "From second 0, Castor begins speaking immediately, sharp and urgent: Castor says \"Drag a forty-ton warship across dry stones? It will break her spine in half!\" (no subtitles).",
+      "2-4s": "Castor's line finishes cleanly by second 4; castor nhìn chằm chằm mũi đất đá cuội, lắc đầu lo ngại sức nặng con tàu.",
+      "4-6s": "The action settles firmly with stable physical footholds by second 6."
+    },
+    "dialogue": [
+      {
+        "t": "0-4s",
+        "speaker": "Castor",
+        "line": "Drag a forty-ton warship across dry stones? It will break her spine in half!"
+      }
+    ],
+    "audio": "Castor: Drag a forty-ton warship across dry stones? It will break her spine in half!; crashing surf, whistling wind."
+  },
+  {
+    "clip_id": "SC-40",
+    "scene_name": "Cột dây ghì mạn tàu",
+    "duration": 8,
+    "dramatic_craft": {
+      "beat": "[0]: Cột dây ghì mạn tàu",
+      "value_turn": "Danger -> Tactical grit: Overcoming lethal marine obstacles.",
+      "subtext": "The seafarers rely on discipline and physical brotherhood to survive.",
+      "prop_and_detail": "Heavy hemp cordage, oak ship timbers, bronze fittings, wet limestone."
+    },
+    "action_summary": {
+      "0-3s": "From second 0, Heracles delivers the line immediately over the ocean sounds: Heracles says \"Into the churning surf, boys! Tie off the heavy stern lines directly to those giant granite boulders along the shoreline now!\" (no subtitles).",
+      "3-6s": "Heracles's command carries firmly through second 5; thủy thủ nhảy xuống nước cạn ven bờ, kéo dây chão neo thân tàu vào bãi đá.",
+      "6-8s": "The line concludes by second 6; the seafarers hold disciplined readiness through second 8."
+    },
+    "dialogue": [
+      {
+        "t": "0-6s",
+        "speaker": "Heracles",
+        "line": "Into the churning surf, boys! Tie off the heavy stern lines directly to those giant granite boulders along the shoreline now!"
+      }
+    ],
+    "audio": "Heracles: Into the churning surf, boys! Tie off the heavy stern lines directly to those giant granite boulders along the shoreline now!; crashing surf, whistling wind."
+  },
+  {
+    "clip_id": "SC-41",
+    "scene_name": "Chặt thông làm con lăn",
+    "duration": 6,
+    "dramatic_craft": {
+      "beat": "[0]: Chặt thông làm con lăn",
+      "value_turn": "Danger -> Tactical grit: Overcoming lethal marine obstacles.",
+      "subtext": "The seafarers rely on discipline and physical brotherhood to survive.",
+      "prop_and_detail": "Heavy hemp cordage, oak ship timbers, bronze fittings, wet limestone."
+    },
+    "action_summary": {
+      "0-2s": "At second 0, Rìu sắt bổ vào các thân thông biển cổ thụ trên bờ để làm con lăn gỗ tròn; mồ hôi lấp lánh nắng sớm.",
+      "2-4s": "The dynamic physical motion unfolds smoothly across the frame.",
+      "4-6s": "The action concludes with balanced kinetic follow-through by second 6."
+    },
+    "dialogue": [],
+    "audio": "Ambient ocean roar and timber creak (Sonic Isolation); crashing surf, whistling wind."
+  },
+  {
+    "clip_id": "SC-42",
+    "scene_name": "Chuẩn bị rải con lăn",
+    "duration": 8,
+    "dramatic_craft": {
+      "beat": "[+]: Chuẩn bị rải con lăn",
+      "value_turn": "Danger -> Tactical grit: Overcoming lethal marine obstacles.",
+      "subtext": "The seafarers rely on discipline and physical brotherhood to survive.",
+      "prop_and_detail": "Heavy hemp cordage, oak ship timbers, bronze fittings, wet limestone."
+    },
+    "action_summary": {
+      "0-3s": "From second 0, Nora delivers the line immediately over the ocean sounds: Nora says \"Grease the timber rollers with heavy fish fat! Rig the block-and-tackle firmly to the thickest pine trunks upon the ridge!\" (no subtitles).",
+      "3-6s": "Nora's command carries firmly through second 5; hàng chục thân gỗ tròn đặt ngay ngắn trên bãi đá cuội chuẩn bị đón lườn tàu.",
+      "6-8s": "The line concludes by second 6; the seafarers hold disciplined readiness through second 8."
+    },
+    "dialogue": [
+      {
+        "t": "0-6s",
+        "speaker": "Nora",
+        "line": "Grease the timber rollers with heavy fish fat! Rig the block-and-tackle firmly to the thickest pine trunks upon the ridge!"
+      }
+    ],
+    "audio": "Nora: Grease the timber rollers with heavy fish fat! Rig the block-and-tackle firmly to the thickest pine trunks upon the ridge!; crashing surf, whistling wind."
+  },
+  {
+    "clip_id": "SC-43",
+    "scene_name": "Sống tàu chạm con lăn",
+    "duration": 8,
+    "dramatic_craft": {
+      "beat": "[0]: Sống tàu chạm con lăn",
+      "value_turn": "Danger -> Tactical grit: Overcoming lethal marine obstacles.",
+      "subtext": "The seafarers rely on discipline and physical brotherhood to survive.",
+      "prop_and_detail": "Heavy hemp cordage, oak ship timbers, bronze fittings, wet limestone."
+    },
+    "action_summary": {
+      "0-3s": "From second 0, Thân tàu bắt đầu được tời kéo trườn lên khúc gỗ tròn đầu tiên trên cát sỏi; đuốc dầu hắt mặt gỗ.",
+      "3-6s": "Kinetic inertia drives the action across the frame with realistic weight and friction.",
+      "6-8s": "The physical impact resolves cleanly with solid contact by second 8."
+    },
+    "dialogue": [],
+    "audio": "Ambient ocean roar and timber creak (Sonic Isolation); crashing surf, whistling wind."
+  },
+  {
+    "clip_id": "SC-44",
+    "scene_name": "Ghì vai kéo thân tàu 40 tấn",
+    "duration": 10,
+    "dramatic_craft": {
+      "beat": "[++]: Ghì vai kéo thân tàu 40 tấn",
+      "value_turn": "Danger -> Tactical grit: Overcoming lethal marine obstacles.",
+      "subtext": "The seafarers rely on discipline and physical brotherhood to survive.",
+      "prop_and_detail": "Heavy hemp cordage, oak ship timbers, bronze fittings, wet limestone."
+    },
+    "action_summary": {
+      "0-3s": "From the opening frame at second 0, Heracles begins speaking with commanding authority: Heracles says \"Heave together with all your strength, brothers! Dig your heels deep into the gravel bed! Do not let the heavy timber rollers stall!\" (no subtitles).",
+      "3-7s": "The line continues through the middle seconds as heracles ghì vai trần vào sống tàu, gầm lên từng nhịp tiếp sức kéo.",
+      "7-10s": "Heracles finishes speaking by second 7; the crew executes the maneuver with iron discipline through second 10."
+    },
+    "dialogue": [
+      {
+        "t": "0-7s",
+        "speaker": "Heracles",
+        "line": "Heave together with all your strength, brothers! Dig your heels deep into the gravel bed! Do not let the heavy timber rollers stall!"
+      }
+    ],
+    "audio": "Heracles: Heave together with all your strength, brothers! Dig your heels deep into the gravel bed! Do not let the heavy timber rollers stall!; crashing surf, whistling wind."
+  },
+  {
+    "clip_id": "SC-45",
+    "scene_name": "Ma sát đè lún thân gỗ",
+    "duration": 8,
+    "dramatic_craft": {
+      "beat": "[!]: Ma sát đè lún thân gỗ",
+      "value_turn": "Danger -> Tactical grit: Overcoming lethal marine obstacles.",
+      "subtext": "The seafarers rely on discipline and physical brotherhood to survive.",
+      "prop_and_detail": "Heavy hemp cordage, oak ship timbers, bronze fittings, wet limestone."
+    },
+    "action_summary": {
+      "0-3s": "From second 0, Lườn tàu nặng 40 tấn đè lún thân gỗ thông, dầu mỡ bốc khói do ma sát; bụi cát và bọt mặn bay.",
+      "3-6s": "Kinetic inertia drives the action across the frame with realistic weight and friction.",
+      "6-8s": "The physical impact resolves cleanly with solid contact by second 8."
+    },
+    "dialogue": [],
+    "audio": "Ambient ocean roar and timber creak (Sonic Isolation); crashing surf, whistling wind."
+  },
+  {
+    "clip_id": "SC-46",
+    "scene_name": "Đồng bộ nhịp kéo",
+    "duration": 8,
+    "dramatic_craft": {
+      "beat": "[0]: Đồng bộ nhịp kéo",
+      "value_turn": "Danger -> Tactical grit: Overcoming lethal marine obstacles.",
+      "subtext": "The seafarers rely on discipline and physical brotherhood to survive.",
+      "prop_and_detail": "Heavy hemp cordage, oak ship timbers, bronze fittings, wet limestone."
+    },
+    "action_summary": {
+      "0-3s": "From second 0, Castor delivers the line immediately over the ocean sounds: Castor says \"Keep the steady pace together! Step in tight cadence! One, two, heave! Pull the oak ship forward with every single breath!\" (no subtitles).",
+      "3-6s": "Castor's command carries firmly through second 5; hai mươi thủy thủ chia hai hàng kéo căng dây thừng bện gai dầu, bước giật lùi.",
+      "6-8s": "The line concludes by second 6; the seafarers hold disciplined readiness through second 8."
+    },
+    "dialogue": [
+      {
+        "t": "0-6s",
+        "speaker": "Castor",
+        "line": "Keep the steady pace together! Step in tight cadence! One, two, heave! Pull the oak ship forward with every single breath!"
+      }
+    ],
+    "audio": "Castor: Keep the steady pace together! Step in tight cadence! One, two, heave! Pull the oak ship forward with every single breath!; crashing surf, whistling wind."
+  },
+  {
+    "clip_id": "SC-47",
+    "scene_name": "Đóng nêm giữ thẳng sống tàu",
+    "duration": 8,
+    "dramatic_craft": {
+      "beat": "RH [+]: Đóng nêm giữ thẳng sống tàu",
+      "value_turn": "Danger -> Tactical grit: Overcoming lethal marine obstacles.",
+      "subtext": "The seafarers rely on discipline and physical brotherhood to survive.",
+      "prop_and_detail": "Heavy hemp cordage, oak ship timbers, bronze fittings, wet limestone."
+    },
+    "action_summary": {
+      "0-3s": "From second 0, Nora delivers the line immediately over the ocean sounds: Nora says \"The oak seam is holding firm! Keep the wooden rollers aligned straight, or the entire heavy keel will slip dangerously sideways!\" (no subtitles).",
+      "3-6s": "Nora's command carries firmly through second 5; nora quỳ sát lườn tàu, đóng thêm nêm sắt vào đường ván rạn nứt đang chịu tải.",
+      "6-8s": "The line concludes by second 6; the seafarers hold disciplined readiness through second 8."
+    },
+    "dialogue": [
+      {
+        "t": "0-6s",
+        "speaker": "Nora",
+        "line": "The oak seam is holding firm! Keep the wooden rollers aligned straight, or the entire heavy keel will slip dangerously sideways!"
+      }
+    ],
+    "audio": "Nora: The oak seam is holding firm! Keep the wooden rollers aligned straight, or the entire heavy keel will slip dangerously sideways!; crashing surf, whistling wind."
+  },
+  {
+    "clip_id": "SC-48",
+    "scene_name": "Chạy luân chuyển con lăn",
+    "duration": 8,
+    "dramatic_craft": {
+      "beat": "[+]: Chạy luân chuyển con lăn",
+      "value_turn": "Danger -> Tactical grit: Overcoming lethal marine obstacles.",
+      "subtext": "The seafarers rely on discipline and physical brotherhood to survive.",
+      "prop_and_detail": "Heavy hemp cordage, oak ship timbers, bronze fittings, wet limestone."
+    },
+    "action_summary": {
+      "0-3s": "From second 0, Castor delivers the line immediately over the ocean sounds: Castor says \"First roller clear at the stern! Move it swiftly forward to the crest before the heavy nose dips into the ditch!\" (no subtitles).",
+      "3-6s": "Castor's command carries firmly through second 5; castor vác khúc gỗ tròn vừa thoát khỏi đuôi tàu chạy nhanh lên đón mũi tàu.",
+      "6-8s": "The line concludes by second 6; the seafarers hold disciplined readiness through second 8."
+    },
+    "dialogue": [
+      {
+        "t": "0-6s",
+        "speaker": "Castor",
+        "line": "First roller clear at the stern! Move it swiftly forward to the crest before the heavy nose dips into the ditch!"
+      }
+    ],
+    "audio": "Castor: First roller clear at the stern! Move it swiftly forward to the crest before the heavy nose dips into the ditch!; crashing surf, whistling wind."
+  },
+  {
+    "clip_id": "SC-49",
+    "scene_name": "Gỗ nổ tung vì tải trọng",
+    "duration": 8,
+    "dramatic_craft": {
+      "beat": "[!]: Gỗ nổ tung vì tải trọng",
+      "value_turn": "Danger -> Tactical grit: Overcoming lethal marine obstacles.",
+      "subtext": "The seafarers rely on discipline and physical brotherhood to survive.",
+      "prop_and_detail": "Heavy hemp cordage, oak ship timbers, bronze fittings, wet limestone."
+    },
+    "action_summary": {
+      "0-3s": "From second 0, Một khúc gỗ chịu lực quá lớn nổ tung toác đôi; sống tàu sụp xuống đá dăm; dăm gỗ bắn tung tóe.",
+      "3-6s": "Kinetic inertia drives the action across the frame with realistic weight and friction.",
+      "6-8s": "The physical impact resolves cleanly with solid contact by second 8."
+    },
+    "dialogue": [],
+    "audio": "Ambient ocean roar and timber creak (Sonic Isolation); crashing surf, whistling wind."
+  },
+  {
+    "clip_id": "SC-50",
+    "scene_name": "Đứt dây thừng nguy cơ lật tàu",
+    "duration": 8,
+    "dramatic_craft": {
+      "beat": "[--]: Đứt dây thừng nguy cơ lật tàu",
+      "value_turn": "Danger -> Tactical grit: Overcoming lethal marine obstacles.",
+      "subtext": "The seafarers rely on discipline and physical brotherhood to survive.",
+      "prop_and_detail": "Heavy hemp cordage, oak ship timbers, bronze fittings, wet limestone."
+    },
+    "action_summary": {
+      "0-3s": "From second 0, Castor delivers the line immediately over the ocean sounds: Castor says \"Starboard haul-line snapped clean! Brace the listing hull with oak shores before she capsizes into the rocky ravine right now!\" (no subtitles).",
+      "3-6s": "Castor's command carries firmly through second 5; con tàu khựng lại nghiêng dốc 20 độ, dây kéo một bên đứt làm thủy thủ ngã nhào.",
+      "6-8s": "The line concludes by second 6; the seafarers hold disciplined readiness through second 8."
+    },
+    "dialogue": [
+      {
+        "t": "0-6s",
+        "speaker": "Castor",
+        "line": "Starboard haul-line snapped clean! Brace the listing hull with oak shores before she capsizes into the rocky ravine right now!"
+      }
+    ],
+    "audio": "Castor: Starboard haul-line snapped clean! Brace the listing hull with oak shores before she capsizes into the rocky ravine right now!; crashing surf, whistling wind."
+  },
+  {
+    "clip_id": "SC-51",
+    "scene_name": "Chèn đá cứu tàu nghiêng",
+    "duration": 8,
+    "dramatic_craft": {
+      "beat": "[++]: Chèn đá cứu tàu nghiêng",
+      "value_turn": "Danger -> Tactical grit: Overcoming lethal marine obstacles.",
+      "subtext": "The seafarers rely on discipline and physical brotherhood to survive.",
+      "prop_and_detail": "Heavy hemp cordage, oak ship timbers, bronze fittings, wet limestone."
+    },
+    "action_summary": {
+      "0-3s": "From second 0, Heracles delivers the line immediately over the ocean sounds: Heracles says \"I have her pinned with the stone! Bring the heavy iron pry-bars under the port frame before my grip gives out!\" (no subtitles).",
+      "3-6s": "Heracles's command carries firmly through second 5; heracles lăn cả tảng đá hoa cương chèn cứng sống thuyền ngăn đà lật nghiêng.",
+      "6-8s": "The line concludes by second 6; the seafarers hold disciplined readiness through second 8."
+    },
+    "dialogue": [
+      {
+        "t": "0-6s",
+        "speaker": "Heracles",
+        "line": "I have her pinned with the stone! Bring the heavy iron pry-bars under the port frame before my grip gives out!"
+      }
+    ],
+    "audio": "Heracles: I have her pinned with the stone! Bring the heavy iron pry-bars under the port frame before my grip gives out!; crashing surf, whistling wind."
+  },
+  {
+    "clip_id": "SC-52",
+    "scene_name": "Bẩy gầm cứu con tàu",
+    "duration": 8,
+    "dramatic_craft": {
+      "beat": "[++]: Bẩy gầm cứu con tàu",
+      "value_turn": "Danger -> Tactical grit: Overcoming lethal marine obstacles.",
+      "subtext": "The seafarers rely on discipline and physical brotherhood to survive.",
+      "prop_and_detail": "Heavy hemp cordage, oak ship timbers, bronze fittings, wet limestone."
+    },
+    "action_summary": {
+      "0-3s": "From second 0, Nora delivers the line immediately over the ocean sounds: Nora says \"Slide the fresh cedar trunk beneath the main cradle! Move with speed and courage, while the bronze iron lever still holds!\" (no subtitles).",
+      "3-6s": "Nora's command carries firmly through second 5; nora cắm sâu thanh xà beng đồng kích gầm tàu lên ba tấc trong gang tấc.",
+      "6-8s": "The line concludes by second 6; the seafarers hold disciplined readiness through second 8."
+    },
+    "dialogue": [
+      {
+        "t": "0-6s",
+        "speaker": "Nora",
+        "line": "Slide the fresh cedar trunk beneath the main cradle! Move with speed and courage, while the bronze iron lever still holds!"
+      }
+    ],
+    "audio": "Nora: Slide the fresh cedar trunk beneath the main cradle! Move with speed and courage, while the bronze iron lever still holds!; crashing surf, whistling wind."
+  },
+  {
+    "clip_id": "SC-53",
+    "scene_name": "Thay con lăn thành công",
+    "duration": 6,
+    "dramatic_craft": {
+      "beat": "[+]: Thay con lăn thành công",
+      "value_turn": "Danger -> Tactical grit: Overcoming lethal marine obstacles.",
+      "subtext": "The seafarers rely on discipline and physical brotherhood to survive.",
+      "prop_and_detail": "Heavy hemp cordage, oak ship timbers, bronze fittings, wet limestone."
+    },
+    "action_summary": {
+      "0-2s": "From second 0, Castor begins speaking immediately, sharp and urgent: Castor says \"The fresh roller is seated firm! Re-rig the winch ropes to the anchor tree!\" (no subtitles).",
+      "2-4s": "Castor's line finishes cleanly by second 4; castor đẩy mạnh khúc gỗ tuyết tùng vào gầm; sống tàu hạ xuống khớp con lăn.",
+      "4-6s": "The action settles firmly with stable physical footholds by second 6."
+    },
+    "dialogue": [
+      {
+        "t": "0-4s",
+        "speaker": "Castor",
+        "line": "The fresh roller is seated firm! Re-rig the winch ropes to the anchor tree!"
+      }
+    ],
+    "audio": "Castor: The fresh roller is seated firm! Re-rig the winch ropes to the anchor tree!; crashing surf, whistling wind."
+  },
+  {
+    "clip_id": "SC-54",
+    "scene_name": "Lên đỉnh gờ đá eo đất",
+    "duration": 10,
+    "dramatic_craft": {
+      "beat": "RH [+++]: Lên đỉnh gờ đá eo đất",
+      "value_turn": "Danger -> Tactical grit: Overcoming lethal marine obstacles.",
+      "subtext": "The seafarers rely on discipline and physical brotherhood to survive.",
+      "prop_and_detail": "Heavy hemp cordage, oak ship timbers, bronze fittings, wet limestone."
+    },
+    "action_summary": {
+      "0-3s": "From the opening frame at second 0, Nora begins speaking with commanding authority: Nora says \"We have taken the summit! Look below us, brothers: the deep turquoise waters of the sunken siren lagoon are waiting for our oars!\" (no subtitles).",
+      "3-7s": "The line continues through the middle seconds as tiếng hò reo vang dội khi toàn bộ con tàu đồ sộ vượt lên đỉnh gờ đá cao nhất.",
+      "7-10s": "Nora finishes speaking by second 7; the crew executes the maneuver with iron discipline through second 10."
+    },
+    "dialogue": [
+      {
+        "t": "0-7s",
+        "speaker": "Nora",
+        "line": "We have taken the summit! Look below us, brothers: the deep turquoise waters of the sunken siren lagoon are waiting for our oars!"
+      }
+    ],
+    "audio": "Nora: We have taken the summit! Look below us, brothers: the deep turquoise waters of the sunken siren lagoon are waiting for our oars!; crashing surf, whistling wind."
+  },
+  {
+    "clip_id": "SC-55",
+    "scene_name": "Kiểm soát đà trôi dốc",
+    "duration": 8,
+    "dramatic_craft": {
+      "beat": "[0]: Kiểm soát đà trôi dốc",
+      "value_turn": "Danger -> Tactical grit: Overcoming lethal marine obstacles.",
+      "subtext": "The seafarers rely on discipline and physical brotherhood to survive.",
+      "prop_and_detail": "Heavy hemp cordage, oak ship timbers, bronze fittings, wet limestone."
+    },
+    "action_summary": {
+      "0-3s": "From second 0, Castor delivers the line immediately over the ocean sounds: Castor says \"Hold the snubbing lines tight! Do not let gravity turn our warship into a runaway battering ram down this rocky incline!\" (no subtitles).",
+      "3-6s": "Castor's command carries firmly through second 5; con tàu bắt đầu trôi từ từ xuống dốc thoai thoải hướng về mặt vịnh biển xanh ngọc.",
+      "6-8s": "The line concludes by second 6; the seafarers hold disciplined readiness through second 8."
+    },
+    "dialogue": [
+      {
+        "t": "0-6s",
+        "speaker": "Castor",
+        "line": "Hold the snubbing lines tight! Do not let gravity turn our warship into a runaway battering ram down this rocky incline!"
+      }
+    ],
+    "audio": "Castor: Hold the snubbing lines tight! Do not let gravity turn our warship into a runaway battering ram down this rocky incline!; crashing surf, whistling wind."
+  },
+  {
+    "clip_id": "SC-56",
+    "scene_name": "Hãm tốc bằng ma sát",
+    "duration": 8,
+    "dramatic_craft": {
+      "beat": "[0]: Hãm tốc bằng ma sát",
+      "value_turn": "Danger -> Tactical grit: Overcoming lethal marine obstacles.",
+      "subtext": "The seafarers rely on discipline and physical brotherhood to survive.",
+      "prop_and_detail": "Heavy hemp cordage, oak ship timbers, bronze fittings, wet limestone."
+    },
+    "action_summary": {
+      "0-3s": "From second 0, Dây thừng bện gai dầu quấn quanh cọc gỗ bốc khói khét lẹt khi hãm tốc độ tàu; khói ma sát bốc lên.",
+      "3-6s": "Kinetic inertia drives the action across the frame with realistic weight and friction.",
+      "6-8s": "The physical impact resolves cleanly with solid contact by second 8."
+    },
+    "dialogue": [],
+    "audio": "Ambient ocean roar and timber creak (Sonic Isolation); crashing surf, whistling wind."
+  },
+  {
+    "clip_id": "SC-57",
+    "scene_name": "Tàu hạ thủy an toàn",
+    "duration": 6,
+    "dramatic_craft": {
+      "beat": "[++]: Tàu hạ thủy an toàn",
+      "value_turn": "Danger -> Tactical grit: Overcoming lethal marine obstacles.",
+      "subtext": "The seafarers rely on discipline and physical brotherhood to survive.",
+      "prop_and_detail": "Heavy hemp cordage, oak ship timbers, bronze fittings, wet limestone."
+    },
+    "action_summary": {
+      "0-2s": "From second 0, Nora begins speaking immediately, sharp and urgent: Nora says \"Cast off the land-rigging now! Our ship is fully afloat in the bay!\" (no subtitles).",
+      "2-4s": "Nora's line finishes cleanly by second 4; mũi tàu lao êm thuận xuống làn nước trong vắt màu ngọc bích của vịnh biển kín gió.",
+      "4-6s": "The action settles firmly with stable physical footholds by second 6."
+    },
+    "dialogue": [
+      {
+        "t": "0-4s",
+        "speaker": "Nora",
+        "line": "Cast off the land-rigging now! Our ship is fully afloat in the bay!"
+      }
+    ],
+    "audio": "Nora: Cast off the land-rigging now! Our ship is fully afloat in the bay!; crashing surf, whistling wind."
+  },
+  {
+    "clip_id": "SC-58",
+    "scene_name": "Kiểm tra độ cân bằng",
+    "duration": 10,
+    "dramatic_craft": {
+      "beat": "[+]: Kiểm tra độ cân bằng",
+      "value_turn": "Danger -> Tactical grit: Overcoming lethal marine obstacles.",
+      "subtext": "The seafarers rely on discipline and physical brotherhood to survive.",
+      "prop_and_detail": "Heavy hemp cordage, oak ship timbers, bronze fittings, wet limestone."
+    },
+    "action_summary": {
+      "0-3s": "From the opening frame at second 0, Castor begins speaking with commanding authority: Castor says \"She floats true and level on the tide. The main oak keel never cracked, all thanks to Heracles' giant granite boulder wedge ashore.\" (no subtitles).",
+      "3-7s": "The line continues through the middle seconds as nora và castor đu dây leo lên boong tàu, nhìn lườn tàu nổi ổn định.",
+      "7-10s": "Castor finishes speaking by second 7; the crew executes the maneuver with iron discipline through second 10."
+    },
+    "dialogue": [
+      {
+        "t": "0-7s",
+        "speaker": "Castor",
+        "line": "She floats true and level on the tide. The main oak keel never cracked, all thanks to Heracles' giant granite boulder wedge ashore."
+      }
+    ],
+    "audio": "Castor: She floats true and level on the tide. The main oak keel never cracked, all thanks to Heracles' giant granite boulder wedge ashore.; crashing surf, whistling wind."
+  },
+  {
+    "clip_id": "SC-59",
+    "scene_name": "Bịt kín chống rò rỉ",
+    "duration": 8,
+    "dramatic_craft": {
+      "beat": "[+]: Bịt kín chống rò rỉ",
+      "value_turn": "Danger -> Tactical grit: Overcoming lethal marine obstacles.",
+      "subtext": "The seafarers rely on discipline and physical brotherhood to survive.",
+      "prop_and_detail": "Heavy hemp cordage, oak ship timbers, bronze fittings, wet limestone."
+    },
+    "action_summary": {
+      "0-3s": "From second 0, Heracles delivers the line immediately over the ocean sounds: Heracles says \"The hot pitch is cured and sealed. She won't leak a single cupful between this shore and the sunken golden shrine.\" (no subtitles).",
+      "3-6s": "Heracles's command carries firmly through second 5; thủy thủ quét hắc ín thông nóng sôi bịt kín các đường chỉ xảm nước dọc lườn.",
+      "6-8s": "The line concludes by second 6; the seafarers hold disciplined readiness through second 8."
+    },
+    "dialogue": [
+      {
+        "t": "0-6s",
+        "speaker": "Heracles",
+        "line": "The hot pitch is cured and sealed. She won't leak a single cupful between this shore and the sunken golden shrine."
+      }
+    ],
+    "audio": "Heracles: The hot pitch is cured and sealed. She won't leak a single cupful between this shore and the sunken golden shrine.; crashing surf, whistling wind."
+  },
+  {
+    "clip_id": "SC-60",
+    "scene_name": "Bản đồ phát sáng cực đại",
+    "duration": 10,
+    "dramatic_craft": {
+      "beat": "[?]: Bản đồ phát sáng cực đại",
+      "value_turn": "Danger -> Tactical grit: Overcoming lethal marine obstacles.",
+      "subtext": "The seafarers rely on discipline and physical brotherhood to survive.",
+      "prop_and_detail": "Heavy hemp cordage, oak ship timbers, bronze fittings, wet limestone."
+    },
+    "action_summary": {
+      "0-3s": "From the opening frame at second 0, Nora begins speaking with commanding authority: Nora says \"The current in this basin is completely dead. The parchment glows far brighter here than it ever did in open ocean waters, Castor.\" (no subtitles).",
+      "3-7s": "The line continues through the middle seconds as mực vàng kim trên bản đồ loang tỏa rực rỡ chỉ thẳng vào trung tâm vịnh ngọc bích.",
+      "7-10s": "Nora finishes speaking by second 7; the crew executes the maneuver with iron discipline through second 10."
+    },
+    "dialogue": [
+      {
+        "t": "0-7s",
+        "speaker": "Nora",
+        "line": "The current in this basin is completely dead. The parchment glows far brighter here than it ever did in open ocean waters, Castor."
+      }
+    ],
+    "audio": "Nora: The current in this basin is completely dead. The parchment glows far brighter here than it ever did in open ocean waters, Castor.; crashing surf, whistling wind."
+  },
+  {
+    "clip_id": "SC-61",
+    "scene_name": "Tĩnh lặng kỳ bí chết chóc",
+    "duration": 6,
+    "dramatic_craft": {
+      "beat": "[-]: Tĩnh lặng kỳ bí chết chóc",
+      "value_turn": "Danger -> Tactical grit: Overcoming lethal marine obstacles.",
+      "subtext": "The seafarers rely on discipline and physical brotherhood to survive.",
+      "prop_and_detail": "Heavy hemp cordage, oak ship timbers, bronze fittings, wet limestone."
+    },
+    "action_summary": {
+      "0-2s": "At second 0, Sương mù mỏng dâng lên ngưng đọng kỳ dị, không một gợn sóng hay ngọn gió; nước xanh ngọc như gương.",
+      "2-4s": "The dynamic physical motion unfolds smoothly across the frame.",
+      "4-6s": "The action concludes with balanced kinetic follow-through by second 6."
+    },
+    "dialogue": [],
+    "audio": "Ambient ocean roar and timber creak (Sonic Isolation); crashing surf, whistling wind."
+  },
+  {
+    "clip_id": "SC-62",
+    "scene_name": "Tiếng hát thì thầm dưới nước",
+    "duration": 8,
+    "dramatic_craft": {
+      "beat": "RH [!]: Tiếng hát thì thầm dưới nước",
+      "value_turn": "Danger -> Tactical grit: Overcoming lethal marine obstacles.",
+      "subtext": "The seafarers rely on discipline and physical brotherhood to survive.",
+      "prop_and_detail": "Heavy hemp cordage, oak ship timbers, bronze fittings, wet limestone."
+    },
+    "action_summary": {
+      "0-3s": "From second 0, Castor delivers the line immediately over the ocean sounds: Castor says \"Do you hear that strange hum, Nora? Unearthly voices whispering beneath the dead water... singing like maidens in sweet mourning.\" (no subtitles).",
+      "3-6s": "Castor's command carries firmly through second 5; một giai điệu ngân nga thì thầm vô hình mơ hồ vọng lên từ lòng biển sâu thẳm.",
+      "6-8s": "The line concludes by second 6; the seafarers hold disciplined readiness through second 8."
+    },
+    "dialogue": [
+      {
+        "t": "0-6s",
+        "speaker": "Castor",
+        "line": "Do you hear that strange hum, Nora? Unearthly voices whispering beneath the dead water... singing like maidens in sweet mourning."
+      }
+    ],
+    "audio": "Castor: Do you hear that strange hum, Nora? Unearthly voices whispering beneath the dead water... singing like maidens in sweet mourning.; crashing surf, whistling wind."
+  },
+  {
+    "clip_id": "SC-63",
+    "scene_name": "Bùa mê tiếng hát Sirens",
+    "duration": 8,
+    "dramatic_craft": {
+      "beat": "[-]: Bùa mê tiếng hát Sirens",
+      "value_turn": "Danger -> Tactical grit: Overcoming lethal marine obstacles.",
+      "subtext": "The seafarers rely on discipline and physical brotherhood to survive.",
+      "prop_and_detail": "Heavy hemp cordage, oak ship timbers, bronze fittings, wet limestone."
+    },
+    "action_summary": {
+      "0-3s": "From second 0, Hai thủy thủ buông rơi cuộn dây thừng, mỉm cười ngây dại nhìn xuống mặt nước xanh; mắt đờ đẫn vô hồn.",
+      "3-6s": "Kinetic inertia drives the action across the frame with realistic weight and friction.",
+      "6-8s": "The physical impact resolves cleanly with solid contact by second 8."
+    },
+    "dialogue": [],
+    "audio": "Ambient ocean roar and timber creak (Sonic Isolation); crashing surf, whistling wind."
+  },
+  {
+    "clip_id": "SC-64",
+    "scene_name": "Đập khiên phá bùa mê",
+    "duration": 8,
+    "dramatic_craft": {
+      "beat": "[!]: Đập khiên phá bùa mê",
+      "value_turn": "Danger -> Tactical grit: Overcoming lethal marine obstacles.",
+      "subtext": "The seafarers rely on discipline and physical brotherhood to survive.",
+      "prop_and_detail": "Heavy hemp cordage, oak ship timbers, bronze fittings, wet limestone."
+    },
+    "action_summary": {
+      "0-3s": "From second 0, Castor delivers the line immediately over the ocean sounds: Castor says \"Wake from your trance, you sea-dogs! Cover your ears with canvas before the sweet song rots your living bone marrow!\" (no subtitles).",
+      "3-6s": "Castor's command carries firmly through second 5; castor rút chuôi kiếm sắt đập mạnh vào khiên đồng tạo tiếng keng keng chát chúa.",
+      "6-8s": "The line concludes by second 6; the seafarers hold disciplined readiness through second 8."
+    },
+    "dialogue": [
+      {
+        "t": "0-6s",
+        "speaker": "Castor",
+        "line": "Wake from your trance, you sea-dogs! Cover your ears with canvas before the sweet song rots your living bone marrow!"
+      }
+    ],
+    "audio": "Castor: Wake from your trance, you sea-dogs! Cover your ears with canvas before the sweet song rots your living bone marrow!; crashing surf, whistling wind."
+  },
+  {
+    "clip_id": "SC-65",
+    "scene_name": "Nhét sáp ong khóa thính giác",
+    "duration": 10,
+    "dramatic_craft": {
+      "beat": "[++]: Nhét sáp ong khóa thính giác",
+      "value_turn": "Danger -> Tactical grit: Overcoming lethal marine obstacles.",
+      "subtext": "The seafarers rely on discipline and physical brotherhood to survive.",
+      "prop_and_detail": "Heavy hemp cordage, oak ship timbers, bronze fittings, wet limestone."
+    },
+    "action_summary": {
+      "0-3s": "From the opening frame at second 0, Nora begins speaking with commanding authority: Nora says \"Pack the beeswax deep into your ear-canals! Lash your bodies to the mainmast and standing riggings before you leap like madmen into water!\" (no subtitles).",
+      "3-7s": "The line continues through the middle seconds as nora đập vỡ bánh sáp ong, nhét vào tai mình và ném các mẩu sáp cho thủy thủ.",
+      "7-10s": "Nora finishes speaking by second 7; the crew executes the maneuver with iron discipline through second 10."
+    },
+    "dialogue": [
+      {
+        "t": "0-7s",
+        "speaker": "Nora",
+        "line": "Pack the beeswax deep into your ear-canals! Lash your bodies to the mainmast and standing riggings before you leap like madmen into water!"
+      }
+    ],
+    "audio": "Nora: Pack the beeswax deep into your ear-canals! Lash your bodies to the mainmast and standing riggings before you leap like madmen into water!; crashing surf, whistling wind."
+  },
+  {
+    "clip_id": "SC-66",
+    "scene_name": "Thủy thủ trẻ trúng ảo ảnh",
+    "duration": 8,
+    "dramatic_craft": {
+      "beat": "[--]: Thủy thủ trẻ trúng ảo ảnh",
+      "value_turn": "Danger -> Tactical grit: Overcoming lethal marine obstacles.",
+      "subtext": "The seafarers rely on discipline and physical brotherhood to survive.",
+      "prop_and_detail": "Heavy hemp cordage, oak ship timbers, bronze fittings, wet limestone."
+    },
+    "action_summary": {
+      "0-3s": "From second 0, Thủy thủ trẻ delivers the line immediately over the ocean sounds: Thủy thủ trẻ says \"She calls my name from the deep... her hair is spun of golden silk beneath the waves...\" (no subtitles).",
+      "3-6s": "Thủy thủ trẻ's command carries firmly through second 5; một thủy thủ trẻ không kịp nhét sáp, trèo lên gờ mạn tàu dang tay toan lao xuống biển.",
+      "6-8s": "The line concludes by second 6; the seafarers hold disciplined readiness through second 8."
+    },
+    "dialogue": [
+      {
+        "t": "0-6s",
+        "speaker": "Thủy thủ trẻ",
+        "line": "She calls my name from the deep... her hair is spun of golden silk beneath the waves..."
+      }
+    ],
+    "audio": "Thủy thủ trẻ: She calls my name from the deep... her hair is spun of golden silk beneath the waves...; crashing surf, whistling wind."
+  },
+  {
+    "clip_id": "SC-67",
+    "scene_name": "Giật lùi cứu thủy thủ mê muội",
+    "duration": 10,
+    "dramatic_craft": {
+      "beat": "[+]: Giật lùi cứu thủy thủ mê muội",
+      "value_turn": "Danger -> Tactical grit: Overcoming lethal marine obstacles.",
+      "subtext": "The seafarers rely on discipline and physical brotherhood to survive.",
+      "prop_and_detail": "Heavy hemp cordage, oak ship timbers, bronze fittings, wet limestone."
+    },
+    "action_summary": {
+      "0-3s": "From the opening frame at second 0, Heracles begins speaking with commanding authority: Heracles says \"You dive into those emerald waters and you will find razor shark teeth, boy, not maiden silk! Keep your boots planted on deck!\" (no subtitles).",
+      "3-7s": "The line continues through the middle seconds as heracles túm gáy áo giật mạnh thủy thủ trở lại sàn tàu, nhét cục sáp vào tai anh ta.",
+      "7-10s": "Heracles finishes speaking by second 7; the crew executes the maneuver with iron discipline through second 10."
+    },
+    "dialogue": [
+      {
+        "t": "0-7s",
+        "speaker": "Heracles",
+        "line": "You dive into those emerald waters and you will find razor shark teeth, boy, not maiden silk! Keep your boots planted on deck!"
+      }
+    ],
+    "audio": "Heracles: You dive into those emerald waters and you will find razor shark teeth, boy, not maiden silk! Keep your boots planted on deck!; crashing surf, whistling wind."
+  },
+  {
+    "clip_id": "SC-68",
+    "scene_name": "Bầy Siren bơi lượn dưới lườn tàu",
+    "duration": 8,
+    "dramatic_craft": {
+      "beat": "[?]: Bầy Siren bơi lượn dưới lườn tàu",
+      "value_turn": "Danger -> Tactical grit: Overcoming lethal marine obstacles.",
+      "subtext": "The seafarers rely on discipline and physical brotherhood to survive.",
+      "prop_and_detail": "Heavy hemp cordage, oak ship timbers, bronze fittings, wet limestone."
+    },
+    "action_summary": {
+      "0-3s": "From second 0, Dưới nước trong vắt, hàng chục thiếu nữ da trắng sứ lượn lờ quanh lườn tàu như cá; nắng xuyên nước xanh ngọc.",
+      "3-6s": "Kinetic inertia drives the action across the frame with realistic weight and friction.",
+      "6-8s": "The physical impact resolves cleanly with solid contact by second 8."
+    },
+    "dialogue": [],
+    "audio": "Ambient ocean roar and timber creak (Sonic Isolation); crashing surf, whistling wind."
+  },
+  {
+    "clip_id": "SC-69",
+    "scene_name": "Mồi nhử mỹ nữ dưới nước",
+    "duration": 8,
+    "dramatic_craft": {
+      "beat": "[-]: Mồi nhử mỹ nữ dưới nước",
+      "value_turn": "Danger -> Tactical grit: Overcoming lethal marine obstacles.",
+      "subtext": "The seafarers rely on discipline and physical brotherhood to survive.",
+      "prop_and_detail": "Heavy hemp cordage, oak ship timbers, bronze fittings, wet limestone."
+    },
+    "action_summary": {
+      "0-3s": "From second 0, Siren delivers the line immediately over the ocean sounds: Siren says \"Come join our quiet coral dance, weary sailors... no raging storms nor cruel captains reach our soft seabed pillows down below...\" (no subtitles).",
+      "3-6s": "Siren's command carries firmly through second 5; một siren ngoi lên cách mạn tàu ba gang tay, mỉm cười thánh thiện quyến rũ chết người.",
+      "6-8s": "The line concludes by second 6; the seafarers hold disciplined readiness through second 8."
+    },
+    "dialogue": [
+      {
+        "t": "0-6s",
+        "speaker": "Siren",
+        "line": "Come join our quiet coral dance, weary sailors... no raging storms nor cruel captains reach our soft seabed pillows down below..."
+      }
+    ],
+    "audio": "Siren: Come join our quiet coral dance, weary sailors... no raging storms nor cruel captains reach our soft seabed pillows down below...; crashing surf, whistling wind."
+  },
+  {
+    "clip_id": "SC-70",
+    "scene_name": "Biến hình lộ diện quái nữ",
+    "duration": 10,
+    "dramatic_craft": {
+      "beat": "RH [!]: Biến hình lộ diện quái nữ",
+      "value_turn": "Danger -> Tactical grit: Overcoming lethal marine obstacles.",
+      "subtext": "The seafarers rely on discipline and physical brotherhood to survive.",
+      "prop_and_detail": "Heavy hemp cordage, oak ship timbers, bronze fittings, wet limestone."
+    },
+    "action_summary": {
+      "0-3s": "At second 0, Nụ cười biến mất: mắt đen sì như mực, khóe miệng rách toạc lộ ba tầng răng nhọn hoắt; màng mắt hóa đen đặc.",
+      "3-7s": "The grand scale of the environment unfolds with natural atmospheric depth.",
+      "7-10s": "The climactic momentum resolves with monumental permanence through second 10."
+    },
+    "dialogue": [],
+    "audio": "Ambient ocean roar and timber creak (Sonic Isolation); crashing surf, whistling wind."
+  },
+  {
+    "clip_id": "SC-71",
+    "scene_name": "Bắn tên lửa xua đuổi",
+    "duration": 8,
+    "dramatic_craft": {
+      "beat": "[++]: Bắn tên lửa xua đuổi",
+      "value_turn": "Danger -> Tactical grit: Overcoming lethal marine obstacles.",
+      "subtext": "The seafarers rely on discipline and physical brotherhood to survive.",
+      "prop_and_detail": "Heavy hemp cordage, oak ship timbers, bronze fittings, wet limestone."
+    },
+    "action_summary": {
+      "0-3s": "From second 0, Castor delivers the line immediately over the ocean sounds: Castor says \"Taste burning Phoenician pitch, abyssal sea-witch! Loose the flaming sulfur arrows all along the gunwales right into their teeth!\" (no subtitles).",
+      "3-6s": "Castor's command carries firmly through second 5; castor giương cung bắn mũi tên tẩm dầu cháy xuyên qua vai con quái nữ vừa biến hình.",
+      "6-8s": "The line concludes by second 6; the seafarers hold disciplined readiness through second 8."
+    },
+    "dialogue": [
+      {
+        "t": "0-6s",
+        "speaker": "Castor",
+        "line": "Taste burning Phoenician pitch, abyssal sea-witch! Loose the flaming sulfur arrows all along the gunwales right into their teeth!"
+      }
+    ],
+    "audio": "Castor: Taste burning Phoenician pitch, abyssal sea-witch! Loose the flaming sulfur arrows all along the gunwales right into their teeth!; crashing surf, whistling wind."
+  },
+  {
+    "clip_id": "SC-72",
+    "scene_name": "Sirens tràn lên boong tàu",
+    "duration": 8,
+    "dramatic_craft": {
+      "beat": "[!]: Sirens tràn lên boong tàu",
+      "value_turn": "Danger -> Tactical grit: Overcoming lethal marine obstacles.",
+      "subtext": "The seafarers rely on discipline and physical brotherhood to survive.",
+      "prop_and_detail": "Heavy hemp cordage, oak ship timbers, bronze fittings, wet limestone."
+    },
+    "action_summary": {
+      "0-3s": "From second 0, Hàng chục Siren phóng lên khỏi mặt nước, móng vuốt nhọn hoắt bám chặt mạn tàu và dây buồm; móng vuốt cào rách ván.",
+      "3-6s": "Kinetic inertia drives the action across the frame with realistic weight and friction.",
+      "6-8s": "The physical impact resolves cleanly with solid contact by second 8."
+    },
+    "dialogue": [],
+    "audio": "Ambient ocean roar and timber creak (Sonic Isolation); crashing surf, whistling wind."
+  },
+  {
+    "clip_id": "SC-73",
+    "scene_name": "Chém đứt móng vuốt quái vật",
+    "duration": 10,
+    "dramatic_craft": {
+      "beat": "[+]: Chém đứt móng vuốt quái vật",
+      "value_turn": "Danger -> Tactical grit: Overcoming lethal marine obstacles.",
+      "subtext": "The seafarers rely on discipline and physical brotherhood to survive.",
+      "prop_and_detail": "Heavy hemp cordage, oak ship timbers, bronze fittings, wet limestone."
+    },
+    "action_summary": {
+      "0-3s": "From the opening frame at second 0, Heracles begins speaking with commanding authority: Heracles says \"Back into the black ocean trench where your brood spawned! You will not drag a single soul from this deck today, foul monsters!\" (no subtitles).",
+      "3-7s": "The line continues through the middle seconds as heracles vung chiếc rìu chiến hai lưỡi bổ gãy móng vuốt một siren đang vồ lái tàu.",
+      "7-10s": "Heracles finishes speaking by second 7; the crew executes the maneuver with iron discipline through second 10."
+    },
+    "dialogue": [
+      {
+        "t": "0-7s",
+        "speaker": "Heracles",
+        "line": "Back into the black ocean trench where your brood spawned! You will not drag a single soul from this deck today, foul monsters!"
+      }
+    ],
+    "audio": "Heracles: Back into the black ocean trench where your brood spawned! You will not drag a single soul from this deck today, foul monsters!; crashing surf, whistling wind."
+  },
+  {
+    "clip_id": "SC-74",
+    "scene_name": "Chém hạ Siren trên boong",
+    "duration": 8,
+    "dramatic_craft": {
+      "beat": "[+]: Chém hạ Siren trên boong",
+      "value_turn": "Danger -> Tactical grit: Overcoming lethal marine obstacles.",
+      "subtext": "The seafarers rely on discipline and physical brotherhood to survive.",
+      "prop_and_detail": "Heavy hemp cordage, oak ship timbers, bronze fittings, wet limestone."
+    },
+    "action_summary": {
+      "0-3s": "From second 0, Nora delivers the line immediately over the ocean sounds: Nora says \"Do not look into their dead black eyes! Strike hard at the neck joints and sever their clawed forearms clean!\" (no subtitles).",
+      "3-6s": "Nora's command carries firmly through second 5; nora né móng vuốt lao tới, xoay người chém đứt cánh vây bên hông quái nữ.",
+      "6-8s": "The line concludes by second 6; the seafarers hold disciplined readiness through second 8."
+    },
+    "dialogue": [
+      {
+        "t": "0-6s",
+        "speaker": "Nora",
+        "line": "Do not look into their dead black eyes! Strike hard at the neck joints and sever their clawed forearms clean!"
+      }
+    ],
+    "audio": "Nora: Do not look into their dead black eyes! Strike hard at the neck joints and sever their clawed forearms clean!; crashing surf, whistling wind."
+  },
+  {
+    "clip_id": "SC-75",
+    "scene_name": "Thủy thủ trượt ngã xuống biển",
+    "duration": 6,
+    "dramatic_craft": {
+      "beat": "[!]: Thủy thủ trượt ngã xuống biển",
+      "value_turn": "Danger -> Tactical grit: Overcoming lethal marine obstacles.",
+      "subtext": "The seafarers rely on discipline and physical brotherhood to survive.",
+      "prop_and_detail": "Heavy hemp cordage, oak ship timbers, bronze fittings, wet limestone."
+    },
+    "action_summary": {
+      "0-2s": "At second 0, Cú nghiêng làm người thủy thủ trẻ trượt chân văng qua lan can rơi tõm xuống biển ngọc bích; bọt nước bắn tung tóe.",
+      "2-4s": "The dynamic physical motion unfolds smoothly across the frame.",
+      "4-6s": "The action concludes with balanced kinetic follow-through by second 6."
+    },
+    "dialogue": [],
+    "audio": "Ambient ocean roar and timber creak (Sonic Isolation); crashing surf, whistling wind."
+  },
+  {
+    "clip_id": "SC-76",
+    "scene_name": "Bầy Siren kéo chìm thủy thủ",
+    "duration": 8,
+    "dramatic_craft": {
+      "beat": "[--]: Bầy Siren kéo chìm thủy thủ",
+      "value_turn": "Danger -> Tactical grit: Overcoming lethal marine obstacles.",
+      "subtext": "The seafarers rely on discipline and physical brotherhood to survive.",
+      "prop_and_detail": "Heavy hemp cordage, oak ship timbers, bronze fittings, wet limestone."
+    },
+    "action_summary": {
+      "0-3s": "From second 0, Bốn con quái nữ xúm lại túm lấy chân và thắt lưng người thủy thủ kéo xuống đáy vực; tia nắng rọi rạn san hô.",
+      "3-6s": "Kinetic inertia drives the action across the frame with realistic weight and friction.",
+      "6-8s": "The physical impact resolves cleanly with solid contact by second 8."
+    },
+    "dialogue": [],
+    "audio": "Ambient ocean roar and timber creak (Sonic Isolation); crashing surf, whistling wind."
+  },
+  {
+    "clip_id": "SC-77",
+    "scene_name": "Quyết định lặn cứu đồng đội",
+    "duration": 10,
+    "dramatic_craft": {
+      "beat": "RH [++]: Quyết định lặn cứu đồng đội",
+      "value_turn": "Danger -> Tactical grit: Overcoming lethal marine obstacles.",
+      "subtext": "The seafarers rely on discipline and physical brotherhood to survive.",
+      "prop_and_detail": "Heavy hemp cordage, oak ship timbers, bronze fittings, wet limestone."
+    },
+    "action_summary": {
+      "0-3s": "From the opening frame at second 0, Nora begins speaking with commanding authority: Nora says \"No man stays behind on my watch while breath remains in my chest! Hold the ship's course and line steady, Castor, right now!\" (no subtitles).",
+      "3-7s": "The line continues through the middle seconds as castor toan kéo nora lại nhưng nora tuốt dao găm ngậm vào miệng trừng mắt quát.",
+      "7-10s": "Nora finishes speaking by second 7; the crew executes the maneuver with iron discipline through second 10."
+    },
+    "dialogue": [
+      {
+        "t": "0-7s",
+        "speaker": "Nora",
+        "line": "No man stays behind on my watch while breath remains in my chest! Hold the ship's course and line steady, Castor, right now!"
+      }
+    ],
+    "audio": "Nora: No man stays behind on my watch while breath remains in my chest! Hold the ship's course and line steady, Castor, right now!; crashing surf, whistling wind."
+  },
+  {
+    "clip_id": "SC-78",
+    "scene_name": "Lao mình xuống biển sâu",
+    "duration": 8,
+    "dramatic_craft": {
+      "beat": "[!]: Lao mình xuống biển sâu",
+      "value_turn": "Danger -> Tactical grit: Overcoming lethal marine obstacles.",
+      "subtext": "The seafarers rely on discipline and physical brotherhood to survive.",
+      "prop_and_detail": "Heavy hemp cordage, oak ship timbers, bronze fittings, wet limestone."
+    },
+    "action_summary": {
+      "0-3s": "From second 0, Nora lao mình từ mạn tàu cắm thẳng xuống làn nước xanh ngọc trong vắt; cột nước trắng bắn lên.",
+      "3-6s": "Kinetic inertia drives the action across the frame with realistic weight and friction.",
+      "6-8s": "The physical impact resolves cleanly with solid contact by second 8."
+    },
+    "dialogue": [],
+    "audio": "Ambient ocean roar and timber creak (Sonic Isolation); crashing surf, whistling wind."
+  },
+  {
+    "clip_id": "SC-79",
+    "scene_name": "Đâm dao giải cứu dưới nước",
+    "duration": 8,
+    "dramatic_craft": {
+      "beat": "[++]: Đâm dao giải cứu dưới nước",
+      "value_turn": "Danger -> Tactical grit: Overcoming lethal marine obstacles.",
+      "subtext": "The seafarers rely on discipline and physical brotherhood to survive.",
+      "prop_and_detail": "Heavy hemp cordage, oak ship timbers, bronze fittings, wet limestone."
+    },
+    "action_summary": {
+      "0-3s": "From second 0, Nora bơi xé nước áp sát, vung dao găm đâm thẳng vào mắt một Siren đang ghì thủy thủ; nắng khúc xạ lung linh.",
+      "3-6s": "Kinetic inertia drives the action across the frame with realistic weight and friction.",
+      "6-8s": "The physical impact resolves cleanly with solid contact by second 8."
+    },
+    "dialogue": [],
+    "audio": "Ambient ocean roar and timber creak (Sonic Isolation); crashing surf, whistling wind."
+  },
+  {
+    "clip_id": "SC-80",
+    "scene_name": "Quăng lưới kéo hai người lên",
+    "duration": 10,
+    "dramatic_craft": {
+      "beat": "[++]: Quăng lưới kéo hai người lên",
+      "value_turn": "Danger -> Tactical grit: Overcoming lethal marine obstacles.",
+      "subtext": "The seafarers rely on discipline and physical brotherhood to survive.",
+      "prop_and_detail": "Heavy hemp cordage, oak ship timbers, bronze fittings, wet limestone."
+    },
+    "action_summary": {
+      "0-3s": "From the opening frame at second 0, Heracles begins speaking with commanding authority: Heracles says \"Wrap the thick hemp netting beneath his shoulders and grab hold! I will haul you both out of the jaws of the deep waters!\" (no subtitles).",
+      "3-7s": "The line continues through the middle seconds as heracles quăng tấm lưới thừng bện gai dầu nặng xuống mặt biển ngay sát nora.",
+      "7-10s": "Heracles finishes speaking by second 7; the crew executes the maneuver with iron discipline through second 10."
+    },
+    "dialogue": [
+      {
+        "t": "0-7s",
+        "speaker": "Heracles",
+        "line": "Wrap the thick hemp netting beneath his shoulders and grab hold! I will haul you both out of the jaws of the deep waters!"
+      }
+    ],
+    "audio": "Heracles: Wrap the thick hemp netting beneath his shoulders and grab hold! I will haul you both out of the jaws of the deep waters!; crashing surf, whistling wind."
+  },
+  {
+    "clip_id": "SC-81",
+    "scene_name": "Ra lệnh phóng hỏa mặt vịnh",
+    "duration": 10,
+    "dramatic_craft": {
+      "beat": "[++]: Ra lệnh phóng hỏa mặt vịnh",
+      "value_turn": "Danger -> Tactical grit: Overcoming lethal marine obstacles.",
+      "subtext": "The seafarers rely on discipline and physical brotherhood to survive.",
+      "prop_and_detail": "Heavy hemp cordage, oak ship timbers, bronze fittings, wet limestone."
+    },
+    "action_summary": {
+      "0-3s": "From the opening frame at second 0, Nora begins speaking with commanding authority: Nora says \"Dump the bitumen barrels overboard immediately, Castor! Set the surface of this cursed lagoon ablaze to burn their escape paths and protect us!\" (no subtitles).",
+      "3-7s": "The line continues through the middle seconds as nora đứng dậy chỉ tay xuống mặt nước nơi bầy siren đang lượn quanh chuẩn bị đợt hai.",
+      "7-10s": "Nora finishes speaking by second 7; the crew executes the maneuver with iron discipline through second 10."
+    },
+    "dialogue": [
+      {
+        "t": "0-7s",
+        "speaker": "Nora",
+        "line": "Dump the bitumen barrels overboard immediately, Castor! Set the surface of this cursed lagoon ablaze to burn their escape paths and protect us!"
+      }
+    ],
+    "audio": "Nora: Dump the bitumen barrels overboard immediately, Castor! Set the surface of this cursed lagoon ablaze to burn their escape paths and protect us!; crashing surf, whistling wind."
+  },
+  {
+    "clip_id": "SC-82",
+    "scene_name": "Mặt nước bốc cháy ngùn ngụt",
+    "duration": 8,
+    "dramatic_craft": {
+      "beat": "[+++]: Mặt nước bốc cháy ngùn ngụt",
+      "value_turn": "Danger -> Tactical grit: Overcoming lethal marine obstacles.",
+      "subtext": "The seafarers rely on discipline and physical brotherhood to survive.",
+      "prop_and_detail": "Heavy hemp cordage, oak ship timbers, bronze fittings, wet limestone."
+    },
+    "action_summary": {
+      "0-3s": "From second 0, Mũi tên lửa chạm dầu: cả mặt vịnh bùng lên bức tường lửa ngùn ngụt khói đen cuồn cuộn; lửa cam đỏ rực sáng.",
+      "3-6s": "Kinetic inertia drives the action across the frame with realistic weight and friction.",
+      "6-8s": "The physical impact resolves cleanly with solid contact by second 8."
+    },
+    "dialogue": [],
+    "audio": "Ambient ocean roar and timber creak (Sonic Isolation); crashing surf, whistling wind."
+  },
+  {
+    "clip_id": "SC-83",
+    "scene_name": "Đón gió lửa bứt phá",
+    "duration": 10,
+    "dramatic_craft": {
+      "beat": "RH [++]: Đón gió lửa bứt phá",
+      "value_turn": "Danger -> Tactical grit: Overcoming lethal marine obstacles.",
+      "subtext": "The seafarers rely on discipline and physical brotherhood to survive.",
+      "prop_and_detail": "Heavy hemp cordage, oak ship timbers, bronze fittings, wet limestone."
+    },
+    "action_summary": {
+      "0-3s": "From the opening frame at second 0, Nora begins speaking with commanding authority: Nora says \"Catch the draft from the raging blaze! Sheet home the mainsail tight and break for the towering limestone cliffs rising ahead of our bows!\" (no subtitles).",
+      "3-7s": "The line continues through the middle seconds as nora vung đoản kiếm lệnh kéo buồm; luồng gió đối lưu từ đám cháy đẩy tàu vọt đi.",
+      "7-10s": "Nora finishes speaking by second 7; the crew executes the maneuver with iron discipline through second 10."
+    },
+    "dialogue": [
+      {
+        "t": "0-7s",
+        "speaker": "Nora",
+        "line": "Catch the draft from the raging blaze! Sheet home the mainsail tight and break for the towering limestone cliffs rising ahead of our bows!"
+      }
+    ],
+    "audio": "Nora: Catch the draft from the raging blaze! Sheet home the mainsail tight and break for the towering limestone cliffs rising ahead of our bows!; crashing surf, whistling wind."
+  },
+  {
+    "clip_id": "SC-84",
+    "scene_name": "Cập bờ Karst lúc 11:30",
+    "duration": 10,
+    "dramatic_craft": {
+      "beat": "[-]: Cập bờ Karst lúc 11:30",
+      "value_turn": "Danger -> Tactical grit: Overcoming lethal marine obstacles.",
+      "subtext": "The seafarers rely on discipline and physical brotherhood to survive.",
+      "prop_and_detail": "Heavy hemp cordage, oak ship timbers, bronze fittings, wet limestone."
+    },
+    "action_summary": {
+      "0-3s": "From the opening frame at second 0, Castor begins speaking with commanding authority: Castor says \"We are through the fire and the song. The limestone towers of the dead island stand straight before our boots now, cold and silent.\" (no subtitles).",
+      "3-7s": "The line continues through the middle seconds as bốn bóng người bước vào bóng râm hẻm núi đá vôi, bỏ lại bãi biển sau lưng (kết thúc hồi 2a).",
+      "7-10s": "Castor finishes speaking by second 7; the crew executes the maneuver with iron discipline through second 10."
+    },
+    "dialogue": [
+      {
+        "t": "0-7s",
+        "speaker": "Castor",
+        "line": "We are through the fire and the song. The limestone towers of the dead island stand straight before our boots now, cold and silent."
+      }
+    ],
+    "audio": "Castor: We are through the fire and the song. The limestone towers of the dead island stand straight before our boots now, cold and silent.; crashing surf, whistling wind."
+  }
+]

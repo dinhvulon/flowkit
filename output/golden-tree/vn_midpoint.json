@@ -1,0 +1,278 @@
+[
+  {
+    "clip_id": "SC-85",
+    "scene_name": "Tranh cãi trước hẻm cụt",
+    "duration": 8,
+    "dramatic_craft": {
+      "beat": "Hook [!]: Tranh cãi trước hẻm cụt",
+      "value_turn": "Hope -> Midpoint Reversal: The map is exposed as a lethal baited trap.",
+      "subtext": "The seafarers discover their ambition has led them into a predator's web.",
+      "prop_and_detail": "Ancient glowing parchment, iron crowbars, white limestone boulders."
+    },
+    "action_summary": {
+      "0-3s": "From second 0, Castor begins speaking immediately, cutting through the cavern silence: Castor says \"Look at this blind limestone wall, Nora! The path is blocked, yet your chart claims this is the only way forward!\" (no subtitles).",
+      "3-6s": "Castor's voice echoes off limestone walls through second 5; hẻm đá cụt, castor chỉ vào vách đá karst chặn đường.",
+      "6-8s": "The line concludes by second 6; Castor holds an intense gaze through second 8."
+    },
+    "dialogue": [
+      {
+        "t": "0-6s",
+        "speaker": "Castor",
+        "line": "Look at this blind limestone wall, Nora! The path is blocked, yet your chart claims this is the only way forward!"
+      }
+    ],
+    "audio": "Castor: Look at this blind limestone wall, Nora! The path is blocked, yet your chart claims this is the only way forward!; dripping water, echoing voices."
+  },
+  {
+    "clip_id": "SC-86",
+    "scene_name": "Bảo vệ niềm tin bản đồ",
+    "duration": 6,
+    "dramatic_craft": {
+      "beat": "[0]: Bảo vệ niềm tin bản đồ",
+      "value_turn": "Hope -> Midpoint Reversal: The map is exposed as a lethal baited trap.",
+      "subtext": "The seafarers discover their ambition has led them into a predator's web.",
+      "prop_and_detail": "Ancient glowing parchment, iron crowbars, white limestone boulders."
+    },
+    "action_summary": {
+      "0-2s": "From second 0, Nora begins speaking immediately, sharp and urgent: Nora says \"It does not need to look like a road. Trust the ancient salt ink!\" (no subtitles).",
+      "2-4s": "Nora's line finishes cleanly by second 4; nora soi tấm bản đồ phát quang, bảo vệ niềm tin.",
+      "4-6s": "The tension holds firm with grounded postures by second 6."
+    },
+    "dialogue": [
+      {
+        "t": "0-4s",
+        "speaker": "Nora",
+        "line": "It does not need to look like a road. Trust the ancient salt ink!"
+      }
+    ],
+    "audio": "Nora: It does not need to look like a road. Trust the ancient salt ink!; dripping water, echoing voices."
+  },
+  {
+    "clip_id": "SC-87",
+    "scene_name": "Tiếng kêu cứu trong kẹt đá",
+    "duration": 8,
+    "dramatic_craft": {
+      "beat": "[!]: Tiếng kêu cứu trong kẹt đá",
+      "value_turn": "Hope -> Midpoint Reversal: The map is exposed as a lethal baited trap.",
+      "subtext": "The seafarers discover their ambition has led them into a predator's web.",
+      "prop_and_detail": "Ancient glowing parchment, iron crowbars, white limestone boulders."
+    },
+    "action_summary": {
+      "0-3s": "From second 0, Tiếng kêu cứu nghẹn ngào từ khe đá sụt làm ngắt quãng tranh cãi; bụi vôi rơi nhẹ.",
+      "3-6s": "The physical sound and motion resonate through the narrow fissure.",
+      "6-8s": "The beat concludes with held breath by second 8."
+    },
+    "dialogue": [],
+    "audio": "Ambient cave silence and falling limestone dust (Sonic Isolation); dripping water, echoing voices."
+  },
+  {
+    "clip_id": "SC-88",
+    "scene_name": "Ra lệnh dừng tranh cãi",
+    "duration": 6,
+    "dramatic_craft": {
+      "beat": "[+]: Ra lệnh dừng tranh cãi",
+      "value_turn": "Hope -> Midpoint Reversal: The map is exposed as a lethal baited trap.",
+      "subtext": "The seafarers discover their ambition has led them into a predator's web.",
+      "prop_and_detail": "Ancient glowing parchment, iron crowbars, white limestone boulders."
+    },
+    "action_summary": {
+      "0-2s": "From second 0, Nora begins speaking immediately, sharp and urgent: Nora says \"Hold your tongues! That was a living human voice crying beneath the stone scree!\" (no subtitles).",
+      "2-4s": "Nora's line finishes cleanly by second 4; nora ra lệnh dừng tranh cãi để tìm người kêu cứu.",
+      "4-6s": "The tension holds firm with grounded postures by second 6."
+    },
+    "dialogue": [
+      {
+        "t": "0-4s",
+        "speaker": "Nora",
+        "line": "Hold your tongues! That was a living human voice crying beneath the stone scree!"
+      }
+    ],
+    "audio": "Nora: Hold your tongues! That was a living human voice crying beneath the stone scree!; dripping water, echoing voices."
+  },
+  {
+    "clip_id": "SC-89",
+    "scene_name": "Phát hiện Theron bị kẹt",
+    "duration": 8,
+    "dramatic_craft": {
+      "beat": "[+]: Phát hiện Theron bị kẹt",
+      "value_turn": "Hope -> Midpoint Reversal: The map is exposed as a lethal baited trap.",
+      "subtext": "The seafarers discover their ambition has led them into a predator's web.",
+      "prop_and_detail": "Ancient glowing parchment, iron crowbars, white limestone boulders."
+    },
+    "action_summary": {
+      "0-3s": "From second 0, Castor begins speaking immediately, cutting through the cavern silence: Castor says \"Down here in the dark crevice! An old hermit pinned under fallen boulders, shivering with white lime dust on his beard!\" (no subtitles).",
+      "3-6s": "Castor's voice echoes off limestone walls through second 5; tiếp cận khe nứt hẹp, phát hiện theron bị kẹt dưới đá tảng.",
+      "6-8s": "The line concludes by second 6; Castor holds an intense gaze through second 8."
+    },
+    "dialogue": [
+      {
+        "t": "0-6s",
+        "speaker": "Castor",
+        "line": "Down here in the dark crevice! An old hermit pinned under fallen boulders, shivering with white lime dust on his beard!"
+      }
+    ],
+    "audio": "Castor: Down here in the dark crevice! An old hermit pinned under fallen boulders, shivering with white lime dust on his beard!; dripping water, echoing voices."
+  },
+  {
+    "clip_id": "SC-90",
+    "scene_name": "Nạy đá giải cứu",
+    "duration": 10,
+    "dramatic_craft": {
+      "beat": "[++]: Nạy đá giải cứu",
+      "value_turn": "Hope -> Midpoint Reversal: The map is exposed as a lethal baited trap.",
+      "subtext": "The seafarers discover their ambition has led them into a predator's web.",
+      "prop_and_detail": "Ancient glowing parchment, iron crowbars, white limestone boulders."
+    },
+    "action_summary": {
+      "0-3s": "From the opening frame at second 0, Heracles begins speaking with dramatic revelation: Heracles says \"Stand clear while I get the iron lever under this slab! Heave with everything, boy, before the ceiling crumbles down upon his skull!\" (no subtitles).",
+      "3-7s": "The voice carries profound weight through second 6 as heracles dùng đòn bẩy sắt nạy tảng đá hoa cương cứu theron.",
+      "7-10s": "Heracles concludes the revelation by second 7; stunned silence grips the seafarers through second 10."
+    },
+    "dialogue": [
+      {
+        "t": "0-7s",
+        "speaker": "Heracles",
+        "line": "Stand clear while I get the iron lever under this slab! Heave with everything, boy, before the ceiling crumbles down upon his skull!"
+      }
+    ],
+    "audio": "Heracles: Stand clear while I get the iron lever under this slab! Heave with everything, boy, before the ceiling crumbles down upon his skull!; dripping water, echoing voices."
+  },
+  {
+    "clip_id": "SC-91",
+    "scene_name": "Kéo Theron thoát hiểm",
+    "duration": 6,
+    "dramatic_craft": {
+      "beat": "[+]: Kéo Theron thoát hiểm",
+      "value_turn": "Hope -> Midpoint Reversal: The map is exposed as a lethal baited trap.",
+      "subtext": "The seafarers discover their ambition has led them into a predator's web.",
+      "prop_and_detail": "Ancient glowing parchment, iron crowbars, white limestone boulders."
+    },
+    "action_summary": {
+      "0-2s": "At second 0, Kéo Theron lên khỏi khe đá, thở dốc và run rẩy; bụi đá trắng bám đầy người.",
+      "2-4s": "The quiet dramatic tension lingers over the rocky cavern.",
+      "4-6s": "The physical action resolves cleanly by second 6."
+    },
+    "dialogue": [],
+    "audio": "Ambient cave silence and falling limestone dust (Sonic Isolation); dripping water, echoing voices."
+  },
+  {
+    "clip_id": "SC-92",
+    "scene_name": "Cho nước và thẩm vấn",
+    "duration": 8,
+    "dramatic_craft": {
+      "beat": "[0]: Cho nước và thẩm vấn",
+      "value_turn": "Hope -> Midpoint Reversal: The map is exposed as a lethal baited trap.",
+      "subtext": "The seafarers discover their ambition has led them into a predator's web.",
+      "prop_and_detail": "Ancient glowing parchment, iron crowbars, white limestone boulders."
+    },
+    "action_summary": {
+      "0-3s": "From second 0, Nora begins speaking immediately, cutting through the cavern silence: Nora says \"Drink slow, elder. You are safe among Aegean sailors. Who are you, and how long have you survived here?\" (no subtitles).",
+      "3-6s": "Nora's voice echoes off limestone walls through second 5; nora đưa túi nước da dê cho theron uống từng ngụm nhỏ.",
+      "6-8s": "The line concludes by second 6; Nora holds an intense gaze through second 8."
+    },
+    "dialogue": [
+      {
+        "t": "0-6s",
+        "speaker": "Nora",
+        "line": "Drink slow, elder. You are safe among Aegean sailors. Who are you, and how long have you survived here?"
+      }
+    ],
+    "audio": "Nora: Drink slow, elder. You are safe among Aegean sailors. Who are you, and how long have you survived here?; dripping water, echoing voices."
+  },
+  {
+    "clip_id": "SC-93",
+    "scene_name": "Nhận diện bản đồ ma thuật",
+    "duration": 8,
+    "dramatic_craft": {
+      "beat": "RH [!]: Nhận diện bản đồ ma thuật",
+      "value_turn": "Hope -> Midpoint Reversal: The map is exposed as a lethal baited trap.",
+      "subtext": "The seafarers discover their ambition has led them into a predator's web.",
+      "prop_and_detail": "Ancient glowing parchment, iron crowbars, white limestone boulders."
+    },
+    "action_summary": {
+      "0-3s": "From second 0, Theron begins speaking immediately, cutting through the cavern silence: Theron says \"That parchment... glowing gold serpent lines... by the ancient gods, put it away before the karst beast smells our heat!\" (no subtitles).",
+      "3-6s": "Theron's voice echoes off limestone walls through second 5; theron nhìn thấy tấm bản đồ da cừu phát quang trên tay nora và run rẩy kinh hoàng.",
+      "6-8s": "The line concludes by second 6; Theron holds an intense gaze through second 8."
+    },
+    "dialogue": [
+      {
+        "t": "0-6s",
+        "speaker": "Theron",
+        "line": "That parchment... glowing gold serpent lines... by the ancient gods, put it away before the karst beast smells our heat!"
+      }
+    ],
+    "audio": "Theron: That parchment... glowing gold serpent lines... by the ancient gods, put it away before the karst beast smells our heat!; dripping water, echoing voices."
+  },
+  {
+    "clip_id": "SC-94",
+    "scene_name": "Vạch trần bản đồ là mồi nhử",
+    "duration": 10,
+    "dramatic_craft": {
+      "beat": "[!!!]: Vạch trần bản đồ là mồi nhử",
+      "value_turn": "Hope -> Midpoint Reversal: The map is exposed as a lethal baited trap.",
+      "subtext": "The seafarers discover their ambition has led them into a predator's web.",
+      "prop_and_detail": "Ancient glowing parchment, iron crowbars, white limestone boulders."
+    },
+    "action_summary": {
+      "0-3s": "From the opening frame at second 0, Theron begins speaking with dramatic revelation: Theron says \"You think you hold a sacred chart! That parchment is no guide—it is a lethal lure crafted by the Golden Tree to feed its roots!\" (no subtitles).",
+      "3-7s": "The voice carries profound weight through second 6 as theron vạch trần bí mật: bản đồ không phải kim chỉ nam, nó là mồi nhử của cây vàng!.",
+      "7-10s": "Theron concludes the revelation by second 7; stunned silence grips the seafarers through second 10."
+    },
+    "dialogue": [
+      {
+        "t": "0-7s",
+        "speaker": "Theron",
+        "line": "You think you hold a sacred chart! That parchment is no guide—it is a lethal lure crafted by the Golden Tree to feed its roots!"
+      }
+    ],
+    "audio": "Theron: You think you hold a sacred chart! That parchment is no guide—it is a lethal lure crafted by the Golden Tree to feed its roots!; dripping water, echoing voices."
+  },
+  {
+    "clip_id": "SC-95",
+    "scene_name": "Vỡ mộng lòng tham",
+    "duration": 6,
+    "dramatic_craft": {
+      "beat": "[-]: Vỡ mộng lòng tham",
+      "value_turn": "Hope -> Midpoint Reversal: The map is exposed as a lethal baited trap.",
+      "subtext": "The seafarers discover their ambition has led them into a predator's web.",
+      "prop_and_detail": "Ancient glowing parchment, iron crowbars, white limestone boulders."
+    },
+    "action_summary": {
+      "0-2s": "From second 0, Castor begins speaking immediately, sharp and urgent: Castor says \"A lure? We bled through crushing rocks just to walk into a baited rat-trap?\" (no subtitles).",
+      "2-4s": "Castor's line finishes cleanly by second 4; castor và heracles bàng hoàng trước sự thật tàn nhẫn.",
+      "4-6s": "The tension holds firm with grounded postures by second 6."
+    },
+    "dialogue": [
+      {
+        "t": "0-4s",
+        "speaker": "Castor",
+        "line": "A lure? We bled through crushing rocks just to walk into a baited rat-trap?"
+      }
+    ],
+    "audio": "Castor: A lure? We bled through crushing rocks just to walk into a baited rat-trap?; dripping water, echoing voices."
+  },
+  {
+    "clip_id": "SC-96",
+    "scene_name": "Bước ngoặt trao quyền dẫn đường",
+    "duration": 6,
+    "dramatic_craft": {
+      "beat": "[++]: Bước ngoặt trao quyền dẫn đường",
+      "value_turn": "Hope -> Midpoint Reversal: The map is exposed as a lethal baited trap.",
+      "subtext": "The seafarers discover their ambition has led them into a predator's web.",
+      "prop_and_detail": "Ancient glowing parchment, iron crowbars, white limestone boulders."
+    },
+    "action_summary": {
+      "0-2s": "From second 0, Nora begins speaking immediately, sharp and urgent: Nora says \"Lead us through the blind fissures, Theron. We will see this legendary sanctuary alive!\" (no subtitles).",
+      "2-4s": "Nora's line finishes cleanly by second 4; nora trao quyền dẫn đường cho theron qua mê cung ngầm.",
+      "4-6s": "The tension holds firm with grounded postures by second 6."
+    },
+    "dialogue": [
+      {
+        "t": "0-4s",
+        "speaker": "Nora",
+        "line": "Lead us through the blind fissures, Theron. We will see this legendary sanctuary alive!"
+      }
+    ],
+    "audio": "Nora: Lead us through the blind fissures, Theron. We will see this legendary sanctuary alive!; dripping water, echoing voices."
+  }
+]

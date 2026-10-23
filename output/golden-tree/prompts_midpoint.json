@@ -1,0 +1,841 @@
+[
+  {
+    "clip_id": "SC-85",
+    "scene_name": "Tranh cãi trước hẻm cụt",
+    "duration": 8,
+    "aspect_ratio": "16:9",
+    "refs": [
+      "Nora",
+      "Nora Body Seafarer",
+      "Castor"
+    ],
+    "start_frame": {
+      "type": "GENERATE_IMAGE",
+      "image_prompt": "Cinematic master shot on 35mm film, 16:9 aspect ratio. Hẻm đá cụt, Castor chỉ vào vách đá karst chặn đường. Featuring {{ref:Nora}} {{ref:Nora Body Seafarer}} {{ref:Castor}}. Practical lighting: bóng râm hẻm đá xám. Deep focus (f/8 aperture), entire frame sharp, dark chiaroscuro, natural textures, strictly NO artificial volumetric lighting, NO 3D CGI.",
+      "image_refs": [
+        "Nora",
+        "Nora Body Seafarer",
+        "Castor"
+      ]
+    },
+    "camera": {
+      "viewpoint": "third-person cinematic camera; the camera itself is never seen",
+      "shot_size": "MCU Tranh Luận Bế Tắc",
+      "description": "Cooke S4 35mm prime lens with deep focus (f/8 aperture), entire frame sharp, MCU Tranh Luận Bế Tắc framing."
+    },
+    "style": "cinematic feature-film look: shot on ARRI Alexa with Cooke S4 prime lenses, fine 35mm film grain, deep inky blacks, strong motivated chiaroscuro, thin atmospheric sea haze catching the light; real seafarers and rugged limestone cavern, matte organic biological textures, strictly NOT CGI, NOT a video game",
+    "setting": "Location: karst limestone canyon and underground fissure. Light: bóng râm hẻm đá xám, deep inky shadows, cold subterranean atmosphere.",
+    "characters": [
+      {
+        "name": "Nora",
+        "visual_lock": "FACE LOCK: Nora's face is exactly the face in {{ref:Nora}}, kept 1:1. BODY and OUTFIT LOCK: her build and navy seafarer brigandine are exactly as in {{ref:Nora Body Seafarer}}.",
+        "state": "Standing resolute in the karst canyon."
+      },
+      {
+        "name": "Castor",
+        "visual_lock": "FACE LOCK: Castor's face is exactly the face in {{ref:Castor}}, kept 1:1. BODY and OUTFIT LOCK: his leather cuirass is exactly as in {{ref:Castor}}.",
+        "state": "Challenging the navigation with fierce skepticism."
+      }
+    ],
+    "timeline_action": {
+      "0-3s": "From second 0, Castor begins speaking immediately, cutting through the cavern silence: Castor says \"Look at this blind limestone wall, Nora! The path is blocked, yet your chart claims this is the only way forward!\" (no subtitles).",
+      "3-6s": "Castor's voice echoes off limestone walls through second 5; hẻm đá cụt, castor chỉ vào vách đá karst chặn đường.",
+      "6-8s": "The line concludes by second 6; Castor holds an intense gaze through second 8."
+    },
+    "speech": {
+      "speaker": [
+        "Castor"
+      ],
+      "voices": {
+        "Castor": "fenrir"
+      },
+      "delivery": "sharp, dramatic dialogue raised in heated argument or terrified revelation",
+      "dialogue": [
+        {
+          "t": "0-6s",
+          "speaker": "Castor",
+          "line": "Look at this blind limestone wall, Nora! The path is blocked, yet your chart claims this is the only way forward!"
+        }
+      ]
+    },
+    "dramatic_craft": {
+      "beat": "Hook [!]: Tranh cãi trước hẻm cụt",
+      "value_turn": "Hope -> Midpoint Reversal: The map is exposed as a lethal baited trap.",
+      "subtext": "The seafarers discover their ambition has led them into a predator's web.",
+      "prop_and_detail": "Ancient glowing parchment, iron crowbars, white limestone boulders."
+    },
+    "audio": "Castor: Look at this blind limestone wall, Nora! The path is blocked, yet your chart claims this is the only way forward!; dripping water, echoing voices.",
+    "physics": "Friction between heavy stone slabs, dust scattering, muscular exertion on iron pry-bars.",
+    "negative_constraints": [
+      "No subtitles, no captions, no on-frame text, no logos, no watermarks.",
+      "ANTI-CGI LOCK: real documentary footage, not a 3D render, not a video game, not CGI fire, no plastic skin.",
+      "No breath vapor and no white steam from anyone's mouth; no god rays, no volumetric beams, no magical sunbeams.",
+      "No shallow depth of field, no blurry background, no bokeh (f/8 aperture throughout).",
+      "Separate bodies never merge; natural hands with five fingers; no extra limbs.",
+      "Spoken words in this clip: 22 (Rule 49 band for 8s: 18-22)."
+    ]
+  },
+  {
+    "clip_id": "SC-86",
+    "scene_name": "Bảo vệ niềm tin bản đồ",
+    "duration": 6,
+    "aspect_ratio": "16:9",
+    "refs": [
+      "Nora",
+      "Nora Body Seafarer"
+    ],
+    "start_frame": {
+      "type": "PREV_LAST_FRAME",
+      "note": "Continuity match from previous clip."
+    },
+    "camera": {
+      "viewpoint": "third-person cinematic camera; the camera itself is never seen",
+      "shot_size": "CU Nora Kiên Định",
+      "description": "Cooke S4 35mm prime lens with deep focus (f/8 aperture), entire frame sharp, CU Nora Kiên Định framing."
+    },
+    "style": "cinematic feature-film look: shot on ARRI Alexa with Cooke S4 prime lenses, fine 35mm film grain, deep inky blacks, strong motivated chiaroscuro, thin atmospheric sea haze catching the light; real seafarers and rugged limestone cavern, matte organic biological textures, strictly NOT CGI, NOT a video game",
+    "setting": "Location: karst limestone canyon and underground fissure. Light: ánh sáng le lói từ trên đỉnh, deep inky shadows, cold subterranean atmosphere.",
+    "characters": [
+      {
+        "name": "Nora",
+        "visual_lock": "FACE LOCK: Nora's face is exactly the face in {{ref:Nora}}, kept 1:1. BODY and OUTFIT LOCK: her build and navy seafarer brigandine are exactly as in {{ref:Nora Body Seafarer}}.",
+        "state": "Standing resolute in the karst canyon."
+      }
+    ],
+    "timeline_action": {
+      "0-2s": "From second 0, Nora begins speaking immediately, sharp and urgent: Nora says \"It does not need to look like a road. Trust the ancient salt ink!\" (no subtitles).",
+      "2-4s": "Nora's line finishes cleanly by second 4; nora soi tấm bản đồ phát quang, bảo vệ niềm tin.",
+      "4-6s": "The tension holds firm with grounded postures by second 6."
+    },
+    "speech": {
+      "speaker": [
+        "Nora"
+      ],
+      "voices": {
+        "Nora": "kore"
+      },
+      "delivery": "sharp, dramatic dialogue raised in heated argument or terrified revelation",
+      "dialogue": [
+        {
+          "t": "0-4s",
+          "speaker": "Nora",
+          "line": "It does not need to look like a road. Trust the ancient salt ink!"
+        }
+      ]
+    },
+    "dramatic_craft": {
+      "beat": "[0]: Bảo vệ niềm tin bản đồ",
+      "value_turn": "Hope -> Midpoint Reversal: The map is exposed as a lethal baited trap.",
+      "subtext": "The seafarers discover their ambition has led them into a predator's web.",
+      "prop_and_detail": "Ancient glowing parchment, iron crowbars, white limestone boulders."
+    },
+    "audio": "Nora: It does not need to look like a road. Trust the ancient salt ink!; dripping water, echoing voices.",
+    "physics": "Friction between heavy stone slabs, dust scattering, muscular exertion on iron pry-bars.",
+    "negative_constraints": [
+      "No subtitles, no captions, no on-frame text, no logos, no watermarks.",
+      "ANTI-CGI LOCK: real documentary footage, not a 3D render, not a video game, not CGI fire, no plastic skin.",
+      "No breath vapor and no white steam from anyone's mouth; no god rays, no volumetric beams, no magical sunbeams.",
+      "No shallow depth of field, no blurry background, no bokeh (f/8 aperture throughout).",
+      "Separate bodies never merge; natural hands with five fingers; no extra limbs.",
+      "Spoken words in this clip: 15 (Rule 49 band for 6s: 12-15)."
+    ]
+  },
+  {
+    "clip_id": "SC-87",
+    "scene_name": "Tiếng kêu cứu trong kẹt đá",
+    "duration": 8,
+    "aspect_ratio": "16:9",
+    "refs": [
+      "Nora",
+      "Nora Body Seafarer"
+    ],
+    "start_frame": {
+      "type": "GENERATE_IMAGE",
+      "image_prompt": "Cinematic master shot on 35mm film, 16:9 aspect ratio. Tiếng kêu cứu nghẹn ngào từ khe đá sụt làm ngắt quãng tranh cãi. Featuring {{ref:Nora}} {{ref:Nora Body Seafarer}}. Practical lighting: bụi vôi rơi nhẹ. Deep focus (f/8 aperture), entire frame sharp, dark chiaroscuro, natural textures, strictly NO artificial volumetric lighting, NO 3D CGI.",
+      "image_refs": [
+        "Nora",
+        "Nora Body Seafarer"
+      ]
+    },
+    "camera": {
+      "viewpoint": "third-person cinematic camera; the camera itself is never seen",
+      "shot_size": "Dynamic Sound Cut Gián Đoạn",
+      "description": "Cooke S4 35mm prime lens with deep focus (f/8 aperture), entire frame sharp, Dynamic Sound Cut Gián Đoạn framing."
+    },
+    "style": "cinematic feature-film look: shot on ARRI Alexa with Cooke S4 prime lenses, fine 35mm film grain, deep inky blacks, strong motivated chiaroscuro, thin atmospheric sea haze catching the light; real seafarers and rugged limestone cavern, matte organic biological textures, strictly NOT CGI, NOT a video game",
+    "setting": "Location: karst limestone canyon and underground fissure. Light: bụi vôi rơi nhẹ, deep inky shadows, cold subterranean atmosphere.",
+    "characters": [
+      {
+        "name": "Nora",
+        "visual_lock": "FACE LOCK: Nora's face is exactly the face in {{ref:Nora}}, kept 1:1. BODY and OUTFIT LOCK: her build and navy seafarer brigandine are exactly as in {{ref:Nora Body Seafarer}}.",
+        "state": "Standing resolute in the karst canyon."
+      }
+    ],
+    "timeline_action": {
+      "0-3s": "From second 0, Tiếng kêu cứu nghẹn ngào từ khe đá sụt làm ngắt quãng tranh cãi; bụi vôi rơi nhẹ.",
+      "3-6s": "The physical sound and motion resonate through the narrow fissure.",
+      "6-8s": "The beat concludes with held breath by second 8."
+    },
+    "speech": {
+      "speaker": [],
+      "voices": {},
+      "delivery": "no spoken dialogue (Sonic Isolation)",
+      "dialogue": []
+    },
+    "dramatic_craft": {
+      "beat": "[!]: Tiếng kêu cứu trong kẹt đá",
+      "value_turn": "Hope -> Midpoint Reversal: The map is exposed as a lethal baited trap.",
+      "subtext": "The seafarers discover their ambition has led them into a predator's web.",
+      "prop_and_detail": "Ancient glowing parchment, iron crowbars, white limestone boulders."
+    },
+    "audio": "Ambient cave silence and falling limestone dust (Sonic Isolation); dripping water, echoing voices.",
+    "physics": "Friction between heavy stone slabs, dust scattering, muscular exertion on iron pry-bars.",
+    "negative_constraints": [
+      "No subtitles, no captions, no on-frame text, no logos, no watermarks.",
+      "ANTI-CGI LOCK: real documentary footage, not a 3D render, not a video game, not CGI fire, no plastic skin.",
+      "No breath vapor and no white steam from anyone's mouth; no god rays, no volumetric beams, no magical sunbeams.",
+      "No shallow depth of field, no blurry background, no bokeh (f/8 aperture throughout).",
+      "Separate bodies never merge; natural hands with five fingers; no extra limbs.",
+      "Spoken words in this clip: 0 (Rule 49 band for 8s: 0)."
+    ]
+  },
+  {
+    "clip_id": "SC-88",
+    "scene_name": "Ra lệnh dừng tranh cãi",
+    "duration": 6,
+    "aspect_ratio": "16:9",
+    "refs": [
+      "Nora",
+      "Nora Body Seafarer",
+      "Castor"
+    ],
+    "start_frame": {
+      "type": "PREV_LAST_FRAME",
+      "note": "Continuity match from previous clip."
+    },
+    "camera": {
+      "viewpoint": "third-person cinematic camera; the camera itself is never seen",
+      "shot_size": "MCU Nora Ra Lệnh Cứu Người",
+      "description": "Cooke S4 35mm prime lens with deep focus (f/8 aperture), entire frame sharp, MCU Nora Ra Lệnh Cứu Người framing."
+    },
+    "style": "cinematic feature-film look: shot on ARRI Alexa with Cooke S4 prime lenses, fine 35mm film grain, deep inky blacks, strong motivated chiaroscuro, thin atmospheric sea haze catching the light; real seafarers and rugged limestone cavern, matte organic biological textures, strictly NOT CGI, NOT a video game",
+    "setting": "Location: karst limestone canyon and underground fissure. Light: nora quay phắt lại, deep inky shadows, cold subterranean atmosphere.",
+    "characters": [
+      {
+        "name": "Nora",
+        "visual_lock": "FACE LOCK: Nora's face is exactly the face in {{ref:Nora}}, kept 1:1. BODY and OUTFIT LOCK: her build and navy seafarer brigandine are exactly as in {{ref:Nora Body Seafarer}}.",
+        "state": "Standing resolute in the karst canyon."
+      },
+      {
+        "name": "Castor",
+        "visual_lock": "FACE LOCK: Castor's face is exactly the face in {{ref:Castor}}, kept 1:1. BODY and OUTFIT LOCK: his leather cuirass is exactly as in {{ref:Castor}}.",
+        "state": "Challenging the navigation with fierce skepticism."
+      }
+    ],
+    "timeline_action": {
+      "0-2s": "From second 0, Nora begins speaking immediately, sharp and urgent: Nora says \"Hold your tongues! That was a living human voice crying beneath the stone scree!\" (no subtitles).",
+      "2-4s": "Nora's line finishes cleanly by second 4; nora ra lệnh dừng tranh cãi để tìm người kêu cứu.",
+      "4-6s": "The tension holds firm with grounded postures by second 6."
+    },
+    "speech": {
+      "speaker": [
+        "Nora"
+      ],
+      "voices": {
+        "Nora": "kore"
+      },
+      "delivery": "sharp, dramatic dialogue raised in heated argument or terrified revelation",
+      "dialogue": [
+        {
+          "t": "0-4s",
+          "speaker": "Nora",
+          "line": "Hold your tongues! That was a living human voice crying beneath the stone scree!"
+        }
+      ]
+    },
+    "dramatic_craft": {
+      "beat": "[+]: Ra lệnh dừng tranh cãi",
+      "value_turn": "Hope -> Midpoint Reversal: The map is exposed as a lethal baited trap.",
+      "subtext": "The seafarers discover their ambition has led them into a predator's web.",
+      "prop_and_detail": "Ancient glowing parchment, iron crowbars, white limestone boulders."
+    },
+    "audio": "Nora: Hold your tongues! That was a living human voice crying beneath the stone scree!; dripping water, echoing voices.",
+    "physics": "Friction between heavy stone slabs, dust scattering, muscular exertion on iron pry-bars.",
+    "negative_constraints": [
+      "No subtitles, no captions, no on-frame text, no logos, no watermarks.",
+      "ANTI-CGI LOCK: real documentary footage, not a 3D render, not a video game, not CGI fire, no plastic skin.",
+      "No breath vapor and no white steam from anyone's mouth; no god rays, no volumetric beams, no magical sunbeams.",
+      "No shallow depth of field, no blurry background, no bokeh (f/8 aperture throughout).",
+      "Separate bodies never merge; natural hands with five fingers; no extra limbs.",
+      "Spoken words in this clip: 15 (Rule 49 band for 6s: 12-15)."
+    ]
+  },
+  {
+    "clip_id": "SC-89",
+    "scene_name": "Phát hiện Theron bị kẹt",
+    "duration": 8,
+    "aspect_ratio": "16:9",
+    "refs": [
+      "Castor",
+      "Theron"
+    ],
+    "start_frame": {
+      "type": "GENERATE_IMAGE",
+      "image_prompt": "Cinematic master shot on 35mm film, 16:9 aspect ratio. Tiếp cận khe nứt hẹp, phát hiện Theron bị kẹt dưới đá tảng. Featuring {{ref:Castor}} {{ref:Theron}}. Practical lighting: đèn bão rọi hốc tối. Deep focus (f/8 aperture), entire frame sharp, dark chiaroscuro, natural textures, strictly NO artificial volumetric lighting, NO 3D CGI.",
+      "image_refs": [
+        "Castor",
+        "Theron"
+      ]
+    },
+    "camera": {
+      "viewpoint": "third-person cinematic camera; the camera itself is never seen",
+      "shot_size": "MS Khe Đá Sụt Lở",
+      "description": "Cooke S4 35mm prime lens with deep focus (f/8 aperture), entire frame sharp, MS Khe Đá Sụt Lở framing."
+    },
+    "style": "cinematic feature-film look: shot on ARRI Alexa with Cooke S4 prime lenses, fine 35mm film grain, deep inky blacks, strong motivated chiaroscuro, thin atmospheric sea haze catching the light; real seafarers and rugged limestone cavern, matte organic biological textures, strictly NOT CGI, NOT a video game",
+    "setting": "Location: karst limestone canyon and underground fissure. Light: đèn bão rọi hốc tối, deep inky shadows, cold subterranean atmosphere.",
+    "characters": [
+      {
+        "name": "Castor",
+        "visual_lock": "FACE LOCK: Castor's face is exactly the face in {{ref:Castor}}, kept 1:1. BODY and OUTFIT LOCK: his leather cuirass is exactly as in {{ref:Castor}}.",
+        "state": "Challenging the navigation with fierce skepticism."
+      },
+      {
+        "name": "Theron",
+        "visual_lock": "FACE LOCK: Theron's face is exactly the face in {{ref:Theron}}, kept 1:1 with wild matted gray beard, deep sunken eyes, and limestone dust. BODY and OUTFIT LOCK: his emaciated figure in burlap rags is exactly as in {{ref:Theron}}.",
+        "state": "Trembling with knowledge of the lethal curse."
+      }
+    ],
+    "timeline_action": {
+      "0-3s": "From second 0, Castor begins speaking immediately, cutting through the cavern silence: Castor says \"Down here in the dark crevice! An old hermit pinned under fallen boulders, shivering with white lime dust on his beard!\" (no subtitles).",
+      "3-6s": "Castor's voice echoes off limestone walls through second 5; tiếp cận khe nứt hẹp, phát hiện theron bị kẹt dưới đá tảng.",
+      "6-8s": "The line concludes by second 6; Castor holds an intense gaze through second 8."
+    },
+    "speech": {
+      "speaker": [
+        "Castor"
+      ],
+      "voices": {
+        "Castor": "fenrir"
+      },
+      "delivery": "sharp, dramatic dialogue raised in heated argument or terrified revelation",
+      "dialogue": [
+        {
+          "t": "0-6s",
+          "speaker": "Castor",
+          "line": "Down here in the dark crevice! An old hermit pinned under fallen boulders, shivering with white lime dust on his beard!"
+        }
+      ]
+    },
+    "dramatic_craft": {
+      "beat": "[+]: Phát hiện Theron bị kẹt",
+      "value_turn": "Hope -> Midpoint Reversal: The map is exposed as a lethal baited trap.",
+      "subtext": "The seafarers discover their ambition has led them into a predator's web.",
+      "prop_and_detail": "Ancient glowing parchment, iron crowbars, white limestone boulders."
+    },
+    "audio": "Castor: Down here in the dark crevice! An old hermit pinned under fallen boulders, shivering with white lime dust on his beard!; dripping water, echoing voices.",
+    "physics": "Friction between heavy stone slabs, dust scattering, muscular exertion on iron pry-bars.",
+    "negative_constraints": [
+      "No subtitles, no captions, no on-frame text, no logos, no watermarks.",
+      "ANTI-CGI LOCK: real documentary footage, not a 3D render, not a video game, not CGI fire, no plastic skin.",
+      "No breath vapor and no white steam from anyone's mouth; no god rays, no volumetric beams, no magical sunbeams.",
+      "No shallow depth of field, no blurry background, no bokeh (f/8 aperture throughout).",
+      "Separate bodies never merge; natural hands with five fingers; no extra limbs.",
+      "Spoken words in this clip: 22 (Rule 49 band for 8s: 18-22)."
+    ]
+  },
+  {
+    "clip_id": "SC-90",
+    "scene_name": "Nạy đá giải cứu",
+    "duration": 10,
+    "aspect_ratio": "16:9",
+    "refs": [
+      "Heracles",
+      "Theron"
+    ],
+    "start_frame": {
+      "type": "GENERATE_IMAGE",
+      "image_prompt": "Cinematic master shot on 35mm film, 16:9 aspect ratio. Heracles dùng đòn bẩy sắt nạy tảng đá hoa cương cứu Theron. Featuring {{ref:Heracles}} {{ref:Theron}}. Practical lighting: cơ bắp gân guốc căng cứng. Deep focus (f/8 aperture), entire frame sharp, dark chiaroscuro, natural textures, strictly NO artificial volumetric lighting, NO 3D CGI.",
+      "image_refs": [
+        "Heracles",
+        "Theron"
+      ]
+    },
+    "camera": {
+      "viewpoint": "third-person cinematic camera; the camera itself is never seen",
+      "shot_size": "Low-Angle Heracles Nạy Đá",
+      "description": "Cooke S4 35mm prime lens with deep focus (f/8 aperture), entire frame sharp, Low-Angle Heracles Nạy Đá framing."
+    },
+    "style": "cinematic feature-film look: shot on ARRI Alexa with Cooke S4 prime lenses, fine 35mm film grain, deep inky blacks, strong motivated chiaroscuro, thin atmospheric sea haze catching the light; real seafarers and rugged limestone cavern, matte organic biological textures, strictly NOT CGI, NOT a video game",
+    "setting": "Location: karst limestone canyon and underground fissure. Light: cơ bắp gân guốc căng cứng, deep inky shadows, cold subterranean atmosphere.",
+    "characters": [
+      {
+        "name": "Heracles",
+        "visual_lock": "FACE LOCK: Heracles's face is exactly the face in {{ref:Heracles}}, kept 1:1. BODY and OUTFIT LOCK: his massive muscular frame and sea-lion mantle are exactly as in {{ref:Heracles}}.",
+        "state": "Exerting heavy leverage on limestone slabs."
+      },
+      {
+        "name": "Theron",
+        "visual_lock": "FACE LOCK: Theron's face is exactly the face in {{ref:Theron}}, kept 1:1 with wild matted gray beard, deep sunken eyes, and limestone dust. BODY and OUTFIT LOCK: his emaciated figure in burlap rags is exactly as in {{ref:Theron}}.",
+        "state": "Trembling with knowledge of the lethal curse."
+      }
+    ],
+    "timeline_action": {
+      "0-3s": "From the opening frame at second 0, Heracles begins speaking with dramatic revelation: Heracles says \"Stand clear while I get the iron lever under this slab! Heave with everything, boy, before the ceiling crumbles down upon his skull!\" (no subtitles).",
+      "3-7s": "The voice carries profound weight through second 6 as heracles dùng đòn bẩy sắt nạy tảng đá hoa cương cứu theron.",
+      "7-10s": "Heracles concludes the revelation by second 7; stunned silence grips the seafarers through second 10."
+    },
+    "speech": {
+      "speaker": [
+        "Heracles"
+      ],
+      "voices": {
+        "Heracles": "puck"
+      },
+      "delivery": "sharp, dramatic dialogue raised in heated argument or terrified revelation",
+      "dialogue": [
+        {
+          "t": "0-7s",
+          "speaker": "Heracles",
+          "line": "Stand clear while I get the iron lever under this slab! Heave with everything, boy, before the ceiling crumbles down upon his skull!"
+        }
+      ]
+    },
+    "dramatic_craft": {
+      "beat": "[++]: Nạy đá giải cứu",
+      "value_turn": "Hope -> Midpoint Reversal: The map is exposed as a lethal baited trap.",
+      "subtext": "The seafarers discover their ambition has led them into a predator's web.",
+      "prop_and_detail": "Ancient glowing parchment, iron crowbars, white limestone boulders."
+    },
+    "audio": "Heracles: Stand clear while I get the iron lever under this slab! Heave with everything, boy, before the ceiling crumbles down upon his skull!; dripping water, echoing voices.",
+    "physics": "Friction between heavy stone slabs, dust scattering, muscular exertion on iron pry-bars.",
+    "negative_constraints": [
+      "No subtitles, no captions, no on-frame text, no logos, no watermarks.",
+      "ANTI-CGI LOCK: real documentary footage, not a 3D render, not a video game, not CGI fire, no plastic skin.",
+      "No breath vapor and no white steam from anyone's mouth; no god rays, no volumetric beams, no magical sunbeams.",
+      "No shallow depth of field, no blurry background, no bokeh (f/8 aperture throughout).",
+      "Separate bodies never merge; natural hands with five fingers; no extra limbs.",
+      "Spoken words in this clip: 24 (Rule 49 band for 10s: 24-28)."
+    ]
+  },
+  {
+    "clip_id": "SC-91",
+    "scene_name": "Kéo Theron thoát hiểm",
+    "duration": 6,
+    "aspect_ratio": "16:9",
+    "refs": [
+      "Nora",
+      "Nora Body Seafarer",
+      "Heracles",
+      "Theron"
+    ],
+    "start_frame": {
+      "type": "PREV_LAST_FRAME",
+      "note": "Continuity match from previous clip."
+    },
+    "camera": {
+      "viewpoint": "third-person cinematic camera; the camera itself is never seen",
+      "shot_size": "MCU Kéo Theron Lên",
+      "description": "Cooke S4 35mm prime lens with deep focus (f/8 aperture), entire frame sharp, MCU Kéo Theron Lên framing."
+    },
+    "style": "cinematic feature-film look: shot on ARRI Alexa with Cooke S4 prime lenses, fine 35mm film grain, deep inky blacks, strong motivated chiaroscuro, thin atmospheric sea haze catching the light; real seafarers and rugged limestone cavern, matte organic biological textures, strictly NOT CGI, NOT a video game",
+    "setting": "Location: karst limestone canyon and underground fissure. Light: bụi đá trắng bám đầy người, deep inky shadows, cold subterranean atmosphere.",
+    "characters": [
+      {
+        "name": "Nora",
+        "visual_lock": "FACE LOCK: Nora's face is exactly the face in {{ref:Nora}}, kept 1:1. BODY and OUTFIT LOCK: her build and navy seafarer brigandine are exactly as in {{ref:Nora Body Seafarer}}.",
+        "state": "Standing resolute in the karst canyon."
+      },
+      {
+        "name": "Heracles",
+        "visual_lock": "FACE LOCK: Heracles's face is exactly the face in {{ref:Heracles}}, kept 1:1. BODY and OUTFIT LOCK: his massive muscular frame and sea-lion mantle are exactly as in {{ref:Heracles}}.",
+        "state": "Exerting heavy leverage on limestone slabs."
+      },
+      {
+        "name": "Theron",
+        "visual_lock": "FACE LOCK: Theron's face is exactly the face in {{ref:Theron}}, kept 1:1 with wild matted gray beard, deep sunken eyes, and limestone dust. BODY and OUTFIT LOCK: his emaciated figure in burlap rags is exactly as in {{ref:Theron}}.",
+        "state": "Trembling with knowledge of the lethal curse."
+      }
+    ],
+    "timeline_action": {
+      "0-2s": "At second 0, Kéo Theron lên khỏi khe đá, thở dốc và run rẩy; bụi đá trắng bám đầy người.",
+      "2-4s": "The quiet dramatic tension lingers over the rocky cavern.",
+      "4-6s": "The physical action resolves cleanly by second 6."
+    },
+    "speech": {
+      "speaker": [],
+      "voices": {},
+      "delivery": "no spoken dialogue (Sonic Isolation)",
+      "dialogue": []
+    },
+    "dramatic_craft": {
+      "beat": "[+]: Kéo Theron thoát hiểm",
+      "value_turn": "Hope -> Midpoint Reversal: The map is exposed as a lethal baited trap.",
+      "subtext": "The seafarers discover their ambition has led them into a predator's web.",
+      "prop_and_detail": "Ancient glowing parchment, iron crowbars, white limestone boulders."
+    },
+    "audio": "Ambient cave silence and falling limestone dust (Sonic Isolation); dripping water, echoing voices.",
+    "physics": "Friction between heavy stone slabs, dust scattering, muscular exertion on iron pry-bars.",
+    "negative_constraints": [
+      "No subtitles, no captions, no on-frame text, no logos, no watermarks.",
+      "ANTI-CGI LOCK: real documentary footage, not a 3D render, not a video game, not CGI fire, no plastic skin.",
+      "No breath vapor and no white steam from anyone's mouth; no god rays, no volumetric beams, no magical sunbeams.",
+      "No shallow depth of field, no blurry background, no bokeh (f/8 aperture throughout).",
+      "Separate bodies never merge; natural hands with five fingers; no extra limbs.",
+      "Spoken words in this clip: 0 (Rule 49 band for 6s: 12-15)."
+    ]
+  },
+  {
+    "clip_id": "SC-92",
+    "scene_name": "Cho nước và thẩm vấn",
+    "duration": 8,
+    "aspect_ratio": "16:9",
+    "refs": [
+      "Nora",
+      "Nora Body Seafarer",
+      "Theron"
+    ],
+    "start_frame": {
+      "type": "PREV_LAST_FRAME",
+      "note": "Continuity match from previous clip."
+    },
+    "camera": {
+      "viewpoint": "third-person cinematic camera; the camera itself is never seen",
+      "shot_size": "MS Trao Bình Nước Cho Theron",
+      "description": "Cooke S4 35mm prime lens with deep focus (f/8 aperture), entire frame sharp, MS Trao Bình Nước Cho Theron framing."
+    },
+    "style": "cinematic feature-film look: shot on ARRI Alexa with Cooke S4 prime lenses, fine 35mm film grain, deep inky blacks, strong motivated chiaroscuro, thin atmospheric sea haze catching the light; real seafarers and rugged limestone cavern, matte organic biological textures, strictly NOT CGI, NOT a video game",
+    "setting": "Location: karst limestone canyon and underground fissure. Light: ánh đèn bão ấm áp, deep inky shadows, cold subterranean atmosphere.",
+    "characters": [
+      {
+        "name": "Nora",
+        "visual_lock": "FACE LOCK: Nora's face is exactly the face in {{ref:Nora}}, kept 1:1. BODY and OUTFIT LOCK: her build and navy seafarer brigandine are exactly as in {{ref:Nora Body Seafarer}}.",
+        "state": "Standing resolute in the karst canyon."
+      },
+      {
+        "name": "Theron",
+        "visual_lock": "FACE LOCK: Theron's face is exactly the face in {{ref:Theron}}, kept 1:1 with wild matted gray beard, deep sunken eyes, and limestone dust. BODY and OUTFIT LOCK: his emaciated figure in burlap rags is exactly as in {{ref:Theron}}.",
+        "state": "Trembling with knowledge of the lethal curse."
+      }
+    ],
+    "timeline_action": {
+      "0-3s": "From second 0, Nora begins speaking immediately, cutting through the cavern silence: Nora says \"Drink slow, elder. You are safe among Aegean sailors. Who are you, and how long have you survived here?\" (no subtitles).",
+      "3-6s": "Nora's voice echoes off limestone walls through second 5; nora đưa túi nước da dê cho theron uống từng ngụm nhỏ.",
+      "6-8s": "The line concludes by second 6; Nora holds an intense gaze through second 8."
+    },
+    "speech": {
+      "speaker": [
+        "Nora"
+      ],
+      "voices": {
+        "Nora": "kore"
+      },
+      "delivery": "sharp, dramatic dialogue raised in heated argument or terrified revelation",
+      "dialogue": [
+        {
+          "t": "0-6s",
+          "speaker": "Nora",
+          "line": "Drink slow, elder. You are safe among Aegean sailors. Who are you, and how long have you survived here?"
+        }
+      ]
+    },
+    "dramatic_craft": {
+      "beat": "[0]: Cho nước và thẩm vấn",
+      "value_turn": "Hope -> Midpoint Reversal: The map is exposed as a lethal baited trap.",
+      "subtext": "The seafarers discover their ambition has led them into a predator's web.",
+      "prop_and_detail": "Ancient glowing parchment, iron crowbars, white limestone boulders."
+    },
+    "audio": "Nora: Drink slow, elder. You are safe among Aegean sailors. Who are you, and how long have you survived here?; dripping water, echoing voices.",
+    "physics": "Friction between heavy stone slabs, dust scattering, muscular exertion on iron pry-bars.",
+    "negative_constraints": [
+      "No subtitles, no captions, no on-frame text, no logos, no watermarks.",
+      "ANTI-CGI LOCK: real documentary footage, not a 3D render, not a video game, not CGI fire, no plastic skin.",
+      "No breath vapor and no white steam from anyone's mouth; no god rays, no volumetric beams, no magical sunbeams.",
+      "No shallow depth of field, no blurry background, no bokeh (f/8 aperture throughout).",
+      "Separate bodies never merge; natural hands with five fingers; no extra limbs.",
+      "Spoken words in this clip: 20 (Rule 49 band for 8s: 18-22)."
+    ]
+  },
+  {
+    "clip_id": "SC-93",
+    "scene_name": "Nhận diện bản đồ ma thuật",
+    "duration": 8,
+    "aspect_ratio": "16:9",
+    "refs": [
+      "Theron"
+    ],
+    "start_frame": {
+      "type": "GENERATE_IMAGE",
+      "image_prompt": "Cinematic master shot on 35mm film, 16:9 aspect ratio. Theron nhìn thấy tấm bản đồ da cừu phát quang trên tay Nora và run rẩy kinh hoàng. Featuring {{ref:Theron}}. Practical lighting: mắt trợn trừng kinh hãi. Deep focus (f/8 aperture), entire frame sharp, dark chiaroscuro, natural textures, strictly NO artificial volumetric lighting, NO 3D CGI.",
+      "image_refs": [
+        "Theron"
+      ]
+    },
+    "camera": {
+      "viewpoint": "third-person cinematic camera; the camera itself is never seen",
+      "shot_size": "CU Theron Kinh Hoàng Thấy Bản Đồ",
+      "description": "Cooke S4 35mm prime lens with deep focus (f/8 aperture), entire frame sharp, CU Theron Kinh Hoàng Thấy Bản Đồ framing."
+    },
+    "style": "cinematic feature-film look: shot on ARRI Alexa with Cooke S4 prime lenses, fine 35mm film grain, deep inky blacks, strong motivated chiaroscuro, thin atmospheric sea haze catching the light; real seafarers and rugged limestone cavern, matte organic biological textures, strictly NOT CGI, NOT a video game",
+    "setting": "Location: karst limestone canyon and underground fissure. Light: mắt trợn trừng kinh hãi, deep inky shadows, cold subterranean atmosphere.",
+    "characters": [
+      {
+        "name": "Theron",
+        "visual_lock": "FACE LOCK: Theron's face is exactly the face in {{ref:Theron}}, kept 1:1 with wild matted gray beard, deep sunken eyes, and limestone dust. BODY and OUTFIT LOCK: his emaciated figure in burlap rags is exactly as in {{ref:Theron}}.",
+        "state": "Trembling with knowledge of the lethal curse."
+      }
+    ],
+    "timeline_action": {
+      "0-3s": "From second 0, Theron begins speaking immediately, cutting through the cavern silence: Theron says \"That parchment... glowing gold serpent lines... by the ancient gods, put it away before the karst beast smells our heat!\" (no subtitles).",
+      "3-6s": "Theron's voice echoes off limestone walls through second 5; theron nhìn thấy tấm bản đồ da cừu phát quang trên tay nora và run rẩy kinh hoàng.",
+      "6-8s": "The line concludes by second 6; Theron holds an intense gaze through second 8."
+    },
+    "speech": {
+      "speaker": [
+        "Theron"
+      ],
+      "voices": {
+        "Theron": "charon"
+      },
+      "delivery": "sharp, dramatic dialogue raised in heated argument or terrified revelation",
+      "dialogue": [
+        {
+          "t": "0-6s",
+          "speaker": "Theron",
+          "line": "That parchment... glowing gold serpent lines... by the ancient gods, put it away before the karst beast smells our heat!"
+        }
+      ]
+    },
+    "dramatic_craft": {
+      "beat": "RH [!]: Nhận diện bản đồ ma thuật",
+      "value_turn": "Hope -> Midpoint Reversal: The map is exposed as a lethal baited trap.",
+      "subtext": "The seafarers discover their ambition has led them into a predator's web.",
+      "prop_and_detail": "Ancient glowing parchment, iron crowbars, white limestone boulders."
+    },
+    "audio": "Theron: That parchment... glowing gold serpent lines... by the ancient gods, put it away before the karst beast smells our heat!; dripping water, echoing voices.",
+    "physics": "Friction between heavy stone slabs, dust scattering, muscular exertion on iron pry-bars.",
+    "negative_constraints": [
+      "No subtitles, no captions, no on-frame text, no logos, no watermarks.",
+      "ANTI-CGI LOCK: real documentary footage, not a 3D render, not a video game, not CGI fire, no plastic skin.",
+      "No breath vapor and no white steam from anyone's mouth; no god rays, no volumetric beams, no magical sunbeams.",
+      "No shallow depth of field, no blurry background, no bokeh (f/8 aperture throughout).",
+      "Separate bodies never merge; natural hands with five fingers; no extra limbs.",
+      "Spoken words in this clip: 21 (Rule 49 band for 8s: 18-22)."
+    ]
+  },
+  {
+    "clip_id": "SC-94",
+    "scene_name": "Vạch trần bản đồ là mồi nhử",
+    "duration": 10,
+    "aspect_ratio": "16:9",
+    "refs": [
+      "Nora",
+      "Nora Body Seafarer",
+      "Castor",
+      "Theron"
+    ],
+    "start_frame": {
+      "type": "PREV_LAST_FRAME",
+      "note": "Continuity match from previous clip."
+    },
+    "camera": {
+      "viewpoint": "third-person cinematic camera; the camera itself is never seen",
+      "shot_size": "MS Theron Vạch Trần Chân Tướng",
+      "description": "Cooke S4 35mm prime lens with deep focus (f/8 aperture), entire frame sharp, MS Theron Vạch Trần Chân Tướng framing."
+    },
+    "style": "cinematic feature-film look: shot on ARRI Alexa with Cooke S4 prime lenses, fine 35mm film grain, deep inky blacks, strong motivated chiaroscuro, thin atmospheric sea haze catching the light; real seafarers and rugged limestone cavern, matte organic biological textures, strictly NOT CGI, NOT a video game",
+    "setting": "Location: karst limestone canyon and underground fissure. Light: ánh sáng lân tinh hắt bóng, deep inky shadows, cold subterranean atmosphere.",
+    "characters": [
+      {
+        "name": "Nora",
+        "visual_lock": "FACE LOCK: Nora's face is exactly the face in {{ref:Nora}}, kept 1:1. BODY and OUTFIT LOCK: her build and navy seafarer brigandine are exactly as in {{ref:Nora Body Seafarer}}.",
+        "state": "Standing resolute in the karst canyon."
+      },
+      {
+        "name": "Castor",
+        "visual_lock": "FACE LOCK: Castor's face is exactly the face in {{ref:Castor}}, kept 1:1. BODY and OUTFIT LOCK: his leather cuirass is exactly as in {{ref:Castor}}.",
+        "state": "Challenging the navigation with fierce skepticism."
+      },
+      {
+        "name": "Theron",
+        "visual_lock": "FACE LOCK: Theron's face is exactly the face in {{ref:Theron}}, kept 1:1 with wild matted gray beard, deep sunken eyes, and limestone dust. BODY and OUTFIT LOCK: his emaciated figure in burlap rags is exactly as in {{ref:Theron}}.",
+        "state": "Trembling with knowledge of the lethal curse."
+      }
+    ],
+    "timeline_action": {
+      "0-3s": "From the opening frame at second 0, Theron begins speaking with dramatic revelation: Theron says \"You think you hold a sacred chart! That parchment is no guide—it is a lethal lure crafted by the Golden Tree to feed its roots!\" (no subtitles).",
+      "3-7s": "The voice carries profound weight through second 6 as theron vạch trần bí mật: bản đồ không phải kim chỉ nam, nó là mồi nhử của cây vàng!.",
+      "7-10s": "Theron concludes the revelation by second 7; stunned silence grips the seafarers through second 10."
+    },
+    "speech": {
+      "speaker": [
+        "Theron"
+      ],
+      "voices": {
+        "Theron": "charon"
+      },
+      "delivery": "sharp, dramatic dialogue raised in heated argument or terrified revelation",
+      "dialogue": [
+        {
+          "t": "0-7s",
+          "speaker": "Theron",
+          "line": "You think you hold a sacred chart! That parchment is no guide—it is a lethal lure crafted by the Golden Tree to feed its roots!"
+        }
+      ]
+    },
+    "dramatic_craft": {
+      "beat": "[!!!]: Vạch trần bản đồ là mồi nhử",
+      "value_turn": "Hope -> Midpoint Reversal: The map is exposed as a lethal baited trap.",
+      "subtext": "The seafarers discover their ambition has led them into a predator's web.",
+      "prop_and_detail": "Ancient glowing parchment, iron crowbars, white limestone boulders."
+    },
+    "audio": "Theron: You think you hold a sacred chart! That parchment is no guide—it is a lethal lure crafted by the Golden Tree to feed its roots!; dripping water, echoing voices.",
+    "physics": "Friction between heavy stone slabs, dust scattering, muscular exertion on iron pry-bars.",
+    "negative_constraints": [
+      "No subtitles, no captions, no on-frame text, no logos, no watermarks.",
+      "ANTI-CGI LOCK: real documentary footage, not a 3D render, not a video game, not CGI fire, no plastic skin.",
+      "No breath vapor and no white steam from anyone's mouth; no god rays, no volumetric beams, no magical sunbeams.",
+      "No shallow depth of field, no blurry background, no bokeh (f/8 aperture throughout).",
+      "Separate bodies never merge; natural hands with five fingers; no extra limbs.",
+      "Spoken words in this clip: 27 (Rule 49 band for 10s: 24-28)."
+    ]
+  },
+  {
+    "clip_id": "SC-95",
+    "scene_name": "Vỡ mộng lòng tham",
+    "duration": 6,
+    "aspect_ratio": "16:9",
+    "refs": [
+      "Castor"
+    ],
+    "start_frame": {
+      "type": "GENERATE_IMAGE",
+      "image_prompt": "Cinematic master shot on 35mm film, 16:9 aspect ratio. Castor và Heracles bàng hoàng trước sự thật tàn nhẫn. Featuring {{ref:Castor}}. Practical lighting: gương mặt đanh lại giận dữ. Deep focus (f/8 aperture), entire frame sharp, dark chiaroscuro, natural textures, strictly NO artificial volumetric lighting, NO 3D CGI.",
+      "image_refs": [
+        "Castor"
+      ]
+    },
+    "camera": {
+      "viewpoint": "third-person cinematic camera; the camera itself is never seen",
+      "shot_size": "CU Castor Bàng Hoàng",
+      "description": "Cooke S4 35mm prime lens with deep focus (f/8 aperture), entire frame sharp, CU Castor Bàng Hoàng framing."
+    },
+    "style": "cinematic feature-film look: shot on ARRI Alexa with Cooke S4 prime lenses, fine 35mm film grain, deep inky blacks, strong motivated chiaroscuro, thin atmospheric sea haze catching the light; real seafarers and rugged limestone cavern, matte organic biological textures, strictly NOT CGI, NOT a video game",
+    "setting": "Location: karst limestone canyon and underground fissure. Light: gương mặt đanh lại giận dữ, deep inky shadows, cold subterranean atmosphere.",
+    "characters": [
+      {
+        "name": "Castor",
+        "visual_lock": "FACE LOCK: Castor's face is exactly the face in {{ref:Castor}}, kept 1:1. BODY and OUTFIT LOCK: his leather cuirass is exactly as in {{ref:Castor}}.",
+        "state": "Challenging the navigation with fierce skepticism."
+      }
+    ],
+    "timeline_action": {
+      "0-2s": "From second 0, Castor begins speaking immediately, sharp and urgent: Castor says \"A lure? We bled through crushing rocks just to walk into a baited rat-trap?\" (no subtitles).",
+      "2-4s": "Castor's line finishes cleanly by second 4; castor và heracles bàng hoàng trước sự thật tàn nhẫn.",
+      "4-6s": "The tension holds firm with grounded postures by second 6."
+    },
+    "speech": {
+      "speaker": [
+        "Castor"
+      ],
+      "voices": {
+        "Castor": "fenrir"
+      },
+      "delivery": "sharp, dramatic dialogue raised in heated argument or terrified revelation",
+      "dialogue": [
+        {
+          "t": "0-4s",
+          "speaker": "Castor",
+          "line": "A lure? We bled through crushing rocks just to walk into a baited rat-trap?"
+        }
+      ]
+    },
+    "dramatic_craft": {
+      "beat": "[-]: Vỡ mộng lòng tham",
+      "value_turn": "Hope -> Midpoint Reversal: The map is exposed as a lethal baited trap.",
+      "subtext": "The seafarers discover their ambition has led them into a predator's web.",
+      "prop_and_detail": "Ancient glowing parchment, iron crowbars, white limestone boulders."
+    },
+    "audio": "Castor: A lure? We bled through crushing rocks just to walk into a baited rat-trap?; dripping water, echoing voices.",
+    "physics": "Friction between heavy stone slabs, dust scattering, muscular exertion on iron pry-bars.",
+    "negative_constraints": [
+      "No subtitles, no captions, no on-frame text, no logos, no watermarks.",
+      "ANTI-CGI LOCK: real documentary footage, not a 3D render, not a video game, not CGI fire, no plastic skin.",
+      "No breath vapor and no white steam from anyone's mouth; no god rays, no volumetric beams, no magical sunbeams.",
+      "No shallow depth of field, no blurry background, no bokeh (f/8 aperture throughout).",
+      "Separate bodies never merge; natural hands with five fingers; no extra limbs.",
+      "Spoken words in this clip: 15 (Rule 49 band for 6s: 12-15)."
+    ]
+  },
+  {
+    "clip_id": "SC-96",
+    "scene_name": "Bước ngoặt trao quyền dẫn đường",
+    "duration": 6,
+    "aspect_ratio": "16:9",
+    "refs": [
+      "Nora",
+      "Nora Body Seafarer",
+      "Theron"
+    ],
+    "start_frame": {
+      "type": "PREV_LAST_FRAME",
+      "note": "Continuity match from previous clip."
+    },
+    "camera": {
+      "viewpoint": "third-person cinematic camera; the camera itself is never seen",
+      "shot_size": "Low-Angle Nora Quyết Đoán",
+      "description": "Cooke S4 35mm prime lens with deep focus (f/8 aperture), entire frame sharp, Low-Angle Nora Quyết Đoán framing."
+    },
+    "style": "cinematic feature-film look: shot on ARRI Alexa with Cooke S4 prime lenses, fine 35mm film grain, deep inky blacks, strong motivated chiaroscuro, thin atmospheric sea haze catching the light; real seafarers and rugged limestone cavern, matte organic biological textures, strictly NOT CGI, NOT a video game",
+    "setting": "Location: karst limestone canyon and underground fissure. Light: nora nâng theron dậy, deep inky shadows, cold subterranean atmosphere.",
+    "characters": [
+      {
+        "name": "Nora",
+        "visual_lock": "FACE LOCK: Nora's face is exactly the face in {{ref:Nora}}, kept 1:1. BODY and OUTFIT LOCK: her build and navy seafarer brigandine are exactly as in {{ref:Nora Body Seafarer}}.",
+        "state": "Standing resolute in the karst canyon."
+      },
+      {
+        "name": "Theron",
+        "visual_lock": "FACE LOCK: Theron's face is exactly the face in {{ref:Theron}}, kept 1:1 with wild matted gray beard, deep sunken eyes, and limestone dust. BODY and OUTFIT LOCK: his emaciated figure in burlap rags is exactly as in {{ref:Theron}}.",
+        "state": "Trembling with knowledge of the lethal curse."
+      }
+    ],
+    "timeline_action": {
+      "0-2s": "From second 0, Nora begins speaking immediately, sharp and urgent: Nora says \"Lead us through the blind fissures, Theron. We will see this legendary sanctuary alive!\" (no subtitles).",
+      "2-4s": "Nora's line finishes cleanly by second 4; nora trao quyền dẫn đường cho theron qua mê cung ngầm.",
+      "4-6s": "The tension holds firm with grounded postures by second 6."
+    },
+    "speech": {
+      "speaker": [
+        "Nora"
+      ],
+      "voices": {
+        "Nora": "kore"
+      },
+      "delivery": "sharp, dramatic dialogue raised in heated argument or terrified revelation",
+      "dialogue": [
+        {
+          "t": "0-4s",
+          "speaker": "Nora",
+          "line": "Lead us through the blind fissures, Theron. We will see this legendary sanctuary alive!"
+        }
+      ]
+    },
+    "dramatic_craft": {
+      "beat": "[++]: Bước ngoặt trao quyền dẫn đường",
+      "value_turn": "Hope -> Midpoint Reversal: The map is exposed as a lethal baited trap.",
+      "subtext": "The seafarers discover their ambition has led them into a predator's web.",
+      "prop_and_detail": "Ancient glowing parchment, iron crowbars, white limestone boulders."
+    },
+    "audio": "Nora: Lead us through the blind fissures, Theron. We will see this legendary sanctuary alive!; dripping water, echoing voices.",
+    "physics": "Friction between heavy stone slabs, dust scattering, muscular exertion on iron pry-bars.",
+    "negative_constraints": [
+      "No subtitles, no captions, no on-frame text, no logos, no watermarks.",
+      "ANTI-CGI LOCK: real documentary footage, not a 3D render, not a video game, not CGI fire, no plastic skin.",
+      "No breath vapor and no white steam from anyone's mouth; no god rays, no volumetric beams, no magical sunbeams.",
+      "No shallow depth of field, no blurry background, no bokeh (f/8 aperture throughout).",
+      "Separate bodies never merge; natural hands with five fingers; no extra limbs.",
+      "Spoken words in this clip: 15 (Rule 49 band for 6s: 12-15)."
+    ]
+  }
+]

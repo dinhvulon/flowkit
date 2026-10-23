@@ -1,0 +1,689 @@
+[
+  {
+    "clip_id": "SC-01",
+    "scene_name": "Thiết lập thế giới biển đêm mù sương",
+    "duration": 10,
+    "dramatic_craft": {
+      "beat": "Hook [0]: Establishing world and ominous calm before encountering the supernatural harbinger.",
+      "value_turn": "Neutral (0) -> Suspense (+): The calm ocean hides dark ancient mysteries.",
+      "subtext": "The seafarers are hunting for treasure in perilous forbidden waters.",
+      "prop_and_detail": "Brass lantern swaying on tarred hemp rope, cold ocean haze condensing on timber gunwale."
+    },
+    "action_summary": {
+      "0-3s": "The dark silhouette of the heavy wooden pirate galleon glides forward silently over the glassy black sea; wisps of ocean haze drift across the carved timber bow.",
+      "3-7s": "Practical brass lanterns hanging on the yardarms sway gently with the ocean swell; Nora stands motionless at the prow railing peering into the distance.",
+      "7-10s": "Castor steps forward onto the timber deck, leaning slightly over the starboard rail as the ship cuts silently through the motionless ocean fog."
+    },
+    "dialogue": [],
+    "audio": "Ambient oceanic silence, soft gentle lapping of black water against the wooden hull, distant groaning oak timbers; strictly no dialogue (Sonic Isolation)."
+  },
+  {
+    "clip_id": "SC-02",
+    "scene_name": "Phát hiện chiếc thuyền đánh cá nhỏ",
+    "duration": 8,
+    "dramatic_craft": {
+      "beat": "[+]: Sighting an anomalous vessel in forbidden waters.",
+      "value_turn": "Stillness (0) -> Intrigue (+): An abandoned skiff carrying an unknown harbinger appears.",
+      "subtext": "Nothing drifts in these deep waters by accident; danger is near.",
+      "prop_and_detail": "Carved wooden skiff gunwale, wet hemp rope trailing in the water."
+    },
+    "action_summary": {
+      "0-3s": "From the very first frame at second 0, Castor begins speaking immediately, his urgent clipped voice raised over the sea swell: Castor says \"Look dead ahead through the sea-haze, Captain! A small wooden skiff is drifting without oars directly into our bow!\" (no subtitles); he extends his left hand pointing forward.",
+      "3-6s": "His line continues through the misty air; Nora leans sharply over the gunwale, her eyes locking onto the small abandoned skiff bobbing on the black swells ahead.",
+      "6-8s": "Castor finishes speaking by second 6 and lowers his pointing hand, gripping the wooden rail tightly as the skiff drifts into clear lantern light."
+    },
+    "dialogue": [
+      {
+        "t": "0-6s",
+        "speaker": "Castor",
+        "line_en": "Look dead ahead through the sea-haze, Captain! A small wooden skiff is drifting without oars directly into our bow!",
+        "line_vn": "Nhìn thẳng về phía trước qua màn sương biển kìa, Thuyền trưởng! Một chiếc thuyền gỗ nhỏ đang trôi dạt không người chèo thẳng vào mũi tàu chúng ta!"
+      }
+    ],
+    "audio": "Castor's sharp clear voice on top; water slapping the galleon bow; distant cold wind through shrouds."
+  },
+  {
+    "clip_id": "SC-03",
+    "scene_name": "Nora ra lệnh chuẩn bị bắt giữ",
+    "duration": 6,
+    "dramatic_craft": {
+      "beat": "[0]: Directing operational capture with veteran composure.",
+      "value_turn": "Observation (0) -> Tactical action (+): Establishing operational control.",
+      "subtext": "Nora takes no chances with drifting hulks on the Aegean.",
+      "prop_and_detail": "Heavy bronze spyglass with oxidized patina, riveted leather sword belt."
+    },
+    "action_summary": {
+      "0-2s": "From the very first frame at second 0, Nora steps firmly to the gunwale and speaks immediately, her voice calm, commanding and authoritative: Nora says \"No oars moving. Hold our heading and ready the grappling irons.\" (no subtitles).",
+      "2-4s": "Her command finishes cleanly by second 4; she lowers the brass spyglass against her leather sword belt with a decisive snap of her wrist.",
+      "4-6s": "She holds her steady commanding gaze fixed on the water below, both boots planted firmly on the oak deck timbers."
+    },
+    "dialogue": [
+      {
+        "t": "0-4s",
+        "speaker": "Nora",
+        "line_en": "No oars moving. Hold our heading and ready the grappling irons.",
+        "line_vn": "Không có mái chèo nào cử động. Giữ nguyên hướng lái và chuẩn bị sẵn móc neo bắt giữ."
+      }
+    ],
+    "audio": "Nora's clear resonant captain's voice prominent; creak of ship's wheel; wet wind whipping cloaks."
+  },
+  {
+    "clip_id": "SC-04",
+    "scene_name": "Phóng móc neo chuẩn xác",
+    "duration": 6,
+    "dramatic_craft": {
+      "beat": "[+]: Physical coordinated capture execution.",
+      "value_turn": "Command (0) -> Kinetic success (+): Flawless teamwork under pressure.",
+      "subtext": "A practiced crew executing combat-ready boarding drills.",
+      "prop_and_detail": "Forged black iron grapnel with barbed flukes, hairy tarred hemp coil whizzing across timber."
+    },
+    "action_summary": {
+      "0-2s": "From second 0, Castor shouts with sharp rhythmic force over the ocean wash: Castor says \"Heave with the swell! Hook her gunwale before she drifts past!\" (no subtitles); Heracles swings the heavy iron grapnel in a wide horizontal arc.",
+      "2-4s": "Castor's line ends cleanly by second 3; Heracles roars with exertion and launches the iron grapnel across the starboard rail with tremendous kinetic torque.",
+      "4-6s": "The thick tarred hemp rope uncoils rapidly from the deck; both men brace their boots against the bulwark watching the flight."
+    },
+    "dialogue": [
+      {
+        "t": "0-3s",
+        "speaker": "Castor",
+        "line_en": "Heave with the swell! Hook her gunwale before she drifts past!",
+        "line_vn": "Cùng kéo theo con sóng! Móc chặt vào mạn thuyền trước khi nó trôi qua!"
+      }
+    ],
+    "audio": "Castor's loud command; whistling whoosh of spinning iron iron; coarse hiss of rope running over oak rail."
+  },
+  {
+    "clip_id": "SC-05",
+    "scene_name": "Va chạm vật lý giật lùi thuyền cá",
+    "duration": 8,
+    "dramatic_craft": {
+      "beat": "[!]: Violently halting the mystery skiff.",
+      "value_turn": "Suspense (+) -> Direct confrontation (!): The quarry is secured.",
+      "subtext": "The hunter has caught its prey, revealing the frail messenger.",
+      "prop_and_detail": "Splintering oak gunwale, taut dripping hemp hawser, glowing green bundle."
+    },
+    "action_summary": {
+      "0-3s": "The heavy iron grapnel bites deep into the skiff's weathered oak gunwale with a sharp crack of splintering wood; the hemp rope snaps taut with water droplets spraying.",
+      "3-6s": "The small skiff jerks violently backward in the swell; the cowering Old Fisherman inside is thrown against the wet floorboards, clutching a green-glowing net bundle.",
+      "6-8s": "Heracles hauls the rope smoothly from above; the skiff is reeled tight alongside the towering black oak flank of the pirate galleon."
+    },
+    "dialogue": [],
+    "audio": "Sharp crunch of iron biting timber, loud splash of sea spray, creak of rope stretching under tension (Sonic Isolation: 0 words)."
+  },
+  {
+    "clip_id": "SC-06",
+    "scene_name": "Sứ giả kinh hoàng van xin",
+    "duration": 8,
+    "dramatic_craft": {
+      "beat": "[-]: The herald's terrifying warning.",
+      "value_turn": "Hostility (0) -> Supernatural dread (-): The cargo is not wealth, but a fatal curse.",
+      "subtext": "The old man is relieved to be rid of the abomination, yet terrified for those who touch it.",
+      "prop_and_detail": "Bioluminescent net parcel pulsing with faint greenish light, salt-rimed coarse wool tunic."
+    },
+    "action_summary": {
+      "0-3s": "From second 0, the Old Fisherman looks up with wild bloodshot eyes and begins shrieking immediately in terrified hoarse gasps: Old Fisherman says \"Mercy, sea-wolves of the Aegean! I possess no silver nor treasure, only a terrible curse pulled from the deepest trench!\" (no subtitles).",
+      "3-6s": "His voice quivers with desperate panic as his trembling calloused fingers clutch the green-glowing net parcel tighter to his wet chest.",
+      "6-8s": "He finishes speaking by second 6, trembling uncontrollably and pressing his forehead down onto the salt-crusted floorboards in complete surrender."
+    },
+    "dialogue": [
+      {
+        "t": "0-6s",
+        "speaker": "Old Fisherman",
+        "line_en": "Mercy, sea-wolves of the Aegean! I possess no silver nor treasure, only a terrible curse pulled from the deepest trench!",
+        "line_vn": "Xin hãy rủ lòng thương, hỡi những con sói biển xứ Aegean! Tôi không có bạc vàng hay châu báu, chỉ có một lời nguyền kinh hoàng kéo lên từ rãnh biển sâu nhất!"
+      }
+    ],
+    "audio": "Old Fisherman's trembling hoarse voice; eerie low subterranean hum from the glowing bundle; water lapping inside the bilge."
+  },
+  {
+    "clip_id": "SC-07",
+    "scene_name": "Ép cung tìm bí mật",
+    "duration": 8,
+    "dramatic_craft": {
+      "beat": "[!]: Aggressive tactical interrogation.",
+      "value_turn": "Uncertainty (0) -> Coercive control (!): Forcing revelation of the cargo.",
+      "subtext": "Castor suspects a lethal trap or Greek fire.",
+      "prop_and_detail": "Iron-reinforced recurve hand crossbow with bone lever, brass storm lantern."
+    },
+    "action_summary": {
+      "0-3s": "From second 0, Castor lands heavily in the skiff, aims his iron crossbow at the fisherman's chest, and barks sharply: Castor says \"Drop the netting and show your hands! Reveal what pulses with cold green fire beneath your shaking fingers right now!\" (no subtitles).",
+      "3-6s": "His aggressive commanding voice cuts through the sea mist; the Old Fisherman recoils with a whimper, slowly parting his trembling fingers from the soaked net.",
+      "6-8s": "Castor finishes by second 6, keeping the crossbow leveled steadily with his right hand while his boots adjust to the rocking motion."
+    },
+    "dialogue": [
+      {
+        "t": "0-6s",
+        "speaker": "Castor",
+        "line_en": "Drop the netting and show your hands! Reveal what pulses with cold green fire beneath your shaking fingers right now!",
+        "line_vn": "Buông tấm lưới xuống và giơ tay lên! Cho xem thứ gì đang đập với ngọn lửa xanh lạnh ngắt dưới những ngón tay run rẩy của lão ngay!"
+      }
+    ],
+    "audio": "Castor's hard resonant voice; clatter of crossbow lock; splash of water under rocking keel."
+  },
+  {
+    "clip_id": "SC-08",
+    "scene_name": "Lộ diện sinh vật biển dị dạng",
+    "duration": 8,
+    "dramatic_craft": {
+      "beat": "[?]: Revelation of the monstrous biological vessel.",
+      "value_turn": "Curse warning (-) -> Tangible anomaly (?): An impossible abyssal specimen.",
+      "subtext": "This creature was drawn from depths no human fisherman has ever reached.",
+      "prop_and_detail": "Iridescent Coelacanth armor scales, needle-sharp translucent teeth, wet slime sheen."
+    },
+    "action_summary": {
+      "0-3s": "The wet hemp netting falls open, exposing the bizarre 1.8-meter-long abyssal creature; its iridescent charcoal polygonal scales glisten under the lantern light.",
+      "3-6s": "Its swollen underbelly pulses rhythmically with a cold emerald bioluminescence, revealing the faint silhouette of a rigid cylindrical object lodged deep inside its gut.",
+      "6-8s": "The creature's heavy spiny gills flare open and close in slow, agonizing spasms; milky-white dead eyes reflect the swinging amber lantern."
+    },
+    "dialogue": [],
+    "audio": "Wet rhythmic slapping of armored gill covers, soft wet slime suction, eerie low vibrational drone (Sonic Isolation: 0 words)."
+  },
+  {
+    "clip_id": "SC-09",
+    "scene_name": "Thẩm vấn nguồn gốc con cá",
+    "duration": 8,
+    "dramatic_craft": {
+      "beat": "[0]: Captain's direct interrogation of origin.",
+      "value_turn": "Aggression (!) -> Investigative interrogation (0): Seeking actionable truth.",
+      "subtext": "Nora senses a legendary event beyond simple coastal piracy.",
+      "prop_and_detail": "Weathered leather glove, heavy bronze scabbard touching timber floor."
+    },
+    "action_summary": {
+      "0-3s": "From second 0, Nora crouches gracefully on one knee and speaks immediately in a calm, probing tone: Nora says \"Lower your nets and speak plainly, old man. Where did your hooks drag this monstrous abyssal creature from the deep?\" (no subtitles).",
+      "3-6s": "Her steady voice cuts through the old man's hysteria; Nora gestures calmly with a leather-gloved hand toward the pulsing black fish between them.",
+      "6-8s": "She finishes by second 6, keeping her piercing hazel eyes locked on the old man's face as he swallows hard, struggling to form words."
+    },
+    "dialogue": [
+      {
+        "t": "0-6s",
+        "speaker": "Nora",
+        "line_en": "Lower your nets and speak plainly, old man. Where did your hooks drag this monstrous abyssal creature from the deep?",
+        "line_vn": "Hạ lưới xuống và nói rõ ràng đi, lão già. Lưỡi câu của lão đã kéo sinh vật dị dạng từ vực sâu này lên ở đâu?"
+      }
+    ],
+    "audio": "Nora's measured authoritative voice; faint sloshing of sea bilge; distant creaking of galleon hull."
+  },
+  {
+    "clip_id": "SC-10",
+    "scene_name": "Lời sấm truyền về Cây Vàng",
+    "duration": 10,
+    "dramatic_craft": {
+      "beat": "RH [!]: Inciting Incident prophecy establishing the lethal quest.",
+      "value_turn": "Mystery (0) -> Mythic peril (!): The gold is alive and cursed.",
+      "subtext": "The fisherman was driven mad by the lure of the Golden Tree.",
+      "prop_and_detail": "Trembling finger pointing into fog, dried salt caked on bearded chin."
+    },
+    "action_summary": {
+      "0-3s": "From second 0, the Old Fisherman looks up into the night haze and speaks immediately with wild apocalyptic conviction: Old Fisherman says \"Beyond the basalt gates where the currents bleed backwards!\" (no subtitles).",
+      "3-7s": "He continues without pause, his hoarse quivering voice rising with prophet-like terror: Old Fisherman says \"It swallowed the gold that never rots in mortal hands, bringing ruination to every ship!\" (no subtitles); his trembling arm points toward the horizon.",
+      "7-10s": "His prophecy concludes by second 7; he drops his shaking hand into his lap, panting through cracked lips as the shadow of the galleon looms over him."
+    },
+    "dialogue": [
+      {
+        "t": "0-7s",
+        "speaker": "Old Fisherman",
+        "line_en": "Beyond the basalt gates where the currents bleed backwards! It swallowed the gold that never rots in mortal hands, bringing ruination to every ship!",
+        "line_vn": "Phía sau những cánh cổng đá bazan nơi dòng hải lưu chảy ngược! Nó đã nuốt trọn thứ vàng không bao giờ mục nát trong tay người phàm, mang lại sự hủy diệt cho mọi con tàu!"
+      }
+    ],
+    "audio": "Old Fisherman's raspy prophetic voice; sudden gust of sea wind whistling through the rigging; distant deep ocean rumble."
+  },
+  {
+    "clip_id": "SC-11",
+    "scene_name": "Thu giữ con cá lên tàu",
+    "duration": 8,
+    "dramatic_craft": {
+      "beat": "[+]: Physical confirmation of unnatural internal cargo.",
+      "value_turn": "Prophecy (0) -> Tangible evidence (+): Weight confirms non-biological payload.",
+      "subtext": "A fish doesn't swallow stones; it was fed something artificial.",
+      "prop_and_detail": "Heavy wicker fish creel, thick wet hemp rope, rattling internal thud."
+    },
+    "action_summary": {
+      "0-3s": "From second 0, Heracles drops the heavy wicker basket onto the oak deck with a solid thud and begins speaking immediately: Heracles says \"Heavy as solid lead-shot, Captain Nora. Its swollen belly grinds and rattles like sharp broken flint stones inside the gut.\" (no subtitles).",
+      "3-6s": "His deep gravelly voice carries across the deck; he wipes wet slime from his bare muscular forearm as Nora steps over the bulwark onto the deck.",
+      "6-8s": "Heracles finishes by second 6, placing both hands on his hips while the fish inside thrashes heavily against the wicker weave."
+    },
+    "dialogue": [
+      {
+        "t": "0-6s",
+        "speaker": "Heracles",
+        "line_en": "Heavy as solid lead-shot, Captain Nora. Its swollen belly grinds and rattles like sharp broken flint stones inside the gut.",
+        "line_vn": "Nặng như một khối chì đúc, Thuyền trưởng Nora. Cái bụng căng phồng của nó nghiến và kêu lạo xạo như những hòn đá lửa vỡ sắc nhọn bên trong ruột."
+      }
+    ],
+    "audio": "Heracles's booming gravelly voice; heavy dull thud of basket hitting oak deck; wet squelch inside."
+  },
+  {
+    "clip_id": "SC-12",
+    "scene_name": "Chuyển địa điểm sang cabin",
+    "duration": 6,
+    "dramatic_craft": {
+      "beat": "[0]: Transition to dissection and forensic discovery.",
+      "value_turn": "Deck capture (+) -> Enclosed investigation (0): Seclusion for examination.",
+      "subtext": "Nora keeps the crew from seeing what might cause mutiny or panic.",
+      "prop_and_detail": "Carved oak door with iron latch, heavy brass ship lantern with smoked glass."
+    },
+    "action_summary": {
+      "0-2s": "From second 0, Nora strides decisively through the companionway and speaks immediately in a sharp command voice: Nora says \"Clear the captain's table now. Bring the skinning irons and sea-salt.\" (no subtitles).",
+      "2-4s": "Her line finishes cleanly by second 3; she pushes open the heavy carved oak door of the cabin, revealing the map room inside.",
+      "4-6s": "Castor nods curtly, raising the brass lantern high to illuminate the interior as they enter."
+    },
+    "dialogue": [
+      {
+        "t": "0-3s",
+        "speaker": "Nora",
+        "line_en": "Clear the captain's table now. Bring the skinning irons and sea-salt.",
+        "line_vn": "Dọn sạch bàn thuyền trưởng ngay. Mang theo dao lột da bằng sắt và muối biển."
+      }
+    ],
+    "audio": "Nora's brisk command; rhythmic thud of leather boots on wood; clink of brass lantern ring."
+  },
+  {
+    "clip_id": "SC-13",
+    "scene_name": "Không gian mổ cá ngột ngạt",
+    "duration": 8,
+    "dramatic_craft": {
+      "beat": "[0]: Tension before the anatomical dissection.",
+      "value_turn": "Preparation (0) -> Breathless focus (0): Intimate claustrophobic suspense.",
+      "subtext": "Each seafarer knows this moment will alter the voyage irreversibly.",
+      "prop_and_detail": "Heavy scarred oak table, bronze dissecting irons, green bioluminescent glow."
+    },
+    "action_summary": {
+      "0-3s": "Heracles heaves the limp, heavy black abyssal fish onto the center of the scarred oak table; the creature's wet armor plates slap the wood with a heavy squelch.",
+      "3-6s": "A faint pulsating emerald luminescence radiates from the creature's underbelly, casting green reflections across the rolled sea charts on the wall.",
+      "6-8s": "Nora steps forward to the table edge, resting both palms on the wood as Castor places two iron skinning knives beside her."
+    },
+    "dialogue": [],
+    "audio": "Groaning oak bulkhead timbers, heavy wet thud of fish on table, low sinister drone of bioluminescence (Sonic Isolation: 0 words)."
+  },
+  {
+    "clip_id": "SC-14",
+    "scene_name": "Chuẩn bị rạch bụng cá",
+    "duration": 8,
+    "dramatic_craft": {
+      "beat": "[0]: Surgical incision preparation.",
+      "value_turn": "Observation (0) -> Decisive act (0): Breaching the vessel.",
+      "subtext": "Nora knows opening this beast releases whatever curse lies within.",
+      "prop_and_detail": "Greek short sword with bone hilt, tough Coelacanth scales resistant to iron."
+    },
+    "action_summary": {
+      "0-3s": "From second 0, Nora draws her bronze-tipped short sword from its sheath with a metallic scrape and begins speaking immediately: Nora says \"Its thick scales are tough as forged bronze plate. Hold the thrashing tail steady with both iron hands, Heracles.\" (no subtitles).",
+      "3-6s": "She positions the sharp blade point just beneath the creature's spiny gill plate; the fish twitches violently as Heracles leans his full weight onto its tail.",
+      "6-8s": "Nora finishes by second 6, tightening her leather-gloved grip as she prepares the initial incision."
+    },
+    "dialogue": [
+      {
+        "t": "0-6s",
+        "speaker": "Nora",
+        "line_en": "Its thick scales are tough as forged bronze plate. Hold the thrashing tail steady with both iron hands, Heracles.",
+        "line_vn": "Lớp vảy dày của nó cứng như tấm đồng rèn. Hãy dùng cả hai bàn tay sắt giữ chặt cái đuôi đang quẫy đập, Heracles."
+      }
+    ],
+    "audio": "Nora's calm focused voice; metallic hiss of blade drawn from scabbard; creak of leather gloves."
+  },
+  {
+    "clip_id": "SC-15",
+    "scene_name": "Mổ bụng giải phóng lân tinh",
+    "duration": 8,
+    "dramatic_craft": {
+      "beat": "[!]: Breaching the mystery package.",
+      "value_turn": "Anticipation (0) -> Supernatural shock (!): Releasing the bioluminescent core.",
+      "subtext": "The glowing visceral fluid confirms this is no ordinary ocean creature.",
+      "prop_and_detail": "Viscous green bioluminescent bile with shimmering mineral flakes, bronze blade edge."
+    },
+    "action_summary": {
+      "0-3s": "Nora draws the bronze-tipped blade along the ventral midline in one continuous, decisive motion; the tough scales part with a crisp crunching sound.",
+      "3-6s": "A thick, luminous emerald fluid laden with glowing quartz-like granules pours out over the dark oak wood, illuminating the tabletop with supernatural light.",
+      "6-8s": "The belly cavity gapes open, revealing dark internal organs wrapped around a tightly bound cylindrical object."
+    },
+    "dialogue": [],
+    "audio": "Crunch of cutting thick fish cartilage, wet bubbling gush of visceral fluid, faint glassy hiss (Sonic Isolation: 0 words)."
+  },
+  {
+    "clip_id": "SC-16",
+    "scene_name": "Sốc trước mùi hôi biển sâu",
+    "duration": 8,
+    "dramatic_craft": {
+      "beat": "[-]: Visceral olfactory shock.",
+      "value_turn": "Supernatural wonder (+) -> Repulsion (-): Primordial abyssal decay.",
+      "subtext": "The abyssal trench is toxic to normal mortal men.",
+      "prop_and_detail": "Linen sleeve pressed over nose, spit on floorboards, green reflections in eyes."
+    },
+    "action_summary": {
+      "0-3s": "From second 0, Castor steps backward, covers his mouth with his sleeve, and gasps in disgust: Castor says \"By the gods below, it stinks of black sulfur, rotting kelp, and dead ocean trenches that never see the sun.\" (no subtitles).",
+      "3-6s": "His muffled line ends as Heracles spits on the deck in revulsion; yet Nora stands entirely unmoved, her eyes gleaming with cold fascination.",
+      "6-8s": "Castor finishes by second 6, waving his hand before his face while Nora leans closer toward the glowing innards."
+    },
+    "dialogue": [
+      {
+        "t": "0-6s",
+        "speaker": "Castor",
+        "line_en": "By the gods below, it stinks of black sulfur, rotting kelp, and dead ocean trenches that never see the sun.",
+        "line_vn": "Lạy các vị thần dưới đáy sâu, nó nồng nặc mùi lưu huỳnh đen, tảo thối rữa và những rãnh đại dương chết chóc chưa từng thấy ánh mặt trời."
+      }
+    ],
+    "audio": "Castor's choked gagging line; Heracles spitting on wood; sizzling hiss of acidic fluid."
+  },
+  {
+    "clip_id": "SC-17",
+    "scene_name": "Phát hiện bọc da cừu giấu kín",
+    "duration": 8,
+    "dramatic_craft": {
+      "beat": "[+]: Physical retrieval of the hidden artifact.",
+      "value_turn": "Disgust (-) -> Exhilaration (+): Finding the ancient secret.",
+      "subtext": "The fisherman spoke truth; someone deliberately placed this inside the leviathan.",
+      "prop_and_detail": "Tightly wrapped cylindrical sheepskin parchment roll, waterproof wax sealant."
+    },
+    "action_summary": {
+      "0-3s": "From second 0, Nora reaches deep into the glistening viscera and speaks in a low, intense revelation voice: Nora says \"Not stones or ballast. There is a tightly wrapped bundle wedged firmly beneath the creature's curved spine and ribcage.\" (no subtitles).",
+      "3-6s": "Her gloved fingers touch a rigid, smooth cylindrical parcel; she works her fingers around the slimy membrane to free it.",
+      "6-8s": "Her line finishes cleanly by second 6; she grips the dry, impervious object and prepares to lift it clear of the carcass."
+    },
+    "dialogue": [
+      {
+        "t": "0-6s",
+        "speaker": "Nora",
+        "line_en": "Not stones or ballast. There is a tightly wrapped bundle wedged firmly beneath the creature's curved spine and ribcage.",
+        "line_vn": "Không phải sỏi đá hay đá dằn tàu. Có một bọc đồ được quấn chặt nêm chặt bên dưới xương sống cong và lồng ngực của sinh vật này."
+      }
+    ],
+    "audio": "Nora's intense low voice; squelch of moving viscera; dull clink of wax cylinder against bone."
+  },
+  {
+    "clip_id": "SC-18",
+    "scene_name": "Lấy vật phẩm thành công",
+    "duration": 8,
+    "dramatic_craft": {
+      "beat": "[++]: Pristine supernatural artifact extracted intact.",
+      "value_turn": "Tension (0) -> Awe (++): The parchment defies biological decay.",
+      "subtext": "A holy or accursed artifact preserved by unknown ancient arts.",
+      "prop_and_detail": "Ivory sheepskin parchment roll, cracked pitch-black wax seal stamped with tree sigil."
+    },
+    "action_summary": {
+      "0-3s": "Nora pulls the cylinder free from the open belly; astonishingly, the parchment is pristine ivory-white, shedding all slime and viscera like mercury on glass.",
+      "3-6s": "She peels off the brittle black wax seal with her thumb; the dried wax cracks with a distinct snap and falls in dark flakes onto the table.",
+      "6-8s": "She unloosens the woven flax cord binding the scroll, holding the pristine parchment roll in both hands with awe."
+    },
+    "dialogue": [],
+    "audio": "Sharp snap of cracking brittle wax seal, soft rustle of dry parchment, collective exhale of breath (Sonic Isolation: 0 words)."
+  },
+  {
+    "clip_id": "SC-19",
+    "scene_name": "Thất vọng vì trang giấy trắng",
+    "duration": 6,
+    "dramatic_craft": {
+      "beat": "[-]: Temporary deflation and false disappointment.",
+      "value_turn": "Hope (++) -> Disappointment (-): The prize appears to be a cruel hoax.",
+      "subtext": "Castor's cynicism defaults to believing they have been made fools.",
+      "prop_and_detail": "Blank ivory vellum parchment, brass map weights."
+    },
+    "action_summary": {
+      "0-2s": "From second 0, Nora unrolls the sheepskin flat across the timber table; Castor steps forward, sees the completely blank white surface, and shouts angrily: Castor says \"Blank skin! The fisherman tricked us with a barren carcass, Nora!\" (no subtitles).",
+      "2-4s": "Castor's angry voice fills the cabin as he gestures dismissively at the blank parchment; Nora keeps her hands firmly weighting down the curled edges.",
+      "4-6s": "Castor scoffs and crosses his arms, while Nora remains completely still, studying the micro-texture of the hide."
+    },
+    "dialogue": [
+      {
+        "t": "0-3s",
+        "speaker": "Castor",
+        "line_en": "Blank skin! The fisherman tricked us with a barren carcass, Nora!",
+        "line_vn": "Mảnh da trắng trơn! Lão ngư dân đã lừa chúng ta bằng một cái xác rỗng, Nora!"
+      }
+    ],
+    "audio": "Castor's sharp cynical shout; rustle of unrolling dry vellum; slap of palms on table."
+  },
+  {
+    "clip_id": "SC-20",
+    "scene_name": "Nhận ra cơ chế mực tàng hình",
+    "duration": 8,
+    "dramatic_craft": {
+      "beat": "RH [+]: Intellectual reversal uncovering the hidden mechanism.",
+      "value_turn": "Disappointment (-) -> Discovery (+): Unlocking the secret cartographic cipher.",
+      "subtext": "Nora possesses ancient naval lore that exceeds ordinary pirate knowledge.",
+      "prop_and_detail": "Micro-embossed geometric grooves in sheepskin, trace of ancient mineral residue."
+    },
+    "action_summary": {
+      "0-3s": "From second 0, Nora bends low over the parchment, her eyes narrowing as she catches the raking light, and begins speaking immediately: Nora says \"Look closer at the parchment texture, Castor. True ancient sea-charts are never drawn with dry common ink for fools to read.\" (no subtitles).",
+      "3-6s": "Her calm, knowing voice dismantles Castor's skepticism; she traces her bare index finger gently along faint indented vein-like geometric channels pressed into the vellum.",
+      "6-8s": "She concludes by second 6, looking up with a confident, triumphant smirk across her face."
+    },
+    "dialogue": [
+      {
+        "t": "0-6s",
+        "speaker": "Nora",
+        "line_en": "Look closer at the parchment texture, Castor. True ancient sea-charts are never drawn with dry common ink for fools to read.",
+        "line_vn": "Nhìn kỹ hơn vào thớ da cừu đi, Castor. Những tấm hải đồ cổ đại thực sự không bao giờ được vẽ bằng loại mực thông thường khô khan cho những kẻ ngu xuẩn đọc."
+      }
+    ],
+    "audio": "Nora's confident smooth voice; soft scratch of fingernail testing parchment groove; gentle ship sway."
+  },
+  {
+    "clip_id": "SC-21",
+    "scene_name": "Thao tác nhỏ nước muối kích hoạt",
+    "duration": 8,
+    "dramatic_craft": {
+      "beat": "[0]: Chemical activation ritual.",
+      "value_turn": "Hypothesis (0) -> Experimental action (0): Applying the ancient catalyst.",
+      "subtext": "The sea itself is the key to revealing the sea's greatest secret.",
+      "prop_and_detail": "Hammered Greek bronze bowl, clear reflective brine droplet."
+    },
+    "action_summary": {
+      "0-3s": "Nora lifts the heavy hammered bronze bowl of Aegean sea water from the corner of the table with deliberate care.",
+      "3-6s": "She dips her fingers into the clear brine and holds her hand above the top-left corner of the blank sheepskin parchment.",
+      "6-8s": "A heavy drop of saltwater gathers at the tip of her index finger, quivers for an instant, and drops squarely onto the ivory surface."
+    },
+    "dialogue": [],
+    "audio": "Soft swish of water in bronze vessel, resonant hollow plink of water droplet striking taut parchment (Sonic Isolation: 0 words)."
+  },
+  {
+    "clip_id": "SC-22",
+    "scene_name": "Bản đồ Cây Vàng phát sáng",
+    "duration": 10,
+    "dramatic_craft": {
+      "beat": "[+++]: Miraculous revelation of the legendary map.",
+      "value_turn": "Secret test (0) -> Mythic breakthrough (+++): The Golden Map is alive.",
+      "subtext": "The crew now possesses the only existing chart to the greatest treasure of antiquity.",
+      "prop_and_detail": "Liquid gold reactive pigment, archaic Greek navigational runes, island labyrinths."
+    },
+    "action_summary": {
+      "0-3s": "From second 0, as the saltwater spreads through the micro-grooves, glowing liquid gold pigment ignites like living veins, and Nora speaks immediately in profound reverence: Nora says \"Salt awakens the sleeping pigment.\" (no subtitles).",
+      "3-7s": "The radiant golden lines branch outward across the entire parchment, revealing nautical routes, sea monsters, and archipelagos; Nora continues: Nora says \"The ancient maritime cartography reveals its radiant path across the seven forgotten deeps right before our very eyes.\" (no subtitles).",
+      "7-10s": "Her voice concludes by second 7; the entire chart blazes in warm golden glory, illuminating the dark cabin timbers."
+    },
+    "dialogue": [
+      {
+        "t": "0-7s",
+        "speaker": "Nora",
+        "line_en": "Salt awakens the sleeping pigment. The ancient maritime cartography reveals its radiant path across the seven forgotten deeps right before our very eyes.",
+        "line_vn": "Muối đánh thức các hạt sắc tố đang ngủ say. Tấm bản đồ hàng hải cổ xưa tiết lộ hải trình rực rỡ của nó qua bảy vực sâu bị lãng quên ngay trước mắt chúng ta."
+      }
+    ],
+    "audio": "Nora's awe-filled resonant line; gentle sizzling hum of reactive gold pigment; harmonic chime resonance."
+  },
+  {
+    "clip_id": "SC-23",
+    "scene_name": "Xác nhận truyền thuyết có thật",
+    "duration": 8,
+    "dramatic_craft": {
+      "beat": "[++]: Collective spiritual confirmation.",
+      "value_turn": "Mystery (+) -> Myth made flesh (++): The legendary goal is verified.",
+      "subtext": "Even hardened cutthroats are humbled before ancient gods.",
+      "prop_and_detail": "Emblem of the Golden Tree radiating from the map's center, upward shadow play on oak beams."
+    },
+    "action_summary": {
+      "0-3s": "From second 0, Heracles gazes at the radiant golden map with childlike wonder and speaks immediately: Heracles says \"The Golden Tree of antiquity... the ancient sailor tales whispered across the seven oceans were actually real after all these years.\" (no subtitles).",
+      "3-6s": "His booming voice is humbled by ancient majesty; the golden light reveals the glowing emblem of a gigantic crowned tree at the center of the charted sea.",
+      "6-8s": "Heracles falls silent by second 6, crossing his chest in an old mariner's gesture of awe while Castor peers closer."
+    },
+    "dialogue": [
+      {
+        "t": "0-6s",
+        "speaker": "Heracles",
+        "line_en": "The Golden Tree of antiquity... the ancient sailor tales whispered across the seven oceans were actually real after all these years.",
+        "line_vn": "Cây Vàng của thời cổ đại... những câu chuyện truyền miệng của thủy thủ trên khắp bảy đại dương hóa ra là có thật sau ngần ấy năm trời."
+      }
+    ],
+    "audio": "Heracles's deep awe-struck voice; resonant musical shimmer of the glowing pigment; creaking ship ribs."
+  },
+  {
+    "clip_id": "SC-24",
+    "scene_name": "Bất đồng ý kiến lộ trình",
+    "duration": 6,
+    "dramatic_craft": {
+      "beat": "[-]: Internal crew conflict over suicidal navigation.",
+      "value_turn": "Awe (++) -> Tactical danger (-): The only route passes through certain death.",
+      "subtext": "Castor values survival over glory; Nora values legend over fear.",
+      "prop_and_detail": "Glyph of two crushing jaws etched into the glowing golden parchment."
+    },
+    "action_summary": {
+      "0-2s": "From second 0, Castor points violently at two crushing basalt cliff glyphs on the map and begins shouting immediately: Castor says \"This route cuts straight through the Clashing Rocks! No hull survives those jaws!\" (no subtitles).",
+      "2-4s": "His voice is loud, sharp, and clipped like an officer under combat pressure; he shakes his head adamantly, glaring at Nora.",
+      "4-6s": "His shout finishes by second 3; he holds his finger planted firmly on the map while Nora's expression remains as solid as iron."
+    },
+    "dialogue": [
+      {
+        "t": "0-3s",
+        "speaker": "Castor",
+        "line_en": "This route cuts straight through the Clashing Rocks! No hull survives those jaws!",
+        "line_vn": "Hải trình này đâm thẳng qua Vách Đá Nghiền Clashing Rocks! Không có thân tàu nào sống sót qua hàm răng đá đó cả!"
+      }
+    ],
+    "audio": "Castor's loud clipped voice on top; table vibrating under finger tap; sea swell rocking hull timbers."
+  },
+  {
+    "clip_id": "SC-25",
+    "scene_name": "Quyết định đâm vào vách đá",
+    "duration": 8,
+    "dramatic_craft": {
+      "beat": "[++]: Captain's resolute commitment to the ordeal.",
+      "value_turn": "Hesitation (-) -> Unwavering resolve (++): Point of No Return crossed.",
+      "subtext": "Nora would rather drown in glory than die an old woman in safe waters.",
+      "prop_and_detail": "Heavy watertight bronze map cylinder with screw-thread seal."
+    },
+    "action_summary": {
+      "0-3s": "From second 0, Nora rolls the parchment in one continuous powerful sweep and delivers her captain's decree with fierce conviction: Nora says \"We do not turn our rudder back from destiny.\" (no subtitles).",
+      "3-6s": "She slides the rolled map into a cylindrical bronze case and screws the threaded cap shut with an iron snap: Nora says \"Ready the heavy oars and rig the thick storm-canvas immediately!\" (no subtitles).",
+      "6-8s": "Her orders finish cleanly by second 6; she latches the bronze cylinder to her sword belt and strides toward the companionway with ruthless resolve."
+    },
+    "dialogue": [
+      {
+        "t": "0-6s",
+        "speaker": "Nora",
+        "line_en": "We do not turn our rudder back from destiny. Ready the heavy oars and rig the thick storm-canvas immediately!",
+        "line_vn": "Chúng ta không bao giờ bẻ lái quay đầu trước số phận. Chuẩn bị những mái chèo hạng nặng và giương ngay lớp buồm bão dày lên lập tức!"
+      }
+    ],
+    "audio": "Nora's commanding ring; metallic screw of bronze cap; solid boot strides on oak."
+  },
+  {
+    "clip_id": "SC-26",
+    "scene_name": "Toàn tàu ứng chiến với bão",
+    "duration": 8,
+    "dramatic_craft": {
+      "beat": "[+]: Mobilizing the ship for survival in lethal waters.",
+      "value_turn": "Cabin deliberation (0) -> Storm action (+): Entering the storm zone.",
+      "subtext": "The crew's disciplined training transforms into raw survival grit.",
+      "prop_and_detail": "Oak water casks lashed with wet hemp, heavy hatch covers bolted down."
+    },
+    "action_summary": {
+      "0-3s": "From second 0, as wind howls through the rigging, Heracles braces his massive legs against the deck and roars at the deckhands: Heracles says \"All hands on the main deck! Lash down the water casks, batten every hatch, and prime the bilge pumps now!\" (no subtitles).",
+      "3-6s": "His powerful voice booms over the gathering gale; sailors scurry across the deck in urgent coordination, hauling heavy canvas sheets.",
+      "6-8s": "Heracles knots the thick hawser with a brutal pull by second 6, testing the lashings as seafoam sprays over the starboard rail."
+    },
+    "dialogue": [
+      {
+        "t": "0-6s",
+        "speaker": "Heracles",
+        "line_en": "All hands on the main deck! Lash down the water casks, batten every hatch, and prime the bilge pumps now!",
+        "line_vn": "Tất cả mọi người lên boong chính! Buộc chặt các thùng nước, đóng chặt mọi cửa hầm và mồi sẵn máy bơm đáy tàu ngay!"
+      }
+    ],
+    "audio": "Heracles's booming roar; howling wind whistling through shroud wires; crashing seafoam on timber."
+  },
+  {
+    "clip_id": "SC-27",
+    "scene_name": "Con tàu lao ra đại dương",
+    "duration": 8,
+    "dramatic_craft": {
+      "beat": "[+]: Aggressive maritime navigation into dangerous currents.",
+      "value_turn": "Deck preparation (0) -> Heroic assault (+): Driving directly into the vortex.",
+      "subtext": "Nora attacks danger head-on; retreat is not in her blood.",
+      "prop_and_detail": "Carved timber figurehead slicing waves, spray flying off taut stay ropes."
+    },
+    "action_summary": {
+      "0-3s": "From second 0, as the heavy timber bow crashes into a steep ocean swell, Nora grips the stay wire and shouts into the storm: Nora says \"Steer south-southwest into the towering swell! We must ride the high crest before the midnight tide turns against our hull!\" (no subtitles).",
+      "3-6s": "Her fierce voice carries above the roaring sea; the wooden bow cleaves through black water, sending explosive sheets of white spray curling into the dark air.",
+      "6-8s": "She finishes by second 6, raising her arm pointing toward the distant horizon where jagged black silhouettes loom against the clouds."
+    },
+    "dialogue": [
+      {
+        "t": "0-6s",
+        "speaker": "Nora",
+        "line_en": "Steer south-southwest into the towering swell! We must ride the high crest before the midnight tide turns against our hull!",
+        "line_vn": "Bẻ lái về hướng nam-tây nam đâm vào con sóng cuộn khổng lồ! Chúng ta phải cưỡi lên đỉnh ngọn sóng cao nhất trước khi thủy triều lúc nửa đêm xoay chiều đè lên thân tàu!"
+      }
+    ],
+    "audio": "Nora's fierce shout on top; deafening roar of bow wave cleaving deep water; howling gale."
+  },
+  {
+    "clip_id": "SC-28",
+    "scene_name": "Thiên nhiên đe dọa nuốt chửng tàu",
+    "duration": 10,
+    "dramatic_craft": {
+      "beat": "RH [!]: Perilous threshold crossing into the Clashing Rocks.",
+      "value_turn": "Audacity (+) -> Existential insignificance (!): Human skill pitted against titan forces.",
+      "subtext": "The earth itself is moving to crush the intruders.",
+      "prop_and_detail": "Tattered storm canvas reefed tight, lightning reflecting off basalt crags."
+    },
+    "action_summary": {
+      "0-3s": "The pirate galleon appears as a tiny, fragile wooden shell tossed upon colossal, surging black mountain-waves under a bruised tempest sky.",
+      "3-7s": "A sudden flash of lightning tears across the storm clouds, revealing the colossal jagged black basalt pillars of the Clashing Rocks rising like mountain teeth in the distance.",
+      "7-10s": "The tiny ship plunges into a deep ocean trough, rising gallantly onto the next crest as the sea churns in violent froth."
+    },
+    "dialogue": [],
+    "audio": "Deep rolling sonic boom of distant thunder, terrifying roar of gale winds, deep groaning abyss (Sonic Isolation: 0 words)."
+  },
+  {
+    "clip_id": "SC-29",
+    "scene_name": "Vật lộn giữ lái trước vách đá",
+    "duration": 8,
+    "dramatic_craft": {
+      "beat": "[-]: Desperate physical struggle against the vortex.",
+      "value_turn": "Command (+) -> Life-or-death struggle (-): Narrow margin between passage and annihilation.",
+      "subtext": "One slip of the wheel will shatter the ship and doom everyone.",
+      "prop_and_detail": "Heavy oak ship's wheel with bronze hub, brass binnacle compass spinning wildly."
+    },
+    "action_summary": {
+      "0-3s": "From second 0, with rain streaming down her face and wet copper braids whipping in the gale, Nora battles the violent kick of the oak helm and shouts: Nora says \"Keep her straight in the trough! The current is dragging our oak keel toward the crushing black basalt jaws ahead!\" (no subtitles).",
+      "3-6s": "Her muscles strain against the immense hydraulic pressure of the rudder; she forces the heavy wheel clockwise against the churning vortex.",
+      "6-8s": "She completes her command by second 6, planting her boots against the deck grating and holding the helm locked in position through pure iron will."
+    },
+    "dialogue": [
+      {
+        "t": "0-6s",
+        "speaker": "Nora",
+        "line_en": "Keep her straight in the trough! The current is dragging our oak keel toward the crushing black basalt jaws ahead!",
+        "line_vn": "Giữ thẳng con tàu trong rãnh sóng! Dòng hải lưu đang kéo sống tàu gỗ sồi của chúng ta về phía hàm răng đá bazan đen nghiền nát phía trước!"
+      }
+    ],
+    "audio": "Nora's hoarse strained shout; howling gale and driving rain; violent clatter of rudder chains under strain."
+  },
+  {
+    "clip_id": "SC-30",
+    "scene_name": "Đỉnh điểm bẫy vách đá nghiền",
+    "duration": 10,
+    "dramatic_craft": {
+      "beat": "[!]: Climax of Act 1 — Narrow escape through the deadly gateway.",
+      "value_turn": "Impending destruction (-) -> Triumphant survival (!): Crossing the threshold into forbidden waters.",
+      "subtext": "The old world is closed behind them; there is no turning back.",
+      "prop_and_detail": "Basalt cliffs sheering off into sea, explosive water plume, ship clearing the gap."
+    },
+    "action_summary": {
+      "0-3s": "The pirate galleon shoots through the narrow boiling foam channel between the two colossal black basalt cliffs like an arrow released from a bow.",
+      "3-7s": "The titanic stone cliffs grind together with cataclysmic momentum; massive boulders sheer off, crashing into the churning sea just feet behind the galleon's stern.",
+      "7-10s": "The ship's stern clears the narrow gap as the two colossal cliffs collide with a deafening thunderous impact, throwing up a titanic plume of spray and pulverized dust (End of Act 1 at 04:00)."
+    },
+    "dialogue": [],
+    "audio": "Earth-shattering cataclysmic roar of colliding tectonic cliffs, deafening explosion of displaced sea spray (Sonic Isolation: 0 words)."
+  }
+]
