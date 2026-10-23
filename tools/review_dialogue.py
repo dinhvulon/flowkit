@@ -107,7 +107,12 @@ def median_f0(audio, t0, t1):
 
 def expected_from_prompt(vp):
     if isinstance(vp, str):
-        vp = json.loads(vp)
+        try:
+            vp = json.loads(vp)
+        except (json.JSONDecodeError, ValueError):
+            vp = {}
+    if not isinstance(vp, dict):
+        vp = {}
     speech = vp.get("speech") or {}
     voices = speech.get("voices") or {}
     lines = [{"speaker": d.get("speaker", ""), "voice": voices.get(d.get("speaker", ""), ""),

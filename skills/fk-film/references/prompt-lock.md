@@ -162,6 +162,6 @@ Thứ tự khóa (không bỏ khóa bắt buộc):
 
 
 
-**C. Sau khi sinh — rà lỗi theo cùng checklist** khi review (`/fk-review-video` + user): trích ~16 frame/clip, đối chiếu từng dòng B; lỗi mới chưa có trong bảng → ghi bài học mới vào `production-lessons.md` **và** thêm 1 dòng vào bảng B.
+**C. Sau khi sinh — rà lỗi theo cùng checklist** khi review (`/fk-review-video` + user): trích đúng 24 frames/clip bằng ffmpeg (`fps=24/<duration>`, contact sheet `tile=6x4`, Rule 73), đối chiếu từng dòng B; lỗi mới chưa có trong bảng → ghi bài học mới vào `production-lessons.md` **và** thêm 1 dòng vào bảng B.
 
 **D. Đọc lại toàn bộ sau mỗi lần sửa (Bài học 86)** — mục này được `/fk-review-prompt` chạy thành một bước có báo cáo: (1) sau khi sửa bất kỳ câu nào, đọc lại **cả** prompt, không chỉ câu vừa sửa; (2) gom các câu theo thuộc tính (tốc độ, hướng đi, máy đứng yên hay di chuyển, ánh sáng, bối cảnh, số lượng đạo cụ) và kiểm hai câu có nói ngược nhau không; (3) chạy hết checklist B; (4) gửi kèm prompt một báo cáo tự đánh giá (dòng nào áp, Đạt / Không đạt, mâu thuẫn đã sửa) trước khi hỏi user duyệt sinh. Linter chỉ bắt `SPEED_CONTRADICTION` và `CAMERA_CONTRADICTION`; mọi mâu thuẫn khác phải tự đọc mà tìm.

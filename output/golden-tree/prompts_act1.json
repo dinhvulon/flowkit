@@ -12,26 +12,26 @@
     "sf_type": "GENERATE_IMAGE",
     "camera": {
       "viewpoint": "third-person cinematic camera; the camera itself is never seen",
-      "shot_size": "EWS",
-      "description": "Slow tracking dolly shot on 35mm Cooke S4 prime lens with deep focus (f/8 aperture), entire frame sharp, wide horizon framing the dark vessel."
+      "shot_size": "EWS to MS",
+      "description": "Multi-shot sequence with crisp hard cuts: Shot 1 (0-3s, EWS) -> Hard Cut at 3.0s -> Shot 2 (3-7s, MS) -> Hard Cut at 7.0s -> Shot 3 (7-10s, MS to MCU). 35mm Cooke S4 prime lens with deep focus (f/8 aperture), entire frame sharp."
     },
     "setting": "Location: open Aegean sea shrouded in thick ocean haze. Light: warm amber glow from practical brass lanterns swinging gently from the galleon rigging; deep chiaroscuro darkness on still glassy black water; flat natural overcast night atmosphere.",
     "characters": [
       {
         "name": "Nora",
         "visual_lock": "FACE LOCK: Nora's face is exactly the face in {{ref:Nora}}, kept 1:1. BODY and OUTFIT LOCK: her build and weathered navy tunic brigandine armor are exactly as in {{ref:Nora Body Seafarer}}.",
-        "state": "Standing motionless at the prow railing, scanning the dense fog ahead."
+        "state": "Standing motionless at the prow railing, scanning the dense fog ahead in Shot 2 (3-7s). Off-screen in Shot 1 and Shot 3."
       },
       {
         "name": "Castor",
         "visual_lock": "FACE LOCK: Castor's face is exactly the face in {{ref:Castor}}, kept 1:1. BODY and OUTFIT LOCK: his agile athletic build and boiled leather cuirass are exactly as in {{ref:Castor}}.",
-        "state": "Stationed beside the starboard shrouds, holding his recurve bow."
+        "state": "Stationed on the mid-deck alone, stepping forward and leaning over the rail in Shot 3 (7-10s). Off-screen in Shot 1 and Shot 2."
       }
     ],
     "timeline_action": {
-      "0-3s": "The dark silhouette of the heavy wooden pirate galleon glides forward silently over the glassy black sea; wisps of ocean haze drift across the carved timber bow.",
-      "3-7s": "Practical brass lanterns hanging on the yardarms sway gently with the ocean swell; Nora stands motionless at the prow railing peering into the distance.",
-      "7-10s": "Castor steps forward onto the timber deck, leaning slightly over the starboard rail as the ship cuts silently through the motionless ocean fog."
+      "0-3s": "Matching Panel 1 (Top-Left) of {{media:e630cce1-7f75-4ae2-b2ed-1f2aa461d60d|SC-01_storyboard_clean.jpg}}: [EWS] Exterior extreme wide shot of the dark wooden pirate galleon gliding forward silently across the glassy black Aegean sea shrouded in heavy ocean haze; brass lanterns in rigging cast warm amber glow on black water.",
+      "3-7s": "At second 3.0, a crisp hard cut matching Panel 2 (Top-Right) of {{media:e630cce1-7f75-4ae2-b2ed-1f2aa461d60d|SC-01_storyboard_clean.jpg}}: [MS] Medium shot at the prow railing. Captain Nora alone in frame stands motionless at the timber rail peering intently into the fog, a glowing brass lantern beside her; her braided hair rests steady on her shoulders.",
+      "7-10s": "At second 7.0, a crisp hard cut matching Panel 3 and Panel 4 (Bottom-Left to Bottom-Right) of {{media:e630cce1-7f75-4ae2-b2ed-1f2aa461d60d|SC-01_storyboard_clean.jpg}}: [MS to MCU] Medium shot on the mid-deck looking at Castor alone. Castor with arrow quiver on his back steps forward onto the timber deck and leans over the starboard rail scanning the darkness. Strictly Castor alone in this shot; Nora is completely off-screen and never appears."
     },
     "speech": {
       "speaker": [],
@@ -49,6 +49,9 @@
     "physics": "Heavy galleon displacement, gentle water displacement ripples radiating outward, tarred ropes flexing under slight pendulum swing.",
     "negative_constraints": [
       "No subtitles, no captions, no on-frame text, no logos, no watermarks.",
+      "The video is full-frame shots only: never a grid, never panels, never split screen, never black dividing lines.",
+      "Strictly NO duplicate characters, strictly NO multiple Noras, only one Nora in shot 2, strictly Castor alone in shot 3, Nora never appears in the mid-deck shot, no ghost figures, no cloning.",
+      "Crisp hard cuts at second 3.0 and second 7.0; no camera blending, no crossfades.",
       "ANTI-CGI LOCK: real documentary footage, not a 3D render, not a video game, not CGI fire, no plastic skin.",
       "No breath vapor and no white steam from anyone's mouth; no god rays, no volumetric beams, no magical sunbeams.",
       "No shallow depth of field, no blurry background, no bokeh (f/8 aperture throughout).",
