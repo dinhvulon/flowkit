@@ -35,6 +35,8 @@ output/**/*.mp4
 output/*/images/
 !output/hell_creek_66_ma/images/
 !output/hell_creek_66_ma/images/**
+!output/golden-tree/images/
+!output/golden-tree/images/**
 
 # SQLite database and WAL mode auxiliary files (runtime state, not for repo)
 flow_agent.db
