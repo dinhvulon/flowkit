@@ -39,6 +39,7 @@
 | **Lửa, khói, chất liệu (anti-CGI)** | `35mm film`, documentary realism, không CGI; không khói thở / hơi nước trắng; bếp than là lớp than đỏ, nguồn sáng ghi rõ chỗ; không god rays | Rule 57, 59, 61, 62 + Bài 73, 75 |
 | **Ánh sáng & da người** | Ánh sáng tự nhiên; chống glamour (không beauty glow, da thật); deep focus khi cần thấy bối cảnh | Rule 61, 62 (3) + Bài 77 (mục 1, 2) |
 | **Start Frame** | Cảnh nối tiếp trực tiếp → cắt Last Frame clip trước (`PREV_LAST_FRAME`); chuyển cảnh → `GENERATE_IMAGE` có `source_media_id`, tẩy logo, user duyệt. Riêng EMBERS: refs-only r2v, không start frame (memory 2026-10-18) | Rule 63, 65 + Bài 79 |
+| **Cắt cảnh Storyboard & Chống phân thân** | Storyboard 2×2 đổi góc/người ➔ BẮT BUỘC chỉ định Hard Cut dứt khoát ('crisp hard cut at second X.0 matching Panel N'); cú máy quay nhân vật B thì nhân vật A ghi rõ 'strictly off-screen and never seen'; 'negative_constraints' cấm nhân đôi/phân thân ('strictly NO duplicate characters, strictly NO multiple [Name], strictly [Other] alone in shot Y, no cloning') | Rule 74, Bài 80 |
 | **Xác phân hủy / đường mòn tiền sử** | Theo Rule 59 khi phim có bối cảnh tiền sử | Rule 59 + Bài 75 |
 
 **Kỹ thuật bổ sung từ `skills/character-scene-design-skills-main/`** (repo tham chiếu, đọc khi cần — xem con trỏ trong `character-bible.md` §7 và `shots-and-realism.md`):
@@ -775,6 +776,28 @@ Rút ra từ dự án `output/atlantis-9600bc/` (2026-09-27). Khi mâu thuẫn v
          - **Chuyển cảnh (Scene Transitions / Đổi góc POV <-> Selfie / Cutaway / Đổi bối cảnh / Đổi thời gian):** Giữ nguyên quy trình chuẩn — tạo ảnh Frame 0 độc lập bằng `GENERATE_IMAGE` (có `source_media_id` cho cảnh có người theo Rule 63), tẩy logo, mở Review Board (`review_images.html`) dừng lại chờ User duyệt.
       2. **Mở rộng 16/10/2026 — không chỉ chuỗi `a/b/c`:** Mọi clip nối tiếp trực tiếp clip trước đều là cảnh liên tục, dù ID không có hậu tố. Phép thử 4 yếu tố: **cùng địa điểm + cùng khoảnh khắc + cùng vị trí/góc máy + cùng cỡ cảnh**, không có cú cắt ➔ `PREV_LAST_FRAME`. Đổi một yếu tố bất kỳ ➔ chuyển cảnh ➔ `GENERATE_IMAGE`. Bộ code `common.py` của Hell Creek v2 chỉ đánh `PREV_LAST_FRAME` khi clip mang cờ `sf="P"` (chuỗi `a/b/c`). Kiểm lại Act 2 theo phép thử 4 yếu tố (16/10/2026) thì mọi cặp clip khác đều đổi góc máy hoặc cỡ cảnh, nên phân loại cũ vẫn đúng. Nhưng phải xét từng cặp, không suy ra từ hậu tố ID.
       3. **Ghi lý do & thứ tự:** `/fk-script-to-prompts` phân loại từng clip và ghi lý do vào `start_frame.note`. Clip liên tục chỉ sinh sau khi clip trước xong và được duyệt; clip trước bị regen thì cắt lại Last Frame và regen clip sau. Start Frame cắt từ video đã duyệt không cần qua Review Board ảnh, nhưng vẫn phải tẩy watermark (Rule 28).
+
+80. **CẮT CẢNH THEO STORYBOARD (CRISP HARD CUTS) & KHÓA CHỐNG PHÂN THÂN NHÂN VẬT (ANTI-CLONING / CHARACTER CONTAMINATION LOCK) TRONG PURE R2V (User Lock 23/10/2026, Rule 74 — Bài học Lỗi 2 Nora Xuất Hiện Cùng Lúc Ở Giây Số 9 SC-01 Pirates of the Golden Tree):**
+    - **Hiện tượng & Nguyên nhân gốc rễ (Root Cause):**
+      1. **Không cắt cảnh theo Storyboard (Missing Hard Cuts):**
+         - Tấm Storyboard 2×2 thể hiện 4 panel là 4 cú máy riêng biệt (Panel 1: EWS tàu bên ngoài ➔ Panel 2: MS Captain Nora một mình ở mũi tàu ➔ Panel 3 & 4: MS/MCU Castor một mình ở boong giữa).
+         - Nhưng prompt video cũ lại mô tả: `[EWS] Slow tracking dolly shot on 35mm Cooke S4 prime lens...` và không có chỉ thị cắt cảnh dứt khoát. Model video Veo 3 / Omni Flash hiểu lầm đây là một cú máy tracking liên tục duy nhất, cố gắng di chuyển camera nối liền từ Nora sang Castor mà không cắt chuyển cảnh theo Storyboard.
+      2. **Xuất hiện 2 nhân vật giống hệt nhau (Duplicate Clone Glitch — 2 Nora ở giây 9):**
+         - Ở phân đoạn 7-10s, khi Castor sải bước trên boong giữa, do danh sách tham chiếu (`character_names`) đính kèm cả Nora, và prompt không khai báo Nora đã ra khỏi khung hình (`off-screen`), không gian tiềm ẩn (latent space) của mô hình bị "nhiễm nhân vật" (*latent character contamination*).
+         - Kết quả: Khi Castor bước tới (khung 21-24 trên contact sheet 24 frames), mô hình giữ Nora bản gốc ở hậu cảnh cạnh đèn bão, đồng thời sinh thêm **một bản sao thứ 2 của Nora** xuất hiện lù lù ở tiền cảnh bên trái che khuất Castor!
+    - **Quy tắc giải pháp bắt buộc (Rule 74):**
+      1. **BẮT BUỘC chỉ định Hard Cut dứt khoát theo từng Panel Storyboard**:
+         - Trong `camera.description`: Chỉ định rõ chuỗi đa shot: `Multi-shot sequence with crisp hard cuts: Shot 1 (0-3s, EWS) -> Hard Cut at 3.0s -> Shot 2 (3-7s, MS) -> Hard Cut at 7.0s -> Shot 3 (7-10s, MS to MCU)`.
+         - Trong `timeline_action`: Mọi điểm chuyển panel giữa các góc nhìn khác nhau BẮT BUỘC mở đầu bằng câu lệnh cắt cứng: `At second 3.0, a crisp hard cut matching Panel 2 (Top-Right) of {{media:...}}...` và `At second 7.0, a crisp hard cut matching Panel 3 and Panel 4 (Bottom-Left to Bottom-Right) of {{media:...}}...`.
+      2. **Khóa cô lập nhân vật & Off-Screen Lock**:
+         - Khi một cú máy chỉ quay nhân vật B, BẮT BUỘC ghi rõ: `Strictly [Character B] alone in this shot; [Character A] is completely off-screen and never appears`.
+      3. **Khối phủ định chống phân thân (Anti-Cloning Negative Constraints)**:
+         - BẮT BUỘC thêm vào `negative_constraints`: `strictly NO duplicate characters, strictly NO multiple [Name], only one [Name] in shot X, strictly [Other] alone in shot Y, [Name] never appears in the [shot Y], no ghost figures, no cloning; crisp hard cuts at second X.0 and second Y.0, no camera blending, no crossfades.`
+      4. **Chống trộn trục 180° giữa 2 Panel (`Anti-180°-Axis-Fusion`) & Khóa không gian Trong/Ngoài lan can (`Inside-Deck Spatial Lock` — Bài học SC-01 v2 Pirates of the Golden Tree, 23/10/2026)**:
+         - **Hiện tượng & Root Cause:** Trong `SC-01_storyboard_clean.jpg`, Panel 3 (Bottom-Left) có sàn tàu/thùng gỗ/cầu thang ở **bên TRÁI** và biển ở **bên PHẢI** (Castor đứng bên trái vịn lan can nhìn sang phải). Trong khi đó Panel 4 (Bottom-Right) đảo góc máy 180° nên biển ở **bên TRÁI** và sàn tàu/cầu thang ở **bên PHẢI**. Khi prompt của Shot 3 (`7-10s`) viết gộp `matching Panel 3 and Panel 4 (Bottom-Left to Bottom-Right)`, Omni Flash R2V đã trộn vị trí đứng bên TRÁI lan can của Castor ở Panel 3 vào nền cảnh biển bên TRÁI / sàn tàu bên PHẢI của Panel 4 ➔ biến thành Castor đứng dưới mặt nước biển phía ngoài mạn tàu vịn vào lan can nhìn vào trong tàu!
+         - **Quy tắc giải pháp bắt buộc:**
+           - **Mỗi Shot chỉ neo bố cục không gian theo MỘT Panel duy nhất:** CẤM viết gộp `matching Panel 3 and Panel 4` trong cùng một cú máy không cắt cảnh. Shot 3 (`7-10s` hoặc `6-8s`) chỉ neo cứng bố cục không gian theo `Panel 3 (Bottom-Left)` từ đầu đến cuối Shot 3 (không đảo trục 180° sang nền cảnh ngược chiều của Panel 4).
+           - **Khóa `SPATIAL LOCK (INSIDE vs. OUTSIDE)`:** Mọi cảnh trên tàu thuyền, lan can, gờ đá BẮT BUỘC ghi rõ bên nào (`LEFT` hay `RIGHT`) là sàn gỗ bên trong tàu, bên nào là mặt nước biển bên ngoài, kèm câu khóa: `SPATIAL LOCK: All characters stand firmly INSIDE the vessel on the solid wooden deck planks, NEVER standing on the exterior ocean/water side of the timber railing; no 180-degree axis fusion between panels.`
 
 **Nội dung**
 17. → chuyển sang [`vlog-archive.md`](vlog-archive.md) ([ĐÃ THAY] vlogger mặc đồ hiện đại).

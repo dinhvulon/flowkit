@@ -1,39 +1,40 @@
-# KỊCH BẢN CHI TIẾT 26 PHÚT — BƯỚC NGOẶT TRUNG TÂM (MIDPOINT 15:18)
+# KỊCH BẢN CHI TIẾT 21 PHÚT — BƯỚC NGOẶT TRUNG TÂM (MIDPOINT)
 ## Tác phẩm: Pirates of the Golden Tree (Slug: `golden-tree`)
-### Thời lượng Midpoint: 15:00 – 16:30 (Đúng 90 giây | 12 Phân cảnh: SC-109 đến SC-120)
+### Thời lượng Midpoint: 11:30 – 13:00 (Đúng 90 giây | 12 Phân cảnh: SC-85 đến SC-96)
+
+- **Package:** They Found an Ancient Gold Map Inside a Leviathan's Belly · Close-up of Captain Nora splitting open the glowing belly of an abyssal predator fish under lantern light · Follow a crew of rogue seafarers through clashing seas and siren waters to unlock the Golden Tree—only to discover the map is a lethal trap.
 
 > **Quy chuẩn kỹ thuật `/fk-film` & Screenwriting Rules:**
-> - Kỹ năng áp dụng: `/sw-premise-theme`, `/sw-character-conflict`, `/sw-scene-craft`, `/sw-dialogue`.
+> - Kỹ năng áp dụng: `/sw-character-conflict`, `/sw-scene-craft`, `/sw-dialogue`, `/sw-story-structure`.
 > - 100% Third-Person Cinematic Camera (Không selfie, không POV, không xưng hô khán giả).
-> - Nguồn sáng thực tế có động cơ: Ánh sáng ban ngày gắt rọi qua khe đá hẹp, bóng đổ sâu Chiaroscuro (CẤM god rays và rim lighting).
-> - Chuẩn số từ thoại Rule 49: 6s: 10-14 từ | 8s: 14-18 từ.
-> - Khung neo: Loại 1 (`PREV_LAST_FRAME`) vs Loại 2 (`STORYBOARD 2×2` lưới 4 panels theo thời gian, BỎ cắt P1).
+> - Nguồn sáng thực tế có động cơ (Motivated Practical Light — đèn bão, lân tinh bản đồ; CẤM god rays và rim lighting).
+> - Chuẩn số từ thoại Rule 49: 4s: 0/6-8 từ | 6s: 12-15 từ | 8s: 18-22 từ | 10s: 24-28 từ | Sonic Isolation: 0 từ.
+> - Cột Dựng: thời lượng dùng được sau trim (4s: 3.5s | 6s: 5.0s | 8s: 7.0s | 10s: 9.0s).
 
 ---
 
-## BẢNG MASTER STORYBOARD BƯỚC NGOẶT 15:18 (15:00 – 16:30 | 12 CLIPS = 90 GIÂY)
+## BẢNG MASTER STORYBOARD MIDPOINT (11:30 – 13:00 | 12 CLIPS = 90 GIÂY)
 
-| Clip | Dur | Cỡ cảnh & Góc máy | Refs (≤7) | Loại Neo (Rule 65/69) | Ánh sáng | Tóm tắt hành động & Diễn tiến | Thoại nhân vật (Speech & Word Count) | Từ | Beat |
-|---|---|---|---|---|---|---|---|---|---|
-| **SC-109** | 8s | WS Tracking Hành Lang Đá | Nora, Body, Castor | **STORYBOARD 2×2** (0/3/6/8s) | Sương mù xám đáy vực | Bốn người đi sâu vào hẻm đá vôi dốc đứng; vách đá hai bên khép chặt dần | Castor: *"The path is pinching out, Nora. Look at the jagged rock-fall ahead."* | 12 | [-] Cản trở |
-| **SC-110** | 8s | MS Two-Shot Đối Mặt | Nora, Body, Castor | **PREV_LAST_FRAME** (Loại 1) | Ánh sáng đỉnh đầu hắt xuống | Dừng trước bức tường đá cụt; Castor đập tay vào vách đá gắt gỏng chất vấn | Castor: *"That doesn't look like any road! It's a dead wall, Nora! Your glowing fish-skin led us into an open grave!"* | 21 | [!] Bùng nổ |
-| **SC-111** | 8s | CU Cắt Ngang Tiếng Kêu | Nora, Castor, Hốc đá | **STORYBOARD 2×2** (0/3/6/8s) | Ánh sáng khuất khe nứt | ĐÚNG 15:18: Tiếng cào móng và tiếng rên rỉ yếu ớt vọng ra từ khe đá sụt dưới chân vách núi | Theron (O.S.): *"Help... someone... before the stones settle and crush my ribs..."* | 10 | [!] Bước ngoặt 15:18 |
-| **SC-112** | 8s | MCU Phản Ứng Dứt Khoát | Nora, Body, Castor | **PREV_LAST_FRAME** (Loại 1) | Bóng đổ Chiaroscuro | Castor toan kéo Nora quay lại nhưng Nora cúi rạp người xuống soi đèn vào khe nứt | Nora: *"Hush, Castor! That's a living throat beneath the rubble. We dig him out!"* | 13 | [++] Lựa chọn nghĩa khí |
-| **SC-113** | 8s | Macro Insert Bàn Tay Theron | Theron, Đá sụt | **STORYBOARD 2×2** (0/3/6/8s) | Bụi đá vôi rơi lả tả | Bàn tay gầy guộc run rẩy bám đầy bụi vôi trắng thò ra qua khe hở đá lởm chởm | *(0 từ — Tiếng đá dăm rơi lách cách, tiếng thở hắt hổn hển)* | 0 | [?] Thoi thóp |
-| **SC-114** | 8s | Low Action Đòn Bẩy Đá | Heracles, Nora, Body | **PREV_LAST_FRAME** (Loại 1) | Mồ hôi nhỏ xuống đá | Heracles cắm xà beng sắt ghì toàn lực nâng tảng đá vôi 8 tạ lên khỏi miệng hố | Heracles: *"Take his wrists, Nora! I cannot hold this slab more than five heartbeats!"* | 13 | [!] Cứu người |
-| **SC-115** | 8s | MS Kéo Theron Lên Bờ | Nora, Body, Theron | **STORYBOARD 2×2** (0/3/6/8s) | Ánh sáng rọi toàn thân | Nora nắm chặt hai cổ tay gầy kéo người sống sót trườn ra khỏi hốc đá sụt | *(0 từ — Tiếng đá sập rầm xuống hố ngay sau khi Theron thoát ra ngoài)* | 0 | [++] Thoát chết |
-| **SC-116** | 8s | MCU Cận Cảnh Theron | Theron | **PREV_LAST_FRAME** (Loại 1) | Bụi vôi bám râu bạc | Theron nằm thở dốc, râu tóc bạc xơ xác, đôi mắt trũng sâu mệt mỏi nhưng cực kỳ sắc sảo | Theron: *"Water... salt-free water... twenty days trapped in the throat of this damned island..."* | 13 | [+] Tỉnh trí |
-| **SC-117** | 8s | MCU Đưa Túi Nước | Nora, Body, Theron | **PREV_LAST_FRAME** (Loại 1) | Bầu nước da thú | Nora trao túi nước ngọt cho lão; Theron uống ừng ực rồi nhìn thấy tấm bản đồ trên tay Nora | Nora: *"Drink slow, elder. Who are you, and how did you survive these gorges?"* | 13 | [0] Tiếp cận |
-| **SC-118** | 6s | CU Theron Nhìn Bản Đồ | Theron | **PREV_LAST_FRAME** (Loại 1) | Mắt mở to kinh hoàng | Ánh mắt Theron dán chặt vào các đường mực vàng kim trên tấm da cừu, giật mình lắc đầu | Theron: *"Throw that skin into the sea, girl! It is not a chart of salvation!"* | 14 | [!] Cảnh tỉnh |
-| **SC-119** | 6s | MCU Giải Mã Bẫy Cây Vàng | Theron, Nora | **STORYBOARD 2×2** (0/2/4/6s) | Mặt đá vôi xám lạnh | Theron nắm chặt cổ tay Nora, giọng khàn đặc nhưng rành rọt từng chữ | Theron: *"That parchment doesn't show a passage! It shows the bait! The tree feeds on fools who follow it blindly!"* | 19 | [!] Giác ngộ |
-| **SC-120** | 6s | Low-Angle Bộ Tứ Đồng Tâm | Theron, Nora, Castor, Heracles | **STORYBOARD 2×2** (0/2/4/6s) | Gió lùa bụi vôi trắng | Theron nhặt hòn đá nhọn vạch sơ đồ mê cung xuống đất; Nora gật đầu chấp thuận chuyển quyền dẫn đường | Theron: *"Follow the living moss, not the golden ink. Walk soft, or the six-legged stone beast wakes."* | 16 | [++] Khởi động Hồi 2B |
+| Clip | Dur | Shot | Ref | SF | Sáng | Hình | Thoại | Từ | Việc | Beat | Dựng |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| **SC-85** | 8s | MCU Tranh Luận Bế Tắc | Nora, Nora Body Seafarer, Castor | G | Bóng râm hẻm đá xám | Hẻm đá cụt, Castor chỉ vào vách đá karst chặn đường | Castor: "Look at this blind limestone wall, Nora! The path is blocked, yet your chart claims this is the only way forward!" | 22 | Tranh cãi trước hẻm cụt | Hook [!] | 7.0s |
+| **SC-86** | 6s | CU Nora Kiên Định | Nora, Nora Body Seafarer | P | Ánh sáng le lói từ trên đỉnh | Nora soi tấm bản đồ phát quang, bảo vệ niềm tin | Nora: "It does not need to look like a road. Trust the ancient salt ink!" | 15 | Bảo vệ niềm tin bản đồ | [0] | 5.0s |
+| **SC-87** | 8s | Dynamic Sound Cut Gián Đoạn | Hẻm đá karst | G | Bụi vôi rơi nhẹ | Tiếng kêu cứu nghẹn ngào từ khe đá sụt làm ngắt quãng tranh cãi | (0 từ — Sonic Isolation, tiếng kêu cứu khàn đặc và tiếng đá dăm lăn) | 0 | Tiếng kêu cứu trong kẹt đá | [!] | 7.0s |
+| **SC-88** | 6s | MCU Nora Ra Lệnh Cứu Người | Nora, Nora Body Seafarer, Castor | P | Nora quay phắt lại | Nora ra lệnh dừng tranh cãi để tìm người kêu cứu | Nora: "Hold your tongues! That was a living human voice crying beneath the stone scree!" | 15 | Ra lệnh dừng tranh cãi | [+] | 5.0s |
+| **SC-89** | 8s | MS Khe Đá Sụt Lở | Castor, Theron | G | Đèn bão rọi hốc tối | Tiếp cận khe nứt hẹp, phát hiện Theron bị kẹt dưới đá tảng | Castor: "Down here in the dark crevice! An old hermit pinned under fallen boulders, shivering with white lime dust on his beard!" | 22 | Phát hiện Theron bị kẹt | [+] | 7.0s |
+| **SC-90** | 10s | Low-Angle Heracles Nạy Đá | Heracles, Theron | G | Cơ bắp gân guốc căng cứng | Heracles dùng đòn bẩy sắt nạy tảng đá hoa cương cứu Theron | Heracles: "Stand clear while I get the iron lever under this slab! Heave with everything, boy, before the ceiling crumbles down upon his skull!" | 24 | Nạy đá giải cứu | [++] | 9.0s |
+| **SC-91** | 6s | MCU Kéo Theron Lên | Theron, Nora, Heracles | P | Bụi đá trắng bám đầy người | Kéo Theron lên khỏi khe đá, thở dốc và run rẩy | (0 từ — im lặng, tiếng thở dốc nghẹn ngào của lão già thoát nạn) | 0 | Kéo Theron thoát hiểm | [+] | 5.0s |
+| **SC-92** | 8s | MS Trao Bình Nước Cho Theron | Nora, Nora Body Seafarer, Theron | P | Ánh đèn bão ấm áp | Nora đưa túi nước da dê cho Theron uống từng ngụm nhỏ | Nora: "Drink slow, elder. You are safe among Aegean sailors. Who are you, and how long have you survived here?" | 20 | Cho nước và thẩm vấn | [0] | 7.0s |
+| **SC-93** | 8s | CU Theron Kinh Hoàng Thấy Bản Đồ | Theron, Bản đồ vàng | G | Mắt trợn trừng kinh hãi | Theron nhìn thấy tấm bản đồ da cừu phát quang trên tay Nora và run rẩy kinh hoàng | Theron: "That parchment... glowing gold serpent lines... by the ancient gods, put it away before the karst beast smells our heat!" | 21 | Nhận diện bản đồ ma thuật | RH [!] | 7.0s |
+| **SC-94** | 10s | MS Theron Vạch Trần Chân Tướng | Theron, Nora, Nora Body Seafarer, Castor | P | Ánh sáng lân tinh hắt bóng | Theron vạch trần bí mật: Bản đồ không phải kim chỉ nam, nó là mồi nhử của Cây Vàng! | Theron: "You think you hold a sacred chart! That parchment is no guide—it is a lethal lure crafted by the Golden Tree to feed its roots!" | 27 | Vạch trần bản đồ là mồi nhử | [!!!] | 9.0s |
+| **SC-95** | 6s | CU Castor Bàng Hoàng | Castor | G | Gương mặt đanh lại giận dữ | Castor và Heracles bàng hoàng trước sự thật tàn nhẫn | Castor: "A lure? We bled through crushing rocks just to walk into a baited rat-trap?" | 15 | Vỡ mộng lòng tham | [-] | 5.0s |
+| **SC-96** | 6s | Low-Angle Nora Quyết Đoán | Nora, Nora Body Seafarer, Theron | P | Nora nâng Theron dậy | Nora trao quyền dẫn đường cho Theron qua mê cung ngầm | Nora: "Lead us through the blind fissures, Theron. We will see this legendary sanctuary alive!" | 15 | Bước ngoặt trao quyền dẫn đường | [++] | 5.0s |
 
 ---
 
-### TỔNG KẾT BƯỚC NGOẶT MIDPOINT 15:18:
-* **Thời lượng:** Đúng 90 giây (từ 15:00 đến 16:30).
-* **Số phân cảnh:** 12 scenes hoàn chỉnh (SC-109 đến SC-120).
-* **Ý nghĩa kịch bản:** Khớp 100% mốc 15:18 của nguyên tác YouTube:
-  - Cắt đứt sự tôn sùng mù quáng vào công cụ ma thuật (tấm bản đồ da cừu).
-  - Khẳng định giá trị nhân văn cốt lõi của nữ thuyền trưởng Nora: rẽ hướng cứu đồng loại thay vì chạy theo lòng tham.
-  - Chuyển giao vai trò dẫn đường sang Theron — người nắm giữ chìa khóa địa chất sinh tồn.
+### TỔNG KẾT BƯỚC NGOẶT TRUNG TÂM (ĐÃ CHUẨN HÓA 21 PHÚT):
+* **Thời lượng:** Đúng **90.0 giây (1 phút 30 giây: từ 11:30 đến 13:00)**.
+* **Số phân cảnh:** Đúng **12 scenes (SC-85 đến SC-96)**.
+* **Số lần sinh video:** 12 = 5×8s · 2×10s · 5×6s.
+* **Tuân thủ thoại Rule 49:** 100% các câu thoại nằm trong dải chuẩn (6s: 14–15 từ; 8s: 21–22 từ; 10s: 25–26 từ; 0 từ có nhãn Sonic Isolation/im lặng rõ ràng).
+* **Khung neo:** Phân bổ chặt chẽ giữa Storyboard 2×2 (`G`) và Prev Last Frame (`P`).

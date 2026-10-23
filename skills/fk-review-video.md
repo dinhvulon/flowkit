@@ -44,6 +44,23 @@ For each scene, verify `${ori}_video_status = COMPLETED` (orientation auto-detec
 
 **ABORT** if any scene is missing a completed video — tell user to run `/fk-gen-videos` first.
 
+## Step 2.5: Mandatory 24-Frame Extraction with ffmpeg (Rule 73 — User Lock 23/10/2026)
+
+MỌI lần trích xuất frame để review video (`/fk-review-video`, `/fk-film`, scorecard, đưa lên Review Board), Agent BẮT BUỘC dùng `ffmpeg` trích xuất **ĐÚNG 24 FRAMES** phân bổ đều theo toàn bộ thời lượng clip. CẤM trích xuất ít hơn (như 4-8 frames) vì sẽ bỏ sót các lỗi chuyển động, vỡ giải phẫu, hoặc đảo ngược động tác.
+
+1. **Trích xuất đúng 24 frames:**
+   ```bash
+   mkdir -p "<output_dir>/review/<scene_id>_24frames"
+   ffmpeg -y -i "${OUTDIR}/scenes/scene_${idx}_${sid}.mp4" -vf "fps=24/<duration_seconds>" -q:v 2 "<output_dir>/review/<scene_id>_24frames/frame_%02d.jpg"
+   ```
+   *(Clip 10s: `fps=24/10 = 2.4`; Clip 8s: `fps=24/8 = 3.0`; Clip 6s: `fps=24/6 = 4.0`; Clip 4s: `fps=24/4 = 6.0`)*
+
+2. **Tạo Contact Sheet 6×4 (6 cột × 4 hàng):**
+   ```bash
+   ffmpeg -y -pattern_type glob -i "<output_dir>/review/<scene_id>_24frames/frame_*.jpg" -vf "tile=6x4" -q:v 2 "<output_dir>/review/<scene_id>_contact_sheet_24frames.jpg"
+   ```
+   Tấm Contact Sheet 6×4 này bao quát toàn bộ 24 khoảnh khắc theo dòng thời gian từ 0.0s đến kết thúc để Agent vision và User kiểm tra toàn diện.
+
 ## Step 3a: Self review (`--by muse`)
 
 You — the agent running this skill (Muse, Codex, or agy) — score the sheets

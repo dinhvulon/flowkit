@@ -32,21 +32,24 @@ Filter to entities that do NOT yet have `media_id` (UUID format `xxxxxxxx-xxxx-x
 
 **GENERATE vs REGENERATE:** `GENERATE_CHARACTER_IMAGE` skips if `media_id` already exists. Use `REGENERATE_CHARACTER_IMAGE` to force a fresh generation (clears existing image first).
 
-## Step 2.5: Mandatory Reference Design Check via `/fk-character-design` (Rule 58)
+## Step 2.5: Mandatory Reference Design Check via `/fk-character-design` (Rule 58 & Rule 72)
 
 > [!IMPORTANT]
-> **Enforce `/fk-character-design` for All Characters & Key Creatures:**
+> **Enforce `/fk-character-design` for All Characters & Key Creatures (Rule 72):**
 > Trước khi gửi batch submit `GENERATE_CHARACTER_IMAGE`, BẮT BUỘC kiểm tra `image_prompt` của các thực thể sống (Nhân vật, `<Vlogger> Body`, Sinh vật/Quái thú chủ chốt):
 > 1. **TUYỆT ĐỐI KHÔNG DÙNG ẢNH ĐƠN 1 GÓC** cho nhân vật hoặc sinh vật chủ chốt (như Triceratops Bull, T-Rex, Mammoth). Thiếu góc nhìn đối diện sẽ gây lỗi nghiêm trọng (Lật sừng, mất dị tật, trôi giải phẫu).
-> 2. **Chuẩn 16:9 Turnaround Sheet:**
->    - *Nhân vật*: 4 góc chuẩn (Full-body front view, Full-body 3/4, Full-body side profile, Close-up face/hair). `<Vlogger> Body` bắt buộc đã mặc hoàn chỉnh outfit (Rule 46).
->    - *Sinh vật/Quái thú*: 3 panel chuẩn (Panel 1: 3/4 góc trái thể hiện rõ đặc điểm bên trái; Panel 2: 3/4 góc phải thể hiện rõ góc đối diện và đặc điểm bất đối xứng; Panel 3: Cận cảnh chính diện đầu sọ khóa đối xứng, rãnh máu nứt nẻ, vi mô biểu bì và keratin).
+> 2. **Chuẩn 16:9 Turnaround Sheet 35mm Film Still (Live-Action Casting / Practical SFX):**
+>    - *Nhân vật*: 4 góc chuẩn (Full-body front view, Full-body 3/4, Full-body side profile, Close-up face/hair). Bắt buộc chỉ định diễn viên người thật trong phòng casting studio 35mm (`Authentic 35mm film still photograph, portrayed by an actual real-life actor in a film casting studio on neutral dark backdrop, shot on Cooke S4 prime lens, natural skin texture with visible pores`). `<Vlogger> Body` bắt buộc đã mặc hoàn chỉnh outfit (Rule 46).
+>    - *Sinh vật/Quái thú*: 3 panel chuẩn (Panel 1: 3/4 góc trái thể hiện rõ đặc điểm bên trái; Panel 2: 3/4 góc phải thể hiện rõ góc đối diện và đặc điểm bất đối xứng; Panel 3: Cận cảnh chính diện đầu sọ). Bắt buộc chỉ định mô hình animatronic practical special effects thật trên trường quay (`Photographed as an authentic practical animatronic creature / physical practical special effects model on 35mm film set`).
 > 3. **Khóa 5 lớp DNA Anchor từ `/fk-character-design`:**
 >    - Proportion Lock (chiều cao, tỷ lệ đầu/thân/chân, baseline).
 >    - Bone & Face Structure Layer (cấu trúc sọ, hàm, hốc mắt, diềm cổ, gai nón).
->    - Skin & Micro-Texture Layer (vảy đa giác, keratin phong hóa theo Rule 57).
+>    - Skin & Micro-Texture Layer (vảy đa giác, keratin phong hóa theo Rule 57, lỗ chân lông tự nhiên, không làm đẹp filter).
 >    - Permanent Prop / Anatomy Geometry (sừng gãy bên nào, sẹo ở đâu, phụ kiện đeo bên nào).
 >    - Forbidden Drift & Anti-Smoke Lock (cấm lật sừng, cấm khói thở trắng đặc, cấm nhựa 3D CGI).
+> 4. **CẤM TRIỆT ĐỂ TỪ KHÓA 2D / SKETCH & BẮT BUỘC KHỐI PHỦ ĐỊNH:**
+>    - TUYỆT ĐỐI CẤM các từ kích hoạt vẽ phác thảo 2D: `study`, `character study`, `concept art`, `sketch`, `sketchbook`, `drawing`, `illustration`, `line art`, `anime`, `cartoon`, `CGI render`.
+>    - BẮT BUỘC kết thúc prompt bằng: `Strictly NO 2D drawing, NO sketch, NO line art, NO illustration, NO concept art, NO anime, NO CGI render, NOT a plastic model`.
 > 
 > Nếu `image_prompt` của entity chưa đạt chuẩn trên, BẮT BUỘC chạy `/fk-character-design` để viết lại prompt và gọi `PATCH /api/characters/<CID>` trước khi sinh ảnh!
 

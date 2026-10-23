@@ -1,0 +1,1936 @@
+[
+  {
+    "clip_id": "SC-01",
+    "scene_name": "Thiết lập thế giới biển đêm mù sương",
+    "duration": 10,
+    "aspect_ratio": "16:9",
+    "refs": [
+      "Nora",
+      "Nora Body Seafarer",
+      "Castor"
+    ],
+    "sf_type": "GENERATE_IMAGE",
+    "camera": {
+      "viewpoint": "third-person cinematic camera; the camera itself is never seen",
+      "shot_size": "Multi-shot matching SC-01_storyboard_clean.jpg",
+      "description": "Multi-shot sequence with crisp hard cuts: Shot 1 (0-3s) -> Hard Cut at 3.0s -> Shot 2 (3-7s) -> Hard Cut at 7.0s -> Shot 3 (7-10s). 35mm Cooke S4 prime lens with deep focus (f/8 aperture), entire frame sharp."
+    },
+    "setting": "Location: open Aegean sea shrouded in thick ocean haze. Light: warm amber glow from practical brass lanterns swinging gently from the galleon rigging; deep chiaroscuro darkness on still glassy black water; flat natural overcast night atmosphere.",
+    "characters": [
+      {
+        "name": "Nora",
+        "visual_lock": "FACE LOCK: Nora's face is exactly the face in {{ref:Nora}}, kept 1:1. BODY and OUTFIT LOCK: her build and weathered navy tunic brigandine armor are exactly as in {{ref:Nora Body Seafarer}}.",
+        "state": "Standing motionless at the prow railing, scanning the dense fog ahead in Shot 2 (3-7s). Off-screen in Shot 1 and Shot 3."
+      },
+      {
+        "name": "Castor",
+        "visual_lock": "FACE LOCK: Castor's face is exactly the face in {{ref:Castor}}, kept 1:1. BODY and OUTFIT LOCK: his agile athletic build and boiled leather cuirass are exactly as in {{ref:Castor}}.",
+        "state": "Stationed on the mid-deck alone, stepping forward and leaning over the rail in Shot 3 (7-10s). Off-screen in Shot 1 and Shot 2."
+      }
+    ],
+    "timeline_action": {
+      "0-3s": "Matching Panel 1 (Top-Left) of {{media:e630cce1-7f75-4ae2-b2ed-1f2aa461d60d|SC-01_storyboard_clean.jpg}} (0-3s): [EWS] Exterior extreme wide shot of the dark wooden pirate galleon gliding forward silently across the glassy black Aegean sea shrouded in heavy ocean haze; brass lanterns in rigging cast warm amber glow on black water.",
+      "3-7s": "At second 3.0, a crisp hard cut matching Panel 2 (Top-Right) of {{media:e630cce1-7f75-4ae2-b2ed-1f2aa461d60d|SC-01_storyboard_clean.jpg}} (3-7s): [MS] Medium shot at the prow railing. SPATIAL LOCK: The wet wooden deck planks are on the LEFT side of the frame and the curved timber railing with a glowing brass lantern is on the RIGHT side overlooking the foggy sea. Captain Nora alone in frame stands motionless on the wooden deck on the left, hands resting on the timber rail peering right into the fog; her braided hair rests steady on her shoulders.",
+      "7-10s": "At second 7.0, a crisp hard cut matching Panel 3 (Bottom-Left) of {{media:e630cce1-7f75-4ae2-b2ed-1f2aa461d60d|SC-01_storyboard_clean.jpg}} (7-10s): [MS] Medium shot on the wooden mid-deck. SPATIAL LOCK: The wet wooden deck planks, oak barrel, and companionway stairs are on the LEFT side of the frame; the timber gunwale railing runs along the RIGHT side, with the dark open sea strictly on the far RIGHT outside the rail. Castor with arrow quiver on his back stands firmly INSIDE the ship on the wooden deck planks on the left, steps forward, and leans both hands onto the timber rail looking right out over the sea. Strictly Castor alone in this shot; Nora is completely off-screen and never appears. Castor is strictly inside the wooden deck on the left, NEVER on the exterior ocean side of the railing."
+    },
+    "speech": {
+      "speaker": [],
+      "voices": {},
+      "delivery": "no dialogue; atmospheric ambient sea silence and distant creaking timbers",
+      "dialogue": []
+    },
+    "dramatic_craft": {
+      "beat": "Hook [0]: Establishing world and ominous calm before encountering the supernatural harbinger.",
+      "value_turn": "Neutral (0) -> Suspense (+): The calm ocean hides dark ancient mysteries.",
+      "subtext": "The seafarers are hunting for treasure in perilous forbidden waters.",
+      "prop_and_detail": "Brass lantern swaying on tarred hemp rope, cold ocean haze condensing on timber gunwale."
+    },
+    "audio": "Ambient oceanic silence, soft gentle lapping of black water against the wooden hull, distant groaning oak timbers; strictly no dialogue (Sonic Isolation).",
+    "physics": "Heavy galleon displacement, gentle water displacement ripples radiating outward, tarred ropes flexing under slight pendulum swing.",
+    "negative_constraints": [
+      "No subtitles, no captions, no on-frame text, no logos, no watermarks.",
+      "The video is full-frame shots only: never a grid, never panels, never split screen, never black dividing lines; strictly NO duplicate characters, strictly NO multiple Nora, Castor, no ghost figures, no cloning; strictly NO character standing outside the ship hull or on the exterior water/ocean side of the railing, no 180-degree axis fusion between panels; crisp hard cuts at second 3.0 and second 7.0, no camera blending, no crossfades.",
+      "ANTI-CGI LOCK: real documentary footage, not a 3D render, not a video game, not CGI fire, no plastic skin.",
+      "No breath vapor and no white steam from anyone's mouth; no god rays, no volumetric beams, no magical sunbeams.",
+      "No shallow depth of field, no blurry background, no bokeh (f/8 aperture throughout).",
+      "Separate bodies never merge; natural hands with five fingers; no extra limbs."
+    ],
+    "image_prompt": "Cinematic master shot, 16:9 aspect ratio, 35mm film grain. A dark wooden Greek galleon cutting slowly through a dense sea-fog on black glassy water under an overcast night sky. Warm amber glow from practical brass lanterns hanging from the rigging illuminates {{ref:Nora}} wearing her complete costume as in {{ref:Nora Body Seafarer}} standing vigilant at the prow, while {{ref:Castor}} watches from the deck rail. Deep focus (f/8 aperture), entire frame sharp, dark chiaroscuro, strictly NO artificial volumetric lighting, NO 3D CGI sheen, NO modern devices."
+  },
+  {
+    "clip_id": "SC-02",
+    "scene_name": "Phát hiện chiếc thuyền đánh cá nhỏ",
+    "duration": 8,
+    "aspect_ratio": "16:9",
+    "refs": [
+      "Nora",
+      "Nora Body Seafarer",
+      "Castor",
+      "Omen Fish",
+      "Old Fisherman"
+    ],
+    "sf_type": "GENERATE_IMAGE",
+    "camera": {
+      "viewpoint": "third-person cinematic camera; the camera itself is never seen",
+      "shot_size": "Multi-shot matching SC-02_storyboard_clean.jpg",
+      "description": "Multi-shot sequence with crisp 100% full-frame hard cuts between distinct >90-degree camera angles: Shot 1 (0-3s, Panel 1 Deck WS looking out at sea) -> Hard Cut at 3.0s -> Shot 2 (3-6s, Panel 2 Reverse Frontal MS looking inward at Castor & Nora against wooden mast) -> Hard Cut at 6.0s -> Shot 3 (6-8s, Panel 3 High-Angle Overhead MS into skiff). 35mm Cooke S4 prime lens with deep focus (f/8 aperture), entire frame sharp."
+    },
+    "setting": "Location: Aegean open sea in heavy fog. Light: warm practical lantern light from the galleon rail casting long reflections across the black surface toward a drifting wooden skiff shrouded in faint emerald bioluminescent haze; flat overcast night.",
+    "characters": [
+      {
+        "name": "Castor",
+        "visual_lock": "FACE LOCK: Castor's face is exactly the face in {{ref:Castor}}, kept 1:1. BODY and OUTFIT LOCK: his boiled leather cuirass and athletic build are exactly as in {{ref:Castor}}.",
+        "state": "Pointing out over the rail and shouting an urgent warning in a deep male voice."
+      },
+      {
+        "name": "Nora",
+        "visual_lock": "FACE LOCK: Nora's face is exactly the face in {{ref:Nora}}, kept 1:1. BODY and OUTFIT LOCK: her build and navy seafarer brigandine are exactly as in {{ref:Nora Body Seafarer}}.",
+        "state": "Standing beside Castor at the rail in Shot 2 holding a warm brass hurricane lantern."
+      },
+      {
+        "name": "Omen Fish",
+        "visual_lock": "CREATURE ANATOMY, SCALE & WEIGHT LOCK: The Omen Fish is 1:1 identical to {{ref:Omen Fish}}: a massive 1.7m-1.9m (1.8-meter) long, 80 kg prehistoric armored coelacanth with thick 45cm girth, charcoal-black polygonal scale plates, spiny lobed fins, grotesque needle-fanged jaw, milky cataract eyes, and cyan-emerald bioluminescent ventral scales.",
+        "state": "Massive 1.8m, 80kg armored coelacanth carcass lying heavy and full-length across the skiff floorboards (never a small fish or handheld bundle)."
+      }
+    ],
+    "timeline_action": {
+      "0-3s": "Matching Panel 1 (Top-Left) of {{media:973e4901-12ed-48d7-baf8-5271af0e677c|SC-02_storyboard_clean.jpg}} (0-3s): [WS] Wide shot with the wooden galleon deck on the LEFT and the foggy dark sea on the RIGHT. From second 0, Castor stands firmly INSIDE on the wooden deck on the left behind the single wooden railing, pointing his right arm down right toward the wooden skiff containing the massive 1.8m glowing Omen Fish and the Old Fisherman; Castor says \"Look dead ahead through the sea-haze, Captain! A wooden skiff is drifting into our bow!\" (no subtitles).",
+      "3-6s": "At second 3.0, a crisp 100% full-frame hard cut to a 120-degree reverse camera angle matching Panel 2 (Top-Right) of {{media:973e4901-12ed-48d7-baf8-5271af0e677c|SC-02_storyboard_clean.jpg}} (3-6s): [MS] Frontal medium two-shot looking INWARD from the rail toward the ship's wooden mast and rigging in the background (strictly NO ocean and NO skiff in this shot; the entire frame and background cut 100% from Shot 1). Castor on the left finishes his spoken line cleanly by second 5.0 while Captain Nora stands beside him on the right behind the single straight horizontal foreground wooden railing, holding a warm brass hurricane lantern as both look down over the rail.",
+      "6-8s": "At second 6.0, a crisp 100% full-frame hard cut to a 90-degree high-angle overhead shot matching Panel 3 (Bottom-Left) of {{media:973e4901-12ed-48d7-baf8-5271af0e677c|SC-02_storyboard_clean.jpg}} (6-8s): [MS] Overhead medium shot looking directly down into the wooden skiff on the water (strictly NO ship deck or railing in this shot). SPATIAL LOCK: Inside the wooden skiff, the colossal 1.8-meter-long, 80kg armored Omen Fish lies stretched full-length across the wet floorboards on the LEFT with its emerald belly glowing, while the terrified Old Fisherman cowers in the stern on the RIGHT pressing both trembling hands against his cheeks. Strictly the Old Fisherman and the 1.8m Omen Fish inside the skiff in this shot; Castor and Nora are off-screen above."
+    },
+    "speech": {
+      "speaker": [
+        "Castor"
+      ],
+      "voices": {
+        "Castor": "fenrir"
+      },
+      "delivery": "urgent maritime lookout command, deep male voice, sharp and clipped over the sound of water",
+      "dialogue": [
+        {
+          "t": "0-5s",
+          "speaker": "Castor",
+          "line": "Look dead ahead through the sea-haze, Captain! A wooden skiff is drifting into our bow!"
+        }
+      ]
+    },
+    "dramatic_craft": {
+      "beat": "[+]: Sighting an anomalous vessel in forbidden waters.",
+      "value_turn": "Stillness (0) -> Intrigue (+): An abandoned skiff carrying an unknown harbinger appears.",
+      "subtext": "Nothing drifts in these deep waters by accident; danger is near.",
+      "prop_and_detail": "Carved wooden skiff gunwale, wet hemp rope trailing in the water."
+    },
+    "audio": "Castor's sharp clear voice on top; water slapping the galleon bow; distant cold wind through shrouds.",
+    "physics": "Small skiff rocking erratically in the wake of the galleon, water spray curling off the oak hull. SCALE & MASS LOCK (CRITICAL): The Omen Fish ({{ref:Omen Fish}}) is a colossal prehistoric armored coelacanth strictly 1.7 to 1.9 meters (1.8m) long and 80 kg in heavy biological mass, as long as a full-grown adult human with a thick 45cm body girth, charcoal-black polygonal armor scale plates, spiny lobed fins, grotesque underbite jaw with needle fangs, milky blind cataract eyes, and cyan-emerald bioluminescent belly scales; it spans the entire length of the skiff floorboards—strictly NEVER a small 50cm-100cm fish, NEVER a handheld parcel, and NO external metal tubes stuck to its outer skin. SINGLE BARRIER LOCK: Strictly ONE single continuous wooden gunwale railing on the galleon; never two parallel railings, never a split railing.",
+    "negative_constraints": [
+      "No subtitles, no captions, no on-frame text, no logos, no watermarks.",
+      "The video is full-frame shots only: never a grid, never panels, never split screen, never black dividing lines; strictly NO half-frame cuts where the left side stays frozen while the right side changes; strictly NO two parallel wooden railings, NO split or duplicated ship railing down the middle of the frame; strictly NO duplicate characters, strictly NO multiple Nora, Castor, no ghost figures, no cloning; strictly NO character standing outside the ship hull or between two railings, no 180-degree axis fusion between panels; crisp full-frame hard cuts at second 4.0 and second 6.0, no camera blending, no crossfades; strictly NO small fish under 1.7 meters, NO handheld fish bundle, NO external metal tube outside the fish scales.",
+      "ANTI-CGI LOCK: real documentary footage, not a 3D render, not a video game, not CGI fire, no plastic skin.",
+      "No breath vapor and no white steam from anyone's mouth; no god rays, no volumetric beams, no magical sunbeams.",
+      "No shallow depth of field, no blurry background, no bokeh (f/8 aperture throughout).",
+      "Separate bodies never merge; natural hands with five fingers; no extra limbs."
+    ],
+    "image_prompt": "A film storyboard sheet, 16:9, made of FOUR photographic panels in a tight 2 by 2 grid, separated only by thin black lines; each panel is a 16:9 frame; no text, no captions. All four panels are cinematic feature-film stills of Location: open Aegean sea shrouded in heavy night fog beside the galleon hull; featuring {{media:f9f67999-685f-4d61-9c74-2ed16c6c393c|omen_fish_clean.jpg}} (prehistoric armored coelacanth: strictly 1.8 meters long [1.7m-1.9m] and 80 kg heavy, as long as an adult man with thick 45cm girth, charcoal-black polygonal scale plates, spiny lobed fins, grotesque needle-fanged head, cyan-emerald bioluminescent belly), {{media:f05a10db-4548-4d19-927e-39544d9718bd|old_fisherman_clean.jpg}} (face 1:1, ragged burlap), {{media:62e117f8-0af7-484e-90a8-f79927105746|nora_clean.jpg}} (face 1:1, seafarer brigandine), {{media:3152a235-af4f-462b-a78e-02551f826e41|castor_clean.jpg}} (face 1:1, leather cuirass).\nTOP-LEFT PANEL, second 0: [WS] Castor standing inside the wooden galleon deck on the left behind ONE single wooden railing, pointing down right toward the wooden skiff drifting in the sea fog; inside the skiff, the massive 1.8-meter-long, 80kg armored Coelacanth fish lies stretched full-length across the bottom floorboards, its belly glowing emerald; the Old Fisherman sits huddled in the stern beside the giant 1.8m fish.\nTOP-RIGHT PANEL, second 3: [MS] 120-degree reverse-angle frontal medium two-shot looking INWARD from outside the rail toward the ship's wooden mast and rigging in the background (strictly NO ocean and NO skiff in this panel, completely different camera angle from Top-Left): Castor and Captain Nora stand side-by-side behind ONE single straight horizontal wooden railing in the lower foreground; Castor shouts an urgent warning while Nora holds a warm brass hurricane lantern casting soft even ambient light on their faces (strictly NO spotlight cone, NO flashlight beam), both looking downward.\nBOTTOM-LEFT PANEL, second 6: [MS] 90-degree high-angle overhead shot looking directly down into the wooden skiff on the water (strictly NO ship deck or railing in this panel): the massive 1.8-meter-long, 80kg Coelacanth fish lies stretched out across the entire wet floorboards from bow to stern, its heavy armored head and glowing emerald belly filling the bottom of the boat; the Old Fisherman cowers in the stern beside the giant 1.8m fish, hands pressed against his face in terror.\nBOTTOM-RIGHT PANEL, second 8: [WS] Low water-level wide shot outside the towering dark oak hull of the galleon: the wooden skiff drifts close under the galleon flank with the giant 1.8-meter-long, 80kg glowing Coelacanth and huddled Old Fisherman clearly visible lying across the boat.\ncinematic feature-film look: shot on ARRI Alexa with Cooke S4 prime lenses, fine 35mm film grain, deep focus (f/8), motivated practical light, realistic physics, fish carcass lying heavy on its side with real 80kg dead weight and wet glistening sea-slime (strictly NOT propped upright on its fins like a plastic toy), strictly NO volumetric spotlight cones or flashlight beams, strictly NOT a 3D render, NOT CGI, zero watermark, zero logos."
+  },
+  {
+    "clip_id": "SC-03",
+    "scene_name": "Nora ra lệnh chuẩn bị bắt giữ",
+    "duration": 6,
+    "aspect_ratio": "16:9",
+    "refs": [
+      "Nora",
+      "Nora Body Seafarer"
+    ],
+    "sf_type": "PREV_LAST_FRAME",
+    "camera": {
+      "viewpoint": "third-person cinematic camera; the camera itself is never seen",
+      "shot_size": "MS",
+      "description": "Low-angle medium shot looking up at Captain Nora by the timber rail on 35mm Cooke S4 lens, deep focus (f/8), sturdy authoritative composition."
+    },
+    "setting": "Location: starboard gunwale of the pirate galleon. Light: warm practical lantern light from overhead yardarm illuminating Nora's determined profile; deep night ocean in background.",
+    "characters": [
+      {
+        "name": "Nora",
+        "visual_lock": "FACE LOCK: Nora's face is exactly the face in {{ref:Nora}}, kept 1:1. BODY and OUTFIT LOCK: her build and navy brigandine armor are exactly as in {{ref:Nora Body Seafarer}}.",
+        "state": "Holding an antique bronze spyglass at waist level, stepping firmly forward."
+      }
+    ],
+    "timeline_action": {
+      "0-2s": "From the very first frame at second 0, Nora steps firmly to the gunwale and speaks immediately, her voice calm, commanding and authoritative: Nora says \"No oars moving. Hold our heading and ready the grappling irons.\" (no subtitles).",
+      "2-4s": "Her command finishes cleanly by second 4; she lowers the brass spyglass against her leather sword belt with a decisive snap of her wrist.",
+      "4-6s": "She holds her steady commanding gaze fixed on the water below, both boots planted firmly on the oak deck timbers. SPATIAL LOCK: All characters remain firmly INSIDE on the solid wooden deck planks, NEVER on the exterior ocean side of the railing."
+    },
+    "speech": {
+      "speaker": [
+        "Nora"
+      ],
+      "voices": {
+        "Nora": "kore"
+      },
+      "delivery": "calm, firm captain's command, authoritative and clipped",
+      "dialogue": [
+        {
+          "t": "0-4s",
+          "speaker": "Nora",
+          "line": "No oars moving. Hold our heading and ready the grappling irons."
+        }
+      ]
+    },
+    "dramatic_craft": {
+      "beat": "[0]: Directing operational capture with veteran composure.",
+      "value_turn": "Observation (0) -> Tactical action (+): Establishing operational control.",
+      "subtext": "Nora takes no chances with drifting hulks on the Aegean.",
+      "prop_and_detail": "Heavy bronze spyglass with oxidized patina, riveted leather sword belt."
+    },
+    "audio": "Nora's clear resonant captain's voice prominent; creak of ship's wheel; wet wind whipping cloaks.",
+    "physics": "Solid footfall on oak planking, leather baldric swaying with ship's roll.",
+    "negative_constraints": [
+      "No subtitles, no captions, no on-frame text, no logos, no watermarks.",
+      "Continuous direct scene sequence: strictly NO duplicate characters, strictly NO multiple Nora, strictly NO character standing outside the ship hull or on the exterior water/ocean side of the railing, no ghost figures, no cloning, separate bodies never merge, no split screen.",
+      "ANTI-CGI LOCK: real documentary footage, not a 3D render, not a video game, not CGI fire, no plastic skin.",
+      "No breath vapor and no white steam from anyone's mouth; no god rays, no volumetric beams, no magical sunbeams.",
+      "No shallow depth of field, no blurry background, no bokeh (f/8 aperture throughout).",
+      "Separate bodies never merge; natural hands with five fingers; no extra limbs."
+    ]
+  },
+  {
+    "clip_id": "SC-04",
+    "scene_name": "Phóng móc neo chuẩn xác",
+    "duration": 6,
+    "aspect_ratio": "16:9",
+    "refs": [
+      "Castor",
+      "Heracles"
+    ],
+    "sf_type": "GENERATE_IMAGE",
+    "camera": {
+      "viewpoint": "third-person cinematic camera; the camera itself is never seen",
+      "shot_size": "Multi-shot matching SC-04_storyboard_clean.jpg",
+      "description": "Multi-shot sequence with crisp hard cuts: Shot 1 (0-2s) -> Hard Cut at 2.0s -> Shot 2 (2-4s) -> Hard Cut at 4.0s -> Shot 3 (4-6s). 35mm Cooke S4 prime lens with deep focus (f/8 aperture), entire frame sharp."
+    },
+    "setting": "Location: galleon starboard bulwark. Light: side-raking amber lantern light casting deep muscular shadows across arms and ropes; dark misty background.",
+    "characters": [
+      {
+        "name": "Castor",
+        "visual_lock": "FACE LOCK: Castor's face is exactly the face in {{ref:Castor}}, kept 1:1. BODY and OUTFIT LOCK: his agile athletic build and leather cuirass are exactly as in {{ref:Castor}}.",
+        "state": "Coiling heavy tarred hemp rope, shouting timing."
+      },
+      {
+        "name": "Heracles",
+        "visual_lock": "FACE LOCK: Heracles's face is exactly the face in {{ref:Heracles}}, kept 1:1. BODY and OUTFIT LOCK: his massive muscular build, scarred bare arms, and sea-lion mantle are exactly as in {{ref:Heracles}}.",
+        "state": "Swinging a heavy four-fluked forged iron grapnel overhead."
+      }
+    ],
+    "timeline_action": {
+      "0-2s": "Matching Panel 1 (Top-Left) of {{media:a4a953c4-0122-49f2-9274-4b154b5c76c0|SC-04_storyboard_clean.jpg}} (0-2s): From second 0, Castor shouts with sharp rhythmic force over the ocean wash: Castor says \"Heave with the swell! Hook her gunwale before she drifts past!\" (no subtitles); Heracles swings the heavy iron grapnel in a wide horizontal arc.",
+      "2-4s": "At second 2.0, a crisp hard cut matching Panel 2 (Top-Right) of {{media:a4a953c4-0122-49f2-9274-4b154b5c76c0|SC-04_storyboard_clean.jpg}} (2-4s): Castor's line ends cleanly by second 3; Heracles roars with exertion and launches the iron grapnel across the starboard rail with tremendous kinetic torque.",
+      "4-6s": "At second 4.0, a crisp hard cut matching Panel 3 (Bottom-Left) of {{media:a4a953c4-0122-49f2-9274-4b154b5c76c0|SC-04_storyboard_clean.jpg}} (4-6s): The thick tarred hemp rope uncoils rapidly from the deck; both men brace their boots against the bulwark watching the flight. Strictly Heracles alone in this focal framing; Castor are completely off-screen or in distinct background separation, never overlapping. SPATIAL LOCK: All characters stand firmly INSIDE the vessel on the solid wooden deck planks (or interior solid ground), NEVER on the exterior ocean/water side of the railing; maintain Panel 3's exact 180-degree camera side without flipping left and right sides."
+    },
+    "speech": {
+      "speaker": [
+        "Castor"
+      ],
+      "voices": {
+        "Castor": "fenrir"
+      },
+      "delivery": "loud clipped tactical shout over wind and surf",
+      "dialogue": [
+        {
+          "t": "0-3s",
+          "speaker": "Castor",
+          "line": "Heave with the swell! Hook her gunwale before she drifts past!"
+        }
+      ]
+    },
+    "dramatic_craft": {
+      "beat": "[+]: Physical coordinated capture execution.",
+      "value_turn": "Command (0) -> Kinetic success (+): Flawless teamwork under pressure.",
+      "subtext": "A practiced crew executing combat-ready boarding drills.",
+      "prop_and_detail": "Forged black iron grapnel with barbed flukes, hairy tarred hemp coil whizzing across timber."
+    },
+    "audio": "Castor's loud command; whistling whoosh of spinning iron iron; coarse hiss of rope running over oak rail.",
+    "physics": "Rotational kinetic energy of heavy grapnel, muscle flexion under load, rapid rope payout.",
+    "negative_constraints": [
+      "No subtitles, no captions, no on-frame text, no logos, no watermarks.",
+      "The video is full-frame shots only: never a grid, never panels, never split screen, never black dividing lines; strictly NO duplicate characters, strictly NO multiple Castor, Heracles, no ghost figures, no cloning; strictly NO character standing outside the ship hull or on the exterior water/ocean side of the railing, no 180-degree axis fusion between panels; crisp hard cuts at second 2.0 and second 4.0, no camera blending, no crossfades.",
+      "ANTI-CGI LOCK: real documentary footage, not a 3D render, not a video game, not CGI fire, no plastic skin.",
+      "No breath vapor and no white steam from anyone's mouth; no god rays, no volumetric beams, no magical sunbeams.",
+      "No shallow depth of field, no blurry background, no bokeh (f/8 aperture throughout).",
+      "Separate bodies never merge; natural hands with five fingers; no extra limbs."
+    ],
+    "image_prompt": "Cinematic medium close-up action shot on 35mm film. On the wooden bulwark of a Greek galleon under practical lantern light, massive muscular {{ref:Heracles}} with scarred bare arms winds up a heavy forged iron grappling hook to throw, while {{ref:Castor}} in leather cuirass manages the coiling hemp rope. Deep focus (f/8), rich chiaroscuro, tangible sweat and coarse rope fibers, strictly NO artificial volumetric lighting, NO 3D CGI."
+  },
+  {
+    "clip_id": "SC-05",
+    "scene_name": "Va chạm vật lý giật lùi thuyền cá",
+    "duration": 8,
+    "aspect_ratio": "16:9",
+    "refs": [
+      "Nora",
+      "Nora Body Seafarer",
+      "Heracles",
+      "Old Fisherman",
+      "Omen Fish"
+    ],
+    "sf_type": "GENERATE_IMAGE",
+    "camera": {
+      "viewpoint": "third-person cinematic camera; the camera itself is never seen",
+      "shot_size": "Multi-shot matching SC-05_storyboard_clean.jpg",
+      "description": "Multi-shot sequence with crisp hard cuts: Shot 1 (0-3s) -> Hard Cut at 3.0s -> Shot 2 (3-6s) -> Hard Cut at 6.0s -> Shot 3 (6-8s). 35mm Cooke S4 prime lens with deep focus (f/8 aperture), entire frame sharp."
+    },
+    "setting": "Location: between the galleon hull and the wooden skiff. Light: lantern light raking from high galleon bulwark down onto the small skiff; dark ocean spray and churning white water.",
+    "characters": [
+      {
+        "name": "Old Fisherman",
+        "visual_lock": "FACE LOCK: Old Fisherman's face is exactly the face in {{ref:Old Fisherman}}, kept 1:1. BODY and OUTFIT LOCK: his emaciated trembling figure in soaked coarse tunic is exactly as in {{ref:Old Fisherman}}.",
+        "state": "Cowering in the bottom of the rocking skiff, clutching a bioluminescent bundle."
+      },
+      {
+        "name": "Heracles",
+        "visual_lock": "FACE LOCK: Heracles's face is exactly the face in {{ref:Heracles}}, kept 1:1. BODY and OUTFIT LOCK: his massive muscular frame is exactly as in {{ref:Heracles}}.",
+        "state": "Bracing his boots high on the galleon rail, pulling the rope taut."
+      },
+      {
+        "name": "Omen Fish",
+        "visual_lock": "CREATURE ANATOMY, SCALE & WEIGHT LOCK: The Omen Fish is 1:1 identical to {{ref:Omen Fish}}: a massive 1.7m-1.9m (1.8-meter) long, 80 kg prehistoric armored coelacanth with thick 45cm girth, charcoal-black polygonal scale plates, spiny lobed fins, grotesque needle-fanged jaw, milky cataract eyes, and cyan-emerald bioluminescent ventral scales.",
+        "state": "Massive 1.8m, 80kg armored coelacanth carcass lying heavy and full-length (never a small fish or handheld bundle)."
+      }
+    ],
+    "timeline_action": {
+      "0-3s": "Matching Panel 1 (Top-Left) of {{media:1000e331-34ca-4a29-8173-3ccc7aabf112|SC-05_storyboard_clean.jpg}} (0-3s): [MCU] Close-up on the wet wooden gunwale of the skiff under warm lantern light: the heavy four-fluked iron grappling hook on a taut hemp rope bites violently into the oak gunwale with flying wood splinters and ocean spray.",
+      "3-6s": "At second 3.0, a crisp hard cut matching Panel 2 (Top-Right) of {{media:1000e331-34ca-4a29-8173-3ccc7aabf112|SC-05_storyboard_clean.jpg}} (3-6s): [MS] Medium shot inside the rocking skiff: the violent rope jolt jerks the skiff backward; the terrified Old Fisherman is thrown back in the stern on the right while the massive 1.8-meter-long, 80kg wet Omen Fish carcass slides heavily on its side in tangled wet netting across the floorboards.",
+      "6-8s": "At second 6.0, a crisp hard cut matching Panel 3 (Bottom-Left) of {{media:1000e331-34ca-4a29-8173-3ccc7aabf112|SC-05_storyboard_clean.jpg}} (6-8s): [MS] High-angle shot from the galleon bulwark. SPATIAL LOCK: The wet wooden galleon deck and timber rail are on the LEFT side of the frame and the churning sea with the skiff is on the RIGHT side below. Heracles stands firmly INSIDE on the wooden deck planks on the left hauling the taut hemp towline hand-over-hand, pulling the skiff containing the Old Fisherman and the 1.8m glowing Omen Fish through white water on the right."
+    },
+    "speech": {
+      "speaker": [],
+      "voices": {},
+      "delivery": "no dialogue; physical impact and splintering wood",
+      "dialogue": []
+    },
+    "dramatic_craft": {
+      "beat": "[!]: Violently halting the mystery skiff.",
+      "value_turn": "Suspense (+) -> Direct confrontation (!): The quarry is secured.",
+      "subtext": "The hunter has caught its prey, revealing the frail messenger.",
+      "prop_and_detail": "Splintering oak gunwale, taut dripping hemp hawser, glowing green bundle."
+    },
+    "audio": "Sharp crunch of iron biting timber, loud splash of sea spray, creak of rope stretching under tension (Sonic Isolation: 0 words).",
+    "physics": "Sudden deceleration of drifting skiff, kinetic recoil rocking the small boat, water displacement sloshing violently. SCALE & MASS LOCK (CRITICAL): The Omen Fish ({{ref:Omen Fish}}) is a colossal prehistoric armored coelacanth strictly 1.7 to 1.9 meters (1.8m) long and 80 kg in heavy biological mass, as long as a full-grown adult human with a thick 45cm body girth, charcoal-black polygonal armor scale plates, spiny lobed fins, grotesque underbite jaw with needle fangs, milky blind cataract eyes, and cyan-emerald bioluminescent belly scales; it spans the entire length of the skiff floorboards or end-to-end across the full 2-meter oak dissection table—strictly NEVER a small 50cm-100cm fish, NEVER a handheld parcel, and NO external metal tubes stuck to its outer skin.",
+    "negative_constraints": [
+      "No subtitles, no captions, no on-frame text, no logos, no watermarks.",
+      "The video is full-frame shots only: never a grid, never panels, never split screen, never black dividing lines; strictly NO duplicate characters, strictly NO multiple Old Fisherman, Heracles, no ghost figures, no cloning; strictly NO character standing outside the ship hull or on the exterior water/ocean side of the railing, no 180-degree axis fusion between panels; crisp hard cuts at second 3.0 and second 6.0, no camera blending, no crossfades; strictly NO small fish under 1.7 meters, NO handheld fish bundle, NO external metal tube outside the fish scales.",
+      "ANTI-CGI LOCK: real documentary footage, not a 3D render, not a video game, not CGI fire, no plastic skin.",
+      "No breath vapor and no white steam from anyone's mouth; no god rays, no volumetric beams, no magical sunbeams.",
+      "No shallow depth of field, no blurry background, no bokeh (f/8 aperture throughout).",
+      "Separate bodies never merge; natural hands with five fingers; no extra limbs."
+    ],
+    "image_prompt": "A film storyboard sheet, 16:9, made of FOUR photographic panels in a tight 2 by 2 grid, separated only by razor-thin hairline black lines; each panel is itself a full 16:9 frame; no text, no numbers, no arrows, no captions anywhere. All four panels are raw 35mm live-action feature-film stills of Location: dark churning Aegean sea at night beside the towering wet black oak hull of the pirate galleon. Light: harsh warm amber lantern light raking down from the high galleon bulwark through thick sea fog and flying white water spray; featuring {{media:f9f67999-685f-4d61-9c74-2ed16c6c393c|omen_fish_clean.jpg}} (colossal prehistoric armored coelacanth carcass: strictly 1.8 meters long [1.7m-1.9m] and 80 kg dead weight, thick 45cm girth, lying heavy and flat on its side submerged in dark bilge water and tangled wet hemp fishing nets—glistening with authentic wet sea slime, charcoal-black polygonal armor plates, limp lobed fins, gaping needle-fanged jaw, milky blind cataract eyes, and subtle natural cyan-emerald bioluminescence under wet scales; strictly NOT standing upright on its fins, NOT a dry plastic statue), {{media:f05a10db-4548-4d19-927e-39544d9718bd|old_fisherman_clean.jpg}} (face 1:1, soaked ragged burlap tunic), {{media:37a10133-8496-49e7-bd77-b5f261c5a43e|heracles_clean.jpg}} (face 1:1, massive muscular scarred arms).\nTOP-LEFT PANEL, second 0: [MCU] A heavy forged four-fluked iron grappling hook on a taut tarred hemp rope violently bites into the wet weathered oak gunwale of the small skiff, sending wet wood splinters and white ocean spray flying into the night air.\nTOP-RIGHT PANEL, second 3: [MS] The violent rope jolt jerks the rocking skiff backward in foaming dark swells; the terrified Old Fisherman is thrown back against the stern ribs while the massive 1.8-meter-long, 80kg dead Coelacanth carcass slides heavily on its side in the sloshing bilge water and tangled wet netting across the floorboards.\nBOTTOM-LEFT PANEL, second 6: [MS] High angle from the galleon bulwark: massive muscular Heracles braces his boots on the wet deck inside the ship rail, hauling the taut dripping hemp towline hand-over-hand as the skiff below containing the Old Fisherman and the 1.8m glowing Coelacanth carcass is dragged through churning white water.\nBOTTOM-RIGHT PANEL, second 8: [MS] The wooden skiff slams alongside the barnacle-encrusted black oak hull of the galleon in dark splashing swells; the Old Fisherman cowers in the stern beside the massive 1.8-meter-long, 80kg wet Coelacanth carcass lying heavy and flat on its side in the bilge water under the hemp net.\nRaw 35mm anamorphic live-action photography: shot on ARRI Alexa with Cooke S4 prime lenses, f/8 deep focus, real ocean water physics, wet slime and organic dead weight, strictly NOT a 3D render, NOT CGI, NOT a toy or plastic prop, zero watermark, zero logos."
+  },
+  {
+    "clip_id": "SC-06",
+    "scene_name": "Sứ giả kinh hoàng van xin",
+    "duration": 8,
+    "aspect_ratio": "16:9",
+    "refs": [
+      "Old Fisherman",
+      "Omen Fish"
+    ],
+    "sf_type": "GENERATE_IMAGE",
+    "camera": {
+      "viewpoint": "third-person cinematic camera; the camera itself is never seen",
+      "shot_size": "Multi-shot matching SC-06_storyboard_clean.jpg",
+      "description": "Multi-shot sequence with crisp hard cuts: Shot 1 (0-3s) -> Hard Cut at 3.0s -> Shot 2 (3-6s) -> Hard Cut at 6.0s -> Shot 3 (6-8s). 35mm Cooke S4 prime lens with deep focus (f/8 aperture), entire frame sharp."
+    },
+    "setting": "Location: interior bottom of the rocking fishing skiff. Light: cold emerald bioluminescence pulsating through coarse wet fishnet, accented by warm downward lantern light from the galleon deck above; dark wet floorboards.",
+    "characters": [
+      {
+        "name": "Old Fisherman",
+        "visual_lock": "FACE LOCK: Old Fisherman's face is exactly the face in {{ref:Old Fisherman}}, kept 1:1. BODY and OUTFIT LOCK: his soaked coarse wool tunic and wrinkled skin are exactly as in {{ref:Old Fisherman}}.",
+        "state": "Trembling on his knees, bloodshot eyes wide with primal supernatural terror."
+      },
+      {
+        "name": "Omen Fish",
+        "visual_lock": "CREATURE ANATOMY, SCALE & WEIGHT LOCK: The Omen Fish is 1:1 identical to {{ref:Omen Fish}}: a massive 1.7m-1.9m (1.8-meter) long, 80 kg prehistoric armored coelacanth with thick 45cm girth, charcoal-black polygonal scale plates, spiny lobed fins, grotesque needle-fanged jaw, milky cataract eyes, and cyan-emerald bioluminescent ventral scales.",
+        "state": "Massive 1.8m, 80kg armored coelacanth carcass lying heavy and full-length (never a small fish or handheld bundle)."
+      }
+    ],
+    "timeline_action": {
+      "0-3s": "Matching Panel 1 (Top-Left) of {{media:6fe82b75-4623-4632-bad3-25f8fea136c5|SC-06_storyboard_clean.jpg}} (0-3s): From second 0, the Old Fisherman looks up with wild bloodshot eyes and begins shrieking immediately in terrified hoarse gasps: Old Fisherman says \"Mercy, sea-wolves of the Aegean! I possess no silver nor treasure, only a terrible curse pulled from the deepest trench!\" (no subtitles).",
+      "3-6s": "At second 3.0, a crisp hard cut matching Panel 2 (Top-Right) of {{media:6fe82b75-4623-4632-bad3-25f8fea136c5|SC-06_storyboard_clean.jpg}} (3-6s): His voice quivers with desperate panic as his trembling calloused fingers clutch the green-glowing net parcel tighter to his wet chest.",
+      "6-8s": "At second 6.0, a crisp hard cut matching Panel 3 (Bottom-Left) of {{media:6fe82b75-4623-4632-bad3-25f8fea136c5|SC-06_storyboard_clean.jpg}} (6-8s): He finishes speaking by second 6, trembling uncontrollably and pressing his forehead down onto the salt-crusted floorboards in complete surrender. SPATIAL LOCK: All characters stand firmly INSIDE the vessel on the solid wooden deck planks (or interior solid ground), NEVER on the exterior ocean/water side of the railing; maintain Panel 3's exact 180-degree camera side without flipping left and right sides."
+    },
+    "speech": {
+      "speaker": [
+        "Old Fisherman"
+      ],
+      "voices": {
+        "Old Fisherman": "charon"
+      },
+      "delivery": "terror-stricken hoarse elderly pleading, breathless and desperate",
+      "dialogue": [
+        {
+          "t": "0-6s",
+          "speaker": "Old Fisherman",
+          "line": "Mercy, sea-wolves of the Aegean! I possess no silver nor treasure, only a terrible curse pulled from the deepest trench!"
+        }
+      ]
+    },
+    "dramatic_craft": {
+      "beat": "[-]: The herald's terrifying warning.",
+      "value_turn": "Hostility (0) -> Supernatural dread (-): The cargo is not wealth, but a fatal curse.",
+      "subtext": "The old man is relieved to be rid of the abomination, yet terrified for those who touch it.",
+      "prop_and_detail": "Bioluminescent net parcel pulsing with faint greenish light, salt-rimed coarse wool tunic."
+    },
+    "audio": "Old Fisherman's trembling hoarse voice; eerie low subterranean hum from the glowing bundle; water lapping inside the bilge.",
+    "physics": "Body trembling from genuine physiological shock, wet wool clinging to skin, rhythmic light pulsation. SCALE & MASS LOCK (CRITICAL): The Omen Fish ({{ref:Omen Fish}}) is a colossal prehistoric armored coelacanth strictly 1.7 to 1.9 meters (1.8m) long and 80 kg in heavy biological mass, as long as a full-grown adult human with a thick 45cm body girth, charcoal-black polygonal armor scale plates, spiny lobed fins, grotesque underbite jaw with needle fangs, milky blind cataract eyes, and cyan-emerald bioluminescent belly scales; it spans the entire length of the skiff floorboards or end-to-end across the full 2-meter oak dissection table—strictly NEVER a small 50cm-100cm fish, NEVER a handheld parcel, and NO external metal tubes stuck to its outer skin.",
+    "negative_constraints": [
+      "No subtitles, no captions, no on-frame text, no logos, no watermarks.",
+      "The video is full-frame shots only: never a grid, never panels, never split screen, never black dividing lines; strictly NO duplicate characters, strictly NO multiple Old Fisherman, no ghost figures, no cloning; strictly NO character standing outside the ship hull or on the exterior water/ocean side of the railing, no 180-degree axis fusion between panels; crisp hard cuts at second 3.0 and second 6.0, no camera blending, no crossfades; strictly NO small fish under 1.7 meters, NO handheld fish bundle, NO external metal tube outside the fish scales.",
+      "ANTI-CGI LOCK: real documentary footage, not a 3D render, not a video game, not CGI fire, no plastic skin.",
+      "No breath vapor and no white steam from anyone's mouth; no god rays, no volumetric beams, no magical sunbeams.",
+      "No shallow depth of field, no blurry background, no bokeh (f/8 aperture throughout).",
+      "Separate bodies never merge; natural hands with five fingers; no extra limbs."
+    ],
+    "image_prompt": "Cinematic high-angle medium close-up on 35mm film. In the bilge of a wet wooden skiff, {{ref:Old Fisherman}} with deeply wrinkled sun-beaten face and bloodshot terrified eyes cowers on his knees, clutching a soaked hemp net parcel that pulses with faint emerald-cyan bioluminescence. Deep focus (f/8), authentic wet fabric textures, practical downward lantern light mixed with cold green glow, strictly NO artificial volumetric lighting, NO CGI."
+  },
+  {
+    "clip_id": "SC-07",
+    "scene_name": "Ép cung tìm bí mật",
+    "duration": 8,
+    "aspect_ratio": "16:9",
+    "refs": [
+      "Castor",
+      "Old Fisherman",
+      "Omen Fish"
+    ],
+    "sf_type": "GENERATE_IMAGE",
+    "camera": {
+      "viewpoint": "third-person cinematic camera; the camera itself is never seen",
+      "shot_size": "Multi-shot matching SC-07_storyboard_clean.jpg",
+      "description": "Multi-shot sequence with crisp hard cuts: Shot 1 (0-3s) -> Hard Cut at 3.0s -> Shot 2 (3-6s) -> Hard Cut at 6.0s -> Shot 3 (6-8s). 35mm Cooke S4 prime lens with deep focus (f/8 aperture), entire frame sharp."
+    },
+    "setting": "Location: inside the wooden skiff. Light: downward amber beam from a handheld brass hurricane lantern held by Castor, illuminating the wet floorboards and the cowering fisherman; dark ocean around.",
+    "characters": [
+      {
+        "name": "Castor",
+        "visual_lock": "FACE LOCK: Castor's face is exactly the face in {{ref:Castor}}, kept 1:1. BODY and OUTFIT LOCK: his dark leather cuirass and quiver are exactly as in {{ref:Castor}}.",
+        "state": "Landed firmly in the skiff, aiming an iron-reinforced hand crossbow directly at the old man."
+      },
+      {
+        "name": "Old Fisherman",
+        "visual_lock": "FACE LOCK: Old Fisherman's face is exactly the face in {{ref:Old Fisherman}}, kept 1:1. BODY and OUTFIT LOCK: his soaked tattered tunic is exactly as in {{ref:Old Fisherman}}.",
+        "state": "Shrinking back against the gunwale, hands shaking."
+      },
+      {
+        "name": "Omen Fish",
+        "visual_lock": "CREATURE ANATOMY, SCALE & WEIGHT LOCK: The Omen Fish is 1:1 identical to {{ref:Omen Fish}}: a massive 1.7m-1.9m (1.8-meter) long, 80 kg prehistoric armored coelacanth with thick 45cm girth, charcoal-black polygonal scale plates, spiny lobed fins, grotesque needle-fanged jaw, milky cataract eyes, and cyan-emerald bioluminescent ventral scales.",
+        "state": "Massive 1.8m, 80kg armored coelacanth carcass lying heavy and full-length (never a small fish or handheld bundle)."
+      }
+    ],
+    "timeline_action": {
+      "0-3s": "Matching Panel 1 (Top-Left) of {{media:bfc450b5-8bd1-4290-8ff3-6cb589250caa|SC-07_storyboard_clean.jpg}} (0-3s): From second 0, Castor lands heavily in the skiff, aims his iron crossbow at the fisherman's chest, and barks sharply: Castor says \"Drop the netting and show your hands! Reveal what pulses with cold green fire beneath your shaking fingers right now!\" (no subtitles).",
+      "3-6s": "At second 3.0, a crisp hard cut matching Panel 2 (Top-Right) of {{media:bfc450b5-8bd1-4290-8ff3-6cb589250caa|SC-07_storyboard_clean.jpg}} (3-6s): His aggressive commanding voice cuts through the sea mist; the Old Fisherman recoils with a whimper, slowly parting his trembling fingers from the soaked net.",
+      "6-8s": "At second 6.0, a crisp hard cut matching Panel 3 (Bottom-Left) of {{media:bfc450b5-8bd1-4290-8ff3-6cb589250caa|SC-07_storyboard_clean.jpg}} (6-8s): Castor finishes by second 6, keeping the crossbow leveled steadily with his right hand while his boots adjust to the rocking motion. Strictly Old Fisherman alone in this focal framing; Castor are completely off-screen or in distinct background separation, never overlapping. SPATIAL LOCK: All characters stand firmly INSIDE the vessel on the solid wooden deck planks (or interior solid ground), NEVER on the exterior ocean/water side of the railing; maintain Panel 3's exact 180-degree camera side without flipping left and right sides."
+    },
+    "speech": {
+      "speaker": [
+        "Castor"
+      ],
+      "voices": {
+        "Castor": "fenrir"
+      },
+      "delivery": "sharp, aggressive maritime interrogation, loud and commanding",
+      "dialogue": [
+        {
+          "t": "0-6s",
+          "speaker": "Castor",
+          "line": "Drop the netting and show your hands! Reveal what pulses with cold green fire beneath your shaking fingers right now!"
+        }
+      ]
+    },
+    "dramatic_craft": {
+      "beat": "[!]: Aggressive tactical interrogation.",
+      "value_turn": "Uncertainty (0) -> Coercive control (!): Forcing revelation of the cargo.",
+      "subtext": "Castor suspects a lethal trap or Greek fire.",
+      "prop_and_detail": "Iron-reinforced recurve hand crossbow with bone lever, brass storm lantern."
+    },
+    "audio": "Castor's hard resonant voice; clatter of crossbow lock; splash of water under rocking keel.",
+    "physics": "Heavy boot impact into rocking hull, dynamic balance counter-lean in choppy water. SCALE & MASS LOCK (CRITICAL): The Omen Fish ({{ref:Omen Fish}}) is a colossal prehistoric armored coelacanth strictly 1.7 to 1.9 meters (1.8m) long and 80 kg in heavy biological mass, as long as a full-grown adult human with a thick 45cm body girth, charcoal-black polygonal armor scale plates, spiny lobed fins, grotesque underbite jaw with needle fangs, milky blind cataract eyes, and cyan-emerald bioluminescent belly scales; it spans the entire length of the skiff floorboards or end-to-end across the full 2-meter oak dissection table—strictly NEVER a small 50cm-100cm fish, NEVER a handheld parcel, and NO external metal tubes stuck to its outer skin.",
+    "negative_constraints": [
+      "No subtitles, no captions, no on-frame text, no logos, no watermarks.",
+      "The video is full-frame shots only: never a grid, never panels, never split screen, never black dividing lines; strictly NO duplicate characters, strictly NO multiple Castor, Old Fisherman, no ghost figures, no cloning; strictly NO character standing outside the ship hull or on the exterior water/ocean side of the railing, no 180-degree axis fusion between panels; crisp hard cuts at second 3.0 and second 6.0, no camera blending, no crossfades; strictly NO small fish under 1.7 meters, NO handheld fish bundle, NO external metal tube outside the fish scales.",
+      "ANTI-CGI LOCK: real documentary footage, not a 3D render, not a video game, not CGI fire, no plastic skin.",
+      "No breath vapor and no white steam from anyone's mouth; no god rays, no volumetric beams, no magical sunbeams.",
+      "No shallow depth of field, no blurry background, no bokeh (f/8 aperture throughout).",
+      "Separate bodies never merge; natural hands with five fingers; no extra limbs."
+    ],
+    "image_prompt": "A film storyboard sheet, 16:9, made of FOUR photographic panels in a tight 2 by 2 grid, separated only by thin straight black gutters; each panel is itself a 16:9 frame; no text, no numbers, no arrows, no captions anywhere. All four panels are cinematic feature-film stills of ONE continuous moment in Location: inside the wooden skiff alongside the galleon. Light: downward amber beam from brass hurricane lantern held by Castor mixing with cold emerald bioluminescence from the giant fish's belly; featuring {{media:f9f67999-685f-4d61-9c74-2ed16c6c393c|omen_fish_clean.jpg}} (prehistoric armored coelacanth: strictly 1.8 meters long [1.7m-1.9m] and 80 kg heavy, thick 45cm girth, charcoal-black polygonal scale plates, spiny lobed fins, grotesque underbite jaw with needle fangs, milky cataract eyes, cyan-emerald bioluminescent belly scales), {{media:3152a235-af4f-462b-a78e-02551f826e41|castor_clean.jpg}} (face 1:1, leather cuirass), {{media:f05a10db-4548-4d19-927e-39544d9718bd|old_fisherman_clean.jpg}} (face 1:1, ragged burlap).\nTOP-LEFT PANEL, second 0: [MS] Castor stands planted in the bow of the rocking skiff with hurricane lantern raised and iron crossbow aimed down; between Castor and the Old Fisherman in the stern lies the massive 1.8-meter-long, 80kg armored Coelacanth stretched across the wet floorboards.\nTOP-RIGHT PANEL, second 3: [MCU] Castor barks his command; lantern light illuminates the Old Fisherman cowering in the stern and the massive 1.8-meter-long, 80kg armored Coelacanth lying uncovered across the floorboards with its emerald belly glowing.\nBOTTOM-LEFT PANEL, second 6: [MS] Castor stands in the skiff aiming his crossbow while the Old Fisherman pulls back the last coarse hemp net cord from the massive 1.8-meter-long, 80kg armored Coelacanth—the giant 1.8m fish's armored head, needle fangs, and glowing emerald belly are fully visible and identical in 1.8m size (strictly NEVER a round dark bundle).\nBOTTOM-RIGHT PANEL, second 8: [MS] The Old Fisherman raises both trembling hands in surrender in the stern while the massive 1.8-meter-long, 80kg glowing Coelacanth lies stretched full-length across the skiff floorboards between them.\ncinematic feature-film look: shot on ARRI Alexa with Cooke S4 prime lenses, fine 35mm film grain, deep focus (f/8), motivated practical light, realistic physics, fish carcass lying heavy on its side with real 80kg dead weight and wet glistening sea-slime (strictly NOT propped upright on its fins like a plastic toy), strictly NOT a 3D render, NOT CGI, zero watermark, zero logos."
+  },
+  {
+    "clip_id": "SC-08",
+    "scene_name": "Lộ diện sinh vật biển dị dạng",
+    "duration": 8,
+    "aspect_ratio": "16:9",
+    "refs": [
+      "Omen Fish"
+    ],
+    "sf_type": "GENERATE_IMAGE",
+    "camera": {
+      "viewpoint": "third-person cinematic camera; the camera itself is never seen",
+      "shot_size": "Multi-shot matching SC-08_storyboard_clean.jpg",
+      "description": "Multi-shot sequence with crisp hard cuts: Shot 1 (0-3s) -> Hard Cut at 3.0s -> Shot 2 (3-6s) -> Hard Cut at 6.0s -> Shot 3 (6-8s). 35mm Cooke S4 prime lens with deep focus (f/8 aperture), entire frame sharp."
+    },
+    "setting": "Location: wet floor of the skiff. Light: dual-light interplay of faint cold emerald-cyan bioluminescence from the creature's belly and warm overhead lantern glow; dark slimy floorboards.",
+    "characters": [
+      {
+        "name": "Omen Fish",
+        "visual_lock": "CREATURE ANATOMY, SCALE & WEIGHT LOCK: The Omen Fish is 1:1 identical to {{ref:Omen Fish}}: a massive 1.7m-1.9m (1.8-meter) long, 80 kg prehistoric armored coelacanth with thick 45cm girth, charcoal-black polygonal scale plates, spiny lobed fins, grotesque needle-fanged jaw, milky cataract eyes, and cyan-emerald bioluminescent ventral scales.",
+        "state": "Massive 1.8m, 80kg armored coelacanth carcass lying heavy and full-length (never a small fish or handheld bundle)."
+      }
+    ],
+    "timeline_action": {
+      "0-3s": "Matching Panel 1 (Top-Left) of {{media:262700dc-0837-484b-b5ae-e5fd27671438|SC-08_storyboard_clean.jpg}} (0-3s): The wet hemp netting falls open, exposing the bizarre 1.8-meter-long abyssal creature; its iridescent charcoal polygonal scales glisten under the lantern light.",
+      "3-6s": "At second 3.0, a crisp hard cut matching Panel 2 (Top-Right) of {{media:262700dc-0837-484b-b5ae-e5fd27671438|SC-08_storyboard_clean.jpg}} (3-6s): Its swollen underbelly pulses rhythmically with a cold emerald bioluminescence, revealing the faint silhouette of a rigid cylindrical object lodged deep inside its gut.",
+      "6-8s": "At second 6.0, a crisp hard cut matching Panel 3 (Bottom-Left) of {{media:262700dc-0837-484b-b5ae-e5fd27671438|SC-08_storyboard_clean.jpg}} (6-8s): The creature's heavy spiny gills flare open and close in slow, agonizing spasms; milky-white dead eyes reflect the swinging amber lantern. SPATIAL LOCK: All characters stand firmly INSIDE the vessel on the solid wooden deck planks (or interior solid ground), NEVER on the exterior ocean/water side of the railing; maintain Panel 3's exact 180-degree camera side without flipping left and right sides."
+    },
+    "speech": {
+      "speaker": [],
+      "voices": {},
+      "delivery": "no dialogue; rhythmic wet breathing of the dying creature",
+      "dialogue": []
+    },
+    "dramatic_craft": {
+      "beat": "[?]: Revelation of the monstrous biological vessel.",
+      "value_turn": "Curse warning (-) -> Tangible anomaly (?): An impossible abyssal specimen.",
+      "subtext": "This creature was drawn from depths no human fisherman has ever reached.",
+      "prop_and_detail": "Iridescent Coelacanth armor scales, needle-sharp translucent teeth, wet slime sheen."
+    },
+    "audio": "Wet rhythmic slapping of armored gill covers, soft wet slime suction, eerie low vibrational drone (Sonic Isolation: 0 words).",
+    "physics": "Sluggish muscular spasm of heavy fish body, organic skin elasticity, viscous mucus dripping between floorboards. SCALE & MASS LOCK (CRITICAL): The Omen Fish ({{ref:Omen Fish}}) is a colossal prehistoric armored coelacanth strictly 1.7 to 1.9 meters (1.8m) long and 80 kg in heavy biological mass, as long as a full-grown adult human with a thick 45cm body girth, charcoal-black polygonal armor scale plates, spiny lobed fins, grotesque underbite jaw with needle fangs, milky blind cataract eyes, and cyan-emerald bioluminescent belly scales; it spans the entire length of the skiff floorboards or end-to-end across the full 2-meter oak dissection table—strictly NEVER a small 50cm-100cm fish, NEVER a handheld parcel, and NO external metal tubes stuck to its outer skin.",
+    "negative_constraints": [
+      "No subtitles, no captions, no on-frame text, no logos, no watermarks.",
+      "The video is full-frame shots only: never a grid, never panels, never split screen, never black dividing lines; strictly NO duplicate characters, strictly NO multiple Omen Fish, no ghost figures, no cloning; strictly NO character standing outside the ship hull or on the exterior water/ocean side of the railing, no 180-degree axis fusion between panels; crisp hard cuts at second 3.0 and second 6.0, no camera blending, no crossfades; strictly NO small fish under 1.7 meters, NO handheld fish bundle, NO external metal tube outside the fish scales.",
+      "ANTI-CGI LOCK: real documentary footage, not a 3D render, not a video game, not CGI fire, no plastic skin.",
+      "No breath vapor and no white steam from anyone's mouth; no god rays, no volumetric beams, no magical sunbeams.",
+      "No shallow depth of field, no blurry background, no bokeh (f/8 aperture throughout).",
+      "Separate bodies never merge; natural hands with five fingers; no extra limbs."
+    ],
+    "image_prompt": "A film storyboard sheet, 16:9, made of FOUR photographic panels in a tight 2 by 2 grid, separated only by thin straight black gutters; each panel is itself a 16:9 frame; no text, no numbers, no arrows, no captions anywhere. All four panels are cinematic feature-film stills of ONE continuous moment in Location: wet wooden floorboards of the fishing skiff. Light: dual-light interplay of cold emerald-cyan bioluminescence from the giant fish's ventral scales and warm overhead amber lantern glow; featuring {{media:f9f67999-685f-4d61-9c74-2ed16c6c393c|omen_fish_clean.jpg}} (prehistoric armored coelacanth 1:1: strictly 1.8 meters long [1.7m-1.9m] and 80 kg heavy, thick 45cm body girth, charcoal-black polygonal armor scale plates, compact spiny lobed fins, grotesque underbite jaw with needle fangs, milky blind cataract eyes, cyan-emerald bioluminescent belly scales; strictly NO lionfish frills, NO external tubes or cylinders on the outside of the body).\nTOP-LEFT PANEL, second 0: [MS] High-angle medium shot showing the full massive 1.8-meter-long, 80kg armored Coelacanth stretched end-to-end across the wet wooden skiff floorboards beside a brass lantern for scale; coarse hemp netting lies pulled aside on the planks.\nTOP-RIGHT PANEL, second 3: [MCU] Close-up along the massive 45cm-thick flank and swollen belly of the 1.8-meter, 80kg Coelacanth; its charcoal-black polygonal scales and ventral skin glow with internal cyan-emerald bioluminescence from deep inside its belly (strictly smooth uninterrupted scales on the outside, NO external cylinder or metal object stuck outside).\nBOTTOM-LEFT PANEL, second 6: [CU] Macro close-up on the giant 1.8m Coelacanth's armored head: heavy bony gill plates flaring in a slow dying spasm, milky-white cataract eyes reflecting the warm amber lantern, and jagged needle fangs in its gaping jaw.\nBOTTOM-RIGHT PANEL, second 8: [MS] Full-length side angle of the massive 1.8-meter-long, 80kg armored Coelacanth lying heavy and still across the wet skiff floorboards, its compact lobed fins and glowing emerald underbelly matching the reference 1:1 (strictly NO spiky lionfish frills).\ncinematic feature-film look: shot on ARRI Alexa with Cooke S4 prime lenses, fine 35mm film grain, deep focus (f/8), motivated practical light, realistic physics, fish carcass lying heavy on its side with real 80kg dead weight and wet glistening sea-slime (strictly NOT propped upright on its fins like a plastic toy), strictly NOT a 3D render, NOT CGI, zero watermark, zero logos."
+  },
+  {
+    "clip_id": "SC-09",
+    "scene_name": "Thẩm vấn nguồn gốc con cá",
+    "duration": 8,
+    "aspect_ratio": "16:9",
+    "refs": [
+      "Nora",
+      "Nora Body Seafarer",
+      "Old Fisherman",
+      "Omen Fish"
+    ],
+    "sf_type": "GENERATE_IMAGE",
+    "camera": {
+      "viewpoint": "third-person cinematic camera; the camera itself is never seen",
+      "shot_size": "Multi-shot matching SC-09_storyboard_clean.jpg",
+      "description": "Multi-shot sequence with crisp hard cuts: Shot 1 (0-3s) -> Hard Cut at 3.0s -> Shot 2 (3-6s) -> Hard Cut at 6.0s -> Shot 3 (6-8s). 35mm Cooke S4 prime lens with deep focus (f/8 aperture), entire frame sharp."
+    },
+    "setting": "Location: inside the rocking skiff. Light: amber lantern light reflecting off Nora's copper braid and illuminating the fisherman's trembling face; cold green light glowing from the fish below.",
+    "characters": [
+      {
+        "name": "Nora",
+        "visual_lock": "FACE LOCK: Nora's face is exactly the face in {{ref:Nora}}, kept 1:1. BODY and OUTFIT LOCK: her build and navy seafarer armor are exactly as in {{ref:Nora Body Seafarer}}.",
+        "state": "Crouched on one knee, gazing calmly and piercingly at the fisherman."
+      },
+      {
+        "name": "Old Fisherman",
+        "visual_lock": "FACE LOCK: Old Fisherman's face is exactly the face in {{ref:Old Fisherman}}, kept 1:1. BODY and OUTFIT LOCK: his soaked coarse tunic is exactly as in {{ref:Old Fisherman}}.",
+        "state": "Huddled in the corner, clutching his chest with trembling fingers."
+      },
+      {
+        "name": "Omen Fish",
+        "visual_lock": "CREATURE ANATOMY, SCALE & WEIGHT LOCK: The Omen Fish is 1:1 identical to {{ref:Omen Fish}}: a massive 1.7m-1.9m (1.8-meter) long, 80 kg prehistoric armored coelacanth with thick 45cm girth, charcoal-black polygonal scale plates, spiny lobed fins, grotesque needle-fanged jaw, milky cataract eyes, and cyan-emerald bioluminescent ventral scales.",
+        "state": "Massive 1.8m, 80kg armored coelacanth carcass lying heavy and full-length (never a small fish or handheld bundle)."
+      }
+    ],
+    "timeline_action": {
+      "0-3s": "Matching Panel 1 (Top-Left) of {{media:0f80d0fd-53cd-4826-8ea9-a6cb93b655cc|SC-09_storyboard_clean.jpg}} (0-3s): From second 0, Nora crouches gracefully on one knee and speaks immediately in a calm, probing tone: Nora says \"Lower your nets and speak plainly, old man. Where did your hooks drag this monstrous abyssal creature from the deep?\" (no subtitles).",
+      "3-6s": "At second 3.0, a crisp hard cut matching Panel 2 (Top-Right) of {{media:0f80d0fd-53cd-4826-8ea9-a6cb93b655cc|SC-09_storyboard_clean.jpg}} (3-6s): Her steady voice cuts through the old man's hysteria; Nora gestures calmly with a leather-gloved hand toward the pulsing black fish between them.",
+      "6-8s": "At second 6.0, a crisp hard cut matching Panel 3 (Bottom-Left) of {{media:0f80d0fd-53cd-4826-8ea9-a6cb93b655cc|SC-09_storyboard_clean.jpg}} (6-8s): She finishes by second 6, keeping her piercing hazel eyes locked on the old man's face as he swallows hard, struggling to form words. Strictly Old Fisherman alone in this focal framing; Nora are completely off-screen or in distinct background separation, never overlapping. SPATIAL LOCK: All characters stand firmly INSIDE the vessel on the solid wooden deck planks (or interior solid ground), NEVER on the exterior ocean/water side of the railing; maintain Panel 3's exact 180-degree camera side without flipping left and right sides."
+    },
+    "speech": {
+      "speaker": [
+        "Nora"
+      ],
+      "voices": {
+        "Nora": "kore"
+      },
+      "delivery": "calm, steady, commanding captain's inquiry, firm yet patient",
+      "dialogue": [
+        {
+          "t": "0-6s",
+          "speaker": "Nora",
+          "line": "Lower your nets and speak plainly, old man. Where did your hooks drag this monstrous abyssal creature from the deep?"
+        }
+      ]
+    },
+    "dramatic_craft": {
+      "beat": "[0]: Captain's direct interrogation of origin.",
+      "value_turn": "Aggression (!) -> Investigative interrogation (0): Seeking actionable truth.",
+      "subtext": "Nora senses a legendary event beyond simple coastal piracy.",
+      "prop_and_detail": "Weathered leather glove, heavy bronze scabbard touching timber floor."
+    },
+    "audio": "Nora's measured authoritative voice; faint sloshing of sea bilge; distant creaking of galleon hull.",
+    "physics": "Balanced crouch absorbing the boat's roll, leather creaking with shifting weight. SCALE & MASS LOCK (CRITICAL): The Omen Fish ({{ref:Omen Fish}}) is a colossal prehistoric armored coelacanth strictly 1.7 to 1.9 meters (1.8m) long and 80 kg in heavy biological mass, as long as a full-grown adult human with a thick 45cm body girth, charcoal-black polygonal armor scale plates, spiny lobed fins, grotesque underbite jaw with needle fangs, milky blind cataract eyes, and cyan-emerald bioluminescent belly scales; it spans the entire length of the skiff floorboards or end-to-end across the full 2-meter oak dissection table—strictly NEVER a small 50cm-100cm fish, NEVER a handheld parcel, and NO external metal tubes stuck to its outer skin.",
+    "negative_constraints": [
+      "No subtitles, no captions, no on-frame text, no logos, no watermarks.",
+      "The video is full-frame shots only: never a grid, never panels, never split screen, never black dividing lines; strictly NO duplicate characters, strictly NO multiple Nora, Old Fisherman, no ghost figures, no cloning; strictly NO character standing outside the ship hull or on the exterior water/ocean side of the railing, no 180-degree axis fusion between panels; crisp hard cuts at second 3.0 and second 6.0, no camera blending, no crossfades; strictly NO small fish under 1.7 meters, NO handheld fish bundle, NO external metal tube outside the fish scales.",
+      "ANTI-CGI LOCK: real documentary footage, not a 3D render, not a video game, not CGI fire, no plastic skin.",
+      "No breath vapor and no white steam from anyone's mouth; no god rays, no volumetric beams, no magical sunbeams.",
+      "No shallow depth of field, no blurry background, no bokeh (f/8 aperture throughout).",
+      "Separate bodies never merge; natural hands with five fingers; no extra limbs."
+    ],
+    "image_prompt": "A film storyboard sheet, 16:9, made of FOUR photographic panels in a tight 2 by 2 grid, separated only by thin straight black gutters; each panel is itself a 16:9 frame; no text, no numbers, no arrows, no captions anywhere. All four panels are cinematic feature-film stills of ONE continuous moment in Location: interior of the wet wooden skiff rocking beside the pirate galleon. Light: warm practical amber lantern beam held by Nora mingling with the cold cyan-emerald bioluminescent belly scales of the giant creature; featuring {{media:f9f67999-685f-4d61-9c74-2ed16c6c393c|omen_fish_clean.jpg}} (prehistoric armored coelacanth 1:1: strictly 1.8 meters long [1.7m-1.9m] and 80 kg heavy, thick 45cm body girth, charcoal-black polygonal armor scale plates, spiny lobed fins, grotesque underbite jaw with needle fangs, milky cataract eyes; strictly uninterrupted armored scales with NO external metal capsule or tube on the outside), {{media:62e117f8-0af7-484e-90a8-f79927105746|nora_clean.jpg}} (face 1:1, braided copper-red hair, seafarer brigandine armor as in {{media:743ef618-f4c5-456c-9285-56dd911ca94b|nora_body_seafarer_clean.jpg}}), {{media:f05a10db-4548-4d19-927e-39544d9718bd|old_fisherman_clean.jpg}} (face 1:1, ragged burlap clothes).\nTOP-LEFT PANEL, second 0: [MS] Medium two-shot inside the skiff: the massive 1.8-meter-long, 80kg armored Coelacanth lies stretched full-length across the wet bottom planks between them, its needle-fanged mouth gaping and ventral scales glowing with cold cyan-emerald light; Nora crouches beside the giant fish holding a brass lantern, questioning the trembling Old Fisherman huddled in the stern.\nTOP-RIGHT PANEL, second 3: [MCU] Medium close-up angled across the massive 1.8m, 80kg Coelacanth carcass toward the Old Fisherman; Nora's gloved hand points at the giant creature's armored head while the Old Fisherman recoils in terror, raising trembling hands.\nBOTTOM-LEFT PANEL, second 6: [MCU] Reverse medium close-up on Nora crouching beside the massive 1.8m, 80kg Coelacanth; her gloved hand presses against the creature's thick, intact charcoal-black polygonal belly scales glowing faintly emerald from within (strictly unbroken scales, NO external metal tube or cylinder visible outside the fish).\nBOTTOM-RIGHT PANEL, second 8: [MS] The Old Fisherman points out toward the foggy sea with trembling fingers while Nora keeps one gloved hand resting on the massive 1.8-meter, 80kg Coelacanth's heavy spiny dorsal ridge.\ncinematic feature-film look: shot on ARRI Alexa with Cooke S4 prime lenses, fine 35mm film grain, deep focus (f/8), motivated practical light, realistic physics, fish carcass lying heavy on its side with real 80kg dead weight and wet glistening sea-slime (strictly NOT propped upright on its fins like a plastic toy), strictly NOT a 3D render, NOT CGI, zero watermark, zero logos."
+  },
+  {
+    "clip_id": "SC-10",
+    "scene_name": "Lời sấm truyền về Cây Vàng",
+    "duration": 10,
+    "aspect_ratio": "16:9",
+    "refs": [
+      "Old Fisherman",
+      "Omen Fish"
+    ],
+    "sf_type": "PREV_LAST_FRAME",
+    "camera": {
+      "viewpoint": "third-person cinematic camera; the camera itself is never seen",
+      "shot_size": "CU",
+      "description": "Low-angle close-up portrait on 35mm Cooke S4 lens, deep focus (f/8 aperture), capturing the haunted prophecy in the old man's bloodshot eyes."
+    },
+    "setting": "Location: interior of skiff under galleon shadow. Light: dramatic raking golden lantern light hattering across deep facial wrinkles; dark misty sea beyond.",
+    "characters": [
+      {
+        "name": "Old Fisherman",
+        "visual_lock": "FACE LOCK: Old Fisherman's face is exactly the face in {{ref:Old Fisherman}}, kept 1:1. BODY and OUTFIT LOCK: his soaked coarse wool tunic is exactly as in {{ref:Old Fisherman}}.",
+        "state": "Staring past Nora with wide, unblinking, haunted eyes, raising a trembling gnarl-knuckled hand."
+      },
+      {
+        "name": "Omen Fish",
+        "visual_lock": "CREATURE ANATOMY, SCALE & WEIGHT LOCK: The Omen Fish is 1:1 identical to {{ref:Omen Fish}}: a massive 1.7m-1.9m (1.8-meter) long, 80 kg prehistoric armored coelacanth with thick 45cm girth, charcoal-black polygonal scale plates, spiny lobed fins, grotesque needle-fanged jaw, milky cataract eyes, and cyan-emerald bioluminescent ventral scales.",
+        "state": "Massive 1.8m, 80kg armored coelacanth carcass lying heavy and full-length (never a small fish or handheld bundle)."
+      }
+    ],
+    "timeline_action": {
+      "0-3s": "From second 0, the Old Fisherman looks up into the night haze and speaks immediately with wild apocalyptic conviction: Old Fisherman says \"Beyond the basalt gates where the currents bleed backwards!\" (no subtitles).",
+      "3-7s": "He continues without pause, his hoarse quivering voice rising with prophet-like terror: Old Fisherman says \"It swallowed the gold that never rots in mortal hands, bringing ruination to every ship!\" (no subtitles); his trembling arm points toward the horizon.",
+      "7-10s": "His prophecy concludes by second 7; he drops his shaking hand into his lap, panting through cracked lips as the shadow of the galleon looms over him. SPATIAL LOCK: All characters remain firmly INSIDE on the solid wooden deck planks, NEVER on the exterior ocean side of the railing."
+    },
+    "speech": {
+      "speaker": [
+        "Old Fisherman"
+      ],
+      "voices": {
+        "Old Fisherman": "charon"
+      },
+      "delivery": "haunted prophetic delivery, quivering with superstitious dread",
+      "dialogue": [
+        {
+          "t": "0-7s",
+          "speaker": "Old Fisherman",
+          "line": "Beyond the basalt gates where the currents bleed backwards! It swallowed the gold that never rots in mortal hands, bringing ruination to every ship!"
+        }
+      ]
+    },
+    "dramatic_craft": {
+      "beat": "RH [!]: Inciting Incident prophecy establishing the lethal quest.",
+      "value_turn": "Mystery (0) -> Mythic peril (!): The gold is alive and cursed.",
+      "subtext": "The fisherman was driven mad by the lure of the Golden Tree.",
+      "prop_and_detail": "Trembling finger pointing into fog, dried salt caked on bearded chin."
+    },
+    "audio": "Old Fisherman's raspy prophetic voice; sudden gust of sea wind whistling through the rigging; distant deep ocean rumble.",
+    "physics": "Finger vibrating with neurological tremor, wind blowing sparse white hair. SCALE & MASS LOCK (CRITICAL): The Omen Fish ({{ref:Omen Fish}}) is a colossal prehistoric armored coelacanth strictly 1.7 to 1.9 meters (1.8m) long and 80 kg in heavy biological mass, as long as a full-grown adult human with a thick 45cm body girth, charcoal-black polygonal armor scale plates, spiny lobed fins, grotesque underbite jaw with needle fangs, milky blind cataract eyes, and cyan-emerald bioluminescent belly scales; it spans the entire length of the skiff floorboards or end-to-end across the full 2-meter oak dissection table—strictly NEVER a small 50cm-100cm fish, NEVER a handheld parcel, and NO external metal tubes stuck to its outer skin.",
+    "negative_constraints": [
+      "No subtitles, no captions, no on-frame text, no logos, no watermarks.",
+      "Continuous direct scene sequence: strictly NO duplicate characters, strictly NO multiple Old Fisherman, strictly NO character standing outside the ship hull or on the exterior water/ocean side of the railing, no ghost figures, no cloning, separate bodies never merge, no split screen; strictly NO small fish under 1.7 meters, NO handheld fish bundle, NO external metal tube outside the fish scales.",
+      "ANTI-CGI LOCK: real documentary footage, not a 3D render, not a video game, not CGI fire, no plastic skin.",
+      "No breath vapor and no white steam from anyone's mouth; no god rays, no volumetric beams, no magical sunbeams.",
+      "No shallow depth of field, no blurry background, no bokeh (f/8 aperture throughout).",
+      "Separate bodies never merge; natural hands with five fingers; no extra limbs."
+    ]
+  },
+  {
+    "clip_id": "SC-11",
+    "scene_name": "Thu giữ con cá lên tàu",
+    "duration": 8,
+    "aspect_ratio": "16:9",
+    "refs": [
+      "Nora",
+      "Nora Body Seafarer",
+      "Heracles",
+      "Omen Fish"
+    ],
+    "sf_type": "GENERATE_IMAGE",
+    "camera": {
+      "viewpoint": "third-person cinematic camera; the camera itself is never seen",
+      "shot_size": "Multi-shot matching SC-11_storyboard_clean.jpg",
+      "description": "Multi-shot sequence with crisp hard cuts: Shot 1 (0-3s) -> Hard Cut at 3.0s -> Shot 2 (3-6s) -> Hard Cut at 6.0s -> Shot 3 (6-8s). 35mm Cooke S4 prime lens with deep focus (f/8 aperture), entire frame sharp."
+    },
+    "setting": "Location: main deck of the pirate galleon. Light: warm overhead deck lanterns illuminating the timber hatchways and coils of rigging; dark ocean below.",
+    "characters": [
+      {
+        "name": "Heracles",
+        "visual_lock": "FACE LOCK: Heracles's face is exactly the face in {{ref:Heracles}}, kept 1:1. BODY and OUTFIT LOCK: his massive muscular frame and sea-lion mantle are exactly as in {{ref:Heracles}}.",
+        "state": "Heaving the heavy wicker fish basket containing the creature onto the oak deck."
+      },
+      {
+        "name": "Nora",
+        "visual_lock": "FACE LOCK: Nora's face is exactly the face in {{ref:Nora}}, kept 1:1. BODY and OUTFIT LOCK: her build and navy seafarer costume are exactly as in {{ref:Nora Body Seafarer}}.",
+        "state": "Climbing up the boarding ladder onto the deck, watching Heracles."
+      },
+      {
+        "name": "Omen Fish",
+        "visual_lock": "CREATURE ANATOMY, SCALE & WEIGHT LOCK: The Omen Fish is 1:1 identical to {{ref:Omen Fish}}: a massive 1.7m-1.9m (1.8-meter) long, 80 kg prehistoric armored coelacanth with thick 45cm girth, charcoal-black polygonal scale plates, spiny lobed fins, grotesque needle-fanged jaw, milky cataract eyes, and cyan-emerald bioluminescent ventral scales.",
+        "state": "Massive 1.8m, 80kg armored coelacanth carcass lying heavy and full-length (never a small fish or handheld bundle)."
+      }
+    ],
+    "timeline_action": {
+      "0-3s": "Matching Panel 1 (Top-Left) of {{media:56777191-7a1d-4418-ac19-1c962b38114c|SC-11_storyboard_clean.jpg}} (0-3s): From second 0, Heracles drops the heavy wicker basket onto the oak deck with a solid thud and begins speaking immediately: Heracles says \"Heavy as solid lead-shot, Captain Nora. Its swollen belly grinds and rattles like sharp broken flint stones inside the gut.\" (no subtitles).",
+      "3-6s": "At second 3.0, a crisp hard cut matching Panel 2 (Top-Right) of {{media:56777191-7a1d-4418-ac19-1c962b38114c|SC-11_storyboard_clean.jpg}} (3-6s): His deep gravelly voice carries across the deck; he wipes wet slime from his bare muscular forearm as Nora steps over the bulwark onto the deck.",
+      "6-8s": "At second 6.0, a crisp hard cut matching Panel 3 (Bottom-Left) of {{media:56777191-7a1d-4418-ac19-1c962b38114c|SC-11_storyboard_clean.jpg}} (6-8s): Heracles finishes by second 6, placing both hands on his hips while the fish inside thrashes heavily against the wicker weave. Strictly Nora alone in this focal framing; Heracles are completely off-screen or in distinct background separation, never overlapping. SPATIAL LOCK: All characters stand firmly INSIDE the vessel on the solid wooden deck planks (or interior solid ground), NEVER on the exterior ocean/water side of the railing; maintain Panel 3's exact 180-degree camera side without flipping left and right sides."
+    },
+    "speech": {
+      "speaker": [
+        "Heracles"
+      ],
+      "voices": {
+        "Heracles": "puck"
+      },
+      "delivery": "deep, booming, grounded warrior voice, marveling at the unnatural weight",
+      "dialogue": [
+        {
+          "t": "0-6s",
+          "speaker": "Heracles",
+          "line": "Heavy as solid lead-shot, Captain Nora. Its swollen belly grinds and rattles like sharp broken flint stones inside the gut."
+        }
+      ]
+    },
+    "dramatic_craft": {
+      "beat": "[+]: Physical confirmation of unnatural internal cargo.",
+      "value_turn": "Prophecy (0) -> Tangible evidence (+): Weight confirms non-biological payload.",
+      "subtext": "A fish doesn't swallow stones; it was fed something artificial.",
+      "prop_and_detail": "Heavy wicker fish creel, thick wet hemp rope, rattling internal thud."
+    },
+    "audio": "Heracles's booming gravelly voice; heavy dull thud of basket hitting oak deck; wet squelch inside.",
+    "physics": "Heavy mass transfer onto deck timbers, plank deflection under weight, momentum absorption. SCALE & MASS LOCK (CRITICAL): The Omen Fish ({{ref:Omen Fish}}) is a colossal prehistoric armored coelacanth strictly 1.7 to 1.9 meters (1.8m) long and 80 kg in heavy biological mass, as long as a full-grown adult human with a thick 45cm body girth, charcoal-black polygonal armor scale plates, spiny lobed fins, grotesque underbite jaw with needle fangs, milky blind cataract eyes, and cyan-emerald bioluminescent belly scales; it spans the entire length of the skiff floorboards or end-to-end across the full 2-meter oak dissection table—strictly NEVER a small 50cm-100cm fish, NEVER a handheld parcel, and NO external metal tubes stuck to its outer skin.",
+    "negative_constraints": [
+      "No subtitles, no captions, no on-frame text, no logos, no watermarks.",
+      "The video is full-frame shots only: never a grid, never panels, never split screen, never black dividing lines; strictly NO duplicate characters, strictly NO multiple Heracles, Nora, no ghost figures, no cloning; strictly NO character standing outside the ship hull or on the exterior water/ocean side of the railing, no 180-degree axis fusion between panels; crisp hard cuts at second 3.0 and second 6.0, no camera blending, no crossfades; strictly NO small fish under 1.7 meters, NO handheld fish bundle, NO external metal tube outside the fish scales.",
+      "ANTI-CGI LOCK: real documentary footage, not a 3D render, not a video game, not CGI fire, no plastic skin.",
+      "No breath vapor and no white steam from anyone's mouth; no god rays, no volumetric beams, no magical sunbeams.",
+      "No shallow depth of field, no blurry background, no bokeh (f/8 aperture throughout).",
+      "Separate bodies never merge; natural hands with five fingers; no extra limbs."
+    ],
+    "image_prompt": "Cinematic wide shot on 35mm film. On the lantern-lit wooden deck of a Greek pirate ship, towering behemoth warrior {{ref:Heracles}} drops a heavy wicker basket containing a glowing abyssal creature onto the planks, speaking to Captain {{ref:Nora}} wearing {{ref:Nora Body Seafarer}} as she climbs the ship's ladder. Deep focus (f/8), rugged textures, chiaroscuro night lighting, strictly NO artificial volumetric lighting, NO 3D CGI."
+  },
+  {
+    "clip_id": "SC-12",
+    "scene_name": "Chuyển địa điểm sang cabin",
+    "duration": 6,
+    "aspect_ratio": "16:9",
+    "refs": [
+      "Nora",
+      "Nora Body Seafarer",
+      "Castor"
+    ],
+    "sf_type": "GENERATE_IMAGE",
+    "camera": {
+      "viewpoint": "third-person cinematic camera; the camera itself is never seen",
+      "shot_size": "Multi-shot matching SC-12_storyboard_clean.jpg",
+      "description": "Multi-shot sequence with crisp hard cuts: Shot 1 (0-2s) -> Hard Cut at 2.0s -> Shot 2 (2-4s) -> Hard Cut at 4.0s -> Shot 3 (4-6s). 35mm Cooke S4 prime lens with deep focus (f/8 aperture), entire frame sharp."
+    },
+    "setting": "Location: narrow wooden corridor leading to the captain's quarters. Light: flickering pitch torches in iron wall sconces casting rich amber light across curved oak ribs.",
+    "characters": [
+      {
+        "name": "Nora",
+        "visual_lock": "FACE LOCK: Nora's face is exactly the face in {{ref:Nora}}, kept 1:1. BODY and OUTFIT LOCK: her build and navy brigandine are exactly as in {{ref:Nora Body Seafarer}}.",
+        "state": "Striding briskly toward the cabin door, gesturing with her left hand."
+      },
+      {
+        "name": "Castor",
+        "visual_lock": "FACE LOCK: Castor's face is exactly the face in {{ref:Castor}}, kept 1:1. BODY and OUTFIT LOCK: his leather cuirass is exactly as in {{ref:Castor}}.",
+        "state": "Following close behind, carrying a heavy brass hurricane lantern."
+      }
+    ],
+    "timeline_action": {
+      "0-2s": "Matching Panel 1 (Top-Left) of {{media:d10e41b8-8292-4074-bab2-343d7564a70f|SC-12_storyboard_clean.jpg}} (0-2s): From second 0, Nora strides decisively through the companionway and speaks immediately in a sharp command voice: Nora says \"Clear the captain's table now. Bring the skinning irons and sea-salt.\" (no subtitles).",
+      "2-4s": "At second 2.0, a crisp hard cut matching Panel 2 (Top-Right) of {{media:d10e41b8-8292-4074-bab2-343d7564a70f|SC-12_storyboard_clean.jpg}} (2-4s): Her line finishes cleanly by second 3; she pushes open the heavy carved oak door of the cabin, revealing the map room inside.",
+      "4-6s": "At second 4.0, a crisp hard cut matching Panel 3 (Bottom-Left) of {{media:d10e41b8-8292-4074-bab2-343d7564a70f|SC-12_storyboard_clean.jpg}} (4-6s): Castor nods curtly, raising the brass lantern high to illuminate the interior as they enter. Strictly Castor alone in this focal framing; Nora are completely off-screen or in distinct background separation, never overlapping. SPATIAL LOCK: All characters stand firmly INSIDE the vessel on the solid wooden deck planks (or interior solid ground), NEVER on the exterior ocean/water side of the railing; maintain Panel 3's exact 180-degree camera side without flipping left and right sides."
+    },
+    "speech": {
+      "speaker": [
+        "Nora"
+      ],
+      "voices": {
+        "Nora": "kore"
+      },
+      "delivery": "sharp, brisk, pragmatic command while walking",
+      "dialogue": [
+        {
+          "t": "0-3s",
+          "speaker": "Nora",
+          "line": "Clear the captain's table now. Bring the skinning irons and sea-salt."
+        }
+      ]
+    },
+    "dramatic_craft": {
+      "beat": "[0]: Transition to dissection and forensic discovery.",
+      "value_turn": "Deck capture (+) -> Enclosed investigation (0): Seclusion for examination.",
+      "subtext": "Nora keeps the crew from seeing what might cause mutiny or panic.",
+      "prop_and_detail": "Carved oak door with iron latch, heavy brass ship lantern with smoked glass."
+    },
+    "audio": "Nora's brisk command; rhythmic thud of leather boots on wood; clink of brass lantern ring.",
+    "physics": "Dynamic walking pace through narrow ship corridor, shadows swinging across ceiling beams.",
+    "negative_constraints": [
+      "No subtitles, no captions, no on-frame text, no logos, no watermarks.",
+      "The video is full-frame shots only: never a grid, never panels, never split screen, never black dividing lines; strictly NO duplicate characters, strictly NO multiple Nora, Castor, no ghost figures, no cloning; strictly NO character standing outside the ship hull or on the exterior water/ocean side of the railing, no 180-degree axis fusion between panels; crisp hard cuts at second 2.0 and second 4.0, no camera blending, no crossfades.",
+      "ANTI-CGI LOCK: real documentary footage, not a 3D render, not a video game, not CGI fire, no plastic skin.",
+      "No breath vapor and no white steam from anyone's mouth; no god rays, no volumetric beams, no magical sunbeams.",
+      "No shallow depth of field, no blurry background, no bokeh (f/8 aperture throughout).",
+      "Separate bodies never merge; natural hands with five fingers; no extra limbs."
+    ],
+    "image_prompt": "Cinematic medium tracking shot on 35mm film. In the narrow oak companionway of a wooden pirate galleon lit by iron torch sconces, Captain {{ref:Nora}} wearing {{ref:Nora Body Seafarer}} strides purposefully toward a carved cabin door, followed by {{ref:Castor}} carrying a brass lantern. Deep focus (f/8), rich golden chiaroscuro, authentic timber textures, strictly NO artificial volumetric lighting, NO 3D CGI."
+  },
+  {
+    "clip_id": "SC-13",
+    "scene_name": "Không gian mổ cá ngột ngạt",
+    "duration": 8,
+    "aspect_ratio": "16:9",
+    "refs": [
+      "Nora",
+      "Nora Body Seafarer",
+      "Castor",
+      "Heracles",
+      "Omen Fish"
+    ],
+    "sf_type": "GENERATE_IMAGE",
+    "camera": {
+      "viewpoint": "third-person cinematic camera; the camera itself is never seen",
+      "shot_size": "Multi-shot matching SC-13_storyboard_clean.jpg",
+      "description": "Multi-shot sequence with crisp hard cuts: Shot 1 (0-3s) -> Hard Cut at 3.0s -> Shot 2 (3-6s) -> Hard Cut at 6.0s -> Shot 3 (6-8s). 35mm Cooke S4 prime lens with deep focus (f/8 aperture), entire frame sharp."
+    },
+    "setting": "Location: captain's cabin. Heavy oak beams, parchment charts tacked to plank walls, bronze navigational astrolabes. Light: warm practical glow from a brass gimbal chandelier overhead casting deep Rembrandt shadows across the massive oak dissection table.",
+    "characters": [
+      {
+        "name": "Nora",
+        "visual_lock": "FACE LOCK: Nora's face is exactly the face in {{ref:Nora}}, kept 1:1. BODY and OUTFIT LOCK: her build and navy seafarer brigandine are exactly as in {{ref:Nora Body Seafarer}}.",
+        "state": "Standing at the head of the heavy table, sleeves rolled to forearms."
+      },
+      {
+        "name": "Heracles",
+        "visual_lock": "FACE LOCK: Heracles's face is exactly the face in {{ref:Heracles}}, kept 1:1. BODY and OUTFIT LOCK: his massive frame is exactly as in {{ref:Heracles}}.",
+        "state": "Laying the grotesque black fish flat onto the wooden tabletop."
+      },
+      {
+        "name": "Castor",
+        "visual_lock": "FACE LOCK: Castor's face is exactly the face in {{ref:Castor}}, kept 1:1. BODY and OUTFIT LOCK: his leather armor is exactly as in {{ref:Castor}}.",
+        "state": "Placing a bowl of sea salt and iron tools beside the table."
+      },
+      {
+        "name": "Omen Fish",
+        "visual_lock": "CREATURE ANATOMY, SCALE & WEIGHT LOCK: The Omen Fish is 1:1 identical to {{ref:Omen Fish}}: a massive 1.7m-1.9m (1.8-meter) long, 80 kg prehistoric armored coelacanth with thick 45cm girth, charcoal-black polygonal scale plates, spiny lobed fins, grotesque needle-fanged jaw, milky cataract eyes, and cyan-emerald bioluminescent ventral scales.",
+        "state": "Massive 1.8m, 80kg armored coelacanth carcass lying heavy and full-length (never a small fish or handheld bundle)."
+      }
+    ],
+    "timeline_action": {
+      "0-3s": "Matching Panel 1 (Top-Left) of {{media:1e74c4f6-a00f-4ffc-ba15-b18a1247acc2|SC-13_storyboard_clean.jpg}} (0-3s): Heracles heaves the limp, heavy black abyssal fish onto the center of the scarred oak table; the creature's wet armor plates slap the wood with a heavy squelch.",
+      "3-6s": "At second 3.0, a crisp hard cut matching Panel 2 (Top-Right) of {{media:1e74c4f6-a00f-4ffc-ba15-b18a1247acc2|SC-13_storyboard_clean.jpg}} (3-6s): A faint pulsating emerald luminescence radiates from the creature's underbelly, casting green reflections across the rolled sea charts on the wall.",
+      "6-8s": "At second 6.0, a crisp hard cut matching Panel 3 (Bottom-Left) of {{media:1e74c4f6-a00f-4ffc-ba15-b18a1247acc2|SC-13_storyboard_clean.jpg}} (6-8s): Nora steps forward to the table edge, resting both palms on the wood as Castor places two iron skinning knives beside her. Strictly Castor alone in this focal framing; Nora and Heracles are completely off-screen or in distinct background separation, never overlapping. SPATIAL LOCK: All characters stand firmly INSIDE the vessel on the solid wooden deck planks (or interior solid ground), NEVER on the exterior ocean/water side of the railing; maintain Panel 3's exact 180-degree camera side without flipping left and right sides."
+    },
+    "speech": {
+      "speaker": [],
+      "voices": {},
+      "delivery": "no dialogue; tense silent preparation and creaking ship timbers",
+      "dialogue": []
+    },
+    "dramatic_craft": {
+      "beat": "[0]: Tension before the anatomical dissection.",
+      "value_turn": "Preparation (0) -> Breathless focus (0): Intimate claustrophobic suspense.",
+      "subtext": "Each seafarer knows this moment will alter the voyage irreversibly.",
+      "prop_and_detail": "Heavy scarred oak table, bronze dissecting irons, green bioluminescent glow."
+    },
+    "audio": "Groaning oak bulkhead timbers, heavy wet thud of fish on table, low sinister drone of bioluminescence (Sonic Isolation: 0 words).",
+    "physics": "Heavy biological inertia settling onto table, viscous fluid spreading slowly, chandelier swinging slightly with roll. SCALE & MASS LOCK (CRITICAL): The Omen Fish ({{ref:Omen Fish}}) is a colossal prehistoric armored coelacanth strictly 1.7 to 1.9 meters (1.8m) long and 80 kg in heavy biological mass, as long as a full-grown adult human with a thick 45cm body girth, charcoal-black polygonal armor scale plates, spiny lobed fins, grotesque underbite jaw with needle fangs, milky blind cataract eyes, and cyan-emerald bioluminescent belly scales; it spans the entire length of the skiff floorboards or end-to-end across the full 2-meter oak dissection table—strictly NEVER a small 50cm-100cm fish, NEVER a handheld parcel, and NO external metal tubes stuck to its outer skin.",
+    "negative_constraints": [
+      "No subtitles, no captions, no on-frame text, no logos, no watermarks.",
+      "The video is full-frame shots only: never a grid, never panels, never split screen, never black dividing lines; strictly NO duplicate characters, strictly NO multiple Nora, Heracles, Castor, no ghost figures, no cloning; strictly NO character standing outside the ship hull or on the exterior water/ocean side of the railing, no 180-degree axis fusion between panels; crisp hard cuts at second 3.0 and second 6.0, no camera blending, no crossfades; strictly NO small fish under 1.7 meters, NO handheld fish bundle, NO external metal tube outside the fish scales.",
+      "ANTI-CGI LOCK: real documentary footage, not a 3D render, not a video game, not CGI fire, no plastic skin.",
+      "No breath vapor and no white steam from anyone's mouth; no god rays, no volumetric beams, no magical sunbeams.",
+      "No shallow depth of field, no blurry background, no bokeh (f/8 aperture throughout).",
+      "Separate bodies never merge; natural hands with five fingers; no extra limbs."
+    ],
+    "image_prompt": "Cinematic wide interior shot on 35mm film. Inside the wood-paneled captain's cabin lit by an overhead gimbal lantern, the grotesque black abyssal fish lies on a heavy oak table. Captain {{ref:Nora}} in {{ref:Nora Body Seafarer}} stands at the table head, flanked by muscular {{ref:Heracles}} and watchful {{ref:Castor}}. Deep focus (f/8), rich dark chiaroscuro, strictly NO artificial volumetric lighting, NO 3D CGI."
+  },
+  {
+    "clip_id": "SC-14",
+    "scene_name": "Chuẩn bị rạch bụng cá",
+    "duration": 8,
+    "aspect_ratio": "16:9",
+    "refs": [
+      "Nora",
+      "Nora Body Seafarer",
+      "Omen Fish"
+    ],
+    "sf_type": "PREV_LAST_FRAME",
+    "camera": {
+      "viewpoint": "third-person cinematic camera; the camera itself is never seen",
+      "shot_size": "MCU",
+      "description": "Medium close-up table-level shot on 35mm Cooke S4 lens, deep focus (f/8 aperture), focusing on Nora's precise knife grip."
+    },
+    "setting": "Location: captain's cabin table. Light: harsh practical side light from oil lamp catching the polished bronze blade edge and slimy charcoal scales.",
+    "characters": [
+      {
+        "name": "Nora",
+        "visual_lock": "FACE LOCK: Nora's face is exactly the face in {{ref:Nora}}, kept 1:1. BODY and OUTFIT LOCK: her build and seafarer armor are exactly as in {{ref:Nora Body Seafarer}}.",
+        "state": "Drawing an ancient Greek short sword, setting the tip beneath the creature's pectoral fin."
+      },
+      {
+        "name": "Omen Fish",
+        "visual_lock": "CREATURE ANATOMY, SCALE & WEIGHT LOCK: The Omen Fish is 1:1 identical to {{ref:Omen Fish}}: a massive 1.7m-1.9m (1.8-meter) long, 80 kg prehistoric armored coelacanth with thick 45cm girth, charcoal-black polygonal scale plates, spiny lobed fins, grotesque needle-fanged jaw, milky cataract eyes, and cyan-emerald bioluminescent ventral scales.",
+        "state": "Massive 1.8m, 80kg armored coelacanth carcass lying heavy and full-length (never a small fish or handheld bundle)."
+      }
+    ],
+    "timeline_action": {
+      "0-3s": "From second 0, Nora draws her bronze-tipped short sword from its sheath with a metallic scrape and begins speaking immediately: Nora says \"Its thick scales are tough as forged bronze plate. Hold the thrashing tail steady with both iron hands, Heracles.\" (no subtitles).",
+      "3-6s": "She positions the sharp blade point just beneath the creature's spiny gill plate; the fish twitches violently as Heracles leans his full weight onto its tail.",
+      "6-8s": "Nora finishes by second 6, wearing leather gloves, tightening her grip as she prepares the initial incision. SPATIAL LOCK: All characters remain firmly INSIDE on the solid wooden deck planks, NEVER on the exterior ocean side of the railing."
+    },
+    "speech": {
+      "speaker": [
+        "Nora"
+      ],
+      "voices": {
+        "Nora": "kore"
+      },
+      "delivery": "focused, surgical command, steady and razor-sharp",
+      "dialogue": [
+        {
+          "t": "0-6s",
+          "speaker": "Nora",
+          "line": "Its thick scales are tough as forged bronze plate. Hold the thrashing tail steady with both iron hands, Heracles."
+        }
+      ]
+    },
+    "dramatic_craft": {
+      "beat": "[0]: Surgical incision preparation.",
+      "value_turn": "Observation (0) -> Decisive act (0): Breaching the vessel.",
+      "subtext": "Nora knows opening this beast releases whatever curse lies within.",
+      "prop_and_detail": "Greek short sword with bone hilt, tough Coelacanth scales resistant to iron."
+    },
+    "audio": "Nora's calm focused voice; metallic hiss of blade drawn from scabbard; creak of leather gloves.",
+    "physics": "Blade tip pressing into thick dermal denticles, resistant scale deflection before puncture. SCALE & MASS LOCK (CRITICAL): The Omen Fish ({{ref:Omen Fish}}) is a colossal prehistoric armored coelacanth strictly 1.7 to 1.9 meters (1.8m) long and 80 kg in heavy biological mass, as long as a full-grown adult human with a thick 45cm body girth, charcoal-black polygonal armor scale plates, spiny lobed fins, grotesque underbite jaw with needle fangs, milky blind cataract eyes, and cyan-emerald bioluminescent belly scales; it spans the entire length of the skiff floorboards or end-to-end across the full 2-meter oak dissection table—strictly NEVER a small 50cm-100cm fish, NEVER a handheld parcel, and NO external metal tubes stuck to its outer skin.",
+    "negative_constraints": [
+      "No subtitles, no captions, no on-frame text, no logos, no watermarks.",
+      "Continuous direct scene sequence: strictly NO duplicate characters, strictly NO multiple Nora, Omen Fish, strictly NO character standing outside the ship hull or on the exterior water/ocean side of the railing, no ghost figures, no cloning, separate bodies never merge, no split screen; strictly NO small fish under 1.7 meters, NO handheld fish bundle, NO external metal tube outside the fish scales.",
+      "ANTI-CGI LOCK: real documentary footage, not a 3D render, not a video game, not CGI fire, no plastic skin.",
+      "No breath vapor and no white steam from anyone's mouth; no god rays, no volumetric beams, no magical sunbeams.",
+      "No shallow depth of field, no blurry background, no bokeh (f/8 aperture throughout).",
+      "Separate bodies never merge; natural hands with five fingers; no extra limbs."
+    ]
+  },
+  {
+    "clip_id": "SC-15",
+    "scene_name": "Mổ bụng giải phóng lân tinh",
+    "duration": 8,
+    "aspect_ratio": "16:9",
+    "refs": [
+      "Nora",
+      "Omen Fish"
+    ],
+    "sf_type": "GENERATE_IMAGE",
+    "camera": {
+      "viewpoint": "third-person cinematic camera; the camera itself is never seen",
+      "shot_size": "Multi-shot matching SC-15_storyboard_clean.jpg",
+      "description": "Multi-shot sequence with crisp hard cuts: Shot 1 (0-3s) -> Hard Cut at 3.0s -> Shot 2 (3-6s) -> Hard Cut at 6.0s -> Shot 3 (6-8s). 35mm Cooke S4 prime lens with deep focus (f/8 aperture), entire frame sharp."
+    },
+    "setting": "Location: surface of oak dissection table. Light: brilliant emerald-cyan bioluminescent glow erupting from the open incision, illuminating Nora's blade and leather-clad fingers.",
+    "characters": [
+      {
+        "name": "Nora",
+        "visual_lock": "FACE LOCK: Nora's face is exactly the face in {{ref:Nora}}, kept 1:1. Wearing leather gloves, she holds the blade firmly.",
+        "state": "Drawing the razor-sharp sword edge down the creature's belly line."
+      },
+      {
+        "name": "Omen Fish",
+        "visual_lock": "CREATURE ANATOMY, SCALE & WEIGHT LOCK: The Omen Fish is 1:1 identical to {{ref:Omen Fish}}: a massive 1.7m-1.9m (1.8-meter) long, 80 kg prehistoric armored coelacanth with thick 45cm girth, charcoal-black polygonal scale plates, spiny lobed fins, grotesque needle-fanged jaw, milky cataract eyes, and cyan-emerald bioluminescent ventral scales.",
+        "state": "Massive 1.8m, 80kg armored coelacanth carcass lying heavy and full-length (never a small fish or handheld bundle)."
+      }
+    ],
+    "timeline_action": {
+      "0-3s": "Matching Panel 1 (Top-Left) of {{media:e926a2cc-374a-4b49-895d-b21327164eea|SC-15_storyboard_clean.jpg}} (0-3s): Nora draws the bronze-tipped blade along the ventral midline in one continuous, decisive motion; the tough scales part with a crisp crunching sound.",
+      "3-6s": "At second 3.0, a crisp hard cut matching Panel 2 (Top-Right) of {{media:e926a2cc-374a-4b49-895d-b21327164eea|SC-15_storyboard_clean.jpg}} (3-6s): A thick, luminous emerald fluid laden with glowing quartz-like granules pours out over the dark oak wood, illuminating the tabletop with supernatural light.",
+      "6-8s": "At second 6.0, a crisp hard cut matching Panel 3 (Bottom-Left) of {{media:e926a2cc-374a-4b49-895d-b21327164eea|SC-15_storyboard_clean.jpg}} (6-8s): The belly cavity gapes open, revealing dark internal organs wrapped around a tightly bound cylindrical object. Strictly Omen Fish alone in this focal framing; Nora are completely off-screen or in distinct background separation, never overlapping. SPATIAL LOCK: All characters stand firmly INSIDE the vessel on the solid wooden deck planks (or interior solid ground), NEVER on the exterior ocean/water side of the railing; maintain Panel 3's exact 180-degree camera side without flipping left and right sides."
+    },
+    "speech": {
+      "speaker": [],
+      "voices": {},
+      "delivery": "no dialogue; sound of cutting cartilage and bubbling visceral fluid",
+      "dialogue": []
+    },
+    "dramatic_craft": {
+      "beat": "[!]: Breaching the mystery package.",
+      "value_turn": "Anticipation (0) -> Supernatural shock (!): Releasing the bioluminescent core.",
+      "subtext": "The glowing visceral fluid confirms this is no ordinary ocean creature.",
+      "prop_and_detail": "Viscous green bioluminescent bile with shimmering mineral flakes, bronze blade edge."
+    },
+    "audio": "Crunch of cutting thick fish cartilage, wet bubbling gush of visceral fluid, faint glassy hiss (Sonic Isolation: 0 words).",
+    "physics": "Tension release of abdominal cavity, viscous non-Newtonian fluid spreading slowly over oak grain. SCALE & MASS LOCK (CRITICAL): The Omen Fish ({{ref:Omen Fish}}) is a colossal prehistoric armored coelacanth strictly 1.7 to 1.9 meters (1.8m) long and 80 kg in heavy biological mass, as long as a full-grown adult human with a thick 45cm body girth, charcoal-black polygonal armor scale plates, spiny lobed fins, grotesque underbite jaw with needle fangs, milky blind cataract eyes, and cyan-emerald bioluminescent belly scales; it spans the entire length of the skiff floorboards or end-to-end across the full 2-meter oak dissection table—strictly NEVER a small 50cm-100cm fish, NEVER a handheld parcel, and NO external metal tubes stuck to its outer skin.",
+    "negative_constraints": [
+      "No subtitles, no captions, no on-frame text, no logos, no watermarks.",
+      "The video is full-frame shots only: never a grid, never panels, never split screen, never black dividing lines; strictly NO duplicate characters, strictly NO multiple Nora, Omen Fish, no ghost figures, no cloning; strictly NO character standing outside the ship hull or on the exterior water/ocean side of the railing, no 180-degree axis fusion between panels; crisp hard cuts at second 3.0 and second 6.0, no camera blending, no crossfades; strictly NO small fish under 1.7 meters, NO handheld fish bundle, NO external metal tube outside the fish scales.",
+      "ANTI-CGI LOCK: real documentary footage, not a 3D render, not a video game, not CGI fire, no plastic skin.",
+      "No breath vapor and no white steam from anyone's mouth; no god rays, no volumetric beams, no magical sunbeams.",
+      "No shallow depth of field, no blurry background, no bokeh (f/8 aperture throughout).",
+      "Separate bodies never merge; natural hands with five fingers; no extra limbs."
+    ],
+    "image_prompt": "A film storyboard sheet, 16:9, made of FOUR photographic panels in a tight 2 by 2 grid, separated only by thin straight black gutters; each panel is itself a 16:9 frame; no text, no numbers, no arrows, no captions anywhere. All four panels are cinematic feature-film stills of ONE continuous moment in Location: scarred 2-meter oak dissection table in the captain's cabin. Light: warm practical amber chandelier light overhead mixing with cold cyan-emerald bioluminescent glow from the giant creature's ventral scales; featuring {{media:f9f67999-685f-4d61-9c74-2ed16c6c393c|omen_fish_clean.jpg}} (prehistoric armored coelacanth 1:1: strictly 1.8 meters long [1.7m-1.9m] and 80 kg heavy—as long as an adult human, spanning end-to-end across the entire 2-meter oak table with a massive 45cm-thick body girth and huge 35cm armored head with needle fangs and milky cataract eyes; strictly NEVER a small fish), {{media:62e117f8-0af7-484e-90a8-f79927105746|nora_clean.jpg}} (face 1:1, braided copper-red hair, wearing seafarer brigandine armor and leather vambraces as in {{media:743ef618-f4c5-456c-9285-56dd911ca94b|nora_body_seafarer_clean.jpg}}).\nTOP-LEFT PANEL, second 0: [MS] Medium shot at the oak table showing the colossal 1.8-meter-long, 80kg armored Coelacanth spanning the entire length of the table (its massive head and torso dwarfing Nora's hands); Nora presses the tip of a forged iron skinning knife into the thick glowing emerald ventral seam of the giant 1.8m fish.\nTOP-RIGHT PANEL, second 3: [MCU] Close-up on the massive 45cm-thick armored belly of the 1.8-meter, 80kg Coelacanth as Nora's blade slices along the ventral seam; dark sea-blood and luminous emerald ichor seep between the large charcoal-black polygonal scale plates.\nBOTTOM-LEFT PANEL, second 6: [MCU] Close-up on the giant 1.8m, 80kg Coelacanth's opened belly cavity: Nora's gloved hands pull apart the thick muscular rib walls of the giant leviathan fish, revealing a wax-sealed ancient parchment scroll cylinder nestled deep inside the glowing visceral cavity.\nBOTTOM-RIGHT PANEL, second 8: [MS] Medium angle showing the colossal 1.8-meter-long, 80kg armored Coelacanth stretching end-to-end across the oak table with the wax-sealed scroll cylinder visible inside its glowing opened belly cavity as Nora holds the incision open.\ncinematic feature-film look: shot on ARRI Alexa with Cooke S4 prime lenses, fine 35mm film grain, deep focus (f/8), motivated practical light, realistic physics, fish carcass lying heavy on its side with real 80kg dead weight and wet glistening sea-slime (strictly NOT propped upright on its fins like a plastic toy), strictly NOT a 3D render, NOT CGI, zero watermark, zero logos."
+  },
+  {
+    "clip_id": "SC-16",
+    "scene_name": "Sốc trước mùi hôi biển sâu",
+    "duration": 8,
+    "aspect_ratio": "16:9",
+    "refs": [
+      "Castor",
+      "Heracles",
+      "Nora",
+      "Omen Fish"
+    ],
+    "sf_type": "GENERATE_IMAGE",
+    "camera": {
+      "viewpoint": "third-person cinematic camera; the camera itself is never seen",
+      "shot_size": "Multi-shot matching SC-16_storyboard_clean.jpg",
+      "description": "Multi-shot sequence with crisp hard cuts: Shot 1 (0-3s) -> Hard Cut at 3.0s -> Shot 2 (3-6s) -> Hard Cut at 6.0s -> Shot 3 (6-8s). 35mm Cooke S4 prime lens with deep focus (f/8 aperture), entire frame sharp."
+    },
+    "setting": "Location: captain's cabin around the dissection table. Light: emerald bioluminescent up-light from the table mingling with amber overhead chandelier light on the men's faces.",
+    "characters": [
+      {
+        "name": "Castor",
+        "visual_lock": "FACE LOCK: Castor's face is exactly the face in {{ref:Castor}}, kept 1:1. BODY and OUTFIT LOCK: his leather armor is exactly as in {{ref:Castor}}.",
+        "state": "Recoiling a step, pinching his nose and gagging from the foul sulfur stench."
+      },
+      {
+        "name": "Heracles",
+        "visual_lock": "FACE LOCK: Heracles's face is exactly the face in {{ref:Heracles}}, kept 1:1. BODY and OUTFIT LOCK: his massive frame is exactly as in {{ref:Heracles}}.",
+        "state": "Grimacing with disgust, squinting through the pungent odor."
+      },
+      {
+        "name": "Nora",
+        "visual_lock": "FACE LOCK: Nora's face is exactly the face in {{ref:Nora}}, kept 1:1.",
+        "state": "Unflinching, staring intently into the opened gut."
+      },
+      {
+        "name": "Omen Fish",
+        "visual_lock": "CREATURE ANATOMY, SCALE & WEIGHT LOCK: The Omen Fish is 1:1 identical to {{ref:Omen Fish}}: a massive 1.7m-1.9m (1.8-meter) long, 80 kg prehistoric armored coelacanth with thick 45cm girth, charcoal-black polygonal scale plates, spiny lobed fins, grotesque needle-fanged jaw, milky cataract eyes, and cyan-emerald bioluminescent ventral scales.",
+        "state": "Massive 1.8m, 80kg armored coelacanth carcass lying heavy and full-length (never a small fish or handheld bundle)."
+      }
+    ],
+    "timeline_action": {
+      "0-3s": "Matching Panel 1 (Top-Left) of {{media:050d1587-7b86-4bde-b5d1-4d499e885be0|SC-16_storyboard_clean.jpg}} (0-3s): From second 0, Castor steps backward, covers his mouth with his sleeve, and gasps in disgust: Castor says \"By the gods below, it stinks of black sulfur, rotting kelp, and dead ocean trenches that never see the sun.\" (no subtitles).",
+      "3-6s": "At second 3.0, a crisp hard cut matching Panel 2 (Top-Right) of {{media:050d1587-7b86-4bde-b5d1-4d499e885be0|SC-16_storyboard_clean.jpg}} (3-6s): His muffled line ends as Heracles spits on the deck in revulsion; yet Nora stands entirely unmoved, her eyes gleaming with cold fascination.",
+      "6-8s": "At second 6.0, a crisp hard cut matching Panel 3 (Bottom-Left) of {{media:050d1587-7b86-4bde-b5d1-4d499e885be0|SC-16_storyboard_clean.jpg}} (6-8s): Castor finishes by second 6, waving his hand before his face while Nora leans closer toward the glowing innards. Strictly Nora alone in this focal framing; Castor and Heracles are completely off-screen or in distinct background separation, never overlapping. SPATIAL LOCK: All characters stand firmly INSIDE the vessel on the solid wooden deck planks (or interior solid ground), NEVER on the exterior ocean/water side of the railing; maintain Panel 3's exact 180-degree camera side without flipping left and right sides."
+    },
+    "speech": {
+      "speaker": [
+        "Castor"
+      ],
+      "voices": {
+        "Castor": "fenrir"
+      },
+      "delivery": "choked, gagging revulsion, sharp and disgusted",
+      "dialogue": [
+        {
+          "t": "0-6s",
+          "speaker": "Castor",
+          "line": "By the gods below, it stinks of black sulfur, rotting kelp, and dead ocean trenches that never see the sun."
+        }
+      ]
+    },
+    "dramatic_craft": {
+      "beat": "[-]: Visceral olfactory shock.",
+      "value_turn": "Supernatural wonder (+) -> Repulsion (-): Primordial abyssal decay.",
+      "subtext": "The abyssal trench is toxic to normal mortal men.",
+      "prop_and_detail": "Linen sleeve pressed over nose, spit on floorboards, green reflections in eyes."
+    },
+    "audio": "Castor's choked gagging line; Heracles spitting on wood; sizzling hiss of acidic fluid.",
+    "physics": "Instinctive recoil flinch, respiratory gag reflex, stable stance of Nora contrasting with men. SCALE & MASS LOCK (CRITICAL): The Omen Fish ({{ref:Omen Fish}}) is a colossal prehistoric armored coelacanth strictly 1.7 to 1.9 meters (1.8m) long and 80 kg in heavy biological mass, as long as a full-grown adult human with a thick 45cm body girth, charcoal-black polygonal armor scale plates, spiny lobed fins, grotesque underbite jaw with needle fangs, milky blind cataract eyes, and cyan-emerald bioluminescent belly scales; it spans the entire length of the skiff floorboards or end-to-end across the full 2-meter oak dissection table—strictly NEVER a small 50cm-100cm fish, NEVER a handheld parcel, and NO external metal tubes stuck to its outer skin.",
+    "negative_constraints": [
+      "No subtitles, no captions, no on-frame text, no logos, no watermarks.",
+      "The video is full-frame shots only: never a grid, never panels, never split screen, never black dividing lines; strictly NO duplicate characters, strictly NO multiple Castor, Heracles, Nora, no ghost figures, no cloning; strictly NO character standing outside the ship hull or on the exterior water/ocean side of the railing, no 180-degree axis fusion between panels; crisp hard cuts at second 3.0 and second 6.0, no camera blending, no crossfades; strictly NO small fish under 1.7 meters, NO handheld fish bundle, NO external metal tube outside the fish scales.",
+      "ANTI-CGI LOCK: real documentary footage, not a 3D render, not a video game, not CGI fire, no plastic skin.",
+      "No breath vapor and no white steam from anyone's mouth; no god rays, no volumetric beams, no magical sunbeams.",
+      "No shallow depth of field, no blurry background, no bokeh (f/8 aperture throughout).",
+      "Separate bodies never merge; natural hands with five fingers; no extra limbs."
+    ],
+    "image_prompt": "A film storyboard sheet, 16:9, made of FOUR photographic panels in a tight 2 by 2 grid, separated only by thin straight black gutters; each panel is itself a 16:9 frame; no text, no numbers, no arrows, no captions anywhere. All four panels are cinematic feature-film stills of ONE continuous moment in Location: captain's cabin around the 2-meter oak dissection table. Light: 85% dominant warm amber illumination from the overhead brass chandelier with a subtle cyan-emerald bioluminescent glow from the opened belly of the giant fish; featuring {{media:3152a235-af4f-462b-a78e-02551f826e41|castor_clean.jpg}} (face 1:1, leather cuirass), {{media:37a10133-8496-49e7-bd77-b5f261c5a43e|heracles_clean.jpg}} (face 1:1, massive muscular build), {{media:62e117f8-0af7-484e-90a8-f79927105746|nora_clean.jpg}} (face 1:1, braided red hair, seafarer brigandine as in {{media:743ef618-f4c5-456c-9285-56dd911ca94b|nora_body_seafarer_clean.jpg}}), {{media:f9f67999-685f-4d61-9c74-2ed16c6c393c|omen_fish_clean.jpg}} (colossal prehistoric armored coelacanth: strictly 1.8 meters long [1.7m-1.9m] and 80 kg heavy—spanning end-to-end across the entire 2-meter oak table with a thick 45cm body girth, identical in massive scale to SC-13; strictly NEVER a 1-meter fish).\nTOP-LEFT PANEL, second 0: [MS] Three-character shot around the oak table: the colossal 1.8-meter-long, 80kg armored Coelacanth spans the entire length of the table from left edge to right edge; the stench of abyssal sulfur hits the room—Castor steps back pressing his cloth to his nose, Heracles grimaces, and Nora leans over the giant 1.8m carcass.\nTOP-RIGHT PANEL, second 3: [MCU] Medium close-up on Castor and Heracles behind the massive 1.8m fish carcass: Castor waves his hand in disgust while pressing a cloth to his nose; Heracles turns his scarred face aside.\nBOTTOM-LEFT PANEL, second 6: [MS] Two-shot of Nora and Castor across the colossal 1.8-meter-long, 80kg armored Coelacanth spanning the full length of the oak table; Castor points warningly at the giant opened carcass while Nora keeps her gaze locked on its glowing cavity.\nBOTTOM-RIGHT PANEL, second 8: [MS] Wide medium shot of the three pirates around the oak table: the massive 1.8-meter-long, 80kg Coelacanth stretches end-to-end across the entire table emitting a subtle emerald glow from its opened belly.\ncinematic feature-film look: shot on ARRI Alexa with Cooke S4 prime lenses, fine 35mm film grain, deep focus (f/8), motivated practical light, realistic physics, fish carcass lying heavy on its side with real 80kg dead weight and wet glistening sea-slime (strictly NOT propped upright on its fins like a plastic toy), strictly NOT a 3D render, NOT CGI, zero watermark, zero logos."
+  },
+  {
+    "clip_id": "SC-17",
+    "scene_name": "Phát hiện bọc da cừu giấu kín",
+    "duration": 8,
+    "aspect_ratio": "16:9",
+    "refs": [
+      "Nora",
+      "Omen Fish"
+    ],
+    "sf_type": "GENERATE_IMAGE",
+    "camera": {
+      "viewpoint": "third-person cinematic camera; the camera itself is never seen",
+      "shot_size": "Multi-shot matching SC-17_storyboard_clean.jpg",
+      "description": "Multi-shot sequence with crisp hard cuts: Shot 1 (0-3s) -> Hard Cut at 3.0s -> Shot 2 (3-6s) -> Hard Cut at 6.0s -> Shot 3 (6-8s). 35mm Cooke S4 prime lens with deep focus (f/8 aperture), entire frame sharp."
+    },
+    "setting": "Location: open carcass of the fish on the oak table. Light: green bioluminescence mixing with warm amber light from Nora's side-mounted oil lamp.",
+    "characters": [
+      {
+        "name": "Nora",
+        "visual_lock": "FACE LOCK: Nora's face is exactly the face in {{ref:Nora}}, kept 1:1. Her leather-gloved hands reach deep into the visceral cavity.",
+        "state": "Probing carefully beneath the creature's curved spine."
+      },
+      {
+        "name": "Omen Fish",
+        "visual_lock": "CREATURE ANATOMY, SCALE & WEIGHT LOCK: The Omen Fish is 1:1 identical to {{ref:Omen Fish}}: a massive 1.7m-1.9m (1.8-meter) long, 80 kg prehistoric armored coelacanth with thick 45cm girth, charcoal-black polygonal scale plates, spiny lobed fins, grotesque needle-fanged jaw, milky cataract eyes, and cyan-emerald bioluminescent ventral scales.",
+        "state": "Massive 1.8m, 80kg armored coelacanth carcass lying heavy and full-length (never a small fish or handheld bundle)."
+      }
+    ],
+    "timeline_action": {
+      "0-3s": "Matching Panel 1 (Top-Left) of {{media:4f556610-4918-42f7-9ea0-d7cc67598c62|SC-17_storyboard_clean.jpg}} (0-3s): From second 0, Nora reaches deep into the glistening viscera and speaks in a low, intense revelation voice: Nora says \"Not stones or ballast. There is a tightly wrapped bundle wedged firmly beneath the creature's curved spine and ribcage.\" (no subtitles).",
+      "3-6s": "At second 3.0, a crisp hard cut matching Panel 2 (Top-Right) of {{media:4f556610-4918-42f7-9ea0-d7cc67598c62|SC-17_storyboard_clean.jpg}} (3-6s): Wearing leather gloves, her fingers touch a rigid, smooth cylindrical parcel; she works her fingers around the slimy membrane to free it.",
+      "6-8s": "At second 6.0, a crisp hard cut matching Panel 3 (Bottom-Left) of {{media:4f556610-4918-42f7-9ea0-d7cc67598c62|SC-17_storyboard_clean.jpg}} (6-8s): Her line finishes cleanly by second 6; she grips the dry, impervious object and prepares to lift it clear of the carcass. Strictly Omen Fish alone in this focal framing; Nora are completely off-screen or in distinct background separation, never overlapping. SPATIAL LOCK: All characters stand firmly INSIDE the vessel on the solid wooden deck planks (or interior solid ground), NEVER on the exterior ocean/water side of the railing; maintain Panel 3's exact 180-degree camera side without flipping left and right sides."
+    },
+    "speech": {
+      "speaker": [
+        "Nora"
+      ],
+      "voices": {
+        "Nora": "kore"
+      },
+      "delivery": "low, intense, triumphant discovery, focused and sharp",
+      "dialogue": [
+        {
+          "t": "0-6s",
+          "speaker": "Nora",
+          "line": "Not stones or ballast. There is a tightly wrapped bundle wedged firmly beneath the creature's curved spine and ribcage."
+        }
+      ]
+    },
+    "dramatic_craft": {
+      "beat": "[+]: Physical retrieval of the hidden artifact.",
+      "value_turn": "Disgust (-) -> Exhilaration (+): Finding the ancient secret.",
+      "subtext": "The fisherman spoke truth; someone deliberately placed this inside the leviathan.",
+      "prop_and_detail": "Tightly wrapped cylindrical sheepskin parchment roll, waterproof wax sealant."
+    },
+    "audio": "Nora's intense low voice; squelch of moving viscera; dull clink of wax cylinder against bone.",
+    "physics": "Fingers navigating wet anatomical cavity, suction breaking as bundle is dislodged. SCALE & MASS LOCK (CRITICAL): The Omen Fish ({{ref:Omen Fish}}) is a colossal prehistoric armored coelacanth strictly 1.7 to 1.9 meters (1.8m) long and 80 kg in heavy biological mass, as long as a full-grown adult human with a thick 45cm body girth, charcoal-black polygonal armor scale plates, spiny lobed fins, grotesque underbite jaw with needle fangs, milky blind cataract eyes, and cyan-emerald bioluminescent belly scales; it spans the entire length of the skiff floorboards or end-to-end across the full 2-meter oak dissection table—strictly NEVER a small 50cm-100cm fish, NEVER a handheld parcel, and NO external metal tubes stuck to its outer skin.",
+    "negative_constraints": [
+      "No subtitles, no captions, no on-frame text, no logos, no watermarks.",
+      "The video is full-frame shots only: never a grid, never panels, never split screen, never black dividing lines; strictly NO duplicate characters, strictly NO multiple Nora, Omen Fish, no ghost figures, no cloning; strictly NO character standing outside the ship hull or on the exterior water/ocean side of the railing, no 180-degree axis fusion between panels; crisp hard cuts at second 3.0 and second 6.0, no camera blending, no crossfades; strictly NO small fish under 1.7 meters, NO handheld fish bundle, NO external metal tube outside the fish scales.",
+      "ANTI-CGI LOCK: real documentary footage, not a 3D render, not a video game, not CGI fire, no plastic skin.",
+      "No breath vapor and no white steam from anyone's mouth; no god rays, no volumetric beams, no magical sunbeams.",
+      "No shallow depth of field, no blurry background, no bokeh (f/8 aperture throughout).",
+      "Separate bodies never merge; natural hands with five fingers; no extra limbs."
+    ],
+    "image_prompt": "A film storyboard sheet, 16:9, made of FOUR photographic panels in a tight 2 by 2 grid, separated only by thin straight black gutters; each panel is itself a 16:9 frame; no text, no numbers, no arrows, no captions anywhere. All four panels are cinematic feature-film stills of ONE continuous moment in Location: scarred 2-meter oak dissection table in captain's cabin. Light: rich interplay of cold cyan-emerald bioluminescent glow from inside the giant carcass and warm overhead amber lantern illumination; featuring {{media:f9f67999-685f-4d61-9c74-2ed16c6c393c|omen_fish_clean.jpg}} (colossal prehistoric armored coelacanth 1:1: strictly 1.8 meters long [1.7m-1.9m] and 80 kg heavy—spanning end-to-end across the entire 2-meter oak table with a thick 45cm body girth, charcoal-black polygonal scale plates, spiny lobed fins, grotesque underbite jaw with needle fangs, milky blind cataract eyes, identical in massive scale to SC-13; strictly NEVER a small or 1-meter fish), {{media:62e117f8-0af7-484e-90a8-f79927105746|nora_clean.jpg}} (face 1:1, long braided copper-red hair, wearing seafarer leather brigandine armor as in {{media:743ef618-f4c5-456c-9285-56dd911ca94b|nora_body_seafarer_clean.jpg}}).\nTOP-LEFT PANEL, second 0: [CU] Close-up looking into the wide glowing belly cavity of the colossal 1.8-meter-long, 80kg armored Coelacanth: Nora's gloved hands reach deep beneath the giant creature's heavy spiny ribs, gripping the wax-sealed ancient parchment scroll cylinder.\nTOP-RIGHT PANEL, second 3: [MS] Medium shot framing Nora behind the oak table: the colossal 1.8-meter-long, 80kg armored Coelacanth stretches end-to-end across the full width of the table in the foreground as Nora lifts the glowing, mucus-coated scroll cylinder out of its massive belly cavity.\nBOTTOM-LEFT PANEL, second 6: [MCU] Medium close-up on Nora at the table beside the massive 45cm-thick armored flank of the 1.8m Coelacanth as she wipes the luminous emerald mucus from the wax-sealed scroll cylinder with a dry linen cloth.\nBOTTOM-RIGHT PANEL, second 8: [MS] Medium shot: Nora stands upright behind the table holding the cleaned scroll cylinder in both hands under warm amber lamplight, while the colossal 1.8-meter-long, 80kg black Coelacanth carcass spans the entire length of the oak table from left to right in front of her.\ncinematic feature-film look: shot on ARRI Alexa with Cooke S4 prime lenses, fine 35mm film grain, deep focus (f/8), motivated practical light, realistic physics, fish carcass lying heavy on its side with real 80kg dead weight and wet glistening sea-slime (strictly NOT propped upright on its fins like a plastic toy), strictly NOT a 3D render, NOT CGI, zero watermark, zero logos."
+  },
+  {
+    "clip_id": "SC-18",
+    "scene_name": "Lấy vật phẩm thành công",
+    "duration": 8,
+    "aspect_ratio": "16:9",
+    "refs": [
+      "Nora",
+      "Nora Body Seafarer",
+      "Omen Fish"
+    ],
+    "sf_type": "PREV_LAST_FRAME",
+    "camera": {
+      "viewpoint": "third-person cinematic camera; the camera itself is never seen",
+      "shot_size": "CU",
+      "description": "Close-up chest-level shot on 35mm Cooke S4 lens, deep focus (f/8 aperture), following the lifted sheepskin scroll."
+    },
+    "setting": "Location: captain's table in cabin. Light: warm practical chandelier light illuminating the immaculate white sheepskin scroll in Nora's hands.",
+    "characters": [
+      {
+        "name": "Nora",
+        "visual_lock": "FACE LOCK: Nora's face is exactly the face in {{ref:Nora}}, kept 1:1. BODY and OUTFIT LOCK: her build and navy seafarer costume are exactly as in {{ref:Nora Body Seafarer}}.",
+        "state": "Holding the parchment scroll up before her face with both hands."
+      },
+      {
+        "name": "Omen Fish",
+        "visual_lock": "CREATURE ANATOMY, SCALE & WEIGHT LOCK: The Omen Fish is 1:1 identical to {{ref:Omen Fish}}: a massive 1.7m-1.9m (1.8-meter) long, 80 kg prehistoric armored coelacanth with thick 45cm girth, charcoal-black polygonal scale plates, spiny lobed fins, grotesque needle-fanged jaw, milky cataract eyes, and cyan-emerald bioluminescent ventral scales.",
+        "state": "Massive 1.8m, 80kg armored coelacanth carcass lying heavy and full-length (never a small fish or handheld bundle)."
+      }
+    ],
+    "timeline_action": {
+      "0-3s": "Nora pulls the cylinder free from the open belly; astonishingly, the parchment is pristine ivory-white, shedding all slime and viscera like mercury on glass.",
+      "3-6s": "She peels off the brittle black wax seal with her thumb; the dried wax cracks with a distinct snap and falls in dark flakes onto the table.",
+      "6-8s": "She unloosens the woven flax cord binding the scroll, holding the pristine parchment roll in both hands with awe. SPATIAL LOCK: All characters remain firmly INSIDE on the solid wooden deck planks, NEVER on the exterior ocean side of the railing."
+    },
+    "speech": {
+      "speaker": [],
+      "voices": {},
+      "delivery": "no dialogue; collective held breath and cracking wax seal",
+      "dialogue": []
+    },
+    "dramatic_craft": {
+      "beat": "[++]: Pristine supernatural artifact extracted intact.",
+      "value_turn": "Tension (0) -> Awe (++): The parchment defies biological decay.",
+      "subtext": "A holy or accursed artifact preserved by unknown ancient arts.",
+      "prop_and_detail": "Ivory sheepskin parchment roll, cracked pitch-black wax seal stamped with tree sigil."
+    },
+    "audio": "Sharp snap of cracking brittle wax seal, soft rustle of dry parchment, collective exhale of breath (Sonic Isolation: 0 words).",
+    "physics": "Hydrophobic liquid repelling off parchment surface, brittle fracture mechanics of ancient wax. SCALE & MASS LOCK (CRITICAL): The Omen Fish ({{ref:Omen Fish}}) is a colossal prehistoric armored coelacanth strictly 1.7 to 1.9 meters (1.8m) long and 80 kg in heavy biological mass, as long as a full-grown adult human with a thick 45cm body girth, charcoal-black polygonal armor scale plates, spiny lobed fins, grotesque underbite jaw with needle fangs, milky blind cataract eyes, and cyan-emerald bioluminescent belly scales; it spans the entire length of the skiff floorboards or end-to-end across the full 2-meter oak dissection table—strictly NEVER a small 50cm-100cm fish, NEVER a handheld parcel, and NO external metal tubes stuck to its outer skin.",
+    "negative_constraints": [
+      "No subtitles, no captions, no on-frame text, no logos, no watermarks.",
+      "Continuous direct scene sequence: strictly NO duplicate characters, strictly NO multiple Nora, strictly NO character standing outside the ship hull or on the exterior water/ocean side of the railing, no ghost figures, no cloning, separate bodies never merge, no split screen; strictly NO small fish under 1.7 meters, NO handheld fish bundle, NO external metal tube outside the fish scales.",
+      "ANTI-CGI LOCK: real documentary footage, not a 3D render, not a video game, not CGI fire, no plastic skin.",
+      "No breath vapor and no white steam from anyone's mouth; no god rays, no volumetric beams, no magical sunbeams.",
+      "No shallow depth of field, no blurry background, no bokeh (f/8 aperture throughout).",
+      "Separate bodies never merge; natural hands with five fingers; no extra limbs."
+    ]
+  },
+  {
+    "clip_id": "SC-19",
+    "scene_name": "Thất vọng vì trang giấy trắng",
+    "duration": 6,
+    "aspect_ratio": "16:9",
+    "refs": [
+      "Nora",
+      "Nora Body Seafarer",
+      "Castor"
+    ],
+    "sf_type": "PREV_LAST_FRAME",
+    "camera": {
+      "viewpoint": "third-person cinematic camera; the camera itself is never seen",
+      "shot_size": "MS",
+      "description": "Medium shot across the oak table on 35mm Cooke S4 lens, deep focus (f/8 aperture), framing Nora unrolling the skin and Castor's angry reaction."
+    },
+    "setting": "Location: captain's cabin dissection table. Light: warm overhead oil chandelier flooding the parchment; empty white sheepskin reflecting bright light.",
+    "characters": [
+      {
+        "name": "Nora",
+        "visual_lock": "FACE LOCK: Nora's face is exactly the face in {{ref:Nora}}, kept 1:1. BODY and OUTFIT LOCK: her build and navy seafarer costume are exactly as in {{ref:Nora Body Seafarer}}.",
+        "state": "Unrolling the parchment flat with both hands, staring down at it."
+      },
+      {
+        "name": "Castor",
+        "visual_lock": "FACE LOCK: Castor's face is exactly the face in {{ref:Castor}}, kept 1:1. BODY and OUTFIT LOCK: his leather armor is exactly as in {{ref:Castor}}.",
+        "state": "Throwing his hands up in furious frustration, shouting."
+      }
+    ],
+    "timeline_action": {
+      "0-2s": "From second 0, Nora unrolls the sheepskin flat across the timber table; Castor steps forward, sees the completely blank white surface, and shouts angrily: Castor says \"Blank skin! The fisherman tricked us with a barren carcass, Nora!\" (no subtitles).",
+      "2-4s": "Castor's angry voice fills the cabin as he gestures dismissively at the blank parchment; Nora keeps her hands firmly weighting down the curled edges.",
+      "4-6s": "Castor scoffs and crosses his arms, while Nora remains completely still, studying the micro-texture of the hide. SPATIAL LOCK: All characters remain firmly INSIDE on the solid wooden deck planks, NEVER on the exterior ocean side of the railing."
+    },
+    "speech": {
+      "speaker": [
+        "Castor"
+      ],
+      "voices": {
+        "Castor": "fenrir"
+      },
+      "delivery": "sharp, frustrated, cynical outburst, loud and disdainful",
+      "dialogue": [
+        {
+          "t": "0-3s",
+          "speaker": "Castor",
+          "line": "Blank skin! The fisherman tricked us with a barren carcass, Nora!"
+        }
+      ]
+    },
+    "dramatic_craft": {
+      "beat": "[-]: Temporary deflation and false disappointment.",
+      "value_turn": "Hope (++) -> Disappointment (-): The prize appears to be a cruel hoax.",
+      "subtext": "Castor's cynicism defaults to believing they have been made fools.",
+      "prop_and_detail": "Blank ivory vellum parchment, brass map weights."
+    },
+    "audio": "Castor's sharp cynical shout; rustle of unrolling dry vellum; slap of palms on table.",
+    "physics": "Curled vellum memory trying to roll back up, weighted down by Nora's palms.",
+    "negative_constraints": [
+      "No subtitles, no captions, no on-frame text, no logos, no watermarks.",
+      "Continuous direct scene sequence: strictly NO duplicate characters, strictly NO multiple Nora, Castor, strictly NO character standing outside the ship hull or on the exterior water/ocean side of the railing, no ghost figures, no cloning, separate bodies never merge, no split screen.",
+      "ANTI-CGI LOCK: real documentary footage, not a 3D render, not a video game, not CGI fire, no plastic skin.",
+      "No breath vapor and no white steam from anyone's mouth; no god rays, no volumetric beams, no magical sunbeams.",
+      "No shallow depth of field, no blurry background, no bokeh (f/8 aperture throughout).",
+      "Separate bodies never merge; natural hands with five fingers; no extra limbs."
+    ]
+  },
+  {
+    "clip_id": "SC-20",
+    "scene_name": "Nhận ra cơ chế mực tàng hình",
+    "duration": 8,
+    "aspect_ratio": "16:9",
+    "refs": [
+      "Nora"
+    ],
+    "sf_type": "PREV_LAST_FRAME",
+    "camera": {
+      "viewpoint": "third-person cinematic camera; the camera itself is never seen",
+      "shot_size": "CU",
+      "description": "Extreme close-up portrait of Nora's observant eyes and profile on 35mm Cooke S4 lens, deep focus (f/8 aperture), raking golden light."
+    },
+    "setting": "Location: captain's cabin table. Light: golden side-raking lamp light catching the fine heat-pressed grooves in the vellum and Nora's copper hair strands.",
+    "characters": [
+      {
+        "name": "Nora",
+        "visual_lock": "FACE LOCK: Nora's face is exactly the face in {{ref:Nora}}, kept 1:1 with hazel eyes, freckles, and determined jaw.",
+        "state": "Leaning in within inches of the parchment, analyzing the microscopic grain."
+      }
+    ],
+    "timeline_action": {
+      "0-3s": "From second 0, Nora bends low over the parchment, her eyes narrowing as she catches the raking light, and begins speaking immediately: Nora says \"Look closer at the parchment texture, Castor. True ancient sea-charts are never drawn with dry common ink for fools to read.\" (no subtitles).",
+      "3-6s": "Her calm, knowing voice dismantles Castor's skepticism; she traces her bare index finger gently along faint indented vein-like geometric channels pressed into the vellum.",
+      "6-8s": "She concludes by second 6, looking up with a confident, triumphant smirk across her face. SPATIAL LOCK: All characters remain firmly INSIDE on the solid wooden deck planks, NEVER on the exterior ocean side of the railing."
+    },
+    "speech": {
+      "speaker": [
+        "Nora"
+      ],
+      "voices": {
+        "Nora": "kore"
+      },
+      "delivery": "calm, shrewd, intellectually superior explanation, steady and confident",
+      "dialogue": [
+        {
+          "t": "0-6s",
+          "speaker": "Nora",
+          "line": "Look closer at the parchment texture, Castor. True ancient sea-charts are never drawn with dry common ink for fools to read."
+        }
+      ]
+    },
+    "dramatic_craft": {
+      "beat": "RH [+]: Intellectual reversal uncovering the hidden mechanism.",
+      "value_turn": "Disappointment (-) -> Discovery (+): Unlocking the secret cartographic cipher.",
+      "subtext": "Nora possesses ancient naval lore that exceeds ordinary pirate knowledge.",
+      "prop_and_detail": "Micro-embossed geometric grooves in sheepskin, trace of ancient mineral residue."
+    },
+    "audio": "Nora's confident smooth voice; soft scratch of fingernail testing parchment groove; gentle ship sway.",
+    "physics": "Micro-topography of pressed leather fibers catching directional grazing light.",
+    "negative_constraints": [
+      "No subtitles, no captions, no on-frame text, no logos, no watermarks.",
+      "Continuous direct scene sequence: strictly NO duplicate characters, strictly NO multiple Nora, strictly NO character standing outside the ship hull or on the exterior water/ocean side of the railing, no ghost figures, no cloning, separate bodies never merge, no split screen.",
+      "ANTI-CGI LOCK: real documentary footage, not a 3D render, not a video game, not CGI fire, no plastic skin.",
+      "No breath vapor and no white steam from anyone's mouth; no god rays, no volumetric beams, no magical sunbeams.",
+      "No shallow depth of field, no blurry background, no bokeh (f/8 aperture throughout).",
+      "Separate bodies never merge; natural hands with five fingers; no extra limbs."
+    ]
+  },
+  {
+    "clip_id": "SC-21",
+    "scene_name": "Thao tác nhỏ nước muối kích hoạt",
+    "duration": 8,
+    "aspect_ratio": "16:9",
+    "refs": [
+      "Nora",
+      "Nora Body Seafarer"
+    ],
+    "sf_type": "GENERATE_IMAGE",
+    "camera": {
+      "viewpoint": "third-person cinematic camera; the camera itself is never seen",
+      "shot_size": "Multi-shot matching SC-21_storyboard_clean.jpg",
+      "description": "Multi-shot sequence with crisp hard cuts: Shot 1 (0-3s) -> Hard Cut at 3.0s -> Shot 2 (3-6s) -> Hard Cut at 6.0s -> Shot 3 (6-8s). 35mm Cooke S4 prime lens with deep focus (f/8 aperture), entire frame sharp."
+    },
+    "setting": "Location: captain's cabin table. Light: warm lantern light reflecting off a dark hammered bronze bowl filled with sea brine.",
+    "characters": [
+      {
+        "name": "Nora",
+        "visual_lock": "FACE LOCK: Nora's face is exactly the face in {{ref:Nora}}, kept 1:1. BODY and OUTFIT LOCK: her build and navy seafarer costume are exactly as in {{ref:Nora Body Seafarer}}.",
+        "state": "Holding a hammered bronze bowl of saltwater, dipping her fingertips into the liquid."
+      }
+    ],
+    "timeline_action": {
+      "0-3s": "Matching Panel 1 (Top-Left) of {{media:0f1bbd36-f2cd-4428-a893-27f496d26896|SC-21_storyboard_clean.jpg}} (0-3s): Nora lifts the heavy hammered bronze bowl of Aegean sea water from the corner of the table with deliberate care.",
+      "3-6s": "At second 3.0, a crisp hard cut matching Panel 2 (Top-Right) of {{media:0f1bbd36-f2cd-4428-a893-27f496d26896|SC-21_storyboard_clean.jpg}} (3-6s): She dips her fingers into the clear brine and holds her hand above the top-left corner of the blank sheepskin parchment.",
+      "6-8s": "At second 6.0, a crisp hard cut matching Panel 3 (Bottom-Left) of {{media:0f1bbd36-f2cd-4428-a893-27f496d26896|SC-21_storyboard_clean.jpg}} (6-8s): A heavy drop of saltwater gathers at the tip of her index finger, quivers for an instant, and drops squarely onto the ivory surface. SPATIAL LOCK: All characters stand firmly INSIDE the vessel on the solid wooden deck planks (or interior solid ground), NEVER on the exterior ocean/water side of the railing; maintain Panel 3's exact 180-degree camera side without flipping left and right sides."
+    },
+    "speech": {
+      "speaker": [],
+      "voices": {},
+      "delivery": "no dialogue; tense quiet focus and single drop impact",
+      "dialogue": []
+    },
+    "dramatic_craft": {
+      "beat": "[0]: Chemical activation ritual.",
+      "value_turn": "Hypothesis (0) -> Experimental action (0): Applying the ancient catalyst.",
+      "subtext": "The sea itself is the key to revealing the sea's greatest secret.",
+      "prop_and_detail": "Hammered Greek bronze bowl, clear reflective brine droplet."
+    },
+    "audio": "Soft swish of water in bronze vessel, resonant hollow plink of water droplet striking taut parchment (Sonic Isolation: 0 words).",
+    "physics": "Fluid surface tension forming drop, kinetic impact creating circular capillary spreading wave.",
+    "negative_constraints": [
+      "No subtitles, no captions, no on-frame text, no logos, no watermarks.",
+      "The video is full-frame shots only: never a grid, never panels, never split screen, never black dividing lines; strictly NO duplicate characters, strictly NO multiple Nora, no ghost figures, no cloning; strictly NO character standing outside the ship hull or on the exterior water/ocean side of the railing, no 180-degree axis fusion between panels; crisp hard cuts at second 3.0 and second 6.0, no camera blending, no crossfades.",
+      "ANTI-CGI LOCK: real documentary footage, not a 3D render, not a video game, not CGI fire, no plastic skin.",
+      "No breath vapor and no white steam from anyone's mouth; no god rays, no volumetric beams, no magical sunbeams.",
+      "No shallow depth of field, no blurry background, no bokeh (f/8 aperture throughout).",
+      "Separate bodies never merge; natural hands with five fingers; no extra limbs."
+    ],
+    "image_prompt": "Cinematic medium close-up on 35mm film. Captain {{ref:Nora}} wearing {{ref:Nora Body Seafarer}} holds a hammered bronze bowl of clear sea water, hovering her wet fingertips over a blank ivory parchment laid on an oak table. A single droplet falls toward the dry skin. Deep focus (f/8), dark chiaroscuro, tangible water physics, strictly NO artificial volumetric lighting, NO 3D CGI."
+  },
+  {
+    "clip_id": "SC-22",
+    "scene_name": "Bản đồ Cây Vàng phát sáng",
+    "duration": 10,
+    "aspect_ratio": "16:9",
+    "refs": [
+      "Nora",
+      "Nora Body Seafarer"
+    ],
+    "sf_type": "GENERATE_IMAGE",
+    "camera": {
+      "viewpoint": "third-person cinematic camera; the camera itself is never seen",
+      "shot_size": "Multi-shot matching SC-22_storyboard_clean.jpg",
+      "description": "Multi-shot sequence with crisp hard cuts: Shot 1 (0-3s) -> Hard Cut at 3.0s -> Shot 2 (3-7s) -> Hard Cut at 7.0s -> Shot 3 (7-10s). 35mm Cooke S4 prime lens with deep focus (f/8 aperture), entire frame sharp."
+    },
+    "setting": "Location: surface of sheepskin map on oak table. Light: radiant warm golden luminescence awakening across the intricate cartographic lines, illuminating Nora's watchful face above.",
+    "characters": [
+      {
+        "name": "Nora",
+        "visual_lock": "FACE LOCK: Nora's face is exactly the face in {{ref:Nora}}, kept 1:1. Her eyes reflect the expanding golden light.",
+        "state": "Watching the waking map in quiet awe."
+      }
+    ],
+    "timeline_action": {
+      "0-3s": "Matching Panel 1 (Top-Left) of {{media:347dd015-3efd-4156-a913-979931c7637a|SC-22_storyboard_clean.jpg}} (0-3s): From second 0, as the saltwater spreads through the micro-grooves, glowing liquid gold pigment ignites like living veins, and Nora speaks immediately in profound reverence: Nora says \"Salt awakens the sleeping pigment.\" (no subtitles).",
+      "3-7s": "At second 3.0, a crisp hard cut matching Panel 2 (Top-Right) of {{media:347dd015-3efd-4156-a913-979931c7637a|SC-22_storyboard_clean.jpg}} (3-7s): The radiant golden lines branch outward across the entire parchment, revealing nautical routes, sea monsters, and archipelagos; Nora continues: Nora says \"The ancient maritime cartography reveals its radiant path across the seven forgotten deeps right before our very eyes.\" (no subtitles).",
+      "7-10s": "At second 7.0, a crisp hard cut matching Panel 3 (Bottom-Left) of {{media:347dd015-3efd-4156-a913-979931c7637a|SC-22_storyboard_clean.jpg}} (7-10s): Her voice concludes by second 7; the entire chart blazes in warm golden glory, illuminating the dark cabin timbers. SPATIAL LOCK: All characters stand firmly INSIDE the vessel on the solid wooden deck planks (or interior solid ground), NEVER on the exterior ocean/water side of the railing; maintain Panel 3's exact 180-degree camera side without flipping left and right sides."
+    },
+    "speech": {
+      "speaker": [
+        "Nora"
+      ],
+      "voices": {
+        "Nora": "kore"
+      },
+      "delivery": "hushed reverence rising to proud captain's triumph",
+      "dialogue": [
+        {
+          "t": "0-7s",
+          "speaker": "Nora",
+          "line": "Salt awakens the sleeping pigment. The ancient maritime cartography reveals its radiant path across the seven forgotten deeps right before our very eyes."
+        }
+      ]
+    },
+    "dramatic_craft": {
+      "beat": "[+++]: Miraculous revelation of the legendary map.",
+      "value_turn": "Secret test (0) -> Mythic breakthrough (+++): The Golden Map is alive.",
+      "subtext": "The crew now possesses the only existing chart to the greatest treasure of antiquity.",
+      "prop_and_detail": "Liquid gold reactive pigment, archaic Greek navigational runes, island labyrinths."
+    },
+    "audio": "Nora's awe-filled resonant line; gentle sizzling hum of reactive gold pigment; harmonic chime resonance.",
+    "physics": "Capillary action drawing liquid through embossed vellum micro-channels, luminescence radiating organically.",
+    "negative_constraints": [
+      "No subtitles, no captions, no on-frame text, no logos, no watermarks.",
+      "The video is full-frame shots only: never a grid, never panels, never split screen, never black dividing lines; strictly NO duplicate characters, strictly NO multiple Nora, no ghost figures, no cloning; strictly NO character standing outside the ship hull or on the exterior water/ocean side of the railing, no 180-degree axis fusion between panels; crisp hard cuts at second 3.0 and second 7.0, no camera blending, no crossfades.",
+      "ANTI-CGI LOCK: real documentary footage, not a 3D render, not a video game, not CGI fire, no plastic skin.",
+      "No breath vapor and no white steam from anyone's mouth; no god rays, no volumetric beams, no magical sunbeams.",
+      "No shallow depth of field, no blurry background, no bokeh (f/8 aperture throughout).",
+      "Separate bodies never merge; natural hands with five fingers; no extra limbs."
+    ],
+    "image_prompt": "Cinematic macro shot on 35mm film. As saltwater droplets seep into the parchment on the wooden table, intricate engraved channels ignite with glowing liquid gold ink, branching outward like living veins to form an ancient Greek maritime map of islands and sea creatures. In the background, {{ref:Nora}}'s face glows in the warm amber light. Deep focus (f/8), hyper-detailed textures, strictly NO artificial volumetric lighting, NO 3D CGI."
+  },
+  {
+    "clip_id": "SC-23",
+    "scene_name": "Xác nhận truyền thuyết có thật",
+    "duration": 8,
+    "aspect_ratio": "16:9",
+    "refs": [
+      "Nora",
+      "Nora Body Seafarer",
+      "Castor",
+      "Heracles"
+    ],
+    "sf_type": "GENERATE_IMAGE",
+    "camera": {
+      "viewpoint": "third-person cinematic camera; the camera itself is never seen",
+      "shot_size": "Multi-shot matching SC-23_storyboard_clean.jpg",
+      "description": "Multi-shot sequence with crisp hard cuts: Shot 1 (0-3s) -> Hard Cut at 3.0s -> Shot 2 (3-6s) -> Hard Cut at 6.0s -> Shot 3 (6-8s). 35mm Cooke S4 prime lens with deep focus (f/8 aperture), entire frame sharp."
+    },
+    "setting": "Location: captain's cabin. Light: brilliant golden luminescence radiating upward from the map on the table, casting dramatic upward silhouettes on the timber ceiling beams; warm chiaroscuro.",
+    "characters": [
+      {
+        "name": "Heracles",
+        "visual_lock": "FACE LOCK: Heracles's face is exactly the face in {{ref:Heracles}}, kept 1:1. BODY and OUTFIT LOCK: his massive muscular frame is exactly as in {{ref:Heracles}}.",
+        "state": "Staring open-mouthed at the glowing parchment, resting his heavy hand on the table."
+      },
+      {
+        "name": "Nora",
+        "visual_lock": "FACE LOCK: Nora's face is exactly the face in {{ref:Nora}}, kept 1:1. BODY and OUTFIT LOCK: her build and navy seafarer costume are exactly as in {{ref:Nora Body Seafarer}}.",
+        "state": "Standing tall at the table, gaze fixed on the center of the chart."
+      },
+      {
+        "name": "Castor",
+        "visual_lock": "FACE LOCK: Castor's face is exactly the face in {{ref:Castor}}, kept 1:1. BODY and OUTFIT LOCK: his leather armor is exactly as in {{ref:Castor}}.",
+        "state": "Leaning in, eyes wide with stunned disbelief."
+      }
+    ],
+    "timeline_action": {
+      "0-3s": "Matching Panel 1 (Top-Left) of {{media:5b3ddf46-3eb1-44aa-beb7-ec75b3e91d9f|SC-23_storyboard_clean.jpg}} (0-3s): From second 0, Heracles gazes at the radiant golden map with childlike wonder and speaks immediately: Heracles says \"The Golden Tree of antiquity... the ancient sailor tales whispered across the seven oceans were actually real after all these years.\" (no subtitles).",
+      "3-6s": "At second 3.0, a crisp hard cut matching Panel 2 (Top-Right) of {{media:5b3ddf46-3eb1-44aa-beb7-ec75b3e91d9f|SC-23_storyboard_clean.jpg}} (3-6s): His booming voice is humbled by ancient majesty; the golden light reveals the glowing emblem of a gigantic crowned tree at the center of the charted sea.",
+      "6-8s": "At second 6.0, a crisp hard cut matching Panel 3 (Bottom-Left) of {{media:5b3ddf46-3eb1-44aa-beb7-ec75b3e91d9f|SC-23_storyboard_clean.jpg}} (6-8s): Heracles falls silent by second 6, crossing his chest in an old mariner's gesture of awe while Castor peers closer. Strictly Castor alone in this focal framing; Heracles and Nora are completely off-screen or in distinct background separation, never overlapping. SPATIAL LOCK: All characters stand firmly INSIDE the vessel on the solid wooden deck planks (or interior solid ground), NEVER on the exterior ocean/water side of the railing; maintain Panel 3's exact 180-degree camera side without flipping left and right sides."
+    },
+    "speech": {
+      "speaker": [
+        "Heracles"
+      ],
+      "voices": {
+        "Heracles": "puck"
+      },
+      "delivery": "deep, humbled wonder, breath taken away by mythical truth",
+      "dialogue": [
+        {
+          "t": "0-6s",
+          "speaker": "Heracles",
+          "line": "The Golden Tree of antiquity... the ancient sailor tales whispered across the seven oceans were actually real after all these years."
+        }
+      ]
+    },
+    "dramatic_craft": {
+      "beat": "[++]: Collective spiritual confirmation.",
+      "value_turn": "Mystery (+) -> Myth made flesh (++): The legendary goal is verified.",
+      "subtext": "Even hardened cutthroats are humbled before ancient gods.",
+      "prop_and_detail": "Emblem of the Golden Tree radiating from the map's center, upward shadow play on oak beams."
+    },
+    "audio": "Heracles's deep awe-struck voice; resonant musical shimmer of the glowing pigment; creaking ship ribs.",
+    "physics": "Stable stances rooted to cabin floor, upward directional light casting inverted facial shadows.",
+    "negative_constraints": [
+      "No subtitles, no captions, no on-frame text, no logos, no watermarks.",
+      "The video is full-frame shots only: never a grid, never panels, never split screen, never black dividing lines; strictly NO duplicate characters, strictly NO multiple Heracles, Nora, Castor, no ghost figures, no cloning; strictly NO character standing outside the ship hull or on the exterior water/ocean side of the railing, no 180-degree axis fusion between panels; crisp hard cuts at second 3.0 and second 6.0, no camera blending, no crossfades.",
+      "ANTI-CGI LOCK: real documentary footage, not a 3D render, not a video game, not CGI fire, no plastic skin.",
+      "No breath vapor and no white steam from anyone's mouth; no god rays, no volumetric beams, no magical sunbeams.",
+      "No shallow depth of field, no blurry background, no bokeh (f/8 aperture throughout).",
+      "Separate bodies never merge; natural hands with five fingers; no extra limbs."
+    ],
+    "image_prompt": "Cinematic wide shot on 35mm film. Inside the wood-paneled pirate cabin, a fully illuminated golden parchment map on an oak table casts brilliant amber light upward onto the awe-struck faces of Captain {{ref:Nora}}, massive warrior {{ref:Heracles}}, and {{ref:Castor}}. Deep focus (f/8), inverted chiaroscuro lighting, rich textures, strictly NO artificial volumetric lighting, NO 3D CGI."
+  },
+  {
+    "clip_id": "SC-24",
+    "scene_name": "Bất đồng ý kiến lộ trình",
+    "duration": 6,
+    "aspect_ratio": "16:9",
+    "refs": [
+      "Castor",
+      "Nora"
+    ],
+    "sf_type": "PREV_LAST_FRAME",
+    "camera": {
+      "viewpoint": "third-person cinematic camera; the camera itself is never seen",
+      "shot_size": "MCU",
+      "description": "Medium close-up two-shot on 35mm Cooke S4 lens, deep focus (f/8 aperture), capturing sharp tactical conflict across the table."
+    },
+    "setting": "Location: captain's cabin table. Light: golden luminescence from the map illuminating Castor's sharp aggressive profile as he stabs his finger onto the parchment; dark background.",
+    "characters": [
+      {
+        "name": "Castor",
+        "visual_lock": "FACE LOCK: Castor's face is exactly the face in {{ref:Castor}}, kept 1:1. BODY and OUTFIT LOCK: his leather armor is exactly as in {{ref:Castor}}.",
+        "state": "Stabbing his index finger forcefully onto the map, scowling with intense warning."
+      },
+      {
+        "name": "Nora",
+        "visual_lock": "FACE LOCK: Nora's face is exactly the face in {{ref:Nora}}, kept 1:1.",
+        "state": "Staring coldly back at Castor, unyielding."
+      }
+    ],
+    "timeline_action": {
+      "0-2s": "From second 0, Castor points violently at two crushing basalt cliff glyphs on the map and begins shouting immediately: Castor says \"This route cuts straight through the Clashing Rocks! No hull survives those jaws!\" (no subtitles).",
+      "2-4s": "His voice is loud, sharp, and clipped like an officer under combat pressure; he shakes his head adamantly, glaring at Nora.",
+      "4-6s": "His shout finishes by second 3; he holds his finger planted firmly on the map while Nora's expression remains as solid as iron. SPATIAL LOCK: All characters remain firmly INSIDE on the solid wooden deck planks, NEVER on the exterior ocean side of the railing."
+    },
+    "speech": {
+      "speaker": [
+        "Castor"
+      ],
+      "voices": {
+        "Castor": "fenrir"
+      },
+      "delivery": "loud, sharp, and clipped tactical argument, voice raised over ship roll",
+      "dialogue": [
+        {
+          "t": "0-3s",
+          "speaker": "Castor",
+          "line": "This route cuts straight through the Clashing Rocks! No hull survives those jaws!"
+        }
+      ]
+    },
+    "dramatic_craft": {
+      "beat": "[-]: Internal crew conflict over suicidal navigation.",
+      "value_turn": "Awe (++) -> Tactical danger (-): The only route passes through certain death.",
+      "subtext": "Castor values survival over glory; Nora values legend over fear.",
+      "prop_and_detail": "Glyph of two crushing jaws etched into the glowing golden parchment."
+    },
+    "audio": "Castor's loud clipped voice on top; table vibrating under finger tap; sea swell rocking hull timbers.",
+    "physics": "Finger forcefully striking parchment, kinetic tension between two rooted bodies.",
+    "negative_constraints": [
+      "No subtitles, no captions, no on-frame text, no logos, no watermarks.",
+      "Continuous direct scene sequence: strictly NO duplicate characters, strictly NO multiple Castor, Nora, strictly NO character standing outside the ship hull or on the exterior water/ocean side of the railing, no ghost figures, no cloning, separate bodies never merge, no split screen.",
+      "ANTI-CGI LOCK: real documentary footage, not a 3D render, not a video game, not CGI fire, no plastic skin.",
+      "No breath vapor and no white steam from anyone's mouth; no god rays, no volumetric beams, no magical sunbeams.",
+      "No shallow depth of field, no blurry background, no bokeh (f/8 aperture throughout).",
+      "Separate bodies never merge; natural hands with five fingers; no extra limbs."
+    ]
+  },
+  {
+    "clip_id": "SC-25",
+    "scene_name": "Quyết định đâm vào vách đá",
+    "duration": 8,
+    "aspect_ratio": "16:9",
+    "refs": [
+      "Nora",
+      "Nora Body Seafarer"
+    ],
+    "sf_type": "PREV_LAST_FRAME",
+    "camera": {
+      "viewpoint": "third-person cinematic camera; the camera itself is never seen",
+      "shot_size": "Low-Angle Hero",
+      "description": "Low-angle hero close-up looking up at Captain Nora on 35mm Cooke S4 lens, deep focus (f/8 aperture), projecting unshakeable leadership."
+    },
+    "setting": "Location: captain's cabin table. Light: golden map light washing over Nora's chin and throat, while amber lantern light illuminates her braided copper hair; authoritative chiaroscuro.",
+    "characters": [
+      {
+        "name": "Nora",
+        "visual_lock": "FACE LOCK: Nora's face is exactly the face in {{ref:Nora}}, kept 1:1. BODY and OUTFIT LOCK: her build and navy seafarer brigandine are exactly as in {{ref:Nora Body Seafarer}}.",
+        "state": "Rolling up the golden map with decisive authority, sliding it into a heavy bronze cylinder."
+      }
+    ],
+    "timeline_action": {
+      "0-3s": "From second 0, Nora rolls the parchment in one continuous powerful sweep and delivers her captain's decree with fierce conviction: Nora says \"We do not turn our rudder back from destiny.\" (no subtitles).",
+      "3-6s": "She slides the rolled map into a cylindrical bronze case and screws the threaded cap shut with an iron snap: Nora says \"Ready the heavy oars and rig the thick storm-canvas immediately!\" (no subtitles).",
+      "6-8s": "Her orders finish cleanly by second 6; she latches the bronze cylinder to her sword belt and strides toward the companionway with ruthless resolve. SPATIAL LOCK: All characters remain firmly INSIDE on the solid wooden deck planks, NEVER on the exterior ocean side of the railing."
+    },
+    "speech": {
+      "speaker": [
+        "Nora"
+      ],
+      "voices": {
+        "Nora": "kore"
+      },
+      "delivery": "fierce, unyielding, authoritative command, punched out like an iron order",
+      "dialogue": [
+        {
+          "t": "0-6s",
+          "speaker": "Nora",
+          "line": "We do not turn our rudder back from destiny. Ready the heavy oars and rig the thick storm-canvas immediately!"
+        }
+      ]
+    },
+    "dramatic_craft": {
+      "beat": "[++]: Captain's resolute commitment to the ordeal.",
+      "value_turn": "Hesitation (-) -> Unwavering resolve (++): Point of No Return crossed.",
+      "subtext": "Nora would rather drown in glory than die an old woman in safe waters.",
+      "prop_and_detail": "Heavy watertight bronze map cylinder with screw-thread seal."
+    },
+    "audio": "Nora's commanding ring; metallic screw of bronze cap; solid boot strides on oak.",
+    "physics": "Rotational torque securing threaded cap, rapid purposeful stride across cabin.",
+    "negative_constraints": [
+      "No subtitles, no captions, no on-frame text, no logos, no watermarks.",
+      "Continuous direct scene sequence: strictly NO duplicate characters, strictly NO multiple Nora, strictly NO character standing outside the ship hull or on the exterior water/ocean side of the railing, no ghost figures, no cloning, separate bodies never merge, no split screen.",
+      "ANTI-CGI LOCK: real documentary footage, not a 3D render, not a video game, not CGI fire, no plastic skin.",
+      "No breath vapor and no white steam from anyone's mouth; no god rays, no volumetric beams, no magical sunbeams.",
+      "No shallow depth of field, no blurry background, no bokeh (f/8 aperture throughout).",
+      "Separate bodies never merge; natural hands with five fingers; no extra limbs."
+    ]
+  },
+  {
+    "clip_id": "SC-26",
+    "scene_name": "Toàn tàu ứng chiến với bão",
+    "duration": 8,
+    "aspect_ratio": "16:9",
+    "refs": [
+      "Heracles",
+      "Nora",
+      "Nora Body Seafarer"
+    ],
+    "sf_type": "GENERATE_IMAGE",
+    "camera": {
+      "viewpoint": "third-person cinematic camera; the camera itself is never seen",
+      "shot_size": "Multi-shot matching SC-26_storyboard_clean.jpg",
+      "description": "Multi-shot sequence with crisp hard cuts: Shot 1 (0-3s) -> Hard Cut at 3.0s -> Shot 2 (3-6s) -> Hard Cut at 6.0s -> Shot 3 (6-8s). 35mm Cooke S4 prime lens with deep focus (f/8 aperture), entire frame sharp."
+    },
+    "setting": "Location: main deck of the galleon. Gathering storm, gale winds whipping canvas, sea spray splashing across timbers. Light: swinging ship lanterns casting frantic erratic arcs of amber light; dark stormy night.",
+    "characters": [
+      {
+        "name": "Heracles",
+        "visual_lock": "FACE LOCK: Heracles's face is exactly the face in {{ref:Heracles}}, kept 1:1. BODY and OUTFIT LOCK: his massive muscular frame and sea-lion mantle are exactly as in {{ref:Heracles}}.",
+        "state": "Heaving on a heavy tarred hawser, securing water casks to the mainmast."
+      },
+      {
+        "name": "Nora",
+        "visual_lock": "FACE LOCK: Nora's face is exactly the face in {{ref:Nora}}, kept 1:1. BODY and OUTFIT LOCK: her build and navy seafarer costume are exactly as in {{ref:Nora Body Seafarer}}.",
+        "state": "Taking command at the quarterdeck ladder."
+      }
+    ],
+    "timeline_action": {
+      "0-3s": "Matching Panel 1 (Top-Left) of {{media:bbc089a3-8a75-46bc-bc0f-672096854d68|SC-26_storyboard_clean.jpg}} (0-3s): From second 0, as wind howls through the rigging, Heracles braces his massive legs against the deck and roars at the deckhands: Heracles says \"All hands on the main deck! Lash down the water casks, batten every hatch, and prime the bilge pumps now!\" (no subtitles).",
+      "3-6s": "At second 3.0, a crisp hard cut matching Panel 2 (Top-Right) of {{media:bbc089a3-8a75-46bc-bc0f-672096854d68|SC-26_storyboard_clean.jpg}} (3-6s): His powerful voice booms over the gathering gale; sailors scurry across the deck in urgent coordination, hauling heavy canvas sheets.",
+      "6-8s": "At second 6.0, a crisp hard cut matching Panel 3 (Bottom-Left) of {{media:bbc089a3-8a75-46bc-bc0f-672096854d68|SC-26_storyboard_clean.jpg}} (6-8s): Heracles knots the thick hawser with a brutal pull by second 6, testing the lashings as seafoam sprays over the starboard rail. Strictly Nora alone in this focal framing; Heracles are completely off-screen or in distinct background separation, never overlapping. SPATIAL LOCK: All characters stand firmly INSIDE the vessel on the solid wooden deck planks (or interior solid ground), NEVER on the exterior ocean/water side of the railing; maintain Panel 3's exact 180-degree camera side without flipping left and right sides."
+    },
+    "speech": {
+      "speaker": [
+        "Heracles"
+      ],
+      "voices": {
+        "Heracles": "puck"
+      },
+      "delivery": "booming, urgent storm command, shouted over howling wind and breaking waves",
+      "dialogue": [
+        {
+          "t": "0-6s",
+          "speaker": "Heracles",
+          "line": "All hands on the main deck! Lash down the water casks, batten every hatch, and prime the bilge pumps now!"
+        }
+      ]
+    },
+    "dramatic_craft": {
+      "beat": "[+]: Mobilizing the ship for survival in lethal waters.",
+      "value_turn": "Cabin deliberation (0) -> Storm action (+): Entering the storm zone.",
+      "subtext": "The crew's disciplined training transforms into raw survival grit.",
+      "prop_and_detail": "Oak water casks lashed with wet hemp, heavy hatch covers bolted down."
+    },
+    "audio": "Heracles's booming roar; howling wind whistling through shroud wires; crashing seafoam on timber.",
+    "physics": "Heavy body counterbalancing wind gusts, taut hawser tension resisting rolling casks.",
+    "negative_constraints": [
+      "No subtitles, no captions, no on-frame text, no logos, no watermarks.",
+      "The video is full-frame shots only: never a grid, never panels, never split screen, never black dividing lines; strictly NO duplicate characters, strictly NO multiple Heracles, Nora, no ghost figures, no cloning; strictly NO character standing outside the ship hull or on the exterior water/ocean side of the railing, no 180-degree axis fusion between panels; crisp hard cuts at second 3.0 and second 6.0, no camera blending, no crossfades.",
+      "ANTI-CGI LOCK: real documentary footage, not a 3D render, not a video game, not CGI fire, no plastic skin.",
+      "No breath vapor and no white steam from anyone's mouth; no god rays, no volumetric beams, no magical sunbeams.",
+      "No shallow depth of field, no blurry background, no bokeh (f/8 aperture throughout).",
+      "Separate bodies never merge; natural hands with five fingers; no extra limbs."
+    ],
+    "image_prompt": "Cinematic wide shot on 35mm film. On the stormy wooden deck of a Greek pirate ship at night, towering {{ref:Heracles}} hauls on thick ropes securing water casks as wind whips canvas and sea spray splashes across the planks. Crewmen scurry under swinging lanterns. Deep focus (f/8), wet deck reflections, raw storm atmosphere, strictly NO artificial volumetric lighting, NO 3D CGI."
+  },
+  {
+    "clip_id": "SC-27",
+    "scene_name": "Con tàu lao ra đại dương",
+    "duration": 8,
+    "aspect_ratio": "16:9",
+    "refs": [
+      "Nora",
+      "Nora Body Seafarer"
+    ],
+    "sf_type": "GENERATE_IMAGE",
+    "camera": {
+      "viewpoint": "third-person cinematic camera; the camera itself is never seen",
+      "shot_size": "Multi-shot matching SC-27_storyboard_clean.jpg",
+      "description": "Multi-shot sequence with crisp hard cuts: Shot 1 (0-3s) -> Hard Cut at 3.0s -> Shot 2 (3-6s) -> Hard Cut at 6.0s -> Shot 3 (6-8s). 35mm Cooke S4 prime lens with deep focus (f/8 aperture), entire frame sharp."
+    },
+    "setting": "Location: forward bow of the pirate galleon. Rolling black ocean swells, driving sea mist. Light: lantern light raking across white foamy bow waves; stormy night sky.",
+    "characters": [
+      {
+        "name": "Nora",
+        "visual_lock": "FACE LOCK: Nora's face is exactly the face in {{ref:Nora}}, kept 1:1. BODY and OUTFIT LOCK: her build and navy seafarer costume are exactly as in {{ref:Nora Body Seafarer}}.",
+        "state": "Standing high on the forward forecastle, wind whipping her braids, shouting navigation orders."
+      }
+    ],
+    "timeline_action": {
+      "0-3s": "Matching Panel 1 (Top-Left) of {{media:92a5c7a3-2965-45cd-a66f-3667c7844673|SC-27_storyboard_clean.jpg}} (0-3s): From second 0, as the heavy timber bow crashes into a steep ocean swell, Nora grips the stay wire and shouts into the storm: Nora says \"Steer south-southwest into the towering swell! We must ride the high crest before the midnight tide turns against our hull!\" (no subtitles).",
+      "3-6s": "At second 3.0, a crisp hard cut matching Panel 2 (Top-Right) of {{media:92a5c7a3-2965-45cd-a66f-3667c7844673|SC-27_storyboard_clean.jpg}} (3-6s): Her fierce voice carries above the roaring sea; the wooden bow cleaves through black water, sending explosive sheets of white spray curling into the dark air.",
+      "6-8s": "At second 6.0, a crisp hard cut matching Panel 3 (Bottom-Left) of {{media:92a5c7a3-2965-45cd-a66f-3667c7844673|SC-27_storyboard_clean.jpg}} (6-8s): She finishes by second 6, raising her arm pointing toward the distant horizon where jagged black silhouettes loom against the clouds. SPATIAL LOCK: All characters stand firmly INSIDE the vessel on the solid wooden deck planks (or interior solid ground), NEVER on the exterior ocean/water side of the railing; maintain Panel 3's exact 180-degree camera side without flipping left and right sides."
+    },
+    "speech": {
+      "speaker": [
+        "Nora"
+      ],
+      "voices": {
+        "Nora": "kore"
+      },
+      "delivery": "fierce, urgent, heroic command shouted over the roar of crashing surf",
+      "dialogue": [
+        {
+          "t": "0-6s",
+          "speaker": "Nora",
+          "line": "Steer south-southwest into the towering swell! We must ride the high crest before the midnight tide turns against our hull!"
+        }
+      ]
+    },
+    "dramatic_craft": {
+      "beat": "[+]: Aggressive maritime navigation into dangerous currents.",
+      "value_turn": "Deck preparation (0) -> Heroic assault (+): Driving directly into the vortex.",
+      "subtext": "Nora attacks danger head-on; retreat is not in her blood.",
+      "prop_and_detail": "Carved timber figurehead slicing waves, spray flying off taut stay ropes."
+    },
+    "audio": "Nora's fierce shout on top; deafening roar of bow wave cleaving deep water; howling gale.",
+    "physics": "Hydrodynamic bow lift over steep wave, water momentum launching sheets of spray.",
+    "negative_constraints": [
+      "No subtitles, no captions, no on-frame text, no logos, no watermarks.",
+      "The video is full-frame shots only: never a grid, never panels, never split screen, never black dividing lines; strictly NO duplicate characters, strictly NO multiple Nora, no ghost figures, no cloning; strictly NO character standing outside the ship hull or on the exterior water/ocean side of the railing, no 180-degree axis fusion between panels; crisp hard cuts at second 3.0 and second 6.0, no camera blending, no crossfades.",
+      "ANTI-CGI LOCK: real documentary footage, not a 3D render, not a video game, not CGI fire, no plastic skin.",
+      "No breath vapor and no white steam from anyone's mouth; no god rays, no volumetric beams, no magical sunbeams.",
+      "No shallow depth of field, no blurry background, no bokeh (f/8 aperture throughout).",
+      "Separate bodies never merge; natural hands with five fingers; no extra limbs."
+    ],
+    "image_prompt": "Cinematic medium low-angle shot on 35mm film. The heavy wooden prow of a Greek pirate ship cuts through a towering dark ocean wave, throwing violent white spray into the stormy night. On the forecastle, Captain {{ref:Nora}} in {{ref:Nora Body Seafarer}} grips the rigging and points boldly into the churning sea. Deep focus (f/8), dynamic water physics, authentic ocean storm, strictly NO artificial volumetric lighting, NO 3D CGI."
+  },
+  {
+    "clip_id": "SC-28",
+    "scene_name": "Thiên nhiên đe dọa nuốt chửng tàu",
+    "duration": 10,
+    "aspect_ratio": "16:9",
+    "refs": [
+      "Nora",
+      "Nora Body Seafarer"
+    ],
+    "sf_type": "GENERATE_IMAGE",
+    "camera": {
+      "viewpoint": "third-person cinematic camera; the camera itself is never seen",
+      "shot_size": "Multi-shot matching SC-28_storyboard_clean.jpg",
+      "description": "Multi-shot sequence with crisp hard cuts: Shot 1 (0-3s) -> Hard Cut at 3.0s -> Shot 2 (3-7s) -> Hard Cut at 7.0s -> Shot 3 (7-10s). 35mm Cooke S4 prime lens with deep focus (f/8 aperture), entire frame sharp."
+    },
+    "setting": "Location: open Aegean tempest. Colossal churning black waves, rolling thunderheads. Light: sporadic flashes of natural cloud-to-cloud lightning illuminating the dark horizon; stormy night chiaroscuro.",
+    "characters": [
+      {
+        "name": "Nora",
+        "visual_lock": "FACE LOCK: Nora's face is exactly the face in {{ref:Nora}}, kept 1:1. She stands as a tiny silhouette at the quarterdeck helm.",
+        "state": "Braced at the ship's helm."
+      }
+    ],
+    "timeline_action": {
+      "0-3s": "Matching Panel 1 (Top-Left) of {{media:e787b7de-3905-4cfb-af6d-64bf7203e81a|SC-28_storyboard_clean.jpg}} (0-3s): The pirate galleon appears as a tiny, fragile wooden shell tossed upon colossal, surging black mountain-waves under a bruised tempest sky.",
+      "3-7s": "At second 3.0, a crisp hard cut matching Panel 2 (Top-Right) of {{media:e787b7de-3905-4cfb-af6d-64bf7203e81a|SC-28_storyboard_clean.jpg}} (3-7s): A sudden flash of lightning tears across the storm clouds, revealing the colossal jagged black basalt pillars of the Clashing Rocks rising like mountain teeth in the distance.",
+      "7-10s": "At second 7.0, a crisp hard cut matching Panel 3 (Bottom-Left) of {{media:e787b7de-3905-4cfb-af6d-64bf7203e81a|SC-28_storyboard_clean.jpg}} (7-10s): The tiny ship plunges into a deep ocean trough, rising gallantly onto the next crest as the sea churns in violent froth. SPATIAL LOCK: All characters stand firmly INSIDE the vessel on the solid wooden deck planks (or interior solid ground), NEVER on the exterior ocean/water side of the railing; maintain Panel 3's exact 180-degree camera side without flipping left and right sides."
+    },
+    "speech": {
+      "speaker": [],
+      "voices": {},
+      "delivery": "no dialogue; primordial tempest roar and thunder",
+      "dialogue": []
+    },
+    "dramatic_craft": {
+      "beat": "RH [!]: Perilous threshold crossing into the Clashing Rocks.",
+      "value_turn": "Audacity (+) -> Existential insignificance (!): Human skill pitted against titan forces.",
+      "subtext": "The earth itself is moving to crush the intruders.",
+      "prop_and_detail": "Tattered storm canvas reefed tight, lightning reflecting off basalt crags."
+    },
+    "audio": "Deep rolling sonic boom of distant thunder, terrifying roar of gale winds, deep groaning abyss (Sonic Isolation: 0 words).",
+    "physics": "Massive ocean wave mechanics, galleon hull rolling 25 degrees on crest before plunging into trough.",
+    "negative_constraints": [
+      "No subtitles, no captions, no on-frame text, no logos, no watermarks.",
+      "The video is full-frame shots only: never a grid, never panels, never split screen, never black dividing lines; strictly NO duplicate characters, strictly NO multiple Nora, no ghost figures, no cloning; strictly NO character standing outside the ship hull or on the exterior water/ocean side of the railing, no 180-degree axis fusion between panels; crisp hard cuts at second 3.0 and second 7.0, no camera blending, no crossfades.",
+      "ANTI-CGI LOCK: real documentary footage, not a 3D render, not a video game, not CGI fire, no plastic skin.",
+      "No breath vapor and no white steam from anyone's mouth; no god rays, no volumetric beams, no magical sunbeams.",
+      "No shallow depth of field, no blurry background, no bokeh (f/8 aperture throughout).",
+      "Separate bodies never merge; natural hands with five fingers; no extra limbs."
+    ],
+    "image_prompt": "Cinematic extreme wide shot on 35mm film. A small wooden pirate galleon battles colossal churning black ocean waves under a violent stormy night sky. In the far distance, a flash of natural lightning illuminates the terrifying jagged silhouette of two colossal basalt cliffs rising out of the sea. Deep focus (f/8), epic maritime scale, real stormy ocean documentary, strictly NO artificial volumetric lighting, NO 3D CGI."
+  },
+  {
+    "clip_id": "SC-29",
+    "scene_name": "Vật lộn giữ lái trước vách đá",
+    "duration": 8,
+    "aspect_ratio": "16:9",
+    "refs": [
+      "Nora",
+      "Nora Body Seafarer"
+    ],
+    "sf_type": "GENERATE_IMAGE",
+    "camera": {
+      "viewpoint": "third-person cinematic camera; the camera itself is never seen",
+      "shot_size": "Multi-shot matching SC-29_storyboard_clean.jpg",
+      "description": "Multi-shot sequence with crisp hard cuts: Shot 1 (0-3s) -> Hard Cut at 3.0s -> Shot 2 (3-6s) -> Hard Cut at 6.0s -> Shot 3 (6-8s). 35mm Cooke S4 prime lens with deep focus (f/8 aperture), entire frame sharp."
+    },
+    "setting": "Location: quarterdeck helm of the galleon. Heavy driving rain and salt spray. Light: rain-swept amber lantern mounted on the binnacle illuminating Nora's determined face and white knuckles; stormy darkness.",
+    "characters": [
+      {
+        "name": "Nora",
+        "visual_lock": "FACE LOCK: Nora's face is exactly the face in {{ref:Nora}}, kept 1:1 with hazel eyes, wet freckled skin, and rain-soaked copper braids. BODY and OUTFIT LOCK: her build and navy seafarer brigandine are exactly as in {{ref:Nora Body Seafarer}}.",
+        "state": "Both hands gripping the oak helm spokes with white-knuckled force, battling the rudder torque."
+      }
+    ],
+    "timeline_action": {
+      "0-3s": "Matching Panel 1 (Top-Left) of {{media:6733aa7f-6a6f-41dc-9b6b-1b1cf837d51b|SC-29_storyboard_clean.jpg}} (0-3s): From second 0, with rain streaming down her face and wet copper braids whipping in the gale, Nora battles the violent kick of the oak helm and shouts: Nora says \"Keep her straight in the trough! The current is dragging our oak keel toward the crushing black basalt jaws ahead!\" (no subtitles).",
+      "3-6s": "At second 3.0, a crisp hard cut matching Panel 2 (Top-Right) of {{media:6733aa7f-6a6f-41dc-9b6b-1b1cf837d51b|SC-29_storyboard_clean.jpg}} (3-6s): Her muscles strain against the immense hydraulic pressure of the rudder; she forces the heavy wheel clockwise against the churning vortex.",
+      "6-8s": "At second 6.0, a crisp hard cut matching Panel 3 (Bottom-Left) of {{media:6733aa7f-6a6f-41dc-9b6b-1b1cf837d51b|SC-29_storyboard_clean.jpg}} (6-8s): She completes her command by second 6, planting her boots against the deck grating and holding the helm locked in position through pure iron will. SPATIAL LOCK: All characters stand firmly INSIDE the vessel on the solid wooden deck planks (or interior solid ground), NEVER on the exterior ocean/water side of the railing; maintain Panel 3's exact 180-degree camera side without flipping left and right sides."
+    },
+    "speech": {
+      "speaker": [
+        "Nora"
+      ],
+      "voices": {
+        "Nora": "kore"
+      },
+      "delivery": "shouted fast and hoarse over the storm, urgent, strained command voice",
+      "dialogue": [
+        {
+          "t": "0-6s",
+          "speaker": "Nora",
+          "line": "Keep her straight in the trough! The current is dragging our oak keel toward the crushing black basalt jaws ahead!"
+        }
+      ]
+    },
+    "dramatic_craft": {
+      "beat": "[-]: Desperate physical struggle against the vortex.",
+      "value_turn": "Command (+) -> Life-or-death struggle (-): Narrow margin between passage and annihilation.",
+      "subtext": "One slip of the wheel will shatter the ship and doom everyone.",
+      "prop_and_detail": "Heavy oak ship's wheel with bronze hub, brass binnacle compass spinning wildly."
+    },
+    "audio": "Nora's hoarse strained shout; howling gale and driving rain; violent clatter of rudder chains under strain.",
+    "physics": "Rotational resistance of hydraulic rudder kickback, muscle strain and shoe grip on wet timber.",
+    "negative_constraints": [
+      "No subtitles, no captions, no on-frame text, no logos, no watermarks.",
+      "The video is full-frame shots only: never a grid, never panels, never split screen, never black dividing lines; strictly NO duplicate characters, strictly NO multiple Nora, no ghost figures, no cloning; strictly NO character standing outside the ship hull or on the exterior water/ocean side of the railing, no 180-degree axis fusion between panels; crisp hard cuts at second 3.0 and second 6.0, no camera blending, no crossfades.",
+      "ANTI-CGI LOCK: real documentary footage, not a 3D render, not a video game, not CGI fire, no plastic skin.",
+      "No breath vapor and no white steam from anyone's mouth; no god rays, no volumetric beams, no magical sunbeams.",
+      "No shallow depth of field, no blurry background, no bokeh (f/8 aperture throughout).",
+      "Separate bodies never merge; natural hands with five fingers; no extra limbs."
+    ],
+    "image_prompt": "Cinematic medium close-up on 35mm film. Heavy rain streams across Captain {{ref:Nora}}'s determined face as her rain-soaked copper braids whip in the gale. She grips the heavy oak ship's wheel with white-knuckled intensity, fighting the violent sea current under a rain-streaked lantern. Deep focus (f/8), wet fabric and leather textures, dramatic storm lighting, strictly NO artificial volumetric lighting, NO 3D CGI."
+  },
+  {
+    "clip_id": "SC-30",
+    "scene_name": "Đỉnh điểm bẫy vách đá nghiền",
+    "duration": 10,
+    "aspect_ratio": "16:9",
+    "refs": [
+      "Nora",
+      "Nora Body Seafarer"
+    ],
+    "sf_type": "GENERATE_IMAGE",
+    "camera": {
+      "viewpoint": "third-person cinematic camera; the camera itself is never seen",
+      "shot_size": "Multi-shot matching SC-30_storyboard_clean.jpg",
+      "description": "Multi-shot sequence with crisp hard cuts: Shot 1 (0-3s) -> Hard Cut at 3.0s -> Shot 2 (3-7s) -> Hard Cut at 7.0s -> Shot 3 (7-10s). 35mm Cooke S4 prime lens with deep focus (f/8 aperture), entire frame sharp."
+    },
+    "setting": "Location: the narrow maritime strait of the Clashing Rocks. Two colossal basalt cliff walls grinding toward each other, crushing boulders into dust. Light: flashes of lightning illuminating the narrow watery corridor, billows of pulverized rock dust; stormy chiaroscuro.",
+    "characters": [
+      {
+        "name": "Nora",
+        "visual_lock": "FACE LOCK: Nora's face is exactly the face in {{ref:Nora}}, kept 1:1. Silhouetted at the helm.",
+        "state": "Guiding the galleon through the narrowing cleft."
+      }
+    ],
+    "timeline_action": {
+      "0-3s": "Matching Panel 1 (Top-Left) of {{media:ccb078cc-4ebb-4973-bd34-7f1204176f44|SC-30_storyboard_clean.jpg}} (0-3s): The pirate galleon shoots through the narrow boiling foam channel between the two colossal black basalt cliffs like an arrow released from a bow.",
+      "3-7s": "At second 3.0, a crisp hard cut matching Panel 2 (Top-Right) of {{media:ccb078cc-4ebb-4973-bd34-7f1204176f44|SC-30_storyboard_clean.jpg}} (3-7s): The titanic stone cliffs grind together with cataclysmic momentum; massive boulders sheer off, crashing into the churning sea just feet behind the galleon's stern.",
+      "7-10s": "At second 7.0, a crisp hard cut matching Panel 3 (Bottom-Left) of {{media:ccb078cc-4ebb-4973-bd34-7f1204176f44|SC-30_storyboard_clean.jpg}} (7-10s): The ship's stern clears the narrow gap as the two colossal cliffs collide with a deafening thunderous impact, throwing up a titanic plume of spray and pulverized dust (End of Act 1 at 04:00). SPATIAL LOCK: All characters stand firmly INSIDE the vessel on the solid wooden deck planks (or interior solid ground), NEVER on the exterior ocean/water side of the railing; maintain Panel 3's exact 180-degree camera side without flipping left and right sides."
+    },
+    "speech": {
+      "speaker": [],
+      "voices": {},
+      "delivery": "no dialogue; cataclysmic grinding stone and thunderous collision",
+      "dialogue": []
+    },
+    "dramatic_craft": {
+      "beat": "[!]: Climax of Act 1 — Narrow escape through the deadly gateway.",
+      "value_turn": "Impending destruction (-) -> Triumphant survival (!): Crossing the threshold into forbidden waters.",
+      "subtext": "The old world is closed behind them; there is no turning back.",
+      "prop_and_detail": "Basalt cliffs sheering off into sea, explosive water plume, ship clearing the gap."
+    },
+    "audio": "Earth-shattering cataclysmic roar of colliding tectonic cliffs, deafening explosion of displaced sea spray (Sonic Isolation: 0 words).",
+    "physics": "Massive momentum p=m*v of titanic stone collision, shockwave displacement of water and rock dust.",
+    "negative_constraints": [
+      "No subtitles, no captions, no on-frame text, no logos, no watermarks.",
+      "The video is full-frame shots only: never a grid, never panels, never split screen, never black dividing lines; strictly NO duplicate characters, strictly NO multiple Nora, no ghost figures, no cloning; strictly NO character standing outside the ship hull or on the exterior water/ocean side of the railing, no 180-degree axis fusion between panels; crisp hard cuts at second 3.0 and second 7.0, no camera blending, no crossfades.",
+      "ANTI-CGI LOCK: real documentary footage, not a 3D render, not a video game, not CGI fire, no plastic skin.",
+      "No breath vapor and no white steam from anyone's mouth; no god rays, no volumetric beams, no magical sunbeams.",
+      "No shallow depth of field, no blurry background, no bokeh (f/8 aperture throughout).",
+      "Separate bodies never merge; natural hands with five fingers; no extra limbs."
+    ],
+    "image_prompt": "Cinematic extreme wide shot on 35mm film. Two colossal, terrifying black basalt cliffs grind together in the stormy Aegean sea, crushing boulders and throwing up massive plumes of spray and stone dust. In the narrow foaming gap between the walls, a wooden pirate galleon shoots through just in time, clearing the closing stone jaws. Deep focus (f/8), monumental scale, authentic geological destruction, strictly NO artificial volumetric lighting, NO 3D CGI."
+  }
+]

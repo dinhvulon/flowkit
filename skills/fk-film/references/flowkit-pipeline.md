@@ -75,7 +75,7 @@ curl -X POST http://127.0.0.1:8100/api/projects -H "Content-Type: application/js
 ## 6. Review → upscale → xóa logo → concat (Rule 18, 32)
 
 1. Mỗi clip 720p xong → tải ngay về `${OUTDIR}/scenes/scene_{idx}_{sid}.mp4`. **Chưa xóa logo.**
-2. `/fk-review-video` (light) trên bản 720p thô: scorecard 6 tiêu chí + lỗi Critical/High/Minor, đối chiếu checklist B của `prompt-lock.md`. Bật Review Board `python tools/review_server.py 8200`.
+2. Trích xuất đúng 24 frames bằng ffmpeg (`fps=24/<duration>`, e.g. 10s: `fps=2.4`, 8s: `fps=3`) và ghép Contact Sheet 6×4 (`tile=6x4`, Rule 73) → `/fk-review-video` (light) trên bản 720p thô: scorecard 6 tiêu chí + lỗi Critical/High/Minor, đối chiếu checklist B của `prompt-lock.md`. Bật Review Board `python tools/review_server.py 8200`.
 3. **DỪNG — user duyệt từng clip.** Clip < 7.5 hoặc user chê: sửa `video_prompt` (xung đột với prompt user đã duyệt → đưa danh sách cho user chọn) → sinh lại ở 720p. Tối đa 2 vòng.
 4. Chỉ clip đã duyệt: `UPSCALE_VIDEO` (1080p, `p0UkFb`) → `${OUTDIR}/1080/scene_{idx}_{sid}_1080p.mp4` → `remove_watermark_video` → `..._1080p_clean.mp4`.
 5. `/fk-concat` cắt thẳng tại khung che (không crossfade, không text overlay); trim đầu mỗi clip `-ss 1` (6/8/10s) hoặc `-ss 0.5` (4s); chuỗi 4s cùng bối cảnh nối liền nhau theo thứ tự `a → b → c`. Chỉ thêm `--tts` nếu user chọn lồng tiếng thay thoại native.

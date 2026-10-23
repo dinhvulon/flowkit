@@ -109,7 +109,8 @@ Sau khi có ảnh storyboard sạch, BẮT BUỘC mở ảnh lên để quan sá
 3. **Điều chỉnh Video Prompt theo thể ảnh thực tế**:
    - Khớp `camera.shot_size` mở đầu với Top-Left Panel của Storyboard (`OPENING SHOT (second 0): matching the top-left panel of {{media:<uuid>|<CLIP> Storyboard.jpg}}: ...`).
    - Khớp `camera.movement` và nhịp chuyển cảnh trong `timeline_action`: Nếu thực tế giữa panel 1 và 2 là giữ nguyên góc chỉ đổi tư thế ➔ ghi `The camera holds still` hoặc `subtle slow drift`. Nếu panel 2 là góc nhìn khác hẳn ➔ ghi rõ cú cắt cảnh hoặc dolly/pan tương ứng.
-   - Khớp `negative_constraints`: Ghi đúng số lần cắt và mốc giây dựa trên các panel thực tế.
+   - **Chỉ thị Hard Cuts & Cô lập nhân vật (Rule 74 & Bài học 80)**: Khi các panel thể hiện các góc máy, cỡ cảnh hoặc nhân vật khác nhau ➔ BẮT BUỘC chỉ định rõ cú cắt gắt (**crisp hard cuts**) tại đúng mốc giây trong `camera.description` và `timeline_action` (`At second 3.0, a crisp hard cut matching Panel 2... At second 7.0, a crisp hard cut matching Panel 3 & 4...`). CẤM dùng một chuyển động camera liên tục (continuous tracking/dolly) bao trùm cả clip. Khi cú máy chỉ quay một nhân vật, nhân vật khác BẮT BUỘC ghi `Strictly [Character] alone in this shot; [Other] is completely off-screen and never appears`.
+   - Khớp `negative_constraints`: Ghi đúng số lần cắt và mốc giây dựa trên các panel thực tế kèm khối chống phân thân nhân vật.
    - Trạng thái cuối ở mốc kết thúc (giây cuối) phải mô tả đúng tư thế/vị trí xuất hiện ở Panel 4 (Bottom-Right).
 4. **CẤM TUYỆT ĐỐI**: Không được lấy nguyên video prompt viết sẵn từ trước mà không đọc ảnh storyboard thực tế vừa sinh! Storyboard là bằng chứng thị giác trực quan, prompt video phải được tinh chỉnh để phục vụ và đồng bộ với bằng chứng đó.
 
@@ -127,8 +128,8 @@ Theo khung JSON của `/fk-film` (`prompt-lock.md` khung A), thêm:
 TIME STORYBOARD (CRITICAL): the reference image {{media:<uuid>|<CLIP> Storyboard.jpg}} is a STORYBOARD OF FOUR MOMENTS IN TIME from this one clip, NOT a single frame and NOT a layout to draw. Read it left to right, top to bottom: top-left = second 0 (Panel 1), top-right = second <t2> (Panel 2), bottom-left = second <t3> (Panel 3), bottom-right = second <t4> (Panel 4). Use it only as the plan for how the action and the camera unfold; the video is full-frame shots only, never a grid, never split into panels, never black gutters. <Nhắc lại trạng thái cuối bằng vị trí cụ thể khớp Panel 4.>
 ```
 
-- `timeline_action` đúng các đoạn của bảng bước 1; mỗi đoạn bắt đầu bằng câu đối chiếu panel: `Matching Panel 1 to Panel 2 of {{media:<uuid>|<CLIP> Storyboard.jpg}}: The clip starts matching the top-left panel...`, tiếp theo là `Matching Panel 2 to Panel 3...`, `Matching Panel 3 to Panel 4...`.
-- `negative_constraints` thêm: `The video is full-frame shots only: never a grid, never panels, never split screen, never black dividing lines.` Với mỗi lần cắt, ghi đúng số lần cắt và mốc giây.
+- `timeline_action` đúng các đoạn của bảng bước 1; mỗi đoạn bắt đầu bằng câu đối chiếu panel: `Matching Panel 1 to Panel 2 of {{media:<uuid>|<CLIP> Storyboard.jpg}}: The clip starts matching the top-left panel...`, tiếp theo là `At second <t2>, a crisp hard cut matching Panel 2 to Panel 3...`, `At second <t3>, a crisp hard cut matching Panel 3 to Panel 4...`.
+- `negative_constraints` thêm: `The video is full-frame shots only: never a grid, never panels, never split screen, never black dividing lines; strictly NO duplicate characters, strictly NO multiple [Name], strictly [Other] alone in shot Y, no ghost figures, no cloning; crisp hard cuts at second X.0 and second Y.0, no camera blending, no crossfades.` (Rule 74).
 - PATCH `duration` (thiếu thì ra 10s âm thầm), `character_names` = `refs`, `horizontal_image_media_id` = media của Storyboard.
 - Linter 0 Critical/High → `/fk-review-prompt` → báo cáo → hỏi duyệt sinh.
 

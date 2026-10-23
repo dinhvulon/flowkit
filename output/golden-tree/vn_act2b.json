@@ -1,0 +1,584 @@
+[
+  {
+    "clip_id": "SC-97",
+    "scene_name": "Dò dẫm trên thảm rêu",
+    "duration": 8,
+    "dramatic_craft": {
+      "beat": "Hook [0]: Dò dẫm trên thảm rêu",
+      "value_turn": "Mortal trap -> Tactical victory: Defeating the guardian beast with environmental strategy.",
+      "subtext": "The seafarers turn the monster's own predatory instincts against it.",
+      "prop_and_detail": "Heavy bronze shield, iron pry-bars, burning pitch torches, crushing keystone."
+    },
+    "action_summary": {
+      "0-3s": "From second 0, Theron begins speaking immediately, sharp and commanding: Theron says \"Step only on the soft green damp moss, sailors. The rock beast feels every vibration through stone.\" (no subtitles).",
+      "3-6s": "Theron's command echoes through the cavern through second 5; theron dẫn đầu đoàn bước êm trên thảm rêu mềm chống gây tiếng động.",
+      "6-8s": "The line concludes by second 6; Theron braces for the next impact through second 8."
+    },
+    "dialogue": [
+      {
+        "t": "0-6s",
+        "speaker": "Theron",
+        "line": "Step only on the soft green damp moss, sailors. The rock beast feels every vibration through stone."
+      }
+    ],
+    "audio": "Theron: Step only on the soft green damp moss, sailors. The rock beast feels every vibration through stone.; screeching mandibles, iron striking stone."
+  },
+  {
+    "clip_id": "SC-98",
+    "scene_name": "Bọc vũ khí giảm thanh",
+    "duration": 6,
+    "dramatic_craft": {
+      "beat": "[+]: Bọc vũ khí giảm thanh",
+      "value_turn": "Mortal trap -> Tactical victory: Defeating the guardian beast with environmental strategy.",
+      "subtext": "The seafarers turn the monster's own predatory instincts against it.",
+      "prop_and_detail": "Heavy bronze shield, iron pry-bars, burning pitch torches, crushing keystone."
+    },
+    "action_summary": {
+      "0-2s": "From second 0, Nora delivers the line immediately, sharp and urgent: Nora says \"Muffle the scabbards and shields with canvas. Move like phantoms through the cleft.\" (no subtitles).",
+      "2-4s": "Nora's line finishes cleanly by second 4; nora ra hiệu hạ thấp vũ khí không va vào vách đá.",
+      "4-6s": "The physical combat stance settles firmly by second 6."
+    },
+    "dialogue": [
+      {
+        "t": "0-4s",
+        "speaker": "Nora",
+        "line": "Muffle the scabbards and shields with canvas. Move like phantoms through the cleft."
+      }
+    ],
+    "audio": "Nora: Muffle the scabbards and shields with canvas. Move like phantoms through the cleft.; screeching mandibles, iron striking stone."
+  },
+  {
+    "clip_id": "SC-99",
+    "scene_name": "Không gian mê cung ngột ngạt",
+    "duration": 8,
+    "dramatic_craft": {
+      "beat": "[-]: Không gian mê cung ngột ngạt",
+      "value_turn": "Mortal trap -> Tactical victory: Defeating the guardian beast with environmental strategy.",
+      "subtext": "The seafarers turn the monster's own predatory instincts against it.",
+      "prop_and_detail": "Heavy bronze shield, iron pry-bars, burning pitch torches, crushing keystone."
+    },
+    "action_summary": {
+      "0-3s": "From second 0, Không khí ngột ngạt, bụi vôi lơ lửng, ánh sáng lân tinh xanh rêu; sương khói vôi mù mịt.",
+      "3-6s": "Kinetic mass and stone friction dominate the frame.",
+      "6-8s": "The action concludes with steady physical equilibrium by second 8."
+    },
+    "dialogue": [],
+    "audio": "Monstrous chitin scraping and collapsing rock thunder (Sonic Isolation); screeching mandibles, iron striking stone."
+  },
+  {
+    "clip_id": "SC-100",
+    "scene_name": "Phát hiện dấu vết quái thú",
+    "duration": 8,
+    "dramatic_craft": {
+      "beat": "[!]: Phát hiện dấu vết quái thú",
+      "value_turn": "Mortal trap -> Tactical victory: Defeating the guardian beast with environmental strategy.",
+      "subtext": "The seafarers turn the monster's own predatory instincts against it.",
+      "prop_and_detail": "Heavy bronze shield, iron pry-bars, burning pitch torches, crushing keystone."
+    },
+    "action_summary": {
+      "0-3s": "From second 0, Castor begins speaking immediately, sharp and commanding: Castor says \"Look at these gouges in the limestone... six talon marks, carved deep as iron chisels. What kind of monster lives here?\" (no subtitles).",
+      "3-6s": "Castor's command echoes through the cavern through second 5; castor phát hiện vết cào móng sâu ba gang tay trên vách đá.",
+      "6-8s": "The line concludes by second 6; Castor braces for the next impact through second 8."
+    },
+    "dialogue": [
+      {
+        "t": "0-6s",
+        "speaker": "Castor",
+        "line": "Look at these gouges in the limestone... six talon marks, carved deep as iron chisels. What kind of monster lives here?"
+      }
+    ],
+    "audio": "Castor: Look at these gouges in the limestone... six talon marks, carved deep as iron chisels. What kind of monster lives here?; screeching mandibles, iron striking stone."
+  },
+  {
+    "clip_id": "SC-101",
+    "scene_name": "Cảnh báo quái thú thức giấc",
+    "duration": 8,
+    "dramatic_craft": {
+      "beat": "RH [!]: Cảnh báo quái thú thức giấc",
+      "value_turn": "Mortal trap -> Tactical victory: Defeating the guardian beast with environmental strategy.",
+      "subtext": "The seafarers turn the monster's own predatory instincts against it.",
+      "prop_and_detail": "Heavy bronze shield, iron pry-bars, burning pitch torches, crushing keystone."
+    },
+    "action_summary": {
+      "0-3s": "From second 0, Theron begins speaking immediately, sharp and commanding: Theron says \"The Chitin Prowler of the Labyrinth... it has smelled the living warm blood of our Aegean crew. Freeze your boots!\" (no subtitles).",
+      "3-6s": "Theron's command echoes through the cavern through second 5; theron dừng lại lắng nghe tiếng lạo xạo sau bức tường đá.",
+      "6-8s": "The line concludes by second 6; Theron braces for the next impact through second 8."
+    },
+    "dialogue": [
+      {
+        "t": "0-6s",
+        "speaker": "Theron",
+        "line": "The Chitin Prowler of the Labyrinth... it has smelled the living warm blood of our Aegean crew. Freeze your boots!"
+      }
+    ],
+    "audio": "Theron: The Chitin Prowler of the Labyrinth... it has smelled the living warm blood of our Aegean crew. Freeze your boots!; screeching mandibles, iron striking stone."
+  },
+  {
+    "clip_id": "SC-102",
+    "scene_name": "Quái thú 6 chân xuất hiện",
+    "duration": 10,
+    "dramatic_craft": {
+      "beat": "[!!!]: Quái thú 6 chân xuất hiện",
+      "value_turn": "Mortal trap -> Tactical victory: Defeating the guardian beast with environmental strategy.",
+      "subtext": "The seafarers turn the monster's own predatory instincts against it.",
+      "prop_and_detail": "Heavy bronze shield, iron pry-bars, burning pitch torches, crushing keystone."
+    },
+    "action_summary": {
+      "0-3s": "At second 0, Tảng đá lớn sụp đổ, lộ diện quái vật Labyrinth Beast 6 chân giáp xác khổng lồ 6 mét; mắt vàng rực trong tối.",
+      "3-7s": "The colossal twenty-ton rock collapse shakes the entire cavern chamber.",
+      "7-10s": "The monumental impact resolves as dust settles over the crushed creature by second 10."
+    },
+    "dialogue": [],
+    "audio": "Monstrous chitin scraping and collapsing rock thunder (Sonic Isolation); screeching mandibles, iron striking stone."
+  },
+  {
+    "clip_id": "SC-103",
+    "scene_name": "Chặn đòn móng vuốt quái vật",
+    "duration": 10,
+    "dramatic_craft": {
+      "beat": "[++]: Chặn đòn móng vuốt quái vật",
+      "value_turn": "Mortal trap -> Tactical victory: Defeating the guardian beast with environmental strategy.",
+      "subtext": "The seafarers turn the monster's own predatory instincts against it.",
+      "prop_and_detail": "Heavy bronze shield, iron pry-bars, burning pitch torches, crushing keystone."
+    },
+    "action_summary": {
+      "0-3s": "From the opening frame at second 0, Heracles shouts with ferocious intensity: Heracles says \"Get behind the heavy bronze plate, all of you! This armored demon has the crushing weight of an ox, but my boots are anchored deep!\" (no subtitles).",
+      "3-7s": "The battle command drives the maneuver through second 6 as quái thú lao tới, heracles giơ khiên đồng to bản chặn móng vuốt.",
+      "7-10s": "Heracles concludes the line by second 7; the team executes the tactical strike through second 10."
+    },
+    "dialogue": [
+      {
+        "t": "0-7s",
+        "speaker": "Heracles",
+        "line": "Get behind the heavy bronze plate, all of you! This armored demon has the crushing weight of an ox, but my boots are anchored deep!"
+      }
+    ],
+    "audio": "Heracles: Get behind the heavy bronze plate, all of you! This armored demon has the crushing weight of an ox, but my boots are anchored deep!; screeching mandibles, iron striking stone."
+  },
+  {
+    "clip_id": "SC-104",
+    "scene_name": "Trượt lùi trước xung lực",
+    "duration": 8,
+    "dramatic_craft": {
+      "beat": "[!]: Trượt lùi trước xung lực",
+      "value_turn": "Mortal trap -> Tactical victory: Defeating the guardian beast with environmental strategy.",
+      "subtext": "The seafarers turn the monster's own predatory instincts against it.",
+      "prop_and_detail": "Heavy bronze shield, iron pry-bars, burning pitch torches, crushing keystone."
+    },
+    "action_summary": {
+      "0-3s": "From second 0, Đuôi gai quái thú quất mạnh vào khiên đồng tóe lửa, Heracles trượt lùi 2 mét; bụi đá dăm tung tóe.",
+      "3-6s": "Kinetic mass and stone friction dominate the frame.",
+      "6-8s": "The action concludes with steady physical equilibrium by second 8."
+    },
+    "dialogue": [],
+    "audio": "Monstrous chitin scraping and collapsing rock thunder (Sonic Isolation); screeching mandibles, iron striking stone."
+  },
+  {
+    "clip_id": "SC-105",
+    "scene_name": "Tên nỏ vô hiệu trước giáp",
+    "duration": 6,
+    "dramatic_craft": {
+      "beat": "[-]: Tên nỏ vô hiệu trước giáp",
+      "value_turn": "Mortal trap -> Tactical victory: Defeating the guardian beast with environmental strategy.",
+      "subtext": "The seafarers turn the monster's own predatory instincts against it.",
+      "prop_and_detail": "Heavy bronze shield, iron pry-bars, burning pitch torches, crushing keystone."
+    },
+    "action_summary": {
+      "0-2s": "From second 0, Castor delivers the line immediately, sharp and urgent: Castor says \"The carapace is thick as granite! Iron arrowheads shatter like dry twigs against her!\" (no subtitles).",
+      "2-4s": "Castor's line finishes cleanly by second 4; castor bắn nỏ vào mắt kép quái thú nhưng mũi tên bật nảy.",
+      "4-6s": "The physical combat stance settles firmly by second 6."
+    },
+    "dialogue": [
+      {
+        "t": "0-4s",
+        "speaker": "Castor",
+        "line": "The carapace is thick as granite! Iron arrowheads shatter like dry twigs against her!"
+      }
+    ],
+    "audio": "Castor: The carapace is thick as granite! Iron arrowheads shatter like dry twigs against her!; screeching mandibles, iron striking stone."
+  },
+  {
+    "clip_id": "SC-106",
+    "scene_name": "Hiến kế sập vòm đá",
+    "duration": 8,
+    "dramatic_craft": {
+      "beat": "[++]: Hiến kế sập vòm đá",
+      "value_turn": "Mortal trap -> Tactical victory: Defeating the guardian beast with environmental strategy.",
+      "subtext": "The seafarers turn the monster's own predatory instincts against it.",
+      "prop_and_detail": "Heavy bronze shield, iron pry-bars, burning pitch torches, crushing keystone."
+    },
+    "action_summary": {
+      "0-3s": "From second 0, Theron begins speaking immediately, sharp and commanding: Theron says \"Do not waste arrows on her shell! The roof arch above is cracked—bring the limestone ceiling down upon her!\" (no subtitles).",
+      "3-6s": "Theron's command echoes through the cavern through second 5; theron chỉ lên vòm đá nứt nẻ phía trên đầu quái vật.",
+      "6-8s": "The line concludes by second 6; Theron braces for the next impact through second 8."
+    },
+    "dialogue": [
+      {
+        "t": "0-6s",
+        "speaker": "Theron",
+        "line": "Do not waste arrows on her shell! The roof arch above is cracked—bring the limestone ceiling down upon her!"
+      }
+    ],
+    "audio": "Theron: Do not waste arrows on her shell! The roof arch above is cracked—bring the limestone ceiling down upon her!; screeching mandibles, iron striking stone."
+  },
+  {
+    "clip_id": "SC-107",
+    "scene_name": "Phê duyệt kế hoạch bẫy",
+    "duration": 8,
+    "dramatic_craft": {
+      "beat": "RH [+]: Phê duyệt kế hoạch bẫy",
+      "value_turn": "Mortal trap -> Tactical victory: Defeating the guardian beast with environmental strategy.",
+      "subtext": "The seafarers turn the monster's own predatory instincts against it.",
+      "prop_and_detail": "Heavy bronze shield, iron pry-bars, burning pitch torches, crushing keystone."
+    },
+    "action_summary": {
+      "0-3s": "From second 0, Nora begins speaking immediately, sharp and commanding: Nora says \"A twenty-ton keystone hanging by brittle calcified veins! Heracles, Castor, we need to lure her directly beneath the archway!\" (no subtitles).",
+      "3-6s": "Nora's command echoes through the cavern through second 5; nora quan sát thấy khối đá vôi 20 tấn giữ bởi các gờ nứt tự nhiên.",
+      "6-8s": "The line concludes by second 6; Nora braces for the next impact through second 8."
+    },
+    "dialogue": [
+      {
+        "t": "0-6s",
+        "speaker": "Nora",
+        "line": "A twenty-ton keystone hanging by brittle calcified veins! Heracles, Castor, we need to lure her directly beneath the archway!"
+      }
+    ],
+    "audio": "Nora: A twenty-ton keystone hanging by brittle calcified veins! Heracles, Castor, we need to lure her directly beneath the archway!; screeching mandibles, iron striking stone."
+  },
+  {
+    "clip_id": "SC-108",
+    "scene_name": "Dùng bản đồ làm mồi nhử",
+    "duration": 10,
+    "dramatic_craft": {
+      "beat": "[+++]: Dùng bản đồ làm mồi nhử",
+      "value_turn": "Mortal trap -> Tactical victory: Defeating the guardian beast with environmental strategy.",
+      "subtext": "The seafarers turn the monster's own predatory instincts against it.",
+      "prop_and_detail": "Heavy bronze shield, iron pry-bars, burning pitch torches, crushing keystone."
+    },
+    "action_summary": {
+      "0-3s": "From the opening frame at second 0, Nora shouts with ferocious intensity: Nora says \"She hunts by living warmth and bioluminescent shimmer! Watch the gold fire, beast of the abyss! Come feast upon your master's bait now!\" (no subtitles).",
+      "3-7s": "The battle command drives the maneuver through second 6 as nora rút tấm bản đồ da cừu vàng kim, vẩy nước muối làm nó phát quang rực rỡ thu hút quái thú.",
+      "7-10s": "Nora concludes the line by second 7; the team executes the tactical strike through second 10."
+    },
+    "dialogue": [
+      {
+        "t": "0-7s",
+        "speaker": "Nora",
+        "line": "She hunts by living warmth and bioluminescent shimmer! Watch the gold fire, beast of the abyss! Come feast upon your master's bait now!"
+      }
+    ],
+    "audio": "Nora: She hunts by living warmth and bioluminescent shimmer! Watch the gold fire, beast of the abyss! Come feast upon your master's bait now!; screeching mandibles, iron striking stone."
+  },
+  {
+    "clip_id": "SC-109",
+    "scene_name": "Quái thú cắn mồi nhử",
+    "duration": 8,
+    "dramatic_craft": {
+      "beat": "[!]: Quái thú cắn mồi nhử",
+      "value_turn": "Mortal trap -> Tactical victory: Defeating the guardian beast with environmental strategy.",
+      "subtext": "The seafarers turn the monster's own predatory instincts against it.",
+      "prop_and_detail": "Heavy bronze shield, iron pry-bars, burning pitch torches, crushing keystone."
+    },
+    "action_summary": {
+      "0-3s": "From second 0, Quái vật Labyrinth gầm rú, lao thẳng vào ánh sáng vàng rực của tấm bản đồ; bụi đá mù mịt.",
+      "3-6s": "Kinetic mass and stone friction dominate the frame.",
+      "6-8s": "The action concludes with steady physical equilibrium by second 8."
+    },
+    "dialogue": [],
+    "audio": "Monstrous chitin scraping and collapsing rock thunder (Sonic Isolation); screeching mandibles, iron striking stone."
+  },
+  {
+    "clip_id": "SC-110",
+    "scene_name": "Găm mồi vào tử địa",
+    "duration": 8,
+    "dramatic_craft": {
+      "beat": "[++]: Găm mồi vào tử địa",
+      "value_turn": "Mortal trap -> Tactical victory: Defeating the guardian beast with environmental strategy.",
+      "subtext": "The seafarers turn the monster's own predatory instincts against it.",
+      "prop_and_detail": "Heavy bronze shield, iron pry-bars, burning pitch torches, crushing keystone."
+    },
+    "action_summary": {
+      "0-3s": "From second 0, Nora begins speaking immediately, sharp and commanding: Nora says \"Take the bait into the dark! Right beneath the hanging stone jaws where your grave waits for you!\" (no subtitles).",
+      "3-6s": "Nora's command echoes through the cavern through second 5; nora giương nỏ, bắn mũi tên mang tấm bản đồ găm thẳng vào khe nứt dưới vòm đá.",
+      "6-8s": "The line concludes by second 6; Nora braces for the next impact through second 8."
+    },
+    "dialogue": [
+      {
+        "t": "0-6s",
+        "speaker": "Nora",
+        "line": "Take the bait into the dark! Right beneath the hanging stone jaws where your grave waits for you!"
+      }
+    ],
+    "audio": "Nora: Take the bait into the dark! Right beneath the hanging stone jaws where your grave waits for you!; screeching mandibles, iron striking stone."
+  },
+  {
+    "clip_id": "SC-111",
+    "scene_name": "Quái thú vào tâm bẫy",
+    "duration": 6,
+    "dramatic_craft": {
+      "beat": "[!]: Quái thú vào tâm bẫy",
+      "value_turn": "Mortal trap -> Tactical victory: Defeating the guardian beast with environmental strategy.",
+      "subtext": "The seafarers turn the monster's own predatory instincts against it.",
+      "prop_and_detail": "Heavy bronze shield, iron pry-bars, burning pitch torches, crushing keystone."
+    },
+    "action_summary": {
+      "0-2s": "From second 0, Theron delivers the line immediately, sharp and urgent: Theron says \"She is in the kill zone! Cut the hemp cables and strike the wedge!\" (no subtitles).",
+      "2-4s": "Theron's line finishes cleanly by second 4; quái vật chồm lên đớp lấy tấm bản đồ ngay dưới vòm đá.",
+      "4-6s": "The physical combat stance settles firmly by second 6."
+    },
+    "dialogue": [
+      {
+        "t": "0-4s",
+        "speaker": "Theron",
+        "line": "She is in the kill zone! Cut the hemp cables and strike the wedge!"
+      }
+    ],
+    "audio": "Theron: She is in the kill zone! Cut the hemp cables and strike the wedge!; screeching mandibles, iron striking stone."
+  },
+  {
+    "clip_id": "SC-112",
+    "scene_name": "Chém đứt dây kích hoạt",
+    "duration": 8,
+    "dramatic_craft": {
+      "beat": "[++]: Chém đứt dây kích hoạt",
+      "value_turn": "Mortal trap -> Tactical victory: Defeating the guardian beast with environmental strategy.",
+      "subtext": "The seafarers turn the monster's own predatory instincts against it.",
+      "prop_and_detail": "Heavy bronze shield, iron pry-bars, burning pitch torches, crushing keystone."
+    },
+    "action_summary": {
+      "0-3s": "From second 0, Castor begins speaking immediately, sharp and commanding: Castor says \"May the earth swallow you whole, demon! Timber and stone, come crashing down into the dark abyss!\" (no subtitles).",
+      "3-6s": "Castor's command echoes through the cavern through second 5; castor vung đoản kiếm chém đứt sợi dây néo căng giữ chốt đá.",
+      "6-8s": "The line concludes by second 6; Castor braces for the next impact through second 8."
+    },
+    "dialogue": [
+      {
+        "t": "0-6s",
+        "speaker": "Castor",
+        "line": "May the earth swallow you whole, demon! Timber and stone, come crashing down into the dark abyss!"
+      }
+    ],
+    "audio": "Castor: May the earth swallow you whole, demon! Timber and stone, come crashing down into the dark abyss!; screeching mandibles, iron striking stone."
+  },
+  {
+    "clip_id": "SC-113",
+    "scene_name": "Dộng nêm giải phóng 20 tấn đá",
+    "duration": 8,
+    "dramatic_craft": {
+      "beat": "RH [+++]: Dộng nêm giải phóng 20 tấn đá",
+      "value_turn": "Mortal trap -> Tactical victory: Defeating the guardian beast with environmental strategy.",
+      "subtext": "The seafarers turn the monster's own predatory instincts against it.",
+      "prop_and_detail": "Heavy bronze shield, iron pry-bars, burning pitch torches, crushing keystone."
+    },
+    "action_summary": {
+      "0-3s": "From second 0, Heracles begins speaking immediately, sharp and commanding: Heracles says \"Give way, you ancient mountain! Bury this scavenger deep beneath twenty tons of crushed Aegean limestone and boulders!\" (no subtitles).",
+      "3-6s": "Heracles's command echoes through the cavern through second 5; heracles dùng đòn bẩy sắt dộng mạnh vào nêm đá chịu lực cuối cùng.",
+      "6-8s": "The line concludes by second 6; Heracles braces for the next impact through second 8."
+    },
+    "dialogue": [
+      {
+        "t": "0-6s",
+        "speaker": "Heracles",
+        "line": "Give way, you ancient mountain! Bury this scavenger deep beneath twenty tons of crushed Aegean limestone and boulders!"
+      }
+    ],
+    "audio": "Heracles: Give way, you ancient mountain! Bury this scavenger deep beneath twenty tons of crushed Aegean limestone and boulders!; screeching mandibles, iron striking stone."
+  },
+  {
+    "clip_id": "SC-114",
+    "scene_name": "20 tấn đá nghiền nát quái thú",
+    "duration": 10,
+    "dramatic_craft": {
+      "beat": "[!!!]: 20 tấn đá nghiền nát quái thú",
+      "value_turn": "Mortal trap -> Tactical victory: Defeating the guardian beast with environmental strategy.",
+      "subtext": "The seafarers turn the monster's own predatory instincts against it.",
+      "prop_and_detail": "Heavy bronze shield, iron pry-bars, burning pitch torches, crushing keystone."
+    },
+    "action_summary": {
+      "0-3s": "At second 0, Vòm đá 20 tấn sụp đổ dữ dội, bụi đá trắng mịt mù nghiền nát quái thú Labyrinth; đất đá đổ sập kinh hoàng.",
+      "3-7s": "The colossal twenty-ton rock collapse shakes the entire cavern chamber.",
+      "7-10s": "The monumental impact resolves as dust settles over the crushed creature by second 10."
+    },
+    "dialogue": [],
+    "audio": "Monstrous chitin scraping and collapsing rock thunder (Sonic Isolation); screeching mandibles, iron striking stone."
+  },
+  {
+    "clip_id": "SC-115",
+    "scene_name": "Xác quái thú bị vùi lấp",
+    "duration": 8,
+    "dramatic_craft": {
+      "beat": "[+]: Xác quái thú bị vùi lấp",
+      "value_turn": "Mortal trap -> Tactical victory: Defeating the guardian beast with environmental strategy.",
+      "subtext": "The seafarers turn the monster's own predatory instincts against it.",
+      "prop_and_detail": "Heavy bronze shield, iron pry-bars, burning pitch torches, crushing keystone."
+    },
+    "action_summary": {
+      "0-3s": "From second 0, Bụi trắng tan dần, chỉ còn lại đống đá đổ và lớp giáp xác vỡ nát bất động; bụi vôi mờ ảo.",
+      "3-6s": "Kinetic mass and stone friction dominate the frame.",
+      "6-8s": "The action concludes with steady physical equilibrium by second 8."
+    },
+    "dialogue": [],
+    "audio": "Monstrous chitin scraping and collapsing rock thunder (Sonic Isolation); screeching mandibles, iron striking stone."
+  },
+  {
+    "clip_id": "SC-116",
+    "scene_name": "Bản đồ hết ma thuật",
+    "duration": 8,
+    "dramatic_craft": {
+      "beat": "[0]: Bản đồ hết ma thuật",
+      "value_turn": "Mortal trap -> Tactical victory: Defeating the guardian beast with environmental strategy.",
+      "subtext": "The seafarers turn the monster's own predatory instincts against it.",
+      "prop_and_detail": "Heavy bronze shield, iron pry-bars, burning pitch torches, crushing keystone."
+    },
+    "action_summary": {
+      "0-3s": "From second 0, Castor begins speaking immediately, sharp and commanding: Castor says \"The gold ink is cold and dark. Its lethal glamour died the moment the guardian beast was crushed to dust.\" (no subtitles).",
+      "3-6s": "Castor's command echoes through the cavern through second 5; castor nhặt lại tấm bản đồ nguyên vẹn nằm trên gờ đá, mực vàng đã tắt lịm.",
+      "6-8s": "The line concludes by second 6; Castor braces for the next impact through second 8."
+    },
+    "dialogue": [
+      {
+        "t": "0-6s",
+        "speaker": "Castor",
+        "line": "The gold ink is cold and dark. Its lethal glamour died the moment the guardian beast was crushed to dust."
+      }
+    ],
+    "audio": "Castor: The gold ink is cold and dark. Its lethal glamour died the moment the guardian beast was crushed to dust.; screeching mandibles, iron striking stone."
+  },
+  {
+    "clip_id": "SC-117",
+    "scene_name": "Dựa vào con người",
+    "duration": 6,
+    "dramatic_craft": {
+      "beat": "[++]: Dựa vào con người",
+      "value_turn": "Mortal trap -> Tactical victory: Defeating the guardian beast with environmental strategy.",
+      "subtext": "The seafarers turn the monster's own predatory instincts against it.",
+      "prop_and_detail": "Heavy bronze shield, iron pry-bars, burning pitch torches, crushing keystone."
+    },
+    "action_summary": {
+      "0-2s": "From second 0, Nora delivers the line immediately, sharp and urgent: Nora says \"The map has done its work. Now we walk only by Theron's wisdom.\" (no subtitles).",
+      "2-4s": "Nora's line finishes cleanly by second 4; nora nhận lại tấm da cừu trắng tinh, cuộn lại nhét vào bao.",
+      "4-6s": "The physical combat stance settles firmly by second 6."
+    },
+    "dialogue": [
+      {
+        "t": "0-4s",
+        "speaker": "Nora",
+        "line": "The map has done its work. Now we walk only by Theron's wisdom."
+      }
+    ],
+    "audio": "Nora: The map has done its work. Now we walk only by Theron's wisdom.; screeching mandibles, iron striking stone."
+  },
+  {
+    "clip_id": "SC-118",
+    "scene_name": "Lộ ra lối vào giếng trời",
+    "duration": 8,
+    "dramatic_craft": {
+      "beat": "[+]: Lộ ra lối vào giếng trời",
+      "value_turn": "Mortal trap -> Tactical victory: Defeating the guardian beast with environmental strategy.",
+      "subtext": "The seafarers turn the monster's own predatory instincts against it.",
+      "prop_and_detail": "Heavy bronze shield, iron pry-bars, burning pitch torches, crushing keystone."
+    },
+    "action_summary": {
+      "0-3s": "From second 0, Theron begins speaking immediately, sharp and commanding: Theron says \"The collapse breached the inner wall! Feel the warm updraft carrying the scent of petrified gold and sweet water?\" (no subtitles).",
+      "3-6s": "Theron's command echoes through the cavern through second 5; theron dùng gậy đá gõ vào khe nứt sâu vừa lộ ra sau vụ sạt lở.",
+      "6-8s": "The line concludes by second 6; Theron braces for the next impact through second 8."
+    },
+    "dialogue": [
+      {
+        "t": "0-6s",
+        "speaker": "Theron",
+        "line": "The collapse breached the inner wall! Feel the warm updraft carrying the scent of petrified gold and sweet water?"
+      }
+    ],
+    "audio": "Theron: The collapse breached the inner wall! Feel the warm updraft carrying the scent of petrified gold and sweet water?; screeching mandibles, iron striking stone."
+  },
+  {
+    "clip_id": "SC-119",
+    "scene_name": "Bụi vàng chào đón",
+    "duration": 10,
+    "dramatic_craft": {
+      "beat": "RH [++]: Bụi vàng chào đón",
+      "value_turn": "Mortal trap -> Tactical victory: Defeating the guardian beast with environmental strategy.",
+      "subtext": "The seafarers turn the monster's own predatory instincts against it.",
+      "prop_and_detail": "Heavy bronze shield, iron pry-bars, burning pitch torches, crushing keystone."
+    },
+    "action_summary": {
+      "0-3s": "From the opening frame at second 0, Nora shouts with ferocious intensity: Nora says \"Look at the golden dust drifting on the warm wind like glowing fireflies... the sanctuary of the Golden Tree is waiting just beyond!\" (no subtitles).",
+      "3-7s": "The battle command drives the maneuver through second 6 as một luồng khí ấm mang theo bụi sáng golden embers lơ lửng thổi qua khe nứt.",
+      "7-10s": "Nora concludes the line by second 7; the team executes the tactical strike through second 10."
+    },
+    "dialogue": [
+      {
+        "t": "0-7s",
+        "speaker": "Nora",
+        "line": "Look at the golden dust drifting on the warm wind like glowing fireflies... the sanctuary of the Golden Tree is waiting just beyond!"
+      }
+    ],
+    "audio": "Nora: Look at the golden dust drifting on the warm wind like glowing fireflies... the sanctuary of the Golden Tree is waiting just beyond!; screeching mandibles, iron striking stone."
+  },
+  {
+    "clip_id": "SC-120",
+    "scene_name": "Mở toang lối vào thánh địa",
+    "duration": 8,
+    "dramatic_craft": {
+      "beat": "[+]: Mở toang lối vào thánh địa",
+      "value_turn": "Mortal trap -> Tactical victory: Defeating the guardian beast with environmental strategy.",
+      "subtext": "The seafarers turn the monster's own predatory instincts against it.",
+      "prop_and_detail": "Heavy bronze shield, iron pry-bars, burning pitch torches, crushing keystone."
+    },
+    "action_summary": {
+      "0-3s": "From second 0, Heracles begins speaking immediately, sharp and commanding: Heracles says \"The crawlway is open, Captain. Let us leave this graveyard behind and see what treasures remain uncursed in the deep.\" (no subtitles).",
+      "3-6s": "Heracles's command echoes through the cavern through second 5; heracles dọn sạch những viên đá vôi sắc nhọn mở lối đi hẹp.",
+      "6-8s": "The line concludes by second 6; Heracles braces for the next impact through second 8."
+    },
+    "dialogue": [
+      {
+        "t": "0-6s",
+        "speaker": "Heracles",
+        "line": "The crawlway is open, Captain. Let us leave this graveyard behind and see what treasures remain uncursed in the deep."
+      }
+    ],
+    "audio": "Heracles: The crawlway is open, Captain. Let us leave this graveyard behind and see what treasures remain uncursed in the deep.; screeching mandibles, iron striking stone."
+  },
+  {
+    "clip_id": "SC-121",
+    "scene_name": "Bước vào ngưỡng cửa thần tiên",
+    "duration": 6,
+    "dramatic_craft": {
+      "beat": "[0]: Bước vào ngưỡng cửa thần tiên",
+      "value_turn": "Mortal trap -> Tactical victory: Defeating the guardian beast with environmental strategy.",
+      "subtext": "The seafarers turn the monster's own predatory instincts against it.",
+      "prop_and_detail": "Heavy bronze shield, iron pry-bars, burning pitch torches, crushing keystone."
+    },
+    "action_summary": {
+      "0-2s": "From second 0, Theron delivers the line immediately, sharp and urgent: Theron says \"Keep your eyes open, sailors. What lies ahead has blinded kings with holy terror.\" (no subtitles).",
+      "2-4s": "Theron's line finishes cleanly by second 4; theron đi trước, nora, castor và heracles bước qua khe nứt.",
+      "4-6s": "The physical combat stance settles firmly by second 6."
+    },
+    "dialogue": [
+      {
+        "t": "0-4s",
+        "speaker": "Theron",
+        "line": "Keep your eyes open, sailors. What lies ahead has blinded kings with holy terror."
+      }
+    ],
+    "audio": "Theron: Keep your eyes open, sailors. What lies ahead has blinded kings with holy terror.; screeching mandibles, iron striking stone."
+  },
+  {
+    "clip_id": "SC-122",
+    "scene_name": "Lộ diện Điện Thờ Cây Vàng",
+    "duration": 10,
+    "dramatic_craft": {
+      "beat": "[+++]: Lộ diện Điện Thờ Cây Vàng",
+      "value_turn": "Mortal trap -> Tactical victory: Defeating the guardian beast with environmental strategy.",
+      "subtext": "The seafarers turn the monster's own predatory instincts against it.",
+      "prop_and_detail": "Heavy bronze shield, iron pry-bars, burning pitch torches, crushing keystone."
+    },
+    "action_summary": {
+      "0-3s": "At second 0, Ánh sáng vàng rực rỡ từ giếng trời ngầm chiếu rọi bóng bốn người bước vào thánh địa (Hạ màn Hồi 2B); ánh sáng vàng kim bùng nổ.",
+      "3-7s": "The colossal twenty-ton rock collapse shakes the entire cavern chamber.",
+      "7-10s": "The monumental impact resolves as dust settles over the crushed creature by second 10."
+    },
+    "dialogue": [],
+    "audio": "Monstrous chitin scraping and collapsing rock thunder (Sonic Isolation); screeching mandibles, iron striking stone."
+  }
+]

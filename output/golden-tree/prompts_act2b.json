@@ -1,0 +1,1751 @@
+[
+  {
+    "clip_id": "SC-97",
+    "scene_name": "Dò dẫm trên thảm rêu",
+    "duration": 8,
+    "aspect_ratio": "16:9",
+    "refs": [
+      "Nora",
+      "Nora Body Seafarer",
+      "Theron"
+    ],
+    "start_frame": {
+      "type": "GENERATE_IMAGE",
+      "image_prompt": "Cinematic master shot on 35mm film, 16:9 aspect ratio. Theron dẫn đầu đoàn bước êm trên thảm rêu mềm chống gây tiếng động. Featuring {{ref:Nora}} {{ref:Nora Body Seafarer}} {{ref:Theron}}. Practical lighting: lân tinh xanh rêu u tối. Deep focus (f/8 aperture), entire frame sharp, dark chiaroscuro, natural textures, strictly NO artificial volumetric lighting, NO 3D CGI.",
+      "image_refs": [
+        "Nora",
+        "Nora Body Seafarer",
+        "Theron"
+      ]
+    },
+    "camera": {
+      "viewpoint": "third-person cinematic camera; the camera itself is never seen",
+      "shot_size": "MS Dò Dẫm Trên Rêu",
+      "description": "Multi-shot sequence with crisp hard cuts: Shot 1 (0-3s) -> Hard Cut at 3.0s -> Shot 2 (3-6s) -> Hard Cut at 6.0s -> Shot 3 (6-8s). 35mm Cooke S4 prime lens with deep focus (f/8 aperture), entire frame sharp."
+    },
+    "style": "cinematic feature-film look: shot on ARRI Alexa with Cooke S4 prime lenses, fine 35mm film grain, deep inky blacks, strong motivated chiaroscuro, thin atmospheric dust catching the light; real seafarers and prehistoric chitin monster, matte organic biological textures, strictly NOT CGI, NOT a video game",
+    "setting": "Location: karst labyrinth cavern and collapsed stone arch. Light: lân tinh xanh rêu u tối, deep subterranean chiaroscuro shadows.",
+    "characters": [
+      {
+        "name": "Nora",
+        "visual_lock": "FACE LOCK: Nora's face is exactly the face in {{media:62e117f8-0af7-484e-90a8-f79927105746|nora_clean.jpg}}, kept 1:1. BODY and OUTFIT LOCK: her build and navy seafarer brigandine are exactly as in {{media:743ef618-f4c5-456c-9285-56dd911ca94b|nora_body_seafarer_clean.jpg}}.",
+        "state": "Executing tactical combat maneuvers in the dark cavern."
+      },
+      {
+        "name": "Theron",
+        "visual_lock": "FACE LOCK: Theron's face is exactly the face in {{media:7c5d994a-dabd-406b-a6c1-b9fa6473a612|theron_clean.jpg}}, kept 1:1 with wild gray beard and limestone dust. BODY and OUTFIT LOCK: his emaciated figure in burlap rags is exactly as in {{media:7c5d994a-dabd-406b-a6c1-b9fa6473a612|theron_clean.jpg}}.",
+        "state": "Guiding the crew past predatory ambush points."
+      }
+    ],
+    "timeline_action": {
+      "0-3s": "From second 0, Theron begins speaking immediately, sharp and commanding: Theron says \"Step only on the soft green damp moss, sailors. The rock beast feels every vibration through stone.\" (no subtitles).",
+      "3-6s": "At second 3.0, a crisp hard cut: Theron's command echoes through the cavern through second 5; theron dẫn đầu đoàn bước êm trên thảm rêu mềm chống gây tiếng động.",
+      "6-8s": "At second 6.0, a crisp hard cut: The line concludes by second 6; Theron braces for the next impact through second 8. Strictly Theron alone in this focal framing; Nora are completely off-screen or in distinct background separation, never overlapping. SPATIAL LOCK: All characters stand firmly on the interior solid deck or stone floor, NEVER on the exterior water/cliff drop-off side of any barrier; maintain a consistent 180-degree spatial axis within each shot."
+    },
+    "speech": {
+      "speaker": [
+        "Theron"
+      ],
+      "voices": {
+        "Theron": "charon"
+      },
+      "delivery": "shouted loud, sharp and clipped in visceral mortal combat",
+      "dialogue": [
+        {
+          "t": "0-6s",
+          "speaker": "Theron",
+          "line": "Step only on the soft green damp moss, sailors. The rock beast feels every vibration through stone."
+        }
+      ]
+    },
+    "dramatic_craft": {
+      "beat": "Hook [0]: Dò dẫm trên thảm rêu",
+      "value_turn": "Mortal trap -> Tactical victory: Defeating the guardian beast with environmental strategy.",
+      "subtext": "The seafarers turn the monster's own predatory instincts against it.",
+      "prop_and_detail": "Heavy bronze shield, iron pry-bars, burning pitch torches, crushing keystone."
+    },
+    "audio": "Theron: Step only on the soft green damp moss, sailors. The rock beast feels every vibration through stone.; screeching mandibles, iron striking stone.",
+    "physics": "Massive momentum p=m*v of twenty-ton stone collapse, elastic chitin rebound on bronze, kinetic dust displacement.",
+    "negative_constraints": [
+      "No subtitles, no captions, no on-frame text, no logos, no watermarks.",
+      "The video is full-frame shots only: never a grid, never panels, never split screen, never black dividing lines; strictly NO duplicate characters, strictly NO multiple Nora, Theron, no ghost figures, no cloning; strictly NO character standing outside the ship hull or on the exterior water/drop-off side of a railing/barrier, no 180-degree axis fusion between panels; crisp hard cuts at second 3.0 and second 6.0, no camera blending, no crossfades.",
+      "ANTI-CGI LOCK: real documentary footage, not a 3D render, not a video game, not CGI fire, no plastic skin.",
+      "No breath vapor and no white steam from anyone's mouth; no god rays, no volumetric beams, no magical sunbeams.",
+      "No shallow depth of field, no blurry background, no bokeh (f/8 aperture throughout).",
+      "Separate bodies never merge; natural hands with five fingers; no extra limbs."
+    ]
+  },
+  {
+    "clip_id": "SC-98",
+    "scene_name": "Bọc vũ khí giảm thanh",
+    "duration": 6,
+    "aspect_ratio": "16:9",
+    "refs": [
+      "Nora",
+      "Nora Body Seafarer",
+      "Castor"
+    ],
+    "start_frame": {
+      "type": "PREV_LAST_FRAME",
+      "note": "Continuity match from previous clip."
+    },
+    "camera": {
+      "viewpoint": "third-person cinematic camera; the camera itself is never seen",
+      "shot_size": "MCU Nora Ra Hiệu Vũ Khí",
+      "description": "Multi-shot sequence with crisp hard cuts: Shot 1 (0-2s) -> Hard Cut at 2.0s -> Shot 2 (2-4s) -> Hard Cut at 4.0s -> Shot 3 (4-6s). 35mm Cooke S4 prime lens with deep focus (f/8 aperture), entire frame sharp."
+    },
+    "style": "cinematic feature-film look: shot on ARRI Alexa with Cooke S4 prime lenses, fine 35mm film grain, deep inky blacks, strong motivated chiaroscuro, thin atmospheric dust catching the light; real seafarers and prehistoric chitin monster, matte organic biological textures, strictly NOT CGI, NOT a video game",
+    "setting": "Location: karst labyrinth cavern and collapsed stone arch. Light: ánh sáng hẹp le lói, deep subterranean chiaroscuro shadows.",
+    "characters": [
+      {
+        "name": "Nora",
+        "visual_lock": "FACE LOCK: Nora's face is exactly the face in {{media:62e117f8-0af7-484e-90a8-f79927105746|nora_clean.jpg}}, kept 1:1. BODY and OUTFIT LOCK: her build and navy seafarer brigandine are exactly as in {{media:743ef618-f4c5-456c-9285-56dd911ca94b|nora_body_seafarer_clean.jpg}}.",
+        "state": "Executing tactical combat maneuvers in the dark cavern."
+      },
+      {
+        "name": "Castor",
+        "visual_lock": "FACE LOCK: Castor's face is exactly the face in {{media:3152a235-af4f-462b-a78e-02551f826e41|castor_clean.jpg}}, kept 1:1. BODY and OUTFIT LOCK: his leather cuirass is exactly as in {{media:3152a235-af4f-462b-a78e-02551f826e41|castor_clean.jpg}}.",
+        "state": "Aiming and striking with lethal tactical precision."
+      }
+    ],
+    "timeline_action": {
+      "0-2s": "From second 0, Nora delivers the line immediately, sharp and urgent: Nora says \"Muffle the scabbards and shields with canvas. Move like phantoms through the cleft.\" (no subtitles).",
+      "2-4s": "At second 2.0, a crisp hard cut: Nora's line finishes cleanly by second 4; nora ra hiệu hạ thấp vũ khí không va vào vách đá.",
+      "4-6s": "At second 4.0, a crisp hard cut: The physical combat stance settles firmly by second 6. Strictly Castor alone in this focal framing; Nora are completely off-screen or in distinct background separation, never overlapping. SPATIAL LOCK: All characters stand firmly on the interior solid deck or stone floor, NEVER on the exterior water/cliff drop-off side of any barrier; maintain a consistent 180-degree spatial axis within each shot."
+    },
+    "speech": {
+      "speaker": [
+        "Nora"
+      ],
+      "voices": {
+        "Nora": "kore"
+      },
+      "delivery": "shouted loud, sharp and clipped in visceral mortal combat",
+      "dialogue": [
+        {
+          "t": "0-4s",
+          "speaker": "Nora",
+          "line": "Muffle the scabbards and shields with canvas. Move like phantoms through the cleft."
+        }
+      ]
+    },
+    "dramatic_craft": {
+      "beat": "[+]: Bọc vũ khí giảm thanh",
+      "value_turn": "Mortal trap -> Tactical victory: Defeating the guardian beast with environmental strategy.",
+      "subtext": "The seafarers turn the monster's own predatory instincts against it.",
+      "prop_and_detail": "Heavy bronze shield, iron pry-bars, burning pitch torches, crushing keystone."
+    },
+    "audio": "Nora: Muffle the scabbards and shields with canvas. Move like phantoms through the cleft.; screeching mandibles, iron striking stone.",
+    "physics": "Massive momentum p=m*v of twenty-ton stone collapse, elastic chitin rebound on bronze, kinetic dust displacement.",
+    "negative_constraints": [
+      "No subtitles, no captions, no on-frame text, no logos, no watermarks.",
+      "The video is full-frame shots only: never a grid, never panels, never split screen, never black dividing lines; strictly NO duplicate characters, strictly NO multiple Nora, Castor, no ghost figures, no cloning; strictly NO character standing outside the ship hull or on the exterior water/drop-off side of a railing/barrier, no 180-degree axis fusion between panels; crisp hard cuts at second 2.0 and second 4.0, no camera blending, no crossfades.",
+      "ANTI-CGI LOCK: real documentary footage, not a 3D render, not a video game, not CGI fire, no plastic skin.",
+      "No breath vapor and no white steam from anyone's mouth; no god rays, no volumetric beams, no magical sunbeams.",
+      "No shallow depth of field, no blurry background, no bokeh (f/8 aperture throughout).",
+      "Separate bodies never merge; natural hands with five fingers; no extra limbs."
+    ]
+  },
+  {
+    "clip_id": "SC-99",
+    "scene_name": "Không gian mê cung ngột ngạt",
+    "duration": 8,
+    "aspect_ratio": "16:9",
+    "refs": [
+      "Nora",
+      "Nora Body Seafarer"
+    ],
+    "start_frame": {
+      "type": "GENERATE_IMAGE",
+      "image_prompt": "Cinematic master shot on 35mm film, 16:9 aspect ratio. Không khí ngột ngạt, bụi vôi lơ lửng, ánh sáng lân tinh xanh rêu. Featuring {{ref:Nora}} {{ref:Nora Body Seafarer}}. Practical lighting: sương khói vôi mù mịt. Deep focus (f/8 aperture), entire frame sharp, dark chiaroscuro, natural textures, strictly NO artificial volumetric lighting, NO 3D CGI.",
+      "image_refs": [
+        "Nora",
+        "Nora Body Seafarer"
+      ]
+    },
+    "camera": {
+      "viewpoint": "third-person cinematic camera; the camera itself is never seen",
+      "shot_size": "Wide Hẻm Núi Ngột Ngạt",
+      "description": "Multi-shot sequence with crisp hard cuts: Shot 1 (0-3s) -> Hard Cut at 3.0s -> Shot 2 (3-6s) -> Hard Cut at 6.0s -> Shot 3 (6-8s). 35mm Cooke S4 prime lens with deep focus (f/8 aperture), entire frame sharp."
+    },
+    "style": "cinematic feature-film look: shot on ARRI Alexa with Cooke S4 prime lenses, fine 35mm film grain, deep inky blacks, strong motivated chiaroscuro, thin atmospheric dust catching the light; real seafarers and prehistoric chitin monster, matte organic biological textures, strictly NOT CGI, NOT a video game",
+    "setting": "Location: karst labyrinth cavern and collapsed stone arch. Light: sương khói vôi mù mịt, deep subterranean chiaroscuro shadows.",
+    "characters": [
+      {
+        "name": "Nora",
+        "visual_lock": "FACE LOCK: Nora's face is exactly the face in {{media:62e117f8-0af7-484e-90a8-f79927105746|nora_clean.jpg}}, kept 1:1. BODY and OUTFIT LOCK: her build and navy seafarer brigandine are exactly as in {{media:743ef618-f4c5-456c-9285-56dd911ca94b|nora_body_seafarer_clean.jpg}}.",
+        "state": "Executing tactical combat maneuvers in the dark cavern."
+      }
+    ],
+    "timeline_action": {
+      "0-3s": "From second 0, Không khí ngột ngạt, bụi vôi lơ lửng, ánh sáng lân tinh xanh rêu; sương khói vôi mù mịt.",
+      "3-6s": "At second 3.0, a crisp hard cut: Kinetic mass and stone friction dominate the frame.",
+      "6-8s": "At second 6.0, a crisp hard cut: The action concludes with steady physical equilibrium by second 8. SPATIAL LOCK: All characters stand firmly on the interior solid deck or stone floor, NEVER on the exterior water/cliff drop-off side of any barrier; maintain a consistent 180-degree spatial axis within each shot."
+    },
+    "speech": {
+      "speaker": [],
+      "voices": {},
+      "delivery": "no spoken dialogue (Sonic Isolation)",
+      "dialogue": []
+    },
+    "dramatic_craft": {
+      "beat": "[-]: Không gian mê cung ngột ngạt",
+      "value_turn": "Mortal trap -> Tactical victory: Defeating the guardian beast with environmental strategy.",
+      "subtext": "The seafarers turn the monster's own predatory instincts against it.",
+      "prop_and_detail": "Heavy bronze shield, iron pry-bars, burning pitch torches, crushing keystone."
+    },
+    "audio": "Monstrous chitin scraping and collapsing rock thunder (Sonic Isolation); screeching mandibles, iron striking stone.",
+    "physics": "Massive momentum p=m*v of twenty-ton stone collapse, elastic chitin rebound on bronze, kinetic dust displacement.",
+    "negative_constraints": [
+      "No subtitles, no captions, no on-frame text, no logos, no watermarks.",
+      "The video is full-frame shots only: never a grid, never panels, never split screen, never black dividing lines; strictly NO duplicate characters, strictly NO multiple Nora, no ghost figures, no cloning; strictly NO character standing outside the ship hull or on the exterior water/drop-off side of a railing/barrier, no 180-degree axis fusion between panels; crisp hard cuts at second 3.0 and second 6.0, no camera blending, no crossfades.",
+      "ANTI-CGI LOCK: real documentary footage, not a 3D render, not a video game, not CGI fire, no plastic skin.",
+      "No breath vapor and no white steam from anyone's mouth; no god rays, no volumetric beams, no magical sunbeams.",
+      "No shallow depth of field, no blurry background, no bokeh (f/8 aperture throughout).",
+      "Separate bodies never merge; natural hands with five fingers; no extra limbs."
+    ]
+  },
+  {
+    "clip_id": "SC-100",
+    "scene_name": "Phát hiện dấu vết quái thú",
+    "duration": 8,
+    "aspect_ratio": "16:9",
+    "refs": [
+      "Castor"
+    ],
+    "start_frame": {
+      "type": "GENERATE_IMAGE",
+      "image_prompt": "Cinematic master shot on 35mm film, 16:9 aspect ratio. Castor phát hiện vết cào móng sâu ba gang tay trên vách đá. Featuring {{ref:Castor}}. Practical lighting: đèn bão rọi vết cào. Deep focus (f/8 aperture), entire frame sharp, dark chiaroscuro, natural textures, strictly NO artificial volumetric lighting, NO 3D CGI.",
+      "image_refs": [
+        "Castor"
+      ]
+    },
+    "camera": {
+      "viewpoint": "third-person cinematic camera; the camera itself is never seen",
+      "shot_size": "CU Vết Móng Trên Đá",
+      "description": "Multi-shot sequence with crisp hard cuts: Shot 1 (0-3s) -> Hard Cut at 3.0s -> Shot 2 (3-6s) -> Hard Cut at 6.0s -> Shot 3 (6-8s). 35mm Cooke S4 prime lens with deep focus (f/8 aperture), entire frame sharp."
+    },
+    "style": "cinematic feature-film look: shot on ARRI Alexa with Cooke S4 prime lenses, fine 35mm film grain, deep inky blacks, strong motivated chiaroscuro, thin atmospheric dust catching the light; real seafarers and prehistoric chitin monster, matte organic biological textures, strictly NOT CGI, NOT a video game",
+    "setting": "Location: karst labyrinth cavern and collapsed stone arch. Light: đèn bão rọi vết cào, deep subterranean chiaroscuro shadows.",
+    "characters": [
+      {
+        "name": "Castor",
+        "visual_lock": "FACE LOCK: Castor's face is exactly the face in {{media:3152a235-af4f-462b-a78e-02551f826e41|castor_clean.jpg}}, kept 1:1. BODY and OUTFIT LOCK: his leather cuirass is exactly as in {{media:3152a235-af4f-462b-a78e-02551f826e41|castor_clean.jpg}}.",
+        "state": "Aiming and striking with lethal tactical precision."
+      }
+    ],
+    "timeline_action": {
+      "0-3s": "From second 0, Castor begins speaking immediately, sharp and commanding: Castor says \"Look at these gouges in the limestone... six talon marks, carved deep as iron chisels. What kind of monster lives here?\" (no subtitles).",
+      "3-6s": "At second 3.0, a crisp hard cut: Castor's command echoes through the cavern through second 5; castor phát hiện vết cào móng sâu ba gang tay trên vách đá.",
+      "6-8s": "At second 6.0, a crisp hard cut: The line concludes by second 6; Castor braces for the next impact through second 8. SPATIAL LOCK: All characters stand firmly on the interior solid deck or stone floor, NEVER on the exterior water/cliff drop-off side of any barrier; maintain a consistent 180-degree spatial axis within each shot."
+    },
+    "speech": {
+      "speaker": [
+        "Castor"
+      ],
+      "voices": {
+        "Castor": "fenrir"
+      },
+      "delivery": "shouted loud, sharp and clipped in visceral mortal combat",
+      "dialogue": [
+        {
+          "t": "0-6s",
+          "speaker": "Castor",
+          "line": "Look at these gouges in the limestone... six talon marks, carved deep as iron chisels. What kind of monster lives here?"
+        }
+      ]
+    },
+    "dramatic_craft": {
+      "beat": "[!]: Phát hiện dấu vết quái thú",
+      "value_turn": "Mortal trap -> Tactical victory: Defeating the guardian beast with environmental strategy.",
+      "subtext": "The seafarers turn the monster's own predatory instincts against it.",
+      "prop_and_detail": "Heavy bronze shield, iron pry-bars, burning pitch torches, crushing keystone."
+    },
+    "audio": "Castor: Look at these gouges in the limestone... six talon marks, carved deep as iron chisels. What kind of monster lives here?; screeching mandibles, iron striking stone.",
+    "physics": "Massive momentum p=m*v of twenty-ton stone collapse, elastic chitin rebound on bronze, kinetic dust displacement.",
+    "negative_constraints": [
+      "No subtitles, no captions, no on-frame text, no logos, no watermarks.",
+      "The video is full-frame shots only: never a grid, never panels, never split screen, never black dividing lines; strictly NO duplicate characters, strictly NO multiple Castor, no ghost figures, no cloning; strictly NO character standing outside the ship hull or on the exterior water/drop-off side of a railing/barrier, no 180-degree axis fusion between panels; crisp hard cuts at second 3.0 and second 6.0, no camera blending, no crossfades.",
+      "ANTI-CGI LOCK: real documentary footage, not a 3D render, not a video game, not CGI fire, no plastic skin.",
+      "No breath vapor and no white steam from anyone's mouth; no god rays, no volumetric beams, no magical sunbeams.",
+      "No shallow depth of field, no blurry background, no bokeh (f/8 aperture throughout).",
+      "Separate bodies never merge; natural hands with five fingers; no extra limbs."
+    ]
+  },
+  {
+    "clip_id": "SC-101",
+    "scene_name": "Cảnh báo quái thú thức giấc",
+    "duration": 8,
+    "aspect_ratio": "16:9",
+    "refs": [
+      "Nora",
+      "Nora Body Seafarer",
+      "Theron"
+    ],
+    "start_frame": {
+      "type": "PREV_LAST_FRAME",
+      "note": "Continuity match from previous clip."
+    },
+    "camera": {
+      "viewpoint": "third-person cinematic camera; the camera itself is never seen",
+      "shot_size": "MS Theron Dừng Lại Lắng Nghe",
+      "description": "Multi-shot sequence with crisp hard cuts: Shot 1 (0-3s) -> Hard Cut at 3.0s -> Shot 2 (3-6s) -> Hard Cut at 6.0s -> Shot 3 (6-8s). 35mm Cooke S4 prime lens with deep focus (f/8 aperture), entire frame sharp."
+    },
+    "style": "cinematic feature-film look: shot on ARRI Alexa with Cooke S4 prime lenses, fine 35mm film grain, deep inky blacks, strong motivated chiaroscuro, thin atmospheric dust catching the light; real seafarers and prehistoric chitin monster, matte organic biological textures, strictly NOT CGI, NOT a video game",
+    "setting": "Location: karst labyrinth cavern and collapsed stone arch. Light: bóng tối bao trùm, deep subterranean chiaroscuro shadows.",
+    "characters": [
+      {
+        "name": "Nora",
+        "visual_lock": "FACE LOCK: Nora's face is exactly the face in {{media:62e117f8-0af7-484e-90a8-f79927105746|nora_clean.jpg}}, kept 1:1. BODY and OUTFIT LOCK: her build and navy seafarer brigandine are exactly as in {{media:743ef618-f4c5-456c-9285-56dd911ca94b|nora_body_seafarer_clean.jpg}}.",
+        "state": "Executing tactical combat maneuvers in the dark cavern."
+      },
+      {
+        "name": "Theron",
+        "visual_lock": "FACE LOCK: Theron's face is exactly the face in {{media:7c5d994a-dabd-406b-a6c1-b9fa6473a612|theron_clean.jpg}}, kept 1:1 with wild gray beard and limestone dust. BODY and OUTFIT LOCK: his emaciated figure in burlap rags is exactly as in {{media:7c5d994a-dabd-406b-a6c1-b9fa6473a612|theron_clean.jpg}}.",
+        "state": "Guiding the crew past predatory ambush points."
+      }
+    ],
+    "timeline_action": {
+      "0-3s": "From second 0, Theron begins speaking immediately, sharp and commanding: Theron says \"The Chitin Prowler of the Labyrinth... it has smelled the living warm blood of our Aegean crew. Freeze your boots!\" (no subtitles).",
+      "3-6s": "At second 3.0, a crisp hard cut: Theron's command echoes through the cavern through second 5; theron dừng lại lắng nghe tiếng lạo xạo sau bức tường đá.",
+      "6-8s": "At second 6.0, a crisp hard cut: The line concludes by second 6; Theron braces for the next impact through second 8. Strictly Theron alone in this focal framing; Nora are completely off-screen or in distinct background separation, never overlapping. SPATIAL LOCK: All characters stand firmly on the interior solid deck or stone floor, NEVER on the exterior water/cliff drop-off side of any barrier; maintain a consistent 180-degree spatial axis within each shot."
+    },
+    "speech": {
+      "speaker": [
+        "Theron"
+      ],
+      "voices": {
+        "Theron": "charon"
+      },
+      "delivery": "shouted loud, sharp and clipped in visceral mortal combat",
+      "dialogue": [
+        {
+          "t": "0-6s",
+          "speaker": "Theron",
+          "line": "The Chitin Prowler of the Labyrinth... it has smelled the living warm blood of our Aegean crew. Freeze your boots!"
+        }
+      ]
+    },
+    "dramatic_craft": {
+      "beat": "RH [!]: Cảnh báo quái thú thức giấc",
+      "value_turn": "Mortal trap -> Tactical victory: Defeating the guardian beast with environmental strategy.",
+      "subtext": "The seafarers turn the monster's own predatory instincts against it.",
+      "prop_and_detail": "Heavy bronze shield, iron pry-bars, burning pitch torches, crushing keystone."
+    },
+    "audio": "Theron: The Chitin Prowler of the Labyrinth... it has smelled the living warm blood of our Aegean crew. Freeze your boots!; screeching mandibles, iron striking stone.",
+    "physics": "Massive momentum p=m*v of twenty-ton stone collapse, elastic chitin rebound on bronze, kinetic dust displacement.",
+    "negative_constraints": [
+      "No subtitles, no captions, no on-frame text, no logos, no watermarks.",
+      "The video is full-frame shots only: never a grid, never panels, never split screen, never black dividing lines; strictly NO duplicate characters, strictly NO multiple Nora, Theron, no ghost figures, no cloning; strictly NO character standing outside the ship hull or on the exterior water/drop-off side of a railing/barrier, no 180-degree axis fusion between panels; crisp hard cuts at second 3.0 and second 6.0, no camera blending, no crossfades.",
+      "ANTI-CGI LOCK: real documentary footage, not a 3D render, not a video game, not CGI fire, no plastic skin.",
+      "No breath vapor and no white steam from anyone's mouth; no god rays, no volumetric beams, no magical sunbeams.",
+      "No shallow depth of field, no blurry background, no bokeh (f/8 aperture throughout).",
+      "Separate bodies never merge; natural hands with five fingers; no extra limbs."
+    ]
+  },
+  {
+    "clip_id": "SC-102",
+    "scene_name": "Quái thú 6 chân xuất hiện",
+    "duration": 10,
+    "aspect_ratio": "16:9",
+    "refs": [
+      "Labyrinth Beast"
+    ],
+    "start_frame": {
+      "type": "GENERATE_IMAGE",
+      "image_prompt": "Cinematic master shot on 35mm film, 16:9 aspect ratio. Tảng đá lớn sụp đổ, lộ diện quái vật Labyrinth Beast 6 chân giáp xác khổng lồ 6 mét. Featuring {{ref:Labyrinth Beast}}. Practical lighting: mắt vàng rực trong tối. Deep focus (f/8 aperture), entire frame sharp, dark chiaroscuro, natural textures, strictly NO artificial volumetric lighting, NO 3D CGI.",
+      "image_refs": [
+        "Labyrinth Beast"
+      ]
+    },
+    "camera": {
+      "viewpoint": "third-person cinematic camera; the camera itself is never seen",
+      "shot_size": "EWS Quái Vật Xuất Hiện",
+      "description": "Multi-shot sequence with crisp hard cuts: Shot 1 (0-3s) -> Hard Cut at 3.0s -> Shot 2 (3-7s) -> Hard Cut at 7.0s -> Shot 3 (7-10s). 35mm Cooke S4 prime lens with deep focus (f/8 aperture), entire frame sharp."
+    },
+    "style": "cinematic feature-film look: shot on ARRI Alexa with Cooke S4 prime lenses, fine 35mm film grain, deep inky blacks, strong motivated chiaroscuro, thin atmospheric dust catching the light; real seafarers and prehistoric chitin monster, matte organic biological textures, strictly NOT CGI, NOT a video game",
+    "setting": "Location: karst labyrinth cavern and collapsed stone arch. Light: mắt vàng rực trong tối, deep subterranean chiaroscuro shadows.",
+    "characters": [
+      {
+        "name": "Labyrinth Beast",
+        "visual_lock": "CREATURE LOCK: The monster is exactly as in {{media:a1905a31-82f6-4c94-b8b4-4c68570f2bfc|labyrinth_beast_clean.jpg}}, kept 1:1 with 6 jointed climbing legs, jet-black segmented chitin carapace, arched stinger tail, and crushing mandibles.",
+        "state": "Stalking the intruders with predatory ferocity."
+      }
+    ],
+    "timeline_action": {
+      "0-3s": "At second 0, Tảng đá lớn sụp đổ, lộ diện quái vật Labyrinth Beast 6 chân giáp xác khổng lồ 6 mét; mắt vàng rực trong tối.",
+      "3-7s": "At second 3.0, a crisp hard cut: The colossal twenty-ton rock collapse shakes the entire cavern chamber.",
+      "7-10s": "At second 7.0, a crisp hard cut: The monumental impact resolves as dust settles over the crushed creature by second 10. SPATIAL LOCK: All characters stand firmly on the interior solid deck or stone floor, NEVER on the exterior water/cliff drop-off side of any barrier; maintain a consistent 180-degree spatial axis within each shot."
+    },
+    "speech": {
+      "speaker": [],
+      "voices": {},
+      "delivery": "no spoken dialogue (Sonic Isolation)",
+      "dialogue": []
+    },
+    "dramatic_craft": {
+      "beat": "[!!!]: Quái thú 6 chân xuất hiện",
+      "value_turn": "Mortal trap -> Tactical victory: Defeating the guardian beast with environmental strategy.",
+      "subtext": "The seafarers turn the monster's own predatory instincts against it.",
+      "prop_and_detail": "Heavy bronze shield, iron pry-bars, burning pitch torches, crushing keystone."
+    },
+    "audio": "Monstrous chitin scraping and collapsing rock thunder (Sonic Isolation); screeching mandibles, iron striking stone.",
+    "physics": "Massive momentum p=m*v of twenty-ton stone collapse, elastic chitin rebound on bronze, kinetic dust displacement.",
+    "negative_constraints": [
+      "No subtitles, no captions, no on-frame text, no logos, no watermarks.",
+      "The video is full-frame shots only: never a grid, never panels, never split screen, never black dividing lines; strictly NO duplicate characters, strictly NO multiple Labyrinth Beast, no ghost figures, no cloning; strictly NO character standing outside the ship hull or on the exterior water/drop-off side of a railing/barrier, no 180-degree axis fusion between panels; crisp hard cuts at second 3.0 and second 7.0, no camera blending, no crossfades.",
+      "ANTI-CGI LOCK: real documentary footage, not a 3D render, not a video game, not CGI fire, no plastic skin.",
+      "No breath vapor and no white steam from anyone's mouth; no god rays, no volumetric beams, no magical sunbeams.",
+      "No shallow depth of field, no blurry background, no bokeh (f/8 aperture throughout).",
+      "Separate bodies never merge; natural hands with five fingers; no extra limbs."
+    ]
+  },
+  {
+    "clip_id": "SC-103",
+    "scene_name": "Chặn đòn móng vuốt quái vật",
+    "duration": 10,
+    "aspect_ratio": "16:9",
+    "refs": [
+      "Heracles",
+      "Labyrinth Beast"
+    ],
+    "start_frame": {
+      "type": "GENERATE_IMAGE",
+      "image_prompt": "Cinematic master shot on 35mm film, 16:9 aspect ratio. Quái thú lao tới, Heracles giơ khiên đồng to bản chặn móng vuốt. Featuring {{ref:Heracles}} {{ref:Labyrinth Beast}}. Practical lighting: tóe lửa trên khiên đồng. Deep focus (f/8 aperture), entire frame sharp, dark chiaroscuro, natural textures, strictly NO artificial volumetric lighting, NO 3D CGI.",
+      "image_refs": [
+        "Heracles",
+        "Labyrinth Beast"
+      ]
+    },
+    "camera": {
+      "viewpoint": "third-person cinematic camera; the camera itself is never seen",
+      "shot_size": "Low-Angle Heracles Đỡ Khiên",
+      "description": "Multi-shot sequence with crisp hard cuts: Shot 1 (0-3s) -> Hard Cut at 3.0s -> Shot 2 (3-7s) -> Hard Cut at 7.0s -> Shot 3 (7-10s). 35mm Cooke S4 prime lens with deep focus (f/8 aperture), entire frame sharp."
+    },
+    "style": "cinematic feature-film look: shot on ARRI Alexa with Cooke S4 prime lenses, fine 35mm film grain, deep inky blacks, strong motivated chiaroscuro, thin atmospheric dust catching the light; real seafarers and prehistoric chitin monster, matte organic biological textures, strictly NOT CGI, NOT a video game",
+    "setting": "Location: karst labyrinth cavern and collapsed stone arch. Light: tóe lửa trên khiên đồng, deep subterranean chiaroscuro shadows.",
+    "characters": [
+      {
+        "name": "Heracles",
+        "visual_lock": "FACE LOCK: Heracles's face is exactly the face in {{media:37a10133-8496-49e7-bd77-b5f261c5a43e|heracles_clean.jpg}}, kept 1:1. BODY and OUTFIT LOCK: his massive muscular frame and sea-lion mantle are exactly as in {{media:37a10133-8496-49e7-bd77-b5f261c5a43e|heracles_clean.jpg}}.",
+        "state": "Bracing his heavy bronze shield against monstrous kinetic strikes."
+      },
+      {
+        "name": "Labyrinth Beast",
+        "visual_lock": "CREATURE LOCK: The monster is exactly as in {{media:a1905a31-82f6-4c94-b8b4-4c68570f2bfc|labyrinth_beast_clean.jpg}}, kept 1:1 with 6 jointed climbing legs, jet-black segmented chitin carapace, arched stinger tail, and crushing mandibles.",
+        "state": "Stalking the intruders with predatory ferocity."
+      }
+    ],
+    "timeline_action": {
+      "0-3s": "From the opening frame at second 0, Heracles shouts with ferocious intensity: Heracles says \"Get behind the heavy bronze plate, all of you! This armored demon has the crushing weight of an ox, but my boots are anchored deep!\" (no subtitles).",
+      "3-7s": "At second 3.0, a crisp hard cut: The battle command drives the maneuver through second 6 as quái thú lao tới, heracles giơ khiên đồng to bản chặn móng vuốt.",
+      "7-10s": "At second 7.0, a crisp hard cut: Heracles concludes the line by second 7; the team executes the tactical strike through second 10. Strictly Labyrinth Beast alone in this focal framing; Heracles are completely off-screen or in distinct background separation, never overlapping. SPATIAL LOCK: All characters stand firmly on the interior solid deck or stone floor, NEVER on the exterior water/cliff drop-off side of any barrier; maintain a consistent 180-degree spatial axis within each shot."
+    },
+    "speech": {
+      "speaker": [
+        "Heracles"
+      ],
+      "voices": {
+        "Heracles": "puck"
+      },
+      "delivery": "shouted loud, sharp and clipped in visceral mortal combat",
+      "dialogue": [
+        {
+          "t": "0-7s",
+          "speaker": "Heracles",
+          "line": "Get behind the heavy bronze plate, all of you! This armored demon has the crushing weight of an ox, but my boots are anchored deep!"
+        }
+      ]
+    },
+    "dramatic_craft": {
+      "beat": "[++]: Chặn đòn móng vuốt quái vật",
+      "value_turn": "Mortal trap -> Tactical victory: Defeating the guardian beast with environmental strategy.",
+      "subtext": "The seafarers turn the monster's own predatory instincts against it.",
+      "prop_and_detail": "Heavy bronze shield, iron pry-bars, burning pitch torches, crushing keystone."
+    },
+    "audio": "Heracles: Get behind the heavy bronze plate, all of you! This armored demon has the crushing weight of an ox, but my boots are anchored deep!; screeching mandibles, iron striking stone.",
+    "physics": "Massive momentum p=m*v of twenty-ton stone collapse, elastic chitin rebound on bronze, kinetic dust displacement.",
+    "negative_constraints": [
+      "No subtitles, no captions, no on-frame text, no logos, no watermarks.",
+      "The video is full-frame shots only: never a grid, never panels, never split screen, never black dividing lines; strictly NO duplicate characters, strictly NO multiple Heracles, Labyrinth Beast, no ghost figures, no cloning; strictly NO character standing outside the ship hull or on the exterior water/drop-off side of a railing/barrier, no 180-degree axis fusion between panels; crisp hard cuts at second 3.0 and second 7.0, no camera blending, no crossfades.",
+      "ANTI-CGI LOCK: real documentary footage, not a 3D render, not a video game, not CGI fire, no plastic skin.",
+      "No breath vapor and no white steam from anyone's mouth; no god rays, no volumetric beams, no magical sunbeams.",
+      "No shallow depth of field, no blurry background, no bokeh (f/8 aperture throughout).",
+      "Separate bodies never merge; natural hands with five fingers; no extra limbs."
+    ]
+  },
+  {
+    "clip_id": "SC-104",
+    "scene_name": "Trượt lùi trước xung lực",
+    "duration": 8,
+    "aspect_ratio": "16:9",
+    "refs": [
+      "Heracles",
+      "Labyrinth Beast"
+    ],
+    "start_frame": {
+      "type": "PREV_LAST_FRAME",
+      "note": "Continuity match from previous clip."
+    },
+    "camera": {
+      "viewpoint": "third-person cinematic camera; the camera itself is never seen",
+      "shot_size": "Dynamic Impact Trượt Lùi",
+      "description": "Multi-shot sequence with crisp hard cuts: Shot 1 (0-3s) -> Hard Cut at 3.0s -> Shot 2 (3-6s) -> Hard Cut at 6.0s -> Shot 3 (6-8s). 35mm Cooke S4 prime lens with deep focus (f/8 aperture), entire frame sharp."
+    },
+    "style": "cinematic feature-film look: shot on ARRI Alexa with Cooke S4 prime lenses, fine 35mm film grain, deep inky blacks, strong motivated chiaroscuro, thin atmospheric dust catching the light; real seafarers and prehistoric chitin monster, matte organic biological textures, strictly NOT CGI, NOT a video game",
+    "setting": "Location: karst labyrinth cavern and collapsed stone arch. Light: bụi đá dăm tung tóe, deep subterranean chiaroscuro shadows.",
+    "characters": [
+      {
+        "name": "Heracles",
+        "visual_lock": "FACE LOCK: Heracles's face is exactly the face in {{media:37a10133-8496-49e7-bd77-b5f261c5a43e|heracles_clean.jpg}}, kept 1:1. BODY and OUTFIT LOCK: his massive muscular frame and sea-lion mantle are exactly as in {{media:37a10133-8496-49e7-bd77-b5f261c5a43e|heracles_clean.jpg}}.",
+        "state": "Bracing his heavy bronze shield against monstrous kinetic strikes."
+      },
+      {
+        "name": "Labyrinth Beast",
+        "visual_lock": "CREATURE LOCK: The monster is exactly as in {{media:a1905a31-82f6-4c94-b8b4-4c68570f2bfc|labyrinth_beast_clean.jpg}}, kept 1:1 with 6 jointed climbing legs, jet-black segmented chitin carapace, arched stinger tail, and crushing mandibles.",
+        "state": "Stalking the intruders with predatory ferocity."
+      }
+    ],
+    "timeline_action": {
+      "0-3s": "From second 0, Đuôi gai quái thú quất mạnh vào khiên đồng tóe lửa, Heracles trượt lùi 2 mét; bụi đá dăm tung tóe.",
+      "3-6s": "At second 3.0, a crisp hard cut: Kinetic mass and stone friction dominate the frame.",
+      "6-8s": "At second 6.0, a crisp hard cut: The action concludes with steady physical equilibrium by second 8. Strictly Labyrinth Beast alone in this focal framing; Heracles are completely off-screen or in distinct background separation, never overlapping. SPATIAL LOCK: All characters stand firmly on the interior solid deck or stone floor, NEVER on the exterior water/cliff drop-off side of any barrier; maintain a consistent 180-degree spatial axis within each shot."
+    },
+    "speech": {
+      "speaker": [],
+      "voices": {},
+      "delivery": "no spoken dialogue (Sonic Isolation)",
+      "dialogue": []
+    },
+    "dramatic_craft": {
+      "beat": "[!]: Trượt lùi trước xung lực",
+      "value_turn": "Mortal trap -> Tactical victory: Defeating the guardian beast with environmental strategy.",
+      "subtext": "The seafarers turn the monster's own predatory instincts against it.",
+      "prop_and_detail": "Heavy bronze shield, iron pry-bars, burning pitch torches, crushing keystone."
+    },
+    "audio": "Monstrous chitin scraping and collapsing rock thunder (Sonic Isolation); screeching mandibles, iron striking stone.",
+    "physics": "Massive momentum p=m*v of twenty-ton stone collapse, elastic chitin rebound on bronze, kinetic dust displacement.",
+    "negative_constraints": [
+      "No subtitles, no captions, no on-frame text, no logos, no watermarks.",
+      "The video is full-frame shots only: never a grid, never panels, never split screen, never black dividing lines; strictly NO duplicate characters, strictly NO multiple Heracles, Labyrinth Beast, no ghost figures, no cloning; strictly NO character standing outside the ship hull or on the exterior water/drop-off side of a railing/barrier, no 180-degree axis fusion between panels; crisp hard cuts at second 3.0 and second 6.0, no camera blending, no crossfades.",
+      "ANTI-CGI LOCK: real documentary footage, not a 3D render, not a video game, not CGI fire, no plastic skin.",
+      "No breath vapor and no white steam from anyone's mouth; no god rays, no volumetric beams, no magical sunbeams.",
+      "No shallow depth of field, no blurry background, no bokeh (f/8 aperture throughout).",
+      "Separate bodies never merge; natural hands with five fingers; no extra limbs."
+    ]
+  },
+  {
+    "clip_id": "SC-105",
+    "scene_name": "Tên nỏ vô hiệu trước giáp",
+    "duration": 6,
+    "aspect_ratio": "16:9",
+    "refs": [
+      "Castor",
+      "Labyrinth Beast"
+    ],
+    "start_frame": {
+      "type": "GENERATE_IMAGE",
+      "image_prompt": "Cinematic master shot on 35mm film, 16:9 aspect ratio. Castor bắn nỏ vào mắt kép quái thú nhưng mũi tên bật nảy. Featuring {{ref:Castor}} {{ref:Labyrinth Beast}}. Practical lighting: tia lửa bắn trên giáp. Deep focus (f/8 aperture), entire frame sharp, dark chiaroscuro, natural textures, strictly NO artificial volumetric lighting, NO 3D CGI.",
+      "image_refs": [
+        "Castor",
+        "Labyrinth Beast"
+      ]
+    },
+    "camera": {
+      "viewpoint": "third-person cinematic camera; the camera itself is never seen",
+      "shot_size": "MCU Castor Bắn Nỏ",
+      "description": "Multi-shot sequence with crisp hard cuts: Shot 1 (0-2s) -> Hard Cut at 2.0s -> Shot 2 (2-4s) -> Hard Cut at 4.0s -> Shot 3 (4-6s). 35mm Cooke S4 prime lens with deep focus (f/8 aperture), entire frame sharp."
+    },
+    "style": "cinematic feature-film look: shot on ARRI Alexa with Cooke S4 prime lenses, fine 35mm film grain, deep inky blacks, strong motivated chiaroscuro, thin atmospheric dust catching the light; real seafarers and prehistoric chitin monster, matte organic biological textures, strictly NOT CGI, NOT a video game",
+    "setting": "Location: karst labyrinth cavern and collapsed stone arch. Light: tia lửa bắn trên giáp, deep subterranean chiaroscuro shadows.",
+    "characters": [
+      {
+        "name": "Castor",
+        "visual_lock": "FACE LOCK: Castor's face is exactly the face in {{media:3152a235-af4f-462b-a78e-02551f826e41|castor_clean.jpg}}, kept 1:1. BODY and OUTFIT LOCK: his leather cuirass is exactly as in {{media:3152a235-af4f-462b-a78e-02551f826e41|castor_clean.jpg}}.",
+        "state": "Aiming and striking with lethal tactical precision."
+      },
+      {
+        "name": "Labyrinth Beast",
+        "visual_lock": "CREATURE LOCK: The monster is exactly as in {{media:a1905a31-82f6-4c94-b8b4-4c68570f2bfc|labyrinth_beast_clean.jpg}}, kept 1:1 with 6 jointed climbing legs, jet-black segmented chitin carapace, arched stinger tail, and crushing mandibles.",
+        "state": "Stalking the intruders with predatory ferocity."
+      }
+    ],
+    "timeline_action": {
+      "0-2s": "From second 0, Castor delivers the line immediately, sharp and urgent: Castor says \"The carapace is thick as granite! Iron arrowheads shatter like dry twigs against her!\" (no subtitles).",
+      "2-4s": "At second 2.0, a crisp hard cut: Castor's line finishes cleanly by second 4; castor bắn nỏ vào mắt kép quái thú nhưng mũi tên bật nảy.",
+      "4-6s": "At second 4.0, a crisp hard cut: The physical combat stance settles firmly by second 6. Strictly Labyrinth Beast alone in this focal framing; Castor are completely off-screen or in distinct background separation, never overlapping. SPATIAL LOCK: All characters stand firmly on the interior solid deck or stone floor, NEVER on the exterior water/cliff drop-off side of any barrier; maintain a consistent 180-degree spatial axis within each shot."
+    },
+    "speech": {
+      "speaker": [
+        "Castor"
+      ],
+      "voices": {
+        "Castor": "fenrir"
+      },
+      "delivery": "shouted loud, sharp and clipped in visceral mortal combat",
+      "dialogue": [
+        {
+          "t": "0-4s",
+          "speaker": "Castor",
+          "line": "The carapace is thick as granite! Iron arrowheads shatter like dry twigs against her!"
+        }
+      ]
+    },
+    "dramatic_craft": {
+      "beat": "[-]: Tên nỏ vô hiệu trước giáp",
+      "value_turn": "Mortal trap -> Tactical victory: Defeating the guardian beast with environmental strategy.",
+      "subtext": "The seafarers turn the monster's own predatory instincts against it.",
+      "prop_and_detail": "Heavy bronze shield, iron pry-bars, burning pitch torches, crushing keystone."
+    },
+    "audio": "Castor: The carapace is thick as granite! Iron arrowheads shatter like dry twigs against her!; screeching mandibles, iron striking stone.",
+    "physics": "Massive momentum p=m*v of twenty-ton stone collapse, elastic chitin rebound on bronze, kinetic dust displacement.",
+    "negative_constraints": [
+      "No subtitles, no captions, no on-frame text, no logos, no watermarks.",
+      "The video is full-frame shots only: never a grid, never panels, never split screen, never black dividing lines; strictly NO duplicate characters, strictly NO multiple Castor, Labyrinth Beast, no ghost figures, no cloning; strictly NO character standing outside the ship hull or on the exterior water/drop-off side of a railing/barrier, no 180-degree axis fusion between panels; crisp hard cuts at second 2.0 and second 4.0, no camera blending, no crossfades.",
+      "ANTI-CGI LOCK: real documentary footage, not a 3D render, not a video game, not CGI fire, no plastic skin.",
+      "No breath vapor and no white steam from anyone's mouth; no god rays, no volumetric beams, no magical sunbeams.",
+      "No shallow depth of field, no blurry background, no bokeh (f/8 aperture throughout).",
+      "Separate bodies never merge; natural hands with five fingers; no extra limbs."
+    ]
+  },
+  {
+    "clip_id": "SC-106",
+    "scene_name": "Hiến kế sập vòm đá",
+    "duration": 8,
+    "aspect_ratio": "16:9",
+    "refs": [
+      "Nora",
+      "Nora Body Seafarer",
+      "Theron"
+    ],
+    "start_frame": {
+      "type": "PREV_LAST_FRAME",
+      "note": "Continuity match from previous clip."
+    },
+    "camera": {
+      "viewpoint": "third-person cinematic camera; the camera itself is never seen",
+      "shot_size": "MS Theron Chỉ Vòm Đá",
+      "description": "Multi-shot sequence with crisp hard cuts: Shot 1 (0-3s) -> Hard Cut at 3.0s -> Shot 2 (3-6s) -> Hard Cut at 6.0s -> Shot 3 (6-8s). 35mm Cooke S4 prime lens with deep focus (f/8 aperture), entire frame sharp."
+    },
+    "style": "cinematic feature-film look: shot on ARRI Alexa with Cooke S4 prime lenses, fine 35mm film grain, deep inky blacks, strong motivated chiaroscuro, thin atmospheric dust catching the light; real seafarers and prehistoric chitin monster, matte organic biological textures, strictly NOT CGI, NOT a video game",
+    "setting": "Location: karst labyrinth cavern and collapsed stone arch. Light: ánh đèn bão rung rinh, deep subterranean chiaroscuro shadows.",
+    "characters": [
+      {
+        "name": "Nora",
+        "visual_lock": "FACE LOCK: Nora's face is exactly the face in {{media:62e117f8-0af7-484e-90a8-f79927105746|nora_clean.jpg}}, kept 1:1. BODY and OUTFIT LOCK: her build and navy seafarer brigandine are exactly as in {{media:743ef618-f4c5-456c-9285-56dd911ca94b|nora_body_seafarer_clean.jpg}}.",
+        "state": "Executing tactical combat maneuvers in the dark cavern."
+      },
+      {
+        "name": "Theron",
+        "visual_lock": "FACE LOCK: Theron's face is exactly the face in {{media:7c5d994a-dabd-406b-a6c1-b9fa6473a612|theron_clean.jpg}}, kept 1:1 with wild gray beard and limestone dust. BODY and OUTFIT LOCK: his emaciated figure in burlap rags is exactly as in {{media:7c5d994a-dabd-406b-a6c1-b9fa6473a612|theron_clean.jpg}}.",
+        "state": "Guiding the crew past predatory ambush points."
+      }
+    ],
+    "timeline_action": {
+      "0-3s": "From second 0, Theron begins speaking immediately, sharp and commanding: Theron says \"Do not waste arrows on her shell! The roof arch above is cracked—bring the limestone ceiling down upon her!\" (no subtitles).",
+      "3-6s": "At second 3.0, a crisp hard cut: Theron's command echoes through the cavern through second 5; theron chỉ lên vòm đá nứt nẻ phía trên đầu quái vật.",
+      "6-8s": "At second 6.0, a crisp hard cut: The line concludes by second 6; Theron braces for the next impact through second 8. Strictly Theron alone in this focal framing; Nora are completely off-screen or in distinct background separation, never overlapping. SPATIAL LOCK: All characters stand firmly on the interior solid deck or stone floor, NEVER on the exterior water/cliff drop-off side of any barrier; maintain a consistent 180-degree spatial axis within each shot."
+    },
+    "speech": {
+      "speaker": [
+        "Theron"
+      ],
+      "voices": {
+        "Theron": "charon"
+      },
+      "delivery": "shouted loud, sharp and clipped in visceral mortal combat",
+      "dialogue": [
+        {
+          "t": "0-6s",
+          "speaker": "Theron",
+          "line": "Do not waste arrows on her shell! The roof arch above is cracked—bring the limestone ceiling down upon her!"
+        }
+      ]
+    },
+    "dramatic_craft": {
+      "beat": "[++]: Hiến kế sập vòm đá",
+      "value_turn": "Mortal trap -> Tactical victory: Defeating the guardian beast with environmental strategy.",
+      "subtext": "The seafarers turn the monster's own predatory instincts against it.",
+      "prop_and_detail": "Heavy bronze shield, iron pry-bars, burning pitch torches, crushing keystone."
+    },
+    "audio": "Theron: Do not waste arrows on her shell! The roof arch above is cracked—bring the limestone ceiling down upon her!; screeching mandibles, iron striking stone.",
+    "physics": "Massive momentum p=m*v of twenty-ton stone collapse, elastic chitin rebound on bronze, kinetic dust displacement.",
+    "negative_constraints": [
+      "No subtitles, no captions, no on-frame text, no logos, no watermarks.",
+      "The video is full-frame shots only: never a grid, never panels, never split screen, never black dividing lines; strictly NO duplicate characters, strictly NO multiple Nora, Theron, no ghost figures, no cloning; strictly NO character standing outside the ship hull or on the exterior water/drop-off side of a railing/barrier, no 180-degree axis fusion between panels; crisp hard cuts at second 3.0 and second 6.0, no camera blending, no crossfades.",
+      "ANTI-CGI LOCK: real documentary footage, not a 3D render, not a video game, not CGI fire, no plastic skin.",
+      "No breath vapor and no white steam from anyone's mouth; no god rays, no volumetric beams, no magical sunbeams.",
+      "No shallow depth of field, no blurry background, no bokeh (f/8 aperture throughout).",
+      "Separate bodies never merge; natural hands with five fingers; no extra limbs."
+    ]
+  },
+  {
+    "clip_id": "SC-107",
+    "scene_name": "Phê duyệt kế hoạch bẫy",
+    "duration": 8,
+    "aspect_ratio": "16:9",
+    "refs": [
+      "Nora",
+      "Nora Body Seafarer",
+      "Heracles"
+    ],
+    "start_frame": {
+      "type": "PREV_LAST_FRAME",
+      "note": "Continuity match from previous clip."
+    },
+    "camera": {
+      "viewpoint": "third-person cinematic camera; the camera itself is never seen",
+      "shot_size": "MCU Nora Quan Sát Vòm Đá",
+      "description": "Multi-shot sequence with crisp hard cuts: Shot 1 (0-3s) -> Hard Cut at 3.0s -> Shot 2 (3-6s) -> Hard Cut at 6.0s -> Shot 3 (6-8s). 35mm Cooke S4 prime lens with deep focus (f/8 aperture), entire frame sharp."
+    },
+    "style": "cinematic feature-film look: shot on ARRI Alexa with Cooke S4 prime lenses, fine 35mm film grain, deep inky blacks, strong motivated chiaroscuro, thin atmospheric dust catching the light; real seafarers and prehistoric chitin monster, matte organic biological textures, strictly NOT CGI, NOT a video game",
+    "setting": "Location: karst labyrinth cavern and collapsed stone arch. Light: khối đá treo lơ lửng, deep subterranean chiaroscuro shadows.",
+    "characters": [
+      {
+        "name": "Nora",
+        "visual_lock": "FACE LOCK: Nora's face is exactly the face in {{media:62e117f8-0af7-484e-90a8-f79927105746|nora_clean.jpg}}, kept 1:1. BODY and OUTFIT LOCK: her build and navy seafarer brigandine are exactly as in {{media:743ef618-f4c5-456c-9285-56dd911ca94b|nora_body_seafarer_clean.jpg}}.",
+        "state": "Executing tactical combat maneuvers in the dark cavern."
+      },
+      {
+        "name": "Heracles",
+        "visual_lock": "FACE LOCK: Heracles's face is exactly the face in {{media:37a10133-8496-49e7-bd77-b5f261c5a43e|heracles_clean.jpg}}, kept 1:1. BODY and OUTFIT LOCK: his massive muscular frame and sea-lion mantle are exactly as in {{media:37a10133-8496-49e7-bd77-b5f261c5a43e|heracles_clean.jpg}}.",
+        "state": "Bracing his heavy bronze shield against monstrous kinetic strikes."
+      }
+    ],
+    "timeline_action": {
+      "0-3s": "From second 0, Nora begins speaking immediately, sharp and commanding: Nora says \"A twenty-ton keystone hanging by brittle calcified veins! Heracles, Castor, we need to lure her directly beneath the archway!\" (no subtitles).",
+      "3-6s": "At second 3.0, a crisp hard cut: Nora's command echoes through the cavern through second 5; nora quan sát thấy khối đá vôi 20 tấn giữ bởi các gờ nứt tự nhiên.",
+      "6-8s": "At second 6.0, a crisp hard cut: The line concludes by second 6; Nora braces for the next impact through second 8. Strictly Heracles alone in this focal framing; Nora are completely off-screen or in distinct background separation, never overlapping. SPATIAL LOCK: All characters stand firmly on the interior solid deck or stone floor, NEVER on the exterior water/cliff drop-off side of any barrier; maintain a consistent 180-degree spatial axis within each shot."
+    },
+    "speech": {
+      "speaker": [
+        "Nora"
+      ],
+      "voices": {
+        "Nora": "kore"
+      },
+      "delivery": "shouted loud, sharp and clipped in visceral mortal combat",
+      "dialogue": [
+        {
+          "t": "0-6s",
+          "speaker": "Nora",
+          "line": "A twenty-ton keystone hanging by brittle calcified veins! Heracles, Castor, we need to lure her directly beneath the archway!"
+        }
+      ]
+    },
+    "dramatic_craft": {
+      "beat": "RH [+]: Phê duyệt kế hoạch bẫy",
+      "value_turn": "Mortal trap -> Tactical victory: Defeating the guardian beast with environmental strategy.",
+      "subtext": "The seafarers turn the monster's own predatory instincts against it.",
+      "prop_and_detail": "Heavy bronze shield, iron pry-bars, burning pitch torches, crushing keystone."
+    },
+    "audio": "Nora: A twenty-ton keystone hanging by brittle calcified veins! Heracles, Castor, we need to lure her directly beneath the archway!; screeching mandibles, iron striking stone.",
+    "physics": "Massive momentum p=m*v of twenty-ton stone collapse, elastic chitin rebound on bronze, kinetic dust displacement.",
+    "negative_constraints": [
+      "No subtitles, no captions, no on-frame text, no logos, no watermarks.",
+      "The video is full-frame shots only: never a grid, never panels, never split screen, never black dividing lines; strictly NO duplicate characters, strictly NO multiple Nora, Heracles, no ghost figures, no cloning; strictly NO character standing outside the ship hull or on the exterior water/drop-off side of a railing/barrier, no 180-degree axis fusion between panels; crisp hard cuts at second 3.0 and second 6.0, no camera blending, no crossfades.",
+      "ANTI-CGI LOCK: real documentary footage, not a 3D render, not a video game, not CGI fire, no plastic skin.",
+      "No breath vapor and no white steam from anyone's mouth; no god rays, no volumetric beams, no magical sunbeams.",
+      "No shallow depth of field, no blurry background, no bokeh (f/8 aperture throughout).",
+      "Separate bodies never merge; natural hands with five fingers; no extra limbs."
+    ]
+  },
+  {
+    "clip_id": "SC-108",
+    "scene_name": "Dùng bản đồ làm mồi nhử",
+    "duration": 10,
+    "aspect_ratio": "16:9",
+    "refs": [
+      "Nora",
+      "Nora Body Seafarer"
+    ],
+    "start_frame": {
+      "type": "GENERATE_IMAGE",
+      "image_prompt": "Cinematic master shot on 35mm film, 16:9 aspect ratio. Nora rút tấm bản đồ da cừu vàng kim, vẩy nước muối làm nó phát quang rực rỡ thu hút quái thú. Featuring {{ref:Nora}} {{ref:Nora Body Seafarer}}. Practical lighting: mực vàng bừng sáng chói lòa. Deep focus (f/8 aperture), entire frame sharp, dark chiaroscuro, natural textures, strictly NO artificial volumetric lighting, NO 3D CGI.",
+      "image_refs": [
+        "Nora",
+        "Nora Body Seafarer"
+      ]
+    },
+    "camera": {
+      "viewpoint": "third-person cinematic camera; the camera itself is never seen",
+      "shot_size": "MS Nora Dùng Bản Đồ Làm Mồi",
+      "description": "Multi-shot sequence with crisp hard cuts: Shot 1 (0-3s) -> Hard Cut at 3.0s -> Shot 2 (3-7s) -> Hard Cut at 7.0s -> Shot 3 (7-10s). 35mm Cooke S4 prime lens with deep focus (f/8 aperture), entire frame sharp."
+    },
+    "style": "cinematic feature-film look: shot on ARRI Alexa with Cooke S4 prime lenses, fine 35mm film grain, deep inky blacks, strong motivated chiaroscuro, thin atmospheric dust catching the light; real seafarers and prehistoric chitin monster, matte organic biological textures, strictly NOT CGI, NOT a video game",
+    "setting": "Location: karst labyrinth cavern and collapsed stone arch. Light: mực vàng bừng sáng chói lòa, deep subterranean chiaroscuro shadows.",
+    "characters": [
+      {
+        "name": "Nora",
+        "visual_lock": "FACE LOCK: Nora's face is exactly the face in {{media:62e117f8-0af7-484e-90a8-f79927105746|nora_clean.jpg}}, kept 1:1. BODY and OUTFIT LOCK: her build and navy seafarer brigandine are exactly as in {{media:743ef618-f4c5-456c-9285-56dd911ca94b|nora_body_seafarer_clean.jpg}}.",
+        "state": "Executing tactical combat maneuvers in the dark cavern."
+      }
+    ],
+    "timeline_action": {
+      "0-3s": "From the opening frame at second 0, Nora shouts with ferocious intensity: Nora says \"She hunts by living warmth and bioluminescent shimmer! Watch the gold fire, beast of the abyss! Come feast upon your master's bait now!\" (no subtitles).",
+      "3-7s": "At second 3.0, a crisp hard cut: The battle command drives the maneuver through second 6 as nora rút tấm bản đồ da cừu vàng kim, vẩy nước muối làm nó phát quang rực rỡ thu hút quái thú.",
+      "7-10s": "At second 7.0, a crisp hard cut: Nora concludes the line by second 7; the team executes the tactical strike through second 10. SPATIAL LOCK: All characters stand firmly on the interior solid deck or stone floor, NEVER on the exterior water/cliff drop-off side of any barrier; maintain a consistent 180-degree spatial axis within each shot."
+    },
+    "speech": {
+      "speaker": [
+        "Nora"
+      ],
+      "voices": {
+        "Nora": "kore"
+      },
+      "delivery": "shouted loud, sharp and clipped in visceral mortal combat",
+      "dialogue": [
+        {
+          "t": "0-7s",
+          "speaker": "Nora",
+          "line": "She hunts by living warmth and bioluminescent shimmer! Watch the gold fire, beast of the abyss! Come feast upon your master's bait now!"
+        }
+      ]
+    },
+    "dramatic_craft": {
+      "beat": "[+++]: Dùng bản đồ làm mồi nhử",
+      "value_turn": "Mortal trap -> Tactical victory: Defeating the guardian beast with environmental strategy.",
+      "subtext": "The seafarers turn the monster's own predatory instincts against it.",
+      "prop_and_detail": "Heavy bronze shield, iron pry-bars, burning pitch torches, crushing keystone."
+    },
+    "audio": "Nora: She hunts by living warmth and bioluminescent shimmer! Watch the gold fire, beast of the abyss! Come feast upon your master's bait now!; screeching mandibles, iron striking stone.",
+    "physics": "Massive momentum p=m*v of twenty-ton stone collapse, elastic chitin rebound on bronze, kinetic dust displacement.",
+    "negative_constraints": [
+      "No subtitles, no captions, no on-frame text, no logos, no watermarks.",
+      "The video is full-frame shots only: never a grid, never panels, never split screen, never black dividing lines; strictly NO duplicate characters, strictly NO multiple Nora, no ghost figures, no cloning; strictly NO character standing outside the ship hull or on the exterior water/drop-off side of a railing/barrier, no 180-degree axis fusion between panels; crisp hard cuts at second 3.0 and second 7.0, no camera blending, no crossfades.",
+      "ANTI-CGI LOCK: real documentary footage, not a 3D render, not a video game, not CGI fire, no plastic skin.",
+      "No breath vapor and no white steam from anyone's mouth; no god rays, no volumetric beams, no magical sunbeams.",
+      "No shallow depth of field, no blurry background, no bokeh (f/8 aperture throughout).",
+      "Separate bodies never merge; natural hands with five fingers; no extra limbs."
+    ]
+  },
+  {
+    "clip_id": "SC-109",
+    "scene_name": "Quái thú cắn mồi nhử",
+    "duration": 8,
+    "aspect_ratio": "16:9",
+    "refs": [
+      "Labyrinth Beast"
+    ],
+    "start_frame": {
+      "type": "GENERATE_IMAGE",
+      "image_prompt": "Cinematic master shot on 35mm film, 16:9 aspect ratio. Quái vật Labyrinth gầm rú, lao thẳng vào ánh sáng vàng rực của tấm bản đồ. Featuring {{ref:Labyrinth Beast}}. Practical lighting: bụi đá mù mịt. Deep focus (f/8 aperture), entire frame sharp, dark chiaroscuro, natural textures, strictly NO artificial volumetric lighting, NO 3D CGI.",
+      "image_refs": [
+        "Labyrinth Beast"
+      ]
+    },
+    "camera": {
+      "viewpoint": "third-person cinematic camera; the camera itself is never seen",
+      "shot_size": "Dynamic Action Quái Thú Lao Tới",
+      "description": "Multi-shot sequence with crisp hard cuts: Shot 1 (0-3s) -> Hard Cut at 3.0s -> Shot 2 (3-6s) -> Hard Cut at 6.0s -> Shot 3 (6-8s). 35mm Cooke S4 prime lens with deep focus (f/8 aperture), entire frame sharp."
+    },
+    "style": "cinematic feature-film look: shot on ARRI Alexa with Cooke S4 prime lenses, fine 35mm film grain, deep inky blacks, strong motivated chiaroscuro, thin atmospheric dust catching the light; real seafarers and prehistoric chitin monster, matte organic biological textures, strictly NOT CGI, NOT a video game",
+    "setting": "Location: karst labyrinth cavern and collapsed stone arch. Light: bụi đá mù mịt, deep subterranean chiaroscuro shadows.",
+    "characters": [
+      {
+        "name": "Labyrinth Beast",
+        "visual_lock": "CREATURE LOCK: The monster is exactly as in {{media:a1905a31-82f6-4c94-b8b4-4c68570f2bfc|labyrinth_beast_clean.jpg}}, kept 1:1 with 6 jointed climbing legs, jet-black segmented chitin carapace, arched stinger tail, and crushing mandibles.",
+        "state": "Stalking the intruders with predatory ferocity."
+      }
+    ],
+    "timeline_action": {
+      "0-3s": "From second 0, Quái vật Labyrinth gầm rú, lao thẳng vào ánh sáng vàng rực của tấm bản đồ; bụi đá mù mịt.",
+      "3-6s": "At second 3.0, a crisp hard cut: Kinetic mass and stone friction dominate the frame.",
+      "6-8s": "At second 6.0, a crisp hard cut: The action concludes with steady physical equilibrium by second 8. SPATIAL LOCK: All characters stand firmly on the interior solid deck or stone floor, NEVER on the exterior water/cliff drop-off side of any barrier; maintain a consistent 180-degree spatial axis within each shot."
+    },
+    "speech": {
+      "speaker": [],
+      "voices": {},
+      "delivery": "no spoken dialogue (Sonic Isolation)",
+      "dialogue": []
+    },
+    "dramatic_craft": {
+      "beat": "[!]: Quái thú cắn mồi nhử",
+      "value_turn": "Mortal trap -> Tactical victory: Defeating the guardian beast with environmental strategy.",
+      "subtext": "The seafarers turn the monster's own predatory instincts against it.",
+      "prop_and_detail": "Heavy bronze shield, iron pry-bars, burning pitch torches, crushing keystone."
+    },
+    "audio": "Monstrous chitin scraping and collapsing rock thunder (Sonic Isolation); screeching mandibles, iron striking stone.",
+    "physics": "Massive momentum p=m*v of twenty-ton stone collapse, elastic chitin rebound on bronze, kinetic dust displacement.",
+    "negative_constraints": [
+      "No subtitles, no captions, no on-frame text, no logos, no watermarks.",
+      "The video is full-frame shots only: never a grid, never panels, never split screen, never black dividing lines; strictly NO duplicate characters, strictly NO multiple Labyrinth Beast, no ghost figures, no cloning; strictly NO character standing outside the ship hull or on the exterior water/drop-off side of a railing/barrier, no 180-degree axis fusion between panels; crisp hard cuts at second 3.0 and second 6.0, no camera blending, no crossfades.",
+      "ANTI-CGI LOCK: real documentary footage, not a 3D render, not a video game, not CGI fire, no plastic skin.",
+      "No breath vapor and no white steam from anyone's mouth; no god rays, no volumetric beams, no magical sunbeams.",
+      "No shallow depth of field, no blurry background, no bokeh (f/8 aperture throughout).",
+      "Separate bodies never merge; natural hands with five fingers; no extra limbs."
+    ]
+  },
+  {
+    "clip_id": "SC-110",
+    "scene_name": "Găm mồi vào tử địa",
+    "duration": 8,
+    "aspect_ratio": "16:9",
+    "refs": [
+      "Nora",
+      "Nora Body Seafarer"
+    ],
+    "start_frame": {
+      "type": "PREV_LAST_FRAME",
+      "note": "Continuity match from previous clip."
+    },
+    "camera": {
+      "viewpoint": "third-person cinematic camera; the camera itself is never seen",
+      "shot_size": "MCU Nora Bắn Nỏ Găm Bản Đồ",
+      "description": "Multi-shot sequence with crisp hard cuts: Shot 1 (0-3s) -> Hard Cut at 3.0s -> Shot 2 (3-6s) -> Hard Cut at 6.0s -> Shot 3 (6-8s). 35mm Cooke S4 prime lens with deep focus (f/8 aperture), entire frame sharp."
+    },
+    "style": "cinematic feature-film look: shot on ARRI Alexa with Cooke S4 prime lenses, fine 35mm film grain, deep inky blacks, strong motivated chiaroscuro, thin atmospheric dust catching the light; real seafarers and prehistoric chitin monster, matte organic biological textures, strictly NOT CGI, NOT a video game",
+    "setting": "Location: karst labyrinth cavern and collapsed stone arch. Light: ánh sáng vàng bay xé gió, deep subterranean chiaroscuro shadows.",
+    "characters": [
+      {
+        "name": "Nora",
+        "visual_lock": "FACE LOCK: Nora's face is exactly the face in {{media:62e117f8-0af7-484e-90a8-f79927105746|nora_clean.jpg}}, kept 1:1. BODY and OUTFIT LOCK: her build and navy seafarer brigandine are exactly as in {{media:743ef618-f4c5-456c-9285-56dd911ca94b|nora_body_seafarer_clean.jpg}}.",
+        "state": "Executing tactical combat maneuvers in the dark cavern."
+      }
+    ],
+    "timeline_action": {
+      "0-3s": "From second 0, Nora begins speaking immediately, sharp and commanding: Nora says \"Take the bait into the dark! Right beneath the hanging stone jaws where your grave waits for you!\" (no subtitles).",
+      "3-6s": "At second 3.0, a crisp hard cut: Nora's command echoes through the cavern through second 5; nora giương nỏ, bắn mũi tên mang tấm bản đồ găm thẳng vào khe nứt dưới vòm đá.",
+      "6-8s": "At second 6.0, a crisp hard cut: The line concludes by second 6; Nora braces for the next impact through second 8. SPATIAL LOCK: All characters stand firmly on the interior solid deck or stone floor, NEVER on the exterior water/cliff drop-off side of any barrier; maintain a consistent 180-degree spatial axis within each shot."
+    },
+    "speech": {
+      "speaker": [
+        "Nora"
+      ],
+      "voices": {
+        "Nora": "kore"
+      },
+      "delivery": "shouted loud, sharp and clipped in visceral mortal combat",
+      "dialogue": [
+        {
+          "t": "0-6s",
+          "speaker": "Nora",
+          "line": "Take the bait into the dark! Right beneath the hanging stone jaws where your grave waits for you!"
+        }
+      ]
+    },
+    "dramatic_craft": {
+      "beat": "[++]: Găm mồi vào tử địa",
+      "value_turn": "Mortal trap -> Tactical victory: Defeating the guardian beast with environmental strategy.",
+      "subtext": "The seafarers turn the monster's own predatory instincts against it.",
+      "prop_and_detail": "Heavy bronze shield, iron pry-bars, burning pitch torches, crushing keystone."
+    },
+    "audio": "Nora: Take the bait into the dark! Right beneath the hanging stone jaws where your grave waits for you!; screeching mandibles, iron striking stone.",
+    "physics": "Massive momentum p=m*v of twenty-ton stone collapse, elastic chitin rebound on bronze, kinetic dust displacement.",
+    "negative_constraints": [
+      "No subtitles, no captions, no on-frame text, no logos, no watermarks.",
+      "The video is full-frame shots only: never a grid, never panels, never split screen, never black dividing lines; strictly NO duplicate characters, strictly NO multiple Nora, no ghost figures, no cloning; strictly NO character standing outside the ship hull or on the exterior water/drop-off side of a railing/barrier, no 180-degree axis fusion between panels; crisp hard cuts at second 3.0 and second 6.0, no camera blending, no crossfades.",
+      "ANTI-CGI LOCK: real documentary footage, not a 3D render, not a video game, not CGI fire, no plastic skin.",
+      "No breath vapor and no white steam from anyone's mouth; no god rays, no volumetric beams, no magical sunbeams.",
+      "No shallow depth of field, no blurry background, no bokeh (f/8 aperture throughout).",
+      "Separate bodies never merge; natural hands with five fingers; no extra limbs."
+    ]
+  },
+  {
+    "clip_id": "SC-111",
+    "scene_name": "Quái thú vào tâm bẫy",
+    "duration": 6,
+    "aspect_ratio": "16:9",
+    "refs": [
+      "Labyrinth Beast"
+    ],
+    "start_frame": {
+      "type": "GENERATE_IMAGE",
+      "image_prompt": "Cinematic master shot on 35mm film, 16:9 aspect ratio. Quái vật chồm lên đớp lấy tấm bản đồ ngay dưới vòm đá. Featuring {{ref:Labyrinth Beast}}. Practical lighting: hàm kẹp mở rộng rỏ dãi. Deep focus (f/8 aperture), entire frame sharp, dark chiaroscuro, natural textures, strictly NO artificial volumetric lighting, NO 3D CGI.",
+      "image_refs": [
+        "Labyrinth Beast"
+      ]
+    },
+    "camera": {
+      "viewpoint": "third-person cinematic camera; the camera itself is never seen",
+      "shot_size": "Dynamic Chồm Lên Đớp Mồi",
+      "description": "Multi-shot sequence with crisp hard cuts: Shot 1 (0-2s) -> Hard Cut at 2.0s -> Shot 2 (2-4s) -> Hard Cut at 4.0s -> Shot 3 (4-6s). 35mm Cooke S4 prime lens with deep focus (f/8 aperture), entire frame sharp."
+    },
+    "style": "cinematic feature-film look: shot on ARRI Alexa with Cooke S4 prime lenses, fine 35mm film grain, deep inky blacks, strong motivated chiaroscuro, thin atmospheric dust catching the light; real seafarers and prehistoric chitin monster, matte organic biological textures, strictly NOT CGI, NOT a video game",
+    "setting": "Location: karst labyrinth cavern and collapsed stone arch. Light: hàm kẹp mở rộng rỏ dãi, deep subterranean chiaroscuro shadows.",
+    "characters": [
+      {
+        "name": "Labyrinth Beast",
+        "visual_lock": "CREATURE LOCK: The monster is exactly as in {{media:a1905a31-82f6-4c94-b8b4-4c68570f2bfc|labyrinth_beast_clean.jpg}}, kept 1:1 with 6 jointed climbing legs, jet-black segmented chitin carapace, arched stinger tail, and crushing mandibles.",
+        "state": "Stalking the intruders with predatory ferocity."
+      }
+    ],
+    "timeline_action": {
+      "0-2s": "From second 0, Theron delivers the line immediately, sharp and urgent: Theron says \"She is in the kill zone! Cut the hemp cables and strike the wedge!\" (no subtitles).",
+      "2-4s": "At second 2.0, a crisp hard cut: Theron's line finishes cleanly by second 4; quái vật chồm lên đớp lấy tấm bản đồ ngay dưới vòm đá.",
+      "4-6s": "At second 4.0, a crisp hard cut: The physical combat stance settles firmly by second 6. SPATIAL LOCK: All characters stand firmly on the interior solid deck or stone floor, NEVER on the exterior water/cliff drop-off side of any barrier; maintain a consistent 180-degree spatial axis within each shot."
+    },
+    "speech": {
+      "speaker": [
+        "Theron"
+      ],
+      "voices": {
+        "Theron": "charon"
+      },
+      "delivery": "shouted loud, sharp and clipped in visceral mortal combat",
+      "dialogue": [
+        {
+          "t": "0-4s",
+          "speaker": "Theron",
+          "line": "She is in the kill zone! Cut the hemp cables and strike the wedge!"
+        }
+      ]
+    },
+    "dramatic_craft": {
+      "beat": "[!]: Quái thú vào tâm bẫy",
+      "value_turn": "Mortal trap -> Tactical victory: Defeating the guardian beast with environmental strategy.",
+      "subtext": "The seafarers turn the monster's own predatory instincts against it.",
+      "prop_and_detail": "Heavy bronze shield, iron pry-bars, burning pitch torches, crushing keystone."
+    },
+    "audio": "Theron: She is in the kill zone! Cut the hemp cables and strike the wedge!; screeching mandibles, iron striking stone.",
+    "physics": "Massive momentum p=m*v of twenty-ton stone collapse, elastic chitin rebound on bronze, kinetic dust displacement.",
+    "negative_constraints": [
+      "No subtitles, no captions, no on-frame text, no logos, no watermarks.",
+      "The video is full-frame shots only: never a grid, never panels, never split screen, never black dividing lines; strictly NO duplicate characters, strictly NO multiple Labyrinth Beast, no ghost figures, no cloning; strictly NO character standing outside the ship hull or on the exterior water/drop-off side of a railing/barrier, no 180-degree axis fusion between panels; crisp hard cuts at second 2.0 and second 4.0, no camera blending, no crossfades.",
+      "ANTI-CGI LOCK: real documentary footage, not a 3D render, not a video game, not CGI fire, no plastic skin.",
+      "No breath vapor and no white steam from anyone's mouth; no god rays, no volumetric beams, no magical sunbeams.",
+      "No shallow depth of field, no blurry background, no bokeh (f/8 aperture throughout).",
+      "Separate bodies never merge; natural hands with five fingers; no extra limbs."
+    ]
+  },
+  {
+    "clip_id": "SC-112",
+    "scene_name": "Chém đứt dây kích hoạt",
+    "duration": 8,
+    "aspect_ratio": "16:9",
+    "refs": [
+      "Castor"
+    ],
+    "start_frame": {
+      "type": "GENERATE_IMAGE",
+      "image_prompt": "Cinematic master shot on 35mm film, 16:9 aspect ratio. Castor vung đoản kiếm chém đứt sợi dây néo căng giữ chốt đá. Featuring {{ref:Castor}}. Practical lighting: lưỡi kiếm sáng loáng. Deep focus (f/8 aperture), entire frame sharp, dark chiaroscuro, natural textures, strictly NO artificial volumetric lighting, NO 3D CGI.",
+      "image_refs": [
+        "Castor"
+      ]
+    },
+    "camera": {
+      "viewpoint": "third-person cinematic camera; the camera itself is never seen",
+      "shot_size": "MCU Castor Chém Đứt Dây",
+      "description": "Multi-shot sequence with crisp hard cuts: Shot 1 (0-3s) -> Hard Cut at 3.0s -> Shot 2 (3-6s) -> Hard Cut at 6.0s -> Shot 3 (6-8s). 35mm Cooke S4 prime lens with deep focus (f/8 aperture), entire frame sharp."
+    },
+    "style": "cinematic feature-film look: shot on ARRI Alexa with Cooke S4 prime lenses, fine 35mm film grain, deep inky blacks, strong motivated chiaroscuro, thin atmospheric dust catching the light; real seafarers and prehistoric chitin monster, matte organic biological textures, strictly NOT CGI, NOT a video game",
+    "setting": "Location: karst labyrinth cavern and collapsed stone arch. Light: lưỡi kiếm sáng loáng, deep subterranean chiaroscuro shadows.",
+    "characters": [
+      {
+        "name": "Castor",
+        "visual_lock": "FACE LOCK: Castor's face is exactly the face in {{media:3152a235-af4f-462b-a78e-02551f826e41|castor_clean.jpg}}, kept 1:1. BODY and OUTFIT LOCK: his leather cuirass is exactly as in {{media:3152a235-af4f-462b-a78e-02551f826e41|castor_clean.jpg}}.",
+        "state": "Aiming and striking with lethal tactical precision."
+      }
+    ],
+    "timeline_action": {
+      "0-3s": "From second 0, Castor begins speaking immediately, sharp and commanding: Castor says \"May the earth swallow you whole, demon! Timber and stone, come crashing down into the dark abyss!\" (no subtitles).",
+      "3-6s": "At second 3.0, a crisp hard cut: Castor's command echoes through the cavern through second 5; castor vung đoản kiếm chém đứt sợi dây néo căng giữ chốt đá.",
+      "6-8s": "At second 6.0, a crisp hard cut: The line concludes by second 6; Castor braces for the next impact through second 8. SPATIAL LOCK: All characters stand firmly on the interior solid deck or stone floor, NEVER on the exterior water/cliff drop-off side of any barrier; maintain a consistent 180-degree spatial axis within each shot."
+    },
+    "speech": {
+      "speaker": [
+        "Castor"
+      ],
+      "voices": {
+        "Castor": "fenrir"
+      },
+      "delivery": "shouted loud, sharp and clipped in visceral mortal combat",
+      "dialogue": [
+        {
+          "t": "0-6s",
+          "speaker": "Castor",
+          "line": "May the earth swallow you whole, demon! Timber and stone, come crashing down into the dark abyss!"
+        }
+      ]
+    },
+    "dramatic_craft": {
+      "beat": "[++]: Chém đứt dây kích hoạt",
+      "value_turn": "Mortal trap -> Tactical victory: Defeating the guardian beast with environmental strategy.",
+      "subtext": "The seafarers turn the monster's own predatory instincts against it.",
+      "prop_and_detail": "Heavy bronze shield, iron pry-bars, burning pitch torches, crushing keystone."
+    },
+    "audio": "Castor: May the earth swallow you whole, demon! Timber and stone, come crashing down into the dark abyss!; screeching mandibles, iron striking stone.",
+    "physics": "Massive momentum p=m*v of twenty-ton stone collapse, elastic chitin rebound on bronze, kinetic dust displacement.",
+    "negative_constraints": [
+      "No subtitles, no captions, no on-frame text, no logos, no watermarks.",
+      "The video is full-frame shots only: never a grid, never panels, never split screen, never black dividing lines; strictly NO duplicate characters, strictly NO multiple Castor, no ghost figures, no cloning; strictly NO character standing outside the ship hull or on the exterior water/drop-off side of a railing/barrier, no 180-degree axis fusion between panels; crisp hard cuts at second 3.0 and second 6.0, no camera blending, no crossfades.",
+      "ANTI-CGI LOCK: real documentary footage, not a 3D render, not a video game, not CGI fire, no plastic skin.",
+      "No breath vapor and no white steam from anyone's mouth; no god rays, no volumetric beams, no magical sunbeams.",
+      "No shallow depth of field, no blurry background, no bokeh (f/8 aperture throughout).",
+      "Separate bodies never merge; natural hands with five fingers; no extra limbs."
+    ]
+  },
+  {
+    "clip_id": "SC-113",
+    "scene_name": "Dộng nêm giải phóng 20 tấn đá",
+    "duration": 8,
+    "aspect_ratio": "16:9",
+    "refs": [
+      "Heracles"
+    ],
+    "start_frame": {
+      "type": "PREV_LAST_FRAME",
+      "note": "Continuity match from previous clip."
+    },
+    "camera": {
+      "viewpoint": "third-person cinematic camera; the camera itself is never seen",
+      "shot_size": "Low Hero Heracles Dộng Xà Beng",
+      "description": "Multi-shot sequence with crisp hard cuts: Shot 1 (0-3s) -> Hard Cut at 3.0s -> Shot 2 (3-6s) -> Hard Cut at 6.0s -> Shot 3 (6-8s). 35mm Cooke S4 prime lens with deep focus (f/8 aperture), entire frame sharp."
+    },
+    "style": "cinematic feature-film look: shot on ARRI Alexa with Cooke S4 prime lenses, fine 35mm film grain, deep inky blacks, strong motivated chiaroscuro, thin atmospheric dust catching the light; real seafarers and prehistoric chitin monster, matte organic biological textures, strictly NOT CGI, NOT a video game",
+    "setting": "Location: karst labyrinth cavern and collapsed stone arch. Light: cơ bắp gồng cứng, deep subterranean chiaroscuro shadows.",
+    "characters": [
+      {
+        "name": "Heracles",
+        "visual_lock": "FACE LOCK: Heracles's face is exactly the face in {{media:37a10133-8496-49e7-bd77-b5f261c5a43e|heracles_clean.jpg}}, kept 1:1. BODY and OUTFIT LOCK: his massive muscular frame and sea-lion mantle are exactly as in {{media:37a10133-8496-49e7-bd77-b5f261c5a43e|heracles_clean.jpg}}.",
+        "state": "Bracing his heavy bronze shield against monstrous kinetic strikes."
+      }
+    ],
+    "timeline_action": {
+      "0-3s": "From second 0, Heracles begins speaking immediately, sharp and commanding: Heracles says \"Give way, you ancient mountain! Bury this scavenger deep beneath twenty tons of crushed Aegean limestone and boulders!\" (no subtitles).",
+      "3-6s": "At second 3.0, a crisp hard cut: Heracles's command echoes through the cavern through second 5; heracles dùng đòn bẩy sắt dộng mạnh vào nêm đá chịu lực cuối cùng.",
+      "6-8s": "At second 6.0, a crisp hard cut: The line concludes by second 6; Heracles braces for the next impact through second 8. SPATIAL LOCK: All characters stand firmly on the interior solid deck or stone floor, NEVER on the exterior water/cliff drop-off side of any barrier; maintain a consistent 180-degree spatial axis within each shot."
+    },
+    "speech": {
+      "speaker": [
+        "Heracles"
+      ],
+      "voices": {
+        "Heracles": "puck"
+      },
+      "delivery": "shouted loud, sharp and clipped in visceral mortal combat",
+      "dialogue": [
+        {
+          "t": "0-6s",
+          "speaker": "Heracles",
+          "line": "Give way, you ancient mountain! Bury this scavenger deep beneath twenty tons of crushed Aegean limestone and boulders!"
+        }
+      ]
+    },
+    "dramatic_craft": {
+      "beat": "RH [+++]: Dộng nêm giải phóng 20 tấn đá",
+      "value_turn": "Mortal trap -> Tactical victory: Defeating the guardian beast with environmental strategy.",
+      "subtext": "The seafarers turn the monster's own predatory instincts against it.",
+      "prop_and_detail": "Heavy bronze shield, iron pry-bars, burning pitch torches, crushing keystone."
+    },
+    "audio": "Heracles: Give way, you ancient mountain! Bury this scavenger deep beneath twenty tons of crushed Aegean limestone and boulders!; screeching mandibles, iron striking stone.",
+    "physics": "Massive momentum p=m*v of twenty-ton stone collapse, elastic chitin rebound on bronze, kinetic dust displacement.",
+    "negative_constraints": [
+      "No subtitles, no captions, no on-frame text, no logos, no watermarks.",
+      "The video is full-frame shots only: never a grid, never panels, never split screen, never black dividing lines; strictly NO duplicate characters, strictly NO multiple Heracles, no ghost figures, no cloning; strictly NO character standing outside the ship hull or on the exterior water/drop-off side of a railing/barrier, no 180-degree axis fusion between panels; crisp hard cuts at second 3.0 and second 6.0, no camera blending, no crossfades.",
+      "ANTI-CGI LOCK: real documentary footage, not a 3D render, not a video game, not CGI fire, no plastic skin.",
+      "No breath vapor and no white steam from anyone's mouth; no god rays, no volumetric beams, no magical sunbeams.",
+      "No shallow depth of field, no blurry background, no bokeh (f/8 aperture throughout).",
+      "Separate bodies never merge; natural hands with five fingers; no extra limbs."
+    ]
+  },
+  {
+    "clip_id": "SC-114",
+    "scene_name": "20 tấn đá nghiền nát quái thú",
+    "duration": 10,
+    "aspect_ratio": "16:9",
+    "refs": [
+      "Labyrinth Beast"
+    ],
+    "start_frame": {
+      "type": "GENERATE_IMAGE",
+      "image_prompt": "Cinematic master shot on 35mm film, 16:9 aspect ratio. Vòm đá 20 tấn sụp đổ dữ dội, bụi đá trắng mịt mù nghiền nát quái thú Labyrinth. Featuring {{ref:Labyrinth Beast}}. Practical lighting: đất đá đổ sập kinh hoàng. Deep focus (f/8 aperture), entire frame sharp, dark chiaroscuro, natural textures, strictly NO artificial volumetric lighting, NO 3D CGI.",
+      "image_refs": [
+        "Labyrinth Beast"
+      ]
+    },
+    "camera": {
+      "viewpoint": "third-person cinematic camera; the camera itself is never seen",
+      "shot_size": "Wide Vòm Đá Sụp Đổ",
+      "description": "Multi-shot sequence with crisp hard cuts: Shot 1 (0-3s) -> Hard Cut at 3.0s -> Shot 2 (3-7s) -> Hard Cut at 7.0s -> Shot 3 (7-10s). 35mm Cooke S4 prime lens with deep focus (f/8 aperture), entire frame sharp."
+    },
+    "style": "cinematic feature-film look: shot on ARRI Alexa with Cooke S4 prime lenses, fine 35mm film grain, deep inky blacks, strong motivated chiaroscuro, thin atmospheric dust catching the light; real seafarers and prehistoric chitin monster, matte organic biological textures, strictly NOT CGI, NOT a video game",
+    "setting": "Location: karst labyrinth cavern and collapsed stone arch. Light: đất đá đổ sập kinh hoàng, deep subterranean chiaroscuro shadows.",
+    "characters": [
+      {
+        "name": "Labyrinth Beast",
+        "visual_lock": "CREATURE LOCK: The monster is exactly as in {{media:a1905a31-82f6-4c94-b8b4-4c68570f2bfc|labyrinth_beast_clean.jpg}}, kept 1:1 with 6 jointed climbing legs, jet-black segmented chitin carapace, arched stinger tail, and crushing mandibles.",
+        "state": "Stalking the intruders with predatory ferocity."
+      }
+    ],
+    "timeline_action": {
+      "0-3s": "At second 0, Vòm đá 20 tấn sụp đổ dữ dội, bụi đá trắng mịt mù nghiền nát quái thú Labyrinth; đất đá đổ sập kinh hoàng.",
+      "3-7s": "At second 3.0, a crisp hard cut: The colossal twenty-ton rock collapse shakes the entire cavern chamber.",
+      "7-10s": "At second 7.0, a crisp hard cut: The monumental impact resolves as dust settles over the crushed creature by second 10. SPATIAL LOCK: All characters stand firmly on the interior solid deck or stone floor, NEVER on the exterior water/cliff drop-off side of any barrier; maintain a consistent 180-degree spatial axis within each shot."
+    },
+    "speech": {
+      "speaker": [],
+      "voices": {},
+      "delivery": "no spoken dialogue (Sonic Isolation)",
+      "dialogue": []
+    },
+    "dramatic_craft": {
+      "beat": "[!!!]: 20 tấn đá nghiền nát quái thú",
+      "value_turn": "Mortal trap -> Tactical victory: Defeating the guardian beast with environmental strategy.",
+      "subtext": "The seafarers turn the monster's own predatory instincts against it.",
+      "prop_and_detail": "Heavy bronze shield, iron pry-bars, burning pitch torches, crushing keystone."
+    },
+    "audio": "Monstrous chitin scraping and collapsing rock thunder (Sonic Isolation); screeching mandibles, iron striking stone.",
+    "physics": "Massive momentum p=m*v of twenty-ton stone collapse, elastic chitin rebound on bronze, kinetic dust displacement.",
+    "negative_constraints": [
+      "No subtitles, no captions, no on-frame text, no logos, no watermarks.",
+      "The video is full-frame shots only: never a grid, never panels, never split screen, never black dividing lines; strictly NO duplicate characters, strictly NO multiple Labyrinth Beast, no ghost figures, no cloning; strictly NO character standing outside the ship hull or on the exterior water/drop-off side of a railing/barrier, no 180-degree axis fusion between panels; crisp hard cuts at second 3.0 and second 7.0, no camera blending, no crossfades.",
+      "ANTI-CGI LOCK: real documentary footage, not a 3D render, not a video game, not CGI fire, no plastic skin.",
+      "No breath vapor and no white steam from anyone's mouth; no god rays, no volumetric beams, no magical sunbeams.",
+      "No shallow depth of field, no blurry background, no bokeh (f/8 aperture throughout).",
+      "Separate bodies never merge; natural hands with five fingers; no extra limbs."
+    ]
+  },
+  {
+    "clip_id": "SC-115",
+    "scene_name": "Xác quái thú bị vùi lấp",
+    "duration": 8,
+    "aspect_ratio": "16:9",
+    "refs": [
+      "Nora",
+      "Nora Body Seafarer"
+    ],
+    "start_frame": {
+      "type": "GENERATE_IMAGE",
+      "image_prompt": "Cinematic master shot on 35mm film, 16:9 aspect ratio. Bụi trắng tan dần, chỉ còn lại đống đá đổ và lớp giáp xác vỡ nát bất động. Featuring {{ref:Nora}} {{ref:Nora Body Seafarer}}. Practical lighting: bụi vôi mờ ảo. Deep focus (f/8 aperture), entire frame sharp, dark chiaroscuro, natural textures, strictly NO artificial volumetric lighting, NO 3D CGI.",
+      "image_refs": [
+        "Nora",
+        "Nora Body Seafarer"
+      ]
+    },
+    "camera": {
+      "viewpoint": "third-person cinematic camera; the camera itself is never seen",
+      "shot_size": "Wide Bụi Trắng Lắng Xuống",
+      "description": "Multi-shot sequence with crisp hard cuts: Shot 1 (0-3s) -> Hard Cut at 3.0s -> Shot 2 (3-6s) -> Hard Cut at 6.0s -> Shot 3 (6-8s). 35mm Cooke S4 prime lens with deep focus (f/8 aperture), entire frame sharp."
+    },
+    "style": "cinematic feature-film look: shot on ARRI Alexa with Cooke S4 prime lenses, fine 35mm film grain, deep inky blacks, strong motivated chiaroscuro, thin atmospheric dust catching the light; real seafarers and prehistoric chitin monster, matte organic biological textures, strictly NOT CGI, NOT a video game",
+    "setting": "Location: karst labyrinth cavern and collapsed stone arch. Light: bụi vôi mờ ảo, deep subterranean chiaroscuro shadows.",
+    "characters": [
+      {
+        "name": "Nora",
+        "visual_lock": "FACE LOCK: Nora's face is exactly the face in {{media:62e117f8-0af7-484e-90a8-f79927105746|nora_clean.jpg}}, kept 1:1. BODY and OUTFIT LOCK: her build and navy seafarer brigandine are exactly as in {{media:743ef618-f4c5-456c-9285-56dd911ca94b|nora_body_seafarer_clean.jpg}}.",
+        "state": "Executing tactical combat maneuvers in the dark cavern."
+      }
+    ],
+    "timeline_action": {
+      "0-3s": "From second 0, Bụi trắng tan dần, chỉ còn lại đống đá đổ và lớp giáp xác vỡ nát bất động; bụi vôi mờ ảo.",
+      "3-6s": "At second 3.0, a crisp hard cut: Kinetic mass and stone friction dominate the frame.",
+      "6-8s": "At second 6.0, a crisp hard cut: The action concludes with steady physical equilibrium by second 8. SPATIAL LOCK: All characters stand firmly on the interior solid deck or stone floor, NEVER on the exterior water/cliff drop-off side of any barrier; maintain a consistent 180-degree spatial axis within each shot."
+    },
+    "speech": {
+      "speaker": [],
+      "voices": {},
+      "delivery": "no spoken dialogue (Sonic Isolation)",
+      "dialogue": []
+    },
+    "dramatic_craft": {
+      "beat": "[+]: Xác quái thú bị vùi lấp",
+      "value_turn": "Mortal trap -> Tactical victory: Defeating the guardian beast with environmental strategy.",
+      "subtext": "The seafarers turn the monster's own predatory instincts against it.",
+      "prop_and_detail": "Heavy bronze shield, iron pry-bars, burning pitch torches, crushing keystone."
+    },
+    "audio": "Monstrous chitin scraping and collapsing rock thunder (Sonic Isolation); screeching mandibles, iron striking stone.",
+    "physics": "Massive momentum p=m*v of twenty-ton stone collapse, elastic chitin rebound on bronze, kinetic dust displacement.",
+    "negative_constraints": [
+      "No subtitles, no captions, no on-frame text, no logos, no watermarks.",
+      "The video is full-frame shots only: never a grid, never panels, never split screen, never black dividing lines; strictly NO duplicate characters, strictly NO multiple Nora, no ghost figures, no cloning; strictly NO character standing outside the ship hull or on the exterior water/drop-off side of a railing/barrier, no 180-degree axis fusion between panels; crisp hard cuts at second 3.0 and second 6.0, no camera blending, no crossfades.",
+      "ANTI-CGI LOCK: real documentary footage, not a 3D render, not a video game, not CGI fire, no plastic skin.",
+      "No breath vapor and no white steam from anyone's mouth; no god rays, no volumetric beams, no magical sunbeams.",
+      "No shallow depth of field, no blurry background, no bokeh (f/8 aperture throughout).",
+      "Separate bodies never merge; natural hands with five fingers; no extra limbs."
+    ]
+  },
+  {
+    "clip_id": "SC-116",
+    "scene_name": "Bản đồ hết ma thuật",
+    "duration": 8,
+    "aspect_ratio": "16:9",
+    "refs": [
+      "Castor"
+    ],
+    "start_frame": {
+      "type": "GENERATE_IMAGE",
+      "image_prompt": "Cinematic master shot on 35mm film, 16:9 aspect ratio. Castor nhặt lại tấm bản đồ nguyên vẹn nằm trên gờ đá, mực vàng đã tắt lịm. Featuring {{ref:Castor}}. Practical lighting: mặt giấy trắng trở lại. Deep focus (f/8 aperture), entire frame sharp, dark chiaroscuro, natural textures, strictly NO artificial volumetric lighting, NO 3D CGI.",
+      "image_refs": [
+        "Castor"
+      ]
+    },
+    "camera": {
+      "viewpoint": "third-person cinematic camera; the camera itself is never seen",
+      "shot_size": "MS Castor Nhặt Bản Đồ",
+      "description": "Multi-shot sequence with crisp hard cuts: Shot 1 (0-3s) -> Hard Cut at 3.0s -> Shot 2 (3-6s) -> Hard Cut at 6.0s -> Shot 3 (6-8s). 35mm Cooke S4 prime lens with deep focus (f/8 aperture), entire frame sharp."
+    },
+    "style": "cinematic feature-film look: shot on ARRI Alexa with Cooke S4 prime lenses, fine 35mm film grain, deep inky blacks, strong motivated chiaroscuro, thin atmospheric dust catching the light; real seafarers and prehistoric chitin monster, matte organic biological textures, strictly NOT CGI, NOT a video game",
+    "setting": "Location: karst labyrinth cavern and collapsed stone arch. Light: mặt giấy trắng trở lại, deep subterranean chiaroscuro shadows.",
+    "characters": [
+      {
+        "name": "Castor",
+        "visual_lock": "FACE LOCK: Castor's face is exactly the face in {{media:3152a235-af4f-462b-a78e-02551f826e41|castor_clean.jpg}}, kept 1:1. BODY and OUTFIT LOCK: his leather cuirass is exactly as in {{media:3152a235-af4f-462b-a78e-02551f826e41|castor_clean.jpg}}.",
+        "state": "Aiming and striking with lethal tactical precision."
+      }
+    ],
+    "timeline_action": {
+      "0-3s": "From second 0, Castor begins speaking immediately, sharp and commanding: Castor says \"The gold ink is cold and dark. Its lethal glamour died the moment the guardian beast was crushed to dust.\" (no subtitles).",
+      "3-6s": "At second 3.0, a crisp hard cut: Castor's command echoes through the cavern through second 5; castor nhặt lại tấm bản đồ nguyên vẹn nằm trên gờ đá, mực vàng đã tắt lịm.",
+      "6-8s": "At second 6.0, a crisp hard cut: The line concludes by second 6; Castor braces for the next impact through second 8. SPATIAL LOCK: All characters stand firmly on the interior solid deck or stone floor, NEVER on the exterior water/cliff drop-off side of any barrier; maintain a consistent 180-degree spatial axis within each shot."
+    },
+    "speech": {
+      "speaker": [
+        "Castor"
+      ],
+      "voices": {
+        "Castor": "fenrir"
+      },
+      "delivery": "shouted loud, sharp and clipped in visceral mortal combat",
+      "dialogue": [
+        {
+          "t": "0-6s",
+          "speaker": "Castor",
+          "line": "The gold ink is cold and dark. Its lethal glamour died the moment the guardian beast was crushed to dust."
+        }
+      ]
+    },
+    "dramatic_craft": {
+      "beat": "[0]: Bản đồ hết ma thuật",
+      "value_turn": "Mortal trap -> Tactical victory: Defeating the guardian beast with environmental strategy.",
+      "subtext": "The seafarers turn the monster's own predatory instincts against it.",
+      "prop_and_detail": "Heavy bronze shield, iron pry-bars, burning pitch torches, crushing keystone."
+    },
+    "audio": "Castor: The gold ink is cold and dark. Its lethal glamour died the moment the guardian beast was crushed to dust.; screeching mandibles, iron striking stone.",
+    "physics": "Massive momentum p=m*v of twenty-ton stone collapse, elastic chitin rebound on bronze, kinetic dust displacement.",
+    "negative_constraints": [
+      "No subtitles, no captions, no on-frame text, no logos, no watermarks.",
+      "The video is full-frame shots only: never a grid, never panels, never split screen, never black dividing lines; strictly NO duplicate characters, strictly NO multiple Castor, no ghost figures, no cloning; strictly NO character standing outside the ship hull or on the exterior water/drop-off side of a railing/barrier, no 180-degree axis fusion between panels; crisp hard cuts at second 3.0 and second 6.0, no camera blending, no crossfades.",
+      "ANTI-CGI LOCK: real documentary footage, not a 3D render, not a video game, not CGI fire, no plastic skin.",
+      "No breath vapor and no white steam from anyone's mouth; no god rays, no volumetric beams, no magical sunbeams.",
+      "No shallow depth of field, no blurry background, no bokeh (f/8 aperture throughout).",
+      "Separate bodies never merge; natural hands with five fingers; no extra limbs."
+    ]
+  },
+  {
+    "clip_id": "SC-117",
+    "scene_name": "Dựa vào con người",
+    "duration": 6,
+    "aspect_ratio": "16:9",
+    "refs": [
+      "Nora",
+      "Nora Body Seafarer"
+    ],
+    "start_frame": {
+      "type": "PREV_LAST_FRAME",
+      "note": "Continuity match from previous clip."
+    },
+    "camera": {
+      "viewpoint": "third-person cinematic camera; the camera itself is never seen",
+      "shot_size": "MCU Nora Cuộn Bản Đồ",
+      "description": "Multi-shot sequence with crisp hard cuts: Shot 1 (0-2s) -> Hard Cut at 2.0s -> Shot 2 (2-4s) -> Hard Cut at 4.0s -> Shot 3 (4-6s). 35mm Cooke S4 prime lens with deep focus (f/8 aperture), entire frame sharp."
+    },
+    "style": "cinematic feature-film look: shot on ARRI Alexa with Cooke S4 prime lenses, fine 35mm film grain, deep inky blacks, strong motivated chiaroscuro, thin atmospheric dust catching the light; real seafarers and prehistoric chitin monster, matte organic biological textures, strictly NOT CGI, NOT a video game",
+    "setting": "Location: karst labyrinth cavern and collapsed stone arch. Light: gương mặt phong trần, deep subterranean chiaroscuro shadows.",
+    "characters": [
+      {
+        "name": "Nora",
+        "visual_lock": "FACE LOCK: Nora's face is exactly the face in {{media:62e117f8-0af7-484e-90a8-f79927105746|nora_clean.jpg}}, kept 1:1. BODY and OUTFIT LOCK: her build and navy seafarer brigandine are exactly as in {{media:743ef618-f4c5-456c-9285-56dd911ca94b|nora_body_seafarer_clean.jpg}}.",
+        "state": "Executing tactical combat maneuvers in the dark cavern."
+      }
+    ],
+    "timeline_action": {
+      "0-2s": "From second 0, Nora delivers the line immediately, sharp and urgent: Nora says \"The map has done its work. Now we walk only by Theron's wisdom.\" (no subtitles).",
+      "2-4s": "At second 2.0, a crisp hard cut: Nora's line finishes cleanly by second 4; nora nhận lại tấm da cừu trắng tinh, cuộn lại nhét vào bao.",
+      "4-6s": "At second 4.0, a crisp hard cut: The physical combat stance settles firmly by second 6. SPATIAL LOCK: All characters stand firmly on the interior solid deck or stone floor, NEVER on the exterior water/cliff drop-off side of any barrier; maintain a consistent 180-degree spatial axis within each shot."
+    },
+    "speech": {
+      "speaker": [
+        "Nora"
+      ],
+      "voices": {
+        "Nora": "kore"
+      },
+      "delivery": "shouted loud, sharp and clipped in visceral mortal combat",
+      "dialogue": [
+        {
+          "t": "0-4s",
+          "speaker": "Nora",
+          "line": "The map has done its work. Now we walk only by Theron's wisdom."
+        }
+      ]
+    },
+    "dramatic_craft": {
+      "beat": "[++]: Dựa vào con người",
+      "value_turn": "Mortal trap -> Tactical victory: Defeating the guardian beast with environmental strategy.",
+      "subtext": "The seafarers turn the monster's own predatory instincts against it.",
+      "prop_and_detail": "Heavy bronze shield, iron pry-bars, burning pitch torches, crushing keystone."
+    },
+    "audio": "Nora: The map has done its work. Now we walk only by Theron's wisdom.; screeching mandibles, iron striking stone.",
+    "physics": "Massive momentum p=m*v of twenty-ton stone collapse, elastic chitin rebound on bronze, kinetic dust displacement.",
+    "negative_constraints": [
+      "No subtitles, no captions, no on-frame text, no logos, no watermarks.",
+      "The video is full-frame shots only: never a grid, never panels, never split screen, never black dividing lines; strictly NO duplicate characters, strictly NO multiple Nora, no ghost figures, no cloning; strictly NO character standing outside the ship hull or on the exterior water/drop-off side of a railing/barrier, no 180-degree axis fusion between panels; crisp hard cuts at second 2.0 and second 4.0, no camera blending, no crossfades.",
+      "ANTI-CGI LOCK: real documentary footage, not a 3D render, not a video game, not CGI fire, no plastic skin.",
+      "No breath vapor and no white steam from anyone's mouth; no god rays, no volumetric beams, no magical sunbeams.",
+      "No shallow depth of field, no blurry background, no bokeh (f/8 aperture throughout).",
+      "Separate bodies never merge; natural hands with five fingers; no extra limbs."
+    ]
+  },
+  {
+    "clip_id": "SC-118",
+    "scene_name": "Lộ ra lối vào giếng trời",
+    "duration": 8,
+    "aspect_ratio": "16:9",
+    "refs": [
+      "Theron"
+    ],
+    "start_frame": {
+      "type": "GENERATE_IMAGE",
+      "image_prompt": "Cinematic master shot on 35mm film, 16:9 aspect ratio. Theron dùng gậy đá gõ vào khe nứt sâu vừa lộ ra sau vụ sạt lở. Featuring {{ref:Theron}}. Practical lighting: gió ấm thổi qua khe. Deep focus (f/8 aperture), entire frame sharp, dark chiaroscuro, natural textures, strictly NO artificial volumetric lighting, NO 3D CGI.",
+      "image_refs": [
+        "Theron"
+      ]
+    },
+    "camera": {
+      "viewpoint": "third-person cinematic camera; the camera itself is never seen",
+      "shot_size": "MS Theron Gõ Gậy Khe Nứt",
+      "description": "Multi-shot sequence with crisp hard cuts: Shot 1 (0-3s) -> Hard Cut at 3.0s -> Shot 2 (3-6s) -> Hard Cut at 6.0s -> Shot 3 (6-8s). 35mm Cooke S4 prime lens with deep focus (f/8 aperture), entire frame sharp."
+    },
+    "style": "cinematic feature-film look: shot on ARRI Alexa with Cooke S4 prime lenses, fine 35mm film grain, deep inky blacks, strong motivated chiaroscuro, thin atmospheric dust catching the light; real seafarers and prehistoric chitin monster, matte organic biological textures, strictly NOT CGI, NOT a video game",
+    "setting": "Location: karst labyrinth cavern and collapsed stone arch. Light: gió ấm thổi qua khe, deep subterranean chiaroscuro shadows.",
+    "characters": [
+      {
+        "name": "Theron",
+        "visual_lock": "FACE LOCK: Theron's face is exactly the face in {{media:7c5d994a-dabd-406b-a6c1-b9fa6473a612|theron_clean.jpg}}, kept 1:1 with wild gray beard and limestone dust. BODY and OUTFIT LOCK: his emaciated figure in burlap rags is exactly as in {{media:7c5d994a-dabd-406b-a6c1-b9fa6473a612|theron_clean.jpg}}.",
+        "state": "Guiding the crew past predatory ambush points."
+      }
+    ],
+    "timeline_action": {
+      "0-3s": "From second 0, Theron begins speaking immediately, sharp and commanding: Theron says \"The collapse breached the inner wall! Feel the warm updraft carrying the scent of petrified gold and sweet water?\" (no subtitles).",
+      "3-6s": "At second 3.0, a crisp hard cut: Theron's command echoes through the cavern through second 5; theron dùng gậy đá gõ vào khe nứt sâu vừa lộ ra sau vụ sạt lở.",
+      "6-8s": "At second 6.0, a crisp hard cut: The line concludes by second 6; Theron braces for the next impact through second 8. SPATIAL LOCK: All characters stand firmly on the interior solid deck or stone floor, NEVER on the exterior water/cliff drop-off side of any barrier; maintain a consistent 180-degree spatial axis within each shot."
+    },
+    "speech": {
+      "speaker": [
+        "Theron"
+      ],
+      "voices": {
+        "Theron": "charon"
+      },
+      "delivery": "shouted loud, sharp and clipped in visceral mortal combat",
+      "dialogue": [
+        {
+          "t": "0-6s",
+          "speaker": "Theron",
+          "line": "The collapse breached the inner wall! Feel the warm updraft carrying the scent of petrified gold and sweet water?"
+        }
+      ]
+    },
+    "dramatic_craft": {
+      "beat": "[+]: Lộ ra lối vào giếng trời",
+      "value_turn": "Mortal trap -> Tactical victory: Defeating the guardian beast with environmental strategy.",
+      "subtext": "The seafarers turn the monster's own predatory instincts against it.",
+      "prop_and_detail": "Heavy bronze shield, iron pry-bars, burning pitch torches, crushing keystone."
+    },
+    "audio": "Theron: The collapse breached the inner wall! Feel the warm updraft carrying the scent of petrified gold and sweet water?; screeching mandibles, iron striking stone.",
+    "physics": "Massive momentum p=m*v of twenty-ton stone collapse, elastic chitin rebound on bronze, kinetic dust displacement.",
+    "negative_constraints": [
+      "No subtitles, no captions, no on-frame text, no logos, no watermarks.",
+      "The video is full-frame shots only: never a grid, never panels, never split screen, never black dividing lines; strictly NO duplicate characters, strictly NO multiple Theron, no ghost figures, no cloning; strictly NO character standing outside the ship hull or on the exterior water/drop-off side of a railing/barrier, no 180-degree axis fusion between panels; crisp hard cuts at second 3.0 and second 6.0, no camera blending, no crossfades.",
+      "ANTI-CGI LOCK: real documentary footage, not a 3D render, not a video game, not CGI fire, no plastic skin.",
+      "No breath vapor and no white steam from anyone's mouth; no god rays, no volumetric beams, no magical sunbeams.",
+      "No shallow depth of field, no blurry background, no bokeh (f/8 aperture throughout).",
+      "Separate bodies never merge; natural hands with five fingers; no extra limbs."
+    ]
+  },
+  {
+    "clip_id": "SC-119",
+    "scene_name": "Bụi vàng chào đón",
+    "duration": 10,
+    "aspect_ratio": "16:9",
+    "refs": [
+      "Nora",
+      "Nora Body Seafarer",
+      "Castor"
+    ],
+    "start_frame": {
+      "type": "PREV_LAST_FRAME",
+      "note": "Continuity match from previous clip."
+    },
+    "camera": {
+      "viewpoint": "third-person cinematic camera; the camera itself is never seen",
+      "shot_size": "MCU Bụi Vàng Golden Embers Bay",
+      "description": "Multi-shot sequence with crisp hard cuts: Shot 1 (0-3s) -> Hard Cut at 3.0s -> Shot 2 (3-7s) -> Hard Cut at 7.0s -> Shot 3 (7-10s). 35mm Cooke S4 prime lens with deep focus (f/8 aperture), entire frame sharp."
+    },
+    "style": "cinematic feature-film look: shot on ARRI Alexa with Cooke S4 prime lenses, fine 35mm film grain, deep inky blacks, strong motivated chiaroscuro, thin atmospheric dust catching the light; real seafarers and prehistoric chitin monster, matte organic biological textures, strictly NOT CGI, NOT a video game",
+    "setting": "Location: karst labyrinth cavern and collapsed stone arch. Light: hạt bụi vàng trôi nổi, deep subterranean chiaroscuro shadows.",
+    "characters": [
+      {
+        "name": "Nora",
+        "visual_lock": "FACE LOCK: Nora's face is exactly the face in {{media:62e117f8-0af7-484e-90a8-f79927105746|nora_clean.jpg}}, kept 1:1. BODY and OUTFIT LOCK: her build and navy seafarer brigandine are exactly as in {{media:743ef618-f4c5-456c-9285-56dd911ca94b|nora_body_seafarer_clean.jpg}}.",
+        "state": "Executing tactical combat maneuvers in the dark cavern."
+      },
+      {
+        "name": "Castor",
+        "visual_lock": "FACE LOCK: Castor's face is exactly the face in {{media:3152a235-af4f-462b-a78e-02551f826e41|castor_clean.jpg}}, kept 1:1. BODY and OUTFIT LOCK: his leather cuirass is exactly as in {{media:3152a235-af4f-462b-a78e-02551f826e41|castor_clean.jpg}}.",
+        "state": "Aiming and striking with lethal tactical precision."
+      }
+    ],
+    "timeline_action": {
+      "0-3s": "From the opening frame at second 0, Nora shouts with ferocious intensity: Nora says \"Look at the golden dust drifting on the warm wind like glowing fireflies... the sanctuary of the Golden Tree is waiting just beyond!\" (no subtitles).",
+      "3-7s": "At second 3.0, a crisp hard cut: The battle command drives the maneuver through second 6 as một luồng khí ấm mang theo bụi sáng golden embers lơ lửng thổi qua khe nứt.",
+      "7-10s": "At second 7.0, a crisp hard cut: Nora concludes the line by second 7; the team executes the tactical strike through second 10. Strictly Castor alone in this focal framing; Nora are completely off-screen or in distinct background separation, never overlapping. SPATIAL LOCK: All characters stand firmly on the interior solid deck or stone floor, NEVER on the exterior water/cliff drop-off side of any barrier; maintain a consistent 180-degree spatial axis within each shot."
+    },
+    "speech": {
+      "speaker": [
+        "Nora"
+      ],
+      "voices": {
+        "Nora": "kore"
+      },
+      "delivery": "shouted loud, sharp and clipped in visceral mortal combat",
+      "dialogue": [
+        {
+          "t": "0-7s",
+          "speaker": "Nora",
+          "line": "Look at the golden dust drifting on the warm wind like glowing fireflies... the sanctuary of the Golden Tree is waiting just beyond!"
+        }
+      ]
+    },
+    "dramatic_craft": {
+      "beat": "RH [++]: Bụi vàng chào đón",
+      "value_turn": "Mortal trap -> Tactical victory: Defeating the guardian beast with environmental strategy.",
+      "subtext": "The seafarers turn the monster's own predatory instincts against it.",
+      "prop_and_detail": "Heavy bronze shield, iron pry-bars, burning pitch torches, crushing keystone."
+    },
+    "audio": "Nora: Look at the golden dust drifting on the warm wind like glowing fireflies... the sanctuary of the Golden Tree is waiting just beyond!; screeching mandibles, iron striking stone.",
+    "physics": "Massive momentum p=m*v of twenty-ton stone collapse, elastic chitin rebound on bronze, kinetic dust displacement.",
+    "negative_constraints": [
+      "No subtitles, no captions, no on-frame text, no logos, no watermarks.",
+      "The video is full-frame shots only: never a grid, never panels, never split screen, never black dividing lines; strictly NO duplicate characters, strictly NO multiple Nora, Castor, no ghost figures, no cloning; strictly NO character standing outside the ship hull or on the exterior water/drop-off side of a railing/barrier, no 180-degree axis fusion between panels; crisp hard cuts at second 3.0 and second 7.0, no camera blending, no crossfades.",
+      "ANTI-CGI LOCK: real documentary footage, not a 3D render, not a video game, not CGI fire, no plastic skin.",
+      "No breath vapor and no white steam from anyone's mouth; no god rays, no volumetric beams, no magical sunbeams.",
+      "No shallow depth of field, no blurry background, no bokeh (f/8 aperture throughout).",
+      "Separate bodies never merge; natural hands with five fingers; no extra limbs."
+    ]
+  },
+  {
+    "clip_id": "SC-120",
+    "scene_name": "Mở toang lối vào thánh địa",
+    "duration": 8,
+    "aspect_ratio": "16:9",
+    "refs": [
+      "Heracles",
+      "Theron"
+    ],
+    "start_frame": {
+      "type": "GENERATE_IMAGE",
+      "image_prompt": "Cinematic master shot on 35mm film, 16:9 aspect ratio. Heracles dọn sạch những viên đá vôi sắc nhọn mở lối đi hẹp. Featuring {{ref:Heracles}} {{ref:Theron}}. Practical lighting: đá dăm lăn lạo xạo. Deep focus (f/8 aperture), entire frame sharp, dark chiaroscuro, natural textures, strictly NO artificial volumetric lighting, NO 3D CGI.",
+      "image_refs": [
+        "Heracles",
+        "Theron"
+      ]
+    },
+    "camera": {
+      "viewpoint": "third-person cinematic camera; the camera itself is never seen",
+      "shot_size": "MS Dọn Đá Mở Đường",
+      "description": "Multi-shot sequence with crisp hard cuts: Shot 1 (0-3s) -> Hard Cut at 3.0s -> Shot 2 (3-6s) -> Hard Cut at 6.0s -> Shot 3 (6-8s). 35mm Cooke S4 prime lens with deep focus (f/8 aperture), entire frame sharp."
+    },
+    "style": "cinematic feature-film look: shot on ARRI Alexa with Cooke S4 prime lenses, fine 35mm film grain, deep inky blacks, strong motivated chiaroscuro, thin atmospheric dust catching the light; real seafarers and prehistoric chitin monster, matte organic biological textures, strictly NOT CGI, NOT a video game",
+    "setting": "Location: karst labyrinth cavern and collapsed stone arch. Light: đá dăm lăn lạo xạo, deep subterranean chiaroscuro shadows.",
+    "characters": [
+      {
+        "name": "Heracles",
+        "visual_lock": "FACE LOCK: Heracles's face is exactly the face in {{media:37a10133-8496-49e7-bd77-b5f261c5a43e|heracles_clean.jpg}}, kept 1:1. BODY and OUTFIT LOCK: his massive muscular frame and sea-lion mantle are exactly as in {{media:37a10133-8496-49e7-bd77-b5f261c5a43e|heracles_clean.jpg}}.",
+        "state": "Bracing his heavy bronze shield against monstrous kinetic strikes."
+      },
+      {
+        "name": "Theron",
+        "visual_lock": "FACE LOCK: Theron's face is exactly the face in {{media:7c5d994a-dabd-406b-a6c1-b9fa6473a612|theron_clean.jpg}}, kept 1:1 with wild gray beard and limestone dust. BODY and OUTFIT LOCK: his emaciated figure in burlap rags is exactly as in {{media:7c5d994a-dabd-406b-a6c1-b9fa6473a612|theron_clean.jpg}}.",
+        "state": "Guiding the crew past predatory ambush points."
+      }
+    ],
+    "timeline_action": {
+      "0-3s": "From second 0, Heracles begins speaking immediately, sharp and commanding: Heracles says \"The crawlway is open, Captain. Let us leave this graveyard behind and see what treasures remain uncursed in the deep.\" (no subtitles).",
+      "3-6s": "At second 3.0, a crisp hard cut: Heracles's command echoes through the cavern through second 5; heracles dọn sạch những viên đá vôi sắc nhọn mở lối đi hẹp.",
+      "6-8s": "At second 6.0, a crisp hard cut: The line concludes by second 6; Heracles braces for the next impact through second 8. Strictly Theron alone in this focal framing; Heracles are completely off-screen or in distinct background separation, never overlapping. SPATIAL LOCK: All characters stand firmly on the interior solid deck or stone floor, NEVER on the exterior water/cliff drop-off side of any barrier; maintain a consistent 180-degree spatial axis within each shot."
+    },
+    "speech": {
+      "speaker": [
+        "Heracles"
+      ],
+      "voices": {
+        "Heracles": "puck"
+      },
+      "delivery": "shouted loud, sharp and clipped in visceral mortal combat",
+      "dialogue": [
+        {
+          "t": "0-6s",
+          "speaker": "Heracles",
+          "line": "The crawlway is open, Captain. Let us leave this graveyard behind and see what treasures remain uncursed in the deep."
+        }
+      ]
+    },
+    "dramatic_craft": {
+      "beat": "[+]: Mở toang lối vào thánh địa",
+      "value_turn": "Mortal trap -> Tactical victory: Defeating the guardian beast with environmental strategy.",
+      "subtext": "The seafarers turn the monster's own predatory instincts against it.",
+      "prop_and_detail": "Heavy bronze shield, iron pry-bars, burning pitch torches, crushing keystone."
+    },
+    "audio": "Heracles: The crawlway is open, Captain. Let us leave this graveyard behind and see what treasures remain uncursed in the deep.; screeching mandibles, iron striking stone.",
+    "physics": "Massive momentum p=m*v of twenty-ton stone collapse, elastic chitin rebound on bronze, kinetic dust displacement.",
+    "negative_constraints": [
+      "No subtitles, no captions, no on-frame text, no logos, no watermarks.",
+      "The video is full-frame shots only: never a grid, never panels, never split screen, never black dividing lines; strictly NO duplicate characters, strictly NO multiple Heracles, Theron, no ghost figures, no cloning; strictly NO character standing outside the ship hull or on the exterior water/drop-off side of a railing/barrier, no 180-degree axis fusion between panels; crisp hard cuts at second 3.0 and second 6.0, no camera blending, no crossfades.",
+      "ANTI-CGI LOCK: real documentary footage, not a 3D render, not a video game, not CGI fire, no plastic skin.",
+      "No breath vapor and no white steam from anyone's mouth; no god rays, no volumetric beams, no magical sunbeams.",
+      "No shallow depth of field, no blurry background, no bokeh (f/8 aperture throughout).",
+      "Separate bodies never merge; natural hands with five fingers; no extra limbs."
+    ]
+  },
+  {
+    "clip_id": "SC-121",
+    "scene_name": "Bước vào ngưỡng cửa thần tiên",
+    "duration": 6,
+    "aspect_ratio": "16:9",
+    "refs": [
+      "Nora",
+      "Nora Body Seafarer",
+      "Castor",
+      "Heracles",
+      "Theron"
+    ],
+    "start_frame": {
+      "type": "GENERATE_IMAGE",
+      "image_prompt": "Cinematic master shot on 35mm film, 16:9 aspect ratio. Theron đi trước, Nora, Castor và Heracles bước qua khe nứt. Featuring {{ref:Nora}} {{ref:Nora Body Seafarer}} {{ref:Castor}}. Practical lighting: ánh sáng vàng hắt ngược bóng. Deep focus (f/8 aperture), entire frame sharp, dark chiaroscuro, natural textures, strictly NO artificial volumetric lighting, NO 3D CGI.",
+      "image_refs": [
+        "Nora",
+        "Nora Body Seafarer",
+        "Castor",
+        "Heracles",
+        "Theron"
+      ]
+    },
+    "camera": {
+      "viewpoint": "third-person cinematic camera; the camera itself is never seen",
+      "shot_size": "Wide Bốn Người Bước Qua Khe",
+      "description": "Multi-shot sequence with crisp hard cuts: Shot 1 (0-2s) -> Hard Cut at 2.0s -> Shot 2 (2-4s) -> Hard Cut at 4.0s -> Shot 3 (4-6s). 35mm Cooke S4 prime lens with deep focus (f/8 aperture), entire frame sharp."
+    },
+    "style": "cinematic feature-film look: shot on ARRI Alexa with Cooke S4 prime lenses, fine 35mm film grain, deep inky blacks, strong motivated chiaroscuro, thin atmospheric dust catching the light; real seafarers and prehistoric chitin monster, matte organic biological textures, strictly NOT CGI, NOT a video game",
+    "setting": "Location: karst labyrinth cavern and collapsed stone arch. Light: ánh sáng vàng hắt ngược bóng, deep subterranean chiaroscuro shadows.",
+    "characters": [
+      {
+        "name": "Nora",
+        "visual_lock": "FACE LOCK: Nora's face is exactly the face in {{media:62e117f8-0af7-484e-90a8-f79927105746|nora_clean.jpg}}, kept 1:1. BODY and OUTFIT LOCK: her build and navy seafarer brigandine are exactly as in {{media:743ef618-f4c5-456c-9285-56dd911ca94b|nora_body_seafarer_clean.jpg}}.",
+        "state": "Executing tactical combat maneuvers in the dark cavern."
+      },
+      {
+        "name": "Castor",
+        "visual_lock": "FACE LOCK: Castor's face is exactly the face in {{media:3152a235-af4f-462b-a78e-02551f826e41|castor_clean.jpg}}, kept 1:1. BODY and OUTFIT LOCK: his leather cuirass is exactly as in {{media:3152a235-af4f-462b-a78e-02551f826e41|castor_clean.jpg}}.",
+        "state": "Aiming and striking with lethal tactical precision."
+      },
+      {
+        "name": "Heracles",
+        "visual_lock": "FACE LOCK: Heracles's face is exactly the face in {{media:37a10133-8496-49e7-bd77-b5f261c5a43e|heracles_clean.jpg}}, kept 1:1. BODY and OUTFIT LOCK: his massive muscular frame and sea-lion mantle are exactly as in {{media:37a10133-8496-49e7-bd77-b5f261c5a43e|heracles_clean.jpg}}.",
+        "state": "Bracing his heavy bronze shield against monstrous kinetic strikes."
+      },
+      {
+        "name": "Theron",
+        "visual_lock": "FACE LOCK: Theron's face is exactly the face in {{media:7c5d994a-dabd-406b-a6c1-b9fa6473a612|theron_clean.jpg}}, kept 1:1 with wild gray beard and limestone dust. BODY and OUTFIT LOCK: his emaciated figure in burlap rags is exactly as in {{media:7c5d994a-dabd-406b-a6c1-b9fa6473a612|theron_clean.jpg}}.",
+        "state": "Guiding the crew past predatory ambush points."
+      }
+    ],
+    "timeline_action": {
+      "0-2s": "From second 0, Theron delivers the line immediately, sharp and urgent: Theron says \"Keep your eyes open, sailors. What lies ahead has blinded kings with holy terror.\" (no subtitles).",
+      "2-4s": "At second 2.0, a crisp hard cut: Theron's line finishes cleanly by second 4; theron đi trước, nora, castor và heracles bước qua khe nứt.",
+      "4-6s": "At second 4.0, a crisp hard cut: The physical combat stance settles firmly by second 6. Strictly Theron alone in this focal framing; Nora and Castor and Heracles are completely off-screen or in distinct background separation, never overlapping. SPATIAL LOCK: All characters stand firmly on the interior solid deck or stone floor, NEVER on the exterior water/cliff drop-off side of any barrier; maintain a consistent 180-degree spatial axis within each shot."
+    },
+    "speech": {
+      "speaker": [
+        "Theron"
+      ],
+      "voices": {
+        "Theron": "charon"
+      },
+      "delivery": "shouted loud, sharp and clipped in visceral mortal combat",
+      "dialogue": [
+        {
+          "t": "0-4s",
+          "speaker": "Theron",
+          "line": "Keep your eyes open, sailors. What lies ahead has blinded kings with holy terror."
+        }
+      ]
+    },
+    "dramatic_craft": {
+      "beat": "[0]: Bước vào ngưỡng cửa thần tiên",
+      "value_turn": "Mortal trap -> Tactical victory: Defeating the guardian beast with environmental strategy.",
+      "subtext": "The seafarers turn the monster's own predatory instincts against it.",
+      "prop_and_detail": "Heavy bronze shield, iron pry-bars, burning pitch torches, crushing keystone."
+    },
+    "audio": "Theron: Keep your eyes open, sailors. What lies ahead has blinded kings with holy terror.; screeching mandibles, iron striking stone.",
+    "physics": "Massive momentum p=m*v of twenty-ton stone collapse, elastic chitin rebound on bronze, kinetic dust displacement.",
+    "negative_constraints": [
+      "No subtitles, no captions, no on-frame text, no logos, no watermarks.",
+      "The video is full-frame shots only: never a grid, never panels, never split screen, never black dividing lines; strictly NO duplicate characters, strictly NO multiple Nora, Castor, Heracles, Theron, no ghost figures, no cloning; strictly NO character standing outside the ship hull or on the exterior water/drop-off side of a railing/barrier, no 180-degree axis fusion between panels; crisp hard cuts at second 2.0 and second 4.0, no camera blending, no crossfades.",
+      "ANTI-CGI LOCK: real documentary footage, not a 3D render, not a video game, not CGI fire, no plastic skin.",
+      "No breath vapor and no white steam from anyone's mouth; no god rays, no volumetric beams, no magical sunbeams.",
+      "No shallow depth of field, no blurry background, no bokeh (f/8 aperture throughout).",
+      "Separate bodies never merge; natural hands with five fingers; no extra limbs."
+    ]
+  },
+  {
+    "clip_id": "SC-122",
+    "scene_name": "Lộ diện Điện Thờ Cây Vàng",
+    "duration": 10,
+    "aspect_ratio": "16:9",
+    "refs": [
+      "Nora",
+      "Nora Body Seafarer"
+    ],
+    "start_frame": {
+      "type": "GENERATE_IMAGE",
+      "image_prompt": "Cinematic master shot on 35mm film, 16:9 aspect ratio. Ánh sáng vàng rực rỡ từ giếng trời ngầm chiếu rọi bóng bốn người bước vào thánh địa (Hạ màn Hồi 2B). Featuring {{ref:Nora}} {{ref:Nora Body Seafarer}}. Practical lighting: ánh sáng vàng kim bùng nổ. Deep focus (f/8 aperture), entire frame sharp, dark chiaroscuro, natural textures, strictly NO artificial volumetric lighting, NO 3D CGI.",
+      "image_refs": [
+        "Nora",
+        "Nora Body Seafarer"
+      ]
+    },
+    "camera": {
+      "viewpoint": "third-person cinematic camera; the camera itself is never seen",
+      "shot_size": "EWS Giếng Trời Rực Sáng",
+      "description": "Multi-shot sequence with crisp hard cuts: Shot 1 (0-3s) -> Hard Cut at 3.0s -> Shot 2 (3-7s) -> Hard Cut at 7.0s -> Shot 3 (7-10s). 35mm Cooke S4 prime lens with deep focus (f/8 aperture), entire frame sharp."
+    },
+    "style": "cinematic feature-film look: shot on ARRI Alexa with Cooke S4 prime lenses, fine 35mm film grain, deep inky blacks, strong motivated chiaroscuro, thin atmospheric dust catching the light; real seafarers and prehistoric chitin monster, matte organic biological textures, strictly NOT CGI, NOT a video game",
+    "setting": "Location: karst labyrinth cavern and collapsed stone arch. Light: ánh sáng vàng kim bùng nổ, deep subterranean chiaroscuro shadows.",
+    "characters": [
+      {
+        "name": "Nora",
+        "visual_lock": "FACE LOCK: Nora's face is exactly the face in {{media:62e117f8-0af7-484e-90a8-f79927105746|nora_clean.jpg}}, kept 1:1. BODY and OUTFIT LOCK: her build and navy seafarer brigandine are exactly as in {{media:743ef618-f4c5-456c-9285-56dd911ca94b|nora_body_seafarer_clean.jpg}}.",
+        "state": "Executing tactical combat maneuvers in the dark cavern."
+      }
+    ],
+    "timeline_action": {
+      "0-3s": "At second 0, Ánh sáng vàng rực rỡ từ giếng trời ngầm chiếu rọi bóng bốn người bước vào thánh địa (Hạ màn Hồi 2B); ánh sáng vàng kim bùng nổ.",
+      "3-7s": "At second 3.0, a crisp hard cut: The colossal twenty-ton rock collapse shakes the entire cavern chamber.",
+      "7-10s": "At second 7.0, a crisp hard cut: The monumental impact resolves as dust settles over the crushed creature by second 10. SPATIAL LOCK: All characters stand firmly on the interior solid deck or stone floor, NEVER on the exterior water/cliff drop-off side of any barrier; maintain a consistent 180-degree spatial axis within each shot."
+    },
+    "speech": {
+      "speaker": [],
+      "voices": {},
+      "delivery": "no spoken dialogue (Sonic Isolation)",
+      "dialogue": []
+    },
+    "dramatic_craft": {
+      "beat": "[+++]: Lộ diện Điện Thờ Cây Vàng",
+      "value_turn": "Mortal trap -> Tactical victory: Defeating the guardian beast with environmental strategy.",
+      "subtext": "The seafarers turn the monster's own predatory instincts against it.",
+      "prop_and_detail": "Heavy bronze shield, iron pry-bars, burning pitch torches, crushing keystone."
+    },
+    "audio": "Monstrous chitin scraping and collapsing rock thunder (Sonic Isolation); screeching mandibles, iron striking stone.",
+    "physics": "Massive momentum p=m*v of twenty-ton stone collapse, elastic chitin rebound on bronze, kinetic dust displacement.",
+    "negative_constraints": [
+      "No subtitles, no captions, no on-frame text, no logos, no watermarks.",
+      "The video is full-frame shots only: never a grid, never panels, never split screen, never black dividing lines; strictly NO duplicate characters, strictly NO multiple Nora, no ghost figures, no cloning; strictly NO character standing outside the ship hull or on the exterior water/drop-off side of a railing/barrier, no 180-degree axis fusion between panels; crisp hard cuts at second 3.0 and second 7.0, no camera blending, no crossfades.",
+      "ANTI-CGI LOCK: real documentary footage, not a 3D render, not a video game, not CGI fire, no plastic skin.",
+      "No breath vapor and no white steam from anyone's mouth; no god rays, no volumetric beams, no magical sunbeams.",
+      "No shallow depth of field, no blurry background, no bokeh (f/8 aperture throughout).",
+      "Separate bodies never merge; natural hands with five fingers; no extra limbs."
+    ]
+  }
+]
