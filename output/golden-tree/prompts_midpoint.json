@@ -40,7 +40,7 @@
     "timeline_action": {
       "0-3s": "From second 0, Castor begins speaking immediately, cutting through the cavern silence: Castor says \"Look at this blind limestone wall, Nora! The path is blocked, yet your chart claims this is the only way forward!\" (no subtitles).",
       "3-6s": "At second 3.0, a crisp hard cut: Castor's voice echoes off limestone walls through second 5; hẻm đá cụt, castor chỉ vào vách đá karst chặn đường.",
-      "6-8s": "At second 6.0, a crisp hard cut: The line concludes by second 6; Castor holds an intense gaze through second 8. Strictly Castor alone in this focal framing; Nora are completely off-screen or in distinct background separation, never overlapping."
+      "6-8s": "At second 6.0, a crisp hard cut: The line concludes by second 6; Castor holds an intense gaze through second 8. Strictly Castor alone in this focal framing; Nora are completely off-screen or in distinct background separation, never overlapping. SPATIAL LOCK: All characters stand firmly on the interior solid deck or stone floor, NEVER on the exterior water/cliff drop-off side of any barrier; maintain a consistent 180-degree spatial axis within each shot."
     },
     "speech": {
       "speaker": [
@@ -68,7 +68,7 @@
     "physics": "Friction between heavy stone slabs, dust scattering, muscular exertion on iron pry-bars.",
     "negative_constraints": [
       "No subtitles, no captions, no on-frame text, no logos, no watermarks.",
-      "The video is full-frame shots only: never a grid, never panels, never split screen, never black dividing lines; strictly NO duplicate characters, strictly NO multiple Nora, Castor, no ghost figures, no cloning; crisp hard cuts at second 3.0 and second 6.0, no camera blending, no crossfades.",
+      "The video is full-frame shots only: never a grid, never panels, never split screen, never black dividing lines; strictly NO duplicate characters, strictly NO multiple Nora, Castor, no ghost figures, no cloning; strictly NO character standing outside the ship hull or on the exterior water/drop-off side of a railing/barrier, no 180-degree axis fusion between panels; crisp hard cuts at second 3.0 and second 6.0, no camera blending, no crossfades.",
       "ANTI-CGI LOCK: real documentary footage, not a 3D render, not a video game, not CGI fire, no plastic skin.",
       "No breath vapor and no white steam from anyone's mouth; no god rays, no volumetric beams, no magical sunbeams.",
       "No shallow depth of field, no blurry background, no bokeh (f/8 aperture throughout).",
@@ -105,7 +105,7 @@
     "timeline_action": {
       "0-2s": "From second 0, Nora begins speaking immediately, sharp and urgent: Nora says \"It does not need to look like a road. Trust the ancient salt ink!\" (no subtitles).",
       "2-4s": "At second 2.0, a crisp hard cut: Nora's line finishes cleanly by second 4; nora soi tấm bản đồ phát quang, bảo vệ niềm tin.",
-      "4-6s": "At second 4.0, a crisp hard cut: The tension holds firm with grounded postures by second 6."
+      "4-6s": "At second 4.0, a crisp hard cut: The tension holds firm with grounded postures by second 6. SPATIAL LOCK: All characters stand firmly on the interior solid deck or stone floor, NEVER on the exterior water/cliff drop-off side of any barrier; maintain a consistent 180-degree spatial axis within each shot."
     },
     "speech": {
       "speaker": [
@@ -133,7 +133,7 @@
     "physics": "Friction between heavy stone slabs, dust scattering, muscular exertion on iron pry-bars.",
     "negative_constraints": [
       "No subtitles, no captions, no on-frame text, no logos, no watermarks.",
-      "The video is full-frame shots only: never a grid, never panels, never split screen, never black dividing lines; strictly NO duplicate characters, strictly NO multiple Nora, no ghost figures, no cloning; crisp hard cuts at second 2.0 and second 4.0, no camera blending, no crossfades.",
+      "The video is full-frame shots only: never a grid, never panels, never split screen, never black dividing lines; strictly NO duplicate characters, strictly NO multiple Nora, no ghost figures, no cloning; strictly NO character standing outside the ship hull or on the exterior water/drop-off side of a railing/barrier, no 180-degree axis fusion between panels; crisp hard cuts at second 2.0 and second 4.0, no camera blending, no crossfades.",
       "ANTI-CGI LOCK: real documentary footage, not a 3D render, not a video game, not CGI fire, no plastic skin.",
       "No breath vapor and no white steam from anyone's mouth; no god rays, no volumetric beams, no magical sunbeams.",
       "No shallow depth of field, no blurry background, no bokeh (f/8 aperture throughout).",
@@ -174,7 +174,7 @@
     "timeline_action": {
       "0-3s": "From second 0, Tiếng kêu cứu nghẹn ngào từ khe đá sụt làm ngắt quãng tranh cãi; bụi vôi rơi nhẹ.",
       "3-6s": "At second 3.0, a crisp hard cut: The physical sound and motion resonate through the narrow fissure.",
-      "6-8s": "At second 6.0, a crisp hard cut: The beat concludes with held breath by second 8."
+      "6-8s": "At second 6.0, a crisp hard cut: The beat concludes with held breath by second 8. SPATIAL LOCK: All characters stand firmly on the interior solid deck or stone floor, NEVER on the exterior water/cliff drop-off side of any barrier; maintain a consistent 180-degree spatial axis within each shot."
     },
     "speech": {
       "speaker": [],
@@ -192,7 +192,7 @@
     "physics": "Friction between heavy stone slabs, dust scattering, muscular exertion on iron pry-bars.",
     "negative_constraints": [
       "No subtitles, no captions, no on-frame text, no logos, no watermarks.",
-      "The video is full-frame shots only: never a grid, never panels, never split screen, never black dividing lines; strictly NO duplicate characters, strictly NO multiple Nora, no ghost figures, no cloning; crisp hard cuts at second 3.0 and second 6.0, no camera blending, no crossfades.",
+      "The video is full-frame shots only: never a grid, never panels, never split screen, never black dividing lines; strictly NO duplicate characters, strictly NO multiple Nora, no ghost figures, no cloning; strictly NO character standing outside the ship hull or on the exterior water/drop-off side of a railing/barrier, no 180-degree axis fusion between panels; crisp hard cuts at second 3.0 and second 6.0, no camera blending, no crossfades.",
       "ANTI-CGI LOCK: real documentary footage, not a 3D render, not a video game, not CGI fire, no plastic skin.",
       "No breath vapor and no white steam from anyone's mouth; no god rays, no volumetric beams, no magical sunbeams.",
       "No shallow depth of field, no blurry background, no bokeh (f/8 aperture throughout).",
@@ -235,7 +235,7 @@
     "timeline_action": {
       "0-2s": "From second 0, Nora begins speaking immediately, sharp and urgent: Nora says \"Hold your tongues! That was a living human voice crying beneath the stone scree!\" (no subtitles).",
       "2-4s": "At second 2.0, a crisp hard cut: Nora's line finishes cleanly by second 4; nora ra lệnh dừng tranh cãi để tìm người kêu cứu.",
-      "4-6s": "At second 4.0, a crisp hard cut: The tension holds firm with grounded postures by second 6. Strictly Castor alone in this focal framing; Nora are completely off-screen or in distinct background separation, never overlapping."
+      "4-6s": "At second 4.0, a crisp hard cut: The tension holds firm with grounded postures by second 6. Strictly Castor alone in this focal framing; Nora are completely off-screen or in distinct background separation, never overlapping. SPATIAL LOCK: All characters stand firmly on the interior solid deck or stone floor, NEVER on the exterior water/cliff drop-off side of any barrier; maintain a consistent 180-degree spatial axis within each shot."
     },
     "speech": {
       "speaker": [
@@ -263,7 +263,7 @@
     "physics": "Friction between heavy stone slabs, dust scattering, muscular exertion on iron pry-bars.",
     "negative_constraints": [
       "No subtitles, no captions, no on-frame text, no logos, no watermarks.",
-      "The video is full-frame shots only: never a grid, never panels, never split screen, never black dividing lines; strictly NO duplicate characters, strictly NO multiple Nora, Castor, no ghost figures, no cloning; crisp hard cuts at second 2.0 and second 4.0, no camera blending, no crossfades.",
+      "The video is full-frame shots only: never a grid, never panels, never split screen, never black dividing lines; strictly NO duplicate characters, strictly NO multiple Nora, Castor, no ghost figures, no cloning; strictly NO character standing outside the ship hull or on the exterior water/drop-off side of a railing/barrier, no 180-degree axis fusion between panels; crisp hard cuts at second 2.0 and second 4.0, no camera blending, no crossfades.",
       "ANTI-CGI LOCK: real documentary footage, not a 3D render, not a video game, not CGI fire, no plastic skin.",
       "No breath vapor and no white steam from anyone's mouth; no god rays, no volumetric beams, no magical sunbeams.",
       "No shallow depth of field, no blurry background, no bokeh (f/8 aperture throughout).",
@@ -309,7 +309,7 @@
     "timeline_action": {
       "0-3s": "From second 0, Castor begins speaking immediately, cutting through the cavern silence: Castor says \"Down here in the dark crevice! An old hermit pinned under fallen boulders, shivering with white lime dust on his beard!\" (no subtitles).",
       "3-6s": "At second 3.0, a crisp hard cut: Castor's voice echoes off limestone walls through second 5; tiếp cận khe nứt hẹp, phát hiện theron bị kẹt dưới đá tảng.",
-      "6-8s": "At second 6.0, a crisp hard cut: The line concludes by second 6; Castor holds an intense gaze through second 8. Strictly Theron alone in this focal framing; Castor are completely off-screen or in distinct background separation, never overlapping."
+      "6-8s": "At second 6.0, a crisp hard cut: The line concludes by second 6; Castor holds an intense gaze through second 8. Strictly Theron alone in this focal framing; Castor are completely off-screen or in distinct background separation, never overlapping. SPATIAL LOCK: All characters stand firmly on the interior solid deck or stone floor, NEVER on the exterior water/cliff drop-off side of any barrier; maintain a consistent 180-degree spatial axis within each shot."
     },
     "speech": {
       "speaker": [
@@ -337,7 +337,7 @@
     "physics": "Friction between heavy stone slabs, dust scattering, muscular exertion on iron pry-bars.",
     "negative_constraints": [
       "No subtitles, no captions, no on-frame text, no logos, no watermarks.",
-      "The video is full-frame shots only: never a grid, never panels, never split screen, never black dividing lines; strictly NO duplicate characters, strictly NO multiple Castor, Theron, no ghost figures, no cloning; crisp hard cuts at second 3.0 and second 6.0, no camera blending, no crossfades.",
+      "The video is full-frame shots only: never a grid, never panels, never split screen, never black dividing lines; strictly NO duplicate characters, strictly NO multiple Castor, Theron, no ghost figures, no cloning; strictly NO character standing outside the ship hull or on the exterior water/drop-off side of a railing/barrier, no 180-degree axis fusion between panels; crisp hard cuts at second 3.0 and second 6.0, no camera blending, no crossfades.",
       "ANTI-CGI LOCK: real documentary footage, not a 3D render, not a video game, not CGI fire, no plastic skin.",
       "No breath vapor and no white steam from anyone's mouth; no god rays, no volumetric beams, no magical sunbeams.",
       "No shallow depth of field, no blurry background, no bokeh (f/8 aperture throughout).",
@@ -383,7 +383,7 @@
     "timeline_action": {
       "0-3s": "From the opening frame at second 0, Heracles begins speaking with dramatic revelation: Heracles says \"Stand clear while I get the iron lever under this slab! Heave with everything, boy, before the ceiling crumbles down upon his skull!\" (no subtitles).",
       "3-7s": "At second 3.0, a crisp hard cut: The voice carries profound weight through second 6 as heracles dùng đòn bẩy sắt nạy tảng đá hoa cương cứu theron.",
-      "7-10s": "At second 7.0, a crisp hard cut: Heracles concludes the revelation by second 7; stunned silence grips the seafarers through second 10. Strictly Theron alone in this focal framing; Heracles are completely off-screen or in distinct background separation, never overlapping."
+      "7-10s": "At second 7.0, a crisp hard cut: Heracles concludes the revelation by second 7; stunned silence grips the seafarers through second 10. Strictly Theron alone in this focal framing; Heracles are completely off-screen or in distinct background separation, never overlapping. SPATIAL LOCK: All characters stand firmly on the interior solid deck or stone floor, NEVER on the exterior water/cliff drop-off side of any barrier; maintain a consistent 180-degree spatial axis within each shot."
     },
     "speech": {
       "speaker": [
@@ -411,7 +411,7 @@
     "physics": "Friction between heavy stone slabs, dust scattering, muscular exertion on iron pry-bars.",
     "negative_constraints": [
       "No subtitles, no captions, no on-frame text, no logos, no watermarks.",
-      "The video is full-frame shots only: never a grid, never panels, never split screen, never black dividing lines; strictly NO duplicate characters, strictly NO multiple Heracles, Theron, no ghost figures, no cloning; crisp hard cuts at second 3.0 and second 7.0, no camera blending, no crossfades.",
+      "The video is full-frame shots only: never a grid, never panels, never split screen, never black dividing lines; strictly NO duplicate characters, strictly NO multiple Heracles, Theron, no ghost figures, no cloning; strictly NO character standing outside the ship hull or on the exterior water/drop-off side of a railing/barrier, no 180-degree axis fusion between panels; crisp hard cuts at second 3.0 and second 7.0, no camera blending, no crossfades.",
       "ANTI-CGI LOCK: real documentary footage, not a 3D render, not a video game, not CGI fire, no plastic skin.",
       "No breath vapor and no white steam from anyone's mouth; no god rays, no volumetric beams, no magical sunbeams.",
       "No shallow depth of field, no blurry background, no bokeh (f/8 aperture throughout).",
@@ -460,7 +460,7 @@
     "timeline_action": {
       "0-2s": "At second 0, Kéo Theron lên khỏi khe đá, thở dốc và run rẩy; bụi đá trắng bám đầy người.",
       "2-4s": "At second 2.0, a crisp hard cut: The quiet dramatic tension lingers over the rocky cavern.",
-      "4-6s": "At second 4.0, a crisp hard cut: The physical action resolves cleanly by second 6. Strictly Theron alone in this focal framing; Nora and Heracles are completely off-screen or in distinct background separation, never overlapping."
+      "4-6s": "At second 4.0, a crisp hard cut: The physical action resolves cleanly by second 6. Strictly Theron alone in this focal framing; Nora and Heracles are completely off-screen or in distinct background separation, never overlapping. SPATIAL LOCK: All characters stand firmly on the interior solid deck or stone floor, NEVER on the exterior water/cliff drop-off side of any barrier; maintain a consistent 180-degree spatial axis within each shot."
     },
     "speech": {
       "speaker": [],
@@ -478,7 +478,7 @@
     "physics": "Friction between heavy stone slabs, dust scattering, muscular exertion on iron pry-bars.",
     "negative_constraints": [
       "No subtitles, no captions, no on-frame text, no logos, no watermarks.",
-      "The video is full-frame shots only: never a grid, never panels, never split screen, never black dividing lines; strictly NO duplicate characters, strictly NO multiple Nora, Heracles, Theron, no ghost figures, no cloning; crisp hard cuts at second 2.0 and second 4.0, no camera blending, no crossfades.",
+      "The video is full-frame shots only: never a grid, never panels, never split screen, never black dividing lines; strictly NO duplicate characters, strictly NO multiple Nora, Heracles, Theron, no ghost figures, no cloning; strictly NO character standing outside the ship hull or on the exterior water/drop-off side of a railing/barrier, no 180-degree axis fusion between panels; crisp hard cuts at second 2.0 and second 4.0, no camera blending, no crossfades.",
       "ANTI-CGI LOCK: real documentary footage, not a 3D render, not a video game, not CGI fire, no plastic skin.",
       "No breath vapor and no white steam from anyone's mouth; no god rays, no volumetric beams, no magical sunbeams.",
       "No shallow depth of field, no blurry background, no bokeh (f/8 aperture throughout).",
@@ -521,7 +521,7 @@
     "timeline_action": {
       "0-3s": "From second 0, Nora begins speaking immediately, cutting through the cavern silence: Nora says \"Drink slow, elder. You are safe among Aegean sailors. Who are you, and how long have you survived here?\" (no subtitles).",
       "3-6s": "At second 3.0, a crisp hard cut: Nora's voice echoes off limestone walls through second 5; nora đưa túi nước da dê cho theron uống từng ngụm nhỏ.",
-      "6-8s": "At second 6.0, a crisp hard cut: The line concludes by second 6; Nora holds an intense gaze through second 8. Strictly Theron alone in this focal framing; Nora are completely off-screen or in distinct background separation, never overlapping."
+      "6-8s": "At second 6.0, a crisp hard cut: The line concludes by second 6; Nora holds an intense gaze through second 8. Strictly Theron alone in this focal framing; Nora are completely off-screen or in distinct background separation, never overlapping. SPATIAL LOCK: All characters stand firmly on the interior solid deck or stone floor, NEVER on the exterior water/cliff drop-off side of any barrier; maintain a consistent 180-degree spatial axis within each shot."
     },
     "speech": {
       "speaker": [
@@ -549,7 +549,7 @@
     "physics": "Friction between heavy stone slabs, dust scattering, muscular exertion on iron pry-bars.",
     "negative_constraints": [
       "No subtitles, no captions, no on-frame text, no logos, no watermarks.",
-      "The video is full-frame shots only: never a grid, never panels, never split screen, never black dividing lines; strictly NO duplicate characters, strictly NO multiple Nora, Theron, no ghost figures, no cloning; crisp hard cuts at second 3.0 and second 6.0, no camera blending, no crossfades.",
+      "The video is full-frame shots only: never a grid, never panels, never split screen, never black dividing lines; strictly NO duplicate characters, strictly NO multiple Nora, Theron, no ghost figures, no cloning; strictly NO character standing outside the ship hull or on the exterior water/drop-off side of a railing/barrier, no 180-degree axis fusion between panels; crisp hard cuts at second 3.0 and second 6.0, no camera blending, no crossfades.",
       "ANTI-CGI LOCK: real documentary footage, not a 3D render, not a video game, not CGI fire, no plastic skin.",
       "No breath vapor and no white steam from anyone's mouth; no god rays, no volumetric beams, no magical sunbeams.",
       "No shallow depth of field, no blurry background, no bokeh (f/8 aperture throughout).",
@@ -588,7 +588,7 @@
     "timeline_action": {
       "0-3s": "From second 0, Theron begins speaking immediately, cutting through the cavern silence: Theron says \"That parchment... glowing gold serpent lines... by the ancient gods, put it away before the karst beast smells our heat!\" (no subtitles).",
       "3-6s": "At second 3.0, a crisp hard cut: Theron's voice echoes off limestone walls through second 5; theron nhìn thấy tấm bản đồ da cừu phát quang trên tay nora và run rẩy kinh hoàng.",
-      "6-8s": "At second 6.0, a crisp hard cut: The line concludes by second 6; Theron holds an intense gaze through second 8."
+      "6-8s": "At second 6.0, a crisp hard cut: The line concludes by second 6; Theron holds an intense gaze through second 8. SPATIAL LOCK: All characters stand firmly on the interior solid deck or stone floor, NEVER on the exterior water/cliff drop-off side of any barrier; maintain a consistent 180-degree spatial axis within each shot."
     },
     "speech": {
       "speaker": [
@@ -616,7 +616,7 @@
     "physics": "Friction between heavy stone slabs, dust scattering, muscular exertion on iron pry-bars.",
     "negative_constraints": [
       "No subtitles, no captions, no on-frame text, no logos, no watermarks.",
-      "The video is full-frame shots only: never a grid, never panels, never split screen, never black dividing lines; strictly NO duplicate characters, strictly NO multiple Theron, no ghost figures, no cloning; crisp hard cuts at second 3.0 and second 6.0, no camera blending, no crossfades.",
+      "The video is full-frame shots only: never a grid, never panels, never split screen, never black dividing lines; strictly NO duplicate characters, strictly NO multiple Theron, no ghost figures, no cloning; strictly NO character standing outside the ship hull or on the exterior water/drop-off side of a railing/barrier, no 180-degree axis fusion between panels; crisp hard cuts at second 3.0 and second 6.0, no camera blending, no crossfades.",
       "ANTI-CGI LOCK: real documentary footage, not a 3D render, not a video game, not CGI fire, no plastic skin.",
       "No breath vapor and no white steam from anyone's mouth; no god rays, no volumetric beams, no magical sunbeams.",
       "No shallow depth of field, no blurry background, no bokeh (f/8 aperture throughout).",
@@ -665,7 +665,7 @@
     "timeline_action": {
       "0-3s": "From the opening frame at second 0, Theron begins speaking with dramatic revelation: Theron says \"You think you hold a sacred chart! That parchment is no guide—it is a lethal lure crafted by the Golden Tree to feed its roots!\" (no subtitles).",
       "3-7s": "At second 3.0, a crisp hard cut: The voice carries profound weight through second 6 as theron vạch trần bí mật: bản đồ không phải kim chỉ nam, nó là mồi nhử của cây vàng!.",
-      "7-10s": "At second 7.0, a crisp hard cut: Theron concludes the revelation by second 7; stunned silence grips the seafarers through second 10. Strictly Theron alone in this focal framing; Nora and Castor are completely off-screen or in distinct background separation, never overlapping."
+      "7-10s": "At second 7.0, a crisp hard cut: Theron concludes the revelation by second 7; stunned silence grips the seafarers through second 10. Strictly Theron alone in this focal framing; Nora and Castor are completely off-screen or in distinct background separation, never overlapping. SPATIAL LOCK: All characters stand firmly on the interior solid deck or stone floor, NEVER on the exterior water/cliff drop-off side of any barrier; maintain a consistent 180-degree spatial axis within each shot."
     },
     "speech": {
       "speaker": [
@@ -693,7 +693,7 @@
     "physics": "Friction between heavy stone slabs, dust scattering, muscular exertion on iron pry-bars.",
     "negative_constraints": [
       "No subtitles, no captions, no on-frame text, no logos, no watermarks.",
-      "The video is full-frame shots only: never a grid, never panels, never split screen, never black dividing lines; strictly NO duplicate characters, strictly NO multiple Nora, Castor, Theron, no ghost figures, no cloning; crisp hard cuts at second 3.0 and second 7.0, no camera blending, no crossfades.",
+      "The video is full-frame shots only: never a grid, never panels, never split screen, never black dividing lines; strictly NO duplicate characters, strictly NO multiple Nora, Castor, Theron, no ghost figures, no cloning; strictly NO character standing outside the ship hull or on the exterior water/drop-off side of a railing/barrier, no 180-degree axis fusion between panels; crisp hard cuts at second 3.0 and second 7.0, no camera blending, no crossfades.",
       "ANTI-CGI LOCK: real documentary footage, not a 3D render, not a video game, not CGI fire, no plastic skin.",
       "No breath vapor and no white steam from anyone's mouth; no god rays, no volumetric beams, no magical sunbeams.",
       "No shallow depth of field, no blurry background, no bokeh (f/8 aperture throughout).",
@@ -732,7 +732,7 @@
     "timeline_action": {
       "0-2s": "From second 0, Castor begins speaking immediately, sharp and urgent: Castor says \"A lure? We bled through crushing rocks just to walk into a baited rat-trap?\" (no subtitles).",
       "2-4s": "At second 2.0, a crisp hard cut: Castor's line finishes cleanly by second 4; castor và heracles bàng hoàng trước sự thật tàn nhẫn.",
-      "4-6s": "At second 4.0, a crisp hard cut: The tension holds firm with grounded postures by second 6."
+      "4-6s": "At second 4.0, a crisp hard cut: The tension holds firm with grounded postures by second 6. SPATIAL LOCK: All characters stand firmly on the interior solid deck or stone floor, NEVER on the exterior water/cliff drop-off side of any barrier; maintain a consistent 180-degree spatial axis within each shot."
     },
     "speech": {
       "speaker": [
@@ -760,7 +760,7 @@
     "physics": "Friction between heavy stone slabs, dust scattering, muscular exertion on iron pry-bars.",
     "negative_constraints": [
       "No subtitles, no captions, no on-frame text, no logos, no watermarks.",
-      "The video is full-frame shots only: never a grid, never panels, never split screen, never black dividing lines; strictly NO duplicate characters, strictly NO multiple Castor, no ghost figures, no cloning; crisp hard cuts at second 2.0 and second 4.0, no camera blending, no crossfades.",
+      "The video is full-frame shots only: never a grid, never panels, never split screen, never black dividing lines; strictly NO duplicate characters, strictly NO multiple Castor, no ghost figures, no cloning; strictly NO character standing outside the ship hull or on the exterior water/drop-off side of a railing/barrier, no 180-degree axis fusion between panels; crisp hard cuts at second 2.0 and second 4.0, no camera blending, no crossfades.",
       "ANTI-CGI LOCK: real documentary footage, not a 3D render, not a video game, not CGI fire, no plastic skin.",
       "No breath vapor and no white steam from anyone's mouth; no god rays, no volumetric beams, no magical sunbeams.",
       "No shallow depth of field, no blurry background, no bokeh (f/8 aperture throughout).",
@@ -803,7 +803,7 @@
     "timeline_action": {
       "0-2s": "From second 0, Nora begins speaking immediately, sharp and urgent: Nora says \"Lead us through the blind fissures, Theron. We will see this legendary sanctuary alive!\" (no subtitles).",
       "2-4s": "At second 2.0, a crisp hard cut: Nora's line finishes cleanly by second 4; nora trao quyền dẫn đường cho theron qua mê cung ngầm.",
-      "4-6s": "At second 4.0, a crisp hard cut: The tension holds firm with grounded postures by second 6. Strictly Theron alone in this focal framing; Nora are completely off-screen or in distinct background separation, never overlapping."
+      "4-6s": "At second 4.0, a crisp hard cut: The tension holds firm with grounded postures by second 6. Strictly Theron alone in this focal framing; Nora are completely off-screen or in distinct background separation, never overlapping. SPATIAL LOCK: All characters stand firmly on the interior solid deck or stone floor, NEVER on the exterior water/cliff drop-off side of any barrier; maintain a consistent 180-degree spatial axis within each shot."
     },
     "speech": {
       "speaker": [
@@ -831,7 +831,7 @@
     "physics": "Friction between heavy stone slabs, dust scattering, muscular exertion on iron pry-bars.",
     "negative_constraints": [
       "No subtitles, no captions, no on-frame text, no logos, no watermarks.",
-      "The video is full-frame shots only: never a grid, never panels, never split screen, never black dividing lines; strictly NO duplicate characters, strictly NO multiple Nora, Theron, no ghost figures, no cloning; crisp hard cuts at second 2.0 and second 4.0, no camera blending, no crossfades.",
+      "The video is full-frame shots only: never a grid, never panels, never split screen, never black dividing lines; strictly NO duplicate characters, strictly NO multiple Nora, Theron, no ghost figures, no cloning; strictly NO character standing outside the ship hull or on the exterior water/drop-off side of a railing/barrier, no 180-degree axis fusion between panels; crisp hard cuts at second 2.0 and second 4.0, no camera blending, no crossfades.",
       "ANTI-CGI LOCK: real documentary footage, not a 3D render, not a video game, not CGI fire, no plastic skin.",
       "No breath vapor and no white steam from anyone's mouth; no god rays, no volumetric beams, no magical sunbeams.",
       "No shallow depth of field, no blurry background, no bokeh (f/8 aperture throughout).",

@@ -45,9 +45,26 @@ Toàn bộ dữ liệu của dự án được lưu trữ độc lập và tự 
 
 * **Hồi 1 (Act 1):** Đã tạo xong toàn bộ 22 ảnh Storyboard 2×2 sạch logo và 8 cảnh liên tục.
 * **Cảnh SC-01:**
-  * Đã sinh video 720p thô lần 1 và phát hiện 2 lỗi qua trích xuất 24 frames: (1) thiếu cú cắt gắt Hard Cut theo Storyboard, (2) lỗi xuất hiện 2 Nora (nhân đôi nhân vật) ở giây số 9.
-  * Đã viết lại prompt khóa cứng `Multi-shot sequence with crisp hard cuts` tại giây 3.0 và 7.0, khóa cô lập Nora off-screen trong cú máy Castor, và thêm khối cấm phân thân `anti-cloning lock`.
-  * Trạng thái hiện tại của SC-01 trong database: `horizontal_video_status = 'PENDING'` (sẵn sàng sinh lại).
+  * Lần 1: Phát hiện 2 lỗi qua trích xuất 24 frames: (1) thiếu cú cắt gắt Hard Cut theo Storyboard, (2) lỗi xuất hiện 2 Nora (nhân đôi nhân vật) ở giây số 9.
+  * Lần 2 (`2e9002c4-fd91-4fe5-a336-7a0d8a011a93`): Đã khắc phục 100% lỗi Hard Cut (cắt đúng tại 3.0s và 7.0s) và triệt tiêu 100% lỗi nhân đôi 2 Nora (điểm `0-7.1s` đạt `9.5/10`). Tuy nhiên phát hiện lỗi ở Shot 3 (`7.1s-10.0s`): do prompt gộp `matching Panel 3 and Panel 4` (trong khi Panel 3 và Panel 4 đảo trục 180° Trái/Phải), AI đã ghép vị trí đứng bên trái lan can của Castor ở Panel 3 vào nền cảnh biển bên trái của Panel 4 (khiến Castor đứng phía ngoài mạn tàu).
+  * Đã đúc kết **Rule 74(3) / Bài học 80.4 (`Anti-180°-Axis-Fusion` & `Inside-Deck SPATIAL LOCK`)** vào `AGENTS.md`, `CLAUDE.md`, `skills/fk-film/` và cập nhật đồng bộ toàn bộ **154 scenes** trên cả 5 Hồi (`prompts_act1.json` .. `prompts_act3.json`) + `flow_agent.db` (đạt `0 lỗi` qua `tools/lint_prompt.py`).
+  * Lần 3 (`b351f00a-187f-406a-86d5-f4cebd0ba2e5`): **ĐẠT 9.72/10 (`excellent` — PASS)**!
+    * Shot 1 (`0-3s`, Frames 01–07): EWS tàu hải tặc lướt qua sương mù, đèn lồng đồng vàng ấm phản chiếu mặt nước đen (khớp Panel 1).
+    * Hard Cut 1 (`3.0s`, Frame 07 ➔ 08): Cắt gắt sang MS mũi tàu; Nora đứng một mình bên trái trên sàn tàu gỗ, tay đặt lên lan can nhìn sang phải vào màn sương (khớp Panel 2, 100% đúng khuôn mặt & trang phục).
+    * Hard Cut 2 (`7.0s`, Frame 17 ➔ 18): Cắt gắt sang MS mạn tàu giữa (khớp Panel 3 Bottom-Left); sàn gỗ ướt + thùng gỗ bên trái, lan can + đèn lồng đồng bên phải, mặt biển sương mù phía ngoài bên phải. Castor bước tới **đứng hoàn toàn BÊN TRONG trên sàn tàu gỗ bên trái**, tay trái đặt lên lan can nhìn ra biển. Triệt tiêu 100% lỗi nhân đôi nhân vật và lỗi gộp trục 180°.
+  * Trạng thái hiện tại của SC-01 trong database: `horizontal_video_status = 'COMPLETED'`, `horizontal_video_media_id = 'b351f00a-187f-406a-86d5-f4cebd0ba2e5'`, đã tải về `output/golden-tree/scenes/scene_01_4de18786-a007-4dbc-926a-2d76b8030bfd.mp4` và trích xuất 24 frames (`output/golden-tree/scenes/review/SC-01_contact_sheet_24frames.jpg`).
+  * **Đã Upscale 1080p & Xóa Logo `SC-01`:** `output/golden-tree/1080/scene_01_4de18786-a007-4dbc-926a-2d76b8030bfd_1080p_clean.mp4`.
+* **Đồng bộ 100% Storyboard Omen Fish (Rule 74(4) — `1.7m–1.9m [1.8m] / 80 kg`):**
+  * Đã sinh lại, xóa watermark, upload lấy UUID sạch và thực hiện Visual Audit cho **8 tấm Storyboard**:
+    * `SC-02`: `c3ef210a-4aa9-44db-9665-a481f00e70e2` (`SC-02_storyboard_clean.jpg`)
+    * `SC-05`: `1000e331-34ca-4a29-8173-3ccc7aabf112` (`SC-05_storyboard_clean.jpg`)
+    * `SC-07`: `bfc450b5-8bd1-4290-8ff3-6cb589250caa` (`SC-07_storyboard_clean.jpg`)
+    * `SC-08`: `262700dc-0837-484b-b5ae-e5fd27671438` (`SC-08_storyboard_clean.jpg`)
+    * `SC-09`: `0f80d0fd-53cd-4826-8ea9-a6cb93b655cc` (`SC-09_storyboard_clean.jpg`)
+    * `SC-15`: `e926a2cc-374a-4b49-895d-b21327164eea` (`SC-15_storyboard_clean.jpg`)
+    * `SC-16`: `050d1587-7b86-4bde-b5d1-4d499e885be0` (`SC-16_storyboard_clean.jpg`)
+    * `SC-17`: `4f556610-4918-42f7-9ea0-d7cc67598c62` (`SC-17_storyboard_clean.jpg`)
+* **Bước tiếp theo:** Chờ User duyệt 8 tấm Storyboard mới trên Review Board và xác nhận sinh tiếp video **SC-02** (`69d7a32b-d107-41d8-a5c4-e005e73e138c`) hoặc cụm cảnh tiếp theo của Hồi 1.
 
 ---
 
