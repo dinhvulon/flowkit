@@ -263,6 +263,8 @@ Cinematic feature-film look: 35mm film grain, deep focus (f/8), motivated practi
 Sau khi có ảnh sạch, BẮT BUỘC mở file ảnh lên phân tích trực quan 4 panel thực tế:
 - **Panel 1 (Top-Left, 0s)**: Kiểm tra cỡ cảnh thực tế (Close-up, Wide...), hướng mắt nhìn, bố cục ➔ ghi vào `camera.shot_size`: `OPENING SHOT (second 0): matching the top-left panel of {{media:<uuid>|<CLIP> Storyboard.jpg}}: ...`.
 - **Panel 2, 3, 4**: Đọc chuyển động máy và hành động thực tế mà AI đã vẽ (máy tĩnh hay dolly/pan, có cú cắt thẳng hay không) ➔ điều chỉnh các mốc thời gian trong `timeline_action` và `camera.movement`.
+- **Hard Cuts theo Storyboard (Rule 74 & Bài học 80)**: Nếu 4 panel thể hiện các góc máy, cỡ cảnh hoặc nhân vật khác nhau ➔ BẮT BUỘC ghi rõ cú cắt gắt (**crisp hard cuts**) tại đúng mốc giây trong `camera.description` và `timeline_action` (`At second 3.0, a crisp hard cut matching Panel 2... At second 7.0, a crisp hard cut matching Panel 3 & 4...`). CẤM dùng 1 cú tracking dolly liên tục khiến model không cắt cảnh.
+- **Khóa cô lập nhân vật & Chống phân thân (Anti-Cloning Lock, Rule 74)**: Khi cú máy chỉ quay nhân vật B, BẮT BUỘC ghi `Strictly [Character B] alone in this shot; [Character A] is completely off-screen and never appears`. Bổ sung vào `negative_constraints`: `strictly NO duplicate characters, strictly NO multiple [Name], strictly [Other] alone in shot Y, no ghost figures, no cloning; crisp hard cuts at second X.0 and second Y.0, no camera blending, no crossfades` — triệt tiêu 100% lỗi xuất hiện 2 bản sao cùng lúc (như 2 Nora giây 9 SC-01).
 - **Panel 4 (Bottom-Right, giây cuối)**: Khóa cứng tư thế và vị trí kết thúc của nhân vật/đạo cụ ở giây cuối khớp 100% với Panel 4.
 - **CẤM TUYỆT ĐỐI**: Không gửi lệnh sinh video khi chưa đọc ảnh storyboard thực tế và chưa điều chỉnh video prompt cho ăn khớp!
 
@@ -328,4 +330,5 @@ Không dùng: `/fk-gen-chain-videos` (Veo start+end — `UNSUPPORTED_ON_BATCH_AP
 | Lửa / khói trông như CGI, khói thở trắng, tia nắng có khối | Khóa anti-CGI + anti-smoke, nguồn sáng ghi rõ chỗ (Rule 57, 62; Bài 75) |
 | Hai nhân vật bị trộn mặt | Câu khóa chip ref cho từng người + dấu nhận diện khác nhau + "nobody is a copy of …" (Bài 76, §QC Q3) |
 | Đạo cụ chính khác nhau giữa 2 clip chuyển cảnh | Một câu tả chuẩn cho đạo cụ, đính ref chứa nó; clip nối tiếp trực tiếp thì dùng `PREV_LAST_FRAME` (Bài 94, Rule 65 (2)) |
+| Hai nhân vật bị nhân đôi (2 Nora, clone) hoặc không cắt cảnh theo Storyboard | Bắt buộc chia mốc Hard Cut dứt khoát ('crisp hard cut at second X.0 matching Panel N'); chỉ định rõ nhân vật kia 'strictly off-screen and never seen'; cấm trong `negative_constraints` ('strictly NO duplicate characters, strictly NO multiple [Name], strictly [Other] alone in shot Y, no cloning, crisp hard cuts at second X.0') (Rule 74, Bài 80) |
 | Thêm lỗi mới khi review | Ghi bài học mới vào `production-lessons.md` (số kế tiếp) **và** thêm 1 dòng checklist B ở `prompt-lock.md` |

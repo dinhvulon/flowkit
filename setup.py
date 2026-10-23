@@ -438,6 +438,16 @@ _CRITICAL_RULES = """\
       ```
     - (4) **Tiêu chuẩn chấm điểm trên 24 frames**:
       Bảng AI Review Scorecard (Character Consistency 25%, Prompt Adherence 20%, Motion Quality 20%, Visual Fidelity 15%, Temporal Coherence 10%, Composition 10%) BẮT BUỘC rà soát tỉ mỉ từng cụm frame trong 24 frames này, đối chiếu với các panel của Storyboard 2×2 (Rule 69) và kết hợp Whisper dialogue review (Rule 67).
+
+74. **Storyboard Hard Cuts & Character Isolation / Anti-Cloning Lock in Video Prompts (Khóa Cắt Cảnh Dứt Khoát Theo Storyboard & Chống Phân Thân / Nhân Đôi Nhân Vật — User Lock 23/10/2026: "cần cắt cảnh theo storyboard chứ. hard cut chứ nhỉ. video thì dây số 9 bước đến xuất hiện 2 nora")** —
+    - (1) **Nguyên tắc Hard Cut theo Storyboard**: Khi tấm Storyboard 2×2 thể hiện các góc máy, cỡ cảnh hoặc nhân vật khác nhau giữa 4 panels (ví dụ Panel 1: EWS tàu bên ngoài ➔ Panel 2: MS Nora ở mũi tàu ➔ Panel 3 & 4: MS/MCU Castor ở boong giữa):
+      - `camera.description` và `timeline_action` BẮT BUỘC phải chỉ định rõ các cú cắt gắt (**crisp hard cuts**) tại các mốc giây (`At second 3.0, a crisp hard cut matching Panel 2... At second 7.0, a crisp hard cut matching Panel 3 & 4...`).
+      - CẤM TUYỆT ĐỐI dùng một cú máy chuyển động liên tục duy nhất (như `slow tracking dolly shot` bao trùm từ 0-10s) khi các panel là các cú máy độc lập, vì sẽ khiến model video cố gắng nối liền các không gian và nhân vật khác nhau vào cùng một shot mà không thực hiện cắt cảnh.
+    - (2) **Khóa cô lập nhân vật & cấm phân thân (Character Isolation & Anti-Cloning Lock)**:
+      - Khi một cảnh có nhiều nhân vật trong danh sách tham chiếu (`refs` / `character_names`), nhưng một cú máy chỉ quay MỘT nhân vật:
+        - Trong `timeline_action`: BẮT BUỘC ghi rõ nhân vật đó xuất hiện một mình (`Strictly [Character] alone in frame...`) và các nhân vật khác BẮT BUỘC phải khai báo là `completely off-screen and never seen`.
+        - Trong `negative_constraints`: BẮT BUỘC phải có khối chống phân thân: `strictly NO duplicate characters, strictly NO multiple [Name], strictly [Other] alone in shot Y, [Name] never appears in [shot Y], no ghost figures, no cloning; crisp hard cuts at second X.0 and second Y.0, no camera blending, no crossfades.`
+      - Triệt tiêu hoàn toàn hiện tượng "nhiễm nhân vật" (latent contamination) khiến AI tự nhân đôi một nhân vật thành 2 người trong cùng một khung hình (như lỗi xuất hiện 2 Nora cùng lúc ở giây 9 của SC-01).
 """
 
 _PIPELINE_OVERVIEW = """\
