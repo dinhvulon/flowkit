@@ -1,6 +1,6 @@
 ---
 name: sw-genre-anatomy
-description: Genre anatomy from John Truby's The Anatomy of Genres — genres as specialized beat systems anchored by an underlying life philosophy; three rules of play (hit every genre beat, mix three to four genres, transcend the primary genre); the ladder and families of twelve genres (Horror, Action, Myth, Memoir & Coming-of-Age, Science Fiction, Crime, Comedy, Western, Gangster, Fantasy, Detective & Thriller, Love), each detailing protagonist/opponent/world templates, hard rules, failure conditions, subgenres, and transcendent paths; plus the genre-mixing worksheet and diagnostic checklist. Kept beside sw-truby-anatomy and classical page maps. Use when choosing or confirming a genre, diagnosing generic tropes, mixing genres, fixing sagging action or horror tension, or crafting compelling subversions.
+description: 'Genre anatomy from John Truby''s The Anatomy of Genres — genres as specialized beat systems anchored by an underlying life philosophy; three rules of play (hit every genre beat, mix three to four genres, transcend the primary genre); the ladder and families of twelve genres (Horror, Action, Myth, Memoir & Coming-of-Age, Science Fiction, Crime, Comedy, Western, Gangster, Fantasy, Detective & Thriller, Love), each detailing protagonist/opponent/world templates, hard rules, failure conditions, subgenres, and transcendent paths; plus the genre-mixing worksheet and diagnostic checklist. Kept beside sw-truby-anatomy and classical page maps. Use when choosing or confirming a genre, diagnosing generic tropes, mixing genres, fixing sagging action or horror tension, or crafting compelling subversions.'
 ---
 
 # Genre Anatomy & The Beat Systems (sw-genre-anatomy)
@@ -257,3 +257,4 @@ Truby ranks genres along an ascending developmental ladder based on the central 
 8. Are secondary genre beats serving the story without fracturing thematic clarity?
 9. Have generic tropes been twisted into fresh, modern executions?
 10. Does the final image leave a resonant, genre-transcending thematic imprint?
+

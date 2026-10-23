@@ -1,6 +1,6 @@
 ---
 name: sw-premise-theme
-description: Premise, theme, controlling idea, subject selection, and loglines for screenplays and stage plays — merged from Lajos Egri's premise-as-tyrant and dialectic, Robert McKee's controlling idea (value + cause) and idea/counter-idea, Neill Hicks' five premise questions, Lisa Cron's "third rail" (desire vs. misbelief, origin scene, what-if), Julian Hoxter's logline and theme-attitude rule, Blake Snyder's logline/genre/title tests, and classic dramatic craft (subject discipline, thematic excavation, perspective, dramatic core, conflict reality). Use when turning a vague idea into a premise, uncovering what a story is really about, choosing an original perspective, testing a logline, deducing the ending from theme, or diagnosing a script that "has events but no story."
+description: 'Premise, theme, controlling idea, subject selection, and loglines for screenplays and stage plays — merged from Lajos Egri''s premise-as-tyrant and dialectic, Robert McKee''s controlling idea (value + cause) and idea/counter-idea, Neill Hicks'' five premise questions, Lisa Cron''s "third rail" (desire vs. misbelief, origin scene, what-if), Julian Hoxter''s logline and theme-attitude rule, Blake Snyder''s logline/genre/title tests, and classic dramatic craft (subject discipline, thematic excavation, perspective, dramatic core, conflict reality). Use when turning a vague idea into a premise, uncovering what a story is really about, choosing an original perspective, testing a logline, deducing the ending from theme, or diagnosing a script that "has events but no story.'
 ---
 
 # Premise, Theme, and the Dramatic Core (sw-premise-theme)
@@ -188,3 +188,4 @@ Synthesized from **Lajos Egri** (*The Art of Dramatic Writing*), **Robert McKee*
     - Is there only one central premise?
     - Does the ending stem from the protagonist's active choice rather than coincidence?
     - Does the theme remain constant while the characters' attitudes evolve?
+

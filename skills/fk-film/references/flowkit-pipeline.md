@@ -1,101 +1,107 @@
-# Triển khai trong FlowKit — R2V Ingredients
+# Triển Khai Trong FlowKit — Omni Flash R2V Ingredients Workflow (Phim Điện Ảnh)
 
-> **Phim vs vlog (2026-10-19):** quy trình dựng dự án, refs, sinh R2V, review, upscale áp cho phim. **Chỉ áp cho POV vlog:** "swing cho selfie, foreground wipe cho POV" ở §1, material `phone_vlog` và `voice_description` Laomedeia trong ví dụ §3, câu "chỉ vlogger có `voice_description`" (phim: mỗi nhân vật có thoại một voice id). Đọc `<V>` là tên nhân vật chính. Xem [`vlog-archive.md`](vlog-archive.md).
+> **Quy chuẩn `/fk-film`:** Tài liệu này quy định quy trình kỹ thuật vận hành dự án phim điện ảnh ngôi thứ ba trên FlowKit (Bước 6–9 của `SKILL.md`), sử dụng kiến trúc **Pure References (`GENERATE_VIDEO_REFS` — Omni Flash `abra_r2v_<N>s`)** kết hợp **Storyboard 2×2 (Rule 69)** và **24-Frame Review Gate (Rule 73)**.
 
-Đọc ở **Bước 6–9** của `SKILL.md`. Thay mục 7a, 10 và phần 🛠️ cũ (quy trình start-frame → i2v cũ đã bỏ theo CLAUDE.md Rule 27).
+> **Xác nhận trước mỗi bước sinh (Rule 29):** Trước bất kỳ lệnh nào khiến Google Flow sinh media (ảnh ref, ảnh Storyboard 2×2, video R2V, sinh lại, upscale 1080p), báo rõ sẽ sinh những gì, số lượng bao nhiêu, và **chờ User đồng ý**. Xong mỗi bước phải DỪNG và trình kết quả cho User duyệt.
 
-> **Xác nhận trước mỗi bước sinh (Rule 29).** Trước bất kỳ lệnh nào khiến Flow sinh media (ref, video, clip thử, sinh lại, upscale), nói rõ sinh gì, bao nhiêu, rồi chờ user đồng ý. Xong mỗi bước thì DỪNG, đưa kết quả cho user duyệt. Lỗi hoặc điểm review thấp → báo cáo kèm đề xuất sửa, không tự sinh lại.
+---
 
-## 1. Cách nối clip
+## 1. Quy Trình 2 Nhánh Nối Cảnh Chuẩn Điện Ảnh (Rule 65 & Rule 69)
 
-| Loại shot | Cách nối | Ghi chú |
-|---|---|---|
-| Có vlogger (mọi selfie / POV có tay / máy dựng) | **Tạo riêng rồi cắt**: 2 scene R2V độc lập. `video_prompt` A kết bằng khung che (swing cho selfie, foreground wipe cho POV); `video_prompt` B mở từ đúng khung che đó. Cắt thẳng tại khung che kín nhất lúc concat | **Mặc định duy nhất.** Cùng tư thế thì thêm match on action: B mở đúng tư thế cuối của A trong 1–2s đầu (Rule 44) |
-| Không có nhân vật (vũ trụ, phong cảnh, FPV mở đầu theo yêu cầu — Bài học 18) | Có thể dùng ảnh khung đầu / Omni Flash first+last: `POST /api/flow/generate-video` với `model_family: "omni_flash"` + `start_image_media_id` (+ `end_image_media_id`), 4/6/8/10s, xem `docs/OMNI_FLASH.md` | Ảnh AI phải qua 4 bước xóa logo → upload lại trước khi dùng (Rule 28) |
+| Loại cảnh | Cơ chế neo hình ảnh | Quy trình thực thi |
+| :--- | :--- | :--- |
+| **Loại 2: Cảnh mở đầu / Chuyển cảnh / Đổi góc máy** | **Storyboard 2×2 (`STORYBOARD`)** | Sinh 1 ảnh Storyboard 2×2 (4 panel 16:9 theo thời gian) qua `/fk-storyboard`, bắt buộc truyền `source_media_id` từ ảnh ref nhân vật/bối cảnh có sẵn. Tẩy logo ➔ upload lấy UUID sạch làm entity `<CLIP> Storyboard` ➔ Visual Audit đọc 4 panel chỉnh lại `video_prompt` ➔ gửi `GENERATE_VIDEO_REFS`. |
+| **Loại 1: Cảnh nối tiếp trực tiếp cùng góc máy (Chain)** | **Khung cuối cảnh trước (`PREV_LAST_FRAME`)** | Không sinh ảnh mới. Dùng `ffmpeg` trích xuất frame cuối cùng của video cảnh trước đã duyệt ➔ chạy `tools/remove_watermark_from_image.py` ➔ upload lấy UUID sạch làm ref khung mở đầu cho cảnh tiếp theo. |
 
-- **Không dùng `/fk-gen-chain-videos`** (Veo start+end frame) — fail `UNSUPPORTED_ON_BATCH_API`; `FLOW_ALLOW_DEGRADED=1` chỉ biến nó thành i2v thường.
-- FlowKit không có Extend. Một beat ~15s = vài scene nối bằng khung che / match on action; độ dài từng scene chọn theo độ khó (4/6/8/10s — CLAUDE.md Rule 49 (0), Bài 71): cảnh dễ lỗi = chuỗi 4s cùng bối cảnh, cảnh dễ không chuyển cảnh = 8s/10s.
+- **Cấm tuyệt đối sinh ảnh Start Frame 1 khung đơn lẻ** cho các cảnh phim có nhân vật/hành động.
+- Không dùng `/fk-gen-chain-videos` (Veo start+end frame cũ không hỗ trợ trên Batch API).
 
-## 2. Clip JSON → scene FlowKit
+---
 
-Clip JSON (mẫu ở `prompt-templates.md`) là bản thiết kế đọc được, lưu trong `output/<slug>/script.md`. Mỗi clip **bắt buộc** có `transition_in`, `transition_out` (câu prompt cụ thể) và `join`.
+## 2. Ánh Xạ Từ `prompts.json` Vào Cơ Sở Dữ Liệu FlowKit
 
-| Trường Clip JSON | Vào trường FlowKit |
-|---|---|
-| `refs` | `character_names` của scene = `["<V>", "<V> Body", <ref bối cảnh/sinh vật trong khung>]` (tối đa 7 — giới hạn Omni Flash) |
-| `camera` + `style` + `setting` + `in_place` + `shot` + ID-LOCK + `action` + `dialogue` + `background_people` + `transition_in/out` + `constraints` + `audio` | `video_prompt`, dựng đúng thứ tự 9 khối của `prompt-lock.md`; sub-clip theo `duration` (4s `0-2s / 2-4s`; 6s `0-2s / 2-4s / 4-6s`; 8s `0-3s / 3-6s / 6-8s`; 10s `0-3s / 3-7s / 7-10s`); thoại dạng `Nora says (tag): "..."` |
-| `setting` (tóm tắt) | `prompt` của scene (mô tả cảnh — R2V không dùng ảnh Frame 0) |
-| `dialogue` (ghép 3 sub-clip) | `narrator_text` (PATCH, số từ theo độ dài clip — Rule 49 (0)) — đồng bộ bằng `/fk-gen-narrator` |
-| `duration` | **PATCH** `{"duration": <4|6|8|10>}` theo cột `Dur` của storyboard sau khi tạo scene — POST không nhận, thiếu thì âm thầm ra 10s (Bài học 12) |
-| `join` | ghi chú cho bước concat (điểm cắt); `chain_type` = `ROOT` cho mọi scene R2V |
-| `bleep_at` (tùy chọn) | không vào FlowKit — ghi chú hậu kỳ (`voice-bible.md` mục 3) |
+Mỗi đối tượng trong `prompts_act*.json` (đã qua `/fk-script-to-prompts`, `/fk-review-prompt`, và `python tools/lint_prompt.py`) được nạp vào scene của FlowKit như sau:
 
-## 3. Pre-flight & dựng dự án
+| Trường trong `prompts.json` | Trường trong FlowKit (`scene`) | Quy tắc bắt buộc |
+| :--- | :--- | :--- |
+| `refs` | `character_names` | Danh sách tên entity tham chiếu (tối đa 7): `["<Tên>", "<Tên> Body", "<Sinh vật/Đạo cụ>", "<Bối cảnh>", "<CLIP> Storyboard"]` |
+| Toàn bộ đối tượng JSON (đã resolve `{{ref:...}}` thành `{{media:<uuid>\|<name>}}`) | `video_prompt` | Chuỗi JSON hoàn chỉnh tuân thủ `prompt-lock.md` Mục A & B |
+| Prompt tạo tấm Storyboard 2×2 (4 panel 16:9) | `image_prompt` (và `prompt`) | Có câu khóa `"STORYBOARD OF FOUR MOMENTS IN TIME"`, mô tả rõ Panel 1..4 và truyền `source_media_id` |
+| `duration` (`4`, `6`, `8`, hoặc `10`) | `duration` | Bắt buộc `PATCH /api/scenes/{sid}` trường `duration` sau khi tạo scene (nếu thiếu sẽ mặc định thành 10s) |
+| Tổng hợp câu thoại trong `speech.dialogue` | `narrator_text` | Khớp chính xác số từ theo Rule 49 |
 
+---
+
+## 3. Pre-Flight & Khởi Tạo Dự Án Phim
+
+### 3.1. Kiểm tra kết nối & dọn hàng đợi cũ (Rule 21, Rule 31)
 ```bash
 curl -s http://127.0.0.1:8100/health          # {"extension_connected": true}
 curl -s http://127.0.0.1:8100/api/flow/status # {"transport": "batch", ...}
+python -c "import sqlite3; conn = sqlite3.connect('flow_agent.db'); conn.execute('UPDATE request SET status=\'FAILED\' WHERE status=\'PENDING\''); conn.commit()"
 ```
-Project mới → flush request PENDING cũ trước (CLAUDE.md Rule 21). Lỗi pipeline bất kỳ → `/fk-doctor` trước khi đoán cách sửa (Rule 31).
+Nếu gặp bất kỳ lỗi kết nối hoặc lỗi worker nào, gọi ngay `/fk-doctor`.
 
+### 3.2. Tạo Project với hệ thống nhân vật đa giọng nói
 ```bash
 curl -X POST http://127.0.0.1:8100/api/projects -H "Content-Type: application/json" -d '{
-  "name": "Rome 79 AD - Time Travel Vlog",
-  "story": "<tóm tắt cold open + 5 Act>",
-  "material": "phone_vlog",
+  "name": "The Golden Tree — Cinematic Adventure Film",
+  "story": "<Tóm tắt Premise, Controlling Idea và 3 Hồi từ story-bible.md>",
+  "material": "realistic",
   "allow_voice": true,
   "characters": [
-    {"name": "Nora", "entity_type": "character", "description": "<CHARACTER_LOCK nguyên văn>", "voice_description": "<Laomedeia>"},
-    {"name": "Nora Body", "entity_type": "character", "description": "<body sheet 3 góc đã mặc outfit thời kỳ>"},
-    {"name": "Forum Market", "entity_type": "visual_asset", "description": "<bối cảnh + thành phố + năm>"}
+    {"name": "Nora", "entity_type": "character", "description": "<CHARACTER_LOCK 35mm live-action>", "voice_description": "kore — firm, resolute, mid-pitched commanding female seafarer voice"},
+    {"name": "Nora Body", "entity_type": "character", "description": "<16:9 turnaround sheet dressed in seafarer costume>"},
+    {"name": "Castor", "entity_type": "character", "description": "<CHARACTER_LOCK 35mm live-action>", "voice_description": "alnilam — firm, gritty mid-low male warrior voice"},
+    {"name": "Castor Body", "entity_type": "character", "description": "<16:9 turnaround sheet dressed in bronze-studded leather armor>"},
+    {"name": "Omen Fish", "entity_type": "character", "description": "<16:9 3-panel practical SFX creature turnaround sheet, 1.8m 80kg>"},
+    {"name": "Galleon Deck", "entity_type": "visual_asset", "description": "<16:9 wide establishing photograph of weathered wooden galleon deck, strictly NO humans>"}
   ]
 }'
 ```
-- `allow_voice: true`: server tự nối hậu tố vào mọi `video_prompt` (kể cả R2V, `_build_video_prompt`). Prompt thiếu dòng `Audio:` mà `allow_voice` tắt thì hậu tố là "no narration, no voiceover" — có thể nuốt giọng vlogger. Server cũng luôn nối `Negative: subtitles, captions, watermark, text on screen, logo, blurry faces, distorted hands.` nếu prompt chưa có chữ `negative:`; dòng này không nhắc thiết bị nên chấp nhận được, nhưng đừng tự thêm dòng `Negative:` khác.
-- Bối cảnh cần giữ nhất quán khai báo `visual_asset` (worker bỏ qua `location` khi chạy R2V — Bài học 6). Chỉ vlogger có `voice_description` (Bài học 13).
-- Material `phone_vlog`: tạo theo `shots-and-realism.md` mục chuẩn chân thực, hoặc dùng `realistic`.
-- Sau đó: `POST /api/videos` → `POST /api/scenes` theo thứ tự storyboard → PATCH `duration` + `narrator_text` từng scene → `/fk-switch-project <PID>`.
-- Dự án nhiều tập (cùng vlogger qua nhiều thời kỳ): dùng `series_manifest` để tái dùng media_id mặt của vlogger thay vì sinh lại — xem mục 7.
+- **Lưu ý quan trọng:** Các bối cảnh cần giữ đồng nhất phải khai báo `entity_type: "visual_asset"` để worker đính kèm vào R2V `imageInputs`. Các công trình kiến trúc / đạo cụ vô tri tuân thủ Rule 34 (`strictly NO humans, NO scale figures`).
 
-## 4. Refs → cổng duyệt
+---
 
-1. **Mặt** `<V>`: `/fk-upload-ref` (mặt thật) hoặc `/fk-gen-refs` (16:9 sheet nhiều góc). Xóa logo → upload lại (Rule 28).
-2. **Body đã mặc outfit** `<V> Body`: công thức outfit lock — `EDIT_CHARACTER_IMAGE` từ Body trần gốc (`character-bible.md` §6). Xóa logo → upload lại.
-3. **Ref bối cảnh / sinh vật / đạo cụ nhân vật phụ** (Bài học 5, checklist #21).
-4. **DỪNG — cổng duyệt:** ghép bảng ảnh, đưa đường dẫn file cho user xem. Kiểm UUID media_id mọi entity (Rule 1, `/fk-fix-uuids` nếu thấy `CAMS...`).
+## 4. Sinh & Chuẩn Hóa Bộ Reference (Bước 6 — Cổng Duyệt 1)
 
-## 5. Sinh video R2V
+1. Dùng `/fk-character-design` (Rule 58, Rule 72) tạo prompt chuẩn 35mm Live-Action / Practical SFX Turnaround Sheet 16:9 cho toàn bộ nhân vật, Body đã mặc trang phục (Rule 46), sinh vật chủ chốt và bối cảnh.
+2. Sau khi ảnh sinh xong, thực hiện **Quy trình 4 bước Clean-Before-Video-Gen (Rule 28)**:
+   - Tải ảnh gốc về `output/<slug>/images/<name>.jpg`.
+   - Chạy `python tools/remove_watermark_from_image.py "output/<slug>/images/<name>.jpg"` ➔ tạo `<name>_clean.jpg`, sau đó **xóa ngay file gốc còn logo**.
+   - Upload `<name>_clean.jpg` qua `POST /api/flow/upload-image` lấy UUID sạch.
+   - Gán UUID sạch vào entity và kiểm tra không còn ID dạng `CAMS...` (`/fk-fix-uuids`).
+3. **DỪNG — Trình User duyệt toàn bộ ảnh Reference.**
 
-1. Chạy `prompt-lock.md` checklist B trên từng `video_prompt`.
-2. **Clip khó nhất trước, 1 clip**, rồi 1 clip bình thường làm mốc (Bài học 2) — mỗi lần đều hỏi user trước.
-3. Cả loạt: một `POST /api/requests/batch` với `type: "GENERATE_VIDEO_REFS"` (Omni Flash `abra_r2v_<duration>s`, RPC `MZZa6b`). Server tự giãn mọi request Flow 45–60s; với video: 1 video một lúc, xong mới gửi tiếp (memory 2026-10-07). Dừng ngay khi gặp `UNUSUAL_ACTIVITY` / `QUOTA`.
-4. Theo dõi: `GET /api/requests/batch-status?video_id=<VID>&type=GENERATE_VIDEO_REFS`.
-5. Sinh lại 1 scene R2V đã COMPLETED: PATCH `horizontal_video_status: PENDING` rồi gửi lại `GENERATE_VIDEO_REFS` (Bài học 14). Lỗi content filter → đề xuất prompt đã làm sạch, chờ user đồng ý (Rule 17 + 29).
+---
 
-## 6. Review → upscale → xóa logo → concat (Rule 18, 32)
+## 5. Sinh Storyboard 2×2 & Visual Audit (Bước 6.5 — Cổng Duyệt 2)
 
-1. Mỗi clip 720p xong → tải ngay về `${OUTDIR}/scenes/scene_{idx}_{sid}.mp4`. **Chưa xóa logo.**
-2. Trích xuất đúng 24 frames bằng ffmpeg (`fps=24/<duration>`, e.g. 10s: `fps=2.4`, 8s: `fps=3`) và ghép Contact Sheet 6×4 (`tile=6x4`, Rule 73) → `/fk-review-video` (light) trên bản 720p thô: scorecard 6 tiêu chí + lỗi Critical/High/Minor, đối chiếu checklist B của `prompt-lock.md`. Bật Review Board `python tools/review_server.py 8200`.
-3. **DỪNG — user duyệt từng clip.** Clip < 7.5 hoặc user chê: sửa `video_prompt` (xung đột với prompt user đã duyệt → đưa danh sách cho user chọn) → sinh lại ở 720p. Tối đa 2 vòng.
-4. Chỉ clip đã duyệt: `UPSCALE_VIDEO` (1080p, `p0UkFb`) → `${OUTDIR}/1080/scene_{idx}_{sid}_1080p.mp4` → `remove_watermark_video` → `..._1080p_clean.mp4`.
-5. `/fk-concat` cắt thẳng tại khung che (không crossfade, không text overlay); trim đầu mỗi clip `-ss 1` (6/8/10s) hoặc `-ss 0.5` (4s); chuỗi 4s cùng bối cảnh nối liền nhau theo thứ tự `a → b → c`. Chỉ thêm `--tts` nếu user chọn lồng tiếng thay thoại native.
+1. Với các cảnh chuyển (Rule 65 Loại 2), gửi request `GENERATE_IMAGE` / `REGENERATE_IMAGE` kèm `source_media_id` (UUID ảnh ref nhân vật chính/bối cảnh).
+2. Khi ảnh Storyboard 2×2 sinh xong: tải về ➔ chạy `remove_watermark_from_image.py` ➔ xóa ảnh gốc còn logo ➔ upload bản `_clean.jpg` lấy UUID sạch ➔ gán vào entity `<CLIP> Storyboard`.
+3. **Thực hiện Visual Audit bắt buộc (Rule 69 (7) & Rule 74):**
+   - Xem trực tiếp ảnh `<CLIP>_storyboard_clean.jpg`.
+   - Kiểm tra 4 panel: có bị nhân đôi lan can/nhân vật không? Góc máy giữa các panel cắt cảnh có đủ độ lệch `> 45°–90°` không? Nhân vật chỉ tay bằng tay trái hay tay phải? Khuôn mặt có lộ rõ 100% không?
+   - Cập nhật lại `video_prompt` (resolve toàn bộ `{{ref:...}}` thành `{{media:<uuid>|<name>}}`) và chạy `python tools/lint_prompt.py` đạt 0 lỗi.
+4. **DỪNG — Trình ảnh Storyboard 2×2 sạch và kết quả Visual Audit cho User duyệt trước khi sinh video.**
 
-## 7. Dự án nhiều tập — series manifest
+---
 
-Tập mới mang theo **mặt `<V>` + Body trần gốc** của vlogger: mặt qua `scripts/series_manifest.py bootstrap --only "<V>" --flow-project-id …`, Body trần qua `source_media_id`; rồi EDIT ra `<V> Body` mặc outfit của tập theo công thức outfit lock. Chi tiết: `cinematic-toolkit.md` §5 và `character-bible.md` §6. Ref bối cảnh luôn làm mới.
+## 6. Sinh Video R2V, Review 24 Frames + Whisper & Hậu Kỳ 1080p (Bước 7–10)
 
-## 8. Dự phòng khi Google chặn sinh tự động → xuất file import thủ công
-
-**Khi nào đề xuất:** lệnh sinh qua FlowKit bị `PUBLIC_ERROR_UNUSUAL_ACTIVITY` (không có `[HIJACK]`) **từ 2 lần chạy thử 1 request trở lên**, dù extension đúng bản, đã xóa cookie, và bấm tay trên giao diện Flow vẫn sinh được. Khi đó dừng gửi request và đề xuất với user xuất kịch bản ra JSON để import vào công cụ tạo thủ công.
-
-```bash
-python tools/export_flow_import.py <PROJECT_ID> --main <Vlogger>   --upload "<Vlogger>=C:/path/face_clean.jpg"   --refs-dir output/<slug>/refs --script output/<slug>/script.md   --out output/<slug> --time-capsule "<Địa điểm>, <năm> — <vibe>"
-# → output/<slug>/kich-ban-vlog/<project-slug>/<project-slug>.json + base-ref/*.jpg
-```
-
-- **Template chuẩn:** `flow-import-template.json` cùng thư mục (node `upload` / `image` / `video`, `promptParts` gồm `text` + `image_ref`, `refImageIds`, `sources`, `voiceId`, `dialog`, `edges`).
-- **Ánh xạ R2V:** mỗi node video tham chiếu thẳng các ảnh ref (`image_ref` + `refImageIds`), `sources: []`, `model: abra_r2v_<duration>s`.
-- **Entity có ảnh local** (`--upload` hoặc `<slug>_clean.jpg` / `<slug>.jpg` trong `--refs-dir`) thành node `upload`, ảnh copy vào `base-ref/`. Entity chưa có ảnh thành node `image` với prompt lấy từ `description`.
-- **Thoại:** lấy chính xác từ Clip JSON trong `script.md`. Clip của vlogger có `voiceId` + `voiceCharId: "char-main"`; clip của dân bản địa có `speaker` riêng.
-- Ảnh trong `base-ref/` phải là **bản đã xóa logo**. Chạy lại lệnh sau khi làm sạch ảnh.
-- Copy cả thư mục `kich-ban-vlog/` vào thư mục gốc của công cụ import (đường dẫn `file` trong JSON có dạng `kich-ban-vlog/<slug>/base-ref/...`).
+1. **Sinh video R2V (`GENERATE_VIDEO_REFS`):**
+   - Sau khi User duyệt Storyboard 2×2, gửi request `GENERATE_VIDEO_REFS`. Server tự giãn cách 45–60s giữa mọi request tới Flow (Rule 10).
+2. **Tải bản 720p thô & Kiểm toán 24 Frames + Whisper (Rule 18, 32, 67, 73):**
+   - Tải video 720p về `output/<slug>/scenes/`. **Chưa xóa logo ở bước này.**
+   - Dùng `ffmpeg` trích xuất **đúng 24 frames** (`fps=24/<duration>`) và ghép **Contact Sheet 6×4 (`tile=6x4`)**:
+     ```bash
+     ffmpeg -y -i <clip>.mp4 -vf "fps=24/<duration>" -q:v 2 <dir>/frame_%02d.jpg
+     ffmpeg -y -i "<dir>/frame_%02d.jpg" -vf "tile=6x4" -q:v 2 <dir>/contact_sheet_24frames.jpg
+     ```
+   - Chạy `python tools/review_dialogue.py` (Whisper, Rule 67) để kiểm tra khớp thoại.
+   - Chấm điểm AI Review Scorecard 6 tiêu chí trên 24 frames, mở Review Board (`python tools/review_server.py 8200`), và **DỪNG chờ User duyệt từng cảnh**.
+3. **Upscale 1080p & Xóa Logo (Chỉ cho cảnh đã được User duyệt — Rule 18):**
+   - Gửi `UPSCALE_VIDEO` (`p0UkFb`) ➔ tải về `output/<slug>/1080/<clip>_1080p.mp4`.
+   - Chạy `remove_watermark_video` trực tiếp trên bản 1080p ➔ `<clip>_1080p_clean.mp4`.
+4. **Dựng Hậu Kỳ Điện Ảnh:**
+   - Phối hợp bắt buộc `/video-editing` (Rule 66), `/fk-capcut-edit`, `/fk-cinematic-transitions`, `/fk-sound-design`, và `/fk-concat` để cắt bỏ dead air, nối J-cut/L-cut, lồng nhạc/SFX và master chuẩn `−14 LUFS`.

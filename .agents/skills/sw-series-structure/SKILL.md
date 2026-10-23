@@ -1,6 +1,6 @@
 ---
 name: sw-series-structure
-description: Episode and season structure for TV and streaming series — teasers and cold opens, broadcast four/five/six-act grids with page anchors, three tests for discovering invisible acts in streaming scripts, act-out and cliffhanger taxonomies, Oberg's four information tools, A/B/C/runner weaving and scene-count ratios, the Calvisi pilot beat sheet, five-part scene structure, and season architecture (tentpoles, bottle episodes, container episodes, two-parters, and season finales). Merged from Calvisi, Douglas, Oberg, Landau, Goldberg & Rabkin, Kam Miller, Rabkin, and Blum, verified against published scripts (The West Wing, Succession, The Sopranos, Downton Abbey, Fleabag). Use when breaking an episode into acts, placing cliffhangers, designing a teaser, weaving multi-strand plots, beating out a one-hour pilot, or organizing a season's episode arc.
+description: 'Episode and season structure for TV and streaming series — teasers and cold opens, broadcast four/five/six-act grids with page anchors, three tests for discovering invisible acts in streaming scripts, act-out and cliffhanger taxonomies, Oberg''s four information tools, A/B/C/runner weaving and scene-count ratios, the Calvisi pilot beat sheet, five-part scene structure, and season architecture (tentpoles, bottle episodes, container episodes, two-parters, and season finales). Merged from Calvisi, Douglas, Oberg, Landau, Goldberg & Rabkin, Kam Miller, Rabkin, and Blum, verified against published scripts (The West Wing, Succession, The Sopranos, Downton Abbey, Fleabag). Use when breaking an episode into acts, placing cliffhangers, designing a teaser, weaving multi-strand plots, beating out a one-hour pilot, or organizing a season''s episode arc.'
 ---
 
 # Television & Streaming Series Structure (sw-series-structure)
@@ -188,3 +188,4 @@ Every compelling television scene contains five structural components:
 7. **Draft the Scene Beat Sheet:** Outline each scene's five-part progression (Want, Obstacle, Escalations, Decision, Resolution).
 8. **Draft Pages:** Write with velocity, targeting ~2 pages per dramatic scene.
 9. **Run the Diagnostic Audit:** Tighten scene entrances, eliminate exposition, and polish transitions.
+

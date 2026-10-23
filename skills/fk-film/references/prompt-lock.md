@@ -1,168 +1,82 @@
-# 🔒 PROMPT LOCK — khung `video_prompt` (phim) + checklist trước khi lưu
+# 🔒 PROMPT LOCK — Khung `video_prompt` Phim Điện Ảnh & Checklist Trước Khi Lưu
 
+> **Quy chuẩn `/fk-film`:** Đọc ở **Bước 5** của `SKILL.md` và chạy lại ở **Bước 9** khi review video. Mọi `video_prompt` (POST hoặc PATCH) bắt buộc tuân thủ kiến trúc Structured JSON của phim điện ảnh ngôi thứ ba, vượt qua `python tools/lint_prompt.py` với **0 lỗi**, và đạt 100% các mục trong **Checklist B** dưới đây trước khi lưu hoặc gửi sinh.
 
+---
 
-Đọc ở **Bước 5** của `SKILL.md`, chạy lại ở Bước 9 khi review. Thay mục 10b cũ.
+## A. Khung `video_prompt` của Phim — Structured JSON (Rule 55, Rule 56, Rule 64, Rule 69, Rule 74)
 
+Thứ tự các trường bắt buộc trong mỗi đối tượng prompt JSON:
 
+1. **`clip_id`, `scene_name`, `duration`, `aspect_ratio`, `refs`**
+   - `duration`: `4`, `6`, `8`, hoặc `10` (giây).
+   - `refs`: Danh sách tên entity tham chiếu (tối đa 7 theo giới hạn Omni Flash), bao gồm `<Tên>` (mặt), `<Tên> Body` (đã mặc trang phục), sinh vật/đạo cụ (`Omen Fish`, v.v.), bối cảnh, và `<CLIP> Storyboard` (tấm Storyboard 2×2 đã xóa logo).
+2. **`start_frame` & `storyboard`**
+   - Cảnh chuyển / mở đầu (Rule 65 Loại 2): `start_frame.type = "STORYBOARD"`, khối `storyboard` chứa câu khóa `"STORYBOARD OF FOUR MOMENTS IN TIME"` trỏ chip `{{media:<uuid>|<CLIP> Storyboard.jpg}}` và mô tả rõ 4 panel theo mốc giây (`4s: 0/1/3/4`, `6s: 0/2/4/6`, `8s: 0/3/6/8`, `10s: 0/3/7/10`).
+   - Cảnh nối tiếp trực tiếp (Rule 65 Loại 1): `start_frame.type = "PREV_LAST_FRAME"`.
+3. **`camera`**
+   - `viewpoint`: `"third-person cinematic camera; the camera itself is never seen"`.
+   - `shot_size`: Mở đầu bằng `OPENING SHOT (second 0): matching the top-left panel (Panel 1) of {{media:<uuid>|<CLIP> Storyboard.jpg}} — ...`.
+   - `description`: Ống kính Anamorphic 35mm, khẩu độ `deep focus f/8`, chuyển động máy theo `/fk-camera-guide`, và chỉ định rõ các mốc **crisp hard cut** giữa các panel (`At second 3.0, a crisp hard cut matching Panel 2...`).
+4. **`style`**
+   - Chất phim điện ảnh 35mm (`35mm film, cinematic documentary realism, Panavision anamorphic lens, natural organic lighting, subtle film grain, deep focus f/8, photorealistic, tactile textures`), chống CGI.
+5. **`setting`**
+   - Địa điểm trỏ chip ref bối cảnh `{{ref:<Bối cảnh>}}`, thời tiết, giờ và nguồn sáng tự nhiên khớp cảnh liền trước/sau, kèm `SPATIAL LOCK (INSIDE vs. OUTSIDE)` chỉ rõ bên nào là sàn tàu/mặt đất bên trong và bên nào là mặt biển/vực bên ngoài.
+6. **`characters[]`**
+   - Mỗi nhân vật/sinh vật trong cảnh: `name`, `visual_lock` (trỏ thẳng chip `{{ref:<Tên>}}` và `{{ref:<Tên> Body}}` theo Rule 64, không tả lại trang phục bằng chữ), và `state` (trạng thái cơ thể ở giây 0: ướt mưa, căng cơ hàm, tay nắm chặt đạo cụ).
+7. **`timeline_action`**
+   - Chia đúng mốc theo `duration` (`4s: 0-2s / 2-4s`; `6s: 0-2s / 2-4s / 4-6s`; `8s: 0-3s / 3-6s / 6-8s`; `10s: 0-3s / 3-7s / 7-10s`).
+   - Mỗi nhịp neo rõ vào đúng Panel của Storyboard (`Matching Panel 1 (Top-Left) of {{media:...}}: ...`), có nguyên nhân vật lý rõ ràng, ghi rõ nhân vật nào xuất hiện một mình (`Strictly [Name] alone in this shot; [Other] is completely off-screen`), và nhúng thoại trực tiếp tại mốc giây tương ứng.
+8. **`speech`**
+   - `speaker`, `voices` (map từng người nói sang Voice ID Pinhole riêng biệt), `delivery` (ngữ điệu cụ thể, gắt/khẩn trương khi nguy hiểm), `dialogue[]` (mốc giây, người nói, câu thoại nguyên văn từ `script.md`, tổng số từ tuân thủ Rule 49).
+9. **`post_vo`**
+   - Lời dẫn hoặc âm thanh bộ đàm/tiếng vọng ngoài hình chèn lúc dựng hậu kỳ (`null` nếu không có).
+10. **`dramatic_craft`** (Rule 56 — kết tinh từ bộ `sw-*`)
+    - `beat`: Hành động tác động / phản ứng bằng danh động từ (`gerunds`, theo `/sw-dialogue` & `/sw-scene-craft`).
+    - `value_turn`: Bước ngoặt giá trị điện tích từ đầu cảnh đến cuối cảnh (ví dụ `+ to -`, `- to --`).
+    - `subtext`: Ẩn ý thực sự dưới lời thoại hoặc sự im lặng.
+    - `prop_and_detail`: Đạo cụ mấu chốt và chi tiết cơ học/sinh học neo cảm xúc.
+11. **`props_lock`**
+    - Khóa số lượng, kích thước vật lý tuyệt đối (`CREATURE & PROP SCALE/MASS LOCK`) và bàn tay cầm giữ của mọi đạo cụ/sinh vật quan trọng xuyên suốt clip.
+12. **`audio`**
+    - Hòa âm 3 tầng: thoại nổi rõ trên nền + foley hiện trường + ambient môi trường (theo `/fk-sound-design`).
+13. **`negative_constraints`**
+    - Viết thành câu hoàn chỉnh: cấm chữ/logo/watermark, cấm CGI/bóng nhựa/2D sketch, cấm khói thở trắng (`NO breath smoke`), cấm nhân đôi nhân vật (`NO duplicate characters, NO cloning`), khóa cắt cảnh dứt khoát (`crisp hard cuts at second X.0, no camera blending, no half-frame split-railing cut`), cấm ôm mặt kịch cỡm (`NO hands covering face or cheeks`).
 
-> User yêu cầu: các bài học ở `production-lessons.md` (mục 11 cũ) phải được **khóa vào lúc viết prompt**, không chỉ nằm trong danh sách bài học. Mọi `video_prompt` (POST hoặc PATCH) phải dựng theo khung dưới đây và **qua đủ checklist** trước khi lưu. Clip nào không qua checklist thì sửa prompt trước, không gửi sinh.
+---
 
+## B. Checklist Kiểm Toán Trước Khi Lưu & Trước Khi Gửi Sinh (100% phải trả lời "ĐẠT")
 
-
-> **Phim vs vlog (2026-10-19):** khung A dưới đây là khung của **phim ngôi thứ ba**. Khung 9 khối cũ của vlog (selfie / POV / máy dựng) và các dòng checklist chỉ áp cho vlog đã chuyển nguyên văn sang [`vlog-archive.md`](vlog-archive.md) §4; dòng checklist cũ giữ số, chỉ còn con trỏ kèm luật tương đương cho phim.
-
-
-
-**A. Khung `video_prompt` của phim — Structured JSON (Rule 55; mẫu thật: `output/embers/prompts_v7_act*.json`):**
-
-
-
-Thứ tự khóa (không bỏ khóa bắt buộc):
-
-
-
-1. **`clip_id`, `scene_name`, `duration`, `aspect_ratio`, `refs`** — `refs` là TÊN entity (≤7), gồm mặt + Body của mọi nhân vật trong khung, sinh vật, bối cảnh (dòng 15).
-
-2. **`camera`** — `viewpoint`: `"third-person cinematic camera; the camera itself is never seen"`; `shot_size`; `description` (ống kính, máy cố định hay di chuyển, bố cục). Máy được phép dolly / track / handheld theo `/fk-camera-guide`; ghi rõ máy có di chuyển hay không để không tự mâu thuẫn (Bài 86).
-
-3. **`style`** — chất phim (`35mm film, cinematic documentary realism, natural film grain …`), không CGI.
-
-4. **`setting`** — địa điểm trỏ ref bối cảnh `{{ref:<Bối cảnh>}}`, mặt đất/thời tiết, **giờ & ánh sáng khớp clip trước và sau**, những gì đứng yên ở hậu cảnh suốt clip.
-
-5. **`characters[]`** — mỗi người/thú: `visual_lock` (câu khóa 1:1 trỏ chip ref, Rule 64; không tả lại mặt/trang phục), `state` (trạng thái ở giây 0: bẩn, ướt, bỏng…).
-
-6. **`timeline_action`** — mốc theo `duration` (4s `0-2s / 2-4s`; 6s `0-2s / 2-4s / 4-6s`; 8s `0-3s / 3-6s / 6-8s`; 10s `0-3s / 3-7s / 7-10s`); mỗi mốc một beat, hành động có **nguyên nhân vật lý**, người nói bắt đầu từ giây 0 (Rule 54). Mọi người/vật xuất hiện phải có mặt từ giây 0 (Bài 48).
-
-7. **`speech`** — `speaker`, `voices` (voice id từng người), `delivery`, `dialogue[]` (mốc, người nói, câu nguyên văn từ `script.md`, số từ theo Rule 49). Clip im lặng ghi rõ không có thoại.
-
-8. **`post_vo`** — lời qua bộ đàm / điện thoại / lời dẫn thêm khi dựng (Bài 99); không viết vào thoại trên hình.
-
-9. **`dramatic_craft`** — `beat`, `value_turn`, `subtext`, `prop_and_detail` (Rule 56).
-
-10. **`audio`** — thoại + foley + ambient; giọng nói nổi trên nền (Bài 81, 101).
-
-11. **`negative_constraints`** — câu cấm viết thành câu hoàn chỉnh (không chữ, không logo, anti-CGI, không khói thở, cơ thể không nhập nhau, đếm đạo cụ…).
-
-12. **`props_lock`** (khi có đạo cụ dễ lỗi: dây, dao, bình…) — Bài 94, 96.
-
-
-
-**B. Checklist — đọc lại từng `video_prompt` trước khi lưu (mỗi dòng phải trả lời "có"):**
-
-
-
-| # | Kiểm tra | Bài học |
-
+| # | Hạng mục kiểm tra | Tham chiếu |
 |---|---|---|
+| 1 | **Góc máy ngôi thứ ba thuần túy:** `camera.viewpoint` là `"third-person cinematic camera; the camera itself is never seen"`; không trùng cả cỡ cảnh lẫn góc máy với cảnh liền trước | `/fk-camera-guide` |
+| 2 | **Tối đa 7 refs & Nhắc đủ chip `{{ref:...}}` / `{{media:...}}`:** Mọi entity trong `refs` đều được nhắc bằng chip inline trong prompt; nhân vật có đủ `<Tên>` + `<Tên> Body`; `lint_prompt.py` báo 0 lỗi | Rule 46, Rule 64 |
+| 3 | **Khóa khuôn mặt 1:1 & Trang phục thuần ảnh Ref:** Không tự tả lại hoa văn/biến thể trang phục bằng chữ; chỉ khóa khớp 1:1 với `{{ref:<Tên>}}` và `{{ref:<Tên> Body}}` | Rule 52, Rule 60 |
+| 4 | **Chuẩn Turnaround Sheet 16:9 Live-Action / Practical SFX:** Mọi ảnh ref nhân vật và sinh vật chủ chốt đã được thiết kế qua `/fk-character-design` (không có từ khóa 2D `study`, `sketch`, `concept art`) và đã tẩy watermark + upload lại lấy UUID sạch | Rule 28, Rule 58, Rule 72 |
+| 5 | **Storyboard 2×2 & `source_media_id`:** Cảnh chuyển (Rule 65 Loại 2) dùng `STORYBOARD` 2×2 sinh có `source_media_id` từ ảnh ref gốc, đã tẩy logo và upload lấy UUID sạch; cảnh nối tiếp dùng `PREV_LAST_FRAME` | Rule 65, Rule 69, `/fk-storyboard` |
+| 6 | **Visual Audit 4 Panel thực tế:** Đã đọc trực tiếp ảnh Storyboard 2×2 sạch vừa sinh để chỉnh lại `camera`, `timeline_action` (tay trái/phải, hướng nhìn, bố cục) khớp 100% với hình ảnh thực tế trên 4 panel | Rule 69 (7) |
+| 7 | **Crisp Hard Cuts & Quy tắc 30°–90°:** Các panel khác góc máy được chuyển bằng `crisp hard cut` tại đúng mốc giây; góc máy giữa 2 panel cắt cảnh chênh nhau `> 45°–90°` (không cắt giữa 2 panel trùng góc nhìn dọc cùng một lan can gây lỗi nhân đôi 2 lan can) | Rule 74 (1), (5) |
+| 8 | **Cô lập nhân vật & Chống phân thân (`Anti-Cloning Lock`):** Khi một Shot chỉ quay 1 nhân vật, ghi rõ `Strictly [Name] alone in this shot; [Other] is completely off-screen` và khóa `NO duplicate characters, NO cloning` trong `negative_constraints` | Rule 74 (2) |
+| 9 | **Chống trộn trục 180° & Khóa không gian Trong/Ngoài lan can (`SPATIAL LOCK`):** Mỗi Shot chỉ neo theo 1 Panel duy nhất (không gộp `matching Panel 3 and Panel 4` nếu ngược trục); ghi rõ bên nào là sàn gỗ bên trong tàu và bên nào là mặt biển bên ngoài | Rule 74 (3) |
+| 10 | **Ngữ pháp "Chỉ tay ngắn ➔ Cắt cảnh mới lộ mục tiêu" & Cấm ôm mặt:** Cú máy chỉ tay (`0-2s`/`0-3s`) chỉ quay người chỉ tay trên boong về phía ngoài khung hình, sau đó Hard Cut mới lộ mục tiêu (thuyền/sinh vật/đảo); nhân vật sợ hãi giữ mặt lộ rõ 100% (`NO hands on face/cheeks`), hai tay bám mạn thuyền/đạo cụ | Rule 74 (6) |
+| 11 | **Đồng bộ kích thước & trọng lượng Sinh vật / Đạo cụ (`SCALE & MASS LOCK`):** Sinh vật/đạo cụ có ảnh ref (như `Omen Fish`) được đính vào `refs` ở mọi cảnh có mặt và khóa cứng kích thước/trọng lượng tuyệt đối (`1.7m–1.9m, 80 kg`); không tả vật thể lồi bên ngoài vảy khi chưa mổ bụng | Rule 74 (4) |
+| 12 | **Hiện diện từ giây 0 & Khóa đạo cụ liền mạch (`props_lock`):** Mọi thực thể trong Shot đã có mặt từ giây đầu của Shot; đạo cụ cầm tay hoặc sợi dây hai người giằng co được khóa `exactly ONE single continuous unbroken...` | Bài học 11 |
+| 13 | **Vật lý thực tế, Chống CGI, Cấm khói thở & Deep Focus `f/8`:** Hành động chia 3 pha theo `/fk-action-choreography`, tuân thủ quán tính $p=m\cdot v$; biểu bì sinh học thô ráp; cấm khói thở trắng (`NO breath smoke`), cấm `god rays`; khóa `deep focus f/8` | Rule 57, Rule 62, `/fk-action-choreography` |
+| 14 | **Thoại chuẩn Rule 49, Voice ID riêng & Ngữ điệu kịch tính:** Số từ khớp thời lượng clip (4s: 0/6-8; 6s: 12-15; 8s: 18-22; 10s: 24-28); mỗi người nói 1 Voice ID trong `speech.voices`; nói từ đầu nhịp khi mặt lộ rõ; người nghe khép môi; thoại trong vùng nguy hiểm/tranh cãi phải nhanh, lớn, gắt; không có từ khóa mua bán/tiền bạc gây ghost op | Rule 49, Rule 54, `/sw-dialogue` |
+| 15 | **Đầy đủ `dramatic_craft` từ bộ `sw-*`:** Có đủ `beat`, `value_turn`, `subtext`, `prop_and_detail` phản ánh đúng kịch bản đã viết qua bộ skill `sw-*` | Rule 56, `/sw-scene-craft` |
 
-| 1 | → chuyển sang [`vlog-archive.md`](vlog-archive.md) §4 (góc máy vlog: selfie/POV/máy dựng). **Phim:** một góc máy ngôi thứ ba mỗi clip (`third-person cinematic camera; the camera itself is never seen`); không trùng cỡ cảnh + góc máy với clip liền trước | Rule 42 (4), prompt EMBERS |
+---
 
-| 2 | → chuyển sang [`vlog-archive.md`](vlog-archive.md) §4 (hành động 2 tay khi vlogger đang cầm máy). Phim không có ràng buộc này | — |
+## C. Kiểm Toán Sau Khi Sinh Video (24-Frame Contact Sheet + Whisper)
 
-| 3 | Mọi người/vật/sinh vật trong sub-clip đều đã có mặt trong khối "already in place" với vị trí + khoảng cách ở giây 0 | 48, Scene 2/14/39/73 |
+Khi video 720p sinh xong (trước khi upscale 1080p):
+1. Dùng `ffmpeg` trích xuất **đúng 24 frames** (`fps=24/<duration>`) và ghép thành **Contact Sheet 6×4 (`tile=6x4`)** theo Rule 73.
+2. Chạy `python tools/review_dialogue.py` (Whisper, Rule 67) kiểm tra khớp thoại.
+3. Đối chiếu từng cụm frame trên Contact Sheet 24 frames với Checklist B và 4 panel của Storyboard 2×2. Nếu phát hiện lỗi mới, cập nhật ngay vào `production-lessons.md` và `prompt-lock.md`.
 
-| 4 | Không giao hành động cho người không có trong khung; chuyển đồ vật tả từng bước tay (đưa → đỡ bằng tay nào → tay kia buông) | 48, Scene 14/15 |
+## D. Tự Đọc Lại Toàn Bộ Prompt Sau Mỗi Lần Sửa (`/fk-review-prompt`)
 
-| 5 | Không nhắc tên món đồ trên người (mũ, găng, khăn) trong sub-clip nếu không muốn nhân vật thao tác với nó; mũ đã khóa "luôn để xuống" | 52, Scene 21/62 |
-
-| 6 | Đạo cụ chức năng (găng, áo) tả **động tác mặc/xỏ trước**, buộc dây sau, khoe ngang ngực | 45, 46 |
-
-| 7 | → chuyển sang [`vlog-archive.md`](vlog-archive.md) §4 (bản vlog: selfie qua vai, người bản địa nói tiếng không hiểu được). **Phim:** nhân vật hiện mặt mà không có thoại thì khóa miệng; mỗi người nói ở nhịp riêng, voice id riêng trong `speech.voices`, không nói chồng; cảnh rình/áp sát/ẩn nấp dùng Sonic Isolation | 49 (ý chung), Rule 49 (4) |
-
-| 8 | Ngã/trượt/va chạm có **nguyên nhân vật lý** và **máy chịu hậu quả** (rung, chúi, văng); không ngã khi không gấp *(phần "máy chịu hậu quả" chỉ áp cho vlog cầm tay)* | 51, Scene 1/45 |
-
-| 9 | Vật nặng (tấm da cửa, đá) chỉ chuyển động khi có tay tác động, không giao cho "gió" | 50, Scene 9 |
-
-| 10 | Hai sinh vật cùng lông/màu không chạm nhau (vòi–voi con…); câu `"each animal is a separate body; they never overlap or merge"` | Scene 36 |
-
-| 11 | Sinh vật tuyệt chủng tả đặc điểm loài + loại trừ loài giống (`"not an African elephant"`, `"never horses or bison"`) | 53, Scene 38/48 |
-
-| 12 | `Setting:` có năm, địa điểm, tuyết/băng, ánh sáng khớp clip liền trước/sau; nội thất có câu khóa bếp trũng | 53, Scene 15/27/28/48 |
-
-| 13 | Clip nối hành động mở bằng đúng trạng thái cuối clip trước (vị trí, tư thế, ánh sáng, mối nguy) và **không đi trước** clip sau về thời gian | 44, 51, Scene 43/70 |
-
-| 14 | Muốn nhân vật nhìn thấy thứ ở phía sau → thứ đó đã nằm trong khung từ giây 0 (không đổi phông khi quay đầu) | 42, Scene 70 |
-
-| 15 | Tối đa 7 ref/clip (giới hạn Omni Flash; luật 3 ref đã bỏ — user 2026-10-14): `<V>` + `<V> Body` (đã mặc outfit của tập) + ref của mọi sinh vật/bối cảnh có trong khung; ref sinh vật đang đe dọa phải có trong cảnh đó; không có entity `<V> Outfit` | 47, 51, 60, Rule 46 |
-
-| 16 | → chuyển sang [`vlog-archive.md`](vlog-archive.md) §4 (từ chỉ thiết bị quay của vlog). **Phim:** không gọi tên vật/thú/lửa/thiết bị mà mình không muốn thấy trong khung, kể cả trong thoại và audio; không dùng dòng `Negative:` dạng văn xuôi (ràng buộc nằm trong `negative_constraints`) | 33 (ý chung), 73, 77, 99 |
-
-| 17 | → chuyển sang [`vlog-archive.md`](vlog-archive.md) §4 (câu mẫu tay trống của vlog bị lặp) | — |
-
-| 18 | **Nhịp gửi request:** **mọi request tới Flow** (sinh ảnh/video, upscale, upload ảnh ref, tạo project, poll trạng thái, đọc media) cách nhau **ngẫu nhiên 45–60s** — server đã khóa sẵn (`FLOW_GENERATION_MIN/MAX_INTERVAL_S`); script tự gửi thì dùng `random.uniform(45, 60)`, dừng ngay khi gặp `UNUSUAL_ACTIVITY` hoặc `QUOTA`. Video: mỗi lần 1 video, chờ video trước xong rồi ~30s sau mới gửi tiếp (user chốt 2026-10-07) | 54 |
-
-| 19 | **Khóa tóc cụ thể theo ảnh ref:** vị trí cột tóc (`tied at the crown of her head, not low at the nape`), mái (`wispy curtain bangs parted in the middle that cover the edges of her forehead and frame both cheeks`), `never slicked back`; có gió thì ghi `wind only makes the ponytail swing, the bangs stay over her forehead` — không viết tóc bị gió `whip` | 55 |
-
-| 20 | **Cảnh POV có tay vlogger** (cầm, chạm, xỏ, đỡ đồ) → `character_names` phải có `<V>` + `<V> Body` (đã mặc outfit) để bàn tay, cổ tay áo đúng của nhân vật chính (user chốt 04/10/2026, cập nhật theo Rule 46) | Scene 45/53, 60 |
-
-| 21 | **Đạo cụ cầm tay của nhân vật phụ** (giáo, gậy, cốc) → tạo ref riêng `<Tên> <Đạo cụ>` (vd `Torak Spear`) bằng **EDIT từ ảnh ref gốc** của nhân vật (giữ mặt + trang phục), sheet 16:9 3 góc, đạo cụ cầm sẵn trong tay; xóa logo → upload lại → dùng thay ref nhân vật trong cảnh đó | Scene 29 |
-
-| 22 | Hành động chia đúng 3 pha (chuẩn bị → **một** đòn theo một hướng → thu thế): dễ thì khớp `0-3s / 3-6s / 6-8s` trong 1 clip 8s, dễ lỗi thì mỗi pha 1 clip 4s (dòng 31); không xoay 360°, không thú lao thẳng vào ống kính, không tả xuyên thịt — chỉ tả quỹ đạo và hậu quả | `cinematic-toolkit.md` §1 |
-
-| 23 | Cảm xúc của vlogger viết bằng triệu chứng cơ thể (thở, mắt, hàm, vai), không bằng tính từ (`terrified`, `sad`); clip có vòng A → chất xúc tác → B | `cinematic-toolkit.md` §2 |
-
-| 24 | → chuyển sang [`vlog-archive.md`](vlog-archive.md) §4 (Rule 50: săn bắn quay POV, cấm selfie). **Phim:** săn bắn/giao chiến/chạy trốn theo 3 pha của `/fk-action-choreography`; cắt thoại khi rình (Sonic Isolation) | `cinematic-toolkit.md` §1 |
-
-| 25 | → chuyển sang [`vlog-archive.md`](vlog-archive.md) §4 (Rule 50: xoay vòng POV → selfie → máy dựng). **Phim:** đổi cỡ cảnh liên tục, không 2 cảnh liền nhau cùng góc máy + cỡ cảnh | Rule 42 (4) |
-
-| 26 | **KHÓA TRANG PHỤC THUẦN ẢNH THAM CHIẾU (Bài học 63):** Tuyệt đối KHÔNG mô tả lại trang phục bằng lời trong prompt (không tự thêm shearling collar, tunic, fur-lined...); chỉ trỏ thẳng ref: `wears the exact historical outfit shown in the <V> Body reference sheet (NO shearling collar, NO extra fur, NO hood, NO outfit variations)` | Bài học 63, Scene 21 |
-
-| 27 | → chuyển sang [`vlog-archive.md`](vlog-archive.md) §4 (BODY LOCK tôn dáng vlogger — trái memory 2026-10-14 "Body lock = normal figure"). **Phim:** dáng người lấy từ ảnh Body, không tả vòng 1 | Bài 63 (quy tắc 3) |
-
-| 28 | → chuyển sang [`vlog-archive.md`](vlog-archive.md) §4 (material `phone_vlog`). **Phim:** material `realistic` / `documentary_footage` hoặc material riêng của phim | — |
-
-| 29 | **KHÓA BỐI CẢNH REF 16:9 DÙNG CHUNG & REVIEW START FRAME (Bài học 69):** Mỗi cụm cảnh cùng không gian (bếp lửa C27-28, bàn thuộc da C30-31, cửa hang C33-36, ổ ngủ C51-54) BẮT BUỘC sinh 1 ảnh ref bối cảnh 16:9 sạch watermark, đưa user duyệt trước, gán vào `reference_media_ids` dùng chung; prompt trỏ trực tiếp: `SETTING: Matches the exact layout shown in the [Setting Reference] image`; khóa đạo cụ đơn nhất (`single tool, never duplicate`), cấm người ngoài rìa đứng thừa | Bài học 69, Scene 27/28/30 |
-
-| 30 | **MỘT TAY — MỘT ĐẠO CỤ — SUỐT CLIP (Bài học 70):** đạo cụ chính nằm ở **một tay từ giây 0 tới giây cuối**, không đặt xuống, không chuyền tay; nhân vật đối diện máy thì ghi kèm vị trí khung (`her right hand, on the left side of the frame`); tối đa 2 trạng thái tay/clip; khoe kết quả bằng tay đang cầm sẵn; `negative_constraints` đếm đạo cụ (`exactly one flake, always in her right hand, never vanishes, never duplicates, never appears on the slab`) | Bài học 70, Scene 29 |
-
-| 31 | **ĐỘ DÀI CLIP THEO ĐỘ KHÓ & PHÂN ĐỊNH CHUỖI 4s VS CHUYỂN CẢNH (Bài học 71):** (1) Cảnh dễ lỗi liền mạch (chạy nhanh, tương tác thú, ngã/rơi máy, sinh vật lớn băng qua khung, VFX, vật vỡ/gãy) đã tách thành **chuỗi 4s** `a/b/c` — mỗi mắt xích 1 hành động, **CẤM TUYỆT ĐỐI CHUYỂN CẢNH / ĐỔI GÓC MÁY trong chuỗi** (giữ nguyên 100% refs + `Setting` + ánh sáng + `camera.viewpoint` + `camera.shot_size`), mở bằng tư thế cuối mắt xích trước; (2) Cảnh phức tạp CÓ CHUYỂN CẢNH / ĐỔI GÓC: **CẤM gom vào chuỗi `a/b/c`**, bắt buộc tách Scene ID riêng biệt (4s/6s) nối bằng kỹ thuật dựng phim; (3) Cảnh dễ không chuyển cảnh mới để 8s/10s; sub-clip và số từ khớp `duration`; `duration` đã PATCH đúng cột `Dur` | Bài học 71, Rule 49 (0) |
-
-| 32 | **TAY POV LẤY TỪ `<V> BODY` (Bài học 95, thay Bài 72):** cảnh POV có thao tác tay đính `<V> Body`, KHÔNG đính `<V> Hand`; câu khóa `her hands and bare forearms are exactly the hands and arms of the woman in {{ref:<V> Body}}` + độ dài tay áo đúng như Body (tay ngắn → `no sleeve, cuff or fabric is anywhere on her forearms`); `negative_constraints` cấm tay nam, cẳng tay lông, tay áo dài/sờn, đồng hồ, móng sơn, thừa ngón | Bài học 95, A1-06 Hell Creek v2 |
-
-| 33 | **ĐẶC TẢ CHẤT LIỆU SINH HỌC KHỦNG LONG & TRIỆT TIÊU CGI (Bài học 73):** Cảnh có khủng long / bò sát khổng lồ BẮT BUỘC tả đủ 3 trụ cột: (1) **Action:** lao chéo 3/4 (cấm đâm chính diện), trượt quán tính $p=m \cdot v$ cày bùn 40cm (cấm phanh ABS), giậm chân thị uy rồi quay đi (cấm cắn xé quái dị); (2) **Material:** da vảy sần sùi osteoderms, nếp gấp da cổ đẫm bùn nứt nẻ, sừng gãy lộ sợi keratin, sẹo rách diềm sọ, lỗ mũi khô ráo sạch sẽ (strictly NO breath vapor, strictly NO smoke or steam), dãi mỏ tự nhiên, mắt hổ phách phản chiếu ánh sáng tự nhiên, cấm tuyệt đối da nhẵn sáp/CGI; (3) **Setting:** móng nén bùn lún 15 kPa hất tung bùn đỏ, sừng quét toác cành gỗ mục, ánh sáng ban mai tán xạ qua vòm lá rậm rạp (*dappled canopy sunlight*) phá vỡ ánh sáng phẳng 3D render | Bài học 73, Scene 14-16 Hell Creek |
-
-| 34 | **KHÓA CHUẨN TURNAROUND SHEET CHO REF SINH VẬT & NHÂN VẬT (Rule 58, Rule 72 & `/fk-character-design`):** Mọi ảnh reference cho nhân vật và sinh vật chủ chốt BẮT BUỘC dùng `/fk-character-design` thiết kế Turnaround Sheet 16:9 chuẩn đa góc (3 panel sinh vật: 3/4 trái, 3/4 phải, cận cảnh đầu sọ; 4 góc nhân vật: Front, 3/4, Profile, Close-up) khóa 5 tầng DNA anchors. BẮT BUỘC chụp ảnh người thật 35mm (Live-Action Casting) hoặc sinh vật practical animatronic SFX. CẤM tự viết prompt ad-hoc, CẤM TRIỆT ĐỂ từ khóa 2D/sketch (`study`, `concept`, `sketchbook`, `drawing`, `illustration`), và BẮT BUỘC kèm negative constraints cấm 2D/CGI | Rule 58, Rule 72, Bài học 74, `/fk-character-design` |
-
-| 35 | **XÁC PHÂN HỦY LÚN BÙN 30CM & TRIỆT TIÊU VỆT LỐP XE / GOD RAYS (Rule 59):** (1) Xác thú lớn chìm lún 30cm vào bùn phù sa ướt, sườn ố vàng dính thịt rữa & gân bám sụn, vết cắn T. rex dập tủy, ruồi nhặng bu quanh; CẤM xương trắng khô thạch cao như bảo tàng. (2) Đường mòn động vật giẫm đạp hỗn loạn; CẤM 100% vệt lốp xe ô tô 4x4, thân gỗ xẻ, đường lâm nghiệp. (3) Ánh sáng ban mai tán xạ tự nhiên, ẩm ướt; CẤM god rays volumetric ảo diệu | Rule 59, Bài học 75 |
-
-| 36 | **KHÓA CHẶT 1:1 KHUÔN MẶT BẰNG MỆNH LỆNH SẮT ĐÁ & ĐẶC TẢ NGŨ QUAN (Rule 60):** Dùng đúng ảnh Ref hiện có (không cần cắt mới). Mọi cảnh có mặt Vlogger BẮT BUỘC có khối `FACE & IDENTITY LOCK (CRITICAL)` gồm: (1) Lệnh ép 1:1: `[Name]'s face is an exact 1:1 identical match to the attached [Name] reference image. Perfectly preserve her exact facial likeness from the reference photo without changes`; (2) Đặc tả ngũ quan: mặt trái xoan mềm, cằm thon, má bầu bĩnh, mũi nhỏ thẳng, đặc biệt là bờ môi dày mọng hình trái tim (`FULL PLUMP PILLOWY LIPS with Cupid's bow`); (3) Khối cấm đối kháng: `strictly NO square jaw, NO thin lips, NO aged appearance (must look 22-23)`; (4) Khóa tay tự do trống không cấm ghost phone *(ý (4) "tay tự do trống, cấm ghost phone" chỉ áp cho vlog; phim nhắc chip ref theo dòng 40)* | Rule 60, Bài học 76 |
-
-| 37 | **KHÓA TUYỆT ĐỐI CHỐNG KHÓI THỞ, CHẤT LIỆU DA THÚ PACHYDERM KHÔNG BÓNG NHỰA, VÀ DEEP FOCUS f/8 (Rule 62):** CẤM TUYỆT ĐỐI hơi thở khói trắng/sương mù (zero smoke, zero breath vapor, zero steam); da thú sần sùi thô ráp không phản quang (non-reflective pachyderm hide) như tê giác/voi; cấm tia nắng streaming god rays và đèn viền studio rim light; cảnh trung và selfie bắt buộc deep focus f/8 chống xóa phông bokeh | Rule 62 |
-
-
-
-| 38 | **BẮT BUỘC TRUYỀN ID ẢNH REF VLOGGER (`source_media_id`) KHI SINH START FRAME CÓ NHÂN VẬT (Rule 63 & Bài học 78):** Khi sinh ảnh Start Frame cho các cảnh có Vlogger / nhân vật chính, request BẮT BUỘC phải truyền `source_media_id` = UUID của ảnh ref nhân vật (`uploads/nora_main_clean.jpg`) để Google Flow gán trực tiếp thẻ ảnh ref vào canvas (`BASE_IMAGE`), khóa cứng nhận diện 1:1, ngăn Imagen 3 vẽ khuôn mặt ngẫu nhiên từ text | Rule 63, Bài học 78 |
-
-| 39 | **SHEET REF SINH VẬT CÓ DẤU BẤT ĐỐI XỨNG (Bài học 93):** Panel 1/2 tả bằng "đầu chỉ về mép TRÁI/PHẢI của ảnh, sườn nào hướng máy"; panel 3 là cận đầu 3/4 nhìn từ phía có dấu (sừng gãy, vệt má, sẹo), không chính diện thuần; bạo chúa ghi môi kín kiểu kỳ đà, `zero teeth are visible`; review soi chữ/số tự chèn và đạo cụ cố định đúng bên | Bài học 93 |
-
-| 40 | **NHẮC ẢNH REF NGAY TRONG PROMPT (Rule 64):** mọi ảnh ref đính kèm đều được nhắc tại câu khóa bằng `{{ref:<entity>}}` (gửi đi thành `{{media:<uuid>\|<file>}}` = chip ảnh của Flow); mặt/makeup/trang phục KHÔNG tả lại bằng chữ, chỉ "exactly as in {{ref:X}}"; Start Frame có vlogger đính đúng 3 ref [mặt, Body, bối cảnh]; `lint_prompt.py` đạt 0 lỗi mention | Rule 64 |
-
-| 41 | **ĐẠO CỤ CHÍNH GIỐNG HỆT NHAU GIỮA CÁC CLIP CHUYỂN CẢNH (Bài học 94):** đạo cụ xuất hiện ở ≥2 clip (bình, dao, gùi) dùng **một câu tả chuẩn** (hằng số trong `common.py`) nguyên văn ở mọi clip, kể cả clip nhặt / chế tác; không tính từ trái với ref (`bleached`, `white`, `shiny`); clip có đạo cụ đính ref chứa nó (đồ trên sheet Body → đính `<V> Body`) ở cả `image_refs` lẫn `character_names`; clip chuyển trạng thái đạo cụ miễn câu sổ liên tục, tự ghi `At second 0 … by second N …`; đồ đeo ghi độ dài dây + vị trí so với thắt lưng | Bài học 94, A1-06/A1-07 Hell Creek v2 |
-
-| 42 | **MỘT SỢI DÂY LIỀN KHI HAI NGƯỜI CÙNG CẦM (Bài học 96):** clip có dây/dây cương/xích/khăn mà hai nhân vật cùng cầm hoặc giằng co có `props_lock` "exactly ONE … single continuous unbroken …", ghi rõ ai cầm đoạn nào, lúc giật thì "slides out … in one piece" + tay người kia trống, và câu cấm đứt/tách đôi/nhân đôi | Bài học 96, EMBERS RA-02 |
-
-| 43 | **CẢNH SUÝT CHẠM (Bài học 97):** beat "gần chạm rồi rút" ghi khoảng cách (cm) + "a clear gap of air … never touching" + câu cấm chạm/vuốt/vỗ; chia vươn → khựng → rút; máy cố định ghi rõ không di chuyển/không zoom, chỉ chuyển nét; beat 3 nhịp dùng ≥ 6s | Bài học 97, EMBERS RA-03 |
-
-| 44 | **ĐƯỜNG ĐI QUA VẬT CẢN (Bài học 98):** nhân vật di chuyển trong khung có rào/cổng/xe/cột → ghi rõ đi dọc/vòng/qua cửa nào so với vật cản + câu cấm đi xuyên; điểm đến phải có trong Start Frame | Bài học 98, EMBERS RA-05 |
-
-| 45 | **CLIP IM LẶNG KHÔNG CÓ RADIO TRÊN HÌNH (Bài học 99):** câu nói qua bộ đàm/điện thoại để ở `post_vo` (thêm khi dựng), không viết vào prompt; clip im lặng không cho bộ đàm xuất hiện, nhân vật chỉ khựng lại/nghiêng đầu nghe; bắt buộc có radio thì ghi trước là sẽ tắt tiếng gốc khi dựng; Whisper phải PASS (không EXTRA SPEECH) | Bài học 99, EMBERS EM-01 |
-
-| 47 | **CẢNH TRANH CÃI NÓI TO, GẮT, CỘC (Bài học 101):** thoại đối đầu / ra lệnh dưới áp lực ghi rõ "loud and sharp, voice raised over the roar, every word hard, clipped and forceful, each short sentence punched out like an order" ở cả `speech.delivery` lẫn nhịp timeline; bỏ "low / quiet / voice drops / flat"; không trích lại câu thoại ở nhịp khác. **Một chữ "loud" không đủ** (BN-04 v1): động từ `yells` + "at the top of his/her voice" ở từng nhịp, `state` có thân thể căng, thêm câu cấm "never a normal talking voice, never calm…" | Bài học 101, EMBERS CH-03, BN-04 |
-
-| 48 | **THOẠI TRONG VÙNG NGUY HIỂM PHẢI GẤP (Bài học 102):** clip có thoại khi nguy hiểm đang diễn ra (cháy, bão, rượt đuổi, cứu người, sơ tán) không được có `natural pace` / `runs on from 0s through Ns`; `speech.delivery` ghi "shouted fast and hoarse over the roar, urgent, clipped, no pauses, never calm, never slow"; tách câu theo nhịp và nói xong sớm (vd. hết thoại trước giây 4 của clip 6s); `characters.state` có trạng thái căng bằng thân thể (mồ hôi, hàm nghiến, mắt đảo, không đứng yên); timeline luôn có chuyển động + một biến cố áp lực; câu cấm "never calm or relaxed: no slow talking, no soft voice, no pauses, no standing still, no gentle smile". Nhịp chậm chỉ cho beat lặng có chủ đích | Bài học 102, EMBERS LH-02 |
-
-| 49 | **CẢNH CHÁY RỪNG PHẢI CHÁY ĐỀU, MÁY GẦN (Bài học 103):** `setting` tả cả rừng hai bên cháy đều (thân cây, ngọn, cỏ mép đường, tường lửa liền phía sau, không còn cây xanh), lửa là nguồn sáng chính; `camera` cầm tay cách nhân vật 3–4 m, khung từ gối trở lên, không `WS` / ống kính dài; câu cấm "fire never limited to one or two trees" và "no burning object flies sideways through the air"; vật rơi gần người phải ghi khoảng cách bằng mét kèm "never falls on or touches her" | Bài học 103, EMBERS RR-13 |
-
-| 46 | **THOẠI KHÔNG NÓI CHUYỆN TRẢ TIỀN / MUA BÁN (Bài học 100):** nhân vật trẻ nói với người khác về trả tiền/mua/bán ("buy her back… forty dollars", "Please, I can pay!") bị Flow chặn im lặng (ghost op) dù đã thêm ngữ cảnh con vật; bỏ hẳn ý tiền khỏi thoại và subtext, đưa vào `post_vo`/phụ đề nếu cần; ghost 2 lần cùng clip → soát thoại trước, không gửi lại nguyên văn | Bài học 100, EMBERS EL-03 |
-| 50 | **CLIP PHIM CÓ SINH ẢNH → STORYBOARD 2×2 (Rule 69, user lock 22/10/2026):** clip chuyển cảnh (Rule 65 Loại 2) có `start_frame.type = "STORYBOARD"`, khối `storyboard` có câu khóa "STORYBOARD OF FOUR MOMENTS IN TIME", `refs` mở bằng `<CLIP> P1` + `<CLIP> Storyboard`; không có `GENERATE_IMAGE` 1 khung. Mốc panel: 4s 0/1/3/4 · 6s 0/2/4/6 · 8s 0/3/6/8 · 10s 0/3/7/10. Clip liên tục vẫn `PREV_LAST_FRAME` | `/fk-storyboard` |
-| 51 | **ĐỌC THỂ ẢNH STORYBOARD THỰC TẾ TRƯỚC KHI SINH VIDEO (Rule 69 (7), user lock 22/10/2026):** Sau khi có ảnh storyboard 2×2 sạch, BẮT BUỘC đọc và phân tích trực quan 4 panel thực tế (cỡ cảnh, góc máy, vị trí người/vật, nhịp hành động) để ĐIỀU CHỈNH LẠI `video_prompt` (`camera.shot_size`, `camera.movement`, chuyển động máy/vắt cảnh dolly vs cut, `timeline_action`, số cú cắt trong `negative_constraints`) cho khớp 100% với ảnh storyboard thực tế. CẤM dùng prompt video viết sẵn mà không đối chiếu với ảnh storyboard thực tế vừa sinh! | Rule 69 (7), `/fk-storyboard` Bước 3.5 |
-| 52 | **SINH ẢNH STORYBOARD BẮT BUỘC TRUYỀN `source_media_id` TỪ ẢNH REF CÓ SẴN (Rule 69 (8), user lock 22/10/2026):** Mọi request sinh ảnh storyboard 2×2 có nhân vật BẮT BUỘC truyền `source_media_id` = UUID của ảnh ref nhân vật chính / Body có sẵn trong dự án; prompt nhắc chip ref; CẤM sinh text-to-image chay từ con số 0 làm sai lệch nhân vật | Rule 69 (8), `/fk-storyboard` Bước 2 |
-| 53 | **NHẮC ẢNH STORYBOARD BẰNG CHIP `{{media:}}` VÀ CHỈ THỊ ĐỌC ĐÚNG PANEL (Rule 69 (9), user lock 22/10/2026 — BỎ P1):** Prompt video r2v bắt buộc nhắc `<CLIP> Storyboard` bằng inline chip `{{media:<uuid>|<CLIP> Storyboard.jpg}}` như mọi ref khác; `camera.shot_size` chỉ định `OPENING SHOT (second 0): matching the top-left panel of {{media:<uuid>|<CLIP> Storyboard.jpg}}`; `storyboard` trỏ chip và chỉ thị đọc đúng 4 panel theo mốc giây; `timeline_action` ghi rõ đối chiếu từng panel (`Matching Panel 1 to Panel 2 of {{media:...}}`); CẤM để `{{ref:}}` chưa resolve thành `{{media:}}` khi lưu DB | Rule 69 (9), `/fk-storyboard` Bước 4 |
-| 54 | **CẮT CẢNH HARD CUT THEO STORYBOARD & KHÓA CHỐNG PHÂN THÂN NHÂN VẬT (Rule 74 & Bài học 80, user lock 23/10/2026):** Khi tấm Storyboard 2×2 thể hiện các góc máy, cỡ cảnh hoặc nhân vật khác nhau giữa các panels: (1) `camera.description` & `timeline_action` BẮT BUỘC chỉ định rõ **crisp hard cuts** tại đúng mốc giây (`At second 3.0, a crisp hard cut matching Panel 2... At second 7.0, a crisp hard cut matching Panel 3 & 4...`), CẤM dùng 1 cú tracking dolly liên tục; (2) Khi cú máy chỉ quay nhân vật B, BẮT BUỘC ghi `Strictly [Character B] alone in this shot; [Character A] is completely off-screen and never seen`; (3) `negative_constraints` BẮT BUỘC có khối chống phân thân: `strictly NO duplicate characters, strictly NO multiple [Name], strictly [Other] alone in shot Y, [Name] never appears in [shot Y], no ghost figures, no cloning; crisp hard cuts at second X.0 and second Y.0, no camera blending, no crossfades` — triệt tiêu 100% lỗi xuất hiện 2 bản sao cùng lúc (như 2 Nora giây 9 SC-01) | Rule 74, Bài học 80 |
-
-
-
-**C. Sau khi sinh — rà lỗi theo cùng checklist** khi review (`/fk-review-video` + user): trích đúng 24 frames/clip bằng ffmpeg (`fps=24/<duration>`, contact sheet `tile=6x4`, Rule 73), đối chiếu từng dòng B; lỗi mới chưa có trong bảng → ghi bài học mới vào `production-lessons.md` **và** thêm 1 dòng vào bảng B.
-
-**D. Đọc lại toàn bộ sau mỗi lần sửa (Bài học 86)** — mục này được `/fk-review-prompt` chạy thành một bước có báo cáo: (1) sau khi sửa bất kỳ câu nào, đọc lại **cả** prompt, không chỉ câu vừa sửa; (2) gom các câu theo thuộc tính (tốc độ, hướng đi, máy đứng yên hay di chuyển, ánh sáng, bối cảnh, số lượng đạo cụ) và kiểm hai câu có nói ngược nhau không; (3) chạy hết checklist B; (4) gửi kèm prompt một báo cáo tự đánh giá (dòng nào áp, Đạt / Không đạt, mâu thuẫn đã sửa) trước khi hỏi user duyệt sinh. Linter chỉ bắt `SPEED_CONTRADICTION` và `CAMERA_CONTRADICTION`; mọi mâu thuẫn khác phải tự đọc mà tìm.
+Sau mỗi lần chỉnh sửa bất kỳ trường nào trong prompt JSON:
+1. Đọc lại **toàn bộ** đối tượng prompt của cảnh đó (không chỉ đọc dòng vừa sửa).
+2. Kiểm tra chéo giữa `camera`, `storyboard`, `timeline_action`, `speech`, `props_lock`, và `negative_constraints` để đảm bảo không có hai câu nào tự mâu thuẫn (về tay trái/phải, vị trí trái/phải của lan can, số cú cắt cảnh, trạng thái đứng yên hay di chuyển của máy quay).
+3. Chạy `python tools/lint_prompt.py` đạt `errors=0` trước khi trình User duyệt.

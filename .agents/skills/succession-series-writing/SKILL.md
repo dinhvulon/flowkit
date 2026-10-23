@@ -1,6 +1,6 @@
 ---
 name: succession-series-writing
-description: Writing a Succession-style ensemble series (继承之战群像剧写法) — distilled from Jesse Armstrong's complete shooting scripts for all four seasons, 39 episodes (Faber 2023), with his introductions and footnotes, plus Frank Rich's and Lucy Prebble's essays on the writers' room. Covers the invisible-act three-test for scripts with no ACT marks, container episodes built on a ceremony's running order, pressure chambers, one core question per episode, finales with fewer and longer scenes, the absent protagonist at the climax, humiliation passed downward, stage directions carrying subtext and "maybe", reversals turned on one word, writing long, alts, the mega-chart, and engineering an ending once the plot engine loses pressure. Use when the user wants a dynastic family drama, a media-power ensemble, a wedding/funeral/summit set piece, a streaming hour with no act breaks, a finale that redraws alliances, or asks how to "Succession-ize" a script or kill a lead mid-season.
+description: 'Writing a Succession-style ensemble series (继承之战群像剧写法) — distilled from Jesse Armstrong''s complete shooting scripts for all four seasons, 39 episodes (Faber 2023), with his introductions and footnotes, plus Frank Rich''s and Lucy Prebble''s essays on the writers'' room. Covers the invisible-act three-test for scripts with no ACT marks, container episodes built on a ceremony''s running order, pressure chambers, one core question per episode, finales with fewer and longer scenes, the absent protagonist at the climax, humiliation passed downward, stage directions carrying subtext and "maybe", reversals turned on one word, writing long, alts, the mega-chart, and engineering an ending once the plot engine loses pressure. Use when the user wants a dynastic family drama, a media-power ensemble, a wedding/funeral/summit set piece, a streaming hour with no act breaks, a finale that redraws alliances, or asks how to "Succession-ize" a script or kill a lead mid-season.'
 ---
 
 # Succession 式剧集写法（Armstrong 四季 39 集拆解）
@@ -270,3 +270,4 @@ reference.md 是 39 集逐集表与原文范例，只在要找具体某一集的
 20. 季终是不是场景更少、更长？是不是重画了阵营线而不是解决了冲突？
 21. 最后上位的那个人是不是最可替换的那个人？他的任命理由是不是由敌人说出的？
 22. 你有没有在门口宣布你的意图？
+

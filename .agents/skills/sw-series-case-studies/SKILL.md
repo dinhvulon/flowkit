@@ -1,6 +1,6 @@
 ---
 name: sw-series-case-studies
-description: Primary case studies of television series writing — synthesized from Aaron Sorkin's West Wing teleplays (act-page tables, eight act-out types, walk-and-talks); David Chase's Sopranos shooting scripts (the 35-beat A/B/C/D recipe, pilot reticence, therapy framing); Julian Fellowes's annotated Downton Abbey (19 storylines, 419 craft footnotes, ensemble scene economies); Phoebe Waller-Bridge's Fleabag Scriptures (six-episode half-hour template, fourth-wall device as season arc); Daniel Calvisi's minute-by-minute pilot beat sheets (Breaking Bad, Mad Men, Game of Thrones, Scandal, True Detective); Neil Landau's 47-series structural taxonomy; Kam Miller's scene escalation breakdowns (Hannibal, HTGAWM); Goldberg & Rabkin's production beat sheets; Sakamoto Yuji (We Made a Beautiful Bouquet); and Noh Hee-kyung (The Most Beautiful Goodbye). Use when seeking verified structural data, real act lengths, scene counts, storyline grids, or when breaking an ensemble pilot, bottle episode, or serialized drama.
+description: 'Primary case studies of television series writing — synthesized from Aaron Sorkin''s West Wing teleplays (act-page tables, eight act-out types, walk-and-talks); David Chase''s Sopranos shooting scripts (the 35-beat A/B/C/D recipe, pilot reticence, therapy framing); Julian Fellowes''s annotated Downton Abbey (19 storylines, 419 craft footnotes, ensemble scene economies); Phoebe Waller-Bridge''s Fleabag Scriptures (six-episode half-hour template, fourth-wall device as season arc); Daniel Calvisi''s minute-by-minute pilot beat sheets (Breaking Bad, Mad Men, Game of Thrones, Scandal, True Detective); Neil Landau''s 47-series structural taxonomy; Kam Miller''s scene escalation breakdowns (Hannibal, HTGAWM); Goldberg & Rabkin''s production beat sheets; Sakamoto Yuji (We Made a Beautiful Bouquet); and Noh Hee-kyung (The Most Beautiful Goodbye). Use when seeking verified structural data, real act lengths, scene counts, storyline grids, or when breaking an ensemble pilot, bottle episode, or serialized drama.'
 ---
 
 # Television Series Case Studies
@@ -245,3 +245,4 @@ A masterclass in transforming terminal illness into dramatic reconciliation with
 | **Asymmetric Time Allocation** | *We Made a Beautiful Bouquet* (42% Year 1) | `sw-story-structure` |
 | **The Unspoken Clinical Word** | *The Most Beautiful Goodbye* (Withholding "Cancer") | `sw-dialogue` |
 | **Guilt Over Grief Engine** | *The Most Beautiful Goodbye* ("Whose regret was I?") | `sw-premise-theme` |
+

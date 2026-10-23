@@ -1,28 +1,18 @@
 #!/usr/bin/env python3
 """
-Flow Kit — AI Tool Setup
-Generates AI tool configs from skills/fk-*.md (single source of truth).
+Flow Kit — AI Tool Setup & Rule Synchronizer
+Generates AI tool configs and synchronizes rules from skills/ and CLAUDE.md
+across Claude Code (.claude/commands/), Antigravity / Gemini IDE
+(.agents/skills/, .agents/rules/claude_rules.md, GEMINI.md), and Codex CLI (AGENTS.md).
 
 Usage:
     python setup.py                  # Interactive: pick your AI tool(s)
     python setup.py --tool claude    # Generate for Claude Code
     python setup.py --tool codex     # Generate for Codex
+    python setup.py --tool antigravity # Generate for Antigravity / Gemini
     python setup.py --tool all       # Generate for all tools
     python setup.py sync             # Re-sync all previously selected tools
     python setup.py clean            # Remove all generated tool configs
-
-The Gemini CLI target was removed in v1.3.1. The Gemini CLI is retired, and
-its replacement `agy` (Antigravity) reads none of what that target produced —
-verified against agy 1.2.7: a project's `.gemini/commands/*.toml` is not
-expanded, `.claude/commands/*.md` is not either, and `GEMINI.md`, `AGENTS.md`
-and `CLAUDE.md` are all absent from a print-mode run's context even inside a
-trusted folder. agy's own commands come from its plugin system
-(`agy plugin import`), which imports extensions rather than command files.
-
-`agy` is still a first-class part of Flow Kit — as one of the three AI CLIs
-that can run video review. That is configured in `agent/providers.json` via
-`/fk-change-provider` or the dashboard, not here: this script generates
-per-project command files for the CLI you *drive* Flow Kit from.
 """
 
 import argparse
@@ -36,15 +26,24 @@ ROOT = Path(__file__).parent
 SKILLS_DIR = ROOT / "skills"
 CLAUDE_COMMANDS_DIR = ROOT / ".claude" / "commands"
 AGENTS_MD = ROOT / "AGENTS.md"
+GEMINI_MD = ROOT / "GEMINI.md"
 ANTIGRAVITY_SKILLS_DIR = ROOT / ".agents" / "skills"
 ANTIGRAVITY_RULES_DIR = ROOT / ".agents" / "rules"
 CLAUDE_MD = ROOT / "CLAUDE.md"
 STATE_FILE = ROOT / ".fk-setup.json"
 
-# Nothing generates these any more; `clean` still removes them so an install
-# from before v1.3.1 does not keep stale files for a CLI that no longer exists.
 LEGACY_GEMINI_COMMANDS_DIR = ROOT / ".gemini" / "commands" / "fk"
-LEGACY_GEMINI_MD = ROOT / "GEMINI.md"
+
+# Non-skill directories or helper folders inside skills/ to skip during discovery
+_SKIP_SKILL_DIRS = {
+    "character-scene-design-skills-main",
+    "song-templates",
+    "__pycache__",
+}
+_SKIP_SKILL_FILES = {
+    "README.md",
+    "fk-vlog-guide.md",
+}
 
 
 def _split_frontmatter(text):
@@ -57,37 +56,48 @@ def _split_frontmatter(text):
 
 
 def discover_skills():
-    """Scan skills/fk-*.md and skills/fk-*/SKILL.md for name + description.
+    """Scan skills/ for all flat (*.md) and folder (*/SKILL.md) skills.
 
-    A flat skill's description is its first line. A folder skill (SKILL.md
-    plus supporting files such as references/) uses its frontmatter
-    `description`, falling back to its first line.
+    Includes all `fk-*` skills, all `sw-*` screenwriting skills, and companion
+    dramaturgy / editing skills (`chekhov-dramaturgy`, `ozu-screenplay-style`,
+    `succession-series-writing`, `video-editing`, `extract-capcut-srt`,
+    `translate-capcut-srt`).
     """
     if not SKILLS_DIR.exists():
         print(f"ERROR: skills/ directory not found at {SKILLS_DIR}")
         return []
 
-    sources = [(p.stem, p, None) for p in SKILLS_DIR.glob("fk-*.md")]
-    sources += [(d.name, d / "SKILL.md", d) for d in SKILLS_DIR.glob("fk-*")
-                if d.is_dir() and (d / "SKILL.md").is_file()]
+    sources = []
+    for p in SKILLS_DIR.glob("*.md"):
+        if p.name in _SKIP_SKILL_FILES:
+            continue
+        sources.append((p.stem, p, None))
+
+    for d in SKILLS_DIR.iterdir():
+        if not d.is_dir() or d.name in _SKIP_SKILL_DIRS or d.name.startswith("."):
+            continue
+        skill_md = d / "SKILL.md"
+        if skill_md.is_file():
+            sources.append((d.name, skill_md, d))
 
     skills = []
-    for stem, path, folder in sorted(sources, key=lambda s: s[0]):
-        name = stem[len("fk-"):]  # strip "fk-" prefix
+    for skill_id, path, folder in sorted(sources, key=lambda s: s[0]):
+        short_name = skill_id[len("fk-"):] if skill_id.startswith("fk-") else skill_id
         description = ""
         try:
             frontmatter, body = _split_frontmatter(
-                path.read_text(encoding="utf-8", errors="replace"))
+                path.read_text(encoding="utf-8", errors="replace")
+            )
             for line in frontmatter.splitlines():
                 if line.startswith("description:"):
                     description = line[len("description:"):].strip().strip("'\"")
-            if not description:
-                # Strip leading markdown heading markers
+            if not description and body.splitlines():
                 description = body.splitlines()[0].strip().lstrip("#").strip()
         except (IndexError, OSError):
-            description = f"{name} skill"
+            description = f"{skill_id} skill"
         skills.append({
-            "name": name,
+            "id": skill_id,
+            "name": short_name,
             "description": description,
             "path": str(path),
             "dir": str(folder) if folder else None,
@@ -102,13 +112,18 @@ def _skill_rel_path(skill):
 
 
 def generate_claude(skills):
-    """Create .claude/commands/fk-<name>.md stubs."""
+    """Create .claude/commands/<skill_id>.md stubs for all discovered skills."""
     CLAUDE_COMMANDS_DIR.mkdir(parents=True, exist_ok=True)
+    # Remove retired fk-vlog-guide command stub if present
+    stale_vlog = CLAUDE_COMMANDS_DIR / "fk-vlog-guide.md"
+    if stale_vlog.exists():
+        stale_vlog.unlink()
+
     count = 0
     for skill in skills:
-        name = skill["name"]
+        skill_id = skill["id"]
         desc = skill["description"]
-        dest = CLAUDE_COMMANDS_DIR / f"fk-{name}.md"
+        dest = CLAUDE_COMMANDS_DIR / f"{skill_id}.md"
         content = (
             f"{desc}\n"
             f"<!-- AUTO-GENERATED by setup.py — do not edit. Source: skills/ -->\n"
@@ -117,7 +132,7 @@ def generate_claude(skills):
         )
         dest.write_text(content, encoding="utf-8")
         count += 1
-        if name == "character-design":
+        if skill_id == "fk-character-design":
             alias_dest = CLAUDE_COMMANDS_DIR / "character-design.md"
             alias_dest.write_text(content, encoding="utf-8")
     print(f"Generated {count} Claude commands in .claude/commands/")
@@ -125,22 +140,24 @@ def generate_claude(skills):
 
 
 def generate_antigravity(skills):
-    """Create .agents/skills/fk-<name>/SKILL.md for Antigravity IDE."""
+    """Create .agents/skills/<skill_id>/SKILL.md for Antigravity / Gemini IDE."""
     ANTIGRAVITY_SKILLS_DIR.mkdir(parents=True, exist_ok=True)
+    # Remove retired fk-vlog-guide skill folder if present
+    stale_vlog_dir = ANTIGRAVITY_SKILLS_DIR / "fk-vlog-guide"
+    if stale_vlog_dir.exists():
+        shutil.rmtree(stale_vlog_dir)
+
     count = 0
     for skill in skills:
-        name = skill["name"]
-        skill_id = f"fk-{name}"
+        skill_id = skill["id"]
         desc = skill["description"]
         src = Path(skill["path"])
-        # Strip existing frontmatter if any
         _, body = _split_frontmatter(src.read_text(encoding="utf-8"))
 
         dest_dir = ANTIGRAVITY_SKILLS_DIR / skill_id
         if dest_dir.exists():
-            shutil.rmtree(dest_dir)  # drop supporting files removed at the source
+            shutil.rmtree(dest_dir)
         if skill.get("dir"):
-            # Folder skill: carry references/ etc. so relative links resolve.
             shutil.copytree(skill["dir"], dest_dir, ignore=shutil.ignore_patterns("SKILL.md"))
         dest_dir.mkdir(parents=True, exist_ok=True)
         dest = dest_dir / "SKILL.md"
@@ -155,408 +172,35 @@ def generate_antigravity(skills):
         )
         dest.write_text(skill_md, encoding="utf-8")
         count += 1
-    print(f"Generated {count} Antigravity skills in .agents/skills/")
+    print(f"Generated {count} Antigravity / Gemini skills in .agents/skills/")
     return count
 
 
 def generate_antigravity_rules(skills):
-    """Copy CLAUDE.md into .agents/rules/claude_rules.md so Antigravity IDE sees all rules."""
+    """Sync CLAUDE.md into .agents/rules/claude_rules.md and GEMINI.md so Gemini / Antigravity IDE sees all rules."""
     ANTIGRAVITY_RULES_DIR.mkdir(parents=True, exist_ok=True)
-    dest = ANTIGRAVITY_RULES_DIR / "claude_rules.md"
+    dest_rules = ANTIGRAVITY_RULES_DIR / "claude_rules.md"
     if CLAUDE_MD.exists():
         content = CLAUDE_MD.read_text(encoding="utf-8")
-        # Prepend auto-generated header
         header = "<!-- AUTO-GENERATED by setup.py from CLAUDE.md — do not edit. Edit CLAUDE.md instead. -->\n\n"
-        dest.write_text(header + content, encoding="utf-8")
-        print(f"Generated .agents/rules/claude_rules.md (synced from CLAUDE.md)")
-        return 1
+        dest_rules.write_text(header + content, encoding="utf-8")
+        GEMINI_MD.write_text(header + content, encoding="utf-8")
+        print("Generated .agents/rules/claude_rules.md and GEMINI.md (synced from CLAUDE.md)")
+        return 2
     else:
-        print("WARNING: CLAUDE.md not found, skipping .agents/rules/claude_rules.md generation.")
+        print("WARNING: CLAUDE.md not found, skipping .agents/rules/claude_rules.md and GEMINI.md generation.")
         return 0
 
 
-## ── Inline content for AGENTS.md ──
-# Inlined so a non-Claude tool sees the rules directly instead of following a
-# "read CLAUDE.md" pointer.
-#
-# This block is the ONLY source for the generated file. AGENTS.md says
-# "do not edit" and was edited anyway: rules 14-16 and pipeline steps 0 and 7.5
-# lived only in the generated artifact, so `setup.py sync` would have deleted
-# them. They are here now. Anything added to AGENTS.md by hand is lost on the
-# next sync — put it here instead.
-
-_CRITICAL_RULES = """\
-## Critical Rules (MUST follow)
-
-1. **Media ID is always UUID** — format `xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx`. Never use `CAMS...` / base64 strings.
-2. **Scene prompts = ACTION only** — never describe character appearance. Reference images handle visual consistency via `imageInputs`.
-3. **All reference images must exist before scene images** — verify every entity has `media_id` before generating scene images.
-4. **No throwaway scripts in repo & Scratch Directory Only** — NEVER write Python, shell, or any script file in `scripts/`, `tools/`, or project root to loop over API requests or run temporary test/debug code. Use `POST /api/requests/batch` to submit all requests at once, then poll `GET /api/requests/batch-status`. Any temporary test, debug, or one-off scripts MUST strictly be placed in the conversation scratch directory (`<appDataDir>/brain/<conversation-id>/scratch/`).
-5. **Locations use landscape, characters use portrait** — reference image orientation depends on entity type.
-6. **UUID extraction** — if a response gives `CAMS...` instead of UUID, extract UUID from the `fifeUrl` in the response URL: `/image/{UUID}?...`.
-7. **Cascade on regen** — regenerating an image auto-clears downstream video + upscale.
-8. **REGENERATE vs GENERATE** — `GENERATE_*` skips if already COMPLETED. `REGENERATE_*` always runs (clears + regenerates).
-9. **Image Material required** — every project needs a `material` field (e.g. `realistic`, `3d_pixar`, `anime`). List available: `GET /api/materials`.
-10. **Server handles throttling — EVERY Flow request spaced 45–60s** — every call the server sends to Flow (image/video/upscale submit, image upload, project creation, status polls, metadata reads) waits a random 45–60s after the previous one (`FLOW_GENERATION_MIN_INTERVAL_S=45` / `FLOW_GENERATION_MAX_INTERVAL_S=60` in `agent/config.py`; `VIDEO_POLL_TIMEOUT=900` to fit the slower polls). User-set 2026-10-04: bursts trip `PUBLIC_ERROR_UNUSUAL_ACTIVITY`. Submit ALL requests via `/batch` and let the server pace them; do NOT loop faster. If a script paces its own submits, use `random.uniform(45, 60)` between requests and stop on `UNUSUAL_ACTIVITY` / `QUOTA`.
-11. **Video prompts use sub-clip timing** — structure 8s video as time segments: `0-3s: [action]. 3-6s: [action]. 6-8s: [action].`
-12. **Character dialogue in sub-clips** — embed speech in quotes: `Luna says "Goodnight."` Max 10-15 words per character per 2-3s segment.
-13. **Scenes are mutable** — use `PATCH /api/scenes/{sid}` to update `prompt`, `video_prompt`, `narrator_text`, `character_names` after creation. Don't delete and recreate — patch instead.
-14. **Fact-check before scripting** — ALWAYS research events via web search before writing project stories, scene prompts, or narrator text. Facts (events, dates, names, operations, outcomes) MUST match real sources. Editorial opinion and analysis are allowed but must be framed as such. Never invent events, operation names, or statistics. **Exception (user 2026-10-05): time-travel / POV survival vlogs are fiction — invention is allowed and research is optional (the vlog workflow is archived in `skills/fk-film/references/vlog-archive.md`; the old `/fk-time-travel-vlog` skill is now `/fk-film`). Films made with `/fk-film` are NOT covered by this exception: a film based on real events, places or people must be researched first, and a fully fictional film says so in its `story-bible.md`.**
-15. **Real-people bypass** — when characters are based on real famous people (politicians, celebrities, military leaders), NEVER use their real name as entity `name` or anywhere in `description`, `image_prompt`, `prompt`, or `video_prompt`. AI image generators reject known public figures. Instead: (a) use a **role-based alias** as entity name (e.g. "Tổng Tư Lệnh" not "Trump", "Thủ Tướng Sắt" not "Netanyahu"), (b) describe **physical appearance only** — distinctive hair, face shape, build, clothing style — without naming who it is, (c) `narrator_text` may use real titles/roles for storytelling but real names never flow into image/video generation. Keep a `real_reference` mapping in the project plan file (`.omc/research/`) for internal tracking.
-16. **Review before upscale** — ALWAYS run `/fk-review-video` (light mode) after video generation, before upscaling. Scenes scoring < 7.5 get `video_prompt` updated from review errors, then regen video. Max 2 review-regen cycles.
-17. **Auto-retry failed videos (up to 5x)** — When generating videos, any failure or timeout MUST be automatically retried up to 5 times. If failed due to content filters (e.g. `as29s failed: [5]`), auto-sanitize prompt keywords and call `REGENERATE_IMAGE` to get a fresh start frame before regenerating the video.
-18. **Rolling download & Review Before Upscale/Clean (Chưa xóa logo khi mới sinh 720p & Trích xuất 24 frames bằng ffmpeg — Rule 73)** — Khi video 720p sinh xong, lập tức tải về `${OUTDIR}/scenes/scene_{idx}_{sid}.mp4`. **TUYỆT ĐỐI CHƯA CẦN XÓA LOGO Ở BƯỚC NÀY** để tránh lãng phí tài nguyên CPU/GPU và thời gian nếu video cần sửa prompt hoặc regen. BẮT BUỘC dùng `ffmpeg` trích xuất đúng 24 frames phân bổ đều theo thời lượng video (`fps=24/<duration>`, ví dụ clip 10s: `fps=24/10=2.4`, clip 8s: `fps=24/8=3`), ghép thành contact sheet lưới 6×4 (`tile=6x4`) để chạy AI Review Scorecard và đưa lên Review Board cho User duyệt trước. **CHỈ SAU KHI USER DUYỆT CẢNH**: Gửi lệnh Upscale 1080p (`veo_3_1_upsampler_1080p` qua RPC `p0UkFb`), tải video 1080p về thư mục riêng `${OUTDIR}/1080/scene_{idx}_{sid}_1080p.mp4`, rồi mới chạy `remove_watermark_video` trực tiếp trên bản 1080p (`${OUTDIR}/1080/scene_{idx}_{sid}_1080p_clean.mp4`) để đưa vào Concat cuối cùng.
-19. **Mandatory review & Review Board** — Pipeline skills (`/fk-pipeline`, `/fk-gen-videos`) MUST automatically execute `/fk-review-video` immediately after video generation, display the per-scene scorecard table showing which nodes passed and which need regeneration, and ensure the Review Board web app (`python tools/review_server.py 8200`) is running.
-20. **Language matching for SEO & Thumbnails** — YouTube metadata (`/fk-youtube-seo`) and thumbnails (`/fk-thumbnail`) MUST match the dialogue/script language (e.g. 100% Japanese for Japanese POV vlogs, Vietnamese for Vietnamese, English for English). Never generate English/Vietnamese SEO for Japanese dialogue vlogs.
-21. **Flush stale queue on new project** — whenever starting or creating a new project (e.g. `/fk-create-project`, `/fk-film`), ALWAYS execute `python -c "import sqlite3; conn = sqlite3.connect('flow_agent.db'); conn.execute('UPDATE request SET status=\\'FAILED\\' WHERE status=\\'PENDING\\''); conn.commit()"` first to flush all stale PENDING requests and prevent worker auto-retry loops causing `PUBLIC_ERROR_UNUSUAL_ACTIVITY`.
-22. **[BÃI BỎ THEO RULE 69] Storyboard 2×2 Review Before Video Generation** — Trong làm phim (`/fk-film`), TUYỆT ĐỐI KHÔNG sinh ảnh Start Frame đơn lẻ. Mọi cảnh chuyển đều tạo ảnh Storyboard 2×2 theo `/fk-storyboard` (Rule 69). Sau khi sinh, tải về `${OUTDIR}/images/<clip>_storyboard.jpg`, tẩy logo, upload ảnh sạch lấy UUID làm entity `<CLIP> Storyboard`, đưa lên Review Board cho User duyệt và tiến hành Visual Audit trước khi sinh video.
-23. **[BÃI BỎ THEO RULE 69] Pure References Architecture (No Start Frame)** — Omni Flash R2V (`MZZa6b` - `GENERATE_VIDEO_REFS`) vận hành theo cơ chế Pure References (Nguyên liệu tham chiếu), không có tham số Start Frame (`start_image_media_id`). Tấm Storyboard 2×2 tự thân là bản thiết kế thời gian (Time Reference) cho cả clip.
-24. *(Chỉ áp cho POV vlog — phim dùng /fk-film)* **Laomedeia Voice Profile** — (Phim: mỗi nhân vật có thoại một voice id riêng, xem `skills/fk-film/references/voice-bible.md` §0 và `speech.voices`.) For female travel vloggers / narrators, configure `voice_description` using the **Laomedeia** profile (Google Gemini-TTS: upbeat, mid-high pitched, energetic expressive conversational female voice, fast confident vlog delivery with dry humor, rises into real cracking screams when in danger, drops to a fast whisper when hiding). Structure video prompt dialogue accordingly (`Mia says "..."`) so Veo 3 / Pinhole synthesizes matching native vocal audio. In Omni Flash / Pinhole Reference-to-Video (`MZZa6b`), Slot 7 is natively pinned to `[["laomedeia"]]` by default.
-25. **Strict Step-by-Step Review Gates (Storyboard then Videos)** — Pipeline execution MUST proceed strictly step-by-step with explicit human review gates:
-    - **Step 6.5 (Storyboard Review & Visual Audit Gate)**: Với các cảnh chuyển (Rule 65 Loại 2), ngay sau khi ảnh Storyboard 2×2 sinh xong, tẩy watermark, upload bản clean, mở Review Board ảnh cho user duyệt. ĐỒNG THỜI thực hiện **Visual Audit đọc thể ảnh Storyboard thực tế** để điều chỉnh camera, shot size, và nhịp cắt trong `video_prompt` trước khi sinh video (Rule 69 (7)).
-27. **[BÃI BỎ THEO RULE 69 & USER LOCK 22/10/2026] Storyboard 2×2 Time Reference & Pure R2V Workflow (CẤM sinh Start Frame 1 khung đơn lẻ)** —
-    - (1) **Nguyên tắc Pure References**: Trong phim (`/fk-film`), Omni Flash R2V nhận các thành phần tham chiếu (Ingredients via `character_names` / `imageInputs` / `refs`): Khuôn mặt, Body đã mặc trang phục, Sinh vật/Đạo cụ, và Storyboard 2×2.
-    - (2) **Quy trình 2 nhánh chuẩn mực**:
-      - **Cảnh chuyển cảnh / đổi góc / mở đầu (Rule 65 Loại 2)**: BẮT BUỘC tạo ảnh Storyboard 2×2 (4 panel theo thời gian theo `/fk-storyboard`), truyền `source_media_id` từ ref có sẵn (Rule 69 (8)). BỎ cắt Panel 1 / Start Frame. Tấm Storyboard 2x2 là Time Reference cho cả clip.
-      - **Cảnh nối tiếp trực tiếp (Rule 65 Loại 1)**: Cắt khung cuối của clip trước đã duyệt (`PREV_LAST_FRAME`), cấm sinh ảnh mới.
-    - (3) **Cấm tuyệt đối Start Frame đơn lẻ**: CẤM gửi lệnh sinh ảnh Start Frame 1 khung đơn lẻ cho clip phim.
-28. **Clean-Before-Video-Gen (Bắt buộc tẩy logo ảnh trước khi đưa vào sinh video)** — Đối với BẤT KỲ ảnh AI nào do Google Flow sinh ra (như ảnh Storyboard 2×2, ảnh Reference nhân vật/sinh vật/bối cảnh, hoặc last frame cắt từ video):
-    - **TUYỆT ĐỐI KHÔNG dùng trực tiếp `media_id` do Google Flow tự sinh** để đưa thẳng vào sinh video. Ảnh AI của Google luôn tự chèn watermark logo ở góc dưới; nếu đưa thẳng vào r2v thì model video sẽ làm logo đó nhấp nháy, méo mó và dính chết vào video.
-    - **Quy trình bắt buộc 4 bước đối với mọi ảnh do AI sinh**:
-      1. Tải ảnh gốc về máy: `${OUTDIR}/images/<name>.jpg`.
-      2. Chạy ngay `python tools/remove_watermark_from_image.py "${OUTDIR}/images/<name>.jpg"` để xóa sạch logo và SynthID ➔ sinh ra file `<name>_clean.jpg`. Có file `_clean` rồi thì XÓA NGAY ảnh gốc còn logo (user lock 2026-10-22).
-      3. Upload file sạch `<name>_clean.jpg` ngược lên Google Flow qua `POST /api/flow/upload-image` để nhận một `media_id` UUID hoàn toàn sạch logo.
-      4. Cập nhật `media_id` sạch này vào Scene/Entity, đưa lên Review Board cho user duyệt. CHỈ SAU ĐÓ mới dùng `media_id` sạch này để sinh video!
-29. **Confirm before every generation step (overrides the automatic parts of rules 16, 17, 19)** — Generation spends Flow credits, so:
-    - **Before** any call that makes Flow generate media (`/fk-gen-refs`, `/fk-gen-images`, `/fk-gen-videos`, `GENERATE_*` / `REGENERATE_*` batches, test clips, retries, review-driven regens), state what will be generated and how many items, then **wait for the user's explicit yes**.
-    - **After** each generation step finishes, STOP: show the results for review and wait for approval before starting the next stage (refs → videos → regens → concat).
-    - Failures and low review scores are **reported, not auto-retried**: propose the fix (sanitized prompt, regen list) and ask before resubmitting.
-    - Non-generating work (creating projects/scenes, uploading existing images, PATCHing fields, downloading, watermark removal) can proceed when the user asks for it.
-30. **Production lessons live in `/fk-film` → `skills/fk-film/references/production-lessons.md` (film rules in its §1; prompt checklist ở `references/prompt-lock.md`); lessons that only apply to POV vlogs are archived verbatim in `skills/fk-film/references/vlog-archive.md`** (user feedback: constraints as sentences not `Negative:`, phone is the camera, wipes never make the vlogger vanish, scene refs for cities, landscape refs for 16:9, hardest clip first, `<Vlogger> Body` ref đã mặc hoàn chỉnh outfit (made per Rule 46), no `selfie-stick`/phone keywords to avoid ghost devices/screens, pure POV with empty hand, camera locked in hand for run/jump action physics, single-arm vlog holding to prevent dual-arm glitch, crowd fleeing forward with vlogger away from disaster, anti-CGI documentary anchors for disaster scenes, ground anchor timber barrier force transmission `force -> barrier -> ground` instead of human boots/body, megafauna momentum p=m*v with secondary ear/trunk lag and ice traction-loss sideways deflection instead of ABS instant stops, thermodynamic localized bubbling and radiating cracks before bone fracture, material deformation like hide flexing under needle and vibrating drum membrane, rapid vapor dissipation in freezing cold, natural smartphone perspective instead of rigid zero-distortion, running camera with footfall vertical bounce and rotational lag, 5-layer prompt architecture, physical prop continuity, permanent arm & camera lock in leap/slide action shots to prevent phone dropping and 3rd-person spectator switches, reference ingredients hierarchy [Face -> Body -> Outfit] and negative contrast constraints against mannequin body drift). Films follow `production-lessons.md` §1 and every lesson not moved to the archive; the vlog-only items in this list (phone is the camera, selfie / single-arm holding, no `selfie-stick`/phone keywords, pure POV with empty hand, camera locked in hand, smartphone perspective, vlogger crowd direction) apply only to POV vlog projects.
-31. **On any pipeline error** (request `FAILED`, stuck `PROCESSING`, `extension_connected: false`, HTTP 4xx/5xx from `:8100`, YouTube `HttpError`, error strings like `UNSAFE_GENERATION` / `not found` / `CAPTCHA` / `NO_AT_TOKEN` / `NO_FLOW_PROJECT` / `UNSUPPORTED_ON_BATCH_API`): invoke `/fk-doctor` before guessing a fix.
-32. **AI-First Video Review before User Approval & Conditional Upscale (Tự động review trên video 720p thô ➔ Duyệt ➔ Upscale 1080p & Xóa Logo — Rule 73)** — Sau khi video 720p hoàn tất và tải về máy, Agent BẮT BUỘC dùng `ffmpeg` trích xuất chính xác 24 frames (`fps=24/<duration>`, Rule 73) từ video 720p thô (chưa cần xóa logo), ghép contact sheet lưới 6×4, tự động chạy phân tích `/fk-review-video` trước: chấm điểm theo 6 tiêu chuẩn cốt lõi (Character Consistency 25%, Prompt Adherence 20%, Motion Quality 20%, Visual Fidelity 15%, Temporal Coherence 10%, Composition 10%), rà soát lỗi AI (Critical/High/Minor), và trình bày bảng Scorecard chi tiết kèm ảnh preview contact sheet 24 frames cho User xem trước. **Chỉ khi User duyệt thông qua cảnh**: Mới tiến hành gửi batch Upscale 1080p và xóa logo trên video 1080p.
-33. **Standard 16:9 Character Turnaround Sheet (Chuẩn 4 góc khóa nhận diện & trang phục qua `/fk-character-design` — Rule 72)** — Mọi ảnh reference cho nhân vật (cả nhân vật chính vlogger lẫn nhân vật phụ bản địa) BẮT BUỘC 100% phải tạo bằng skill `/fk-character-design` dưới dạng **Character Sheet 16:9 chuẩn 4 góc (Turnaround Sheet)** chụp người thật 35mm (Live-Action Casting Photo): (1) Toàn thân chính diện (Full-body front view): Thấy rõ 100% trang phục may đo thời kỳ từ đầu đến chân (áo, quần, giày/ủng tuyết, phụ kiện, vũ khí/dụng cụ cầm tay), (2) Toàn thân 3/4 (Full-body 3/4 view): Thể hiện độ dày phom dáng, mũ trùm/áo choàng, độ rủ của chất liệu, (3) Toàn thân nhìn nghiêng (Full-body side profile): Thể hiện tư thế cầm nắm và cấu trúc trang phục cản gió, (4) Cận cảnh chân dung khuôn mặt 16:9 (Portrait close-up): Thấy rõ từng chi tiết khuôn mặt gốc (ánh mắt, sống mũi, kết cấu da chân thực, tóc và viền cổ áo/nón lông). Tuyệt đối cấm tự viết prompt ad-hoc, cấm dùng các từ 'study', 'concept', 'sketch' khiến AI vẽ 2D. Giữ nguyên nhận diện khuôn mặt (Identity Consistency) từ ảnh gốc người dùng cung cấp nhưng đồng bộ trang phục bối cảnh lịch sử chuẩn xác. (Xem chi tiết tại Rule 72).
-34. **Architectural & Inanimate Prop Reference Cleanliness (Cấm người đo tỉ lệ & Cấm chia đôi khung hình cho Kiến trúc / Đạo cụ vô tri)** — Khi sinh ảnh reference cho công trình kiến trúc (như lều xương voi ma mút Mezhirich, kim tự tháp, đền đài, thành lũy) hoặc đạo cụ vô tri: TUYỆT ĐỐI KHÔNG dùng các cụm từ gây nhiễu như "with proper scale reference" khiến AI vẽ thêm người đứng đo, thước đo tỉ lệ hoặc thanh đo khảo cổ học. BẮT BUỘC chỉ định: `ONE single unified photograph only, strictly NO humans, NO people, NO scale figures, NO measuring rods, NO split screen, NO multi-panel comparison`. **NGOẠI LỆ BẮT BUỘC (Rule 58)**: Mọi thực thể sống gồm Nhân vật và Sinh vật chủ chốt / Quái thú / Động vật quan trọng (như Bò Đực Triceratops Bull, T-Rex, Mammoth, Predator) TUYỆT ĐỐI KHÔNG dùng ảnh đơn 1 góc mà BẮT BUỘC tạo **Character/Creature Turnaround Sheet 16:9** theo chuẩn Rule 58 và skill `/fk-character-design` để khóa cứng giải phẫu và nhận diện đa góc.
-35. **Historical Clothing Scientific Authenticity (Trang phục tiền sử may đo nhiều lớp)** — Kỷ Băng Hà (20,000 BC - LGM / Gravettian): Con người BẮT BUỘC phải mặc quần áo may đo nhiều lớp ôm sát (*tailored layered clothing*: áo parka chui đầu da tuần lộc, lót len lông mammoth wool, viền lông cáo tuyết chống đọng băng, quần da bó, ủng bọc lông, thêu hạt ngà voi). Tuyệt đối không vẽ người tiền sử cởi trần hoặc quấn da thú thô sơ phi thực tế giữa thảo nguyên băng giá -35°C đến -45°C.
-36. **Translator POV Interaction (Kỹ thuật Vlog Phiên Dịch — Giao tiếp với người bản địa)** — Do AI video model (Omni Flash / Veo 3) chỉ nhận 1 giọng nói duy nhất (Slot 7 Laomedeia) và để bảo tồn tính chân thực lịch sử (thổ dân tiền sử/cổ đại không nói tiếng Anh hiện đại), TUYỆT ĐỐI KHÔNG gán thoại tiếng Anh cho nhân vật phụ (`Torak says: "..."`). Thay vào đó: (a) Nhân vật phụ giao tiếp bằng cử chỉ tay, biểu cảm sống động, hiệu lệnh săn bắn hoặc cổ ngữ tự nhiên trong phần prompt hành động (`Torak urgently gestures...`), (b) Vlogger đóng vai trò cầu nối phiên dịch: lập tức xoay camera về phía mình (Selfie 0.5x hoặc handheld whip pan) và thuật lại trực tiếp cho khán giả (`Nora says: "Torak warned us that...", "She told me this is..."`).
-37. **Permanent Arm & Camera Lock in Action/Leap Shots (Cấm buông máy hoặc chuyển góc người thứ 3 khi nhảy/tiếp đất/trượt dốc)** — Khi mô tả vlogger nhảy qua gờ dốc, tiếp đất hoặc trượt tuyết trong shot vlog selfie, AI video model có xu hướng cho nhân vật buông tay giữ thăng bằng và tự động lùi máy ra thành góc nhìn người thứ ba (spectator wide shot). BẮT BUỘC: (a) Khóa cứng cánh tay và máy quay bằng câu khẳng định vĩnh viễn (`her [right] arm remains permanently extended gripping the camera tightly aimed directly back at her screaming face; she NEVER drops, releases, or lets go of the camera, and the view NEVER switches to third-person`), (b) Tả chấn động quán tính lên khung hình và mặt đất/tuyết bay (`view jerks violently downward with the drop`) thay vì tả chuyển động toàn thân (`she slides/leaps`), giữ mặt vlogger luôn neo chặt ở trung tâm khung hình selfie.
-38. **Reference Ingredients Order & Negative Contrast Body Lock (Thứ tự truyền Ref [Mặt -> Body đã mặc outfit] & Khóa tương phản chống Body Drift)** — BẮT BUỘC: (a) Server gửi ref ingredients theo đúng thứ tự nhận diện: `[Face] -> [Body]` (ví dụ: `["Nora", "Nora Body"]` trong đó `Nora Body` đã là ảnh body mặc hoàn chỉnh trang phục, xem Rule 46). Không cần entity outfit riêng lẻ, (b) Trong `common.identity` và `video_prompt` phải bổ sung cụm từ tương phản đối kháng mạnh mẽ ép model tôn trọng đường cong: `BODY LOCK (CRITICAL): [Character] has a voluptuous hourglass figure with large full heavy natural bust, tiny narrow waist, and wide curvaceous hips matching Body ref; she is NOT skinny, NOT slender, NOT petite, NOT flat-chested`.
-39. **Early Conditioning Prompt Architecture & Stature/Cleavage Punch (Đưa Body Lock lên sớm, góc máy hất nhẹ & đấm lực tôn dáng)** — Để vòng 1 không bị nhỏ và chân không bị ngắn trong video selfie chuyển động: (a) **Vị trí Body Lock trong Prompt**: BẮT BUỘC đưa khối `Identity & Body Lock` lên vị trí SỚM ngay sau `Shot:` (trước các phân đoạn hành động `0-3s`, `3-6s`), không chôn vùi ở cuối prompt dài 5.000 ký tự gây suy giảm chú ý (attention decay), (b) **Góc máy quang học (Low-Angle Chest Level)**: Trong `style.run` và `style.selfie`, chỉ định camera đặt ngang ngực/bụng trên hơi hất nhẹ lên (`held at chest/mid-torso level angled slightly upward looking back`) thay vì ngang mặt chúc xuống, loại bỏ co ngắn phối cảnh (foreshortening), kéo dài đôi chân và khoe trọn khe ngực, (c) **Cú đấm lực vòng 1 & chân siêu mẫu**: CẤM các từ `low-hanging bust`, `natural bust compression` hay `thick thighs` đơn độc. Dùng cụm đối kháng cực mạnh: `exceptionally large, full, voluminous heavy bust pushed up with prominent deep cleavage valley spilling out of the plunging V-neckline (dramatic push-up cleavage effect, huge voluptuous cleavage)`, và thông số chiều cao `tall, statuesque woman (178 cm / 5'10" tall) with exceptionally long, slender model legs and high hip placement`, (d) **Gia cố trong Action Segments**: Lặp lại trực tiếp đặc điểm thể hình vào các hành động chuyển động trong từng mốc thời gian (`her long slender legs pumping powerfully through snow; her voluminous bust with dramatic push-up cleavage bouncing in plunging neckline`).
-40. **The 4 Physical Principles of Survival POV Action & Optical Viewpoint (Bộ tứ nguyên lý vật lý sinh tồn & Cấm triệt để từ 'phone/smartphone' kèm Self-Linter)** — Mọi cảnh hành động, chạy trốn, té ngã trong POV Vlog BẮT BUỘC tuân thủ: (1) **Động lượng & Quán tính cơ học ($p = m \\cdot v$)**: Vấp rãnh băng mất ma sát $\\mu \\to 0$, thân trên lao về phía trước, loạng choạng 1-2 bước cứu thăng bằng trước khi trọng lực $F_g = mg$ đè sụp ngã đập người nén tuyết; cấm nhảy lơ lửng chống trọng lực. (2) **Tương phản Trọng tải trên Sườn dốc ($m_{\\text{voi}} \\gg m_{\\text{người}}$)**: Bờ dốc sông băng $\\theta = 45^\\circ-60^\\circ$ biến cú ngã thành cú trượt cày tuyết xốp an toàn ($F = mg\\sin\\theta - \\mu mg\\cos\\theta$); thú lớn 6 tấn không dám lao xuống vì sợ sạt lở gãy chân, giải thích logic sinh tồn tại sao vlogger thoát chết. (3) **Điểm mù Quang học & Động học Camera**: Người xem nhìn trực tiếp qua ống kính (`camera lens`), máy quay và tay cầm máy nằm ở điểm mù sau mặt phẳng tiêu cự (`completely off-screen and never seen`), tay tự do trống không (`empty hand`). TUYỆT ĐỐI CẤM 100% các từ `phone`, `smartphone`, `screen`, `device`, `selfie-stick` (kể cả trong câu cấm 'never drops the phone'); va đập làm máy giật nảy (`rotational jolt`) và tuyết bột phủ mờ thấu kính (`lens glass splatter`). (4) **Biến dạng Vật liệu & Triệt tiêu Động năng**: Nứt nén bề mặt băng tuyết (`crust fracture`), hất tung bụi tuyết khí dung (`aerosolized powder snow`), và rãnh ma sát sâu (`frictional furrow`) triệt tiêu dần động năng $\\frac{1}{2}mv^2 \\to Q$. BẮT BUỘC chạy Prompt Self-Linter (`python tools/lint_prompt.py`) tự kiểm tra sạch sẽ từ cấm trước khi gửi gen.
-41. **No Behind-the-Head 3rd-Person Shots & Camera Materialization Glitch (Cấm quay sau đầu chuyển selfie & Cấm biến camera thành đạo cụ)** — (1) **Tuyệt đối cấm shot sau đầu/sau lưng**: TUYỆT ĐỐI CẤM các câu lệnh quay từ sau đầu hoặc sau lưng vlogger rồi xoay ra trước mặt (`starts from behind her head then turns to face her`). Góc quay sau lưng là góc nhìn NGƯỜI THỨ BA (3rd-person spectator); AI thấy vlogger từ phía sau sẽ tự hỏi tay cô đang giơ cái gì lên và lập tức "vật thể hóa" thành một chiếc máy ảnh kỹ thuật số (compact camera có màn hình LCD) hoặc ống kính máy ảnh rời (DSLR Lens) cầm trên tay. (2) **Đơn góc nhìn thay thế hoàn toàn Whip Pan (xem Rule 42)**: TUYỆT ĐỐI KHÔNG dùng cú lia máy 180° giữa cam trước và cam sau trong cùng 1 shot liên tục. Để quay vlogger tương tác với môi trường/nhân vật phía sau, BẮT BUỘC dùng **100% Selfie Qua Vai (Over-the-Shoulder)** hoặc **Cặp Shot Kép cắt cảnh riêng biệt (Two Separate Cuts)**. (3) **Cấm mô tả cầm camera làm đạo cụ**: Không bao giờ viết `she holds/brings the camera around`; thay bằng `she pivots her extended arm back toward herself`. Điểm nhìn người xem chính là thấu kính (`camera lens`).
-42. *(Chỉ áp cho POV vlog — phim dùng /fk-film)* Ý (4) "cấm 2 clip liền nhau cùng 1 cỡ cảnh + cùng 1 góc máy" vẫn áp cho phim. **Single-Perspective Vlog Purity, No 180° Camera Flips & The Golden Camera Ratio (Quy tắc đơn góc nhìn thuần khiết, Cấm xoay lật 180° & Tỷ lệ góc máy vàng)** — (1) **Nghịch lý lật cam 180°**: Trong vlog thực tế bằng điện thoại, không ai vừa quay cam sau (quay người khác/cảnh vật) lại lật ngược 180° điện thoại để tự quay mặt mình trong cùng 1 shot liên tục, vì màn hình điện thoại bị quay đi hướng khác (người quay bị mù màn hình), và camera tự bay vòng 180° trong không khí tạo cảm giác giả tạo như có người quay phim thứ 3 (cameraman cầm gimbal/flycam) bay quanh nhân vật. (2) **Quy tắc Vàng 1 Shot = 1 Góc nhìn**: Mỗi shot 8s–10s BẮT BUỘC giữ duy nhất MỘT góc máy cố định: hoặc 100% Selfie (Cam trước 0.5x), hoặc 100% First-Person POV (Cam sau). TUYỆT ĐỐI CẤM các cú lia máy lật xoay 180° (`whip pan 180-degree ... turning to face`, `pivoting the viewpoint back`). (3) **Kỹ thuật Vlog Selfie qua vai (Over-the-Shoulder Selfie Interaction)**: Khi vlogger tương tác hoặc giới thiệu nhân vật phụ (như Torak, thổ dân, quái thú): vlogger chiếm 1/3 tiền cảnh ở một bên (selfie góc rộng 0.5x), nhân vật phụ xuất hiện ở 2/3 hậu cảnh phía sau vai vlogger. Tương tác được thực hiện tự nhiên qua việc vlogger nói với khán giả, khẽ liếc mắt hoặc quay đầu ra sau kiểm tra đối tượng, rồi quay lại nhìn thẳng vào camera thì thầm/thể hiện cảm xúc. Khung hình luôn neo chắc vào vlogger, chuyển động camera chỉ là rung lắc bước chân tự nhiên, đảm bảo tính chân thực 100% của một POV travel vlog. (4) **Tỷ lệ Góc Máy Vàng trong POV Vlog (Golden Camera Ratio — Chống đơn điệu 100% Selfie)**: Một video vlog chân thực KHÔNG THỂ 100% các cảnh đều giơ tay selfie dí sát mặt vlogger. Tỷ lệ phân bổ chuẩn mực: **60%–70% First-Person POV qua mắt vlogger (Cam sau)** (dành cho toàn bộ cảnh hành động, khám phá, di chuyển, rình mò, săn bắt, chế tác công cụ, thao tác 2 tay, quan sát đồng đội và cảnh vật); **20%–30% Front-Camera Selfie & Over-the-Shoulder (Cam trước 0.5x)** (dành cho lúc an toàn, chia sẻ tâm sự trực diện, mở đầu/kết thúc, phản ứng biểu cảm sau nguy hiểm); **10% Ground / Fixed Cam** (máy tựa đá/đất cho thao tác 2 tay rảnh). TUYỆT ĐỐI CẤM liên tiếp 3 cảnh cùng góc selfie quay mặt vlogger!
-43. **Temporary & Debug Scripts in Scratch Directory Only (Tất cả script tạm/debug/test bắt buộc lưu trong `scratch/`)** — Mọi script tạm thời, one-off script để test prompt, debug API, test chức năng, kiểm tra trạng thái hoặc setup tạm (như `test_*.py`, `check_*.py`, `setup_*.py`, `debug_*.py`, `patch_*.py`) TUYỆT ĐỐI KHÔNG được tạo trong các thư mục mã nguồn của dự án (như `scripts/`, `tools/`, hoặc thư mục gốc repo `c:/flowkit/`). BẮT BUỘC chỉ được tạo trong thư mục artifact scratch của cuộc hội thoại (`<appDataDir>/brain/<conversation-id>/scratch/` hoặc chạy inline one-liner `python -c "..."`). Sau khi hoàn tất mục đích debug/test, phải dọn dẹp sạch sẽ để giữ codebase repo luôn sạch, chuẩn và chuyên nghiệp.
-44. **Inter-Scene Posture & Gaze Continuity (Khớp tư thế & hướng nhìn giữa 2 shot liền kề — Match on Action)** — (1) **Lỗi giật tư thế (Posture Snap)**: Khi Clip A kết thúc ở một tư thế cụ thể (như quay đầu nhìn bối cảnh, tay chỉ hướng, hoặc nghiêng người), nếu Clip B mở đầu ngay bằng tư thế đứng thẳng nhìn vào camera thì khi ghép nối sẽ tạo ra cú cắt giật (jump cut) làm gãy mạch thị giác. (2) **Quy tắc Khớp Động Tác (Match on Action Continuity)**: Clip B BẮT BUỘC phải mở đầu ở đúng tư thế kết thúc của Clip A trong 1–2 giây đầu (`0-2s: Matching the previous scene's ending, the clip opens with her head turned looking back over her shoulder...`), sau đó mới mô tả nhân vật chuyển đổi tư thế (nhận ra đối tượng, xoay mặt lại nhìn vào camera) ngay trong shot. Điều này biến mối nối giữa 2 clip AI thành một chuyển động liên tục tự nhiên như phim điện ảnh.
-45. *(Mục (1) chỉ áp cho POV vlog — phim dùng /fk-film; mục (2)–(3) áp cho mọi dự án)* **Camera-Touch Prevention & Functional Prop Dressing Physics (Chống với tay chạm ống kính & Khóa hành vi mặc/đeo đạo cụ chức năng thực tế)** — (1) **Chống với tay lên ống kính / màn hình (Camera-Touch Glitch)**: Trong các shot vlog selfie hoặc tương tác, AI thường nhầm lẫn giữa việc "giơ tay khoe đồ / diễn đạt cảm xúc" với việc "đưa tay chạm vào ống kính / chọt màn hình điện thoại", gây che khuất khung hình, méo tay cận ống kính và làm lộ điện thoại (Camera Materialization). BẮT BUỘC: Khóa cứng vị trí bàn tay tự do ở ngang ngực hoặc cách xa ống kính: `"Nora holds her free hand up at chest level showing the item to the camera at a safe distance; her free hand NEVER reaches toward, touches, covers, taps, or points at the camera lens; her selfie arm remains steady holding the camera at a constant distance"`. (2) **Khóa hành vi mặc/đeo đạo cụ chức năng thực tế (Functional Prop Dressing & Equipment Transfer)**: Khi một nhân vật trao hoặc mặc đồ bảo hộ/trang phục/phụ kiện cho nhân vật khác (như găng tay/bao tay lông thú, áo choàng, mũ nón, ủng tuyết, thắt lưng, kính tuyết, vòng cổ): AI thường chỉ cho nhân vật phụ cầm dây buộc/sợi dây lủng lẳng hoặc đưa hờ hững trước mặt mà KHÔNG HỀ xỏ găng/mặc áo vào cho nhân vật chính. BẮT BUỘC: Prompt phải mô tả trực tiếp ĐỘNG TÁC XỎ / MẶC CHỨC NĂNG bằng các động từ hành động cụ thể (`slips and slides directly onto`, `fits securely over`, `pulls over`, `fastens onto`): `"[Character A] attentively holds the [prop/garment] and actively slips and slides it directly onto [Character B]'s [bare hand/body], fitting it completely on before fastening any cords; [Character B] physically wears the [prop] on her [hand/body], feeling its fit and warmth"`. TUYỆT ĐỐI KHÔNG chỉ viết chung chung `"gives mittens and ties cords"` vì model sẽ chỉ vẽ sợi dây mà bỏ qua hành động mặc/xỏ găng thực tế. (3) **Đồng bộ chuyển động giữa 2 nhân vật (Synchronized Handover in POV)**: Phân đoạn thời gian rõ ràng: 0–3s (Nhân vật A trực tiếp xỏ/mặc đạo cụ vào người nhân vật B), 3–6s (Nhân vật B nhận, đạo cụ đã được mặc hoàn chỉnh trên cơ thể, giơ lên ngang ngực khoe với camera), 6–8s (Thể hiện cảm xúc, tương tác ánh mắt cảm ơn giữa hai nhân vật, kiểm tra độ ấm/vừa vặn của đạo cụ).
-46. **Body Đã Mặc Trang Phục Làm <Vlogger> Body; Video Nhận Mặt + Body, Không Cần Nhận Outfit Riêng (user lock 2026-10-05)** — (1) **<Vlogger> Body BẮT BUỘC là Body đã mặc hoàn chỉnh trang phục**: Trong mọi dự án video nhân vật/vlog, nhân vật chỉ có đúng 2 ref chính: `<Vlogger>` (Khuôn mặt & tóc) và `<Vlogger> Body` (Body đã mặc trang phục). TUYỆT ĐỐI KHÔNG tạo entity `<Vlogger> Outfit` riêng lẻ gây thừa thãi và phân mảnh. Quy trình tạo `<Vlogger> Body`: Dùng ảnh Body trần làm nguồn (`source_media_id`), chạy `EDIT_CHARACTER_IMAGE` với prompt mô tả trang phục vừa vặn form-fitting để "mặc đồ" lên body đó: giữ nguyên 3 panel (chính diện, 3/4, sau lưng), tư thế, tỷ lệ cơ thể (ngực, eo, hông, chân), khung cắt vai/dưới cằm không lộ mặt, và nền studio. Sau khi sinh xong, xóa logo, upload ảnh sạch và gán trực tiếp làm `media_id` cho `<Vlogger> Body`. Video R2V sẽ chỉ nhận: `[<Vlogger>, <Vlogger> Body, <Bối cảnh/Đạo cụ>]`. (2) **Cổng Duyệt Body Đã Mặc Trang Phục Bắt Buộc (Mandatory Dressed Body Approval Gate)**: Trước khi gửi bất kỳ lệnh sinh video nào (`GENERATE_VIDEO_REFS` / `GENERATE_VIDEO`), Agent BẮT BUỘC phải xuất ảnh Body đã mặc trang phục sạch watermark, hiển thị cho User xem và **CHỜ USER DUYỆT THÔNG QUA FORM DÁNG & TRANG PHỤC**. Tuyệt đối KHÔNG được tự ý gửi lệnh sinh video khi User chưa xác nhận và duyệt. (3) **Khóa mô tả Body & Outfit trong Prompt (`[ID-LOCK]`)**: Khối `[ID-LOCK]` trong mọi prompt cảnh video (`video_prompt`) BẮT BUỘC phải đối chiếu và mô tả đồng nhất chuẩn xác: khuôn mặt từ `<Vlogger>`, vóc dáng và trang phục lấy từ `<Vlogger> Body` đã duyệt.
-47. **Ironclad Identity & Body-Outfit Locking in R2V (Quy tắc khóa chuẩn nhận diện Tóc, Body Đã Mặc Trang Phục và loại trừ Body-Contamination trong R2V)** — (1) **Bộ Reference tối ưu (Tối đa 3 Ref)**: Khi sinh video R2V qua Omni Flash Ingredients (`GENERATE_VIDEO_REFS`), danh sách `character_names` cho cảnh có Vlogger BẮT BUỘC chỉ gồm `[<Vlogger>, <Vlogger> Body, <Creature/Asset>]` (trong đó `<Vlogger> Body` đã là ảnh Body mặc trang phục hoàn chỉnh theo Rule 46). **TUYỆT ĐỐI KHÔNG đưa ảnh Body trần/gym chưa mặc đồ** vào bất kỳ cảnh video nào, vì ảnh Body gym (áo tank top sát nách + quần đùi lộ da tay chân trần) sẽ gây nhiễm latent da thịt (Body Latent Contamination), ép model AI biến trang phục thành đầm da thú cộc tay cởi trần kiểu người tiền sử generic. Không cần entity Outfit riêng lẻ. (2) **Ảnh Body 3 góc = Body đã mặc outfit (Rule 46)**: `<Vlogger> Body` phải liên kết với ảnh Body sheet đã mặc outfit 3 góc sạch logo có đầy đủ chi tiết mũ trùm lông cổ vai to bản, dây đan ngực, thắt lưng, viền lông gấu áo, quần legging và bốt cao cổ. (3) **Cấm bẫy prompt trống (The Empty Prompt Trap)**: TUYỆT ĐỐI KHÔNG xoá sạch mô tả outfit và tóc trong prompt rồi chỉ để câu logic trỏ `wearing the exact outfit from reference image`. Diffusion model không hiểu câu logic này; khi thiếu từ khoá thị giác neo giữ (visual anchor tokens), từ khoá bối cảnh thời kỳ sẽ ép nhân vật thành tóc bù xù xoã ngang vai và áo da thú cởi trần nguyên thủy. (4) **Khối Prompt Khóa Bắt Buộc**: BẮT BUỘC đưa khối `IDENTITY & OUTFIT LOCK (CRITICAL)` lên vị trí SỚM ngay sau `Shot:` trước `0-3s`, mô tả chuẩn xác: màu tóc, kiểu cột cao có mái bay (`honey-blonde hair tied in a high wavy ponytail with curtain bangs framing her face, bouncing energetically with each running stride`), chi tiết vóc dáng và trang phục đầy đủ từ ảnh `<Vlogger> Body`, và câu phủ định đối kháng cực mạnh (`This outfit is GOLDEN-TAN throughout -- NOT dark, NOT brown, NOT a caveman fur pelt, NOT sleeveless, NOT bare legs, NOT loose unkempt hair, NOT modern clothing`). Nhắc lại chuyển động của tóc đuôi ngựa và tà áo/bo lông trong từng phân đoạn `0-3s`, `3-6s`.
-48. **High-Retention Survival Pacing & The Action Hunting Pivot (Cấm bẫy lãng nhác một mình, Đời sống cô đọng & Bắt buộc kích hoạt Cuộc đi săn để giữ Retention)** — (1) **Cấm bẫy nhân vật ngồi lãng nhác một mình (No Idle Isolation Trap)**: Sau khi vượt qua thử thách bước vào nơi trú ẩn (hang đá, ngôi làng), TUYỆT ĐỐI CẤM để nhân vật chính ngồi một mình trơ trọi hơ lửa/ngắm cảnh/làm việc thụ động kéo dài gây tụt cảm xúc và gãy nhịp phim (killing emotional momentum & drop retention). Mọi cảnh sưởi ấm/nghỉ ngơi BẮT BUỘC phải gắn liền với tương tác đùm bọc cộng đồng (người bản địa trùm da thú che chở, kéo vào lòng bếp) hoặc hành động cứu sinh mệnh có mục đích (cấp cứu hạ thân nhiệt bằng đá nung stone-boiling). (2) **Nguyên tắc "Đời sống cô đọng" (Compact Hearth Life — Tối đa 5–7 cảnh / ~1 phút)**: Toàn bộ sinh hoạt nội trú (bếp lửa, chế tác công cụ, nấu nướng) BẮT BUỘC phải cô đọng, sắc nét; cấm bôi lan man 15–30 cảnh biến video thành phim tài liệu bảo tàng thủ công mỹ nghệ. Cấm lặp lại chi tiết vụn vặt (đã sờ trang phục thì không lặp lại so sánh mũi khâu; đã nạo da thì không thêm cảnh cơ bắp nạo da). (3) **Bắt buộc kích hoạt Cuộc Đi Săn / Cao trào Sinh Tồn (The Action Hunting Pivot — Goal Chaining)**: Ngay sau khi hồi phục thân nhiệt (mục tiêu A xong), BẮT BUỘC xuất hiện ngay nhu cầu sinh tồn sống còn mới theo chuỗi nhân quả: Kho thịt cạn kiệt, bão tuyết sắp tới, nhóm phải xuất quân đi săn thú lớn thời Băng Hà (Steppe Bison, Mammoth, Tuần lộc). Nhân vật chính chủ động xin gia nhập đoàn săn để chứng minh giá trị, không làm gánh nặng. (4) **Nhân quả liền mạch kéo sang Cao trào Đêm (Causality Bridge to Act 4)**: Đưa nhân vật ra khỏi vùng an toàn bước vào cuộc săn nghẹt thở: lần dấu tuyết -> phục kích áp sát bằng giáo đâm -> quái thú lồng lộn phản kháng -> đòn kết liễu phối hợp -> xẻ thịt thần tốc giữa gió tuyết. Mùi máu tươi từ cuộc săn ngoài thảo nguyên là nguyên nhân trực tiếp kích hoạt bầy thú dữ (Linh cẩu, Sói) bám đuôi về hang, dẫn thẳng vào trận tử thủ đêm bão tuyết (kết nối hoàn hảo với Cold Open).
-49. **Golden Standard Dialogue for 8s POV Vlog Clips & Sonic Isolation Hunting Exception (18 đến 22 từ / Clip 8s & Ngoại lệ im lặng khi săn bắn/ẩn nấp)** — (1) **Định lượng từ chuẩn 18 – 22 từ (Hard Constraint: 18 - 22 words per 8s clip)**: Clip 8s dùng lệnh `-ss 1` trim 1 giây đầu (khử giật AI) ➔ video hữu dụng thực tế = 7.0s. Trừ buffer đệm 0.5s an toàn ➔ thời lượng phát âm tối đa = ~6.5s. Tốc độ đọc tự nhiên (Laomedeia / TTS 1.1x - 1.2x): ~3.2 – 3.5 từ/giây. Dưới 18 từ: Gặp lỗi **Dead Air** (khoảng lặng chết, video thừa hình nhân vật im lặng làm tụt retention). Trên 22 từ: Gặp lỗi **Cut-off** (tràn thời lượng sang cảnh sau, câu nói bị ngắt cụt giữa chừng). BẮT BUỘC 100% các câu thoại trong các cảnh trò chuyện/vlog bình thường (cả tiếng Anh `narrator_text` và tiếng Việt Vietsub) phải nằm chuẩn trong dải **18 đến 22 từ**. (2) **Phân bổ cấu trúc 3 phân đoạn thời gian (0-3s, 3-6s, 6-8s)**: `0-3s` (6–7 từ: Cảm giác / Phản xạ ban đầu / Thiết lập bối cảnh), `3-6s` (7–8 từ: Miêu tả hành động / Diễn biến chính), `6-8s` (5–7 từ: Cảm xúc đọng lại / Cú punchline kết cảnh). (3) *(Chỉ áp cho POV vlog — phim dùng /fk-film)* **Khóa liên kết kỹ năng (Skill Interlock — Mandatory fk-gen-narrator Integration)**: Mọi skill viết kịch bản POV vlog (`time-travel-vlog`, `/fk-time-travel-vlog` cũ — nay lưu ở `skills/fk-film/references/vlog-archive.md`, `fk-vlog-guide`) KHI VIẾT THOẠI BẮT BUỘC phải tuân thủ và khóa trực tiếp các tiêu chuẩn của `fk-gen-narrator`. Lời thoại phải được nhúng trực tiếp vào prompt theo thời gian thực (`Nora whispers "..."`, `Nora says "..."`) và đồng bộ vào `narrator_text`. (4) **Ngoại lệ Sinh tồn & Rình săn: Sonic Isolation (Im lặng tuyệt đối khi rình mồi & hành động sinh tử)**: Ngoại lệ bắt buộc duy nhất cho quy tắc 18–22 từ là **các cảnh rình rập, áp sát thú dữ, ẩn nấp, hoặc giao chiến sinh tử một mất một còn**. Khi cách dã thú 3 mét, vlogger TUYỆT ĐỐI KHÔNG mở miệng nói chuyện (phản logic sinh tồn). Trong các cảnh này: BẮT BUỘC áp dụng kỹ thuật **Sonic Isolation** (`Strictly NO spoken dialogue. Her mouth stays firmly closed; she holds her breath in dead silence`). Căng thẳng được thể hiện qua âm thanh vật lý Foley (tiếng thở gấp nén chặt qua mũi, tiếng tim đập dồn, tiếng cành gãy, tiếng thú thở phì phò). Lời dẫn/suy nghĩ nội tâm nếu có sẽ được chèn ở **hậu kỳ voiceover/subtitles**, miệng nhân vật trong video KHÔNG ĐƯỢC mấp máy!
-50. *(Chỉ áp cho POV vlog — phim dùng /fk-film)* Phim dùng bảng "Bộ skill phối hợp" trong `skills/fk-film/SKILL.md`. **Mandatory Upstream Cinematic & Character Design Skills Interlock in Time-Travel Vlog (Khóa cứng bắt buộc 8 skill điện ảnh & thiết kế vào Time-Travel Vlog — CẤM TUYỆT ĐỐI BỎ SÓT)** — (1) **Nguyên tắc khóa cứng không thể phá vỡ**: Khi thực hiện bất kỳ dự án POV/Time-Travel Vlog nào (`/fk-time-travel-vlog` cũ — nay lưu ở `skills/fk-film/references/vlog-archive.md`, `/fk-vlog-guide`, `/fk-vlog-japan`), AI Agent BẮT BUỘC phải áp dụng đồng bộ và nghiêm ngặt 8 skill điện ảnh & thiết kế đã tích hợp trong `references/cinematic-toolkit.md`. TUYỆT ĐỐI CẤM bỏ qua hoặc làm tắt:
-    - **`/fk-character-design` (§0, Rule 58)**: Thiết kế Character Turnaround Sheet & Creature Turnaround Sheet 16:9 chuẩn đa góc khóa cứng 5 lớp DNA anchors (Tỷ lệ chiều cao, Cấu trúc xương/sọ, Biểu bì da & keratin vi mô Rule 57, Đạo cụ/giải phẫu vĩnh viễn, Khóa cấm trôi dạt & cấm khói) trước khi sinh bất kỳ ảnh reference nào.
-    - **`/fk-action-choreography` (§1)**: Mọi cảnh hành động, săn bắn, giao chiến, chạy trốn, ngã, hoặc thao tác dùng 2 tay BẮT BUỘC dùng **First-Person POV qua mắt vlogger** hoặc **Camera dựng cố định / nấp sau vật cản**. CẤM 100% việc vlogger vừa đi săn vừa giơ tay selfie quay mặt mình. Phải chia đúng **3 pha hành động** (`0-3s` Chuẩn bị -> `3-6s` Một đòn duy nhất dứt khoát theo hướng -> `6-8s` Thu thế & chấn động dội ngược). Dùng từ vựng an toàn chống méo người (thú lao chéo góc, đất mùn tung tóe, không tả xuyên thịt/máu me).
-    - **`/fk-scriptwriter` (§2–3)**: **ĐỔI CỠ CẢNH LIÊN TỤC** — CẤM TUYỆT ĐỐI 2 cảnh liền nhau cùng 1 góc máy/cỡ cảnh. Phải xoay vòng: POV rộng -> POV chi tiết tay -> POV quay lén từ chỗ nấp -> Selfie qua vai (Over-the-shoulder) -> Máy dựng cố định. Thể hiện cảm xúc bằng triệu chứng cơ thể (thở dốc, bấu chặt ngón tay, mắt đảo), không dùng tính từ trừu tượng. Kỹ thuật hồi hộp: Blind spot, Sonic isolation (im lặng nghẹt thở khi rình mồi / rình săn), Deceptive calm.
-    - **`/fk-character-bible` (§4–5, Rule 46, Rule 47)**: Khóa cứng `OUTFIT LOCK (Anti-Tank Top Lock)`: Tunic dài tay, đai corset, quần da ôm sát, ủng cao cổ. CẤM triệt để áo ba lỗ/tank top/gym sportswear hiện đại lọt vào thời tiền sử/cổ đại.
-    - **`/fk-camera-guide`**: Cấu trúc 5 lớp vật lý, quang học smartphone tự nhiên (camera ngang ngực, rung nảy bước chân), cấm camera tự bay lượn như flycam/gimbal.
-    - **`/fk-sound-design` (§6)**: Hậu kỳ âm thanh — Ducking nhạc nền tự động theo track thoại, master chuẩn YouTube -14 LUFS / -1 dBTP, layering SFX tiếng va chạm/tiếng tim đập.
-    - **`/fk-cinematic-transitions` (§7)**: Kỹ thuật J-cut khi cắt thẳng, không dùng bumper/crossfade/dip-to-black làm mất cảm giác footage chân thực.
-    - **`/fk-capcut-edit` (`scripts/trailer_cuts.py`)**: Tạo hook montage / intro trailer tự động qua 2 bước scan loudness/motion và build timeline.
-    (2) **Cổng kiểm tra trước khi sinh (Prompt Pre-Generation Gate)**: Mọi `video_prompt` trước khi lưu vào DB hoặc gửi gen BẮT BUỘC phải đối chiếu qua Bảng Checklist B của `prompt-lock.md`. Nếu vi phạm (ví dụ: cảnh săn thú mà dùng selfie nói chuyện, 2 cảnh liền kề cùng góc máy, thiếu outfit lock, hoặc bối cảnh phủ tuyết sai lệch) -> BẮT BUỘC SỬA PROMPT TRƯỚC, KHÔNG ĐƯỢC GỬI SINH!
-51. *(Mục (2)–(5) chỉ áp cho POV vlog — phim dùng /fk-film; mục (1) cấm giáp lá cà áp cho mọi dự án)* **Zero Melee Combat / Realistic Vlog Camera Direction (Self-Vlog + Two-Handed In-Frame Experience) & 23–25 Word Rapid Delivery (Cấm 100% giáp lá cà, Phối hợp Tự quay + Khung hình trải nghiệm 2 tay & Thoại nhanh 23–25 từ — User Lock 08/10/2026)** — (1) **Cấm 100% cảnh đánh đấm / vật lộn cận chiến với thú lớn**: AI video model (Veo 3 / Omni Flash R2V) bị quá tải cơ học tiếp xúc (contact physics) dẫn đến méo vũ khí, quái thú trượt lướt mất trọng lực và vỡ giải phẫu người khi có va chạm giáp lá cà. TUYỆT ĐỐI KHÔNG viết các cảnh đâm giáo, bò húc, vật lộn cận chiến. (2) **Chuyển sang POV Phone-Vlog Giao Lưu & Cơ Chế Sinh Tồn Kỳ Thú**: Học hỏi công thức thành công của các kênh triệu view (như Medieval Sisters) nhưng giữ nguyên bản sắc Vlog. Kịch bản tập trung vào Nora đến giao lưu văn hóa, học hỏi và trải nghiệm sinh tồn thực tế (đẽo đá Mousterian sắc như dao mổ, may đo chỉ gân hươu, đun sôi nước bằng đá nung trong âu da, bột khoáng xúc tác MnO2, dấu bàn tay đất son đỏ). (3) **Quy tắc phối hợp Góc máy Vlog Chân thực (Bỏ selfie 1 tay vươn dài)**: Tuyệt đối không mô tả cánh tay vươn dài gượng gạo xa tít làm hẹp góc nhìn và dễ lỗi dị tật tay. Thay vào đó, linh hoạt phối hợp 3 góc máy chuẩn Vlog: (a) *Lúc cần có Nora (Self-Vlog / Tự quay)*: Nora cầm máy tự nhiên ngang ngực/cổ quay mặt mình, nói trực tiếp vào ống kính dẫn dắt câu chuyện; (b) *Lúc Nora thao tác 2 tay & Cảnh rộng (In-Frame Host Experience)*: Máy quay đặt trên tảng đá/chạc cây hoặc góc máy trung/toàn (Tripod/Rock-mounted medium/wide shot), Nora xuất hiện rõ ràng trong khung hình (Full/Medium Nora in frame), thoải mái dùng cả hai tay trải nghiệm cơ chế sinh tồn (nếm súp tủy xương, ngồi sưởi ấm, đẽo đá, may đồ), vừa thao tác vừa quay mặt về phía camera vừa nói/giải thích kiểu người dẫn chương trình thực tế; (c) *Cận cảnh chi tiết (POV Close-Up)*: Camera quay cận cảnh đồ vật/hiện tượng (đá nung sủi bọt, mũi khâu gân) khi cần soi chi tiết. (4) **Chuẩn Thoại Dồn Dập Mới (23 – 25 từ / clip 8s)**: Nora nói nhanh, dồn dập, tự nhiên và tràn đầy năng lượng qua giọng Laomedeia (vừa vặn 7.0–7.5 giây của clip 8s), tạo cảm giác vlogger đang livestream thực tế với nhịp adrenaline cao. Không vượt quá 26 từ để tránh bị cụt âm thanh. (5) **Khóa Chuẩn Bối Cảnh Địa Lý/Thời Kỳ (Strictly No Snow)**: Tôn trọng đúng khí hậu thời kỳ (MIS 3 Neanderthal Dordogne là rừng thông ôn đới, đất mùn rêu xanh, tuyệt đối không tự ý chèn tuyết/bão mùa đông).
-52. *(Mục (1) và (3) chỉ áp cho POV vlog — phim dùng /fk-film; mục (2) khóa trang phục thuần ref áp cho mọi dự án)* **Ban 'Phone/Smartphone/Phone_Vlog' Keywords, Pure Dressed-Body Ref Lock (No Verbose Clothing Re-Description), and Waist-Up Body Drift Prevention (User Lock 08/10/2026)** — (1) **Cấm triệt để từ khóa 'phone', 'smartphone', 'phone_vlog', 'device', 'screen' trong prompt & project material**: Khi nhắc tới các từ này trong prompt hoặc material, diffusion model sẽ hiểu nhầm token text và tự động vẽ (vật thể hóa - materialize) một chiếc smartphone vật lý ngoài đời thật lơ lửng hoặc cầm trên tay nhân vật trong bối cảnh tiền sử/cổ đại (lỗi Ghost Device Materialization, như Scene 24). TUYỆT ĐỐI CẤM 100% các từ này (kể cả trong câu phủ định 'no phone'). Project material dùng `prehistoric_vlog` hoặc `realistic` / `documentary_footage`. Khóa góc nhìn quang học thuần khiết: `"The camera lens and viewpoint are completely outside the visible frame and never seen; both hands are empty."` (2) **Khóa trang phục thuần ảnh tham chiếu — CẤM tự mô tả lại bằng lời trong prompt (Pure Dressed-Body Reference Lock)**: Khi `<Vlogger> Body` đã là ảnh body mặc hoàn chỉnh trang phục (Rule 46/60), TUYỆT ĐỐI KHÔNG mô tả lại trang phục bằng lời trong prompt (không tự thêm `shearling collar`, `tunic`, `fur-lined`, v.v.). Khi prompt mô tả lại chi tiết text, AI sẽ bị xung đột giữa prompt và ảnh ref ➔ tự vẽ đè chi tiết lạ làm hỏng trang phục gốc (như Scene 21 tự mọc thêm cổ lông cừu trắng kỳ quái che mất áo da lộn cổ V đan dây). Chỉ dùng câu khóa trỏ thẳng vào reference sheet đã duyệt: `"[Character] wears the exact historical outfit shown in the [Character] Body reference sheet (NO shearling collar, NO extra fur, NO hood, NO outfit variations)."` (3) **Khóa vóc dáng & trang phục thuần tham chiếu (Chống hỏng áo quần do tập trung vào ngực — User Lock 08/10/2026)**: TUYỆT ĐỐI KHÔNG tả ngực to, khe ngực sâu hay khoét cổ sâu (`voluminous heavy bust`, `deep cleavage`, `plunging V-neckline`) trong prompt, vì việc tập trung vào ngực làm AI làm biến dạng và rách nát phom dáng áo quần. Chỉ cần khóa chuẩn vóc dáng và trang phục theo đúng ảnh reference: `"BODY & OUTFIT LOCK (CRITICAL): Nora matches her reference images exactly: her face and hair from the Nora face sheet, and her athletic, curvaceous hourglass build and tailored clothing from the Nora Body sheet. Nora wears the complete historical outfit from the Nora Body reference: form-fitting smoked golden-tan deer suede tunic with laced V-neckline, wide dark corset belt, fitted trousers, and knee-high boots (strictly NO shearling collar, NO extra fur, NO hood, NO outfit variations). From the very first frame to the last, Nora is fully dressed in the complete outfit. No part of the outfit appears, disappears or changes."`
-53. **Ban Mid-Air Particle Catching; Enforce Direct Surface Contact & Frame 0 Material Presence (Cấm mô tả hứng bụi/bột rơi giữa không trung, Bắt buộc chất liệu có sẵn trên bề mặt từ Frame 0 — User Lock 08/10/2026)** — AI video model (Veo 3 / Omni Flash R2V) hoàn toàn không có cơ học mô phỏng hạt bụi rơi tự do và truyền chất giữa hai thực thể (`falling powder trickling into cupped hands`). Khi prompt bắt nhân vật xòe tay hứng bột lơ lửng, AI sẽ cho 2 người làm 2 việc tách rời và tự động "hóa phép" (spawn) biến màu đè lên bàn tay giữa clip, làm tay biến dạng và đổi màu phi vật lý (lỗi Scene 22). BẮT BUỘC: (1) Mọi chất liệu (bột đất son đỏ, tro than, đất sét) phải nằm sẵn trên bề mặt vật thể cố định (tảng đá, vỏ cây, âu da) ngay từ Frame 0; (2) Nhân vật dùng đầu ngón tay chạm/quệt trực tiếp vào bề mặt có sẵn đó để lấy chất liệu (`Nora dips her index finger directly into the crimson pigment resting on the flat stone, picking up a pinch of red powder`); (3) Chuỗi nhân quả xúc giác: Chạm trực tiếp ➔ dính bột ➔ nâng lên miết giữa hai ngón tay và khoe với camera. Khử hoàn toàn hiện tượng bàn tay tự biến đổi màu kỳ quái.
-54. **Immediate Frame-0 Speech Delivery & 3-Segment Dialogue Pacing (Nói ngay từ giây 0, phân bổ thoại đều 3 mốc thời gian — User Lock 08/10/2026)** — (1) **Hiện tượng nuốt chữ do dead air đầu clip**: Prompt mô tả nhân vật chỉ mỉm cười hoặc đi dạo ở `0-3s` mà không chỉ định nói ngay từ giây 0, khiến AI im lặng suốt 2–3 giây đầu; khi câu thoại dài 22–24 từ, AI chỉ còn 4–5 giây cuối để đọc nên không kịp phát âm hết hoặc bị ngắt âm ở giây thứ 8 (lỗi Scene 21). (2) **Quy tắc bắt buộc**: Tại `0-3s`, BẮT BUỘC chỉ định: `"From the very first frame at second 0, [Character] begins speaking immediately, excitedly, and fluently into the lens..."`. Đồng thời nhúng các mảnh thoại 6–8 từ trực tiếp vào từng mốc `0-3s`, `3-6s`, `6-8s` để AI đồng bộ khẩu hình đều suốt 7.5 giây, đảm bảo đọc trọn vẹn 100% câu thoại mà không bị cụt âm.
-55. **Structured JSON Video Prompt Architecture & Mandatory Pre-Generation Linter Lock (User Lock 09/10/2026)** — (1) **Bắt buộc dùng cấu trúc JSON cho mọi video_prompt**: Veo 3 và Omni Flash R2V (`abra_r2v`) sử dụng LLM text encoder (T5/Gemini). Mọi prompt gửi lên FlowKit (`POST /api/scenes`, `PATCH /api/scenes`, batch submits) BẮT BUỘC phải định dạng theo chuẩn JSON có cấu trúc (`/fk-prompt-lock`), phân tách rõ rệt: `camera`, `setting`, `characters`, `timeline_action` (`0-3s`, `3-6s`, `6-8s`), `speech` (23-25 từ cho vlog hoặc Sonic Isolation khi rình săn), và `negative_constraints`. TUYỆT ĐỐI CẤM dùng chuỗi text tự do lộn xộn hoặc text bị lỗi chèn ký tự lạ (như gạch ngang em-dash) làm hỏng bộ phân giải token. (2) **Cổng kiểm tra Prompt Linter bắt buộc**: CẢ Antigravity (`agy`) VÀ Claude (`claude`) trước khi lưu prompt vào database hoặc gửi lệnh sinh video BẮT BUỘC phải chạy `python tools/lint_prompt.py` (hoặc `python tools/lint_prompt.py --test-json` / `python tools/lint_prompt.py --file <path>`). Phải đạt 0 lỗi Critical/High mới được tiến hành sinh video.
-56. **Mandatory Script-to-Prompt Converter (`/fk-script-to-prompts`) & Screenwriting Craft Interlock (User Lock 12/10/2026)** — (1) **Bắt buộc dùng `/fk-script-to-prompts` cho cả Claude và Antigravity (Gemini)**: Khi chuyển thể từ kịch bản phân cảnh (`script.md`) sang Video Prompt JSON (`prompts_actX.json` / `prompts.json`), CẢ Claude VÀ Antigravity (Gemini) BẮT BUỘC phải dùng skill `/fk-script-to-prompts`. TUYỆT ĐỐI CẤM viết prompt ad-hoc tự do lộn xộn hoặc tự chế lời thoại. (2) **Khóa 100% nguyên bản lời thoại & subtext**: Lời thoại tiếng Anh của nhân vật trong `speech.dialogue` phải lấy 1:1 từ cột "Thoại Nora" trong `script.md` §9, chuẩn số từ Rule 49 bảng (0), không tự bịa đặt thoại giải thích sáo rỗng (*on-the-nose exposition*). (3) **Tích hợp bộ Screenwriting Skills (`sw-*`)**: Bắt buộc nhúng khối `dramatic_craft` (mục tiêu beat, value turn +/-, subtext, chức năng đạo cụ và chi tiết đắt giá theo `sw-scene-craft` và `sw-character-conflict`). (4) **Tự động Self-Review & Linter Auto-Repair**: Prompt JSON sinh ra phải tự động chạy kiểm toán qua `python tools/lint_prompt.py --file <path>`, tự động sửa lỗi (nếu có) đạt 0 lỗi Critical/High, xuất file JSON chuẩn kèm bản dịch `vn.json` trình cho User duyệt trước khi đưa vào pipeline sinh video.
-57. **Biological Material Authenticity, Micro-Texture Anchors & Anti-CGI Lock (Quy chuẩn chất liệu sinh học & Triệt tiêu triệt để 3D CGI giả trân — User Lock 13/10/2026)** — (1) **Nghiên cứu hóa thạch & mô sinh học thực tế (Fossil & Anatomy Grounding)**: Đối với mọi sinh vật tiền sử, quái thú, động vật hoặc chất liệu lịch sử, BẮT BUỘC nghiên cứu mẫu hóa thạch biểu bì/mô sinh học thực tế (ví dụ: mẫu da hóa thạch *Lane* Triceratops BHI-6200, cấu trúc vảy đa giác dạng lát gạch `basement polygonal scales`, gai nón sừng 5–12cm `conical tubercles/osteoderms`, yếm cổ da dày có nếp gấp động học). (2) **Triệt tiêu bẫy 3D CGI / Tượng sáp / Mô hình nhựa (Zero Plastic / Zero CGI)**: Tuyệt đối cấm khủng long/sinh vật nhìn như tượng sáp bảo tàng, mô hình đồ chơi nhựa hay đồ họa 3D render game phẳng lỳ không có chi tiết vi mô. (3) **Bộ 6 Trụ Cột Chất Liệu Bắt Buộc trong Prompt (`image_prompt` & `video_prompt`)**: (a) *Biểu bì vi mô & Vảy đa giác*: Mô tả vảy sần sùi không đều, gai nón sừng nhô trên lưng/hông, nếp gấp da yếm cổ rung nảy theo nhịp thở và bước đi. (b) *Chất sừng keratin & Rãnh máu nứt nẻ*: Sừng, mỏ, móng vuốt có thớ sợi keratin nứt phong hóa tự nhiên, rãnh rỉ máu khô, sẹo va chạm, khóe mỏ rỉ dãi bọt nhầy tự nhiên. (c) *Chất bẩn môi trường & Bùn đất phù sa*: Bùn đỏ phù sa Hell Creek bám khô nứt nẻ dưới chân, cặn đất bám rãnh vảy. (d) *Nhiệt động học & Sinh lý sống (Anti-Smoke Locked)*: Lồng ngực phập phồng sinh lý sống động, lỗ mũi khô ráo tự nhiên chỉ có độ ẩm nhẹ ở viền, thở không khí trong lành, TUYỆT ĐỐI KHÔNG thở ra luồng hơi sương mù/khói trắng. (e) *Quán tính cơ bắp & Trọng lượng 6–10 tấn*: Cơ đùi và vai cuồn cuộn dưới da dày, bước chân nén sụt lún bùn đất, quán tính p=m*v làm yếm cổ và nếp da rung nảy thứ cấp. (f) *Ánh sáng tự nhiên phá vỡ render phẳng*: Ánh sáng ban mai xiên góc xuyên vòm lá cọ tán rộng tạo các vệt nắng lốm đốm (dappled canopy sunlight) tạo bóng đổ vi mô sâu (micro-shadows), triệt tiêu ánh sáng studio phẳng. (4) **Từ khóa cấm & Từ khóa neo bắt buộc**: CẤM các từ: `3d render`, `cgi`, `smooth plastic`, `clean studio lighting`, `wax museum statue`, `action figure`. BẮT BUỘC dùng từ khóa điện ảnh tài liệu: `35mm film grain`, `National Geographic / BBC prehistoric wildlife documentary footage`, `tactile organic biological epidermis`.
-58. **Mandatory Character & Creature Design System via `/fk-character-design` (Quy chuẩn thiết kế Nhân vật & Sinh vật chủ chốt BẮT BUỘC bằng fk-character-design — User Lock 13/10/2026, cập nhật 23/10/2026)** — 
-    - (1) **Khóa bắt buộc 100% skill `/fk-character-design` cho MỌI Nhân vật & Sinh vật**: Khi tạo, thiết kế hoặc sinh bất kỳ thực thể sống nào (nhân vật chính, nhân vật phụ, quái thú, sinh vật biển sâu, động vật), CẢ Claude VÀ Antigravity (Gemini) TUYỆT ĐỐI KHÔNG được tự ý viết prompt ad-hoc tự do bằng tay. BẮT BUỘC 100% phải kích hoạt skill `/fk-character-design` (tại `skills/fk-character-design/`) để xây dựng Character Sheet / Creature Sheet 16:9 hoàn chỉnh.
-    - (2) **Quy chuẩn Live-Action Casting Photo & Practical Monster FX (Triệt tiêu 100% bẫy tranh vẽ 2D / Sketch / Concept Art)**: Mục tiêu của reference sheet là phục vụ phim điện ảnh (`/fk-film`), do đó reference sheet BẮT BUỘC phải là **ảnh chụp studio người thật hoặc mô hình quái vật thực tế (live-action casting photo & practical animatronic creature photography)**:
-      - BẮT BUỘC dùng các neo từ khóa điện ảnh: `Authentic 35mm film still photograph`, `portrayed by an actual real-life actor in a film casting studio`, `shot on 35mm Cooke S4 prime lens on neutral dark studio backdrop`, `practical movie prosthetics and animatronics`.
-      - TUYỆT ĐỐI CẤM các từ khóa gợi ý sách vẽ/tranh minh họa: `study`, `comparative study`, `character study`, `sketchbook`, `concept art`, `digital illustration`, `drawing`, `pencil sketch`, `ink drawing`, `anime`, `cartoon`. AI thấy các từ này sẽ lập tức render ra tranh vẽ 2D hoặc phác thảo bút chì làm hỏng video model (khiến video sinh ra bị dính nét vẽ 2D viền đen và da giả sáp).
-    - (3) **Chuẩn Creature & Character Turnaround Sheet 16:9 (W0 Turnaround Contract)**:
-      - *Đối với Nhân vật*: Tuân thủ Turnaround Sheet 16:9 (Panel 1: Toàn thân chính diện; Panel 2: Toàn thân 3/4; Panel 3: Toàn thân nghiêng/sau; Panel 4: Cận cảnh chân dung mặt/cổ/tóc). Đối với `<Vlogger> Body`, bắt buộc là Body đã mặc hoàn chỉnh outfit (Rule 46).
-      - *Đối với Sinh vật chủ chốt / Quái thú*: BẮT BUỘC tạo **Creature Turnaround Sheet 16:9 chuẩn đa góc** gồm 3 panel trong 1 khung hình 16:9: (Panel 1) 3/4 góc trái thể hiện rõ toàn bộ cấu trúc thân thể và đặc điểm bên trái; (Panel 2) 3/4 góc phải thể hiện rõ góc đối diện và đặc điểm bất đối xứng; (Panel 3) Cận cảnh chính diện giác đấu đầu sọ, sừng/hàm/mắt/diềm cổ, đặc tả vi mô chất liệu biểu bì và keratin phong hóa.
-    - (4) **Khóa 5 Lớp DNA Anchor từ `/fk-character-design`**:
-      - *Proportion & Silhouette Lock*: Chiều cao, tỷ lệ đầu/thân, tỷ lệ chân, đường baseline chân/móng, tư thế vóc dáng đặc trưng.
-      - *Bone & Face Structure Layer*: Cấu trúc xương sọ, hốc mắt, hàm/mỏ, diềm cổ, gai nón, bất đối xứng giải phẫu (ví dụ: sừng trái gãy cụt còn 30cm lộ lõi keratin thô ráp, sừng phải dài 1m nhọn hoắt).
-      - *Skin/Epidermis & Micro-Texture Layer (Rule 57)*: Vảy đa giác lát gạch, nốt sần nón, rãnh rỉ máu phong hóa, chất sừng nứt nẻ, cặn bùn đất khô bám rãnh.
-      - *Permanent Prop & Anatomical Geometry*: Đặc điểm cơ thể/vật phẩm vĩnh viễn (sẹo cào, sừng gãy, dây buộc), khóa vị trí hình học chính xác (bên trái vs bên phải), nêu rõ nó KHÔNG phải cái gì để chống AI hallucination.
-      - *Forbidden Drift & Anti-Smoke Lock*: Khóa cấm trôi dạt tuyệt đối (cấm lật sừng sang bên phải, cấm lành sừng gãy, cấm đổi hoa văn diềm cổ, cấm khói thở dạng đầu máy xe lửa trắng đặc, cấm bóng nhờn nhựa 3D CGI, cấm tranh vẽ 2D).
-    - (5) **Cổng kiểm tra trong Skill Pipeline**: Mọi skill tạo ref (`/fk-gen-refs`, `/fk-character-bible`, `/fk-film`, `/fk-pipeline`) BẮT BUỘC phải có bước kiểm tra: nếu entity là nhân vật hoặc sinh vật chủ chốt thì prompt tạo ref phải tuân thủ chuẩn Turnaround Sheet của `/fk-character-design` trước khi gửi batch submit.
-59. **Cretaceous POV Vlog Material & Anti-CGI Realism (Khóa chất liệu phân hủy sinh học, triệt tiêu lốp xe ô tô/cưa xẻ hiện đại, xóa god rays, khóa nhận diện gương mặt chuẩn Turnaround — User Lock 13/10/2026)** —
-    - (1) **Chất liệu Xác Động Vật & Phân Hủy Sinh Học (Biological Decomposition Material)**:
-      - *Trọng lượng & Độ chìm lún*: Mọi xác thú lớn (như Edmontosaurus 7-12 tấn) BẮT BUỘC phải chìm lún sâu 20–30cm vào bùn phù sa ướt hoặc đất sét đỏ sát mép nước (`heavily sunken 30cm into wet river silt and alluvial mud`), tạo gờ đùn bùn đất quanh thân xác. Tuyệt đối cấm nằm hờ hững trên sỏi khô như mô hình nhựa.
-      - *Giải phẫu thịt phân hủy & Gân bám xương*: Khung sườn ố vàng vì nắng gió; cơ thịt đỏ thẫm đông kết và gân nhờn bám chặt vào xương sườn và sụn (`dark coagulated reddish-brown muscle tissue and glistening tendons adhering to costal bone and cartilage`); nội tạng phân hủy ẩm ướt trong khoang ngực; da vảy sừng rách tả tơi mép mỡ quăn dính bùn và máu đông khô. CẤM TUYỆT ĐỐI xương thạch cao trắng khô như tượng sáp hoặc mô hình trưng bày bảo tàng (`NOT a museum diorama, NOT wax figure, NOT dry clean bones`).
-      - *Vết cắn thú săn mồi*: Vết cắn của T. rex hình chữ U sâu hoắm trên xương bả vai/hông phải thấy rõ tủy xương bị dập nát (`scalloped bite gouges with crushed marrow`).
-      - *Côn trùng sinh thái*: Bầy ruồi nhặng và muỗi cổ đại bay lượn và bò trên các kẽ thịt thối.
-    - (2) **Bảo Toàn Nguyên Vẹn Đường Mòn Tiền Sử & Triệt Tiêu 100% Dấu Vết Hiện Đại (Prehistoric Trail Integrity & Anti-Tire-Track Lock)**:
-      - *Cấm tuyệt đối từ khóa gợi ý đường giao thông*: CẤM dùng các từ `trail`, `dirt road`, `country road` đơn độc khiến AI diffusion model vẽ thêm **vệt lốp xe ô tô 2 hàng song song (truck tire ruts)** hoặc thân cây bị cưa xẻ đặt gọn gàng hai bên như đường lâm nghiệp hiện đại.
-      - *Chuẩn hành lang thú hoang dã*: BẮT BUỘC dùng: `wide, chaotic animal-trampled game corridor cutting into primeval rainforest; deeply churned red clay mud filled with massive rounded ceratopsian foot depressions, crushed fern fronds, mud wallows; STRICTLY NO vehicle tracks, STRICTLY NO parallel tire ruts, STRICTLY NO modern dirt road, STRICTLY NO sawn lumber logs`.
-    - (3) **Ánh Sáng Tự Nhiên & Triệt Tiêu Tia Nắng Thần Thoại (Natural Lighting vs Anti-God-Rays)**:
-      - CẤM các từ khóa tạo tia nắng ảo (`god rays`, `volumetric beams`, `magical sunbeams`, `ethereal lighting`) khiến bối cảnh rừng và sông suối biến thành tiểu cảnh hồ cá nhân tạo hoặc phim hoạt hình 3D.
-      - BẮT BUỘC dùng: `flat natural morning overcast daylight, humid river mist in distance, natural dappled canopy sunlight`. Mai rùa hoặc đá sỏi phải bám phù sa ẩm ướt tự nhiên (`half-embedded in wet river silt and pebbles with thin specular reflections`).
-    - (4) **Khóa Nhận Diện Khuôn Mặt Chống Text Prompt Ghi Đè (Face Lock against Text-Prompt Drift)**:
-      - Text prompt trong scene BẮT BUỘC phải đồng bộ 100% với ảnh reference `ref_face`. Tuyệt đối không mô tả thuộc tính màu tóc/kiểu tóc/da mâu thuẫn với ảnh ref (ví dụ: cấm ghi `copper-red hair, freckles, messy bun` khi ảnh ref là `honey-blonde, high ponytail, curtain bangs, smooth creamy skin`).
-      - Công thức khóa khuôn mặt chuẩn: `matching [Name] face reference: young [age]-year-old woman with honey-blonde hair in high wavy ponytail with wispy curtain bangs framing forehead, fair smooth creamy skin (strictly NO red hair, NO auburn hair, NO messy bun, NO freckles), hazel-green eyes`.
-60. **Face Lock = Reference Only, KHÔNG tả ngũ quan bằng chữ (Khóa mặt chỉ bằng ảnh Ref — User Lock 13/10/2026, sửa 19/10/2026 theo Rule 64)** —
-    - (1) **Tái sử dụng nguyên vẹn ảnh Ref hiện có**: Khi đã có ảnh Reference trong dự án (`<Vlogger>` entity có `media_id`), TUYỆT ĐỐI KHÔNG cắt nhỏ hay tạo ảnh mới làm phân mảnh media. Dùng đúng ảnh reference hiện tại.
-    - (2) **Một câu khóa trỏ vào chip ảnh ref (Rule 64)**: khối nhận diện chỉ có MỘT câu: `"FACE LOCK: [Character]'s face is exactly the face in {{ref:[Character]}}, kept 1:1: same face shape, eyes, nose, lips, brows and hair."` (gửi đi thành chip `{{media:<uuid>|<tên file>}}`). Câu này chỉ trỏ vào ảnh, không tả lại bộ phận nào.
-    - (3) **CẤM tả ngũ quan bằng chữ (user 19/10/2026: "không tả ngũ quan")**: KHÔNG viết dáng mặt, cằm, má, mũi, môi, mắt, màu/kiểu tóc, makeup trong prompt (cả `image_prompt` lẫn `video_prompt`). Chữ tả mặt cạnh tranh với ảnh ref và kéo model vẽ một khuôn mặt "theo chữ" khác ảnh. Tuổi và vai trò ("an adult woman of 23", "a firefighter") vẫn được ghi. Mặt trôi thì sửa ảnh ref hoặc bộ ref đính kèm, không thêm chữ tả mặt.
-    - (4) **Không dùng câu cấm liệt kê bộ phận mặt**: bỏ các câu kiểu `NO square jaw, NO thin lips, NO hollow cheeks…`, vì phủ định vẫn gọi tên bộ phận và kéo model về phía đó. Nếu cần, chỉ một câu chung: `"no face drift: the face never changes from the reference."`
-61. **Natural Lighting, Anti-Glamour Raw Realism & Zero Stretched Selfie Arm Lock (Khóa Ánh Sáng Tự Nhiên, Triệt Tiêu Bias Làm Đẹp Giả Trân & Cấm Tuyệt Đối Cánh Tay Selfie Vươn Dài — User Lock 13/10/2026)** —
-    - (1) **Ánh sáng tự nhiên 100% & Triệt tiêu CGI (Natural Ambient & Dappled Lighting)**:
-      - CẤM 100% đèn studio, đèn hắt sáng beauty, viền sáng nhân tạo (rim lighting), tia nắng đồ họa máy tính (volumetric god rays, ethereal sunbeams).
-      - BẮT BUỘC dùng:
-        - Khu vực sông suối, đầm lầy: `flat natural morning overcast daylight, cool humid river mist diffusing soft ambient daylight, realistic moisture reflections on wet gravel and silt`.
-        - Khu vực rừng rậm: `natural dappled canopy sunlight filtering through giant tree ferns and conifers, organic deep micro-shadows breaking flat CGI render`.
-    - (2) **Triệt tiêu bẫy làm đẹp (Anti-Glamour Bias / Zero Beauty Filter)**:
-      - CẤM các từ khóa làm đẹp kích hoạt bộ lọc chân dung thương mại của Imagen 3: `fair smooth creamy skin`, `beauty glow`, `flawless porcelain skin`, `luminous glam eyes`.
-      - BẮT BUỘC dùng kết cấu da thực địa sinh tồn: `authentic unretouched outdoor skin texture, fine pores, natural perspiration sheen, light mud and dirt smudges on cheek and jawline, natural wind-blown stray hair strands, zero makeup, zero cosmetics, raw 35mm wildlife forensic documentary realism`.
-    - (3) *(Chỉ áp cho POV vlog — phim dùng /fk-film)* **Cấm tuyệt đối cánh tay selfie vươn dài (Zero Stretched Arm Lock)**:
-      - CẤM mô tả `her arm extends holding camera at chest level` khiến AI vẽ cánh tay biến dạng vượn dài thò vào khung hình như cây gậy selfie tàng hình.
-      - Thấu kính camera chính là điểm nhìn: `The camera viewpoint and gripping arm are completely outside the visible frame and never seen; both hands are empty and natural (or naturally resting on ground/prop)`.
-      - Ưu tiên 60%–70% First-Person POV (cam sau) và Góc máy cố định tựa đá/gốc cây (In-frame experience) theo Rule 42 & Rule 51.
-    - (4) **Chất liệu sinh học thực tế cho sinh vật & môi trường**:
-      - Khủng long: `tactile organic epidermis, irregular polygonal basement scales, prominent conical keratin tubercles, weathered hairline fissures on horns, matte dried alluvial clay caked into crevices, clean dry nostrils with subtle faint moisture at rim only (strictly NO breath vapor, strictly NO smoke or steam)`.
-62. **Ironclad Anti-Smoke, Pachyderm Living Biology, Deep Focus & Single-Face Start Frame Lock (Khóa Tuyệt Đối Chống Khói Thở, Chất Liệu Da Thú Không Phản Quang, Deep Focus f/8 & Kiến Trúc Face Ref Cho Start Frame — User Lock 13/10/2026)** —
-    - (1) **Khóa Tuyệt Đối Chống Khói Thở (Zero Smoke / Zero Breath Vapor / Zero Steam Lock)**:
-      - Trong môi trường khí hậu ấm áp/cận nhiệt đới hoặc sinh vật thời tiền sử (Hell Creek, Kỷ Phấn Trắng, khủng long, động vật hoang dã): CẤM TUYỆT ĐỐI các từ `hot condensed breath vapor`, `vapor mist`, `snorting steam`, `smoke plumes`, `breath vapor misting`. Những từ này khiến AI vẽ luồng khói trắng mù mịt như đầu máy xe lửa hoạt hình, làm giả trân toàn bộ khung hình.
-      - BẮT BUỘC dùng: `strictly NO smoke, strictly NO breath vapor, strictly NO steam, strictly NO white plumes; clean dry nostrils with subtle faint moisture at rim only, breathing transparent clean air`.
-    - (2) **Triệt tiêu chất liệu nhựa 3D CGI cho Khủng Long & Quái Thú (Pachyderm Living Biology vs Anti-Plastic Sheen)**:
-      - CẤM 100% lớp vảy bóng nhờn (specular sheen), tia nắng ảo (`sunlight streaming`, `volumetric god rays`), đèn viền studio (`studio rim lighting`) làm sinh vật trông như tượng sáp bảo tàng hoặc mô hình 3D dán đè lên nền 2D.
-      - BẮT BUỘC dùng: `visceral living megafauna biology: rough non-reflective pachyderm hide (matching African black rhinoceros and elephant skin texture), matte polygonal basement scales, deep biological wrinkles and folds around dewlap and flanks, caked dried red Cretaceous clay mud and wet swamp silt smeared across lower limbs and hooves, dry keratin horn sheath with natural hairline micro-fractures; Flat natural overcast diffuse daylight filtered through forest canopy, soft organic environmental shadows, strictly NO artificial god rays, strictly NO studio rim light, strictly NOT a 3D digital render, NOT a plastic toy model, NOT a museum resin statue`.
-    - (3) **Deep Focus f/8 cho Cảnh Trung & Vlog (Anti-Bokeh / Anti-Shallow DoF)**:
-      - Trong mọi cảnh Medium Shot hoặc Vlog Selfie, AI thường tự động làm mờ phông nền (xóa phông mù mịt / shallow depth of field bokeh f/1.8) làm mất toàn bộ bối cảnh sinh tồn.
-      - BẮT BUỘC dùng: `deep focus, deep depth of field (f/8 aperture), entire frame sharp from foreground to distant horizon, crisp background trees and riverbank, strictly NO shallow depth of field, strictly NO bokeh`.
-    - (4) **Kiến trúc Face Reference cho Start Frame (Chống Face Drift)**:
-      - Khi sinh ảnh Start Frame 2D (Imagen 3), các tấm reference dạng Turnaround Sheet nhiều panel (4 góc) dễ làm phân tán cross-attention của model dẫn đến lệch nét giữa các cảnh.
-      - Khóa mặt theo Rule 60/64: đính ảnh ref mặt (ưu tiên ảnh chân dung một mặt, không dùng sheet nhiều panel cho mặt) + MỘT câu khóa trỏ vào chip ảnh. KHÔNG tả ngũ quan bằng chữ.
-63. **Mandatory Vlogger Ref ID / source_media_id Injection in Scene Start Frames (Bắt buộc truyền ID ảnh Ref Vlogger khi sinh Start Frame có nhân vật — User Lock 14/10/2026)** —
-    - (1) **Hiện tượng & Nguyên nhân gốc rễ (Root Cause)**: Khi submit request sinh ảnh Start Frame cho các cảnh có nhân vật (như Nora), nếu chỉ gửi `{"type": "GENERATE_IMAGE", "scene_id": ...}` mà KHÔNG truyền `source_media_id` (chứa UUID của ảnh ref nhân vật `uploads/nora_main_clean.jpg`): (a) Google Flow sẽ coi request này là Text-to-Image thuần túy từ con số 0 (không có `base_media_id` / `target_asset`), (b) Trên giao diện web `flow.google.com`, khung tạo ảnh hoàn toàn KHÔNG CÓ ảnh tham chiếu của nhân vật được gắn vào, (c) Imagen 3 tự động vẽ khuôn mặt ngẫu nhiên từ text mô tả, gây Face Drift và xung đột nghiêm trọng khi đưa vào sinh video R2V.
-    - (2) **Quy tắc bắt buộc (Mandatory Protocol)**:
-      - Đối với BẤT KỲ cảnh nào xuất hiện Vlogger hoặc nhân vật chính, request tạo Start Frame BẮT BUỘC phải truyền `source_media_id` = UUID của ảnh ref nhân vật chính (`c.media_id` của `<Vlogger>`): `{"type": "EDIT_IMAGE", "scene_id": sid, "source_media_id": nora_media_id, "project_id": pid, "video_id": vid, "orientation": "HORIZONTAL"}` (hoặc truyền `source_media_id` trong `GENERATE_IMAGE`).
-      - Tác dụng trên Google Flow: FlowKit đưa ID này vào `base_media_id` / `target_asset`. Trên `flow.google.com`, Flow sẽ gán trực tiếp thẻ ảnh ref của nhân vật vào khung tạo ảnh làm ảnh gốc (`BASE_IMAGE`), khóa cứng nhận diện ngũ quan 1:1, không bị Imagen 3 vẽ khuôn mặt ngẫu nhiên.
-      - Cảnh không người (Phong cảnh, Khủng long, B-roll): Tiếp tục dùng `GENERATE_IMAGE` thuần túy không cần `source_media_id`.
-
-64. **Inline Reference Mention — Bắt buộc nhắc ảnh ref ngay trong prompt (User Lock 14/10/2026)** — Khi request có ảnh ref (ảnh Start Frame lẫn video R2V), prompt BẮT BUỘC nhắc ảnh đó **ngay tại câu khóa**, đúng cách Flow web chèn chip ảnh: trong file thiết kế viết `{{ref:<Tên entity>}}`; trước khi gửi đổi thành `{{media:<uuid>|<tên file đã upload>}}`; `flow_batch.prompt_segments` tách thành các đoạn `["chữ"]` / `[null,[["<uuid>","<tên file>"]]]` (capture thật từ flow.google.com 14/10/2026). Không mô tả lại khuôn mặt/makeup/trang phục bằng chữ — chỉ một câu khóa trỏ vào chip: `Nora's face is exactly the face in {{ref:Nora}}, kept 1:1 ... including her makeup and hairstyle` + `MAKEUP LOCK`. Start Frame có vlogger chỉ đính 3 ref [mặt, Body, bối cảnh]; video giữ đủ ref (≤7). `tools/lint_prompt.py` kiểm: token sai dạng (CRITICAL), `{{ref:}}` chưa resolve khi gửi, chip không nằm trong bộ ref, prompt có ref mà không nhắc ảnh nào (HIGH).
-
-65. **Continuous Scene Chains vs. Scene Transitions Start Frame Protocol (Quy tắc bất di bất dịch: Cảnh liên tục cắt Last Frame làm Start Frame, chuyển cảnh mới sinh ảnh — User Lock 15/10/2026)** —
-    - (1) **Quy tắc phân định 2 loại cảnh (The Two Scene Categories)**:
-      - **Loại 1 — Cảnh liên tục (Continuous Action / Scene Chains / Cùng góc nhìn tiếp nối)**:
-        - Là các cảnh diễn ra liên tiếp trong cùng một chuỗi hành động thời gian thực (ví dụ: chuỗi rượt đuổi, va chạm 3 nhịp `a/b/c`, vlogger vừa nói câu trước xoay người làm hành động tiếp theo ở câu sau mà không cắt đổi địa điểm/thời gian).
-        - **CẤM TUYỆT ĐỐI**: KHÔNG sinh ảnh tĩnh Start Frame mới từ văn bản (`GENERATE_IMAGE` hoặc Text-to-Image AI). Việc sinh ảnh mới cho cảnh liên tục sẽ làm vỡ giải phẫu, méo nhân vật, đổi dáng vóc, và trôi dạt bối cảnh giữa 2 giây giao nhau.
-        - **BẮT BUỘC 100% (`PREV_LAST_FRAME`)**: Trích xuất khung hình cuối cùng (Last Frame) của video clip trước bằng `ffmpeg -sseof -0.08 -i prev.mp4 -frames:v 1`, chạy ngay qua `tools/remove_watermark_from_image.py` để xóa sạch watermark và SynthID, upload file sạch lên FlowKit để lấy `media_id` UUID sạch gán làm Start Frame (`horizontal_image_media_id`) cho cảnh kế tiếp. Clip kế tiếp tự động chờ clip trước hoàn thành mới trích xuất và sinh video.
-      - **Loại 2 — Chuyển cảnh (Scene Transitions / Cutaways / Đổi góc / Đổi bối cảnh / Đổi thời gian)**:
-        - Là các cú cắt cảnh thực sự: đổi từ POV sang Selfie hoặc ngược lại, đổi cỡ cảnh đột ngột, chuyển sang vị trí mới, chuyển thời gian (sáng sang trưa, ngoài sông vào sâu trong rừng), hoặc cảnh mở đầu Establishing Shot.
-        - **QUY TRÌNH CHUẨN**: Sinh ảnh tĩnh Frame 0 độc lập bằng `GENERATE_IMAGE` (tuân thủ Rule 63 về `source_media_id`), tải về, tẩy watermark (`remove_watermark_from_image.py`), upload ảnh sạch lên Flowkit, và **mở Review Board (`review_images.html`) chờ User duyệt trước khi sinh video**.
-    - (2) **Phạm vi áp dụng — mọi clip nối tiếp trực tiếp, KHÔNG chỉ chuỗi `a/b/c` (User Lock 16/10/2026)**: Quy tắc Loại 1 áp cho BẤT KỲ clip nào nối tiếp trực tiếp clip đứng trước nó trong timeline, dù clip ID có hậu tố `a/b/c` hay không. Phép thử: clip B mở ra ở **cùng địa điểm + cùng khoảnh khắc + cùng vị trí/góc máy + cùng cỡ cảnh** với khung hình cuối của clip A (không có cú cắt) ➔ B là Loại 1 ➔ `start_frame.type = "PREV_LAST_FRAME"`, CẤM `GENERATE_IMAGE`. Chỉ cần MỘT trong bốn yếu tố đổi (góc máy, cỡ cảnh, địa điểm, thời gian) ➔ Loại 2. Khi viết prompt (`/fk-script-to-prompts`) phải phân loại từng clip và ghi rõ lý do vào `start_frame.note`; clip Loại 1 không có `image_prompt`.
-    - (3) **Thứ tự sinh & review**: Clip Loại 1 chỉ sinh SAU KHI clip trước đã sinh xong VÀ được User duyệt (Last Frame lấy từ clip đã duyệt; nếu clip trước bị regen thì Last Frame của clip sau phải cắt lại và clip sau phải regen theo). Start Frame Loại 1 không cần qua Review Board ảnh (Rule 22/25) vì nó là khung hình của video đã duyệt; nhưng vẫn phải tẩy watermark trước khi upload (Rule 28).
-
-66. **Post-Production Editing via `/video-editing` (Khóa skill dựng hậu kỳ cho cả Claude và Antigravity/Gemini — User Lock 16/10/2026)** — Skill `video-editing` (nguồn `affaan-m/ecc`, cài tại `.agents/skills/video-editing/`, Claude đọc qua symlink `.claude/skills/video-editing/`) là skill BẮT BUỘC cho mọi bước dựng sau khi clip đã được duyệt: cắt/trim theo bảng Rule 49, ghép (Concat), phát hiện dead air / cảnh trùng, chèn overlay/phụ đề, reframe 16:9 ➔ 9:16 cho Shorts. CẢ Claude VÀ Antigravity (Gemini) đều phải kích hoạt skill này ở bước 10 của Pipeline, phối hợp với `/fk-capcut-edit`, `/fk-cinematic-transitions`, `/fk-sound-design`. Ràng buộc khi áp dụng cho FlowKit:
-    - (1) **Chỉ dựng footage đã duyệt**: đầu vào là clip 1080p sạch logo đã qua review (`${OUTDIR}/1080/*_1080p_clean.mp4`, Rule 18/32); bỏ qua Layer 1 Capture của skill. Bản dựng nháp có thể dùng clip 720p trong `scenes/`, nhưng không đưa bản 720p vào bản xuất cuối.
-    - (2) **Không sinh asset ngoài FlowKit**: KHÔNG gọi ElevenLabs, fal.ai, VideoDB hay dịch vụ sinh media bên ngoài nêu trong skill. Giọng nói dùng thoại gốc Veo/Omni (Laomedeia, Rule 24) hoặc `/fk-gen-narrator`; nhạc dùng `/fk-gen-music`. Mọi bước có tốn credit vẫn phải hỏi trước theo Rule 29.
-    - (3) **Âm thanh theo chuẩn FlowKit**: master −14 LUFS / −1 dBTP theo `/fk-sound-design`, KHÔNG dùng mức `loudnorm I=-16` mặc định trong skill.
-    - (4) **Lưu kết quả dựng và giữ phiên bản**: script ffmpeg/Remotion tạm đặt trong scratch (Rule 4, 43); danh sách cắt (EDL), file concat và bản dựng lưu trong `${OUTDIR}/edit/` với tên có số phiên bản (`edit_v1`, `edit_v2`...); không ghi đè bản dựng đã giao cho User.
-
-67. **Mandatory Whisper Dialogue Review (Bắt buộc nghe thoại bằng Whisper trong MỌI lần review video — cả Claude và Antigravity/Gemini — User Lock 19/10/2026)** — Khung hình không nghe được. MỌI lần review clip (pipeline, review sau regen, chuỗi 4s, kể cả check nhanh 1–2 clip) BẮT BUỘC chạy `venv/Scripts/python.exe tools/review_dialogue.py <clip.mp4> --scene-id <SID>` (faster-whisper, word timestamps) TRƯỚC khi trình scorecard. CẤM chấm điểm/duyệt clip chỉ bằng frame; CẤM thay bằng script Whisper tự viết.
-    - (1) Scorecard phải có dòng **"Thoại"**: transcript, độ khớp chữ từng câu, thời gian bắt đầu–kết thúc và các cờ (`MISSING`, `WORDS <80%`, `CUT-OFF`, `TIMING`, `EXTRA SPEECH`, `? VOICE?`) theo bảng `/fk-review-video` Step 3c.
-    - (2) Exit 1 (MISSING / WORDS / CUT-OFF / TIMING / EXTRA SPEECH) = clip KHÔNG ĐẠT dù hình đẹp; đề xuất sửa và hỏi trước khi regen (Rule 29). Cờ `? VOICE?` không tự đánh trượt — báo User nghe lại.
-    - (3) Mốc thời gian từng từ của Whisper là nguồn chọn điểm cắt thoại khi dựng; không cắt mù `-ss 1` khi thoại bắt đầu từ giây 0.
-    - (4) Lỗi cấp phát OpenBLAS/MKL ➔ đặt `OPENBLAS_NUM_THREADS=1` rồi chạy lại. Tool không chạy được (exit 2) ➔ báo rõ cho User, không được lặng lẽ bỏ qua bước này.
-
-68. **Mandatory `/fk-review-prompt` before every generation (Bắt buộc review prompt trước MỌI lần sinh — cả Claude và Antigravity/Gemini — User Lock 20/10/2026)** — Linter (`tools/lint_prompt.py`) chỉ bắt chuỗi cấm, không bắt mâu thuẫn hay vật lý sai (EMBERS BN-08 20/10: đòn bẩy tả điểm tựa sai phía, linter vẫn PASS). Vì vậy:
-    - (1) Sau MỖI lần viết hoặc sửa `video_prompt` **và** `image_prompt` của start frame (kể cả sửa một câu, kể cả prompt EDIT ảnh), chạy `/fk-review-prompt`: linter 0 CRITICAL/HIGH ➔ đọc lại TOÀN BỘ prompt, lập bảng từng chủ thể theo giây (vị trí, hướng, tay/miệng, trạng thái cuối, máy) ➔ checklist B của `skills/fk-film/references/prompt-lock.md` ➔ kiểm vật lý (lực, điểm tựa, trọng lực, hướng đi) và liên tục với clip trước/sau.
-    - (2) Báo cáo tự đánh giá (mẫu ở Bước 4 của skill) gửi kèm khi hỏi User duyệt sinh. CẤM hỏi duyệt hoặc gửi request sinh khi chưa có báo cáo; "lint PASS" không thay cho báo cáo.
-    - (3) Review đề xuất đổi prompt User đã duyệt ➔ đưa thành lựa chọn cho User, không tự ghi đè.
-    - (4) **Phạm vi khóa (user lock 22/10/2026)**: áp cho MỌI prompt sinh media: `video_prompt`, `image_prompt` start frame, `storyboard_image_prompt` 2×2 (`/fk-storyboard`), prompt EDIT ảnh/ref. Review phải có bước chọn cỡ cảnh / góc máy / chuyển cảnh (bước 5 của skill). Áp cho cả Claude và Antigravity/Gemini.
-    - (5) **Hook nhắc tự động** (`.claude/settings.json` → `.claude/hooks/prompt-review-hook.mjs`): PostToolUse nhắc chạy review khi PATCH/POST `/api/scenes` có trường prompt hoặc ghi file `prompts*.json` / `*storyboard*`; PreToolUse nhắc khi gửi `/api/requests/batch` có `GENERATE_*` / `REGENERATE_*` / `EDIT_*` / `UPSCALE_*`. Mỗi mục tiêu chỉ nhắc 1 lần; chạy `tools/lint_prompt.py` / `/fk-review-prompt` thì đặt lại. Hook chỉ nhắc, không thay cho báo cáo.
-
-69. **Storyboard-anchored clips via `/fk-storyboard` (Bắt buộc dùng storyboard theo thời gian cho clip nhiều nhịp / nhiều góc máy — cả Claude và Antigravity/Gemini — User Lock 21/10/2026)** — Phim (`/fk-film`) là ngôn ngữ điện ảnh, được cắt cảnh / đổi cỡ cảnh / dolly bên trong một clip. (1) **Khi nào BẮT BUỘC (user lock 22/10/2026: "fk-storyboard cần bắt buộc dùng gen ảnh để làm video film"):** trong phim (`/fk-film`), **MỌI clip có sinh ảnh** (clip chuyển cảnh, Rule 65 Loại 2, kể cả clip 4s, một nhịp, một góc) đều phải làm bằng storyboard 2×2 — CẤM sinh một ảnh start frame đơn lẻ cho clip phim. Clip liên tục (Rule 65 Loại 1) vẫn mở bằng khung cuối clip trước đã duyệt, không sinh ảnh. Clip đổi góc / cắt cảnh bên trong, hành động nhiều nhịp, hoặc clip đã hỏng ≥ 2 lần là những trường hợp storyboard quan trọng nhất. (2) **Cách làm (User Lock 22/10/2026: R2V là pure references, BỎ cắt Panel 1 / Start Frame — "chỗ nào yêu cầu start frame thì bỏ đi"):** theo `skills/fk-storyboard/SKILL.md`: kế hoạch 4 panel ở các mốc (4s 0/1/3/4 · 6s 0/2/4/6 · 8s 0/3/6/8 · 10s 0/3/7/10) ➔ user duyệt ➔ sinh 1 ảnh storyboard **lưới 2×2, mỗi panel 16:9** ➔ tẩy logo ➔ upload làm entity `<CLIP> Storyboard` duy nhất (TUYỆT ĐỐI BỎ bước cắt Panel 1 làm Start Frame, không cần entity `<CLIP> P1`) ➔ video **r2v** (`GENERATE_VIDEO_REFS`) với khối `storyboard` có câu khóa "STORYBOARD OF FOUR MOMENTS IN TIME ... NOT a single frame" và câu cấm lưới/panel/vạch chia. Khung mở đầu tại giây 0 chỉ thị trực tiếp khớp với Top-Left Panel (Panel 1) của tấm Storyboard. (3) **Cắt thẳng trong clip chỉ dùng r2v** (i2v + "hard cut" bị ghost op 2/2, EMBERS BN-08b); i2v dùng chuyển động máy liên tục. (4) **Chọn hành động model làm được** (vật rơi / lăn / bị đẩy ra, người bước / ngã / quay); không bắt chi luồn ngược dưới vật nằm ngang — storyboard không cứu được động tác đó. (5) **Ghost op:** dừng request kẹt bằng `status='FAILED'` **và `retry_count=99`** (nếu không worker poll lại và `/api/requests/batch` trả về request cũ); tối đa 2 lần ghost mỗi clip. (6) Mọi luật khác vẫn áp: Rule 29 (hỏi trước mỗi lần sinh), 55/68 (prompt JSON, linter, `/fk-review-prompt`), 67 (Whisper), 28 (tẩy logo). (7) **Bắt buộc đọc thể ảnh Storyboard thực tế để điều chỉnh Video Prompt (Visual Audit of Storyboard Sheet before Video Generation — User Lock 22/10/2026: "fk-storyboard và skill fk film thì yêu cầu đọc thể ảnh storyboard để điều chính camera góc quay vắt cảnh"):** Sau khi sinh ảnh storyboard 2×2 và tẩy logo sạch sẽ, BẮT BUỘC đọc và phân tích trực quan 4 panel thực tế (cỡ cảnh thực tế từng ô, góc nhìn, vị trí/tương quan nhân vật & đạo cụ, hướng chuyển động). Đối chiếu thể ảnh thực tế đó để ĐIỀU CHỈNH LẠI `video_prompt` (`camera.shot_size`, `camera.movement`, cách vắt cảnh giữa các mốc: dolly/pan vs hard cut, các mốc thời gian trong `timeline_action`, số cú cắt trong `negative_constraints`) cho ăn khớp 100% với storyboard thực tế mà AI vừa sinh ra, TRƯỚC KHI trình Review Board và gửi lệnh sinh video. TUYỆT ĐỐI KHÔNG dùng prompt video viết sẵn một cách máy móc mà không đọc ảnh storyboard thực tế. (8) **Bắt buộc dùng ảnh Ref có sẵn (`source_media_id` + chip ref) khi sinh ảnh Storyboard 2×2 (Mandatory Existing Ref Injection in Storyboard Gen — User Lock 22/10/2026: "ảnh storyboard phải dùng ảnh ref có sẵn để tạo chứ. nhân vật tạo sai rồi kìa"):** Khi sinh ảnh Storyboard 2×2 cho bất kỳ cảnh nào có nhân vật: request sinh ảnh (`GENERATE_IMAGE` / `REGENERATE_IMAGE` / `EDIT_IMAGE`) BẮT BUỘC phải truyền `source_media_id` = UUID của ảnh reference có sẵn trong dự án (ưu tiên ảnh ref của nhân vật chính `<Character>`, `<Character> Body`, hoặc bối cảnh đã khóa, ví dụ `source_media_id: nora_media_id`). Tác dụng: Flow đưa `source_media_id` vào `base_media_id`/`target_asset` làm ảnh gốc (`BASE_IMAGE`), buộc Imagen 3 phải bám chặt nhận diện ngũ quan, phom dáng, trang phục gốc của nhân vật theo đúng ảnh ref có sẵn. Trong prompt của Storyboard, BẮT BUỘC nhắc và đính kèm chip ảnh ref có sẵn (`{{media:<uuid>|<file>}}` / `{{ref:<entity>}}`) cho từng nhân vật và trang phục. CẤM TUYỆT ĐỐI gửi request sinh ảnh storyboard dạng text-to-image thuần túy không có `source_media_id` khi cảnh có nhân vật, khiến AI tự vẽ nhân vật ngẫu nhiên làm sai lệch hoàn toàn nhận diện, khuôn mặt và giới tính! (9) **Bắt buộc nhắc ảnh Storyboard bằng chip `{{media:<uuid>|<file>}}` và chỉ thị đọc đúng từng panel trong video prompt (User Lock 22/10/2026 — BỎ P1/Start Frame):** Khi sinh video r2v theo storyboard: Prompt video BẮT BUỘC phải nhắc đến ảnh Storyboard (`<CLIP> Storyboard`) bằng inline media chip `{{media:<uuid>|<CLIP> Storyboard.jpg}}` như mọi ảnh ref khác (Rule 64). Khối `camera.shot_size` BẮT BUỘC ghi rõ: `OPENING SHOT (second 0): matching the top-left panel of {{media:<uuid>|<CLIP> Storyboard.jpg}}: ...`. Khối `start_frame` ghi: `{"type": "STORYBOARD", "note": "fk-storyboard (Rule 69): reference image {{media:<uuid>|<CLIP> Storyboard.jpg}} is the time reference for the 4 moments in time; pure r2v, no separate start frame."}`. Khối `storyboard` BẮT BUỘC trỏ trực tiếp vào chip `{{media:<uuid>|<CLIP> Storyboard.jpg}}` với chỉ thị: `TIME STORYBOARD (CRITICAL): the reference image {{media:<uuid>|<CLIP> Storyboard.jpg}} is a STORYBOARD OF FOUR MOMENTS IN TIME from this one clip, NOT a single frame and NOT a layout to draw. Read it left to right, top to bottom: top-left = second 0 (Panel 1), top-right = second <t2> (Panel 2), bottom-left = second <t3> (Panel 3), bottom-right = second <t4> (Panel 4). Use it only as the plan for how the action and the camera unfold; the video is full-frame shots only, never a grid, never split into panels, never black gutters. At the final frame ...`. Khối `timeline_action` BẮT BUỘC chỉ định rõ model đối chiếu đọc từ Panel nào sang Panel nào của `{{media:<uuid>|<CLIP> Storyboard.jpg}}` (ví dụ `Matching Panel 1 to Panel 2 of {{media:<uuid>|...}}`, `Matching Panel 3 to Panel 4...`). TUYỆT ĐỐI CẤM để `{{ref:...}}` chưa resolve thành `{{media:<uuid>|<file>}}` khi lưu vào DB hoặc gửi sang Flow!
-70. **Tối đa chỉ hỗ trợ 7 reference images (Max 7 Refs / Ingredients Lock — User Lock 22/10/2026)** — Google Flow (Omni Flash / Veo 3 Reference-to-Video qua RPC `MZZa6b`): Mỗi cảnh R2V BẮT BUỘC chỉ được chứa TỐI ĐA 7 REFERENCE IMAGES (Ingredients limit = 7). Danh sách `refs` trong `video_prompt` và `character_names` trong database TUYỆT ĐỐI KHÔNG BAO GIỜ ĐƯỢC VƯỢT QUÁ 7 MỤC. Nếu tổng số thực thể nhiều hơn 7, bắt buộc phải chọn lọc tinh gọn đúng 7 ref quan trọng nhất theo thứ tự ưu tiên: (1) Time Storyboard 2×2 (`<CLIP> Storyboard`), (2) Khuôn mặt nhân vật chính (Face Lock), (3) Thân hình / Trang phục nhân vật chính (Body Lock), (4) Nhân vật phụ chủ chốt, (5) Đạo cụ sống còn / Quái thú / Sinh vật chủ đạo, (6) Đạo cụ / Thực thể tương tác trực tiếp, (7) Bối cảnh đặc thù. TUYỆT ĐỐI CẤM đưa các entity bối cảnh phụ (location generic) hoặc ref rườm rà làm tổng số vượt quá 7 khiến slot RPC bị tràn hoặc model cắt ngẫu nhiên làm mất nhận diện nhân vật!
-
-71. **Screenwriting Skills Interlock, Mandatory Skill Invocation & Standardized Cinematic Video Taxonomy (`/fk-film` + `sw-*` Pipeline & Technical Taxonomy — User Lock 22/10/2026: "Phải dùng skill, không bao giờ tự viết")** —
-    - (1) **Trường Hợp Bắt Buộc Dùng Skill Biên Kịch (`sw-*`) — CẤM TUYỆT ĐỐI TỰ VIẾT BỪA / FREESTYLE**: Khi thực hiện bất kỳ công đoạn nào trong quy trình sản xuất phim (`/fk-film`), Agent BẮT BUỘC phải kích hoạt đúng skill chuyên trách tương ứng, TUYỆT ĐỐI KHÔNG BAO GIỜ TỰ VIẾT THEO CẢM TÍNH:
-      - **Khởi tạo ý tưởng, tiền đề, chủ đề & Logline**: BẮT BUỘC dùng `/sw-premise-theme` + `/sw-workflow`. Áp dụng công thức Controlling Idea (Value + Cause), Premise-as-tyrant (Egri), và thử nghiệm 5 câu hỏi tiền đề Hicks. CẤM tự nghĩ ý tưởng rời rạc không có cốt lõi triết lý.
-      - **Phân loại & Phối trộn thể loại (Genre-Mixing)**: BẮT BUỘC dùng `/sw-genre-anatomy`. Tuân thủ hệ thống beat của 12 thể loại Truby, quy tắc 3 tầng thể loại, và bảng Genre-Mixing Worksheet để triệt tiêu sáo mòn (clichés). CẤM dán nhãn thể loại chung chung.
-      - **Cấu trúc cốt truyện 3 hồi / 4 phần & Nhịp hữu cơ**: BẮT BUỘC dùng `/sw-story-structure` + `/sw-truby-anatomy`. Xác lập 5 điểm ngoặt chuẩn (Inciting Incident, Plot Point 1, Midpoint, All Is Lost, Climax) kết hợp 22 bước phát triển hữu cơ và Tứ giác đối kháng (Four-Corner Opposition). CẤM bịa nhịp tùy hứng.
-      - **Thiết kế nhân vật & Mâu thuẫn 3D**: BẮT BUỘC dùng `/sw-character-conflict` (3 chiều: Sinh lý, Xã hội, Tâm lý; mâu thuẫn Want vs. Need, Misbelief, Unity of Opposites) kết hợp `/fk-character-design` (Turnaround Sheet 16:9, Proportion Lock, Cranial/Bone Architecture, Biological Micro-Textures theo Rule 58). CẤM tạo nhân vật phẳng 1 chiều.
-      - **Viết kịch bản phân cảnh & Thiết kế nhịp cảnh**: BẮT BUỘC dùng `/sw-scene-craft` (5 bước phân tích cảnh McKee, Value Turns +/-, The Gap, Objective-Obstacle-Tactic) kết hợp `/sw-format-adaptation` (chuẩn Spec quốc tế, hợp đồng Fountain, viết Action lines trực quan chỉ tả mắt thấy tai nghe). CẤM viết cảnh "chỉ để nói chuyện" không có chuyển dịch giá trị.
-      - **Viết & Mài giũa lời thoại**: BẮT BUỘC dùng `/sw-dialogue` (Thoại là hành động, Tam giác đối thoại Trialogues, Ẩn ý Subtext, triệt tiêu 100% on-the-nose exposition) kết hợp đo đạc số từ khớp chuẩn thời lượng `duration` theo Rule 49. CẤM viết thoại giải thích dông dài hoặc thoại không có hành động.
-      - **Phim bộ / Streaming Series**: BẮT BUỘC dùng `/sw-series-engine-bible` (động cơ dài tập, character web bền vững, master series bible) + `/sw-series-structure` (kiến trúc hồi ngầm, A/B/C runner, cliffhanger).
-      - **Dựng kịch bản trên giấy (Paper Edit Gate)**: BẮT BUỘC dùng `/fk-paper-edit` (Tầng 2.5) kiểm toán lời hứa 30s và móc giữ chân ≤ 90s trước khi tốn Flow credit.
-      - **Tạo ảnh Storyboard lưới 2×2**: BẮT BUỘC dùng `/fk-storyboard` (Rule 69) cho mọi clip chuyển cảnh; BẮT BUỘC truyền `source_media_id` từ ảnh ref có sẵn (Rule 69 (8)); BỎ cắt Panel 1 / Start Frame.
-      - **Dựng hậu kỳ & Ráp timeline**: BẮT BUỘC dùng `/video-editing` (Rule 66) — tự động điều phối `/fk-capcut-edit` (Bảng dựng theo giây) và MCP `capcut` để dựng trực tiếp vào draft CapCut.
-    - (2) **Bắt Buộc Tự Động Áp Dụng Quy Chuẩn `/fk-film` & `sw-*` Khi Viết BẤT KỲ Prompt Nào (Mandatory Integration on ANY Prompt Writing)**:
-      Khi viết BẤT KỲ prompt nào (gồm `video_prompt`, `storyboard_image_prompt` 2×2, `image_prompt` start frame, `ref_prompt` cho nhân vật/sinh vật/bối cảnh, hay prompt EDIT ảnh) trong các file `prompts*.json`, `script.md`, `ref_prompts.json` hoặc gọi API PATCH/POST `/api/scenes`, CẢ Claude Code, Antigravity (Gemini), và Codex CLI BẮT BUỘC phải tuân thủ:
-      - **Góc máy 100% Third-Person Cinematic Camera**: Người quan sát vô hình, cấm tuyệt đối góc quay POV/selfie, cấm cầm máy điện thoại, cấm nhân vật xưng hô nói với ống kính, cấm phá vỡ bức tường thứ 4.
-      - **Nguồn sáng thực tế có động cơ (Motivated Practical Light)**: Chỉ dùng ánh đèn bão, đèn dầu, ánh lửa, hoặc ánh trăng tự nhiên; CẤM TUYỆT ĐỐI tia nắng đồ họa máy tính (`god rays`, `volumetric beams`), CẤM đèn viền studio giả tạo (`studio rim lighting`).
-      - **Đo từ thoại chuẩn xác theo thời lượng (Rule 49 & Rule 54)**: Thoại đặt trong ngoặc kép sau nhãn nhân vật (`Character says "..."`); 4s: 0 hoặc 6-8 từ; 6s: 12-15 từ; 8s: 18-22 từ; 10s: 23-25 từ; cảnh rình rập / săn mồi / chiến đấu sinh tử = Sonic Isolation (0 từ).
-      - **Khóa vật lý & đạo cụ thực tế**: Động lực học quán tính $pp = m * v, truyền lực `force -> barrier -> ground`, biến dạng vật liệu, độ trễ thứ cấp, không giáp lá cà cơ thể người với thú lớn; một tay - một đạo cụ suốt clip.
-      - **Đính kèm chip ref inline và kiểm soát số lượng ≤ 7 refs (Rule 64, 70)**: Nhắc ảnh ref bằng inline media chip `{{media:<uuid>|<file>}}`; tổng số ref trong mỗi cảnh không vượt quá 7.
-      - **Storyboard 2×2 (Rule 69)**: Mọi cảnh chuyển đều dùng Storyboard 2x2 làm Time Reference; khung mở đầu khớp Top-Left Panel của storyboard; BỎ cắt Panel 1 / Start Frame.
-    - (3) **Hệ Thống Từ Vựng Kỹ Thuật Video Điện Ảnh Chuẩn Hóa (Standardized Cinematic Video Taxonomy)**: Mọi khâu sản xuất phim từ thiết kế, dựng cảnh, quay phim, viết kịch bản đến prompt JSON BẮT BUỘC sử dụng chuẩn từ vựng kỹ thuật điện ảnh tiếng Anh:
-      - **Thiết kế nhân vật & sinh vật (Character/Creature Design)**: `16:9 Turnaround Sheet`, `Proportion Lock` (Net height, head ratio, inseam), `Bone & Cranial Architecture`, `Biological Micro-Texture Layer` (`polygonal basement scales`, `conical keratin tubercles`, `weathered fissures`, `dewlap skin folds`), `Wardrobe State Ladder`, `Permanent Prop Geometry`, `Anti-Wax / Zero Plastic Sheen`.
-      - **Dựng cảnh & Bối cảnh (Mise-en-Scène & Setting)**: `Base Location vs. Scene State Ledger` (trạng thái môi trường suy thoái một chiều S0→Sn), `Spatial Blocking & Depth Staging` (Foreground FG, Midground MG, Background BG; `180-Degree Axis of Action`, `Eyeline Match`), `Motivated Practical Lighting` (nguồn sáng thực tế có động cơ, CẤM `god rays` và `studio rim lighting`).
-      - **Góc máy & Ngôn ngữ Điện ảnh (Cinematography & Camera)**: `Framing / Shot Scale` (`EWS`, `WS`, `MS`, `MCU`, `CU`, `ECU`, `OTS`), `Camera Angle` (`Eye-Level`, `Low-Angle`, `High-Angle`, `Dutch / Canted`, `Top-Down`), `Camera Movement` (`Static / Locked-Off`, `Pan`, `Tilt`, `Dolly-In / Dolly-Out`, `Tracking / Trucking`, `Steadicam / Handheld with natural footfall vertical bounce`, `Whip Pan`), `Optics & Texture` (`24mm/35mm/50mm/85mm`, `Deep Focus f/8`, `35mm film grain`, `180-degree shutter motion blur`).
-      - **Storyboard & Khung Neo (Storyboard & Visual Anchoring)**: `2×2 Time Storyboard Grid` (4 panels 16:9 theo thời gian), `Panel 1 Frame 0 Anchor`, `Continuous Scene Chains (PREV_LAST_FRAME)`, `Visual Audit of Storyboard Sheet` (đọc thể ảnh thực tế trước khi chốt prompt video).
-      - **Prompt Kỹ Thuật Structured JSON**: Khóa 5 tầng (`camera`, `characters` với chip ref inline `{{media:<uuid>|<file>}}`, `setting & style`, `timeline_action` với cơ học quán tính p = m * v, `speech & audio`, `negative_constraints`).
-      - **Kịch Bản & Hành Động Kịch (Screenplay & Dramatic Action)**: `Scene Sluglines`, `Action Lines`, `Dialogue as Action`, `Word-to-Duration Calibration` (4s: 0/6-8 từ, 6s: 12-15 từ, 8s: 18-22 từ, 10s: 24-28 từ, `Sonic Isolation`: 0 từ).
-    - (4) **Khóa chuẩn ngôn ngữ tiếng Anh cho bộ 23 kỹ năng `sw-*`**: Toàn bộ tài liệu, nguyên lý và thuật ngữ của 23 skill `sw-*` (tại cả `skills/sw-*/` và `.agents/skills/sw-*/`) BẮT BUỘC duy trì 100% bằng tiếng Anh chuẩn điện ảnh quốc tế để tương thích hoàn hảo với các mô hình AI và workflow sản xuất phim chuyên nghiệp.
-
-72. **Mandatory `/fk-character-design` Invocation for All Character & Creature Creation (Khóa cứng 100% dùng skill `/fk-character-design` khi tạo nhân vật & sinh vật — CẤM TUYỆT ĐỐI TỰ VIẾT PROMPT AD-HOC HOẶC ĐỂ DÍNH TỪ KHÓA 2D / SKETCH — User Lock 23/10/2026)** —
-    - (1) **Nguyên tắc bắt buộc bất di bất dịch**: BẤT KỲ KHI NÀO tạo nhân vật, diễn viên, sinh vật, quái thú, NPC hoặc động vật chủ chốt (trong `/fk-film`, POV vlog, truyện hay bất kỳ workflow nào): CẢ Claude Code, Antigravity (Gemini), và Codex CLI BẮT BUỘC 100% phải kích hoạt và tuân thủ skill `/fk-character-design` (`skills/fk-character-design/SKILL.md`). TUYỆT ĐỐI CẤM tự bịa hoặc viết prompt ad-hoc theo cảm tính / trí nhớ mà không đọc template chuẩn của skill!
-    - (2) **Khóa ảnh người thật 35mm (Live-Action Casting Photo)**:
-      - Đối với nhân vật người: BẮT BUỘC dùng template W0 Turnaround Sheet 16:9 chuẩn 4 panels (Full-body front view, Full-body 3/4 view, Full-body side profile, Close-up portrait).
-      - BẮT BUỘC mở đầu bằng chỉ thị chụp ảnh diễn viên điện ảnh thực tế: `Authentic 35mm film still photograph, portrayed by an actual real-life actor in a film casting studio on neutral dark backdrop, shot on Cooke S4 prime lens, 35mm Kodak Vision3 film stock, natural skin texture with visible pores and realistic micro-imperfections, zero makeup, neutral studio rim lighting`.
-      - Khóa cứng 5 tầng: Tỷ lệ chiều cao (Height/Proportion Lock), Khung xương & ngũ quan (Bone & Cranial Architecture), Kết cấu da sinh học vi mô (Micro-texture Layer), Trang phục may đo theo thời kỳ (Tailored Wardrobe Ladder W0), Đạo cụ cố định (Permanent Prop Geometry).
-    - (3) **Khóa sinh vật & quái thú thực tế (Practical SFX / Animatronic Creature)**:
-      - Đối với sinh vật, thú dữ, quái thú: BẮT BUỘC dùng Creature Turnaround Sheet 16:9 chuẩn 3 panels (3/4 trái, 3/4 phải, Cận cảnh đầu sọ).
-      - BẮT BUỘC chỉ định: `Photographed as an authentic practical animatronic creature / physical practical special effects model on 35mm film set, rugged biological hide, weathered keratin, natural saliva/moisture, clean dry nostrils with transparent air (strictly NO breath smoke, NO white steam plumes)`.
-    - (4) **CẤM TRIỆT ĐỂ TỪ KHÓA 2D / SKETCH (Anti-2D / Anti-Illustration Lock)**:
-      - CẤM TUYỆT ĐỐI dùng các từ kích hoạt latent space tranh vẽ 2D / phác thảo của AI: `study`, `character study`, `four-panel study`, `comparative study`, `sketch`, `sketchbook`, `concept art`, `drawing`, `illustration`, `line art`, `pencil sketch`, `ink drawing`, `anime`, `cartoon`, `graphic novel`, `CGI render`, `3D digital sculpture`, `wax statue`.
-      - CẤM các từ khóa beauty filter làm mịn da giả trân (`flawless skin`, `smooth porcelain skin`, `beauty glow`).
-    - (5) **BẮT BUỘC KHỐI PHỦ ĐỊNH (Negative Constraints)**:
-      - Mọi prompt tạo nhân vật / sinh vật BẮT BUỘC kết thúc bằng câu phủ định thép: `Strictly NO 2D drawing, NO sketch, NO line art, NO illustration, NO concept art, NO anime, NO cartoon, NO CGI render, NOT a 3D model, NOT a wax museum statue, NOT plastic toy`.
-    - (6) **Khóa quy trình trước khi sinh ảnh (Pre-Gen Verification Gate)**:
-      - Trước khi gửi lệnh `GENERATE_CHARACTER_IMAGE` hoặc `REGENERATE_CHARACTER_IMAGE`, Agent BẮT BUỘC phải tự kiểm tra prompt qua các tiêu chí trên. Nếu phát hiện prompt tự viết ad-hoc hoặc có chứa từ khóa 2D (`study`, `concept`, `sketch`) ➔ BẮT BUỘC dừng lại, gọi `/fk-character-design` viết lại prompt chuẩn 35mm film still trước khi submit.
-
-73. **Mandatory 24-Frame ffmpeg Extraction for Video Review (Khóa cứng trích xuất chính xác 24 key frames bằng ffmpeg khi review video — User Lock 23/10/2026)** —
-    - (1) **Quy chuẩn 24 frames bắt buộc**: MỌI lần trích xuất frame để phục vụ đánh giá chất lượng video AI (`/fk-review-video`, `/fk-film` Step 7.5 / Step 9, AI Review Scorecard, đưa lên Review Board cho User duyệt): Agent BẮT BUỘC dùng `ffmpeg` trích xuất **ĐÚNG 24 FRAMES** phân bổ đều theo toàn bộ thời lượng video clip. TUYỆT ĐỐI CẤM trích xuất ít hơn (như 4-8 frames) vì sẽ bỏ sót các dị tật biến dạng giải phẫu, chuyển động giật lùi (reverse motion), trôi dạt đạo cụ hoặc lỗi vỡ hình ở các phân đoạn giữa clip.
-    - (2) **Công thức ffmpeg chuẩn xác theo thời lượng (`duration`)**:
-      ```bash
-      ffmpeg -y -i <clip>.mp4 -vf "fps=24/<duration_seconds>" -q:v 2 <output_dir>/frame_%02d.jpg
-      ```
-      - Clip 10s: `fps=24/10 = 2.4`
-      - Clip 8s: `fps=24/8 = 3.0`
-      - Clip 6s: `fps=24/6 = 4.0`
-      - Clip 4s: `fps=24/4 = 6.0`
-    - (3) **Bắt buộc tạo Contact Sheet 6×4 (6 cột × 4 hàng)**:
-      Dùng ffmpeg ghép 24 frames thành 1 tấm Contact Sheet trực quan duy nhất theo lưới 6 cột × 4 hàng bao quát trọn vẹn toàn bộ 24 khoảnh khắc theo tiến trình thời gian từ giây 0.0s đến kết thúc:
-      ```bash
-      ffmpeg -y -pattern_type glob -i "<output_dir>/frame_*.jpg" -vf "tile=6x4" -q:v 2 <output_dir>/contact_sheet_24frames.jpg
-      ```
-    - (4) **Tiêu chuẩn chấm điểm trên 24 frames**:
-      Bảng AI Review Scorecard (Character Consistency 25%, Prompt Adherence 20%, Motion Quality 20%, Visual Fidelity 15%, Temporal Coherence 10%, Composition 10%) BẮT BUỘC rà soát tỉ mỉ từng cụm frame trong 24 frames này, đối chiếu với các panel của Storyboard 2×2 (Rule 69) và kết hợp Whisper dialogue review (Rule 67).
-
-74. **Storyboard Hard Cuts & Character Isolation / Anti-Cloning Lock in Video Prompts (Khóa Cắt Cảnh Dứt Khoát Theo Storyboard & Chống Phân Thân / Nhân Đôi Nhân Vật — User Lock 23/10/2026: "cần cắt cảnh theo storyboard chứ. hard cut chứ nhỉ. video thì dây số 9 bước đến xuất hiện 2 nora")** —
-    - (1) **Nguyên tắc Hard Cut theo Storyboard**: Khi tấm Storyboard 2×2 thể hiện các góc máy, cỡ cảnh hoặc nhân vật khác nhau giữa 4 panels (ví dụ Panel 1: EWS tàu bên ngoài ➔ Panel 2: MS Nora ở mũi tàu ➔ Panel 3 & 4: MS/MCU Castor ở boong giữa):
-      - `camera.description` và `timeline_action` BẮT BUỘC phải chỉ định rõ các cú cắt gắt (**crisp hard cuts**) tại các mốc giây (`At second 3.0, a crisp hard cut matching Panel 2... At second 7.0, a crisp hard cut matching Panel 3 & 4...`).
-      - CẤM TUYỆT ĐỐI dùng một cú máy chuyển động liên tục duy nhất (như `slow tracking dolly shot` bao trùm từ 0-10s) khi các panel là các cú máy độc lập, vì sẽ khiến model video cố gắng nối liền các không gian và nhân vật khác nhau vào cùng một shot mà không thực hiện cắt cảnh.
-    - (2) **Khóa cô lập nhân vật & cấm phân thân (Character Isolation & Anti-Cloning Lock)**:
-      - Khi một cảnh có nhiều nhân vật trong danh sách tham chiếu (`refs` / `character_names`), nhưng một cú máy chỉ quay MỘT nhân vật:
-        - Trong `timeline_action`: BẮT BUỘC ghi rõ nhân vật đó xuất hiện một mình (`Strictly [Character] alone in frame...`) và các nhân vật khác BẮT BUỘC phải khai báo là `completely off-screen and never seen`.
-        - Trong `negative_constraints`: BẮT BUỘC phải có khối chống phân thân: `strictly NO duplicate characters, strictly NO multiple [Name], strictly [Other] alone in shot Y, [Name] never appears in [shot Y], no ghost figures, no cloning; crisp hard cuts at second X.0 and second Y.0, no camera blending, no crossfades.`
-      - Triệt tiêu hoàn toàn hiện tượng "nhiễm nhân vật" (latent contamination) khiến AI tự nhân đôi một nhân vật thành 2 người trong cùng một khung hình (như lỗi xuất hiện 2 Nora cùng lúc ở giây 9 của SC-01).
-"""
-
-_PIPELINE_OVERVIEW = """\
-## Pipeline Order (Omni Flash R2V Ingredients Workflow)
-
-```
-[PRE-PRODUCTION / TIỀN KỲ KỊCH BẢN]
-- Tầng 1: story-bible.md  /sw-workflow điều phối (/sw-premise-theme, /sw-story-structure, /sw-character-conflict)
-- Tầng 2: script.md       /sw-scene-craft + /sw-dialogue + /fk-scriptwriter + /fk-camera-guide + /fk-action-choreography
-                          (gói tiêu đề + thumbnail + lời hứa được duyệt TRƯỚC khi viết — /fk-scriptwriter G2, /fk-film bước 1.5)
-- Tầng 2.5: paper_edit.md /fk-paper-edit (python tools/paper_edit.py: bấm giờ, Rule 49, lời hứa 30s, móc giữ chân ≤ 90s, đề xuất cắt -> user duyệt)
-- Tầng 3: prompts.json    /fk-script-to-prompts (chuyển thể prompt JSON + lint_prompt.py self-repair -> user duyệt)
-
-[PRODUCTION / SẢN XUẤT MEDIA FLOWKIT]
-0. Research          /fk-research "topic" (fact-check via web search, save to .omc/research/)
-1. Health check      GET  /health → extension_connected: true
-2. Create project    POST /api/projects (with entities + material, story from research)
-3. Create video      POST /api/videos (HORIZONTAL or VERTICAL)
-4. Create scenes     POST /api/scenes (with character_names, duration: 4/6/8/10s, video_prompt, image_prompt)
-5. Gen ref images    POST /api/requests/batch (GENERATE_CHARACTER_IMAGE / upload locked refs)
-                     BẮT BUỘC 100% dùng /fk-character-design (Rule 72) thiết kế Character Sheet & Creature Turnaround Sheet 16:9 35mm film still; CẤM prompt ad-hoc, CẤM từ khóa 2D/sketch.
-                     Verify all key entities (Character, Body, Location, Creature) have UUID media_id
-6. Gen Storyboards  STORYBOARDS 2×2 (/fk-storyboard, Rule 69):
-                     - CẢNH CHUYỂN / CẮT CẢNH (Rule 65 Loại 2): POST /api/requests/batch (type: "GENERATE_IMAGE" hoặc "REGENERATE_IMAGE", BẮT BUỘC có source_media_id từ ref nhân vật/bối cảnh theo Rule 69 (8)).
-                     - CẢNH LIÊN TỤC (Chain, Rule 65 Loại 1): CẤM sinh ảnh mới. Cắt Last Frame clip trước bằng ffmpeg -> de-watermark -> upload lấy media_id (PREV_LAST_FRAME).
-6.5 Visual Audit     MANDATORY GATE! Tải về ${OUTDIR}/images/<clip>_storyboard.jpg.
-                     Xóa sạch watermark qua remove_watermark_from_image.py -> upload file clean lấy media_id mới gán entity <CLIP> Storyboard.
-                     Mở Review Board ảnh cho User duyệt.
-                     BẮT BUỘC ĐỌC THỂ ẢNH THỰC TẾ (Rule 69 (7)): Đọc 4 panel thực tế để điều chỉnh camera, shot size, nhịp cắt trong video_prompt ăn khớp 100%!
-7. Gen videos (R2V)  POST /api/requests/batch (type: "GENERATE_VIDEO_REFS")
-                     Omni Flash abra_r2v Pure References (KHÔNG Start Frame): kết hợp Time Storyboard 2×2 (Rule 69 (9)) + Ingredients (Face, Body, Props).
-                     Auto-retry failed videos up to 5x; rolling download 720p clips to scenes/
-7.5 Review videos    BẮT BUỘC trích xuất đúng 24 frames từ video 720p thô bằng ffmpeg (fps=24/<duration>, contact sheet tile=6x4, Rule 73) (CHƯA CẦN XÓA LOGO).
-                     BẮT BUỘC nghe thoại từng clip: tools/review_dialogue.py (Whisper, Rule 67) -> dòng "Thoại" trong scorecard.
-                     Display per-scene scorecard table + Review Board (http://localhost:8200).
-                     STOP & PAUSE: User reviews each scene clip individually.
-                     Nếu chưa đạt: sửa prompt -> REGENERATE_VIDEO (ở mức 720p, không tốn công xóa logo).
-8. Upscale 1080p     CHỈ KHI USER DUYỆT CẢNH: POST /api/requests/batch (type: "UPSCALE_VIDEO", RPC p0UkFb)
-                     Tải video 1080p về folder 1080/ -> ${OUTDIR}/1080/scene_XX_1080p.mp4
-9. De-watermark      Chạy remove_watermark_video TRỰC TIẾP trên bản 1080p -> ${OUTDIR}/1080/scene_XX_1080p_clean.mp4
-10. Concat           ffmpeg normalize + concat (dùng toàn bộ video 1080p clean đã duyệt)
-                     BẮT BUỘC dùng /video-editing (Rule 66) + /fk-capcut-edit + /fk-sound-design cho dựng & master.
-11. SEO & Thumbnails Auto-match script language (e.g. 100% native Japanese for Japanese POV vlog)
-12. Analytics        Sau đăng 48h và 7 ngày: /fk-youtube-analytics (CTR, giữ chân 30s, AVD; đổi 1 biến; end screen/playlist/Shorts)
-```
-"""
-
-_BATCH_API = """\
-## Batch API
-
-Submit N requests at once (server paces them automatically — every Flow request spaced a random 45–60s, see rule 10):
-
-```bash
-curl -X POST http://127.0.0.1:8100/api/requests/batch \\
-  -H "Content-Type: application/json" \\
-  -d '{"requests": [{"type": "...", "scene_id": "...", "project_id": "...", "video_id": "...", "orientation": "VERTICAL"}, ...]}'
-```
-
-Poll aggregate status:
-
-```bash
-curl -s "http://127.0.0.1:8100/api/requests/batch-status?video_id=<VID>&type=GENERATE_IMAGE"
-# Returns: {"total": 40, "pending": 30, "processing": 5, "completed": 5, "failed": 0, "done": false}
-# When "done": true → all requests have left the queue (completed or failed)
-# When "all_succeeded": true → every request completed successfully
-```
-
-For full API reference, workflow recipes, and video prompt guidelines, see `CLAUDE.md`.
-"""
-
-
-def _agents_md_body(skills, title):
-    """Build the AGENTS.md body with the critical rules inlined."""
-    rows = "\n".join(
-        f"| `/fk-{s['name']}` | {s['description']} |" for s in skills
-    )
-    return (
-        f"<!-- AUTO-GENERATED by setup.py — do not edit. Source: skills/ -->\n"
-        f"# Flow Kit — {title}\n\n"
-        f"Base URL: `http://127.0.0.1:8100`\n\n"
-        f"## Pre-flight\n\n"
-        f"Before ANY workflow:\n"
-        f"```bash\n"
-        f"curl -s http://127.0.0.1:8100/health\n"
-        f"# Flow mode must return: {{\"extension_connected\": true}}\n"
-        f"# Assistant mode (MEDIA_PROVIDER=assistant or provider=assistant per request):\n"
-        f"# extension_connected may be false — no Chrome extension needed.\n"
-        f"# Check provider status instead: GET /api/providers/status\n"
-        f"```\n\n"
-        f"{_CRITICAL_RULES}\n"
-        f"{_PIPELINE_OVERVIEW}\n"
-        f"{_BATCH_API}\n"
-        f"## Skills\n\n"
-        f"This project has reusable skills in `skills/`. When the user says `/fk-<name>`, "
-        f"read `skills/fk-<name>.md` (or `skills/fk-<name>/SKILL.md` for a folder skill) "
-        f"and follow the instructions inside.\n\n"
-        f"| Skill | Purpose |\n"
-        f"|-------|---------|\n"
-        f"{rows}\n"
-        f"| `/video-editing` | Dựng hậu kỳ footage đã duyệt: cắt, ghép, dead air, overlay, reframe Shorts (Rule 66; skill ngoài `affaan-m/ecc`, cài ở `.agents/skills/`) |\n"
-    )
-
-
 def generate_codex(skills):
-    """Generate AGENTS.md for Codex CLI."""
-    content = _agents_md_body(skills, "Codex CLI Instructions")
-    AGENTS_MD.write_text(content, encoding="utf-8")
-    print(f"Generated AGENTS.md ({len(skills)} skills)")
-    return len(skills)
+    """Generate AGENTS.md for Codex CLI directly from CLAUDE.md."""
+    if CLAUDE_MD.exists():
+        content = CLAUDE_MD.read_text(encoding="utf-8")
+        header = "<!-- AUTO-GENERATED by setup.py from CLAUDE.md — do not edit. Source: CLAUDE.md & skills/ -->\n\n"
+        AGENTS_MD.write_text(header + content, encoding="utf-8")
+        print(f"Generated AGENTS.md ({len(skills)} skills synced from CLAUDE.md)")
+        return len(skills)
+    return 0
 
 
 def save_state(tools, skill_count):
@@ -590,12 +234,7 @@ def run_generators(tools, skills):
         if tool in TOOLS:
             TOOLS[tool](skills)
         else:
-            # Reachable from a .fk-setup.json written before v1.3.1, which
-            # records "gemini". Skipping beats crashing a sync on a target
-            # that no longer exists; `clean` removes what it left behind.
-            print(f"Skipping '{tool}' — no longer a supported target. "
-                  f"Run 'python setup.py clean' to remove its leftover files.")
-    # Always sync CLAUDE.md → .agents/rules/claude_rules.md when antigravity is included
+            print(f"Skipping '{tool}' — no longer a supported target.")
     if "antigravity" in tools:
         generate_antigravity_rules(skills)
 
@@ -604,9 +243,9 @@ def do_interactive(skills):
     """Interactive mode: prompt user to pick tools."""
     print("\nFlow Kit — AI Tool Setup\n")
     print("Which AI tool do you drive this project from?")
-    print("  [1] Claude Code       (.claude/commands/)")
-    print("  [2] Codex CLI         (AGENTS.md)")
-    print("  [3] Antigravity IDE   (.agents/skills/)")
+    print("  [1] Claude Code              (.claude/commands/)")
+    print("  [2] Codex CLI                (AGENTS.md)")
+    print("  [3] Antigravity / Gemini IDE (.agents/skills/, .agents/rules/, GEMINI.md)")
     print("  [4] All tools")
     print()
 
@@ -636,7 +275,7 @@ def do_interactive(skills):
 
     run_generators(tools, skills)
     save_state(tools, len(skills))
-    print(f"\nSetup complete. State saved to .fk-setup.json")
+    print("\nSetup complete. State saved to .fk-setup.json")
 
 
 def do_tool(tool, skills):
@@ -647,19 +286,17 @@ def do_tool(tool, skills):
         tools = [tool]
     run_generators(tools, skills)
     save_state(tools, len(skills))
-    print(f"\nSetup complete. State saved to .fk-setup.json")
+    print("\nSetup complete. State saved to .fk-setup.json")
 
 
 def do_sync(skills):
     """Re-sync all previously selected tools."""
     state = load_state()
     if not state:
-        print("No previous setup found. Run 'python setup.py' first.")
-        sys.exit(1)
-    tools = state.get("tools", [])
-    if not tools:
-        print("No tools recorded in .fk-setup.json.")
-        sys.exit(1)
+        print("No previous setup found. Running for all tools...")
+        tools = list(TOOLS)
+    else:
+        tools = state.get("tools", list(TOOLS))
     print(f"Re-syncing for tools: {', '.join(tools)}")
     run_generators(tools, skills)
     save_state(tools, len(skills))
@@ -670,42 +307,29 @@ def do_clean():
     """Remove all generated tool configs."""
     removed = []
 
-    # Claude commands
     if CLAUDE_COMMANDS_DIR.exists():
-        for f in CLAUDE_COMMANDS_DIR.glob("fk-*.md"):
+        for f in CLAUDE_COMMANDS_DIR.glob("*.md"):
             f.unlink()
             removed.append(str(f))
 
-    # Antigravity skills
     if ANTIGRAVITY_SKILLS_DIR.exists():
-        for d in ANTIGRAVITY_SKILLS_DIR.glob("fk-*"):
+        for d in ANTIGRAVITY_SKILLS_DIR.iterdir():
             if d.is_dir():
-                shutil.rmtree(d)  # folder skills carry references/ subdirs
+                shutil.rmtree(d)
                 removed.append(str(d))
 
-    # Whatever the retired Gemini target left behind. Removed here even
-    # though nothing writes it any more — an install from before v1.3.1 has
-    # these files, and `clean` is the only thing that will ever take them away.
     if LEGACY_GEMINI_COMMANDS_DIR.exists():
         for f in LEGACY_GEMINI_COMMANDS_DIR.glob("*.toml"):
             f.unlink()
             removed.append(str(f))
-        try:
-            LEGACY_GEMINI_COMMANDS_DIR.rmdir()
-            LEGACY_GEMINI_COMMANDS_DIR.parent.rmdir()   # .gemini/commands
-            LEGACY_GEMINI_COMMANDS_DIR.parent.parent.rmdir()  # .gemini
-        except OSError:
-            pass  # not empty (agy keeps its own state here), leave it
 
-    # AGENTS.md, plus the legacy GEMINI.md
-    for md in [AGENTS_MD, LEGACY_GEMINI_MD]:
+    for md in [AGENTS_MD, GEMINI_MD]:
         if md.exists():
             first_line = md.read_text(encoding="utf-8", errors="replace").splitlines()[0]
             if "AUTO-GENERATED by setup.py" in first_line:
                 md.unlink()
                 removed.append(str(md))
 
-    # State file
     if STATE_FILE.exists():
         STATE_FILE.unlink()
         removed.append(str(STATE_FILE))
@@ -739,10 +363,9 @@ def main():
         do_clean()
         return
 
-    # All other subcommands need skill discovery
     skills = discover_skills()
     if not skills and args.subcommand != "clean":
-        print("No skills found in skills/fk-*.md — nothing to generate.")
+        print("No skills found in skills/ — nothing to generate.")
         sys.exit(1)
 
     if args.subcommand == "sync":

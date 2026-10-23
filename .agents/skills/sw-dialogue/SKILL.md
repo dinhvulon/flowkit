@@ -1,6 +1,6 @@
 ---
 name: sw-dialogue
-description: Dialogue writing, polish, and revision for screen and stage — merged from Robert McKee's Dialogue (dialogue as action, said/unsaid/unsayable, exposition as ammunition, beat = action/reaction gerunds, flaws of credibility/language/content/design, character-specific vocabulary and grammar, trialogues), Richard Walter (economy, subtext, perpetual argument, eliminating small talk, silence, no parentheticals), Neill Hicks (listening, on-the-nose exceptions, kinetic energy), Lu Jun (dialogue as action, characterization, subtext, poetic vs. vernacular beauty), Lajos Egri (dialogue born of 3D characters, escalation), Blake Snyder (cover-the-names test), and screwball-comedy rapid-fire conventions. Use when writing or polishing dialogue, cutting exposition, eliminating on-the-nose lines, distinguishing character voices, converting flat two-handers into trialogues, or writing razor-sharp comedic cross-talk.
+description: 'Dialogue writing, polish, and revision for screen and stage — merged from Robert McKee''s Dialogue (dialogue as action, said/unsaid/unsayable, exposition as ammunition, beat = action/reaction gerunds, flaws of credibility/language/content/design, character-specific vocabulary and grammar, trialogues), Richard Walter (economy, subtext, perpetual argument, eliminating small talk, silence, no parentheticals), Neill Hicks (listening, on-the-nose exceptions, kinetic energy), Lu Jun (dialogue as action, characterization, subtext, poetic vs. vernacular beauty), Lajos Egri (dialogue born of 3D characters, escalation), Blake Snyder (cover-the-names test), and screwball-comedy rapid-fire conventions. Use when writing or polishing dialogue, cutting exposition, eliminating on-the-nose lines, distinguishing character voices, converting flat two-handers into trialogues, or writing razor-sharp comedic cross-talk.'
 ---
 
 # Dialogue Craft & Subtext (sw-dialogue)
@@ -201,3 +201,4 @@ The core premise of dialogue craft is singular: **Dialogue is action** (Robert M
 10. Can any line of dialogue be replaced with an active, silent physical gesture?
 11. Are long speeches broken up by behavioral interruptions or reactions?
 12. Is the dialogue free of first-choice clichés?
+

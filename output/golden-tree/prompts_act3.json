@@ -23,7 +23,7 @@
     "setting": "Location: Subterranean Cenote Golden Tree Sanctuary and open Aegean dawn sea. Light: ánh trăng tự nhiên hòa ánh vàng kim, warm golden amber dawn, natural overcast chiaroscuro.",
     "characters": [],
     "timeline_action": {
-      "0-3s": "From the opening frame at second 0, Nora proclaims with triumphant leadership: Nora says \"Behold the hollow heart of the Aegean... a subterranean cathedral carved by forgotten gods, open to the cold night stars above our heads!\" (no subtitles).",
+      "0-3s": "From the opening frame at second 0, Nora proclaims with triumphant leadership: Nora says \"Behold the hidden heart of the Aegean—a subterranean cavern open to the stars.\" (no subtitles).",
       "3-7s": "At second 3.0, a crisp hard cut: The heroic command rings out across the deck through second 6 as giếng trời ngầm khổng lồ mở ra bầu trời đêm đầy sao.",
       "7-10s": "At second 7.0, a crisp hard cut: Nora concludes the line by second 7; the galleon cuts proudly into the dawn sea through second 10. SPATIAL LOCK: All characters stand firmly on the interior solid deck or stone floor, NEVER on the exterior water/cliff drop-off side of any barrier; maintain a consistent 180-degree spatial axis within each shot."
     },
@@ -37,9 +37,9 @@
       "delivery": "warm, resonant, heroic and emotionally triumphant",
       "dialogue": [
         {
-          "t": "0-7s",
+          "t": "0-6.0s",
           "speaker": "Nora",
-          "line": "Behold the hollow heart of the Aegean... a subterranean cathedral carved by forgotten gods, open to the cold night stars above our heads!"
+          "line": "Behold the hidden heart of the Aegean—a subterranean cavern open to the stars."
         }
       ]
     },
@@ -53,12 +53,14 @@
     "physics": "Hydrodynamic galleon displacement cutting smooth dawn waves, atmospheric ember drift, natural cloth billowing.",
     "negative_constraints": [
       "No subtitles, no captions, no on-frame text, no logos, no watermarks.",
-      "The video is full-frame shots only: never a grid, never panels, never split screen, never black dividing lines; strictly NO duplicate characters, strictly NO multiple characters, no ghost figures, no cloning; strictly NO character standing outside the ship hull or on the exterior water/drop-off side of a railing/barrier, no 180-degree axis fusion between panels; crisp hard cuts at second 3.0 and second 7.0, no camera blending, no crossfades.",
+      "The video is full-frame shots only: never a grid, never panels, never split screen, never black dividing lines; strictly NO duplicate characters, strictly NO multiple characters, no ghost figures, no cloning; strictly NO character standing outside the ship hull or on the exterior water/drop-off side of a railing/barrier, no 180-degree axis fusion between panels; crisp hard cuts at second 3.0 and second 7.0, no camera blending, no crossfades; strictly NO hands on face, NO hands pressed against cheeks, NO face-covering gestures (all faces 100% unobstructed with hands gripping physical props).",
       "ANTI-CGI LOCK: real documentary footage, not a 3D render, not a video game, not CGI fire, no plastic skin.",
       "No breath vapor and no white steam from anyone's mouth; no god rays, no volumetric beams, no magical sunbeams.",
       "No shallow depth of field, no blurry background, no bokeh (f/8 aperture throughout).",
       "Separate bodies never merge; natural hands with five fingers; no extra limbs."
-    ]
+    ],
+    "sf_type": "GENERATE_IMAGE",
+    "image_prompt": "A film storyboard sheet, 16:9, made of FOUR photographic panels in a tight 2 by 2 grid, separated only by thin black lines; each panel is a 16:9 frame; no text, no captions. All four panels are cinematic feature-film stills of Location: Subterranean Cenote Golden Tree Sanctuary and open Aegean dawn sea. Light: ánh trăng tự nhiên hòa ánh vàng kim, warm golden amber dawn, natural overcast chiaroscuro. Featuring cinematic pirate crew.\nTOP-LEFT PANEL, second 0: [MS] From the opening frame at second 0, Nora proclaims with triumphant leadership: Nora says \"Behold the hidden heart of the Aegean—a subterranean cavern open to the stars.\"\nTOP-RIGHT PANEL, second 3: [MCU] 90-degree angle shift: The heroic command rings out across the deck through second 6 as giếng trời ngầm khổng lồ mở ra bầu trời đêm đầy sao.\nBOTTOM-LEFT PANEL, second 6: [CU] Nora concludes the line by second 7; the galleon cuts proudly into the dawn sea through second 10.\nBOTTOM-RIGHT PANEL, second 8: [MS] Final resolute hold in the same space, faces 100% unobstructed and hands gripping physical props.\ncinematic feature-film look: shot on ARRI Alexa with Cooke S4 prime lenses, fine 35mm film grain, deep focus (f/8), motivated practical light, realistic physics, strictly NO hands covering faces, strictly NOT a 3D render, NOT CGI, zero watermark, zero logos."
   },
   {
     "clip_id": "SC-124",
@@ -90,7 +92,7 @@
       }
     ],
     "timeline_action": {
-      "0-3s": "From second 0, Theron begins speaking immediately, carrying emotional depth: Theron says \"The holy lake of liquid crystal... walk gently upon the stone shore, sailors, for the water remembers every mortal footprint.\" (no subtitles).",
+      "0-3s": "From second 0, Theron begins speaking immediately, carrying emotional depth: Theron says \"Walk softly beside the crystal pool, sailors. The roots feel every greedy hand.\" (no subtitles).",
       "3-6s": "At second 3.0, a crisp hard cut: Theron's voice resonates under the dawn sky through second 5; theron bước xuống hồ nước trong vắt phẳng lặng như gương.",
       "6-8s": "At second 6.0, a crisp hard cut: The line concludes by second 6; Theron gazes outward toward the golden horizon through second 8. SPATIAL LOCK: All characters stand firmly on the interior solid deck or stone floor, NEVER on the exterior water/cliff drop-off side of any barrier; maintain a consistent 180-degree spatial axis within each shot."
     },
@@ -104,9 +106,9 @@
       "delivery": "warm, resonant, heroic and emotionally triumphant",
       "dialogue": [
         {
-          "t": "0-6s",
+          "t": "0-5.0s",
           "speaker": "Theron",
-          "line": "The holy lake of liquid crystal... walk gently upon the stone shore, sailors, for the water remembers every mortal footprint."
+          "line": "Walk softly beside the crystal pool, sailors. The roots feel every greedy hand."
         }
       ]
     },
@@ -120,12 +122,14 @@
     "physics": "Hydrodynamic galleon displacement cutting smooth dawn waves, atmospheric ember drift, natural cloth billowing.",
     "negative_constraints": [
       "No subtitles, no captions, no on-frame text, no logos, no watermarks.",
-      "The video is full-frame shots only: never a grid, never panels, never split screen, never black dividing lines; strictly NO duplicate characters, strictly NO multiple Theron, no ghost figures, no cloning; strictly NO character standing outside the ship hull or on the exterior water/drop-off side of a railing/barrier, no 180-degree axis fusion between panels; crisp hard cuts at second 3.0 and second 6.0, no camera blending, no crossfades.",
+      "The video is full-frame shots only: never a grid, never panels, never split screen, never black dividing lines; strictly NO duplicate characters, strictly NO multiple Theron, no ghost figures, no cloning; strictly NO character standing outside the ship hull or on the exterior water/drop-off side of a railing/barrier, no 180-degree axis fusion between panels; crisp hard cuts at second 3.0 and second 6.0, no camera blending, no crossfades; strictly NO hands on face, NO hands pressed against cheeks, NO face-covering gestures (all faces 100% unobstructed with hands gripping physical props).",
       "ANTI-CGI LOCK: real documentary footage, not a 3D render, not a video game, not CGI fire, no plastic skin.",
       "No breath vapor and no white steam from anyone's mouth; no god rays, no volumetric beams, no magical sunbeams.",
       "No shallow depth of field, no blurry background, no bokeh (f/8 aperture throughout).",
       "Separate bodies never merge; natural hands with five fingers; no extra limbs."
-    ]
+    ],
+    "sf_type": "GENERATE_IMAGE",
+    "image_prompt": "A film storyboard sheet, 16:9, made of FOUR photographic panels in a tight 2 by 2 grid, separated only by thin black lines; each panel is a 16:9 frame; no text, no captions. All four panels are cinematic feature-film stills of Location: Subterranean Cenote Golden Tree Sanctuary and open Aegean dawn sea. Light: nước phản chiếu ánh kim, warm golden amber dawn, natural overcast chiaroscuro. Featuring {{media:7c5d994a-dabd-406b-a6c1-b9fa6473a612|theron_clean.jpg}} (face 1:1, 58yo stranded navigator hermit in ragged tunic with wooden staff).\nTOP-LEFT PANEL, second 0: [MS] From second 0, Theron begins speaking immediately, carrying emotional depth: Theron says \"Walk softly beside the crystal pool, sailors. The roots feel every greedy hand.\"\nTOP-RIGHT PANEL, second 3: [MCU] 90-degree angle shift: Theron's voice resonates under the dawn sky through second 5; theron bước xuống hồ nước trong vắt phẳng lặng như gương.\nBOTTOM-LEFT PANEL, second 6: [CU] The line concludes by second 6; Theron gazes outward toward the golden horizon through second 8.\nBOTTOM-RIGHT PANEL, second 8: [MS] Final resolute hold in the same space, faces 100% unobstructed and hands gripping physical props.\ncinematic feature-film look: shot on ARRI Alexa with Cooke S4 prime lenses, fine 35mm film grain, deep focus (f/8), motivated practical light, realistic physics, strictly NO hands covering faces, strictly NOT a 3D render, NOT CGI, zero watermark, zero logos."
   },
   {
     "clip_id": "SC-125",
@@ -171,12 +175,14 @@
     "physics": "Hydrodynamic galleon displacement cutting smooth dawn waves, atmospheric ember drift, natural cloth billowing.",
     "negative_constraints": [
       "No subtitles, no captions, no on-frame text, no logos, no watermarks.",
-      "The video is full-frame shots only: never a grid, never panels, never split screen, never black dividing lines; strictly NO duplicate characters, strictly NO multiple characters, no ghost figures, no cloning; strictly NO character standing outside the ship hull or on the exterior water/drop-off side of a railing/barrier, no 180-degree axis fusion between panels; crisp hard cuts at second 3.0 and second 7.0, no camera blending, no crossfades.",
+      "The video is full-frame shots only: never a grid, never panels, never split screen, never black dividing lines; strictly NO duplicate characters, strictly NO multiple characters, no ghost figures, no cloning; strictly NO character standing outside the ship hull or on the exterior water/drop-off side of a railing/barrier, no 180-degree axis fusion between panels; crisp hard cuts at second 3.0 and second 7.0, no camera blending, no crossfades; strictly NO hands on face, NO hands pressed against cheeks, NO face-covering gestures (all faces 100% unobstructed with hands gripping physical props).",
       "ANTI-CGI LOCK: real documentary footage, not a 3D render, not a video game, not CGI fire, no plastic skin.",
       "No breath vapor and no white steam from anyone's mouth; no god rays, no volumetric beams, no magical sunbeams.",
       "No shallow depth of field, no blurry background, no bokeh (f/8 aperture throughout).",
       "Separate bodies never merge; natural hands with five fingers; no extra limbs."
-    ]
+    ],
+    "sf_type": "GENERATE_IMAGE",
+    "image_prompt": "A film storyboard sheet, 16:9, made of FOUR photographic panels in a tight 2 by 2 grid, separated only by thin black lines; each panel is a 16:9 frame; no text, no captions. All four panels are cinematic feature-film stills of Location: Subterranean Cenote Golden Tree Sanctuary and open Aegean dawn sea. Light: ánh vàng kim tráng lệ, warm golden amber dawn, natural overcast chiaroscuro. Featuring cinematic pirate crew.\nTOP-LEFT PANEL, second 0: [MS] At second 0, Cây Vàng rực rỡ tráng lệ cao 20 mét, tỏa sáng ánh kim óng ả; ánh vàng kim tráng lệ.\nTOP-RIGHT PANEL, second 3: [MCU] 90-degree angle shift: The monumental grandeur of the open Aegean bathed in dawn gold fills the frame.\nBOTTOM-LEFT PANEL, second 6: [CU] The final cinematic chapter concludes with timeless peace through second 10 (21:00.0).\nBOTTOM-RIGHT PANEL, second 8: [MS] Final resolute hold in the same space, faces 100% unobstructed and hands gripping physical props.\ncinematic feature-film look: shot on ARRI Alexa with Cooke S4 prime lenses, fine 35mm film grain, deep focus (f/8), motivated practical light, realistic physics, strictly NO hands covering faces, strictly NOT a 3D render, NOT CGI, zero watermark, zero logos."
   },
   {
     "clip_id": "SC-126",
@@ -208,7 +214,7 @@
       }
     ],
     "timeline_action": {
-      "0-3s": "From second 0, Heracles begins speaking immediately, carrying emotional depth: Heracles says \"By the high heavens... the leaves are pure beaten gold, breathing in the wind like living wings of immortal birds.\" (no subtitles).",
+      "0-3s": "From second 0, Heracles begins speaking immediately, carrying emotional depth: Heracles says \"By the gods... every leaf is pure beaten gold chiming in the wind.\" (no subtitles).",
       "3-6s": "At second 3.0, a crisp hard cut: Heracles's voice resonates under the dawn sky through second 5; heracles sững sờ buông thõng thanh xà beng sắt xuống sỏi.",
       "6-8s": "At second 6.0, a crisp hard cut: The line concludes by second 6; Heracles gazes outward toward the golden horizon through second 8. SPATIAL LOCK: All characters stand firmly on the interior solid deck or stone floor, NEVER on the exterior water/cliff drop-off side of any barrier; maintain a consistent 180-degree spatial axis within each shot."
     },
@@ -222,9 +228,9 @@
       "delivery": "warm, resonant, heroic and emotionally triumphant",
       "dialogue": [
         {
-          "t": "0-6s",
+          "t": "0-5.0s",
           "speaker": "Heracles",
-          "line": "By the high heavens... the leaves are pure beaten gold, breathing in the wind like living wings of immortal birds."
+          "line": "By the gods... every leaf is pure beaten gold chiming in the wind."
         }
       ]
     },
@@ -238,12 +244,14 @@
     "physics": "Hydrodynamic galleon displacement cutting smooth dawn waves, atmospheric ember drift, natural cloth billowing.",
     "negative_constraints": [
       "No subtitles, no captions, no on-frame text, no logos, no watermarks.",
-      "The video is full-frame shots only: never a grid, never panels, never split screen, never black dividing lines; strictly NO duplicate characters, strictly NO multiple Heracles, no ghost figures, no cloning; strictly NO character standing outside the ship hull or on the exterior water/drop-off side of a railing/barrier, no 180-degree axis fusion between panels; crisp hard cuts at second 3.0 and second 6.0, no camera blending, no crossfades.",
+      "The video is full-frame shots only: never a grid, never panels, never split screen, never black dividing lines; strictly NO duplicate characters, strictly NO multiple Heracles, no ghost figures, no cloning; strictly NO character standing outside the ship hull or on the exterior water/drop-off side of a railing/barrier, no 180-degree axis fusion between panels; crisp hard cuts at second 3.0 and second 6.0, no camera blending, no crossfades; strictly NO hands on face, NO hands pressed against cheeks, NO face-covering gestures (all faces 100% unobstructed with hands gripping physical props).",
       "ANTI-CGI LOCK: real documentary footage, not a 3D render, not a video game, not CGI fire, no plastic skin.",
       "No breath vapor and no white steam from anyone's mouth; no god rays, no volumetric beams, no magical sunbeams.",
       "No shallow depth of field, no blurry background, no bokeh (f/8 aperture throughout).",
       "Separate bodies never merge; natural hands with five fingers; no extra limbs."
-    ]
+    ],
+    "sf_type": "GENERATE_IMAGE",
+    "image_prompt": "A film storyboard sheet, 16:9, made of FOUR photographic panels in a tight 2 by 2 grid, separated only by thin black lines; each panel is a 16:9 frame; no text, no captions. All four panels are cinematic feature-film stills of Location: Subterranean Cenote Golden Tree Sanctuary and open Aegean dawn sea. Light: khuôn mặt bừng sáng ánh vàng, warm golden amber dawn, natural overcast chiaroscuro. Featuring {{media:37a10133-8496-49e7-bd77-b5f261c5a43e|heracles_clean.jpg}} (face 1:1, muscular build, fur mantle).\nTOP-LEFT PANEL, second 0: [MS] From second 0, Heracles begins speaking immediately, carrying emotional depth: Heracles says \"By the gods... every leaf is pure beaten gold chiming in the wind.\"\nTOP-RIGHT PANEL, second 3: [MCU] 90-degree angle shift: Heracles's voice resonates under the dawn sky through second 5; heracles sững sờ buông thõng thanh xà beng sắt xuống sỏi.\nBOTTOM-LEFT PANEL, second 6: [CU] The line concludes by second 6; Heracles gazes outward toward the golden horizon through second 8.\nBOTTOM-RIGHT PANEL, second 8: [MS] Final resolute hold in the same space, faces 100% unobstructed and hands gripping physical props.\ncinematic feature-film look: shot on ARRI Alexa with Cooke S4 prime lenses, fine 35mm film grain, deep focus (f/8), motivated practical light, realistic physics, strictly NO hands covering faces, strictly NOT a 3D render, NOT CGI, zero watermark, zero logos."
   },
   {
     "clip_id": "SC-127",
@@ -286,12 +294,14 @@
     "physics": "Hydrodynamic galleon displacement cutting smooth dawn waves, atmospheric ember drift, natural cloth billowing.",
     "negative_constraints": [
       "No subtitles, no captions, no on-frame text, no logos, no watermarks.",
-      "The video is full-frame shots only: never a grid, never panels, never split screen, never black dividing lines; strictly NO duplicate characters, strictly NO multiple characters, no ghost figures, no cloning; strictly NO character standing outside the ship hull or on the exterior water/drop-off side of a railing/barrier, no 180-degree axis fusion between panels; crisp hard cuts at second 3.0 and second 6.0, no camera blending, no crossfades.",
+      "The video is full-frame shots only: never a grid, never panels, never split screen, never black dividing lines; strictly NO duplicate characters, strictly NO multiple characters, no ghost figures, no cloning; strictly NO character standing outside the ship hull or on the exterior water/drop-off side of a railing/barrier, no 180-degree axis fusion between panels; crisp hard cuts at second 3.0 and second 6.0, no camera blending, no crossfades; strictly NO hands on face, NO hands pressed against cheeks, NO face-covering gestures (all faces 100% unobstructed with hands gripping physical props).",
       "ANTI-CGI LOCK: real documentary footage, not a 3D render, not a video game, not CGI fire, no plastic skin.",
       "No breath vapor and no white steam from anyone's mouth; no god rays, no volumetric beams, no magical sunbeams.",
       "No shallow depth of field, no blurry background, no bokeh (f/8 aperture throughout).",
       "Separate bodies never merge; natural hands with five fingers; no extra limbs."
-    ]
+    ],
+    "sf_type": "GENERATE_IMAGE",
+    "image_prompt": "A film storyboard sheet, 16:9, made of FOUR photographic panels in a tight 2 by 2 grid, separated only by thin black lines; each panel is a 16:9 frame; no text, no captions. All four panels are cinematic feature-film stills of Location: Subterranean Cenote Golden Tree Sanctuary and open Aegean dawn sea. Light: hạt bụi vàng golden embers, warm golden amber dawn, natural overcast chiaroscuro. Featuring cinematic pirate crew.\nTOP-LEFT PANEL, second 0: [MS] From second 0, Cận cảnh tán lá vàng kim rung rinh, phát tán bụi sáng Golden Embers; hạt bụi vàng golden embers.\nTOP-RIGHT PANEL, second 3: [MCU] 90-degree angle shift: Atmospheric Golden Embers drift across the frame like living particles of light.\nBOTTOM-LEFT PANEL, second 6: [CU] The natural motion resolves with poetic grace by second 8.\nBOTTOM-RIGHT PANEL, second 8: [MS] Final resolute hold in the same space, faces 100% unobstructed and hands gripping physical props.\ncinematic feature-film look: shot on ARRI Alexa with Cooke S4 prime lenses, fine 35mm film grain, deep focus (f/8), motivated practical light, realistic physics, strictly NO hands covering faces, strictly NOT a 3D render, NOT CGI, zero watermark, zero logos."
   },
   {
     "clip_id": "SC-128",
@@ -323,7 +333,7 @@
       }
     ],
     "timeline_action": {
-      "0-3s": "From second 0, Castor begins speaking immediately, carrying emotional depth: Castor says \"Look at the thick roots wrapping the crystal pools! A single branch would buy fifty Aegean galleys and a king's ransom!\" (no subtitles).",
+      "0-3s": "From second 0, Castor begins speaking immediately, carrying emotional depth: Castor says \"Look at those golden roots! One severed branch could buy fifty warships!\" (no subtitles).",
       "3-6s": "At second 3.0, a crisp hard cut: Castor's voice resonates under the dawn sky through second 5; castor tiến sát gốc cây, đôi mắt bùng lên lòng tham muốn chạm vào rễ vàng.",
       "6-8s": "At second 6.0, a crisp hard cut: The line concludes by second 6; Castor gazes outward toward the golden horizon through second 8. SPATIAL LOCK: All characters stand firmly on the interior solid deck or stone floor, NEVER on the exterior water/cliff drop-off side of any barrier; maintain a consistent 180-degree spatial axis within each shot."
     },
@@ -337,9 +347,9 @@
       "delivery": "warm, resonant, heroic and emotionally triumphant",
       "dialogue": [
         {
-          "t": "0-6s",
+          "t": "0-5.0s",
           "speaker": "Castor",
-          "line": "Look at the thick roots wrapping the crystal pools! A single branch would buy fifty Aegean galleys and a king's ransom!"
+          "line": "Look at those golden roots! One severed branch could buy fifty warships!"
         }
       ]
     },
@@ -353,12 +363,14 @@
     "physics": "Hydrodynamic galleon displacement cutting smooth dawn waves, atmospheric ember drift, natural cloth billowing.",
     "negative_constraints": [
       "No subtitles, no captions, no on-frame text, no logos, no watermarks.",
-      "The video is full-frame shots only: never a grid, never panels, never split screen, never black dividing lines; strictly NO duplicate characters, strictly NO multiple Castor, no ghost figures, no cloning; strictly NO character standing outside the ship hull or on the exterior water/drop-off side of a railing/barrier, no 180-degree axis fusion between panels; crisp hard cuts at second 3.0 and second 6.0, no camera blending, no crossfades.",
+      "The video is full-frame shots only: never a grid, never panels, never split screen, never black dividing lines; strictly NO duplicate characters, strictly NO multiple Castor, no ghost figures, no cloning; strictly NO character standing outside the ship hull or on the exterior water/drop-off side of a railing/barrier, no 180-degree axis fusion between panels; crisp hard cuts at second 3.0 and second 6.0, no camera blending, no crossfades; strictly NO hands on face, NO hands pressed against cheeks, NO face-covering gestures (all faces 100% unobstructed with hands gripping physical props).",
       "ANTI-CGI LOCK: real documentary footage, not a 3D render, not a video game, not CGI fire, no plastic skin.",
       "No breath vapor and no white steam from anyone's mouth; no god rays, no volumetric beams, no magical sunbeams.",
       "No shallow depth of field, no blurry background, no bokeh (f/8 aperture throughout).",
       "Separate bodies never merge; natural hands with five fingers; no extra limbs."
-    ]
+    ],
+    "sf_type": "GENERATE_IMAGE",
+    "image_prompt": "A film storyboard sheet, 16:9, made of FOUR photographic panels in a tight 2 by 2 grid, separated only by thin black lines; each panel is a 16:9 frame; no text, no captions. All four panels are cinematic feature-film stills of Location: Subterranean Cenote Golden Tree Sanctuary and open Aegean dawn sea. Light: mắt bừng lên lòng tham, warm golden amber dawn, natural overcast chiaroscuro. Featuring {{media:3152a235-af4f-462b-a78e-02551f826e41|castor_clean.jpg}} (face 1:1, leather cuirass).\nTOP-LEFT PANEL, second 0: [MS] From second 0, Castor begins speaking immediately, carrying emotional depth: Castor says \"Look at those golden roots! One severed branch could buy fifty warships!\"\nTOP-RIGHT PANEL, second 3: [MCU] 90-degree angle shift: Castor's voice resonates under the dawn sky through second 5; castor tiến sát gốc cây, đôi mắt bùng lên lòng tham muốn chạm vào rễ vàng.\nBOTTOM-LEFT PANEL, second 6: [CU] The line concludes by second 6; Castor gazes outward toward the golden horizon through second 8.\nBOTTOM-RIGHT PANEL, second 8: [MS] Final resolute hold in the same space, faces 100% unobstructed and hands gripping physical props.\ncinematic feature-film look: shot on ARRI Alexa with Cooke S4 prime lenses, fine 35mm film grain, deep focus (f/8), motivated practical light, realistic physics, strictly NO hands covering faces, strictly NOT a 3D render, NOT CGI, zero watermark, zero logos."
   },
   {
     "clip_id": "SC-129",
@@ -397,7 +409,7 @@
       }
     ],
     "timeline_action": {
-      "0-3s": "From second 0, Theron begins speaking immediately, carrying emotional depth: Theron says \"Do not reach your hand toward the roots, young warrior! Look beneath your boots at what lies petrified in the shallows!\" (no subtitles).",
+      "0-3s": "From second 0, Theron begins speaking immediately, carrying emotional depth: Theron says \"Pull your hand back from the root, Castor! Look beneath the clear water!\" (no subtitles).",
       "3-6s": "At second 3.0, a crisp hard cut: Theron's voice resonates under the dawn sky through second 5; theron giơ tay ngăn castor, chỉ xuống bờ hồ phủ đầy sỏi vàng.",
       "6-8s": "At second 6.0, a crisp hard cut: The line concludes by second 6; Theron gazes outward toward the golden horizon through second 8. Strictly Theron alone in this focal framing; Castor are completely off-screen or in distinct background separation, never overlapping. SPATIAL LOCK: All characters stand firmly on the interior solid deck or stone floor, NEVER on the exterior water/cliff drop-off side of any barrier; maintain a consistent 180-degree spatial axis within each shot."
     },
@@ -411,9 +423,9 @@
       "delivery": "warm, resonant, heroic and emotionally triumphant",
       "dialogue": [
         {
-          "t": "0-6s",
+          "t": "0-5.0s",
           "speaker": "Theron",
-          "line": "Do not reach your hand toward the roots, young warrior! Look beneath your boots at what lies petrified in the shallows!"
+          "line": "Pull your hand back from the root, Castor! Look beneath the clear water!"
         }
       ]
     },
@@ -427,12 +439,14 @@
     "physics": "Hydrodynamic galleon displacement cutting smooth dawn waves, atmospheric ember drift, natural cloth billowing.",
     "negative_constraints": [
       "No subtitles, no captions, no on-frame text, no logos, no watermarks.",
-      "The video is full-frame shots only: never a grid, never panels, never split screen, never black dividing lines; strictly NO duplicate characters, strictly NO multiple Castor, Theron, no ghost figures, no cloning; strictly NO character standing outside the ship hull or on the exterior water/drop-off side of a railing/barrier, no 180-degree axis fusion between panels; crisp hard cuts at second 3.0 and second 6.0, no camera blending, no crossfades.",
+      "The video is full-frame shots only: never a grid, never panels, never split screen, never black dividing lines; strictly NO duplicate characters, strictly NO multiple Castor, Theron, no ghost figures, no cloning; strictly NO character standing outside the ship hull or on the exterior water/drop-off side of a railing/barrier, no 180-degree axis fusion between panels; crisp hard cuts at second 3.0 and second 6.0, no camera blending, no crossfades; strictly NO hands on face, NO hands pressed against cheeks, NO face-covering gestures (all faces 100% unobstructed with hands gripping physical props).",
       "ANTI-CGI LOCK: real documentary footage, not a 3D render, not a video game, not CGI fire, no plastic skin.",
       "No breath vapor and no white steam from anyone's mouth; no god rays, no volumetric beams, no magical sunbeams.",
       "No shallow depth of field, no blurry background, no bokeh (f/8 aperture throughout).",
       "Separate bodies never merge; natural hands with five fingers; no extra limbs."
-    ]
+    ],
+    "sf_type": "GENERATE_IMAGE",
+    "image_prompt": "A film storyboard sheet, 16:9, made of FOUR photographic panels in a tight 2 by 2 grid, separated only by thin black lines; each panel is a 16:9 frame; no text, no captions. All four panels are cinematic feature-film stills of Location: Subterranean Cenote Golden Tree Sanctuary and open Aegean dawn sea. Light: theron trừng mắt nghiêm khắc, warm golden amber dawn, natural overcast chiaroscuro. Featuring {{media:3152a235-af4f-462b-a78e-02551f826e41|castor_clean.jpg}} (face 1:1, leather cuirass), {{media:7c5d994a-dabd-406b-a6c1-b9fa6473a612|theron_clean.jpg}} (face 1:1, 58yo stranded navigator hermit in ragged tunic with wooden staff).\nTOP-LEFT PANEL, second 0: [MS] From second 0, Theron begins speaking immediately, carrying emotional depth: Theron says \"Pull your hand back from the root, Castor! Look beneath the clear water!\"\nTOP-RIGHT PANEL, second 3: [MCU] 90-degree angle shift: Theron's voice resonates under the dawn sky through second 5; theron giơ tay ngăn castor, chỉ xuống bờ hồ phủ đầy sỏi vàng.\nBOTTOM-LEFT PANEL, second 6: [CU] The line concludes by second 6; Theron gazes outward toward the golden horizon through second 8. Strictly Theron alone in this focal framing; Castor are completely off-screen or in distinct background separation, never overlapping.\nBOTTOM-RIGHT PANEL, second 8: [MS] Final resolute hold in the same space, faces 100% unobstructed and hands gripping physical props.\ncinematic feature-film look: shot on ARRI Alexa with Cooke S4 prime lenses, fine 35mm film grain, deep focus (f/8), motivated practical light, realistic physics, strictly NO hands covering faces, strictly NOT a 3D render, NOT CGI, zero watermark, zero logos."
   },
   {
     "clip_id": "SC-130",
@@ -478,12 +492,14 @@
     "physics": "Hydrodynamic galleon displacement cutting smooth dawn waves, atmospheric ember drift, natural cloth billowing.",
     "negative_constraints": [
       "No subtitles, no captions, no on-frame text, no logos, no watermarks.",
-      "The video is full-frame shots only: never a grid, never panels, never split screen, never black dividing lines; strictly NO duplicate characters, strictly NO multiple characters, no ghost figures, no cloning; strictly NO character standing outside the ship hull or on the exterior water/drop-off side of a railing/barrier, no 180-degree axis fusion between panels; crisp hard cuts at second 3.0 and second 7.0, no camera blending, no crossfades.",
+      "The video is full-frame shots only: never a grid, never panels, never split screen, never black dividing lines; strictly NO duplicate characters, strictly NO multiple characters, no ghost figures, no cloning; strictly NO character standing outside the ship hull or on the exterior water/drop-off side of a railing/barrier, no 180-degree axis fusion between panels; crisp hard cuts at second 3.0 and second 7.0, no camera blending, no crossfades; strictly NO hands on face, NO hands pressed against cheeks, NO face-covering gestures (all faces 100% unobstructed with hands gripping physical props).",
       "ANTI-CGI LOCK: real documentary footage, not a 3D render, not a video game, not CGI fire, no plastic skin.",
       "No breath vapor and no white steam from anyone's mouth; no god rays, no volumetric beams, no magical sunbeams.",
       "No shallow depth of field, no blurry background, no bokeh (f/8 aperture throughout).",
       "Separate bodies never merge; natural hands with five fingers; no extra limbs."
-    ]
+    ],
+    "sf_type": "GENERATE_IMAGE",
+    "image_prompt": "A film storyboard sheet, 16:9, made of FOUR photographic panels in a tight 2 by 2 grid, separated only by thin black lines; each panel is a 16:9 frame; no text, no captions. All four panels are cinematic feature-film stills of Location: Subterranean Cenote Golden Tree Sanctuary and open Aegean dawn sea. Light: xương người dát vàng đông cứng, warm golden amber dawn, natural overcast chiaroscuro. Featuring cinematic pirate crew.\nTOP-LEFT PANEL, second 0: [MS] At second 0, Cận cảnh những bộ hài cốt thủy thủ và vua chúa thời cổ bị mạ vàng hóa đá đông cứng; xương người dát vàng đông cứng.\nTOP-RIGHT PANEL, second 3: [MCU] 90-degree angle shift: The monumental grandeur of the open Aegean bathed in dawn gold fills the frame.\nBOTTOM-LEFT PANEL, second 6: [CU] The final cinematic chapter concludes with timeless peace through second 10 (21:00.0).\nBOTTOM-RIGHT PANEL, second 8: [MS] Final resolute hold in the same space, faces 100% unobstructed and hands gripping physical props.\ncinematic feature-film look: shot on ARRI Alexa with Cooke S4 prime lenses, fine 35mm film grain, deep focus (f/8), motivated practical light, realistic physics, strictly NO hands covering faces, strictly NOT a 3D render, NOT CGI, zero watermark, zero logos."
   },
   {
     "clip_id": "SC-131",
@@ -525,7 +541,7 @@
       }
     ],
     "timeline_action": {
-      "0-3s": "From second 0, Theron begins speaking immediately, carrying emotional depth: Theron says \"Every man who hacked a branch was turned to solid frozen gold by the sap. Their greed became their eternal tomb.\" (no subtitles).",
+      "0-3s": "From second 0, Theron begins speaking immediately, carrying emotional depth: Theron says \"Every man who cut that bark turned to solid gold where he stood.\" (no subtitles).",
       "3-6s": "At second 3.0, a crisp hard cut: Theron's voice resonates under the dawn sky through second 5; theron giải thích lời nguyền lòng tham của cây vàng.",
       "6-8s": "At second 6.0, a crisp hard cut: The line concludes by second 6; Theron gazes outward toward the golden horizon through second 8. Strictly Theron alone in this focal framing; Nora and Castor are completely off-screen or in distinct background separation, never overlapping. SPATIAL LOCK: All characters stand firmly on the interior solid deck or stone floor, NEVER on the exterior water/cliff drop-off side of any barrier; maintain a consistent 180-degree spatial axis within each shot."
     },
@@ -539,9 +555,9 @@
       "delivery": "warm, resonant, heroic and emotionally triumphant",
       "dialogue": [
         {
-          "t": "0-6s",
+          "t": "0-5.0s",
           "speaker": "Theron",
-          "line": "Every man who hacked a branch was turned to solid frozen gold by the sap. Their greed became their eternal tomb."
+          "line": "Every man who cut that bark turned to solid gold where he stood."
         }
       ]
     },
@@ -555,12 +571,14 @@
     "physics": "Hydrodynamic galleon displacement cutting smooth dawn waves, atmospheric ember drift, natural cloth billowing.",
     "negative_constraints": [
       "No subtitles, no captions, no on-frame text, no logos, no watermarks.",
-      "The video is full-frame shots only: never a grid, never panels, never split screen, never black dividing lines; strictly NO duplicate characters, strictly NO multiple Nora, Castor, Theron, no ghost figures, no cloning; strictly NO character standing outside the ship hull or on the exterior water/drop-off side of a railing/barrier, no 180-degree axis fusion between panels; crisp hard cuts at second 3.0 and second 6.0, no camera blending, no crossfades.",
+      "The video is full-frame shots only: never a grid, never panels, never split screen, never black dividing lines; strictly NO duplicate characters, strictly NO multiple Nora, Castor, Theron, no ghost figures, no cloning; strictly NO character standing outside the ship hull or on the exterior water/drop-off side of a railing/barrier, no 180-degree axis fusion between panels; crisp hard cuts at second 3.0 and second 6.0, no camera blending, no crossfades; strictly NO hands on face, NO hands pressed against cheeks, NO face-covering gestures (all faces 100% unobstructed with hands gripping physical props).",
       "ANTI-CGI LOCK: real documentary footage, not a 3D render, not a video game, not CGI fire, no plastic skin.",
       "No breath vapor and no white steam from anyone's mouth; no god rays, no volumetric beams, no magical sunbeams.",
       "No shallow depth of field, no blurry background, no bokeh (f/8 aperture throughout).",
       "Separate bodies never merge; natural hands with five fingers; no extra limbs."
-    ]
+    ],
+    "sf_type": "GENERATE_IMAGE",
+    "image_prompt": "A film storyboard sheet, 16:9, made of FOUR photographic panels in a tight 2 by 2 grid, separated only by thin black lines; each panel is a 16:9 frame; no text, no captions. All four panels are cinematic feature-film stills of Location: Subterranean Cenote Golden Tree Sanctuary and open Aegean dawn sea. Light: ánh vàng kim lạnh lẽo, warm golden amber dawn, natural overcast chiaroscuro. Featuring {{media:62e117f8-0af7-484e-90a8-f79927105746|nora_clean.jpg}} (face 1:1, seafarer brigandine), {{media:743ef618-f4c5-456c-9285-56dd911ca94b|nora_body_seafarer_clean.jpg}} (athletic build, navy leather brigandine), {{media:3152a235-af4f-462b-a78e-02551f826e41|castor_clean.jpg}} (face 1:1, leather cuirass), {{media:7c5d994a-dabd-406b-a6c1-b9fa6473a612|theron_clean.jpg}} (face 1:1, 58yo stranded navigator hermit in ragged tunic with wooden staff).\nTOP-LEFT PANEL, second 0: [MS] From second 0, Theron begins speaking immediately, carrying emotional depth: Theron says \"Every man who cut that bark turned to solid gold where he stood.\"\nTOP-RIGHT PANEL, second 3: [MCU] 90-degree angle shift: Theron's voice resonates under the dawn sky through second 5; theron giải thích lời nguyền lòng tham của cây vàng.\nBOTTOM-LEFT PANEL, second 6: [CU] The line concludes by second 6; Theron gazes outward toward the golden horizon through second 8. Strictly Theron alone in this focal framing; Nora and Castor are completely off-screen or in distinct background separation, never overlapping.\nBOTTOM-RIGHT PANEL, second 8: [MS] Final resolute hold in the same space, faces 100% unobstructed and hands gripping physical props.\ncinematic feature-film look: shot on ARRI Alexa with Cooke S4 prime lenses, fine 35mm film grain, deep focus (f/8), motivated practical light, realistic physics, strictly NO hands covering faces, strictly NOT a 3D render, NOT CGI, zero watermark, zero logos."
   },
   {
     "clip_id": "SC-132",
@@ -592,7 +610,7 @@
       }
     ],
     "timeline_action": {
-      "0-2s": "From second 0, Castor delivers the line immediately, resonant and heartfelt: Castor says \"They were pirates too... crowned in gold, yet dead as dried salt.\" (no subtitles).",
+      "0-2s": "From second 0, Castor delivers the line immediately, resonant and heartfelt: Castor says \"They were sailors like us... crowned in gold, yet frozen dead forever.\" (no subtitles).",
       "2-4s": "At second 2.0, a crisp hard cut: Castor's line finishes cleanly by second 4; castor khựng lại, lưỡi dao găm run rẩy trên tay.",
       "4-6s": "At second 4.0, a crisp hard cut: The posture settles with dignified warmth by second 6. SPATIAL LOCK: All characters stand firmly on the interior solid deck or stone floor, NEVER on the exterior water/cliff drop-off side of any barrier; maintain a consistent 180-degree spatial axis within each shot."
     },
@@ -606,9 +624,9 @@
       "delivery": "warm, resonant, heroic and emotionally triumphant",
       "dialogue": [
         {
-          "t": "0-4s",
+          "t": "0-5.0s",
           "speaker": "Castor",
-          "line": "They were pirates too... crowned in gold, yet dead as dried salt."
+          "line": "They were sailors like us... crowned in gold, yet frozen dead forever."
         }
       ]
     },
@@ -622,12 +640,14 @@
     "physics": "Hydrodynamic galleon displacement cutting smooth dawn waves, atmospheric ember drift, natural cloth billowing.",
     "negative_constraints": [
       "No subtitles, no captions, no on-frame text, no logos, no watermarks.",
-      "The video is full-frame shots only: never a grid, never panels, never split screen, never black dividing lines; strictly NO duplicate characters, strictly NO multiple Castor, no ghost figures, no cloning; strictly NO character standing outside the ship hull or on the exterior water/drop-off side of a railing/barrier, no 180-degree axis fusion between panels; crisp hard cuts at second 2.0 and second 4.0, no camera blending, no crossfades.",
+      "The video is full-frame shots only: never a grid, never panels, never split screen, never black dividing lines; strictly NO duplicate characters, strictly NO multiple Castor, no ghost figures, no cloning; strictly NO character standing outside the ship hull or on the exterior water/drop-off side of a railing/barrier, no 180-degree axis fusion between panels; crisp hard cuts at second 2.0 and second 4.0, no camera blending, no crossfades; strictly NO hands on face, NO hands pressed against cheeks, NO face-covering gestures (all faces 100% unobstructed with hands gripping physical props).",
       "ANTI-CGI LOCK: real documentary footage, not a 3D render, not a video game, not CGI fire, no plastic skin.",
       "No breath vapor and no white steam from anyone's mouth; no god rays, no volumetric beams, no magical sunbeams.",
       "No shallow depth of field, no blurry background, no bokeh (f/8 aperture throughout).",
       "Separate bodies never merge; natural hands with five fingers; no extra limbs."
-    ]
+    ],
+    "sf_type": "GENERATE_IMAGE",
+    "image_prompt": "A film storyboard sheet, 16:9, made of FOUR photographic panels in a tight 2 by 2 grid, separated only by thin black lines; each panel is a 16:9 frame; no text, no captions. All four panels are cinematic feature-film stills of Location: Subterranean Cenote Golden Tree Sanctuary and open Aegean dawn sea. Light: dao găm run rẩy, warm golden amber dawn, natural overcast chiaroscuro. Featuring {{media:3152a235-af4f-462b-a78e-02551f826e41|castor_clean.jpg}} (face 1:1, leather cuirass).\nTOP-LEFT PANEL, second 0: [MS] From second 0, Castor delivers the line immediately, resonant and heartfelt: Castor says \"They were sailors like us... crowned in gold, yet frozen dead forever.\"\nTOP-RIGHT PANEL, second 3: [MCU] 90-degree angle shift: Castor's line finishes cleanly by second 4; castor khựng lại, lưỡi dao găm run rẩy trên tay.\nBOTTOM-LEFT PANEL, second 6: [CU] The posture settles with dignified warmth by second 6.\nBOTTOM-RIGHT PANEL, second 8: [MS] Final resolute hold in the same space, faces 100% unobstructed and hands gripping physical props.\ncinematic feature-film look: shot on ARRI Alexa with Cooke S4 prime lenses, fine 35mm film grain, deep focus (f/8), motivated practical light, realistic physics, strictly NO hands covering faces, strictly NOT a 3D render, NOT CGI, zero watermark, zero logos."
   },
   {
     "clip_id": "SC-133",
@@ -663,7 +683,7 @@
       }
     ],
     "timeline_action": {
-      "0-3s": "From the opening frame at second 0, Nora proclaims with triumphant leadership: Nora says \"Gold cannot steer a ship through Clashing Rocks, Castor. Our wealth is the salt in our veins and the brothers at our side!\" (no subtitles).",
+      "0-3s": "From the opening frame at second 0, Nora proclaims with triumphant leadership: Nora says \"Gold cannot steer a ship through storms, Castor. Our crew is our treasure.\" (no subtitles).",
       "3-7s": "At second 3.0, a crisp hard cut: The heroic command rings out across the deck through second 6 as nora bước tới đặt tay lên vai castor, kéo anh thức tỉnh khỏi ảo mộng.",
       "7-10s": "At second 7.0, a crisp hard cut: Nora concludes the line by second 7; the galleon cuts proudly into the dawn sea through second 10. Strictly Castor alone in this focal framing; Nora are completely off-screen or in distinct background separation, never overlapping. SPATIAL LOCK: All characters stand firmly on the interior solid deck or stone floor, NEVER on the exterior water/cliff drop-off side of any barrier; maintain a consistent 180-degree spatial axis within each shot."
     },
@@ -677,9 +697,9 @@
       "delivery": "warm, resonant, heroic and emotionally triumphant",
       "dialogue": [
         {
-          "t": "0-7s",
+          "t": "0-6.0s",
           "speaker": "Nora",
-          "line": "Gold cannot steer a ship through Clashing Rocks, Castor. Our wealth is the salt in our veins and the brothers at our side!"
+          "line": "Gold cannot steer a ship through storms, Castor. Our crew is our treasure."
         }
       ]
     },
@@ -693,12 +713,14 @@
     "physics": "Hydrodynamic galleon displacement cutting smooth dawn waves, atmospheric ember drift, natural cloth billowing.",
     "negative_constraints": [
       "No subtitles, no captions, no on-frame text, no logos, no watermarks.",
-      "The video is full-frame shots only: never a grid, never panels, never split screen, never black dividing lines; strictly NO duplicate characters, strictly NO multiple Nora, Castor, no ghost figures, no cloning; strictly NO character standing outside the ship hull or on the exterior water/drop-off side of a railing/barrier, no 180-degree axis fusion between panels; crisp hard cuts at second 3.0 and second 7.0, no camera blending, no crossfades.",
+      "The video is full-frame shots only: never a grid, never panels, never split screen, never black dividing lines; strictly NO duplicate characters, strictly NO multiple Nora, Castor, no ghost figures, no cloning; strictly NO character standing outside the ship hull or on the exterior water/drop-off side of a railing/barrier, no 180-degree axis fusion between panels; crisp hard cuts at second 3.0 and second 7.0, no camera blending, no crossfades; strictly NO hands on face, NO hands pressed against cheeks, NO face-covering gestures (all faces 100% unobstructed with hands gripping physical props).",
       "ANTI-CGI LOCK: real documentary footage, not a 3D render, not a video game, not CGI fire, no plastic skin.",
       "No breath vapor and no white steam from anyone's mouth; no god rays, no volumetric beams, no magical sunbeams.",
       "No shallow depth of field, no blurry background, no bokeh (f/8 aperture throughout).",
       "Separate bodies never merge; natural hands with five fingers; no extra limbs."
-    ]
+    ],
+    "sf_type": "GENERATE_IMAGE",
+    "image_prompt": "A film storyboard sheet, 16:9, made of FOUR photographic panels in a tight 2 by 2 grid, separated only by thin black lines; each panel is a 16:9 frame; no text, no captions. All four panels are cinematic feature-film stills of Location: Subterranean Cenote Golden Tree Sanctuary and open Aegean dawn sea. Light: ánh mắt chân thành ấm áp, warm golden amber dawn, natural overcast chiaroscuro. Featuring {{media:62e117f8-0af7-484e-90a8-f79927105746|nora_clean.jpg}} (face 1:1, seafarer brigandine), {{media:743ef618-f4c5-456c-9285-56dd911ca94b|nora_body_seafarer_clean.jpg}} (athletic build, navy leather brigandine), {{media:3152a235-af4f-462b-a78e-02551f826e41|castor_clean.jpg}} (face 1:1, leather cuirass).\nTOP-LEFT PANEL, second 0: [MS] From the opening frame at second 0, Nora proclaims with triumphant leadership: Nora says \"Gold cannot steer a ship through storms, Castor. Our crew is our treasure.\"\nTOP-RIGHT PANEL, second 3: [MCU] 90-degree angle shift: The heroic command rings out across the deck through second 6 as nora bước tới đặt tay lên vai castor, kéo anh thức tỉnh khỏi ảo mộng.\nBOTTOM-LEFT PANEL, second 6: [CU] Nora concludes the line by second 7; the galleon cuts proudly into the dawn sea through second 10. Strictly Castor alone in this focal framing; Nora are completely off-screen or in distinct background separation, never overlapping.\nBOTTOM-RIGHT PANEL, second 8: [MS] Final resolute hold in the same space, faces 100% unobstructed and hands gripping physical props.\ncinematic feature-film look: shot on ARRI Alexa with Cooke S4 prime lenses, fine 35mm film grain, deep focus (f/8), motivated practical light, realistic physics, strictly NO hands covering faces, strictly NOT a 3D render, NOT CGI, zero watermark, zero logos."
   },
   {
     "clip_id": "SC-134",
@@ -734,7 +756,7 @@
       }
     ],
     "timeline_action": {
-      "0-3s": "From second 0, Castor begins speaking immediately, carrying emotional depth: Castor says \"You speak true, Captain. I would rather die a free beggar on the open sea than rot a gilded statue here.\" (no subtitles).",
+      "0-3s": "From second 0, Castor begins speaking immediately, carrying emotional depth: Castor says \"You speak true, Captain. Better a free sailor than a golden corpse.\" (no subtitles).",
       "3-6s": "At second 3.0, a crisp hard cut: Castor's voice resonates under the dawn sky through second 5; castor nhìn những hài cốt rồi nhìn nora, từ từ tra dao găm vào bao.",
       "6-8s": "At second 6.0, a crisp hard cut: The line concludes by second 6; Castor gazes outward toward the golden horizon through second 8. Strictly Castor alone in this focal framing; Nora are completely off-screen or in distinct background separation, never overlapping. SPATIAL LOCK: All characters stand firmly on the interior solid deck or stone floor, NEVER on the exterior water/cliff drop-off side of any barrier; maintain a consistent 180-degree spatial axis within each shot."
     },
@@ -748,9 +770,9 @@
       "delivery": "warm, resonant, heroic and emotionally triumphant",
       "dialogue": [
         {
-          "t": "0-6s",
+          "t": "0-5.0s",
           "speaker": "Castor",
-          "line": "You speak true, Captain. I would rather die a free beggar on the open sea than rot a gilded statue here."
+          "line": "You speak true, Captain. Better a free sailor than a golden corpse."
         }
       ]
     },
@@ -764,12 +786,14 @@
     "physics": "Hydrodynamic galleon displacement cutting smooth dawn waves, atmospheric ember drift, natural cloth billowing.",
     "negative_constraints": [
       "No subtitles, no captions, no on-frame text, no logos, no watermarks.",
-      "The video is full-frame shots only: never a grid, never panels, never split screen, never black dividing lines; strictly NO duplicate characters, strictly NO multiple Nora, Castor, no ghost figures, no cloning; strictly NO character standing outside the ship hull or on the exterior water/drop-off side of a railing/barrier, no 180-degree axis fusion between panels; crisp hard cuts at second 3.0 and second 6.0, no camera blending, no crossfades.",
+      "The video is full-frame shots only: never a grid, never panels, never split screen, never black dividing lines; strictly NO duplicate characters, strictly NO multiple Nora, Castor, no ghost figures, no cloning; strictly NO character standing outside the ship hull or on the exterior water/drop-off side of a railing/barrier, no 180-degree axis fusion between panels; crisp hard cuts at second 3.0 and second 6.0, no camera blending, no crossfades; strictly NO hands on face, NO hands pressed against cheeks, NO face-covering gestures (all faces 100% unobstructed with hands gripping physical props).",
       "ANTI-CGI LOCK: real documentary footage, not a 3D render, not a video game, not CGI fire, no plastic skin.",
       "No breath vapor and no white steam from anyone's mouth; no god rays, no volumetric beams, no magical sunbeams.",
       "No shallow depth of field, no blurry background, no bokeh (f/8 aperture throughout).",
       "Separate bodies never merge; natural hands with five fingers; no extra limbs."
-    ]
+    ],
+    "sf_type": "GENERATE_IMAGE",
+    "image_prompt": "A film storyboard sheet, 16:9, made of FOUR photographic panels in a tight 2 by 2 grid, separated only by thin black lines; each panel is a 16:9 frame; no text, no captions. All four panels are cinematic feature-film stills of Location: Subterranean Cenote Golden Tree Sanctuary and open Aegean dawn sea. Light: ánh mắt hòa giải, warm golden amber dawn, natural overcast chiaroscuro. Featuring {{media:62e117f8-0af7-484e-90a8-f79927105746|nora_clean.jpg}} (face 1:1, seafarer brigandine), {{media:743ef618-f4c5-456c-9285-56dd911ca94b|nora_body_seafarer_clean.jpg}} (athletic build, navy leather brigandine), {{media:3152a235-af4f-462b-a78e-02551f826e41|castor_clean.jpg}} (face 1:1, leather cuirass).\nTOP-LEFT PANEL, second 0: [MS] From second 0, Castor begins speaking immediately, carrying emotional depth: Castor says \"You speak true, Captain. Better a free sailor than a golden corpse.\"\nTOP-RIGHT PANEL, second 3: [MCU] 90-degree angle shift: Castor's voice resonates under the dawn sky through second 5; castor nhìn những hài cốt rồi nhìn nora, từ từ tra dao găm vào bao.\nBOTTOM-LEFT PANEL, second 6: [CU] The line concludes by second 6; Castor gazes outward toward the golden horizon through second 8. Strictly Castor alone in this focal framing; Nora are completely off-screen or in distinct background separation, never overlapping.\nBOTTOM-RIGHT PANEL, second 8: [MS] Final resolute hold in the same space, faces 100% unobstructed and hands gripping physical props.\ncinematic feature-film look: shot on ARRI Alexa with Cooke S4 prime lenses, fine 35mm film grain, deep focus (f/8), motivated practical light, realistic physics, strictly NO hands covering faces, strictly NOT a 3D render, NOT CGI, zero watermark, zero logos."
   },
   {
     "clip_id": "SC-135",
@@ -815,12 +839,14 @@
     "physics": "Hydrodynamic galleon displacement cutting smooth dawn waves, atmospheric ember drift, natural cloth billowing.",
     "negative_constraints": [
       "No subtitles, no captions, no on-frame text, no logos, no watermarks.",
-      "The video is full-frame shots only: never a grid, never panels, never split screen, never black dividing lines; strictly NO duplicate characters, strictly NO multiple characters, no ghost figures, no cloning; strictly NO character standing outside the ship hull or on the exterior water/drop-off side of a railing/barrier, no 180-degree axis fusion between panels; crisp hard cuts at second 3.0 and second 6.0, no camera blending, no crossfades.",
+      "The video is full-frame shots only: never a grid, never panels, never split screen, never black dividing lines; strictly NO duplicate characters, strictly NO multiple characters, no ghost figures, no cloning; strictly NO character standing outside the ship hull or on the exterior water/drop-off side of a railing/barrier, no 180-degree axis fusion between panels; crisp hard cuts at second 3.0 and second 6.0, no camera blending, no crossfades; strictly NO hands on face, NO hands pressed against cheeks, NO face-covering gestures (all faces 100% unobstructed with hands gripping physical props).",
       "ANTI-CGI LOCK: real documentary footage, not a 3D render, not a video game, not CGI fire, no plastic skin.",
       "No breath vapor and no white steam from anyone's mouth; no god rays, no volumetric beams, no magical sunbeams.",
       "No shallow depth of field, no blurry background, no bokeh (f/8 aperture throughout).",
       "Separate bodies never merge; natural hands with five fingers; no extra limbs."
-    ]
+    ],
+    "sf_type": "GENERATE_IMAGE",
+    "image_prompt": "A film storyboard sheet, 16:9, made of FOUR photographic panels in a tight 2 by 2 grid, separated only by thin black lines; each panel is a 16:9 frame; no text, no captions. All four panels are cinematic feature-film stills of Location: Subterranean Cenote Golden Tree Sanctuary and open Aegean dawn sea. Light: chiếc lá rơi tự nhiên, warm golden amber dawn, natural overcast chiaroscuro. Featuring cinematic pirate crew.\nTOP-LEFT PANEL, second 0: [MS] From second 0, Một làn gió đêm từ giếng trời thổi nhẹ làm một chiếc lá vàng tự nhiên tách cành bay xuống; chiếc lá rơi tự nhiên.\nTOP-RIGHT PANEL, second 3: [MCU] 90-degree angle shift: Atmospheric Golden Embers drift across the frame like living particles of light.\nBOTTOM-LEFT PANEL, second 6: [CU] The natural motion resolves with poetic grace by second 8.\nBOTTOM-RIGHT PANEL, second 8: [MS] Final resolute hold in the same space, faces 100% unobstructed and hands gripping physical props.\ncinematic feature-film look: shot on ARRI Alexa with Cooke S4 prime lenses, fine 35mm film grain, deep focus (f/8), motivated practical light, realistic physics, strictly NO hands covering faces, strictly NOT a 3D render, NOT CGI, zero watermark, zero logos."
   },
   {
     "clip_id": "SC-136",
@@ -850,7 +876,7 @@
       }
     ],
     "timeline_action": {
-      "0-3s": "From second 0, Nora begins speaking immediately, carrying emotional depth: Nora says \"Given freely by the tree, not stolen by iron blades. This single leaf is all the proof our voyage requires.\" (no subtitles).",
+      "0-3s": "From second 0, Nora begins speaking immediately, carrying emotional depth: Nora says \"Given freely by the wind, never stolen by steel. One leaf is enough.\" (no subtitles).",
       "3-6s": "At second 3.0, a crisp hard cut: Nora's voice resonates under the dawn sky through second 5; nora xòe lòng bàn tay đón chiếc lá vàng rụng nhẹ nhàng.",
       "6-8s": "At second 6.0, a crisp hard cut: The line concludes by second 6; Nora gazes outward toward the golden horizon through second 8. SPATIAL LOCK: All characters stand firmly on the interior solid deck or stone floor, NEVER on the exterior water/cliff drop-off side of any barrier; maintain a consistent 180-degree spatial axis within each shot."
     },
@@ -864,9 +890,9 @@
       "delivery": "warm, resonant, heroic and emotionally triumphant",
       "dialogue": [
         {
-          "t": "0-6s",
+          "t": "0-5.0s",
           "speaker": "Nora",
-          "line": "Given freely by the tree, not stolen by iron blades. This single leaf is all the proof our voyage requires."
+          "line": "Given freely by the wind, never stolen by steel. One leaf is enough."
         }
       ]
     },
@@ -880,12 +906,14 @@
     "physics": "Hydrodynamic galleon displacement cutting smooth dawn waves, atmospheric ember drift, natural cloth billowing.",
     "negative_constraints": [
       "No subtitles, no captions, no on-frame text, no logos, no watermarks.",
-      "The video is full-frame shots only: never a grid, never panels, never split screen, never black dividing lines; strictly NO duplicate characters, strictly NO multiple Nora, no ghost figures, no cloning; strictly NO character standing outside the ship hull or on the exterior water/drop-off side of a railing/barrier, no 180-degree axis fusion between panels; crisp hard cuts at second 3.0 and second 6.0, no camera blending, no crossfades.",
+      "The video is full-frame shots only: never a grid, never panels, never split screen, never black dividing lines; strictly NO duplicate characters, strictly NO multiple Nora, no ghost figures, no cloning; strictly NO character standing outside the ship hull or on the exterior water/drop-off side of a railing/barrier, no 180-degree axis fusion between panels; crisp hard cuts at second 3.0 and second 6.0, no camera blending, no crossfades; strictly NO hands on face, NO hands pressed against cheeks, NO face-covering gestures (all faces 100% unobstructed with hands gripping physical props).",
       "ANTI-CGI LOCK: real documentary footage, not a 3D render, not a video game, not CGI fire, no plastic skin.",
       "No breath vapor and no white steam from anyone's mouth; no god rays, no volumetric beams, no magical sunbeams.",
       "No shallow depth of field, no blurry background, no bokeh (f/8 aperture throughout).",
       "Separate bodies never merge; natural hands with five fingers; no extra limbs."
-    ]
+    ],
+    "sf_type": "GENERATE_IMAGE",
+    "image_prompt": "A film storyboard sheet, 16:9, made of FOUR photographic panels in a tight 2 by 2 grid, separated only by thin black lines; each panel is a 16:9 frame; no text, no captions. All four panels are cinematic feature-film stills of Location: Subterranean Cenote Golden Tree Sanctuary and open Aegean dawn sea. Light: bàn tay nâng niu chiếc lá, warm golden amber dawn, natural overcast chiaroscuro. Featuring {{media:62e117f8-0af7-484e-90a8-f79927105746|nora_clean.jpg}} (face 1:1, seafarer brigandine), {{media:743ef618-f4c5-456c-9285-56dd911ca94b|nora_body_seafarer_clean.jpg}} (athletic build, navy leather brigandine).\nTOP-LEFT PANEL, second 0: [MS] From second 0, Nora begins speaking immediately, carrying emotional depth: Nora says \"Given freely by the wind, never stolen by steel. One leaf is enough.\"\nTOP-RIGHT PANEL, second 3: [MCU] 90-degree angle shift: Nora's voice resonates under the dawn sky through second 5; nora xòe lòng bàn tay đón chiếc lá vàng rụng nhẹ nhàng.\nBOTTOM-LEFT PANEL, second 6: [CU] The line concludes by second 6; Nora gazes outward toward the golden horizon through second 8.\nBOTTOM-RIGHT PANEL, second 8: [MS] Final resolute hold in the same space, faces 100% unobstructed and hands gripping physical props.\ncinematic feature-film look: shot on ARRI Alexa with Cooke S4 prime lenses, fine 35mm film grain, deep focus (f/8), motivated practical light, realistic physics, strictly NO hands covering faces, strictly NOT a 3D render, NOT CGI, zero watermark, zero logos."
   },
   {
     "clip_id": "SC-137",
@@ -917,7 +945,7 @@
       }
     ],
     "timeline_action": {
-      "0-2s": "From second 0, Theron delivers the line immediately, resonant and heartfelt: Theron says \"The sanctuary accepts your humble hearts. The passage to the eastern beach is open.\" (no subtitles).",
+      "0-2s": "From second 0, Theron delivers the line immediately, resonant and heartfelt: Theron says \"The sanctuary spares those who master their greed. The eastern channel opens.\" (no subtitles).",
       "2-4s": "At second 2.0, a crisp hard cut: Theron's line finishes cleanly by second 4; theron mỉm cười gật đầu, ánh mắt nhẹ nhõm.",
       "4-6s": "At second 4.0, a crisp hard cut: The posture settles with dignified warmth by second 6. SPATIAL LOCK: All characters stand firmly on the interior solid deck or stone floor, NEVER on the exterior water/cliff drop-off side of any barrier; maintain a consistent 180-degree spatial axis within each shot."
     },
@@ -931,9 +959,9 @@
       "delivery": "warm, resonant, heroic and emotionally triumphant",
       "dialogue": [
         {
-          "t": "0-4s",
+          "t": "0-5.0s",
           "speaker": "Theron",
-          "line": "The sanctuary accepts your humble hearts. The passage to the eastern beach is open."
+          "line": "The sanctuary spares those who master their greed. The eastern channel opens."
         }
       ]
     },
@@ -947,12 +975,14 @@
     "physics": "Hydrodynamic galleon displacement cutting smooth dawn waves, atmospheric ember drift, natural cloth billowing.",
     "negative_constraints": [
       "No subtitles, no captions, no on-frame text, no logos, no watermarks.",
-      "The video is full-frame shots only: never a grid, never panels, never split screen, never black dividing lines; strictly NO duplicate characters, strictly NO multiple Theron, no ghost figures, no cloning; strictly NO character standing outside the ship hull or on the exterior water/drop-off side of a railing/barrier, no 180-degree axis fusion between panels; crisp hard cuts at second 2.0 and second 4.0, no camera blending, no crossfades.",
+      "The video is full-frame shots only: never a grid, never panels, never split screen, never black dividing lines; strictly NO duplicate characters, strictly NO multiple Theron, no ghost figures, no cloning; strictly NO character standing outside the ship hull or on the exterior water/drop-off side of a railing/barrier, no 180-degree axis fusion between panels; crisp hard cuts at second 2.0 and second 4.0, no camera blending, no crossfades; strictly NO hands on face, NO hands pressed against cheeks, NO face-covering gestures (all faces 100% unobstructed with hands gripping physical props).",
       "ANTI-CGI LOCK: real documentary footage, not a 3D render, not a video game, not CGI fire, no plastic skin.",
       "No breath vapor and no white steam from anyone's mouth; no god rays, no volumetric beams, no magical sunbeams.",
       "No shallow depth of field, no blurry background, no bokeh (f/8 aperture throughout).",
       "Separate bodies never merge; natural hands with five fingers; no extra limbs."
-    ]
+    ],
+    "sf_type": "GENERATE_IMAGE",
+    "image_prompt": "A film storyboard sheet, 16:9, made of FOUR photographic panels in a tight 2 by 2 grid, separated only by thin black lines; each panel is a 16:9 frame; no text, no captions. All four panels are cinematic feature-film stills of Location: Subterranean Cenote Golden Tree Sanctuary and open Aegean dawn sea. Light: nét mặt thanh thản, warm golden amber dawn, natural overcast chiaroscuro. Featuring {{media:7c5d994a-dabd-406b-a6c1-b9fa6473a612|theron_clean.jpg}} (face 1:1, 58yo stranded navigator hermit in ragged tunic with wooden staff).\nTOP-LEFT PANEL, second 0: [MS] From second 0, Theron delivers the line immediately, resonant and heartfelt: Theron says \"The sanctuary spares those who master their greed. The eastern channel opens.\"\nTOP-RIGHT PANEL, second 3: [MCU] 90-degree angle shift: Theron's line finishes cleanly by second 4; theron mỉm cười gật đầu, ánh mắt nhẹ nhõm.\nBOTTOM-LEFT PANEL, second 6: [CU] The posture settles with dignified warmth by second 6.\nBOTTOM-RIGHT PANEL, second 8: [MS] Final resolute hold in the same space, faces 100% unobstructed and hands gripping physical props.\ncinematic feature-film look: shot on ARRI Alexa with Cooke S4 prime lenses, fine 35mm film grain, deep focus (f/8), motivated practical light, realistic physics, strictly NO hands covering faces, strictly NOT a 3D render, NOT CGI, zero watermark, zero logos."
   },
   {
     "clip_id": "SC-138",
@@ -988,7 +1018,7 @@
       }
     ],
     "timeline_action": {
-      "0-3s": "From second 0, Nora begins speaking immediately, carrying emotional depth: Nora says \"Your exile on this barren karst is ended, Theron. Come sail with us as our chief navigator toward the sunrise.\" (no subtitles).",
+      "0-3s": "From second 0, Nora begins speaking immediately, carrying emotional depth: Nora says \"Your long exile is over, Theron. Come steer our helm into the dawn.\" (no subtitles).",
       "3-6s": "At second 3.0, a crisp hard cut: Nora's voice resonates under the dawn sky through second 5; nora mời theron cùng rời khỏi hòn đảo trở về thế giới đại dương.",
       "6-8s": "At second 6.0, a crisp hard cut: The line concludes by second 6; Nora gazes outward toward the golden horizon through second 8. Strictly Theron alone in this focal framing; Nora are completely off-screen or in distinct background separation, never overlapping. SPATIAL LOCK: All characters stand firmly on the interior solid deck or stone floor, NEVER on the exterior water/cliff drop-off side of any barrier; maintain a consistent 180-degree spatial axis within each shot."
     },
@@ -1002,9 +1032,9 @@
       "delivery": "warm, resonant, heroic and emotionally triumphant",
       "dialogue": [
         {
-          "t": "0-6s",
+          "t": "0-5.0s",
           "speaker": "Nora",
-          "line": "Your exile on this barren karst is ended, Theron. Come sail with us as our chief navigator toward the sunrise."
+          "line": "Your long exile is over, Theron. Come steer our helm into the dawn."
         }
       ]
     },
@@ -1018,12 +1048,14 @@
     "physics": "Hydrodynamic galleon displacement cutting smooth dawn waves, atmospheric ember drift, natural cloth billowing.",
     "negative_constraints": [
       "No subtitles, no captions, no on-frame text, no logos, no watermarks.",
-      "The video is full-frame shots only: never a grid, never panels, never split screen, never black dividing lines; strictly NO duplicate characters, strictly NO multiple Nora, Theron, no ghost figures, no cloning; strictly NO character standing outside the ship hull or on the exterior water/drop-off side of a railing/barrier, no 180-degree axis fusion between panels; crisp hard cuts at second 3.0 and second 6.0, no camera blending, no crossfades.",
+      "The video is full-frame shots only: never a grid, never panels, never split screen, never black dividing lines; strictly NO duplicate characters, strictly NO multiple Nora, Theron, no ghost figures, no cloning; strictly NO character standing outside the ship hull or on the exterior water/drop-off side of a railing/barrier, no 180-degree axis fusion between panels; crisp hard cuts at second 3.0 and second 6.0, no camera blending, no crossfades; strictly NO hands on face, NO hands pressed against cheeks, NO face-covering gestures (all faces 100% unobstructed with hands gripping physical props).",
       "ANTI-CGI LOCK: real documentary footage, not a 3D render, not a video game, not CGI fire, no plastic skin.",
       "No breath vapor and no white steam from anyone's mouth; no god rays, no volumetric beams, no magical sunbeams.",
       "No shallow depth of field, no blurry background, no bokeh (f/8 aperture throughout).",
       "Separate bodies never merge; natural hands with five fingers; no extra limbs."
-    ]
+    ],
+    "sf_type": "GENERATE_IMAGE",
+    "image_prompt": "A film storyboard sheet, 16:9, made of FOUR photographic panels in a tight 2 by 2 grid, separated only by thin black lines; each panel is a 16:9 frame; no text, no captions. All four panels are cinematic feature-film stills of Location: Subterranean Cenote Golden Tree Sanctuary and open Aegean dawn sea. Light: nora chìa tay ra, warm golden amber dawn, natural overcast chiaroscuro. Featuring {{media:62e117f8-0af7-484e-90a8-f79927105746|nora_clean.jpg}} (face 1:1, seafarer brigandine), {{media:743ef618-f4c5-456c-9285-56dd911ca94b|nora_body_seafarer_clean.jpg}} (athletic build, navy leather brigandine), {{media:7c5d994a-dabd-406b-a6c1-b9fa6473a612|theron_clean.jpg}} (face 1:1, 58yo stranded navigator hermit in ragged tunic with wooden staff).\nTOP-LEFT PANEL, second 0: [MS] From second 0, Nora begins speaking immediately, carrying emotional depth: Nora says \"Your long exile is over, Theron. Come steer our helm into the dawn.\"\nTOP-RIGHT PANEL, second 3: [MCU] 90-degree angle shift: Nora's voice resonates under the dawn sky through second 5; nora mời theron cùng rời khỏi hòn đảo trở về thế giới đại dương.\nBOTTOM-LEFT PANEL, second 6: [CU] The line concludes by second 6; Nora gazes outward toward the golden horizon through second 8. Strictly Theron alone in this focal framing; Nora are completely off-screen or in distinct background separation, never overlapping.\nBOTTOM-RIGHT PANEL, second 8: [MS] Final resolute hold in the same space, faces 100% unobstructed and hands gripping physical props.\ncinematic feature-film look: shot on ARRI Alexa with Cooke S4 prime lenses, fine 35mm film grain, deep focus (f/8), motivated practical light, realistic physics, strictly NO hands covering faces, strictly NOT a 3D render, NOT CGI, zero watermark, zero logos."
   },
   {
     "clip_id": "SC-139",
@@ -1059,7 +1091,7 @@
       }
     ],
     "timeline_action": {
-      "0-2s": "From second 0, Theron delivers the line immediately, resonant and heartfelt: Theron says \"To smell the open sea again... I will gladly steer your helm, Captain.\" (no subtitles).",
+      "0-2s": "From second 0, Theron delivers the line immediately, resonant and heartfelt: Theron says \"To breathe the open sea again... I will gladly take your wheel, Captain.\" (no subtitles).",
       "2-4s": "At second 2.0, a crisp hard cut: Theron's line finishes cleanly by second 4; theron xúc động nắm lấy bàn tay phong trần của nora.",
       "4-6s": "At second 4.0, a crisp hard cut: The posture settles with dignified warmth by second 6. Strictly Theron alone in this focal framing; Nora are completely off-screen or in distinct background separation, never overlapping. SPATIAL LOCK: All characters stand firmly on the interior solid deck or stone floor, NEVER on the exterior water/cliff drop-off side of any barrier; maintain a consistent 180-degree spatial axis within each shot."
     },
@@ -1073,9 +1105,9 @@
       "delivery": "warm, resonant, heroic and emotionally triumphant",
       "dialogue": [
         {
-          "t": "0-4s",
+          "t": "0-5.0s",
           "speaker": "Theron",
-          "line": "To smell the open sea again... I will gladly steer your helm, Captain."
+          "line": "To breathe the open sea again... I will gladly take your wheel, Captain."
         }
       ]
     },
@@ -1089,12 +1121,14 @@
     "physics": "Hydrodynamic galleon displacement cutting smooth dawn waves, atmospheric ember drift, natural cloth billowing.",
     "negative_constraints": [
       "No subtitles, no captions, no on-frame text, no logos, no watermarks.",
-      "The video is full-frame shots only: never a grid, never panels, never split screen, never black dividing lines; strictly NO duplicate characters, strictly NO multiple Nora, Theron, no ghost figures, no cloning; strictly NO character standing outside the ship hull or on the exterior water/drop-off side of a railing/barrier, no 180-degree axis fusion between panels; crisp hard cuts at second 2.0 and second 4.0, no camera blending, no crossfades.",
+      "The video is full-frame shots only: never a grid, never panels, never split screen, never black dividing lines; strictly NO duplicate characters, strictly NO multiple Nora, Theron, no ghost figures, no cloning; strictly NO character standing outside the ship hull or on the exterior water/drop-off side of a railing/barrier, no 180-degree axis fusion between panels; crisp hard cuts at second 2.0 and second 4.0, no camera blending, no crossfades; strictly NO hands on face, NO hands pressed against cheeks, NO face-covering gestures (all faces 100% unobstructed with hands gripping physical props).",
       "ANTI-CGI LOCK: real documentary footage, not a 3D render, not a video game, not CGI fire, no plastic skin.",
       "No breath vapor and no white steam from anyone's mouth; no god rays, no volumetric beams, no magical sunbeams.",
       "No shallow depth of field, no blurry background, no bokeh (f/8 aperture throughout).",
       "Separate bodies never merge; natural hands with five fingers; no extra limbs."
-    ]
+    ],
+    "sf_type": "GENERATE_IMAGE",
+    "image_prompt": "A film storyboard sheet, 16:9, made of FOUR photographic panels in a tight 2 by 2 grid, separated only by thin black lines; each panel is a 16:9 frame; no text, no captions. All four panels are cinematic feature-film stills of Location: Subterranean Cenote Golden Tree Sanctuary and open Aegean dawn sea. Light: hai bàn tay siết chặt, warm golden amber dawn, natural overcast chiaroscuro. Featuring {{media:62e117f8-0af7-484e-90a8-f79927105746|nora_clean.jpg}} (face 1:1, seafarer brigandine), {{media:743ef618-f4c5-456c-9285-56dd911ca94b|nora_body_seafarer_clean.jpg}} (athletic build, navy leather brigandine), {{media:7c5d994a-dabd-406b-a6c1-b9fa6473a612|theron_clean.jpg}} (face 1:1, 58yo stranded navigator hermit in ragged tunic with wooden staff).\nTOP-LEFT PANEL, second 0: [MS] From second 0, Theron delivers the line immediately, resonant and heartfelt: Theron says \"To breathe the open sea again... I will gladly take your wheel, Captain.\"\nTOP-RIGHT PANEL, second 3: [MCU] 90-degree angle shift: Theron's line finishes cleanly by second 4; theron xúc động nắm lấy bàn tay phong trần của nora.\nBOTTOM-LEFT PANEL, second 6: [CU] The posture settles with dignified warmth by second 6. Strictly Theron alone in this focal framing; Nora are completely off-screen or in distinct background separation, never overlapping.\nBOTTOM-RIGHT PANEL, second 8: [MS] Final resolute hold in the same space, faces 100% unobstructed and hands gripping physical props.\ncinematic feature-film look: shot on ARRI Alexa with Cooke S4 prime lenses, fine 35mm film grain, deep focus (f/8), motivated practical light, realistic physics, strictly NO hands covering faces, strictly NOT a 3D render, NOT CGI, zero watermark, zero logos."
   },
   {
     "clip_id": "SC-140",
@@ -1169,12 +1203,14 @@
     "physics": "Hydrodynamic galleon displacement cutting smooth dawn waves, atmospheric ember drift, natural cloth billowing.",
     "negative_constraints": [
       "No subtitles, no captions, no on-frame text, no logos, no watermarks.",
-      "The video is full-frame shots only: never a grid, never panels, never split screen, never black dividing lines; strictly NO duplicate characters, strictly NO multiple Nora, Castor, Heracles, Theron, no ghost figures, no cloning; strictly NO character standing outside the ship hull or on the exterior water/drop-off side of a railing/barrier, no 180-degree axis fusion between panels; crisp hard cuts at second 3.0 and second 7.0, no camera blending, no crossfades.",
+      "The video is full-frame shots only: never a grid, never panels, never split screen, never black dividing lines; strictly NO duplicate characters, strictly NO multiple Nora, Castor, Heracles, Theron, no ghost figures, no cloning; strictly NO character standing outside the ship hull or on the exterior water/drop-off side of a railing/barrier, no 180-degree axis fusion between panels; crisp hard cuts at second 3.0 and second 7.0, no camera blending, no crossfades; strictly NO hands on face, NO hands pressed against cheeks, NO face-covering gestures (all faces 100% unobstructed with hands gripping physical props).",
       "ANTI-CGI LOCK: real documentary footage, not a 3D render, not a video game, not CGI fire, no plastic skin.",
       "No breath vapor and no white steam from anyone's mouth; no god rays, no volumetric beams, no magical sunbeams.",
       "No shallow depth of field, no blurry background, no bokeh (f/8 aperture throughout).",
       "Separate bodies never merge; natural hands with five fingers; no extra limbs."
-    ]
+    ],
+    "sf_type": "GENERATE_IMAGE",
+    "image_prompt": "A film storyboard sheet, 16:9, made of FOUR photographic panels in a tight 2 by 2 grid, separated only by thin black lines; each panel is a 16:9 frame; no text, no captions. All four panels are cinematic feature-film stills of Location: Subterranean Cenote Golden Tree Sanctuary and open Aegean dawn sea. Light: gió biển mặn mòi, warm golden amber dawn, natural overcast chiaroscuro. Featuring {{media:62e117f8-0af7-484e-90a8-f79927105746|nora_clean.jpg}} (face 1:1, seafarer brigandine), {{media:743ef618-f4c5-456c-9285-56dd911ca94b|nora_body_seafarer_clean.jpg}} (athletic build, navy leather brigandine), {{media:3152a235-af4f-462b-a78e-02551f826e41|castor_clean.jpg}} (face 1:1, leather cuirass), {{media:37a10133-8496-49e7-bd77-b5f261c5a43e|heracles_clean.jpg}} (face 1:1, muscular build, fur mantle), {{media:7c5d994a-dabd-406b-a6c1-b9fa6473a612|theron_clean.jpg}} (face 1:1, 58yo stranded navigator hermit in ragged tunic with wooden staff).\nTOP-LEFT PANEL, second 0: [MS] At second 0, Bốn người bước ra khỏi hang ngầm hướng về bờ biển phía đông hòn đảo; gió biển mặn mòi.\nTOP-RIGHT PANEL, second 3: [MCU] 90-degree angle shift: The monumental grandeur of the open Aegean bathed in dawn gold fills the frame.\nBOTTOM-LEFT PANEL, second 6: [CU] The final cinematic chapter concludes with timeless peace through second 10 (21:00.0). Strictly Theron alone in this focal framing; Nora and Castor and Heracles are completely off-screen or in distinct background separation, never overlapping.\nBOTTOM-RIGHT PANEL, second 8: [MS] Final resolute hold in the same space, faces 100% unobstructed and hands gripping physical props.\ncinematic feature-film look: shot on ARRI Alexa with Cooke S4 prime lenses, fine 35mm film grain, deep focus (f/8), motivated practical light, realistic physics, strictly NO hands covering faces, strictly NOT a 3D render, NOT CGI, zero watermark, zero logos."
   },
   {
     "clip_id": "SC-141",
@@ -1208,7 +1244,7 @@
       }
     ],
     "timeline_action": {
-      "0-3s": "From second 0, Heracles begins speaking immediately, carrying emotional depth: Heracles says \"Look there at our brave ship! Still afloat, proud and unbroken, waiting for her crew to climb aboard once more!\" (no subtitles).",
+      "0-3s": "From second 0, Heracles begins speaking immediately, carrying emotional depth: Heracles says \"There rests our brave ship—still afloat and waiting on the morning tide!\" (no subtitles).",
       "3-6s": "At second 3.0, a crisp hard cut: Heracles's voice resonates under the dawn sky through second 5; nhìn thấy con tàu hải tặc thân yêu neo an toàn trong vùng vịnh yên bình.",
       "6-8s": "At second 6.0, a crisp hard cut: The line concludes by second 6; Heracles gazes outward toward the golden horizon through second 8. SPATIAL LOCK: All characters stand firmly on the interior solid deck or stone floor, NEVER on the exterior water/cliff drop-off side of any barrier; maintain a consistent 180-degree spatial axis within each shot."
     },
@@ -1222,9 +1258,9 @@
       "delivery": "warm, resonant, heroic and emotionally triumphant",
       "dialogue": [
         {
-          "t": "0-6s",
+          "t": "0-5.0s",
           "speaker": "Heracles",
-          "line": "Look there at our brave ship! Still afloat, proud and unbroken, waiting for her crew to climb aboard once more!"
+          "line": "There rests our brave ship—still afloat and waiting on the morning tide!"
         }
       ]
     },
@@ -1238,12 +1274,14 @@
     "physics": "Hydrodynamic galleon displacement cutting smooth dawn waves, atmospheric ember drift, natural cloth billowing.",
     "negative_constraints": [
       "No subtitles, no captions, no on-frame text, no logos, no watermarks.",
-      "The video is full-frame shots only: never a grid, never panels, never split screen, never black dividing lines; strictly NO duplicate characters, strictly NO multiple Nora, no ghost figures, no cloning; strictly NO character standing outside the ship hull or on the exterior water/drop-off side of a railing/barrier, no 180-degree axis fusion between panels; crisp hard cuts at second 3.0 and second 6.0, no camera blending, no crossfades.",
+      "The video is full-frame shots only: never a grid, never panels, never split screen, never black dividing lines; strictly NO duplicate characters, strictly NO multiple Nora, no ghost figures, no cloning; strictly NO character standing outside the ship hull or on the exterior water/drop-off side of a railing/barrier, no 180-degree axis fusion between panels; crisp hard cuts at second 3.0 and second 6.0, no camera blending, no crossfades; strictly NO hands on face, NO hands pressed against cheeks, NO face-covering gestures (all faces 100% unobstructed with hands gripping physical props).",
       "ANTI-CGI LOCK: real documentary footage, not a 3D render, not a video game, not CGI fire, no plastic skin.",
       "No breath vapor and no white steam from anyone's mouth; no god rays, no volumetric beams, no magical sunbeams.",
       "No shallow depth of field, no blurry background, no bokeh (f/8 aperture throughout).",
       "Separate bodies never merge; natural hands with five fingers; no extra limbs."
-    ]
+    ],
+    "sf_type": "GENERATE_IMAGE",
+    "image_prompt": "A film storyboard sheet, 16:9, made of FOUR photographic panels in a tight 2 by 2 grid, separated only by thin black lines; each panel is a 16:9 frame; no text, no captions. All four panels are cinematic feature-film stills of Location: Subterranean Cenote Golden Tree Sanctuary and open Aegean dawn sea. Light: tàu nổi kiêu hãnh, warm golden amber dawn, natural overcast chiaroscuro. Featuring {{media:62e117f8-0af7-484e-90a8-f79927105746|nora_clean.jpg}} (face 1:1, seafarer brigandine), {{media:743ef618-f4c5-456c-9285-56dd911ca94b|nora_body_seafarer_clean.jpg}} (athletic build, navy leather brigandine).\nTOP-LEFT PANEL, second 0: [MS] From second 0, Heracles begins speaking immediately, carrying emotional depth: Heracles says \"There rests our brave ship—still afloat and waiting on the morning tide!\"\nTOP-RIGHT PANEL, second 3: [MCU] 90-degree angle shift: Heracles's voice resonates under the dawn sky through second 5; nhìn thấy con tàu hải tặc thân yêu neo an toàn trong vùng vịnh yên bình.\nBOTTOM-LEFT PANEL, second 6: [CU] The line concludes by second 6; Heracles gazes outward toward the golden horizon through second 8.\nBOTTOM-RIGHT PANEL, second 8: [MS] Final resolute hold in the same space, faces 100% unobstructed and hands gripping physical props.\ncinematic feature-film look: shot on ARRI Alexa with Cooke S4 prime lenses, fine 35mm film grain, deep focus (f/8), motivated practical light, realistic physics, strictly NO hands covering faces, strictly NOT a 3D render, NOT CGI, zero watermark, zero logos."
   },
   {
     "clip_id": "SC-142",
@@ -1275,7 +1313,7 @@
       }
     ],
     "timeline_action": {
-      "0-3s": "From second 0, Castor begins speaking immediately, carrying emotional depth: Castor says \"Sound the horn and haul the skiff! We return whole, with the legendary leaf and an old master navigator!\" (no subtitles).",
+      "0-3s": "From second 0, Castor begins speaking immediately, carrying emotional depth: Castor says \"Sound the horn and launch the boat! Every soul returns alive today!\" (no subtitles).",
       "3-6s": "At second 3.0, a crisp hard cut: Castor's voice resonates under the dawn sky through second 5; thủy thủ đoàn trên boong hò reo vang dội khi thấy nora và các chiến binh trở về.",
       "6-8s": "At second 6.0, a crisp hard cut: The line concludes by second 6; Castor gazes outward toward the golden horizon through second 8. SPATIAL LOCK: All characters stand firmly on the interior solid deck or stone floor, NEVER on the exterior water/cliff drop-off side of any barrier; maintain a consistent 180-degree spatial axis within each shot."
     },
@@ -1289,9 +1327,9 @@
       "delivery": "warm, resonant, heroic and emotionally triumphant",
       "dialogue": [
         {
-          "t": "0-6s",
+          "t": "0-5.0s",
           "speaker": "Castor",
-          "line": "Sound the horn and haul the skiff! We return whole, with the legendary leaf and an old master navigator!"
+          "line": "Sound the horn and launch the boat! Every soul returns alive today!"
         }
       ]
     },
@@ -1305,12 +1343,14 @@
     "physics": "Hydrodynamic galleon displacement cutting smooth dawn waves, atmospheric ember drift, natural cloth billowing.",
     "negative_constraints": [
       "No subtitles, no captions, no on-frame text, no logos, no watermarks.",
-      "The video is full-frame shots only: never a grid, never panels, never split screen, never black dividing lines; strictly NO duplicate characters, strictly NO multiple Castor, no ghost figures, no cloning; strictly NO character standing outside the ship hull or on the exterior water/drop-off side of a railing/barrier, no 180-degree axis fusion between panels; crisp hard cuts at second 3.0 and second 6.0, no camera blending, no crossfades.",
+      "The video is full-frame shots only: never a grid, never panels, never split screen, never black dividing lines; strictly NO duplicate characters, strictly NO multiple Castor, no ghost figures, no cloning; strictly NO character standing outside the ship hull or on the exterior water/drop-off side of a railing/barrier, no 180-degree axis fusion between panels; crisp hard cuts at second 3.0 and second 6.0, no camera blending, no crossfades; strictly NO hands on face, NO hands pressed against cheeks, NO face-covering gestures (all faces 100% unobstructed with hands gripping physical props).",
       "ANTI-CGI LOCK: real documentary footage, not a 3D render, not a video game, not CGI fire, no plastic skin.",
       "No breath vapor and no white steam from anyone's mouth; no god rays, no volumetric beams, no magical sunbeams.",
       "No shallow depth of field, no blurry background, no bokeh (f/8 aperture throughout).",
       "Separate bodies never merge; natural hands with five fingers; no extra limbs."
-    ]
+    ],
+    "sf_type": "GENERATE_IMAGE",
+    "image_prompt": "A film storyboard sheet, 16:9, made of FOUR photographic panels in a tight 2 by 2 grid, separated only by thin black lines; each panel is a 16:9 frame; no text, no captions. All four panels are cinematic feature-film stills of Location: Subterranean Cenote Golden Tree Sanctuary and open Aegean dawn sea. Light: tù và đồng vang dội, warm golden amber dawn, natural overcast chiaroscuro. Featuring {{media:3152a235-af4f-462b-a78e-02551f826e41|castor_clean.jpg}} (face 1:1, leather cuirass).\nTOP-LEFT PANEL, second 0: [MS] From second 0, Castor begins speaking immediately, carrying emotional depth: Castor says \"Sound the horn and launch the boat! Every soul returns alive today!\"\nTOP-RIGHT PANEL, second 3: [MCU] 90-degree angle shift: Castor's voice resonates under the dawn sky through second 5; thủy thủ đoàn trên boong hò reo vang dội khi thấy nora và các chiến binh trở về.\nBOTTOM-LEFT PANEL, second 6: [CU] The line concludes by second 6; Castor gazes outward toward the golden horizon through second 8.\nBOTTOM-RIGHT PANEL, second 8: [MS] Final resolute hold in the same space, faces 100% unobstructed and hands gripping physical props.\ncinematic feature-film look: shot on ARRI Alexa with Cooke S4 prime lenses, fine 35mm film grain, deep focus (f/8), motivated practical light, realistic physics, strictly NO hands covering faces, strictly NOT a 3D render, NOT CGI, zero watermark, zero logos."
   },
   {
     "clip_id": "SC-143",
@@ -1385,12 +1425,14 @@
     "physics": "Hydrodynamic galleon displacement cutting smooth dawn waves, atmospheric ember drift, natural cloth billowing.",
     "negative_constraints": [
       "No subtitles, no captions, no on-frame text, no logos, no watermarks.",
-      "The video is full-frame shots only: never a grid, never panels, never split screen, never black dividing lines; strictly NO duplicate characters, strictly NO multiple Nora, Castor, Heracles, Theron, no ghost figures, no cloning; strictly NO character standing outside the ship hull or on the exterior water/drop-off side of a railing/barrier, no 180-degree axis fusion between panels; crisp hard cuts at second 3.0 and second 7.0, no camera blending, no crossfades.",
+      "The video is full-frame shots only: never a grid, never panels, never split screen, never black dividing lines; strictly NO duplicate characters, strictly NO multiple Nora, Castor, Heracles, Theron, no ghost figures, no cloning; strictly NO character standing outside the ship hull or on the exterior water/drop-off side of a railing/barrier, no 180-degree axis fusion between panels; crisp hard cuts at second 3.0 and second 7.0, no camera blending, no crossfades; strictly NO hands on face, NO hands pressed against cheeks, NO face-covering gestures (all faces 100% unobstructed with hands gripping physical props).",
       "ANTI-CGI LOCK: real documentary footage, not a 3D render, not a video game, not CGI fire, no plastic skin.",
       "No breath vapor and no white steam from anyone's mouth; no god rays, no volumetric beams, no magical sunbeams.",
       "No shallow depth of field, no blurry background, no bokeh (f/8 aperture throughout).",
       "Separate bodies never merge; natural hands with five fingers; no extra limbs."
-    ]
+    ],
+    "sf_type": "GENERATE_IMAGE",
+    "image_prompt": "A film storyboard sheet, 16:9, made of FOUR photographic panels in a tight 2 by 2 grid, separated only by thin black lines; each panel is a 16:9 frame; no text, no captions. All four panels are cinematic feature-film stills of Location: Subterranean Cenote Golden Tree Sanctuary and open Aegean dawn sea. Light: đón chào nồng nhiệt, warm golden amber dawn, natural overcast chiaroscuro. Featuring {{media:62e117f8-0af7-484e-90a8-f79927105746|nora_clean.jpg}} (face 1:1, seafarer brigandine), {{media:743ef618-f4c5-456c-9285-56dd911ca94b|nora_body_seafarer_clean.jpg}} (athletic build, navy leather brigandine), {{media:3152a235-af4f-462b-a78e-02551f826e41|castor_clean.jpg}} (face 1:1, leather cuirass), {{media:37a10133-8496-49e7-bd77-b5f261c5a43e|heracles_clean.jpg}} (face 1:1, muscular build, fur mantle), {{media:7c5d994a-dabd-406b-a6c1-b9fa6473a612|theron_clean.jpg}} (face 1:1, 58yo stranded navigator hermit in ragged tunic with wooden staff).\nTOP-LEFT PANEL, second 0: [MS] At second 0, Nora, Theron, Castor và Heracles trèo thang dây trở lại boong tàu lớn; đón chào nồng nhiệt.\nTOP-RIGHT PANEL, second 3: [MCU] 90-degree angle shift: The monumental grandeur of the open Aegean bathed in dawn gold fills the frame.\nBOTTOM-LEFT PANEL, second 6: [CU] The final cinematic chapter concludes with timeless peace through second 10 (21:00.0). Strictly Theron alone in this focal framing; Nora and Castor and Heracles are completely off-screen or in distinct background separation, never overlapping.\nBOTTOM-RIGHT PANEL, second 8: [MS] Final resolute hold in the same space, faces 100% unobstructed and hands gripping physical props.\ncinematic feature-film look: shot on ARRI Alexa with Cooke S4 prime lenses, fine 35mm film grain, deep focus (f/8), motivated practical light, realistic physics, strictly NO hands covering faces, strictly NOT a 3D render, NOT CGI, zero watermark, zero logos."
   },
   {
     "clip_id": "SC-144",
@@ -1420,7 +1462,7 @@
       }
     ],
     "timeline_action": {
-      "0-3s": "From second 0, Nora begins speaking immediately, carrying emotional depth: Nora says \"The Golden Tree was found! We leave its curse behind, but we carry its immortal glory upon our masthead forever!\" (no subtitles).",
+      "0-3s": "From second 0, Nora begins speaking immediately, carrying emotional depth: Nora says \"We found the Golden Tree, brothers—and broke its curse by choosing each other!\" (no subtitles).",
       "3-6s": "At second 3.0, a crisp hard cut: Nora's voice resonates under the dawn sky through second 5; nora giơ cao chiếc lá vàng kim trước toàn thể thủy thủ đoàn.",
       "6-8s": "At second 6.0, a crisp hard cut: The line concludes by second 6; Nora gazes outward toward the golden horizon through second 8. SPATIAL LOCK: All characters stand firmly on the interior solid deck or stone floor, NEVER on the exterior water/cliff drop-off side of any barrier; maintain a consistent 180-degree spatial axis within each shot."
     },
@@ -1434,9 +1476,9 @@
       "delivery": "warm, resonant, heroic and emotionally triumphant",
       "dialogue": [
         {
-          "t": "0-6s",
+          "t": "0-5.0s",
           "speaker": "Nora",
-          "line": "The Golden Tree was found! We leave its curse behind, but we carry its immortal glory upon our masthead forever!"
+          "line": "We found the Golden Tree, brothers—and broke its curse by choosing each other!"
         }
       ]
     },
@@ -1450,12 +1492,14 @@
     "physics": "Hydrodynamic galleon displacement cutting smooth dawn waves, atmospheric ember drift, natural cloth billowing.",
     "negative_constraints": [
       "No subtitles, no captions, no on-frame text, no logos, no watermarks.",
-      "The video is full-frame shots only: never a grid, never panels, never split screen, never black dividing lines; strictly NO duplicate characters, strictly NO multiple Nora, no ghost figures, no cloning; strictly NO character standing outside the ship hull or on the exterior water/drop-off side of a railing/barrier, no 180-degree axis fusion between panels; crisp hard cuts at second 3.0 and second 6.0, no camera blending, no crossfades.",
+      "The video is full-frame shots only: never a grid, never panels, never split screen, never black dividing lines; strictly NO duplicate characters, strictly NO multiple Nora, no ghost figures, no cloning; strictly NO character standing outside the ship hull or on the exterior water/drop-off side of a railing/barrier, no 180-degree axis fusion between panels; crisp hard cuts at second 3.0 and second 6.0, no camera blending, no crossfades; strictly NO hands on face, NO hands pressed against cheeks, NO face-covering gestures (all faces 100% unobstructed with hands gripping physical props).",
       "ANTI-CGI LOCK: real documentary footage, not a 3D render, not a video game, not CGI fire, no plastic skin.",
       "No breath vapor and no white steam from anyone's mouth; no god rays, no volumetric beams, no magical sunbeams.",
       "No shallow depth of field, no blurry background, no bokeh (f/8 aperture throughout).",
       "Separate bodies never merge; natural hands with five fingers; no extra limbs."
-    ]
+    ],
+    "sf_type": "GENERATE_IMAGE",
+    "image_prompt": "A film storyboard sheet, 16:9, made of FOUR photographic panels in a tight 2 by 2 grid, separated only by thin black lines; each panel is a 16:9 frame; no text, no captions. All four panels are cinematic feature-film stills of Location: Subterranean Cenote Golden Tree Sanctuary and open Aegean dawn sea. Light: chiếc lá vàng chói lọi, warm golden amber dawn, natural overcast chiaroscuro. Featuring {{media:62e117f8-0af7-484e-90a8-f79927105746|nora_clean.jpg}} (face 1:1, seafarer brigandine), {{media:743ef618-f4c5-456c-9285-56dd911ca94b|nora_body_seafarer_clean.jpg}} (athletic build, navy leather brigandine).\nTOP-LEFT PANEL, second 0: [MS] From second 0, Nora begins speaking immediately, carrying emotional depth: Nora says \"We found the Golden Tree, brothers—and broke its curse by choosing each other!\"\nTOP-RIGHT PANEL, second 3: [MCU] 90-degree angle shift: Nora's voice resonates under the dawn sky through second 5; nora giơ cao chiếc lá vàng kim trước toàn thể thủy thủ đoàn.\nBOTTOM-LEFT PANEL, second 6: [CU] The line concludes by second 6; Nora gazes outward toward the golden horizon through second 8.\nBOTTOM-RIGHT PANEL, second 8: [MS] Final resolute hold in the same space, faces 100% unobstructed and hands gripping physical props.\ncinematic feature-film look: shot on ARRI Alexa with Cooke S4 prime lenses, fine 35mm film grain, deep focus (f/8), motivated practical light, realistic physics, strictly NO hands covering faces, strictly NOT a 3D render, NOT CGI, zero watermark, zero logos."
   },
   {
     "clip_id": "SC-145",
@@ -1487,7 +1531,7 @@
       }
     ],
     "timeline_action": {
-      "0-3s": "From the opening frame at second 0, Heracles proclaims with triumphant leadership: Heracles says \"All praise to Captain Nora! Raise the heavy anchor from the seabed, unfurl every yard of canvas to the rising offshore gale right now!\" (no subtitles).",
+      "0-3s": "From the opening frame at second 0, Heracles proclaims with triumphant leadership: Heracles says \"Weigh the main anchor and unfurl all canvas! Catch the morning wind!\" (no subtitles).",
       "3-7s": "At second 3.0, a crisp hard cut: The heroic command rings out across the deck through second 6 as tiếng reo hò dậy sóng của đoàn thủy thủ, heracles giương cao cờ hải tặc.",
       "7-10s": "At second 7.0, a crisp hard cut: Heracles concludes the line by second 7; the galleon cuts proudly into the dawn sea through second 10. SPATIAL LOCK: All characters stand firmly on the interior solid deck or stone floor, NEVER on the exterior water/cliff drop-off side of any barrier; maintain a consistent 180-degree spatial axis within each shot."
     },
@@ -1501,9 +1545,9 @@
       "delivery": "warm, resonant, heroic and emotionally triumphant",
       "dialogue": [
         {
-          "t": "0-7s",
+          "t": "0-5.0s",
           "speaker": "Heracles",
-          "line": "All praise to Captain Nora! Raise the heavy anchor from the seabed, unfurl every yard of canvas to the rising offshore gale right now!"
+          "line": "Weigh the main anchor and unfurl all canvas! Catch the morning wind!"
         }
       ]
     },
@@ -1517,12 +1561,14 @@
     "physics": "Hydrodynamic galleon displacement cutting smooth dawn waves, atmospheric ember drift, natural cloth billowing.",
     "negative_constraints": [
       "No subtitles, no captions, no on-frame text, no logos, no watermarks.",
-      "The video is full-frame shots only: never a grid, never panels, never split screen, never black dividing lines; strictly NO duplicate characters, strictly NO multiple Heracles, no ghost figures, no cloning; strictly NO character standing outside the ship hull or on the exterior water/drop-off side of a railing/barrier, no 180-degree axis fusion between panels; crisp hard cuts at second 3.0 and second 7.0, no camera blending, no crossfades.",
+      "The video is full-frame shots only: never a grid, never panels, never split screen, never black dividing lines; strictly NO duplicate characters, strictly NO multiple Heracles, no ghost figures, no cloning; strictly NO character standing outside the ship hull or on the exterior water/drop-off side of a railing/barrier, no 180-degree axis fusion between panels; crisp hard cuts at second 3.0 and second 7.0, no camera blending, no crossfades; strictly NO hands on face, NO hands pressed against cheeks, NO face-covering gestures (all faces 100% unobstructed with hands gripping physical props).",
       "ANTI-CGI LOCK: real documentary footage, not a 3D render, not a video game, not CGI fire, no plastic skin.",
       "No breath vapor and no white steam from anyone's mouth; no god rays, no volumetric beams, no magical sunbeams.",
       "No shallow depth of field, no blurry background, no bokeh (f/8 aperture throughout).",
       "Separate bodies never merge; natural hands with five fingers; no extra limbs."
-    ]
+    ],
+    "sf_type": "GENERATE_IMAGE",
+    "image_prompt": "A film storyboard sheet, 16:9, made of FOUR photographic panels in a tight 2 by 2 grid, separated only by thin black lines; each panel is a 16:9 frame; no text, no captions. All four panels are cinematic feature-film stills of Location: Subterranean Cenote Golden Tree Sanctuary and open Aegean dawn sea. Light: cờ hải tặc tung bay, warm golden amber dawn, natural overcast chiaroscuro. Featuring {{media:37a10133-8496-49e7-bd77-b5f261c5a43e|heracles_clean.jpg}} (face 1:1, muscular build, fur mantle).\nTOP-LEFT PANEL, second 0: [MS] From the opening frame at second 0, Heracles proclaims with triumphant leadership: Heracles says \"Weigh the main anchor and unfurl all canvas! Catch the morning wind!\"\nTOP-RIGHT PANEL, second 3: [MCU] 90-degree angle shift: The heroic command rings out across the deck through second 6 as tiếng reo hò dậy sóng của đoàn thủy thủ, heracles giương cao cờ hải tặc.\nBOTTOM-LEFT PANEL, second 6: [CU] Heracles concludes the line by second 7; the galleon cuts proudly into the dawn sea through second 10.\nBOTTOM-RIGHT PANEL, second 8: [MS] Final resolute hold in the same space, faces 100% unobstructed and hands gripping physical props.\ncinematic feature-film look: shot on ARRI Alexa with Cooke S4 prime lenses, fine 35mm film grain, deep focus (f/8), motivated practical light, realistic physics, strictly NO hands covering faces, strictly NOT a 3D render, NOT CGI, zero watermark, zero logos."
   },
   {
     "clip_id": "SC-146",
@@ -1563,7 +1609,7 @@
       }
     ],
     "timeline_action": {
-      "0-3s": "From second 0, Theron begins speaking immediately, carrying emotional depth: Theron says \"Steer due east into the dawn swell! The open sea is clear of siren shoals and basalt reefs ahead!\" (no subtitles).",
+      "0-3s": "From second 0, Theron begins speaking immediately, carrying emotional depth: Theron says \"Steer due east into the sunrise swell! The sea ahead is wide open!\" (no subtitles).",
       "3-6s": "At second 3.0, a crisp hard cut: Theron's voice resonates under the dawn sky through second 5; theron đứng cạnh bánh lái, cầm kính viễn vọng chỉ hướng hải trình mới.",
       "6-8s": "At second 6.0, a crisp hard cut: The line concludes by second 6; Theron gazes outward toward the golden horizon through second 8. Strictly Theron alone in this focal framing; Nora are completely off-screen or in distinct background separation, never overlapping. SPATIAL LOCK: All characters stand firmly on the interior solid deck or stone floor, NEVER on the exterior water/cliff drop-off side of any barrier; maintain a consistent 180-degree spatial axis within each shot."
     },
@@ -1577,9 +1623,9 @@
       "delivery": "warm, resonant, heroic and emotionally triumphant",
       "dialogue": [
         {
-          "t": "0-6s",
+          "t": "0-5.0s",
           "speaker": "Theron",
-          "line": "Steer due east into the dawn swell! The open sea is clear of siren shoals and basalt reefs ahead!"
+          "line": "Steer due east into the sunrise swell! The sea ahead is wide open!"
         }
       ]
     },
@@ -1593,12 +1639,14 @@
     "physics": "Hydrodynamic galleon displacement cutting smooth dawn waves, atmospheric ember drift, natural cloth billowing.",
     "negative_constraints": [
       "No subtitles, no captions, no on-frame text, no logos, no watermarks.",
-      "The video is full-frame shots only: never a grid, never panels, never split screen, never black dividing lines; strictly NO duplicate characters, strictly NO multiple Nora, Theron, no ghost figures, no cloning; strictly NO character standing outside the ship hull or on the exterior water/drop-off side of a railing/barrier, no 180-degree axis fusion between panels; crisp hard cuts at second 3.0 and second 6.0, no camera blending, no crossfades.",
+      "The video is full-frame shots only: never a grid, never panels, never split screen, never black dividing lines; strictly NO duplicate characters, strictly NO multiple Nora, Theron, no ghost figures, no cloning; strictly NO character standing outside the ship hull or on the exterior water/drop-off side of a railing/barrier, no 180-degree axis fusion between panels; crisp hard cuts at second 3.0 and second 6.0, no camera blending, no crossfades; strictly NO hands on face, NO hands pressed against cheeks, NO face-covering gestures (all faces 100% unobstructed with hands gripping physical props).",
       "ANTI-CGI LOCK: real documentary footage, not a 3D render, not a video game, not CGI fire, no plastic skin.",
       "No breath vapor and no white steam from anyone's mouth; no god rays, no volumetric beams, no magical sunbeams.",
       "No shallow depth of field, no blurry background, no bokeh (f/8 aperture throughout).",
       "Separate bodies never merge; natural hands with five fingers; no extra limbs."
-    ]
+    ],
+    "sf_type": "GENERATE_IMAGE",
+    "image_prompt": "A film storyboard sheet, 16:9, made of FOUR photographic panels in a tight 2 by 2 grid, separated only by thin black lines; each panel is a 16:9 frame; no text, no captions. All four panels are cinematic feature-film stills of Location: Subterranean Cenote Golden Tree Sanctuary and open Aegean dawn sea. Light: bình minh ửng hồng, warm golden amber dawn, natural overcast chiaroscuro. Featuring {{media:62e117f8-0af7-484e-90a8-f79927105746|nora_clean.jpg}} (face 1:1, seafarer brigandine), {{media:743ef618-f4c5-456c-9285-56dd911ca94b|nora_body_seafarer_clean.jpg}} (athletic build, navy leather brigandine), {{media:7c5d994a-dabd-406b-a6c1-b9fa6473a612|theron_clean.jpg}} (face 1:1, 58yo stranded navigator hermit in ragged tunic with wooden staff).\nTOP-LEFT PANEL, second 0: [MS] From second 0, Theron begins speaking immediately, carrying emotional depth: Theron says \"Steer due east into the sunrise swell! The sea ahead is wide open!\"\nTOP-RIGHT PANEL, second 3: [MCU] 90-degree angle shift: Theron's voice resonates under the dawn sky through second 5; theron đứng cạnh bánh lái, cầm kính viễn vọng chỉ hướng hải trình mới.\nBOTTOM-LEFT PANEL, second 6: [CU] The line concludes by second 6; Theron gazes outward toward the golden horizon through second 8. Strictly Theron alone in this focal framing; Nora are completely off-screen or in distinct background separation, never overlapping.\nBOTTOM-RIGHT PANEL, second 8: [MS] Final resolute hold in the same space, faces 100% unobstructed and hands gripping physical props.\ncinematic feature-film look: shot on ARRI Alexa with Cooke S4 prime lenses, fine 35mm film grain, deep focus (f/8), motivated practical light, realistic physics, strictly NO hands covering faces, strictly NOT a 3D render, NOT CGI, zero watermark, zero logos."
   },
   {
     "clip_id": "SC-147",
@@ -1628,7 +1676,7 @@
       }
     ],
     "timeline_action": {
-      "0-3s": "From second 0, Nora begins speaking immediately, carrying emotional depth: Nora says \"Let her run with the morning wind! To freedom, to brotherhood, and to the boundless horizons of the seven deeps!\" (no subtitles).",
+      "0-3s": "From second 0, Nora begins speaking immediately, carrying emotional depth: Nora says \"Let her run free before the wind—to brotherhood and the open sea!\" (no subtitles).",
       "3-6s": "At second 3.0, a crisp hard cut: Nora's voice resonates under the dawn sky through second 5; nora hai tay ghì bánh lái gỗ sồi, nụ cười thủ lĩnh rạng rỡ phong trần.",
       "6-8s": "At second 6.0, a crisp hard cut: The line concludes by second 6; Nora gazes outward toward the golden horizon through second 8. SPATIAL LOCK: All characters stand firmly on the interior solid deck or stone floor, NEVER on the exterior water/cliff drop-off side of any barrier; maintain a consistent 180-degree spatial axis within each shot."
     },
@@ -1642,9 +1690,9 @@
       "delivery": "warm, resonant, heroic and emotionally triumphant",
       "dialogue": [
         {
-          "t": "0-6s",
+          "t": "0-5.0s",
           "speaker": "Nora",
-          "line": "Let her run with the morning wind! To freedom, to brotherhood, and to the boundless horizons of the seven deeps!"
+          "line": "Let her run free before the wind—to brotherhood and the open sea!"
         }
       ]
     },
@@ -1658,12 +1706,14 @@
     "physics": "Hydrodynamic galleon displacement cutting smooth dawn waves, atmospheric ember drift, natural cloth billowing.",
     "negative_constraints": [
       "No subtitles, no captions, no on-frame text, no logos, no watermarks.",
-      "The video is full-frame shots only: never a grid, never panels, never split screen, never black dividing lines; strictly NO duplicate characters, strictly NO multiple Nora, no ghost figures, no cloning; strictly NO character standing outside the ship hull or on the exterior water/drop-off side of a railing/barrier, no 180-degree axis fusion between panels; crisp hard cuts at second 3.0 and second 6.0, no camera blending, no crossfades.",
+      "The video is full-frame shots only: never a grid, never panels, never split screen, never black dividing lines; strictly NO duplicate characters, strictly NO multiple Nora, no ghost figures, no cloning; strictly NO character standing outside the ship hull or on the exterior water/drop-off side of a railing/barrier, no 180-degree axis fusion between panels; crisp hard cuts at second 3.0 and second 6.0, no camera blending, no crossfades; strictly NO hands on face, NO hands pressed against cheeks, NO face-covering gestures (all faces 100% unobstructed with hands gripping physical props).",
       "ANTI-CGI LOCK: real documentary footage, not a 3D render, not a video game, not CGI fire, no plastic skin.",
       "No breath vapor and no white steam from anyone's mouth; no god rays, no volumetric beams, no magical sunbeams.",
       "No shallow depth of field, no blurry background, no bokeh (f/8 aperture throughout).",
       "Separate bodies never merge; natural hands with five fingers; no extra limbs."
-    ]
+    ],
+    "sf_type": "GENERATE_IMAGE",
+    "image_prompt": "A film storyboard sheet, 16:9, made of FOUR photographic panels in a tight 2 by 2 grid, separated only by thin black lines; each panel is a 16:9 frame; no text, no captions. All four panels are cinematic feature-film stills of Location: Subterranean Cenote Golden Tree Sanctuary and open Aegean dawn sea. Light: gió biển thổi tung tóc đỏ, warm golden amber dawn, natural overcast chiaroscuro. Featuring {{media:62e117f8-0af7-484e-90a8-f79927105746|nora_clean.jpg}} (face 1:1, seafarer brigandine), {{media:743ef618-f4c5-456c-9285-56dd911ca94b|nora_body_seafarer_clean.jpg}} (athletic build, navy leather brigandine).\nTOP-LEFT PANEL, second 0: [MS] From second 0, Nora begins speaking immediately, carrying emotional depth: Nora says \"Let her run free before the wind—to brotherhood and the open sea!\"\nTOP-RIGHT PANEL, second 3: [MCU] 90-degree angle shift: Nora's voice resonates under the dawn sky through second 5; nora hai tay ghì bánh lái gỗ sồi, nụ cười thủ lĩnh rạng rỡ phong trần.\nBOTTOM-LEFT PANEL, second 6: [CU] The line concludes by second 6; Nora gazes outward toward the golden horizon through second 8.\nBOTTOM-RIGHT PANEL, second 8: [MS] Final resolute hold in the same space, faces 100% unobstructed and hands gripping physical props.\ncinematic feature-film look: shot on ARRI Alexa with Cooke S4 prime lenses, fine 35mm film grain, deep focus (f/8), motivated practical light, realistic physics, strictly NO hands covering faces, strictly NOT a 3D render, NOT CGI, zero watermark, zero logos."
   },
   {
     "clip_id": "SC-148",
@@ -1717,12 +1767,14 @@
     "physics": "Hydrodynamic galleon displacement cutting smooth dawn waves, atmospheric ember drift, natural cloth billowing.",
     "negative_constraints": [
       "No subtitles, no captions, no on-frame text, no logos, no watermarks.",
-      "The video is full-frame shots only: never a grid, never panels, never split screen, never black dividing lines; strictly NO duplicate characters, strictly NO multiple Nora, no ghost figures, no cloning; strictly NO character standing outside the ship hull or on the exterior water/drop-off side of a railing/barrier, no 180-degree axis fusion between panels; crisp hard cuts at second 3.0 and second 7.0, no camera blending, no crossfades.",
+      "The video is full-frame shots only: never a grid, never panels, never split screen, never black dividing lines; strictly NO duplicate characters, strictly NO multiple Nora, no ghost figures, no cloning; strictly NO character standing outside the ship hull or on the exterior water/drop-off side of a railing/barrier, no 180-degree axis fusion between panels; crisp hard cuts at second 3.0 and second 7.0, no camera blending, no crossfades; strictly NO hands on face, NO hands pressed against cheeks, NO face-covering gestures (all faces 100% unobstructed with hands gripping physical props).",
       "ANTI-CGI LOCK: real documentary footage, not a 3D render, not a video game, not CGI fire, no plastic skin.",
       "No breath vapor and no white steam from anyone's mouth; no god rays, no volumetric beams, no magical sunbeams.",
       "No shallow depth of field, no blurry background, no bokeh (f/8 aperture throughout).",
       "Separate bodies never merge; natural hands with five fingers; no extra limbs."
-    ]
+    ],
+    "sf_type": "GENERATE_IMAGE",
+    "image_prompt": "A film storyboard sheet, 16:9, made of FOUR photographic panels in a tight 2 by 2 grid, separated only by thin black lines; each panel is a 16:9 frame; no text, no captions. All four panels are cinematic feature-film stills of Location: Subterranean Cenote Golden Tree Sanctuary and open Aegean dawn sea. Light: bọt sóng trắng dát vàng, warm golden amber dawn, natural overcast chiaroscuro. Featuring {{media:62e117f8-0af7-484e-90a8-f79927105746|nora_clean.jpg}} (face 1:1, seafarer brigandine), {{media:743ef618-f4c5-456c-9285-56dd911ca94b|nora_body_seafarer_clean.jpg}} (athletic build, navy leather brigandine).\nTOP-LEFT PANEL, second 0: [MS] At second 0, Mũi tàu cắt sóng xé tan màn sương mù, bọt nước trắng bắn tung tóe; bọt sóng trắng dát vàng.\nTOP-RIGHT PANEL, second 3: [MCU] 90-degree angle shift: The monumental grandeur of the open Aegean bathed in dawn gold fills the frame.\nBOTTOM-LEFT PANEL, second 6: [CU] The final cinematic chapter concludes with timeless peace through second 10 (21:00.0).\nBOTTOM-RIGHT PANEL, second 8: [MS] Final resolute hold in the same space, faces 100% unobstructed and hands gripping physical props.\ncinematic feature-film look: shot on ARRI Alexa with Cooke S4 prime lenses, fine 35mm film grain, deep focus (f/8), motivated practical light, realistic physics, strictly NO hands covering faces, strictly NOT a 3D render, NOT CGI, zero watermark, zero logos."
   },
   {
     "clip_id": "SC-149",
@@ -1776,12 +1828,14 @@
     "physics": "Hydrodynamic galleon displacement cutting smooth dawn waves, atmospheric ember drift, natural cloth billowing.",
     "negative_constraints": [
       "No subtitles, no captions, no on-frame text, no logos, no watermarks.",
-      "The video is full-frame shots only: never a grid, never panels, never split screen, never black dividing lines; strictly NO duplicate characters, strictly NO multiple Nora, no ghost figures, no cloning; strictly NO character standing outside the ship hull or on the exterior water/drop-off side of a railing/barrier, no 180-degree axis fusion between panels; crisp hard cuts at second 3.0 and second 6.0, no camera blending, no crossfades.",
+      "The video is full-frame shots only: never a grid, never panels, never split screen, never black dividing lines; strictly NO duplicate characters, strictly NO multiple Nora, no ghost figures, no cloning; strictly NO character standing outside the ship hull or on the exterior water/drop-off side of a railing/barrier, no 180-degree axis fusion between panels; crisp hard cuts at second 3.0 and second 6.0, no camera blending, no crossfades; strictly NO hands on face, NO hands pressed against cheeks, NO face-covering gestures (all faces 100% unobstructed with hands gripping physical props).",
       "ANTI-CGI LOCK: real documentary footage, not a 3D render, not a video game, not CGI fire, no plastic skin.",
       "No breath vapor and no white steam from anyone's mouth; no god rays, no volumetric beams, no magical sunbeams.",
       "No shallow depth of field, no blurry background, no bokeh (f/8 aperture throughout).",
       "Separate bodies never merge; natural hands with five fingers; no extra limbs."
-    ]
+    ],
+    "sf_type": "GENERATE_IMAGE",
+    "image_prompt": "A film storyboard sheet, 16:9, made of FOUR photographic panels in a tight 2 by 2 grid, separated only by thin black lines; each panel is a 16:9 frame; no text, no captions. All four panels are cinematic feature-film stills of Location: Subterranean Cenote Golden Tree Sanctuary and open Aegean dawn sea. Light: mặt trời đỏ rực chân trời, warm golden amber dawn, natural overcast chiaroscuro. Featuring {{media:62e117f8-0af7-484e-90a8-f79927105746|nora_clean.jpg}} (face 1:1, seafarer brigandine), {{media:743ef618-f4c5-456c-9285-56dd911ca94b|nora_body_seafarer_clean.jpg}} (athletic build, navy leather brigandine).\nTOP-LEFT PANEL, second 0: [MS] From second 0, Cánh buồm lớn căng tròn gió sớm, ánh bình minh đỏ rực bắt đầu nhuộm vàng đường chân trời; mặt trời đỏ rực chân trời.\nTOP-RIGHT PANEL, second 3: [MCU] 90-degree angle shift: Atmospheric Golden Embers drift across the frame like living particles of light.\nBOTTOM-LEFT PANEL, second 6: [CU] The natural motion resolves with poetic grace by second 8.\nBOTTOM-RIGHT PANEL, second 8: [MS] Final resolute hold in the same space, faces 100% unobstructed and hands gripping physical props.\ncinematic feature-film look: shot on ARRI Alexa with Cooke S4 prime lenses, fine 35mm film grain, deep focus (f/8), motivated practical light, realistic physics, strictly NO hands covering faces, strictly NOT a 3D render, NOT CGI, zero watermark, zero logos."
   },
   {
     "clip_id": "SC-150",
@@ -1835,12 +1889,14 @@
     "physics": "Hydrodynamic galleon displacement cutting smooth dawn waves, atmospheric ember drift, natural cloth billowing.",
     "negative_constraints": [
       "No subtitles, no captions, no on-frame text, no logos, no watermarks.",
-      "The video is full-frame shots only: never a grid, never panels, never split screen, never black dividing lines; strictly NO duplicate characters, strictly NO multiple Nora, no ghost figures, no cloning; strictly NO character standing outside the ship hull or on the exterior water/drop-off side of a railing/barrier, no 180-degree axis fusion between panels; crisp hard cuts at second 2.0 and second 4.0, no camera blending, no crossfades.",
+      "The video is full-frame shots only: never a grid, never panels, never split screen, never black dividing lines; strictly NO duplicate characters, strictly NO multiple Nora, no ghost figures, no cloning; strictly NO character standing outside the ship hull or on the exterior water/drop-off side of a railing/barrier, no 180-degree axis fusion between panels; crisp hard cuts at second 2.0 and second 4.0, no camera blending, no crossfades; strictly NO hands on face, NO hands pressed against cheeks, NO face-covering gestures (all faces 100% unobstructed with hands gripping physical props).",
       "ANTI-CGI LOCK: real documentary footage, not a 3D render, not a video game, not CGI fire, no plastic skin.",
       "No breath vapor and no white steam from anyone's mouth; no god rays, no volumetric beams, no magical sunbeams.",
       "No shallow depth of field, no blurry background, no bokeh (f/8 aperture throughout).",
       "Separate bodies never merge; natural hands with five fingers; no extra limbs."
-    ]
+    ],
+    "sf_type": "GENERATE_IMAGE",
+    "image_prompt": "A film storyboard sheet, 16:9, made of FOUR photographic panels in a tight 2 by 2 grid, separated only by thin black lines; each panel is a 16:9 frame; no text, no captions. All four panels are cinematic feature-film stills of Location: Subterranean Cenote Golden Tree Sanctuary and open Aegean dawn sea. Light: lấp lánh ánh bình minh, warm golden amber dawn, natural overcast chiaroscuro. Featuring {{media:62e117f8-0af7-484e-90a8-f79927105746|nora_clean.jpg}} (face 1:1, seafarer brigandine), {{media:743ef618-f4c5-456c-9285-56dd911ca94b|nora_body_seafarer_clean.jpg}} (athletic build, navy leather brigandine).\nTOP-LEFT PANEL, second 0: [MS] At second 0, Chiếc lá vàng kim được Nora gắn trang trọng lên đầu mũi tàu, lấp lánh phản chiếu ánh bình minh; lấp lánh ánh bình minh.\nTOP-RIGHT PANEL, second 3: [MCU] 90-degree angle shift: The quiet majesty of the sanctuary unfolds across the reflective water.\nBOTTOM-LEFT PANEL, second 6: [CU] The visual beat resolves cleanly with gentle motion by second 6.\nBOTTOM-RIGHT PANEL, second 8: [MS] Final resolute hold in the same space, faces 100% unobstructed and hands gripping physical props.\ncinematic feature-film look: shot on ARRI Alexa with Cooke S4 prime lenses, fine 35mm film grain, deep focus (f/8), motivated practical light, realistic physics, strictly NO hands covering faces, strictly NOT a 3D render, NOT CGI, zero watermark, zero logos."
   },
   {
     "clip_id": "SC-151",
@@ -1894,12 +1950,14 @@
     "physics": "Hydrodynamic galleon displacement cutting smooth dawn waves, atmospheric ember drift, natural cloth billowing.",
     "negative_constraints": [
       "No subtitles, no captions, no on-frame text, no logos, no watermarks.",
-      "The video is full-frame shots only: never a grid, never panels, never split screen, never black dividing lines; strictly NO duplicate characters, strictly NO multiple Nora, no ghost figures, no cloning; strictly NO character standing outside the ship hull or on the exterior water/drop-off side of a railing/barrier, no 180-degree axis fusion between panels; crisp hard cuts at second 3.0 and second 7.0, no camera blending, no crossfades.",
+      "The video is full-frame shots only: never a grid, never panels, never split screen, never black dividing lines; strictly NO duplicate characters, strictly NO multiple Nora, no ghost figures, no cloning; strictly NO character standing outside the ship hull or on the exterior water/drop-off side of a railing/barrier, no 180-degree axis fusion between panels; crisp hard cuts at second 3.0 and second 7.0, no camera blending, no crossfades; strictly NO hands on face, NO hands pressed against cheeks, NO face-covering gestures (all faces 100% unobstructed with hands gripping physical props).",
       "ANTI-CGI LOCK: real documentary footage, not a 3D render, not a video game, not CGI fire, no plastic skin.",
       "No breath vapor and no white steam from anyone's mouth; no god rays, no volumetric beams, no magical sunbeams.",
       "No shallow depth of field, no blurry background, no bokeh (f/8 aperture throughout).",
       "Separate bodies never merge; natural hands with five fingers; no extra limbs."
-    ]
+    ],
+    "sf_type": "GENERATE_IMAGE",
+    "image_prompt": "A film storyboard sheet, 16:9, made of FOUR photographic panels in a tight 2 by 2 grid, separated only by thin black lines; each panel is a 16:9 frame; no text, no captions. All four panels are cinematic feature-film stills of Location: Subterranean Cenote Golden Tree Sanctuary and open Aegean dawn sea. Light: ánh nắng vàng ngập tràn, warm golden amber dawn, natural overcast chiaroscuro. Featuring {{media:62e117f8-0af7-484e-90a8-f79927105746|nora_clean.jpg}} (face 1:1, seafarer brigandine), {{media:743ef618-f4c5-456c-9285-56dd911ca94b|nora_body_seafarer_clean.jpg}} (athletic build, navy leather brigandine).\nTOP-LEFT PANEL, second 0: [MS] At second 0, WS Toàn cảnh boong tàu: Thủy thủ làm việc nhịp nhàng, con tàu lướt đi kiêu hãnh; ánh nắng vàng ngập tràn.\nTOP-RIGHT PANEL, second 3: [MCU] 90-degree angle shift: The monumental grandeur of the open Aegean bathed in dawn gold fills the frame.\nBOTTOM-LEFT PANEL, second 6: [CU] The final cinematic chapter concludes with timeless peace through second 10 (21:00.0).\nBOTTOM-RIGHT PANEL, second 8: [MS] Final resolute hold in the same space, faces 100% unobstructed and hands gripping physical props.\ncinematic feature-film look: shot on ARRI Alexa with Cooke S4 prime lenses, fine 35mm film grain, deep focus (f/8), motivated practical light, realistic physics, strictly NO hands covering faces, strictly NOT a 3D render, NOT CGI, zero watermark, zero logos."
   },
   {
     "clip_id": "SC-152",
@@ -1953,12 +2011,14 @@
     "physics": "Hydrodynamic galleon displacement cutting smooth dawn waves, atmospheric ember drift, natural cloth billowing.",
     "negative_constraints": [
       "No subtitles, no captions, no on-frame text, no logos, no watermarks.",
-      "The video is full-frame shots only: never a grid, never panels, never split screen, never black dividing lines; strictly NO duplicate characters, strictly NO multiple Nora, no ghost figures, no cloning; strictly NO character standing outside the ship hull or on the exterior water/drop-off side of a railing/barrier, no 180-degree axis fusion between panels; crisp hard cuts at second 3.0 and second 6.0, no camera blending, no crossfades.",
+      "The video is full-frame shots only: never a grid, never panels, never split screen, never black dividing lines; strictly NO duplicate characters, strictly NO multiple Nora, no ghost figures, no cloning; strictly NO character standing outside the ship hull or on the exterior water/drop-off side of a railing/barrier, no 180-degree axis fusion between panels; crisp hard cuts at second 3.0 and second 6.0, no camera blending, no crossfades; strictly NO hands on face, NO hands pressed against cheeks, NO face-covering gestures (all faces 100% unobstructed with hands gripping physical props).",
       "ANTI-CGI LOCK: real documentary footage, not a 3D render, not a video game, not CGI fire, no plastic skin.",
       "No breath vapor and no white steam from anyone's mouth; no god rays, no volumetric beams, no magical sunbeams.",
       "No shallow depth of field, no blurry background, no bokeh (f/8 aperture throughout).",
       "Separate bodies never merge; natural hands with five fingers; no extra limbs."
-    ]
+    ],
+    "sf_type": "GENERATE_IMAGE",
+    "image_prompt": "A film storyboard sheet, 16:9, made of FOUR photographic panels in a tight 2 by 2 grid, separated only by thin black lines; each panel is a 16:9 frame; no text, no captions. All four panels are cinematic feature-film stills of Location: Subterranean Cenote Golden Tree Sanctuary and open Aegean dawn sea. Light: đảo mờ ảo trong sương, warm golden amber dawn, natural overcast chiaroscuro. Featuring {{media:62e117f8-0af7-484e-90a8-f79927105746|nora_clean.jpg}} (face 1:1, seafarer brigandine), {{media:743ef618-f4c5-456c-9285-56dd911ca94b|nora_body_seafarer_clean.jpg}} (athletic build, navy leather brigandine).\nTOP-LEFT PANEL, second 0: [MS] From second 0, Hòn đảo Karst xám xịt lùi dần về phía chân trời xa xăm, mờ ảo trong sương; đảo mờ ảo trong sương.\nTOP-RIGHT PANEL, second 3: [MCU] 90-degree angle shift: Atmospheric Golden Embers drift across the frame like living particles of light.\nBOTTOM-LEFT PANEL, second 6: [CU] The natural motion resolves with poetic grace by second 8.\nBOTTOM-RIGHT PANEL, second 8: [MS] Final resolute hold in the same space, faces 100% unobstructed and hands gripping physical props.\ncinematic feature-film look: shot on ARRI Alexa with Cooke S4 prime lenses, fine 35mm film grain, deep focus (f/8), motivated practical light, realistic physics, strictly NO hands covering faces, strictly NOT a 3D render, NOT CGI, zero watermark, zero logos."
   },
   {
     "clip_id": "SC-153",
@@ -2012,12 +2072,14 @@
     "physics": "Hydrodynamic galleon displacement cutting smooth dawn waves, atmospheric ember drift, natural cloth billowing.",
     "negative_constraints": [
       "No subtitles, no captions, no on-frame text, no logos, no watermarks.",
-      "The video is full-frame shots only: never a grid, never panels, never split screen, never black dividing lines; strictly NO duplicate characters, strictly NO multiple Nora, no ghost figures, no cloning; strictly NO character standing outside the ship hull or on the exterior water/drop-off side of a railing/barrier, no 180-degree axis fusion between panels; crisp hard cuts at second 3.0 and second 7.0, no camera blending, no crossfades.",
+      "The video is full-frame shots only: never a grid, never panels, never split screen, never black dividing lines; strictly NO duplicate characters, strictly NO multiple Nora, no ghost figures, no cloning; strictly NO character standing outside the ship hull or on the exterior water/drop-off side of a railing/barrier, no 180-degree axis fusion between panels; crisp hard cuts at second 3.0 and second 7.0, no camera blending, no crossfades; strictly NO hands on face, NO hands pressed against cheeks, NO face-covering gestures (all faces 100% unobstructed with hands gripping physical props).",
       "ANTI-CGI LOCK: real documentary footage, not a 3D render, not a video game, not CGI fire, no plastic skin.",
       "No breath vapor and no white steam from anyone's mouth; no god rays, no volumetric beams, no magical sunbeams.",
       "No shallow depth of field, no blurry background, no bokeh (f/8 aperture throughout).",
       "Separate bodies never merge; natural hands with five fingers; no extra limbs."
-    ]
+    ],
+    "sf_type": "GENERATE_IMAGE",
+    "image_prompt": "A film storyboard sheet, 16:9, made of FOUR photographic panels in a tight 2 by 2 grid, separated only by thin black lines; each panel is a 16:9 frame; no text, no captions. All four panels are cinematic feature-film stills of Location: Subterranean Cenote Golden Tree Sanctuary and open Aegean dawn sea. Light: biển vàng bao la, warm golden amber dawn, natural overcast chiaroscuro. Featuring {{media:62e117f8-0af7-484e-90a8-f79927105746|nora_clean.jpg}} (face 1:1, seafarer brigandine), {{media:743ef618-f4c5-456c-9285-56dd911ca94b|nora_body_seafarer_clean.jpg}} (athletic build, navy leather brigandine).\nTOP-LEFT PANEL, second 0: [MS] At second 0, EWS Toàn cảnh con tàu hải tặc nhỏ bé lướt trên đại dương dát vàng mênh mông vô tận; biển vàng bao la.\nTOP-RIGHT PANEL, second 3: [MCU] 90-degree angle shift: The monumental grandeur of the open Aegean bathed in dawn gold fills the frame.\nBOTTOM-LEFT PANEL, second 6: [CU] The final cinematic chapter concludes with timeless peace through second 10 (21:00.0).\nBOTTOM-RIGHT PANEL, second 8: [MS] Final resolute hold in the same space, faces 100% unobstructed and hands gripping physical props.\ncinematic feature-film look: shot on ARRI Alexa with Cooke S4 prime lenses, fine 35mm film grain, deep focus (f/8), motivated practical light, realistic physics, strictly NO hands covering faces, strictly NOT a 3D render, NOT CGI, zero watermark, zero logos."
   },
   {
     "clip_id": "SC-154",
@@ -2071,11 +2133,13 @@
     "physics": "Hydrodynamic galleon displacement cutting smooth dawn waves, atmospheric ember drift, natural cloth billowing.",
     "negative_constraints": [
       "No subtitles, no captions, no on-frame text, no logos, no watermarks.",
-      "The video is full-frame shots only: never a grid, never panels, never split screen, never black dividing lines; strictly NO duplicate characters, strictly NO multiple Nora, no ghost figures, no cloning; strictly NO character standing outside the ship hull or on the exterior water/drop-off side of a railing/barrier, no 180-degree axis fusion between panels; crisp hard cuts at second 3.0 and second 7.0, no camera blending, no crossfades.",
+      "The video is full-frame shots only: never a grid, never panels, never split screen, never black dividing lines; strictly NO duplicate characters, strictly NO multiple Nora, no ghost figures, no cloning; strictly NO character standing outside the ship hull or on the exterior water/drop-off side of a railing/barrier, no 180-degree axis fusion between panels; crisp hard cuts at second 3.0 and second 7.0, no camera blending, no crossfades; strictly NO hands on face, NO hands pressed against cheeks, NO face-covering gestures (all faces 100% unobstructed with hands gripping physical props).",
       "ANTI-CGI LOCK: real documentary footage, not a 3D render, not a video game, not CGI fire, no plastic skin.",
       "No breath vapor and no white steam from anyone's mouth; no god rays, no volumetric beams, no magical sunbeams.",
       "No shallow depth of field, no blurry background, no bokeh (f/8 aperture throughout).",
       "Separate bodies never merge; natural hands with five fingers; no extra limbs."
-    ]
+    ],
+    "sf_type": "GENERATE_IMAGE",
+    "image_prompt": "A film storyboard sheet, 16:9, made of FOUR photographic panels in a tight 2 by 2 grid, separated only by thin black lines; each panel is a 16:9 frame; no text, no captions. All four panels are cinematic feature-film stills of Location: Subterranean Cenote Golden Tree Sanctuary and open Aegean dawn sea. Light: ánh sáng vàng bao trùm, warm golden amber dawn, natural overcast chiaroscuro. Featuring {{media:62e117f8-0af7-484e-90a8-f79927105746|nora_clean.jpg}} (face 1:1, seafarer brigandine), {{media:743ef618-f4c5-456c-9285-56dd911ca94b|nora_body_seafarer_clean.jpg}} (athletic build, navy leather brigandine).\nTOP-LEFT PANEL, second 0: [MS] At second 0, Fade to Black chậm rãi trên nền biển bình minh rực rỡ, dòng chữ kết phim xuất hiện lúc 21:00; ánh sáng vàng bao trùm.\nTOP-RIGHT PANEL, second 3: [MCU] 90-degree angle shift: The monumental grandeur of the open Aegean bathed in dawn gold fills the frame.\nBOTTOM-LEFT PANEL, second 6: [CU] The final cinematic chapter concludes with timeless peace through second 10 (21:00.0).\nBOTTOM-RIGHT PANEL, second 8: [MS] Final resolute hold in the same space, faces 100% unobstructed and hands gripping physical props.\ncinematic feature-film look: shot on ARRI Alexa with Cooke S4 prime lenses, fine 35mm film grain, deep focus (f/8), motivated practical light, realistic physics, strictly NO hands covering faces, strictly NOT a 3D render, NOT CGI, zero watermark, zero logos."
   }
 ]

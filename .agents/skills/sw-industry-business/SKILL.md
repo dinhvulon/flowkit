@@ -1,6 +1,6 @@
 ---
 name: sw-industry-business
-description: The screenwriting business, career strategy, and Hollywood survival — synthesized from Diamond & Weissman's Bulletproof (buyer's-eye workflow, three Cs, one-page nine-step, set pieces, submission, notes, resilience), Eric Bork's The Idea (PROBLEM seven-element idea test, 60/30/10, television differences), Neill Hicks (market four entities, six criteria, WGA, agents, option, credit arbitration, gross vs net, step deals), Richard Walter (query letter, agents, package, option, spec, release, copyright, guild, gatekeepers, professionalism, 66 principles), Wendy Henson (breaking in), Blake Snyder (logline pitch, genre, agents), Julian Hoxter (industry terms), Mei Feng's Oscar market analyses, and Hollywood masterclass insights. Use when evaluating whether a story idea is commercially viable, writing a logline/query/pitch, preparing a submission, handling studio notes and rewrites, navigating options/credits/WGA/agents/net profits, choosing between film and television, or building a sustainable writing career.
+description: 'The screenwriting business, career strategy, and Hollywood survival — synthesized from Diamond & Weissman''s Bulletproof (buyer''s-eye workflow, three Cs, one-page nine-step, set pieces, submission, notes, resilience), Eric Bork''s The Idea (PROBLEM seven-element idea test, 60/30/10, television differences), Neill Hicks (market four entities, six criteria, WGA, agents, option, credit arbitration, gross vs net, step deals), Richard Walter (query letter, agents, package, option, spec, release, copyright, guild, gatekeepers, professionalism, 66 principles), Wendy Henson (breaking in), Blake Snyder (logline pitch, genre, agents), Julian Hoxter (industry terms), Mei Feng''s Oscar market analyses, and Hollywood masterclass insights. Use when evaluating whether a story idea is commercially viable, writing a logline/query/pitch, preparing a submission, handling studio notes and rewrites, navigating options/credits/WGA/agents/net profits, choosing between film and television, or building a sustainable writing career.'
 ---
 
 # The Screenwriting Business & Career Strategy
@@ -219,3 +219,4 @@ Credits determine residuals, guild healthcare, and future quoting power:
 - [ ] Have multiple readers flagged the exact same beat?
 - [ ] Does your proposed revision solve the issue without breaking the downstream character arcs?
 - [ ] If replaced on the project, have you retained your writing sample and immediately begun developing your next original concept?
+

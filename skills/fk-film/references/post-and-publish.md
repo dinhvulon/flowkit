@@ -1,69 +1,47 @@
-# Hậu kỳ, đóng gói YouTube & chiến lược kênh
+# Hậu Kỳ Điện Ảnh, Đóng Gói YouTube & Chiến Lược Phát Hành
 
-> **Phim vs vlog (2026-10-19):** hậu kỳ và đóng gói áp cho phim; câu "đồng nhất để trông như footage của một máy" và SFX "vút" khi vật lướt qua ống kính là luật của vlog (xem [`vlog-archive.md`](vlog-archive.md)). Phim dựng theo `/video-editing` (Rule 66), `/fk-cinematic-transitions`, `/fk-sound-design`.
+> **Quy chuẩn `/fk-film`:** Đọc ở **Bước 10–11** của `SKILL.md`. Sau khi toàn bộ các cảnh đã được duyệt, upscale lên 1080p và xóa sạch watermark (`output/<slug>/1080/*_1080p_clean.mp4`), bắt buộc phối hợp bộ skill hậu kỳ và phát hành: **`/video-editing` (Rule 66)**, **`/fk-capcut-edit`**, **`/fk-cinematic-transitions`**, **`/fk-sound-design`**, **`/fk-concat`**, **`/fk-youtube-seo`**, **`/fk-thumbnail-guide`**, **`/fk-thumbnail`**, **`/fk-youtube-upload`**, và **`/fk-youtube-analytics`**.
 
-Đọc ở **Bước 10–11** của `SKILL.md`. Thay Bước 5–7 và mục 1b cũ.
+---
 
-## 1. Hậu kỳ — đồng nhất để trông như footage của một máy
-- **Cắt thẳng theo khung che** (`transitions.md`); jump cut khi đi bộ để nguyên. Nhịp dựng theo `story-engine.md` mục 13b.
-- **Nhạc + ambient liên tục** qua `/fk-gen-music` (nhạc cụ truyền thống của thời kỳ, không lời), mix dưới thoại; hạ nhạc ở cảnh nguy hiểm và cảnh kết, không tắt hẳn giữa scene.
-- **SFX nhẹ** ("vút") khi vật thể lướt qua ống kính; **J-cut** ambient scene sau vào sớm ~0.5s.
-- **Grade ấm, hoàng hôn ở cuối; thêm grain nhẹ** để đồng nhất các clip (clip AI sinh riêng lẻ thường lệch màu). Làm trong CapCut, hoặc ffmpeg trên file final, ví dụ:
-  ```bash
-  ffmpeg -i final.mp4 -vf "colorbalance=rs=0.03:bs=-0.03,noise=alls=5:allf=t" -c:a copy final_graded.mp4
-  ```
-  Thử trên một đoạn ngắn trước — grain quá tay làm mất cảm giác điện thoại.
-- **Chữ trên màn hình** chỉ 3 loại: năm, mission card, countdown `HOUR X — Y HOURS REMAINING` (`story-engine.md` mục 9). Render card đè lên hình bằng lệnh `drawtext` ở `cinematic-toolkit.md` §7 (không bumper nền đen, không fade).
-- **Mix & master âm thanh:** duck nhạc theo track clip, master −14 LUFS, SFX bổ sung, J-cut — lệnh ffmpeg đã test ở `cinematic-toolkit.md` §6–7.
-- Phụ đề tùy chọn, chỉ dạng `.srt` rời — **không** burn hardsub (`scripts/generate_subtitles.py --burn-subtitles` của luồng cinematic không áp dụng cho vlog).
-- **Bíp chửi thề**: phủ tiếng bíp ~0.3s tại mỗi mốc `bleep_at` trong Clip JSON (xem lại clip trước khi bíp vì model có thể lệch mốc vài trăm mili-giây).
+## 1. Dựng Hậu Kỳ & Hòa Âm Điện Ảnh (Bước 10)
 
-## 2. Đóng gói YouTube
-- `/fk-youtube-seo` — **3 tiêu đề chuẩn High-Stakes / Sinh tồn nghẹt thở**:
-  - *Option 1 (Nguy hiểm cận kề / Khuyên dùng)*: `I Time Travelled to [Year] — And Almost Got Trampled by a [Threat]`
-  - *Option 2 (Câu hỏi sinh tồn)*: `Would [People] Let You Into Their [Cave/Camp]? ([Year])`
-  - *Option 3 (Shock văn hóa & Nghịch lý)*: `What Happens When You Show a Lighter to [People]?`
-  - Tiêu đề nào cũng phải có tên tộc người cụ thể (`Neanderthals`, không phải `Ancient People`) hoặc niên đại. **Không dùng `I Survived 24 Hours`** (user bỏ 2026-10-06) — mốc 24 giờ chỉ dùng trong truyện.
-  - Ngôn ngữ SEO + thumbnail khớp ngôn ngữ thoại (CLAUDE.md Rule 20).
-  - Mô tả có **timestamp theo beat/hồi**, bộ tag chuẩn SEO, tuyệt đối không dùng tiêu đề hiền/giáo khoa.
-- `/fk-thumbnail` — Thumbnail High-Stakes: Mặt nhân vật hoảng loạn/adrenaline cực độ né mối nguy cận kề (chân voi ma mút giẫm, giáo chĩa, bão tuyết -40°C) + Text 2 dòng kích thích tò mò (Line 1: `ALMOST TRAMPLED!` / `-40°C SURVIVAL!` / `THEY SAW FIRE!`; Line 2: Địa điểm & Niên đại bằng tiếng Anh); 16:9 (long-form) hoặc 9:16 (Shorts).
-- **Bật nhãn "Altered or synthetic content"** trong YouTube Studio khi upload — `/fk-youtube-upload` hiện không tự đặt nhãn này, phải bật tay.
+1. **Dựng hình & Nhịp cắt (`/video-editing`, `/fk-capcut-edit`, `/fk-cinematic-transitions`)**:
+   - Cắt bỏ hoàn toàn khoảng chết (*dead air*) ở đầu và cuối mỗi clip AI.
+   - Đảm bảo nhịp thay đổi hình ảnh mỗi **3–5 giây** (kết hợp các cú `crisp hard cut` bên trong từng clip 8s/10s đã thiết kế từ Storyboard 2×2 và các điểm cắt nối cảnh).
+   - Áp dụng **J-cut / L-cut** (âm thanh cảnh sau vào sớm `0.3–0.5s` hoặc âm thanh cảnh trước ngân sang cảnh sau) để tạo dòng chảy điện ảnh mượt mà.
+   - Xây dựng **Intro Trailer Montage (15–30s đầu)** nếu làm phim dài trên YouTube theo quy chuẩn giữ chân người xem của `/fk-capcut-edit`.
+2. **Thiết kế âm thanh & Mastering (`/fk-sound-design`, `/fk-gen-music`)**:
+   - Tách bạch 3 lớp âm thanh: (1) Thoại nhân vật (`speech`) cộng hưởng với các câu `post_vo` (nếu có); (2) Foley & Ambient hiện trường (tiếng sóng vỗ, gỗ tàu cọt kẹt, kiếm chạm, đá lở); (3) Nhạc nền giao hưởng/nhạc cụ cổ điển theo thời kỳ (`/fk-gen-music`), tự động hạ âm lượng (*sidechain ducking*) khi có thoại.
+   - Chuẩn hóa âm lượng toàn phim đạt chuẩn phát sóng quốc tế **−14 LUFS** và giới hạn đỉnh **−1 dBTP**.
+3. **Đồng bộ màu sắc & Chất phim 35mm (`/fk-brand-logo`, `/fk-concat`)**:
+   - Phủ lớp color grade và hạt phim (*subtle 35mm film grain*) đồng nhất để xóa nhòa ranh giới màu sắc giữa các clip sinh rời:
+     ```bash
+     ffmpeg -i final_raw.mp4 -vf "colorbalance=rs=0.03:bs=-0.03,noise=alls=4:allf=t" -c:a copy final_graded.mp4
+     ```
+   - Xuất file phụ đề `.srt` rời chuẩn xác (không burn hardsub đè lên khung hình điện ảnh trừ khi User yêu cầu).
 
-## 3. Chiến lược "Mồi Thuật Toán" Sau Phát Hành (Algorithm Seeding)
-Đừng chỉ đăng 1 video dài rồi ngồi đợi phép màu. Hãy áp dụng **Quy trình 3 bước "Mồi Thuật Toán"** để đưa kênh mới thoát mức vài trăm view:
+---
 
-1. **Vũ khí YouTube Shorts (Kéo traffic mồi qua "Related Video")**:
-   - Cắt từ video dài ra **3 – 4 video Shorts (15–30s)** nhắm vào các cảnh giật gân nhất:
-     - **Short 1 (Food Viral):** Cảnh đập xương voi/nếm món ăn kỳ lạ của thời kỳ (Ẩm thực luôn viral mạnh nhất).
-     - **Short 2 (Adrenaline Chase):** Cảnh rượt đuổi nghẹt thở, voi ma mút/quái thú tấn công, chạy tháo thân trong bão tuyết.
-     - **Short 3 (Prehistoric Lifehack):** Kỹ thuật sinh tồn kỳ lạ (đun sôi nước bằng đá nung đỏ, may áo ấm -40°C).
-   - **Gắn tính năng "Related Video" trong YouTube Studio**: Để người xem Short bấm 1 chạm chuyển thẳng sang xem full video dài 7.5–10 phút. Shorts sẽ dễ dàng đạt vài nghìn đến vài chục nghìn view, từ đó "bơm" khán giả thật sang video dài.
-2. **Kiểm tra 2 chỉ số sống còn sau 48h**:
-   - **CTR (Click-Through Rate):** Phải $\ge 6\%$. Nếu dưới $4\%$, đổi gói theo `/fk-youtube-analytics` Bước 3: mỗi lần chỉ đổi 1 biến — bộ Thumbnail dự phòng trước, Title Option khác (Option 1/2/3) sau, đo lại sau ≥ 48h.
-   - **Giữ chân 30s:** Tỷ lệ người xem còn ở giây 30 phải $\ge 60\%$. (AVD — thời lượng xem trung bình — là chỉ số riêng; xem `/fk-youtube-analytics`.)
-3. **Giữ nhịp phát hành 2 tuần/video**:
-   - Đừng để kênh "ngủ đông" 1 tháng. Hãy duy trì đều đặn: **2 tuần = 1 video dài (7–10 phút) + 4 Shorts xen kẽ** (mỗi tuần 2 Shorts cắt từ video dài đó) để thuật toán YouTube ghi nhận kênh đang hoạt động tích cực.
+## 2. Đóng Gói YouTube — Tiêu Đề, Thumbnail & SEO (Bước 1.5 & Bước 11)
 
-## 4. Chọn chủ đề: săn trend đang lên (mục 1b cũ)
+- **Chốt Gói Mở Đầu Trước Khi Viết Kịch Bản (Bước 1.5 — `/fk-scriptwriter` §G2 & `/fk-thumbnail-guide`)**:
+  - 3 phương án Tiêu đề + 4 phương án Thumbnail + Câu mở đầu 5 giây + Lời hứa 30 giây đã được chốt từ tiền kỳ phải khớp 100% với thành phẩm cuối cùng.
+- **Ngôn ngữ đồng nhất (Rule 20)**:
+  - Toàn bộ metadata (`/fk-youtube-seo`) và chữ trên Thumbnail (`/fk-thumbnail`) phải khớp 100% với ngôn ngữ thoại/kịch bản của bộ phim.
+- **Thiết kế Thumbnail Điện Ảnh High-Stakes (`/fk-thumbnail-guide`, `/fk-thumbnail`)**:
+  - Bố cục 3 điểm: Biểu cảm nhân vật chính sắc nét trước hiểm nguy khổng lồ (quái thú biển, cổng đá sập, bão lửa) + Tương phản màu sắc mạnh + Text ngắn gọn 2–4 từ gợi sự tò mò tột độ.
+  - Xuất bản 16:9 cho video dài và 9:16 cho Shorts.
+- **Nhãn nội dung AI trên YouTube Studio**:
+  - Bật nhãn *"Altered or synthetic content"* khi đăng tải qua `/fk-youtube-upload` / YouTube Studio.
 
-Để kéo kênh mới từ vài trăm view lên hàng chục nghìn đến hàng triệu view, bắt buộc phải chọn các chủ đề có sức hút tự nhiên cực mạnh (**High-Stakes & Tò mò tột độ**):
+---
 
-1. **Nhóm 1: Sự kiện thảm họa lịch sử có thật (CTR cao nhất)**:
-   - Khán giả thế giới bị ám ảnh bởi việc "nhân vật cầm điện thoại livestream trực tiếp thảm họa":
-   - **Đắm tàu Titanic (1912):** Thử cảnh báo thuyền trưởng về tảng băng trôi (video của Chloe đạt 4.3M view chính nhờ motif này).
-   - **Núi lửa Vesuvius chôn vùi Pompeii (79 SCN):** Livestream lúc bầu trời chuyển sang màu đen và tro bụi nóng 500°C đổ ập xuống.
-   - **Thảm họa hạt nhân Chernobyl (1986):** Vlogger vô tình bước vào Pripyat đúng lúc còi báo động phát nổ.
-   - **Đại dịch Cái Chết Đen (Black Death - Châu Âu 1348):** Bác sĩ mỏ chim và sự hoang tàn nghẹt thở của thành phố.
-   *(Khớp với Title Option 1: Nguy hiểm cận kề & Thumbnail V1: Immediate Peril / V4: Sprint for Life)*
+## 3. Chiến Lược Phát Hành Đa Kênh & Chẩn Đoán Sau Đăng (`/fk-youtube-analytics`)
 
-2. **Nhóm 2: "Văn hóa hiện đại va chạm cổ đại" (Modern Shock / Bị coi là phù thủy)**:
-   - Tạo xung đột kịch tính giữa công nghệ hiện đại và sự mê tín / tàn bạo thời xưa:
-   - **Phiên tòa xử phù thủy Salem (Salem Witch Trials 1692):** Cầm iPhone chụp ảnh và bị cả làng vây bắt đòi thiêu sống.
-   - **Ghé thăm Đấu trường La Mã (Rome 80 SCN):** Ngày khánh thành Colosseum, bị đẩy xuống đấu với giác đấu sĩ.
-   - **Thời đại Viking (Scandinavia 870 SCN):** Lạc vào đại sảnh của các chiến binh Viking cuồng nộ.
-   *(Khớp với Title Option 3: Shock văn hóa & Thumbnail V3: Culture Shock / Standoff)*
-
-3. **Nhóm 3: Newsjacking & Ăn theo Hollywood (Bơm traffic tự nhiên cho kênh mới)**:
-   - Đón đầu các dự án phim sắp chiếu hoặc sự kiện truyền thông: Khi phim tài liệu/bom tấn về La Mã, Ai Cập hay Chiến tranh ra rạp, lượng tìm kiếm tăng vọt hàng trăm lần. Bạn ra video cùng chủ đề ngay trước ngày công chiếu để đón đầu dòng người tìm kiếm.
-   - *Ví dụ:* Phim *Gladiator 2* ➔ Video *Rome 80 AD (Colosseum)*; Phim về Napoleon ➔ Video *Waterloo 1815*; Khám phá mộ cổ Ai Cập ➔ Video *Giza 2400 BC*.
-   *(Khớp với Title Option 2: Câu hỏi sinh tồn)*
+1. **Cắt 3–4 YouTube Shorts (9:16, 15–35s) kéo traffic mồi (`/video-editing` + `/fk-capcut-edit`)**:
+   - Trích xuất các phân đoạn cao trào nhất từ bộ phim (cảnh phát hiện sinh vật kỳ dị, cảnh vượt cạm bẫy sinh tử, cảnh đối đầu quái thú) sang khung dọc 9:16 có tiêu điểm thông minh (*smart reframe*).
+   - Gắn liên kết **Related Video** trong YouTube Studio trỏ trực tiếp về bộ phim dài.
+2. **Kiểm toán chỉ số sau 48 giờ và 7 ngày (`/fk-youtube-analytics`)**:
+   - Theo dõi 3 chỉ số cốt lõi: **CTR** (mục tiêu $\ge 6\%$), **Giữ chân 30s đầu** (mục tiêu $\ge 65\%$), và **AVD** (thời lượng xem trung bình).
+   - Nếu CTR thấp hơn kỳ vọng: áp dụng quy tắc **đổi 1 biến mỗi lần** (thay phương án Thumbnail dự phòng trước, theo dõi 48h rồi mới đổi phương án Tiêu đề).

@@ -1,6 +1,6 @@
 ---
 name: sw-scene-craft
-description: Scene and sequence craft — merged from Robert McKee's scene design and five-step scene analysis (value turn, beats, text/subtext, turning points, pacing, image systems), McKee's Dialogue scene types (balanced, comic, asymmetric, indirect, reflexive, minimal), Syd Field's sequence and scene elements, Neill Hicks (less is more, enter late leave early, narrative momentum), Richard Walter (action over talk, magnifying small gestures, avoiding static tropes, alternative locations), Wendy Henson (action paragraphs, transitions, story-doing), Julian Hoxter (scene beats, objectives and tactics), Mei Feng's value test, and classic dramatic craft (suspense, delay, dramatic intrigue, precision props, meaningful settings). Use when writing or fixing a single scene, selecting a location, constructing a sequence, planting a prop or detail, orchestrating suspense, cutting scenes where "nothing happens", or turning talk into cinematic action.
+description: 'Scene and sequence craft — merged from Robert McKee''s scene design and five-step scene analysis (value turn, beats, text/subtext, turning points, pacing, image systems), McKee''s Dialogue scene types (balanced, comic, asymmetric, indirect, reflexive, minimal), Syd Field''s sequence and scene elements, Neill Hicks (less is more, enter late leave early, narrative momentum), Richard Walter (action over talk, magnifying small gestures, avoiding static tropes, alternative locations), Wendy Henson (action paragraphs, transitions, story-doing), Julian Hoxter (scene beats, objectives and tactics), Mei Feng''s value test, and classic dramatic craft (suspense, delay, dramatic intrigue, precision props, meaningful settings). Use when writing or fixing a single scene, selecting a location, constructing a sequence, planting a prop or detail, orchestrating suspense, cutting scenes where "nothing happens", or turning talk into cinematic action.'
 ---
 
 # Scene & Sequence Craft (sw-scene-craft)
@@ -190,3 +190,4 @@ A scene is both the smallest expressive unit of dramatic storytelling and a mini
 7. **Cut the Margins:** Shave the entrance to the threshold of conflict; set the exit immediately after the value turn.
 8. **Draft the Action Lines:** Use vivid present-tense verbs, concrete nouns, and eliminate screenwriting clichés ("we see", "begins to").
 9. **Run the Diagnostic Audit:** Verify that the scene turns, contains authentic conflict, and leaves an indelible visual impression.
+

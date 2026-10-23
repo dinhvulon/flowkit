@@ -1,6 +1,6 @@
 ---
 name: sw-workflow
-description: Project orchestrator for the screenwriting skill set (Workflow Scheduling, State Management, and Story Bible) — a meta-skill that routes a screenplay, stage-play, or narrative film project through progressive creative stages (premise → structure → character → scenes → draft → revision → submission) and TV/streaming series projects through a dedicated series stage pipeline (engine → character web & season arc → bible → pilot structure → breaking story & outline → draft → pitch package). Names which sw-* skill to invoke at each milestone, defines deliverables and advisory exit gates, and preserves all project state in story-bible.md across sessions. Use when starting a new script project, resuming an existing one, deciding "what to do next", or coordinating the entire screenwriting suite.
+description: 'Project orchestrator for the screenwriting skill set (Workflow Scheduling, State Management, and Story Bible) — a meta-skill that routes a screenplay, stage-play, or narrative film project through progressive creative stages (premise → structure → character → scenes → draft → revision → submission) and TV/streaming series projects through a dedicated series stage pipeline (engine → character web & season arc → bible → pilot structure → breaking story & outline → draft → pitch package). Names which sw-* skill to invoke at each milestone, defines deliverables and advisory exit gates, and preserves all project state in story-bible.md across sessions. Use when starting a new script project, resuming an existing one, deciding "what to do next", or coordinating the entire screenwriting suite.'
 ---
 
 # Screenwriting Project Orchestrator & Story Bible (sw-workflow)
@@ -125,3 +125,4 @@ You do not need to re-read every skill file in its entirety before taking action
 3. Is `story-bible.md` concise, readable, and free of sprawling scratchpad debates?
 4. Have all foundational pivots (premise, character, ending changes) been recorded in the Decision Log?
 5. Does the session conclude with a single, unambiguous Next Step?
+

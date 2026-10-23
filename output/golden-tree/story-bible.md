@@ -1,95 +1,45 @@
-# Story Bible: Pirates of the Golden Tree (Hải Tặc Cây Vàng: Bản Đồ Bụng Cá)
+# STORY BIBLE: PIRATES OF THE GOLDEN TREE
 
-- **Package:** They Found an Ancient Gold Map Inside a Leviathan's Belly · Close-up of Captain Nora splitting open the glowing belly of an abyssal predator fish under lantern light · Follow a crew of rogue seafarers through clashing seas and siren waters to unlock the Golden Tree—only to discover the map is a lethal trap.
-> **Dự án:** Golden Tree (Slug: `golden-tree`)  
-> **Thời lượng chuẩn:** **21 phút 00 giây** (Đúng **1,260 giây** | 154 Phân cảnh chuẩn điện ảnh)  
-> **Định dạng:** Phim điện ảnh ngắn ngôi thứ ba (Third-person Cinematic Narrative Film)  
-> **Phong cách:** Dark Fantasy / Mythological Adventure (Hy Lạp cổ kết hợp Hải tặc đại dương viễn chinh)  
-> **Ngôn ngữ thoại:** English (Cinematic Period English)  
-> **Tỉ lệ khung hình:** 16:9 HORIZONTAL  
-> **Material:** `realistic`, `35mm film, cinematic documentary realism`, Panavision Anamorphic Lens, Cinematic Teal & Orange, Dark Chiaroscuro  
-
----
-
-## 1. Premise & Theme (Tiền Đề & Chủ Đề Cốt Lõi — `/sw-premise-theme`)
-
-### 1.1. Premise (Tiền đề kịch tính)
-Khi tìm thấy một tấm bản đồ vô hình phát quang giấu trong bụng con cá dị dạng giữa đại dương mù sương, **Nữ Thuyền trưởng Nora** dẫn dắt thủy thủ đoàn dấn thân vào hành trình 21 phút vượt qua eo biển vách đá nghiền và tiếng hát Sirens chết chóc để tìm kiếm Điện Thờ Cây Vàng huyền thoại. Nhưng khi đặt chân lên hòn đảo đá vôi mê cung, cô đối mặt với sự thật: tấm bản đồ ma thuật thực chất là chiếc bẫy dẫn tới cái chết nếu thiếu đi tri thức thực địa và sự đồng lòng của con người.
-
-### 1.2. Controlling Idea (Ý niệm định hướng — Robert McKee)
-* **Ý niệm tích cực:** Sự sống sót và vinh quang chân chính chỉ đạt được khi người thủ lĩnh đặt mạng sống đồng đội và tri thức thực tế lên trên lòng tham mù quáng trước ảo mộng kho báu ma thuật.
-* **Ý niệm phản đề:** Lòng tham bảo vật ma thuật làm tha hóa lý trí, khiến con người mù quáng bước vào cạm bẫy diệt vong.
-
-### 1.3. Dramatic Conflict (Xung đột kịch tính — Egri & Truby)
-* **Xung đột nội tại (Inner Conflict):** Nora khao khát chứng minh quyền uy thủ lĩnh hải tặc và tìm ra vùng đất tự do cho đoàn thủy thủ, nhưng bị giằng xé giữa việc tin vào phép màu ma thuật hay dựa vào trực giác và tính mạng con người.
-* **Xung đột giữa các cá nhân (Interpersonal Conflict):** Nora vs. Castor (sự hoài nghi lý tính, tranh cãi gay gắt về lộ trình) và Nora vs. Theron (sự cảnh giác ban đầu trước lời cảnh báo của kẻ sống sót hoang dại).
-* **Xung đột ngoại cảnh (Extra-personal Conflict):** Thủy thủ đoàn vs. Sự tàn khốc của thiên nhiên (Vách đá nghiền Clashing Rocks), Ma thuật biển sâu (Sirens), và Quái vật Chitin Labyrinth trong mê cung đá ngầm.
+## 0. Operational Status (sw-workflow)
+- **Current Stage:** Stage 6 — Master Screenplay & JSON Prompt Lock (`154 scenes` 100% synced across `script_*.md`, `prompts_*.json`, and `flow_agent.db`)
+- **Format:** 21-Minute Narrative Featurette (`154 scenes = 21m 00s`)
+- **Visual Style:** Live-Action Historical Dark Fantasy / Mythic Maritime Adventure (`realistic` material, 35mm ARRI Alexa + Cooke S4 Primes, f/8 deep focus, chiaroscuro practical lighting)
+- **Locked Decisions:**
+  1. **154 Canonical Scenes across 5 Files:** Act I (`SC-01..SC-30`), Act II-A (`SC-31..SC-84`), Midpoint (`SC-85..SC-96`), Act II-B (`SC-97..SC-122`), Act III (`SC-123..SC-154`).
+  2. **Pure Storyboard 2×2 Architecture (`SF = G`, Rule 65 & Rule 69):** All 154 scenes use `SF = G` (4-panel 2×2 Storyboard at `0s, 3s, 6s, 8s`). All 8 former `PREV_LAST_FRAME` scenes in Act I (`SC-03, SC-10, SC-14, SC-18, SC-19, SC-20, SC-24, SC-25`) have been converted to `SF = G` with full 2×2 Storyboard prompts.
+  3. **Point-Then-Reveal & Unobstructed Facial Acting Lock (Rule 74(6)):** Pointing gestures last `1.0–1.5s` into empty space/fog in Shot 1 (`0-3s`) before lowering the hand, and the target is only revealed after a Hard Cut in the subsequent shot (`SC-02`). Characters never cover their faces or press hands to cheeks; dread is shown via unobstructed facial micro-expressions and white-knuckled hands gripping physical props.
+  4. **Dialogue Economy (`sw-dialogue` + Rule 67):** All 86 overly long dialogue lines (`20–25 words`) across Acts I–III have been tightened to crisp, subtext-rich `10–14 word` verbal actions finishing cleanly by `5.0s–6.0s`.
 
 ---
 
-## 2. Character Web & Casting (Mạng Lưới Nhân Vật — Bước 3)
+## 1. Premise, Theme & Truby Designing Principle (`sw-premise-theme` + `sw-truby-anatomy`)
 
-| Nhân vật | Vai trò | Tuổi / Giới | Thiết kế Visual & Nhận diện | Voice ID (`voice-bible.md`) | Chức năng kịch tính |
-| :--- | :--- | :--- | :--- | :--- | :--- |
-| **Nora** | **Thuyền trưởng / Người hùng trung tâm (The Leader)** | 26 / Nữ | Nữ hải tặc da dẻ rám nắng, mặt trái tim, mắt xanh lục bảo (hazel-green), tàn nhang tự nhiên ngang sống mũi, tóc đỏ đồng (copper-red) tết lọn hải tặc phong trần. Áo tunic xanh thẫm, giáp ngực da thuộc nẹp đồng cổ, thắt lưng da dắt đoản kiếm Hy Lạp. | `kore` (Firm, confident, determined leader) | Ra quyết định sinh tử; giữ vững lời thề "Không bỏ lại ai". |
-| **Theron** | **Người dẫn đường / Kẻ sống sót (The Stranded Guide)** | 58 / Nam | Lão hoa tiêu mắc kẹt tại hẻm đá. Râu tóc bạc phơ xơ xác, áo choàng vải thô rách tơi tả dính bụi đá vôi xám, mắt thâm quầng đói khát nhưng sắc sảo. Cầm mảnh đá khắc cổ tự. | `sadaltager` (Knowledgeable, weathered elder) | Giải mã cơ chế bẫy của bản đồ ma thuật; dẫn đường qua mê cung ngầm. |
-| **Heracles** | **Chiến binh khổng lồ (The Behemoth)** | 35 / Nam | Cơ bắp cuồn cuộn như đá tảng, râu quai nón dày rậm, giáp vai da sư tử biển, mang thắt lưng sắt to bản. Vết sẹo dài dọc cánh tay gân guốc. | `algenib` (Gravelly, deep, resonant) | Giải quyết chướng ngại vật lý quy mô lớn (vần tảng đá, kéo tàu vượt cạn). |
-| **Castor** | **Chiến binh mưu lược (The Tactician)** | 29 / Nam | Gương mặt góc cạnh sắc lạnh, tóc đen cắt ngắn, trang phục giáp da nhẹ gọn ghẽ, đeo bao cung tên và thắt lưng nhiều dao găm. | `alnilam` (Firm, skeptical, sharp) | Phản biện chiến thuật, chất vấn tính xác thực của bản đồ ma thuật. |
-| **Lão Ngư Dân** | **Sứ giả khởi đầu (The Herald)** | 65 / Nam | Thuyền đánh cá nhỏ trong sương. Da dẻ nhăn nheo cháy nắng, ôm bọc cá phát quang trong nỗi kinh hoàng tột độ. | `enceladus` (Breathy, trembling, lower) | Khởi phát biến cố (Inciting Incident), hé lộ bí mật về bụng con cá dị dạng. |
-| **Quái vật Labyrinth** | **Sinh vật săn mồi / Kẻ gác đền (Antagonist Beast)** | Sinh vật | Quái thú lai giữa bọ cạp khổng lồ và bò sát tiền sử, lớp vỏ chitin màu than đen gồ ghề gai nhọn, mắt phát quang vàng đục, đuôi gai quét nát đá vôi. | *Không voice — Sound Design SFX gầm rít chấn động* | Mối đe dọa sinh tử truy sát trong hẻm hẹp; thử thách lòng dũng cảm. |
+- **Title:** *Pirates of the Golden Tree* (*Hải Tặc Cây Vàng*)
+- **Genre Mix (`sw-genre-anatomy`):** Primary: **Mythic Odyssey / Action-Adventure**; Secondary: **Maritime Folk Horror** + **Survival Crucible**.
+- **Logline:** When a terrified castaway drifts out of the Aegean night fog with a colossal bioluminescent deep-sea Coelacanth hiding a salt-activated sheepskin map inside its gut, Captain Nora leads her pirate crew through crushing basalt rocks, a forty-ton overland portage, abyssal sirens, and a chitinous karst predator—only to discover that the map is a lethal lure and the Golden Tree turns greedy thieves into solid gold statues.
+- **Egri Premise (`Character Trait + Conflict → Climax`):** Blind greed turns men into gilded corpses, whereas mastering desire and choosing sworn brotherhood leads to true freedom.
+- **McKee Controlling Idea (`Value + Cause`):** True wealth and survival are won when a captain and crew reject the cursed gold of the sanctuary and value the living brothers at their side above treasure.
+- **Truby Designing Principle:** *An Homeric voyage from open sea fog into the subterranean heart of a karst island where every trial tests physical endurance first and spiritual greed last, culminating in a tree whose gold can only be received as a single freely fallen leaf, never taken by iron blades.*
 
 ---
 
-## 3. Cấu Trúc 5 Hồi Điện Ảnh 21 Phút (Story Structure — 1,260 Giây)
+## 2. Four-Corner Opposition & Character Orchestration (`sw-truby-anatomy` §6 + `sw-character-conflict`)
 
-```mermaid
-flowchart TD
-    subgraph Act1["HỒI 1: TẤM BẢN ĐỒ BỤNG CÁ (00:00 - 04:00 | 240s | 30 Scenes)"]
-    A1["Biển mù sương: Chặn chiếc thuyền đánh cá kỳ lạ"] --> A2["Mổ bụng cá phát quang: Tờ da dê trắng muốt"]
-    A2 --> A3["Nora chạm nước biển: Bản đồ ma thuật hiện hình Cây Vàng"]
-    end
-
-    subgraph Act2A["HỒI 2A: THỬ THÁCH BIỂN SÂU (04:00 - 11:30 | 450s | 54 Scenes)"]
-    B1["Vách đá nghiền Clashing Rocks: Sóng thần gầm rú"] --> B2["Kéo tàu vượt bãi cạn bằng trục gỗ: Heracles ghì dây thừng"]
-    B2 --> B3["Vực nước xanh ngọc: Tiếng hát Siren thôi miên"]
-    B3 --> B4["Nora chém đứt móng vuốt Siren, kéo đồng đội lên boong"]
-    end
-
-    subgraph Midpoint["BƯỚC NGOẶT TRUNG TÂM (11:30 - 13:00 | 90s | 12 Scenes)"]
-    M1["Đặt chân lên Hòn đảo Karst xám xịt không lối mòn"] --> M2["Bản đồ ma thuật chỉ vào vách đá chết - Castor nổi giận"]
-    M2 --> M3["Tiếng kêu cứu trong khe đá sạt lở"]
-    M3 --> M4["Nora cứu Theron: Theron vạch trần bản đồ là mồi nhử"]
-    end
-
-    subgraph Act2B["HỒI 2B: MÊ CUNG & BẪY QUÁI VẬT (13:00 - 16:30 | 210s | 26 Scenes)"]
-    C1["Theron dẫn đoàn luồn qua hẻm nứt đá vôi ngột ngạt"] --> C2["Quái vật Chitin Labyrinth gầm rú truy đuổi gắt gao"]
-    C2 --> C3["Nora dùng bản đồ làm mồi nhử, kích hoạt bẫy sập đá đè bẹp quái thú"]
-    end
-
-    subgraph Act3["HỒI 3: ĐIỆN THỜ CÂY VÀNG & TỰ DO (16:30 - 21:00 | 270s | 32 Scenes)"]
-    D1["Giếng trời ngầm khổng lồ: Cây Vàng rực rỡ tráng lệ"] --> D2["Bụi sáng Golden Embers trôi nổi - Lời nguyền lòng tham"]
-    D2 --> D3["Nora chỉ lấy một nhành lá làm chứng tích, từ chối tham lam"]
-    D3 --> D4["Giương buồm trở về đại dương mênh mông tự do (21:00)"]
-    end
-
-    Act1 --> Act2A
-    Act2A --> Midpoint
-    Midpoint --> Act2B
-    Act2B --> Act3
-```
+| Corner | Character / Entity & Ref | Voice ID (`speech.voices`) | Core Value Set (+ / -) | Role in the Moral & Physical Crucible |
+|---|---|---|---|---|
+| **Corner 1: Hero** | **Captain Nora** (`{{ref:Nora}}`, `{{ref:Nora Body Seafarer}}`) | `kore` (Firm, commanding, clipped maritime authority) | **Visionary Leadership (+)** / **Relentless Obsession (-)** | Pushes her crew through impossible physical barriers (`Clashing Rocks`, `Overland Portage`), then awakens to place her crew's souls above gold in Act III. |
+| **Corner 2: Ideological Foil & Skeptic** | **Castor** (`{{ref:Castor}}`) & **Heracles** (`{{ref:Heracles}}`) | Castor: `fenrir` (Deep, sharp)<br>Heracles: `puck` (Gravelly, booming) | **Brotherhood & Pragmatism (+)** / **Temptation of Greed (-)** | Castor challenges Nora's risky route in Act I–II, then falls under the Golden Tree's temptation in Act III (`SC-128`) until Nora and Theron pull him back. |
+| **Corner 3: Harbingers of Truth** | **Old Fisherman** (`{{ref:Old Fisherman}}`) & **Theron** (`{{ref:Theron}}`) | Old Fisherman: `charon`<br>Theron: `charon` | **Ancient Wisdom & Humility (+)** / **Haunted Trauma (-)** | Old Fisherman delivers the opening prophecy (`SC-06..10`); Theron (58yo stranded navigator hermit rescued at Midpoint `SC-89..96`) exposes the map as a predator's bait and guides them through the Karst Labyrinth. |
+| **Corner 4: Monstrous Nature & Deception** | **Omen Fish** (`{{ref:Omen Fish}}`), **Abyssal Siren** (`{{ref:Abyssal Siren}}`), **Labyrinth Beast** (`{{ref:Labyrinth Beast}}`) | Siren: `kore` (Hypnotic whisper) | **Sacred Natural Order (+)** / **Predatory Annihilation (-)** | Physical embodiments of the island's defense system: the `1.8m, 80kg` Coelacanth bait-carrier, the deceptive Sirens of the basin, and the `6m, 3.5-ton` Karst Chitin Prowler. |
 
 ---
 
-## 4. Visual Language & Cinematography (Mỹ Thuật Điện Ảnh — Rule 42, 57, 61)
+## 3. Master Structural Map across the 5 Screenplay Files (`SC-01` → `SC-154`)
 
-1. **Third-Person Cinematic Camera:**
-   * Góc máy người quan sát vô hình (Objective 3rd-person observer). Tuyệt đối không có góc nhìn selfie, không cầm máy, không phá vỡ bức tường thứ 4.
-   * Cỡ cảnh biến hóa theo kịch tính: Wide Establishing Shot mở đầu hòn đảo -> Low-angle Hero Shot tôn vinh khí chất thuyền trưởng của Nora -> Shaky Handheld bám sát bước chân chạy trốn quái thú -> Slow Push-in lộng lẫy trước Điện Thờ Cây Vàng.
-
-2. **Bảng màu & Xử lý Ánh Sáng (Teal & Orange + Dark Chiaroscuro):**
-   * *Ngoại cảnh biển đêm & hẻm đá Karst:* Xanh biển thẫm (Deep Navy), Xám đá ướt (Charcoal Slate), Xanh mòng két (Teal) lạnh lẽo u uất.
-   * *Điểm nhấn ma thuật & Cây Vàng:* Ánh sáng hổ phách (Warm Amber), Vàng kim rực rỡ (Molten Gold), Hạt bụi sáng trôi nổi (Golden Embers), Phát quang sinh học (Bioluminescent Cyan).
-   * *Kỹ thuật chiếu sáng (Rule 61, 62):* Nguồn sáng thực tế có động cơ trong khung cảnh (Motivated practical light từ ngọn đèn bão, đèn lồng dầu bập bùng); ánh trăng tự nhiên chiếu qua vòm đá giếng trời (natural overcast diffuse moonlight); ánh sáng phát quang nhẹ từ da cá và cây vàng; TUYỆT ĐỐI CẤM tia nắng đồ họa máy tính (zero god rays, zero volumetric beams) và CẤM đèn viền studio giả tạo (zero rim lighting, zero studio backlight).
-
-3. **Chống CGI & Tính Thực Tế Vật Lý (Rule 57, 59):**
-   * Kết cấu vật liệu thô ráp, chân thực: da thú mòn xước, sớ gỗ sồi ẩm mục của thân tàu, vảy cá ướt nhớt lấp lánh phản chiếu ngọn đèn dầu, bụi đá vôi tung bay khi quái thú va chạm vách núi.
+| File | Scenes | BS2 / Truby Structural Beats | Core Dramatic Sequence & Value Turn |
+|---|---|---|---|
+| **[script_act1.md](file:///c:/flowkit/output/golden-tree/script_act1.md)** | `SC-01..SC-30`<br>(30 scenes) | **1. Opening Image, 2. Theme Stated, 3. Set-Up, 4. Catalyst, 5. Debate, 6. Break into Two** | Intercepting the drifting skiff in the fog (`SC-01..05`); the Old Fisherman's warning & uncovering the `1.8m, 80kg` Omen Fish (`SC-06..11`); dissecting the fish in the cabin to extract the blank sheepskin & activating the glowing gold salt-ink (`SC-12..23`); charging into the Clashing Rocks (`SC-24..30`). |
+| **[script_act2a.md](file:///c:/flowkit/output/golden-tree/script_act2a.md)** | `SC-31..SC-84`<br>(54 scenes) | **7. B-Story & 8. Fun and Games (Set Pieces 1 & 2)** | Surviving the Clashing Rocks with cracked oak ribs (`SC-31..36`); hauling the 40-ton warship overland across the gravel spit on greased pine rollers (`SC-37..59`); crossing the dead basin and battling the **Abyssal Sirens** with beeswax, fire arrows, and burning oil (`SC-60..84`). |
+| **[script_midpoint.md](file:///c:/flowkit/output/golden-tree/script_midpoint.md)** | `SC-85..SC-96`<br>(12 scenes) | **9. Midpoint & First Major Revelation** | Blocked by a blind limestone karst wall (`SC-85..87`), the crew rescues the stranded 58-year-old navigator **Theron** (`SC-88..92`), who reveals that the glowing golden parchment is not a chart—it is a bioluminescent hunting lure (`SC-93..96`). |
+| **[script_act2b.md](file:///c:/flowkit/output/golden-tree/script_act2b.md)** | `SC-97..SC-122`<br>(26 scenes) | **10. Bad Guys Close In, 11. All Is Lost, 12. Dark Night, 13. Break into Three** | Stalked through the silent moss labyrinth by the `6m` **Karst Chitin Prowler (`Labyrinth Beast`)** (`SC-97..105`); Nora uses the glowing map itself as bait to lure the monster beneath a 20-ton cracked keystone and crush it (`SC-106..115`); with the map's glamour dead, they follow Theron's human wisdom into the Sanctum (`SC-116..122`). |
+| **[script_act3.md](file:///c:/flowkit/output/golden-tree/script_act3.md)** | `SC-123..SC-154`<br>(32 scenes) | **14. Finale, 20. Self-Revelation, 21. Moral Decision, 15. Final Image** | Entering the subterranean cathedral of the **Golden Tree** (`SC-123..127`); Castor is tempted to hack a golden root (`SC-128`), but Theron and Nora reveal the **Golden Wraiths**—pirate skeletons turned to solid gold (`SC-129..134`); receiving a single freely fallen golden leaf, welcoming Theron as navigator, and sailing into the golden dawn (`SC-135..154`). |

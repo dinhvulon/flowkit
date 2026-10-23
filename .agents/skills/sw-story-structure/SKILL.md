@@ -1,6 +1,6 @@
 ---
 name: sw-story-structure
-description: Story structure for screenplays and stage plays — merged from Syd Field's paradigm and plot points, Blake Snyder's Save the Cat beat sheet and board, Robert McKee's Story (event/scene/sequence/act, inciting incident, progressive complications, crisis-climax-resolution, subplots, story triangle), Julian Hoxter's nine-beat model, Neill Hicks' three acts as attraction/anticipation/satisfaction, and classic dramatic architecture (fast entry, clear line of action, high climax, smooth transitions, decisive endings, constant variation). Use when outlining a script, placing plot points and midpoint, fixing a saggy second act, designing an opening or ending, diagnosing "nothing happens", choosing between linear and non-linear designs, or converting a premise into beats and index cards.
+description: 'Story structure for screenplays and stage plays — merged from Syd Field''s paradigm and plot points, Blake Snyder''s Save the Cat beat sheet and board, Robert McKee''s Story (event/scene/sequence/act, inciting incident, progressive complications, crisis-climax-resolution, subplots, story triangle), Julian Hoxter''s nine-beat model, Neill Hicks'' three acts as attraction/anticipation/satisfaction, and classic dramatic architecture (fast entry, clear line of action, high climax, smooth transitions, decisive endings, constant variation). Use when outlining a script, placing plot points and midpoint, fixing a saggy second act, designing an opening or ending, diagnosing "nothing happens", choosing between linear and non-linear designs, or converting a premise into beats and index cards.'
 ---
 
 # Story Structure (sw-story-structure)
@@ -250,3 +250,4 @@ Standard 110-page feature grid:
 10. **First Draft (Pages):** Write forward with momentum without self-censoring; prioritize scene conflict and behavioral reality.
 11. **Subtractive Compression:** Tighten dialogue, trim late entrances and early exits, eliminate redundant scenes.
 12. **Targeted Polish:** Execute passes for distinct character voice, subtext enhancement, visual metaphors, and pacing rhythm.
+

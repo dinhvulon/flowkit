@@ -1,6 +1,6 @@
 ---
 name: sw-format-adaptation
-description: Screenplay format, page craft, the writing process, and adaptation — merged from Wendy Henson (spec format rules), Richard Walter (page craft, revision discipline), Neill Hicks (selling vs. shooting scripts, draft progression), Syd Field (master scene technique, card method, adaptation as original work), Robert McKee (step outline → treatment → screenplay), Julian Hoxter (format elements, adaptation four questions), Diamond & Weissman (one-page nine-step), and Eric Bork (60/30/10 rule) — including typography standards, element conventions (V.O./O.S., MORE/CONT'D, dual dialogue), the Fountain machine-writable output contract, and international formatting conventions. Use when formatting a spec script, choosing output file types, writing clean action lines, planning draft pipelines, cutting pages, adapting external IP or true stories, or preparing a submission-ready draft.
+description: 'Screenplay format, page craft, the writing process, and adaptation — merged from Wendy Henson (spec format rules), Richard Walter (page craft, revision discipline), Neill Hicks (selling vs. shooting scripts, draft progression), Syd Field (master scene technique, card method, adaptation as original work), Robert McKee (step outline → treatment → screenplay), Julian Hoxter (format elements, adaptation four questions), Diamond & Weissman (one-page nine-step), and Eric Bork (60/30/10 rule) — including typography standards, element conventions (V.O./O.S., MORE/CONT''D, dual dialogue), the Fountain machine-writable output contract, and international formatting conventions. Use when formatting a spec script, choosing output file types, writing clean action lines, planning draft pipelines, cutting pages, adapting external IP or true stories, or preparing a submission-ready draft.'
 ---
 
 # Screenplay Format, Process & Adaptation (sw-format-adaptation)
@@ -177,3 +177,4 @@ The primary plain-text format for automated generation and script versioning is 
 6. **Subtractive Compression Pass:** Trim 10–15% of page fat by tightening prose, eliminating throat-clearing scene starts, and cutting repetitive beats.
 7. **Targeted Polish Passes:** Run dedicated audits for character voice distinctiveness, visual subtext, and strict format compliance.
 8. **Final Packaging:** Compile cleanly into standard industry PDF with minimalist title page.
+

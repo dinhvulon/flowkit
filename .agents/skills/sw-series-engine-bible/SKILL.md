@@ -1,6 +1,6 @@
 ---
 name: sw-series-engine-bible
-description: Series engine design, franchise architecture, story patterns, sustainable character webs, pilot strategies, and pitch documents / series bibles — merged from William Rabkin (four-element franchise, story pattern, story landmines, process questions), Neil Landau (tacit contract, micro-missions, story tentacles, 11-element pitch recipe), Peter Oberg (series typologies, story-types, M-Factor, bible specifications), Pamela Douglas (franchise plus springboard, bible tiers), Goldberg & Rabkin (the 100-episode test), Blum (concept-presentation-bible ladder), Kam Miller (ten-component treatment, license to intervene), Daniel Calvisi (Compelling Crisis, Week-to-Week engine), and real-world series engines (The Sopranos, Fleabag, Succession). Use when evaluating whether a concept has series longevity, choosing premise vs. ongoing pilots, constructing dynamic character webs, or drafting bibles and treatments.
+description: 'Series engine design, franchise architecture, story patterns, sustainable character webs, pilot strategies, and pitch documents / series bibles — merged from William Rabkin (four-element franchise, story pattern, story landmines, process questions), Neil Landau (tacit contract, micro-missions, story tentacles, 11-element pitch recipe), Peter Oberg (series typologies, story-types, M-Factor, bible specifications), Pamela Douglas (franchise plus springboard, bible tiers), Goldberg & Rabkin (the 100-episode test), Blum (concept-presentation-bible ladder), Kam Miller (ten-component treatment, license to intervene), Daniel Calvisi (Compelling Crisis, Week-to-Week engine), and real-world series engines (The Sopranos, Fleabag, Succession). Use when evaluating whether a concept has series longevity, choosing premise vs. ongoing pilots, constructing dynamic character webs, or drafting bibles and treatments.'
 ---
 
 # Series Engine & Master Bible Architecture (sw-series-engine-bible)
@@ -138,3 +138,4 @@ This skill governs the foundational machinery of television and episodic streami
 6. **Draft 6–8 Episode Springboards:** Test the engine's renewable versatility across diverse situations.
 7. **Assemble the Master Bible:** Synthesize Logline, World Overview, Character Profiles, Pilot Treatment, and Season Arc into a cohesive document.
 8. **Conduct the Stress Test:** Audit against the 10-point Diagnostic Checklist to eliminate feature-film blind spots.
+

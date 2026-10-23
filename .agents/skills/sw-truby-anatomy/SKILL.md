@@ -1,6 +1,6 @@
 ---
 name: sw-truby-anatomy
-description: "Organic story anatomy from John Truby's The Anatomy of Story — the designing principle (story process plus original execution), the seven key steps as the organic spine, all twenty-two steps with the middle-act machinery the beat sheets lack (ghost, fake-ally opponent, plan, opponent's drive, ally's attack, fake defeat, three revelation-and-decision pairs, audience revelation, visit to death, moral decision), four-corner opposition, the moral-argument chain with the hero-opponent power-balance rule, scene weave with structure-step tags and storyline numbers, and the accordion rule (never fewer than seven steps). Kept side by side with the Field/Snyder page maps. Use when the middle act sags into unconnected episodes, when the premise works but the story feels mechanical, when one antagonist cannot carry the theme, when the theme stays stated instead of acted, or when a BS2 board needs an organic second pass."
+description: 'Organic story anatomy from John Truby''s The Anatomy of Story — the designing principle (story process plus original execution), the seven key steps as the organic spine, all twenty-two steps with the middle-act machinery the beat sheets lack (ghost, fake-ally opponent, plan, opponent''s drive, ally''s attack, fake defeat, three revelation-and-decision pairs, audience revelation, visit to death, moral decision), four-corner opposition, the moral-argument chain with the hero-opponent power-balance rule, scene weave with structure-step tags and storyline numbers, and the accordion rule (never fewer than seven steps). Kept side by side with the Field/Snyder page maps. Use when the middle act sags into unconnected episodes, when the premise works but the story feels mechanical, when one antagonist cannot carry the theme, when the theme stays stated instead of acted, or when a BS2 board needs an organic second pass.'
 ---
 
 # John Truby's Organic Story Anatomy (sw-truby-anatomy)
@@ -192,3 +192,4 @@ When Act 2 feels episodic or loses momentum, check:
 8. **Is there a Gate / Gauntlet / Visit to Death before the final battle?**
 9. **Is there a Moral Decision (action-based proof) following the self-revelation?**
 10. **Is the Four-Corner Opposition fully populated with clashing value systems?**
+

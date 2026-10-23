@@ -1,8 +1,6 @@
 ---
 name: video-editing
-description: AI-assisted video editing workflows for cutting, structuring, and augmenting real footage. Covers the full pipeline from raw capture through FFmpeg, Remotion, ElevenLabs, fal.ai, and final polish in Descript or CapCut. Use when the user wants to edit video, cut footage, create vlogs, or build video content.
-metadata:
-  origin: ECC
+description: 'AI-assisted video editing workflows for cutting, structuring, and augmenting real footage. Covers the full pipeline from raw capture through FFmpeg, Remotion, ElevenLabs, fal.ai, and final polish in Descript or CapCut. Use when the user wants to edit video, cut footage, create vlogs, or build video content.'
 ---
 
 # Video Editing
@@ -361,3 +359,4 @@ identify the 5 most engaging 30-second clips for social media."
 - `fal-ai-media` — AI image, video, and audio generation
 - `videodb` — Server-side video processing, indexing, and streaming
 - `content-engine` — Platform-native content distribution
+

@@ -1,6 +1,6 @@
 ---
 name: sw-character-conflict
-description: Character creation, protagonist/antagonist design, orchestration, and dramatic conflict for screenplays and stage plays — merged from Lajos Egri (three-dimensional character, orchestration, unity of opposites, pivotal character, rising vs. static vs. jumping conflict, transitions), William Indick's Psychology for Screenwriters (Freud, Erikson, Jungian archetypes, Campbell/Murdock hero journeys, Adlerian inferiority, Rollo May), Robert McKee (characterization vs. true character, dimensions as contradiction, the gap, the principle of antagonism), Neill Hicks (character invocation, self-concept, cognitive dissonance, five conflict focuses), Lisa Cron (desire vs. misbelief), and classic dramatic craft (eight keys to living characters, arming the antagonist, the strongest opponent is oneself, prohibiting deus ex machina). Use when building characters, sharpening villains, diagnosing flat or out-of-character behavior, fixing stalled or jumping conflict, or eliminating melodrama.
+description: 'Character creation, protagonist/antagonist design, orchestration, and dramatic conflict for screenplays and stage plays — merged from Lajos Egri (three-dimensional character, orchestration, unity of opposites, pivotal character, rising vs. static vs. jumping conflict, transitions), William Indick''s Psychology for Screenwriters (Freud, Erikson, Jungian archetypes, Campbell/Murdock hero journeys, Adlerian inferiority, Rollo May), Robert McKee (characterization vs. true character, dimensions as contradiction, the gap, the principle of antagonism), Neill Hicks (character invocation, self-concept, cognitive dissonance, five conflict focuses), Lisa Cron (desire vs. misbelief), and classic dramatic craft (eight keys to living characters, arming the antagonist, the strongest opponent is oneself, prohibiting deus ex machina). Use when building characters, sharpening villains, diagnosing flat or out-of-character behavior, fixing stalled or jumping conflict, or eliminating melodrama.'
 ---
 
 # Character & Conflict (sw-character-conflict)
@@ -196,3 +196,4 @@ This skill unifies four foundational systems of character craft:
 8. **Integrate the Shadow:** Force the hero to confront their repressed flaws during the Dark Night of the Soul.
 9. **Execute the Climax Decision:** Structure the ultimate choice as a genuine dilemma between two irreconcilable values.
 10. **The Final Audit:** Verify that true character is revealed through action, not dialogue, and that the protagonist earns their transformation.
+

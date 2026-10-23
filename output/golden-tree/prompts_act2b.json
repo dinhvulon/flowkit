@@ -38,7 +38,7 @@
       }
     ],
     "timeline_action": {
-      "0-3s": "From second 0, Theron begins speaking immediately, sharp and commanding: Theron says \"Step only on the soft green damp moss, sailors. The rock beast feels every vibration through stone.\" (no subtitles).",
+      "0-3s": "From second 0, Theron begins speaking immediately, sharp and commanding: Theron says \"Step only on the damp green moss. The beast feels every stone vibration.\" (no subtitles).",
       "3-6s": "At second 3.0, a crisp hard cut: Theron's command echoes through the cavern through second 5; theron dẫn đầu đoàn bước êm trên thảm rêu mềm chống gây tiếng động.",
       "6-8s": "At second 6.0, a crisp hard cut: The line concludes by second 6; Theron braces for the next impact through second 8. Strictly Theron alone in this focal framing; Nora are completely off-screen or in distinct background separation, never overlapping. SPATIAL LOCK: All characters stand firmly on the interior solid deck or stone floor, NEVER on the exterior water/cliff drop-off side of any barrier; maintain a consistent 180-degree spatial axis within each shot."
     },
@@ -52,9 +52,9 @@
       "delivery": "shouted loud, sharp and clipped in visceral mortal combat",
       "dialogue": [
         {
-          "t": "0-6s",
+          "t": "0-5.0s",
           "speaker": "Theron",
-          "line": "Step only on the soft green damp moss, sailors. The rock beast feels every vibration through stone."
+          "line": "Step only on the damp green moss. The beast feels every stone vibration."
         }
       ]
     },
@@ -68,12 +68,14 @@
     "physics": "Massive momentum p=m*v of twenty-ton stone collapse, elastic chitin rebound on bronze, kinetic dust displacement.",
     "negative_constraints": [
       "No subtitles, no captions, no on-frame text, no logos, no watermarks.",
-      "The video is full-frame shots only: never a grid, never panels, never split screen, never black dividing lines; strictly NO duplicate characters, strictly NO multiple Nora, Theron, no ghost figures, no cloning; strictly NO character standing outside the ship hull or on the exterior water/drop-off side of a railing/barrier, no 180-degree axis fusion between panels; crisp hard cuts at second 3.0 and second 6.0, no camera blending, no crossfades.",
+      "The video is full-frame shots only: never a grid, never panels, never split screen, never black dividing lines; strictly NO duplicate characters, strictly NO multiple Nora, Theron, no ghost figures, no cloning; strictly NO character standing outside the ship hull or on the exterior water/drop-off side of a railing/barrier, no 180-degree axis fusion between panels; crisp hard cuts at second 3.0 and second 6.0, no camera blending, no crossfades; strictly NO hands on face, NO hands pressed against cheeks, NO face-covering gestures (all faces 100% unobstructed with hands gripping physical props).",
       "ANTI-CGI LOCK: real documentary footage, not a 3D render, not a video game, not CGI fire, no plastic skin.",
       "No breath vapor and no white steam from anyone's mouth; no god rays, no volumetric beams, no magical sunbeams.",
       "No shallow depth of field, no blurry background, no bokeh (f/8 aperture throughout).",
       "Separate bodies never merge; natural hands with five fingers; no extra limbs."
-    ]
+    ],
+    "sf_type": "GENERATE_IMAGE",
+    "image_prompt": "A film storyboard sheet, 16:9, made of FOUR photographic panels in a tight 2 by 2 grid, separated only by thin black lines; each panel is a 16:9 frame; no text, no captions. All four panels are cinematic feature-film stills of Location: karst labyrinth cavern and collapsed stone arch. Light: lân tinh xanh rêu u tối, deep subterranean chiaroscuro shadows. Featuring {{media:62e117f8-0af7-484e-90a8-f79927105746|nora_clean.jpg}} (face 1:1, seafarer brigandine), {{media:743ef618-f4c5-456c-9285-56dd911ca94b|nora_body_seafarer_clean.jpg}} (athletic build, navy leather brigandine), {{media:7c5d994a-dabd-406b-a6c1-b9fa6473a612|theron_clean.jpg}} (face 1:1, 58yo stranded navigator hermit in ragged tunic with wooden staff).\nTOP-LEFT PANEL, second 0: [MS] From second 0, Theron begins speaking immediately, sharp and commanding: Theron says \"Step only on the damp green moss. The beast feels every stone vibration.\"\nTOP-RIGHT PANEL, second 3: [MCU] 90-degree angle shift: Theron's command echoes through the cavern through second 5; theron dẫn đầu đoàn bước êm trên thảm rêu mềm chống gây tiếng động.\nBOTTOM-LEFT PANEL, second 6: [CU] The line concludes by second 6; Theron braces for the next impact through second 8. Strictly Theron alone in this focal framing; Nora are completely off-screen or in distinct background separation, never overlapping.\nBOTTOM-RIGHT PANEL, second 8: [MS] Final resolute hold in the same space, faces 100% unobstructed and hands gripping physical props.\ncinematic feature-film look: shot on ARRI Alexa with Cooke S4 prime lenses, fine 35mm film grain, deep focus (f/8), motivated practical light, realistic physics, strictly NO hands covering faces, strictly NOT a 3D render, NOT CGI, zero watermark, zero logos."
   },
   {
     "clip_id": "SC-98",
@@ -109,7 +111,7 @@
       }
     ],
     "timeline_action": {
-      "0-2s": "From second 0, Nora delivers the line immediately, sharp and urgent: Nora says \"Muffle the scabbards and shields with canvas. Move like phantoms through the cleft.\" (no subtitles).",
+      "0-2s": "From second 0, Nora delivers the line immediately, sharp and urgent: Nora says \"Wrap your scabbards in cloth and extinguish the torches. Move like shadows.\" (no subtitles).",
       "2-4s": "At second 2.0, a crisp hard cut: Nora's line finishes cleanly by second 4; nora ra hiệu hạ thấp vũ khí không va vào vách đá.",
       "4-6s": "At second 4.0, a crisp hard cut: The physical combat stance settles firmly by second 6. Strictly Castor alone in this focal framing; Nora are completely off-screen or in distinct background separation, never overlapping. SPATIAL LOCK: All characters stand firmly on the interior solid deck or stone floor, NEVER on the exterior water/cliff drop-off side of any barrier; maintain a consistent 180-degree spatial axis within each shot."
     },
@@ -123,9 +125,9 @@
       "delivery": "shouted loud, sharp and clipped in visceral mortal combat",
       "dialogue": [
         {
-          "t": "0-4s",
+          "t": "0-5.0s",
           "speaker": "Nora",
-          "line": "Muffle the scabbards and shields with canvas. Move like phantoms through the cleft."
+          "line": "Wrap your scabbards in cloth and extinguish the torches. Move like shadows."
         }
       ]
     },
@@ -139,12 +141,14 @@
     "physics": "Massive momentum p=m*v of twenty-ton stone collapse, elastic chitin rebound on bronze, kinetic dust displacement.",
     "negative_constraints": [
       "No subtitles, no captions, no on-frame text, no logos, no watermarks.",
-      "The video is full-frame shots only: never a grid, never panels, never split screen, never black dividing lines; strictly NO duplicate characters, strictly NO multiple Nora, Castor, no ghost figures, no cloning; strictly NO character standing outside the ship hull or on the exterior water/drop-off side of a railing/barrier, no 180-degree axis fusion between panels; crisp hard cuts at second 2.0 and second 4.0, no camera blending, no crossfades.",
+      "The video is full-frame shots only: never a grid, never panels, never split screen, never black dividing lines; strictly NO duplicate characters, strictly NO multiple Nora, Castor, no ghost figures, no cloning; strictly NO character standing outside the ship hull or on the exterior water/drop-off side of a railing/barrier, no 180-degree axis fusion between panels; crisp hard cuts at second 2.0 and second 4.0, no camera blending, no crossfades; strictly NO hands on face, NO hands pressed against cheeks, NO face-covering gestures (all faces 100% unobstructed with hands gripping physical props).",
       "ANTI-CGI LOCK: real documentary footage, not a 3D render, not a video game, not CGI fire, no plastic skin.",
       "No breath vapor and no white steam from anyone's mouth; no god rays, no volumetric beams, no magical sunbeams.",
       "No shallow depth of field, no blurry background, no bokeh (f/8 aperture throughout).",
       "Separate bodies never merge; natural hands with five fingers; no extra limbs."
-    ]
+    ],
+    "sf_type": "GENERATE_IMAGE",
+    "image_prompt": "A film storyboard sheet, 16:9, made of FOUR photographic panels in a tight 2 by 2 grid, separated only by thin black lines; each panel is a 16:9 frame; no text, no captions. All four panels are cinematic feature-film stills of Location: karst labyrinth cavern and collapsed stone arch. Light: ánh sáng hẹp le lói, deep subterranean chiaroscuro shadows. Featuring {{media:62e117f8-0af7-484e-90a8-f79927105746|nora_clean.jpg}} (face 1:1, seafarer brigandine), {{media:743ef618-f4c5-456c-9285-56dd911ca94b|nora_body_seafarer_clean.jpg}} (athletic build, navy leather brigandine), {{media:3152a235-af4f-462b-a78e-02551f826e41|castor_clean.jpg}} (face 1:1, leather cuirass).\nTOP-LEFT PANEL, second 0: [MS] From second 0, Nora delivers the line immediately, sharp and urgent: Nora says \"Wrap your scabbards in cloth and extinguish the torches. Move like shadows.\"\nTOP-RIGHT PANEL, second 3: [MCU] 90-degree angle shift: Nora's line finishes cleanly by second 4; nora ra hiệu hạ thấp vũ khí không va vào vách đá.\nBOTTOM-LEFT PANEL, second 6: [CU] The physical combat stance settles firmly by second 6. Strictly Castor alone in this focal framing; Nora are completely off-screen or in distinct background separation, never overlapping.\nBOTTOM-RIGHT PANEL, second 8: [MS] Final resolute hold in the same space, faces 100% unobstructed and hands gripping physical props.\ncinematic feature-film look: shot on ARRI Alexa with Cooke S4 prime lenses, fine 35mm film grain, deep focus (f/8), motivated practical light, realistic physics, strictly NO hands covering faces, strictly NOT a 3D render, NOT CGI, zero watermark, zero logos."
   },
   {
     "clip_id": "SC-99",
@@ -198,12 +202,14 @@
     "physics": "Massive momentum p=m*v of twenty-ton stone collapse, elastic chitin rebound on bronze, kinetic dust displacement.",
     "negative_constraints": [
       "No subtitles, no captions, no on-frame text, no logos, no watermarks.",
-      "The video is full-frame shots only: never a grid, never panels, never split screen, never black dividing lines; strictly NO duplicate characters, strictly NO multiple Nora, no ghost figures, no cloning; strictly NO character standing outside the ship hull or on the exterior water/drop-off side of a railing/barrier, no 180-degree axis fusion between panels; crisp hard cuts at second 3.0 and second 6.0, no camera blending, no crossfades.",
+      "The video is full-frame shots only: never a grid, never panels, never split screen, never black dividing lines; strictly NO duplicate characters, strictly NO multiple Nora, no ghost figures, no cloning; strictly NO character standing outside the ship hull or on the exterior water/drop-off side of a railing/barrier, no 180-degree axis fusion between panels; crisp hard cuts at second 3.0 and second 6.0, no camera blending, no crossfades; strictly NO hands on face, NO hands pressed against cheeks, NO face-covering gestures (all faces 100% unobstructed with hands gripping physical props).",
       "ANTI-CGI LOCK: real documentary footage, not a 3D render, not a video game, not CGI fire, no plastic skin.",
       "No breath vapor and no white steam from anyone's mouth; no god rays, no volumetric beams, no magical sunbeams.",
       "No shallow depth of field, no blurry background, no bokeh (f/8 aperture throughout).",
       "Separate bodies never merge; natural hands with five fingers; no extra limbs."
-    ]
+    ],
+    "sf_type": "GENERATE_IMAGE",
+    "image_prompt": "A film storyboard sheet, 16:9, made of FOUR photographic panels in a tight 2 by 2 grid, separated only by thin black lines; each panel is a 16:9 frame; no text, no captions. All four panels are cinematic feature-film stills of Location: karst labyrinth cavern and collapsed stone arch. Light: sương khói vôi mù mịt, deep subterranean chiaroscuro shadows. Featuring {{media:62e117f8-0af7-484e-90a8-f79927105746|nora_clean.jpg}} (face 1:1, seafarer brigandine), {{media:743ef618-f4c5-456c-9285-56dd911ca94b|nora_body_seafarer_clean.jpg}} (athletic build, navy leather brigandine).\nTOP-LEFT PANEL, second 0: [MS] From second 0, Không khí ngột ngạt, bụi vôi lơ lửng, ánh sáng lân tinh xanh rêu; sương khói vôi mù mịt.\nTOP-RIGHT PANEL, second 3: [MCU] 90-degree angle shift: Kinetic mass and stone friction dominate the frame.\nBOTTOM-LEFT PANEL, second 6: [CU] The action concludes with steady physical equilibrium by second 8.\nBOTTOM-RIGHT PANEL, second 8: [MS] Final resolute hold in the same space, faces 100% unobstructed and hands gripping physical props.\ncinematic feature-film look: shot on ARRI Alexa with Cooke S4 prime lenses, fine 35mm film grain, deep focus (f/8), motivated practical light, realistic physics, strictly NO hands covering faces, strictly NOT a 3D render, NOT CGI, zero watermark, zero logos."
   },
   {
     "clip_id": "SC-100",
@@ -235,7 +241,7 @@
       }
     ],
     "timeline_action": {
-      "0-3s": "From second 0, Castor begins speaking immediately, sharp and commanding: Castor says \"Look at these gouges in the limestone... six talon marks, carved deep as iron chisels. What kind of monster lives here?\" (no subtitles).",
+      "0-3s": "From second 0, Castor begins speaking immediately, sharp and commanding: Castor says \"Six deep talon gouges carved into solid limestone... it is hunting right above us.\" (no subtitles).",
       "3-6s": "At second 3.0, a crisp hard cut: Castor's command echoes through the cavern through second 5; castor phát hiện vết cào móng sâu ba gang tay trên vách đá.",
       "6-8s": "At second 6.0, a crisp hard cut: The line concludes by second 6; Castor braces for the next impact through second 8. SPATIAL LOCK: All characters stand firmly on the interior solid deck or stone floor, NEVER on the exterior water/cliff drop-off side of any barrier; maintain a consistent 180-degree spatial axis within each shot."
     },
@@ -249,9 +255,9 @@
       "delivery": "shouted loud, sharp and clipped in visceral mortal combat",
       "dialogue": [
         {
-          "t": "0-6s",
+          "t": "0-5.0s",
           "speaker": "Castor",
-          "line": "Look at these gouges in the limestone... six talon marks, carved deep as iron chisels. What kind of monster lives here?"
+          "line": "Six deep talon gouges carved into solid limestone... it is hunting right above us."
         }
       ]
     },
@@ -265,12 +271,14 @@
     "physics": "Massive momentum p=m*v of twenty-ton stone collapse, elastic chitin rebound on bronze, kinetic dust displacement.",
     "negative_constraints": [
       "No subtitles, no captions, no on-frame text, no logos, no watermarks.",
-      "The video is full-frame shots only: never a grid, never panels, never split screen, never black dividing lines; strictly NO duplicate characters, strictly NO multiple Castor, no ghost figures, no cloning; strictly NO character standing outside the ship hull or on the exterior water/drop-off side of a railing/barrier, no 180-degree axis fusion between panels; crisp hard cuts at second 3.0 and second 6.0, no camera blending, no crossfades.",
+      "The video is full-frame shots only: never a grid, never panels, never split screen, never black dividing lines; strictly NO duplicate characters, strictly NO multiple Castor, no ghost figures, no cloning; strictly NO character standing outside the ship hull or on the exterior water/drop-off side of a railing/barrier, no 180-degree axis fusion between panels; crisp hard cuts at second 3.0 and second 6.0, no camera blending, no crossfades; strictly NO hands on face, NO hands pressed against cheeks, NO face-covering gestures (all faces 100% unobstructed with hands gripping physical props).",
       "ANTI-CGI LOCK: real documentary footage, not a 3D render, not a video game, not CGI fire, no plastic skin.",
       "No breath vapor and no white steam from anyone's mouth; no god rays, no volumetric beams, no magical sunbeams.",
       "No shallow depth of field, no blurry background, no bokeh (f/8 aperture throughout).",
       "Separate bodies never merge; natural hands with five fingers; no extra limbs."
-    ]
+    ],
+    "sf_type": "GENERATE_IMAGE",
+    "image_prompt": "A film storyboard sheet, 16:9, made of FOUR photographic panels in a tight 2 by 2 grid, separated only by thin black lines; each panel is a 16:9 frame; no text, no captions. All four panels are cinematic feature-film stills of Location: karst labyrinth cavern and collapsed stone arch. Light: đèn bão rọi vết cào, deep subterranean chiaroscuro shadows. Featuring {{media:3152a235-af4f-462b-a78e-02551f826e41|castor_clean.jpg}} (face 1:1, leather cuirass).\nTOP-LEFT PANEL, second 0: [MS] From second 0, Castor begins speaking immediately, sharp and commanding: Castor says \"Six deep talon gouges carved into solid limestone... it is hunting right above us.\"\nTOP-RIGHT PANEL, second 3: [MCU] 90-degree angle shift: Castor's command echoes through the cavern through second 5; castor phát hiện vết cào móng sâu ba gang tay trên vách đá.\nBOTTOM-LEFT PANEL, second 6: [CU] The line concludes by second 6; Castor braces for the next impact through second 8.\nBOTTOM-RIGHT PANEL, second 8: [MS] Final resolute hold in the same space, faces 100% unobstructed and hands gripping physical props.\ncinematic feature-film look: shot on ARRI Alexa with Cooke S4 prime lenses, fine 35mm film grain, deep focus (f/8), motivated practical light, realistic physics, strictly NO hands covering faces, strictly NOT a 3D render, NOT CGI, zero watermark, zero logos."
   },
   {
     "clip_id": "SC-101",
@@ -306,7 +314,7 @@
       }
     ],
     "timeline_action": {
-      "0-3s": "From second 0, Theron begins speaking immediately, sharp and commanding: Theron says \"The Chitin Prowler of the Labyrinth... it has smelled the living warm blood of our Aegean crew. Freeze your boots!\" (no subtitles).",
+      "0-3s": "From second 0, Theron begins speaking immediately, sharp and commanding: Theron says \"The Chitin Prowler has our scent! Freeze your boots against the rock wall!\" (no subtitles).",
       "3-6s": "At second 3.0, a crisp hard cut: Theron's command echoes through the cavern through second 5; theron dừng lại lắng nghe tiếng lạo xạo sau bức tường đá.",
       "6-8s": "At second 6.0, a crisp hard cut: The line concludes by second 6; Theron braces for the next impact through second 8. Strictly Theron alone in this focal framing; Nora are completely off-screen or in distinct background separation, never overlapping. SPATIAL LOCK: All characters stand firmly on the interior solid deck or stone floor, NEVER on the exterior water/cliff drop-off side of any barrier; maintain a consistent 180-degree spatial axis within each shot."
     },
@@ -320,9 +328,9 @@
       "delivery": "shouted loud, sharp and clipped in visceral mortal combat",
       "dialogue": [
         {
-          "t": "0-6s",
+          "t": "0-5.0s",
           "speaker": "Theron",
-          "line": "The Chitin Prowler of the Labyrinth... it has smelled the living warm blood of our Aegean crew. Freeze your boots!"
+          "line": "The Chitin Prowler has our scent! Freeze your boots against the rock wall!"
         }
       ]
     },
@@ -336,12 +344,14 @@
     "physics": "Massive momentum p=m*v of twenty-ton stone collapse, elastic chitin rebound on bronze, kinetic dust displacement.",
     "negative_constraints": [
       "No subtitles, no captions, no on-frame text, no logos, no watermarks.",
-      "The video is full-frame shots only: never a grid, never panels, never split screen, never black dividing lines; strictly NO duplicate characters, strictly NO multiple Nora, Theron, no ghost figures, no cloning; strictly NO character standing outside the ship hull or on the exterior water/drop-off side of a railing/barrier, no 180-degree axis fusion between panels; crisp hard cuts at second 3.0 and second 6.0, no camera blending, no crossfades.",
+      "The video is full-frame shots only: never a grid, never panels, never split screen, never black dividing lines; strictly NO duplicate characters, strictly NO multiple Nora, Theron, no ghost figures, no cloning; strictly NO character standing outside the ship hull or on the exterior water/drop-off side of a railing/barrier, no 180-degree axis fusion between panels; crisp hard cuts at second 3.0 and second 6.0, no camera blending, no crossfades; strictly NO hands on face, NO hands pressed against cheeks, NO face-covering gestures (all faces 100% unobstructed with hands gripping physical props).",
       "ANTI-CGI LOCK: real documentary footage, not a 3D render, not a video game, not CGI fire, no plastic skin.",
       "No breath vapor and no white steam from anyone's mouth; no god rays, no volumetric beams, no magical sunbeams.",
       "No shallow depth of field, no blurry background, no bokeh (f/8 aperture throughout).",
       "Separate bodies never merge; natural hands with five fingers; no extra limbs."
-    ]
+    ],
+    "sf_type": "GENERATE_IMAGE",
+    "image_prompt": "A film storyboard sheet, 16:9, made of FOUR photographic panels in a tight 2 by 2 grid, separated only by thin black lines; each panel is a 16:9 frame; no text, no captions. All four panels are cinematic feature-film stills of Location: karst labyrinth cavern and collapsed stone arch. Light: bóng tối bao trùm, deep subterranean chiaroscuro shadows. Featuring {{media:62e117f8-0af7-484e-90a8-f79927105746|nora_clean.jpg}} (face 1:1, seafarer brigandine), {{media:743ef618-f4c5-456c-9285-56dd911ca94b|nora_body_seafarer_clean.jpg}} (athletic build, navy leather brigandine), {{media:7c5d994a-dabd-406b-a6c1-b9fa6473a612|theron_clean.jpg}} (face 1:1, 58yo stranded navigator hermit in ragged tunic with wooden staff).\nTOP-LEFT PANEL, second 0: [MS] From second 0, Theron begins speaking immediately, sharp and commanding: Theron says \"The Chitin Prowler has our scent! Freeze your boots against the rock wall!\"\nTOP-RIGHT PANEL, second 3: [MCU] 90-degree angle shift: Theron's command echoes through the cavern through second 5; theron dừng lại lắng nghe tiếng lạo xạo sau bức tường đá.\nBOTTOM-LEFT PANEL, second 6: [CU] The line concludes by second 6; Theron braces for the next impact through second 8. Strictly Theron alone in this focal framing; Nora are completely off-screen or in distinct background separation, never overlapping.\nBOTTOM-RIGHT PANEL, second 8: [MS] Final resolute hold in the same space, faces 100% unobstructed and hands gripping physical props.\ncinematic feature-film look: shot on ARRI Alexa with Cooke S4 prime lenses, fine 35mm film grain, deep focus (f/8), motivated practical light, realistic physics, strictly NO hands covering faces, strictly NOT a 3D render, NOT CGI, zero watermark, zero logos."
   },
   {
     "clip_id": "SC-102",
@@ -393,12 +403,14 @@
     "physics": "Massive momentum p=m*v of twenty-ton stone collapse, elastic chitin rebound on bronze, kinetic dust displacement.",
     "negative_constraints": [
       "No subtitles, no captions, no on-frame text, no logos, no watermarks.",
-      "The video is full-frame shots only: never a grid, never panels, never split screen, never black dividing lines; strictly NO duplicate characters, strictly NO multiple Labyrinth Beast, no ghost figures, no cloning; strictly NO character standing outside the ship hull or on the exterior water/drop-off side of a railing/barrier, no 180-degree axis fusion between panels; crisp hard cuts at second 3.0 and second 7.0, no camera blending, no crossfades.",
+      "The video is full-frame shots only: never a grid, never panels, never split screen, never black dividing lines; strictly NO duplicate characters, strictly NO multiple Labyrinth Beast, no ghost figures, no cloning; strictly NO character standing outside the ship hull or on the exterior water/drop-off side of a railing/barrier, no 180-degree axis fusion between panels; crisp hard cuts at second 3.0 and second 7.0, no camera blending, no crossfades; strictly NO hands on face, NO hands pressed against cheeks, NO face-covering gestures (all faces 100% unobstructed with hands gripping physical props).",
       "ANTI-CGI LOCK: real documentary footage, not a 3D render, not a video game, not CGI fire, no plastic skin.",
       "No breath vapor and no white steam from anyone's mouth; no god rays, no volumetric beams, no magical sunbeams.",
       "No shallow depth of field, no blurry background, no bokeh (f/8 aperture throughout).",
       "Separate bodies never merge; natural hands with five fingers; no extra limbs."
-    ]
+    ],
+    "sf_type": "GENERATE_IMAGE",
+    "image_prompt": "A film storyboard sheet, 16:9, made of FOUR photographic panels in a tight 2 by 2 grid, separated only by thin black lines; each panel is a 16:9 frame; no text, no captions. All four panels are cinematic feature-film stills of Location: karst labyrinth cavern and collapsed stone arch. Light: mắt vàng rực trong tối, deep subterranean chiaroscuro shadows. Featuring {{media:a1905a31-82f6-4c94-b8b4-4c68570f2bfc|labyrinth_beast_clean.jpg}} (6m black chitinous 6-legged karst predator with amber eyes).\nTOP-LEFT PANEL, second 0: [MS] At second 0, Tảng đá lớn sụp đổ, lộ diện quái vật Labyrinth Beast 6 chân giáp xác khổng lồ 6 mét; mắt vàng rực trong tối.\nTOP-RIGHT PANEL, second 3: [MCU] 90-degree angle shift: The colossal twenty-ton rock collapse shakes the entire cavern chamber.\nBOTTOM-LEFT PANEL, second 6: [CU] The monumental impact resolves as dust settles over the crushed creature by second 10.\nBOTTOM-RIGHT PANEL, second 8: [MS] Final resolute hold in the same space, faces 100% unobstructed and hands gripping physical props.\ncinematic feature-film look: shot on ARRI Alexa with Cooke S4 prime lenses, fine 35mm film grain, deep focus (f/8), motivated practical light, realistic physics, strictly NO hands covering faces, strictly NOT a 3D render, NOT CGI, zero watermark, zero logos."
   },
   {
     "clip_id": "SC-103",
@@ -437,7 +449,7 @@
       }
     ],
     "timeline_action": {
-      "0-3s": "From the opening frame at second 0, Heracles shouts with ferocious intensity: Heracles says \"Get behind the heavy bronze plate, all of you! This armored demon has the crushing weight of an ox, but my boots are anchored deep!\" (no subtitles).",
+      "0-3s": "From the opening frame at second 0, Heracles shouts with ferocious intensity: Heracles says \"Get behind my bronze shield! My boots are anchored deep in the stone!\" (no subtitles).",
       "3-7s": "At second 3.0, a crisp hard cut: The battle command drives the maneuver through second 6 as quái thú lao tới, heracles giơ khiên đồng to bản chặn móng vuốt.",
       "7-10s": "At second 7.0, a crisp hard cut: Heracles concludes the line by second 7; the team executes the tactical strike through second 10. Strictly Labyrinth Beast alone in this focal framing; Heracles are completely off-screen or in distinct background separation, never overlapping. SPATIAL LOCK: All characters stand firmly on the interior solid deck or stone floor, NEVER on the exterior water/cliff drop-off side of any barrier; maintain a consistent 180-degree spatial axis within each shot."
     },
@@ -451,9 +463,9 @@
       "delivery": "shouted loud, sharp and clipped in visceral mortal combat",
       "dialogue": [
         {
-          "t": "0-7s",
+          "t": "0-6.0s",
           "speaker": "Heracles",
-          "line": "Get behind the heavy bronze plate, all of you! This armored demon has the crushing weight of an ox, but my boots are anchored deep!"
+          "line": "Get behind my bronze shield! My boots are anchored deep in the stone!"
         }
       ]
     },
@@ -467,12 +479,14 @@
     "physics": "Massive momentum p=m*v of twenty-ton stone collapse, elastic chitin rebound on bronze, kinetic dust displacement.",
     "negative_constraints": [
       "No subtitles, no captions, no on-frame text, no logos, no watermarks.",
-      "The video is full-frame shots only: never a grid, never panels, never split screen, never black dividing lines; strictly NO duplicate characters, strictly NO multiple Heracles, Labyrinth Beast, no ghost figures, no cloning; strictly NO character standing outside the ship hull or on the exterior water/drop-off side of a railing/barrier, no 180-degree axis fusion between panels; crisp hard cuts at second 3.0 and second 7.0, no camera blending, no crossfades.",
+      "The video is full-frame shots only: never a grid, never panels, never split screen, never black dividing lines; strictly NO duplicate characters, strictly NO multiple Heracles, Labyrinth Beast, no ghost figures, no cloning; strictly NO character standing outside the ship hull or on the exterior water/drop-off side of a railing/barrier, no 180-degree axis fusion between panels; crisp hard cuts at second 3.0 and second 7.0, no camera blending, no crossfades; strictly NO hands on face, NO hands pressed against cheeks, NO face-covering gestures (all faces 100% unobstructed with hands gripping physical props).",
       "ANTI-CGI LOCK: real documentary footage, not a 3D render, not a video game, not CGI fire, no plastic skin.",
       "No breath vapor and no white steam from anyone's mouth; no god rays, no volumetric beams, no magical sunbeams.",
       "No shallow depth of field, no blurry background, no bokeh (f/8 aperture throughout).",
       "Separate bodies never merge; natural hands with five fingers; no extra limbs."
-    ]
+    ],
+    "sf_type": "GENERATE_IMAGE",
+    "image_prompt": "A film storyboard sheet, 16:9, made of FOUR photographic panels in a tight 2 by 2 grid, separated only by thin black lines; each panel is a 16:9 frame; no text, no captions. All four panels are cinematic feature-film stills of Location: karst labyrinth cavern and collapsed stone arch. Light: tóe lửa trên khiên đồng, deep subterranean chiaroscuro shadows. Featuring {{media:37a10133-8496-49e7-bd77-b5f261c5a43e|heracles_clean.jpg}} (face 1:1, muscular build, fur mantle), {{media:a1905a31-82f6-4c94-b8b4-4c68570f2bfc|labyrinth_beast_clean.jpg}} (6m black chitinous 6-legged karst predator with amber eyes).\nTOP-LEFT PANEL, second 0: [MS] From the opening frame at second 0, Heracles shouts with ferocious intensity: Heracles says \"Get behind my bronze shield! My boots are anchored deep in the stone!\"\nTOP-RIGHT PANEL, second 3: [MCU] 90-degree angle shift: The battle command drives the maneuver through second 6 as quái thú lao tới, heracles giơ khiên đồng to bản chặn móng vuốt.\nBOTTOM-LEFT PANEL, second 6: [CU] Heracles concludes the line by second 7; the team executes the tactical strike through second 10. Strictly Labyrinth Beast alone in this focal framing; Heracles are completely off-screen or in distinct background separation, never overlapping.\nBOTTOM-RIGHT PANEL, second 8: [MS] Final resolute hold in the same space, faces 100% unobstructed and hands gripping physical props.\ncinematic feature-film look: shot on ARRI Alexa with Cooke S4 prime lenses, fine 35mm film grain, deep focus (f/8), motivated practical light, realistic physics, strictly NO hands covering faces, strictly NOT a 3D render, NOT CGI, zero watermark, zero logos."
   },
   {
     "clip_id": "SC-104",
@@ -527,12 +541,14 @@
     "physics": "Massive momentum p=m*v of twenty-ton stone collapse, elastic chitin rebound on bronze, kinetic dust displacement.",
     "negative_constraints": [
       "No subtitles, no captions, no on-frame text, no logos, no watermarks.",
-      "The video is full-frame shots only: never a grid, never panels, never split screen, never black dividing lines; strictly NO duplicate characters, strictly NO multiple Heracles, Labyrinth Beast, no ghost figures, no cloning; strictly NO character standing outside the ship hull or on the exterior water/drop-off side of a railing/barrier, no 180-degree axis fusion between panels; crisp hard cuts at second 3.0 and second 6.0, no camera blending, no crossfades.",
+      "The video is full-frame shots only: never a grid, never panels, never split screen, never black dividing lines; strictly NO duplicate characters, strictly NO multiple Heracles, Labyrinth Beast, no ghost figures, no cloning; strictly NO character standing outside the ship hull or on the exterior water/drop-off side of a railing/barrier, no 180-degree axis fusion between panels; crisp hard cuts at second 3.0 and second 6.0, no camera blending, no crossfades; strictly NO hands on face, NO hands pressed against cheeks, NO face-covering gestures (all faces 100% unobstructed with hands gripping physical props).",
       "ANTI-CGI LOCK: real documentary footage, not a 3D render, not a video game, not CGI fire, no plastic skin.",
       "No breath vapor and no white steam from anyone's mouth; no god rays, no volumetric beams, no magical sunbeams.",
       "No shallow depth of field, no blurry background, no bokeh (f/8 aperture throughout).",
       "Separate bodies never merge; natural hands with five fingers; no extra limbs."
-    ]
+    ],
+    "sf_type": "GENERATE_IMAGE",
+    "image_prompt": "A film storyboard sheet, 16:9, made of FOUR photographic panels in a tight 2 by 2 grid, separated only by thin black lines; each panel is a 16:9 frame; no text, no captions. All four panels are cinematic feature-film stills of Location: karst labyrinth cavern and collapsed stone arch. Light: bụi đá dăm tung tóe, deep subterranean chiaroscuro shadows. Featuring {{media:37a10133-8496-49e7-bd77-b5f261c5a43e|heracles_clean.jpg}} (face 1:1, muscular build, fur mantle), {{media:a1905a31-82f6-4c94-b8b4-4c68570f2bfc|labyrinth_beast_clean.jpg}} (6m black chitinous 6-legged karst predator with amber eyes).\nTOP-LEFT PANEL, second 0: [MS] From second 0, Đuôi gai quái thú quất mạnh vào khiên đồng tóe lửa, Heracles trượt lùi 2 mét; bụi đá dăm tung tóe.\nTOP-RIGHT PANEL, second 3: [MCU] 90-degree angle shift: Kinetic mass and stone friction dominate the frame.\nBOTTOM-LEFT PANEL, second 6: [CU] The action concludes with steady physical equilibrium by second 8. Strictly Labyrinth Beast alone in this focal framing; Heracles are completely off-screen or in distinct background separation, never overlapping.\nBOTTOM-RIGHT PANEL, second 8: [MS] Final resolute hold in the same space, faces 100% unobstructed and hands gripping physical props.\ncinematic feature-film look: shot on ARRI Alexa with Cooke S4 prime lenses, fine 35mm film grain, deep focus (f/8), motivated practical light, realistic physics, strictly NO hands covering faces, strictly NOT a 3D render, NOT CGI, zero watermark, zero logos."
   },
   {
     "clip_id": "SC-105",
@@ -571,7 +587,7 @@
       }
     ],
     "timeline_action": {
-      "0-2s": "From second 0, Castor delivers the line immediately, sharp and urgent: Castor says \"The carapace is thick as granite! Iron arrowheads shatter like dry twigs against her!\" (no subtitles).",
+      "0-2s": "From second 0, Castor delivers the line immediately, sharp and urgent: Castor says \"Its shell is thick as granite! Iron bolts shatter on its backplate!\" (no subtitles).",
       "2-4s": "At second 2.0, a crisp hard cut: Castor's line finishes cleanly by second 4; castor bắn nỏ vào mắt kép quái thú nhưng mũi tên bật nảy.",
       "4-6s": "At second 4.0, a crisp hard cut: The physical combat stance settles firmly by second 6. Strictly Labyrinth Beast alone in this focal framing; Castor are completely off-screen or in distinct background separation, never overlapping. SPATIAL LOCK: All characters stand firmly on the interior solid deck or stone floor, NEVER on the exterior water/cliff drop-off side of any barrier; maintain a consistent 180-degree spatial axis within each shot."
     },
@@ -585,9 +601,9 @@
       "delivery": "shouted loud, sharp and clipped in visceral mortal combat",
       "dialogue": [
         {
-          "t": "0-4s",
+          "t": "0-5.0s",
           "speaker": "Castor",
-          "line": "The carapace is thick as granite! Iron arrowheads shatter like dry twigs against her!"
+          "line": "Its shell is thick as granite! Iron bolts shatter on its backplate!"
         }
       ]
     },
@@ -601,12 +617,14 @@
     "physics": "Massive momentum p=m*v of twenty-ton stone collapse, elastic chitin rebound on bronze, kinetic dust displacement.",
     "negative_constraints": [
       "No subtitles, no captions, no on-frame text, no logos, no watermarks.",
-      "The video is full-frame shots only: never a grid, never panels, never split screen, never black dividing lines; strictly NO duplicate characters, strictly NO multiple Castor, Labyrinth Beast, no ghost figures, no cloning; strictly NO character standing outside the ship hull or on the exterior water/drop-off side of a railing/barrier, no 180-degree axis fusion between panels; crisp hard cuts at second 2.0 and second 4.0, no camera blending, no crossfades.",
+      "The video is full-frame shots only: never a grid, never panels, never split screen, never black dividing lines; strictly NO duplicate characters, strictly NO multiple Castor, Labyrinth Beast, no ghost figures, no cloning; strictly NO character standing outside the ship hull or on the exterior water/drop-off side of a railing/barrier, no 180-degree axis fusion between panels; crisp hard cuts at second 2.0 and second 4.0, no camera blending, no crossfades; strictly NO hands on face, NO hands pressed against cheeks, NO face-covering gestures (all faces 100% unobstructed with hands gripping physical props).",
       "ANTI-CGI LOCK: real documentary footage, not a 3D render, not a video game, not CGI fire, no plastic skin.",
       "No breath vapor and no white steam from anyone's mouth; no god rays, no volumetric beams, no magical sunbeams.",
       "No shallow depth of field, no blurry background, no bokeh (f/8 aperture throughout).",
       "Separate bodies never merge; natural hands with five fingers; no extra limbs."
-    ]
+    ],
+    "sf_type": "GENERATE_IMAGE",
+    "image_prompt": "A film storyboard sheet, 16:9, made of FOUR photographic panels in a tight 2 by 2 grid, separated only by thin black lines; each panel is a 16:9 frame; no text, no captions. All four panels are cinematic feature-film stills of Location: karst labyrinth cavern and collapsed stone arch. Light: tia lửa bắn trên giáp, deep subterranean chiaroscuro shadows. Featuring {{media:3152a235-af4f-462b-a78e-02551f826e41|castor_clean.jpg}} (face 1:1, leather cuirass), {{media:a1905a31-82f6-4c94-b8b4-4c68570f2bfc|labyrinth_beast_clean.jpg}} (6m black chitinous 6-legged karst predator with amber eyes).\nTOP-LEFT PANEL, second 0: [MS] From second 0, Castor delivers the line immediately, sharp and urgent: Castor says \"Its shell is thick as granite! Iron bolts shatter on its backplate!\"\nTOP-RIGHT PANEL, second 3: [MCU] 90-degree angle shift: Castor's line finishes cleanly by second 4; castor bắn nỏ vào mắt kép quái thú nhưng mũi tên bật nảy.\nBOTTOM-LEFT PANEL, second 6: [CU] The physical combat stance settles firmly by second 6. Strictly Labyrinth Beast alone in this focal framing; Castor are completely off-screen or in distinct background separation, never overlapping.\nBOTTOM-RIGHT PANEL, second 8: [MS] Final resolute hold in the same space, faces 100% unobstructed and hands gripping physical props.\ncinematic feature-film look: shot on ARRI Alexa with Cooke S4 prime lenses, fine 35mm film grain, deep focus (f/8), motivated practical light, realistic physics, strictly NO hands covering faces, strictly NOT a 3D render, NOT CGI, zero watermark, zero logos."
   },
   {
     "clip_id": "SC-106",
@@ -642,7 +660,7 @@
       }
     ],
     "timeline_action": {
-      "0-3s": "From second 0, Theron begins speaking immediately, sharp and commanding: Theron says \"Do not waste arrows on her shell! The roof arch above is cracked—bring the limestone ceiling down upon her!\" (no subtitles).",
+      "0-3s": "From second 0, Theron begins speaking immediately, sharp and commanding: Theron says \"Stop firing at its shell! The cracked arch above can crush it!\" (no subtitles).",
       "3-6s": "At second 3.0, a crisp hard cut: Theron's command echoes through the cavern through second 5; theron chỉ lên vòm đá nứt nẻ phía trên đầu quái vật.",
       "6-8s": "At second 6.0, a crisp hard cut: The line concludes by second 6; Theron braces for the next impact through second 8. Strictly Theron alone in this focal framing; Nora are completely off-screen or in distinct background separation, never overlapping. SPATIAL LOCK: All characters stand firmly on the interior solid deck or stone floor, NEVER on the exterior water/cliff drop-off side of any barrier; maintain a consistent 180-degree spatial axis within each shot."
     },
@@ -656,9 +674,9 @@
       "delivery": "shouted loud, sharp and clipped in visceral mortal combat",
       "dialogue": [
         {
-          "t": "0-6s",
+          "t": "0-5.0s",
           "speaker": "Theron",
-          "line": "Do not waste arrows on her shell! The roof arch above is cracked—bring the limestone ceiling down upon her!"
+          "line": "Stop firing at its shell! The cracked arch above can crush it!"
         }
       ]
     },
@@ -672,12 +690,14 @@
     "physics": "Massive momentum p=m*v of twenty-ton stone collapse, elastic chitin rebound on bronze, kinetic dust displacement.",
     "negative_constraints": [
       "No subtitles, no captions, no on-frame text, no logos, no watermarks.",
-      "The video is full-frame shots only: never a grid, never panels, never split screen, never black dividing lines; strictly NO duplicate characters, strictly NO multiple Nora, Theron, no ghost figures, no cloning; strictly NO character standing outside the ship hull or on the exterior water/drop-off side of a railing/barrier, no 180-degree axis fusion between panels; crisp hard cuts at second 3.0 and second 6.0, no camera blending, no crossfades.",
+      "The video is full-frame shots only: never a grid, never panels, never split screen, never black dividing lines; strictly NO duplicate characters, strictly NO multiple Nora, Theron, no ghost figures, no cloning; strictly NO character standing outside the ship hull or on the exterior water/drop-off side of a railing/barrier, no 180-degree axis fusion between panels; crisp hard cuts at second 3.0 and second 6.0, no camera blending, no crossfades; strictly NO hands on face, NO hands pressed against cheeks, NO face-covering gestures (all faces 100% unobstructed with hands gripping physical props).",
       "ANTI-CGI LOCK: real documentary footage, not a 3D render, not a video game, not CGI fire, no plastic skin.",
       "No breath vapor and no white steam from anyone's mouth; no god rays, no volumetric beams, no magical sunbeams.",
       "No shallow depth of field, no blurry background, no bokeh (f/8 aperture throughout).",
       "Separate bodies never merge; natural hands with five fingers; no extra limbs."
-    ]
+    ],
+    "sf_type": "GENERATE_IMAGE",
+    "image_prompt": "A film storyboard sheet, 16:9, made of FOUR photographic panels in a tight 2 by 2 grid, separated only by thin black lines; each panel is a 16:9 frame; no text, no captions. All four panels are cinematic feature-film stills of Location: karst labyrinth cavern and collapsed stone arch. Light: ánh đèn bão rung rinh, deep subterranean chiaroscuro shadows. Featuring {{media:62e117f8-0af7-484e-90a8-f79927105746|nora_clean.jpg}} (face 1:1, seafarer brigandine), {{media:743ef618-f4c5-456c-9285-56dd911ca94b|nora_body_seafarer_clean.jpg}} (athletic build, navy leather brigandine), {{media:7c5d994a-dabd-406b-a6c1-b9fa6473a612|theron_clean.jpg}} (face 1:1, 58yo stranded navigator hermit in ragged tunic with wooden staff).\nTOP-LEFT PANEL, second 0: [MS] From second 0, Theron begins speaking immediately, sharp and commanding: Theron says \"Stop firing at its shell! The cracked arch above can crush it!\"\nTOP-RIGHT PANEL, second 3: [MCU] 90-degree angle shift: Theron's command echoes through the cavern through second 5; theron chỉ lên vòm đá nứt nẻ phía trên đầu quái vật.\nBOTTOM-LEFT PANEL, second 6: [CU] The line concludes by second 6; Theron braces for the next impact through second 8. Strictly Theron alone in this focal framing; Nora are completely off-screen or in distinct background separation, never overlapping.\nBOTTOM-RIGHT PANEL, second 8: [MS] Final resolute hold in the same space, faces 100% unobstructed and hands gripping physical props.\ncinematic feature-film look: shot on ARRI Alexa with Cooke S4 prime lenses, fine 35mm film grain, deep focus (f/8), motivated practical light, realistic physics, strictly NO hands covering faces, strictly NOT a 3D render, NOT CGI, zero watermark, zero logos."
   },
   {
     "clip_id": "SC-107",
@@ -713,7 +733,7 @@
       }
     ],
     "timeline_action": {
-      "0-3s": "From second 0, Nora begins speaking immediately, sharp and commanding: Nora says \"A twenty-ton keystone hanging by brittle calcified veins! Heracles, Castor, we need to lure her directly beneath the archway!\" (no subtitles).",
+      "0-3s": "From second 0, Nora begins speaking immediately, sharp and commanding: Nora says \"A twenty-ton keystone hanging by brittle rock! Lure the beast right under it!\" (no subtitles).",
       "3-6s": "At second 3.0, a crisp hard cut: Nora's command echoes through the cavern through second 5; nora quan sát thấy khối đá vôi 20 tấn giữ bởi các gờ nứt tự nhiên.",
       "6-8s": "At second 6.0, a crisp hard cut: The line concludes by second 6; Nora braces for the next impact through second 8. Strictly Heracles alone in this focal framing; Nora are completely off-screen or in distinct background separation, never overlapping. SPATIAL LOCK: All characters stand firmly on the interior solid deck or stone floor, NEVER on the exterior water/cliff drop-off side of any barrier; maintain a consistent 180-degree spatial axis within each shot."
     },
@@ -727,9 +747,9 @@
       "delivery": "shouted loud, sharp and clipped in visceral mortal combat",
       "dialogue": [
         {
-          "t": "0-6s",
+          "t": "0-5.0s",
           "speaker": "Nora",
-          "line": "A twenty-ton keystone hanging by brittle calcified veins! Heracles, Castor, we need to lure her directly beneath the archway!"
+          "line": "A twenty-ton keystone hanging by brittle rock! Lure the beast right under it!"
         }
       ]
     },
@@ -743,12 +763,14 @@
     "physics": "Massive momentum p=m*v of twenty-ton stone collapse, elastic chitin rebound on bronze, kinetic dust displacement.",
     "negative_constraints": [
       "No subtitles, no captions, no on-frame text, no logos, no watermarks.",
-      "The video is full-frame shots only: never a grid, never panels, never split screen, never black dividing lines; strictly NO duplicate characters, strictly NO multiple Nora, Heracles, no ghost figures, no cloning; strictly NO character standing outside the ship hull or on the exterior water/drop-off side of a railing/barrier, no 180-degree axis fusion between panels; crisp hard cuts at second 3.0 and second 6.0, no camera blending, no crossfades.",
+      "The video is full-frame shots only: never a grid, never panels, never split screen, never black dividing lines; strictly NO duplicate characters, strictly NO multiple Nora, Heracles, no ghost figures, no cloning; strictly NO character standing outside the ship hull or on the exterior water/drop-off side of a railing/barrier, no 180-degree axis fusion between panels; crisp hard cuts at second 3.0 and second 6.0, no camera blending, no crossfades; strictly NO hands on face, NO hands pressed against cheeks, NO face-covering gestures (all faces 100% unobstructed with hands gripping physical props).",
       "ANTI-CGI LOCK: real documentary footage, not a 3D render, not a video game, not CGI fire, no plastic skin.",
       "No breath vapor and no white steam from anyone's mouth; no god rays, no volumetric beams, no magical sunbeams.",
       "No shallow depth of field, no blurry background, no bokeh (f/8 aperture throughout).",
       "Separate bodies never merge; natural hands with five fingers; no extra limbs."
-    ]
+    ],
+    "sf_type": "GENERATE_IMAGE",
+    "image_prompt": "A film storyboard sheet, 16:9, made of FOUR photographic panels in a tight 2 by 2 grid, separated only by thin black lines; each panel is a 16:9 frame; no text, no captions. All four panels are cinematic feature-film stills of Location: karst labyrinth cavern and collapsed stone arch. Light: khối đá treo lơ lửng, deep subterranean chiaroscuro shadows. Featuring {{media:62e117f8-0af7-484e-90a8-f79927105746|nora_clean.jpg}} (face 1:1, seafarer brigandine), {{media:743ef618-f4c5-456c-9285-56dd911ca94b|nora_body_seafarer_clean.jpg}} (athletic build, navy leather brigandine), {{media:37a10133-8496-49e7-bd77-b5f261c5a43e|heracles_clean.jpg}} (face 1:1, muscular build, fur mantle).\nTOP-LEFT PANEL, second 0: [MS] From second 0, Nora begins speaking immediately, sharp and commanding: Nora says \"A twenty-ton keystone hanging by brittle rock! Lure the beast right under it!\"\nTOP-RIGHT PANEL, second 3: [MCU] 90-degree angle shift: Nora's command echoes through the cavern through second 5; nora quan sát thấy khối đá vôi 20 tấn giữ bởi các gờ nứt tự nhiên.\nBOTTOM-LEFT PANEL, second 6: [CU] The line concludes by second 6; Nora braces for the next impact through second 8. Strictly Heracles alone in this focal framing; Nora are completely off-screen or in distinct background separation, never overlapping.\nBOTTOM-RIGHT PANEL, second 8: [MS] Final resolute hold in the same space, faces 100% unobstructed and hands gripping physical props.\ncinematic feature-film look: shot on ARRI Alexa with Cooke S4 prime lenses, fine 35mm film grain, deep focus (f/8), motivated practical light, realistic physics, strictly NO hands covering faces, strictly NOT a 3D render, NOT CGI, zero watermark, zero logos."
   },
   {
     "clip_id": "SC-108",
@@ -782,7 +804,7 @@
       }
     ],
     "timeline_action": {
-      "0-3s": "From the opening frame at second 0, Nora shouts with ferocious intensity: Nora says \"She hunts by living warmth and bioluminescent shimmer! Watch the gold fire, beast of the abyss! Come feast upon your master's bait now!\" (no subtitles).",
+      "0-3s": "From the opening frame at second 0, Nora shouts with ferocious intensity: Nora says \"It hunts the map's golden glow! Follow the light into the trap, beast!\" (no subtitles).",
       "3-7s": "At second 3.0, a crisp hard cut: The battle command drives the maneuver through second 6 as nora rút tấm bản đồ da cừu vàng kim, vẩy nước muối làm nó phát quang rực rỡ thu hút quái thú.",
       "7-10s": "At second 7.0, a crisp hard cut: Nora concludes the line by second 7; the team executes the tactical strike through second 10. SPATIAL LOCK: All characters stand firmly on the interior solid deck or stone floor, NEVER on the exterior water/cliff drop-off side of any barrier; maintain a consistent 180-degree spatial axis within each shot."
     },
@@ -796,9 +818,9 @@
       "delivery": "shouted loud, sharp and clipped in visceral mortal combat",
       "dialogue": [
         {
-          "t": "0-7s",
+          "t": "0-6.0s",
           "speaker": "Nora",
-          "line": "She hunts by living warmth and bioluminescent shimmer! Watch the gold fire, beast of the abyss! Come feast upon your master's bait now!"
+          "line": "It hunts the map's golden glow! Follow the light into the trap, beast!"
         }
       ]
     },
@@ -812,12 +834,14 @@
     "physics": "Massive momentum p=m*v of twenty-ton stone collapse, elastic chitin rebound on bronze, kinetic dust displacement.",
     "negative_constraints": [
       "No subtitles, no captions, no on-frame text, no logos, no watermarks.",
-      "The video is full-frame shots only: never a grid, never panels, never split screen, never black dividing lines; strictly NO duplicate characters, strictly NO multiple Nora, no ghost figures, no cloning; strictly NO character standing outside the ship hull or on the exterior water/drop-off side of a railing/barrier, no 180-degree axis fusion between panels; crisp hard cuts at second 3.0 and second 7.0, no camera blending, no crossfades.",
+      "The video is full-frame shots only: never a grid, never panels, never split screen, never black dividing lines; strictly NO duplicate characters, strictly NO multiple Nora, no ghost figures, no cloning; strictly NO character standing outside the ship hull or on the exterior water/drop-off side of a railing/barrier, no 180-degree axis fusion between panels; crisp hard cuts at second 3.0 and second 7.0, no camera blending, no crossfades; strictly NO hands on face, NO hands pressed against cheeks, NO face-covering gestures (all faces 100% unobstructed with hands gripping physical props).",
       "ANTI-CGI LOCK: real documentary footage, not a 3D render, not a video game, not CGI fire, no plastic skin.",
       "No breath vapor and no white steam from anyone's mouth; no god rays, no volumetric beams, no magical sunbeams.",
       "No shallow depth of field, no blurry background, no bokeh (f/8 aperture throughout).",
       "Separate bodies never merge; natural hands with five fingers; no extra limbs."
-    ]
+    ],
+    "sf_type": "GENERATE_IMAGE",
+    "image_prompt": "A film storyboard sheet, 16:9, made of FOUR photographic panels in a tight 2 by 2 grid, separated only by thin black lines; each panel is a 16:9 frame; no text, no captions. All four panels are cinematic feature-film stills of Location: karst labyrinth cavern and collapsed stone arch. Light: mực vàng bừng sáng chói lòa, deep subterranean chiaroscuro shadows. Featuring {{media:62e117f8-0af7-484e-90a8-f79927105746|nora_clean.jpg}} (face 1:1, seafarer brigandine), {{media:743ef618-f4c5-456c-9285-56dd911ca94b|nora_body_seafarer_clean.jpg}} (athletic build, navy leather brigandine).\nTOP-LEFT PANEL, second 0: [MS] From the opening frame at second 0, Nora shouts with ferocious intensity: Nora says \"It hunts the map's golden glow! Follow the light into the trap, beast!\"\nTOP-RIGHT PANEL, second 3: [MCU] 90-degree angle shift: The battle command drives the maneuver through second 6 as nora rút tấm bản đồ da cừu vàng kim, vẩy nước muối làm nó phát quang rực rỡ thu hút quái thú.\nBOTTOM-LEFT PANEL, second 6: [CU] Nora concludes the line by second 7; the team executes the tactical strike through second 10.\nBOTTOM-RIGHT PANEL, second 8: [MS] Final resolute hold in the same space, faces 100% unobstructed and hands gripping physical props.\ncinematic feature-film look: shot on ARRI Alexa with Cooke S4 prime lenses, fine 35mm film grain, deep focus (f/8), motivated practical light, realistic physics, strictly NO hands covering faces, strictly NOT a 3D render, NOT CGI, zero watermark, zero logos."
   },
   {
     "clip_id": "SC-109",
@@ -869,12 +893,14 @@
     "physics": "Massive momentum p=m*v of twenty-ton stone collapse, elastic chitin rebound on bronze, kinetic dust displacement.",
     "negative_constraints": [
       "No subtitles, no captions, no on-frame text, no logos, no watermarks.",
-      "The video is full-frame shots only: never a grid, never panels, never split screen, never black dividing lines; strictly NO duplicate characters, strictly NO multiple Labyrinth Beast, no ghost figures, no cloning; strictly NO character standing outside the ship hull or on the exterior water/drop-off side of a railing/barrier, no 180-degree axis fusion between panels; crisp hard cuts at second 3.0 and second 6.0, no camera blending, no crossfades.",
+      "The video is full-frame shots only: never a grid, never panels, never split screen, never black dividing lines; strictly NO duplicate characters, strictly NO multiple Labyrinth Beast, no ghost figures, no cloning; strictly NO character standing outside the ship hull or on the exterior water/drop-off side of a railing/barrier, no 180-degree axis fusion between panels; crisp hard cuts at second 3.0 and second 6.0, no camera blending, no crossfades; strictly NO hands on face, NO hands pressed against cheeks, NO face-covering gestures (all faces 100% unobstructed with hands gripping physical props).",
       "ANTI-CGI LOCK: real documentary footage, not a 3D render, not a video game, not CGI fire, no plastic skin.",
       "No breath vapor and no white steam from anyone's mouth; no god rays, no volumetric beams, no magical sunbeams.",
       "No shallow depth of field, no blurry background, no bokeh (f/8 aperture throughout).",
       "Separate bodies never merge; natural hands with five fingers; no extra limbs."
-    ]
+    ],
+    "sf_type": "GENERATE_IMAGE",
+    "image_prompt": "A film storyboard sheet, 16:9, made of FOUR photographic panels in a tight 2 by 2 grid, separated only by thin black lines; each panel is a 16:9 frame; no text, no captions. All four panels are cinematic feature-film stills of Location: karst labyrinth cavern and collapsed stone arch. Light: bụi đá mù mịt, deep subterranean chiaroscuro shadows. Featuring {{media:a1905a31-82f6-4c94-b8b4-4c68570f2bfc|labyrinth_beast_clean.jpg}} (6m black chitinous 6-legged karst predator with amber eyes).\nTOP-LEFT PANEL, second 0: [MS] From second 0, Quái vật Labyrinth gầm rú, lao thẳng vào ánh sáng vàng rực của tấm bản đồ; bụi đá mù mịt.\nTOP-RIGHT PANEL, second 3: [MCU] 90-degree angle shift: Kinetic mass and stone friction dominate the frame.\nBOTTOM-LEFT PANEL, second 6: [CU] The action concludes with steady physical equilibrium by second 8.\nBOTTOM-RIGHT PANEL, second 8: [MS] Final resolute hold in the same space, faces 100% unobstructed and hands gripping physical props.\ncinematic feature-film look: shot on ARRI Alexa with Cooke S4 prime lenses, fine 35mm film grain, deep focus (f/8), motivated practical light, realistic physics, strictly NO hands covering faces, strictly NOT a 3D render, NOT CGI, zero watermark, zero logos."
   },
   {
     "clip_id": "SC-110",
@@ -904,7 +930,7 @@
       }
     ],
     "timeline_action": {
-      "0-3s": "From second 0, Nora begins speaking immediately, sharp and commanding: Nora says \"Take the bait into the dark! Right beneath the hanging stone jaws where your grave waits for you!\" (no subtitles).",
+      "0-3s": "From second 0, Nora begins speaking immediately, sharp and commanding: Nora says \"Follow the glowing parchment into the dark—right beneath the falling stone jaws!\" (no subtitles).",
       "3-6s": "At second 3.0, a crisp hard cut: Nora's command echoes through the cavern through second 5; nora giương nỏ, bắn mũi tên mang tấm bản đồ găm thẳng vào khe nứt dưới vòm đá.",
       "6-8s": "At second 6.0, a crisp hard cut: The line concludes by second 6; Nora braces for the next impact through second 8. SPATIAL LOCK: All characters stand firmly on the interior solid deck or stone floor, NEVER on the exterior water/cliff drop-off side of any barrier; maintain a consistent 180-degree spatial axis within each shot."
     },
@@ -918,9 +944,9 @@
       "delivery": "shouted loud, sharp and clipped in visceral mortal combat",
       "dialogue": [
         {
-          "t": "0-6s",
+          "t": "0-5.0s",
           "speaker": "Nora",
-          "line": "Take the bait into the dark! Right beneath the hanging stone jaws where your grave waits for you!"
+          "line": "Follow the glowing parchment into the dark—right beneath the falling stone jaws!"
         }
       ]
     },
@@ -934,12 +960,14 @@
     "physics": "Massive momentum p=m*v of twenty-ton stone collapse, elastic chitin rebound on bronze, kinetic dust displacement.",
     "negative_constraints": [
       "No subtitles, no captions, no on-frame text, no logos, no watermarks.",
-      "The video is full-frame shots only: never a grid, never panels, never split screen, never black dividing lines; strictly NO duplicate characters, strictly NO multiple Nora, no ghost figures, no cloning; strictly NO character standing outside the ship hull or on the exterior water/drop-off side of a railing/barrier, no 180-degree axis fusion between panels; crisp hard cuts at second 3.0 and second 6.0, no camera blending, no crossfades.",
+      "The video is full-frame shots only: never a grid, never panels, never split screen, never black dividing lines; strictly NO duplicate characters, strictly NO multiple Nora, no ghost figures, no cloning; strictly NO character standing outside the ship hull or on the exterior water/drop-off side of a railing/barrier, no 180-degree axis fusion between panels; crisp hard cuts at second 3.0 and second 6.0, no camera blending, no crossfades; strictly NO hands on face, NO hands pressed against cheeks, NO face-covering gestures (all faces 100% unobstructed with hands gripping physical props).",
       "ANTI-CGI LOCK: real documentary footage, not a 3D render, not a video game, not CGI fire, no plastic skin.",
       "No breath vapor and no white steam from anyone's mouth; no god rays, no volumetric beams, no magical sunbeams.",
       "No shallow depth of field, no blurry background, no bokeh (f/8 aperture throughout).",
       "Separate bodies never merge; natural hands with five fingers; no extra limbs."
-    ]
+    ],
+    "sf_type": "GENERATE_IMAGE",
+    "image_prompt": "A film storyboard sheet, 16:9, made of FOUR photographic panels in a tight 2 by 2 grid, separated only by thin black lines; each panel is a 16:9 frame; no text, no captions. All four panels are cinematic feature-film stills of Location: karst labyrinth cavern and collapsed stone arch. Light: ánh sáng vàng bay xé gió, deep subterranean chiaroscuro shadows. Featuring {{media:62e117f8-0af7-484e-90a8-f79927105746|nora_clean.jpg}} (face 1:1, seafarer brigandine), {{media:743ef618-f4c5-456c-9285-56dd911ca94b|nora_body_seafarer_clean.jpg}} (athletic build, navy leather brigandine).\nTOP-LEFT PANEL, second 0: [MS] From second 0, Nora begins speaking immediately, sharp and commanding: Nora says \"Follow the glowing parchment into the dark—right beneath the falling stone jaws!\"\nTOP-RIGHT PANEL, second 3: [MCU] 90-degree angle shift: Nora's command echoes through the cavern through second 5; nora giương nỏ, bắn mũi tên mang tấm bản đồ găm thẳng vào khe nứt dưới vòm đá.\nBOTTOM-LEFT PANEL, second 6: [CU] The line concludes by second 6; Nora braces for the next impact through second 8.\nBOTTOM-RIGHT PANEL, second 8: [MS] Final resolute hold in the same space, faces 100% unobstructed and hands gripping physical props.\ncinematic feature-film look: shot on ARRI Alexa with Cooke S4 prime lenses, fine 35mm film grain, deep focus (f/8), motivated practical light, realistic physics, strictly NO hands covering faces, strictly NOT a 3D render, NOT CGI, zero watermark, zero logos."
   },
   {
     "clip_id": "SC-111",
@@ -971,7 +999,7 @@
       }
     ],
     "timeline_action": {
-      "0-2s": "From second 0, Theron delivers the line immediately, sharp and urgent: Theron says \"She is in the kill zone! Cut the hemp cables and strike the wedge!\" (no subtitles).",
+      "0-2s": "From second 0, Theron delivers the line immediately, sharp and urgent: Theron says \"The prowler is under the keystone! Cut the cables and drive the wedge!\" (no subtitles).",
       "2-4s": "At second 2.0, a crisp hard cut: Theron's line finishes cleanly by second 4; quái vật chồm lên đớp lấy tấm bản đồ ngay dưới vòm đá.",
       "4-6s": "At second 4.0, a crisp hard cut: The physical combat stance settles firmly by second 6. SPATIAL LOCK: All characters stand firmly on the interior solid deck or stone floor, NEVER on the exterior water/cliff drop-off side of any barrier; maintain a consistent 180-degree spatial axis within each shot."
     },
@@ -985,9 +1013,9 @@
       "delivery": "shouted loud, sharp and clipped in visceral mortal combat",
       "dialogue": [
         {
-          "t": "0-4s",
+          "t": "0-5.0s",
           "speaker": "Theron",
-          "line": "She is in the kill zone! Cut the hemp cables and strike the wedge!"
+          "line": "The prowler is under the keystone! Cut the cables and drive the wedge!"
         }
       ]
     },
@@ -1001,12 +1029,14 @@
     "physics": "Massive momentum p=m*v of twenty-ton stone collapse, elastic chitin rebound on bronze, kinetic dust displacement.",
     "negative_constraints": [
       "No subtitles, no captions, no on-frame text, no logos, no watermarks.",
-      "The video is full-frame shots only: never a grid, never panels, never split screen, never black dividing lines; strictly NO duplicate characters, strictly NO multiple Labyrinth Beast, no ghost figures, no cloning; strictly NO character standing outside the ship hull or on the exterior water/drop-off side of a railing/barrier, no 180-degree axis fusion between panels; crisp hard cuts at second 2.0 and second 4.0, no camera blending, no crossfades.",
+      "The video is full-frame shots only: never a grid, never panels, never split screen, never black dividing lines; strictly NO duplicate characters, strictly NO multiple Labyrinth Beast, no ghost figures, no cloning; strictly NO character standing outside the ship hull or on the exterior water/drop-off side of a railing/barrier, no 180-degree axis fusion between panels; crisp hard cuts at second 2.0 and second 4.0, no camera blending, no crossfades; strictly NO hands on face, NO hands pressed against cheeks, NO face-covering gestures (all faces 100% unobstructed with hands gripping physical props).",
       "ANTI-CGI LOCK: real documentary footage, not a 3D render, not a video game, not CGI fire, no plastic skin.",
       "No breath vapor and no white steam from anyone's mouth; no god rays, no volumetric beams, no magical sunbeams.",
       "No shallow depth of field, no blurry background, no bokeh (f/8 aperture throughout).",
       "Separate bodies never merge; natural hands with five fingers; no extra limbs."
-    ]
+    ],
+    "sf_type": "GENERATE_IMAGE",
+    "image_prompt": "A film storyboard sheet, 16:9, made of FOUR photographic panels in a tight 2 by 2 grid, separated only by thin black lines; each panel is a 16:9 frame; no text, no captions. All four panels are cinematic feature-film stills of Location: karst labyrinth cavern and collapsed stone arch. Light: hàm kẹp mở rộng rỏ dãi, deep subterranean chiaroscuro shadows. Featuring {{media:a1905a31-82f6-4c94-b8b4-4c68570f2bfc|labyrinth_beast_clean.jpg}} (6m black chitinous 6-legged karst predator with amber eyes).\nTOP-LEFT PANEL, second 0: [MS] From second 0, Theron delivers the line immediately, sharp and urgent: Theron says \"The prowler is under the keystone! Cut the cables and drive the wedge!\"\nTOP-RIGHT PANEL, second 3: [MCU] 90-degree angle shift: Theron's line finishes cleanly by second 4; quái vật chồm lên đớp lấy tấm bản đồ ngay dưới vòm đá.\nBOTTOM-LEFT PANEL, second 6: [CU] The physical combat stance settles firmly by second 6.\nBOTTOM-RIGHT PANEL, second 8: [MS] Final resolute hold in the same space, faces 100% unobstructed and hands gripping physical props.\ncinematic feature-film look: shot on ARRI Alexa with Cooke S4 prime lenses, fine 35mm film grain, deep focus (f/8), motivated practical light, realistic physics, strictly NO hands covering faces, strictly NOT a 3D render, NOT CGI, zero watermark, zero logos."
   },
   {
     "clip_id": "SC-112",
@@ -1038,7 +1068,7 @@
       }
     ],
     "timeline_action": {
-      "0-3s": "From second 0, Castor begins speaking immediately, sharp and commanding: Castor says \"May the earth swallow you whole, demon! Timber and stone, come crashing down into the dark abyss!\" (no subtitles).",
+      "0-3s": "From second 0, Castor begins speaking immediately, sharp and commanding: Castor says \"May the mountain bury you whole, monster! Come crashing down right now!\" (no subtitles).",
       "3-6s": "At second 3.0, a crisp hard cut: Castor's command echoes through the cavern through second 5; castor vung đoản kiếm chém đứt sợi dây néo căng giữ chốt đá.",
       "6-8s": "At second 6.0, a crisp hard cut: The line concludes by second 6; Castor braces for the next impact through second 8. SPATIAL LOCK: All characters stand firmly on the interior solid deck or stone floor, NEVER on the exterior water/cliff drop-off side of any barrier; maintain a consistent 180-degree spatial axis within each shot."
     },
@@ -1052,9 +1082,9 @@
       "delivery": "shouted loud, sharp and clipped in visceral mortal combat",
       "dialogue": [
         {
-          "t": "0-6s",
+          "t": "0-5.0s",
           "speaker": "Castor",
-          "line": "May the earth swallow you whole, demon! Timber and stone, come crashing down into the dark abyss!"
+          "line": "May the mountain bury you whole, monster! Come crashing down right now!"
         }
       ]
     },
@@ -1068,12 +1098,14 @@
     "physics": "Massive momentum p=m*v of twenty-ton stone collapse, elastic chitin rebound on bronze, kinetic dust displacement.",
     "negative_constraints": [
       "No subtitles, no captions, no on-frame text, no logos, no watermarks.",
-      "The video is full-frame shots only: never a grid, never panels, never split screen, never black dividing lines; strictly NO duplicate characters, strictly NO multiple Castor, no ghost figures, no cloning; strictly NO character standing outside the ship hull or on the exterior water/drop-off side of a railing/barrier, no 180-degree axis fusion between panels; crisp hard cuts at second 3.0 and second 6.0, no camera blending, no crossfades.",
+      "The video is full-frame shots only: never a grid, never panels, never split screen, never black dividing lines; strictly NO duplicate characters, strictly NO multiple Castor, no ghost figures, no cloning; strictly NO character standing outside the ship hull or on the exterior water/drop-off side of a railing/barrier, no 180-degree axis fusion between panels; crisp hard cuts at second 3.0 and second 6.0, no camera blending, no crossfades; strictly NO hands on face, NO hands pressed against cheeks, NO face-covering gestures (all faces 100% unobstructed with hands gripping physical props).",
       "ANTI-CGI LOCK: real documentary footage, not a 3D render, not a video game, not CGI fire, no plastic skin.",
       "No breath vapor and no white steam from anyone's mouth; no god rays, no volumetric beams, no magical sunbeams.",
       "No shallow depth of field, no blurry background, no bokeh (f/8 aperture throughout).",
       "Separate bodies never merge; natural hands with five fingers; no extra limbs."
-    ]
+    ],
+    "sf_type": "GENERATE_IMAGE",
+    "image_prompt": "A film storyboard sheet, 16:9, made of FOUR photographic panels in a tight 2 by 2 grid, separated only by thin black lines; each panel is a 16:9 frame; no text, no captions. All four panels are cinematic feature-film stills of Location: karst labyrinth cavern and collapsed stone arch. Light: lưỡi kiếm sáng loáng, deep subterranean chiaroscuro shadows. Featuring {{media:3152a235-af4f-462b-a78e-02551f826e41|castor_clean.jpg}} (face 1:1, leather cuirass).\nTOP-LEFT PANEL, second 0: [MS] From second 0, Castor begins speaking immediately, sharp and commanding: Castor says \"May the mountain bury you whole, monster! Come crashing down right now!\"\nTOP-RIGHT PANEL, second 3: [MCU] 90-degree angle shift: Castor's command echoes through the cavern through second 5; castor vung đoản kiếm chém đứt sợi dây néo căng giữ chốt đá.\nBOTTOM-LEFT PANEL, second 6: [CU] The line concludes by second 6; Castor braces for the next impact through second 8.\nBOTTOM-RIGHT PANEL, second 8: [MS] Final resolute hold in the same space, faces 100% unobstructed and hands gripping physical props.\ncinematic feature-film look: shot on ARRI Alexa with Cooke S4 prime lenses, fine 35mm film grain, deep focus (f/8), motivated practical light, realistic physics, strictly NO hands covering faces, strictly NOT a 3D render, NOT CGI, zero watermark, zero logos."
   },
   {
     "clip_id": "SC-113",
@@ -1102,7 +1134,7 @@
       }
     ],
     "timeline_action": {
-      "0-3s": "From second 0, Heracles begins speaking immediately, sharp and commanding: Heracles says \"Give way, you ancient mountain! Bury this scavenger deep beneath twenty tons of crushed Aegean limestone and boulders!\" (no subtitles).",
+      "0-3s": "From second 0, Heracles begins speaking immediately, sharp and commanding: Heracles says \"Give way, ancient stone! Bury this beast under twenty tons of karst rock!\" (no subtitles).",
       "3-6s": "At second 3.0, a crisp hard cut: Heracles's command echoes through the cavern through second 5; heracles dùng đòn bẩy sắt dộng mạnh vào nêm đá chịu lực cuối cùng.",
       "6-8s": "At second 6.0, a crisp hard cut: The line concludes by second 6; Heracles braces for the next impact through second 8. SPATIAL LOCK: All characters stand firmly on the interior solid deck or stone floor, NEVER on the exterior water/cliff drop-off side of any barrier; maintain a consistent 180-degree spatial axis within each shot."
     },
@@ -1116,9 +1148,9 @@
       "delivery": "shouted loud, sharp and clipped in visceral mortal combat",
       "dialogue": [
         {
-          "t": "0-6s",
+          "t": "0-5.0s",
           "speaker": "Heracles",
-          "line": "Give way, you ancient mountain! Bury this scavenger deep beneath twenty tons of crushed Aegean limestone and boulders!"
+          "line": "Give way, ancient stone! Bury this beast under twenty tons of karst rock!"
         }
       ]
     },
@@ -1132,12 +1164,14 @@
     "physics": "Massive momentum p=m*v of twenty-ton stone collapse, elastic chitin rebound on bronze, kinetic dust displacement.",
     "negative_constraints": [
       "No subtitles, no captions, no on-frame text, no logos, no watermarks.",
-      "The video is full-frame shots only: never a grid, never panels, never split screen, never black dividing lines; strictly NO duplicate characters, strictly NO multiple Heracles, no ghost figures, no cloning; strictly NO character standing outside the ship hull or on the exterior water/drop-off side of a railing/barrier, no 180-degree axis fusion between panels; crisp hard cuts at second 3.0 and second 6.0, no camera blending, no crossfades.",
+      "The video is full-frame shots only: never a grid, never panels, never split screen, never black dividing lines; strictly NO duplicate characters, strictly NO multiple Heracles, no ghost figures, no cloning; strictly NO character standing outside the ship hull or on the exterior water/drop-off side of a railing/barrier, no 180-degree axis fusion between panels; crisp hard cuts at second 3.0 and second 6.0, no camera blending, no crossfades; strictly NO hands on face, NO hands pressed against cheeks, NO face-covering gestures (all faces 100% unobstructed with hands gripping physical props).",
       "ANTI-CGI LOCK: real documentary footage, not a 3D render, not a video game, not CGI fire, no plastic skin.",
       "No breath vapor and no white steam from anyone's mouth; no god rays, no volumetric beams, no magical sunbeams.",
       "No shallow depth of field, no blurry background, no bokeh (f/8 aperture throughout).",
       "Separate bodies never merge; natural hands with five fingers; no extra limbs."
-    ]
+    ],
+    "sf_type": "GENERATE_IMAGE",
+    "image_prompt": "A film storyboard sheet, 16:9, made of FOUR photographic panels in a tight 2 by 2 grid, separated only by thin black lines; each panel is a 16:9 frame; no text, no captions. All four panels are cinematic feature-film stills of Location: karst labyrinth cavern and collapsed stone arch. Light: cơ bắp gồng cứng, deep subterranean chiaroscuro shadows. Featuring {{media:37a10133-8496-49e7-bd77-b5f261c5a43e|heracles_clean.jpg}} (face 1:1, muscular build, fur mantle).\nTOP-LEFT PANEL, second 0: [MS] From second 0, Heracles begins speaking immediately, sharp and commanding: Heracles says \"Give way, ancient stone! Bury this beast under twenty tons of karst rock!\"\nTOP-RIGHT PANEL, second 3: [MCU] 90-degree angle shift: Heracles's command echoes through the cavern through second 5; heracles dùng đòn bẩy sắt dộng mạnh vào nêm đá chịu lực cuối cùng.\nBOTTOM-LEFT PANEL, second 6: [CU] The line concludes by second 6; Heracles braces for the next impact through second 8.\nBOTTOM-RIGHT PANEL, second 8: [MS] Final resolute hold in the same space, faces 100% unobstructed and hands gripping physical props.\ncinematic feature-film look: shot on ARRI Alexa with Cooke S4 prime lenses, fine 35mm film grain, deep focus (f/8), motivated practical light, realistic physics, strictly NO hands covering faces, strictly NOT a 3D render, NOT CGI, zero watermark, zero logos."
   },
   {
     "clip_id": "SC-114",
@@ -1189,12 +1223,14 @@
     "physics": "Massive momentum p=m*v of twenty-ton stone collapse, elastic chitin rebound on bronze, kinetic dust displacement.",
     "negative_constraints": [
       "No subtitles, no captions, no on-frame text, no logos, no watermarks.",
-      "The video is full-frame shots only: never a grid, never panels, never split screen, never black dividing lines; strictly NO duplicate characters, strictly NO multiple Labyrinth Beast, no ghost figures, no cloning; strictly NO character standing outside the ship hull or on the exterior water/drop-off side of a railing/barrier, no 180-degree axis fusion between panels; crisp hard cuts at second 3.0 and second 7.0, no camera blending, no crossfades.",
+      "The video is full-frame shots only: never a grid, never panels, never split screen, never black dividing lines; strictly NO duplicate characters, strictly NO multiple Labyrinth Beast, no ghost figures, no cloning; strictly NO character standing outside the ship hull or on the exterior water/drop-off side of a railing/barrier, no 180-degree axis fusion between panels; crisp hard cuts at second 3.0 and second 7.0, no camera blending, no crossfades; strictly NO hands on face, NO hands pressed against cheeks, NO face-covering gestures (all faces 100% unobstructed with hands gripping physical props).",
       "ANTI-CGI LOCK: real documentary footage, not a 3D render, not a video game, not CGI fire, no plastic skin.",
       "No breath vapor and no white steam from anyone's mouth; no god rays, no volumetric beams, no magical sunbeams.",
       "No shallow depth of field, no blurry background, no bokeh (f/8 aperture throughout).",
       "Separate bodies never merge; natural hands with five fingers; no extra limbs."
-    ]
+    ],
+    "sf_type": "GENERATE_IMAGE",
+    "image_prompt": "A film storyboard sheet, 16:9, made of FOUR photographic panels in a tight 2 by 2 grid, separated only by thin black lines; each panel is a 16:9 frame; no text, no captions. All four panels are cinematic feature-film stills of Location: karst labyrinth cavern and collapsed stone arch. Light: đất đá đổ sập kinh hoàng, deep subterranean chiaroscuro shadows. Featuring {{media:a1905a31-82f6-4c94-b8b4-4c68570f2bfc|labyrinth_beast_clean.jpg}} (6m black chitinous 6-legged karst predator with amber eyes).\nTOP-LEFT PANEL, second 0: [MS] At second 0, Vòm đá 20 tấn sụp đổ dữ dội, bụi đá trắng mịt mù nghiền nát quái thú Labyrinth; đất đá đổ sập kinh hoàng.\nTOP-RIGHT PANEL, second 3: [MCU] 90-degree angle shift: The colossal twenty-ton rock collapse shakes the entire cavern chamber.\nBOTTOM-LEFT PANEL, second 6: [CU] The monumental impact resolves as dust settles over the crushed creature by second 10.\nBOTTOM-RIGHT PANEL, second 8: [MS] Final resolute hold in the same space, faces 100% unobstructed and hands gripping physical props.\ncinematic feature-film look: shot on ARRI Alexa with Cooke S4 prime lenses, fine 35mm film grain, deep focus (f/8), motivated practical light, realistic physics, strictly NO hands covering faces, strictly NOT a 3D render, NOT CGI, zero watermark, zero logos."
   },
   {
     "clip_id": "SC-115",
@@ -1248,12 +1284,14 @@
     "physics": "Massive momentum p=m*v of twenty-ton stone collapse, elastic chitin rebound on bronze, kinetic dust displacement.",
     "negative_constraints": [
       "No subtitles, no captions, no on-frame text, no logos, no watermarks.",
-      "The video is full-frame shots only: never a grid, never panels, never split screen, never black dividing lines; strictly NO duplicate characters, strictly NO multiple Nora, no ghost figures, no cloning; strictly NO character standing outside the ship hull or on the exterior water/drop-off side of a railing/barrier, no 180-degree axis fusion between panels; crisp hard cuts at second 3.0 and second 6.0, no camera blending, no crossfades.",
+      "The video is full-frame shots only: never a grid, never panels, never split screen, never black dividing lines; strictly NO duplicate characters, strictly NO multiple Nora, no ghost figures, no cloning; strictly NO character standing outside the ship hull or on the exterior water/drop-off side of a railing/barrier, no 180-degree axis fusion between panels; crisp hard cuts at second 3.0 and second 6.0, no camera blending, no crossfades; strictly NO hands on face, NO hands pressed against cheeks, NO face-covering gestures (all faces 100% unobstructed with hands gripping physical props).",
       "ANTI-CGI LOCK: real documentary footage, not a 3D render, not a video game, not CGI fire, no plastic skin.",
       "No breath vapor and no white steam from anyone's mouth; no god rays, no volumetric beams, no magical sunbeams.",
       "No shallow depth of field, no blurry background, no bokeh (f/8 aperture throughout).",
       "Separate bodies never merge; natural hands with five fingers; no extra limbs."
-    ]
+    ],
+    "sf_type": "GENERATE_IMAGE",
+    "image_prompt": "A film storyboard sheet, 16:9, made of FOUR photographic panels in a tight 2 by 2 grid, separated only by thin black lines; each panel is a 16:9 frame; no text, no captions. All four panels are cinematic feature-film stills of Location: karst labyrinth cavern and collapsed stone arch. Light: bụi vôi mờ ảo, deep subterranean chiaroscuro shadows. Featuring {{media:62e117f8-0af7-484e-90a8-f79927105746|nora_clean.jpg}} (face 1:1, seafarer brigandine), {{media:743ef618-f4c5-456c-9285-56dd911ca94b|nora_body_seafarer_clean.jpg}} (athletic build, navy leather brigandine).\nTOP-LEFT PANEL, second 0: [MS] From second 0, Bụi trắng tan dần, chỉ còn lại đống đá đổ và lớp giáp xác vỡ nát bất động; bụi vôi mờ ảo.\nTOP-RIGHT PANEL, second 3: [MCU] 90-degree angle shift: Kinetic mass and stone friction dominate the frame.\nBOTTOM-LEFT PANEL, second 6: [CU] The action concludes with steady physical equilibrium by second 8.\nBOTTOM-RIGHT PANEL, second 8: [MS] Final resolute hold in the same space, faces 100% unobstructed and hands gripping physical props.\ncinematic feature-film look: shot on ARRI Alexa with Cooke S4 prime lenses, fine 35mm film grain, deep focus (f/8), motivated practical light, realistic physics, strictly NO hands covering faces, strictly NOT a 3D render, NOT CGI, zero watermark, zero logos."
   },
   {
     "clip_id": "SC-116",
@@ -1285,7 +1323,7 @@
       }
     ],
     "timeline_action": {
-      "0-3s": "From second 0, Castor begins speaking immediately, sharp and commanding: Castor says \"The gold ink is cold and dark. Its lethal glamour died the moment the guardian beast was crushed to dust.\" (no subtitles).",
+      "0-3s": "From second 0, Castor begins speaking immediately, sharp and commanding: Castor says \"The golden ink went cold and dark. Its trap died with the beast.\" (no subtitles).",
       "3-6s": "At second 3.0, a crisp hard cut: Castor's command echoes through the cavern through second 5; castor nhặt lại tấm bản đồ nguyên vẹn nằm trên gờ đá, mực vàng đã tắt lịm.",
       "6-8s": "At second 6.0, a crisp hard cut: The line concludes by second 6; Castor braces for the next impact through second 8. SPATIAL LOCK: All characters stand firmly on the interior solid deck or stone floor, NEVER on the exterior water/cliff drop-off side of any barrier; maintain a consistent 180-degree spatial axis within each shot."
     },
@@ -1299,9 +1337,9 @@
       "delivery": "shouted loud, sharp and clipped in visceral mortal combat",
       "dialogue": [
         {
-          "t": "0-6s",
+          "t": "0-5.0s",
           "speaker": "Castor",
-          "line": "The gold ink is cold and dark. Its lethal glamour died the moment the guardian beast was crushed to dust."
+          "line": "The golden ink went cold and dark. Its trap died with the beast."
         }
       ]
     },
@@ -1315,12 +1353,14 @@
     "physics": "Massive momentum p=m*v of twenty-ton stone collapse, elastic chitin rebound on bronze, kinetic dust displacement.",
     "negative_constraints": [
       "No subtitles, no captions, no on-frame text, no logos, no watermarks.",
-      "The video is full-frame shots only: never a grid, never panels, never split screen, never black dividing lines; strictly NO duplicate characters, strictly NO multiple Castor, no ghost figures, no cloning; strictly NO character standing outside the ship hull or on the exterior water/drop-off side of a railing/barrier, no 180-degree axis fusion between panels; crisp hard cuts at second 3.0 and second 6.0, no camera blending, no crossfades.",
+      "The video is full-frame shots only: never a grid, never panels, never split screen, never black dividing lines; strictly NO duplicate characters, strictly NO multiple Castor, no ghost figures, no cloning; strictly NO character standing outside the ship hull or on the exterior water/drop-off side of a railing/barrier, no 180-degree axis fusion between panels; crisp hard cuts at second 3.0 and second 6.0, no camera blending, no crossfades; strictly NO hands on face, NO hands pressed against cheeks, NO face-covering gestures (all faces 100% unobstructed with hands gripping physical props).",
       "ANTI-CGI LOCK: real documentary footage, not a 3D render, not a video game, not CGI fire, no plastic skin.",
       "No breath vapor and no white steam from anyone's mouth; no god rays, no volumetric beams, no magical sunbeams.",
       "No shallow depth of field, no blurry background, no bokeh (f/8 aperture throughout).",
       "Separate bodies never merge; natural hands with five fingers; no extra limbs."
-    ]
+    ],
+    "sf_type": "GENERATE_IMAGE",
+    "image_prompt": "A film storyboard sheet, 16:9, made of FOUR photographic panels in a tight 2 by 2 grid, separated only by thin black lines; each panel is a 16:9 frame; no text, no captions. All four panels are cinematic feature-film stills of Location: karst labyrinth cavern and collapsed stone arch. Light: mặt giấy trắng trở lại, deep subterranean chiaroscuro shadows. Featuring {{media:3152a235-af4f-462b-a78e-02551f826e41|castor_clean.jpg}} (face 1:1, leather cuirass).\nTOP-LEFT PANEL, second 0: [MS] From second 0, Castor begins speaking immediately, sharp and commanding: Castor says \"The golden ink went cold and dark. Its trap died with the beast.\"\nTOP-RIGHT PANEL, second 3: [MCU] 90-degree angle shift: Castor's command echoes through the cavern through second 5; castor nhặt lại tấm bản đồ nguyên vẹn nằm trên gờ đá, mực vàng đã tắt lịm.\nBOTTOM-LEFT PANEL, second 6: [CU] The line concludes by second 6; Castor braces for the next impact through second 8.\nBOTTOM-RIGHT PANEL, second 8: [MS] Final resolute hold in the same space, faces 100% unobstructed and hands gripping physical props.\ncinematic feature-film look: shot on ARRI Alexa with Cooke S4 prime lenses, fine 35mm film grain, deep focus (f/8), motivated practical light, realistic physics, strictly NO hands covering faces, strictly NOT a 3D render, NOT CGI, zero watermark, zero logos."
   },
   {
     "clip_id": "SC-117",
@@ -1350,7 +1390,7 @@
       }
     ],
     "timeline_action": {
-      "0-2s": "From second 0, Nora delivers the line immediately, sharp and urgent: Nora says \"The map has done its work. Now we walk only by Theron's wisdom.\" (no subtitles).",
+      "0-2s": "From second 0, Nora delivers the line immediately, sharp and urgent: Nora says \"We need no glowing bait anymore. Theron's eyes will guide us through.\" (no subtitles).",
       "2-4s": "At second 2.0, a crisp hard cut: Nora's line finishes cleanly by second 4; nora nhận lại tấm da cừu trắng tinh, cuộn lại nhét vào bao.",
       "4-6s": "At second 4.0, a crisp hard cut: The physical combat stance settles firmly by second 6. SPATIAL LOCK: All characters stand firmly on the interior solid deck or stone floor, NEVER on the exterior water/cliff drop-off side of any barrier; maintain a consistent 180-degree spatial axis within each shot."
     },
@@ -1364,9 +1404,9 @@
       "delivery": "shouted loud, sharp and clipped in visceral mortal combat",
       "dialogue": [
         {
-          "t": "0-4s",
+          "t": "0-5.0s",
           "speaker": "Nora",
-          "line": "The map has done its work. Now we walk only by Theron's wisdom."
+          "line": "We need no glowing bait anymore. Theron's eyes will guide us through."
         }
       ]
     },
@@ -1380,12 +1420,14 @@
     "physics": "Massive momentum p=m*v of twenty-ton stone collapse, elastic chitin rebound on bronze, kinetic dust displacement.",
     "negative_constraints": [
       "No subtitles, no captions, no on-frame text, no logos, no watermarks.",
-      "The video is full-frame shots only: never a grid, never panels, never split screen, never black dividing lines; strictly NO duplicate characters, strictly NO multiple Nora, no ghost figures, no cloning; strictly NO character standing outside the ship hull or on the exterior water/drop-off side of a railing/barrier, no 180-degree axis fusion between panels; crisp hard cuts at second 2.0 and second 4.0, no camera blending, no crossfades.",
+      "The video is full-frame shots only: never a grid, never panels, never split screen, never black dividing lines; strictly NO duplicate characters, strictly NO multiple Nora, no ghost figures, no cloning; strictly NO character standing outside the ship hull or on the exterior water/drop-off side of a railing/barrier, no 180-degree axis fusion between panels; crisp hard cuts at second 2.0 and second 4.0, no camera blending, no crossfades; strictly NO hands on face, NO hands pressed against cheeks, NO face-covering gestures (all faces 100% unobstructed with hands gripping physical props).",
       "ANTI-CGI LOCK: real documentary footage, not a 3D render, not a video game, not CGI fire, no plastic skin.",
       "No breath vapor and no white steam from anyone's mouth; no god rays, no volumetric beams, no magical sunbeams.",
       "No shallow depth of field, no blurry background, no bokeh (f/8 aperture throughout).",
       "Separate bodies never merge; natural hands with five fingers; no extra limbs."
-    ]
+    ],
+    "sf_type": "GENERATE_IMAGE",
+    "image_prompt": "A film storyboard sheet, 16:9, made of FOUR photographic panels in a tight 2 by 2 grid, separated only by thin black lines; each panel is a 16:9 frame; no text, no captions. All four panels are cinematic feature-film stills of Location: karst labyrinth cavern and collapsed stone arch. Light: gương mặt phong trần, deep subterranean chiaroscuro shadows. Featuring {{media:62e117f8-0af7-484e-90a8-f79927105746|nora_clean.jpg}} (face 1:1, seafarer brigandine), {{media:743ef618-f4c5-456c-9285-56dd911ca94b|nora_body_seafarer_clean.jpg}} (athletic build, navy leather brigandine).\nTOP-LEFT PANEL, second 0: [MS] From second 0, Nora delivers the line immediately, sharp and urgent: Nora says \"We need no glowing bait anymore. Theron's eyes will guide us through.\"\nTOP-RIGHT PANEL, second 3: [MCU] 90-degree angle shift: Nora's line finishes cleanly by second 4; nora nhận lại tấm da cừu trắng tinh, cuộn lại nhét vào bao.\nBOTTOM-LEFT PANEL, second 6: [CU] The physical combat stance settles firmly by second 6.\nBOTTOM-RIGHT PANEL, second 8: [MS] Final resolute hold in the same space, faces 100% unobstructed and hands gripping physical props.\ncinematic feature-film look: shot on ARRI Alexa with Cooke S4 prime lenses, fine 35mm film grain, deep focus (f/8), motivated practical light, realistic physics, strictly NO hands covering faces, strictly NOT a 3D render, NOT CGI, zero watermark, zero logos."
   },
   {
     "clip_id": "SC-118",
@@ -1417,7 +1459,7 @@
       }
     ],
     "timeline_action": {
-      "0-3s": "From second 0, Theron begins speaking immediately, sharp and commanding: Theron says \"The collapse breached the inner wall! Feel the warm updraft carrying the scent of petrified gold and sweet water?\" (no subtitles).",
+      "0-3s": "From second 0, Theron begins speaking immediately, sharp and commanding: Theron says \"The rockfall opened the inner wall! Feel the warm updraft from the sanctum!\" (no subtitles).",
       "3-6s": "At second 3.0, a crisp hard cut: Theron's command echoes through the cavern through second 5; theron dùng gậy đá gõ vào khe nứt sâu vừa lộ ra sau vụ sạt lở.",
       "6-8s": "At second 6.0, a crisp hard cut: The line concludes by second 6; Theron braces for the next impact through second 8. SPATIAL LOCK: All characters stand firmly on the interior solid deck or stone floor, NEVER on the exterior water/cliff drop-off side of any barrier; maintain a consistent 180-degree spatial axis within each shot."
     },
@@ -1431,9 +1473,9 @@
       "delivery": "shouted loud, sharp and clipped in visceral mortal combat",
       "dialogue": [
         {
-          "t": "0-6s",
+          "t": "0-5.0s",
           "speaker": "Theron",
-          "line": "The collapse breached the inner wall! Feel the warm updraft carrying the scent of petrified gold and sweet water?"
+          "line": "The rockfall opened the inner wall! Feel the warm updraft from the sanctum!"
         }
       ]
     },
@@ -1447,12 +1489,14 @@
     "physics": "Massive momentum p=m*v of twenty-ton stone collapse, elastic chitin rebound on bronze, kinetic dust displacement.",
     "negative_constraints": [
       "No subtitles, no captions, no on-frame text, no logos, no watermarks.",
-      "The video is full-frame shots only: never a grid, never panels, never split screen, never black dividing lines; strictly NO duplicate characters, strictly NO multiple Theron, no ghost figures, no cloning; strictly NO character standing outside the ship hull or on the exterior water/drop-off side of a railing/barrier, no 180-degree axis fusion between panels; crisp hard cuts at second 3.0 and second 6.0, no camera blending, no crossfades.",
+      "The video is full-frame shots only: never a grid, never panels, never split screen, never black dividing lines; strictly NO duplicate characters, strictly NO multiple Theron, no ghost figures, no cloning; strictly NO character standing outside the ship hull or on the exterior water/drop-off side of a railing/barrier, no 180-degree axis fusion between panels; crisp hard cuts at second 3.0 and second 6.0, no camera blending, no crossfades; strictly NO hands on face, NO hands pressed against cheeks, NO face-covering gestures (all faces 100% unobstructed with hands gripping physical props).",
       "ANTI-CGI LOCK: real documentary footage, not a 3D render, not a video game, not CGI fire, no plastic skin.",
       "No breath vapor and no white steam from anyone's mouth; no god rays, no volumetric beams, no magical sunbeams.",
       "No shallow depth of field, no blurry background, no bokeh (f/8 aperture throughout).",
       "Separate bodies never merge; natural hands with five fingers; no extra limbs."
-    ]
+    ],
+    "sf_type": "GENERATE_IMAGE",
+    "image_prompt": "A film storyboard sheet, 16:9, made of FOUR photographic panels in a tight 2 by 2 grid, separated only by thin black lines; each panel is a 16:9 frame; no text, no captions. All four panels are cinematic feature-film stills of Location: karst labyrinth cavern and collapsed stone arch. Light: gió ấm thổi qua khe, deep subterranean chiaroscuro shadows. Featuring {{media:7c5d994a-dabd-406b-a6c1-b9fa6473a612|theron_clean.jpg}} (face 1:1, 58yo stranded navigator hermit in ragged tunic with wooden staff).\nTOP-LEFT PANEL, second 0: [MS] From second 0, Theron begins speaking immediately, sharp and commanding: Theron says \"The rockfall opened the inner wall! Feel the warm updraft from the sanctum!\"\nTOP-RIGHT PANEL, second 3: [MCU] 90-degree angle shift: Theron's command echoes through the cavern through second 5; theron dùng gậy đá gõ vào khe nứt sâu vừa lộ ra sau vụ sạt lở.\nBOTTOM-LEFT PANEL, second 6: [CU] The line concludes by second 6; Theron braces for the next impact through second 8.\nBOTTOM-RIGHT PANEL, second 8: [MS] Final resolute hold in the same space, faces 100% unobstructed and hands gripping physical props.\ncinematic feature-film look: shot on ARRI Alexa with Cooke S4 prime lenses, fine 35mm film grain, deep focus (f/8), motivated practical light, realistic physics, strictly NO hands covering faces, strictly NOT a 3D render, NOT CGI, zero watermark, zero logos."
   },
   {
     "clip_id": "SC-119",
@@ -1488,7 +1532,7 @@
       }
     ],
     "timeline_action": {
-      "0-3s": "From the opening frame at second 0, Nora shouts with ferocious intensity: Nora says \"Look at the golden dust drifting on the warm wind like glowing fireflies... the sanctuary of the Golden Tree is waiting just beyond!\" (no subtitles).",
+      "0-3s": "From the opening frame at second 0, Nora shouts with ferocious intensity: Nora says \"Golden dust drifting on the warm wind... the sanctuary lies just ahead.\" (no subtitles).",
       "3-7s": "At second 3.0, a crisp hard cut: The battle command drives the maneuver through second 6 as một luồng khí ấm mang theo bụi sáng golden embers lơ lửng thổi qua khe nứt.",
       "7-10s": "At second 7.0, a crisp hard cut: Nora concludes the line by second 7; the team executes the tactical strike through second 10. Strictly Castor alone in this focal framing; Nora are completely off-screen or in distinct background separation, never overlapping. SPATIAL LOCK: All characters stand firmly on the interior solid deck or stone floor, NEVER on the exterior water/cliff drop-off side of any barrier; maintain a consistent 180-degree spatial axis within each shot."
     },
@@ -1502,9 +1546,9 @@
       "delivery": "shouted loud, sharp and clipped in visceral mortal combat",
       "dialogue": [
         {
-          "t": "0-7s",
+          "t": "0-5.0s",
           "speaker": "Nora",
-          "line": "Look at the golden dust drifting on the warm wind like glowing fireflies... the sanctuary of the Golden Tree is waiting just beyond!"
+          "line": "Golden dust drifting on the warm wind... the sanctuary lies just ahead."
         }
       ]
     },
@@ -1518,12 +1562,14 @@
     "physics": "Massive momentum p=m*v of twenty-ton stone collapse, elastic chitin rebound on bronze, kinetic dust displacement.",
     "negative_constraints": [
       "No subtitles, no captions, no on-frame text, no logos, no watermarks.",
-      "The video is full-frame shots only: never a grid, never panels, never split screen, never black dividing lines; strictly NO duplicate characters, strictly NO multiple Nora, Castor, no ghost figures, no cloning; strictly NO character standing outside the ship hull or on the exterior water/drop-off side of a railing/barrier, no 180-degree axis fusion between panels; crisp hard cuts at second 3.0 and second 7.0, no camera blending, no crossfades.",
+      "The video is full-frame shots only: never a grid, never panels, never split screen, never black dividing lines; strictly NO duplicate characters, strictly NO multiple Nora, Castor, no ghost figures, no cloning; strictly NO character standing outside the ship hull or on the exterior water/drop-off side of a railing/barrier, no 180-degree axis fusion between panels; crisp hard cuts at second 3.0 and second 7.0, no camera blending, no crossfades; strictly NO hands on face, NO hands pressed against cheeks, NO face-covering gestures (all faces 100% unobstructed with hands gripping physical props).",
       "ANTI-CGI LOCK: real documentary footage, not a 3D render, not a video game, not CGI fire, no plastic skin.",
       "No breath vapor and no white steam from anyone's mouth; no god rays, no volumetric beams, no magical sunbeams.",
       "No shallow depth of field, no blurry background, no bokeh (f/8 aperture throughout).",
       "Separate bodies never merge; natural hands with five fingers; no extra limbs."
-    ]
+    ],
+    "sf_type": "GENERATE_IMAGE",
+    "image_prompt": "A film storyboard sheet, 16:9, made of FOUR photographic panels in a tight 2 by 2 grid, separated only by thin black lines; each panel is a 16:9 frame; no text, no captions. All four panels are cinematic feature-film stills of Location: karst labyrinth cavern and collapsed stone arch. Light: hạt bụi vàng trôi nổi, deep subterranean chiaroscuro shadows. Featuring {{media:62e117f8-0af7-484e-90a8-f79927105746|nora_clean.jpg}} (face 1:1, seafarer brigandine), {{media:743ef618-f4c5-456c-9285-56dd911ca94b|nora_body_seafarer_clean.jpg}} (athletic build, navy leather brigandine), {{media:3152a235-af4f-462b-a78e-02551f826e41|castor_clean.jpg}} (face 1:1, leather cuirass).\nTOP-LEFT PANEL, second 0: [MS] From the opening frame at second 0, Nora shouts with ferocious intensity: Nora says \"Golden dust drifting on the warm wind... the sanctuary lies just ahead.\"\nTOP-RIGHT PANEL, second 3: [MCU] 90-degree angle shift: The battle command drives the maneuver through second 6 as một luồng khí ấm mang theo bụi sáng golden embers lơ lửng thổi qua khe nứt.\nBOTTOM-LEFT PANEL, second 6: [CU] Nora concludes the line by second 7; the team executes the tactical strike through second 10. Strictly Castor alone in this focal framing; Nora are completely off-screen or in distinct background separation, never overlapping.\nBOTTOM-RIGHT PANEL, second 8: [MS] Final resolute hold in the same space, faces 100% unobstructed and hands gripping physical props.\ncinematic feature-film look: shot on ARRI Alexa with Cooke S4 prime lenses, fine 35mm film grain, deep focus (f/8), motivated practical light, realistic physics, strictly NO hands covering faces, strictly NOT a 3D render, NOT CGI, zero watermark, zero logos."
   },
   {
     "clip_id": "SC-120",
@@ -1562,7 +1608,7 @@
       }
     ],
     "timeline_action": {
-      "0-3s": "From second 0, Heracles begins speaking immediately, sharp and commanding: Heracles says \"The crawlway is open, Captain. Let us leave this graveyard behind and see what treasures remain uncursed in the deep.\" (no subtitles).",
+      "0-3s": "From second 0, Heracles begins speaking immediately, sharp and commanding: Heracles says \"The passage is clear, Captain. Let us leave this dark graveyard behind.\" (no subtitles).",
       "3-6s": "At second 3.0, a crisp hard cut: Heracles's command echoes through the cavern through second 5; heracles dọn sạch những viên đá vôi sắc nhọn mở lối đi hẹp.",
       "6-8s": "At second 6.0, a crisp hard cut: The line concludes by second 6; Heracles braces for the next impact through second 8. Strictly Theron alone in this focal framing; Heracles are completely off-screen or in distinct background separation, never overlapping. SPATIAL LOCK: All characters stand firmly on the interior solid deck or stone floor, NEVER on the exterior water/cliff drop-off side of any barrier; maintain a consistent 180-degree spatial axis within each shot."
     },
@@ -1576,9 +1622,9 @@
       "delivery": "shouted loud, sharp and clipped in visceral mortal combat",
       "dialogue": [
         {
-          "t": "0-6s",
+          "t": "0-5.0s",
           "speaker": "Heracles",
-          "line": "The crawlway is open, Captain. Let us leave this graveyard behind and see what treasures remain uncursed in the deep."
+          "line": "The passage is clear, Captain. Let us leave this dark graveyard behind."
         }
       ]
     },
@@ -1592,12 +1638,14 @@
     "physics": "Massive momentum p=m*v of twenty-ton stone collapse, elastic chitin rebound on bronze, kinetic dust displacement.",
     "negative_constraints": [
       "No subtitles, no captions, no on-frame text, no logos, no watermarks.",
-      "The video is full-frame shots only: never a grid, never panels, never split screen, never black dividing lines; strictly NO duplicate characters, strictly NO multiple Heracles, Theron, no ghost figures, no cloning; strictly NO character standing outside the ship hull or on the exterior water/drop-off side of a railing/barrier, no 180-degree axis fusion between panels; crisp hard cuts at second 3.0 and second 6.0, no camera blending, no crossfades.",
+      "The video is full-frame shots only: never a grid, never panels, never split screen, never black dividing lines; strictly NO duplicate characters, strictly NO multiple Heracles, Theron, no ghost figures, no cloning; strictly NO character standing outside the ship hull or on the exterior water/drop-off side of a railing/barrier, no 180-degree axis fusion between panels; crisp hard cuts at second 3.0 and second 6.0, no camera blending, no crossfades; strictly NO hands on face, NO hands pressed against cheeks, NO face-covering gestures (all faces 100% unobstructed with hands gripping physical props).",
       "ANTI-CGI LOCK: real documentary footage, not a 3D render, not a video game, not CGI fire, no plastic skin.",
       "No breath vapor and no white steam from anyone's mouth; no god rays, no volumetric beams, no magical sunbeams.",
       "No shallow depth of field, no blurry background, no bokeh (f/8 aperture throughout).",
       "Separate bodies never merge; natural hands with five fingers; no extra limbs."
-    ]
+    ],
+    "sf_type": "GENERATE_IMAGE",
+    "image_prompt": "A film storyboard sheet, 16:9, made of FOUR photographic panels in a tight 2 by 2 grid, separated only by thin black lines; each panel is a 16:9 frame; no text, no captions. All four panels are cinematic feature-film stills of Location: karst labyrinth cavern and collapsed stone arch. Light: đá dăm lăn lạo xạo, deep subterranean chiaroscuro shadows. Featuring {{media:37a10133-8496-49e7-bd77-b5f261c5a43e|heracles_clean.jpg}} (face 1:1, muscular build, fur mantle), {{media:7c5d994a-dabd-406b-a6c1-b9fa6473a612|theron_clean.jpg}} (face 1:1, 58yo stranded navigator hermit in ragged tunic with wooden staff).\nTOP-LEFT PANEL, second 0: [MS] From second 0, Heracles begins speaking immediately, sharp and commanding: Heracles says \"The passage is clear, Captain. Let us leave this dark graveyard behind.\"\nTOP-RIGHT PANEL, second 3: [MCU] 90-degree angle shift: Heracles's command echoes through the cavern through second 5; heracles dọn sạch những viên đá vôi sắc nhọn mở lối đi hẹp.\nBOTTOM-LEFT PANEL, second 6: [CU] The line concludes by second 6; Heracles braces for the next impact through second 8. Strictly Theron alone in this focal framing; Heracles are completely off-screen or in distinct background separation, never overlapping.\nBOTTOM-RIGHT PANEL, second 8: [MS] Final resolute hold in the same space, faces 100% unobstructed and hands gripping physical props.\ncinematic feature-film look: shot on ARRI Alexa with Cooke S4 prime lenses, fine 35mm film grain, deep focus (f/8), motivated practical light, realistic physics, strictly NO hands covering faces, strictly NOT a 3D render, NOT CGI, zero watermark, zero logos."
   },
   {
     "clip_id": "SC-121",
@@ -1652,7 +1700,7 @@
       }
     ],
     "timeline_action": {
-      "0-2s": "From second 0, Theron delivers the line immediately, sharp and urgent: Theron says \"Keep your eyes open, sailors. What lies ahead has blinded kings with holy terror.\" (no subtitles).",
+      "0-2s": "From second 0, Theron delivers the line immediately, sharp and urgent: Theron says \"Guard your hearts inside this chamber, sailors. Its beauty has blinded kings.\" (no subtitles).",
       "2-4s": "At second 2.0, a crisp hard cut: Theron's line finishes cleanly by second 4; theron đi trước, nora, castor và heracles bước qua khe nứt.",
       "4-6s": "At second 4.0, a crisp hard cut: The physical combat stance settles firmly by second 6. Strictly Theron alone in this focal framing; Nora and Castor and Heracles are completely off-screen or in distinct background separation, never overlapping. SPATIAL LOCK: All characters stand firmly on the interior solid deck or stone floor, NEVER on the exterior water/cliff drop-off side of any barrier; maintain a consistent 180-degree spatial axis within each shot."
     },
@@ -1666,9 +1714,9 @@
       "delivery": "shouted loud, sharp and clipped in visceral mortal combat",
       "dialogue": [
         {
-          "t": "0-4s",
+          "t": "0-5.0s",
           "speaker": "Theron",
-          "line": "Keep your eyes open, sailors. What lies ahead has blinded kings with holy terror."
+          "line": "Guard your hearts inside this chamber, sailors. Its beauty has blinded kings."
         }
       ]
     },
@@ -1682,12 +1730,14 @@
     "physics": "Massive momentum p=m*v of twenty-ton stone collapse, elastic chitin rebound on bronze, kinetic dust displacement.",
     "negative_constraints": [
       "No subtitles, no captions, no on-frame text, no logos, no watermarks.",
-      "The video is full-frame shots only: never a grid, never panels, never split screen, never black dividing lines; strictly NO duplicate characters, strictly NO multiple Nora, Castor, Heracles, Theron, no ghost figures, no cloning; strictly NO character standing outside the ship hull or on the exterior water/drop-off side of a railing/barrier, no 180-degree axis fusion between panels; crisp hard cuts at second 2.0 and second 4.0, no camera blending, no crossfades.",
+      "The video is full-frame shots only: never a grid, never panels, never split screen, never black dividing lines; strictly NO duplicate characters, strictly NO multiple Nora, Castor, Heracles, Theron, no ghost figures, no cloning; strictly NO character standing outside the ship hull or on the exterior water/drop-off side of a railing/barrier, no 180-degree axis fusion between panels; crisp hard cuts at second 2.0 and second 4.0, no camera blending, no crossfades; strictly NO hands on face, NO hands pressed against cheeks, NO face-covering gestures (all faces 100% unobstructed with hands gripping physical props).",
       "ANTI-CGI LOCK: real documentary footage, not a 3D render, not a video game, not CGI fire, no plastic skin.",
       "No breath vapor and no white steam from anyone's mouth; no god rays, no volumetric beams, no magical sunbeams.",
       "No shallow depth of field, no blurry background, no bokeh (f/8 aperture throughout).",
       "Separate bodies never merge; natural hands with five fingers; no extra limbs."
-    ]
+    ],
+    "sf_type": "GENERATE_IMAGE",
+    "image_prompt": "A film storyboard sheet, 16:9, made of FOUR photographic panels in a tight 2 by 2 grid, separated only by thin black lines; each panel is a 16:9 frame; no text, no captions. All four panels are cinematic feature-film stills of Location: karst labyrinth cavern and collapsed stone arch. Light: ánh sáng vàng hắt ngược bóng, deep subterranean chiaroscuro shadows. Featuring {{media:62e117f8-0af7-484e-90a8-f79927105746|nora_clean.jpg}} (face 1:1, seafarer brigandine), {{media:743ef618-f4c5-456c-9285-56dd911ca94b|nora_body_seafarer_clean.jpg}} (athletic build, navy leather brigandine), {{media:3152a235-af4f-462b-a78e-02551f826e41|castor_clean.jpg}} (face 1:1, leather cuirass), {{media:37a10133-8496-49e7-bd77-b5f261c5a43e|heracles_clean.jpg}} (face 1:1, muscular build, fur mantle), {{media:7c5d994a-dabd-406b-a6c1-b9fa6473a612|theron_clean.jpg}} (face 1:1, 58yo stranded navigator hermit in ragged tunic with wooden staff).\nTOP-LEFT PANEL, second 0: [MS] From second 0, Theron delivers the line immediately, sharp and urgent: Theron says \"Guard your hearts inside this chamber, sailors. Its beauty has blinded kings.\"\nTOP-RIGHT PANEL, second 3: [MCU] 90-degree angle shift: Theron's line finishes cleanly by second 4; theron đi trước, nora, castor và heracles bước qua khe nứt.\nBOTTOM-LEFT PANEL, second 6: [CU] The physical combat stance settles firmly by second 6. Strictly Theron alone in this focal framing; Nora and Castor and Heracles are completely off-screen or in distinct background separation, never overlapping.\nBOTTOM-RIGHT PANEL, second 8: [MS] Final resolute hold in the same space, faces 100% unobstructed and hands gripping physical props.\ncinematic feature-film look: shot on ARRI Alexa with Cooke S4 prime lenses, fine 35mm film grain, deep focus (f/8), motivated practical light, realistic physics, strictly NO hands covering faces, strictly NOT a 3D render, NOT CGI, zero watermark, zero logos."
   },
   {
     "clip_id": "SC-122",
@@ -1741,11 +1791,13 @@
     "physics": "Massive momentum p=m*v of twenty-ton stone collapse, elastic chitin rebound on bronze, kinetic dust displacement.",
     "negative_constraints": [
       "No subtitles, no captions, no on-frame text, no logos, no watermarks.",
-      "The video is full-frame shots only: never a grid, never panels, never split screen, never black dividing lines; strictly NO duplicate characters, strictly NO multiple Nora, no ghost figures, no cloning; strictly NO character standing outside the ship hull or on the exterior water/drop-off side of a railing/barrier, no 180-degree axis fusion between panels; crisp hard cuts at second 3.0 and second 7.0, no camera blending, no crossfades.",
+      "The video is full-frame shots only: never a grid, never panels, never split screen, never black dividing lines; strictly NO duplicate characters, strictly NO multiple Nora, no ghost figures, no cloning; strictly NO character standing outside the ship hull or on the exterior water/drop-off side of a railing/barrier, no 180-degree axis fusion between panels; crisp hard cuts at second 3.0 and second 7.0, no camera blending, no crossfades; strictly NO hands on face, NO hands pressed against cheeks, NO face-covering gestures (all faces 100% unobstructed with hands gripping physical props).",
       "ANTI-CGI LOCK: real documentary footage, not a 3D render, not a video game, not CGI fire, no plastic skin.",
       "No breath vapor and no white steam from anyone's mouth; no god rays, no volumetric beams, no magical sunbeams.",
       "No shallow depth of field, no blurry background, no bokeh (f/8 aperture throughout).",
       "Separate bodies never merge; natural hands with five fingers; no extra limbs."
-    ]
+    ],
+    "sf_type": "GENERATE_IMAGE",
+    "image_prompt": "A film storyboard sheet, 16:9, made of FOUR photographic panels in a tight 2 by 2 grid, separated only by thin black lines; each panel is a 16:9 frame; no text, no captions. All four panels are cinematic feature-film stills of Location: karst labyrinth cavern and collapsed stone arch. Light: ánh sáng vàng kim bùng nổ, deep subterranean chiaroscuro shadows. Featuring {{media:62e117f8-0af7-484e-90a8-f79927105746|nora_clean.jpg}} (face 1:1, seafarer brigandine), {{media:743ef618-f4c5-456c-9285-56dd911ca94b|nora_body_seafarer_clean.jpg}} (athletic build, navy leather brigandine).\nTOP-LEFT PANEL, second 0: [MS] At second 0, Ánh sáng vàng rực rỡ từ giếng trời ngầm chiếu rọi bóng bốn người bước vào thánh địa (Hạ màn Hồi 2B); ánh sáng vàng kim bùng nổ.\nTOP-RIGHT PANEL, second 3: [MCU] 90-degree angle shift: The colossal twenty-ton rock collapse shakes the entire cavern chamber.\nBOTTOM-LEFT PANEL, second 6: [CU] The monumental impact resolves as dust settles over the crushed creature by second 10.\nBOTTOM-RIGHT PANEL, second 8: [MS] Final resolute hold in the same space, faces 100% unobstructed and hands gripping physical props.\ncinematic feature-film look: shot on ARRI Alexa with Cooke S4 prime lenses, fine 35mm film grain, deep focus (f/8), motivated practical light, realistic physics, strictly NO hands covering faces, strictly NOT a 3D render, NOT CGI, zero watermark, zero logos."
   }
 ]

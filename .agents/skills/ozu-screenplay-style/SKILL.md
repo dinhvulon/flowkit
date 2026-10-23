@@ -1,6 +1,6 @@
 ---
 name: ozu-screenplay-style
-description: Writing screenplays in the style of Ozu Yasujiro and Noda Kogo (小津安二郎・野田高梧) — distilled from six complete screenplays (晚春 Late Spring, 麦秋 Early Summer, 东京物语 Tokyo Story, 浮草 Floating Weeds, 秋日和 Late Autumn, 秋刀鱼之味 An Autumn Afternoon). Covers the "family member leaves" master plot, off-screen events / on-screen reactions, lie-driven plots, minimal-syllable confessions, go-between characters, faceless suitors, pillow-shot scene breaks, echoing objects, mirror characters, children's subplots as metaphor, displaced quarrels, the single-monologue rule, diminishing endings, Ozu's script format and stage-direction vocabulary. Use when the user wants to write a quiet family drama, a 小津风 / 侘寂 / 日常系 script, a story about marrying off a daughter, aging parents, or wants dialogue that says less and means more.
+description: 'Writing screenplays in the style of Ozu Yasujiro and Noda Kogo (小津安二郎・野田高梧) — distilled from six complete screenplays (晚春 Late Spring, 麦秋 Early Summer, 东京物语 Tokyo Story, 浮草 Floating Weeds, 秋日和 Late Autumn, 秋刀鱼之味 An Autumn Afternoon). Covers the "family member leaves" master plot, off-screen events / on-screen reactions, lie-driven plots, minimal-syllable confessions, go-between characters, faceless suitors, pillow-shot scene breaks, echoing objects, mirror characters, children''s subplots as metaphor, displaced quarrels, the single-monologue rule, diminishing endings, Ozu''s script format and stage-direction vocabulary. Use when the user wants to write a quiet family drama, a 小津风 / 侘寂 / 日常系 script, a story about marrying off a daughter, aging parents, or wants dialogue that says less and means more.'
 ---
 
 # 小津安二郎剧本写法（Ozu Screenplay Style）
@@ -320,3 +320,4 @@ description: Writing screenplays in the style of Ozu Yasujiro and Noda Kogo (小
 - [ ] 主题句是不是在看风景时说的？
 - [ ] 推动者的私心有没有被别人（妻子/外人）笑着揭穿？
 - [ ] 死者有没有一个物件或一个"有点像"的活人？
+

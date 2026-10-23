@@ -1,6 +1,6 @@
 ---
 name: chekhov-dramaturgy
-description: Writing plays and screenplays in the Chekhovian mode (契诃夫戏剧法) — distilled from the complete plays (没有父亲的人/普拉东诺夫, 伊凡诺夫, 林妖→万尼亚舅舅, 海鸥, 三姊妹, 樱桃园, nine one-acts) plus Chekhov's own letters, Stanislavsky's and Nemirovich-Danchenko's rehearsal notes and 焦菊隐/童道明 criticism. Covers the four-act mood-based structure without central climax, off-stage events, "correct answer stated in Act 1 and refused", the announced event that never happens, three-layer endings (hope monologue + nihilist line + household action), no-villain conflict with environment, every character's object and catchphrase, one-way love chains, half-step-off dialogue, philosophy cut by thirst, the shortest words for the deepest pain, stage-direction and sound discipline, and how Chekhov revised The Wood Demon into Uncle Vanya. Use when the user wants an ensemble drama, a "nothing happens" play, subtext-heavy dialogue, a family estate / provincial story, an anti-climactic structure, or asks how to "Chekhov-ize" a script.
+description: 'Writing plays and screenplays in the Chekhovian mode (契诃夫戏剧法) — distilled from the complete plays (没有父亲的人/普拉东诺夫, 伊凡诺夫, 林妖→万尼亚舅舅, 海鸥, 三姊妹, 樱桃园, nine one-acts) plus Chekhov''s own letters, Stanislavsky''s and Nemirovich-Danchenko''s rehearsal notes and 焦菊隐/童道明 criticism. Covers the four-act mood-based structure without central climax, off-stage events, "correct answer stated in Act 1 and refused", the announced event that never happens, three-layer endings (hope monologue + nihilist line + household action), no-villain conflict with environment, every character''s object and catchphrase, one-way love chains, half-step-off dialogue, philosophy cut by thirst, the shortest words for the deepest pain, stage-direction and sound discipline, and how Chekhov revised The Wood Demon into Uncle Vanya. Use when the user wants an ensemble drama, a "nothing happens" play, subtext-heavy dialogue, a family estate / provincial story, an anti-climactic structure, or asks how to "Chekhov-ize" a script.'
 ---
 
 # 契诃夫戏剧法（Chekhov Dramaturgy）
@@ -324,3 +324,4 @@ description: Writing plays and screenplays in the Chekhovian mode (契诃夫戏�
 10. 全剧预告的一件事是否在结尾没有发生？
 11. 结尾是否是"希望独白＋虚无者一句＋日常动作"？
 12. 你是否坚持它是喜剧？
+
