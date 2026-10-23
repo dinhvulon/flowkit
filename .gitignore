@@ -51,6 +51,7 @@ series_manifest.json
 # Must stay after the output/**/*.mp4 rule: the last matching rule wins.
 !output/hell_creek_66_ma_v2/scenes/
 !output/hell_creek_66_ma_v2/scenes/**
+!output/golden-tree/1080/*_1080p_clean.mp4
 
 # Edit intermediates (raw.mov / mix.f32 run 200–800 MB each, over GitHub's 100 MB limit)
 output/*/edit/work/*_pieces/
