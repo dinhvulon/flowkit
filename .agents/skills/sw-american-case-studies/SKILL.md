@@ -135,7 +135,7 @@ The narrative advances strictly through causal reversals rather than episodic co
 
 ---
 
-## VIII. *Fargo* (Joel & Ethan Coen): Character Preceding Plot
+## III. *Fargo* (Joel & Ethan Coen): Character Preceding Plot
 
 ### 1. The Crime Revealed in Minute One
 The narrative contains no mystery regarding *who* committed the crime. Suspense is generated entirely by watching **an incompetent scheme spiral out of control**.
