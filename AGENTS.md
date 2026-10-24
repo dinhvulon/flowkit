@@ -133,7 +133,10 @@ curl -s http://127.0.0.1:8100/health
 5. Init Project      GET /health -> Flush stale PENDING requests (Rule 21) -> POST /api/projects -> POST /api/videos -> POST /api/scenes
 6. Gen Ref Sheets    BẮT BUỘC 100% dùng /fk-character-design (Rule 58, Rule 72) thiết kế Turnaround Sheet 16:9 35mm Live-Action / Practical SFX.
                      Tải ảnh về -> remove_watermark_from_image.py -> xóa ảnh gốc còn logo -> upload bản _clean.jpg lấy UUID sạch (Rule 28) -> User duyệt.
-6.5 Storyboards 2×2  Với mọi cảnh chuyển (Rule 65 Loại 2): sinh ảnh Storyboard 2×2 có truyền source_media_id từ ảnh ref gốc (Rule 69 (8)).
+6.5 Storyboards 2×2  JUST-IN-TIME (user 24/10/2026): KHÔNG sinh storyboard hàng loạt trước. Chỉ sinh storyboard của MỘT cảnh ngay trước khi sinh video cảnh đó,
+                     dùng ngay, xong cảnh mới sang cảnh sau (storyboard làm sẵn/để lâu đã gây lỗi R2V MZZa6b [3]). Nếu R2V vẫn báo [3] với storyboard → bỏ storyboard,
+                     sinh video chỉ với ref nhân vật/sinh vật, mô tả các shot bằng chữ.
+                     Với mọi cảnh chuyển (Rule 65 Loại 2): sinh ảnh Storyboard 2×2 có truyền source_media_id từ ảnh ref gốc (Rule 69 (8)).
                      Tải về -> remove_watermark_from_image.py -> xóa ảnh gốc còn logo -> upload bản _clean.jpg lấy UUID gán <CLIP> Storyboard.
                      VISUAL AUDIT BẮT BUỘC (Rule 69 (7) & Rule 74): Đọc trực tiếp 4 panel thực tế để chỉnh video_prompt khớp 100% -> User duyệt.
 7. Gen Videos (R2V)  POST /api/requests/batch (type: "GENERATE_VIDEO_REFS" — Omni Flash abra_r2v_<N>s Pure References).

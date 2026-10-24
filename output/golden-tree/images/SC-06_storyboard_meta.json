@@ -1,8 +1,9 @@
 {
   "clip_id": "SC-06",
-  "scene_name": "SC-06",
-  "raw_media_id": "03c7680d-7a4b-4503-adde-727e0cf3161d",
-  "clean_media_id": "6fe82b75-4623-4632-bad3-25f8fea136c5",
-  "clean_path": "c:\\flowkit\\output\\golden-tree\\images\\SC-06_storyboard_clean.jpg",
-  "scale_locked": "1.8m Coelacanth (80kg)"
+  "scene_name": "The Terrified Herald's Plea",
+  "raw_media_id": "98ab0f58-c392-4d12-982d-6f1049176ce8",
+  "clean_media_id": "4594af74-f39e-479b-bb4b-fe27a27a1c05",
+  "clean_path": "output/golden-tree/images/SC-06_storyboard_clean.jpg",
+  "scale_locked": "1.8m Coelacanth (80kg)",
+  "version": "just-in-time 2026-10-24"
 }
