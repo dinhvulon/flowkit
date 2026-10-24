@@ -205,10 +205,13 @@ def review(video, expected, clip_duration, model_name, device):
             row["f0_hz"] = round(f0) if f0 else None
             row["sex"] = VOICE_SEX.get((e["voice"] or "").lower())
             if f0 and row["sex"] == "M" and f0 > MALE_MAX_HZ:
-                row["warnings"].append(f"VOICE?: {e['speaker']} ({e['voice']}, male) pitch {f0:.0f} Hz is high for a male voice - listen")
+                msg = f"VOICE_MISMATCH: {e['speaker']} ({e['voice']}, male) pitch {f0:.0f} Hz > {MALE_MAX_HZ:.0f} Hz (sounded like female voice)"
+                row["issues"].append(msg)
+                row["warnings"].append(msg)
             if f0 and row["sex"] == "F" and f0 < FEMALE_MIN_HZ:
-                row["warnings"].append(f"VOICE?: {e['speaker']} ({e['voice']}, female) pitch {f0:.0f} Hz is low for a female voice - listen")
-        problems += [f"{e['speaker']}: {x}" for x in row["issues"]]
+                msg = f"VOICE_MISMATCH: {e['speaker']} ({e['voice']}, female) pitch {f0:.0f} Hz < {FEMALE_MIN_HZ:.0f} Hz (sounded like male voice)"
+                row["issues"].append(msg)
+                row["warnings"].append(msg)
         rows.append(row)
     # relative check: in a mixed clip every male line should sit clearly below every female line
     males = [r for r in rows if r["sex"] == "M" and r["f0_hz"]]
@@ -216,8 +219,13 @@ def review(video, expected, clip_duration, model_name, device):
     for m in males:
         for f in females:
             if m["f0_hz"] > f["f0_hz"] * 0.9:
-                m["warnings"].append(f"VOICE?: {m['speaker']} ({m['f0_hz']} Hz) is not clearly lower than "
-                                     f"{f['speaker']} ({f['f0_hz']} Hz) - listen: are the two voices swapped or the same?")
+                msg = (f"VOICE_COLLISION: {m['speaker']} ({m['f0_hz']} Hz, male) is not clearly lower than "
+                       f"{f['speaker']} ({f['f0_hz']} Hz, female) — both characters spoke with the same/wrong voice!")
+                if msg not in m["issues"]:
+                    m["issues"].append(msg)
+                m["warnings"].append(msg)
+    for row in rows:
+        problems += [f"{row['speaker']}: {x}" for x in row["issues"]]
     warnings = [f"{r['speaker']}: {w}" for r in rows for w in r["warnings"]]
     extra = [x for k, x in enumerate(words) if k not in used]
     extra_text = " ".join(x["w"] for x in extra)

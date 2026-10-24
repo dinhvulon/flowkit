@@ -362,6 +362,20 @@ MEDIA_MENTION_RE = re.compile(r"\{\{media:([0-9a-fA-F-]{36})\|([^}|]+)\}\}")
 VOICE_MENTION_RE = re.compile(r"\{\{voice:([a-zA-Z]+)\}\}")
 MENTION_RE = re.compile(f"{MEDIA_MENTION_RE.pattern}|{VOICE_MENTION_RE.pattern}")
 
+# The 30 Pinhole / Gemini-TTS voices Flow accepts (skills/fk-film/references/voice-bible.md §0).
+# Shared with tools/lint_prompt.py; anything else is rejected before it reaches Flow.
+PINHOLE_VOICES = frozenset({
+    "achernar", "achird", "algenib", "algieba", "alnilam", "aoede", "autonoe", "callirrhoe",
+    "charon", "despina", "enceladus", "erinome", "fenrir", "gacrux", "iapetus", "kore",
+    "laomedeia", "leda", "orus", "puck", "pulcherrima", "rasalgethi", "sadachbia", "sadaltager",
+    "schedar", "sulafat", "umbriel", "vindemiatrix", "zephyr", "zubenelgenubi",
+})
+
+
+def invalid_voice_ids(voice_ids) -> list[str]:
+    """Voice ids that are not Pinhole voices, in order, without duplicates."""
+    return list(dict.fromkeys(v for v in voice_ids if str(v).strip().lower() not in PINHOLE_VOICES))
+
 
 def prompt_segments(prompt: str) -> list:
     """Split a prompt into Flow prompt segments; plain text stays one segment."""
@@ -598,9 +612,17 @@ def omni_reference_video_request(prompt: str, project_id: str,
         None,
         [None, None, None, None, _client_uuid(), _client_uuid()],
     ]
-    # Rule 24: In Omni Flash / Pinhole Reference-to-Video (MZZa6b), Slot 7 is natively pinned to [["laomedeia"]].
-    # Sending other voices or multi-voice triggers Google Flow "RpcError: MZZa6b failed: [3]" (INVALID_ARGUMENT).
-    request.extend([None, [["laomedeia"]]])
+    # Slot 7 voices: "kore" -> [["kore"]]; "kore,fenrir" -> [["kore"],["fenrir"]], plus every
+    # {{voice:<id>}} mentioned in the prompt (UI capture 2026-10-19 lists all of them). Default laomedeia.
+    v_ids = [v.strip().lower() for v in str(voice_id or "laomedeia").split(",") if v.strip()]
+    v_ids = list(dict.fromkeys(v_ids + mentioned_voice_ids(prompt)))
+    bad = invalid_voice_ids(v_ids)
+    if bad:
+        raise ValueError(
+            f"Invalid Pinhole voice id(s) {', '.join(bad)} (from speech.voices / entity voice_description / "
+            f"{{{{voice:...}}}} chips); not sent to Flow. Valid ids: {', '.join(sorted(PINHOLE_VOICES))}"
+        )
+    request.extend([None, [[v] for v in (v_ids or ["laomedeia"])]])
     if res == "360p":
         request.extend([None, None, None, [4]])
     return build_envelope(RPC_GEN_VIDEO_REFERENCES, [

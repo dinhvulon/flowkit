@@ -64,6 +64,8 @@ Thứ tự các trường bắt buộc trong mỗi đối tượng prompt JSON:
 | 13 | **Vật lý thực tế, Chống CGI, Cấm khói thở & Deep Focus `f/8`:** Hành động chia 3 pha theo `/fk-action-choreography`, tuân thủ quán tính $p=m\cdot v$; biểu bì sinh học thô ráp; cấm khói thở trắng (`NO breath smoke`), cấm `god rays`; khóa `deep focus f/8` | Rule 57, Rule 62, `/fk-action-choreography` |
 | 14 | **Thoại chuẩn Rule 49, Voice ID riêng & Ngữ điệu kịch tính:** Số từ khớp thời lượng clip (4s: 0/6-8; 6s: 12-15; 8s: 18-22; 10s: 24-28); mỗi người nói 1 Voice ID trong `speech.voices`; nói từ đầu nhịp khi mặt lộ rõ; người nghe khép môi; thoại trong vùng nguy hiểm/tranh cãi phải nhanh, lớn, gắt; không có từ khóa mua bán/tiền bạc gây ghost op | Rule 49, Rule 54, `/sw-dialogue` |
 | 15 | **Đầy đủ `dramatic_craft` từ bộ `sw-*`:** Có đủ `beat`, `value_turn`, `subtext`, `prop_and_detail` phản ánh đúng kịch bản đã viết qua bộ skill `sw-*` | Rule 56, `/sw-scene-craft` |
+| 16 | **Giọng nam già không the thé & câu thoại dứt đúng giây:** Không dùng `cracking`, `shrieking`, `screaming` cho giọng nam trầm; ghi `never shouting, never shrill`, dải Hz, giây kết thúc câu và khóa im lặng các nhịp sau | Bài học 18, Rule 49, Rule 67 |
+| 17 | **Ảnh storyboard: chip ref trong từng panel:** Mỗi panel gắn `{{media:<uuid>|<file>}}` ở lần nhắc đầu của từng nhân vật/sinh vật; `character_names` của scene không chứa storyboard cũ khi sinh lại ảnh | Bài học 19, Rule 64, Rule 69 |
 
 ---
 

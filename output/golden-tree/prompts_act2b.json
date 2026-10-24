@@ -43,7 +43,7 @@
       }
     ],
     "timeline_action": {
-      "0-3s": "Matching Panel 1 (Top-Left, 0-3s): [MS] Low-angle medium shot in the subterranean karst tunnel. Theron ({{media:7c5d994a-dabd-406b-a6c1-b9fa6473a612|theron_clean.jpg}}) lowers his gnarled wooden staff onto a thick cushion of damp green moss in mid-stride (Enter Late) and begins speaking immediately from second 0 in a hushed, urgent voice: Theron says \"Step only on the damp green moss. The beast feels every stone vibration.\" (no subtitles). Strictly Theron in foreground; face 100% unobstructed.",
+      "0-3s": "Matching Panel 1 (Top-Left, 0-3s): [MS] Low-angle medium shot in the subterranean karst tunnel. Theron ({{media:7c5d994a-dabd-406b-a6c1-b9fa6473a612|theron_clean.jpg}}) lowers his gnarled wooden staff onto a thick cushion of damp green moss in mid-stride (Enter Late) and begins speaking immediately from second 0 in a hushed, urgent voice: Theron ({{voice:schedar}}, cold calculating mid-low male voice) says: \"Step only on the damp green moss. The beast feels every stone vibration.\" (no subtitles). Strictly Theron in foreground; face 100% unobstructed.",
       "3-6s": "At second 3.0, a crisp 100% full-frame hard cut (60-degree angle shift) matching Panel 2 (Top-Right, 3-6s): [MCU] Medium close-up on Captain Nora ({{media:62e117f8-0af7-484e-90a8-f79927105746|nora_clean.jpg}}) as Theron's warning finishes cleanly by second 5.0; Cause -> Effect: Nora shifts her weight and plants her leather boot squarely onto a thick emerald moss pad, keeping her sole off the bare resonant limestone while her right hand steadies her scabbard.",
       "6-8s": "At second 6.0, a crisp 100% full-frame hard cut (90-degree angle shift) matching Panel 3 (Bottom-Left) and Panel 4 (Bottom-Right, 6-8s): [CU -> MS] Close-up on the boot compressing damp moss without a sound, followed by Theron ({{media:7c5d994a-dabd-406b-a6c1-b9fa6473a612|theron_clean.jpg}}) freezing mid-stride and snapping his left hand up in a sharp halt signal as fine limestone grit trickles from the ceiling fissure ahead (Leave Early micro-hook). SPATIAL LOCK: All characters stand firmly on the solid interior cavern floor, maintaining a consistent 180-degree spatial axis."
     },
@@ -52,7 +52,7 @@
         "Theron"
       ],
       "voices": {
-        "Theron": "charon"
+        "Theron": "schedar"
       },
       "delivery": "hushed, urgent, and commanding tactical warning",
       "dialogue": [
@@ -125,7 +125,7 @@
       }
     ],
     "timeline_action": {
-      "0-2s": "Matching Panel 1 (Top-Left, 0-2s): [MCU] Medium close-up of Captain Nora ({{media:62e117f8-0af7-484e-90a8-f79927105746|nora_clean.jpg}}) already pulling a strip of coarse canvas tight around her bronze scabbard throat (Enter Late) as she speaks immediately from second 0: Nora says \"Wrap your scabbards in cloth and extinguish the torches. Move like shadows.\" (no subtitles). Strictly Nora alone in this shot; face 100% unobstructed.",
+      "0-2s": "Matching Panel 1 (Top-Left, 0-2s): [MCU] Medium close-up of Captain Nora ({{media:62e117f8-0af7-484e-90a8-f79927105746|nora_clean.jpg}}) already pulling a strip of coarse canvas tight around her bronze scabbard throat (Enter Late) as she speaks immediately from second 0: Nora ({{voice:kore}}, firm mid-low female captain voice) says: \"Wrap your scabbards in cloth and extinguish the torches. Move like shadows.\" (no subtitles). Strictly Nora alone in this shot; face 100% unobstructed.",
       "2-4s": "At second 2.0, a crisp 100% full-frame hard cut (75-degree angle shift) matching Panel 2 (Top-Right, 2-4s): [MS] Medium shot of clean-shaven Castor ({{media:3152a235-af4f-462b-a78e-02551f826e41|castor_clean.jpg}}) beside the jagged rock wall as Nora's command concludes by second 4.0; Cause -> Effect: Castor drives the head of his burning pitch torch straight into a mound of damp cavern sand, extinguishing the amber flame.",
       "4-6s": "At second 4.0, a crisp 100% full-frame hard cut (90-degree angle shift) matching Panel 3 (Bottom-Left) and Panel 4 (Bottom-Right, 4-6s): [CU] Close-up of Castor ({{media:3152a235-af4f-462b-a78e-02551f826e41|castor_clean.jpg}}) knotting a canvas cloth wrap tightly over his iron crossbow stirrup and lowering his posture into a silent prowl toward the dark archway ahead (Leave Early micro-hook). SPATIAL LOCK: All characters remain firmly on the solid interior stone floor."
     },
@@ -265,7 +265,7 @@
       }
     ],
     "timeline_action": {
-      "0-3s": "Matching Panel 1 (Top-Left, 0-3s): [MCU] Medium close-up of clean-shaven Castor ({{media:3152a235-af4f-462b-a78e-02551f826e41|castor_clean.jpg}}) holding a shuttered brass lantern close to a scarred limestone pillar (Enter Late) and speaking immediately from second 0: Castor says \"Six deep talon gouges carved into solid limestone... it is hunting right above us.\" (no subtitles). Strictly Castor alone in frame; face 100% unobstructed.",
+      "0-3s": "Matching Panel 1 (Top-Left, 0-3s): [MCU] Medium close-up of clean-shaven Castor ({{media:3152a235-af4f-462b-a78e-02551f826e41|castor_clean.jpg}}) holding a shuttered brass lantern close to a scarred limestone pillar (Enter Late) and speaking immediately from second 0: Castor ({{voice:fenrir}}, deep urgent male navigator voice) says: \"Six deep talon gouges carved into solid limestone... it is hunting right above us.\" (no subtitles). Strictly Castor alone in frame; face 100% unobstructed.",
       "3-6s": "At second 3.0, a crisp 100% full-frame hard cut (60-degree angle shift) matching Panel 2 (Top-Right, 3-6s): [CU] Extreme close-up of Castor's ({{media:3152a235-af4f-462b-a78e-02551f826e41|castor_clean.jpg}}) leather-gloved hand spanning six parallel, chisel-deep talon trenches gouged into solid grey rock as his spoken line finishes cleanly by second 5.0; fresh white stone powder spills from the grooves.",
       "6-8s": "At second 6.0, a crisp 100% full-frame hard cut (90-degree angle shift) matching Panel 3 (Bottom-Left) and Panel 4 (Bottom-Right, 6-8s): [MS -> MCU] Cause -> Effect: As small stones patter down onto his cuirass, Castor ({{media:3152a235-af4f-462b-a78e-02551f826e41|castor_clean.jpg}}) snaps the lantern shutter closed and swings his loaded iron crossbow sharply upward toward the dark overhang (Leave Early micro-hook). SPATIAL LOCK: Castor stands firmly on the interior stone floor."
     },
@@ -347,7 +347,7 @@
       }
     ],
     "timeline_action": {
-      "0-3s": "Matching Panel 1 (Top-Left, 0-3s): [MS] Medium shot of Theron ({{media:7c5d994a-dabd-406b-a6c1-b9fa6473a612|theron_clean.jpg}}) pulling his ear back from the vibrating limestone wall and turning sharply toward camera-right, speaking immediately from second 0: Theron says \"The Chitin Prowler has our scent! Freeze your boots against the rock wall!\" (no subtitles). Strictly Theron alone in this shot; face 100% unobstructed.",
+      "0-3s": "Matching Panel 1 (Top-Left, 0-3s): [MS] Medium shot of Theron ({{media:7c5d994a-dabd-406b-a6c1-b9fa6473a612|theron_clean.jpg}}) pulling his ear back from the vibrating limestone wall and turning sharply toward camera-right, speaking immediately from second 0: Theron ({{voice:schedar}}, cold calculating mid-low male voice) says: \"The Chitin Prowler has our scent! Freeze your boots against the rock wall!\" (no subtitles). Strictly Theron alone in this shot; face 100% unobstructed.",
       "3-6s": "At second 3.0, a crisp 100% full-frame hard cut (70-degree angle shift) matching Panel 2 (Top-Right, 3-6s): [MCU] Medium close-up of Captain Nora ({{media:62e117f8-0af7-484e-90a8-f79927105746|nora_clean.jpg}}) as Theron's command ends by second 5.0; Cause -> Effect: Nora slams her back flat into the recessed limestone alcove, locks her boots into the moss, and draws her bronze short-sword in a ready guard.",
       "6-8s": "At second 6.0, a crisp 100% full-frame hard cut (90-degree angle shift) matching Panel 3 (Bottom-Left) and Panel 4 (Bottom-Right, 6-8s): [CU -> WS] Close-up of Theron ({{media:7c5d994a-dabd-406b-a6c1-b9fa6473a612|theron_clean.jpg}}) gripping his wooden staff with both hands as the upper karst ledge fractures outward in a violent burst of falling limestone chunks (Leave Early micro-hook). SPATIAL LOCK: All characters stand firmly on the solid interior cavern floor."
     },
@@ -356,7 +356,7 @@
         "Theron"
       ],
       "voices": {
-        "Theron": "charon"
+        "Theron": "schedar"
       },
       "delivery": "fierce, urgent, clipped survival command",
       "dialogue": [
@@ -494,7 +494,7 @@
       }
     ],
     "timeline_action": {
-      "0-3s": "Matching Panel 1 (Top-Left, 0-3s): [MS] Low-angle medium shot of giant boatswain Heracles ({{media:37a10133-8496-49e7-bd77-b5f261c5a43e|heracles_clean.jpg}}) jamming his heavy leather boots into a limestone floor crevice, locking his hammered bronze shield before his chest (Enter Late), and shouting immediately from second 0: Heracles says \"Get behind my bronze shield! My boots are anchored deep in the stone!\" (no subtitles). Strictly Heracles alone in Shot 1; face 100% unobstructed.",
+      "0-3s": "Matching Panel 1 (Top-Left, 0-3s): [MS] Low-angle medium shot of giant boatswain Heracles ({{media:37a10133-8496-49e7-bd77-b5f261c5a43e|heracles_clean.jpg}}) jamming his heavy leather boots into a limestone floor crevice, locking his hammered bronze shield before his chest (Enter Late), and shouting immediately from second 0: Heracles ({{voice:algenib}}, gravelly booming low male warrior voice) says: \"Get behind my bronze shield! My boots are anchored deep in the stone!\" (no subtitles). Strictly Heracles alone in Shot 1; face 100% unobstructed.",
       "3-7s": "At second 3.0, a crisp 100% full-frame hard cut (60-degree angle shift) matching Panel 2 (Top-Right, 3-7s): [WS] Wide side-angle impact shot as the 6-meter Labyrinth Beast ({{media:a1905a31-82f6-4c94-b8b4-4c68570f2bfc|labyrinth_beast_clean.jpg}}) crashes down and drives its serrated black chitin foreclaw squarely into Heracles's ({{media:37a10133-8496-49e7-bd77-b5f261c5a43e|heracles_clean.jpg}}) raised bronze shield; a violent shower of orange friction sparks erupts across the cavern as Heracles finishes his roar by second 6.0.",
       "7-10s": "At second 7.0, a crisp 100% full-frame hard cut (90-degree angle shift) matching Panel 3 (Bottom-Left) and Panel 4 (Bottom-Right, 7-10s): [CU -> MS] Close-up on Heracles's ({{media:37a10133-8496-49e7-bd77-b5f261c5a43e|heracles_clean.jpg}}) unobstructed face grimacing with veins bulging in his neck and forearms locked tight against the shield straps while the Labyrinth Beast ({{media:a1905a31-82f6-4c94-b8b4-4c68570f2bfc|labyrinth_beast_clean.jpg}}) whips its armored tail back for a sweeping blow (Leave Early micro-hook)."
     },
@@ -503,7 +503,7 @@
         "Heracles"
       ],
       "voices": {
-        "Heracles": "puck"
+        "Heracles": "algenib"
       },
       "delivery": "ferocious, booming, strained combat roar",
       "dialogue": [
@@ -648,7 +648,7 @@
       }
     ],
     "timeline_action": {
-      "0-2s": "Matching Panel 1 (Top-Left, 0-2s): [MCU] Medium close-up of clean-shaven Castor ({{media:3152a235-af4f-462b-a78e-02551f826e41|castor_clean.jpg}}) dropping to one knee behind a limestone stalagmite, aiming his iron crossbow, and shouting immediately from second 0: Castor says \"Its shell is thick as granite! Iron bolts shatter on its backplate!\" (no subtitles) as he squeezes the trigger lever. Strictly Castor alone in Shot 1; face 100% unobstructed.",
+      "0-2s": "Matching Panel 1 (Top-Left, 0-2s): [MCU] Medium close-up of clean-shaven Castor ({{media:3152a235-af4f-462b-a78e-02551f826e41|castor_clean.jpg}}) dropping to one knee behind a limestone stalagmite, aiming his iron crossbow, and shouting immediately from second 0: Castor ({{voice:fenrir}}, deep urgent male navigator voice) says: \"Its shell is thick as granite! Iron bolts shatter on its backplate!\" (no subtitles) as he squeezes the trigger lever. Strictly Castor alone in Shot 1; face 100% unobstructed.",
       "2-4s": "At second 2.0, a crisp 100% full-frame hard cut (75-degree angle shift) matching Panel 2 (Top-Right, 2-4s): [MS] Medium impact shot on the Labyrinth Beast ({{media:a1905a31-82f6-4c94-b8b4-4c68570f2bfc|labyrinth_beast_clean.jpg}}) as Castor's shout finishes cleanly by second 4.0; Cause -> Effect: the high-velocity iron bolt strikes the monster's rough black chitin backplate and shatters into spinning metal splinters and sparks without leaving a scratch.",
       "4-6s": "At second 4.0, a crisp 100% full-frame hard cut (90-degree angle shift) matching Panel 3 (Bottom-Left) and Panel 4 (Bottom-Right, 4-6s): [CU -> MCU] Close-up of the snapped iron bolt head embedding into the stone wall, followed by Castor ({{media:3152a235-af4f-462b-a78e-02551f826e41|castor_clean.jpg}}) pulling back behind the stalagmite as the beast pivots its amber eyes toward him (Leave Early micro-hook)."
     },
@@ -730,7 +730,7 @@
       }
     ],
     "timeline_action": {
-      "0-3s": "Matching Panel 1 (Top-Left, 0-3s): [MS] Medium shot behind a limestone boulder; Theron ({{media:7c5d994a-dabd-406b-a6c1-b9fa6473a612|theron_clean.jpg}}) grips Nora's ({{media:62e117f8-0af7-484e-90a8-f79927105746|nora_clean.jpg}}) armored shoulder, points his wooden staff diagonally upward at a 45-degree angle toward the ceiling off-frame (Point-Then-Reveal grammar: ceiling arch not yet in frame), and shouts immediately from second 0: Theron says \"Stop firing at its shell! The cracked arch above can crush it!\" (no subtitles).",
+      "0-3s": "Matching Panel 1 (Top-Left, 0-3s): [MS] Medium shot behind a limestone boulder; Theron ({{media:7c5d994a-dabd-406b-a6c1-b9fa6473a612|theron_clean.jpg}}) grips Nora's ({{media:62e117f8-0af7-484e-90a8-f79927105746|nora_clean.jpg}}) armored shoulder, points his wooden staff diagonally upward at a 45-degree angle toward the ceiling off-frame (Point-Then-Reveal grammar: ceiling arch not yet in frame), and shouts immediately from second 0: Theron ({{voice:schedar}}, cold calculating mid-low male voice) says: \"Stop firing at its shell! The cracked arch above can crush it!\" (no subtitles).",
       "3-6s": "At second 3.0, a crisp 100% full-frame hard cut (90-degree low-angle reveal cut) matching Panel 2 (Top-Right, 3-6s): [WS] Low-angle wide reveal shot looking up at the fractured karst ceiling arch as Theron's line finishes by second 5.0, revealing a colossal twenty-ton limestone keystone hanging by brittle calcified veins, wedged with a timber strut and taut hemp cables.",
       "6-8s": "At second 6.0, a crisp 100% full-frame hard cut (60-degree angle shift) matching Panel 3 (Bottom-Left) and Panel 4 (Bottom-Right, 6-8s): [MCU] Medium close-up of Captain Nora ({{media:62e117f8-0af7-484e-90a8-f79927105746|nora_clean.jpg}}) lowering her gaze from the cracked arch with her unobstructed face set in fierce tactical resolve, reaching down to unbuckle her map cylinder (Leave Early micro-hook)."
     },
@@ -739,7 +739,7 @@
         "Theron"
       ],
       "voices": {
-        "Theron": "charon"
+        "Theron": "schedar"
       },
       "delivery": "commanding, urgent, revelatory shout",
       "dialogue": [
@@ -812,7 +812,7 @@
       }
     ],
     "timeline_action": {
-      "0-3s": "Matching Panel 1 (Top-Left, 0-3s): [MCU] Medium close-up of Captain Nora ({{media:62e117f8-0af7-484e-90a8-f79927105746|nora_clean.jpg}}) pointing her bronze short-sword toward the kill-zone beneath the ceiling arch (Enter Late) and shouting immediately from second 0: Nora says \"A twenty-ton keystone hanging by brittle rock! Lure the beast right under it!\" (no subtitles). Strictly Nora alone in Shot 1; face 100% unobstructed.",
+      "0-3s": "Matching Panel 1 (Top-Left, 0-3s): [MCU] Medium close-up of Captain Nora ({{media:62e117f8-0af7-484e-90a8-f79927105746|nora_clean.jpg}}) pointing her bronze short-sword toward the kill-zone beneath the ceiling arch (Enter Late) and shouting immediately from second 0: Nora ({{voice:kore}}, firm mid-low female captain voice) says: \"A twenty-ton keystone hanging by brittle rock! Lure the beast right under it!\" (no subtitles). Strictly Nora alone in Shot 1; face 100% unobstructed.",
       "3-6s": "At second 3.0, a crisp 100% full-frame hard cut (70-degree angle shift) matching Panel 2 (Top-Right, 3-6s): [MS] Medium shot of Heracles ({{media:37a10133-8496-49e7-bd77-b5f261c5a43e|heracles_clean.jpg}}) as Nora's command ends cleanly by second 5.0; Cause -> Effect: Heracles slings his dented bronze shield onto his back and seizes a heavy six-foot iron pry-bar leaning against the limestone pillar.",
       "6-8s": "At second 6.0, a crisp 100% full-frame hard cut (90-degree angle shift) matching Panel 3 (Bottom-Left) and Panel 4 (Bottom-Right, 6-8s): [CU -> MS] Close-up of Nora ({{media:62e117f8-0af7-484e-90a8-f79927105746|nora_clean.jpg}}) unscrewing her bronze scroll case to pull out the sheepskin map, while Heracles ({{media:37a10133-8496-49e7-bd77-b5f261c5a43e|heracles_clean.jpg}}) scrambles up the rock steps toward the upper keystone wedge (Leave Early micro-hook)."
     },
@@ -887,7 +887,7 @@
       }
     ],
     "timeline_action": {
-      "0-3s": "Matching Panel 1 (Top-Left, 0-3s): [MS] Medium shot of Captain Nora ({{media:62e117f8-0af7-484e-90a8-f79927105746|nora_clean.jpg}}) standing in the dark cavern, unrolling the sheepskin chart and splashing seawater from her bronze canteen across its surface (Enter Late) while shouting immediately from second 0: Nora says \"It hunts the map's golden glow! Follow the light into the trap, beast!\" (no subtitles). Face 100% unobstructed.",
+      "0-3s": "Matching Panel 1 (Top-Left, 0-3s): [MS] Medium shot of Captain Nora ({{media:62e117f8-0af7-484e-90a8-f79927105746|nora_clean.jpg}}) standing in the dark cavern, unrolling the sheepskin chart and splashing seawater from her bronze canteen across its surface (Enter Late) while shouting immediately from second 0: Nora ({{voice:kore}}, firm mid-low female captain voice) says: \"It hunts the map's golden glow! Follow the light into the trap, beast!\" (no subtitles). Face 100% unobstructed.",
       "3-7s": "At second 3.0, a crisp 100% full-frame hard cut (60-degree angle shift) matching Panel 2 (Top-Right, 3-7s): [CU] Close-up on the sheepskin chart in Nora's ({{media:62e117f8-0af7-484e-90a8-f79927105746|nora_clean.jpg}}) hands as the saltwater triggers a blazing golden bioluminescent glow that illuminates her freckled face and copper-red braids while her taunt finishes cleanly by second 6.0.",
       "7-10s": "At second 7.0, a crisp 100% full-frame hard cut (90-degree angle shift) matching Panel 3 (Bottom-Left) and Panel 4 (Bottom-Right, 7-10s): [MCU -> CU] Medium close-up of Nora ({{media:62e117f8-0af7-484e-90a8-f79927105746|nora_clean.jpg}}) waving the blazing golden map high to catch the predator's attention, then quickly wrapping the glowing parchment around an iron crossbow bolt and seating it into her crossbow groove (Leave Early micro-hook)."
     },
@@ -1027,7 +1027,7 @@
       }
     ],
     "timeline_action": {
-      "0-3s": "Matching Panel 1 (Top-Left, 0-3s): [MCU] Medium close-up of Captain Nora ({{media:62e117f8-0af7-484e-90a8-f79927105746|nora_clean.jpg}}) bracing the iron crossbow against her shoulder, aiming the blazing golden map bolt toward the floor beneath the arch (Enter Late), and shouting immediately from second 0: Nora says \"Follow the glowing parchment into the dark—right beneath the falling stone jaws!\" (no subtitles). Face 100% unobstructed.",
+      "0-3s": "Matching Panel 1 (Top-Left, 0-3s): [MCU] Medium close-up of Captain Nora ({{media:62e117f8-0af7-484e-90a8-f79927105746|nora_clean.jpg}}) bracing the iron crossbow against her shoulder, aiming the blazing golden map bolt toward the floor beneath the arch (Enter Late), and shouting immediately from second 0: Nora ({{voice:kore}}, firm mid-low female captain voice) says: \"Follow the glowing parchment into the dark—right beneath the falling stone jaws!\" (no subtitles). Face 100% unobstructed.",
       "3-6s": "At second 3.0, a crisp 100% full-frame hard cut (75-degree angle shift) matching Panel 2 (Top-Right, 3-6s): [MS] Medium shot as Nora ({{media:62e117f8-0af7-484e-90a8-f79927105746|nora_clean.jpg}}) pulls the trigger at second 3.5 while her line finishes by second 5.0; Cause -> Effect: the crossbow string snaps forward and launches the glowing golden parchment bolt like a streak of golden fire across the cavern.",
       "6-8s": "At second 6.0, a crisp 100% full-frame hard cut (90-degree angle shift) matching Panel 3 (Bottom-Left) and Panel 4 (Bottom-Right, 6-8s): [CU -> MS] Close-up of the bolt pinning the radiant golden map deep into a floor crack directly under the keystone, followed by Nora ({{media:62e117f8-0af7-484e-90a8-f79927105746|nora_clean.jpg}}) ducking behind a stalagmite and signaling sharply upward toward the ledge (Leave Early micro-hook)."
     },
@@ -1109,7 +1109,7 @@
       }
     ],
     "timeline_action": {
-      "0-2s": "Matching Panel 1 (Top-Left, 0-2s): [MCU] Medium close-up of Theron ({{media:7c5d994a-dabd-406b-a6c1-b9fa6473a612|theron_clean.jpg}}) crouched on an upper limestone outcrop, pointing his wooden staff diagonally downward at 40 degrees toward the floor off-frame (Enter Late), and shouting immediately from second 0: Theron says \"The prowler is under the keystone! Cut the cables and drive the wedge!\" (no subtitles). Strictly Theron alone in Shot 1; face 100% unobstructed.",
+      "0-2s": "Matching Panel 1 (Top-Left, 0-2s): [MCU] Medium close-up of Theron ({{media:7c5d994a-dabd-406b-a6c1-b9fa6473a612|theron_clean.jpg}}) crouched on an upper limestone outcrop, pointing his wooden staff diagonally downward at 40 degrees toward the floor off-frame (Enter Late), and shouting immediately from second 0: Theron ({{voice:schedar}}, cold calculating mid-low male voice) says: \"The prowler is under the keystone! Cut the cables and drive the wedge!\" (no subtitles). Strictly Theron alone in Shot 1; face 100% unobstructed.",
       "2-4s": "At second 2.0, a crisp 100% full-frame hard cut (75-degree high-angle reveal shift) matching Panel 2 (Top-Right, 2-4s): [WS] High-angle wide shot looking down past the cracked ceiling arch as Theron's shout finishes by second 4.2; the 6-meter Labyrinth Beast ({{media:a1905a31-82f6-4c94-b8b4-4c68570f2bfc|labyrinth_beast_clean.jpg}}) skids to a halt directly over the glowing golden map on the kill-zone floor.",
       "4-6s": "At second 4.0, a crisp 100% full-frame hard cut (60-degree angle shift) matching Panel 3 (Bottom-Left) and Panel 4 (Bottom-Right, 4-6s): [MS -> CU] Medium shot of the Labyrinth Beast ({{media:a1905a31-82f6-4c94-b8b4-4c68570f2bfc|labyrinth_beast_clean.jpg}}) lunging its serrated mandibles down at the pinned golden parchment while white rock dust streams down from the groaning twenty-ton keystone directly above its backplate (Leave Early micro-hook)."
     },
@@ -1118,7 +1118,7 @@
         "Theron"
       ],
       "voices": {
-        "Theron": "charon"
+        "Theron": "schedar"
       },
       "delivery": "urgent, triumphant, high-tension trigger command",
       "dialogue": [
@@ -1184,7 +1184,7 @@
       }
     ],
     "timeline_action": {
-      "0-3s": "Matching Panel 1 (Top-Left, 0-3s): [MS] Medium shot of clean-shaven Castor ({{media:3152a235-af4f-462b-a78e-02551f826e41|castor_clean.jpg}}) braced firmly on the upper limestone ledge beside the taut tarred hemp anchor cable, raising his bronze short-sword with both hands (Enter Late) and shouting immediately from second 0: Castor says \"May the mountain bury you whole, monster! Come crashing down right now!\" (no subtitles). Face 100% unobstructed.",
+      "0-3s": "Matching Panel 1 (Top-Left, 0-3s): [MS] Medium shot of clean-shaven Castor ({{media:3152a235-af4f-462b-a78e-02551f826e41|castor_clean.jpg}}) braced firmly on the upper limestone ledge beside the taut tarred hemp anchor cable, raising his bronze short-sword with both hands (Enter Late) and shouting immediately from second 0: Castor ({{voice:fenrir}}, deep urgent male navigator voice) says: \"May the mountain bury you whole, monster! Come crashing down right now!\" (no subtitles). Face 100% unobstructed.",
       "3-6s": "At second 3.0, a crisp 100% full-frame hard cut (60-degree angle shift) matching Panel 2 (Top-Right, 3-6s): [CU] Close-up impact shot as Castor ({{media:3152a235-af4f-462b-a78e-02551f826e41|castor_clean.jpg}}) slashes his bronze blade downward at second 3.5 while his line concludes by second 5.0; Cause -> Effect: the sharp blade severs the thick hemp cable cleanly in two, and the frayed rope ends whip violently apart in a spray of fibers.",
       "6-8s": "At second 6.0, a crisp 100% full-frame hard cut (90-degree angle shift) matching Panel 3 (Bottom-Left) and Panel 4 (Bottom-Right, 6-8s): [MCU -> MS] Medium close-up of the wooden arch strut splintering under the sudden load shift as Castor ({{media:3152a235-af4f-462b-a78e-02551f826e41|castor_clean.jpg}}) braces his back against the solid rock wall and looks up toward Heracles at the final stone wedge (Leave Early micro-hook)."
     },
@@ -1259,7 +1259,7 @@
       }
     ],
     "timeline_action": {
-      "0-3s": "Matching Panel 1 (Top-Left, 0-3s): [MS] Low-angle heroic medium shot of Heracles ({{media:37a10133-8496-49e7-bd77-b5f261c5a43e|heracles_clean.jpg}}) planted on the upper limestone ledge, gripping the six-foot iron pry-bar wedged deep into the keystone fault line (Enter Late) and roaring immediately from second 0: Heracles says \"Give way, ancient stone! Bury this beast under twenty tons of karst rock!\" (no subtitles). Face 100% unobstructed.",
+      "0-3s": "Matching Panel 1 (Top-Left, 0-3s): [MS] Low-angle heroic medium shot of Heracles ({{media:37a10133-8496-49e7-bd77-b5f261c5a43e|heracles_clean.jpg}}) planted on the upper limestone ledge, gripping the six-foot iron pry-bar wedged deep into the keystone fault line (Enter Late) and roaring immediately from second 0: Heracles ({{voice:algenib}}, gravelly booming low male warrior voice) says: \"Give way, ancient stone! Bury this beast under twenty tons of karst rock!\" (no subtitles). Face 100% unobstructed.",
       "3-6s": "At second 3.0, a crisp 100% full-frame hard cut (60-degree angle shift) matching Panel 2 (Top-Right, 3-6s): [CU] Close-up on the iron pry-bar as Heracles ({{media:37a10133-8496-49e7-bd77-b5f261c5a43e|heracles_clean.jpg}}) throws his full muscular weight downward at second 3.5 while his roar finishes by second 5.0; Cause -> Effect: the calcified stone retaining wedge shatters in a burst of sparks and rock shards.",
       "6-8s": "At second 6.0, a crisp 100% full-frame hard cut (90-degree angle shift) matching Panel 3 (Bottom-Left) and Panel 4 (Bottom-Right, 6-8s): [MCU -> MS] Medium close-up of the ceiling fault line splitting wide open as the twenty-ton limestone keystone breaks free from the arch, while Heracles ({{media:37a10133-8496-49e7-bd77-b5f261c5a43e|heracles_clean.jpg}}) leaps backward onto the safe inner ledge (Leave Early micro-hook)."
     },
@@ -1268,7 +1268,7 @@
         "Heracles"
       ],
       "voices": {
-        "Heracles": "puck"
+        "Heracles": "algenib"
       },
       "delivery": "thunderous, heroic, maximum-exertion roar",
       "dialogue": [
@@ -1464,7 +1464,7 @@
       }
     ],
     "timeline_action": {
-      "0-3s": "Matching Panel 1 (Top-Left, 0-3s): [MS] Medium shot of clean-shaven Castor ({{media:3152a235-af4f-462b-a78e-02551f826e41|castor_clean.jpg}}) kneeling beside the fallen limestone boulders, pulling the intact sheepskin scroll free from the floor crevice (Enter Late), and speaking immediately from second 0: Castor says \"The golden ink went cold and dark. Its trap died with the beast.\" (no subtitles). Face 100% unobstructed.",
+      "0-3s": "Matching Panel 1 (Top-Left, 0-3s): [MS] Medium shot of clean-shaven Castor ({{media:3152a235-af4f-462b-a78e-02551f826e41|castor_clean.jpg}}) kneeling beside the fallen limestone boulders, pulling the intact sheepskin scroll free from the floor crevice (Enter Late), and speaking immediately from second 0: Castor ({{voice:fenrir}}, deep urgent male navigator voice) says: \"The golden ink went cold and dark. Its trap died with the beast.\" (no subtitles). Face 100% unobstructed.",
       "3-6s": "At second 3.0, a crisp 100% full-frame hard cut (60-degree angle shift) matching Panel 2 (Top-Right, 3-6s): [CU] Close-up on the sheepskin chart held open in Castor's ({{media:3152a235-af4f-462b-a78e-02551f826e41|castor_clean.jpg}}) hands as his line finishes cleanly by second 5.0; Cause -> Effect: the last faint veins of golden bioluminescence extinguish completely into plain, blank ivory hide.",
       "6-8s": "At second 6.0, a crisp 100% full-frame hard cut (90-degree angle shift) matching Panel 3 (Bottom-Left) and Panel 4 (Bottom-Right, 6-8s): [MCU -> MS] Medium close-up of Castor ({{media:3152a235-af4f-462b-a78e-02551f826e41|castor_clean.jpg}}) brushing grey limestone grit off the blank parchment, rising to his feet, and extending the rolled sheepskin toward Captain Nora (Leave Early micro-hook)."
     },
@@ -1539,7 +1539,7 @@
       }
     ],
     "timeline_action": {
-      "0-2s": "Matching Panel 1 (Top-Left, 0-2s): [MCU] Medium close-up of Captain Nora ({{media:62e117f8-0af7-484e-90a8-f79927105746|nora_clean.jpg}}) holding the blank ivory sheepskin scroll in both hands (Enter Late) and speaking immediately from second 0: Nora says \"We need no glowing bait anymore. Theron's eyes will guide us through.\" (no subtitles). Strictly Nora alone in frame; face 100% unobstructed.",
+      "0-2s": "Matching Panel 1 (Top-Left, 0-2s): [MCU] Medium close-up of Captain Nora ({{media:62e117f8-0af7-484e-90a8-f79927105746|nora_clean.jpg}}) holding the blank ivory sheepskin scroll in both hands (Enter Late) and speaking immediately from second 0: Nora ({{voice:kore}}, firm mid-low female captain voice) says: \"We need no glowing bait anymore. Theron's eyes will guide us through.\" (no subtitles). Strictly Nora alone in frame; face 100% unobstructed.",
       "2-4s": "At second 2.0, a crisp 100% full-frame hard cut (60-degree angle shift) matching Panel 2 (Top-Right, 2-4s): [CU] Close-up on Nora's ({{media:62e117f8-0af7-484e-90a8-f79927105746|nora_clean.jpg}}) hands rolling the plain white parchment tight and sliding it cleanly into her bronze belt cylinder as her line concludes by second 4.2.",
       "4-6s": "At second 4.0, a crisp 100% full-frame hard cut (90-degree angle shift) matching Panel 3 (Bottom-Left) and Panel 4 (Bottom-Right, 4-6s): [MS -> MCU] Medium shot of Nora ({{media:62e117f8-0af7-484e-90a8-f79927105746|nora_clean.jpg}}) latching the bronze cylinder shut at her waist and pivoting her head toward the rear cavern wall as a warm subterranean breeze stirs her braided hair (Leave Early micro-hook)."
     },
@@ -1614,7 +1614,7 @@
       }
     ],
     "timeline_action": {
-      "0-3s": "Matching Panel 1 (Top-Left, 0-3s): [MS] Medium shot of Theron ({{media:7c5d994a-dabd-406b-a6c1-b9fa6473a612|theron_clean.jpg}}) stepping over the settled limestone rubble toward a newly fractured fissure in the rear cavern wall (Enter Late) and speaking immediately from second 0: Theron says \"The rockfall opened the inner wall! Feel the warm updraft from the sanctum!\" (no subtitles). Face 100% unobstructed.",
+      "0-3s": "Matching Panel 1 (Top-Left, 0-3s): [MS] Medium shot of Theron ({{media:7c5d994a-dabd-406b-a6c1-b9fa6473a612|theron_clean.jpg}}) stepping over the settled limestone rubble toward a newly fractured fissure in the rear cavern wall (Enter Late) and speaking immediately from second 0: Theron ({{voice:schedar}}, cold calculating mid-low male voice) says: \"The rockfall opened the inner wall! Feel the warm updraft from the sanctum!\" (no subtitles). Face 100% unobstructed.",
       "3-6s": "At second 3.0, a crisp 100% full-frame hard cut (60-degree angle shift) matching Panel 2 (Top-Right, 3-6s): [CU] Close-up of Theron ({{media:7c5d994a-dabd-406b-a6c1-b9fa6473a612|theron_clean.jpg}}) driving the butt of his wooden staff against the cracked limestone edge at second 3.5 as his line finishes by second 5.0; Cause -> Effect: loose stone slabs topple away, releasing a flood of warm amber-gold light through the breach.",
       "6-8s": "At second 6.0, a crisp 100% full-frame hard cut (90-degree angle shift) matching Panel 3 (Bottom-Left) and Panel 4 (Bottom-Right, 6-8s): [MCU -> MS] Medium close-up of Theron ({{media:7c5d994a-dabd-406b-a6c1-b9fa6473a612|theron_clean.jpg}}) standing before the glowing cleft as the warm updraft lifts his gray beard, then turning to beckon urgently with his wooden staff for Nora and the crew to approach (Leave Early micro-hook)."
     },
@@ -1623,7 +1623,7 @@
         "Theron"
       ],
       "voices": {
-        "Theron": "charon"
+        "Theron": "schedar"
       },
       "delivery": "awed, urgent, triumphant discovery",
       "dialogue": [
@@ -1696,7 +1696,7 @@
       }
     ],
     "timeline_action": {
-      "0-3s": "Matching Panel 1 (Top-Left, 0-3s): [MCU] Medium close-up of Captain Nora ({{media:62e117f8-0af7-484e-90a8-f79927105746|nora_clean.jpg}}) stepping up to the glowing limestone fissure beside clean-shaven Castor ({{media:3152a235-af4f-462b-a78e-02551f826e41|castor_clean.jpg}}) (Enter Late) and speaking immediately from second 0: Nora says \"Golden dust drifting on the warm wind... the sanctuary lies just ahead.\" (no subtitles). Faces 100% unobstructed.",
+      "0-3s": "Matching Panel 1 (Top-Left, 0-3s): [MCU] Medium close-up of Captain Nora ({{media:62e117f8-0af7-484e-90a8-f79927105746|nora_clean.jpg}}) stepping up to the glowing limestone fissure beside clean-shaven Castor ({{media:3152a235-af4f-462b-a78e-02551f826e41|castor_clean.jpg}}) (Enter Late) and speaking immediately from second 0: Nora ({{voice:kore}}, firm mid-low female captain voice) says: \"Golden dust drifting on the warm wind... the sanctuary lies just ahead.\" (no subtitles). Faces 100% unobstructed.",
       "3-7s": "At second 3.0, a crisp 100% full-frame hard cut (60-degree angle shift) matching Panel 2 (Top-Right, 3-7s): [CU] Close-up on Nora's ({{media:62e117f8-0af7-484e-90a8-f79927105746|nora_clean.jpg}}) open hand extended in front of the warm rock cleft as her line finishes cleanly by second 5.0; Cause -> Effect: luminous golden pollen motes drift out on the warm breeze and settle softly across her weathered fingers.",
       "7-10s": "At second 7.0, a crisp 100% full-frame hard cut (90-degree angle shift) matching Panel 3 (Bottom-Left) and Panel 4 (Bottom-Right, 7-10s): [MS -> MCU] Medium two-shot of Nora ({{media:62e117f8-0af7-484e-90a8-f79927105746|nora_clean.jpg}}) and Castor ({{media:3152a235-af4f-462b-a78e-02551f826e41|castor_clean.jpg}}) illuminated by the warm amber-gold glow as golden pollen floats around them, before Nora gestures toward the lower rock slabs blocking the passage (Leave Early micro-hook)."
     },
@@ -1778,7 +1778,7 @@
       }
     ],
     "timeline_action": {
-      "0-3s": "Matching Panel 1 (Top-Left, 0-3s): [MS] Medium shot of Heracles ({{media:37a10133-8496-49e7-bd77-b5f261c5a43e|heracles_clean.jpg}}) wedging his massive muscular shoulders against a jagged limestone slab blocking the breach, shoving it aside with a heavy grinding thud (Enter Late), and speaking immediately from second 0: Heracles says \"The passage is clear, Captain. Let us leave this dark graveyard behind.\" (no subtitles). Strictly Heracles alone in Shot 1; face 100% unobstructed.",
+      "0-3s": "Matching Panel 1 (Top-Left, 0-3s): [MS] Medium shot of Heracles ({{media:37a10133-8496-49e7-bd77-b5f261c5a43e|heracles_clean.jpg}}) wedging his massive muscular shoulders against a jagged limestone slab blocking the breach, shoving it aside with a heavy grinding thud (Enter Late), and speaking immediately from second 0: Heracles ({{voice:algenib}}, gravelly booming low male warrior voice) says: \"The passage is clear, Captain. Let us leave this dark graveyard behind.\" (no subtitles). Strictly Heracles alone in Shot 1; face 100% unobstructed.",
       "3-6s": "At second 3.0, a crisp 100% full-frame hard cut (60-degree angle shift) matching Panel 2 (Top-Right, 3-6s): [MCU] Medium close-up of Heracles ({{media:37a10133-8496-49e7-bd77-b5f261c5a43e|heracles_clean.jpg}}) kicking the last loose limestone rocks clear of the floor as his line concludes by second 5.0; Cause -> Effect: the widened archway floods with warm amber-gold subterranean light.",
       "6-8s": "At second 6.0, a crisp 100% full-frame hard cut (90-degree angle shift) matching Panel 3 (Bottom-Left) and Panel 4 (Bottom-Right, 6-8s): [MS -> CU] Medium two-shot of Heracles ({{media:37a10133-8496-49e7-bd77-b5f261c5a43e|heracles_clean.jpg}}) brushing stone grit from his forearms as Theron ({{media:7c5d994a-dabd-406b-a6c1-b9fa6473a612|theron_clean.jpg}}) plants his wooden staff across the golden threshold (Leave Early micro-hook)."
     },
@@ -1787,7 +1787,7 @@
         "Heracles"
       ],
       "voices": {
-        "Heracles": "puck"
+        "Heracles": "algenib"
       },
       "delivery": "deep, resolute, relieved boatswain's command",
       "dialogue": [
@@ -1874,7 +1874,7 @@
       }
     ],
     "timeline_action": {
-      "0-2s": "Matching Panel 1 (Top-Left, 0-2s): [MS] Medium shot at the stone archway threshold; Theron ({{media:7c5d994a-dabd-406b-a6c1-b9fa6473a612|theron_clean.jpg}}) pauses half-turned toward the crew (Enter Late) and speaks immediately from second 0 in a solemn, gravelly voice: Theron says \"Guard your hearts inside this chamber, sailors. Its beauty has blinded kings.\" (no subtitles). Strictly Theron in foreground; face 100% unobstructed.",
+      "0-2s": "Matching Panel 1 (Top-Left, 0-2s): [MS] Medium shot at the stone archway threshold; Theron ({{media:7c5d994a-dabd-406b-a6c1-b9fa6473a612|theron_clean.jpg}}) pauses half-turned toward the crew (Enter Late) and speaks immediately from second 0 in a solemn, gravelly voice: Theron ({{voice:schedar}}, cold calculating mid-low male voice) says: \"Guard your hearts inside this chamber, sailors. Its beauty has blinded kings.\" (no subtitles). Strictly Theron in foreground; face 100% unobstructed.",
       "2-4s": "At second 2.0, a crisp 100% full-frame hard cut (75-degree angle shift) matching Panel 2 (Top-Right, 2-4s): [WS] Wide tracking shot as Theron's warning finishes cleanly by second 4.2; Theron ({{media:7c5d994a-dabd-406b-a6c1-b9fa6473a612|theron_clean.jpg}}) leads Captain Nora ({{media:62e117f8-0af7-484e-90a8-f79927105746|nora_clean.jpg}}), clean-shaven Castor ({{media:3152a235-af4f-462b-a78e-02551f826e41|castor_clean.jpg}}), and Heracles ({{media:37a10133-8496-49e7-bd77-b5f261c5a43e|heracles_clean.jpg}}) single-file through the tall limestone archway into a flood of warm amber-gold light.",
       "4-6s": "At second 4.0, a crisp 100% full-frame hard cut (60-degree angle shift) matching Panel 3 (Bottom-Left) and Panel 4 (Bottom-Right, 4-6s): [MCU -> MS] Medium close-up on Nora ({{media:62e117f8-0af7-484e-90a8-f79927105746|nora_clean.jpg}}) and Castor ({{media:3152a235-af4f-462b-a78e-02551f826e41|castor_clean.jpg}}) with their unobstructed faces bathed in golden light, halting in unison beside Theron ({{media:7c5d994a-dabd-406b-a6c1-b9fa6473a612|theron_clean.jpg}}) and Heracles ({{media:37a10133-8496-49e7-bd77-b5f261c5a43e|heracles_clean.jpg}}) at the edge of the subterranean terrace (Leave Early micro-hook)."
     },
@@ -1883,7 +1883,7 @@
         "Theron"
       ],
       "voices": {
-        "Theron": "charon"
+        "Theron": "schedar"
       },
       "delivery": "solemn, gravelly, prophetic warning",
       "dialogue": [

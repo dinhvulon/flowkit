@@ -5,7 +5,7 @@ Auto-detect project state and run the correct stages (continuation or full run).
 Usage: `/fk-pipeline [project_id] [orientation] [options]`
 
 > [!IMPORTANT]
-> **Confirm before every generation step.** Before any stage that makes Flow generate media (refs, scene images, videos, test clips, retries, review-driven regens), state what and how many items, then wait for the user's explicit yes. After each generation stage, STOP and show the results for review; start the next stage only after approval. Failures and low review scores are reported with a proposed fix, not auto-retried. This overrides the auto-retry / auto-regen / back-to-back behavior described below (see CLAUDE.md, AGENTS.md rule 29).
+> **Confirm before every video generation step.** Images (refs, storyboards, scene images and their regens) do not spend credits: submit them directly once the prompt passes the linter (user 24/10/2026). Before any stage that makes Flow generate video or upscale (videos, test clips, retries, review-driven regens), state what and how many items, then wait for the user's explicit yes. After each generation stage, STOP and show the results for review; start the next stage only after approval. Failures and low review scores are reported with a proposed fix, not auto-retried. This overrides the auto-retry / auto-regen / back-to-back behavior described below (see CLAUDE.md, AGENTS.md rule 29).
 
 Options:
 - `--r2v` — Reference-to-Video mode (`abra_r2v_<N>s`). Generates videos combining the approved Start Frame (Frame 0 anchor) and reference entity images (`character_names`) using RPC `MZZa6b`.

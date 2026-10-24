@@ -1,8 +1,10 @@
 {
   "clip_id": "SC-07",
-  "scene_name": "SC-07",
-  "raw_media_id": "6f963da2-f881-43b5-a36b-dc38537b7eb6",
-  "clean_media_id": "bfc450b5-8bd1-4290-8ff3-6cb589250caa",
+  "scene_name": "Lantern Inspection in the Skiff",
+  "raw_media_id": "ed172f6c-fb64-4512-88b6-680287addb1f",
+  "clean_media_id": "47a80040-3f40-438f-8a6f-69907e07e691",
   "clean_path": "c:\\flowkit\\output\\golden-tree\\images\\SC-07_storyboard_clean.jpg",
-  "scale_locked": "1.8m Coelacanth (80kg)"
+  "scale_locked": "1.8m Coelacanth (80kg)",
+  "previous_clean_media_id": "bfc450b5-8bd1-4290-8ff3-6cb589250caa / bc17fefe-a1e2-434f-8064-2100cd9e7e93",
+  "version": "v3 (2026-10-24, hull-contact + no crossbow)"
 }

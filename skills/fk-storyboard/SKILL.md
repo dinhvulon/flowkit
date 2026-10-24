@@ -17,7 +17,7 @@ cinematic feature-film look: shot on ARRI Alexa with Cooke S4 prime lenses, fine
 
 Giữ nét sâu (`deep focus, deep depth of field (f/8)`) ở mọi cỡ cảnh: Rule 62 cấm xóa phông và `tools/lint_prompt.py` báo HIGH (`BOKEH_VIOLATION`) nếu prompt có shallow depth of field / bokeh. Vẫn giữ các khóa vật liệu của `/fk-film` (lửa, da, gỗ, khói không thành CGI).
 
-Skill chạy **bên trong** `/fk-film` (bước 5–8). Mọi luật của `/fk-film` và `CLAUDE.md` vẫn áp: hỏi trước mỗi lần sinh (Rule 29), prompt JSON + linter + `/fk-review-prompt` (Rule 55, 68), Whisper khi review (Rule 67), tẩy logo trước khi dùng ảnh (Rule 28).
+Skill chạy **bên trong** `/fk-film` (bước 5–8). Mọi luật của `/fk-film` và `CLAUDE.md` vẫn áp: hỏi trước mỗi lần sinh video / upscale (Rule 29; sinh ảnh storyboard không tốn credit nên gửi luôn, không cần hỏi — user 24/10/2026), prompt JSON + linter + `/fk-review-prompt` (Rule 55, 68), Whisper khi review (Rule 67), tẩy logo trước khi dùng ảnh (Rule 28).
 
 ## Khi nào dùng
 
@@ -60,7 +60,7 @@ Kiểm trước khi viết prompt:
 - Mọi người / vật / đạo cụ dùng ở panel sau phải **có mặt ở panel 1** (Bài 48).
 - Hành động thuộc loại model làm được (bảng trên). Nếu không, đổi hành động trước, đừng hy vọng prompt cứu.
 
-Trình bảng 4 panel cho user duyệt.
+Ghi bảng 4 panel vào tin nhắn rồi sinh ảnh luôn (không chờ duyệt — sinh ảnh không tốn credit, user 24/10/2026); user duyệt trên ảnh thực tế ở bước 3.5.
 
 ### Bước 2 — Sinh ảnh storyboard (dùng ảnh ref có sẵn, bắt buộc truyền `source_media_id` — Rule 69 (8), User Lock 22/10/2026)
 
@@ -147,4 +147,4 @@ Trích ~8 khung (đúng các mốc panel + giữa các mốc), đặt **cạnh s
 
 ## Ghi chép
 
-Lưu mọi file trong `output/<slug>/images/` (`<clip>_storyboard.jpg`, `_clean.jpg`, `<clip>_p1.jpg`). Sinh lại storyboard (`_v2`, `_v3`…) thì chuyển bản cũ vào `output/<slug>/images/rejects/` ngay khi có bản mới để so sánh, không xóa (user lock 22/10/2026); trong `images/` chỉ còn bản mới nhất của mỗi clip. Ghi các thông tin vào `scenes_v*.json` của dự án: media id của storyboard và P1, entity tạo ra, điểm từng panel, kết quả video. Lỗi mới → bài học trong `skills/fk-film/references/production-lessons.md` + một dòng checklist B trong `prompt-lock.md`.
+Lưu mọi file trong `output/<slug>/images/` (`<clip>_storyboard.jpg`, `_clean.jpg`, `<clip>_p1.jpg`). Sinh lại storyboard (`_v2`, `_v3`…) thì **xóa** bản bị loại và bản cũ không còn dùng ngay khi bản mới được chấp nhận (user 24/10/2026, thay cho lock 22/10 "chuyển vào rejects/"); trong `images/` chỉ còn bản đang dùng của mỗi clip, không giữ thư mục `rejects/`. Ghi các thông tin vào `scenes_v*.json` của dự án: media id của storyboard và P1, entity tạo ra, điểm từng panel, kết quả video. Lỗi mới → bài học trong `skills/fk-film/references/production-lessons.md` + một dòng checklist B trong `prompt-lock.md`.

@@ -196,10 +196,14 @@ class ReviewHandler(SimpleHTTPRequestHandler):
             self.send_error(404, f"Review file not found: {fname}")
             return
 
-        # Serve local videos
+        # Serve local videos (prefer <2MB preview copy if available so IDE/proxy reassembly limit is never exceeded)
         if path.startswith("/videos/") or path.startswith("/scenes/"):
             prefix = "/videos/" if path.startswith("/videos/") else "/scenes/"
             fname = path[len(prefix):]
+            pdir = _resolve_proj_dir()
+            if pdir and (pdir / "preview" / fname).exists():
+                self._serve_file(pdir / "preview" / fname, "video/mp4")
+                return
             vdir = _resolve_video_dir()
             if vdir:
                 fpath = vdir / fname
@@ -281,10 +285,47 @@ class ReviewHandler(SimpleHTTPRequestHandler):
 
     def _serve_file(self, fpath, content_type):
         try:
+            file_size = fpath.stat().st_size
+            range_header = self.headers.get("Range")
+            # Enforce max 1.5MB per chunk for video/mp4 so proxy reassembly limits (2MB) are never exceeded
+            MAX_CHUNK = 1536 * 1024
+
+            if content_type == "video/mp4" and (range_header or file_size > MAX_CHUNK):
+                start = 0
+                end = file_size - 1
+                if range_header and range_header.startswith("bytes="):
+                    parts = range_header[6:].split("-", 1)
+                    if parts[0].strip():
+                        start = int(parts[0].strip())
+                    if len(parts) > 1 and parts[1].strip():
+                        end = min(int(parts[1].strip()), file_size - 1)
+                if start >= file_size:
+                    self.send_response(416)
+                    self.send_header("Content-Range", f"bytes */{file_size}")
+                    self.end_headers()
+                    return
+                # Cap chunk size to MAX_CHUNK (1.5MB) so each HTTP 206 response stays under 2MB proxy limit
+                end = min(end, start + MAX_CHUNK - 1, file_size - 1)
+                chunk_len = end - start + 1
+                with open(fpath, "rb") as f:
+                    f.seek(start)
+                    data = f.read(chunk_len)
+                self.send_response(206)
+                self.send_header("Content-Type", content_type)
+                self.send_header("Content-Range", f"bytes {start}-{end}/{file_size}")
+                self.send_header("Content-Length", str(len(data)))
+                self.send_header("Accept-Ranges", "bytes")
+                self.send_header("Access-Control-Allow-Origin", "*")
+                self.send_header("Cache-Control", "no-cache, no-store, must-revalidate")
+                self.end_headers()
+                if self.command != "HEAD":
+                    self.wfile.write(data)
+                return
+
             data = fpath.read_bytes()
             self.send_response(200)
             self.send_header("Content-Type", content_type)
-            self.send_header("Content-Length", len(data))
+            self.send_header("Content-Length", str(len(data)))
             self.send_header("Access-Control-Allow-Origin", "*")
             self.send_header("Cache-Control", "no-cache, no-store, must-revalidate")
             self.send_header("Pragma", "no-cache")
@@ -292,7 +333,8 @@ class ReviewHandler(SimpleHTTPRequestHandler):
             if content_type == "video/mp4":
                 self.send_header("Accept-Ranges", "bytes")
             self.end_headers()
-            self.wfile.write(data)
+            if self.command != "HEAD":
+                self.wfile.write(data)
         except (ConnectionResetError, ConnectionAbortedError, BrokenPipeError, OSError):
             pass
         except Exception as e:

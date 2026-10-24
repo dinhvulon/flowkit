@@ -389,6 +389,7 @@ CRITICAL (auto-score affected dimension 0-3):
 3. Role Reversal -- wrong character performs the action (villain wins instead of hero). ~50% of fight scenes.
 4. Brand Logo -- AI generates real brand logos (FENDI, Gucci, Nike, etc.). Legal liability.
 5. Character Count -- rendered count differs from requested count.
+6. Broken Rope / Hook / Prop Physics -- a single rope/chain splits into a double/forked rope, coils float in mid-air without gravity/tension, a grappling hook detaches or fails to stay physically locked onto the boat gunwale/rail across shots, or a heavy object/creature drops out of the sky mid-shot instead of resting on the floorboard.
 
 HIGH (score affected dimension 4-6):
 6. Camera Drift -- sudden unwanted zoom, rotation, or angle shift. ~60% of videos after 4s.

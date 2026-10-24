@@ -74,10 +74,10 @@
 - **Dramatic Beat & Value Turn (`sw-scene-craft`):** [0]: Directing operational capture with veteran composure. | *Observation (0) -> Tactical action (+): Establishing operational control.*
 - **Subtext & Prop (`sw-dialogue`):** Nora takes no chances with drifting hulks on the Aegean. | Prop: *Heavy bronze spyglass with oxidized patina, riveted leather sword belt.*
 - **3-Shot Timeline Action:**
-  - **0-2s:** From the very first frame at second 0, Nora steps firmly to the gunwale and speaks immediately, her voice calm, commanding and authoritative: Nora says "No oars moving. Hold our heading and ready the grappling irons." (no subtitles).
+  - **0-2s:** From the very first frame at second 0, Nora steps firmly to the gunwale and speaks immediately, her voice calm, commanding and authoritative: Nora says "No oars moving. Hold our heading and ready the grappling irons, now!" (no subtitles).
   - **2-4s:** Her command finishes cleanly by second 4; she lowers the brass spyglass against her leather sword belt with a decisive snap of her wrist.
   - **4-6s:** She holds her steady commanding gaze fixed on the water below, both boots planted firmly on the oak deck timbers. SPATIAL LOCK: All characters remain firmly INSIDE on the solid wooden deck planks, NEVER on the exterior ocean side of the railing.
-- **Dialogue (`Nora`, `0-4s`, 11 words):** *"No oars moving. Hold our heading and ready the grappling irons."*
+- **Dialogue (`Nora`, `0-3.9s`, 12 words):** *"No oars moving. Hold our heading and ready the grappling irons, now!"*
 - **Audio:** Nora's clear resonant captain's voice prominent; creak of ship's wheel; wet wind whipping cloaks.
 
 ### SC-04 (6s) — Phóng móc neo chuẩn xác
@@ -110,23 +110,23 @@
 - **Dramatic Beat & Value Turn (`sw-scene-craft`):** [-]: The herald's terrifying warning. | *Hostility (0) -> Supernatural dread (-): The cargo is not wealth, but a fatal curse.*
 - **Subtext & Prop (`sw-dialogue`):** The old man is relieved to be rid of the abomination, yet terrified for those who touch it. | Prop: *Bioluminescent net parcel pulsing with faint greenish light, salt-rimed coarse wool tunic.*
 - **3-Shot Timeline Action:**
-  - **0-3s:** Matching Panel 1 (Top-Left) of {{media:6fe82b75-4623-4632-bad3-25f8fea136c5|SC-06_storyboard_clean.jpg}} (0-3s): From second 0, the Old Fisherman looks up with wild bloodshot eyes and begins shrieking immediately in terrified hoarse gasps: Old Fisherman says "Mercy, Aegean sea-wolves! I haul no silver—only a curse from the trench!" (no subtitles).
+  - **0-3s:** Matching Panel 1 (Top-Left) of {{media:6fe82b75-4623-4632-bad3-25f8fea136c5|SC-06_storyboard_clean.jpg}} (0-3s): From second 0, the Old Fisherman looks up with wild bloodshot eyes and begins shrieking immediately in terrified hoarse gasps: Old Fisherman says "Mercy, Aegean sea-wolves! I haul no silver, only a curse from the trench. Whoever touches it drowns before dawn!" (no subtitles).
   - **3-6s:** At second 3.0, a crisp hard cut matching Panel 2 (Top-Right) of {{media:6fe82b75-4623-4632-bad3-25f8fea136c5|SC-06_storyboard_clean.jpg}} (3-6s): His voice quivers with desperate panic as his trembling calloused fingers clutch the green-glowing net parcel tighter to his wet chest.
   - **6-8s:** At second 6.0, a crisp hard cut matching Panel 3 (Bottom-Left) of {{media:6fe82b75-4623-4632-bad3-25f8fea136c5|SC-06_storyboard_clean.jpg}} (6-8s): He finishes speaking by second 6, trembling uncontrollably and pressing his forehead down onto the salt-crusted floorboards in complete surrender. SPATIAL LOCK: All characters stand firmly INSIDE the vessel on the solid wooden deck planks (or interior solid ground), NEVER on the exterior ocean/water side of the railing; maintain Panel 3's exact 180-degree camera side without flipping left and right sides.
-- **Dialogue (`Old Fisherman`, `0-5.0s`, 12 words):** *"Mercy, Aegean sea-wolves! I haul no silver—only a curse from the trench!"*
+- **Dialogue (`Old Fisherman`, `0-5.8s`, 19 words):** *"Mercy, Aegean sea-wolves! I haul no silver, only a curse from the trench. Whoever touches it drowns before dawn!"*
 - **Audio:** Old Fisherman's trembling hoarse voice; eerie low subterranean hum from the glowing bundle; water lapping inside the bilge.
 
 ### SC-07 (8s) — Ép cung tìm bí mật
-- **Setting:** Location: inside the wooden skiff. Light: downward amber beam from a handheld brass hurricane lantern held by Castor, illuminating the wet floorboards and the cowering fisherman; dark ocean around.
+- **Setting:** Location: inside the wooden skiff moored hard against the towering oak galleon hull (the hull fills the background an arm's length away). Light: downward amber beam from a handheld brass hurricane lantern held by Castor, illuminating the wet floorboards and the cowering fisherman.
 - **Characters / Refs:** `Castor, Old Fisherman, Omen Fish` | **SF:** `G` (Storyboard 2×2)
-- **Dramatic Beat & Value Turn (`sw-scene-craft`):** [!]: Aggressive tactical interrogation. | *Uncertainty (0) -> Coercive control (!): Forcing revelation of the cargo.*
-- **Subtext & Prop (`sw-dialogue`):** Castor suspects a lethal trap or Greek fire. | Prop: *Iron-reinforced recurve hand crossbow with bone lever, brass storm lantern.*
+- **Dramatic Beat & Value Turn (`sw-scene-craft`):** [+]: Lantern inspection of the mysterious catch. | *Uncertainty (0) -> Discovery (+): Forcing the cargo into the light.*
+- **Subtext & Prop (`sw-dialogue`):** Castor suspects a lethal trap and hides his unease behind bravado. | Prop: *Brass storm lantern held aloft over coarse wet hemp netting.*
 - **3-Shot Timeline Action:**
-  - **0-3s:** Matching Panel 1 (Top-Left) of {{media:bfc450b5-8bd1-4290-8ff3-6cb589250caa|SC-07_storyboard_clean.jpg}} (0-3s): From second 0, Castor lands heavily in the skiff, aims his iron crossbow at the fisherman's chest, and barks sharply: Castor says "Drop the netting and show your hands! Reveal what burns beneath that rope!" (no subtitles).
-  - **3-6s:** At second 3.0, a crisp hard cut matching Panel 2 (Top-Right) of {{media:bfc450b5-8bd1-4290-8ff3-6cb589250caa|SC-07_storyboard_clean.jpg}} (3-6s): His aggressive commanding voice cuts through the sea mist; the Old Fisherman recoils with a whimper, slowly parting his trembling fingers from the soaked net.
-  - **6-8s:** At second 6.0, a crisp hard cut matching Panel 3 (Bottom-Left) of {{media:bfc450b5-8bd1-4290-8ff3-6cb589250caa|SC-07_storyboard_clean.jpg}} (6-8s): Castor finishes by second 6, keeping the crossbow leveled steadily with his right hand while his boots adjust to the rocking motion. Strictly Old Fisherman alone in this focal framing; Castor are completely off-screen or in distinct background separation, never overlapping. SPATIAL LOCK: All characters stand firmly INSIDE the vessel on the solid wooden deck planks (or interior solid ground), NEVER on the exterior ocean/water side of the railing; maintain Panel 3's exact 180-degree camera side without flipping left and right sides.
-- **Dialogue (`Castor`, `0-5.0s`, 13 words):** *"Drop the netting and show your hands! Reveal what burns beneath that rope!"*
-- **Audio:** Castor's hard resonant voice; clatter of crossbow lock; splash of water under rocking keel.
+  - **0-3s:** Matching Panel 1 (Top-Left) of {{media:bfc450b5-8bd1-4290-8ff3-6cb589250caa|SC-07_storyboard_clean.jpg}} (0-3s): From second 0, Castor lands heavily in the skiff, raises the brass lantern high in his left hand over the netted catch, and barks sharply: Castor says "Now open the netting, old man! No curse frightens this crew. Let us see what glows beneath that rope!" (no subtitles).
+  - **3-6s:** At second 3.0, a crisp hard cut matching Panel 2 (Top-Right) of {{media:bfc450b5-8bd1-4290-8ff3-6cb589250caa|SC-07_storyboard_clean.jpg}} (3-6s): His loud commanding voice carries over the lapping water; the Old Fisherman flinches, then grips the soaked net with both trembling hands.
+  - **6-8s:** At second 6.0, a crisp hard cut matching Panel 3 (Bottom-Left) of {{media:bfc450b5-8bd1-4290-8ff3-6cb589250caa|SC-07_storyboard_clean.jpg}} (6-8s): The Old Fisherman, face 100% unobstructed, pulls the coarse hemp net back from the 1.8m Omen Fish, revealing its armored head and glowing emerald belly. Strictly Old Fisherman and Omen Fish in this shot; Castor is off-screen. SPATIAL LOCK: All characters stand firmly INSIDE the vessel on the solid wooden deck planks (or interior solid ground), NEVER on the exterior ocean/water side of the railing; maintain Panel 3's exact 180-degree camera side without flipping left and right sides.
+- **Dialogue (`Castor`, `0-5.8s`, 19 words):** *"Now open the netting, old man! No curse frightens this crew. Let us see what glows beneath that rope!"*
+- **Audio:** Castor's loud resonant voice; creak of skiff planks grinding against the galleon hull; splash of water under rocking keel.
 
 ### SC-08 (8s) — Lộ diện sinh vật biển dị dạng
 - **Setting:** Location: wet floor of the skiff. Light: dual-light interplay of faint cold emerald-cyan bioluminescence from the creature's belly and warm overhead lantern glow; dark slimy floorboards.

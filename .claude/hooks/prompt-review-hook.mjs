@@ -1,5 +1,6 @@
 // Rule 68 hook: nhắc chạy /fk-review-prompt sau khi viết/sửa prompt,
-// và nhắc trước khi gửi batch sinh (GENERATE_* / REGENERATE_* / EDIT_* / UPSCALE_*).
+// và nhắc trước khi gửi batch sinh video / upscale (tốn credit). Sinh ảnh không tốn credit
+// nên không nhắc (user 24/10/2026).
 // Chống lặp: mỗi mục tiêu (scene id / file) chỉ nhắc 1 lần cho tới khi chạy lint/review;
 // chạy tools/lint_prompt.py hoặc /fk-review-prompt xoá danh sách đã nhắc.
 import fs from 'node:fs';
@@ -38,10 +39,10 @@ process.stdin.on('end', () => {
 
   if (event === 'PreToolUse') {
     if (/api\/requests\/batch\b/.test(cmd) && !/batch-status/.test(cmd)
-        && /(RE)?GENERATE_|EDIT_IMAGE|EDIT_CHARACTER_IMAGE|UPSCALE_/.test(cmd)) {
+        && /(RE)?GENERATE_VIDEO|UPSCALE_VIDEO/.test(cmd)) {
       const ids = (cmd.match(/[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}/g) || []).sort().join(',');
       remindOnce(`batch:${ids || cmd.slice(0, 200)}`,
-        'Rule 29 + 68: request sinh tốn credit. Chỉ gửi khi user đã duyệt VÀ báo cáo /fk-review-prompt cho đúng prompt này đã được trình. Nếu chưa: dừng, chạy review, hỏi user.');
+        'Rule 29 + 68: request sinh video/upscale tốn credit. Chỉ gửi khi user đã duyệt VÀ báo cáo /fk-review-prompt cho đúng prompt này đã được trình. Nếu chưa: dừng, chạy review, hỏi user.');
     }
     process.exit(0);
   }

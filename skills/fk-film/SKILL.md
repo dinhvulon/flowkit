@@ -95,7 +95,7 @@ Skill điều phối **tổng thể và bắt buộc** để làm **phim điện
 ### Bước 6 — Khởi tạo Dự án FlowKit & Sinh Ảnh Reference (Cổng Duyệt 1)
 - Đọc [`references/flowkit-pipeline.md`](references/flowkit-pipeline.md).
 - Chạy pre-flight kiểm tra `/health`, xóa các request `PENDING` cũ (Rule 21), tạo Project & Scenes trên FlowKit.
-- Trước khi gửi sinh ảnh Reference (`/fk-gen-refs`), báo rõ danh sách entity và số lượng ảnh sẽ sinh, **chờ User đồng ý (Rule 29)**.
+- Sinh ảnh Reference (`/fk-gen-refs`) gửi luôn, không cần chờ User đồng ý trước (sinh ảnh không tốn credit — Rule 29, user 24/10/2026); báo danh sách entity đã gửi và trình kết quả ở Cổng Duyệt 1.
 - Ngay khi mỗi ảnh Reference sinh xong, thực hiện **4 bước Clean-Before-Video-Gen (Rule 28)**:
   1. Tải ảnh về `output/<slug>/images/<name>.jpg`.
   2. Chạy `python tools/remove_watermark_from_image.py` tạo `<name>_clean.jpg` và **xóa ngay ảnh gốc còn logo**.

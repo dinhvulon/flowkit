@@ -5,6 +5,10 @@ import sys
 import argparse
 import sqlite3
 import json
+from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
+from agent.services.flow_batch import PINHOLE_VOICES  # noqa: E402  (shared with the server's pre-send check)
 
 sys.stdout.reconfigure(encoding='utf-8')
 
@@ -40,6 +44,22 @@ FORBIDDEN_CREATURE_AND_LIGHTING_PATTERNS = [
 REF_TOKEN_RE = re.compile(r"\{\{ref:([^}]+)\}\}")
 MEDIA_TOKEN_RE = re.compile(r"\{\{media:([0-9a-fA-F-]{36})\|([^}|]+)\}\}")
 ANY_TOKEN_RE = re.compile(r"\{\{(?:ref|media):[^}]*\}\}")
+# Any {{voice:...}} chip, including malformed ids the server's VOICE_MENTION_RE would not even parse.
+VOICE_CHIP_RE = re.compile(r"\{\{voice:([^}]*)\}\}")
+
+
+def lint_voice_chips(text: str) -> list[dict]:
+    """Every {{voice:<id>}} chip must name one of the 30 Pinhole voices (the server refuses others)."""
+    issues = []
+    for vid in dict.fromkeys(m.strip() for m in VOICE_CHIP_RE.findall(text)):
+        if vid.lower() not in PINHOLE_VOICES:
+            issues.append({
+                "severity": "CRITICAL",
+                "type": "INVALID_VOICE_CHIP",
+                "token": f"{{{{voice:{vid}}}}}",
+                "message": f"Voice chip '{{{{voice:{vid}}}}}' is not a Pinhole voice id; the server will refuse to send this prompt. Valid ids: {', '.join(sorted(PINHOLE_VOICES))}."
+            })
+    return issues
 
 
 def lint_ref_mentions(text: str, refs=None, sent_to_flow: bool = False) -> list[dict]:
@@ -62,6 +82,7 @@ def lint_ref_mentions(text: str, refs=None, sent_to_flow: bool = False) -> list[
         if refs and not names and not MEDIA_TOKEN_RE.search(text):
             issues.append({"severity": "HIGH", "type": "REF_MENTION_MISSING",
                            "message": "Prompt uses reference images but never mentions one inline. Mention the ref at the sentence that locks it, e.g. 'Nora's face is exactly the face in {{ref:Nora}}'."})
+
     return issues
 
 
@@ -295,6 +316,44 @@ def lint_json_prompt(data: dict) -> list[dict]:
                 "message": f"Clip ({dur}s) has no 'hard cut' or multi-panel progression in timeline_action. Clips >=6s must cut across Storyboard panels (45-90 deg angle shifts) with Cause -> Effect action."
             })
 
+    # 9f. Google Flow Pinhole Voice Assignment & Inline {{voice:<id>}} Chip Check (Rule 12, Voice Bible §0/§0b)
+    issues.extend(lint_voice_chips(json.dumps(data, ensure_ascii=False)))
+    sp_obj = data.get("speech")
+    if isinstance(sp_obj, dict):
+        speakers = sp_obj.get("speaker") or []
+        if isinstance(speakers, str):
+            speakers = [speakers]
+        voices_map = sp_obj.get("voices") or {}
+        dialogues = sp_obj.get("dialogue") or []
+        ta_raw = json.dumps(data.get("timeline_action", {}), ensure_ascii=False)
+        seen_vids = {}
+        for spk in speakers:
+            vid = str(voices_map.get(spk, "")).strip().lower()
+            if not vid or vid not in PINHOLE_VOICES:
+                issues.append({
+                    "severity": "CRITICAL",
+                    "type": "INVALID_OR_MISSING_PINHOLE_VOICE",
+                    "token": f"{spk}:{vid}",
+                    "message": f"Speaker '{spk}' must be assigned a valid Google Flow Pinhole voice ID in speech.voices (got '{vid}')."
+                })
+            else:
+                if vid in seen_vids and seen_vids[vid] != spk:
+                    issues.append({
+                        "severity": "HIGH",
+                        "type": "DUPLICATE_VOICE_IN_SCENE",
+                        "token": f"{spk}/{seen_vids[vid]}:{vid}",
+                        "message": f"Speakers '{seen_vids[vid]}' and '{spk}' share the same voice ID '{vid}' in the same clip. Assign distinct Pinhole voices."
+                    })
+                seen_vids[vid] = spk
+                voice_chip = f"{{{{voice:{vid}}}}}"
+                if voice_chip not in ta_raw:
+                    issues.append({
+                        "severity": "HIGH",
+                        "type": "MISSING_INLINE_VOICE_CHIP",
+                        "token": f"{spk} -> {voice_chip}",
+                        "message": f"Speaker '{spk}' is assigned voice '{vid}' in speech.voices, but inline chip '{voice_chip}' is missing from timeline_action."
+                    })
+
     return issues
 
 
@@ -364,6 +423,7 @@ def lint_prompt(prompt: str) -> list[dict]:
         return lint_json_prompt(json_obj)
 
     issues = lint_ref_mentions(prompt, sent_to_flow=True)
+    issues.extend(lint_voice_chips(prompt))
     p_lower = ANY_TOKEN_RE.sub(" ", prompt).lower()
 
     # 1. Check Ghost Device patterns
@@ -497,12 +557,13 @@ def run_json_prompt_tests():
             }
         ],
         "timeline_action": {
-            "0-3s": "Chief turns the faceted black flint core with both hands inspecting platform angle while Nora watches.",
+            "0-3s": "Chief turns the faceted black flint core with both hands inspecting platform angle while Nora ({{voice:laomedeia}}) watches and speaks.",
             "3-6s": "Chief raises quartzite hammerstone in right hand hovering precisely above platform.",
             "6-8s": "Chief locks elbows preparing for final strike while Nora watches his hand position with admiration."
         },
         "speech": {
-            "speaker": "Nora",
+            "speaker": ["Nora"],
+            "voices": {"Nora": "laomedeia"},
             "voice_profile": "Laomedeia conversational energetic vlog delivery",
             "dialogue": "The Leader is pulling out a massive black flint nodule from the hearth side. Watch his hand position—this is pure prehistoric engineering!"
         },

@@ -32,7 +32,7 @@
       }
     ],
     "timeline_action": {
-      "0-3s": "Matching Panel 1 (Top-Left, 0s) of the SC-123 Storyboard (0-3s): [Low-Angle MS] Entering late into active physical motion, Nora ({{media:62e117f8-0af7-484e-90a8-f79927105746|nora_clean.jpg}}) initiates the maneuver as Nora, Castor, Heracles, and Theron step out of the dark karst tunnel onto a wide limestone terrace inside a colossal subterranean cenote open to the starry night sky above, and speaks immediately from second 0 with unobstructed face: Nora says \"Behold the hidden heart of the Aegean—a subterranean cavern open to the stars.\" (no subtitles).",
+      "0-3s": "Matching Panel 1 (Top-Left, 0s) of the SC-123 Storyboard (0-3s): [Low-Angle MS] Entering late into active physical motion, Nora ({{media:62e117f8-0af7-484e-90a8-f79927105746|nora_clean.jpg}}) initiates the maneuver as Nora, Castor, Heracles, and Theron step out of the dark karst tunnel onto a wide limestone terrace inside a colossal subterranean cenote open to the starry night sky above, and speaks immediately from second 0 with unobstructed face: Nora ({{voice:kore}}, firm mid-low female captain voice) says: \"Behold the hidden heart of the Aegean—a subterranean cavern open to the stars.\" (no subtitles).",
       "3-7s": "At second 3.0, a crisp 100% full-frame hard cut (60-degree angle shift) matching Panel 2 (Top-Right, 3s) of the SC-123 Storyboard (3-7s): [60-Deg MCU] As the spoken line finishes cleanly, Cause -> Effect: Golden Tree Sanctuary ({{media:9968571a-f57b-4c37-be4c-ae16a41d7aae|golden_tree_sanctuary_clean.jpg}}) drives the physical action forward as Nora, Castor, Heracles, and Theron step out of the dark karst tunnel onto a wide limestone terrace inside a colossal subterranean cenote open to the starry night sky above.",
       "7-10s": "At second 7.0, a crisp 100% full-frame hard cut (90-degree angle shift) matching Panel 3 (Bottom-Left, 7s) and Panel 4 (Bottom-Right, 9s) of the SC-123 Storyboard (7-10s): [90-Deg WS] Culminating physical payoff and micro-hook into the next scene as at the center of the mirror-still crystal pool rises the ancient bioluminescent Golden Tree, bathing their faces in warm amber light. SPATIAL LOCK: All characters stand firmly on the solid interior deck or stone floor, NEVER on the exterior drop-off side of any barrier; faces 100% unobstructed."
     },
@@ -134,7 +134,7 @@
       }
     ],
     "timeline_action": {
-      "0-3s": "Matching Panel 1 (Top-Left, 0s) of the SC-124 Storyboard (0-3s): [Three-Quarter MCU] Entering late into active physical motion, Theron ({{media:7c5d994a-dabd-406b-a6c1-b9fa6473a612|theron_clean.jpg}}) initiates the maneuver as Theron lowers his wooden staff into the shallow crystal-clear water at the pool's edge, sending gentle golden ripples across the submerged limestone flagstones, and speaks immediately from second 0 with unobstructed face: Theron says \"Walk softly beside the crystal pool, sailors. The roots feel every greedy hand.\" (no subtitles).",
+      "0-3s": "Matching Panel 1 (Top-Left, 0s) of the SC-124 Storyboard (0-3s): [Three-Quarter MCU] Entering late into active physical motion, Theron ({{media:7c5d994a-dabd-406b-a6c1-b9fa6473a612|theron_clean.jpg}}) initiates the maneuver as Theron lowers his wooden staff into the shallow crystal-clear water at the pool's edge, sending gentle golden ripples across the submerged limestone flagstones, and speaks immediately from second 0 with unobstructed face: Theron ({{voice:schedar}}, cold calculating mid-low male voice) says: \"Walk softly beside the crystal pool, sailors. The roots feel every greedy hand.\" (no subtitles).",
       "3-6s": "At second 3.0, a crisp 100% full-frame hard cut (60-degree angle shift) matching Panel 2 (Top-Right, 3s) of the SC-124 Storyboard (3-6s): [75-Deg MS] As the spoken line finishes cleanly, Cause -> Effect: Golden Tree Sanctuary ({{media:9968571a-f57b-4c37-be4c-ae16a41d7aae|golden_tree_sanctuary_clean.jpg}}) drives the physical action forward as Theron lowers his wooden staff into the shallow crystal-clear water at the pool's edge, sending gentle golden ripples across the submerged limestone flagstones.",
       "6-8s": "At second 6.0, a crisp 100% full-frame hard cut (90-degree angle shift) matching Panel 3 (Bottom-Left, 6s) and Panel 4 (Bottom-Right, 7s) of the SC-124 Storyboard (6-8s): [90-Deg CU] Culminating physical payoff and micro-hook into the next scene as Nora, Castor, and Heracles follow in single file along the mossy stone bank. SPATIAL LOCK: All characters stand firmly on the solid interior deck or stone floor, NEVER on the exterior drop-off side of any barrier; faces 100% unobstructed."
     },
@@ -143,7 +143,7 @@
         "Theron"
       ],
       "voices": {
-        "Theron": "charon"
+        "Theron": "schedar"
       },
       "delivery": "urgent, sharp, dramatic cinematic delivery",
       "dialogue": [
@@ -320,7 +320,7 @@
       }
     ],
     "timeline_action": {
-      "0-3s": "Matching Panel 1 (Top-Left, 0s) of the SC-126 Storyboard (0-3s): [OTS Medium Shot] Entering late into active physical motion, Heracles ({{media:37a10133-8496-49e7-bd77-b5f261c5a43e|heracles_clean.jpg}}) initiates the maneuver as giant Heracles stares up at the shimmering golden boughs chime softly in the cavern draft, letting his heavy iron crowbar slip from his fingers onto the mossy stones, and speaks immediately from second 0 with unobstructed face: Heracles says \"By the gods... every leaf is pure beaten gold chiming in the wind.\" (no subtitles).",
+      "0-3s": "Matching Panel 1 (Top-Left, 0s) of the SC-126 Storyboard (0-3s): [OTS Medium Shot] Entering late into active physical motion, Heracles ({{media:37a10133-8496-49e7-bd77-b5f261c5a43e|heracles_clean.jpg}}) initiates the maneuver as giant Heracles stares up at the shimmering golden boughs chime softly in the cavern draft, letting his heavy iron crowbar slip from his fingers onto the mossy stones, and speaks immediately from second 0 with unobstructed face: Heracles ({{voice:algenib}}, gravelly booming low male warrior voice) says: \"By the gods... every leaf is pure beaten gold chiming in the wind.\" (no subtitles).",
       "3-6s": "At second 3.0, a crisp 100% full-frame hard cut (60-degree angle shift) matching Panel 2 (Top-Right, 3s) of the SC-126 Storyboard (3-6s): [60-Deg Reverse MCU] As the spoken line finishes cleanly, Cause -> Effect: Golden Tree Sanctuary ({{media:9968571a-f57b-4c37-be4c-ae16a41d7aae|golden_tree_sanctuary_clean.jpg}}) drives the physical action forward as giant Heracles stares up at the shimmering golden boughs chime softly in the cavern draft, letting his heavy iron crowbar slip from his fingers onto the mossy stones.",
       "6-8s": "At second 6.0, a crisp 100% full-frame hard cut (90-degree angle shift) matching Panel 3 (Bottom-Left, 6s) and Panel 4 (Bottom-Right, 7s) of the SC-126 Storyboard (6-8s): [90-Deg Wide Framing] Culminating physical payoff and micro-hook into the next scene as warm golden light reflects in his wide eyes as he kneels on one knee beside the pool. SPATIAL LOCK: All characters stand firmly on the solid interior deck or stone floor, NEVER on the exterior drop-off side of any barrier; faces 100% unobstructed."
     },
@@ -329,7 +329,7 @@
         "Heracles"
       ],
       "voices": {
-        "Heracles": "puck"
+        "Heracles": "algenib"
       },
       "delivery": "urgent, sharp, dramatic cinematic delivery",
       "dialogue": [
@@ -506,7 +506,7 @@
       }
     ],
     "timeline_action": {
-      "0-3s": "Matching Panel 1 (Top-Left, 0s) of the SC-128 Storyboard (0-3s): [Three-Quarter MCU] Entering late into active physical motion, Castor ({{media:3152a235-af4f-462b-a78e-02551f826e41|castor_clean.jpg}}) initiates the maneuver as mesmerized by the metallic sheen, Castor steps ahead of the group onto a submerged root-shelf and draws his bronze dagger, reaching toward a low hanging golden branch, and speaks immediately from second 0 with unobstructed face: Castor says \"Look at those golden roots! One severed branch could buy fifty warships!\" (no subtitles).",
+      "0-3s": "Matching Panel 1 (Top-Left, 0s) of the SC-128 Storyboard (0-3s): [Three-Quarter MCU] Entering late into active physical motion, Castor ({{media:3152a235-af4f-462b-a78e-02551f826e41|castor_clean.jpg}}) initiates the maneuver as mesmerized by the metallic sheen, Castor steps ahead of the group onto a submerged root-shelf and draws his bronze dagger, reaching toward a low hanging golden branch, and speaks immediately from second 0 with unobstructed face: Castor ({{voice:fenrir}}, deep urgent male navigator voice) says: \"Look at those golden roots! One severed branch could buy fifty warships!\" (no subtitles).",
       "3-6s": "At second 3.0, a crisp 100% full-frame hard cut (60-degree angle shift) matching Panel 2 (Top-Right, 3s) of the SC-128 Storyboard (3-6s): [75-Deg MS] As the spoken line finishes cleanly, Cause -> Effect: Golden Tree Sanctuary ({{media:9968571a-f57b-4c37-be4c-ae16a41d7aae|golden_tree_sanctuary_clean.jpg}}) drives the physical action forward as mesmerized by the metallic sheen, Castor steps ahead of the group onto a submerged root-shelf and draws his bronze dagger, reaching toward a low hanging golden branch.",
       "6-8s": "At second 6.0, a crisp 100% full-frame hard cut (90-degree angle shift) matching Panel 3 (Bottom-Left, 6s) and Panel 4 (Bottom-Right, 7s) of the SC-128 Storyboard (6-8s): [90-Deg CU] Culminating physical payoff and micro-hook into the next scene as the golden reflection burns intensely in his pupils as his blade touches the bark. SPATIAL LOCK: All characters stand firmly on the solid interior deck or stone floor, NEVER on the exterior drop-off side of any barrier; faces 100% unobstructed."
     },
@@ -615,7 +615,7 @@
       }
     ],
     "timeline_action": {
-      "0-3s": "Matching Panel 1 (Top-Left, 0s) of the SC-129 Storyboard (0-3s): [Wide Dynamic Action Shot] Entering late into active physical motion, Theron ({{media:7c5d994a-dabd-406b-a6c1-b9fa6473a612|theron_clean.jpg}}) initiates the maneuver as Theron lunges forward and slams his gnarled wooden staff across Castor's forearm to block the dagger, pointing sharply down into the crystal-clear depths of the pool, and speaks immediately from second 0 with unobstructed face: Theron says \"Pull your hand back from the root, Castor! Look beneath the clear water!\" (no subtitles).",
+      "0-3s": "Matching Panel 1 (Top-Left, 0s) of the SC-129 Storyboard (0-3s): [Wide Dynamic Action Shot] Entering late into active physical motion, Theron ({{media:7c5d994a-dabd-406b-a6c1-b9fa6473a612|theron_clean.jpg}}) initiates the maneuver as Theron lunges forward and slams his gnarled wooden staff across Castor's forearm to block the dagger, pointing sharply down into the crystal-clear depths of the pool, and speaks immediately from second 0 with unobstructed face: Theron ({{voice:schedar}}, cold calculating mid-low male voice) says: \"Pull your hand back from the root, Castor! Look beneath the clear water!\" (no subtitles).",
       "3-6s": "At second 3.0, a crisp 100% full-frame hard cut (60-degree angle shift) matching Panel 2 (Top-Right, 3s) of the SC-129 Storyboard (3-6s): [60-Deg Low-Angle MCU] As the spoken line finishes cleanly, Cause -> Effect: Theron ({{media:7c5d994a-dabd-406b-a6c1-b9fa6473a612|theron_clean.jpg}}) drives the physical action forward as Theron lunges forward and slams his gnarled wooden staff across Castor's forearm to block the dagger, pointing sharply down into the crystal-clear depths of the pool.",
       "6-8s": "At second 6.0, a crisp 100% full-frame hard cut (90-degree angle shift) matching Panel 3 (Bottom-Left, 6s) and Panel 4 (Bottom-Right, 7s) of the SC-129 Storyboard (6-8s): [90-Deg Insert CU] Culminating physical payoff and micro-hook into the next scene as Nora steps beside Castor and peers down through the transparent water. SPATIAL LOCK: All characters stand firmly on the solid interior deck or stone floor, NEVER on the exterior drop-off side of any barrier; faces 100% unobstructed."
     },
@@ -624,7 +624,7 @@
         "Theron"
       ],
       "voices": {
-        "Theron": "charon"
+        "Theron": "schedar"
       },
       "delivery": "urgent, sharp, dramatic cinematic delivery",
       "dialogue": [
@@ -815,7 +815,7 @@
       }
     ],
     "timeline_action": {
-      "0-3s": "Matching Panel 1 (Top-Left, 0s) of the SC-131 Storyboard (0-3s): [Low-Angle MS] Entering late into active physical motion, Theron ({{media:7c5d994a-dabd-406b-a6c1-b9fa6473a612|theron_clean.jpg}}) initiates the maneuver as Theron kneels at the water's edge and taps the submerged golden helmet of a petrified warrior with his wooden staff while speaking to Nora and Castor, and speaks immediately from second 0 with unobstructed face: Theron says \"Every man who cut that bark turned to solid gold where he stood.\" (no subtitles).",
+      "0-3s": "Matching Panel 1 (Top-Left, 0s) of the SC-131 Storyboard (0-3s): [Low-Angle MS] Entering late into active physical motion, Theron ({{media:7c5d994a-dabd-406b-a6c1-b9fa6473a612|theron_clean.jpg}}) initiates the maneuver as Theron kneels at the water's edge and taps the submerged golden helmet of a petrified warrior with his wooden staff while speaking to Nora and Castor, and speaks immediately from second 0 with unobstructed face: Theron ({{voice:schedar}}, cold calculating mid-low male voice) says: \"Every man who cut that bark turned to solid gold where he stood.\" (no subtitles).",
       "3-6s": "At second 3.0, a crisp 100% full-frame hard cut (60-degree angle shift) matching Panel 2 (Top-Right, 3s) of the SC-131 Storyboard (3-6s): [60-Deg MCU] As the spoken line finishes cleanly, Cause -> Effect: Castor ({{media:3152a235-af4f-462b-a78e-02551f826e41|castor_clean.jpg}}) drives the physical action forward as Theron kneels at the water's edge and taps the submerged golden helmet of a petrified warrior with his wooden staff while speaking to Nora and Castor.",
       "6-8s": "At second 6.0, a crisp 100% full-frame hard cut (90-degree angle shift) matching Panel 3 (Bottom-Left, 6s) and Panel 4 (Bottom-Right, 7s) of the SC-131 Storyboard (6-8s): [90-Deg WS] Culminating physical payoff and micro-hook into the next scene as Nora grips Castor's shoulder firmly as the truth of the tree's lethal defense sinks in. SPATIAL LOCK: All characters stand firmly on the solid interior deck or stone floor, NEVER on the exterior drop-off side of any barrier; faces 100% unobstructed."
     },
@@ -824,7 +824,7 @@
         "Theron"
       ],
       "voices": {
-        "Theron": "charon"
+        "Theron": "schedar"
       },
       "delivery": "urgent, sharp, dramatic cinematic delivery",
       "dialogue": [
@@ -917,7 +917,7 @@
       }
     ],
     "timeline_action": {
-      "0-2s": "Matching Panel 1 (Top-Left, 0s) of the SC-132 Storyboard (0-2s): [Three-Quarter MCU] Entering late into active physical motion, Castor ({{media:3152a235-af4f-462b-a78e-02551f826e41|castor_clean.jpg}}) initiates the maneuver as Castor stares down at a petrified golden hand beneath his boot that still clutches a rusted cutlass, his own bronze dagger trembling in his grip, and speaks immediately from second 0 with unobstructed face: Castor says \"They were sailors like us... crowned in gold, yet frozen dead forever.\" (no subtitles).",
+      "0-2s": "Matching Panel 1 (Top-Left, 0s) of the SC-132 Storyboard (0-2s): [Three-Quarter MCU] Entering late into active physical motion, Castor ({{media:3152a235-af4f-462b-a78e-02551f826e41|castor_clean.jpg}}) initiates the maneuver as Castor stares down at a petrified golden hand beneath his boot that still clutches a rusted cutlass, his own bronze dagger trembling in his grip, and speaks immediately from second 0 with unobstructed face: Castor ({{voice:fenrir}}, deep urgent male navigator voice) says: \"They were sailors like us... crowned in gold, yet frozen dead forever.\" (no subtitles).",
       "2-4s": "At second 2.0, a crisp 100% full-frame hard cut (60-degree angle shift) matching Panel 2 (Top-Right, 2s) of the SC-132 Storyboard (2-4s): [75-Deg MS] As the spoken line finishes cleanly, Cause -> Effect: Golden Tree Sanctuary ({{media:9968571a-f57b-4c37-be4c-ae16a41d7aae|golden_tree_sanctuary_clean.jpg}}) drives the physical action forward as Castor stares down at a petrified golden hand beneath his boot that still clutches a rusted cutlass, his own bronze dagger trembling in his grip.",
       "4-6s": "At second 4.0, a crisp 100% full-frame hard cut (90-degree angle shift) matching Panel 3 (Bottom-Left, 4s) and Panel 4 (Bottom-Right, 5s) of the SC-132 Storyboard (4-6s): [90-Deg CU] Culminating physical payoff and micro-hook into the next scene as he pulls his hand back from the golden root and steps onto the safe mossy stone bank. SPATIAL LOCK: All characters stand firmly on the solid interior deck or stone floor, NEVER on the exterior drop-off side of any barrier; faces 100% unobstructed."
     },
@@ -1026,7 +1026,7 @@
       }
     ],
     "timeline_action": {
-      "0-3s": "Matching Panel 1 (Top-Left, 0s) of the SC-133 Storyboard (0-3s): [Wide Dynamic Action Shot] Entering late into active physical motion, Nora ({{media:62e117f8-0af7-484e-90a8-f79927105746|nora_clean.jpg}}) initiates the maneuver as Nora steps directly in front of Castor beside the glowing pool, places her hand squarely over his dagger hand, and looks him in the eye with unwavering leadership, and speaks immediately from second 0 with unobstructed face: Nora says \"Gold cannot steer a ship through storms, Castor. Our crew is our treasure.\" (no subtitles).",
+      "0-3s": "Matching Panel 1 (Top-Left, 0s) of the SC-133 Storyboard (0-3s): [Wide Dynamic Action Shot] Entering late into active physical motion, Nora ({{media:62e117f8-0af7-484e-90a8-f79927105746|nora_clean.jpg}}) initiates the maneuver as Nora steps directly in front of Castor beside the glowing pool, places her hand squarely over his dagger hand, and looks him in the eye with unwavering leadership, and speaks immediately from second 0 with unobstructed face: Nora ({{voice:kore}}, firm mid-low female captain voice) says: \"Gold cannot steer a ship through storms, Castor. Our crew is our treasure.\" (no subtitles).",
       "3-7s": "At second 3.0, a crisp 100% full-frame hard cut (60-degree angle shift) matching Panel 2 (Top-Right, 3s) of the SC-133 Storyboard (3-7s): [60-Deg Low-Angle MCU] As the spoken line finishes cleanly, Cause -> Effect: Castor ({{media:3152a235-af4f-462b-a78e-02551f826e41|castor_clean.jpg}}) drives the physical action forward as Nora steps directly in front of Castor beside the glowing pool, places her hand squarely over his dagger hand, and looks him in the eye with unwavering leadership.",
       "7-10s": "At second 7.0, a crisp 100% full-frame hard cut (90-degree angle shift) matching Panel 3 (Bottom-Left, 7s) and Panel 4 (Bottom-Right, 9s) of the SC-133 Storyboard (7-10s): [90-Deg Insert CU] Culminating physical payoff and micro-hook into the next scene as Heracles steps up beside them, nodding in solid brotherhood. SPATIAL LOCK: All characters stand firmly on the solid interior deck or stone floor, NEVER on the exterior drop-off side of any barrier; faces 100% unobstructed."
     },
@@ -1135,7 +1135,7 @@
       }
     ],
     "timeline_action": {
-      "0-3s": "Matching Panel 1 (Top-Left, 0s) of the SC-134 Storyboard (0-3s): [OTS Medium Shot] Entering late into active physical motion, Castor ({{media:3152a235-af4f-462b-a78e-02551f826e41|castor_clean.jpg}}) initiates the maneuver as breaking free of the golden trance, Castor exhales deeply, slides his bronze dagger cleanly back into its leather scabbard, and clasps Nora's forearm in a warrior's grip, and speaks immediately from second 0 with unobstructed face: Castor says \"You speak true, Captain. Better a free sailor than a golden corpse.\" (no subtitles).",
+      "0-3s": "Matching Panel 1 (Top-Left, 0s) of the SC-134 Storyboard (0-3s): [OTS Medium Shot] Entering late into active physical motion, Castor ({{media:3152a235-af4f-462b-a78e-02551f826e41|castor_clean.jpg}}) initiates the maneuver as breaking free of the golden trance, Castor exhales deeply, slides his bronze dagger cleanly back into its leather scabbard, and clasps Nora's forearm in a warrior's grip, and speaks immediately from second 0 with unobstructed face: Castor ({{voice:fenrir}}, deep urgent male navigator voice) says: \"You speak true, Captain. Better a free sailor than a golden corpse.\" (no subtitles).",
       "3-6s": "At second 3.0, a crisp 100% full-frame hard cut (60-degree angle shift) matching Panel 2 (Top-Right, 3s) of the SC-134 Storyboard (3-6s): [60-Deg Reverse MCU] As the spoken line finishes cleanly, Cause -> Effect: Castor ({{media:3152a235-af4f-462b-a78e-02551f826e41|castor_clean.jpg}}) drives the physical action forward as breaking free of the golden trance, Castor exhales deeply, slides his bronze dagger cleanly back into its leather scabbard, and clasps Nora's forearm in a warrior's grip.",
       "6-8s": "At second 6.0, a crisp 100% full-frame hard cut (90-degree angle shift) matching Panel 3 (Bottom-Left, 6s) and Panel 4 (Bottom-Right, 7s) of the SC-134 Storyboard (6-8s): [90-Deg Wide Framing] Culminating physical payoff and micro-hook into the next scene as the aggressive pulse of the Golden Tree's roots calms to a gentle warm glow. SPATIAL LOCK: All characters stand firmly on the solid interior deck or stone floor, NEVER on the exterior drop-off side of any barrier; faces 100% unobstructed."
     },
@@ -1321,7 +1321,7 @@
       }
     ],
     "timeline_action": {
-      "0-3s": "Matching Panel 1 (Top-Left, 0s) of the SC-136 Storyboard (0-3s): [Three-Quarter MCU] Entering late into active physical motion, Nora ({{media:62e117f8-0af7-484e-90a8-f79927105746|nora_clean.jpg}}) initiates the maneuver as Nora extends both open hands above the crystal pool; the falling golden leaf lands softly in her palms, glowing with warm living amber light, and speaks immediately from second 0 with unobstructed face: Nora says \"Given freely by the wind, never stolen by steel. One leaf is enough.\" (no subtitles).",
+      "0-3s": "Matching Panel 1 (Top-Left, 0s) of the SC-136 Storyboard (0-3s): [Three-Quarter MCU] Entering late into active physical motion, Nora ({{media:62e117f8-0af7-484e-90a8-f79927105746|nora_clean.jpg}}) initiates the maneuver as Nora extends both open hands above the crystal pool; the falling golden leaf lands softly in her palms, glowing with warm living amber light, and speaks immediately from second 0 with unobstructed face: Nora ({{voice:kore}}, firm mid-low female captain voice) says: \"Given freely by the wind, never stolen by steel. One leaf is enough.\" (no subtitles).",
       "3-6s": "At second 3.0, a crisp 100% full-frame hard cut (60-degree angle shift) matching Panel 2 (Top-Right, 3s) of the SC-136 Storyboard (3-6s): [75-Deg MS] As the spoken line finishes cleanly, Cause -> Effect: Golden Tree Sanctuary ({{media:9968571a-f57b-4c37-be4c-ae16a41d7aae|golden_tree_sanctuary_clean.jpg}}) drives the physical action forward as Nora extends both open hands above the crystal pool; the falling golden leaf lands softly in her palms, glowing with warm living amber light.",
       "6-8s": "At second 6.0, a crisp 100% full-frame hard cut (90-degree angle shift) matching Panel 3 (Bottom-Left, 6s) and Panel 4 (Bottom-Right, 7s) of the SC-136 Storyboard (6-8s): [90-Deg CU] Culminating physical payoff and micro-hook into the next scene as she closes her fingers gently around the leaf and tucks it into her brigandine breast pocket. SPATIAL LOCK: All characters stand firmly on the solid interior deck or stone floor, NEVER on the exterior drop-off side of any barrier; faces 100% unobstructed."
     },
@@ -1423,7 +1423,7 @@
       }
     ],
     "timeline_action": {
-      "0-2s": "Matching Panel 1 (Top-Left, 0s) of the SC-137 Storyboard (0-2s): [Wide Dynamic Action Shot] Entering late into active physical motion, Theron ({{media:7c5d994a-dabd-406b-a6c1-b9fa6473a612|theron_clean.jpg}}) initiates the maneuver as as Nora secures the single leaf, the massive counterweighted limestone sluice-gate on the eastern wall of the cenote rumbles and parts, revealing a direct sea-channel illuminated by pink dawn light, and speaks immediately from second 0 with unobstructed face: Theron says \"The sanctuary spares those who master their greed. The eastern channel opens.\" (no subtitles).",
+      "0-2s": "Matching Panel 1 (Top-Left, 0s) of the SC-137 Storyboard (0-2s): [Wide Dynamic Action Shot] Entering late into active physical motion, Theron ({{media:7c5d994a-dabd-406b-a6c1-b9fa6473a612|theron_clean.jpg}}) initiates the maneuver as as Nora secures the single leaf, the massive counterweighted limestone sluice-gate on the eastern wall of the cenote rumbles and parts, revealing a direct sea-channel illuminated by pink dawn light, and speaks immediately from second 0 with unobstructed face: Theron ({{voice:schedar}}, cold calculating mid-low male voice) says: \"The sanctuary spares those who master their greed. The eastern channel opens.\" (no subtitles).",
       "2-4s": "At second 2.0, a crisp 100% full-frame hard cut (60-degree angle shift) matching Panel 2 (Top-Right, 2s) of the SC-137 Storyboard (2-4s): [60-Deg Low-Angle MCU] As the spoken line finishes cleanly, Cause -> Effect: Golden Tree Sanctuary ({{media:9968571a-f57b-4c37-be4c-ae16a41d7aae|golden_tree_sanctuary_clean.jpg}}) drives the physical action forward as as Nora secures the single leaf, the massive counterweighted limestone sluice-gate on the eastern wall of the cenote rumbles and parts, revealing a direct sea-channel illuminated by pink dawn light.",
       "4-6s": "At second 4.0, a crisp 100% full-frame hard cut (90-degree angle shift) matching Panel 3 (Bottom-Left, 4s) and Panel 4 (Bottom-Right, 5s) of the SC-137 Storyboard (4-6s): [90-Deg Insert CU] Culminating physical payoff and micro-hook into the next scene as Theron leans on his staff and nods with quiet relief. SPATIAL LOCK: All characters stand firmly on the solid interior deck or stone floor, NEVER on the exterior drop-off side of any barrier; faces 100% unobstructed."
     },
@@ -1432,7 +1432,7 @@
         "Theron"
       ],
       "voices": {
-        "Theron": "charon"
+        "Theron": "schedar"
       },
       "delivery": "urgent, sharp, dramatic cinematic delivery",
       "dialogue": [
@@ -1530,7 +1530,7 @@
       }
     ],
     "timeline_action": {
-      "0-3s": "Matching Panel 1 (Top-Left, 0s) of the SC-138 Storyboard (0-3s): [OTS Medium Shot] Entering late into active physical motion, Nora ({{media:62e117f8-0af7-484e-90a8-f79927105746|nora_clean.jpg}}) initiates the maneuver as standing before the newly opened eastern sea-arch, Nora turns to the aged navigator Theron and extends her right hand in invitation, and speaks immediately from second 0 with unobstructed face: Nora says \"Your long exile is over, Theron. Come steer our helm into the dawn.\" (no subtitles).",
+      "0-3s": "Matching Panel 1 (Top-Left, 0s) of the SC-138 Storyboard (0-3s): [OTS Medium Shot] Entering late into active physical motion, Nora ({{media:62e117f8-0af7-484e-90a8-f79927105746|nora_clean.jpg}}) initiates the maneuver as standing before the newly opened eastern sea-arch, Nora turns to the aged navigator Theron and extends her right hand in invitation, and speaks immediately from second 0 with unobstructed face: Nora ({{voice:kore}}, firm mid-low female captain voice) says: \"Your long exile is over, Theron. Come steer our helm into the dawn.\" (no subtitles).",
       "3-6s": "At second 3.0, a crisp 100% full-frame hard cut (60-degree angle shift) matching Panel 2 (Top-Right, 3s) of the SC-138 Storyboard (3-6s): [60-Deg Reverse MCU] As the spoken line finishes cleanly, Cause -> Effect: Theron ({{media:7c5d994a-dabd-406b-a6c1-b9fa6473a612|theron_clean.jpg}}) drives the physical action forward as standing before the newly opened eastern sea-arch, Nora turns to the aged navigator Theron and extends her right hand in invitation.",
       "6-8s": "At second 6.0, a crisp 100% full-frame hard cut (90-degree angle shift) matching Panel 3 (Bottom-Left, 6s) and Panel 4 (Bottom-Right, 7s) of the SC-138 Storyboard (6-8s): [90-Deg Wide Framing] Culminating physical payoff and micro-hook into the next scene as warm dawn light from the sea-tunnel touches Theron's weathered face for the first time in twenty years. SPATIAL LOCK: All characters stand firmly on the solid interior deck or stone floor, NEVER on the exterior drop-off side of any barrier; faces 100% unobstructed."
     },
@@ -1637,7 +1637,7 @@
       }
     ],
     "timeline_action": {
-      "0-2s": "Matching Panel 1 (Top-Left, 0s) of the SC-139 Storyboard (0-2s): [Low-Angle MS] Entering late into active physical motion, Theron ({{media:7c5d994a-dabd-406b-a6c1-b9fa6473a612|theron_clean.jpg}}) initiates the maneuver as Theron's eyes glisten with emotion as he grasps Nora's outstretched hand with both of his weathered hands, and speaks immediately from second 0 with unobstructed face: Theron says \"To breathe the open sea again... I will gladly take your wheel, Captain.\" (no subtitles).",
+      "0-2s": "Matching Panel 1 (Top-Left, 0s) of the SC-139 Storyboard (0-2s): [Low-Angle MS] Entering late into active physical motion, Theron ({{media:7c5d994a-dabd-406b-a6c1-b9fa6473a612|theron_clean.jpg}}) initiates the maneuver as Theron's eyes glisten with emotion as he grasps Nora's outstretched hand with both of his weathered hands, and speaks immediately from second 0 with unobstructed face: Theron ({{voice:schedar}}, cold calculating mid-low male voice) says: \"To breathe the open sea again... I will gladly take your wheel, Captain.\" (no subtitles).",
       "2-4s": "At second 2.0, a crisp 100% full-frame hard cut (60-degree angle shift) matching Panel 2 (Top-Right, 2s) of the SC-139 Storyboard (2-4s): [60-Deg MCU] As the spoken line finishes cleanly, Cause -> Effect: Theron ({{media:7c5d994a-dabd-406b-a6c1-b9fa6473a612|theron_clean.jpg}}) drives the physical action forward as Theron's eyes glisten with emotion as he grasps Nora's outstretched hand with both of his weathered hands.",
       "4-6s": "At second 4.0, a crisp 100% full-frame hard cut (90-degree angle shift) matching Panel 3 (Bottom-Left, 4s) and Panel 4 (Bottom-Right, 5s) of the SC-139 Storyboard (4-6s): [90-Deg WS] Culminating physical payoff and micro-hook into the next scene as Heracles claps a welcoming hand onto Theron's shoulder as they turn toward the sunlit water channel. SPATIAL LOCK: All characters stand firmly on the solid interior deck or stone floor, NEVER on the exterior drop-off side of any barrier; faces 100% unobstructed."
     },
@@ -1646,7 +1646,7 @@
         "Theron"
       ],
       "voices": {
-        "Theron": "charon"
+        "Theron": "schedar"
       },
       "delivery": "urgent, sharp, dramatic cinematic delivery",
       "dialogue": [
@@ -1855,7 +1855,7 @@
       }
     ],
     "timeline_action": {
-      "0-3s": "Matching Panel 1 (Top-Left, 0s) of the SC-141 Storyboard (0-3s): [Wide Dynamic Action Shot] Entering late into active physical motion, Heracles ({{media:37a10133-8496-49e7-bd77-b5f261c5a43e|heracles_clean.jpg}}) initiates the maneuver as as they round the coastal limestone headland, Heracles points excitedly across the sunlit cove where their battered wooden galleon rides safely at anchor on the morning tide, and speaks immediately from second 0 with unobstructed face: Heracles says \"There rests our brave ship—still afloat and waiting on the morning tide!\" (no subtitles).",
+      "0-3s": "Matching Panel 1 (Top-Left, 0s) of the SC-141 Storyboard (0-3s): [Wide Dynamic Action Shot] Entering late into active physical motion, Heracles ({{media:37a10133-8496-49e7-bd77-b5f261c5a43e|heracles_clean.jpg}}) initiates the maneuver as as they round the coastal limestone headland, Heracles points excitedly across the sunlit cove where their battered wooden galleon rides safely at anchor on the morning tide, and speaks immediately from second 0 with unobstructed face: Heracles ({{voice:algenib}}, gravelly booming low male warrior voice) says: \"There rests our brave ship—still afloat and waiting on the morning tide!\" (no subtitles).",
       "3-6s": "At second 3.0, a crisp 100% full-frame hard cut (60-degree angle shift) matching Panel 2 (Top-Right, 3s) of the SC-141 Storyboard (3-6s): [60-Deg Low-Angle MCU] As the spoken line finishes cleanly, Cause -> Effect: Nora ({{media:62e117f8-0af7-484e-90a8-f79927105746|nora_clean.jpg}}) drives the physical action forward as as they round the coastal limestone headland, Heracles points excitedly across the sunlit cove where their battered wooden galleon rides safely at anchor on the morning tide.",
       "6-8s": "At second 6.0, a crisp 100% full-frame hard cut (90-degree angle shift) matching Panel 3 (Bottom-Left, 6s) and Panel 4 (Bottom-Right, 7s) of the SC-141 Storyboard (6-8s): [90-Deg Insert CU] Culminating physical payoff and micro-hook into the next scene as the ship's watch on the foredeck waves a signal flag in recognition. SPATIAL LOCK: All characters stand firmly on the solid interior deck or stone floor, NEVER on the exterior drop-off side of any barrier; faces 100% unobstructed."
     },
@@ -1864,7 +1864,7 @@
         "Heracles"
       ],
       "voices": {
-        "Heracles": "puck"
+        "Heracles": "algenib"
       },
       "delivery": "urgent, sharp, dramatic cinematic delivery",
       "dialogue": [
@@ -1955,7 +1955,7 @@
       }
     ],
     "timeline_action": {
-      "0-3s": "Matching Panel 1 (Top-Left, 0s) of the SC-142 Storyboard (0-3s): [OTS Medium Shot] Entering late into active physical motion, Castor ({{media:3152a235-af4f-462b-a78e-02551f826e41|castor_clean.jpg}}) initiates the maneuver as Castor raises his curved bronze signal horn to his lips on the rocky jetty and blows a triumphant blast across the cove, and speaks immediately from second 0 with unobstructed face: Castor says \"Sound the horn and launch the boat! Every soul returns alive today!\" (no subtitles).",
+      "0-3s": "Matching Panel 1 (Top-Left, 0s) of the SC-142 Storyboard (0-3s): [OTS Medium Shot] Entering late into active physical motion, Castor ({{media:3152a235-af4f-462b-a78e-02551f826e41|castor_clean.jpg}}) initiates the maneuver as Castor raises his curved bronze signal horn to his lips on the rocky jetty and blows a triumphant blast across the cove, and speaks immediately from second 0 with unobstructed face: Castor ({{voice:fenrir}}, deep urgent male navigator voice) says: \"Sound the horn and launch the boat! Every soul returns alive today!\" (no subtitles).",
       "3-6s": "At second 3.0, a crisp 100% full-frame hard cut (60-degree angle shift) matching Panel 2 (Top-Right, 3s) of the SC-142 Storyboard (3-6s): [60-Deg Reverse MCU] As the spoken line finishes cleanly, Cause -> Effect: Castor ({{media:3152a235-af4f-462b-a78e-02551f826e41|castor_clean.jpg}}) drives the physical action forward as Castor raises his curved bronze signal horn to his lips on the rocky jetty and blows a triumphant blast across the cove.",
       "6-8s": "At second 6.0, a crisp 100% full-frame hard cut (90-degree angle shift) matching Panel 3 (Bottom-Left, 6s) and Panel 4 (Bottom-Right, 7s) of the SC-142 Storyboard (6-8s): [90-Deg Wide Framing] Culminating physical payoff and micro-hook into the next scene as on the galleon's main deck, the waiting sailors erupt in cheers and lower the jolly-boat. SPATIAL LOCK: All characters stand firmly on the solid interior deck or stone floor, NEVER on the exterior drop-off side of any barrier; faces 100% unobstructed."
     },
@@ -2166,7 +2166,7 @@
       }
     ],
     "timeline_action": {
-      "0-3s": "Matching Panel 1 (Top-Left, 0s) of the SC-144 Storyboard (0-3s): [Three-Quarter MCU] Entering late into active physical motion, Nora ({{media:62e117f8-0af7-484e-90a8-f79927105746|nora_clean.jpg}}) initiates the maneuver as standing on the quarterdeck steps in warm sunrise light, Nora holds up the single luminous Golden Leaf between her fingers for the entire crew to see, and speaks immediately from second 0 with unobstructed face: Nora says \"We found the Golden Tree, brothers—and broke its curse by choosing each other!\" (no subtitles).",
+      "0-3s": "Matching Panel 1 (Top-Left, 0s) of the SC-144 Storyboard (0-3s): [Three-Quarter MCU] Entering late into active physical motion, Nora ({{media:62e117f8-0af7-484e-90a8-f79927105746|nora_clean.jpg}}) initiates the maneuver as standing on the quarterdeck steps in warm sunrise light, Nora holds up the single luminous Golden Leaf between her fingers for the entire crew to see, and speaks immediately from second 0 with unobstructed face: Nora ({{voice:kore}}, firm mid-low female captain voice) says: \"We found the Golden Tree, brothers—and broke its curse by choosing each other!\" (no subtitles).",
       "3-6s": "At second 3.0, a crisp 100% full-frame hard cut (60-degree angle shift) matching Panel 2 (Top-Right, 3s) of the SC-144 Storyboard (3-6s): [75-Deg MS] As the spoken line finishes cleanly, Cause -> Effect: Nora ({{media:62e117f8-0af7-484e-90a8-f79927105746|nora_clean.jpg}}) drives the physical action forward as standing on the quarterdeck steps in warm sunrise light, Nora holds up the single luminous Golden Leaf between her fingers for the entire crew to see.",
       "6-8s": "At second 6.0, a crisp 100% full-frame hard cut (90-degree angle shift) matching Panel 3 (Bottom-Left, 6s) and Panel 4 (Bottom-Right, 7s) of the SC-144 Storyboard (6-8s): [90-Deg CU] Culminating physical payoff and micro-hook into the next scene as the sailors raise their cutlasses and hats in a unified roar of triumph. SPATIAL LOCK: All characters stand firmly on the solid interior deck or stone floor, NEVER on the exterior drop-off side of any barrier; faces 100% unobstructed."
     },
@@ -2266,7 +2266,7 @@
       }
     ],
     "timeline_action": {
-      "0-3s": "Matching Panel 1 (Top-Left, 0s) of the SC-145 Storyboard (0-3s): [Wide Dynamic Action Shot] Entering late into active physical motion, Heracles ({{media:37a10133-8496-49e7-bd77-b5f261c5a43e|heracles_clean.jpg}}) initiates the maneuver as Heracles braces his muscular arms on the main capstan bars, heaving the dripping iron anchor up from the cove floor while white canvas sails unfurl overhead, and speaks immediately from second 0 with unobstructed face: Heracles says \"Weigh the main anchor and unfurl all canvas! Catch the morning wind!\" (no subtitles).",
+      "0-3s": "Matching Panel 1 (Top-Left, 0s) of the SC-145 Storyboard (0-3s): [Wide Dynamic Action Shot] Entering late into active physical motion, Heracles ({{media:37a10133-8496-49e7-bd77-b5f261c5a43e|heracles_clean.jpg}}) initiates the maneuver as Heracles braces his muscular arms on the main capstan bars, heaving the dripping iron anchor up from the cove floor while white canvas sails unfurl overhead, and speaks immediately from second 0 with unobstructed face: Heracles ({{voice:algenib}}, gravelly booming low male warrior voice) says: \"Weigh the main anchor and unfurl all canvas! Catch the morning wind!\" (no subtitles).",
       "3-7s": "At second 3.0, a crisp 100% full-frame hard cut (60-degree angle shift) matching Panel 2 (Top-Right, 3s) of the SC-145 Storyboard (3-7s): [60-Deg Low-Angle MCU] As the spoken line finishes cleanly, Cause -> Effect: Heracles ({{media:37a10133-8496-49e7-bd77-b5f261c5a43e|heracles_clean.jpg}}) drives the physical action forward as Heracles braces his muscular arms on the main capstan bars, heaving the dripping iron anchor up from the cove floor while white canvas sails unfurl overhead.",
       "7-10s": "At second 7.0, a crisp 100% full-frame hard cut (90-degree angle shift) matching Panel 3 (Bottom-Left, 7s) and Panel 4 (Bottom-Right, 9s) of the SC-145 Storyboard (7-10s): [90-Deg Insert CU] Culminating physical payoff and micro-hook into the next scene as the pirate ensign snaps taut in the fresh morning breeze at the mainmast peak. SPATIAL LOCK: All characters stand firmly on the solid interior deck or stone floor, NEVER on the exterior drop-off side of any barrier; faces 100% unobstructed."
     },
@@ -2275,7 +2275,7 @@
         "Heracles"
       ],
       "voices": {
-        "Heracles": "puck"
+        "Heracles": "algenib"
       },
       "delivery": "urgent, sharp, dramatic cinematic delivery",
       "dialogue": [
@@ -2373,7 +2373,7 @@
       }
     ],
     "timeline_action": {
-      "0-3s": "Matching Panel 1 (Top-Left, 0s) of the SC-146 Storyboard (0-3s): [OTS Medium Shot] Entering late into active physical motion, Theron ({{media:7c5d994a-dabd-406b-a6c1-b9fa6473a612|theron_clean.jpg}}) initiates the maneuver as standing proudly beside the oak helm wheel in morning sunlight, veteran navigator Theron sights the rising sun through a brass spyglass and points due east, and speaks immediately from second 0 with unobstructed face: Theron says \"Steer due east into the sunrise swell! The sea ahead is wide open!\" (no subtitles).",
+      "0-3s": "Matching Panel 1 (Top-Left, 0s) of the SC-146 Storyboard (0-3s): [OTS Medium Shot] Entering late into active physical motion, Theron ({{media:7c5d994a-dabd-406b-a6c1-b9fa6473a612|theron_clean.jpg}}) initiates the maneuver as standing proudly beside the oak helm wheel in morning sunlight, veteran navigator Theron sights the rising sun through a brass spyglass and points due east, and speaks immediately from second 0 with unobstructed face: Theron ({{voice:schedar}}, cold calculating mid-low male voice) says: \"Steer due east into the sunrise swell! The sea ahead is wide open!\" (no subtitles).",
       "3-6s": "At second 3.0, a crisp 100% full-frame hard cut (60-degree angle shift) matching Panel 2 (Top-Right, 3s) of the SC-146 Storyboard (3-6s): [60-Deg Reverse MCU] As the spoken line finishes cleanly, Cause -> Effect: Theron ({{media:7c5d994a-dabd-406b-a6c1-b9fa6473a612|theron_clean.jpg}}) drives the physical action forward as standing proudly beside the oak helm wheel in morning sunlight, veteran navigator Theron sights the rising sun through a brass spyglass and points due east.",
       "6-8s": "At second 6.0, a crisp 100% full-frame hard cut (90-degree angle shift) matching Panel 3 (Bottom-Left, 6s) and Panel 4 (Bottom-Right, 7s) of the SC-146 Storyboard (6-8s): [90-Deg Wide Framing] Culminating physical payoff and micro-hook into the next scene as Castor lays out a clean sea-chart on the binnacle table beside him. SPATIAL LOCK: All characters stand firmly on the solid interior deck or stone floor, NEVER on the exterior drop-off side of any barrier; faces 100% unobstructed."
     },
@@ -2382,7 +2382,7 @@
         "Theron"
       ],
       "voices": {
-        "Theron": "charon"
+        "Theron": "schedar"
       },
       "delivery": "urgent, sharp, dramatic cinematic delivery",
       "dialogue": [
@@ -2473,7 +2473,7 @@
       }
     ],
     "timeline_action": {
-      "0-3s": "Matching Panel 1 (Top-Left, 0s) of the SC-147 Storyboard (0-3s): [Low-Angle MS] Entering late into active physical motion, Nora ({{media:62e117f8-0af7-484e-90a8-f79927105746|nora_clean.jpg}}) initiates the maneuver as Captain Nora grips the oak spokes of the helm wheel with both hands, her freckled face radiant in the golden dawn as she spins the wheel toward the open sea, and speaks immediately from second 0 with unobstructed face: Nora says \"Let her run free before the wind—to brotherhood and the open sea!\" (no subtitles).",
+      "0-3s": "Matching Panel 1 (Top-Left, 0s) of the SC-147 Storyboard (0-3s): [Low-Angle MS] Entering late into active physical motion, Nora ({{media:62e117f8-0af7-484e-90a8-f79927105746|nora_clean.jpg}}) initiates the maneuver as Captain Nora grips the oak spokes of the helm wheel with both hands, her freckled face radiant in the golden dawn as she spins the wheel toward the open sea, and speaks immediately from second 0 with unobstructed face: Nora ({{voice:kore}}, firm mid-low female captain voice) says: \"Let her run free before the wind—to brotherhood and the open sea!\" (no subtitles).",
       "3-6s": "At second 3.0, a crisp 100% full-frame hard cut (60-degree angle shift) matching Panel 2 (Top-Right, 3s) of the SC-147 Storyboard (3-6s): [60-Deg MCU] As the spoken line finishes cleanly, Cause -> Effect: Nora ({{media:62e117f8-0af7-484e-90a8-f79927105746|nora_clean.jpg}}) drives the physical action forward as Captain Nora grips the oak spokes of the helm wheel with both hands, her freckled face radiant in the golden dawn as she spins the wheel toward the open sea.",
       "6-8s": "At second 6.0, a crisp 100% full-frame hard cut (90-degree angle shift) matching Panel 3 (Bottom-Left, 6s) and Panel 4 (Bottom-Right, 7s) of the SC-147 Storyboard (6-8s): [90-Deg WS] Culminating physical payoff and micro-hook into the next scene as Theron and Castor flank her on the quarterdeck. SPATIAL LOCK: All characters stand firmly on the solid interior deck or stone floor, NEVER on the exterior drop-off side of any barrier; faces 100% unobstructed."
     },

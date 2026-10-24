@@ -108,3 +108,11 @@
 2. Dùng `ffmpeg` trích xuất **đúng 24 frames** phân bổ đều theo thời lượng (`fps=24/<duration>`, ví dụ 10s: `fps=2.4`, 8s: `fps=3.0`) và ghép thành **Contact Sheet 6×4 (`tile=6x4`)** (Rule 73).
 3. Chạy `python tools/review_dialogue.py` (Whisper, Rule 67) kiểm tra khớp thoại 100% và chấm bảng AI Review Scorecard 6 tiêu chí trên 24 frames.
 4. **DỪNG chờ User duyệt từng cảnh.** Cảnh nào đạt và được User duyệt mới gửi lệnh `UPSCALE_VIDEO` lên 1080p, tải về `${OUTDIR}/1080/`, rồi chạy `remove_watermark_video` trực tiếp trên bản 1080p trước khi đưa vào dựng hậu kỳ (`/video-editing`, `/fk-capcut-edit`, `/fk-sound-design`).
+
+### Bài học 18 — "Cracking / urgent / shrieking" đẩy giọng nam già lên cao và kéo dài câu (golden-tree SC-06, 24/10/2026)
+- Prompt ghi `loud, urgent, cracking deep elderly male baritone` cho Old Fisherman (`charon`): Whisper đo **235 Hz** (nghe như giọng nữ) và câu 19 từ kéo tới **7.6s** thay vì 5.8s, tràn sang shot cận bàn tay không thấy mặt.
+- Với giọng nam già sợ hãi: viết `fast, tense, hoarse, low rasping elderly male bass (110-155 Hz), never shouting, never shrill`, ghi rõ giây kết thúc câu (`the whole line ends by second 5.8`), và khóa nhịp sau đó là im lặng (`Strictly silent 6-8s`). Không dùng `cracking`, `shrieking`, `screaming` cho giọng nam trầm.
+
+### Bài học 19 — Ảnh storyboard giữ đúng mặt nhờ chip `{{media:...}}` đặt NGAY TRONG TỪNG PANEL (golden-tree SC-07, 24/10/2026)
+- Server gắn mọi chip `{{media:uuid|name}}` trong `image_prompt` làm ảnh ref (`flow_batch.image_request`), cộng thêm entity trong `character_names` của scene. `REGENERATE_IMAGE` **bỏ qua `source_media_id`** (`processor.py`), nên ref chỉ đến từ chip + `character_names`.
+- Lần 1 chỉ đặt chip ở đoạn mô tả chung, trong panel gọi nhân vật bằng tên chữ, và `character_names` còn chứa tấm storyboard cũ → Castor mọc ria, mặc sơ mi trắng; ông lão đội khăn. Lần 2 đặt chip tại lần nhắc đầu tiên của mỗi nhân vật/sinh vật trong TỪNG panel và tạm bỏ storyboard cũ khỏi `character_names` → đúng mặt, đúng trang phục.

@@ -675,13 +675,13 @@ async function init() {
     scenes.sort((a, b) => a.display_order - b.display_order);
     scenes.forEach(s => sceneMap[s.id] = s);
 
-    // Map scene_id -> local video file (format: scene_NNN_shortid.mp4)
+    // Map scene_id -> local video file (format: scene_01_<sid>.mp4 or scene_001_<shortid>.mp4)
     const filesData = await filesRes.json();
     const localFiles = filesData.files || [];
     scenes.forEach(s => {
-      const order = String(s.display_order).padStart(3, '0');
-      const shortId = (s.horizontal_video_media_id || s.id).substring(0, 8);
-      const match = localFiles.find(f => f.startsWith(`scene_${order}_`));
+      const order2 = String(s.display_order).padStart(2, '0');
+      const order3 = String(s.display_order).padStart(3, '0');
+      const match = localFiles.find(f => f.includes(s.id) || f.startsWith(`scene_${order2}_`) || f.startsWith(`scene_${order3}_`));
       if (match) videoFileMap[s.id] = match;
     });
 
