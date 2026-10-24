@@ -176,16 +176,18 @@ The response is an array of per-scene review objects:
 ]
 ```
 
-### Scoring Dimensions
+### Scoring Dimensions (8-Dimension Pacing, Retention & Continuity Rubric)
 
 | Dimension | Weight | What it measures |
 |-----------|--------|------------------|
-| Character Consistency | 25% | Characters match refs across frames |
-| Prompt Adherence | 20% | Video matches prompt description |
-| Motion Quality | 20% | Smooth motion, no artifacts |
-| Visual Fidelity | 15% | Resolution, clarity, no banding |
-| Temporal Coherence | 10% | Consistent lighting/shadows across frames |
-| Composition | 10% | Framing matches camera direction |
+| Character Consistency | 20% | Characters & creatures match refs 1:1 across frames (face, wardrobe, creature scale) |
+| Pacing & Retention | 20% | Enter late into physical conflict, crisp hard cuts (45°-90° angle shifts every 2-3s matching Storyboard 2x2), Cause -> Effect physical reaction (never static talking head >3s), and closing micro-hook |
+| Prompt Adherence | 15% | Video matches prompt description, roles, and sub-clip timing |
+| Motion Quality | 15% | Smooth physical motion with realistic inertia; no artifacts or reverse motion |
+| Scene Continuity | 15% | Fit with Previous Scene (N-1) & Next Scene (N+1): eyeline match, 180° spatial axis, prop state, no redundant static angle repetition, clean action handoff |
+| Visual Fidelity | 5% | 35mm resolution, clarity, no CGI sheen, no breath smoke, no brand logos |
+| Temporal Coherence | 5% | Consistent lighting/shadows/scale across frames |
+| Composition | 5% | Framing matches camera direction, deep focus (f/8) sharp throughout |
 
 `total_score = sum(dimension_score * weight)`
 
@@ -280,7 +282,11 @@ Any CRITICAL error → scene scores 0–3.9 (Unusable). Rewrite prompt + regen f
 | 7 | Object Morph | Held items change shape mid-video | Action scenes with props |
 | 8 | Reverse Motion | Character does then undoes the action | ~30% of motion scenes |
 | 9 | Human Hands | Anthropomorphic characters get human hands | Animal/creature characters |
-| 10 | Scale Break | Characters change size relative to environment | Dynamic movement scenes |
+| 10 | Scale Break | Characters/creatures change size relative to environment | Dynamic movement scenes |
+| 11 | Dead Air / Static Talking Head | Character stands still talking/staring >3s without physical Cause -> Effect action or camera cut | Dialogue scenes without multi-shot cuts |
+| 12 | Missed Hard Cut | Video holds 1 static shot instead of executing Storyboard 2x2 hard cuts | Multi-shot Storyboard scenes |
+| 13 | Redundant Staging with Prev Scene | Repeats identical static location/angle as Scene N-1 without spatial progression | Consecutive scenes in same room/deck |
+| 14 | Broken Action/Eyeline Handoff | Eyeline, prop state, or closing momentum contradicts Scene N-1 or fails to lead into Scene N+1 | Scene transitions |
 
 HIGH errors → note `usable_segments` before the error timestamp. Trim or regen.
 

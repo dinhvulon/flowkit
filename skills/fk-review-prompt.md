@@ -60,6 +60,10 @@ Bắt buộc đạt **`0 CRITICAL / 0 HIGH` (`errors=0`)**.
     - Khớp nguyên văn `script.md`; đúng dải số từ theo `duration` (4s: 0/6-8; 6s: 12-15; 8s: 18-22; 10s: 24-28); mỗi người nói 1 Voice ID riêng trong `speech.voices`; nói lớn/gắt khi đối đầu hoặc nguy hiểm; không có từ khóa mua bán/tiền bạc.
 14. **Đầy đủ `dramatic_craft` từ bộ `sw-*` (`/sw-scene-craft`, Rule 56):**
     - Có đủ `beat`, `value_turn`, `subtext`, `prop_and_detail`.
+15. **Kiểm toán Nhịp Nội Cảnh, Retention & Liên Kết Cảnh Trước / Cảnh Sau (`Scene N-1 ➔ Scene N ➔ Scene N+1`):**
+    - **Chống đứng yên đọc thoại (`Anti-Talking-Head & Cause-Effect Lock`):** Mọi clip `>= 6s` (trừ `PREV_LAST_FRAME`) bắt buộc có `crisp hard cut` đổi góc máy `45°–90°` mỗi `2–3s` và có phản ứng vật lý (`Action ➔ Reaction`) của nhân vật đối diện hoặc thủy thủ đoàn; cấm câu văn mẫu đứng nhìn chằm chằm (`"holds an intense gaze"`, `"Final resolute hold in the same space"`).
+    - **Chống lặp góc máy liên cảnh (`Anti-Stagnation Rule`):** Không lặp lại cùng một `camera.shot_size` và vị trí tĩnh quá 2 cảnh liên tiếp (`SC[i-1]`, `SC[i]`, `SC[i+1]`).
+    - **Khớp nối đà hành động (`Enter Late / Leave Early Micro-Hook`):** Nhịp `0–2s`/`0–3s` của `SC[i]` phải nối trực tiếp từ kết quả cuối `SC[i-1]`, và nhịp cuối của `SC[i]` phải mở ra hành động vật lý dẫn thẳng sang `SC[i+1]`.
 
 ---
 

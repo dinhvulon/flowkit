@@ -47,12 +47,14 @@ logger = logging.getLogger(__name__)
 # ─── Scoring helpers ─────────────────────────────────────────
 
 _WEIGHTS = {
-    "character_consistency": 0.25,
-    "prompt_adherence": 0.20,
-    "motion_quality": 0.20,
-    "visual_fidelity": 0.15,
-    "temporal_coherence": 0.10,
-    "composition": 0.10,
+    "character_consistency": 0.20,
+    "pacing_and_retention": 0.20,
+    "prompt_adherence": 0.15,
+    "motion_quality": 0.15,
+    "scene_continuity": 0.15,
+    "visual_fidelity": 0.05,
+    "temporal_coherence": 0.05,
+    "composition": 0.05,
 }
 
 
@@ -112,8 +114,10 @@ def _fix_guide(dims: dict, errors: list) -> str:
     lowest = min(dims, key=dims.get)
     guides = {
         "character_consistency": "Check character references, consider EDIT_IMAGE with closer framing",
+        "pacing_and_retention": "Eliminate static talking-head staging; add multi-shot hard cuts (45-90 deg angle shift every 2-3s) and Cause -> Effect physical reaction",
         "prompt_adherence": "Rewrite scene prompt to be more specific, then REGENERATE_IMAGE",
         "motion_quality": "Regenerate video (motion artifacts are random, retry may fix)",
+        "scene_continuity": "Align eyeline, spatial axis, prop state, and action handoff with previous (N-1) and next (N+1) scenes",
         "visual_fidelity": "Consider UPSCALE_VIDEO or REGENERATE_IMAGE with better lighting",
         "temporal_coherence": "Regenerate video, check scene lighting consistency",
         "composition": "Edit video_prompt camera directions, then regenerate",
@@ -363,14 +367,18 @@ You are an expert AI video quality reviewer analyzing {n_frames} frames at {fps}
 SCENE IMAGE PROMPT: {prompt}
 SCENE VIDEO PROMPT: {video_prompt}
 EXPECTED CHARACTERS: {character_names}
+PREVIOUS SCENE (N-1) CONTEXT: {prev_context}
+NEXT SCENE (N+1) CONTEXT: {next_context}
 
 == SCORING DIMENSIONS (0.0-10.0 each) ==
-1. character_consistency - Do characters match references? Stable species/breed/limb count/clothing?
-2. prompt_adherence - Does video match prompt? Correct characters, actions, roles?
-3. motion_quality - Smooth motion? No jitter/reverse motion/teleportation?
-4. visual_fidelity - Clear resolution? No artifacts/blur/brand logos?
-5. temporal_coherence - Consistent lighting/shadows/background/scale across frames?
-6. composition - Framing matches camera directions? Good depth/balance?
+1. character_consistency (20%) - Do characters/creatures match references 1:1 (face, wardrobe, creature scale)?
+2. pacing_and_retention (20%) - Dynamic film pacing & viewer retention: Does the clip enter late into active physical conflict, execute crisp hard cuts (45-90 deg angle shifts every 2-3s matching the 2x2 Storyboard), show Cause -> Effect physical reaction (never static talking head >3s), and end on a forward momentum micro-hook?
+3. prompt_adherence (15%) - Does video match prompt? Correct characters, actions, roles, and sub-clip timing?
+4. motion_quality (15%) - Smooth physical motion with realistic weight/inertia? No jitter/reverse motion/teleportation?
+5. scene_continuity (15%) - Fit with Previous Scene (N-1) & Next Scene (N+1): Does it progress spatial staging without redundant angle repetition, match eyelines/lighting/prop states from N-1, and hand off clean physical momentum into N+1?
+6. visual_fidelity (5%) - Clear 35mm resolution? No CGI sheen/blur/brand logos/breath smoke?
+7. temporal_coherence (5%) - Consistent lighting/shadows/background/scale across frames?
+8. composition (5%) - Framing matches camera directions? Deep focus (f/8) sharp throughout?
 
 == ERROR DETECTION RUBRIC ==
 Classify each error by severity tier:
@@ -387,7 +395,11 @@ HIGH (score affected dimension 4-6):
 7. Object Morph -- held items change shape (envelope becomes clutch, phone becomes tablet).
 8. Reverse Motion -- character does action then undoes it (steps forward then back). ~30%.
 9. Human Hands -- anthropomorphic/animal characters get human hands or fingers.
-10. Scale Break -- characters suddenly giant or tiny relative to environment.
+10. Scale Break -- characters or creatures suddenly wrong size relative to environment.
+11. Dead Air / Static Talking Head -- character stands still talking or staring for >3s without physical Cause -> Effect action or camera cut (drops pacing_and_retention to 4-6).
+12. Missed Hard Cut -- video fails to execute requested multi-shot hard cuts across Storyboard panels (drops pacing_and_retention to 4-6).
+13. Redundant Staging with Prev Scene -- repeats the exact same static location/angle as Scene N-1 without progression (drops scene_continuity to 4-6).
+14. Broken Action/Eyeline Handoff -- eyeline, prop state, or closing action contradicts Scene N-1 or fails to lead into Scene N+1 (drops scene_continuity to 4-6).
 
 MINOR (score affected dimension 7-8, still acceptable):
 11. Prop Count -- small props change count (3 candles become 4).
@@ -402,7 +414,7 @@ MINOR (score affected dimension 7-8, still acceptable):
 
 Return ONLY valid JSON (no markdown):
 {{
-  "dimensions": {{"character_consistency": N, "prompt_adherence": N, "motion_quality": N, "visual_fidelity": N, "temporal_coherence": N, "composition": N}},
+  "dimensions": {{"character_consistency": N, "pacing_and_retention": N, "prompt_adherence": N, "motion_quality": N, "scene_continuity": N, "visual_fidelity": N, "temporal_coherence": N, "composition": N}},
   "errors": [
     {{"severity": "CRITICAL|HIGH|MINOR", "time_range": "Xs-Ys", "description": "what happened"}},
     ...
@@ -421,7 +433,21 @@ def _parse_character_names(scene: dict) -> list[str]:
         return []
 
 
-def _build_prompt(n_frames: int, fps: float, n_sheets: int, scene: dict) -> str:
+def _summarize_adjacent_scene(adj: dict | None, label: str) -> str:
+    if not adj:
+        return f"None ({label} is outside range / start or end of sequence)"
+    vp = adj.get("video_prompt") or adj.get("prompt") or ""
+    return f"Scene order={adj.get('display_order', '?')} (id={adj.get('id', '?')}, {adj.get('duration', '?')}s): {str(vp)[:500]}"
+
+
+def _build_prompt(
+    n_frames: int,
+    fps: float,
+    n_sheets: int,
+    scene: dict,
+    prev_scene: dict | None = None,
+    next_scene: dict | None = None,
+) -> str:
     sheet_note = (
         f" The frames are provided across {n_sheets} sequential contact sheets "
         f"(each fully packed, up to {REVIEW_SHEET_COLS}x{REVIEW_SHEET_ROWS} cells — the last sheet "
@@ -436,6 +462,8 @@ def _build_prompt(n_frames: int, fps: float, n_sheets: int, scene: dict) -> str:
         prompt=scene.get("prompt") or "",
         video_prompt=scene.get("video_prompt") or "",
         character_names=", ".join(_parse_character_names(scene)) or "none specified",
+        prev_context=_summarize_adjacent_scene(prev_scene, "previous scene"),
+        next_context=_summarize_adjacent_scene(next_scene, "next scene"),
     )
 
 
@@ -994,8 +1022,10 @@ def score_review_answer(
 
     dims = DimensionScores(
         character_consistency=float(dims_raw.get("character_consistency", 5.0)),
+        pacing_and_retention=float(dims_raw.get("pacing_and_retention", 8.0)),
         prompt_adherence=float(dims_raw.get("prompt_adherence", 5.0)),
         motion_quality=float(dims_raw.get("motion_quality", 5.0)),
+        scene_continuity=float(dims_raw.get("scene_continuity", 8.0)),
         visual_fidelity=float(dims_raw.get("visual_fidelity", 5.0)),
         temporal_coherence=float(dims_raw.get("temporal_coherence", 5.0)),
         composition=float(dims_raw.get("composition", 5.0)),

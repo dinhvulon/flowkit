@@ -26,6 +26,8 @@ class DimensionScores(BaseModel):
     character_consistency: float
     prompt_adherence: float
     motion_quality: float
+    pacing_and_retention: float = 8.0
+    scene_continuity: float = 8.0
     visual_fidelity: float
     temporal_coherence: float
     composition: float

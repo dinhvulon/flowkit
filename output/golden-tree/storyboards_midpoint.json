@@ -1,0 +1,444 @@
+[
+  {
+    "clip_id": "SC-85",
+    "scene_name": "Tranh cãi trước hẻm cụt",
+    "duration": 8,
+    "refs": [
+      "Castor",
+      "Nora"
+    ],
+    "source_media_id": "3152a235-af4f-462b-a78e-02551f826e41",
+    "panels": [
+      {
+        "panel": "TOP-LEFT PANEL, second 0",
+        "shot_size": "MS",
+        "camera_angle": "Low-angle medium shot looking up at the towering karst dead-end wall",
+        "action": "Clean-shaven Castor ({{media:3152a235-af4f-462b-a78e-02551f826e41|castor_clean.jpg}}) halts before a sheer blind limestone cliff wall, lifting a warm brass lantern with his left hand and gesturing with his iron crowbar in his right hand as he shouts to Nora."
+      },
+      {
+        "panel": "TOP-RIGHT PANEL, second 3",
+        "shot_size": "MCU",
+        "camera_angle": "90-degree side profile medium close-up at the rock face",
+        "action": "Strictly Castor alone in frame driving the forged iron crowbar tip forcefully against the solid gray karst rock wall, sparking white limestone dust, his face 100% unobstructed and taut with frustration."
+      },
+      {
+        "panel": "BOTTOM-LEFT PANEL, second 6",
+        "shot_size": "MS",
+        "camera_angle": "60-degree reverse angle two-shot across the rocky canyon floor",
+        "action": "Castor lowers his iron crowbar and turns sharply on the left while Captain Nora ({{media:62e117f8-0af7-484e-90a8-f79927105746|nora_clean.jpg}}) stands on the right holding the glowing golden parchment chart with both gloved hands."
+      },
+      {
+        "panel": "BOTTOM-RIGHT PANEL, second 8",
+        "shot_size": "MCU",
+        "camera_angle": "Tight over-the-shoulder framing toward the fissured rock base",
+        "action": "Nora steps past Castor's shoulder, extending the glowing golden sheepskin parchment toward a hairline vertical crevice at the base of the limestone cliff."
+      }
+    ],
+    "storyboard_prompt": "A film storyboard sheet, 16:9, made of FOUR photographic panels in a tight 2 by 2 grid, separated only by thin straight black lines; each panel is a 16:9 frame; no text, no numbers, no captions. All four panels are cinematic 35mm live-action feature-film stills of Location: subterranean karst limestone dead-end canyon and vertical shear rock wall. Light: cold slate-gray canyon shadow mixed with warm amber glow from a handheld brass hurricane lantern; deep inky chiaroscuro, damp cavern atmosphere. Featuring {{media:3152a235-af4f-462b-a78e-02551f826e41|castor_clean.jpg}} (29-year-old clean-shaven navigator with short cropped jet-black hair, strictly NO beard, wearing salt-stained dark brown leather cuirass 1:1 matching reference), {{media:62e117f8-0af7-484e-90a8-f79927105746|nora_clean.jpg}} (28-year-old female captain with braided auburn-brown hair and navy wool seafarer brigandine 1:1 matching reference).\nTOP-LEFT PANEL, second 0: [MS] Low-angle medium shot looking up at the towering karst dead-end wall: Clean-shaven Castor ({{media:3152a235-af4f-462b-a78e-02551f826e41|castor_clean.jpg}}) halts before a sheer blind limestone cliff wall, lifting a warm brass lantern with his left hand and gesturing with his iron crowbar in his right hand as he shouts to Nora.\nTOP-RIGHT PANEL, second 3: [MCU] 90-degree side profile medium close-up at the rock face: Strictly Castor alone in frame driving the forged iron crowbar tip forcefully against the solid gray karst rock wall, sparking white limestone dust, his face 100% unobstructed and taut with frustration.\nBOTTOM-LEFT PANEL, second 6: [MS] 60-degree reverse angle two-shot across the rocky canyon floor: Castor lowers his iron crowbar and turns sharply on the left while Captain Nora ({{media:62e117f8-0af7-484e-90a8-f79927105746|nora_clean.jpg}}) stands on the right holding the glowing golden parchment chart with both gloved hands.\nBOTTOM-RIGHT PANEL, second 8: [MCU] Tight over-the-shoulder framing toward the fissured rock base: Nora steps past Castor's shoulder, extending the glowing golden sheepskin parchment toward a hairline vertical crevice at the base of the limestone cliff.\nCinematic feature-film look: shot on ARRI Alexa with Cooke S4 prime lenses, fine 35mm film grain, deep focus (f/8 aperture), entire frame sharp, motivated practical light, realistic physics, strictly NO smoke or steam, NO artificial studio lighting, strictly NO hands covering faces, strictly NOT a 3D render, NOT CGI, zero watermark, zero logos."
+  },
+  {
+    "clip_id": "SC-86",
+    "scene_name": "Bảo vệ niềm tin bản đồ",
+    "duration": 6,
+    "refs": [
+      "Nora"
+    ],
+    "source_media_id": "62e117f8-0af7-484e-90a8-f79927105746",
+    "panels": [
+      {
+        "panel": "TOP-LEFT PANEL, second 0",
+        "shot_size": "CU",
+        "camera_angle": "Eye-level close-up bathed in warm golden parchment up-light",
+        "action": "Strictly Captain Nora ({{media:62e117f8-0af7-484e-90a8-f79927105746|nora_clean.jpg}}) alone in frame holding the unrolled sheepskin chart at chest level, her face 100% unobstructed and eyes fierce as she speaks."
+      },
+      {
+        "panel": "TOP-RIGHT PANEL, second 2",
+        "shot_size": "MCU",
+        "camera_angle": "60-degree high-angle over-the-shoulder shot onto the glowing parchment",
+        "action": "Nora's leather-gloved index finger traces the glowing golden salt-ink vein on the vellum map, aligning it with a dark narrow fissure in the limestone cliff ahead."
+      },
+      {
+        "panel": "BOTTOM-LEFT PANEL, second 4",
+        "shot_size": "MS",
+        "camera_angle": "90-degree low-angle medium shot beside the jagged rock seam",
+        "action": "Strictly Nora alone lowering the glowing parchment to her waist and leaning forward toward the narrow limestone crevice, her right hand gripping the rough rock edge."
+      },
+      {
+        "panel": "BOTTOM-RIGHT PANEL, second 6",
+        "shot_size": "MCU",
+        "camera_angle": "Tight side-angle medium close-up at the fissure mouth",
+        "action": "Fine white limestone dust trickles down from the upper rock seam right in front of Nora's alert face as she freezes to listen."
+      }
+    ],
+    "storyboard_prompt": "A film storyboard sheet, 16:9, made of FOUR photographic panels in a tight 2 by 2 grid, separated only by thin straight black lines; each panel is a 16:9 frame; no text, no numbers, no captions. All four panels are cinematic 35mm live-action feature-film stills of Location: subterranean karst limestone canyon floor beside a narrow rock fissure. Light: faint natural top-light filtering from a high chimney crack combined with warm golden luminescence radiating upward from the salt-ink parchment onto Nora's face. Featuring {{media:62e117f8-0af7-484e-90a8-f79927105746|nora_clean.jpg}} (28-year-old female captain with braided auburn-brown hair and navy wool seafarer brigandine 1:1 matching reference).\nTOP-LEFT PANEL, second 0: [CU] Eye-level close-up bathed in warm golden parchment up-light: Strictly Captain Nora ({{media:62e117f8-0af7-484e-90a8-f79927105746|nora_clean.jpg}}) alone in frame holding the unrolled sheepskin chart at chest level, her face 100% unobstructed and eyes fierce as she speaks.\nTOP-RIGHT PANEL, second 2: [MCU] 60-degree high-angle over-the-shoulder shot onto the glowing parchment: Nora's leather-gloved index finger traces the glowing golden salt-ink vein on the vellum map, aligning it with a dark narrow fissure in the limestone cliff ahead.\nBOTTOM-LEFT PANEL, second 4: [MS] 90-degree low-angle medium shot beside the jagged rock seam: Strictly Nora alone lowering the glowing parchment to her waist and leaning forward toward the narrow limestone crevice, her right hand gripping the rough rock edge.\nBOTTOM-RIGHT PANEL, second 6: [MCU] Tight side-angle medium close-up at the fissure mouth: Fine white limestone dust trickles down from the upper rock seam right in front of Nora's alert face as she freezes to listen.\nCinematic feature-film look: shot on ARRI Alexa with Cooke S4 prime lenses, fine 35mm film grain, deep focus (f/8 aperture), entire frame sharp, motivated practical light, realistic physics, strictly NO smoke or steam, NO artificial studio lighting, strictly NO hands covering faces, strictly NOT a 3D render, NOT CGI, zero watermark, zero logos."
+  },
+  {
+    "clip_id": "SC-87",
+    "scene_name": "Tiếng kêu cứu trong kẹt đá",
+    "duration": 8,
+    "refs": [
+      "Nora"
+    ],
+    "source_media_id": "62e117f8-0af7-484e-90a8-f79927105746",
+    "panels": [
+      {
+        "panel": "TOP-LEFT PANEL, second 0",
+        "shot_size": "CU",
+        "camera_angle": "Tight macro close-up on the fractured limestone crevice",
+        "action": "Loose white limestone pebbles and fine chalky dust cascade down from a shifting fault line between two massive gray boulders (no characters in frame)."
+      },
+      {
+        "panel": "TOP-RIGHT PANEL, second 3",
+        "shot_size": "MCU",
+        "camera_angle": "90-degree angle cut to eye-level medium close-up on Nora",
+        "action": "Strictly Captain Nora ({{media:62e117f8-0af7-484e-90a8-f79927105746|nora_clean.jpg}}) alone freezing mid-motion, her head snapping toward the rubble in silent alertness, mouth firmly closed and face 100% unobstructed."
+      },
+      {
+        "panel": "BOTTOM-LEFT PANEL, second 6",
+        "shot_size": "MS",
+        "camera_angle": "60-degree low-angle medium shot at the collapsed boulder pile",
+        "action": "Strictly Nora alone dropping to one knee beside the jagged limestone slabs, placing her gloved left palm flat on the trembling stone to feel the vibration beneath."
+      },
+      {
+        "panel": "BOTTOM-RIGHT PANEL, second 8",
+        "shot_size": "MCU",
+        "camera_angle": "Tight low-angle framing past the rubble gap",
+        "action": "Nora leans her ear closer to the dark gap between the boulders, her right hand gripping her rolled parchment cylinder tightly at her belt."
+      }
+    ],
+    "storyboard_prompt": "A film storyboard sheet, 16:9, made of FOUR photographic panels in a tight 2 by 2 grid, separated only by thin straight black lines; each panel is a 16:9 frame; no text, no numbers, no captions. All four panels are cinematic 35mm live-action feature-film stills of Location: subterranean karst limestone fissure and rubble-strewn floor. Light: stark chiaroscuro lantern light catching fine white limestone dust cascading through dark cavern air. Featuring {{media:62e117f8-0af7-484e-90a8-f79927105746|nora_clean.jpg}} (28-year-old female captain with braided auburn-brown hair and navy wool seafarer brigandine 1:1 matching reference).\nTOP-LEFT PANEL, second 0: [CU] Tight macro close-up on the fractured limestone crevice: Loose white limestone pebbles and fine chalky dust cascade down from a shifting fault line between two massive gray boulders (no characters in frame).\nTOP-RIGHT PANEL, second 3: [MCU] 90-degree angle cut to eye-level medium close-up on Nora: Strictly Captain Nora ({{media:62e117f8-0af7-484e-90a8-f79927105746|nora_clean.jpg}}) alone freezing mid-motion, her head snapping toward the rubble in silent alertness, mouth firmly closed and face 100% unobstructed.\nBOTTOM-LEFT PANEL, second 6: [MS] 60-degree low-angle medium shot at the collapsed boulder pile: Strictly Nora alone dropping to one knee beside the jagged limestone slabs, placing her gloved left palm flat on the trembling stone to feel the vibration beneath.\nBOTTOM-RIGHT PANEL, second 8: [MCU] Tight low-angle framing past the rubble gap: Nora leans her ear closer to the dark gap between the boulders, her right hand gripping her rolled parchment cylinder tightly at her belt.\nCinematic feature-film look: shot on ARRI Alexa with Cooke S4 prime lenses, fine 35mm film grain, deep focus (f/8 aperture), entire frame sharp, motivated practical light, realistic physics, strictly NO smoke or steam, NO artificial studio lighting, strictly NO hands covering faces, strictly NOT a 3D render, NOT CGI, zero watermark, zero logos."
+  },
+  {
+    "clip_id": "SC-88",
+    "scene_name": "Ra lệnh dừng tranh cãi",
+    "duration": 6,
+    "refs": [
+      "Nora",
+      "Castor"
+    ],
+    "source_media_id": "62e117f8-0af7-484e-90a8-f79927105746",
+    "panels": [
+      {
+        "panel": "TOP-LEFT PANEL, second 0",
+        "shot_size": "MCU",
+        "camera_angle": "Eye-level medium close-up on Nora spinning around",
+        "action": "Strictly Captain Nora ({{media:62e117f8-0af7-484e-90a8-f79927105746|nora_clean.jpg}}) alone raising her gloved left fist in a sharp command to halt, her face 100% unobstructed and urgent as she shouts."
+      },
+      {
+        "panel": "TOP-RIGHT PANEL, second 2",
+        "shot_size": "MCU",
+        "camera_angle": "90-degree reverse angle medium close-up on Castor",
+        "action": "Strictly clean-shaven Castor ({{media:3152a235-af4f-462b-a78e-02551f826e41|castor_clean.jpg}}) alone snapping to attention, raising his brass hurricane lantern in his left hand and readying his iron crowbar in his right hand."
+      },
+      {
+        "panel": "BOTTOM-LEFT PANEL, second 4",
+        "shot_size": "MS",
+        "camera_angle": "60-degree side medium two-shot across the cavern floor",
+        "action": "Nora on the left points diagonally downward at a 40-degree angle toward the collapsed boulder crevice while Castor strides forward on the right."
+      },
+      {
+        "panel": "BOTTOM-RIGHT PANEL, second 6",
+        "shot_size": "MS",
+        "camera_angle": "Low-angle medium shot at the mouth of the rockfall",
+        "action": "Castor plants his boot beside the fallen limestone slab and lowers his brass lantern toward the dark gap while Nora braces behind him."
+      }
+    ],
+    "storyboard_prompt": "A film storyboard sheet, 16:9, made of FOUR photographic panels in a tight 2 by 2 grid, separated only by thin straight black lines; each panel is a 16:9 frame; no text, no numbers, no captions. All four panels are cinematic 35mm live-action feature-film stills of Location: subterranean karst limestone canyon beside the collapsed rock scree. Light: dramatic side-raking amber lantern light slicing through dark cavern shadows. Featuring {{media:62e117f8-0af7-484e-90a8-f79927105746|nora_clean.jpg}} (28-year-old female captain with braided auburn-brown hair and navy wool seafarer brigandine 1:1 matching reference), {{media:3152a235-af4f-462b-a78e-02551f826e41|castor_clean.jpg}} (29-year-old clean-shaven navigator with short cropped jet-black hair, strictly NO beard, wearing salt-stained dark brown leather cuirass 1:1 matching reference).\nTOP-LEFT PANEL, second 0: [MCU] Eye-level medium close-up on Nora spinning around: Strictly Captain Nora ({{media:62e117f8-0af7-484e-90a8-f79927105746|nora_clean.jpg}}) alone raising her gloved left fist in a sharp command to halt, her face 100% unobstructed and urgent as she shouts.\nTOP-RIGHT PANEL, second 2: [MCU] 90-degree reverse angle medium close-up on Castor: Strictly clean-shaven Castor ({{media:3152a235-af4f-462b-a78e-02551f826e41|castor_clean.jpg}}) alone snapping to attention, raising his brass hurricane lantern in his left hand and readying his iron crowbar in his right hand.\nBOTTOM-LEFT PANEL, second 4: [MS] 60-degree side medium two-shot across the cavern floor: Nora on the left points diagonally downward at a 40-degree angle toward the collapsed boulder crevice while Castor strides forward on the right.\nBOTTOM-RIGHT PANEL, second 6: [MS] Low-angle medium shot at the mouth of the rockfall: Castor plants his boot beside the fallen limestone slab and lowers his brass lantern toward the dark gap while Nora braces behind him.\nCinematic feature-film look: shot on ARRI Alexa with Cooke S4 prime lenses, fine 35mm film grain, deep focus (f/8 aperture), entire frame sharp, motivated practical light, realistic physics, strictly NO smoke or steam, NO artificial studio lighting, strictly NO hands covering faces, strictly NOT a 3D render, NOT CGI, zero watermark, zero logos."
+  },
+  {
+    "clip_id": "SC-89",
+    "scene_name": "Phát hiện Theron bị kẹt",
+    "duration": 8,
+    "refs": [
+      "Castor",
+      "Theron"
+    ],
+    "source_media_id": "3152a235-af4f-462b-a78e-02551f826e41",
+    "panels": [
+      {
+        "panel": "TOP-LEFT PANEL, second 0",
+        "shot_size": "MS",
+        "camera_angle": "Side-angle medium shot on the cavern floor beside the crevice",
+        "action": "Strictly clean-shaven Castor ({{media:3152a235-af4f-462b-a78e-02551f826e41|castor_clean.jpg}}) alone kneeling on the limestone floor, lowering a glowing brass hurricane lantern with his left hand into a dark narrow rock gap while shouting."
+      },
+      {
+        "panel": "TOP-RIGHT PANEL, second 3",
+        "shot_size": "MS",
+        "camera_angle": "90-degree high-angle reveal shot looking down into the collapsed crevice",
+        "action": "Strictly 58-year-old bearded hermit Theron ({{media:7c5d994a-dabd-406b-a6c1-b9fa6473a612|theron_clean.jpg}}) alone in frame, his ragged burlap torso pinned under a heavy gray limestone slab, both hands clutching a wooden staff."
+      },
+      {
+        "panel": "BOTTOM-LEFT PANEL, second 6",
+        "shot_size": "MCU",
+        "camera_angle": "45-degree low-angle medium close-up inside the narrow stone trench",
+        "action": "Strictly Theron alone straining beneath the tilted limestone boulder, white chalk dust coating his wild gray beard and shoulders as warm lantern light hits his face."
+      },
+      {
+        "panel": "BOTTOM-RIGHT PANEL, second 8",
+        "shot_size": "CU",
+        "camera_angle": "Tight close-up on Theron's dust-caked face looking upward",
+        "action": "Strictly Theron alone with his face 100% unobstructed and clearly visible, hollow eyes squinting upward into the lantern glow while his fingers stay locked around his wooden staff."
+      }
+    ],
+    "storyboard_prompt": "A film storyboard sheet, 16:9, made of FOUR photographic panels in a tight 2 by 2 grid, separated only by thin straight black lines; each panel is a 16:9 frame; no text, no numbers, no captions. All four panels are cinematic 35mm live-action feature-film stills of Location: narrow collapsed limestone crevice inside the subterranean karst cavern. Light: warm amber beam from Castor's handheld brass hurricane lantern piercing the dark rock cavity, illuminating white lime dust. Featuring {{media:3152a235-af4f-462b-a78e-02551f826e41|castor_clean.jpg}} (29-year-old clean-shaven navigator with short cropped jet-black hair, strictly NO beard, wearing salt-stained dark brown leather cuirass 1:1 matching reference), {{media:7c5d994a-dabd-406b-a6c1-b9fa6473a612|theron_clean.jpg}} (58-year-old stranded navigator hermit with wild gray beard, ragged burlap tunic, and wooden staff 1:1 matching reference).\nTOP-LEFT PANEL, second 0: [MS] Side-angle medium shot on the cavern floor beside the crevice: Strictly clean-shaven Castor ({{media:3152a235-af4f-462b-a78e-02551f826e41|castor_clean.jpg}}) alone kneeling on the limestone floor, lowering a glowing brass hurricane lantern with his left hand into a dark narrow rock gap while shouting.\nTOP-RIGHT PANEL, second 3: [MS] 90-degree high-angle reveal shot looking down into the collapsed crevice: Strictly 58-year-old bearded hermit Theron ({{media:7c5d994a-dabd-406b-a6c1-b9fa6473a612|theron_clean.jpg}}) alone in frame, his ragged burlap torso pinned under a heavy gray limestone slab, both hands clutching a wooden staff.\nBOTTOM-LEFT PANEL, second 6: [MCU] 45-degree low-angle medium close-up inside the narrow stone trench: Strictly Theron alone straining beneath the tilted limestone boulder, white chalk dust coating his wild gray beard and shoulders as warm lantern light hits his face.\nBOTTOM-RIGHT PANEL, second 8: [CU] Tight close-up on Theron's dust-caked face looking upward: Strictly Theron alone with his face 100% unobstructed and clearly visible, hollow eyes squinting upward into the lantern glow while his fingers stay locked around his wooden staff.\nCinematic feature-film look: shot on ARRI Alexa with Cooke S4 prime lenses, fine 35mm film grain, deep focus (f/8 aperture), entire frame sharp, motivated practical light, realistic physics, strictly NO smoke or steam, NO artificial studio lighting, strictly NO hands covering faces, strictly NOT a 3D render, NOT CGI, zero watermark, zero logos."
+  },
+  {
+    "clip_id": "SC-90",
+    "scene_name": "Nạy đá giải cứu",
+    "duration": 10,
+    "refs": [
+      "Heracles",
+      "Theron"
+    ],
+    "source_media_id": "37a10133-8496-49e7-bd77-b5f261c5a43e",
+    "panels": [
+      {
+        "panel": "TOP-LEFT PANEL, second 0",
+        "shot_size": "MS",
+        "camera_angle": "Low-angle medium shot looking up at Heracles over the boulder",
+        "action": "Strictly giant muscular Heracles ({{media:37a10133-8496-49e7-bd77-b5f261c5a43e|heracles_clean.jpg}}) alone in his sea-lion fur mantle driving a thick iron pry-bar under the fallen gray limestone slab while shouting."
+      },
+      {
+        "panel": "TOP-RIGHT PANEL, second 3",
+        "shot_size": "MCU",
+        "camera_angle": "90-degree side profile medium close-up on Heracles straining",
+        "action": "Strictly Heracles alone clamping both calloused hands onto the iron lever and throwing his massive shoulder weight downward, veins taut and face 100% unobstructed."
+      },
+      {
+        "panel": "BOTTOM-LEFT PANEL, second 7",
+        "shot_size": "MS",
+        "camera_angle": "60-degree low-angle two-shot at the lifting limestone slab",
+        "action": "Heracles on the left braces the iron pry-bar against a stone fulcrum, lifting the massive limestone boulder off Theron ({{media:7c5d994a-dabd-406b-a6c1-b9fa6473a612|theron_clean.jpg}}) pinned in the crevice on the right."
+      },
+      {
+        "panel": "BOTTOM-RIGHT PANEL, second 10",
+        "shot_size": "MCU",
+        "camera_angle": "Tight ground-level framing on the widened gap beneath the slab",
+        "action": "With Heracles holding the iron bar taut on the left, Theron on the right pushes against the stone floor with his wooden staff to wriggle his shoulders clear of the gap."
+      }
+    ],
+    "storyboard_prompt": "A film storyboard sheet, 16:9, made of FOUR photographic panels in a tight 2 by 2 grid, separated only by thin straight black lines; each panel is a 16:9 frame; no text, no numbers, no captions. All four panels are cinematic 35mm live-action feature-film stills of Location: collapsed limestone crevice inside the subterranean karst canyon. Light: strong side-raking amber lantern light throwing deep muscular shadows across Heracles's arms and the rough gray stone slab. Featuring {{media:37a10133-8496-49e7-bd77-b5f261c5a43e|heracles_clean.jpg}} (38-year-old giant muscular boatswain with braided dark beard and sea-lion fur mantle 1:1 matching reference), {{media:7c5d994a-dabd-406b-a6c1-b9fa6473a612|theron_clean.jpg}} (58-year-old stranded navigator hermit with wild gray beard, ragged burlap tunic, and wooden staff 1:1 matching reference).\nTOP-LEFT PANEL, second 0: [MS] Low-angle medium shot looking up at Heracles over the boulder: Strictly giant muscular Heracles ({{media:37a10133-8496-49e7-bd77-b5f261c5a43e|heracles_clean.jpg}}) alone in his sea-lion fur mantle driving a thick iron pry-bar under the fallen gray limestone slab while shouting.\nTOP-RIGHT PANEL, second 3: [MCU] 90-degree side profile medium close-up on Heracles straining: Strictly Heracles alone clamping both calloused hands onto the iron lever and throwing his massive shoulder weight downward, veins taut and face 100% unobstructed.\nBOTTOM-LEFT PANEL, second 7: [MS] 60-degree low-angle two-shot at the lifting limestone slab: Heracles on the left braces the iron pry-bar against a stone fulcrum, lifting the massive limestone boulder off Theron ({{media:7c5d994a-dabd-406b-a6c1-b9fa6473a612|theron_clean.jpg}}) pinned in the crevice on the right.\nBOTTOM-RIGHT PANEL, second 10: [MCU] Tight ground-level framing on the widened gap beneath the slab: With Heracles holding the iron bar taut on the left, Theron on the right pushes against the stone floor with his wooden staff to wriggle his shoulders clear of the gap.\nCinematic feature-film look: shot on ARRI Alexa with Cooke S4 prime lenses, fine 35mm film grain, deep focus (f/8 aperture), entire frame sharp, motivated practical light, realistic physics, strictly NO smoke or steam, NO artificial studio lighting, strictly NO hands covering faces, strictly NOT a 3D render, NOT CGI, zero watermark, zero logos."
+  },
+  {
+    "clip_id": "SC-91",
+    "scene_name": "Kéo Theron thoát hiểm",
+    "duration": 6,
+    "refs": [
+      "Nora",
+      "Heracles",
+      "Theron"
+    ],
+    "source_media_id": "62e117f8-0af7-484e-90a8-f79927105746",
+    "panels": [
+      {
+        "panel": "TOP-LEFT PANEL, second 0",
+        "shot_size": "WS",
+        "camera_angle": "Eye-level wide shot across the rocky crevice mouth",
+        "action": "Heracles ({{media:37a10133-8496-49e7-bd77-b5f261c5a43e|heracles_clean.jpg}}) on the left braces the iron pry-bar under the rock slab while Captain Nora ({{media:62e117f8-0af7-484e-90a8-f79927105746|nora_clean.jpg}}) in the center grips the arms of Theron ({{media:7c5d994a-dabd-406b-a6c1-b9fa6473a612|theron_clean.jpg}}) on the right, pulling him out."
+      },
+      {
+        "panel": "TOP-RIGHT PANEL, second 2",
+        "shot_size": "MCU",
+        "camera_angle": "90-degree side medium close-up on Nora and Theron",
+        "action": "Nora hauls Theron clear onto the flat cavern stone floor with both gloved hands on his burlap shoulders as white limestone dust billows behind them."
+      },
+      {
+        "panel": "BOTTOM-LEFT PANEL, second 4",
+        "shot_size": "CU",
+        "camera_angle": "60-degree angle close-up on Theron leaning against a boulder",
+        "action": "Strictly Theron ({{media:7c5d994a-dabd-406b-a6c1-b9fa6473a612|theron_clean.jpg}}) alone propped against a gray limestone rock, his dust-streaked face 100% unobstructed and eyes wide as he catches his breath."
+      },
+      {
+        "panel": "BOTTOM-RIGHT PANEL, second 6",
+        "shot_size": "MCU",
+        "camera_angle": "Low-angle medium close-up on Theron gripping his staff",
+        "action": "Strictly Theron alone sitting upright against the boulder, both weathered hands clamping tightly onto his wooden staff across his lap as he looks toward Nora."
+      }
+    ],
+    "storyboard_prompt": "A film storyboard sheet, 16:9, made of FOUR photographic panels in a tight 2 by 2 grid, separated only by thin straight black lines; each panel is a 16:9 frame; no text, no numbers, no captions. All four panels are cinematic 35mm live-action feature-film stills of Location: subterranean karst limestone canyon floor beside the collapsed crevice. Light: warm amber lantern glow illuminating clouds of white limestone dust clinging to burlap and leather. Featuring {{media:62e117f8-0af7-484e-90a8-f79927105746|nora_clean.jpg}} (28-year-old female captain with braided auburn-brown hair and navy wool seafarer brigandine 1:1 matching reference), {{media:37a10133-8496-49e7-bd77-b5f261c5a43e|heracles_clean.jpg}} (38-year-old giant muscular boatswain with braided dark beard and sea-lion fur mantle 1:1 matching reference), {{media:7c5d994a-dabd-406b-a6c1-b9fa6473a612|theron_clean.jpg}} (58-year-old stranded navigator hermit with wild gray beard, ragged burlap tunic, and wooden staff 1:1 matching reference).\nTOP-LEFT PANEL, second 0: [WS] Eye-level wide shot across the rocky crevice mouth: Heracles ({{media:37a10133-8496-49e7-bd77-b5f261c5a43e|heracles_clean.jpg}}) on the left braces the iron pry-bar under the rock slab while Captain Nora ({{media:62e117f8-0af7-484e-90a8-f79927105746|nora_clean.jpg}}) in the center grips the arms of Theron ({{media:7c5d994a-dabd-406b-a6c1-b9fa6473a612|theron_clean.jpg}}) on the right, pulling him out.\nTOP-RIGHT PANEL, second 2: [MCU] 90-degree side medium close-up on Nora and Theron: Nora hauls Theron clear onto the flat cavern stone floor with both gloved hands on his burlap shoulders as white limestone dust billows behind them.\nBOTTOM-LEFT PANEL, second 4: [CU] 60-degree angle close-up on Theron leaning against a boulder: Strictly Theron ({{media:7c5d994a-dabd-406b-a6c1-b9fa6473a612|theron_clean.jpg}}) alone propped against a gray limestone rock, his dust-streaked face 100% unobstructed and eyes wide as he catches his breath.\nBOTTOM-RIGHT PANEL, second 6: [MCU] Low-angle medium close-up on Theron gripping his staff: Strictly Theron alone sitting upright against the boulder, both weathered hands clamping tightly onto his wooden staff across his lap as he looks toward Nora.\nCinematic feature-film look: shot on ARRI Alexa with Cooke S4 prime lenses, fine 35mm film grain, deep focus (f/8 aperture), entire frame sharp, motivated practical light, realistic physics, strictly NO smoke or steam, NO artificial studio lighting, strictly NO hands covering faces, strictly NOT a 3D render, NOT CGI, zero watermark, zero logos."
+  },
+  {
+    "clip_id": "SC-92",
+    "scene_name": "Cho nước và thẩm vấn",
+    "duration": 8,
+    "refs": [
+      "Nora",
+      "Theron"
+    ],
+    "source_media_id": "62e117f8-0af7-484e-90a8-f79927105746",
+    "panels": [
+      {
+        "panel": "TOP-LEFT PANEL, second 0",
+        "shot_size": "MS",
+        "camera_angle": "Eye-level kneeling two-shot on the cavern stone floor",
+        "action": "Captain Nora ({{media:62e117f8-0af7-484e-90a8-f79927105746|nora_clean.jpg}}) kneels on the left holding out a leather goat-skin water flask to seated hermit Theron ({{media:7c5d994a-dabd-406b-a6c1-b9fa6473a612|theron_clean.jpg}}) on the right while speaking."
+      },
+      {
+        "panel": "TOP-RIGHT PANEL, second 3",
+        "shot_size": "MCU",
+        "camera_angle": "90-degree over-the-shoulder medium close-up past Nora toward Theron",
+        "action": "Theron grips the leather waterskin with both gnarled hands and drinks a swallow of water, water droplets glistening on his gray beard while his face remains 100% unobstructed."
+      },
+      {
+        "panel": "BOTTOM-LEFT PANEL, second 6",
+        "shot_size": "CU",
+        "camera_angle": "45-degree tight close-up on Theron lowering the waterskin",
+        "action": "Strictly Theron ({{media:7c5d994a-dabd-406b-a6c1-b9fa6473a612|theron_clean.jpg}}) alone lowering the leather flask to his lap, warm golden light suddenly reflecting in his widening eyes."
+      },
+      {
+        "panel": "BOTTOM-RIGHT PANEL, second 8",
+        "shot_size": "CU",
+        "camera_angle": "Tight low-angle close-up on Theron's horrified recognition",
+        "action": "Strictly Theron alone staring downward with petrified recognition at the golden light off-frame, his knuckles whitening around the leather waterskin and wooden staff."
+      }
+    ],
+    "storyboard_prompt": "A film storyboard sheet, 16:9, made of FOUR photographic panels in a tight 2 by 2 grid, separated only by thin straight black lines; each panel is a 16:9 frame; no text, no numbers, no captions. All four panels are cinematic 35mm live-action feature-film stills of Location: subterranean karst limestone canyon floor. Light: warm golden-amber glow from a brass lantern set on a flat rock beside Nora and Theron, deep chiaroscuro cavern background. Featuring {{media:62e117f8-0af7-484e-90a8-f79927105746|nora_clean.jpg}} (28-year-old female captain with braided auburn-brown hair and navy wool seafarer brigandine 1:1 matching reference), {{media:7c5d994a-dabd-406b-a6c1-b9fa6473a612|theron_clean.jpg}} (58-year-old stranded navigator hermit with wild gray beard, ragged burlap tunic, and wooden staff 1:1 matching reference).\nTOP-LEFT PANEL, second 0: [MS] Eye-level kneeling two-shot on the cavern stone floor: Captain Nora ({{media:62e117f8-0af7-484e-90a8-f79927105746|nora_clean.jpg}}) kneels on the left holding out a leather goat-skin water flask to seated hermit Theron ({{media:7c5d994a-dabd-406b-a6c1-b9fa6473a612|theron_clean.jpg}}) on the right while speaking.\nTOP-RIGHT PANEL, second 3: [MCU] 90-degree over-the-shoulder medium close-up past Nora toward Theron: Theron grips the leather waterskin with both gnarled hands and drinks a swallow of water, water droplets glistening on his gray beard while his face remains 100% unobstructed.\nBOTTOM-LEFT PANEL, second 6: [CU] 45-degree tight close-up on Theron lowering the waterskin: Strictly Theron ({{media:7c5d994a-dabd-406b-a6c1-b9fa6473a612|theron_clean.jpg}}) alone lowering the leather flask to his lap, warm golden light suddenly reflecting in his widening eyes.\nBOTTOM-RIGHT PANEL, second 8: [CU] Tight low-angle close-up on Theron's horrified recognition: Strictly Theron alone staring downward with petrified recognition at the golden light off-frame, his knuckles whitening around the leather waterskin and wooden staff.\nCinematic feature-film look: shot on ARRI Alexa with Cooke S4 prime lenses, fine 35mm film grain, deep focus (f/8 aperture), entire frame sharp, motivated practical light, realistic physics, strictly NO smoke or steam, NO artificial studio lighting, strictly NO hands covering faces, strictly NOT a 3D render, NOT CGI, zero watermark, zero logos."
+  },
+  {
+    "clip_id": "SC-93",
+    "scene_name": "Nhận diện bản đồ ma thuật",
+    "duration": 8,
+    "refs": [
+      "Theron"
+    ],
+    "source_media_id": "7c5d994a-dabd-406b-a6c1-b9fa6473a612",
+    "panels": [
+      {
+        "panel": "TOP-LEFT PANEL, second 0",
+        "shot_size": "CU",
+        "camera_angle": "Eye-level tight close-up on Theron's horrified face",
+        "action": "Strictly 58-year-old bearded hermit Theron ({{media:7c5d994a-dabd-406b-a6c1-b9fa6473a612|theron_clean.jpg}}) alone with golden light illuminating his wide sunken eyes and wild gray beard, his face 100% unobstructed as he speaks urgently."
+      },
+      {
+        "panel": "TOP-RIGHT PANEL, second 3",
+        "shot_size": "MS",
+        "camera_angle": "90-degree side low-angle medium shot against the limestone wall",
+        "action": "Strictly Theron alone pressing his back hard against the gray karst boulder in terror, both hands gripping his wooden staff diagonally across his chest."
+      },
+      {
+        "panel": "BOTTOM-LEFT PANEL, second 6",
+        "shot_size": "MCU",
+        "camera_angle": "60-degree frontal medium close-up on Theron pointing",
+        "action": "Strictly Theron alone holding his wooden staff in his left hand and pointing his trembling right index finger forward toward the golden light off-frame."
+      },
+      {
+        "panel": "BOTTOM-RIGHT PANEL, second 8",
+        "shot_size": "CU",
+        "camera_angle": "Low-angle close-up as Theron looks up into the dark cavern roof",
+        "action": "Strictly Theron alone tilting his head upward toward the shadowy stalactites above in dread, both hands tightening around his wooden staff."
+      }
+    ],
+    "storyboard_prompt": "A film storyboard sheet, 16:9, made of FOUR photographic panels in a tight 2 by 2 grid, separated only by thin straight black lines; each panel is a 16:9 frame; no text, no numbers, no captions. All four panels are cinematic 35mm live-action feature-film stills of Location: subterranean karst limestone canyon floor. Light: eerie golden bioluminescence from the parchment mingling with flickering amber lantern light across Theron's deeply lined face and wild gray beard. Featuring {{media:7c5d994a-dabd-406b-a6c1-b9fa6473a612|theron_clean.jpg}} (58-year-old stranded navigator hermit with wild gray beard, ragged burlap tunic, and wooden staff 1:1 matching reference).\nTOP-LEFT PANEL, second 0: [CU] Eye-level tight close-up on Theron's horrified face: Strictly 58-year-old bearded hermit Theron ({{media:7c5d994a-dabd-406b-a6c1-b9fa6473a612|theron_clean.jpg}}) alone with golden light illuminating his wide sunken eyes and wild gray beard, his face 100% unobstructed as he speaks urgently.\nTOP-RIGHT PANEL, second 3: [MS] 90-degree side low-angle medium shot against the limestone wall: Strictly Theron alone pressing his back hard against the gray karst boulder in terror, both hands gripping his wooden staff diagonally across his chest.\nBOTTOM-LEFT PANEL, second 6: [MCU] 60-degree frontal medium close-up on Theron pointing: Strictly Theron alone holding his wooden staff in his left hand and pointing his trembling right index finger forward toward the golden light off-frame.\nBOTTOM-RIGHT PANEL, second 8: [CU] Low-angle close-up as Theron looks up into the dark cavern roof: Strictly Theron alone tilting his head upward toward the shadowy stalactites above in dread, both hands tightening around his wooden staff.\nCinematic feature-film look: shot on ARRI Alexa with Cooke S4 prime lenses, fine 35mm film grain, deep focus (f/8 aperture), entire frame sharp, motivated practical light, realistic physics, strictly NO smoke or steam, NO artificial studio lighting, strictly NO hands covering faces, strictly NOT a 3D render, NOT CGI, zero watermark, zero logos."
+  },
+  {
+    "clip_id": "SC-94",
+    "scene_name": "Vạch trần bản đồ là mồi nhử",
+    "duration": 10,
+    "refs": [
+      "Theron",
+      "Nora",
+      "Castor"
+    ],
+    "source_media_id": "7c5d994a-dabd-406b-a6c1-b9fa6473a612",
+    "panels": [
+      {
+        "panel": "TOP-LEFT PANEL, second 0",
+        "shot_size": "MCU",
+        "camera_angle": "Low-angle medium close-up on Theron leaning forward on his staff",
+        "action": "Strictly 58-year-old bearded hermit Theron ({{media:7c5d994a-dabd-406b-a6c1-b9fa6473a612|theron_clean.jpg}}) alone gripping his wooden staff with both hands, his face 100% unobstructed and intense as he proclaims the truth."
+      },
+      {
+        "panel": "TOP-RIGHT PANEL, second 3",
+        "shot_size": "MS",
+        "camera_angle": "90-degree reverse angle medium two-shot on Nora and Castor",
+        "action": "Captain Nora ({{media:62e117f8-0af7-484e-90a8-f79927105746|nora_clean.jpg}}) on the left holds the glowing golden sheepskin map in both gloved hands while clean-shaven Castor ({{media:3152a235-af4f-462b-a78e-02551f826e41|castor_clean.jpg}}) on the right grips his iron crowbar, both staring downward in shock."
+      },
+      {
+        "panel": "BOTTOM-LEFT PANEL, second 7",
+        "shot_size": "WS",
+        "camera_angle": "60-degree low-angle wide three-shot in the karst canyon",
+        "action": "Nora and Castor stand on the left holding the glowing map and brass lantern while Theron on the right raises his wooden staff beside the collapsed limestone boulders."
+      },
+      {
+        "panel": "BOTTOM-RIGHT PANEL, second 10",
+        "shot_size": "MS",
+        "camera_angle": "Side-angle medium shot as Nora folds the glowing parchment",
+        "action": "Nora folds the glowing sheepskin map inward with both gloved hands to dim its golden light while Theron watches grimly on the right."
+      }
+    ],
+    "storyboard_prompt": "A film storyboard sheet, 16:9, made of FOUR photographic panels in a tight 2 by 2 grid, separated only by thin straight black lines; each panel is a 16:9 frame; no text, no numbers, no captions. All four panels are cinematic 35mm live-action feature-film stills of Location: subterranean karst limestone canyon floor. Light: eerie golden bioluminescence from the parchment clashing with cold slate cavern shadows and warm amber lantern light. Featuring {{media:7c5d994a-dabd-406b-a6c1-b9fa6473a612|theron_clean.jpg}} (58-year-old stranded navigator hermit with wild gray beard, ragged burlap tunic, and wooden staff 1:1 matching reference), {{media:62e117f8-0af7-484e-90a8-f79927105746|nora_clean.jpg}} (28-year-old female captain with braided auburn-brown hair and navy wool seafarer brigandine 1:1 matching reference), {{media:3152a235-af4f-462b-a78e-02551f826e41|castor_clean.jpg}} (29-year-old clean-shaven navigator with short cropped jet-black hair, strictly NO beard, wearing salt-stained dark brown leather cuirass 1:1 matching reference).\nTOP-LEFT PANEL, second 0: [MCU] Low-angle medium close-up on Theron leaning forward on his staff: Strictly 58-year-old bearded hermit Theron ({{media:7c5d994a-dabd-406b-a6c1-b9fa6473a612|theron_clean.jpg}}) alone gripping his wooden staff with both hands, his face 100% unobstructed and intense as he proclaims the truth.\nTOP-RIGHT PANEL, second 3: [MS] 90-degree reverse angle medium two-shot on Nora and Castor: Captain Nora ({{media:62e117f8-0af7-484e-90a8-f79927105746|nora_clean.jpg}}) on the left holds the glowing golden sheepskin map in both gloved hands while clean-shaven Castor ({{media:3152a235-af4f-462b-a78e-02551f826e41|castor_clean.jpg}}) on the right grips his iron crowbar, both staring downward in shock.\nBOTTOM-LEFT PANEL, second 7: [WS] 60-degree low-angle wide three-shot in the karst canyon: Nora and Castor stand on the left holding the glowing map and brass lantern while Theron on the right raises his wooden staff beside the collapsed limestone boulders.\nBOTTOM-RIGHT PANEL, second 10: [MS] Side-angle medium shot as Nora folds the glowing parchment: Nora folds the glowing sheepskin map inward with both gloved hands to dim its golden light while Theron watches grimly on the right.\nCinematic feature-film look: shot on ARRI Alexa with Cooke S4 prime lenses, fine 35mm film grain, deep focus (f/8 aperture), entire frame sharp, motivated practical light, realistic physics, strictly NO smoke or steam, NO artificial studio lighting, strictly NO hands covering faces, strictly NOT a 3D render, NOT CGI, zero watermark, zero logos."
+  },
+  {
+    "clip_id": "SC-95",
+    "scene_name": "Vỡ mộng lòng tham",
+    "duration": 6,
+    "refs": [
+      "Castor"
+    ],
+    "source_media_id": "3152a235-af4f-462b-a78e-02551f826e41",
+    "panels": [
+      {
+        "panel": "TOP-LEFT PANEL, second 0",
+        "shot_size": "CU",
+        "camera_angle": "Eye-level tight close-up on Castor's furious face",
+        "action": "Strictly clean-shaven Castor ({{media:3152a235-af4f-462b-a78e-02551f826e41|castor_clean.jpg}}) alone with amber lantern light raking across his scarred eyebrow and clenched jaw, face 100% unobstructed as he speaks."
+      },
+      {
+        "panel": "TOP-RIGHT PANEL, second 2",
+        "shot_size": "MS",
+        "camera_angle": "90-degree side medium shot beside a jagged limestone boulder",
+        "action": "Strictly Castor alone swinging his heavy iron crowbar downward in anger against a gray limestone rock while holding his brass lantern in his left hand."
+      },
+      {
+        "panel": "BOTTOM-LEFT PANEL, second 4",
+        "shot_size": "MCU",
+        "camera_angle": "60-degree low-angle medium close-up over the struck boulder",
+        "action": "Strictly Castor alone resting the iron crowbar across the stone slab, his chest heaving under his brown leather cuirass as he glares sideways."
+      },
+      {
+        "panel": "BOTTOM-RIGHT PANEL, second 6",
+        "shot_size": "MCU",
+        "camera_angle": "Tight three-quarter profile medium close-up looking into the dark tunnel",
+        "action": "Strictly Castor alone lifting his brass hurricane lantern slightly higher, his eyes narrowing toward the shadowed karst passage ahead."
+      }
+    ],
+    "storyboard_prompt": "A film storyboard sheet, 16:9, made of FOUR photographic panels in a tight 2 by 2 grid, separated only by thin straight black lines; each panel is a 16:9 frame; no text, no numbers, no captions. All four panels are cinematic 35mm live-action feature-film stills of Location: subterranean karst limestone canyon floor. Light: harsh amber lantern light raking across Castor's angular clean-shaven jaw and salt-stained leather cuirass against deep cavern blackness. Featuring {{media:3152a235-af4f-462b-a78e-02551f826e41|castor_clean.jpg}} (29-year-old clean-shaven navigator with short cropped jet-black hair, strictly NO beard, wearing salt-stained dark brown leather cuirass 1:1 matching reference).\nTOP-LEFT PANEL, second 0: [CU] Eye-level tight close-up on Castor's furious face: Strictly clean-shaven Castor ({{media:3152a235-af4f-462b-a78e-02551f826e41|castor_clean.jpg}}) alone with amber lantern light raking across his scarred eyebrow and clenched jaw, face 100% unobstructed as he speaks.\nTOP-RIGHT PANEL, second 2: [MS] 90-degree side medium shot beside a jagged limestone boulder: Strictly Castor alone swinging his heavy iron crowbar downward in anger against a gray limestone rock while holding his brass lantern in his left hand.\nBOTTOM-LEFT PANEL, second 4: [MCU] 60-degree low-angle medium close-up over the struck boulder: Strictly Castor alone resting the iron crowbar across the stone slab, his chest heaving under his brown leather cuirass as he glares sideways.\nBOTTOM-RIGHT PANEL, second 6: [MCU] Tight three-quarter profile medium close-up looking into the dark tunnel: Strictly Castor alone lifting his brass hurricane lantern slightly higher, his eyes narrowing toward the shadowed karst passage ahead.\nCinematic feature-film look: shot on ARRI Alexa with Cooke S4 prime lenses, fine 35mm film grain, deep focus (f/8 aperture), entire frame sharp, motivated practical light, realistic physics, strictly NO smoke or steam, NO artificial studio lighting, strictly NO hands covering faces, strictly NOT a 3D render, NOT CGI, zero watermark, zero logos."
+  },
+  {
+    "clip_id": "SC-96",
+    "scene_name": "Bước ngoặt trao quyền dẫn đường",
+    "duration": 6,
+    "refs": [
+      "Nora",
+      "Theron"
+    ],
+    "source_media_id": "62e117f8-0af7-484e-90a8-f79927105746",
+    "panels": [
+      {
+        "panel": "TOP-LEFT PANEL, second 0",
+        "shot_size": "MS",
+        "camera_angle": "Low-angle medium two-shot beside the limestone boulder",
+        "action": "Captain Nora ({{media:62e117f8-0af7-484e-90a8-f79927105746|nora_clean.jpg}}) on the left extends her gloved right hand downward, pulling 58-year-old bearded Theron ({{media:7c5d994a-dabd-406b-a6c1-b9fa6473a612|theron_clean.jpg}}) up onto his feet on the right while speaking."
+      },
+      {
+        "panel": "TOP-RIGHT PANEL, second 2",
+        "shot_size": "MCU",
+        "camera_angle": "90-degree profile medium close-up on Nora and Theron eye-to-eye",
+        "action": "Nora clasps Theron's right forearm in a seafarer's oath while Theron grips his wooden staff in his left hand, both faces 100% unobstructed and resolute."
+      },
+      {
+        "panel": "BOTTOM-LEFT PANEL, second 4",
+        "shot_size": "WS",
+        "camera_angle": "60-degree wide shot facing the dark karst tunnel entrance",
+        "action": "Theron steps into the lead on the right with his wooden staff raised forward toward the dark limestone archway while Nora walks beside him on the left."
+      },
+      {
+        "panel": "BOTTOM-RIGHT PANEL, second 6",
+        "shot_size": "MS",
+        "camera_angle": "Rear three-quarter tracking medium shot entering the subterranean passage",
+        "action": "Theron and Nora advance side-by-side deeper into the shadowed karst labyrinth, Nora's left hand resting on her bronze sword hilt."
+      }
+    ],
+    "storyboard_prompt": "A film storyboard sheet, 16:9, made of FOUR photographic panels in a tight 2 by 2 grid, separated only by thin straight black lines; each panel is a 16:9 frame; no text, no numbers, no captions. All four panels are cinematic 35mm live-action feature-film stills of Location: subterranean karst limestone canyon leading into a dark arched tunnel mouth. Light: warm amber lantern light illuminating Nora and Theron against deep subterranean shadows. Featuring {{media:62e117f8-0af7-484e-90a8-f79927105746|nora_clean.jpg}} (28-year-old female captain with braided auburn-brown hair and navy wool seafarer brigandine 1:1 matching reference), {{media:7c5d994a-dabd-406b-a6c1-b9fa6473a612|theron_clean.jpg}} (58-year-old stranded navigator hermit with wild gray beard, ragged burlap tunic, and wooden staff 1:1 matching reference).\nTOP-LEFT PANEL, second 0: [MS] Low-angle medium two-shot beside the limestone boulder: Captain Nora ({{media:62e117f8-0af7-484e-90a8-f79927105746|nora_clean.jpg}}) on the left extends her gloved right hand downward, pulling 58-year-old bearded Theron ({{media:7c5d994a-dabd-406b-a6c1-b9fa6473a612|theron_clean.jpg}}) up onto his feet on the right while speaking.\nTOP-RIGHT PANEL, second 2: [MCU] 90-degree profile medium close-up on Nora and Theron eye-to-eye: Nora clasps Theron's right forearm in a seafarer's oath while Theron grips his wooden staff in his left hand, both faces 100% unobstructed and resolute.\nBOTTOM-LEFT PANEL, second 4: [WS] 60-degree wide shot facing the dark karst tunnel entrance: Theron steps into the lead on the right with his wooden staff raised forward toward the dark limestone archway while Nora walks beside him on the left.\nBOTTOM-RIGHT PANEL, second 6: [MS] Rear three-quarter tracking medium shot entering the subterranean passage: Theron and Nora advance side-by-side deeper into the shadowed karst labyrinth, Nora's left hand resting on her bronze sword hilt.\nCinematic feature-film look: shot on ARRI Alexa with Cooke S4 prime lenses, fine 35mm film grain, deep focus (f/8 aperture), entire frame sharp, motivated practical light, realistic physics, strictly NO smoke or steam, NO artificial studio lighting, strictly NO hands covering faces, strictly NOT a 3D render, NOT CGI, zero watermark, zero logos."
+  }
+]

@@ -218,6 +218,83 @@ def lint_json_prompt(data: dict) -> list[dict]:
                     "message": msg
                 })
 
+
+    # 9. Narrative Film Pacing, Retention, Language Purity & Continuity Checks (Rule 49, 69, 74)
+    vn_re = re.compile(r"[àáảãạăắằẳẵặâấầẩẫậèéẻẽẹêếềểễệìíỉĩịòóỏõọôốồổỗộơớờởỡợùúủũụưứừửữựỳýỷỹỵđ]", re.IGNORECASE)
+    en_check_fields = {
+        k: data.get(k)
+        for k in ("camera", "setting", "characters", "timeline_action", "image_prompt", "storyboard", "start_frame", "speech")
+        if k in data
+    }
+    en_text = json.dumps(en_check_fields, ensure_ascii=False)
+    m_vn = vn_re.search(en_text)
+    if m_vn:
+        start_idx = max(0, m_vn.start() - 25)
+        end_idx = min(len(en_text), m_vn.end() + 35)
+        snippet = en_text[start_idx:end_idx]
+        issues.append({
+            "severity": "CRITICAL",
+            "type": "UNTRANSLATED_VIETNAMESE_IN_PROMPT",
+            "token": snippet,
+            "message": f"Untranslated Vietnamese text found inside English prompt fields: '{snippet}'. All Flow prompts must be 100% English."
+        })
+
+    # 9b. Boilerplate / Static Filler Detection
+    ta_and_img = (json.dumps(data.get("timeline_action", {}), ensure_ascii=False) + " " + str(data.get("image_prompt", ""))).lower()
+    for bp_phrase in (
+        "final resolute hold in the same space",
+        "the line continues through the middle seconds as",
+        "holds an intense gaze through second",
+    ):
+        if bp_phrase in ta_and_img:
+            issues.append({
+                "severity": "HIGH",
+                "type": "BOILERPLATE_FILLER_ACTION",
+                "token": bp_phrase,
+                "message": f"Template filler phrase '{bp_phrase}' causes static dead-air video. Replace with concrete Cause -> Effect physical blocking."
+            })
+
+    # 9c. Speaker-to-Refs Consistency
+    if isinstance(data.get("refs"), list) and data.get("refs"):
+        refs_set = set(data["refs"])
+        sp_obj = data.get("speech")
+        if isinstance(sp_obj, dict) and isinstance(sp_obj.get("dialogue"), list):
+            for d_entry in sp_obj["dialogue"]:
+                if isinstance(d_entry, dict):
+                    spk = d_entry.get("speaker")
+                    if spk and spk not in refs_set:
+                        issues.append({
+                            "severity": "CRITICAL",
+                            "type": "SPEAKER_MISSING_IN_REFS",
+                            "token": spk,
+                            "message": f"Speaker '{spk}' has spoken dialogue in speech.dialogue but is missing from clip 'refs': {data['refs']}."
+                        })
+
+    # 9d. Face Obstruction Violation (Rule 74 (6))
+    ta_only_lower = json.dumps(data.get("timeline_action", {}), ensure_ascii=False).lower()
+    m_face_obs = re.search(
+        r"\b(?:covers?\s+(?:his|her|their)\s+(?:mouth|face)|hands?\s+pressed\s+against\s+(?:his|her|their)\s+(?:face|cheeks)|hand\s+over\s+(?:his|her|their)\s+(?:mouth|face))\b",
+        ta_only_lower,
+    )
+    if m_face_obs:
+        issues.append({
+            "severity": "HIGH",
+            "type": "FACE_OBSTRUCTION_VIOLATION",
+            "token": m_face_obs.group(0),
+            "message": "FORBIDDEN (Rule 74 (6)): Covering mouth/face with hands or sleeves ruins lip-sync and facial acting. Keep faces 100% unobstructed."
+        })
+
+    # 9e. Intra-Scene Multi-Shot Hard Cut Check for >=6s Narrative Film Clips (Rule 74 (1))
+    dur = data.get("duration", 0)
+    sf_type = str(data.get("sf_type", "")).upper()
+    if "third-person" in cam_text and isinstance(dur, (int, float)) and dur >= 6 and sf_type != "PREV_LAST_FRAME":
+        if not any(k in ta_only_lower for k in ("hard cut", "panel 2", "shot 2")):
+            issues.append({
+                "severity": "HIGH",
+                "type": "STATIC_SINGLE_SHOT_CLIP",
+                "message": f"Clip ({dur}s) has no 'hard cut' or multi-panel progression in timeline_action. Clips >=6s must cut across Storyboard panels (45-90 deg angle shifts) with Cause -> Effect action."
+            })
+
     return issues
 
 
@@ -235,10 +312,23 @@ def lint_prompt(prompt: str) -> list[dict]:
             all_issues = []
             for idx, item in enumerate(json_obj):
                 if isinstance(item, dict):
+                    cid = item.get("clip_id", f"item_{idx}")
                     item_issues = lint_json_prompt(item)
                     for iss in item_issues:
-                        iss["clip_id"] = item.get("clip_id", f"item_{idx}")
+                        iss["clip_id"] = cid
                     all_issues.extend(item_issues)
+                    # Sequence continuity check (N-2, N-1, N)
+                    if idx >= 2 and isinstance(json_obj[idx - 1], dict) and isinstance(json_obj[idx - 2], dict):
+                        s0 = str(json_obj[idx - 2].get("camera", {}).get("shot_size", "")).strip().lower()
+                        s1 = str(json_obj[idx - 1].get("camera", {}).get("shot_size", "")).strip().lower()
+                        s2 = str(item.get("camera", {}).get("shot_size", "")).strip().lower()
+                        if s0 and s0 == s1 == s2:
+                            all_issues.append({
+                                "severity": "HIGH",
+                                "type": "STAGNANT_STAGING_REPEAT",
+                                "clip_id": cid,
+                                "message": f"3 consecutive clips ({json_obj[idx-2].get('clip_id')}, {json_obj[idx-1].get('clip_id')}, {cid}) share identical camera.shot_size '{s2}'. Vary framing and spatial axis across adjacent scenes."
+                            })
             return all_issues
         if isinstance(json_obj, dict) and "scenes" in json_obj:
             all_issues = []

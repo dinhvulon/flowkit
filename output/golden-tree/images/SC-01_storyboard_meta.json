@@ -1,7 +1,5 @@
 {
   "clip_id": "SC-01",
-  "scene_name": "SC-01",
-  "raw_media_id": "aee10793-1c5e-4a0f-83b0-d11515ba1006",
-  "clean_media_id": "e630cce1-7f75-4ae2-b2ed-1f2aa461d60d",
-  "clean_path": "c:\\flowkit\\output\\golden-tree\\images\\SC-01_storyboard_clean.jpg"
+  "clean_media_id": "1cc51c0d-9948-4a3a-b35f-aa2d64c3bfcc",
+  "clean_path": "output\\golden-tree\\images\\SC-01_storyboard_clean.jpg"
 }

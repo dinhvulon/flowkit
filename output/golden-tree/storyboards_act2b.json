@@ -1,0 +1,956 @@
+[
+  {
+    "clip_id": "SC-97",
+    "scene_name": "Treading on Damp Cavern Moss",
+    "duration": 8,
+    "refs": [
+      "Theron",
+      "Nora"
+    ],
+    "source_media_id": "7c5d994a-dabd-406b-a6c1-b9fa6473a612",
+    "panels": [
+      {
+        "panel": "TOP-LEFT",
+        "time": "0s",
+        "shot_size": "MS",
+        "action": "Low-angle medium shot inside the dark karst tunnel; Theron plants his wooden staff onto a thick cushion of emerald-green moss and speaks immediately in a sharp, hushed command."
+      },
+      {
+        "panel": "TOP-RIGHT",
+        "time": "3s",
+        "shot_size": "MCU",
+        "action": "60-degree angle shift to a medium close-up of Captain Nora stepping carefully onto the damp green moss pad behind Theron, her boots avoiding the bare grey limestone."
+      },
+      {
+        "panel": "BOTTOM-LEFT",
+        "time": "6s",
+        "shot_size": "CU",
+        "action": "90-degree low cut to a close-up of Nora's leather boot pressing silent moisture from the moss cushion while loose limestone grit trembles on the adjacent bare rock."
+      },
+      {
+        "panel": "BOTTOM-RIGHT",
+        "time": "8s",
+        "shot_size": "MS",
+        "action": "Medium shot of Theron freezing mid-step and raising his left hand in a sudden halt signal as limestone dust trickles from the dark ceiling ahead."
+      }
+    ],
+    "storyboard_prompt": "A film storyboard sheet, 16:9, made of FOUR photographic panels in a tight 2 by 2 grid, separated only by thin straight black lines; each panel is a 16:9 frame; no text, no numbers, no captions. All four panels are cinematic 35mm live-action feature-film stills of Location: subterranean karst labyrinth tunnel with damp emerald-green bioluminescent moss cushions covering the jagged limestone floor. Light: faint emerald-green moss bioluminescence and deep subterranean chiaroscuro shadows; clean dry cavern air. Featuring {{media:7c5d994a-dabd-406b-a6c1-b9fa6473a612|theron_clean.jpg}} (58yo stranded navigator hermit, wild gray beard, ragged burlap tunic, wooden staff 1:1 matching reference), {{media:62e117f8-0af7-484e-90a8-f79927105746|nora_clean.jpg}} (28yo female captain, braided auburn-brown hair, navy wool seafarer brigandine 1:1 matching reference).\nTOP-LEFT PANEL, second 0s: [MS] Low-angle medium shot inside the dark karst tunnel; Theron plants his wooden staff onto a thick cushion of emerald-green moss and speaks immediately in a sharp, hushed command.\nTOP-RIGHT PANEL, second 3s: [MCU] 60-degree angle shift to a medium close-up of Captain Nora stepping carefully onto the damp green moss pad behind Theron, her boots avoiding the bare grey limestone.\nBOTTOM-LEFT PANEL, second 6s: [CU] 90-degree low cut to a close-up of Nora's leather boot pressing silent moisture from the moss cushion while loose limestone grit trembles on the adjacent bare rock.\nBOTTOM-RIGHT PANEL, second 8s: [MS] Medium shot of Theron freezing mid-step and raising his left hand in a sudden halt signal as limestone dust trickles from the dark ceiling ahead.\nCinematic feature-film look: shot on ARRI Alexa with Cooke S4 prime lenses, fine 35mm film grain, deep focus (f/8 aperture), entire frame sharp, motivated practical lighting, realistic physical mass and momentum, all faces 100% unobstructed, strictly NOT a 3D render, NOT CGI, zero watermark, zero logos."
+  },
+  {
+    "clip_id": "SC-98",
+    "scene_name": "Muffling Weapons in Cloth",
+    "duration": 6,
+    "refs": [
+      "Nora",
+      "Castor"
+    ],
+    "source_media_id": "62e117f8-0af7-484e-90a8-f79927105746",
+    "panels": [
+      {
+        "panel": "TOP-LEFT",
+        "time": "0s",
+        "shot_size": "MCU",
+        "action": "Medium close-up of Nora pulling a dark canvas strip tight around her bronze sword scabbard and speaking immediately in a sharp, urgent tone."
+      },
+      {
+        "panel": "TOP-RIGHT",
+        "time": "2s",
+        "shot_size": "MS",
+        "action": "75-degree angle shift to a medium shot of clean-shaven Castor plunging a burning pitch torch deep into damp cavern sand to extinguish the flame."
+      },
+      {
+        "panel": "BOTTOM-LEFT",
+        "time": "4s",
+        "shot_size": "CU",
+        "action": "90-degree insert cut to a close-up of Castor's hands knotting coarse canvas around his iron crossbow stirrup to silence any metallic clink."
+      },
+      {
+        "panel": "BOTTOM-RIGHT",
+        "time": "6s",
+        "shot_size": "MS",
+        "action": "Low-angle medium shot of Nora and Castor crouching low in the dim green moss light, advancing silently into the deeper cavern cleft."
+      }
+    ],
+    "storyboard_prompt": "A film storyboard sheet, 16:9, made of FOUR photographic panels in a tight 2 by 2 grid, separated only by thin straight black lines; each panel is a 16:9 frame; no text, no numbers, no captions. All four panels are cinematic 35mm live-action feature-film stills of Location: narrow jagged limestone cleft inside the karst labyrinth. Light: dying amber ember of a smothered pitch torch giving way to cold emerald moss bioluminescence; deep chiaroscuro shadows. Featuring {{media:62e117f8-0af7-484e-90a8-f79927105746|nora_clean.jpg}} (28yo female captain, braided auburn-brown hair, navy wool seafarer brigandine 1:1 matching reference), {{media:3152a235-af4f-462b-a78e-02551f826e41|castor_clean.jpg}} (29yo clean-shaven navigator, short cropped jet-black hair, strictly NO beard, dark brown leather cuirass 1:1 matching reference).\nTOP-LEFT PANEL, second 0s: [MCU] Medium close-up of Nora pulling a dark canvas strip tight around her bronze sword scabbard and speaking immediately in a sharp, urgent tone.\nTOP-RIGHT PANEL, second 2s: [MS] 75-degree angle shift to a medium shot of clean-shaven Castor plunging a burning pitch torch deep into damp cavern sand to extinguish the flame.\nBOTTOM-LEFT PANEL, second 4s: [CU] 90-degree insert cut to a close-up of Castor's hands knotting coarse canvas around his iron crossbow stirrup to silence any metallic clink.\nBOTTOM-RIGHT PANEL, second 6s: [MS] Low-angle medium shot of Nora and Castor crouching low in the dim green moss light, advancing silently into the deeper cavern cleft.\nCinematic feature-film look: shot on ARRI Alexa with Cooke S4 prime lenses, fine 35mm film grain, deep focus (f/8 aperture), entire frame sharp, motivated practical lighting, realistic physical mass and momentum, all faces 100% unobstructed, strictly NOT a 3D render, NOT CGI, zero watermark, zero logos."
+  },
+  {
+    "clip_id": "SC-99",
+    "scene_name": "Claustrophobic Karst Labyrinth",
+    "duration": 8,
+    "refs": [
+      "Nora"
+    ],
+    "source_media_id": "62e117f8-0af7-484e-90a8-f79927105746",
+    "panels": [
+      {
+        "panel": "TOP-LEFT",
+        "time": "0s",
+        "shot_size": "WS",
+        "action": "Wide low-angle establishing shot of the oppressive karst labyrinth cavern with jagged stalactites and a fractured limestone arch high overhead."
+      },
+      {
+        "panel": "TOP-RIGHT",
+        "time": "3s",
+        "shot_size": "MS",
+        "action": "60-degree angle shift to a medium shot of Nora edging silently along the wet limestone wall, her left hand braced against the rough rock."
+      },
+      {
+        "panel": "BOTTOM-LEFT",
+        "time": "6s",
+        "shot_size": "CU",
+        "action": "90-degree angle shift to a close-up of Nora's unobstructed face tilting upward as white limestone grit patters onto her leather shoulder brigandine."
+      },
+      {
+        "panel": "BOTTOM-RIGHT",
+        "time": "8s",
+        "shot_size": "MCU",
+        "action": "Medium close-up of Nora dropping into a low combat crouch with her hand locked on her muffled sword hilt as the upper rock vibrates."
+      }
+    ],
+    "storyboard_prompt": "A film storyboard sheet, 16:9, made of FOUR photographic panels in a tight 2 by 2 grid, separated only by thin straight black lines; each panel is a 16:9 frame; no text, no numbers, no captions. All four panels are cinematic 35mm live-action feature-film stills of Location: cavernous karst labyrinth chamber beneath a fractured twenty-ton limestone arch. Light: cold subterranean emerald moss glow with drifting calcified limestone dust particles; deep inky shadows. Featuring {{media:62e117f8-0af7-484e-90a8-f79927105746|nora_clean.jpg}} (28yo female captain, braided auburn-brown hair, navy wool seafarer brigandine 1:1 matching reference).\nTOP-LEFT PANEL, second 0s: [WS] Wide low-angle establishing shot of the oppressive karst labyrinth cavern with jagged stalactites and a fractured limestone arch high overhead.\nTOP-RIGHT PANEL, second 3s: [MS] 60-degree angle shift to a medium shot of Nora edging silently along the wet limestone wall, her left hand braced against the rough rock.\nBOTTOM-LEFT PANEL, second 6s: [CU] 90-degree angle shift to a close-up of Nora's unobstructed face tilting upward as white limestone grit patters onto her leather shoulder brigandine.\nBOTTOM-RIGHT PANEL, second 8s: [MCU] Medium close-up of Nora dropping into a low combat crouch with her hand locked on her muffled sword hilt as the upper rock vibrates.\nCinematic feature-film look: shot on ARRI Alexa with Cooke S4 prime lenses, fine 35mm film grain, deep focus (f/8 aperture), entire frame sharp, motivated practical lighting, realistic physical mass and momentum, all faces 100% unobstructed, strictly NOT a 3D render, NOT CGI, zero watermark, zero logos."
+  },
+  {
+    "clip_id": "SC-100",
+    "scene_name": "Discovering the Beast's Talon Gouges",
+    "duration": 8,
+    "refs": [
+      "Castor"
+    ],
+    "source_media_id": "3152a235-af4f-462b-a78e-02551f826e41",
+    "panels": [
+      {
+        "panel": "TOP-LEFT",
+        "time": "0s",
+        "shot_size": "MCU",
+        "action": "Medium close-up of clean-shaven Castor holding a shuttered brass lantern beside a scarred limestone pillar and speaking immediately in a tense voice."
+      },
+      {
+        "panel": "TOP-RIGHT",
+        "time": "3s",
+        "shot_size": "CU",
+        "action": "60-degree angle shift to an extreme close-up of Castor's gloved fingers spanning six deep parallel talon gouges chiselled straight into solid limestone."
+      },
+      {
+        "panel": "BOTTOM-LEFT",
+        "time": "6s",
+        "shot_size": "MS",
+        "action": "90-degree angle shift to a low-angle medium shot of Castor sliding the lantern shutter closed and tilting his head sharply toward the black ceiling."
+      },
+      {
+        "panel": "BOTTOM-RIGHT",
+        "time": "8s",
+        "shot_size": "MCU",
+        "action": "Medium close-up of Castor whipping his loaded iron crossbow upward as fresh stone chips rain down from the overhang above."
+      }
+    ],
+    "storyboard_prompt": "A film storyboard sheet, 16:9, made of FOUR photographic panels in a tight 2 by 2 grid, separated only by thin straight black lines; each panel is a 16:9 frame; no text, no numbers, no captions. All four panels are cinematic 35mm live-action feature-film stills of Location: scarred limestone pillar inside the karst cavern. Light: narrow amber slit from a shuttered brass storm lantern raking across deep claw trenches in grey stone; dark subterranean background. Featuring {{media:3152a235-af4f-462b-a78e-02551f826e41|castor_clean.jpg}} (29yo clean-shaven navigator, short cropped jet-black hair, strictly NO beard, dark brown leather cuirass 1:1 matching reference).\nTOP-LEFT PANEL, second 0s: [MCU] Medium close-up of clean-shaven Castor holding a shuttered brass lantern beside a scarred limestone pillar and speaking immediately in a tense voice.\nTOP-RIGHT PANEL, second 3s: [CU] 60-degree angle shift to an extreme close-up of Castor's gloved fingers spanning six deep parallel talon gouges chiselled straight into solid limestone.\nBOTTOM-LEFT PANEL, second 6s: [MS] 90-degree angle shift to a low-angle medium shot of Castor sliding the lantern shutter closed and tilting his head sharply toward the black ceiling.\nBOTTOM-RIGHT PANEL, second 8s: [MCU] Medium close-up of Castor whipping his loaded iron crossbow upward as fresh stone chips rain down from the overhang above.\nCinematic feature-film look: shot on ARRI Alexa with Cooke S4 prime lenses, fine 35mm film grain, deep focus (f/8 aperture), entire frame sharp, motivated practical lighting, realistic physical mass and momentum, all faces 100% unobstructed, strictly NOT a 3D render, NOT CGI, zero watermark, zero logos."
+  },
+  {
+    "clip_id": "SC-101",
+    "scene_name": "Warning of the Awakened Prowler",
+    "duration": 8,
+    "refs": [
+      "Theron",
+      "Nora"
+    ],
+    "source_media_id": "7c5d994a-dabd-406b-a6c1-b9fa6473a612",
+    "panels": [
+      {
+        "panel": "TOP-LEFT",
+        "time": "0s",
+        "shot_size": "MS",
+        "action": "Medium shot of Theron pressing his ear to the vibrating limestone wall, spinning toward Nora and shouting an immediate warning."
+      },
+      {
+        "panel": "TOP-RIGHT",
+        "time": "3s",
+        "shot_size": "MCU",
+        "action": "70-degree angle shift to a medium close-up of Nora slamming her back flat against the rock alcove and drawing her bronze sword."
+      },
+      {
+        "panel": "BOTTOM-LEFT",
+        "time": "6s",
+        "shot_size": "CU",
+        "action": "90-degree angle shift to a close-up of Theron's unobstructed face glaring upward as heavy stone slabs crack above them."
+      },
+      {
+        "panel": "BOTTOM-RIGHT",
+        "time": "8s",
+        "shot_size": "WS",
+        "action": "Wide low-angle shot of the upper karst shelf fracturing outward in a burst of flying rock chunks."
+      }
+    ],
+    "storyboard_prompt": "A film storyboard sheet, 16:9, made of FOUR photographic panels in a tight 2 by 2 grid, separated only by thin straight black lines; each panel is a 16:9 frame; no text, no numbers, no captions. All four panels are cinematic 35mm live-action feature-film stills of Location: shadowy limestone alcove beneath an overhanging karst shelf. Light: dim emerald moss glow and faint amber lantern reflection across wet stone; deep chiaroscuro. Featuring {{media:7c5d994a-dabd-406b-a6c1-b9fa6473a612|theron_clean.jpg}} (58yo stranded navigator hermit, wild gray beard, ragged burlap tunic, wooden staff 1:1 matching reference), {{media:62e117f8-0af7-484e-90a8-f79927105746|nora_clean.jpg}} (28yo female captain, braided auburn-brown hair, navy wool seafarer brigandine 1:1 matching reference).\nTOP-LEFT PANEL, second 0s: [MS] Medium shot of Theron pressing his ear to the vibrating limestone wall, spinning toward Nora and shouting an immediate warning.\nTOP-RIGHT PANEL, second 3s: [MCU] 70-degree angle shift to a medium close-up of Nora slamming her back flat against the rock alcove and drawing her bronze sword.\nBOTTOM-LEFT PANEL, second 6s: [CU] 90-degree angle shift to a close-up of Theron's unobstructed face glaring upward as heavy stone slabs crack above them.\nBOTTOM-RIGHT PANEL, second 8s: [WS] Wide low-angle shot of the upper karst shelf fracturing outward in a burst of flying rock chunks.\nCinematic feature-film look: shot on ARRI Alexa with Cooke S4 prime lenses, fine 35mm film grain, deep focus (f/8 aperture), entire frame sharp, motivated practical lighting, realistic physical mass and momentum, all faces 100% unobstructed, strictly NOT a 3D render, NOT CGI, zero watermark, zero logos."
+  },
+  {
+    "clip_id": "SC-102",
+    "scene_name": "The Six-Legged Labyrinth Beast Emerges",
+    "duration": 10,
+    "refs": [
+      "Labyrinth Beast"
+    ],
+    "source_media_id": "a1905a31-82f6-4c94-b8b4-4c68570f2bfc",
+    "panels": [
+      {
+        "panel": "TOP-LEFT",
+        "time": "0s",
+        "shot_size": "EWS",
+        "action": "Extreme wide low-angle shot as the upper limestone wall shatters outward and the 6-meter six-legged Labyrinth Beast bursts from the fissure."
+      },
+      {
+        "panel": "TOP-RIGHT",
+        "time": "3s",
+        "shot_size": "MS",
+        "action": "60-degree angle shift to a medium shot of the Labyrinth Beast slamming its six spiked chitin legs onto the cavern floor, crushing boulders."
+      },
+      {
+        "panel": "BOTTOM-LEFT",
+        "time": "7s",
+        "shot_size": "CU",
+        "action": "90-degree angle shift to a close-up of the beast's asymmetrical armored head, glowing amber compound eyes, and snapping serrated mandibles."
+      },
+      {
+        "panel": "BOTTOM-RIGHT",
+        "time": "10s",
+        "shot_size": "WS",
+        "action": "Dynamic wide low-angle shot as the six-legged chitin monster lunges forward across the rock floor toward the crew."
+      }
+    ],
+    "storyboard_prompt": "A film storyboard sheet, 16:9, made of FOUR photographic panels in a tight 2 by 2 grid, separated only by thin straight black lines; each panel is a 16:9 frame; no text, no numbers, no captions. All four panels are cinematic 35mm live-action feature-film stills of Location: main karst labyrinth cavern beneath shattered upper rock ledge. Light: eerie emerald moss bioluminescence and amber compound-eye reflections cutting through deep cavern darkness. Featuring {{media:a1905a31-82f6-4c94-b8b4-4c68570f2bfc|labyrinth_beast_clean.jpg}} (6m subterranean karst predator, rough matte-black armored chitinous hide, 6 jointed climbing legs, amber compound eyes 1:1 matching reference).\nTOP-LEFT PANEL, second 0s: [EWS] Extreme wide low-angle shot as the upper limestone wall shatters outward and the 6-meter six-legged Labyrinth Beast bursts from the fissure.\nTOP-RIGHT PANEL, second 3s: [MS] 60-degree angle shift to a medium shot of the Labyrinth Beast slamming its six spiked chitin legs onto the cavern floor, crushing boulders.\nBOTTOM-LEFT PANEL, second 7s: [CU] 90-degree angle shift to a close-up of the beast's asymmetrical armored head, glowing amber compound eyes, and snapping serrated mandibles.\nBOTTOM-RIGHT PANEL, second 10s: [WS] Dynamic wide low-angle shot as the six-legged chitin monster lunges forward across the rock floor toward the crew.\nCinematic feature-film look: shot on ARRI Alexa with Cooke S4 prime lenses, fine 35mm film grain, deep focus (f/8 aperture), entire frame sharp, motivated practical lighting, realistic physical mass and momentum, all faces 100% unobstructed, strictly NOT a 3D render, NOT CGI, zero watermark, zero logos."
+  },
+  {
+    "clip_id": "SC-103",
+    "scene_name": "Blocking the Monster's Scythe Claws",
+    "duration": 10,
+    "refs": [
+      "Heracles",
+      "Labyrinth Beast"
+    ],
+    "source_media_id": "37a10133-8496-49e7-bd77-b5f261c5a43e",
+    "panels": [
+      {
+        "panel": "TOP-LEFT",
+        "time": "0s",
+        "shot_size": "MS",
+        "action": "Low-angle medium shot of Heracles wedging his boots into a floor crevice, locking his heavy bronze shield in front of him, and roaring."
+      },
+      {
+        "panel": "TOP-RIGHT",
+        "time": "3s",
+        "shot_size": "WS",
+        "action": "60-degree angle shift to a wide side-angle impact shot as the 6-meter Labyrinth Beast slams its scythe foreclaw onto Heracles's bronze shield in a shower of sparks."
+      },
+      {
+        "panel": "BOTTOM-LEFT",
+        "time": "7s",
+        "shot_size": "CU",
+        "action": "90-degree angle shift to a close-up of Heracles's unobstructed bearded face and bulging forearm muscles straining behind the dented bronze shield."
+      },
+      {
+        "panel": "BOTTOM-RIGHT",
+        "time": "10s",
+        "shot_size": "MS",
+        "action": "Medium shot of the Labyrinth Beast grinding its claw against the bronze plate while whipping its segmented tail back for a second strike."
+      }
+    ],
+    "storyboard_prompt": "A film storyboard sheet, 16:9, made of FOUR photographic panels in a tight 2 by 2 grid, separated only by thin straight black lines; each panel is a 16:9 frame; no text, no numbers, no captions. All four panels are cinematic 35mm live-action feature-film stills of Location: central karst cavern floor littered with broken limestone. Light: bright orange metallic friction sparks erupting against deep subterranean chiaroscuro and green moss glow. Featuring {{media:37a10133-8496-49e7-bd77-b5f261c5a43e|heracles_clean.jpg}} (38yo giant muscular boatswain, braided dark beard, sea-lion fur mantle 1:1 matching reference), {{media:a1905a31-82f6-4c94-b8b4-4c68570f2bfc|labyrinth_beast_clean.jpg}} (6m subterranean karst predator, rough matte-black armored chitinous hide, 6 jointed climbing legs, amber compound eyes 1:1 matching reference).\nTOP-LEFT PANEL, second 0s: [MS] Low-angle medium shot of Heracles wedging his boots into a floor crevice, locking his heavy bronze shield in front of him, and roaring.\nTOP-RIGHT PANEL, second 3s: [WS] 60-degree angle shift to a wide side-angle impact shot as the 6-meter Labyrinth Beast slams its scythe foreclaw onto Heracles's bronze shield in a shower of sparks.\nBOTTOM-LEFT PANEL, second 7s: [CU] 90-degree angle shift to a close-up of Heracles's unobstructed bearded face and bulging forearm muscles straining behind the dented bronze shield.\nBOTTOM-RIGHT PANEL, second 10s: [MS] Medium shot of the Labyrinth Beast grinding its claw against the bronze plate while whipping its segmented tail back for a second strike.\nCinematic feature-film look: shot on ARRI Alexa with Cooke S4 prime lenses, fine 35mm film grain, deep focus (f/8 aperture), entire frame sharp, motivated practical lighting, realistic physical mass and momentum, all faces 100% unobstructed, strictly NOT a 3D render, NOT CGI, zero watermark, zero logos."
+  },
+  {
+    "clip_id": "SC-104",
+    "scene_name": "Skidding Back Under Crushing Momentum",
+    "duration": 8,
+    "refs": [
+      "Heracles",
+      "Labyrinth Beast"
+    ],
+    "source_media_id": "37a10133-8496-49e7-bd77-b5f261c5a43e",
+    "panels": [
+      {
+        "panel": "TOP-LEFT",
+        "time": "0s",
+        "shot_size": "WS",
+        "action": "Wide action shot as the Labyrinth Beast whips its heavy armored tail club horizontally into Heracles's bronze shield in a burst of sparks."
+      },
+      {
+        "panel": "TOP-RIGHT",
+        "time": "3s",
+        "shot_size": "MS",
+        "action": "60-degree angle shift to a low-angle tracking shot of Heracles's boots skidding backward two meters across the limestone floor, spraying white gravel."
+      },
+      {
+        "panel": "BOTTOM-LEFT",
+        "time": "6s",
+        "shot_size": "CU",
+        "action": "90-degree angle shift to a close-up of Heracles slamming the bottom rim of his bronze shield against a jagged boulder to halt his slide."
+      },
+      {
+        "panel": "BOTTOM-RIGHT",
+        "time": "8s",
+        "shot_size": "MS",
+        "action": "Reverse medium shot of the Labyrinth Beast stalking forward over the crushed rocks with mandibles clicking."
+      }
+    ],
+    "storyboard_prompt": "A film storyboard sheet, 16:9, made of FOUR photographic panels in a tight 2 by 2 grid, separated only by thin straight black lines; each panel is a 16:9 frame; no text, no numbers, no captions. All four panels are cinematic 35mm live-action feature-film stills of Location: gravel-strewn limestone floor of the karst cavern. Light: metallic spark flash followed by dim emerald moss bioluminescence and flying white stone grit. Featuring {{media:37a10133-8496-49e7-bd77-b5f261c5a43e|heracles_clean.jpg}} (38yo giant muscular boatswain, braided dark beard, sea-lion fur mantle 1:1 matching reference), {{media:a1905a31-82f6-4c94-b8b4-4c68570f2bfc|labyrinth_beast_clean.jpg}} (6m subterranean karst predator, rough matte-black armored chitinous hide, 6 jointed climbing legs, amber compound eyes 1:1 matching reference).\nTOP-LEFT PANEL, second 0s: [WS] Wide action shot as the Labyrinth Beast whips its heavy armored tail club horizontally into Heracles's bronze shield in a burst of sparks.\nTOP-RIGHT PANEL, second 3s: [MS] 60-degree angle shift to a low-angle tracking shot of Heracles's boots skidding backward two meters across the limestone floor, spraying white gravel.\nBOTTOM-LEFT PANEL, second 6s: [CU] 90-degree angle shift to a close-up of Heracles slamming the bottom rim of his bronze shield against a jagged boulder to halt his slide.\nBOTTOM-RIGHT PANEL, second 8s: [MS] Reverse medium shot of the Labyrinth Beast stalking forward over the crushed rocks with mandibles clicking.\nCinematic feature-film look: shot on ARRI Alexa with Cooke S4 prime lenses, fine 35mm film grain, deep focus (f/8 aperture), entire frame sharp, motivated practical lighting, realistic physical mass and momentum, all faces 100% unobstructed, strictly NOT a 3D render, NOT CGI, zero watermark, zero logos."
+  },
+  {
+    "clip_id": "SC-105",
+    "scene_name": "Crossbow Bolts Shatter Against Chitin Armor",
+    "duration": 6,
+    "refs": [
+      "Castor",
+      "Labyrinth Beast"
+    ],
+    "source_media_id": "3152a235-af4f-462b-a78e-02551f826e41",
+    "panels": [
+      {
+        "panel": "TOP-LEFT",
+        "time": "0s",
+        "shot_size": "MCU",
+        "action": "Medium close-up of clean-shaven Castor kneeling beside a stalagmite, firing his iron crossbow and shouting immediately."
+      },
+      {
+        "panel": "TOP-RIGHT",
+        "time": "2s",
+        "shot_size": "MS",
+        "action": "75-degree angle shift to a medium impact shot of the iron bolt striking the Labyrinth Beast's black carapace and shattering in a spark flash."
+      },
+      {
+        "panel": "BOTTOM-LEFT",
+        "time": "4s",
+        "shot_size": "CU",
+        "action": "90-degree angle shift to a close-up of the broken iron bolt head ricocheting into the limestone wall beside the unscathed chitin plate."
+      },
+      {
+        "panel": "BOTTOM-RIGHT",
+        "time": "6s",
+        "shot_size": "MCU",
+        "action": "Medium close-up of Castor lowering his empty crossbow in alarm as the beast pivots toward his position."
+      }
+    ],
+    "storyboard_prompt": "A film storyboard sheet, 16:9, made of FOUR photographic panels in a tight 2 by 2 grid, separated only by thin straight black lines; each panel is a 16:9 frame; no text, no numbers, no captions. All four panels are cinematic 35mm live-action feature-film stills of Location: stalagmite cover inside the karst cavern. Light: sharp metallic spark flash on black chitin armor against deep subterranean shadows. Featuring {{media:3152a235-af4f-462b-a78e-02551f826e41|castor_clean.jpg}} (29yo clean-shaven navigator, short cropped jet-black hair, strictly NO beard, dark brown leather cuirass 1:1 matching reference), {{media:a1905a31-82f6-4c94-b8b4-4c68570f2bfc|labyrinth_beast_clean.jpg}} (6m subterranean karst predator, rough matte-black armored chitinous hide, 6 jointed climbing legs, amber compound eyes 1:1 matching reference).\nTOP-LEFT PANEL, second 0s: [MCU] Medium close-up of clean-shaven Castor kneeling beside a stalagmite, firing his iron crossbow and shouting immediately.\nTOP-RIGHT PANEL, second 2s: [MS] 75-degree angle shift to a medium impact shot of the iron bolt striking the Labyrinth Beast's black carapace and shattering in a spark flash.\nBOTTOM-LEFT PANEL, second 4s: [CU] 90-degree angle shift to a close-up of the broken iron bolt head ricocheting into the limestone wall beside the unscathed chitin plate.\nBOTTOM-RIGHT PANEL, second 6s: [MCU] Medium close-up of Castor lowering his empty crossbow in alarm as the beast pivots toward his position.\nCinematic feature-film look: shot on ARRI Alexa with Cooke S4 prime lenses, fine 35mm film grain, deep focus (f/8 aperture), entire frame sharp, motivated practical lighting, realistic physical mass and momentum, all faces 100% unobstructed, strictly NOT a 3D render, NOT CGI, zero watermark, zero logos."
+  },
+  {
+    "clip_id": "SC-106",
+    "scene_name": "Theron Spots the Cracked Keystone Arch",
+    "duration": 8,
+    "refs": [
+      "Theron",
+      "Nora"
+    ],
+    "source_media_id": "7c5d994a-dabd-406b-a6c1-b9fa6473a612",
+    "panels": [
+      {
+        "panel": "TOP-LEFT",
+        "time": "0s",
+        "shot_size": "MS",
+        "action": "Medium shot of Theron gripping Nora's shoulder behind a boulder, pointing his wooden staff diagonally upward at 45 degrees toward the ceiling off-frame, and shouting."
+      },
+      {
+        "panel": "TOP-RIGHT",
+        "time": "3s",
+        "shot_size": "WS",
+        "action": "90-degree low-angle reveal cut looking straight up at the fractured limestone arch where a twenty-ton keystone hangs wedged by brittle rock and taut hemp cables."
+      },
+      {
+        "panel": "BOTTOM-LEFT",
+        "time": "6s",
+        "shot_size": "MCU",
+        "action": "60-degree angle shift to a medium close-up of Nora's unobstructed face looking up, her eyes narrowing with fierce tactical realization."
+      },
+      {
+        "panel": "BOTTOM-RIGHT",
+        "time": "8s",
+        "shot_size": "MS",
+        "action": "Medium two-shot of Nora and Theron pivoting toward the crew to launch the keystone trap."
+      }
+    ],
+    "storyboard_prompt": "A film storyboard sheet, 16:9, made of FOUR photographic panels in a tight 2 by 2 grid, separated only by thin straight black lines; each panel is a 16:9 frame; no text, no numbers, no captions. All four panels are cinematic 35mm live-action feature-film stills of Location: beneath the fractured karst ceiling arch. Light: flickering amber lantern light raking upward across a twenty-ton cracked limestone keystone and taut hemp rigging cables. Featuring {{media:7c5d994a-dabd-406b-a6c1-b9fa6473a612|theron_clean.jpg}} (58yo stranded navigator hermit, wild gray beard, ragged burlap tunic, wooden staff 1:1 matching reference), {{media:62e117f8-0af7-484e-90a8-f79927105746|nora_clean.jpg}} (28yo female captain, braided auburn-brown hair, navy wool seafarer brigandine 1:1 matching reference).\nTOP-LEFT PANEL, second 0s: [MS] Medium shot of Theron gripping Nora's shoulder behind a boulder, pointing his wooden staff diagonally upward at 45 degrees toward the ceiling off-frame, and shouting.\nTOP-RIGHT PANEL, second 3s: [WS] 90-degree low-angle reveal cut looking straight up at the fractured limestone arch where a twenty-ton keystone hangs wedged by brittle rock and taut hemp cables.\nBOTTOM-LEFT PANEL, second 6s: [MCU] 60-degree angle shift to a medium close-up of Nora's unobstructed face looking up, her eyes narrowing with fierce tactical realization.\nBOTTOM-RIGHT PANEL, second 8s: [MS] Medium two-shot of Nora and Theron pivoting toward the crew to launch the keystone trap.\nCinematic feature-film look: shot on ARRI Alexa with Cooke S4 prime lenses, fine 35mm film grain, deep focus (f/8 aperture), entire frame sharp, motivated practical lighting, realistic physical mass and momentum, all faces 100% unobstructed, strictly NOT a 3D render, NOT CGI, zero watermark, zero logos."
+  },
+  {
+    "clip_id": "SC-107",
+    "scene_name": "Nora Commands the Keystone Ambush",
+    "duration": 8,
+    "refs": [
+      "Nora",
+      "Heracles"
+    ],
+    "source_media_id": "62e117f8-0af7-484e-90a8-f79927105746",
+    "panels": [
+      {
+        "panel": "TOP-LEFT",
+        "time": "0s",
+        "shot_size": "MCU",
+        "action": "Medium close-up of Captain Nora pointing her bronze blade toward the flat floor beneath the arch and shouting immediate orders."
+      },
+      {
+        "panel": "TOP-RIGHT",
+        "time": "3s",
+        "shot_size": "MS",
+        "action": "70-degree angle shift to a medium shot of Heracles slinging his shield onto his back and lifting a heavy six-foot iron pry-bar."
+      },
+      {
+        "panel": "BOTTOM-LEFT",
+        "time": "6s",
+        "shot_size": "CU",
+        "action": "90-degree angle shift to a close-up of Nora's hands unscrewing her bronze scroll cylinder and pulling out the sheepskin map."
+      },
+      {
+        "panel": "BOTTOM-RIGHT",
+        "time": "8s",
+        "shot_size": "MS",
+        "action": "Low-angle medium shot of Heracles scrambling up the rock steps toward the upper keystone wedge with the iron pry-bar."
+      }
+    ],
+    "storyboard_prompt": "A film storyboard sheet, 16:9, made of FOUR photographic panels in a tight 2 by 2 grid, separated only by thin straight black lines; each panel is a 16:9 frame; no text, no numbers, no captions. All four panels are cinematic 35mm live-action feature-film stills of Location: tactical cover beside the stone support column of the karst arch. Light: warm amber lantern glow contrasting with cold emerald moss shadows. Featuring {{media:62e117f8-0af7-484e-90a8-f79927105746|nora_clean.jpg}} (28yo female captain, braided auburn-brown hair, navy wool seafarer brigandine 1:1 matching reference), {{media:37a10133-8496-49e7-bd77-b5f261c5a43e|heracles_clean.jpg}} (38yo giant muscular boatswain, braided dark beard, sea-lion fur mantle 1:1 matching reference).\nTOP-LEFT PANEL, second 0s: [MCU] Medium close-up of Captain Nora pointing her bronze blade toward the flat floor beneath the arch and shouting immediate orders.\nTOP-RIGHT PANEL, second 3s: [MS] 70-degree angle shift to a medium shot of Heracles slinging his shield onto his back and lifting a heavy six-foot iron pry-bar.\nBOTTOM-LEFT PANEL, second 6s: [CU] 90-degree angle shift to a close-up of Nora's hands unscrewing her bronze scroll cylinder and pulling out the sheepskin map.\nBOTTOM-RIGHT PANEL, second 8s: [MS] Low-angle medium shot of Heracles scrambling up the rock steps toward the upper keystone wedge with the iron pry-bar.\nCinematic feature-film look: shot on ARRI Alexa with Cooke S4 prime lenses, fine 35mm film grain, deep focus (f/8 aperture), entire frame sharp, motivated practical lighting, realistic physical mass and momentum, all faces 100% unobstructed, strictly NOT a 3D render, NOT CGI, zero watermark, zero logos."
+  },
+  {
+    "clip_id": "SC-108",
+    "scene_name": "Igniting the Golden Map as Bioluminescent Bait",
+    "duration": 10,
+    "refs": [
+      "Nora"
+    ],
+    "source_media_id": "62e117f8-0af7-484e-90a8-f79927105746",
+    "panels": [
+      {
+        "panel": "TOP-LEFT",
+        "time": "0s",
+        "shot_size": "MS",
+        "action": "Medium shot of Nora unrolling the white sheepskin map, splashing seawater from her bronze canteen over it, and shouting."
+      },
+      {
+        "panel": "TOP-RIGHT",
+        "time": "3s",
+        "shot_size": "CU",
+        "action": "60-degree angle shift to a close-up of the parchment igniting with blazing golden bioluminescent veins that light up Nora's unobstructed face."
+      },
+      {
+        "panel": "BOTTOM-LEFT",
+        "time": "7s",
+        "shot_size": "MCU",
+        "action": "90-degree angle shift to a medium close-up of Nora waving the radiant golden map in a wide arc to draw the monster's gaze."
+      },
+      {
+        "panel": "BOTTOM-RIGHT",
+        "time": "10s",
+        "shot_size": "CU",
+        "action": "Close-up of Nora binding the glowing golden parchment around an iron crossbow bolt and locking it into her crossbow."
+      }
+    ],
+    "storyboard_prompt": "A film storyboard sheet, 16:9, made of FOUR photographic panels in a tight 2 by 2 grid, separated only by thin straight black lines; each panel is a 16:9 frame; no text, no numbers, no captions. All four panels are cinematic 35mm live-action feature-film stills of Location: center of the dark karst cavern chamber. Light: sudden brilliant golden bioluminescence erupting from the sheepskin parchment and illuminating Nora's face and copper braids. Featuring {{media:62e117f8-0af7-484e-90a8-f79927105746|nora_clean.jpg}} (28yo female captain, braided auburn-brown hair, navy wool seafarer brigandine 1:1 matching reference).\nTOP-LEFT PANEL, second 0s: [MS] Medium shot of Nora unrolling the white sheepskin map, splashing seawater from her bronze canteen over it, and shouting.\nTOP-RIGHT PANEL, second 3s: [CU] 60-degree angle shift to a close-up of the parchment igniting with blazing golden bioluminescent veins that light up Nora's unobstructed face.\nBOTTOM-LEFT PANEL, second 7s: [MCU] 90-degree angle shift to a medium close-up of Nora waving the radiant golden map in a wide arc to draw the monster's gaze.\nBOTTOM-RIGHT PANEL, second 10s: [CU] Close-up of Nora binding the glowing golden parchment around an iron crossbow bolt and locking it into her crossbow.\nCinematic feature-film look: shot on ARRI Alexa with Cooke S4 prime lenses, fine 35mm film grain, deep focus (f/8 aperture), entire frame sharp, motivated practical lighting, realistic physical mass and momentum, all faces 100% unobstructed, strictly NOT a 3D render, NOT CGI, zero watermark, zero logos."
+  },
+  {
+    "clip_id": "SC-109",
+    "scene_name": "The Labyrinth Beast Lunges for the Golden Bait",
+    "duration": 8,
+    "refs": [
+      "Labyrinth Beast"
+    ],
+    "source_media_id": "a1905a31-82f6-4c94-b8b4-4c68570f2bfc",
+    "panels": [
+      {
+        "panel": "TOP-LEFT",
+        "time": "0s",
+        "shot_size": "MCU",
+        "action": "Medium close-up of the Labyrinth Beast's armored head as blazing golden light reflects inside its amber compound eyes."
+      },
+      {
+        "panel": "TOP-RIGHT",
+        "time": "3s",
+        "shot_size": "WS",
+        "action": "60-degree angle shift to a wide tracking shot of the 6-meter six-legged beast pivoting and charging across the cavern floor."
+      },
+      {
+        "panel": "BOTTOM-LEFT",
+        "time": "6s",
+        "shot_size": "MS",
+        "action": "90-degree low-angle cut of the monster's spiked front legs pounding the limestone floor as it barrels toward the arch."
+      },
+      {
+        "panel": "BOTTOM-RIGHT",
+        "time": "8s",
+        "shot_size": "CU",
+        "action": "Close-up of the beast's scythed foreclaws tearing across the stone threshold of the kill-zone."
+      }
+    ],
+    "storyboard_prompt": "A film storyboard sheet, 16:9, made of FOUR photographic panels in a tight 2 by 2 grid, separated only by thin straight black lines; each panel is a 16:9 frame; no text, no numbers, no captions. All four panels are cinematic 35mm live-action feature-film stills of Location: karst cavern corridor leading to the central arch. Light: warm golden reflections from the bait gleaming inside the monster's amber compound eyes and across its matte-black chitin plates. Featuring {{media:a1905a31-82f6-4c94-b8b4-4c68570f2bfc|labyrinth_beast_clean.jpg}} (6m subterranean karst predator, rough matte-black armored chitinous hide, 6 jointed climbing legs, amber compound eyes 1:1 matching reference).\nTOP-LEFT PANEL, second 0s: [MCU] Medium close-up of the Labyrinth Beast's armored head as blazing golden light reflects inside its amber compound eyes.\nTOP-RIGHT PANEL, second 3s: [WS] 60-degree angle shift to a wide tracking shot of the 6-meter six-legged beast pivoting and charging across the cavern floor.\nBOTTOM-LEFT PANEL, second 6s: [MS] 90-degree low-angle cut of the monster's spiked front legs pounding the limestone floor as it barrels toward the arch.\nBOTTOM-RIGHT PANEL, second 8s: [CU] Close-up of the beast's scythed foreclaws tearing across the stone threshold of the kill-zone.\nCinematic feature-film look: shot on ARRI Alexa with Cooke S4 prime lenses, fine 35mm film grain, deep focus (f/8 aperture), entire frame sharp, motivated practical lighting, realistic physical mass and momentum, all faces 100% unobstructed, strictly NOT a 3D render, NOT CGI, zero watermark, zero logos."
+  },
+  {
+    "clip_id": "SC-110",
+    "scene_name": "Firing the Glowing Bait into the Kill-Zone",
+    "duration": 8,
+    "refs": [
+      "Nora"
+    ],
+    "source_media_id": "62e117f8-0af7-484e-90a8-f79927105746",
+    "panels": [
+      {
+        "panel": "TOP-LEFT",
+        "time": "0s",
+        "shot_size": "MCU",
+        "action": "Medium close-up of Nora bracing the crossbow against her shoulder, aiming the glowing golden map bolt downward, and shouting."
+      },
+      {
+        "panel": "TOP-RIGHT",
+        "time": "3s",
+        "shot_size": "MS",
+        "action": "75-degree angle shift to a medium shot as Nora fires; the blazing golden parchment bolt streaks across the dark cavern toward the floor."
+      },
+      {
+        "panel": "BOTTOM-LEFT",
+        "time": "6s",
+        "shot_size": "CU",
+        "action": "90-degree insert cut to a close-up of the iron bolt slamming deep into a limestone floor crack directly under the hanging keystone."
+      },
+      {
+        "panel": "BOTTOM-RIGHT",
+        "time": "8s",
+        "shot_size": "MS",
+        "action": "Medium shot of Nora rolling behind a thick stalagmite and waving her arm sharply upward to signal Heracles and Castor."
+      }
+    ],
+    "storyboard_prompt": "A film storyboard sheet, 16:9, made of FOUR photographic panels in a tight 2 by 2 grid, separated only by thin straight black lines; each panel is a 16:9 frame; no text, no numbers, no captions. All four panels are cinematic 35mm live-action feature-film stills of Location: karst cavern floor directly beneath the cracked twenty-ton keystone arch. Light: streaking golden bioluminescence from the flying map bolt lighting up the dark limestone floor. Featuring {{media:62e117f8-0af7-484e-90a8-f79927105746|nora_clean.jpg}} (28yo female captain, braided auburn-brown hair, navy wool seafarer brigandine 1:1 matching reference).\nTOP-LEFT PANEL, second 0s: [MCU] Medium close-up of Nora bracing the crossbow against her shoulder, aiming the glowing golden map bolt downward, and shouting.\nTOP-RIGHT PANEL, second 3s: [MS] 75-degree angle shift to a medium shot as Nora fires; the blazing golden parchment bolt streaks across the dark cavern toward the floor.\nBOTTOM-LEFT PANEL, second 6s: [CU] 90-degree insert cut to a close-up of the iron bolt slamming deep into a limestone floor crack directly under the hanging keystone.\nBOTTOM-RIGHT PANEL, second 8s: [MS] Medium shot of Nora rolling behind a thick stalagmite and waving her arm sharply upward to signal Heracles and Castor.\nCinematic feature-film look: shot on ARRI Alexa with Cooke S4 prime lenses, fine 35mm film grain, deep focus (f/8 aperture), entire frame sharp, motivated practical lighting, realistic physical mass and momentum, all faces 100% unobstructed, strictly NOT a 3D render, NOT CGI, zero watermark, zero logos."
+  },
+  {
+    "clip_id": "SC-111",
+    "scene_name": "The Beast Enters the Kill-Zone Beneath the Keystone",
+    "duration": 6,
+    "refs": [
+      "Theron",
+      "Labyrinth Beast"
+    ],
+    "source_media_id": "7c5d994a-dabd-406b-a6c1-b9fa6473a612",
+    "panels": [
+      {
+        "panel": "TOP-LEFT",
+        "time": "0s",
+        "shot_size": "MCU",
+        "action": "Medium close-up of Theron crouched on a high rock outcrop, pointing his wooden staff downward and shouting the trigger command."
+      },
+      {
+        "panel": "TOP-RIGHT",
+        "time": "2s",
+        "shot_size": "WS",
+        "action": "75-degree high-angle cut looking down past the cracked keystone arch as the 6-meter Labyrinth Beast skids to a halt directly over the glowing map."
+      },
+      {
+        "panel": "BOTTOM-LEFT",
+        "time": "4s",
+        "shot_size": "MS",
+        "action": "60-degree angle shift to a medium shot of the beast lowering its serrated mandibles to snap at the glowing golden parchment bolt in the floor."
+      },
+      {
+        "panel": "BOTTOM-RIGHT",
+        "time": "6s",
+        "shot_size": "CU",
+        "action": "Close-up of the fractured ceiling keystone groaning above the monster's carapace as rock dust streams down."
+      }
+    ],
+    "storyboard_prompt": "A film storyboard sheet, 16:9, made of FOUR photographic panels in a tight 2 by 2 grid, separated only by thin straight black lines; each panel is a 16:9 frame; no text, no numbers, no captions. All four panels are cinematic 35mm live-action feature-film stills of Location: kill-zone floor directly beneath the fractured twenty-ton limestone keystone. Light: upward golden glow from the pinned parchment illuminating the monster's jaws and the cracked ceiling arch above. Featuring {{media:7c5d994a-dabd-406b-a6c1-b9fa6473a612|theron_clean.jpg}} (58yo stranded navigator hermit, wild gray beard, ragged burlap tunic, wooden staff 1:1 matching reference), {{media:a1905a31-82f6-4c94-b8b4-4c68570f2bfc|labyrinth_beast_clean.jpg}} (6m subterranean karst predator, rough matte-black armored chitinous hide, 6 jointed climbing legs, amber compound eyes 1:1 matching reference).\nTOP-LEFT PANEL, second 0s: [MCU] Medium close-up of Theron crouched on a high rock outcrop, pointing his wooden staff downward and shouting the trigger command.\nTOP-RIGHT PANEL, second 2s: [WS] 75-degree high-angle cut looking down past the cracked keystone arch as the 6-meter Labyrinth Beast skids to a halt directly over the glowing map.\nBOTTOM-LEFT PANEL, second 4s: [MS] 60-degree angle shift to a medium shot of the beast lowering its serrated mandibles to snap at the glowing golden parchment bolt in the floor.\nBOTTOM-RIGHT PANEL, second 6s: [CU] Close-up of the fractured ceiling keystone groaning above the monster's carapace as rock dust streams down.\nCinematic feature-film look: shot on ARRI Alexa with Cooke S4 prime lenses, fine 35mm film grain, deep focus (f/8 aperture), entire frame sharp, motivated practical lighting, realistic physical mass and momentum, all faces 100% unobstructed, strictly NOT a 3D render, NOT CGI, zero watermark, zero logos."
+  },
+  {
+    "clip_id": "SC-112",
+    "scene_name": "Castor Severs the Anchor Cable",
+    "duration": 8,
+    "refs": [
+      "Castor"
+    ],
+    "source_media_id": "3152a235-af4f-462b-a78e-02551f826e41",
+    "panels": [
+      {
+        "panel": "TOP-LEFT",
+        "time": "0s",
+        "shot_size": "MS",
+        "action": "Medium shot of clean-shaven Castor braced on the rock ledge beside the taut hemp anchor cable, raising his bronze sword high and shouting."
+      },
+      {
+        "panel": "TOP-RIGHT",
+        "time": "3s",
+        "shot_size": "CU",
+        "action": "60-degree angle shift to a close-up of Castor's bronze blade slicing cleanly through the thick hemp cable, rope ends whipping apart."
+      },
+      {
+        "panel": "BOTTOM-LEFT",
+        "time": "6s",
+        "shot_size": "MCU",
+        "action": "90-degree angle shift to a medium close-up of the wooden support strut groaning and splintering under the sudden weight transfer."
+      },
+      {
+        "panel": "BOTTOM-RIGHT",
+        "time": "8s",
+        "shot_size": "MS",
+        "action": "Low-angle medium shot of Castor pressing his back against the safe rock wall and looking up toward Heracles at the main wedge."
+      }
+    ],
+    "storyboard_prompt": "A film storyboard sheet, 16:9, made of FOUR photographic panels in a tight 2 by 2 grid, separated only by thin straight black lines; each panel is a 16:9 frame; no text, no numbers, no captions. All four panels are cinematic 35mm live-action feature-film stills of Location: narrow limestone ledge beside the taut hemp anchor cable of the arch. Light: sharp amber lantern reflection glinting off Castor's bronze blade edge against dark cavern rock. Featuring {{media:3152a235-af4f-462b-a78e-02551f826e41|castor_clean.jpg}} (29yo clean-shaven navigator, short cropped jet-black hair, strictly NO beard, dark brown leather cuirass 1:1 matching reference).\nTOP-LEFT PANEL, second 0s: [MS] Medium shot of clean-shaven Castor braced on the rock ledge beside the taut hemp anchor cable, raising his bronze sword high and shouting.\nTOP-RIGHT PANEL, second 3s: [CU] 60-degree angle shift to a close-up of Castor's bronze blade slicing cleanly through the thick hemp cable, rope ends whipping apart.\nBOTTOM-LEFT PANEL, second 6s: [MCU] 90-degree angle shift to a medium close-up of the wooden support strut groaning and splintering under the sudden weight transfer.\nBOTTOM-RIGHT PANEL, second 8s: [MS] Low-angle medium shot of Castor pressing his back against the safe rock wall and looking up toward Heracles at the main wedge.\nCinematic feature-film look: shot on ARRI Alexa with Cooke S4 prime lenses, fine 35mm film grain, deep focus (f/8 aperture), entire frame sharp, motivated practical lighting, realistic physical mass and momentum, all faces 100% unobstructed, strictly NOT a 3D render, NOT CGI, zero watermark, zero logos."
+  },
+  {
+    "clip_id": "SC-113",
+    "scene_name": "Heracles Drives the Iron Wedge to Release 20 Tons of Rock",
+    "duration": 8,
+    "refs": [
+      "Heracles"
+    ],
+    "source_media_id": "37a10133-8496-49e7-bd77-b5f261c5a43e",
+    "panels": [
+      {
+        "panel": "TOP-LEFT",
+        "time": "0s",
+        "shot_size": "MS",
+        "action": "Low-angle heroic medium shot of Heracles on the upper ledge gripping the six-foot iron pry-bar with both hands and roaring."
+      },
+      {
+        "panel": "TOP-RIGHT",
+        "time": "3s",
+        "shot_size": "CU",
+        "action": "60-degree angle shift to a close-up of the iron pry-bar wrenching the calcified stone retaining wedge until it shatters in sparks."
+      },
+      {
+        "panel": "BOTTOM-LEFT",
+        "time": "6s",
+        "shot_size": "MCU",
+        "action": "90-degree angle shift to a medium close-up of the ceiling fault line splitting wide open as the twenty-ton keystone tears loose."
+      },
+      {
+        "panel": "BOTTOM-RIGHT",
+        "time": "8s",
+        "shot_size": "MS",
+        "action": "Medium shot of Heracles leaping backward onto the safe inner rock shelf as the colossal stone mass drops."
+      }
+    ],
+    "storyboard_prompt": "A film storyboard sheet, 16:9, made of FOUR photographic panels in a tight 2 by 2 grid, separated only by thin straight black lines; each panel is a 16:9 frame; no text, no numbers, no captions. All four panels are cinematic 35mm live-action feature-film stills of Location: high structural fault line of the karst ceiling arch. Light: harsh chiaroscuro lantern light across Heracles's straining muscles and sparks flying from the iron pry-bar. Featuring {{media:37a10133-8496-49e7-bd77-b5f261c5a43e|heracles_clean.jpg}} (38yo giant muscular boatswain, braided dark beard, sea-lion fur mantle 1:1 matching reference).\nTOP-LEFT PANEL, second 0s: [MS] Low-angle heroic medium shot of Heracles on the upper ledge gripping the six-foot iron pry-bar with both hands and roaring.\nTOP-RIGHT PANEL, second 3s: [CU] 60-degree angle shift to a close-up of the iron pry-bar wrenching the calcified stone retaining wedge until it shatters in sparks.\nBOTTOM-LEFT PANEL, second 6s: [MCU] 90-degree angle shift to a medium close-up of the ceiling fault line splitting wide open as the twenty-ton keystone tears loose.\nBOTTOM-RIGHT PANEL, second 8s: [MS] Medium shot of Heracles leaping backward onto the safe inner rock shelf as the colossal stone mass drops.\nCinematic feature-film look: shot on ARRI Alexa with Cooke S4 prime lenses, fine 35mm film grain, deep focus (f/8 aperture), entire frame sharp, motivated practical lighting, realistic physical mass and momentum, all faces 100% unobstructed, strictly NOT a 3D render, NOT CGI, zero watermark, zero logos."
+  },
+  {
+    "clip_id": "SC-114",
+    "scene_name": "Twenty Tons of Limestone Crush the Labyrinth Beast",
+    "duration": 10,
+    "refs": [
+      "Labyrinth Beast"
+    ],
+    "source_media_id": "a1905a31-82f6-4c94-b8b4-4c68570f2bfc",
+    "panels": [
+      {
+        "panel": "TOP-LEFT",
+        "time": "0s",
+        "shot_size": "EWS",
+        "action": "Extreme wide low-angle shot as the colossal twenty-ton limestone keystone tears loose from the ceiling arch and plunges straight down."
+      },
+      {
+        "panel": "TOP-RIGHT",
+        "time": "3s",
+        "shot_size": "WS",
+        "action": "60-degree angle shift to a wide impact shot as the twenty-ton keystone slams squarely onto the Labyrinth Beast, crushing its black carapace into the floor."
+      },
+      {
+        "panel": "BOTTOM-LEFT",
+        "time": "7s",
+        "shot_size": "MS",
+        "action": "90-degree angle shift to a medium shot of secondary limestone boulders piling over the impact site and blasting a dense wave of white rock dust outward."
+      },
+      {
+        "panel": "BOTTOM-RIGHT",
+        "time": "10s",
+        "shot_size": "CU",
+        "action": "Close-up of a single motionless, cracked black chitin foreclaw protruding from beneath the settled twenty-ton boulder mound."
+      }
+    ],
+    "storyboard_prompt": "A film storyboard sheet, 16:9, made of FOUR photographic panels in a tight 2 by 2 grid, separated only by thin straight black lines; each panel is a 16:9 frame; no text, no numbers, no captions. All four panels are cinematic 35mm live-action feature-film stills of Location: central karst cavern floor beneath collapsing ceiling arch. Light: violent shockwave of white limestone dust illuminated by emerald moss and amber sparks. Featuring {{media:a1905a31-82f6-4c94-b8b4-4c68570f2bfc|labyrinth_beast_clean.jpg}} (6m subterranean karst predator, rough matte-black armored chitinous hide, 6 jointed climbing legs, amber compound eyes 1:1 matching reference).\nTOP-LEFT PANEL, second 0s: [EWS] Extreme wide low-angle shot as the colossal twenty-ton limestone keystone tears loose from the ceiling arch and plunges straight down.\nTOP-RIGHT PANEL, second 3s: [WS] 60-degree angle shift to a wide impact shot as the twenty-ton keystone slams squarely onto the Labyrinth Beast, crushing its black carapace into the floor.\nBOTTOM-LEFT PANEL, second 7s: [MS] 90-degree angle shift to a medium shot of secondary limestone boulders piling over the impact site and blasting a dense wave of white rock dust outward.\nBOTTOM-RIGHT PANEL, second 10s: [CU] Close-up of a single motionless, cracked black chitin foreclaw protruding from beneath the settled twenty-ton boulder mound.\nCinematic feature-film look: shot on ARRI Alexa with Cooke S4 prime lenses, fine 35mm film grain, deep focus (f/8 aperture), entire frame sharp, motivated practical lighting, realistic physical mass and momentum, all faces 100% unobstructed, strictly NOT a 3D render, NOT CGI, zero watermark, zero logos."
+  },
+  {
+    "clip_id": "SC-115",
+    "scene_name": "The Crushed Carapace Beneath the Rubble",
+    "duration": 8,
+    "refs": [
+      "Nora"
+    ],
+    "source_media_id": "62e117f8-0af7-484e-90a8-f79927105746",
+    "panels": [
+      {
+        "panel": "TOP-LEFT",
+        "time": "0s",
+        "shot_size": "WS",
+        "action": "Wide shot of the silent, dust-hazy cavern dominated by the massive mound of fallen limestone boulders as Nora steps forward with her sword drawn."
+      },
+      {
+        "panel": "TOP-RIGHT",
+        "time": "3s",
+        "shot_size": "MS",
+        "action": "60-degree angle shift to a medium shot of Nora approaching the rockfall edge and tapping a motionless, cracked chitin leg with her bronze blade tip."
+      },
+      {
+        "panel": "BOTTOM-LEFT",
+        "time": "6s",
+        "shot_size": "MCU",
+        "action": "90-degree angle shift to a medium close-up of Nora's unobstructed dust-streaked face exhaling in relief as she slides her bronze sword into its scabbard."
+      },
+      {
+        "panel": "BOTTOM-RIGHT",
+        "time": "8s",
+        "shot_size": "CU",
+        "action": "Close-up of the corner of the sheepskin map sticking out intact from a gap between two fallen boulders, its golden glow fading."
+      }
+    ],
+    "storyboard_prompt": "A film storyboard sheet, 16:9, made of FOUR photographic panels in a tight 2 by 2 grid, separated only by thin straight black lines; each panel is a 16:9 frame; no text, no numbers, no captions. All four panels are cinematic 35mm live-action feature-film stills of Location: settled twenty-ton limestone rockfall pile in the karst cavern. Light: soft emerald moss glow filtering through settling white limestone dust. Featuring {{media:62e117f8-0af7-484e-90a8-f79927105746|nora_clean.jpg}} (28yo female captain, braided auburn-brown hair, navy wool seafarer brigandine 1:1 matching reference).\nTOP-LEFT PANEL, second 0s: [WS] Wide shot of the silent, dust-hazy cavern dominated by the massive mound of fallen limestone boulders as Nora steps forward with her sword drawn.\nTOP-RIGHT PANEL, second 3s: [MS] 60-degree angle shift to a medium shot of Nora approaching the rockfall edge and tapping a motionless, cracked chitin leg with her bronze blade tip.\nBOTTOM-LEFT PANEL, second 6s: [MCU] 90-degree angle shift to a medium close-up of Nora's unobstructed dust-streaked face exhaling in relief as she slides her bronze sword into its scabbard.\nBOTTOM-RIGHT PANEL, second 8s: [CU] Close-up of the corner of the sheepskin map sticking out intact from a gap between two fallen boulders, its golden glow fading.\nCinematic feature-film look: shot on ARRI Alexa with Cooke S4 prime lenses, fine 35mm film grain, deep focus (f/8 aperture), entire frame sharp, motivated practical lighting, realistic physical mass and momentum, all faces 100% unobstructed, strictly NOT a 3D render, NOT CGI, zero watermark, zero logos."
+  },
+  {
+    "clip_id": "SC-116",
+    "scene_name": "The Golden Ink Goes Cold and Dark",
+    "duration": 8,
+    "refs": [
+      "Castor"
+    ],
+    "source_media_id": "3152a235-af4f-462b-a78e-02551f826e41",
+    "panels": [
+      {
+        "panel": "TOP-LEFT",
+        "time": "0s",
+        "shot_size": "MS",
+        "action": "Medium shot of clean-shaven Castor kneeling beside the fallen boulders, pulling the intact sheepskin map free, and speaking immediately."
+      },
+      {
+        "panel": "TOP-RIGHT",
+        "time": "3s",
+        "shot_size": "CU",
+        "action": "60-degree angle shift to a close-up of the sheepskin parchment in Castor's hands as the last golden lines fade completely into blank white hide."
+      },
+      {
+        "panel": "BOTTOM-LEFT",
+        "time": "6s",
+        "shot_size": "MCU",
+        "action": "90-degree angle shift to a medium close-up of Castor brushing grey stone dust off the blank vellum, his unobstructed face calm."
+      },
+      {
+        "panel": "BOTTOM-RIGHT",
+        "time": "8s",
+        "shot_size": "MS",
+        "action": "Medium shot of Castor rising to his feet and extending the rolled ivory sheepskin toward Captain Nora."
+      }
+    ],
+    "storyboard_prompt": "A film storyboard sheet, 16:9, made of FOUR photographic panels in a tight 2 by 2 grid, separated only by thin straight black lines; each panel is a 16:9 frame; no text, no numbers, no captions. All four panels are cinematic 35mm live-action feature-film stills of Location: base of the fallen limestone keystone mound. Light: last dying ember of golden bioluminescence fading from the parchment into dim cavern lantern light. Featuring {{media:3152a235-af4f-462b-a78e-02551f826e41|castor_clean.jpg}} (29yo clean-shaven navigator, short cropped jet-black hair, strictly NO beard, dark brown leather cuirass 1:1 matching reference).\nTOP-LEFT PANEL, second 0s: [MS] Medium shot of clean-shaven Castor kneeling beside the fallen boulders, pulling the intact sheepskin map free, and speaking immediately.\nTOP-RIGHT PANEL, second 3s: [CU] 60-degree angle shift to a close-up of the sheepskin parchment in Castor's hands as the last golden lines fade completely into blank white hide.\nBOTTOM-LEFT PANEL, second 6s: [MCU] 90-degree angle shift to a medium close-up of Castor brushing grey stone dust off the blank vellum, his unobstructed face calm.\nBOTTOM-RIGHT PANEL, second 8s: [MS] Medium shot of Castor rising to his feet and extending the rolled ivory sheepskin toward Captain Nora.\nCinematic feature-film look: shot on ARRI Alexa with Cooke S4 prime lenses, fine 35mm film grain, deep focus (f/8 aperture), entire frame sharp, motivated practical lighting, realistic physical mass and momentum, all faces 100% unobstructed, strictly NOT a 3D render, NOT CGI, zero watermark, zero logos."
+  },
+  {
+    "clip_id": "SC-117",
+    "scene_name": "Trusting Human Wisdom Over Cursed Bait",
+    "duration": 6,
+    "refs": [
+      "Nora"
+    ],
+    "source_media_id": "62e117f8-0af7-484e-90a8-f79927105746",
+    "panels": [
+      {
+        "panel": "TOP-LEFT",
+        "time": "0s",
+        "shot_size": "MCU",
+        "action": "Medium close-up of Captain Nora taking the blank sheepskin scroll into her hands and speaking immediately with quiet conviction."
+      },
+      {
+        "panel": "TOP-RIGHT",
+        "time": "2s",
+        "shot_size": "CU",
+        "action": "60-degree angle shift to a close-up of Nora's hands sliding the rolled white parchment into her bronze belt cylinder and latching the cap."
+      },
+      {
+        "panel": "BOTTOM-LEFT",
+        "time": "4s",
+        "shot_size": "MS",
+        "action": "90-degree angle shift to a medium shot of Nora securing the cylinder at her waist and turning toward the rear cavern wall."
+      },
+      {
+        "panel": "BOTTOM-RIGHT",
+        "time": "6s",
+        "shot_size": "MCU",
+        "action": "Medium close-up of Nora nodding with firm camaraderie toward Theron as a warm breeze stirs her copper-red braids."
+      }
+    ],
+    "storyboard_prompt": "A film storyboard sheet, 16:9, made of FOUR photographic panels in a tight 2 by 2 grid, separated only by thin straight black lines; each panel is a 16:9 frame; no text, no numbers, no captions. All four panels are cinematic 35mm live-action feature-film stills of Location: beside the collapsed limestone arch. Light: warm practical lantern glow and a faint warm golden draft emerging from the rear cavern wall. Featuring {{media:62e117f8-0af7-484e-90a8-f79927105746|nora_clean.jpg}} (28yo female captain, braided auburn-brown hair, navy wool seafarer brigandine 1:1 matching reference).\nTOP-LEFT PANEL, second 0s: [MCU] Medium close-up of Captain Nora taking the blank sheepskin scroll into her hands and speaking immediately with quiet conviction.\nTOP-RIGHT PANEL, second 2s: [CU] 60-degree angle shift to a close-up of Nora's hands sliding the rolled white parchment into her bronze belt cylinder and latching the cap.\nBOTTOM-LEFT PANEL, second 4s: [MS] 90-degree angle shift to a medium shot of Nora securing the cylinder at her waist and turning toward the rear cavern wall.\nBOTTOM-RIGHT PANEL, second 6s: [MCU] Medium close-up of Nora nodding with firm camaraderie toward Theron as a warm breeze stirs her copper-red braids.\nCinematic feature-film look: shot on ARRI Alexa with Cooke S4 prime lenses, fine 35mm film grain, deep focus (f/8 aperture), entire frame sharp, motivated practical lighting, realistic physical mass and momentum, all faces 100% unobstructed, strictly NOT a 3D render, NOT CGI, zero watermark, zero logos."
+  },
+  {
+    "clip_id": "SC-118",
+    "scene_name": "The Rockfall Breaches the Inner Sanctum Wall",
+    "duration": 8,
+    "refs": [
+      "Theron"
+    ],
+    "source_media_id": "7c5d994a-dabd-406b-a6c1-b9fa6473a612",
+    "panels": [
+      {
+        "panel": "TOP-LEFT",
+        "time": "0s",
+        "shot_size": "MS",
+        "action": "Medium shot of Theron climbing over the settled limestone boulders toward a vertical crack in the rear cavern wall and speaking immediately."
+      },
+      {
+        "panel": "TOP-RIGHT",
+        "time": "3s",
+        "shot_size": "CU",
+        "action": "60-degree angle shift to a close-up of Theron striking the cracked rock edge with his wooden staff, toppling loose slabs to reveal warm golden light."
+      },
+      {
+        "panel": "BOTTOM-LEFT",
+        "time": "6s",
+        "shot_size": "MCU",
+        "action": "90-degree angle shift to a medium close-up of Theron bathed in warm amber-gold light as the updraft stirs his wild gray beard."
+      },
+      {
+        "panel": "BOTTOM-RIGHT",
+        "time": "8s",
+        "shot_size": "MS",
+        "action": "Reverse medium shot of Theron turning at the glowing fissure and beckoning urgently with his staff for the crew to follow."
+      }
+    ],
+    "storyboard_prompt": "A film storyboard sheet, 16:9, made of FOUR photographic panels in a tight 2 by 2 grid, separated only by thin straight black lines; each panel is a 16:9 frame; no text, no numbers, no captions. All four panels are cinematic 35mm live-action feature-film stills of Location: newly fractured rear limestone wall behind the collapsed arch. Light: warm amber-gold subterranean light pouring through a widened vertical fissure into the dark cavern. Featuring {{media:7c5d994a-dabd-406b-a6c1-b9fa6473a612|theron_clean.jpg}} (58yo stranded navigator hermit, wild gray beard, ragged burlap tunic, wooden staff 1:1 matching reference).\nTOP-LEFT PANEL, second 0s: [MS] Medium shot of Theron climbing over the settled limestone boulders toward a vertical crack in the rear cavern wall and speaking immediately.\nTOP-RIGHT PANEL, second 3s: [CU] 60-degree angle shift to a close-up of Theron striking the cracked rock edge with his wooden staff, toppling loose slabs to reveal warm golden light.\nBOTTOM-LEFT PANEL, second 6s: [MCU] 90-degree angle shift to a medium close-up of Theron bathed in warm amber-gold light as the updraft stirs his wild gray beard.\nBOTTOM-RIGHT PANEL, second 8s: [MS] Reverse medium shot of Theron turning at the glowing fissure and beckoning urgently with his staff for the crew to follow.\nCinematic feature-film look: shot on ARRI Alexa with Cooke S4 prime lenses, fine 35mm film grain, deep focus (f/8 aperture), entire frame sharp, motivated practical lighting, realistic physical mass and momentum, all faces 100% unobstructed, strictly NOT a 3D render, NOT CGI, zero watermark, zero logos."
+  },
+  {
+    "clip_id": "SC-119",
+    "scene_name": "Drifting Golden Pollen on the Warm Updraft",
+    "duration": 10,
+    "refs": [
+      "Nora",
+      "Castor"
+    ],
+    "source_media_id": "62e117f8-0af7-484e-90a8-f79927105746",
+    "panels": [
+      {
+        "panel": "TOP-LEFT",
+        "time": "0s",
+        "shot_size": "MCU",
+        "action": "Medium close-up of Nora stepping up to the glowing rock fissure beside clean-shaven Castor and speaking immediately in wonder."
+      },
+      {
+        "panel": "TOP-RIGHT",
+        "time": "3s",
+        "shot_size": "CU",
+        "action": "60-degree angle shift to a close-up of Nora's open hand extended before the breach as glowing golden pollen motes settle on her fingers."
+      },
+      {
+        "panel": "BOTTOM-LEFT",
+        "time": "7s",
+        "shot_size": "MS",
+        "action": "90-degree angle shift to a medium two-shot of Nora and Castor bathed in warm golden light as pollen drifts around their shoulders."
+      },
+      {
+        "panel": "BOTTOM-RIGHT",
+        "time": "10s",
+        "shot_size": "MCU",
+        "action": "Medium close-up of Nora looking toward Heracles and gesturing at the last loose rocks blocking the lower archway."
+      }
+    ],
+    "storyboard_prompt": "A film storyboard sheet, 16:9, made of FOUR photographic panels in a tight 2 by 2 grid, separated only by thin straight black lines; each panel is a 16:9 frame; no text, no numbers, no captions. All four panels are cinematic 35mm live-action feature-film stills of Location: glowing limestone wall breach leading to the inner cenote. Light: warm amber-gold light and floating bioluminescent golden pollen motes drifting on a gentle air current. Featuring {{media:62e117f8-0af7-484e-90a8-f79927105746|nora_clean.jpg}} (28yo female captain, braided auburn-brown hair, navy wool seafarer brigandine 1:1 matching reference), {{media:3152a235-af4f-462b-a78e-02551f826e41|castor_clean.jpg}} (29yo clean-shaven navigator, short cropped jet-black hair, strictly NO beard, dark brown leather cuirass 1:1 matching reference).\nTOP-LEFT PANEL, second 0s: [MCU] Medium close-up of Nora stepping up to the glowing rock fissure beside clean-shaven Castor and speaking immediately in wonder.\nTOP-RIGHT PANEL, second 3s: [CU] 60-degree angle shift to a close-up of Nora's open hand extended before the breach as glowing golden pollen motes settle on her fingers.\nBOTTOM-LEFT PANEL, second 7s: [MS] 90-degree angle shift to a medium two-shot of Nora and Castor bathed in warm golden light as pollen drifts around their shoulders.\nBOTTOM-RIGHT PANEL, second 10s: [MCU] Medium close-up of Nora looking toward Heracles and gesturing at the last loose rocks blocking the lower archway.\nCinematic feature-film look: shot on ARRI Alexa with Cooke S4 prime lenses, fine 35mm film grain, deep focus (f/8 aperture), entire frame sharp, motivated practical lighting, realistic physical mass and momentum, all faces 100% unobstructed, strictly NOT a 3D render, NOT CGI, zero watermark, zero logos."
+  },
+  {
+    "clip_id": "SC-120",
+    "scene_name": "Clearing the Final Limestone Passage",
+    "duration": 8,
+    "refs": [
+      "Heracles",
+      "Theron"
+    ],
+    "source_media_id": "37a10133-8496-49e7-bd77-b5f261c5a43e",
+    "panels": [
+      {
+        "panel": "TOP-LEFT",
+        "time": "0s",
+        "shot_size": "MS",
+        "action": "Medium shot of Heracles wedging his massive shoulders against a jagged limestone slab in the breach, shoving it aside, and speaking."
+      },
+      {
+        "panel": "TOP-RIGHT",
+        "time": "3s",
+        "shot_size": "MCU",
+        "action": "60-degree angle shift to a medium close-up of Heracles kicking the last loose rocks clear to open a wide archway of golden light."
+      },
+      {
+        "panel": "BOTTOM-LEFT",
+        "time": "6s",
+        "shot_size": "MS",
+        "action": "90-degree angle shift to a medium two-shot of Heracles wiping stone grit from his forearms while Theron steps up to the threshold."
+      },
+      {
+        "panel": "BOTTOM-RIGHT",
+        "time": "8s",
+        "shot_size": "CU",
+        "action": "Low-angle close-up of Theron's wooden staff and ragged boots stepping across the crumbled limestone threshold into golden light."
+      }
+    ],
+    "storyboard_prompt": "A film storyboard sheet, 16:9, made of FOUR photographic panels in a tight 2 by 2 grid, separated only by thin straight black lines; each panel is a 16:9 frame; no text, no numbers, no captions. All four panels are cinematic 35mm live-action feature-film stills of Location: fractured limestone archway between the dark labyrinth and the glowing sanctuary. Light: warm golden subterranean light flooding across rough grey limestone rubble. Featuring {{media:37a10133-8496-49e7-bd77-b5f261c5a43e|heracles_clean.jpg}} (38yo giant muscular boatswain, braided dark beard, sea-lion fur mantle 1:1 matching reference), {{media:7c5d994a-dabd-406b-a6c1-b9fa6473a612|theron_clean.jpg}} (58yo stranded navigator hermit, wild gray beard, ragged burlap tunic, wooden staff 1:1 matching reference).\nTOP-LEFT PANEL, second 0s: [MS] Medium shot of Heracles wedging his massive shoulders against a jagged limestone slab in the breach, shoving it aside, and speaking.\nTOP-RIGHT PANEL, second 3s: [MCU] 60-degree angle shift to a medium close-up of Heracles kicking the last loose rocks clear to open a wide archway of golden light.\nBOTTOM-LEFT PANEL, second 6s: [MS] 90-degree angle shift to a medium two-shot of Heracles wiping stone grit from his forearms while Theron steps up to the threshold.\nBOTTOM-RIGHT PANEL, second 8s: [CU] Low-angle close-up of Theron's wooden staff and ragged boots stepping across the crumbled limestone threshold into golden light.\nCinematic feature-film look: shot on ARRI Alexa with Cooke S4 prime lenses, fine 35mm film grain, deep focus (f/8 aperture), entire frame sharp, motivated practical lighting, realistic physical mass and momentum, all faces 100% unobstructed, strictly NOT a 3D render, NOT CGI, zero watermark, zero logos."
+  },
+  {
+    "clip_id": "SC-121",
+    "scene_name": "Crossing the Threshold into the Sanctuary",
+    "duration": 6,
+    "refs": [
+      "Theron",
+      "Nora",
+      "Castor",
+      "Heracles"
+    ],
+    "source_media_id": "7c5d994a-dabd-406b-a6c1-b9fa6473a612",
+    "panels": [
+      {
+        "panel": "TOP-LEFT",
+        "time": "0s",
+        "shot_size": "MS",
+        "action": "Medium shot at the stone archway as Theron turns half-back toward the crew and speaks a solemn warning."
+      },
+      {
+        "panel": "TOP-RIGHT",
+        "time": "2s",
+        "shot_size": "WS",
+        "action": "75-degree angle shift to a wide tracking shot as Theron leads Nora, clean-shaven Castor, and Heracles through the golden archway."
+      },
+      {
+        "panel": "BOTTOM-LEFT",
+        "time": "4s",
+        "shot_size": "MCU",
+        "action": "60-degree angle shift to a medium close-up of Nora and Castor walking forward, their unobstructed faces bathed in warm golden light."
+      },
+      {
+        "panel": "BOTTOM-RIGHT",
+        "time": "6s",
+        "shot_size": "MS",
+        "action": "Medium shot of all four seafarers halting in unison at the edge of the underground stone terrace."
+      }
+    ],
+    "storyboard_prompt": "A film storyboard sheet, 16:9, made of FOUR photographic panels in a tight 2 by 2 grid, separated only by thin straight black lines; each panel is a 16:9 frame; no text, no numbers, no captions. All four panels are cinematic 35mm live-action feature-film stills of Location: tall karst stone archway opening onto an underground cliff terrace. Light: warm, enveloping amber-gold bioluminescence bathing the four seafarers from ahead. Featuring {{media:7c5d994a-dabd-406b-a6c1-b9fa6473a612|theron_clean.jpg}} (58yo stranded navigator hermit, wild gray beard, ragged burlap tunic, wooden staff 1:1 matching reference), {{media:62e117f8-0af7-484e-90a8-f79927105746|nora_clean.jpg}} (28yo female captain, braided auburn-brown hair, navy wool seafarer brigandine 1:1 matching reference), {{media:3152a235-af4f-462b-a78e-02551f826e41|castor_clean.jpg}} (29yo clean-shaven navigator, short cropped jet-black hair, strictly NO beard, dark brown leather cuirass 1:1 matching reference), {{media:37a10133-8496-49e7-bd77-b5f261c5a43e|heracles_clean.jpg}} (38yo giant muscular boatswain, braided dark beard, sea-lion fur mantle 1:1 matching reference).\nTOP-LEFT PANEL, second 0s: [MS] Medium shot at the stone archway as Theron turns half-back toward the crew and speaks a solemn warning.\nTOP-RIGHT PANEL, second 2s: [WS] 75-degree angle shift to a wide tracking shot as Theron leads Nora, clean-shaven Castor, and Heracles through the golden archway.\nBOTTOM-LEFT PANEL, second 4s: [MCU] 60-degree angle shift to a medium close-up of Nora and Castor walking forward, their unobstructed faces bathed in warm golden light.\nBOTTOM-RIGHT PANEL, second 6s: [MS] Medium shot of all four seafarers halting in unison at the edge of the underground stone terrace.\nCinematic feature-film look: shot on ARRI Alexa with Cooke S4 prime lenses, fine 35mm film grain, deep focus (f/8 aperture), entire frame sharp, motivated practical lighting, realistic physical mass and momentum, all faces 100% unobstructed, strictly NOT a 3D render, NOT CGI, zero watermark, zero logos."
+  },
+  {
+    "clip_id": "SC-122",
+    "scene_name": "Grand Reveal of the Golden Tree Sanctuary",
+    "duration": 10,
+    "refs": [
+      "Nora",
+      "Castor",
+      "Heracles",
+      "Theron",
+      "Golden Tree Sanctuary"
+    ],
+    "source_media_id": "62e117f8-0af7-484e-90a8-f79927105746",
+    "panels": [
+      {
+        "panel": "TOP-LEFT",
+        "time": "0s",
+        "shot_size": "MS",
+        "action": "Medium rear-three-quarter shot of Nora, Castor, Heracles, and Theron stepping onto the stone terrace, rimmed in warm golden light."
+      },
+      {
+        "panel": "TOP-RIGHT",
+        "time": "3s",
+        "shot_size": "EWS",
+        "action": "90-degree grand reveal cut to an extreme wide establishing shot of the colossal bioluminescent Golden Tree rising from the subterranean cenote lake."
+      },
+      {
+        "panel": "BOTTOM-LEFT",
+        "time": "7s",
+        "shot_size": "MCU",
+        "action": "120-degree reverse cut to a medium close-up of Nora's unobstructed face illuminated by the golden reflection of the tree."
+      },
+      {
+        "panel": "BOTTOM-RIGHT",
+        "time": "10s",
+        "shot_size": "WS",
+        "action": "Wide low-angle shot framing the four tiny seafarers on the rock terrace dwarfed by the towering golden canopy across the black water."
+      }
+    ],
+    "storyboard_prompt": "A film storyboard sheet, 16:9, made of FOUR photographic panels in a tight 2 by 2 grid, separated only by thin straight black lines; each panel is a 16:9 frame; no text, no numbers, no captions. All four panels are cinematic 35mm live-action feature-film stills of Location: Golden Tree Sanctuary ({{media:9968571a-f57b-4c37-be4c-ae16a41d7aae|golden_tree_sanctuary_clean.jpg}}) — a colossal subterranean karst cenote cavern where the ancient bioluminescent Golden Tree rises from a mirror-black underground lake. Light: radiant warm amber-gold bioluminescence from the colossal canopy and drifting golden pollen. Featuring {{media:62e117f8-0af7-484e-90a8-f79927105746|nora_clean.jpg}} (28yo female captain, braided auburn-brown hair, navy wool seafarer brigandine 1:1 matching reference), {{media:3152a235-af4f-462b-a78e-02551f826e41|castor_clean.jpg}} (29yo clean-shaven navigator, short cropped jet-black hair, strictly NO beard, dark brown leather cuirass 1:1 matching reference), {{media:37a10133-8496-49e7-bd77-b5f261c5a43e|heracles_clean.jpg}} (38yo giant muscular boatswain, braided dark beard, sea-lion fur mantle 1:1 matching reference), {{media:7c5d994a-dabd-406b-a6c1-b9fa6473a612|theron_clean.jpg}} (58yo stranded navigator hermit, wild gray beard, ragged burlap tunic, wooden staff 1:1 matching reference), {{media:9968571a-f57b-4c37-be4c-ae16a41d7aae|golden_tree_sanctuary_clean.jpg}} (subterranean cenote cavern with the colossal bioluminescent Golden Tree rising from a dark underground lake 1:1 matching reference).\nTOP-LEFT PANEL, second 0s: [MS] Medium rear-three-quarter shot of Nora, Castor, Heracles, and Theron stepping onto the stone terrace, rimmed in warm golden light.\nTOP-RIGHT PANEL, second 3s: [EWS] 90-degree grand reveal cut to an extreme wide establishing shot of the colossal bioluminescent Golden Tree rising from the subterranean cenote lake.\nBOTTOM-LEFT PANEL, second 7s: [MCU] 120-degree reverse cut to a medium close-up of Nora's unobstructed face illuminated by the golden reflection of the tree.\nBOTTOM-RIGHT PANEL, second 10s: [WS] Wide low-angle shot framing the four tiny seafarers on the rock terrace dwarfed by the towering golden canopy across the black water.\nCinematic feature-film look: shot on ARRI Alexa with Cooke S4 prime lenses, fine 35mm film grain, deep focus (f/8 aperture), entire frame sharp, motivated practical lighting, realistic physical mass and momentum, all faces 100% unobstructed, strictly NOT a 3D render, NOT CGI, zero watermark, zero logos."
+  }
+]

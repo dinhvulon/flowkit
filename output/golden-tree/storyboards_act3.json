@@ -1,0 +1,1180 @@
+[
+  {
+    "clip_id": "SC-123",
+    "scene_name": "Entering the Subterranean Cenote Sanctuary",
+    "duration": 10,
+    "refs": [
+      "Nora",
+      "Golden Tree Sanctuary"
+    ],
+    "source_media_id": "62e117f8-0af7-484e-90a8-f79927105746",
+    "panels": [
+      {
+        "panel": "TOP-LEFT",
+        "time": "0s",
+        "shot_size": "Low-Angle MS",
+        "action": "[Low-Angle MS] Nora ({{media:62e117f8-0af7-484e-90a8-f79927105746|nora_clean.jpg}}) in active physical motion as Nora, Castor, Heracles, and Theron step out of the dark karst tunnel onto a wide limestone terrace inside a colossal subterranean cenote open to the starry night sky above, face 100% unobstructed."
+      },
+      {
+        "panel": "TOP-RIGHT",
+        "time": "3s",
+        "shot_size": "60-Deg MCU",
+        "action": "[60-Deg MCU] 60-degree angle shift: Golden Tree Sanctuary ({{media:9968571a-f57b-4c37-be4c-ae16a41d7aae|golden_tree_sanctuary_clean.jpg}}) driving the physical reaction as Nora, Castor, Heracles, and Theron step out of the dark karst tunnel onto a wide limestone terrace inside a colossal subterranean cenote open to the starry night sky above."
+      },
+      {
+        "panel": "BOTTOM-LEFT",
+        "time": "7s",
+        "shot_size": "90-Deg WS",
+        "action": "[90-Deg WS] 90-degree angle shift: Nora ({{media:62e117f8-0af7-484e-90a8-f79927105746|nora_clean.jpg}}) advancing the physical action as at the center of the mirror-still crystal pool rises the ancient bioluminescent Golden Tree, bathing their faces in warm amber light."
+      },
+      {
+        "panel": "BOTTOM-RIGHT",
+        "time": "9s",
+        "shot_size": "High-Angle MS",
+        "action": "[High-Angle MS] Forward-momentum micro-hook framing: Golden Tree Sanctuary ({{media:9968571a-f57b-4c37-be4c-ae16a41d7aae|golden_tree_sanctuary_clean.jpg}}) completing the physical transition as at the center of the mirror-still crystal pool rises the ancient bioluminescent Golden Tree, bathing their faces in warm amber light, hands gripping physical props and face 100% unobstructed."
+      }
+    ],
+    "storyboard_prompt": "A film storyboard sheet, 16:9, made of FOUR photographic panels in a tight 2 by 2 grid, separated only by thin straight black lines; each panel is a 16:9 frame; no text, no numbers, no captions. All four panels are cinematic 35mm live-action feature-film stills of Location: colossal subterranean cenote sanctuary open to the starry night sky above, featuring the towering bioluminescent Golden Tree rising from a mirror-still crystal pool. Light: warm living golden-amber luminescence from the Golden Tree blending with cool silver starlight on wet limestone flagstones; deep chiaroscuro. Featuring {{media:62e117f8-0af7-484e-90a8-f79927105746|nora_clean.jpg}} (28-year-old female captain with braided auburn-brown hair, freckled face, wearing navy wool seafarer brigandine armor 1:1 matching reference), {{media:9968571a-f57b-4c37-be4c-ae16a41d7aae|golden_tree_sanctuary_clean.jpg}} (colossal subterranean cenote cavern open to the stars above with the towering bioluminescent Golden Tree rising from a crystal-clear underground pool 1:1 matching reference).\nTOP-LEFT PANEL, second 0s: [Low-Angle MS] Nora ({{media:62e117f8-0af7-484e-90a8-f79927105746|nora_clean.jpg}}) in active physical motion as Nora, Castor, Heracles, and Theron step out of the dark karst tunnel onto a wide limestone terrace inside a colossal subterranean cenote open to the starry night sky above, face 100% unobstructed.\nTOP-RIGHT PANEL, second 3s: [60-Deg MCU] 60-degree angle shift: Golden Tree Sanctuary ({{media:9968571a-f57b-4c37-be4c-ae16a41d7aae|golden_tree_sanctuary_clean.jpg}}) driving the physical reaction as Nora, Castor, Heracles, and Theron step out of the dark karst tunnel onto a wide limestone terrace inside a colossal subterranean cenote open to the starry night sky above.\nBOTTOM-LEFT PANEL, second 7s: [90-Deg WS] 90-degree angle shift: Nora ({{media:62e117f8-0af7-484e-90a8-f79927105746|nora_clean.jpg}}) advancing the physical action as at the center of the mirror-still crystal pool rises the ancient bioluminescent Golden Tree, bathing their faces in warm amber light.\nBOTTOM-RIGHT PANEL, second 9s: [High-Angle MS] Forward-momentum micro-hook framing: Golden Tree Sanctuary ({{media:9968571a-f57b-4c37-be4c-ae16a41d7aae|golden_tree_sanctuary_clean.jpg}}) completing the physical transition as at the center of the mirror-still crystal pool rises the ancient bioluminescent Golden Tree, bathing their faces in warm amber light, hands gripping physical props and face 100% unobstructed.\nCinematic feature-film look: shot on ARRI Alexa with Cooke S4 prime lenses, fine 35mm film grain, deep focus (f/8), motivated practical light, realistic physics, faces 100% unobstructed, strictly NO smoke, strictly NOT a 3D render, NOT CGI, zero watermark, zero logos."
+  },
+  {
+    "clip_id": "SC-124",
+    "scene_name": "Theron Guiding the Crew Along the Crystal Pool",
+    "duration": 8,
+    "refs": [
+      "Theron",
+      "Golden Tree Sanctuary"
+    ],
+    "source_media_id": "7c5d994a-dabd-406b-a6c1-b9fa6473a612",
+    "panels": [
+      {
+        "panel": "TOP-LEFT",
+        "time": "0s",
+        "shot_size": "Three-Quarter MCU",
+        "action": "[Three-Quarter MCU] Theron ({{media:7c5d994a-dabd-406b-a6c1-b9fa6473a612|theron_clean.jpg}}) in active physical motion as Theron lowers his wooden staff into the shallow crystal-clear water at the pool's edge, sending gentle golden ripples across the submerged limestone flagstones, face 100% unobstructed."
+      },
+      {
+        "panel": "TOP-RIGHT",
+        "time": "3s",
+        "shot_size": "75-Deg MS",
+        "action": "[75-Deg MS] 60-degree angle shift: Golden Tree Sanctuary ({{media:9968571a-f57b-4c37-be4c-ae16a41d7aae|golden_tree_sanctuary_clean.jpg}}) driving the physical reaction as Theron lowers his wooden staff into the shallow crystal-clear water at the pool's edge, sending gentle golden ripples across the submerged limestone flagstones."
+      },
+      {
+        "panel": "BOTTOM-LEFT",
+        "time": "6s",
+        "shot_size": "90-Deg CU",
+        "action": "[90-Deg CU] 90-degree angle shift: Theron ({{media:7c5d994a-dabd-406b-a6c1-b9fa6473a612|theron_clean.jpg}}) advancing the physical action as Nora, Castor, and Heracles follow in single file along the mossy stone bank."
+      },
+      {
+        "panel": "BOTTOM-RIGHT",
+        "time": "7s",
+        "shot_size": "Wide Two-Shot",
+        "action": "[Wide Two-Shot] Forward-momentum micro-hook framing: Golden Tree Sanctuary ({{media:9968571a-f57b-4c37-be4c-ae16a41d7aae|golden_tree_sanctuary_clean.jpg}}) completing the physical transition as Nora, Castor, and Heracles follow in single file along the mossy stone bank, hands gripping physical props and face 100% unobstructed."
+      }
+    ],
+    "storyboard_prompt": "A film storyboard sheet, 16:9, made of FOUR photographic panels in a tight 2 by 2 grid, separated only by thin straight black lines; each panel is a 16:9 frame; no text, no numbers, no captions. All four panels are cinematic 35mm live-action feature-film stills of Location: colossal subterranean cenote sanctuary open to the starry night sky above, featuring the towering bioluminescent Golden Tree rising from a mirror-still crystal pool. Light: warm living golden-amber luminescence from the Golden Tree blending with cool silver starlight on wet limestone flagstones; deep chiaroscuro. Featuring {{media:7c5d994a-dabd-406b-a6c1-b9fa6473a612|theron_clean.jpg}} (58-year-old stranded navigator hermit with wild gray beard, ragged burlap tunic, and wooden staff 1:1 matching reference), {{media:9968571a-f57b-4c37-be4c-ae16a41d7aae|golden_tree_sanctuary_clean.jpg}} (colossal subterranean cenote cavern open to the stars above with the towering bioluminescent Golden Tree rising from a crystal-clear underground pool 1:1 matching reference).\nTOP-LEFT PANEL, second 0s: [Three-Quarter MCU] Theron ({{media:7c5d994a-dabd-406b-a6c1-b9fa6473a612|theron_clean.jpg}}) in active physical motion as Theron lowers his wooden staff into the shallow crystal-clear water at the pool's edge, sending gentle golden ripples across the submerged limestone flagstones, face 100% unobstructed.\nTOP-RIGHT PANEL, second 3s: [75-Deg MS] 60-degree angle shift: Golden Tree Sanctuary ({{media:9968571a-f57b-4c37-be4c-ae16a41d7aae|golden_tree_sanctuary_clean.jpg}}) driving the physical reaction as Theron lowers his wooden staff into the shallow crystal-clear water at the pool's edge, sending gentle golden ripples across the submerged limestone flagstones.\nBOTTOM-LEFT PANEL, second 6s: [90-Deg CU] 90-degree angle shift: Theron ({{media:7c5d994a-dabd-406b-a6c1-b9fa6473a612|theron_clean.jpg}}) advancing the physical action as Nora, Castor, and Heracles follow in single file along the mossy stone bank.\nBOTTOM-RIGHT PANEL, second 7s: [Wide Two-Shot] Forward-momentum micro-hook framing: Golden Tree Sanctuary ({{media:9968571a-f57b-4c37-be4c-ae16a41d7aae|golden_tree_sanctuary_clean.jpg}}) completing the physical transition as Nora, Castor, and Heracles follow in single file along the mossy stone bank, hands gripping physical props and face 100% unobstructed.\nCinematic feature-film look: shot on ARRI Alexa with Cooke S4 prime lenses, fine 35mm film grain, deep focus (f/8), motivated practical light, realistic physics, faces 100% unobstructed, strictly NO smoke, strictly NOT a 3D render, NOT CGI, zero watermark, zero logos."
+  },
+  {
+    "clip_id": "SC-125",
+    "scene_name": "The Monumental Canopy of the Golden Tree",
+    "duration": 10,
+    "refs": [
+      "Golden Tree Sanctuary"
+    ],
+    "source_media_id": "9968571a-f57b-4c37-be4c-ae16a41d7aae",
+    "panels": [
+      {
+        "panel": "TOP-LEFT",
+        "time": "0s",
+        "shot_size": "Wide Dynamic Action Shot",
+        "action": "[Wide Dynamic Action Shot] Golden Tree Sanctuary ({{media:9968571a-f57b-4c37-be4c-ae16a41d7aae|golden_tree_sanctuary_clean.jpg}}) in active physical motion as wide low-angle view inside the subterranean cenote as the colossal Golden Tree stretches its gnarled metallic-gold roots into the crystal pool and its glowing amber foliage toward the open sky-hole above, face 100% unobstructed."
+      },
+      {
+        "panel": "TOP-RIGHT",
+        "time": "3s",
+        "shot_size": "60-Deg Low-Angle MCU",
+        "action": "[60-Deg Low-Angle MCU] 60-degree angle shift: Golden Tree Sanctuary ({{media:9968571a-f57b-4c37-be4c-ae16a41d7aae|golden_tree_sanctuary_clean.jpg}}) driving the physical reaction as wide low-angle view inside the subterranean cenote as the colossal Golden Tree stretches its gnarled metallic-gold roots into the crystal pool and its glowing amber foliage toward the open sky-hole above."
+      },
+      {
+        "panel": "BOTTOM-LEFT",
+        "time": "7s",
+        "shot_size": "90-Deg Insert CU",
+        "action": "[90-Deg Insert CU] 90-degree angle shift: Golden Tree Sanctuary ({{media:9968571a-f57b-4c37-be4c-ae16a41d7aae|golden_tree_sanctuary_clean.jpg}}) advancing the physical action as Nora and her crew stand at the water's edge in reverent silence."
+      },
+      {
+        "panel": "BOTTOM-RIGHT",
+        "time": "9s",
+        "shot_size": "Medium Tracking Shot",
+        "action": "[Medium Tracking Shot] Forward-momentum micro-hook framing: Golden Tree Sanctuary ({{media:9968571a-f57b-4c37-be4c-ae16a41d7aae|golden_tree_sanctuary_clean.jpg}}) completing the physical transition as Nora and her crew stand at the water's edge in reverent silence, hands gripping physical props and face 100% unobstructed."
+      }
+    ],
+    "storyboard_prompt": "A film storyboard sheet, 16:9, made of FOUR photographic panels in a tight 2 by 2 grid, separated only by thin straight black lines; each panel is a 16:9 frame; no text, no numbers, no captions. All four panels are cinematic 35mm live-action feature-film stills of Location: colossal subterranean cenote sanctuary open to the starry night sky above, featuring the towering bioluminescent Golden Tree rising from a mirror-still crystal pool. Light: warm living golden-amber luminescence from the Golden Tree blending with cool silver starlight on wet limestone flagstones; deep chiaroscuro. Featuring {{media:9968571a-f57b-4c37-be4c-ae16a41d7aae|golden_tree_sanctuary_clean.jpg}} (colossal subterranean cenote cavern open to the stars above with the towering bioluminescent Golden Tree rising from a crystal-clear underground pool 1:1 matching reference).\nTOP-LEFT PANEL, second 0s: [Wide Dynamic Action Shot] Golden Tree Sanctuary ({{media:9968571a-f57b-4c37-be4c-ae16a41d7aae|golden_tree_sanctuary_clean.jpg}}) in active physical motion as wide low-angle view inside the subterranean cenote as the colossal Golden Tree stretches its gnarled metallic-gold roots into the crystal pool and its glowing amber foliage toward the open sky-hole above, face 100% unobstructed.\nTOP-RIGHT PANEL, second 3s: [60-Deg Low-Angle MCU] 60-degree angle shift: Golden Tree Sanctuary ({{media:9968571a-f57b-4c37-be4c-ae16a41d7aae|golden_tree_sanctuary_clean.jpg}}) driving the physical reaction as wide low-angle view inside the subterranean cenote as the colossal Golden Tree stretches its gnarled metallic-gold roots into the crystal pool and its glowing amber foliage toward the open sky-hole above.\nBOTTOM-LEFT PANEL, second 7s: [90-Deg Insert CU] 90-degree angle shift: Golden Tree Sanctuary ({{media:9968571a-f57b-4c37-be4c-ae16a41d7aae|golden_tree_sanctuary_clean.jpg}}) advancing the physical action as Nora and her crew stand at the water's edge in reverent silence.\nBOTTOM-RIGHT PANEL, second 9s: [Medium Tracking Shot] Forward-momentum micro-hook framing: Golden Tree Sanctuary ({{media:9968571a-f57b-4c37-be4c-ae16a41d7aae|golden_tree_sanctuary_clean.jpg}}) completing the physical transition as Nora and her crew stand at the water's edge in reverent silence, hands gripping physical props and face 100% unobstructed.\nCinematic feature-film look: shot on ARRI Alexa with Cooke S4 prime lenses, fine 35mm film grain, deep focus (f/8), motivated practical light, realistic physics, faces 100% unobstructed, strictly NO smoke, strictly NOT a 3D render, NOT CGI, zero watermark, zero logos."
+  },
+  {
+    "clip_id": "SC-126",
+    "scene_name": "Heracles Dropping His Iron Crowbar in Awe",
+    "duration": 8,
+    "refs": [
+      "Heracles",
+      "Golden Tree Sanctuary"
+    ],
+    "source_media_id": "37a10133-8496-49e7-bd77-b5f261c5a43e",
+    "panels": [
+      {
+        "panel": "TOP-LEFT",
+        "time": "0s",
+        "shot_size": "OTS Medium Shot",
+        "action": "[OTS Medium Shot] Heracles ({{media:37a10133-8496-49e7-bd77-b5f261c5a43e|heracles_clean.jpg}}) in active physical motion as giant Heracles stares up at the shimmering golden boughs chime softly in the cavern draft, letting his heavy iron crowbar slip from his fingers onto the mossy stones, face 100% unobstructed."
+      },
+      {
+        "panel": "TOP-RIGHT",
+        "time": "3s",
+        "shot_size": "60-Deg Reverse MCU",
+        "action": "[60-Deg Reverse MCU] 60-degree angle shift: Golden Tree Sanctuary ({{media:9968571a-f57b-4c37-be4c-ae16a41d7aae|golden_tree_sanctuary_clean.jpg}}) driving the physical reaction as giant Heracles stares up at the shimmering golden boughs chime softly in the cavern draft, letting his heavy iron crowbar slip from his fingers onto the mossy stones."
+      },
+      {
+        "panel": "BOTTOM-LEFT",
+        "time": "6s",
+        "shot_size": "90-Deg Wide Framing",
+        "action": "[90-Deg Wide Framing] 90-degree angle shift: Heracles ({{media:37a10133-8496-49e7-bd77-b5f261c5a43e|heracles_clean.jpg}}) advancing the physical action as warm golden light reflects in his wide eyes as he kneels on one knee beside the pool."
+      },
+      {
+        "panel": "BOTTOM-RIGHT",
+        "time": "7s",
+        "shot_size": "Close-Up Detail Shot",
+        "action": "[Close-Up Detail Shot] Forward-momentum micro-hook framing: Golden Tree Sanctuary ({{media:9968571a-f57b-4c37-be4c-ae16a41d7aae|golden_tree_sanctuary_clean.jpg}}) completing the physical transition as warm golden light reflects in his wide eyes as he kneels on one knee beside the pool, hands gripping physical props and face 100% unobstructed."
+      }
+    ],
+    "storyboard_prompt": "A film storyboard sheet, 16:9, made of FOUR photographic panels in a tight 2 by 2 grid, separated only by thin straight black lines; each panel is a 16:9 frame; no text, no numbers, no captions. All four panels are cinematic 35mm live-action feature-film stills of Location: colossal subterranean cenote sanctuary open to the starry night sky above, featuring the towering bioluminescent Golden Tree rising from a mirror-still crystal pool. Light: warm living golden-amber luminescence from the Golden Tree blending with cool silver starlight on wet limestone flagstones; deep chiaroscuro. Featuring {{media:37a10133-8496-49e7-bd77-b5f261c5a43e|heracles_clean.jpg}} (38-year-old giant muscular boatswain with cropped dark-black hair, thick braided dark-black beard, scarred bare muscular arms, and sea-lion fur mantle 1:1 matching reference), {{media:9968571a-f57b-4c37-be4c-ae16a41d7aae|golden_tree_sanctuary_clean.jpg}} (colossal subterranean cenote cavern open to the stars above with the towering bioluminescent Golden Tree rising from a crystal-clear underground pool 1:1 matching reference).\nTOP-LEFT PANEL, second 0s: [OTS Medium Shot] Heracles ({{media:37a10133-8496-49e7-bd77-b5f261c5a43e|heracles_clean.jpg}}) in active physical motion as giant Heracles stares up at the shimmering golden boughs chime softly in the cavern draft, letting his heavy iron crowbar slip from his fingers onto the mossy stones, face 100% unobstructed.\nTOP-RIGHT PANEL, second 3s: [60-Deg Reverse MCU] 60-degree angle shift: Golden Tree Sanctuary ({{media:9968571a-f57b-4c37-be4c-ae16a41d7aae|golden_tree_sanctuary_clean.jpg}}) driving the physical reaction as giant Heracles stares up at the shimmering golden boughs chime softly in the cavern draft, letting his heavy iron crowbar slip from his fingers onto the mossy stones.\nBOTTOM-LEFT PANEL, second 6s: [90-Deg Wide Framing] 90-degree angle shift: Heracles ({{media:37a10133-8496-49e7-bd77-b5f261c5a43e|heracles_clean.jpg}}) advancing the physical action as warm golden light reflects in his wide eyes as he kneels on one knee beside the pool.\nBOTTOM-RIGHT PANEL, second 7s: [Close-Up Detail Shot] Forward-momentum micro-hook framing: Golden Tree Sanctuary ({{media:9968571a-f57b-4c37-be4c-ae16a41d7aae|golden_tree_sanctuary_clean.jpg}}) completing the physical transition as warm golden light reflects in his wide eyes as he kneels on one knee beside the pool, hands gripping physical props and face 100% unobstructed.\nCinematic feature-film look: shot on ARRI Alexa with Cooke S4 prime lenses, fine 35mm film grain, deep focus (f/8), motivated practical light, realistic physics, faces 100% unobstructed, strictly NO smoke, strictly NOT a 3D render, NOT CGI, zero watermark, zero logos."
+  },
+  {
+    "clip_id": "SC-127",
+    "scene_name": "Drifting Golden Pollen Embers Across the Sanctuary",
+    "duration": 8,
+    "refs": [
+      "Golden Tree Sanctuary"
+    ],
+    "source_media_id": "9968571a-f57b-4c37-be4c-ae16a41d7aae",
+    "panels": [
+      {
+        "panel": "TOP-LEFT",
+        "time": "0s",
+        "shot_size": "Low-Angle MS",
+        "action": "[Low-Angle MS] Golden Tree Sanctuary ({{media:9968571a-f57b-4c37-be4c-ae16a41d7aae|golden_tree_sanctuary_clean.jpg}}) in active physical motion as luminous golden pollen motes drift down from the ancient canopy and float across the mirror-like underground water around the crew's boots, face 100% unobstructed."
+      },
+      {
+        "panel": "TOP-RIGHT",
+        "time": "3s",
+        "shot_size": "60-Deg MCU",
+        "action": "[60-Deg MCU] 60-degree angle shift: Golden Tree Sanctuary ({{media:9968571a-f57b-4c37-be4c-ae16a41d7aae|golden_tree_sanctuary_clean.jpg}}) driving the physical reaction as luminous golden pollen motes drift down from the ancient canopy and float across the mirror-like underground water around the crew's boots."
+      },
+      {
+        "panel": "BOTTOM-LEFT",
+        "time": "6s",
+        "shot_size": "90-Deg WS",
+        "action": "[90-Deg WS] 90-degree angle shift: Golden Tree Sanctuary ({{media:9968571a-f57b-4c37-be4c-ae16a41d7aae|golden_tree_sanctuary_clean.jpg}}) advancing the physical action as Nora raises her open gloved hand as a glowing ember settles weightlessly on her palm."
+      },
+      {
+        "panel": "BOTTOM-RIGHT",
+        "time": "7s",
+        "shot_size": "High-Angle MS",
+        "action": "[High-Angle MS] Forward-momentum micro-hook framing: Golden Tree Sanctuary ({{media:9968571a-f57b-4c37-be4c-ae16a41d7aae|golden_tree_sanctuary_clean.jpg}}) completing the physical transition as Nora raises her open gloved hand as a glowing ember settles weightlessly on her palm, hands gripping physical props and face 100% unobstructed."
+      }
+    ],
+    "storyboard_prompt": "A film storyboard sheet, 16:9, made of FOUR photographic panels in a tight 2 by 2 grid, separated only by thin straight black lines; each panel is a 16:9 frame; no text, no numbers, no captions. All four panels are cinematic 35mm live-action feature-film stills of Location: colossal subterranean cenote sanctuary open to the starry night sky above, featuring the towering bioluminescent Golden Tree rising from a mirror-still crystal pool. Light: warm living golden-amber luminescence from the Golden Tree blending with cool silver starlight on wet limestone flagstones; deep chiaroscuro. Featuring {{media:9968571a-f57b-4c37-be4c-ae16a41d7aae|golden_tree_sanctuary_clean.jpg}} (colossal subterranean cenote cavern open to the stars above with the towering bioluminescent Golden Tree rising from a crystal-clear underground pool 1:1 matching reference).\nTOP-LEFT PANEL, second 0s: [Low-Angle MS] Golden Tree Sanctuary ({{media:9968571a-f57b-4c37-be4c-ae16a41d7aae|golden_tree_sanctuary_clean.jpg}}) in active physical motion as luminous golden pollen motes drift down from the ancient canopy and float across the mirror-like underground water around the crew's boots, face 100% unobstructed.\nTOP-RIGHT PANEL, second 3s: [60-Deg MCU] 60-degree angle shift: Golden Tree Sanctuary ({{media:9968571a-f57b-4c37-be4c-ae16a41d7aae|golden_tree_sanctuary_clean.jpg}}) driving the physical reaction as luminous golden pollen motes drift down from the ancient canopy and float across the mirror-like underground water around the crew's boots.\nBOTTOM-LEFT PANEL, second 6s: [90-Deg WS] 90-degree angle shift: Golden Tree Sanctuary ({{media:9968571a-f57b-4c37-be4c-ae16a41d7aae|golden_tree_sanctuary_clean.jpg}}) advancing the physical action as Nora raises her open gloved hand as a glowing ember settles weightlessly on her palm.\nBOTTOM-RIGHT PANEL, second 7s: [High-Angle MS] Forward-momentum micro-hook framing: Golden Tree Sanctuary ({{media:9968571a-f57b-4c37-be4c-ae16a41d7aae|golden_tree_sanctuary_clean.jpg}}) completing the physical transition as Nora raises her open gloved hand as a glowing ember settles weightlessly on her palm, hands gripping physical props and face 100% unobstructed.\nCinematic feature-film look: shot on ARRI Alexa with Cooke S4 prime lenses, fine 35mm film grain, deep focus (f/8), motivated practical light, realistic physics, faces 100% unobstructed, strictly NO smoke, strictly NOT a 3D render, NOT CGI, zero watermark, zero logos."
+  },
+  {
+    "clip_id": "SC-128",
+    "scene_name": "Castor's Temptation Before the Golden Roots",
+    "duration": 8,
+    "refs": [
+      "Castor",
+      "Golden Tree Sanctuary"
+    ],
+    "source_media_id": "3152a235-af4f-462b-a78e-02551f826e41",
+    "panels": [
+      {
+        "panel": "TOP-LEFT",
+        "time": "0s",
+        "shot_size": "Three-Quarter MCU",
+        "action": "[Three-Quarter MCU] Castor ({{media:3152a235-af4f-462b-a78e-02551f826e41|castor_clean.jpg}}) in active physical motion as mesmerized by the metallic sheen, Castor steps ahead of the group onto a submerged root-shelf and draws his bronze dagger, reaching toward a low hanging golden branch, face 100% unobstructed."
+      },
+      {
+        "panel": "TOP-RIGHT",
+        "time": "3s",
+        "shot_size": "75-Deg MS",
+        "action": "[75-Deg MS] 60-degree angle shift: Golden Tree Sanctuary ({{media:9968571a-f57b-4c37-be4c-ae16a41d7aae|golden_tree_sanctuary_clean.jpg}}) driving the physical reaction as mesmerized by the metallic sheen, Castor steps ahead of the group onto a submerged root-shelf and draws his bronze dagger, reaching toward a low hanging golden branch."
+      },
+      {
+        "panel": "BOTTOM-LEFT",
+        "time": "6s",
+        "shot_size": "90-Deg CU",
+        "action": "[90-Deg CU] 90-degree angle shift: Castor ({{media:3152a235-af4f-462b-a78e-02551f826e41|castor_clean.jpg}}) advancing the physical action as the golden reflection burns intensely in his pupils as his blade touches the bark."
+      },
+      {
+        "panel": "BOTTOM-RIGHT",
+        "time": "7s",
+        "shot_size": "Wide Two-Shot",
+        "action": "[Wide Two-Shot] Forward-momentum micro-hook framing: Golden Tree Sanctuary ({{media:9968571a-f57b-4c37-be4c-ae16a41d7aae|golden_tree_sanctuary_clean.jpg}}) completing the physical transition as the golden reflection burns intensely in his pupils as his blade touches the bark, hands gripping physical props and face 100% unobstructed."
+      }
+    ],
+    "storyboard_prompt": "A film storyboard sheet, 16:9, made of FOUR photographic panels in a tight 2 by 2 grid, separated only by thin straight black lines; each panel is a 16:9 frame; no text, no numbers, no captions. All four panels are cinematic 35mm live-action feature-film stills of Location: colossal subterranean cenote sanctuary open to the starry night sky above, featuring the towering bioluminescent Golden Tree rising from a mirror-still crystal pool. Light: warm living golden-amber luminescence from the Golden Tree blending with cool silver starlight on wet limestone flagstones; deep chiaroscuro. Featuring {{media:3152a235-af4f-462b-a78e-02551f826e41|castor_clean.jpg}} (29-year-old clean-shaven navigator with short cropped jet-black hair, strictly NO beard, salt-stained dark brown leather cuirass and arrow quiver 1:1 matching reference), {{media:9968571a-f57b-4c37-be4c-ae16a41d7aae|golden_tree_sanctuary_clean.jpg}} (colossal subterranean cenote cavern open to the stars above with the towering bioluminescent Golden Tree rising from a crystal-clear underground pool 1:1 matching reference).\nTOP-LEFT PANEL, second 0s: [Three-Quarter MCU] Castor ({{media:3152a235-af4f-462b-a78e-02551f826e41|castor_clean.jpg}}) in active physical motion as mesmerized by the metallic sheen, Castor steps ahead of the group onto a submerged root-shelf and draws his bronze dagger, reaching toward a low hanging golden branch, face 100% unobstructed.\nTOP-RIGHT PANEL, second 3s: [75-Deg MS] 60-degree angle shift: Golden Tree Sanctuary ({{media:9968571a-f57b-4c37-be4c-ae16a41d7aae|golden_tree_sanctuary_clean.jpg}}) driving the physical reaction as mesmerized by the metallic sheen, Castor steps ahead of the group onto a submerged root-shelf and draws his bronze dagger, reaching toward a low hanging golden branch.\nBOTTOM-LEFT PANEL, second 6s: [90-Deg CU] 90-degree angle shift: Castor ({{media:3152a235-af4f-462b-a78e-02551f826e41|castor_clean.jpg}}) advancing the physical action as the golden reflection burns intensely in his pupils as his blade touches the bark.\nBOTTOM-RIGHT PANEL, second 7s: [Wide Two-Shot] Forward-momentum micro-hook framing: Golden Tree Sanctuary ({{media:9968571a-f57b-4c37-be4c-ae16a41d7aae|golden_tree_sanctuary_clean.jpg}}) completing the physical transition as the golden reflection burns intensely in his pupils as his blade touches the bark, hands gripping physical props and face 100% unobstructed.\nCinematic feature-film look: shot on ARRI Alexa with Cooke S4 prime lenses, fine 35mm film grain, deep focus (f/8), motivated practical light, realistic physics, faces 100% unobstructed, strictly NO smoke, strictly NOT a 3D render, NOT CGI, zero watermark, zero logos."
+  },
+  {
+    "clip_id": "SC-129",
+    "scene_name": "Theron's Urgent Warning — Look Beneath the Water",
+    "duration": 8,
+    "refs": [
+      "Castor",
+      "Theron",
+      "Golden Tree Sanctuary"
+    ],
+    "source_media_id": "3152a235-af4f-462b-a78e-02551f826e41",
+    "panels": [
+      {
+        "panel": "TOP-LEFT",
+        "time": "0s",
+        "shot_size": "Wide Dynamic Action Shot",
+        "action": "[Wide Dynamic Action Shot] Castor ({{media:3152a235-af4f-462b-a78e-02551f826e41|castor_clean.jpg}}) in active physical motion as Theron lunges forward and slams his gnarled wooden staff across Castor's forearm to block the dagger, pointing sharply down into the crystal-clear depths of the pool, face 100% unobstructed."
+      },
+      {
+        "panel": "TOP-RIGHT",
+        "time": "3s",
+        "shot_size": "60-Deg Low-Angle MCU",
+        "action": "[60-Deg Low-Angle MCU] 60-degree angle shift: Theron ({{media:7c5d994a-dabd-406b-a6c1-b9fa6473a612|theron_clean.jpg}}) driving the physical reaction as Theron lunges forward and slams his gnarled wooden staff across Castor's forearm to block the dagger, pointing sharply down into the crystal-clear depths of the pool."
+      },
+      {
+        "panel": "BOTTOM-LEFT",
+        "time": "6s",
+        "shot_size": "90-Deg Insert CU",
+        "action": "[90-Deg Insert CU] 90-degree angle shift: Castor ({{media:3152a235-af4f-462b-a78e-02551f826e41|castor_clean.jpg}}) advancing the physical action as Nora steps beside Castor and peers down through the transparent water."
+      },
+      {
+        "panel": "BOTTOM-RIGHT",
+        "time": "7s",
+        "shot_size": "Medium Tracking Shot",
+        "action": "[Medium Tracking Shot] Forward-momentum micro-hook framing: Theron ({{media:7c5d994a-dabd-406b-a6c1-b9fa6473a612|theron_clean.jpg}}) completing the physical transition as Nora steps beside Castor and peers down through the transparent water, hands gripping physical props and face 100% unobstructed."
+      }
+    ],
+    "storyboard_prompt": "A film storyboard sheet, 16:9, made of FOUR photographic panels in a tight 2 by 2 grid, separated only by thin straight black lines; each panel is a 16:9 frame; no text, no numbers, no captions. All four panels are cinematic 35mm live-action feature-film stills of Location: colossal subterranean cenote sanctuary open to the starry night sky above, featuring the towering bioluminescent Golden Tree rising from a mirror-still crystal pool. Light: warm living golden-amber luminescence from the Golden Tree blending with cool silver starlight on wet limestone flagstones; deep chiaroscuro. Featuring {{media:3152a235-af4f-462b-a78e-02551f826e41|castor_clean.jpg}} (29-year-old clean-shaven navigator with short cropped jet-black hair, strictly NO beard, salt-stained dark brown leather cuirass and arrow quiver 1:1 matching reference), {{media:7c5d994a-dabd-406b-a6c1-b9fa6473a612|theron_clean.jpg}} (58-year-old stranded navigator hermit with wild gray beard, ragged burlap tunic, and wooden staff 1:1 matching reference), {{media:9968571a-f57b-4c37-be4c-ae16a41d7aae|golden_tree_sanctuary_clean.jpg}} (colossal subterranean cenote cavern open to the stars above with the towering bioluminescent Golden Tree rising from a crystal-clear underground pool 1:1 matching reference).\nTOP-LEFT PANEL, second 0s: [Wide Dynamic Action Shot] Castor ({{media:3152a235-af4f-462b-a78e-02551f826e41|castor_clean.jpg}}) in active physical motion as Theron lunges forward and slams his gnarled wooden staff across Castor's forearm to block the dagger, pointing sharply down into the crystal-clear depths of the pool, face 100% unobstructed.\nTOP-RIGHT PANEL, second 3s: [60-Deg Low-Angle MCU] 60-degree angle shift: Theron ({{media:7c5d994a-dabd-406b-a6c1-b9fa6473a612|theron_clean.jpg}}) driving the physical reaction as Theron lunges forward and slams his gnarled wooden staff across Castor's forearm to block the dagger, pointing sharply down into the crystal-clear depths of the pool.\nBOTTOM-LEFT PANEL, second 6s: [90-Deg Insert CU] 90-degree angle shift: Castor ({{media:3152a235-af4f-462b-a78e-02551f826e41|castor_clean.jpg}}) advancing the physical action as Nora steps beside Castor and peers down through the transparent water.\nBOTTOM-RIGHT PANEL, second 7s: [Medium Tracking Shot] Forward-momentum micro-hook framing: Theron ({{media:7c5d994a-dabd-406b-a6c1-b9fa6473a612|theron_clean.jpg}}) completing the physical transition as Nora steps beside Castor and peers down through the transparent water, hands gripping physical props and face 100% unobstructed.\nCinematic feature-film look: shot on ARRI Alexa with Cooke S4 prime lenses, fine 35mm film grain, deep focus (f/8), motivated practical light, realistic physics, faces 100% unobstructed, strictly NO smoke, strictly NOT a 3D render, NOT CGI, zero watermark, zero logos."
+  },
+  {
+    "clip_id": "SC-130",
+    "scene_name": "The Petrified Golden Skeletons on the Pool Floor",
+    "duration": 10,
+    "refs": [
+      "Golden Tree Sanctuary"
+    ],
+    "source_media_id": "9968571a-f57b-4c37-be4c-ae16a41d7aae",
+    "panels": [
+      {
+        "panel": "TOP-LEFT",
+        "time": "0s",
+        "shot_size": "OTS Medium Shot",
+        "action": "[OTS Medium Shot] Golden Tree Sanctuary ({{media:9968571a-f57b-4c37-be4c-ae16a41d7aae|golden_tree_sanctuary_clean.jpg}}) in active physical motion as beneath the crystal-clear water of the cenote pool lie dozens of ancient armored conquistadors and pirates turned entirely into solid, immobile gold statues, their hands frozen reaching for the roots, face 100% unobstructed."
+      },
+      {
+        "panel": "TOP-RIGHT",
+        "time": "3s",
+        "shot_size": "60-Deg Reverse MCU",
+        "action": "[60-Deg Reverse MCU] 60-degree angle shift: Golden Tree Sanctuary ({{media:9968571a-f57b-4c37-be4c-ae16a41d7aae|golden_tree_sanctuary_clean.jpg}}) driving the physical reaction as beneath the crystal-clear water of the cenote pool lie dozens of ancient armored conquistadors and pirates turned entirely into solid, immobile gold statues, their hands frozen reaching for the roots."
+      },
+      {
+        "panel": "BOTTOM-LEFT",
+        "time": "7s",
+        "shot_size": "90-Deg Wide Framing",
+        "action": "[90-Deg Wide Framing] 90-degree angle shift: Golden Tree Sanctuary ({{media:9968571a-f57b-4c37-be4c-ae16a41d7aae|golden_tree_sanctuary_clean.jpg}}) advancing the physical action as the golden light of the tree gleams coldly off their petrified skulls."
+      },
+      {
+        "panel": "BOTTOM-RIGHT",
+        "time": "9s",
+        "shot_size": "Close-Up Detail Shot",
+        "action": "[Close-Up Detail Shot] Forward-momentum micro-hook framing: Golden Tree Sanctuary ({{media:9968571a-f57b-4c37-be4c-ae16a41d7aae|golden_tree_sanctuary_clean.jpg}}) completing the physical transition as the golden light of the tree gleams coldly off their petrified skulls, hands gripping physical props and face 100% unobstructed."
+      }
+    ],
+    "storyboard_prompt": "A film storyboard sheet, 16:9, made of FOUR photographic panels in a tight 2 by 2 grid, separated only by thin straight black lines; each panel is a 16:9 frame; no text, no numbers, no captions. All four panels are cinematic 35mm live-action feature-film stills of Location: colossal subterranean cenote sanctuary open to the starry night sky above, featuring the towering bioluminescent Golden Tree rising from a mirror-still crystal pool. Light: warm living golden-amber luminescence from the Golden Tree blending with cool silver starlight on wet limestone flagstones; deep chiaroscuro. Featuring {{media:9968571a-f57b-4c37-be4c-ae16a41d7aae|golden_tree_sanctuary_clean.jpg}} (colossal subterranean cenote cavern open to the stars above with the towering bioluminescent Golden Tree rising from a crystal-clear underground pool 1:1 matching reference).\nTOP-LEFT PANEL, second 0s: [OTS Medium Shot] Golden Tree Sanctuary ({{media:9968571a-f57b-4c37-be4c-ae16a41d7aae|golden_tree_sanctuary_clean.jpg}}) in active physical motion as beneath the crystal-clear water of the cenote pool lie dozens of ancient armored conquistadors and pirates turned entirely into solid, immobile gold statues, their hands frozen reaching for the roots, face 100% unobstructed.\nTOP-RIGHT PANEL, second 3s: [60-Deg Reverse MCU] 60-degree angle shift: Golden Tree Sanctuary ({{media:9968571a-f57b-4c37-be4c-ae16a41d7aae|golden_tree_sanctuary_clean.jpg}}) driving the physical reaction as beneath the crystal-clear water of the cenote pool lie dozens of ancient armored conquistadors and pirates turned entirely into solid, immobile gold statues, their hands frozen reaching for the roots.\nBOTTOM-LEFT PANEL, second 7s: [90-Deg Wide Framing] 90-degree angle shift: Golden Tree Sanctuary ({{media:9968571a-f57b-4c37-be4c-ae16a41d7aae|golden_tree_sanctuary_clean.jpg}}) advancing the physical action as the golden light of the tree gleams coldly off their petrified skulls.\nBOTTOM-RIGHT PANEL, second 9s: [Close-Up Detail Shot] Forward-momentum micro-hook framing: Golden Tree Sanctuary ({{media:9968571a-f57b-4c37-be4c-ae16a41d7aae|golden_tree_sanctuary_clean.jpg}}) completing the physical transition as the golden light of the tree gleams coldly off their petrified skulls, hands gripping physical props and face 100% unobstructed.\nCinematic feature-film look: shot on ARRI Alexa with Cooke S4 prime lenses, fine 35mm film grain, deep focus (f/8), motivated practical light, realistic physics, faces 100% unobstructed, strictly NO smoke, strictly NOT a 3D render, NOT CGI, zero watermark, zero logos."
+  },
+  {
+    "clip_id": "SC-131",
+    "scene_name": "Theron Reveals the Curse of the Golden Tree",
+    "duration": 8,
+    "refs": [
+      "Nora",
+      "Castor",
+      "Theron",
+      "Golden Tree Sanctuary"
+    ],
+    "source_media_id": "62e117f8-0af7-484e-90a8-f79927105746",
+    "panels": [
+      {
+        "panel": "TOP-LEFT",
+        "time": "0s",
+        "shot_size": "Low-Angle MS",
+        "action": "[Low-Angle MS] Nora ({{media:62e117f8-0af7-484e-90a8-f79927105746|nora_clean.jpg}}) in active physical motion as Theron kneels at the water's edge and taps the submerged golden helmet of a petrified warrior with his wooden staff while speaking to Nora and Castor, face 100% unobstructed."
+      },
+      {
+        "panel": "TOP-RIGHT",
+        "time": "3s",
+        "shot_size": "60-Deg MCU",
+        "action": "[60-Deg MCU] 60-degree angle shift: Castor ({{media:3152a235-af4f-462b-a78e-02551f826e41|castor_clean.jpg}}) driving the physical reaction as Theron kneels at the water's edge and taps the submerged golden helmet of a petrified warrior with his wooden staff while speaking to Nora and Castor."
+      },
+      {
+        "panel": "BOTTOM-LEFT",
+        "time": "6s",
+        "shot_size": "90-Deg WS",
+        "action": "[90-Deg WS] 90-degree angle shift: Nora ({{media:62e117f8-0af7-484e-90a8-f79927105746|nora_clean.jpg}}) advancing the physical action as Nora grips Castor's shoulder firmly as the truth of the tree's lethal defense sinks in."
+      },
+      {
+        "panel": "BOTTOM-RIGHT",
+        "time": "7s",
+        "shot_size": "High-Angle MS",
+        "action": "[High-Angle MS] Forward-momentum micro-hook framing: Castor ({{media:3152a235-af4f-462b-a78e-02551f826e41|castor_clean.jpg}}) completing the physical transition as Nora grips Castor's shoulder firmly as the truth of the tree's lethal defense sinks in, hands gripping physical props and face 100% unobstructed."
+      }
+    ],
+    "storyboard_prompt": "A film storyboard sheet, 16:9, made of FOUR photographic panels in a tight 2 by 2 grid, separated only by thin straight black lines; each panel is a 16:9 frame; no text, no numbers, no captions. All four panels are cinematic 35mm live-action feature-film stills of Location: colossal subterranean cenote sanctuary open to the starry night sky above, featuring the towering bioluminescent Golden Tree rising from a mirror-still crystal pool. Light: warm living golden-amber luminescence from the Golden Tree blending with cool silver starlight on wet limestone flagstones; deep chiaroscuro. Featuring {{media:62e117f8-0af7-484e-90a8-f79927105746|nora_clean.jpg}} (28-year-old female captain with braided auburn-brown hair, freckled face, wearing navy wool seafarer brigandine armor 1:1 matching reference), {{media:3152a235-af4f-462b-a78e-02551f826e41|castor_clean.jpg}} (29-year-old clean-shaven navigator with short cropped jet-black hair, strictly NO beard, salt-stained dark brown leather cuirass and arrow quiver 1:1 matching reference), {{media:7c5d994a-dabd-406b-a6c1-b9fa6473a612|theron_clean.jpg}} (58-year-old stranded navigator hermit with wild gray beard, ragged burlap tunic, and wooden staff 1:1 matching reference), {{media:9968571a-f57b-4c37-be4c-ae16a41d7aae|golden_tree_sanctuary_clean.jpg}} (colossal subterranean cenote cavern open to the stars above with the towering bioluminescent Golden Tree rising from a crystal-clear underground pool 1:1 matching reference).\nTOP-LEFT PANEL, second 0s: [Low-Angle MS] Nora ({{media:62e117f8-0af7-484e-90a8-f79927105746|nora_clean.jpg}}) in active physical motion as Theron kneels at the water's edge and taps the submerged golden helmet of a petrified warrior with his wooden staff while speaking to Nora and Castor, face 100% unobstructed.\nTOP-RIGHT PANEL, second 3s: [60-Deg MCU] 60-degree angle shift: Castor ({{media:3152a235-af4f-462b-a78e-02551f826e41|castor_clean.jpg}}) driving the physical reaction as Theron kneels at the water's edge and taps the submerged golden helmet of a petrified warrior with his wooden staff while speaking to Nora and Castor.\nBOTTOM-LEFT PANEL, second 6s: [90-Deg WS] 90-degree angle shift: Nora ({{media:62e117f8-0af7-484e-90a8-f79927105746|nora_clean.jpg}}) advancing the physical action as Nora grips Castor's shoulder firmly as the truth of the tree's lethal defense sinks in.\nBOTTOM-RIGHT PANEL, second 7s: [High-Angle MS] Forward-momentum micro-hook framing: Castor ({{media:3152a235-af4f-462b-a78e-02551f826e41|castor_clean.jpg}}) completing the physical transition as Nora grips Castor's shoulder firmly as the truth of the tree's lethal defense sinks in, hands gripping physical props and face 100% unobstructed.\nCinematic feature-film look: shot on ARRI Alexa with Cooke S4 prime lenses, fine 35mm film grain, deep focus (f/8), motivated practical light, realistic physics, faces 100% unobstructed, strictly NO smoke, strictly NOT a 3D render, NOT CGI, zero watermark, zero logos."
+  },
+  {
+    "clip_id": "SC-132",
+    "scene_name": "Castor's Awakening — Lowering the Blade",
+    "duration": 6,
+    "refs": [
+      "Castor",
+      "Golden Tree Sanctuary"
+    ],
+    "source_media_id": "3152a235-af4f-462b-a78e-02551f826e41",
+    "panels": [
+      {
+        "panel": "TOP-LEFT",
+        "time": "0s",
+        "shot_size": "Three-Quarter MCU",
+        "action": "[Three-Quarter MCU] Castor ({{media:3152a235-af4f-462b-a78e-02551f826e41|castor_clean.jpg}}) in active physical motion as Castor stares down at a petrified golden hand beneath his boot that still clutches a rusted cutlass, his own bronze dagger trembling in his grip, face 100% unobstructed."
+      },
+      {
+        "panel": "TOP-RIGHT",
+        "time": "2s",
+        "shot_size": "75-Deg MS",
+        "action": "[75-Deg MS] 60-degree angle shift: Golden Tree Sanctuary ({{media:9968571a-f57b-4c37-be4c-ae16a41d7aae|golden_tree_sanctuary_clean.jpg}}) driving the physical reaction as Castor stares down at a petrified golden hand beneath his boot that still clutches a rusted cutlass, his own bronze dagger trembling in his grip."
+      },
+      {
+        "panel": "BOTTOM-LEFT",
+        "time": "4s",
+        "shot_size": "90-Deg CU",
+        "action": "[90-Deg CU] 90-degree angle shift: Castor ({{media:3152a235-af4f-462b-a78e-02551f826e41|castor_clean.jpg}}) advancing the physical action as he pulls his hand back from the golden root and steps onto the safe mossy stone bank."
+      },
+      {
+        "panel": "BOTTOM-RIGHT",
+        "time": "5s",
+        "shot_size": "Wide Two-Shot",
+        "action": "[Wide Two-Shot] Forward-momentum micro-hook framing: Golden Tree Sanctuary ({{media:9968571a-f57b-4c37-be4c-ae16a41d7aae|golden_tree_sanctuary_clean.jpg}}) completing the physical transition as he pulls his hand back from the golden root and steps onto the safe mossy stone bank, hands gripping physical props and face 100% unobstructed."
+      }
+    ],
+    "storyboard_prompt": "A film storyboard sheet, 16:9, made of FOUR photographic panels in a tight 2 by 2 grid, separated only by thin straight black lines; each panel is a 16:9 frame; no text, no numbers, no captions. All four panels are cinematic 35mm live-action feature-film stills of Location: colossal subterranean cenote sanctuary open to the starry night sky above, featuring the towering bioluminescent Golden Tree rising from a mirror-still crystal pool. Light: warm living golden-amber luminescence from the Golden Tree blending with cool silver starlight on wet limestone flagstones; deep chiaroscuro. Featuring {{media:3152a235-af4f-462b-a78e-02551f826e41|castor_clean.jpg}} (29-year-old clean-shaven navigator with short cropped jet-black hair, strictly NO beard, salt-stained dark brown leather cuirass and arrow quiver 1:1 matching reference), {{media:9968571a-f57b-4c37-be4c-ae16a41d7aae|golden_tree_sanctuary_clean.jpg}} (colossal subterranean cenote cavern open to the stars above with the towering bioluminescent Golden Tree rising from a crystal-clear underground pool 1:1 matching reference).\nTOP-LEFT PANEL, second 0s: [Three-Quarter MCU] Castor ({{media:3152a235-af4f-462b-a78e-02551f826e41|castor_clean.jpg}}) in active physical motion as Castor stares down at a petrified golden hand beneath his boot that still clutches a rusted cutlass, his own bronze dagger trembling in his grip, face 100% unobstructed.\nTOP-RIGHT PANEL, second 2s: [75-Deg MS] 60-degree angle shift: Golden Tree Sanctuary ({{media:9968571a-f57b-4c37-be4c-ae16a41d7aae|golden_tree_sanctuary_clean.jpg}}) driving the physical reaction as Castor stares down at a petrified golden hand beneath his boot that still clutches a rusted cutlass, his own bronze dagger trembling in his grip.\nBOTTOM-LEFT PANEL, second 4s: [90-Deg CU] 90-degree angle shift: Castor ({{media:3152a235-af4f-462b-a78e-02551f826e41|castor_clean.jpg}}) advancing the physical action as he pulls his hand back from the golden root and steps onto the safe mossy stone bank.\nBOTTOM-RIGHT PANEL, second 5s: [Wide Two-Shot] Forward-momentum micro-hook framing: Golden Tree Sanctuary ({{media:9968571a-f57b-4c37-be4c-ae16a41d7aae|golden_tree_sanctuary_clean.jpg}}) completing the physical transition as he pulls his hand back from the golden root and steps onto the safe mossy stone bank, hands gripping physical props and face 100% unobstructed.\nCinematic feature-film look: shot on ARRI Alexa with Cooke S4 prime lenses, fine 35mm film grain, deep focus (f/8), motivated practical light, realistic physics, faces 100% unobstructed, strictly NO smoke, strictly NOT a 3D render, NOT CGI, zero watermark, zero logos."
+  },
+  {
+    "clip_id": "SC-133",
+    "scene_name": "Nora's Moral Anchor — Our Crew Is Our Treasure",
+    "duration": 10,
+    "refs": [
+      "Nora",
+      "Castor",
+      "Golden Tree Sanctuary"
+    ],
+    "source_media_id": "62e117f8-0af7-484e-90a8-f79927105746",
+    "panels": [
+      {
+        "panel": "TOP-LEFT",
+        "time": "0s",
+        "shot_size": "Wide Dynamic Action Shot",
+        "action": "[Wide Dynamic Action Shot] Nora ({{media:62e117f8-0af7-484e-90a8-f79927105746|nora_clean.jpg}}) in active physical motion as Nora steps directly in front of Castor beside the glowing pool, places her hand squarely over his dagger hand, and looks him in the eye with unwavering leadership, face 100% unobstructed."
+      },
+      {
+        "panel": "TOP-RIGHT",
+        "time": "3s",
+        "shot_size": "60-Deg Low-Angle MCU",
+        "action": "[60-Deg Low-Angle MCU] 60-degree angle shift: Castor ({{media:3152a235-af4f-462b-a78e-02551f826e41|castor_clean.jpg}}) driving the physical reaction as Nora steps directly in front of Castor beside the glowing pool, places her hand squarely over his dagger hand, and looks him in the eye with unwavering leadership."
+      },
+      {
+        "panel": "BOTTOM-LEFT",
+        "time": "7s",
+        "shot_size": "90-Deg Insert CU",
+        "action": "[90-Deg Insert CU] 90-degree angle shift: Nora ({{media:62e117f8-0af7-484e-90a8-f79927105746|nora_clean.jpg}}) advancing the physical action as Heracles steps up beside them, nodding in solid brotherhood."
+      },
+      {
+        "panel": "BOTTOM-RIGHT",
+        "time": "9s",
+        "shot_size": "Medium Tracking Shot",
+        "action": "[Medium Tracking Shot] Forward-momentum micro-hook framing: Castor ({{media:3152a235-af4f-462b-a78e-02551f826e41|castor_clean.jpg}}) completing the physical transition as Heracles steps up beside them, nodding in solid brotherhood, hands gripping physical props and face 100% unobstructed."
+      }
+    ],
+    "storyboard_prompt": "A film storyboard sheet, 16:9, made of FOUR photographic panels in a tight 2 by 2 grid, separated only by thin straight black lines; each panel is a 16:9 frame; no text, no numbers, no captions. All four panels are cinematic 35mm live-action feature-film stills of Location: colossal subterranean cenote sanctuary open to the starry night sky above, featuring the towering bioluminescent Golden Tree rising from a mirror-still crystal pool. Light: warm living golden-amber luminescence from the Golden Tree blending with cool silver starlight on wet limestone flagstones; deep chiaroscuro. Featuring {{media:62e117f8-0af7-484e-90a8-f79927105746|nora_clean.jpg}} (28-year-old female captain with braided auburn-brown hair, freckled face, wearing navy wool seafarer brigandine armor 1:1 matching reference), {{media:3152a235-af4f-462b-a78e-02551f826e41|castor_clean.jpg}} (29-year-old clean-shaven navigator with short cropped jet-black hair, strictly NO beard, salt-stained dark brown leather cuirass and arrow quiver 1:1 matching reference), {{media:9968571a-f57b-4c37-be4c-ae16a41d7aae|golden_tree_sanctuary_clean.jpg}} (colossal subterranean cenote cavern open to the stars above with the towering bioluminescent Golden Tree rising from a crystal-clear underground pool 1:1 matching reference).\nTOP-LEFT PANEL, second 0s: [Wide Dynamic Action Shot] Nora ({{media:62e117f8-0af7-484e-90a8-f79927105746|nora_clean.jpg}}) in active physical motion as Nora steps directly in front of Castor beside the glowing pool, places her hand squarely over his dagger hand, and looks him in the eye with unwavering leadership, face 100% unobstructed.\nTOP-RIGHT PANEL, second 3s: [60-Deg Low-Angle MCU] 60-degree angle shift: Castor ({{media:3152a235-af4f-462b-a78e-02551f826e41|castor_clean.jpg}}) driving the physical reaction as Nora steps directly in front of Castor beside the glowing pool, places her hand squarely over his dagger hand, and looks him in the eye with unwavering leadership.\nBOTTOM-LEFT PANEL, second 7s: [90-Deg Insert CU] 90-degree angle shift: Nora ({{media:62e117f8-0af7-484e-90a8-f79927105746|nora_clean.jpg}}) advancing the physical action as Heracles steps up beside them, nodding in solid brotherhood.\nBOTTOM-RIGHT PANEL, second 9s: [Medium Tracking Shot] Forward-momentum micro-hook framing: Castor ({{media:3152a235-af4f-462b-a78e-02551f826e41|castor_clean.jpg}}) completing the physical transition as Heracles steps up beside them, nodding in solid brotherhood, hands gripping physical props and face 100% unobstructed.\nCinematic feature-film look: shot on ARRI Alexa with Cooke S4 prime lenses, fine 35mm film grain, deep focus (f/8), motivated practical light, realistic physics, faces 100% unobstructed, strictly NO smoke, strictly NOT a 3D render, NOT CGI, zero watermark, zero logos."
+  },
+  {
+    "clip_id": "SC-134",
+    "scene_name": "Conquering Greed — Castor Sheathes His Dagger",
+    "duration": 8,
+    "refs": [
+      "Nora",
+      "Castor",
+      "Golden Tree Sanctuary"
+    ],
+    "source_media_id": "62e117f8-0af7-484e-90a8-f79927105746",
+    "panels": [
+      {
+        "panel": "TOP-LEFT",
+        "time": "0s",
+        "shot_size": "OTS Medium Shot",
+        "action": "[OTS Medium Shot] Nora ({{media:62e117f8-0af7-484e-90a8-f79927105746|nora_clean.jpg}}) in active physical motion as breaking free of the golden trance, Castor exhales deeply, slides his bronze dagger cleanly back into its leather scabbard, and clasps Nora's forearm in a warrior's grip, face 100% unobstructed."
+      },
+      {
+        "panel": "TOP-RIGHT",
+        "time": "3s",
+        "shot_size": "60-Deg Reverse MCU",
+        "action": "[60-Deg Reverse MCU] 60-degree angle shift: Castor ({{media:3152a235-af4f-462b-a78e-02551f826e41|castor_clean.jpg}}) driving the physical reaction as breaking free of the golden trance, Castor exhales deeply, slides his bronze dagger cleanly back into its leather scabbard, and clasps Nora's forearm in a warrior's grip."
+      },
+      {
+        "panel": "BOTTOM-LEFT",
+        "time": "6s",
+        "shot_size": "90-Deg Wide Framing",
+        "action": "[90-Deg Wide Framing] 90-degree angle shift: Nora ({{media:62e117f8-0af7-484e-90a8-f79927105746|nora_clean.jpg}}) advancing the physical action as the aggressive pulse of the Golden Tree's roots calms to a gentle warm glow."
+      },
+      {
+        "panel": "BOTTOM-RIGHT",
+        "time": "7s",
+        "shot_size": "Close-Up Detail Shot",
+        "action": "[Close-Up Detail Shot] Forward-momentum micro-hook framing: Castor ({{media:3152a235-af4f-462b-a78e-02551f826e41|castor_clean.jpg}}) completing the physical transition as the aggressive pulse of the Golden Tree's roots calms to a gentle warm glow, hands gripping physical props and face 100% unobstructed."
+      }
+    ],
+    "storyboard_prompt": "A film storyboard sheet, 16:9, made of FOUR photographic panels in a tight 2 by 2 grid, separated only by thin straight black lines; each panel is a 16:9 frame; no text, no numbers, no captions. All four panels are cinematic 35mm live-action feature-film stills of Location: colossal subterranean cenote sanctuary open to the starry night sky above, featuring the towering bioluminescent Golden Tree rising from a mirror-still crystal pool. Light: warm living golden-amber luminescence from the Golden Tree blending with cool silver starlight on wet limestone flagstones; deep chiaroscuro. Featuring {{media:62e117f8-0af7-484e-90a8-f79927105746|nora_clean.jpg}} (28-year-old female captain with braided auburn-brown hair, freckled face, wearing navy wool seafarer brigandine armor 1:1 matching reference), {{media:3152a235-af4f-462b-a78e-02551f826e41|castor_clean.jpg}} (29-year-old clean-shaven navigator with short cropped jet-black hair, strictly NO beard, salt-stained dark brown leather cuirass and arrow quiver 1:1 matching reference), {{media:9968571a-f57b-4c37-be4c-ae16a41d7aae|golden_tree_sanctuary_clean.jpg}} (colossal subterranean cenote cavern open to the stars above with the towering bioluminescent Golden Tree rising from a crystal-clear underground pool 1:1 matching reference).\nTOP-LEFT PANEL, second 0s: [OTS Medium Shot] Nora ({{media:62e117f8-0af7-484e-90a8-f79927105746|nora_clean.jpg}}) in active physical motion as breaking free of the golden trance, Castor exhales deeply, slides his bronze dagger cleanly back into its leather scabbard, and clasps Nora's forearm in a warrior's grip, face 100% unobstructed.\nTOP-RIGHT PANEL, second 3s: [60-Deg Reverse MCU] 60-degree angle shift: Castor ({{media:3152a235-af4f-462b-a78e-02551f826e41|castor_clean.jpg}}) driving the physical reaction as breaking free of the golden trance, Castor exhales deeply, slides his bronze dagger cleanly back into its leather scabbard, and clasps Nora's forearm in a warrior's grip.\nBOTTOM-LEFT PANEL, second 6s: [90-Deg Wide Framing] 90-degree angle shift: Nora ({{media:62e117f8-0af7-484e-90a8-f79927105746|nora_clean.jpg}}) advancing the physical action as the aggressive pulse of the Golden Tree's roots calms to a gentle warm glow.\nBOTTOM-RIGHT PANEL, second 7s: [Close-Up Detail Shot] Forward-momentum micro-hook framing: Castor ({{media:3152a235-af4f-462b-a78e-02551f826e41|castor_clean.jpg}}) completing the physical transition as the aggressive pulse of the Golden Tree's roots calms to a gentle warm glow, hands gripping physical props and face 100% unobstructed.\nCinematic feature-film look: shot on ARRI Alexa with Cooke S4 prime lenses, fine 35mm film grain, deep focus (f/8), motivated practical light, realistic physics, faces 100% unobstructed, strictly NO smoke, strictly NOT a 3D render, NOT CGI, zero watermark, zero logos."
+  },
+  {
+    "clip_id": "SC-135",
+    "scene_name": "A Single Golden Leaf Detaches in the Cavern Breeze",
+    "duration": 8,
+    "refs": [
+      "Golden Tree Sanctuary"
+    ],
+    "source_media_id": "9968571a-f57b-4c37-be4c-ae16a41d7aae",
+    "panels": [
+      {
+        "panel": "TOP-LEFT",
+        "time": "0s",
+        "shot_size": "Low-Angle MS",
+        "action": "[Low-Angle MS] Golden Tree Sanctuary ({{media:9968571a-f57b-4c37-be4c-ae16a41d7aae|golden_tree_sanctuary_clean.jpg}}) in active physical motion as high in the canopy of the Golden Tree, a gentle downdraft from the cenote sky-hole detaches a single luminous golden leaf without any blade touching the bark, face 100% unobstructed."
+      },
+      {
+        "panel": "TOP-RIGHT",
+        "time": "3s",
+        "shot_size": "60-Deg MCU",
+        "action": "[60-Deg MCU] 60-degree angle shift: Golden Tree Sanctuary ({{media:9968571a-f57b-4c37-be4c-ae16a41d7aae|golden_tree_sanctuary_clean.jpg}}) driving the physical reaction as high in the canopy of the Golden Tree, a gentle downdraft from the cenote sky-hole detaches a single luminous golden leaf without any blade touching the bark."
+      },
+      {
+        "panel": "BOTTOM-LEFT",
+        "time": "6s",
+        "shot_size": "90-Deg WS",
+        "action": "[90-Deg WS] 90-degree angle shift: Golden Tree Sanctuary ({{media:9968571a-f57b-4c37-be4c-ae16a41d7aae|golden_tree_sanctuary_clean.jpg}}) advancing the physical action as the golden leaf spirals gracefully downward through the shaft of starlight toward the terrace."
+      },
+      {
+        "panel": "BOTTOM-RIGHT",
+        "time": "7s",
+        "shot_size": "High-Angle MS",
+        "action": "[High-Angle MS] Forward-momentum micro-hook framing: Golden Tree Sanctuary ({{media:9968571a-f57b-4c37-be4c-ae16a41d7aae|golden_tree_sanctuary_clean.jpg}}) completing the physical transition as the golden leaf spirals gracefully downward through the shaft of starlight toward the terrace, hands gripping physical props and face 100% unobstructed."
+      }
+    ],
+    "storyboard_prompt": "A film storyboard sheet, 16:9, made of FOUR photographic panels in a tight 2 by 2 grid, separated only by thin straight black lines; each panel is a 16:9 frame; no text, no numbers, no captions. All four panels are cinematic 35mm live-action feature-film stills of Location: colossal subterranean cenote sanctuary open to the starry night sky above, featuring the towering bioluminescent Golden Tree rising from a mirror-still crystal pool. Light: warm living golden-amber luminescence from the Golden Tree blending with cool silver starlight on wet limestone flagstones; deep chiaroscuro. Featuring {{media:9968571a-f57b-4c37-be4c-ae16a41d7aae|golden_tree_sanctuary_clean.jpg}} (colossal subterranean cenote cavern open to the stars above with the towering bioluminescent Golden Tree rising from a crystal-clear underground pool 1:1 matching reference).\nTOP-LEFT PANEL, second 0s: [Low-Angle MS] Golden Tree Sanctuary ({{media:9968571a-f57b-4c37-be4c-ae16a41d7aae|golden_tree_sanctuary_clean.jpg}}) in active physical motion as high in the canopy of the Golden Tree, a gentle downdraft from the cenote sky-hole detaches a single luminous golden leaf without any blade touching the bark, face 100% unobstructed.\nTOP-RIGHT PANEL, second 3s: [60-Deg MCU] 60-degree angle shift: Golden Tree Sanctuary ({{media:9968571a-f57b-4c37-be4c-ae16a41d7aae|golden_tree_sanctuary_clean.jpg}}) driving the physical reaction as high in the canopy of the Golden Tree, a gentle downdraft from the cenote sky-hole detaches a single luminous golden leaf without any blade touching the bark.\nBOTTOM-LEFT PANEL, second 6s: [90-Deg WS] 90-degree angle shift: Golden Tree Sanctuary ({{media:9968571a-f57b-4c37-be4c-ae16a41d7aae|golden_tree_sanctuary_clean.jpg}}) advancing the physical action as the golden leaf spirals gracefully downward through the shaft of starlight toward the terrace.\nBOTTOM-RIGHT PANEL, second 7s: [High-Angle MS] Forward-momentum micro-hook framing: Golden Tree Sanctuary ({{media:9968571a-f57b-4c37-be4c-ae16a41d7aae|golden_tree_sanctuary_clean.jpg}}) completing the physical transition as the golden leaf spirals gracefully downward through the shaft of starlight toward the terrace, hands gripping physical props and face 100% unobstructed.\nCinematic feature-film look: shot on ARRI Alexa with Cooke S4 prime lenses, fine 35mm film grain, deep focus (f/8), motivated practical light, realistic physics, faces 100% unobstructed, strictly NO smoke, strictly NOT a 3D render, NOT CGI, zero watermark, zero logos."
+  },
+  {
+    "clip_id": "SC-136",
+    "scene_name": "Nora Receives the Freely Given Golden Leaf",
+    "duration": 8,
+    "refs": [
+      "Nora",
+      "Golden Tree Sanctuary"
+    ],
+    "source_media_id": "62e117f8-0af7-484e-90a8-f79927105746",
+    "panels": [
+      {
+        "panel": "TOP-LEFT",
+        "time": "0s",
+        "shot_size": "Three-Quarter MCU",
+        "action": "[Three-Quarter MCU] Nora ({{media:62e117f8-0af7-484e-90a8-f79927105746|nora_clean.jpg}}) in active physical motion as Nora extends both open hands above the crystal pool; the falling golden leaf lands softly in her palms, glowing with warm living amber light, face 100% unobstructed."
+      },
+      {
+        "panel": "TOP-RIGHT",
+        "time": "3s",
+        "shot_size": "75-Deg MS",
+        "action": "[75-Deg MS] 60-degree angle shift: Golden Tree Sanctuary ({{media:9968571a-f57b-4c37-be4c-ae16a41d7aae|golden_tree_sanctuary_clean.jpg}}) driving the physical reaction as Nora extends both open hands above the crystal pool; the falling golden leaf lands softly in her palms, glowing with warm living amber light."
+      },
+      {
+        "panel": "BOTTOM-LEFT",
+        "time": "6s",
+        "shot_size": "90-Deg CU",
+        "action": "[90-Deg CU] 90-degree angle shift: Nora ({{media:62e117f8-0af7-484e-90a8-f79927105746|nora_clean.jpg}}) advancing the physical action as she closes her fingers gently around the leaf and tucks it into her brigandine breast pocket."
+      },
+      {
+        "panel": "BOTTOM-RIGHT",
+        "time": "7s",
+        "shot_size": "Wide Two-Shot",
+        "action": "[Wide Two-Shot] Forward-momentum micro-hook framing: Golden Tree Sanctuary ({{media:9968571a-f57b-4c37-be4c-ae16a41d7aae|golden_tree_sanctuary_clean.jpg}}) completing the physical transition as she closes her fingers gently around the leaf and tucks it into her brigandine breast pocket, hands gripping physical props and face 100% unobstructed."
+      }
+    ],
+    "storyboard_prompt": "A film storyboard sheet, 16:9, made of FOUR photographic panels in a tight 2 by 2 grid, separated only by thin straight black lines; each panel is a 16:9 frame; no text, no numbers, no captions. All four panels are cinematic 35mm live-action feature-film stills of Location: colossal subterranean cenote sanctuary open to the starry night sky above, featuring the towering bioluminescent Golden Tree rising from a mirror-still crystal pool. Light: warm living golden-amber luminescence from the Golden Tree blending with cool silver starlight on wet limestone flagstones; deep chiaroscuro. Featuring {{media:62e117f8-0af7-484e-90a8-f79927105746|nora_clean.jpg}} (28-year-old female captain with braided auburn-brown hair, freckled face, wearing navy wool seafarer brigandine armor 1:1 matching reference), {{media:9968571a-f57b-4c37-be4c-ae16a41d7aae|golden_tree_sanctuary_clean.jpg}} (colossal subterranean cenote cavern open to the stars above with the towering bioluminescent Golden Tree rising from a crystal-clear underground pool 1:1 matching reference).\nTOP-LEFT PANEL, second 0s: [Three-Quarter MCU] Nora ({{media:62e117f8-0af7-484e-90a8-f79927105746|nora_clean.jpg}}) in active physical motion as Nora extends both open hands above the crystal pool; the falling golden leaf lands softly in her palms, glowing with warm living amber light, face 100% unobstructed.\nTOP-RIGHT PANEL, second 3s: [75-Deg MS] 60-degree angle shift: Golden Tree Sanctuary ({{media:9968571a-f57b-4c37-be4c-ae16a41d7aae|golden_tree_sanctuary_clean.jpg}}) driving the physical reaction as Nora extends both open hands above the crystal pool; the falling golden leaf lands softly in her palms, glowing with warm living amber light.\nBOTTOM-LEFT PANEL, second 6s: [90-Deg CU] 90-degree angle shift: Nora ({{media:62e117f8-0af7-484e-90a8-f79927105746|nora_clean.jpg}}) advancing the physical action as she closes her fingers gently around the leaf and tucks it into her brigandine breast pocket.\nBOTTOM-RIGHT PANEL, second 7s: [Wide Two-Shot] Forward-momentum micro-hook framing: Golden Tree Sanctuary ({{media:9968571a-f57b-4c37-be4c-ae16a41d7aae|golden_tree_sanctuary_clean.jpg}}) completing the physical transition as she closes her fingers gently around the leaf and tucks it into her brigandine breast pocket, hands gripping physical props and face 100% unobstructed.\nCinematic feature-film look: shot on ARRI Alexa with Cooke S4 prime lenses, fine 35mm film grain, deep focus (f/8), motivated practical light, realistic physics, faces 100% unobstructed, strictly NO smoke, strictly NOT a 3D render, NOT CGI, zero watermark, zero logos."
+  },
+  {
+    "clip_id": "SC-137",
+    "scene_name": "The Sanctuary's Blessing — The Eastern Sea-Arch Opens",
+    "duration": 6,
+    "refs": [
+      "Theron",
+      "Golden Tree Sanctuary"
+    ],
+    "source_media_id": "7c5d994a-dabd-406b-a6c1-b9fa6473a612",
+    "panels": [
+      {
+        "panel": "TOP-LEFT",
+        "time": "0s",
+        "shot_size": "Wide Dynamic Action Shot",
+        "action": "[Wide Dynamic Action Shot] Theron ({{media:7c5d994a-dabd-406b-a6c1-b9fa6473a612|theron_clean.jpg}}) in active physical motion as as Nora secures the single leaf, the massive counterweighted limestone sluice-gate on the eastern wall of the cenote rumbles and parts, revealing a direct sea-channel illuminated by pink dawn light, face 100% unobstructed."
+      },
+      {
+        "panel": "TOP-RIGHT",
+        "time": "2s",
+        "shot_size": "60-Deg Low-Angle MCU",
+        "action": "[60-Deg Low-Angle MCU] 60-degree angle shift: Golden Tree Sanctuary ({{media:9968571a-f57b-4c37-be4c-ae16a41d7aae|golden_tree_sanctuary_clean.jpg}}) driving the physical reaction as as Nora secures the single leaf, the massive counterweighted limestone sluice-gate on the eastern wall of the cenote rumbles and parts, revealing a direct sea-channel illuminated by pink dawn light."
+      },
+      {
+        "panel": "BOTTOM-LEFT",
+        "time": "4s",
+        "shot_size": "90-Deg Insert CU",
+        "action": "[90-Deg Insert CU] 90-degree angle shift: Theron ({{media:7c5d994a-dabd-406b-a6c1-b9fa6473a612|theron_clean.jpg}}) advancing the physical action as Theron leans on his staff and nods with quiet relief."
+      },
+      {
+        "panel": "BOTTOM-RIGHT",
+        "time": "5s",
+        "shot_size": "Medium Tracking Shot",
+        "action": "[Medium Tracking Shot] Forward-momentum micro-hook framing: Golden Tree Sanctuary ({{media:9968571a-f57b-4c37-be4c-ae16a41d7aae|golden_tree_sanctuary_clean.jpg}}) completing the physical transition as Theron leans on his staff and nods with quiet relief, hands gripping physical props and face 100% unobstructed."
+      }
+    ],
+    "storyboard_prompt": "A film storyboard sheet, 16:9, made of FOUR photographic panels in a tight 2 by 2 grid, separated only by thin straight black lines; each panel is a 16:9 frame; no text, no numbers, no captions. All four panels are cinematic 35mm live-action feature-film stills of Location: colossal subterranean cenote sanctuary open to the starry night sky above, featuring the towering bioluminescent Golden Tree rising from a mirror-still crystal pool. Light: warm living golden-amber luminescence from the Golden Tree blending with cool silver starlight on wet limestone flagstones; deep chiaroscuro. Featuring {{media:7c5d994a-dabd-406b-a6c1-b9fa6473a612|theron_clean.jpg}} (58-year-old stranded navigator hermit with wild gray beard, ragged burlap tunic, and wooden staff 1:1 matching reference), {{media:9968571a-f57b-4c37-be4c-ae16a41d7aae|golden_tree_sanctuary_clean.jpg}} (colossal subterranean cenote cavern open to the stars above with the towering bioluminescent Golden Tree rising from a crystal-clear underground pool 1:1 matching reference).\nTOP-LEFT PANEL, second 0s: [Wide Dynamic Action Shot] Theron ({{media:7c5d994a-dabd-406b-a6c1-b9fa6473a612|theron_clean.jpg}}) in active physical motion as as Nora secures the single leaf, the massive counterweighted limestone sluice-gate on the eastern wall of the cenote rumbles and parts, revealing a direct sea-channel illuminated by pink dawn light, face 100% unobstructed.\nTOP-RIGHT PANEL, second 2s: [60-Deg Low-Angle MCU] 60-degree angle shift: Golden Tree Sanctuary ({{media:9968571a-f57b-4c37-be4c-ae16a41d7aae|golden_tree_sanctuary_clean.jpg}}) driving the physical reaction as as Nora secures the single leaf, the massive counterweighted limestone sluice-gate on the eastern wall of the cenote rumbles and parts, revealing a direct sea-channel illuminated by pink dawn light.\nBOTTOM-LEFT PANEL, second 4s: [90-Deg Insert CU] 90-degree angle shift: Theron ({{media:7c5d994a-dabd-406b-a6c1-b9fa6473a612|theron_clean.jpg}}) advancing the physical action as Theron leans on his staff and nods with quiet relief.\nBOTTOM-RIGHT PANEL, second 5s: [Medium Tracking Shot] Forward-momentum micro-hook framing: Golden Tree Sanctuary ({{media:9968571a-f57b-4c37-be4c-ae16a41d7aae|golden_tree_sanctuary_clean.jpg}}) completing the physical transition as Theron leans on his staff and nods with quiet relief, hands gripping physical props and face 100% unobstructed.\nCinematic feature-film look: shot on ARRI Alexa with Cooke S4 prime lenses, fine 35mm film grain, deep focus (f/8), motivated practical light, realistic physics, faces 100% unobstructed, strictly NO smoke, strictly NOT a 3D render, NOT CGI, zero watermark, zero logos."
+  },
+  {
+    "clip_id": "SC-138",
+    "scene_name": "Nora Invites Theron to Return to the Open Sea",
+    "duration": 8,
+    "refs": [
+      "Nora",
+      "Theron"
+    ],
+    "source_media_id": "62e117f8-0af7-484e-90a8-f79927105746",
+    "panels": [
+      {
+        "panel": "TOP-LEFT",
+        "time": "0s",
+        "shot_size": "OTS Medium Shot",
+        "action": "[OTS Medium Shot] Nora ({{media:62e117f8-0af7-484e-90a8-f79927105746|nora_clean.jpg}}) in active physical motion as standing before the newly opened eastern sea-arch, Nora turns to the aged navigator Theron and extends her right hand in invitation, face 100% unobstructed."
+      },
+      {
+        "panel": "TOP-RIGHT",
+        "time": "3s",
+        "shot_size": "60-Deg Reverse MCU",
+        "action": "[60-Deg Reverse MCU] 60-degree angle shift: Theron ({{media:7c5d994a-dabd-406b-a6c1-b9fa6473a612|theron_clean.jpg}}) driving the physical reaction as standing before the newly opened eastern sea-arch, Nora turns to the aged navigator Theron and extends her right hand in invitation."
+      },
+      {
+        "panel": "BOTTOM-LEFT",
+        "time": "6s",
+        "shot_size": "90-Deg Wide Framing",
+        "action": "[90-Deg Wide Framing] 90-degree angle shift: Nora ({{media:62e117f8-0af7-484e-90a8-f79927105746|nora_clean.jpg}}) advancing the physical action as warm dawn light from the sea-tunnel touches Theron's weathered face for the first time in twenty years."
+      },
+      {
+        "panel": "BOTTOM-RIGHT",
+        "time": "7s",
+        "shot_size": "Close-Up Detail Shot",
+        "action": "[Close-Up Detail Shot] Forward-momentum micro-hook framing: Theron ({{media:7c5d994a-dabd-406b-a6c1-b9fa6473a612|theron_clean.jpg}}) completing the physical transition as warm dawn light from the sea-tunnel touches Theron's weathered face for the first time in twenty years, hands gripping physical props and face 100% unobstructed."
+      }
+    ],
+    "storyboard_prompt": "A film storyboard sheet, 16:9, made of FOUR photographic panels in a tight 2 by 2 grid, separated only by thin straight black lines; each panel is a 16:9 frame; no text, no numbers, no captions. All four panels are cinematic 35mm live-action feature-film stills of Location: colossal subterranean cenote sanctuary open to the starry night sky above, featuring the towering bioluminescent Golden Tree rising from a mirror-still crystal pool. Light: warm living golden-amber luminescence from the Golden Tree blending with cool silver starlight on wet limestone flagstones; deep chiaroscuro. Featuring {{media:62e117f8-0af7-484e-90a8-f79927105746|nora_clean.jpg}} (28-year-old female captain with braided auburn-brown hair, freckled face, wearing navy wool seafarer brigandine armor 1:1 matching reference), {{media:7c5d994a-dabd-406b-a6c1-b9fa6473a612|theron_clean.jpg}} (58-year-old stranded navigator hermit with wild gray beard, ragged burlap tunic, and wooden staff 1:1 matching reference).\nTOP-LEFT PANEL, second 0s: [OTS Medium Shot] Nora ({{media:62e117f8-0af7-484e-90a8-f79927105746|nora_clean.jpg}}) in active physical motion as standing before the newly opened eastern sea-arch, Nora turns to the aged navigator Theron and extends her right hand in invitation, face 100% unobstructed.\nTOP-RIGHT PANEL, second 3s: [60-Deg Reverse MCU] 60-degree angle shift: Theron ({{media:7c5d994a-dabd-406b-a6c1-b9fa6473a612|theron_clean.jpg}}) driving the physical reaction as standing before the newly opened eastern sea-arch, Nora turns to the aged navigator Theron and extends her right hand in invitation.\nBOTTOM-LEFT PANEL, second 6s: [90-Deg Wide Framing] 90-degree angle shift: Nora ({{media:62e117f8-0af7-484e-90a8-f79927105746|nora_clean.jpg}}) advancing the physical action as warm dawn light from the sea-tunnel touches Theron's weathered face for the first time in twenty years.\nBOTTOM-RIGHT PANEL, second 7s: [Close-Up Detail Shot] Forward-momentum micro-hook framing: Theron ({{media:7c5d994a-dabd-406b-a6c1-b9fa6473a612|theron_clean.jpg}}) completing the physical transition as warm dawn light from the sea-tunnel touches Theron's weathered face for the first time in twenty years, hands gripping physical props and face 100% unobstructed.\nCinematic feature-film look: shot on ARRI Alexa with Cooke S4 prime lenses, fine 35mm film grain, deep focus (f/8), motivated practical light, realistic physics, faces 100% unobstructed, strictly NO smoke, strictly NOT a 3D render, NOT CGI, zero watermark, zero logos."
+  },
+  {
+    "clip_id": "SC-139",
+    "scene_name": "Theron Clasps Nora's Hand — Ending His Long Exile",
+    "duration": 6,
+    "refs": [
+      "Nora",
+      "Theron"
+    ],
+    "source_media_id": "62e117f8-0af7-484e-90a8-f79927105746",
+    "panels": [
+      {
+        "panel": "TOP-LEFT",
+        "time": "0s",
+        "shot_size": "Low-Angle MS",
+        "action": "[Low-Angle MS] Nora ({{media:62e117f8-0af7-484e-90a8-f79927105746|nora_clean.jpg}}) in active physical motion as Theron's eyes glisten with emotion as he grasps Nora's outstretched hand with both of his weathered hands, face 100% unobstructed."
+      },
+      {
+        "panel": "TOP-RIGHT",
+        "time": "2s",
+        "shot_size": "60-Deg MCU",
+        "action": "[60-Deg MCU] 60-degree angle shift: Theron ({{media:7c5d994a-dabd-406b-a6c1-b9fa6473a612|theron_clean.jpg}}) driving the physical reaction as Theron's eyes glisten with emotion as he grasps Nora's outstretched hand with both of his weathered hands."
+      },
+      {
+        "panel": "BOTTOM-LEFT",
+        "time": "4s",
+        "shot_size": "90-Deg WS",
+        "action": "[90-Deg WS] 90-degree angle shift: Nora ({{media:62e117f8-0af7-484e-90a8-f79927105746|nora_clean.jpg}}) advancing the physical action as Heracles claps a welcoming hand onto Theron's shoulder as they turn toward the sunlit water channel."
+      },
+      {
+        "panel": "BOTTOM-RIGHT",
+        "time": "5s",
+        "shot_size": "High-Angle MS",
+        "action": "[High-Angle MS] Forward-momentum micro-hook framing: Theron ({{media:7c5d994a-dabd-406b-a6c1-b9fa6473a612|theron_clean.jpg}}) completing the physical transition as Heracles claps a welcoming hand onto Theron's shoulder as they turn toward the sunlit water channel, hands gripping physical props and face 100% unobstructed."
+      }
+    ],
+    "storyboard_prompt": "A film storyboard sheet, 16:9, made of FOUR photographic panels in a tight 2 by 2 grid, separated only by thin straight black lines; each panel is a 16:9 frame; no text, no numbers, no captions. All four panels are cinematic 35mm live-action feature-film stills of Location: colossal subterranean cenote sanctuary open to the starry night sky above, featuring the towering bioluminescent Golden Tree rising from a mirror-still crystal pool. Light: warm living golden-amber luminescence from the Golden Tree blending with cool silver starlight on wet limestone flagstones; deep chiaroscuro. Featuring {{media:62e117f8-0af7-484e-90a8-f79927105746|nora_clean.jpg}} (28-year-old female captain with braided auburn-brown hair, freckled face, wearing navy wool seafarer brigandine armor 1:1 matching reference), {{media:7c5d994a-dabd-406b-a6c1-b9fa6473a612|theron_clean.jpg}} (58-year-old stranded navigator hermit with wild gray beard, ragged burlap tunic, and wooden staff 1:1 matching reference).\nTOP-LEFT PANEL, second 0s: [Low-Angle MS] Nora ({{media:62e117f8-0af7-484e-90a8-f79927105746|nora_clean.jpg}}) in active physical motion as Theron's eyes glisten with emotion as he grasps Nora's outstretched hand with both of his weathered hands, face 100% unobstructed.\nTOP-RIGHT PANEL, second 2s: [60-Deg MCU] 60-degree angle shift: Theron ({{media:7c5d994a-dabd-406b-a6c1-b9fa6473a612|theron_clean.jpg}}) driving the physical reaction as Theron's eyes glisten with emotion as he grasps Nora's outstretched hand with both of his weathered hands.\nBOTTOM-LEFT PANEL, second 4s: [90-Deg WS] 90-degree angle shift: Nora ({{media:62e117f8-0af7-484e-90a8-f79927105746|nora_clean.jpg}}) advancing the physical action as Heracles claps a welcoming hand onto Theron's shoulder as they turn toward the sunlit water channel.\nBOTTOM-RIGHT PANEL, second 5s: [High-Angle MS] Forward-momentum micro-hook framing: Theron ({{media:7c5d994a-dabd-406b-a6c1-b9fa6473a612|theron_clean.jpg}}) completing the physical transition as Heracles claps a welcoming hand onto Theron's shoulder as they turn toward the sunlit water channel, hands gripping physical props and face 100% unobstructed.\nCinematic feature-film look: shot on ARRI Alexa with Cooke S4 prime lenses, fine 35mm film grain, deep focus (f/8), motivated practical light, realistic physics, faces 100% unobstructed, strictly NO smoke, strictly NOT a 3D render, NOT CGI, zero watermark, zero logos."
+  },
+  {
+    "clip_id": "SC-140",
+    "scene_name": "Emerging from the Subterranean Sea-Arch into Dawn",
+    "duration": 10,
+    "refs": [
+      "Nora",
+      "Castor",
+      "Heracles",
+      "Theron"
+    ],
+    "source_media_id": "62e117f8-0af7-484e-90a8-f79927105746",
+    "panels": [
+      {
+        "panel": "TOP-LEFT",
+        "time": "0s",
+        "shot_size": "Three-Quarter MCU",
+        "action": "[Three-Quarter MCU] Nora ({{media:62e117f8-0af7-484e-90a8-f79927105746|nora_clean.jpg}}) in active physical motion as Nora, Castor, Heracles, and Theron wade and row a small cavern skiff out through the eastern limestone sea-arch into a tranquil turquoise cove bathed in golden sunrise, face 100% unobstructed."
+      },
+      {
+        "panel": "TOP-RIGHT",
+        "time": "3s",
+        "shot_size": "75-Deg MS",
+        "action": "[75-Deg MS] 60-degree angle shift: Castor ({{media:3152a235-af4f-462b-a78e-02551f826e41|castor_clean.jpg}}) driving the physical reaction as Nora, Castor, Heracles, and Theron wade and row a small cavern skiff out through the eastern limestone sea-arch into a tranquil turquoise cove bathed in golden sunrise."
+      },
+      {
+        "panel": "BOTTOM-LEFT",
+        "time": "7s",
+        "shot_size": "90-Deg CU",
+        "action": "[90-Deg CU] 90-degree angle shift: Nora ({{media:62e117f8-0af7-484e-90a8-f79927105746|nora_clean.jpg}}) advancing the physical action as fresh morning sea breeze ruffles their hair as they leave the dark karst cavern behind."
+      },
+      {
+        "panel": "BOTTOM-RIGHT",
+        "time": "9s",
+        "shot_size": "Wide Two-Shot",
+        "action": "[Wide Two-Shot] Forward-momentum micro-hook framing: Castor ({{media:3152a235-af4f-462b-a78e-02551f826e41|castor_clean.jpg}}) completing the physical transition as fresh morning sea breeze ruffles their hair as they leave the dark karst cavern behind, hands gripping physical props and face 100% unobstructed."
+      }
+    ],
+    "storyboard_prompt": "A film storyboard sheet, 16:9, made of FOUR photographic panels in a tight 2 by 2 grid, separated only by thin straight black lines; each panel is a 16:9 frame; no text, no numbers, no captions. All four panels are cinematic 35mm live-action feature-film stills of Location: sunlit coastal limestone sea-arch and tranquil turquoise cove where the wooden pirate galleon rides at anchor. Light: warm golden-pink Aegean sunrise reflecting off calm turquoise water; deep focus. Featuring {{media:62e117f8-0af7-484e-90a8-f79927105746|nora_clean.jpg}} (28-year-old female captain with braided auburn-brown hair, freckled face, wearing navy wool seafarer brigandine armor 1:1 matching reference), {{media:3152a235-af4f-462b-a78e-02551f826e41|castor_clean.jpg}} (29-year-old clean-shaven navigator with short cropped jet-black hair, strictly NO beard, salt-stained dark brown leather cuirass and arrow quiver 1:1 matching reference), {{media:37a10133-8496-49e7-bd77-b5f261c5a43e|heracles_clean.jpg}} (38-year-old giant muscular boatswain with cropped dark-black hair, thick braided dark-black beard, scarred bare muscular arms, and sea-lion fur mantle 1:1 matching reference), {{media:7c5d994a-dabd-406b-a6c1-b9fa6473a612|theron_clean.jpg}} (58-year-old stranded navigator hermit with wild gray beard, ragged burlap tunic, and wooden staff 1:1 matching reference).\nTOP-LEFT PANEL, second 0s: [Three-Quarter MCU] Nora ({{media:62e117f8-0af7-484e-90a8-f79927105746|nora_clean.jpg}}) in active physical motion as Nora, Castor, Heracles, and Theron wade and row a small cavern skiff out through the eastern limestone sea-arch into a tranquil turquoise cove bathed in golden sunrise, face 100% unobstructed.\nTOP-RIGHT PANEL, second 3s: [75-Deg MS] 60-degree angle shift: Castor ({{media:3152a235-af4f-462b-a78e-02551f826e41|castor_clean.jpg}}) driving the physical reaction as Nora, Castor, Heracles, and Theron wade and row a small cavern skiff out through the eastern limestone sea-arch into a tranquil turquoise cove bathed in golden sunrise.\nBOTTOM-LEFT PANEL, second 7s: [90-Deg CU] 90-degree angle shift: Nora ({{media:62e117f8-0af7-484e-90a8-f79927105746|nora_clean.jpg}}) advancing the physical action as fresh morning sea breeze ruffles their hair as they leave the dark karst cavern behind.\nBOTTOM-RIGHT PANEL, second 9s: [Wide Two-Shot] Forward-momentum micro-hook framing: Castor ({{media:3152a235-af4f-462b-a78e-02551f826e41|castor_clean.jpg}}) completing the physical transition as fresh morning sea breeze ruffles their hair as they leave the dark karst cavern behind, hands gripping physical props and face 100% unobstructed.\nCinematic feature-film look: shot on ARRI Alexa with Cooke S4 prime lenses, fine 35mm film grain, deep focus (f/8), motivated practical light, realistic physics, faces 100% unobstructed, strictly NO smoke, strictly NOT a 3D render, NOT CGI, zero watermark, zero logos."
+  },
+  {
+    "clip_id": "SC-141",
+    "scene_name": "Spotting Their Galleon Anchored Safe in the Cove",
+    "duration": 8,
+    "refs": [
+      "Heracles",
+      "Nora"
+    ],
+    "source_media_id": "37a10133-8496-49e7-bd77-b5f261c5a43e",
+    "panels": [
+      {
+        "panel": "TOP-LEFT",
+        "time": "0s",
+        "shot_size": "Wide Dynamic Action Shot",
+        "action": "[Wide Dynamic Action Shot] Heracles ({{media:37a10133-8496-49e7-bd77-b5f261c5a43e|heracles_clean.jpg}}) in active physical motion as as they round the coastal limestone headland, Heracles points excitedly across the sunlit cove where their battered wooden galleon rides safely at anchor on the morning tide, face 100% unobstructed."
+      },
+      {
+        "panel": "TOP-RIGHT",
+        "time": "3s",
+        "shot_size": "60-Deg Low-Angle MCU",
+        "action": "[60-Deg Low-Angle MCU] 60-degree angle shift: Nora ({{media:62e117f8-0af7-484e-90a8-f79927105746|nora_clean.jpg}}) driving the physical reaction as as they round the coastal limestone headland, Heracles points excitedly across the sunlit cove where their battered wooden galleon rides safely at anchor on the morning tide."
+      },
+      {
+        "panel": "BOTTOM-LEFT",
+        "time": "6s",
+        "shot_size": "90-Deg Insert CU",
+        "action": "[90-Deg Insert CU] 90-degree angle shift: Heracles ({{media:37a10133-8496-49e7-bd77-b5f261c5a43e|heracles_clean.jpg}}) advancing the physical action as the ship's watch on the foredeck waves a signal flag in recognition."
+      },
+      {
+        "panel": "BOTTOM-RIGHT",
+        "time": "7s",
+        "shot_size": "Medium Tracking Shot",
+        "action": "[Medium Tracking Shot] Forward-momentum micro-hook framing: Nora ({{media:62e117f8-0af7-484e-90a8-f79927105746|nora_clean.jpg}}) completing the physical transition as the ship's watch on the foredeck waves a signal flag in recognition, hands gripping physical props and face 100% unobstructed."
+      }
+    ],
+    "storyboard_prompt": "A film storyboard sheet, 16:9, made of FOUR photographic panels in a tight 2 by 2 grid, separated only by thin straight black lines; each panel is a 16:9 frame; no text, no numbers, no captions. All four panels are cinematic 35mm live-action feature-film stills of Location: sunlit coastal limestone sea-arch and tranquil turquoise cove where the wooden pirate galleon rides at anchor. Light: warm golden-pink Aegean sunrise reflecting off calm turquoise water; deep focus. Featuring {{media:37a10133-8496-49e7-bd77-b5f261c5a43e|heracles_clean.jpg}} (38-year-old giant muscular boatswain with cropped dark-black hair, thick braided dark-black beard, scarred bare muscular arms, and sea-lion fur mantle 1:1 matching reference), {{media:62e117f8-0af7-484e-90a8-f79927105746|nora_clean.jpg}} (28-year-old female captain with braided auburn-brown hair, freckled face, wearing navy wool seafarer brigandine armor 1:1 matching reference).\nTOP-LEFT PANEL, second 0s: [Wide Dynamic Action Shot] Heracles ({{media:37a10133-8496-49e7-bd77-b5f261c5a43e|heracles_clean.jpg}}) in active physical motion as as they round the coastal limestone headland, Heracles points excitedly across the sunlit cove where their battered wooden galleon rides safely at anchor on the morning tide, face 100% unobstructed.\nTOP-RIGHT PANEL, second 3s: [60-Deg Low-Angle MCU] 60-degree angle shift: Nora ({{media:62e117f8-0af7-484e-90a8-f79927105746|nora_clean.jpg}}) driving the physical reaction as as they round the coastal limestone headland, Heracles points excitedly across the sunlit cove where their battered wooden galleon rides safely at anchor on the morning tide.\nBOTTOM-LEFT PANEL, second 6s: [90-Deg Insert CU] 90-degree angle shift: Heracles ({{media:37a10133-8496-49e7-bd77-b5f261c5a43e|heracles_clean.jpg}}) advancing the physical action as the ship's watch on the foredeck waves a signal flag in recognition.\nBOTTOM-RIGHT PANEL, second 7s: [Medium Tracking Shot] Forward-momentum micro-hook framing: Nora ({{media:62e117f8-0af7-484e-90a8-f79927105746|nora_clean.jpg}}) completing the physical transition as the ship's watch on the foredeck waves a signal flag in recognition, hands gripping physical props and face 100% unobstructed.\nCinematic feature-film look: shot on ARRI Alexa with Cooke S4 prime lenses, fine 35mm film grain, deep focus (f/8), motivated practical light, realistic physics, faces 100% unobstructed, strictly NO smoke, strictly NOT a 3D render, NOT CGI, zero watermark, zero logos."
+  },
+  {
+    "clip_id": "SC-142",
+    "scene_name": "Castor Sounds the Bronze Horn — The Crew Celebrates",
+    "duration": 8,
+    "refs": [
+      "Castor"
+    ],
+    "source_media_id": "3152a235-af4f-462b-a78e-02551f826e41",
+    "panels": [
+      {
+        "panel": "TOP-LEFT",
+        "time": "0s",
+        "shot_size": "OTS Medium Shot",
+        "action": "[OTS Medium Shot] Castor ({{media:3152a235-af4f-462b-a78e-02551f826e41|castor_clean.jpg}}) in active physical motion as Castor raises his curved bronze signal horn to his lips on the rocky jetty and blows a triumphant blast across the cove, face 100% unobstructed."
+      },
+      {
+        "panel": "TOP-RIGHT",
+        "time": "3s",
+        "shot_size": "60-Deg Reverse MCU",
+        "action": "[60-Deg Reverse MCU] 60-degree angle shift: Castor ({{media:3152a235-af4f-462b-a78e-02551f826e41|castor_clean.jpg}}) driving the physical reaction as Castor raises his curved bronze signal horn to his lips on the rocky jetty and blows a triumphant blast across the cove."
+      },
+      {
+        "panel": "BOTTOM-LEFT",
+        "time": "6s",
+        "shot_size": "90-Deg Wide Framing",
+        "action": "[90-Deg Wide Framing] 90-degree angle shift: Castor ({{media:3152a235-af4f-462b-a78e-02551f826e41|castor_clean.jpg}}) advancing the physical action as on the galleon's main deck, the waiting sailors erupt in cheers and lower the jolly-boat."
+      },
+      {
+        "panel": "BOTTOM-RIGHT",
+        "time": "7s",
+        "shot_size": "Close-Up Detail Shot",
+        "action": "[Close-Up Detail Shot] Forward-momentum micro-hook framing: Castor ({{media:3152a235-af4f-462b-a78e-02551f826e41|castor_clean.jpg}}) completing the physical transition as on the galleon's main deck, the waiting sailors erupt in cheers and lower the jolly-boat, hands gripping physical props and face 100% unobstructed."
+      }
+    ],
+    "storyboard_prompt": "A film storyboard sheet, 16:9, made of FOUR photographic panels in a tight 2 by 2 grid, separated only by thin straight black lines; each panel is a 16:9 frame; no text, no numbers, no captions. All four panels are cinematic 35mm live-action feature-film stills of Location: sunlit coastal limestone sea-arch and tranquil turquoise cove where the wooden pirate galleon rides at anchor. Light: warm golden-pink Aegean sunrise reflecting off calm turquoise water; deep focus. Featuring {{media:3152a235-af4f-462b-a78e-02551f826e41|castor_clean.jpg}} (29-year-old clean-shaven navigator with short cropped jet-black hair, strictly NO beard, salt-stained dark brown leather cuirass and arrow quiver 1:1 matching reference).\nTOP-LEFT PANEL, second 0s: [OTS Medium Shot] Castor ({{media:3152a235-af4f-462b-a78e-02551f826e41|castor_clean.jpg}}) in active physical motion as Castor raises his curved bronze signal horn to his lips on the rocky jetty and blows a triumphant blast across the cove, face 100% unobstructed.\nTOP-RIGHT PANEL, second 3s: [60-Deg Reverse MCU] 60-degree angle shift: Castor ({{media:3152a235-af4f-462b-a78e-02551f826e41|castor_clean.jpg}}) driving the physical reaction as Castor raises his curved bronze signal horn to his lips on the rocky jetty and blows a triumphant blast across the cove.\nBOTTOM-LEFT PANEL, second 6s: [90-Deg Wide Framing] 90-degree angle shift: Castor ({{media:3152a235-af4f-462b-a78e-02551f826e41|castor_clean.jpg}}) advancing the physical action as on the galleon's main deck, the waiting sailors erupt in cheers and lower the jolly-boat.\nBOTTOM-RIGHT PANEL, second 7s: [Close-Up Detail Shot] Forward-momentum micro-hook framing: Castor ({{media:3152a235-af4f-462b-a78e-02551f826e41|castor_clean.jpg}}) completing the physical transition as on the galleon's main deck, the waiting sailors erupt in cheers and lower the jolly-boat, hands gripping physical props and face 100% unobstructed.\nCinematic feature-film look: shot on ARRI Alexa with Cooke S4 prime lenses, fine 35mm film grain, deep focus (f/8), motivated practical light, realistic physics, faces 100% unobstructed, strictly NO smoke, strictly NOT a 3D render, NOT CGI, zero watermark, zero logos."
+  },
+  {
+    "clip_id": "SC-143",
+    "scene_name": "Reunion on the Main Deck in Golden Morning Light",
+    "duration": 10,
+    "refs": [
+      "Nora",
+      "Castor",
+      "Heracles",
+      "Theron"
+    ],
+    "source_media_id": "62e117f8-0af7-484e-90a8-f79927105746",
+    "panels": [
+      {
+        "panel": "TOP-LEFT",
+        "time": "0s",
+        "shot_size": "Low-Angle MS",
+        "action": "[Low-Angle MS] Nora ({{media:62e117f8-0af7-484e-90a8-f79927105746|nora_clean.jpg}}) in active physical motion as Nora, Castor, Heracles, and Theron climb over the starboard oak bulwark onto the sunlit main deck, where the crew surrounds them clapping shoulders and embracing, face 100% unobstructed."
+      },
+      {
+        "panel": "TOP-RIGHT",
+        "time": "3s",
+        "shot_size": "60-Deg MCU",
+        "action": "[60-Deg MCU] 60-degree angle shift: Castor ({{media:3152a235-af4f-462b-a78e-02551f826e41|castor_clean.jpg}}) driving the physical reaction as Nora, Castor, Heracles, and Theron climb over the starboard oak bulwark onto the sunlit main deck, where the crew surrounds them clapping shoulders and embracing."
+      },
+      {
+        "panel": "BOTTOM-LEFT",
+        "time": "7s",
+        "shot_size": "90-Deg WS",
+        "action": "[90-Deg WS] 90-degree angle shift: Nora ({{media:62e117f8-0af7-484e-90a8-f79927105746|nora_clean.jpg}}) advancing the physical action as every surviving sailor stands whole on the warm oak planks."
+      },
+      {
+        "panel": "BOTTOM-RIGHT",
+        "time": "9s",
+        "shot_size": "High-Angle MS",
+        "action": "[High-Angle MS] Forward-momentum micro-hook framing: Castor ({{media:3152a235-af4f-462b-a78e-02551f826e41|castor_clean.jpg}}) completing the physical transition as every surviving sailor stands whole on the warm oak planks, hands gripping physical props and face 100% unobstructed."
+      }
+    ],
+    "storyboard_prompt": "A film storyboard sheet, 16:9, made of FOUR photographic panels in a tight 2 by 2 grid, separated only by thin straight black lines; each panel is a 16:9 frame; no text, no numbers, no captions. All four panels are cinematic 35mm live-action feature-film stills of Location: sunlit main deck and quarterdeck helm of the 17th-century wooden pirate galleon sailing across the open Aegean Sea at dawn. Light: radiant golden morning sunlight raking across weathered oak planks and billowing white canvas sails; deep focus. Featuring {{media:62e117f8-0af7-484e-90a8-f79927105746|nora_clean.jpg}} (28-year-old female captain with braided auburn-brown hair, freckled face, wearing navy wool seafarer brigandine armor 1:1 matching reference), {{media:3152a235-af4f-462b-a78e-02551f826e41|castor_clean.jpg}} (29-year-old clean-shaven navigator with short cropped jet-black hair, strictly NO beard, salt-stained dark brown leather cuirass and arrow quiver 1:1 matching reference), {{media:37a10133-8496-49e7-bd77-b5f261c5a43e|heracles_clean.jpg}} (38-year-old giant muscular boatswain with cropped dark-black hair, thick braided dark-black beard, scarred bare muscular arms, and sea-lion fur mantle 1:1 matching reference), {{media:7c5d994a-dabd-406b-a6c1-b9fa6473a612|theron_clean.jpg}} (58-year-old stranded navigator hermit with wild gray beard, ragged burlap tunic, and wooden staff 1:1 matching reference).\nTOP-LEFT PANEL, second 0s: [Low-Angle MS] Nora ({{media:62e117f8-0af7-484e-90a8-f79927105746|nora_clean.jpg}}) in active physical motion as Nora, Castor, Heracles, and Theron climb over the starboard oak bulwark onto the sunlit main deck, where the crew surrounds them clapping shoulders and embracing, face 100% unobstructed.\nTOP-RIGHT PANEL, second 3s: [60-Deg MCU] 60-degree angle shift: Castor ({{media:3152a235-af4f-462b-a78e-02551f826e41|castor_clean.jpg}}) driving the physical reaction as Nora, Castor, Heracles, and Theron climb over the starboard oak bulwark onto the sunlit main deck, where the crew surrounds them clapping shoulders and embracing.\nBOTTOM-LEFT PANEL, second 7s: [90-Deg WS] 90-degree angle shift: Nora ({{media:62e117f8-0af7-484e-90a8-f79927105746|nora_clean.jpg}}) advancing the physical action as every surviving sailor stands whole on the warm oak planks.\nBOTTOM-RIGHT PANEL, second 9s: [High-Angle MS] Forward-momentum micro-hook framing: Castor ({{media:3152a235-af4f-462b-a78e-02551f826e41|castor_clean.jpg}}) completing the physical transition as every surviving sailor stands whole on the warm oak planks, hands gripping physical props and face 100% unobstructed.\nCinematic feature-film look: shot on ARRI Alexa with Cooke S4 prime lenses, fine 35mm film grain, deep focus (f/8), motivated practical light, realistic physics, faces 100% unobstructed, strictly NO smoke, strictly NOT a 3D render, NOT CGI, zero watermark, zero logos."
+  },
+  {
+    "clip_id": "SC-144",
+    "scene_name": "Nora Raises the Single Golden Leaf Before the Crew",
+    "duration": 8,
+    "refs": [
+      "Nora"
+    ],
+    "source_media_id": "62e117f8-0af7-484e-90a8-f79927105746",
+    "panels": [
+      {
+        "panel": "TOP-LEFT",
+        "time": "0s",
+        "shot_size": "Three-Quarter MCU",
+        "action": "[Three-Quarter MCU] Nora ({{media:62e117f8-0af7-484e-90a8-f79927105746|nora_clean.jpg}}) in active physical motion as standing on the quarterdeck steps in warm sunrise light, Nora holds up the single luminous Golden Leaf between her fingers for the entire crew to see, face 100% unobstructed."
+      },
+      {
+        "panel": "TOP-RIGHT",
+        "time": "3s",
+        "shot_size": "75-Deg MS",
+        "action": "[75-Deg MS] 60-degree angle shift: Nora ({{media:62e117f8-0af7-484e-90a8-f79927105746|nora_clean.jpg}}) driving the physical reaction as standing on the quarterdeck steps in warm sunrise light, Nora holds up the single luminous Golden Leaf between her fingers for the entire crew to see."
+      },
+      {
+        "panel": "BOTTOM-LEFT",
+        "time": "6s",
+        "shot_size": "90-Deg CU",
+        "action": "[90-Deg CU] 90-degree angle shift: Nora ({{media:62e117f8-0af7-484e-90a8-f79927105746|nora_clean.jpg}}) advancing the physical action as the sailors raise their cutlasses and hats in a unified roar of triumph."
+      },
+      {
+        "panel": "BOTTOM-RIGHT",
+        "time": "7s",
+        "shot_size": "Wide Two-Shot",
+        "action": "[Wide Two-Shot] Forward-momentum micro-hook framing: Nora ({{media:62e117f8-0af7-484e-90a8-f79927105746|nora_clean.jpg}}) completing the physical transition as the sailors raise their cutlasses and hats in a unified roar of triumph, hands gripping physical props and face 100% unobstructed."
+      }
+    ],
+    "storyboard_prompt": "A film storyboard sheet, 16:9, made of FOUR photographic panels in a tight 2 by 2 grid, separated only by thin straight black lines; each panel is a 16:9 frame; no text, no numbers, no captions. All four panels are cinematic 35mm live-action feature-film stills of Location: sunlit main deck and quarterdeck helm of the 17th-century wooden pirate galleon sailing across the open Aegean Sea at dawn. Light: radiant golden morning sunlight raking across weathered oak planks and billowing white canvas sails; deep focus. Featuring {{media:62e117f8-0af7-484e-90a8-f79927105746|nora_clean.jpg}} (28-year-old female captain with braided auburn-brown hair, freckled face, wearing navy wool seafarer brigandine armor 1:1 matching reference).\nTOP-LEFT PANEL, second 0s: [Three-Quarter MCU] Nora ({{media:62e117f8-0af7-484e-90a8-f79927105746|nora_clean.jpg}}) in active physical motion as standing on the quarterdeck steps in warm sunrise light, Nora holds up the single luminous Golden Leaf between her fingers for the entire crew to see, face 100% unobstructed.\nTOP-RIGHT PANEL, second 3s: [75-Deg MS] 60-degree angle shift: Nora ({{media:62e117f8-0af7-484e-90a8-f79927105746|nora_clean.jpg}}) driving the physical reaction as standing on the quarterdeck steps in warm sunrise light, Nora holds up the single luminous Golden Leaf between her fingers for the entire crew to see.\nBOTTOM-LEFT PANEL, second 6s: [90-Deg CU] 90-degree angle shift: Nora ({{media:62e117f8-0af7-484e-90a8-f79927105746|nora_clean.jpg}}) advancing the physical action as the sailors raise their cutlasses and hats in a unified roar of triumph.\nBOTTOM-RIGHT PANEL, second 7s: [Wide Two-Shot] Forward-momentum micro-hook framing: Nora ({{media:62e117f8-0af7-484e-90a8-f79927105746|nora_clean.jpg}}) completing the physical transition as the sailors raise their cutlasses and hats in a unified roar of triumph, hands gripping physical props and face 100% unobstructed.\nCinematic feature-film look: shot on ARRI Alexa with Cooke S4 prime lenses, fine 35mm film grain, deep focus (f/8), motivated practical light, realistic physics, faces 100% unobstructed, strictly NO smoke, strictly NOT a 3D render, NOT CGI, zero watermark, zero logos."
+  },
+  {
+    "clip_id": "SC-145",
+    "scene_name": "Heracles Heaving the Main Anchor & Unfurling Canvas",
+    "duration": 10,
+    "refs": [
+      "Heracles"
+    ],
+    "source_media_id": "37a10133-8496-49e7-bd77-b5f261c5a43e",
+    "panels": [
+      {
+        "panel": "TOP-LEFT",
+        "time": "0s",
+        "shot_size": "Wide Dynamic Action Shot",
+        "action": "[Wide Dynamic Action Shot] Heracles ({{media:37a10133-8496-49e7-bd77-b5f261c5a43e|heracles_clean.jpg}}) in active physical motion as Heracles braces his muscular arms on the main capstan bars, heaving the dripping iron anchor up from the cove floor while white canvas sails unfurl overhead, face 100% unobstructed."
+      },
+      {
+        "panel": "TOP-RIGHT",
+        "time": "3s",
+        "shot_size": "60-Deg Low-Angle MCU",
+        "action": "[60-Deg Low-Angle MCU] 60-degree angle shift: Heracles ({{media:37a10133-8496-49e7-bd77-b5f261c5a43e|heracles_clean.jpg}}) driving the physical reaction as Heracles braces his muscular arms on the main capstan bars, heaving the dripping iron anchor up from the cove floor while white canvas sails unfurl overhead."
+      },
+      {
+        "panel": "BOTTOM-LEFT",
+        "time": "7s",
+        "shot_size": "90-Deg Insert CU",
+        "action": "[90-Deg Insert CU] 90-degree angle shift: Heracles ({{media:37a10133-8496-49e7-bd77-b5f261c5a43e|heracles_clean.jpg}}) advancing the physical action as the pirate ensign snaps taut in the fresh morning breeze at the mainmast peak."
+      },
+      {
+        "panel": "BOTTOM-RIGHT",
+        "time": "9s",
+        "shot_size": "Medium Tracking Shot",
+        "action": "[Medium Tracking Shot] Forward-momentum micro-hook framing: Heracles ({{media:37a10133-8496-49e7-bd77-b5f261c5a43e|heracles_clean.jpg}}) completing the physical transition as the pirate ensign snaps taut in the fresh morning breeze at the mainmast peak, hands gripping physical props and face 100% unobstructed."
+      }
+    ],
+    "storyboard_prompt": "A film storyboard sheet, 16:9, made of FOUR photographic panels in a tight 2 by 2 grid, separated only by thin straight black lines; each panel is a 16:9 frame; no text, no numbers, no captions. All four panels are cinematic 35mm live-action feature-film stills of Location: sunlit main deck and quarterdeck helm of the 17th-century wooden pirate galleon sailing across the open Aegean Sea at dawn. Light: radiant golden morning sunlight raking across weathered oak planks and billowing white canvas sails; deep focus. Featuring {{media:37a10133-8496-49e7-bd77-b5f261c5a43e|heracles_clean.jpg}} (38-year-old giant muscular boatswain with cropped dark-black hair, thick braided dark-black beard, scarred bare muscular arms, and sea-lion fur mantle 1:1 matching reference).\nTOP-LEFT PANEL, second 0s: [Wide Dynamic Action Shot] Heracles ({{media:37a10133-8496-49e7-bd77-b5f261c5a43e|heracles_clean.jpg}}) in active physical motion as Heracles braces his muscular arms on the main capstan bars, heaving the dripping iron anchor up from the cove floor while white canvas sails unfurl overhead, face 100% unobstructed.\nTOP-RIGHT PANEL, second 3s: [60-Deg Low-Angle MCU] 60-degree angle shift: Heracles ({{media:37a10133-8496-49e7-bd77-b5f261c5a43e|heracles_clean.jpg}}) driving the physical reaction as Heracles braces his muscular arms on the main capstan bars, heaving the dripping iron anchor up from the cove floor while white canvas sails unfurl overhead.\nBOTTOM-LEFT PANEL, second 7s: [90-Deg Insert CU] 90-degree angle shift: Heracles ({{media:37a10133-8496-49e7-bd77-b5f261c5a43e|heracles_clean.jpg}}) advancing the physical action as the pirate ensign snaps taut in the fresh morning breeze at the mainmast peak.\nBOTTOM-RIGHT PANEL, second 9s: [Medium Tracking Shot] Forward-momentum micro-hook framing: Heracles ({{media:37a10133-8496-49e7-bd77-b5f261c5a43e|heracles_clean.jpg}}) completing the physical transition as the pirate ensign snaps taut in the fresh morning breeze at the mainmast peak, hands gripping physical props and face 100% unobstructed.\nCinematic feature-film look: shot on ARRI Alexa with Cooke S4 prime lenses, fine 35mm film grain, deep focus (f/8), motivated practical light, realistic physics, faces 100% unobstructed, strictly NO smoke, strictly NOT a 3D render, NOT CGI, zero watermark, zero logos."
+  },
+  {
+    "clip_id": "SC-146",
+    "scene_name": "Theron at the Quarterdeck Binnacle Charting Due East",
+    "duration": 8,
+    "refs": [
+      "Nora",
+      "Theron"
+    ],
+    "source_media_id": "62e117f8-0af7-484e-90a8-f79927105746",
+    "panels": [
+      {
+        "panel": "TOP-LEFT",
+        "time": "0s",
+        "shot_size": "OTS Medium Shot",
+        "action": "[OTS Medium Shot] Nora ({{media:62e117f8-0af7-484e-90a8-f79927105746|nora_clean.jpg}}) in active physical motion as standing proudly beside the oak helm wheel in morning sunlight, veteran navigator Theron sights the rising sun through a brass spyglass and points due east, face 100% unobstructed."
+      },
+      {
+        "panel": "TOP-RIGHT",
+        "time": "3s",
+        "shot_size": "60-Deg Reverse MCU",
+        "action": "[60-Deg Reverse MCU] 60-degree angle shift: Theron ({{media:7c5d994a-dabd-406b-a6c1-b9fa6473a612|theron_clean.jpg}}) driving the physical reaction as standing proudly beside the oak helm wheel in morning sunlight, veteran navigator Theron sights the rising sun through a brass spyglass and points due east."
+      },
+      {
+        "panel": "BOTTOM-LEFT",
+        "time": "6s",
+        "shot_size": "90-Deg Wide Framing",
+        "action": "[90-Deg Wide Framing] 90-degree angle shift: Nora ({{media:62e117f8-0af7-484e-90a8-f79927105746|nora_clean.jpg}}) advancing the physical action as Castor lays out a clean sea-chart on the binnacle table beside him."
+      },
+      {
+        "panel": "BOTTOM-RIGHT",
+        "time": "7s",
+        "shot_size": "Close-Up Detail Shot",
+        "action": "[Close-Up Detail Shot] Forward-momentum micro-hook framing: Theron ({{media:7c5d994a-dabd-406b-a6c1-b9fa6473a612|theron_clean.jpg}}) completing the physical transition as Castor lays out a clean sea-chart on the binnacle table beside him, hands gripping physical props and face 100% unobstructed."
+      }
+    ],
+    "storyboard_prompt": "A film storyboard sheet, 16:9, made of FOUR photographic panels in a tight 2 by 2 grid, separated only by thin straight black lines; each panel is a 16:9 frame; no text, no numbers, no captions. All four panels are cinematic 35mm live-action feature-film stills of Location: sunlit main deck and quarterdeck helm of the 17th-century wooden pirate galleon sailing across the open Aegean Sea at dawn. Light: radiant golden morning sunlight raking across weathered oak planks and billowing white canvas sails; deep focus. Featuring {{media:62e117f8-0af7-484e-90a8-f79927105746|nora_clean.jpg}} (28-year-old female captain with braided auburn-brown hair, freckled face, wearing navy wool seafarer brigandine armor 1:1 matching reference), {{media:7c5d994a-dabd-406b-a6c1-b9fa6473a612|theron_clean.jpg}} (58-year-old stranded navigator hermit with wild gray beard, ragged burlap tunic, and wooden staff 1:1 matching reference).\nTOP-LEFT PANEL, second 0s: [OTS Medium Shot] Nora ({{media:62e117f8-0af7-484e-90a8-f79927105746|nora_clean.jpg}}) in active physical motion as standing proudly beside the oak helm wheel in morning sunlight, veteran navigator Theron sights the rising sun through a brass spyglass and points due east, face 100% unobstructed.\nTOP-RIGHT PANEL, second 3s: [60-Deg Reverse MCU] 60-degree angle shift: Theron ({{media:7c5d994a-dabd-406b-a6c1-b9fa6473a612|theron_clean.jpg}}) driving the physical reaction as standing proudly beside the oak helm wheel in morning sunlight, veteran navigator Theron sights the rising sun through a brass spyglass and points due east.\nBOTTOM-LEFT PANEL, second 6s: [90-Deg Wide Framing] 90-degree angle shift: Nora ({{media:62e117f8-0af7-484e-90a8-f79927105746|nora_clean.jpg}}) advancing the physical action as Castor lays out a clean sea-chart on the binnacle table beside him.\nBOTTOM-RIGHT PANEL, second 7s: [Close-Up Detail Shot] Forward-momentum micro-hook framing: Theron ({{media:7c5d994a-dabd-406b-a6c1-b9fa6473a612|theron_clean.jpg}}) completing the physical transition as Castor lays out a clean sea-chart on the binnacle table beside him, hands gripping physical props and face 100% unobstructed.\nCinematic feature-film look: shot on ARRI Alexa with Cooke S4 prime lenses, fine 35mm film grain, deep focus (f/8), motivated practical light, realistic physics, faces 100% unobstructed, strictly NO smoke, strictly NOT a 3D render, NOT CGI, zero watermark, zero logos."
+  },
+  {
+    "clip_id": "SC-147",
+    "scene_name": "Nora at the Helm — The Call to Freedom",
+    "duration": 8,
+    "refs": [
+      "Nora"
+    ],
+    "source_media_id": "62e117f8-0af7-484e-90a8-f79927105746",
+    "panels": [
+      {
+        "panel": "TOP-LEFT",
+        "time": "0s",
+        "shot_size": "Low-Angle MS",
+        "action": "[Low-Angle MS] Nora ({{media:62e117f8-0af7-484e-90a8-f79927105746|nora_clean.jpg}}) in active physical motion as Captain Nora grips the oak spokes of the helm wheel with both hands, her freckled face radiant in the golden dawn as she spins the wheel toward the open sea, face 100% unobstructed."
+      },
+      {
+        "panel": "TOP-RIGHT",
+        "time": "3s",
+        "shot_size": "60-Deg MCU",
+        "action": "[60-Deg MCU] 60-degree angle shift: Nora ({{media:62e117f8-0af7-484e-90a8-f79927105746|nora_clean.jpg}}) driving the physical reaction as Captain Nora grips the oak spokes of the helm wheel with both hands, her freckled face radiant in the golden dawn as she spins the wheel toward the open sea."
+      },
+      {
+        "panel": "BOTTOM-LEFT",
+        "time": "6s",
+        "shot_size": "90-Deg WS",
+        "action": "[90-Deg WS] 90-degree angle shift: Nora ({{media:62e117f8-0af7-484e-90a8-f79927105746|nora_clean.jpg}}) advancing the physical action as Theron and Castor flank her on the quarterdeck."
+      },
+      {
+        "panel": "BOTTOM-RIGHT",
+        "time": "7s",
+        "shot_size": "High-Angle MS",
+        "action": "[High-Angle MS] Forward-momentum micro-hook framing: Nora ({{media:62e117f8-0af7-484e-90a8-f79927105746|nora_clean.jpg}}) completing the physical transition as Theron and Castor flank her on the quarterdeck, hands gripping physical props and face 100% unobstructed."
+      }
+    ],
+    "storyboard_prompt": "A film storyboard sheet, 16:9, made of FOUR photographic panels in a tight 2 by 2 grid, separated only by thin straight black lines; each panel is a 16:9 frame; no text, no numbers, no captions. All four panels are cinematic 35mm live-action feature-film stills of Location: sunlit main deck and quarterdeck helm of the 17th-century wooden pirate galleon sailing across the open Aegean Sea at dawn. Light: radiant golden morning sunlight raking across weathered oak planks and billowing white canvas sails; deep focus. Featuring {{media:62e117f8-0af7-484e-90a8-f79927105746|nora_clean.jpg}} (28-year-old female captain with braided auburn-brown hair, freckled face, wearing navy wool seafarer brigandine armor 1:1 matching reference).\nTOP-LEFT PANEL, second 0s: [Low-Angle MS] Nora ({{media:62e117f8-0af7-484e-90a8-f79927105746|nora_clean.jpg}}) in active physical motion as Captain Nora grips the oak spokes of the helm wheel with both hands, her freckled face radiant in the golden dawn as she spins the wheel toward the open sea, face 100% unobstructed.\nTOP-RIGHT PANEL, second 3s: [60-Deg MCU] 60-degree angle shift: Nora ({{media:62e117f8-0af7-484e-90a8-f79927105746|nora_clean.jpg}}) driving the physical reaction as Captain Nora grips the oak spokes of the helm wheel with both hands, her freckled face radiant in the golden dawn as she spins the wheel toward the open sea.\nBOTTOM-LEFT PANEL, second 6s: [90-Deg WS] 90-degree angle shift: Nora ({{media:62e117f8-0af7-484e-90a8-f79927105746|nora_clean.jpg}}) advancing the physical action as Theron and Castor flank her on the quarterdeck.\nBOTTOM-RIGHT PANEL, second 7s: [High-Angle MS] Forward-momentum micro-hook framing: Nora ({{media:62e117f8-0af7-484e-90a8-f79927105746|nora_clean.jpg}}) completing the physical transition as Theron and Castor flank her on the quarterdeck, hands gripping physical props and face 100% unobstructed.\nCinematic feature-film look: shot on ARRI Alexa with Cooke S4 prime lenses, fine 35mm film grain, deep focus (f/8), motivated practical light, realistic physics, faces 100% unobstructed, strictly NO smoke, strictly NOT a 3D render, NOT CGI, zero watermark, zero logos."
+  },
+  {
+    "clip_id": "SC-148",
+    "scene_name": "The Galleon Slicing Out of the Cove into Open Ocean",
+    "duration": 10,
+    "refs": [
+      "Nora"
+    ],
+    "source_media_id": "62e117f8-0af7-484e-90a8-f79927105746",
+    "panels": [
+      {
+        "panel": "TOP-LEFT",
+        "time": "0s",
+        "shot_size": "Three-Quarter MCU",
+        "action": "[Three-Quarter MCU] Nora ({{media:62e117f8-0af7-484e-90a8-f79927105746|nora_clean.jpg}}) in active physical motion as wide exterior shot as the repaired wooden pirate galleon surges out of the limestone cove, its white bow wave cleaving the deep sapphire swells of the open Aegean, face 100% unobstructed."
+      },
+      {
+        "panel": "TOP-RIGHT",
+        "time": "3s",
+        "shot_size": "75-Deg MS",
+        "action": "[75-Deg MS] 60-degree angle shift: Nora ({{media:62e117f8-0af7-484e-90a8-f79927105746|nora_clean.jpg}}) driving the physical reaction as wide exterior shot as the repaired wooden pirate galleon surges out of the limestone cove, its white bow wave cleaving the deep sapphire swells of the open Aegean."
+      },
+      {
+        "panel": "BOTTOM-LEFT",
+        "time": "7s",
+        "shot_size": "90-Deg CU",
+        "action": "[90-Deg CU] 90-degree angle shift: Nora ({{media:62e117f8-0af7-484e-90a8-f79927105746|nora_clean.jpg}}) advancing the physical action as Nora, Castor, Heracles, and Theron stand visible on the sunlit quarterdeck."
+      },
+      {
+        "panel": "BOTTOM-RIGHT",
+        "time": "9s",
+        "shot_size": "Wide Two-Shot",
+        "action": "[Wide Two-Shot] Forward-momentum micro-hook framing: Nora ({{media:62e117f8-0af7-484e-90a8-f79927105746|nora_clean.jpg}}) completing the physical transition as Nora, Castor, Heracles, and Theron stand visible on the sunlit quarterdeck, hands gripping physical props and face 100% unobstructed."
+      }
+    ],
+    "storyboard_prompt": "A film storyboard sheet, 16:9, made of FOUR photographic panels in a tight 2 by 2 grid, separated only by thin straight black lines; each panel is a 16:9 frame; no text, no numbers, no captions. All four panels are cinematic 35mm live-action feature-film stills of Location: sunlit main deck and quarterdeck helm of the 17th-century wooden pirate galleon sailing across the open Aegean Sea at dawn. Light: radiant golden morning sunlight raking across weathered oak planks and billowing white canvas sails; deep focus. Featuring {{media:62e117f8-0af7-484e-90a8-f79927105746|nora_clean.jpg}} (28-year-old female captain with braided auburn-brown hair, freckled face, wearing navy wool seafarer brigandine armor 1:1 matching reference).\nTOP-LEFT PANEL, second 0s: [Three-Quarter MCU] Nora ({{media:62e117f8-0af7-484e-90a8-f79927105746|nora_clean.jpg}}) in active physical motion as wide exterior shot as the repaired wooden pirate galleon surges out of the limestone cove, its white bow wave cleaving the deep sapphire swells of the open Aegean, face 100% unobstructed.\nTOP-RIGHT PANEL, second 3s: [75-Deg MS] 60-degree angle shift: Nora ({{media:62e117f8-0af7-484e-90a8-f79927105746|nora_clean.jpg}}) driving the physical reaction as wide exterior shot as the repaired wooden pirate galleon surges out of the limestone cove, its white bow wave cleaving the deep sapphire swells of the open Aegean.\nBOTTOM-LEFT PANEL, second 7s: [90-Deg CU] 90-degree angle shift: Nora ({{media:62e117f8-0af7-484e-90a8-f79927105746|nora_clean.jpg}}) advancing the physical action as Nora, Castor, Heracles, and Theron stand visible on the sunlit quarterdeck.\nBOTTOM-RIGHT PANEL, second 9s: [Wide Two-Shot] Forward-momentum micro-hook framing: Nora ({{media:62e117f8-0af7-484e-90a8-f79927105746|nora_clean.jpg}}) completing the physical transition as Nora, Castor, Heracles, and Theron stand visible on the sunlit quarterdeck, hands gripping physical props and face 100% unobstructed.\nCinematic feature-film look: shot on ARRI Alexa with Cooke S4 prime lenses, fine 35mm film grain, deep focus (f/8), motivated practical light, realistic physics, faces 100% unobstructed, strictly NO smoke, strictly NOT a 3D render, NOT CGI, zero watermark, zero logos."
+  },
+  {
+    "clip_id": "SC-149",
+    "scene_name": "Full Canvas Billowing in the Morning Trade Wind",
+    "duration": 8,
+    "refs": [
+      "Nora"
+    ],
+    "source_media_id": "62e117f8-0af7-484e-90a8-f79927105746",
+    "panels": [
+      {
+        "panel": "TOP-LEFT",
+        "time": "0s",
+        "shot_size": "Wide Dynamic Action Shot",
+        "action": "[Wide Dynamic Action Shot] Nora ({{media:62e117f8-0af7-484e-90a8-f79927105746|nora_clean.jpg}}) in active physical motion as low-angle shot on the main deck looking up as the massive square mainsail and topsail belly out taut against the clear golden-blue morning sky, face 100% unobstructed."
+      },
+      {
+        "panel": "TOP-RIGHT",
+        "time": "3s",
+        "shot_size": "60-Deg Low-Angle MCU",
+        "action": "[60-Deg Low-Angle MCU] 60-degree angle shift: Nora ({{media:62e117f8-0af7-484e-90a8-f79927105746|nora_clean.jpg}}) driving the physical reaction as low-angle shot on the main deck looking up as the massive square mainsail and topsail belly out taut against the clear golden-blue morning sky."
+      },
+      {
+        "panel": "BOTTOM-LEFT",
+        "time": "6s",
+        "shot_size": "90-Deg Insert CU",
+        "action": "[90-Deg Insert CU] 90-degree angle shift: Nora ({{media:62e117f8-0af7-484e-90a8-f79927105746|nora_clean.jpg}}) advancing the physical action as Nora checks the trim of the sheets from the quarterdeck rail."
+      },
+      {
+        "panel": "BOTTOM-RIGHT",
+        "time": "7s",
+        "shot_size": "Medium Tracking Shot",
+        "action": "[Medium Tracking Shot] Forward-momentum micro-hook framing: Nora ({{media:62e117f8-0af7-484e-90a8-f79927105746|nora_clean.jpg}}) completing the physical transition as Nora checks the trim of the sheets from the quarterdeck rail, hands gripping physical props and face 100% unobstructed."
+      }
+    ],
+    "storyboard_prompt": "A film storyboard sheet, 16:9, made of FOUR photographic panels in a tight 2 by 2 grid, separated only by thin straight black lines; each panel is a 16:9 frame; no text, no numbers, no captions. All four panels are cinematic 35mm live-action feature-film stills of Location: sunlit main deck and quarterdeck helm of the 17th-century wooden pirate galleon sailing across the open Aegean Sea at dawn. Light: radiant golden morning sunlight raking across weathered oak planks and billowing white canvas sails; deep focus. Featuring {{media:62e117f8-0af7-484e-90a8-f79927105746|nora_clean.jpg}} (28-year-old female captain with braided auburn-brown hair, freckled face, wearing navy wool seafarer brigandine armor 1:1 matching reference).\nTOP-LEFT PANEL, second 0s: [Wide Dynamic Action Shot] Nora ({{media:62e117f8-0af7-484e-90a8-f79927105746|nora_clean.jpg}}) in active physical motion as low-angle shot on the main deck looking up as the massive square mainsail and topsail belly out taut against the clear golden-blue morning sky, face 100% unobstructed.\nTOP-RIGHT PANEL, second 3s: [60-Deg Low-Angle MCU] 60-degree angle shift: Nora ({{media:62e117f8-0af7-484e-90a8-f79927105746|nora_clean.jpg}}) driving the physical reaction as low-angle shot on the main deck looking up as the massive square mainsail and topsail belly out taut against the clear golden-blue morning sky.\nBOTTOM-LEFT PANEL, second 6s: [90-Deg Insert CU] 90-degree angle shift: Nora ({{media:62e117f8-0af7-484e-90a8-f79927105746|nora_clean.jpg}}) advancing the physical action as Nora checks the trim of the sheets from the quarterdeck rail.\nBOTTOM-RIGHT PANEL, second 7s: [Medium Tracking Shot] Forward-momentum micro-hook framing: Nora ({{media:62e117f8-0af7-484e-90a8-f79927105746|nora_clean.jpg}}) completing the physical transition as Nora checks the trim of the sheets from the quarterdeck rail, hands gripping physical props and face 100% unobstructed.\nCinematic feature-film look: shot on ARRI Alexa with Cooke S4 prime lenses, fine 35mm film grain, deep focus (f/8), motivated practical light, realistic physics, faces 100% unobstructed, strictly NO smoke, strictly NOT a 3D render, NOT CGI, zero watermark, zero logos."
+  },
+  {
+    "clip_id": "SC-150",
+    "scene_name": "The Golden Leaf Secured Inside the Brass Binnacle",
+    "duration": 6,
+    "refs": [
+      "Nora"
+    ],
+    "source_media_id": "62e117f8-0af7-484e-90a8-f79927105746",
+    "panels": [
+      {
+        "panel": "TOP-LEFT",
+        "time": "0s",
+        "shot_size": "OTS Medium Shot",
+        "action": "[OTS Medium Shot] Nora ({{media:62e117f8-0af7-484e-90a8-f79927105746|nora_clean.jpg}}) in active physical motion as close-up at the quarterdeck helm as Nora places the luminous Golden Leaf beside the brass compass rose inside the glass binnacle housing, face 100% unobstructed."
+      },
+      {
+        "panel": "TOP-RIGHT",
+        "time": "2s",
+        "shot_size": "60-Deg Reverse MCU",
+        "action": "[60-Deg Reverse MCU] 60-degree angle shift: Nora ({{media:62e117f8-0af7-484e-90a8-f79927105746|nora_clean.jpg}}) driving the physical reaction as close-up at the quarterdeck helm as Nora places the luminous Golden Leaf beside the brass compass rose inside the glass binnacle housing."
+      },
+      {
+        "panel": "BOTTOM-LEFT",
+        "time": "4s",
+        "shot_size": "90-Deg Wide Framing",
+        "action": "[90-Deg Wide Framing] 90-degree angle shift: Nora ({{media:62e117f8-0af7-484e-90a8-f79927105746|nora_clean.jpg}}) advancing the physical action as its warm amber glow steadies the compass needle pointing due east."
+      },
+      {
+        "panel": "BOTTOM-RIGHT",
+        "time": "5s",
+        "shot_size": "Close-Up Detail Shot",
+        "action": "[Close-Up Detail Shot] Forward-momentum micro-hook framing: Nora ({{media:62e117f8-0af7-484e-90a8-f79927105746|nora_clean.jpg}}) completing the physical transition as its warm amber glow steadies the compass needle pointing due east, hands gripping physical props and face 100% unobstructed."
+      }
+    ],
+    "storyboard_prompt": "A film storyboard sheet, 16:9, made of FOUR photographic panels in a tight 2 by 2 grid, separated only by thin straight black lines; each panel is a 16:9 frame; no text, no numbers, no captions. All four panels are cinematic 35mm live-action feature-film stills of Location: sunlit main deck and quarterdeck helm of the 17th-century wooden pirate galleon sailing across the open Aegean Sea at dawn. Light: radiant golden morning sunlight raking across weathered oak planks and billowing white canvas sails; deep focus. Featuring {{media:62e117f8-0af7-484e-90a8-f79927105746|nora_clean.jpg}} (28-year-old female captain with braided auburn-brown hair, freckled face, wearing navy wool seafarer brigandine armor 1:1 matching reference).\nTOP-LEFT PANEL, second 0s: [OTS Medium Shot] Nora ({{media:62e117f8-0af7-484e-90a8-f79927105746|nora_clean.jpg}}) in active physical motion as close-up at the quarterdeck helm as Nora places the luminous Golden Leaf beside the brass compass rose inside the glass binnacle housing, face 100% unobstructed.\nTOP-RIGHT PANEL, second 2s: [60-Deg Reverse MCU] 60-degree angle shift: Nora ({{media:62e117f8-0af7-484e-90a8-f79927105746|nora_clean.jpg}}) driving the physical reaction as close-up at the quarterdeck helm as Nora places the luminous Golden Leaf beside the brass compass rose inside the glass binnacle housing.\nBOTTOM-LEFT PANEL, second 4s: [90-Deg Wide Framing] 90-degree angle shift: Nora ({{media:62e117f8-0af7-484e-90a8-f79927105746|nora_clean.jpg}}) advancing the physical action as its warm amber glow steadies the compass needle pointing due east.\nBOTTOM-RIGHT PANEL, second 5s: [Close-Up Detail Shot] Forward-momentum micro-hook framing: Nora ({{media:62e117f8-0af7-484e-90a8-f79927105746|nora_clean.jpg}}) completing the physical transition as its warm amber glow steadies the compass needle pointing due east, hands gripping physical props and face 100% unobstructed.\nCinematic feature-film look: shot on ARRI Alexa with Cooke S4 prime lenses, fine 35mm film grain, deep focus (f/8), motivated practical light, realistic physics, faces 100% unobstructed, strictly NO smoke, strictly NOT a 3D render, NOT CGI, zero watermark, zero logos."
+  },
+  {
+    "clip_id": "SC-151",
+    "scene_name": "The Crew United on the Sunlit Foredeck",
+    "duration": 10,
+    "refs": [
+      "Nora"
+    ],
+    "source_media_id": "62e117f8-0af7-484e-90a8-f79927105746",
+    "panels": [
+      {
+        "panel": "TOP-LEFT",
+        "time": "0s",
+        "shot_size": "Low-Angle MS",
+        "action": "[Low-Angle MS] Nora ({{media:62e117f8-0af7-484e-90a8-f79927105746|nora_clean.jpg}}) in active physical motion as tracking shot across the sunlit main deck as Heracles coils the heavy hawsers, Castor checks the rigging, and Theron shares a laugh with Nora at the wheel, face 100% unobstructed."
+      },
+      {
+        "panel": "TOP-RIGHT",
+        "time": "3s",
+        "shot_size": "60-Deg MCU",
+        "action": "[60-Deg MCU] 60-degree angle shift: Nora ({{media:62e117f8-0af7-484e-90a8-f79927105746|nora_clean.jpg}}) driving the physical reaction as tracking shot across the sunlit main deck as Heracles coils the heavy hawsers, Castor checks the rigging, and Theron shares a laugh with Nora at the wheel."
+      },
+      {
+        "panel": "BOTTOM-LEFT",
+        "time": "7s",
+        "shot_size": "90-Deg WS",
+        "action": "[90-Deg WS] 90-degree angle shift: Nora ({{media:62e117f8-0af7-484e-90a8-f79927105746|nora_clean.jpg}}) advancing the physical action as warm golden morning light bathes the weathered oak timbers."
+      },
+      {
+        "panel": "BOTTOM-RIGHT",
+        "time": "9s",
+        "shot_size": "High-Angle MS",
+        "action": "[High-Angle MS] Forward-momentum micro-hook framing: Nora ({{media:62e117f8-0af7-484e-90a8-f79927105746|nora_clean.jpg}}) completing the physical transition as warm golden morning light bathes the weathered oak timbers, hands gripping physical props and face 100% unobstructed."
+      }
+    ],
+    "storyboard_prompt": "A film storyboard sheet, 16:9, made of FOUR photographic panels in a tight 2 by 2 grid, separated only by thin straight black lines; each panel is a 16:9 frame; no text, no numbers, no captions. All four panels are cinematic 35mm live-action feature-film stills of Location: sunlit main deck and quarterdeck helm of the 17th-century wooden pirate galleon sailing across the open Aegean Sea at dawn. Light: radiant golden morning sunlight raking across weathered oak planks and billowing white canvas sails; deep focus. Featuring {{media:62e117f8-0af7-484e-90a8-f79927105746|nora_clean.jpg}} (28-year-old female captain with braided auburn-brown hair, freckled face, wearing navy wool seafarer brigandine armor 1:1 matching reference).\nTOP-LEFT PANEL, second 0s: [Low-Angle MS] Nora ({{media:62e117f8-0af7-484e-90a8-f79927105746|nora_clean.jpg}}) in active physical motion as tracking shot across the sunlit main deck as Heracles coils the heavy hawsers, Castor checks the rigging, and Theron shares a laugh with Nora at the wheel, face 100% unobstructed.\nTOP-RIGHT PANEL, second 3s: [60-Deg MCU] 60-degree angle shift: Nora ({{media:62e117f8-0af7-484e-90a8-f79927105746|nora_clean.jpg}}) driving the physical reaction as tracking shot across the sunlit main deck as Heracles coils the heavy hawsers, Castor checks the rigging, and Theron shares a laugh with Nora at the wheel.\nBOTTOM-LEFT PANEL, second 7s: [90-Deg WS] 90-degree angle shift: Nora ({{media:62e117f8-0af7-484e-90a8-f79927105746|nora_clean.jpg}}) advancing the physical action as warm golden morning light bathes the weathered oak timbers.\nBOTTOM-RIGHT PANEL, second 9s: [High-Angle MS] Forward-momentum micro-hook framing: Nora ({{media:62e117f8-0af7-484e-90a8-f79927105746|nora_clean.jpg}}) completing the physical transition as warm golden morning light bathes the weathered oak timbers, hands gripping physical props and face 100% unobstructed.\nCinematic feature-film look: shot on ARRI Alexa with Cooke S4 prime lenses, fine 35mm film grain, deep focus (f/8), motivated practical light, realistic physics, faces 100% unobstructed, strictly NO smoke, strictly NOT a 3D render, NOT CGI, zero watermark, zero logos."
+  },
+  {
+    "clip_id": "SC-152",
+    "scene_name": "The Karst Island Receding on the Western Horizon",
+    "duration": 8,
+    "refs": [
+      "Nora"
+    ],
+    "source_media_id": "62e117f8-0af7-484e-90a8-f79927105746",
+    "panels": [
+      {
+        "panel": "TOP-LEFT",
+        "time": "0s",
+        "shot_size": "Three-Quarter MCU",
+        "action": "[Three-Quarter MCU] Nora ({{media:62e117f8-0af7-484e-90a8-f79927105746|nora_clean.jpg}}) in active physical motion as looking aft over the carved oak taffrail as the jagged karst island of the Golden Tree recedes into the golden morning mist behind the ship's foaming white wake, face 100% unobstructed."
+      },
+      {
+        "panel": "TOP-RIGHT",
+        "time": "3s",
+        "shot_size": "75-Deg MS",
+        "action": "[75-Deg MS] 60-degree angle shift: Nora ({{media:62e117f8-0af7-484e-90a8-f79927105746|nora_clean.jpg}}) driving the physical reaction as looking aft over the carved oak taffrail as the jagged karst island of the Golden Tree recedes into the golden morning mist behind the ship's foaming white wake."
+      },
+      {
+        "panel": "BOTTOM-LEFT",
+        "time": "6s",
+        "shot_size": "90-Deg CU",
+        "action": "[90-Deg CU] 90-degree angle shift: Nora ({{media:62e117f8-0af7-484e-90a8-f79927105746|nora_clean.jpg}}) advancing the physical action as Nora turns her back on the island and faces forward toward the bow."
+      },
+      {
+        "panel": "BOTTOM-RIGHT",
+        "time": "7s",
+        "shot_size": "Wide Two-Shot",
+        "action": "[Wide Two-Shot] Forward-momentum micro-hook framing: Nora ({{media:62e117f8-0af7-484e-90a8-f79927105746|nora_clean.jpg}}) completing the physical transition as Nora turns her back on the island and faces forward toward the bow, hands gripping physical props and face 100% unobstructed."
+      }
+    ],
+    "storyboard_prompt": "A film storyboard sheet, 16:9, made of FOUR photographic panels in a tight 2 by 2 grid, separated only by thin straight black lines; each panel is a 16:9 frame; no text, no numbers, no captions. All four panels are cinematic 35mm live-action feature-film stills of Location: sunlit main deck and quarterdeck helm of the 17th-century wooden pirate galleon sailing across the open Aegean Sea at dawn. Light: radiant golden morning sunlight raking across weathered oak planks and billowing white canvas sails; deep focus. Featuring {{media:62e117f8-0af7-484e-90a8-f79927105746|nora_clean.jpg}} (28-year-old female captain with braided auburn-brown hair, freckled face, wearing navy wool seafarer brigandine armor 1:1 matching reference).\nTOP-LEFT PANEL, second 0s: [Three-Quarter MCU] Nora ({{media:62e117f8-0af7-484e-90a8-f79927105746|nora_clean.jpg}}) in active physical motion as looking aft over the carved oak taffrail as the jagged karst island of the Golden Tree recedes into the golden morning mist behind the ship's foaming white wake, face 100% unobstructed.\nTOP-RIGHT PANEL, second 3s: [75-Deg MS] 60-degree angle shift: Nora ({{media:62e117f8-0af7-484e-90a8-f79927105746|nora_clean.jpg}}) driving the physical reaction as looking aft over the carved oak taffrail as the jagged karst island of the Golden Tree recedes into the golden morning mist behind the ship's foaming white wake.\nBOTTOM-LEFT PANEL, second 6s: [90-Deg CU] 90-degree angle shift: Nora ({{media:62e117f8-0af7-484e-90a8-f79927105746|nora_clean.jpg}}) advancing the physical action as Nora turns her back on the island and faces forward toward the bow.\nBOTTOM-RIGHT PANEL, second 7s: [Wide Two-Shot] Forward-momentum micro-hook framing: Nora ({{media:62e117f8-0af7-484e-90a8-f79927105746|nora_clean.jpg}}) completing the physical transition as Nora turns her back on the island and faces forward toward the bow, hands gripping physical props and face 100% unobstructed.\nCinematic feature-film look: shot on ARRI Alexa with Cooke S4 prime lenses, fine 35mm film grain, deep focus (f/8), motivated practical light, realistic physics, faces 100% unobstructed, strictly NO smoke, strictly NOT a 3D render, NOT CGI, zero watermark, zero logos."
+  },
+  {
+    "clip_id": "SC-153",
+    "scene_name": "Sailing Across the Endless Golden-Sapphire Aegean",
+    "duration": 10,
+    "refs": [
+      "Nora"
+    ],
+    "source_media_id": "62e117f8-0af7-484e-90a8-f79927105746",
+    "panels": [
+      {
+        "panel": "TOP-LEFT",
+        "time": "0s",
+        "shot_size": "Wide Dynamic Action Shot",
+        "action": "[Wide Dynamic Action Shot] Nora ({{media:62e117f8-0af7-484e-90a8-f79927105746|nora_clean.jpg}}) in active physical motion as high-angle wide cinematic shot of the lone wooden galleon under full sail gliding across the vast, sparkling sapphire expanse of the morning Aegean Sea, face 100% unobstructed."
+      },
+      {
+        "panel": "TOP-RIGHT",
+        "time": "3s",
+        "shot_size": "60-Deg Low-Angle MCU",
+        "action": "[60-Deg Low-Angle MCU] 60-degree angle shift: Nora ({{media:62e117f8-0af7-484e-90a8-f79927105746|nora_clean.jpg}}) driving the physical reaction as high-angle wide cinematic shot of the lone wooden galleon under full sail gliding across the vast, sparkling sapphire expanse of the morning Aegean Sea."
+      },
+      {
+        "panel": "BOTTOM-LEFT",
+        "time": "7s",
+        "shot_size": "90-Deg Insert CU",
+        "action": "[90-Deg Insert CU] 90-degree angle shift: Nora ({{media:62e117f8-0af7-484e-90a8-f79927105746|nora_clean.jpg}}) advancing the physical action as Nora stands at the helm with her crew united aboard."
+      },
+      {
+        "panel": "BOTTOM-RIGHT",
+        "time": "9s",
+        "shot_size": "Medium Tracking Shot",
+        "action": "[Medium Tracking Shot] Forward-momentum micro-hook framing: Nora ({{media:62e117f8-0af7-484e-90a8-f79927105746|nora_clean.jpg}}) completing the physical transition as Nora stands at the helm with her crew united aboard, hands gripping physical props and face 100% unobstructed."
+      }
+    ],
+    "storyboard_prompt": "A film storyboard sheet, 16:9, made of FOUR photographic panels in a tight 2 by 2 grid, separated only by thin straight black lines; each panel is a 16:9 frame; no text, no numbers, no captions. All four panels are cinematic 35mm live-action feature-film stills of Location: sunlit main deck and quarterdeck helm of the 17th-century wooden pirate galleon sailing across the open Aegean Sea at dawn. Light: radiant golden morning sunlight raking across weathered oak planks and billowing white canvas sails; deep focus. Featuring {{media:62e117f8-0af7-484e-90a8-f79927105746|nora_clean.jpg}} (28-year-old female captain with braided auburn-brown hair, freckled face, wearing navy wool seafarer brigandine armor 1:1 matching reference).\nTOP-LEFT PANEL, second 0s: [Wide Dynamic Action Shot] Nora ({{media:62e117f8-0af7-484e-90a8-f79927105746|nora_clean.jpg}}) in active physical motion as high-angle wide cinematic shot of the lone wooden galleon under full sail gliding across the vast, sparkling sapphire expanse of the morning Aegean Sea, face 100% unobstructed.\nTOP-RIGHT PANEL, second 3s: [60-Deg Low-Angle MCU] 60-degree angle shift: Nora ({{media:62e117f8-0af7-484e-90a8-f79927105746|nora_clean.jpg}}) driving the physical reaction as high-angle wide cinematic shot of the lone wooden galleon under full sail gliding across the vast, sparkling sapphire expanse of the morning Aegean Sea.\nBOTTOM-LEFT PANEL, second 7s: [90-Deg Insert CU] 90-degree angle shift: Nora ({{media:62e117f8-0af7-484e-90a8-f79927105746|nora_clean.jpg}}) advancing the physical action as Nora stands at the helm with her crew united aboard.\nBOTTOM-RIGHT PANEL, second 9s: [Medium Tracking Shot] Forward-momentum micro-hook framing: Nora ({{media:62e117f8-0af7-484e-90a8-f79927105746|nora_clean.jpg}}) completing the physical transition as Nora stands at the helm with her crew united aboard, hands gripping physical props and face 100% unobstructed.\nCinematic feature-film look: shot on ARRI Alexa with Cooke S4 prime lenses, fine 35mm film grain, deep focus (f/8), motivated practical light, realistic physics, faces 100% unobstructed, strictly NO smoke, strictly NOT a 3D render, NOT CGI, zero watermark, zero logos."
+  },
+  {
+    "clip_id": "SC-154",
+    "scene_name": "Final Horizon — Into the Sunrise Swell",
+    "duration": 10,
+    "refs": [
+      "Nora"
+    ],
+    "source_media_id": "62e117f8-0af7-484e-90a8-f79927105746",
+    "panels": [
+      {
+        "panel": "TOP-LEFT",
+        "time": "0s",
+        "shot_size": "OTS Medium Shot",
+        "action": "[OTS Medium Shot] Nora ({{media:62e117f8-0af7-484e-90a8-f79927105746|nora_clean.jpg}}) in active physical motion as epic wide low-angle shot from the bowsprit looking back at Captain Nora, Castor, Heracles, and Theron at the quarterdeck helm, then panning out to the open golden sunrise horizon, face 100% unobstructed."
+      },
+      {
+        "panel": "TOP-RIGHT",
+        "time": "3s",
+        "shot_size": "60-Deg Reverse MCU",
+        "action": "[60-Deg Reverse MCU] 60-degree angle shift: Nora ({{media:62e117f8-0af7-484e-90a8-f79927105746|nora_clean.jpg}}) driving the physical reaction as epic wide low-angle shot from the bowsprit looking back at Captain Nora, Castor, Heracles, and Theron at the quarterdeck helm, then panning out to the open golden sunrise horizon."
+      },
+      {
+        "panel": "BOTTOM-LEFT",
+        "time": "7s",
+        "shot_size": "90-Deg Wide Framing",
+        "action": "[90-Deg Wide Framing] 90-degree angle shift: Nora ({{media:62e117f8-0af7-484e-90a8-f79927105746|nora_clean.jpg}}) advancing the physical action as the galleon sails boldly forward into the radiant dawn."
+      },
+      {
+        "panel": "BOTTOM-RIGHT",
+        "time": "9s",
+        "shot_size": "Close-Up Detail Shot",
+        "action": "[Close-Up Detail Shot] Forward-momentum micro-hook framing: Nora ({{media:62e117f8-0af7-484e-90a8-f79927105746|nora_clean.jpg}}) completing the physical transition as the galleon sails boldly forward into the radiant dawn, hands gripping physical props and face 100% unobstructed."
+      }
+    ],
+    "storyboard_prompt": "A film storyboard sheet, 16:9, made of FOUR photographic panels in a tight 2 by 2 grid, separated only by thin straight black lines; each panel is a 16:9 frame; no text, no numbers, no captions. All four panels are cinematic 35mm live-action feature-film stills of Location: sunlit main deck and quarterdeck helm of the 17th-century wooden pirate galleon sailing across the open Aegean Sea at dawn. Light: radiant golden morning sunlight raking across weathered oak planks and billowing white canvas sails; deep focus. Featuring {{media:62e117f8-0af7-484e-90a8-f79927105746|nora_clean.jpg}} (28-year-old female captain with braided auburn-brown hair, freckled face, wearing navy wool seafarer brigandine armor 1:1 matching reference).\nTOP-LEFT PANEL, second 0s: [OTS Medium Shot] Nora ({{media:62e117f8-0af7-484e-90a8-f79927105746|nora_clean.jpg}}) in active physical motion as epic wide low-angle shot from the bowsprit looking back at Captain Nora, Castor, Heracles, and Theron at the quarterdeck helm, then panning out to the open golden sunrise horizon, face 100% unobstructed.\nTOP-RIGHT PANEL, second 3s: [60-Deg Reverse MCU] 60-degree angle shift: Nora ({{media:62e117f8-0af7-484e-90a8-f79927105746|nora_clean.jpg}}) driving the physical reaction as epic wide low-angle shot from the bowsprit looking back at Captain Nora, Castor, Heracles, and Theron at the quarterdeck helm, then panning out to the open golden sunrise horizon.\nBOTTOM-LEFT PANEL, second 7s: [90-Deg Wide Framing] 90-degree angle shift: Nora ({{media:62e117f8-0af7-484e-90a8-f79927105746|nora_clean.jpg}}) advancing the physical action as the galleon sails boldly forward into the radiant dawn.\nBOTTOM-RIGHT PANEL, second 9s: [Close-Up Detail Shot] Forward-momentum micro-hook framing: Nora ({{media:62e117f8-0af7-484e-90a8-f79927105746|nora_clean.jpg}}) completing the physical transition as the galleon sails boldly forward into the radiant dawn, hands gripping physical props and face 100% unobstructed.\nCinematic feature-film look: shot on ARRI Alexa with Cooke S4 prime lenses, fine 35mm film grain, deep focus (f/8), motivated practical light, realistic physics, faces 100% unobstructed, strictly NO smoke, strictly NOT a 3D render, NOT CGI, zero watermark, zero logos."
+  }
+]
