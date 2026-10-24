@@ -66,6 +66,8 @@ Thứ tự các trường bắt buộc trong mỗi đối tượng prompt JSON:
 | 15 | **Đầy đủ `dramatic_craft` từ bộ `sw-*`:** Có đủ `beat`, `value_turn`, `subtext`, `prop_and_detail` phản ánh đúng kịch bản đã viết qua bộ skill `sw-*` | Rule 56, `/sw-scene-craft` |
 | 16 | **Giọng nam già không the thé & câu thoại dứt đúng giây:** Không dùng `cracking`, `shrieking`, `screaming` cho giọng nam trầm; ghi `never shouting, never shrill`, dải Hz, giây kết thúc câu và khóa im lặng các nhịp sau | Bài học 18, Rule 49, Rule 67 |
 | 17 | **Ảnh storyboard: chip ref trong từng panel:** Mỗi panel gắn `{{media:<uuid>|<file>}}` ở lần nhắc đầu của từng nhân vật/sinh vật; `character_names` của scene không chứa storyboard cũ khi sinh lại ảnh | Bài học 19, Rule 64, Rule 69 |
+| 18 | **Tối đa 13 chip `{{media:...}}` trong video_prompt:** Mỗi ref (kể cả Storyboard) chỉ nhắc chip một lần ở chỗ khóa nó; tổng ≤ 12 cho an toàn. 14+ chip → R2V `MZZa6b [3]` | Bài học 20, Rule 64 |
+| 19 | **Eyeline Lock cho mọi shot có thoại:** Ghi rõ người nói nhìn vào ai, ở phía nào khung hình, góc mặt three-quarter, `never looking at the camera`; "face clearly visible" một mình sẽ khiến nhân vật nhìn thẳng vào ống kính | Bài học 21 |
 
 ---
 

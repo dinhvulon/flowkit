@@ -61,16 +61,30 @@ The niche determines which keywords, hashtags, and competitors to target.
 The title is the #1 SEO factor. It must:
 
 ### Rules:
-- **`seo.title_max_chars` from channel rules** (default: 65) — hard limit. YouTube truncates at ~70
+- **Đối với Phim Điện Ảnh Ngôi Thứ Ba (`/fk-film` — ZOVEN STUDIOS Benchmark — BẮT BUỘC 100%, User Lock 24/10/2026)**:
+  - **Cấu trúc 3 vế ngăn cách bằng dấu gạch đứng `|` (cho phép 80–100 ký tự)**:
+    `[TÊN PHIM NGẮN VIẾT HOA TOÀN BỘ] | [Câu Hook Cốt Truyện High-Stakes Có 1–2 Từ Nhấn Mạnh VIẾT HOA] | Full Movie 4K`
+  - **BẮT BUỘC có hậu tố `| Full Movie 4K` ở cuối tiêu đề**: Mặc dù chất lượng video xuất ra là 1080p (chưa phải 4K), **LUÔN LUÔN để `| Full Movie 4K`** ở cuối tiêu đề phim điện ảnh để tối ưu CTR và chuẩn định dạng kênh phim lớn.
+  - **Ví dụ chuẩn (từ kênh mẫu ZOVEN STUDIOS — 2.8M views)**:
+    - `THE WARNING | An Alien Came to Earth to SAVE Us From Her Own People | Full Movie 4K`
+    - `THE GOLDEN CURSE | A Pirate Crew Cut Open a Giant Fish and Found What SANK 50 Ships | Full Movie 4K`
+    - `THE ABYSSAL CROWN | They Pulled a Glowing Monster From the Fog to SAVE Their Dying Crew | Full Movie 4K`
+    - `THE LAST LANTERN | An Old Fisherman Warned Our Ship to TURN BACK Before the Sea Boiled | Full Movie 4K`
+- **Đối với các niche khác (POV Vlog / Tài liệu)**: `seo.title_max_chars` from channel rules (default: 65) — hard limit.
 - **Primary keyword in first 5 words** (YouTube weighs early words higher)
-- **Power word** to trigger click: SHOCKING, SECRET, IMPOSSIBLE, ATTACK, DEADLY, LAST
+- **Power word** to trigger click: SAVE, CURSE, WARNING, SHOCKING, SECRET, IMPOSSIBLE, ATTACK, DEADLY, LAST
 - **Curiosity gap** — promises information viewer doesn't have yet
-- **Number or specificity** — "2 Million Barrels" is stronger than "lots of oil"
-- **Brackets/parentheses** boost CTR: [FULL MOVIE] (Eng Sub) {4K}
-- **Language match** — title in target language, but include English keywords if audience searches bilingually
+- **Number or specificity** — "50 Ships" or "2 Million Barrels" is stronger than vague quantities
+- **Language match** — title in target language, matching 100% the dialogue language of the film (Rule 20)
 
 ### Title formulas (pick best fit):
 
+0. **Narrative Film (`/fk-film`) — ZOVEN STUDIOS 3-Part Formula (BẮT BUỘC MẶC ĐỊNH CHO PHIM ĐIỆN ẢNH)**:
+   - **Cấu trúc**: `[SHORT TITLE IN ALL CAPS] | [Who/What Came or Happened + High-Stakes Action/Discovery with 1 CAPS VERB] | Full Movie 4K`
+   - **Quy tắc**:
+     1. **Vế 1 (`[SHORT TITLE IN ALL CAPS]`)**: Tên phim ngắn gọn, ấn tượng, 2–4 từ viết hoa toàn bộ (`THE WARNING`, `THE GOLDEN CURSE`, `THE SUNKEN ROOT`, `THE OMEN FISH`).
+     2. **Vế 2 (`[High-Stakes Story Hook Logline]`)**: 1 câu kể chuyện gãy gọn nêu rõ nhân vật/sự kiện kỳ lạ + mục đích/hậu quả sinh tử, viết hoa toàn bộ **1 từ khóa hành động/cảm xúc mạnh nhất** (`SAVE`, `WARN`, `DESTROY`, `SURVIVE`, `SANK`).
+     3. **Vế 3 (`| Full Movie 4K`)**: **BẮT BUỘC giữ nguyên `| Full Movie 4K`** ở cuối tiêu đề cho mọi phim `/fk-film` dù file video thực tế là 1080p.
 1. **Question hook**: `Tại Sao Iran Tấn Công Tàu Dầu Mỹ? | Chiến Dịch Hormuz Shield [Phim Tài Liệu]`
 2. **Statement shock**: `Iran Tấn Công Tàu Dầu Mỹ — Hải Quân Mỹ Phản Ứng Thế Nào? [4K]`
 3. **Number + stakes**: `2 Triệu Thùng Dầu vs 6 Tàu Tấn Công Iran | Eo Biển Tử Thần Hormuz`
@@ -133,8 +147,29 @@ For each title, explain:
 
 YouTube description has 3 zones with different SEO purposes:
 
-### Zone 1: Above the fold (first 150 chars — visible without "Show more")
+### Zone 1: Above the fold (visible without "Show more" — ZOVEN STUDIOS Cinematic Teaser + AI Production Disclosure)
 
+**Đối với Phim Điện Ảnh Ngôi Thứ Ba (`/fk-film` — BẮT BUỘC theo chuẩn ZOVEN STUDIOS, User Lock 24/10/2026):**
+Mở đầu phần Description bằng **3 đoạn văn ngắn cách dòng giàu chất điện ảnh** (giống phần mở đầu của ZOVEN STUDIOS), ngay sau đó là **Dòng khai báo phim được sản xuất bằng AI**:
+
+1. **Đoạn 1 (Bối cảnh tĩnh & Nhân vật chính — 1–2 câu)**: Giới thiệu nhân vật chính và trạng thái cô lập / hành trình căng thẳng ban đầu.
+   *(Ví dụ ZOVEN STUDIOS: "Eli Vane lives a quiet life at the edge of a forgotten forest — fixing broken radios, listening to static, and keeping his distance from the world.")*
+2. **Đoạn 2 (Biến cố bất ngờ — 1 câu ngắn tách dòng độc lập)**: Cú bẻ ngoặt phá vỡ sự tĩnh lặng.
+   *(Ví dụ ZOVEN STUDIOS: "Then, one night, something falls from the sky." / Ví dụ hải tặc: "Then, out of the dead sea fog, a lone skiff drifts against the hull.")*
+3. **Đoạn 3 (Phát hiện kỳ dị & Lựa chọn sinh tử — 1–2 câu bỏ lửng kích thích bấm "Xem thêm")**: Nêu thứ được tìm thấy bên trong và hiểm họa đang ập tới.
+   *(Ví dụ ZOVEN STUDIOS: "Inside the wreckage, he finds Mira — a woman who looks human, speaks like us… and carries a warning that could end everything.")*
+4. **Đoạn 4 — Khai báo sản xuất bằng AI (BẮT BUỘC NÊU RÕ PHIM ĐƯỢC SẢN XUẤT BẰNG AI — User Lock 24/10/2026)**:
+   - Phải nêu rõ ràng, minh bạch trong phần Description rằng **bộ phim được sản xuất bằng AI** (không nêu tên tool nội bộ như FlowKit/Veo/Imagen theo Rule B & Rule C):
+   - **English**:
+     `🎬 AI PRODUCTION DISCLOSURE: This film was created and produced using artificial intelligence (AI) for visual generation, voice acting, and sound design. All characters, events, and story elements are a work of fiction.`
+   - **Tiếng Việt**:
+     `🎬 THÔNG TIN SẢN XUẤT AI: Bộ phim này được sáng tạo và sản xuất bằng trí tuệ nhân tạo (AI) trong khâu tạo hình ảnh, giọng nói và âm thanh. Toàn bộ nhân vật, sự kiện và cốt truyện đều là hư cấu.`
+   - **日本語**:
+     `🎬 AI制作に関する表記：本作は映像生成・音声・音響デザインの制作プロセスにおいて人工知能（AI）を使用して制作されたフィクション映画です。登場人物や出来事はすべて架空のものです。`
+   - **Español (Latinoamérica)**:
+     `🎬 PRODUCCIÓN CON IA: Esta película fue creada y producida utilizando inteligencia artificial (IA) para la generación visual, voces y diseño sonoro. Todos los personajes, eventos y elementos de la historia son obras de ficción.`
+
+**Đối với Time-Travel / Historical POV Vlog:**
 ```
 [HOOK SENTENCE — restate the title promise with more detail]
 [CALL TO ACTION — subscribe/like]
@@ -179,7 +214,36 @@ Rules:
 [COPYRIGHT]
 ```
 
-### Full description template:
+### Full description template (Narrative Film `/fk-film` — ZOVEN STUDIOS Style):
+
+```
+[Zone 1 — 3-Paragraph Cinematic Teaser Hook + AI Production Disclosure]
+{paragraph_1_protagonist_and_world_baseline_1_2_sentences}
+
+{paragraph_2_sudden_inciting_incident_1_short_line}
+
+{paragraph_3_the_discovery_and_high_stakes_warning_1_2_sentences}
+
+🎬 AI PRODUCTION DISCLOSURE: This film was created and produced using artificial intelligence (AI) for visual generation, voice acting, and sound design. All characters, events, and story elements are a work of fiction.
+
+Like & Subscribe for more cinematic AI films!
+Turn on notifications 🔔 to never miss a premiere.
+
+[Zone 2 — Story Synopsis & World Context]
+{extended_story_summary_3_5_sentences_keyword_rich}
+
+⏱️ Chapters:
+{auto_generated_timestamps_from_scenes}
+
+[Zone 3 — Footer, AI & Fiction Disclaimer, Copyright]
+—————————————————————————
+⚠️ ABOUT THIS FILM:
+This motion picture is an original work of fiction produced with artificial intelligence (AI). All characters, dialogue, creatures, and events depicted in this film are entirely fictional.
+
+© {year} {channel_name} — All rights reserved.
+```
+
+### Full description template (Historical / Time-Travel Vlog & Documentary):
 
 ```
 [Zone 1 — Hook + AI recreation line + CTA]
@@ -428,6 +492,11 @@ Print each section with clear separators so they can copy individual parts.
 ═══════════════════════════════════════════
 
 📌 TITLE OPTIONS (pick one):
+
+  [Đối với Phim Điện Ảnh Ngôi Thứ Ba (`/fk-film`) — BẮT BUỘC chuẩn ZOVEN STUDIOS kèm hậu tố `| Full Movie 4K` dù video là 1080p]:
+  1. {SHORT TITLE IN CAPS} | {High-Stakes Hook Logline with 1 CAPS Emphasis Word} | Full Movie 4K ({char_count} chars)
+  2. {SHORT TITLE IN CAPS} | {Alternative Hook Logline with 1 CAPS Emphasis Word} | Full Movie 4K ({char_count} chars)
+  3. {SHORT TITLE IN CAPS} | {Mystery/Warning Hook Logline with 1 CAPS Emphasis Word} | Full Movie 4K ({char_count} chars)
 
   [Đối với Time Travel & Historical POV Vlog — BẮT BUỘC xuất cả 3 Option High-Stakes]:
   1. Option 1 (Nguy hiểm cận kề - Khuyên dùng): {title_option_1} ({char_count} chars)

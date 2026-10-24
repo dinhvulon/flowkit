@@ -23,17 +23,24 @@
 
 ---
 
-## 2. Đóng Gói YouTube — Tiêu Đề, Thumbnail & SEO (Bước 1.5 & Bước 11)
+## 2. Đóng Gói YouTube — Tiêu Đề `| Full Movie 4K`, Thumbnail Không Chữ & SEO Khai Báo AI (Bước 1.5 & Bước 11 — User Lock 24/10/2026)
 
-- **Chốt Gói Mở Đầu Trước Khi Viết Kịch Bản (Bước 1.5 — `/fk-scriptwriter` §G2 & `/fk-thumbnail-guide`)**:
-  - 3 phương án Tiêu đề + 4 phương án Thumbnail + Câu mở đầu 5 giây + Lời hứa 30 giây đã được chốt từ tiền kỳ phải khớp 100% với thành phẩm cuối cùng.
-- **Ngôn ngữ đồng nhất (Rule 20)**:
-  - Toàn bộ metadata (`/fk-youtube-seo`) và chữ trên Thumbnail (`/fk-thumbnail`) phải khớp 100% với ngôn ngữ thoại/kịch bản của bộ phim.
-- **Thiết kế Thumbnail Điện Ảnh High-Stakes (`/fk-thumbnail-guide`, `/fk-thumbnail`)**:
-  - Bố cục 3 điểm: Biểu cảm nhân vật chính sắc nét trước hiểm nguy khổng lồ (quái thú biển, cổng đá sập, bão lửa) + Tương phản màu sắc mạnh + Text ngắn gọn 2–4 từ gợi sự tò mò tột độ.
-  - Xuất bản 16:9 cho video dài và 9:16 cho Shorts.
-- **Nhãn nội dung AI trên YouTube Studio**:
-  - Bật nhãn *"Altered or synthetic content"* khi đăng tải qua `/fk-youtube-upload` / YouTube Studio.
+- **Chốt Gói Mở Đầu Trước Khi Viết Kịch Bản (Bước 1.5 — `/fk-scriptwriter` §G2, `/fk-thumbnail-guide`, `/fk-youtube-seo`)**:
+  - 3 phương án Tiêu đề chuẩn ZOVEN STUDIOS + 4 phương án Thumbnail điện ảnh không chữ + Câu mở đầu 5 giây + Lời hứa 30 giây đã được chốt từ tiền kỳ phải khớp 100% với thành phẩm cuối cùng.
+- **Công Thức Tiêu Đề Phim Điện Ảnh (`| Full Movie 4K` — BẮT BUỘC dù video là 1080p)**:
+  - Cấu trúc 3 vế ngăn cách bằng dấu `|`:
+    `[TÊN PHIM NGẮN VIẾT HOA TOÀN BỘ] | [Câu Hook Cốt Truyện High-Stakes Có 1 Từ Nhấn Mạnh VIẾT HOA] | Full Movie 4K`
+  - Ví dụ: `THE WARNING | An Alien Came to Earth to SAVE Us From Her Own People | Full Movie 4K` hoặc `THE GOLDEN CURSE | A Pirate Crew Cut Open a Giant Fish and Found What SANK 50 Ships | Full Movie 4K`.
+  - **Mặc dù chất lượng file video xuất ra là 1080p (chưa phải 4K), LUÔN LUÔN giữ hậu tố `| Full Movie 4K` trên tiêu đề.**
+- **Mô Tả (Description) Chuẩn Điện Ảnh + BẮT BUỘC Nêu Rõ Phim Được Sản Xuất Bằng AI (`/fk-youtube-seo`)**:
+  - Mở đầu Zone 1 bằng 3 đoạn văn ngắn cách dòng giàu kịch tính (Đoạn 1: Bối cảnh nhân vật chính $\to$ Đoạn 2: `"Then, one night, ..."` biến cố ập đến $\to$ Đoạn 3: Phát hiện kỳ dị bên trong & cảnh báo sinh tử).
+  - Ngay dưới phần mở đầu phải có dòng **Khai báo sản xuất bằng AI (`🎬 AI PRODUCTION DISCLOSURE` / `🎬 THÔNG TIN SẢN XUẤT AI`)** nêu rõ bộ phim được sản xuất bằng AI (hình ảnh, giọng nói, âm thanh) và toàn bộ nhân vật/sự kiện là hư cấu.
+- **Thiết Kế Thumbnail Điện Ảnh 35mm Thuần Khiết — TUYỆT ĐỐI KHÔNG CÓ CHỮ (`/fk-thumbnail-guide`, `/fk-thumbnail`)**:
+  - **ZERO TEXT ON THUMBNAIL (`strictly NO text, NO words, NO letters, NO typography, NO titles, NO logos`)**: Không bao giờ đưa bất kỳ chữ viết nào lên ảnh Thumbnail.
+  - Bố cục khung hình phim 35mm (ZOVEN STUDIOS style): Nhân vật chính cầm nguồn sáng thực tế (đèn bão, đuốc) chiếu sáng phát hiện kỳ dị hoặc mối nguy hiểm trong bóng tối sương mù xanh lạnh (tương phản ấm – lạnh cực mạnh), xóa sạch watermark bằng `remove_watermark_from_image.py` trước khi resize về `1280x720`.
+- **Ngôn ngữ đồng nhất (Rule 20) & Nhãn AI trên YouTube Studio**:
+  - Toàn bộ metadata (`/fk-youtube-seo`) khớp 100% với ngôn ngữ thoại của bộ phim.
+  - Bật nhãn *"AI use" / "Altered or synthetic content"* khi đăng tải qua `/fk-youtube-upload` / YouTube Studio.
 
 ---
 

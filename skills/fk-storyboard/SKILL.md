@@ -64,7 +64,7 @@ Ghi bảng 4 panel vào tin nhắn rồi sinh ảnh luôn (không chờ duyệt 
 
 ### Bước 2 — Sinh ảnh storyboard (dùng ảnh ref có sẵn, bắt buộc truyền `source_media_id` — Rule 69 (8), User Lock 22/10/2026)
 
-> **JUST-IN-TIME (user 24/10/2026):** chỉ sinh storyboard của MỘT cảnh ngay trước khi sinh video cảnh đó; không sinh trước hàng loạt cho cả hồi. Golden-tree 24/10: các storyboard sinh mới/để sẵn bị R2V (`MZZa6b`) từ chối `[3]` 5 lần liên tiếp trong khi cùng prompt chỉ dùng ref nhân vật thì chạy. Nếu storyboard vẫn gây `[3]`: bỏ storyboard, sinh video chỉ với ref, mô tả từng shot bằng chữ (`start_frame.type = "REFS_ONLY"`).
+> **JUST-IN-TIME (user 24/10/2026):** chỉ sinh storyboard của MỘT cảnh ngay trước khi sinh video cảnh đó; không sinh trước hàng loạt cho cả hồi. **Giới hạn chip (Bài học 20):** R2V (`MZZa6b`) trả `[3]` khi `video_prompt` nhắc chip `{{media:...}}` từ 14 lần trở lên — chính là lý do các prompt storyboard ngày 24/10 bị từ chối (chip storyboard lặp ở `start_frame`, `storyboard`, `camera` và mọi nhịp). Nhắc chip Storyboard **một lần** trong khối `storyboard`, các chỗ khác viết "Panel N of the storyboard"; mỗi ref nhân vật một chip trong `characters[].visual_lock`; tổng ≤ 12.
 
 > **BẮT BUỘC TRUYỀN `source_media_id` TỪ ẢNH REF CÓ SẴN (CẤM SINH TEXT-TO-IMAGE TỪ SỐ 0):**
 > Khi submit request sinh ảnh Storyboard cho bất kỳ cảnh nào có nhân vật, request (`GENERATE_IMAGE` hoặc `REGENERATE_IMAGE`) **BẮT BUỘC phải truyền `source_media_id` = UUID của ảnh ref nhân vật chính có sẵn** trong dự án (`<Character>` hoặc `<Character> Body` hoặc bối cảnh, ví dụ: `source_media_id: nora_media_id`):

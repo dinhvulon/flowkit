@@ -8,7 +8,7 @@ import json
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
-from agent.services.flow_batch import PINHOLE_VOICES  # noqa: E402  (shared with the server's pre-send check)
+from agent.services.flow_batch import PINHOLE_VOICES, R2V_MAX_MEDIA_MENTIONS  # noqa: E402  (shared with the server's pre-send checks)
 
 sys.stdout.reconfigure(encoding='utf-8')
 
@@ -318,7 +318,40 @@ def lint_json_prompt(data: dict) -> list[dict]:
 
     # 9f. Google Flow Pinhole Voice Assignment & Inline {{voice:<id>}} Chip Check (Rule 12, Voice Bible §0/§0b)
     issues.extend(lint_voice_chips(json.dumps(data, ensure_ascii=False)))
+
+    # 9g. R2V media-mention cap (Lesson 20): the video_prompt sent to Flow is this object minus image_prompt.
+    def _strip_image_prompts(obj):
+        # Storyboard/start-frame image prompts embedded in design files are not part of the video request.
+        if isinstance(obj, dict):
+            return {k: _strip_image_prompts(v) for k, v in obj.items()
+                    if k not in ("image_prompt", "storyboard_prompt", "storyboard_image_prompt")}
+        if isinstance(obj, list):
+            return [_strip_image_prompts(v) for v in obj]
+        return obj
+    sent = json.dumps(_strip_image_prompts(data), ensure_ascii=False)
+    n_media = len(MEDIA_TOKEN_RE.findall(sent))
+    if n_media > R2V_MAX_MEDIA_MENTIONS:
+        issues.append({
+            "severity": "CRITICAL",
+            "type": "TOO_MANY_MEDIA_CHIPS",
+            "token": str(n_media),
+            "message": f"video_prompt mentions {{{{media:...}}}} chips {n_media} times; Flow r2v (MZZa6b) rejects more than {R2V_MAX_MEDIA_MENTIONS} with [3]. Mention each reference once where it is locked (characters[].visual_lock, storyboard block) and use names elsewhere; aim for <= 12."
+        })
     sp_obj = data.get("speech")
+
+    # 9h. Eyeline lock for spoken clips (Lesson 21): "face clearly visible" alone makes the speaker stare into the lens.
+    if "third-person" in cam_text and isinstance(sp_obj, dict) and sp_obj.get("speaker"):
+        ta_text = json.dumps(data.get("timeline_action", {}), ensure_ascii=False).lower()
+        neg_text = json.dumps(data.get("negative_constraints", []), ensure_ascii=False).lower()
+        has_lock = "eyeline" in ta_text or "never looking at the camera" in ta_text or "never at the camera" in ta_text
+        has_neg = "looks into the camera" in neg_text or "look into the camera" in neg_text or "looking at the camera" in neg_text
+        if not (has_lock and has_neg):
+            issues.append({
+                "severity": "HIGH",
+                "type": "MISSING_EYELINE_LOCK",
+                "message": "Spoken clip without an EYELINE LOCK: in each dialogue beat say whom the speaker looks at (name + screen side, three-quarter profile, 'never looking at the camera') and add 'Nobody looks into the camera lens' to negative_constraints (Lesson 21)."
+            })
+
     if isinstance(sp_obj, dict):
         speakers = sp_obj.get("speaker") or []
         if isinstance(speakers, str):
@@ -648,6 +681,9 @@ if __name__ == "__main__":
         sys.exit(0)
 
     prompt_to_check = args.prompt
+    # A positional path (as documented in /fk-review-prompt) is read as a file, not linted as text.
+    if args.prompt and not args.file and len(args.prompt) < 300 and Path(args.prompt).is_file():
+        args.file = args.prompt
     if args.file:
         try:
             with open(args.file, "r", encoding="utf-8") as f:

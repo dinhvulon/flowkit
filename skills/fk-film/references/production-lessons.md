@@ -116,3 +116,12 @@
 ### Bài học 19 — Ảnh storyboard giữ đúng mặt nhờ chip `{{media:...}}` đặt NGAY TRONG TỪNG PANEL (golden-tree SC-07, 24/10/2026)
 - Server gắn mọi chip `{{media:uuid|name}}` trong `image_prompt` làm ảnh ref (`flow_batch.image_request`), cộng thêm entity trong `character_names` của scene. `REGENERATE_IMAGE` **bỏ qua `source_media_id`** (`processor.py`), nên ref chỉ đến từ chip + `character_names`.
 - Lần 1 chỉ đặt chip ở đoạn mô tả chung, trong panel gọi nhân vật bằng tên chữ, và `character_names` còn chứa tấm storyboard cũ → Castor mọc ria, mặc sơ mi trắng; ông lão đội khăn. Lần 2 đặt chip tại lần nhắc đầu tiên của mỗi nhân vật/sinh vật trong TỪNG panel và tạm bỏ storyboard cũ khỏi `character_names` → đúng mặt, đúng trang phục.
+
+### Bài học 20 — R2V `MZZa6b` từ chối `[3]` khi prompt nhắc quá 13 chip `{{media:...}}` (golden-tree, 24/10/2026)
+- Mỗi chip `{{media:uuid|name}}` thành một đoạn ảnh riêng trong prompt gửi Flow. Đo trực tiếp: **≤13 lần nhắc chip → chạy; 14 hoặc 15 lần → `RpcError: MZZa6b failed: [3]` (INVALID_ARGUMENT)** ngay khi gửi, kể cả prompt chỉ ~1300 ký tự. Prompt 8118 ký tự với 13 chip vẫn chạy → giới hạn KHÔNG phải số ký tự.
+- Đây là nguyên nhân thật của 6 lần lỗi storyboard ngày 24/10 (đã từng đổ lỗi cho ảnh upload / storyboard để lâu — đều sai): prompt có storyboard nhắc chip storyboard ở `start_frame`, `storyboard`, `camera` và mọi nhịp `timeline_action` → 15–17 chip.
+- Cách viết: nhắc mỗi ref **một lần ở chỗ khóa nó** (`characters[].visual_lock`, chip storyboard một lần trong khối `storyboard`), các chỗ khác gọi bằng tên. Tổng chip ≤ 12 (chừa chỗ khi có nhiều giọng). `lint_prompt.py` báo CRITICAL `TOO_MANY_MEDIA_CHIPS` từ 14 chip.
+
+### Bài học 21 — "Face clearly visible" làm nhân vật nói nhìn thẳng vào ống kính (golden-tree SC-07, 24/10/2026)
+- Prompt chỉ ghi `face clearly visible` cho Castor khi đang ra lệnh cho ông lão → R2V cho Castor quay mặt thẳng vào máy ở shot 1 và shot 3 (phá bức tường thứ tư), dù storyboard vẽ Castor quay đầu nhìn ông lão.
+- Mỗi shot có thoại BẮT BUỘC có `EYELINE LOCK`: người nói nhìn vào ai (tên + phía màn hình), góc mặt (three-quarter profile), và `never looking at the camera`; shot qua vai thì ghi `eyeline slightly off-camera toward <người nghe>, never into the lens`; thêm câu `Nobody looks into the camera lens` vào `negative_constraints`.

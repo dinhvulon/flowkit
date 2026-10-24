@@ -47,10 +47,10 @@ Skill điều phối **tổng thể và bắt buộc** để làm **phim điện
   5. *(Nếu làm Series nhiều tập)*: Kích hoạt thêm `/sw-series-engine-bible`, `/sw-series-structure`, và `/sw-writers-room`.
 - Lưu toàn bộ vào `output/<slug>/story-bible.md`.
 
-### Bước 1.5 — Chốt Gói Mở Đầu: Tiêu đề + Thumbnail + Lời hứa 30s (`/fk-scriptwriter` §G2, `/fk-thumbnail-guide`)
+### Bước 1.5 — Chốt Gói Mở Đầu: Tiêu đề `| Full Movie 4K` + Thumbnail Không Chữ + Lời hứa 30s (`/fk-scriptwriter` §G2, `/fk-thumbnail-guide`, `/fk-youtube-seo` — User Lock 24/10/2026)
 - Trước khi viết kịch bản chi tiết, trình User duyệt:
-  1. **3 phương án Tiêu đề** (High-Stakes / Kịch tính cao).
-  2. **4 phương án Thumbnail** (Bố cục, biểu cảm nhân vật, mối nguy trực diện, text 2–4 từ).
+  1. **3 phương án Tiêu đề theo chuẩn ZOVEN STUDIOS**: `[TÊN PHIM VIẾT HOA] | [Câu Hook Cốt Truyện Có 1 Từ Nhấn Mạnh VIẾT HOA] | Full Movie 4K` (luôn gắn `| Full Movie 4K` dù video thực tế là 1080p).
+  2. **4 phương án Thumbnail Điện Ảnh 35mm KHÔNG CÓ CHỮ (`Zero Text`)**: Khung hình điện ảnh 35mm thuần khiết (nhân vật chính + nguồn sáng thực tế + phát hiện kỳ dị/mối nguy trực diện, tuyệt đối không có bất kỳ chữ viết nào trên ảnh).
   3. **Câu mở đầu 5 giây đầu tiên + Lời hứa trong 30 giây đầu**.
 - **DỪNG chờ User chọn phương án.**
 

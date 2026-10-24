@@ -372,6 +372,11 @@ PINHOLE_VOICES = frozenset({
 })
 
 
+# R2V (MZZa6b) answers [3] INVALID_ARGUMENT once a prompt mentions {{media:...}} chips 14+ times
+# (measured 2026-10-24: 13 pass, 14/15 fail even in a 1300-char prompt).
+R2V_MAX_MEDIA_MENTIONS = 13
+
+
 def invalid_voice_ids(voice_ids) -> list[str]:
     """Voice ids that are not Pinhole voices, in order, without duplicates."""
     return list(dict.fromkeys(v for v in voice_ids if str(v).strip().lower() not in PINHOLE_VOICES))
@@ -604,6 +609,12 @@ def omni_reference_video_request(prompt: str, project_id: str,
     if res not in {"360p", "720p"}:
         raise ValueError("Omni resolution must be 360p or 720p")
     model = f"abra_r2v_{duration_s}s" + ("_360p" if res == "360p" else "")
+    n_mentions = len(MEDIA_MENTION_RE.findall(prompt))
+    if n_mentions > R2V_MAX_MEDIA_MENTIONS:
+        raise ValueError(
+            f"Prompt mentions {{{{media:...}}}} chips {n_mentions} times; Flow r2v rejects more than "
+            f"{R2V_MAX_MEDIA_MENTIONS} ([3] INVALID_ARGUMENT). Mention each reference once; not sent to Flow."
+        )
     request = [
         [None, None, [prompt_segments(prompt)]],
         [[None, mid] for mid in refs],
